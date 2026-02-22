@@ -71,7 +71,7 @@
             <xsl:text> </xsl:text><xsl:value-of select="@label"/>
           </xsl:if>
         </div>
-        <div class="content"><xsl:value-of select="$text"/></div>
+        <div class="content"><xsl:value-of select="replace($text, '\d+', '')"/></div>
       </div>
     </xsl:if>
     <!-- Recurse into child sections (flat, not nested) -->
