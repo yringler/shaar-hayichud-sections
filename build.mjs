@@ -30,6 +30,7 @@ const index = `<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { max-width: 70ch; margin: 2em auto; font-family: serif; line-height: 1.7; direction: ltr; }
     a { color: inherit; }
