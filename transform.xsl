@@ -3,7 +3,7 @@
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
   <xsl:template match="/">
-    <html>
+    <html lang="he">
       <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -42,6 +42,14 @@
           .content {
             color: #222;
           }
+
+          @media (max-width: 600px) {
+            .label {
+              max-width: 10ch;
+              overflow-wrap: break-word;
+              hyphens: auto;
+            }
+          }
         </style>
       </head>
       <body>
@@ -51,6 +59,7 @@
       </body>
     </html>
   </xsl:template>
+
 
   <xsl:template match="section">
     <xsl:param name="depth" select="1"/>
