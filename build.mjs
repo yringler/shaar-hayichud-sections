@@ -46,3 +46,6 @@ ${items}
 
 writeFileSync('dist/index.html', index);
 console.log('index.html generated');
+
+writeFileSync('dist/CNAME', 'shaarhayichudresources.com');
+console.log('CNAME generated');
