@@ -24,9 +24,9 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: corepack enable
 
-      - run: npm run build
+      - run: yarn build
 
       - uses: actions/upload-pages-artifact@v3
         with:
