@@ -3,4 +3,11 @@ title: Classes
 eleventyExcludeFromCollections: true
 ---
 <h1>Classes</h1>
-<p>Class notes and study sessions will appear here.</p>
+<ul class="index-list">
+{% for sectionId in lessons.topSectionIds %}
+  {% set section = lessons.allSections[sectionId] %}
+  {% if section %}
+  <li><a href="/classes/section/{{ section.id }}/">{{ section.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

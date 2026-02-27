@@ -1,0 +1,46 @@
+---js
+{
+  pagination: {
+    data: "lessons.allSections",
+    size: 1,
+    resolve: "keys",
+    alias: "sectionId"
+  },
+  tags: [],
+  eleventyComputed: {
+    title: function(data) {
+      const section = data.lessons.allSections[data.sectionId];
+      return section ? section.title : "Section";
+    }
+  },
+  permalink: function(data) {
+    return `/classes/section/${data.sectionId}/`;
+  }
+}
+---
+{% set section = lessons.allSections[sectionId] %}
+{% set parentId = section.parents[0] if section.parents and section.parents.length > 0 else null %}
+<p class="back-link">
+  {% if parentId %}
+    <a href="/classes/section/{{ parentId }}/">← Back</a>
+  {% else %}
+    <a href="/classes/">← Classes</a>
+  {% endif %}
+</p>
+<h1>{{ section.title }}</h1>
+<ul class="index-list lessons-list">
+  {% for item in section.content %}
+    {% if item.contentType == "section" %}
+      <li class="lesson-section">
+        <a href="/classes/section/{{ item.section.id }}/">{{ item.section.title }}</a>
+      </li>
+    {% elif item.contentType == "media" %}
+      <li class="lesson-audio">
+        <div class="audio-title">{{ item.media.title }}</div>
+        <audio controls>
+          <source src="{{ item.media.source }}" type="audio/mpeg">
+        </audio>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
