@@ -1,5 +1,5 @@
 module.exports = {
-  layout: "layouts/base.njk",
+  layout: "layouts/text.njk",
   tags: ["texts"],
   eleventyComputed: {
     title(data) {

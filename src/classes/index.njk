@@ -1,6 +1,15 @@
 ---
 title: Classes
+layout: layouts/audio.njk
 eleventyExcludeFromCollections: true
 ---
 <h1>Classes</h1>
-<p>Class notes and study sessions will appear here.</p>
+
+<ul class="part-list">
+  {% for series in classes %}
+  <li>
+    <a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a>
+    <span class="track-count">{{ series.children | length }} parts</span>
+  </li>
+  {% endfor %}
+</ul>
