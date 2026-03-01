@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
   {% if child.file %}
     <div class="track">
       {% if item.base %}
-      <audio controls src="{{ (site.cdnBase + '/' + item.base + '/' + child.file) | urlencode }}"></audio>
+      <audio controls preload="none" src="{{ (site.cdnBase + '/' + item.base + '/' + child.file) | urlencode }}"></audio>
       {% endif %}
       <p class="track-title">{{ child.displayTitle }}</p>
     </div>
@@ -32,7 +32,7 @@ eleventyExcludeFromCollections: true
         {% if track.file %}
         <div class="track">
           {% if item.base %}
-          <audio controls src="{{ (site.cdnBase + '/' + item.base + '/' + track.file) | urlencode }}"></audio>
+          <audio controls preload="none" src="{{ (site.cdnBase + '/' + item.base + '/' + track.file) | urlencode }}"></audio>
           {% endif %}
           <p class="track-title">{{ track.displayTitle }}</p>
         </div>
