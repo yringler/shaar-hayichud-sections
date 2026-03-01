@@ -50,6 +50,7 @@ function parse(text) {
   let currentSection = null;
   let currentMediaSection = null;
   let pendingTitle = null;
+  let currentBase = null;
 
   for (const rawLine of lines) {
     const line = rawLine.trim();
@@ -74,6 +75,7 @@ function parse(text) {
       }
 
       currentSection = { title: extractTitle(line), children: [] };
+      if (currentBase) currentSection.base = currentBase;
       if (currentTop) currentTop.children.push(currentSection);
 
     } else if (firstToken === '###') {
@@ -85,13 +87,14 @@ function parse(text) {
       }
 
       currentMediaSection = { title: extractTitle(line), children: [] };
+      if (currentBase) currentMediaSection.base = currentBase;
       const parent = currentSection || currentTop;
       if (parent) parent.children.push(currentMediaSection);
 
     } else if (firstToken === '>') {
-      const base = extractTitle(line);
-      const target = currentSection || currentTop;
-      if (target) target.base = base;
+      currentBase = extractTitle(line);
+      const target = currentMediaSection || currentSection || currentTop;
+      if (target) target.base = currentBase;
 
     } else if (firstToken === '-') {
       pendingTitle = extractTitle(line);
