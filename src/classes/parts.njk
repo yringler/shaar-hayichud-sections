@@ -1,0 +1,43 @@
+---
+pagination:
+  data: classesParts
+  size: 1
+  alias: item
+eleventyComputed:
+  title: "{{ item.partTitle }}"
+permalink: "/classes/{{ item.seriesSlug }}/{{ item.partSlug }}/"
+layout: layouts/audio.njk
+eleventyExcludeFromCollections: true
+---
+<p class="breadcrumb">
+  <a href="/classes/">Classes</a> →
+  <a href="/classes/{{ item.seriesSlug }}/">{{ item.seriesTitle }}</a> →
+  {{ item.partTitle }}
+</p>
+<h1>{{ item.partTitle }}</h1>
+
+{% set children = item.children | addPartNumbers %}
+{% for child in children %}
+  {% if child.file %}
+    <div class="track">
+      {% if item.base %}
+      <audio controls src="{{ (site.cdnBase + '/' + item.base + '/' + child.file) | urlencode }}"></audio>
+      {% endif %}
+      <p class="track-title">{{ child.displayTitle }}</p>
+    </div>
+  {% else %}
+    <section class="chapter-section">
+      <h2>{{ child.title }}</h2>
+      {% for track in child.children %}
+        {% if track.file %}
+        <div class="track">
+          {% if item.base %}
+          <audio controls src="{{ (site.cdnBase + '/' + item.base + '/' + track.file) | urlencode }}"></audio>
+          {% endif %}
+          <p class="track-title">{{ track.displayTitle }}</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}
