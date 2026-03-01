@@ -19,8 +19,8 @@ title: Home
 <section>
   <h2>Classes</h2>
   <ul class="index-list">
-    {% for item in collections.classes %}
-    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+    {% for series in classes %}
+    <li><a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
     {% else %}
     <li>No classes yet.</li>
     {% endfor %}
