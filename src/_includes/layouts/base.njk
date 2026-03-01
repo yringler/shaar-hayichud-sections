@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ lang }}" dir="{{ dir }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} — {% endif %}{{ site.title }}</title>
+  {% for link in page.url | locale_links %}
+  <link rel="alternate" hreflang="{{ link.lang }}" href="{{ site.url }}{{ link.url }}">
+  {% endfor %}
   <style>
     *, *::before, *::after { box-sizing: border-box; }
 
@@ -94,7 +97,7 @@
     /* ── Audio class pages (LTR English content) ── */
     .ltr-content {
       direction: ltr;
-      text-align: left;
+      text-align: start;
     }
 
     .ltr-content .breadcrumb {
@@ -154,9 +157,9 @@
 </head>
 <body>
   <nav>
-    <a href="/">{{ site.title }}</a>
-    <a href="/texts/">Texts</a>
-    <a href="/classes/">Classes</a>
+    <a href="/{{ lang }}/">{{ i18n[lang].nav.home }}</a>
+    <a href="/{{ lang }}/texts/">{{ i18n[lang].nav.texts }}</a>
+    <a href="/en/classes/">{{ i18n[lang].nav.classes }}</a>
   </nav>
   <main>
     {{ content | safe }}

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "nav": {
+      "home": "Shaar Hayichud",
+      "texts": "Texts",
+      "classes": "Classes"
+    }
+  },
+  "he": {
+    "nav": {
+      "home": "שער היחוד",
+      "texts": "טקסטים",
+      "classes": "שיעורים"
+    }
+  }
+}
