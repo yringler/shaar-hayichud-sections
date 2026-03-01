@@ -1,0 +1,14 @@
+---
+title: Texts
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+---
+<h1>Texts</h1>
+
+<ul class="index-list">
+  {% for text in collections.texts | sort(false, false, "data.title") %}
+  <li>
+    <a href="{{ text.url }}">{{ text.data.title }}</a>
+  </li>
+  {% endfor %}
+</ul>

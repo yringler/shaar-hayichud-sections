@@ -6,6 +6,7 @@
     "xslt3": "^2.7.0"
   },
   "scripts": {
+    "convert": "node ./convert.js data.txt src/_data/classes.json",
     "xsl": "node ./build.mjs",
     "build": "node ./build.mjs && eleventy",
     "serve": "node ./build.mjs && eleventy --serve"
