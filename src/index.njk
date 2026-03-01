@@ -1,28 +1,16 @@
 ---
-layout: layouts/base.njk
-title: Home
+permalink: /index.html
+eleventyExcludeFromCollections: true
 ---
-<h1>{{ site.title }}</h1>
-<p>{{ site.description }}</p>
-
-<section>
-  <h2>Texts</h2>
-  <ul class="index-list">
-    {% for item in collections.texts %}
-    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-    {% else %}
-    <li>No texts yet.</li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section>
-  <h2>Classes</h2>
-  <ul class="index-list">
-    {% for series in classes %}
-    <li><a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
-    {% else %}
-    <li>No classes yet.</li>
-    {% endfor %}
-  </ul>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=/en/">
+  <link rel="canonical" href="/en/">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p><a href="/en/">Redirecting to English version…</a></p>
+</body>
+</html>

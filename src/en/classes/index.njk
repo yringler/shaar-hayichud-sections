@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 <ul class="part-list">
   {% for series in classes %}
   <li>
-    <a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a>
+    <a href="/en/classes/{{ series.title | slugify }}/">{{ series.title }}</a>
     <span class="track-count">{{ series.children | length }} parts</span>
   </li>
   {% endfor %}
