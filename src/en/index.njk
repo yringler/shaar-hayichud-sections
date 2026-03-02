@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
   <h2>{{ i18n[lang].nav.texts }}</h2>
   <ul class="index-list">
     {% for item in collections.texts %}
-      {% if item.data.lang == lang %}
+      {% if item.data.lang == lang and not item.data.section %}
       <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
       {% endif %}
     {% else %}
