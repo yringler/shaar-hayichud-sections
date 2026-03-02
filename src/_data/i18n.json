@@ -4,7 +4,8 @@
     "nav": {
       "home": "Shaar Hayichud",
       "texts": "Texts",
-      "classes": "Classes"
+      "classes": "Classes",
+      "about": "About"
     }
   },
   "he": {
@@ -12,7 +13,8 @@
     "nav": {
       "home": "שער היחוד",
       "texts": "טקסטים",
-      "classes": "שיעורים"
+      "classes": "שיעורים",
+      "about": "אודות"
     }
   }
 }
