@@ -164,7 +164,7 @@
   <nav>
     <a href="/{{ lang }}/">{{ i18n[lang].nav.home }}</a>
     <a href="/{{ lang }}/texts/">{{ i18n[lang].nav.texts }}</a>
-    {% if lang == "en" %}<a href="/en/translation/">Translation</a>{% endif %}
+    {% if lang == "en" %}<a href="/en/translation/">Translator's Introduction</a>{% endif %}
     <a href="/en/classes/">{{ i18n[lang].nav.classes }}</a>
     {% for link in page.url | locale_links %}
       {% if link.lang != lang %}
