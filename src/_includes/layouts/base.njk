@@ -39,6 +39,11 @@
       text-decoration: underline;
     }
 
+    .lang-switch {
+      margin-inline-start: auto;
+      color: #666;
+    }
+
     /* ── Main content ── */
     main a {
       color: inherit;
@@ -160,6 +165,11 @@
     <a href="/{{ lang }}/">{{ i18n[lang].nav.home }}</a>
     <a href="/{{ lang }}/texts/">{{ i18n[lang].nav.texts }}</a>
     <a href="/en/classes/">{{ i18n[lang].nav.classes }}</a>
+    {% for link in page.url | locale_links %}
+      {% if link.lang != lang %}
+    <a class="lang-switch" href="{{ link.url }}" hreflang="{{ link.lang }}">{{ i18n[link.lang].langName }}</a>
+      {% endif %}
+    {% endfor %}
   </nav>
   <main>
     {{ content | safe }}
