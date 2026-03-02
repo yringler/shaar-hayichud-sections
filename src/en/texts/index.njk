@@ -6,3 +6,11 @@ eleventyExcludeFromCollections: true
 <h1>{{ i18n[lang].nav.texts }}</h1>
 
 <h2><a href="/en/translation/">Translator's Introduction</a></h2>
+
+<ul class="index-list">
+  {% for text in collections.texts | sort(false, false, "data.title") %}
+    {% if text.data.lang == "he" %}
+    <li><a href="{{ text.url }}">{{ text.data.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
