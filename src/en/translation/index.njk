@@ -7,11 +7,5 @@ permalink: /en/translation/
 <h1>Translation</h1>
 
 <ul class="index-list">
-  {% for text in collections.texts %}
-    {% if text.data.lang == "en" and text.data.section == "intro" %}
-    <li>
-      <a href="{{ text.url }}">{{ text.data.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
+  <li><a href="/en/texts/translation-philosophy/">Translator's Introduction</a></li>
 </ul>
