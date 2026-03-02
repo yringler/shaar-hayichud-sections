@@ -14,11 +14,4 @@ permalink: /en/translation/
     </li>
     {% endif %}
   {% endfor %}
-  {% for text in collections.texts | sort(false, false, "data.title") %}
-    {% if text.data.lang == "en" and not text.data.section %}
-    <li>
-      <a href="{{ text.url }}">{{ text.data.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
 </ul>
