@@ -1,0 +1,24 @@
+---
+title: Translation
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+permalink: /en/translation/
+---
+<h1>Translation</h1>
+
+<ul class="index-list">
+  {% for text in collections.texts %}
+    {% if text.data.lang == "en" and text.data.section == "intro" %}
+    <li>
+      <a href="{{ text.url }}">{{ text.data.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  {% for text in collections.texts | sort(false, false, "data.title") %}
+    {% if text.data.lang == "en" and not text.data.section %}
+    <li>
+      <a href="{{ text.url }}">{{ text.data.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
