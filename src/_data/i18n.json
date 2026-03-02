@@ -1,0 +1,18 @@
+{
+  "en": {
+    "langName": "English",
+    "nav": {
+      "home": "Shaar Hayichud",
+      "texts": "Texts",
+      "classes": "Classes"
+    }
+  },
+  "he": {
+    "langName": "עברית",
+    "nav": {
+      "home": "שער היחוד",
+      "texts": "טקסטים",
+      "classes": "שיעורים"
+    }
+  }
+}

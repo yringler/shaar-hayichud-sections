@@ -3,7 +3,8 @@ node_modules
 _site
 
 # XSL-generated HTML fragments (rebuilt on every build)
-src/texts/*.html
+src/he/texts/*.html
+src/en/texts/*.html
 
 .yarn/*
 !.yarn/cache

@@ -1,7 +1,14 @@
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
+
 module.exports = function (eleventyConfig) {
   // Don't let Eleventy read .gitignore — src/texts/*.html is gitignored (generated)
   // but we still need Eleventy to process it. Use .eleventyignore instead.
   eleventyConfig.setUseGitIgnore(false);
+
+  // i18n plugin — path-prefix based locale detection (en, he)
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: "en",
+  });
 
   // Pass CNAME through to _site/ unchanged
   eleventyConfig.addPassthroughCopy("src/CNAME");
