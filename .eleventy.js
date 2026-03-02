@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
 
   // i18n plugin — path-prefix based locale detection (en, he)
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
-    defaultLocale: "en",
+    defaultLanguage: "en",
   });
 
   // Pass CNAME through to _site/ unchanged

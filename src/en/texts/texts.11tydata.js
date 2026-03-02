@@ -17,7 +17,6 @@ module.exports = {
       if (match) {
         return `/${data.lang}/texts/chapter-${parseInt(match[1], 10)}/`;
       }
-      return null;
     },
   },
 };
