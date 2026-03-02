@@ -11,5 +11,12 @@ module.exports = {
       }
       return slug;
     },
+    permalink(data) {
+      const slug = data.page.fileSlug;
+      const match = slug.match(/^chapter_(\d+)$/);
+      if (match) {
+        return `/${data.lang}/texts/chapter-${parseInt(match[1], 10)}/`;
+      }
+    },
   },
 };

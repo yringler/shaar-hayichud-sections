@@ -3,12 +3,14 @@ title: Texts
 layout: layouts/base.njk
 eleventyExcludeFromCollections: true
 ---
-<h1>Texts</h1>
+<h1>{{ i18n[lang].nav.texts }}</h1>
 
 <ul class="index-list">
   {% for text in collections.texts | sort(false, false, "data.title") %}
-  <li>
-    <a href="{{ text.url }}">{{ text.data.title }}</a>
-  </li>
+    {% if text.data.lang == lang %}
+    <li>
+      <a href="{{ text.url }}">{{ text.data.title }}</a>
+    </li>
+    {% endif %}
   {% endfor %}
 </ul>

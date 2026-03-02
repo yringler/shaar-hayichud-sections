@@ -5,17 +5,17 @@ pagination:
   alias: series
 eleventyComputed:
   title: "{{ series.title }}"
-permalink: "/classes/{{ series.title | slugify }}/"
+permalink: "/en/classes/{{ series.title | slugify }}/"
 layout: layouts/audio.njk
 eleventyExcludeFromCollections: true
 ---
-<p class="breadcrumb"><a href="/classes/">Classes</a> → {{ series.title }}</p>
+<p class="breadcrumb"><a href="/en/classes/">Classes</a> → {{ series.title }}</p>
 <h1>{{ series.title }}</h1>
 
 <ul class="part-list">
   {% for part in series.children %}
   <li>
-    <a href="/classes/{{ series.title | slugify }}/{{ part.title | slugify }}/">{{ part.title }}</a>
+    <a href="/en/classes/{{ series.title | slugify }}/{{ part.title | slugify }}/">{{ part.title }}</a>
     <span class="track-count">{{ part.children | trackCount }} tracks</span>
   </li>
   {% endfor %}

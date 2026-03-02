@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: Home
+eleventyExcludeFromCollections: true
+---
+<h1>{{ site.title }}</h1>
+<p>{{ site.description }}</p>
+
+<section>
+  <h2>{{ i18n[lang].nav.texts }}</h2>
+  <ul class="index-list">
+    {% for item in collections.texts %}
+      {% if item.data.lang == lang %}
+      <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+      {% endif %}
+    {% else %}
+    <li>No texts yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ i18n[lang].nav.classes }}</h2>
+  <ul class="index-list">
+    {% for series in classes %}
+    <li><a href="/en/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
+    {% else %}
+    <li>No classes yet.</li>
+    {% endfor %}
+  </ul>
+</section>
