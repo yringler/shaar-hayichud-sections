@@ -2,10 +2,6 @@ dist
 node_modules
 _site
 
-# XSL-generated HTML fragments (rebuilt on every build)
-src/he/texts/*.html
-src/en/texts/*.html
-
 .yarn/*
 !.yarn/cache
 !.yarn/patches
