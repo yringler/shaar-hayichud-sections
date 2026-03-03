@@ -1,9 +1,17 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const { renderXmlToHtml } = require("./lib/xml-renderer");
 
 module.exports = function (eleventyConfig) {
-  // Don't let Eleventy read .gitignore — src/texts/*.html is gitignored (generated)
-  // but we still need Eleventy to process it. Use .eleventyignore instead.
-  eleventyConfig.setUseGitIgnore(false);
+  // Register .xml as a native 11ty template format.
+  // The compile function receives the raw XML (after any YAML front matter is
+  // stripped by Eleventy) and returns an async render function that produces an
+  // HTML fragment. The fragment is then passed through the layout system normally.
+  eleventyConfig.addExtension("xml", {
+    outputFileExtension: "html",
+    compile(inputContent, _inputPath) {
+      return async (data) => renderXmlToHtml(inputContent, data);
+    },
+  });
 
   // i18n plugin — path-prefix based locale detection (en, he)
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
@@ -73,7 +81,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    templateFormats: ["njk", "html", "md"],
+    templateFormats: ["njk", "html", "md", "xml"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
   };
