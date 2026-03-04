@@ -11,6 +11,15 @@
     "build": "eleventy",
     "serve": "eleventy --serve",
     "test": "node --test lib/xml-renderer.test.js",
-    "xslt": "node xslt-reference/build.mjs"
+    "xslt": "node xslt-reference/build.mjs",
+    "epub": "node xslt-reference/build-epub.mjs"
+  },
+  "devDependencies": {
+    "epub-gen": "^0.1.0"
+  },
+  "dependenciesMeta": {
+    "epub-gen@0.1.0": {
+      "unplugged": true
+    }
   }
 }
