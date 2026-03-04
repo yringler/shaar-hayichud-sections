@@ -3,12 +3,14 @@
   "packageManager": "yarn@4.12.0",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "fast-xml-parser": "^5.4.1"
+    "fast-xml-parser": "^5.4.1",
+    "xslt3": "^2.7.0"
   },
   "scripts": {
     "convert": "node ./convert.js data.txt src/_data/classes.json",
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "test": "node --test lib/xml-renderer.test.js"
+    "test": "node --test lib/xml-renderer.test.js",
+    "xslt": "node xslt-reference/build.mjs"
   }
 }
