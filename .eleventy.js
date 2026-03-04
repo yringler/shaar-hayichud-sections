@@ -14,6 +14,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/_headers");
 
+  // Serve raw XML chapter files at /xml/
+  eleventyConfig.addPassthroughCopy({ "chapter_*.xml": "xml" });
+
   // Encode a full URL for use in src/href attributes
   eleventyConfig.addFilter("urlencode", (url) => encodeURI(url));
 
