@@ -10,8 +10,12 @@ module.exports = function (eleventyConfig) {
     defaultLanguage: "en",
   });
 
-  // Pass CNAME through to _site/ unchanged
+  // Pass CNAME and _headers through to _site/ unchanged
   eleventyConfig.addPassthroughCopy("src/CNAME");
+  eleventyConfig.addPassthroughCopy("src/_headers");
+
+  // Serve raw XML chapter files at /xml/
+  eleventyConfig.addPassthroughCopy({ "chapter_*.xml": "xml" });
 
   // Encode a full URL for use in src/href attributes
   eleventyConfig.addFilter("urlencode", (url) => encodeURI(url));
