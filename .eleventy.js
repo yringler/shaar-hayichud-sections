@@ -70,6 +70,17 @@ module.exports = function (eleventyConfig) {
     )
   );
 
+  eleventyConfig.setServerOptions({
+    // Other options
+    middleware: [
+      function(req, res, next) {
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Headers", "*");
+        next();
+      }
+    ]
+  });
+
   return {
     dir: {
       input: "src",
