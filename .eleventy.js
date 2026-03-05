@@ -66,10 +66,12 @@ module.exports = function (eleventyConfig) {
   });
 
   // Named collections (tags drive membership)
+  // Use getAll() instead of getFilteredByTag() to bypass i18n plugin locale filtering,
+  // which otherwise excludes non-default-language (he) pagination pages.
   eleventyConfig.addCollection("texts", (api) =>
-    api.getFilteredByTag("texts").sort((a, b) =>
-      a.inputPath.localeCompare(b.inputPath)
-    )
+    api.getAll()
+      .filter((item) => (item.data.tags || []).includes("texts"))
+      .sort((a, b) => a.inputPath.localeCompare(b.inputPath))
   );
 
   eleventyConfig.addCollection("classes", (api) =>
