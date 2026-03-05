@@ -1,4 +1,5 @@
 [
   { "lang": "en", "dir": "ltr" },
-  { "lang": "he", "dir": "rtl" }
+  { "lang": "he", "dir": "rtl" },
+  { "lang": "en", "dir": "ltr", "section": "translation" }
 ]
