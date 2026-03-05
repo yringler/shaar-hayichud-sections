@@ -1,12 +1,17 @@
+const fs = require("fs");
+
 module.exports = {
   layout: "layouts/text.njk",
-  tags: ["texts"],
   pagination: {
     data: "xmlLocales",
     size: 1,
     alias: "locale",
   },
   eleventyComputed: {
+    tags(data) {
+      const content = fs.readFileSync(data.page.inputPath, "utf8");
+      return content.includes("<translation") ? ["texts", "translations"] : ["texts"];
+    },
     lang: (data) => data.locale.lang,
     dir: (data) => data.locale.dir,
     title(data) {
