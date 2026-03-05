@@ -9,3 +9,12 @@ permalink: /en/translation/
 <ul class="index-list">
   <li><a href="/en/translation/translation-philosophy/">Translator's Introduction</a></li>
 </ul>
+
+<h2>Translations</h2>
+<ul class="index-list">
+  {% for item in collections.translations | sort(false, false, "data.title") %}
+    {% if ("/en/") in item.url %}
+    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
