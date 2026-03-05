@@ -74,12 +74,6 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => a.inputPath.localeCompare(b.inputPath))
   );
 
-  eleventyConfig.addCollection("translations", (api) =>
-    api.getAll()
-      .filter((item) => (item.data.tags || []).includes("translations"))
-      .sort((a, b) => a.inputPath.localeCompare(b.inputPath))
-  );
-
   eleventyConfig.addCollection("classes", (api) =>
     api.getFilteredByTag("classes").sort((a, b) =>
       a.inputPath.localeCompare(b.inputPath)

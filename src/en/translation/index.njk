@@ -12,9 +12,9 @@ permalink: /en/translation/
 
 <h2>Translations</h2>
 <ul class="index-list">
-  {% for item in collections.translations | sort(false, false, "data.title") %}
-    {% if ("/en/") in item.url %}
-    <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+  {% for item in collections.texts | sort(false, false, "data.title") %}
+    {% if ("/en/texts/") in item.url and item.data.hasTranslation %}
+    <li><a href="{{ item.data.translationPermalink }}">{{ item.data.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
