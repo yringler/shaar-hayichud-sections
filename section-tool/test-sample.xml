@@ -1,0 +1,13 @@
+<section label="פרק א">
+  מבוא לפרק הראשון
+  <section label="סעיף א">
+    תוכן הסעיף הראשון
+    <section>פסקה ראשונה</section>
+    <section>פסקה שנייה</section>
+  </section>
+  טקסט בין הסעיפים
+  <section label="סעיף ב">
+    תוכן הסעיף השני
+  </section>
+  סיכום הפרק
+</section>

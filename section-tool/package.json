@@ -1,0 +1,43 @@
+{
+  "name": "hebrew-section-tool",
+  "version": "0.0.0",
+  "license": "ISC",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "test:library": "tsx src/app/services/xml-library.manual-test.ts",
+    "dev:full": "ng build && npx wrangler pages dev dist/hebrew-section-tool/browser"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^21.1.4",
+    "@angular/common": "^21.1.4",
+    "@angular/compiler": "^21.1.4",
+    "@angular/core": "^21.1.4",
+    "@angular/forms": "^21.1.4",
+    "@angular/platform-browser": "^21.1.4",
+    "@angular/platform-browser-dynamic": "^21.1.4",
+    "@angular/router": "^21.1.4",
+    "@awesome.me/webawesome": "^3.2.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.1.4",
+    "@angular/cli": "^21.1.4",
+    "@angular/compiler-cli": "^21.1.4",
+    "@cloudflare/workers-types": "^4.20260301.1",
+    "@types/node": "^25.3.3",
+    "jsdom": "^28.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.0",
+    "vitest": "^4.0.18"
+  },
+  "optionalDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "packageManager": "yarn@4.13.0+sha512.5c20ba010c99815433e5c8453112165e673f1c7948d8d2b267f4b5e52097538658388ebc9f9580656d9b75c5cc996f990f611f99304a2197d4c56d21eea370e7"
+}

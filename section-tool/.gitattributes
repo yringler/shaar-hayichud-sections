@@ -1,0 +1,2 @@
+.yarn/cache/**/*.zip binary
+.yarn/releases/** binary

@@ -1,0 +1,66 @@
+<div class="text-node" [style.margin-right.px]="(level() - 1) * 24">
+  <div class="node-header">
+    <span class="level-badge">Level {{ level() }}</span>
+    <input
+      class="label-input"
+      type="text"
+      [value]="node().label"
+      (input)="onLabelInput($event)"
+      placeholder="Click to add label"
+    />
+    <button class="delete-btn" (click)="onDelete()" title="Delete section">&times;</button>
+  </div>
+
+  <div class="node-body" [class.translation-mode]="showTranslation()">
+    <div class="hebrew-content">
+      @for (item of node().children; track $index) {
+        @if (isString(item)) {
+          <wa-textarea
+            class="text-area"
+            dir="rtl"
+            resize="auto"
+            [attr.data-node-id]="node().id"
+            [attr.data-content-index]="$index"
+            [value]="item"
+            (input)="onTextInput($event, $index)"
+            (keydown)="onKeydown($event, waTextarea, $index)"
+            #waTextarea
+            placeholder="Enter text here..."
+          ></wa-textarea>
+        }
+      }
+    </div>
+
+    @if (showTranslation()) {
+      <div class="translation-content">
+        <wa-textarea
+          class="translation-area"
+          dir="ltr"
+          resize="auto"
+          [value]="node().translation || ''"
+          (input)="onTranslationInput($event)"
+          (keydown)="onTranslationKeydown($event, translationTextarea)"
+          #translationTextarea
+          placeholder="Translation..."
+        ></wa-textarea>
+      </div>
+    }
+  </div>
+
+  <div class="children-container">
+    @for (item of node().children; track $index) {
+      @if (!isString(item)) {
+        <app-text-node
+          [node]="item"
+          [level]="level() + 1"
+          [showTranslation]="showTranslation()"
+          (nodeKeydown)="onChildKeydown($event)"
+          (textChange)="onChildTextChange($event)"
+          (labelChange)="onChildLabelChange($event)"
+          (deleteNode)="onChildDelete($event)"
+          (translationChange)="onChildTranslationChange($event)"
+        />
+      }
+    }
+  </div>
+</div>

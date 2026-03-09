@@ -1,0 +1,35 @@
+.xml-output {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.output-actions {
+  display: flex;
+  gap: 6px;
+}
+
+
+.paste-area {
+  width: 100%;
+  box-sizing: border-box;
+  height: 80px;
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 8px;
+  color: #555;
+  background: #fafafa;
+}
+
+.paste-area:focus {
+  outline: none;
+  border-color: #1565c0;
+  background: #fff;
+}
