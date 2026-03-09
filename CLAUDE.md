@@ -23,9 +23,9 @@ Each sub-project is run from its own directory:
 ```bash
 # Section tool (Angular)
 cd section-tool
-npm install
-npm start        # dev server at http://localhost:4200
-npm test         # Vitest unit tests
+yarn install
+yarn start       # dev server at http://localhost:4200
+yarn test        # Vitest unit tests
 
 # Site (Eleventy)
 cd site
