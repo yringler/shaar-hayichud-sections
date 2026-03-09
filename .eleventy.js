@@ -23,7 +23,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/_headers");
 
   // Serve raw XML chapter files at /xml/
-  eleventyConfig.addPassthroughCopy({ "src/texts/chapter_*.xml": "xml" });
+  // Using eleventy.after instead of addPassthroughCopy to avoid a conflict in
+  // Eleventy v3 where passthrough copy wins over template processing for the
+  // same files, preventing chapters from rendering as HTML pages.
+  eleventyConfig.on("eleventy.after", ({ dir }) => {
+    const fs = require("fs");
+    const path = require("path");
+    const xmlOut = path.join(dir.output, "xml");
+    fs.mkdirSync(xmlOut, { recursive: true });
+    for (const file of fs.readdirSync(path.join(dir.input, "texts")).filter((f) => /^chapter_.*\.xml$/.test(f))) {
+      fs.copyFileSync(path.join(dir.input, "texts", file), path.join(xmlOut, file));
+    }
+  });
 
   // Encode a full URL for use in src/href attributes
   eleventyConfig.addFilter("urlencode", (url) => encodeURI(url));
