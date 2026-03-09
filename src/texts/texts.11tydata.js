@@ -35,8 +35,6 @@ module.exports = {
       if (!match) return;
       const n = parseInt(match[1], 10);
       if (data.locale.section === "translation") {
-        const content = fs.readFileSync(data.page.inputPath, "utf8");
-        if (!content.includes("<translation")) return false;
         return translationPermalinkForSlug(slug);
       }
       return `/${data.locale.lang}/texts/chapter-${n}/`;
