@@ -10,7 +10,7 @@
     "convert": "node ./convert.js data.txt src/_data/classes.json",
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "test": "node --test lib/xml-renderer.test.js",
+    "test": "node --test lib/json-renderer.test.js",
     "xslt": "node xslt-reference/build.mjs",
     "epub": "node xslt-reference/build-epub.mjs"
   },

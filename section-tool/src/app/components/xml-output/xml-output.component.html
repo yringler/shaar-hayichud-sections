@@ -5,7 +5,7 @@
       Load File
     </wa-button>
     <app-xml-library-picker (fileSelected)="loadRequest.emit($event)" />
-    <wa-button size="small" appearance="outlined" (click)="onCopy()" [disabled]="!xmlContent()" title="Copy XML to clipboard">
+    <wa-button size="small" appearance="outlined" (click)="onCopy()" [disabled]="!jsonContent()" title="Copy XML to clipboard">
       <wa-icon name="copy" slot="start"></wa-icon>
       Copy
     </wa-button>
@@ -16,13 +16,13 @@
   </div>
   <textarea
     class="paste-area"
-    placeholder="Paste XML here to load..."
+    placeholder="Paste JSON here to load..."
     (paste)="onPaste($event)"
   ></textarea>
   <input
     #fileInput
     type="file"
-    accept=".xml,text/xml,application/xml"
+    accept=".json,application/json"
     (change)="onFileSelected($event)"
     style="display: none;"
   />

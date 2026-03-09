@@ -1,15 +1,15 @@
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
-const { renderXmlToHtml } = require("./lib/xml-renderer");
+const { renderJsonToHtml } = require("./lib/json-renderer");
 
 module.exports = function (eleventyConfig) {
-  // Register .xml as a native 11ty template format.
-  // The compile function receives the raw XML (after any YAML front matter is
+  // Register .json chapter files as native 11ty templates.
+  // The compile function receives the raw JSON (after any YAML front matter is
   // stripped by Eleventy) and returns an async render function that produces an
   // HTML fragment. The fragment is then passed through the layout system normally.
-  eleventyConfig.addExtension("xml", {
+  eleventyConfig.addExtension("json", {
     outputFileExtension: "html",
     compile(inputContent, _inputPath) {
-      return async (data) => renderXmlToHtml(inputContent, data);
+      return async (data) => renderJsonToHtml(inputContent, data);
     },
   });
 
@@ -22,17 +22,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/CNAME");
   eleventyConfig.addPassthroughCopy("src/_headers");
 
-  // Serve raw XML chapter files at /xml/
+  // Serve raw JSON chapter files at /texts/
   // Using eleventy.after instead of addPassthroughCopy to avoid a conflict in
   // Eleventy v3 where passthrough copy wins over template processing for the
   // same files, preventing chapters from rendering as HTML pages.
   eleventyConfig.on("eleventy.after", ({ dir }) => {
     const fs = require("fs");
     const path = require("path");
-    const xmlOut = path.join(dir.output, "xml");
-    fs.mkdirSync(xmlOut, { recursive: true });
-    for (const file of fs.readdirSync(path.join(dir.input, "texts")).filter((f) => /^chapter_.*\.xml$/.test(f))) {
-      fs.copyFileSync(path.join(dir.input, "texts", file), path.join(xmlOut, file));
+    const textsOut = path.join(dir.output, "texts");
+    fs.mkdirSync(textsOut, { recursive: true });
+    for (const file of fs.readdirSync(path.join(dir.input, "texts")).filter((f) => /^chapter_.*\.json$/.test(f))) {
+      fs.copyFileSync(path.join(dir.input, "texts", file), path.join(textsOut, file));
     }
   });
 
@@ -119,7 +119,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    templateFormats: ["njk", "html", "md", "xml"],
+    templateFormats: ["njk", "html", "md", "json"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
   };

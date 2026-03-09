@@ -712,88 +712,55 @@ describe('TextSectionService', () => {
     });
   });
 
-  describe('xmlOutput', () => {
-    it('should generate XML for single node', () => {
+  describe('jsonOutput', () => {
+    it('should generate JSON for single node', () => {
       service.clearAll();
       const root = service.createNode('Hello World');
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toBe('<section>\n  <section>Hello World</section>\n</section>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed).toHaveLength(1);
+      expect(parsed[0].children).toContain('Hello World');
     });
 
-    it('should generate XML with label attribute', () => {
+    it('should generate JSON with label', () => {
       service.clearAll();
       const root = service.createNode('Content', 'Chapter 1');
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toBe('<section>\n  <section label="Chapter 1">Content</section>\n</section>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].label).toBe('Chapter 1');
+      expect(parsed[0].children).toContain('Content');
     });
 
-    it('should generate nested XML', () => {
+    it('should generate nested JSON', () => {
       service.clearAll();
       const root = service.createNode('Parent text', 'Parent');
       const child = service.createNode('Child text', 'Child');
       root.children.push(child);
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<section label="Parent">');
-      expect(xml).toContain('Parent text');
-      expect(xml).toContain('<section label="Child">Child text</section>');
-      expect(xml).toContain('</section>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].label).toBe('Parent');
+      expect(parsed[0].children).toContain('Parent text');
+      const childNode = parsed[0].children.find((c: any) => typeof c === 'object');
+      expect(childNode.label).toBe('Child');
+      expect(childNode.children).toContain('Child text');
     });
 
-    it('should escape XML special characters', () => {
-      service.clearAll();
-      const root = service.createNode('Text with <tag> & "quotes"');
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-      expect(xml).toBe('<section>\n  <section>Text with &lt;tag&gt; &amp; &quot;quotes&quot;</section>\n</section>');
-    });
-
-    it('should handle multiple root nodes wrapped in root section', () => {
-      service.clearAll();
-      const root1 = service.createNode('First');
-      const root2 = service.createNode('Second');
-      service.rootNodes.set([root1, root2]);
-
-      const xml = service.xmlOutput();
-      // Should start with root section
-      expect(xml.startsWith('<section>\n')).toBe(true);
-      expect(xml.endsWith('\n</section>')).toBe(true);
-      expect(xml).toContain('  <section>First</section>');
-      expect(xml).toContain('  <section>Second</section>');
-    });
-
-    it('should produce valid XML with single root element', () => {
-      service.clearAll();
-      const root1 = service.createNode('First');
-      const root2 = service.createNode('Second');
-      service.rootNodes.set([root1, root2]);
-
-      const xml = service.xmlOutput();
-      // Count opening and closing section tags
-      const openTags = (xml.match(/<section/g) || []).length;
-      const closeTags = (xml.match(/<\/section>/g) || []).length;
-      expect(openTags).toBe(closeTags);
-
-      // Verify it starts and ends with a single root
-      const lines = xml.split('\n').filter(l => l.trim());
-      expect(lines[0]).toBe('<section>');
-      expect(lines[lines.length - 1]).toBe('</section>');
-    });
-
-    it('should skip empty nodes without children', () => {
+    it('should skip empty nodes', () => {
       service.clearAll();
       const root1 = service.createNode('Content');
       const root2 = service.createNode('');
       service.rootNodes.set([root1, root2]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toBe('<section>\n  <section>Content</section>\n</section>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed).toHaveLength(1);
+      expect(parsed[0].children).toContain('Content');
     });
 
     it('should trim whitespace in text nodes', () => {
@@ -801,194 +768,102 @@ describe('TextSectionService', () => {
       const root = service.createNode('  Text with spaces  ');
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toBe('<section>\n  <section>Text with spaces</section>\n</section>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].children).toContain('Text with spaces');
     });
 
-    it('should include translation element when node has translation', () => {
+    it('should include translation when node has translation', () => {
       service.clearAll();
       const root = service.createNode('Hebrew text', 'Chapter 1');
       root.translation = 'English translation';
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<translation><![CDATA[English translation]]></translation>');
-      expect(xml).toContain('Hebrew text');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].translation).toBe('English translation');
+      expect(parsed[0].children).toContain('Hebrew text');
     });
 
-    it('should not include translation element when translation is empty', () => {
+    it('should not include translation when translation is empty', () => {
       service.clearAll();
       const root = service.createNode('Hebrew text');
       root.translation = '';
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).not.toContain('<translation>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].translation).toBeUndefined();
     });
 
-    it('should allow HTML in translation via CDATA', () => {
+    it('should handle special characters in text (JSON handles natively)', () => {
       service.clearAll();
-      const root = service.createNode('text');
-      root.translation = 'Text with <i>italic</i> & "quotes"';
+      const root = service.createNode('Text with <tag> & "quotes"');
       service.rootNodes.set([root]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<translation><![CDATA[Text with <i>italic</i> & "quotes"]]></translation>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed[0].children).toContain('Text with <tag> & "quotes"');
     });
 
-    it('should wrap translation paragraphs in p tags when translation has newlines', () => {
+    it('should handle multiple root nodes', () => {
       service.clearAll();
-      const root = service.createNode('Hebrew text');
-      root.translation = 'First paragraph\nSecond paragraph';
-      service.rootNodes.set([root]);
+      const root1 = service.createNode('First');
+      const root2 = service.createNode('Second');
+      service.rootNodes.set([root1, root2]);
 
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<translation><![CDATA[<p>First paragraph</p><p>Second paragraph</p>]]></translation>');
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      expect(parsed).toHaveLength(2);
+      expect(parsed[0].children).toContain('First');
+      expect(parsed[1].children).toContain('Second');
     });
 
-    it('should not wrap in p tags when translation has no newlines', () => {
+    it('should preserve order: text before child nodes', () => {
       service.clearAll();
-      const root = service.createNode('Hebrew text');
-      root.translation = 'Single paragraph';
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<translation><![CDATA[Single paragraph]]></translation>');
-    });
-
-    it('should filter empty lines when translation has multiple newlines', () => {
-      service.clearAll();
-      const root = service.createNode('Hebrew text');
-      root.translation = 'First\n\nThird';
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<translation><![CDATA[<p>First</p><p>Third</p>]]></translation>');
-    });
-
-    it('should handle complex nested structure', () => {
-      service.clearAll();
-      const root = service.createNode('Root text', 'Root');
+      const parent = service.createNode('Parent text', 'Parent');
       const child1 = service.createNode('Child 1', 'C1');
       const child2 = service.createNode('Child 2', 'C2');
-      const grandchild = service.createNode('Grandchild');
-      child1.children.push(grandchild);
-      root.children.push(child1, child2);
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-      expect(xml).toContain('<section label="Root">');
-      expect(xml).toContain('<section label="C1">');
-      expect(xml).toContain('<section>Grandchild</section>');
-      expect(xml).toContain('<section label="C2">Child 2</section>');
-    });
-
-    it('should properly indent nested sections', () => {
-      service.clearAll();
-      const root = service.createNode('Root', 'R');
-      const child = service.createNode('Child');
-      root.children.push(child);
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-      const lines = xml.split('\n');
-      expect(lines[0]).toBe('<section>');
-      expect(lines[1]).toBe('  <section label="R">');
-      expect(lines[2]).toBe('    Root');
-      expect(lines[3]).toBe('    <section>Child</section></section>');
-      expect(lines[4]).toBe('</section>');
-      expect(lines.length).toBe(5);
-    });
-
-    it('should render parent text before children, with multiple children', () => {
-      service.clearAll();
-      const parent = service.createNode('Parent text before children', 'Parent');
-      const child1 = service.createNode('First child text', 'Child1');
-      const child2 = service.createNode('Second child text', 'Child2');
       parent.children.push(child1, child2);
       service.rootNodes.set([parent]);
 
-      const xml = service.xmlOutput();
-
-      // Verify structure: parent opens, parent text, children, parent closes
-      expect(xml).toContain('<section label="Parent">');
-      expect(xml).toContain('Parent text before children');
-      expect(xml).toContain('<section label="Child1">First child text</section>');
-      expect(xml).toContain('<section label="Child2">Second child text</section>');
-      expect(xml).toContain('</section>');
-
-      // Verify order: parent text comes before children
-      const parentTextIndex = xml.indexOf('Parent text before children');
-      const child1Index = xml.indexOf('First child text');
-      const child2Index = xml.indexOf('Second child text');
-      expect(parentTextIndex).toBeLessThan(child1Index);
-      expect(child1Index).toBeLessThan(child2Index);
-    });
-
-    it('should handle parent with text and nested children at multiple levels', () => {
-      service.clearAll();
-      const root = service.createNode('Introduction text', 'Chapter');
-      const section1 = service.createNode('Section 1 content', 'Section1');
-      const subsection = service.createNode('Subsection details', 'Subsection');
-      const section2 = service.createNode('Section 2 content', 'Section2');
-
-      section1.children.push(subsection);
-      root.children.push(section1, section2);
-      service.rootNodes.set([root]);
-
-      const xml = service.xmlOutput();
-
-      // Verify the hierarchical structure
-      expect(xml).toContain('<section label="Chapter">');
-      expect(xml).toContain('Introduction text');
-      expect(xml).toContain('<section label="Section1">');
-      expect(xml).toContain('Section 1 content');
-      expect(xml).toContain('<section label="Subsection">Subsection details</section>');
-      expect(xml).toContain('<section label="Section2">Section 2 content</section>');
-
-      // Verify ordering
-      const introIndex = xml.indexOf('Introduction text');
-      const section1Index = xml.indexOf('Section 1 content');
-      const subsectionIndex = xml.indexOf('Subsection details');
-      const section2Index = xml.indexOf('Section 2 content');
-
-      expect(introIndex).toBeLessThan(section1Index);
-      expect(section1Index).toBeLessThan(subsectionIndex);
-      expect(subsectionIndex).toBeLessThan(section2Index);
+      const json = service.jsonOutput();
+      const parsed = JSON.parse(json);
+      const children = parsed[0].children;
+      const textIndex = children.indexOf('Parent text');
+      const child1Index = children.findIndex((c: any) => typeof c === 'object' && c.label === 'C1');
+      expect(textIndex).toBeLessThan(child1Index);
     });
   });
 
-  describe('computed xmlOutput reactivity', () => {
-    it('should update XML when nodes change', () => {
+  describe('jsonOutput reactivity', () => {
+    it('should update JSON when nodes change', () => {
       service.clearAll();
       const root = service.createNode('Initial');
       service.rootNodes.set([root]);
 
-      const xml1 = service.xmlOutput();
-      expect(xml1).toBe('<section>\n  <section>Initial</section>\n</section>');
+      const json1 = JSON.parse(service.jsonOutput());
+      expect(json1[0].children).toContain('Initial');
 
       service.updateNodeText(root.id, 0, 'Updated');
-      const xml2 = service.xmlOutput();
-      expect(xml2).toBe('<section>\n  <section>Updated</section>\n</section>');
+      const json2 = JSON.parse(service.jsonOutput());
+      expect(json2[0].children).toContain('Updated');
     });
 
-    it('should return blank XML for default empty state', () => {
+    it('should return blank string for default empty state', () => {
       service.clearAll();
-      // Default state is one empty node
-      const xml = service.xmlOutput();
-      expect(xml).toBe('');
+      expect(service.jsonOutput()).toBe('');
     });
 
-    it('should return XML once content is added to default node', () => {
+    it('should return JSON once content is added to default node', () => {
       service.clearAll();
       const root = service.rootNodes()[0];
 
-      // Initially blank
-      expect(service.xmlOutput()).toBe('');
+      expect(service.jsonOutput()).toBe('');
 
-      // Add content
       service.updateNodeText(root.id, 0, 'Hello');
-      expect(service.xmlOutput()).toBe('<section>\n  <section>Hello</section>\n</section>');
+      const parsed = JSON.parse(service.jsonOutput());
+      expect(parsed[0].children).toContain('Hello');
     });
   });
 });
