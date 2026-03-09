@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:library": "tsx src/app/services/xml-library.manual-test.ts",
-    "dev:full": "ng build && npx wrangler pages dev dist/hebrew-section-tool/browser"
+    "dev:full": "ng build --configuration development && npx wrangler pages dev dist/hebrew-section-tool/browser"
   },
   "private": true,
   "dependencies": {
