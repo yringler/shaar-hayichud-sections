@@ -1,6 +1,8 @@
-# Claude Code Instructions
+# Claude Code Instructions — section-tool
 
-This is a Hebrew text sectioning tool built with Angular 21. It helps users progressively divide Hebrew text into nested XML sections using keyboard shortcuts.
+> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is consumed by the [`site/` sub-project](../site/CLAUDE.md).
+
+This is a Hebrew text sectioning tool built with Angular 21. It helps users progressively divide Hebrew text into nested JSON sections using keyboard shortcuts.
 
 ## Project Overview
 
@@ -82,12 +84,12 @@ splitToChild(nodeId: string, contentIndex: number, cursorPos: number): string | 
 }
 ```
 
-### XML Generation
+### JSON Generation
 
-The `nodesToXml()` method handles three cases:
-1. **Text-only nodes**: Inline format `<section>text</section>`
+The `nodesToJson()` method handles three cases:
+1. **Text-only nodes**: Emitted as `{ label?, children: [string], translation? }`
 2. **Empty nodes**: Skipped entirely
-3. **Nodes with children**: Multi-line format with indentation
+3. **Nodes with children**: Recursively emits nested JSON objects
 
 **Important**: Adjacent text strings are automatically merged during merge operations via `mergeAdjacentStrings()`.
 
@@ -125,36 +127,36 @@ src/app/
 2. **Update the service** - Add/modify methods in `TextSectionService`
 3. **Write tests first** - Update `text-section.service.spec.ts` with expected behavior
 4. **Update components** - Modify components to use new service methods
-5. **Run tests** - Ensure all 59 tests pass: `npm test`
+5. **Run tests** - Ensure all 59 tests pass: `yarn test`
 
 ### Testing Requirements
 
 - **All service methods must have tests**
 - **Test edge cases**: empty strings, empty arrays, null returns
 - **Test reactivity**: Verify signals update correctly
-- **Test XML output**: Validate generated XML structure
-- **Run tests before committing**: `npm test -- --watch=false`
+- **Test JSON output**: Validate generated JSON structure
+- **Run tests before committing**: `yarn test -- --watch=false`
 
 ### Common Operations
 
 **Run dev server**:
 ```bash
-npm start
+yarn start
 ```
 
 **Run tests**:
 ```bash
-npm test
+yarn test
 ```
 
 **Build for production**:
 ```bash
-npm run build
+yarn build
 ```
 
 **Type checking**:
 ```bash
-npx tsc --noEmit
+yarn tsc --noEmit
 ```
 
 ## Important Patterns to Follow
@@ -220,45 +222,47 @@ The application supports Hebrew (RTL) text:
 - CSS handles RTL layout with `margin-right` for indentation
 - No special logic needed in TypeScript - browser handles RTL
 
-## XML Output Format
+## JSON Output Format
 
-Generated XML uses:
-- `<section>` tags for all nodes
-- `label` attribute for labeled sections
-- Proper indentation (2 spaces per level)
-- Escaped special characters (&, <, >, ")
-- Trimmed text content
-- Skipped empty nodes
-- **Root wrapper**: Always wrapped in a root `<section>` element for valid XML
+Generated JSON is a `TextNode[]` array (pretty-printed, 2-space indentation). Each node has:
+- `label` (optional) — section heading
+- `children` — array of strings and/or child `TextNode` objects
+- `translation` (optional) — English translation string
+- Empty nodes are skipped
 
 **Example**:
-```xml
-<section>
-  <section label="Chapter 1">
-    Introduction text
-    <section label="Section 1.1">
-      Section content
-      <section>Subsection content</section>
-    </section>
-    Conclusion text
-  </section>
-</section>
+```json
+[
+  {
+    "label": "Chapter 1",
+    "children": [
+      "Introduction text",
+      {
+        "label": "Section 1.1",
+        "children": [
+          "Section content",
+          { "children": ["Subsection content"] }
+        ]
+      },
+      "Conclusion text"
+    ]
+  }
+]
 ```
 
-### XML Parsing (Loading)
+### JSON Parsing (Loading)
 
-When XML is loaded/pasted:
-- The parser automatically **unwraps** a wrapper root `<section>` (no label, no text content)
-- This ensures roundtrip compatibility: generate → copy → paste → edit → generate
-- Root sections with labels or text content are preserved as actual content nodes
-- This allows users to paste generated XML without creating double-wrapped structures
+When JSON is loaded/pasted (`loadFromJson()`):
+- Calls `xml-parser.service.ts → parseXml()` (legacy name; actually parses JSON)
+- Hydrates each node with a fresh `id` via `crypto.randomUUID()`
+- Ensures roundtrip compatibility: generate → copy → paste → edit → generate
 
-### Blank XML for Empty State
+### Blank Output for Empty State
 
 When the application is in its initial state (single empty node with no content):
-- `xmlOutput()` returns an empty string `''`
-- This allows users to paste XML directly without clearing first
-- Once any content is added, normal XML output is generated
+- `jsonOutput()` returns an empty string `''`
+- This allows users to paste JSON directly without clearing first
+- Once any content is added, normal JSON output is generated
 
 ## When Making Changes
 
