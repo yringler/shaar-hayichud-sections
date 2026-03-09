@@ -22,7 +22,7 @@ export class TextSectionerComponent {
   private libraryService = inject(XmlLibraryService);
 
   rootNodes = this.service.rootNodes;
-  xmlOutput = this.service.xmlOutput;
+  jsonOutput = this.service.jsonOutput;
   showTranslation = signal(false);
   saveStatus = this.saveService.status;
   saveErrorMessage = this.saveService.errorMessage;
@@ -75,15 +75,15 @@ export class TextSectionerComponent {
   }
 
   onCopy(): void {
-    navigator.clipboard.writeText(this.xmlOutput());
+    navigator.clipboard.writeText(this.jsonOutput());
   }
 
   onDownload(): void {
-    const blob = new Blob([this.xmlOutput()], { type: 'application/xml' });
+    const blob = new Blob([this.jsonOutput()], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'sections.xml';
+    a.download = 'sections.json';
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -92,11 +92,11 @@ export class TextSectionerComponent {
     this.service.clearAll();
   }
 
-  onLoad(xmlContent: string): void {
+  onLoad(content: string): void {
     try {
-      this.service.loadFromXml(xmlContent);
+      this.service.loadFromJson(content);
     } catch (error) {
-      alert('Failed to load XML: ' + (error instanceof Error ? error.message : 'Invalid XML format'));
+      alert('Failed to load: ' + (error instanceof Error ? error.message : 'Invalid format'));
     }
   }
 
@@ -107,7 +107,7 @@ export class TextSectionerComponent {
       return;
     }
     const path = `src/texts/${filename}`;
-    const content = this.xmlOutput();
+    const content = this.jsonOutput();
     const message = `Edit ${filename} via editor`;
     void this.saveService.save(path, content, message);
   }

@@ -8,7 +8,7 @@ export class TextSectionService {
 
   readonly rootNodes = signal<TextNode[]>([this.createNode('')]);
 
-  readonly xmlOutput = computed(() => {
+  readonly jsonOutput = computed(() => {
     const roots = this.rootNodes();
 
     // If there's only one root with no label and only empty text, return blank
@@ -19,8 +19,7 @@ export class TextSectionService {
       }
     }
 
-    const innerXml = this.nodesToXml(roots, 1);
-    return innerXml ? `<section>\n${innerXml}\n</section>` : '';
+    return JSON.stringify(this.nodesToJson(roots), null, 2);
   });
 
   createNode(text: string = '', label = ''): TextNode {
@@ -260,9 +259,9 @@ export class TextSectionService {
     this.rootNodes.set([this.createNode('')]);
   }
 
-  loadFromXml(xmlString: string): void {
+  loadFromJson(jsonString: string): void {
     try {
-      const nodes = this.xmlParser.parseXml(xmlString);
+      const nodes = this.xmlParser.parseXml(jsonString);
       if (nodes.length > 0) {
         this.rootNodes.set(nodes);
       } else {
@@ -270,7 +269,7 @@ export class TextSectionService {
         this.rootNodes.set([this.createNode('')]);
       }
     } catch (error) {
-      console.error('Failed to load XML:', error);
+      console.error('Failed to load JSON:', error);
       throw error;
     }
   }
@@ -323,87 +322,34 @@ export class TextSectionService {
     return null;
   }
 
-  private nodesToXml(nodes: (TextNode | string)[], indent: number): string {
-    const pad = '  '.repeat(indent);
+  private nodesToJson(nodes: (TextNode | string)[]): unknown[] {
+    const result: unknown[] = [];
 
-    return nodes
-      .map((item) => {
-        // Handle text strings
-        if (typeof item === 'string') {
-          const trimmed = item.trim();
-          return trimmed ? `${pad}${this.escapeXml(trimmed)}` : '';
-        }
-
-        // Handle TextNode
+    for (const item of nodes) {
+      if (typeof item === 'string') {
+        const trimmed = item.trim();
+        if (trimmed) result.push(trimmed);
+      } else {
+        // TextNode
         const node = item;
-        const labelAttr = node.label ? ` label="${this.escapeXml(node.label)}"` : '';
         const hasChildren = node.children.length > 0;
+        if (!hasChildren) continue; // skip empty nodes
 
-        if (!hasChildren) {
-          return '';  // Skip empty nodes
-        }
+        const jsonNode: Record<string, unknown> = {};
+        if (node.label) jsonNode['label'] = node.label;
+        jsonNode['children'] = this.nodesToJson(node.children);
+        if (node.translation?.trim()) jsonNode['translation'] = node.translation.trim();
 
-        // Check if this node has only text (no child nodes)
-        const hasChildNodes = node.children.some(c => this.isTextNode(c));
-        const allText = node.children.filter(c => typeof c === 'string').map(s => s.trim()).join('');
-        const rawTranslation = node.translation?.trim() ?? '';
-        const translationContent = rawTranslation.includes('\n')
-          ? rawTranslation.split('\n').filter(line => line.trim()).map(line => `<p>${line.trim()}</p>`).join('')
-          : rawTranslation;
-        const translationAttr = translationContent
-          ? `\n${pad}  <translation><![CDATA[${translationContent}]]></translation>`
-          : '';
+        // Skip nodes that have no meaningful content
+        const childrenArr = jsonNode['children'] as unknown[];
+        const allText = node.children.filter(c => typeof c === 'string').map(s => (s as string).trim()).join('');
+        const hasChildNodes = node.children.some(c => typeof c !== 'string');
+        if (!allText && !hasChildNodes && !jsonNode['translation']) continue;
 
-        if (!hasChildNodes && allText) {
-          // Inline text-only nodes — use multiline if there's a translation
-          if (translationAttr) {
-            return `${pad}<section${labelAttr}>\n${pad}  ${this.escapeXml(allText)}${translationAttr}\n${pad}</section>`;
-          }
-          return `${pad}<section${labelAttr}>${this.escapeXml(allText)}</section>`;
-        }
+        result.push(jsonNode);
+      }
+    }
 
-        if (!hasChildNodes && !allText) {
-          // Empty node — skip unless it has a translation
-          if (translationAttr) {
-            return `${pad}<section${labelAttr}>${translationAttr}\n${pad}</section>`;
-          }
-          return '';
-        }
-
-        // Has child nodes - use multi-line format
-        const childLines = this.nodesToXml(node.children, indent + 1);
-
-        // Get the last line to potentially append closing tag
-        const lines = childLines.split('\n').filter(l => l.length > 0);
-        if (lines.length === 0) {
-          return translationAttr
-            ? `${pad}<section${labelAttr}>${translationAttr}\n${pad}</section>`
-            : `${pad}<section${labelAttr}></section>`;
-        }
-
-        const lastLine = lines[lines.length - 1];
-        const otherLines = lines.slice(0, -1);
-
-        // If last line is a complete section tag, append our closing tag to it (only when no translation)
-        if (!translationAttr && lastLine.trim().startsWith('<section') && lastLine.trim().endsWith('</section>')) {
-          const result = otherLines.length > 0
-            ? `${pad}<section${labelAttr}>\n${otherLines.join('\n')}\n${lastLine}</section>`
-            : `${pad}<section${labelAttr}>\n${lastLine}</section>`;
-          return result;
-        }
-
-        // Otherwise use normal multi-line format, appending translation before closing tag
-        return `${pad}<section${labelAttr}>\n${childLines}${translationAttr}\n${pad}</section>`;
-      })
-      .filter((s) => s.length > 0)
-      .join('\n');
-  }
-
-  private escapeXml(text: string): string {
-    return text
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
+    return result;
   }
 }

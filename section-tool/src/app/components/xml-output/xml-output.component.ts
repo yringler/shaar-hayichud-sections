@@ -13,7 +13,7 @@ import '@awesome.me/webawesome/dist/components/icon/icon.js';
   styleUrl: './xml-output.component.css',
 })
 export class XmlOutputComponent {
-  xmlContent = input.required<string>();
+  jsonContent = input.required<string>();
 
   copyRequest = output<void>();
   downloadRequest = output<void>();
@@ -44,8 +44,8 @@ export class XmlOutputComponent {
     if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
-        const xmlContent = e.target?.result as string;
-        this.loadRequest.emit(xmlContent);
+        const content = e.target?.result as string;
+        this.loadRequest.emit(content);
       };
       reader.readAsText(file);
       // Reset input so same file can be loaded again
@@ -55,9 +55,9 @@ export class XmlOutputComponent {
 
   onPaste(event: ClipboardEvent): void {
     event.preventDefault();
-    const xmlContent = event.clipboardData?.getData('text') || '';
-    if (xmlContent.trim()) {
-      this.loadRequest.emit(xmlContent);
+    const content = event.clipboardData?.getData('text') || '';
+    if (content.trim()) {
+      this.loadRequest.emit(content);
       (event.target as HTMLTextAreaElement).value = '';
     }
   }

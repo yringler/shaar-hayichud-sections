@@ -19,7 +19,7 @@ module.exports = {
     hasTranslation(data) {
       if (!data.page.inputPath) return false;
       const content = fs.readFileSync(data.page.inputPath, "utf8");
-      return content.includes("<translation");
+      return content.includes('"translation"');
     },
     translationPermalink: (data) => translationPermalinkForSlug(data.page.fileSlug),
     lang: (data) => data.locale.lang,
