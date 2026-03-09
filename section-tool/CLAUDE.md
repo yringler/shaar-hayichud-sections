@@ -1,4 +1,6 @@
-# Claude Code Instructions
+# Claude Code Instructions — section-tool
+
+> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The XML produced here is consumed by the [`site/` sub-project](../site/CLAUDE.md).
 
 This is a Hebrew text sectioning tool built with Angular 21. It helps users progressively divide Hebrew text into nested XML sections using keyboard shortcuts.
 

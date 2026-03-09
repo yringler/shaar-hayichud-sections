@@ -1,4 +1,8 @@
-# Shaar Hayichud Sections
+# Claude Code Instructions — site
+
+> **Monorepo context**: This is the `site/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The XML source files consumed here are produced by the [`section-tool/` sub-project](../section-tool/CLAUDE.md).
+
+## Overview
 
 Static site for chapters of Shaar Hayichud with labeled subsections, plus audio class recordings.
 
