@@ -1,18 +1,27 @@
-# XSLT Reference (archived)
+# xslt-reference (archived)
 
-The files in this directory are **not used in the build**. They are kept as
-documentation and as the authoritative source of truth for the transformation
-rules that were originally applied to the XML chapter files.
+`transform.xsl` is kept as documentation — the original XSLT transformation rules
+that defined the rendering logic. It is **not used in the build**.
 
-The equivalent logic is now implemented in JavaScript in `lib/xml-renderer.js`,
-registered as a native Eleventy template extension for `.xml` files.
+The equivalent logic is implemented in `lib/json-renderer.js`, which walks the JSON
+TextNode tree and emits the same `depth-N` div structure.
 
-## What the original transform.xsl did
+## EPUB generation
 
-- Matched the document root and processed `section/section` children at `depth=1`
-- For each `<section label="…">` element:
-  - Computed a hierarchical section number (`1`, `1.2`, `1.2.3`, …)
-  - Emitted `<div class="depth-N">` containing:
-    - `<div class="label">` with `<span class="number">` and the label text
-    - `<div class="content">` with the section's direct text, footnote digits stripped
-  - Recursed into child `<section>` elements at `depth+1`
+`build-epub.mjs` generates `dist/shaar-hayichud.epub` directly from the JSON chapter
+files in `src/texts/`. No pre-build step is needed.
+
+```bash
+yarn epub
+```
+
+Make sure `epub-gen` is installed (`yarn add epub-gen`) and that `src/texts/chapter_NN.json`
+files exist.
+
+## Original XSLT transformation rules
+
+- Matched `section/section` children at depth 1
+- Per section: hierarchical numbering (`1`, `1.2`, `1.2.3`, …) + optional `@label`
+- Direct text → `<div class="depth-N">` with `.label` + `.content`
+- Footnote digit markers stripped: `replace(/\d+/g, '')`
+- Child sections recursed (flat HTML, not nested divs)
