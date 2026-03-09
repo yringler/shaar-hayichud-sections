@@ -1,0 +1,49 @@
+<wa-button size="small" appearance="outlined" (click)="open()">
+  <wa-icon name="folder-open" slot="start"></wa-icon>
+  Library
+</wa-button>
+
+<wa-dialog
+  label="Load from Library"
+  [open]="isOpen()"
+  light-dismiss
+  style="--width: 480px"
+  (wa-hide)="onDialogHide()"
+>
+  @if (isLoading()) {
+    <div class="loading-state">
+      <wa-spinner></wa-spinner>
+      <span>Loading files...</span>
+    </div>
+  } @else if (error()) {
+    <div class="error-state">{{ error() }}</div>
+  } @else {
+    <wa-input
+      autofocus
+      placeholder="Filter files..."
+      with-clear
+      [value]="filter()"
+      (input)="onFilterInput($event)"
+      (wa-clear)="filter.set('')"
+    >
+      <wa-icon name="magnifying-glass" slot="start"></wa-icon>
+    </wa-input>
+
+    <ul class="file-list">
+      @for (file of filteredFiles(); track file) {
+        <li
+          class="file-item"
+          [class.selected]="selectedFile() === file"
+          (click)="loadSelected(file)"
+        >
+          <wa-icon name="file-code"></wa-icon>
+          {{ file }}
+        </li>
+      } @empty {
+        <li class="empty-state">No files match your filter</li>
+      }
+    </ul>
+  }
+
+  <wa-button slot="footer" appearance="plain" data-dialog="close">Cancel</wa-button>
+</wa-dialog>

@@ -1,0 +1,63 @@
+<div class="container">
+  <header class="app-header">
+    <h1>Hebrew Text Sectioning Tool</h1>
+    <p class="subtitle">
+      <kbd>Enter</kbd> child &middot;
+      <kbd>Tab</kbd> sibling &middot;
+      <kbd>Alt+Enter</kbd> promote &middot;
+      <kbd>Shift+Enter</kbd> merge parent &middot;
+      <kbd>Shift+Tab</kbd> merge prev
+    </p>
+    <wa-button
+      size="small"
+      appearance="outlined"
+      [variant]="showTranslation() ? 'success' : 'neutral'"
+      (click)="toggleTranslation()"
+    >
+      <wa-icon [name]="showTranslation() ? 'eye-slash' : 'eye'" slot="start"></wa-icon>
+      {{ showTranslation() ? 'Hide Translation' : 'Show Translation' }}
+    </wa-button>
+    <wa-button
+      size="small"
+      appearance="outlined"
+      [variant]="saveStatus() === 'success' ? 'success' : saveStatus() === 'error' ? 'danger' : 'neutral'"
+      [disabled]="saveStatus() === 'saving' || !currentFile()"
+      (click)="onSave()"
+      [title]="currentFile() ? 'Save ' + currentFile() + ' to GitHub' : 'Load a file from library first'"
+    >
+      <wa-icon [name]="saveStatus() === 'saving' ? 'arrow-clockwise' : 'cloud-upload'" slot="start"></wa-icon>
+      @if (saveStatus() === 'saving') { Saving... }
+      @else if (saveStatus() === 'success') { Saved! }
+      @else if (saveStatus() === 'error') { Error }
+      @else { Save }
+    </wa-button>
+    @if (saveStatus() === 'error' && saveErrorMessage()) {
+      <span class="save-error">{{ saveErrorMessage() }}</span>
+    }
+  </header>
+
+  <div class="output-panel">
+    <app-xml-output
+      [xmlContent]="xmlOutput()"
+      (copyRequest)="onCopy()"
+      (downloadRequest)="onDownload()"
+      (clearRequest)="onClear()"
+      (loadRequest)="onLoad($event)"
+    />
+  </div>
+
+  <div class="editor-panel">
+    @for (node of rootNodes(); track node.id) {
+      <app-text-node
+        [node]="node"
+        [level]="1"
+        [showTranslation]="showTranslation()"
+        (nodeKeydown)="onNodeKeydown($event)"
+        (textChange)="onTextChange($event)"
+        (labelChange)="onLabelChange($event)"
+        (deleteNode)="onDeleteNode($event)"
+        (translationChange)="onTranslationChange($event)"
+      />
+    }
+  </div>
+</div>
