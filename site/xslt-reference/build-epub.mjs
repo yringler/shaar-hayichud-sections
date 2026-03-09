@@ -1,39 +1,46 @@
 // build-epub.mjs
-// Generates dist/shaar-hayichud.epub from the pre-built HTML fragments in dist/.
+// Generates dist/shaar-hayichud.epub directly from src/texts/chapter_NN.json.
 //
-// Prerequisites:
-//   Run `yarn xslt` first to build dist/chapter_NN.html from XML sources.
+// No pre-build step needed — reads JSON chapter files and renders HTML on the fly.
 //
 // Usage:
 //   yarn epub
 
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync, readdirSync, mkdirSync } from 'fs';
 import path from 'path';
 import Epub from 'epub-gen';
+import { renderJsonToHtml } from '../lib/json-renderer.js';
 
 const root = path.resolve(import.meta.dirname, '..');
+const textsDir = path.join(root, 'src', 'texts');
 const distDir = path.join(root, 'dist');
 const outputPath = path.join(distDir, 'shaar-hayichud.epub');
 
+mkdirSync(distDir, { recursive: true });
+
 const hebrewNumerals = ['א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י'];
 
-const chapterFiles = readdirSync(distDir)
-  .filter(f => /^chapter_\d+\.html$/.test(f))
+const chapterFiles = readdirSync(textsDir)
+  .filter(f => /^chapter_\d+\.json$/.test(f))
   .sort();
 
 if (chapterFiles.length === 0) {
-  console.error('No chapter_NN.html files found in dist/. Run `yarn xslt` first.');
+  console.error('No chapter_NN.json files found in src/texts/.');
   process.exit(1);
 }
 
-const chapters = chapterFiles.map(filename => {
-  const n = parseInt(filename.match(/^chapter_(\d+)\.html$/)[1], 10);
-  const heb = hebrewNumerals[n - 1] ?? String(n);
-  return {
-    title: `פרק ${heb} — Chapter ${n}`,
-    data: readFileSync(path.join(distDir, filename), 'utf8'),
-  };
-});
+const chapters = await Promise.all(
+  chapterFiles.map(async filename => {
+    const n = parseInt(filename.match(/^chapter_(\d+)\.json$/)[1], 10);
+    const heb = hebrewNumerals[n - 1] ?? String(n);
+    const jsonContent = readFileSync(path.join(textsDir, filename), 'utf8');
+    const html = await renderJsonToHtml(jsonContent, {});
+    return {
+      title: `פרק ${heb} — Chapter ${n}`,
+      data: html,
+    };
+  })
+);
 
 const titlePage = {
   title: 'Title Page',
