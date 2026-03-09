@@ -9,10 +9,9 @@ eleventyExcludeFromCollections: true
 <section>
   <h2>{{ i18n[lang].nav.texts }}</h2>
   <ul class="index-list">
-    {% for item in collections.texts %}
-      {% if item.data.lang == lang %}
-      <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
-      {% endif %}
+    {% for file in xmlFiles %}
+      {% set n = file | replace("chapter_", "") | replace(".xml", "") | int %}
+      <li><a href="/he/texts/chapter-{{ n }}/">Chapter {{ n }}</a></li>
     {% else %}
     <li>No texts yet.</li>
     {% endfor %}

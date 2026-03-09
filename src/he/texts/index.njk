@@ -2,14 +2,12 @@
 title: Texts
 layout: layouts/base.njk
 eleventyExcludeFromCollections: true
-chapters: [1, 2, 3]
 ---
 <h1>{{ i18n[lang].nav.texts }}</h1>
 
 <ul class="index-list">
-  {% for n in chapters %}
-  <li>
-    <a href="/he/texts/chapter-{{ n }}/">Chapter {{ n }}</a>
-  </li>
+  {% for file in xmlFiles %}
+    {% set n = file | replace("chapter_", "") | replace(".xml", "") | int %}
+    <li><a href="/he/texts/chapter-{{ n }}/">Chapter {{ n }}</a></li>
   {% endfor %}
 </ul>

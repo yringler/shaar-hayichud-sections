@@ -36,6 +36,16 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // Deduplicate locale links by lang, keeping first occurrence
+  eleventyConfig.addFilter("unique_locale_links", (links) => {
+    const seen = new Set();
+    return (links || []).filter((link) => {
+      if (seen.has(link.lang)) return false;
+      seen.add(link.lang);
+      return true;
+    });
+  });
+
   // Encode a full URL for use in src/href attributes
   eleventyConfig.addFilter("urlencode", (url) => encodeURI(url));
 
