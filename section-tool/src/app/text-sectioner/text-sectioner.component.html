@@ -25,6 +25,7 @@
         min="1"
         placeholder="number"
         [value]="chapterNumber()"
+        [disabled]="!!jsonOutput()"
         (input)="onChapterNumberInput($event)"
       />
     </label>
