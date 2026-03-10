@@ -19,6 +19,7 @@ export class XmlOutputComponent {
   downloadRequest = output<void>();
   clearRequest = output<void>();
   loadRequest = output<string>();
+  pasteTextRequest = output<string>();
 
   fileInput = viewChild<ElementRef<HTMLInputElement>>('fileInput');
 
@@ -53,12 +54,15 @@ export class XmlOutputComponent {
     }
   }
 
-  onPaste(event: ClipboardEvent): void {
-    event.preventDefault();
-    const content = event.clipboardData?.getData('text') || '';
-    if (content.trim()) {
-      this.loadRequest.emit(content);
-      (event.target as HTMLTextAreaElement).value = '';
+  onKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
+      const textarea = event.target as HTMLTextAreaElement;
+      const content = textarea.value;
+      if (content.trim()) {
+        this.pasteTextRequest.emit(content);
+        textarea.value = '';
+      }
     }
   }
 }

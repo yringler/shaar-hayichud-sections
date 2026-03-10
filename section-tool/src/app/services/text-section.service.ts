@@ -259,6 +259,11 @@ export class TextSectionService {
     this.rootNodes.set([this.createNode('')]);
   }
 
+  loadFromText(text: string): void {
+    const node = this.createNode(text.trim());
+    this.rootNodes.set([node]);
+  }
+
   loadFromJson(jsonString: string): void {
     try {
       const nodes = this.xmlParser.parseXml(jsonString);

@@ -16,8 +16,8 @@
   </div>
   <textarea
     class="paste-area"
-    placeholder="Paste JSON here to load..."
-    (paste)="onPaste($event)"
+    placeholder="Paste text here, then press Enter to load..."
+    (keydown)="onKeydown($event)"
   ></textarea>
   <input
     #fileInput
