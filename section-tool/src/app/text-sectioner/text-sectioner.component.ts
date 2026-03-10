@@ -34,6 +34,10 @@ export class TextSectionerComponent {
     const value = (event.target as HTMLInputElement).value;
     const num = value ? parseInt(value, 10) : null;
     this.chapterNumber.set(num);
+  }
+
+  private applyChapterFile(): void {
+    const num = this.chapterNumber();
     const filename = num ? `chapter_${String(num).padStart(2, '0')}.json` : null;
     this.libraryService.currentFile.set(filename);
   }
@@ -104,6 +108,7 @@ export class TextSectionerComponent {
 
   onPasteText(text: string): void {
     this.service.loadFromText(text);
+    this.applyChapterFile();
   }
 
   onLoad(content: string): void {
