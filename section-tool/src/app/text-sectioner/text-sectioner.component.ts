@@ -92,6 +92,10 @@ export class TextSectionerComponent {
     this.service.clearAll();
   }
 
+  onPasteText(text: string): void {
+    this.service.loadFromText(text);
+  }
+
   onLoad(content: string): void {
     try {
       this.service.loadFromJson(content);
