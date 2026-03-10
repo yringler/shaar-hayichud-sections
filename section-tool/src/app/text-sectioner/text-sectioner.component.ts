@@ -28,6 +28,16 @@ export class TextSectionerComponent {
   saveErrorMessage = this.saveService.errorMessage;
   currentFile = this.libraryService.currentFile;
 
+  chapterNumber = signal<number | null>(null);
+
+  onChapterNumberInput(event: Event): void {
+    const value = (event.target as HTMLInputElement).value;
+    const num = value ? parseInt(value, 10) : null;
+    this.chapterNumber.set(num);
+    const filename = num ? `chapter_${String(num).padStart(2, '0')}.json` : null;
+    this.libraryService.currentFile.set(filename);
+  }
+
   toggleTranslation(): void {
     this.showTranslation.update(v => !v);
   }
