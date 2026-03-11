@@ -5,5 +5,5 @@ module.exports = function () {
   const root = resolve(__dirname, "../texts");
   return readdirSync(root)
     .filter((f) => /^chapter_.*\.json$/.test(f))
-    .sort();
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
 };
