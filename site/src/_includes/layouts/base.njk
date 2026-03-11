@@ -167,7 +167,7 @@
 </head>
 <body>
   <nav>
-    <a href="/{{ lang }}/">{{ i18n[lang].nav.home }}</a>
+    <a href="{% if lang == 'he' %}/he/{% else %}/{% endif %}">{{ i18n[lang].nav.home }}</a>
     <a href="/{{ lang }}/texts/">{{ i18n[lang].nav.texts }}</a>
     {% if lang == "en" %}<a href="/en/translation/">Translation</a>{% endif %}
     <a href="/en/classes/">{{ i18n[lang].nav.classes }}</a>
