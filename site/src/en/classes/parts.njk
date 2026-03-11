@@ -5,13 +5,13 @@ pagination:
   alias: item
 eleventyComputed:
   title: "{{ item.partTitle }}"
-permalink: "/en/classes/{{ item.seriesSlug }}/{{ item.partSlug }}/"
+permalink: "/classes/{{ item.seriesSlug }}/{{ item.partSlug }}/"
 layout: layouts/audio.njk
 eleventyExcludeFromCollections: true
 ---
 <p class="breadcrumb">
-  <a href="/en/classes/">Classes</a> →
-  <a href="/en/classes/{{ item.seriesSlug }}/">{{ item.seriesTitle }}</a> →
+  <a href="/classes/">Classes</a> →
+  <a href="/classes/{{ item.seriesSlug }}/">{{ item.seriesTitle }}</a> →
   {{ item.partTitle }}
 </p>
 <h1>{{ item.partTitle }}</h1>
