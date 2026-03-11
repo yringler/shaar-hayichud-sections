@@ -177,6 +177,11 @@
     <a class="lang-switch" href="{{ link.url }}" hreflang="{{ link.lang }}">{{ i18n[link.lang].langName }}</a>
       {% endif %}
     {% endfor %}
+    {% if page.url == "/" %}
+    <a class="lang-switch" href="/he/" hreflang="he">{{ i18n.he.langName }}</a>
+    {% elif page.url == "/he/" %}
+    <a class="lang-switch" href="/" hreflang="en">{{ i18n.en.langName }}</a>
+    {% endif %}
   </nav>
   <main>
     {{ content | safe }}
