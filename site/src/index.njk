@@ -1,16 +1,33 @@
 ---
-permalink: /index.html
+layout: layouts/base.njk
+title: Home
+lang: en
+dir: ltr
 eleventyExcludeFromCollections: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=/en/">
-  <link rel="canonical" href="/en/">
-  <title>Redirecting…</title>
-</head>
-<body class>
-  <p><a href="/en/">Redirecting to English version…</a></p>
-</body>
-</html>
+<h1>{{ site.title }}</h1>
+<p>{{ site.description }}</p>
+
+<section>
+  <h2>{{ i18n[lang].nav.texts }}</h2>
+  <ul class="index-list">
+    {% for item in collections.texts %}
+      {% if item.data.lang == lang and not item.data.section %}
+      <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+      {% endif %}
+    {% else %}
+    <li>No texts yet.</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2>{{ i18n[lang].nav.classes }}</h2>
+  <ul class="index-list">
+    {% for series in classes %}
+    <li><a href="/en/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
+    {% else %}
+    <li>No classes yet.</li>
+    {% endfor %}
+  </ul>
+</section>
