@@ -167,16 +167,21 @@
 </head>
 <body>
   <nav>
-    <a href="/{{ lang }}/">{{ i18n[lang].nav.home }}</a>
-    <a href="/{{ lang }}/texts/">{{ i18n[lang].nav.texts }}</a>
-    {% if lang == "en" %}<a href="/en/translation/">Translation</a>{% endif %}
-    <a href="/en/classes/">{{ i18n[lang].nav.classes }}</a>
-    <a href="/en/about/">{{ i18n[lang].nav.about }}</a>
+    <a href="{% if lang == 'he' %}/he/{% else %}/{% endif %}">{{ i18n[lang].nav.home }}</a>
+    <a href="{% if lang == 'he' %}/he/{% else %}/{% endif %}texts/">{{ i18n[lang].nav.texts }}</a>
+    {% if lang == "en" %}<a href="/translation/">Translation</a>{% endif %}
+    <a href="/classes/">{{ i18n[lang].nav.classes }}</a>
+    <a href="/about/">{{ i18n[lang].nav.about }}</a>
     {% for link in page.url | locale_links | unique_locale_links %}
       {% if link.lang != lang %}
     <a class="lang-switch" href="{{ link.url }}" hreflang="{{ link.lang }}">{{ i18n[link.lang].langName }}</a>
       {% endif %}
     {% endfor %}
+    {% if page.url == "/" %}
+    <a class="lang-switch" href="/he/" hreflang="he">{{ i18n.he.langName }}</a>
+    {% elif page.url == "/he/" %}
+    <a class="lang-switch" href="/" hreflang="en">{{ i18n.en.langName }}</a>
+    {% endif %}
   </nav>
   <main>
     {{ content | safe }}

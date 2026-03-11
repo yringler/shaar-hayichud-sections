@@ -2,18 +2,18 @@
 title: Translation
 layout: layouts/base.njk
 eleventyExcludeFromCollections: true
-permalink: /en/translation/
+permalink: /translation/
 ---
 <h1>Translation</h1>
 
 <ul class="index-list">
-  <li><a href="/en/translation/translation-philosophy/">Translator's Introduction</a></li>
+  <li><a href="/translation/translation-philosophy/">Translator's Introduction</a></li>
 </ul>
 
 <h2>Translations</h2>
 <ul class="index-list">
   {% for item in collections.texts | sort(false, false, "data.title") %}
-    {% if ("/en/texts/") in item.url and item.data.hasTranslation %}
+    {% if item.data.lang == "en" and item.data.hasTranslation %}
     <li><a href="{{ item.data.translationPermalink }}">{{ item.data.title }}</a></li>
     {% endif %}
   {% endfor %}
