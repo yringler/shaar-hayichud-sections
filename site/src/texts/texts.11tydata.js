@@ -3,7 +3,7 @@ const fs = require("fs");
 function translationPermalinkForSlug(slug) {
   const match = slug.match(/^chapter_(\d+)$/);
   if (!match) return null;
-  return `/en/translation/chapter-${parseInt(match[1], 10)}/`;
+  return `/translation/chapter-${parseInt(match[1], 10)}/`;
 }
 
 module.exports = {
@@ -37,6 +37,7 @@ module.exports = {
       if (data.locale.section === "translation") {
         return translationPermalinkForSlug(slug);
       }
+      if (data.locale.lang === "en") return `/texts/chapter-${n}/`;
       return `/${data.locale.lang}/texts/chapter-${n}/`;
     },
   },

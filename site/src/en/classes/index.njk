@@ -2,13 +2,14 @@
 title: Classes
 layout: layouts/audio.njk
 eleventyExcludeFromCollections: true
+permalink: /classes/
 ---
 <h1>Classes</h1>
 
 <ul class="part-list">
   {% for series in classes %}
   <li>
-    <a href="/en/classes/{{ series.title | slugify }}/">{{ series.title }}</a>
+    <a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a>
     <span class="track-count">{{ series.children | length }} parts</span>
   </li>
   {% endfor %}

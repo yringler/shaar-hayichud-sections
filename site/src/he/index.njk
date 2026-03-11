@@ -22,7 +22,7 @@ eleventyExcludeFromCollections: true
   <h2>{{ i18n[lang].nav.classes }}</h2>
   <ul class="index-list">
     {% for series in classes %}
-    <li><a href="/en/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
+    <li><a href="/classes/{{ series.title | slugify }}/">{{ series.title }}</a></li>
     {% else %}
     <li>No classes yet.</li>
     {% endfor %}
