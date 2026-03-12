@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <h1>Translation</h1>
+
+  <ul class="index-list">
+    <li><a href="/translation/translation-philosophy/">Translator's Introduction</a></li>
+  </ul>
+
+  <h2>Translations</h2>
+  <ul class="index-list">
+    {{ $chapters := slice }}
+    {{ range $key, $val := site.Data.chapters }}
+      {{ $chapters = $chapters | append $key }}
+    {{ end }}
+    {{ range sort $chapters }}
+      {{ $data := index site.Data.chapters . }}
+      {{ $numStr := replaceRE `^chapter_0*` "" . }}
+      {{- /* Check if has translation */ -}}
+      {{ $hasTranslation := false }}
+      {{ range $data }}
+        {{ if reflect.IsMap . }}
+          {{ with .translation }}
+            {{ $hasTranslation = true }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if $hasTranslation }}
+      <li><a href="/translation/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}

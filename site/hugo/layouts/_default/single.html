@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ if .Params.chapter_data }}
+    {{- $chapterKey := .Params.chapter_data -}}
+    {{- $data := index site.Data.chapters $chapterKey -}}
+    {{- $showTranslation := .Params.showTranslation | default false -}}
+    <div dir="rtl">
+      {{- partial "render-textnode.html" (dict "nodes" $data "depth" 1 "prefix" "" "showTranslation" $showTranslation) -}}
+    </div>
+  {{ else }}
+    {{ .Content }}
+  {{ end }}
+{{ end }}

@@ -12,7 +12,7 @@ import Epub from 'epub-gen';
 import { renderJsonToHtml } from '../lib/json-renderer.js';
 
 const root = path.resolve(import.meta.dirname, '..');
-const textsDir = path.join(root, 'src', 'texts');
+const textsDir = path.join(root, 'hugo', 'chapters');
 const distDir = path.join(root, 'dist');
 const outputPath = path.join(distDir, 'shaar-hayichud.epub');
 

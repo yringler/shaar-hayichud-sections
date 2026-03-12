@@ -1,0 +1,36 @@
+baseURL = "https://www.shaarhayichudresources.com"
+title = "Shaar Hayichud"
+
+[params]
+  description = "Sections and study material from Shaar Hayichud"
+  cdnBase = "https://media.shaarhayichudresources.com"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Mount chapters/ as both data (for templates) and static (for raw JSON serving)
+[[module.mounts]]
+  source = "chapters"
+  target = "data/chapters"
+
+[[module.mounts]]
+  source = "chapters"
+  target = "static/texts"
+
+# Keep default mounts for other dirs
+[[module.mounts]]
+  source = "content"
+  target = "content"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
+

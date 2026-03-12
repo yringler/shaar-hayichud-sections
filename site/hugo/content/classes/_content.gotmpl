@@ -1,0 +1,39 @@
+{{- /* Content adapter: generates series and part pages from data/classes.json */ -}}
+
+{{- range $si, $series := site.Data.classes -}}
+  {{- $seriesSlug := $series.title | urlize -}}
+
+  {{- /* Series page at /classes/series-slug/ */ -}}
+  {{- $.AddPage (dict
+    "mediaType" "text/html"
+    "path" $seriesSlug
+    "title" $series.title
+    "kind" "section"
+    "params" (dict
+      "pageLang" "en"
+      "dir" "ltr"
+      "seriesIndex" $si
+      "layout" "series"
+    )
+  ) -}}
+
+  {{- /* Part pages at /classes/series-slug/part-slug/ */ -}}
+  {{- range $pi, $part := $series.children -}}
+    {{- $partSlug := $part.title | urlize -}}
+    {{- $.AddPage (dict
+      "mediaType" "text/html"
+      "path" (printf "%s/%s" $seriesSlug $partSlug)
+      "title" $part.title
+      "kind" "page"
+      "params" (dict
+        "pageLang" "en"
+        "dir" "ltr"
+        "seriesIndex" $si
+        "partIndex" $pi
+        "seriesTitle" $series.title
+        "seriesSlug" $seriesSlug
+        "partBase" (default "" $part.base)
+      )
+    ) -}}
+  {{- end -}}
+{{- end -}}

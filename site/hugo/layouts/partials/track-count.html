@@ -1,0 +1,11 @@
+{{- /* Recursively count audio files. Input: children slice. Returns: count as string. */ -}}
+{{- $count := 0 -}}
+{{- range . -}}
+  {{- if .file -}}
+    {{- $count = add $count 1 -}}
+  {{- else if .children -}}
+    {{- $sub := partial "track-count.html" .children -}}
+    {{- $count = add $count (int $sub) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $count -}}

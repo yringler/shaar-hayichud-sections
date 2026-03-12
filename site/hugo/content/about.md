@@ -1,0 +1,23 @@
+---
+title: "About"
+url: /about/
+pageLang: en
+dir: ltr
+---
+<h1>About</h1>
+<p>This site presents the text of <em>Shaar Hayichud</em> ("The Gate of Unity") by Rabbi Dov Ber of Lubavitch, the Mitteler Rebbe, with clearly labeled subsections to make it easy to follow.</p>
+
+<h2>What's Here</h2>
+<ul>
+  <li><strong><a href="/texts/">Texts</a></strong> — The Hebrew original, divided into chapters with labeled sections.</li>
+  <li><strong><a href="/translation/">Translation</a></strong> — An English translation in progress, guided by a philosophy of clarity and idiomatic English.</li>
+  <li><strong><a href="/classes/">Classes</a></strong> — Audio recordings of classes on Shaar Hayichud.</li>
+  <li><strong><a href="/texts/index.json">Raw JSON</a></strong> — Machine-readable index of the source JSON chapter files.</li>
+</ul>
+
+<h2>About the Text</h2>
+<p><em>Shaar Hayichud</em> ("The Gate of Unity") was authored by Rabbi Dov Ber of Lubavitch (1773–1827), the Mitteler Rebbe, second leader of Chabad Chassidus.</p>
+<p>This work is called the key to Kabbalah and Chassidus. It brings clarity to the entire methodology of Kabbalah and to the process of creation known as the chaining down of the worlds (<em>hishtalshelus</em>). It is therefore a foundation for unlocking the secrets of Kabbalah and the treasure troves of Chassidus — a must-read for any sincere seeker of Divine truth.</p>
+
+<h2>Contact</h2>
+<p>Yehuda Ringler — <a href="mailto:yrappdev@gmail.com">yrappdev@gmail.com</a></p>

@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <div class="ltr-content">
+    {{ $si := .Params.seriesIndex }}
+    {{ $pi := .Params.partIndex }}
+    {{ $series := index site.Data.classes $si }}
+    {{ $part := index $series.children $pi }}
+    {{ $base := default "" $part.base }}
+    {{ $cdnBase := site.Params.cdnBase }}
+
+    <p class="breadcrumb">
+      <a href="/classes/">Classes</a> →
+      <a href="/classes/{{ $series.title | urlize }}/">{{ $series.title }}</a> →
+      {{ $part.title }}
+    </p>
+    <h1>{{ $part.title }}</h1>
+
+    {{ $leafIdx := 0 }}
+    {{ range $part.children }}
+      {{ if .file }}
+        {{ $leafIdx = add $leafIdx 1 }}
+        {{ $displayTitle := default (printf "Part %d" $leafIdx) .title }}
+        <div class="track">
+          {{ if $base }}
+          {{ $src := partial "audio-url.html" (dict "cdnBase" $cdnBase "base" $base "file" .file) }}
+          <audio controls preload="none" src="{{ $src }}"></audio>
+          {{ end }}
+          <p class="track-title">{{ $displayTitle }}</p>
+        </div>
+      {{ else if .children }}
+        <section class="chapter-section">
+          <h2>{{ .title }}</h2>
+          {{ $subIdx := 0 }}
+          {{ range .children }}
+            {{ if .file }}
+              {{ $subIdx = add $subIdx 1 }}
+              {{ $displayTitle := default (printf "Part %d" $subIdx) .title }}
+              <div class="track">
+                {{ if $base }}
+                {{ $src := partial "audio-url.html" (dict "cdnBase" $cdnBase "base" $base "file" .file) }}
+                <audio controls preload="none" src="{{ $src }}"></audio>
+                {{ end }}
+                <p class="track-title">{{ $displayTitle }}</p>
+              </div>
+            {{ end }}
+          {{ end }}
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

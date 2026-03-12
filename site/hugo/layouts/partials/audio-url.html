@@ -1,0 +1,3 @@
+{{- /* Build and encode an audio URL. Input: dict "cdnBase" "base" "file" */ -}}
+{{- $url := printf "%s/%s/%s" .cdnBase .base .file -}}
+{{- return (replaceRE ` ` "%20" $url) -}}

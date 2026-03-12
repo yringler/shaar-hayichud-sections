@@ -1,0 +1,25 @@
+{{- /* Content adapter: generates Hebrew chapter pages at /he/texts/chapter-N/ */ -}}
+
+{{- $chapters := slice -}}
+{{- range $key, $val := site.Data.chapters -}}
+  {{- $chapters = $chapters | append $key -}}
+{{- end -}}
+{{- $chapters = sort $chapters -}}
+
+{{- range $key := $chapters -}}
+  {{- $numStr := replaceRE `^chapter_0*` "" $key -}}
+
+  {{- $.AddPage (dict
+    "mediaType" "text/html"
+    "path" (printf "chapter-%s" $numStr)
+    "title" (printf "Chapter %s" $numStr)
+    "kind" "page"
+    "params" (dict
+      "pageLang" "he"
+      "dir" "rtl"
+      "chapter_data" $key
+      "showTranslation" false
+      "altUrl" (printf "/texts/chapter-%s/" $numStr)
+    )
+  ) -}}
+{{- end -}}

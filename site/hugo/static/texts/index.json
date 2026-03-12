@@ -1,0 +1,42 @@
+[
+  {
+    "file": "chapter_01.json",
+    "url": "/texts/chapter_01.json"
+  },
+  {
+    "file": "chapter_02.json",
+    "url": "/texts/chapter_02.json"
+  },
+  {
+    "file": "chapter_03.json",
+    "url": "/texts/chapter_03.json"
+  },
+  {
+    "file": "chapter_04.json",
+    "url": "/texts/chapter_04.json"
+  },
+  {
+    "file": "chapter_05.json",
+    "url": "/texts/chapter_05.json"
+  },
+  {
+    "file": "chapter_06.json",
+    "url": "/texts/chapter_06.json"
+  },
+  {
+    "file": "chapter_07.json",
+    "url": "/texts/chapter_07.json"
+  },
+  {
+    "file": "chapter_08.json",
+    "url": "/texts/chapter_08.json"
+  },
+  {
+    "file": "chapter_09.json",
+    "url": "/texts/chapter_09.json"
+  },
+  {
+    "file": "chapter_10.json",
+    "url": "/texts/chapter_10.json"
+  }
+]

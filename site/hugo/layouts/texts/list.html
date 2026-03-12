@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ $lang := .Params.pageLang | default "en" }}
+  {{ $strings := index site.Data.i18n $lang }}
+  <h1>{{ $strings.nav.texts }}</h1>
+
+  <ul class="index-list">
+    {{ $chapters := slice }}
+    {{ range $key, $val := site.Data.chapters }}
+      {{ $chapters = $chapters | append $key }}
+    {{ end }}
+    {{ range sort $chapters }}
+      {{ $numStr := replaceRE `^chapter_0*` "" . }}
+      {{ if eq $lang "he" }}
+      <li><a href="/he/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ else }}
+      <li><a href="/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}

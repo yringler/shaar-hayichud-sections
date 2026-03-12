@@ -1,0 +1,53 @@
+{{- /*
+  Recursive partial: renders TextNode[] to HTML.
+  Params: dict "nodes" (slice) "depth" (int) "prefix" (string) "showTranslation" (bool)
+*/ -}}
+{{- $depth := .depth -}}
+{{- $prefix := .prefix -}}
+{{- $showTranslation := .showTranslation -}}
+
+{{- /* Filter to only object nodes (skip bare strings) */ -}}
+{{- $sectionIdx := 0 -}}
+{{- range .nodes -}}
+  {{- if reflect.IsMap . -}}
+    {{- $sectionIdx = add $sectionIdx 1 -}}
+    {{- $number := cond (eq $prefix "") (printf "%d" $sectionIdx) (printf "%s.%d" $prefix $sectionIdx) -}}
+    {{- $children := default (slice) .children -}}
+    {{- $label := default "" .label -}}
+
+    {{- /* Collect direct text strings from children */ -}}
+    {{- $textParts := slice -}}
+    {{- range $children -}}
+      {{- if not (reflect.IsMap .) -}}
+        {{- $textParts = $textParts | append (printf "%v" .) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if gt (len $textParts) 0 -}}
+      {{- $text := delimit $textParts " " -}}
+      {{- $content := replaceRE `\d+` "" $text -}}
+      <div class="depth-{{ $depth }}">
+        <div class="label">
+          <span class="number">{{ $number }}</span>
+          {{- with $label }} {{ . }}{{ end -}}
+        </div>
+        <div class="content">{{ $content }}</div>
+      </div>
+    {{ end -}}
+
+    {{- if and $showTranslation .translation -}}
+      {{- if strings.Contains .translation "\n" -}}
+        <div class="translation">
+        {{- range split .translation "\n" -}}
+          {{- if ne (strings.TrimSpace .) "" -}}<p>{{ strings.TrimSpace . | safeHTML }}</p>{{ end -}}
+        {{- end -}}
+        </div>
+      {{- else -}}
+        <div class="translation">{{ .translation | safeHTML }}</div>
+      {{- end -}}
+    {{ end -}}
+
+    {{- /* Recurse into children */ -}}
+    {{- partial "render-textnode.html" (dict "nodes" $children "depth" (add $depth 1) "prefix" $number "showTranslation" $showTranslation) -}}
+  {{- end -}}
+{{- end -}}

@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{ $lang := .Params.pageLang | default "he" }}
+  {{ $strings := index site.Data.i18n $lang }}
+  <h1>{{ site.Title }}</h1>
+  <p>{{ site.Params.description }}</p>
+
+  <section>
+    <h2>{{ $strings.nav.texts }}</h2>
+    <ul class="index-list">
+      {{ $chapters := slice }}
+      {{ range $key, $val := site.Data.chapters }}
+        {{ $chapters = $chapters | append $key }}
+      {{ end }}
+      {{ range sort $chapters }}
+        {{ $numStr := replaceRE `^chapter_0*` "" . }}
+        <li><a href="/he/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section>
+    <h2>{{ $strings.nav.classes }}</h2>
+    <ul class="index-list">
+      {{ range site.Data.classes }}
+      <li><a href="/classes/{{ .title | urlize }}/">{{ .title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
