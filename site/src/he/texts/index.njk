@@ -6,8 +6,8 @@ eleventyExcludeFromCollections: true
 <h1>{{ i18n[lang].nav.texts }}</h1>
 
 <ul class="index-list">
-  {% for file in xmlFiles %}
-    {% set n = file | replace("chapter_", "") | replace(".xml", "") | int %}
+  {% for file in chapterFiles %}
+    {% set n = file | replace("chapter_", "") | replace(".json", "") | int %}
     <li><a href="/he/texts/chapter-{{ n }}/">Chapter {{ n }}</a></li>
   {% endfor %}
 </ul>
