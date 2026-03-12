@@ -3,7 +3,6 @@ node_modules
 _site
 
 .yarn/*
-!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
