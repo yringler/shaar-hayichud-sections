@@ -49,8 +49,8 @@ export class TextNodeComponent {
   translationChange = output<NodeTranslationChangeEvent>();
 
   onKeydown(event: KeyboardEvent, waTextarea: any, contentIndex: number): void {
-    if (event.key === 'Enter' && event.ctrlKey) {
-      // Ctrl+Enter inserts a newline — let the default behavior through
+    if (this.showTranslation() && event.key === 'Enter') {
+      // In translation mode, Enter inserts a newline (default behavior)
       return;
     }
     if (

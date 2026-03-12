@@ -1,14 +1,21 @@
 <div class="container">
   <header class="app-header">
     <h1>Hebrew Text Sectioning Tool</h1>
-    <p class="subtitle">
-      <kbd>Enter</kbd> child &middot;
-      <kbd>Tab</kbd> sibling &middot;
-      <kbd>Alt+Enter</kbd> promote &middot;
-      <kbd>Shift+Enter</kbd> merge parent &middot;
-      <kbd>Shift+Tab</kbd> merge prev &middot;
-      <kbd>Ctrl+Enter</kbd> new line
-    </p>
+    @if (!showTranslation()) {
+      <p class="subtitle">
+        <kbd>Enter</kbd> child &middot;
+        <kbd>Tab</kbd> sibling &middot;
+        <kbd>Alt+Enter</kbd> promote &middot;
+        <kbd>Shift+Enter</kbd> merge parent &middot;
+        <kbd>Shift+Tab</kbd> merge prev
+      </p>
+    } @else {
+      <p class="subtitle">
+        <kbd>Tab</kbd> sibling &middot;
+        <kbd>Shift+Tab</kbd> merge prev &middot;
+        <kbd>Enter</kbd> new line
+      </p>
+    }
     <wa-button
       size="small"
       appearance="outlined"
