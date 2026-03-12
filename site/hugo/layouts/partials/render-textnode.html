@@ -31,7 +31,15 @@
           <span class="number">{{ $number }}</span>
           {{- with $label }} {{ . }}{{ end -}}
         </div>
-        <div class="content">{{ $content }}</div>
+        <div class="content">
+        {{- if strings.Contains $content "\n" -}}
+          {{- range split $content "\n" -}}
+            {{- if ne (strings.TrimSpace .) "" -}}<p>{{ strings.TrimSpace . }}</p>{{ end -}}
+          {{- end -}}
+        {{- else -}}
+          {{ $content }}
+        {{- end -}}
+        </div>
       </div>
     {{- else if $label -}}
       <div class="section depth-{{ $depth }} label-only">

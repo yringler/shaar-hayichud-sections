@@ -34,6 +34,17 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;");
 }
 
+function renderParagraphs(text, escape) {
+  if (text.includes("\n")) {
+    return text
+      .split("\n")
+      .filter((l) => l.trim())
+      .map((l) => `<p>${escape ? escapeHtml(l.trim()) : l.trim()}</p>`)
+      .join("");
+  }
+  return escape ? escapeHtml(text) : text;
+}
+
 /**
  * Collect all direct text strings from a mixed children array.
  * Concatenates adjacent strings and normalises whitespace.
@@ -44,7 +55,7 @@ function escapeHtml(value) {
 function getDirectText(children) {
   const parts = children
     .filter((c) => typeof c === "string")
-    .map((s) => String(s).replace(/\s+/g, " ").trim())
+    .map((s) => String(s).replace(/[^\S\n]+/g, " ").trim())
     .filter(Boolean);
   return parts.join(" ");
 }
@@ -83,23 +94,12 @@ function renderChildren(nodes, depth, prefix, showTranslations) {
         html += `<span class="number">${escapeHtml(number)}</span>`;
         if (label) html += ` ${escapeHtml(label)}`;
         html += `</div>`;
-        html += `<div class="content">${escapeHtml(content)}</div>`;
+        html += `<div class="content">${renderParagraphs(content, true)}</div>`;
         html += `</div>\n`;
       }
 
       if (showTranslations && node.translation) {
-        // Translation is stored as a plain string (newlines = paragraph breaks)
-        const translation = node.translation;
-        if (translation.includes("\n")) {
-          const paragraphs = translation
-            .split("\n")
-            .filter((l) => l.trim())
-            .map((l) => `<p>${l.trim()}</p>`)
-            .join("");
-          html += `<div class="translation">${paragraphs}</div>\n`;
-        } else {
-          html += `<div class="translation">${translation}</div>\n`;
-        }
+        html += `<div class="translation">${renderParagraphs(node.translation, false)}</div>\n`;
       }
 
       // Recurse into child sections (flat output, not nested HTML)
