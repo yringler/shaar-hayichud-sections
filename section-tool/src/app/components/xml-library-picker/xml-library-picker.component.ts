@@ -37,7 +37,7 @@ error = signal<string | null>(null);
     this.isLoading.set(true);
     try {
       const files = await this.libraryService.getFileList();
-      this.files.set(files);
+      this.files.set([...files].reverse());
     } catch (e) {
       this.error.set(e instanceof Error ? e.message : 'Failed to load file list');
     } finally {
