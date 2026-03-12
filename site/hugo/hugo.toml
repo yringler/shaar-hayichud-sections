@@ -5,6 +5,12 @@ title = "Shaar Hayichud"
   description = "Sections and study material from Shaar Hayichud"
   cdnBase = "https://media.shaarhayichudresources.com"
 
+[server]
+  [[server.headers]]
+    for = "/**"
+    [server.headers.values]
+      Access-Control-Allow-Origin = "*"
+
 [markup.goldmark.renderer]
   unsafe = true
 
