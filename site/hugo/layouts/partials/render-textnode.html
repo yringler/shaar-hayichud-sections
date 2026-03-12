@@ -33,6 +33,13 @@
         </div>
         <div class="content">{{ $content }}</div>
       </div>
+    {{- else if $label -}}
+      <div class="depth-{{ $depth }}">
+        <div class="label">
+          <span class="number">{{ $number }}</span>
+          {{ $label }}
+        </div>
+      </div>
     {{ end -}}
 
     {{- if and $showTranslation .translation -}}
