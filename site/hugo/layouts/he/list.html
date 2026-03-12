@@ -11,9 +11,13 @@
       {{ range $key, $val := site.Data.chapters }}
         {{ $chapters = $chapters | append $key }}
       {{ end }}
-      {{ range sort $chapters }}
+      {{ $sorted := sort $chapters }}
+      {{ range first 5 $sorted }}
         {{ $numStr := replaceRE `^chapter_0*` "" . }}
         <li><a href="/he/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ end }}
+      {{ if gt (len $sorted) 5 }}
+      <li><a href="/he/texts/">{{ $strings.nav.texts }} &larr;</a></li>
       {{ end }}
     </ul>
   </section>

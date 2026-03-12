@@ -11,13 +11,17 @@
       {{ range $key, $val := site.Data.chapters }}
         {{ $chapters = $chapters | append $key }}
       {{ end }}
-      {{ range sort $chapters }}
+      {{ $sorted := sort $chapters }}
+      {{ range first 5 $sorted }}
         {{ $numStr := replaceRE `^chapter_0*` "" . }}
         {{ if eq $lang "he" }}
         <li><a href="/he/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
         {{ else }}
         <li><a href="/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
         {{ end }}
+      {{ end }}
+      {{ if gt (len $sorted) 5 }}
+      <li><a href="{{ if eq $lang "he" }}/he/{{ else }}/{{ end }}texts/">{{ $strings.nav.texts }} &rarr;</a></li>
       {{ end }}
     </ul>
   </section>
