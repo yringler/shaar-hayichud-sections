@@ -8,6 +8,11 @@ title = "Shaar Hayichud"
 [markup.goldmark.renderer]
   unsafe = true
 
+[outputFormats.ChapterIndex]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true
+
 # Mount chapters/ as both data (for templates) and static (for raw JSON serving)
 [[module.mounts]]
   source = "chapters"

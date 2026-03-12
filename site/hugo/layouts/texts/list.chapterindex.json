@@ -1,0 +1,14 @@
+[
+{{- $chapters := slice }}
+{{- range $key, $val := site.Data.chapters }}
+  {{- $chapters = $chapters | append $key }}
+{{- end }}
+{{- $sorted := sort $chapters }}
+{{- range $i, $key := $sorted }}
+{{- if $i }},{{ end }}
+  {
+    "file": "{{ $key }}.json",
+    "url": "/texts/{{ $key }}.json"
+  }
+{{- end }}
+]
