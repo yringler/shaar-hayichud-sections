@@ -1,16 +1,16 @@
 Chapters of Shaar Hayichud, with labeled subsections.
 Text taken from [chabadlibrary.org/books](https://chabadlibrary.org/books/2800530003) .
 
-## Convert to HTML
-
-Build all chapters into `dist/`:
+## Build
 
 ```bash
-bash build.sh
+cd site
+yarn build    # Hugo build → hugo/public/
+yarn serve    # Hugo dev server with live reload
 ```
 
-Or convert a single file:
+## EPUB
 
 ```bash
-npx xslt3 -xsl:transform.xsl -s:chapter_01.xml -o:dist/chapter_01.html
+yarn epub     # generates dist/shaar-hayichud.epub
 ```
