@@ -97,11 +97,20 @@
     }
 
     /* ── Section structure (chapter text) ── */
-    div[class^="depth-"] {
+    .section {
       display: flex;
       gap: 1em;
       margin-block: 1em;
       padding: 0.5em 0;
+    }
+
+    .label-only {
+      margin-block-end: 0;
+      padding-block-end: 0;
+    }
+    .label-only + .section {
+      margin-block-start: 0;
+      padding-block-start: 0;
     }
 
     .depth-1 { padding-inline-start: 1em; }

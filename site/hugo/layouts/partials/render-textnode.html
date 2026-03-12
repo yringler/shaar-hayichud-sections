@@ -26,7 +26,7 @@
     {{- if gt (len $textParts) 0 -}}
       {{- $text := delimit $textParts " " -}}
       {{- $content := replaceRE `\d+` "" $text -}}
-      <div class="depth-{{ $depth }}">
+      <div class="section depth-{{ $depth }}">
         <div class="label">
           <span class="number">{{ $number }}</span>
           {{- with $label }} {{ . }}{{ end -}}
@@ -34,7 +34,7 @@
         <div class="content">{{ $content }}</div>
       </div>
     {{- else if $label -}}
-      <div class="depth-{{ $depth }}">
+      <div class="section depth-{{ $depth }} label-only">
         <div class="label">
           <span class="number">{{ $number }}</span>
           {{ $label }}
