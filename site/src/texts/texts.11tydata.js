@@ -10,7 +10,7 @@ module.exports = {
   layout: "layouts/text.njk",
   tags: ["texts"],
   pagination: {
-    data: "xmlLocales",
+    data: "locales",
     size: 1,
     alias: "locale",
   },

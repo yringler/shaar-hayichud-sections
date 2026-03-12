@@ -12,7 +12,8 @@ export class XmlLibraryService {
     if (!response.ok) {
       throw new Error(`Failed to load file index: ${response.statusText}`);
     }
-    return response.json() as Promise<string[]>;
+    const entries = await response.json() as Array<{ file: string; url: string }>;
+    return entries.map(entry => entry.file);
   }
 
   async loadFile(filename: string): Promise<string> {

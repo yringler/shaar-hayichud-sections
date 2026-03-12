@@ -53,10 +53,8 @@ src/
 lib/
   json-renderer.js      # renderJsonToHtml — parses TextNode JSON and emits HTML fragments
   json-renderer.test.js # unit tests (node --test)
-  xml-renderer.js       # archived — no longer used in build (kept as reference)
-  xml-renderer.test.js
-xslt-reference/
-  transform.xsl        # archived — no longer used in build (kept as documentation)
+epub/
+  build-epub.mjs        # generates dist/shaar-hayichud.epub from JSON chapters (yarn epub)
   README.md
 ```
 
