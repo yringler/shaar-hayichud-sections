@@ -31,9 +31,12 @@ module.exports = function (eleventyConfig) {
     const path = require("path");
     const textsOut = path.join(dir.output, "texts");
     fs.mkdirSync(textsOut, { recursive: true });
-    for (const file of fs.readdirSync(path.join(dir.input, "texts")).filter((f) => /^chapter_.*\.json$/.test(f))) {
+    const chapterFiles = fs.readdirSync(path.join(dir.input, "texts")).filter((f) => /^chapter_.*\.json$/.test(f)).sort();
+    for (const file of chapterFiles) {
       fs.copyFileSync(path.join(dir.input, "texts", file), path.join(textsOut, file));
     }
+    const index = chapterFiles.map((file) => ({ file, url: `/texts/${file}` }));
+    fs.writeFileSync(path.join(textsOut, "index.json"), JSON.stringify(index, null, 2));
   });
 
   // Deduplicate locale links by lang, keeping first occurrence
