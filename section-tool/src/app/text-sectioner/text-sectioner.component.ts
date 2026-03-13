@@ -7,6 +7,7 @@ import { XmlLibraryService } from '../services/xml-library.service';
 
 import '@awesome.me/webawesome/dist/components/button/button.js';
 import '@awesome.me/webawesome/dist/components/icon/icon.js';
+import '@awesome.me/webawesome/dist/components/number-input/number-input.js';
 
 @Component({
   selector: 'app-text-sectioner',

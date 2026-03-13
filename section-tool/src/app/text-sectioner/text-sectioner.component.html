@@ -16,44 +16,45 @@
         <kbd>Enter</kbd> new line
       </p>
     }
-    <wa-button
-      size="small"
-      appearance="outlined"
-      [variant]="showTranslation() ? 'success' : 'neutral'"
-      (click)="toggleTranslation()"
-    >
-      <wa-icon [name]="showTranslation() ? 'eye-slash' : 'eye'" slot="start"></wa-icon>
-      {{ showTranslation() ? 'Hide Translation' : 'Show Translation' }}
-    </wa-button>
-    <label class="chapter-label">
-      Chapter:
-      <input
-        type="number"
-        class="chapter-input"
+    <div class="toolbar">
+      <wa-button
+        size="small"
+        appearance="outlined"
+        [variant]="showTranslation() ? 'success' : 'neutral'"
+        (click)="toggleTranslation()"
+      >
+        <wa-icon [name]="showTranslation() ? 'eye-slash' : 'eye'" slot="start"></wa-icon>
+        {{ showTranslation() ? 'Hide Translation' : 'Show Translation' }}
+      </wa-button>
+      <wa-number-input
+        size="small"
+        appearance="outlined"
         min="1"
-        placeholder="number"
+        without-steppers
+        placeholder="Ch #"
         [value]="chapterNumber()"
         [disabled]="!!jsonOutput()"
         (input)="onChapterNumberInput($event)"
-      />
-    </label>
-    <wa-button
-      size="small"
-      appearance="outlined"
-      [variant]="saveStatus() === 'success' ? 'success' : saveStatus() === 'error' ? 'danger' : 'neutral'"
-      [disabled]="saveStatus() === 'saving' || !currentFile()"
-      (click)="onSave()"
-      [title]="currentFile() ? 'Save ' + currentFile() + ' to GitHub' : 'Set a chapter number first'"
-    >
-      <wa-icon [name]="saveStatus() === 'saving' ? 'arrow-clockwise' : 'cloud-upload'" slot="start"></wa-icon>
-      @if (saveStatus() === 'saving') { Saving... }
-      @else if (saveStatus() === 'success') { Saved! }
-      @else if (saveStatus() === 'error') { Error }
-      @else { Save }
-    </wa-button>
-    @if (saveStatus() === 'error' && saveErrorMessage()) {
-      <span class="save-error">{{ saveErrorMessage() }}</span>
-    }
+        style="direction: ltr; max-width: 100px"
+      ></wa-number-input>
+      <wa-button
+        size="small"
+        appearance="outlined"
+        [variant]="saveStatus() === 'success' ? 'success' : saveStatus() === 'error' ? 'danger' : 'neutral'"
+        [disabled]="saveStatus() === 'saving' || !currentFile()"
+        (click)="onSave()"
+        [title]="currentFile() ? 'Save ' + currentFile() + ' to GitHub' : 'Set a chapter number first'"
+      >
+        <wa-icon [name]="saveStatus() === 'saving' ? 'arrow-clockwise' : 'cloud-upload'" slot="start"></wa-icon>
+        @if (saveStatus() === 'saving') { Saving... }
+        @else if (saveStatus() === 'success') { Saved! }
+        @else if (saveStatus() === 'error') { Error }
+        @else { Save }
+      </wa-button>
+      @if (saveStatus() === 'error' && saveErrorMessage()) {
+        <span class="save-error">{{ saveErrorMessage() }}</span>
+      }
+    </div>
   </header>
 
   <div class="output-panel">
