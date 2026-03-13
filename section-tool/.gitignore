@@ -52,6 +52,9 @@ npm-debug.log
 /libpeerconnection.log
 testem.log
 /typings
+.agents
+.claude/skills/webawesome
+skills-lock.json
 
 # System files
 .DS_Store

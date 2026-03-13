@@ -14,19 +14,22 @@ import '@awesome.me/webawesome/dist/components/input/input.js';
 })
 export class XmlLibraryPickerComponent {
   private libraryService = inject(XmlLibraryService);
+  private static readonly SORT_KEY = 'xml-library-sort-reverse';
 
   fileSelected = output<string>();
 
   isOpen = signal(false);
   isLoading = signal(false);
-error = signal<string | null>(null);
+  error = signal<string | null>(null);
   files = signal<string[]>([]);
   filter = signal('');
   selectedFile = signal<string | null>(null);
+  sortReverse = signal(localStorage.getItem(XmlLibraryPickerComponent.SORT_KEY) !== 'false');
 
   filteredFiles = computed(() => {
     const f = this.filter().toLowerCase();
-    return f ? this.files().filter(name => name.toLowerCase().includes(f)) : this.files();
+    const list = f ? this.files().filter(name => name.toLowerCase().includes(f)) : this.files();
+    return this.sortReverse() ? [...list].reverse() : list;
   });
 
   async open(): Promise<void> {
@@ -37,7 +40,7 @@ error = signal<string | null>(null);
     this.isLoading.set(true);
     try {
       const files = await this.libraryService.getFileList();
-      this.files.set([...files].reverse());
+      this.files.set(files);
     } catch (e) {
       this.error.set(e instanceof Error ? e.message : 'Failed to load file list');
     } finally {
@@ -66,6 +69,12 @@ error = signal<string | null>(null);
     } finally {
       this.isLoading.set(false);
     }
+  }
+
+  toggleSort(): void {
+    const next = !this.sortReverse();
+    this.sortReverse.set(next);
+    localStorage.setItem(XmlLibraryPickerComponent.SORT_KEY, String(next));
   }
 
   onDialogHide(): void {

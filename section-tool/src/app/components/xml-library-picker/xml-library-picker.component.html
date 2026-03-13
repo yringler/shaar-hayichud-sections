@@ -18,16 +18,21 @@
   } @else if (error()) {
     <div class="error-state">{{ error() }}</div>
   } @else {
-    <wa-input
-      autofocus
-      placeholder="Filter files..."
-      with-clear
-      [value]="filter()"
-      (input)="onFilterInput($event)"
-      (wa-clear)="filter.set('')"
-    >
-      <wa-icon name="magnifying-glass" slot="start"></wa-icon>
-    </wa-input>
+    <div class="toolbar">
+      <wa-input
+        autofocus
+        placeholder="Filter files..."
+        with-clear
+        [value]="filter()"
+        (input)="onFilterInput($event)"
+        (wa-clear)="filter.set('')"
+      >
+        <wa-icon name="magnifying-glass" slot="start"></wa-icon>
+      </wa-input>
+      <wa-button size="small" appearance="outlined" (click)="toggleSort()" title="Toggle sort order">
+        <wa-icon [name]="sortReverse() ? 'arrow-down-wide-short' : 'arrow-up-wide-short'"></wa-icon>
+      </wa-button>
+    </div>
 
     <ul class="file-list">
       @for (file of filteredFiles(); track file) {

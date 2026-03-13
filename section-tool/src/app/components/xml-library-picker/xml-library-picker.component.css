@@ -10,8 +10,15 @@
   padding: var(--wa-space-m) 0;
 }
 
-wa-input {
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--wa-space-xs);
   margin-bottom: var(--wa-space-m);
+}
+
+.toolbar wa-input {
+  flex: 1;
 }
 
 .file-list {
