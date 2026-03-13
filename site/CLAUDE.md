@@ -14,11 +14,18 @@ Static site for chapters of Shaar Hayichud with labeled subsections, plus audio 
 ## Commands
 
 ```bash
-yarn build    # Hugo build → hugo/public/
+yarn build    # Hugo build → hugo/public/ (minified)
 yarn serve    # Hugo dev server with live reload
 yarn test     # Unit tests for lib/json-renderer.js
 yarn epub     # Generate EPUB from chapters
 ```
+
+## Deployment
+
+The site is hosted on **Cloudflare Pages**. Every push to the repo triggers an automatic build and deployment using:
+
+- **Build command**: `yarn build`
+- **Output directory**: `hugo/public`
 
 ## Project Structure
 
