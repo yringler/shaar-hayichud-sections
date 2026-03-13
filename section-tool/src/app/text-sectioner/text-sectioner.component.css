@@ -33,11 +33,16 @@ kbd {
 }
 
 .toolbar {
+  direction: ltr;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 8px;
   margin-bottom: 8px;
+}
+
+.toolbar wa-number-input {
+  --wa-focus-ring: none;
 }
 
 .editor-panel {

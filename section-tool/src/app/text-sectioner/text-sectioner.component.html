@@ -31,7 +31,8 @@
         appearance="outlined"
         min="1"
         without-steppers
-        placeholder="Ch #"
+        label="Chapter #"
+        placeholder=""
         [value]="chapterNumber()"
         [disabled]="!!jsonOutput()"
         (input)="onChapterNumberInput($event)"
