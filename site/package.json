@@ -3,7 +3,7 @@
   "packageManager": "yarn@4.12.0",
   "scripts": {
     "convert": "node ./convert.js data.txt hugo/data/classes.json",
-    "build": "cd hugo && hugo",
+    "build": "cd hugo && hugo --minify",
     "serve": "cd hugo && hugo serve",
     "test": "node --test lib/json-renderer.test.js",
     "epub": "node epub/build-epub.mjs"
