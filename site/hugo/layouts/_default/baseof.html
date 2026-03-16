@@ -7,6 +7,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ with .Title }}{{ . }} — {{ end }}{{ site.Title }}</title>
+  {{ if eq $lang "he" }}
+    {{ with .Params.altUrl }}<link rel="canonical" href="{{ . | absURL }}">{{ end }}
+  {{ else }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
 </head>
