@@ -7,13 +7,15 @@
         <kbd>Tab</kbd> sibling &middot;
         <kbd>Alt+Enter</kbd> promote &middot;
         <kbd>Shift+Enter</kbd> merge parent &middot;
-        <kbd>Shift+Tab</kbd> merge prev
+        <kbd>Shift+Tab</kbd> merge prev &middot;
+        <kbd>Ctrl+S</kbd> save
       </p>
     } @else {
       <p class="subtitle">
         <kbd>Tab</kbd> sibling &middot;
         <kbd>Shift+Tab</kbd> merge prev &middot;
-        <kbd>Enter</kbd> new line
+        <kbd>Enter</kbd> new line &middot;
+        <kbd>Ctrl+S</kbd> save
       </p>
     }
     <div class="toolbar">
@@ -83,4 +85,13 @@
       />
     }
   </div>
+
+  @if (showSaveOverlay()) {
+    <div class="save-overlay">
+      <div class="save-overlay-content">
+        <wa-icon name="cloud-upload" style="font-size: 3rem;"></wa-icon>
+        <span>Saving...</span>
+      </div>
+    </div>
+  }
 </div>

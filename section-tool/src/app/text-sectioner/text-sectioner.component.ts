@@ -1,4 +1,4 @@
-import { Component, inject, signal, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, inject, signal, HostListener, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TextSectionService } from '../services/text-section.service';
 import { TextNodeComponent, NodeKeydownEvent, NodeTextChangeEvent, NodeLabelChangeEvent, NodeDeleteEvent, NodeTranslationChangeEvent } from '../components/text-node/text-node.component';
 import { XmlOutputComponent } from '../components/xml-output/xml-output.component';
@@ -31,6 +31,19 @@ export class TextSectionerComponent {
   saveStatus = this.saveService.status;
   saveErrorMessage = this.saveService.errorMessage;
   currentFile = this.libraryService.currentFile;
+  showSaveOverlay = signal(false);
+
+  @HostListener('document:keydown', ['$event'])
+  onGlobalKeydown(event: KeyboardEvent): void {
+    if (event.key === 's' && (event.ctrlKey || event.metaKey)) {
+      event.preventDefault();
+      this.onSave();
+      if (this.currentFile()) {
+        this.showSaveOverlay.set(true);
+        setTimeout(() => this.showSaveOverlay.set(false), 1000);
+      }
+    }
+  }
 
   chapterNumber = signal<number | null>(null);
 

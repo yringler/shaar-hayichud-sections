@@ -60,3 +60,32 @@ kbd {
   font-size: 0.8rem;
   color: #c62828;
 }
+
+.save-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fade-in 0.15s ease-out;
+}
+
+.save-overlay-content {
+  background: white;
+  border-radius: 12px;
+  padding: 32px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  color: #1565c0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
