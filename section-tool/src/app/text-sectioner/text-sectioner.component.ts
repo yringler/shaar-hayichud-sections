@@ -18,18 +18,37 @@ import '@awesome.me/webawesome/dist/components/number-input/number-input.js';
   styleUrl: './text-sectioner.component.css',
 })
 export class TextSectionerComponent {
+  private static readonly SHOW_TRANSLATION_KEY = 'editor_show_translation';
+  private static readonly LAST_FILE_KEY = 'editor_last_file';
+
   private service = inject(TextSectionService);
   private saveService = inject(SaveService);
   private libraryService = inject(XmlLibraryService);
 
   rootNodes = this.service.rootNodes;
   jsonOutput = this.service.jsonOutput;
-  showTranslation = signal(false);
+  showTranslation = signal(localStorage.getItem(TextSectionerComponent.SHOW_TRANSLATION_KEY) === 'true');
   saveStatus = this.saveService.status;
   saveErrorMessage = this.saveService.errorMessage;
   currentFile = this.libraryService.currentFile;
 
   chapterNumber = signal<number | null>(null);
+
+  constructor() {
+    const lastFile = localStorage.getItem(TextSectionerComponent.LAST_FILE_KEY);
+    if (lastFile) {
+      void this.loadLastFile(lastFile);
+    }
+  }
+
+  private async loadLastFile(filename: string): Promise<void> {
+    try {
+      const content = await this.libraryService.loadFile(filename);
+      this.service.loadFromJson(content);
+    } catch {
+      localStorage.removeItem(TextSectionerComponent.LAST_FILE_KEY);
+    }
+  }
 
   onChapterNumberInput(event: Event): void {
     const value = (event.target as HTMLInputElement).value;
@@ -45,6 +64,7 @@ export class TextSectionerComponent {
 
   toggleTranslation(): void {
     this.showTranslation.update(v => !v);
+    localStorage.setItem(TextSectionerComponent.SHOW_TRANSLATION_KEY, String(this.showTranslation()));
   }
 
   onNodeKeydown(event: NodeKeydownEvent): void {
@@ -115,6 +135,10 @@ export class TextSectionerComponent {
   onLoad(content: string): void {
     try {
       this.service.loadFromJson(content);
+      const filename = this.currentFile();
+      if (filename) {
+        localStorage.setItem(TextSectionerComponent.LAST_FILE_KEY, filename);
+      }
     } catch (error) {
       alert('Failed to load: ' + (error instanceof Error ? error.message : 'Invalid format'));
     }
