@@ -26,4 +26,4 @@ dir: ltr
 <p>My transliteration of such terms will follow the common pattern of using Ashkenazi consonants and Sephardi syllables — so <em>binah</em> instead of <em>binuh</em>, and <em>middos</em> instead of <em>middot</em>.</p>
 
 <h2>AI Usage</h2>
-<p>AI tools were used to help draft and edit supplementary materials like this introduction. AI was not used in any capacity for the translation itself — not for producing translations, reviewing them, suggesting alternatives, or critiquing drafts. The translation is entirely my own work.</p>
+<p>AI tools are occasionally used as a brainstorming aid during translation. When I'm unsure whether a particular phrase reads as clear, natural English, I'll sometimes ask an AI for suggestions - then carefully review them, often coming up with my own alternatives instead. I only use AI in this way for small, focused sentences or phrases, and every final choice is my own. For example, see <a href="https://claude.ai/share/3ce74568-92b3-47b5-b186-db678b864fd4">this chat</a></p>
