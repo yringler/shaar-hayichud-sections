@@ -1,4 +1,4 @@
-import { Component, inject, signal, HostListener, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, inject, signal, HostListener, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TextSectionService } from '../services/text-section.service';
 import { TextNodeComponent, NodeKeydownEvent, NodeTextChangeEvent, NodeLabelChangeEvent, NodeDeleteEvent, NodeTranslationChangeEvent } from '../components/text-node/text-node.component';
 import { XmlOutputComponent } from '../components/xml-output/xml-output.component';
@@ -17,9 +17,10 @@ import '@awesome.me/webawesome/dist/components/number-input/number-input.js';
   templateUrl: './text-sectioner.component.html',
   styleUrl: './text-sectioner.component.css',
 })
-export class TextSectionerComponent {
+export class TextSectionerComponent implements OnDestroy {
   private static readonly SHOW_TRANSLATION_KEY = 'editor_show_translation';
   private static readonly LAST_FILE_KEY = 'editor_last_file';
+  private static readonly SCROLL_POSITION_KEY = 'editor_scroll_position';
 
   private service = inject(TextSectionService);
   private saveService = inject(SaveService);
@@ -32,6 +33,7 @@ export class TextSectionerComponent {
   saveErrorMessage = this.saveService.errorMessage;
   currentFile = this.libraryService.currentFile;
   showSaveOverlay = signal(false);
+  private scrollIntervalId: ReturnType<typeof setInterval>;
 
   @HostListener('document:keydown', ['$event'])
   onGlobalKeydown(event: KeyboardEvent): void {
@@ -52,12 +54,24 @@ export class TextSectionerComponent {
     if (lastFile) {
       void this.loadLastFile(lastFile);
     }
+
+    this.scrollIntervalId = setInterval(() => {
+      localStorage.setItem(TextSectionerComponent.SCROLL_POSITION_KEY, String(window.scrollY));
+    }, 10_000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.scrollIntervalId);
   }
 
   private async loadLastFile(filename: string): Promise<void> {
     try {
       const content = await this.libraryService.loadFile(filename);
       this.service.loadFromJson(content);
+      const savedScroll = localStorage.getItem(TextSectionerComponent.SCROLL_POSITION_KEY);
+      if (savedScroll) {
+        setTimeout(() => window.scrollTo(0, parseInt(savedScroll, 10)), 100);
+      }
     } catch {
       localStorage.removeItem(TextSectionerComponent.LAST_FILE_KEY);
     }
