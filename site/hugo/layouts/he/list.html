@@ -23,6 +23,35 @@
   </section>
 
   <section>
+    <h2>Translation</h2>
+    <ul class="index-list">
+      <li><a href="/translation/translation-philosophy/">Translator's Introduction</a></li>
+      {{ $transChapters := slice }}
+      {{ range $key, $val := site.Data.chapters }}
+        {{ $hasTranslation := false }}
+        {{ range $val }}
+          {{ if reflect.IsMap . }}
+            {{ with .translation }}
+              {{ $hasTranslation = true }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if $hasTranslation }}
+          {{ $transChapters = $transChapters | append $key }}
+        {{ end }}
+      {{ end }}
+      {{ $sortedTrans := sort $transChapters }}
+      {{ range first 5 $sortedTrans }}
+        {{ $numStr := replaceRE `^chapter_0*` "" . }}
+        <li><a href="/translation/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      {{ end }}
+      {{ if gt (len $sortedTrans) 5 }}
+      <li><a href="/translation/">Translation &larr;</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section>
     <h2>{{ $strings.nav.classes }}</h2>
     <ul class="index-list">
       {{ range site.Data.classes }}
