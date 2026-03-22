@@ -1,0 +1,39 @@
+{{- /* Content adapter: generates english-only chapter pages at /english/chapter-N/ */ -}}
+
+{{- $chapters := slice -}}
+{{- range $key, $val := site.Data.chapters -}}
+  {{- $chapters = $chapters | append $key -}}
+{{- end -}}
+{{- $chapters = sort $chapters -}}
+
+{{- range $key := $chapters -}}
+  {{- $data := index site.Data.chapters $key -}}
+  {{- $numStr := replaceRE `^chapter_0*` "" $key -}}
+
+  {{- /* Only generate if chapter has translations */ -}}
+  {{- $hasTranslation := false -}}
+  {{- range $data -}}
+    {{- if reflect.IsMap . -}}
+      {{- with .translation -}}
+        {{- $hasTranslation = true -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $hasTranslation -}}
+    {{- $.AddPage (dict
+      "mediaType" "text/html"
+      "path" (printf "chapter-%s" $numStr)
+      "title" (printf "Chapter %s" $numStr)
+      "kind" "page"
+      "params" (dict
+        "pageLang" "en"
+        "dir" "ltr"
+        "chapter_data" $key
+        "showTranslation" true
+        "hideHebrew" true
+        "altUrl" (printf "/translation/chapter-%s/" $numStr)
+      )
+    ) -}}
+  {{- end -}}
+{{- end -}}

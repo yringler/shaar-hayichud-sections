@@ -1,12 +1,12 @@
 {{ define "main" }}
-  <h1>Translation</h1>
-  <p><small><a href="/english/">View without Hebrew text</a></small></p>
+  <h1>English</h1>
+  <p><small><a href="/translation/">View with Hebrew text</a></small></p>
 
   <ul class="index-list">
     <li><a href="/translation/translation-philosophy/">Translator's Introduction</a></li>
   </ul>
 
-  <h2>Translations</h2>
+  <h2>Chapters</h2>
   <ul class="index-list">
     {{ $chapters := slice }}
     {{ range $key, $val := site.Data.chapters }}
@@ -25,7 +25,7 @@
         {{ end }}
       {{ end }}
       {{ if $hasTranslation }}
-      <li><a href="/translation/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
+      <li><a href="/english/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
       {{ end }}
     {{ end }}
   </ul>
