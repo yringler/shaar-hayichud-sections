@@ -5,6 +5,7 @@
 {{- $depth := .depth -}}
 {{- $prefix := .prefix -}}
 {{- $showTranslation := .showTranslation -}}
+{{- $hideHebrew := .hideHebrew -}}
 
 {{- /* Filter to only object nodes (skip bare strings) */ -}}
 {{- $sectionIdx := 0 -}}
@@ -31,6 +32,7 @@
           <span class="number">{{ $number }}</span>
           {{- with $label }} {{ . }}{{ end -}}
         </div>
+        {{- if not $hideHebrew -}}
         <div class="content">
         {{- if strings.Contains $content "\n" -}}
           {{- range split $content "\n" -}}
@@ -40,6 +42,7 @@
           {{ $content }}
         {{- end -}}
         </div>
+        {{- end -}}
       </div>
     {{- else if $label -}}
       <div class="section depth-{{ $depth }} label-only">
@@ -63,6 +66,6 @@
     {{ end -}}
 
     {{- /* Recurse into children */ -}}
-    {{- partial "render-textnode.html" (dict "nodes" $children "depth" (add $depth 1) "prefix" $number "showTranslation" $showTranslation) -}}
+    {{- partial "render-textnode.html" (dict "nodes" $children "depth" (add $depth 1) "prefix" $number "showTranslation" $showTranslation "hideHebrew" $hideHebrew) -}}
   {{- end -}}
 {{- end -}}

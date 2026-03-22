@@ -3,8 +3,9 @@
     {{- $chapterKey := .Params.chapter_data -}}
     {{- $data := index site.Data.chapters $chapterKey -}}
     {{- $showTranslation := .Params.showTranslation | default false -}}
-    <div dir="rtl">
-      {{- partial "render-textnode.html" (dict "nodes" $data "depth" 1 "prefix" "" "showTranslation" $showTranslation) -}}
+    {{- $hideHebrew := .Params.hideHebrew | default false -}}
+    <div dir="{{ if $hideHebrew }}ltr{{ else }}rtl{{ end }}">
+      {{- partial "render-textnode.html" (dict "nodes" $data "depth" 1 "prefix" "" "showTranslation" $showTranslation "hideHebrew" $hideHebrew) -}}
     </div>
   {{ else }}
     {{ .Content }}
