@@ -52,6 +52,8 @@ come from `../data/` (see [data/README.md](../data/README.md)).
 - `../../data/dist/v1` → `static/data/v1` (the published JSON API)
 - `../../data/dist/v1/catalog.json` → `data/v1` (`site.Data.v1.catalog`, read via the `catalog.html` partial, which fails the build if the data build has not run)
 
+Keep mounts portable across Hugo versions: Cloudflare Pages builds with its image's default Hugo (no `HUGO_VERSION` is pinned) while developers may run a much newer one. Mount single files directly instead of filtering a directory (`includeFiles` was removed in Hugo 0.153; its `files` replacement does not exist in older releases). Likewise, stay on `site.Data` until the Pages default Hugo supports `hugo.Data`; newer Hugo only warns about it.
+
 ## Content Adapters
 
 Content adapters (`_content.gotmpl`) auto-generate pages from data at build time — no `.md` stub files needed per chapter. When a new chapter JSON is saved via the section-tool, Hugo discovers it automatically on next build.

@@ -34,10 +34,12 @@ title = "Shaar Hayichud"
   source = "../../data/dist/v1"
   target = "static/data/v1"
 
+# Mount the single file (not the directory + a file filter): includeFiles was
+# removed in Hugo 0.153 and its replacement does not exist before then, so a
+# file mount is the only form that builds on every Hugo version.
 [[module.mounts]]
-  source = "../../data/dist/v1"
-  target = "data/v1"
-  includeFiles = ["/catalog.json"]
+  source = "../../data/dist/v1/catalog.json"
+  target = "data/v1/catalog.json"
 
 # Keep default mounts for other dirs
 [[module.mounts]]
