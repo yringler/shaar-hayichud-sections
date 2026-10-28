@@ -225,9 +225,13 @@ with short questions. The setting sent is stored in the transcript's
 found one speaker in the introduction and two in `002 Tape016-Side1-Ch10.mp3`,
 but the second speaker got only 16 words, all of them the teacher's own
 sentences, and about 300 words got no speaker. Labeling was therefore turned
-off for Markel. Those two transcripts keep their stored labels, but the data
-build publishes `speaker` only for series whose labeling is on
-(`speakerLabelsOn` in `tools/src/publish.ts`), so they are not shown.
+off for Markel. The introduction keeps its stored labels, but the data build
+publishes `speaker` only for series whose labeling is on (`speakerLabelsOn` in
+`tools/src/publish.ts`), so they are not shown. `002` was restored to its
+first, unlabelled transcription (`b952099f…`), whose word timestamps were
+better (555 zero-length words against 1,266 in the labelled re-run), and
+re-aligned; in Sofer it is back in the Chapter 10 folder and the re-run is
+archived as superseded.
 
 For each lecture:
 

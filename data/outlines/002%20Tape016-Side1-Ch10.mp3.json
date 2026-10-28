@@ -2,18 +2,19 @@
   "schemaVersion": 1,
   "lectureId": "002 Tape016-Side1-Ch10.mp3",
   "provider": "sofer.ai",
-  "transcriptionId": "b4fc794e-b2ee-4c8a-bd53-d325039b4b40",
+  "transcriptionId": "b952099f-b570-409b-a5f3-e7f137e9a7d0",
   "transcript": "transcripts/002%20Tape016-Side1-Ch10.mp3.json",
-  "fetchedAt": "2026-10-28T19:07:16.756Z",
+  "fetchedAt": "2026-10-28T19:29:39.114Z",
   "request": {
     "monotone": true,
     "conclusion_bias": false
   },
   "topics": [
-    {"title":"Chapter 10: Detailed Path of the Ten Worlds","starting_phrase":"ומעתה chapter 10, ומעתה הנה יש להבין דרך פרט בכל ד' עולמות אבי\"ע.","start_time_sec":9.979999999999999,"matched_text":"ומעתה chapter 10, ומעתה הנה יש להבין דרך פרט בכל ד' עולמות","score_norm":1,"confidence":"HIGH","token_span":[0,12],"matched_content":12,"content_coverage":0.857,"longest_content_run_soft":12,"longest_content_run_strict":12},
-    {"title":"Three Levels of פנימיות האור and עצמות אור אין סוף","starting_phrase":"ונחלק לג' מדריגות דרך כלל, in general we divide it into three levels,","start_time_sec":104.59927240234879,"matched_text":"ונחלק לג' מדריגות דרך כלל, in general we divide it into three levels,","score_norm":0.981,"confidence":"HIGH","token_span":[296,309],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
-    {"title":"Understanding יחיד and the Concept of חכמה ללא חכמה","starting_phrase":"ולא בחכמה ידיעה, that basically חכים בלא חכמה ידיעא means that not with a discernible חכמה","start_time_sec":238.45455705897373,"matched_text":"חכמה ידיעא, which basically חכים בלא חכמה ידיעא means that not with a discernible חכמה.","score_norm":0.864,"confidence":"HIGH","token_span":[614,629],"matched_content":12,"content_coverage":0.923,"longest_content_run_soft":12,"longest_content_run_strict":6},
-    {"title":"The חפץ חסד Example: Kindness Beyond Specific Acts","starting_phrase":"על דרך דוגמה, כאשר אדם הוא חפץ חסד וטוב להיטיב בדבר פרט שזהו בא מצד שיש בו מידה זאת דחפץ חסד וטוב בבחינת עצמות נפשו נקרא יחידה","start_time_sec":1187.343987745721,"matched_text":"דרך דוגמה, כאשר אדם הוא חפץ חסד וטוב להיטיב בדבר פרט שזהו בא מצד שיש בו מידה זאת דחפץ חסד וטוב בבחינת עצמות נפשו נקרא יחידה.","score_norm":1,"confidence":"HIGH","token_span":[2521,2547],"matched_content":26,"content_coverage":1,"longest_content_run_soft":26,"longest_content_run_strict":26},
-    {"title":"חפץ חסד ההיולי: All Needs Included in Divine Kindness","starting_phrase":"אם כן, בהכרח שקודם שעלה ברצונו חסד זה שבגילוי להיטיב חסד בדבר זה הפרטי, היה כלול בעצמיות חפץ חסד ההיולי","start_time_sec":1510.922374266014,"matched_text":"כן, בהכרח שקודם שעלה ברצונו חסד זה שבגילוי להיטיב חסד בדבר זה הפרטי, היה כלול בעצמיות חפץ חסד ההיולי.","score_norm":0.992,"confidence":"HIGH","token_span":[3684,3703],"matched_content":17,"content_coverage":0.944,"longest_content_run_soft":17,"longest_content_run_strict":7}
+    {"title":"Chapter 10: Detailed Path in the Ten Worlds","starting_phrase":"ומעתה, chapter 10. ומעתה הנה יש להבין דרך פרט בכל ד' עולמות דאבי\"ע.","start_time_sec":9.98,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Beginning with the Source: מקורא דכולא","starting_phrase":"מתחלה יש לכל מתבונן להתבונן במקור הראשון הנקרא מקורא דכולא","start_time_sec":86.12,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Chazal on חכם ולא בחכמה ידיעה","starting_phrase":"אבל מה שאמרו חכם ולא בחכמה ידיעה","start_time_sec":547.619534050179,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Understanding the גליף גליפו Levels","starting_phrase":"והוא הנקרא גליף גליפו. And this is","start_time_sec":849.127040450588,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Example of חפץ חסד and Kindness","starting_phrase":"על דרך דוגמה, כאשר אדם הוא חפץ חסד וטוב","start_time_sec":1225.33095750128,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Is Not Giving Sandwiches Still חסד?","starting_phrase":"Doesn't give sandwiches. So is this a חסד?","start_time_sec":1776.42,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
   ]
 }
