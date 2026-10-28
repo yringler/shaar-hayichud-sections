@@ -34,7 +34,8 @@ const chapters = await Promise.all(
     const n = parseInt(filename.match(/^chapter_(\d+)\.json$/)[1], 10);
     const heb = hebrewNumerals[n - 1] ?? String(n);
     const jsonContent = readFileSync(path.join(textsDir, filename), 'utf8');
-    const html = await renderJsonToHtml(jsonContent, {});
+    // Line ids may start with a digit, which is not a valid XHTML id; omit them.
+    const html = await renderJsonToHtml(jsonContent, {}, { lineIds: false });
     return {
       title: `פרק ${heb} — Chapter ${n}`,
       data: html,

@@ -3,18 +3,20 @@
 /**
  * JSON-to-HTML renderer for Shaar Hayichud chapter files.
  *
- * Replaces the old xml-renderer.js (which used fast-xml-parser).
- * Input is a JSON array of TextNode objects matching the TextNode model:
+ * Input is a JSON array of TextNode objects (data/schema/v1/chapter.schema.json):
  *
+ *   type Line = { id: string; text: string };
  *   type TextNode = {
  *     label?: string;
- *     children: (TextNode | string)[];
+ *     children: (Line | TextNode)[];
  *     translation?: string;
  *   }
  *
- * Rendering rules (same as the old XSLT / xml-renderer logic):
- *   - Each TextNode with direct text emits a <div class="depth-N"> block
+ * Rendering rules (mirror hugo/layouts/partials/render-textnode.html):
+ *   - Each TextNode with lines of its own emits a <div class="depth-N"> block
  *   - Hierarchical numbering: 1, 1.1, 1.1.1, …
+ *   - Each line is a <span class="line" id="<line id>"> (several lines: one <p>
+ *     each; a single line: inline). Pass { lineIds: false } to omit the ids.
  *   - Footnote digit markers stripped from Hebrew text content
  *   - Child sections recurse (flat HTML output, not nested divs)
  *   - Translation shown only when data.locale.section === "translation"
@@ -34,45 +36,56 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;");
 }
 
-function renderParagraphs(text, escape) {
+function renderParagraphs(text) {
   if (text.includes("\n")) {
     return text
       .split("\n")
       .filter((l) => l.trim())
-      .map((l) => `<p>${escape ? escapeHtml(l.trim()) : l.trim()}</p>`)
+      .map((l) => `<p>${l.trim()}</p>`)
       .join("");
   }
-  return escape ? escapeHtml(text) : text;
+  return text;
+}
+
+/** A section always has `children`; a line ({ id, text }) never does. */
+function isSection(node) {
+  return typeof node === "object" && node !== null && Array.isArray(node.children);
+}
+
+function isLine(node) {
+  return typeof node === "object" && node !== null && !isSection(node) && typeof node.text === "string";
 }
 
 /**
- * Collect all direct text strings from a mixed children array.
- * Concatenates adjacent strings and normalises whitespace.
+ * Render a section's own lines: footnote digits stripped, whitespace runs
+ * collapsed, one <span class="line"> per line.
  *
- * @param {Array<object|string>} children
+ * @param {Array<{id: string, text: string}>} lines
+ * @param {boolean} lineIds - whether to emit id attributes
  * @returns {string}
  */
-function getDirectText(children) {
-  const parts = children
-    .filter((c) => typeof c === "string")
-    .map((s) => String(s).replace(/[^\S\n]+/g, " ").trim())
-    .filter(Boolean);
-  return parts.join(" ");
+function renderLines(lines, lineIds) {
+  const spans = lines.map((line) => {
+    // Strip footnote digit markers (mirrors the Hugo partial: replaceRE `\d+` "").
+    const text = line.text.replace(/\d+/g, "").replace(/\s+/g, " ").trim();
+    const id = lineIds ? ` id="${escapeHtml(line.id).replace(/"/g, "&quot;")}"` : "";
+    return `<span class="line"${id}>${escapeHtml(text)}</span>`;
+  });
+  return spans.length > 1 ? spans.map((s) => `<p>${s}</p>`).join("") : spans.join("");
 }
 
 /**
  * Recursively render a list of TextNode objects to an HTML string.
  *
- * @param {Array<object|string>} nodes - mixed array of TextNode objects and strings
+ * @param {Array<object>} nodes - mixed array of TextNode and Line objects
  * @param {number} depth - current nesting depth (1-based)
  * @param {string} prefix - dot-separated numbering prefix, e.g. "1.2"
- * @param {boolean} showTranslations - whether to emit translation divs
+ * @param {{showTranslations: boolean, lineIds: boolean}} opts
  * @returns {string} HTML fragment
  */
-function renderChildren(nodes, depth, prefix, showTranslations) {
-  // Only process TextNode objects (skip bare strings at this level — they're
-  // handled by the parent via getDirectText)
-  const sectionNodes = nodes.filter((n) => typeof n === "object" && n !== null);
+function renderChildren(nodes, depth, prefix, opts) {
+  // Lines at this level belong to the parent, which rendered them already.
+  const sectionNodes = nodes.filter(isSection);
 
   return sectionNodes
     .map((node, idx) => {
@@ -80,30 +93,27 @@ function renderChildren(nodes, depth, prefix, showTranslations) {
       const number = prefix ? `${prefix}.${pos}` : String(pos);
 
       const label = node.label ?? "";
-      const children = node.children ?? [];
+      const children = node.children;
 
-      const text = getDirectText(children);
+      const lines = children.filter(isLine);
       let html = "";
 
-      if (text) {
-        // Strip footnote digit markers — mirrors XSLT: replace($text, '\d+', '')
-        const content = text.replace(/\d+/g, "");
-
+      if (lines.length > 0) {
         html += `<div class="depth-${depth}">`;
         html += `<div class="label">`;
         html += `<span class="number">${escapeHtml(number)}</span>`;
         if (label) html += ` ${escapeHtml(label)}`;
         html += `</div>`;
-        html += `<div class="content">${renderParagraphs(content, true)}</div>`;
+        html += `<div class="content">${renderLines(lines, opts.lineIds)}</div>`;
         html += `</div>\n`;
       }
 
-      if (showTranslations && node.translation) {
-        html += `<div class="translation">${renderParagraphs(node.translation, false)}</div>\n`;
+      if (opts.showTranslations && node.translation) {
+        html += `<div class="translation">${renderParagraphs(node.translation)}</div>\n`;
       }
 
       // Recurse into child sections (flat output, not nested HTML)
-      html += renderChildren(children, depth + 1, number, showTranslations);
+      html += renderChildren(children, depth + 1, number, opts);
 
       return html;
     })
@@ -114,10 +124,14 @@ function renderChildren(nodes, depth, prefix, showTranslations) {
  * Parse and render a JSON chapter file to an HTML fragment.
  *
  * @param {string} jsonContent - raw JSON source (array of TextNode objects)
- * @param {Record<string, unknown>} data - Eleventy data object
+ * @param {Record<string, unknown>} data - page data; translations are shown
+ *   when data.locale.section === "translation"
+ * @param {{lineIds?: boolean}} [options] - lineIds (default true): emit each
+ *   line's id attribute. Line ids may start with a digit, which XHTML (EPUB)
+ *   does not allow, so the EPUB builder turns them off.
  * @returns {Promise<string>} HTML fragment ready for layout injection
  */
-async function renderJsonToHtml(jsonContent, data) {
+async function renderJsonToHtml(jsonContent, data, options = {}) {
   let nodes;
   try {
     nodes = JSON.parse(jsonContent);
@@ -127,8 +141,11 @@ async function renderJsonToHtml(jsonContent, data) {
 
   if (!Array.isArray(nodes) || nodes.length === 0) return "";
 
-  const showTranslations = data?.locale?.section === "translation";
-  return renderChildren(nodes, 1, "", showTranslations);
+  const opts = {
+    showTranslations: data?.locale?.section === "translation",
+    lineIds: options.lineIds ?? true,
+  };
+  return renderChildren(nodes, 1, "", opts);
 }
 
 module.exports = { renderJsonToHtml };

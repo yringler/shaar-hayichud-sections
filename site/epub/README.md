@@ -13,4 +13,6 @@ files exist.
 ## Notes
 
 The rendering logic used for the EPUB is the same as the site build: `lib/json-renderer.js`
-walks the `TextNode` tree and emits `depth-N` div structures.
+walks the `TextNode` tree and emits `depth-N` div structures. Lines are rendered as
+`<span class="line">` without their IDs, since a line ID may start with a digit and XHTML
+IDs may not.
