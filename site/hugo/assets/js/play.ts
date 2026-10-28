@@ -33,15 +33,24 @@ function init(panel: HTMLElement): void {
   for (const el of panel.querySelectorAll<HTMLElement>('[data-js-only]')) el.hidden = false;
   for (const el of panel.querySelectorAll<HTMLElement>('[data-no-js]')) el.hidden = true;
 
-  // Keep the panel's height in a CSS variable (sticky offset, scroll margins).
+  // Keep the docked panel's height in a CSS variable (page bottom padding,
+  // scroll margins, follow.ts's visible area).
   const setHeight = () =>
     document.documentElement.style.setProperty('--listen-h', `${panel.classList.contains('is-active') ? panel.offsetHeight : 0}px`);
   const activate = () => {
+    if (panel.classList.contains('is-active')) return;
+    // Docking takes the panel out of the flow; if it was above the viewport
+    // that shifts the text up, so scroll back by the same amount.
+    const { bottom, height } = panel.getBoundingClientRect();
+    const taken = height + (Number.parseFloat(getComputedStyle(panel).marginBlockEnd) || 0);
     panel.classList.add('is-active');
     setHeight();
+    if (bottom <= 0) window.scrollBy(0, -taken);
   };
   audio.addEventListener('play', activate);
   window.addEventListener('resize', setHeight);
+  // The panel's height changes when the topic list opens or a note appears.
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setHeight).observe(panel);
 
   const chapterUrl = panel.dataset['chapterAlignments'];
   const chapter = chapterUrl ? initChapter(panel, audio, chapterUrl, activate) : null;

@@ -59,8 +59,8 @@ export function startFollow(o: FollowOptions): FollowController {
 
   const offscreen = (el: Element) => {
     const r = el.getBoundingClientRect();
-    const top = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h')) || 0;
-    return r.bottom < top || r.top > window.innerHeight;
+    const bar = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h')) || 0;
+    return r.bottom < 0 || r.top > window.innerHeight - bar;
   };
 
   const update = () => {
