@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/index.schema.json",
+  "title": "Published file listing (v1)",
+  "description": "Shape of /data/v1/index.json and of the index.json in each /data/v1/<collection>/ directory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "items"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "path"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "path": { "description": "Path relative to /data/v1/.", "type": "string", "minLength": 1 },
+          "schema": { "description": "Path (relative to /data/v1/) of the schema the file follows.", "type": "string" }
+        }
+      }
+    }
+  }
+}
