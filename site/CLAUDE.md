@@ -30,6 +30,9 @@ yarn epub     # Generate EPUB from ../data/chapters
 
 The site is hosted on **Cloudflare Pages**. Every push to the repo triggers an automatic build and deployment using:
 
+These are dashboard settings (Pages project → Settings → Builds); a Pages Wrangler file can't set the build command or root directory, so they don't live in the repo:
+
+- **Root directory**: `site`
 - **Build command**: `yarn build`. This runs the data build in `../data/tools`. Pages clones the whole repo, so `../data` is available. Invalid data fails the deploy.
 - **Output directory**: `hugo/public`
 - `hugo/static/_headers` sets the Pages response headers. `/data/*` and `/texts/*` are CORS-open (`Access-Control-Allow-Origin: *`), and `/data/*` is cached for a short time.

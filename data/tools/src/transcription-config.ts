@@ -39,13 +39,11 @@ export const TRANSCRIPTION_SERIES: readonly SeriesTranscriptionConfig[] = [
   {
     seriesId: '37',
     title: 'Rabbi Markel Series (Advanced)',
-    // Auto-detect rather than num_speakers: 2. The Sofer docs recommend a fixed
-    // count only when it is known exactly; here one teacher talks for most of
-    // the class and an unknown, varying number of students ask short questions,
-    // so forcing two clusters could merge different students or split the
-    // teacher's voice to fill the second cluster.
-    speakers: { mode: 'auto' },
-    note: 'Teacher and students are both audible; label speakers so questions can be told apart.',
+    // Off despite the students being audible: auto-detect was tried on Part 1
+    // (001, 002) and found one speaker, or a spurious second one made of the
+    // teacher's own phrases, never the students. Not worth +$0.30/h.
+    speakers: { mode: 'off' },
+    note: 'Students are audible, but Sofer speaker labeling did not separate them on these tape recordings.',
   },
   // Not yet in scope (need cleanup first): "Rabbi Benyamin Walters New Class
   // (2020)" (:75) and "Rabbi Benyamin Walters Other Classes" (:73).

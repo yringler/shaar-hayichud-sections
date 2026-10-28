@@ -17,6 +17,7 @@ import {
   publishOutline,
   sourceTopics,
   selectPublished,
+  speakerLabelsOn,
   type TimedWord,
 } from './publish.js';
 
@@ -141,6 +142,18 @@ describe('paragraphs', () => {
   });
 });
 
+describe('speakerLabelsOn', () => {
+  it('follows the series speaker setting; unknown series are off', () => {
+    const config = [
+      { seriesId: '1', title: 'A', speakers: { mode: 'auto' as const }, note: '' },
+      { seriesId: '2', title: 'B', speakers: { mode: 'off' as const }, note: '' },
+    ];
+    assert.equal(speakerLabelsOn('1', config), true);
+    assert.equal(speakerLabelsOn('2', config), false);
+    assert.equal(speakerLabelsOn('3', config), false);
+  });
+});
+
 describe('publishAlignment', () => {
   it('keeps the v1 fields and drops segments below the confidence floor', () => {
     const seg = (lineId: string, confidence: number) => ({
@@ -257,6 +270,8 @@ describe('build (audio publishing)', () => {
     for (const item of transcripts.items) {
       const t = readJson(path.join(out, 'v1', decodeURI(item.path))) as Record<string, unknown>;
       assert.ok(!('result' in t) && !('sofer' in t), 'raw Sofer data is not published');
+      // No in-scope series labels speakers today, so stored labels (Markel 002) are dropped.
+      assert.ok(!(t['segments'] as Record<string, unknown>[]).some((seg) => 'speaker' in seg), 'speaker labels are not published');
     }
     const top = readJson(path.join(out, 'v1/index.json')) as { items: { id: string }[] };
     assert.ok(top.items.some((i) => i.id === 'chapter-alignments'));
