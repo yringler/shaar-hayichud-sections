@@ -317,9 +317,10 @@ describe('applyCommand', () => {
       expect(focus).toEqual({ nodeId: 'a', contentIndex: 2, offset: 0 });
     });
 
-    it('skips text entries to find the previous node, and removes that text (existing data loss)', () => {
-      const { roots } = merge([node('p', node('a', 'x'), 'between', node('b', 'y'))], 'b');
-      expect(roots).toEqual([node('p', node('a', 'xy'))]);
+    it('skips text entries to find the previous node and moves that text along, in order', () => {
+      const { roots, focus } = merge([node('p', node('a', 'x', node('g', 'g')), 'between', node('b', 'y'))], 'b');
+      expect(roots).toEqual([node('p', node('a', 'x', node('g', 'g'), 'betweeny'))]);
+      expect(focus).toEqual({ nodeId: 'a', contentIndex: 2, offset: 0 });
     });
 
     it('does nothing when only text precedes the node', () => {

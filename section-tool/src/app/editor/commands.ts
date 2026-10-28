@@ -32,7 +32,10 @@ export type EditorCommand =
   | { type: 'splitToParentSibling'; nodeId: string; contentIndex: number; cursorPos: number }
   /** Shift+Enter: this node's content is spliced into its parent in place. */
   | { type: 'mergeWithParent'; nodeId: string }
-  /** Shift+Tab: this node's content is appended to the previous sibling node. */
+  /**
+   * Shift+Tab: this node's content, and any text between the two, is
+   * appended to the previous sibling node.
+   */
   | { type: 'mergeWithPreviousSibling'; nodeId: string }
   | { type: 'deleteNode'; nodeId: string }
   | { type: 'clearAll' }
@@ -261,8 +264,12 @@ function mergeWithPreviousSibling(roots: TextNode[], nodeId: string): CommandRes
   const prev = siblings[prevIndex] as TextNode;
   const node = siblings[nodeIndex] as TextNode;
 
-  // NOTE: text entries between `prev` and `node` are removed (existing behavior).
-  const { items, position } = mergeAdjacentText([...prev.children, ...node.children], prev.children.length);
+  // Text entries between `prev` and `node` move into `prev` too, so order is kept.
+  const between = siblings.slice(prevIndex + 1, nodeIndex);
+  const { items, position } = mergeAdjacentText(
+    [...prev.children, ...between, ...node.children],
+    prev.children.length,
+  );
   const merged = withTranslation(
     { ...prev, children: items },
     mergeTranslations(prev.translation, node.translation),
