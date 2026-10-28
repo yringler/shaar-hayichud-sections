@@ -70,17 +70,22 @@ its position:
 
 - an unchanged or lightly edited line keeps its ID, even when lines around it
   are added, removed or moved into another section;
+- joining two lines is a delete plus an insert: the joined line gets a new ID;
 - a new line gets a new random ID (`data/tools/src/line-id.ts` generates them;
   pass every ID already in the corpus so a new one never collides);
 - a deleted line's ID disappears and is not reused.
 
 Sections have no persisted ID, and translations stay at section level.
-`yarn assign-line-ids` gives an ID to any line that lacks one, and the build
-fails on a duplicate line ID anywhere in the corpus. It will also check that
+`yarn assign-line-ids` gives an ID to any line that lacks one, and to later
+copies of a duplicated ID; the build fails on a duplicate line ID anywhere in
+the corpus. It will also check that
 every alignment `lineId` exists once alignments are published.
 
 `site/scripts/sefaria-swap.py` (re)imports Sefaria's text into the existing
-sections and carries line IDs over.
+sections and carries line IDs over: each output line is paired one to one,
+in order, with the old line ids that its words came from (respelled words
+included), keeping as many words as possible. Its tests:
+`cd site && yarn test:scripts`.
 
 ## `classes.txt` grammar
 
@@ -147,7 +152,8 @@ yarn test           # unit tests (node:test)
 yarn check-urls     # OPT-IN: HEAD every catalog URL on the CDN. Not part of the build.
                     #   Behind a proxy: NODE_USE_ENV_PROXY=1 yarn check-urls
 yarn assign-line-ids  # give every chapter line without an id a new one (idempotent;
-                    #   --check reports missing ids without writing)
+                    #   later copies of a duplicated id get new ones;
+                    #   --check reports missing or duplicate ids without writing)
 yarn set-durations  # ffprobe lectures with no :seconds and write the result into classes.txt
                     #   (downloads to tools/.cache/media/; needs ffprobe; --dry-run to preview)
 ```

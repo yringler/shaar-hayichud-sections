@@ -68,6 +68,27 @@ describe('assignLineIds', () => {
   });
 });
 
+describe('assignLineIds duplicates', () => {
+  it('gives a fresh id to a later copy of an id within a chapter', () => {
+    const dup: LegacyNode[] = [{ children: [{ id: 'kkkkkkkk', text: 'a' }, { children: [{ id: 'kkkkkkkk', text: 'b' }] }] }];
+    const { chapter, assigned } = assignLineIds(dup, collectLineIds(dup), counter());
+    assert.equal(assigned, 1);
+    assert.deepEqual(chapter, [{ children: [{ id: 'kkkkkkkk', text: 'a' }, { children: [{ id: 'aaaaaaaa', text: 'b' }] }] }]);
+  });
+
+  it('with a shared kept set, a copied chapter gets fresh ids and the first keeps its own', () => {
+    const ch: LegacyNode[] = [{ children: [{ id: 'kkkkkkkk', text: 'a' }] }];
+    const taken = collectLineIds(ch);
+    const kept = new Set<string>();
+    const first = assignLineIds(ch, taken, counter(), kept);
+    const copy = assignLineIds(structuredClone(ch), taken, counter(), kept);
+    assert.equal(first.assigned, 0);
+    assert.deepEqual(first.chapter, ch);
+    assert.equal(copy.assigned, 1);
+    assert.deepEqual(copy.chapter, [{ children: [{ id: 'aaaaaaaa', text: 'a' }] }]);
+  });
+});
+
 describe('formatLike', () => {
   it('keeps tab vs 2-space indent and the trailing newline', () => {
     assert.equal(formatLike('[\n\t{}\n]\n', [1]), '[\n\t1\n]\n');

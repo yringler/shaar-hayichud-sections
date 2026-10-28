@@ -1,6 +1,7 @@
 /**
  * Gives every line in a chapter a stable id. Idempotent: lines that already
- * have an id keep it; only text without one gets a new id.
+ * have an id keep it; only text without one, or with an id already used
+ * earlier in the corpus (a copied line), gets a new id.
  *
  * Handles the pre-line-id shape too, where a leaf's text was one string with
  * lines joined by "\n": each string child becomes one Line per non-blank line,
@@ -37,16 +38,28 @@ export function collectLineIds(chapter: LegacyNode[], into = new Set<string>()):
  * `taken` must already hold every id in the corpus (see collectLineIds); new
  * ids are added to it. A line object whose text contains "\n" is split; its
  * first part keeps the id.
+ *
+ * `kept` holds the ids kept so far in this run; pass one set across every
+ * chapter (in file order) so that, when an id appears twice in the corpus,
+ * the first occurrence keeps it and later ones get new ids.
  */
 export function assignLineIds(
   chapter: LegacyNode[],
   taken: Set<string>,
   random?: RandomBytes,
+  kept = new Set<string>(),
 ): { chapter: Chapter; assigned: number } {
   let assigned = 0;
   const fresh = () => {
     assigned++;
-    return random ? newLineId(taken, random) : newLineId(taken);
+    const id = random ? newLineId(taken, random) : newLineId(taken);
+    kept.add(id);
+    return id;
+  };
+  const keep = (id: string | undefined): string => {
+    if (!isLineId(id) || kept.has(id)) return fresh();
+    kept.add(id);
+    return id;
   };
   const visit = (node: LegacyNode): TextNode => {
     const children: (TextNode | Line)[] = [];
@@ -55,7 +68,7 @@ export function assignLineIds(
         for (const text of splitLines(c)) children.push({ id: fresh(), text });
       } else if (!('children' in c)) {
         splitLines(c.text).forEach((text, i) =>
-          children.push({ id: i === 0 && isLineId(c.id) ? c.id : fresh(), text }),
+          children.push({ id: i === 0 ? keep(c.id) : fresh(), text }),
         );
       } else {
         children.push(visit(c));
@@ -69,7 +82,10 @@ export function assignLineIds(
   return { chapter: chapter.map(visit), assigned };
 }
 
-/** True when every child is a Line with a valid id or a node (recursively). */
+/**
+ * True when every child is a Line with a valid id or a node (recursively).
+ * Does not look for duplicate ids; the CLI's --check uses indexLineIds for that.
+ */
 export function hasAllLineIds(chapter: LegacyNode[]): boolean {
   const ok = (node: LegacyNode): boolean =>
     node.children.every((c) =>
