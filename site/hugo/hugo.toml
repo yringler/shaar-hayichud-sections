@@ -19,13 +19,14 @@ title = "Shaar Hayichud"
   baseName = "index"
   isPlainText = true
 
-# Mount chapters/ as both data (for templates) and static (for raw JSON serving)
+# Chapter JSON lives in the monorepo's data/chapters/ (single source of truth).
+# Mount it as both data (for templates) and static (legacy raw JSON at /texts/).
 [[module.mounts]]
-  source = "chapters"
+  source = "../../data/chapters"
   target = "data/chapters"
 
 [[module.mounts]]
-  source = "chapters"
+  source = "../../data/chapters"
   target = "static/texts"
 
 # Keep default mounts for other dirs

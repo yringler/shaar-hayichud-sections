@@ -177,7 +177,7 @@ export class TextSectionerComponent implements OnDestroy {
       alert('No file loaded. Load a file from the library before saving.');
       return;
     }
-    const path = `hugo/chapters/${filename}`;
+    const path = `data/chapters/${filename}`;
     const content = this.jsonOutput();
     const message = `Edit ${filename} via editor`;
     void this.saveService.save(path, content, message);

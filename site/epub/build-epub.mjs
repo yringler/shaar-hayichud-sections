@@ -1,5 +1,5 @@
 // build-epub.mjs
-// Generates dist/shaar-hayichud.epub directly from src/texts/chapter_NN.json.
+// Generates dist/shaar-hayichud.epub directly from ../data/chapters/chapter_NN.json.
 //
 // No pre-build step needed — reads JSON chapter files and renders HTML on the fly.
 //
@@ -12,7 +12,7 @@ import Epub from 'epub-gen';
 import { renderJsonToHtml } from '../lib/json-renderer.js';
 
 const root = path.resolve(import.meta.dirname, '..');
-const textsDir = path.join(root, 'hugo', 'chapters');
+const textsDir = path.join(root, '..', 'data', 'chapters');
 const distDir = path.join(root, 'dist');
 const outputPath = path.join(distDir, 'shaar-hayichud.epub');
 
@@ -25,7 +25,7 @@ const chapterFiles = readdirSync(textsDir)
   .sort();
 
 if (chapterFiles.length === 0) {
-  console.error('No chapter_NN.json files found in src/texts/.');
+  console.error(`No chapter_NN.json files found in ${textsDir}.`);
   process.exit(1);
 }
 
