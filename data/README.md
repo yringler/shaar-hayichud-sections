@@ -10,7 +10,7 @@ Hayichud comes from this directory:
 | `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
 | `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
-| `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (when present) | Sofer tooling |
+| `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
@@ -171,6 +171,7 @@ yarn set-durations  # ffprobe lectures with no :seconds and write the result int
                     #   (downloads to tools/.cache/media/; needs ffprobe; --dry-run to preview)
 ```
 yarn transcribe     # Sofer.ai transcripts -> transcripts/ (needs SOFER_API_KEY; see below)
+yarn outline        # Sofer.ai topic outlines -> outlines/ (needs SOFER_API_KEY)
 yarn align          # transcripts + chapters -> alignments/ (offline)
 ```
 
@@ -185,6 +186,8 @@ export SOFER_API_KEY=...          # never commit it or pass it as an argument
 yarn transcribe --section 4 --limit 3 --dry-run   # what would be submitted
 yarn transcribe --section 4 --limit 3             # Chapter 10, first three classes
 yarn transcribe --lecture "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3"
+yarn transcribe                   # no arguments: resume (poll) batches a previous run submitted
+yarn outline                      # topic outline for every transcript that lacks a current one
 yarn align                        # every lecture with a stored transcript
 yarn align --section 4 --verbose  # print each line with the words heard
 ```
@@ -201,10 +204,39 @@ never published.
 
 Select lectures with `--lecture <id>` (repeatable) and/or `--section <heading id>`
 (every lecture under that `#`/`##`/`###` heading, in catalog order), optionally
-`--limit N`. For each one:
+`--limit N`.
+
+**Scope and per-series settings** live in one place,
+`tools/src/transcription-config.ts`, keyed by the series' catalog ID (its `#`
+heading's `:N`; the tests check the title still matches `classes.txt`):
+
+| Series | Speaker labeling | Why |
+|--------|------------------|-----|
+| Rabbi Benyamin Walters Original Class (`:0`) | off (`num_speakers: 1`) | only Rabbi Walters is audible, even in Q and A |
+| Rabbi Markel Series (Advanced) (`:37`) | on (`auto_detect_speakers: true`, +$0.30/h) | teacher and students are both audible |
+
+A series not listed (today Walters New Class (2020) and Other Classes, which
+need cleanup first) is refused; `--allow-out-of-scope` overrides, with
+speaker labeling off. Speaker labeling uses auto-detection rather than
+`num_speakers: 2`: Sofer recommends a fixed count only when it is known
+exactly, and a class has one main voice plus an unknown number of students
+with short questions. The setting sent is stored in the transcript's
+`sofer.request`. First result (Markel Part 1, October 2026): auto-detection
+found one speaker in the introduction and two in `002 Tape016-Side1-Ch10.mp3`,
+but the second speaker got only 16 words, all of them the teacher's own
+sentences, and about 300 words got no speaker; treat the labels as unreliable
+until more classes have been checked.
+
+For each lecture:
 
 1. If `transcripts/<lecture>.json` exists it is skipped. `--force` re-downloads
    the existing Sofer transcription; it never submits a new one.
+   `--resubmit` (paid) is for re-transcribing with new settings: it retitles
+   the Sofer transcription the committed file came from to
+   `<title> (superseded YYYY-MM-DD)` and archives it (the API has no delete;
+   archiving moves it out of the folder to the root, where neither the
+   folder nor the account dedup sees it), then carries on with step 2 as if
+   there were no file.
 2. The Sofer folder path that mirrors the catalog tree is found or created,
    one level at a time, matching existing folders by name (case-insensitively)
    under their parent. It is every heading the lecture sits under, at any depth
@@ -229,15 +261,77 @@ Select lectures with `--lecture <id>` (repeatable) and/or `--section <heading id
    pipeline never creates (it always submits with a `folder_id`). If neither
    can be fetched, nothing new is submitted, since a duplicate cannot be
    ruled out; rerun later, or pass `--allow-unlisted` if you are sure.
-4. Otherwise it checks the balance against an estimate, submits the catalog URL
-   (`audio_url`; the CDN serves direct mp3 links, so nothing is uploaded) with
-   `primary_language: en` and `hebrew_word_format: ["he"]` (Hebrew words in
-   Hebrew letters, which alignment needs), polls the status until `COMPLETED`, and
-   stores the raw `GET /v1/transcriptions/{id}` response with its word-level
-   timestamps.
+4. Every lecture that passed dedup goes into a Sofer **standard-mode batch**,
+   one per series (at most 500 items): the manifest (`json_items`, each with
+   the catalog `audio_url`, its title, `client_item_id` = lecture ID and the
+   series' speaker setting) is uploaded with `POST
+   /v1/transcriptions/batch-files` and validated, the balance is checked
+   against the estimate for the whole run, and `POST /v1/transcriptions/batch`
+   (`processing_mode: "standard"`, `info`: `model: v1`, `primary_language:
+   en`, `hebrew_word_format: ["he"]` (Hebrew words in Hebrew letters, which
+   alignment needs), `folder_id`) starts it. Sofer puts a whole batch in one
+   folder, so the batch goes to the items' deepest common folder and each
+   transcription is moved into its own folder when it completes. If any
+   selected lecture hit an error before this point, nothing is submitted, so
+   a batch is never partial; fix it and rerun.
+5. The run polls `GET /v1/transcriptions/batch/{id}/status` (every
+   `--poll-seconds`, default 60, for up to `--timeout-minutes`, default 120)
+   and stores each finished item's raw `GET /v1/transcriptions/{id}` response
+   with its word-level timestamps (and `speaker` per word when labelled).
 
-Cost is about $1.50 per audio hour (model `v1`). The stored file follows
-`schema/sources/sofer-transcript.schema.json`; one word per line keeps diffs readable.
+Standard mode costs $1.00 per audio hour with model `v1` (+$0.30 with speaker
+labeling) and promises results within 24 hours; two one-item batches (a 12
+and a 30 min class) took about 1 h 35 min (October 2026). `--single` submits files one at a time
+with `POST /v1/transcriptions/` instead ($1.50/h, minutes), the old path.
+
+**Resuming.** The batch is written to `tools/.cache/sofer-batches.json`
+(git-ignored; `--state` to move it) before the create call and again with
+its batch ID after it. Any later run, with or without arguments, first polls
+the batches in that file and stores what finished, and never resubmits a
+lecture that is in one. If a run died during the create call itself (no
+batch ID recorded), the entry is dropped with a warning and steps 3–4 decide:
+folder-listing dedup finds whatever the batch created. Create calls are never
+retried automatically; only free, idempotent writes (document updates,
+manifest uploads) are retried after HTTP 429 (some endpoints allow 5
+requests a minute). Exit status: 0 done, 1 errors, 3 still waiting.
+
+The stored file follows `schema/sources/sofer-transcript.schema.json`; one
+word per line keeps diffs readable.
+
+### `yarn outline`
+
+`POST /v1/timestamps/outline` asks Sofer for an LLM-generated topic outline of
+a finished transcription, each topic aligned to a start time.
+`yarn outline` fetches it for every selected lecture with a stored transcript
+(`--lecture`, `--section`, `--limit`; default all) and writes
+`outlines/<lecture>.json`
+(`schema/sources/sofer-outline.schema.json`):
+
+```json
+{
+  "schemaVersion": 1,
+  "lectureId": "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1f129292-…",
+  "transcript": "transcripts/07%20-%20Chap-….mp3.json",
+  "fetchedAt": "2026-10-28T17:32:16.829Z",
+  "request": { "monotone": true, "conclusion_bias": false },
+  "topics": [
+    {"title": "…", "starting_phrase": "…", "start_time_sec": 86.79, "matched_text": "", "score_norm": 1, "confidence": "HIGH", …}
+  ]
+}
+```
+
+`topics` is Sofer's raw response, one topic per line. It is idempotent: a
+lecture whose outline was made from its current transcription is skipped
+(`--force` refetches); one made from an older transcription (after
+`yarn transcribe --resubmit`) is refetched, and until then the build fails on
+the stale outline. `monotone: true` because a class runs through the text in
+order; `conclusion_bias` stays off because it sends any topic titled
+"conclusion" to the last third of the audio, while a class can conclude an
+argument anywhere. The docs give no price; the tool reads the balance around
+every call and stops if one costs more than `--max-cents-per-call` (default
+10). So far it has cost nothing.
 
 ### `yarn align`
 

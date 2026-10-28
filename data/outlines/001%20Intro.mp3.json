@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "001 Intro.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7e151e9d-84f1-4d12-9b24-8cb1a8b2e2d4",
+  "transcript": "transcripts/001%20Intro.mp3.json",
+  "fetchedAt": "2026-10-28T19:07:10.266Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introduction to the Series and Book","starting_phrase":"Our series is based on the שער היחוד, the Gate of Unification","start_time_sec":1.019999999999999,"matched_text":"Our series is based on the שער היחוד, the Gate of Unification","score_norm":0.951,"confidence":"HIGH","token_span":[0,12],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"What is תבוננות? Not Meditation","starting_phrase":"In the first part of שער היחוד, of the Book","start_time_sec":95.68,"matched_text":"first part of שער היחוד, of the Book","score_norm":0.954,"confidence":"HIGH","token_span":[156,164],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Mastery Requires Detailed Analytical Study","starting_phrase":"So, he explains also further that in order","start_time_sec":163.08,"matched_text":"explains also further that in order","score_norm":0.961,"confidence":"HIGH","token_span":[282,288],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Why Study Kabbalah for Godliness","starting_phrase":"He goes on to explain that in the subject matter of קבלה","start_time_sec":259.86,"matched_text":"goes on to explain that in the subject matter of קבלה","score_norm":0.91,"confidence":"HIGH","token_span":[506,517],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Method: Concentration and World Chaining","starting_phrase":"And And And in order to do it properly, it has to be","start_time_sec":350.78,"matched_text":"order to do it properly, it has","score_norm":0.943,"confidence":"HIGH","token_span":[695,702],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Framework of Creation and Light Diminishment","starting_phrase":"And now for an introduction of the general framework of the קבלה","start_time_sec":530.18,"matched_text":"introduction of the general framework of the קבלה,","score_norm":0.928,"confidence":"HIGH","token_span":[1047,1055],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}
