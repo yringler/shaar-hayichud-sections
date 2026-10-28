@@ -1,0 +1,49 @@
+{{- /* What audio data the data build published (data/dist/v1, mounted as
+       assets/data/v1). Call with partialCached "audio/index.html" . "audio".
+       Returns dict
+         "transcripts": lecture id -> dict "slug" "url" (transcript page) "path" (asset path)
+         "chapters":    chapter key -> asset path of its chapter alignment index
+         "aligned":     lecture id -> dict "chapter" (key) "url" (English chapter page)
+         "outlines":    lecture id -> asset path of its topic outline
+       Transcript page URLs are /classes/transcripts/<slug>/, the slug derived
+       from the catalog lecture id alone (lowercase, extension dropped, every
+       run of other characters -> "-"), so it never changes once published.
+       Two ids with the same slug fail the build. */ -}}
+{{- $tIndex := resources.Get "data/v1/transcripts/index.json" -}}
+{{- $cIndex := resources.Get "data/v1/alignments/chapters/index.json" -}}
+{{- if or (not $tIndex) (not $cIndex) -}}
+  {{- errorf "audio indexes missing under data/dist/v1: run the data build first (yarn build / yarn data in site/)" -}}
+{{- end -}}
+{{- $s := newScratch -}}
+{{- $s.Set "transcripts" dict -}}
+{{- $s.Set "chapters" dict -}}
+{{- $s.Set "aligned" dict -}}
+{{- $s.Set "outlines" dict -}}
+{{- with resources.Get "data/v1/outlines/index.json" -}}
+  {{- range (. | transform.Unmarshal).items -}}
+    {{- $s.SetInMap "outlines" .id (printf "data/v1/outlines/%s.json" .id) -}}
+  {{- end -}}
+{{- end -}}
+{{- $slugs := newScratch -}}
+{{- range ($tIndex | transform.Unmarshal).items -}}
+  {{- $id := .id -}}
+  {{- $slug := .id | lower | replaceRE `\.(mp3|m4a)$` "" | replaceRE `[^a-z0-9]+` "-" -}}
+  {{- $slug = strings.Trim $slug "-" -}}
+  {{- if not $slug -}}{{- errorf "transcript page: lecture id %q gives an empty slug" .id -}}{{- end -}}
+  {{- with $slugs.Get $slug -}}
+    {{- errorf "transcript page: lecture ids %q and %q both give the slug %q" . $id $slug -}}
+  {{- end -}}
+  {{- $slugs.Set $slug .id -}}
+  {{- /* Index paths are URL paths (encoded); the files have the decoded name: the id. */ -}}
+  {{- $s.SetInMap "transcripts" .id (dict "slug" $slug "url" (printf "/classes/transcripts/%s/" $slug) "path" (printf "data/v1/transcripts/%s.json" .id)) -}}
+{{- end -}}
+{{- range ($cIndex | transform.Unmarshal).items -}}
+  {{- $key := .id -}}
+  {{- $path := printf "data/v1/%s" .path -}}
+  {{- $s.SetInMap "chapters" $key $path -}}
+  {{- $chapterUrl := printf "/texts/chapter-%s/" (replaceRE `^chapter_0*` "" $key) -}}
+  {{- range (resources.Get $path | transform.Unmarshal).lectures -}}
+    {{- $s.SetInMap "aligned" .id (dict "chapter" $key "url" $chapterUrl) -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "transcripts" ($s.Get "transcripts") "chapters" ($s.Get "chapters") "aligned" ($s.Get "aligned") "outlines" ($s.Get "outlines") -}}

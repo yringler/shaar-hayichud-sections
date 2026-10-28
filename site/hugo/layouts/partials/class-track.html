@@ -1,5 +1,17 @@
-{{- /* One lecture from the catalog: audio player (canonical url) + title. */ -}}
+{{- /* One lecture from the catalog: audio player (canonical url) + title,
+       plus links to its transcript page and the chapter it is aligned to,
+       when those are published. */ -}}
+{{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $transcript := index $audio.transcripts .id -}}
+{{- $aligned := index $audio.aligned .id -}}
 <div class="track">
   <audio controls preload="none" src="{{ .url }}"></audio>
-  <p class="track-title">{{ .title }}</p>
+  <p class="track-title">{{ .title }}
+    {{- if or $transcript $aligned }}
+    <span class="track-links">
+      {{- with $aligned }}<a href="{{ .url }}">Follow in the text</a>{{ end -}}
+      {{- with $transcript }}<a href="{{ .url }}">Transcript</a>{{ end -}}
+    </span>
+    {{- end -}}
+  </p>
 </div>

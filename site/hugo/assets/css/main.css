@@ -289,3 +289,312 @@ section + section {
   padding-block-start: 2rem;
   border-block-start: 1px solid #e8e4df;
 }
+
+/* ── Audio: class player, play-from-here, Listen along ──
+   Lines and chapters without published alignments are untouched: every rule
+   below targets the player panel, the transcript page, or classes that
+   play.js / follow.js add (has-audio, line-play, is-discussing). */
+[hidden] { display: none !important; }
+
+.listen {
+  direction: ltr;
+  text-align: start;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  background: #fff;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-block: 0 1.5rem;
+}
+
+/* Once playback starts the player stays in view while reading. */
+.listen.is-active {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 2px 10px rgba(26, 26, 46, 0.08);
+}
+
+.listen-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-block-end: 0.5rem;
+}
+
+.listen-static {
+  margin: 0;
+  color: #5a5a78;
+}
+
+.listen-pick {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+.listen-pick-label { color: #7a7a98; }
+
+.listen-pick select {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid #ddd8d2;
+  border-radius: 6px;
+  background: #faf9f7;
+  color: #1a1a2e;
+}
+
+.listen-along {
+  font: inherit;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid #c08a2e;
+  background: #fff;
+  color: #7a5212;
+  cursor: pointer;
+}
+
+.listen-along[aria-pressed="true"] {
+  background: #c08a2e;
+  color: #fff;
+}
+
+.listen a.listen-transcript { color: #3d5a80; }
+
+.listen audio {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.listen-note {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: #7a5212;
+}
+
+.listen-now {
+  margin: 0.4rem 0 0;
+  font-weight: 600;
+  color: #2d2d4a;
+}
+
+.listen-topics {
+  margin-block-start: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.listen-topics summary { cursor: pointer; color: #4a4a68; }
+
+.auto-generated { color: #9a9ab0; font-weight: 400; }
+
+.listen-topics ol {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  max-block-size: 30vh;
+  overflow-y: auto;
+}
+
+.listen-topics button {
+  display: flex;
+  gap: 0.6rem;
+  inline-size: 100%;
+  text-align: start;
+  font: inherit;
+  padding: 0.3rem 0.4rem;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: #1a1a2e;
+  cursor: pointer;
+}
+
+.listen-topics button:hover { background: #f5efe3; }
+.listen-topics li[aria-current] button { background: #f5efe3; font-weight: 600; }
+
+.listen-topic-time,
+.topic-time {
+  color: #7a7a98;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.transcript h2.topic {
+  font-size: 1.1rem;
+  margin-block: 1.75rem 0.75rem;
+}
+
+.topic-time { font-size: 0.8rem; margin-inline-start: 0.4rem; }
+
+.listen-hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: #7a7a98;
+}
+
+/* Per-line play button (added by play.js). No text content, so copying the
+   chapter text is unchanged. The icon always points right. */
+.line-play,
+.line-play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 1.35em;
+  block-size: 1.35em;
+  padding: 0;
+  margin-inline-end: 0.3em;
+  vertical-align: 0.05em;
+  border: 1px solid #d9c49c;
+  border-radius: 50%;
+  background: #fffaf0;
+  color: #a06f1c;
+  font-size: 0.7em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.line-play::before,
+.line-play-icon::before {
+  content: "";
+  inline-size: 0.55em;
+  block-size: 0.65em;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  margin-left: 0.12em;
+}
+
+.line-play.has-choices { border-style: double; border-width: 3px; }
+
+.line-play:hover,
+.line-play:focus-visible {
+  background: #c08a2e;
+  color: #fff;
+}
+
+.line-play:focus-visible,
+.listen-along:focus-visible,
+.line-chooser-item:focus-visible {
+  outline: 2px solid #3d5a80;
+  outline-offset: 2px;
+}
+
+/* While Listen along is on, the aligned lines are clickable too. */
+.is-listening-along .line.has-audio { cursor: pointer; }
+
+.line,
+.tseg {
+  scroll-margin-block-start: calc(var(--listen-h, 0px) + 1rem);
+}
+
+/* The line under discussion: a side border on its block (the <p> of a
+   multi-line section, or the section's .content), and on transcript
+   paragraphs. The border width is taken out of the padding, so text does
+   not move. */
+p:has(> .line.is-discussing),
+.content:has(> .line.is-discussing),
+.tseg.is-discussing {
+  border-inline-start: 3px solid #c08a2e;
+  padding-inline-start: calc(0.6em - 3px);
+  margin-inline-start: -0.6em;
+}
+
+/* Several classes discuss the line: choose one. */
+.line-chooser {
+  position: absolute;
+  z-index: 10;
+  display: grid;
+  min-inline-size: 14rem;
+  max-inline-size: calc(100vw - 16px);
+  padding: 0.25rem;
+  background: #fff;
+  border: 1px solid #d4cfc8;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.15);
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.line-chooser-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: start;
+  font: inherit;
+  padding: 0.5rem 0.6rem;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: #1a1a2e;
+  cursor: pointer;
+}
+
+.line-chooser-item:hover,
+.line-chooser-item:focus { background: #f5efe3; }
+
+.line-chooser-time {
+  color: #7a7a98;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Transcript pages ── */
+.transcript-page h1 .h1-context {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: #7a7a98;
+}
+
+.transcript-about {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: #5a5a78;
+}
+
+.transcript { max-width: 40rem; }
+
+.tseg { margin-block: 0 1em; }
+
+.tseg-speaker {
+  display: block;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7a7a98;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Everyone except the transcript's main speaker is indented. */
+.tseg.is-other-speaker { padding-inline-start: 1.5em; color: #4a4a68; }
+.tseg.is-other-speaker.is-discussing { padding-inline-start: calc(2.1em - 3px); }
+
+.is-following .tseg { cursor: pointer; }
+
+.track-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-inline-start: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.index-context {
+  display: block;
+  font-size: 0.8rem;
+  color: #7a7a98;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .listen { padding: 0.6rem 0.75rem; }
+  .listen-hint { display: none; }
+}

@@ -1,0 +1,31 @@
+{{- /* Every catalog lecture by id, with its place in the catalog:
+       dict "lecture" (catalog lecture) "series" (series section) "seriesSlug"
+       "part" (the series' child section it is under, or nil) "partUrl"
+       "headings" (titles between the series and the lecture).
+       Call with partialCached "audio/lectures.html" . "lectures". */ -}}
+{{- $catalog := partial "catalog.html" . -}}
+{{- /* Scratch, not merge: merge would lowercase the (case-sensitive) ids. */ -}}
+{{- $out := newScratch -}}
+{{- range $series := $catalog.series -}}
+  {{- $seriesSlug := $series.title | urlize -}}
+  {{- $seriesUrl := printf "/classes/%s/" $seriesSlug -}}
+  {{- range $a := $series.items -}}
+    {{- if eq $a.type "lecture" -}}
+      {{- $out.SetInMap "m" $a.id (dict "lecture" $a "series" $series "seriesUrl" $seriesUrl "part" nil "partUrl" $seriesUrl "headings" slice) -}}
+    {{- else -}}
+      {{- $partUrl := printf "/classes/%s/%s/" $seriesSlug ($a.title | urlize) -}}
+      {{- range $b := $a.items -}}
+        {{- if eq $b.type "lecture" -}}
+          {{- $out.SetInMap "m" $b.id (dict "lecture" $b "series" $series "seriesUrl" $seriesUrl "part" $a "partUrl" $partUrl "headings" (slice $a.title)) -}}
+        {{- else -}}
+          {{- range $c := $b.items -}}
+            {{- if eq $c.type "lecture" -}}
+              {{- $out.SetInMap "m" $c.id (dict "lecture" $c "series" $series "seriesUrl" $seriesUrl "part" $a "partUrl" $partUrl "headings" (slice $a.title $b.title)) -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($out.Get "m") | default dict -}}

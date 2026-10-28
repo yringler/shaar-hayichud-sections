@@ -41,7 +41,18 @@ title = "Shaar Hayichud"
   source = "../../data/dist/v1/catalog.json"
   target = "data/v1/catalog.json"
 
+# The same generated files as assets, so templates can read the audio
+# alignments and transcripts (resources.Get "data/v1/..." | transform.Unmarshal).
+# Assets are only published when a template asks for their URL.
+[[module.mounts]]
+  source = "../../data/dist/v1"
+  target = "assets/data/v1"
+
 # Keep default mounts for other dirs
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
 [[module.mounts]]
   source = "content"
   target = "content"

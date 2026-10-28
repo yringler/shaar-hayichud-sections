@@ -1,0 +1,66 @@
+{{- /* Transcript page body. Context: the catalog lecture id.
+       Paragraphs carry data-start / data-end (seconds); with follow.js loaded
+       (Listen along), clicking one seeks there and the current one gets the
+       is-discussing side border. */ -}}
+{{- $id := . -}}
+{{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
+{{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
+{{- $info := index $lectures $id -}}
+{{- $t := index $audio.transcripts $id -}}
+{{- $data := resources.Get $t.path | transform.Unmarshal -}}
+{{- $l := $info.lecture -}}
+<div class="ltr-content transcript-page">
+  <p class="breadcrumb">
+    <a href="/classes/">Classes</a> →
+    <a href="{{ $info.seriesUrl }}">{{ $info.series.title }}</a>
+    {{- with $info.part }} → <a href="{{ $info.partUrl }}">{{ .title }}</a>{{ end }}
+  </p>
+  <h1>{{ $l.title }}{{ with $info.headings }}{{ $last := index . (sub (len .) 1) }}{{ if ne $last $l.title }} <span class="h1-context">· {{ $last }}</span>{{ end }}{{ end }}</h1>
+  <p class="transcript-about">{{ $info.series.title }}.
+    {{- with index $audio.aligned $id }} <a href="{{ .url }}">Follow it in the text of {{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>.{{ end }}
+    Machine transcription (Sofer.ai): expect mistakes, especially in Hebrew terms.
+    {{- with index $audio.outlines $id }} Topic headings are auto-generated.{{ end }}</p>
+
+  <section class="listen" data-listen aria-label="Class recording" data-follow-src="{{ $scripts.follow.RelPermalink }}">
+    <div class="listen-controls">
+      <button type="button" class="listen-along" data-listen-along data-js-only hidden aria-pressed="false">Listen along</button>
+    </div>
+    <audio controls preload="none" src="{{ $l.url }}" data-listen-audio></audio>
+  </section>
+
+  {{- /* Speaker labels (Sofer diarization), when present: a label wherever the
+         speaker changes, and paragraphs by anyone but the main speaker (the
+         one with the most text) are indented. Without labels (speaker absent):
+         plain paragraphs. */ -}}
+  {{- $count := newScratch -}}
+  {{- range $seg := $data.segments }}{{ with $seg.speaker }}{{ $count.Add . (len $seg.text) }}{{ end }}{{ end -}}
+  {{- $main := "" -}}{{- $best := -1 -}}
+  {{- range $data.segments -}}
+    {{- with .speaker -}}{{- if gt ($count.Get .) $best -}}{{- $best = $count.Get . -}}{{- $main = . -}}{{- end -}}{{- end -}}
+  {{- end -}}
+  {{- $prev := "" -}}
+  {{- /* Auto-generated topics (outline.schema.json) as headings: a topic goes
+         before the first paragraph that starts no more than 5 s before it
+         (the last paragraph takes any later ones). */ -}}
+  {{- $topics := slice -}}
+  {{- with index $audio.outlines $id }}{{ $topics = (resources.Get . | transform.Unmarshal).topics }}{{ end -}}
+  {{- $n := len $data.segments -}}
+  <div class="transcript" data-transcript lang="en">
+    {{- range $i, $seg := $data.segments }}
+    {{- $lo := -1000000.0 }}{{ if $i }}{{ $lo = (index $data.segments (sub $i 1)).startSeconds }}{{ end }}
+    {{- range $topics }}
+      {{- $k := sub .startSeconds 5 }}
+      {{- if and (gt $k $lo) (or (eq $i (sub $n 1)) (le $k $seg.startSeconds)) }}
+    <h2 class="topic" data-topic-start="{{ .startSeconds }}">{{ .title }} <span class="topic-time">{{ printf "%d:%02d" (div (int .startSeconds) 60) (mod (int .startSeconds) 60) }}</span></h2>
+      {{- end }}
+    {{- end }}
+    {{- $sp := $seg.speaker | default "" }}
+    <p class="tseg{{ if and $sp (ne $sp $main) }} is-other-speaker{{ end }}" id="t{{ $i }}" data-start="{{ $seg.startSeconds }}" data-end="{{ $seg.endSeconds }}"{{ with $sp }} data-speaker="{{ . }}"{{ end }}>
+      {{- if and $sp (ne $sp $prev) }}<span class="tseg-speaker">{{ $sp }}</span>{{ end -}}
+      {{ $seg.text }}</p>
+    {{- $prev = $sp }}
+    {{- end }}
+  </div>
+</div>
+<script type="module" src="{{ $scripts.play.RelPermalink }}" integrity="{{ $scripts.play.Data.Integrity }}" crossorigin="anonymous"></script>
