@@ -1,0 +1,57 @@
+{{- /* Class player for a chapter page. Context: dict "data" (the chapter
+       alignment index, chapter-alignments.schema.json) "path" (its asset path).
+       Without JavaScript: a plain player for the first class. With play.js: the
+       teacher (series) and class selectors, Listen along, and per-line play
+       buttons. The series choice is saved (localStorage) across chapters. */ -}}
+{{- $d := .data -}}
+{{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
+{{- $first := index $d.lectures 0 -}}
+<section class="listen" data-listen dir="ltr" aria-label="Classes on this chapter"
+  data-chapter-alignments="/{{ .path }}"
+  data-follow-src="{{ $scripts.follow.RelPermalink }}">
+  <div class="listen-controls">
+    <p class="listen-static" data-no-js>{{ $first.series }}: {{ $first.title }}</p>
+    {{- $groups := slice -}}
+    {{- range $d.lectures }}{{ if not (in $groups .seriesId) }}{{ $groups = $groups | append .seriesId }}{{ end }}{{ end }}
+    <label class="listen-pick" data-js-only hidden>
+      <span class="listen-pick-label">Teacher</span>
+      <select data-listen-series autocomplete="off">
+        {{- range $sid := $groups }}
+        <option value="{{ $sid }}">{{ (index (where $d.lectures "seriesId" $sid) 0).series }}</option>
+        {{- end }}
+      </select>
+    </label>
+    <label class="listen-pick" data-js-only hidden>
+      <span class="listen-pick-label">Class</span>
+      <select data-listen-select autocomplete="off">
+        {{- range $sid := $groups -}}
+          {{- $inGroup := where $d.lectures "seriesId" $sid -}}
+          <optgroup label="{{ (index $inGroup 0).series }}">
+          {{- range $i, $l := $d.lectures -}}
+            {{- if eq $l.seriesId $sid -}}
+              {{- $t := index $audio.transcripts $l.id -}}
+              <option value="{{ $i }}" data-series="{{ $l.seriesId }}" data-url="{{ $l.url }}"{{ with $t }} data-transcript="{{ .url }}"{{ end }}{{ if eq $i 0 }} selected{{ end }}>{{ $l.title }}</option>
+            {{- end -}}
+          {{- end -}}
+          </optgroup>
+        {{- end -}}
+      </select>
+    </label>
+    <button type="button" class="listen-along" data-listen-along data-js-only hidden aria-pressed="false">Listen along</button>
+    {{- with index $audio.transcripts $first.id }}
+    <a class="listen-transcript" data-listen-transcript href="{{ .url }}">Transcript</a>
+    {{- else }}
+    <a class="listen-transcript" data-listen-transcript hidden href="">Transcript</a>
+    {{- end }}
+  </div>
+  <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
+  <p class="listen-note" data-listen-note role="status" hidden></p>
+  <p class="listen-now" data-listen-now aria-live="polite" hidden></p>
+  <details class="listen-topics" data-listen-topics hidden>
+    <summary>Topics in this class <span class="auto-generated">(auto-generated)</span></summary>
+    <ol></ol>
+  </details>
+  <p class="listen-hint" data-js-only hidden>Lines with <span class="line-play-icon" aria-hidden="true"></span> are discussed in a class: press it to play from there.</p>
+</section>
+<script type="module" src="{{ $scripts.play.RelPermalink }}" integrity="{{ $scripts.play.Data.Integrity }}" crossorigin="anonymous"></script>

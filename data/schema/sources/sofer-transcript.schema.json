@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/sources/sofer-transcript.schema.json",
+  "title": "Stored Sofer.ai transcript (source file, not published)",
+  "description": "data/transcripts/<encoded lecture id>.json, written by `yarn transcribe`. `result` is the raw GET /v1/transcriptions/{id} response from Sofer.ai, kept verbatim so alignments can be recomputed without paying for a new transcription.",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "audioUrl", "provider", "sofer", "result"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "audioUrl": { "description": "Catalog URL that was submitted.", "type": "string", "minLength": 1 },
+    "provider": { "const": "sofer.ai" },
+    "sofer": {
+      "type": "object",
+      "required": ["transcriptionId", "title", "folderPath", "request"],
+      "additionalProperties": false,
+      "properties": {
+        "transcriptionId": { "type": "string", "minLength": 1 },
+        "title": { "description": "Title on Sofer; ends with \"[<lecture id>]\".", "type": "string", "minLength": 1 },
+        "folderPath": { "description": "Sofer folder names from the root; mirror the catalog headings.", "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "request": { "description": "The `info` object sent with the create request.", "type": "object" }
+      }
+    },
+    "result": {
+      "type": "object",
+      "required": ["text", "info"],
+      "properties": {
+        "text": { "type": "string" },
+        "info": { "type": "object" },
+        "timestamps": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["word", "start", "end"],
+            "properties": {
+              "word": { "type": "string" },
+              "start": { "type": "number", "minimum": 0 },
+              "end": { "type": "number", "minimum": 0 },
+              "hebrew_word_format": { "type": ["array", "null"], "items": { "type": "string" } },
+              "speaker": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,4 +17,26 @@
       {{ end }}
     {{ end }}
   </ul>
+
+  {{- /* Transcribed classes that teach no chapter text (introductions, Q and A,
+         addenda): their transcript pages. */ -}}
+  {{ if eq $lang "en" }}
+    {{ $audio := partialCached "audio/index.html" . "audio" }}
+    {{ $lectures := partialCached "audio/lectures.html" . "lectures" }}
+    {{ $items := slice }}
+    {{ range $id, $t := $audio.transcripts }}
+      {{ if not (resources.Get $t.path | transform.Unmarshal).chapter }}
+        {{ $info := index $lectures $id }}
+        {{ $items = $items | append (dict "url" $t.url "title" $info.lecture.title "series" $info.series.title "headings" $info.headings "order" (printf "%s/%s" $info.series.title $id)) }}
+      {{ end }}
+    {{ end }}
+    {{ with $items }}
+    <h2>Classes without text</h2>
+    <ul class="index-list">
+      {{ range sort . "order" }}
+      <li><a href="{{ .url }}">{{ .title }} <small class="index-context">{{ .series }}{{ range .headings }} · {{ . }}{{ end }} · transcript</small></a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  {{ end }}
 {{ end }}

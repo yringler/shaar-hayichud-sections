@@ -155,7 +155,7 @@ void main() {
     });
   });
 
-  group('reserved shapes', () {
+  group('audio shapes', () {
     test('alignment', () {
       final json = {
         'schemaVersion': 1,
@@ -184,6 +184,56 @@ void main() {
         ],
       };
       expect(parseTranscript(jsonEncode(json)).toJson(), equals(json));
+    });
+
+    test('outline', () {
+      final json = {
+        'schemaVersion': 1,
+        'lectureId': 'a.mp3',
+        'generatedBy': 'sofer.ai',
+        'topics': [
+          {'title': 'Intro', 'startSeconds': 3, 'confidence': 'HIGH'},
+        ],
+      };
+      final o = parseOutline(jsonEncode(json));
+      expect(o.topics.single.title, 'Intro');
+      expect(o.toJson(), equals(json));
+    });
+
+    test('chapter alignments', () {
+      final json = {
+        'schemaVersion': 1,
+        'chapter': 'chapter_10',
+        'lectures': [
+          {
+            'id': 'a.mp3',
+            'url': 'https://media.example/a.mp3',
+            'title': 'Part 1',
+            'seriesId': '0',
+            'series': 'S',
+            'part': 'Chapter 10',
+            'durationSeconds': null,
+            'alignment': 'alignments/a.mp3.json',
+          },
+        ],
+        'lines': [
+          {
+            'lineId': 'abcdefgh',
+            'refs': [
+              {
+                'lecture': 0,
+                'startSeconds': 1,
+                'endSeconds': 2,
+                'confidence': 0.9,
+              },
+            ],
+          },
+        ],
+      };
+      final c = parseChapterAlignments(jsonEncode(json));
+      expect(c.lines.single.refs.single.confidence, 0.9);
+      expect(c.lectures.single.transcript, isNull);
+      expect(c.toJson(), equals(json));
     });
   });
 }

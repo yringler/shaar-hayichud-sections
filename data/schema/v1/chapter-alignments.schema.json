@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/chapter-alignments.schema.json",
+  "title": "Classes aligned to one chapter (v1)",
+  "description": "One file per chapter that has published alignments (/data/v1/alignments/chapters/chapter_NN.json, listed in alignments/chapters/index.json): every published class that discusses the chapter, and for each aligned line the time ranges in those classes. Derived from the per-lecture alignment files. Within v1, fields are only added.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "chapter",
+    "lectures",
+    "lines"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "chapter": {
+      "description": "Chapter file key, e.g. 'chapter_10'.",
+      "type": "string",
+      "pattern": "^chapter_\\d+$"
+    },
+    "lectures": {
+      "description": "Classes in catalog order. `lines[].refs[].lecture` indexes this array.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lecture"
+      }
+    },
+    "lines": {
+      "description": "Aligned lines in document order. Lines with no published alignment are absent.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/line"
+      }
+    }
+  },
+  "$defs": {
+    "lecture": {
+      "type": "object",
+      "required": [
+        "id",
+        "url",
+        "title",
+        "seriesId",
+        "series",
+        "part",
+        "durationSeconds",
+        "alignment"
+      ],
+      "properties": {
+        "id": {
+          "description": "Catalog lecture id.",
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "description": "The lecture's canonical audio URL (catalog `url`).",
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "description": "Catalog title, e.g. 'Part 1'.",
+          "type": "string"
+        },
+        "seriesId": {
+          "description": "Catalog id of the series (top-level section).",
+          "type": "string"
+        },
+        "series": {
+          "description": "Series title.",
+          "type": "string"
+        },
+        "part": {
+          "description": "Titles of the headings between the series and the lecture, joined with ' / '.",
+          "type": "string"
+        },
+        "durationSeconds": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "alignment": {
+          "description": "Path of the lecture's alignment file, relative to /data/v1/.",
+          "type": "string"
+        },
+        "transcript": {
+          "description": "Path of the lecture's transcript file, relative to /data/v1/, when one is published.",
+          "type": "string"
+        },
+        "outline": {
+          "description": "Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.",
+          "type": "string"
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "required": [
+        "lineId",
+        "refs"
+      ],
+      "properties": {
+        "lineId": {
+          "description": "Chapter line id.",
+          "type": "string",
+          "pattern": "^[a-z2-7]{8}$"
+        },
+        "refs": {
+          "description": "Where the line is discussed: highest confidence first, then catalog order.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ref"
+          }
+        }
+      }
+    },
+    "ref": {
+      "type": "object",
+      "required": [
+        "lecture",
+        "startSeconds",
+        "endSeconds",
+        "confidence"
+      ],
+      "properties": {
+        "lecture": {
+          "description": "Index into `lectures`.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "startSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "endSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  }
+}

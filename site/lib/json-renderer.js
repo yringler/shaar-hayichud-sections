@@ -62,14 +62,16 @@ function isLine(node) {
  *
  * @param {Array<{id: string, text: string}>} lines
  * @param {boolean} lineIds - whether to emit id attributes
+ * @param {Record<string, number>} lineTimes - line id -> data-t seconds
  * @returns {string}
  */
-function renderLines(lines, lineIds) {
+function renderLines(lines, lineIds, lineTimes) {
   const spans = lines.map((line) => {
     // Strip footnote digit markers (mirrors the Hugo partial: replaceRE `\d+` "").
     const text = line.text.replace(/\d+/g, "").replace(/\s+/g, " ").trim();
     const id = lineIds ? ` id="${escapeHtml(line.id).replace(/"/g, "&quot;")}"` : "";
-    return `<span class="line"${id}>${escapeHtml(text)}</span>`;
+    const t = Object.prototype.hasOwnProperty.call(lineTimes, line.id) ? ` data-t="${Number(lineTimes[line.id])}"` : "";
+    return `<span class="line"${id}${t}>${escapeHtml(text)}</span>`;
   });
   return spans.length > 1 ? spans.map((s) => `<p>${s}</p>`).join("") : spans.join("");
 }
@@ -80,7 +82,7 @@ function renderLines(lines, lineIds) {
  * @param {Array<object>} nodes - mixed array of TextNode and Line objects
  * @param {number} depth - current nesting depth (1-based)
  * @param {string} prefix - dot-separated numbering prefix, e.g. "1.2"
- * @param {{showTranslations: boolean, lineIds: boolean}} opts
+ * @param {{showTranslations: boolean, lineIds: boolean, lineTimes: Record<string, number>}} opts
  * @returns {string} HTML fragment
  */
 function renderChildren(nodes, depth, prefix, opts) {
@@ -104,7 +106,7 @@ function renderChildren(nodes, depth, prefix, opts) {
         html += `<span class="number">${escapeHtml(number)}</span>`;
         if (label) html += ` ${escapeHtml(label)}`;
         html += `</div>`;
-        html += `<div class="content">${renderLines(lines, opts.lineIds)}</div>`;
+        html += `<div class="content">${renderLines(lines, opts.lineIds, opts.lineTimes)}</div>`;
         html += `</div>\n`;
       }
 
@@ -126,9 +128,10 @@ function renderChildren(nodes, depth, prefix, opts) {
  * @param {string} jsonContent - raw JSON source (array of TextNode objects)
  * @param {Record<string, unknown>} data - page data; translations are shown
  *   when data.locale.section === "translation"
- * @param {{lineIds?: boolean}} [options] - lineIds (default true): emit each
- *   line's id attribute. Line ids may start with a digit, which XHTML (EPUB)
- *   does not allow, so the EPUB builder turns them off.
+ * @param {{lineIds?: boolean, lineTimes?: Record<string, number>}} [options] -
+ *   lineIds (default true): emit each line's id attribute. Line ids may start
+ *   with a digit, which XHTML (EPUB) does not allow, so the EPUB builder turns
+ *   them off. lineTimes: line id -> seconds, emitted as data-t.
  * @returns {Promise<string>} HTML fragment ready for layout injection
  */
 async function renderJsonToHtml(jsonContent, data, options = {}) {
@@ -144,6 +147,7 @@ async function renderJsonToHtml(jsonContent, data, options = {}) {
   const opts = {
     showTranslations: data?.locale?.section === "translation",
     lineIds: options.lineIds ?? true,
+    lineTimes: options.lineTimes ?? {},
   };
   return renderChildren(nodes, 1, "", opts);
 }

@@ -47,3 +47,28 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
+
+{{- /* One page per published transcript at /classes/transcripts/<slug>/,
+       the slug derived from the catalog lecture id (see partials/audio/index.html).
+       Rendered by layouts/classes/single.html (transcript.html partial). */ -}}
+{{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
+{{- range $series := $catalog.series -}}
+  {{- if eq ($series.title | urlize) "transcripts" -}}
+    {{- errorf "series %q would collide with /classes/transcripts/" $series.title -}}
+  {{- end -}}
+{{- end -}}
+{{- range $id, $t := $audio.transcripts -}}
+  {{- $info := index $lectures $id -}}
+  {{- $.AddPage (dict
+    "mediaType" "text/html"
+    "path" (printf "transcripts/%s" $t.slug)
+    "title" (printf "%s — %s (transcript)" $info.lecture.title $info.series.title)
+    "kind" "page"
+    "params" (dict
+      "pageLang" "en"
+      "dir" "ltr"
+      "transcriptOf" $id
+    )
+  ) -}}
+{{- end -}}

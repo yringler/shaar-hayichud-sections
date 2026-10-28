@@ -5,7 +5,9 @@
     "data": "cd ../data/tools && yarn install --immutable && yarn build-data",
     "build": "yarn data && cd hugo && hugo --minify",
     "serve": "yarn data && cd hugo && hugo serve",
-    "test": "node --test lib/json-renderer.test.js",
+    "test": "node --test lib/json-renderer.test.js lib/audio-model.test.mjs && yarn typecheck",
+    "test:e2e": "node scripts/e2e-audio.cjs",
+    "typecheck": "node ../data/tools/node_modules/typescript/bin/tsc -p hugo/assets/js",
     "test:scripts": "python3 -m unittest discover -s scripts",
     "epub": "node epub/build-epub.mjs"
   },

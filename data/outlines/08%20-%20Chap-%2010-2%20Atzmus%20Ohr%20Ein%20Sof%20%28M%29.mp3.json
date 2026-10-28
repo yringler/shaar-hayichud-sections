@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8bf1060d-545a-4fdc-931e-41d80dc66e7a",
+  "transcript": "transcripts/08%20-%20Chap-%2010-2%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T17:33:26.373Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing Chapter Ten and the Infinite Light","starting_phrase":"This, for this first section, this was an introduction of everything, this was introducing everything we're going to explain from now to the end of the book.","start_time_sec":3.7,"matched_text":"first section, this was an introduction of everything, this was introducing everything we're going to explain from now to the end of the book.","score_norm":0.928,"confidence":"HIGH","token_span":[3,27],"matched_content":12,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"The Concept of מאריך באחד (Elongating One)","starting_phrase":"And this is not just like some Chassidic trick. This is actually a thing על פי נגלה that you're supposed to do.","start_time_sec":192.86,"matched_text":"not just like some Chassidic trick. This is actually a thing על פי נגלה that you're supposed to do.","score_norm":0.936,"confidence":"HIGH","token_span":[475,494],"matched_content":10,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Three Levels of Unity: יחיד, אחד, קדמון","starting_phrase":"ונחלק לג' מדרגות דרך כלל, so the עצמות אין סוף before the צמצום, the simple unity is divided in general into three levels.","start_time_sec":378.62,"matched_text":"ונחלק לג' מדרגות דרך כלל, so the עצמות אין סוף before the צמצום, the simple unity is divided in general into three levels.","score_norm":0.975,"confidence":"HIGH","token_span":[1011,1034],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":5},
+    {"title":"Understanding יחיד vs אחד","starting_phrase":"What does יחיד imply? יחיד, single, implies that it's alone.","start_time_sec":477.02,"matched_text":"What does יחיד imply? יחיד, single, implies that it's alone.","score_norm":0.992,"confidence":"HIGH","token_span":[1248,1258],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Sefirot Within the Essence of the Infinite Light","starting_phrase":"We cannot say that there's an idea of ten ספירות at all in God's essence, in the עצמות.","start_time_sec":723.96,"matched_text":"cannot say that there's an idea of ten ספירות at all in God's essence, in the עצמות.","score_norm":0.947,"confidence":"HIGH","token_span":[1876,1893],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"How Diversity Emerges from Divine Simplicity","starting_phrase":"So this is the basic question of this chapter, is how can diversity come from simplicity?","start_time_sec":903.3,"matched_text":"basic question of this chapter, is how can diversity come from simplicity?","score_norm":0.976,"confidence":"HIGH","token_span":[2398,2410],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6}
+  ]
+}

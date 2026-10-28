@@ -13,11 +13,15 @@ Object? roundTrip(String path, String source) {
   final p = path.replaceAll(r'\', '/');
   if (p == 'catalog.json') return parseCatalog(source).toJson();
   if (p.endsWith('index.json')) return parseIndexListing(source).toJson();
+  if (p.startsWith('alignments/chapters/')) {
+    return parseChapterAlignments(source).toJson();
+  }
   if (RegExp(r'(^|/)chapter_\d+\.json$').hasMatch(p)) {
     return chapterToJson(parseChapter(source));
   }
   if (p.startsWith('alignments/')) return parseAlignment(source).toJson();
   if (p.startsWith('transcripts/')) return parseTranscript(source).toJson();
+  if (p.startsWith('outlines/')) return parseOutline(source).toJson();
   throw StateError('No model for published file $p');
 }
 
@@ -61,7 +65,10 @@ void main() {
         final listing = parseIndexListing(f.readAsStringSync());
         for (final item in listing.items) {
           expect(
-            File('${dist.path}/${item.path}').existsSync(),
+            // `path` is a URL path; the file has the decoded name.
+            File(
+              '${dist.path}/${item.path.split('/').map(Uri.decodeComponent).join('/')}',
+            ).existsSync(),
             isTrue,
             reason: '${rel(f, dist)} lists ${item.path}',
           );

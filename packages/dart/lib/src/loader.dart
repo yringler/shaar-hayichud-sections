@@ -13,10 +13,17 @@ Chapter parseChapter(String source) => chapterFromJson(_decode(source));
 IndexListing parseIndexListing(String source) =>
     IndexListing.fromJson(_decode(source));
 
-/// Parses an alignment file (reserved shape).
+/// Parses a per-lecture alignment file (`alignments/<lecture>.json`).
 Alignment parseAlignment(String source) => Alignment.fromJson(_decode(source));
 
-/// Parses a transcript file (reserved shape).
+/// Parses a per-chapter alignment index (`alignments/chapters/chapter_NN.json`).
+ChapterAlignments parseChapterAlignments(String source) =>
+    ChapterAlignments.fromJson(_decode(source));
+
+/// Parses a topic outline file (`outlines/<lecture>.json`).
+Outline parseOutline(String source) => Outline.fromJson(_decode(source));
+
+/// Parses a transcript file (`transcripts/<lecture>.json`).
 Transcript parseTranscript(String source) =>
     Transcript.fromJson(_decode(source));
 

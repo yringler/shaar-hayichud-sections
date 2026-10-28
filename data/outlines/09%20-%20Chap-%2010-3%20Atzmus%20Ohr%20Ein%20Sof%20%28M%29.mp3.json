@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "09 - Chap- 10-3 Atzmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "4fe26902-abf0-4f49-9c5a-cf1378dd2231",
+  "transcript": "transcripts/09%20-%20Chap-%2010-3%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T17:33:37.075Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Simple Light of Ein Sof and Upper Purity","starting_phrase":"והענין הוא, so what's the ענין? How","start_time_sec":0.9399999999999977,"matched_text":"והענין הוא, so what's the ענין? How","score_norm":0.972,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Upper vs Lower Purity and the Concept of יחיד","starting_phrase":"And then the lower purity, we're going to talk about later, that","start_time_sec":98.94,"matched_text":"lower purity, we're going to talk about later,","score_norm":0.99,"confidence":"HIGH","token_span":[236,244],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Understanding יחוד vs יחד and God's Unity Beyond Numbers","starting_phrase":"זהו אנת הוא חד ולא בחושבן יוד","start_time_sec":200.4,"matched_text":"אנת הוא חד ולא בחושבן יוד","score_norm":1,"confidence":"HIGH","token_span":[479,485],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"The Oil Metaphor: Essence Higher Than All Yet Permeates Everything","starting_phrase":"And this is the idea, like it explains in","start_time_sec":473.26,"matched_text":"idea, like it explains","score_norm":0.923,"confidence":"HIGH","token_span":[1239,1243],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Two‑Step Process: Separate the Essence then Reconnect to All Things","starting_phrase":"So you can find God's whole עצם in","start_time_sec":719.04,"matched_text":"can find God's whole עצם","score_norm":1,"confidence":"HIGH","token_span":[1935,1940],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Key Chapters 10‑13: Essence, Revelation, and the Concept of צמצום","starting_phrase":"Now we're going to explain this in general","start_time_sec":824.64,"matched_text":"we're going to explain this in general","score_norm":0.947,"confidence":"HIGH","token_span":[2197,2204],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

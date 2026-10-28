@@ -12,6 +12,8 @@ export const SCHEMA_FILES = {
   chapter: 'chapter.schema.json',
   alignment: 'alignment.schema.json',
   transcript: 'transcript.schema.json',
+  chapterAlignments: 'chapter-alignments.schema.json',
+  outline: 'outline.schema.json',
   index: 'index.schema.json',
 } as const;
 

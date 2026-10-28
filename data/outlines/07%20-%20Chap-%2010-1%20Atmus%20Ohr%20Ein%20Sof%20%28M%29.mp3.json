@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1f129292-d0b8-43bc-bfaa-13979961ebe4",
+  "transcript": "transcripts/07%20-%20Chap-%2010-1%20Atmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T17:32:16.829Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Review of earlier chapters and purpose","starting_phrase":"Chapter 10, פרק י'. ומעתה, and now, now that we explained","start_time_sec":0,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Need for systematic explanation of the השתלשלות","starting_phrase":"But as the מיטעלער רבי pointed out in chapter 5, at the beginning of chapter 5","start_time_sec":86.7940054495913,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Lights versus vessels and their interrelation","starting_phrase":"So that means we have to understand the difference between the lights and the vessels","start_time_sec":175.36,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Crown unites the ten sephirot of each world","starting_phrase":"We also need to understand how the ten ספירות of each world are united and included in the כתר of each world","start_time_sec":282.72,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Crown as intermediary and the chain concept","starting_phrase":"The כתר of each world is the intermediary between an upper and a lower world","start_time_sec":370.82,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

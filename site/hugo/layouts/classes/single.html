@@ -1,4 +1,7 @@
 {{ define "main" }}
+  {{ with .Params.transcriptOf }}
+    {{ partial "audio/transcript.html" . }}
+  {{ else }}
   {{ $catalog := partial "catalog.html" . }}
   <div class="ltr-content">
     {{ $series := index $catalog.series .Params.seriesIndex }}
@@ -26,4 +29,5 @@
       {{ end }}
     {{ end }}
   </div>
+  {{ end }}
 {{ end }}

@@ -2,11 +2,15 @@
   Recursive partial: renders TextNode[] to HTML.
   Children are Line objects {id, text} and sub-sections {label?, children, translation?}.
   Params: dict "nodes" (slice) "depth" (int) "prefix" (string) "showTranslation" (bool)
+          "hideHebrew" (bool) "lineTimes" (dict line id -> seconds; optional)
+  A line in lineTimes gets data-t="<seconds>": the best class start for it
+  (see layouts/_default/single.html). Mirrors lib/json-renderer.js lineTimes.
 */ -}}
 {{- $depth := .depth -}}
 {{- $prefix := .prefix -}}
 {{- $showTranslation := .showTranslation -}}
 {{- $hideHebrew := .hideHebrew -}}
+{{- $lineTimes := .lineTimes | default dict -}}
 
 {{- /* A section always has "children"; a line ({id, text}) never does. */ -}}
 {{- $sectionIdx := 0 -}}
@@ -37,11 +41,11 @@
                digit markers are stripped. Several lines: a <p> each; one line: inline. */ -}}
         {{- if gt (len $lines) 1 -}}
           {{- range $lines -}}
-            <p><span class="line" id="{{ .id }}">{{ strings.TrimSpace (replaceRE `\d+` "" .text) }}</span></p>
+            <p><span class="line" id="{{ .id }}"{{ with index $lineTimes .id }} data-t="{{ . }}"{{ end }}>{{ strings.TrimSpace (replaceRE `\d+` "" .text) }}</span></p>
           {{- end -}}
         {{- else -}}
           {{- with index $lines 0 -}}
-          <span class="line" id="{{ .id }}">{{ replaceRE `\d+` "" .text }}</span>
+          <span class="line" id="{{ .id }}"{{ with index $lineTimes .id }} data-t="{{ . }}"{{ end }}>{{ replaceRE `\d+` "" .text }}</span>
           {{- end -}}
         {{- end -}}
         </div>
@@ -69,6 +73,6 @@
     {{ end -}}
 
     {{- /* Recurse into children */ -}}
-    {{- partial "render-textnode.html" (dict "nodes" $children "depth" (add $depth 1) "prefix" $number "showTranslation" $showTranslation "hideHebrew" $hideHebrew) -}}
+    {{- partial "render-textnode.html" (dict "nodes" $children "depth" (add $depth 1) "prefix" $number "showTranslation" $showTranslation "hideHebrew" $hideHebrew "lineTimes" $lineTimes) -}}
   {{- end -}}
 {{- end -}}

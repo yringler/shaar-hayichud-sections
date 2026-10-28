@@ -187,3 +187,16 @@ test("wraps multi-line translation in paragraph tags", async () => {
   assert.ok(html.includes("<p>Para one</p>"), "first paragraph missing");
   assert.ok(html.includes("<p>Para two</p>"), "second paragraph missing");
 });
+
+test("adds data-t to lines listed in lineTimes, and only to those", async () => {
+  const input = json([
+    { label: "א", children: [L("ראשון", "aaaaaaaa"), L("שני", "bbbbbbbb")] },
+    { label: "ב", children: [L("שלישי", "cccccccc")] },
+  ]);
+  const html = await renderJsonToHtml(input, {}, { lineTimes: { aaaaaaaa: 0.828, cccccccc: 12 } });
+  assert.ok(html.includes('<p><span class="line" id="aaaaaaaa" data-t="0.828">ראשון</span></p>'), html);
+  assert.ok(html.includes('<p><span class="line" id="bbbbbbbb">שני</span></p>'), html);
+  assert.ok(html.includes('<span class="line" id="cccccccc" data-t="12">שלישי</span>'), html);
+  const plain = await renderJsonToHtml(input, {});
+  assert.ok(!plain.includes("data-t"), "no lineTimes: no data-t");
+});

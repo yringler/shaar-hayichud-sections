@@ -4,8 +4,26 @@
     {{- $data := index site.Data.chapters $chapterKey -}}
     {{- $showTranslation := .Params.showTranslation | default false -}}
     {{- $hideHebrew := .Params.hideHebrew | default false -}}
-    <div dir="{{ if $hideHebrew }}ltr{{ else }}rtl{{ end }}">
-      {{- partial "render-textnode.html" (dict "nodes" $data "depth" 1 "prefix" "" "showTranslation" $showTranslation "hideHebrew" $hideHebrew) -}}
+    {{- /* Published class alignments for this chapter, if any: a player plus
+           data-t (best start, seconds) on every aligned line. */ -}}
+    {{- $lineTimes := dict -}}
+    {{- $aligned := false -}}
+    {{- if not $hideHebrew -}}
+      {{- $audio := partialCached "audio/index.html" . "audio" -}}
+      {{- with index $audio.chapters $chapterKey -}}
+        {{- $path := . -}}
+        {{- $alignments := resources.Get $path | transform.Unmarshal -}}
+        {{- $s := newScratch -}}
+        {{- range $alignments.lines -}}
+          {{- $s.SetInMap "t" .lineId (index .refs 0).startSeconds -}}
+        {{- end -}}
+        {{- $lineTimes = $s.Get "t" | default dict -}}
+        {{- $aligned = true -}}
+        {{- partial "audio/chapter-panel.html" (dict "data" $alignments "path" $path) -}}
+      {{- end -}}
+    {{- end -}}
+    <div dir="{{ if $hideHebrew }}ltr{{ else }}rtl{{ end }}"{{ if $aligned }} data-aligned-text{{ end }}>
+      {{- partial "render-textnode.html" (dict "nodes" $data "depth" 1 "prefix" "" "showTranslation" $showTranslation "hideHebrew" $hideHebrew "lineTimes" $lineTimes) -}}
     </div>
   {{ else }}
     {{ .Content }}
