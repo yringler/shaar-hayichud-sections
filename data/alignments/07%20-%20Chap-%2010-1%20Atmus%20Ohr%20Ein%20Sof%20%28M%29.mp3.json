@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/07%20-%20Chap-%2010-1%20Atmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "transcriptionId": "1f129292-d0b8-43bc-bfaa-13979961ebe4",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1101,
+    "hebrewWords": 162,
+    "matchedWords": 68,
+    "chapterLines": 91,
+    "alignedLines": 5,
+    "firstLineIndex": 0,
+    "lastLineIndex": 4,
+    "meanConfidence": 0.993
+  },
+  "segments": [
+    {"startSeconds":0.828,"endSeconds":184.34,"chapter":"chapter_10","lineId":"5i72jwox","confidence":1,"matchedWords":22,"lineWords":23,"firstWord":3,"lastWord":404},
+    {"startSeconds":189.62,"endSeconds":199.5,"chapter":"chapter_10","lineId":"njpqigb7","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":420,"lastWord":441},
+    {"startSeconds":211.04,"endSeconds":217.26,"chapter":"chapter_10","lineId":"7qhwsnef","confidence":0.972,"matchedWords":10,"lineWords":10,"firstWord":459,"lastWord":468},
+    {"startSeconds":276.62,"endSeconds":369.66,"chapter":"chapter_10","lineId":"wmljth42","confidence":1,"matchedWords":15,"lineWords":15,"firstWord":644,"lastWord":877},
+    {"startSeconds":398.02,"endSeconds":430.04,"chapter":"chapter_10","lineId":"dor2wcdr","confidence":0.992,"matchedWords":13,"lineWords":13,"firstWord":932,"lastWord":1005}
+  ]
+}

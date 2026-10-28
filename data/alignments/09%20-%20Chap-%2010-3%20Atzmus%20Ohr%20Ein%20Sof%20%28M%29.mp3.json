@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "09 - Chap- 10-3 Atzmus Ohr Ein Sof (M).mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/09%20-%20Chap-%2010-3%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "transcriptionId": "4fe26902-abf0-4f49-9c5a-cf1378dd2231",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2342,
+    "hebrewWords": 207,
+    "matchedWords": 92,
+    "chapterLines": 91,
+    "alignedLines": 8,
+    "firstLineIndex": 17,
+    "lastLineIndex": 24,
+    "meanConfidence": 0.92
+  },
+  "segments": [
+    {"startSeconds":0.94,"endSeconds":24.42,"chapter":"chapter_10","lineId":"jlpeqq2z","confidence":1,"matchedWords":21,"lineWords":21,"firstWord":0,"lastWord":44},
+    {"startSeconds":54.44,"endSeconds":56.48,"chapter":"chapter_10","lineId":"jmragep2","confidence":0.667,"matchedWords":4,"lineWords":6,"firstWord":120,"lastWord":123},
+    {"startSeconds":75.92,"endSeconds":77.24,"chapter":"chapter_10","lineId":"ic2psmkj","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":164,"lastWord":167},
+    {"startSeconds":115.28,"endSeconds":119.76,"chapter":"chapter_10","lineId":"2iiglfki","confidence":0.978,"matchedWords":9,"lineWords":9,"firstWord":278,"lastWord":286},
+    {"startSeconds":127.7,"endSeconds":138.38,"chapter":"chapter_10","lineId":"frol4soh","confidence":0.819,"matchedWords":11,"lineWords":13,"firstWord":305,"lastWord":327},
+    {"startSeconds":200.3,"endSeconds":202.02,"chapter":"chapter_10","lineId":"4jl6amvs","confidence":1,"matchedWords":7,"lineWords":8,"firstWord":478,"lastWord":485},
+    {"startSeconds":253.22,"endSeconds":270.64,"chapter":"chapter_10","lineId":"vkw57sk7","confidence":1,"matchedWords":19,"lineWords":19,"firstWord":634,"lastWord":677},
+    {"startSeconds":354.56,"endSeconds":368.36,"chapter":"chapter_10","lineId":"454c4nok","confidence":0.895,"matchedWords":17,"lineWords":19,"firstWord":905,"lastWord":941}
+  ]
+}

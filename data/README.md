@@ -8,6 +8,9 @@ Hayichud comes from this directory:
 | `classes.txt` | Audio class catalog (series → sections → lectures) | hand, plus `yarn set-durations` |
 | `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees of lines (see below) | section-tool (saves via the GitHub API) |
 | `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
+| `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
+| `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
+| `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
 
@@ -78,8 +81,8 @@ its position:
 Sections have no persisted ID, and translations stay at section level.
 `yarn assign-line-ids` gives an ID to any line that lacks one, and to later
 copies of a duplicated ID; the build fails on a duplicate line ID anywhere in
-the corpus. It will also check that
-every alignment `lineId` exists once alignments are published.
+the corpus. It also checks that
+every alignment `lineId` exists in the alignment's chapter.
 
 `site/scripts/sefaria-swap.py` (re)imports Sefaria's text into the existing
 sections and carries line IDs over: each output line is paired one to one,
@@ -157,3 +160,91 @@ yarn assign-line-ids  # give every chapter line without an id a new one (idempot
 yarn set-durations  # ffprobe lectures with no :seconds and write the result into classes.txt
                     #   (downloads to tools/.cache/media/; needs ffprobe; --dry-run to preview)
 ```
+yarn transcribe     # Sofer.ai transcripts -> transcripts/ (needs SOFER_API_KEY; see below)
+yarn align          # transcripts + chapters -> alignments/ (offline)
+```
+
+## Transcripts and alignments
+
+Classes are transcribed by [Sofer.ai](https://docs.sofer.ai), then aligned to
+chapter lines, so a line ID can be mapped to the time it is read in a class.
+
+```bash
+cd data/tools
+export SOFER_API_KEY=...          # never commit it or pass it as an argument
+yarn transcribe --section 4 --limit 3 --dry-run   # what would be submitted
+yarn transcribe --section 4 --limit 3             # Chapter 10, first three classes
+yarn transcribe --lecture "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3"
+yarn align                        # every lecture with a stored transcript
+yarn align --section 4 --verbose  # print each line with the words heard
+```
+
+Behind an HTTP proxy, prefix commands with `NODE_USE_ENV_PROXY=1`.
+
+Both files are named after the lecture's catalog ID, encoded like a published
+URL segment plus `.json` (e.g. `07%20-%20Chap-%2010-1%20Atmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json`).
+`yarn build-data` validates both, but they are **not published yet**: the
+`/data/v1/transcripts/` and `/data/v1/alignments/` collections stay empty until
+the alignment quality has been reviewed for more classes.
+
+### `yarn transcribe`
+
+Select lectures with `--lecture <id>` (repeatable) and/or `--section <heading id>`
+(every lecture under that `#`/`##`/`###` heading, in catalog order), optionally
+`--limit N`. For each one:
+
+1. If `transcripts/<lecture>.json` exists it is skipped. `--force` re-downloads
+   the existing Sofer transcription; it never submits a new one.
+2. The Sofer folder path that mirrors the catalog headings is found or created,
+   one level at a time, matching existing folders by name (case-insensitively)
+   under their parent: `Rabbi Benyamin Walters Original Class / Chapters 10-15 / Chapter 10`.
+3. The Sofer title is the catalog title plus the lecture ID in brackets, e.g.
+   `Part 1 [07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3]`. Before submitting, the
+   tool looks for a transcription whose title ends in `[<lecture id>]` in that
+   folder (and, as a fallback, anywhere in the account, moving it into the
+   folder), and reuses it. A run that crashed after submitting therefore never
+   pays twice.
+4. Otherwise it checks the balance against an estimate, submits the catalog URL
+   (`audio_url`; the CDN serves direct mp3 links, so nothing is uploaded) with
+   `primary_language: en` and `hebrew_word_format: ["he"]` (Hebrew words in
+   Hebrew letters, which alignment needs), polls the status until `COMPLETED`, and
+   stores the raw `GET /v1/transcriptions/{id}` response with its word-level
+   timestamps.
+
+Cost is about $1.50 per audio hour (model `v1`). The stored file follows
+`schema/sources/sofer-transcript.schema.json`; one word per line keeps diffs readable.
+
+### `yarn align`
+
+Offline and deterministic; rerun after a transcript, chapter or the algorithm
+changes. Only lectures under a `### Chapter N` heading are aligned, against
+`chapters/chapter_NN.json` (Q and A, introductions and addenda are skipped).
+
+The class reads the text aloud phrase by phrase and explains it in English with
+Hebrew terms mixed in. `src/align.ts` keeps the transcript's Hebrew words,
+normalizes both sides (nikud, punctuation, geresh/gershayim, final letters,
+Yiddish ligatures), and aligns transcript words to chapter words in one
+monotonic dynamic-programming pass: similar words (exact, with or without
+ו/י, one prefix letter, small edit distance) gain, isolated Hebrew words gain
+less (they are usually explanation terms), skipping transcript words is free,
+and skipping a chapter word inside the aligned span costs (except
+abbreviations and markers such as `(י)`), so the path cannot jump ahead to a
+stray term. A line's range runs from its first to its last matched word (in
+the densest cluster, splitting at gaps over 150 s), so it includes any
+explanation in the middle of the line. Its `confidence` is the
+similarity-weighted share of the line's words heard. Lines below 0.35, or not
+read in the class, are absent.
+
+An alignment file is a superset of `schema/v1/alignment.schema.json`
+(`lectureId`, `segments[]` of `startSeconds`/`endSeconds`/`chapter`/`lineId`),
+plus `confidence`, matched word counts and `firstWord`/`lastWord` indexes into
+the transcript's `result.timestamps`, along with `transcript` (its path), `method`
+and `stats`. The build validates it against that schema and checks every line ID.
+
+`--after-previous` starts the search a few lines before the last line the
+previous class of the same chapter reached, for classes that open with a recap.
+
+To extend to more classes: transcribe a heading (for example `--section 5` for
+Chapter 11), run `yarn align --section 5 --verbose`, spot-check a few lines
+against the audio, then commit `transcripts/` and `alignments/`.
+

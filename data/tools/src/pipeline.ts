@@ -4,9 +4,10 @@
 import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildCatalog, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
-import { checkAlignmentLineIds, indexLineIds, type Alignment, type Chapter } from './chapter.js';
+import { buildCatalog, catalogLectures, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
+import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
+import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
 /** data/ (this file compiles to data/tools/build/pipeline.js). */
@@ -17,6 +18,8 @@ export interface DataPaths {
   chaptersDir: string;
   schemaDir: string;
   distDir: string;
+  /** Committed transcripts / alignments and their source schemas. */
+  sources: SourcePaths;
 }
 
 export function defaultPaths(dataDir = DATA_DIR): DataPaths {
@@ -25,6 +28,7 @@ export function defaultPaths(dataDir = DATA_DIR): DataPaths {
     chaptersDir: path.join(dataDir, 'chapters'),
     schemaDir: path.join(dataDir, 'schema', 'v1'),
     distDir: path.join(dataDir, 'dist'),
+    sources: defaultSourcePaths(dataDir),
   };
 }
 
@@ -72,10 +76,10 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     // Only walk trees the schema accepted.
     const lines = indexLineIds(loaded.chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })));
     errors.push(...lines.errors.map((e) => `chapters/${e}`));
-    // Reserved: no alignment sources exist yet. When they do, load and
-    // schema-validate them here; their line ids must resolve.
-    const alignments: { file: string; data: Alignment }[] = [];
-    errors.push(...checkAlignmentLineIds(alignments, lines.index).map((e) => `alignments/${e}`));
+    // Committed transcripts and alignments are checked (schema, names,
+    // line ids) but not published yet.
+    const lectureIds = new Set([...catalog.series.flatMap((s) => [...catalogLectures(s.items)])].map((l) => l.id));
+    errors.push(...validateSources(paths.sources, schemas, lectureIds, lines.index));
   }
   if (errors.length > 0) return { errors };
 

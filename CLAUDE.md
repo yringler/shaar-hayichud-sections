@@ -6,7 +6,7 @@ This repo has one shared data directory, two sub-projects and a Dart package. Re
 
 | Directory | Description | Docs |
 |-----------|-------------|------|
-| [`data/`](data/README.md) | **Single source of truth**: the class catalog (`classes.txt`), chapter JSON (`chapters/`), JSON Schemas (`schema/v1/`), and the TypeScript build/validation tools (`tools/`) | [data/README.md](data/README.md) |
+| [`data/`](data/README.md) | **Single source of truth**: the class catalog (`classes.txt`), chapter JSON (`chapters/`), class transcripts (`transcripts/`) and line alignments (`alignments/`), JSON Schemas (`schema/v1/`, `schema/sources/`), and the TypeScript build/validation/transcription tools (`tools/`) | [data/README.md](data/README.md) |
 | [`section-tool/`](section-tool/CLAUDE.md) | Angular 21 keyboard-driven tool for dividing Hebrew text into nested JSON sections | [section-tool/CLAUDE.md](section-tool/CLAUDE.md) |
 | [`packages/dart/`](packages/dart/CLAUDE.md) | `shaar_hayichud_data`: pure Dart models (generated from `data/schema/v1`) and loader for the published JSON; consumed by lessons2 as a git dependency | [packages/dart/CLAUDE.md](packages/dart/CLAUDE.md) |
 | [`site/`](site/CLAUDE.md) | Hugo static site rendering the chapters and the audio classes, and publishing `data/` as versioned JSON | [site/CLAUDE.md](site/CLAUDE.md) |
@@ -16,6 +16,7 @@ This repo has one shared data directory, two sub-projects and a Dart package. Re
 - `section-tool` edits chapter files (`TextNode[]` arrays). Its Cloudflare Pages Function saves them to `data/chapters/` through the GitHub API.
 - `data/tools` validates `data/` (catalog grammar, stable IDs, JSON Schemas) and writes `data/dist/v1/`. This directory is generated and git-ignored.
 - `site`'s `yarn build` runs the data build, then Hugo. Hugo renders pages from `data/chapters/` and the generated catalog, and publishes `data/dist/v1/` at `/data/v1/`. Other clients, such as the lessons2 Flutter app, read that published JSON, using the Dart models in `packages/dart/`.
+- `data/tools` `yarn transcribe` stores Sofer.ai word-timestamped transcripts of classes in `data/transcripts/` (needs `SOFER_API_KEY`; never commit the key), and `yarn align` maps them to chapter line IDs in `data/alignments/`. Both are keyed by catalog lecture ID and validated by the data build, but not published yet. See [data/README.md](data/README.md#transcripts-and-alignments).
 - Catalog IDs are persisted by apps (favorites, downloads). Never change an existing ID. `data/README.md` explains how.
 - Chapter text is made of lines with stable, corpus-unique random IDs, so alignments and transcripts can point at a line. Anything that rewrites chapter text (the editor, scripts) must carry existing line IDs over and mint new ones only for new lines. Sections have no persisted ID. The site renders each line as an element whose HTML `id` is the line ID.
 
