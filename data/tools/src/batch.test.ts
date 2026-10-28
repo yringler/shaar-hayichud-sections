@@ -275,6 +275,19 @@ describe('Transcriber', () => {
     assert.ok(!sofer.writes.some((x) => x.startsWith('create')));
   });
 
+  it('submits nothing when any selected lecture failed, so a batch is never partial', async () => {
+    const { sofer, make } = setup();
+    const real = sofer.listFolderTranscripts.bind(sofer);
+    let calls = 0;
+    sofer.listFolderTranscripts = async (id: string) => {
+      if (++calls === 2) throw new SoferError('rate limited', 429);
+      return real(id);
+    };
+    const res = await make().run([intro!, a!], opts());
+    assert.equal(res.failures, 1);
+    assert.deepEqual(sofer.manifests, []);
+  });
+
   it('refuses to submit when no listing can rule out a duplicate', async () => {
     const { sofer, make } = setup();
     sofer.listAllTranscriptions = async () => {
@@ -366,6 +379,26 @@ describe('Transcriber', () => {
 });
 
 describe('SoferClient batch calls', () => {
+  it('retries a document update on 429 (rejected, not applied) but not on 5xx', async () => {
+    const statuses = [429, 200];
+    const calls: string[] = [];
+    const client = new SoferClient(
+      'k',
+      async (url, init) => {
+        calls.push(`${init?.method} ${url}`);
+        const st = statuses.shift() ?? 500;
+        return new Response(st === 200 ? '{}' : 'x', { status: st });
+      },
+      'https://api',
+      3,
+      0,
+    );
+    await client.updateDocument('d', { archived: true });
+    assert.equal(calls.length, 2);
+    await assert.rejects(client.updateDocument('d', { archived: true }), /HTTP 500/);
+    assert.equal(calls.length, 3);
+  });
+
   it('sends a standard batch with the manifest id and never retries it', async () => {
     const calls: { url: string; method?: string | undefined; body?: string }[] = [];
     const client = new SoferClient(

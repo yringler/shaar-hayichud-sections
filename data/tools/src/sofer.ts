@@ -130,7 +130,13 @@ export class SoferClient {
     if (!apiKey) throw new Error('Sofer API key is empty');
   }
 
-  private async request<T>(method: string, path: string, body?: unknown): Promise<T> {
+  /**
+   * `retryRateLimit`: also retry a write that got HTTP 429 (the API rejected
+   * it without acting on it). Only for writes that charge nothing and are
+   * safe to repeat: document updates and manifest uploads. Creates that
+   * start a paid transcription are never retried.
+   */
+  private async request<T>(method: string, path: string, body?: unknown, retryRateLimit = false): Promise<T> {
     const init: RequestInit = {
       method,
       headers: {
@@ -140,12 +146,12 @@ export class SoferClient {
       ...(body === undefined ? {} : { body: JSON.stringify(body) }),
     };
     // GETs are retried on 5xx / 429 (the API returns transient 500s); writes are not, to never submit twice.
-    const attempts = method === 'GET' ? this.retries + 1 : 1;
+    const attempts = method === 'GET' || retryRateLimit ? this.retries + 1 : 1;
     for (let attempt = 1; ; attempt++) {
       const res = await this.fetchFn(`${this.base}${path}`, init);
       const text = await res.text();
       if (res.ok) return (text ? JSON.parse(text) : null) as T;
-      const retryable = res.status >= 500 || res.status === 429;
+      const retryable = method === 'GET' ? res.status >= 500 || res.status === 429 : res.status === 429;
       if (!retryable || attempt >= attempts) {
         throw new SoferError(`${method} ${path} -> HTTP ${res.status}: ${text.slice(0, 300)}`, res.status);
       }
@@ -242,7 +248,7 @@ export class SoferClient {
   }
 
   moveDocument(documentId: string, folderId: string | null): Promise<SoferDocument> {
-    return this.request('PATCH', `/v1/documents/${documentId}`, { folder_id: folderId });
+    return this.request('PATCH', `/v1/documents/${documentId}`, { folder_id: folderId }, true);
   }
 
   /** PATCH /v1/documents/{id}: only the fields given change. Archiving also moves the document to the root. */
@@ -250,7 +256,7 @@ export class SoferClient {
     documentId: string,
     fields: { title?: string; folder_id?: string | null; archived?: boolean },
   ): Promise<SoferDocument> {
-    return this.request('PATCH', `/v1/documents/${documentId}`, fields);
+    return this.request('PATCH', `/v1/documents/${documentId}`, fields, true);
   }
 
   /** POST /v1/transcriptions/batch-files: upload a standard-mode manifest (free; no transcription starts). */
@@ -259,7 +265,7 @@ export class SoferClient {
       content_type: 'json',
       json_items: items,
       ...(metadata ? { metadata } : {}),
-    });
+    }, true);
   }
 
   /** GET /v1/transcriptions/batch-files/{id}: manifest validation status. */

@@ -282,6 +282,11 @@ export class Transcriber {
     }
 
     const submitted: string[] = [];
+    if (submit.length > 0 && this.failures > 0 && !opts.dryRun) {
+      // Never send a partial batch: rerunning after the error is free, and keeps the selection in one batch.
+      this.warn(`Not submitting the ${submit.length} other lecture(s): fix the error(s) above and rerun.`);
+      submit.length = 0;
+    }
     if (submit.length > 0 && opts.dryRun) {
       const cents = submit.reduce((s, i) => s + this.estimate(i, opts), 0);
       this.log(
