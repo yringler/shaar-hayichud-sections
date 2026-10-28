@@ -1,6 +1,7 @@
 import { Content, TextNode, isText, isTextNode } from '../models/text-node.model';
+import { collectLineIds, freshRun, reconcileLines, splitRun } from './lines';
 import { IdSource } from './ids';
-import { parseDocument } from './serialization';
+import { DEFAULT_FORMAT, JsonFormat, detectFormat, parseDocument } from './serialization';
 import {
   createNode,
   findPath,
@@ -17,18 +18,24 @@ import {
  * a pure function from (document, command) to (new document, focus); it never
  * mutates the document it is given.
  *
- * `contentIndex` indexes `node.children`: it names which text entry (and so
- * which textarea) of the node the command came from.
+ * `contentIndex` indexes `node.children`: it names which text run (and so
+ * which textarea) of the node the command came from. `cursorPos` is a
+ * character offset in that run's text (lines joined by "\n").
+ *
+ * Line ids: every command keeps the ids of the lines it moves. `updateText`
+ * carries ids across an edit (see `reconcileLines`), splits snap to line
+ * boundaries (see `splitLineIndex`) so no line is ever cut in two, and only
+ * genuinely new lines get fresh ids, unique within the document.
  */
 export type EditorCommand =
   | { type: 'updateText'; nodeId: string; contentIndex: number; text: string }
   | { type: 'updateLabel'; nodeId: string; label: string }
   | { type: 'updateTranslation'; nodeId: string; translation: string }
-  /** Enter: text after the cursor becomes a new child of this node. */
+  /** Enter: lines from the cursor on become a new child of this node. */
   | { type: 'splitToChild'; nodeId: string; contentIndex: number; cursorPos: number }
-  /** Tab: text after the cursor becomes a new sibling after this node. */
+  /** Tab: lines from the cursor on become a new sibling after this node. */
   | { type: 'splitToSibling'; nodeId: string; contentIndex: number; cursorPos: number }
-  /** Alt+Enter: text after the cursor, and everything after it in the parent, moves up one level. */
+  /** Alt+Enter: lines from the cursor on, and everything after them in the parent, move up one level. */
   | { type: 'splitToParentSibling'; nodeId: string; contentIndex: number; cursorPos: number }
   /** Shift+Enter: this node's content is spliced into its parent in place. */
   | { type: 'mergeWithParent'; nodeId: string }
@@ -39,9 +46,9 @@ export type EditorCommand =
   | { type: 'mergeWithPreviousSibling'; nodeId: string }
   | { type: 'deleteNode'; nodeId: string }
   | { type: 'clearAll' }
-  /** Replace the document with one node holding the pasted plain text. */
+  /** Replace the document with one node holding the pasted plain text (fresh line ids). */
   | { type: 'loadText'; text: string }
-  /** Replace the document with parsed chapter JSON. Throws on invalid JSON. */
+  /** Replace the document with parsed chapter JSON, keeping its line ids. Throws on invalid JSON. */
   | { type: 'loadJson'; json: string };
 
 /**
@@ -64,7 +71,7 @@ export interface CommandResult {
 export function applyCommand(roots: TextNode[], cmd: EditorCommand, ids: IdSource): CommandResult {
   switch (cmd.type) {
     case 'updateText':
-      return unfocused(updateText(roots, cmd.nodeId, cmd.contentIndex, cmd.text));
+      return unfocused(updateText(roots, cmd.nodeId, cmd.contentIndex, cmd.text, ids));
     case 'updateLabel':
       return unfocused(updateNode(roots, cmd.nodeId, (n) => ({ ...n, label: cmd.label })));
     case 'updateTranslation':
@@ -84,7 +91,7 @@ export function applyCommand(roots: TextNode[], cmd: EditorCommand, ids: IdSourc
     case 'clearAll':
       return unfocused([createNode(ids.nodeId())]);
     case 'loadText':
-      return unfocused([createNode(ids.nodeId(), cmd.text.trim())]);
+      return unfocused([createNode(ids.nodeId(), freshRun(cmd.text.trim(), [], ids).lines)]);
     case 'loadJson': {
       const nodes = parseDocument(cmd.json, ids);
       return unfocused(nodes.length > 0 ? nodes : [createNode(ids.nodeId())]);
@@ -100,17 +107,21 @@ function focusStart(nodeId: string): Focus {
   return { nodeId, contentIndex: 0, offset: 0 };
 }
 
-function updateText(roots: TextNode[], nodeId: string, contentIndex: number, text: string): TextNode[] {
+function updateText(
+  roots: TextNode[],
+  nodeId: string,
+  contentIndex: number,
+  text: string,
+  ids: IdSource,
+): TextNode[] {
   return updateNode(roots, nodeId, (node) => {
-    if (contentIndex < node.children.length && isText(node.children[contentIndex])) {
-      const children = [...node.children];
-      children[contentIndex] = text;
-      return { ...node, children };
-    }
-    if (contentIndex === node.children.length) {
-      return { ...node, children: [...node.children, text] };
-    }
-    return node; // entry is a child node: ignore
+    const item = node.children[contentIndex];
+    const appending = contentIndex === node.children.length;
+    if (!isText(item) && !appending) return node; // entry is a child node, or out of range: ignore
+    const old = isText(item) ? item.lines : [];
+    const children = [...node.children];
+    children[contentIndex] = { lines: reconcileLines(old, text, collectLineIds(roots), ids) };
+    return { ...node, children };
   });
 }
 
@@ -129,9 +140,10 @@ function splitToChild(
   let newChild: TextNode;
 
   if (isText(item)) {
-    // Keep the text before the cursor even if empty, to keep a textarea here.
-    newChild = createNode(ids.nodeId(), item.substring(cursorPos));
-    children.splice(contentIndex, 1, item.substring(0, cursorPos), newChild);
+    // Keep the run before the split even if empty, to keep a textarea here.
+    const [before, after] = splitRun(item, cursorPos);
+    newChild = createNode(ids.nodeId(), after.lines);
+    children.splice(contentIndex, 1, before, newChild);
   } else {
     // Cursor is on a child node: insert an empty child after it.
     newChild = createNode(ids.nodeId());
@@ -157,9 +169,10 @@ function splitToSibling(
   const item = node.children[contentIndex];
   if (!isText(item)) return unfocused(roots);
 
+  const [before, after] = splitRun(item, cursorPos);
   const nodeChildren = [...node.children];
-  nodeChildren[contentIndex] = item.substring(0, cursorPos);
-  const sibling = createNode(ids.nodeId(), item.substring(cursorPos));
+  nodeChildren[contentIndex] = before;
+  const sibling = createNode(ids.nodeId(), after.lines);
 
   const index = path[path.length - 1];
   const siblings = [...siblingsAt(roots, path)];
@@ -189,11 +202,12 @@ function splitToParentSibling(
   const nodeIndex = path[path.length - 1];
   const parentIndex = parentPath[parentPath.length - 1];
 
-  // Before the cursor stays; everything after it in this node and in the
-  // parent moves into the promoted node.
+  // Lines before the split stay; everything after it in this node and in
+  // the parent moves into the promoted node.
+  const [before, after] = splitRun(item, cursorPos);
   const keptNode: TextNode = {
     ...node,
-    children: [...node.children.slice(0, contentIndex), item.substring(0, cursorPos)],
+    children: [...node.children.slice(0, contentIndex), before],
   };
   const keptParent: TextNode = {
     ...parent,
@@ -203,7 +217,7 @@ function splitToParentSibling(
     id: ids.nodeId(),
     label: '',
     children: [
-      item.substring(cursorPos),
+      after,
       ...node.children.slice(contentIndex + 1),
       ...parent.children.slice(nodeIndex + 1),
     ],
@@ -296,3 +310,20 @@ function deleteNode(roots: TextNode[], nodeId: string, ids: IdSource): TextNode[
   return result.length > 0 ? result : [createNode(ids.nodeId())];
 }
 
+
+/**
+ * The output format after a command: `loadJson` adopts the loaded file's
+ * format so saving it changes only what was edited; `loadText` and
+ * `clearAll` start a new document in the default format.
+ */
+export function formatAfter(cmd: EditorCommand, current: JsonFormat): JsonFormat {
+  switch (cmd.type) {
+    case 'loadJson':
+      return detectFormat(cmd.json);
+    case 'loadText':
+    case 'clearAll':
+      return DEFAULT_FORMAT;
+    default:
+      return current;
+  }
+}

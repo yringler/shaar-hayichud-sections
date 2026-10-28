@@ -21,7 +21,7 @@
             resize="auto"
             [attr.data-node-id]="node().id"
             [attr.data-content-index]="$index"
-            [value]="item"
+            [value]="runText(item)"
             (input)="onTextInput($event, $index)"
             (keydown)="onKeydown($event, waTextarea, $index)"
             #waTextarea

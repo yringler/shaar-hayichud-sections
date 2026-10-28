@@ -12,7 +12,8 @@ These are the invariants; keep them when changing anything.
 2. **Commands are pure.** All document logic lives in `src/app/editor/` with no Angular imports (except the id token and test helpers). `applyCommand(roots, command, ids)` returns a new tree and the next caret position; it never mutates its input. Updates copy only the path to the change, so every changed node gets a new reference and untouched subtrees are shared.
 3. **Components only render and emit.** `TextNodeComponent` turns user actions into `EditorCommand`s (key presses through the pure `keyToCommand` keymap) and emits them; the container dispatches them and places the caret from the returned `Focus`. Components may touch the DOM (caret, textarea value), never the document.
 4. **Ids are injected.** Editor code gets fresh ids from an `IdSource` (the `ID_SOURCE` token), never from `crypto` directly. Section (node) ids are in-memory only and are not persisted.
-5. **Load and save are a tested pair.** `editor/serialization.ts` parses chapter JSON and prints it back. The golden test in `serialization.spec.ts` loads and saves every `data/chapters/*.json` file; keep it passing. Its doc comment states the exact formatting contract.
+5. **Line ids are carried, never regenerated.** Lines have persisted ids that alignments point at. Every command must keep the ids of the lines it keeps or moves, and mint fresh ids (unique in the document) only for new lines. Splits never cut a line. The rules live in `editor/lines.ts`; see ARCHITECTURE.md.
+6. **Load and save are a tested pair.** `editor/serialization.ts` parses chapter JSON and prints it back in the file's own layout. The golden test in `serialization.spec.ts` checks that every `data/chapters/*.json` file round-trips byte for byte, line ids included; keep it passing.
 
 ## Adding or changing behavior
 
@@ -23,8 +24,8 @@ These are the invariants; keep them when changing anything.
 ## Testing
 
 - `yarn test` (the package pins Yarn 4; if the global yarn is 1.x, use `corepack yarn test`). Pass `--watch=false` for a single run.
-- Specs use the helpers in `src/app/editor/testing.ts`: `node(...)`/`nodeWith(...)` to build trees, `sequentialIds()`/`provideSequentialIds()` for deterministic ids, and `deepFreeze()` so a test fails if a command mutates its input.
-- The golden round-trip test reads `../data/chapters` relative to the working directory, so run tests from `section-tool/`.
+- Specs use the helpers in `src/app/editor/testing.ts`: `node(...)`/`nodeWith(...)` and `t('id:text', ...)` (a text run) to build trees, `sequentialIds()`/`provideSequentialIds()` for deterministic ids, and `deepFreeze()` so a test fails if a command mutates its input.
+- Some specs read `../data/` relative to the working directory (the golden round trip, the chapter check, the line-id format check), so run tests from `section-tool/`.
 
 ## Common commands
 
@@ -35,6 +36,8 @@ yarn build   # production build
 ```
 
 ## Keyboard shortcuts (user-facing)
+
+Splits move whole lines: the line holding the cursor, and everything after it, moves (unless the cursor is at the end of a line).
 
 - **Enter**: split into child section
 - **Tab**: split into sibling section

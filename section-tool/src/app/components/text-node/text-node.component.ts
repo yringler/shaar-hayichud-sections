@@ -1,5 +1,5 @@
 import { Component, input, output, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Content, TextNode, isText } from '../../models/text-node.model';
+import { Content, TextNode, isText, runText } from '../../models/text-node.model';
 import { EditorCommand } from '../../editor/commands';
 import { keyToCommand } from '../../editor/keymap';
 import '@awesome.me/webawesome/dist/components/textarea/textarea.js';
@@ -25,8 +25,14 @@ export class TextNodeComponent {
   command = output<EditorCommand>();
 
   readonly isText = isText;
+  readonly runText = runText;
 
-  /** Child nodes keep their component across inserts; text entries go by position. */
+  /**
+   * Child nodes keep their component across inserts. A text run is tracked
+   * by position, not by its lines' ids: its first line changes as the user
+   * edits, and re-creating the textarea then would drop the caret. Line ids
+   * live in the model, not the DOM.
+   */
   trackContent(index: number, item: Content): string {
     return isText(item) ? `text:${index}` : item.id;
   }

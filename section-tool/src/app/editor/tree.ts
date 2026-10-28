@@ -1,4 +1,4 @@
-import { Content, TextNode, isTextNode } from '../models/text-node.model';
+import { Content, Line, TextNode, isText, isTextNode, runText } from '../models/text-node.model';
 
 /**
  * Immutable tree helpers. Nothing here mutates its arguments: an update
@@ -10,9 +10,9 @@ import { Content, TextNode, isTextNode } from '../models/text-node.model';
 /** Position of a node: child indices from the root array down to the node. */
 export type Path = readonly number[];
 
-export function createNode(id: string, text = '', label = ''): TextNode {
-  // Always include a text entry so the node renders an editable textarea.
-  return { id, label, children: [text] };
+export function createNode(id: string, lines: Line[] = [], label = ''): TextNode {
+  // Always include a text run so the node renders an editable textarea.
+  return { id, label, children: [{ lines }] };
 }
 
 export function findPath(nodes: readonly Content[], id: string): Path | null {
@@ -80,14 +80,15 @@ export function updateNode(
 /** Where an entry of the input ended up after `mergeAdjacentText`. */
 export interface MergedPosition {
   index: number;
-  /** Characters of earlier text glued in front of the tracked entry. */
+  /** Character offset of the tracked entry's start in the merged run's text. */
   offset: number;
 }
 
 /**
- * Join runs of adjacent strings into one string (with no separator) and
- * report where the entry at `track` ended up. If `track` is past the end,
- * the position is the end of the last entry.
+ * Join runs of adjacent text runs into one run (their lines concatenated,
+ * so every line and its id is kept) and report where the entry at `track`
+ * ended up. If `track` is past the end, the position is the end of the last
+ * entry. Offsets are clamped to the merged run's text length.
  */
 export function mergeAdjacentText(
   items: readonly Content[],
@@ -98,9 +99,12 @@ export function mergeAdjacentText(
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     const last = out[out.length - 1];
-    if (typeof item === 'string' && typeof last === 'string') {
-      if (i === track) position = { index: out.length - 1, offset: last.length };
-      out[out.length - 1] = last + item;
+    if (isText(item) && isText(last)) {
+      if (i === track) {
+        const before = runText(last).length;
+        position = { index: out.length - 1, offset: last.lines.length > 0 ? before + 1 : 0 };
+      }
+      out[out.length - 1] = { lines: [...last.lines, ...item.lines] };
     } else {
       if (i === track) position = { index: out.length, offset: 0 };
       out.push(item);
@@ -108,7 +112,10 @@ export function mergeAdjacentText(
   }
   if (!position) {
     const last = out[out.length - 1];
-    position = { index: Math.max(out.length - 1, 0), offset: typeof last === 'string' ? last.length : 0 };
+    position = { index: Math.max(out.length - 1, 0), offset: isText(last) ? runText(last).length : 0 };
+  } else {
+    const at = out[position.index];
+    if (isText(at)) position = { ...position, offset: Math.min(position.offset, runText(at).length) };
   }
   return { items: out, position };
 }

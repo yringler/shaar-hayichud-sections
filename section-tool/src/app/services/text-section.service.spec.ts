@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import { TestBed } from '@angular/core/testing';
 import { TextSectionService } from './text-section.service';
-import { node, provideSequentialIds } from '../editor/testing';
+import { node, provideSequentialIds, t } from '../editor/testing';
 
 describe('TextSectionService', () => {
   let service: TextSectionService;
@@ -12,7 +12,7 @@ describe('TextSectionService', () => {
   });
 
   it('starts with one blank root node and blank JSON', () => {
-    expect(service.rootNodes()).toEqual([node('n1', '')]);
+    expect(service.rootNodes()).toEqual([node('n1', t())]);
     expect(service.jsonOutput()).toBe('');
   });
 
@@ -21,11 +21,11 @@ describe('TextSectionService', () => {
   });
 
   it('dispatch applies the command and returns its focus', () => {
-    service.dispatch({ type: 'updateText', nodeId: 'n1', contentIndex: 0, text: 'Hello World' });
-    const focus = service.dispatch({ type: 'splitToChild', nodeId: 'n1', contentIndex: 0, cursorPos: 5 });
+    service.dispatch({ type: 'updateText', nodeId: 'n1', contentIndex: 0, text: 'Hello\nWorld' });
+    const focus = service.dispatch({ type: 'splitToChild', nodeId: 'n1', contentIndex: 0, cursorPos: 6 });
 
     expect(focus).toEqual({ nodeId: 'n2', contentIndex: 0, offset: 0 });
-    expect(service.rootNodes()).toEqual([node('n1', 'Hello', node('n2', ' World'))]);
+    expect(service.rootNodes()).toEqual([node('n1', t('L1:Hello'), node('n2', t('L2:World')))]);
   });
 
   it('dispatch returns null for commands that do not move focus', () => {
@@ -33,7 +33,7 @@ describe('TextSectionService', () => {
   });
 
   it('never mutates a tree it has already published', () => {
-    service.dispatch({ type: 'updateText', nodeId: 'n1', contentIndex: 0, text: 'ab' });
+    service.dispatch({ type: 'updateText', nodeId: 'n1', contentIndex: 0, text: 'a\nb' });
     const before = service.rootNodes();
     const snapshot = structuredClone(before);
     service.dispatch({ type: 'splitToSibling', nodeId: 'n1', contentIndex: 0, cursorPos: 1 });
@@ -42,7 +42,10 @@ describe('TextSectionService', () => {
   });
 
   it('gives a changed nested node a new reference (works with OnPush inputs)', () => {
-    service.dispatch({ type: 'loadJson', json: '[{"children":["a",{"children":["b"]}]}]' });
+    service.dispatch({
+      type: 'loadJson',
+      json: '[{"children":[{"id":"aaaaaaaa","text":"a"},{"children":[{"id":"bbbbbbbb","text":"b"}]}]}]',
+    });
     const child = service.rootNodes()[0].children[1];
     service.dispatch({ type: 'updateText', nodeId: 'n3', contentIndex: 0, text: 'B' });
     expect(service.rootNodes()[0].children[1]).not.toBe(child);
@@ -50,17 +53,45 @@ describe('TextSectionService', () => {
 
   it('jsonOutput follows every change', () => {
     service.dispatch({ type: 'updateText', nodeId: 'n1', contentIndex: 0, text: 'x' });
-    expect(JSON.parse(service.jsonOutput())).toEqual([{ children: ['x'] }]);
+    expect(JSON.parse(service.jsonOutput())).toEqual([{ children: [{ id: 'L1', text: 'x' }] }]);
     service.dispatch({ type: 'updateLabel', nodeId: 'n1', label: 'L' });
-    expect(JSON.parse(service.jsonOutput())).toEqual([{ label: 'L', children: ['x'] }]);
+    expect(JSON.parse(service.jsonOutput())).toEqual([{ label: 'L', children: [{ id: 'L1', text: 'x' }] }]);
     service.dispatch({ type: 'clearAll' });
     expect(service.jsonOutput()).toBe('');
   });
 
-  it('loadJson then jsonOutput round-trips', () => {
-    const json = JSON.stringify([{ label: 'A', children: ['x', { children: ['y'], translation: 'T' }] }], null, 2);
-    service.dispatch({ type: 'loadJson', json });
-    expect(service.jsonOutput()).toBe(json);
+  it('loadJson then jsonOutput round-trips, keeping line ids', () => {
+    const doc = [
+      { label: 'A', children: [{ id: 'aaaaaaaa', text: 'x' }, { children: [{ id: 'bbbbbbbb', text: 'y' }], translation: 'T' }] },
+    ];
+    for (const json of [JSON.stringify(doc, null, 2), JSON.stringify(doc, null, '\t') + '\n']) {
+      service.dispatch({ type: 'loadJson', json });
+      expect(service.jsonOutput()).toBe(json);
+    }
+  });
+
+  it('saves in the loaded file\'s format until a new document starts', () => {
+    service.dispatch({ type: 'loadJson', json: '[\n\t{\n\t\t"children": [{"id": "aaaaaaaa", "text": "x"}]\n\t}\n]\n' });
+    service.dispatch({ type: 'updateLabel', nodeId: 'n2', label: 'L' });
+    expect(service.jsonOutput()).toMatch(/^\[\n\t\{\n\t\t"label": "L",[\s\S]*\n\]\n$/);
+    service.dispatch({ type: 'loadText', text: 'y' });
+    expect(service.jsonOutput()).toMatch(/^\[\n {2}\{[\s\S]*\]$/);
+  });
+
+  it('a failed loadJson keeps the current format', () => {
+    service.dispatch({ type: 'loadJson', json: '[{"children":[{"id":"aaaaaaaa","text":"x"}]}]\n' });
+    expect(() => service.dispatch({ type: 'loadJson', json: 'oops' })).toThrow();
+    expect(service.jsonOutput().endsWith('\n')).toBe(true);
+  });
+
+  it('an edit keeps line ids and mints fresh ones only for new lines', () => {
+    service.dispatch({ type: 'loadJson', json: '[{"children":[{"id":"aaaaaaaa","text":"one"},{"id":"bbbbbbbb","text":"two"}]}]' });
+    service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: 'one!\nnew\ntwo' });
+    expect(JSON.parse(service.jsonOutput())[0].children).toEqual([
+      { id: 'aaaaaaaa', text: 'one!' },
+      { id: 'L1', text: 'new' },
+      { id: 'bbbbbbbb', text: 'two' },
+    ]);
   });
 
   it('a failed loadJson throws and keeps the current document', () => {

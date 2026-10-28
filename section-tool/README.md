@@ -35,15 +35,16 @@ Open your browser at `http://localhost:4200/`
 1. **Paste your Hebrew text** into the initial text area
 2. **Place cursor** at the point where you want to split
 3. **Press a keyboard shortcut**:
-   - **Enter**: Split from cursor to end into a **child subsection**
-   - **Tab**: Split from cursor to end into a **sibling section**
-   - **Alt+Enter**: Split from cursor to end into a section after the **parent**
+   - **Enter**: Move the lines from the cursor on into a **child subsection**
+   - **Tab**: Move the lines from the cursor on into a **sibling section**
+   - **Alt+Enter**: Move the lines from the cursor on into a section after the **parent**
    - **Shift+Enter**: Merge current section back into its parent
    - **Shift+Tab**: Merge current section with previous sibling
 
 ### Key Concepts
 
-- **Position your cursor** where you want to divide - text from cursor to end moves to the new section
+- **Text is made of lines.** Each line has a stable ID that audio alignments point at. A split never cuts a line: with the cursor at the end of a line the split goes after it; anywhere else in a line, that line moves to the new section.
+- **Editing keeps line IDs.** Fixing a line keeps its ID; a new line gets a new one; a deleted line's ID is gone. Pasted or typed lines get fresh IDs.
 - **Child vs Sibling**:
   - Child (Enter) = nested inside current section
   - Sibling (Tab) = same level as current section
@@ -72,9 +73,9 @@ Open your browser at `http://localhost:4200/`
 
 - Start with larger divisions (chapters) and progressively break down into smaller sections
 - Use labels for sections you'll need to identify later
-- The cursor position matters - text from cursor to end is what moves
+- The cursor position matters - the line it is in, and everything after, is what moves
 - You can always merge sections back together if you divide incorrectly
-- Empty sections are automatically excluded from the JSON output
+- Empty sections and blank lines are automatically excluded from the JSON output
 
 ## Technical Details
 
@@ -87,7 +88,7 @@ Open your browser at `http://localhost:4200/`
 
 - **Copy**: Copy JSON to clipboard
 - **Download**: Save as a .json file
-- **Save**: Commit the chapter to `data/chapters/` on GitHub
+- **Save**: Commit the chapter to `data/chapters/` on GitHub, in the file's own layout (indent, trailing newline), so the commit shows only what changed. Both the editor and the save function refuse a chapter whose lines lack valid, unique IDs.
 
 ## License
 
