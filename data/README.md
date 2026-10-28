@@ -7,7 +7,7 @@ Hayichud comes from this directory:
 |------|------------|-----------|
 | `classes.txt` | Audio class catalog (series → sections → lectures) | hand, plus `yarn set-durations` |
 | `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees | section-tool (saves via the GitHub API) |
-| `schema/v1/` | JSON Schemas for everything published under `/data/v1/` | hand |
+| `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
 
