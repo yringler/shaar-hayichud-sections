@@ -44,7 +44,8 @@ Open your browser at `http://localhost:4200/`
 ### Key Concepts
 
 - **Text is made of lines.** Each line has a stable ID that audio alignments point at. A split never cuts a line: with the cursor at the end of a line the split goes after it; anywhere else in a line, that line moves to the new section.
-- **Editing keeps line IDs.** Fixing a line keeps its ID; a new line gets a new one; a deleted line's ID is gone. Pasted or typed lines get fresh IDs.
+- **Editing keeps line IDs.** Fixing a line keeps its ID; a new line gets a new one; a deleted line's ID is gone. Pasted or typed lines get fresh IDs. Joining two lines gives the result a new ID. A line that comes back in the same session (undo, cut and paste, drag and drop, moving it to another section) gets its old ID back.
+- **Saving is guarded.** Saving refuses to overwrite a chapter that changed in the repository since you loaded it (reload first), and asks before saving a file whose lines had to be given new IDs on load.
 - **Child vs Sibling**:
   - Child (Enter) = nested inside current section
   - Sibling (Tab) = same level as current section

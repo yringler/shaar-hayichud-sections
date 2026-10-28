@@ -6,6 +6,7 @@ import { XmlOutputComponent } from '../components/xml-output/xml-output.componen
 import { SaveService } from '../services/save.service';
 import { XmlLibraryService } from '../services/xml-library.service';
 import { checkChapterJson } from '../editor/chapter-check';
+import { gitBlobSha } from '../services/base-version';
 
 import '@awesome.me/webawesome/dist/components/button/button.js';
 import '@awesome.me/webawesome/dist/components/icon/icon.js';
@@ -35,6 +36,12 @@ export class TextSectionerComponent implements OnDestroy {
   saveErrorMessage = this.saveService.errorMessage;
   currentFile = this.libraryService.currentFile;
   showSaveOverlay = signal(false);
+  /**
+   * Git blob sha of the JSON the document was loaded from (or last saved
+   * as); null for pasted text. Sent with saves so a stale copy cannot
+   * overwrite newer repository changes (see base-version.ts).
+   */
+  private baseSha: Promise<string | null> = Promise.resolve(null);
   private scrollIntervalId: ReturnType<typeof setInterval>;
 
   @HostListener('document:keydown', ['$event'])
@@ -70,6 +77,7 @@ export class TextSectionerComponent implements OnDestroy {
     try {
       const content = await this.libraryService.loadFile(filename);
       this.service.dispatch({ type: 'loadJson', json: content });
+      this.baseSha = gitBlobSha(content);
       const savedScroll = localStorage.getItem(TextSectionerComponent.SCROLL_POSITION_KEY);
       if (savedScroll) {
         setTimeout(() => window.scrollTo(0, parseInt(savedScroll, 10)), 100);
@@ -129,16 +137,19 @@ export class TextSectionerComponent implements OnDestroy {
 
   onClear(): void {
     this.service.dispatch({ type: 'clearAll' });
+    this.baseSha = Promise.resolve(null);
   }
 
   onPasteText(text: string): void {
     this.service.dispatch({ type: 'loadText', text });
+    this.baseSha = Promise.resolve(null);
     this.applyChapterFile();
   }
 
   onLoad(content: string): void {
     try {
       this.service.dispatch({ type: 'loadJson', json: content });
+      this.baseSha = gitBlobSha(content);
       const filename = this.currentFile();
       if (filename) {
         localStorage.setItem(TextSectionerComponent.LAST_FILE_KEY, filename);
@@ -161,7 +172,22 @@ export class TextSectionerComponent implements OnDestroy {
       alert('Not saved, the chapter is invalid:\n' + problems.join('\n'));
       return;
     }
+    const reminted = this.service.remintedOnLoad();
+    if (
+      reminted > 0 &&
+      !confirm(
+        `${reminted} line(s) in the loaded file had no valid line id (or an old format) and were given new ids. ` +
+          'Saving replaces their ids, which breaks any alignment pointing at them. Save anyway?',
+      )
+    ) {
+      return;
+    }
     const message = `Edit ${filename} via editor`;
-    void this.saveService.save(path, content, message);
+    void this.saveWithBase(path, content, message);
+  }
+
+  private async saveWithBase(path: string, content: string, message: string): Promise<void> {
+    const saved = await this.saveService.save(path, content, message, await this.baseSha);
+    if (saved) this.baseSha = Promise.resolve(saved);
   }
 }

@@ -1,5 +1,6 @@
 /// <reference types="@cloudflare/workers-types" />
 import { checkChapterJson } from '../../src/app/editor/chapter-check';
+import { staleBaseError } from '../../src/app/services/base-version';
 
 interface Env {
   API_SECRET: string;
@@ -13,6 +14,11 @@ interface SaveRequest {
   path: string;
   content: string;
   message: string;
+  /**
+   * Git blob sha of the JSON the editor loaded. When given, the save is
+   * refused (409) if the file has changed since; see base-version.ts.
+   */
+  baseSha?: string;
 }
 
 function utf8ToBase64(str: string): string {
@@ -71,7 +77,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     });
   }
 
-  const { path, content, message } = body;
+  const { path, content, message, baseSha } = body;
   if (!path || !content || !message) {
     return new Response(JSON.stringify({ error: 'Missing required fields: path, content, message' }), {
       status: 400,
@@ -126,6 +132,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     });
   }
 
+  const stale = staleBaseError(baseSha, sha);
+  if (stale) {
+    return new Response(JSON.stringify({ error: stale }), {
+      status: 409,
+      headers: { 'Content-Type': 'application/json', ...cors },
+    });
+  }
+
   // PUT updated content
   const putBody: { message: string; content: string; sha?: string } = {
     message,
@@ -142,7 +156,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       body: JSON.stringify(putBody),
     });
 
-    const putData = (await putResponse.json()) as { commit?: { sha: string }; message?: string };
+    const putData = (await putResponse.json()) as {
+      commit?: { sha: string };
+      content?: { sha: string };
+      message?: string;
+    };
 
     if (!putResponse.ok) {
       return new Response(
@@ -152,7 +170,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     }
 
     return new Response(
-      JSON.stringify({ commitSha: putData.commit?.sha }),
+      JSON.stringify({ commitSha: putData.commit?.sha, contentSha: putData.content?.sha }),
       { status: 200, headers: { 'Content-Type': 'application/json', ...cors } },
     );
   } catch {
