@@ -5,6 +5,7 @@ import { EditorCommand, Focus } from '../editor/commands';
 import { XmlOutputComponent } from '../components/xml-output/xml-output.component';
 import { SaveService } from '../services/save.service';
 import { XmlLibraryService } from '../services/xml-library.service';
+import { checkChapterJson } from '../editor/chapter-check';
 
 import '@awesome.me/webawesome/dist/components/button/button.js';
 import '@awesome.me/webawesome/dist/components/icon/icon.js';
@@ -155,6 +156,11 @@ export class TextSectionerComponent implements OnDestroy {
     }
     const path = `data/chapters/${filename}`;
     const content = this.jsonOutput();
+    const problems = checkChapterJson(content);
+    if (problems.length > 0) {
+      alert('Not saved, the chapter is invalid:\n' + problems.join('\n'));
+      return;
+    }
     const message = `Edit ${filename} via editor`;
     void this.saveService.save(path, content, message);
   }

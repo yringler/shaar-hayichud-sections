@@ -1,4 +1,5 @@
 /// <reference types="@cloudflare/workers-types" />
+import { checkChapterJson } from '../../src/app/editor/chapter-check';
 
 interface Env {
   API_SECRET: string;
@@ -85,6 +86,16 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       { status: 400, headers: { 'Content-Type': 'application/json', ...cors } },
     );
   }
+  // Cheap structural check (line objects with valid, unique ids); the data
+  // build does the full schema and corpus-wide checks.
+  const problems = checkChapterJson(content);
+  if (problems.length > 0) {
+    return new Response(
+      JSON.stringify({ error: `Invalid chapter content: ${problems.join('; ')}` }),
+      { status: 400, headers: { 'Content-Type': 'application/json', ...cors } },
+    );
+  }
+
   const apiUrl = `https://api.github.com/repos/${env.GITHUB_OWNER}/${env.GITHUB_REPO}/contents/${repoPath}`;
   const githubHeaders = {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
