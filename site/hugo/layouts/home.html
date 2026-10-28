@@ -58,7 +58,7 @@
   <section>
     <h2>{{ $strings.nav.classes }}</h2>
     <ul class="index-list">
-      {{ range site.Data.classes }}
+      {{ range (partial "catalog.html" .).series }}
       <li><a href="/classes/{{ .title | urlize }}/">{{ .title }}</a></li>
       {{ end }}
     </ul>

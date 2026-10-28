@@ -1,7 +1,13 @@
-{{- /* Content adapter: generates series and part pages from data/classes.json */ -}}
+{{- /* Content adapter: generates series and part pages from the class catalog
+       (built from the repo's data/classes.txt; see layouts/partials/catalog.html). */ -}}
+{{- $catalog := partial "catalog.html" . -}}
 
-{{- range $si, $series := site.Data.classes -}}
+{{- /* Series whose title changed: keep their old URLs working. */ -}}
+{{- $legacySlugs := dict "37" "rabbi-markel-advanced-series" -}}
+
+{{- range $si, $series := $catalog.series -}}
   {{- $seriesSlug := $series.title | urlize -}}
+  {{- $legacy := index $legacySlugs $series.id -}}
 
   {{- /* Series page at /classes/series-slug/ */ -}}
   {{- $.AddPage (dict
@@ -13,27 +19,31 @@
       "pageLang" "en"
       "dir" "ltr"
       "seriesIndex" $si
+      "seriesSlug" $seriesSlug
       "layout" "series"
     )
+    "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/" $legacy)) slice)
   ) -}}
 
-  {{- /* Part pages at /classes/series-slug/part-slug/ */ -}}
-  {{- range $pi, $part := $series.children -}}
-    {{- $partSlug := $part.title | urlize -}}
-    {{- $.AddPage (dict
-      "mediaType" "text/html"
-      "path" (printf "%s/%s" $seriesSlug $partSlug)
-      "title" $part.title
-      "kind" "page"
-      "params" (dict
-        "pageLang" "en"
-        "dir" "ltr"
-        "seriesIndex" $si
-        "partIndex" $pi
-        "seriesTitle" $series.title
-        "seriesSlug" $seriesSlug
-        "partBase" (default "" $part.base)
-      )
-    ) -}}
+  {{- /* Part pages at /classes/series-slug/part-slug/ for each child section.
+         Lectures directly under a series are listed on the series page. */ -}}
+  {{- range $pi, $part := $series.items -}}
+    {{- if eq $part.type "section" -}}
+      {{- $partSlug := $part.title | urlize -}}
+      {{- $.AddPage (dict
+        "mediaType" "text/html"
+        "path" (printf "%s/%s" $seriesSlug $partSlug)
+        "title" $part.title
+        "kind" "page"
+        "params" (dict
+          "pageLang" "en"
+          "dir" "ltr"
+          "seriesIndex" $si
+          "partIndex" $pi
+          "seriesSlug" $seriesSlug
+        )
+        "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/%s/" $legacy $partSlug)) slice)
+      ) -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
