@@ -15,6 +15,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { encodePathSegment, type Catalog, type CatalogItem, type CatalogLecture, type CatalogSection } from './catalog.js';
 import { walkLines, type Chapter } from './chapter.js';
+import { TRANSCRIPTION_SERIES } from './transcription-config.js';
 import type { SchemaSet } from './validate.js';
 
 /** data/audio-publish.json */
@@ -354,6 +355,12 @@ interface StoredTranscriptLike {
   result: { timestamps?: TimedWord[] | null };
 }
 
+/** Whether the series is configured (transcription-config.ts) to label speakers. */
+export function speakerLabelsOn(seriesId: string, config = TRANSCRIPTION_SERIES): boolean {
+  const mode = config.find((c) => c.seriesId === seriesId)?.speakers.mode ?? 'off';
+  return mode !== 'off';
+}
+
 const readJson = (file: string): unknown => JSON.parse(readFileSync(file, 'utf8'));
 
 /**
@@ -415,8 +422,12 @@ export function publishAudio(input: PublishInput): PublishedAudio {
     }
     if (existsSync(transcriptFile)) {
       const raw = readJson(transcriptFile) as StoredTranscriptLike;
-      const words = raw.result.timestamps ?? [];
-      if (words.length === 0) continue;
+      const stored = raw.result.timestamps ?? [];
+      if (stored.length === 0) continue;
+      // Speaker labels are published only for series configured to label
+      // speakers; a transcript made before labeling was turned off keeps its
+      // stored labels but they are not shown.
+      const words = speakerLabelsOn(info.series.id) ? stored : stored.map(({ speaker: _, ...w }) => w);
       const p = `transcripts/${fileOf(id)}`;
       files.set(p, {
         schemaVersion: 1,

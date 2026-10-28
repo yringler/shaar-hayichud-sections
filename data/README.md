@@ -213,7 +213,7 @@ heading's `:N`; the tests check the title still matches `classes.txt`):
 | Series | Speaker labeling | Why |
 |--------|------------------|-----|
 | Rabbi Benyamin Walters Original Class (`:0`) | off (`num_speakers: 1`) | only Rabbi Walters is audible, even in Q and A |
-| Rabbi Markel Series (Advanced) (`:37`) | on (`auto_detect_speakers: true`, +$0.30/h) | teacher and students are both audible |
+| Rabbi Markel Series (Advanced) (`:37`) | off (`num_speakers: 1`) | students are audible, but auto-detection did not separate them (below) |
 
 A series not listed (today Walters New Class (2020) and Other Classes, which
 need cleanup first) is refused; `--allow-out-of-scope` overrides, with
@@ -224,8 +224,10 @@ with short questions. The setting sent is stored in the transcript's
 `sofer.request`. First result (Markel Part 1, October 2026): auto-detection
 found one speaker in the introduction and two in `002 Tape016-Side1-Ch10.mp3`,
 but the second speaker got only 16 words, all of them the teacher's own
-sentences, and about 300 words got no speaker; treat the labels as unreliable
-until more classes have been checked.
+sentences, and about 300 words got no speaker. Labeling was therefore turned
+off for Markel. Those two transcripts keep their stored labels, but the data
+build publishes `speaker` only for series whose labeling is on
+(`speakerLabelsOn` in `tools/src/publish.ts`), so they are not shown.
 
 For each lecture:
 
@@ -399,7 +401,8 @@ For each published lecture the build writes, when the source exists:
   site's chapter player reads this file.
 - `transcripts/<lecture>.json`: the words as paragraphs (`segments[]` of
   `startSeconds`/`endSeconds`/`text`, plus `speaker` when Sofer labelled
-  speakers). A paragraph ends at every change of speaker, at a pause of 2 s or
+  speakers and the series' speaker labeling is on in
+  `tools/src/transcription-config.ts`). A paragraph ends at every change of speaker, at a pause of 2 s or
   more (once it has 8 words), or at a sentence end once it has 25 words and a
   0.8 s pause, or 70 words; never more than 200 words
   (`DEFAULT_PARAGRAPH_OPTIONS` in `tools/src/publish.ts`). `chapter` is set

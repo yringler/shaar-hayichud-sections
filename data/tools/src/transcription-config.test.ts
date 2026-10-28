@@ -38,11 +38,12 @@ describe('transcription config', () => {
     assert.deepEqual(titles(outOfScope), ['Rabbi Benyamin Walters New Class (2020)', 'Rabbi Benyamin Walters Other Classes']);
   });
 
-  it('labels speakers for Markel (auto-detect) and not for Walters', () => {
+  it('labels no speakers for Walters or Markel (Markel auto-detect did not separate the students)', () => {
     const markel = byId('002 Tape016-Side1-Ch10.mp3');
     const walters = byId('07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3');
     assert.equal(seriesConfigFor(markel)?.seriesId, '37');
-    assert.deepEqual(speakerFields(speakerSettingFor(markel)), { auto_detect_speakers: true });
+    assert.deepEqual(speakerFields(speakerSettingFor(markel)), { num_speakers: 1 });
+    assert.deepEqual(speakerFields({ mode: 'auto' }), { auto_detect_speakers: true });
     assert.deepEqual(speakerFields(speakerSettingFor(walters)), { num_speakers: 1 });
     assert.deepEqual(speakerFields({ mode: 'count', count: 3 }), { num_speakers: 3 });
     assert.throws(() => speakerFields({ mode: 'count', count: 1 }), /> 1/);
