@@ -6,6 +6,7 @@
     "build": "yarn data && cd hugo && hugo --minify",
     "serve": "yarn data && cd hugo && hugo serve",
     "test": "node --test lib/json-renderer.test.js",
+    "test:scripts": "python3 -m unittest discover -s scripts",
     "epub": "node epub/build-epub.mjs"
   },
   "devDependencies": {

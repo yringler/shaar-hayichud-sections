@@ -18,6 +18,7 @@ yarn data     # Validate ../data and generate ../data/dist/v1 (run by build/serv
 yarn build    # data + Hugo build → hugo/public/ (minified)
 yarn serve    # data + Hugo dev server with live reload
 yarn test     # Unit tests for lib/json-renderer.js (data tests: cd ../data/tools && yarn test)
+yarn test:scripts  # Unit tests for scripts/sefaria-swap.py (python3)
 yarn epub     # Generate EPUB from ../data/chapters
 ```
 

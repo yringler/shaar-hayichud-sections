@@ -2,10 +2,13 @@
 tree, labels, translations and line ids. Usage: sefaria-swap.py SEFARIA_DIR CHAPTERS_DIR N...
 SEFARIA_DIR holds cN.json from /api/v3/texts/The_Gate_of_Unity.N?version=hebrew|Neirot, 2023
 
-Chapters must already have line ids (data/tools: yarn assign-line-ids). Each output line
-keeps the id of the old line that contributed most of its words (ties: the earlier old
-line); an id goes to at most one output line, and lines with no old words get a new id.
-New ids are random and unique across every chapter in CHAPTERS_DIR."""
+Chapters must already have line ids (data/tools: yarn assign-line-ids). Every output word
+is credited to the old line it came from (a respelled word counts for the old word it
+replaces). Within each run of lines, output lines and old line ids are then paired one to
+one, in order, keeping as many credited words as possible (see match_ids); an output line
+left without an old id gets a new one, and an old id left without a line disappears.
+New ids are random and unique across every chapter in CHAPTERS_DIR.
+Tests: python3 -m unittest discover -s scripts (from site/)."""
 import glob, json, re, secrets, sys
 from difflib import SequenceMatcher
 
@@ -86,10 +89,8 @@ def leaves_of(nodes, acc):
 def swap(old_tree, sefaria_lines, taken):
     leaf_refs = leaves_of(old_tree, [])
     old_toks, owner, src = [], [], []  # owner[k] = leaf index, src[k] = old line id of old token k
-    rank = {}  # old line id -> document order
     for li, (arr, start, end) in enumerate(leaf_refs):
         for line in arr[start:end]:
-            rank[line["id"]] = len(rank)
             for t in tokenize(line["text"]):
                 old_toks.append((t[0], " "))
                 owner.append(li)
@@ -135,7 +136,14 @@ def swap(old_tree, sefaria_lines, taken):
                 li = owner[i1 - 1] if i1 > 0 else owner[0]
             else:
                 li = owner[i1]
-            out[li].extend((w, sep, None) for w, sep in new_toks[j1:j2])
+            if op == "insert":
+                out[li].extend((w, sep, None) for w, sep in new_toks[j1:j2])
+            else:
+                # Respelled words: credit each new word to the aligned old word's line.
+                n_old, n_new = i2 - i1, j2 - j1
+                out[li].extend(
+                    (w, sep, src[i1 + k * n_old // n_new]) for k, (w, sep) in enumerate(new_toks[j1:j2])
+                )
             stats["inserted" if op == "insert" else "swapped"] += (j2 - j1) if op == "insert" else (i2 - i1)
         else:
             for k in range(i1, i2):
@@ -144,7 +152,6 @@ def swap(old_tree, sefaria_lines, taken):
 
     # Split each leaf into lines and pick ids. Replace runs back to front so earlier
     # indices in the same children array stay valid.
-    used = set()
     for li in sorted(range(len(leaf_refs)), key=lambda li: (id(leaf_refs[li][0]), -leaf_refs[li][1])):
         arr, start, end = leaf_refs[li]
         toks = out[li]
@@ -167,27 +174,41 @@ def swap(old_tree, sefaria_lines, taken):
                 if sid is not None:
                     counts[sid] = counts.get(sid, 0) + 1
             lines.append((line_text, counts))
-        arr[start:end] = [{"text": t, "counts": c} for t, c in lines]
-    # Assign ids in document order, so when two lines want the same old id the
-    # earlier one keeps it and the later one gets a new id.
-    for line in iter_new_lines(old_tree):
-        counts = line.pop("counts")
-        best = min(counts, key=lambda i: (-counts[i], rank[i]), default=None)
-        if best is None or best in used:
-            best = new_line_id(taken)
-            stats["new_ids"] += 1
-        used.add(best)
-        text_ = line.pop("text")
-        line["id"], line["text"] = best, text_
+        # Every word of this leaf came from this leaf's old lines, so ids are matched per leaf.
+        old_ids = [line["id"] for line in arr[start:end]]
+        ids = match_ids([c for _, c in lines], old_ids)
+        new_lines = []
+        for (line_text, _), kept in zip(lines, ids):
+            if kept is None:
+                kept = new_line_id(taken)
+                stats["new_ids"] += 1
+            new_lines.append({"id": kept, "text": line_text})
+        arr[start:end] = new_lines
     return stats
 
 
-def iter_new_lines(nodes):
-    for c in nodes:
-        if isinstance(c, dict) and "children" in c:
-            yield from iter_new_lines(c["children"])
-        elif isinstance(c, dict) and "counts" in c:
-            yield c
+def match_ids(counts, old_ids):
+    """Pair output lines with old line ids one to one, without crossing (both stay in
+    document order), maximizing the total number of words each kept id's line
+    contributed. counts[n] maps old id -> words of output line n credited to it.
+    -> per output line, the kept old id or None."""
+    n, m = len(counts), len(old_ids)
+    w = [[counts[i].get(old_ids[j], 0) for j in range(m)] for i in range(n)]
+    best = [[0] * (m + 1) for _ in range(n + 1)]
+    for i in range(n - 1, -1, -1):
+        for j in range(m - 1, -1, -1):
+            take = w[i][j] + best[i + 1][j + 1] if w[i][j] else 0
+            best[i][j] = max(take, best[i + 1][j], best[i][j + 1])
+    ids, i, j = [None] * n, 0, 0
+    while i < n and j < m:
+        if w[i][j] and best[i][j] == w[i][j] + best[i + 1][j + 1]:
+            ids[i] = old_ids[j]
+            i, j = i + 1, j + 1
+        elif best[i + 1][j] >= best[i][j + 1]:
+            i += 1
+        else:
+            j += 1
+    return ids
 
 
 def main():
