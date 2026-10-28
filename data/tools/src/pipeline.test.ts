@@ -43,7 +43,10 @@ describe('build (real data/)', () => {
       ],
     );
     const lectures = [...catalogLectures(catalog.series)];
-    assert.ok(lectures.every((l) => l.id === l.filename));
+    // Lectures whose file was renamed on the CDN keep their old id via an `@ id` line.
+    const renamed = new Map([["84 - The Rebbe's Shaar Hayichud.mp3", '84 - The Rebbes Shaar Hayichud.mp3']]);
+    assert.ok(lectures.every((l) => l.id === (renamed.get(l.filename) ?? l.filename)));
+    assert.ok(lectures.some((l) => l.id === '84 - The Rebbes Shaar Hayichud.mp3'));
     const first2020 = lectures.find((l) => l.id === 'Shaar HaYichud 001.m4a')!;
     assert.equal(first2020.folder, 'Walters Shaar HaYichud Recordings 2020');
     assert.equal(lectures.filter((l) => l.id === '003 Tape016-Side2-Ch10.mp3').length, 1);

@@ -120,6 +120,3 @@ yarn check-urls     # OPT-IN: HEAD every catalog URL on the CDN. Not part of the
 yarn set-durations  # ffprobe lectures with no :seconds and write the result into classes.txt
                     #   (downloads to tools/.cache/media/; needs ffprobe; --dry-run to preview)
 ```
-
-Known CDN gap: `84 - The Rebbes Shaar Hayichud.mp3` (Second Addendum) returns
-404 in every folder. `yarn check-urls` reports it.

@@ -1,7 +1,5 @@
 // Audio class catalog — the single source of truth for every class recording.
 // Grammar and tooling: see data/README.md. Build: cd data/tools && yarn build-data
-//
-// NOTE: "84 - The Rebbes Shaar Hayichud.mp3" (Second Addendum) currently 404s on the CDN.
 
 # Rabbi Benyamin Walters Original Class:0
 > Walters original 1 compact
@@ -273,8 +271,9 @@
 82 - History of Man.mp3:219.19925
 - Know Where to Jump
 83 - Know Where to Jump.mp3:106.87275
-- The Rebbes Shaar Hayichud
-84 - The Rebbes Shaar Hayichud.mp3
+- The Rebbe's Shaar Hayichud
+@ 84 - The Rebbes Shaar Hayichud.mp3
+84 - The Rebbe's Shaar Hayichud.mp3:58.285
 - Mapping Out G-d
 85 - Mapping Out G-d.mp3:38.458
 - Exponential Power
