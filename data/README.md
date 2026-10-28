@@ -33,8 +33,10 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 fetch it. Within `v1`, changes are additive only; a breaking change means a
 new `v2/` alongside it.
 
-Every lecture in the catalog carries one canonical, already-encoded `url`.
-Clients should use it as-is instead of rebuilding URLs from `folder` and
+Every lecture in the catalog has one canonical, already-encoded `url`. To
+build it, each folder segment and the filename are percent-encoded so that
+only RFC 3986 unreserved characters stay literal, then joined with `/`.
+Clients should use the `url` as-is and not rebuild it from `folder` and
 `filename`.
 
 ## Stable IDs — do not change them

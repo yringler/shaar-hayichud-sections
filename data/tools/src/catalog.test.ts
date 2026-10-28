@@ -10,6 +10,10 @@ describe('buildMediaUrl', () => {
       'https://cdn.example/Markel%20Seminar/Advanced%20%20part%201/014%20Ch15%2616.mp3',
     );
   });
+
+  it("also encodes !'()* so the URL has a single spelling", () => {
+    assert.equal(buildMediaUrl('https://cdn.example', 'A', "x (N)!'*.mp3"), 'https://cdn.example/A/x%20%28N%29%21%27%2A.mp3');
+  });
 });
 
 describe('buildCatalog', () => {

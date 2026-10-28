@@ -36,12 +36,17 @@ export interface Catalog {
   series: CatalogSection[];
 }
 
+/** encodeURIComponent plus !'()* — only RFC 3986 unreserved characters stay literal. */
+export function encodePathSegment(segment: string): string {
+  return encodeURIComponent(segment).replace(/[!'()*]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
+}
+
 /**
  * The one canonical URL for a CDN file: every folder segment and the filename
- * are encoded with encodeURIComponent and joined with '/'.
+ * are percent-encoded (encodePathSegment) and joined with '/'.
  */
 export function buildMediaUrl(cdnBase: string, folder: string, filename: string): string {
-  const path = [...folder.split('/'), filename].map((s) => encodeURIComponent(s)).join('/');
+  const path = [...folder.split('/'), filename].map(encodePathSegment).join('/');
   return `${cdnBase.replace(/\/+$/, '')}/${path}`;
 }
 

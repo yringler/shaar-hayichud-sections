@@ -95,7 +95,7 @@
         },
         "mediaType": { "enum": ["audio/mpeg", "audio/mp4"] },
         "url": {
-          "description": "Canonical, fully built and percent-encoded URL: cdnBase + each folder segment and the filename encoded with encodeURIComponent, joined by '/'. Use this as-is.",
+          "description": "Canonical, fully built and percent-encoded URL: cdnBase + '/' + each folder segment and the filename percent-encoded (encodeURIComponent, plus !'()*), joined by '/'. Use this as-is.",
           "type": "string",
           "pattern": "^https://"
         }
