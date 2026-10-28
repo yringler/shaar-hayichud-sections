@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { buildCatalog, catalogLectures, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
 import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
+import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
@@ -20,6 +21,8 @@ export interface DataPaths {
   distDir: string;
   /** Committed transcripts / alignments and their source schemas. */
   sources: SourcePaths;
+  /** Which transcripts / alignments are published (data/audio-publish.json). */
+  audioPolicy: string;
 }
 
 export function defaultPaths(dataDir = DATA_DIR): DataPaths {
@@ -29,6 +32,7 @@ export function defaultPaths(dataDir = DATA_DIR): DataPaths {
     schemaDir: path.join(dataDir, 'schema', 'v1'),
     distDir: path.join(dataDir, 'dist'),
     sources: defaultSourcePaths(dataDir),
+    audioPolicy: path.join(dataDir, 'audio-publish.json'),
   };
 }
 
@@ -77,11 +81,19 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     const lines = indexLineIds(loaded.chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })));
     errors.push(...lines.errors.map((e) => `chapters/${e}`));
     // Committed transcripts and alignments are checked (schema, names,
-    // line ids) but not published yet.
+    // line ids); the ones audio-publish.json selects are published below.
     const lectureIds = new Set([...catalog.series.flatMap((s) => [...catalogLectures(s.items)])].map((l) => l.id));
     errors.push(...validateSources(paths.sources, schemas, lectureIds, lines.index));
   }
   if (errors.length > 0) return { errors };
+  const audio = publishAudio({
+    dataDir: paths.sources.dataDir,
+    policyFile: paths.audioPolicy,
+    catalog,
+    chapters: loaded.chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })),
+    schemas,
+  });
+  if (audio.errors.length > 0) return { errors: audio.errors };
 
   const outDir = path.join(paths.distDir, 'v1');
   rmSync(outDir, { recursive: true, force: true });
@@ -94,10 +106,16 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     items: loaded.chapters.map((ch) => ({ id: ch.key, path: `chapters/${ch.file}`, schema: 'schema/chapter.schema.json' })),
   });
 
-  // Reserved collections: published empty so the URLs and shape exist.
-  for (const dir of ['alignments', 'transcripts']) {
-    writeJson(path.join(outDir, dir, 'index.json'), { schemaVersion: 1, items: [] });
-  }
+  // Audio: per-lecture alignments and transcripts, plus one alignment index
+  // per chapter. The index files always exist, even when empty.
+  // `p` is the URL path (lecture ids percent-encoded, as index.json lists
+  // it); the file on disk has the decoded name, so a web server that decodes
+  // the request path finds it.
+  for (const [p, data] of audio.files) writeJson(path.join(outDir, ...p.split('/').map(decodeURIComponent)), data);
+  writeJson(path.join(outDir, 'alignments', 'index.json'), { schemaVersion: 1, items: audio.alignmentItems });
+  writeJson(path.join(outDir, 'alignments', 'chapters', 'index.json'), { schemaVersion: 1, items: audio.chapterItems });
+  writeJson(path.join(outDir, 'transcripts', 'index.json'), { schemaVersion: 1, items: audio.transcriptItems });
+  writeJson(path.join(outDir, 'outlines', 'index.json'), { schemaVersion: 1, items: audio.outlineItems });
 
   mkdirSync(path.join(outDir, 'schema'), { recursive: true });
   for (const file of schemas.files()) copyFileSync(path.join(paths.schemaDir, file), path.join(outDir, 'schema', file));
@@ -108,7 +126,9 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
       { id: 'catalog', path: 'catalog.json', schema: 'schema/catalog.schema.json' },
       { id: 'chapters', path: 'chapters/index.json', schema: 'schema/index.schema.json' },
       { id: 'alignments', path: 'alignments/index.json', schema: 'schema/index.schema.json' },
+      { id: 'chapter-alignments', path: 'alignments/chapters/index.json', schema: 'schema/index.schema.json' },
       { id: 'transcripts', path: 'transcripts/index.json', schema: 'schema/index.schema.json' },
+      { id: 'outlines', path: 'outlines/index.json', schema: 'schema/index.schema.json' },
     ],
   });
 

@@ -1,27 +1,61 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.shaarhayichudresources.com/data/v1/schema/transcript.schema.json",
-  "title": "Lecture transcript (v1, RESERVED)",
-  "description": "PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/transcripts/<url-encoded lecture id>.json). Fields may still be added before first use; existing fields will not change meaning within v1.",
-  "x-status": "reserved",
+  "title": "Lecture transcript (v1)",
+  "description": "One file per lecture (/data/v1/transcripts/<url-encoded lecture id>.json, listed in transcripts/index.json): the machine transcript (Sofer.ai) as paragraphs, split at pauses or sentence ends. Only lectures selected in data/audio-publish.json are published. Within v1, fields are only added.",
   "type": "object",
-  "required": ["schemaVersion", "lectureId", "language", "segments"],
+  "required": [
+    "schemaVersion",
+    "lectureId",
+    "language",
+    "segments"
+  ],
   "properties": {
-    "schemaVersion": { "const": 1 },
-    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
-    "language": { "description": "BCP 47 language tag, e.g. 'en'.", "type": "string", "minLength": 2 },
+    "schemaVersion": {
+      "const": 1
+    },
+    "lectureId": {
+      "description": "Catalog lecture id.",
+      "type": "string",
+      "minLength": 1
+    },
+    "language": {
+      "description": "BCP 47 language tag, e.g. 'en'.",
+      "type": "string",
+      "minLength": 2
+    },
+    "chapter": {
+      "description": "Chapter file key the lecture teaches (e.g. 'chapter_10'), when it teaches one chapter's text. Absent for introductions, Q and A and addenda. Optional: added after the first v1 release.",
+      "type": "string",
+      "pattern": "^chapter_\\d+$"
+    },
     "segments": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["startSeconds", "endSeconds", "text"],
+        "required": [
+          "startSeconds",
+          "endSeconds",
+          "text"
+        ],
         "properties": {
-          "startSeconds": { "type": "number", "minimum": 0 },
-          "endSeconds": { "type": "number", "minimum": 0 },
-          "text": { "type": "string" },
-          "speaker": { "type": "string" }
+          "startSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "text": {
+            "type": "string"
+          },
+          "speaker": {
+            "type": "string"
+          }
         }
-      }
+      },
+      "description": "Paragraphs in time order."
     }
   }
 }

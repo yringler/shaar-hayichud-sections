@@ -2,8 +2,8 @@
 
 Pure Dart models and a small loader for the data this repo publishes at
 `https://www.shaarhayichudresources.com/data/v1/`: the audio class catalog,
-the chapter text (`TextNode` trees), and the reserved alignment and transcript
-shapes. No Flutter dependency, so it works in apps, CLIs and servers.
+the chapter text (`TextNode` trees), and the class alignments and
+transcripts. No Flutter dependency, so it works in apps, CLIs and servers.
 
 ## Install
 
@@ -78,6 +78,14 @@ valid v1 catalog. Refresh the bundled copy when you release the app.
 
 ## Versions
 
+- **1.2.0**: alignments and transcripts are published. Added
+  `ChapterAlignments` (`alignments/chapters/chapter_NN.json`),
+  `parseChapterAlignments`, `DataUrls.chapterAlignments` /
+  `chapterAlignmentsIndex`, `Outline` (`outlines/<lecture>.json`,
+  auto-generated topics), `parseOutline`, `DataUrls.outline` /
+  `outlinesIndex`, and the optional `Alignment.chapter`,
+  `AlignmentSegment.confidence`, `Transcript.chapter` and
+  `ChapterAlignmentsLecture.outline`.
 - **1.1.0**: chapter text is a list of `TextLine` (`id` + `text`) instead of
   newline-joined strings (`TextFragment` is gone); `TextNode` no longer has
   `id` or the deprecated `text`; alignment segments reference `lineId`.

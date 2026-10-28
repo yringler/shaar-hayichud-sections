@@ -1,24 +1,63 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.shaarhayichudresources.com/data/v1/schema/alignment.schema.json",
-  "title": "Lecture-to-text alignment (v1, RESERVED)",
-  "description": "PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/<url-encoded lecture id>.json) mapping time ranges in the recording to chapter lines. Fields may still be added before first use; existing fields will not change meaning within v1.",
-  "x-status": "reserved",
+  "title": "Lecture-to-text alignment (v1)",
+  "description": "One file per lecture (/data/v1/alignments/<url-encoded lecture id>.json, listed in alignments/index.json) mapping time ranges in the recording to chapter lines. A line's range covers the whole time the line is under discussion (it can span minutes). Only lectures selected in data/audio-publish.json are published; lines that were not aligned, or aligned below its confidence floor, are absent. Within v1, fields are only added.",
   "type": "object",
-  "required": ["schemaVersion", "lectureId", "segments"],
+  "required": [
+    "schemaVersion",
+    "lectureId",
+    "segments"
+  ],
   "properties": {
-    "schemaVersion": { "const": 1 },
-    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "schemaVersion": {
+      "const": 1
+    },
+    "lectureId": {
+      "description": "Catalog lecture id.",
+      "type": "string",
+      "minLength": 1
+    },
+    "chapter": {
+      "description": "Chapter file key the lecture teaches, e.g. 'chapter_10'. Optional: added after the first v1 release.",
+      "type": "string",
+      "pattern": "^chapter_\\d+$"
+    },
     "segments": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["startSeconds", "endSeconds", "chapter", "lineId"],
+        "required": [
+          "startSeconds",
+          "endSeconds",
+          "chapter",
+          "lineId"
+        ],
         "properties": {
-          "startSeconds": { "type": "number", "minimum": 0 },
-          "endSeconds": { "type": "number", "minimum": 0 },
-          "chapter": { "description": "Chapter file key, e.g. 'chapter_01'.", "type": "string", "pattern": "^chapter_\\d+$" },
-          "lineId": { "description": "id of the chapter line this range covers (chapter.schema.json $defs/line). Line ids are unique across all chapters; the build checks that the line exists in the named chapter.", "type": "string", "pattern": "^[a-z2-7]{8}$" }
+          "startSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "endSeconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "chapter": {
+            "description": "Chapter file key, e.g. 'chapter_01'.",
+            "type": "string",
+            "pattern": "^chapter_\\d+$"
+          },
+          "lineId": {
+            "description": "id of the chapter line this range covers (chapter.schema.json $defs/line). Line ids are unique across all chapters; the build checks that the line exists in the named chapter.",
+            "type": "string",
+            "pattern": "^[a-z2-7]{8}$"
+          },
+          "confidence": {
+            "description": "0..1: similarity-weighted share of the line's words heard in this range. Optional: added after the first v1 release.",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
         }
       }
     }

@@ -30,6 +30,24 @@ enum MediaType {
   }
 }
 
+/// How surely the topic's start was located in the transcript.
+enum OutlineTopicConfidence {
+  high("HIGH"),
+  medium("MEDIUM");
+
+  const OutlineTopicConfidence(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static OutlineTopicConfidence fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('OutlineTopicConfidence: unknown value $json');
+  }
+}
+
 /// One of: [CatalogSection], [CatalogLecture].
 sealed class CatalogItem {
   const CatalogItem();
@@ -551,6 +569,7 @@ final class AlignmentSegment {
     required this.endSeconds,
     required this.chapter,
     required this.lineId,
+    this.confidence,
   });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
@@ -574,6 +593,10 @@ final class AlignmentSegment {
         _req(m, "lineId", 'AlignmentSegment.lineId'),
         'AlignmentSegment.lineId',
       ),
+      confidence: _opt(
+        m["confidence"],
+        (v) => _double(v, 'AlignmentSegment.confidence'),
+      ),
     );
   }
 
@@ -587,11 +610,15 @@ final class AlignmentSegment {
   /// id of the chapter line this range covers (chapter.schema.json $defs/line). Line ids are unique across all chapters; the build checks that the line exists in the named chapter.
   final String lineId;
 
+  /// 0..1: similarity-weighted share of the line's words heard in this range. Optional: added after the first v1 release.
+  final double? confidence;
+
   Map<String, Object?> toJson() => {
     "startSeconds": startSeconds,
     "endSeconds": endSeconds,
     "chapter": chapter,
     "lineId": lineId,
+    if (confidence != null) "confidence": confidence,
   };
 
   @override
@@ -601,23 +628,26 @@ final class AlignmentSegment {
           other.startSeconds == startSeconds &&
           other.endSeconds == endSeconds &&
           other.chapter == chapter &&
-          other.lineId == lineId);
+          other.lineId == lineId &&
+          other.confidence == confidence);
 
   @override
   int get hashCode =>
-      Object.hashAll([startSeconds, endSeconds, chapter, lineId]);
+      Object.hashAll([startSeconds, endSeconds, chapter, lineId, confidence]);
 
   @override
   String toString() => 'AlignmentSegment(${toJson()})';
 }
 
-/// Lecture-to-text alignment (v1, RESERVED)
+/// Lecture-to-text alignment (v1)
 ///
-/// PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/`<url-encoded lecture id>`.json) mapping time ranges in the recording to chapter lines. Fields may still be added before first use; existing fields will not change meaning within v1.
-///
-/// RESERVED: no files are published with this shape yet.
+/// One file per lecture (/data/v1/alignments/`<url-encoded lecture id>`.json, listed in alignments/index.json) mapping time ranges in the recording to chapter lines. A line's range covers the whole time the line is under discussion (it can span minutes). Only lectures selected in data/audio-publish.json are published; lines that were not aligned, or aligned below its confidence floor, are absent. Within v1, fields are only added.
 final class Alignment {
-  const Alignment({required this.lectureId, required this.segments});
+  const Alignment({
+    required this.lectureId,
+    this.chapter,
+    required this.segments,
+  });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
   /// [json] does not match the schema. Unknown keys are ignored.
@@ -633,6 +663,7 @@ final class Alignment {
         _req(m, "lectureId", 'Alignment.lectureId'),
         'Alignment.lectureId',
       ),
+      chapter: _opt(m["chapter"], (v) => _string(v, 'Alignment.chapter')),
       segments: List.unmodifiable(
         _list(
           _req(m, "segments", 'Alignment.segments'),
@@ -648,11 +679,15 @@ final class Alignment {
   /// Catalog lecture id.
   final String lectureId;
 
+  /// Chapter file key the lecture teaches, e.g. 'chapter_10'. Optional: added after the first v1 release.
+  final String? chapter;
+
   final List<AlignmentSegment> segments;
 
   Map<String, Object?> toJson() => {
     "schemaVersion": schemaVersion,
     "lectureId": lectureId,
+    if (chapter != null) "chapter": chapter,
     "segments": [for (final e in segments) e.toJson()],
   };
 
@@ -661,10 +696,12 @@ final class Alignment {
       identical(this, other) ||
       (other is Alignment &&
           other.lectureId == lectureId &&
+          other.chapter == chapter &&
           _listEquals(other.segments, segments));
 
   @override
-  int get hashCode => Object.hashAll([lectureId, Object.hashAll(segments)]);
+  int get hashCode =>
+      Object.hashAll([lectureId, chapter, Object.hashAll(segments)]);
 
   @override
   String toString() => 'Alignment(${toJson()})';
@@ -733,15 +770,14 @@ final class TranscriptSegment {
   String toString() => 'TranscriptSegment(${toJson()})';
 }
 
-/// Lecture transcript (v1, RESERVED)
+/// Lecture transcript (v1)
 ///
-/// PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/transcripts/`<url-encoded lecture id>`.json). Fields may still be added before first use; existing fields will not change meaning within v1.
-///
-/// RESERVED: no files are published with this shape yet.
+/// One file per lecture (/data/v1/transcripts/`<url-encoded lecture id>`.json, listed in transcripts/index.json): the machine transcript (Sofer.ai) as paragraphs, split at pauses or sentence ends. Only lectures selected in data/audio-publish.json are published. Within v1, fields are only added.
 final class Transcript {
   const Transcript({
     required this.lectureId,
     required this.language,
+    this.chapter,
     required this.segments,
   });
 
@@ -763,6 +799,7 @@ final class Transcript {
         _req(m, "language", 'Transcript.language'),
         'Transcript.language',
       ),
+      chapter: _opt(m["chapter"], (v) => _string(v, 'Transcript.chapter')),
       segments: List.unmodifiable(
         _list(
           _req(m, "segments", 'Transcript.segments'),
@@ -781,12 +818,17 @@ final class Transcript {
   /// BCP 47 language tag, e.g. 'en'.
   final String language;
 
+  /// Chapter file key the lecture teaches (e.g. 'chapter_10'), when it teaches one chapter's text. Absent for introductions, Q and A and addenda. Optional: added after the first v1 release.
+  final String? chapter;
+
+  /// Paragraphs in time order.
   final List<TranscriptSegment> segments;
 
   Map<String, Object?> toJson() => {
     "schemaVersion": schemaVersion,
     "lectureId": lectureId,
     "language": language,
+    if (chapter != null) "chapter": chapter,
     "segments": [for (final e in segments) e.toJson()],
   };
 
@@ -796,14 +838,466 @@ final class Transcript {
       (other is Transcript &&
           other.lectureId == lectureId &&
           other.language == language &&
+          other.chapter == chapter &&
           _listEquals(other.segments, segments));
 
   @override
   int get hashCode =>
-      Object.hashAll([lectureId, language, Object.hashAll(segments)]);
+      Object.hashAll([lectureId, language, chapter, Object.hashAll(segments)]);
 
   @override
   String toString() => 'Transcript(${toJson()})';
+}
+
+final class ChapterAlignmentsLecture {
+  const ChapterAlignmentsLecture({
+    required this.id,
+    required this.url,
+    required this.title,
+    required this.seriesId,
+    required this.series,
+    required this.part,
+    required this.durationSeconds,
+    required this.alignment,
+    this.transcript,
+    this.outline,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory ChapterAlignmentsLecture.fromJson(Object? json) {
+    final m = _map(json, 'ChapterAlignmentsLecture');
+    return ChapterAlignmentsLecture(
+      id: _string(
+        _req(m, "id", 'ChapterAlignmentsLecture.id'),
+        'ChapterAlignmentsLecture.id',
+      ),
+      url: _string(
+        _req(m, "url", 'ChapterAlignmentsLecture.url'),
+        'ChapterAlignmentsLecture.url',
+      ),
+      title: _string(
+        _req(m, "title", 'ChapterAlignmentsLecture.title'),
+        'ChapterAlignmentsLecture.title',
+      ),
+      seriesId: _string(
+        _req(m, "seriesId", 'ChapterAlignmentsLecture.seriesId'),
+        'ChapterAlignmentsLecture.seriesId',
+      ),
+      series: _string(
+        _req(m, "series", 'ChapterAlignmentsLecture.series'),
+        'ChapterAlignmentsLecture.series',
+      ),
+      part: _string(
+        _req(m, "part", 'ChapterAlignmentsLecture.part'),
+        'ChapterAlignmentsLecture.part',
+      ),
+      durationSeconds: _opt(
+        _req(m, "durationSeconds", 'ChapterAlignmentsLecture.durationSeconds'),
+        (v) => _double(v, 'ChapterAlignmentsLecture.durationSeconds'),
+      ),
+      alignment: _string(
+        _req(m, "alignment", 'ChapterAlignmentsLecture.alignment'),
+        'ChapterAlignmentsLecture.alignment',
+      ),
+      transcript: _opt(
+        m["transcript"],
+        (v) => _string(v, 'ChapterAlignmentsLecture.transcript'),
+      ),
+      outline: _opt(
+        m["outline"],
+        (v) => _string(v, 'ChapterAlignmentsLecture.outline'),
+      ),
+    );
+  }
+
+  /// Catalog lecture id.
+  final String id;
+
+  /// The lecture's canonical audio URL (catalog `url`).
+  final String url;
+
+  /// Catalog title, e.g. 'Part 1'.
+  final String title;
+
+  /// Catalog id of the series (top-level section).
+  final String seriesId;
+
+  /// Series title.
+  final String series;
+
+  /// Titles of the headings between the series and the lecture, joined with ' / '.
+  final String part;
+
+  final double? durationSeconds;
+
+  /// Path of the lecture's alignment file, relative to /data/v1/.
+  final String alignment;
+
+  /// Path of the lecture's transcript file, relative to /data/v1/, when one is published.
+  final String? transcript;
+
+  /// Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.
+  final String? outline;
+
+  Map<String, Object?> toJson() => {
+    "id": id,
+    "url": url,
+    "title": title,
+    "seriesId": seriesId,
+    "series": series,
+    "part": part,
+    "durationSeconds": durationSeconds,
+    "alignment": alignment,
+    if (transcript != null) "transcript": transcript,
+    if (outline != null) "outline": outline,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ChapterAlignmentsLecture &&
+          other.id == id &&
+          other.url == url &&
+          other.title == title &&
+          other.seriesId == seriesId &&
+          other.series == series &&
+          other.part == part &&
+          other.durationSeconds == durationSeconds &&
+          other.alignment == alignment &&
+          other.transcript == transcript &&
+          other.outline == outline);
+
+  @override
+  int get hashCode => Object.hashAll([
+    id,
+    url,
+    title,
+    seriesId,
+    series,
+    part,
+    durationSeconds,
+    alignment,
+    transcript,
+    outline,
+  ]);
+
+  @override
+  String toString() => 'ChapterAlignmentsLecture(${toJson()})';
+}
+
+final class ChapterAlignmentsRef {
+  const ChapterAlignmentsRef({
+    required this.lecture,
+    required this.startSeconds,
+    required this.endSeconds,
+    required this.confidence,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory ChapterAlignmentsRef.fromJson(Object? json) {
+    final m = _map(json, 'ChapterAlignmentsRef');
+    return ChapterAlignmentsRef(
+      lecture: _int(
+        _req(m, "lecture", 'ChapterAlignmentsRef.lecture'),
+        'ChapterAlignmentsRef.lecture',
+      ),
+      startSeconds: _double(
+        _req(m, "startSeconds", 'ChapterAlignmentsRef.startSeconds'),
+        'ChapterAlignmentsRef.startSeconds',
+      ),
+      endSeconds: _double(
+        _req(m, "endSeconds", 'ChapterAlignmentsRef.endSeconds'),
+        'ChapterAlignmentsRef.endSeconds',
+      ),
+      confidence: _double(
+        _req(m, "confidence", 'ChapterAlignmentsRef.confidence'),
+        'ChapterAlignmentsRef.confidence',
+      ),
+    );
+  }
+
+  /// Index into `lectures`.
+  final int lecture;
+
+  final double startSeconds;
+
+  final double endSeconds;
+
+  final double confidence;
+
+  Map<String, Object?> toJson() => {
+    "lecture": lecture,
+    "startSeconds": startSeconds,
+    "endSeconds": endSeconds,
+    "confidence": confidence,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ChapterAlignmentsRef &&
+          other.lecture == lecture &&
+          other.startSeconds == startSeconds &&
+          other.endSeconds == endSeconds &&
+          other.confidence == confidence);
+
+  @override
+  int get hashCode =>
+      Object.hashAll([lecture, startSeconds, endSeconds, confidence]);
+
+  @override
+  String toString() => 'ChapterAlignmentsRef(${toJson()})';
+}
+
+final class ChapterAlignmentsLine {
+  const ChapterAlignmentsLine({required this.lineId, required this.refs});
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory ChapterAlignmentsLine.fromJson(Object? json) {
+    final m = _map(json, 'ChapterAlignmentsLine');
+    return ChapterAlignmentsLine(
+      lineId: _string(
+        _req(m, "lineId", 'ChapterAlignmentsLine.lineId'),
+        'ChapterAlignmentsLine.lineId',
+      ),
+      refs: List.unmodifiable(
+        _list(
+          _req(m, "refs", 'ChapterAlignmentsLine.refs'),
+          'ChapterAlignmentsLine.refs',
+        ).map((e) => ChapterAlignmentsRef.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Chapter line id.
+  final String lineId;
+
+  /// Where the line is discussed: highest confidence first, then catalog order.
+  final List<ChapterAlignmentsRef> refs;
+
+  Map<String, Object?> toJson() => {
+    "lineId": lineId,
+    "refs": [for (final e in refs) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ChapterAlignmentsLine &&
+          other.lineId == lineId &&
+          _listEquals(other.refs, refs));
+
+  @override
+  int get hashCode => Object.hashAll([lineId, Object.hashAll(refs)]);
+
+  @override
+  String toString() => 'ChapterAlignmentsLine(${toJson()})';
+}
+
+/// Classes aligned to one chapter (v1)
+///
+/// One file per chapter that has published alignments (/data/v1/alignments/chapters/chapter_NN.json, listed in alignments/chapters/index.json): every published class that discusses the chapter, and for each aligned line the time ranges in those classes. Derived from the per-lecture alignment files. Within v1, fields are only added.
+final class ChapterAlignments {
+  const ChapterAlignments({
+    required this.chapter,
+    required this.lectures,
+    required this.lines,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory ChapterAlignments.fromJson(Object? json) {
+    final m = _map(json, 'ChapterAlignments');
+    if (m['schemaVersion'] != 1) {
+      throw FormatException(
+        'ChapterAlignments.schemaVersion: expected 1, got ${m['schemaVersion']}',
+      );
+    }
+    return ChapterAlignments(
+      chapter: _string(
+        _req(m, "chapter", 'ChapterAlignments.chapter'),
+        'ChapterAlignments.chapter',
+      ),
+      lectures: List.unmodifiable(
+        _list(
+          _req(m, "lectures", 'ChapterAlignments.lectures'),
+          'ChapterAlignments.lectures',
+        ).map((e) => ChapterAlignmentsLecture.fromJson(e)),
+      ),
+      lines: List.unmodifiable(
+        _list(
+          _req(m, "lines", 'ChapterAlignments.lines'),
+          'ChapterAlignments.lines',
+        ).map((e) => ChapterAlignmentsLine.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Always 1.
+  int get schemaVersion => 1;
+
+  /// Chapter file key, e.g. 'chapter_10'.
+  final String chapter;
+
+  /// Classes in catalog order. `lines[].refs[].lecture` indexes this array.
+  final List<ChapterAlignmentsLecture> lectures;
+
+  /// Aligned lines in document order. Lines with no published alignment are absent.
+  final List<ChapterAlignmentsLine> lines;
+
+  Map<String, Object?> toJson() => {
+    "schemaVersion": schemaVersion,
+    "chapter": chapter,
+    "lectures": [for (final e in lectures) e.toJson()],
+    "lines": [for (final e in lines) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is ChapterAlignments &&
+          other.chapter == chapter &&
+          _listEquals(other.lectures, lectures) &&
+          _listEquals(other.lines, lines));
+
+  @override
+  int get hashCode => Object.hashAll([
+    chapter,
+    Object.hashAll(lectures),
+    Object.hashAll(lines),
+  ]);
+
+  @override
+  String toString() => 'ChapterAlignments(${toJson()})';
+}
+
+final class OutlineTopic {
+  const OutlineTopic({
+    required this.title,
+    required this.startSeconds,
+    required this.confidence,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory OutlineTopic.fromJson(Object? json) {
+    final m = _map(json, 'OutlineTopic');
+    return OutlineTopic(
+      title: _string(
+        _req(m, "title", 'OutlineTopic.title'),
+        'OutlineTopic.title',
+      ),
+      startSeconds: _double(
+        _req(m, "startSeconds", 'OutlineTopic.startSeconds'),
+        'OutlineTopic.startSeconds',
+      ),
+      confidence: OutlineTopicConfidence.fromJson(
+        _req(m, "confidence", 'OutlineTopic.confidence'),
+      ),
+    );
+  }
+
+  final String title;
+
+  final double startSeconds;
+
+  /// How surely the topic's start was located in the transcript.
+  final OutlineTopicConfidence confidence;
+
+  Map<String, Object?> toJson() => {
+    "title": title,
+    "startSeconds": startSeconds,
+    "confidence": confidence.json,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is OutlineTopic &&
+          other.title == title &&
+          other.startSeconds == startSeconds &&
+          other.confidence == confidence);
+
+  @override
+  int get hashCode => Object.hashAll([title, startSeconds, confidence]);
+
+  @override
+  String toString() => 'OutlineTopic(${toJson()})';
+}
+
+/// Lecture topic outline (v1)
+///
+/// One file per lecture (/data/v1/outlines/`<url-encoded lecture id>`.json, listed in outlines/index.json): an auto-generated (Sofer.ai, LLM) list of the topics a class covers, on the class timeline. Only topics that were located in the recording with HIGH or MEDIUM confidence are published. Topics follow the recording, not chapter lines. Within v1, fields are only added.
+final class Outline {
+  const Outline({
+    required this.lectureId,
+    required this.generatedBy,
+    required this.topics,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory Outline.fromJson(Object? json) {
+    final m = _map(json, 'Outline');
+    if (m['schemaVersion'] != 1) {
+      throw FormatException(
+        'Outline.schemaVersion: expected 1, got ${m['schemaVersion']}',
+      );
+    }
+    return Outline(
+      lectureId: _string(
+        _req(m, "lectureId", 'Outline.lectureId'),
+        'Outline.lectureId',
+      ),
+      generatedBy: _string(
+        _req(m, "generatedBy", 'Outline.generatedBy'),
+        'Outline.generatedBy',
+      ),
+      topics: List.unmodifiable(
+        _list(
+          _req(m, "topics", 'Outline.topics'),
+          'Outline.topics',
+        ).map((e) => OutlineTopic.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Always 1.
+  int get schemaVersion => 1;
+
+  /// Catalog lecture id.
+  final String lectureId;
+
+  /// Who generated the outline, e.g. 'sofer.ai'. Show it as auto-generated.
+  final String generatedBy;
+
+  /// Topics in time order.
+  final List<OutlineTopic> topics;
+
+  Map<String, Object?> toJson() => {
+    "schemaVersion": schemaVersion,
+    "lectureId": lectureId,
+    "generatedBy": generatedBy,
+    "topics": [for (final e in topics) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is Outline &&
+          other.lectureId == lectureId &&
+          other.generatedBy == generatedBy &&
+          _listEquals(other.topics, topics));
+
+  @override
+  int get hashCode =>
+      Object.hashAll([lectureId, generatedBy, Object.hashAll(topics)]);
+
+  @override
+  String toString() => 'Outline(${toJson()})';
 }
 
 Map<String, Object?> _map(Object? json, String ctx) {

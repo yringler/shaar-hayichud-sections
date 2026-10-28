@@ -34,7 +34,20 @@ void main() {
       urls.alignment('01 - Intro.mp3').toString(),
       '$base/alignments/01%20-%20Intro.mp3.json',
     );
+    expect(
+      urls.chapterAlignmentsIndex.toString(),
+      '$base/alignments/chapters/index.json',
+    );
+    expect(
+      urls.chapterAlignments('chapter_10').toString(),
+      '$base/alignments/chapters/chapter_10.json',
+    );
     expect(urls.transcriptsIndex.toString(), '$base/transcripts/index.json');
+    expect(urls.outlinesIndex.toString(), '$base/outlines/index.json');
+    expect(
+      urls.outline('01 - Intro.mp3').toString(),
+      '$base/outlines/01%20-%20Intro.mp3.json',
+    );
     expect(
       urls.schema('catalog.schema.json').toString(),
       '$base/schema/catalog.schema.json',

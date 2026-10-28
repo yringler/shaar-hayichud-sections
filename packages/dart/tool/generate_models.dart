@@ -18,6 +18,8 @@ const schemaRoots = {
   'index.schema.json': 'IndexListing',
   'alignment.schema.json': 'Alignment',
   'transcript.schema.json': 'Transcript',
+  'chapter-alignments.schema.json': 'ChapterAlignments',
+  'outline.schema.json': 'Outline',
 };
 
 /// Derived names that read badly are renamed here.

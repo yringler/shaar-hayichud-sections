@@ -67,19 +67,35 @@ class DataUrls {
   Uri chapterByKey(String key) =>
       _at('chapters/${encodePathSegment(key)}.json');
 
-  /// Listing of the alignment files (reserved; currently empty).
+  /// Listing of the per-lecture alignment files (only published lectures).
   Uri get alignmentsIndex => _at('alignments/index.json');
 
-  /// The alignment for a catalog lecture id (reserved; not published yet).
+  /// The alignment for a catalog lecture id (404 when not published).
   Uri alignment(String lectureId) =>
       _at('alignments/${encodePathSegment(lectureId)}.json');
 
-  /// Listing of the transcript files (reserved; currently empty).
+  /// Listing of the per-chapter alignment indexes.
+  Uri get chapterAlignmentsIndex => _at('alignments/chapters/index.json');
+
+  /// Every published class aligned to chapter [key] (e.g. `chapter_10`;
+  /// 404 when none is).
+  Uri chapterAlignments(String key) =>
+      _at('alignments/chapters/${encodePathSegment(key)}.json');
+
+  /// Listing of the transcript files (only published lectures).
   Uri get transcriptsIndex => _at('transcripts/index.json');
 
-  /// The transcript for a catalog lecture id (reserved; not published yet).
+  /// The transcript for a catalog lecture id (404 when not published).
   Uri transcript(String lectureId) =>
       _at('transcripts/${encodePathSegment(lectureId)}.json');
+
+  /// Listing of the topic outline files (only published lectures).
+  Uri get outlinesIndex => _at('outlines/index.json');
+
+  /// The auto-generated topic outline for a catalog lecture id (404 when
+  /// not published).
+  Uri outline(String lectureId) =>
+      _at('outlines/${encodePathSegment(lectureId)}.json');
 
   /// A JSON Schema by file name, e.g. `catalog.schema.json`.
   Uri schema(String fileName) => _at('schema/${encodePathSegment(fileName)}');

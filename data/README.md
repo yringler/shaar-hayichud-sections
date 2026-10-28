@@ -10,6 +10,8 @@ Hayichud comes from this directory:
 | `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
 | `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
+| `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (when present) | Sofer tooling |
+| `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
@@ -27,8 +29,10 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 | `/data/v1/index.json` | `schema/v1/index.schema.json` — lists the files below |
 | `/data/v1/catalog.json` | `schema/v1/catalog.schema.json` |
 | `/data/v1/chapters/index.json`, `/data/v1/chapters/chapter_NN.json` | `index.schema.json`, `chapter.schema.json` |
-| `/data/v1/alignments/index.json` | reserved (empty) — per-lecture files will follow `alignment.schema.json` |
-| `/data/v1/transcripts/index.json` | reserved (empty) — per-lecture files will follow `transcript.schema.json` |
+| `/data/v1/alignments/index.json`, `/data/v1/alignments/<lecture>.json` | `index.schema.json`, `alignment.schema.json` — per class: line ID → time range + confidence |
+| `/data/v1/alignments/chapters/index.json`, `/data/v1/alignments/chapters/chapter_NN.json` | `index.schema.json`, `chapter-alignments.schema.json` — per chapter: the classes that discuss it and, per aligned line, every class's range |
+| `/data/v1/transcripts/index.json`, `/data/v1/transcripts/<lecture>.json` | `index.schema.json`, `transcript.schema.json` — paragraphs with start/end times (and `speaker` when Sofer labelled speakers) |
+| `/data/v1/outlines/index.json`, `/data/v1/outlines/<lecture>.json` | `index.schema.json`, `outline.schema.json` — auto-generated topics on the class timeline |
 | `/data/v1/schema/*.schema.json` | the schemas themselves |
 
 `/data/*` is served with `Access-Control-Allow-Origin: *` (see
@@ -36,6 +40,12 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 fetch it. Within `v1`, changes are additive only; a breaking change means a
 new `v2/` alongside it. (Chapter text moving from newline-joined strings to
 line objects was a one-time exception, made before any client read chapters.)
+
+Per-lecture files are listed by URL path, with the lecture ID percent-encoded
+like a catalog URL segment (`alignments/07%20-%20Chap-…mp3.json`). On disk in
+`dist/v1/` the file has the decoded name (the lecture ID plus `.json`), so a web
+server, which decodes the request path, finds it. Clients fetch the listed path
+as-is.
 
 Every lecture in the catalog has one canonical, already-encoded `url`. To
 build it, each folder segment and the filename are percent-encoded so that
@@ -183,9 +193,9 @@ Behind an HTTP proxy, prefix commands with `NODE_USE_ENV_PROXY=1`.
 
 Both files are named after the lecture's catalog ID, encoded like a published
 URL segment plus `.json` (e.g. `07%20-%20Chap-%2010-1%20Atmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json`).
-`yarn build-data` validates both, but they are **not published yet**: the
-`/data/v1/transcripts/` and `/data/v1/alignments/` collections stay empty until
-the alignment quality has been reviewed for more classes.
+`yarn build-data` validates both and publishes the ones `audio-publish.json`
+selects (see [Publishing audio](#publishing-audio)). The raw Sofer files are
+never published.
 
 ### `yarn transcribe`
 
@@ -265,5 +275,44 @@ previous class of the same chapter reached, for classes that open with a recap.
 
 To extend to more classes: transcribe a heading (for example `--section 5` for
 Chapter 11), run `yarn align --section 5 --verbose`, spot-check a few lines
-against the audio, then commit `transcripts/` and `alignments/`.
+against the audio, then commit `transcripts/` and `alignments/`, and add the
+heading (or the lectures) to `audio-publish.json`.
+
+### Publishing audio
+
+`audio-publish.json` is the one place that decides what reaches `/data/v1/`
+(and so the site):
+
+```json
+{ "minConfidence": 0.45, "sections": ["4"], "lectures": ["001 Intro.mp3"] }
+```
+
+- A lecture is published when its ID is in `lectures`, or it is under a
+  heading whose `:N` ID is in `sections` (a series ID selects the whole
+  series). Unknown IDs fail the build.
+- `minConfidence` drops alignment segments below it from the published files
+  (the stored alignment keeps them). Lowering it shows more lines and more
+  false positives: around 0.4 the matches stop being trustworthy.
+
+For each published lecture the build writes, when the source exists:
+
+- `alignments/<lecture>.json`: the v1 alignment fields plus `chapter` and each
+  segment's `confidence`.
+- `alignments/chapters/chapter_NN.json`: every published class aligned to the
+  chapter (`lectures[]`: id, url, title, series, part, and paths of its
+  alignment, transcript and outline) and `lines[]` in document order, each
+  with `refs[]` (`lecture` index, start, end, confidence; best first). The
+  site's chapter player reads this file.
+- `transcripts/<lecture>.json`: the words as paragraphs (`segments[]` of
+  `startSeconds`/`endSeconds`/`text`, plus `speaker` when Sofer labelled
+  speakers). A paragraph ends at every change of speaker, at a pause of 2 s or
+  more (once it has 8 words), or at a sentence end once it has 25 words and a
+  0.8 s pause, or 70 words; never more than 200 words
+  (`DEFAULT_PARAGRAPH_OPTIONS` in `tools/src/publish.ts`). `chapter` is set
+  when the lecture is under a `### Chapter N` heading.
+- `outlines/<lecture>.json`: from `outlines/<lecture>.json` (an object with a
+  `topics` array of Sofer topics `{title, start_time_sec?, confidence:
+  "HIGH"|"MEDIUM"|"LOW"|"NONE", ...}`), only topics with a start time and HIGH
+  or MEDIUM confidence, as `{title, startSeconds, confidence}` in time order,
+  with `generatedBy: "sofer.ai"`. Show them as auto-generated.
 

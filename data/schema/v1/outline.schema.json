@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/outline.schema.json",
+  "title": "Lecture topic outline (v1)",
+  "description": "One file per lecture (/data/v1/outlines/<url-encoded lecture id>.json, listed in outlines/index.json): an auto-generated (Sofer.ai, LLM) list of the topics a class covers, on the class timeline. Only topics that were located in the recording with HIGH or MEDIUM confidence are published. Topics follow the recording, not chapter lines. Within v1, fields are only added.",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "generatedBy", "topics"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "generatedBy": { "description": "Who generated the outline, e.g. 'sofer.ai'. Show it as auto-generated.", "type": "string", "minLength": 1 },
+    "topics": {
+      "description": "Topics in time order.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "startSeconds", "confidence"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "startSeconds": { "type": "number", "minimum": 0 },
+          "confidence": { "description": "How surely the topic's start was located in the transcript.", "enum": ["HIGH", "MEDIUM"] }
+        }
+      }
+    }
+  }
+}

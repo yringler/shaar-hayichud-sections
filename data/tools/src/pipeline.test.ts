@@ -28,7 +28,13 @@ describe('build (real data/)', () => {
     ]) {
       assert.ok(existsSync(path.join(out, f)), f);
     }
-    assert.deepEqual(readJson(path.join(out, 'v1/alignments/index.json')), { schemaVersion: 1, items: [] });
+    for (const f of ['v1/alignments/index.json', 'v1/alignments/chapters/index.json', 'v1/transcripts/index.json', 'v1/outlines/index.json']) {
+      const index = readJson(path.join(out, f)) as { items: { path: string }[] };
+      // Paths are URL paths: the file has the decoded name.
+      for (const item of index.items) {
+        assert.ok(existsSync(path.join(out, 'v1', ...item.path.split('/').map(decodeURIComponent))), item.path);
+      }
+    }
   });
 
   it('keeps the ids lessons2 clients persist (lecture id = filename, section id = ":N")', () => {
