@@ -10,7 +10,7 @@
     {{- if or $transcript $aligned }}
     <span class="track-links">
       {{- with $aligned }}<a href="{{ .url }}">Follow in the text</a>{{ end -}}
-      {{- with $transcript }}<a href="{{ .url }}">Transcript</a>{{ end -}}
+      {{- with $transcript }}<a href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
     </span>
     {{- end -}}
   </p>

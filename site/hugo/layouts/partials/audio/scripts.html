@@ -1,7 +1,7 @@
 {{- /* The audio scripts, built from assets/js/*.ts by js.Build (esbuild ships
        inside every Hugo build, extended or not) and fingerprinted. Returns
        dict "play" "follow" (resources). follow.js is never linked directly:
-       play.js imports it when Listen along is pressed. */ -}}
+       play.js imports it when Follow along is turned on. */ -}}
 {{- $opts := dict "format" "esm" "target" "es2020" "minify" true -}}
 {{- $play := resources.Get "js/play.ts" | js.Build (merge $opts (dict "targetPath" "js/play.js")) | fingerprint -}}
 {{- $follow := resources.Get "js/follow.ts" | js.Build (merge $opts (dict "targetPath" "js/follow.js")) | fingerprint -}}

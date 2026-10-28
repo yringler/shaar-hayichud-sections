@@ -2,18 +2,24 @@
  * play.js: progressive enhancement for pages with a `[data-listen]` panel
  * (chapter pages with published alignments, and transcript pages).
  *
- * Chapter pages: shows the class selector, adds a small play button to every
- * aligned line (`.line[data-t]`) that plays the best class from that line, or
- * opens a chooser when several classes discuss it. Transcript pages: only the
- * Listen along button. Listen along loads follow.js on demand.
+ * Chapter pages: shows the teacher and class selectors, adds a small play
+ * button to every aligned line (`.line[data-t]`) that plays the saved
+ * teacher's best class from that line, and a Show transcript toggle that
+ * shows the class in the player's transcript in the docked panel.
+ * Transcript pages: only the Follow along button. Follow along loads
+ * follow.js on demand; its on/off state is saved for every page.
  *
  * Without JavaScript the page keeps a plain <audio> player and its text.
  */
 import {
   chapterSeries,
+  chooseSeries,
   formatTime,
   lectureItems,
   rankRefs,
+  scrollToShow,
+  segmentItems,
+  spanAt,
   spans,
   topicAt,
   type ChapterAlignments,
@@ -21,11 +27,39 @@ import {
   type Ref,
   type Span,
   type Topic,
+  type Transcript,
 } from './audio/model.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
 type FollowModule = { startFollow: (o: FollowOptions) => FollowController };
 
+/** localStorage key of the reader's teacher (catalog series id), shared by every chapter page. */
+const SERIES_KEY = 'shaarHayichud.audio.series';
+/** localStorage key of Follow along on/off ("on" / "off"), shared by chapter and transcript pages. */
+const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
+/** No automatic scrolling of the transcript region for this long after the reader scrolls it. */
+const USER_SCROLL_QUIET_MS = 5000;
+
+// Storage can be blocked (private mode, settings) and then throws: every
+// access is guarded, and a choice then lasts for this page only.
+function readStore(key: string): string | null {
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function writeStore(key: string, value: string): void {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    // Blocked: nothing to do.
+  }
+}
+
+const smoothScroll = (): ScrollBehavior =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 function init(panel: HTMLElement): void {
   const audio = panel.querySelector<HTMLAudioElement>('[data-listen-audio]');
@@ -55,8 +89,8 @@ function init(panel: HTMLElement): void {
   const chapterUrl = panel.dataset['chapterAlignments'];
   const chapter = chapterUrl ? initChapter(panel, audio, chapterUrl, activate) : null;
 
-  // Listen along
-  const along = panel.querySelector<HTMLButtonElement>('[data-listen-along]');
+  // Follow along
+  const followButton = panel.querySelector<HTMLButtonElement>('[data-follow-along]');
   let follow: FollowController | null = null;
   let loading: Promise<FollowController | null> | null = null;
   const loadFollow = (): Promise<FollowController | null> => {
@@ -80,18 +114,24 @@ function init(panel: HTMLElement): void {
     })();
     return loading;
   };
-  along?.addEventListener('click', async () => {
-    const on = along.getAttribute('aria-pressed') !== 'true';
-    along.setAttribute('aria-pressed', String(on));
-    document.documentElement.classList.toggle('is-listening-along', on);
-    chapter?.setListening(on);
-    const f = await loadFollow();
-    f?.setEnabled(on);
-    if (on && audio.paused) {
+  const setFollow = async (on: boolean, byReader: boolean) => {
+    followButton?.setAttribute('aria-pressed', String(on));
+    chapter?.setFollowing(on);
+    if (byReader && on && audio.paused) {
       activate();
       void audio.play().catch(() => undefined);
     }
+    const f = await loadFollow();
+    // The reader may have toggled again while follow.js loaded.
+    f?.setEnabled(followButton?.getAttribute('aria-pressed') === 'true');
+  };
+  followButton?.addEventListener('click', () => {
+    const on = followButton.getAttribute('aria-pressed') !== 'true';
+    writeStore(FOLLOW_KEY, on ? 'on' : 'off');
+    void setFollow(on, true);
   });
+  // Left on last time: turn it on again (without starting playback).
+  if (followButton && readStore(FOLLOW_KEY) === 'on') void setFollow(true, false);
 }
 
 /** Transcript pages: paragraphs with data-start / data-end. */
@@ -119,12 +159,9 @@ function transcriptOptions(audio: HTMLAudioElement): FollowOptions {
 interface ChapterPlayer {
   spansFor(src: string): Span[];
   onSourceChange(fn: () => void): void;
-  /** Listen along on/off: shows the current class's topic outline. */
-  setListening(on: boolean): void;
+  /** Follow along on/off: shows the current class's topic outline, and the transcript region follows. */
+  setFollowing(on: boolean): void;
 }
-
-/** localStorage key of the reader's teacher (catalog series id), shared by every chapter page. */
-const SERIES_KEY = 'shaarHayichud.audio.series';
 
 interface SavedSeries {
   id: string;
@@ -132,9 +169,9 @@ interface SavedSeries {
 }
 
 function readSavedSeries(): SavedSeries | null {
+  const raw = readStore(SERIES_KEY);
+  if (!raw) return null;
   try {
-    const raw = window.localStorage.getItem(SERIES_KEY);
-    if (!raw) return null;
     const v = JSON.parse(raw) as Partial<SavedSeries>;
     return typeof v.id === 'string' && typeof v.title === 'string' ? { id: v.id, title: v.title } : null;
   } catch {
@@ -142,13 +179,7 @@ function readSavedSeries(): SavedSeries | null {
   }
 }
 
-function saveSeries(s: SavedSeries): void {
-  try {
-    window.localStorage.setItem(SERIES_KEY, JSON.stringify(s));
-  } catch {
-    // Storage blocked (private mode, settings): the choice lasts for this page only.
-  }
-}
+const saveSeries = (s: SavedSeries): void => writeStore(SERIES_KEY, JSON.stringify(s));
 
 function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, activate: () => void): ChapterPlayer {
   const seriesSelect = panel.querySelector<HTMLSelectElement>('[data-listen-series]');
@@ -159,6 +190,8 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   const allOptions = select ? [...select.querySelectorAll('option')] : [];
   const listeners: (() => void)[] = [];
   let data: ChapterAlignments | null = null;
+  /** Follow along is on. */
+  let following = false;
 
   const showNote = (text: string | null) => {
     if (!note) return;
@@ -197,6 +230,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       transcriptLink.hidden = !href;
       if (href) transcriptLink.href = href;
     }
+    syncTranscript();
   };
 
   const setLecture = (lecture: number, autoplayAt: number | null) => {
@@ -227,7 +261,10 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
 
   /** The reader's saved teacher (possibly not on this chapter). */
   let preferred: SavedSeries | null = readSavedSeries();
-  /** The teacher this page plays first: the saved one when it covers the chapter. */
+  /**
+   * The teacher the line buttons play: the saved one when it covers the
+   * chapter, else the default teacher (Walters original class).
+   */
   let wanted: SavedSeries | null = null;
 
   const playRef = (r: Ref) => {
@@ -253,9 +290,10 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     .then((d) => {
       data = d;
       if (!d) return d;
-      // Apply the saved teacher, or fall back (visibly) to the first one here.
+      // Apply the saved teacher, or the default one; a saved teacher with no
+      // classes here falls back visibly.
       const here = chapterSeries(d);
-      const chosen = here.find((s) => s.id === preferred?.id) ?? here[0];
+      const { series: chosen, fellBack } = chooseSeries(here, preferred?.id ?? null);
       if (chosen && seriesSelect) {
         wanted = chosen;
         seriesSelect.value = chosen.id;
@@ -263,7 +301,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
         const first = d.lectures.findIndex((l) => l.seriesId === chosen.id);
         if (audio.paused && currentLecture() !== first) setLecture(first, null);
         else syncControls(currentLecture() ?? first);
-        if (preferred && chosen.id !== preferred.id) {
+        if (preferred && fellBack) {
           showNote(`${preferred.title} has no published classes on this chapter yet; showing ${chosen.title}.`);
         }
       }
@@ -297,72 +335,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     });
   });
 
-  // ---- per-line play buttons and the chooser ----
-  let chooser: HTMLElement | null = null;
-  let chooserTrigger: HTMLElement | null = null;
-  const closeChooser = (focusBack: boolean) => {
-    chooser?.remove();
-    chooser = null;
-    chooserTrigger?.setAttribute('aria-expanded', 'false');
-    if (focusBack) chooserTrigger?.focus();
-    chooserTrigger = null;
-  };
-  const openChooser = (button: HTMLElement, refs: Ref[]) => {
-    closeChooser(false);
-    if (!data) return;
-    const d = data;
-    const menu = document.createElement('div');
-    menu.className = 'line-chooser';
-    menu.setAttribute('role', 'menu');
-    menu.setAttribute('aria-label', 'Play this line from');
-    menu.dir = 'ltr';
-    for (const r of refs) {
-      const l = d.lectures[r.lecture]!;
-      const item = document.createElement('button');
-      item.type = 'button';
-      item.setAttribute('role', 'menuitem');
-      item.className = 'line-chooser-item';
-      const name = document.createElement('span');
-      name.textContent = `${l.series}: ${l.title}`;
-      const time = document.createElement('span');
-      time.className = 'line-chooser-time';
-      time.textContent = formatTime(r.startSeconds);
-      item.append(name, time);
-      item.addEventListener('click', () => {
-        closeChooser(true);
-        playRef(r);
-      });
-      menu.append(item);
-    }
-    menu.addEventListener('keydown', (e) => {
-      const items = [...menu.querySelectorAll<HTMLElement>('[role=menuitem]')];
-      const i = items.indexOf(document.activeElement as HTMLElement);
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        closeChooser(true);
-      } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        e.preventDefault();
-        const next = (i + (e.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length;
-        items[next]?.focus();
-      } else if (e.key === 'Tab') {
-        closeChooser(false);
-      }
-    });
-    document.body.append(menu);
-    const r = button.getBoundingClientRect();
-    const width = Math.min(menu.offsetWidth, document.documentElement.clientWidth - 16);
-    const left = Math.max(8, Math.min(r.left, document.documentElement.clientWidth - width - 8));
-    menu.style.left = `${left + window.scrollX}px`;
-    menu.style.top = `${r.bottom + window.scrollY + 4}px`;
-    chooser = menu;
-    chooserTrigger = button;
-    button.setAttribute('aria-expanded', 'true');
-    menu.querySelector<HTMLElement>('[role=menuitem]')?.focus();
-  };
-  document.addEventListener('click', (e) => {
-    if (chooser && !chooser.contains(e.target as Node) && e.target !== chooserTrigger) closeChooser(false);
-  });
-
+  // ---- per-line play buttons ----
   const decorate = (d: ChapterAlignments) => {
     const text = document.querySelector('[data-aligned-text]');
     if (!text) return;
@@ -375,37 +348,25 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       b.type = 'button';
       b.className = 'line-play';
       b.dataset['line'] = line.lineId;
-      const best = line.refs[0]!;
-      if (line.refs.length > 1) {
-        b.setAttribute('aria-haspopup', 'menu');
-        b.setAttribute('aria-expanded', 'false');
-        b.setAttribute('aria-label', `Play from here: ${line.refs.length} classes`);
-        b.classList.add('has-choices');
-      } else {
-        const l = d.lectures[best.lecture]!;
-        b.setAttribute('aria-label', `Play from here (${l.series}: ${l.title}, ${formatTime(best.startSeconds)})`);
-      }
+      b.setAttribute('aria-label', 'Play from here');
       span.before(b);
     }
   };
 
-  // One delegated handler: play buttons always; the line text itself only
-  // while Listen along is on (so ordinary reading clicks and text selection
-  // are never hijacked).
+  // One delegated handler: play buttons always (the saved teacher's best
+  // class, no menu); the line text itself only while Follow along is on (so
+  // ordinary reading clicks and text selection are never hijacked).
   let pendingClick: number | undefined;
   document.addEventListener('click', (e) => {
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-line]');
     if (button) {
-      const refs = ranked(button.dataset['line']!);
-      if (refs.length > 1) {
-        if (chooser && chooserTrigger === button) closeChooser(true);
-        else openChooser(button, refs);
-      } else if (refs[0]) playRef(refs[0]);
+      const best = ranked(button.dataset['line']!)[0];
+      if (best) playRef(best);
       return;
     }
     const line = target.closest<HTMLElement>('.line.has-audio');
-    if (!line || !document.documentElement.classList.contains('is-listening-along')) return;
+    if (!line || !following) return;
     const sel = window.getSelection();
     if ((sel && !sel.isCollapsed) || target.closest('a')) return;
     // Wait out a double-click (word selection) before acting.
@@ -419,13 +380,150 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     }, 250);
   });
 
+  // ---- transcript of the class in the player, in the docked panel ----
+  const toggle = panel.querySelector<HTMLButtonElement>('[data-listen-transcript-toggle]');
+  const pane = panel.querySelector<HTMLElement>('[data-listen-transcript-pane]');
+  const transcripts = new Map<string, Promise<Transcript | null>>();
+  /** The reader asked to see the transcript (kept while a class without one plays). */
+  let paneWanted = false;
+  /** Class whose transcript is rendered in the pane, its spans and paragraphs. */
+  let paneLecture: number | null = null;
+  let paneSpans: Span[] = [];
+  let paneParas: HTMLElement[] = [];
+  let paneSpan: Span | null = null;
+  let lastPaneScroll = 0;
+
+  const loadTranscript = (path: string): Promise<Transcript | null> => {
+    let p = transcripts.get(path);
+    if (!p) {
+      p = fetch(`/data/v1/${path}`)
+        .then((r) => (r.ok ? (r.json() as Promise<Transcript>) : null))
+        .catch(() => null);
+      transcripts.set(path, p);
+    }
+    return p;
+  };
+
+  /** Mark the current paragraph; with Follow along on, keep it in view inside the region (never the page). */
+  const updatePane = (reposition: boolean) => {
+    if (!pane || pane.hidden || paneLecture === null || paneLecture !== currentLecture()) return;
+    const span = spanAt(paneSpans, audio.currentTime);
+    if (span !== paneSpan) {
+      for (const k of paneSpan?.keys ?? []) {
+        paneParas[Number(k)]?.classList.remove('is-discussing');
+        paneParas[Number(k)]?.removeAttribute('aria-current');
+      }
+      for (const k of span?.keys ?? []) {
+        paneParas[Number(k)]?.classList.add('is-discussing');
+        paneParas[Number(k)]?.setAttribute('aria-current', 'true');
+      }
+      paneSpan = span;
+    } else if (!reposition) return;
+    const el = span ? paneParas[Number(span.keys[0])] : undefined;
+    if (!el) return;
+    const auto = following && !audio.paused && Date.now() - lastPaneScroll > USER_SCROLL_QUIET_MS;
+    if (!reposition && !auto) return;
+    const top = el.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop;
+    const to = scrollToShow(pane.scrollTop, pane.clientHeight, top, el.offsetHeight);
+    if (to !== null) pane.scrollTo({ top: to, behavior: reposition ? 'auto' : smoothScroll() });
+  };
+
+  const renderPane = async (lecture: number, path: string) => {
+    if (!pane) return;
+    paneLecture = lecture;
+    paneSpans = [];
+    paneParas = [];
+    paneSpan = null;
+    const loading = document.createElement('p');
+    loading.className = 'listen-transcript-status';
+    loading.textContent = 'Loading transcript…';
+    pane.replaceChildren(loading);
+    const t = await loadTranscript(path);
+    if (paneLecture !== lecture) return; // the class changed meanwhile
+    if (!t) {
+      loading.textContent = 'The transcript could not be loaded.';
+      return;
+    }
+    let prev = '';
+    paneParas = t.segments.map((seg, i) => {
+      const p = document.createElement('p');
+      p.className = 'tseg';
+      p.dataset['start'] = String(seg.startSeconds);
+      p.dataset['end'] = String(seg.endSeconds);
+      p.dataset['i'] = String(i);
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'line-play';
+      b.setAttribute('aria-label', `Play from ${formatTime(seg.startSeconds)}`);
+      p.append(b);
+      const sp = seg.speaker ?? '';
+      if (sp && sp !== prev) {
+        const label = document.createElement('span');
+        label.className = 'tseg-speaker';
+        label.textContent = sp;
+        p.append(label);
+      }
+      prev = sp;
+      p.append(seg.text);
+      return p;
+    });
+    paneSpans = spans(segmentItems(t));
+    pane.replaceChildren(...paneParas);
+    pane.scrollTop = 0;
+    updatePane(true);
+  };
+
+  /** Toggle visibility and text, and the pane's content, for the class in the player. */
+  function syncTranscript(): void {
+    if (!toggle || !pane) return;
+    const lecture = currentLecture();
+    const path = lecture === null ? undefined : data?.lectures[lecture]?.transcript;
+    toggle.hidden = !path;
+    const show = paneWanted && !!path;
+    toggle.setAttribute('aria-expanded', String(show));
+    toggle.textContent = show ? 'Hide transcript' : 'Show transcript';
+    const wasHidden = pane.hidden;
+    pane.hidden = !show;
+    if (!show || lecture === null || !path) return;
+    if (paneLecture !== lecture) void renderPane(lecture, path);
+    else if (wasHidden) updatePane(true);
+  }
+
+  toggle?.addEventListener('click', () => {
+    paneWanted = toggle.getAttribute('aria-expanded') !== 'true';
+    if (paneWanted) activate(); // the transcript lives in the docked panel
+    syncTranscript();
+  });
+
+  // Click a paragraph (or its play button) to play from there; selection-safe.
+  pane?.addEventListener('click', (e) => {
+    const target = e.target as Element;
+    const p = target.closest<HTMLElement>('.tseg');
+    if (!p || paneLecture === null) return;
+    if (!target.closest('.line-play')) {
+      const sel = window.getSelection();
+      if ((sel && !sel.isCollapsed) || e.detail > 1) return;
+    }
+    showNote(null);
+    setLecture(paneLecture, Number(p.dataset['start']));
+  });
+  const markPaneScroll = () => {
+    lastPaneScroll = Date.now();
+  };
+  pane?.addEventListener('wheel', markPaneScroll, { passive: true });
+  pane?.addEventListener('touchmove', markPaneScroll, { passive: true });
+  pane?.addEventListener('keydown', (e) => {
+    if (['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '].includes(e.key)) markPaneScroll();
+  });
+  audio.addEventListener('timeupdate', () => updatePane(false));
+  audio.addEventListener('seeked', () => updatePane(false));
+
   // ---- auto-generated topic outline of the class in the player ----
   // Topics follow the class timeline, not the chapter lines.
   const nowEl = panel.querySelector<HTMLElement>('[data-listen-now]');
   const topicsEl = panel.querySelector<HTMLDetailsElement>('[data-listen-topics]');
   const topicList = topicsEl?.querySelector<HTMLOListElement>('ol') ?? null;
   const outlines = new Map<string, Promise<Outline | null>>();
-  let listening = false;
   let shown: { lecture: number; topics: Topic[] } | null = null;
 
   const loadOutline = (path: string): Promise<Outline | null> => {
@@ -442,7 +540,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   const updateNow = () => {
     if (!nowEl) return;
     const t = shown ? topicAt(shown.topics, audio.currentTime) : null;
-    nowEl.hidden = !listening || !t;
+    nowEl.hidden = !following || !t;
     if (t) nowEl.textContent = `Now: ${t.title}`;
     for (const li of topicList?.children ?? []) {
       const b = li.querySelector('button');
@@ -455,7 +553,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   const showOutline = async () => {
     const lecture = currentLecture();
     const path = lecture === null ? undefined : data?.lectures[lecture]?.outline;
-    if (!listening || lecture === null || !path) {
+    if (!following || lecture === null || !path) {
       shown = null;
       if (topicsEl) topicsEl.hidden = true;
       updateNow();
@@ -492,9 +590,10 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
 
   const spanCache = new Map<number, Span[]>();
   return {
-    setListening(on: boolean) {
-      listening = on;
+    setFollowing(on: boolean) {
+      following = on;
       void dataReady.then(() => showOutline());
+      if (on) updatePane(true);
     },
     spansFor(src: string): Span[] {
       const i = lectureOfSrc(src);

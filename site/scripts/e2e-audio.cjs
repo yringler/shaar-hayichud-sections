@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
  * Browser test of the audio features on the built site (hugo/public/):
- * chapter 10 play-from-here, the teacher/class selectors and their saved
- * choice, Listen along (the is-discussing border), a transcript page, phone
+ * chapter 10 play-from-here (the saved or default teacher, no menu), the
+ * teacher/class selectors and their saved choice, Follow along (the
+ * is-discussing border, saved on/off), the transcript region in the docked
+ * panel, new-tab transcript links, blocked storage, a transcript page, phone
  * width, and pages without audio staying untouched.
  *
  *   yarn build && yarn test:e2e [screenshot dir]
@@ -116,7 +118,37 @@ async function seek(page, t) {
   await page.waitForTimeout(400);
 }
 
-const discussing = (page) => page.$$eval('.is-discussing', (els) => els.map((e) => e.id));
+const discussing = (page) => page.$$eval('[data-aligned-text] .is-discussing, [data-transcript] .is-discussing', (els) => els.map((e) => e.id));
+
+const PANE = '[data-listen-transcript-pane]';
+const transcriptOf = (lecture) => readJson(path.join(DIST, decodeURI(chapter10.lectures[lecture].transcript)));
+/** Transcript region: visibility, size, scroll, current paragraph(s) and whether the first is fully in view. */
+const paneState = (page) =>
+  page.evaluate((sel) => {
+    const pane = document.querySelector(sel);
+    const r = pane.getBoundingClientRect();
+    const cur = [...pane.querySelectorAll('.tseg.is-discussing')];
+    const c = cur[0]?.getBoundingClientRect();
+    return {
+      hidden: pane.hidden,
+      height: r.height,
+      scrollTop: pane.scrollTop,
+      paras: pane.querySelectorAll('.tseg').length,
+      current: cur.map((e) => Number(e.dataset.i)),
+      currentVisible: !!c && c.top >= r.top - 1 && c.bottom <= r.bottom + 1,
+      firstText: pane.querySelector('.tseg')?.textContent ?? '',
+      listenH: Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h')) || 0,
+      panel: document.querySelector('[data-listen]').getBoundingClientRect().height,
+      innerHeight: window.innerHeight,
+      scrollY: window.scrollY,
+    };
+  }, PANE);
+const followOn = (page) =>
+  page.waitForFunction(() => document.documentElement.classList.contains('is-following') && document.querySelector('[data-follow-along]').getAttribute('aria-pressed') === 'true');
+/** No chooser menu of any kind appeared. */
+const noMenu = async (page) => {
+  assert.equal(await page.locator('[role=menu], [role=menuitem], .line-chooser').count(), 0);
+};
 
 const results = [];
 async function check(name, fn) {
@@ -149,6 +181,7 @@ async function check(name, fn) {
     const { context, page, errors } = await newPage(browser, base);
     await page.goto(`${base}/texts/chapter-10/`);
     await page.waitForSelector('.line-play');
+    await page.screenshot({ path: path.join(shots, 'chapter10-desktop-initial.png') });
 
     await check('chapter 10: a play button on every aligned line, none elsewhere', async () => {
       assert.equal(await page.locator('.line-play').count(), chapter10.lines.length);
@@ -188,22 +221,21 @@ async function check(name, fn) {
       assert.equal(text[0], text[1]);
     });
 
-    await check('play button on a line two teachers discuss opens a chooser; picking plays from that time', async () => {
+    await check('nothing saved: ▶ on a line two teachers discuss plays the default teacher at once, no menu', async () => {
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series')), null);
       const r = refOf('njpqigb7', WALTERS_1);
-      await page.click('.line-play[data-line="njpqigb7"]');
-      const items = page.locator('.line-chooser [role=menuitem]');
-      assert.equal(await items.count(), 2);
-      assert.match(await items.first().textContent(), /^Rabbi Benyamin Walters Original Class: Part 1/);
-      assert.equal(await page.evaluate(() => document.activeElement.getAttribute('role')), 'menuitem');
-      await page.keyboard.press('Escape');
-      assert.equal(await page.locator('.line-chooser').count(), 0);
-      assert.equal(await page.evaluate(() => document.activeElement.dataset.line), 'njpqigb7');
-      await page.keyboard.press('Enter');
+      const b = page.locator('.line-play[data-line="njpqigb7"]');
+      assert.equal(await b.getAttribute('aria-haspopup'), null);
+      assert.equal(await b.getAttribute('aria-label'), 'Play from here');
+      await b.focus();
       await page.keyboard.press('Enter');
       await waitTime(page, r.startSeconds);
+      await noMenu(page);
       const s = await audioState(page);
       assert.equal(s.src, chapter10.lectures[WALTERS_1].url);
       assert.equal(s.paused, false);
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+      assert.ok(await page.locator('[data-listen-note]').isHidden());
     });
 
     await check('a line only Markel covers plays Markel and says so', async () => {
@@ -215,9 +247,11 @@ async function check(name, fn) {
       assert.equal(await page.locator('[data-listen-series]').inputValue(), chapter10.lectures[MARKEL_10].seriesId);
     });
 
-    await check('Listen along: the border follows playback (until-next-line model)', async () => {
-      await page.click('[data-listen-along]');
-      await page.waitForFunction(() => document.documentElement.classList.contains('is-following'));
+    await check('Follow along: the border follows playback (until-next-line model); on/off is saved', async () => {
+      assert.equal(await page.locator('[data-follow-along]').textContent(), 'Follow along');
+      await page.click('[data-follow-along]');
+      await followOn(page);
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.followAlong')), 'on');
       const r = refOf('gbyeqivs', MARKEL_10);
       await seek(page, r.startSeconds + 2);
       assert.deepEqual(await discussing(page), ['gbyeqivs']);
@@ -227,13 +261,13 @@ async function check(name, fn) {
       const z = refOf('sykhwqgy', MARKEL_10);
       await seek(page, z.startSeconds + 1);
       assert.deepEqual((await discussing(page)).sort(), ['bgpd7w43', 'sykhwqgy']);
-      await page.screenshot({ path: path.join(shots, 'chapter10-desktop-listen-along.png') });
+      await page.screenshot({ path: path.join(shots, 'chapter10-desktop-follow-along.png') });
       // Far past the last line: nothing.
       await seek(page, 2300);
       assert.deepEqual(await discussing(page), []);
     });
 
-    await check('Listen along: clicking line text seeks in the current class, or switches class', async () => {
+    await check('Follow along: clicking line text seeks in the current class, or switches class', async () => {
       // Back to the saved teacher's class for a Walters line.
       const w = refOf('wmljth42', WALTERS_1);
       await page.click('[id="wmljth42"]');
@@ -269,26 +303,141 @@ async function check(name, fn) {
       assert.ok(Math.abs(s.t - t0) < 0.5, `time moved from ${t0} to ${s.t}`);
     });
 
-    await check('the teacher choice is saved and applies on reload', async () => {
+    await check('transcript links open in a new tab and say so', async () => {
+      const link = page.locator('[data-listen-transcript]');
+      assert.equal(await link.getAttribute('target'), '_blank');
+      assert.equal(await link.getAttribute('rel'), 'noopener');
+      assert.equal(await link.locator('svg[aria-hidden="true"]').count(), 1);
+      assert.equal((await link.locator('.visually-hidden').textContent()).trim(), '(opens in a new tab)');
+      assert.equal(await link.getAttribute('href'), '/classes/transcripts/07-chap-10-1-atmus-ohr-ein-sof-m/');
+      // Visually hidden: takes no room.
+      const box = await link.locator('.visually-hidden').boundingBox();
+      assert.ok(box.width <= 1 && box.height <= 1);
+    });
+
+    await check('transcript region: show, click to seek, follows inside the region only, pauses after a region scroll, swaps with the class, hide', async () => {
+      const t1 = transcriptOf(WALTERS_1);
+      const toggle = page.locator('[data-listen-transcript-toggle]');
+      assert.equal(await toggle.textContent(), 'Show transcript');
+      assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
+      assert.ok(await page.locator(PANE).isHidden());
+      const before = await paneState(page);
+      await toggle.click();
+      await page.waitForSelector(`${PANE} .tseg`);
+      assert.equal(await toggle.textContent(), 'Hide transcript');
+      assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
+      let st = await paneState(page);
+      assert.equal(st.paras, t1.segments.length);
+      assert.equal(st.firstText.trim(), t1.segments[0].text);
+      assert.deepEqual(
+        await page.$$eval(`${PANE} .tseg`, (els) => els.map((e) => Number(e.dataset.start))),
+        t1.segments.map((x) => x.startSeconds),
+      );
+      // About half the screen, and the page padding / --listen-h grew with the panel.
+      assert.ok(st.height > 0.4 * st.innerHeight && st.height <= 0.51 * st.innerHeight, `region ${st.height}px of ${st.innerHeight}`);
+      assert.ok(Math.abs(st.listenH - st.panel) < 2 && st.listenH > before.listenH, `--listen-h ${st.listenH} panel ${st.panel}`);
+      assert.ok(st.panel <= 0.85 * st.innerHeight + 1);
+      // The panel itself does not scroll (only the region does).
+      assert.equal(await page.evaluate(() => { const p = document.querySelector('[data-listen]'); return p.scrollHeight - p.clientHeight; }), 0);
+
+      // Click a paragraph: seeks there and marks it.
+      await page.locator(`${PANE} .tseg[data-i="3"]`).click();
+      await waitTime(page, t1.segments[3].startSeconds);
+      await page.waitForTimeout(400);
+      st = await paneState(page);
+      assert.deepEqual(st.current, [3]);
+      assert.equal(await page.evaluate((sel) => getComputedStyle(document.querySelector(`${sel} .tseg[data-i="3"]`)).borderLeftWidth, PANE), '3px');
+      assert.equal((await audioState(page)).paused, false);
+
+      // Following: a far paragraph scrolls into view inside the region, and the page does not move.
+      await page.mouse.move(640, 150);
+      await page.mouse.wheel(0, 1); // pauses the page's own auto-scroll (follow.ts)
+      await page.waitForTimeout(300);
+      const y0 = (await paneState(page)).scrollY;
+      const far = t1.segments.length - 3;
+      await seek(page, t1.segments[far].startSeconds + 1);
+      await page.waitForTimeout(900);
+      st = await paneState(page);
+      assert.deepEqual(st.current, [far]);
+      assert.ok(st.scrollTop > 0 && st.currentVisible, `scrollTop ${st.scrollTop}, visible ${st.currentVisible}`);
+      assert.equal(st.scrollY, y0, 'the page scrolled');
+      await page.screenshot({ path: path.join(shots, 'chapter10-desktop-transcript-following.png') });
+
+      // The reader scrolls the region: no automatic scrolling for a while.
+      const paneBox = await page.locator(PANE).boundingBox();
+      await page.mouse.move(paneBox.x + paneBox.width / 2, paneBox.y + paneBox.height / 2);
+      await page.mouse.wheel(0, -5000);
+      await page.waitForTimeout(500);
+      const top0 = (await paneState(page)).scrollTop;
+      await seek(page, t1.segments[far - 1].startSeconds + 1);
+      await page.waitForTimeout(700);
+      st = await paneState(page);
+      assert.deepEqual(st.current, [far - 1]);
+      assert.equal(st.scrollTop, top0);
+      assert.equal(st.currentVisible, false);
+
+      // The last chapter lines can still scroll above the taller panel.
+      const reach = await page.evaluate(() => {
+        window.scrollTo(0, document.documentElement.scrollHeight);
+        const lines = document.querySelectorAll('[data-aligned-text] .line');
+        const last = lines[lines.length - 1].getBoundingClientRect();
+        const h = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h'));
+        return { bottom: last.bottom, limit: window.innerHeight - h };
+      });
+      assert.ok(reach.bottom <= reach.limit, `last line ends at ${reach.bottom}, panel starts at ${reach.limit}`);
+
+      // Switching class swaps the transcript.
+      const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
+      await page.selectOption('[data-listen-select]', String(part2));
+      await page.waitForFunction(
+        ([sel, n]) => document.querySelectorAll(`${sel} .tseg`).length === n,
+        [PANE, transcriptOf(part2).segments.length],
+      );
+      assert.equal((await paneState(page)).firstText.trim(), transcriptOf(part2).segments[0].text);
+
+      // Hide: the region goes, the panel shrinks back.
+      await toggle.click();
+      await page.waitForFunction(() => {
+        const h = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h'));
+        return Math.abs(h - document.querySelector('[data-listen]').offsetHeight) < 2;
+      });
+      st = await paneState(page);
+      assert.ok(st.hidden);
+      assert.equal(await toggle.textContent(), 'Show transcript');
+      assert.ok(st.listenH < 0.35 * st.innerHeight, `--listen-h ${st.listenH}`);
+      await page.selectOption('[data-listen-select]', String(WALTERS_1));
+    });
+
+    await check('the teacher choice and Follow along are saved and apply on reload; ▶ plays the saved teacher', async () => {
       await page.selectOption('[data-listen-series]', chapter10.lectures[MARKEL_10].seriesId);
       assert.match(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series')), /"id":"37"/);
       await page.reload();
       await page.waitForSelector('.line-play');
       assert.equal(await page.locator('[data-listen-series]').inputValue(), '37');
       assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
+      // Follow along comes back on by itself, without starting playback.
+      await followOn(page);
+      assert.equal((await audioState(page)).paused, true);
+      // The transcript region's shown/hidden is not saved.
+      assert.ok(await page.locator(PANE).isHidden());
+      assert.equal(await page.getAttribute('[data-listen-transcript-toggle]', 'aria-expanded'), 'false');
+      const r = refOf('njpqigb7', MARKEL_10);
       await page.click('.line-play[data-line="njpqigb7"]');
-      assert.match(await page.locator('.line-chooser [role=menuitem]').first().textContent(), /^Rabbi Markel/);
-      await page.keyboard.press('Escape');
+      await waitTime(page, r.startSeconds);
+      await noMenu(page);
+      assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
+      await page.waitForTimeout(500);
+      assert.deepEqual(await discussing(page), ['njpqigb7']);
     });
 
     const withOutline = chapter10.lectures.findIndex((l) => l.outline);
     if (withOutline >= 0) {
-      await check('Listen along shows the class outline (auto-generated topics); clicking a topic seeks', async () => {
+      await check('Follow along shows the class outline (auto-generated topics); clicking a topic seeks', async () => {
         const lecture = chapter10.lectures[withOutline];
         const outline = readJson(path.join(DIST, decodeURI(lecture.outline)));
         await page.selectOption('[data-listen-series]', lecture.seriesId);
         await page.selectOption('[data-listen-select]', String(withOutline));
-        if ((await page.getAttribute('[data-listen-along]', 'aria-pressed')) !== 'true') await page.click('[data-listen-along]');
+        if ((await page.getAttribute('[data-follow-along]', 'aria-pressed')) !== 'true') await page.click('[data-follow-along]');
         await page.waitForSelector('[data-listen-topics]:not([hidden])');
         assert.match(await page.locator('[data-listen-topics] summary').textContent(), /auto-generated/);
         await page.click('[data-listen-topics] summary');
@@ -307,42 +456,100 @@ async function check(name, fn) {
     await context.close();
   }
 
-  await check('chapter 10 works with storage blocked', async () => {
+  await check('chapter 10 works with storage blocked (default teacher, Follow along, transcript region)', async () => {
     const { context, page, errors } = await newPage(browser, base, { blockStorage: true });
     await page.goto(`${base}/texts/chapter-10/`);
     await page.waitForSelector('.line-play');
+    assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+    await page.click('[data-follow-along]');
+    await followOn(page);
+    await page.click('.line-play[data-line="njpqigb7"]');
+    await waitTime(page, refOf('njpqigb7', WALTERS_1).startSeconds);
+    await noMenu(page);
+    await page.click('[data-listen-transcript-toggle]');
+    await page.waitForSelector(`${PANE} .tseg.is-discussing`);
     await page.selectOption('[data-listen-series]', '37');
     await page.click('.line-play[data-line="gbyeqivs"]');
     await waitTime(page, refOf('gbyeqivs', MARKEL_10).startSeconds);
+    assert.equal(await page.locator(`${PANE} .tseg`).count(), transcriptOf(MARKEL_10).segments.length);
+    // Nothing could be saved: a reload starts from the defaults.
+    await page.reload();
+    await page.waitForSelector('.line-play');
+    assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+    assert.equal(await page.getAttribute('[data-follow-along]', 'aria-pressed'), 'false');
+    assert.deepEqual(errors, []);
+    await context.close();
+  });
+
+  await check('the transcript toggle is hidden for a class without a published transcript', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
+    await context.route('**/data/v1/alignments/chapters/chapter_10.json', async (route) => {
+      const d = structuredClone(chapter10);
+      delete d.lectures[part2].transcript;
+      await route.fulfill({ contentType: 'application/json', body: JSON.stringify(d) });
+    });
+    await page.goto(`${base}/texts/chapter-10/`);
+    await page.waitForSelector('.line-play');
+    const toggle = page.locator('[data-listen-transcript-toggle]');
+    assert.ok(await toggle.isVisible());
+    await toggle.click();
+    await page.waitForSelector(`${PANE} .tseg`);
+    await page.selectOption('[data-listen-select]', String(part2));
+    assert.ok(await toggle.isHidden());
+    assert.ok(await page.locator(PANE).isHidden());
+    // Back to a class with one: the region comes back with its transcript.
+    await page.selectOption('[data-listen-select]', String(WALTERS_1));
+    await page.waitForSelector(`${PANE} .tseg`);
+    assert.equal(await page.locator(`${PANE} .tseg`).count(), transcriptOf(WALTERS_1).segments.length);
     assert.deepEqual(errors, []);
     await context.close();
   });
 
   // ---------------- chapter 10, phone ----------------
-  await check('chapter 10 at phone width: no horizontal scroll, tap plays, border shows', async () => {
+  await check('chapter 10 at phone width: compact bar, no horizontal scroll, tap plays (no menu), border and transcript region', async () => {
     const { context, page, errors } = await newPage(browser, base, {
       context: { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
     });
     await page.goto(`${base}/he/texts/chapter-10/`);
     await page.waitForSelector('.line-play');
     await page.screenshot({ path: path.join(shots, 'chapter10-phone-initial.png') });
-    await page.tap('[data-listen-along]');
+    await page.tap('[data-follow-along]');
     const r = refOf('4oeagnb6', lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3'));
     await page.locator('.line-play[data-line="4oeagnb6"]').scrollIntoViewIfNeeded();
     await page.tap('.line-play[data-line="4oeagnb6"]');
-    const items = page.locator('.line-chooser [role=menuitem]');
-    if (await items.count()) await items.first().tap();
     await waitTime(page, r.startSeconds);
+    await noMenu(page);
+    assert.equal((await audioState(page)).src, chapter10.lectures[r.lecture].url);
     await page.waitForTimeout(800);
     assert.deepEqual(await discussing(page), ['4oeagnb6']);
+    // The docked bar stays compact: about a fifth of the screen at most.
+    await page.screenshot({ path: path.join(shots, 'chapter10-phone-follow-along.png') });
+    const bar = await paneState(page);
+    assert.ok(bar.panel <= 0.25 * bar.innerHeight, `bar is ${bar.panel}px of ${bar.innerHeight}`);
     // This class has no outline: no topic list, no stale "Now:" from another class.
     if (!chapter10.lectures[r.lecture].outline) {
       assert.ok(await page.locator('[data-listen-topics]').isHidden());
       assert.ok(await page.locator('[data-listen-now]').isHidden());
     }
+    // Transcript region: about half the screen above the controls; tap a paragraph to seek.
+    await page.tap('[data-listen-transcript-toggle]');
+    await page.waitForSelector(`${PANE} .tseg.is-discussing`);
+    let st = await paneState(page);
+    assert.ok(st.currentVisible);
+    assert.ok(st.height > 0.4 * st.innerHeight && st.height <= 0.51 * st.innerHeight, `region ${st.height}px of ${st.innerHeight}`);
+    assert.ok(st.panel <= 0.85 * st.innerHeight + 1);
+    const t2 = transcriptOf(r.lecture);
+    const i = st.current[0] + 2;
+    await page.locator(`${PANE} .tseg[data-i="${i}"]`).tap();
+    await waitTime(page, t2.segments[i].startSeconds);
+    await page.waitForTimeout(500);
+    st = await paneState(page);
+    assert.deepEqual(st.current, [i]);
+    assert.ok(st.currentVisible);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     assert.ok(overflow <= 0, `page scrolls sideways by ${overflow}px`);
-    await page.screenshot({ path: path.join(shots, 'chapter10-phone-listen-along.png') });
+    await page.screenshot({ path: path.join(shots, 'chapter10-phone-transcript-following.png') });
     assert.deepEqual(errors, []);
     await context.close();
   });
@@ -352,12 +559,16 @@ async function check(name, fn) {
     ['desktop', { width: 1280, height: 900 }],
     ['phone', { width: 390, height: 844 }],
   ]) {
-    await check(`transcript page (${name}): click a paragraph seeks, border follows`, async () => {
+    await check(`transcript page (${name}): click a paragraph seeks, border follows, Follow along survives a reload`, async () => {
       const { context, page, errors } = await newPage(browser, base, { context: { viewport, hasTouch: name === 'phone' } });
       await page.goto(`${base}/classes/transcripts/001-intro/`);
       assert.equal(await page.locator('.line-play').count(), 0);
-      await page.click('[data-listen-along]');
-      await page.waitForFunction(() => document.documentElement.classList.contains('is-following'));
+      assert.equal(await page.locator('[data-listen-transcript-toggle]').count(), 0);
+      await page.click('[data-follow-along]');
+      await followOn(page);
+      await page.reload();
+      await followOn(page);
+      await page.waitForSelector('.tseg .line-play');
       const start = Number(await page.getAttribute('#t3', 'data-start'));
       await page.click('#t3');
       await waitTime(page, start);
@@ -401,10 +612,18 @@ async function check(name, fn) {
     assert.ok(!/data-listen|data-t=|<script/.test(html));
   });
 
-  await check('class list links to transcripts and the text', async () => {
+  await check('class list links to transcripts (new tab, with icon and hidden text) and the text', async () => {
     const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
     assert.ok(html.includes('/classes/transcripts/001-intro/'));
     assert.ok(html.includes('/classes/transcripts/002-tape016-side1-ch10/'));
+    const links = [...html.matchAll(/<a href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
+    assert.ok(links.length >= 2);
+    for (const [, attrs, inner] of links) {
+      assert.match(attrs, /target="?_blank"?/);
+      assert.match(attrs, /rel="?noopener"?/);
+      assert.match(inner, /<svg[^>]*aria-hidden="true"/);
+      assert.match(inner, /class="?visually-hidden"?> \(opens in a new tab\)</);
+    }
     const texts = fs.readFileSync(path.join(PUBLIC, 'texts', 'index.html'), 'utf8');
     assert.ok(/Classes without text[\s\S]*\/classes\/transcripts\/001-intro\//.test(texts));
   });

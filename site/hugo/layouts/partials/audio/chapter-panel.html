@@ -1,8 +1,10 @@
 {{- /* Class player for a chapter page. Context: dict "data" (the chapter
        alignment index, chapter-alignments.schema.json) "path" (its asset path).
        Without JavaScript: a plain player for the first class. With play.js: the
-       teacher (series) and class selectors, Listen along, and per-line play
-       buttons. The series choice is saved (localStorage) across chapters. */ -}}
+       teacher (series) and class selectors, Follow along, the Show transcript
+       toggle (the transcript region above the controls, filled by play.js),
+       and per-line play buttons. The series choice and Follow along on/off
+       are saved (localStorage) across pages. */ -}}
 {{- $d := .data -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
@@ -10,6 +12,8 @@
 <section class="listen" data-listen dir="ltr" aria-label="Classes on this chapter"
   data-chapter-alignments="/{{ .path }}"
   data-follow-src="{{ $scripts.follow.RelPermalink }}">
+  <div class="listen-transcript-pane" id="listen-transcript-pane" data-listen-transcript-pane hidden
+    role="region" aria-label="Transcript of the class" tabindex="0" lang="en"></div>
   <div class="listen-controls">
     <p class="listen-static" data-no-js>{{ $first.series }}: {{ $first.title }}</p>
     {{- $groups := slice -}}
@@ -38,12 +42,10 @@
         {{- end -}}
       </select>
     </label>
-    <button type="button" class="listen-along" data-listen-along data-js-only hidden aria-pressed="false">Listen along</button>
-    {{- with index $audio.transcripts $first.id }}
-    <a class="listen-transcript" data-listen-transcript href="{{ .url }}">Transcript</a>
-    {{- else }}
-    <a class="listen-transcript" data-listen-transcript hidden href="">Transcript</a>
-    {{- end }}
+    <button type="button" class="follow-along" data-follow-along data-js-only hidden aria-pressed="false">Follow along</button>
+    <button type="button" class="listen-transcript-toggle" data-listen-transcript-toggle hidden aria-expanded="false" aria-controls="listen-transcript-pane">Show transcript</button>
+    {{- $t := index $audio.transcripts $first.id }}
+    <a class="listen-transcript" data-listen-transcript href="{{ with $t }}{{ .url }}{{ end }}" target="_blank" rel="noopener"{{ if not $t }} hidden{{ end }}>Transcript{{ partial "new-tab.html" . }}</a>
   </div>
   <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
   <p class="listen-note" data-listen-note role="status" hidden></p>

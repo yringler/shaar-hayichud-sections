@@ -167,6 +167,47 @@ export function chapterSeries(data: ChapterAlignments): { id: string; title: str
   return out;
 }
 
+/** Catalog series id of the default teacher (Rabbi Benyamin Walters Original Class). */
+export const DEFAULT_SERIES_ID = '0';
+
+/**
+ * The teacher a chapter page plays: the saved one when it has classes on the
+ * chapter, else the default teacher, else the first series here. `fellBack`
+ * is true only when a saved choice could not be honoured (the page says so).
+ */
+export function chooseSeries<S extends { id: string }>(
+  here: readonly S[],
+  savedId: string | null,
+): { series: S | null; fellBack: boolean } {
+  const saved = savedId === null ? undefined : here.find((s) => s.id === savedId);
+  if (saved) return { series: saved, fellBack: false };
+  const series = here.find((s) => s.id === DEFAULT_SERIES_ID) ?? here[0] ?? null;
+  return { series, fellBack: savedId !== null };
+}
+
+/** data/schema/v1/transcript.schema.json (the fields the site reads). */
+export interface Transcript {
+  schemaVersion: 1;
+  lectureId: string;
+  segments: { startSeconds: number; endSeconds: number; text: string; speaker?: string }[];
+}
+
+/** Timed items of a transcript: one per segment, keyed by its index. */
+export function segmentItems(t: Transcript): TimedItem[] {
+  return t.segments.map((s, i) => ({ key: String(i), start: s.startSeconds, end: s.endSeconds }));
+}
+
+/**
+ * scrollTop that brings a child (offset `top`, height `height`, both
+ * relative to the scroll region's content) into a region `viewport` tall
+ * scrolled to `scrollTop`, or null when it is already fully visible. Puts
+ * it a third of the way down, so the next paragraphs show below it.
+ */
+export function scrollToShow(scrollTop: number, viewport: number, top: number, height: number): number | null {
+  if (top >= scrollTop && top + height <= scrollTop + viewport) return null;
+  return Math.max(0, Math.round(top - Math.max(0, (viewport - height) / 3)));
+}
+
 /** 75 -> "1:15", 3725 -> "1:02:05". */
 export function formatTime(seconds: number): string {
   const s = Math.max(0, Math.floor(seconds));
