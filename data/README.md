@@ -6,7 +6,7 @@ Hayichud comes from this directory:
 | Path | What it is | Edited by |
 |------|------------|-----------|
 | `classes.txt` | Audio class catalog (series → sections → lectures) | hand, plus `yarn set-durations` |
-| `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees | section-tool (saves via the GitHub API) |
+| `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees of lines (see below) | section-tool (saves via the GitHub API) |
 | `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
@@ -31,7 +31,8 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 `/data/*` is served with `Access-Control-Allow-Origin: *` (see
 `site/hugo/static/_headers`) so other origins, such as the Flutter web app, can
 fetch it. Within `v1`, changes are additive only; a breaking change means a
-new `v2/` alongside it.
+new `v2/` alongside it. (Chapter text moving from newline-joined strings to
+line objects was a one-time exception, made before any client read chapters.)
 
 Every lecture in the catalog has one canonical, already-encoded `url`. To
 build it, each folder segment and the filename are percent-encoded so that
@@ -51,7 +52,35 @@ must never change once published:
   on the CDN, keep the old ID by adding an `@ <old id>` line (see below).
   Do not remove an `@` line that is already there.
 
+- **Line IDs** identify one line of chapter text (see below). Alignments
+  and transcripts point at lines by ID alone.
+
 The build fails on duplicate or colliding IDs.
+
+## Chapter files
+
+A chapter is an array of sections (`TextNode`: optional `label`, `children`,
+optional `translation`). `children` holds lines and sub-sections in document
+order. A line is `{ "id": "…", "text": "…" }`: one line of Hebrew text (never
+blank, never containing a newline) with a stable ID.
+
+Line IDs are 8 random lowercase base32 characters (`[a-z2-7]{8}`), unique
+across **all** chapters, and are never positional. They follow the line, not
+its position:
+
+- an unchanged or lightly edited line keeps its ID, even when lines around it
+  are added, removed or moved into another section;
+- a new line gets a new random ID (`data/tools/src/line-id.ts` generates them;
+  pass every ID already in the corpus so a new one never collides);
+- a deleted line's ID disappears and is not reused.
+
+Sections have no persisted ID, and translations stay at section level.
+`yarn assign-line-ids` gives an ID to any line that lacks one, and the build
+fails on a duplicate line ID anywhere in the corpus. It will also check that
+every alignment `lineId` exists once alignments are published.
+
+`site/scripts/sefaria-swap.py` (re)imports Sefaria's text into the existing
+sections and carries line IDs over.
 
 ## `classes.txt` grammar
 
@@ -117,6 +146,8 @@ yarn build-data     # validate classes.txt + every chapter, write dist/v1/
 yarn test           # unit tests (node:test)
 yarn check-urls     # OPT-IN: HEAD every catalog URL on the CDN. Not part of the build.
                     #   Behind a proxy: NODE_USE_ENV_PROXY=1 yarn check-urls
+yarn assign-line-ids  # give every chapter line without an id a new one (idempotent;
+                    #   --check reports missing ids without writing)
 yarn set-durations  # ffprobe lectures with no :seconds and write the result into classes.txt
                     #   (downloads to tools/.cache/media/; needs ffprobe; --dry-run to preview)
 ```

@@ -17,6 +17,7 @@ This repo has one shared data directory, two sub-projects and a Dart package. Re
 - `data/tools` validates `data/` (catalog grammar, stable IDs, JSON Schemas) and writes `data/dist/v1/`. This directory is generated and git-ignored.
 - `site`'s `yarn build` runs the data build, then Hugo. Hugo renders pages from `data/chapters/` and the generated catalog, and publishes `data/dist/v1/` at `/data/v1/`. Other clients, such as the lessons2 Flutter app, read that published JSON, using the Dart models in `packages/dart/`.
 - Catalog IDs are persisted by apps (favorites, downloads). Never change an existing ID. `data/README.md` explains how.
+- Chapter text is made of lines with stable, corpus-unique random IDs, so alignments and transcripts can point at a line. Anything that rewrites chapter text (the editor, scripts) must carry existing line IDs over and mint new ones only for new lines. Sections have no persisted ID.
 
 Each sub-project, `data/tools` and `packages/dart` have their own dependency trees. There is no build step at the repo root.
 
