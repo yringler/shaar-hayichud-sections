@@ -1,7 +1,7 @@
-import { Content, TextNode, isText, isTextNode } from '../models/text-node.model';
+import { Content, Line, TextNode, isText, isTextNode } from '../models/text-node.model';
 import { collectLineIds, freshRun, reconcileLines, splitRun } from './lines';
 import { IdSource } from './ids';
-import { DEFAULT_FORMAT, JsonFormat, detectFormat, parseDocument } from './serialization';
+import { DEFAULT_FORMAT, JsonFormat, detectFormat, parseDocumentReport } from './serialization';
 import {
   createNode,
   findPath,
@@ -25,7 +25,9 @@ import {
  * Line ids: every command keeps the ids of the lines it moves. `updateText`
  * carries ids across an edit (see `reconcileLines`), splits snap to line
  * boundaries (see `splitLineIndex`) so no line is ever cut in two, and only
- * genuinely new lines get fresh ids, unique within the document.
+ * genuinely new lines get fresh ids, unique within the document. Lines that
+ * earlier commands removed (`retired`, kept by the caller with
+ * `retireLines`) get their ids back when `updateText` brings them back.
  */
 export type EditorCommand =
   | { type: 'updateText'; nodeId: string; contentIndex: number; text: string }
@@ -66,12 +68,22 @@ export interface CommandResult {
   roots: TextNode[];
   /** null: leave focus where it is. */
   focus: Focus | null;
+  /**
+   * `loadJson` only: how many loaded lines got a fresh id because theirs was
+   * missing, invalid or a duplicate (see `parseDocumentReport`).
+   */
+  reminted?: number;
 }
 
-export function applyCommand(roots: TextNode[], cmd: EditorCommand, ids: IdSource): CommandResult {
+export function applyCommand(
+  roots: TextNode[],
+  cmd: EditorCommand,
+  ids: IdSource,
+  retired: readonly Line[] = [],
+): CommandResult {
   switch (cmd.type) {
     case 'updateText':
-      return unfocused(updateText(roots, cmd.nodeId, cmd.contentIndex, cmd.text, ids));
+      return unfocused(updateText(roots, cmd.nodeId, cmd.contentIndex, cmd.text, ids, retired));
     case 'updateLabel':
       return unfocused(updateNode(roots, cmd.nodeId, (n) => ({ ...n, label: cmd.label })));
     case 'updateTranslation':
@@ -93,8 +105,8 @@ export function applyCommand(roots: TextNode[], cmd: EditorCommand, ids: IdSourc
     case 'loadText':
       return unfocused([createNode(ids.nodeId(), freshRun(cmd.text.trim(), [], ids).lines)]);
     case 'loadJson': {
-      const nodes = parseDocument(cmd.json, ids);
-      return unfocused(nodes.length > 0 ? nodes : [createNode(ids.nodeId())]);
+      const { nodes, reminted } = parseDocumentReport(cmd.json, ids);
+      return { ...unfocused(nodes.length > 0 ? nodes : [createNode(ids.nodeId())]), reminted };
     }
   }
 }
@@ -113,6 +125,7 @@ function updateText(
   contentIndex: number,
   text: string,
   ids: IdSource,
+  retired: readonly Line[],
 ): TextNode[] {
   return updateNode(roots, nodeId, (node) => {
     const item = node.children[contentIndex];
@@ -120,7 +133,7 @@ function updateText(
     if (!isText(item) && !appending) return node; // entry is a child node, or out of range: ignore
     const old = isText(item) ? item.lines : [];
     const children = [...node.children];
-    children[contentIndex] = { lines: reconcileLines(old, text, collectLineIds(roots), ids) };
+    children[contentIndex] = { lines: reconcileLines(old, text, collectLineIds(roots), ids, retired) };
     return { ...node, children };
   });
 }

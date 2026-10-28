@@ -67,30 +67,88 @@ export function lineSimilarity(a: string, b: string): number {
 }
 
 /**
+ * How much of `part` appears in `whole`, in [0, 1]: the share of `part`'s
+ * character bigrams (trimmed, unpadded) also found in `whole`. Lines too
+ * short to have two bigrams count as 0, so they never look "absorbed".
+ */
+export function lineContainment(part: string, whole: string): number {
+  const p = part.trim();
+  const w = whole.trim();
+  if (p.length < 3) return 0;
+  const counts = new Map<string, number>();
+  for (let i = 0; i < w.length - 1; i++) {
+    const g = w.slice(i, i + 2);
+    counts.set(g, (counts.get(g) ?? 0) + 1);
+  }
+  let shared = 0;
+  for (let i = 0; i < p.length - 1; i++) {
+    const g = p.slice(i, i + 2);
+    const n = counts.get(g) ?? 0;
+    if (n > 0) {
+      shared++;
+      counts.set(g, n - 1);
+    }
+  }
+  return shared / (p.length - 1);
+}
+
+/** A new line holding at least this much of two or more vanished lines is a join. */
+export const JOIN_CONTAINMENT = 0.8;
+
+/** True when `text` absorbs most of the text of two or more of `sources`: a join. */
+function isJoin(text: string, sources: readonly string[]): boolean {
+  let absorbed = 0;
+  for (const s of sources) {
+    if (lineContainment(s, text) >= JOIN_CONTAINMENT && ++absorbed >= 2) return true;
+  }
+  return false;
+}
+
+/**
  * The lines for a textarea's new text, keeping ids of lines that are still
  * there. Rules, in order:
  * 1. Unchanged lines keep their id: a longest common subsequence of exact
  *    texts is matched first (so duplicates match in order).
- * 2. In each changed region between those matches, old and new lines are
- *    paired in order to maximize total similarity; a pair keeps the old id
- *    when its similarity is at least SAME_LINE_SIMILARITY (an edited line).
- * 3. A still-unmatched new line whose text equals a still-unmatched old line
- *    anywhere takes its id (a moved line).
- * 4. Every other new line gets a fresh id; unmatched old ids disappear.
+ * 2. A still-unmatched new line whose text equals a still-unmatched old line
+ *    anywhere takes its id (a line moved within the textarea).
+ * 3. A still-unmatched new line whose text equals a retired line (one an
+ *    earlier command removed from the document, see `retireLines`) takes
+ *    its id, the most recently retired first: a line moved by cut and
+ *    paste or drag and drop (two input events), or brought back by undo.
+ * 4. In each changed region between the rule 1 matches, old and new lines
+ *    are paired in order to maximize total similarity; a pair keeps the old
+ *    id when its similarity is at least SAME_LINE_SIMILARITY (an edited
+ *    line).
+ * 5. A still-unmatched new line takes the id of the most similar retired
+ *    line, if at least SAME_LINE_SIMILARITY (moved, then edited).
+ * 6. Every other new line gets a fresh id; unmatched old ids disappear.
+ *
+ * Joins are a delete plus an insert: a new line that absorbs most of the
+ * text of two or more unmatched lines (see JOIN_CONTAINMENT) never takes an
+ * id by similarity (rules 4 and 5), so it gets a fresh id and the joined
+ * lines' ids disappear.
  *
  * Fresh ids avoid `taken` (pass every line id in the document, the old ones
- * included) and are added to it.
+ * included) and are added to it. A retired line is only reused when its id
+ * is not in `taken`.
  */
-export function reconcileLines(old: readonly Line[], text: string, taken: Set<string>, ids: IdSource): Line[] {
+export function reconcileLines(
+  old: readonly Line[],
+  text: string,
+  taken: Set<string>,
+  ids: IdSource,
+  retired: readonly Line[] = [],
+): Line[] {
   const next = splitLines(text);
   const assigned: (string | null)[] = next.map(() => null);
   const used = new Set<number>(); // indices into old
+  const regions: [number, number, number, number][] = [];
 
   const anchors = lcs(old.map((l) => l.text), next);
   let oi = 0;
   let ni = 0;
   for (const [ao, an] of [...anchors, [old.length, next.length] as const]) {
-    pairRegion(old, oi, ao, next, ni, an, assigned, used);
+    if (ao > oi && an > ni) regions.push([oi, ao, ni, an]);
     if (ao < old.length) {
       assigned[an] = old[ao].id;
       used.add(ao);
@@ -109,6 +167,39 @@ export function reconcileLines(old: readonly Line[], text: string, taken: Set<st
     }
   }
 
+  // Retired lines still free to come back, most recent first.
+  const free = retired.filter((l) => !taken.has(l.id)).reverse();
+  const claimed = new Set<string>();
+  for (let n = 0; n < next.length; n++) {
+    if (assigned[n] !== null) continue;
+    const r = free.find((l) => !claimed.has(l.id) && l.text === next[n]);
+    if (r) {
+      assigned[n] = r.id;
+      claimed.add(r.id);
+    }
+  }
+
+  for (const [o0, o1, n0, n1] of regions) pairRegion(old, o0, o1, next, n0, n1, assigned, used);
+
+  const vanished = [...old.filter((_, i) => !used.has(i)).map((l) => l.text), ...free.map((l) => l.text)];
+  for (let n = 0; n < next.length; n++) {
+    if (assigned[n] !== null || isJoin(next[n], vanished)) continue;
+    let best: Line | null = null;
+    let bestSim = SAME_LINE_SIMILARITY;
+    for (const r of free) {
+      if (claimed.has(r.id)) continue;
+      const sim = lineSimilarity(r.text, next[n]);
+      if (sim >= bestSim && (best === null || sim > bestSim)) {
+        best = r;
+        bestSim = sim;
+      }
+    }
+    if (best) {
+      assigned[n] = best.id;
+      claimed.add(best.id);
+    }
+  }
+
   return next.map((t, n) => {
     let id = assigned[n];
     if (id === null) {
@@ -117,6 +208,37 @@ export function reconcileLines(old: readonly Line[], text: string, taken: Set<st
     }
     return { id, text: t };
   });
+}
+
+/** Every line under `items`, in document order. */
+export function collectLines(items: readonly Content[], into: Line[] = []): Line[] {
+  for (const item of items) {
+    if (isText(item)) into.push(...item.lines);
+    else if (isTextNode(item)) collectLines(item.children, into);
+  }
+  return into;
+}
+
+/** How many retired lines the editor remembers. */
+export const MAX_RETIRED = 500;
+
+/**
+ * The editor's retired lines after a command took the document from
+ * `before` to `after`: non-blank lines whose ids left the document are
+ * added (newest last), lines whose ids came back are dropped, and only the newest
+ * MAX_RETIRED are kept. `reconcileLines` gives a retired id back to a line
+ * that reappears, so ids survive changes that take more than one command.
+ */
+export function retireLines(
+  before: readonly TextNode[],
+  after: readonly TextNode[],
+  retired: readonly Line[],
+): Line[] {
+  if (before === after) return retired as Line[];
+  const now = collectLineIds(after);
+  const gone = collectLines(before).filter((l) => !now.has(l.id) && l.text.trim() !== '');
+  const goneIds = new Set(gone.map((l) => l.id));
+  return [...retired.filter((l) => !now.has(l.id) && !goneIds.has(l.id)), ...gone].slice(-MAX_RETIRED);
 }
 
 /** Matching index pairs [oldIndex, newIndex] of a longest common subsequence. */
@@ -157,9 +279,10 @@ function lcs(a: readonly string[], b: readonly string[]): [number, number][] {
 }
 
 /**
- * Pair old[o0..o1) with next[n0..n1) in order, maximizing the summed
- * similarity of pairs that reach the threshold. Large regions (a whole-text
- * replace) fall back to pairing by position.
+ * Pair the still-unmatched lines of old[o0..o1) and next[n0..n1) in order,
+ * maximizing the summed similarity of pairs that reach the threshold. A new
+ * line that joins two or more of the region's unmatched old lines is left
+ * out. Large regions (a whole-text replace) fall back to pairing by position.
  */
 function pairRegion(
   old: readonly Line[],
@@ -171,27 +294,35 @@ function pairRegion(
   assigned: (string | null)[],
   used: Set<number>,
 ): void {
-  const n = o1 - o0;
-  const m = n1 - n0;
-  if (n === 0 || m === 0) return;
+  const os: number[] = [];
+  for (let o = o0; o < o1; o++) if (!used.has(o)) os.push(o);
+  const unmatched: number[] = [];
+  for (let k = n0; k < n1; k++) if (assigned[k] === null) unmatched.push(k);
+  const n = os.length;
+  if (n === 0 || unmatched.length === 0) return;
 
   const keep = (o: number, k: number) => {
     assigned[k] = old[o].id;
     used.add(o);
   };
 
-  if (n * m > MAX_ALIGN_CELLS) {
-    for (let k = 0; k < Math.min(n, m); k++) {
-      if (lineSimilarity(old[o0 + k].text, next[n0 + k]) >= SAME_LINE_SIMILARITY) keep(o0 + k, n0 + k);
+  if (n * unmatched.length > MAX_ALIGN_CELLS) {
+    for (let k = 0; k < Math.min(n, unmatched.length); k++) {
+      if (lineSimilarity(old[os[k]].text, next[unmatched[k]]) >= SAME_LINE_SIMILARITY) keep(os[k], unmatched[k]);
     }
     return;
   }
+
+  const sources = os.map((o) => old[o].text);
+  const ns = unmatched.filter((k) => !isJoin(next[k], sources));
+  const m = ns.length;
+  if (m === 0) return;
 
   const sim: number[][] = [];
   for (let i = 0; i < n; i++) {
     sim.push([]);
     for (let j = 0; j < m; j++) {
-      const s = lineSimilarity(old[o0 + i].text, next[n0 + j]);
+      const s = lineSimilarity(old[os[i]].text, next[ns[j]]);
       sim[i].push(s >= SAME_LINE_SIMILARITY ? s : 0);
     }
   }
@@ -206,7 +337,7 @@ function pairRegion(
   let j = 0;
   while (i < n && j < m) {
     if (sim[i][j] > 0 && best[i][j] === sim[i][j] + best[i + 1][j + 1]) {
-      keep(o0 + i, n0 + j);
+      keep(os[i], ns[j]);
       i++;
       j++;
     } else if (best[i + 1][j] >= best[i][j + 1]) i++;

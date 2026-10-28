@@ -36,8 +36,17 @@ export function detectFormat(json: string): JsonFormat {
  * is split into lines, the first keeping the id.
  */
 export function parseDocument(json: string, ids: IdSource): TextNode[] {
+  return parseDocumentReport(json, ids).nodes;
+}
+
+/**
+ * `parseDocument`, also reporting how many lines got a fresh id (legacy
+ * plain-string text, or a missing, invalid or duplicate id). Non-zero means
+ * saving would replace persisted line ids, so the UI warns first.
+ */
+export function parseDocumentReport(json: string, ids: IdSource): { nodes: TextNode[]; reminted: number } {
   const trimmed = json.trim();
-  if (!trimmed) return [];
+  if (!trimmed) return { nodes: [], reminted: 0 };
   const parsed: unknown = JSON.parse(trimmed);
   if (!Array.isArray(parsed)) {
     throw new Error('Expected a JSON array of nodes');
@@ -46,7 +55,7 @@ export function parseDocument(json: string, ids: IdSource): TextNode[] {
   const nodes = parsed.map((raw) => hydrateNode(raw as Record<string, unknown>, ctx));
   // Fresh ids are handed out after every kept id is known, so they never clash.
   for (const fill of ctx.pending) fill();
-  return nodes;
+  return { nodes, reminted: ctx.pending.length };
 }
 
 interface ParseContext {

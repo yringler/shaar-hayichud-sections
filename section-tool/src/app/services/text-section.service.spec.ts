@@ -100,4 +100,77 @@ describe('TextSectionService', () => {
     expect(() => service.dispatch({ type: 'loadJson', json: 'not json' })).toThrow();
     expect(service.rootNodes()).toBe(before);
   });
+
+  describe('line ids across several commands', () => {
+    const json = JSON.stringify([
+      {
+        children: [
+          { id: 'aaaaaaaa', text: 'first line of the section' },
+          { id: 'bbbbbbbb', text: 'second line of the section' },
+          { id: 'cccccccc', text: 'third line of the section' },
+          { children: [{ id: 'dddddddd', text: 'a line in the child section' }] },
+        ],
+      },
+    ]);
+    const ids = (nodeId = 0) =>
+      (JSON.parse(service.jsonOutput())[nodeId].children as { id?: string }[]).filter((c) => c.id).map((c) => c.id);
+    const text = (...lines: string[]) => lines.join('\n');
+
+    beforeEach(() => service.dispatch({ type: 'loadJson', json }));
+
+    it('cut and paste within a textarea (two input events) keeps the moved line id', () => {
+      service.dispatch({
+        type: 'updateText',
+        nodeId: 'n2',
+        contentIndex: 0,
+        text: text('second line of the section', 'third line of the section'),
+      });
+      service.dispatch({
+        type: 'updateText',
+        nodeId: 'n2',
+        contentIndex: 0,
+        text: text('second line of the section', 'third line of the section', 'first line of the section'),
+      });
+      expect(ids()).toEqual(['bbbbbbbb', 'cccccccc', 'aaaaaaaa']);
+    });
+
+    it('undo after deleting a line restores its id', () => {
+      const all = text('first line of the section', 'second line of the section', 'third line of the section');
+      service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: text('first line of the section', 'third line of the section') });
+      service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: all });
+      expect(ids()).toEqual(['aaaaaaaa', 'bbbbbbbb', 'cccccccc']);
+    });
+
+    it('moving a line to another section keeps its id', () => {
+      service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: text('first line of the section', 'second line of the section') });
+      service.dispatch({
+        type: 'updateText',
+        nodeId: 'n3',
+        contentIndex: 0,
+        text: text('a line in the child section', 'third line of the section'),
+      });
+      const doc = JSON.parse(service.jsonOutput());
+      expect(doc[0].children[2].children.map((l: { id: string }) => l.id)).toEqual(['dddddddd', 'cccccccc']);
+    });
+
+    it('loading a document forgets retired lines', () => {
+      service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: 'first line of the section' });
+      service.dispatch({ type: 'loadText', text: 'x' });
+      service.dispatch({ type: 'updateText', nodeId: 'n4', contentIndex: 0, text: text('x', 'second line of the section') });
+      expect(ids()).toEqual(['L1', 'L2']);
+    });
+  });
+
+  it('remintedOnLoad counts lines that got a fresh id on load', () => {
+    expect(service.remintedOnLoad()).toBe(0);
+    service.dispatch({ type: 'loadJson', json: '[{"children":["legacy\\ntext",{"id":"aaaaaaaa","text":"ok"},{"id":"aaaaaaaa","text":"dup"}]}]' });
+    expect(service.remintedOnLoad()).toBe(3);
+    service.dispatch({ type: 'updateText', nodeId: 'n2', contentIndex: 0, text: 'edited' });
+    expect(service.remintedOnLoad()).toBe(3);
+    service.dispatch({ type: 'loadJson', json: '[{"children":[{"id":"aaaaaaaa","text":"ok"}]}]' });
+    expect(service.remintedOnLoad()).toBe(0);
+    service.dispatch({ type: 'loadJson', json: '[{"children":["legacy"]}]' });
+    service.dispatch({ type: 'clearAll' });
+    expect(service.remintedOnLoad()).toBe(0);
+  });
 });

@@ -2,10 +2,14 @@ import { describe, it, expect } from 'vitest';
 import { Line } from '../models/text-node.model';
 import {
   SAME_LINE_SIMILARITY,
+  MAX_RETIRED,
   collectLineIds,
+  collectLines,
   freshRun,
+  lineContainment,
   lineSimilarity,
   reconcileLines,
+  retireLines,
   splitLineIndex,
   splitLines,
   splitRun,
@@ -15,9 +19,11 @@ import { deepFreeze, node, sequentialIds, t } from './testing';
 const L = (id: string, text: string): Line => ({ id, text });
 
 /** Reconcile and return "id:text" specs, for compact expectations. */
-function edit(old: Line[], text: string, extraTaken: string[] = []): string[] {
+function edit(old: Line[], text: string, extraTaken: string[] = [], retired: Line[] = []): string[] {
   const taken = new Set([...old.map((l) => l.id), ...extraTaken]);
-  return reconcileLines(deepFreeze(old), text, taken, sequentialIds('n', 'N')).map((l) => `${l.id}:${l.text}`);
+  return reconcileLines(deepFreeze(old), text, taken, sequentialIds('n', 'N'), deepFreeze(retired)).map(
+    (l) => `${l.id}:${l.text}`,
+  );
 }
 
 const verse = [
@@ -157,9 +163,26 @@ describe('reconcileLines', () => {
     expect(edit(old, 'same\nsame\nsame\nother')).toEqual(['a:same', 'b:same', 'N1:same', 'c:other']);
   });
 
-  it('joining two lines keeps the id of the one that dominates and drops the other', () => {
+  it('joining two lines is a delete plus an insert: a fresh id, both old ids dropped', () => {
     const old = [L('a', 'a long first line of text'), L('b', 'tail')];
-    expect(edit(old, 'a long first line of text tail')).toEqual(['a:a long first line of text tail']);
+    expect(edit(old, 'a long first line of text tail')).toEqual(['N1:a long first line of text tail']);
+    expect(edit(old, 'a long first line of texttail')).toEqual(['N1:a long first line of texttail']);
+    const three = [L('x', 'before'), ...old, L('y', 'after')];
+    expect(edit(three, 'before\na long first line of text tail\nafter')).toEqual([
+      'x:before',
+      'N1:a long first line of text tail',
+      'y:after',
+    ]);
+  });
+
+  it('a joined line keeps its new id while it is edited further', () => {
+    const joined = [L('N1', 'a long first line of text tail')];
+    expect(edit(joined, 'a long first line of text tails')).toEqual(['N1:a long first line of text tails']);
+  });
+
+  it('deleting one line while editing its neighbour is not a join', () => {
+    const old = [L('a', 'a long first line of text'), L('b', 'something unrelated')];
+    expect(edit(old, 'a long first line of text!')).toEqual(['a:a long first line of text!']);
   });
 
   it('splitting a line in two keeps the id on the more similar half', () => {
@@ -181,6 +204,84 @@ describe('reconcileLines', () => {
     const old = [L('a', 'x y z'), L('b', 'x y z!')];
     const ids = edit(old, 'x y z!!\nx y z!!\nx y z!!').map((s) => s.split(':')[0]);
     expect(new Set(ids).size).toBe(3);
+  });
+});
+
+describe('reconcileLines with retired lines', () => {
+  const [a, b, c] = verse;
+
+  it('cut then paste (two commands): the moved line gets its id back', () => {
+    const afterCut = edit(verse, [b.text, c.text].join('\n'));
+    expect(afterCut.map((s) => s.split(':')[0])).toEqual(['b', 'c']);
+    const pasted = edit([b, c], [b.text, c.text, a.text].join('\n'), [], [a]);
+    expect(pasted.map((s) => s.split(':')[0])).toEqual(['b', 'c', 'a']);
+  });
+
+  it('undo after deleting a line brings its id back', () => {
+    expect(edit([a, c], verseText, [], [b]).map((s) => s.split(':')[0])).toEqual(['a', 'b', 'c']);
+  });
+
+  it('undo after a join restores both original ids', () => {
+    const old = [L('a', 'a long first line of text'), L('b', 'tail')];
+    expect(edit([L('N9', 'a long first line of text tail')], 'a long first line of text\ntail', [], old)).toEqual([
+      'a:a long first line of text',
+      'b:tail',
+    ]);
+  });
+
+  it('a retired line that comes back edited keeps its id (similarity)', () => {
+    expect(edit([a], [a.text, b.text + ' כו\''].join('\n'), [], [b])).toEqual(['a:' + a.text, 'b:' + b.text + ' כו\'']);
+  });
+
+  it('an unrelated new line does not take a retired id', () => {
+    expect(edit([a], [a.text, 'brand new'].join('\n'), [], [b])).toEqual(['a:' + a.text, 'N1:brand new']);
+  });
+
+  it('a join never takes a retired id by similarity', () => {
+    const old = [L('a', 'a long first line of text'), L('b', 'tail')];
+    expect(edit([], 'a long first line of text tail', [], old)).toEqual(['N1:a long first line of text tail']);
+  });
+
+  it('the most recently retired copy of a text is reused first, and each id only once', () => {
+    const retired = [L('r1', 'same'), L('r2', 'same')];
+    expect(edit([], 'same', [], retired)).toEqual(['r2:same']);
+    expect(edit([], 'same\nsame\nsame', [], retired)).toEqual(['r2:same', 'r1:same', 'N1:same']);
+  });
+
+  it('never reuses a retired id that is back in the document', () => {
+    expect(edit([], b.text, ['b'], [b])).toEqual(['N1:' + b.text]);
+  });
+});
+
+describe('lineContainment', () => {
+  it('is the share of a line found inside another; short lines count as 0', () => {
+    expect(lineContainment('tail', 'a long line tail')).toBe(1);
+    expect(lineContainment('tail', 'unrelated')).toBe(0);
+    expect(lineContainment('ab', 'ab')).toBe(0);
+  });
+});
+
+describe('retireLines', () => {
+  it('adds lines that left the document and drops those that came back', () => {
+    const before = [node('n', t('a:x', 'b:y'))];
+    const after = [node('n', t('a:x'))];
+    expect(retireLines(before, after, [])).toEqual([L('b', 'y')]);
+    expect(retireLines(after, before, [L('b', 'y')])).toEqual([]);
+    expect(retireLines([node('n', t('a:x', 'e:'))], after, [])).toEqual([]);
+  });
+
+  it('keeps the newest entries only and is unchanged for an unchanged tree', () => {
+    const many = Array.from({ length: MAX_RETIRED }, (_, i) => L(`r${i}`, `t${i}`));
+    const before = [node('n', t('a:x'))];
+    const result = retireLines(before, [node('n', t())], many);
+    expect(result.length).toBe(MAX_RETIRED);
+    expect(result[result.length - 1]).toEqual(L('a', 'x'));
+    expect(result[0].id).toBe('r1');
+    expect(retireLines(before, before, many)).toBe(many);
+  });
+
+  it('collectLines lists every line in document order', () => {
+    expect(collectLines([node('a', t('1:x'), node('b', t('2:y')), t('3:z'))]).map((l) => l.id)).toEqual(['1', '2', '3']);
   });
 });
 
