@@ -270,4 +270,30 @@ describe('validateSources', () => {
       'alignments/b.mp3.json: /segments/0 line id "zzzzzzzz" does not exist',
     ]);
   });
+
+  it('checks outlines against the schema and the transcript they were made from', () => {
+    const paths = setup({ schemaVersion: 1, lectureId: 'b.mp3', segments: [seg('aaaaaaaa')] });
+    mkdirSync(paths.transcriptsDir);
+    mkdirSync(paths.outlinesDir);
+    const transcript = {
+      schemaVersion: 1, lectureId: 'b.mp3', audioUrl: 'u', provider: 'sofer.ai',
+      sofer: { transcriptionId: 't2', title: 'P [b.mp3]', folderPath: ['S'], request: {} },
+      result: { text: '', info: {}, timestamps: [] },
+    };
+    writeFileSync(path.join(paths.transcriptsDir, 'b.mp3.json'), JSON.stringify(transcript));
+    const outline = {
+      schemaVersion: 1, lectureId: 'b.mp3', provider: 'sofer.ai', transcriptionId: 't2', transcript: 'transcripts/b.mp3.json',
+      fetchedAt: '2026-10-28T00:00:00.000Z', request: { monotone: true },
+      topics: [{ title: 'T', starting_phrase: 's', matched_text: 's', score_norm: 0.9, confidence: 'HIGH', start_time_sec: 1 }],
+    };
+    const write = (o: object) => writeFileSync(path.join(paths.outlinesDir, 'b.mp3.json'), JSON.stringify(o));
+    write(outline);
+    assert.deepEqual(validateSources(paths, schemas, new Set(['b.mp3']), index), []);
+    write({ ...outline, transcriptionId: 't1' });
+    assert.deepEqual(validateSources(paths, schemas, new Set(['b.mp3']), index), [
+      'outlines/b.mp3.json: made from transcription t1, but the transcript is now t2 (rerun yarn outline)',
+    ]);
+    write({ ...outline, topics: [{ title: 'T', confidence: 'SURE' }] });
+    assert.equal(validateSources(paths, schemas, new Set(['b.mp3']), index).length, 4);
+  });
 });

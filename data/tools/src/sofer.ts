@@ -51,6 +51,65 @@ export interface TranscriptionSummary {
   status: string;
 }
 
+/** One item of a standard-mode batch manifest (BatchManifestAudioSource). */
+export interface BatchManifestItem {
+  audio_url: string;
+  title: string;
+  client_item_id: string;
+  num_speakers?: number;
+  auto_detect_speakers?: boolean;
+}
+
+/** POST / GET /v1/transcriptions/batch-files response (the POST names the id batch_file_id, the GET id). */
+export interface BatchFile {
+  batch_file_id?: string;
+  id?: string;
+  item_count: number;
+  status: 'PENDING_VALIDATION' | 'VALID' | 'INVALID' | string;
+  validation_errors?: string[] | null;
+}
+
+export interface BatchCreated {
+  batch_id: string;
+  transcription_ids: string[];
+  total_count: number;
+  status: string;
+}
+
+export interface BatchStatusItem {
+  id: string;
+  client_item_id?: string | null;
+  folder_id?: string | null;
+  title: string;
+  status: string;
+}
+
+export interface BatchStatusResponse {
+  batch_id: string;
+  status: 'RECEIVED' | 'PROCESSING' | 'COMPLETED' | 'FAILED' | string;
+  total_count: number;
+  completed_count?: number;
+  failed_count?: number;
+  pending_count?: number;
+  transcriptions: BatchStatusItem[];
+}
+
+/** One topic of POST /v1/timestamps/outline (OutlineTopic). */
+export interface OutlineTopic {
+  title: string;
+  starting_phrase: string;
+  matched_text: string;
+  score_norm: number;
+  confidence: 'HIGH' | 'MEDIUM' | 'LOW' | 'NONE';
+  start_time_sec?: number | null;
+  token_span?: number[] | null;
+  matched_content?: number | null;
+  content_coverage?: number | null;
+  longest_content_run_soft?: number | null;
+  longest_content_run_strict?: number | null;
+  [extra: string]: unknown;
+}
+
 export class SoferError extends Error {
   constructor(
     message: string,
@@ -184,6 +243,55 @@ export class SoferClient {
 
   moveDocument(documentId: string, folderId: string | null): Promise<SoferDocument> {
     return this.request('PATCH', `/v1/documents/${documentId}`, { folder_id: folderId });
+  }
+
+  /** PATCH /v1/documents/{id}: only the fields given change. Archiving also moves the document to the root. */
+  updateDocument(
+    documentId: string,
+    fields: { title?: string; folder_id?: string | null; archived?: boolean },
+  ): Promise<SoferDocument> {
+    return this.request('PATCH', `/v1/documents/${documentId}`, fields);
+  }
+
+  /** POST /v1/transcriptions/batch-files: upload a standard-mode manifest (free; no transcription starts). */
+  uploadBatchFile(items: BatchManifestItem[], metadata?: { title?: string; description?: string }): Promise<BatchFile> {
+    return this.request('POST', '/v1/transcriptions/batch-files', {
+      content_type: 'json',
+      json_items: items,
+      ...(metadata ? { metadata } : {}),
+    });
+  }
+
+  /** GET /v1/transcriptions/batch-files/{id}: manifest validation status. */
+  getBatchFile(batchFileId: string): Promise<BatchFile> {
+    return this.request('GET', `/v1/transcriptions/batch-files/${batchFileId}`);
+  }
+
+  /**
+   * POST /v1/transcriptions/batch in standard mode: starts (and charges for)
+   * every manifest item. Never retried, like every write.
+   */
+  createStandardBatch(batchFileId: string, info: Record<string, unknown>, batchTitle?: string): Promise<BatchCreated> {
+    return this.request('POST', '/v1/transcriptions/batch', {
+      processing_mode: 'standard',
+      batch_file_id: batchFileId,
+      ...(batchTitle ? { batch_title: batchTitle } : {}),
+      info,
+    });
+  }
+
+  /**
+   * POST /v1/timestamps/outline: an LLM-generated topic outline of a finished
+   * transcription, each topic aligned to a start time. A write (never retried):
+   * the docs give no price, so it may be charged.
+   */
+  outline(transcriptionId: string, options: { monotone?: boolean; conclusion_bias?: boolean }): Promise<OutlineTopic[]> {
+    return this.request('POST', '/v1/timestamps/outline', { transcription_id: transcriptionId, ...options });
+  }
+
+  /** GET /v1/transcriptions/batch/{id}/status: overall and per-item status (items carry client_item_id). */
+  batchStatus(batchId: string): Promise<BatchStatusResponse> {
+    return this.request('GET', `/v1/transcriptions/batch/${batchId}/status`);
   }
 
   /** Returns the new transcription id. */

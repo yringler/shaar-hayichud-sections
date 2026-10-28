@@ -7,36 +7,34 @@
  *
  * Select lectures with --lecture <id> (repeatable) and/or --section <heading
  * id> (every lecture under that heading, in catalog order), optionally capped
- * with --limit N. For each one, in order:
- *   1. a committed transcript exists -> skip (unless --force, which re-fetches
- *      the existing Sofer transcription; it never submits again);
+ * with --limit N. Only series listed in src/transcription-config.ts are in
+ * scope (--allow-out-of-scope overrides). For each lecture:
+ *   1. a committed transcript exists -> skip. --force re-fetches the existing
+ *      Sofer transcription (never submits); --resubmit retitles and archives
+ *      it as superseded and submits a new one (paid);
  *   2. find or create the Sofer folder path mirroring the catalog headings;
  *   3. reuse a transcription already on Sofer whose title ends with
  *      "[<lecture id>]" (in that folder, else anywhere in the account, moving
- *      it into the folder) -> no new charge;
- *   4. otherwise submit the catalog URL (audio_url) and poll until done. If
- *      the account-wide list could not be fetched, nothing is submitted
- *      (a duplicate could not be ruled out) unless --allow-unlisted.
- * --dry-run prints what would be submitted and submits nothing.
+ *      it into the folder) -> no new charge. If the account-wide list could
+ *      not be fetched, nothing is submitted unless --allow-unlisted;
+ *   4. everything left goes into one standard-mode batch per series
+ *      ($1.00/h with v1, results within 24 h), after a balance check. The
+ *      batch is recorded in tools/.cache/sofer-batches.json before and after
+ *      the create call, so a rerun (with or without arguments) polls it
+ *      instead of submitting again. --single submits files one by one
+ *      ($1.50/h, the old path) instead.
+ * --dry-run prints what would be submitted and touches nothing.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
-import { buildMediaUrl, DEFAULT_CDN_BASE } from '../catalog.js';
+import { loadState, pendingLectureIds, Transcriber } from '../batch.js';
+import { DEFAULT_CDN_BASE } from '../catalog.js';
 import { parseClassesTxt } from '../parse.js';
 import { DATA_DIR, defaultPaths } from '../pipeline.js';
-import { chooseSource, DEAD_STATUSES, ensureFolderPath, pickExisting, SoferClient, SoferError } from '../sofer.js';
-import {
-  folderPathFor,
-  formatTranscript,
-  lectureContexts,
-  selectLectures,
-  soferTitleFor,
-  titleIdSuffix,
-  transcriptPath,
-  type SoferResult,
-  type StoredTranscript,
-} from '../transcripts.js';
+import { SoferClient } from '../sofer.js';
+import { partitionByScope, TRANSCRIPTION_SERIES } from '../transcription-config.js';
+import { lectureContexts, selectLectures } from '../transcripts.js';
 
 const { values } = parseArgs({
   options: {
@@ -44,18 +42,24 @@ const { values } = parseArgs({
     section: { type: 'string', multiple: true, default: [] },
     limit: { type: 'string' },
     force: { type: 'boolean', default: false },
+    resubmit: { type: 'boolean', default: false },
+    single: { type: 'boolean', default: false },
     'dry-run': { type: 'boolean', default: false },
     'allow-unlisted': { type: 'boolean', default: false },
-    'poll-seconds': { type: 'string', default: '20' },
-    'timeout-minutes': { type: 'string', default: '90' },
+    'allow-out-of-scope': { type: 'boolean', default: false },
+    'poll-seconds': { type: 'string', default: '60' },
+    'timeout-minutes': { type: 'string', default: '120' },
+    state: { type: 'string', default: path.join(DATA_DIR, 'tools', '.cache', 'sofer-batches.json') },
     'cdn-base': { type: 'string', default: DEFAULT_CDN_BASE },
     language: { type: 'string', default: 'en' },
     model: { type: 'string', default: 'v1' },
   },
 });
 
-/** USD per audio hour, from the Sofer docs; only used for the pre-submit balance check. */
-const PRICE_PER_HOUR: Record<string, number> = { v1: 1.5, v0: 1.0 };
+if (values.force && values.resubmit) {
+  console.error('--force re-fetches, --resubmit pays for a new transcription: pass one of them.');
+  process.exit(2);
+}
 
 const apiKey = process.env['SOFER_API_KEY']?.trim();
 if (!apiKey) {
@@ -76,135 +80,43 @@ if (selectErrors.length > 0) {
   for (const e of selectErrors) console.error(e);
   process.exit(2);
 }
-if (selected.length === 0) {
+const pending = pendingLectureIds(loadState(values.state));
+if (selected.length === 0 && pending.size === 0) {
   console.error('Nothing selected. Pass --lecture <id> and/or --section <heading id>.');
   process.exit(2);
 }
 const todo = values.limit ? selected.slice(0, Number(values.limit)) : selected;
 
+const { outOfScope } = partitionByScope(todo);
+if (outOfScope.length > 0) {
+  const series = [...new Set(outOfScope.map((c) => `"${c.ancestors[0]?.title}" (:${c.ancestors[0]?.id})`))];
+  const allowed = TRANSCRIPTION_SERIES.map((s) => `"${s.title}" (:${s.seriesId})`).join(', ');
+  const msg = `${outOfScope.length} selected lecture(s) are in series outside the transcription allowlist: ${series.join(', ')}. Allowed: ${allowed} (src/transcription-config.ts).`;
+  if (!values['allow-out-of-scope']) {
+    console.error(`${msg} Pass --allow-out-of-scope to transcribe them anyway (speaker labeling off).`);
+    process.exit(2);
+  }
+  console.warn(`warning: ${msg}`);
+}
+
 const client = new SoferClient(apiKey);
-const folderCache = new Map<string, string>();
-const pollMs = Number(values['poll-seconds']) * 1000;
-const timeoutMs = Number(values['timeout-minutes']) * 60_000;
-
-/** All account transcriptions, fetched at most once; null if the endpoint fails (retried on the next lecture). */
-let accountList: Awaited<ReturnType<SoferClient['listAllTranscriptions']>> | undefined;
-async function accountTranscriptions() {
-  if (accountList === undefined) {
-    try {
-      accountList = await client.listAllTranscriptions();
-    } catch (e) {
-      console.warn(`  (could not list account transcriptions: ${(e as Error).message})`);
-      return null;
-    }
-  }
-  return accountList;
-}
-
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-
-async function waitFor(id: string): Promise<void> {
-  const deadline = Date.now() + timeoutMs;
-  let last = '';
-  for (;;) {
-    let status: string;
-    try {
-      status = await client.status(id);
-    } catch (e) {
-      // Transient errors while polling are retried until the deadline.
-      if (e instanceof SoferError && e.status < 500 && e.status !== 429) throw e;
-      status = `error (${(e as Error).message})`;
-    }
-    if (status !== last) console.log(`  status: ${status}`);
-    last = status;
-    if (status === 'COMPLETED') return;
-    if (DEAD_STATUSES.has(status)) throw new Error(`transcription ${id} ended with ${status}`);
-    if (Date.now() > deadline) throw new Error(`timed out waiting for ${id} (last status ${status}); rerun later to resume`);
-    await sleep(pollMs);
-  }
-}
-
-let failures = 0;
-for (const ctx of todo) {
-  const id = ctx.lecture.id;
-  const out = transcriptPath(DATA_DIR, id);
-  console.log(`${id}`);
-  if (existsSync(out) && !values.force) {
-    console.log(`  skip: ${path.relative(DATA_DIR, out)} exists`);
-    const stored = JSON.parse(readFileSync(out, 'utf8')) as StoredTranscript;
-    const want = folderPathFor(ctx).join(' / ');
-    const had = stored.sofer.folderPath.join(' / ');
-    if (want !== had) console.warn(`  warning: stored in Sofer folder "${had}", catalog now says "${want}" (--force moves it)`);
-    continue;
-  }
-  try {
-    const folderPath = folderPathFor(ctx);
-    const title = soferTitleFor(ctx);
-    const suffix = titleIdSuffix(id);
-    const audioUrl = buildMediaUrl(values['cdn-base'], ctx.lecture.folder, ctx.lecture.filename);
-    const info: Record<string, unknown> = {
-      model: values.model,
-      primary_language: values.language,
-      // Hebrew words in Hebrew letters, so the read-aloud text can be matched to the chapter.
-      hebrew_word_format: ['he'],
-      title,
-    };
-
-    if (values['dry-run']) {
-      console.log(`  dry run: folder ${folderPath.join(' / ')}; title "${title}"; ${audioUrl}`);
-      continue;
-    }
-
-    const folderId = await ensureFolderPath(client, folderPath, folderCache);
-    let transcriptionId: string | undefined;
-    const inFolder = await client.listFolderTranscripts(folderId);
-    const source = chooseSource(
-      inFolder,
-      pickExisting(inFolder, suffix) ? [] : await accountTranscriptions(),
-      suffix,
-      values['allow-unlisted'],
-    );
-    if (source.kind === 'folder') {
-      transcriptionId = source.doc.id;
-      console.log(`  reusing Sofer transcription ${transcriptionId} (${source.doc.status})`);
-    } else if (source.kind === 'account') {
-      transcriptionId = source.doc.id;
-      console.log(`  reusing Sofer transcription ${transcriptionId} (${source.doc.status}); moving it into the folder`);
-      await client.moveDocument(transcriptionId, folderId);
-    }
-
-    if (!transcriptionId) {
-      if (values.force && existsSync(out)) {
-        throw new Error('--force found no transcription on Sofer to re-fetch; delete the local file to submit again');
-      }
-      const hours = (ctx.lecture.durationSeconds ?? 3600) / 3600;
-      const estimateCents = Math.ceil(hours * (PRICE_PER_HOUR[values.model] ?? 1.5) * 100);
-      const bal = await client.balance();
-      if (bal.available_balance < estimateCents) {
-        throw new Error(`available balance ${bal.available_balance}c is below the estimate ${estimateCents}c`);
-      }
-      transcriptionId = await client.createTranscription(audioUrl, { ...info, folder_id: folderId });
-      console.log(`  submitted ${transcriptionId} (~${estimateCents}c; balance ${bal.available_balance}c)`);
-    }
-
-    await waitFor(transcriptionId);
-    const result = await client.getTranscription<SoferResult>(transcriptionId);
-    const stored: StoredTranscript = {
-      schemaVersion: 1,
-      lectureId: id,
-      audioUrl,
-      provider: 'sofer.ai',
-      sofer: { transcriptionId, title, folderPath, request: info },
-      result,
-    };
-    mkdirSync(path.dirname(out), { recursive: true });
-    writeFileSync(out, formatTranscript(stored));
-    console.log(`  wrote ${path.relative(DATA_DIR, out)} (${result.timestamps?.length ?? 0} words)`);
-  } catch (e) {
-    failures += 1;
-    console.error(`  error: ${(e as Error).message}`);
-  }
-}
+const transcriber = new Transcriber({
+  client,
+  dataDir: DATA_DIR,
+  statePath: values.state,
+  pollMs: Number(values['poll-seconds']) * 1000,
+  timeoutMs: Number(values['timeout-minutes']) * 60_000,
+});
+const result = await transcriber.run(todo, {
+  force: values.force,
+  resubmit: values.resubmit,
+  allowUnlisted: values['allow-unlisted'],
+  single: values.single,
+  dryRun: values['dry-run'],
+  model: values.model,
+  language: values.language,
+  cdnBase: values['cdn-base'],
+});
 
 try {
   const bal = await client.balance();
@@ -212,4 +124,4 @@ try {
 } catch {
   // informational only
 }
-process.exit(failures > 0 ? 1 : 0);
+process.exit(result.failures > 0 ? 1 : result.pending > 0 ? 3 : 0);

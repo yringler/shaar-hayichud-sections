@@ -11,7 +11,8 @@
     "set-durations": "yarn compile && node build/cli/set-durations.js",
     "assign-line-ids": "yarn compile && node build/cli/assign-line-ids.js",
     "transcribe": "yarn compile && node build/cli/transcribe.js",
-    "align": "yarn compile && node build/cli/align.js"
+    "align": "yarn compile && node build/cli/align.js",
+    "outline": "yarn compile && node build/cli/outline.js"
   },
   "dependencies": {
     "ajv": "^8.17.1",

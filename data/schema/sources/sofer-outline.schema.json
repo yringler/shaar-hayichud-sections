@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/sources/sofer-outline.schema.json",
+  "title": "Stored Sofer.ai topic outline (source file, not published)",
+  "description": "data/outlines/<encoded lecture id>.json, written by `yarn outline`. `topics` is the raw POST /v1/timestamps/outline response from Sofer.ai: LLM-generated topic titles, each aligned to a start time in the transcription named by `transcriptionId`.",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "provider", "transcriptionId", "transcript", "fetchedAt", "request", "topics"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "provider": { "const": "sofer.ai" },
+    "transcriptionId": { "description": "Sofer transcription the outline was made from; must equal the transcript's sofer.transcriptionId.", "type": "string", "minLength": 1 },
+    "transcript": { "description": "Path of the stored transcript, relative to data/.", "type": "string", "minLength": 1 },
+    "fetchedAt": { "description": "When the outline was fetched (ISO 8601).", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T" },
+    "request": {
+      "description": "The request body sent, without transcription_id.",
+      "type": "object",
+      "properties": {
+        "monotone": { "type": "boolean" },
+        "conclusion_bias": { "type": "boolean" }
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "starting_phrase", "matched_text", "score_norm", "confidence"],
+        "properties": {
+          "title": { "type": "string" },
+          "starting_phrase": { "type": "string" },
+          "matched_text": { "type": "string" },
+          "score_norm": { "type": "number" },
+          "confidence": { "enum": ["HIGH", "MEDIUM", "LOW", "NONE"] },
+          "start_time_sec": { "type": ["number", "null"], "minimum": 0 },
+          "token_span": { "type": ["array", "null"], "items": { "type": "integer" } },
+          "matched_content": { "type": ["integer", "null"] },
+          "content_coverage": { "type": ["number", "null"] },
+          "longest_content_run_soft": { "type": ["integer", "null"] },
+          "longest_content_run_strict": { "type": ["integer", "null"] }
+        }
+      }
+    }
+  }
+}
