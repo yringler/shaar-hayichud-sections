@@ -122,16 +122,32 @@ void main() {
   });
 
   group('parseChapter', () {
-    test('keeps text and nodes interleaved', () {
+    test('keeps lines and nodes interleaved', () {
       const source =
-          '[{"label":"1","children":["a",{"children":["b"],"translation":"B"},"c"]}]';
+          '[{"label":"1","children":[{"id":"aaaaaaaa","text":"a"},'
+          '{"children":[{"id":"bbbbbbbb","text":"b"}],"translation":"B"},'
+          '{"id":"cccccccc","text":"c"}]}]';
       final chapter = parseChapter(source);
       final node = chapter.single;
       expect(node.label, '1');
-      expect(node.children[0], const TextFragment('a'));
+      expect(node.children[0], const TextLine(id: 'aaaaaaaa', text: 'a'));
       expect(node.children[1], isA<TextNode>());
-      expect(node.plainText, 'abc');
+      expect(node.plainText, 'a\nb\nc');
+      expect(chapter.allLines.map((l) => l.id), [
+        'aaaaaaaa',
+        'bbbbbbbb',
+        'cccccccc',
+      ]);
+      expect(chapter.indexLines()['bbbbbbbb']!.text, 'b');
       expect(jsonEncode(chapterToJson(chapter)), source);
+    });
+
+    test('rejects plain-string children and unknown child shapes', () {
+      expect(() => parseChapter('[{"children":["a"]}]'), throwsFormatException);
+      expect(
+        () => parseChapter('[{"children":[{"label":"x"}]}]'),
+        throwsFormatException,
+      );
     });
 
     test('rejects a non-array', () {
@@ -149,7 +165,7 @@ void main() {
             'startSeconds': 0,
             'endSeconds': 1.5,
             'chapter': 'chapter_01',
-            'nodeId': 'n1',
+            'lineId': 'abcdefgh',
           },
         ],
       };

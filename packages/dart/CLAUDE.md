@@ -15,6 +15,9 @@ and keep the SDK constraint compatible with lessons2.
 - Tests round-trip every file in `data/dist/v1/` and `data/chapters/`, and
   check the generated file is current. Run `yarn build-data` in `data/tools`
   first.
-- Catalog IDs are persisted by apps; nothing here may rename or rewrite them.
+- Catalog IDs and chapter line IDs are persisted (by apps and alignments);
+  nothing here may rename or rewrite them.
+- Bump `version` in `pubspec.yaml` and add a line under README "Versions"
+  when the public API changes.
 
 Checks: `dart analyze`, `dart test`.

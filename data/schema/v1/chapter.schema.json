@@ -2,29 +2,43 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.shaarhayichudresources.com/data/v1/schema/chapter.schema.json",
   "title": "Shaar Hayichud chapter (v1)",
-  "description": "One chapter file (chapter_NN.json) as saved by section-tool: a TextNode[] tree. Text strings and child nodes are interleaved in document order.",
+  "description": "One chapter file (chapter_NN.json) as saved by section-tool: a TextNode[] tree. Lines of text and child nodes are interleaved in document order.",
   "type": "array",
   "items": { "$ref": "#/$defs/textNode" },
   "$defs": {
     "textNode": {
+      "description": "A section. Sections have no persisted id; alignments and transcripts point at lines.",
       "type": "object",
       "additionalProperties": false,
       "required": ["children"],
       "properties": {
-        "id": {
-          "description": "Node id. section-tool generates ids while editing but does not currently persist them; reserved for stable node ids (see alignment.schema.json).",
-          "type": "string",
-          "minLength": 1
-        },
         "label": { "description": "Optional section label.", "type": "string" },
         "children": {
+          "description": "Lines and sub-sections in document order.",
           "type": "array",
           "items": {
-            "anyOf": [{ "type": "string" }, { "$ref": "#/$defs/textNode" }]
+            "anyOf": [{ "$ref": "#/$defs/line" }, { "$ref": "#/$defs/textNode" }]
           }
         },
-        "translation": { "description": "Optional English translation of this node's text.", "type": "string" },
-        "text": { "description": "Deprecated; kept for backward compatibility with old section-tool output.", "type": "string" }
+        "translation": { "description": "Optional English translation of this section's text.", "type": "string" }
+      }
+    },
+    "line": {
+      "description": "One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and transcripts can reference it on its own.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text"],
+      "properties": {
+        "id": {
+          "description": "Stable line id: 8 random lowercase base32 characters, unique across the whole corpus.",
+          "type": "string",
+          "pattern": "^[a-z2-7]{8}$"
+        },
+        "text": {
+          "description": "The line's text. Never empty and never contains a newline.",
+          "type": "string",
+          "pattern": "^[^\\n]*\\S[^\\n]*$"
+        }
       }
     }
   }

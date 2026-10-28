@@ -64,23 +64,30 @@ extension CatalogLectureX on CatalogLecture {
   Uri get uri => Uri.parse(url);
 }
 
-/// Text access on [TextNode].
+/// Line access on [TextNode].
 extension TextNodeText on TextNode {
-  /// This node's own text and all descendant text, in document order.
-  String get plainText {
-    final b = StringBuffer();
-    void walk(TextNode n) {
-      for (final c in n.children) {
-        switch (c) {
-          case TextFragment(:final text):
-            b.write(text);
-          case TextNode():
-            walk(c);
-        }
+  /// Every line in this node and its descendants, in document order.
+  Iterable<TextLine> get allLines sync* {
+    for (final c in children) {
+      switch (c) {
+        case TextLine():
+          yield c;
+        case TextNode():
+          yield* c.allLines;
       }
     }
-
-    walk(this);
-    return b.toString();
   }
+
+  /// The text of [allLines], joined with newlines.
+  String get plainText => allLines.map((l) => l.text).join('\n');
+}
+
+/// Line access on a whole [Chapter].
+extension ChapterLines on Chapter {
+  /// Every line in the chapter, in document order.
+  Iterable<TextLine> get allLines => expand((n) => n.allLines);
+
+  /// Lines by [TextLine.id]. Line ids are unique across all chapters, so
+  /// several chapters' maps can be merged without clashes.
+  Map<String, TextLine> indexLines() => {for (final l in allLines) l.id: l};
 }

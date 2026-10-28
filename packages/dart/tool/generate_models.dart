@@ -26,7 +26,7 @@ const nameOverrides = {
   'CatalogLectureMediaType': 'MediaType',
   'TextNodeChildren': 'TextNodeChild',
   'ChapterTextNode': 'TextNode',
-  'TextNodeChildString': 'TextFragment',
+  'ChapterLine': 'TextLine',
 };
 
 const outputPath = 'lib/src/generated/models.g.dart';
@@ -527,7 +527,7 @@ String emit() {
           "    if (json is Map && json['type'] == ${literal(disc.first.constValue)}) {",
         );
       } else {
-        out.writeln('    if (json is Map) {');
+        out.writeln('    if (json is Map${keyDiscriminator(u, m)}) {');
       }
       out
         ..writeln('      return ${m.name}.fromJson(json);')
@@ -557,6 +557,31 @@ String emit() {
 
   out.writeln(_helpers);
   return out.toString();
+}
+
+/// Without a `type` const, object members of a union are told apart by a
+/// required key that no other object member has (e.g. `children` for
+/// TextNode). A single object member needs no check.
+String keyDiscriminator(UnionDef u, ClassDef m) {
+  final others = u.members
+      .map((n) => classes[n]!)
+      .where((c) => c != m && !c.wrapsString)
+      .toList();
+  if (others.isEmpty) return '';
+  final otherKeys = {
+    for (final c in others)
+      for (final f in c.fields) f.jsonKey,
+  };
+  final own = m.fields.where(
+    (f) => f.required && !otherKeys.contains(f.jsonKey),
+  );
+  if (own.isEmpty) {
+    unsupported(
+      'union ${u.name} member ${m.name}',
+      'no distinguishing required key',
+    );
+  }
+  return ' && json.containsKey(${literal(own.first.jsonKey)})';
 }
 
 DType fieldType(FieldDef f) =>

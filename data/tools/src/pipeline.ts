@@ -5,6 +5,7 @@ import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'no
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildCatalog, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
+import { checkAlignmentLineIds, indexLineIds, type Alignment, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
@@ -67,6 +68,15 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   const { catalog, errors } = loadCatalog(paths, schemas, cdnBase);
   const loaded = loadChapters(paths.chaptersDir, schemas);
   errors.push(...loaded.errors.map((e) => `chapters/${e}`));
+  if (loaded.errors.length === 0) {
+    // Only walk trees the schema accepted.
+    const lines = indexLineIds(loaded.chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })));
+    errors.push(...lines.errors.map((e) => `chapters/${e}`));
+    // Reserved: no alignment sources exist yet. When they do, load and
+    // schema-validate them here; their line ids must resolve.
+    const alignments: { file: string; data: Alignment }[] = [];
+    errors.push(...checkAlignmentLineIds(alignments, lines.index).map((e) => `alignments/${e}`));
+  }
   if (errors.length > 0) return { errors };
 
   const outDir = path.join(paths.distDir, 'v1');

@@ -55,10 +55,29 @@ describe('SchemaSet', () => {
   });
 
   it('validates chapter TextNode trees', () => {
-    assert.deepEqual(schemas.validate('chapter', [{ label: 'a', children: ['x', { children: ['y'] }], translation: 't' }]), []);
+    const line = (id: string, text = 'x') => ({ id, text });
+    assert.deepEqual(
+      schemas.validate('chapter', [
+        { label: 'a', children: [line('abcdefgh'), { children: [line('ijklmn23')] }, line('opqr4567')], translation: 't' },
+      ]),
+      [],
+    );
     assert.notDeepEqual(schemas.validate('chapter', [{ label: 'a' }]), []);
     assert.notDeepEqual(schemas.validate('chapter', [{ children: [1] }]), []);
     assert.notDeepEqual(schemas.validate('chapter', { children: [] }), []);
+    // Lines: plain strings, missing/invalid ids, newlines and blank text are rejected.
+    assert.notDeepEqual(schemas.validate('chapter', [{ children: ['x'] }]), []);
+    assert.notDeepEqual(schemas.validate('chapter', [{ children: [{ text: 'x' }] }]), []);
+    for (const id of ['ABCDEFGH', 'abcdefg', 'abcdefg1', 'abcdefghi']) {
+      assert.notDeepEqual(schemas.validate('chapter', [{ children: [line(id)] }]), [], id);
+    }
+    for (const text of ['a\nb', '', '  ']) {
+      assert.notDeepEqual(schemas.validate('chapter', [{ children: [line('abcdefgh', text)] }]), [], JSON.stringify(text));
+    }
+    assert.notDeepEqual(schemas.validate('chapter', [{ children: [{ ...line('abcdefgh'), extra: 1 }] }]), []);
+    // Sections have no persisted id, and the deprecated `text` field is gone.
+    assert.notDeepEqual(schemas.validate('chapter', [{ id: 'n1', children: [] }]), []);
+    assert.notDeepEqual(schemas.validate('chapter', [{ text: 't', children: [] }]), []);
   });
 
   it('keeps the reserved alignment/transcript shapes compilable', () => {
@@ -66,7 +85,7 @@ describe('SchemaSet', () => {
       schemas.validate('alignment', {
         schemaVersion: 1,
         lectureId: 'a.mp3',
-        segments: [{ startSeconds: 0, endSeconds: 5, chapter: 'chapter_01', nodeId: 'n1' }],
+        segments: [{ startSeconds: 0, endSeconds: 5, chapter: 'chapter_01', lineId: 'abcdefgh' }],
       }),
       [],
     );
@@ -80,7 +99,7 @@ describe('SchemaSet', () => {
 describe('loadChapters', () => {
   it('reports bad names, bad JSON and schema errors per file', () => {
     const dir = mkdtempSync(path.join(tmpdir(), 'chapters-'));
-    writeFileSync(path.join(dir, 'chapter_01.json'), '[{"children":["ok"]}]');
+    writeFileSync(path.join(dir, 'chapter_01.json'), '[{"children":[{"id":"abcdefgh","text":"ok"}]}]');
     writeFileSync(path.join(dir, 'chapter_02.json'), '[{"children":"nope"}]');
     writeFileSync(path.join(dir, 'chapter_03.json'), '{oops');
     writeFileSync(path.join(dir, 'notes.json'), '[]');

@@ -30,18 +30,25 @@ for (final lecture in catalog.allLectures) {
 }
 
 final chapter = parseChapter((await http.get(urls.chapter(1))).body);
-print(chapter.first.plainText);
+for (final line in chapter.allLines) {
+  print('${line.id}  ${line.text}');
+}
 ```
 
-`CatalogItem` (section or lecture) and `TextNodeChild` (`TextFragment` or
+`CatalogItem` (section or lecture) and `TextNodeChild` (`TextLine` or
 `TextNode`) are sealed, so `switch` on them is exhaustive.
+
+Chapter text is made of `TextLine`s, each with a stable `id` that is unique
+across all chapters and survives edits to the line. Alignments and transcripts
+point at lines by that id alone; sections have no id.
 
 Parsing throws `FormatException` when the JSON does not match the v1 schema
 (including a different `schemaVersion`). Unknown keys are ignored, so a client
 keeps working when fields are added within v1.
 
-**IDs are persistent.** Section and lecture `id`s are what apps store for
-favorites, recents and downloads. They never change once published; see
+**IDs are persistent.** Catalog section and lecture `id`s are what apps store
+for favorites, recents and downloads, and line ids are what alignments point
+at. They never change once published; see
 [`data/README.md`](../../data/README.md).
 
 **Use `lecture.url` as-is.** `buildMediaUrl` reproduces it (and is tested to
@@ -68,6 +75,14 @@ final catalog = parseCatalogWithFallback(fetched: fetched, bundled: bundled);
 
 `parseCatalogWithFallback` uses the fetched text unless it is null or not a
 valid v1 catalog. Refresh the bundled copy when you release the app.
+
+## Versions
+
+- **1.1.0**: chapter text is a list of `TextLine` (`id` + `text`) instead of
+  newline-joined strings (`TextFragment` is gone); `TextNode` no longer has
+  `id` or the deprecated `text`; alignment segments reference `lineId`.
+  Added `allLines` and `Chapter.indexLines()`.
+- **1.0.0**: first release.
 
 ## Development
 

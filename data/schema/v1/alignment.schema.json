@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.shaarhayichudresources.com/data/v1/schema/alignment.schema.json",
   "title": "Lecture-to-text alignment (v1, RESERVED)",
-  "description": "PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/<url-encoded lecture id>.json) mapping time ranges in the recording to chapter TextNodes. Fields may still be added before first use; existing fields will not change meaning within v1.",
+  "description": "PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/<url-encoded lecture id>.json) mapping time ranges in the recording to chapter lines. Fields may still be added before first use; existing fields will not change meaning within v1.",
   "x-status": "reserved",
   "type": "object",
   "required": ["schemaVersion", "lectureId", "segments"],
@@ -13,12 +13,12 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["startSeconds", "endSeconds", "chapter", "nodeId"],
+        "required": ["startSeconds", "endSeconds", "chapter", "lineId"],
         "properties": {
           "startSeconds": { "type": "number", "minimum": 0 },
           "endSeconds": { "type": "number", "minimum": 0 },
           "chapter": { "description": "Chapter file key, e.g. 'chapter_01'.", "type": "string", "pattern": "^chapter_\\d+$" },
-          "nodeId": { "description": "TextNode.id inside that chapter (requires chapter files to persist node ids).", "type": "string", "minLength": 1 }
+          "lineId": { "description": "id of the chapter line this range covers (chapter.schema.json $defs/line). Line ids are unique across all chapters; the build checks that the line exists in the named chapter.", "type": "string", "pattern": "^[a-z2-7]{8}$" }
         }
       }
     }
