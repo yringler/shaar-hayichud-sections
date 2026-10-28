@@ -1,6 +1,6 @@
 # Claude Code Instructions — section-tool
 
-> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is consumed by the [`site/` sub-project](../site/CLAUDE.md).
+> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is saved by `functions/api/save.ts` (GitHub contents API) into the repo's [`data/chapters/`](../data/README.md), the single source of truth that the [`site/` sub-project](../site/CLAUDE.md) renders and publishes. Saved files must match `data/schema/v1/chapter.schema.json`; the site build fails otherwise.
 
 This is a Hebrew text sectioning tool built with Angular 21. It helps users progressively divide Hebrew text into nested JSON sections using keyboard shortcuts.
 

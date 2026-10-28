@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/catalog.schema.json",
+  "title": "Shaar Hayichud audio class catalog (v1)",
+  "description": "Generated from data/classes.txt. Sections form a tree (level 1 = '#', 2 = '##', 3 = '###'); lectures are leaves. All ids are stable: clients may persist them (favorites, recents, downloads).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "cdnBase", "series"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": 1 },
+    "cdnBase": {
+      "description": "Origin every lecture url is built from (no trailing slash).",
+      "type": "string",
+      "pattern": "^https://[^/]+$"
+    },
+    "series": {
+      "description": "Top-level ('#') sections in display order.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/section" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id", "level", "title", "displayOrder", "lectureCount", "items"],
+      "properties": {
+        "type": { "const": "section" },
+        "id": {
+          "$ref": "#/$defs/id",
+          "description": "Stable id from the ':N' suffix of the heading line. Unique across all sections."
+        },
+        "level": {
+          "description": "Heading depth: 1 = '#', 2 = '##', 3 = '###'.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "displayOrder": {
+          "description": "0-based position among its siblings (sections and lectures share one sequence).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "lectureCount": {
+          "description": "Number of lectures in this section, including nested sections.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "items": {
+          "description": "Child sections and lectures, in display order.",
+          "type": "array",
+          "items": {
+            "oneOf": [{ "$ref": "#/$defs/section" }, { "$ref": "#/$defs/lecture" }]
+          }
+        }
+      }
+    },
+    "lecture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id", "title", "displayOrder", "durationSeconds", "folder", "filename", "mediaType", "url"],
+      "properties": {
+        "type": { "const": "lecture" },
+        "id": {
+          "$ref": "#/$defs/id",
+          "description": "Stable lecture id. Defaults to the filename; an '@ id' line in classes.txt overrides it. Unique across the catalog."
+        },
+        "title": {
+          "description": "From the preceding '- title' line, otherwise 'Part N' (N = 1-based position among the lectures of its parent section).",
+          "type": "string",
+          "minLength": 1
+        },
+        "displayOrder": { "type": "integer", "minimum": 0 },
+        "durationSeconds": {
+          "description": "Length in seconds, or null when not yet measured.",
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "folder": {
+          "description": "CDN folder (unencoded, may contain '/'), from the most recent '>' line.",
+          "type": "string",
+          "minLength": 1
+        },
+        "filename": {
+          "description": "CDN filename (unencoded).",
+          "type": "string",
+          "pattern": "\\.(mp3|m4a)$"
+        },
+        "mediaType": { "enum": ["audio/mpeg", "audio/mp4"] },
+        "url": {
+          "description": "Canonical, fully built and percent-encoded URL: cdnBase + '/' + each folder segment and the filename percent-encoded (encodeURIComponent, plus !'()*), joined by '/'. Use this as-is.",
+          "type": "string",
+          "pattern": "^https://"
+        }
+      }
+    }
+  }
+}

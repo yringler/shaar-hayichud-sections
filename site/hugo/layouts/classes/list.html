@@ -1,27 +1,34 @@
 {{ define "main" }}
+  {{ $catalog := partial "catalog.html" . }}
   <div class="ltr-content">
     {{ if isset .Params "seriesindex" }}
       {{- /* Series page */ -}}
-      {{ $si := .Params.seriesIndex }}
-      {{ $series := index site.Data.classes $si }}
+      {{ $series := index $catalog.series .Params.seriesIndex }}
+      {{ $seriesSlug := .Params.seriesSlug }}
       <p class="breadcrumb"><a href="/classes/">Classes</a> → {{ $series.title }}</p>
       <h1>{{ $series.title }}</h1>
+      {{ $parts := where $series.items "type" "section" }}
+      {{ with $parts }}
       <ul class="part-list">
-        {{ range $series.children }}
+        {{ range . }}
         <li>
-          <a href="/classes/{{ $series.title | urlize }}/{{ .title | urlize }}/">{{ .title }}</a>
-          <span class="track-count">{{ partial "track-count.html" .children }} tracks</span>
+          <a href="/classes/{{ $seriesSlug }}/{{ .title | urlize }}/">{{ .title }}</a>
+          <span class="track-count">{{ .lectureCount }} tracks</span>
         </li>
         {{ end }}
       </ul>
+      {{ end }}
+      {{ range where $series.items "type" "lecture" }}
+        {{ partial "class-track.html" . }}
+      {{ end }}
     {{ else }}
       {{- /* Top-level classes listing */ -}}
       <h1>Classes</h1>
       <ul class="part-list">
-        {{ range site.Data.classes }}
+        {{ range $catalog.series }}
         <li>
           <a href="/classes/{{ .title | urlize }}/">{{ .title }}</a>
-          <span class="track-count">{{ len .children }} parts</span>
+          <span class="track-count">{{ .lectureCount }} tracks</span>
         </li>
         {{ end }}
       </ul>

@@ -1,5 +1,17 @@
-/*
+# Cloudflare Pages response headers. When several rules match a path, Pages
+# joins values for the same header with commas, so each path gets
+# Access-Control-Allow-Origin from exactly one rule.
+
+# Legacy raw chapter JSON (read cross-origin by section-tool).
+/texts/*
   Access-Control-Allow-Origin: *
+
+# Published data API (see data/README.md). Other origins (e.g. the Flutter web
+# app) fetch it, so allow CORS. URLs are not content-hashed, so cache briefly and
+# revalidate in the background.
+/data/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300, stale-while-revalidate=86400
 
 /css/*
   Cache-Control: public, max-age=31536000, immutable

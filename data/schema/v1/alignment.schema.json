@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/alignment.schema.json",
+  "title": "Lecture-to-text alignment (v1, RESERVED)",
+  "description": "PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/<url-encoded lecture id>.json) mapping time ranges in the recording to chapter TextNodes. Fields may still be added before first use; existing fields will not change meaning within v1.",
+  "x-status": "reserved",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "segments"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["startSeconds", "endSeconds", "chapter", "nodeId"],
+        "properties": {
+          "startSeconds": { "type": "number", "minimum": 0 },
+          "endSeconds": { "type": "number", "minimum": 0 },
+          "chapter": { "description": "Chapter file key, e.g. 'chapter_01'.", "type": "string", "pattern": "^chapter_\\d+$" },
+          "nodeId": { "description": "TextNode.id inside that chapter (requires chapter files to persist node ids).", "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

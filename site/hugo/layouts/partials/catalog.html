@@ -1,0 +1,9 @@
+{{- /* Returns the class catalog generated from the repo's data/classes.txt
+       (data/dist/v1/catalog.json, mounted as site.Data.v1.catalog).
+       Fails the build if the data build has not run. */ -}}
+{{- $catalog := "" -}}
+{{- with site.Data.v1 }}{{ $catalog = .catalog }}{{ end -}}
+{{- if not $catalog -}}
+  {{- errorf "class catalog missing: run the data build first (yarn build / yarn data in site/)" -}}
+{{- end -}}
+{{- return $catalog -}}

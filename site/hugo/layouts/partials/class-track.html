@@ -1,0 +1,5 @@
+{{- /* One lecture from the catalog: audio player (canonical url) + title. */ -}}
+<div class="track">
+  <audio controls preload="none" src="{{ .url }}"></audio>
+  <p class="track-title">{{ .title }}</p>
+</div>

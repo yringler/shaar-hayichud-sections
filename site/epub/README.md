@@ -1,13 +1,13 @@
 # epub
 
 `build-epub.mjs` generates `dist/shaar-hayichud.epub` directly from the JSON chapter
-files in `src/texts/`. No pre-build step is needed.
+files in the monorepo's `data/chapters/`. No pre-build step is needed.
 
 ```bash
 yarn epub
 ```
 
-Make sure `epub-gen` is installed (`yarn install`) and that `src/texts/chapter_NN.json`
+Make sure `epub-gen` is installed (`yarn install`) and that `data/chapters/chapter_NN.json`
 files exist.
 
 ## Notes
