@@ -532,7 +532,9 @@ export class Transcriber {
         }
         if (t.status === 'COMPLETED') {
           try {
-            if (t.folder_id !== item.folderId) await this.client.moveDocument(t.id, item.folderId);
+            // The batch filed it in the batch's folder (batch status reports folder_id null, so it is not trusted).
+            const sameFolder = b.folderPath.map((x) => x.toLowerCase()).join('\u0000') === item.folderPath.map((x) => x.toLowerCase()).join('\u0000');
+            if (!sameFolder && t.folder_id !== item.folderId) await this.client.moveDocument(t.id, item.folderId);
             await this.write(item, t.id);
             item.done = 'written';
           } catch (e) {
