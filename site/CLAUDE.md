@@ -18,6 +18,7 @@ yarn data     # Validate ../data and generate ../data/dist/v1 (run by build/serv
 yarn build    # data + Hugo build → hugo/public/ (minified)
 yarn serve    # data + Hugo dev server with live reload
 yarn test     # Unit tests for lib/json-renderer.js (data tests: cd ../data/tools && yarn test)
+yarn test:scripts  # Unit tests for scripts/sefaria-swap.py (python3)
 yarn epub     # Generate EPUB from ../data/chapters
 ```
 
@@ -74,19 +75,19 @@ Each chapter generates 3 pages:
 1. Chapter JSON files in `../data/chapters/` are loaded as Hugo data via module mount
 2. Content adapters generate pages referencing data keys (e.g., `chapter_01`)
 3. `layouts/_default/single.html` checks for `chapter_data` param and calls the recursive `render-textnode.html` partial
-4. The partial walks the `TextNode` tree, emitting `<div class="depth-N">` blocks with hierarchical numbering
+4. The partial walks the `TextNode` tree, emitting `<div class="depth-N">` blocks with hierarchical numbering and one `<span class="line">` per line of text
 5. Raw JSON files are also served at `/texts/` via the static mount
 
 ### JSON TextNode Format
 
-Chapter files are JSON arrays of `TextNode` objects (produced by `section-tool`; schema: `../data/schema/v1/chapter.schema.json`):
+Chapter files are JSON arrays of `TextNode` objects (produced by `section-tool`; schema: `../data/schema/v1/chapter.schema.json`). A section's own text is a run of `Line` objects (`{id, text}`, one line, no newline) at the start of its `children`:
 
 ```json
 [
   {
     "label": "optional section label",
     "children": [
-      "direct text string",
+      { "id": "k3m9qa2x", "text": "a line of Hebrew text" },
       { "label": "child section", "children": ["..."] }
     ],
     "translation": "optional English translation"
@@ -94,9 +95,13 @@ Chapter files are JSON arrays of `TextNode` objects (produced by `section-tool`;
 ]
 ```
 
+Tell the two apart by `children`: a section always has it, a line never does.
+
 ### Transformation Rules
 
-- Each `TextNode` with direct text strings emits a `<div class="depth-N">` block
+- Each `TextNode` with lines of its own emits a `<div class="depth-N">` block
+- Each line is rendered as `<span class="line" id="<line id>">`, wrapped in a `<p>` when the section has several lines. The line ID is the anchor that audio alignments and transcripts point at, so every line must keep its span and ID. The EPUB omits the IDs (they may start with a digit, which XHTML forbids).
+- `render-textnode.html` and `lib/json-renderer.js` must produce the same markup
 - Hierarchical numbering: `1`, `1.1`, `1.1.1`, …
 - Optional `label` shown as `.label` inside the div
 - Footnote digit markers stripped from Hebrew text content: `replaceRE \d+`

@@ -9,3 +9,4 @@ _site
 !.yarn/sdks
 !.yarn/versions
 **/*local.json
+__pycache__/

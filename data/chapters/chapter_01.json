@@ -2,39 +2,97 @@
   {
     "label": "פתיחה",
     "children": [
-      "הנה כבר מבואר באריכות בקונטרס מיוחד בפרטי אופני ההתפעלות במוח ולב, ומחשבה שנולד מן ההתבוננות לפי סדר ה' מדריגות נפש רוח נשמה חיה יחידה כו'.\nומעתה יש לבאר היטב במהות גוף ענין ההתבוננות, מה היא בעצם ובמה יתבונן.\nוהנה מהות ההתבוננות בעצם הוא ענין ההסתכלות החזקה בעמקות הענין ולעמוד עליו הרבה עד שיבין אותו על בוריו בכל חלקיו בפרטי פרטיות\nוהוא בחינת פנימיות בינה הנקרא בלשון הגמרא בשם עיון, כמו שאמר במסכת סוכה הא למגרס והא לעיוני"
+      {
+        "id": "xazelgse",
+        "text": "הנה כבר מבואר באריכות בקונטרס מיוחד בפרטי אופני ההתפעלות במוח ולב, ומחשבה שנולד מן ההתבוננות לפי סדר ה' מדריגות נפש רוח נשמה חיה יחידה כו'."
+      },
+      {
+        "id": "mrqahnmm",
+        "text": "ומעתה יש לבאר היטב במהות גוף ענין ההתבוננות, מה היא בעצם ובמה יתבונן."
+      },
+      {
+        "id": "g4fdcli2",
+        "text": "והנה מהות ההתבוננות בעצם הוא ענין ההסתכלות החזקה בעמקות הענין ולעמוד עליו הרבה עד שיבין אותו על בוריו בכל חלקיו בפרטי פרטיות"
+      },
+      {
+        "id": "edcbjtrl",
+        "text": "והוא בחינת פנימיות בינה הנקרא בלשון הגמרא בשם עיון, כמו שאמר במסכת סוכה הא למגרס והא לעיוני"
+      }
     ],
     "translation": "When a person thinks deeply [<i>hisbonenus</i>] [about G-d], there are different types of excitement in his mind, heart, and thought, according to the 5 levels of the soul. This was explained in a pamphlet. Now we have to explain this thing called deep thought. What is it, really? And what should you think about?\nTo think deeply is to stare intently at the depth of the idea, and to stay with it until you understand it with all of its details. It is the inner meaning of <i>Binah</i> [lit. understanding]. The Talmud calls it <i>iyun</i>, like it writes in Tractate Sukkah, \"There is <i>girsa</i> and <i>iyun</i>\"."
   },
   {
     "label": "גירסא",
     "children": [
-      "פירוש הגירסא הוא רק הבנת הדבר בהשקפה ראשונה, שהולכת ונובעת במהירות בלתי עכוב והעמדה כלל כידוע\nעל דרך משל המביט בעינו על דבר מה ואינו מתבונן כלל על הדבר באיכותו ומהותו בכל חלקיו הפנימים וחיצונים, רק דרך מעביר בעלמא\nשבמשך זמן ודאי ישכח עליו לגמרי וגם לא יוכל לספר לזולתו רק כלליות ענין אותו הדבר שראה בהעברת העין ולא בטביעת עין כלל\nוכן העברת עין השכל באיזה סברא בהשקפה ראשונה בלתי עכוב והעמדה לעיין בו היטב, ולא ידע בסברא זו לתכליתה כלל"
+      {
+        "id": "3aem2a2q",
+        "text": "פירוש הגירסא הוא רק הבנת הדבר בהשקפה ראשונה, שהולכת ונובעת במהירות בלתי עכוב והעמדה כלל כידוע"
+      },
+      {
+        "id": "iobezm3p",
+        "text": "על דרך משל המביט בעינו על דבר מה ואינו מתבונן כלל על הדבר באיכותו ומהותו בכל חלקיו הפנימים וחיצונים, רק דרך מעביר בעלמא"
+      },
+      {
+        "id": "ffb3yrwq",
+        "text": "שבמשך זמן ודאי ישכח עליו לגמרי וגם לא יוכל לספר לזולתו רק כלליות ענין אותו הדבר שראה בהעברת העין ולא בטביעת עין כלל"
+      },
+      {
+        "id": "tigfmarz",
+        "text": "וכן העברת עין השכל באיזה סברא בהשקפה ראשונה בלתי עכוב והעמדה לעיין בו היטב, ולא ידע בסברא זו לתכליתה כלל"
+      }
     ],
     "translation": "<i>Girsa</i> is what you understand at first glance. [The mind] flow quickly, without sitting on the idea at all. For example, if you look at something, and don't really think about its qualities and what it really is, inside and out. Just a glance. With time, you will certainly forget about it completely, and you'll only be able to tell your friend the general idea."
   },
   {
     "label": "בינה",
     "children": [
-      "כי הנה ג' דברים הוא שיש בכל דבר מושכל. עומק ואורך ורוחב.",
+      {
+        "id": "cy46bzo7",
+        "text": "כי הנה ג' דברים הוא שיש בכל דבר מושכל. עומק ואורך ורוחב."
+      },
       {
         "label": "רוחב",
         "children": [
-          "הרוחב הוא בחינת הסבר המושכל לכל צד בפרטים הרבה כרוחב הנהר, ולא דברים כהווייתן לבד, כנהר קצר."
+          {
+            "id": "kbu523ut",
+            "text": "הרוחב הוא בחינת הסבר המושכל לכל צד בפרטים הרבה כרוחב הנהר, ולא דברים כהווייתן לבד, כנהר קצר."
+          }
         ],
         "translation": "The width is like a wide river. The idea is explained in every way, with many details. The idea, just as it is, is like a thin river."
       },
       {
         "label": "אורך",
         "children": [
-          "ואורך הוא עוצם ירידות ההשכלה להלביש את המושכל במשלים שונים עד להביאו בהשגות התינוק קטן כו', כנהר שהולך ומתמשך לאורך (וכמו שמבואר באריכות בכתבים בענין אורך היריעה כו')"
+          {
+            "id": "67ihjptr",
+            "text": "ואורך הוא עוצם ירידות ההשכלה להלביש את המושכל במשלים שונים עד להביאו בהשגות התינוק קטן כו', כנהר שהולך ומתמשך לאורך (וכמו שמבואר באריכות בכתבים בענין אורך היריעה כו')"
+          }
         ],
         "translation": "Length means bringing the idea down a lot, to cloth it in many allegories, until even a little kid can understand it. This is like a river, which travels its length. (This is explained more in [other] writings, discussing the length of the hides etc.)"
       },
       {
         "label": "עומק",
         "children": [
-          "והעומק הוא כעומק הנהר שמשם מתרחב ובעצמו אינו רחב כלל, אבל הוא עיקר עצם הנהר (הנקרא שטרוים) שהוא עיקר מרוצת הילוכו ממקורו\nומים שעל גביו בגובה ולצדדי העומק טפלים אליו, שאינן רק בחינת התגברות התפשטותו בלבד, לצדדים ברוחב ובגובה ובאורך ההילוך כו'\nכך עומק המושכל הוא בחינת עצם נקודתו כמו שהוא, ונקרא עומק המושג\nשכל מה שנתפשט בהסבר ההשגה לכל צד, ברוחב גדול בכמה פרטים, וכן לאורך בעוצם הירידה, וגם בחינת הגובה למעלה, להשכיל ממנו עוד למעלה ממנו הרבה, (עד בחינת עומק רום כמו התגברות המים למעלה מעלה בזמן המבול שכזה יהיה לימות המשיח ברוחניות בשנת ת\"ר לחיי נח כמו שכתוב בזוהר דאתפתחו מבועין דחכמתא כו' והיינו מעיינות תהום החכמה שיתגברו למעלה מעלה ויכסו כל ההרים כו' וארובות השמים נפתחו כו' להמשיך מן המים שמעל השמים הנקרא עומק רום שתלוי בעומק תחת כי נעוץ תחילתן בסופן כמו העמק שאלה או הגבה למעלה כו' וכמו שכתוב בכתבים) הכל נמשך מעצם עומק נקודתו כמו שהוא נובע מן החכמה הנקרא אין, וכמו שכתוב ונהר יוצא מעדן כו'\nשהבינה נקרא נהר והחכמה נקרא מעיין, כידוע"
+          {
+            "id": "j7dd3yah",
+            "text": "והעומק הוא כעומק הנהר שמשם מתרחב ובעצמו אינו רחב כלל, אבל הוא עיקר עצם הנהר (הנקרא שטרוים) שהוא עיקר מרוצת הילוכו ממקורו"
+          },
+          {
+            "id": "vuobhjav",
+            "text": "ומים שעל גביו בגובה ולצדדי העומק טפלים אליו, שאינן רק בחינת התגברות התפשטותו בלבד, לצדדים ברוחב ובגובה ובאורך ההילוך כו'"
+          },
+          {
+            "id": "ceetsykf",
+            "text": "כך עומק המושכל הוא בחינת עצם נקודתו כמו שהוא, ונקרא עומק המושג"
+          },
+          {
+            "id": "2ub5ct7q",
+            "text": "שכל מה שנתפשט בהסבר ההשגה לכל צד, ברוחב גדול בכמה פרטים, וכן לאורך בעוצם הירידה, וגם בחינת הגובה למעלה, להשכיל ממנו עוד למעלה ממנו הרבה, (עד בחינת עומק רום כמו התגברות המים למעלה מעלה בזמן המבול שכזה יהיה לימות המשיח ברוחניות בשנת ת\"ר לחיי נח כמו שכתוב בזוהר דאתפתחו מבועין דחכמתא כו' והיינו מעיינות תהום החכמה שיתגברו למעלה מעלה ויכסו כל ההרים כו' וארובות השמים נפתחו כו' להמשיך מן המים שמעל השמים הנקרא עומק רום שתלוי בעומק תחת כי נעוץ תחילתן בסופן כמו העמק שאלה או הגבה למעלה כו' וכמו שכתוב בכתבים) הכל נמשך מעצם עומק נקודתו כמו שהוא נובע מן החכמה הנקרא אין, וכמו שכתוב ונהר יוצא מעדן כו'"
+          },
+          {
+            "id": "hnicuvea",
+            "text": "שהבינה נקרא נהר והחכמה נקרא מעיין, כידוע"
+          }
         ],
         "translation": "The depth is like the depth of a river. It broadens from there, but [the depth] itself isn't wide at all. It is the true self of the river (which is called the current), the main flowing from its source. The waters above it and to its sides are secondary. They're just that power spreading out, to the sides (the width of the river), in the height, and the length that it flows.\nSo too, the depth of the idea [<i>muskal</i>] is the point itself, as it is. It is called the depth of the idea [<i>musag</i>]. Many things spread out from it. It goes to all sides, with a great width, with many details. It [travels along its] length, with a huge descent. It even goes up, reaching a higher level [of knowledge] then it had before.\n(Until the high depth [<i>omek rom</i>], like the waters of the <i>Mabul</i> which flooded above everything. A similar thing will happen in a spiritual way in the 600th year of the life of Noach, as it writes in Zohar that \"the wellsprings of wisdom will open up etc\". This is talking about the deepest wellsprings [<i>mayanos tehom</i>] of <i>chochma</i>, that will flood above everything and cover the mountains. \"And the windows of the heavens will open\" to draw down from the water above the heavens which is called the high depth. [These waters] depend on the lower depth because \"the end is wedged into the beginning\". Like \"[cast] deep your question, or raise it up high\", and as is explained in [other] writings.)\nAll of this is drawn from the real depth-point itself, as it is drawn from <i>chochma</i> which is called \"nothing [<i>ayin</i>]\"."
       }
@@ -44,32 +102,75 @@
   {
     "label": "עיון",
     "children": [
-      "והוא הנקרא עיון, שעומד על דבר המושכל ומעיין בו הרבה מאד, שהוא העיכוב היפך המהירות\nדהיינו כדי לבא לעומקו של המושכל כמו שהוא בעצם פנימיותו ותוך תוכו דווקא\nכמו המסתכל על דבר מה בעינו ולא בהעברה בעלמא, אלא בפקוח וטביעת עינו בעיכוב גדול, עד שיודע אותו היטב בכל חלקיו הפנימים ותוך תוכו כו'\nוהוא הנקרא התבוננות בנו''ן הכפול דוקא, דהיינו שמתבונן ומעיין בו הרבה וכמו שפירש רש''י: בעיוני, לעמוד על הדבר להבינו על בוריו כו'.\nונמצא בחינת העיון הזה הוא רק בחינת כלי לבחינת ההעמקה דבינה עצמה, כי לכאורה בחינת העיון הזה נקרא העמקת הדעת בלשון בעולם, ואינו כן, דהעמקת הדעת היינו בחינת כלי לבד לבוא לעומק של הענין ממש"
+      {
+        "id": "4svvsngr",
+        "text": "והוא הנקרא עיון, שעומד על דבר המושכל ומעיין בו הרבה מאד, שהוא העיכוב היפך המהירות"
+      },
+      {
+        "id": "7rhzbe7q",
+        "text": "דהיינו כדי לבא לעומקו של המושכל כמו שהוא בעצם פנימיותו ותוך תוכו דווקא"
+      },
+      {
+        "id": "ii5vundu",
+        "text": "כמו המסתכל על דבר מה בעינו ולא בהעברה בעלמא, אלא בפקוח וטביעת עינו בעיכוב גדול, עד שיודע אותו היטב בכל חלקיו הפנימים ותוך תוכו כו'"
+      },
+      {
+        "id": "m523heuq",
+        "text": "והוא הנקרא התבוננות בנו''ן הכפול דוקא, דהיינו שמתבונן ומעיין בו הרבה וכמו שפירש רש''י: בעיוני, לעמוד על הדבר להבינו על בוריו כו'."
+      },
+      {
+        "id": "rdgog5tv",
+        "text": "ונמצא בחינת העיון הזה הוא רק בחינת כלי לבחינת ההעמקה דבינה עצמה, כי לכאורה בחינת העיון הזה נקרא העמקת הדעת בלשון בעולם, ואינו כן, דהעמקת הדעת היינו בחינת כלי לבד לבוא לעומק של הענין ממש"
+      }
     ],
     "translation": "This is called \"<i>iyun</i>\". You sit with the idea, and look into it a lot. This is a slowness, the opposite of swiftness. It brings you to the inner depth of the idea specifically, as it really is.\nLike if you stare at something. Not just glancing over it, but focusing and sinking your eyes. Slowly and carefully, until you know it through and through.\nThis is called <i>hisbonenus</i>[התבוננות], with a doubled <i>nun</i> [ננ] [hinting to repeated study]. You think and look into it a lot. Like <i>Rashi</i> explains, \"With <i>iyun</i> - to sit with the idea, to understand it with all of its details.\""
   },
   {
     "label": "מעמיק",
     "children": [
-      "ולמעלה מזה הוא נקרא מעמיק, שמגיע למעלה גם מן החכמה עצמה,",
+      {
+        "id": "pshrmzmb",
+        "text": "ולמעלה מזה הוא נקרא מעמיק, שמגיע למעלה גם מן החכמה עצמה,"
+      },
       {
         "label": "עומק חכ'",
         "children": [
-          "שהגם שהחכמה היא בחינת האין ממש של המושכל, קודם שבא לכלל עומק נקודת המושג שבבינה, כמעיין לגבי נהר כנזכר לעיל\nאבל בחינת העמקה בשרש של המושכל, שרשה מגיע בשרש הממשיך לנביעת מעיין דחכמה כו', ונקרא עמקי החכמה או תעלומות חכמה, כי כמו שיש עומק ואורך ורוחב בבינה שנקרא יש כנזכר לעיל, כך יש עומק ואורך ורוחב במעיין דחכמה שנקרא אין\nועומק המעיין היינו תחילת שרש מחצבו בעומקו, שמשם מתפשט נביעתו למעלה עד שבוקע ויוצא טיפין טיפין בגילוי מהעלמו, ותכלית העלמו הוא תכלית עמקו למטה, כמו מעיינות תהום נבקעו, דארעא חלחולי מחלחלא כו' בגידין שיש להם עומק ראשון, ובזה נאמר והחכמה מאין, מהעלם החכמה הנקרא עומק החכמה\nוהחכמה הוא המצאת שכל החדש שיוצא כברק כו' כידוע, ומקור מחצבו בהעלם עומקו הוא עיקר עצמיות ותוך תוכו"
+          {
+            "id": "cfysav74",
+            "text": "שהגם שהחכמה היא בחינת האין ממש של המושכל, קודם שבא לכלל עומק נקודת המושג שבבינה, כמעיין לגבי נהר כנזכר לעיל"
+          },
+          {
+            "id": "ugupmtsr",
+            "text": "אבל בחינת העמקה בשרש של המושכל, שרשה מגיע בשרש הממשיך לנביעת מעיין דחכמה כו', ונקרא עמקי החכמה או תעלומות חכמה, כי כמו שיש עומק ואורך ורוחב בבינה שנקרא יש כנזכר לעיל, כך יש עומק ואורך ורוחב במעיין דחכמה שנקרא אין"
+          },
+          {
+            "id": "en4s7zas",
+            "text": "ועומק המעיין היינו תחילת שרש מחצבו בעומקו, שמשם מתפשט נביעתו למעלה עד שבוקע ויוצא טיפין טיפין בגילוי מהעלמו, ותכלית העלמו הוא תכלית עמקו למטה, כמו מעיינות תהום נבקעו, דארעא חלחולי מחלחלא כו' בגידין שיש להם עומק ראשון, ובזה נאמר והחכמה מאין, מהעלם החכמה הנקרא עומק החכמה"
+          },
+          {
+            "id": "6dfmnw2o",
+            "text": "והחכמה הוא המצאת שכל החדש שיוצא כברק כו' כידוע, ומקור מחצבו בהעלם עומקו הוא עיקר עצמיות ותוך תוכו"
+          }
         ],
         "translation": "[It's true that] <i>chochma</i> is the nothing [<i>ayin</i>] of the idea, even before it becomes the depth of the idea in <i>bina</i> [depth of the <i>musag</i>] [which has details]. [<i>Chochma</i> is] the wellspring compared to the river, as was mentioned earlier. Still, that wellspring has a source. And when you delve into the source of the <i>chochma</i> idea [<i>muskal</i>], you reach that [deeper] source which feeds the wellspring of <i>chochma</i>.\n[That deeper source] is called the depths of <i>chochma</i>, or the secrets of <i>chochma</i>. Just like there's depth, length, and width in <i>bina</i> (which is called a something [<i>yesh</i>]), so too there is depth, length, and width in the wellspring of <i>chochma</i> (which is called a nothing [<i>ayin</i>]).\nThe depth of the wellspring is the beginning of its source underground [the aquifer]. Its flow spreads out from there, higher and higher, until it breaks through [the surface]. Drop by drop, it becomes revealed from where it was hidden. Its ultimate hiding is in its ultimate depth. Like [the paraphrased verse about Noach's flood], \"[The] wellsprings of the great depth broke out [from the depths, where they were concealed].\" The earth is full of tunnels [of water] - veins, which are the first depth.\nThis is what [we mean when we] say \"<i>chochma</i> [comes] from nothing [<i>ayin</i>]\" - from the hidden <i>chochma</i>, which is called the depth of <i>chochma</i>.  <i>Chochma</i> is the birth of a new idea, which is like a flash of lightning, as is known. Its source, in its concealed depth, is its real, innermost self."
       },
       {
         "label": "מעלתו לגבי עומק המושג",
         "children": [
-          "כנ\"ל בביאור ענין עומק המושג דבינה שאינ' רק העומק של ההשגה דבינה המורגש בבחינת יש בהבנת דבר מה בסברא נגלית, שעומק של הסבר ההשגה הוא בחינת אין של היש דהשגה בלבד, ואין לו ערך לגבי אין דחכמה טרם שבא לכלל השגה כלל, גם לא בבחינת העומק שבה, שהוא תמציתה"
+          {
+            "id": "clembo3b",
+            "text": "כנ\"ל בביאור ענין עומק המושג דבינה שאינ' רק העומק של ההשגה דבינה המורגש בבחינת יש בהבנת דבר מה בסברא נגלית, שעומק של הסבר ההשגה הוא בחינת אין של היש דהשגה בלבד, ואין לו ערך לגבי אין דחכמה טרם שבא לכלל השגה כלל, גם לא בבחינת העומק שבה, שהוא תמציתה"
+          }
         ],
         "translation": "This is like what we said before about the depth of the idea in <i>bina</i> [but worlds apart].  When <i>bina</i> grasps an idea, that understanding is felt as a something [<i>yesh</i>]. You understand explanations that you can see - but the depth of those explanations is still just the nothing [<i>ayin</i>] of the something. That's it. The nothing of <i>chochma</i> isn't something which can be grasped [by <i>bina</i>]. Not even with the depth [of <i>binah</i>], which is its essence. We can't compare these [two things] at all!"
       },
       {
         "label": "מעלת עומק המושג",
         "children": [
-          "ואמנם עומק המושג נקרא שער הנו''ן דבינה, גם שנמשך מאין דחכמה ליש, (כמו מעיין יוצא מבית קדש הקדשים תחלתו כקרני חגבים כו' וכהאי גוונא) שרשו מגיע בעומק דחכמה הנזכר לעיל, וכנראה בחוש שכל מעמיק רק בעומק המושג, הוא ממציא למקור ושרש המושכל, להמציא בחינת חדשות דאור החכמה בבינה, והוא הנקרא מעמיק לשון מפעיל, שמפעיל לעומ' דחו\"ב"
+          {
+            "id": "pimwc3gh",
+            "text": "ואמנם עומק המושג נקרא שער הנו''ן דבינה, גם שנמשך מאין דחכמה ליש, (כמו מעיין יוצא מבית קדש הקדשים תחלתו כקרני חגבים כו' וכהאי גוונא) שרשו מגיע בעומק דחכמה הנזכר לעיל, וכנראה בחוש שכל מעמיק רק בעומק המושג, הוא ממציא למקור ושרש המושכל, להמציא בחינת חדשות דאור החכמה בבינה, והוא הנקרא מעמיק לשון מפעיל, שמפעיל לעומ' דחו\"ב"
+          }
         ],
         "translation": "However! The depth of the idea [<i>musag</i>][of <i>bina</i>] (which is called the 50th gate [<i>shaar ha'nun</i>] of <i>bina</i>) - yes, it's drawn from the nothing of <i>chochma</i> to be a something. (Like \"A wellspring goes out from the Holy of Holies [in the Temple]. It starts out [small] like the horns of a grasshopper etc.\", and other writings like that.) But its root reaches into the depth of <i>chochma</i>.\nAnd we see this all the time. The one who delves deeply into the depth of the idea [<i>musag</i>] [of <i>bina</i>] - he is the one who reaches the source of the idea [<i>muskal</i>] [of <i>chochma</i>], to bring out new things from the light of <i>chochma</i> into <i>bina</i>. This process is called delving [<i>maamik</i>], which is a causative verb [<i>mafil</i>], because it activates the depth of <i>chochma</i> and <i>bina</i>."
       }
@@ -79,15 +180,28 @@
   {
     "label": "הבן בחכ' וכו'",
     "children": [
-      "(ולפ\"ז מ\"ש הבן בחכמה וחכם בבינה",
+      {
+        "id": "wctxrksu",
+        "text": "(ולפ\"ז מ\"ש הבן בחכמה וחכם בבינה"
+      },
       {
         "label": "חכם בבינה",
         "children": [
-          "שמבואר בכתבים, דהיינו ע''ב דס''ג חכם בבינה, שהוא רק להבין דבר חידוש אחר מתוך המושג דבינה, שזה אינו אלא על ידי בחינת העיון הנזכר לעיל, שהוא המברר כל חלקיו על בוריו, ונקרא בינה שבבינה\nואחר כך יוכל להוליד ולהתחכם להמציא הבנה והשגה חדשה, אבל רק בהשגה זו עצמה שנקרא חכמה שבבינה,",
+          {
+            "id": "7oyqxyo6",
+            "text": "שמבואר בכתבים, דהיינו ע''ב דס''ג חכם בבינה, שהוא רק להבין דבר חידוש אחר מתוך המושג דבינה, שזה אינו אלא על ידי בחינת העיון הנזכר לעיל, שהוא המברר כל חלקיו על בוריו, ונקרא בינה שבבינה"
+          },
+          {
+            "id": "66dcrnqt",
+            "text": "ואחר כך יוכל להוליד ולהתחכם להמציא הבנה והשגה חדשה, אבל רק בהשגה זו עצמה שנקרא חכמה שבבינה,"
+          },
           {
             "label": "כתר דבינה",
             "children": [
-              "אבל כתר דבינה הוא עומק המושג הנזכר לעיל, המגיע שרשו בעומק החכמה כנזכר לעיל."
+              {
+                "id": "r5wkpae2",
+                "text": "אבל כתר דבינה הוא עומק המושג הנזכר לעיל, המגיע שרשו בעומק החכמה כנזכר לעיל."
+              }
             ],
             "translation": "<i>Kesser</i> of <i>bina</i> is the depth of the idea [<i>musag</i>], whose roots reach into the depth of <i>chochma</i>. This was explained earlier."
           }
@@ -97,18 +211,35 @@
       {
         "label": "הבן בחכמה",
         "children": [
-          "והבן בחכמה היינו ס''ג דע''ב, שהוא כח ההסבר בחכמה עצמה, שיוכל להביאו בפנים מסבירות הרבה, והוא למעלה מן ההשגה דבינה עדיין\nומה שאמרו נבונים לא אשתכחו, שהוא המבין דבר מתוך דבר דוקא\nהיינו מצד שרש כח זה דהבן בחכמה שמגיע בעומק דחכמה הנזכר לעיל, על כן יוכל להבין דבר חכמה אחרת לגמרי מתוך דבר חכמה זאת",
+          {
+            "id": "7mt3upbi",
+            "text": "והבן בחכמה היינו ס''ג דע''ב, שהוא כח ההסבר בחכמה עצמה, שיוכל להביאו בפנים מסבירות הרבה, והוא למעלה מן ההשגה דבינה עדיין"
+          },
+          {
+            "id": "47u5u6vn",
+            "text": "ומה שאמרו נבונים לא אשתכחו, שהוא המבין דבר מתוך דבר דוקא"
+          },
+          {
+            "id": "7xlwb6pw",
+            "text": "היינו מצד שרש כח זה דהבן בחכמה שמגיע בעומק דחכמה הנזכר לעיל, על כן יוכל להבין דבר חכמה אחרת לגמרי מתוך דבר חכמה זאת"
+          },
           {
             "label": "חכ' דחכ'",
             "children": [
-              "שזהו למעלה במדריגה מן החכם, דהיינו מגופה של המצאות החכמה זו מאין, שאינו מבין ממנה חכמה ושכל אחר"
+              {
+                "id": "feq46pb4",
+                "text": "שזהו למעלה במדריגה מן החכם, דהיינו מגופה של המצאות החכמה זו מאין, שאינו מבין ממנה חכמה ושכל אחר"
+              }
             ],
             "translation": "[A man of understanding is] greater than the <i>chochom</i> [man of wisdom, whose greatness is seen in] what <i>chochma</i> creates from nothing. But he can't use it to understand another topic."
           },
           {
             "label": "חכ' דבינה",
             "children": [
-              "(ומכל מקום מה שבהשגה דבינה מבין השגה חדשה מתוך ההשגה זו, שרשה בהבן דחכמה, שמבין דבר מתוך דבר, רק שזה בהעלם מקור השכל כו' ודי למבין)."
+              {
+                "id": "fbecfg7n",
+                "text": "(ומכל מקום מה שבהשגה דבינה מבין השגה חדשה מתוך ההשגה זו, שרשה בהבן דחכמה, שמבין דבר מתוך דבר, רק שזה בהעלם מקור השכל כו' ודי למבין)."
+              }
             ],
             "translation": "([We explained that] when you understand with <i>bina</i>, you can get from that a new understanding [<i>hasaga</i>]. The source of this ability is in [the level of] \"use <i>bina</i> in <i>chochma</i>\", where [the man of understanding] understands one thing from another [which is seemingly unrelated]. [The difference is] only that [this greater level] is in the hidden source of intellect etc. And this is enough [explanation] for people who understand.)"
           }
@@ -118,25 +249,41 @@
       {
         "label": "סדר המדריגות",
         "children": [
-          "ונמצא סדר המדרגות כך הם,",
+          {
+            "id": "vrsgqwdc",
+            "text": "ונמצא סדר המדרגות כך הם,"
+          },
           {
             "label": "בינה שבבינה",
             "children": [
-              "בחינת עיון הנזכר לעיל לעמוד על בוריו כו' נקרא בינה שבבינה, להבחין תכלית ההבחנה בפנימיות וחיצוניות\nוגם מזה יוכל להיות בחינת האורך, להוריד ההשגה בלבושים רבים עד שתתגשם להשגות התינוק כנזכר לעיל, אבל לא בחינת הרוחב בהסברים שונים לכל צד כו'"
+              {
+                "id": "ykpa7sqa",
+                "text": "בחינת עיון הנזכר לעיל לעמוד על בוריו כו' נקרא בינה שבבינה, להבחין תכלית ההבחנה בפנימיות וחיצוניות"
+              },
+              {
+                "id": "fuudukmx",
+                "text": "וגם מזה יוכל להיות בחינת האורך, להוריד ההשגה בלבושים רבים עד שתתגשם להשגות התינוק כנזכר לעיל, אבל לא בחינת הרוחב בהסברים שונים לכל צד כו'"
+              }
             ],
             "translation": "<i>Iyun</i> deals with the details. It's called <i>bina</i> of <i>bina</i>, to carefully identify [each part], what it looks like and what it really is. You also get the length from it, bringing it down with many \"garments\", until it's concrete enough that a child can grasp it. But this doesn't get you the width, to have many explanations, in every which way."
           },
           {
             "label": "חכמה שבבינה",
             "children": [
-              "ואחר כך מבחינת חכמה שבבינה, להמציא חדשות בהשגה א' כנזכר לעיל, הוא הנקרא רוחב, וממנו כח דבינה שבבינה העושה בחינת אורך"
+              {
+                "id": "qipfrgb7",
+                "text": "ואחר כך מבחינת חכמה שבבינה, להמציא חדשות בהשגה א' כנזכר לעיל, הוא הנקרא רוחב, וממנו כח דבינה שבבינה העושה בחינת אורך"
+              }
             ],
             "translation": "Then, from <i>chochma</i> of <i>bina</i>, you get new ideas within this topic, which is called the width. Then, <i>bina</i> of <i>bina</i> makes a length [from that new idea]."
           },
           {
             "label": "כתר דבינה",
             "children": [
-              "אבל שיעור האורך והרוחב דחכמה ובינה שבבינה, הוא תלוי בבחינת עומק המושג שנקרא כתר דבינה, וכנראה בחוש שלפי ערך העומק כך יהיה ערך הרוחב והאורך בכל השגת דבר מה וד\"ל)."
+              {
+                "id": "zfgfsjbt",
+                "text": "אבל שיעור האורך והרוחב דחכמה ובינה שבבינה, הוא תלוי בבחינת עומק המושג שנקרא כתר דבינה, וכנראה בחוש שלפי ערך העומק כך יהיה ערך הרוחב והאורך בכל השגת דבר מה וד\"ל)."
+              }
             ],
             "translation": "But how much length and width will there be? That depends on the depth of the idea, which is called <i>kesser</i> of <i>bina</i>. And we see this all the time - in any topic, how much width and length it has depends on the depth. And this is enough [explanation] for people who understand.)"
           }
@@ -149,18 +296,59 @@
   {
     "label": "דעת",
     "children": [
-      "ולפ\"ז מה שקוראים העולם העמקת הדעת, אין זה גופה של העמקה, כמו עומק המושג דבינה, שלזה לא יש שייכות לדעת\nאך הדעת הוא בחינת התקשרות הרגשתו במושג ביותר, והוא שמביא לידי בחינת העמקה במושג, אחר בחינת העיון הנזכר לעיל, שהוא רק כמו בחינת כלי לעומק ההשגה כנזכר לעיל.",
+      {
+        "id": "inf44erc",
+        "text": "ולפ\"ז מה שקוראים העולם העמקת הדעת, אין זה גופה של העמקה, כמו עומק המושג דבינה, שלזה לא יש שייכות לדעת"
+      },
+      {
+        "id": "v676iwfg",
+        "text": "אך הדעת הוא בחינת התקשרות הרגשתו במושג ביותר, והוא שמביא לידי בחינת העמקה במושג, אחר בחינת העיון הנזכר לעיל, שהוא רק כמו בחינת כלי לעומק ההשגה כנזכר לעיל."
+      },
       {
         "label": "אורך ורוחב ועומק",
         "children": [
-          "וגם בדעת יש אורך ורוחב ועומק, כמו יש מי שדעתו קצרה ויש שדעתו ארוכה ויש שדעתו רחבה ולא ארוכה ודעת חזק או דעת קל כנשים שדעתן קלות, הוא בלתי עומק הדעת וממילא דעתו קצרה כו'"
+          {
+            "id": "5663nwe6",
+            "text": "וגם בדעת יש אורך ורוחב ועומק, כמו יש מי שדעתו קצרה ויש שדעתו ארוכה ויש שדעתו רחבה ולא ארוכה ודעת חזק או דעת קל כנשים שדעתן קלות, הוא בלתי עומק הדעת וממילא דעתו קצרה כו'"
+          }
         ],
         "translation": "<i>Daas</i> also has length, width, and depth. One person might have a short <i>daas</i> [he can't focus for a long time]. Another has long <i>daas</i>, another broad [he can connect to different, or opposing ideas at the same time] but not long.  And there is a strong <i>daas</i> [deeply connecting], or light, like [the Talmudic idiom] \"women whose <i>daas</i> is light\". [This <i>daas</i>] isn't deep, and so is short."
       },
       {
         "label": "ועומק",
         "children": [
-          "והפרש זה בין קלי הדעת לעומקי הדעת, בין גדול לקטן ידוע, שהתינוק שדעתו קל, היינו שאין בו כח המרגיש והתקשרות כלל לדבר זה שמבין או רוצה בו, רק בחיצוניות מאד\nעל כן יתפתה להיפוכו, מה שאין כן הגדול שדעתו עמוקה באותו דבר שמבין או רוצה בו, הוא הנקרא העמקת הדעת, שממילא נמשך אורך הדעת ורוחב הדעת כנזכר לעיל בבינה.\nוסימן להעמקת הדעת הוא אשר נראה כענין צמצום וכיווץ כלי המוח, לעוצם עומק התקשרותו במושכל, (בל\"א ער איז דרינן פר נומען פר קוועצט שטארק זייער ביז עס3 איז זייער מצומצם רק בתנוע' אחת4 וסקירה אחת לבד כו') שמזה דוקא בא עצם עומק השגה על ידי העיון דבינה\nשהוא היפך הצמצום והכיווץ, שהרי העיון דבינה, גם שעומד ומעוכב בצמצום וכיווץ בתחלתו, אבל מיד מתפשת לרוחב הרבה בכל פרטי חלקיו, בהבחנת פרטיות הרבה כידוע\nמה שאין כן הצמצום והכיווץ דהעמקת הדעת, אדרבה, הוא רק הצמצום, שהוא הקיבוץ והאסיפה מכל כח שכלו להתקשר רק במושכל זה\nשזה היפך בחינת התפשטות העיון בהרחבת ענין המושכל, (בל\"א דער קלעפ מיט דעם אריין לייגין זיך גאר כו') ואמנם על ידי העמקת הדעת בא לידי עמקות המושכל עד שרשו בעמקי החכמה ובינה\n(עד בחינת דעת עליון דמזווג חכמה לבינה כמו שכתוב למעלה בענין עומק המושג דבינה, והיינו דדעת גנוז בפומא דאימא כו'\nוכמו שאמרו, משה שהוא הדעת, זכה לבינה שהוא שער הנון, כי הא בהא תליא, וכמה שכתוב בכתבים בכמה דוכתי ודי למבין."
+          {
+            "id": "b4ghv6uq",
+            "text": "והפרש זה בין קלי הדעת לעומקי הדעת, בין גדול לקטן ידוע, שהתינוק שדעתו קל, היינו שאין בו כח המרגיש והתקשרות כלל לדבר זה שמבין או רוצה בו, רק בחיצוניות מאד"
+          },
+          {
+            "id": "frjdgmr3",
+            "text": "על כן יתפתה להיפוכו, מה שאין כן הגדול שדעתו עמוקה באותו דבר שמבין או רוצה בו, הוא הנקרא העמקת הדעת, שממילא נמשך אורך הדעת ורוחב הדעת כנזכר לעיל בבינה."
+          },
+          {
+            "id": "t3kfsj3c",
+            "text": "וסימן להעמקת הדעת הוא אשר נראה כענין צמצום וכיווץ כלי המוח, לעוצם עומק התקשרותו במושכל, (בל\"א ער איז דרינן פר נומען פר קוועצט שטארק זייער ביז עס3 איז זייער מצומצם רק בתנוע' אחת4 וסקירה אחת לבד כו') שמזה דוקא בא עצם עומק השגה על ידי העיון דבינה"
+          },
+          {
+            "id": "7jdikglb",
+            "text": "שהוא היפך הצמצום והכיווץ, שהרי העיון דבינה, גם שעומד ומעוכב בצמצום וכיווץ בתחלתו, אבל מיד מתפשת לרוחב הרבה בכל פרטי חלקיו, בהבחנת פרטיות הרבה כידוע"
+          },
+          {
+            "id": "inpfbvtq",
+            "text": "מה שאין כן הצמצום והכיווץ דהעמקת הדעת, אדרבה, הוא רק הצמצום, שהוא הקיבוץ והאסיפה מכל כח שכלו להתקשר רק במושכל זה"
+          },
+          {
+            "id": "zarq44py",
+            "text": "שזה היפך בחינת התפשטות העיון בהרחבת ענין המושכל, (בל\"א דער קלעפ מיט דעם אריין לייגין זיך גאר כו') ואמנם על ידי העמקת הדעת בא לידי עמקות המושכל עד שרשו בעמקי החכמה ובינה"
+          },
+          {
+            "id": "r3exqicw",
+            "text": "(עד בחינת דעת עליון דמזווג חכמה לבינה כמו שכתוב למעלה בענין עומק המושג דבינה, והיינו דדעת גנוז בפומא דאימא כו'"
+          },
+          {
+            "id": "4uo54llm",
+            "text": "וכמו שאמרו, משה שהוא הדעת, זכה לבינה שהוא שער הנון, כי הא בהא תליא, וכמה שכתוב בכתבים בכמה דוכתי ודי למבין."
+          }
         ],
         "translation": "Here's the difference between people who have light <i>daas</i> and deep <i>daas</i>, between adults and children. A child whose <i>daas</i> is light doesn't have the ability to care for and relate to what he understands or wants. Only in a very superficial way. It's easy to convince him to completely change his mind.\nWhen an adult has a deep <i>daas</i> into something that he understands or wants, we call that \"the delving of <i>daas</i>\". Length and width automatically come from that, like it was explained before about <i>bina</i>.\nThe sign of delving with <i>daas</i> is that you're strong, deep connection to the idea makes it look like you're squeezing your brain. (In Yiddish - he is captivated by the thing, all tense, to the point that he's all bound up, only [expressing himself] in a movement, or a glance). Deep understanding comes from this when there is <i>iyun</i> of <i>bina</i>, which is the opposite of limiting and intense focus [on one thing].\nWith <i>iyun</i> you also take your time with the idea, pushing yourself and focusing. But that's only the beginning. Immediately it spreads out very broadly to the particular parts, identifying everything very particularly."
       }

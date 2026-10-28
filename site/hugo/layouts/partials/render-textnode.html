@@ -1,5 +1,6 @@
 {{- /*
   Recursive partial: renders TextNode[] to HTML.
+  Children are Line objects {id, text} and sub-sections {label?, children, translation?}.
   Params: dict "nodes" (slice) "depth" (int) "prefix" (string) "showTranslation" (bool)
 */ -}}
 {{- $depth := .depth -}}
@@ -7,26 +8,24 @@
 {{- $showTranslation := .showTranslation -}}
 {{- $hideHebrew := .hideHebrew -}}
 
-{{- /* Filter to only object nodes (skip bare strings) */ -}}
+{{- /* A section always has "children"; a line ({id, text}) never does. */ -}}
 {{- $sectionIdx := 0 -}}
 {{- range .nodes -}}
-  {{- if reflect.IsMap . -}}
+  {{- if and (reflect.IsMap .) (isset . "children") -}}
     {{- $sectionIdx = add $sectionIdx 1 -}}
     {{- $number := cond (eq $prefix "") (printf "%d" $sectionIdx) (printf "%s.%d" $prefix $sectionIdx) -}}
-    {{- $children := default (slice) .children -}}
+    {{- $children := .children -}}
     {{- $label := default "" .label -}}
 
-    {{- /* Collect direct text strings from children */ -}}
-    {{- $textParts := slice -}}
+    {{- /* The section's own text: its Line objects (they precede any sub-sections) */ -}}
+    {{- $lines := slice -}}
     {{- range $children -}}
-      {{- if not (reflect.IsMap .) -}}
-        {{- $textParts = $textParts | append (printf "%v" .) -}}
+      {{- if and (reflect.IsMap .) (not (isset . "children")) -}}
+        {{- $lines = $lines | append . -}}
       {{- end -}}
     {{- end -}}
 
-    {{- if gt (len $textParts) 0 -}}
-      {{- $text := delimit $textParts " " -}}
-      {{- $content := replaceRE `\d+` "" $text -}}
+    {{- if gt (len $lines) 0 -}}
       <div class="section depth-{{ $depth }}">
         <div class="label">
           <span class="number">{{ $number }}</span>
@@ -34,12 +33,16 @@
         </div>
         {{- if not $hideHebrew -}}
         <div class="content">
-        {{- if strings.Contains $content "\n" -}}
-          {{- range split $content "\n" -}}
-            {{- if ne (strings.TrimSpace .) "" -}}<p>{{ strings.TrimSpace . }}</p>{{ end -}}
+        {{- /* One <span class="line"> per line, id = the stable line id. Footnote
+               digit markers are stripped. Several lines: a <p> each; one line: inline. */ -}}
+        {{- if gt (len $lines) 1 -}}
+          {{- range $lines -}}
+            <p><span class="line" id="{{ .id }}">{{ strings.TrimSpace (replaceRE `\d+` "" .text) }}</span></p>
           {{- end -}}
         {{- else -}}
-          {{ $content }}
+          {{- with index $lines 0 -}}
+          <span class="line" id="{{ .id }}">{{ replaceRE `\d+` "" .text }}</span>
+          {{- end -}}
         {{- end -}}
         </div>
         {{- end -}}

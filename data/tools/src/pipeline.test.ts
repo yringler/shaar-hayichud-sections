@@ -64,4 +64,23 @@ describe('build (invalid input)', () => {
     assert.deepEqual(result.errors, ['classes.txt:2: file "a.mp3" has no CDN folder (add a \'>\' line above it)']);
     assert.equal(existsSync(paths.distDir), false);
   });
+
+  it('writes nothing when a line id is used twice across chapters', () => {
+    const dir = mkdtempSync(path.join(tmpdir(), 'data-'));
+    for (const d of ['schema', 'chapters']) cpSync(path.join(DATA_DIR, d), path.join(dir, d), { recursive: true });
+    cpSync(path.join(DATA_DIR, 'classes.txt'), path.join(dir, 'classes.txt'));
+    type Node = { children: ({ id: string; text: string } | Node)[] };
+    const file = (n: string) => path.join(dir, 'chapters', `chapter_${n}.json`);
+    const ch1 = readJson(file('01')) as Node[];
+    const ch2 = readJson(file('02')) as Node[];
+    const firstId = (ch1[0]!.children[0] as { id: string }).id;
+    (ch2[0]!.children[0] as { id: string }).id = firstId;
+    writeFileSync(file('02'), JSON.stringify(ch2));
+    const paths = defaultPaths(dir);
+    const result = build(paths);
+    assert.deepEqual(result.errors, [
+      `chapters/chapter_02.json: /0/children/0 line id "${firstId}" is already used at chapter_01.json /0/children/0`,
+    ]);
+    assert.equal(existsSync(paths.distDir), false);
+  });
 });

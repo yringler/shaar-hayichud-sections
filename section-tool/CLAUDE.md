@@ -2,299 +2,52 @@
 
 > **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is saved by `functions/api/save.ts` (GitHub contents API) into the repo's [`data/chapters/`](../data/README.md), the single source of truth that the [`site/` sub-project](../site/CLAUDE.md) renders and publishes. Saved files must match `data/schema/v1/chapter.schema.json`; the site build fails otherwise.
 
-This is a Hebrew text sectioning tool built with Angular 21. It helps users progressively divide Hebrew text into nested JSON sections using keyboard shortcuts.
+A keyboard-driven Angular 21 editor (standalone components, signals, zoneless, Vitest) for dividing Hebrew chapter text into nested sections. See [ARCHITECTURE.md](ARCHITECTURE.md) for the layout and data flow.
 
-## Project Overview
+## Architecture rules
 
-**Purpose**: Progressive Hebrew text sectioning tool with keyboard-driven workflow
-**Tech Stack**: Angular 21, TypeScript, Signals (zoneless), Vitest
-**Architecture**: Signal-based reactive state, recursive component structure
+These are the invariants; keep them when changing anything.
 
-## Code Style & Conventions
+1. **One state owner.** `TextSectionService` holds the document in a read-only signal. The only way to change it is `dispatch(command)`. Nothing else writes the tree.
+2. **Commands are pure.** All document logic lives in `src/app/editor/` with no Angular imports (except the id token and test helpers). `applyCommand(roots, command, ids)` returns a new tree and the next caret position; it never mutates its input. Updates copy only the path to the change, so every changed node gets a new reference and untouched subtrees are shared.
+3. **Components only render and emit.** `TextNodeComponent` turns user actions into `EditorCommand`s (key presses through the pure `keyToCommand` keymap) and emits them; the container dispatches them and places the caret from the returned `Focus`. Components may touch the DOM (caret, textarea value), never the document.
+4. **Ids are injected.** Editor code gets fresh ids from an `IdSource` (the `ID_SOURCE` token), never from `crypto` directly. Section (node) ids are in-memory only and are not persisted.
+5. **Line ids are carried, never regenerated.** Lines have persisted ids that alignments point at. Every command must keep the ids of the lines it keeps or moves, and mint fresh ids (unique in the document) only for new lines. Splits never cut a line; a join is a delete plus an insert. Lines removed by one command and brought back by a later one (undo, cut and paste) get their id back from the service's retired lines. The rules live in `editor/lines.ts`; see ARCHITECTURE.md.
+6. **Load and save are a tested pair.** `editor/serialization.ts` parses chapter JSON and prints it back in the file's own layout. The golden test in `serialization.spec.ts` checks that every `data/chapters/*.json` file round-trips byte for byte, line ids included; keep it passing.
 
-### Angular Patterns
-- **Standalone Components**: All components use standalone: true
-- **Signals for State**: Use Angular signals, not RxJS subjects, for state management
-- **Zoneless Change Detection**: No Zone.js - signals drive all reactivity
-- **Signal-based Inputs**: Use `input.required<T>()` and `input<T>(defaultValue)`
-- **Signal-based Outputs**: Use `output<T>()` for events
-- **Computed Signals**: Use `computed()` for derived state (e.g., XML output)
+## Adding or changing behavior
 
-### TypeScript
-- **Strict Mode**: TypeScript strict mode enabled
-- **Type Everything**: Explicit types for all parameters, return values, and variables
-- **Interfaces for Events**: Custom event types for component communication
-- **Type Guards**: Use type guards (e.g., `isString()`, `isTextNode()`) for discriminated unions
+- New document operation: add a variant to `EditorCommand`, handle it in `applyCommand`, and test it in `commands.spec.ts` (including the "unknown node" and no-op branches). Then wire the UI to emit it.
+- New key binding: change `keymap.ts` and `keymap.spec.ts`.
+- Changing the persisted shape: change `serialization.ts`, its spec, `data/schema/v1`, and the data in `data/chapters/` together.
 
-### Testing
-- **Framework**: Vitest (not Jest or Karma)
-- **Coverage**: Comprehensive unit tests for all service methods
-- **Test Pattern**: Given-When-Then structure in test descriptions
-- **Angular Testing**: Use TestBed for Angular-specific tests
+## Testing
 
-## Key Architectural Decisions
+- `yarn test` (the package pins Yarn 4; if the global yarn is 1.x, use `corepack yarn test`). Pass `--watch=false` for a single run.
+- Specs use the helpers in `src/app/editor/testing.ts`: `node(...)`/`nodeWith(...)` and `t('id:text', ...)` (a text run) to build trees, `sequentialIds()`/`provideSequentialIds()` for deterministic ids, and `deepFreeze()` so a test fails if a command mutates its input.
+- Some specs read `../data/` relative to the working directory (the golden round trip, the chapter check, the line-id format check), so run tests from `section-tool/`.
 
-### Mixed Content Model (Current)
-The `TextNode` model supports **interleaved text and child sections**:
+## Common commands
 
-```typescript
-interface TextNode {
-  id: string;
-  label: string;
-  children: (TextNode | string)[];  // Mixed content array
-  text?: string;  // Deprecated, kept for backward compatibility
-}
-```
-
-**Rationale**: Allows text before, after, and between child sections (like real documents).
-
-**Example**:
-```typescript
-{
-  label: "Chapter",
-  children: [
-    "Introduction text",
-    childSection1,
-    "Transitional text",
-    childSection2,
-    "Conclusion"
-  ]
-}
-```
-
-### Service Methods Pattern
-
-All mutation methods follow this pattern:
-1. Accept `contentIndex` parameter to identify which text segment
-2. Use `mutateNode()` helper for state updates
-3. Call `this.rootNodes.set([...roots])` to trigger reactivity
-4. Return the ID of newly focused node (or null)
-
-**Example**:
-```typescript
-splitToChild(nodeId: string, contentIndex: number, cursorPos: number): string | null {
-  let newId: string | null = null;
-  this.mutateNode(nodeId, (node) => {
-    // Mutation logic here
-    const newChild = this.createNode(afterCursor);
-    newId = newChild.id;
-    node.children.splice(contentIndex, 1, beforeCursor, newChild);
-  });
-  return newId;
-}
-```
-
-### JSON Generation
-
-The `nodesToJson()` method handles three cases:
-1. **Text-only nodes**: Emitted as `{ label?, children: [string], translation? }`
-2. **Empty nodes**: Skipped entirely
-3. **Nodes with children**: Recursively emits nested JSON objects
-
-**Important**: Adjacent text strings are automatically merged during merge operations via `mergeAdjacentStrings()`.
-
-## File Organization
-
-```
-src/app/
-├── models/
-│   └── text-node.model.ts           # Core data model
-├── services/
-│   ├── text-section.service.ts      # State management (signals)
-│   ├── text-section.service.spec.ts # Service tests (47 tests)
-│   ├── xml-parser.service.ts        # XML parsing and loading
-│   └── xml-parser.service.spec.ts   # Parser tests (12 tests)
-├── components/
-│   ├── text-node/                   # Recursive node component
-│   │   ├── text-node.component.ts
-│   │   ├── text-node.component.html
-│   │   └── text-node.component.css
-│   └── xml-output/                  # Output panel
-│       ├── xml-output.component.ts
-│       ├── xml-output.component.html
-│       └── xml-output.component.css
-└── text-sectioner/                  # Main container
-    ├── text-sectioner.component.ts
-    ├── text-sectioner.component.html
-    └── text-sectioner.component.css
-```
-
-## Development Guidelines
-
-### Adding New Features
-
-1. **Start with the model** - Update `TextNode` if data structure changes
-2. **Update the service** - Add/modify methods in `TextSectionService`
-3. **Write tests first** - Update `text-section.service.spec.ts` with expected behavior
-4. **Update components** - Modify components to use new service methods
-5. **Run tests** - Ensure all 59 tests pass: `yarn test`
-
-### Testing Requirements
-
-- **All service methods must have tests**
-- **Test edge cases**: empty strings, empty arrays, null returns
-- **Test reactivity**: Verify signals update correctly
-- **Test JSON output**: Validate generated JSON structure
-- **Run tests before committing**: `yarn test -- --watch=false`
-
-### Common Operations
-
-**Run dev server**:
 ```bash
-yarn start
+yarn start   # dev server at http://localhost:4200
+yarn test    # Vitest
+yarn build   # production build
 ```
 
-**Run tests**:
-```bash
-yarn test
-```
+## Keyboard shortcuts (user-facing)
 
-**Build for production**:
-```bash
-yarn build
-```
+Splits move whole lines: the line holding the cursor, and everything after it, moves (unless the cursor is at the end of a line).
 
-**Type checking**:
-```bash
-yarn tsc --noEmit
-```
+- **Enter**: split into child section
+- **Tab**: split into sibling section
+- **Alt+Enter**: split and promote to the parent's sibling
+- **Shift+Enter**: merge with parent
+- **Shift+Tab**: merge with previous sibling
+- **Ctrl+S**: save
 
-## Important Patterns to Follow
+In translation mode, Enter in the Hebrew text inserts a newline instead.
 
-### 1. Signal Updates
-Always use immutable updates to trigger reactivity:
-```typescript
-// ✅ Good - creates new array reference
-this.rootNodes.set([...roots]);
+## RTL
 
-// ❌ Bad - mutates existing array, no reactivity
-this.rootNodes().push(newNode);
-```
-
-### 2. Type Guards for Mixed Content
-Use helper methods for type checking:
-```typescript
-private isTextNode(item: TextNode | string): item is TextNode {
-  return typeof item !== 'string';
-}
-```
-
-### 3. Event Bubbling
-Events bubble up from child components:
-```typescript
-// Child emits event
-this.textChange.emit({ nodeId, contentIndex, text });
-
-// Parent re-emits to bubble up
-onChildTextChange(event: NodeTextChangeEvent): void {
-  this.textChange.emit(event);
-}
-
-// Container handles event
-onTextChange(event: NodeTextChangeEvent): void {
-  this.service.updateNodeText(event.nodeId, event.contentIndex, event.text);
-}
-```
-
-### 4. Focus Management
-After operations that create new nodes, focus is managed via:
-```typescript
-if (focusId) {
-  requestAnimationFrame(() => {
-    const el = document.querySelector(`textarea[data-node-id="${focusId}"]`);
-    el?.focus();
-  });
-}
-```
-
-## Common Pitfalls to Avoid
-
-1. **Don't forget `contentIndex`** - All text operations need it to identify which segment
-2. **Don't skip `mergeAdjacentStrings()`** - Call after operations that might create adjacent strings
-3. **Don't use `node.text`** - Use `node.children[0]` instead (text is deprecated)
-4. **Don't mutate arrays directly** - Always create new arrays for signal updates
-5. **Don't skip empty string handling** - Some operations need to preserve empty strings for structure
-
-## RTL Support
-
-The application supports Hebrew (RTL) text:
-- Textareas use `dir="rtl"` attribute
-- CSS handles RTL layout with `margin-right` for indentation
-- No special logic needed in TypeScript - browser handles RTL
-
-## JSON Output Format
-
-Generated JSON is a `TextNode[]` array (pretty-printed, 2-space indentation). Each node has:
-- `label` (optional) — section heading
-- `children` — array of strings and/or child `TextNode` objects
-- `translation` (optional) — English translation string
-- Empty nodes are skipped
-
-**Example**:
-```json
-[
-  {
-    "label": "Chapter 1",
-    "children": [
-      "Introduction text",
-      {
-        "label": "Section 1.1",
-        "children": [
-          "Section content",
-          { "children": ["Subsection content"] }
-        ]
-      },
-      "Conclusion text"
-    ]
-  }
-]
-```
-
-### JSON Parsing (Loading)
-
-When JSON is loaded/pasted (`loadFromJson()`):
-- Calls `xml-parser.service.ts → parseXml()` (legacy name; actually parses JSON)
-- Hydrates each node with a fresh `id` via `crypto.randomUUID()`
-- Ensures roundtrip compatibility: generate → copy → paste → edit → generate
-
-### Blank Output for Empty State
-
-When the application is in its initial state (single empty node with no content):
-- `jsonOutput()` returns an empty string `''`
-- This allows users to paste JSON directly without clearing first
-- Once any content is added, normal JSON output is generated
-
-## When Making Changes
-
-1. **Read existing tests first** - Understand expected behavior
-2. **Update tests if behavior changes** - Keep tests in sync
-3. **Maintain backward compatibility** - Don't break existing functionality
-4. **Follow established patterns** - Consistency is key
-5. **Test manually** - Run the app and verify UI works correctly
-
-## Keyboard Shortcuts (User-Facing)
-
-- **Enter**: Split into child section
-- **Tab**: Split into sibling section
-- **Alt+Enter**: Split and promote to parent's sibling (one level up)
-- **Shift+Enter**: Merge with parent
-- **Shift+Tab**: Merge with previous sibling
-
-These are implemented in `text-sectioner.component.ts` via the `onNodeKeydown()` handler.
-
-## Recent Changes
-
-**2026-02-17**: Added root XML wrapper for valid XML output
-- XML output now always wrapped in root `<section>` element (when not empty)
-- Empty default state returns blank XML for easy pasting
-- Parser automatically unwraps wrapper roots when loading
-- Added 12 tests for XML parser (59 total tests)
-- Ensures roundtrip compatibility
-
-**2026-02-16**: Implemented interleaved text and children support
-- Changed `children: TextNode[]` to `children: (TextNode | string)[]`
-- Added `contentIndex` parameter to all text operations
-- Rewrote `nodesToXml()` for mixed content rendering
-- All 44 tests updated and passing ✅
-
-See `IMPLEMENTATION_SUMMARY.md` for detailed migration notes.
+Hebrew textareas use `dir="rtl"` and CSS handles indentation with `margin-right`. No RTL logic is needed in TypeScript.

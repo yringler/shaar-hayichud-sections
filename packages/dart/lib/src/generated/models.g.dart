@@ -3,7 +3,7 @@
 
 /// Shaar Hayichud chapter (v1)
 ///
-/// One chapter file (chapter_NN.json) as saved by section-tool: a TextNode[] tree. Text strings and child nodes are interleaved in document order.
+/// One chapter file (chapter_NN.json) as saved by section-tool: a TextNode[] tree. Lines of text and child nodes are interleaved in document order.
 typedef Chapter = List<TextNode>;
 
 /// Decodes a [Chapter] from parsed JSON.
@@ -56,13 +56,15 @@ sealed class CatalogItem {
   Object? toJson();
 }
 
-/// One of: [TextFragment], [TextNode].
+/// One of: [TextLine], [TextNode].
 sealed class TextNodeChild {
   const TextNodeChild();
 
   factory TextNodeChild.fromJson(Object? json) {
-    if (json is String) return TextFragment(json);
-    if (json is Map) {
+    if (json is Map && json.containsKey("id")) {
+      return TextLine.fromJson(json);
+    }
+    if (json is Map && json.containsKey("children")) {
       return TextNode.fromJson(json);
     }
     throw FormatException('TextNodeChild: unrecognised value $json');
@@ -360,40 +362,50 @@ final class Catalog {
   String toString() => 'Catalog(${toJson()})';
 }
 
-/// A plain text item of [TextNodeChild].
-final class TextFragment implements TextNodeChild {
-  const TextFragment(this.text);
+/// One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and transcripts can reference it on its own.
+final class TextLine implements TextNodeChild {
+  const TextLine({required this.id, required this.text});
 
-  @override
-  String toJson() => text;
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory TextLine.fromJson(Object? json) {
+    final m = _map(json, 'TextLine');
+    return TextLine(
+      id: _string(_req(m, "id", 'TextLine.id'), 'TextLine.id'),
+      text: _string(_req(m, "text", 'TextLine.text'), 'TextLine.text'),
+    );
+  }
 
+  /// Stable line id: 8 random lowercase base32 characters, unique across the whole corpus.
+  final String id;
+
+  /// The line's text. Never empty and never contains a newline.
   final String text;
 
   @override
-  bool operator ==(Object other) => other is TextFragment && other.text == text;
+  Map<String, Object?> toJson() => {"id": id, "text": text};
 
   @override
-  int get hashCode => text.hashCode;
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is TextLine && other.id == id && other.text == text);
 
   @override
-  String toString() => 'TextFragment($text)';
+  int get hashCode => Object.hashAll([id, text]);
+
+  @override
+  String toString() => 'TextLine(${toJson()})';
 }
 
+/// A section. Sections have no persisted id; alignments and transcripts point at lines.
 final class TextNode implements TextNodeChild {
-  const TextNode({
-    this.id,
-    this.label,
-    required this.children,
-    this.translation,
-    this.text,
-  });
+  const TextNode({this.label, required this.children, this.translation});
 
   /// Decodes from parsed JSON. Throws [FormatException] when
   /// [json] does not match the schema. Unknown keys are ignored.
   factory TextNode.fromJson(Object? json) {
     final m = _map(json, 'TextNode');
     return TextNode(
-      id: _opt(m["id"], (v) => _string(v, 'TextNode.id')),
       label: _opt(m["label"], (v) => _string(v, 'TextNode.label')),
       children: List.unmodifiable(
         _list(
@@ -405,46 +417,36 @@ final class TextNode implements TextNodeChild {
         m["translation"],
         (v) => _string(v, 'TextNode.translation'),
       ),
-      text: _opt(m["text"], (v) => _string(v, 'TextNode.text')),
     );
   }
-
-  /// Node id. section-tool generates ids while editing but does not currently persist them; reserved for stable node ids (see alignment.schema.json).
-  final String? id;
 
   /// Optional section label.
   final String? label;
 
+  /// Lines and sub-sections in document order.
   final List<TextNodeChild> children;
 
-  /// Optional English translation of this node's text.
+  /// Optional English translation of this section's text.
   final String? translation;
-
-  /// Deprecated; kept for backward compatibility with old section-tool output.
-  final String? text;
 
   @override
   Map<String, Object?> toJson() => {
-    if (id != null) "id": id,
     if (label != null) "label": label,
     "children": [for (final e in children) e.toJson()],
     if (translation != null) "translation": translation,
-    if (text != null) "text": text,
   };
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
       (other is TextNode &&
-          other.id == id &&
           other.label == label &&
           _listEquals(other.children, children) &&
-          other.translation == translation &&
-          other.text == text);
+          other.translation == translation);
 
   @override
   int get hashCode =>
-      Object.hashAll([id, label, Object.hashAll(children), translation, text]);
+      Object.hashAll([label, Object.hashAll(children), translation]);
 
   @override
   String toString() => 'TextNode(${toJson()})';
@@ -548,7 +550,7 @@ final class AlignmentSegment {
     required this.startSeconds,
     required this.endSeconds,
     required this.chapter,
-    required this.nodeId,
+    required this.lineId,
   });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
@@ -568,9 +570,9 @@ final class AlignmentSegment {
         _req(m, "chapter", 'AlignmentSegment.chapter'),
         'AlignmentSegment.chapter',
       ),
-      nodeId: _string(
-        _req(m, "nodeId", 'AlignmentSegment.nodeId'),
-        'AlignmentSegment.nodeId',
+      lineId: _string(
+        _req(m, "lineId", 'AlignmentSegment.lineId'),
+        'AlignmentSegment.lineId',
       ),
     );
   }
@@ -582,14 +584,14 @@ final class AlignmentSegment {
   /// Chapter file key, e.g. 'chapter_01'.
   final String chapter;
 
-  /// TextNode.id inside that chapter (requires chapter files to persist node ids).
-  final String nodeId;
+  /// id of the chapter line this range covers (chapter.schema.json $defs/line). Line ids are unique across all chapters; the build checks that the line exists in the named chapter.
+  final String lineId;
 
   Map<String, Object?> toJson() => {
     "startSeconds": startSeconds,
     "endSeconds": endSeconds,
     "chapter": chapter,
-    "nodeId": nodeId,
+    "lineId": lineId,
   };
 
   @override
@@ -599,11 +601,11 @@ final class AlignmentSegment {
           other.startSeconds == startSeconds &&
           other.endSeconds == endSeconds &&
           other.chapter == chapter &&
-          other.nodeId == nodeId);
+          other.lineId == lineId);
 
   @override
   int get hashCode =>
-      Object.hashAll([startSeconds, endSeconds, chapter, nodeId]);
+      Object.hashAll([startSeconds, endSeconds, chapter, lineId]);
 
   @override
   String toString() => 'AlignmentSegment(${toJson()})';
@@ -611,7 +613,7 @@ final class AlignmentSegment {
 
 /// Lecture-to-text alignment (v1, RESERVED)
 ///
-/// PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/`<url-encoded lecture id>`.json) mapping time ranges in the recording to chapter TextNodes. Fields may still be added before first use; existing fields will not change meaning within v1.
+/// PLACEHOLDER — shape reserved, no files published yet. One file per lecture (/data/v1/alignments/`<url-encoded lecture id>`.json) mapping time ranges in the recording to chapter lines. Fields may still be added before first use; existing fields will not change meaning within v1.
 ///
 /// RESERVED: no files are published with this shape yet.
 final class Alignment {

@@ -20,10 +20,16 @@ function json(nodes) {
   return JSON.stringify(nodes);
 }
 
+/** Build a Line object, with a generated id unless one is given. */
+let nextId = 0;
+function L(text, id) {
+  return { id: id ?? `id${++nextId}`, text };
+}
+
 // ─── tests ───────────────────────────────────────────────────────────────────
 
 test("renders a single flat section with label", async () => {
-  const input = json([{ label: "פתיחה", children: ["שלום עולם"] }]);
+  const input = json([{ label: "פתיחה", children: [L("שלום עולם")] }]);
   const html = await renderJsonToHtml(input, {});
   assert.ok(html.includes('class="depth-1"'), "missing depth-1");
   assert.ok(html.includes('class="number"'), "missing .number");
@@ -33,7 +39,7 @@ test("renders a single flat section with label", async () => {
 });
 
 test("strips digit footnote markers from content", async () => {
-  const input = json([{ label: "א", children: ["הנה1 כבר2 מבואר3"] }]);
+  const input = json([{ label: "א", children: [L("הנה1 כבר2 מבואר3")] }]);
   const html = await renderJsonToHtml(input, {});
   assert.ok(html.includes("הנה כבר מבואר"), "digits not stripped");
   assert.ok(!html.match(/הנה\d/), "digits remain in content");
@@ -43,9 +49,9 @@ test("uses hierarchical numbering for nested sections", async () => {
   const input = json([{
     label: "א",
     children: [
-      "ראשון",
-      { label: "ב", children: ["שני"] },
-      { label: "ג", children: ["שלישי"] },
+      L("ראשון"),
+      { label: "ב", children: [L("שני")] },
+      { label: "ג", children: [L("שלישי")] },
     ],
   }]);
   const html = await renderJsonToHtml(input, {});
@@ -58,12 +64,12 @@ test("emits depth class increasing with nesting", async () => {
   const input = json([{
     label: "א",
     children: [
-      "ראשון",
+      L("ראשון"),
       {
         label: "ב",
         children: [
-          "שני",
-          { label: "ג", children: ["שלישי"] },
+          L("שני"),
+          { label: "ג", children: [L("שלישי")] },
         ],
       },
     ],
@@ -77,7 +83,7 @@ test("emits depth class increasing with nesting", async () => {
 test("omits div for sections with no direct text", async () => {
   const input = json([{
     children: [
-      { label: "ב", children: ["שני"] },
+      { label: "ב", children: [L("שני")] },
     ],
   }]);
   const html = await renderJsonToHtml(input, {});
@@ -88,7 +94,7 @@ test("omits div for sections with no direct text", async () => {
 });
 
 test("HTML-escapes special characters in label and content", async () => {
-  const input = json([{ label: "a & b", children: ["text & more"] }]);
+  const input = json([{ label: "a & b", children: [L("text & more")] }]);
   const html = await renderJsonToHtml(input, {});
   assert.ok(html.includes("a &amp; b"), "label & not escaped");
   assert.ok(html.includes("text &amp; more"), "content & not escaped");
@@ -98,9 +104,9 @@ test("HTML-escapes special characters in label and content", async () => {
 
 test("multiple top-level sections get sequential numbers", async () => {
   const input = json([
-    { label: "א", children: ["ראשון"] },
-    { label: "ב", children: ["שני"] },
-    { label: "ג", children: ["שלישי"] },
+    { label: "א", children: [L("ראשון")] },
+    { label: "ב", children: [L("שני")] },
+    { label: "ג", children: [L("שלישי")] },
   ]);
   const html = await renderJsonToHtml(input, {});
   assert.ok(html.includes(">1<"), "section 1 missing");
@@ -118,21 +124,51 @@ test("returns empty string for empty array", async () => {
   assert.equal(html, "");
 });
 
-test("normalizes internal whitespace in text content", async () => {
-  const input = json([{ label: "א", children: ["שלום\n  עולם\n  שוב"] }]);
+test("collapses whitespace runs within a line", async () => {
+  const input = json([{ label: "א", children: [L("שלום   עולם\t שוב ")] }]);
   const html = await renderJsonToHtml(input, {});
-  assert.ok(html.includes("שלום עולם שוב"), "whitespace not normalized");
+  assert.ok(html.includes(">שלום עולם שוב<"), "whitespace not normalized");
+});
+
+test("renders a single line inline as a span carrying its id", async () => {
+  const input = json([{ label: "א", children: [L("שלום עולם", "ab2cd3ef")] }]);
+  const html = await renderJsonToHtml(input, {});
+  assert.ok(
+    html.includes('<div class="content"><span class="line" id="ab2cd3ef">שלום עולם</span></div>'),
+    html,
+  );
+});
+
+test("renders each of several lines as a paragraph with its own span", async () => {
+  const input = json([{
+    label: "א",
+    children: [L("שורה ראשונה", "aaaaaaaa"), L("שורה2 שנייה", "bbbbbbbb"), { label: "ב", children: [L("שני", "cccccccc")] }],
+  }]);
+  const html = await renderJsonToHtml(input, {});
+  assert.ok(html.includes(
+    '<div class="content"><p><span class="line" id="aaaaaaaa">שורה ראשונה</span></p>'
+    + '<p><span class="line" id="bbbbbbbb">שורה שנייה</span></p></div>',
+  ), html);
+  assert.ok(html.includes('<span class="line" id="cccccccc">שני</span>'), "sub-section line missing");
+  assert.equal((html.match(/class="line"/g) ?? []).length, 3, "each line rendered exactly once");
+});
+
+test("omits line ids when lineIds is false", async () => {
+  const input = json([{ label: "א", children: [L("אחת", "aaaaaaaa"), L("שתיים", "bbbbbbbb")] }]);
+  const html = await renderJsonToHtml(input, {}, { lineIds: false });
+  assert.ok(html.includes('<p><span class="line">אחת</span></p>'), html);
+  assert.ok(!html.includes(" id="), "no id attributes expected");
 });
 
 test("does not emit translation div when showTranslations is false", async () => {
-  const input = json([{ label: "א", children: ["עברית"], translation: "English" }]);
+  const input = json([{ label: "א", children: [L("עברית")], translation: "English" }]);
   const html = await renderJsonToHtml(input, {});
   assert.ok(!html.includes('class="translation"'), "translation div should be absent");
   assert.ok(!html.includes("English"), "translation text should be absent");
 });
 
 test("emits translation div when locale.section is 'translation'", async () => {
-  const input = json([{ label: "א", children: ["עברית"], translation: "English translation" }]);
+  const input = json([{ label: "א", children: [L("עברית")], translation: "English translation" }]);
   const html = await renderJsonToHtml(input, { locale: { section: "translation" } });
   assert.ok(html.includes('class="translation"'), "translation div missing");
   assert.ok(html.includes("English translation"), "translation text missing");
@@ -140,13 +176,13 @@ test("emits translation div when locale.section is 'translation'", async () => {
 });
 
 test("skips translation div when section has no translation", async () => {
-  const input = json([{ label: "א", children: ["עברית בלבד"] }]);
+  const input = json([{ label: "א", children: [L("עברית בלבד")] }]);
   const html = await renderJsonToHtml(input, { locale: { section: "translation" } });
   assert.ok(!html.includes('class="translation"'), "translation div should be absent");
 });
 
 test("wraps multi-line translation in paragraph tags", async () => {
-  const input = json([{ label: "א", children: ["עברית"], translation: "Para one\nPara two" }]);
+  const input = json([{ label: "א", children: [L("עברית")], translation: "Para one\nPara two" }]);
   const html = await renderJsonToHtml(input, { locale: { section: "translation" } });
   assert.ok(html.includes("<p>Para one</p>"), "first paragraph missing");
   assert.ok(html.includes("<p>Para two</p>"), "second paragraph missing");

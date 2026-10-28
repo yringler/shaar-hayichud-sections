@@ -13,15 +13,15 @@
 
   <div class="node-body" [class.translation-mode]="showTranslation()">
     <div class="hebrew-content">
-      @for (item of node().children; track $index) {
-        @if (isString(item)) {
+      @for (item of node().children; track trackContent($index, item)) {
+        @if (isText(item)) {
           <wa-textarea
             class="text-area"
             dir="rtl"
             resize="auto"
             [attr.data-node-id]="node().id"
             [attr.data-content-index]="$index"
-            [value]="item"
+            [value]="runText(item)"
             (input)="onTextInput($event, $index)"
             (keydown)="onKeydown($event, waTextarea, $index)"
             #waTextarea
@@ -48,17 +48,13 @@
   </div>
 
   <div class="children-container">
-    @for (item of node().children; track $index) {
-      @if (!isString(item)) {
+    @for (item of node().children; track trackContent($index, item)) {
+      @if (!isText(item)) {
         <app-text-node
           [node]="item"
           [level]="level() + 1"
           [showTranslation]="showTranslation()"
-          (nodeKeydown)="onChildKeydown($event)"
-          (textChange)="onChildTextChange($event)"
-          (labelChange)="onChildLabelChange($event)"
-          (deleteNode)="onChildDelete($event)"
-          (translationChange)="onChildTranslationChange($event)"
+          (command)="command.emit($event)"
         />
       }
     }
