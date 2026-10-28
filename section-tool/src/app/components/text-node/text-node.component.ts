@@ -1,34 +1,14 @@
 import { Component, input, output, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { TextNode } from '../../models/text-node.model';
+import { Content, TextNode, isText } from '../../models/text-node.model';
+import { EditorCommand } from '../../editor/commands';
+import { keyToCommand } from '../../editor/keymap';
 import '@awesome.me/webawesome/dist/components/textarea/textarea.js';
 
-export interface NodeKeydownEvent {
-  nodeId: string;
-  contentIndex: number;  // Index in children array
-  event: KeyboardEvent;
-  cursorPos: number;
-}
-
-export interface NodeTextChangeEvent {
-  nodeId: string;
-  contentIndex: number;  // Index in children array
-  text: string;
-}
-
-export interface NodeLabelChangeEvent {
-  nodeId: string;
-  label: string;
-}
-
-export interface NodeDeleteEvent {
-  nodeId: string;
-}
-
-export interface NodeTranslationChangeEvent {
-  nodeId: string;
-  translation: string;
-}
-
+/**
+ * Renders one node and, recursively, its child nodes. Presentational only:
+ * every user action becomes an `EditorCommand` emitted on `command`, which
+ * bubbles up to the container that dispatches it.
+ */
 @Component({
   selector: 'app-text-node',
   standalone: true,
@@ -42,47 +22,41 @@ export class TextNodeComponent {
   level = input<number>(1);
   showTranslation = input<boolean>(false);
 
-  nodeKeydown = output<NodeKeydownEvent>();
-  textChange = output<NodeTextChangeEvent>();
-  labelChange = output<NodeLabelChangeEvent>();
-  deleteNode = output<NodeDeleteEvent>();
-  translationChange = output<NodeTranslationChangeEvent>();
+  command = output<EditorCommand>();
+
+  readonly isText = isText;
+
+  /** Child nodes keep their component across inserts; text entries go by position. */
+  trackContent(index: number, item: Content): string {
+    return isText(item) ? `text:${index}` : item.id;
+  }
 
   onKeydown(event: KeyboardEvent, waTextarea: any, contentIndex: number): void {
-    if (this.showTranslation() && event.key === 'Enter') {
-      // In translation mode, Enter inserts a newline (default behavior)
-      return;
-    }
-    if (
-      event.key === 'Enter' ||
-      event.key === 'Tab'
-    ) {
+    // Access the internal textarea of the Web Awesome component for the caret.
+    const internalTextarea = waTextarea.shadowRoot?.querySelector('textarea');
+    const cmd = keyToCommand(event, {
+      nodeId: this.node().id,
+      contentIndex,
+      cursorPos: internalTextarea?.selectionStart ?? 0,
+      translationMode: this.showTranslation(),
+    });
+    if (cmd) {
       event.preventDefault();
-      // Access internal textarea from Web Awesome component
-      const internalTextarea = waTextarea.shadowRoot?.querySelector('textarea');
-      const cursorPos = internalTextarea?.selectionStart ?? 0;
-
-      this.nodeKeydown.emit({
-        nodeId: this.node().id,
-        contentIndex,
-        event,
-        cursorPos,
-      });
+      this.command.emit(cmd);
     }
   }
 
   onTextInput(event: Event, contentIndex: number): void {
-    const waTextarea = event.target as any;
-    const value = waTextarea.value;
-    this.textChange.emit({ nodeId: this.node().id, contentIndex, text: value });
+    const text = (event.target as any).value as string;
+    this.command.emit({ type: 'updateText', nodeId: this.node().id, contentIndex, text });
   }
 
   onTranslationInput(event: Event): void {
-    const waTextarea = event.target as any;
-    const value = waTextarea.value;
-    this.translationChange.emit({ nodeId: this.node().id, translation: value });
+    const translation = (event.target as any).value as string;
+    this.command.emit({ type: 'updateTranslation', nodeId: this.node().id, translation });
   }
 
+  /** Ctrl/Cmd+I wraps the selection in <i>…</i>. */
   onTranslationKeydown(event: KeyboardEvent, waTextarea: any): void {
     if (event.key === 'i' && (event.ctrlKey || event.metaKey)) {
       event.preventDefault();
@@ -102,41 +76,16 @@ export class TextNodeComponent {
         internalTextarea.setSelectionRange(newCursorPos, newCursorPos);
       });
 
-      this.translationChange.emit({ nodeId: this.node().id, translation: newValue });
+      this.command.emit({ type: 'updateTranslation', nodeId: this.node().id, translation: newValue });
     }
   }
 
-  isString(item: TextNode | string): item is string {
-    return typeof item === 'string';
-  }
-
   onLabelInput(event: Event): void {
-    const value = (event.target as HTMLInputElement).value;
-    this.labelChange.emit({ nodeId: this.node().id, label: value });
+    const label = (event.target as HTMLInputElement).value;
+    this.command.emit({ type: 'updateLabel', nodeId: this.node().id, label });
   }
 
   onDelete(): void {
-    this.deleteNode.emit({ nodeId: this.node().id });
-  }
-
-  // Re-emit child events so they bubble up to the container
-  onChildKeydown(event: NodeKeydownEvent): void {
-    this.nodeKeydown.emit(event);
-  }
-
-  onChildTextChange(event: NodeTextChangeEvent): void {
-    this.textChange.emit(event);
-  }
-
-  onChildLabelChange(event: NodeLabelChangeEvent): void {
-    this.labelChange.emit(event);
-  }
-
-  onChildDelete(event: NodeDeleteEvent): void {
-    this.deleteNode.emit(event);
-  }
-
-  onChildTranslationChange(event: NodeTranslationChangeEvent): void {
-    this.translationChange.emit(event);
+    this.command.emit({ type: 'deleteNode', nodeId: this.node().id });
   }
 }

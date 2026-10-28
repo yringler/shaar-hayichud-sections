@@ -1,6 +1,7 @@
 import { Component, inject, signal, HostListener, OnDestroy, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TextSectionService } from '../services/text-section.service';
-import { TextNodeComponent, NodeKeydownEvent, NodeTextChangeEvent, NodeLabelChangeEvent, NodeDeleteEvent, NodeTranslationChangeEvent } from '../components/text-node/text-node.component';
+import { TextNodeComponent } from '../components/text-node/text-node.component';
+import { EditorCommand, Focus } from '../editor/commands';
 import { XmlOutputComponent } from '../components/xml-output/xml-output.component';
 import { SaveService } from '../services/save.service';
 import { XmlLibraryService } from '../services/xml-library.service';
@@ -67,7 +68,7 @@ export class TextSectionerComponent implements OnDestroy {
   private async loadLastFile(filename: string): Promise<void> {
     try {
       const content = await this.libraryService.loadFile(filename);
-      this.service.loadFromJson(content);
+      this.service.dispatch({ type: 'loadJson', json: content });
       const savedScroll = localStorage.getItem(TextSectionerComponent.SCROLL_POSITION_KEY);
       if (savedScroll) {
         setTimeout(() => window.scrollTo(0, parseInt(savedScroll, 10)), 100);
@@ -94,46 +95,21 @@ export class TextSectionerComponent implements OnDestroy {
     localStorage.setItem(TextSectionerComponent.SHOW_TRANSLATION_KEY, String(this.showTranslation()));
   }
 
-  onNodeKeydown(event: NodeKeydownEvent): void {
-    const { nodeId, contentIndex, event: keyEvent, cursorPos } = event;
-    let focusId: string | null = null;
-
-    if (keyEvent.key === 'Enter' && keyEvent.altKey) {
-      focusId = this.service.splitToParentSibling(nodeId, contentIndex, cursorPos);
-    } else if (keyEvent.key === 'Enter' && !keyEvent.shiftKey) {
-      focusId = this.service.splitToChild(nodeId, contentIndex, cursorPos);
-    } else if (keyEvent.key === 'Tab' && !keyEvent.shiftKey) {
-      focusId = this.service.splitToSibling(nodeId, contentIndex, cursorPos);
-    } else if (keyEvent.key === 'Enter' && keyEvent.shiftKey) {
-      focusId = this.service.mergeWithParent(nodeId);
-    } else if (keyEvent.key === 'Tab' && keyEvent.shiftKey) {
-      focusId = this.service.mergeWithPreviousSibling(nodeId);
-    }
-
-    if (focusId) {
-      // Focus the target textarea after Angular renders
-      requestAnimationFrame(() => {
-        const el = document.querySelector(`wa-textarea[data-node-id="${focusId}"]`) as any;
-        // Web Awesome components have a focus() method
-        el?.focus();
-      });
-    }
+  /** The single entry point for document changes coming from the editor. */
+  onCommand(command: EditorCommand): void {
+    const focus = this.service.dispatch(command);
+    if (focus) this.focusAfterRender(focus);
   }
 
-  onTextChange(event: NodeTextChangeEvent): void {
-    this.service.updateNodeText(event.nodeId, event.contentIndex, event.text);
-  }
-
-  onLabelChange(event: NodeLabelChangeEvent): void {
-    this.service.updateNodeLabel(event.nodeId, event.label);
-  }
-
-  onDeleteNode(event: NodeDeleteEvent): void {
-    this.service.deleteNode(event.nodeId);
-  }
-
-  onTranslationChange(event: NodeTranslationChangeEvent): void {
-    this.service.updateNodeTranslation(event.nodeId, event.translation);
+  private focusAfterRender(focus: Focus): void {
+    requestAnimationFrame(() => {
+      const byNode = `wa-textarea[data-node-id="${focus.nodeId}"]`;
+      const el = (document.querySelector(`${byNode}[data-content-index="${focus.contentIndex}"]`) ??
+        document.querySelector(byNode)) as any;
+      // Web Awesome textareas expose focus() and setSelectionRange()
+      el?.focus();
+      el?.setSelectionRange?.(focus.offset, focus.offset);
+    });
   }
 
   onCopy(): void {
@@ -151,17 +127,17 @@ export class TextSectionerComponent implements OnDestroy {
   }
 
   onClear(): void {
-    this.service.clearAll();
+    this.service.dispatch({ type: 'clearAll' });
   }
 
   onPasteText(text: string): void {
-    this.service.loadFromText(text);
+    this.service.dispatch({ type: 'loadText', text });
     this.applyChapterFile();
   }
 
   onLoad(content: string): void {
     try {
-      this.service.loadFromJson(content);
+      this.service.dispatch({ type: 'loadJson', json: content });
       const filename = this.currentFile();
       if (filename) {
         localStorage.setItem(TextSectionerComponent.LAST_FILE_KEY, filename);
