@@ -195,15 +195,30 @@ Select lectures with `--lecture <id>` (repeatable) and/or `--section <heading id
 
 1. If `transcripts/<lecture>.json` exists it is skipped. `--force` re-downloads
    the existing Sofer transcription; it never submits a new one.
-2. The Sofer folder path that mirrors the catalog headings is found or created,
+2. The Sofer folder path that mirrors the catalog tree is found or created,
    one level at a time, matching existing folders by name (case-insensitively)
-   under their parent: `Rabbi Benyamin Walters Original Class / Chapters 10-15 / Chapter 10`.
+   under their parent. It is every heading the lecture sits under, at any depth
+   (`#`, `##`, `###`), series first:
+   `Rabbi Benyamin Walters Original Class / Chapters 10-15 / Chapter 10`. A
+   lecture with its own `- Title` that sits next to sub-headings in its parent
+   (the catalog shows it as a sibling of those headings) gets a folder named
+   after its title: `Rabbi Markel Series (Advanced) / Part 1: Chapters 10-15 / Introduction`,
+   `.../Part 2: Chapters 1-4 / Chapter 3`. Untitled lectures, and lectures in a
+   heading with no sub-headings, stay in the heading's folder. If the catalog
+   moves a lecture that already has a transcript, `yarn transcribe` warns on
+   skip; `--force` re-fetches it and moves it into the new folder.
 3. The Sofer title is the catalog title plus the lecture ID in brackets, e.g.
    `Part 1 [07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3]`. Before submitting, the
    tool looks for a transcription whose title ends in `[<lecture id>]` in that
    folder (and, as a fallback, anywhere in the account, moving it into the
    folder), and reuses it. A run that crashed after submitting therefore never
-   pays twice.
+   pays twice. The account-wide list comes from `GET /v1/transcriptions/`,
+   or, since that returns HTTP 500 on this account (as does paging
+   `GET /v1/documents/` past an old document), from walking every folder's
+   transcripts. That walk misses transcriptions at the root, which the
+   pipeline never creates (it always submits with a `folder_id`). If neither
+   can be fetched, nothing new is submitted, since a duplicate cannot be
+   ruled out; rerun later, or pass `--allow-unlisted` if you are sure.
 4. Otherwise it checks the balance against an estimate, submits the catalog URL
    (`audio_url`; the CDN serves direct mp3 links, so nothing is uploaded) with
    `primary_language: en` and `hebrew_word_format: ["he"]` (Hebrew words in
@@ -217,8 +232,12 @@ Cost is about $1.50 per audio hour (model `v1`). The stored file follows
 ### `yarn align`
 
 Offline and deterministic; rerun after a transcript, chapter or the algorithm
-changes. Only lectures under a `### Chapter N` heading are aligned, against
-`chapters/chapter_NN.json` (Q and A, introductions and addenda are skipped).
+changes. Only lectures that teach a single chapter are aligned, against
+`chapters/chapter_NN.json`: the lecture's own `- Title` decides when it names
+one chapter (Markel's `- Chapter 3` under a `## Part`), else its innermost
+heading, at any depth. `Chapter 10`, `Ch 10` and `Chapter 32 Part 2 to end`
+count; Q and A, introductions, addenda, `More on Chapter 28` and multi-chapter
+titles (`Chapters 15 and 16`, `Ch 1-2`) are skipped.
 
 The class reads the text aloud phrase by phrase and explains it in English with
 Hebrew terms mixed in. `src/align.ts` keeps the transcript's Hebrew words,

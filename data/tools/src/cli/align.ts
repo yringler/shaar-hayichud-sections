@@ -4,7 +4,8 @@
  *
  * Offline and deterministic: rerun it whenever a transcript, a chapter or
  * the alignment code changes. By default it aligns every lecture that has a
- * stored transcript and a "### Chapter N" heading; narrow it with
+ * stored transcript and teaches one chapter (chapterKeyFor:
+ * a "Chapter N" heading or lecture title, at any depth); narrow it with
  * --lecture <id> / --section <heading id>. --after-previous starts the
  * search a few lines before the last line aligned in the previous class of
  * the same chapter (useful when a class opens by recapping earlier text).
@@ -71,7 +72,7 @@ for (const ctx of todo) {
   const id = ctx.lecture.id;
   const chapterKey = chapterKeyFor(ctx);
   if (!chapterKey) {
-    console.log(`${id}\n  skip: not under a "### Chapter N" heading`);
+    console.log(`${id}\n  skip: teaches no single chapter (no "Chapter N" heading or title)`);
     continue;
   }
   const transcriptFile = transcriptPath(DATA_DIR, id);

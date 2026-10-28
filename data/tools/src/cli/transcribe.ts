@@ -14,7 +14,9 @@
  *   3. reuse a transcription already on Sofer whose title ends with
  *      "[<lecture id>]" (in that folder, else anywhere in the account, moving
  *      it into the folder) -> no new charge;
- *   4. otherwise submit the catalog URL (audio_url) and poll until done.
+ *   4. otherwise submit the catalog URL (audio_url) and poll until done. If
+ *      the account-wide list could not be fetched, nothing is submitted
+ *      (a duplicate could not be ruled out) unless --allow-unlisted.
  * --dry-run prints what would be submitted and submits nothing.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -23,7 +25,7 @@ import { parseArgs } from 'node:util';
 import { buildMediaUrl, DEFAULT_CDN_BASE } from '../catalog.js';
 import { parseClassesTxt } from '../parse.js';
 import { DATA_DIR, defaultPaths } from '../pipeline.js';
-import { DEAD_STATUSES, ensureFolderPath, pickExisting, SoferClient, SoferError } from '../sofer.js';
+import { chooseSource, DEAD_STATUSES, ensureFolderPath, pickExisting, SoferClient, SoferError } from '../sofer.js';
 import {
   folderPathFor,
   formatTranscript,
@@ -43,6 +45,7 @@ const { values } = parseArgs({
     limit: { type: 'string' },
     force: { type: 'boolean', default: false },
     'dry-run': { type: 'boolean', default: false },
+    'allow-unlisted': { type: 'boolean', default: false },
     'poll-seconds': { type: 'string', default: '20' },
     'timeout-minutes': { type: 'string', default: '90' },
     'cdn-base': { type: 'string', default: DEFAULT_CDN_BASE },
@@ -84,18 +87,18 @@ const folderCache = new Map<string, string>();
 const pollMs = Number(values['poll-seconds']) * 1000;
 const timeoutMs = Number(values['timeout-minutes']) * 60_000;
 
-/** All account transcriptions, fetched at most once; null if the endpoint fails. */
-let accountList: Awaited<ReturnType<SoferClient['listTranscriptions']>> | null | undefined;
+/** All account transcriptions, fetched at most once; null if the endpoint fails (retried on the next lecture). */
+let accountList: Awaited<ReturnType<SoferClient['listAllTranscriptions']>> | undefined;
 async function accountTranscriptions() {
   if (accountList === undefined) {
     try {
-      accountList = await client.listTranscriptions();
+      accountList = await client.listAllTranscriptions();
     } catch (e) {
       console.warn(`  (could not list account transcriptions: ${(e as Error).message})`);
-      accountList = null;
+      return null;
     }
   }
-  return accountList ?? [];
+  return accountList;
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -128,6 +131,10 @@ for (const ctx of todo) {
   console.log(`${id}`);
   if (existsSync(out) && !values.force) {
     console.log(`  skip: ${path.relative(DATA_DIR, out)} exists`);
+    const stored = JSON.parse(readFileSync(out, 'utf8')) as StoredTranscript;
+    const want = folderPathFor(ctx).join(' / ');
+    const had = stored.sofer.folderPath.join(' / ');
+    if (want !== had) console.warn(`  warning: stored in Sofer folder "${had}", catalog now says "${want}" (--force moves it)`);
     continue;
   }
   try {
@@ -150,17 +157,20 @@ for (const ctx of todo) {
 
     const folderId = await ensureFolderPath(client, folderPath, folderCache);
     let transcriptionId: string | undefined;
-    const inFolder = pickExisting(await client.listFolderTranscripts(folderId), suffix);
-    if (inFolder) {
-      transcriptionId = inFolder.id;
-      console.log(`  reusing Sofer transcription ${transcriptionId} (${inFolder.status})`);
-    } else {
-      const elsewhere = pickExisting(await accountTranscriptions(), suffix);
-      if (elsewhere) {
-        transcriptionId = elsewhere.id;
-        console.log(`  reusing Sofer transcription ${transcriptionId} (${elsewhere.status}); moving it into the folder`);
-        await client.moveDocument(transcriptionId, folderId);
-      }
+    const inFolder = await client.listFolderTranscripts(folderId);
+    const source = chooseSource(
+      inFolder,
+      pickExisting(inFolder, suffix) ? [] : await accountTranscriptions(),
+      suffix,
+      values['allow-unlisted'],
+    );
+    if (source.kind === 'folder') {
+      transcriptionId = source.doc.id;
+      console.log(`  reusing Sofer transcription ${transcriptionId} (${source.doc.status})`);
+    } else if (source.kind === 'account') {
+      transcriptionId = source.doc.id;
+      console.log(`  reusing Sofer transcription ${transcriptionId} (${source.doc.status}); moving it into the folder`);
+      await client.moveDocument(transcriptionId, folderId);
     }
 
     if (!transcriptionId) {

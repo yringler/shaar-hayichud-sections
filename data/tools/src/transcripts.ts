@@ -63,6 +63,13 @@ export interface LectureContext {
   title: string;
   /** Position among its parent's lectures (1-based). */
   position: number;
+  /**
+   * The lecture has its own '- Title' and sits next to sub-headings in its
+   * parent (e.g. "- Introduction" or "- Chapter 3" directly under a "## Part"
+   * that also has "### Chapter N" headings). The catalog shows it as a
+   * sibling of those headings, so it gets a folder of its own on Sofer.
+   */
+  standalone: boolean;
 }
 
 /** Every lecture with its heading path, in file order. */
@@ -71,6 +78,7 @@ export function lectureContexts(series: ParsedSection[]): LectureContext[] {
   const visit = (section: ParsedSection, ancestors: ParsedSection[]) => {
     const here = [...ancestors, section];
     let position = 0;
+    const hasSubsections = section.items.some((i) => i.kind === 'section');
     for (const item of section.items) {
       if (item.kind === 'section') {
         visit(item, here);
@@ -83,6 +91,7 @@ export function lectureContexts(series: ParsedSection[]): LectureContext[] {
         ancestors: here,
         title: item.title ?? `Part ${position}`,
         position,
+        standalone: hasSubsections && item.title !== null,
       });
     }
   };
@@ -90,16 +99,43 @@ export function lectureContexts(series: ParsedSection[]): LectureContext[] {
   return out;
 }
 
-/** "Chapter 10" -> "chapter_10". Other headings ("Chapter 15 Q and A", "Introduction") teach no single chapter text. */
-export function chapterKeyFor(ctx: LectureContext): string | null {
-  const inner = ctx.ancestors[ctx.ancestors.length - 1];
-  const m = inner ? /^Chapter (\d+)$/.exec(inner.title.trim()) : null;
+/**
+ * A title naming exactly one chapter: "Chapter 10", "Ch 10", "Chapter 32 Part 2
+ * to end". Not "Chapters 15 and 16", "Chapter 15 Q and A", "More on Chapter 28",
+ * "Introduction" or a range like "Ch 1-2".
+ */
+const SINGLE_CHAPTER = /^(?:chapter|ch\.?)\s*(\d+)(?:\s+part\s+\d+\s+to\s+(?:the\s+)?end)?$/i;
+
+/** "Chapter 10" -> "chapter_10"; null when the title names no single chapter. */
+export function chapterKeyForTitle(title: string): string | null {
+  const m = SINGLE_CHAPTER.exec(title.trim());
   return m ? `chapter_${m[1]!.padStart(2, '0')}` : null;
 }
 
-/** Sofer folder names: one per catalog heading, series first. */
+/**
+ * The chapter text a lecture teaches, for any catalog shape: the lecture's
+ * own '- Title' when it names one chapter (Markel's "- Chapter 3" under a
+ * "## Part"), else its innermost heading ("### Chapter 10", "### Ch 10").
+ * Null for introductions, Q and A, addenda and multi-chapter classes.
+ */
+export function chapterKeyFor(ctx: LectureContext): string | null {
+  if (ctx.lecture.title !== null) {
+    const own = chapterKeyForTitle(ctx.lecture.title);
+    if (own) return own;
+  }
+  const inner = ctx.ancestors[ctx.ancestors.length - 1];
+  return inner ? chapterKeyForTitle(inner.title) : null;
+}
+
+/**
+ * Sofer folder names, root first: every heading the lecture sits under, at
+ * any depth, plus the lecture's own title when it is standalone (see
+ * LectureContext.standalone), so the Sofer tree mirrors the catalog tree.
+ */
 export function folderPathFor(ctx: LectureContext): string[] {
-  return ctx.ancestors.map((s) => s.title.trim());
+  const names = ctx.ancestors.map((s) => s.title.trim());
+  if (ctx.standalone) names.push(ctx.title.trim());
+  return names;
 }
 
 /** Sofer title: catalog title plus the stable id in brackets, which is what dedup matches on. */

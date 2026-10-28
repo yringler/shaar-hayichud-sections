@@ -1,14 +1,15 @@
 import assert from 'node:assert/strict';
-import { mkdirSync, mkdtempSync, writeFileSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt } from './parse.js';
-import { ensureFolderPath, pickExisting, SoferClient, type SoferFolder } from './sofer.js';
+import { chooseSource, ensureFolderPath, pickExisting, SoferClient, type SoferFolder } from './sofer.js';
 import { defaultSourcePaths, validateSources } from './sources.js';
 import {
   chapterKeyFor,
+  chapterKeyForTitle,
   folderPathFor,
   formatTranscript,
   lectureContexts,
@@ -44,6 +45,85 @@ describe('lecture contexts', () => {
     assert.equal(chapterKeyFor(b!), 'chapter_10');
     assert.equal(chapterKeyFor(a!), null);
     assert.equal(chapterKeyFor(d!), null);
+  });
+
+  it('handles the Markel shape: titled lectures next to sub-headings get their own folder', () => {
+    const markel = lectureContexts(
+      parseClassesTxt(`
+# Markel:37
+## Part 1: Chapters 10-15:38
+> m/p1
+- Introduction
+001 Intro.mp3
+### Chapter 10:39
+002 a.mp3
+003 b.mp3
+###
+- Chapter 3
+@ old-id.mp3
+021 c.mp3
+- End Chapter 15 and Chapter 16
+022 d.mp3
+## Part 5 Chapters 30-33:60
+### Chapter 32 Part 2 to end:61
+030 e.mp3
+`).series,
+    );
+    const by = (id: string) => markel.find((c) => c.lecture.id === id)!;
+    assert.deepEqual(folderPathFor(by('001 Intro.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Introduction']);
+    assert.equal(soferTitleFor(by('001 Intro.mp3')), 'Introduction [001 Intro.mp3]');
+    assert.equal(chapterKeyFor(by('001 Intro.mp3')), null);
+    assert.deepEqual(folderPathFor(by('002 a.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Chapter 10']);
+    assert.equal(soferTitleFor(by('003 b.mp3')), 'Part 2 [003 b.mp3]');
+    assert.equal(chapterKeyFor(by('003 b.mp3')), 'chapter_10');
+    assert.deepEqual(folderPathFor(by('old-id.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Chapter 3']);
+    assert.equal(chapterKeyFor(by('old-id.mp3')), 'chapter_03');
+    assert.equal(chapterKeyFor(by('022 d.mp3')), null);
+    assert.equal(chapterKeyFor(by('030 e.mp3')), 'chapter_32');
+    // --section on the part takes the loose lectures and the ones under its sub-headings.
+    assert.deepEqual(
+      selectLectures(markel, [], ['38']).selected.map((c) => c.lecture.id),
+      ['001 Intro.mp3', '002 a.mp3', '003 b.mp3', 'old-id.mp3', '022 d.mp3'],
+    );
+  });
+
+  it('keeps untitled lectures and lectures in a leaf heading in the heading folder', () => {
+    // Walters shape: "### Introduction" heading with untitled parts, titled addendum lectures in a leaf "##".
+    const w = lectureContexts(
+      parseClassesTxt(`
+# Walters:0
+> w
+### Introduction:1
+01.mp3
+## First Addendum:20
+- Tips
+50.mp3
+`).series,
+    );
+    assert.deepEqual(folderPathFor(w[0]!), ['Walters', 'Introduction']);
+    assert.deepEqual(folderPathFor(w[1]!), ['Walters', 'First Addendum']);
+    assert.equal(w.some((c) => c.standalone), false);
+  });
+
+  it('chapterKeyForTitle names single chapters only', () => {
+    assert.equal(chapterKeyForTitle('Chapter 10'), 'chapter_10');
+    assert.equal(chapterKeyForTitle('Ch 7'), 'chapter_07');
+    assert.equal(chapterKeyForTitle('Chapter 40 part 2 to End'), 'chapter_40');
+    for (const t of ['Chapters 15 and 16', 'Chapter 15 Q and A', 'More on Chapter 28', 'Ch 1-2', 'Introduction']) {
+      assert.equal(chapterKeyForTitle(t), null, t);
+    }
+  });
+
+  it('committed transcripts are in the Sofer folder the catalog gives them', () => {
+    const paths = defaultPaths();
+    const real = lectureContexts(parseClassesTxt(readFileSync(paths.classesTxt, 'utf8')).series);
+    const dir = path.join(path.dirname(paths.classesTxt), 'transcripts');
+    for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
+      const t = JSON.parse(readFileSync(path.join(dir, file), 'utf8')) as StoredTranscript;
+      const ctx = real.find((c) => c.lecture.id === t.lectureId)!;
+      assert.deepEqual(t.sofer.folderPath, folderPathFor(ctx), file);
+      assert.equal(t.sofer.title, soferTitleFor(ctx), file);
+    }
   });
 
   it('selectLectures takes ids and headings in order without repeats', () => {
@@ -107,6 +187,15 @@ describe('Sofer folders and dedup', () => {
     assert.equal(pickExisting(items.slice(0, 1), '[a.mp3]'), undefined);
     assert.equal(pickExisting(items, '[c.mp3]'), undefined);
   });
+
+  it('chooseSource reuses folder, then account, and will not submit blind when the account list failed', () => {
+    const a = { id: '1', title: 'Part 1 [a.mp3]', status: 'COMPLETED' };
+    assert.deepEqual(chooseSource([a], null, '[a.mp3]'), { kind: 'folder', doc: a });
+    assert.deepEqual(chooseSource([], [a], '[a.mp3]'), { kind: 'account', doc: a });
+    assert.deepEqual(chooseSource([], [a], '[b.mp3]'), { kind: 'submit' });
+    assert.throws(() => chooseSource([], null, '[b.mp3]'), /--allow-unlisted/);
+    assert.deepEqual(chooseSource([], null, '[b.mp3]', true), { kind: 'submit' });
+  });
 });
 
 describe('SoferClient', () => {
@@ -128,6 +217,31 @@ describe('SoferClient', () => {
     const client = new SoferClient('k', fakeFetch([500], calls), 'https://api', 3, 0);
     await assert.rejects(client.createTranscription('https://a/b.mp3', {}), /HTTP 500/);
     assert.deepEqual(calls, ['POST https://api/v1/transcriptions/']);
+  });
+
+  it('falls back to walking every folder when the transcription list fails', async () => {
+    const calls: string[] = [];
+    const fetchFn = async (url: string, init?: RequestInit) => {
+      calls.push(`${init?.method} ${url.replace('https://api', '')}`);
+      if (url.endsWith('/v1/transcriptions/')) return new Response('"Internal Server Error"', { status: 500 });
+      if (url.includes('/v1/folders/?')) {
+        const folders = [
+          { id: 'f1', name: 'Series', parent_id: null },
+          { id: 'f2', name: 'Chapter 10', parent_id: 'f1' },
+        ];
+        return new Response(JSON.stringify({ folders, next_cursor: null }), { status: 200 });
+      }
+      const docs = url.includes('/f2/') ? [{ id: 'd1', type: 'transcript', title: 'Part 1 [a.mp3]', status: 'COMPLETED' }] : [];
+      return new Response(JSON.stringify({ documents: docs, next_cursor: null }), { status: 200 });
+    };
+    const client = new SoferClient('k', fetchFn, 'https://api', 1, 0);
+    const all = await client.listAllTranscriptions();
+    assert.deepEqual(all, [{ id: 'd1', title: 'Part 1 [a.mp3]', folder_id: 'f2', status: 'COMPLETED' }]);
+    assert.deepEqual(calls.slice(2), [
+      'GET /v1/folders/?limit=100',
+      'GET /v1/folders/f1/documents?limit=100&type=transcript',
+      'GET /v1/folders/f2/documents?limit=100&type=transcript',
+    ]);
   });
 });
 

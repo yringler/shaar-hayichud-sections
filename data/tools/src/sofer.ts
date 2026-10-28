@@ -43,6 +43,14 @@ export interface SoferBalance {
   all_time_spend: number;
 }
 
+/** id, title, folder and status of a transcription (GET /v1/transcriptions/ item). */
+export interface TranscriptionSummary {
+  id: string;
+  title: string;
+  folder_id?: string | null;
+  status: string;
+}
+
 export class SoferError extends Error {
   constructor(
     message: string,
@@ -82,7 +90,9 @@ export class SoferClient {
       if (!retryable || attempt >= attempts) {
         throw new SoferError(`${method} ${path} -> HTTP ${res.status}: ${text.slice(0, 300)}`, res.status);
       }
-      await new Promise((r) => setTimeout(r, this.retryDelayMs * 2 ** (attempt - 1)));
+      // The API allows only a few requests per minute on some endpoints: wait longer after a 429.
+      const delay = res.status === 429 ? this.retryDelayMs * 10 * attempt : this.retryDelayMs * 2 ** (attempt - 1);
+      await new Promise((r) => setTimeout(r, delay));
     }
   }
 
@@ -131,8 +141,45 @@ export class SoferClient {
   }
 
   /** Every transcription the account owns (no filtering or paging in the API). */
-  listTranscriptions(): Promise<{ id: string; title: string; folder_id?: string | null; status: string }[]> {
+  listTranscriptions(): Promise<TranscriptionSummary[]> {
     return this.request('GET', '/v1/transcriptions/');
+  }
+
+  /** Every folder in the account, at any depth. */
+  async listAllFolders(): Promise<SoferFolder[]> {
+    const out: SoferFolder[] = [];
+    let cursor: string | null = null;
+    do {
+      const q = new URLSearchParams({ limit: '100' });
+      if (cursor) q.set('cursor', cursor);
+      const page: { folders: SoferFolder[]; next_cursor?: string | null } = await this.request('GET', `/v1/folders/?${q}`);
+      out.push(...page.folders);
+      cursor = page.next_cursor ?? null;
+    } while (cursor);
+    return out;
+  }
+
+  /**
+   * Every transcription in the account, for dedup across folders: GET
+   * /v1/transcriptions/, or, when that fails, every folder's transcripts.
+   * On this account /v1/transcriptions/ always returns HTTP 500, and so does
+   * paging /v1/documents/ past a certain old document, so the fallback walks
+   * the folders. It misses transcriptions at the root, which this pipeline
+   * never creates (it always submits with a folder_id).
+   */
+  async listAllTranscriptions(): Promise<TranscriptionSummary[]> {
+    try {
+      return await this.listTranscriptions();
+    } catch (e) {
+      if (!(e instanceof SoferError)) throw e;
+    }
+    const out: TranscriptionSummary[] = [];
+    for (const f of await this.listAllFolders()) {
+      for (const d of await this.listFolderTranscripts(f.id)) {
+        out.push({ id: d.id, title: d.title, folder_id: d.folder_id ?? f.id, status: d.status });
+      }
+    }
+    return out;
   }
 
   moveDocument(documentId: string, folderId: string | null): Promise<SoferDocument> {
@@ -195,4 +242,30 @@ export async function ensureFolderPath(
 export function pickExisting<T extends { title: string; status: string }>(items: T[], idSuffix: string): T | undefined {
   const mine = items.filter((d) => d.title.trim().endsWith(idSuffix));
   return mine.find((d) => d.status === 'COMPLETED') ?? mine.find((d) => !DEAD_STATUSES.has(d.status));
+}
+
+/**
+ * Where to get this lecture's transcription from: one already in its folder,
+ * one elsewhere in the account (to be moved in), or a new submission. The
+ * account-wide list is the only guard against paying twice for a lecture
+ * submitted under another folder (an older catalog path, or a crash between
+ * submitting and filing it), so when that list could not be fetched
+ * (`account` null) it refuses to submit unless `allowUnlisted`.
+ */
+export function chooseSource<T extends { id: string; title: string; status: string }>(
+  inFolder: T[],
+  account: T[] | null,
+  idSuffix: string,
+  allowUnlisted = false,
+): { kind: 'folder' | 'account'; doc: T } | { kind: 'submit' } {
+  const here = pickExisting(inFolder, idSuffix);
+  if (here) return { kind: 'folder', doc: here };
+  if (account === null) {
+    if (allowUnlisted) return { kind: 'submit' };
+    throw new Error(
+      'could not list account transcriptions to rule out a duplicate; rerun later, or pass --allow-unlisted to submit anyway',
+    );
+  }
+  const elsewhere = pickExisting(account, idSuffix);
+  return elsewhere ? { kind: 'account', doc: elsewhere } : { kind: 'submit' };
 }
