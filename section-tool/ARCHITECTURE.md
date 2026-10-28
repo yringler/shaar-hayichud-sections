@@ -1,92 +1,32 @@
 # Architecture
 
-This project uses Angular 21 with zoneless change detection, signals for reactive state management, and is split into modular components.
+Angular 21, standalone components, zoneless change detection, signals.
 
-## Component Structure
+## Layers
 
-### Services
+| Where | What | Angular? |
+|-------|------|----------|
+| `src/app/models/` | The editor's `TextNode` model and type guards | no |
+| `src/app/editor/` | The document logic: commands (`applyCommand`), immutable tree helpers, the keymap, and chapter JSON load/save | no (except the `ID_SOURCE` token and test helpers) |
+| `src/app/services/text-section.service.ts` | Holds the document in a signal and exposes `dispatch(command)` plus the derived `jsonOutput` | yes |
+| `src/app/components/`, `src/app/text-sectioner/` | Rendering and user input | yes |
+| `src/app/services/` (others) | Saving through the Cloudflare Pages Function, auth, and the chapter library | yes |
+| `functions/api/save.ts` | Cloudflare Pages Function that commits a chapter to `data/chapters/` | n/a |
 
-**`TextSectionService`** (`src/app/services/text-section.service.ts`)
-- Manages application state using Angular signals
-- `rootNodes`: signal containing the tree of text nodes
-- `xmlOutput`: computed signal that automatically generates XML from nodes
-- Methods for CRUD operations on nodes (create, delete, merge, update)
+## Data flow
 
-### Components
+1. The user types or presses a key in a `TextNodeComponent`.
+2. The component builds an `EditorCommand` (key presses go through `keyToCommand`) and emits it. Commands bubble up through the recursive node components unchanged.
+3. `TextSectionerComponent.onCommand` calls `TextSectionService.dispatch`.
+4. `dispatch` runs the pure `applyCommand` on the current tree and stores the new tree. `jsonOutput` recomputes.
+5. If the command returned a `Focus`, the container puts the caret there after the next render.
 
-**`TextSectionerComponent`** (Main Container)
-- Top-level orchestrator component
-- Handles keyboard shortcuts and delegates to service
-- Minimal logic - mostly event handling and routing to service
+Because the tree is immutable, the previous tree is never changed. That keeps nested `input()`s honest (a changed node is a new object) and makes undo a matter of keeping old trees.
 
-**`TextNodeComponent`** (Recursive)
-- Represents a single text node with its children
-- Uses signal-based inputs for reactivity
-- Emits events for user actions (keydown, text change, label edit, delete)
-- Recursively renders child nodes
-- Completely presentational - no business logic
+## Ids
 
-**`XmlOutputComponent`** (Output Panel)
-- Displays generated XML
-- Provides copy/download/clear actions
-- Simple, focused component
+Node ids exist only in memory, are generated on load through the injected `IdSource`, and are not written to the chapter JSON. Templates track child nodes by id.
 
-## Reactive Architecture
+## Load and save
 
-### Signals Usage
-- **`rootNodes`** signal: Source of truth for document structure
-- **`xmlOutput`** computed signal: Auto-updates when rootNodes change
-- When any node is modified, the signal is updated via `.set([...array])` to trigger reactivity
-
-### Event Flow
-1. User interacts with TextNodeComponent (keyboard, input)
-2. Event bubbles up to TextSectionerComponent
-3. TextSectionerComponent calls appropriate service method
-4. Service updates `rootNodes` signal
-5. `xmlOutput` computed signal automatically recalculates
-6. Angular updates all components reactively
-
-## Benefits of This Architecture
-
-1. **Separation of Concerns**: Business logic in service, presentation in components
-2. **Reactivity**: Signals provide efficient, automatic UI updates
-3. **Reusability**: TextNodeComponent is recursive and self-contained
-4. **Testability**: Service can be tested independently
-5. **Maintainability**: Small, focused components are easier to understand and modify
-
-## File Structure
-
-```
-src/app/
-├── services/
-│   └── text-section.service.ts    # State management with signals
-├── components/
-│   ├── text-node/                  # Recursive node component
-│   │   ├── text-node.component.ts
-│   │   ├── text-node.component.html
-│   │   └── text-node.component.css
-│   └── xml-output/                 # Output panel component
-│       ├── xml-output.component.ts
-│       ├── xml-output.component.html
-│       └── xml-output.component.css
-└── text-sectioner/                 # Main container
-    ├── text-sectioner.component.ts
-    ├── text-sectioner.component.html
-    └── text-sectioner.component.css
-```
-
-## Zoneless Change Detection
-
-Angular 21 introduces official zoneless change detection support:
-- No Zone.js dependency required
-- Signals drive all reactive updates automatically
-- Computed values (like XML output) update automatically
-- More explicit data flow
-- Better performance through fine-grained reactivity
-- Smaller bundle size without Zone.js
-
-## Future Improvements
-
-- Could add effects for side effects (logging, analytics)
-- Could implement undo/redo with signal history
-- Could add async operations (save to server) with RxJS interop
+`editor/serialization.ts` parses chapter JSON into editor nodes and prints the tree back as the JSON the editor saves. A golden test round-trips every chapter in `data/chapters/`.
