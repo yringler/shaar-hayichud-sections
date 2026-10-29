@@ -532,6 +532,28 @@ async function check(name, fn) {
     await context.close();
   });
 
+  await check('Follow along saved on: the border still follows when follow.js loads before the alignments', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    await context.addInitScript(() => localStorage.setItem('shaarHayichud.audio.followAlong', 'on'));
+    let release;
+    const held = new Promise((r) => (release = r));
+    await context.route('**/data/v1/alignments/chapters/chapter_10.json', async (route) => {
+      await held;
+      await route.continue();
+    });
+    await page.goto(`${base}/texts/chapter-10/`);
+    await followOn(page);
+    await page.waitForTimeout(500); // follow.js has run its first update with no data yet
+    release();
+    await page.waitForSelector('.line-play');
+    await page.click('.line-play[data-line="njpqigb7"]');
+    await waitTime(page, refOf('njpqigb7', WALTERS_1).startSeconds);
+    await page.waitForTimeout(500);
+    assert.deepEqual(await discussing(page), ['njpqigb7']);
+    assert.deepEqual(errors, []);
+    await context.close();
+  });
+
   await check('the transcript toggle is hidden for a class without a published transcript', async () => {
     const { context, page, errors } = await newPage(browser, base);
     const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
