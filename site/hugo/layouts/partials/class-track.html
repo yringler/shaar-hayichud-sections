@@ -5,7 +5,9 @@
        ?teacher= (the series' teacherKey, see audio/model.ts) so the chapter
        page opens with this class's teacher, without changing the reader's
        saved choice. With classes.js the chapter link opens the in-page
-       reader instead (data-lesson-open), keeping the audio playing. */ -}}
+       reader instead (data-lesson-open), keeping the audio playing, and
+       shows Autoplay next under the player (.track-player, which the reader
+       docks). */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
 {{- $transcript := index $audio.transcripts .id -}}
@@ -14,7 +16,10 @@
 {{- $teacher := "" -}}
 {{- with index $lectures .id }}{{ $teacher = printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" .series.title) }}{{ end -}}
 <div class="track" id="class-{{ .id | urlize }}"{{ with $text }} data-lesson{{ end }}>
-  <audio controls preload="none" src="{{ .url }}"></audio>
+  <div class="track-player">
+    <audio controls preload="none" src="{{ .url }}"></audio>
+    <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
+  </div>
   <p class="track-title">{{ .title }}</p>
   {{- with $text }}
   {{- $multi := gt (len .) 1 }}

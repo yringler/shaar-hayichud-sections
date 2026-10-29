@@ -11,6 +11,7 @@ import {
   DEFAULT_SERIES_ID,
   formatTime,
   lectureItems,
+  nextInSeries,
   rankRefs,
   scrollToShow,
   segmentItems,
@@ -102,6 +103,17 @@ test("lectureItems picks one class's ranges", () => {
     { key: "l1", start: 7, end: 12 },
     { key: "l2", start: 20, end: 25 },
   ]);
+});
+
+test("nextInSeries: the next class of the same series, skipping others; null after its last", () => {
+  const mixed = [{ seriesId: "0" }, { seriesId: "37" }, { seriesId: "0" }, { seriesId: "37" }];
+  assert.equal(nextInSeries(lectures, 0), 1);
+  assert.equal(nextInSeries(lectures, 1), null);
+  assert.equal(nextInSeries(lectures, 2), null);
+  assert.equal(nextInSeries(mixed, 0), 2);
+  assert.equal(nextInSeries(mixed, 1), 3);
+  assert.equal(nextInSeries(mixed, 3), null);
+  assert.equal(nextInSeries(mixed, 9), null);
 });
 
 test("chapterSeries lists each series once, in order", () => {

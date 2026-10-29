@@ -160,6 +160,18 @@ export function lectureItems(data: ChapterAlignments, lecture: number): TimedIte
   return out;
 }
 
+/**
+ * Autoplay next: the class after `lecture` in its own series (catalog
+ * order, the next option in the Class selector), or null after the series'
+ * last class on the chapter.
+ */
+export function nextInSeries(lectures: readonly Pick<Lecture, 'seriesId'>[], lecture: number): number | null {
+  const seriesId = lectures[lecture]?.seriesId;
+  if (seriesId === undefined) return null;
+  for (let i = lecture + 1; i < lectures.length; i++) if (lectures[i]!.seriesId === seriesId) return i;
+  return null;
+}
+
 /** Series that discuss this chapter, in catalog order of their first class. */
 export function chapterSeries(data: ChapterAlignments): { id: string; title: string }[] {
   const out: { id: string; title: string }[] = [];

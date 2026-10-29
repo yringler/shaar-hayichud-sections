@@ -15,11 +15,17 @@
  *   (it is never moved in the DOM, so playback, position and paused/playing
  *   carry over untouched). Back, Esc or the browser's Back button close it.
  *   A modified click (new tab, etc.) still follows the link to the chapter page.
+ * - Autoplay next (one saved on/off for every box): when a class ends, the
+ *   next box on the page plays from the start. If the reader was open on the
+ *   class, it moves on to the next lesson (or closes when that one has no
+ *   text); otherwise the next box is scrolled into view, unless the reader
+ *   scrolled the page in the last 5 s.
  *
  * Without JavaScript the boxes keep their plain player, the scrollable text
  * and links to the chapter pages.
  */
 import { formatTime, scrollToShow, spanAt, spans, type Span } from './audio/model.ts';
+import { autoplayNext } from './audio/store.ts';
 
 /** No automatic scrolling of a scroll region for this long after the reader scrolls it. */
 const USER_SCROLL_QUIET_MS = 5000;
@@ -35,16 +41,21 @@ const isPlainClick = (e: MouseEvent): boolean => {
   return !(sel && !sel.isCollapsed) && e.detail <= 1 && !(e.target as Element).closest('a');
 };
 
-/** Tracks the last time the reader scrolled `el` (wheel, touch or keys). */
-function scrollWatcher(el: HTMLElement): () => boolean {
+/**
+ * Tracks the last time the reader scrolled `el` (wheel, touch or keys),
+ * ignoring events inside `ignore` (regions that scroll on their own).
+ * Returns whether that was long enough ago for automatic scrolling.
+ */
+function scrollWatcher(el: HTMLElement | Window, ignore?: string): () => boolean {
   let last = 0;
-  const mark = () => {
+  const mark = (e: Event) => {
+    if (ignore && e.target instanceof Element && e.target.closest(ignore)) return;
     last = Date.now();
   };
   el.addEventListener('wheel', mark, { passive: true });
   el.addEventListener('touchmove', mark, { passive: true });
   el.addEventListener('keydown', (e) => {
-    if (SCROLL_KEYS.includes(e.key)) mark();
+    if (SCROLL_KEYS.includes((e as KeyboardEvent).key)) mark(e);
   });
   return () => Date.now() - last > USER_SCROLL_QUIET_MS;
 }
@@ -76,6 +87,8 @@ interface Chapter {
 interface Lesson {
   box: HTMLElement;
   audio: HTMLAudioElement;
+  /** The <audio> and its Autoplay next toggle: docked together while the reader is open. */
+  player: HTMLElement;
   preview: HTMLElement;
   title: string;
   chapters: Chapter[];
@@ -122,6 +135,7 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
   const lesson: Lesson = {
     box,
     audio,
+    player: audio.closest<HTMLElement>('.track-player') ?? audio,
     preview,
     title: box.querySelector('.track-title')?.textContent?.trim() ?? '',
     chapters: [...preview.querySelectorAll<HTMLElement>('[data-chapter-page]')].map((c) => ({
@@ -180,14 +194,20 @@ function mark(el: Element | null | undefined, on: boolean): void {
 }
 
 interface Reader {
+  /** The lesson the reader is open on, or null when closed. */
+  readonly lesson: Lesson | null;
   open(lesson: Lesson, page: string, opener: HTMLElement): Promise<void>;
+  /** Autoplay next: show `lesson` instead (same history entry); closing returns focus to `link`. */
+  swap(lesson: Lesson, link: HTMLAnchorElement): Promise<void>;
+  /** Close it (going back over its history entry); resolves once closed. */
+  close(): Promise<void>;
   /** The lesson's current line changed: move the highlight (when it is open on that lesson). */
   highlight(lesson: Lesson): void;
   /** Playback moved on: keep the current line in view (when open on that lesson). */
   follow(lesson: Lesson): void;
 }
 
-/** The in-page reader: the full chapter text over the list, the class docked below it. */
+/** The in-page reader: the full chapter text over the list, the class's player docked below it. */
 function createReader(): Reader {
   const root = document.createElement('div');
   root.className = 'reader';
@@ -235,14 +255,15 @@ function createReader(): Reader {
     return p;
   };
 
-  // While open, everything but the reader and the docked <audio> is inert,
-  // so focus stays in the dialog and the player (aria-modal alone does not).
+  // While open, everything but the reader and the docked player (<audio>
+  // and its Autoplay next toggle) is inert, so focus stays in the dialog and
+  // the player (aria-modal alone does not).
   let inerted: HTMLElement[] = [];
-  const setInert = (audio: HTMLElement | null) => {
+  const setInert = (player: HTMLElement | null) => {
     for (const el of inerted) el.inert = false;
     inerted = [];
-    if (!audio) return;
-    for (let el: HTMLElement | null = audio; el && el !== document.body; el = el.parentElement) {
+    if (!player) return;
+    for (let el: HTMLElement | null = player; el && el !== document.body; el = el.parentElement) {
       for (const sib of el.parentElement?.children ?? []) {
         if (sib === el || sib === root || !(sib instanceof HTMLElement) || sib.inert) continue;
         sib.inert = true;
@@ -259,7 +280,10 @@ function createReader(): Reader {
     for (const id of l.current?.keys ?? []) mark(lineEl(id), true);
   };
 
+  /** Waiting for close() (it goes back in history first). */
+  let onClosed: (() => void)[] = [];
   const closeNow = () => {
+    for (const fn of onClosed.splice(0)) fn();
     if (!lesson) return;
     lesson.box.classList.remove('is-reading');
     setInert(null);
@@ -271,18 +295,20 @@ function createReader(): Reader {
     opener?.focus({ preventScroll: true });
     opener = null;
   };
-  const close = () => {
-    if (!lesson) return;
+  const close = (): Promise<void> => {
+    if (!lesson) return Promise.resolve();
+    const closed = new Promise<void>((resolve) => onClosed.push(resolve));
     if (pushed) {
       pushed = false; // a second close (double-click) must not go back again
       history.back(); // popstate closes it
     } else closeNow();
+    return closed;
   };
-  root.querySelector('[data-reader-close]')!.addEventListener('click', close);
+  root.querySelector('[data-reader-close]')!.addEventListener('click', () => void close());
   // Esc wherever focus is: the dialog or the body. (While the docked
   // player's native controls have focus, Chromium keeps Esc to itself.)
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lesson) close();
+    if (e.key === 'Escape' && lesson) void close();
   });
   window.addEventListener('popstate', () => {
     if (lesson) {
@@ -304,77 +330,127 @@ function createReader(): Reader {
     if (t && isPlainClick(e)) play(lesson.audio, t.start);
   });
 
+  const open = async (l: Lesson, page: string, from: HTMLElement) => {
+    // Already open (reached from the docked player): swap the lesson, keep the history entry.
+    const reuse = pushed;
+    if (lesson) {
+      const keep = opener;
+      pushed = false;
+      closeNow();
+      opener = keep;
+    }
+    lesson = l;
+    opener ??= from;
+    const target = l.chapters.find((c) => c.page === page) ?? l.chapters[0];
+    title.textContent = [target?.title, l.title].filter(Boolean).join(' · ');
+    pageLink.href = target?.link ?? page;
+    const status = document.createElement('p');
+    status.className = 'reader-status';
+    status.textContent = 'Loading the text…';
+    body.replaceChildren(status);
+    root.hidden = false;
+    l.box.classList.add('is-reading');
+    setInert(l.player);
+    document.documentElement.classList.add('reader-open');
+    if (!reuse) history.pushState({ lessonReader: true }, '');
+    pushed = true;
+    title.focus({ preventScroll: true });
+
+    const texts = await Promise.all(l.chapters.map((c) => loadPage(c.page)));
+    if (lesson !== l) return; // closed or switched meanwhile
+    if (texts.some((t) => !t)) {
+      status.textContent = 'The text could not be loaded. Open the chapter page instead.';
+      return;
+    }
+    body.replaceChildren(
+      ...l.chapters.flatMap((c, i) => {
+        const text = texts[i]!.cloneNode(true) as HTMLElement;
+        text.removeAttribute('data-aligned-text');
+        text.lang = 'he';
+        text.dataset['chapterPage'] = c.page;
+        for (const line of text.querySelectorAll<HTMLElement>('.line')) {
+          line.removeAttribute('data-t');
+          if (!l.range.has(line.id)) continue;
+          line.classList.add('in-lesson');
+          const t = l.times.get(line.id);
+          if (!t) continue;
+          line.classList.add('has-audio');
+          line.before(playButton(t.start));
+        }
+        if (l.chapters.length < 2) return [text];
+        const h = document.createElement('h3');
+        h.className = 'reader-chapter';
+        h.textContent = c.title;
+        return [h, text];
+      }),
+    );
+    highlight(l);
+    // The current line if the class has started, else where the lesson starts in the chosen chapter.
+    const current = l.current ? lineEl(l.current.keys[0]!) : null;
+    const start = body.querySelector<HTMLElement>(
+      `[data-chapter-page="${CSS.escape(target?.page ?? '')}"] .line.in-lesson`,
+    );
+    const el = current ?? start;
+    if (el) showIn(body, el, 'auto');
+  };
+
   return {
+    get lesson() {
+      return lesson;
+    },
     highlight,
     follow(l: Lesson) {
       if (l !== lesson || !quiet()) return;
       const el = l.current ? lineEl(l.current.keys[0]!) : null;
       if (el) showIn(body, el, smoothScroll());
     },
-    async open(l: Lesson, page: string, from: HTMLElement) {
-      // Already open (reached from the docked player): swap the lesson, keep the history entry.
-      const reuse = pushed;
-      if (lesson) {
-        const keep = opener;
-        pushed = false;
-        closeNow();
-        opener = keep;
-      }
-      lesson = l;
-      opener ??= from;
-      const target = l.chapters.find((c) => c.page === page) ?? l.chapters[0];
-      title.textContent = [target?.title, l.title].filter(Boolean).join(' · ');
-      pageLink.href = target?.link ?? page;
-      const status = document.createElement('p');
-      status.className = 'reader-status';
-      status.textContent = 'Loading the text…';
-      body.replaceChildren(status);
-      root.hidden = false;
-      l.box.classList.add('is-reading');
-      setInert(l.audio);
-      document.documentElement.classList.add('reader-open');
-      if (!reuse) history.pushState({ lessonReader: true }, '');
-      pushed = true;
-      title.focus({ preventScroll: true });
-
-      const texts = await Promise.all(l.chapters.map((c) => loadPage(c.page)));
-      if (lesson !== l) return; // closed or switched meanwhile
-      if (texts.some((t) => !t)) {
-        status.textContent = 'The text could not be loaded. Open the chapter page instead.';
-        return;
-      }
-      body.replaceChildren(
-        ...l.chapters.flatMap((c, i) => {
-          const text = texts[i]!.cloneNode(true) as HTMLElement;
-          text.removeAttribute('data-aligned-text');
-          text.lang = 'he';
-          text.dataset['chapterPage'] = c.page;
-          for (const line of text.querySelectorAll<HTMLElement>('.line')) {
-            line.removeAttribute('data-t');
-            if (!l.range.has(line.id)) continue;
-            line.classList.add('in-lesson');
-            const t = l.times.get(line.id);
-            if (!t) continue;
-            line.classList.add('has-audio');
-            line.before(playButton(t.start));
-          }
-          if (l.chapters.length < 2) return [text];
-          const h = document.createElement('h3');
-          h.className = 'reader-chapter';
-          h.textContent = c.title;
-          return [h, text];
-        }),
-      );
-      highlight(l);
-      // The current line if the class has started, else where the lesson starts in the chosen chapter.
-      const current = l.current ? lineEl(l.current.keys[0]!) : null;
-      const start = body.querySelector<HTMLElement>(
-        `[data-chapter-page="${CSS.escape(target?.page ?? '')}"] .line.in-lesson`,
-      );
-      const el = current ?? start;
-      if (el) showIn(body, el, 'auto');
+    open,
+    swap(l: Lesson, link: HTMLAnchorElement) {
+      opener = link;
+      return open(l, link.dataset['lessonOpen'] ?? l.chapters[0]?.page ?? '', link);
     },
+    close,
   };
+}
+
+/**
+ * Autoplay next: when a class ends, the next box on the page (document
+ * order, across headings) plays from the start. The reader, when open on
+ * the class that ended, moves on with it.
+ */
+function initAutoplay(boxes: readonly HTMLElement[], lessons: ReadonlyMap<HTMLAudioElement, Lesson>, reader: Reader | null): void {
+  for (const el of document.querySelectorAll<HTMLElement>('.track [data-js-only]')) el.hidden = false;
+  const on = autoplayNext([...document.querySelectorAll<HTMLInputElement>('.track [data-autoplay-next]')]);
+  const tracks = boxes.flatMap((box) => {
+    const audio = box.querySelector<HTMLAudioElement>('audio');
+    return audio ? [{ box, audio }] : [];
+  });
+  // Page scrolls only: the lesson text boxes and the reader scroll on their own.
+  const quiet = scrollWatcher(window, '[data-lesson-text], .reader, .track-player');
+  const reveal = (box: HTMLElement) => {
+    if (quiet()) box.scrollIntoView({ block: 'nearest', behavior: smoothScroll() });
+  };
+
+  document.addEventListener(
+    'ended',
+    (e) => {
+      if (!on()) return;
+      const i = tracks.findIndex((t) => t.audio === e.target);
+      const next = i >= 0 ? tracks[i + 1] : undefined;
+      if (!next) return; // the page's last class: stop
+      play(next.audio, 0);
+      const open = reader?.lesson ?? null;
+      if (!reader || !open) return reveal(next.box);
+      if (open.audio !== e.target) return;
+      // The reader was on the class that ended: show the next lesson (the
+      // same history entry, its player docked), or close for a class without text.
+      const lesson = lessons.get(next.audio);
+      const link = lesson?.box.querySelector<HTMLAnchorElement>('a[data-lesson-open]');
+      if (lesson && link) void reader.swap(lesson, link);
+      else void reader.close().then(() => reveal(next.box));
+    },
+    true,
+  );
 }
 
 function init(): void {
@@ -389,9 +465,13 @@ function init(): void {
     true,
   );
   const lessonBoxes = boxes.filter((b) => b.hasAttribute('data-lesson'));
-  if (lessonBoxes.length === 0) return;
-  const reader = createReader();
-  for (const box of lessonBoxes) initLesson(box, reader);
+  const reader = lessonBoxes.length > 0 ? createReader() : null;
+  const lessons = new Map<HTMLAudioElement, Lesson>();
+  for (const box of lessonBoxes) {
+    const lesson = reader && initLesson(box, reader);
+    if (lesson) lessons.set(lesson.audio, lesson);
+  }
+  initAutoplay(boxes, lessons, reader);
 }
 
 init();

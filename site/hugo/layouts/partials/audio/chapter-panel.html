@@ -3,8 +3,9 @@
        Without JavaScript: a plain player for the first class. With play.js: the
        teacher (series) and class selectors, Follow along, the Show transcript
        toggle (the transcript region above the controls, filled by play.js),
-       and per-line play buttons. The series choice and Follow along on/off
-       are saved (localStorage) across pages. */ -}}
+       Autoplay next (under the player) and per-line play buttons. The series
+       choice and Follow along and Autoplay next on/off are saved
+       (localStorage) across pages. */ -}}
 {{- $d := .data -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
@@ -48,6 +49,7 @@
     <a class="listen-transcript audio-link" data-listen-transcript href="{{ with $t }}{{ .url }}{{ end }}" target="_blank" rel="noopener"{{ if not $t }} hidden{{ end }}>Transcript{{ partial "new-tab.html" . }}</a>
   </div>
   <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
+  <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
   <p class="listen-note" data-listen-note role="status" hidden></p>
   <p class="listen-now" data-listen-now aria-live="polite" hidden></p>
   <details class="listen-topics" data-listen-topics hidden>
