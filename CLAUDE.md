@@ -22,6 +22,8 @@ This repo has one shared data directory, two sub-projects and a Dart package. Re
 
 Each sub-project, `data/tools` and `packages/dart` have their own dependency trees. There is no build step at the repo root.
 
+In Claude Code cloud sessions, `.claude/hooks/session-start.sh` installs Hugo (pinned to Cloudflare Pages' default, 0.147.7 extended) and the Dart SDK into `~/.local`, then each project's dependencies. It does nothing in local sessions. Change the pinned versions there.
+
 ## Repo-level Commands
 
 ```bash
