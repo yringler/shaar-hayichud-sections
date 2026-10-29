@@ -820,8 +820,28 @@ async function check(name, fn) {
         // Esc closes it too.
         await box.locator('a[data-lesson-open]').first().click();
         await reader.locator('.line.in-lesson').first().waitFor();
+        // Focus stays in the reader and the docked player (the list behind is inert).
+        for (let i = 0; i < 25; i++) {
+          await page.keyboard.press('Tab');
+          const where = await page.evaluate(() => {
+            const el = document.activeElement;
+            return !el || el === document.body || !!el.closest('.reader') || el.matches('.track.is-reading audio');
+          });
+          assert.ok(where, `focus escaped the reader at Tab ${i + 1}`);
+        }
+        // (Chromium's native audio controls keep Esc to themselves: press it from the dialog.)
+        await reader.locator('.reader-back').focus();
         await page.keyboard.press('Escape');
         await reader.waitFor({ state: 'hidden' });
+        assert.equal(await page.evaluate(() => history.state), null);
+        assert.equal(await page.locator('[inert]').count(), 0);
+        // A double-click on Back closes the reader once and stays on the list.
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await reader.locator('.reader-back').dblclick();
+        await reader.waitFor({ state: 'hidden' });
+        await page.waitForTimeout(300);
+        assert.equal(page.url(), list);
         await page.screenshot({ path: path.join(shots, `classes-list-${name}.png`) });
         assert.deepEqual(errors, []);
       } finally {

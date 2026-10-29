@@ -225,10 +225,30 @@ function createReader(): Reader {
           const doc = new DOMParser().parseFromString(html, 'text/html');
           return doc.querySelector<HTMLElement>('[data-aligned-text]');
         })
-        .catch(() => null);
+        .catch(() => null)
+        .then((text) => {
+          if (!text) pages.delete(url); // try again on the next open
+          return text;
+        });
       pages.set(url, p);
     }
     return p;
+  };
+
+  // While open, everything but the reader and the docked <audio> is inert,
+  // so focus stays in the dialog and the player (aria-modal alone does not).
+  let inerted: HTMLElement[] = [];
+  const setInert = (audio: HTMLElement | null) => {
+    for (const el of inerted) el.inert = false;
+    inerted = [];
+    if (!audio) return;
+    for (let el: HTMLElement | null = audio; el && el !== document.body; el = el.parentElement) {
+      for (const sib of el.parentElement?.children ?? []) {
+        if (sib === el || sib === root || !(sib instanceof HTMLElement) || sib.inert) continue;
+        sib.inert = true;
+        inerted.push(sib);
+      }
+    }
   };
 
   const lineEl = (id: string) => body.querySelector<HTMLElement>(`.line[id="${CSS.escape(id)}"]`);
@@ -242,6 +262,7 @@ function createReader(): Reader {
   const closeNow = () => {
     if (!lesson) return;
     lesson.box.classList.remove('is-reading');
+    setInert(null);
     document.documentElement.classList.remove('reader-open');
     root.hidden = true;
     body.replaceChildren();
@@ -251,16 +272,17 @@ function createReader(): Reader {
     opener = null;
   };
   const close = () => {
-    if (pushed) history.back(); // popstate closes it
-    else closeNow();
+    if (!lesson) return;
+    if (pushed) {
+      pushed = false; // a second close (double-click) must not go back again
+      history.back(); // popstate closes it
+    } else closeNow();
   };
   root.querySelector('[data-reader-close]')!.addEventListener('click', close);
-  root.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') close();
-  });
-  // The docked player sits outside the dialog: Esc there closes it too.
+  // Esc wherever focus is: the dialog or the body. (While the docked
+  // player's native controls have focus, Chromium keeps Esc to itself.)
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && lesson && (e.target as Element).closest?.('.is-reading')) close();
+    if (e.key === 'Escape' && lesson) close();
   });
   window.addEventListener('popstate', () => {
     if (lesson) {
@@ -268,6 +290,9 @@ function createReader(): Reader {
       closeNow();
     }
   });
+  // Reloaded (or restored without bfcache) on the reader's history entry:
+  // the reader is closed, so make the entry an ordinary one.
+  if ((history.state as { lessonReader?: boolean } | null)?.lessonReader) history.replaceState(null, '');
 
   body.addEventListener('click', (e) => {
     if (!lesson) return;
@@ -287,9 +312,16 @@ function createReader(): Reader {
       if (el) showIn(body, el, smoothScroll());
     },
     async open(l: Lesson, page: string, from: HTMLElement) {
-      if (lesson) closeNow();
+      // Already open (reached from the docked player): swap the lesson, keep the history entry.
+      const reuse = pushed;
+      if (lesson) {
+        const keep = opener;
+        pushed = false;
+        closeNow();
+        opener = keep;
+      }
       lesson = l;
-      opener = from;
+      opener ??= from;
       const target = l.chapters.find((c) => c.page === page) ?? l.chapters[0];
       title.textContent = [target?.title, l.title].filter(Boolean).join(' · ');
       pageLink.href = target?.link ?? page;
@@ -299,8 +331,9 @@ function createReader(): Reader {
       body.replaceChildren(status);
       root.hidden = false;
       l.box.classList.add('is-reading');
+      setInert(l.audio);
       document.documentElement.classList.add('reader-open');
-      history.pushState({ lessonReader: true }, '');
+      if (!reuse) history.pushState({ lessonReader: true }, '');
       pushed = true;
       title.focus({ preventScroll: true });
 
@@ -314,6 +347,7 @@ function createReader(): Reader {
         ...l.chapters.flatMap((c, i) => {
           const text = texts[i]!.cloneNode(true) as HTMLElement;
           text.removeAttribute('data-aligned-text');
+          text.lang = 'he';
           text.dataset['chapterPage'] = c.page;
           for (const line of text.querySelectorAll<HTMLElement>('.line')) {
             line.removeAttribute('data-t');

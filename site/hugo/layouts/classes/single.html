@@ -16,6 +16,13 @@
 
     {{- /* Quick table of contents for long pages: one link per heading. */ -}}
     {{- $sections := where $part.items "type" "section" }}
+    {{- $anchors := newScratch }}
+    {{- range $sections }}
+      {{- $a := .title | urlize }}
+      {{- if not $a }}{{ errorf "classes: heading %q gives an empty anchor" .title }}{{ end }}
+      {{- if $anchors.Get $a }}{{ errorf "classes: headings in %q share the anchor #%s" $part.title $a }}{{ end }}
+      {{- $anchors.Set $a true }}
+    {{- end }}
     {{- if gt (len $sections) 1 }}
     <nav class="class-toc" aria-label="Contents of this page">
       <ul>

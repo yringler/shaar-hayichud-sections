@@ -18,7 +18,7 @@
   <p class="track-title">{{ .title }}</p>
   {{- with $text }}
   {{- $multi := gt (len .) 1 }}
-  <div class="lesson-text" data-lesson-text dir="rtl" lang="he" role="region" aria-label="Text of this class" tabindex="0">
+  <div class="lesson-text" data-lesson-text dir="rtl" lang="he" role="group" aria-label="Text of this class" tabindex="0">
     {{- range . }}
     <div class="lesson-text-chapter" data-chapter-page="{{ .url }}" data-chapter-link="{{ .url }}{{ $teacher }}" data-chapter-title="{{ .title }}">
       {{- if $multi }}<p class="lesson-text-heading" dir="ltr" lang="en">{{ .title }}</p>{{ end }}
