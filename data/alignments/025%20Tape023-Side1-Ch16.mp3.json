@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/025%20Tape023-Side1-Ch16.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,6 +34,6 @@
     "meanConfidence": 0.427
   },
   "segments": [
-    {"startSeconds":324.076,"endSeconds":402.662,"chapter":"chapter_16","lineId":"ycy3yj5t","confidence":0.427,"matchedWords":5,"lineWords":11,"firstWord":582,"lastWord":697}
+    {"startSeconds":335.66,"endSeconds":407.88,"chapter":"chapter_16","lineId":"ycy3yj5t","confidence":0.427,"matchedWords":5,"lineWords":11,"firstWord":582,"lastWord":697}
   ]
 }
