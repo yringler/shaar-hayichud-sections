@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/44%20-%20Chap-%2015-5%20The%20Kav%20%28N%29.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,14 +34,14 @@
     "meanConfidence": 0.885
   },
   "segments": [
-    {"startSeconds":0,"endSeconds":6.818,"chapter":"chapter_15","lineId":"egdvyhe6","confidence":0.694,"matchedWords":12,"lineWords":18,"firstWord":0,"lastWord":25},
-    {"startSeconds":113.717,"endSeconds":141.533,"chapter":"chapter_15","lineId":"nkzuds26","confidence":0.913,"matchedWords":28,"lineWords":31,"firstWord":418,"lastWord":519},
-    {"startSeconds":145.896,"endSeconds":193.347,"chapter":"chapter_15","lineId":"vgkvdtpv","confidence":0.859,"matchedWords":15,"lineWords":17,"firstWord":536,"lastWord":709},
-    {"startSeconds":198.528,"endSeconds":199.619,"chapter":"chapter_15","lineId":"yntgzrz2","confidence":0.919,"matchedWords":4,"lineWords":5,"firstWord":729,"lastWord":732},
-    {"startSeconds":308.973,"endSeconds":408.237,"chapter":"chapter_15","lineId":"zgw7ydwk","confidence":0.889,"matchedWords":18,"lineWords":20,"firstWord":1134,"lastWord":1497},
-    {"startSeconds":412.055,"endSeconds":413.691,"chapter":"chapter_15","lineId":"k5adiuk7","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":1512,"lastWord":1517},
-    {"startSeconds":577.313,"endSeconds":581.403,"chapter":"chapter_15","lineId":"znvp6kmv","confidence":0.963,"matchedWords":14,"lineWords":15,"firstWord":2118,"lastWord":2132},
-    {"startSeconds":651.761,"endSeconds":651.761,"chapter":"chapter_15","lineId":"dwqr3k62","confidence":0.75,"matchedWords":6,"lineWords":8,"firstWord":2398,"lastWord":2405},
-    {"startSeconds":651.761,"endSeconds":651.761,"chapter":"chapter_15","lineId":"6knncvz2","confidence":0.975,"matchedWords":4,"lineWords":4,"firstWord":2420,"lastWord":2423}
+    {"startSeconds":1.92,"endSeconds":12.24,"chapter":"chapter_15","lineId":"egdvyhe6","confidence":0.694,"matchedWords":12,"lineWords":18,"firstWord":0,"lastWord":25},
+    {"startSeconds":124.14,"endSeconds":158.24,"chapter":"chapter_15","lineId":"nkzuds26","confidence":0.913,"matchedWords":28,"lineWords":31,"firstWord":418,"lastWord":519},
+    {"startSeconds":162.74,"endSeconds":216.82,"chapter":"chapter_15","lineId":"vgkvdtpv","confidence":0.859,"matchedWords":15,"lineWords":17,"firstWord":536,"lastWord":709},
+    {"startSeconds":224.08,"endSeconds":225.36,"chapter":"chapter_15","lineId":"yntgzrz2","confidence":0.919,"matchedWords":4,"lineWords":5,"firstWord":729,"lastWord":732},
+    {"startSeconds":327.43,"endSeconds":428.46,"chapter":"chapter_15","lineId":"zgw7ydwk","confidence":0.889,"matchedWords":18,"lineWords":20,"firstWord":1134,"lastWord":1497},
+    {"startSeconds":431.58,"endSeconds":433.15,"chapter":"chapter_15","lineId":"k5adiuk7","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":1512,"lastWord":1517},
+    {"startSeconds":584.43,"endSeconds":589.54,"chapter":"chapter_15","lineId":"znvp6kmv","confidence":0.963,"matchedWords":14,"lineWords":15,"firstWord":2118,"lastWord":2132},
+    {"startSeconds":659.3,"endSeconds":663.52,"chapter":"chapter_15","lineId":"dwqr3k62","confidence":0.75,"matchedWords":6,"lineWords":8,"firstWord":2398,"lastWord":2405},
+    {"startSeconds":667.63,"endSeconds":669.3,"chapter":"chapter_15","lineId":"6knncvz2","confidence":0.975,"matchedWords":4,"lineWords":4,"firstWord":2420,"lastWord":2423}
   ]
 }

@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/50%20-%20Chap-%2016-2%20%20Igul%20Gadol%20.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,15 +34,15 @@
     "meanConfidence": 0.882
   },
   "segments": [
-    {"startSeconds":0,"endSeconds":24.66,"chapter":"chapter_16","lineId":"iql25mqe","confidence":0.4,"matchedWords":11,"lineWords":28,"firstWord":0,"lastWord":75},
-    {"startSeconds":36.826,"endSeconds":46.69,"chapter":"chapter_16","lineId":"7dgapnjy","confidence":0.907,"matchedWords":14,"lineWords":15,"firstWord":113,"lastWord":142},
-    {"startSeconds":148.947,"endSeconds":151.906,"chapter":"chapter_16","lineId":"wdlbcyqi","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":454,"lastWord":462},
-    {"startSeconds":247.587,"endSeconds":302.826,"chapter":"chapter_16","lineId":"kj4quzwc","confidence":0.975,"matchedWords":18,"lineWords":18,"firstWord":754,"lastWord":921},
-    {"startSeconds":302.826,"endSeconds":315.649,"chapter":"chapter_16","lineId":"6omeygvj","confidence":0.981,"matchedWords":16,"lineWords":17,"firstWord":922,"lastWord":960},
-    {"startSeconds":320.252,"endSeconds":325.184,"chapter":"chapter_16","lineId":"wtl35smh","confidence":0.77,"matchedWords":8,"lineWords":11,"firstWord":975,"lastWord":989},
-    {"startSeconds":328.801,"endSeconds":347.871,"chapter":"chapter_16","lineId":"yg7ibjwj","confidence":0.91,"matchedWords":14,"lineWords":15,"firstWord":1001,"lastWord":1058},
-    {"startSeconds":351.159,"endSeconds":400.151,"chapter":"chapter_16","lineId":"gwbye43s","confidence":0.975,"matchedWords":8,"lineWords":8,"firstWord":1069,"lastWord":1217},
-    {"startSeconds":476.104,"endSeconds":486.954,"chapter":"chapter_16","lineId":"h7l5fa4j","confidence":0.988,"matchedWords":21,"lineWords":21,"firstWord":1449,"lastWord":1481},
-    {"startSeconds":499.12,"endSeconds":533.973,"chapter":"chapter_16","lineId":"ronblm2o","confidence":0.909,"matchedWords":31,"lineWords":35,"firstWord":1519,"lastWord":1624}
+    {"startSeconds":0,"endSeconds":25.72,"chapter":"chapter_16","lineId":"iql25mqe","confidence":0.4,"matchedWords":11,"lineWords":28,"firstWord":0,"lastWord":75},
+    {"startSeconds":36.16,"endSeconds":47.98,"chapter":"chapter_16","lineId":"7dgapnjy","confidence":0.907,"matchedWords":14,"lineWords":15,"firstWord":113,"lastWord":142},
+    {"startSeconds":145.5,"endSeconds":147.92,"chapter":"chapter_16","lineId":"wdlbcyqi","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":454,"lastWord":462},
+    {"startSeconds":242.28,"endSeconds":291.78,"chapter":"chapter_16","lineId":"kj4quzwc","confidence":0.975,"matchedWords":18,"lineWords":18,"firstWord":754,"lastWord":921},
+    {"startSeconds":292.07,"endSeconds":302.28,"chapter":"chapter_16","lineId":"6omeygvj","confidence":0.981,"matchedWords":16,"lineWords":17,"firstWord":922,"lastWord":960},
+    {"startSeconds":307.32,"endSeconds":311.68,"chapter":"chapter_16","lineId":"wtl35smh","confidence":0.77,"matchedWords":8,"lineWords":11,"firstWord":975,"lastWord":989},
+    {"startSeconds":314.06,"endSeconds":333.1,"chapter":"chapter_16","lineId":"yg7ibjwj","confidence":0.91,"matchedWords":14,"lineWords":15,"firstWord":1001,"lastWord":1058},
+    {"startSeconds":336.54,"endSeconds":378.04,"chapter":"chapter_16","lineId":"gwbye43s","confidence":0.975,"matchedWords":8,"lineWords":8,"firstWord":1069,"lastWord":1217},
+    {"startSeconds":463.58,"endSeconds":476.9,"chapter":"chapter_16","lineId":"h7l5fa4j","confidence":0.988,"matchedWords":21,"lineWords":21,"firstWord":1449,"lastWord":1481},
+    {"startSeconds":487.28,"endSeconds":526.12,"chapter":"chapter_16","lineId":"ronblm2o","confidence":0.909,"matchedWords":31,"lineWords":35,"firstWord":1519,"lastWord":1624}
   ]
 }

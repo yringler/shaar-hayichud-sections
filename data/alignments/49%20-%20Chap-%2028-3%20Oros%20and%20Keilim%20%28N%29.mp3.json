@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/49%20-%20Chap-%2028-3%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,8 +34,8 @@
     "meanConfidence": 0.857
   },
   "segments": [
-    {"startSeconds":2.66,"endSeconds":17.26,"chapter":"chapter_28","lineId":"nhf6we4z","confidence":1,"matchedWords":10,"lineWords":12,"firstWord":1,"lastWord":35},
-    {"startSeconds":22.3,"endSeconds":33.54,"chapter":"chapter_28","lineId":"kmwerj2p","confidence":0.846,"matchedWords":12,"lineWords":14,"firstWord":59,"lastWord":84},
-    {"startSeconds":494.364,"endSeconds":502.02,"chapter":"chapter_28","lineId":"rwjdwy5s","confidence":0.724,"matchedWords":7,"lineWords":10,"firstWord":1561,"lastWord":1593}
+    {"startSeconds":2.66,"endSeconds":17.18,"chapter":"chapter_28","lineId":"nhf6we4z","confidence":1,"matchedWords":10,"lineWords":12,"firstWord":1,"lastWord":35},
+    {"startSeconds":22.98,"endSeconds":33.5,"chapter":"chapter_28","lineId":"kmwerj2p","confidence":0.846,"matchedWords":12,"lineWords":14,"firstWord":59,"lastWord":84},
+    {"startSeconds":500.64,"endSeconds":511.45,"chapter":"chapter_28","lineId":"rwjdwy5s","confidence":0.724,"matchedWords":7,"lineWords":10,"firstWord":1561,"lastWord":1593}
   ]
 }
