@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "48 - Q and A on 15-b.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "e6a5e5b6-9bdb-478e-8bb0-6d975304997a",
+  "transcript": "transcripts/48%20-%20Q%20and%20A%20on%2015-b.mp3.json",
+  "fetchedAt": "2026-10-28T23:54:15.298Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"God Revealed Through the Line and Choice","starting_phrase":"And so השם wanted the world should look separate, so that we should have to work to see Him.","start_time_sec":2.2,"matched_text":"השם wanted the world should look separate, so that we should have to work to see Him.","score_norm":0.96,"confidence":"HIGH","token_span":[2,19],"matched_content":11,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Choice Flow: From Brain Through Nerves to Organs","starting_phrase":"And from there, it goes through your nerves, which goes into like your organs","start_time_sec":69.48,"matched_text":"from there, it goes through your nerves, which goes into like your organs,","score_norm":0.986,"confidence":"HIGH","token_span":[219,232],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":7},
+    {"title":"Divine Control Mirrors Soul Filling the Body","starting_phrase":"And now, we see God from that that He's like controls everything, and He chooses how it should be.","start_time_sec":143.02,"matched_text":"see God from that that He's like controls everything, and He chooses how it should","score_norm":0.951,"confidence":"HIGH","token_span":[459,474],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"World Appears Systematic but Is Guided by Volition","starting_phrase":"But even בעצם, because if you look carefully at the world, it's not","start_time_sec":212.01999999999998,"matched_text":"even בעצם, because if you look carefully at the world, it's not","score_norm":0.963,"confidence":"HIGH","token_span":[666,678],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Cancer as Loss of Divine Coordination","starting_phrase":"And like a cancer cell is when one of those things goes, loses its ביטול somehow,","start_time_sec":420.88,"matched_text":"cancer cell is when one of those things goes, loses its ביטול somehow,","score_norm":0.978,"confidence":"HIGH","token_span":[1348,1361],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":6},
+    {"title":"Chassidut Practice as Physical Spiritual Healing","starting_phrase":"Now, it doesn't have to be through scientific discovery. It could either be through scientific discovery, or it could be from learning חסידות.","start_time_sec":614.6,"matched_text":"doesn't have to be through scientific discovery. It could either be through scientific discovery, or it could be from learning חסידות.","score_norm":0.964,"confidence":"HIGH","token_span":[1848,1869],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "46 - Chap- 27-8 Oros and Keilim (M) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7d3fb1c6-d517-4f09-a5ca-b410448a8fba",
+  "transcript": "transcripts/46%20-%20Chap-%2027-8%20Oros%20and%20Keilim%20%28M%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:09:42.947Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Spiritual Growth Mirrors Physical Growth","starting_phrase":"כמו מסוף מדרגה דרוחניות הצמיחה נעשה כח","start_time_sec":0,"matched_text":"כמו מסוף מדרגה דרוחניות הצמיחה נעשה כח","score_norm":1,"confidence":"HIGH","token_span":[0,7],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Intellect’s Light Merges with the Brain","starting_phrase":"וכך סוף מדרגה של אור השכל הרוחני מתמזג בחומר כלי המוח","start_time_sec":87.06,"matched_text":"וכך סוף מדרגה של אור השכל הרוחני מתמזג בחומר כלי המוח,","score_norm":0.993,"confidence":"HIGH","token_span":[219,230],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":7},
+    {"title":"Exercise Refines the Vessel for Divine Light","starting_phrase":"But the אור is there, but you","start_time_sec":199.26,"matched_text":"אור is there,","score_norm":0.964,"confidence":"HIGH","token_span":[483,486],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Brain Development Linked to Intellectual Growth","starting_phrase":"All right, כמו גידול הכנת חומר המוח בערך","start_time_sec":316.24,"matched_text":"All right, כמו גידול הכנת חומר המוח בערך","score_norm":0.99,"confidence":"HIGH","token_span":[853,861],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"Vessel and Light Grow Until Seventy","starting_phrase":"שנגדל הכלי עם האור יום ויום עד ע' שנה","start_time_sec":383.42,"matched_text":"שנגדל הכלי עם האור יום ויום עד ע' שנה","score_norm":0.992,"confidence":"HIGH","token_span":[1016,1025],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6}
+  ]
+}

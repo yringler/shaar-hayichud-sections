@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "84 - The Rebbes Shaar Hayichud.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f1611c1a-c584-4b01-bb16-d417173db089",
+  "transcript": "transcripts/84%20-%20The%20Rebbes%20Shaar%20Hayichud.mp3.json",
+  "fetchedAt": "2026-10-29T00:31:13.621Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introduction to Sha'ar HaYichud Chapter 30","starting_phrase":"Okay, here we go. We're doing the רבי's שער היחוד, chapter 30.","start_time_sec":4.5,"matched_text":"here we go. We're doing the רבי's שער היחוד, chapter 30.","score_norm":0.977,"confidence":"HIGH","token_span":[1,12],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5}
+  ]
+}

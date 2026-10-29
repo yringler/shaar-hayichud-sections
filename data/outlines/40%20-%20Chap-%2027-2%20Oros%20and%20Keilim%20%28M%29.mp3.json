@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "40 - Chap- 27-2 Oros and Keilim (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8cb5cd3c-8653-45b9-b3b7-ac0af7888813",
+  "transcript": "transcripts/40%20-%20Chap-%2027-2%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:08:51.286Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Lights, Tools, and Tangible Reality","starting_phrase":"So the lights are not tangible, אך מצד בחינת הכלים, הם בבחינת מציאות דבר מה.","start_time_sec":2.96,"matched_text":"lights are not tangible, אך מצד בחינת הכלים, הם בבחינת מציאות דבר","score_norm":0.994,"confidence":"HIGH","token_span":[2,14],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":10},
+    {"title":"Purpose: Revealing God Through Vessels","starting_phrase":"So through these ten, God is revealed in a way that we can know Him in a tangible way, right?","start_time_sec":67.16,"matched_text":"through these ten, God is revealed in a way that we can know Him in a tangible way,","score_norm":0.922,"confidence":"HIGH","token_span":[122,140],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Four Names of אצילות and Their Numbers","starting_phrase":"And this is also the idea that the ספירות of אצילות are called the four names: 72, 63, 50 45, and 52, right?","start_time_sec":357.32,"matched_text":"also the idea that the ספירות of אצילות are called the four names: 72, 63, 50 45, and 52,","score_norm":0.959,"confidence":"HIGH","token_span":[960,979],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":6},
+    {"title":"Letter Combinations Correspond to Chochmah, Binah, etc.","starting_phrase":"And that, if you add it together, equals 72, the numerical value of all those letters.","start_time_sec":422.56,"matched_text":"add it together, equals 72, the numerical value of all those letters.","score_norm":0.967,"confidence":"HIGH","token_span":[1087,1099],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Soul-Body and Letter Analogies in Kabbalah","starting_phrase":"In קבלה, uses two משלים. It uses the משל of the soul and the body, and it uses the משל of letters.","start_time_sec":499.12,"matched_text":"קבלה, uses two משלים. It uses the משל of the soul and the body, and it uses the משל of letters.","score_norm":0.938,"confidence":"HIGH","token_span":[1244,1265],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"אצילות as the Central Realm in Kabbalah","starting_phrase":"Usually, whenever you talk about anything and you don't specify, you're talking about אצילות.","start_time_sec":796.28,"matched_text":"Usually, whenever you talk about anything and you don't specify, you're talking about אצילות.","score_norm":0.98,"confidence":"HIGH","token_span":[2094,2108],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":6}
+  ]
+}

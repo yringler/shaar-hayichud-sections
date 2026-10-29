@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "049 Tape35-Side1 Ch32.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7176bf90-3e31-4822-a29e-aea4f08d8e15",
+  "transcript": "transcripts/049%20Tape35-Side1%20Ch32.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:03.888Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Grid of Points and Directions","starting_phrase":"It goes down, then goes to the left and goes up.","start_time_sec":0,"matched_text":"goes down, then goes to the left and goes up.","score_norm":0.95,"confidence":"HIGH","token_span":[1,11],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Rooms as Mini‑Worlds with a Lil‑Elohim","starting_phrase":"And inside the room there's a little guy, a little אייבערשטער standing in there with a לולב,","start_time_sec":224.94931592392845,"matched_text":"inside the room there's a little guy, a little אייבערשטער standing in there with a לולב,","score_norm":0.967,"confidence":"HIGH","token_span":[372,388],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Mapping Sefirot to Cardinal Directions","starting_phrase":"The forward is What, the right is חסד, the left is גבורה, the forward is תפארת,","start_time_sec":312.9305535055349,"matched_text":"forward is What, the right is חסד, the left is גבורה, the forward is תפארת,","score_norm":0.924,"confidence":"HIGH","token_span":[457,472],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1},
+    {"title":"TV Cathode‑Gun Analogy for Singular Point","starting_phrase":"If you look, if you know how the TV works, on a TV there's really only one point.","start_time_sec":374.793267101901,"matched_text":"look, if you know how the TV works, on a TV there's really only one point.","score_norm":0.942,"confidence":"HIGH","token_span":[681,697],"matched_content":9,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"יסוד and מלכות: Westward Creation Bow","starting_phrase":"It says that the whole the whole creation bows to the west because that's where the מלכות is.","start_time_sec":495.36110701106975,"matched_text":"says that the whole the whole creation bows to the west because that's where the מלכות","score_norm":0.956,"confidence":"HIGH","token_span":[917,933],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Intellectual → Emotional → Physical Direction Flow","starting_phrase":"So, in other words, over here you see how the physical directions, which actually makes sense, you see that the physical directions come out of the intellectual directions.","start_time_sec":635.0083167754752,"matched_text":"other words, over here you see how the physical directions, which actually makes sense, you see that the physical directions come out of the intellectual directions","score_norm":0.969,"confidence":"HIGH","token_span":[1362,1388],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":4},
+    {"title":"דעת as One Brain vs Two‑Brain Split","starting_phrase":"In a normal person, the דעת is just one brain, it's emotion, right.","start_time_sec":835.9,"matched_text":"normal person, the דעת is just one brain, it's emotion,","score_norm":0.967,"confidence":"HIGH","token_span":[1793,1803],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Brains on Fire, Heart Cold – True Elevation","starting_phrase":"His brain is on fire. Right. Meaning that it's not just a cold, logical brain.","start_time_sec":997.9324212319046,"matched_text":"His brain is on fire. Right. Meaning that it's not just that light is coming into his brain","score_norm":0.648,"confidence":"MEDIUM","token_span":[2215,2233],"matched_content":7,"content_coverage":0.778,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Historical Humble Heroes: מתתיהו and מרדכי","starting_phrase":"Look at מתתיהו. מתתיהו is this humble little guy,","start_time_sec":1484.801737155833,"matched_text":"Look at מתתיהו. מתתיהו is this humble little guy,","score_norm":0.964,"confidence":"HIGH","token_span":[3066,3075],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"גס רוח and the Missing Sixty‑Fourth Brain","starting_phrase":"It means that a גס רוח is sixty-three, means he only has sixty-three brains.","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

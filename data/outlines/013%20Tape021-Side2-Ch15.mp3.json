@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "013 Tape021-Side2-Ch15.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "67d46afa-caaa-402e-acdc-f3c64f513f8f",
+  "transcript": "transcripts/013%20Tape021-Side2-Ch15.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:35.313Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Inner and Outer שם מ״ה and the קו המדה","starting_phrase":"קו is the inner שם מ״ה, which refers to the line","start_time_sec":2.8200000000000003,"matched_text":"קו is the inner שם מ״ה, which refers to the line","score_norm":0.96,"confidence":"HIGH","token_span":[0,11],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Teacher Adapts מדות to Different Classes","starting_phrase":"You know. Right. It's all already there, and he'll act","start_time_sec":87.18,"matched_text":"It's all already there, and he'll act","score_norm":0.988,"confidence":"HIGH","token_span":[172,179],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Three Aspects: הגדול, הגיבור, והנורא Explained","starting_phrase":"In other words, it it it seems that it's like not","start_time_sec":275.02,"matched_text":"other words, it it it seems that it's like not","score_norm":0.922,"confidence":"HIGH","token_span":[587,597],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Infinite Light Limits and Boundaries","starting_phrase":"doing it. כמו שמבואר במקום אחר, והנה כללות החק שבעצמות","start_time_sec":1626.28,"matched_text":"doing it. כמו שמבואר במקום אחר, והנה כללות החק שבעצמות","score_norm":0.993,"confidence":"HIGH","token_span":[3818,3828],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8},
+    {"title":"Mirror Image of Seal in Wax Analogy","starting_phrase":"Because what's by Him the left side, the צמצום, is","start_time_sec":1729.08,"matched_text":"Because what's by Him the left side, the צמצום,","score_norm":0.964,"confidence":"HIGH","token_span":[4019,4028],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Conclusion and Technical Interruption","starting_phrase":"I need to put in a new tape. Yeah.","start_time_sec":1794.0122511339227,"matched_text":"need to put in a new tape. Yeah.","score_norm":0.961,"confidence":"HIGH","token_span":[4172,4180],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3}
+  ]
+}

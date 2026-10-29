@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "76 - Chap- 20-5 Tikun-Tohu (End).mp3",
+  "chapter": "chapter_20",
+  "transcript": "transcripts/76%20-%20Chap-%2020-5%20Tikun-Tohu%20%28End%29.mp3.json",
+  "transcriptionId": "61af1495-ed78-49fc-8cc9-14b3c65ae2d7",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1476,
+    "hebrewWords": 156,
+    "matchedWords": 46,
+    "chapterLines": 48,
+    "alignedLines": 3,
+    "firstLineIndex": 45,
+    "lastLineIndex": 47,
+    "meanConfidence": 0.821
+  },
+  "segments": [
+    {"startSeconds":371.36,"endSeconds":375.62,"chapter":"chapter_20","lineId":"pimwxhon","confidence":0.471,"matchedWords":11,"lineWords":23,"firstWord":1201,"lastWord":1211},
+    {"startSeconds":406.812,"endSeconds":411.36,"chapter":"chapter_20","lineId":"h3cxbgxm","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":1309,"lastWord":1319},
+    {"startSeconds":434.44,"endSeconds":440.36,"chapter":"chapter_20","lineId":"bpazforp","confidence":0.993,"matchedWords":14,"lineWords":15,"firstWord":1403,"lastWord":1417}
+  ]
+}

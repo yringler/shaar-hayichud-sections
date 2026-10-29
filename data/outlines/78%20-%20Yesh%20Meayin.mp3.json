@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "78 - Yesh Meayin.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d566c32f-027b-4fc9-925d-605826fdb80d",
+  "transcript": "transcripts/78%20-%20Yesh%20Meayin.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:43.570Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Creation from Nothing Demands Constant Energy Renewal","starting_phrase":"The fact that things are created יש מאין, we","start_time_sec":2.56,"matched_text":"fact that things are created יש מאין,","score_norm":0.971,"confidence":"HIGH","token_span":[1,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Biology Defines Life by Energy Use","starting_phrase":"When like I learned biology, one of the things","start_time_sec":64.76803287108372,"matched_text":"When like I learned biology, one of the things","score_norm":0.942,"confidence":"HIGH","token_span":[229,238],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Entropy and the Fight Against Decay","starting_phrase":"Entropy is the second law of thermodynamics, that","start_time_sec":135.84,"matched_text":"Entropy is the second law of thermodynamics,","score_norm":0.95,"confidence":"HIGH","token_span":[444,451],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"DNA Mechanics and Cellular Complexity","starting_phrase":"And then like you're going to explain to me","start_time_sec":424.42,"matched_text":"you're going to explain to me","score_norm":0.964,"confidence":"HIGH","token_span":[1290,1296],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"DNA Size vs Complexity: Evolution Argument","starting_phrase":"Corn has much more DNA than we do.","start_time_sec":522.8800000000001,"matched_text":"Corn has much more DNA than we do.","score_norm":0.989,"confidence":"HIGH","token_span":[1580,1588],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6}
+  ]
+}

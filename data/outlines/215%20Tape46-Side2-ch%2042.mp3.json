@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "215 Tape46-Side2-ch 42.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "68b5ad2b-e38f-4974-a28e-6da992d02568",
+  "transcript": "transcripts/215%20Tape46-Side2-ch%2042.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:40.576Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Direct Thought vs Symbolic Thought in Rituals","starting_phrase":"Okay, go ahead. So, what we're talking about is direct thought compared to symbolic thought, is really what he's talking about.","start_time_sec":0,"matched_text":"go ahead. So, what we're talking about is direct thought compared to symbolic thought, is really what he's talking about.","score_norm":0.974,"confidence":"HIGH","token_span":[1,21],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":4},
+    {"title":"Letters Precede Speech in Conceptual Understanding","starting_phrase":"But what he's saying, though, is this proves that the symbolic ability to represent it in letters comes from a higher place than the actual עצם of the thinking about the concept or the mind.","start_time_sec":155.75514587525146,"matched_text":"what he's saying, though, is this proves that the symbolic ability to represent it in letters comes from a higher place than the actual עצם of the thinking about the concept or the mind.","score_norm":0.949,"confidence":"HIGH","token_span":[289,323],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":4},
+    {"title":"Infant Insight Before Language Development","starting_phrase":"He already can tell you the difference between things, what he likes and what he doesn't like.","start_time_sec":318.76,"matched_text":"already can tell you the difference between things, what he likes and what he doesn't","score_norm":0.962,"confidence":"HIGH","token_span":[595,610],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Automatic Assembly of Speech by חכמה","starting_phrase":"In other words, when you're thinking what to say, what you are doing is separating from the בינה.","start_time_sec":626.8,"matched_text":"other words, when when you're thinking what to say, what you are doing is separating from the בינה.","score_norm":0.961,"confidence":"HIGH","token_span":[1231,1249],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Thread of Thought and Maintaining Coherence","starting_phrase":"And the string is called in even in English I think, what do they call it?","start_time_sec":800.18,"matched_text":"string is is called in even in English I think, what do they call","score_norm":0.946,"confidence":"HIGH","token_span":[1620,1634],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Tangent Digressions and Losing the Main Idea","starting_phrase":"Now, the tangent actually did fit into into some kind of a whole, but the thing is he can forget about the whole.","start_time_sec":918.06,"matched_text":"tangent actually did fit into into some kind of a whole, but the thing is he can forget about the whole.","score_norm":0.942,"confidence":"HIGH","token_span":[1934,1955],"matched_content":12,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5}
+  ]
+}

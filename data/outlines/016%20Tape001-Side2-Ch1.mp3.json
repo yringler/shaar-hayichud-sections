@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "016 Tape001-Side2-Ch1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "e72d84b6-f49c-4674-9424-bc01eeb9008a",
+  "transcript": "transcripts/016%20Tape001-Side2-Ch1.mp3.json",
+  "fetchedAt": "2026-10-29T00:34:03.250Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Three Powers of בינה within חכמה","starting_phrase":"Yeah. Yeah. על כן יוכל להבין דבר חכמה אחרת לגמרי מתוך דבר חכמה זו,","start_time_sec":0,"matched_text":"Yeah. Yeah. על כן יוכל להבין דבר חכמה אחרת לגמרי מתוך דבר חכמה זו,","score_norm":0.995,"confidence":"HIGH","token_span":[0,14],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":11},
+    {"title":"Wright Brothers: From Bicycles to Airplanes","starting_phrase":"And then they said, well, the same like it could supply power to a car, it could supply power to an airplane.","start_time_sec":163.45784326858734,"matched_text":"said, well, the same like it could supply power to a car, it could supply power to an airplane.","score_norm":0.954,"confidence":"HIGH","token_span":[433,452],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"נבון vs חכם: Depth vs Invention","starting_phrase":"But the בינה שבחכמה, the inner level of בינה שבחכמה, a נבון is higher than a חכם.","start_time_sec":256.53800401875526,"matched_text":"בינה שבחכמה, the inner level of בינה שבחכמה, a נבון is higher than a חכם.","score_norm":0.965,"confidence":"HIGH","token_span":[679,694],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"Introducing תבוננות and Its Depth","starting_phrase":"Now we're starting a new thing, but it's very far.","start_time_sec":372.69901763786726,"matched_text":"we're starting a new thing, but it's very far.","score_norm":0.965,"confidence":"HIGH","token_span":[986,995],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Depth of Concept: Chess vs Checkers","starting_phrase":"In other words, like in in חסידות, like what we're learning here, the אורך and the רוחב can be fantastic.","start_time_sec":488.86003125697925,"matched_text":"other words, like in in חסידות, like what we're learning here, the אורך and the רוחב can be fantastic.","score_norm":0.949,"confidence":"HIGH","token_span":[1293,1312],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Learning Through Length: The Doctor Analogy","starting_phrase":"He knows all the explanations, he knows where all the bones are, he knows where all the organs are.","start_time_sec":569.8322036168728,"matched_text":"knows all the explanations, he knows where all the bones are, he knows where all the organs","score_norm":0.963,"confidence":"HIGH","token_span":[1507,1524],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"משיח and the Opening of the River","starting_phrase":"When משיח will come, he'll open up the river and it'll become seven נחלים.","start_time_sec":1120.9468006251284,"matched_text":"he'll open up the river and it'll become seven נחלים.","score_norm":0.674,"confidence":"HIGH","token_span":[2677,2687],"matched_content":8,"content_coverage":0.667,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"The Book as Multi-Level Teaching","starting_phrase":"not exactly apologetics, you know, like showing how this really comes from קבלה.","start_time_sec":1459.2,"matched_text":"not exactly apologetics, you know, like showing how this really comes from קבלה.","score_norm":0.958,"confidence":"HIGH","token_span":[3848,3861],"matched_content":8,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Rabi Reich's Pride in the Early Rabbi","starting_phrase":"The thing that he was the most proud of him for","start_time_sec":1539.4,"matched_text":"thing that he was the most proud of him","score_norm":0.916,"confidence":"HIGH","token_span":[4036,4045],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"The Almighty Listening on the Conference Call","starting_phrase":"And when he when when he reads, when when he sits here, like today","start_time_sec":1663.7967492743915,"matched_text":"when when when he reads, when when he sits here, like today,","score_norm":0.968,"confidence":"HIGH","token_span":[4384,4396],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3}
+  ]
+}

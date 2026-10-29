@@ -1,0 +1,43 @@
+[project]
+name = "retime"
+version = "1.0.0"
+description = "Re-time Sofer.ai word timestamps by CTC forced alignment (torchaudio MMS_FA) for data/retimed/"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  # torchaudio 2.9 removes torchaudio.functional.forced_align; keep 2.8.
+  "torch==2.8.0",
+  "torchaudio==2.8.0",
+  "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+# Independent spot check of re-timed words (retime-verify).
+verify = ["faster-whisper>=1.2", "soundfile>=0.13"]
+
+[project.scripts]
+retime = "retime.cli:main"
+retime-verify = "retime.verify:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/retime"]
+
+# CPU-only wheels: no CUDA download.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

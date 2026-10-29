@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "63 - Chap-18-2 Adam Kadmon .mp3",
+  "chapter": "chapter_18",
+  "transcript": "transcripts/63%20-%20Chap-18-2%20Adam%20Kadmon%20.mp3.json",
+  "transcriptionId": "c39c8c7e-62ce-447d-a91b-49c873d3f400",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/63%20-%20Chap-18-2%20Adam%20Kadmon%20.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 2371,
+    "hebrewWords": 326,
+    "matchedWords": 171,
+    "chapterLines": 44,
+    "alignedLines": 9,
+    "firstLineIndex": 7,
+    "lastLineIndex": 15,
+    "meanConfidence": 0.858
+  },
+  "segments": [
+    {"startSeconds":11.28,"endSeconds":32.2,"chapter":"chapter_18","lineId":"qkliklhn","confidence":0.804,"matchedWords":21,"lineWords":26,"firstWord":21,"lastWord":71},
+    {"startSeconds":36.06,"endSeconds":57.38,"chapter":"chapter_18","lineId":"qvhpwcob","confidence":0.879,"matchedWords":18,"lineWords":21,"firstWord":85,"lastWord":146},
+    {"startSeconds":72.77,"endSeconds":156.62,"chapter":"chapter_18","lineId":"rz3xjyag","confidence":0.7,"matchedWords":10,"lineWords":14,"firstWord":180,"lastWord":497},
+    {"startSeconds":164.94,"endSeconds":212.38,"chapter":"chapter_18","lineId":"foft45xm","confidence":0.949,"matchedWords":33,"lineWords":33,"firstWord":522,"lastWord":649},
+    {"startSeconds":243.84,"endSeconds":257.14,"chapter":"chapter_18","lineId":"dqmupkmv","confidence":0.865,"matchedWords":17,"lineWords":20,"firstWord":739,"lastWord":768},
+    {"startSeconds":263.92,"endSeconds":281.02,"chapter":"chapter_18","lineId":"brf3alih","confidence":0.97,"matchedWords":16,"lineWords":16,"firstWord":789,"lastWord":835},
+    {"startSeconds":283.72,"endSeconds":287.96,"chapter":"chapter_18","lineId":"y3t3pnsw","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":846,"lastWord":852},
+    {"startSeconds":326.78,"endSeconds":373.08,"chapter":"chapter_18","lineId":"7r3qv3oh","confidence":0.928,"matchedWords":41,"lineWords":44,"firstWord":992,"lastWord":1108},
+    {"startSeconds":488.56,"endSeconds":492.18,"chapter":"chapter_18","lineId":"lugu4nav","confidence":0.625,"matchedWords":5,"lineWords":8,"firstWord":1471,"lastWord":1480}
+  ]
+}

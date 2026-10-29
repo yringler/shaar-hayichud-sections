@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "26 - Chap- 25-3 Keser to AvA.mp3",
+  "chapter": "chapter_25",
+  "transcript": "transcripts/26%20-%20Chap-%2025-3%20Keser%20to%20AvA.mp3.json",
+  "transcriptionId": "09690e72-2a0e-4526-9e02-7b6ab1518baa",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1805,
+    "hebrewWords": 224,
+    "matchedWords": 84,
+    "chapterLines": 66,
+    "alignedLines": 7,
+    "firstLineIndex": 27,
+    "lastLineIndex": 33,
+    "meanConfidence": 0.886
+  },
+  "segments": [
+    {"startSeconds":1.68,"endSeconds":23.74,"chapter":"chapter_25","lineId":"bpvctnzy","confidence":1,"matchedWords":20,"lineWords":20,"firstWord":0,"lastWord":59},
+    {"startSeconds":71.089,"endSeconds":74.477,"chapter":"chapter_25","lineId":"iwcg7s2o","confidence":1,"matchedWords":6,"lineWords":9,"firstWord":213,"lastWord":222},
+    {"startSeconds":91.448,"endSeconds":151.2,"chapter":"chapter_25","lineId":"ypxmgoxk","confidence":0.896,"matchedWords":19,"lineWords":20,"firstWord":270,"lastWord":475},
+    {"startSeconds":160.34,"endSeconds":173.72,"chapter":"chapter_25","lineId":"cqw7uder","confidence":0.9,"matchedWords":12,"lineWords":14,"firstWord":503,"lastWord":533},
+    {"startSeconds":195.6,"endSeconds":206.14,"chapter":"chapter_25","lineId":"53u43xvu","confidence":1,"matchedWords":15,"lineWords":15,"firstWord":618,"lastWord":650},
+    {"startSeconds":212.94,"endSeconds":221.33,"chapter":"chapter_25","lineId":"koj7xarm","confidence":0.544,"matchedWords":5,"lineWords":8,"firstWord":672,"lastWord":700},
+    {"startSeconds":292.3,"endSeconds":309.88,"chapter":"chapter_25","lineId":"emxhfigr","confidence":0.862,"matchedWords":7,"lineWords":8,"firstWord":947,"lastWord":1001}
+  ]
+}

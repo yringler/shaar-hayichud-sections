@@ -9,8 +9,12 @@
   <p class="track-title">{{ .title }}
     {{- if or $transcript $aligned }}
     <span class="track-links">
-      {{- with $aligned }}<a href="{{ .url }}">Follow in the text</a>{{ end -}}
-      {{- with $transcript }}<a href="{{ .url }}">Transcript</a>{{ end -}}
+      {{- with $aligned }}
+        {{- if eq (len .all) 1 }}<a href="{{ .url }}">Follow in the text</a>
+        {{- else }}{{ range $i, $c := .all }}<a href="{{ $c.url }}">{{ if not $i }}Follow in the text: {{ end }}{{ replaceRE `^chapter_0*` "Ch " $c.chapter }}</a>{{ end }}
+        {{- end }}
+      {{- end -}}
+      {{- with $transcript }}<a href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
     </span>
     {{- end -}}
   </p>

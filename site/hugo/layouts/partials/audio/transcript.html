@@ -1,6 +1,6 @@
 {{- /* Transcript page body. Context: the catalog lecture id.
        Paragraphs carry data-start / data-end (seconds); with follow.js loaded
-       (Listen along), clicking one seeks there and the current one gets the
+       (Follow along), clicking one seeks there and the current one gets the
        is-discussing side border. */ -}}
 {{- $id := . -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
@@ -18,13 +18,17 @@
   </p>
   <h1>{{ $l.title }}{{ with $info.headings }}{{ $last := index . (sub (len .) 1) }}{{ if ne $last $l.title }} <span class="h1-context">· {{ $last }}</span>{{ end }}{{ end }}</h1>
   <p class="transcript-about">{{ $info.series.title }}.
-    {{- with index $audio.aligned $id }} <a href="{{ .url }}">Follow it in the text of {{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>.{{ end }}
+    {{- with index $audio.aligned $id }}
+      {{- if eq (len .all) 1 }} <a href="{{ .url }}">Follow it in the text of {{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>.
+      {{- else }} Follow it in the text of {{ range $i, $c := .all }}{{ if $i }} and {{ end }}<a href="{{ $c.url }}">{{ replaceRE `^chapter_0*` "Chapter " $c.chapter }}</a>{{ end }}.
+      {{- end }}
+    {{- end }}
     Machine transcription (Sofer.ai): expect mistakes, especially in Hebrew terms.
     {{- with index $audio.outlines $id }} Topic headings are auto-generated.{{ end }}</p>
 
   <section class="listen" data-listen aria-label="Class recording" data-follow-src="{{ $scripts.follow.RelPermalink }}">
     <div class="listen-controls">
-      <button type="button" class="listen-along" data-listen-along data-js-only hidden aria-pressed="false">Listen along</button>
+      <button type="button" class="follow-along" data-follow-along data-js-only hidden aria-pressed="false">Follow along</button>
     </div>
     <audio controls preload="none" src="{{ $l.url }}" data-listen-audio></audio>
   </section>

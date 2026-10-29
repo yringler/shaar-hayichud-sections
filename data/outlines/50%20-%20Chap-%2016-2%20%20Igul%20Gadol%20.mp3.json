@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "50 - Chap- 16-2  Igul Gadol .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "fa12ba74-9ef6-41b9-9eaa-ffaf1c6412eb",
+  "transcript": "transcripts/50%20-%20Chap-%2016-2%20%20Igul%20Gadol%20.mp3.json",
+  "fetchedAt": "2026-10-28T23:54:28.373Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding Individual Intellectual Styles","starting_phrase":"או להשכיל שכל פרטי, or also the way","start_time_sec":0,"matched_text":"להשכיל שכל פרטי, or also the way","score_norm":0.972,"confidence":"HIGH","token_span":[1,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The Elusiveness of Personal Artistic Style","starting_phrase":"And sometimes people do, they try to like figure","start_time_sec":79.56984179850124,"matched_text":"sometimes people do, they try to like figure","score_norm":0.959,"confidence":"HIGH","token_span":[243,251],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"How Taste Shapes the Desire for a House","starting_phrase":"So like when a person wants a house, there's","start_time_sec":156.18047460449523,"matched_text":"when a person wants a house, there's","score_norm":0.968,"confidence":"HIGH","token_span":[476,483],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"From Hidden Taste to Revealed Concrete Desire","starting_phrase":"When it comes בפועל ממש actually do it, then","start_time_sec":298.5513072439605,"matched_text":"when it comes בפועל ממש actually do","score_norm":0.969,"confidence":"HIGH","token_span":[909,916],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Changing Core Desires to Reshape All Sub-Desires","starting_phrase":"Cuz if you change a desire, the higher","start_time_sec":621.1050874271369,"matched_text":"Cuz if you change a desire, the higher","score_norm":0.931,"confidence":"HIGH","token_span":[1890,1898],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Costumes, Roles, and the Freedom of Self‑Expression","starting_phrase":"Like on פורים, when you put on a","start_time_sec":726.9790091590256,"matched_text":"פורים, when you put","score_norm":0.977,"confidence":"HIGH","token_span":[2212,2216],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

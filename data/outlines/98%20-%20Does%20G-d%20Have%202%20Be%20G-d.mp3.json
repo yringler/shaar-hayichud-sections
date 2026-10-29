@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "98 - Does G-d Have 2 Be G-d.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a92f19e3-f64e-4c68-ac05-cdc29f81f61f",
+  "transcript": "transcripts/98%20-%20Does%20G-d%20Have%202%20Be%20G-d.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:08.317Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Defining God Beyond Traditional Limits","starting_phrase":"Yeah, of course it's limiting to say that God has to be God, because any type of thing that you're going to make of God is already definition.","start_time_sec":0.6799999999999997,"matched_text":"Yeah, of course it's limiting to say that God has to be God, because any type of thing that you're going to make of God is already definition.","score_norm":0.951,"confidence":"HIGH","token_span":[0,28],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":4},
+    {"title":"The Fallacy of Unlimited Moral Freedom","starting_phrase":"So that's they they they that's the שבירה comes in, they say, because it could be","start_time_sec":85.3,"matched_text":"that's they they they that's the שבירה comes in, they say, because it could","score_norm":0.908,"confidence":"HIGH","token_span":[265,279],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "79 - Even an Animal Can See.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d0750c2b-6d78-4942-ad90-b2855a89c92f",
+  "transcript": "transcripts/79%20-%20Even%20an%20Animal%20Can%20See.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:46.409Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Seeing Godliness Even in Animals","starting_phrase":"Truth is even if we would be like an animal,","start_time_sec":3.459999999999999,"matched_text":"Truth is even if we would be like an animal,","score_norm":0.838,"confidence":"HIGH","token_span":[0,10],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1}
+  ]
+}

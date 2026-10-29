@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cb6100cd-21a0-47ff-b0fa-379871dcc9d3",
+  "transcript": "transcripts/19%20-%20Chap-%2011-2%20%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:20.354Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"All Sefirot Included in Upper Purity","starting_phrase":"וכמו כן במדה זו ולזו, in the same way with another מדה,","start_time_sec":0,"matched_text":"וכמו כן במדה זו ולזו, in the same way with another מדה,","score_norm":0.986,"confidence":"HIGH","token_span":[0,12],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Paradox of the Holy Ark's Dimensions","starting_phrase":"And the idea of being למעלה מן הטבע, higher than nature, and then there's the idea of the limitations of time and space, of nature, and Hashem puts them together in different ways like, especially like the ארון in the בית המקדש,","start_time_sec":126.9,"matched_text":"idea of being למעלה מן הטבע, higher than nature, and then there's the idea of the limitations of time and space, of nature, and Hashem puts them together in different ways like, especially like the ארון in the בית המקדש,","score_norm":0.953,"confidence":"HIGH","token_span":[268,308],"matched_content":24,"content_coverage":1,"longest_content_run_soft":24,"longest_content_run_strict":7},
+    {"title":"Understanding Upper vs Lower Purity","starting_phrase":"And the reason that it's called the upper purity, the idea of pure means like pure oil, that it's only one thing, it's only oil.","start_time_sec":195.22,"matched_text":"reason that it's called the upper purity, the idea of pure means like pure oil, that it's only one thing, it's only oil.","score_norm":0.974,"confidence":"HIGH","token_span":[469,492],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":7},
+    {"title":"The Infinite Nature of Kingship","starting_phrase":"Why is this a חידוש? Why is it stressed this, that even מלכות is there?","start_time_sec":348.3,"matched_text":"Why is this a חידוש? Why is it stressed this, that even מלכות is there?","score_norm":0.916,"confidence":"HIGH","token_span":[853,868],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Precision in Mitzvah Observance","starting_phrase":"And that's why it's so important that the המצוות, and specifically the דיוקים, they have to be done according to הלכה.","start_time_sec":525.86,"matched_text":"that's why it's so important that the the the מצוות, and specifically the דיוקים, they have to be done according to הלכה.","score_norm":0.917,"confidence":"HIGH","token_span":[1344,1366],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "73 - Chap- 32-3 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "195d1cc2-3ec1-46cd-a05c-2cfa3e279676",
+  "transcript": "transcripts/73%20-%20Chap-%2032-3%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:03.212Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Heart's 32 Pathways Explained","starting_phrase":"So this is the idea of the heart that is called 32 because the 32 brains are revealed in it.","start_time_sec":2.54,"matched_text":"idea of the heart that is called 32 because the 32 brains are revealed","score_norm":0.941,"confidence":"HIGH","token_span":[4,18],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"32 Chambers and the 50 Gates of Bina","starting_phrase":"והכל ענין אחד, and it's all really one idea, the idea of the 32 chambers","start_time_sec":101.96,"matched_text":"והכל ענין אחד, and it's all really one idea, the idea of the 32 chambers","score_norm":0.962,"confidence":"HIGH","token_span":[277,292],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Intellect vs Action: Simcha vs Gemara","starting_phrase":"Even though סמיכה is also an intellect, but it's an intellect that relates to action","start_time_sec":173.52,"matched_text":"Even though סמיכה is also an intellect, but it's an intellect that relates to action,","score_norm":0.949,"confidence":"HIGH","token_span":[461,476],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Money Example: Intellectual vs Emotional View","starting_phrase":"For example, like let's say a person's thinking about money.","start_time_sec":240.72,"matched_text":"let's say a person's thinking about money.","score_norm":0.832,"confidence":"HIGH","token_span":[621,628],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"From Hidden Excitement to the Heart's Light","starting_phrase":"So too, the 32 pathways of the mind are revealed from the hidden excitement","start_time_sec":414.66,"matched_text":"too, the 32 pathways of the mind are revealed from the hidden excitement","score_norm":0.952,"confidence":"HIGH","token_span":[1115,1128],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

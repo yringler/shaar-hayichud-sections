@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "071 Tape010-Side2-Ch6.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a9433bc0-9a53-44ca-a5eb-156d8b7d2497",
+  "transcript": "transcripts/071%20Tape010-Side2-Ch6.mp3.json",
+  "fetchedAt": "2026-10-29T00:42:01.540Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Clarifying the term טבעיים and natural crying","starting_phrase":"I think it's a mistake. It might be a typo, it might be טבעיים.","start_time_sec":7.8,"matched_text":"think it's a mistake. It might be a typo, it might be a טבעיים.","score_norm":0.934,"confidence":"HIGH","token_span":[1,15],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Preparation tools: from Bina to Teshuvah","starting_phrase":"the basic thing is is like this, that the basic point here","start_time_sec":116.11922829581981,"matched_text":"basic thing is is like this, that the basic point here,","score_norm":0.909,"confidence":"HIGH","token_span":[153,164],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Bina as the perfect vacuum cleaner","starting_phrase":"the basic thing of בינה is is that בינה is the perfect vacuum cleaner.","start_time_sec":522.02,"matched_text":"basic thing of בינה, that בינה is the perfect vacuum cleaner.","score_norm":0.936,"confidence":"HIGH","token_span":[1204,1215],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Explanation as the עצמות of divine wisdom","starting_phrase":"the explanation itself is literally the עצמות.","start_time_sec":1044.92,"matched_text":"explanation itself is literally the עצמות.","score_norm":0.921,"confidence":"HIGH","token_span":[2406,2412],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Chassidus as the divine light","starting_phrase":"In other words, the חסידות itself is the אייבערסטער.","start_time_sec":1190.44,"matched_text":"other words, the חסידות itself","score_norm":0.981,"confidence":"HIGH","token_span":[2755,2760],"matched_content":4,"content_coverage":0.8,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

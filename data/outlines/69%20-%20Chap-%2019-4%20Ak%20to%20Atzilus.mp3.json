@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "69 - Chap- 19-4 Ak to Atzilus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5bc49a0b-400b-4be5-b734-ed222e832043",
+  "transcript": "transcripts/69%20-%20Chap-%2019-4%20Ak%20to%20Atzilus.mp3.json",
+  "fetchedAt": "2026-10-28T23:57:31.063Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Movement as Evidence of Life","starting_phrase":"ורואים דמה שנולד רצון בגלוי דאין ההפך","start_time_sec":5.96,"matched_text":"ורואים דמה שנולד רצון בגלוי דאין ההפך","score_norm":1,"confidence":"HIGH","token_span":[0,7],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Essential Soul vs. Manifested Desire","starting_phrase":"So this is the same thing like","start_time_sec":111.68,"matched_text":"same thing","score_norm":1,"confidence":"HIGH","token_span":[304,306],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Connection between Essential Traits and Particular Desires","starting_phrase":"So this is the idea of, in other words","start_time_sec":222.88,"matched_text":"idea of, in other words,","score_norm":0.954,"confidence":"HIGH","token_span":[634,639],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Difference Between Revealed and Essential Desire","starting_phrase":"ומובן על כל פנים שיש הפרש גדול","start_time_sec":350.3,"matched_text":"ומובן על כל פנים שיש הפרש גדול","score_norm":0.989,"confidence":"HIGH","token_span":[994,1001],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Purpose of Da'avnen: Aligning Animal Soul","starting_phrase":"And that itself is the point of דאווענען","start_time_sec":448.94,"matched_text":"itself is the point of דאווענען","score_norm":0.934,"confidence":"HIGH","token_span":[1314,1320],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Mind Over Heart: Changing Associations","starting_phrase":"That will actually change their desire once","start_time_sec":534.84,"matched_text":"will actually change their desire once","score_norm":0.984,"confidence":"HIGH","token_span":[1574,1580],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"External Actions (נעשה) Precede Internal Acceptance","starting_phrase":"So first, he has to make like החלטות","start_time_sec":651.04,"matched_text":"first, he has to make like החלטות","score_norm":0.945,"confidence":"HIGH","token_span":[1942,1949],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Pizza Example Illustrating Conditional Desire","starting_phrase":"So like a guy that is, right, so","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

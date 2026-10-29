@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/20%20-%20Chap-%202-2%20Yisroel%20Saba%20and%20Tvunah.mp3.json",
+  "transcriptionId": "bfe2dd01-5bf6-45cb-aa1b-71b876a2563c",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1569,
+    "hebrewWords": 225,
+    "matchedWords": 110,
+    "chapterLines": 37,
+    "alignedLines": 5,
+    "firstLineIndex": 11,
+    "lastLineIndex": 15,
+    "meanConfidence": 0.967
+  },
+  "segments": [
+    {"startSeconds":2.56,"endSeconds":15.38,"chapter":"chapter_02","lineId":"4wuqv36w","confidence":0.985,"matchedWords":19,"lineWords":19,"firstWord":0,"lastWord":20},
+    {"startSeconds":54.54,"endSeconds":150.816,"chapter":"chapter_02","lineId":"7pwfwk4y","confidence":0.964,"matchedWords":26,"lineWords":26,"firstWord":142,"lastWord":409},
+    {"startSeconds":158.08,"endSeconds":172.756,"chapter":"chapter_02","lineId":"lgvfw7db","confidence":0.929,"matchedWords":13,"lineWords":14,"firstWord":424,"lastWord":456},
+    {"startSeconds":184.194,"endSeconds":197.755,"chapter":"chapter_02","lineId":"mhlftuki","confidence":1,"matchedWords":20,"lineWords":21,"firstWord":493,"lastWord":529},
+    {"startSeconds":230.274,"endSeconds":284.319,"chapter":"chapter_02","lineId":"rok4avng","confidence":0.959,"matchedWords":32,"lineWords":34,"firstWord":598,"lastWord":722}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "81 - What Made Avraham the First Jew.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "09a88be4-70d4-40ce-9a25-3f440c153f74",
+  "transcript": "transcripts/81%20-%20What%20Made%20Avraham%20the%20First%20Jew.mp3.json",
+  "fetchedAt": "2026-10-29T01:54:38.721Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Abraham: Founder of the First Chabad House","starting_phrase":"Yeah, the whole thing of אברהם was that he made the first חב״ד house.","start_time_sec":0,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Inherent Jewish Self‑Sacrifice and Divine Desire","starting_phrase":"That a Jew inherently has self-sacrifice for God in its potential state, meaning that his innermost desire is to do what God wants,","start_time_sec":72.2,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Continuity of Chabad Houses from Abraham to Jacob","starting_phrase":"A חב״ד house is the primordial Jewish home.","start_time_sec":146.56,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

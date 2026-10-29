@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "80 - Chap- 21-4 Gimel Kavin (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "16d5a60b-01ff-45ad-be70-5375ad738a45",
+  "transcript": "transcripts/80%20-%20Chap-%2021-4%20Gimel%20Kavin%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:28.920Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Crown Above All Desires","starting_phrase":"A כתר is a למעלה מטעם כמו שרצון, but the כתר כתר is higher than any particular רצון, רק רצון פשוט ועצמי בלא טעם כלל.","start_time_sec":1.2799999999999983,"matched_text":"כתר is a למעלה מטעם כמו שרצון, but the כתר כתר is higher than any particular רצון, רק רצון פשוט ועצמי בלא טעם כלל.","score_norm":0.981,"confidence":"HIGH","token_span":[1,25],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":12},
+    {"title":"Why Elevation Requires a Descent","starting_phrase":"One of the explanations the רבי gives is that the whole ענין of why you have to have a ירידה for an עליה is the ענין of the חק.","start_time_sec":141.34,"matched_text":"one of the the explanations the רבי gives is that the whole ענין of why you have to have a ירידה for an עליה is the ענין of the חק.","score_norm":0.903,"confidence":"HIGH","token_span":[482,512],"matched_content":13,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"The Veil Separating Holiness Levels","starting_phrase":"The ענין the פרוכת separates between the קודש and the קודש קדשים, which is the between the כתר and the the כתר of כתר and the, which is the עצם רצון, and then the way that you bring it out, the the חכמה of the of the רצון already where you have a צורה, there's a מסך וכו׳, בחינת פרוכת שבין כתר דכתר לחכמה וכו׳, והוא בחינת קרומא דאוירא.","start_time_sec":351.76,"matched_text":"ענין the פרוכת separates between the קודש and the קודש קדשים, which is the between the כתר and the the כתר of כתר and the, which is the עצם רצון, and then the way that you bring it out, the the חכמה of the of the רצון already where you have a צורה, there's a מסך וכו׳, בחינת פרוכת שבין כתר דכתר לחכמה וכו׳, והוא בחינת קרומא דאוירא.","score_norm":0.943,"confidence":"HIGH","token_span":[1244,1312],"matched_content":38,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":13},
+    {"title":"Creating a Form to Express Pure Desire","starting_phrase":"So that's the נקודה is that this is this מסך is what, in other words, you have to create like a thing that that to connect how you're gonna connect your עצם רצון to a צורה.","start_time_sec":470.1,"matched_text":"that's the the the נקודה is that this is this מסך is what, in other words, you have to create like a thing that that to connect how you're gonna connect your עצם רצון to a צורה.","score_norm":0.916,"confidence":"HIGH","token_span":[1611,1648],"matched_content":18,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8}
+  ]
+}

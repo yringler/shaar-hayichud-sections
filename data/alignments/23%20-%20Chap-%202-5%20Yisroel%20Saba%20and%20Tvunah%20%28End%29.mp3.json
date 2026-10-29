@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/23%20-%20Chap-%202-5%20Yisroel%20Saba%20and%20Tvunah%20%28End%29.mp3.json",
+  "transcriptionId": "e17574e3-4953-43d2-be9b-809954164b5c",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2608,
+    "hebrewWords": 339,
+    "matchedWords": 128,
+    "chapterLines": 37,
+    "alignedLines": 8,
+    "firstLineIndex": 29,
+    "lastLineIndex": 36,
+    "meanConfidence": 0.944
+  },
+  "segments": [
+    {"startSeconds":3.7,"endSeconds":135.04,"chapter":"chapter_02","lineId":"tpverqfr","confidence":0.953,"matchedWords":17,"lineWords":19,"firstWord":0,"lastWord":426},
+    {"startSeconds":147.14,"endSeconds":156.24,"chapter":"chapter_02","lineId":"pteqr67h","confidence":0.89,"matchedWords":9,"lineWords":10,"firstWord":453,"lastWord":468},
+    {"startSeconds":183.66,"endSeconds":260.36,"chapter":"chapter_02","lineId":"swd6m54u","confidence":0.986,"matchedWords":22,"lineWords":22,"firstWord":532,"lastWord":783},
+    {"startSeconds":326.939,"endSeconds":330.132,"chapter":"chapter_02","lineId":"4a3kdl7g","confidence":0.75,"matchedWords":9,"lineWords":12,"firstWord":993,"lastWord":1002},
+    {"startSeconds":372.439,"endSeconds":389.46,"chapter":"chapter_02","lineId":"kga2nxgl","confidence":1,"matchedWords":18,"lineWords":18,"firstWord":1125,"lastWord":1160},
+    {"startSeconds":408.259,"endSeconds":427.7,"chapter":"chapter_02","lineId":"kt3ffmsq","confidence":0.989,"matchedWords":9,"lineWords":11,"firstWord":1212,"lastWord":1271},
+    {"startSeconds":459.48,"endSeconds":665.64,"chapter":"chapter_02","lineId":"63bj73g4","confidence":0.987,"matchedWords":27,"lineWords":28,"firstWord":1360,"lastWord":2016},
+    {"startSeconds":669.72,"endSeconds":685.9,"chapter":"chapter_02","lineId":"5lrvb2he","confidence":1,"matchedWords":17,"lineWords":18,"firstWord":2030,"lastWord":2066}
+  ]
+}

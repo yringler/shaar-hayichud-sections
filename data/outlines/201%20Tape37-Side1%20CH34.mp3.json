@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "201 Tape37-Side1 CH34.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f8598eb2-9fc0-41e6-8e27-96893b40a650",
+  "transcript": "transcripts/201%20Tape37-Side1%20CH34.mp3.json",
+  "fetchedAt": "2026-10-29T00:42:21.781Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Two Emanation Levels: Israel and Jacob Explained","starting_phrase":"34. והנה בבחינת זו דאצילות יש ב' מדרגות הנקראים ישראל ויעקב כידוע. וביאור פרטי המדרגות שבזה.","start_time_sec":4.6,"matched_text":"34. והנה בבחינת זו דאצילות יש ב' מדרגות הנקראים ישראל ויעקב כידוע. וביאור פרטי המדרגות שבזה.","score_norm":0.996,"confidence":"HIGH","token_span":[0,16],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":9},
+    {"title":"Distinguishing Israel Sabba and Israel Zeuta","starting_phrase":"והפרש בין ישראל סבא לישראל זוטא שבחינת","start_time_sec":67.46,"matched_text":"בין ישראל סבא לישראל זוטא. שבחינת","score_norm":1,"confidence":"HIGH","token_span":[68,74],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Father’s and Mother’s Spiritual Influences (נה\"י)","starting_phrase":"והנה מבחינת נה\"י דאבא נמשך נה\"י דאימא","start_time_sec":217.58032742155515,"matched_text":"והנה מבחינת נה\"י דאבא נמשך נה\"י בנה\"י דאימא,","score_norm":0.946,"confidence":"HIGH","token_span":[347,355],"matched_content":5,"content_coverage":0.556,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Developmental Stages: Ages Six, Nine, Thirteen, Twenty","starting_phrase":"And the basic levels are at at six, at nine, at 13, and at 20.","start_time_sec":515.92,"matched_text":"basic levels are at at six, at nine, at 13, and at 20.","score_norm":0.919,"confidence":"HIGH","token_span":[1050,1063],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Natural versus Stamped Character Traits","starting_phrase":"In other words, the natural מדה is stamped into him","start_time_sec":1114.58,"matched_text":"other words, there's a natural מדה that's stamped into him,","score_norm":0.968,"confidence":"HIGH","token_span":[2315,2325],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Child Development: From Instinct to Conduct at Six","starting_phrase":"So, at six years old, kids start school because by that time","start_time_sec":1242.78,"matched_text":"six years old that kids start school, because by that time","score_norm":0.974,"confidence":"HIGH","token_span":[2624,2635],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Definition of חובת הגוף as דאורייתא","starting_phrase":"it's a חובת הגוף, an obligation that the individual took upon himself,","start_time_sec":1783.9476606864225,"matched_text":"it's a חובת הגוף, an obligation that the individual took upon himself,","score_norm":0.969,"confidence":"HIGH","token_span":[3907,3919],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Questioning the source of רבי מאיר’s קנס ruling","starting_phrase":"And the גמרא says: wait a second, תקשי לך איהו גופיה! You could have asked","start_time_sec":1862.1579809004095,"matched_text":"גמרא says: wait a second, תקשי לך איהו גופיה! You could have asked","score_norm":0.989,"confidence":"HIGH","token_span":[4023,4036],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Purpose of the קנס to prevent communal impurity","starting_phrase":"And the reason why he made a קנס is כדי שלא יהא כל אחד ואחד הולך ומטמא","start_time_sec":1942.0282128240121,"matched_text":"reason why he made a קנס is כדי שלא יהא כל אחד ואחד הולך ומטמא","score_norm":0.985,"confidence":"HIGH","token_span":[4127,4142],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":8}
+  ]
+}

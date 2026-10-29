@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "66 - Chap- 19-1 Ak to Atzilus.mp3",
+  "chapter": "chapter_19",
+  "transcript": "transcripts/66%20-%20Chap-%2019-1%20Ak%20to%20Atzilus.mp3.json",
+  "transcriptionId": "475bf3c9-6123-46be-867a-542b74a3dcdb",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1902,
+    "hebrewWords": 158,
+    "matchedWords": 51,
+    "chapterLines": 55,
+    "alignedLines": 5,
+    "firstLineIndex": 0,
+    "lastLineIndex": 4,
+    "meanConfidence": 0.833
+  },
+  "segments": [
+    {"startSeconds":0,"endSeconds":6.58,"chapter":"chapter_19","lineId":"2c5deke6","confidence":0.742,"matchedWords":9,"lineWords":13,"firstWord":0,"lastWord":9},
+    {"startSeconds":7.04,"endSeconds":13.46,"chapter":"chapter_19","lineId":"5btdyeik","confidence":0.762,"matchedWords":11,"lineWords":15,"firstWord":11,"lastWord":23},
+    {"startSeconds":508.252,"endSeconds":512.242,"chapter":"chapter_19","lineId":"refv4gx6","confidence":0.915,"matchedWords":12,"lineWords":13,"firstWord":1531,"lastWord":1543},
+    {"startSeconds":572.877,"endSeconds":574.872,"chapter":"chapter_19","lineId":"oqgoilse","confidence":0.778,"matchedWords":7,"lineWords":10,"firstWord":1714,"lastWord":1720},
+    {"startSeconds":602.8,"endSeconds":625.522,"chapter":"chapter_19","lineId":"7f3udp7u","confidence":0.968,"matchedWords":12,"lineWords":12,"firstWord":1788,"lastWord":1872}
+  ]
+}

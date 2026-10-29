@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "51 - Chap- 16-3  Igul Gadol.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b921b374-f834-487d-984a-c206e1f13eab",
+  "transcript": "transcripts/51%20-%20Chap-%2016-3%20%20Igul%20Gadol.mp3.json",
+  "fetchedAt": "2026-10-28T23:54:36.063Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"From Thought to Action: Building the House Metaphor","starting_phrase":"אבל אחר זמן בא מחשבה זו לבוא לידי מעשה, but the","start_time_sec":0,"matched_text":"אחר זמן בא מחשבה זו לבוא לידי מעשה,","score_norm":1,"confidence":"HIGH","token_span":[1,9],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Ten Sefirot Circles: Mapping the Global Desire","starting_phrase":"So that's the the general this is the general ענין for the ten ספירות of עיגולים.","start_time_sec":177.48,"matched_text":"that's the the general this is the general ענין for the ten ספירות of עיגולים.","score_norm":0.914,"confidence":"HIGH","token_span":[561,576],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Primordial Divine Will and the Choice After Reduction","starting_phrase":"But the first רצון קדום is the result of the צמצום, רשימו, and קו","start_time_sec":268.88,"matched_text":"first רצון קדמון is the result of the צמצום, רשימו, and קו","score_norm":0.794,"confidence":"HIGH","token_span":[820,832],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Pure vs Impure: Understanding טהירו עילאה and תתאה","starting_phrase":"טהירו עילאה means that it's completely pure.","start_time_sec":406.4,"matched_text":"טהירו עילאה means that it's completely pure.","score_norm":0.988,"confidence":"HIGH","token_span":[1190,1197],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Human Yearning for a Home and Independence","starting_phrase":"In the רצון מוחלט you know that one day, even a little baby, you say,","start_time_sec":471.34,"matched_text":"רצון מוחלט you know that one day, even a little baby, you say,","score_norm":0.954,"confidence":"HIGH","token_span":[1405,1418],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Forming the Ultimate Goal: רשימו and קו","starting_phrase":"This is the general ענין of the קו, which is the general which includes the with the רשימו","start_time_sec":587.42,"matched_text":"general ענין of the קו, which is the general which includes the with the רשימו","score_norm":0.948,"confidence":"HIGH","token_span":[1754,1769],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"קדום vs ראשון: Priorities in Desires","starting_phrase":"It could also be called, that's the difference between קדום and ראשון.","start_time_sec":723.5,"matched_text":"could also be called, that's the difference between קדום and ראשון.","score_norm":0.974,"confidence":"HIGH","token_span":[2155,2166],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

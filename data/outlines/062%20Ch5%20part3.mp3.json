@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "062 Ch5 part3.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b7db504c-e6f5-4af3-9239-44cbf4b5bbe4",
+  "transcript": "transcripts/062%20Ch5%20part3.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:57.022Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Clarifying the Humility Question","starting_phrase":"I think first I wanted to clarify something you said about the humility.","start_time_sec":3.5799999999999974,"matched_text":"think first I wanted to clarify something you said about the humility.","score_norm":0.965,"confidence":"HIGH","token_span":[1,13],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"True Humility Before God","starting_phrase":"If you know the greatness of the אויבערשטער, you know you're ממש nothing.","start_time_sec":118.48,"matched_text":"greatness of the אויבערשטער, you know you're ממש nothing.","score_norm":0.938,"confidence":"HIGH","token_span":[277,286],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The 64th Brain and Pride Limits","starting_phrase":"It says that תלמיד חכם doesn't have more than a 64th of גאוה.","start_time_sec":203.16,"matched_text":"says that תלמיד חכם doesn't have more than a 64th of גאוה.","score_norm":0.975,"confidence":"HIGH","token_span":[439,451],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Identifying the Two Spiritual Sicknesses","starting_phrase":"So, so this these are the two sicknesses basically.","start_time_sec":430.84991715976366,"matched_text":"two sicknesses basically.","score_norm":1,"confidence":"HIGH","token_span":[894,897],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Divine Praise and the Proper Way to Boast","starting_phrase":"אל יתהלל חכם בחכמתו, yeah, אל יתהלל גיבור בגבורתו","start_time_sec":528.3533017751481,"matched_text":"אל יתהלל חכם בחכמתו, yeah, אל יתהלל גיבור בגבורתו,","score_norm":1,"confidence":"HIGH","token_span":[1139,1148],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9}
+  ]
+}

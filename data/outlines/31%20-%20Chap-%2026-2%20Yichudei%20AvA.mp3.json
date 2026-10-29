@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "31 - Chap- 26-2 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6253dbbe-3868-4b9c-bca8-c7301d2114d8",
+  "transcript": "transcripts/31%20-%20Chap-%2026-2%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:10.263Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Light Descending Through the Ten Sephirot of Father","starting_phrase":"That's what we talked about in the last chapter. Now,","start_time_sec":2.759999999999999,"matched_text":"That's what we talked about in the last chapter.","score_norm":0.962,"confidence":"HIGH","token_span":[0,9],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Personal פרצופים: Learning, Social, and Charismatic Types","starting_phrase":"So, like when a person is using all of his 10 כחות to learn,","start_time_sec":105.73804735883425,"matched_text":"when a person is using all of his 10 כחות to learn,","score_norm":0.965,"confidence":"HIGH","token_span":[290,302],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Understanding the Light as Self‑Revelation in the Intellect","starting_phrase":"Now, we have to understand how the light, what does it mean the light?","start_time_sec":261.36,"matched_text":"have to understand how the light, what does it mean the light?","score_norm":0.947,"confidence":"HIGH","token_span":[727,739],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Chasidus vs Other Approaches: Pure Understanding","starting_phrase":"Chasidus, חסידות is not really telling you good or bad about anything.","start_time_sec":390.82,"matched_text":"חסידות is not really telling you good or bad about anything.","score_norm":0.959,"confidence":"HIGH","token_span":[1042,1053],"matched_content":7,"content_coverage":0.875,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"The מזלות Genius: Loving Truth for Its Own Sake","starting_phrase":"If a person's going to be like that with philosophy,","start_time_sec":457.16,"matched_text":"person's going to be like that with philosophy,","score_norm":0.93,"confidence":"HIGH","token_span":[1246,1254],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Levels of או״א: From Upper to Lower Flow","starting_phrase":"Now we're going to explain the different levels of או״א itself.","start_time_sec":570.94,"matched_text":"we're going to explain the different levels of או״א itself.","score_norm":0.969,"confidence":"HIGH","token_span":[1586,1596],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Shabbat as Rest for the חכמה","starting_phrase":"Shabbat is when you rest your חכמה.","start_time_sec":643.3780473588342,"matched_text":"when you you rest your חכמה.","score_norm":0.96,"confidence":"HIGH","token_span":[1790,1796],"matched_content":4,"content_coverage":0.8,"longest_content_run_soft":4,"longest_content_run_strict":3}
+  ]
+}

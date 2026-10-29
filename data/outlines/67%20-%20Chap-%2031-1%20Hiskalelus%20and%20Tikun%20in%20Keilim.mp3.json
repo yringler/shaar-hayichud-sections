@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "67 - Chap- 31-1 Hiskalelus and Tikun in Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5d91568c-3889-4bbe-a5bf-04f9342aac7b",
+  "transcript": "transcripts/67%20-%20Chap-%2031-1%20Hiskalelus%20and%20Tikun%20in%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:13:05.148Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Recap of vessels and light in previous chapter","starting_phrase":"So in the last פרק, in פרק ל', we explained about the details of the vessels of the brain, the heart, and the liver,","start_time_sec":7.62,"matched_text":"last פרק, in פרק ל', we explained about the details of the vessels of the brain, the heart, and the liver,","score_norm":0.92,"confidence":"HIGH","token_span":[5,26],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"תיקון (harmony) arising from many vessels","starting_phrase":"That this is the main idea of תיקון, תיקון literally means to fix up, but here it means like harmony.","start_time_sec":85,"matched_text":"main idea of תיקון, תיקון literally means to fix up, but here it means like harmony.","score_norm":0.958,"confidence":"HIGH","token_span":[189,205],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"Why light alone cannot handle opposite light","starting_phrase":"if this was because of the light itself, that the light is able to handle the other vessel,","start_time_sec":167.72,"matched_text":"because of the light itself, that the light is able to handle the other vessel,","score_norm":0.927,"confidence":"HIGH","token_span":[374,389],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

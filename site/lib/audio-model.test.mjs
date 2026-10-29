@@ -5,7 +5,19 @@
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { chapterSeries, formatTime, lectureItems, rankRefs, spanAt, spans, topicAt } from "../hugo/assets/js/audio/model.ts";
+import {
+  chapterSeries,
+  chooseSeries,
+  DEFAULT_SERIES_ID,
+  formatTime,
+  lectureItems,
+  rankRefs,
+  scrollToShow,
+  segmentItems,
+  spanAt,
+  spans,
+  topicAt,
+} from "../hugo/assets/js/audio/model.ts";
 
 const lectures = [
   { id: "a", url: "u/a", title: "Part 1", seriesId: "0", series: "W", part: "", durationSeconds: null, alignment: "" },
@@ -95,6 +107,47 @@ test("chapterSeries lists each series once, in order", () => {
     { id: "0", title: "W" },
     { id: "37", title: "M" },
   ]);
+});
+
+test("chooseSeries: the saved teacher, else the default (Walters original, id 0), else the first", () => {
+  const W = { id: "0", title: "W" };
+  const M = { id: "37", title: "M" };
+  const N = { id: "5", title: "N" };
+  assert.equal(DEFAULT_SERIES_ID, "0");
+  assert.deepEqual(chooseSeries([W, M], "37"), { series: M, fellBack: false });
+  // Nothing saved: the default teacher, even when listed second; no note.
+  assert.deepEqual(chooseSeries([M, W], null), { series: W, fellBack: false });
+  // Saved teacher absent here: the default, flagged so the page says so.
+  assert.deepEqual(chooseSeries([M, W], "5"), { series: W, fellBack: true });
+  // Neither saved nor default here: the first series.
+  assert.deepEqual(chooseSeries([M, N], null), { series: M, fellBack: false });
+  assert.deepEqual(chooseSeries([], null), { series: null, fellBack: false });
+});
+
+test("segmentItems keys transcript segments by index", () => {
+  const t = {
+    schemaVersion: 1,
+    lectureId: "x",
+    segments: [
+      { startSeconds: 0, endSeconds: 40, text: "a" },
+      { startSeconds: 40, endSeconds: 90, text: "b" },
+    ],
+  };
+  assert.deepEqual(segmentItems(t), [
+    { key: "0", start: 0, end: 40 },
+    { key: "1", start: 40, end: 90 },
+  ]);
+  assert.deepEqual(spanAt(spans(segmentItems(t)), 45)?.keys, ["1"]);
+});
+
+test("scrollToShow: null when fully visible, else a third of the way down", () => {
+  // Region 300 tall scrolled to 100: shows 100..400.
+  assert.equal(scrollToShow(100, 300, 150, 60), null);
+  assert.equal(scrollToShow(100, 300, 340, 60), null);
+  assert.equal(scrollToShow(100, 300, 380, 60), 380 - 80); // below: (300-60)/3 = 80 above it
+  assert.equal(scrollToShow(100, 300, 20, 60), 0); // above, near the top: clamped
+  // Taller than the region: its top at the top.
+  assert.equal(scrollToShow(0, 300, 500, 400), 500);
 });
 
 test("topicAt: the last topic started", () => {

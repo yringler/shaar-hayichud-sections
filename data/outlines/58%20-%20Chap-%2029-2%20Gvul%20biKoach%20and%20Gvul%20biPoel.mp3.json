@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "58 - Chap- 29-2 Gvul biKoach and Gvul biPoel.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5359d82d-9a78-475e-957f-63689785e6ea",
+  "transcript": "transcripts/58%20-%20Chap-%2029-2%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:25.692Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Illusion of a Fixed Limitation","starting_phrase":"ואין גבול מוכרח, it's not like a forced limitation לומר that we would be able to say שאין לו כח התפשטות עוד","start_time_sec":2.96,"matched_text":"ואין גבול מוכרח, it's not like a forced limitation לומר that we would be able to say שאין לו כח התפשטות עוד","score_norm":0.973,"confidence":"HIGH","token_span":[0,22],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":6},
+    {"title":"Distinguishing Internal vs. External Tools","starting_phrase":"כמו שנתבאר במקום אחר בענין פנימיות הכלים וחיצוניות הכלים","start_time_sec":65.78,"matched_text":"כמו שנתבאר במקום אחר בענין פנימיות הכלים וחיצוניות הכלים","score_norm":1,"confidence":"HIGH","token_span":[237,246],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Root Source of Vessels Limiting Divine Light","starting_phrase":"בשרש ומקור כלים המגבילים לאור, the root and the source of the vessels that limit the light of God","start_time_sec":142.22,"matched_text":"בשרש ומקור כלים המגבילים לאור, the root and the source of the vessels that limit the light of God,","score_norm":0.95,"confidence":"HIGH","token_span":[487,506],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Desire Requires a Defined Limitation","starting_phrase":"And you don't just want anything, say, \"Oh, I want something,\"","start_time_sec":222.7,"matched_text":"don't just want anything, say, \"Oh, I want something,\"","score_norm":0.976,"confidence":"HIGH","token_span":[741,750],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Personal Choice as the Source of Limits","starting_phrase":"The point is that the limitation of it is coming from you","start_time_sec":339.82,"matched_text":"point is that the limitation of it is coming from","score_norm":0.887,"confidence":"HIGH","token_span":[1220,1230],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"The Measure (קו המדה) Governing All Limits","starting_phrase":"This limitation is all from the מאמר of the קו המדה","start_time_sec":487.06,"matched_text":"limitation is all from the מאמר of the קו המדה,","score_norm":0.95,"confidence":"HIGH","token_span":[1754,1764],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Revisiting the Light‑Vessel Relationship","starting_phrase":"In other words, well, until now it sounded like this the way we were explaining it","start_time_sec":584.0611135276207,"matched_text":"other words, well, until now it sounded like this the way we were explaining","score_norm":0.931,"confidence":"HIGH","token_span":[2081,2095],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4}
+  ]
+}

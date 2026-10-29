@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "10 - Chap- 1-2 Chochmah Binah Daas.mp3",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/10%20-%20Chap-%201-2%20Chochmah%20Binah%20Daas.mp3.json",
+  "transcriptionId": "e9ec5232-d465-4d40-a537-08e3044054f9",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2300,
+    "hebrewWords": 164,
+    "matchedWords": 122,
+    "chapterLines": 53,
+    "alignedLines": 6,
+    "firstLineIndex": 8,
+    "lastLineIndex": 13,
+    "meanConfidence": 0.891
+  },
+  "segments": [
+    {"startSeconds":2.44,"endSeconds":13.5,"chapter":"chapter_01","lineId":"cy46bzo7","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":0,"lastWord":21},
+    {"startSeconds":24.04,"endSeconds":35.04,"chapter":"chapter_01","lineId":"kbu523ut","confidence":1,"matchedWords":17,"lineWords":17,"firstWord":56,"lastWord":74},
+    {"startSeconds":128.68,"endSeconds":148.665,"chapter":"chapter_01","lineId":"67ihjptr","confidence":0.544,"matchedWords":15,"lineWords":28,"firstWord":352,"lastWord":391},
+    {"startSeconds":496.04,"endSeconds":530.86,"chapter":"chapter_01","lineId":"j7dd3yah","confidence":0.964,"matchedWords":22,"lineWords":22,"firstWord":1352,"lastWord":1442},
+    {"startSeconds":722.96,"endSeconds":746.366,"chapter":"chapter_01","lineId":"vuobhjav","confidence":0.874,"matchedWords":17,"lineWords":20,"firstWord":2015,"lastWord":2081},
+    {"startSeconds":776.38,"endSeconds":794.842,"chapter":"chapter_01","lineId":"ceetsykf","confidence":0.967,"matchedWords":12,"lineWords":12,"firstWord":2170,"lastWord":2220}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "14 - Chap- 1-6 Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "2514e92c-1594-49e2-b08f-9b8268e8d2a1",
+  "transcript": "transcripts/14%20-%20Chap-%201-6%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:04:34.851Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Depth of Concept and Root Understanding","starting_phrase":"וכנראה בחוש, and like we see tangibly, שכל","start_time_sec":3.32,"matched_text":"וכנראה בחוש, and like we see tangibly, שכל","score_norm":0.96,"confidence":"HIGH","token_span":[0,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Learning Gemara: Focus on Clear Understanding","starting_phrase":"The רש״ב explains all this in relation to learning","start_time_sec":81.26,"matched_text":"רש״ב explains all this in relation to learning","score_norm":0.958,"confidence":"HIGH","token_span":[208,216],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Two Steps: Pshat then Deepening","starting_phrase":"So those two steps are just understanding the basic","start_time_sec":164.22,"matched_text":"two steps are just understanding the basic","score_norm":0.948,"confidence":"HIGH","token_span":[439,446],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Simple Math Illustrates Deep Wisdom","starting_phrase":"For example, when you learn 1 + 1 is 2,","start_time_sec":333.32,"matched_text":"example, when you learn 1 1 is 2,","score_norm":0.975,"confidence":"HIGH","token_span":[925,933],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Levels of Unity: יחיד, אחד, קדמון","starting_phrase":"And what's the idea of אחד? That,","start_time_sec":480.46,"matched_text":"what's the idea of אחד?","score_norm":0.951,"confidence":"HIGH","token_span":[1376,1381],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Music and Art: Unity of Separate Elements","starting_phrase":"The whole idea, the whole basis at the real depth of music","start_time_sec":552.3,"matched_text":"whole idea, the whole basis at the real depth of music","score_norm":0.958,"confidence":"HIGH","token_span":[1592,1603],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

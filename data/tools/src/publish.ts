@@ -9,12 +9,14 @@
  *
  * Which lectures are published, and the confidence floor, come from one
  * file: data/audio-publish.json (PublishPolicy). The raw Sofer files are
- * never published; transcripts are converted to paragraphs.
+ * never published; transcripts are converted to paragraphs, with the
+ * re-timed word times from data/retimed/ when the lecture has them.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { encodePathSegment, type Catalog, type CatalogItem, type CatalogLecture, type CatalogSection } from './catalog.js';
 import { walkLines, type Chapter } from './chapter.js';
+import { wordTimes } from './retimed.js';
 import { TRANSCRIPTION_SERIES } from './transcription-config.js';
 import type { SchemaSet } from './validate.js';
 
@@ -214,6 +216,11 @@ export function publishAlignment(a: SourceAlignment, minConfidence: number): Pub
   };
 }
 
+/** The chapters an alignment covers: its `chapter`, then its segments' chapters, in order of first appearance. */
+export function alignmentChapters(a: Pick<PublishedAlignment, 'chapter' | 'segments'>): string[] {
+  return [...new Set([a.chapter, ...a.segments.map((s) => s.chapter)])];
+}
+
 /** alignments/chapters/<key>.json (schema/v1/chapter-alignments.schema.json). */
 export interface ChapterAlignments {
   schemaVersion: 1;
@@ -298,6 +305,27 @@ export interface SourceTopic {
   title: string;
   start_time_sec?: number | null;
   confidence: string;
+  /** Sofer's [start, end) indices of the topic's first words in the transcript's word list. */
+  token_span?: number[] | null;
+}
+
+/**
+ * Topic start times moved onto the re-timed words. Sofer located each topic
+ * on its own (possibly wrong) word times; the topic's first word is
+ * `token_span[0]`, or else the first word whose Sofer start equals the topic's
+ * time. A topic that can be tied to no word is dropped rather than shown at a
+ * time known to be unreliable.
+ */
+export function retimeTopics(topics: SourceTopic[], soferStarts: readonly number[], retimedStarts: readonly number[]): SourceTopic[] {
+  const out: SourceTopic[] = [];
+  for (const t of topics) {
+    let i = Array.isArray(t.token_span) && typeof t.token_span[0] === 'number' ? t.token_span[0] : -1;
+    if (!(i >= 0 && i < retimedStarts.length) && typeof t.start_time_sec === 'number') {
+      i = soferStarts.findIndex((s) => Math.abs(s - t.start_time_sec!) < 0.005);
+    }
+    if (i >= 0 && i < retimedStarts.length) out.push({ ...t, start_time_sec: retimedStarts[i]! });
+  }
+  return out;
 }
 
 export interface PublishedOutline {
@@ -403,7 +431,16 @@ export function publishAudio(input: PublishInput): PublishedAudio {
     let chapter = chapterKeyOf(info);
 
     if (existsSync(outlineFile)) {
-      const outline = publishOutline(id, sourceTopics(readJson(outlineFile)));
+      let topics = sourceTopics(readJson(outlineFile));
+      // On a re-timed lecture the topics move with the words they start at.
+      if (existsSync(transcriptFile)) {
+        const sofer = (readJson(transcriptFile) as StoredTranscriptLike).result.timestamps ?? [];
+        const times = wordTimes(dataDir, id, sofer);
+        if (times.source === 'retimed') {
+          topics = retimeTopics(topics, sofer.map((w) => w.start), times.words.map((w) => w.start));
+        }
+      }
+      const outline = publishOutline(id, topics);
       if (outline.topics.length > 0) {
         const p = `outlines/${fileOf(id)}`;
         files.set(p, outline);
@@ -418,11 +455,17 @@ export function publishAudio(input: PublishInput): PublishedAudio {
       const p = `alignments/${fileOf(id)}`;
       files.set(p, a);
       out.alignmentItems.push({ id, path: p, schema: 'schema/alignment.schema.json' });
-      alignmentsByChapter.set(a.chapter, [...(alignmentsByChapter.get(a.chapter) ?? []), a]);
+      // A class that reads two chapters is listed on both chapters' indexes.
+      for (const key of alignmentChapters(a)) {
+        alignmentsByChapter.set(key, [...(alignmentsByChapter.get(key) ?? []), a]);
+      }
     }
     if (existsSync(transcriptFile)) {
       const raw = readJson(transcriptFile) as StoredTranscriptLike;
-      const stored = raw.result.timestamps ?? [];
+      // Forced-alignment times from data/retimed/ when there is a current file.
+      const times = wordTimes(dataDir, id, raw.result.timestamps ?? []);
+      out.errors.push(...times.errors);
+      const stored = times.words;
       if (stored.length === 0) continue;
       // Speaker labels are published only for series configured to label
       // speakers; a transcript made before labeling was turned off keeps its

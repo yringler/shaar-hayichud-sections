@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "038 Tape029-Side2-Ch25.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d617dd33-9522-4c81-8f8a-fdd372e160a3",
+  "transcript": "transcripts/038%20Tape029-Side2-Ch25.mp3.json",
+  "fetchedAt": "2026-10-29T00:37:27.987Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Overview of the Sefirot Hierarchy","starting_phrase":"I'm looking forward, I see that we did do it. Okay.","start_time_sec":0,"matched_text":"I'm looking forward, I see that we did do","score_norm":0.968,"confidence":"HIGH","token_span":[0,9],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Nature of Wisdom and Understanding","starting_phrase":"אך הנה ידוע בענין כח מ\"ה, דהחכמה מאין תמצא","start_time_sec":88.8,"matched_text":"אך הנה ידוע בענין כח מ\"ה, דהחכמה מאין תמצא","score_norm":0.985,"confidence":"HIGH","token_span":[167,176],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Flash of Insight as Chochma","starting_phrase":"So this נקודה דחכמה שמבריק כברק מלמעלה מן השכל.","start_time_sec":191.02,"matched_text":"נקודה דחכמה שמבריק כברק מלמעלה מן השכל,","score_norm":1,"confidence":"HIGH","token_span":[366,373],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Nourishment of the Father's Mind","starting_phrase":"And this יניקה is the הגדלת מוחין דאבא","start_time_sec":377.7,"matched_text":"יניקה is the הגדלת מוחין דאבא,","score_norm":0.967,"confidence":"HIGH","token_span":[751,757],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Nobalah – Overflow of Wisdom","starting_phrase":"Now talk about נובלות, the leaves that fall off the tree.","start_time_sec":700.98,"matched_text":"נובלות is like, you know, the leaves that fall off the tree.","score_norm":0.78,"confidence":"HIGH","token_span":[1377,1389],"matched_content":5,"content_coverage":0.714,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Ascending Beyond Arich to Golgelta","starting_phrase":"Higher levels beyond אריך, up to גולגלתא","start_time_sec":932.8,"matched_text":"higher than אריך, even higher than the גולגלתא.","score_norm":0.488,"confidence":"LOW","token_span":[1908,1916],"matched_content":3,"content_coverage":0.5,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Purity of the Seed","starting_phrase":"Explanation of טוהר דקרדינותא and its uniqueness.","start_time_sec":1156.58,"matched_text":"טוהר דקרדינותא","score_norm":0.667,"confidence":"HIGH","token_span":[2414,2416],"matched_content":2,"content_coverage":0.4,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"First Level Above Dark Mountains","starting_phrase":"the first level is really even higher than that.","start_time_sec":1499.511694589391,"matched_text":"first level is really even higher than","score_norm":0.97,"confidence":"HIGH","token_span":[3197,3204],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Aquifer Analogy for Hidden Wisdom","starting_phrase":"Now we discuss the aquifer metaphor: הוא כמו צינור דק","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Party Analogy for Spiritual Overflow","starting_phrase":"Analogy of party leftovers illustrating excess of wisdom.","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"True Spiritual Innovation","starting_phrase":"Discussion of new light, not mere innovation.","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Messianic Flood and Hidden Mountains","starting_phrase":"Messianic vision of covered mountains and divine wisdom.","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

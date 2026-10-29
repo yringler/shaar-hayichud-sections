@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "71 - Chap- 19-6 Ak to Atzilus  (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d27087a9-cd97-4939-aac6-c59b7bf7fd7f",
+  "transcript": "transcripts/71%20-%20Chap-%2019-6%20Ak%20to%20Atzilus%20%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:10.822Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Comparing One’s Will to a General Will (א\"ק)","starting_phrase":"אך כמו שמובן ממילא עכשיו, שזהו נקרא השוואת רצון לרצון, והוא בבחינת ככלל, והוליד כמה מיני רצון.","start_time_sec":1.9000000000000004,"matched_text":"אך כמו שמובן ממילא עכשיו, שזהו נקרא השוואת רצון לרצון, והוא בבחינת ככלל, והוליד כמה מיני רצון.","score_norm":1,"confidence":"HIGH","token_span":[0,17],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":17},
+    {"title":"External Form (מלכות) Shapes Our Self‑Image and Choices","starting_phrase":"And the external thing of מלכות of it means they have this whole picture, this thing of like הנהגה, they have a whole picture of what it means to be a guy like that.","start_time_sec":80.32,"matched_text":"external thing of מלכות of it means they have this whole picture, this thing of like הנהגה, they have a whole picture of what it means to be a guy","score_norm":0.922,"confidence":"HIGH","token_span":[210,240],"matched_content":15,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":2},
+    {"title":"Teacher‑Student Dynamic: Receiving Wisdom Through the Teacher’s Letters","starting_phrase":"The same thing also with the same like a teacher.","start_time_sec":191,"matched_text":"same thing also with the same like a teacher.","score_norm":0.961,"confidence":"HIGH","token_span":[585,594],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"How Speaking Positively About Others Generates Love in Listeners","starting_phrase":"So one thing is if a person loves somebody, so then if if this person says good things about somebody else,","start_time_sec":285.53828696925297,"matched_text":"one thing is if a person loves somebody, so then if if this person says good things about somebody else,","score_norm":0.949,"confidence":"HIGH","token_span":[854,874],"matched_content":12,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Divine Selection of Desires Determines Which Generation’s Will Is Revealed","starting_phrase":"In other words, that that השם chooses particular which part of the רצון ברצון is it going to come out now, which is the ענין של הקורא הדורות מראש,","start_time_sec":355.32,"matched_text":"other words, that that השם chooses particular which part of the רצון ברצון is it going to come out now, which is the ענין of the קורא הדורות מראש,","score_norm":0.937,"confidence":"HIGH","token_span":[1021,1050],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":5}
+  ]
+}

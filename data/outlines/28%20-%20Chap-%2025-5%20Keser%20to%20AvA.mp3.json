@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "28 - Chap- 25-5 Keser to AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b9456a45-4021-4be9-9de5-99d265774db7",
+  "transcript": "transcripts/28%20-%20Chap-%2025-5%20Keser%20to%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:06:44.384Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Two Lines of Chesed and Gevurah in the Will","starting_phrase":"שנמשך ממנו ב' קווין חסד וגבורה שברצון וכולי. And from this reason for the רצון","start_time_sec":0,"matched_text":"שנמשך ממנו ב' קווין חסד וגבורה שברצון וכולי. And from this reason for the רצון,","score_norm":0.965,"confidence":"HIGH","token_span":[0,15],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Seeking True Sechel: Ascending to the Source","starting_phrase":"In order to really come out with a true שכל, you have to go to the first level where you're reaching all the way up into the source.","start_time_sec":144.58,"matched_text":"order to really come out with a true שכל, you have to go to the first level where you're reaching all the way up into the source.","score_norm":0.963,"confidence":"HIGH","token_span":[418,445],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":6},
+    {"title":"Bribe (Shochad) Twisting the Intellect","starting_phrase":"So once you connect your שכל to this to a bribe, you're going to be biased.","start_time_sec":391.86,"matched_text":"Once you connect your שכל to this to a bribe, you're going to be biased.","score_norm":0.933,"confidence":"HIGH","token_span":[1251,1266],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3}
+  ]
+}

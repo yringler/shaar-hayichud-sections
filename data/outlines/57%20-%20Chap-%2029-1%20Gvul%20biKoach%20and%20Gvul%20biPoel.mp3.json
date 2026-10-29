@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "57 - Chap- 29-1 Gvul biKoach and Gvul biPoel.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "da8b1e8c-6fef-40e8-b879-801014a6acbb",
+  "transcript": "transcripts/57%20-%20Chap-%2029-1%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:16.235Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Focus on Unity of Lights and Vessels","starting_phrase":"however, when a person, when you're going to do התבוננות in the אורות and כלים of אצילות in a more particular way,","start_time_sec":10.299999999999997,"matched_text":"however, when a person, when you're going to do התבוננות in the אורות and כלים of אצילות in a more particular way,","score_norm":0.959,"confidence":"HIGH","token_span":[10,32],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Divine Choice Makes Vessel Limitation Higher","starting_phrase":"And so it's just like איהו וחיוהי חד, so too is איהו וגרמוהי חד.","start_time_sec":97.4,"matched_text":"it's just like איהו וחיוהי חד, so too is איהו וגרמוהי חד.","score_norm":0.963,"confidence":"HIGH","token_span":[284,296],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Why Light Needs a Vessel to Thicken","starting_phrase":"the thickening of the light comes the vessel, the vessel comes from the light thickening into, right?","start_time_sec":204.28,"matched_text":"thickening of the light comes the vessel, the vessel comes from the light thickening into,","score_norm":0.96,"confidence":"HIGH","token_span":[538,553],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Simple Matter Precedes Form in Creation","starting_phrase":"and this source for the vessel that comes before the light is called the simple חומר,","start_time_sec":309.78000000000003,"matched_text":"source for the vessel that comes before the light is called the simple חומר,","score_norm":0.944,"confidence":"HIGH","token_span":[870,884],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Desire to Form Needs Pre‑Existing Materials","starting_phrase":"The real thing of a cup is like that you want to be able to drink water.","start_time_sec":372.98,"matched_text":"real thing of a cup is like that you want to be able to drink water.","score_norm":0.908,"confidence":"HIGH","token_span":[1077,1093],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Two Types of Limitations: Essential vs Potential","starting_phrase":"there's two types of limitations. הא׳ כח המגביל בעצם, one is the essential power of limitation,","start_time_sec":554.68,"matched_text":"there's two types of limitations. הא׳ כח המגביל בעצם, one is the essential power of limitation,","score_norm":0.977,"confidence":"HIGH","token_span":[1656,1672],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":6},
+    {"title":"Potential Power vs Actual Physical Movement","starting_phrase":"the ability of the hand to movement, the build the power of movement that your hand gives you, is spiritual and it's essential,","start_time_sec":684.52,"matched_text":"ability of the hand to movement, the build the power of movement that your hand gives you, is spiritual and it's essential,","score_norm":0.937,"confidence":"HIGH","token_span":[2011,2033],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Potential Limits Are Actually Freedom","starting_phrase":"The fact that you have a hand doesn't really limit you. It lets you do whatever you can do with your hand.","start_time_sec":754.84,"matched_text":"fact that you have a hand doesn't really limit you. It lets you do whatever you can do with your hand.","score_norm":0.954,"confidence":"HIGH","token_span":[2238,2259],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5}
+  ]
+}

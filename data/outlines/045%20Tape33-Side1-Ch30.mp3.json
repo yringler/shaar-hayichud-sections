@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "045 Tape33-Side1-Ch30.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "14c642e9-4033-4869-b3cc-a548d07ae0e6",
+  "transcript": "transcripts/045%20Tape33-Side1-Ch30.mp3.json",
+  "fetchedAt": "2026-10-29T00:38:29.518Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Power of a Prayer for the Poor","starting_phrase":"He says, \"Well, there's always a תפילה לעני.","start_time_sec":12.78,"matched_text":"says, \"Well, there's always a תפילה לעני.\"","score_norm":0.989,"confidence":"HIGH","token_span":[16,23],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Three Levels of Tools (כלים) Explained","starting_phrase":"והנה יש ג' מדרגות בכלים, פנימי, אמצעי, וחיצוניות.","start_time_sec":135.12900060569365,"matched_text":"והנה יש ג' מדרגות בכלים, פנימי, אמצעי, וחיצוניות.","score_norm":1,"confidence":"HIGH","token_span":[344,352],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"From Thought to Speech to Action","starting_phrase":"The מחשבה in the mind, the דיבור in the heart","start_time_sec":457.88,"matched_text":"מחשבה in the mind, the דיבור in the heart,","score_norm":0.914,"confidence":"HIGH","token_span":[912,921],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Inner, Middle, Outer Aspects of the Heart","starting_phrase":"ובלב יש גם כן ג׳ מדרגות. ובחינת","start_time_sec":531.5,"matched_text":"ובלב יש גם כן ג׳ מדרגות.","score_norm":0.821,"confidence":"HIGH","token_span":[1093,1099],"matched_content":5,"content_coverage":0.833,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Physical Manifestations: Pulse, Blood Flow, and Movement","starting_phrase":"And the pulse, right. But the התפעלות of the חיות","start_time_sec":941.26,"matched_text":"pulse, right. But the התפעלות of the חיות","score_norm":0.878,"confidence":"HIGH","token_span":[1944,1952],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"The Liver as the Body’s Intermediary Organ","starting_phrase":"The main thing that the liver does is is","start_time_sec":1455.88,"matched_text":"main thing that the liver does","score_norm":0.963,"confidence":"HIGH","token_span":[2998,3004],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

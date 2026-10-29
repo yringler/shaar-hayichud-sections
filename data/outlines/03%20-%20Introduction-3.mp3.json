@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "03 - Introduction-3.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6713a187-e6d9-469b-be85-567002807228",
+  "transcript": "transcripts/03%20-%20Introduction-3.mp3.json",
+  "fetchedAt": "2026-10-28T23:48:45.143Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Meditation vs Study: Why Insight Needs Learning","starting_phrase":"Now the idea of meditation is that people think","start_time_sec":4.24,"matched_text":"idea of meditation is that people think","score_norm":0.946,"confidence":"HIGH","token_span":[2,9],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Study Is Essential Even for Godliness","starting_phrase":"And if this is true about everything else,","start_time_sec":71.4,"matched_text":"true about everything else,","score_norm":1,"confidence":"HIGH","token_span":[154,158],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"How תבוננות Elevates Mind and Action","starting_phrase":"Through התבוננות a person opens up their חכמה","start_time_sec":169.06,"matched_text":"Through התבוננות a person opens up their חכמה","score_norm":0.989,"confidence":"HIGH","token_span":[389,397],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Making a Decision to Be בינוני—Why It Fails","starting_phrase":"And that lasts for maybe two seconds,","start_time_sec":292.2,"matched_text":"lasts for maybe two seconds,","score_norm":0.984,"confidence":"HIGH","token_span":[727,732],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Learning Details to Connect with God's Unity","starting_phrase":"When a person learns all the details of the השתלשלות","start_time_sec":402.28,"matched_text":"When a person learns all the details of the השתלשלות,","score_norm":0.948,"confidence":"HIGH","token_span":[1050,1060],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Realizing God’s Presence Beyond Apparent Levels","starting_phrase":"And then even more than that, that's the first step.","start_time_sec":581.88,"matched_text":"even more than that, that's the first step.","score_norm":0.975,"confidence":"HIGH","token_span":[1536,1544],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"The Process of התבוננות Opens All Forces","starting_phrase":"Now he explains that that that this process of","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

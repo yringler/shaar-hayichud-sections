@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "051 Tape36-Side1 CH32.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "2faa4544-13f8-405e-8822-f860c23a2828",
+  "transcript": "transcripts/051%20Tape36-Side1%20CH32.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:22.745Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Letters as Shapes and Numbers","starting_phrase":"The letters, and you can say first there's a ו,","start_time_sec":4.44,"matched_text":"letters, and you can say first there's","score_norm":0.969,"confidence":"HIGH","token_span":[1,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Mimic Performers and Language Gaps","starting_phrase":"Or you can send a guy with a message that he has no idea what it means.","start_time_sec":113.56,"matched_text":"can send a guy with a message that he has no idea what it means.","score_norm":0.963,"confidence":"HIGH","token_span":[333,348],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Mחשבת שכל: Plain Meaning vs Depth","starting_phrase":"The מחשבת שכל is the actual meaning of not just the words,","start_time_sec":225.96,"matched_text":"מחשבת שכל is the actual meaning of not just the words,","score_norm":0.932,"confidence":"HIGH","token_span":[689,700],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"מחשבת שכל as the כלי of Thought","starting_phrase":"And the thing is, the מחשבת כך is a כלי.","start_time_sec":316.78478423547017,"matched_text":"thing is, the מחשבת שכל is a כלי.","score_norm":0.86,"confidence":"HIGH","token_span":[916,924],"matched_content":3,"content_coverage":0.75,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Dog vs Cow: Mis‑translation Examples","starting_phrase":"You know what, how you say dog in Chinese? How?","start_time_sec":402.14,"matched_text":"what, how you say dog in Chinese? How?","score_norm":0.976,"confidence":"HIGH","token_span":[1121,1129],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"First Level: מלכות תבונה Explained","starting_phrase":"And then there's the first level of מחשבת שכל, which is מלכות of תבונה,","start_time_sec":489.02,"matched_text":"there's the the first level of of מחשבת שכל, which is מלכות of תבונה,","score_norm":0.942,"confidence":"HIGH","token_span":[1335,1349],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"התבוננות: Analyzing to Find Inner Point","starting_phrase":"In other words, when you're thinking, the התבוננות, it means you don't understand.","start_time_sec":694.82,"matched_text":"other words, when you're thinking, the התבוננות, it means you don't understand.","score_norm":0.976,"confidence":"HIGH","token_span":[1817,1829],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"רדל\"א and the Unity of Thought Levels","starting_phrase":"And at that point the מחשבות really joined together and becomes one thing.","start_time_sec":1382.82,"matched_text":"point the מחשבות really joined together and becomes one thing.","score_norm":0.97,"confidence":"HIGH","token_span":[3432,3442],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Origin of the letters אנא אמלוך","starting_phrase":"The letters אנא אמלוך came from מלכות of תבונה.","start_time_sec":1569.7,"matched_text":"letters אנא אמלוך came from מלכות of תבונה.","score_norm":0.99,"confidence":"HIGH","token_span":[3853,3861],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6}
+  ]
+}

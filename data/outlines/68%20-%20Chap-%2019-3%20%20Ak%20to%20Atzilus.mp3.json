@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "68 - Chap- 19-3  Ak to Atzilus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8a4ce477-f8ce-4b64-bf08-d821ee65c01a",
+  "transcript": "transcripts/68%20-%20Chap-%2019-3%20%20Ak%20to%20Atzilus.mp3.json",
+  "fetchedAt": "2026-10-28T23:57:15.042Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"What is a superficial revelation?","starting_phrase":"ואין זה אמיתת ענין הגילוי שאינו רק כמו בחינת מראה וגוון לבד.","start_time_sec":1.1399999999999944,"matched_text":"ואין זה אמיתת ענין הגילוי שאינו רק כמו בחינת מראה וגוון לבד.","score_norm":0.994,"confidence":"HIGH","token_span":[0,12],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":10},
+    {"title":"Using signs to infer inner qualities","starting_phrase":"when you use one thing to represent another thing,","start_time_sec":80.34,"matched_text":"when you use one thing to represent another thing,","score_norm":0.979,"confidence":"HIGH","token_span":[261,270],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Why actions alone don't define character","starting_phrase":"He tied him down to a bench and cut him up.","start_time_sec":290.08,"matched_text":"tied him down to a bench and cut him up.","score_norm":0.97,"confidence":"HIGH","token_span":[873,883],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Context needed to interpret actions and words","starting_phrase":"You have to see you have to, like just like a word,","start_time_sec":366.66,"matched_text":"have to see you have to, like just like a word,","score_norm":0.857,"confidence":"HIGH","token_span":[1083,1094],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Teaching kindness through consistent parental example","starting_phrase":"One of the main things for that is like if if the child sees a double standard.","start_time_sec":490.2,"matched_text":"One of the main things for that is like if if the child sees a double standard.","score_norm":0.902,"confidence":"HIGH","token_span":[1456,1473],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

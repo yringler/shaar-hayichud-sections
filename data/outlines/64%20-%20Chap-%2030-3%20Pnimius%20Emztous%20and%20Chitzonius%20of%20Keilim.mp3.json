@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "64 - Chap- 30-3 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "74279d26-9058-4c31-bc11-76b26621bf60",
+  "transcript": "transcripts/64%20-%20Chap-%2030-3%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:12:25.337Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Light of Chesed and Its Expression","starting_phrase":"ועל דרך משל ט' ספירות שבאור מדת החסד, for example,","start_time_sec":2.84,"matched_text":"ועל דרך משל ט' ספירות שבאור מדת החסד, for example,","score_norm":0.993,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8},
+    {"title":"Example: Giving a Coat to the Poor","starting_phrase":"so first he thought to himself about, \"Oh, I want to help this person.","start_time_sec":150.72,"matched_text":"first he thought to himself about, \"Oh, I want to help this person.","score_norm":0.956,"confidence":"HIGH","token_span":[314,327],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Tools vs Garments: Understanding the Difference","starting_phrase":"However, the truth is that this משל we just gave you of the letters of thought, speech, and action, those are not really the idea of כלים,","start_time_sec":276.86,"matched_text":"However, the truth is that this משל we just gave you of the letters of thought, speech, and action, those are not really the idea of כלים,","score_norm":0.896,"confidence":"HIGH","token_span":[640,667],"matched_content":11,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Organs as Vessels for Chesed Light","starting_phrase":"that is the brain, the heart, and the liver. And those are the actual כלים.","start_time_sec":379.72,"matched_text":"brain, the heart, and the liver. And those are the actual כלים.","score_norm":0.888,"confidence":"HIGH","token_span":[896,908],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Three Levels of the Heart","starting_phrase":"ובלב יש ג׳ מדרגות. The heart has three levels: פנים, ואמצעים, וחיצונים.","start_time_sec":445.58,"matched_text":"ובלב יש ג׳ מדרגות. The heart has three levels: פנים, ואמצעים, וחיצונים.","score_norm":0.994,"confidence":"HIGH","token_span":[1081,1093],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":7},
+    {"title":"Nerves as the Intellectual Vessel (חב״ד)","starting_phrase":"So the nerves from that go from the brain to the heart connect to the right side of the heart and control how fast it beats.","start_time_sec":553.32,"matched_text":"nerves from that go from the brain to the heart connect to the right side of the heart and control how fast it beats.","score_norm":0.935,"confidence":"HIGH","token_span":[1344,1368],"matched_content":13,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Left and Right Heart Functions in Emotion","starting_phrase":"In the left side of the heart, that is where the oxygen is pumped from the left side of the heart to the whole body.","start_time_sec":704.42,"matched_text":"left side of the heart, that is where the oxygen is pumped from the left side of the heart to the whole body.","score_norm":0.927,"confidence":"HIGH","token_span":[1717,1740],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":2}
+  ]
+}

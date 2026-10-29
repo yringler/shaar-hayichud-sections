@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "52 - Chap- 28-6 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "ec73658f-9dca-4ebf-b0ea-b7ee90c82aca",
+  "transcript": "transcripts/52%20-%20Chap-%2028-6%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:10:38.779Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"End of פרק כח and introduction to תיקונין","starting_phrase":"So here at the end of פרק כח, דהיינו,","start_time_sec":4.6,"matched_text":"here at the end of פרק כח, דהיינו,","score_norm":0.961,"confidence":"HIGH","token_span":[1,9],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Limitations of the eye’s resolution and pixel analogy","starting_phrase":"The problem is that your eye, the lens of your eye doesn't focus that well.","start_time_sec":134.98,"matched_text":"problem is that your eye, the lens of your eye doesn't focus that well.","score_norm":0.956,"confidence":"HIGH","token_span":[353,367],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Vessels limiting light and mind as a vessel for emotion","starting_phrase":"Therefore, specifically when the light goes into the vessels that limit the light, it's able to be revealed down to the physical world.","start_time_sec":319.62,"matched_text":"Therefore, specifically when the light goes into the vessels that limit the light, it's able to be revealed down to the physical world.","score_norm":0.962,"confidence":"HIGH","token_span":[860,883],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":3},
+    {"title":"Belief needs Torah study to become actionable vessel","starting_phrase":"So you can believe in God, but you don't know what to do about it unless you learn the תורה,","start_time_sec":401.64,"matched_text":"can believe in God, but you don't know what to do about it unless you learn the תורה,","score_norm":0.942,"confidence":"HIGH","token_span":[1108,1126],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"God’s infinite attributes revealed through the vessel of אצילות","starting_phrase":"And then when it comes to the vessel of אצילות, it's like God expresses his infinite abilities.","start_time_sec":725.95,"matched_text":"when it comes to the vessel of אצילות, it's like God expresses his infinite abilities.","score_norm":0.963,"confidence":"HIGH","token_span":[2140,2155],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5}
+  ]
+}

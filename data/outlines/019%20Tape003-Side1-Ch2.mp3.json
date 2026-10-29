@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "019 Tape003-Side1-Ch2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "72e1c614-3d0b-46b2-9c49-eb405bbe003f",
+  "transcript": "transcripts/019%20Tape003-Side1-Ch2.mp3.json",
+  "fetchedAt": "2026-10-29T00:34:27.382Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Intro: Chapter and page reference","starting_phrase":"We're in פרק ב'. We're on the second page, right?","start_time_sec":0,"matched_text":"We're in פרק ב'. We're on the second page,","score_norm":0.949,"confidence":"HIGH","token_span":[0,9],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The term נבון for a בינה שבחכמה","starting_phrase":"What do they call a בינה שבחכמה? A נבון.","start_time_sec":131.1,"matched_text":"what do they call a בינה שבחכמה? A נבון.","score_norm":0.965,"confidence":"HIGH","token_span":[289,298],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"מדי בינה: מדות within בינה","starting_phrase":"אבל לכאורה אנו רואים שיש בבינה עצמה בחינת מדות,","start_time_sec":270.82542966874706,"matched_text":"לכאורה אנו רואים שיש בבינה עצמה בחינת מדות,","score_norm":1,"confidence":"HIGH","token_span":[610,618],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Decision making and דעת in הלכה","starting_phrase":"And like later on he'll explain that the real פסק הלכה comes from דעת.","start_time_sec":455.38,"matched_text":"later on he'll explain that the real פסק הלכה comes from דעת.","score_norm":0.978,"confidence":"HIGH","token_span":[1047,1059],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Application vs explanation of תבונה","starting_phrase":"And this is also in terms of application into doing something, not in just a דבר הלכה,","start_time_sec":755.772441190591,"matched_text":"also in terms of application into doing something, not in just a דבר הלכה,","score_norm":0.96,"confidence":"HIGH","token_span":[1871,1885],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Explanation of לאה and מחשבת שכל","starting_phrase":"In other words, that's what he's going to explain later is לאה.","start_time_sec":934.2081829092672,"matched_text":"other words, that's what he's going to explain later is לאה.","score_norm":0.984,"confidence":"HIGH","token_span":[2286,2297],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Three dimensions of תבונה: עומק, אורך, רוחב","starting_phrase":"כי ידוע להיות כי גם בתבונה יש ג' דברים: עומק, ואורך, ורוחב.","start_time_sec":1245.6681445031202,"matched_text":"ידוע להיות כי גם בתבונה יש ג' דברים: עומק, ואורך, ורוחב.","score_norm":0.986,"confidence":"HIGH","token_span":[2872,2883],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Metaphor: בינה as grandmother","starting_phrase":"In other words, the בינה is really the grandmother.","start_time_sec":1493.69,"matched_text":"other words, the בינה is really the grandmother.","score_norm":0.92,"confidence":"HIGH","token_span":[3395,3403],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"What the verse really says about תבונה","starting_phrase":"וכן ובתבונה תכונן, I don't know what the whole rest of the פסוק is, that it will be it'll be established, established, yeah, but what what what will be established?","start_time_sec":1719.6571483437342,"matched_text":"וכן ובתבונה תכונן, I don't know what the whole rest of the פסוק is, that it will be it'll be established, established, yeah, but what what what will be established?","score_norm":0.956,"confidence":"HIGH","token_span":[3827,3857],"matched_content":18,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"The functions of בינה: teaching and applying","starting_phrase":"Right. And I was telling you, so the power of בינה does various things.","start_time_sec":1820.8627148343735,"matched_text":"telling you, so the power of בינה does various things.","score_norm":0.953,"confidence":"HIGH","token_span":[4099,4109],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4}
+  ]
+}

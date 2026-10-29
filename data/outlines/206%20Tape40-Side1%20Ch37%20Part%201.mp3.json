@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "206 Tape40-Side1 Ch37 Part 1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "18b2312e-7d09-45b2-b90d-c8a7ecaa4b47",
+  "transcript": "transcripts/206%20Tape40-Side1%20Ch37%20Part%201.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:10.934Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Leah and Rachel: Thought vs. Speech Levels","starting_phrase":"See, from the start. Okay. ומעט יש להבין בענין יחוד דישראל ויעקב ולאה ורחל,","start_time_sec":0,"matched_text":"See, from the start. Okay. ומעט יש להבין בענין יחוד דישראל ויעקב ולאה ורחל,","score_norm":0.989,"confidence":"HIGH","token_span":[0,14],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":9},
+    {"title":"Fire vs. Water Voices: Hoarse and Clear Tones","starting_phrase":"So, a voice is a voice that comes from fire","start_time_sec":317.8414957594448,"matched_text":"voice is a voice that comes from fire,","score_norm":0.951,"confidence":"HIGH","token_span":[609,617],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Mixed Emotional Voice: קול ערב לנפש Explained","starting_phrase":"קול הממוצע הממוזג מחסד ומרירות ועצב, זה","start_time_sec":380.36,"matched_text":"קול הממוצע הממוזג מחסד ומרירות ועצב,","score_norm":1,"confidence":"HIGH","token_span":[751,757],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Great Singers: Feeling Over Technique","starting_phrase":"two examples of this is like שלמה קרליבך","start_time_sec":504.72,"matched_text":"two examples of this is like שלמה קרליבך","score_norm":0.938,"confidence":"HIGH","token_span":[1044,1052],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Heart Rhythm and Speech: Kvetching and Expanding","starting_phrase":"the whole thing of the beating of the heart that keeps you alive","start_time_sec":726.16,"matched_text":"whole thing of the beating of the heart that keeps you alive","score_norm":0.932,"confidence":"HIGH","token_span":[1515,1527],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Brain Beats, Sleep Stages, and Musical Rhythm","starting_phrase":"like when we sleep, like light sleep is called theta","start_time_sec":924.06,"matched_text":"when we sleep, like light sleep is called theta,","score_norm":0.966,"confidence":"HIGH","token_span":[1935,1944],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Physical Voice Mechanism: Lungs, Windpipe, Reed","starting_phrase":"the wind goes through the lungs is like a bellows","start_time_sec":1246.4707478797225,"matched_text":"wind goes through the the lungs is like a bellows","score_norm":0.929,"confidence":"HIGH","token_span":[2648,2658],"matched_content":5,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Source of Speech Power: From the Lungs","starting_phrase":"the power of speech comes from the lungs","start_time_sec":1589.51677717811,"matched_text":"power of speech really comes from","score_norm":0.773,"confidence":"HIGH","token_span":[3525,3531],"matched_content":4,"content_coverage":0.8,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Why Some People Are Born That Way","starting_phrase":"free, so how come some people you see like","start_time_sec":1746.746569005414,"matched_text":"free, so how come some people you see","score_norm":0.979,"confidence":"HIGH","token_span":[3859,3867],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4}
+  ]
+}

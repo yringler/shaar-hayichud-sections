@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "216 Tape47-Side1Ch42&43-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f396e92b-e06a-4381-9ace-015117874fe7",
+  "transcript": "transcripts/216%20Tape47-Side1Ch42%2643-.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:49.413Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Thought as Combination Before Conceptual Thought","starting_phrase":"ואם תשיגנו שבחינת הצירופים עצמם במחשבה על ידי בחינת צמצום","start_time_sec":0,"matched_text":"ואם תשיגנו שבחינת הצירופים עצמם במחשבה על ידי בחינת צמצום","score_norm":0.993,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Why Thought Comes Before Speech","starting_phrase":"למה המחשבה קדמה לדיבור? Why does thought precede speech?","start_time_sec":62.97437441860457,"matched_text":"למה המחשבה קדמה לדיבור? Why does thought precede speech?","score_norm":1,"confidence":"HIGH","token_span":[152,161],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Teaching Others Sharpens Your Own Understanding","starting_phrase":"And this is the reason why the רבי says that by teaching somebody else, you help yourself a thousand times more.","start_time_sec":299.02401627906966,"matched_text":"reason why the רבי says that by teaching somebody else, you help yourself a thousand times more.","score_norm":0.974,"confidence":"HIGH","token_span":[718,735],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Symbols Created Before the Events They Represent","starting_phrase":"And also, they have the whole creation backwards that they think that פסח happened, so therefore we made up symbols for it.","start_time_sec":386.187223255809,"matched_text":"also, they have the whole creation backwards that they think that פסח happened, so therefore we made up symbols","score_norm":0.96,"confidence":"HIGH","token_span":[1005,1024],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Electrons Not Interchangeable in Precise Locations","starting_phrase":"חיימי and שלוימי, you know. Right. And and the basic thing like also in science,","start_time_sec":1551.4286627906918,"matched_text":"חיימי and שלוימי, you know. Right. And and the basic thing like also in science,","score_norm":0.899,"confidence":"HIGH","token_span":[3824,3839],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"String Theory Suggests a Universal Numerical Formula","starting_phrase":"You know, like that's one of the things they're coming up with string theory.","start_time_sec":1629.9138860465002,"matched_text":"that's one of the things they're coming up with string theory.","score_norm":0.984,"confidence":"HIGH","token_span":[4046,4057],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Creation Modeled from the Letter Yud and Aleph","starting_phrase":"That's what it says, that the whole world is the whole עולם הבא is is made from the יו״ד,","start_time_sec":1691.8057325581383,"matched_text":"That's what it says, that the whole world is the whole עולם הבא is is made from the יו״ד,","score_norm":0.948,"confidence":"HIGH","token_span":[4175,4194],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Formula Breaks Into Cities, Transformations, Exchanges, Fillings","starting_phrase":"It breaks down into תמורות and and and חילופים and מילויים, and the מילויים have מילויים.","start_time_sec":1786.6939279069752,"matched_text":"breaks down into תמורות and and and חילופים and מילויים, and the מילויים have מילויים.","score_norm":0.957,"confidence":"HIGH","token_span":[4263,4278],"matched_content":9,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4}
+  ]
+}

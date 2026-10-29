@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "99 - Zohar and Moshiach.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f292daea-24d6-4d07-a9bb-08f918208048",
+  "transcript": "transcripts/99%20-%20Zohar%20and%20Moshiach.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:15.011Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Zohar’s role in bringing Mashiach","starting_phrase":"Yeah, it says in the זוהר. Yeah, that that with this book we're going to bring משיח.","start_time_sec":2.0800000000000005,"matched_text":"Yeah, it says in the זוהר. Yeah, that that with this book we're going to bring משיח.","score_norm":0.938,"confidence":"HIGH","token_span":[0,17],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3}
+  ]
+}

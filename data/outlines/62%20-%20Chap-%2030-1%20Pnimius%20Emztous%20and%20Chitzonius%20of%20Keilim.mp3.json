@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "62 - Chap- 30-1 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "e1d7ce80-a6a6-448d-9d0d-20ebbf58d056",
+  "transcript": "transcripts/62%20-%20Chap-%2030-1%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:12:00.228Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Lights and Vessels: Basic Interaction","starting_phrase":"Now that we explained in the previous, like the last three פרקים, we explained about אורות and כלים,","start_time_sec":17.42,"matched_text":"explained in the previous, like the last three פרקים, we explained about אורות and כלים,","score_norm":0.953,"confidence":"HIGH","token_span":[17,32],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Thickening of Light Forms the Vessel","starting_phrase":"And now we can understand the מאמר of the תיקוני זוהר that says,","start_time_sec":118.06,"matched_text":"can understand the מאמר of the תיקוני זוהר that says,","score_norm":0.954,"confidence":"HIGH","token_span":[328,338],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Source of Vessels Precedes Light","starting_phrase":"אבל לפי הנ\"ל, now, but based on what we explained in the previous פרק,","start_time_sec":188.03999999999996,"matched_text":"לפי הנ\"ל, now, but based on what we explained in the previous פרק,","score_norm":0.903,"confidence":"HIGH","token_span":[503,516],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Two Methods of Da'avning (Prayer Intent)","starting_phrase":"So far we explained two ways to דאווען. We said in פרק כ\"ח we said that a person should be מכוון to the אורות,","start_time_sec":359.94,"matched_text":"far we explained two ways to דאווען. We said in פרק כ\"ח we said that a person should be מכוון to the אורות,","score_norm":0.924,"confidence":"HIGH","token_span":[982,1005],"matched_content":12,"content_coverage":0.923,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Praying Like a Child: Pure Intent","starting_phrase":"You should דאווען like a kid, like על דעת זה התינוק.","start_time_sec":506.22,"matched_text":"should דאווען like a kid, like על דעת זה התינוק.","score_norm":0.925,"confidence":"HIGH","token_span":[1405,1415],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Masters' Guidance on Focusing Intent","starting_phrase":"And this is the thing that the אריז״ל said you should be מכוון to the אורות,","start_time_sec":619.66,"matched_text":"thing that the אריז״ל said you should be מכוון to the אורות,","score_norm":0.919,"confidence":"HIGH","token_span":[1759,1771],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

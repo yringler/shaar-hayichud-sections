@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "60 - Chap- 29-4 Gvul biKoach and Gvul biPoel.mp3",
+  "chapter": "chapter_29",
+  "transcript": "transcripts/60%20-%20Chap-%2029-4%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "transcriptionId": "040f4150-8980-4c90-89a6-28c948100c02",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2697,
+    "hebrewWords": 245,
+    "matchedWords": 103,
+    "chapterLines": 51,
+    "alignedLines": 8,
+    "firstLineIndex": 32,
+    "lastLineIndex": 39,
+    "meanConfidence": 0.904
+  },
+  "segments": [
+    {"startSeconds":0,"endSeconds":15.32,"chapter":"chapter_29","lineId":"o44h436e","confidence":1,"matchedWords":13,"lineWords":13,"firstWord":0,"lastWord":27},
+    {"startSeconds":16.147,"endSeconds":24.3,"chapter":"chapter_29","lineId":"wmhshpe5","confidence":1,"matchedWords":17,"lineWords":17,"firstWord":32,"lastWord":48},
+    {"startSeconds":304.3,"endSeconds":447,"chapter":"chapter_29","lineId":"pnrob5l6","confidence":1,"matchedWords":21,"lineWords":26,"firstWord":933,"lastWord":1401},
+    {"startSeconds":512.307,"endSeconds":513.635,"chapter":"chapter_29","lineId":"mjykm3z7","confidence":0.8,"matchedWords":8,"lineWords":10,"firstWord":1643,"lastWord":1650},
+    {"startSeconds":585.24,"endSeconds":594.807,"chapter":"chapter_29","lineId":"jpo4tvzy","confidence":0.75,"matchedWords":7,"lineWords":9,"firstWord":1850,"lastWord":1863},
+    {"startSeconds":634.7,"endSeconds":708.06,"chapter":"chapter_29","lineId":"zkycphr2","confidence":0.853,"matchedWords":13,"lineWords":15,"firstWord":1999,"lastWord":2261},
+    {"startSeconds":710.474,"endSeconds":721.06,"chapter":"chapter_29","lineId":"vfoo3jmk","confidence":0.982,"matchedWords":11,"lineWords":11,"firstWord":2274,"lastWord":2295},
+    {"startSeconds":759.2,"endSeconds":765.88,"chapter":"chapter_29","lineId":"kdmd3vbm","confidence":0.846,"matchedWords":11,"lineWords":13,"firstWord":2421,"lastWord":2438}
+  ]
+}

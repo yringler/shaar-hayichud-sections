@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "011 Tape020-Side2-Ch14.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "480970ab-9099-46e2-9bec-08c31df10733",
+  "transcript": "transcripts/011%20Tape020-Side2-Ch14.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:15.721Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the קו קצר and סתימא דכל סתימין","starting_phrase":"Okay, go ahead. Okay. Hold on for a minute.","start_time_sec":0,"matched_text":"go ahead. Okay. Hold on for a minute.","score_norm":0.935,"confidence":"HIGH","token_span":[1,9],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Measuring Tape Analogy for קו המידה","starting_phrase":"So, for instance, if I tell you, you know, \"Let's measure your house.\"","start_time_sec":527.4083554216869,"matched_text":"instance, if I tell you, you know, \"Let's measure your house.\"","score_norm":0.942,"confidence":"HIGH","token_span":[1057,1068],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Deriving Area from a Line","starting_phrase":"You say, \"Wait a minute, how can you get a שטח out of a line?\"","start_time_sec":767.06,"matched_text":"say, \"Wait a minute, how can you get a שטח out of a line?","score_norm":0.959,"confidence":"HIGH","token_span":[1705,1719],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Physical Geometry Emerging from the קו","starting_phrase":"And by the way, the reason that physical geometry is like that is because it comes out of this.","start_time_sec":1018.22,"matched_text":"way, the reason that physical geometry is like that is because it comes out","score_norm":0.931,"confidence":"HIGH","token_span":[2360,2374],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Spiritual Measure: Sin, Teshuva, and Merit","starting_phrase":"ככה היא המדה ברוחניות, כל מה שהחטא הוא יותר קבוע","start_time_sec":1300.75021686747,"matched_text":"ככה היא המדה ברוחניות, כל מה שהחטא הוא יותר קבוע","score_norm":0.993,"confidence":"HIGH","token_span":[3008,3018],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Teacher Analogy for the קו measurement","starting_phrase":"The משל is like this: that in a teacher,","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

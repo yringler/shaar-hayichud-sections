@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "04 - Introduction-4.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "faba8a70-54a1-4da5-9d9c-06b78fa9d31d",
+  "transcript": "transcripts/04%20-%20Introduction-4.mp3.json",
+  "fetchedAt": "2026-10-28T23:48:54.652Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Main points of the first nine chapters","starting_phrase":"So that's the main the the main points that are explained in the first nine chapters.","start_time_sec":2.6800000000000015,"matched_text":"that's the main the the main points that are explained in the first nine chapters.","score_norm":0.935,"confidence":"HIGH","token_span":[1,16],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Halacha basics don’t make one a rabbi","starting_phrase":"And like in הלכה, just cause a person knows a little bit about the basics of כשרות doesn't make them a רב, or the basics of, you know, הלכה.","start_time_sec":77.38,"matched_text":"הלכה, just cause a person knows a little bit about the basics of כשרות doesn't make them a רב, or the basics of, you know, הלכה.","score_norm":0.95,"confidence":"HIGH","token_span":[207,233],"matched_content":15,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Learning details with purpose and application","starting_phrase":"But again, when learning all the details, a person has to have the intention of learning it to see to apply it, and to to to fit it all together, and not just like a bunch of separate theoretical ענינים.","start_time_sec":156.18,"matched_text":"again, when learning all the details, a person has to have the intention of learning it to see to apply it, and to to to fit it all together, and not just like a bunch of separate theoretical ענינים.","score_norm":0.932,"confidence":"HIGH","token_span":[431,470],"matched_content":20,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4}
+  ]
+}

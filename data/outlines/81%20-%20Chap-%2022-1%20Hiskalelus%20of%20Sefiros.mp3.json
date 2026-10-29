@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "81 - Chap- 22-1 Hiskalelus of Sefiros.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7e334b52-93b1-4b85-97c2-8ecc180d27f1",
+  "transcript": "transcripts/81%20-%20Chap-%2022-1%20Hiskalelus%20of%20Sefiros.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:38.127Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Review of Prior Concepts and Goal","starting_phrase":"פרק כ\"ב. Chapter 22. ומעתה now that we've explained everything from the עצמות אין סוף, we explained the רשימו, the קו, רושם קודם, we explained א\"ק, how א\"ק lights to אצילות in a way of גילוי ההעלם, we explained the ענין of עקודים, נקודים, ברודים, נקודה ספירה פרצוף, and the the way that that from the חיצוניות של כתר, it splits up into three lines.","start_time_sec":0,"matched_text":"פרק כ\"ב. Chapter 22. ומעתה now that we've explained everything from the עצמות אין סוף, we explained the רשימו, the קו, רושם קודם, we explained א\"ק, how א\"ק lights to אצילות in a way of גילוי ההעלם, we explained the ענין of עקודים, נקודים, ברודים, נקודה ספירה פרצוף, and the the way that that from the חיצוניות of כתר, it splits up into three lines.","score_norm":0.952,"confidence":"HIGH","token_span":[0,65],"matched_content":40,"content_coverage":0.909,"longest_content_run_soft":31,"longest_content_run_strict":6},
+    {"title":"Dividing Each Sephira into Tens","starting_phrase":"First we have to understand how each ספירה divides into ten, and each of those ten divides into ten further.","start_time_sec":83.1,"matched_text":"First we have to understand how each ספירה divides into ten, and each of those ten divides into ten further.","score_norm":0.975,"confidence":"HIGH","token_span":[161,181],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":7},
+    {"title":"Why We Stop at a Hundred and Two Types","starting_phrase":"And the reason why we usually go to a hundred is like what we're going to explain this chapter, that there's two main types of התכללות.","start_time_sec":153.69,"matched_text":"reason why we usually go to a hundred is like what we're going to explain this chapter, that there's two main types of התכללות.","score_norm":0.955,"confidence":"HIGH","token_span":[338,362],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":4},
+    {"title":"Meaning of Chesed and Gevurah in Chokhmah","starting_phrase":"What does חסד and גבורה of חכמה mean? That means להטות כלפי זכות או כלפי חוב.","start_time_sec":244.21,"matched_text":"What does חסד and גבורה of חכמה mean? That means להטות כלפי זכות או כלפי חוב.","score_norm":0.966,"confidence":"HIGH","token_span":[565,581],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Essence vs. Division and the Concept of Expansion","starting_phrase":"So the answer is, זהו כאשר הוא בעצם בלתי התחלקות.","start_time_sec":522.17,"matched_text":"answer is, זהו כאשר הוא בעצם בלתי התחלקות.","score_norm":0.991,"confidence":"HIGH","token_span":[1312,1320],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6}
+  ]
+}

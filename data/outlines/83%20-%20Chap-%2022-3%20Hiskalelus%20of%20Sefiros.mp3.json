@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "83 - Chap- 22-3 Hiskalelus of Sefiros.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "526ae5b5-1ced-462d-88a8-34127ddba4c4",
+  "transcript": "transcripts/83%20-%20Chap-%2022-3%20Hiskalelus%20of%20Sefiros.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:51.395Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Hidden opposites in sweetness and bitterness","starting_phrase":"ואם לאו, and if it wasn't so, if it didn't have the opposite in it, לא היה בטל בו,","start_time_sec":1.9799999999999978,"matched_text":"ואם לאו, and if it wasn't so, if it didn't have the opposite in it, לא היה בטל בו,","score_norm":0.939,"confidence":"HIGH","token_span":[0,19],"matched_content":10,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Fire within water and water within fire","starting_phrase":"וכן, similarly, יש מטבע האש במים ומים באש.","start_time_sec":115.5,"matched_text":"וכן, similarly, יש מטבע האש במים ומים באש.","score_norm":1,"confidence":"HIGH","token_span":[274,282],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Physical examples of fire-water interaction","starting_phrase":"First of all, a flame is kind of like liquidy, it it it sticks to itself, and it has a certain and it does have a certain like moisture to it.","start_time_sec":193.66,"matched_text":"First of all, a flame is kind of like liquidy, it it it sticks to itself, and it has a certain and it does have a certain like moisture","score_norm":0.898,"confidence":"HIGH","token_span":[472,501],"matched_content":12,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Scriptural integration of fire and water","starting_phrase":"כמו שכתוב, like it says in ספר יצירה, הוציא מים מאש ואש ממים, וכולו.","start_time_sec":304.46,"matched_text":"כמו שכתוב, like it says in ספר יצירה, הוציא מים מאש ואש ממים, וכולו.","score_norm":0.983,"confidence":"HIGH","token_span":[762,776],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Nullifying דין with חסד and vice versa","starting_phrase":"על כן יבוטל הדין בחסד או להיפך החסד בדין.","start_time_sec":494.59341130604287,"matched_text":"כן יבוטל הדין בחסד או להיפך החסד בדין.","score_norm":0.991,"confidence":"HIGH","token_span":[1333,1341],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Types of התכללות and transformation in חכמה","starting_phrase":"אם לאו, and if it was not so, that there is the חסד in the דין, and the דין in the חסד, לא היו מתכלל דבר בהיפוכו לעולם.","start_time_sec":557.12,"matched_text":"לאו, and if it was not so, that there is the חסד in the דין, and the דין in the חסד, לא היו מתכלל דבר בהיפוכו לעולם.","score_norm":0.92,"confidence":"HIGH","token_span":[1518,1545],"matched_content":13,"content_coverage":0.929,"longest_content_run_soft":12,"longest_content_run_strict":7}
+  ]
+}

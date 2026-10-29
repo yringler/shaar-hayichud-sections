@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "047 Tape34-Side1-CH31&32.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "740f7ccd-0269-4d2f-ba59-4236de1828c1",
+  "transcript": "transcripts/047%20Tape34-Side1-CH31%2632.mp3.json",
+  "fetchedAt": "2026-10-29T00:38:46.182Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Internal vs External Intentions in Tools","starting_phrase":"It's דווקא in the פנימיות, and the כוונות of the מעשה of the thing, and in the כוונות there can be two different כוונות going together.","start_time_sec":0,"matched_text":"It's דווקא in the פנימיות, and the כוונות of the מעשה of the thing, and in the כוונות there can be two different כוונות going together.","score_norm":0.937,"confidence":"HIGH","token_span":[0,26],"matched_content":14,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"A Single Angel Cannot Perform Opposite Missions","starting_phrase":"In other words, a one מלאך can't do two שליחות'es.","start_time_sec":63.35419550391507,"matched_text":"other words, a one מלאך can't do two שליחות'es.","score_norm":0.991,"confidence":"HIGH","token_span":[142,151],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Division of Labor as the Basis of תיקון","starting_phrase":"The whole thing of a תיקון, basically, is what what it's called division of labor.","start_time_sec":514.0226925991475,"matched_text":"whole thing of תיקון, basically, is what what it's called division of labor.","score_norm":0.969,"confidence":"HIGH","token_span":[1145,1158],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Army Analogy Demonstrating Division of Labor","starting_phrase":"And that's why, like an army, the whole thing of an army, that the army is a whole thing of a התכללות.","start_time_sec":602.0895175549346,"matched_text":"that's why, like an army, the whole thing of an army, that the army is a whole thing of a התכללות,","score_norm":0.91,"confidence":"HIGH","token_span":[1341,1362],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"Indians vs White Army: Unity vs Division","starting_phrase":"And the Indians, each one of them wanted to have all the glory and they'd go whooping into battle.","start_time_sec":945.8197272037974,"matched_text":"Indians, each one of them wanted to have all the glory and they'd go whooping into battle.","score_norm":0.979,"confidence":"HIGH","token_span":[2106,2123],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Internal חכמה and בינה Explained","starting_phrase":"In other words, the פנימיות הבינה is really also up there.","start_time_sec":1326.3942207628108,"matched_text":"other words, the פנימיות הבינה is really also up there.","score_norm":0.969,"confidence":"HIGH","token_span":[2953,2963],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Brain Structure and the Eight Chambers Concept","starting_phrase":"Each one of these brains has eight rooms in it, שזה ל\"ב.","start_time_sec":1671.0230714827383,"matched_text":"Each one of these brains has eight rooms","score_norm":0.976,"confidence":"HIGH","token_span":[3720,3728],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"The Heart of the Sukkah and Its Eight Chambers","starting_phrase":"And the heart is the floor of the סוכה, which","start_time_sec":1742.91435716095,"matched_text":"heart is the floor of the סוכה, which","score_norm":0.936,"confidence":"HIGH","token_span":[3880,3888],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

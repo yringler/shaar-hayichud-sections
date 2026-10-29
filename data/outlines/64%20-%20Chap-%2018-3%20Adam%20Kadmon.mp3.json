@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "64 - Chap- 18-3 Adam Kadmon.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "aa6d5744-c86a-4543-bc8b-9d5323fab9a5",
+  "transcript": "transcripts/64%20-%20Chap-%2018-3%20Adam%20Kadmon.mp3.json",
+  "fetchedAt": "2026-10-28T23:56:40.623Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Soul entering the body and early self‑image formation","starting_phrase":"Yeah, I mean there's a process of this that happens","start_time_sec":3.380000000000002,"matched_text":"Yeah, I mean there's a process of this that happens","score_norm":0.896,"confidence":"HIGH","token_span":[0,10],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Source of the break: limited perspective of each soul","starting_phrase":"Now, the the problem with that happens there, though, which is like the source of the שבירה,","start_time_sec":78.4,"matched_text":"problem with that happens there, though, which is like the source of the שבירה,","score_norm":0.947,"confidence":"HIGH","token_span":[208,222],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Division stemming from the soul’s origin in the divine realm","starting_phrase":"And that's why how even מצד הנפש האלוקית, the source of this פירוד starts already there","start_time_sec":300.42,"matched_text":"that's why how even מצד הנפש האלוקית, the source of this פירוד starts already there,","score_norm":0.982,"confidence":"HIGH","token_span":[766,781],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":7},
+    {"title":"Challenges of adolescence: forming identity and fitting into the picture","starting_phrase":"So, I mean, well this is problem both מצד קליפה and קדושה, whatever, when a person doesn't","start_time_sec":422.42,"matched_text":"well this is problem both מצד קליפה and קדושה, whatever, when a person doesn't,","score_norm":0.971,"confidence":"HIGH","token_span":[1095,1109],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Pitfalls of copying external symbols without inner understanding","starting_phrase":"Cuz it's easy to like copy like dress the same way as somebody, you know","start_time_sec":524,"matched_text":"Cuz it's easy to like copy like dress the same way as somebody,","score_norm":0.955,"confidence":"HIGH","token_span":[1382,1395],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"How bribery distorts personal intention and biases judgment","starting_phrase":"Like כמו השוחד שיעשה רצון לרצון ושכלו לזכות תמיד, that if a person gets bribed","start_time_sec":650.34,"matched_text":"כמו השוחד שיעשה רצון לרצון ושכלו לזכות תמיד, that if a person gets bribed,","score_norm":0.981,"confidence":"HIGH","token_span":[1724,1738],"matched_content":11,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8}
+  ]
+}

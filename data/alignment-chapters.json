@@ -1,0 +1,29 @@
+{
+  "$comment": "Chapters a class reads, for classes whose catalog title or heading does not say (yarn align reads this; see data/README.md, 'Classes that read two chapters'). Lecture id -> chapter keys in reading order (aligned in one pass against their concatenation, which finds the switch), or -> ranges [{chapter, fromSeconds, ...notes}] starting at 0 (each stretch aligned to its own chapter).",
+  "lectures": {
+    "008 Tape019-Side1-Ch12.mp3": [
+      "chapter_12",
+      "chapter_13"
+    ],
+    "030 Tape025-Side2-Ch20.mp3": [
+      "chapter_19",
+      "chapter_20"
+    ],
+    "036 Tape028-Side2-Ch24.mp3": [
+      "chapter_23",
+      "chapter_24"
+    ],
+    "218 Tape48-Side1 cH43&44-.mp3": [
+      {
+        "chapter": "chapter_43",
+        "fromSeconds": 0,
+        "note": "opens with a recap of chapter 43 (line 27, ד' רבתי); verified by reading the transcript"
+      },
+      {
+        "chapter": "chapter_44",
+        "fromSeconds": 272.7,
+        "note": "chapter 44 reading starts at ~277 s (transcript word 719, 'אך היוצא גם כן בענין'); boundary just before word 711, in retimed time (data/retimed/; it was 169 s in Sofer's times, inside a 353-word pile); the automatic run matched the recap at 1:32 as chapter 44"
+      }
+    ]
+  }
+}

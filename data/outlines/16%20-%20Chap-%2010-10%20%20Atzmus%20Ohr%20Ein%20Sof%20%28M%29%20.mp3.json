@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "16 - Chap- 10-10  Atzmus Ohr Ein Sof (M) .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "af8c6391-b1a8-466c-80aa-128723c7984a",
+  "transcript": "transcripts/16%20-%20Chap-%2010-10%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29%20.mp3.json",
+  "fetchedAt": "2026-10-28T23:49:56.986Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Soul's Potential to See and Hear","starting_phrase":"So when as long as you're talking","start_time_sec":10.26,"matched_text":"when as long as you're talking","score_norm":0.962,"confidence":"HIGH","token_span":[18,24],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Sun Analogy for Soul's Potential","starting_phrase":"like the light and the ray that","start_time_sec":267.65,"matched_text":"light and the ray","score_norm":0.925,"confidence":"HIGH","token_span":[837,841],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Understanding Chassidic Analogies","starting_phrase":"Whenever analogies are used in חסידות, they're","start_time_sec":512.39,"matched_text":"Whenever analogies are used in חסידות, they're","score_norm":0.972,"confidence":"HIGH","token_span":[1618,1625],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Transition to Next Chapter","starting_phrase":"When we get to the next chapter, we're","start_time_sec":696.55,"matched_text":"when we get to the next chapter, we're","score_norm":0.959,"confidence":"HIGH","token_span":[2211,2219],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"First Step: Essential and Yuli Powers","starting_phrase":"הא׳, the first step, יו״ד כחות עצמיים","start_time_sec":760.6700000000001,"matched_text":"הא׳, the first step, יו״ד כחות עצמיים","score_norm":0.99,"confidence":"HIGH","token_span":[2379,2386],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "046 Tape33-Side2-CH31.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7a54259c-f765-46ad-a29c-781fe3608455",
+  "transcript": "transcripts/046%20Tape33-Side2-CH31.mp3.json",
+  "fetchedAt": "2026-10-29T00:38:37.380Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Tikkun Originates from the Tools (Kelim)","starting_phrase":"Okay, והנה יש יש יותר מעלה מבחינת הכלים","start_time_sec":5.12,"matched_text":"והנה יש יש יותר מעלה מבחינת הכלים","score_norm":1,"confidence":"HIGH","token_span":[1,8],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Tikkun Through the Body, Not Just the Soul","starting_phrase":"The main תיקון in a way of an אדם is not so much","start_time_sec":156.1,"matched_text":"main תיקון in a way of an אדם is not so much","score_norm":0.933,"confidence":"HIGH","token_span":[371,383],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Mind Light Requires External Tools to Strengthen","starting_phrase":"In other words, where the light of the mind is starting","start_time_sec":253.08,"matched_text":"other words, where the light of the mind is starting","score_norm":0.954,"confidence":"HIGH","token_span":[525,535],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Opposite Measures: Chesed vs Gevurah Explained","starting_phrase":"like חכמה and בינה they have opposite תנועות","start_time_sec":344.7,"matched_text":"חכמה and בינה they have opposite תנועות,","score_norm":0.974,"confidence":"HIGH","token_span":[704,711],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Each Day’s Unique Light and Its Tools","starting_phrase":"Every day has its own special work. ועם","start_time_sec":531.12,"matched_text":"Every day has its own special work. ועם","score_norm":1,"confidence":"HIGH","token_span":[1103,1111],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Death Penalty as a Complex Tikkun Process","starting_phrase":"Now, when there's a death penalty, a פסק דין of a death penalty","start_time_sec":694.08,"matched_text":"when there's a death penalty, a פסק דין of a death penalty,","score_norm":0.964,"confidence":"HIGH","token_span":[1420,1432],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Inner Intent (Shem HaMah) Overrides Apparent Light","starting_phrase":"And that's why he's able to do it. Right. It's","start_time_sec":1285.68,"matched_text":"that's why he's able to do it. Right. It's","score_norm":0.961,"confidence":"HIGH","token_span":[3065,3074],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Internal Light vs External Influence on the Smile","starting_phrase":"really coming from the דוקא from the lights, and the ביטול is דוקא","start_time_sec":1666.34,"matched_text":"coming from the דוקא from the lights, and the ביטול is דוקא","score_norm":0.95,"confidence":"HIGH","token_span":[3927,3939],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

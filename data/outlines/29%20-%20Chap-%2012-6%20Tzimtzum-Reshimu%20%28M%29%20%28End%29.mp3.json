@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "29 - Chap- 12-6 Tzimtzum-Reshimu (M) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d9ccb7af-e65f-41af-aff7-ce0b093dd960",
+  "transcript": "transcripts/29%20-%20Chap-%2012-6%20Tzimtzum-Reshimu%20%28M%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:29.177Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing רשימו after צמצום","starting_phrase":"explained the צמצום. Now we're going to explain the רשימו that's left over.","start_time_sec":0.62,"matched_text":"explained the צמצום. Now we're going to explain the רשימו that's left over.","score_norm":0.968,"confidence":"HIGH","token_span":[0,13],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Blueprint analogy for רשימו","starting_phrase":"כמו הרושם שעושה האומן, for example, a blueprint, right?","start_time_sec":138.66,"matched_text":"כמו הרושם שעושה האומן, for example, a blueprint,","score_norm":0.978,"confidence":"HIGH","token_span":[419,427],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Mnemonic and string‑finger analogy","starting_phrase":"Or like somebody that makes like a sign to help him remember, like ties a string around his finger.","start_time_sec":300.5,"matched_text":"somebody that makes like a sign to help him remember, like ties a string around his finger.","score_norm":0.963,"confidence":"HIGH","token_span":[952,969],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Stone‑throwing illustration of hidden force","starting_phrase":"והוא כמו הזורק אבן, this is like somebody that throws a stone.","start_time_sec":402.34584402079724,"matched_text":"והוא כמו הזורק אבן, this is like somebody that throws a stone.","score_norm":0.952,"confidence":"HIGH","token_span":[1301,1313],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Hand‑motion hint to deep intellect","starting_phrase":"והוא כמו הרומז בידו לאיזה שכל עמוק ביותר, this is like a person that hints with a hand motion to a very deep idea, right?","start_time_sec":551.54,"matched_text":"והוא כמו הרומז בידו לאיזה שכל עמוק ביותר, this is like a person that hints with a hand motion to a very deep idea,","score_norm":0.96,"confidence":"HIGH","token_span":[1837,1861],"matched_content":15,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Writing fingers as concealed intellect","starting_phrase":"When you're writing something, so like when you can be writing the the deepest ideas, but what it comes out in your hand you're just moving your fingers like this.","start_time_sec":643.2800000000001,"matched_text":"When you're writing something, so like when you can be writing the the deepest ideas, but what it comes out in your hand you're just moving your fingers","score_norm":0.96,"confidence":"HIGH","token_span":[2080,2108],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":4},
+    {"title":"Summary of multiple משלים and their purpose","starting_phrase":"Now really, he gives five משלים and they're not or he gives six משלים.","start_time_sec":763.48,"matched_text":"gives five משלים and they're not or he gives six משלים.","score_norm":0.974,"confidence":"HIGH","token_span":[2472,2483],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

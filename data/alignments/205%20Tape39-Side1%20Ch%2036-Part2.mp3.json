@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "205 Tape39-Side1 Ch 36-Part2.mp3",
+  "chapter": "chapter_36",
+  "transcript": "transcripts/205%20Tape39-Side1%20Ch%2036-Part2.mp3.json",
+  "transcriptionId": "8218d955-28d3-4f4a-bbab-cfbb8a809772",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1511,
+    "hebrewWords": 227,
+    "matchedWords": 72,
+    "chapterLines": 40,
+    "alignedLines": 5,
+    "firstLineIndex": 35,
+    "lastLineIndex": 39,
+    "meanConfidence": 0.811
+  },
+  "segments": [
+    {"startSeconds":166.54,"endSeconds":178.16,"chapter":"chapter_36","lineId":"fdnsjmo5","confidence":0.595,"matchedWords":13,"lineWords":22,"firstWord":422,"lastWord":446},
+    {"startSeconds":503.06,"endSeconds":523.018,"chapter":"chapter_36","lineId":"kglnswvn","confidence":0.862,"matchedWords":14,"lineWords":17,"firstWord":1202,"lastWord":1247},
+    {"startSeconds":548.94,"endSeconds":581.24,"chapter":"chapter_36","lineId":"s2whlixt","confidence":0.824,"matchedWords":14,"lineWords":17,"firstWord":1295,"lastWord":1359},
+    {"startSeconds":592.02,"endSeconds":604.94,"chapter":"chapter_36","lineId":"uulcblbs","confidence":0.921,"matchedWords":13,"lineWords":15,"firstWord":1386,"lastWord":1425},
+    {"startSeconds":604.94,"endSeconds":644.24,"chapter":"chapter_36","lineId":"o4fygmz3","confidence":0.851,"matchedWords":16,"lineWords":19,"firstWord":1426,"lastWord":1492}
+  ]
+}

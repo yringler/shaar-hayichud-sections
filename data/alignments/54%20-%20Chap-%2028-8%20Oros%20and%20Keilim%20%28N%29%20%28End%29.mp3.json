@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "54 - Chap- 28-8 Oros and Keilim (N) (End).mp3",
+  "chapter": "chapter_28",
+  "transcript": "transcripts/54%20-%20Chap-%2028-8%20Oros%20and%20Keilim%20%28N%29%20%28End%29.mp3.json",
+  "transcriptionId": "06e4affc-56a3-4d2d-8e47-c3954fd0a762",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1993,
+    "hebrewWords": 148,
+    "matchedWords": 1,
+    "chapterLines": 41,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

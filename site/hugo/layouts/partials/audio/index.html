@@ -4,6 +4,10 @@
          "transcripts": lecture id -> dict "slug" "url" (transcript page) "path" (asset path)
          "chapters":    chapter key -> asset path of its chapter alignment index
          "aligned":     lecture id -> dict "chapter" (key) "url" (English chapter page)
+                        "lines" (aligned lines there) "all" (the same dicts for every
+                        chapter the class reads, in chapter order). "chapter"/"url" are
+                        the chapter with the most aligned lines (a class that ends one
+                        chapter and starts the next is listed on both).
          "outlines":    lecture id -> asset path of its topic outline
        Transcript page URLs are /classes/transcripts/<slug>/, the slug derived
        from the catalog lecture id alone (lowercase, extension dropped, every
@@ -18,6 +22,7 @@
 {{- $s.Set "transcripts" dict -}}
 {{- $s.Set "chapters" dict -}}
 {{- $s.Set "aligned" dict -}}
+{{- $s.Set "alignedAll" dict -}}
 {{- $s.Set "outlines" dict -}}
 {{- with resources.Get "data/v1/outlines/index.json" -}}
   {{- range (. | transform.Unmarshal).items -}}
@@ -42,8 +47,18 @@
   {{- $path := printf "data/v1/%s" .path -}}
   {{- $s.SetInMap "chapters" $key $path -}}
   {{- $chapterUrl := printf "/texts/chapter-%s/" (replaceRE `^chapter_0*` "" $key) -}}
-  {{- range (resources.Get $path | transform.Unmarshal).lectures -}}
-    {{- $s.SetInMap "aligned" .id (dict "chapter" $key "url" $chapterUrl) -}}
+  {{- $data := resources.Get $path | transform.Unmarshal -}}
+  {{- $counts := newScratch -}}
+  {{- range $data.lines -}}{{- range .refs -}}{{- $counts.Add (string .lecture) 1 -}}{{- end -}}{{- end -}}
+  {{- range $i, $l := $data.lectures -}}
+    {{- $entry := dict "chapter" $key "url" $chapterUrl "lines" (($counts.Get (string $i)) | default 0) -}}
+    {{- $prev := (index ($s.Get "alignedAll") $l.id) | default slice -}}
+    {{- $s.SetInMap "alignedAll" $l.id ($prev | append (slice $entry)) -}}
   {{- end -}}
+{{- end -}}
+{{- range $id, $list := $s.Get "alignedAll" -}}
+  {{- $best := index $list 0 -}}
+  {{- range $list -}}{{- if gt .lines $best.lines -}}{{- $best = . -}}{{- end -}}{{- end -}}
+  {{- $s.SetInMap "aligned" $id (merge $best (dict "all" $list)) -}}
 {{- end -}}
 {{- return dict "transcripts" ($s.Get "transcripts") "chapters" ($s.Get "chapters") "aligned" ($s.Get "aligned") "outlines" ($s.Get "outlines") -}}

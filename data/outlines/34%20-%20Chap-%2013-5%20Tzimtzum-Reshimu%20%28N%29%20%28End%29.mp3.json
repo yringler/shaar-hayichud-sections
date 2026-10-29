@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "34 - Chap- 13-5 Tzimtzum-Reshimu (N) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1df22134-bf76-49aa-92c2-83db6845997e",
+  "transcript": "transcripts/34%20-%20Chap-%2013-5%20Tzimtzum-Reshimu%20%28N%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:52:23.052Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Blueprint of the Rishimo: Hidden Light Source","starting_phrase":"וכך בחינת הרשימו הזאת כוללת ברמז ובקיצור מכל אור העצמות","start_time_sec":2.320000000000001,"matched_text":"וכך בחינת הרשימו הזאת כוללת ברמז ובקיצור מכל אור העצמות","score_norm":1,"confidence":"HIGH","token_span":[0,10],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"The Point’s Dual Nature: Concealment and Revelation","starting_phrase":"שהנקודה יש בה העלם וגילוי, that a point","start_time_sec":142.34,"matched_text":"שהנקודה יש בה העלם וגילוי, that a point,","score_norm":0.978,"confidence":"HIGH","token_span":[364,372],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"The Line (Kav) Emerging from the Rishimo","starting_phrase":"והוא בחינת הקו שנמשך מן הרשימו, and","start_time_sec":219.26,"matched_text":"והוא בחינת הקו שנמשך מן הרשימו,","score_norm":1,"confidence":"HIGH","token_span":[562,568],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Understanding the Empty Space (Mekom Pnui) Concept","starting_phrase":"From all of this, we understand the general","start_time_sec":331.7832662611137,"matched_text":"From all of this, we understand the general","score_norm":0.925,"confidence":"HIGH","token_span":[884,892],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Divine Limitation (Tzimtzum) as a Path to Revelation","starting_phrase":"In other words, in order to reveal the world","start_time_sec":402.94,"matched_text":"other words, in order to reveal the world","score_norm":0.958,"confidence":"HIGH","token_span":[1053,1061],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Man’s Purpose: Deepening Awareness of the First Tzimtzum","starting_phrase":"And the whole purpose of man. להעמיק","start_time_sec":566.9,"matched_text":"whole purpose of man. להעמיק","score_norm":0.983,"confidence":"HIGH","token_span":[1569,1574],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Aligning Will to God Beyond All Limitations","starting_phrase":"Our goal both We have to fix both","start_time_sec":724.4739541413196,"matched_text":"Our goal both We have to fix both","score_norm":0.976,"confidence":"HIGH","token_span":[2024,2032],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3}
+  ]
+}

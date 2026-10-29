@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "043 Tape032-Side1-Ch29.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b3a1229a-3123-4fec-83b4-d05eac529f3f",
+  "transcript": "transcripts/043%20Tape032-Side1-Ch29.mp3.json",
+  "fetchedAt": "2026-10-29T00:38:14.169Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"External vs Internal Names of a Cat","starting_phrase":"Yeah. Yeah, that's when it's already transferred all of the בריאה, יצירה, עשיה.","start_time_sec":0,"matched_text":"Yeah. Yeah, that's when it's already transferred all of the בריאה, יצירה, עשיה.","score_norm":0.987,"confidence":"HIGH","token_span":[0,13],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"From Thought to Name: The Cat Example","starting_phrase":"And then what came into my head, that's already not the actual cat anymore.","start_time_sec":69.98,"matched_text":"what came into my head, that's already not the actual cat anymore.","score_norm":0.993,"confidence":"HIGH","token_span":[155,167],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Three Levels: מוחא, ליבא, וכבדא Explained","starting_phrase":"the three levels the מוחא, ליבא, וכבדא all the way to where it goes into an outer name","start_time_sec":166.5,"matched_text":"three levels the מוחא, ליבא, וכבדא all the way to where it goes into an outer name,","score_norm":0.973,"confidence":"HIGH","token_span":[327,344],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"התבוננות = Understanding, Not Meditation","starting_phrase":"the thing is that when you learn the, when you do the התבוננות, התבוננות doesn't mean meditation, means understanding.","start_time_sec":300,"matched_text":"thing is that when you learn the, when you do the התבוננות, התבוננות doesn't mean meditation, means understanding.","score_norm":0.956,"confidence":"HIGH","token_span":[698,716],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Tools Precede Light: Balloon Analogy","starting_phrase":"the כלי comes before the the כלי really comes before the light","start_time_sec":482.53040720438526,"matched_text":"כלי comes before the the כלי really comes before the light.","score_norm":0.955,"confidence":"HIGH","token_span":[1041,1052],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Metaphor of Air and Vessels","starting_phrase":"the whole thing is a משל really, like water or air, if you wouldn't have a כלי, you wouldn't have it","start_time_sec":779.46,"matched_text":"whole thing is a משל really, like water or air, if you wouldn't have a כלי, you wouldn't have","score_norm":0.935,"confidence":"HIGH","token_span":[1659,1678],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"Power vs Actual Limits (כח התנועה)","starting_phrase":"The the כח התנועה is really a רוחני. It's not an actual תנועה.","start_time_sec":916.2778230227088,"matched_text":"כח התנועה is really a רוחני. It's not an actual תנועה.","score_norm":0.957,"confidence":"HIGH","token_span":[1964,1975],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"חסד vs גבורה: Equal Divine Powers","starting_phrase":"the same power of the התפשטות is the same power of the of of קיבוץ, which means like like חסד and גבורה of of אין סוף.","start_time_sec":1254.9804072043853,"matched_text":"same power of the התפשטות is the same power of the of of קיבוץ, which means like like חסד and גבורה of of אין סוף.","score_norm":0.925,"confidence":"HIGH","token_span":[2659,2684],"matched_content":12,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Tools Higher Than Lights: Final Insight","starting_phrase":"So it's not like the lights are really higher than the כלים. If you're at all going to say which is higher, it's actually the כלים are higher than the lights.","start_time_sec":1756.39,"matched_text":"it's not like the lights are really higher than the כלים. If you're at all going to say which is higher, it's actually the כלים are higher than the lights.","score_norm":0.944,"confidence":"HIGH","token_span":[3709,3739],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":2}
+  ]
+}

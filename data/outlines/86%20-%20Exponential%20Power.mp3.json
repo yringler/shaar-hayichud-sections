@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "86 - Exponential Power.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6af99809-e0b3-4541-8ea4-767790041d52",
+  "transcript": "transcripts/86%20-%20Exponential%20Power.mp3.json",
+  "fetchedAt": "2026-10-29T00:31:22.859Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Messiah’s Wellspring Begins as a Tiny Trickles","starting_phrase":"כמו מעיין יוצא מבית קדשי הקדשים, תחילתו כקרני חגבים","start_time_sec":3.38,"matched_text":"כמו מעיין יוצא מבית קדשי הקדשים, תחילתו כקרני חגבים","score_norm":1,"confidence":"HIGH","token_span":[0,9],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Infinity and Doubling Paper Thickness to Reach the Sun","starting_phrase":"He said like if you take a piece of paper and you fold it in half,","start_time_sec":131.9,"matched_text":"said like if you take a piece of paper and you fold it in half,","score_norm":0.872,"confidence":"HIGH","token_span":[373,388],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1}
+  ]
+}

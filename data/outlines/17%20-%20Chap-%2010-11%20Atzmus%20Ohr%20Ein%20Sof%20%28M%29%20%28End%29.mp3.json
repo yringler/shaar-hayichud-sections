@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "17 - Chap- 10-11 Atzmus Ohr Ein Sof (M) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "12c0b207-8fa1-4f41-8d94-4fe124ac5c55",
+  "transcript": "transcripts/17%20-%20Chap-%2010-11%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:04.079Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Stage One: The Undifferentiated Soul","starting_phrase":"ולא יתכן בהם לומר לשון זה אחדות מדברים מובדלים יחד.","start_time_sec":2.9,"matched_text":"ולא יתכן בהם לומר לשון זה אחדות מדברים מובדלים יחד.","score_norm":0.993,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Stage Two: The Ten Powers Begin to Manifest","starting_phrase":"בבחינת התפשטות י׳ כוחות שהם מוכנים לבוא בבחינת גילוי","start_time_sec":113.4,"matched_text":"בבחינת התפשטות י׳ כוחות שהם מוכנים לבוא בבחינת גילוי,","score_norm":1,"confidence":"HIGH","token_span":[323,332],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Stage Three: Ready to Act but Still Blocked","starting_phrase":"והג׳, in the third stage, כשנמשך ובא לעשות דבר פרט,","start_time_sec":337.3579960448253,"matched_text":"והג׳, in the third stage, כשנמשך ובא לעשות דבר פרט,","score_norm":0.984,"confidence":"HIGH","token_span":[1020,1030],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":7},
+    {"title":"Movement Analogy: General Intent vs Detailed Action","starting_phrase":"And the same thing with the power of movement, it has to become estimated exactly how it's going to come out.","start_time_sec":629.64,"matched_text":"same way with the power of consciousness, it has to become estimated exactly how it's going to come out.","score_norm":0.83,"confidence":"HIGH","token_span":[1932,1951],"matched_content":12,"content_coverage":0.857,"longest_content_run_soft":12,"longest_content_run_strict":6},
+    {"title":"The Role of צמצום and the Seed Concept","starting_phrase":"Before it's able to come out from the spiritual to the physical, you need something, some sort of a channeling and a contracting to focus this spiritual power","start_time_sec":904.84,"matched_text":"Before it's able to come out from the spiritual to the physical, you need something, some sort of a channeling and a contracting to focus this spiritual power","score_norm":0.946,"confidence":"HIGH","token_span":[2661,2689],"matched_content":16,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3}
+  ]
+}

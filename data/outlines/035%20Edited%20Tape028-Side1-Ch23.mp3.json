@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "035 Edited Tape028-Side1-Ch23.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d65a67db-d303-4aff-899a-e60486872992",
+  "transcript": "transcripts/035%20Edited%20Tape028-Side1-Ch23.mp3.json",
+  "fetchedAt": "2026-10-29T02:35:21.002Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Crown (כתר) and the Concept of Ancient Days","starting_phrase":"והנה בפרטיות בחינת הכתר שהוא בחינת הממוצע, שיש בו מבחינת האחרונה שבמאציל והוא בפנימיות שבו","start_time_sec":7.48,"matched_text":"והנה בפרטיות בחינת הכתר שהוא בחינת הממוצע, שיש בו מבחינת האחרונה שבמאציל והוא בפנימיות שבו,","score_norm":0.996,"confidence":"HIGH","token_span":[0,15],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":10},
+    {"title":"Pleasure as the Inner Aspect of Desire","starting_phrase":"בהיות שאנו רואים שבכל רצון יש תענוג, ובלא תענוג לא היה רצון לדבר כלל","start_time_sec":138.54,"matched_text":"ובהיות שאנו רואים שבכל רצון יש תענוג, ובלא תענוג לא היה רצון לדבר כלל,","score_norm":0.98,"confidence":"HIGH","token_span":[262,276],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":14},
+    {"title":"Desire and Pleasure Are Inseparable","starting_phrase":"אין לרצון קיום בלא תענוג ואין לתענוג קיום בלא רצון","start_time_sec":345.06876182098085,"matched_text":"אין לרצון קיום בלא תענוג ואין לתענוג קיום בלא רצון.","score_norm":1,"confidence":"HIGH","token_span":[778,788],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Complex Pleasure and Varied Motivations","starting_phrase":"העונג המורכב בפרט נבדל, even with an עונג המורכב","start_time_sec":541.4000000000001,"matched_text":"העונג המורכב בפרט נבדל, even with an עונג המורכב","score_norm":0.992,"confidence":"HIGH","token_span":[1308,1317],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Soul's Light: Joy vs. Sorrow","starting_phrase":"כפי ערך התפשטות הנפש והתמלאות אורה בריבוי תענוג","start_time_sec":690.3,"matched_text":"ערך התפשטות הנפש והתמלאות אורה בריבוי תענוג,","score_norm":1,"confidence":"HIGH","token_span":[1642,1649],"matched_content":7,"content_coverage":0.875,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Kabbalistic View: Pleasure as Soul’s Essence","starting_phrase":"ולכן גזרו ואמרו מקובלים הראשונים, that that's why the מקובלים הראשונים said, שהתענוג נמשך מעצם הנפש","start_time_sec":861.0500000000001,"matched_text":"גזרו ואמרו מקובלים הראשונים, that that's why the מקובלים הראשונים said, שהתענוג נמשך מעצם הנפש,","score_norm":0.99,"confidence":"HIGH","token_span":[2031,2046],"matched_content":13,"content_coverage":0.929,"longest_content_run_soft":13,"longest_content_run_strict":7},
+    {"title":"Mitzvot Insight Through Understanding Desire and Pleasure","starting_phrase":"And that's the whole thing as far as what the whole thing with the מצוות is","start_time_sec":978.16,"matched_text":"that's the whole thing as far as what the whole thing with the מצוות","score_norm":0.959,"confidence":"HIGH","token_span":[2267,2281],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Motivation in Wisdom, Power, and Success","starting_phrase":"עד החכמה והרצון, even the חכמה and the רצון itself, הרי עיקר קיומם בא מהעונג","start_time_sec":1430.84,"matched_text":"עד החכמה והרצון, even the חכמה and the רצון itself, הרי עיקר קיומם בא מהעונג,","score_norm":0.984,"confidence":"HIGH","token_span":[3387,3402],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":7},
+    {"title":"Wisdom Illuminates the Face When One Learns","starting_phrase":"וכנודע בענין חכמת אדם תאיר פניו, that a person","start_time_sec":1587.2,"matched_text":"וכנודע בענין חכמת אדם תאיר פניו, that a person","score_norm":0.983,"confidence":"HIGH","token_span":[3846,3855],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"When Lack of Desire Blocks Joy – Real-Life Examples","starting_phrase":"And this is like the thing from the kid","start_time_sec":1653.28,"matched_text":"thing from the kid","score_norm":0.974,"confidence":"HIGH","token_span":[4027,4031],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Universal Pleasures vs Personal Desire","starting_phrase":"But certain things are תענוג for everybody, like","start_time_sec":1745.1306749501498,"matched_text":"certain things are a תענוג for everybody,","score_norm":0.945,"confidence":"HIGH","token_span":[4277,4284],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "12 - Chap- 1-4  Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7e5c7add-a69f-4091-a65d-81562db0b103",
+  "transcript": "transcripts/12%20-%20Chap-%201-4%20%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:04:13.216Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Depth, Length, Width: Finding the Core","starting_phrase":"ונמצא, comes out, בחינת העיון הזה הוא רק בחינת כלי לבחינת העמקה דבינה עצמה","start_time_sec":1.9000000000000012,"matched_text":"ונמצא, comes out, בחינת העיון הזה הוא רק בחינת כלי לבחינת העמקה דבינה עצמה.","score_norm":1,"confidence":"HIGH","token_span":[0,14],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":14},
+    {"title":"Meditation vs Study: What’s Real Depth","starting_phrase":"כי לכאורה, for seemingly, בחינת העיון הזה נקרא העמקת הדעת בלשון העולם.","start_time_sec":131.04,"matched_text":"לכאורה, for seemingly, בחינת העיון הזה נקרא העמקת הדעת בלשון העולם.","score_norm":0.993,"confidence":"HIGH","token_span":[359,370],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":9},
+    {"title":"Concentration Alone Doesn’t Bring Understanding","starting_phrase":"But the basic idea is that concentration, focusing your mind on an idea, does not actually make you understand the idea.","start_time_sec":223,"matched_text":"basic idea is that concentration, focusing your mind on an idea, does not actually make you understand the idea.","score_norm":0.956,"confidence":"HIGH","token_span":[590,609],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Chicken Tale Illustrates Practical Insight","starting_phrase":"Like the story with the lady with the chicken, that she brought a chicken to the רב,","start_time_sec":283.5,"matched_text":"story with the lady with the chicken, that she brought a chicken to the רב,","score_norm":0.94,"confidence":"HIGH","token_span":[751,766],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Medical School Analogy for True Learning","starting_phrase":"This is something that's understood in any discipline or in any study, that if a person is in medical school,","start_time_sec":372.88,"matched_text":"something that's understood in any discipline or in any study, that if a person is in medical school,","score_norm":0.946,"confidence":"HIGH","token_span":[1043,1061],"matched_content":10,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Role of a משׁפיע as Mentor","starting_phrase":"That's the idea of a משפיע. That's so many things.","start_time_sec":437.56,"matched_text":"that's the idea of a משפיע. That's so many things.","score_norm":0.949,"confidence":"HIGH","token_span":[1239,1249],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"From Bina to Chochma to Crown","starting_phrase":"Then you can go from the בינה to the חכמה, which is what העמקת הדעת does.","start_time_sec":500.52,"matched_text":"can go from the בינה to the חכמה, which is what העמקת הדעת does.","score_norm":0.967,"confidence":"HIGH","token_span":[1419,1433],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Repeated Study to Deepen Mastery","starting_phrase":"So you have to take Let's say you're learning a book, you know, you're learning a מאמר,","start_time_sec":665.98,"matched_text":"have to take Let's say you're learning a book, you know, you're learning a מאמר,","score_norm":0.965,"confidence":"HIGH","token_span":[1919,1934],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Bina Unlocks All Levels in Chabad","starting_phrase":"And like we're going to say later in the next פרק, the בינה also opens up everything under it.","start_time_sec":741.7,"matched_text":"we're going to say later in the next פרק, the בינה also opens up everything under","score_norm":0.976,"confidence":"HIGH","token_span":[2198,2214],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":6}
+  ]
+}

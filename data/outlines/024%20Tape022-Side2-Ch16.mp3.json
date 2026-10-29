@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "024 Tape022-Side2-Ch16.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "bfb17484-e452-4308-97ac-057466cdda20",
+  "transcript": "transcripts/024%20Tape022-Side2-Ch16.mp3.json",
+  "fetchedAt": "2026-10-29T00:35:11.961Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Primordial Desire and Hidden Nature","starting_phrase":"והיינו דהיינו כמו שעלה ברצונו הפשוט ההיולי","start_time_sec":0,"matched_text":"והיינו דהיינו כמו שעלה ברצונו הפשוט ההיולי","score_norm":1,"confidence":"HIGH","token_span":[0,7],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Returning to the House Desire","starting_phrase":"So now to take it back to the רצון of the house","start_time_sec":87.3,"matched_text":"take it back to the רצון of the house,","score_norm":0.905,"confidence":"HIGH","token_span":[152,161],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Understanding רצון להאציל and Personal Desires","starting_phrase":"The רצון להאציל means inside of himself","start_time_sec":217.06,"matched_text":"רצון להאציל means inside of himself,","score_norm":0.984,"confidence":"HIGH","token_span":[439,445],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"From אצילות to בריאה: The Architect’s Role","starting_phrase":"Then the next thing, he has to go to level of בריאה","start_time_sec":327.1,"matched_text":"next thing, he has to go to level of בריאה.","score_norm":0.951,"confidence":"HIGH","token_span":[654,664],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Creation Phase and Blueprint Development","starting_phrase":"And that's the יצירה. היצירה is when the architect","start_time_sec":661.14,"matched_text":"that's the יצירה. היצירה is when","score_norm":0.779,"confidence":"HIGH","token_span":[1447,1453],"matched_content":4,"content_coverage":0.8,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Final House Completion and Home Realization","starting_phrase":"And then when the contractor finishes the house, then there's the house itself","start_time_sec":777.08,"matched_text":"when the contractor finishes the house, then there's the house itself.","score_norm":0.957,"confidence":"HIGH","token_span":[1661,1672],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Circular Nature of Desires and ראשית הקו","starting_phrase":"So what is he saying here? He said he said two opposite things here","start_time_sec":977.782158817464,"matched_text":"what is he saying here? He said he said two opposite things here.","score_norm":0.969,"confidence":"HIGH","token_span":[2189,2202],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5}
+  ]
+}

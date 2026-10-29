@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "84 - Chap- 22-4 Hiskaleluls of Sefiros.mp3",
+  "chapter": "chapter_22",
+  "transcript": "transcripts/84%20-%20Chap-%2022-4%20Hiskaleluls%20of%20Sefiros.mp3.json",
+  "transcriptionId": "77fcd73b-651e-4977-99a8-f13731d0aa03",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1765,
+    "hebrewWords": 220,
+    "matchedWords": 85,
+    "chapterLines": 77,
+    "alignedLines": 8,
+    "firstLineIndex": 26,
+    "lastLineIndex": 33,
+    "meanConfidence": 0.981
+  },
+  "segments": [
+    {"startSeconds":85.32,"endSeconds":98.595,"chapter":"chapter_22","lineId":"onvb764l","confidence":1,"matchedWords":14,"lineWords":14,"firstWord":241,"lastWord":269},
+    {"startSeconds":105.28,"endSeconds":107.099,"chapter":"chapter_22","lineId":"ygbprref","confidence":1,"matchedWords":5,"lineWords":5,"firstWord":279,"lastWord":283},
+    {"startSeconds":119.824,"endSeconds":186.543,"chapter":"chapter_22","lineId":"74roaxgd","confidence":0.973,"matchedWords":14,"lineWords":15,"firstWord":320,"lastWord":505},
+    {"startSeconds":186.907,"endSeconds":199.878,"chapter":"chapter_22","lineId":"y4rojkoj","confidence":1,"matchedWords":12,"lineWords":13,"firstWord":507,"lastWord":533},
+    {"startSeconds":413.34,"endSeconds":430.46,"chapter":"chapter_22","lineId":"ki66uzxj","confidence":0.909,"matchedWords":10,"lineWords":11,"firstWord":1147,"lastWord":1183},
+    {"startSeconds":455.48,"endSeconds":548.355,"chapter":"chapter_22","lineId":"6onunigt","confidence":0.993,"matchedWords":14,"lineWords":14,"firstWord":1265,"lastWord":1501},
+    {"startSeconds":559.544,"endSeconds":565.38,"chapter":"chapter_22","lineId":"vmafjvaf","confidence":0.989,"matchedWords":9,"lineWords":9,"firstWord":1537,"lastWord":1551},
+    {"startSeconds":585,"endSeconds":587.911,"chapter":"chapter_22","lineId":"uzszmez5","confidence":0.986,"matchedWords":7,"lineWords":8,"firstWord":1607,"lastWord":1614}
+  ]
+}

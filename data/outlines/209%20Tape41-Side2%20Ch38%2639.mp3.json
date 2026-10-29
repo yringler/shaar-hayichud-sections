@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "209 Tape41-Side2 Ch38&39.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8b2f9dc4-ee3c-4eb5-b5f6-edb6b0a8c0aa",
+  "transcript": "transcripts/209%20Tape41-Side2%20Ch38%2639.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:39.896Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Hierarchy of מציאות יש and Upper Letters","starting_phrase":"Okay, go ahead. Right, and that is where all the snow that's outside here came from.","start_time_sec":17.24,"matched_text":"go ahead. Right, and that is where all the snow that's outside here came from.","score_norm":0.966,"confidence":"HIGH","token_span":[1,16],"matched_content":10,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Money as Pure Idea and Electronic Abstraction","starting_phrase":"So, that you see that an idea can be money. Like always, the guy says, \"I got $100 million in bank accounts.\"","start_time_sec":436.94,"matched_text":"see that an idea can be money. Like always, the guy says, \"I got $100 million in bank accounts.\"","score_norm":0.96,"confidence":"HIGH","token_span":[947,966],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Why Letters Are Called כלים and לבושים","starting_phrase":"He started asking this question, now we're in ל\"ח, he started asking this question in ל\"ח, why the כלים, why the אותיות are sometimes called לבושים and sometimes they're called כלים.","start_time_sec":706.74,"matched_text":"started asking this question, now we're in ל\"ח, he started asking this question in ל\"ח, why the כלים, why the אותיות are sometimes called לבושים and sometimes they're called כלים.","score_norm":0.841,"confidence":"HIGH","token_span":[1537,1567],"matched_content":18,"content_coverage":0.9,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Letters as Organs vs Vessels: The Soup Analogy","starting_phrase":"The real ענין of a כלי is an organ, like the eye, like you said before, you know.","start_time_sec":1137.06,"matched_text":"real ענין of a כלי is an organ, like the eye, like you said before,","score_norm":0.924,"confidence":"HIGH","token_span":[2381,2396],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Distinguishing כלי (Tools) from לבוש (Clothing) in Texts","starting_phrase":"So, the thing of a לבוש and the same like a כלי, the same thing that a כלי is like an organ and a לבוש is like a clothing.","start_time_sec":1642.12,"matched_text":"thing of a לבוש and the same like a כלי, the same thing that a כלי is like an organ and a לבוש is like a a clothing.","score_norm":0.864,"confidence":"HIGH","token_span":[3585,3613],"matched_content":10,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

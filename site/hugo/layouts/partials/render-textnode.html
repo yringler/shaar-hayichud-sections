@@ -41,11 +41,11 @@
                digit markers are stripped. Several lines: a <p> each; one line: inline. */ -}}
         {{- if gt (len $lines) 1 -}}
           {{- range $lines -}}
-            <p><span class="line" id="{{ .id }}"{{ with index $lineTimes .id }} data-t="{{ . }}"{{ end }}>{{ strings.TrimSpace (replaceRE `\d+` "" .text) }}</span></p>
+            <p><span class="line" id="{{ .id }}"{{ if isset $lineTimes .id }} data-t="{{ index $lineTimes .id }}"{{ end }}>{{ strings.TrimSpace (replaceRE `\d+` "" .text) }}</span></p>
           {{- end -}}
         {{- else -}}
           {{- with index $lines 0 -}}
-          <span class="line" id="{{ .id }}"{{ with index $lineTimes .id }} data-t="{{ . }}"{{ end }}>{{ replaceRE `\d+` "" .text }}</span>
+          <span class="line" id="{{ .id }}"{{ if isset $lineTimes .id }} data-t="{{ index $lineTimes .id }}"{{ end }}>{{ replaceRE `\d+` "" .text }}</span>
           {{- end -}}
         {{- end -}}
         </div>

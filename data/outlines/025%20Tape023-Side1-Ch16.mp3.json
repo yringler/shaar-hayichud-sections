@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "025 Tape023-Side1-Ch16.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c990ee35-208c-4d9a-b07e-31fc10fffd2b",
+  "transcript": "transcripts/025%20Tape023-Side1-Ch16.mp3.json",
+  "fetchedAt": "2026-10-29T00:35:22.613Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the Line and Circular Forms","starting_phrase":"ולהבין לפרט עניין הקו ממש ובחינת העגולים וכולו.","start_time_sec":0,"matched_text":"ולהבין לפרט ענין הקו ממש ובחינת העגולים וכולו.","score_norm":0.966,"confidence":"HIGH","token_span":[0,8],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"The Role of צמצום and גליפו","starting_phrase":"And the thing is, and that's what it means, the צמצום went out","start_time_sec":152.57090431738624,"matched_text":"thing is, and that's what it means, the צמצום went out,","score_norm":0.957,"confidence":"HIGH","token_span":[257,268],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Letters of the Ancient Thought","starting_phrase":"Whereas the letters of the מחשבה קדומה is different letters.","start_time_sec":233.74,"matched_text":"Whereas the letters of the מחשבה קדומה is different letters.","score_norm":0.951,"confidence":"HIGH","token_span":[403,413],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Loss of עצמות and Its Light","starting_phrase":"So that even the העצמות is gone, and the light of עצמות is gone","start_time_sec":301.5908255542591,"matched_text":"even the the עצמות is gone, and the light of עצמות is gone,","score_norm":0.889,"confidence":"HIGH","token_span":[519,532],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":1},
+    {"title":"Self‑Knowledge Leads to Universal Knowledge","starting_phrase":"And this is basically the עניין that by knowing himself, he knows everything.","start_time_sec":404.6835385064178,"matched_text":"basically the עניין that by knowing himself, he knows everything.","score_norm":0.955,"confidence":"HIGH","token_span":[702,712],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"King’s Custom Wishes for Every Detail","starting_phrase":"So in a king, as it's going to be prepared, everything is going to be custom.","start_time_sec":662.6,"matched_text":"king, as it's going to be prepared, everything is going to be custom.","score_norm":0.939,"confidence":"HIGH","token_span":[1207,1220],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Even “Yucky” Things Fit Divine Plan","starting_phrase":"Now you can say, well what about like there's some yucky things?","start_time_sec":760.1072082847127,"matched_text":"can say, well what about like there's some yucky things?","score_norm":0.992,"confidence":"HIGH","token_span":[1480,1490],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Respecting All Creation as Divine","starting_phrase":"So you have to think about it. It means anything that's in what He wanted is part of Him.","start_time_sec":836.5199737456237,"matched_text":"have to think about it. It means anything that's in what He wanted is part of Him.","score_norm":0.949,"confidence":"HIGH","token_span":[1760,1777],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Final Appearance Over Structural Skeleton","starting_phrase":"And the real thing that you wanted is דווקא the finished product, the thing that you really wanted is the wallpaper.","start_time_sec":992.7250845974244,"matched_text":"real thing that you wanted is דווקא the finished product, the thing that you really wanted is the wallpaper.","score_norm":0.921,"confidence":"HIGH","token_span":[2137,2156],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Ancient Concealed Thought (עתיקא דעתיקין) Defined","starting_phrase":"ולשון הזוהר נקרא, this מחשבה קדומה is called עתיקא דעתיקין or עתיקא סתימאה.","start_time_sec":1314.81,"matched_text":"ולשון הזוהר נקרא, this מחשבה קדומה is called עתיקא דעתיקין or עתיקא סתימאה.","score_norm":0.979,"confidence":"HIGH","token_span":[2602,2615],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3}
+  ]
+}

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
@@ -8,6 +8,7 @@ import type { Chapter } from './chapter.js';
 import { parseClassesTxt } from './parse.js';
 import { build, DATA_DIR, defaultPaths } from './pipeline.js';
 import {
+  alignmentChapters,
   chapterAlignments,
   chapterKeyOf,
   lectureInfos,
@@ -15,6 +16,7 @@ import {
   parsePublishPolicy,
   publishAlignment,
   publishOutline,
+  retimeTopics,
   sourceTopics,
   selectPublished,
   speakerLabelsOn,
@@ -22,6 +24,8 @@ import {
 } from './publish.js';
 
 const readJson = (file: string): unknown => JSON.parse(readFileSync(file, 'utf8'));
+/** An index `path` (URL-encoded per segment) as a file path; decodeURI would leave e.g. %26 (&) encoded. */
+const decodePath = (p: string) => p.split('/').map(decodeURIComponent).join('/');
 
 const CLASSES = `
 # Series A:1
@@ -225,6 +229,31 @@ describe('chapterAlignments', () => {
       { lineId: 'cccccccc', refs: [{ lecture: 1, startSeconds: 30, endSeconds: 35, confidence: 0.9 }] },
     ]);
   });
+
+  it('a class that reads two chapters contributes only its own chapter\'s segments to each index', () => {
+    const two = al('a.mp3', [seg('aaaaaaaa', 10, 0.8), { ...seg('zzzzzzzz', 300, 0.9), chapter: 'chapter_04' }]);
+    assert.deepEqual(alignmentChapters(two), ['chapter_03', 'chapter_04']);
+    assert.deepEqual(alignmentChapters(al('b.mp3', [])), ['chapter_03']);
+    const r = chapterAlignments('chapter_03', chapter, [two], infos, new Set());
+    assert.deepEqual(r.lines.map((l) => l.lineId), ['aaaaaaaa']);
+    assert.deepEqual(r.lectures.map((l) => l.id), ['a.mp3']);
+  });
+});
+
+describe('retimeTopics', () => {
+  it('moves topics to the re-timed time of their first word, by token_span or by Sofer start; drops the rest', () => {
+    const sofer = [0, 5, 5, 5, 9];
+    const retimed = [0, 5, 11, 17, 30];
+    const topics = [
+      { title: 'span', start_time_sec: 5, confidence: 'HIGH', token_span: [3, 4] },
+      { title: 'by time', start_time_sec: 9, confidence: 'HIGH' },
+      { title: 'lost', start_time_sec: 7, confidence: 'HIGH' },
+    ];
+    assert.deepEqual(
+      retimeTopics(topics, sofer, retimed).map((t) => [t.title, t.start_time_sec]),
+      [['span', 17], ['by time', 30]],
+    );
+  });
 });
 
 describe('publishOutline', () => {
@@ -263,18 +292,32 @@ describe('build (audio publishing)', () => {
     const policy = readJson(path.join(DATA_DIR, 'audio-publish.json')) as { minConfidence: number };
     const index = readJson(path.join(out, 'v1/alignments/index.json')) as { items: { id: string; path: string }[] };
     for (const item of index.items) {
-      const a = readJson(path.join(out, 'v1', decodeURI(item.path))) as { segments: { confidence: number }[] };
+      const a = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { confidence: number }[] };
       assert.ok(a.segments.every((s) => s.confidence >= policy.minConfidence));
     }
     const transcripts = readJson(path.join(out, 'v1/transcripts/index.json')) as { items: { path: string }[] };
     for (const item of transcripts.items) {
-      const t = readJson(path.join(out, 'v1', decodeURI(item.path))) as Record<string, unknown>;
+      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as Record<string, unknown>;
       assert.ok(!('result' in t) && !('sofer' in t), 'raw Sofer data is not published');
       // No in-scope series labels speakers today, so stored labels (Markel 002) are dropped.
       assert.ok(!(t['segments'] as Record<string, unknown>[]).some((seg) => 'speaker' in seg), 'speaker labels are not published');
     }
     const top = readJson(path.join(out, 'v1/index.json')) as { items: { id: string }[] };
     assert.ok(top.items.some((i) => i.id === 'chapter-alignments'));
+    // Published paragraphs take their times from data/retimed/ when the lecture has a file there.
+    const retimedDir = path.join(DATA_DIR, 'retimed');
+    let checked = 0;
+    for (const file of existsSync(retimedDir) ? readdirSync(retimedDir).filter((f) => f.endsWith('.json')) : []) {
+      const r = readJson(path.join(retimedDir, file)) as { lectureId: string; words: number[][] };
+      const item = transcripts.items.find((i) => i.path === `transcripts/${file}`);
+      if (!item) continue;
+      const raw = readJson(path.join(DATA_DIR, 'transcripts', file)) as { result: { timestamps: { word: string }[] } };
+      const first = raw.result.timestamps.findIndex((w) => w.word.trim() !== '');
+      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { startSeconds: number }[] };
+      assert.equal(t.segments[0]!.startSeconds, Math.round(r.words[first]![0]! * 100) / 100, r.lectureId);
+      checked += 1;
+    }
+    assert.ok(checked > 0, 'at least one published lecture is retimed');
   });
 
   it('fails on a policy that names an unknown heading, writing nothing', () => {

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "77 - Chap- 21-1  Gimel Kavin.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "ec07ca6c-695c-45fd-8583-6522305e2886",
+  "transcript": "transcripts/77%20-%20Chap-%2021-1%20%20Gimel%20Kavin.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:06.411Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Three Koyen Explained: From Chaos to Form","starting_phrase":"Fine. So, now he's going to he's continue, he's going to explain","start_time_sec":3.1000000000000014,"matched_text":"Fine. So, now he's going to he's continue, he's going to explain","score_norm":0.964,"confidence":"HIGH","token_span":[0,12],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Why חכמה Leans Toward חסד (Right Hand Analogy)","starting_phrase":"This is when מצד a reason, you lean towards חסד","start_time_sec":128.7,"matched_text":"when מצד a reason, you lean towards חסד.","score_norm":0.974,"confidence":"HIGH","token_span":[324,332],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"חסד, נצח, and Overcoming Obstacles in Practice","starting_phrase":"In other words, if there's some type of an obstacle, the חסד will say","start_time_sec":449.1251590797846,"matched_text":"other words, if there's some type of an obstacle, the חסד will say,","score_norm":0.968,"confidence":"HIGH","token_span":[1352,1365],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Balancing בינה and חכמה in Understanding Texts","starting_phrase":"But then, in order to really understand what a person is saying, you also have to have חכמה","start_time_sec":623.18,"matched_text":"order to really understand what a person is saying, you also have to have חכמה","score_norm":0.948,"confidence":"HIGH","token_span":[1889,1904],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2}
+  ]
+}

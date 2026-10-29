@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "13 - Chap- 10-7  Atzmus Ohr Ein Sof (M).mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/13%20-%20Chap-%2010-7%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "transcriptionId": "b28eebf3-4755-4517-92a5-e79981bf9f96",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1615,
+    "hebrewWords": 65,
+    "matchedWords": 49,
+    "chapterLines": 91,
+    "alignedLines": 3,
+    "firstLineIndex": 45,
+    "lastLineIndex": 47,
+    "meanConfidence": 0.997
+  },
+  "segments": [
+    {"startSeconds":85.752,"endSeconds":104.227,"chapter":"chapter_10","lineId":"v7tc465x","confidence":0.991,"matchedWords":22,"lineWords":22,"firstWord":252,"lastWord":310},
+    {"startSeconds":192.78,"endSeconds":198.26,"chapter":"chapter_10","lineId":"ctm4eaq3","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":524,"lastWord":530},
+    {"startSeconds":283.86,"endSeconds":351.08,"chapter":"chapter_10","lineId":"qujawkgb","confidence":1,"matchedWords":21,"lineWords":24,"firstWord":769,"lastWord":915}
+  ]
+}

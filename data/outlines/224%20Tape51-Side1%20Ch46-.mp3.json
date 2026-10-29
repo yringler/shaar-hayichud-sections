@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "224 Tape51-Side1 Ch46-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c8d58836-8df6-40f0-8048-1030a66dbdcc",
+  "transcript": "transcripts/224%20Tape51-Side1%20Ch46-.mp3.json",
+  "fetchedAt": "2026-10-29T00:46:16.979Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Kotnot Or and the Light of Torah","starting_phrase":"כי כותנות אור בא' הוא אחר התיקון","start_time_sec":0,"matched_text":"כותנות אור בא' הוא אחר התיקון","score_norm":1,"confidence":"HIGH","token_span":[1,7],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Upper Light (Zohar Ilay) Explained","starting_phrase":"ונקרא זהר עילאה, and then it's called the upper light","start_time_sec":186.06,"matched_text":"ונקרא זהר עילאה, and then it's called the upper light,","score_norm":0.969,"confidence":"HIGH","token_span":[362,372],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Spectacles of Light: Aspaklia HaMe'ira","starting_phrase":"כאשר הלבוש עצמו עשוי מאור בהיר ומזהיר ביותר","start_time_sec":383.8422348319511,"matched_text":"כאשר הלבוש עצמו עשוי מאור בהיר ומזהיר ביותר,","score_norm":1,"confidence":"HIGH","token_span":[811,819],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Core Concepts of Lecture 46: Electricity and Letters","starting_phrase":"the basic the basic ענין of of 46 is","start_time_sec":444.72741161065034,"matched_text":"basic the basic ענין of of 46","score_norm":0.942,"confidence":"HIGH","token_span":[935,942],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"The Eighth King of Tehu and Mishich Ben Yosef","starting_phrase":"Now, the basic thing here we're going to start first of all with the the basic thing of of the eighth king of תהו","start_time_sec":506.8948232213007,"matched_text":"basic thing here we're going to start first of all with the the basic thing of of the eighth king of תהו,","score_norm":0.957,"confidence":"HIGH","token_span":[1072,1094],"matched_content":14,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Confusion of Letters, Tehu, and the Klipot","starting_phrase":"But even though they're in order, but there's still the ענין of each letter by itself","start_time_sec":673.7801134875614,"matched_text":"even though they're in order, but there's still the ענין of each letter by itself,","score_norm":0.963,"confidence":"HIGH","token_span":[1518,1533],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3}
+  ]
+}

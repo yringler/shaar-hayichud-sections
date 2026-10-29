@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/22%20-%20Chap-%202-4%20Yisroel%20Saba%20and%20Tvunah.mp3.json",
+  "transcriptionId": "a1d54456-83f1-491d-97ac-a22d45f500c6",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2181,
+    "hebrewWords": 274,
+    "matchedWords": 124,
+    "chapterLines": 37,
+    "alignedLines": 7,
+    "firstLineIndex": 22,
+    "lastLineIndex": 28,
+    "meanConfidence": 0.927
+  },
+  "segments": [
+    {"startSeconds":3.46,"endSeconds":33.38,"chapter":"chapter_02","lineId":"virffb7u","confidence":1,"matchedWords":16,"lineWords":16,"firstWord":0,"lastWord":71},
+    {"startSeconds":49.38,"endSeconds":73.08,"chapter":"chapter_02","lineId":"7h7ajdbp","confidence":0.831,"matchedWords":11,"lineWords":14,"firstWord":123,"lastWord":177},
+    {"startSeconds":143.74,"endSeconds":159.752,"chapter":"chapter_02","lineId":"hvkuw7gq","confidence":0.693,"matchedWords":10,"lineWords":15,"firstWord":421,"lastWord":470},
+    {"startSeconds":185.08,"endSeconds":206.54,"chapter":"chapter_02","lineId":"uxwal6su","confidence":1,"matchedWords":14,"lineWords":14,"firstWord":540,"lastWord":582},
+    {"startSeconds":341.812,"endSeconds":370.94,"chapter":"chapter_02","lineId":"5qr26bde","confidence":0.982,"matchedWords":17,"lineWords":18,"firstWord":1036,"lastWord":1093},
+    {"startSeconds":398.96,"endSeconds":511.748,"chapter":"chapter_02","lineId":"u7ixfupf","confidence":1,"matchedWords":31,"lineWords":33,"firstWord":1190,"lastWord":1512},
+    {"startSeconds":527.132,"endSeconds":623.08,"chapter":"chapter_02","lineId":"p4zitoes","confidence":0.981,"matchedWords":25,"lineWords":27,"firstWord":1575,"lastWord":1849}
+  ]
+}

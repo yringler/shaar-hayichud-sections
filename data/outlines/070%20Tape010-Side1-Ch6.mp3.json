@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "070 Tape010-Side1-Ch6.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7d648f08-cde9-4883-845f-50c074988411",
+  "transcript": "transcripts/070%20Tape010-Side1-Ch6.mp3.json",
+  "fetchedAt": "2026-10-29T02:35:48.297Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding Da’at De'ehyeh and the Misconception of Atzmut","starting_phrase":"And the the whole ענין of of grasping דעת דעצמות,","start_time_sec":139.8,"matched_text":"whole ענין of of grasping דעת דעצמות,","score_norm":0.974,"confidence":"HIGH","token_span":[362,369],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Messianic Verses and the Importance of Crying (B’kiah)","starting_phrase":"Okay, so I started it. Okay, so it says, ולעתיד","start_time_sec":253.5,"matched_text":"started it. Okay, so it says, ולעתיד","score_norm":0.912,"confidence":"HIGH","token_span":[614,621],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Tears on Youthful Sins: The Travel Analogy","starting_phrase":"And he explains the reason for that is like when you","start_time_sec":420.69,"matched_text":"explains the reason for that is like when","score_norm":0.892,"confidence":"HIGH","token_span":[933,941],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Levels of Teshuvah and the Role of Shluchim","starting_phrase":"So the same thing, I mean, the שלוחים in","start_time_sec":1070.21,"matched_text":"same thing, I mean, the שלוחים","score_norm":0.928,"confidence":"HIGH","token_span":[2383,2389],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"The Central Role of Bina in All Avodot","starting_phrase":"Yeah, so like I said, this is, you know,","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "01 - Introduction-1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "60afe934-8d5f-4644-bd5f-c26383a1c342",
+  "transcript": "transcripts/01%20-%20Introduction-1.mp3.json",
+  "fetchedAt": "2026-10-28T23:48:32.081Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Beginning the Series on the השתלשלות","starting_phrase":"We are now beginning a series explaining the השתלשלות based on the שערי יחוד of the מיטעלער רבי.","start_time_sec":2.96,"matched_text":"beginning a series explaining the השתלשלות based on the שערי יחוד of the מיטעלער רבי.","score_norm":0.951,"confidence":"HIGH","token_span":[3,18],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Common Difficulties Understanding חסידות Structure","starting_phrase":"Now, in חסידות there's a few things, a few difficulties that people tend to have.","start_time_sec":101.3,"matched_text":"חסידות there's a few things, a few difficulties that people tend to have.","score_norm":0.967,"confidence":"HIGH","token_span":[259,272],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Applying חסידות in עבודה Requires Full Insight","starting_phrase":"And this is also a big part of being able to apply it in עבודה, like it's explained in קונטרס התפלה and קונטרס העבודה, in different places, that in order to be able to apply חסידות and to be able to be מתבונן in דאווענען, to contemplate on God's greatness and to be able to arouse love and fear from this understanding, it has to be in a way where a person understands.","start_time_sec":197.1,"matched_text":"also a big part of being able to apply it in עבודה, like it's explained in קונטרס התפלה and קונטרס העבודה, in different places, that in order to be able to apply חסידות and to be able to be מתבונן in דאווענען, to contemplate on God's greatness and to be able to arouse love and fear from this understanding, it has to be in a way where a person understands,","score_norm":0.93,"confidence":"HIGH","token_span":[516,586],"matched_content":36,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":2},
+    {"title":"Special Status of שער היחוד in Rabbinic Letters","starting_phrase":"Now, the specialness of this book is mentioned in a few places, especially in a number of letters by the פריערדיקער רבי and also in the לקוטי דיבורים.","start_time_sec":333.3,"matched_text":"specialness of this book is mentioned in a few places, especially in a number of letters by the פריערדיקער רבי and also in the לקוטי דיבורים.","score_norm":0.928,"confidence":"HIGH","token_span":[865,891],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":3},
+    {"title":"Structure of שער היחוד: First Nine Chapters","starting_phrase":"So שער היחוד, back to שער היחוד, it has two parts. The first part is chapters one through nine, and in these chapters the מיטעלער רבי explains what התבוננות is, how to be מתבונן, what to be מתבונן on.","start_time_sec":418.32,"matched_text":"שער היחוד, back to שער היחוד, it has two parts. The first part is chapters one through nine, and in these chapters the מיטעלער רבי explains what התבוננות is, how to be מתבונן, what to be מתבונן","score_norm":0.957,"confidence":"HIGH","token_span":[1055,1092],"matched_content":24,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":5}
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "51 - Chap- 28-5 Oros and Keilim (N).mp3",
+  "chapter": "chapter_28",
+  "transcript": "transcripts/51%20-%20Chap-%2028-5%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "transcriptionId": "6c0c3df2-ff7c-4f4d-a5a0-d98c6f893e11",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 3046,
+    "hebrewWords": 279,
+    "matchedWords": 123,
+    "chapterLines": 41,
+    "alignedLines": 12,
+    "firstLineIndex": 20,
+    "lastLineIndex": 31,
+    "meanConfidence": 0.915
+  },
+  "segments": [
+    {"startSeconds":3.26,"endSeconds":8.18,"chapter":"chapter_28","lineId":"mqlpj5rw","confidence":0.906,"matchedWords":7,"lineWords":8,"firstWord":0,"lastWord":15},
+    {"startSeconds":206.86,"endSeconds":266.78,"chapter":"chapter_28","lineId":"fr7epqv6","confidence":0.893,"matchedWords":10,"lineWords":13,"firstWord":646,"lastWord":834},
+    {"startSeconds":270.26,"endSeconds":283.54,"chapter":"chapter_28","lineId":"ccsewnv4","confidence":0.809,"matchedWords":9,"lineWords":12,"firstWord":845,"lastWord":879},
+    {"startSeconds":289.86,"endSeconds":299.52,"chapter":"chapter_28","lineId":"myvjwqfq","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":898,"lastWord":921},
+    {"startSeconds":318.74,"endSeconds":474.263,"chapter":"chapter_28","lineId":"xzruouuj","confidence":0.903,"matchedWords":16,"lineWords":17,"firstWord":980,"lastWord":1452},
+    {"startSeconds":476.139,"endSeconds":487.081,"chapter":"chapter_28","lineId":"aaeibjum","confidence":0.787,"matchedWords":12,"lineWords":15,"firstWord":1459,"lastWord":1490},
+    {"startSeconds":544.233,"endSeconds":546.109,"chapter":"chapter_28","lineId":"7vco3atb","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":1662,"lastWord":1668},
+    {"startSeconds":550.763,"endSeconds":558.398,"chapter":"chapter_28","lineId":"jv4rjeqs","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":1682,"lastWord":1703},
+    {"startSeconds":561.533,"endSeconds":566.018,"chapter":"chapter_28","lineId":"yqpvtmge","confidence":0.971,"matchedWords":7,"lineWords":7,"firstWord":1715,"lastWord":1730},
+    {"startSeconds":577.753,"endSeconds":623.955,"chapter":"chapter_28","lineId":"g4qlerjq","confidence":0.956,"matchedWords":16,"lineWords":19,"firstWord":1767,"lastWord":1905},
+    {"startSeconds":821.64,"endSeconds":823.829,"chapter":"chapter_28","lineId":"e7jvzfpr","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":2576,"lastWord":2582},
+    {"startSeconds":875.073,"endSeconds":879.762,"chapter":"chapter_28","lineId":"lkpmg4bd","confidence":0.75,"matchedWords":12,"lineWords":15,"firstWord":2763,"lastWord":2777}
+  ]
+}

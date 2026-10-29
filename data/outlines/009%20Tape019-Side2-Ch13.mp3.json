@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "009 Tape019-Side2-Ch13.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "dcbbb4d0-6240-4be3-8408-a8a43271e366",
+  "transcript": "transcripts/009%20Tape019-Side2-Ch13.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:08.283Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Light Revelation Before and After צמצום","starting_phrase":"Okay, go ahead. Yeah. So this thing of the revelation of light later","start_time_sec":0,"matched_text":"go ahead. Yeah. So this thing of the revelation of light later","score_norm":0.952,"confidence":"HIGH","token_span":[1,13],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"The Role of the מיטעלער רבי and רש\"ב","starting_phrase":"The מיטעלער רבי says that it doesn't go through and the רבי רש\"ב said it does go through","start_time_sec":148.89,"matched_text":"מיטעלער רבי says that it doesn't go through and the רבי רש\"ב said it does go through.","score_norm":0.955,"confidence":"HIGH","token_span":[298,315],"matched_content":11,"content_coverage":0.917,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Understanding the ספר as a Mere Piece of Paper","starting_phrase":"In this book there's nothing there. This book is a piece of paper with ink, that's all it is.","start_time_sec":235.91,"matched_text":"book there's nothing there. This book is a piece of paper with ink, that's all","score_norm":0.974,"confidence":"HIGH","token_span":[543,558],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Creating a שיעור for the Students","starting_phrase":"He first of all had to be משער himself what can these idiots understand","start_time_sec":321.07,"matched_text":"first of all had to be משער himself what can these idiots understand.","score_norm":0.969,"confidence":"HIGH","token_span":[753,766],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Ruling on the נצחיות of Light in צמצום","starting_phrase":"So you say, why if he's totally not affected, so why should we do all the מצות?","start_time_sec":456.9927155963289,"matched_text":"say, what do you mean? So why if he's totally not affected, so why should we do all the מצות?","score_norm":0.943,"confidence":"HIGH","token_span":[1112,1132],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"The Concept of רשימו and Its Power","starting_phrase":"And especially the רשימו, that the רשימו holds the whole אריכות, that's to say there is a כח הגבלה","start_time_sec":623.19,"matched_text":"especially the רשימו, that the רשימו holds the whole אריכות, that's to say there is a כח הגבלה","score_norm":0.955,"confidence":"HIGH","token_span":[1443,1461],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Blueprint Analogy for צמצום and רשימו","starting_phrase":"A blueprint means that the whole building is gone and you just have a bunch of lines","start_time_sec":973.17,"matched_text":"blueprint means that the whole building is gone and you just have a bunch of lines,","score_norm":0.93,"confidence":"HIGH","token_span":[2238,2254],"matched_content":8,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The Throwing Stone Metaphor for Cosmic Motion","starting_phrase":"It's like an actual thing that the actual original person is gone.","start_time_sec":1150.69,"matched_text":"It's like an actual thing that the actual original person is gone.","score_norm":0.945,"confidence":"HIGH","token_span":[2683,2695],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Final Connection: קו from רשימו and Reconstitution","starting_phrase":"So over here, he says very clearly that the קו comes from the רשימו.","start_time_sec":1536.94,"matched_text":"over here, he says very clearly that the קו comes from the רשימו.","score_norm":0.955,"confidence":"HIGH","token_span":[3476,3489],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

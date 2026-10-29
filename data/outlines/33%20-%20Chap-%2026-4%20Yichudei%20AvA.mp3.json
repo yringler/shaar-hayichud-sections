@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "33 - Chap- 26-4 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a4b7df4e-c4f5-4377-ac9c-4485331e0622",
+  "transcript": "transcripts/33%20-%20Chap-%2026-4%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:32.007Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Inner point of Bina on Yom Tov","starting_phrase":"כן בינה בבחינת פנימיות, and the same thing that on יום טוב,","start_time_sec":3.04,"matched_text":"כן בינה בבחינת פנימיות, and the same thing that on יום טוב,","score_norm":0.962,"confidence":"HIGH","token_span":[0,12],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Mutual eye of Chochma and Bina","starting_phrase":"כי ידוע שיש עי עין חכמה בבינה ובינה בחכמה","start_time_sec":98.30105324074073,"matched_text":"ידוע שיש עי עין חכמה בבינה ובינה בחכמה,","score_norm":1,"confidence":"HIGH","token_span":[314,322],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Meaning of \"בן בחכמה חכם בבינה\"","starting_phrase":"That's what it means הבן בחכמה וחכם בבינה, that in the חכמה itself","start_time_sec":167.06,"matched_text":"That's what it means הבן בחכמה וחכם בבינה, that in the חכמה itself,","score_norm":0.966,"confidence":"HIGH","token_span":[496,509],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Doing it for yourself","starting_phrase":"In other words, that that you're you're just it's for yourself.","start_time_sec":291.82,"matched_text":"other words, that that you're you're just it's for yourself.","score_norm":0.943,"confidence":"HIGH","token_span":[815,825],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"External influence in Chag HaTag and Ne'ila","starting_phrase":"On the other hand, when the חיצוניות השפעה is going into חג\"ת ונה\"י","start_time_sec":408.56,"matched_text":"other hand, when the חיצוניות השפעה is going into","score_norm":0.979,"confidence":"HIGH","token_span":[1202,1211],"matched_content":7,"content_coverage":0.636,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Applying abstract law to a case","starting_phrase":"How the law is applied in this case, right?","start_time_sec":470.66,"matched_text":"How the law is applied in this case,","score_norm":0.929,"confidence":"HIGH","token_span":[1366,1374],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1}
+  ]
+}

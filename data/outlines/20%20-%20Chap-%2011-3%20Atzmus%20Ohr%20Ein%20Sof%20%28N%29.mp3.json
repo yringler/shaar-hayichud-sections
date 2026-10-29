@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "69c50d3a-e412-46ed-82f2-2e8e0e858538",
+  "transcript": "transcripts/20%20-%20Chap-%2011-3%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:26.042Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Nature of a חק in the Commandments","starting_phrase":"And one of those things is, for example,","start_time_sec":3.16,"matched_text":"one of those things is, for example,","score_norm":0.902,"confidence":"HIGH","token_span":[1,8],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Transition to the Next Stage: אחד","starting_phrase":"Now, to the next stage: אחד. ולמטה מזה,","start_time_sec":229.02,"matched_text":"next stage: אחד. ולמטה מזה,","score_norm":1,"confidence":"HIGH","token_span":[583,588],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"One Level: ספירות עד אין קץ","starting_phrase":"And this is the level of אחד is the level","start_time_sec":300.74,"matched_text":"level of אחד is the level","score_norm":0.921,"confidence":"HIGH","token_span":[770,776],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Simple Unity and the Ten Sefirot","starting_phrase":"And this is called a simple unity","start_time_sec":448.96,"matched_text":"called a simple unity,","score_norm":0.978,"confidence":"HIGH","token_span":[1220,1224],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"The Ten Sefirot Without Distinct Essence","starting_phrase":"And also they are called the ten ספירות בלימה","start_time_sec":554.44,"matched_text":"also called the ten ספירות בלימה,","score_norm":0.956,"confidence":"HIGH","token_span":[1509,1515],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "35 - Chap- 14-1 The Kav (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0fb7aa3b-f24b-48c8-8cf0-7e8202d177ba",
+  "transcript": "transcripts/35%20-%20Chap-%2014-1%20The%20Kav%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T02:34:40.999Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the קו and חוט concepts","starting_phrase":"ומעתה, and now that we explained the light before the צמצום, and we explained the צמצום and the רשימו, now we're going to explain the next stage in the השתלשלות, which is the קו וחוט.","start_time_sec":0,"matched_text":"ומעתה, and now that we explained the light before the צמצום, and we explained the צמצום and the רשימו, now we're going to explain the next stage in the השתלשלות, which is the קו וחוט.","score_norm":0.923,"confidence":"HIGH","token_span":[0,35],"matched_content":17,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":2},
+    {"title":"Nature of צמצום: hidden point versus removal","starting_phrase":"And as far as the צמצום, the type of צמצום that makes it","start_time_sec":161.94,"matched_text":"far as the צמצום, the type of צמצום that makes","score_norm":0.924,"confidence":"HIGH","token_span":[464,474],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1},
+    {"title":"רשימו as source for all subsequent revelation","starting_phrase":"All the lights in the השתלשלות are all coming out from the רשימו.","start_time_sec":336.44,"matched_text":"All the lights in the השתלשלות are all coming out from the רשימו.","score_norm":0.952,"confidence":"HIGH","token_span":[1010,1023],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Builders vs architect: executing the hidden blueprint","starting_phrase":"So how did they do that? How do they do it, right?","start_time_sec":489.62,"matched_text":"how did they do that? How do they do","score_norm":0.959,"confidence":"HIGH","token_span":[1547,1556],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

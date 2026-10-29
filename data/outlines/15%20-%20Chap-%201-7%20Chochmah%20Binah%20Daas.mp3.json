@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "15 - Chap- 1-7 Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9e9516e4-ef37-4acd-a86d-e267b2925180",
+  "transcript": "transcripts/15%20-%20Chap-%201-7%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:04:49.164Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Connecting חכמה and בינה through the כתר","starting_phrase":"so now in this parenthesis, we're going to explain some more details about the way that חכמה and בינה work.","start_time_sec":17.18,"matched_text":"parenthesis, we're going to explain some more details about the way that חכמה and בינה work.","score_norm":0.975,"confidence":"HIGH","token_span":[30,46],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"The 72 and 63 Names of God","starting_phrase":"So in short, the the one spelling which corresponds to חכמה","start_time_sec":192.66,"matched_text":"short, the the one spelling which corresponds to חכמה","score_norm":0.962,"confidence":"HIGH","token_span":[519,528],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"From בינה שבבינה to חכמה שבבינה","starting_phrase":"The analysis is בינה שבבינה, and then through the analysis of בינה שבבינה","start_time_sec":318.44,"matched_text":"analysis is בינה שבבינה, and then through the analysis of בינה שבבינה,","score_norm":0.947,"confidence":"HIGH","token_span":[837,849],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"What Makes a נבון vs a חכם","starting_phrase":"He didn't find נבונים. He didn't find people of this type of understanding.","start_time_sec":502.42,"matched_text":"didn't find נבונים. He didn't find people of this type of understanding.","score_norm":0.963,"confidence":"HIGH","token_span":[1380,1392],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"How New Insight Arises Within בינה","starting_phrase":"ומכל מקום מה שבהשגת בינה מבין השגה חדשה מתוך השגה ההשגה זו","start_time_sec":792.84,"matched_text":"ומכל מקום מה שבהשגת בינה מבין השגה חדשה מתוך השגה ההשגה זו,","score_norm":0.994,"confidence":"HIGH","token_span":[2309,2321],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":9}
+  ]
+}

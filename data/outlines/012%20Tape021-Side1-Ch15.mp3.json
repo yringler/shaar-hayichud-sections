@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "012 Tape021-Side1-Ch15.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9bc10c80-8a76-43d7-82cb-e53b1baa7952",
+  "transcript": "transcripts/012%20Tape021-Side1-Ch15.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:25.640Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The lingering י׳ of the ס״ג and its empty space","starting_phrase":"See, ונמשך מכל הנ״ל in chapter 14, יוד ובחינת","start_time_sec":3.4400000000000004,"matched_text":"See, ונמשך מכל הנ״ל in chapter 14, יוד ובחינת","score_norm":0.992,"confidence":"HIGH","token_span":[0,9],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Understanding the big ד׳ רבתי: תבונה as מלכות","starting_phrase":"The basic thing is is basic thing is this is the ד׳ רבתי, the big דלת,","start_time_sec":97.5,"matched_text":"basic thing is is basic thing is this is the ד׳ רבתי, the big דלת,","score_norm":0.941,"confidence":"HIGH","token_span":[229,244],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Fourfold name structure: יו״ד ק״א וא״ו ק״א breakdown","starting_phrase":"In other words, the name the name יו״ד ק״א וא״ו ק״א is made up of four names.","start_time_sec":228.82,"matched_text":"other words, the name the name יו״ד ק״א וא״ו ק״א is made up of four names.","score_norm":0.979,"confidence":"HIGH","token_span":[566,582],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"Recap of chapter 12‑14: רושם in the empty void","starting_phrase":"He already explained to us better than this with the the in the kabbalistic This is in a kabbalistic manner.","start_time_sec":464.82,"matched_text":"already explained to us better than this with with the the in the kabbalistic This is in a kabbalistic manner.","score_norm":0.925,"confidence":"HIGH","token_span":[1131,1151],"matched_content":9,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"How the מקבל determines the קו measurement","starting_phrase":"According to the השפעה, which is goes according to the מקבל.","start_time_sec":569.29,"matched_text":"According to the השפעה, which is goes according to the מקבל.","score_norm":0.94,"confidence":"HIGH","token_span":[1370,1381],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Divine תבונה versus the recipient’s understanding","starting_phrase":"But the תבונה of the אייבערשטער is not according to the מקבל.","start_time_sec":740.97,"matched_text":"תבונה of the אייבערשטער is not according to the מקבל.","score_norm":0.924,"confidence":"HIGH","token_span":[1796,1806],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Three מידות: long, short, and medium explained","starting_phrase":"And the basic thing is that the measurement are the long, short, and medium.","start_time_sec":1530.05,"matched_text":"measurement are the long, short, and medium.","score_norm":0.683,"confidence":"HIGH","token_span":[3789,3796],"matched_content":4,"content_coverage":0.667,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Naming conventions: יעקב, יוסף, and נח","starting_phrase":"called יעקב, and when it's called referred to","start_time_sec":1616.41,"matched_text":"called יעקב, and when it's called referred","score_norm":0.988,"confidence":"HIGH","token_span":[3965,3972],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4}
+  ]
+}

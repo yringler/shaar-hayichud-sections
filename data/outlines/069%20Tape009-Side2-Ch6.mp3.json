@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "069 Tape009-Side2-Ch6.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d0103924-be64-469e-baaa-918ef9a67b35",
+  "transcript": "transcripts/069%20Tape009-Side2-Ch6.mp3.json",
+  "fetchedAt": "2026-10-29T00:41:55.565Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Bina’s Opposition and Its Closeness to the Divine","starting_phrase":"Okay, so let's go over a little bit, and the thing, the basic thing is that what he explained is that of all the ספירות, בינה is the one that has the most opposition, so therefore it's the one that can get closest.","start_time_sec":6.52,"matched_text":"let's go over a little bit, and the thing, the basic thing is that what he explained is that of all the ספירות, בינה is the one that has the most opposition, so therefore it's the one that can get closest.","score_norm":0.945,"confidence":"HIGH","token_span":[2,43],"matched_content":23,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":3},
+    {"title":"Ten Types of Avodah Linked to Bina","starting_phrase":"In other words, like one of the things about the ספירות is there's ten kind of עבודות, you know?","start_time_sec":159.39,"matched_text":"other words, like one of the things about the ספירות is there's ten kind of עבודות,","score_norm":0.946,"confidence":"HIGH","token_span":[371,387],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Ignorance Increases Connection to the Divine","starting_phrase":"And in the בינה, like the thing of","start_time_sec":322.93,"matched_text":"בינה, the other thing","score_norm":0.908,"confidence":"HIGH","token_span":[756,760],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Bina as Approximation and Simulation Explained","starting_phrase":"So the thing of בינה, what בינה actually is, is an approximation or a simulation.","start_time_sec":560.41,"matched_text":"thing of בינה, what בינה actually is, is an approximation or a simulation.","score_norm":0.907,"confidence":"HIGH","token_span":[1311,1324],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"How Chochma Completes Bina’s Picture","starting_phrase":"And this is what it says, the בינה and the חכמה work together.","start_time_sec":919.59,"matched_text":"what it says, the בינה and the חכמה work together.","score_norm":0.95,"confidence":"HIGH","token_span":[2217,2227],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Bina as the Highest Form of Teshuvah","starting_phrase":"And that is why also like you know, it's like you say what in various places it says that בינה is תשובה עילאה.","start_time_sec":1264.71,"matched_text":"why also like you know, it's like you say what in various places it says that בינה is תשובה עילאה.","score_norm":0.94,"confidence":"HIGH","token_span":[3104,3124],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Seder HaMadrigoth Centered on Bina","starting_phrase":"So, so he says the סדר המדריגות is בינה.","start_time_sec":1387.07,"matched_text":"says the the סדר המדריגות is בינה.","score_norm":0.948,"confidence":"HIGH","token_span":[3383,3390],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Joy in Bina, Not Psychology","starting_phrase":"from the externality of the מהוה he will","start_time_sec":1610.65,"matched_text":"from the externality of the מהוה he will","score_norm":0.935,"confidence":"HIGH","token_span":[3853,3861],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Joy Comes from Vision of the Divine","starting_phrase":"The שמחה that we're getting is because we","start_time_sec":1673.47,"matched_text":"שמחה that we're getting is because","score_norm":0.961,"confidence":"HIGH","token_span":[4001,4007],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Why God Chose the 'Idiots' for Bina","starting_phrase":"So the basic thing, like in other words, like","start_time_sec":1736.43,"matched_text":"basic thing, like in other words,","score_norm":0.962,"confidence":"HIGH","token_span":[4128,4134],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Higher Teshuvah and Uniqueness Stem from Bina","starting_phrase":"So, this is basically, you know, the the","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

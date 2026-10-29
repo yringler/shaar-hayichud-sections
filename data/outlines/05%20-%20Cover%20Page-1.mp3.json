@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "05 - Cover Page-1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cee1d789-6a86-4601-9e6e-10d070aaf37a",
+  "transcript": "transcripts/05%20-%20Cover%20Page-1.mp3.json",
+  "fetchedAt": "2026-10-28T23:49:02.576Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the Second Part of Ner Mitzvah","starting_phrase":"Let's begin with the very first page, the שער בלאט, of the second part of נר מצוה ותורה אור.","start_time_sec":2.3400000000000003,"matched_text":"Let's begin with the very first page, the שער בלאט, of the second part of נר מצוה ותורה אור.","score_norm":0.966,"confidence":"HIGH","token_span":[0,19],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":4},
+    {"title":"Upper and Lower Unity Verses Explained","starting_phrase":"בפסוק ראשון שמע ישראל וברוך שם כבוד מלכותו לעולם ועד,","start_time_sec":96.00498338870432,"matched_text":"בפסוק ראשון שמע ישראל וברוך שם כבוד מלכותו לעולם ועד,","score_norm":1,"confidence":"HIGH","token_span":[168,178],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"David’s Advice to Solomon on the Heart","starting_phrase":"כמו שאמר דוד לשלמה, like דוד told his son שלמה,","start_time_sec":186.42,"matched_text":"כמו שאמר דוד לשלמה, like דוד told his son שלמה,","score_norm":0.992,"confidence":"HIGH","token_span":[361,371],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Father’s Test: The Hide‑and‑Seek Metaphor","starting_phrase":"He gives a משל of a father that, for whatever reason, he decides like test his children,","start_time_sec":269.84,"matched_text":"gives a משל of a father that, for whatever reason, he decides like test his children,","score_norm":0.946,"confidence":"HIGH","token_span":[576,592],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"God Examines the Content of Our Hearts","starting_phrase":"וכתיב ותוכן לבות השם כו and it's written that God checks the content of the hearts,","start_time_sec":345.04,"matched_text":"וכתיב ותוכן לבות השם כו and it's written that God checks the content of the hearts,","score_norm":0.966,"confidence":"HIGH","token_span":[768,784],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Human Intellect vs. Divine Intellect","starting_phrase":"And this is one of the differences between שכל אנושי and שכל אלקי, human intellect and godly intellect.","start_time_sec":419.1,"matched_text":"one of the differences between שכל אנושי and שכל אלקי, human intellect and godly intellect.","score_norm":0.975,"confidence":"HIGH","token_span":[941,956],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Chassidus Aims to Bring the Messiah","starting_phrase":"So this is again the main point of חסידות is to bring משיח, both on a personal level,","start_time_sec":522.2,"matched_text":"again the main point of חסידות is to bring משיח, both on a personal level,","score_norm":0.952,"confidence":"HIGH","token_span":[1164,1179],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3}
+  ]
+}

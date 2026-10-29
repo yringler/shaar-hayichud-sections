@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "42 - Chap- 15-3 The Kav (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "93709d9c-3692-4c77-8a4c-277d4bd6d629",
+  "transcript": "transcripts/42%20-%20Chap-%2015-3%20The%20Kav%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:26.935Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Infinite Light Behind the Measured Line","starting_phrase":"אמנם however, יובן מעתה שהקו הזה יש בו מכח האור הראשון שלפני הצמצום, בבחינת אין סוף ממש.","start_time_sec":0,"matched_text":"אמנם however, יובן מעתה שהקו הזה יש בו מכח האור הראשון שלפני הצמצום, בבחינת אין סוף ממש.","score_norm":1,"confidence":"HIGH","token_span":[0,17],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":17},
+    {"title":"Essence of Intellect and חסידות","starting_phrase":"The essence of intellect is like is really חסידות, and then you know everything really.","start_time_sec":62.4,"matched_text":"essence of intellect is like is really חסידות, and then you know everything","score_norm":0.843,"confidence":"HIGH","token_span":[190,203],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"God’s Limited Revelation Through the קו","starting_phrase":"In other words, that really within the that the קו that God could reveal His whole עצם","start_time_sec":128.76,"matched_text":"other words, that really within the that the קו that God could reveal His whole עצם,","score_norm":0.954,"confidence":"HIGH","token_span":[428,444],"matched_content":10,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"Wisdom as a Vessel Separate from God","starting_phrase":"So in other words like the like wisdom is is like coming from the רשימו, the vessel of wisdom","start_time_sec":242.2,"matched_text":"other words like the like wisdom is is like coming from the רשימו, the vessel of wisdom,","score_norm":0.913,"confidence":"HIGH","token_span":[807,824],"matched_content":8,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Seeing God Through the Ten Sefirot Line","starting_phrase":"But now it's only comes through the ten ספירות, which is the קו that God measures out.","start_time_sec":367.44,"matched_text":"it's only comes through the ten ספירות, which is the קו that God measures out.","score_norm":0.972,"confidence":"HIGH","token_span":[1214,1229],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4}
+  ]
+}

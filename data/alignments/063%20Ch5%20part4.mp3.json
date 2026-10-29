@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "063 Ch5 part4.mp3",
+  "chapter": "chapter_05",
+  "transcript": "transcripts/063%20Ch5%20part4.mp3.json",
+  "transcriptionId": "52aaf780-d9ef-4242-818d-396c3f705a90",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/063%20Ch5%20part4.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 4006,
+    "hebrewWords": 312,
+    "matchedWords": 5,
+    "chapterLines": 49,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

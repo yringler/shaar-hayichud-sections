@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "053 Tape011-Side2-Ch7.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d4f9a443-db0f-422c-b4c3-1dd49716a493",
+  "transcript": "transcripts/053%20Tape011-Side2-Ch7.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:40.420Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"General Overview of the Chapter","starting_phrase":"and now we're starting really the second part of the book here.","start_time_sec":11.32,"matched_text":"we're starting really the second part of the book here.","score_norm":0.957,"confidence":"HIGH","token_span":[8,18],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Sefirot Are Not Separate Entities","starting_phrase":"And you know like it says, כל מאן דאפריש חד מחבריה from the עשר ספירות,","start_time_sec":126.7,"matched_text":"says, כל מאן דאפריש חד מחבריה from the עשר ספירות,","score_norm":0.993,"confidence":"HIGH","token_span":[270,280],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Beginning Before the First Contraction","starting_phrase":"דבתחילה, קודם הצמצום הראשון, היה הוא ושמו בלבד.","start_time_sec":610.5608082120589,"matched_text":"דבתחילה, קודם הצמצום הראשון, היה הוא ושמו בלבד.","score_norm":1,"confidence":"HIGH","token_span":[1309,1317],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Chain of Kingdoms from אין סוף","starting_phrase":"ואחר כך נמשך על ידי צמצום מלכות דאין סוף להיות כתר דא״ק,","start_time_sec":729.9307848232872,"matched_text":"ואחר כך נמשך על ידי צמצום מלכות דאין סוף להיות כתר דא״ק,","score_norm":0.994,"confidence":"HIGH","token_span":[1589,1601],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Expanding the King's Borders","starting_phrase":"And when he wants to become a bigger king, he doesn't become a bigger king by making his palace bigger,","start_time_sec":933.9532094594638,"matched_text":"wants to become a bigger king, he doesn't become a bigger king by making his palace bigger,","score_norm":0.9,"confidence":"HIGH","token_span":[2334,2351],"matched_content":12,"content_coverage":0.923,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Seeing God in Daily Events","starting_phrase":"Whenever he sees whatever happened, immediately he can put the whole thing together in one shot,","start_time_sec":1603.37,"matched_text":"whenever he sees whatever happened, immediately he can put the whole thing together in one shot,","score_norm":0.978,"confidence":"HIGH","token_span":[3359,3375],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Divine Presence in the Everyday World","starting_phrase":"בסופם דווקא, is דווקא the thing of","start_time_sec":1791.872216735969,"matched_text":"בסופם דווקא, is דווקא the thing","score_norm":0.963,"confidence":"HIGH","token_span":[3790,3796],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

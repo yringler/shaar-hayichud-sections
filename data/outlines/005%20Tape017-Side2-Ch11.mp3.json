@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "005 Tape017-Side2-Ch11.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d8adf65e-5669-467d-b01b-027f3b894c55",
+  "transcript": "transcripts/005%20Tape017-Side2-Ch11.mp3.json",
+  "fetchedAt": "2026-10-29T00:32:24.225Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Continuation of Chapter 11 and the נמשל","starting_phrase":"Okay, so chapter 11 is basically the continuation of chapter 10, it's a נמשל.","start_time_sec":5,"matched_text":"chapter 11 is basically the continuation of chapter 10, it's a נמשל.","score_norm":0.965,"confidence":"HIGH","token_span":[2,14],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Rashi on קדמון vs יחיד","starting_phrase":"The רש״ב is talking about קדמון, he's not talking about יחיד.","start_time_sec":79.72,"matched_text":"רש״ב is talking about קדמון, he's not talking about יחיד.","score_norm":0.991,"confidence":"HIGH","token_span":[159,169],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8},
+    {"title":"Halel Paritsher on Levels of Light and Bones","starting_phrase":"And this is basically, remember we were talking about what הלל פאריטשער said?","start_time_sec":142.04,"matched_text":"basically, remember we were talking about what הלל פאריטשער said?","score_norm":0.982,"confidence":"HIGH","token_span":[295,305],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Avoiding Confusion Between Rabbi Rebbe Chapters","starting_phrase":"You know what I mean? Right. No, it's very easy to confuse the two if you don't know what he's what it's actually talking about.","start_time_sec":250.6,"matched_text":"what I mean? Right. No, it's very easy to confuse the two if you don't know what he's what it's actually talking about.","score_norm":0.94,"confidence":"HIGH","token_span":[553,576],"matched_content":13,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Chafetz Chasad and the Tiny פרט Illustration","starting_phrase":"ומנקרא עשר ספירות הגנוזות בעלם העצמות ממש, מה בחינת חפץ חסד, שהוא בחינת עצמות אין סוף שמחמתו וסיבתו היה רעותא דפשיט לכל השתלשלות.","start_time_sec":440.1761557177615,"matched_text":"ומנקרא עשר ספירות הגנוזות בעלם העצמות ממש, מה בחינת חפץ חסד, שהוא בחינת עצמות אין סוף שמחמתו וסיבתו היה רעותא דפשיט לכל השתלשלות.","score_norm":0.994,"confidence":"HIGH","token_span":[1020,1043],"matched_content":21,"content_coverage":1,"longest_content_run_soft":21,"longest_content_run_strict":11},
+    {"title":"Focusing on Goal vs Process in Basketball","starting_phrase":"just totally mess up. Yeah, I was reading a thing in","start_time_sec":1690.178929440389,"matched_text":"totally mess up. Yeah, I was reading a thing","score_norm":0.966,"confidence":"HIGH","token_span":[3864,3873],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Loss of Self and Spontaneity in Action","starting_phrase":"In other words, if you're thinking of how you're going to do it","start_time_sec":1765.54,"matched_text":"other words, if you're thinking of how you're going to do","score_norm":0.973,"confidence":"HIGH","token_span":[4077,4088],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

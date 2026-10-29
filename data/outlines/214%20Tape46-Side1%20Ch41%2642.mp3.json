@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "214 Tape46-Side1 Ch41&42.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a73d62d1-09d8-4e22-851c-125ed3c8ef56",
+  "transcript": "transcripts/214%20Tape46-Side1%20Ch41%2642.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:33.861Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Mother’s Clothing Parable","starting_phrase":"א והנה ידוע בענין המאמר דאימא אוזפת מאנהא לברתא.","start_time_sec":0,"matched_text":"א והנה ידוע בענין המאמר דאימא אוזפת מאנהא לברתא.","score_norm":1,"confidence":"HIGH","token_span":[0,9],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Three Levels of Thought Explained","starting_phrase":"ויש ג' מדריגות במחשבה עצמה והוא בחינת מחשבה דמחשבה ודיבור","start_time_sec":77.08511733535204,"matched_text":"ג' מדריגות במחשבה עצמה והוא בחינת מחשבה דמחשבה ודיבור","score_norm":0.888,"confidence":"HIGH","token_span":[154,163],"matched_content":9,"content_coverage":0.9,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Imagination vs. Dreaming in Thought","starting_phrase":"כמו שמבואר במקום אחר בענין וביד הנביאים אדמה בכח המדמה שבמחשבה בלבד","start_time_sec":261.88,"matched_text":"כמו שמבואר במקום אחר בענין וביד הנביאים אדמה בכח המדמה שבמחשבה בלבד,","score_norm":1,"confidence":"HIGH","token_span":[483,495],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":12},
+    {"title":"Thought of Words vs. Meaning","starting_phrase":"וכידוע שזהו מבחינת דיבור שבמחשבה נעשה בבחינת מחשבה שבדיבור","start_time_sec":449.94,"matched_text":"וכידוע שזהו מבחינת דיבור שבמחשבה נעשה בבחינת מחשבה שבדיבור.","score_norm":1,"confidence":"HIGH","token_span":[877,886],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Depth of Thought and Knowledge","starting_phrase":"אבל גדלות הדעת הוא המביא למחשבה בריבוי צירופים משונים","start_time_sec":966.9690234670704,"matched_text":"גדלות הדעת הוא המביא למחשבה בריבוי צירופים משונים.","score_norm":1,"confidence":"HIGH","token_span":[2071,2079],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Root of Division: Power of Letters","starting_phrase":"ומעתה יש ומעתה יובן בענין שורש כח המחלק בצירופי אותיות דמחשבה במדרגה ג׳","start_time_sec":1042.3935352006054,"matched_text":"ומעתה יש ומעתה יובן בענין שורש כח המחלק בצירופי אותיות דמחשבה במדרגה ג׳,","score_norm":1,"confidence":"HIGH","token_span":[2247,2260],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":13},
+    {"title":"Car Designer Analogy for Conceptual Cutting","starting_phrase":"Like for instance, like when a car designer is thinking of a car","start_time_sec":1375.4,"matched_text":"car designer, the way he thinks of a car","score_norm":0.429,"confidence":"LOW","token_span":[2892,2901],"matched_content":3,"content_coverage":0.5,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Child’s Preference and the Insight of Bina","starting_phrase":"Like you see a little kid, you know, that you give him a toy car","start_time_sec":1680.98,"matched_text":"see a little kid, you know, that you give him a toy car,","score_norm":0.943,"confidence":"HIGH","token_span":[3606,3619],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Understanding the הבחנה of בינה","starting_phrase":"the הבחנה of בינה. Right. But what?","start_time_sec":1774.46,"matched_text":"הבחנה of בינה. Right. But what?","score_norm":0.93,"confidence":"HIGH","token_span":[3838,3844],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "62 - Chap- 30-1 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "chapter": "chapter_30",
+  "transcript": "transcripts/62%20-%20Chap-%2030-1%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "transcriptionId": "e1d7ce80-a6a6-448d-9d0d-20ebbf58d056",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1993,
+    "hebrewWords": 296,
+    "matchedWords": 91,
+    "chapterLines": 61,
+    "alignedLines": 7,
+    "firstLineIndex": 0,
+    "lastLineIndex": 6,
+    "meanConfidence": 0.962
+  },
+  "segments": [
+    {"startSeconds":9.54,"endSeconds":15.2,"chapter":"chapter_30","lineId":"beqxd5no","confidence":1,"matchedWords":13,"lineWords":13,"firstWord":1,"lastWord":13},
+    {"startSeconds":134.66,"endSeconds":141.56,"chapter":"chapter_30","lineId":"ej5ygzks","confidence":1,"matchedWords":10,"lineWords":10,"firstWord":366,"lastWord":376},
+    {"startSeconds":142.1,"endSeconds":143.94,"chapter":"chapter_30","lineId":"ihyzqopu","confidence":1,"matchedWords":5,"lineWords":5,"firstWord":377,"lastWord":381},
+    {"startSeconds":160.523,"endSeconds":165.16,"chapter":"chapter_30","lineId":"wsj7zjv2","confidence":0.85,"matchedWords":12,"lineWords":14,"firstWord":423,"lastWord":434},
+    {"startSeconds":187.38,"endSeconds":227.16,"chapter":"chapter_30","lineId":"fmzb4lj7","confidence":0.958,"matchedWords":22,"lineWords":24,"firstWord":502,"lastWord":605},
+    {"startSeconds":300.62,"endSeconds":323.82,"chapter":"chapter_30","lineId":"6latv5ie","confidence":0.983,"matchedWords":18,"lineWords":21,"firstWord":819,"lastWord":870},
+    {"startSeconds":332.12,"endSeconds":347.32,"chapter":"chapter_30","lineId":"55t64cev","confidence":0.945,"matchedWords":11,"lineWords":12,"firstWord":902,"lastWord":941}
+  ]
+}

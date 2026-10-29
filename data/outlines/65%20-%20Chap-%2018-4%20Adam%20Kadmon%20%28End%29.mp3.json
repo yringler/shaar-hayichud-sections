@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "65 - Chap- 18-4 Adam Kadmon (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a2fabe39-a811-444b-8491-4c3fdbc91d9e",
+  "transcript": "transcripts/65%20-%20Chap-%2018-4%20Adam%20Kadmon%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:56:50.430Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Revealed Desire Contains Ten Sephirot","starting_phrase":"וידוע דכל רצון גלוי כלול מ-י׳, every revealed רצון has ten ספירות.","start_time_sec":2.82,"matched_text":"וידוע דכל רצון גלוי כלול מ-י׳, every revealed רצון has ten ספירות.","score_norm":0.899,"confidence":"HIGH","token_span":[0,12],"matched_content":11,"content_coverage":0.917,"longest_content_run_soft":11,"longest_content_run_strict":6},
+    {"title":"Different People Form Distinct Desires","starting_phrase":"So different people can make different רצונות.","start_time_sec":78.06,"matched_text":"different people can make different רצונות.","score_norm":1,"confidence":"HIGH","token_span":[228,234],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Non‑Jewish Fixed Desires and Their Fate","starting_phrase":"And the גוים, they're all set in a certain סדר that they have a רצון to be like this and like that,","start_time_sec":154.88,"matched_text":"גוים, they're all set in a certain סדר that they have a רצון","score_norm":0.954,"confidence":"HIGH","token_span":[482,495],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Divine Decision to Reveal Himself as Wisdom","starting_phrase":"He decided to reveal himself as wise. Since השם like hits if this is the real נמשל","start_time_sec":255.4,"matched_text":"decided to reveal himself as wise. Since השם like hits if this is the real נמשל","score_norm":0.946,"confidence":"HIGH","token_span":[757,773],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "055 Tape012-Side2-Ch7.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "05ea67e7-88c3-42c2-a702-7bbdfae09ac6",
+  "transcript": "transcripts/055%20Tape012-Side2-Ch7.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:54.467Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Complexity of Widths and Lengths","starting_phrase":"Three separate widths besides having to understand that three lengths.","start_time_sec":0,"matched_text":"Three separate widths besides having to understand that three lengths.","score_norm":0.98,"confidence":"HIGH","token_span":[0,10],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"לבוש Concepts: אלף and עין","starting_phrase":"And this is what we were talking about, the לבושי אור and the לבושי עור with the אלף and the עין","start_time_sec":193.3149062500005,"matched_text":"what we were talking about, the לבושי אור and the לבושי עור with the אלף and the עין,","score_norm":0.942,"confidence":"HIGH","token_span":[547,565],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Understanding the 'Key' Before Aleph-Bet","starting_phrase":"The key means that's what you start with. It's not even כיתה א' yet.","start_time_sec":270.2417187500002,"matched_text":"key means that's what you start with. It's not even כיתה א' yet.","score_norm":0.994,"confidence":"HIGH","token_span":[833,846],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":8},
+    {"title":"Superficial Letter Recognition vs Deep Understanding","starting_phrase":"He looks, \"Oh, look, an אלף.\" Right.","start_time_sec":578.8632187499973,"matched_text":"look and say, \"Oh, look, an אלף.\"","score_norm":0.873,"confidence":"HIGH","token_span":[1468,1475],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Worm Metaphor and Self-Perception","starting_phrase":"And this is what דוד המלך says, \"ואנכי תולעת ולא איש.\"","start_time_sec":829.1312499999982,"matched_text":"what דוד המלך says, \"ואנכי תולעת ולא איש.\"","score_norm":1,"confidence":"HIGH","token_span":[2216,2224],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"חסידות and the Need for מסירת נפש","starting_phrase":"In order to learn חסידות, and this is basically,","start_time_sec":924.3487812499999,"matched_text":"order to learn חסידות, and this is basically,","score_norm":0.933,"confidence":"HIGH","token_span":[2477,2485],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

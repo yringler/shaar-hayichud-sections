@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "065 Tape007-Side2-Ch6.mp3",
+  "chapter": "chapter_06",
+  "transcript": "transcripts/065%20Tape007-Side2-Ch6.mp3.json",
+  "transcriptionId": "5e08a1ad-44dc-4d40-9af9-93a5c8dbe754",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1870,
+    "hebrewWords": 144,
+    "matchedWords": 3,
+    "chapterLines": 82,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "202 Tape37-Side2-ch 34 35.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "be4c518b-95d6-401e-b551-f5709d987957",
+  "transcript": "transcripts/202%20Tape37-Side2-ch%2034%2035.mp3.json",
+  "fetchedAt": "2026-10-29T00:42:28.131Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Mochin Dinika from zero to six","starting_phrase":"until his מדות are only according to what the שכל is מחייב.","start_time_sec":4.499999999999999,"matched_text":"until his מדות are only according to what the שכל is מחייב.","score_norm":0.964,"confidence":"HIGH","token_span":[0,12],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Each trait composed of nine sefirot","starting_phrase":"At that point each מדה is already made of nine ספירות, שכאשר נגדלו המוחין","start_time_sec":213.26,"matched_text":"point each מדה is already made of nine ספירות, שכאשר נגדלו המוחין","score_norm":0.987,"confidence":"HIGH","token_span":[400,412],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Ability to 'sell' wisdom from age thirteen","starting_phrase":"From 13, מבן י״ג עד כ׳ שראוי ראוי למכור בנכסי אביו,","start_time_sec":312.66,"matched_text":"from 13, מבן י״ג עד כ׳ שראוי ראוי למכור בנכסי אביו,","score_norm":1,"confidence":"HIGH","token_span":[560,571],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":11},
+    {"title":"True meaning of רצון vs personal desire","starting_phrase":"the main mistake of the Hermetic Kabbalah. I mean they","start_time_sec":933.16,"matched_text":"main mistake of the Hermetic Kabbalah.","score_norm":0.969,"confidence":"HIGH","token_span":[1925,1931],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Distinguishing Israel and Jacob concepts","starting_phrase":"והנה מעתה יש להבין ענין יחוד ישראל ולאה, שהוא","start_time_sec":1073.16,"matched_text":"והנה מעתה יש להבין ענין יחוד ישראל ולאה,","score_norm":1,"confidence":"HIGH","token_span":[2151,2159],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8}
+  ]
+}

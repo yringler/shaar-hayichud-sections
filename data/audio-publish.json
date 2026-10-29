@@ -2,10 +2,8 @@
   "$comment": "Which committed transcripts/ and alignments/ are published at /data/v1/ (and so shown on the site). A lecture is published when its id is in `lectures` or it sits under a heading whose id is in `sections`. Alignment segments below `minConfidence` are dropped from the published files. See data/README.md, 'Publishing audio'.",
   "minConfidence": 0.45,
   "sections": [
-    "4"
+    "0",
+    "37"
   ],
-  "lectures": [
-    "001 Intro.mp3",
-    "002 Tape016-Side1-Ch10.mp3"
-  ]
+  "lectures": []
 }

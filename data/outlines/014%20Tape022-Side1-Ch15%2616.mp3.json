@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "014 Tape022-Side1-Ch15&16.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0baf1563-bfa1-453f-8701-1b0e933ee1b1",
+  "transcript": "transcripts/014%20Tape022-Side1-Ch15%2616.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:45.365Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Equal Powers of Expansion and Contraction","starting_phrase":"וב' וב' כווים שקולים הם בבחינת אין סוף, על כן גם בהארה זו דאין סוף בקו,","start_time_sec":0,"matched_text":"וב' וב' כווים שקולים הם בבחינת אין סוף, על כן גם בהארה זו דאין סוף בקו,","score_norm":0.991,"confidence":"HIGH","token_span":[0,16],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":8},
+    {"title":"The Line (קו) as Universal Principle","starting_phrase":"ז', והנה מעתה יש להבין פרטי ענייני הקו והחוט, ואיך שיש בו בחינת מקיפים ופנימיים כמו שנתבאר בעץ חיים, מתעגל וחוזר ומתעגל.","start_time_sec":203.61762468104845,"matched_text":"ז', והנה מעתה יש להבין פרטי ענייני הקו והחוט, ואיך שיש בו בחינת מקיפים ופנימיים כמו שנתבאר בעץ חיים, מתעגל וחוזר ומתעגל.","score_norm":1,"confidence":"HIGH","token_span":[445,467],"matched_content":22,"content_coverage":1,"longest_content_run_soft":22,"longest_content_run_strict":22},
+    {"title":"Mekhosha Kadma and Its Relation to the Line","starting_phrase":"And he told you that he is going to explain to you the line and how the line is היולי כללי, but you notice he's not explaining the line, he's explaining the first circle.","start_time_sec":276.46,"matched_text":"told you that he is going to explain to you the line and how the line is היולי כללי, but you notice he's not explaining the line, he's explaining the first circle.","score_norm":0.94,"confidence":"HIGH","token_span":[598,630],"matched_content":17,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Simple vs Absolute Desire","starting_phrase":"שני מיני רצון, אחד רצון הפשוט שבעצמות, שנכלל בעצמותו ממש, שלא נקרא עדיין בשם מחשבה ורצון כללי.","start_time_sec":485.8984783112987,"matched_text":"מיני רצון, אחד רצון הפשוט שבעצמות, שנכלל בעצמותו ממש, שלא נקרא עדיין בשם מחשבה ורצון כללי.","score_norm":1,"confidence":"HIGH","token_span":[1165,1181],"matched_content":16,"content_coverage":0.941,"longest_content_run_soft":16,"longest_content_run_strict":16},
+    {"title":"Car Desire Example","starting_phrase":"So the guy just says, I decided to have to get a car.","start_time_sec":968.9048689399218,"matched_text":"guy just says, I decided to have to get a car.","score_norm":0.94,"confidence":"HIGH","token_span":[2579,2590],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":1},
+    {"title":"House Desire and Composite Wishes","starting_phrase":"And the basic משל, if you want a house, so you go to the guy and you tell him, I want a house.","start_time_sec":1172.7176246810486,"matched_text":"basic משל, if you want a house, so you go to the guy and you tell him, I want a house.","score_norm":0.922,"confidence":"HIGH","token_span":[2807,2828],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"Understanding סקירה אחת and the spreading of desires","starting_phrase":"also comes בסקירה אחת, like the kitchen, comes the whole kitchen but with a סקירה אחת.","start_time_sec":1512.1481697981924,"matched_text":"also comes בסקירה אחת, like the kitchen, comes the whole kitchen but with a סקירה אחת.","score_norm":0.966,"confidence":"HIGH","token_span":[3930,3946],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Warning against defining God as צופה ומביט בסקירה אחת","starting_phrase":"So some people when they think, they say, \"Oh, I know what's God. It's צופה ומביט בסקירה אחת.\"","start_time_sec":1725.7404268151251,"matched_text":"some people when they think, they say, \"Oh, I know what's God. It's צופה ומביט בסקירה אחת.\"","score_norm":0.979,"confidence":"HIGH","token_span":[4142,4159],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":7},
+    {"title":"Concluding note – flipping the tape","starting_phrase":"I need to flip the tape. Yeah. I need to flip the tape.","start_time_sec":1790.76,"matched_text":"need to flip the tape. Yeah. I need to flip the tape.","score_norm":0.956,"confidence":"HIGH","token_span":[4298,4310],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "78 - Chap- 21-2  Gimel Kavin.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f8513847-b5e3-4b22-a46c-49ef01607329",
+  "transcript": "transcripts/78%20-%20Chap-%2021-2%20%20Gimel%20Kavin.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:14.692Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Source of All Strength: בינה and Distinctions","starting_phrase":"Right, ואימא מקור כל הגבורות וכולי, and אימא","start_time_sec":0,"matched_text":"ואימא מקור כל הגבורות וכולי, and אימא","score_norm":0.989,"confidence":"HIGH","token_span":[1,8],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"דעת as the Mediator Recognizing Both Sides","starting_phrase":"So what דעת does is it's able to recognize both,","start_time_sec":126.18,"matched_text":"what דעת does is it's able to recognize both,","score_norm":0.978,"confidence":"HIGH","token_span":[390,399],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Dual Use of שכל in חסד and דין","starting_phrase":"כמו יצר לב וכולי, like with the מבול, that the same שכל was used both for חסד and for דין,","start_time_sec":259.53999999999996,"matched_text":"וכמו יצר לב וכולי, like with the מבול, that the same שכל was used both for חסד and for דין,","score_norm":0.935,"confidence":"HIGH","token_span":[769,789],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"תפארת as the Middle Between חסד and גבורה","starting_phrase":"וכן מידת התפארת מכריע בין חסד לגבורה,","start_time_sec":399.46,"matched_text":"וכן מידת התפארת מכריע בין חסד לגבורה,","score_norm":1,"confidence":"HIGH","token_span":[1226,1233],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"יעקב’s Measure: Helping While Promoting Independence","starting_phrase":"וכן מידת יעקב, it's the מידה of יעקב, that יעקב","start_time_sec":579.28,"matched_text":"וכן מידת יעקב, it's the מידה of יעקב, that יעקב","score_norm":0.97,"confidence":"HIGH","token_span":[1774,1784],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Kidney Analogy for נצח and הוד Dynamics","starting_phrase":"So the kidney also, what is medically called normally in English is called the kidney is only the bottom third,","start_time_sec":700.76,"matched_text":"kidney also, what is medically called normally in English is called the kidney is only the bottom third,","score_norm":0.967,"confidence":"HIGH","token_span":[2168,2186],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3}
+  ]
+}

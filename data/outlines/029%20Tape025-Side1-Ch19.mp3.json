@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "029 Tape025-Side1-Ch19.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "27551daa-c239-46bd-ba1d-b6bde555a13e",
+  "transcript": "transcripts/029%20Tape025-Side1-Ch19.mp3.json",
+  "fetchedAt": "2026-10-29T00:35:56.554Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the Hidden Ten Sefirot of the Kingship","starting_phrase":"Okay, פרק י\"ט. מעתה יש להבין בשרש עשר ספירות דעקודים, ששרשם בבחינת מלכות דא\"ק,","start_time_sec":0,"matched_text":"פרק י\"ט. מעתה יש להבין בשרש עשר ספירות דעקודים, ששרשם בבחינת מלכות","score_norm":0.828,"confidence":"HIGH","token_span":[1,13],"matched_content":11,"content_coverage":0.733,"longest_content_run_soft":11,"longest_content_run_strict":10},
+    {"title":"Divine Anger and Joy Over Solomon’s Actions","starting_phrase":"And because he built the בית המקדש, he was happy with him.","start_time_sec":104.49925126903567,"matched_text":"because he built the בית המקדש, he was happy with him.","score_norm":0.96,"confidence":"HIGH","token_span":[244,255],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Human Evil and God’s Decision Not to Destroy","starting_phrase":"And now you're saying, \"Oh, they're bad, so I won't destroy the world.","start_time_sec":174.86,"matched_text":"you're saying, \"Oh, they're bad, so I won't destroy the world.","score_norm":0.975,"confidence":"HIGH","token_span":[400,411],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Composite vs Simple: The Concept of מורכב","starting_phrase":"Like a מורכב. A פשוט means it's one thing, and מורכב means that you it's מורכב from pieces.","start_time_sec":248.94,"matched_text":"מורכב. A פשוט means it's one thing, and מורכב means that you it's מורכב from pieces.","score_norm":0.975,"confidence":"HIGH","token_span":[607,623],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"Questioning Misguided Kindness: חסד of תוהו","starting_phrase":"What kind of חסד is that? It's not תיקון, it's not מצד הדבר, it's just you, oh, you have to be nice to the you have to be nice.","start_time_sec":351.6,"matched_text":"what kind of חסד is that? It's not תיקון, it's not מצד הדבר, it's just you, oh, you have to be nice to the you have to be nice.","score_norm":0.927,"confidence":"HIGH","token_span":[899,928],"matched_content":15,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":8},
+    {"title":"Distinguishing נקודה, ספירה, and פרצוף","starting_phrase":"Now, we talked about נקודה and פרצוף, which נקודה by the way is עקודים, not נקודה.","start_time_sec":472.78,"matched_text":"talked about נקודה and פרצוף, which נקודה by the way is עקודים, not נקודה.","score_norm":0.97,"confidence":"HIGH","token_span":[1212,1226],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"The Muslim Missionary Analogy: Bin Laden","starting_phrase":"Who’s a Muslim missionary? Bin Laden. Right.","start_time_sec":543.56,"matched_text":"Muslim missionary? Bin Laden.","score_norm":0.767,"confidence":"HIGH","token_span":[1338,1342],"matched_content":4,"content_coverage":0.667,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Christian Missionaries Compared to Historical Extremism","starting_phrase":"The Christian missionary is also Bin Laden, like the Inquisition.","start_time_sec":883.12,"matched_text":"Christian missionary is also Bin Laden, like the Inquisition.","score_norm":0.966,"confidence":"HIGH","token_span":[2207,2216],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Judgment’s Essence: No Mercy in the Core","starting_phrase":"In the עצם המידה of judgment, you can't have רחמים.","start_time_sec":1332.74,"matched_text":"עצם הדין, you can't have רחמים.","score_norm":0.593,"confidence":"MEDIUM","token_span":[3275,3281],"matched_content":4,"content_coverage":0.667,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"From מלכות to כתר: Flow of Sefirot","starting_phrase":"And the ענין is that from מלכות of חסד of א״ק becomes כתר of חסד of אצילות.","start_time_sec":1543.5,"matched_text":"from מלכות of חסד of א״ק becomes כתר of חסד of אצילות.","score_norm":0.855,"confidence":"HIGH","token_span":[3670,3682],"matched_content":8,"content_coverage":0.889,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"From מלכות to כתר: Upper to Lower Transition","starting_phrase":"that from מלכות of a a a מלכות of a מידה of א״ק becomes the כתר of that מידה of אצילות.","start_time_sec":1639.11,"matched_text":"from מלכות of a a a מלכות of a מידה of א״ק becomes the כתר of that מידה of אצילות.","score_norm":0.911,"confidence":"HIGH","token_span":[3840,3860],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "66 - Chap- 19-1 Ak to Atzilus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "475bf3c9-6123-46be-867a-542b74a3dcdb",
+  "transcript": "transcripts/66%20-%20Chap-%2019-1%20Ak%20to%20Atzilus.mp3.json",
+  "fetchedAt": "2026-10-28T23:56:58.990Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Root of the Ten Sefirot of Atzilut and Keter","starting_phrase":"מעתה יש להבין בשרש עשר ספירות דאצילות","start_time_sec":0,"matched_text":"מעתה יש להבין בשרש עשר ספירות דאצילות","score_norm":1,"confidence":"HIGH","token_span":[0,7],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"From Desire for a Home to a Concrete House","starting_phrase":"So like, first a person has the the desire for a home.","start_time_sec":66.02,"matched_text":"first a person has the the desire for a home.","score_norm":0.925,"confidence":"HIGH","token_span":[171,181],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Three Stages of Bia in Intention and Action","starting_phrase":"So in general, there are three stages in this which correspond to בי״ע.","start_time_sec":174.36,"matched_text":"general, there are three stages in this which correspond to בי״ע.","score_norm":0.959,"confidence":"HIGH","token_span":[513,524],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Need for an Ultimate Goal in Government and Ethics","starting_phrase":"So you also have to have those three stages in your רצון.","start_time_sec":346.86,"matched_text":"also have to have those three stages in your רצון.","score_norm":0.967,"confidence":"HIGH","token_span":[1048,1058],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Introducing the Hidden Ten Sefirot of Atzilut","starting_phrase":"והנה תחלה יש להקדים בענין עשר ספירות הגנוזות","start_time_sec":508.25243953732917,"matched_text":"והנה תחלה יש להקדים בענין עשר ספירות הגנוזות","score_norm":1,"confidence":"HIGH","token_span":[1531,1539],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Fire Hidden in Coal – Example from Sefer Yetzirah","starting_phrase":"ואמר בספר יצירה, איזה ספר יצירה, שזה כשלהבת הקשורה בגחלת","start_time_sec":602.8,"matched_text":"ואמר בספר יצירה, איזה ספר יצירה, שזה כשלהבת הקשורה בגחלת,","score_norm":0.993,"confidence":"HIGH","token_span":[1788,1798],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6}
+  ]
+}

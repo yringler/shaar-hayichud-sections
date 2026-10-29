@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "54 - Chap- 17-2 Igullim-Yosher.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5da93ac6-6860-4aa4-b1d5-4efbdf43aef4",
+  "transcript": "transcripts/54%20-%20Chap-%2017-2%20Igullim-Yosher.mp3.json",
+  "fetchedAt": "2026-10-28T23:55:18.321Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Life of All Worlds and Divine Will","starting_phrase":"ונקרא And this is called חי כל העולמים, the life of all the worlds.","start_time_sec":0,"matched_text":"ונקרא And this is called חי כל העולמים, the life of all the worlds.","score_norm":0.948,"confidence":"HIGH","token_span":[0,14],"matched_content":8,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"House‑Building Analogy: Every Detail Matters","starting_phrase":"Well, think about it like when you want a house when you if the whole thing of wanting a house is that you want it to be exactly the way that you want it.","start_time_sec":113.16,"matched_text":"\"Well, think about it like when you want a house when you if the whole thing of wanting a house is that you want it to be exactly the way that you want","score_norm":0.907,"confidence":"HIGH","token_span":[322,355],"matched_content":15,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Pizza Example Illustrates Pre‑Planned Desire","starting_phrase":"So, you say So, שמואל, you want What do you want to do tonight?","start_time_sec":254.44,"matched_text":"say So, שמואל, you want What do you want to do tonight?","score_norm":0.963,"confidence":"HIGH","token_span":[770,782],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"From Adam to Abraham: Shifts in Divine Purpose","starting_phrase":"As we go through history, so, in a way, it becomes less, in a way, it becomes more.","start_time_sec":329.08,"matched_text":"go through history, so, in a way, it becomes less, in a way, it becomes more.","score_norm":0.945,"confidence":"HIGH","token_span":[954,970],"matched_content":9,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Kabbalistic Introduction: The Ancient Desire (עתיקא דעתיקין)","starting_phrase":"ובלשון הזהר, in the לשון of the זהר, נקרא עתיקא דעתיקין, the רצון קדום is called the עתיק of all עתיק's,","start_time_sec":537.74,"matched_text":"ובלשון הזהר, in the לשון of the זהר, נקרא עתיקא דעתיקין, the רצון קדום is called the עתיק of all עתיק's,","score_norm":0.956,"confidence":"HIGH","token_span":[1532,1553],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":4},
+    {"title":"Three Levels of Desire and the Concept of מלכות","starting_phrase":"Even in the היולי רצון פשוט, there was enclosed the היולי תענוג פשוט.","start_time_sec":616.28,"matched_text":"Even in the היולי רצון פשוט, there was enclosed the היולי תענוג פשוט.","score_norm":0.968,"confidence":"HIGH","token_span":[1743,1756],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Hidden Ancient Desire (עתיקא סתימאה) and Its Role","starting_phrase":"ועתיקא סתימאה, whenever when when we say עתיקא סתימאה, הוא בבחינת כתר דא''ק, that is the כתר of א''ק.","start_time_sec":719.5584078711986,"matched_text":"ועתיקא סתימאה, whenever when when we say עתיקא סתימאה, הוא בבחינת כתר דא''ק, that is the כתר of א''ק.","score_norm":0.974,"confidence":"HIGH","token_span":[2028,2047],"matched_content":14,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":7}
+  ]
+}

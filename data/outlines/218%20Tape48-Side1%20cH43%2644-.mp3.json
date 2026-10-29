@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "218 Tape48-Side1 cH43&44-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f0619591-b9d4-4f69-a62a-11fffcbb8bfc",
+  "transcript": "transcripts/218%20Tape48-Side1%20cH43%2644-.mp3.json",
+  "fetchedAt": "2026-10-29T00:45:08.146Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Three Levels: Thought, Speech, Action","starting_phrase":"One is the מחשבה, דיבור, ומעשה goes on all the levels.","start_time_sec":43.20930693069316,"matched_text":"One is the מחשבה, דיבור, ומעשה goes on all the levels.","score_norm":0.96,"confidence":"HIGH","token_span":[38,49],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Modern Engineer as a 'Graber Mensch'","starting_phrase":"like an American engineer is a גראבער is a גראבער מענטש.","start_time_sec":167.40213005084337,"matched_text":"American engineer is a גראבער is a גראבער מענטש.","score_norm":0.952,"confidence":"HIGH","token_span":[707,716],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Hearing the Voice of Understanding in Letter Divisions","starting_phrase":"the voice of בינה is heard in the division of the letters.","start_time_sec":252.3935830880391,"matched_text":"voice, but where is it heard? It's heard in the division of the letters","score_norm":0.713,"confidence":"HIGH","token_span":[1241,1255],"matched_content":4,"content_coverage":0.8,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Difference Between Speaking and Thinking","starting_phrase":"when you're talking, it's not like when you're thinking.","start_time_sec":402.3232646507863,"matched_text":"you're talking. Right. Because when you're thinking,","score_norm":0.619,"confidence":"MEDIUM","token_span":[1763,1770],"matched_content":5,"content_coverage":0.625,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Analysis as Deconstruction for Reconstruction","starting_phrase":"analysis means like, you know, when people go to the army","start_time_sec":671.6041477120667,"matched_text":"analysis means like, you know, when people go to the army","score_norm":0.94,"confidence":"HIGH","token_span":[2262,2273],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3}
+  ]
+}

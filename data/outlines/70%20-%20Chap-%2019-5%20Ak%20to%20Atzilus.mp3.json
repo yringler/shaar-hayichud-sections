@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "70 - Chap- 19-5 Ak to Atzilus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6f5cac94-1043-4833-89cf-635e354900fc",
+  "transcript": "transcripts/70%20-%20Chap-%2019-5%20Ak%20to%20Atzilus.mp3.json",
+  "fetchedAt": "2026-10-28T23:57:46.199Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Metaphor of Light Emerging from the Hidden","starting_phrase":"So, בדרך משל זה יובן ענין כלי האורות מראש הא\"ק וכולי, כמשל הקורא דבר שיצא מההעלם אל הגילוי לחוץ,","start_time_sec":2.68,"matched_text":"בדרך משל זה יובן ענין כלי האורות מראש הא\"ק וכולי, כמשל הקורא דבר שיצא מההעלם אל הגילוי לחוץ,","score_norm":0.987,"confidence":"HIGH","token_span":[1,19],"matched_content":16,"content_coverage":0.889,"longest_content_run_soft":16,"longest_content_run_strict":9},
+    {"title":"Chesed Light in Atzilut","starting_phrase":"So, let's say the the ענין of חסד of אריך is the אור of חסד of אצילות.","start_time_sec":116.82,"matched_text":"let's say the the ענין of חסד of אריך is the אור of חסד of אצילות.","score_norm":0.925,"confidence":"HIGH","token_span":[290,306],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Moses' Spirit as a Candle Analogy","starting_phrase":"In other words, like it says in רש\"י, that it's like a candle that you can light many other candles from it,","start_time_sec":239.82,"matched_text":"other words, like it says in רש\"י, that it's like a candle that you can light many other candles from","score_norm":0.933,"confidence":"HIGH","token_span":[633,653],"matched_content":11,"content_coverage":0.846,"longest_content_run_soft":11,"longest_content_run_strict":6},
+    {"title":"Desire Revelation and the Ten Sefirot Crowns","starting_phrase":"So this is all like the משל of the גילוי רצון, שיצא מהעלם עצם הרצון שמצד עצמיות כנ״ל,","start_time_sec":353.82,"matched_text":"all like the משל of the גילוי רצון, שיצא מהעלם עצם הרצון שמצד עצמיות כנ״ל,","score_norm":0.973,"confidence":"HIGH","token_span":[986,1001],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":9},
+    {"title":"Torah as Guide to Align with the Upper Realm","starting_phrase":"That's the מורה of the תורה. But if השם would decide that he wants the דירה in a different way, then automatically that would","start_time_sec":445.52,"matched_text":"That's the מורה of the תורה. But if השם would decide that he wants the דירה in a different way, then automatically that would","score_norm":0.925,"confidence":"HIGH","token_span":[1250,1274],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3}
+  ]
+}

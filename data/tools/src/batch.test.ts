@@ -160,7 +160,9 @@ class FakeSofer implements TranscribeClient {
   async status(id: string) {
     return this.docs.find((d) => d.id === id)!.status;
   }
+  fetches = 0;
   async getTranscription<T>(id: string): Promise<T> {
+    this.fetches += 1;
     const d = this.docs.find((x) => x.id === id)!;
     return { text: d.title, timestamps: [{ word: 'w', start: 0, end: 1, speaker: 'SPEAKER_00' }], info: { id } } as T;
   }
@@ -319,6 +321,22 @@ describe('Transcriber', () => {
     assert.deepEqual(loadState(statePath).batches, []);
     assert.ok(existsSync(transcriptPath(dataDir, '001 Intro.mp3')));
     assert.ok(existsSync(transcriptPath(dataDir, '002 a.mp3')));
+  });
+
+  it('a run stopped mid-pass resumes without re-fetching or re-moving what it already stored', async () => {
+    const { sofer, dataDir, statePath, make } = setup();
+    await make().run([intro!, a!], opts());
+    const submitted = readFileSync(statePath, 'utf8');
+    sofer.completeAll();
+    await make().run([], opts());
+    // As if that run had been killed after writing both files but before saving the state.
+    writeFileSync(statePath, submitted);
+    const before = { writes: sofer.writes.length, fetches: sofer.fetches };
+    const done = await make().run([], opts());
+    assert.equal(done.pending, 0);
+    assert.deepEqual(sofer.writes.slice(before.writes), []);
+    assert.equal(sofer.fetches, before.fetches);
+    assert.deepEqual(loadState(statePath).batches, []);
   });
 
   it('drops a batch whose create outcome is unknown and lets folder dedup find what it created', async () => {

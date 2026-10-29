@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "97 - Why bad things happen.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "13755239-c19d-40e5-a460-87d4feafebb7",
+  "transcript": "transcripts/97%20-%20Why%20bad%20things%20happen.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:01.032Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Core Desire vs Surface Preferences","starting_phrase":"And that's the thing is that that also that like there you see with the husband, his real רצון is, he doesn't really care if it's this or that, he just wants that he should be happy, him and his wife should be happy.","start_time_sec":0.42,"matched_text":"that's the thing is that that also that like there you see with the husband, his real רצון is, he doesn't really care if it's this or that, he just wants that he should be happy, him and his wife should be happy.","score_norm":0.913,"confidence":"HIGH","token_span":[1,44],"matched_content":21,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Self‑Reflection Before Requesting Divine Change","starting_phrase":"in order to change it, you have to reveal all the way back to the עצם in yourself and in God.","start_time_sec":92.2,"matched_text":"order to change it, you have to reveal all the way back to the עצם in yourself and in God.","score_norm":0.916,"confidence":"HIGH","token_span":[294,314],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"The Paradox of Desire and Acceptance","starting_phrase":"Why do we דאוון if once סתם something happens we're supposed to be happy about it and not complain, so then why before it happens do we דאוון that it should be a certain way?","start_time_sec":158.92,"matched_text":"Why do we דאוון if once סתם something happens we're supposed to be happy about it and not complain, so then why before it happens do we דאוון that it should be a certain way?","score_norm":0.946,"confidence":"HIGH","token_span":[473,508],"matched_content":21,"content_coverage":1,"longest_content_run_soft":21,"longest_content_run_strict":6}
+  ]
+}

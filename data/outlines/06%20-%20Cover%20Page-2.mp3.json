@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "06 - Cover Page-2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a1f4846a-289e-4f57-b60a-448f83db5734",
+  "transcript": "transcripts/06%20-%20Cover%20Page-2.mp3.json",
+  "fetchedAt": "2026-10-28T23:49:09.397Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Mitteler Rebbe’s Introduction to the Sefer","starting_phrase":"Now on to the Mitteler Rebbe's introduction for the ספר.","start_time_sec":4,"matched_text":"Mitteler Rebbe's introduction for the ספר.","score_norm":0.963,"confidence":"HIGH","token_span":[4,10],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Summarizing the Concept for the Human Mind","starting_phrase":"והוא קיצור מכל אשר יוכל איש לקרב אל השכל","start_time_sec":114.46,"matched_text":"והוא קיצור מכל אשר יוכל איש לקרב אל השכל","score_norm":1,"confidence":"HIGH","token_span":[208,217],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"From the First Contraction to the End of Creation","starting_phrase":"מצמצום הראשון עד סוף עולם העשיה, from the first contraction until the end of the world of עשיה.","start_time_sec":192.4,"matched_text":"מצמצום הראשון עד סוף עולם העשיה, from the first contraction until the end of the world of עשיה.","score_norm":0.972,"confidence":"HIGH","token_span":[368,386],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":7},
+    {"title":"Author’s Sincere Intentions and Hope for Acceptance","starting_phrase":"ומובטחני מאד, and I am very sure, שיקובל לרצון לפני ה', that God will accept favorably,","start_time_sec":275.56,"matched_text":"ומובטחני מאד, and I am very sure, שיקובל לרצון לפני ה', that God will accept favorably,","score_norm":0.968,"confidence":"HIGH","token_span":[536,552],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Addressing Potential Mistakes in the Printed Edition","starting_phrase":"Now, when it says there's mistakes, that means first of all in case that there's,","start_time_sec":343.66,"matched_text":"when it says there's mistakes, that means first of all in case that there's,","score_norm":0.957,"confidence":"HIGH","token_span":[668,682],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3}
+  ]
+}

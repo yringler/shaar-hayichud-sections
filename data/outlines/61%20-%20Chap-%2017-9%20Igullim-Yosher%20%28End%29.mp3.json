@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "61 - Chap- 17-9 Igullim-Yosher (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d1f3ee77-a8ea-4a6c-8312-6aad3de6c6ea",
+  "transcript": "transcripts/61%20-%20Chap-%2017-9%20Igullim-Yosher%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:56:10.037Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Returning Light of the קו and Choice","starting_phrase":"Yeah, the קו is חוזר ומאיר, it reveals the light","start_time_sec":1.6800000000000015,"matched_text":"Yeah, the קו is חוזר ומאיר, it reveals the light","score_norm":0.955,"confidence":"HIGH","token_span":[0,10],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Desire, Finite Action, and the End of Infinite Thought","starting_phrase":"When it comes that you decide that you want to be somebody","start_time_sec":153.84,"matched_text":"When it comes that you decide that you want to be somebody","score_norm":0.906,"confidence":"HIGH","token_span":[493,505],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1},
+    {"title":"Rashimu as a Personal Imprint or Signature","starting_phrase":"That's like the idea of like a רשימו, you know? That it's","start_time_sec":243.88,"matched_text":"That's like the idea of like a רשימו, you know? That it's","score_norm":0.829,"confidence":"HIGH","token_span":[744,756],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Short קו Connecting Infinite Power to Creation","starting_phrase":"Therefore, it has to come through a short קו to go from","start_time_sec":384.6,"matched_text":"Therefore, it has to come through a short קו to go from,","score_norm":0.965,"confidence":"HIGH","token_span":[1139,1151],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Purpose of the קו: Up and Down in Sefirot","starting_phrase":"דכל עיקר הארת הקו אינו רק להיות בבחינת מעלה ומטה","start_time_sec":460.25208924949294,"matched_text":"דכל עיקר הארת הקו אינו רק להיות בבחינת מעלה ומטה,","score_norm":1,"confidence":"HIGH","token_span":[1347,1357],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Infinite Essence and the Limits of Description","starting_phrase":"In this, in you, it's you. That's what it is, it's you.","start_time_sec":529.04,"matched_text":"it's you. That's what it is, it's","score_norm":0.93,"confidence":"HIGH","token_span":[1558,1565],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Choosing Parables (משלים) for Each Student","starting_phrase":"He picks the משלים, you know, so like if","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

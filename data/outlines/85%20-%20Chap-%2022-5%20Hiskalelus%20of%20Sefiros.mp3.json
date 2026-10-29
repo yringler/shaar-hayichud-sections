@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "85 - Chap- 22-5 Hiskalelus of Sefiros.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "42dac186-85a1-4247-9f69-62285fb2a819",
+  "transcript": "transcripts/85%20-%20Chap-%2022-5%20Hiskalelus%20of%20Sefiros.mp3.json",
+  "fetchedAt": "2026-10-29T00:00:15.406Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Kindness Through Judgment (גבורה שבחסד)","starting_phrase":"וכן להיפך, and so too the opposite, בבחינת גבורה שבחסד, that the גבורה of חסד is the strongest חסד.","start_time_sec":0.9800000000000031,"matched_text":"וכן להיפך, and so too the opposite, בבחינת גבורה שבחסד, that the גבורה of חסד is the strongest חסד.","score_norm":0.947,"confidence":"HIGH","token_span":[0,19],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Teacher Limiting Knowledge to Help Students","starting_phrase":"So for example, like a teacher, when he limits his intellect to explain it simply to the student, the more that he limits it and the more that he brings it down to the student, the bigger kindness it is.","start_time_sec":117.6,"matched_text":"example, like a teacher, when he limits his intellect to explain it simply to the student, the more that he limits it and the more that he brings it down to the student, the bigger kindness","score_norm":0.922,"confidence":"HIGH","token_span":[310,346],"matched_content":17,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Afflictions of Love as Tough Kindness","starting_phrase":"וכמו יסורים של אהבה. And the same thing with the with a like afflictations of love,","start_time_sec":214.36,"matched_text":"יסורים של אהבה. And the same thing with the with a like afflictions of love,","score_norm":0.801,"confidence":"HIGH","token_span":[574,589],"matched_content":7,"content_coverage":0.778,"longest_content_run_soft":6,"longest_content_run_strict":3}
+  ]
+}

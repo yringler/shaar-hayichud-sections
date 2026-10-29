@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "75 - Chap- 32-5 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cfbf9384-76ca-4ff2-bdb6-73e729247064",
+  "transcript": "transcripts/75%20-%20Chap-%2032-5%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:21.266Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"What מסירות נפש Really Means","starting_phrase":"מסירות נפש means making it the top priority.","start_time_sec":3.360000000000002,"matched_text":"מסירות נפש means making it the top priority.","score_norm":0.976,"confidence":"HIGH","token_span":[0,8],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Putting God's Will Above All Contradictions","starting_phrase":"And when if anything else is going to contradict this thing, whether it's big or small, you are not going to consider the other thing of any importance.","start_time_sec":76.22,"matched_text":"when if anything else is going to contradict this thing, whether it's big or small, you are not going to consider the other thing of any importance.","score_norm":0.957,"confidence":"HIGH","token_span":[244,271],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":4},
+    {"title":"Creating the Emotional Surge of מדה","starting_phrase":"After all of that introduction, והנה, and behold, ודאי כאשר צריך להיות התהוות התפעלות המדה בלב,","start_time_sec":222.54,"matched_text":"after all of that introduction, והנה, and behold, ודאי כאשר צריך להיות התהוות התפעלות המדה בלב,","score_norm":0.985,"confidence":"HIGH","token_span":[752,768],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":9},
+    {"title":"From צמצום to הסתלקות: Preparing the Heart","starting_phrase":"Before you can have the emotion, you have to first have a צמצום, a העלם, and a קיבוץ, that the idea has to be focused down to a ובכן, and the main the שכל has to be hidden, and it has to be also the light has to be removed, this is called a הסתלקות.","start_time_sec":348.04,"matched_text":"Before you can have the emotion, you have to first have a צמצום, a העלם, and a קיבוץ, that the idea has to be focused down to a ובכן, and the main the שכל has to be hidden, and it has to be also the light has to be removed, this is called a הסתלקות.","score_norm":0.921,"confidence":"HIGH","token_span":[1141,1196],"matched_content":26,"content_coverage":1,"longest_content_run_soft":26,"longest_content_run_strict":2},
+    {"title":"מצר גרון: From Intellect to Heart","starting_phrase":"And also it's the idea that the the brain stops.","start_time_sec":471.42,"matched_text":"also it's the idea that the the brain stops.","score_norm":0.941,"confidence":"HIGH","token_span":[1546,1555],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

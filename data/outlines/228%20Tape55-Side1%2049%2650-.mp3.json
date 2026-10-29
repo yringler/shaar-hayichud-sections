@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "228 Tape55-Side1 49&50-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "fcd33721-86d1-4818-b4db-5184876fcfbf",
+  "transcript": "transcripts/228%20Tape55-Side1%2049%2650-.mp3.json",
+  "fetchedAt": "2026-10-29T00:47:19.535Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Speech itself is an action","starting_phrase":"Then is the fact that the דיבור itself is a מעשה.","start_time_sec":4.016819425444596,"matched_text":"fact that the דיבור itself is a מעשה.","score_norm":0.923,"confidence":"HIGH","token_span":[10,18],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"King's speech creates a party","starting_phrase":"In other words, the actual פועל that came out of his דיבור, כמו שנאמר, ויהי אור, וכהאי","start_time_sec":100.86679890560843,"matched_text":"actual מעשה that came out of his דיבור, כמו שנאמר, ויהי אור, וכהאי","score_norm":0.758,"confidence":"HIGH","token_span":[227,240],"matched_content":10,"content_coverage":0.769,"longest_content_run_soft":10,"longest_content_run_strict":7},
+    {"title":"מלכות of מלכות before the veil breaks","starting_phrase":"So the thing of the מלכות of מלכות before the בקיעת המסך","start_time_sec":375.96,"matched_text":"thing of the מלכות of מלכות before the בקיעת המסך","score_norm":0.945,"confidence":"HIGH","token_span":[833,843],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Lawmaking as immediate divine action","starting_phrase":"So the minute they pass a law, like let's say it was a king instead of Congress,","start_time_sec":477.66,"matched_text":"minute they pass a law, like let's say it was a king instead of Congress,","score_norm":0.94,"confidence":"HIGH","token_span":[1058,1073],"matched_content":8,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The power of the ten utterances","starting_phrase":"And then you say, what do you mean? And what are the vessels made out of?","start_time_sec":623.14,"matched_text":"say, what do you mean? And what are the vessels made out","score_norm":0.942,"confidence":"HIGH","token_span":[1417,1429],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Divine letters and their sources","starting_phrase":"הנה בפרטות ענין ה׳ גבורות מנצפ״ך בדיבור די׳ מאמרות דאימא עילאה וכו׳, שהן ה׳ מוצאות הפה:","start_time_sec":1003.04,"matched_text":"בפרטות ענין ה׳ גבורות מנצפ״ך בדיבור די׳ מאמרות דאימא עילאה וכו׳, שהן ה׳ מוצאות הפה:","score_norm":1,"confidence":"HIGH","token_span":[2263,2278],"matched_content":15,"content_coverage":0.938,"longest_content_run_soft":15,"longest_content_run_strict":15},
+    {"title":"How letters are called like a computer","starting_phrase":"He calls them by name. He says, okay, now א come up.","start_time_sec":1154.8,"matched_text":"calls them by name. He says, okay, now א come up.","score_norm":0.959,"confidence":"HIGH","token_span":[2549,2560],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3}
+  ]
+}

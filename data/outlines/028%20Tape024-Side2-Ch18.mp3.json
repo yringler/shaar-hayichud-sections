@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "028 Tape024-Side2-Ch18.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "fc54bb31-7821-4d34-bf7b-833cf0fb438f",
+  "transcript": "transcripts/028%20Tape024-Side2-Ch18.mp3.json",
+  "fetchedAt": "2026-10-29T00:35:46.328Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Origin of the Ten Sefirot and the Kav","starting_phrase":"Okay, go ahead. ואמנם התהוות עשר ספירות דא״ק עצמו הכל נמשך מבחינת הקו, שנקרא מקור התהוות כל רצונות ורצונות.","start_time_sec":24.82,"matched_text":"go ahead. ואמנם התהוות עשר ספירות דא״ק עצמו הכל נמשך מבחינת הקו, שנקרא מקור התהוות כל רצונות ורצונות.","score_norm":1,"confidence":"HIGH","token_span":[1,19],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":18},
+    {"title":"Atsilut vs. Ak: Revealing the Upper Worlds","starting_phrase":"And this will be explained later. How אצילות is nothing but a revelation of א״ק.","start_time_sec":192.23,"matched_text":"will be explained later. How אצילות is nothing but a revelation of א״ק.","score_norm":0.954,"confidence":"HIGH","token_span":[341,354],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Pizza Analogy: Chains of Desire and Distraction","starting_phrase":"And that means like we said, that like the guy wants a pizza,","start_time_sec":253.42206779661007,"matched_text":"means like we said, that like the guy wants a pizza,","score_norm":0.91,"confidence":"HIGH","token_span":[495,506],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"World Ceasing When Divine Mind Withdraws","starting_phrase":"And you see what happens here to all the רצון לרצונ'ס, they disappear.","start_time_sec":340.01,"matched_text":"see what happens here to all the רצון לרצונ'ס, they disappear.","score_norm":0.972,"confidence":"HIGH","token_span":[728,739],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Thought as the Tool for Forming Desire","starting_phrase":"תחלת התהוות רצון לרצון במחשבה, שהוא נקרא רצון שבמחשבה כולו,","start_time_sec":484.51,"matched_text":"תחלת התהוות רצון לרצון במחשבה, שהוא נקרא רצון שבמחשבה כולו,","score_norm":0.991,"confidence":"HIGH","token_span":[1057,1067],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Rambam’s View: Self‑Knowledge versus External Awareness","starting_phrase":"כלשון הרמב״ם, היינו בידיעת עצמו ולא בידיעה שחוץ ממנו וכולי,","start_time_sec":646.93,"matched_text":"כלשון הרמב״ם, היינו בידיעת עצמו ולא בידיעה שחוץ ממנו וכולי,","score_norm":1,"confidence":"HIGH","token_span":[1405,1415],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10}
+  ]
+}

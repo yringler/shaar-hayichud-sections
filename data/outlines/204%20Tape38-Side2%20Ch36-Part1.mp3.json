@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "204 Tape38-Side2 Ch36-Part1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "33511775-95ed-4dd7-8681-471482d5d21c",
+  "transcript": "transcripts/204%20Tape38-Side2%20Ch36-Part1.mp3.json",
+  "fetchedAt": "2026-10-29T00:42:55.107Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Learning the Letters: From למד בית to למד ואו","starting_phrase":"One of the amazing things here is how","start_time_sec":6.86,"matched_text":"One of the amazing things here is how","score_norm":0.959,"confidence":"HIGH","token_span":[0,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"תבונה’s Shape Mirrors ו‑או: Inner to Outer","starting_phrase":"And this is very close to תבונה. That's why","start_time_sec":153.04,"matched_text":"close to תבונה. That's why","score_norm":0.982,"confidence":"HIGH","token_span":[323,328],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"צמח צדק, מיטעלער רבי, and the איש‑אלוקים Concept","starting_phrase":"And this by the way what they say about about","start_time_sec":239.1,"matched_text":"way what they say about about","score_norm":0.985,"confidence":"HIGH","token_span":[548,554],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Joseph’s Age, the Number 17, and Genealogy","starting_phrase":"And then he was away from his father for","start_time_sec":420.18,"matched_text":"away from his father","score_norm":1,"confidence":"HIGH","token_span":[952,956],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Why בינה Stops at הוד and Needs Action","starting_phrase":"And this is also the reason why it says,","start_time_sec":643.41,"matched_text":"also the reason why it says,","score_norm":0.965,"confidence":"HIGH","token_span":[1429,1435],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Physical Pleasure: שפע Emerging from יסוד","starting_phrase":"And the biggest physical pleasure that everybody runs after is when","start_time_sec":797.25,"matched_text":"biggest physical pleasure that everybody runs after is when","score_norm":0.982,"confidence":"HIGH","token_span":[1778,1787],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"True משפיע: Beyond Intellectual Teaching","starting_phrase":"And the main השפעה is not so much the","start_time_sec":1093.9872944078948,"matched_text":"main השפעה is not so much","score_norm":0.966,"confidence":"HIGH","token_span":[2047,2053],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

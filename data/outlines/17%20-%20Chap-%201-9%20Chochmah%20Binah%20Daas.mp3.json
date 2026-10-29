@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "17 - Chap- 1-9 Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "27e3e296-a7ad-4551-884b-c59445db9bc3",
+  "transcript": "transcripts/17%20-%20Chap-%201-9%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:11.739Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Daat’s Three Dimensions: Depth, Length, Width","starting_phrase":"And now we're going to explain how דעת also has an עומק, אורך, ורוחב, which is important because,","start_time_sec":0.32935387248609327,"matched_text":"we're going to explain how דעת also has an עומק, אורך, ורוחב, which is important because,","score_norm":0.983,"confidence":"HIGH","token_span":[2,18],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Short vs Long Daat (Attention Span)","starting_phrase":"Some people have a short דעת, like a short attention span.","start_time_sec":78.04,"matched_text":"Some people have a short דעת, like a short attention span.","score_norm":0.973,"confidence":"HIGH","token_span":[227,238],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Broad vs Narrow Daat","starting_phrase":"and there are some people that have a broad a broad דעת, a wide דעת, ולא ארוכה, but it's not long.","start_time_sec":138.24,"matched_text":"there are some people that have a broad a broad דעת, a wide דעת, ולא ארוכה, but it's not long.","score_norm":0.967,"confidence":"HIGH","token_span":[417,437],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Strong versus Light Daat","starting_phrase":"The same thing like if a person's really interested in in חסידות itself, then they'll be interested in והדעת חזק,","start_time_sec":294.8,"matched_text":"same thing like if a person's really interested in in חסידות itself, then they'll be interested in והדעת חזק,","score_norm":0.935,"confidence":"HIGH","token_span":[933,952],"matched_content":10,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Daat vs Bina: Light Daat Enhances Bina","starting_phrase":"Even though we said that the דעת will bring you to more בינה afterwards, but at the at the moment it's a lighter דעת gives you better בינה.","start_time_sec":580.98,"matched_text":"even though we said that like the דעת will bring you to more בינה afterwards, but at the at the moment it's a lighter דעת gives you better בינה.","score_norm":0.94,"confidence":"HIGH","token_span":[1777,1806],"matched_content":16,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Physical Signs of Deep Daat","starting_phrase":"So, a sign for somebody that's having עמקות הדעת, that's like really focusing or connecting to that idea, is that they furrow their brow,","start_time_sec":735.84,"matched_text":"sign for somebody that's having עמקות הדעת, that's like really focusing or connecting to that idea, is that they furrow their brow,","score_norm":0.95,"confidence":"HIGH","token_span":[2227,2249],"matched_content":13,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":6}
+  ]
+}

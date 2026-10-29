@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "059 Tape015-Side1-Ch9.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5ae7e9ce-dcc1-4ecf-8264-1ed0e5fe48d8",
+  "transcript": "transcripts/059%20Tape015-Side1-Ch9.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:31.567Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"When Does He Truly Become a King?","starting_phrase":"דווקא in עשיה, in other words, when does he become a מלך?","start_time_sec":0,"matched_text":"דווקא in עשיה, in other words, when does he become a מלך?","score_norm":0.965,"confidence":"HIGH","token_span":[0,12],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Could Have Created the World Instantly","starting_phrase":"He could have made a pizza just.","start_time_sec":403.86,"matched_text":"could have made a pizza","score_norm":0.98,"confidence":"HIGH","token_span":[854,859],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"All Levels Ultimately Remain the Same","starting_phrase":"And the whole up and down is all exactly the same as far as he's concerned.","start_time_sec":823.8414436885865,"matched_text":"whole up and down is all exactly the same as far as he's concerned.","score_norm":0.959,"confidence":"HIGH","token_span":[1771,1785],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Hardest Chapter: Core Message Explained","starting_phrase":"So, this chapter was this is actually the hardest chapter of the whole book.","start_time_sec":889.2,"matched_text":"chapter was this is actually the hardest chapter of the whole book.","score_norm":0.896,"confidence":"HIGH","token_span":[1887,1899],"matched_content":5,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Does Reduction Change Anything at All?","starting_phrase":"And the fact that it's through a צמצום, really that doesn't change anything,","start_time_sec":1001.1,"matched_text":"fact that it's through a צמצום, really that doesn't change anything,","score_norm":0.957,"confidence":"HIGH","token_span":[2093,2104],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"I Am the Same: Central Thesis","starting_phrase":"And the basic thing what it means is אני הויה לא שניתי, and that's the point of the whole book.","start_time_sec":1081.48,"matched_text":"basic thing what it means is אני הויה לא שניתי, and that's the point of the whole book,","score_norm":0.962,"confidence":"HIGH","token_span":[2280,2298],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Week Leading to Rabbi’s Birthday Celebration","starting_phrase":"This whole week leads up to the ninth and tenth of כסלו, the מיטלער רבי's days.","start_time_sec":1223.62,"matched_text":"whole week leads up to the ninth and tenth of כסלו, the מיטלער רבי's days.","score_norm":0.967,"confidence":"HIGH","token_span":[2626,2641],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4}
+  ]
+}

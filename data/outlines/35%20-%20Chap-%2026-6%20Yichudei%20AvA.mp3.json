@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "35 - Chap- 26-6 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "017074b6-4fbd-4c82-a621-ae84ac39c456",
+  "transcript": "transcripts/35%20-%20Chap-%2026-6%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:47.444Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Source of the mind from father to mother","starting_phrase":"ודרך כלל הרי רק מבחינת נהי דאבא","start_time_sec":4.76,"matched_text":"ודרך כלל הרי רק מבחינת נהי דאבא","score_norm":1,"confidence":"HIGH","token_span":[0,7],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Levels of unity: חב״ד, חג״ת, and נהי","starting_phrase":"So now we're to the פרטי יחודים","start_time_sec":181.42,"matched_text":"we're to the פרטי יחודים,","score_norm":0.951,"confidence":"HIGH","token_span":[570,575],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Difference between שבת study and weekday practice","starting_phrase":"זהו הפרש בין שבת לחול, this is the difference","start_time_sec":302.74,"matched_text":"הפרש בין שבת לחול, this is the difference","score_norm":0.96,"confidence":"HIGH","token_span":[958,966],"matched_content":5,"content_coverage":0.833,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Intent in Shema: Connecting to the Father","starting_phrase":"ובקריאת שמע, הכוונה בהשם אלקינו, היינו בפנימיות אבא","start_time_sec":379.12,"matched_text":"ובקריאת שמע, הכוונה בהשם אלקינו, היינו בפנימיות אבא.","score_norm":1,"confidence":"HIGH","token_span":[1217,1225],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Seeing God within: how to recognize הוי' אחד","starting_phrase":"You should realize that השם, that הוי', which like higher","start_time_sec":514.88,"matched_text":"should realize that השם, that הוי', which like higher","score_norm":0.961,"confidence":"HIGH","token_span":[1646,1655],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

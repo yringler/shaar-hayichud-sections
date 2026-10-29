@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "45 - Chap- 15-6 The Kav (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cd9c7b9d-da89-45c6-bba6-1a4f19bae594",
+  "transcript": "transcripts/45%20-%20Chap-%2015-6%20The%20Kav%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:48.959Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Newlywed House Analogy","starting_phrase":"So yeah, so this is like like a משל of a newlyweds","start_time_sec":1.7125229357798164,"matched_text":"yeah, so this is like like a משל of a newlyweds","score_norm":0.824,"confidence":"HIGH","token_span":[7,18],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Changes Require Going All the Way to God","starting_phrase":"So we see from this like this משל, that if you want to change anything","start_time_sec":121.0182874617744,"matched_text":"see from this like this משל, that if you want to change anything","score_norm":0.915,"confidence":"HIGH","token_span":[425,438],"matched_content":6,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Husband’s True Intent: Measuring Happiness","starting_phrase":"He didn't realize, he he thought what? He thought that would make her happy","start_time_sec":199.50892201834705,"matched_text":"didn't realize, he he thought what? He thought that would make her happy,","score_norm":0.968,"confidence":"HIGH","token_span":[700,713],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Variations in the Teacher’s Facets","starting_phrase":"the changes in all the faces from א\"ק all the way down to the heel of א\"ק","start_time_sec":299.6915137614673,"matched_text":"changes in all the faces from א\"ק all the way down to the heel","score_norm":0.937,"confidence":"HIGH","token_span":[1051,1065],"matched_content":8,"content_coverage":0.667,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Altering Divine Plan: From Judgment to Kindness","starting_phrase":"like we ask Him to go from דין to חסד","start_time_sec":434.6954051987851,"matched_text":"ask Him to go from דין to חסד,","score_norm":0.975,"confidence":"HIGH","token_span":[1524,1532],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Avoid Manipulating God with Sob Stories","starting_phrase":"You give him a sob story, and he knows you're trying to","start_time_sec":600.2392889908274,"matched_text":"give him a sob story, and he knows you're trying","score_norm":0.969,"confidence":"HIGH","token_span":[2104,2114],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Unity of God’s Attributes Across All Levels","starting_phrase":"And then He was מצמצם His עצם to reveal in different ways","start_time_sec":718.1179510703224,"matched_text":"מצמצם His עצם to reveal in different ways,","score_norm":0.976,"confidence":"HIGH","token_span":[2538,2546],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3}
+  ]
+}

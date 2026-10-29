@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "64 - Chap- 30-3 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "chapter": "chapter_30",
+  "transcript": "transcripts/64%20-%20Chap-%2030-3%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "transcriptionId": "74279d26-9058-4c31-bc11-76b26621bf60",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2027,
+    "hebrewWords": 328,
+    "matchedWords": 162,
+    "chapterLines": 61,
+    "alignedLines": 16,
+    "firstLineIndex": 15,
+    "lastLineIndex": 30,
+    "meanConfidence": 0.995
+  },
+  "segments": [
+    {"startSeconds":2.84,"endSeconds":53.58,"chapter":"chapter_30","lineId":"bjum6sgp","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":0,"lastWord":126},
+    {"startSeconds":62.2,"endSeconds":74.98,"chapter":"chapter_30","lineId":"qp5uhqbj","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":142,"lastWord":162},
+    {"startSeconds":88.98,"endSeconds":125.16,"chapter":"chapter_30","lineId":"3hyqlhgm","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":199,"lastWord":271},
+    {"startSeconds":181.54,"endSeconds":190.16,"chapter":"chapter_30","lineId":"mmyx6xyb","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":409,"lastWord":430},
+    {"startSeconds":191.222,"endSeconds":225.54,"chapter":"chapter_30","lineId":"hgnyx7bw","confidence":0.952,"matchedWords":17,"lineWords":18,"firstWord":435,"lastWord":529},
+    {"startSeconds":232,"endSeconds":258.76,"chapter":"chapter_30","lineId":"tzlfy3tp","confidence":0.994,"matchedWords":17,"lineWords":17,"firstWord":550,"lastWord":600},
+    {"startSeconds":269.72,"endSeconds":276.44,"chapter":"chapter_30","lineId":"i6memzyj","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":628,"lastWord":638},
+    {"startSeconds":345.84,"endSeconds":366.08,"chapter":"chapter_30","lineId":"ohycbjka","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":808,"lastWord":861},
+    {"startSeconds":370.72,"endSeconds":377.94,"chapter":"chapter_30","lineId":"cy5mcmaz","confidence":1,"matchedWords":7,"lineWords":8,"firstWord":877,"lastWord":891},
+    {"startSeconds":445.58,"endSeconds":458.6,"chapter":"chapter_30","lineId":"cvo32ksz","confidence":1,"matchedWords":10,"lineWords":11,"firstWord":1081,"lastWord":1105},
+    {"startSeconds":463.78,"endSeconds":478.14,"chapter":"chapter_30","lineId":"l75xnvtb","confidence":1,"matchedWords":10,"lineWords":12,"firstWord":1115,"lastWord":1141},
+    {"startSeconds":486.94,"endSeconds":499.52,"chapter":"chapter_30","lineId":"rpkd3wru","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":1157,"lastWord":1189},
+    {"startSeconds":604.34,"endSeconds":612.146,"chapter":"chapter_30","lineId":"djt3u2j7","confidence":1,"matchedWords":5,"lineWords":7,"firstWord":1474,"lastWord":1490},
+    {"startSeconds":684.18,"endSeconds":692.58,"chapter":"chapter_30","lineId":"2zin6o25","confidence":0.991,"matchedWords":11,"lineWords":11,"firstWord":1671,"lastWord":1689},
+    {"startSeconds":718.76,"endSeconds":723.38,"chapter":"chapter_30","lineId":"yrgxgir5","confidence":1,"matchedWords":5,"lineWords":5,"firstWord":1751,"lastWord":1763},
+    {"startSeconds":730.7,"endSeconds":734.02,"chapter":"chapter_30","lineId":"75qfybkr","confidence":0.975,"matchedWords":8,"lineWords":9,"firstWord":1782,"lastWord":1789}
+  ]
+}

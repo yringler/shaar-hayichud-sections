@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "42 - Chap- 27-4 Oros and Keilim (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9827bb24-1d40-4c04-be4c-c0d36e2150c3",
+  "transcript": "transcripts/42%20-%20Chap-%2027-4%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:09:13.027Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the concept of vessels","starting_phrase":"ובבחינת הכלים and the vessels. So now we're just introducing all the basic concepts of vessels.","start_time_sec":0,"matched_text":"ובבחינת הכלים and the vessels. So now we're just introducing all the basic concepts of vessels.","score_norm":0.943,"confidence":"HIGH","token_span":[0,16],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Arm example illustrating vessel components","starting_phrase":"so I I could I could say shortly here, but we're going to we're going to explain it later, so I don't need to really, but like for example, the your let's say your arm,","start_time_sec":202.43127124405166,"matched_text":"could I could say shortly here, but we're going to we're going to explain it later, so I don't need to really, but like for example, the your let's say your arm,","score_norm":0.949,"confidence":"HIGH","token_span":[580,612],"matched_content":19,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Why discuss the 248 limbs of the king","starting_phrase":"וכדוע בענין רמ\"ח איברים דמלכא, cuz it's known about the 248 limbs of the king.","start_time_sec":312.22,"matched_text":"וכדוע בענין רמ\"ח איברים דמלכא, cuz it's known about the 248 limbs of the king.","score_norm":0.967,"confidence":"HIGH","token_span":[909,924],"matched_content":11,"content_coverage":0.846,"longest_content_run_soft":11,"longest_content_run_strict":6},
+    {"title":"Mapping nine sefirot to nine body organs","starting_phrase":"And then each one of so you have there's nine general ספירות which correspond to nine general organs, right, like it says in פתח אליהו,","start_time_sec":414.06,"matched_text":"each one of so you have there's nine general ספירות which correspond to nine general organs, right, like it says in פתח אליהו,","score_norm":0.959,"confidence":"HIGH","token_span":[1181,1204],"matched_content":15,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":7},
+    {"title":"Final calculation adding five chesed to reach 248","starting_phrase":"So 3  81 is three is 243. And now we add five, וה' חסדים המגדילים הוא רמ\"ח,","start_time_sec":478.54,"matched_text":"3 81 is three is 243. And now we add five, וה' חסדים המגדילים הוא","score_norm":0.966,"confidence":"HIGH","token_span":[1373,1388],"matched_content":10,"content_coverage":0.833,"longest_content_run_soft":6,"longest_content_run_strict":6}
+  ]
+}

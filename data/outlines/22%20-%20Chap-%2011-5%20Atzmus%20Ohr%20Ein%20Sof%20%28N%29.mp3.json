@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a6e8daf1-8a3f-4cd0-b244-a0a7636b22b7",
+  "transcript": "transcripts/22%20-%20Chap-%2011-5%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:40.396Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the Fourth Level after צמצום","starting_phrase":"Now we finished explaining the נמשל for the three levels of יחיד, אחד, and קדמון.","start_time_sec":2.24,"matched_text":"finished explaining the נמשל for the three levels of יחיד, אחד, and קדמון.","score_norm":0.957,"confidence":"HIGH","token_span":[2,15],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Upper and Lower Purity Explained","starting_phrase":"So that רשימו, that impression of the original light, is the fourth level.","start_time_sec":75.5,"matched_text":"רשימו, that's revealed as just like an impression of the original light,","score_norm":0.569,"confidence":"MEDIUM","token_span":[164,176],"matched_content":4,"content_coverage":0.667,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Qualitative Leap from Infinite to Finite Light","starting_phrase":"This is also the relation this is similarly the relationship between the light after the צמצום to the light before the צמצום.","start_time_sec":323.73226608977825,"matched_text":"also the relation this is similarly the relationship between the light after the צמצום to the light before the צמצום,","score_norm":0.937,"confidence":"HIGH","token_span":[714,734],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":2},
+    {"title":"Soul Analogy with Stained Glass Perception","starting_phrase":"You know, like the משל they give with like the light with its stained glass, that it's really just holding back some of the light.","start_time_sec":549.48,"matched_text":"משל they give with like the light with its stained glass, that it's really just holding back some of the light.","score_norm":0.956,"confidence":"HIGH","token_span":[1252,1273],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Fourth Level Still a Revelation of God","starting_phrase":"And this is why this level is in this chapter, because like we just explained, that what comes out, the רשימו that comes out after the צמצום, which includes all the details that's going to be after the צמצום in the השתלשלות,","start_time_sec":669.14,"matched_text":"why this level is in this chapter, because like we just explained, that what comes out, the רשימו that comes out after the צמצום, which includes all the details that's going to be after the צמצום in the השתלשלות,","score_norm":0.938,"confidence":"HIGH","token_span":[1613,1652],"matched_content":22,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":4}
+  ]
+}

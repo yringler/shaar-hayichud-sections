@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "212 Tape43-Side1-ch 40.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7ea9c43e-7bbd-45e9-ae57-6ea402ea42df",
+  "transcript": "transcripts/212%20Tape43-Side1-ch%2040.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:07.944Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Where to Look: The Basics of התבוננות","starting_phrase":"These are abstractions. Right. These are explanations of where to look. Right.","start_time_sec":5.04,"matched_text":"abstractions. Right. These are explanations of where to look.","score_norm":0.909,"confidence":"HIGH","token_span":[2,11],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Understanding Personal רצון: From a House to Pizza","starting_phrase":"So the thing is really we're talking about you. When you want something.","start_time_sec":96,"matched_text":"thing is really we're talking about you. When you want something.","score_norm":0.955,"confidence":"HIGH","token_span":[231,242],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Seeing the כח המשכיל Behind Our Thoughts","starting_phrase":"And even though you won't be able to see the actual כח המשכיל itself, but you'll see it just as clearly as you see the נגלה of it.","start_time_sec":197.5,"matched_text":"even though you won't be able to see the actual כח המשכיל itself, but you'll see it just as clearly as you see the נגלה","score_norm":0.943,"confidence":"HIGH","token_span":[490,515],"matched_content":14,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Worlds Within Worlds: The עולם קטן Analogy","starting_phrase":"And basically, if you know how it is in עולם קטן, you know how it is upstairs.","start_time_sec":284.44,"matched_text":"basically, if you know how it is in עולם קטן, you know how it is upstairs.","score_norm":0.875,"confidence":"HIGH","token_span":[723,739],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"עמקות הדעת: Connecting Mind to Real Experience","starting_phrase":"And that's the inner part. That's the עמקות הדעת of the התבוננות.","start_time_sec":382.3,"matched_text":"that's the inner part. That's the עמקות הדעת of the התבוננות.","score_norm":0.957,"confidence":"HIGH","token_span":[1011,1022],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"The Role of דעת and מעמיק in True חכמה","starting_phrase":"And it's only a כלי, but nonetheless, that is what makes the חכמה deeper.","start_time_sec":562.92,"matched_text":"it's only a כלי, but nonetheless, that is what makes the חכמה deeper.","score_norm":0.955,"confidence":"HIGH","token_span":[1458,1471],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

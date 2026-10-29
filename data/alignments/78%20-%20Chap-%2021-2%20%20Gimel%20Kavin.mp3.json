@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "78 - Chap- 21-2  Gimel Kavin.mp3",
+  "chapter": "chapter_21",
+  "transcript": "transcripts/78%20-%20Chap-%2021-2%20%20Gimel%20Kavin.mp3.json",
+  "transcriptionId": "f8513847-b5e3-4b22-a46c-49ef01607329",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2494,
+    "hebrewWords": 259,
+    "matchedWords": 119,
+    "chapterLines": 43,
+    "alignedLines": 8,
+    "firstLineIndex": 12,
+    "lastLineIndex": 19,
+    "meanConfidence": 0.883
+  },
+  "segments": [
+    {"startSeconds":36.757,"endSeconds":41.131,"chapter":"chapter_21","lineId":"hoghevys","confidence":1,"matchedWords":13,"lineWords":16,"firstWord":128,"lastWord":141},
+    {"startSeconds":119.252,"endSeconds":123.627,"chapter":"chapter_21","lineId":"tjgcxrjz","confidence":0.987,"matchedWords":15,"lineWords":15,"firstWord":374,"lastWord":388},
+    {"startSeconds":259.54,"endSeconds":291.263,"chapter":"chapter_21","lineId":"gnsidoux","confidence":0.917,"matchedWords":27,"lineWords":31,"firstWord":769,"lastWord":863},
+    {"startSeconds":311.28,"endSeconds":322.04,"chapter":"chapter_21","lineId":"sa2xhyzt","confidence":0.975,"matchedWords":20,"lineWords":21,"firstWord":921,"lastWord":943},
+    {"startSeconds":399.46,"endSeconds":401.647,"chapter":"chapter_21","lineId":"23satlit","confidence":0.893,"matchedWords":7,"lineWords":7,"firstWord":1226,"lastWord":1232},
+    {"startSeconds":414.52,"endSeconds":424.04,"chapter":"chapter_21","lineId":"stujf5fr","confidence":0.738,"matchedWords":13,"lineWords":17,"firstWord":1255,"lastWord":1281},
+    {"startSeconds":617.765,"endSeconds":620.889,"chapter":"chapter_21","lineId":"jud5g5du","confidence":0.975,"matchedWords":8,"lineWords":9,"firstWord":1913,"lastWord":1923},
+    {"startSeconds":672.1,"endSeconds":681.277,"chapter":"chapter_21","lineId":"tpqoepv5","confidence":0.581,"matchedWords":9,"lineWords":15,"firstWord":2101,"lastWord":2124}
+  ]
+}

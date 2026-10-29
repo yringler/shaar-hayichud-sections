@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "034 Edited Tape027-Side2-Ch22.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5bb366d8-4cfd-4f57-875c-239d567fc25e",
+  "transcript": "transcripts/034%20Edited%20Tape027-Side2-Ch22.mp3.json",
+  "fetchedAt": "2026-10-29T00:36:45.492Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Angels, Names, and Divine Presence","starting_phrase":"I can't remember where I read this. I don't think it was in תניא.","start_time_sec":6.6599999999999975,"matched_text":"can't remember where I read this. I don't think it was in תניא.","score_norm":0.935,"confidence":"HIGH","token_span":[1,14],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"חסד and גבורה in Angelic Functions","starting_phrase":"So the angel is the angel because הפעולה is גבורה. So he sent the angel of גבורה.","start_time_sec":117.6,"matched_text":"angel is the angel because הפעולה is גבורה. So he sent the angel of גבורה.","score_norm":0.934,"confidence":"HIGH","token_span":[290,305],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Light vs Vessel: חסד vs דין Dynamics","starting_phrase":"והוא כמו אור החסד בכלי הגבורה, שפועל הכלי היפך האור שלו.","start_time_sec":200.32086956521738,"matched_text":"והוא כמו אור החסד בכלי הגבורה, שפועל הכלי היפך האור שלו.","score_norm":1,"confidence":"HIGH","token_span":[484,495],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":11},
+    {"title":"Counting the Words of שמע and Numerical Values","starting_phrase":"did you ever count those properly? Who Who counted? Was it שמעון counted?","start_time_sec":262.2,"matched_text":"did you ever count those properly? Who Who counted? Was it שמעון counted?","score_norm":0.969,"confidence":"HIGH","token_span":[605,618],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"תיקון vs תהו: Tools and Lights","starting_phrase":"That's why תיקון, the thing of תיקון, the thing of תיקון is less lights, ועורות מרובים.","start_time_sec":400.1,"matched_text":"That's why תיקון, the thing of תיקון, the thing of תיקון is less lights, ועורות מרובים.","score_norm":0.966,"confidence":"HIGH","token_span":[932,948],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Crown Concepts and Transformation of Good and Evil","starting_phrase":"מכח עצמות אין סוף ממש, and over there it's all a matter of פעולות, and really it's even higher than that, where it says אליו, כמו שאמרו ז״ל, אליו ולא למדותיו.","start_time_sec":642.44,"matched_text":"מכח עצמות אין סוף ממש, and over there it's all a matter of פעולות, and really it's even higher than that, where it says אליו, כמו שאמרו ז״ל, אליו ולא למדותיו,","score_norm":0.979,"confidence":"HIGH","token_span":[1419,1450],"matched_content":24,"content_coverage":1,"longest_content_run_soft":24,"longest_content_run_strict":8}
+  ]
+}

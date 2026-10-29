@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "53 - Chap- 28-7 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "ac6206d8-1ac6-437a-8780-bc7a1d7dd2b2",
+  "transcript": "transcripts/53%20-%20Chap-%2028-7%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:10:44.977Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Vessels Lower Light to the Physical Realm","starting_phrase":"Right, so the vessel lets you bring","start_time_sec":4.18,"matched_text":"vessel lets you bring","score_norm":0.976,"confidence":"HIGH","token_span":[3,7],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Brain as the Primary Channel for Emotions","starting_phrase":"Now, everything really goes through the brain first","start_time_sec":68.26,"matched_text":"everything really goes through the brain first,","score_norm":0.968,"confidence":"HIGH","token_span":[159,166],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Vessels as Fixers (תיקונים) Explained","starting_phrase":"Therefore, the vessels are called fixers, כדי","start_time_sec":137.76,"matched_text":"Therefore, the vessels are called fixers, כדי","score_norm":0.971,"confidence":"HIGH","token_span":[386,393],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"תיקונים: Garments that Shape Spiritual Light","starting_phrase":"And then the vessels are called תיקונים, which means like garments","start_time_sec":228.94,"matched_text":"vessels are called תיקונים, which means like garments","score_norm":0.976,"confidence":"HIGH","token_span":[643,651],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Distinguishing כלי (Vessel) from תיקון (Fixer)","starting_phrase":"The difference, because a כלי the כלי is just the way","start_time_sec":291.28,"matched_text":"difference, because a כלי the כלי is just the way","score_norm":0.924,"confidence":"HIGH","token_span":[836,846],"matched_content":5,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Emotion in the Heart: Dual Role of Vessel","starting_phrase":"When you're have an emotion in your heart, it does two things","start_time_sec":398.84,"matched_text":"When you're have an emotion in your heart, it does two things:","score_norm":0.972,"confidence":"HIGH","token_span":[1156,1168],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"From Understanding to Expression: The Brain Process","starting_phrase":"In other words, when you understand something, you don't understand it fully","start_time_sec":478.9057083906465,"matched_text":"other words, when you understand something, you don't understand it fully","score_norm":0.971,"confidence":"HIGH","token_span":[1375,1386],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

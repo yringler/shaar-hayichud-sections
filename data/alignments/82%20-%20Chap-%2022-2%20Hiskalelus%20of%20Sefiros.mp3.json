@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "82 - Chap- 22-2 Hiskalelus of Sefiros.mp3",
+  "chapter": "chapter_22",
+  "transcript": "transcripts/82%20-%20Chap-%2022-2%20Hiskalelus%20of%20Sefiros.mp3.json",
+  "transcriptionId": "73becb1a-4c3d-4cb9-bed7-c303be49fd7b",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1668,
+    "hebrewWords": 124,
+    "matchedWords": 49,
+    "chapterLines": 77,
+    "alignedLines": 6,
+    "firstLineIndex": 13,
+    "lastLineIndex": 18,
+    "meanConfidence": 0.948
+  },
+  "segments": [
+    {"startSeconds":22.98,"endSeconds":27.155,"chapter":"chapter_22","lineId":"bexhbpbh","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":43,"lastWord":53},
+    {"startSeconds":60.76,"endSeconds":61.898,"chapter":"chapter_22","lineId":"o4hlzdgs","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":105,"lastWord":108},
+    {"startSeconds":69.6,"endSeconds":84.12,"chapter":"chapter_22","lineId":"u7ri3fkv","confidence":0.964,"matchedWords":9,"lineWords":9,"firstWord":116,"lastWord":132},
+    {"startSeconds":180.078,"endSeconds":225.379,"chapter":"chapter_22","lineId":"ue4ajaus","confidence":0.94,"matchedWords":6,"lineWords":6,"firstWord":378,"lastWord":479},
+    {"startSeconds":250.4,"endSeconds":253.437,"chapter":"chapter_22","lineId":"qmn5redw","confidence":0.889,"matchedWords":8,"lineWords":8,"firstWord":544,"lastWord":551},
+    {"startSeconds":407.239,"endSeconds":424.457,"chapter":"chapter_22","lineId":"juaizma6","confidence":0.896,"matchedWords":11,"lineWords":12,"firstWord":970,"lastWord":1003}
+  ]
+}

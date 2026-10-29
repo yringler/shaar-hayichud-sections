@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "041 Tape031-Side1-Ch27.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0c4003c8-92ef-4574-9d63-194289348526",
+  "transcript": "transcripts/041%20Tape031-Side1-Ch27.mp3.json",
+  "fetchedAt": "2026-10-29T00:37:56.384Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Changing One’s מדות Requires Reaching Into אריך","starting_phrase":"Go ahead. Yeah, so if the guy would change the way","start_time_sec":0,"matched_text":"Go ahead. Yeah, so if the guy would change the way","score_norm":0.962,"confidence":"HIGH","token_span":[0,11],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Three Body Systems: Brain, Heart, and Liver","starting_phrase":"And then you have the three things. The the","start_time_sec":404.12,"matched_text":"have the the digestive system. There's the three things.","score_norm":0.857,"confidence":"HIGH","token_span":[890,899],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Strength Training Analogy: Limits of כלי vs Light","starting_phrase":"Now, you see that you know, the Governor, before you take weight lifting,","start_time_sec":818.22,"matched_text":"see that you know, the Governor, before you take weight lifting,","score_norm":0.948,"confidence":"HIGH","token_span":[1661,1672],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The אור השכל and Its Relation to Physical Ability","starting_phrase":"In other words, the אור השכל, the actual life force that gives the power","start_time_sec":891.04,"matched_text":"אור השכל, the actual life force that gives the power","score_norm":0.768,"confidence":"HIGH","token_span":[1800,1810],"matched_content":7,"content_coverage":0.778,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"DNA, Soul Letters, and the Blueprint of the Body","starting_phrase":"So basically, it's talking about that that the the in in the blood there's basically the the various things,","start_time_sec":1323.34,"matched_text":"basically, it's talking about that that the the in in the blood there's basically the the various things,","score_norm":0.927,"confidence":"HIGH","token_span":[2762,2780],"matched_content":9,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Cell Differentiation: Organs Form to Receive Spiritual Light","starting_phrase":"And then as it separates out from the central cell into the various cells,","start_time_sec":1408.294824935953,"matched_text":"separates out from the central cell into the various cells,","score_norm":0.984,"confidence":"HIGH","token_span":[3003,3013],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Education, Light, and the Growth of the Brain","starting_phrase":"And later on it'll be too late, because his brain","start_time_sec":1558.86,"matched_text":"later on it'll be too late, because his brain","score_norm":0.981,"confidence":"HIGH","token_span":[3305,3314],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5}
+  ]
+}

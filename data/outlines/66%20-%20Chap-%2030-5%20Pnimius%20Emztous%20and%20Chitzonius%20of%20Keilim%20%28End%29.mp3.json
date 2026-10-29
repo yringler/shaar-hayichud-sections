@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "66 - Chap- 30-5 Pnimius Emztous and Chitzonius of Keilim (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0172097e-cb16-4805-9fc0-747f2e8d67e9",
+  "transcript": "transcripts/66%20-%20Chap-%2030-5%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:12:56.023Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Intent, Blessing, and Action: The Three Pillars","starting_phrase":"ובכלל, היינו כוונה, וברכה, ומעשה. These are the כוונה, the ברכה, the ברכה is to help you have a feeling for it, and מעשה and the action.","start_time_sec":2.7799999999999994,"matched_text":"ובכלל, היינו כוונה, וברכה, ומעשה. These are the כוונה, the ברכה, the ברכה is to help you have a feeling for it, and מעשה and the action.","score_norm":0.921,"confidence":"HIGH","token_span":[0,27],"matched_content":13,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"The Five Kindnesses and the Flow of Divine Light","starting_phrase":"וה' חסדים המגדילים וכולי, and the five חסדים that make the body grow,","start_time_sec":125.44,"matched_text":"וה' חסדים המגדילים וכולי, and the five חסדים that make the body grow,","score_norm":0.968,"confidence":"HIGH","token_span":[269,282],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Mitzvah Motivation: Doing It Because God Wills","starting_phrase":"In other words, that's the thing of appreciating that you're doing the מצוות because השם decided He wanted this,","start_time_sec":187.48,"matched_text":"other words, that's the thing of appreciating that you're doing the מצוות because השם decided He wanted","score_norm":0.969,"confidence":"HIGH","token_span":[430,447],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Vessels and Light: Purpose of the Organs","starting_phrase":"They also need the shining of the אור אין סוף within the קו, שממלא כל שמהן,","start_time_sec":344.66,"matched_text":"also need the shining of the אור אין סוף within the קו, שממלא כל שמהן,","score_norm":0.974,"confidence":"HIGH","token_span":[804,819],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4}
+  ]
+}

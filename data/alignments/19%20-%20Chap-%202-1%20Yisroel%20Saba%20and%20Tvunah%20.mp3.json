@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/19%20-%20Chap-%202-1%20Yisroel%20Saba%20and%20Tvunah%20.mp3.json",
+  "transcriptionId": "28cc5936-fec8-47c2-b010-74d2edcece52",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1660,
+    "hebrewWords": 385,
+    "matchedWords": 263,
+    "chapterLines": 37,
+    "alignedLines": 11,
+    "firstLineIndex": 0,
+    "lastLineIndex": 10,
+    "meanConfidence": 0.944
+  },
+  "segments": [
+    {"startSeconds":4.58,"endSeconds":105.32,"chapter":"chapter_02","lineId":"dqtw2mat","confidence":0.961,"matchedWords":27,"lineWords":31,"firstWord":4,"lastWord":246},
+    {"startSeconds":135.8,"endSeconds":199.78,"chapter":"chapter_02","lineId":"fx4uzm2l","confidence":0.971,"matchedWords":27,"lineWords":28,"firstWord":317,"lastWord":470},
+    {"startSeconds":203.5,"endSeconds":254.14,"chapter":"chapter_02","lineId":"lg4oylvk","confidence":0.948,"matchedWords":23,"lineWords":24,"firstWord":483,"lastWord":594},
+    {"startSeconds":257.76,"endSeconds":322.11,"chapter":"chapter_02","lineId":"wbbx7sao","confidence":0.873,"matchedWords":29,"lineWords":35,"firstWord":605,"lastWord":763},
+    {"startSeconds":325.97,"endSeconds":364.43,"chapter":"chapter_02","lineId":"ktlyq343","confidence":0.993,"matchedWords":28,"lineWords":29,"firstWord":779,"lastWord":863},
+    {"startSeconds":378.01,"endSeconds":387.65,"chapter":"chapter_02","lineId":"e6rnhnmx","confidence":0.959,"matchedWords":16,"lineWords":17,"firstWord":906,"lastWord":928},
+    {"startSeconds":412.547,"endSeconds":487.39,"chapter":"chapter_02","lineId":"3olgfxjf","confidence":0.998,"matchedWords":44,"lineWords":44,"firstWord":1002,"lastWord":1196},
+    {"startSeconds":494.77,"endSeconds":562.73,"chapter":"chapter_02","lineId":"2urk3tl6","confidence":0.913,"matchedWords":38,"lineWords":41,"firstWord":1215,"lastWord":1387},
+    {"startSeconds":567.93,"endSeconds":569.03,"chapter":"chapter_02","lineId":"wdjketw2","confidence":0.917,"matchedWords":3,"lineWords":3,"firstWord":1402,"lastWord":1404},
+    {"startSeconds":572.87,"endSeconds":579.51,"chapter":"chapter_02","lineId":"6wn65rrk","confidence":0.909,"matchedWords":10,"lineWords":11,"firstWord":1412,"lastWord":1422},
+    {"startSeconds":593.27,"endSeconds":604.21,"chapter":"chapter_02","lineId":"rblvjh2o","confidence":0.942,"matchedWords":18,"lineWords":19,"firstWord":1464,"lastWord":1489}
+  ]
+}

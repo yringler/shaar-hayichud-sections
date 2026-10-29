@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "27 - Chap- 12-4 Tzimtzum-Reshimu (M).mp3",
+  "chapter": "chapter_12",
+  "transcript": "transcripts/27%20-%20Chap-%2012-4%20Tzimtzum-Reshimu%20%28M%29.mp3.json",
+  "transcriptionId": "d9eaae96-b6b3-4d48-927e-658e3433dcbe",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2083,
+    "hebrewWords": 136,
+    "matchedWords": 89,
+    "chapterLines": 63,
+    "alignedLines": 9,
+    "firstLineIndex": 26,
+    "lastLineIndex": 34,
+    "meanConfidence": 0.932
+  },
+  "segments": [
+    {"startSeconds":3.52,"endSeconds":10.52,"chapter":"chapter_12","lineId":"inxfbbir","confidence":0.975,"matchedWords":12,"lineWords":13,"firstWord":0,"lastWord":12},
+    {"startSeconds":36.46,"endSeconds":40.22,"chapter":"chapter_12","lineId":"h766u5wo","confidence":0.938,"matchedWords":8,"lineWords":8,"firstWord":73,"lastWord":80},
+    {"startSeconds":53.664,"endSeconds":67.84,"chapter":"chapter_12","lineId":"selamt4x","confidence":0.831,"matchedWords":11,"lineWords":14,"firstWord":109,"lastWord":146},
+    {"startSeconds":233.324,"endSeconds":258.04,"chapter":"chapter_12","lineId":"mz7l2qko","confidence":0.896,"matchedWords":11,"lineWords":13,"firstWord":622,"lastWord":673},
+    {"startSeconds":266.504,"endSeconds":273.054,"chapter":"chapter_12","lineId":"v2czkbo4","confidence":0.858,"matchedWords":17,"lineWords":19,"firstWord":692,"lastWord":710},
+    {"startSeconds":544.14,"endSeconds":547.92,"chapter":"chapter_12","lineId":"mhzy5b6q","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":1499,"lastWord":1502},
+    {"startSeconds":564.82,"endSeconds":571.26,"chapter":"chapter_12","lineId":"6qmvwyf4","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1551,"lastWord":1559},
+    {"startSeconds":592.86,"endSeconds":598.1,"chapter":"chapter_12","lineId":"sop3zosm","confidence":0.896,"matchedWords":11,"lineWords":12,"firstWord":1614,"lastWord":1624},
+    {"startSeconds":648.8,"endSeconds":653.5,"chapter":"chapter_12","lineId":"w5q2ixy4","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":1770,"lastWord":1776}
+  ]
+}

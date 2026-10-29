@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "026 Edited Tape023-Side2-Ch17.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "ac56c409-1c15-4d8e-8c6b-28870590aaeb",
+  "transcript": "transcripts/026%20Edited%20Tape023-Side2-Ch17.mp3.json",
+  "fetchedAt": "2026-10-29T00:35:30.872Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Forehead as the seat of desire","starting_phrase":"Okay, go ahead. And the עתיקא קדישא, but the basic פרט of it was מצח.","start_time_sec":0,"matched_text":"go ahead. And the עתיקא קדישא, but the basic פרט of it was מצח.","score_norm":0.933,"confidence":"HIGH","token_span":[1,15],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Rabbi reading thoughts on the forehead","starting_phrase":"You know the story of the guy that he went to the רבי","start_time_sec":78.68,"matched_text":"story of the guy that he went to the רבי","score_norm":0.907,"confidence":"HIGH","token_span":[115,125],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Intermediary levels and their own desire","starting_phrase":"And the thing is that like this, that the the intermediary levels","start_time_sec":248.26,"matched_text":"thing is like this, that the the intermediary levels,","score_norm":0.847,"confidence":"HIGH","token_span":[368,377],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Pleasure found in the planning stage","starting_phrase":"And the same thing even before that, when they first had the plan","start_time_sec":356.28,"matched_text":"same thing even before that, when they first had the plan","score_norm":0.974,"confidence":"HIGH","token_span":[603,614],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Ultimate pleasure at the end of the seventh millennium","starting_phrase":"But really all of these things, the biggest תענוג is דווקא in the סוף מעשה","start_time_sec":447.58,"matched_text":"all of these things, the biggest תענוג is דווקא in the סוף מעשה,","score_norm":0.939,"confidence":"HIGH","token_span":[809,822],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Latke analogy for ultimate joy","starting_phrase":"And you say, well really, the biggest תענוג is when you dress him up like a latke.","start_time_sec":526.06,"matched_text":"say, well really, the biggest תענוג is when you dress him up like a latke.","score_norm":0.953,"confidence":"HIGH","token_span":[941,956],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Zohar reference and parenthetical discussion","starting_phrase":"In זוהר. Aha, okay. פרשת פרשת נשא.","start_time_sec":627.22,"matched_text":"זוהר. Aha, okay. פרשת פרשת נשא.","score_norm":0.988,"confidence":"HIGH","token_span":[1238,1244],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Positive and negative aspects of desire","starting_phrase":"In other words, a רצון, there's a positive and negative.","start_time_sec":879,"matched_text":"other words, a רצון, there's a positive and negative.","score_norm":0.963,"confidence":"HIGH","token_span":[1760,1769],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Ten sefirot circles explained","starting_phrase":"והנה בחינת עשר ספירות דעיגולים","start_time_sec":1054.3,"matched_text":"והנה בחינת עשר ספירות דעיגולים.","score_norm":1,"confidence":"HIGH","token_span":[2240,2245],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Rationalizing desire through intellect and analysis","starting_phrase":"And the whole thing of the בינה is only to prove that the חכמה was right","start_time_sec":1379.56,"matched_text":"whole thing of the בינה is only to prove that the חכמה","score_norm":0.93,"confidence":"HIGH","token_span":[2949,2961],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Observing righteousness through a person's deeds","starting_phrase":"In other words, like in a person, what you're seeing in a person","start_time_sec":1685.08,"matched_text":"other words, like in a person, what you're seeing in a person,","score_norm":0.949,"confidence":"HIGH","token_span":[3672,3684],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4}
+  ]
+}

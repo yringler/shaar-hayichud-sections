@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "84 - Chap- 22-4 Hiskaleluls of Sefiros.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "77fcd73b-651e-4977-99a8-f13731d0aa03",
+  "transcript": "transcripts/84%20-%20Chap-%2022-4%20Hiskaleluls%20of%20Sefiros.mp3.json",
+  "fetchedAt": "2026-10-28T23:59:56.535Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Third type: Light of חסד in the vessel of גבורה","starting_phrase":"So now we're going to explain this third type where it's like the light of חסד in the כלי of גבורה.","start_time_sec":3.3,"matched_text":"we're going to explain this third type where it's like the light of חסד in the כלי of גבורה.","score_norm":0.942,"confidence":"HIGH","token_span":[2,21],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Second type: Light entering the vessel","starting_phrase":"And now we're going to explain that second type where the light goes into the vessel.","start_time_sec":82.92,"matched_text":"we're going to explain that second type where the light goes into the vessel.","score_norm":0.971,"confidence":"HIGH","token_span":[227,241],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Feeding the enemy: hidden judgment","starting_phrase":"And the ענין הוא, כידוע, and the ענין","start_time_sec":187.270730878187,"matched_text":"הוא, כידוע, and the ענין","score_norm":0.714,"confidence":"HIGH","token_span":[508,513],"matched_content":3,"content_coverage":0.75,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Spy example: kindness as covert judgment","starting_phrase":"Another example of this is is a spy, that the spy","start_time_sec":281.8,"matched_text":"Another example of this is is a spy, that the spy","score_norm":0.879,"confidence":"HIGH","token_span":[751,762],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Divine reward as ultimate judgment","starting_phrase":"Similarly it says that God pays his enemies, he gives them","start_time_sec":457.82,"matched_text":"Similarly it says that God pays his enemies, he gives them","score_norm":0.973,"confidence":"HIGH","token_span":[1270,1281],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"חסד שבגבורה: compromised strength","starting_phrase":"And before when we spoke of חסד שבגבורה, it would","start_time_sec":571.18,"matched_text":"before when we spoke of חסד שבגבורה, it would","score_norm":0.963,"confidence":"HIGH","token_span":[1560,1569],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

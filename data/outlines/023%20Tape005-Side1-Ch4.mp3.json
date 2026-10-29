@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "023 Tape005-Side1-Ch4.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "257b7de3-c346-4614-b01b-ec55d5af94c2",
+  "transcript": "transcripts/023%20Tape005-Side1-Ch4.mp3.json",
+  "fetchedAt": "2026-10-29T02:35:03.283Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Meditation vs Focused Insight","starting_phrase":"These people in other words what do they do? They sit and they meditate","start_time_sec":6.28,"matched_text":"people in other words what do they do? They sit and they meditate","score_norm":0.955,"confidence":"HIGH","token_span":[1,14],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Explaining Particular vs General Unity","starting_phrase":"now he's going to explain what's the יחוד פרטי and יחוד כללי.","start_time_sec":172.69,"matched_text":"he's going to explain what's the יחוד פרטי and יחוד כללי.","score_norm":0.975,"confidence":"HIGH","token_span":[346,357],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"The Mistake of Reducing God to One Attribute","starting_phrase":"So even when you understand the whole thing is only a פרט and it's still a mistake, like you know the people who say God is love.","start_time_sec":269.01,"matched_text":"even when you understand the whole thing is only a פרט and it's still a mistake, like you know the people who say God is love.","score_norm":0.946,"confidence":"HIGH","token_span":[541,567],"matched_content":15,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"The Concept of General Unity (יחוד כללי)","starting_phrase":"אבל יחוד הכללי הוא, כמו מה שנאמר, הנה מקום אתי, there's a place with me, that the whole place of the world is is by me","start_time_sec":346.7635176738882,"matched_text":"יחוד הכללי הוא, כמו מה שנאמר, הנה מקום אתי, there's a place with me, that the whole place of the world is is by me,","score_norm":0.962,"confidence":"HIGH","token_span":[735,760],"matched_content":16,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":5},
+    {"title":"Intentional Prayer and the Idea of לכתחילה אריבער","starting_phrase":"And also, one of the things that we should mention over here is the ענין of לכתחילה אריבער.","start_time_sec":1106.31,"matched_text":"also, one of the things that we should mention over here is the ענין of לכתחילה אריבער.","score_norm":0.952,"confidence":"HIGH","token_span":[2551,2568],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Living in the Days of the Messiah","starting_phrase":"The רבי said already, we're לכתחילה אריבער. And really, the רבי said that the רבי מהר״ש said לכתחילה אריבער","start_time_sec":1229.81,"matched_text":"רבי said already, we're לכתחילה אריבער. And really, the רבי said that the רבי מהר״ש said לכתחילה אריבער,","score_norm":0.97,"confidence":"HIGH","token_span":[2858,2876],"matched_content":13,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"Torah as the Living Foundation of Life","starting_phrase":"When we look at תורה with this perspective, it transforms from just a subject we learn into something that breathes life into us.","start_time_sec":1464.4096009121995,"matched_text":"When we look at תורה with this perspective, it transforms from just a subject we learn into something that breathes life into us.","score_norm":0.964,"confidence":"HIGH","token_span":[3445,3468],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":4}
+  ]
+}

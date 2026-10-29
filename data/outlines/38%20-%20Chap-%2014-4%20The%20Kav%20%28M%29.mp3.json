@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "38 - Chap- 14-4 The Kav (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8d8fc0d4-8260-46f4-92b4-af174e109cdf",
+  "transcript": "transcripts/38%20-%20Chap-%2014-4%20The%20Kav%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:52:50.182Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Absorbing the Teacher’s Words Without Immediate Analysis","starting_phrase":"When you're listening to a teacher, you're not supposed to think about what he's saying, you're just supposed to absorb it.","start_time_sec":21.68,"matched_text":"When you're listening to a teacher, you're not supposed to think about what he's saying, you're just supposed to absorb","score_norm":0.976,"confidence":"HIGH","token_span":[55,75],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":6},
+    {"title":"Why the Revealed Line Is Considered Short","starting_phrase":"אמנם, however, מה שנמשך בבחינת קו קצר, why is the קו revealed in a way of like a short line?","start_time_sec":154.78,"matched_text":"אמנם, however, מה שנמשך בבחינת קו קצר, why is the קו revealed in a way of like a short line?","score_norm":0.953,"confidence":"HIGH","token_span":[520,540],"matched_content":12,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Point vs. Line: The Role of Direction","starting_phrase":"The difference between a line and a point is that in a point, there's no context whatsoever.","start_time_sec":216.64,"matched_text":"difference between a line and a point is that in a point, there's no context whatsoever.","score_norm":0.941,"confidence":"HIGH","token_span":[725,741],"matched_content":9,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Breaking Down Math: From Point to Hierarchical Line","starting_phrase":"That breaking up of the idea, the point of math, into like a hierarchy of like more basic ideas, you know,","start_time_sec":351.38,"matched_text":"breaking up of the idea, the point of math, into like a hierarchy of like more basic ideas,","score_norm":0.942,"confidence":"HIGH","token_span":[1166,1184],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Learning Chassidus Through the Linear Sha’ar Yichud","starting_phrase":"So nevertheless, it has to be learned in an orderly way, and the עצה, the first thing to learn is the סדר השתלשלות, the way it's explained in שער היחוד.","start_time_sec":477.78000000000003,"matched_text":"nevertheless, it has to be learned in an orderly way, and the עצה, the first thing to learn is the סדר השתלשלות, the way it's explained in שער היחוד.","score_norm":0.943,"confidence":"HIGH","token_span":[1629,1658],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":3},
+    {"title":"The Point’s Lack of Up‑Down Makes Teaching Hard","starting_phrase":"When it comes to a point, בהיולי דנקודה אין בו מעלה ומטה ראש תוך וסוף כו' כידוע, there's no up, down, beginning, middle, or end.","start_time_sec":675.88,"matched_text":"When it comes to a point, בהיולי דנקודה אין בו מעלה ומטה ראש תוך וסוף כו' כידוע, there's no up, down, beginning, middle, or end.","score_norm":0.987,"confidence":"HIGH","token_span":[2437,2462],"matched_content":21,"content_coverage":1,"longest_content_run_soft":21,"longest_content_run_strict":18},
+    {"title":"Purpose of the Line According to the Etz Chaim","starting_phrase":"זהו מה שכתוב בעץ חיים, this is what it says in עץ חיים, דכל עיקר הארת הקו אינו רק להיות בחינת מעלה ומטה כמו שיתבאר.","start_time_sec":761.8324991036213,"matched_text":"שכתוב בעץ חיים, this is what it says in עץ חיים, דכל עיקר הארת הקו אינו רק להיות בחינת מעלה ומטה כמו שיתבאר.","score_norm":0.987,"confidence":"HIGH","token_span":[2751,2774],"matched_content":19,"content_coverage":0.95,"longest_content_run_soft":19,"longest_content_run_strict":14}
+  ]
+}

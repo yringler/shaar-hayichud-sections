@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "060 Ch5 part1.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "08dc32d4-46aa-47d8-98cb-663bbd59faec",
+  "transcript": "transcripts/060%20Ch5%20part1.mp3.json",
+  "fetchedAt": "2026-10-29T02:35:29.655Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Why Chapter Five Matters","starting_phrase":"Chapter five, right? Yeah. Okay. Chapter five. Okay, chapter five is a very important chapter.","start_time_sec":0,"matched_text":"Chapter five, right? Yeah. Okay. Chapter five. Okay, chapter five is a very important chapter.","score_norm":0.956,"confidence":"HIGH","token_span":[0,15],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"The Need for Detailed Contemplation","starting_phrase":"So, he's telling you now that we said you have to be מתבונן in in in total particular thing and know all the different details, so that's what you have to know.","start_time_sec":61.86,"matched_text":"he's telling you now that we said you have to be מתבונן in in in total particular thing and know all the different details, so that's what you have","score_norm":0.925,"confidence":"HIGH","token_span":[105,134],"matched_content":14,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Promise of a Special Treatise","starting_phrase":"So what he's tell what he's giving you here is a promise that he's going to explain to you everything.","start_time_sec":139.01999999999998,"matched_text":"what he's tell what he's giving you here is a promise that he's going to explain to you everything.","score_norm":0.957,"confidence":"HIGH","token_span":[340,359],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":6},
+    {"title":"Avoiding Self‑Deception in Study","starting_phrase":"גם בדרך פרט עוד ענין אחד צריך ביותר לכל החפץ באמת בקירבת אלוקים, ואינו רוצה לצאת ידי חובתו להטעות את עצמו.","start_time_sec":213.11668186423503,"matched_text":"בדרך פרט עוד ענין אחד צריך ביותר לכל החפץ באמת בקירבת אלוקים, ואינו רוצה לצאת ידי חובתו להטעות את עצמו.","score_norm":1,"confidence":"HIGH","token_span":[557,577],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":20},
+    {"title":"Concept Takes Root in the Mind","starting_phrase":"בלשון אידיש, לייגט זיך אין מוח זייער.","start_time_sec":288.38,"matched_text":"בלשון אידיש, לייגט זיך אין מוח זייער.","score_norm":1,"confidence":"HIGH","token_span":[710,717],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"The Paradox of Not Feeling","starting_phrase":"In other words, he doesn't even feel that he's not feeling it.","start_time_sec":573.02,"matched_text":"other words, he doesn't even feel that he's not feeling","score_norm":0.981,"confidence":"HIGH","token_span":[1393,1403],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Depth Brings Greater Distance","starting_phrase":"And the more he looks into it, the farther away it is.","start_time_sec":731.1,"matched_text":"more he looks into it, the farther away","score_norm":0.958,"confidence":"HIGH","token_span":[1764,1772],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Thinking You Understand Means You Actually Don’t","starting_phrase":"they tell you is if you think that you actually understand, then then then you don't understand.","start_time_sec":1576.84,"matched_text":"tell you is if you think that you actually understand, then then then you don't understand.","score_norm":0.841,"confidence":"HIGH","token_span":[3754,3770],"matched_content":5,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2}
+  ]
+}

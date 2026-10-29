@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "80 - Hisbonenus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "dfd0934b-ba76-42a6-bd9a-01e9a6508206",
+  "transcript": "transcripts/80%20-%20Hisbonenus.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:51.094Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Learning and practicing from the top down","starting_phrase":"First you got to learn everything and then you have to practice","start_time_sec":6.300000000000001,"matched_text":"First you got to learn everything and then you have to practice","score_norm":0.91,"confidence":"HIGH","token_span":[9,21],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

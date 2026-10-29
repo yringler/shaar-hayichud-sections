@@ -1,9 +1,11 @@
 /**
- * follow.js: "Listen along". Loaded on demand by play.js when the reader
- * presses the Listen along button. While the player plays, the line (chapter
- * pages) or paragraph (transcript pages) under discussion gets the
- * `is-discussing` class, which CSS draws as a side border. The current item
- * is scrolled into view unless the reader scrolled recently.
+ * follow.js: "Follow along". Loaded on demand by play.js when Follow along
+ * is turned on (by the button, or on page load when the reader left it on).
+ * While the player plays, the line (chapter pages) or paragraph (transcript
+ * pages) under discussion gets the `is-discussing` class, which CSS draws as
+ * a side border. The current item is scrolled into view unless the reader
+ * scrolled the page recently. Scrolling inside the player panel (its topic
+ * list or transcript) does not count: play.ts handles that region itself.
  */
 import { formatTime, spanAt, type Span } from './audio/model.ts';
 
@@ -87,13 +89,14 @@ export function startFollow(o: FollowOptions): FollowController {
     clear();
   });
 
-  const markScroll = () => {
+  const markScroll = (e: Event) => {
+    if (e.target instanceof Element && e.target.closest('[data-listen]')) return;
     lastUserScroll = Date.now();
   };
   window.addEventListener('wheel', markScroll, { passive: true });
   window.addEventListener('touchmove', markScroll, { passive: true });
   window.addEventListener('keydown', (e) => {
-    if (['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '].includes(e.key)) markScroll();
+    if (['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '].includes(e.key)) markScroll(e);
   });
 
   // Transcript paragraphs: click / Enter seeks there.

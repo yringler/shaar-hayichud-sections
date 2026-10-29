@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "93 - Dvar Malchus Sichos.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0aadd04a-8e36-4794-9200-f00925b19c26",
+  "transcript": "transcripts/93%20-%20Dvar%20Malchus%20Sichos.mp3.json",
+  "fetchedAt": "2026-10-29T00:01:33.980Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Rabbi's public revelations: חסד and גבורה","starting_phrase":"Or like even when the רבי would say sometimes things very בגילוי, like in the נונ'ס, in all the שיחות in the נונ'ס,","start_time_sec":1,"matched_text":"even when the רבי would say sometimes things very בגילוי, like in the נונ'ס, in all the שיחות in the נונ'ס,","score_norm":0.932,"confidence":"HIGH","token_span":[2,23],"matched_content":12,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5}
+  ]
+}

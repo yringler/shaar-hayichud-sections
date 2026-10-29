@@ -531,12 +531,21 @@ export class Transcriber {
           continue;
         }
         if (t.status === 'COMPLETED') {
+          // Already stored by an earlier run that was stopped before it saved
+          // the state: nothing to fetch or move (the file is written only after
+          // the move succeeded).
+          if (this.storedFrom(item.lectureId) === t.id) {
+            item.done = 'written';
+            continue;
+          }
           try {
             // The batch filed it in the batch's folder (batch status reports folder_id null, so it is not trusted).
             const sameFolder = b.folderPath.map((x) => x.toLowerCase()).join('\u0000') === item.folderPath.map((x) => x.toLowerCase()).join('\u0000');
             if (!sameFolder && t.folder_id !== item.folderId) await this.client.moveDocument(t.id, item.folderId);
             await this.write(item, t.id);
             item.done = 'written';
+            // Record progress per item, so a run stopped mid-pass resumes here.
+            saveState(this.deps.statePath, state);
           } catch (e) {
             this.warn(`${item.lectureId}\n  could not store ${t.id} yet: ${(e as Error).message}`);
           }
@@ -588,6 +597,17 @@ export class Transcriber {
       if (DEAD_STATUSES.has(status)) throw new Error(`transcription ${id} ended with ${status}`);
       if (Date.now() > deadline) throw new Error(`timed out waiting for ${id} (last status ${status}); rerun later to resume`);
       await this.sleep(this.deps.pollMs);
+    }
+  }
+
+  /** The Sofer transcription id of the stored transcript for a lecture, if any. */
+  private storedFrom(lectureId: string): string | null {
+    const file = transcriptPath(this.deps.dataDir, lectureId);
+    if (!existsSync(file)) return null;
+    try {
+      return (JSON.parse(readFileSync(file, 'utf8')) as StoredTranscript).sofer.transcriptionId;
+    } catch {
+      return null;
     }
   }
 

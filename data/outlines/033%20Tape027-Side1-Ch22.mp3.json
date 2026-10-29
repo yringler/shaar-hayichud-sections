@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "033 Tape027-Side1-Ch22.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5664b3d2-44f1-4837-8c49-39cce7c95e0c",
+  "transcript": "transcripts/033%20Tape027-Side1-Ch22.mp3.json",
+  "fetchedAt": "2026-10-29T00:36:36.257Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Dividing the Ten Sefirot of Atzilut","starting_phrase":"Okay. כ״ב, right? Right. ומעתה יש להבין בפרטיות חילוק עשר ספירות דאצילות, ובתחילה יש לברר עניין פרטיות חילוק עשר ספירות דיו״ד דיו״ד דיו״ד.","start_time_sec":0,"matched_text":"כ״ב, right? Right. ומעתה יש להבין בפרטיות חילוק עשר ספירות דאצילות, ובתחילה יש לברר עניין פרטיות חילוק עשר ספירות דיו״ד דיו״ד דיו״ד.","score_norm":0.994,"confidence":"HIGH","token_span":[1,23],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":19},
+    {"title":"Chesed in Chokhmah Is Actually Intellectual","starting_phrase":"In other words, חסד of חכמה is not a חסד at all, it's a שכל.","start_time_sec":201.02,"matched_text":"other words, חסד of חכמה is not a חסד at all, it's a שכל.","score_norm":0.955,"confidence":"HIGH","token_span":[301,315],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Justice and Kindness Without Division","starting_phrase":"הגם שהזכות יתהפך לחוב בדין שבחכמה והחוב יתהפך לזכות בחסד שבחכמה, זהו כאשר הוא בעצם בלי התחלקות.","start_time_sec":290.84,"matched_text":"הגם שהזכות יתהפך לחוב בדין שבחכמה, והחוב יתהפך לזכות בחסד שבחכמה, זהו כאשר הוא בעצם בלי התחלקות.","score_norm":1,"confidence":"HIGH","token_span":[511,528],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":17},
+    {"title":"Opposite Forces Nullify Each Other","starting_phrase":"So there's a thing that the two opposites nullify each other.","start_time_sec":380.51166093365936,"matched_text":"There's a thing that the two opposites nullify each other.","score_norm":0.969,"confidence":"HIGH","token_span":[713,723],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Sweet‑Bitter Balance in Culinary Analogy","starting_phrase":"And also also here he's talking about sharp and sharp and sweet.","start_time_sec":709.9418525798534,"matched_text":"also also here he's talking about sharp and sharp and sweet.","score_norm":0.984,"confidence":"HIGH","token_span":[1387,1398],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Giving Kindness to an Enemy: Hidden Strength","starting_phrase":"And you you gave me, I I I never exactly knew how to apply that משל till you told me about the person.","start_time_sec":873.5079017199023,"matched_text":"gave me, I I I never exactly knew how to apply that משל till you told me about the person.","score_norm":0.965,"confidence":"HIGH","token_span":[1670,1690],"matched_content":13,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Action as Law vs Inner Kindness","starting_phrase":"שבחסד, פעולתו דין ופנימיותו חסד, like when he פאטשעס the boy","start_time_sec":1608.9729140049055,"matched_text":"שבחסד, פעולתו דין ופנימיותו חסד, like when he פאטשעס the boy,","score_norm":0.974,"confidence":"HIGH","token_span":[3887,3898],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5}
+  ]
+}

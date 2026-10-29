@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "02 - Chap- 23-2 Keser (M) .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "95b97d08-78d1-4449-b2cf-b0ce22cd9cb3",
+  "transcript": "transcripts/02%20-%20Chap-%2023-2%20Keser%20%28M%29%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:39.479Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Mouth vs Stomach Communication Delay","starting_phrase":"And the reason why that happens is because","start_time_sec":60.06,"matched_text":"reason why that happens is because","score_norm":0.964,"confidence":"HIGH","token_span":[156,162],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Simple vs Complex Pleasure and Desire","starting_phrase":"And all of this applies whether you're speaking about an essential","start_time_sec":123.48,"matched_text":"all of this applies whether you're speaking about an essential","score_norm":0.969,"confidence":"HIGH","token_span":[307,317],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Examples of Complex Pleasures: Honor, Money, Wisdom","starting_phrase":"For example, let's say honor, we see that some people","start_time_sec":272.26,"matched_text":"example, let's say honor, we see that some people,","score_norm":0.979,"confidence":"HIGH","token_span":[674,683],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Soul Drawn to Pleasure, Flees Pain","starting_phrase":"But from this, that the soul is drawn after anything pleasurable","start_time_sec":415.84,"matched_text":"from this, that the soul is drawn after anything pleasurable,","score_norm":0.945,"confidence":"HIGH","token_span":[1020,1030],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Pleasure Expands Soul, Pain Contracts It","starting_phrase":"So, too, with the reverse, that something that's painful","start_time_sec":539.28,"matched_text":"too, with the reverse, that something that's painful","score_norm":0.974,"confidence":"HIGH","token_span":[1317,1325],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Chassidus Reveals Godly Pleasure in Everything","starting_phrase":"And this is, yeah, this is what חסידות does in godliness","start_time_sec":606.8676590163934,"matched_text":"yeah, this is what חסידות does in godliness,","score_norm":0.958,"confidence":"HIGH","token_span":[1497,1505],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Hungry Desire vs Fullness Pain","starting_phrase":"Yeah, I mean right now if you","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

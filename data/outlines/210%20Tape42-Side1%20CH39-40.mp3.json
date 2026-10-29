@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "210 Tape42-Side1 CH39-40.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "93d3b772-3300-4ef1-94d7-356036977070",
+  "transcript": "transcripts/210%20Tape42-Side1%20CH39-40.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:49.830Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Letters as Smoke, Not Destroyed Torah","starting_phrase":"The letters flew up into the air. So said, \"What do you mean it flew up into the air? It wasn't really the letters flew up into the air, it was smoke that flew up into the air.","start_time_sec":6.82,"matched_text":"letters flew up into the air.\" So said, \"What do you mean it flew up into the air? It wasn't really the letters flew up into the air, it was smoke that flew up into the air.","score_norm":0.958,"confidence":"HIGH","token_span":[1,38],"matched_content":23,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":4},
+    {"title":"Conflicting Commentaries on Sha'ar HaYichud","starting_phrase":"Then it's sort of hard to tell, because here you say, you see, this רש״י says it one way, and תוספות says it a different way.","start_time_sec":83.9,"matched_text":"it's sort of hard to tell, because here you say, you see, this רש״י says it one way, and תוספות says it a different way.","score_norm":0.953,"confidence":"HIGH","token_span":[193,218],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":3},
+    {"title":"Roman Burning and the Survival of Letters","starting_phrase":"You know? So so that's the ענין of כלים, but even there there's ענין of לבושים, because what's his name, what was that, אפוסטמוס, who burnt it? Some Roman guy.","start_time_sec":211.06,"matched_text":"that's the ענין of כלים, but even there there's ענין of לבושים, because what's his name, what was that, אפוסטמוס, who burnt it? Some Roman guy.\"","score_norm":0.974,"confidence":"HIGH","token_span":[487,513],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":6},
+    {"title":"Confusing רצון with נקודות – why the example misleads","starting_phrase":"yeah, but wait a minute. The reason you're confusing it with נקודות is because the example that's given on it really is an example of later.","start_time_sec":1652.4854111878765,"matched_text":"yeah, but wait a minute. The reason you're confusing it with נקודות is because the example that's given on it really is an example of later.","score_norm":0.942,"confidence":"HIGH","token_span":[3890,3916],"matched_content":14,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Hidden רצון (עתיקא סתימאה) and its birth‑imprint","starting_phrase":"It's called עתיקא סתימאה. Right. It's a hidden רצון that when a person is born already, Well, מחשבה סתימאה.","start_time_sec":1752.7,"matched_text":"It's called עתיקא סתימאה. Right. It's a hidden רצון that when a person is born already, Well, מחשבה סתימאה.","score_norm":0.974,"confidence":"HIGH","token_span":[4206,4225],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":5},
+    {"title":"Open מחשבה as the explicit רצון גלוי","starting_phrase":"A open מחשבה is already that's the רצון גלוי. But it's part of his nature.","start_time_sec":1826.8923289503011,"matched_text":"open מחשבה is already that's the רצון גלוי. But it's part of his nature.","score_norm":0.97,"confidence":"HIGH","token_span":[4413,4427],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "04 - Chap- 23-4 Keser (M) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c1019c37-97b7-49df-a5c7-1bca026fd3c9",
+  "transcript": "transcripts/04%20-%20Chap-%2023-4%20Keser%20%28M%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:58.191Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Role of Pleasure in All the Middot","starting_phrase":"וככה בכל פרטי פרטי המדות, and so it is with all of the little minute details of the מדות,","start_time_sec":0,"matched_text":"וככה בכל פרטי פרטי המדות, and so it is with all of the little minute details of the מדות,","score_norm":0.95,"confidence":"HIGH","token_span":[0,19],"matched_content":11,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Force vs. Desire: The Power of Will","starting_phrase":"Now, the the truth is, the the reason why it helps to force yourself to do something is because that's coming from your כח הרצון,","start_time_sec":107.66,"matched_text":"truth is, the the reason why it helps to force yourself to do something is because that's coming from your כח הרצון,","score_norm":0.967,"confidence":"HIGH","token_span":[234,256],"matched_content":15,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":7},
+    {"title":"The Yoli Liquid: Connecting Pleasure and Intellect","starting_phrase":"שהלחלוחית שבו עונג היולי הוא המקור המשכיל כל שכל וכולי, because the liquid, the liquid that's over the brain,","start_time_sec":193.78,"matched_text":"שהלחלוחית שבו עונג היולי הוא המקור המשכיל כל שכל וכולי, because the liquid, the liquid that's over the brain,","score_norm":0.987,"confidence":"HIGH","token_span":[496,515],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":11},
+    {"title":"Desire (Ratzon) as the Source of All Joy","starting_phrase":"ואמנם, however, ברצון בלבד אנו רואים שבלא רצון אין תענוג.","start_time_sec":329.28,"matched_text":"ואמנם, however, ברצון בלבד אנו רואים שבלא רצון אין תענוג.","score_norm":1,"confidence":"HIGH","token_span":[788,798],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Will Determines Enjoyment in Every Virtue","starting_phrase":"ונמצא גם בכל פרטי המדות, and this we see even with all the also with all the פרטי מדות,","start_time_sec":445.9634789156627,"matched_text":"בכל פרטי המדות, and this we see even with all the also with all the פרטי מדות,","score_norm":0.968,"confidence":"HIGH","token_span":[1086,1103],"matched_content":12,"content_coverage":0.923,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Internal vs. External Nature of Desire and Pleasure","starting_phrase":"ולפעמים זה פנימי וזה חיצוני, ולפעמים להיפך.","start_time_sec":928.88,"matched_text":"ולפעמים זה פנימי וזה חיצוני, ולפעמים להיפך.","score_norm":0.99,"confidence":"HIGH","token_span":[2458,2465],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5}
+  ]
+}

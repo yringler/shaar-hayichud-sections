@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "232 Tape58-Side1 Ch53&54-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "03d6f376-ca89-402a-b69f-d088cfc2b278",
+  "transcript": "transcripts/232%20Tape58-Side1%20Ch53%2654-.mp3.json",
+  "fetchedAt": "2026-10-29T00:48:01.386Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Divine Control Over Nations and Kings","starting_phrase":"That's what it says in the מגילה, that all the way to the ע' שרים and even the king, that the whole thing is in the hands of the אויבערשטער.","start_time_sec":0,"matched_text":"That's what it says in the מגילה, that all the way to the ע' שרים and even the king, that the whole thing is in the hands of the אויבערשטער.","score_norm":0.916,"confidence":"HIGH","token_span":[0,30],"matched_content":14,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":2},
+    {"title":"Understanding the צירופים of the י\"מ","starting_phrase":"The צירופים you know, the צירופים of the י\"מ.","start_time_sec":176.71168183152338,"matched_text":"צירופים for each letter. There's twenty-four צירופים which start with י","score_norm":0.8,"confidence":"HIGH","token_span":[334,345],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Messianic Vision: Nations Accepting Divine Kingship","starting_phrase":"And part of the coming of משיח is that the גוים should accept this מלכות upon themselves along with the מצות בני נח.","start_time_sec":265.8,"matched_text":"part of the coming of משיח is that the גוים should accept this מלכות upon themselves along with the מצות בני נח.","score_norm":0.963,"confidence":"HIGH","token_span":[495,517],"matched_content":14,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Inertia Myth and the Music of the Spheres","starting_phrase":"Like he's saying right here, that the reason that the world is going around is not like they think it's because of inertia.","start_time_sec":510.2059319049019,"matched_text":"he's saying right here, that the reason that the world is going around is not like they think it's because of inertia.","score_norm":0.941,"confidence":"HIGH","token_span":[1032,1054],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Ten ספירות of the קליפות Explained","starting_phrase":"והלבין בדרך פרט השתלשלות דזה לעומת זה כולו בעשר ספירות דקליפה דאבי\"ע,","start_time_sec":730.43,"matched_text":"בדרך פרט השתלשלות דזה לעומת זה כולו בעשר ספירות דקליפה","score_norm":0.896,"confidence":"HIGH","token_span":[1562,1572],"matched_content":9,"content_coverage":0.75,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Opposing Forces: Pleasure, Pain, and the מנגד","starting_phrase":"The same power actually. Right, like we learned before.","start_time_sec":943.03,"matched_text":"same power actually. Right, like we learned before.","score_norm":0.939,"confidence":"HIGH","token_span":[1988,1996],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"The Sneaky White Lie Strategy Explained","starting_phrase":"And really, if you look, it's ממש that's what he's telling you: \"We'll slowly get them.\"","start_time_sec":1086.71,"matched_text":"look, it's ממש that's what he's telling you: \"We'll slowly get them.\"","score_norm":0.993,"confidence":"HIGH","token_span":[2305,2317],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":7},
+    {"title":"Yetzra Hara’s Plan and the Ultimate Addiction","starting_phrase":"So, the plan of the יצר הרע, what he told them, that he's going to use this thing to pull in people.","start_time_sec":1428.21,"matched_text":"plan of the יצר הרע, what he told them, that he's going to use this thing to pull in people.","score_norm":0.951,"confidence":"HIGH","token_span":[3136,3156],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3}
+  ]
+}

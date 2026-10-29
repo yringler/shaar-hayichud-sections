@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "14 - Chap- 1-6 Chochmah Binah Daas.mp3",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/14%20-%20Chap-%201-6%20Chochmah%20Binah%20Daas.mp3.json",
+  "transcriptionId": "2514e92c-1594-49e2-b08f-9b8268e8d2a1",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1920,
+    "hebrewWords": 111,
+    "matchedWords": 26,
+    "chapterLines": 53,
+    "alignedLines": 2,
+    "firstLineIndex": 27,
+    "lastLineIndex": 28,
+    "meanConfidence": 0.405
+  },
+  "segments": [
+    {"startSeconds":3.32,"endSeconds":52.96,"chapter":"chapter_01","lineId":"pimwc3gh","confidence":0.449,"matchedWords":24,"lineWords":56,"firstWord":0,"lastWord":119},
+    {"startSeconds":52.96,"endSeconds":53.44,"chapter":"chapter_01","lineId":"wctxrksu","confidence":0.36,"matchedWords":2,"lineWords":6,"firstWord":120,"lastWord":121}
+  ]
+}

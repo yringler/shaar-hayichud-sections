@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "73 - Chap- 20-2 Tikun-Tohu.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b95c072c-d15d-470f-aadf-ae3294f0a4bd",
+  "transcript": "transcripts/73%20-%20Chap-%2020-2%20Tikun-Tohu.mp3.json",
+  "fetchedAt": "2026-10-28T23:58:27.668Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Separate Nature of the Ten Sefirot of Chaos","starting_phrase":"ולזה בבחינת עשר ספירות דתוהו הן בלתי מיוחדים ומתכללים זה עם זה.","start_time_sec":3.28,"matched_text":"ולזה בבחינת עשר ספירות דתוהו הן בלתי מיוחדים ומתכללים","score_norm":1,"confidence":"HIGH","token_span":[0,9],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"When Core Goals Conflict: No Compromise","starting_phrase":"But what happens if there's something that is the is the issue itself, like it comes between one guy's life and the other guy's life?","start_time_sec":181.48,"matched_text":"what happens if there's something that is the is the issue itself, like it comes between one guy's life and the other guy's life?","score_norm":0.95,"confidence":"HIGH","token_span":[525,549],"matched_content":14,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Beit Shammai vs Beit Hillel: Core Differences","starting_phrase":"כמחלקת בית שמאי ובית הלל וכאי גוונא, that בית שמאי and בית הלל, their reason they're arguing that why why didn't they convince each other?","start_time_sec":308.31529674252573,"matched_text":"בית שמאי ובית הלל וכאי גוונא, that בית שמאי and בית הלל, their reason they're arguing that why why didn't they convince each other?","score_norm":0.986,"confidence":"HIGH","token_span":[929,953],"matched_content":20,"content_coverage":0.952,"longest_content_run_soft":20,"longest_content_run_strict":6},
+    {"title":"Tikkun: Shifting from Goal to Means","starting_phrase":"הענין of תיקון is that now we're not dealing with your עצם רצון, we're dealing with not not In other words, not talking about your goal.","start_time_sec":453.84,"matched_text":"תיקון is that now we're not dealing with your עצם רצון, we're dealing with not not In other words, not talking about your goal.","score_norm":0.984,"confidence":"HIGH","token_span":[1367,1391],"matched_content":20,"content_coverage":0.952,"longest_content_run_soft":19,"longest_content_run_strict":12},
+    {"title":"Travel Analogy: Short Long Way vs Long Short Way","starting_phrase":"Like that story with the long short way and the short long way?","start_time_sec":537.06,"matched_text":"story with the long short way and the short long way?","score_norm":0.972,"confidence":"HIGH","token_span":[1640,1651],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Kindness Motivated by Personal Benefit","starting_phrase":"For example, we're not talking about that you're being kind because בעצם you want to always be kind to everybody.","start_time_sec":600.8199999999999,"matched_text":"example, we're not talking about that you're being kind because בעצם you want to always be kind to everybody.","score_norm":0.957,"confidence":"HIGH","token_span":[1832,1851],"matched_content":12,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Complex Desire and When to Be Kind","starting_phrase":"When do you when are you nice and when are you not nice? This is called the the רצון מורכב, right?","start_time_sec":728.8,"matched_text":"When do you when are you nice and when are you not nice? This is called the the רצון מורכב,","score_norm":0.922,"confidence":"HIGH","token_span":[2214,2234],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2}
+  ]
+}

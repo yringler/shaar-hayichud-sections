@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "90 - Davening and Hisbonenus.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "91b95c67-2321-4c9c-814d-3354a187c7c9",
+  "transcript": "transcripts/90%20-%20Davening%20and%20Hisbonenus.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:12.600Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Basic Approach: Daaven Like a Child","starting_phrase":"Well, I mean, the most basic thing is","start_time_sec":2.98,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Detailed Reflection Using Tree and Cell Analogy","starting_phrase":"And then you go back the other way of","start_time_sec":147.14,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Sophistication Requires Advanced Chassidut Insight","starting_phrase":"So to appreciate it, they have to learn more advanced things","start_time_sec":210.36,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Baal Shem Tov Story Illustrating Simple Reflection","starting_phrase":"like the story with the בעל שם טוב and that simple guy","start_time_sec":271.02,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Impact of Spoiled Attitudes on Appreciation","starting_phrase":"The problem is if a person gets spoiled, they get used to it","start_time_sec":354.86,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Leap of Faith Analogies: Medicine and Buildings","starting_phrase":"Just like with I mean, that's the way it is with like medicine","start_time_sec":467.84,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Making Chassidut Accessible for Skeptics and Messiah Vision","starting_phrase":"The thing that we're trying to do is to make to to take make חסידות available","start_time_sec":559.58,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

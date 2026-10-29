@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "010- Tape020-Side1-Ch13.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "df2152d2-1104-49fb-a02e-7dc5e29b59bb",
+  "transcript": "transcripts/010-%20Tape020-Side1-Ch13.mp3.json",
+  "fetchedAt": "2026-10-29T02:34:47.061Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Clarifying the Abstract Nature of Concepts","starting_phrase":"Yeah, so it's like we said before that","start_time_sec":0,"matched_text":"Yeah, so it's like we said before","score_norm":0.944,"confidence":"HIGH","token_span":[0,7],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Blueprint Analogy for Divine Creation","starting_phrase":"And over here it's a little bit different because actually","start_time_sec":214.3,"matched_text":"over here it's a little bit different because","score_norm":0.99,"confidence":"HIGH","token_span":[427,435],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Remembering Through a Simple Marker (ציון)","starting_phrase":"In other words, that that if he wants to remember","start_time_sec":383.44,"matched_text":"other words, that that if he wants to remember,","score_norm":0.918,"confidence":"HIGH","token_span":[794,803],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Point (נקודה) as Source of Lines","starting_phrase":"And the thing of the point is that","start_time_sec":702.28,"matched_text":"thing of the point","score_norm":0.917,"confidence":"HIGH","token_span":[1417,1421],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Understanding היולי: Non‑Expanding Essence","starting_phrase":"And this is the general thing of a","start_time_sec":1201.5859616080338,"matched_text":"general thing","score_norm":1,"confidence":"HIGH","token_span":[2501,2503],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Student Absorbing Teacher as a Point","starting_phrase":"And the fact that he listened to the","start_time_sec":1552.4790690087764,"matched_text":"fact that he listened","score_norm":0.934,"confidence":"HIGH","token_span":[3473,3477],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Introduction to the Short Line (קו קצר) Concept","starting_phrase":"Now it's starting another ענין. That it's","start_time_sec":1612.6850639899583,"matched_text":"it's starting another ענין. That it's","score_norm":0.985,"confidence":"HIGH","token_span":[3669,3675],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4}
+  ]
+}

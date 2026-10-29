@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "36 - Chap- 26-7 Yichudei AvA.mp3",
+  "chapter": "chapter_26",
+  "transcript": "transcripts/36%20-%20Chap-%2026-7%20Yichudei%20AvA.mp3.json",
+  "transcriptionId": "12512a81-df40-4459-ab9f-ca5e025db974",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/36%20-%20Chap-%2026-7%20Yichudei%20AvA.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 2036,
+    "hebrewWords": 204,
+    "matchedWords": 45,
+    "chapterLines": 59,
+    "alignedLines": 3,
+    "firstLineIndex": 29,
+    "lastLineIndex": 31,
+    "meanConfidence": 0.684
+  },
+  "segments": [
+    {"startSeconds":5.82,"endSeconds":145.24,"chapter":"chapter_26","lineId":"taxwehas","confidence":0.643,"matchedWords":15,"lineWords":26,"firstWord":10,"lastWord":453},
+    {"startSeconds":150.68,"endSeconds":412.6,"chapter":"chapter_26","lineId":"4wtgfplc","confidence":0.604,"matchedWords":16,"lineWords":26,"firstWord":462,"lastWord":1282},
+    {"startSeconds":412.7,"endSeconds":428.52,"chapter":"chapter_26","lineId":"ivnu7533","confidence":0.806,"matchedWords":14,"lineWords":17,"firstWord":1283,"lastWord":1310}
+  ]
+}

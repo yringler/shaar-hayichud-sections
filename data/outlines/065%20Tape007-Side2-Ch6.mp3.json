@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "065 Tape007-Side2-Ch6.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5e08a1ad-44dc-4d40-9af9-93a5c8dbe754",
+  "transcript": "transcripts/065%20Tape007-Side2-Ch6.mp3.json",
+  "fetchedAt": "2026-10-29T00:41:38.121Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Defining God Through Negation","starting_phrase":"Right. So like you can't really figure","start_time_sec":1.3064952240999266,"matched_text":"can't really figure","score_norm":0.964,"confidence":"HIGH","token_span":[4,7],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Mountain Analogy for Infinite Divinity","starting_phrase":"And what it sees in the מהות,","start_time_sec":109.31010041636088,"matched_text":"what it sees in the מהות,","score_norm":0.923,"confidence":"HIGH","token_span":[252,258],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Wonder (הפלאה) Emerging from Negation","starting_phrase":"So even the הפלאה, like it's","start_time_sec":266.08952730835284,"matched_text":"even the הפלאה, like it's","score_norm":0.942,"confidence":"HIGH","token_span":[612,617],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Joy Comes from Divine Connection, Not Detail","starting_phrase":"Our שמחה is not from the fact","start_time_sec":1200.543987264266,"matched_text":"Our שמחה is not from the fact","score_norm":0.968,"confidence":"HIGH","token_span":[722,729],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Explanation as Elegant Structure","starting_phrase":"In other words, the שמחה of","start_time_sec":1332.500004898342,"matched_text":"other words, the שמחה","score_norm":0.974,"confidence":"HIGH","token_span":[1025,1029],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Chassidic Joy Rooted in Divinity","starting_phrase":"What he's telling you, the שמחה","start_time_sec":1412.1962135684275,"matched_text":"What he's telling you, the שמחה","score_norm":0.962,"confidence":"HIGH","token_span":[1208,1214],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Bina as Grasping the Essence","starting_phrase":"That the בעל בינה is called","start_time_sec":1649.8746020083136,"matched_text":"בעל בינה is called","score_norm":0.974,"confidence":"HIGH","token_span":[1571,1575],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"True Goal of Understanding","starting_phrase":"In other words, when somebody's really","start_time_sec":1711.7153759490357,"matched_text":"other words, when somebody's","score_norm":1,"confidence":"HIGH","token_span":[1713,1717],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4}
+  ]
+}

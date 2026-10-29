@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "53 - Chap- 17-1 Igullim-Yosher .mp3",
+  "chapter": "chapter_17",
+  "transcript": "transcripts/53%20-%20Chap-%2017-1%20Igullim-Yosher%20.mp3.json",
+  "transcriptionId": "033d558f-d4f0-4b5b-a6b8-8ca4afa0128d",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2156,
+    "hebrewWords": 283,
+    "matchedWords": 139,
+    "chapterLines": 60,
+    "alignedLines": 8,
+    "firstLineIndex": 0,
+    "lastLineIndex": 7,
+    "meanConfidence": 0.945
+  },
+  "segments": [
+    {"startSeconds":11.02,"endSeconds":19.64,"chapter":"chapter_17","lineId":"zmrrqmag","confidence":1,"matchedWords":12,"lineWords":13,"firstWord":20,"lastWord":45},
+    {"startSeconds":65.44,"endSeconds":76.24,"chapter":"chapter_17","lineId":"cmv5sysr","confidence":0.895,"matchedWords":19,"lineWords":22,"firstWord":194,"lastWord":216},
+    {"startSeconds":140.66,"endSeconds":151.235,"chapter":"chapter_17","lineId":"ilqassjy","confidence":1,"matchedWords":25,"lineWords":25,"firstWord":430,"lastWord":460},
+    {"startSeconds":230.14,"endSeconds":272.46,"chapter":"chapter_17","lineId":"jm4lvozs","confidence":0.975,"matchedWords":25,"lineWords":25,"firstWord":675,"lastWord":770},
+    {"startSeconds":274.2,"endSeconds":281.48,"chapter":"chapter_17","lineId":"2gblmyug","confidence":0.941,"matchedWords":16,"lineWords":17,"firstWord":776,"lastWord":793},
+    {"startSeconds":461.44,"endSeconds":518.9,"chapter":"chapter_17","lineId":"7bcdcemh","confidence":0.775,"matchedWords":17,"lineWords":21,"firstWord":1395,"lastWord":1553},
+    {"startSeconds":553.62,"endSeconds":593.5,"chapter":"chapter_17","lineId":"wutjlpzu","confidence":0.976,"matchedWords":17,"lineWords":17,"firstWord":1667,"lastWord":1774},
+    {"startSeconds":597.581,"endSeconds":603.12,"chapter":"chapter_17","lineId":"jb6l6tjw","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1786,"lastWord":1800}
+  ]
+}

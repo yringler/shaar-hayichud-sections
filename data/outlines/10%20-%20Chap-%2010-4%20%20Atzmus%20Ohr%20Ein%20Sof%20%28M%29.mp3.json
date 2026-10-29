@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "10 - Chap- 10-4  Atzmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "49503683-c926-4bc9-9bb6-eaaeeadc61de",
+  "transcript": "transcripts/10%20-%20Chap-%2010-4%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:49:16.075Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"God Transcends All Kabbalistic Levels","starting_phrase":"So that's the point. This is the basic point. That God is","start_time_sec":2.4400000000000013,"matched_text":"that's the point. This is the basic point. That God","score_norm":0.927,"confidence":"HIGH","token_span":[1,11],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Mikdash Melech Sources on Pre‑Contraction","starting_phrase":"But if you, but really, even the האריז״ל himself, מקדש מלך","start_time_sec":76.95333333333335,"matched_text":"even the האריז\"ל himself, מקדש מלך,","score_norm":0.962,"confidence":"HIGH","token_span":[199,205],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Zohar’s Opening on Sovereignty and Engraved Letters","starting_phrase":"So how does it translate it? What does it mean בראשית?","start_time_sec":176.6,"matched_text":"how does it translate it? What does it mean בראשית?","score_norm":0.949,"confidence":"HIGH","token_span":[465,475],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Essence Higher Than the Ten Sefirot","starting_phrase":"So that's the basic idea. Now, at this point, the th-","start_time_sec":538.22,"matched_text":"that's the basic idea. Now, at this point, the th-","score_norm":0.926,"confidence":"HIGH","token_span":[1363,1373],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

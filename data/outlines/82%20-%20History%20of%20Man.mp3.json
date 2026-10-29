@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "82 - History of Man.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7437b6d7-2cf7-428f-9c55-26f00a4da36a",
+  "transcript": "transcripts/82%20-%20History%20of%20Man.mp3.json",
+  "fetchedAt": "2026-10-29T00:31:02.504Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Adam as a fertilized egg and stem cells","starting_phrase":"In other words, what happened is when God","start_time_sec":0.18,"matched_text":"other words, what happened is when God","score_norm":0.987,"confidence":"HIGH","token_span":[1,8],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Specialization of cells and nations over time","starting_phrase":"And then as the it develops, it becomes more","start_time_sec":82.82,"matched_text":"develops, it becomes more","score_norm":0.973,"confidence":"HIGH","token_span":[270,274],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Abraham as the first full‑blown Jew","starting_phrase":"And then with אברהם, there there's a certain point where","start_time_sec":151.58,"matched_text":"with אברהם, there there's a certain point where","score_norm":0.988,"confidence":"HIGH","token_span":[463,471],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

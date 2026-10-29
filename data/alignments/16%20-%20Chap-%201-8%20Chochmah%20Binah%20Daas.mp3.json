@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "16 - Chap- 1-8 Chochmah Binah Daas.mp3",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/16%20-%20Chap-%201-8%20Chochmah%20Binah%20Daas.mp3.json",
+  "transcriptionId": "be52b97a-07e7-4529-b18e-784059e2db6f",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/16%20-%20Chap-%201-8%20Chochmah%20Binah%20Daas.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 1628,
+    "hebrewWords": 265,
+    "matchedWords": 131,
+    "chapterLines": 53,
+    "alignedLines": 7,
+    "firstLineIndex": 37,
+    "lastLineIndex": 43,
+    "meanConfidence": 0.898
+  },
+  "segments": [
+    {"startSeconds":2.96,"endSeconds":4.94,"chapter":"chapter_01","lineId":"vrsgqwdc","confidence":0.78,"matchedWords":4,"lineWords":5,"firstWord":0,"lastWord":3},
+    {"startSeconds":30.98,"endSeconds":51.96,"chapter":"chapter_01","lineId":"ykpa7sqa","confidence":0.853,"matchedWords":13,"lineWords":16,"firstWord":87,"lastWord":134},
+    {"startSeconds":75.06,"endSeconds":120.16,"chapter":"chapter_01","lineId":"fuudukmx","confidence":0.912,"matchedWords":22,"lineWords":25,"firstWord":202,"lastWord":324},
+    {"startSeconds":127.56,"endSeconds":171.72,"chapter":"chapter_01","lineId":"qipfrgb7","confidence":0.89,"matchedWords":18,"lineWords":21,"firstWord":342,"lastWord":471},
+    {"startSeconds":209.78,"endSeconds":249.04,"chapter":"chapter_01","lineId":"zfgfsjbt","confidence":1,"matchedWords":30,"lineWords":30,"firstWord":610,"lastWord":734},
+    {"startSeconds":256.42,"endSeconds":336.56,"chapter":"chapter_01","lineId":"inf44erc","confidence":1,"matchedWords":20,"lineWords":20,"firstWord":746,"lastWord":972},
+    {"startSeconds":343.38,"endSeconds":541.98,"chapter":"chapter_01","lineId":"v676iwfg","confidence":0.854,"matchedWords":24,"lineWords":28,"firstWord":991,"lastWord":1554}
+  ]
+}

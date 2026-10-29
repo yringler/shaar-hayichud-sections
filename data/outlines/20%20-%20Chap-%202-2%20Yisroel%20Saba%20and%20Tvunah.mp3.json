@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "bfe2dd01-5bf6-45cb-aa1b-71b876a2563c",
+  "transcript": "transcripts/20%20-%20Chap-%202-2%20Yisroel%20Saba%20and%20Tvunah.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:33.513Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Bina vs Tvuna: Abstract vs Applied Understanding","starting_phrase":"דהיינו, this means שלא יוכל להוציא מתוך הסברא איזה חיוב על פי זה השכל ולא איזה זכות על פי זה השכל","start_time_sec":2.559999999999994,"matched_text":"דהיינו, this means שלא יוכל להוציא מתוך הסברא איזה חיוב על פי זה השכל ולא איזה זכות על פי זה השכל.","score_norm":0.979,"confidence":"HIGH","token_span":[0,21],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":8},
+    {"title":"Early Bava Kamma Investigation: Reason for Liability","starting_phrase":"I remember in when I was learning בבא קמא, we had","start_time_sec":84.26,"matched_text":"remember in when I was learning בבא קמא, we had","score_norm":0.953,"confidence":"HIGH","token_span":[208,218],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Pure vs Applied Science: Bridge Building Analogy","starting_phrase":"And the same thing when they're building a bridge, they have to figure out","start_time_sec":387.8,"matched_text":"same thing when they're building a bridge, they have to figure out","score_norm":0.975,"confidence":"HIGH","token_span":[1002,1014],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Practical Kashrut: Kitchen Setup and Separate Utensils","starting_phrase":"Having your separate dishes and, you know, separate burners, and","start_time_sec":550.16,"matched_text":"Having your separate dishes and, you know, separate burners,","score_norm":0.965,"confidence":"HIGH","token_span":[1522,1531],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4}
+  ]
+}
