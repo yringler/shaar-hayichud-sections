@@ -11,7 +11,11 @@ import { formatTime, spanAt, type Span } from './audio/model.ts';
 
 export interface FollowOptions {
   audio: HTMLAudioElement;
-  /** Spans of the recording now in the player (keyed by its src attribute). */
+  /**
+   * Spans of the recording now in the player (keyed by its src attribute).
+   * Asked on every update, so it must be cheap; it may return [] until the
+   * caller's data has loaded.
+   */
   spansFor: (src: string) => Span[];
   /** Elements that get `is-discussing` for a span key. */
   elementsFor: (key: string) => Element[];
@@ -36,19 +40,12 @@ export function startFollow(o: FollowOptions): FollowController {
   let current: Element[] = [];
   let currentSpan: Span | null = null;
   let lastUserScroll = 0;
-  const cache = new Map<string, Span[]>();
 
   // The src attribute changes at once; currentSrc only once the new source loads.
   const srcOf = () => audio.getAttribute('src') || audio.currentSrc;
-  const spansNow = (): Span[] => {
-    const src = srcOf();
-    let s = cache.get(src);
-    if (!s) {
-      s = o.spansFor(src);
-      cache.set(src, s);
-    }
-    return s;
-  };
+  // Not cached here: follow.js can load before the chapter alignments, and an
+  // empty answer from then must not stick (play.ts caches once data is in).
+  const spansNow = (): Span[] => o.spansFor(srcOf());
 
   const clear = () => {
     for (const el of current) {
