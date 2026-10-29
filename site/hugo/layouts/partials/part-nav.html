@@ -1,0 +1,28 @@
+{{- /* Previous / next part of the same series, for a part page
+       (classes/single.html). Context: dict "series" "seriesSlug" "partIndex".
+       Only section items have part pages (the content adapter), so lectures
+       directly under a series are skipped. */ -}}
+{{- $prev := false }}
+{{- $next := false }}
+{{- range $i, $item := .series.items }}
+  {{- if eq $item.type "section" }}
+    {{- if lt $i $.partIndex }}{{ $prev = $item }}{{ end }}
+    {{- if and (gt $i $.partIndex) (not $next) }}{{ $next = $item }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- if or $prev $next }}
+<nav class="part-nav" aria-label="{{ .label }}">
+  {{- with $prev }}
+  <a class="part-nav-prev" rel="prev" href="/classes/{{ $.seriesSlug }}/{{ .title | urlize }}/">
+    <span class="part-nav-dir"><span aria-hidden="true">←</span> Previous</span>
+    <span class="part-nav-title">{{ .title }}</span>
+  </a>
+  {{- end }}
+  {{- with $next }}
+  <a class="part-nav-next" rel="next" href="/classes/{{ $.seriesSlug }}/{{ .title | urlize }}/">
+    <span class="part-nav-dir">Next <span aria-hidden="true">→</span></span>
+    <span class="part-nav-title">{{ .title }}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}
