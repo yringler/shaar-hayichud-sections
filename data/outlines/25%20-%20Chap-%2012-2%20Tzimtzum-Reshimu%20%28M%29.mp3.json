@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "25 - Chap- 12-2 Tzimtzum-Reshimu (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c0868dd4-cc53-4e5a-b911-07422c682331",
+  "transcript": "transcripts/25%20-%20Chap-%2012-2%20Tzimtzum-Reshimu%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:05.565Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Straightening One’s Desire Toward Ein Sof Alone","starting_phrase":"עד שיוכל אדם לכוון רצונו במסירות נפש לעצמות אין סוף לבדו.","start_time_sec":0,"matched_text":"עד שיוכל אדם לכוון רצונו במסירות נפש לעצמות אין סוף לבדו.","score_norm":1,"confidence":"HIGH","token_span":[0,11],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":11},
+    {"title":"World’s Distractions Set Up by HaShem","starting_phrase":"So that's like the idea that that when a person","start_time_sec":87.34,"matched_text":"that's like the idea that that when a person","score_norm":0.899,"confidence":"HIGH","token_span":[228,237],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Kingship of Ein Sof Before the Contraction","starting_phrase":"And this is בחינת מלכות דאין סוף שלפני הצמצום,","start_time_sec":211.45807545106615,"matched_text":"בחינת מלכות דאין סוף שלפני הצמצום,","score_norm":1,"confidence":"HIGH","token_span":[572,578],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Heavens Cannot Contain the Divine Light","starting_phrase":"זהו השמים that it says in the פסוק, השמים ושמי השמים לא יכלכלוך,","start_time_sec":342.38,"matched_text":"השמים that it says in the פסוק, השמים ושמי השמים לא יכלכלוך,","score_norm":0.964,"confidence":"HIGH","token_span":[902,914],"matched_content":8,"content_coverage":0.889,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Vessel for a Vessel: Engraving Metaphor","starting_phrase":"What does it mean a vessel for a vessel or like an engraving for an engraving?","start_time_sec":407.76,"matched_text":"What does it mean a vessel for a vessel or like an engraving for an engraving?","score_norm":0.873,"confidence":"HIGH","token_span":[1056,1072],"matched_content":6,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Who Is There for Me in the Heavens?","starting_phrase":"וכמו שכתוב, and like it says, מי לי בשמים, what is there for me in the heavens?","start_time_sec":552.6,"matched_text":"וכמו שכתוב, and like it says, מי לי בשמים, what is there for me in the heavens?","score_norm":0.951,"confidence":"HIGH","token_span":[1431,1448],"matched_content":10,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Alt Rabbi’s Tale of Ultimate Self‑Sacrifice","starting_phrase":"And there’s a famous story about this idea that the אלטר רבי used to sometimes fall into a state of דבקות,","start_time_sec":619.94,"matched_text":"famous story about this idea that the אלטר רבי used to sometimes fall into a state of דבקות,","score_norm":0.898,"confidence":"HIGH","token_span":[1589,1607],"matched_content":12,"content_coverage":0.857,"longest_content_run_soft":12,"longest_content_run_strict":3}
+  ]
+}

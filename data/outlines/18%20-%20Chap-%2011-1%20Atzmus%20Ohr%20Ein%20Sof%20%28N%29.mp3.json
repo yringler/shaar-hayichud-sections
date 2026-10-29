@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f90ce0c8-aa50-45df-9a72-1764fd046a18",
+  "transcript": "transcripts/18%20-%20Chap-%2011-1%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:14.045Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Linking Past Chapter: Soul Levels and Divine Forces","starting_phrase":"והנמשל מכל הנ״ל בנפש, the נמשל for everything that we spoke about in the previous chapter","start_time_sec":1.1999999999999997,"matched_text":"והנמשל מכל הנ״ל בנפש, the נמשל for everything that we spoke about in the previous chapter,","score_norm":0.96,"confidence":"HIGH","token_span":[0,16],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"The Ten Hidden Sefirot Concealed in the Essence","starting_phrase":"And these are called the ten hidden away ספירות in the concealment of the very essence","start_time_sec":67.9,"matched_text":"called the ten hidden away ספירות in the concealment of the very essence,","score_norm":0.938,"confidence":"HIGH","token_span":[123,136],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Human Kindness Expressed Through Intellect, Traits, Speech, Action","starting_phrase":"So, in other words, like we said in the משל of the person","start_time_sec":132.3,"matched_text":"other words, like we said in the משל of the person","score_norm":0.915,"confidence":"HIGH","token_span":[250,261],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Creation Requires a Creator: God as the Ultimate Source","starting_phrase":"And the only way that a creation could exist is if there's a creator","start_time_sec":294.68,"matched_text":"only way that a creation could exist is if there's a creator,","score_norm":0.946,"confidence":"HIGH","token_span":[604,616],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Kindness as an Ineffable Essence Beyond Checklists","starting_phrase":"The real essence of kindness is something that's higher than any details","start_time_sec":634.82,"matched_text":"real essence of kindness is something that's higher than any details","score_norm":0.983,"confidence":"HIGH","token_span":[1428,1439],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6}
+  ]
+}

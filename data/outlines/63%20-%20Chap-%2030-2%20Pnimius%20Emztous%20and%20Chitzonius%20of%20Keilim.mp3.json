@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "63 - Chap- 30-2 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c2886cb0-c11b-40d1-beae-8d0104a33869",
+  "transcript": "transcripts/63%20-%20Chap-%2030-2%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:12:15.041Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Three Levels of Vessels and Their Sephirotic Links","starting_phrase":"והנה יש ג' מדרגות בכלים, there's three levels in the כלים: פנימיים, אמצעיים וחיצוניים, the inner כלים, the middle כלים, and the outer כלים.","start_time_sec":3.179999999999999,"matched_text":"והנה יש ג' מדרגות בכלים, there's three levels in the כלים: פנימיים, אמצעיים וחיצוניים, the inner כלים, the middle כלים, and the outer כלים.","score_norm":0.975,"confidence":"HIGH","token_span":[0,24],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":8},
+    {"title":"The Concept of Hiddenness (Satar) in the Outer Vessels","starting_phrase":"והיינו, and this is what it says, אתה סתר, that You are hidden, that You, ה', are hidden.","start_time_sec":80.42,"matched_text":"והיינו, and this is what it says, אתה סתר, that You are hidden, that You, ה', are hidden.","score_norm":0.88,"confidence":"HIGH","token_span":[157,175],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"How God’s Presence Is Concealed in External Realities","starting_phrase":"And the same thing like with God and the world, that when ה' just makes the world run in like the the external vessels of like setting up like a system of like טבע and things,","start_time_sec":188.96,"matched_text":"same thing like with God and the world, that when ה' just makes the world run in like the the external vessels of like setting up like a system of like טבע and things,","score_norm":0.914,"confidence":"HIGH","token_span":[446,480],"matched_content":16,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Middle Vessels (Chesed) and the Creation Narrative","starting_phrase":"But like already the middle כלי, like חסד, is like what's creating everything from nothing.","start_time_sec":260.40641754671003,"matched_text":"already the middle כלי, like חסד, is like what's creating everything from nothing.","score_norm":0.967,"confidence":"HIGH","token_span":[644,657],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Vessels as Tools for Revealing Light to the Soul","starting_phrase":"also in the ענין of the כלים that they bring the אור down to a מקבל, there's two things of the כלים.","start_time_sec":321,"matched_text":"also in the ענין of the כלים that they bring the אור down to a מקבל, there's two things of the כלים.","score_norm":0.922,"confidence":"HIGH","token_span":[835,857],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"From Soul to Action: Brain, Heart, and Body Vessels","starting_phrase":"So now when your soul comes into your brain, you can explain an idea to somebody, and when it comes into your heart, then you can express the emotion to somebody,","start_time_sec":386.22,"matched_text":"when your soul comes into your brain, you can explain an idea to somebody, and when it comes into your heart, then you can express the emotion to somebody,","score_norm":0.964,"confidence":"HIGH","token_span":[1038,1067],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":7}
+  ]
+}

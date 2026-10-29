@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "39 - Chap- 14-5 The Kav (M) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "02184e01-5abc-411b-8809-10e11e9d658b",
+  "transcript": "transcripts/39%20-%20Chap-%2014-5%20The%20Kav%20%28M%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:52:57.123Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Measuring Stick Analogy for Building a House","starting_phrase":"כמשל אמת הבנין like a measuring rod שאינו בא בגדר שטח הבנין עצמו לאורך ורוחב, when you want to build a house, so let's say you want to build a house 150 feet this way by 100 feet that way,","start_time_sec":2.4200000000000004,"matched_text":"כמשל אמת הבנין like a measuring rod שאינו בא בגדר שטח הבנין עצמו לאורך ורוחב, when you want to build a house, so let's say you want to build a house 150 feet this way by 100 feet that way,","score_norm":0.97,"confidence":"HIGH","token_span":[0,40],"matched_content":28,"content_coverage":1,"longest_content_run_soft":28,"longest_content_run_strict":11},
+    {"title":"Choosing the Smallest Unit as Measurement Basis","starting_phrase":"All you need is the smallest measurement that you're ever going to need, the smallest unit that you're ever going to need to measure,","start_time_sec":88.98,"matched_text":"All you need is the smallest measurement that you're ever going to need, the smallest unit that you're ever going to need to measure,","score_norm":0.957,"confidence":"HIGH","token_span":[302,326],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":3},
+    {"title":"Line as Teacher’s Tool to Assess Students","starting_phrase":"In the classroom of math, the lesson plan is the line that you use to measure up, size up a student and figure out what level he's on and how to teach him.","start_time_sec":191.44,"matched_text":"classroom of math, the lesson plan is the line that you use to measure up, size up a student and figure out what level he's on and how to teach him.","score_norm":0.954,"confidence":"HIGH","token_span":[648,679],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":5},
+    {"title":"Letter ב Lines Form English N – The Analogy","starting_phrase":"Now we're going to get the the משל here: כמו בבחינת קווין שבאות הב' וכולי, like the lines in the letter ב', right?","start_time_sec":276.36,"matched_text":"we're going to get the the משל here: כמו בבחינת קווין שבאות הב' וכולי, like the lines in the letter","score_norm":0.963,"confidence":"HIGH","token_span":[959,979],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":8},
+    {"title":"קו המידה – The Fundamental Measuring Line","starting_phrase":"ראשית הקו is called the קו המידה because it is creating the idea of a standard of measure, just the idea of making up and down.","start_time_sec":407.8,"matched_text":"ראשית הקו is called the קו המידה because it is creating the idea of a standard of measure, just the idea of making up and down.","score_norm":0.936,"confidence":"HIGH","token_span":[1457,1483],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":3}
+  ]
+}

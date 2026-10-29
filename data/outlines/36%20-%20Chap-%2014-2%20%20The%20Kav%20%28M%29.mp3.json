@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "36 - Chap- 14-2  The Kav (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cc95c31e-62af-4ad5-a2e7-49c92f1193eb",
+  "transcript": "transcripts/36%20-%20Chap-%2014-2%20%20The%20Kav%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:52:31.004Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding צמצום and Hidden Light","starting_phrase":"So as far as the צמצום, seemingly it's not a problem to have a גילוי that come afterwards.","start_time_sec":2.26,"matched_text":"far as the צמצום, seemingly it's not a problem to have a גילוי that come afterwards.","score_norm":0.957,"confidence":"HIGH","token_span":[2,18],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Rishimu: All Present Yet Practically Absent","starting_phrase":"Rishimu has two aspects. On the one hand, everything's there.","start_time_sec":101.7,"matched_text":"has two aspects. On the one hand, everything's there.","score_norm":0.98,"confidence":"HIGH","token_span":[363,372],"matched_content":7,"content_coverage":0.875,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"The Zohar Written as Hidden Blueprint","starting_phrase":"And actually like it says about the זוהר, the רבי חיים ויטאל writes in his introduction to עץ חיים, that the זוהר, the wisdom of the זוהר was really supposed to be hidden.","start_time_sec":233.32,"matched_text":"says about the זוהר, the רבי חיים ויטאל writes in his introduction to עץ חיים, that the זוהר, the wisdom of the זוהר was really supposed to be hidden.","score_norm":0.946,"confidence":"HIGH","token_span":[877,906],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":4},
+    {"title":"Point vs Line: Not Opposites","starting_phrase":"But the truth is, הנקודה והקו אינם ב' הפכים, that a point and a line are not two opposites.","start_time_sec":394.0689463376421,"matched_text":"truth is, הנקודה והקו אינם ב' הפכים, that a point and a line are not two opposites.","score_norm":0.952,"confidence":"HIGH","token_span":[1522,1539],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Words as Points, Connecting the Dots","starting_phrase":"Each word is a point. So how can you ever make a person understand from speaking to them or from a book?","start_time_sec":550.06,"matched_text":"Each word is a point. So how can you ever make a person understand from speaking to them or from a book?","score_norm":0.958,"confidence":"HIGH","token_span":[2005,2027],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4}
+  ]
+}

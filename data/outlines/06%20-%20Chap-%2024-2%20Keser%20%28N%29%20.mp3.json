@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "06 - Chap- 24-2 Keser (N) .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8189d4ed-7e8e-401e-b7fb-c003c48c6700",
+  "transcript": "transcripts/06%20-%20Chap-%2024-2%20Keser%20%28N%29%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:03:14.482Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Unique Pleasure and Desire for Each Thing","starting_phrase":"גם הוא מקיף את כולם, but on the other hand, it's also מקיף all of them.","start_time_sec":0,"matched_text":"הוא מקיף את כולם, but on the other hand, it's also מקיף all of them.","score_norm":0.972,"confidence":"HIGH","token_span":[1,16],"matched_content":11,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6}
+  ]
+}

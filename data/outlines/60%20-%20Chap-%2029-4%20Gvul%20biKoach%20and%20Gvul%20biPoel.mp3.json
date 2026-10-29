@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "60 - Chap- 29-4 Gvul biKoach and Gvul biPoel.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "040f4150-8980-4c90-89a6-28c948100c02",
+  "transcript": "transcripts/60%20-%20Chap-%2029-4%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:48.966Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Potential vs Actual Limitation of the Vessels","starting_phrase":"ובאמת, גם בחינת הכלים דעשר ספירות דאצילות הן כח הגבול.","start_time_sec":0,"matched_text":"ובאמת, גם בחינת הכלים דעשר ספירות דאצילות הן כח הגבול.","score_norm":0.993,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8},
+    {"title":"Intentional Direction: Light vs Vessel","starting_phrase":"And then we were explaining about this idea of like the כוונות,","start_time_sec":173.68,"matched_text":"explaining about this idea of like the כוונות,","score_norm":0.926,"confidence":"HIGH","token_span":[537,545],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Rejecting the Mechanistic View of Creation","starting_phrase":"We are officially making this controversial proclamation against common belief","start_time_sec":264.04,"matched_text":"officially making this controversial proclamation against common belief","score_norm":0.991,"confidence":"HIGH","token_span":[806,814],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Aligning Intent with Divine Kindness (Chesed)","starting_phrase":"In that intention, when you think about how that God gives חסד,","start_time_sec":330.92,"matched_text":"intention, when you think about how that God gives חסד,","score_norm":0.982,"confidence":"HIGH","token_span":[1002,1012],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Understanding the True Meaning of God's Name","starting_phrase":"And that's the idea that the real thing of שם הוי״ה, י-ה-ו-ה, is really the שם העצם.","start_time_sec":517.1,"matched_text":"idea that the real thing of שם הוי״ה, י-ה-ו-ה, is really the שם העצם,","score_norm":0.812,"confidence":"HIGH","token_span":[1656,1670],"matched_content":7,"content_coverage":0.778,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Human Body as Instrument of Divine Choice","starting_phrase":"But a person and their body, it's not you don't see that so much,","start_time_sec":613.46,"matched_text":"person and their body, it's not you don't see that so much,","score_norm":0.963,"confidence":"HIGH","token_span":[1930,1942],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Responsibility Tied to Conscious Control","starting_phrase":"The only way that they could they would be responsible, maybe, is if they know that they get it,","start_time_sec":795.96,"matched_text":"only way that they could they would be responsible, maybe, is if they know that they get","score_norm":0.902,"confidence":"HIGH","token_span":[2551,2568],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

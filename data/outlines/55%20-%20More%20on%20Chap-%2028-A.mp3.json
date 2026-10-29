@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "55 - More on Chap- 28-A.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6c8ba451-5198-4db9-962d-198b33412fa7",
+  "transcript": "transcripts/55%20-%20More%20on%20Chap-%2028-A.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:01.293Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Tree as a Symbol of Infinite Wisdom","starting_phrase":"Only thing is that with א\"ק it doesn't yet relate in a way to the particulars of like a tree, stuff like that.","start_time_sec":4.68,"matched_text":"Only thing is that with א\"ק it doesn't yet relate in a way to the particulars of like a tree, stuff","score_norm":0.914,"confidence":"HIGH","token_span":[0,21],"matched_content":10,"content_coverage":0.833,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Constant Re‑Creation at the Molecular Level","starting_phrase":"And then like you see like it's being created every single second really anew.","start_time_sec":106.26,"matched_text":"see like it's being created every single second really anew.","score_norm":0.98,"confidence":"HIGH","token_span":[301,311],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Infinite Intellect vs. Brain’s Limited Expression","starting_phrase":"Just like there's like a person's intellect is like that he has this in in infinite ability for intellect","start_time_sec":236.52,"matched_text":"there's like a person's intellect is like that he has this in in infinite ability for intellect,","score_norm":0.9,"confidence":"HIGH","token_span":[690,707],"matched_content":7,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Hierarchy of Renewal: People to Rocks","starting_phrase":"Well, that's what what so you're saying like rocks don't seem to have that that that renewal as much.","start_time_sec":306.66,"matched_text":"Well, that's what what so you're saying like rocks don't seem to have that that that renewal as much.","score_norm":0.957,"confidence":"HIGH","token_span":[903,922],"matched_content":12,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Rock and Earth Cycles of Renewal","starting_phrase":"And like the surface of earth is even on the on like the level of like rock, it's constantly changing and renewing","start_time_sec":379.16,"matched_text":"surface of earth is even on the on like the level of like rock, it's constantly changing and renewing,","score_norm":0.92,"confidence":"HIGH","token_span":[1120,1139],"matched_content":9,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Attributes Assigned to Vessels to Prevent תוהו","starting_phrase":"In other words, that certain things, certain aspects of reality reveal to us these different lights more strongly.","start_time_sec":539.02,"matched_text":"other words, that certain things, certain aspects of reality reveal to us these different lights more strongly.","score_norm":0.977,"confidence":"HIGH","token_span":[1634,1651],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":4}
+  ]
+}

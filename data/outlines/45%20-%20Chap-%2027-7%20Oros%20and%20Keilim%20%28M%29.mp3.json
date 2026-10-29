@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "45 - Chap- 27-7 Oros and Keilim (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "533e0f2f-6e4e-4fbd-80a4-4bccdcab9cc0",
+  "transcript": "transcripts/45%20-%20Chap-%2027-7%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:09:34.833Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Unbounded Spiritual Power Driving Motion","starting_phrase":"מה שאין כן מצד עצם כח הרוחני שהמניע התנועה שאין בה הגבלה והפסק","start_time_sec":4.86,"matched_text":"שאין כן מצד עצם כח הרוחני שהמניע התנועה שאין בה הגבלה והפסק.","score_norm":1,"confidence":"HIGH","token_span":[1,13],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":12},
+    {"title":"Depth of Soul Increases Miraculous Ability","starting_phrase":"It depends on how high you go. The deeper you go, the more limitations get lifted","start_time_sec":165.9,"matched_text":"depends on how high you go. The deeper you go, the more limitations get lifted.","score_norm":0.964,"confidence":"HIGH","token_span":[455,470],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Placebo vs. Belief in Spiritual Healing","starting_phrase":"Well, there's like placebo, and then there's","start_time_sec":251.34,"matched_text":"Well, there's like placebo, and then there's","score_norm":0.945,"confidence":"HIGH","token_span":[699,706],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Matter and Form: Limits of Physical Vessels","starting_phrase":"וכך הוא כל ענין חומר וצורה, this is the whole idea","start_time_sec":320.32,"matched_text":"וכך הוא כל ענין חומר וצורה, this is the whole idea","score_norm":0.975,"confidence":"HIGH","token_span":[893,904],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"From Desire to Cup: Materializing Intent","starting_phrase":"So for example, like your desire to drink water","start_time_sec":441.46,"matched_text":"example, like your desire to drink water,","score_norm":0.972,"confidence":"HIGH","token_span":[1284,1291],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2}
+  ]
+}

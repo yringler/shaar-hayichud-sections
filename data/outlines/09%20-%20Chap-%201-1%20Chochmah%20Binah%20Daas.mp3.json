@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "09 - Chap- 1-1 Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "02728225-0c19-43d3-8d77-0f47565c0efa",
+  "transcript": "transcripts/09%20-%20Chap-%201-1%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:03:46.989Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Recap of Previous Sections and Upcoming כתר דאצילות","starting_phrase":"So, we just finished explaining in פרק כ\"ד, כ\"ג","start_time_sec":1.4309449216776151,"matched_text":"finished explaining in פרק","score_norm":0.976,"confidence":"HIGH","token_span":[5,9],"matched_content":3,"content_coverage":0.6,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Overview of קונטרס ההתפעלות and Levels of Excitement","starting_phrase":"It was already explained at length in a special קונטרס, which that קונטרס refers to קונטרס ההתפעלות.","start_time_sec":69.28,"matched_text":"already explained at length in a special קונטרס, which that קונטרס refers to קונטרס ההתפעלות.","score_norm":0.965,"confidence":"HIGH","token_span":[154,169],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Defining התבוננות and Its Purpose","starting_phrase":"So now, we have to understand what התבוננות is","start_time_sec":180.96,"matched_text":"have to understand what התבוננות","score_norm":0.978,"confidence":"HIGH","token_span":[438,443],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"פנימיות vs חיצוניות of בינה: עיון vs גירסא","starting_phrase":"And that's the פנימיות of בינה, because בינה means to learn,","start_time_sec":282.36,"matched_text":"פנימיות of בינה, because בינה means to learn,","score_norm":0.824,"confidence":"HIGH","token_span":[699,707],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Illustration of גירסא vs עיון with Car Example","starting_phrase":"Like, you know, you're walking down the street and some car drives by, okay, so you know it's the car.","start_time_sec":456.7,"matched_text":"you're walking down the street and some car drives by, okay, so you know it's the car.","score_norm":0.938,"confidence":"HIGH","token_span":[1166,1183],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Why Deep Study (עיון) Is Necessary","starting_phrase":"Why does it have to be so? Why is it that we have to, in order to understand something properly, we have to learn בעיון?","start_time_sec":645.14,"matched_text":"Why does it have to be so? Why is it that we have to, in order to understand something properly, we have to learn בעיון?","score_norm":0.912,"confidence":"HIGH","token_span":[1765,1790],"matched_content":12,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

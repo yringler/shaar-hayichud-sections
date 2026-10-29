@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "63 - Chap-18-2 Adam Kadmon .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c39c8c7e-62ce-447d-a91b-49c873d3f400",
+  "transcript": "transcripts/63%20-%20Chap-18-2%20Adam%20Kadmon%20.mp3.json",
+  "fetchedAt": "2026-10-28T23:56:34.404Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Ratzon Kadum as the Source of All Desires","starting_phrase":"So, right, so now he explains. ביאור הדברים, so this is the רצון קדום is the source of every רצון ורצון.","start_time_sec":2.98,"matched_text":"explains. ביאור הדברים, so this is the רצון קדום is the source of every רצון ורצון.","score_norm":0.943,"confidence":"HIGH","token_span":[5,21],"matched_content":9,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Embodied Desire: Forming a Concrete Goal","starting_phrase":"but then, when it's מלובש in it and then it creates,","start_time_sec":166.9847068747364,"matched_text":"when it's מלובש in it and then it creates,","score_norm":0.904,"confidence":"HIGH","token_span":[532,541],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Desire for Business or Learning as Means to an End","starting_phrase":"like the desire for to do business or to learn,","start_time_sec":281.66,"matched_text":"desire for to do business or to learn,","score_norm":0.926,"confidence":"HIGH","token_span":[838,846],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Priority System: Primary and Secondary Connection Strengths","starting_phrase":"And then you can also make like a priority system.","start_time_sec":457.46,"matched_text":"can also make like a priority system.","score_norm":0.972,"confidence":"HIGH","token_span":[1364,1371],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Yosher: Building a Personal Language of Associations","starting_phrase":"There you're creating a יושר. יושר means that you're an association,","start_time_sec":567.8005229860819,"matched_text":"There you're creating a יושר. יושר means that you're an association,","score_norm":0.972,"confidence":"HIGH","token_span":[1708,1719],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

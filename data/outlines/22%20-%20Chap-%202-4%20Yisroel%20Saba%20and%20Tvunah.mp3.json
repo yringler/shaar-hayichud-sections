@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a1d54456-83f1-491d-97ac-a22d45f500c6",
+  "transcript": "transcripts/22%20-%20Chap-%202-4%20Yisroel%20Saba%20and%20Tvunah.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:46.237Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"What is תבונה and its hidden letters","starting_phrase":"וזהו שנקרא תבונה. And this is what","start_time_sec":3.46,"matched_text":"וזהו שנקרא תבונה. And this is what","score_norm":0.946,"confidence":"HIGH","token_span":[0,7],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Length: applying knowledge to new contexts","starting_phrase":"The length of תבונה, הוא ירידתה בענין אחר, is to bring the idea down into something else","start_time_sec":185.96,"matched_text":"length of תבונה, הוא ירידתה בענין אחר, is to bring the idea down into something else,","score_norm":0.977,"confidence":"HIGH","token_span":[542,558],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"Width: expanding ideas in many ways","starting_phrase":"And the width of תבונה, הוא בחינת התפשטות התבונה בעצם ההשגה.","start_time_sec":342.98,"matched_text":"width, הוא בחינת התפשטות התבונה בעצם ההשגה.","score_norm":0.894,"confidence":"HIGH","token_span":[1039,1046],"matched_content":7,"content_coverage":0.875,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"תבונה as source of מידות (emotions)","starting_phrase":"And this that תבונה includes within it בן and בת, היינו מה שמתבונה דווקא יולדו המידות בגילוי ממש בפני עצמם.","start_time_sec":403.82,"matched_text":"תבונה includes within it בן and בת, היינו מה שמתבונה דווקא יולדו המידות בגילוי ממש בפני עצמם.","score_norm":0.986,"confidence":"HIGH","token_span":[1198,1215],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":8},
+    {"title":"Upper and lower mother metaphor for בינה and תבונה","starting_phrase":"Even though you call בינה the אם הבנים, because בינה is the real source of the children, nevertheless, the actual birth of the children comes only from תבונה.","start_time_sec":583.62,"matched_text":"even though you call בינה the אם הבנים, because בינה is the real source of the children, nevertheless, the actual birth of the children comes only from תבונה.","score_norm":0.966,"confidence":"HIGH","token_span":[1745,1773],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":5}
+  ]
+}

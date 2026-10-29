@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "51 - Chap- 28-5 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6c0c3df2-ff7c-4f4d-a5a0-d98c6f893e11",
+  "transcript": "transcripts/51%20-%20Chap-%2028-5%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:10:33.587Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Spiritual Emotions in Heart vs. Liver","starting_phrase":"וכן המדות הרוחניים בליבא, the same thing, the spiritual emotions in the heart, ונפש הרוחניות בכבד וכולי.","start_time_sec":3.26,"matched_text":"וכן המדות הרוחניים בליבא, the same thing, the spiritual emotions in the heart, ונפש הרוחניות בכבד וכולי.","score_norm":0.98,"confidence":"HIGH","token_span":[0,17],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Physical Limitations Shaping Soul Expression","starting_phrase":"So that's why, like, because of the way that your digestion works and stuff like that, there's now certain limitations that the soul's only expressed in certain ways and not in other ways.","start_time_sec":156.1,"matched_text":"that's why, like, because of the way that your digestion works and stuff like that, there's now certain limitations that the soul's only expressed in certain ways and not in other ways.","score_norm":0.95,"confidence":"HIGH","token_span":[483,515],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":3},
+    {"title":"Four Divine Names Define Light Vessels","starting_phrase":"These are the four names ע''ב, ס''ג, מ''ה, ב''ן of אצילות, which are, in other words, that God defined His revelation through these four names,","start_time_sec":300.4,"matched_text":"four names ע''ב, ס''ג, מ''ה, ב''ן of אצילות, which are, in other words, that God defined His revelation through these four names,","score_norm":0.979,"confidence":"HIGH","token_span":[926,948],"matched_content":17,"content_coverage":1,"longest_content_run_soft":17,"longest_content_run_strict":6},
+    {"title":"Desire to Drink → Forming a Cup","starting_phrase":"Let's say your desire to like drink water, when put into the context of like the way that water works and the whatever and the way that different materials work, it's going to create the form of a cup.","start_time_sec":389.34,"matched_text":"Let's say your desire to like drink water, when put into the context of like the way that water works and the whatever and the way that different materials work, it's going to create the form of a cup.","score_norm":0.951,"confidence":"HIGH","token_span":[1168,1207],"matched_content":23,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":5},
+    {"title":"Intentional Focus on Divine Names","starting_phrase":"In other words, now seemingly the main thing is the spiritual revelation, and you should think about that name,","start_time_sec":571.4052921864741,"matched_text":"other words, now seemingly the main thing is the spiritual revelation, and you should think about that name,","score_norm":0.955,"confidence":"HIGH","token_span":[1747,1765],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Aligning Intent with Torah and Mitzvot","starting_phrase":"So you should be מכוון to the inner thing that my job is to do תורה ומצוות and do what I'm supposed to do,","start_time_sec":802.4,"matched_text":"מכוון to the inner thing that my job is to do תורה ומצוות and do what I'm supposed to do,","score_norm":0.899,"confidence":"HIGH","token_span":[2502,2522],"matched_content":13,"content_coverage":0.929,"longest_content_run_soft":13,"longest_content_run_strict":4}
+  ]
+}

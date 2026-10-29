@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "76 - Chap- 20-5 Tikun-Tohu (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "61af1495-ed78-49fc-8cc9-14b3c65ae2d7",
+  "transcript": "transcripts/76%20-%20Chap-%2020-5%20Tikun-Tohu%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:58:59.448Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Balancing Altruism and Practical Action","starting_phrase":"Right, אלו ואלו בחינות, התיקון דווקא, the ענין of a person","start_time_sec":0,"matched_text":"אלו ואלו בחינות, התיקון דווקא, the ענין of a person","score_norm":0.97,"confidence":"HIGH","token_span":[1,11],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Distinguishing Self‑Identity from Personal Detail","starting_phrase":"The difference is whether it's עצמיות or this is already for a פרט,","start_time_sec":80.3,"matched_text":"difference is whether it's עצמיות or this is already for a פרט,","score_norm":0.928,"confidence":"HIGH","token_span":[228,240],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Using Kindness to Motivate Good Deeds","starting_phrase":"The way to use חסד of טוב to motivate me to do good is that you say,","start_time_sec":310.22,"matched_text":"way to use חסד of טוב to motivate you to do good is that you say,","score_norm":0.814,"confidence":"HIGH","token_span":[1003,1019],"matched_content":8,"content_coverage":0.889,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Creation’s Unity: Mixing Fire and Water","starting_phrase":"זה מה שכתוב בספר יצירה: טרף אש ומים ובללן זה בזה.","start_time_sec":407.43605691056905,"matched_text":"שכתוב בספר יצירה: טרף אש ומים ובללן זה בזה.","score_norm":0.991,"confidence":"HIGH","token_span":[1311,1320],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":7}
+  ]
+}

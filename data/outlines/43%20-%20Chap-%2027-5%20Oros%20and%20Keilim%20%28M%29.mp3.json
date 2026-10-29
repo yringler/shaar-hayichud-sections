@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "43 - Chap- 27-5 Oros and Keilim (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cdea8af3-ff28-491b-b53a-63b83aa7b7a0",
+  "transcript": "transcripts/43%20-%20Chap-%2027-5%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:09:20.023Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Human Body as Metaphor for Kelim of Atzilut","starting_phrase":"Now we're going to tell you all about the human body because that's the משל for the כלים of אצילות.","start_time_sec":6.72,"matched_text":"we're going to tell you all about the human body because that's the משל for the כלים of אצילות.","score_norm":0.956,"confidence":"HIGH","token_span":[1,20],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Light and Vessel (Or Veyechi) Overview","starting_phrase":"now we're going to explain the idea of the light and vessel in general.","start_time_sec":157.60000000000002,"matched_text":"we're going to explain the idea of the light and vessel in general.","score_norm":0.935,"confidence":"HIGH","token_span":[475,488],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Eye: Vessel for Spiritual Sight","starting_phrase":"the eye is the כלי, it's the vessel or the tool for the soul's power of sight.","start_time_sec":239.36446601941745,"matched_text":"eye is the כלי, it's the vessel or the tool for the soul's power of sight.","score_norm":0.924,"confidence":"HIGH","token_span":[670,686],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Brain as Vessel for Intellectual Power","starting_phrase":"the power of intellect הממוזג בגשם כלי המוח, which goes into the vessel of the brain.","start_time_sec":471.98,"matched_text":"power of intellect הממוזג בגשם כלי המוח, which goes into the vessel of the brain.","score_norm":0.974,"confidence":"HIGH","token_span":[1319,1334],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Movement: Soul's Power in Physical Motion","starting_phrase":"the power of movement, בתנועת הגשם. And similarly with the power of movement, your soul has the power.","start_time_sec":600.9,"matched_text":"power of movement, בתנועת הגשם. And similarly with the power of movement, your soul has the power,","score_norm":0.968,"confidence":"HIGH","token_span":[1696,1713],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Transmigration and Soul-Body Compatibility","starting_phrase":"Why is the idea of a גלגול painful? Because the human soul can't express itself in the body of something other than a human","start_time_sec":690.92,"matched_text":"Why is the idea of a גלגול painful? Because the human soul can't express itself in the body of something other than a human","score_norm":0.956,"confidence":"HIGH","token_span":[1962,1986],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":5}
+  ]
+}

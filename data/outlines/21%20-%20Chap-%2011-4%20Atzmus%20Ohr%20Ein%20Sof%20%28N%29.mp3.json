@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "300d0f0d-438a-464f-9906-8ebce21392bb",
+  "transcript": "transcripts/21%20-%20Chap-%2011-4%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:33.854Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Power of Creation Explained","starting_phrase":"גם שלא, and, well, it's not really the creations yet.","start_time_sec":0,"matched_text":"שלא, and, well, it's not really the creations yet.","score_norm":0.962,"confidence":"HIGH","token_span":[1,10],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Initial Desire to Perform Chesed","starting_phrase":"So in other words, once there came an actual עלית הרצון,","start_time_sec":180.8187395957187,"matched_text":"other words, once there came an actual עלית הרצון,","score_norm":0.991,"confidence":"HIGH","token_span":[470,479],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Third Level: Detailed Letter Estimation","starting_phrase":"And then, but he didn't throw it yet.","start_time_sec":314.6014744351992,"matched_text":"didn't throw it yet.","score_norm":0.974,"confidence":"HIGH","token_span":[817,821],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Upper Purity and World Planning","starting_phrase":"He estimated exactly how many hairs would be on your head and exactly which way they would curve and everything.","start_time_sec":410.98673008324386,"matched_text":"estimated exactly how many hairs would be on your head and exactly which way they would curve and everything.","score_norm":0.973,"confidence":"HIGH","token_span":[1067,1086],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":6},
+    {"title":"Kedmon: Pre‑Planning Before First Tzimtzum","starting_phrase":"And this is still before the first צמצום.","start_time_sec":501.58887039240585,"matched_text":"still before the first צמצום.","score_norm":0.981,"confidence":"HIGH","token_span":[1302,1307],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Or Ein Sof, Tzimtzum and Manifestation","starting_phrase":"These are all three levels in the אור אין סוף, which is,","start_time_sec":588.3356004756461,"matched_text":"all three levels in the אור אין סוף, which","score_norm":0.977,"confidence":"HIGH","token_span":[1527,1536],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "61 - Chap- 29-5 Gvul biKoach and Gvul biPoel (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c187d00c-74a7-4bac-af59-7a6acf38dca7",
+  "transcript": "transcripts/61%20-%20Chap-%2029-5%20Gvul%20biKoach%20and%20Gvul%20biPoel%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:54.885Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"God’s Choice of Vessels for Revelation","starting_phrase":"ומה כל שכן, and how much more so the כלים the מוח ולבא וכולי, the actual vessels of the brain and the heart and the liver","start_time_sec":3.44,"matched_text":"ומה כל שכן, and how much more so the כלים the מוח ולבא וכולי, the actual vessels of the brain and the heart and the liver,","score_norm":0.947,"confidence":"HIGH","token_span":[0,26],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":3},
+    {"title":"Light and Vessels: One Infinite Source","starting_phrase":"and this is like the idea why like above nature and nature are really the same","start_time_sec":128.86,"matched_text":"idea why like above nature and nature are really the same,","score_norm":0.939,"confidence":"HIGH","token_span":[371,382],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Limiting Light, Expanding Vessels in Revelation","starting_phrase":"when the lights and the vessels are revealed, הרי בחינת צמצום באורות וחסדים בהתפשטות בכלים","start_time_sec":207.04,"matched_text":"when the lights and the vessels are revealed, הרי בחינת צמצום באורות וחסדים בהתפשטות בכלים,","score_norm":0.973,"confidence":"HIGH","token_span":[645,660],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Reciprocal חסד וגבורה Between Rabbi and Student","starting_phrase":"And this is why when you face somebody, your right hand faces their left hand","start_time_sec":337.82,"matched_text":"why when you face somebody, your right hand faces their left hand,","score_norm":0.986,"confidence":"HIGH","token_span":[1067,1079],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Main Revelation Comes Through צמצום","starting_phrase":"So in a way, the actual revelation that we get is from the צמצום","start_time_sec":413.8,"matched_text":"way, the actual revelation that we get is from the צמצום,","score_norm":0.934,"confidence":"HIGH","token_span":[1297,1308],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "88 - Chap- 22-8 Hiskalelus of Sefiros (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d593de30-283d-4472-89ee-b68743cc3037",
+  "transcript": "transcripts/88%20-%20Chap-%2022-8%20Hiskalelus%20of%20Sefiros%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:00:56.149Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"God's Passing Over and פנימיות Concept","starting_phrase":"וכן ויעבר השם על פניו וכולי, and this is also like","start_time_sec":0,"matched_text":"וכן ויעבר השם על פניו וכולי, and this is also","score_norm":0.955,"confidence":"HIGH","token_span":[0,10],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The 13 Parts of the Beard and קו וחוט","starting_phrase":"והיינו על ידי בחינת הקו וחוט שיש בו מכח עצמות אין סוף ממש","start_time_sec":103.42730077120828,"matched_text":"והיינו על ידי בחינת הקו וחוט שיש בו מכח עצמות אין סוף ממש.","score_norm":0.995,"confidence":"HIGH","token_span":[274,287],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":11},
+    {"title":"Three Levels of התכללות: Light and Vessel","starting_phrase":"So the point is that that there's three levels of, these three levels of התכללות","start_time_sec":177.63,"matched_text":"point is that that there's three levels of, these three levels of התכללות","score_norm":0.94,"confidence":"HIGH","token_span":[497,510],"matched_content":7,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3}
+  ]
+}

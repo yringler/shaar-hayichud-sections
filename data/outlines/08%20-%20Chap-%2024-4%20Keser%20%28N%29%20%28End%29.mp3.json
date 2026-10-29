@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "08 - Chap- 24-4 Keser (N) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b114c3e3-0311-4ef7-83bb-53d250b354af",
+  "transcript": "transcripts/08%20-%20Chap-%2024-4%20Keser%20%28N%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:03:38.243Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Chesed of the Ancient in the Vessel","starting_phrase":"וזהו דוגמא להבין איך שבבחינת חסד דעתיק מלובש בגלגלתא.","start_time_sec":0,"matched_text":"וזהו דוגמא להבין איך שבבחינת חסד דעתיק מלובש בגלגלתא.","score_norm":1,"confidence":"HIGH","token_span":[0,9],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Chokhmah Aligned with Judgment","starting_phrase":"וכמו שכתוב בספרי הקבלה, ספרי הקבלה הראשונים גזרו אומר על חכמה שהיא בבחינת דין.","start_time_sec":99.84,"matched_text":"וכמו שכתוב בספרי הקבלה, ספרי הקבלה הראשונים גזרו אומר על חכמה שהיא בבחינת דין.","score_norm":0.995,"confidence":"HIGH","token_span":[279,293],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":9},
+    {"title":"Ancient of Days and Pure Pleasure","starting_phrase":"ומכל שכן כשאנו מגיעים לבחינת ג' רישין דעתיק יומין,","start_time_sec":176.7153302812295,"matched_text":"ומכל שכן כשאנו מגיעים לבחינת ג' רישין דעתיק יומין,","score_norm":1,"confidence":"HIGH","token_span":[530,539],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Infinite Time and the Limits of Finite Creation","starting_phrase":"And this the ענין that עצמות אין סוף is able is beyond all the the ענין that it's totally beyond all forms and change means that it can come into anything,","start_time_sec":264.1979986919556,"matched_text":"ענין that עצמות אין סוף is able is beyond all the the ענין that it's totally beyond all forms and change means that it can come into anything,","score_norm":0.963,"confidence":"HIGH","token_span":[779,807],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":5}
+  ]
+}

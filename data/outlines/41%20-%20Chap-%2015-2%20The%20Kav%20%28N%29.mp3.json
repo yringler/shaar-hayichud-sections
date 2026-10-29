@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "41 - Chap- 15-2 The Kav (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9972399e-94c6-4988-a8e8-ebc0d42ac32a",
+  "transcript": "transcripts/41%20-%20Chap-%2015-2%20The%20Kav%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:20.940Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Rashimu as a Condensed Hidden Summary","starting_phrase":"ואף שהרשימו עם כל זה ודאי שהכל נכלל בו בקיצור,","start_time_sec":0,"matched_text":"ואף שהרשימו עם כל זה ודאי שהכל נכלל בו בקיצור,","score_norm":0.984,"confidence":"HIGH","token_span":[0,10],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Understanding That צמצום Isn't Literal","starting_phrase":"So first of all, as far as the צמצום, צמצום is not כפשוטו.","start_time_sec":134.42,"matched_text":"first of all, as far as the צמצום, צמצום is not כפשוטו.","score_norm":0.949,"confidence":"HIGH","token_span":[438,450],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Letters on a Page: Meaning Without Context","starting_phrase":"How are you ever supposed to figure out what like מיכל means? Like those letters on the paper.","start_time_sec":335.82,"matched_text":"How are you ever supposed to figure out what like מיכל means? Like those letters on the paper.","score_norm":0.942,"confidence":"HIGH","token_span":[1127,1145],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Koch HaYuli Limiting the Original Light","starting_phrase":"כנודע כי כח היולי רק להיות כח מגביל כל זה אור הראשון על כן בלתי מתפשט רק דרך קו לפי אופן השפעה כנודע.","start_time_sec":496.80696234309625,"matched_text":"כנודע כי כח היולי רק להיות כח מגביל כל זה אור הראשון על כן בלתי מתפשט רק דרך קו לפי אופן השפעה כנודע.","score_norm":0.99,"confidence":"HIGH","token_span":[1687,1710],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":10},
+    {"title":"Creating Order (קו) to Reveal Divine Aspects","starting_phrase":"In order for it to start revealing different things, you have to now put an order on it, because it it essentially is could be in any order.","start_time_sec":574.04,"matched_text":"order for it to start revealing different things, you have to now put an order on it, because it it essentially is could be in any order.","score_norm":0.92,"confidence":"HIGH","token_span":[1922,1949],"matched_content":13,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4}
+  ]
+}

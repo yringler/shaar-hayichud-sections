@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "75 - Chap- 20-4  Tikun-Tohu.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0a476946-1ef3-486b-96f0-68ef79a2c515",
+  "transcript": "transcripts/75%20-%20Chap-%2020-4%20%20Tikun-Tohu.mp3.json",
+  "fetchedAt": "2026-10-28T23:58:43.389Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Divine Regret Before the Flood","starting_phrase":"בתחלה אמר וירא השם כי רבה רעת האדם וגו' וינחם וגו'.","start_time_sec":0,"matched_text":"בתחלה אמר וירא השם כי רבה רעת האדם וגו' וינחם וגו'.","score_norm":0.994,"confidence":"HIGH","token_span":[0,11],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":6},
+    {"title":"Opposite Qualities Exist Together in Reality","starting_phrase":"Therefore, you can have the opposite two opposite things, because you're it's not In theory, light and darkness are opposite things, for example, or sweet and bitterness.","start_time_sec":98.76,"matched_text":"Therefore, you can have the opposite two opposite things, because you're it's not In theory, light and darkness are opposite things, for example, or sweet and bitterness.","score_norm":0.968,"confidence":"HIGH","token_span":[260,287],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":8}
+  ]
+}

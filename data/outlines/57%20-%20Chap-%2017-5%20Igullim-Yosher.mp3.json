@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "57 - Chap- 17-5 Igullim-Yosher.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7074db92-e9ce-40e3-b20c-b71eafb6f707",
+  "transcript": "transcripts/57%20-%20Chap-%2017-5%20Igullim-Yosher.mp3.json",
+  "fetchedAt": "2026-10-28T23:55:38.967Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Primordial Will and the Ten Sefirot","starting_phrase":"והכל הוא ברצון הנעלם הנקרא רצון קדמון הנ״ל, מקור כל הרצונות, כולל עשר ספירות.","start_time_sec":0,"matched_text":"והכל הוא ברצון הנעלם הנקרא רצון קדמון הנ״ל, מקור כל הרצונות, כולל עשר ספירות.","score_norm":1,"confidence":"HIGH","token_span":[0,14],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":14},
+    {"title":"From Dreaming to Commitment: Deciding to Act","starting_phrase":"Then there comes a certain point where he decides he's actually going to do it.","start_time_sec":282.82,"matched_text":"there comes a certain point where he decides he's actually going to do","score_norm":0.967,"confidence":"HIGH","token_span":[767,780],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Two Steps: Setting Goals Before Worldly Considerations","starting_phrase":"There’s always two steps. First, you have to make a goal without considering","start_time_sec":396.99,"matched_text":"always two steps. First, you have to make a goal without considering","score_norm":0.886,"confidence":"HIGH","token_span":[1106,1118],"matched_content":9,"content_coverage":0.818,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Firm Commitment: Turning Pizza Dream into Action","starting_phrase":"You make a firm commitment that I'm going to do it, I'm going to figure out a way to get the pizza.","start_time_sec":532.75,"matched_text":"make a firm commitment that I'm going to do it, I'm going to figure out a way to get the pizza.","score_norm":0.953,"confidence":"HIGH","token_span":[1555,1576],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":2}
+  ]
+}

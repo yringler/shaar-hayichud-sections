@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "02 - Introduction-2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b04a5d05-0e83-40d1-9211-0009403cc99e",
+  "transcript": "transcripts/02%20-%20Introduction-2.mp3.json",
+  "fetchedAt": "2026-10-28T23:48:38.689Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introduction to the First Nine Chapters","starting_phrase":"So now, we'll give a little introduction about the first nine chapters.","start_time_sec":5.42,"matched_text":"we'll give a little introduction about the first nine chapters.","score_norm":0.982,"confidence":"HIGH","token_span":[2,12],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Two Opposite Approaches: Intellectual vs Excitement","starting_phrase":"One approach was that חסידות is supposed to be, is meant to be an intellectual thing,","start_time_sec":115.68,"matched_text":"One approach was that חסידות is supposed to be, is meant to be an intellectual thing,","score_norm":0.909,"confidence":"HIGH","token_span":[233,249],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Bitter Confusion and the Need for Guidance","starting_phrase":"He says, \"מר לי מר.\" It's so bitter, these two opposite things.","start_time_sec":236.04876777251184,"matched_text":"says, \"מר לי מר.\" It's so bitter, these two opposite things.","score_norm":0.984,"confidence":"HIGH","token_span":[578,589],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Lottery Analogy for True Spiritual Excitement","starting_phrase":"The example he gives is if a person, let's say, wins a lot of money or has some very good news like that, then they're very they're very excited,","start_time_sec":318.28,"matched_text":"example he gives is if a person, let's say, wins a lot of money or has some very good news like that, then they're very they're very excited,","score_norm":0.937,"confidence":"HIGH","token_span":[799,827],"matched_content":15,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Focus on Understanding, Not Highest Level","starting_phrase":"And the other point is that it's not important what level you're on.","start_time_sec":419.92,"matched_text":"other point is that it's not important what level you're","score_norm":0.98,"confidence":"HIGH","token_span":[1118,1128],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Defining התבוננות: Analysis over Meditation","starting_phrase":"And what he explains in short is that התבוננות means עיון, means analysis.","start_time_sec":519.94,"matched_text":"התבוננות means עיון, means analysis.","score_norm":0.625,"confidence":"MEDIUM","token_span":[1341,1346],"matched_content":5,"content_coverage":0.625,"longest_content_run_soft":5,"longest_content_run_strict":5}
+  ]
+}

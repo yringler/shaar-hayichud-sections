@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "49 - Chap- 28-3 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "e58cf633-3dff-42ba-99b3-b007d3d64817",
+  "transcript": "transcripts/49%20-%20Chap-%2028-3%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:10:18.713Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Names Before the Ten Sefirot of Atzilut","starting_phrase":"וכולי והן ע״ב ס״ג וכולי שלפני עשר ספירות דאצילות, so","start_time_sec":2.1400000000000015,"matched_text":"וכולי והן ע״ב ס״ג וכולי שלפני עשר ספירות דאצילות,","score_norm":1,"confidence":"HIGH","token_span":[0,9],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Function of Divine Names in World Interaction","starting_phrase":"Now, when you have a certain stimulus from the world, certain stimuli from the world, you just plug that into your א״ק","start_time_sec":118.18,"matched_text":"when you have a certain stimulus from the world, certain stimuli from the world, you just plug that into your א״ק","score_norm":0.962,"confidence":"HIGH","token_span":[331,352],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Astrology and Knowing God’s Intentions","starting_phrase":"Astrology is really like a Jewish wisdom that when you know the names of God, you understand what God wants and what","start_time_sec":191.76,"matched_text":"Astrology is really like a Jewish wisdom that when you know the names of God, you understand what God wants and what","score_norm":0.921,"confidence":"HIGH","token_span":[561,583],"matched_content":11,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Predicting Events: Rabbi and Weather Example","starting_phrase":"Now, that those are the tools through which He does things.","start_time_sec":260.2,"matched_text":"tools through which He does things.","score_norm":0.986,"confidence":"HIGH","token_span":[773,779],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3}
+  ]
+}

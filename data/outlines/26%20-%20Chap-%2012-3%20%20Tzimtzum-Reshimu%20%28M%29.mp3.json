@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "26 - Chap- 12-3  Tzimtzum-Reshimu (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "32249e60-bbf8-4bc7-a300-aa4cc7e08c37",
+  "transcript": "transcripts/26%20-%20Chap-%2012-3%20%20Tzimtzum-Reshimu%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:11.181Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the Concept of צמצום (Contraction)","starting_phrase":"Now we're going to start explaining the צמצום, and then we'll explain the רשימו.","start_time_sec":2.46,"matched_text":"we're going to start explaining the צמצום, and then we'll explain the רשימו.","score_norm":0.955,"confidence":"HIGH","token_span":[1,14],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Why a Teacher Must Conceal His Full Understanding","starting_phrase":"The teacher has to hide within himself the whole depth of his understanding.","start_time_sec":181.64,"matched_text":"teacher has to hide within himself the whole depth of his understanding.","score_norm":0.976,"confidence":"HIGH","token_span":[371,383],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Math Analogy: Explaining Complex Ideas to a Child","starting_phrase":"So he's going to start explaining to a little kid.","start_time_sec":267.78,"matched_text":"he's going to start explaining to him one little","score_norm":0.764,"confidence":"HIGH","token_span":[593,602],"matched_content":5,"content_coverage":0.833,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Giving a Short Halachic Ruling Without Full Details","starting_phrase":"Like if you ask somebody the הלכה, and they just tell you the הלכה, the bottom line.","start_time_sec":403.27333649289096,"matched_text":"ask somebody the הלכה, and they just tell you the הלכה, the bottom line.","score_norm":0.929,"confidence":"HIGH","token_span":[953,967],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Chicken‑Kosher Story Illustrating Over‑Explanation","starting_phrase":"So like, you know the story where back in like Europe,","start_time_sec":476.44,"matched_text":"story where back in like Europe,","score_norm":0.967,"confidence":"HIGH","token_span":[1179,1185],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Extracting Gemara from Mishnah Through Concise Analysis","starting_phrase":"And so if you'll analyze the the משנה, you'll be able to extract the גמרא from it.","start_time_sec":711.58,"matched_text":"you'll analyze the the משנה, you'll be able to extract the גמרא from","score_norm":0.956,"confidence":"HIGH","token_span":[1865,1878],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

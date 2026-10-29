@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "29 - Chap- 25-6 Keser to AvA (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c6198784-02db-49ac-934f-581e27d3e45c",
+  "transcript": "transcripts/29%20-%20Chap-%2025-6%20Keser%20to%20AvA%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:06:54.188Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Descending Levels and the Scales of Justice","starting_phrase":"ובירידת המדרגה עוד, and then as the light descends lower, אין מוחין דחכמה","start_time_sec":3.58,"matched_text":"ובירידת המדרגה עוד, and then as the light descends lower, אין מוחין דחכמה","score_norm":0.972,"confidence":"HIGH","token_span":[0,13],"matched_content":9,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Regular Intellect in Daily Life","starting_phrase":"And so this level of intellect, when it receives from the נצח and הוד, this is like a normal intellect already.","start_time_sec":173.66,"matched_text":"level of intellect, when it receives from the נצח and הוד, this is like a normal intellect already.","score_norm":0.939,"confidence":"HIGH","token_span":[527,545],"matched_content":10,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Questioning Axioms to Reach True Understanding","starting_phrase":"In order to really get to the truth of an idea, you have to question all the way back to the original axioms","start_time_sec":262.36,"matched_text":"order to really get to the truth of an idea, you have to question all the way back to the original axioms","score_norm":0.929,"confidence":"HIGH","token_span":[854,876],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":2},
+    {"title":"Cedar Tree Metaphor and King Solomon","starting_phrase":"So when you appreciate the thing itself, that's like a cedar in Lebanon.","start_time_sec":502.62,"matched_text":"when you appreciate the thing itself, that's like a cedar in Lebanon.","score_norm":0.945,"confidence":"HIGH","token_span":[1662,1674],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Shmiyah Rabbah in Prayer and Divine Will","starting_phrase":"וכידוע בכוונות דאמן יהא שמיה רבא מברך","start_time_sec":596.56,"matched_text":"וכידוע בכוונות דאמן יהא שמיה רבא מברך,","score_norm":1,"confidence":"HIGH","token_span":[1967,1974],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Seeking Mashiach: Lowest Intellect and Divine Favor","starting_phrase":"And this the main idea of this really is that we're asking for משיח","start_time_sec":666.62,"matched_text":"main idea of this really is that we're asking for משיח,","score_norm":0.915,"confidence":"HIGH","token_span":[2169,2180],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Zeir Anpin vs Arich Anpin: Palm vs Cedar","starting_phrase":"What that isn’t the case in the יסוד of זא","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

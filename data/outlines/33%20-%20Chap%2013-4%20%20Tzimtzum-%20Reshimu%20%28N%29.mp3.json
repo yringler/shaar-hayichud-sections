@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "33 - Chap 13-4  Tzimtzum- Reshimu (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "67461fe7-2079-45d4-905e-ceca7937bc1b",
+  "transcript": "transcripts/33%20-%20Chap%2013-4%20%20Tzimtzum-%20Reshimu%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:52:16.940Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"General Idea of the נמשל of the רשימו","starting_phrase":"So we just finished explaining the נמשל for each of the משלים of the רשימו, and now we're going to explain the general idea of the נמשל of the רשימו.","start_time_sec":3.16,"matched_text":"finished explaining the נמשל for each of the משלים of the רשימו, and now we're going to explain the general idea of the נמשל of the רשימו.","score_norm":0.925,"confidence":"HIGH","token_span":[3,30],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":2},
+    {"title":"How the קו Extracts from the Hidden רשימו","starting_phrase":"And exactly how that's possible will be explained in the next chapter, cuz it seems like it should be very hard to do or impossible to do, so we'll explain how it's able to be done in the next chapter, how the קו does that.","start_time_sec":167.04,"matched_text":"exactly how that's possible will be explained in the next chapter, cuz it seems like it should be very hard to do or impossible to do, so we'll explain how it's able to be done in the next chapter, how the קו does","score_norm":0.954,"confidence":"HIGH","token_span":[332,375],"matched_content":26,"content_coverage":1,"longest_content_run_soft":26,"longest_content_run_strict":5},
+    {"title":"Craftsman's Blueprint as Divine Blueprint Analogy","starting_phrase":"והרי זו כמשל רושם האומן, and this is like the analogy of the craftsman's blueprint, שממנו דווקא ידע לעשות כל אריכות מעשה הבניין בפרטי פרטיו,","start_time_sec":340.78,"matched_text":"והרי זו כמשל רושם האומן, and this is like the analogy of the craftsman's blueprint, שממנו דווקא ידע לעשות כל אריכות מעשה הבניין בפרטי פרטיו,","score_norm":0.975,"confidence":"HIGH","token_span":[746,771],"matched_content":18,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":12},
+    {"title":"Mnemonic Notes Parallel to God's Original Plan","starting_phrase":"וכמו כן עניין הציונים ללימוד עמוק שבעצמו וכו', so too the idea of making little notes, sort of mnemonics, to help you remember a deep subject,","start_time_sec":500.06,"matched_text":"וכמו כן עניין הציונים ללימוד עמוק שבעצמו וכו', so too the idea of making little notes, sort of mnemonics, to help you remember a deep subject,","score_norm":0.972,"confidence":"HIGH","token_span":[1218,1244],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":8}
+  ]
+}

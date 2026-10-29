@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "24 - Chap- 25-1 Keser to AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "37ca7ca4-a3e2-4183-83bc-ad54278cc3c0",
+  "transcript": "transcripts/24%20-%20Chap-%2025-1%20Keser%20to%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:06:03.564Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the Beard Lecture","starting_phrase":"Here, פרק כ״ה. So today we're going to learn about the beard.","start_time_sec":0,"matched_text":"Here, פרק כ״ה. So today we're going to learn about the beard.","score_norm":0.977,"confidence":"HIGH","token_span":[0,12],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3}
+  ]
+}

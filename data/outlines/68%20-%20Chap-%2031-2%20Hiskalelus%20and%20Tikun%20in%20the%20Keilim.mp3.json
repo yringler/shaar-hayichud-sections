@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "68 - Chap- 31-2 Hiskalelus and Tikun in the Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f8ebc651-2d0f-4c25-83b6-eb3215791b8a",
+  "transcript": "transcripts/68%20-%20Chap-%2031-2%20Hiskalelus%20and%20Tikun%20in%20the%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:13:12.798Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Opposite Emotions: חסד vs גבורה","starting_phrase":"Now we'll understand this better from looking at the two emotions of חסד and גבורה, kindness and severity,","start_time_sec":11.72,"matched_text":"we'll understand this better from looking at the two emotions of חסד and גבורה, kindness and severity,","score_norm":0.962,"confidence":"HIGH","token_span":[15,32],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Strict Parenting as a חסד Expression","starting_phrase":"Like a parent that loves the child, so they won't handle a thing of like a light of גבורה to actually want to hurt the child, but to be strict for the child's benefit, which is really a חסד,","start_time_sec":85.22,"matched_text":"parent that loves the child, so they won't handle a thing of like a light of גבורה to actually want to hurt the child, but to be strict for the child's benefit, which is really a חסד,","score_norm":0.904,"confidence":"HIGH","token_span":[176,213],"matched_content":16,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Creation Days Illustrate Distinct Middot","starting_phrase":"And this is like we see in the six days of creation, that each day had its own מידה.","start_time_sec":273.62,"matched_text":"see in the six days of creation,","score_norm":0.419,"confidence":"LOW","token_span":[714,721],"matched_content":4,"content_coverage":0.4,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Inclusion of חסד in דין and Vice Versa","starting_phrase":"It's impossible that you should not have the inclusion of a חסד in the דין, and the דין in the חסד.","start_time_sec":446.68,"matched_text":"It's impossible that you should not have the inclusion of a חסד in the דין, and the דין in the חסד.","score_norm":0.908,"confidence":"HIGH","token_span":[1211,1232],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3}
+  ]
+}

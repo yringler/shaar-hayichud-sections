@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "59 - Chap- 29-3 Gvul biKoach and Gvul biPoel.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5d5edb8c-1042-430d-b105-1d129a4b0a0c",
+  "transcript": "transcripts/59%20-%20Chap-%2029-3%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "fetchedAt": "2026-10-29T00:11:33.007Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Language Analogy for Divine Expression","starting_phrase":"In other words, it's like this, like let's say with a language.","start_time_sec":3.36,"matched_text":"other words, it's like this, like let's say with a language.","score_norm":0.957,"confidence":"HIGH","token_span":[1,12],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Vessels Can Switch Between חסד and גבורה","starting_phrase":"And if he wants to, he can make that into a גבורה vessel.","start_time_sec":160.7,"matched_text":"wants to, he can make that into a גבורה vessel.","score_norm":0.948,"confidence":"HIGH","token_span":[524,534],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"God’s Equal Power to Limit and Expand","starting_phrase":"In other words, that God's power to limit and the power to to extend are equal,","start_time_sec":330.74,"matched_text":"other words, that God's power to limit and the power to to extend are equal,","score_norm":0.935,"confidence":"HIGH","token_span":[1015,1030],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Understanding the רשימו: Limitation Power","starting_phrase":"The power of limitation in the אין סוף is the רשימו,","start_time_sec":516.5,"matched_text":"power of limitation in the אין סוף is the רשימו,","score_norm":0.924,"confidence":"HIGH","token_span":[1589,1599],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"How Limitations Stem from Divine Choice","starting_phrase":"These limitations are coming from the power that makes it, in other words, that God chose that it should come out in this way.","start_time_sec":661.1,"matched_text":"limitations are coming from the power that makes it, in other words, that God chose that it should come out in this way.","score_norm":0.943,"confidence":"HIGH","token_span":[2022,2045],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "11 - Chap- 1-3 Chochma Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "2ed7d599-b4e0-4383-809f-0f58a076453e",
+  "transcript": "transcripts/11%20-%20Chap-%201-3%20Chochma%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:04:03.523Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Height Concept and Its Role","starting_phrase":"וגם בחינת גובה למעלה, and also the height above the idea which we didn't mention before,","start_time_sec":0,"matched_text":"וגם בחינת גובה למעלה, and also the height above the idea which we didn't mention before,","score_norm":0.977,"confidence":"HIGH","token_span":[0,16],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Teaching Addition: From Concrete to Abstract","starting_phrase":"So for example, when you're teaching somebody, when you're teaching children how to add,","start_time_sec":68.66,"matched_text":"example, when you're teaching somebody, when you're teaching children how to add,","score_norm":0.994,"confidence":"HIGH","token_span":[192,204],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":10},
+    {"title":"Why We Teach Length and Width First","starting_phrase":"So then you say, well, why don't you just teach the kids the depth?","start_time_sec":200.86,"matched_text":"say, well, so why, why don't you just teach the kids the depth?","score_norm":0.939,"confidence":"HIGH","token_span":[669,682],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Spiritual Flood and the Coming of Mashiach","starting_phrase":"That means the highest height. כמו התגברות המים למעלה מעלה בזמן המבול,","start_time_sec":268.94,"matched_text":"means the highest height. כמו התגברות המים למעלה מעלה בזמן המבול,","score_norm":0.993,"confidence":"HIGH","token_span":[912,923],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":9},
+    {"title":"Understanding the Meaning of התבוננות","starting_phrase":"The word התבוננות comes from בינה, it means to make yourself understand, but it should really only have one נו״ן, it should be התבינות.","start_time_sec":729.78,"matched_text":"word התבוננות comes from בינה, it means to make yourself understand, but it should really only have one נו״ן, it should be התבינות.","score_norm":0.969,"confidence":"HIGH","token_span":[2251,2274],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":5}
+  ]
+}

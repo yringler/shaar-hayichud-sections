@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "74 - Chap- 20-3 Tikun-Tohu.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "cec0f413-3e7d-41ec-9d3e-565bf51c33f7",
+  "transcript": "transcripts/74%20-%20Chap-%2020-3%20Tikun-Tohu.mp3.json",
+  "fetchedAt": "2026-10-28T23:58:34.598Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Complex Kindness vs Simple Kindness","starting_phrase":"שזה נקרא חסד וטוב המורכב, this is called","start_time_sec":3.7,"matched_text":"נקרא חסד וטוב המורכב, this is called","score_norm":0.974,"confidence":"HIGH","token_span":[1,8],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Balancing Love and Hate in Decision Making","starting_phrase":"In other words, essentially there's no mixing: what you like","start_time_sec":292.69,"matched_text":"other words, essentially there's no mixing: what","score_norm":1,"confidence":"HIGH","token_span":[827,834],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"God’s Mixed Judgment: Saul’s Punishment and Honor","starting_phrase":"If He's judging, so then, so that it says","start_time_sec":386.71,"matched_text":"He's judging, so then, so it says","score_norm":0.882,"confidence":"HIGH","token_span":[1152,1159],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Divine Anger and Joy Over Solomon’s Choices","starting_phrase":"So we see that ה' both had שמחה and anger at שלמה","start_time_sec":534.47,"matched_text":"see that ה' both had שמחה and anger at שלמה","score_norm":0.954,"confidence":"HIGH","token_span":[1595,1605],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Flood, Rainbow, and the Refinement of the Evil Inclination","starting_phrase":"The end of the day is that there was before the מבול","start_time_sec":616.95,"matched_text":"end of the day is that there was before the מבול,","score_norm":0.913,"confidence":"HIGH","token_span":[1869,1880],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "03 - Chap- 23-3 Keser (M)  .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "ad8d8287-5fc7-45f1-b8b1-4df3195aa644",
+  "transcript": "transcripts/03%20-%20Chap-%2023-3%20Keser%20%28M%29%20%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:02:49.524Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Soul’s Core is Pleasure","starting_phrase":"ומזה נראה, from this we see, בעצם מהותה, this shows us on the the essential nature of the soul שהוא תענוג, that it is pleasure.","start_time_sec":3.0200000000000014,"matched_text":"ומזה נראה, from this we see, בעצם מהותה, this shows us on the the essential nature of the soul שהוא תענוג, that it is pleasure.","score_norm":0.934,"confidence":"HIGH","token_span":[0,25],"matched_content":13,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Pleasure Reveals the Soul’s True Essence","starting_phrase":"Rather, the essence of the נפש, the essence of the soul is really higher, but the essence of the soul is filled from great pleasure.","start_time_sec":120,"matched_text":"Rather, the essence of the נפש, the essence of the soul is really higher, but the essence of the soul is filled from great pleasure.","score_norm":0.915,"confidence":"HIGH","token_span":[291,316],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4}
+  ]
+}

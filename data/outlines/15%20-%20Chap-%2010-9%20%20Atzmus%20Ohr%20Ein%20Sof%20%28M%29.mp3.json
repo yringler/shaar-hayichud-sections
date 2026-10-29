@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "15 - Chap- 10-9  Atzmus Ohr Ein Sof (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "db863955-2b15-44dc-8d33-d75ddd12b96b",
+  "transcript": "transcripts/15%20-%20Chap-%2010-9%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:49:52.690Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Why we need multiple analogies","starting_phrase":"So that's the end of this analogy. Now we're going to give a few more analogies to help us understand this one better","start_time_sec":3.18,"matched_text":"that's the end of this analogy. Now we're going to give a few more analogies to help us understand this one better,","score_norm":0.961,"confidence":"HIGH","token_span":[1,23],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":3},
+    {"title":"Electricity analogy for universal movement energy","starting_phrase":"It's the same thing like electricity, that you know, you can plug whatever you want into your outlet","start_time_sec":287.98,"matched_text":"It's the same thing like electricity, that you know, you can plug whatever you want into your outlet,","score_norm":0.951,"confidence":"HIGH","token_span":[766,784],"matched_content":11,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Consciousness power: soul before bodily revelation","starting_phrase":"The same thing with consciousness, the soul's power of consciousness, before it spreads out into the body to give it life,","start_time_sec":393.38,"matched_text":"same thing with consciousness, the soul's power of consciousness, before it spreads out into the body to give it life,","score_norm":0.968,"confidence":"HIGH","token_span":[1086,1106],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Sound and sight: physical vs perceptual","starting_phrase":"The physical thing of it is that it's moving a lot of air, it's called amplitude","start_time_sec":541.64,"matched_text":"physical thing of it is that it's moving a lot of air, it's called amplitude,","score_norm":0.949,"confidence":"HIGH","token_span":[1485,1500],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

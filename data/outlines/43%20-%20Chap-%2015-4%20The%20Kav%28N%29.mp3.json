@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "43 - Chap- 15-4 The Kav(N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c1c27e1f-5f63-479d-a8f4-04661ae828fc",
+  "transcript": "transcripts/43%20-%20Chap-%2015-4%20The%20Kav%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:33.683Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Paradox of Opposites Unified by the קו","starting_phrase":"מזה הטעם for this reason יובן תירוץ על","start_time_sec":1.3399999999999999,"matched_text":"מזה הטעם for this reason יובן תירוץ","score_norm":0.974,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The Measuring Line (קו המדה) Creates Distinctions","starting_phrase":"וה-ב' and the second thing that we see in the קו, מה שנקרא בשם קו המדה,","start_time_sec":176.9,"matched_text":"second thing that we see in the קו, מה שנקרא בשם קו המדה,","score_norm":0.952,"confidence":"HIGH","token_span":[492,505],"matched_content":8,"content_coverage":0.889,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Rules and Their Breaking Are Both Truth","starting_phrase":"Sometimes God wants us to make rules, sometimes He wants to break rules.","start_time_sec":281.62000000000006,"matched_text":"Sometimes God wants us to make rules, sometimes He wants to break rules.","score_norm":0.977,"confidence":"HIGH","token_span":[832,845],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Inner Name מ״ה as the Core of קו","starting_phrase":"The קו is the inner שם מ״ה, which is the inner ביטול,","start_time_sec":392.02,"matched_text":"קו is the inner שם מ״ה, which is the inner ביטול,","score_norm":0.957,"confidence":"HIGH","token_span":[1182,1193],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

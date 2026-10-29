@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "18 - Chap- 1-10 Chochmah Binah Daas (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b4fee0db-94f2-4a92-a22f-ccb0513ac74c",
+  "transcript": "transcripts/18%20-%20Chap-%201-10%20Chochmah%20Binah%20Daas%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:19.001Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Deep Focus Through Consistent Study (דעת)","starting_phrase":"שמזה דווקא בא עצם עומק ההשגה על ידי העיון דבינה.","start_time_sec":0,"matched_text":"שמזה דווקא בא עצם עומק ההשגה על ידי העיון דבינה.","score_norm":0.993,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"בינה vs דעת: Expanding vs Fixating","starting_phrase":"But בינה means that you want to","start_time_sec":65.62,"matched_text":"בינה means that you want","score_norm":0.947,"confidence":"HIGH","token_span":[159,164],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Watchmaker Analogy for Analyzing Ideas","starting_phrase":"Like somebody that's taking apart a watch to examine it, to like fix it, watchmaker.","start_time_sec":140.86,"matched_text":"somebody that's taking apart a watch to examine it, to like fix it, watchmaker.","score_norm":0.951,"confidence":"HIGH","token_span":[419,433],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Balancing Insight with Repetition (חזרה)","starting_phrase":"And this is why חזרה is a very good thing, because חזרה lets you","start_time_sec":414.08,"matched_text":"why חזרה is a very good thing, because חזרה lets","score_norm":0.971,"confidence":"HIGH","token_span":[1302,1312],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Learning to Teach and to Act","starting_phrase":"And the לומד על מנת ללמד מספיקין בידו ללמוד וללמד","start_time_sec":588.74,"matched_text":"הלומד על מנת ללמד מספיקין בידו ללמוד וללמד,","score_norm":0.954,"confidence":"HIGH","token_span":[1818,1826],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"Upper דעת Unites חכמה and בינה","starting_phrase":"והא בחינת דעת עליון דמזווג חכמה לבינה, כמו שמבואר למעלה","start_time_sec":683.4032047244095,"matched_text":"בחינת דעת עליון דמזווג חכמה לבינה, כמו שמבואר למעלה","score_norm":1,"confidence":"HIGH","token_span":[2155,2164],"matched_content":9,"content_coverage":0.9,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Moshe’s דעת Leads to בינה","starting_phrase":"וכמו שאמרו, like it says, משה שהוא דעת זכה לבינה.","start_time_sec":767.68,"matched_text":"וכמו שאמרו, like it says, משה שהוא דעת זכה לבינה.","score_norm":0.971,"confidence":"HIGH","token_span":[2380,2390],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3}
+  ]
+}

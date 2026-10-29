@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "37 - Chap- 26-8 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "e48147b8-be45-48f2-b480-77f80e4d9961",
+  "transcript": "transcripts/37%20-%20Chap-%2026-8%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:08:08.121Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Upper vs Lower Unity of Love Explained","starting_phrase":"זהו ענין יחוד אהבה עילאה ויחוד אהבה תתאה, and this is the idea of the upper יחוד אהבה, lower יחוד אהבה.","start_time_sec":2.92,"matched_text":"זהו ענין יחוד אהבה עילאה ויחוד אהבה תתאה, and this is the idea of the upper יחוד אהבה, lower יחוד אהבה.","score_norm":0.97,"confidence":"HIGH","token_span":[0,21],"matched_content":15,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Husband‑Wife vs Father‑Mother Love Dynamics","starting_phrase":"There's like the father and mother the way they're husband and wife, and there's the way they're father and mother.","start_time_sec":71.04,"matched_text":"There's like the father and mother the way they're husband and wife, and there's the way they're father and mother.","score_norm":0.947,"confidence":"HIGH","token_span":[176,196],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Distinguishing Bina and Tevunah in Torah Study","starting_phrase":"In פרק ב' we explained בינה and תבונה, no? And the difference between ישראל סבא and and חכמה is the same thing:","start_time_sec":161.48,"matched_text":"פרק ב' we explained בינה and תבונה, no? And the difference between ישראל סבא and and חכמה is the same thing:","score_norm":0.945,"confidence":"HIGH","token_span":[419,440],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Application of Intellect: Higher Desire Over Pure Thought","starting_phrase":"And then when you go there's a there's a higher רצון there's like a higher ענין of the application of it, which is in a way higher than the pure intellect.","start_time_sec":241.52,"matched_text":"when you go there's a there's a higher רצון there's like a higher ענין of the application of it, which is in a way higher than the pure intellect.","score_norm":0.937,"confidence":"HIGH","token_span":[662,691],"matched_content":16,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Ketzot d'Aba: Intuitive Halachic Insight","starting_phrase":"טוב, קצוות דאבא are the intuitive like halachic thing, when you like, you know, you can't explain it, but you you know, you have like a דעת תורה, you know what I mean?","start_time_sec":380.90000000000003,"matched_text":"טוב, קצוות דאבא are the intuitive like halachic thing, when you like, you know, you can't explain it, but you you know, you have like a a דעת תורה, you know what","score_norm":0.892,"confidence":"HIGH","token_span":[1108,1140],"matched_content":13,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3}
+  ]
+}

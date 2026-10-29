@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "13 - Chap- 1-5 Chochmah Binah Daas.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "02a6d8e6-f4b3-4cc0-9f7a-75637d35be87",
+  "transcript": "transcripts/13%20-%20Chap-%201-5%20Chochmah%20Binah%20Daas.mp3.json",
+  "fetchedAt": "2026-10-29T00:04:27.450Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introducing the Dimensions of חכמה","starting_phrase":"So now we're going to explain the dimensions of חכמה. And the idea is that just like in בינה that you have","start_time_sec":2.38,"matched_text":"we're going to explain the dimensions of חכמה. And the idea is that just like in בינה that you have","score_norm":0.883,"confidence":"HIGH","token_span":[2,22],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"חכמה Emerges from Nothing – The Hidden Source","starting_phrase":"And this is what it says, that חכמה is found from nothing.","start_time_sec":195.86,"matched_text":"what it says, that חכמה is found from nothing.","score_norm":0.964,"confidence":"HIGH","token_span":[526,535],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"חכמה as a Flash of New Insight","starting_phrase":"The power of חכמה is the ability to find a new idea that comes out like a lightning bolt","start_time_sec":258.5,"matched_text":"power of חכמה is the ability to find a new idea that comes out like a lightning bolt,","score_norm":0.943,"confidence":"HIGH","token_span":[698,716],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2},
+    {"title":"From רש״י Study to Deeper חכמה","starting_phrase":"So, like for example, if you're learning גמרא and you learn a רש״י, and you learn how he explains the גמרא","start_time_sec":410.86,"matched_text":"example, if you're learning גמרא and you learn a רש״י, and you learn how he explains the גמרא,","score_norm":0.942,"confidence":"HIGH","token_span":[1124,1142],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"The שער הנון – Bridge to חכמה","starting_phrase":"Because עומק המושג, the depth of understanding, נקרא שער הנון דבינה","start_time_sec":634.34,"matched_text":"Because עומק המושג, the depth of understanding, נקרא שער הנון דבינה,","score_norm":0.984,"confidence":"HIGH","token_span":[1875,1886],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Messianic Wellspring Metaphor: From קדש to River","starting_phrase":"And this is like the wellspring goes out, when משיח comes, a wellspring is gonna go out from the","start_time_sec":774.82,"matched_text":"wellspring goes out, when משיח comes, a wellspring is gonna go out from","score_norm":0.986,"confidence":"HIGH","token_span":[2267,2280],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":6}
+  ]
+}

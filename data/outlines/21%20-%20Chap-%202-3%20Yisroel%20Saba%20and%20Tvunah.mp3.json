@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "a1e6e4aa-4592-41e0-87b2-9f2e6d8e8ca2",
+  "transcript": "transcripts/21%20-%20Chap-%202-3%20Yisroel%20Saba%20and%20Tvunah.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:39.754Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Bina's Own Measures: The Seven Lower Sefirot","starting_phrase":"אך לכאורה אנו רואים, however, seemingly we","start_time_sec":0,"matched_text":"אך לכאורה אנו רואים, however, seemingly","score_norm":1,"confidence":"HIGH","token_span":[0,6],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"A Person of Tevunah Applies Bina's Emotions","starting_phrase":"Specifically, a person of תבונה is able","start_time_sec":112.85154415954418,"matched_text":"Specifically, a person of תבונה is able","score_norm":0.944,"confidence":"HIGH","token_span":[248,255],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Depth of Bina vs Internalized Tevunah","starting_phrase":"This is the difference between the depth","start_time_sec":226.88,"matched_text":"difference between the depth","score_norm":0.975,"confidence":"HIGH","token_span":[560,564],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Israel Saba and Tevunah as Lower Parents","starting_phrase":"And this is the idea that the lower","start_time_sec":294.74,"matched_text":"idea that the lower","score_norm":0.926,"confidence":"HIGH","token_span":[770,774],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Malchut of Tevunah: Thought, Speech, Action","starting_phrase":"מלכות of תבונה is the application into","start_time_sec":400.84,"matched_text":"מלכות of תבונה is the application into","score_norm":0.941,"confidence":"HIGH","token_span":[1118,1125],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"From Malchut to L'ah: The Final Step","starting_phrase":"And then, once you have this thing","start_time_sec":589.7,"matched_text":"once you have this thing","score_norm":0.95,"confidence":"HIGH","token_span":[1681,1686],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1}
+  ]
+}

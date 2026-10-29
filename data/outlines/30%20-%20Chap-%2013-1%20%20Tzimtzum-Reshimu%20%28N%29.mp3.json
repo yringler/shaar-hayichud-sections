@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "30 - Chap- 13-1  Tzimtzum-Reshimu (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f6780c20-abd2-4562-9860-62e5d3601b12",
+  "transcript": "transcripts/30%20-%20Chap-%2013-1%20%20Tzimtzum-Reshimu%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:52.705Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the Empty Place (מקום פנוי) Concept","starting_phrase":"והנמשל מכל הנ״ל, the נמשל for everything","start_time_sec":0,"matched_text":"והנמשל מכל הנ״ל, the נמשל for everything","score_norm":0.973,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Divine Creation Doesn't Diminish God's Essence","starting_phrase":"The same thing, when God creates the world, He doesn't become","start_time_sec":86.04,"matched_text":"same thing, when God creates the world, He doesn't become,","score_norm":0.981,"confidence":"HIGH","token_span":[252,262],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Infinite Sefirot and Unlimited Creative Potential","starting_phrase":"Just because He is using these 10 ספירות doesn't mean","start_time_sec":189.55825098814233,"matched_text":"because He is using these 10 ספירות doesn't","score_norm":0.957,"confidence":"HIGH","token_span":[595,603],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Why Darkness Precedes Light in the World","starting_phrase":"Why does evil start out on the top? That's the the real question.","start_time_sec":272.86,"matched_text":"Why does evil start out on the top? That's the the real question.","score_norm":0.968,"confidence":"HIGH","token_span":[850,863],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"The Dual Meaning of אתה הוא and הוא","starting_phrase":"The idea of אתה הוא, ואתה second person, right","start_time_sec":361.78,"matched_text":"idea of אתה הוא, ואתה second person,","score_norm":0.988,"confidence":"HIGH","token_span":[1142,1149],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"External vs Internal Encompassment (מקיף פנימי) Explained","starting_phrase":"So it's מקיף it, it surrounds it, and it's the real cause","start_time_sec":555.8,"matched_text":"it's מקיף it, it surrounds it, and it's the real cause,","score_norm":0.935,"confidence":"HIGH","token_span":[1762,1773],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

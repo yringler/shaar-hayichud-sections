@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "62e19153-4468-44c1-8bd5-c3b9141b7c48",
+  "transcript": "transcripts/23%20-%20Chap-%2011-6%20Atzmus%20Ohr%20Ein%20Sof%20%28N%29%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:50:48.243Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Intro to פירוש המילים of ברוך שאמר","starting_phrase":"So now the מיטעלער רבי is going to give us a little פירוש המילות on ברוך שאמר,","start_time_sec":4.22,"matched_text":"מיטעלער רבי is going to give us a little פירוש המילות on ברוך שאמר,","score_norm":0.97,"confidence":"HIGH","token_span":[3,17],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Three stages: ברוך שאמר, והיה, העולם","starting_phrase":"And then we say והיה, and something came to be, which is already בגילוי אור מתפשט לדבר פרט,","start_time_sec":78.69912643678163,"matched_text":"והיה, and then it came to be, which that is בגילוי אור מתפשט לדבר פרט,","score_norm":0.695,"confidence":"HIGH","token_span":[163,178],"matched_content":8,"content_coverage":0.727,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Explanation of ברוך הוא and hidden aspect","starting_phrase":"And now we're not identifying who we're talking about at all. We just say, \"Blessed is He.\"","start_time_sec":260.66,"matched_text":"we're not identifying who we're talking about at all. We just say, \"Blessed","score_norm":0.976,"confidence":"HIGH","token_span":[618,631],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":7},
+    {"title":"God's estimation from beginning to end","starting_phrase":"Well, the simple thing is at the beginning, God says what's going to happen at the end, that he knows the future,","start_time_sec":347.52,"matched_text":"simple thing is at the beginning, God says what's going to happen at the end, that he knows the future.","score_norm":0.937,"confidence":"HIGH","token_span":[849,869],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Measuring line קו before א\"ק and its role","starting_phrase":"And the ענין of ברוך גוזר ומקיים is והוא בחינת קו המדה שלפני א\"ק,","start_time_sec":485.84,"matched_text":"ענין of ברוך גוזר ומקיים is והוא בחינת קו המדה שלפני","score_norm":0.984,"confidence":"HIGH","token_span":[1191,1202],"matched_content":9,"content_coverage":0.818,"longest_content_run_soft":9,"longest_content_run_strict":5}
+  ]
+}

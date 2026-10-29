@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "32 - Chap- 26-3 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1b0a319c-ef4a-43db-8966-ea33a12e0e97",
+  "transcript": "transcripts/32%20-%20Chap-%2026-3%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:21.205Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Inner Desire of Wisdom (פנימיות אור אבא)","starting_phrase":"והוא בחינת פנימיות אור אבא. This is the פנימיות of the אור אבא, which means, first of all,","start_time_sec":0,"matched_text":"והוא בחינת פנימיות אור אבא. This is the פנימיות of the אור אבא, which means, first of all,","score_norm":0.964,"confidence":"HIGH","token_span":[0,18],"matched_content":12,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Pleasure of Shabbat and the Three Meals","starting_phrase":"וקראת לשבת עונג, you should call שבת pleasure, or that you should bring pleasure into שבת, because the תענוג is revealed in the חכמה.","start_time_sec":79.65502392344507,"matched_text":"וקראת לשבת עונג, you should call שבת pleasure, or that you should bring pleasure into שבת, because the תענוג is revealed in the חכמה.","score_norm":0.964,"confidence":"HIGH","token_span":[264,288],"matched_content":16,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Nolad as Muktza on Yom Tov vs Shabbat","starting_phrase":"You know what the חומרא of יום טוב is over שבת? About נולד.","start_time_sec":196.38574162679427,"matched_text":"what the חומרא of יום טוב is over שבת? About נולד.","score_norm":0.971,"confidence":"HIGH","token_span":[640,651],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Smicha vs Bitul in Divine Experience","starting_phrase":"So there you have a big שמחה, because you have something that's very big.","start_time_sec":300.58,"matched_text":"there you have a big שמחה, because you have something that's very big.","score_norm":0.965,"confidence":"HIGH","token_span":[1006,1019],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Kiddush: Not a Command, But Appreciation","starting_phrase":"First of all, you know, you don't have to do קידוש. The מצוה דאורייתא is not to say קידוש, it's to enjoy things,","start_time_sec":377.06,"matched_text":"first of all, you know, you don't have to do קידוש. The the מצוה דאורייתא is not to say קידוש, it's to enjoy things,","score_norm":0.946,"confidence":"HIGH","token_span":[1280,1304],"matched_content":14,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Drawing Analogy: Chochma vs Bina Thinking","starting_phrase":"If you've ever read the book Drawing on the Right Side of the Brain, you ever read that book? It's a very good book.","start_time_sec":615.24,"matched_text":"you've ever read the book Drawing on the Right Side of the Brain, you ever read that book? It's a very good book.","score_norm":0.948,"confidence":"HIGH","token_span":[2032,2055],"matched_content":13,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Blotch Test: How Bina Reveals Personal Priorities","starting_phrase":"So it's kind of like the blotch test, that the חכמה really is just this uninterpreted blob that you're just seeing it as it is.","start_time_sec":724.66,"matched_text":"It's kind of like the blotch test, that the חכמה really is just this uninterpreted blob that you're just seeing","score_norm":0.892,"confidence":"HIGH","token_span":[2396,2416],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

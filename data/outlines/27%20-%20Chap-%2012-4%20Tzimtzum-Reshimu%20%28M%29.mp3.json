@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "27 - Chap- 12-4 Tzimtzum-Reshimu (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d9eaae96-b6b3-4d48-927e-658e3433dcbe",
+  "transcript": "transcripts/27%20-%20Chap-%2012-4%20Tzimtzum-Reshimu%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:16.799Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Teacher's hidden depth in short explanations","starting_phrase":"וכמו שאינו נעלם ליודע כל הפלפול גם","start_time_sec":3.52,"matched_text":"וכמו שאינו נעלם ליודע כל הפלפול","score_norm":1,"confidence":"HIGH","token_span":[0,6],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Soul entering the body must limit its potential","starting_phrase":"והאופן משל הב׳, the second main type of משל","start_time_sec":233.32388862217957,"matched_text":"והאופן משל הב׳, the second main type of משל.","score_norm":0.98,"confidence":"HIGH","token_span":[622,631],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Illustrations of the soul’s restraint (Rabbi’s ear story)","starting_phrase":"If a person, a person can sometimes, you know, if they really want to go out of the body","start_time_sec":416.7238886221796,"matched_text":"person, a person can sometimes, you know, if they really want to go out of the body","score_norm":0.913,"confidence":"HIGH","token_span":[1118,1135],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Soul’s connection to body: pain, pleasure, growth metaphor","starting_phrase":"But the soul automatically does that because it wants to come into the body","start_time_sec":537,"matched_text":"soul to come into the body,","score_norm":0.384,"confidence":"LOW","token_span":[1479,1485],"matched_content":4,"content_coverage":0.5,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

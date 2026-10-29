@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "28cc5936-fec8-47c2-b010-74d2edcece52",
+  "transcript": "transcripts/19%20-%20Chap-%202-1%20Yisroel%20Saba%20and%20Tvunah%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:05:28.281Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Recap and transition to emotions and action","starting_phrase":"Lights, camera, action. פרק ב׳. In פרק א׳, we explained what התבוננות is","start_time_sec":2.0800000000000005,"matched_text":"Lights, camera, action. פרק ב׳. In פרק א׳, we explained what התבוננות","score_norm":0.986,"confidence":"HIGH","token_span":[0,12],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Defining תבונה as spreading the light of בינה","starting_phrase":"וענין התבונה הוא בחינת התפשטות אור הבינה.","start_time_sec":89,"matched_text":"וענין התבונה הוא בחינת התפשטות אור הבינה.","score_norm":1,"confidence":"HIGH","token_span":[211,218],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"The man of תבונה and drawing deep waters","starting_phrase":"והוא הנקרא איש תבונה. And this is what is called a man of תבונה.","start_time_sec":189.6,"matched_text":"והוא הנקרא איש תבונה. And this is what is called a man of תבונה.","score_norm":0.943,"confidence":"HIGH","token_span":[442,456],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"When one lacks תבונה: understanding without teaching","starting_phrase":"מה שאין כן כשאינו איש תבונות, on the other hand, when somebody is not a man of תבונות,","start_time_sec":413.39,"matched_text":"שאין כן כשאינו איש תבונות, on the other hand, when somebody is not a man of תבונות,","score_norm":0.971,"confidence":"HIGH","token_span":[1003,1020],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"The gap between גמרא study and הלכה application","starting_phrase":"Learning גמרא and then learning הלכה are almost two opposite ways of learning,","start_time_sec":618.91,"matched_text":"Learning גמרא and then learning הלכה are almost two opposite ways of learning,","score_norm":0.967,"confidence":"HIGH","token_span":[1532,1545],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4}
+  ]
+}

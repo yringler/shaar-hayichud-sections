@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "07 - Chap- 24-3 Keser (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "45b09fb6-26c1-416c-85c0-0f478276aae4",
+  "transcript": "transcripts/07%20-%20Chap-%2024-3%20Keser%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:03:30.513Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding חסד וגבורה as Self‑Expression","starting_phrase":"Like we said about the חסד וגבורה that comes that בפועל ממש,","start_time_sec":10.44,"matched_text":"said about the חסד וגבורה that comes that בפועל ממש,","score_norm":0.969,"confidence":"HIGH","token_span":[18,28],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2}
+  ]
+}

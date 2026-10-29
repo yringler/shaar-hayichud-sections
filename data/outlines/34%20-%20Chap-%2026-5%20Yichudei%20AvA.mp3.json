@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "34 - Chap- 26-5 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "581afdf3-3493-47e0-9b16-9d0f49740fb4",
+  "transcript": "transcripts/34%20-%20Chap-%2026-5%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:41.008Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"When No Reason Can Be Explained","starting_phrase":"וכאשר אינו מוצא טעם בהסבר השגה, and when you do not find a reason that you can't explain it, ומכל מקום לא יוכל לומר בהיפך, but you still can't say the opposite.","start_time_sec":0,"matched_text":"וכאשר אינו מוצא טעם בהסבר השגה, and when you do not find a reason that you can't explain it, ומכל מקום לא יוכל לומר בהיפך, but you still can't say the opposite.","score_norm":0.974,"confidence":"HIGH","token_span":[0,32],"matched_content":23,"content_coverage":1,"longest_content_run_soft":23,"longest_content_run_strict":6},
+    {"title":"Argument Strategy: State Conclusion First","starting_phrase":"If you want to have a successful argument, you have to state your conclusion first.","start_time_sec":179.66,"matched_text":"want to have a successful argument, you have to state your conclusion first.","score_norm":0.967,"confidence":"HIGH","token_span":[519,532],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Legal Principle of Silence: שתיקה בתרין","starting_phrase":"Sometimes legally, yeah maybe you have a name for this in like Latin, a principle in הלכה that sometimes a person says a claim, he'll make money.","start_time_sec":307.48,"matched_text":"Sometimes legally, yeah maybe you have a name for this in like Latin, a principle in הלכה that sometimes a person says a claim, he'll make money.","score_norm":0.954,"confidence":"HIGH","token_span":[885,912],"matched_content":16,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Removing Reason to Access Pure Wisdom","starting_phrase":"פירוש העלאת ביטול כח מה דחכמה זה למקור המוציא כל כל השכלים שנקרא חכמה עילאה מקור now.","start_time_sec":385.03011683254,"matched_text":"פירוש העלאת ביטול כח מה דחכמה זה למקור המוציא כל כל השכלים שנקרא חכמה עילאה מקור","score_norm":0.991,"confidence":"HIGH","token_span":[1097,1113],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":9},
+    {"title":"Focus Over Reflection Except During אלול","starting_phrase":"So, you know, every now and then, you like אלול is a time when you're supposed to stop and make a חשבון הנפש, but the rest of the year, you're just supposed to mainly focus on doing, and not keep second-guessing yourself.","start_time_sec":745.28,"matched_text":"every now and then, you like אלול is a time when you're supposed to stop and take a make a חשבון הנפש, but the rest of the year, you're just supposed to mainly focus on doing, and not keep, you know, you're not supposed to keep second-guessing yourself","score_norm":0.903,"confidence":"HIGH","token_span":[2235,2283],"matched_content":20,"content_coverage":0.909,"longest_content_run_soft":19,"longest_content_run_strict":4}
+  ]
+}

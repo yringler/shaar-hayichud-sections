@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "95 - Stupid Questions.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "069eb024-a196-48c0-a309-c1b8ee74725d",
+  "transcript": "transcripts/95%20-%20Stupid%20Questions.mp3.json",
+  "fetchedAt": "2026-10-29T00:01:47.600Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Sign of a Good Student: Listening","starting_phrase":"Right. When it's absorbing, it doesn't spit out.","start_time_sec":3.300000000000001,"matched_text":"When it's absorbing, it doesn't spit out.","score_norm":0.986,"confidence":"HIGH","token_span":[1,8],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Stop Overthinking: Learn by Truly Listening","starting_phrase":"If you want to be a good student and you really want to understand properly, you have to stop trying to understand and let yourself listen","start_time_sec":71.46,"matched_text":"want to be a good student and you really want to understand properly, you have to stop trying to understand and let yourself listen,","score_norm":0.931,"confidence":"HIGH","token_span":[200,224],"matched_content":13,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Ask the Right Question: What’s the Core?","starting_phrase":"Your real question should be, \"What is going on here?\"","start_time_sec":163.16,"matched_text":"Your real question should be, \"What is going on here?\"","score_norm":0.963,"confidence":"HIGH","token_span":[512,522],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Teaching Without Training Wheels: True Mastery","starting_phrase":"Otherwise, it's like, you know, giving a person training wheels","start_time_sec":236.2,"matched_text":"Otherwise, it's like, you know, giving a person training wheels","score_norm":0.95,"confidence":"HIGH","token_span":[744,754],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3}
+  ]
+}

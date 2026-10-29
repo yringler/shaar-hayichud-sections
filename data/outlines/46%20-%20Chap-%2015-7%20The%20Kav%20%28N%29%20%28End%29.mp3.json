@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "46 - Chap- 15-7 The Kav (N) (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5ccc08c6-ca63-4992-b5a4-6ae988a4dab1",
+  "transcript": "transcripts/46%20-%20Chap-%2015-7%20The%20Kav%20%28N%29%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:55.122Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Chesed and Gevurah are the same essence","starting_phrase":"That's the whole thing we talked about in י'A.","start_time_sec":2.4400000000000004,"matched_text":"That's the whole thing we talked about","score_norm":0.971,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":0.833,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Eye of Infinity and the line of measure","starting_phrase":"וכן מעצם עין סוף דוקא בא כח הגבול והמדה,","start_time_sec":91.94,"matched_text":"וכן מעצם עין סוף דוקא בא כח הגבול והמדה,","score_norm":1,"confidence":"HIGH","token_span":[330,339],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Rabbi’s teaching as both kindness and strength","starting_phrase":"On the other hand, when the רבי, let's say, stay locks up his room","start_time_sec":312.28,"matched_text":"other hand, when the רבי, let's say, stay locks up his room","score_norm":0.994,"confidence":"HIGH","token_span":[997,1009],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":8},
+    {"title":"Equality of divine powers and infinite scope","starting_phrase":"In other words, that God can make Himself transcend everything infinitely and be above all definitions","start_time_sec":441.08,"matched_text":"other words, that God can make Himself transcend everything infinitely and be above all definitions","score_norm":0.982,"confidence":"HIGH","token_span":[1453,1468],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":7},
+    {"title":"Week versus Shabbat: differing divine revelations","starting_phrase":"Well, yeah, now what's the difference between the week and the שבת?","start_time_sec":560.68,"matched_text":"Well, yeah, now what's the difference between the week and the שבת?","score_norm":0.952,"confidence":"HIGH","token_span":[1836,1848],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Managers, systems, and the illusion of authority","starting_phrase":"And you know, well why is a manager any better?","start_time_sec":794.7481836874571,"matched_text":"well why is a manager any better?","score_norm":0.973,"confidence":"HIGH","token_span":[2754,2761],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "39 - Chap- 27-1 Oros and Keilim (M).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "14b5b2fd-05dc-4fa9-a01a-81aac1cb23bd",
+  "transcript": "transcripts/39%20-%20Chap-%2027-1%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:08:33.818Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Intro to Lights of אבא and אימא","starting_phrase":"והנה, and behold. אחר שנתבאר דרך פרט","start_time_sec":0,"matched_text":"והנה, and behold. אחר שנתבאר דרך פרט","score_norm":0.99,"confidence":"HIGH","token_span":[0,7],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Introducing ז״א: Israel and Jacob","starting_phrase":"Now, we ought to be moving right along","start_time_sec":68.72,"matched_text":"ought to be moving right along","score_norm":0.939,"confidence":"HIGH","token_span":[146,152],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1},
+    {"title":"Prerequisite: Intro to Lights and Vessels","starting_phrase":"אך תחילה יש להבין הקדמה בענין אורות","start_time_sec":150.96018677042798,"matched_text":"אך תחילה יש להבין הקדמה בענין אורות","score_norm":1,"confidence":"HIGH","token_span":[370,377],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Ten Sefirot Lights Without Essence","starting_phrase":"ומצד בחינת האורות דעשר ספירות","start_time_sec":218.16006225680934,"matched_text":"ומצד בחינת האורות דעשר ספירות","score_norm":1,"confidence":"HIGH","token_span":[520,525],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Defining Light (אור) and Vessel (כלי)","starting_phrase":"A working definition when we say אור?","start_time_sec":560.22,"matched_text":"working definition when we say אור?","score_norm":0.986,"confidence":"HIGH","token_span":[1539,1545],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Relationship of חכמה and בינה","starting_phrase":"Well, it's kind of a more general thing","start_time_sec":629.94,"matched_text":"it's really a more general thing","score_norm":0.94,"confidence":"HIGH","token_span":[1684,1690],"matched_content":4,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Inner and Outer Aspects of Vessels","starting_phrase":"Well, the כלי also has פנימיות and","start_time_sec":717.46,"matched_text":"כלי also has פנימיות","score_norm":1,"confidence":"HIGH","token_span":[1944,1948],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4}
+  ]
+}

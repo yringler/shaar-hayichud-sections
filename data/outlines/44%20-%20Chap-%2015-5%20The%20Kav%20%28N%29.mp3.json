@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "44 - Chap- 15-5 The Kav (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "011b4245-fe40-47b5-aa58-5273251c2d24",
+  "transcript": "transcripts/44%20-%20Chap-%2015-5%20The%20Kav%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:53:41.308Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Rashimo Limits the Light of the Bones","starting_phrase":"מצד בחינת הרשימו המגביל כל אור העצמות באופנים שונים, which those limitations are coming from the רשימו, because it's the גילוי of the אור אין סוף through the רשימו.","start_time_sec":0,"matched_text":"מצד בחינת הרשימו המגביל כל אור העצמות באופנים שונים, which those limitations are coming from the רשימו, because it's the גילוי of the אור אין סוף through the רשימו.","score_norm":0.978,"confidence":"HIGH","token_span":[0,29],"matched_content":22,"content_coverage":1,"longest_content_run_soft":22,"longest_content_run_strict":10},
+    {"title":"Unifying Addition and Subtraction","starting_phrase":"They, you know, they make this thing like arithmetic, there's addition and there's subtraction.","start_time_sec":99.26397510696306,"matched_text":"make this thing like arithmetic, there's addition and there's subtraction.","score_norm":0.969,"confidence":"HIGH","token_span":[365,375],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Teacher’s Rigid Rules and Control","starting_phrase":"He makes it like as if that's it, it's outside of my control.","start_time_sec":301.88247374562746,"matched_text":"makes it like as if that's it, it's outside of my control.","score_norm":0.929,"confidence":"HIGH","token_span":[1108,1120],"matched_content":6,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"When Teachers Break the Planned Lesson","starting_phrase":"And then sometimes he goes out of the class plan. And he just like he says, he takes them on a trip or something, like to NASA,","start_time_sec":438.50679113186015,"matched_text":"sometimes he goes out of the class plan. And he just like he says, he takes them on a trip or something, like to NASA,","score_norm":0.909,"confidence":"HIGH","token_span":[1609,1634],"matched_content":11,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Consistent Goal Behind Teacher’s Mood Shifts","starting_phrase":"And the second thing, is that you say, well, what happened? Yesterday he was real nice, and today he became mean.","start_time_sec":536.4072500972394,"matched_text":"second thing, is that you say, well, what happened? Yesterday he was real nice, and today he became","score_norm":0.957,"confidence":"HIGH","token_span":[1968,1986],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Architect Can Alter the Blueprint Anytime","starting_phrase":"In other words, the architect himself is taking the blueprint and building the house.","start_time_sec":651.760715674813,"matched_text":"other words, the architect himself is taking the blueprint and building the house.","score_norm":0.959,"confidence":"HIGH","token_span":[2454,2467],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

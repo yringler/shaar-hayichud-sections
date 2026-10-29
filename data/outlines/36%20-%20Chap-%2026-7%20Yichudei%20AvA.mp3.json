@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "36 - Chap- 26-7 Yichudei AvA.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "12512a81-df40-4459-ab9f-ca5e025db974",
+  "transcript": "transcripts/36%20-%20Chap-%2026-7%20Yichudei%20AvA.mp3.json",
+  "fetchedAt": "2026-10-29T00:07:57.172Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding הוי' אלקינו as פנימיות אבא","starting_phrase":"So that, that's the idea that הוי' אלקינו is the פנימיות אבא, which is not for a reason,","start_time_sec":0.3429125736738703,"matched_text":"that's the idea that הוי' אלקינו is the פנימיות אבא, which is not for a reason,","score_norm":0.942,"confidence":"HIGH","token_span":[2,18],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"The Role of תוספת מוחין in Expanding Mind","starting_phrase":"So that new זו\"ן comes כשבא لهم בחינת תוספת מוחין חדשים.","start_time_sec":95.12368860510807,"matched_text":"new זו\"ן comes כשבא להם בחינת תוספת מוחין חדשים.","score_norm":0.971,"confidence":"HIGH","token_span":[289,298],"matched_content":7,"content_coverage":0.7,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Tashuv and Messirat Nefesh Across High Holy Days","starting_phrase":"And that's the whole idea of ראש השנה and יום כיפור, and then סוכות, is that like the תשובה of ראש השנה","start_time_sec":179.92,"matched_text":"that's the whole idea of ראש השנה and יום כיפור, and then סוכות, is that like the תשובה of ראש השנה","score_norm":0.937,"confidence":"HIGH","token_span":[548,569],"matched_content":11,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Mitzvot Performed With vs Without Messirat Nefesh","starting_phrase":"So this is like the מסירות נפש of קריאת שמע, מה שאין כן בתורה ומצוות בלא מסירות נפש,","start_time_sec":287.18,"matched_text":"מסירות נפש of קריאת שמע, מה שאין כן בתורה ומצוות בלא מסירות נפש,","score_norm":0.987,"confidence":"HIGH","token_span":[892,905],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":7},
+    {"title":"Martyrs' העלאת מ״ן to פנימיות of אבא","starting_phrase":"מדה כנגד מדה. כמו שמבואר במקום אחר, כמו בענין עשרה הרוגי מלכות,","start_time_sec":406.5058251473477,"matched_text":"מדה כנגד מדה. כמו שמבואר במקום אחר, כמו בענין עשרה הרוגי מלכות,","score_norm":1,"confidence":"HIGH","token_span":[1276,1288],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":12},
+    {"title":"Analogies of Commitment in Teacher-Student Relationships","starting_phrase":"So it's like a teacher and student, or a husband and wife, or anything like that, when the you know,","start_time_sec":479.93000000000006,"matched_text":"It's like when any type of relationship, like a teacher and student, or a husband and wife, or anything like that, when","score_norm":0.843,"confidence":"HIGH","token_span":[1448,1470],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":1},
+    {"title":"Holocaust as Ultimate Example of העלאת מ״ן","starting_phrase":"And then there's like the Holocaust was like, in a way, even more, because it's not even there,","start_time_sec":645.21,"matched_text":"there's like the Holocaust was like, in a way, even more, because it's not even there,","score_norm":0.954,"confidence":"HIGH","token_span":[1902,1918],"matched_content":10,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8}
+  ]
+}

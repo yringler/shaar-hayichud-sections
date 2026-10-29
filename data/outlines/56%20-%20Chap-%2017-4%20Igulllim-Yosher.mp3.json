@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "56 - Chap- 17-4 Igulllim-Yosher.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "aa32a7f1-7fc5-47a8-832c-a996f47adc62",
+  "transcript": "transcripts/56%20-%20Chap-%2017-4%20Igulllim-Yosher.mp3.json",
+  "fetchedAt": "2026-10-28T23:55:32.245Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"General Desire and Its Composite Elements","starting_phrase":"שגם שכלול הרצון הזה מ-י׳, that even","start_time_sec":3.1599999999999993,"matched_text":"שגם שכלול הרצון הזה מ-י׳, that even","score_norm":0.961,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":0.833,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"The Bike Analogy: Want vs Reason","starting_phrase":"What does he want? He wants a bike.","start_time_sec":93.66,"matched_text":"What does he want? He wants a bike.","score_norm":0.954,"confidence":"HIGH","token_span":[229,237],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Excuses as Burdens and Their Pitfalls","starting_phrase":"But the problem is as soon as you,","start_time_sec":233.85,"matched_text":"problem is as soon","score_norm":0.938,"confidence":"HIGH","token_span":[670,674],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"From Wisdom (חכמה) to Understanding (בינה)","starting_phrase":"Really that really that is going from חכמה to בינה","start_time_sec":320.25,"matched_text":"going from חכמה to בינה,","score_norm":0.981,"confidence":"HIGH","token_span":[964,969],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Desire Bias Toward חסד and Its Effects","starting_phrase":"So let's say like you have a רצון towards חסד","start_time_sec":408.63,"matched_text":"let's say like you have a רצון towards חסד,","score_norm":0.962,"confidence":"HIGH","token_span":[1194,1203],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Final Action (סוף מעשה) – The Flimsy Circle","starting_phrase":"The סוף מעשה שהוא עיגול האחרון, which is the last thing","start_time_sec":585.6700000000001,"matched_text":"סוף מעשה שהוא עיגול האחרון, which is the last thing,","score_norm":0.97,"confidence":"HIGH","token_span":[1683,1693],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Designing a House: From Vision to Details","starting_phrase":"So it's the innermost thing. It's built on everything else.","start_time_sec":884.4544781260765,"matched_text":"it's the innermost thing. It's built on everything else.","score_norm":0.978,"confidence":"HIGH","token_span":[2662,2671],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

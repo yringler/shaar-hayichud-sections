@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "31 - Chap- 13-2 Tzimtzum-Reshimu (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d1282cc1-9bcb-4ecc-8baf-c4b98d83ede7",
+  "transcript": "transcripts/31%20-%20Chap-%2013-2%20Tzimtzum-Reshimu%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-28T23:51:59.669Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"General מקיף הכללי vs internal מקיף","starting_phrase":"כמקיף הכללי דהקו שמקיף אבי\"ע בשווה וכו', unlike the","start_time_sec":1.8799999999999977,"matched_text":"כמקיף הכללי דהקו שמקיף אבי\"ע בשווה וכו', unlike","score_norm":0.981,"confidence":"HIGH","token_span":[0,8],"matched_content":7,"content_coverage":0.778,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"God's enduring name and its revelation","starting_phrase":"ולזה אנו אומרים, therefore we say, הוא קיים ושמו קיים,","start_time_sec":73.96,"matched_text":"ולזה אנו אומרים, therefore we say, הוא קיים ושמו קיים,","score_norm":0.993,"confidence":"HIGH","token_span":[234,244],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Teacher‑student analogy for divine presence","starting_phrase":"So the basic משל of the the this this was the נמשל for the teacher and the student.","start_time_sec":149.96,"matched_text":"basic משל of the the this this was the נמשל for the teacher and the student.","score_norm":0.847,"confidence":"HIGH","token_span":[480,496],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Cow picture story: seeing hidden God","starting_phrase":"He says, \"First of all, you're holding it the wrong way.\" And he turns it for you.","start_time_sec":225.12,"matched_text":"says, \"First of all, you're holding it the wrong way.\" And he turns","score_norm":0.956,"confidence":"HIGH","token_span":[783,796],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Second נמשל: soul, body and no real change","starting_phrase":"Now we're going to say the נמשל for the second משל of the חיות and the body.","start_time_sec":289.52,"matched_text":"we're going to say the נמשל for the second משל of the חיות and the body.","score_norm":0.925,"confidence":"HIGH","token_span":[1054,1070],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"רשימו: limiting power within infinite light","starting_phrase":"So now we're going to say the נמשל for the רשימו.","start_time_sec":499.54,"matched_text":"we're going to say the נמשל for the רשימו.","score_norm":0.94,"confidence":"HIGH","token_span":[1696,1705],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2}
+  ]
+}

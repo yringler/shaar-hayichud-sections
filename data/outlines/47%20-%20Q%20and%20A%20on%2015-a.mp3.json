@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "47 - Q and A on 15-a.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0270961b-3a27-4beb-b315-768cd389f028",
+  "transcript": "transcripts/47%20-%20Q%20and%20A%20on%2015-a.mp3.json",
+  "fetchedAt": "2026-10-28T23:54:00.699Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Opening question about today’s topic","starting_phrase":"Right, so the question is, the great question for today.","start_time_sec":2.64,"matched_text":"question is, the great question for today.","score_norm":0.947,"confidence":"HIGH","token_span":[3,10],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Finding the Divine in Everyday Coffee","starting_phrase":"So I want to see, and this is what's called השגחה פרטית, is when you see the things in your coffee","start_time_sec":113.96,"matched_text":"want to see, and this is what's called השגחה פרטית, is when you see the things in your coffee,","score_norm":0.945,"confidence":"HIGH","token_span":[249,268],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Rashimo as God’s hidden‑and‑revealed power","starting_phrase":"So before the צמצום, you see the whole עצמות in whatever He chooses to be","start_time_sec":230.84155763239878,"matched_text":"before the צמצום, you see the whole עצמות in whatever He chooses","score_norm":0.945,"confidence":"HIGH","token_span":[548,560],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Five parables explaining the Rashimo","starting_phrase":"Also another thing is that when he goes through the משלים for the רשימו, he goes through five משלים","start_time_sec":299.88,"matched_text":"Also another thing is that when he goes through the משלים for the רשימו, he goes through five משלים.","score_norm":0.956,"confidence":"HIGH","token_span":[734,753],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"Teacher‑student analogy and memory letters","starting_phrase":"The teacher teaching a student? That's a teacher's ability to make the information into like אותיות","start_time_sec":412.22,"matched_text":"teacher teaching a student? That's a teacher's ability to make the information into like אותיות,","score_norm":0.964,"confidence":"HIGH","token_span":[1041,1056],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":2}
+  ]
+}
