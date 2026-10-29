@@ -287,10 +287,19 @@ async function check(name, fn) {
       assert.deepEqual(await discussing(page), ['gbyeqivs']);
       const border = await page.evaluate(() => getComputedStyle(document.getElementById('gbyeqivs').closest('p, .content')).borderRightWidth);
       assert.equal(border, '3px'); // RTL: inline-start is the right side
-      // Zero-length lines at the same instant (collapsed Sofer timestamps) are current together.
-      const z = refOf('sykhwqgy', MARKEL_10);
-      await seek(page, z.startSeconds + 1);
-      assert.deepEqual((await discussing(page)).sort(), ['bgpd7w43', 'sykhwqgy']);
+      // Lines that start at the same instant are current together. Re-timing removed the
+      // collapsed Sofer timestamps that used to cause this in Markel 002, so only check it
+      // when the data still has such a pair (model.ts' unit tests cover it either way).
+      const starts = new Map();
+      for (const l of chapter10.lines) {
+        const r = l.refs.find((x) => x.lecture === MARKEL_10);
+        if (r) starts.set(r.startSeconds, [...(starts.get(r.startSeconds) ?? []), l.lineId]);
+      }
+      const same = [...starts.entries()].find(([, ids]) => ids.length > 1);
+      if (same) {
+        await seek(page, same[0] + 1);
+        assert.deepEqual((await discussing(page)).sort(), [...same[1]].sort());
+      }
       await page.screenshot({ path: path.join(shots, 'chapter10-desktop-follow-along.png') });
       // Far past the last line: nothing.
       await seek(page, 2300);
