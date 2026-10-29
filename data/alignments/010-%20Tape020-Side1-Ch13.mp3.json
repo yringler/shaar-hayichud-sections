@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "010- Tape020-Side1-Ch13.mp3",
+  "chapter": "chapter_13",
+  "transcript": "transcripts/010-%20Tape020-Side1-Ch13.mp3.json",
+  "transcriptionId": "df2152d2-1104-49fb-a02e-7dc5e29b59bb",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 3985,
+    "hebrewWords": 969,
+    "matchedWords": 223,
+    "chapterLines": 79,
+    "alignedLines": 21,
+    "firstLineIndex": 58,
+    "lastLineIndex": 78,
+    "meanConfidence": 0.871
+  },
+  "segments": [
+    {"startSeconds":69.4,"endSeconds":83.2,"chapter":"chapter_13","lineId":"vlbl5sux","confidence":0.78,"matchedWords":12,"lineWords":15,"firstWord":148,"lastWord":171},
+    {"startSeconds":84.64,"endSeconds":85.54,"chapter":"chapter_13","lineId":"c2bedf4m","confidence":0.573,"matchedWords":2,"lineWords":4,"firstWord":173,"lastWord":174},
+    {"startSeconds":89.32,"endSeconds":100.7,"chapter":"chapter_13","lineId":"bk7hj7cl","confidence":0.964,"matchedWords":11,"lineWords":12,"firstWord":176,"lastWord":196},
+    {"startSeconds":107.22,"endSeconds":116.68,"chapter":"chapter_13","lineId":"ez5rbvcf","confidence":0.84,"matchedWords":7,"lineWords":9,"firstWord":213,"lastWord":220},
+    {"startSeconds":136.98,"endSeconds":144.067,"chapter":"chapter_13","lineId":"2nxtwa4u","confidence":0.974,"matchedWords":17,"lineWords":17,"firstWord":259,"lastWord":279},
+    {"startSeconds":144.067,"endSeconds":181.28,"chapter":"chapter_13","lineId":"vqild3a4","confidence":0.867,"matchedWords":13,"lineWords":15,"firstWord":280,"lastWord":348},
+    {"startSeconds":185.658,"endSeconds":187.492,"chapter":"chapter_13","lineId":"mj2g6vyi","confidence":0.825,"matchedWords":7,"lineWords":8,"firstWord":359,"lastWord":366},
+    {"startSeconds":367.82,"endSeconds":371.029,"chapter":"chapter_13","lineId":"dlx4f3m3","confidence":0.949,"matchedWords":7,"lineWords":8,"firstWord":777,"lastWord":783},
+    {"startSeconds":371.029,"endSeconds":399.09,"chapter":"chapter_13","lineId":"mobgd6o3","confidence":0.813,"matchedWords":12,"lineWords":15,"firstWord":784,"lastWord":831},
+    {"startSeconds":400.88,"endSeconds":429.185,"chapter":"chapter_13","lineId":"5ocgxvxh","confidence":0.832,"matchedWords":16,"lineWords":19,"firstWord":837,"lastWord":888},
+    {"startSeconds":429.643,"endSeconds":431.935,"chapter":"chapter_13","lineId":"fbas6h7h","confidence":1,"matchedWords":5,"lineWords":5,"firstWord":890,"lastWord":894},
+    {"startSeconds":431.935,"endSeconds":436.977,"chapter":"chapter_13","lineId":"gnxrytoa","confidence":0.889,"matchedWords":11,"lineWords":13,"firstWord":895,"lastWord":905},
+    {"startSeconds":439.538,"endSeconds":445.039,"chapter":"chapter_13","lineId":"n3d6pcbr","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":918,"lastWord":929},
+    {"startSeconds":445.039,"endSeconds":460.129,"chapter":"chapter_13","lineId":"42dv6emi","confidence":0.898,"matchedWords":11,"lineWords":12,"firstWord":930,"lastWord":950},
+    {"startSeconds":588.54,"endSeconds":591.29,"chapter":"chapter_13","lineId":"sg2equhg","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":1207,"lastWord":1212},
+    {"startSeconds":745.857,"endSeconds":753.672,"chapter":"chapter_13","lineId":"uzj46dhl","confidence":0.818,"matchedWords":9,"lineWords":13,"firstWord":1491,"lastWord":1520},
+    {"startSeconds":753.672,"endSeconds":758.714,"chapter":"chapter_13","lineId":"xm7lgjwp","confidence":0.943,"matchedWords":11,"lineWords":11,"firstWord":1521,"lastWord":1531},
+    {"startSeconds":758.714,"endSeconds":762.381,"chapter":"chapter_13","lineId":"wmocy6b4","confidence":0.667,"matchedWords":6,"lineWords":9,"firstWord":1532,"lastWord":1539},
+    {"startSeconds":762.381,"endSeconds":792.275,"chapter":"chapter_13","lineId":"vgvq6sx4","confidence":0.937,"matchedWords":18,"lineWords":20,"firstWord":1540,"lastWord":1587},
+    {"startSeconds":792.734,"endSeconds":802.65,"chapter":"chapter_13","lineId":"y2ny2icn","confidence":0.989,"matchedWords":9,"lineWords":9,"firstWord":1589,"lastWord":1609},
+    {"startSeconds":806.818,"endSeconds":817,"chapter":"chapter_13","lineId":"lce6vxh5","confidence":0.729,"matchedWords":18,"lineWords":24,"firstWord":1621,"lastWord":1638}
+  ]
+}

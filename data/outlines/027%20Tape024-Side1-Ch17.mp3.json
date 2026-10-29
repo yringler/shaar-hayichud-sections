@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "027 Tape024-Side1-Ch17.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "abcfe649-cb07-4692-bf34-204995607407",
+  "transcript": "transcripts/027%20Tape024-Side1-Ch17.mp3.json",
+  "fetchedAt": "2026-10-29T02:35:10.510Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Supreme Act and Thought Connection","starting_phrase":"עד דסוף מעשה הוא עליון במחשבה, דהיינו כוח המעשה בפועל ממש.","start_time_sec":0,"matched_text":"עד דסוף מעשה הוא עליון במחשבה, דהיינו כוח המעשה בפועל ממש.","score_norm":1,"confidence":"HIGH","token_span":[0,11],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":11},
+    {"title":"Limitation Concerning the Infinite","starting_phrase":"It's הגבלה only in regards to the אין סוף.","start_time_sec":75.47760273972602,"matched_text":"It's הגבלה only in regards to the אין סוף.","score_norm":0.961,"confidence":"HIGH","token_span":[211,220],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Ten Sefirot of Atilit and Their Manifestation","starting_phrase":"עד עשר ספירות דאצילות ובי\"ע, till you have the משל of how","start_time_sec":155.81924657534293,"matched_text":"עד עשר ספירות דאצילות ובי\\\"ע, till you have the משל of how","score_norm":0.954,"confidence":"HIGH","token_span":[573,585],"matched_content":8,"content_coverage":0.8,"longest_content_run_soft":8,"longest_content_run_strict":4}
+  ]
+}
