@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "02 - Chap- 23-2 Keser (M) .mp3",
+  "chapter": "chapter_23",
+  "transcript": "transcripts/02%20-%20Chap-%2023-2%20Keser%20%28M%29%20.mp3.json",
+  "transcriptionId": "95b97d08-78d1-4449-b2cf-b0ce22cd9cb3",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1525,
+    "hebrewWords": 183,
+    "matchedWords": 124,
+    "chapterLines": 53,
+    "alignedLines": 8,
+    "firstLineIndex": 14,
+    "lastLineIndex": 21,
+    "meanConfidence": 0.957
+  },
+  "segments": [
+    {"startSeconds":110.6,"endSeconds":191.148,"chapter":"chapter_23","lineId":"2tdxmyjs","confidence":0.99,"matchedWords":22,"lineWords":23,"firstWord":288,"lastWord":488},
+    {"startSeconds":214.38,"endSeconds":233.08,"chapter":"chapter_23","lineId":"zzxn3nke","confidence":0.954,"matchedWords":20,"lineWords":20,"firstWord":553,"lastWord":593},
+    {"startSeconds":240.14,"endSeconds":338.068,"chapter":"chapter_23","lineId":"dojkeusq","confidence":0.935,"matchedWords":16,"lineWords":17,"firstWord":609,"lastWord":860},
+    {"startSeconds":350.22,"endSeconds":369.72,"chapter":"chapter_23","lineId":"g7xwelpy","confidence":0.982,"matchedWords":11,"lineWords":11,"firstWord":894,"lastWord":931},
+    {"startSeconds":381.72,"endSeconds":414.5,"chapter":"chapter_23","lineId":"feu3adj3","confidence":0.925,"matchedWords":23,"lineWords":24,"firstWord":956,"lastWord":1018},
+    {"startSeconds":426.62,"endSeconds":439.44,"chapter":"chapter_23","lineId":"ijvj72et","confidence":0.983,"matchedWords":12,"lineWords":12,"firstWord":1047,"lastWord":1086},
+    {"startSeconds":489.22,"endSeconds":492.84,"chapter":"chapter_23","lineId":"5w3av22f","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":1207,"lastWord":1212},
+    {"startSeconds":503.54,"endSeconds":514.88,"chapter":"chapter_23","lineId":"jt2nr2ce","confidence":0.89,"matchedWords":14,"lineWords":16,"firstWord":1235,"lastWord":1249}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "73 - Chap- 32-3 Hamshacha from AvA to ZA .mp3",
+  "chapter": "chapter_32",
+  "transcript": "transcripts/73%20-%20Chap-%2032-3%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "transcriptionId": "195d1cc2-3ec1-46cd-a05c-2cfa3e279676",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1428,
+    "hebrewWords": 203,
+    "matchedWords": 126,
+    "chapterLines": 50,
+    "alignedLines": 9,
+    "firstLineIndex": 18,
+    "lastLineIndex": 26,
+    "meanConfidence": 0.954
+  },
+  "segments": [
+    {"startSeconds":6.82,"endSeconds":13.4,"chapter":"chapter_32","lineId":"crludxqw","confidence":0.747,"matchedWords":7,"lineWords":11,"firstWord":20,"lastWord":39},
+    {"startSeconds":16.64,"endSeconds":24.2,"chapter":"chapter_32","lineId":"3v7ru4aa","confidence":0.979,"matchedWords":19,"lineWords":19,"firstWord":48,"lastWord":66},
+    {"startSeconds":47.3,"endSeconds":82.32,"chapter":"chapter_32","lineId":"y2msm3ck","confidence":1,"matchedWords":18,"lineWords":18,"firstWord":130,"lastWord":227},
+    {"startSeconds":101.96,"endSeconds":124.14,"chapter":"chapter_32","lineId":"7esp6nxi","confidence":1,"matchedWords":17,"lineWords":18,"firstWord":277,"lastWord":333},
+    {"startSeconds":192.574,"endSeconds":214.157,"chapter":"chapter_32","lineId":"52uhjn3q","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":525,"lastWord":557},
+    {"startSeconds":349.923,"endSeconds":365.108,"chapter":"chapter_32","lineId":"pufsra2l","confidence":0.917,"matchedWords":11,"lineWords":12,"firstWord":969,"lastWord":1002},
+    {"startSeconds":406.56,"endSeconds":425.631,"chapter":"chapter_32","lineId":"2yzfzfhj","confidence":0.941,"matchedWords":16,"lineWords":18,"firstWord":1101,"lastWord":1142},
+    {"startSeconds":428.534,"endSeconds":441.543,"chapter":"chapter_32","lineId":"gyimo7hy","confidence":1,"matchedWords":16,"lineWords":17,"firstWord":1150,"lastWord":1184},
+    {"startSeconds":443.1,"endSeconds":465.4,"chapter":"chapter_32","lineId":"jcjvkg3w","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":1190,"lastWord":1240}
+  ]
+}

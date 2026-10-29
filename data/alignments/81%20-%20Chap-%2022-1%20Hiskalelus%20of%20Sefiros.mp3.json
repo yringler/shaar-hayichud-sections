@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "81 - Chap- 22-1 Hiskalelus of Sefiros.mp3",
+  "chapter": "chapter_22",
+  "transcript": "transcripts/81%20-%20Chap-%2022-1%20Hiskalelus%20of%20Sefiros.mp3.json",
+  "transcriptionId": "7e334b52-93b1-4b85-97c2-8ecc180d27f1",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2187,
+    "hebrewWords": 352,
+    "matchedWords": 125,
+    "chapterLines": 77,
+    "alignedLines": 13,
+    "firstLineIndex": 0,
+    "lastLineIndex": 12,
+    "meanConfidence": 0.964
+  },
+  "segments": [
+    {"startSeconds":0,"endSeconds":43.98,"chapter":"chapter_22","lineId":"3uojx74v","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":1,"lastWord":78},
+    {"startSeconds":77.8,"endSeconds":81.52,"chapter":"chapter_22","lineId":"cmbogxge","confidence":0.843,"matchedWords":6,"lineWords":11,"firstWord":148,"lastWord":155},
+    {"startSeconds":91.082,"endSeconds":100.28,"chapter":"chapter_22","lineId":"cxmpfuge","confidence":0.975,"matchedWords":11,"lineWords":14,"firstWord":181,"lastWord":192},
+    {"startSeconds":224.77,"endSeconds":226.3,"chapter":"chapter_22","lineId":"cudi52pe","confidence":1,"matchedWords":4,"lineWords":5,"firstWord":539,"lastWord":542},
+    {"startSeconds":236.07,"endSeconds":249.71,"chapter":"chapter_22","lineId":"3nupfqb4","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":552,"lastWord":580},
+    {"startSeconds":303.872,"endSeconds":306.932,"chapter":"chapter_22","lineId":"srjwpy7y","confidence":0.987,"matchedWords":8,"lineWords":9,"firstWord":734,"lastWord":741},
+    {"startSeconds":320.01,"endSeconds":331.774,"chapter":"chapter_22","lineId":"oqnbp3mv","confidence":0.983,"matchedWords":16,"lineWords":16,"firstWord":774,"lastWord":798},
+    {"startSeconds":379.755,"endSeconds":525.264,"chapter":"chapter_22","lineId":"cq636izg","confidence":0.985,"matchedWords":17,"lineWords":17,"firstWord":917,"lastWord":1319},
+    {"startSeconds":533.11,"endSeconds":538.463,"chapter":"chapter_22","lineId":"wwcutg43","confidence":1,"matchedWords":14,"lineWords":14,"firstWord":1338,"lastWord":1351},
+    {"startSeconds":702.79,"endSeconds":721.43,"chapter":"chapter_22","lineId":"mooyjqo6","confidence":0.975,"matchedWords":8,"lineWords":11,"firstWord":1828,"lastWord":1871},
+    {"startSeconds":722.59,"endSeconds":726.19,"chapter":"chapter_22","lineId":"jx6swtba","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":1873,"lastWord":1879},
+    {"startSeconds":831.51,"endSeconds":836.25,"chapter":"chapter_22","lineId":"bujdsbou","confidence":0.96,"matchedWords":5,"lineWords":5,"firstWord":2149,"lastWord":2160},
+    {"startSeconds":836.25,"endSeconds":840.77,"chapter":"chapter_22","lineId":"snzxmaxg","confidence":0.818,"matchedWords":9,"lineWords":11,"firstWord":2161,"lastWord":2177}
+  ]
+}

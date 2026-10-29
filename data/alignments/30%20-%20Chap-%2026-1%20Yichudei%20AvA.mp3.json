@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "30 - Chap- 26-1 Yichudei AvA.mp3",
+  "chapter": "chapter_26",
+  "transcript": "transcripts/30%20-%20Chap-%2026-1%20Yichudei%20AvA.mp3.json",
+  "transcriptionId": "d9724d63-35fd-4276-85cc-efb426e8a3a6",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2401,
+    "hebrewWords": 136,
+    "matchedWords": 5,
+    "chapterLines": 59,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

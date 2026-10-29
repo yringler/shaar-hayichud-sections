@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "29 - Chap- 12-6 Tzimtzum-Reshimu (M) (End).mp3",
+  "chapter": "chapter_12",
+  "transcript": "transcripts/29%20-%20Chap-%2012-6%20Tzimtzum-Reshimu%20%28M%29%20%28End%29.mp3.json",
+  "transcriptionId": "d9ccb7af-e65f-41af-aff7-ce0b093dd960",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2885,
+    "hebrewWords": 283,
+    "matchedWords": 170,
+    "chapterLines": 63,
+    "alignedLines": 19,
+    "firstLineIndex": 43,
+    "lastLineIndex": 62,
+    "meanConfidence": 0.88
+  },
+  "segments": [
+    {"startSeconds":57.54,"endSeconds":116.835,"chapter":"chapter_12","lineId":"l7ufifop","confidence":1,"matchedWords":15,"lineWords":15,"firstWord":189,"lastWord":364},
+    {"startSeconds":123.16,"endSeconds":135.02,"chapter":"chapter_12","lineId":"2srov5qn","confidence":0.774,"matchedWords":5,"lineWords":6,"firstWord":380,"lastWord":406},
+    {"startSeconds":138.66,"endSeconds":140.66,"chapter":"chapter_12","lineId":"z7aphlsy","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":419,"lastWord":422},
+    {"startSeconds":144.32,"endSeconds":151.56,"chapter":"chapter_12","lineId":"b5t3bu35","confidence":0.825,"matchedWords":12,"lineWords":14,"firstWord":428,"lastWord":441},
+    {"startSeconds":296.54,"endSeconds":298.375,"chapter":"chapter_12","lineId":"x77uv56y","confidence":0.633,"matchedWords":4,"lineWords":6,"firstWord":943,"lastWord":948},
+    {"startSeconds":312.96,"endSeconds":325.598,"chapter":"chapter_12","lineId":"kykrse2e","confidence":0.843,"matchedWords":12,"lineWords":15,"firstWord":1025,"lastWord":1063},
+    {"startSeconds":360.52,"endSeconds":363.578,"chapter":"chapter_12","lineId":"llihtfa2","confidence":0.9,"matchedWords":9,"lineWords":10,"firstWord":1186,"lastWord":1195},
+    {"startSeconds":375,"endSeconds":377.141,"chapter":"chapter_12","lineId":"znz2dzsf","confidence":0.846,"matchedWords":7,"lineWords":8,"firstWord":1225,"lastWord":1231},
+    {"startSeconds":387.752,"endSeconds":394.461,"chapter":"chapter_12","lineId":"id5tlzqz","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":1263,"lastWord":1282},
+    {"startSeconds":402.346,"endSeconds":407.409,"chapter":"chapter_12","lineId":"n2hkrbcx","confidence":0.848,"matchedWords":9,"lineWords":10,"firstWord":1301,"lastWord":1317},
+    {"startSeconds":448.26,"endSeconds":451.013,"chapter":"chapter_12","lineId":"3r6jms5a","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":1466,"lastWord":1474},
+    {"startSeconds":478.42,"endSeconds":480.867,"chapter":"chapter_12","lineId":"6pkkmhep","confidence":0.987,"matchedWords":8,"lineWords":8,"firstWord":1579,"lastWord":1586},
+    {"startSeconds":488.82,"endSeconds":491.878,"chapter":"chapter_12","lineId":"y4zt5jwo","confidence":0.95,"matchedWords":9,"lineWords":9,"firstWord":1607,"lastWord":1616},
+    {"startSeconds":491.878,"endSeconds":493.102,"chapter":"chapter_12","lineId":"xll63hhy","confidence":0.603,"matchedWords":4,"lineWords":6,"firstWord":1617,"lastWord":1620},
+    {"startSeconds":537.006,"endSeconds":547.149,"chapter":"chapter_12","lineId":"i525ij26","confidence":0.909,"matchedWords":10,"lineWords":11,"firstWord":1790,"lastWord":1825},
+    {"startSeconds":551.54,"endSeconds":553.987,"chapter":"chapter_12","lineId":"y76ytjfn","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1837,"lastWord":1844},
+    {"startSeconds":591.68,"endSeconds":625.501,"chapter":"chapter_12","lineId":"wui7aiiw","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":1945,"lastWord":2020},
+    {"startSeconds":636.3,"endSeconds":671.96,"chapter":"chapter_12","lineId":"jyvzj7ee","confidence":0.843,"matchedWords":12,"lineWords":14,"firstWord":2065,"lastWord":2184},
+    {"startSeconds":737.646,"endSeconds":747.88,"chapter":"chapter_12","lineId":"ufh7imeh","confidence":0.76,"matchedWords":8,"lineWords":11,"firstWord":2392,"lastWord":2415}
+  ]
+}

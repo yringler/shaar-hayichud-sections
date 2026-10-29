@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "46 - Chap- 27-8 Oros and Keilim (M) (End).mp3",
+  "chapter": "chapter_27",
+  "transcript": "transcripts/46%20-%20Chap-%2027-8%20Oros%20and%20Keilim%20%28M%29%20%28End%29.mp3.json",
+  "transcriptionId": "7d3fb1c6-d517-4f09-a5ca-b410448a8fba",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1517,
+    "hebrewWords": 134,
+    "matchedWords": 108,
+    "chapterLines": 50,
+    "alignedLines": 7,
+    "firstLineIndex": 43,
+    "lastLineIndex": 49,
+    "meanConfidence": 0.956
+  },
+  "segments": [
+    {"startSeconds":0,"endSeconds":2.879,"chapter":"chapter_27","lineId":"iof42cce","confidence":0.938,"matchedWords":9,"lineWords":9,"firstWord":0,"lastWord":8},
+    {"startSeconds":43.26,"endSeconds":61.98,"chapter":"chapter_27","lineId":"lw2o3rrv","confidence":1,"matchedWords":14,"lineWords":15,"firstWord":108,"lastWord":152},
+    {"startSeconds":87.06,"endSeconds":103.36,"chapter":"chapter_27","lineId":"q2gip7sw","confidence":0.976,"matchedWords":19,"lineWords":19,"firstWord":219,"lastWord":254},
+    {"startSeconds":141.06,"endSeconds":147.54,"chapter":"chapter_27","lineId":"67smvmoa","confidence":0.975,"matchedWords":13,"lineWords":13,"firstWord":350,"lastWord":365},
+    {"startSeconds":164.5,"endSeconds":331.279,"chapter":"chapter_27","lineId":"laotecpy","confidence":0.843,"matchedWords":32,"lineWords":37,"firstWord":402,"lastWord":893},
+    {"startSeconds":351.34,"endSeconds":353.5,"chapter":"chapter_27","lineId":"bhlwgjd6","confidence":1,"matchedWords":6,"lineWords":7,"firstWord":946,"lastWord":951},
+    {"startSeconds":383.42,"endSeconds":388.819,"chapter":"chapter_27","lineId":"36fnbwzr","confidence":0.96,"matchedWords":15,"lineWords":16,"firstWord":1016,"lastWord":1030}
+  ]
+}

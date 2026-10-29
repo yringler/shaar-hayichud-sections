@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "74 - Chap- 32-4 Hamshacha from AvA to ZA .mp3",
+  "chapter": "chapter_32",
+  "transcript": "transcripts/74%20-%20Chap-%2032-4%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "transcriptionId": "960f08cb-79a8-4b34-bf8a-6d69f2b9c9a6",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2179,
+    "hebrewWords": 200,
+    "matchedWords": 5,
+    "chapterLines": 50,
+    "alignedLines": 1,
+    "firstLineIndex": 16,
+    "lastLineIndex": 16,
+    "meanConfidence": 0.529
+  },
+  "segments": [
+    {"startSeconds":273.28,"endSeconds":274.94,"chapter":"chapter_32","lineId":"k625oeky","confidence":0.529,"matchedWords":4,"lineWords":8,"firstWord":816,"lastWord":819}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "69 - Chap- 31-3 Hiskalelus and Tikun in the Keilim.mp3",
+  "chapter": "chapter_31",
+  "transcript": "transcripts/69%20-%20Chap-%2031-3%20Hiskalelus%20and%20Tikun%20in%20the%20Keilim.mp3.json",
+  "transcriptionId": "33e20add-9c09-40d0-89fc-b5c6b62c4117",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1972,
+    "hebrewWords": 359,
+    "matchedWords": 185,
+    "chapterLines": 54,
+    "alignedLines": 15,
+    "firstLineIndex": 31,
+    "lastLineIndex": 45,
+    "meanConfidence": 0.933
+  },
+  "segments": [
+    {"startSeconds":3.78,"endSeconds":9.2,"chapter":"chapter_31","lineId":"uxyqehsy","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":0,"lastWord":7},
+    {"startSeconds":29.38,"endSeconds":44.18,"chapter":"chapter_31","lineId":"xfiecvud","confidence":0.994,"matchedWords":16,"lineWords":16,"firstWord":62,"lastWord":93},
+    {"startSeconds":51.7,"endSeconds":81.14,"chapter":"chapter_31","lineId":"igylfepw","confidence":1,"matchedWords":15,"lineWords":16,"firstWord":113,"lastWord":188},
+    {"startSeconds":91.26,"endSeconds":210.526,"chapter":"chapter_31","lineId":"lhwfxx2t","confidence":1,"matchedWords":27,"lineWords":27,"firstWord":216,"lastWord":549},
+    {"startSeconds":210.526,"endSeconds":218.52,"chapter":"chapter_31","lineId":"yxbutx67","confidence":1,"matchedWords":7,"lineWords":8,"firstWord":550,"lastWord":564},
+    {"startSeconds":239.04,"endSeconds":257.46,"chapter":"chapter_31","lineId":"cha7y3vh","confidence":0.9,"matchedWords":10,"lineWords":11,"firstWord":616,"lastWord":654},
+    {"startSeconds":259.18,"endSeconds":263.96,"chapter":"chapter_31","lineId":"zpwsirqt","confidence":0.983,"matchedWords":6,"lineWords":6,"firstWord":663,"lastWord":669},
+    {"startSeconds":274.38,"endSeconds":296.02,"chapter":"chapter_31","lineId":"lerlgpa5","confidence":1,"matchedWords":16,"lineWords":16,"firstWord":704,"lastWord":767},
+    {"startSeconds":321.04,"endSeconds":323.72,"chapter":"chapter_31","lineId":"23cgutdu","confidence":0.8,"matchedWords":4,"lineWords":6,"firstWord":835,"lastWord":838},
+    {"startSeconds":344.48,"endSeconds":382.84,"chapter":"chapter_31","lineId":"vl5i7vri","confidence":0.979,"matchedWords":27,"lineWords":28,"firstWord":897,"lastWord":979},
+    {"startSeconds":390.7,"endSeconds":398.56,"chapter":"chapter_31","lineId":"iin6rpf5","confidence":0.944,"matchedWords":7,"lineWords":7,"firstWord":991,"lastWord":1002},
+    {"startSeconds":409.032,"endSeconds":485.96,"chapter":"chapter_31","lineId":"xooeawcd","confidence":0.891,"matchedWords":10,"lineWords":12,"firstWord":1032,"lastWord":1250},
+    {"startSeconds":488.472,"endSeconds":491.92,"chapter":"chapter_31","lineId":"gxl4uhtn","confidence":0.965,"matchedWords":10,"lineWords":10,"firstWord":1259,"lastWord":1268},
+    {"startSeconds":498.5,"endSeconds":515.68,"chapter":"chapter_31","lineId":"fmf7fanc","confidence":0.867,"matchedWords":13,"lineWords":16,"firstWord":1290,"lastWord":1321},
+    {"startSeconds":519.26,"endSeconds":590.14,"chapter":"chapter_31","lineId":"stctkxkx","confidence":0.68,"matchedWords":10,"lineWords":16,"firstWord":1328,"lastWord":1553}
+  ]
+}

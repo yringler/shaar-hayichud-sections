@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "59 - Chap- 17-7 Igullim-Yosher.mp3",
+  "chapter": "chapter_17",
+  "transcript": "transcripts/59%20-%20Chap-%2017-7%20Igullim-Yosher.mp3.json",
+  "transcriptionId": "527b4858-a666-436a-aa8e-86605d40e2d9",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2419,
+    "hebrewWords": 180,
+    "matchedWords": 14,
+    "chapterLines": 60,
+    "alignedLines": 2,
+    "firstLineIndex": 36,
+    "lastLineIndex": 37,
+    "meanConfidence": 0.448
+  },
+  "segments": [
+    {"startSeconds":5.24,"endSeconds":8.7,"chapter":"chapter_17","lineId":"pfopu22n","confidence":0.45,"matchedWords":3,"lineWords":6,"firstWord":11,"lastWord":17},
+    {"startSeconds":217.415,"endSeconds":221.74,"chapter":"chapter_17","lineId":"4esqzndh","confidence":0.446,"matchedWords":6,"lineWords":13,"firstWord":633,"lastWord":647}
+  ]
+}

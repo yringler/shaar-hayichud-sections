@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "43 - Chap- 27-5 Oros and Keilim (M).mp3",
+  "chapter": "chapter_27",
+  "transcript": "transcripts/43%20-%20Chap-%2027-5%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "transcriptionId": "cdea8af3-ff28-491b-b53a-63b83aa7b7a0",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2369,
+    "hebrewWords": 173,
+    "matchedWords": 85,
+    "chapterLines": 50,
+    "alignedLines": 8,
+    "firstLineIndex": 22,
+    "lastLineIndex": 29,
+    "meanConfidence": 0.907
+  },
+  "segments": [
+    {"startSeconds":24.66,"endSeconds":29.56,"chapter":"chapter_27","lineId":"gpoetsr2","confidence":0.622,"matchedWords":6,"lineWords":9,"firstWord":61,"lastWord":77},
+    {"startSeconds":51.26,"endSeconds":54.24,"chapter":"chapter_27","lineId":"yrlbjti4","confidence":0.986,"matchedWords":7,"lineWords":8,"firstWord":156,"lastWord":162},
+    {"startSeconds":143.3,"endSeconds":152.34,"chapter":"chapter_27","lineId":"soz5akke","confidence":0.892,"matchedWords":6,"lineWords":7,"firstWord":442,"lastWord":460},
+    {"startSeconds":153.14,"endSeconds":271.44,"chapter":"chapter_27","lineId":"w252kqjw","confidence":0.965,"matchedWords":33,"lineWords":34,"firstWord":466,"lastWord":757},
+    {"startSeconds":320.06,"endSeconds":335.749,"chapter":"chapter_27","lineId":"h6ilu62m","confidence":1,"matchedWords":9,"lineWords":9,"firstWord":893,"lastWord":943},
+    {"startSeconds":411.264,"endSeconds":443.933,"chapter":"chapter_27","lineId":"zkbqj3hd","confidence":0.79,"matchedWords":8,"lineWords":10,"firstWord":1162,"lastWord":1256},
+    {"startSeconds":460.9,"endSeconds":545.22,"chapter":"chapter_27","lineId":"vkoonlnr","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":1296,"lastWord":1532},
+    {"startSeconds":598.46,"endSeconds":603.46,"chapter":"chapter_27","lineId":"mafxfhc2","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":1691,"lastWord":1700}
+  ]
+}

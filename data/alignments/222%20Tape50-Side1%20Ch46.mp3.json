@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "222 Tape50-Side1 Ch46.mp3",
+  "chapter": "chapter_46",
+  "transcript": "transcripts/222%20Tape50-Side1%20Ch46.mp3.json",
+  "transcriptionId": "1ba5934f-3a77-4557-924f-b6c892cf46c0",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 3136,
+    "hebrewWords": 417,
+    "matchedWords": 133,
+    "chapterLines": 43,
+    "alignedLines": 9,
+    "firstLineIndex": 2,
+    "lastLineIndex": 10,
+    "meanConfidence": 0.846
+  },
+  "segments": [
+    {"startSeconds":723.579,"endSeconds":723.6,"chapter":"chapter_46","lineId":"cmlzruqg","confidence":0.9,"matchedWords":5,"lineWords":5,"firstWord":1557,"lastWord":1561},
+    {"startSeconds":815.472,"endSeconds":886.818,"chapter":"chapter_46","lineId":"zuj6uu27","confidence":0.765,"matchedWords":13,"lineWords":18,"firstWord":1768,"lastWord":1948},
+    {"startSeconds":887.724,"endSeconds":893.159,"chapter":"chapter_46","lineId":"riw4bfvb","confidence":0.625,"matchedWords":10,"lineWords":17,"firstWord":1951,"lastWord":1962},
+    {"startSeconds":957.478,"endSeconds":1015.456,"chapter":"chapter_46","lineId":"oukwktps","confidence":0.881,"matchedWords":11,"lineWords":13,"firstWord":2105,"lastWord":2232},
+    {"startSeconds":1015.456,"endSeconds":1191.655,"chapter":"chapter_46","lineId":"56ofwmcv","confidence":0.804,"matchedWords":20,"lineWords":25,"firstWord":2233,"lastWord":2621},
+    {"startSeconds":1196.184,"endSeconds":1306.252,"chapter":"chapter_46","lineId":"2dvo7g5n","confidence":0.874,"matchedWords":18,"lineWords":19,"firstWord":2632,"lastWord":2874},
+    {"startSeconds":1306.705,"endSeconds":1311.234,"chapter":"chapter_46","lineId":"oikkrn6j","confidence":0.832,"matchedWords":9,"lineWords":11,"firstWord":2876,"lastWord":2885},
+    {"startSeconds":1314.858,"endSeconds":1337.053,"chapter":"chapter_46","lineId":"inihavpp","confidence":0.942,"matchedWords":25,"lineWords":26,"firstWord":2894,"lastWord":2942},
+    {"startSeconds":1342.488,"endSeconds":1360.606,"chapter":"chapter_46","lineId":"jogk5jqc","confidence":0.994,"matchedWords":17,"lineWords":17,"firstWord":2955,"lastWord":2994}
+  ]
+}

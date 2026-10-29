@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "020 Tape003-Side2-Ch2.mp3",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/020%20Tape003-Side2-Ch2.mp3.json",
+  "transcriptionId": "1ca4c879-d03a-4a65-b416-9459a880b61a",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 3010,
+    "hebrewWords": 463,
+    "matchedWords": 69,
+    "chapterLines": 37,
+    "alignedLines": 4,
+    "firstLineIndex": 33,
+    "lastLineIndex": 36,
+    "meanConfidence": 0.837
+  },
+  "segments": [
+    {"startSeconds":273.706,"endSeconds":297.523,"chapter":"chapter_02","lineId":"kga2nxgl","confidence":0.907,"matchedWords":13,"lineWords":18,"firstWord":668,"lastWord":731},
+    {"startSeconds":302.746,"endSeconds":316.323,"chapter":"chapter_02","lineId":"kt3ffmsq","confidence":0.967,"matchedWords":9,"lineWords":11,"firstWord":734,"lastWord":758},
+    {"startSeconds":446.78,"endSeconds":498.68,"chapter":"chapter_02","lineId":"63bj73g4","confidence":0.992,"matchedWords":26,"lineWords":28,"firstWord":1036,"lastWord":1141},
+    {"startSeconds":501.86,"endSeconds":507.74,"chapter":"chapter_02","lineId":"5lrvb2he","confidence":0.483,"matchedWords":8,"lineWords":18,"firstWord":1144,"lastWord":1154}
+  ]
+}

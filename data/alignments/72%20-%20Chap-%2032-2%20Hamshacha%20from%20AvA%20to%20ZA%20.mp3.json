@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "72 - Chap- 32-2 Hamshacha from AvA to ZA .mp3",
+  "chapter": "chapter_32",
+  "transcript": "transcripts/72%20-%20Chap-%2032-2%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "transcriptionId": "3c86eefd-bc89-4d68-81fb-15967bfff318",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2870,
+    "hebrewWords": 188,
+    "matchedWords": 31,
+    "chapterLines": 50,
+    "alignedLines": 4,
+    "firstLineIndex": 15,
+    "lastLineIndex": 18,
+    "meanConfidence": 0.853
+  },
+  "segments": [
+    {"startSeconds":6.6,"endSeconds":20.44,"chapter":"chapter_32","lineId":"k24gcocv","confidence":0.968,"matchedWords":11,"lineWords":14,"firstWord":14,"lastWord":44},
+    {"startSeconds":29.52,"endSeconds":113.32,"chapter":"chapter_32","lineId":"k625oeky","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":74,"lastWord":266},
+    {"startSeconds":207.88,"endSeconds":219.38,"chapter":"chapter_32","lineId":"j4dve3ar","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":530,"lastWord":550},
+    {"startSeconds":384.84,"endSeconds":386.15,"chapter":"chapter_32","lineId":"crludxqw","confidence":0.444,"matchedWords":4,"lineWords":11,"firstWord":1065,"lastWord":1068}
+  ]
+}

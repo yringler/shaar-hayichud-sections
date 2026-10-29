@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "41 - Chap- 27-3 Oros and Keilim (M).mp3",
+  "chapter": "chapter_27",
+  "transcript": "transcripts/41%20-%20Chap-%2027-3%20Oros%20and%20Keilim%20%28M%29.mp3.json",
+  "transcriptionId": "65a886a1-7a04-44ea-a64c-2cc3d7c19615",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1778,
+    "hebrewWords": 62,
+    "matchedWords": 32,
+    "chapterLines": 50,
+    "alignedLines": 3,
+    "firstLineIndex": 14,
+    "lastLineIndex": 16,
+    "meanConfidence": 0.992
+  },
+  "segments": [
+    {"startSeconds":4.22,"endSeconds":60.16,"chapter":"chapter_27","lineId":"lx25rfel","confidence":1,"matchedWords":17,"lineWords":17,"firstWord":1,"lastWord":117},
+    {"startSeconds":64.04,"endSeconds":143.18,"chapter":"chapter_27","lineId":"yt4hjgs4","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":128,"lastWord":350},
+    {"startSeconds":512.12,"endSeconds":515.081,"chapter":"chapter_27","lineId":"qy6l4yqd","confidence":0.975,"matchedWords":8,"lineWords":9,"firstWord":1387,"lastWord":1394}
+  ]
+}

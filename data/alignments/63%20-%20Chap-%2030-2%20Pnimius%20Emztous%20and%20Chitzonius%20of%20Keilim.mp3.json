@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "63 - Chap- 30-2 Pnimius Emztous and Chitzonius of Keilim.mp3",
+  "chapter": "chapter_30",
+  "transcript": "transcripts/63%20-%20Chap-%2030-2%20Pnimius%20Emztous%20and%20Chitzonius%20of%20Keilim.mp3.json",
+  "transcriptionId": "c2886cb0-c11b-40d1-beae-8d0104a33869",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1231,
+    "hebrewWords": 169,
+    "matchedWords": 81,
+    "chapterLines": 61,
+    "alignedLines": 8,
+    "firstLineIndex": 7,
+    "lastLineIndex": 14,
+    "meanConfidence": 0.977
+  },
+  "segments": [
+    {"startSeconds":3.18,"endSeconds":10.02,"chapter":"chapter_30","lineId":"kxjkho47","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":0,"lastWord":13},
+    {"startSeconds":13.8,"endSeconds":21.18,"chapter":"chapter_30","lineId":"hrnzpvgm","confidence":1,"matchedWords":13,"lineWords":13,"firstWord":24,"lastWord":40},
+    {"startSeconds":46.24,"endSeconds":49.38,"chapter":"chapter_30","lineId":"w2hkma5e","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":88,"lastWord":95},
+    {"startSeconds":59.9,"endSeconds":69.34,"chapter":"chapter_30","lineId":"wyfez2sm","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":113,"lastWord":135},
+    {"startSeconds":80.42,"endSeconds":116.28,"chapter":"chapter_30","lineId":"7fqgwukk","confidence":1,"matchedWords":9,"lineWords":11,"firstWord":157,"lastWord":246},
+    {"startSeconds":313.52,"endSeconds":414.86,"chapter":"chapter_30","lineId":"nt5gapzq","confidence":0.818,"matchedWords":14,"lineWords":18,"firstWord":823,"lastWord":1127},
+    {"startSeconds":420.846,"endSeconds":423.412,"chapter":"chapter_30","lineId":"rowni3bv","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1146,"lastWord":1153},
+    {"startSeconds":435.086,"endSeconds":446.386,"chapter":"chapter_30","lineId":"mi66qwrz","confidence":1,"matchedWords":10,"lineWords":10,"firstWord":1182,"lastWord":1206}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "61 - Chap- 17-9 Igullim-Yosher (End).mp3",
+  "chapter": "chapter_17",
+  "transcript": "transcripts/61%20-%20Chap-%2017-9%20Igullim-Yosher%20%28End%29.mp3.json",
+  "transcriptionId": "d1f3ee77-a8ea-4a6c-8312-6aad3de6c6ea",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2465,
+    "hebrewWords": 427,
+    "matchedWords": 194,
+    "chapterLines": 60,
+    "alignedLines": 15,
+    "firstLineIndex": 45,
+    "lastLineIndex": 59,
+    "meanConfidence": 0.859
+  },
+  "segments": [
+    {"startSeconds":305.5,"endSeconds":344.545,"chapter":"chapter_17","lineId":"kcycquf5","confidence":0.635,"matchedWords":15,"lineWords":23,"firstWord":919,"lastWord":1028},
+    {"startSeconds":352.98,"endSeconds":360.525,"chapter":"chapter_17","lineId":"lfm4gkop","confidence":0.914,"matchedWords":13,"lineWords":14,"firstWord":1053,"lastWord":1071},
+    {"startSeconds":366.424,"endSeconds":382.697,"chapter":"chapter_17","lineId":"qc7yblm2","confidence":1,"matchedWords":13,"lineWords":15,"firstWord":1095,"lastWord":1137},
+    {"startSeconds":453.46,"endSeconds":478.673,"chapter":"chapter_17","lineId":"gdqkxe25","confidence":1,"matchedWords":21,"lineWords":22,"firstWord":1328,"lastWord":1385},
+    {"startSeconds":499.736,"endSeconds":517.3,"chapter":"chapter_17","lineId":"zwi7rmfj","confidence":0.862,"matchedWords":16,"lineWords":18,"firstWord":1465,"lastWord":1533},
+    {"startSeconds":544.512,"endSeconds":568.48,"chapter":"chapter_17","lineId":"akvumum3","confidence":1,"matchedWords":14,"lineWords":15,"firstWord":1612,"lastWord":1692},
+    {"startSeconds":570.484,"endSeconds":577.126,"chapter":"chapter_17","lineId":"m6qceqc4","confidence":0.917,"matchedWords":11,"lineWords":13,"firstWord":1699,"lastWord":1718},
+    {"startSeconds":617.66,"endSeconds":638.553,"chapter":"chapter_17","lineId":"3juw3j2d","confidence":1,"matchedWords":22,"lineWords":24,"firstWord":1883,"lastWord":1930},
+    {"startSeconds":646.5,"endSeconds":660.588,"chapter":"chapter_17","lineId":"g22d5jts","confidence":0.975,"matchedWords":8,"lineWords":10,"firstWord":1952,"lastWord":1989},
+    {"startSeconds":661.585,"endSeconds":669.376,"chapter":"chapter_17","lineId":"5efs37jm","confidence":0.771,"matchedWords":11,"lineWords":14,"firstWord":1996,"lastWord":2015},
+    {"startSeconds":675.712,"endSeconds":689.76,"chapter":"chapter_17","lineId":"tvtir6tt","confidence":0.55,"matchedWords":8,"lineWords":14,"firstWord":2031,"lastWord":2060},
+    {"startSeconds":731.56,"endSeconds":748.273,"chapter":"chapter_17","lineId":"eftes4le","confidence":0.834,"matchedWords":15,"lineWords":18,"firstWord":2208,"lastWord":2249},
+    {"startSeconds":784.02,"endSeconds":789.08,"chapter":"chapter_17","lineId":"u672rqvv","confidence":0.728,"matchedWords":7,"lineWords":10,"firstWord":2356,"lastWord":2371},
+    {"startSeconds":789.18,"endSeconds":794.22,"chapter":"chapter_17","lineId":"gfys6qym","confidence":0.917,"matchedWords":11,"lineWords":13,"firstWord":2372,"lastWord":2382},
+    {"startSeconds":796.928,"endSeconds":801.4,"chapter":"chapter_17","lineId":"zsjc2byf","confidence":0.782,"matchedWords":9,"lineWords":12,"firstWord":2399,"lastWord":2409}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "33 - Chap 13-4  Tzimtzum- Reshimu (N).mp3",
+  "chapter": "chapter_13",
+  "transcript": "transcripts/33%20-%20Chap%2013-4%20%20Tzimtzum-%20Reshimu%20%28N%29.mp3.json",
+  "transcriptionId": "67461fe7-2079-45d4-905e-ceca7937bc1b",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2411,
+    "hebrewWords": 275,
+    "matchedWords": 165,
+    "chapterLines": 79,
+    "alignedLines": 14,
+    "firstLineIndex": 53,
+    "lastLineIndex": 66,
+    "meanConfidence": 0.953
+  },
+  "segments": [
+    {"startSeconds":18.1,"endSeconds":30.26,"chapter":"chapter_13","lineId":"wwqahkvu","confidence":1,"matchedWords":10,"lineWords":10,"firstWord":30,"lastWord":46},
+    {"startSeconds":36.36,"endSeconds":91.76,"chapter":"chapter_13","lineId":"ps2u3qyo","confidence":0.926,"matchedWords":19,"lineWords":22,"firstWord":60,"lastWord":176},
+    {"startSeconds":91.76,"endSeconds":119.34,"chapter":"chapter_13","lineId":"c7jejw3a","confidence":0.969,"matchedWords":13,"lineWords":13,"firstWord":177,"lastWord":228},
+    {"startSeconds":121.129,"endSeconds":228.36,"chapter":"chapter_13","lineId":"meg7ipwp","confidence":1,"matchedWords":23,"lineWords":23,"firstWord":235,"lastWord":519},
+    {"startSeconds":236.62,"endSeconds":239.2,"chapter":"chapter_13","lineId":"kc7cssoa","confidence":1,"matchedWords":6,"lineWords":6,"firstWord":531,"lastWord":536},
+    {"startSeconds":249.84,"endSeconds":271.42,"chapter":"chapter_13","lineId":"vlbl5sux","confidence":0.993,"matchedWords":15,"lineWords":15,"firstWord":560,"lastWord":595},
+    {"startSeconds":272.1,"endSeconds":273.22,"chapter":"chapter_13","lineId":"c2bedf4m","confidence":1,"matchedWords":3,"lineWords":4,"firstWord":596,"lastWord":598},
+    {"startSeconds":294.62,"endSeconds":308.6,"chapter":"chapter_13","lineId":"bk7hj7cl","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":641,"lastWord":668},
+    {"startSeconds":316.32,"endSeconds":321.62,"chapter":"chapter_13","lineId":"ez5rbvcf","confidence":0.809,"matchedWords":7,"lineWords":9,"firstWord":687,"lastWord":694},
+    {"startSeconds":340.78,"endSeconds":355.04,"chapter":"chapter_13","lineId":"2nxtwa4u","confidence":0.812,"matchedWords":14,"lineWords":17,"firstWord":746,"lastWord":770},
+    {"startSeconds":375.54,"endSeconds":384.98,"chapter":"chapter_13","lineId":"vqild3a4","confidence":0.987,"matchedWords":15,"lineWords":15,"firstWord":814,"lastWord":828},
+    {"startSeconds":432.56,"endSeconds":438.2,"chapter":"chapter_13","lineId":"mj2g6vyi","confidence":0.959,"matchedWords":8,"lineWords":8,"firstWord":973,"lastWord":987},
+    {"startSeconds":500.06,"endSeconds":503.014,"chapter":"chapter_13","lineId":"dlx4f3m3","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1218,"lastWord":1225},
+    {"startSeconds":512.229,"endSeconds":517.4,"chapter":"chapter_13","lineId":"mobgd6o3","confidence":0.891,"matchedWords":13,"lineWords":15,"firstWord":1244,"lastWord":1258}
+  ]
+}

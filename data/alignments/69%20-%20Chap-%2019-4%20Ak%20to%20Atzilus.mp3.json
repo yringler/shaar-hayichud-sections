@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "69 - Chap- 19-4 Ak to Atzilus.mp3",
+  "chapter": "chapter_19",
+  "transcript": "transcripts/69%20-%20Chap-%2019-4%20Ak%20to%20Atzilus.mp3.json",
+  "transcriptionId": "5bc49a0b-400b-4be5-b734-ed222e832043",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2124,
+    "hebrewWords": 245,
+    "matchedWords": 143,
+    "chapterLines": 55,
+    "alignedLines": 11,
+    "firstLineIndex": 17,
+    "lastLineIndex": 30,
+    "meanConfidence": 0.842
+  },
+  "segments": [
+    {"startSeconds":6.1,"endSeconds":8.64,"chapter":"chapter_19","lineId":"afhbdd4x","confidence":0.713,"matchedWords":11,"lineWords":15,"firstWord":1,"lastWord":13},
+    {"startSeconds":8.64,"endSeconds":28.02,"chapter":"chapter_19","lineId":"u4h3xgd2","confidence":0.99,"matchedWords":10,"lineWords":10,"firstWord":14,"lastWord":65},
+    {"startSeconds":84.02,"endSeconds":89.72,"chapter":"chapter_19","lineId":"u2viuxqa","confidence":0.954,"matchedWords":7,"lineWords":7,"firstWord":227,"lastWord":239},
+    {"startSeconds":94.42,"endSeconds":106.67,"chapter":"chapter_19","lineId":"a3bcxgo5","confidence":0.855,"matchedWords":12,"lineWords":14,"firstWord":253,"lastWord":286},
+    {"startSeconds":108.24,"endSeconds":111.14,"chapter":"chapter_19","lineId":"wdr6iwer","confidence":0.493,"matchedWords":7,"lineWords":14,"firstWord":293,"lastWord":299},
+    {"startSeconds":138.62,"endSeconds":141.7,"chapter":"chapter_19","lineId":"7dk4a7yk","confidence":0.618,"matchedWords":7,"lineWords":11,"firstWord":390,"lastWord":400},
+    {"startSeconds":145.48,"endSeconds":155.7,"chapter":"chapter_19","lineId":"mpx2rz6x","confidence":0.955,"matchedWords":19,"lineWords":20,"firstWord":414,"lastWord":433},
+    {"startSeconds":182.28,"endSeconds":190.88,"chapter":"chapter_19","lineId":"3lbohrsh","confidence":0.989,"matchedWords":19,"lineWords":19,"firstWord":520,"lastWord":538},
+    {"startSeconds":208.3,"endSeconds":214.74,"chapter":"chapter_19","lineId":"vsakhlzt","confidence":0.813,"matchedWords":11,"lineWords":14,"firstWord":592,"lastWord":614},
+    {"startSeconds":350.3,"endSeconds":357.86,"chapter":"chapter_19","lineId":"4bc7okcf","confidence":0.967,"matchedWords":22,"lineWords":22,"firstWord":994,"lastWord":1015},
+    {"startSeconds":358.14,"endSeconds":361.82,"chapter":"chapter_19","lineId":"egk3hbg2","confidence":0.918,"matchedWords":11,"lineWords":12,"firstWord":1016,"lastWord":1026}
+  ]
+}

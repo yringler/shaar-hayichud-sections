@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "37 - Chap- 26-8 Yichudei AvA.mp3",
+  "chapter": "chapter_26",
+  "transcript": "transcripts/37%20-%20Chap-%2026-8%20Yichudei%20AvA.mp3.json",
+  "transcriptionId": "e48147b8-be45-48f2-b480-77f80e4d9961",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1797,
+    "hebrewWords": 246,
+    "matchedWords": 76,
+    "chapterLines": 59,
+    "alignedLines": 7,
+    "firstLineIndex": 32,
+    "lastLineIndex": 39,
+    "meanConfidence": 0.816
+  },
+  "segments": [
+    {"startSeconds":2.92,"endSeconds":17.115,"chapter":"chapter_26","lineId":"qtgbcw7n","confidence":0.786,"matchedWords":17,"lineWords":21,"firstWord":0,"lastWord":45},
+    {"startSeconds":17.115,"endSeconds":20.796,"chapter":"chapter_26","lineId":"u3cag4gg","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":46,"lastWord":56},
+    {"startSeconds":43.982,"endSeconds":46.659,"chapter":"chapter_26","lineId":"mjjvhhu3","confidence":0.511,"matchedWords":5,"lineWords":9,"firstWord":96,"lastWord":103},
+    {"startSeconds":46.659,"endSeconds":51.009,"chapter":"chapter_26","lineId":"mcan7f2x","confidence":1,"matchedWords":13,"lineWords":13,"firstWord":104,"lastWord":116},
+    {"startSeconds":51.009,"endSeconds":126.76,"chapter":"chapter_26","lineId":"rbndyuva","confidence":0.69,"matchedWords":7,"lineWords":12,"firstWord":117,"lastWord":336},
+    {"startSeconds":397.86,"endSeconds":415.48,"chapter":"chapter_26","lineId":"lhpaaav2","confidence":0.809,"matchedWords":19,"lineWords":24,"firstWord":1153,"lastWord":1186},
+    {"startSeconds":428.893,"endSeconds":432.78,"chapter":"chapter_26","lineId":"qgujniz5","confidence":0.919,"matchedWords":4,"lineWords":6,"firstWord":1225,"lastWord":1236}
+  ]
+}

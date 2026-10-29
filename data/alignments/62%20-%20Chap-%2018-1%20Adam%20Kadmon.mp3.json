@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "62 - Chap- 18-1 Adam Kadmon.mp3",
+  "chapter": "chapter_18",
+  "transcript": "transcripts/62%20-%20Chap-%2018-1%20Adam%20Kadmon.mp3.json",
+  "transcriptionId": "6b9963b1-e319-4fc2-b0cf-f1825191e07e",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2009,
+    "hebrewWords": 301,
+    "matchedWords": 100,
+    "chapterLines": 44,
+    "alignedLines": 7,
+    "firstLineIndex": 0,
+    "lastLineIndex": 6,
+    "meanConfidence": 0.834
+  },
+  "segments": [
+    {"startSeconds":3.5,"endSeconds":26.08,"chapter":"chapter_18","lineId":"re7zblsb","confidence":0.918,"matchedWords":21,"lineWords":24,"firstWord":4,"lastWord":59},
+    {"startSeconds":63.34,"endSeconds":66.7,"chapter":"chapter_18","lineId":"t3zlv5yj","confidence":0.857,"matchedWords":6,"lineWords":8,"firstWord":175,"lastWord":181},
+    {"startSeconds":72.14,"endSeconds":96.46,"chapter":"chapter_18","lineId":"2rvbjjil","confidence":0.563,"matchedWords":11,"lineWords":18,"firstWord":204,"lastWord":270},
+    {"startSeconds":148.46,"endSeconds":160.56,"chapter":"chapter_18","lineId":"zbdzwjrs","confidence":0.846,"matchedWords":11,"lineWords":14,"firstWord":429,"lastWord":458},
+    {"startSeconds":188.34,"endSeconds":252.06,"chapter":"chapter_18","lineId":"dey5xyzt","confidence":0.865,"matchedWords":27,"lineWords":32,"firstWord":521,"lastWord":673},
+    {"startSeconds":257.8,"endSeconds":266.3,"chapter":"chapter_18","lineId":"aa6l7fdm","confidence":0.835,"matchedWords":13,"lineWords":15,"firstWord":691,"lastWord":711},
+    {"startSeconds":273.581,"endSeconds":281.82,"chapter":"chapter_18","lineId":"gfgcsh46","confidence":0.956,"matchedWords":11,"lineWords":11,"firstWord":738,"lastWord":754}
+  ]
+}

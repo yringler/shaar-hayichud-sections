@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "09 - Chap- 1-1 Chochmah Binah Daas.mp3",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/09%20-%20Chap-%201-1%20Chochmah%20Binah%20Daas.mp3.json",
+  "transcriptionId": "02728225-0c19-43d3-8d77-0f47565c0efa",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1979,
+    "hebrewWords": 310,
+    "matchedWords": 148,
+    "chapterLines": 53,
+    "alignedLines": 8,
+    "firstLineIndex": 0,
+    "lastLineIndex": 7,
+    "meanConfidence": 0.913
+  },
+  "segments": [
+    {"startSeconds":63.8,"endSeconds":108.72,"chapter":"chapter_01","lineId":"xazelgse","confidence":1,"matchedWords":24,"lineWords":25,"firstWord":146,"lastWord":233},
+    {"startSeconds":164.58,"endSeconds":188.88,"chapter":"chapter_01","lineId":"mrqahnmm","confidence":0.985,"matchedWords":13,"lineWords":13,"firstWord":399,"lastWord":460},
+    {"startSeconds":213.84,"endSeconds":272.24,"chapter":"chapter_01","lineId":"g4fdcli2","confidence":0.912,"matchedWords":21,"lineWords":22,"firstWord":538,"lastWord":680},
+    {"startSeconds":275.558,"endSeconds":332.104,"chapter":"chapter_01","lineId":"edcbjtrl","confidence":0.994,"matchedWords":17,"lineWords":17,"firstWord":684,"lastWord":837},
+    {"startSeconds":377.978,"endSeconds":406.829,"chapter":"chapter_01","lineId":"3aem2a2q","confidence":0.784,"matchedWords":13,"lineWords":16,"firstWord":976,"lastWord":1037},
+    {"startSeconds":422.418,"endSeconds":452.611,"chapter":"chapter_01","lineId":"iobezm3p","confidence":0.87,"matchedWords":21,"lineWords":23,"firstWord":1082,"lastWord":1153},
+    {"startSeconds":474.798,"endSeconds":506.649,"chapter":"chapter_01","lineId":"ffb3yrwq","confidence":0.839,"matchedWords":20,"lineWords":23,"firstWord":1237,"lastWord":1339},
+    {"startSeconds":519.218,"endSeconds":540.184,"chapter":"chapter_01","lineId":"tigfmarz","confidence":0.918,"matchedWords":19,"lineWords":20,"firstWord":1382,"lastWord":1430}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "70 - Chap- 31-4 Hiskalelus and Tikun in the Keilim (End).mp3",
+  "chapter": "chapter_31",
+  "transcript": "transcripts/70%20-%20Chap-%2031-4%20Hiskalelus%20and%20Tikun%20in%20the%20Keilim%20%28End%29.mp3.json",
+  "transcriptionId": "c38ff57d-d9e3-4ad8-b84a-dfdaff278d8e",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1344,
+    "hebrewWords": 140,
+    "matchedWords": 84,
+    "chapterLines": 54,
+    "alignedLines": 8,
+    "firstLineIndex": 46,
+    "lastLineIndex": 53,
+    "meanConfidence": 0.936
+  },
+  "segments": [
+    {"startSeconds":2.057,"endSeconds":5.828,"chapter":"chapter_31","lineId":"dgk3bvk7","confidence":0.9,"matchedWords":11,"lineWords":12,"firstWord":7,"lastWord":17},
+    {"startSeconds":37.057,"endSeconds":40.828,"chapter":"chapter_31","lineId":"5bvr6cin","confidence":0.991,"matchedWords":11,"lineWords":12,"firstWord":65,"lastWord":75},
+    {"startSeconds":53.906,"endSeconds":60.2,"chapter":"chapter_31","lineId":"rf52jb7v","confidence":0.942,"matchedWords":9,"lineWords":9,"firstWord":144,"lastWord":152},
+    {"startSeconds":82.491,"endSeconds":84.205,"chapter":"chapter_31","lineId":"uwwgkobk","confidence":0.962,"matchedWords":8,"lineWords":8,"firstWord":219,"lastWord":226},
+    {"startSeconds":90.28,"endSeconds":108.24,"chapter":"chapter_31","lineId":"2ov7ljmd","confidence":0.963,"matchedWords":14,"lineWords":16,"firstWord":238,"lastWord":281},
+    {"startSeconds":110.16,"endSeconds":130.48,"chapter":"chapter_31","lineId":"yzafr6u2","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":283,"lastWord":331},
+    {"startSeconds":131.22,"endSeconds":137.566,"chapter":"chapter_31","lineId":"jyab4b7m","confidence":0.944,"matchedWords":5,"lineWords":5,"firstWord":336,"lastWord":352},
+    {"startSeconds":141.2,"endSeconds":160.64,"chapter":"chapter_31","lineId":"tj2nsqgo","confidence":0.783,"matchedWords":15,"lineWords":19,"firstWord":358,"lastWord":401}
+  ]
+}

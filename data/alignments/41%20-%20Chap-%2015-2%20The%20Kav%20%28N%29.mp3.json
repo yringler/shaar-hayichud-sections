@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "41 - Chap- 15-2 The Kav (N).mp3",
+  "chapter": "chapter_15",
+  "transcript": "transcripts/41%20-%20Chap-%2015-2%20The%20Kav%20%28N%29.mp3.json",
+  "transcriptionId": "9972399e-94c6-4988-a8e8-ebc0d42ac32a",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2390,
+    "hebrewWords": 182,
+    "matchedWords": 48,
+    "chapterLines": 64,
+    "alignedLines": 4,
+    "firstLineIndex": 3,
+    "lastLineIndex": 6,
+    "meanConfidence": 0.787
+  },
+  "segments": [
+    {"startSeconds":1.96,"endSeconds":11.56,"chapter":"chapter_15","lineId":"sm54joaz","confidence":0.517,"matchedWords":14,"lineWords":26,"firstWord":1,"lastWord":28},
+    {"startSeconds":158.183,"endSeconds":270.64,"chapter":"chapter_15","lineId":"22ok7an2","confidence":0.964,"matchedWords":11,"lineWords":11,"firstWord":513,"lastWord":931},
+    {"startSeconds":276.663,"endSeconds":279.94,"chapter":"chapter_15","lineId":"rljbc3ny","confidence":0.85,"matchedWords":7,"lineWords":9,"firstWord":946,"lastWord":952},
+    {"startSeconds":498.021,"endSeconds":503.18,"chapter":"chapter_15","lineId":"q6x6af5x","confidence":0.816,"matchedWords":16,"lineWords":19,"firstWord":1691,"lastWord":1708}
+  ]
+}

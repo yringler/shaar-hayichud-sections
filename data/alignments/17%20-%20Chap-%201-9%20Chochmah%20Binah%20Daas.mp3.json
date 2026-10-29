@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "17 - Chap- 1-9 Chochmah Binah Daas.mp3",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/17%20-%20Chap-%201-9%20Chochmah%20Binah%20Daas.mp3.json",
+  "transcriptionId": "27e3e296-a7ad-4551-884b-c59445db9bc3",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2337,
+    "hebrewWords": 252,
+    "matchedWords": 112,
+    "chapterLines": 53,
+    "alignedLines": 4,
+    "firstLineIndex": 44,
+    "lastLineIndex": 47,
+    "meanConfidence": 0.689
+  },
+  "segments": [
+    {"startSeconds":68.06,"endSeconds":152.9,"chapter":"chapter_01","lineId":"5663nwe6","confidence":0.55,"matchedWords":20,"lineWords":35,"firstWord":205,"lastWord":467},
+    {"startSeconds":596.02,"endSeconds":641.38,"chapter":"chapter_01","lineId":"b4ghv6uq","confidence":0.872,"matchedWords":27,"lineWords":30,"firstWord":1821,"lastWord":1937},
+    {"startSeconds":642.52,"endSeconds":688.04,"chapter":"chapter_01","lineId":"frjdgmr3","confidence":0.767,"matchedWords":23,"lineWords":29,"firstWord":1944,"lastWord":2088},
+    {"startSeconds":726.32,"endSeconds":762.478,"chapter":"chapter_01","lineId":"t3kfsj3c","confidence":0.567,"matchedWords":27,"lineWords":47,"firstWord":2210,"lastWord":2299}
+  ]
+}

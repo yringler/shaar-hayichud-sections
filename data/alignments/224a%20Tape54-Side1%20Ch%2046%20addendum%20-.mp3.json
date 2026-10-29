@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "224a Tape54-Side1 Ch 46 addendum -.mp3",
+  "chapter": "chapter_46",
+  "transcript": "transcripts/224a%20Tape54-Side1%20Ch%2046%20addendum%20-.mp3.json",
+  "transcriptionId": "402f6079-00d9-43e4-8546-030c078d50be",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2208,
+    "hebrewWords": 169,
+    "matchedWords": 6,
+    "chapterLines": 43,
+    "alignedLines": 1,
+    "firstLineIndex": 2,
+    "lastLineIndex": 2,
+    "meanConfidence": 0.6
+  },
+  "segments": [
+    {"startSeconds":410.323,"endSeconds":483.316,"chapter":"chapter_46","lineId":"cmlzruqg","confidence":0.6,"matchedWords":3,"lineWords":5,"firstWord":1049,"lastWord":1209}
+  ]
+}

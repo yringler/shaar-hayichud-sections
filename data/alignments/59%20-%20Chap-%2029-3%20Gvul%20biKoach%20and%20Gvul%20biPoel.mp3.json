@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "59 - Chap- 29-3 Gvul biKoach and Gvul biPoel.mp3",
+  "chapter": "chapter_29",
+  "transcript": "transcripts/59%20-%20Chap-%2029-3%20Gvul%20biKoach%20and%20Gvul%20biPoel.mp3.json",
+  "transcriptionId": "5d5edb8c-1042-430d-b105-1d129a4b0a0c",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2435,
+    "hebrewWords": 219,
+    "matchedWords": 87,
+    "chapterLines": 51,
+    "alignedLines": 7,
+    "firstLineIndex": 25,
+    "lastLineIndex": 31,
+    "meanConfidence": 0.86
+  },
+  "segments": [
+    {"startSeconds":308.18,"endSeconds":321.26,"chapter":"chapter_29","lineId":"otdcywiy","confidence":0.778,"matchedWords":7,"lineWords":9,"firstWord":968,"lastWord":993},
+    {"startSeconds":321.4,"endSeconds":337.82,"chapter":"chapter_29","lineId":"4a4h6wer","confidence":0.889,"matchedWords":8,"lineWords":11,"firstWord":994,"lastWord":1035},
+    {"startSeconds":342.32,"endSeconds":345.8,"chapter":"chapter_29","lineId":"ua3qwtmf","confidence":0.685,"matchedWords":9,"lineWords":14,"firstWord":1045,"lastWord":1053},
+    {"startSeconds":508.3,"endSeconds":524.78,"chapter":"chapter_29","lineId":"qrvsn62h","confidence":0.946,"matchedWords":13,"lineWords":14,"firstWord":1566,"lastWord":1613},
+    {"startSeconds":539.26,"endSeconds":631.9,"chapter":"chapter_29","lineId":"tirvebgc","confidence":0.859,"matchedWords":12,"lineWords":14,"firstWord":1646,"lastWord":1931},
+    {"startSeconds":633.22,"endSeconds":660.86,"chapter":"chapter_29","lineId":"t5roosed","confidence":0.88,"matchedWords":21,"lineWords":25,"firstWord":1937,"lastWord":2020},
+    {"startSeconds":673.16,"endSeconds":692.854,"chapter":"chapter_29","lineId":"5w2vvf7k","confidence":0.986,"matchedWords":14,"lineWords":15,"firstWord":2071,"lastWord":2143}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "61 - Chap- 29-5 Gvul biKoach and Gvul biPoel (End).mp3",
+  "chapter": "chapter_29",
+  "transcript": "transcripts/61%20-%20Chap-%2029-5%20Gvul%20biKoach%20and%20Gvul%20biPoel%20%28End%29.mp3.json",
+  "transcriptionId": "c187d00c-74a7-4bac-af59-7a6acf38dca7",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1379,
+    "hebrewWords": 171,
+    "matchedWords": 90,
+    "chapterLines": 51,
+    "alignedLines": 11,
+    "firstLineIndex": 40,
+    "lastLineIndex": 50,
+    "meanConfidence": 0.891
+  },
+  "segments": [
+    {"startSeconds":6.56,"endSeconds":39.34,"chapter":"chapter_29","lineId":"gmichtzk","confidence":0.617,"matchedWords":8,"lineWords":13,"firstWord":2,"lastWord":95},
+    {"startSeconds":39.58,"endSeconds":44.62,"chapter":"chapter_29","lineId":"n2tmqti3","confidence":0.989,"matchedWords":9,"lineWords":9,"firstWord":97,"lastWord":105},
+    {"startSeconds":70.4,"endSeconds":76.12,"chapter":"chapter_29","lineId":"kodxyq4a","confidence":0.99,"matchedWords":10,"lineWords":10,"firstWord":180,"lastWord":197},
+    {"startSeconds":106.22,"endSeconds":152.12,"chapter":"chapter_29","lineId":"tg4s54l2","confidence":0.99,"matchedWords":10,"lineWords":10,"firstWord":304,"lastWord":464},
+    {"startSeconds":163.076,"endSeconds":170.256,"chapter":"chapter_29","lineId":"z7kg5vlo","confidence":0.924,"matchedWords":8,"lineWords":10,"firstWord":507,"lastWord":526},
+    {"startSeconds":186.46,"endSeconds":187.66,"chapter":"chapter_29","lineId":"vm3qiiaz","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":580,"lastWord":583},
+    {"startSeconds":196,"endSeconds":205.02,"chapter":"chapter_29","lineId":"krxls2hd","confidence":0.821,"matchedWords":7,"lineWords":8,"firstWord":609,"lastWord":634},
+    {"startSeconds":208.54,"endSeconds":211.86,"chapter":"chapter_29","lineId":"cimv7pph","confidence":0.875,"matchedWords":7,"lineWords":8,"firstWord":653,"lastWord":659},
+    {"startSeconds":257.96,"endSeconds":264.26,"chapter":"chapter_29","lineId":"d76ac7tc","confidence":0.96,"matchedWords":10,"lineWords":10,"firstWord":815,"lastWord":829},
+    {"startSeconds":288.4,"endSeconds":290.12,"chapter":"chapter_29","lineId":"blkxvqum","confidence":0.825,"matchedWords":2,"lineWords":2,"firstWord":909,"lastWord":914},
+    {"startSeconds":290.598,"endSeconds":306.284,"chapter":"chapter_29","lineId":"qfgx3tdu","confidence":0.813,"matchedWords":15,"lineWords":20,"firstWord":919,"lastWord":957}
+  ]
+}

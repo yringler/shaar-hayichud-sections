@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "211 Tape42-Side2 ch 40-.mp3",
+  "chapter": "chapter_40",
+  "transcript": "transcripts/211%20Tape42-Side2%20ch%2040-.mp3.json",
+  "transcriptionId": "7a495c16-e228-4e44-8891-135519fcd417",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 4647,
+    "hebrewWords": 347,
+    "matchedWords": 5,
+    "chapterLines": 43,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

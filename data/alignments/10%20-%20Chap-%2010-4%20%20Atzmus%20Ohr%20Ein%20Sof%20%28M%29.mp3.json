@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "10 - Chap- 10-4  Atzmus Ohr Ein Sof (M).mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/10%20-%20Chap-%2010-4%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+  "transcriptionId": "49503683-c926-4bc9-9bb6-eaaeeadc61de",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 1440,
+    "hebrewWords": 242,
+    "matchedWords": 99,
+    "chapterLines": 91,
+    "alignedLines": 7,
+    "firstLineIndex": 25,
+    "lastLineIndex": 31,
+    "meanConfidence": 0.963
+  },
+  "segments": [
+    {"startSeconds":36.251,"endSeconds":43.3,"chapter":"chapter_10","lineId":"gbyeqivs","confidence":1,"matchedWords":11,"lineWords":11,"firstWord":94,"lastWord":104},
+    {"startSeconds":156.2,"endSeconds":184.16,"chapter":"chapter_10","lineId":"qafqart4","confidence":0.898,"matchedWords":12,"lineWords":13,"firstWord":422,"lastWord":484},
+    {"startSeconds":217.24,"endSeconds":252.34,"chapter":"chapter_10","lineId":"ailh7b4n","confidence":0.981,"matchedWords":16,"lineWords":16,"firstWord":568,"lastWord":629},
+    {"startSeconds":263.16,"endSeconds":301.72,"chapter":"chapter_10","lineId":"b3zdiz35","confidence":0.971,"matchedWords":18,"lineWords":18,"firstWord":650,"lastWord":728},
+    {"startSeconds":303.162,"endSeconds":307.464,"chapter":"chapter_10","lineId":"ksncbbdu","confidence":0.969,"matchedWords":13,"lineWords":13,"firstWord":733,"lastWord":745},
+    {"startSeconds":369,"endSeconds":379.8,"chapter":"chapter_10","lineId":"kvzejtav","confidence":0.986,"matchedWords":7,"lineWords":7,"firstWord":916,"lastWord":936},
+    {"startSeconds":383.031,"endSeconds":409.127,"chapter":"chapter_10","lineId":"gxhu5ybe","confidence":0.939,"matchedWords":22,"lineWords":24,"firstWord":944,"lastWord":1002}
+  ]
+}

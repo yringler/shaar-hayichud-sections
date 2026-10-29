@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "74 - Chap- 20-3 Tikun-Tohu.mp3",
+  "chapter": "chapter_20",
+  "transcript": "transcripts/74%20-%20Chap-%2020-3%20Tikun-Tohu.mp3.json",
+  "transcriptionId": "cec0f413-3e7d-41ec-9d3e-565bf51c33f7",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2093,
+    "hebrewWords": 260,
+    "matchedWords": 136,
+    "chapterLines": 48,
+    "alignedLines": 11,
+    "firstLineIndex": 28,
+    "lastLineIndex": 38,
+    "meanConfidence": 0.898
+  },
+  "segments": [
+    {"startSeconds":3.7,"endSeconds":23.139,"chapter":"chapter_20","lineId":"jgxlk3k4","confidence":0.977,"matchedWords":12,"lineWords":12,"firstWord":0,"lastWord":52},
+    {"startSeconds":23.139,"endSeconds":53.17,"chapter":"chapter_20","lineId":"6hb6vpzw","confidence":0.795,"matchedWords":20,"lineWords":25,"firstWord":53,"lastWord":123},
+    {"startSeconds":153.657,"endSeconds":168.81,"chapter":"chapter_20","lineId":"34fwqml4","confidence":0.978,"matchedWords":18,"lineWords":18,"firstWord":437,"lastWord":472},
+    {"startSeconds":175.13,"endSeconds":177.65,"chapter":"chapter_20","lineId":"wcrx7h2m","confidence":0.686,"matchedWords":5,"lineWords":7,"firstWord":486,"lastWord":490},
+    {"startSeconds":180.217,"endSeconds":187.745,"chapter":"chapter_20","lineId":"mztyvn6y","confidence":1,"matchedWords":23,"lineWords":24,"firstWord":503,"lastWord":526},
+    {"startSeconds":259.79,"endSeconds":262.736,"chapter":"chapter_20","lineId":"gjkm43zm","confidence":0.978,"matchedWords":9,"lineWords":9,"firstWord":738,"lastWord":746},
+    {"startSeconds":367.21,"endSeconds":395.89,"chapter":"chapter_20","lineId":"5sk72j6g","confidence":0.857,"matchedWords":15,"lineWords":18,"firstWord":1106,"lastWord":1176},
+    {"startSeconds":488.25,"endSeconds":498.35,"chapter":"chapter_20","lineId":"tmmdtpfq","confidence":1,"matchedWords":11,"lineWords":12,"firstWord":1468,"lastWord":1491},
+    {"startSeconds":504.037,"endSeconds":522.99,"chapter":"chapter_20","lineId":"swlty5aa","confidence":1,"matchedWords":13,"lineWords":14,"firstWord":1504,"lastWord":1558},
+    {"startSeconds":531.81,"endSeconds":534.25,"chapter":"chapter_20","lineId":"h5eopk64","confidence":0.613,"matchedWords":4,"lineWords":6,"firstWord":1587,"lastWord":1592},
+    {"startSeconds":540.23,"endSeconds":543.01,"chapter":"chapter_20","lineId":"x7tx4okt","confidence":1,"matchedWords":6,"lineWords":7,"firstWord":1609,"lastWord":1614}
+  ]
+}

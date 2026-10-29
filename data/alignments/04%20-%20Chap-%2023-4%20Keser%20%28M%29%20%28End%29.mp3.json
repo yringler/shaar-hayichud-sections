@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "04 - Chap- 23-4 Keser (M) (End).mp3",
+  "chapter": "chapter_23",
+  "transcript": "transcripts/04%20-%20Chap-%2023-4%20Keser%20%28M%29%20%28End%29.mp3.json",
+  "transcriptionId": "c1019c37-97b7-49df-a5c7-1bca026fd3c9",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 2656,
+    "hebrewWords": 356,
+    "matchedWords": 225,
+    "chapterLines": 53,
+    "alignedLines": 19,
+    "firstLineIndex": 34,
+    "lastLineIndex": 52,
+    "meanConfidence": 0.933
+  },
+  "segments": [
+    {"startSeconds":0,"endSeconds":17.6,"chapter":"chapter_23","lineId":"zi6tdzky","confidence":0.853,"matchedWords":8,"lineWords":9,"firstWord":0,"lastWord":25},
+    {"startSeconds":24.192,"endSeconds":58.64,"chapter":"chapter_23","lineId":"7uo5mlsc","confidence":1,"matchedWords":16,"lineWords":16,"firstWord":35,"lastWord":112},
+    {"startSeconds":60.78,"endSeconds":64.139,"chapter":"chapter_23","lineId":"uqqtwcbd","confidence":0.844,"matchedWords":5,"lineWords":6,"firstWord":117,"lastWord":128},
+    {"startSeconds":170.62,"endSeconds":197.126,"chapter":"chapter_23","lineId":"bbh2dhlb","confidence":0.96,"matchedWords":15,"lineWords":16,"firstWord":443,"lastWord":504},
+    {"startSeconds":329.28,"endSeconds":447.079,"chapter":"chapter_23","lineId":"wjju6a4l","confidence":1,"matchedWords":14,"lineWords":14,"firstWord":788,"lastWord":1088},
+    {"startSeconds":453.575,"endSeconds":457.664,"chapter":"chapter_23","lineId":"azps2ggh","confidence":0.9,"matchedWords":11,"lineWords":12,"firstWord":1104,"lastWord":1116},
+    {"startSeconds":488.52,"endSeconds":502.279,"chapter":"chapter_23","lineId":"gaccuwu3","confidence":0.94,"matchedWords":10,"lineWords":10,"firstWord":1201,"lastWord":1228},
+    {"startSeconds":503.56,"endSeconds":551.219,"chapter":"chapter_23","lineId":"oarr7ryl","confidence":0.99,"matchedWords":21,"lineWords":21,"firstWord":1235,"lastWord":1392},
+    {"startSeconds":556.292,"endSeconds":558.522,"chapter":"chapter_23","lineId":"ob426vxk","confidence":0.943,"matchedWords":7,"lineWords":7,"firstWord":1400,"lastWord":1406},
+    {"startSeconds":568.02,"endSeconds":707.055,"chapter":"chapter_23","lineId":"v6ugfuu5","confidence":0.956,"matchedWords":39,"lineWords":41,"firstWord":1445,"lastWord":1845},
+    {"startSeconds":718,"endSeconds":728.363,"chapter":"chapter_23","lineId":"ge7ktymq","confidence":0.971,"matchedWords":7,"lineWords":7,"firstWord":1862,"lastWord":1888},
+    {"startSeconds":730.5,"endSeconds":741.823,"chapter":"chapter_23","lineId":"yladl3j5","confidence":1,"matchedWords":8,"lineWords":8,"firstWord":1893,"lastWord":1918},
+    {"startSeconds":779.1,"endSeconds":781.702,"chapter":"chapter_23","lineId":"4tcu7aep","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":2067,"lastWord":2073},
+    {"startSeconds":791.42,"endSeconds":796.36,"chapter":"chapter_23","lineId":"br2oe4tx","confidence":0.986,"matchedWords":7,"lineWords":7,"firstWord":2089,"lastWord":2102},
+    {"startSeconds":820.08,"endSeconds":870.6,"chapter":"chapter_23","lineId":"xbqefjso","confidence":0.986,"matchedWords":14,"lineWords":14,"firstWord":2184,"lastWord":2318},
+    {"startSeconds":902.74,"endSeconds":921.32,"chapter":"chapter_23","lineId":"uf4avkzo","confidence":0.897,"matchedWords":10,"lineWords":10,"firstWord":2402,"lastWord":2431},
+    {"startSeconds":928.88,"endSeconds":931.1,"chapter":"chapter_23","lineId":"yf6ojjqn","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":2458,"lastWord":2464},
+    {"startSeconds":949.8,"endSeconds":957.22,"chapter":"chapter_23","lineId":"kntb5bjp","confidence":1,"matchedWords":15,"lineWords":15,"firstWord":2533,"lastWord":2555},
+    {"startSeconds":961.14,"endSeconds":963.1,"chapter":"chapter_23","lineId":"gqks4qri","confidence":0.5,"matchedWords":4,"lineWords":8,"firstWord":2571,"lastWord":2574}
+  ]
+}

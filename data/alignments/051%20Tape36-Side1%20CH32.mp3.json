@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "051 Tape36-Side1 CH32.mp3",
+  "chapter": "chapter_32",
+  "transcript": "transcripts/051%20Tape36-Side1%20CH32.mp3.json",
+  "transcriptionId": "2faa4544-13f8-405e-8822-f860c23a2828",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    }
+  },
+  "stats": {
+    "transcriptWords": 4009,
+    "hebrewWords": 530,
+    "matchedWords": 8,
+    "chapterLines": 50,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}
