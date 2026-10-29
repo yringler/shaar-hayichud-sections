@@ -11,6 +11,7 @@ Hayichud comes from this directory:
 | `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
+| `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
@@ -342,12 +343,48 @@ every call and stops if one costs more than `--max-cents-per-call` (default
 ### `yarn align`
 
 Offline and deterministic; rerun after a transcript, chapter or the algorithm
-changes. Only lectures that teach a single chapter are aligned, against
-`chapters/chapter_NN.json`: the lecture's own `- Title` decides when it names
-one chapter (Markel's `- Chapter 3` under a `## Part`), else its innermost
-heading, at any depth. `Chapter 10`, `Ch 10` and `Chapter 32 Part 2 to end`
-count; Q and A, introductions, addenda, `More on Chapter 28` and multi-chapter
-titles (`Chapters 15 and 16`, `Ch 1-2`) are skipped.
+changes. Lectures that teach one or two chapters are aligned, against
+`chapters/chapter_NN.json`. Which chapters: an entry in
+`alignment-chapters.json` (below), else the lecture's own `- Title` when it
+names chapters (Markel's `- Chapter 3` or `- End Chapter 34 and Chapter 35`
+under a `## Part`), else its innermost heading, at any depth. `Chapter 10`,
+`Ch 10`, `Chapter 32 Part 2 to end`, `Chapter 42 Part 2`, `End Chapter 50`,
+`Chapters 41 and 42`, `End Chapter 29 and 30` count; Q and A, introductions,
+addenda (`Chapter 46 Addendum` falls back to its heading), `More on Chapter 28`
+and ranges (`Ch 1-2`) are skipped.
+
+**Classes that read two chapters** (a tape that finishes one chapter and
+starts the next) are aligned against both chapters' lines concatenated in
+reading order, in the same single monotonic pass, so the path finds the
+switch itself and the segments carry both `chapter` keys. Naming a chapter the
+class does not read is harmless: it gets no lines (`218`, titled "End Chapter
+43 and Chapter 44", only reads 44). The file's top-level `chapter` is the one
+with the most aligned lines, `stats.chapters` breaks the counts down per
+chapter, and the data build lists the class on every chapter it has segments
+in. On the 20 Markel two-chapter tapes this put every switch where the teacher
+announces the next chapter (October 2026 spot checks), and the per-chapter line
+ranges join up with the neighbouring tapes'.
+
+`alignment-chapters.json` maps a lecture ID to the chapters it reads, for
+classes the catalog labels with one chapter but that read two (found by
+aligning every class against its neighbouring chapters too):
+
+```json
+{ "lectures": {
+  "008 Tape019-Side1-Ch12.mp3": ["chapter_12", "chapter_13"],
+  "216 Tape47-Side1Ch42&43-.mp3": [
+    { "chapter": "chapter_42", "fromSeconds": 0 },
+    { "chapter": "chapter_43", "fromSeconds": 382.4, "evidence": "…", "confidence": "high" }
+  ]
+} }
+```
+
+A list of chapter keys is aligned as above. A list of ranges (increasing
+`fromSeconds`, the first at 0, each running to the next) aligns each stretch to
+its chapter alone, for a class that goes back and forth between chapters; a
+chapter may repeat, and a line heard in two ranges keeps its better one. Other
+fields on a range are notes for people. `yarn align` and the tests reject
+unknown lectures or chapters.
 
 The class reads the text aloud phrase by phrase and explains it in English with
 Hebrew terms mixed in. `src/align.ts` keeps the transcript's Hebrew words,
@@ -371,7 +408,8 @@ the transcript's `result.timestamps`, along with `transcript` (its path), `metho
 and `stats`. The build validates it against that schema and checks every line ID.
 
 `--after-previous` starts the search a few lines before the last line the
-previous class of the same chapter reached, for classes that open with a recap.
+previous class reading the same (first) chapter reached, for classes that open
+with a recap. It does not apply to range overrides.
 
 To extend to more classes: transcribe a heading (for example `--section 5` for
 Chapter 11), run `yarn align --section 5 --verbose`, spot-check a few lines

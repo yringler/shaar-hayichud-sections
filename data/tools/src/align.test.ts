@@ -3,6 +3,8 @@ import { describe, it } from 'node:test';
 import {
   alignTokens,
   alignTranscript,
+  alignTranscriptByRanges,
+  alignTranscriptToChapters,
   chapterTokens,
   DEFAULT_ALIGN_OPTIONS,
   linesFromMatches,
@@ -201,5 +203,78 @@ describe('alignTranscript', () => {
       lines.map((l) => l.lineId),
       ['cccccccc'],
     );
+  });
+});
+
+const nextChapter: Chapter = [
+  {
+    children: [
+      { id: 'ffffffff', text: 'ומעתה יש להבין בענין שרש האותיות דמחשבה' },
+      { id: 'gggggggg', text: 'שהן בחינת לבושים ולא כלים כלל' },
+    ],
+  },
+];
+
+describe('alignTranscriptToChapters', () => {
+  const parts = [
+    { key: 'chapter_10', chapter },
+    { key: 'chapter_11', chapter: nextChapter },
+  ];
+
+  it('finds where a class that ends one chapter moves on to the next', () => {
+    const w = [
+      ...words('והוא הנקרא מאריך באחד באחדות הפשוטה דוקא', 0),
+      ...words('ונחלק לג׳ מדריגות דרך כלל', 10),
+      // Explanation that mentions a term of the next chapter before reading it.
+      ...words('that is the end of the chapter and the לבושים come next okay go ahead', 20),
+      ...words('ומעתה יש להבין בענין שרש האותיות דמחשבה', 60),
+      ...words('שהן בחינת לבושים ולא כלים כלל', 70),
+    ];
+    const r = alignTranscriptToChapters(w, parts);
+    assert.deepEqual(
+      r.lines.map((l) => [l.chapter, l.lineId]),
+      [
+        ['chapter_10', 'dddddddd'],
+        ['chapter_10', 'eeeeeeee'],
+        ['chapter_11', 'ffffffff'],
+        ['chapter_11', 'gggggggg'],
+      ],
+    );
+    assert.equal(r.lines[2]!.startSeconds, 60);
+    assert.equal(r.lines[2]!.lineIndex, 5, 'line indexes count across the concatenation');
+    assert.deepEqual(r.lineChapters, [...Array(5).fill('chapter_10'), 'chapter_11', 'chapter_11']);
+  });
+
+  it('gives a chapter the class does not read no lines', () => {
+    const w = words('אך הנה מתחלה יש לכל מתבונן להתבונן במקור הראשון גם שם דרך פרט דוקא', 0);
+    const r = alignTranscriptToChapters(w, parts);
+    assert.ok(r.lines.length > 0);
+    assert.ok(r.lines.every((l) => l.chapter === 'chapter_10'));
+  });
+});
+
+describe('alignTranscriptByRanges', () => {
+  it('aligns each time range to its own chapter, with word indexes into the whole transcript', () => {
+    const w = [
+      ...words('גם שם דרך פרט דוקא', 0),
+      ...words('ומעתה יש להבין בענין שרש האותיות דמחשבה', 30),
+      // Goes back to the first chapter and reads a line again, less clearly.
+      ...words('גם שם דרך', 60),
+    ];
+    const r = alignTranscriptByRanges(w, [
+      { key: 'chapter_10', chapter, fromSeconds: 0 },
+      { key: 'chapter_11', chapter: nextChapter, fromSeconds: 25 },
+      { key: 'chapter_10', chapter, fromSeconds: 55 },
+    ]);
+    assert.deepEqual(
+      r.lines.map((l) => [l.chapter, l.lineId, l.startSeconds]),
+      [
+        ['chapter_10', 'cccccccc', 0],
+        ['chapter_11', 'ffffffff', 30],
+      ],
+    );
+    const f = r.lines[1]!;
+    assert.equal(f.lineIndex, 0, 'index within its own chapter');
+    assert.equal(w[f.firstWord]!.word, 'ומעתה');
   });
 });

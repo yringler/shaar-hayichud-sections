@@ -128,7 +128,7 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - The source is `../data/classes.txt`. The data build turns it into `catalog.json`, a tree of series → sections → lectures with stable IDs and one canonical `url` per lecture. Hugo never parses `classes.txt` itself.
 - `content/classes/_content.gotmpl` creates one page per series and one page per child section, with slugs built from the titles. Series that have been renamed keep their old URLs as aliases.
 - Templates use the lecture `url` exactly as given and never build URLs themselves.
-- Each track links to its transcript page and to the chapter it is aligned to ("Follow in the text"), when those are published.
+- Each track links to its transcript page and to the chapter it is aligned to ("Follow in the text"), when those are published. A class aligned to two chapters links to both ("Follow in the text: Ch 34", "Ch 35"), its transcript page names both, and both chapter pages list it; `audio/index.html`'s `aligned` entry carries the chapter with the most aligned lines plus `all`.
 
 ## Audio on chapter pages and transcript pages
 

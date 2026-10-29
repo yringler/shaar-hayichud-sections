@@ -1,29 +1,42 @@
 /**
  * yarn align — align stored transcripts (data/transcripts/) to the lines of
- * the chapter each class teaches, writing data/alignments/<encoded id>.json.
+ * the chapter(s) each class teaches, writing data/alignments/<encoded id>.json.
  *
- * Offline and deterministic: rerun it whenever a transcript, a chapter or
- * the alignment code changes. By default it aligns every lecture that has a
- * stored transcript and teaches one chapter (chapterKeyFor:
- * a "Chapter N" heading or lecture title, at any depth); narrow it with
- * --lecture <id> / --section <heading id>. --after-previous starts the
- * search a few lines before the last line aligned in the previous class of
- * the same chapter (useful when a class opens by recapping earlier text).
- * --verbose prints every aligned line with the transcript words it matched.
+ * Offline and deterministic: rerun it whenever a transcript, a chapter, the
+ * chapter overrides or the alignment code changes. By default it aligns
+ * every lecture that has a stored transcript and teaches one or two
+ * chapters (chapterKeysFor: data/alignment-chapters.json, else a "Chapter N"
+ * / "End Chapter N and Chapter M" lecture title, else its innermost
+ * heading); narrow it with --lecture <id> / --section <heading id>. A class
+ * that reads two chapters is aligned against their lines concatenated in
+ * reading order, so its segments carry both chapters; an override with
+ * time ranges aligns each range to its own chapter instead.
+ * --after-previous starts the search a few lines before the last line
+ * aligned in the previous class of the same chapter (useful when a class
+ * opens by recapping earlier text). --verbose prints every aligned line
+ * with the transcript words it matched.
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
-import { alignTranscript, DEFAULT_ALIGN_OPTIONS, type AlignOptions } from '../align.js';
-import type { Chapter } from '../chapter.js';
+import {
+  alignTranscriptByRanges,
+  alignTranscriptToChapters,
+  DEFAULT_ALIGN_OPTIONS,
+  type AlignOptions,
+  type LineAlignment,
+} from '../align.js';
+import { walkLines, type Chapter } from '../chapter.js';
 import { parseClassesTxt } from '../parse.js';
 import { DATA_DIR, defaultPaths } from '../pipeline.js';
 import {
   alignmentPath,
-  chapterKeyFor,
+  chapterKeysFor,
   lectureContexts,
+  parseChapterOverrides,
   selectLectures,
   transcriptPath,
+  type ChapterOverride,
   type StoredAlignment,
   type StoredTranscript,
 } from '../transcripts.js';
@@ -41,6 +54,25 @@ const { values } = parseArgs({
 const paths = defaultPaths();
 const parsed = parseClassesTxt(readFileSync(paths.classesTxt, 'utf8'));
 const all = lectureContexts(parsed.series);
+
+const OVERRIDES_FILE = path.join(DATA_DIR, 'alignment-chapters.json');
+const chapterFiles = new Set(
+  readdirSync(paths.chaptersDir)
+    .filter((f) => /^chapter_\d+\.json$/.test(f))
+    .map((f) => f.replace(/\.json$/, '')),
+);
+const { overrides, errors: overrideErrors } = existsSync(OVERRIDES_FILE)
+  ? parseChapterOverrides(
+      JSON.parse(readFileSync(OVERRIDES_FILE, 'utf8')),
+      new Set(all.map((c) => c.lecture.id)),
+      chapterFiles,
+    )
+  : { overrides: new Map<string, ChapterOverride>(), errors: [] };
+if (overrideErrors.length > 0) {
+  for (const e of overrideErrors) console.error(`alignment-chapters.json: ${e}`);
+  process.exit(2);
+}
+
 const picked =
   values.lecture.length + values.section.length > 0
     ? selectLectures(all, values.lecture, values.section)
@@ -64,57 +96,107 @@ const loadChapter = (key: string): Chapter => {
   }
   return ch;
 };
+/** Line id -> index within its chapter. */
+const lineIndexes = new Map<string, Map<string, number>>();
+const lineIndexIn = (key: string): Map<string, number> => {
+  let m = lineIndexes.get(key);
+  if (!m) {
+    m = new Map([...walkLines(loadChapter(key))].map(({ line }, i) => [line.id, i]));
+    lineIndexes.set(key, m);
+  }
+  return m;
+};
 
 /** How many lines before the previous class's last line to start from, with --after-previous. */
 const RECAP_LINES = 3;
 
 for (const ctx of todo) {
   const id = ctx.lecture.id;
-  const chapterKey = chapterKeyFor(ctx);
-  if (!chapterKey) {
-    console.log(`${id}\n  skip: teaches no single chapter (no "Chapter N" heading or title)`);
+  const keys = chapterKeysFor(ctx, overrides);
+  if (keys.length === 0) {
+    console.log(`${id}\n  skip: teaches no chapter (no "Chapter N" heading or title, no alignment-chapters.json entry)`);
     continue;
   }
   const transcriptFile = transcriptPath(DATA_DIR, id);
   const transcript = JSON.parse(readFileSync(transcriptFile, 'utf8')) as StoredTranscript;
   const words = transcript.result.timestamps ?? [];
-  const chapter = loadChapter(chapterKey);
+  const ranges = overrides.get(id)?.ranges;
 
   const options: AlignOptions = { ...DEFAULT_ALIGN_OPTIONS };
   if (values['min-confidence']) options.minConfidence = Number(values['min-confidence']);
-  if (values['after-previous']) {
-    const siblings = all.filter((c) => chapterKeyFor(c) === chapterKey);
-    const prev = siblings[siblings.indexOf(ctx) - 1];
+  if (values['after-previous'] && !ranges) {
+    // The previous class in catalog order that also reads our first chapter.
+    const first = keys[0]!;
+    const before = all.slice(0, all.indexOf(ctx)).filter((c) => chapterKeysFor(c, overrides).includes(first));
+    const prev = before[before.length - 1];
     const prevFile = prev && alignmentPath(DATA_DIR, prev.lecture.id);
     if (prevFile && existsSync(prevFile)) {
       const prevAlign = JSON.parse(readFileSync(prevFile, 'utf8')) as StoredAlignment;
-      options.startLine = Math.max(0, prevAlign.stats.lastLineIndex - RECAP_LINES);
+      const last = prevAlign.segments.filter((s) => s.chapter === first).at(-1);
+      const idx = last ? lineIndexIn(first).get(last.lineId) : undefined;
+      if (idx !== undefined) options.startLine = Math.max(0, idx - RECAP_LINES);
     }
   }
 
-  const result = alignTranscript(words, chapter, options);
-  const segs = result.lines;
+  const parts = keys.map((key) => ({ key, chapter: loadChapter(key) }));
+  const result = ranges
+    ? alignTranscriptByRanges(
+        words,
+        ranges.map((r) => ({ key: r.chapter, chapter: loadChapter(r.chapter), fromSeconds: r.fromSeconds })),
+        options,
+      )
+    : alignTranscriptToChapters(words, parts, options);
+  const segs: (LineAlignment & { chapter: string })[] = result.lines;
+
+  // Line indexes across the chapters concatenated in reading order.
+  const offsets = new Map<string, number>();
+  let total = 0;
+  const perChapter = keys.map((key) => {
+    const index = lineIndexIn(key);
+    offsets.set(key, total);
+    total += index.size;
+    const mine = segs.filter((s) => s.chapter === key).map((s) => index.get(s.lineId)!);
+    return {
+      chapter: key,
+      chapterLines: index.size,
+      alignedLines: mine.length,
+      firstLineIndex: mine.length ? Math.min(...mine) : -1,
+      lastLineIndex: mine.length ? Math.max(...mine) : -1,
+    };
+  });
+  const globalIndex = (s: { chapter: string; lineId: string }) =>
+    offsets.get(s.chapter)! + lineIndexIn(s.chapter).get(s.lineId)!;
+  const indexes = segs.map(globalIndex);
+  // The chapter the class mostly reads (the first on a tie): its catalog chapter
+  // for one that only opens with the end of the previous chapter.
+  const mainChapter = perChapter.reduce((a, b) => (b.alignedLines > a.alignedLines ? b : a)).chapter;
+
   const alignment: StoredAlignment = {
     schemaVersion: 1,
     lectureId: id,
-    chapter: chapterKey,
+    chapter: mainChapter,
     transcript: path.relative(DATA_DIR, transcriptFile).split(path.sep).join('/'),
     transcriptionId: transcript.sofer.transcriptionId,
-    method: { name: 'monotonic-dp', version: 1, options },
+    method: {
+      name: ranges ? 'monotonic-dp-ranges' : 'monotonic-dp',
+      version: 1,
+      options: ranges ? { ...options, ranges } : options,
+    },
     stats: {
       transcriptWords: words.length,
       hebrewWords: result.hebrewWords,
       matchedWords: result.matchedWords,
-      chapterLines: result.chapterLines.length,
+      chapterLines: total,
       alignedLines: segs.length,
-      firstLineIndex: segs[0]?.lineIndex ?? -1,
-      lastLineIndex: segs[segs.length - 1]?.lineIndex ?? -1,
+      firstLineIndex: indexes.length ? Math.min(...indexes) : -1,
+      lastLineIndex: indexes.length ? Math.max(...indexes) : -1,
       meanConfidence: round(segs.reduce((s, x) => s + x.confidence, 0) / Math.max(1, segs.length)),
+      ...(keys.length > 1 ? { chapters: perChapter } : {}),
     },
     segments: segs.map((s) => ({
       startSeconds: round(s.startSeconds),
       endSeconds: round(s.endSeconds),
-      chapter: chapterKey,
+      chapter: s.chapter,
       lineId: s.lineId,
       confidence: round(s.confidence),
       matchedWords: s.matchedWords,
@@ -127,16 +209,23 @@ for (const ctx of todo) {
   mkdirSync(path.dirname(out), { recursive: true });
   writeFileSync(out, formatAlignment(alignment));
   const st = alignment.stats;
+  for (const c of perChapter) {
+    const mine = segs.filter((s) => s.chapter === c.chapter);
+    const when = mine.length ? ` at ${fmt(mine[0]!.startSeconds)}-${fmt(Math.max(...mine.map((s) => s.endSeconds)))}` : '';
+    if (c === perChapter[0]) console.log(id);
+    console.log(
+      `  ${c.chapter}: ${c.alignedLines} lines (index ${c.firstLineIndex}..${c.lastLineIndex} of ${c.chapterLines})${when}`,
+    );
+  }
   console.log(
-    `${id}\n  ${chapterKey}: ${st.alignedLines} lines (index ${st.firstLineIndex}..${st.lastLineIndex} of ${st.chapterLines}),` +
-      ` mean confidence ${st.meanConfidence}; ${st.matchedWords}/${st.hebrewWords} Hebrew words matched -> ${path.relative(DATA_DIR, out)}`,
+    `  mean confidence ${st.meanConfidence}; ${st.matchedWords}/${st.hebrewWords} Hebrew words matched -> ${path.relative(DATA_DIR, out)}`,
   );
   if (values.verbose) {
     for (const s of segs) {
-      const line = result.chapterLines[s.lineIndex]!;
+      const text = [...walkLines(loadChapter(s.chapter))][lineIndexIn(s.chapter).get(s.lineId)!]!.line.text;
       const heard = words.slice(s.firstWord, s.lastWord + 1).map((w) => w.word).join(' ');
-      console.log(`  [${s.lineIndex}] ${fmt(s.startSeconds)}-${fmt(s.endSeconds)} c=${s.confidence.toFixed(2)}`);
-      console.log(`     text:  ${line.text}`);
+      console.log(`  [${s.chapter} ${lineIndexIn(s.chapter).get(s.lineId)}] ${fmt(s.startSeconds)}-${fmt(s.endSeconds)} c=${s.confidence.toFixed(2)}`);
+      console.log(`     text:  ${text}`);
       console.log(`     heard: ${heard}`);
     }
   }

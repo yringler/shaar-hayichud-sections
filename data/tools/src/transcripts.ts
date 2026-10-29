@@ -100,31 +100,111 @@ export function lectureContexts(series: ParsedSection[]): LectureContext[] {
 }
 
 /**
- * A title naming exactly one chapter: "Chapter 10", "Ch 10", "Chapter 32 Part 2
- * to end". Not "Chapters 15 and 16", "Chapter 15 Q and A", "More on Chapter 28",
+ * A title naming the one or two chapters a class reads: "Chapter 10", "Ch 10",
+ * "Chapter 32 Part 2 to end", "Chapter 42 Part 2", "End Chapter 50",
+ * "Chapters 41 and 42", "End Chapter 34 and Chapter 35", "End Chapter 29 and 30".
+ * Not "Chapter 15 Q and A", "More on Chapter 28", "Chapter 46 Addendum",
  * "Introduction" or a range like "Ch 1-2".
  */
-const SINGLE_CHAPTER = /^(?:chapter|ch\.?)\s*(\d+)(?:\s+part\s+\d+\s+to\s+(?:the\s+)?end)?$/i;
+const CHAPTER_TITLE =
+  /^(?:end\s+)?(?:chapters?|ch\.?)\s*(\d+)(?:\s+part\s+\d+(?:\s+to\s+(?:the\s+)?end)?)?(?:\s+and\s+(?:chapter\s+)?(\d+))?$/i;
 
-/** "Chapter 10" -> "chapter_10"; null when the title names no single chapter. */
-export function chapterKeyForTitle(title: string): string | null {
-  const m = SINGLE_CHAPTER.exec(title.trim());
-  return m ? `chapter_${m[1]!.padStart(2, '0')}` : null;
+export const chapterKey = (n: string | number) => `chapter_${String(n).padStart(2, '0')}`;
+
+/** "Chapter 10" -> ["chapter_10"], "Chapters 15 and 16" -> ["chapter_15", "chapter_16"]; [] when the title names none. */
+export function chapterKeysForTitle(title: string): string[] {
+  const m = CHAPTER_TITLE.exec(title.trim());
+  if (!m) return [];
+  return m[2] && m[2] !== m[1] ? [chapterKey(m[1]!), chapterKey(m[2])] : [chapterKey(m[1]!)];
 }
 
 /**
- * The chapter text a lecture teaches, for any catalog shape: the lecture's
- * own '- Title' when it names one chapter (Markel's "- Chapter 3" under a
- * "## Part"), else its innermost heading ("### Chapter 10", "### Ch 10").
- * Null for introductions, Q and A, addenda and multi-chapter classes.
+ * One entry of data/alignment-chapters.json: the chapters a class reads, in
+ * reading order, and optionally where in the recording each stretch starts.
  */
-export function chapterKeyFor(ctx: LectureContext): string | null {
+export interface ChapterOverride {
+  /** Distinct chapter keys in reading order. */
+  chapters: string[];
+  /** When given, each range is aligned to its chapter alone (alignTranscriptByRanges). */
+  ranges?: { chapter: string; fromSeconds: number }[];
+}
+
+/** Lecture id -> override, for classes whose catalog title or heading does not say. */
+export type ChapterOverrides = ReadonlyMap<string, ChapterOverride>;
+
+/**
+ * The chapter text(s) a lecture teaches, in reading order, for any catalog
+ * shape: an entry in `overrides`, else the lecture's own '- Title' when it
+ * names chapters (Markel's "- Chapter 3" or "- End Chapter 34 and Chapter 35"
+ * under a "## Part"), else its innermost heading ("### Chapter 10",
+ * "### Chapters 15 and 16"). Empty for introductions, Q and A and addenda.
+ */
+export function chapterKeysFor(ctx: LectureContext, overrides: ChapterOverrides = new Map()): string[] {
+  const listed = overrides.get(ctx.lecture.id);
+  if (listed) return listed.chapters;
   if (ctx.lecture.title !== null) {
-    const own = chapterKeyForTitle(ctx.lecture.title);
-    if (own) return own;
+    const own = chapterKeysForTitle(ctx.lecture.title);
+    if (own.length > 0) return own;
   }
   const inner = ctx.ancestors[ctx.ancestors.length - 1];
-  return inner ? chapterKeyForTitle(inner.title) : null;
+  return inner ? chapterKeysForTitle(inner.title) : [];
+}
+
+/**
+ * Parses data/alignment-chapters.json. Each lecture id maps to either
+ *  - chapter keys in reading order, ["chapter_12", "chapter_13"]: aligned in
+ *    one pass against their concatenation, which finds the switch itself; or
+ *  - ranges, [{ "chapter": "chapter_12", "fromSeconds": 0 },
+ *    { "chapter": "chapter_13", "fromSeconds": 1262.5, ... }], in increasing
+ *    `fromSeconds`, the first at 0: each stretch is aligned to its chapter
+ *    alone. Other fields on a range (evidence, confidence, source) are
+ *    notes for people and are ignored.
+ * Errors for unknown lectures, unknown chapters and malformed entries.
+ */
+export function parseChapterOverrides(
+  json: unknown,
+  lectureIds: ReadonlySet<string>,
+  chapterKeys: ReadonlySet<string>,
+): { overrides: Map<string, ChapterOverride>; errors: string[] } {
+  const overrides = new Map<string, ChapterOverride>();
+  const errors: string[] = [];
+  const lectures = (json as { lectures?: unknown } | null)?.lectures;
+  if (typeof lectures !== 'object' || lectures === null || Array.isArray(lectures)) {
+    return { overrides, errors: ['"lectures" must be an object of lecture id -> chapters'] };
+  }
+  for (const [id, value] of Object.entries(lectures)) {
+    if (!lectureIds.has(id)) errors.push(`${id}: not a lecture in classes.txt`);
+    if (!Array.isArray(value) || value.length === 0) {
+      errors.push(`${id}: must list one or more chapters`);
+      continue;
+    }
+    const known = (k: unknown) => {
+      if (typeof k !== 'string' || !chapterKeys.has(k)) errors.push(`${id}: no chapter file ${String(k)}`);
+    };
+    if (value.every((v) => typeof v === 'string')) {
+      value.forEach(known);
+      if (new Set(value).size !== value.length) errors.push(`${id}: a chapter is listed twice`);
+      overrides.set(id, { chapters: value as string[] });
+      continue;
+    }
+    const ranges: { chapter: string; fromSeconds: number }[] = [];
+    for (const [i, r] of value.entries()) {
+      const { chapter, fromSeconds } = (r ?? {}) as { chapter?: unknown; fromSeconds?: unknown };
+      if (typeof fromSeconds !== 'number' || !(fromSeconds >= 0)) {
+        errors.push(`${id}: range ${i} needs "chapter" and a "fromSeconds" >= 0`);
+        continue;
+      }
+      known(chapter);
+      ranges.push({ chapter: String(chapter), fromSeconds });
+    }
+    if (ranges.length !== value.length) continue;
+    if (ranges[0]!.fromSeconds !== 0) errors.push(`${id}: the first range must start at 0`);
+    for (let i = 1; i < ranges.length; i++) {
+      if (!(ranges[i]!.fromSeconds > ranges[i - 1]!.fromSeconds)) errors.push(`${id}: ranges must start in increasing order`);
+    }
+    overrides.set(id, { chapters: [...new Set(ranges.map((r) => r.chapter))], ranges });
+  }
+  return { overrides, errors };
 }
 
 /**
@@ -187,7 +267,9 @@ export function selectLectures(
 /**
  * data/alignments/<encoded lecture id>.json. A superset of the published
  * v1 alignment shape (schema/v1/alignment.schema.json): the build validates
- * it against that schema and checks that every lineId exists in `chapter`.
+ * it against that schema and checks that every segment's lineId exists in
+ * the segment's `chapter`. A class that reads two chapters has segments in
+ * both; the top-level `chapter` is the one with the most aligned lines.
  */
 export interface StoredAlignment {
   schemaVersion: 1;
@@ -206,6 +288,19 @@ export interface StoredAlignment {
     firstLineIndex: number;
     lastLineIndex: number;
     meanConfidence: number;
+    /**
+     * Only for a class aligned against several chapters (their lines
+     * concatenated in reading order; the line indexes above count across
+     * them): per chapter, its lines and the ones aligned, with indexes
+     * within that chapter (-1 when none).
+     */
+    chapters?: {
+      chapter: string;
+      chapterLines: number;
+      alignedLines: number;
+      firstLineIndex: number;
+      lastLineIndex: number;
+    }[];
   };
   segments: {
     startSeconds: number;

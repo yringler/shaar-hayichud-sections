@@ -376,3 +376,85 @@ export function alignTranscript(
     matchedWords: matches.length,
   };
 }
+
+/** One chapter of a class that may teach several, in reading order. */
+export interface ChapterPart {
+  /** Chapter file key, e.g. "chapter_15". */
+  key: string;
+  chapter: Chapter;
+}
+
+/**
+ * alignTranscript against several chapters read one after the other (a
+ * class that finishes one chapter and starts the next). Their lines are
+ * concatenated in the given order and aligned in one monotonic pass, so the
+ * path itself finds where the reading moves on. `lineIndex`, `chapterLines`
+ * and `startLine` count lines across the concatenation. A chapter the class
+ * does not read simply gets no lines.
+ */
+export function alignTranscriptToChapters(
+  words: SoferWord[],
+  parts: ChapterPart[],
+  options: Partial<AlignOptions> = {},
+): Omit<ReturnType<typeof alignTranscript>, 'lines'> & {
+  lines: (LineAlignment & { chapter: string })[];
+  /** Chapter key of every line of the concatenation, by lineIndex. */
+  lineChapters: string[];
+} {
+  const lineChapters: string[] = [];
+  for (const p of parts) for (const _ of walkLines(p.chapter)) lineChapters.push(p.key);
+  const result = alignTranscript(
+    words,
+    parts.flatMap((p) => p.chapter),
+    options,
+  );
+  return {
+    ...result,
+    lines: result.lines.map((l) => ({ ...l, chapter: lineChapters[l.lineIndex]! })),
+    lineChapters,
+  };
+}
+
+/** A stretch of the recording, from `fromSeconds` to the next range's start, that reads one chapter. */
+export interface ChapterRange extends ChapterPart {
+  fromSeconds: number;
+}
+
+/**
+ * Aligns each time range of the transcript to its own chapter, for a class
+ * whose chapter switches were marked by hand (or by a reader agent):
+ * ranges in increasing `fromSeconds`, each running to the next one's start.
+ * A chapter may appear in more than one range (the teacher goes back); a
+ * line aligned in two ranges keeps its higher-confidence one. `lineIndex`
+ * is the line's index within its own chapter.
+ */
+export function alignTranscriptByRanges(
+  words: SoferWord[],
+  ranges: ChapterRange[],
+  options: Partial<AlignOptions> = {},
+): { lines: (LineAlignment & { chapter: string })[]; hebrewWords: number; matchedWords: number } {
+  const best = new Map<string, LineAlignment & { chapter: string }>();
+  let hebrewWords = 0;
+  let matchedWords = 0;
+  ranges.forEach((r, i) => {
+    const to = ranges[i + 1]?.fromSeconds ?? Infinity;
+    const index: number[] = [];
+    const sub: SoferWord[] = [];
+    words.forEach((w, k) => {
+      if (w.start >= r.fromSeconds && w.start < to) {
+        index.push(k);
+        sub.push(w);
+      }
+    });
+    const res = alignTranscript(sub, r.chapter, options);
+    hebrewWords += res.hebrewWords;
+    matchedWords += res.matchedWords;
+    for (const l of res.lines) {
+      const line = { ...l, chapter: r.key, firstWord: index[l.firstWord]!, lastWord: index[l.lastWord]! };
+      const prev = best.get(l.lineId);
+      if (!prev || line.confidence > prev.confidence) best.set(l.lineId, line);
+    }
+  });
+  const lines = [...best.values()].sort((a, b) => a.startSeconds - b.startSeconds || a.lineIndex - b.lineIndex);
+  return { lines, hebrewWords, matchedWords };
+}

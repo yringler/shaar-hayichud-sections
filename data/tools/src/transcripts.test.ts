@@ -8,8 +8,9 @@ import { parseClassesTxt } from './parse.js';
 import { chooseSource, ensureFolderPath, pickExisting, SoferClient, type SoferFolder } from './sofer.js';
 import { defaultSourcePaths, validateSources } from './sources.js';
 import {
-  chapterKeyFor,
-  chapterKeyForTitle,
+  chapterKeysFor,
+  chapterKeysForTitle,
+  parseChapterOverrides,
   folderPathFor,
   formatTranscript,
   lectureContexts,
@@ -42,9 +43,9 @@ describe('lecture contexts', () => {
     assert.deepEqual(folderPathFor(b!), ['Series', 'Chapters 10-11', 'Chapter 10']);
     assert.equal(soferTitleFor(b!), 'First [b.mp3]');
     assert.equal(soferTitleFor(c!), 'Part 2 [c.mp3]');
-    assert.equal(chapterKeyFor(b!), 'chapter_10');
-    assert.equal(chapterKeyFor(a!), null);
-    assert.equal(chapterKeyFor(d!), null);
+    assert.deepEqual(chapterKeysFor(b!), ['chapter_10']);
+    assert.deepEqual(chapterKeysFor(a!), []);
+    assert.deepEqual(chapterKeysFor(d!), []);
   });
 
   it('handles the Markel shape: titled lectures next to sub-headings get their own folder', () => {
@@ -72,14 +73,14 @@ describe('lecture contexts', () => {
     const by = (id: string) => markel.find((c) => c.lecture.id === id)!;
     assert.deepEqual(folderPathFor(by('001 Intro.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Introduction']);
     assert.equal(soferTitleFor(by('001 Intro.mp3')), 'Introduction [001 Intro.mp3]');
-    assert.equal(chapterKeyFor(by('001 Intro.mp3')), null);
+    assert.deepEqual(chapterKeysFor(by('001 Intro.mp3')), []);
     assert.deepEqual(folderPathFor(by('002 a.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Chapter 10']);
     assert.equal(soferTitleFor(by('003 b.mp3')), 'Part 2 [003 b.mp3]');
-    assert.equal(chapterKeyFor(by('003 b.mp3')), 'chapter_10');
+    assert.deepEqual(chapterKeysFor(by('003 b.mp3')), ['chapter_10']);
     assert.deepEqual(folderPathFor(by('old-id.mp3')), ['Markel', 'Part 1: Chapters 10-15', 'Chapter 3']);
-    assert.equal(chapterKeyFor(by('old-id.mp3')), 'chapter_03');
-    assert.equal(chapterKeyFor(by('022 d.mp3')), null);
-    assert.equal(chapterKeyFor(by('030 e.mp3')), 'chapter_32');
+    assert.deepEqual(chapterKeysFor(by('old-id.mp3')), ['chapter_03']);
+    assert.deepEqual(chapterKeysFor(by('022 d.mp3')), ['chapter_15', 'chapter_16']);
+    assert.deepEqual(chapterKeysFor(by('030 e.mp3')), ['chapter_32']);
     // --section on the part takes the loose lectures and the ones under its sub-headings.
     assert.deepEqual(
       selectLectures(markel, [], ['38']).selected.map((c) => c.lecture.id),
@@ -105,13 +106,78 @@ describe('lecture contexts', () => {
     assert.equal(w.some((c) => c.standalone), false);
   });
 
-  it('chapterKeyForTitle names single chapters only', () => {
-    assert.equal(chapterKeyForTitle('Chapter 10'), 'chapter_10');
-    assert.equal(chapterKeyForTitle('Ch 7'), 'chapter_07');
-    assert.equal(chapterKeyForTitle('Chapter 40 part 2 to End'), 'chapter_40');
-    for (const t of ['Chapters 15 and 16', 'Chapter 15 Q and A', 'More on Chapter 28', 'Ch 1-2', 'Introduction']) {
-      assert.equal(chapterKeyForTitle(t), null, t);
+  it('chapterKeysForTitle names the one or two chapters a title gives', () => {
+    const cases: [string, string[]][] = [
+      ['Chapter 10', ['chapter_10']],
+      ['Ch 7', ['chapter_07']],
+      ['Chapter 40 part 2 to End', ['chapter_40']],
+      ['Chapter 42 Part 2', ['chapter_42']],
+      ['End Chapter 50', ['chapter_50']],
+      ['Chapters 15 and 16', ['chapter_15', 'chapter_16']],
+      ['Chapters 41 and 42', ['chapter_41', 'chapter_42']],
+      ['End Chapter 34 and Chapter 35', ['chapter_34', 'chapter_35']],
+      ['End Chapter 29 and 30', ['chapter_29', 'chapter_30']],
+    ];
+    for (const [t, keys] of cases) assert.deepEqual(chapterKeysForTitle(t), keys, t);
+    for (const t of ['Chapter 15 Q and A', 'More on Chapter 28', 'Chapter 46 Addendum', 'Ch 1-2', 'Introduction', 'Part 1: Chapters 10-15']) {
+      assert.deepEqual(chapterKeysForTitle(t), [], t);
     }
+  });
+
+  it('an override names the chapters, or time ranges per chapter', () => {
+    const ids = new Set(['a.mp3', 'b.mp3']);
+    const chapters = new Set(['chapter_12', 'chapter_13']);
+    const ok = parseChapterOverrides(
+      {
+        lectures: {
+          'a.mp3': ['chapter_12', 'chapter_13'],
+          'b.mp3': [
+            { chapter: 'chapter_12', fromSeconds: 0 },
+            { chapter: 'chapter_13', fromSeconds: 1262.5, evidence: 'Okay, י"ג. והנה', confidence: 'high' },
+            { chapter: 'chapter_12', fromSeconds: 1500 },
+          ],
+        },
+      },
+      ids,
+      chapters,
+    );
+    assert.deepEqual(ok.errors, []);
+    assert.deepEqual(ok.overrides.get('a.mp3'), { chapters: ['chapter_12', 'chapter_13'] });
+    assert.deepEqual(ok.overrides.get('b.mp3')!.chapters, ['chapter_12', 'chapter_13']);
+    assert.equal(ok.overrides.get('b.mp3')!.ranges!.length, 3);
+    // The override wins over the catalog.
+    assert.deepEqual(chapterKeysFor(all[1]!, new Map([['b.mp3', { chapters: ['chapter_12'] }]])), ['chapter_12']);
+
+    const bad = parseChapterOverrides(
+      {
+        lectures: {
+          'x.mp3': ['chapter_12'],
+          'a.mp3': ['chapter_99', 'chapter_12', 'chapter_12'],
+          'b.mp3': [
+            { chapter: 'chapter_12', fromSeconds: 5 },
+            { chapter: 'chapter_13', fromSeconds: 2 },
+          ],
+        },
+      },
+      ids,
+      chapters,
+    );
+    assert.deepEqual(bad.errors, [
+      'x.mp3: not a lecture in classes.txt',
+      'a.mp3: no chapter file chapter_99',
+      'a.mp3: a chapter is listed twice',
+      'b.mp3: the first range must start at 0',
+      'b.mp3: ranges must start in increasing order',
+    ]);
+  });
+
+  it('data/alignment-chapters.json names catalog lectures and chapter files', () => {
+    const paths = defaultPaths();
+    const real = lectureContexts(parseClassesTxt(readFileSync(paths.classesTxt, 'utf8')).series);
+    const file = path.join(path.dirname(paths.classesTxt), 'alignment-chapters.json');
+    const keys = new Set(readdirSync(paths.chaptersDir).map((f) => f.replace(/\.json$/, '')));
+    const r = parseChapterOverrides(JSON.parse(readFileSync(file, 'utf8')), new Set(real.map((c) => c.lecture.id)), keys);
+    assert.deepEqual(r.errors, []);
   });
 
   it('committed transcripts are in the Sofer folder the catalog gives them', () => {

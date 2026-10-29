@@ -214,6 +214,11 @@ export function publishAlignment(a: SourceAlignment, minConfidence: number): Pub
   };
 }
 
+/** The chapters an alignment covers: its `chapter`, then its segments' chapters, in order of first appearance. */
+export function alignmentChapters(a: Pick<PublishedAlignment, 'chapter' | 'segments'>): string[] {
+  return [...new Set([a.chapter, ...a.segments.map((s) => s.chapter)])];
+}
+
 /** alignments/chapters/<key>.json (schema/v1/chapter-alignments.schema.json). */
 export interface ChapterAlignments {
   schemaVersion: 1;
@@ -418,7 +423,10 @@ export function publishAudio(input: PublishInput): PublishedAudio {
       const p = `alignments/${fileOf(id)}`;
       files.set(p, a);
       out.alignmentItems.push({ id, path: p, schema: 'schema/alignment.schema.json' });
-      alignmentsByChapter.set(a.chapter, [...(alignmentsByChapter.get(a.chapter) ?? []), a]);
+      // A class that reads two chapters is listed on both chapters' indexes.
+      for (const key of alignmentChapters(a)) {
+        alignmentsByChapter.set(key, [...(alignmentsByChapter.get(key) ?? []), a]);
+      }
     }
     if (existsSync(transcriptFile)) {
       const raw = readJson(transcriptFile) as StoredTranscriptLike;

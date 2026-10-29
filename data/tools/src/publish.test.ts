@@ -8,6 +8,7 @@ import type { Chapter } from './chapter.js';
 import { parseClassesTxt } from './parse.js';
 import { build, DATA_DIR, defaultPaths } from './pipeline.js';
 import {
+  alignmentChapters,
   chapterAlignments,
   chapterKeyOf,
   lectureInfos,
@@ -226,6 +227,15 @@ describe('chapterAlignments', () => {
       },
       { lineId: 'cccccccc', refs: [{ lecture: 1, startSeconds: 30, endSeconds: 35, confidence: 0.9 }] },
     ]);
+  });
+
+  it('a class that reads two chapters contributes only its own chapter\'s segments to each index', () => {
+    const two = al('a.mp3', [seg('aaaaaaaa', 10, 0.8), { ...seg('zzzzzzzz', 300, 0.9), chapter: 'chapter_04' }]);
+    assert.deepEqual(alignmentChapters(two), ['chapter_03', 'chapter_04']);
+    assert.deepEqual(alignmentChapters(al('b.mp3', [])), ['chapter_03']);
+    const r = chapterAlignments('chapter_03', chapter, [two], infos, new Set());
+    assert.deepEqual(r.lines.map((l) => l.lineId), ['aaaaaaaa']);
+    assert.deepEqual(r.lectures.map((l) => l.id), ['a.mp3']);
   });
 });
 
