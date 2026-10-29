@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/15%20-%20Chap-%2010-9%20%20Atzmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,12 +34,12 @@
     "meanConfidence": 0.922
   },
   "segments": [
-    {"startSeconds":30.82,"endSeconds":57.94,"chapter":"chapter_10","lineId":"acwrgywe","confidence":0.994,"matchedWords":17,"lineWords":17,"firstWord":85,"lastWord":131},
-    {"startSeconds":103.18,"endSeconds":177.421,"chapter":"chapter_10","lineId":"6wdk5zh3","confidence":0.952,"matchedWords":28,"lineWords":29,"firstWord":237,"lastWord":435},
-    {"startSeconds":337.44,"endSeconds":351.159,"chapter":"chapter_10","lineId":"pyoebevr","confidence":1,"matchedWords":12,"lineWords":13,"firstWord":933,"lastWord":967},
-    {"startSeconds":385.18,"endSeconds":393.14,"chapter":"chapter_10","lineId":"aayd4hpd","confidence":0.748,"matchedWords":11,"lineWords":14,"firstWord":1069,"lastWord":1084},
-    {"startSeconds":467.48,"endSeconds":475.12,"chapter":"chapter_10","lineId":"wnms4r4h","confidence":0.93,"matchedWords":9,"lineWords":9,"firstWord":1309,"lastWord":1323},
-    {"startSeconds":482.24,"endSeconds":487.4,"chapter":"chapter_10","lineId":"4wskhb56","confidence":0.945,"matchedWords":22,"lineWords":22,"firstWord":1347,"lastWord":1368},
-    {"startSeconds":697.8,"endSeconds":724.963,"chapter":"chapter_10","lineId":"uuzf3ey2","confidence":0.885,"matchedWords":20,"lineWords":22,"firstWord":1975,"lastWord":2036}
+    {"startSeconds":31.46,"endSeconds":57.9,"chapter":"chapter_10","lineId":"acwrgywe","confidence":0.994,"matchedWords":17,"lineWords":17,"firstWord":85,"lastWord":131},
+    {"startSeconds":104.04,"endSeconds":181.06,"chapter":"chapter_10","lineId":"6wdk5zh3","confidence":0.952,"matchedWords":28,"lineWords":29,"firstWord":237,"lastWord":435},
+    {"startSeconds":338.5,"endSeconds":351.22,"chapter":"chapter_10","lineId":"pyoebevr","confidence":1,"matchedWords":12,"lineWords":13,"firstWord":933,"lastWord":967},
+    {"startSeconds":386.14,"endSeconds":392.84,"chapter":"chapter_10","lineId":"aayd4hpd","confidence":0.748,"matchedWords":11,"lineWords":14,"firstWord":1069,"lastWord":1084},
+    {"startSeconds":468.66,"endSeconds":474.74,"chapter":"chapter_10","lineId":"wnms4r4h","confidence":0.93,"matchedWords":9,"lineWords":9,"firstWord":1309,"lastWord":1323},
+    {"startSeconds":484.36,"endSeconds":492.86,"chapter":"chapter_10","lineId":"4wskhb56","confidence":0.945,"matchedWords":22,"lineWords":22,"firstWord":1347,"lastWord":1368},
+    {"startSeconds":698.6,"endSeconds":726.74,"chapter":"chapter_10","lineId":"uuzf3ey2","confidence":0.885,"matchedWords":20,"lineWords":22,"firstWord":1975,"lastWord":2036}
   ]
 }

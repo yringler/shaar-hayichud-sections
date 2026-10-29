@@ -15,6 +15,12 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/224a%20Tape54-Side1%20Ch%2046%20addendum%20-.mp3.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
     }
   },
   "stats": {
@@ -28,6 +34,6 @@
     "meanConfidence": 0.6
   },
   "segments": [
-    {"startSeconds":410.323,"endSeconds":483.316,"chapter":"chapter_46","lineId":"cmlzruqg","confidence":0.6,"matchedWords":3,"lineWords":5,"firstWord":1049,"lastWord":1209}
+    {"startSeconds":421.96,"endSeconds":484.28,"chapter":"chapter_46","lineId":"cmlzruqg","confidence":0.6,"matchedWords":3,"lineWords":5,"firstWord":1049,"lastWord":1209}
   ]
 }
