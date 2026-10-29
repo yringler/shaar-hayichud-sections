@@ -810,6 +810,54 @@ nav.class-toc {
 
 .chapter-section { scroll-margin-block-start: 1rem; }
 
+/* Previous / next part of the series (part-nav.html), under the heading
+   and again at the end of the page: two cards, next always on the right. */
+nav.part-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-block: 0 1.5rem;
+  padding: 0;
+  border: 0;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+.ltr-content > nav.part-nav:last-child { margin-block: 2.5rem 0; }
+
+.part-nav a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #3d5a80;
+  border-radius: 10px;
+  background: #fff;
+  color: #3d5a80;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.part-nav a:hover { background: #3d5a80; color: #fff; }
+.part-nav a:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+
+.part-nav-next { grid-column: 2; text-align: end; }
+
+.part-nav-dir {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.part-nav-title { font-size: 1.05rem; font-weight: 500; }
+
+@media (max-width: 480px) {
+  nav.part-nav { gap: 0.5rem; }
+  .part-nav a { padding: 0.6rem 0.75rem; }
+  .part-nav-title { font-size: 0.95rem; }
+}
+
 /* The chapter text a class reads (class-track.html): set like the chapter
    page, in a box about three phrases tall that scrolls on its own. */
 .lesson-text {
