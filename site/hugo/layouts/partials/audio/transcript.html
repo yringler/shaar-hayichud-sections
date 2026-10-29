@@ -17,12 +17,12 @@
     {{- with $info.part }} → <a href="{{ $info.partUrl }}">{{ .title }}</a>{{ end }}
   </p>
   <h1>{{ $l.title }}{{ with $info.headings }}{{ $last := index . (sub (len .) 1) }}{{ if ne $last $l.title }} <span class="h1-context">· {{ $last }}</span>{{ end }}{{ end }}</h1>
+  {{- $teacher := printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" $info.series.title) }}
+  {{- with index $audio.aligned $id }}
+  <p class="transcript-follow">Follow it in the text of
+    {{- range $i, $c := .all }}{{ if $i }} and{{ end }} <a class="audio-link" href="{{ $c.url }}{{ $teacher }}">{{ replaceRE `^chapter_0*` "Chapter " $c.chapter }}</a>{{ end }}</p>
+  {{- end }}
   <p class="transcript-about">{{ $info.series.title }}.
-    {{- with index $audio.aligned $id }}
-      {{- if eq (len .all) 1 }} <a href="{{ .url }}">Follow it in the text of {{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>.
-      {{- else }} Follow it in the text of {{ range $i, $c := .all }}{{ if $i }} and {{ end }}<a href="{{ $c.url }}">{{ replaceRE `^chapter_0*` "Chapter " $c.chapter }}</a>{{ end }}.
-      {{- end }}
-    {{- end }}
     Machine transcription (Sofer.ai): expect mistakes, especially in Hebrew terms.
     {{- with index $audio.outlines $id }} Topic headings are auto-generated.{{ end }}</p>
 

@@ -1,0 +1,18 @@
+{{- /* The lines of TextNode[] in reading order, as a slice of dict "id" "text"
+       "number" (the hierarchical section number, as render-textnode.html
+       numbers it). Context: dict "nodes" "prefix". Recursive. */ -}}
+{{- $out := slice -}}
+{{- $idx := 0 -}}
+{{- range .nodes -}}
+  {{- if and (reflect.IsMap .) (isset . "children") -}}
+    {{- $idx = add $idx 1 -}}
+    {{- $number := cond (eq $.prefix "") (printf "%d" $idx) (printf "%s.%d" $.prefix $idx) -}}
+    {{- range .children -}}
+      {{- if and (reflect.IsMap .) (not (isset . "children")) -}}
+        {{- $out = $out | append (dict "id" .id "text" .text "number" $number) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $out = $out | append (partial "audio/flatten-lines.html" (dict "nodes" .children "prefix" $number)) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

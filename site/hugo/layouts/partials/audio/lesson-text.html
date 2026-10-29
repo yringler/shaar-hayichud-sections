@@ -1,0 +1,41 @@
+{{- /* The chapter text a class reads, for the class lists. Context: the
+       catalog lecture id. Returns a slice (one per chapter the class reads,
+       in chapter order) of dict "chapter" (key) "url" (English chapter page)
+       "title" ("Chapter 10") "lines": every line from the class's first
+       aligned line to its last in reading order (alignments are sparse, so
+       the lines between are kept, or the text would read as broken), each
+       dict "id" "text" (footnote digits stripped) "number" (section number)
+       and, for aligned lines, "start" "end" (seconds, the line's first
+       segment in the class). Empty when the class has no published alignment. */ -}}
+{{- $id := . -}}
+{{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $out := slice -}}
+{{- with index $audio.aligned $id -}}
+  {{- $aligned := . -}}
+  {{- with resources.Get (printf "data/v1/alignments/%s.json" $id) -}}
+    {{- $segments := (. | transform.Unmarshal).segments -}}
+    {{- range $c := $aligned.all -}}
+      {{- $times := newScratch -}}
+      {{- range $segments -}}
+        {{- if and (eq .chapter $c.chapter) (not ($times.Get .lineId)) -}}
+          {{- $times.Set .lineId (dict "start" .startSeconds "end" .endSeconds) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $all := partialCached "audio/chapter-lines.html" $c.chapter $c.chapter -}}
+      {{- $lo := -1 -}}{{- $hi := -1 -}}
+      {{- range $i, $l := $all -}}
+        {{- if $times.Get $l.id -}}{{- if lt $lo 0 }}{{ $lo = $i }}{{ end -}}{{- $hi = $i -}}{{- end -}}
+      {{- end -}}
+      {{- if ge $lo 0 -}}
+        {{- $lines := slice -}}
+        {{- range after $lo (first (add $hi 1) $all) -}}
+          {{- $l := dict "id" .id "text" (strings.TrimSpace (replaceRE `\d+` "" .text)) "number" .number -}}
+          {{- with $times.Get .id }}{{ $l = merge $l . }}{{ end -}}
+          {{- $lines = $lines | append $l -}}
+        {{- end -}}
+        {{- $out = $out | append (dict "chapter" $c.chapter "url" $c.url "title" (replaceRE `^chapter_0*` "Chapter " $c.chapter) "lines" $lines) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

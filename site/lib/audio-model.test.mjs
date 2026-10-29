@@ -11,11 +11,14 @@ import {
   DEFAULT_SERIES_ID,
   formatTime,
   lectureItems,
+  nextInSeries,
   rankRefs,
   scrollToShow,
   segmentItems,
   spanAt,
   spans,
+  teacherKey,
+  resolveTeacher,
   topicAt,
 } from "../hugo/assets/js/audio/model.ts";
 
@@ -102,6 +105,17 @@ test("lectureItems picks one class's ranges", () => {
   ]);
 });
 
+test("nextInSeries: the next class of the same series, skipping others; null after its last", () => {
+  const mixed = [{ seriesId: "0" }, { seriesId: "37" }, { seriesId: "0" }, { seriesId: "37" }];
+  assert.equal(nextInSeries(lectures, 0), 1);
+  assert.equal(nextInSeries(lectures, 1), null);
+  assert.equal(nextInSeries(lectures, 2), null);
+  assert.equal(nextInSeries(mixed, 0), 2);
+  assert.equal(nextInSeries(mixed, 1), 3);
+  assert.equal(nextInSeries(mixed, 3), null);
+  assert.equal(nextInSeries(mixed, 9), null);
+});
+
 test("chapterSeries lists each series once, in order", () => {
   assert.deepEqual(chapterSeries({ schemaVersion: 1, chapter: "chapter_10", lectures, lines: [] }), [
     { id: "0", title: "W" },
@@ -122,6 +136,28 @@ test("chooseSeries: the saved teacher, else the default (Walters original, id 0)
   // Neither saved nor default here: the first series.
   assert.deepEqual(chooseSeries([M, N], null), { series: M, fellBack: false });
   assert.deepEqual(chooseSeries([], null), { series: null, fellBack: false });
+});
+
+test("teacherKey keeps ASCII letters and digits of the series title", () => {
+  assert.equal(teacherKey("Rabbi Markel Series (Advanced)"), "RabbiMarkelSeriesAdvanced");
+  assert.equal(teacherKey("Rabbi Benyamin Walters New Class (2020)"), "RabbiBenyaminWaltersNewClass2020");
+});
+
+test("resolveTeacher: by id, by key (any case), by a unique key prefix", () => {
+  const W = { id: "0", title: "Rabbi Benyamin Walters Original Class" };
+  const W2 = { id: "75", title: "Rabbi Benyamin Walters New Class (2020)" };
+  const M = { id: "37", title: "Rabbi Markel Series (Advanced)" };
+  const here = [W, W2, M];
+  assert.equal(resolveTeacher(here, "37"), M);
+  assert.equal(resolveTeacher(here, "RabbiMarkelSeriesAdvanced"), M);
+  assert.equal(resolveTeacher(here, "rabbimarkel"), M);
+  assert.equal(resolveTeacher(here, "Rabbi Markel"), M);
+  assert.equal(resolveTeacher(here, "RabbiBenyaminWaltersOriginal"), W);
+  // Ambiguous, unknown, empty or absent: nothing.
+  assert.equal(resolveTeacher(here, "RabbiBenyaminWalters"), undefined);
+  assert.equal(resolveTeacher(here, "RabbiX"), undefined);
+  assert.equal(resolveTeacher(here, ""), undefined);
+  assert.equal(resolveTeacher(here, null), undefined);
 });
 
 test("segmentItems keys transcript segments by index", () => {

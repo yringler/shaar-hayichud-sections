@@ -160,6 +160,18 @@ export function lectureItems(data: ChapterAlignments, lecture: number): TimedIte
   return out;
 }
 
+/**
+ * Autoplay next: the class after `lecture` in its own series (catalog
+ * order, the next option in the Class selector), or null after the series'
+ * last class on the chapter.
+ */
+export function nextInSeries(lectures: readonly Pick<Lecture, 'seriesId'>[], lecture: number): number | null {
+  const seriesId = lectures[lecture]?.seriesId;
+  if (seriesId === undefined) return null;
+  for (let i = lecture + 1; i < lectures.length; i++) if (lectures[i]!.seriesId === seriesId) return i;
+  return null;
+}
+
 /** Series that discuss this chapter, in catalog order of their first class. */
 export function chapterSeries(data: ChapterAlignments): { id: string; title: string }[] {
   const out: { id: string; title: string }[] = [];
@@ -183,6 +195,36 @@ export function chooseSeries<S extends { id: string }>(
   if (saved) return { series: saved, fellBack: false };
   const series = here.find((s) => s.id === DEFAULT_SERIES_ID) ?? here[0] ?? null;
   return { series, fellBack: savedId !== null };
+}
+
+/**
+ * The `?teacher=` value of a series in links: its title with everything but
+ * ASCII letters and digits dropped ("Rabbi Markel Series (Advanced)" ->
+ * "RabbiMarkelSeriesAdvanced"). Hugo templates build the same value
+ * (class-track.html, audio/transcript.html).
+ */
+export function teacherKey(title: string): string {
+  return title.replace(/[^A-Za-z0-9]+/g, '');
+}
+
+/**
+ * The series a `?teacher=` value names among `here`: its catalog id, its
+ * teacherKey (case-insensitive), or the only series whose key starts with
+ * the value ("RabbiMarkel"). Undefined when none or several match.
+ */
+export function resolveTeacher<S extends { id: string; title: string }>(
+  here: readonly S[],
+  value: string | null,
+): S | undefined {
+  const q = teacherKey(value ?? '').toLowerCase();
+  if (!q) return undefined;
+  const byId = here.find((s) => s.id === value?.trim());
+  if (byId) return byId;
+  const key = (s: S) => teacherKey(s.title).toLowerCase();
+  const exact = here.find((s) => key(s) === q);
+  if (exact) return exact;
+  const prefixed = here.filter((s) => key(s).startsWith(q));
+  return prefixed.length === 1 ? prefixed[0] : undefined;
 }
 
 /** data/schema/v1/transcript.schema.json (the fields the site reads). */

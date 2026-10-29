@@ -21,6 +21,8 @@
       {{ range where $series.items "type" "lecture" }}
         {{ partial "class-track.html" . }}
       {{ end }}
+      {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
+      <script type="module" src="{{ $scripts.classes.RelPermalink }}" integrity="{{ $scripts.classes.Data.Integrity }}" crossorigin="anonymous"></script>
     {{ else }}
       {{- /* Top-level classes listing */ -}}
       <h1>Classes</h1>

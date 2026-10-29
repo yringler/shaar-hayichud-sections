@@ -3,9 +3,10 @@
  * (chapter pages with published alignments, and transcript pages).
  *
  * Chapter pages: shows the teacher and class selectors, adds a small play
- * button to every aligned line (`.line[data-t]`) that plays the saved
- * teacher's best class from that line, and a Show transcript toggle that
+ * button to every aligned line (`.line[data-t]`) that plays the teacher's
+ * best class from that line (the `?teacher=` one, else the saved one), and a Show transcript toggle that
  * shows the class in the player's transcript in the docked panel.
+ * Autoplay next plays the teacher's next class on the chapter when one ends.
  * Transcript pages: only the Follow along button. Follow along loads
  * follow.js on demand; its on/off state is saved for every page.
  *
@@ -16,7 +17,9 @@ import {
   chooseSeries,
   formatTime,
   lectureItems,
+  nextInSeries,
   rankRefs,
+  resolveTeacher,
   scrollToShow,
   segmentItems,
   spanAt,
@@ -29,34 +32,19 @@ import {
   type Topic,
   type Transcript,
 } from './audio/model.ts';
+import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
 type FollowModule = { startFollow: (o: FollowOptions) => FollowController };
 
 /** localStorage key of the reader's teacher (catalog series id), shared by every chapter page. */
 const SERIES_KEY = 'shaarHayichud.audio.series';
+/** URL parameter naming the teacher for this page load only (series id or teacherKey; never saved). */
+const TEACHER_PARAM = 'teacher';
 /** localStorage key of Follow along on/off ("on" / "off"), shared by chapter and transcript pages. */
 const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
 /** No automatic scrolling of the transcript region for this long after the reader scrolls it. */
 const USER_SCROLL_QUIET_MS = 5000;
-
-// Storage can be blocked (private mode, settings) and then throws: every
-// access is guarded, and a choice then lasts for this page only.
-function readStore(key: string): string | null {
-  try {
-    return window.localStorage.getItem(key);
-  } catch {
-    return null;
-  }
-}
-
-function writeStore(key: string, value: string): void {
-  try {
-    window.localStorage.setItem(key, value);
-  } catch {
-    // Blocked: nothing to do.
-  }
-}
 
 const smoothScroll = (): ScrollBehavior =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
@@ -168,6 +156,15 @@ interface SavedSeries {
   title: string;
 }
 
+/**
+ * The teacher the page plays and where that choice came from: the page's
+ * `?teacher=` link (applies to this page only, never saved) or the reader's
+ * own pick in the selector (saved for every chapter page).
+ */
+interface Teacher extends SavedSeries {
+  source: 'query' | 'selected';
+}
+
 function readSavedSeries(): SavedSeries | null {
   const raw = readStore(SERIES_KEY);
   if (!raw) return null;
@@ -261,11 +258,14 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
 
   /** The reader's saved teacher (possibly not on this chapter). */
   let preferred: SavedSeries | null = readSavedSeries();
+  /** `?teacher=` of this page load, if any (dropped once the reader picks a teacher). */
+  const teacherParam = new URLSearchParams(window.location.search).get(TEACHER_PARAM);
   /**
-   * The teacher the line buttons play: the saved one when it covers the
-   * chapter, else the default teacher (Walters original class).
+   * The teacher the line buttons play: the `?teacher=` one when it covers the
+   * chapter, else the saved one when it does, else the default teacher
+   * (Walters original class).
    */
-  let wanted: SavedSeries | null = null;
+  let wanted: Teacher | null = null;
 
   const playRef = (r: Ref) => {
     const l = data?.lectures[r.lecture];
@@ -290,18 +290,23 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     .then((d) => {
       data = d;
       if (!d) return d;
-      // Apply the saved teacher, or the default one; a saved teacher with no
-      // classes here falls back visibly.
+      // Apply the linked (?teacher=) teacher, else the saved one, else the
+      // default; a linked or saved teacher with no classes here falls back visibly.
       const here = chapterSeries(d);
-      const { series: chosen, fellBack } = chooseSeries(here, preferred?.id ?? null);
+      const linked = resolveTeacher(here, teacherParam);
+      const { series: chosen, fellBack } = linked
+        ? { series: linked, fellBack: false }
+        : chooseSeries(here, preferred?.id ?? null);
       if (chosen && seriesSelect) {
-        wanted = chosen;
+        wanted = { ...chosen, source: linked ? 'query' : 'selected' };
         seriesSelect.value = chosen.id;
         fillClasses(chosen.id);
         const first = d.lectures.findIndex((l) => l.seriesId === chosen.id);
         if (audio.paused && currentLecture() !== first) setLecture(first, null);
         else syncControls(currentLecture() ?? first);
-        if (preferred && fellBack) {
+        if (teacherParam && !linked) {
+          showNote(`The linked teacher (“${teacherParam}”) has no published classes on this chapter yet; showing ${chosen.title}.`);
+        } else if (preferred && fellBack) {
           showNote(`${preferred.title} has no published classes on this chapter yet; showing ${chosen.title}.`);
         }
       }
@@ -313,8 +318,15 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   seriesSelect?.addEventListener('change', () => {
     const id = seriesSelect.value;
     preferred = { id, title: seriesTitle(id) };
-    wanted = preferred;
+    wanted = { ...preferred, source: 'selected' };
     saveSeries(preferred);
+    // The reader's own pick replaces the link's: drop ?teacher= so a reload
+    // or a copied URL does not bring the linked teacher back.
+    if (teacherParam !== null) {
+      const u = new URL(window.location.href);
+      u.searchParams.delete(TEACHER_PARAM);
+      window.history.replaceState(window.history.state, '', u);
+    }
     showNote(null);
     fillClasses(id);
     void dataReady.then((d) => {
@@ -333,6 +345,23 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       setLecture(i, null);
       if (wasPlaying) void audio.play().catch(() => undefined);
     });
+  });
+
+  // ---- Autoplay next: the same teacher's next class (the next option in
+  // the Class selector) from the start; after the last one, stop ----
+  const autoplayOn = autoplayNext([...panel.querySelectorAll<HTMLInputElement>('[data-autoplay-next]')]);
+  markPlaying(audio, panel);
+  audio.addEventListener('ended', () => {
+    const lecture = currentLecture();
+    if (!autoplayOn() || !data || lecture === null) return;
+    const next = nextInSeries(data.lectures, lecture);
+    const l = next === null ? undefined : data.lectures[next];
+    if (next === null || !l) {
+      showNote(`That was the last class of ${data.lectures[lecture]?.series ?? 'this teacher'} on this chapter.`);
+      return;
+    }
+    showNote(`Playing next: ${l.title}`);
+    setLecture(next, 0);
   });
 
   // ---- per-line play buttons ----

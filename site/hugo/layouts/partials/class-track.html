@@ -1,21 +1,50 @@
 {{- /* One lecture from the catalog: audio player (canonical url) + title,
-       plus links to its transcript page and the chapter it is aligned to,
-       when those are published. */ -}}
+       the chapter text it reads (audio/lesson-text.html, in a short
+       scrolling box), and links to its transcript page and the chapter it is
+       aligned to, when those are published. The chapter link carries
+       ?teacher= (the series' teacherKey, see audio/model.ts) so the chapter
+       page opens with this class's teacher, without changing the reader's
+       saved choice. With classes.js the chapter link opens the in-page
+       reader instead (data-lesson-open), keeping the audio playing, and
+       shows Autoplay next under the player (.track-player, which the reader
+       docks). */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
 {{- $transcript := index $audio.transcripts .id -}}
 {{- $aligned := index $audio.aligned .id -}}
-<div class="track">
-  <audio controls preload="none" src="{{ .url }}"></audio>
-  <p class="track-title">{{ .title }}
-    {{- if or $transcript $aligned }}
-    <span class="track-links">
-      {{- with $aligned }}
-        {{- if eq (len .all) 1 }}<a href="{{ .url }}">Follow in the text</a>
-        {{- else }}{{ range $i, $c := .all }}<a href="{{ $c.url }}">{{ if not $i }}Follow in the text: {{ end }}{{ replaceRE `^chapter_0*` "Ch " $c.chapter }}</a>{{ end }}
-        {{- end }}
-      {{- end -}}
-      {{- with $transcript }}<a href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
-    </span>
+{{- $text := partial "audio/lesson-text.html" .id -}}
+{{- $teacher := "" -}}
+{{- with index $lectures .id }}{{ $teacher = printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" .series.title) }}{{ end -}}
+<div class="track" id="class-{{ .id | urlize }}"{{ with $text }} data-lesson{{ end }}>
+  <div class="track-player">
+    <audio controls preload="none" src="{{ .url }}"></audio>
+    <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
+  </div>
+  <p class="track-title">{{ .title }}</p>
+  {{- with $text }}
+  {{- $multi := gt (len .) 1 }}
+  <div class="lesson-text" data-lesson-text dir="rtl" lang="he" role="group" aria-label="Text of this class" tabindex="0">
+    {{- range . }}
+    <div class="lesson-text-chapter" data-chapter-page="{{ .url }}" data-chapter-link="{{ .url }}{{ $teacher }}" data-chapter-title="{{ .title }}">
+      {{- if $multi }}<p class="lesson-text-heading" dir="ltr" lang="en">{{ .title }}</p>{{ end }}
+      {{- $prev := "" }}
+      {{- range .lines }}
+      <p>{{ if ne .number $prev }}<span class="number">{{ .number }}</span> {{ end -}}
+        <span class="line" data-line="{{ .id }}"{{ if isset . "start" }} data-start="{{ .start }}" data-end="{{ .end }}"{{ end }}>{{ .text }}</span></p>
+      {{- $prev = .number }}
+      {{- end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- if or $transcript $aligned }}
+  <p class="track-links">
+    {{- with $aligned }}
+      {{- if eq (len .all) 1 }}<a class="audio-link" href="{{ .url }}{{ $teacher }}"{{ if $text }} data-lesson-open="{{ .url }}"{{ end }}>Follow in the text</a>
+      {{- else }}<span class="track-links-label">Follow in the text:</span>{{ range .all }}<a class="audio-link" href="{{ .url }}{{ $teacher }}"{{ if $text }} data-lesson-open="{{ .url }}"{{ end }}>{{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>{{ end }}
+      {{- end }}
     {{- end -}}
+    {{- with $transcript }}<a class="audio-link" href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
   </p>
+  {{- end }}
 </div>

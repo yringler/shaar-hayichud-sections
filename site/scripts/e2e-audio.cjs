@@ -2,10 +2,11 @@
 /**
  * Browser test of the audio features on the built site (hugo/public/):
  * chapter 10 play-from-here (the saved or default teacher, no menu), the
- * teacher/class selectors and their saved choice, Follow along (the
+ * teacher/class selectors and their saved choice, ?teacher= links, Follow along (the
  * is-discussing border, saved on/off), the transcript region in the docked
  * panel, new-tab transcript links, blocked storage, a transcript page, phone
- * width, and pages without audio staying untouched.
+ * width, pages without audio staying untouched, the class lists (contents,
+ * lesson text preview, the in-page reader), and Autoplay next on both.
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -151,6 +152,15 @@ const followOn = (page) =>
 const noMenu = async (page) => {
   assert.equal(await page.locator('[role=menu], [role=menuitem], .line-chooser').count(), 0);
 };
+
+/** Play an <audio> and jump to its last second, so it ends shortly. */
+const playToEnd = (handle) =>
+  handle.evaluate(async (a) => {
+    await a.play();
+    if (a.readyState < 1) await new Promise((r) => a.addEventListener('loadedmetadata', r, { once: true }));
+    a.currentTime = a.duration - 1;
+  });
+const AUTOPLAY_KEY = 'shaarHayichud.audio.autoplayNext';
 
 const results = [];
 async function check(name, fn) {
@@ -547,6 +557,92 @@ async function check(name, fn) {
     await context.close();
   });
 
+  await check('Autoplay next (chapter 10): saved; plays the teacher\'s next class from the start, in sync; stops after the last', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/texts/chapter-10/`);
+      await page.waitForSelector('.line-play');
+      const toggle = page.locator('[data-listen] [data-autoplay-next]');
+      // Shown only while the player plays.
+      assert.equal(await toggle.isVisible(), false);
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await toggle.waitFor();
+      assert.equal(await toggle.isChecked(), false);
+      assert.equal(await page.evaluate(() => document.querySelector('[data-listen-audio]').nextElementSibling.matches('label.autoplay-next')), true);
+      assert.equal((await page.locator('label.autoplay-next').textContent()).trim(), 'Autoplay next');
+      // Keyboard: Space toggles it; the choice is saved and comes back on reload.
+      await toggle.focus();
+      await page.keyboard.press('Space');
+      assert.equal(await toggle.isChecked(), true);
+      assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'on');
+      await page.reload();
+      await page.waitForSelector('.line-play');
+      assert.equal(await toggle.isChecked(), true);
+
+      const walters = chapter10.lectures.flatMap((l, i) => (l.seriesId === '0' ? [i] : []));
+      const [first, second] = walters;
+      const last = walters[walters.length - 1];
+      assert.ok(walters.length > 2 && chapter10.lectures[second].transcript);
+      await page.click('[data-follow-along]');
+      await followOn(page);
+      await page.click('[data-listen-transcript-toggle]');
+      await page.waitForSelector(`${PANE} .tseg`);
+      assert.equal((await audioState(page)).src, chapter10.lectures[first].url);
+      const audio = await page.$('[data-listen-audio]');
+      await playToEnd(audio);
+      await page.waitForFunction(
+        (url) => {
+          const a = document.querySelector('[data-listen-audio]');
+          // From the start (the first class ended at 40:00); loose, as playback runs on under load.
+          return a.currentSrc === url && !a.paused && a.currentTime < 30;
+        },
+        chapter10.lectures[second].url,
+        { timeout: 30000 },
+      );
+      assert.equal(await page.locator('[data-listen-select]').inputValue(), String(second));
+      assert.equal(await page.locator('[data-listen-note]').textContent(), `Playing next: ${chapter10.lectures[second].title}`);
+      // The transcript region, Follow along and the outline move to the new class, as with the selector.
+      await page.waitForFunction(([sel, n]) => document.querySelectorAll(`${sel} .tseg`).length === n, [PANE, transcriptOf(second).segments.length]);
+      assert.equal((await paneState(page)).firstText.trim(), transcriptOf(second).segments[0].text);
+      const line = chapter10.lines.find((l) => l.refs.some((r) => r.lecture === second));
+      await seek(page, refOf(line.lineId, second).startSeconds + 0.5);
+      assert.ok((await discussing(page)).includes(line.lineId));
+      if (chapter10.lectures[second].outline) {
+        const outline = readJson(path.join(DIST, decodePath(chapter10.lectures[second].outline)));
+        await page.waitForFunction((n) => document.querySelectorAll('[data-listen-topics]:not([hidden]) li').length === n, outline.topics.length);
+      }
+      await page.screenshot({ path: path.join(shots, 'chapter10-desktop-autoplay.png') });
+
+      // The teacher's last class on the chapter: stop there, no navigation.
+      await page.selectOption('[data-listen-select]', String(last));
+      const url = page.url();
+      await playToEnd(audio);
+      await page.waitForFunction(() => document.querySelector('[data-listen-audio]').ended, null, { timeout: 15000 });
+      await page.waitForTimeout(500);
+      let s = await audioState(page);
+      assert.equal(s.src, chapter10.lectures[last].url);
+      assert.equal(s.paused, true);
+      assert.equal(page.url(), url);
+      assert.equal(await page.locator('[data-listen-select]').inputValue(), String(last));
+      assert.match(await page.locator('[data-listen-note]').textContent(), /last class of Rabbi Benyamin Walters Original Class on this chapter/);
+
+      // Off: a class that ends stays. (The toggle shows only while playing.)
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await toggle.click();
+      assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'off');
+      await page.selectOption('[data-listen-select]', String(first));
+      await playToEnd(audio);
+      await page.waitForFunction(() => document.querySelector('[data-listen-audio]').ended, null, { timeout: 15000 });
+      await page.waitForTimeout(500);
+      s = await audioState(page);
+      assert.equal(s.src, chapter10.lectures[first].url);
+      assert.equal(s.paused, true);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
   // ---------------- chapter 10, phone ----------------
   await check('chapter 10 at phone width: compact bar, no horizontal scroll, tap plays (no menu), border and transcript region', async () => {
     const { context, page, errors } = await newPage(browser, base, {
@@ -660,7 +756,7 @@ async function check(name, fn) {
     const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
     assert.ok(html.includes('/classes/transcripts/001-intro/'));
     assert.ok(html.includes('/classes/transcripts/002-tape016-side1-ch10/'));
-    const links = [...html.matchAll(/<a href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
+    const links = [...html.matchAll(/<a (?:class="?audio-link"? )?href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
     assert.ok(links.length >= 2);
     for (const [, attrs, inner] of links) {
       assert.match(attrs, /target="?_blank"?/);
@@ -699,6 +795,333 @@ async function check(name, fn) {
       await context.close();
     }
   });
+
+  await check('?teacher=RabbiMarkel opens chapter 10 with Markel without saving it; picking a teacher saves it and drops the parameter', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/texts/chapter-10/?teacher=RabbiMarkel`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '37');
+      assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series')), null);
+      // Not saved: without the parameter the default teacher comes back.
+      await page.goto(`${base}/texts/chapter-10/`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+      // An unknown teacher falls back with a note.
+      await page.goto(`${base}/texts/chapter-10/?teacher=Nobody`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+      assert.match(await page.locator('[data-listen-note]').textContent(), /Nobody/);
+      // The reader's own pick is saved and replaces the link's.
+      await page.goto(`${base}/texts/chapter-10/?teacher=RabbiMarkel`);
+      await page.waitForSelector('.line-play');
+      await page.locator('[data-listen-series]').selectOption('0');
+      assert.equal(new URL(page.url()).search, '');
+      assert.equal(JSON.parse(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series'))).id, '0');
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('class list: contents links, chapter links carry ?teacher=, lesson text preview', async () => {
+    const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
+    assert.match(html, /<nav class="?class-toc"?[\s\S]*?href="?#chapter-10"?/);
+    assert.match(html, /id="?chapter-10"?/);
+    assert.match(html, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
+    const t = fs.readFileSync(path.join(PUBLIC, 'classes', 'transcripts', '002-tape016-side1-ch10', 'index.html'), 'utf8');
+    assert.match(t, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`class list (${name}): preview plays from a line and follows; the reader keeps the class playing; Back returns`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: ctx });
+      const list = `${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`;
+      try {
+        await page.goto(list);
+        const box = page.locator('.track[data-lesson]').first();
+        const preview = box.locator('[data-lesson-text]');
+        // About three phrases tall, scrolling on its own.
+        const ph = await preview.evaluate((el) => ({ h: el.clientHeight, sh: el.scrollHeight }));
+        assert.ok(ph.h < 200 && ph.sh > ph.h, JSON.stringify(ph));
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true);
+        // Play from the third aligned line of the preview.
+        const third = preview.locator('.line-play').nth(2);
+        const start = Number(await third.getAttribute('data-start'));
+        await third.click();
+        const audio = box.locator('audio');
+        await page.waitForFunction(
+          ([el, t]) => !el.paused && Math.abs(el.currentTime - t) < 1.5,
+          [await audio.elementHandle(), start],
+          { timeout: 15000 },
+        );
+        await page.waitForTimeout(500);
+        assert.equal(await preview.locator('.line.is-discussing').count(), 1);
+        // The current line is in view inside the box, and the page did not scroll for it.
+        const vis = await preview.evaluate((el) => {
+          const c = el.querySelector('.is-discussing').getBoundingClientRect();
+          const r = el.getBoundingClientRect();
+          return c.top >= r.top - 1 && c.top <= r.bottom;
+        });
+        assert.ok(vis);
+        // Another class starting pauses this one.
+        const other = page.locator('.track audio').nth(3);
+        await other.evaluate((a) => a.play());
+        await page.waitForTimeout(300);
+        assert.equal(await audio.evaluate((a) => a.paused), true);
+        await other.evaluate((a) => a.pause());
+        await audio.evaluate((a) => a.play());
+
+        // Open the reader: no reload, same audio keeps playing, the current line is marked and in view.
+        await page.evaluate(() => (window.__noReload = true));
+        const before = await audio.evaluate((a) => a.currentTime);
+        await box.locator('a[data-lesson-open]').first().click();
+        const reader = page.locator('.reader');
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await page.waitForTimeout(600);
+        assert.equal(await page.evaluate(() => window.__noReload), true);
+        assert.equal(await audio.evaluate((a) => a.paused), false);
+        assert.ok((await audio.evaluate((a) => a.currentTime)) >= before);
+        const cur = reader.locator('.line.is-discussing');
+        assert.equal(await cur.count(), 1);
+        const inView = await cur.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return r.bottom > 0 && r.top < window.innerHeight;
+        });
+        assert.ok(inView);
+        // The docked player (the <audio> with its Autoplay next toggle) is on screen, above the reader.
+        const docked = await audio.evaluate((a) => {
+          const p = a.closest('.track-player');
+          const r = p.getBoundingClientRect();
+          const t = p.querySelector('[data-autoplay-next]').getBoundingClientRect();
+          return getComputedStyle(p).position === 'fixed' && r.bottom <= window.innerHeight + 1 && r.top > 0 && t.top >= r.top && t.bottom <= r.bottom;
+        });
+        assert.ok(docked);
+        // Clicking a reader line of the lesson seeks.
+        const line = reader.locator('.line.has-audio').first();
+        const lineStart = Number(await reader.locator('.line-play').first().getAttribute('data-start'));
+        await line.click();
+        await page.waitForFunction(([el, t]) => Math.abs(el.currentTime - t) < 1.5, [await audio.elementHandle(), lineStart], { timeout: 15000 });
+        await page.screenshot({ path: path.join(shots, `classes-reader-${name}.png`) });
+        // Browser Back closes it; the class still plays; the page is the list.
+        await page.goBack();
+        await reader.waitFor({ state: 'hidden' });
+        assert.equal(page.url(), list);
+        assert.equal(await page.evaluate(() => window.__noReload), true);
+        assert.equal(await audio.evaluate((a) => a.paused), false);
+        assert.equal(await audio.evaluate((a) => getComputedStyle(a.closest('.track-player')).position), 'static');
+        // Esc closes it too.
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        // Focus stays in the reader and the docked player (the list behind is inert).
+        for (let i = 0; i < 25; i++) {
+          await page.keyboard.press('Tab');
+          const where = await page.evaluate(() => {
+            const el = document.activeElement;
+            return !el || el === document.body || !!el.closest('.reader, .track.is-reading .track-player');
+          });
+          assert.ok(where, `focus escaped the reader at Tab ${i + 1}`);
+        }
+        // (Chromium's native audio controls keep Esc to themselves: press it from the dialog.)
+        await reader.locator('.reader-back').focus();
+        await page.keyboard.press('Escape');
+        await reader.waitFor({ state: 'hidden' });
+        assert.equal(await page.evaluate(() => history.state), null);
+        assert.equal(await page.locator('[inert]').count(), 0);
+        // Opening the reader pauses a class playing elsewhere (it would be out of reach behind it).
+        await other.evaluate((a) => a.play());
+        await page.waitForFunction((a) => !a.paused, await other.elementHandle());
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        assert.equal(await other.evaluate((a) => a.paused), true);
+        await reader.locator('.reader-back').click();
+        await reader.waitFor({ state: 'hidden' });
+        // A double-click on Back closes the reader once and stays on the list.
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await reader.locator('.reader-back').dblclick();
+        await reader.waitFor({ state: 'hidden' });
+        await page.waitForTimeout(300);
+        assert.equal(page.url(), list);
+        await page.screenshot({ path: path.join(shots, `classes-list-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  await check('Autoplay next (class list): one synced toggle per box; the next box plays (across headings), scrolled into view unless the page was scrolled; the reader moves on (no new history entry) and is reachable while open', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    const list = `${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`;
+    // Box 12 (chapter 11) stands in for a class without lesson text.
+    let plain = null;
+    await context.route(list, async (route) => {
+      const response = await route.fetch();
+      const html = await response.text();
+      const m = [...html.matchAll(/<div class="?track"? id="?([^" >]+)"? data-lesson>/g)][12];
+      plain = m[1];
+      await route.fulfill({ response, body: html.replace(m[0], m[0].replace(' data-lesson>', '>')) });
+    });
+    try {
+      await page.goto(list);
+      const boxes = page.locator('.track');
+      const n = await boxes.count();
+      const toggles = page.locator('.track [data-autoplay-next]');
+      assert.equal(await toggles.count(), n);
+      assert.equal(await page.evaluate(() => [...document.querySelectorAll('.track audio')].every((a) => a.nextElementSibling?.matches('label.autoplay-next'))), true);
+      const states = () => toggles.evaluateAll((els) => els.map((e) => e.checked));
+      assert.deepEqual(await states(), Array(n).fill(false));
+      // Shown only in the box whose class plays.
+      const playBox = async (i) => {
+        await boxes.nth(i).locator('audio').evaluate((a) => a.play());
+        await toggles.nth(i).waitFor();
+      };
+      assert.equal(await page.locator('.track .autoplay-next:visible').count(), 0);
+      await playBox(2);
+      assert.equal(await page.locator('.track .autoplay-next:visible').count(), 1);
+      // Changing one changes them all, and it is saved.
+      await toggles.nth(2).click();
+      assert.deepEqual(await states(), Array(n).fill(true));
+      assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'on');
+      await playBox(4);
+      assert.equal(await toggles.nth(2).isVisible(), false);
+      await toggles.nth(4).click();
+      assert.deepEqual(await states(), Array(n).fill(false));
+      assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'off');
+      await toggles.nth(4).click();
+
+      const audioOf = (i) => boxes.nth(i).locator('audio').elementHandle();
+      const playing = () => page.$$eval('.track audio', (as) => as.flatMap((a, i) => (a.paused ? [] : [i])));
+      const waitPlaying = (i) =>
+        page.waitForFunction(
+          (i) => {
+            const a = document.querySelectorAll('.track audio')[i];
+            return !a.paused && a.currentTime < 5;
+          },
+          i,
+          { timeout: 15000 },
+        );
+      const below = (i) => boxes.nth(i).evaluate((b) => b.getBoundingClientRect().top >= window.innerHeight);
+      // Box 5 at the bottom of the screen: when it ends, box 6 plays from the start and comes into view.
+      await boxes.nth(5).evaluate((b) => b.scrollIntoView({ block: 'end' }));
+      assert.ok(await below(6));
+      await playToEnd(await audioOf(5));
+      await waitPlaying(6);
+      assert.deepEqual(await playing(), [6]);
+      await page.waitForFunction(() => document.querySelectorAll('.track')[6].getBoundingClientRect().bottom <= window.innerHeight + 1);
+      // The reader scrolled the page just now: box 7 plays but the page stays put.
+      await boxes.nth(6).evaluate((b) => b.scrollIntoView({ block: 'end' }));
+      await page.mouse.move(100, 300); // the page margin, outside any box
+      await page.mouse.wheel(0, 1);
+      await page.waitForTimeout(300);
+      assert.ok(await below(7));
+      const y = await page.evaluate(() => window.scrollY);
+      await playToEnd(await audioOf(6));
+      await waitPlaying(7);
+      assert.deepEqual(await playing(), [7]);
+      await page.waitForTimeout(800);
+      assert.equal(await page.evaluate(() => window.scrollY), y);
+      await (await audioOf(7)).evaluate((a) => a.pause());
+
+      // The reader, open on the last class of chapter 10: the toggle is reachable in the docked player.
+      await boxes.nth(10).locator('a[data-lesson-open]').first().click();
+      const reader = page.locator('.reader');
+      await reader.locator('.line.in-lesson').first().waitFor();
+      await (await audioOf(10)).evaluate((a) => a.play());
+      await toggles.nth(10).waitFor();
+      const h = await page.evaluate(() => history.length);
+      let reached = false;
+      for (let i = 0; i < 40 && !reached; i++) {
+        await page.keyboard.press('Tab');
+        reached = await page.evaluate(() => !!document.activeElement?.matches('.track.is-reading [data-autoplay-next]'));
+      }
+      assert.ok(reached, 'Tab reaches the docked Autoplay next toggle');
+      await page.keyboard.press('Space');
+      assert.deepEqual(await states(), Array(n).fill(false));
+      await page.keyboard.press('Space');
+      assert.deepEqual(await states(), Array(n).fill(true));
+      await page.screenshot({ path: path.join(shots, 'classes-reader-autoplay-desktop.png') });
+
+      // It ends: the reader moves on to the next lesson (chapter 11, the next heading), same history entry.
+      const title11 = (await boxes.nth(11).locator('.track-title').textContent()).trim();
+      await playToEnd(await audioOf(10));
+      await waitPlaying(11);
+      await page.waitForFunction((t) => document.querySelector('.reader-title').textContent.includes(t), title11);
+      await reader.locator('.line.in-lesson').first().waitFor();
+      assert.deepEqual(await playing(), [11]);
+      assert.equal(await page.evaluate(() => history.length), h);
+      assert.equal(await page.evaluate(() => history.state?.lessonReader), true);
+      assert.ok(await reader.isVisible());
+      assert.equal(await page.locator('.track.is-reading').count(), 1);
+      assert.equal(await boxes.nth(11).evaluate((b) => b.classList.contains('is-reading') && !b.querySelector('.track-player').closest('[inert]')), true);
+      assert.match(await reader.locator('.reader-title').textContent(), /Chapter 11/);
+      assert.ok((await page.locator('.track[inert], .chapter-section[inert]').count()) > 0);
+
+      // The next class has no lesson text: the reader closes (back over its entry) and it plays.
+      assert.equal(await boxes.nth(12).getAttribute('id'), plain);
+      await playToEnd(await audioOf(11));
+      await waitPlaying(12);
+      await reader.waitFor({ state: 'hidden' });
+      assert.deepEqual(await playing(), [12]);
+      assert.equal(page.url(), list);
+      assert.equal(await page.evaluate(() => history.state), null);
+      assert.equal(await page.locator('[inert]').count(), 0);
+      assert.equal(await page.locator('.track.is-reading').count(), 0);
+      // Focus moved to the class now playing, and it is on screen.
+      const focus = await page.evaluate(() => {
+        const el = document.activeElement;
+        const r = el.getBoundingClientRect();
+        return { box: el.closest('.track')?.id, onScreen: r.bottom > 0 && r.top < window.innerHeight };
+      });
+      assert.deepEqual(focus, { box: plain, onScreen: true });
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  for (const [name, viewport] of [
+    ['360', { width: 360, height: 740 }],
+    ['390', { width: 390, height: 844 }],
+  ]) {
+    await check(`Autoplay next at ${name} px: compact chapter panel, no sideways scroll, toggle inside the class box`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: { viewport, isMobile: true, hasTouch: true, deviceScaleFactor: 2 } });
+      try {
+        await page.goto(`${base}/he/texts/chapter-10/`);
+        await page.waitForSelector('.line-play');
+        await page.tap('.line-play[data-line="njpqigb7"]');
+        await waitTime(page, refOf('njpqigb7', WALTERS_1).startSeconds);
+        await page.tap('[data-listen] .autoplay-next');
+        assert.equal(await page.isChecked('[data-listen] [data-autoplay-next]'), true);
+        await page.waitForTimeout(300);
+        const st = await paneState(page);
+        // The phone width check's limit (at 360 px the buttons already take a third row).
+        if (name === '390') assert.ok(st.panel <= 0.25 * st.innerHeight, `panel is ${st.panel}px of ${st.innerHeight}`);
+        const panelToggle = await page.locator('[data-listen] .autoplay-next').boundingBox();
+        assert.ok(panelToggle.height >= 23 && panelToggle.y + panelToggle.height <= st.innerHeight, JSON.stringify(panelToggle));
+        assert.ok((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0);
+        await page.screenshot({ path: path.join(shots, `chapter10-phone-${name}-autoplay.png`) });
+
+        await page.goto(`${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`);
+        const box = page.locator('.track').first();
+        assert.equal(await box.locator('[data-autoplay-next]').isChecked(), true);
+        await box.locator('audio').evaluate((a) => a.play());
+        await box.locator('.autoplay-next').waitFor();
+        const [b, t] = await Promise.all([box.boundingBox(), box.locator('.autoplay-next').boundingBox()]);
+        assert.ok(t.x >= b.x && t.x + t.width <= b.x + b.width, `toggle ${JSON.stringify(t)} box ${JSON.stringify(b)}`);
+        assert.ok((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0);
+        await box.screenshot({ path: path.join(shots, `classes-box-phone-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
 
   await browser.close();
   server.close();
