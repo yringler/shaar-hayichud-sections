@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { cpSync, existsSync, mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdtempSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
@@ -287,6 +287,20 @@ describe('build (audio publishing)', () => {
     }
     const top = readJson(path.join(out, 'v1/index.json')) as { items: { id: string }[] };
     assert.ok(top.items.some((i) => i.id === 'chapter-alignments'));
+    // Published paragraphs take their times from data/retimed/ when the lecture has a file there.
+    const retimedDir = path.join(DATA_DIR, 'retimed');
+    let checked = 0;
+    for (const file of existsSync(retimedDir) ? readdirSync(retimedDir).filter((f) => f.endsWith('.json')) : []) {
+      const r = readJson(path.join(retimedDir, file)) as { lectureId: string; words: number[][] };
+      const item = transcripts.items.find((i) => i.path === `transcripts/${file}`);
+      if (!item) continue;
+      const raw = readJson(path.join(DATA_DIR, 'transcripts', file)) as { result: { timestamps: { word: string }[] } };
+      const first = raw.result.timestamps.findIndex((w) => w.word.trim() !== '');
+      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { startSeconds: number }[] };
+      assert.equal(t.segments[0]!.startSeconds, Math.round(r.words[first]![0]! * 100) / 100, r.lectureId);
+      checked += 1;
+    }
+    assert.ok(checked > 0, 'at least one published lecture is retimed');
   });
 
   it('fails on a policy that names an unknown heading, writing nothing', () => {

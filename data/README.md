@@ -11,10 +11,12 @@ Hayichud comes from this directory:
 | `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
+| `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
+| `retime/` | Python forced-alignment re-timing tool; never needed by the build or deploy ([README](retime/README.md)) | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
 
 `site/`'s `yarn build` runs the data build first, so a Cloudflare Pages deploy
@@ -372,9 +374,9 @@ aligning every class against its neighbouring chapters too):
 ```json
 { "lectures": {
   "008 Tape019-Side1-Ch12.mp3": ["chapter_12", "chapter_13"],
-  "216 Tape47-Side1Ch42&43-.mp3": [
-    { "chapter": "chapter_42", "fromSeconds": 0 },
-    { "chapter": "chapter_43", "fromSeconds": 382.4, "evidence": "…", "confidence": "high" }
+  "218 Tape48-Side1 cH43&44-.mp3": [
+    { "chapter": "chapter_43", "fromSeconds": 0, "note": "opens with a recap of chapter 43" },
+    { "chapter": "chapter_44", "fromSeconds": 272.7, "note": "…" }
   ]
 } }
 ```
@@ -384,7 +386,10 @@ A list of chapter keys is aligned as above. A list of ranges (increasing
 its chapter alone, for a class that goes back and forth between chapters; a
 chapter may repeat, and a line heard in two ranges keeps its better one. Other
 fields on a range are notes for people. `yarn align` and the tests reject
-unknown lectures or chapters.
+unknown lectures or chapters. `fromSeconds` is in the word times `yarn align`
+uses: once a tape has a `retimed/` file, its boundaries are in retimed time
+(218's chapter 44 boundary was 169 s in Sofer's times, inside a 353-word pile,
+and is 272.7 s retimed). Re-derive them whenever a tape is retimed.
 
 The class reads the text aloud phrase by phrase and explains it in English with
 Hebrew terms mixed in. `src/align.ts` keeps the transcript's Hebrew words,
@@ -416,6 +421,33 @@ Chapter 11), run `yarn align --section 5 --verbose`, spot-check a few lines
 against the audio, then commit `transcripts/` and `alignments/`, and add the
 heading (or the lectures) to `audio-publish.json`.
 
+### Re-timing (`data/retime/`)
+
+Sofer's word timestamps are broken on about a third of the tapes: runs of 20
+or more words share one start time ("piles"), or are spread at a synthetic
+0.417 s spacing, and later times drift by minutes (tape 216's chapter 43,
+read at 12:06, aligned at 6:26). `data/retime/` is a Python tool
+(torchaudio MMS_FA forced alignment; [README](retime/README.md)) that
+re-times every Sofer word against the audio and writes
+`retimed/<lecture>.json`: one `[start, end, score, kind]` per transcript word
+plus a `transcriptSha` of the transcript it was made from
+(`schema/sources/retimed.schema.json`).
+
+```bash
+cd data/retime && uv sync
+uv run retime --affected --max-minutes 100   # resumable; skips tapes already current
+cd ../tools && yarn align --lecture "…"      # re-align each retimed tape
+```
+
+When a lecture has a `retimed/` file, `yarn align` and the published
+transcripts use its times instead of Sofer's; the alignment records which in
+`method.times` (`"retimed"` or `"sofer"`; absent means Sofer). The data build
+fails on a retimed file that does not match its transcript (stale hash, word
+count, non-monotone times), so it can never be silently ignored, and on an
+alignment whose `method.times` differs from what the lecture has now (rerun
+`yarn align` after retiming). Python is only needed to make the files; the
+build and the deploy only read them.
+
 ### Publishing audio
 
 `audio-publish.json` is the one place that decides what reaches `/data/v1/`
@@ -441,7 +473,8 @@ For each published lecture the build writes, when the source exists:
   alignment, transcript and outline) and `lines[]` in document order, each
   with `refs[]` (`lecture` index, start, end, confidence; best first). The
   site's chapter player reads this file.
-- `transcripts/<lecture>.json`: the words as paragraphs (`segments[]` of
+- `transcripts/<lecture>.json`: the words (with `retimed/` times when the
+  lecture has them) as paragraphs (`segments[]` of
   `startSeconds`/`endSeconds`/`text`, plus `speaker` when Sofer labelled
   speakers and the series' speaker labeling is on in
   `tools/src/transcription-config.ts`). A paragraph ends at every change of speaker, at a pause of 2 s or

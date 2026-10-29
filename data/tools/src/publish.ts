@@ -9,12 +9,14 @@
  *
  * Which lectures are published, and the confidence floor, come from one
  * file: data/audio-publish.json (PublishPolicy). The raw Sofer files are
- * never published; transcripts are converted to paragraphs.
+ * never published; transcripts are converted to paragraphs, with the
+ * re-timed word times from data/retimed/ when the lecture has them.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { encodePathSegment, type Catalog, type CatalogItem, type CatalogLecture, type CatalogSection } from './catalog.js';
 import { walkLines, type Chapter } from './chapter.js';
+import { wordTimes } from './retimed.js';
 import { TRANSCRIPTION_SERIES } from './transcription-config.js';
 import type { SchemaSet } from './validate.js';
 
@@ -430,7 +432,10 @@ export function publishAudio(input: PublishInput): PublishedAudio {
     }
     if (existsSync(transcriptFile)) {
       const raw = readJson(transcriptFile) as StoredTranscriptLike;
-      const stored = raw.result.timestamps ?? [];
+      // Forced-alignment times from data/retimed/ when there is a current file.
+      const times = wordTimes(dataDir, id, raw.result.timestamps ?? []);
+      out.errors.push(...times.errors);
+      const stored = times.words;
       if (stored.length === 0) continue;
       // Speaker labels are published only for series configured to label
       // speakers; a transcript made before labeling was turned off keeps its

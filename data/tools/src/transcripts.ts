@@ -278,7 +278,15 @@ export interface StoredAlignment {
   /** Path of the transcript it was made from, relative to data/. */
   transcript: string;
   transcriptionId: string;
-  method: { name: string; version: number; options: object };
+  method: {
+    name: string;
+    version: number;
+    options: object;
+    /** Word times used: data/retimed/'s forced-alignment times, or Sofer's. Absent in files made before re-timing existed (Sofer's). */
+    times?: 'retimed' | 'sofer';
+    /** The re-timed file used, when times is 'retimed'. */
+    retimed?: { file: string; name: string; version: number };
+  };
   stats: {
     transcriptWords: number;
     hebrewWords: number;

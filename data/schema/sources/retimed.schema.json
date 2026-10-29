@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/sources/retimed.schema.json",
+  "title": "Re-timed word times for a stored Sofer transcript (source file, not published)",
+  "description": "data/retimed/<encoded lecture id>.json, written by data/retime (forced alignment of the transcript's words to the audio). `words` has one entry per entry of the transcript's result.timestamps, in order. The data build also checks the word count, that starts never decrease and that `transcriptSha` matches the transcript (see data/retime/README.md for how it is computed). yarn align and the published transcripts use these times instead of Sofer's.",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "transcript", "transcriptSha", "method", "stats", "words"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "transcript": { "description": "Path of the stored transcript, relative to data/.", "type": "string", "minLength": 1 },
+    "transcriptSha": {
+      "description": "SHA-256 (lowercase hex) of the transcript's words and Sofer times: for each entry w of result.timestamps, w.word + TAB + ms(w.start) + TAB + ms(w.end) + LF, ms(x) = floor(x * 1000 + 0.5) as a base-10 integer, UTF-8.",
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "method": {
+      "description": "Model, thresholds and transliteration that produced the times.",
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "stats": {
+      "description": "Anchor coverage and spacing, for people.",
+      "type": "object",
+      "required": ["words", "anchors"],
+      "properties": {
+        "words": { "type": "integer", "minimum": 0 },
+        "anchors": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "words": {
+      "description": "Per transcript word: [startSeconds, endSeconds, score (mean character posterior, null when nothing was aligned), kind (2 anchor, 1 soft anchor, 0 interpolated)].",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "prefixItems": [
+          { "type": "number", "minimum": 0 },
+          { "type": "number", "minimum": 0 },
+          { "anyOf": [{ "type": "number", "minimum": 0, "maximum": 1 }, { "type": "null" }] },
+          { "enum": [0, 1, 2] }
+        ],
+        "minItems": 4,
+        "items": false
+      }
+    }
+  }
+}

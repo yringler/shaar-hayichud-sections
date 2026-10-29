@@ -1,1 +1,3 @@
 dist/
+# temp files of an interrupted data/retime run
+retimed/.*.tmp*

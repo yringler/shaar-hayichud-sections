@@ -15,6 +15,12 @@
  * aligned in the previous class of the same chapter (useful when a class
  * opens by recapping earlier text). --verbose prints every aligned line
  * with the transcript words it matched.
+ *
+ * Word times come from data/retimed/<encoded id>.json (forced-alignment
+ * re-timing, data/retime/) when it exists and matches the transcript, else
+ * from Sofer; `method.times` records which. A re-timed file that no longer
+ * matches its transcript is an error for that lecture (exit status 1), not a
+ * silent fallback.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -29,6 +35,7 @@ import {
 import { walkLines, type Chapter } from '../chapter.js';
 import { parseClassesTxt } from '../parse.js';
 import { DATA_DIR, defaultPaths } from '../pipeline.js';
+import { wordTimes } from '../retimed.js';
 import {
   alignmentPath,
   chapterKeysFor,
@@ -109,6 +116,7 @@ const lineIndexIn = (key: string): Map<string, number> => {
 
 /** How many lines before the previous class's last line to start from, with --after-previous. */
 const RECAP_LINES = 3;
+let failed = 0;
 
 for (const ctx of todo) {
   const id = ctx.lecture.id;
@@ -119,7 +127,14 @@ for (const ctx of todo) {
   }
   const transcriptFile = transcriptPath(DATA_DIR, id);
   const transcript = JSON.parse(readFileSync(transcriptFile, 'utf8')) as StoredTranscript;
-  const words = transcript.result.timestamps ?? [];
+  const times = wordTimes(DATA_DIR, id, transcript.result.timestamps ?? []);
+  if (times.errors.length > 0) {
+    console.error(id);
+    for (const e of times.errors) console.error(`  error: ${e}`);
+    failed += 1;
+    continue;
+  }
+  const words = times.words;
   const ranges = overrides.get(id)?.ranges;
 
   const options: AlignOptions = { ...DEFAULT_ALIGN_OPTIONS };
@@ -181,6 +196,10 @@ for (const ctx of todo) {
       name: ranges ? 'monotonic-dp-ranges' : 'monotonic-dp',
       version: 1,
       options: ranges ? { ...options, ranges } : options,
+      times: times.source,
+      ...(times.retimed
+        ? { retimed: { file: times.file!, name: times.retimed.method.name, version: times.retimed.method.version } }
+        : {}),
     },
     stats: {
       transcriptWords: words.length,
@@ -212,7 +231,7 @@ for (const ctx of todo) {
   for (const c of perChapter) {
     const mine = segs.filter((s) => s.chapter === c.chapter);
     const when = mine.length ? ` at ${fmt(mine[0]!.startSeconds)}-${fmt(Math.max(...mine.map((s) => s.endSeconds)))}` : '';
-    if (c === perChapter[0]) console.log(id);
+    if (c === perChapter[0]) console.log(`${id}${times.source === 'retimed' ? ' (retimed word times)' : ''}`);
     console.log(
       `  ${c.chapter}: ${c.alignedLines} lines (index ${c.firstLineIndex}..${c.lastLineIndex} of ${c.chapterLines})${when}`,
     );
@@ -229,6 +248,11 @@ for (const ctx of todo) {
       console.log(`     heard: ${heard}`);
     }
   }
+}
+
+if (failed > 0) {
+  console.error(`\n${failed} lecture(s) not aligned: their data/retimed/ file does not match the transcript.`);
+  process.exit(1);
 }
 
 function round(x: number): number {
