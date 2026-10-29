@@ -22,6 +22,8 @@ import {
 } from './publish.js';
 
 const readJson = (file: string): unknown => JSON.parse(readFileSync(file, 'utf8'));
+/** An index `path` (URL-encoded per segment) as a file path; decodeURI would leave e.g. %26 (&) encoded. */
+const decodePath = (p: string) => p.split('/').map(decodeURIComponent).join('/');
 
 const CLASSES = `
 # Series A:1
@@ -263,12 +265,12 @@ describe('build (audio publishing)', () => {
     const policy = readJson(path.join(DATA_DIR, 'audio-publish.json')) as { minConfidence: number };
     const index = readJson(path.join(out, 'v1/alignments/index.json')) as { items: { id: string; path: string }[] };
     for (const item of index.items) {
-      const a = readJson(path.join(out, 'v1', decodeURI(item.path))) as { segments: { confidence: number }[] };
+      const a = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { confidence: number }[] };
       assert.ok(a.segments.every((s) => s.confidence >= policy.minConfidence));
     }
     const transcripts = readJson(path.join(out, 'v1/transcripts/index.json')) as { items: { path: string }[] };
     for (const item of transcripts.items) {
-      const t = readJson(path.join(out, 'v1', decodeURI(item.path))) as Record<string, unknown>;
+      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as Record<string, unknown>;
       assert.ok(!('result' in t) && !('sofer' in t), 'raw Sofer data is not published');
       // No in-scope series labels speakers today, so stored labels (Markel 002) are dropped.
       assert.ok(!(t['segments'] as Record<string, unknown>[]).some((seg) => 'speaker' in seg), 'speaker labels are not published');

@@ -31,6 +31,8 @@ const shots = path.resolve(process.argv[2] ?? fs.mkdtempSync(path.join(os.tmpdir
 fs.mkdirSync(shots, { recursive: true });
 
 const readJson = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
+// Index/URL paths are encoded per segment; decodeURI would leave e.g. %26 (&) encoded.
+const decodePath = (p) => p.split('/').map(decodeURIComponent).join('/');
 const chapter10 = readJson(path.join(DIST, 'alignments', 'chapters', 'chapter_10.json'));
 
 // ---- a 40-minute silent mp3 stands in for every class recording ----
@@ -121,7 +123,7 @@ async function seek(page, t) {
 const discussing = (page) => page.$$eval('[data-aligned-text] .is-discussing, [data-transcript] .is-discussing', (els) => els.map((e) => e.id));
 
 const PANE = '[data-listen-transcript-pane]';
-const transcriptOf = (lecture) => readJson(path.join(DIST, decodeURI(chapter10.lectures[lecture].transcript)));
+const transcriptOf = (lecture) => readJson(path.join(DIST, decodePath(chapter10.lectures[lecture].transcript)));
 /** Transcript region: visibility, size, scroll, current paragraph(s) and whether the first is fully in view. */
 const paneState = (page) =>
   page.evaluate((sel) => {
@@ -192,7 +194,10 @@ async function check(name, fn) {
         'Rabbi Markel Series (Advanced)',
       ]);
       // Class selector shows only the chosen teacher's classes.
-      assert.deepEqual(await page.locator('[data-listen-select] option').allTextContents(), ['Part 1', 'Part 2', 'Part 3']);
+      assert.deepEqual(
+        await page.locator('[data-listen-select] option').allTextContents(),
+        chapter10.lectures.filter((l) => l.seriesId === '0').map((l) => l.title),
+      );
     });
 
     await check('copying chapter text is unchanged by the play buttons', async () => {
@@ -239,12 +244,31 @@ async function check(name, fn) {
     });
 
     await check('a line only Markel covers plays Markel and says so', async () => {
-      const r = refOf('gbyeqivs', MARKEL_10);
-      await page.click('.line-play[data-line="gbyeqivs"]');
-      await waitTime(page, r.startSeconds);
-      assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
-      assert.match(await page.locator('[data-listen-note]').textContent(), /not in Rabbi Benyamin Walters Original Class's classes yet; playing Rabbi Markel/);
-      assert.equal(await page.locator('[data-listen-series]').inputValue(), chapter10.lectures[MARKEL_10].seriesId);
+      // Every chapter 10 line is in a Walters class now, so use the first chapter that has a Markel-only line.
+      const found = fs
+        .readdirSync(path.join(DIST, 'alignments', 'chapters'))
+        .filter((f) => /^chapter_\d+\.json$/.test(f))
+        .sort()
+        .map((f) => readJson(path.join(DIST, 'alignments', 'chapters', f)))
+        .flatMap((ch) =>
+          ch.lectures.some((l) => l.seriesId === '0')
+            ? ch.lines.filter((l) => l.refs.every((r) => ch.lectures[r.lecture].seriesId === '37')).map((l) => ({ ch, l }))
+            : [],
+        )[0];
+      assert.ok(found, 'some chapter has a line only Markel covers');
+      const { ch, l } = found;
+      const n = Number(/\d+$/.exec(ch.chapter)[0]);
+      const other = await newPage(browser, base);
+      try {
+        await other.page.goto(`${base}/texts/chapter-${n}/`);
+        await other.page.click(`.line-play[data-line="${l.lineId}"]`);
+        await waitTime(other.page, l.refs[0].startSeconds);
+        assert.equal((await audioState(other.page)).src, ch.lectures[l.refs[0].lecture].url);
+        assert.match(await other.page.locator('[data-listen-note]').textContent(), /not in Rabbi Benyamin Walters Original Class's classes yet; playing Rabbi Markel/);
+        assert.equal(await other.page.locator('[data-listen-series]').inputValue(), '37');
+      } finally {
+        await other.context.close();
+      }
     });
 
     await check('Follow along: the border follows playback (until-next-line model); on/off is saved', async () => {
@@ -252,7 +276,13 @@ async function check(name, fn) {
       await page.click('[data-follow-along]');
       await followOn(page);
       assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.followAlong')), 'on');
+      // Play the Markel class (lines in it are also in Walters classes, so pick the teacher first).
+      await page.selectOption('[data-listen-series]', chapter10.lectures[MARKEL_10].seriesId);
+      await page.selectOption('[data-listen-select]', String(MARKEL_10));
       const r = refOf('gbyeqivs', MARKEL_10);
+      await page.click('.line-play[data-line="gbyeqivs"]');
+      await waitTime(page, r.startSeconds);
+      assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
       await seek(page, r.startSeconds + 2);
       assert.deepEqual(await discussing(page), ['gbyeqivs']);
       const border = await page.evaluate(() => getComputedStyle(document.getElementById('gbyeqivs').closest('p, .content')).borderRightWidth);
@@ -265,6 +295,8 @@ async function check(name, fn) {
       // Far past the last line: nothing.
       await seek(page, 2300);
       assert.deepEqual(await discussing(page), []);
+      // Picking Markel above saved it as the teacher; the next checks start from Walters again.
+      await page.selectOption('[data-listen-series]', '0');
     });
 
     await check('Follow along: clicking line text seeks in the current class, or switches class', async () => {
@@ -434,7 +466,7 @@ async function check(name, fn) {
     if (withOutline >= 0) {
       await check('Follow along shows the class outline (auto-generated topics); clicking a topic seeks', async () => {
         const lecture = chapter10.lectures[withOutline];
-        const outline = readJson(path.join(DIST, decodeURI(lecture.outline)));
+        const outline = readJson(path.join(DIST, decodePath(lecture.outline)));
         await page.selectOption('[data-listen-series]', lecture.seriesId);
         await page.selectOption('[data-listen-select]', String(withOutline));
         if ((await page.getAttribute('[data-follow-along]', 'aria-pressed')) !== 'true') await page.click('[data-follow-along]');
@@ -594,7 +626,7 @@ async function check(name, fn) {
     if (intro) {
       await check('transcript page shows outline topics as headings between paragraphs', async () => {
         const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'transcripts', '001-intro', 'index.html'), 'utf8');
-        const topics = readJson(path.join(DIST, decodeURI(intro.path))).topics;
+        const topics = readJson(path.join(DIST, decodePath(intro.path))).topics;
         const headings = [...html.matchAll(/<h2 class="?topic"? data-topic-start="?([\d.]+)"?>([^<]*)</g)];
         assert.deepEqual(headings.map((m) => m[2].trim()), topics.map((t) => t.title));
         assert.ok(html.includes('Topic headings are auto-generated'));
@@ -608,7 +640,10 @@ async function check(name, fn) {
   }
 
   await check('a chapter without alignments is untouched (no player, no script, no data-t)', async () => {
-    const html = fs.readFileSync(path.join(PUBLIC, 'texts', 'chapter-1', 'index.html'), 'utf8');
+    const aligned = new Set(fs.readdirSync(path.join(DIST, 'alignments', 'chapters')));
+    const n = Array.from({ length: 54 }, (_, i) => i + 1).find((i) => !aligned.has(`chapter_${String(i).padStart(2, '0')}.json`));
+    assert.ok(n, 'some chapter has no alignments');
+    const html = fs.readFileSync(path.join(PUBLIC, 'texts', `chapter-${n}`, 'index.html'), 'utf8');
     assert.ok(!/data-listen|data-t=|<script/.test(html));
   });
 
