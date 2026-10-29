@@ -19,24 +19,65 @@
   </ul>
 
   {{- /* Transcribed classes that teach no chapter text (introductions, Q and A,
-         addenda): their transcript pages. */ -}}
+         addenda): their transcript pages, grouped by teacher and by the
+         catalog heading they sit under, in catalog order. Each group is a
+         collapsed <details>, so the page stays short. */ -}}
   {{ if eq $lang "en" }}
     {{ $audio := partialCached "audio/index.html" . "audio" }}
-    {{ $lectures := partialCached "audio/lectures.html" . "lectures" }}
-    {{ $items := slice }}
+    {{ $catalog := partial "catalog.html" . }}
+    {{ $noText := dict }}
     {{ range $id, $t := $audio.transcripts }}
       {{ if not (resources.Get $t.path | transform.Unmarshal).chapter }}
-        {{ $info := index $lectures $id }}
-        {{ $items = $items | append (dict "url" $t.url "title" $info.lecture.title "series" $info.series.title "headings" $info.headings "order" (printf "%s/%s" $info.series.title $id)) }}
+        {{ $noText = merge $noText (dict (md5 $id) $t.url) }}
       {{ end }}
     {{ end }}
-    {{ with $items }}
-    <h2>Classes without text</h2>
-    <ul class="index-list">
-      {{ range sort . "order" }}
-      <li><a href="{{ .url }}">{{ .title }} <small class="index-context">{{ .series }}{{ range .headings }} · {{ . }}{{ end }} · transcript</small></a></li>
+    {{ $teachers := slice }}
+    {{ range $series := $catalog.series }}
+      {{- /* [label, lectures] in catalog order; a lecture directly under the series
+             or a part is grouped under that heading. */ -}}
+      {{ $groups := slice }}
+      {{ $direct := slice }}
+      {{ range $a := $series.items }}
+        {{ if eq $a.type "lecture" }}
+          {{ with index $noText (md5 $a.id) }}{{ $direct = $direct | append (dict "title" $a.title "url" .) }}{{ end }}
+        {{ else }}
+          {{ $own := slice }}
+          {{ $sub := slice }}
+          {{ range $b := $a.items }}
+            {{ if eq $b.type "lecture" }}
+              {{ with index $noText (md5 $b.id) }}{{ $own = $own | append (dict "title" $b.title "url" .) }}{{ end }}
+            {{ else }}
+              {{ $items := slice }}
+              {{ range $c := $b.items }}
+                {{ if eq $c.type "lecture" }}
+                  {{ with index $noText (md5 $c.id) }}{{ $items = $items | append (dict "title" $c.title "url" .) }}{{ end }}
+                {{ end }}
+              {{ end }}
+              {{ with $items }}{{ $sub = $sub | append (dict "label" $b.title "context" $a.title "items" .) }}{{ end }}
+            {{ end }}
+          {{ end }}
+          {{ with $own }}{{ $groups = $groups | append (dict "label" $a.title "context" "" "items" .) }}{{ end }}
+          {{ range $sub }}{{ $groups = $groups | append . }}{{ end }}
+        {{ end }}
       {{ end }}
-    </ul>
+      {{ with $direct }}{{ $groups = (slice (dict "label" "General" "context" "" "items" .)) | append $groups }}{{ end }}
+      {{ with $groups }}{{ $teachers = $teachers | append (dict "title" $series.title "groups" .) }}{{ end }}
+    {{ end }}
+    {{ with $teachers }}
+    <h2>Classes without text</h2>
+    {{ range . }}
+    <h3 class="index-teacher">{{ .title }}</h3>
+    {{ range .groups }}
+    <details class="index-group">
+      <summary>{{ .label }}{{ with .context }} <small class="index-group-context">{{ . }}</small>{{ end }} <span class="index-group-count">{{ len .items }}</span></summary>
+      <ul class="index-list">
+        {{ range .items }}
+        <li><a href="{{ .url }}">{{ .title }} <small class="index-context">transcript</small></a></li>
+        {{ end }}
+      </ul>
+    </details>
+    {{ end }}
+    {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}

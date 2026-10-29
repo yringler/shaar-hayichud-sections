@@ -642,3 +642,52 @@ p:has(> .line.is-discussing),
   .listen-transcript-toggle { padding: 0.3rem 0.7rem; }
   .listen-transcript-pane { margin: -0.6rem -0.75rem 0.5rem; padding: 0.6rem 1rem 0.25rem; }
 }
+
+/* ── Classes without text (/texts): teacher, then collapsible catalog groups ── */
+.index-teacher {
+  margin-block: 1.5rem 0.5rem;
+  font-size: 1.05rem;
+  color: #4a4a68;
+}
+
+details.index-group {
+  margin-block: 0.4rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fff;
+}
+
+details.index-group > summary {
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  font-size: 1.05rem;
+  color: #2d2d4a;
+}
+
+details.index-group[open] > summary {
+  border-block-end: 1px solid #e8e4df;
+}
+
+details.index-group > ul.index-list {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.index-group-context {
+  color: #7a7a98;
+  font-size: 0.8rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+.index-group-count {
+  display: inline-block;
+  min-width: 1.6em;
+  padding: 0 0.4em;
+  margin-inline-start: 0.4rem;
+  border-radius: 999px;
+  background: #f0ece7;
+  color: #4a4a68;
+  font-size: 0.8rem;
+  text-align: center;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}

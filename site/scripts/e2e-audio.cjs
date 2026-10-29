@@ -663,6 +663,34 @@ async function check(name, fn) {
     assert.ok(/Classes without text[\s\S]*\/classes\/transcripts\/001-intro\//.test(texts));
   });
 
+  await check('/texts groups classes without text by teacher and catalog heading, collapsed', async () => {
+    const { context, page } = await newPage(browser, base, { context: { viewport: { width: 390, height: 844 } } });
+    try {
+      await page.goto(`${base}/texts/`);
+      const teachers = await page.locator('.index-teacher').allTextContents();
+      assert.ok(teachers.length >= 1);
+      const groups = page.locator('details.index-group');
+      assert.ok((await groups.count()) >= 2);
+      // Collapsed by default: no transcript link visible until a group opens.
+      assert.equal(await page.locator('details.index-group a:visible').count(), 0);
+      // Every group's count matches its links, and each link is a transcript page.
+      for (let i = 0; i < (await groups.count()); i++) {
+        const g = groups.nth(i);
+        const n = Number(await g.locator('.index-group-count').textContent());
+        assert.equal(await g.locator('li a').count(), n);
+        for (const href of await g.locator('li a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))) {
+          assert.match(href, /^\/classes\/transcripts\/[^/]+\/$/);
+        }
+      }
+      await groups.first().locator('summary').click();
+      assert.ok((await groups.first().locator('a:visible').count()) > 0);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true);
+      await page.screenshot({ path: path.join(shots, 'texts-groups-phone.png'), fullPage: true });
+    } finally {
+      await context.close();
+    }
+  });
+
   await browser.close();
   server.close();
   console.log(results.join('\n'));
