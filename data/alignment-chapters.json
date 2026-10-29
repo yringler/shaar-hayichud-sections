@@ -1,0 +1,8 @@
+{
+  "$comment": "Chapters a class reads, for classes whose catalog title or heading does not say (yarn align reads this; see data/README.md, 'Classes that read two chapters'). Lecture id -> chapter keys in reading order (aligned in one pass against their concatenation, which finds the switch), or -> ranges [{chapter, fromSeconds, ...notes}] starting at 0 (each stretch aligned to its own chapter).",
+  "lectures": {
+    "008 Tape019-Side1-Ch12.mp3": ["chapter_12", "chapter_13"],
+    "030 Tape025-Side2-Ch20.mp3": ["chapter_19", "chapter_20"],
+    "036 Tape028-Side2-Ch24.mp3": ["chapter_23", "chapter_24"]
+  }
+}
