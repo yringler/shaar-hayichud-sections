@@ -590,10 +590,11 @@ async function check(name, fn) {
       await page.waitForFunction(
         (url) => {
           const a = document.querySelector('[data-listen-audio]');
-          return a.currentSrc === url && !a.paused && a.currentTime < 5;
+          // From the start (the first class ended at 40:00); loose, as playback runs on under load.
+          return a.currentSrc === url && !a.paused && a.currentTime < 30;
         },
         chapter10.lectures[second].url,
-        { timeout: 15000 },
+        { timeout: 30000 },
       );
       assert.equal(await page.locator('[data-listen-select]').inputValue(), String(second));
       assert.equal(await page.locator('[data-listen-note]').textContent(), `Playing next: ${chapter10.lectures[second].title}`);
@@ -927,6 +928,14 @@ async function check(name, fn) {
         await reader.waitFor({ state: 'hidden' });
         assert.equal(await page.evaluate(() => history.state), null);
         assert.equal(await page.locator('[inert]').count(), 0);
+        // Opening the reader pauses a class playing elsewhere (it would be out of reach behind it).
+        await other.evaluate((a) => a.play());
+        await page.waitForFunction((a) => !a.paused, await other.elementHandle());
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        assert.equal(await other.evaluate((a) => a.paused), true);
+        await reader.locator('.reader-back').click();
+        await reader.waitFor({ state: 'hidden' });
         // A double-click on Back closes the reader once and stays on the list.
         await box.locator('a[data-lesson-open]').first().click();
         await reader.locator('.line.in-lesson').first().waitFor();
@@ -1047,6 +1056,13 @@ async function check(name, fn) {
       assert.equal(await page.evaluate(() => history.state), null);
       assert.equal(await page.locator('[inert]').count(), 0);
       assert.equal(await page.locator('.track.is-reading').count(), 0);
+      // Focus moved to the class now playing, and it is on screen.
+      const focus = await page.evaluate(() => {
+        const el = document.activeElement;
+        const r = el.getBoundingClientRect();
+        return { box: el.closest('.track')?.id, onScreen: r.bottom > 0 && r.top < window.innerHeight };
+      });
+      assert.deepEqual(focus, { box: plain, onScreen: true });
       assert.deepEqual(errors, []);
     } finally {
       await context.close();

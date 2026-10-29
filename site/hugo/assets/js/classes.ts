@@ -101,7 +101,8 @@ interface Lesson {
   current: Span | null;
 }
 
-function play(audio: HTMLAudioElement, at: number): void {
+/** Plays from `at`; resolves false when the browser refuses to start (autoplay policy). */
+function play(audio: HTMLAudioElement, at: number): Promise<boolean> {
   if (audio.readyState >= 1) {
     audio.currentTime = at;
   } else {
@@ -114,7 +115,10 @@ function play(audio: HTMLAudioElement, at: number): void {
       { once: true },
     );
   }
-  void audio.play().catch(() => undefined);
+  return audio.play().then(
+    () => true,
+    () => false,
+  );
 }
 
 function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
@@ -170,10 +174,10 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
   preview.addEventListener('click', (e) => {
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-start]');
-    if (button) return play(audio, Number(button.dataset['start']));
+    if (button) return void play(audio, Number(button.dataset['start']));
     const line = target.closest<HTMLElement>('.line.has-audio');
     const t = line && times.get(line.dataset['line']!);
-    if (t && isPlainClick(e)) play(audio, t.start);
+    if (t && isPlainClick(e)) void play(audio, t.start);
   });
 
   for (const link of box.querySelectorAll<HTMLAnchorElement>('a[data-lesson-open]')) {
@@ -199,8 +203,8 @@ interface Reader {
   open(lesson: Lesson, page: string, opener: HTMLElement): Promise<void>;
   /** Autoplay next: show `lesson` instead (same history entry); closing returns focus to `link`. */
   swap(lesson: Lesson, link: HTMLAnchorElement): Promise<void>;
-  /** Close it (going back over its history entry); resolves once closed. */
-  close(): Promise<void>;
+  /** Close it (going back over its history entry), focusing `focus` (default: the link that opened it); resolves once closed. */
+  close(focus?: HTMLElement): Promise<void>;
   /** The lesson's current line changed: move the highlight (when it is open on that lesson). */
   highlight(lesson: Lesson): void;
   /** Playback moved on: keep the current line in view (when open on that lesson). */
@@ -292,11 +296,22 @@ function createReader(): Reader {
     body.replaceChildren();
     lesson = null;
     pushed = false;
-    opener?.focus({ preventScroll: true });
+    if (opener) {
+      // After autoplay moved the reader on, the link can be far from where
+      // the page was left: bring it on screen, once the history traversal
+      // has restored the page's scroll position.
+      const el = opener;
+      el.focus({ preventScroll: true });
+      window.setTimeout(() => {
+        const r = el.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) el.scrollIntoView({ block: 'center' });
+      }, 0);
+    }
     opener = null;
   };
-  const close = (): Promise<void> => {
+  const close = (focus?: HTMLElement): Promise<void> => {
     if (!lesson) return Promise.resolve();
+    if (focus) opener = focus;
     const closed = new Promise<void>((resolve) => onClosed.push(resolve));
     if (pushed) {
       pushed = false; // a second close (double-click) must not go back again
@@ -324,10 +339,10 @@ function createReader(): Reader {
     if (!lesson) return;
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-start]');
-    if (button) return play(lesson.audio, Number(button.dataset['start']));
+    if (button) return void play(lesson.audio, Number(button.dataset['start']));
     const line = target.closest<HTMLElement>('.line.has-audio');
     const t = line && lesson.times.get(line.id);
-    if (t && isPlainClick(e)) play(lesson.audio, t.start);
+    if (t && isPlainClick(e)) void play(lesson.audio, t.start);
   });
 
   const open = async (l: Lesson, page: string, from: HTMLElement) => {
@@ -341,6 +356,8 @@ function createReader(): Reader {
     }
     lesson = l;
     opener ??= from;
+    // Only the docked class can be controlled while the reader is open.
+    for (const a of document.querySelectorAll<HTMLAudioElement>('.track audio')) if (a !== l.audio) a.pause();
     const target = l.chapters.find((c) => c.page === page) ?? l.chapters[0];
     title.textContent = [target?.title, l.title].filter(Boolean).join(' · ');
     pageLink.href = target?.link ?? page;
@@ -438,16 +455,26 @@ function initAutoplay(boxes: readonly HTMLElement[], lessons: ReadonlyMap<HTMLAu
       const i = tracks.findIndex((t) => t.audio === e.target);
       const next = i >= 0 ? tracks[i + 1] : undefined;
       if (!next) return; // the page's last class: stop
-      play(next.audio, 0);
       const open = reader?.lesson ?? null;
-      if (!reader || !open) return reveal(next.box);
-      if (open.audio !== e.target) return;
-      // The reader was on the class that ended: show the next lesson (the
-      // same history entry, its player docked), or close for a class without text.
-      const lesson = lessons.get(next.audio);
-      const link = lesson?.box.querySelector<HTMLAnchorElement>('a[data-lesson-open]');
-      if (lesson && link) void reader.swap(lesson, link);
-      else void reader.close().then(() => reveal(next.box));
+      // A class hidden behind the reader (not the docked one) does not move on.
+      if (open && open.audio !== e.target) return;
+      const focusNext = () => next.box.querySelector<HTMLElement>('a, audio') ?? undefined;
+      void play(next.audio, 0).then((started) => {
+        if (!started) {
+          // Refused (autoplay policy): show the next class so it can be started by hand.
+          if (reader?.lesson) void reader.close(focusNext()).then(() => reveal(next.box));
+          else reveal(next.box);
+          return;
+        }
+        if (!reader || !open) return reveal(next.box);
+        if (reader.lesson !== open) return; // closed or moved meanwhile
+        // The reader was on the class that ended: show the next lesson (the
+        // same history entry, its player docked), or close for a class without text.
+        const lesson = lessons.get(next.audio);
+        const link = lesson?.box.querySelector<HTMLAnchorElement>('a[data-lesson-open]');
+        if (lesson && link) void reader.swap(lesson, link);
+        else void reader.close(focusNext()).then(() => reveal(next.box));
+      });
     },
     true,
   );
