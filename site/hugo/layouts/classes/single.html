@@ -14,11 +14,23 @@
     </p>
     <h1>{{ $part.title }}</h1>
 
+    {{- /* Quick table of contents for long pages: one link per heading. */ -}}
+    {{- $sections := where $part.items "type" "section" }}
+    {{- if gt (len $sections) 1 }}
+    <nav class="class-toc" aria-label="Contents of this page">
+      <ul>
+        {{- range $sections }}
+        <li><a href="#{{ .title | urlize }}">{{ .title }}</a> <span class="track-count">{{ .lectureCount }}</span></li>
+        {{- end }}
+      </ul>
+    </nav>
+    {{- end }}
+
     {{ range $part.items }}
       {{ if eq .type "lecture" }}
         {{ partial "class-track.html" . }}
       {{ else }}
-        <section class="chapter-section">
+        <section class="chapter-section" id="{{ .title | urlize }}">
           <h2>{{ .title }}</h2>
           {{ range .items }}
             {{ if eq .type "lecture" }}
@@ -29,5 +41,7 @@
       {{ end }}
     {{ end }}
   </div>
+  {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
+  <script type="module" src="{{ $scripts.classes.RelPermalink }}" integrity="{{ $scripts.classes.Data.Integrity }}" crossorigin="anonymous"></script>
   {{ end }}
 {{ end }}

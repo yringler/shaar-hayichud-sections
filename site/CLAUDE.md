@@ -10,7 +10,7 @@ Static site for chapters of Shaar Hayichud with labeled subsections, plus audio 
 
 - **Hugo** — static site generator (Go templates)
 - **Yarn 4** — package manager (epub script; `yarn build` also installs and runs `../data/tools`)
-- **TypeScript** for the two audio scripts (`hugo/assets/js/`), bundled by Hugo's built-in `js.Build` (esbuild); type-checked with `../data/tools`' TypeScript, so the site has no JS dependencies of its own
+- **TypeScript** for the audio scripts (`hugo/assets/js/`), bundled by Hugo's built-in `js.Build` (esbuild); type-checked with `../data/tools`' TypeScript, so the site has no JS dependencies of its own
 
 ## Commands
 
@@ -47,7 +47,7 @@ hugo/
   content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes)
   data/i18n.json   # nav label translations (en/he)
   layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog, class-track, audio/)
-  assets/js/       # play.ts, follow.ts, audio/model.ts (see Audio on chapter pages)
+  assets/js/       # play.ts, follow.ts, classes.ts, audio/model.ts (see Class lists, Audio on chapter pages)
   static/          # CNAME, _headers, texts/index.json
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
@@ -129,6 +129,12 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - `content/classes/_content.gotmpl` creates one page per series and one page per child section, with slugs built from the titles. Series that have been renamed keep their old URLs as aliases.
 - Templates use the lecture `url` exactly as given and never build URLs themselves.
 - Each track links to its transcript page and to the chapter it is aligned to ("Follow in the text"), when those are published. A class aligned to two chapters links to both ("Follow in the text:", "Chapter 34", "Chapter 35"), its transcript page names both, and both chapter pages list it; `audio/index.html`'s `aligned` entry carries the chapter with the most aligned lines plus `all`.
+
+**Class lists** (`classes/single.html`, `classes/list.html`):
+
+- A part page with more than one heading starts with a quick contents list (`nav.class-toc`): one pill link per heading (`#<title | urlize>`, the `section.chapter-section` id) with its class count. Each track box has `id="class-<lecture id | urlize>"`.
+- Each aligned class shows the chapter text it reads (`partials/audio/lesson-text.html`): every line from its first aligned line to its last in reading order (`audio/chapter-lines.html` → `audio/flatten-lines.html`, numbered like `render-textnode.html`), per chapter it reads, with `data-start`/`data-end` from the class's own alignment (`alignments/<id>.json`) on aligned lines. The lines carry `data-line`, never `id` (a line can appear in several boxes). The box (`.lesson-text`, `dir=rtl`) is about three phrases tall and scrolls on its own.
+- `classes.js` (`assets/js/classes.ts`, built by `audio/scripts.html`): one class plays at a time; preview lines get a ▶ button and clicking one (or the line text, selection-safe) plays from there; while the class plays, the current line gets `is-discussing` and the box scrolls itself (never the page; quiet 5 s after the reader scrolls it). "Follow in the text" (`a[data-lesson-open]`) opens the in-page reader instead of navigating: a full-screen `role=dialog` that shows the chapter text taken from the chapter page (`[data-aligned-text]`, fetched once per chapter), lines outside the lesson muted, ▶ and click-to-seek on the lesson's aligned lines, the current line marked and kept in view. The class's own `<audio>` stays where it is in the DOM and is docked by CSS (`.track.is-reading audio`, `position: fixed`), so playback is never interrupted. Opening pushes a history entry; ← Back to classes, Esc or the browser's Back close it and return focus to the link. A modified click (new tab) still goes to the chapter page.
 
 ## Audio on chapter pages and transcript pages
 

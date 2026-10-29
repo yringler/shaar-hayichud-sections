@@ -2,10 +2,11 @@
 /**
  * Browser test of the audio features on the built site (hugo/public/):
  * chapter 10 play-from-here (the saved or default teacher, no menu), the
- * teacher/class selectors and their saved choice, Follow along (the
+ * teacher/class selectors and their saved choice, ?teacher= links, Follow along (the
  * is-discussing border, saved on/off), the transcript region in the docked
  * panel, new-tab transcript links, blocked storage, a transcript page, phone
- * width, and pages without audio staying untouched.
+ * width, pages without audio staying untouched, and the class lists (contents,
+ * lesson text preview, the in-page reader).
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -660,7 +661,7 @@ async function check(name, fn) {
     const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
     assert.ok(html.includes('/classes/transcripts/001-intro/'));
     assert.ok(html.includes('/classes/transcripts/002-tape016-side1-ch10/'));
-    const links = [...html.matchAll(/<a href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
+    const links = [...html.matchAll(/<a (?:class="?audio-link"? )?href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
     assert.ok(links.length >= 2);
     for (const [, attrs, inner] of links) {
       assert.match(attrs, /target="?_blank"?/);
@@ -699,6 +700,135 @@ async function check(name, fn) {
       await context.close();
     }
   });
+
+  await check('?teacher=RabbiMarkel opens chapter 10 with Markel without saving it; picking a teacher saves it and drops the parameter', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/texts/chapter-10/?teacher=RabbiMarkel`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '37');
+      assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series')), null);
+      // Not saved: without the parameter the default teacher comes back.
+      await page.goto(`${base}/texts/chapter-10/`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+      // An unknown teacher falls back with a note.
+      await page.goto(`${base}/texts/chapter-10/?teacher=Nobody`);
+      await page.waitForSelector('.line-play');
+      assert.equal(await page.locator('[data-listen-series]').inputValue(), '0');
+      assert.match(await page.locator('[data-listen-note]').textContent(), /Nobody/);
+      // The reader's own pick is saved and replaces the link's.
+      await page.goto(`${base}/texts/chapter-10/?teacher=RabbiMarkel`);
+      await page.waitForSelector('.line-play');
+      await page.locator('[data-listen-series]').selectOption('0');
+      assert.equal(new URL(page.url()).search, '');
+      assert.equal(JSON.parse(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.series'))).id, '0');
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('class list: contents links, chapter links carry ?teacher=, lesson text preview', async () => {
+    const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
+    assert.match(html, /<nav class="?class-toc"?[\s\S]*?href="?#chapter-10"?/);
+    assert.match(html, /id="?chapter-10"?/);
+    assert.match(html, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
+    const t = fs.readFileSync(path.join(PUBLIC, 'classes', 'transcripts', '002-tape016-side1-ch10', 'index.html'), 'utf8');
+    assert.match(t, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`class list (${name}): preview plays from a line and follows; the reader keeps the class playing; Back returns`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: ctx });
+      const list = `${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`;
+      try {
+        await page.goto(list);
+        const box = page.locator('.track[data-lesson]').first();
+        const preview = box.locator('[data-lesson-text]');
+        // About three phrases tall, scrolling on its own.
+        const ph = await preview.evaluate((el) => ({ h: el.clientHeight, sh: el.scrollHeight }));
+        assert.ok(ph.h < 200 && ph.sh > ph.h, JSON.stringify(ph));
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true);
+        // Play from the third aligned line of the preview.
+        const third = preview.locator('.line-play').nth(2);
+        const start = Number(await third.getAttribute('data-start'));
+        await third.click();
+        const audio = box.locator('audio');
+        await page.waitForFunction(
+          ([el, t]) => !el.paused && Math.abs(el.currentTime - t) < 1.5,
+          [await audio.elementHandle(), start],
+          { timeout: 15000 },
+        );
+        await page.waitForTimeout(500);
+        assert.equal(await preview.locator('.line.is-discussing').count(), 1);
+        // The current line is in view inside the box, and the page did not scroll for it.
+        const vis = await preview.evaluate((el) => {
+          const c = el.querySelector('.is-discussing').getBoundingClientRect();
+          const r = el.getBoundingClientRect();
+          return c.top >= r.top - 1 && c.top <= r.bottom;
+        });
+        assert.ok(vis);
+        // Another class starting pauses this one.
+        const other = page.locator('.track audio').nth(3);
+        await other.evaluate((a) => a.play());
+        await page.waitForTimeout(300);
+        assert.equal(await audio.evaluate((a) => a.paused), true);
+        await other.evaluate((a) => a.pause());
+        await audio.evaluate((a) => a.play());
+
+        // Open the reader: no reload, same audio keeps playing, the current line is marked and in view.
+        await page.evaluate(() => (window.__noReload = true));
+        const before = await audio.evaluate((a) => a.currentTime);
+        await box.locator('a[data-lesson-open]').first().click();
+        const reader = page.locator('.reader');
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await page.waitForTimeout(600);
+        assert.equal(await page.evaluate(() => window.__noReload), true);
+        assert.equal(await audio.evaluate((a) => a.paused), false);
+        assert.ok((await audio.evaluate((a) => a.currentTime)) >= before);
+        const cur = reader.locator('.line.is-discussing');
+        assert.equal(await cur.count(), 1);
+        const inView = await cur.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return r.bottom > 0 && r.top < window.innerHeight;
+        });
+        assert.ok(inView);
+        // The docked player is on screen, above the reader.
+        const docked = await audio.evaluate((a) => {
+          const r = a.getBoundingClientRect();
+          return getComputedStyle(a).position === 'fixed' && r.bottom <= window.innerHeight + 1 && r.top > 0;
+        });
+        assert.ok(docked);
+        // Clicking a reader line of the lesson seeks.
+        const line = reader.locator('.line.has-audio').first();
+        const lineStart = Number(await reader.locator('.line-play').first().getAttribute('data-start'));
+        await line.click();
+        await page.waitForFunction(([el, t]) => Math.abs(el.currentTime - t) < 1.5, [await audio.elementHandle(), lineStart], { timeout: 15000 });
+        await page.screenshot({ path: path.join(shots, `classes-reader-${name}.png`) });
+        // Browser Back closes it; the class still plays; the page is the list.
+        await page.goBack();
+        await reader.waitFor({ state: 'hidden' });
+        assert.equal(page.url(), list);
+        assert.equal(await page.evaluate(() => window.__noReload), true);
+        assert.equal(await audio.evaluate((a) => a.paused), false);
+        assert.equal(await audio.evaluate((a) => getComputedStyle(a).position), 'static');
+        // Esc closes it too.
+        await box.locator('a[data-lesson-open]').first().click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await page.keyboard.press('Escape');
+        await reader.waitFor({ state: 'hidden' });
+        await page.screenshot({ path: path.join(shots, `classes-list-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
 
   await browser.close();
   server.close();

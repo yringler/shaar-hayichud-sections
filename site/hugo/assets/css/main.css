@@ -682,7 +682,8 @@ p:has(> .line.is-discussing),
   }
   .listen-now { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .follow-along,
-  .listen-transcript-toggle { padding: 0.3rem 0.7rem; }
+  .listen-transcript-toggle,
+  .listen a.audio-link { padding: 0.25rem 0.6rem; font-size: 0.85rem; }
   .listen-transcript-pane { margin: -0.6rem -0.75rem 0.5rem; padding: 0.6rem 1rem 0.25rem; }
 }
 
@@ -733,4 +734,161 @@ details.index-group > ul.index-list {
   font-size: 0.8rem;
   text-align: center;
   font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ── Class lists: quick contents, lesson text, in-page reader ── */
+nav.class-toc {
+  display: block;
+  padding: 0;
+  margin-block: 0 1.5rem;
+  border: 0;
+}
+
+.class-toc ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.class-toc li { display: inline-flex; align-items: baseline; gap: 0.3rem; }
+
+.class-toc a {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #ddd8d2;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.class-toc .track-count { font-size: 0.8rem; color: #7a7a98; }
+
+.chapter-section { scroll-margin-block-start: 1rem; }
+
+/* The chapter text a class reads (class-track.html): set like the chapter
+   page, in a box about three phrases tall that scrolls on its own. */
+.lesson-text {
+  max-block-size: 8.5em;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin-block: 0.6rem 0.75rem;
+  padding: 0.4rem 1rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #1a1a2e;
+  background: #faf9f7;
+  border: 1px solid #ece8e3;
+  border-radius: 6px;
+}
+
+.lesson-text:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+
+.lesson-text p { margin: 0 0 0.3em; }
+
+.lesson-text .number { margin-inline-end: 0.3em; }
+
+.lesson-text-heading {
+  margin-block: 0.3rem !important;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7a7a98;
+}
+
+.lesson-text .line.has-audio,
+.reader .line.has-audio { cursor: pointer; }
+
+/* The reader: the full chapter text over the class list. The class plays on
+   in its own <audio>, docked at the bottom (.track.is-reading). */
+html.reader-open { overflow: hidden; }
+
+.reader {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  background: #faf9f7;
+}
+
+.reader-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  padding: 0.6rem max(1rem, calc((100% - 52rem) / 2 + 1.5rem));
+  background: #fff;
+  border-block-end: 1px solid #e8e4df;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+.reader-back {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #3d5a80;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reader-back:hover { background: #2c4361; }
+.reader-back:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+
+.reader-title {
+  flex: 1 1 12rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d2d4a;
+  letter-spacing: 0;
+}
+
+.reader-title:focus { outline: none; }
+
+.reader-body {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 1rem max(1rem, calc((100% - 52rem) / 2 + 1.5rem)) 7rem;
+}
+
+.reader-body:focus-visible { outline: none; }
+
+.reader-chapter {
+  margin-block: 1.5rem 0.5rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Lines outside the class's range are muted, so the lesson stands out. */
+.reader .line:not(.in-lesson) { color: #8a8aa0; }
+
+.reader-status { font-family: -apple-system, 'Segoe UI', system-ui, sans-serif; color: #7a7a98; }
+
+.ltr-content .track.is-reading audio {
+  position: fixed;
+  z-index: 31;
+  inset-inline: 0;
+  inset-block-end: 0;
+  inline-size: min(52rem, 100%);
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  box-shadow: 0 -2px 10px rgba(26, 26, 46, 0.12);
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .lesson-text { font-size: 1rem; padding: 0.3rem 0.7rem; }
+  .reader-body { padding-inline: 1rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reader:not([hidden]) { animation: reader-in 0.2s ease-out; }
+  @keyframes reader-in { from { transform: translateY(1.5rem); opacity: 0; } }
 }

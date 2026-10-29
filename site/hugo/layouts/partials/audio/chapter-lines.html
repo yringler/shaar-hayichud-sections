@@ -1,0 +1,5 @@
+{{- /* Every line of a chapter in reading order (see flatten-lines.html).
+       Call with partialCached "audio/chapter-lines.html" <key> <key>. */ -}}
+{{- $nodes := index site.Data.chapters . -}}
+{{- if not $nodes }}{{ errorf "chapter-lines: no chapter %q in data/chapters" . }}{{ end -}}
+{{- return partial "audio/flatten-lines.html" (dict "nodes" $nodes "prefix" "") -}}
