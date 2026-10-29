@@ -563,7 +563,10 @@ async function check(name, fn) {
       await page.goto(`${base}/texts/chapter-10/`);
       await page.waitForSelector('.line-play');
       const toggle = page.locator('[data-listen] [data-autoplay-next]');
-      assert.ok(await toggle.isVisible());
+      // Shown only while the player plays.
+      assert.equal(await toggle.isVisible(), false);
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await toggle.waitFor();
       assert.equal(await toggle.isChecked(), false);
       assert.equal(await page.evaluate(() => document.querySelector('[data-listen-audio]').nextElementSibling.matches('label.autoplay-next')), true);
       assert.equal((await page.locator('label.autoplay-next').textContent()).trim(), 'Autoplay next');
@@ -623,7 +626,8 @@ async function check(name, fn) {
       assert.equal(await page.locator('[data-listen-select]').inputValue(), String(last));
       assert.match(await page.locator('[data-listen-note]').textContent(), /last class of Rabbi Benyamin Walters Original Class on this chapter/);
 
-      // Off: a class that ends stays.
+      // Off: a class that ends stays. (The toggle shows only while playing.)
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
       await toggle.click();
       assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'off');
       await page.selectOption('[data-listen-select]', String(first));
@@ -972,10 +976,20 @@ async function check(name, fn) {
       assert.equal(await page.evaluate(() => [...document.querySelectorAll('.track audio')].every((a) => a.nextElementSibling?.matches('label.autoplay-next'))), true);
       const states = () => toggles.evaluateAll((els) => els.map((e) => e.checked));
       assert.deepEqual(await states(), Array(n).fill(false));
+      // Shown only in the box whose class plays.
+      const playBox = async (i) => {
+        await boxes.nth(i).locator('audio').evaluate((a) => a.play());
+        await toggles.nth(i).waitFor();
+      };
+      assert.equal(await page.locator('.track .autoplay-next:visible').count(), 0);
+      await playBox(2);
+      assert.equal(await page.locator('.track .autoplay-next:visible').count(), 1);
       // Changing one changes them all, and it is saved.
       await toggles.nth(2).click();
       assert.deepEqual(await states(), Array(n).fill(true));
       assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'on');
+      await playBox(4);
+      assert.equal(await toggles.nth(2).isVisible(), false);
       await toggles.nth(4).click();
       assert.deepEqual(await states(), Array(n).fill(false));
       assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'off');
@@ -1018,9 +1032,11 @@ async function check(name, fn) {
       await boxes.nth(10).locator('a[data-lesson-open]').first().click();
       const reader = page.locator('.reader');
       await reader.locator('.line.in-lesson').first().waitFor();
+      await (await audioOf(10)).evaluate((a) => a.play());
+      await toggles.nth(10).waitFor();
       const h = await page.evaluate(() => history.length);
       let reached = false;
-      for (let i = 0; i < 30 && !reached; i++) {
+      for (let i = 0; i < 40 && !reached; i++) {
         await page.keyboard.press('Tab');
         reached = await page.evaluate(() => !!document.activeElement?.matches('.track.is-reading [data-autoplay-next]'));
       }
@@ -1078,10 +1094,10 @@ async function check(name, fn) {
       try {
         await page.goto(`${base}/he/texts/chapter-10/`);
         await page.waitForSelector('.line-play');
-        await page.tap('[data-listen] .autoplay-next');
-        assert.equal(await page.isChecked('[data-listen] [data-autoplay-next]'), true);
         await page.tap('.line-play[data-line="njpqigb7"]');
         await waitTime(page, refOf('njpqigb7', WALTERS_1).startSeconds);
+        await page.tap('[data-listen] .autoplay-next');
+        assert.equal(await page.isChecked('[data-listen] [data-autoplay-next]'), true);
         await page.waitForTimeout(300);
         const st = await paneState(page);
         // The phone width check's limit (at 360 px the buttons already take a third row).
@@ -1094,6 +1110,8 @@ async function check(name, fn) {
         await page.goto(`${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`);
         const box = page.locator('.track').first();
         assert.equal(await box.locator('[data-autoplay-next]').isChecked(), true);
+        await box.locator('audio').evaluate((a) => a.play());
+        await box.locator('.autoplay-next').waitFor();
         const [b, t] = await Promise.all([box.boundingBox(), box.locator('.autoplay-next').boundingBox()]);
         assert.ok(t.x >= b.x && t.x + t.width <= b.x + b.width, `toggle ${JSON.stringify(t)} box ${JSON.stringify(b)}`);
         assert.ok((await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)) <= 0);

@@ -32,7 +32,7 @@ import {
   type Topic,
   type Transcript,
 } from './audio/model.ts';
-import { autoplayNext, readStore, writeStore } from './audio/store.ts';
+import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
 type FollowModule = { startFollow: (o: FollowOptions) => FollowController };
@@ -350,6 +350,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   // ---- Autoplay next: the same teacher's next class (the next option in
   // the Class selector) from the start; after the last one, stop ----
   const autoplayOn = autoplayNext([...panel.querySelectorAll<HTMLInputElement>('[data-autoplay-next]')]);
+  markPlaying(audio, panel);
   audio.addEventListener('ended', () => {
     const lecture = currentLecture();
     if (!autoplayOn() || !data || lecture === null) return;

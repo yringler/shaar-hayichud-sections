@@ -24,6 +24,16 @@ export function writeStore(key: string, value: string): void {
 }
 
 /**
+ * Keeps `is-playing` on `el` while `audio` plays (CSS shows the player's
+ * Autoplay next toggle only then).
+ */
+export function markPlaying(audio: HTMLAudioElement, el: HTMLElement): void {
+  const sync = () => el.classList.toggle('is-playing', !audio.paused);
+  for (const ev of ['play', 'pause', 'ended', 'emptied'] as const) audio.addEventListener(ev, sync);
+  sync();
+}
+
+/**
  * Binds the page's Autoplay next checkboxes to one on/off (saved, default
  * off): changing one saves it and updates the others. Returns whether it is
  * on now.

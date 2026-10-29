@@ -25,7 +25,7 @@
  * and links to the chapter pages.
  */
 import { formatTime, scrollToShow, spanAt, spans, type Span } from './audio/model.ts';
-import { autoplayNext } from './audio/store.ts';
+import { autoplayNext, markPlaying } from './audio/store.ts';
 
 /** No automatic scrolling of a scroll region for this long after the reader scrolls it. */
 const USER_SCROLL_QUIET_MS = 5000;
@@ -442,6 +442,7 @@ function initAutoplay(boxes: readonly HTMLElement[], lessons: ReadonlyMap<HTMLAu
     const audio = box.querySelector<HTMLAudioElement>('audio');
     return audio ? [{ box, audio }] : [];
   });
+  for (const { box, audio } of tracks) markPlaying(audio, box);
   // Page scrolls only: the lesson text boxes and the reader scroll on their own.
   const quiet = scrollWatcher(window, '[data-lesson-text], .reader, .track-player');
   const reveal = (box: HTMLElement) => {

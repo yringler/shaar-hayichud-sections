@@ -489,6 +489,10 @@ a.audio-link:focus-visible {
   -webkit-user-select: none;
 }
 
+/* Only for the player that is playing (`is-playing`, set by the scripts). */
+.listen:not(.is-playing) .autoplay-next,
+.track:not(.is-playing) .autoplay-next { display: none; }
+
 .autoplay-next input {
   inline-size: 0.95rem;
   block-size: 0.95rem;
