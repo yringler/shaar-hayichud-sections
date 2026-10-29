@@ -7,7 +7,8 @@
        saved choice. With classes.js the chapter link opens the in-page
        reader instead (data-lesson-open), keeping the audio playing, and
        shows Autoplay next under the player (.track-player, which the reader
-       docks). */ -}}
+       docks) and the class's auto-generated topics under its title (each
+       plays the class from there). */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
 {{- $transcript := index $audio.transcripts .id -}}
@@ -21,6 +22,19 @@
     <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
   </div>
   <p class="track-title">{{ .title }}</p>
+  {{- with index $audio.outlines .id }}
+  {{- with (resources.Get . | transform.Unmarshal).topics }}
+  <details class="listen-topics" data-track-topics data-js-only hidden>
+    <summary>Topics in this class <span class="auto-generated">(auto-generated)</span></summary>
+    <ol>
+      {{- range . }}
+      {{- $s := int .startSeconds }}{{ $h := div $s 3600 }}{{ $m := mod (div $s 60) 60 }}
+      <li><button type="button" data-start="{{ .startSeconds }}"><span class="listen-topic-time">{{ if $h }}{{ printf "%d:%02d:%02d" $h $m (mod $s 60) }}{{ else }}{{ printf "%d:%02d" $m (mod $s 60) }}{{ end }}</span> {{ .title }}</button></li>
+      {{- end }}
+    </ol>
+  </details>
+  {{- end }}
+  {{- end }}
   {{- with $text }}
   {{- $multi := gt (len .) 1 }}
   <div class="lesson-text" data-lesson-text dir="rtl" lang="he" role="group" aria-label="Text of this class" tabindex="0">
