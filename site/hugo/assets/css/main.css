@@ -675,7 +675,13 @@ p:has(> .line.is-discussing),
   margin-block: 0 0.25rem;
 }
 
-.ltr-content .track-title:has(+ .track-links) { margin-block-end: 0.6rem; }
+.ltr-content .track-title:has(+ .track-links, + [hidden] + .track-links) { margin-block-end: 0.6rem; }
+.ltr-content .track-title:has(+ .listen-topics:not([hidden])) { margin-block-end: 0; }
+.track .listen-topics {
+  margin-block: 0.4rem 0.6rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.4;
+}
 
 .track-links-label,
 .transcript-follow {

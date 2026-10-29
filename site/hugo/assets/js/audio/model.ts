@@ -34,8 +34,8 @@ export interface Outline {
 }
 
 /** The topic under way at time t (the last one started), or null before the first. */
-export function topicAt(topics: readonly Topic[], t: number): Topic | null {
-  let found: Topic | null = null;
+export function topicAt<T extends Pick<Topic, 'startSeconds'>>(topics: readonly T[], t: number): T | null {
+  let found: T | null = null;
   for (const topic of topics) {
     if (topic.startSeconds <= t) found = topic;
     else break;

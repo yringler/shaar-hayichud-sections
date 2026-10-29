@@ -15,6 +15,9 @@
  *   (it is never moved in the DOM, so playback, position and paused/playing
  *   carry over untouched). Back, Esc or the browser's Back button close it.
  *   A modified click (new tab, etc.) still follows the link to the chapter page.
+ * - Topics in this class (`[data-track-topics]`, the auto-generated outline
+ *   under the title): clicking one plays the class from there; while it
+ *   plays, the topic under way gets aria-current.
  * - Autoplay next (one saved on/off for every box): when a class ends, the
  *   next box on the page plays from the start. If the reader was open on the
  *   class, it moves on to the next lesson (or closes when that one has no
@@ -24,7 +27,7 @@
  * Without JavaScript the boxes keep their plain player, the scrollable text
  * and links to the chapter pages.
  */
-import { formatTime, scrollToShow, spanAt, spans, type Span } from './audio/model.ts';
+import { formatTime, scrollToShow, spanAt, spans, topicAt, type Span } from './audio/model.ts';
 import { autoplayNext, markPlaying } from './audio/store.ts';
 
 /** No automatic scrolling of a scroll region for this long after the reader scrolls it. */
@@ -188,6 +191,27 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
     });
   }
   return lesson;
+}
+
+/** The box's topic list: each topic plays the class from its start; the one under way is marked. */
+function initTopics(box: HTMLElement): void {
+  const audio = box.querySelector<HTMLAudioElement>('audio');
+  const list = box.querySelector<HTMLElement>('[data-track-topics]');
+  if (!audio || !list) return;
+  const items = [...list.querySelectorAll<HTMLButtonElement>('button[data-start]')].map((button) => ({
+    button,
+    startSeconds: Number(button.dataset['start']),
+  }));
+  for (const t of items) t.button.addEventListener('click', () => void play(audio, t.startSeconds));
+  let current: (typeof items)[number] | null = null;
+  const update = () => {
+    const t = audio.currentTime > 0 || !audio.paused ? topicAt(items, audio.currentTime) : null;
+    if (t === current) return;
+    current?.button.parentElement?.removeAttribute('aria-current');
+    t?.button.parentElement?.setAttribute('aria-current', 'true');
+    current = t;
+  };
+  for (const ev of ['timeupdate', 'seeked', 'play'] as const) audio.addEventListener(ev, update);
 }
 
 function mark(el: Element | null | undefined, on: boolean): void {
@@ -499,6 +523,7 @@ function init(): void {
     const lesson = reader && initLesson(box, reader);
     if (lesson) lessons.set(lesson.audio, lesson);
   }
+  for (const box of boxes) initTopics(box);
   initAutoplay(boxes, lessons, reader);
 }
 
