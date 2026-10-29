@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "234 Tape59-Side1 Ch54 end.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "28f78cba-efcf-4fde-b2c1-742c54079367",
+  "transcript": "transcripts/234%20Tape59-Side1%20Ch54%20end.mp3.json",
+  "fetchedAt": "2026-10-29T01:54:15.723Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Kliphah concepts and upside‑down sefirot","starting_phrase":"It's already Hell's Angels. Right. And it starts off","start_time_sec":4.659999999999997,"matched_text":"It's already Hell's Angels. Right. And it starts off","score_norm":0.966,"confidence":"HIGH","token_span":[0,9],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Philosophers as the deepest klipah","starting_phrase":"So, it works the same way. It still goes from","start_time_sec":251.26,"matched_text":"works the same way. It still goes from,","score_norm":0.976,"confidence":"HIGH","token_span":[500,508],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Pride and arrogance in spiritual realms","starting_phrase":"And this is also like the people who get mad when the kids are making noise","start_time_sec":418.24990867579913,"matched_text":"also like the people who get mad when the kids are making noise","score_norm":0.97,"confidence":"HIGH","token_span":[846,859],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Why we retreat to the hut","starting_phrase":"So, the question comes up: why do we do this? Right? It's like this crazy idea.","start_time_sec":842.1688127853872,"matched_text":"question comes up: why do we do this? Right? It's like this crazy idea.","score_norm":0.961,"confidence":"HIGH","token_span":[1612,1626],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Halacha versus minhag: practical distinctions","starting_phrase":"Because a הלכה is a הלכה. A מנהג, you have to follow it if it's already there","start_time_sec":985.018812785375,"matched_text":"Because a הלכה is a הלכה. A מנהג, you have to follow it if it's already there,","score_norm":0.932,"confidence":"HIGH","token_span":[1831,1848],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Debate over Zohar's authorship","starting_phrase":"Now, how do we answer this argument? First of all","start_time_sec":1313.7694977169042,"matched_text":"how do we answer this argument? First of all,","score_norm":0.965,"confidence":"HIGH","token_span":[2335,2344],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}
