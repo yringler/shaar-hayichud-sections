@@ -305,6 +305,27 @@ export interface SourceTopic {
   title: string;
   start_time_sec?: number | null;
   confidence: string;
+  /** Sofer's [start, end) indices of the topic's first words in the transcript's word list. */
+  token_span?: number[] | null;
+}
+
+/**
+ * Topic start times moved onto the re-timed words. Sofer located each topic
+ * on its own (possibly wrong) word times; the topic's first word is
+ * `token_span[0]`, or else the first word whose Sofer start equals the topic's
+ * time. A topic that can be tied to no word is dropped rather than shown at a
+ * time known to be unreliable.
+ */
+export function retimeTopics(topics: SourceTopic[], soferStarts: readonly number[], retimedStarts: readonly number[]): SourceTopic[] {
+  const out: SourceTopic[] = [];
+  for (const t of topics) {
+    let i = Array.isArray(t.token_span) && typeof t.token_span[0] === 'number' ? t.token_span[0] : -1;
+    if (!(i >= 0 && i < retimedStarts.length) && typeof t.start_time_sec === 'number') {
+      i = soferStarts.findIndex((s) => Math.abs(s - t.start_time_sec!) < 0.005);
+    }
+    if (i >= 0 && i < retimedStarts.length) out.push({ ...t, start_time_sec: retimedStarts[i]! });
+  }
+  return out;
 }
 
 export interface PublishedOutline {
@@ -410,7 +431,16 @@ export function publishAudio(input: PublishInput): PublishedAudio {
     let chapter = chapterKeyOf(info);
 
     if (existsSync(outlineFile)) {
-      const outline = publishOutline(id, sourceTopics(readJson(outlineFile)));
+      let topics = sourceTopics(readJson(outlineFile));
+      // On a re-timed lecture the topics move with the words they start at.
+      if (existsSync(transcriptFile)) {
+        const sofer = (readJson(transcriptFile) as StoredTranscriptLike).result.timestamps ?? [];
+        const times = wordTimes(dataDir, id, sofer);
+        if (times.source === 'retimed') {
+          topics = retimeTopics(topics, sofer.map((w) => w.start), times.words.map((w) => w.start));
+        }
+      }
+      const outline = publishOutline(id, topics);
       if (outline.topics.length > 0) {
         const p = `outlines/${fileOf(id)}`;
         files.set(p, outline);

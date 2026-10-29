@@ -16,6 +16,7 @@ import {
   parsePublishPolicy,
   publishAlignment,
   publishOutline,
+  retimeTopics,
   sourceTopics,
   selectPublished,
   speakerLabelsOn,
@@ -236,6 +237,22 @@ describe('chapterAlignments', () => {
     const r = chapterAlignments('chapter_03', chapter, [two], infos, new Set());
     assert.deepEqual(r.lines.map((l) => l.lineId), ['aaaaaaaa']);
     assert.deepEqual(r.lectures.map((l) => l.id), ['a.mp3']);
+  });
+});
+
+describe('retimeTopics', () => {
+  it('moves topics to the re-timed time of their first word, by token_span or by Sofer start; drops the rest', () => {
+    const sofer = [0, 5, 5, 5, 9];
+    const retimed = [0, 5, 11, 17, 30];
+    const topics = [
+      { title: 'span', start_time_sec: 5, confidence: 'HIGH', token_span: [3, 4] },
+      { title: 'by time', start_time_sec: 9, confidence: 'HIGH' },
+      { title: 'lost', start_time_sec: 7, confidence: 'HIGH' },
+    ];
+    assert.deepEqual(
+      retimeTopics(topics, sofer, retimed).map((t) => [t.title, t.start_time_sec]),
+      [['span', 17], ['by time', 30]],
+    );
   });
 });
 
