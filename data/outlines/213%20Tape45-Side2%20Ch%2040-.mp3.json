@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "213 Tape45-Side2 Ch 40-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d81bd3f4-d5ab-487a-8c69-a4116abfbe73",
+  "transcript": "transcripts/213%20Tape45-Side2%20Ch%2040-.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:17.821Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the Root of Letters and Thought","starting_phrase":"ומעתה יש להבין דרך פרט בבחינת שורש האותיות, אותיות המחשבה דבינה ותבונה וכו׳, כי הנה מבואר בזהר בכמה דוכתי דאית מחשבה ואית מחשבה וכו׳, דהיינו בחינת מחשבה סתימאה דא״א ומחשבה קדומה דא״ק וכהאי גוונא. והענין הוא דהרצון נקרא גם כן בשם מחשבה בלשון הקדש.","start_time_sec":0,"matched_text":"ומעתה יש להבין דרך פרט בבחינת שורש האותיות, אותיות המחשבה דבינה ותבונה וכו׳, כי הנה מבואר בזהר בכמה דוכתי דאית מחשבה ואית מחשבה וכו׳, דהיינו בחינת מחשבה סתימאה דא״א ומחשבה קדומה דא״ק וכהאי גוונא. והענין הוא דהרצון נקרא גם כן בשם מחשבה בלשון הקדש.","score_norm":0.997,"confidence":"HIGH","token_span":[0,44],"matched_content":42,"content_coverage":1,"longest_content_run_soft":42,"longest_content_run_strict":24},
+    {"title":"Desire Entering the Brain Without Letters","starting_phrase":"Now he is saying when the רצון comes into the brain, it's coming without אותיות.","start_time_sec":171.91,"matched_text":"saying when the רצון comes into the brain, it's coming without אותיות.","score_norm":0.985,"confidence":"HIGH","token_span":[376,388],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Theoretical Thought (Machshava Iyunit) Explained","starting_phrase":"והנה יש מחשבה אחרת בבחינת אותיות המחשבה ממש, and this is ממש in the way of אותיות המחשבה, meaning of a a separate מחשבה of אותיות.","start_time_sec":450.07067880794705,"matched_text":"והנה יש מחשבה אחרת בבחינת אותיות המחשבה ממש, and this is ממש in the way of אותיות המחשבה, meaning of a a separate מחשבה of אותיות.","score_norm":0.954,"confidence":"HIGH","token_span":[1041,1067],"matched_content":16,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Scientific Method in Talmudic Argument","starting_phrase":"So, the thing is really you see in in in the תלמוד, basically, that's also how they do it.","start_time_sec":662.67,"matched_text":"thing is really you see in in in in the תלמוד, basically, that's also how they do","score_norm":0.915,"confidence":"HIGH","token_span":[1571,1588],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Traits (מדות) Emerging from Intellect (שכל)","starting_phrase":"overview of the whole thing, and בינה is a separate analysis, for that I can see.","start_time_sec":1747.93,"matched_text":"overview of the whole thing, and בינה is a separate analysis, for that I can see.","score_norm":0.932,"confidence":"HIGH","token_span":[3871,3887],"matched_content":8,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Bina as the Private Crown (כתר פרטי)","starting_phrase":"זהו ענין אהבה אשר אהיה, דהתגלות כתר כללי דאריך אנפין בבחינה בכתר פרטי שהוא בבינה, that the general אהיה of the כתר כללי gets revealed into the אהיה in the כתר פרטי which is בינה.","start_time_sec":1842.77,"matched_text":"וזהו ענין אהיה אשר אהיה, דהתגלות כתר כללי דאריך אנפין בבחינה בכתר פרטי שהוא בבינה, that the general אהיה of the כתר כללי gets revealed into the אהיה in the כתר פרטי which is בינה.","score_norm":0.964,"confidence":"HIGH","token_span":[4134,4169],"matched_content":26,"content_coverage":1,"longest_content_run_soft":26,"longest_content_run_strict":13}
+  ]
+}

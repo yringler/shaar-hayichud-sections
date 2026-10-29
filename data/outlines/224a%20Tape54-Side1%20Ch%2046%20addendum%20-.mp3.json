@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "224a Tape54-Side1 Ch 46 addendum -.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "402f6079-00d9-43e4-8546-030c078d50be",
+  "transcript": "transcripts/224a%20Tape54-Side1%20Ch%2046%20addendum%20-.mp3.json",
+  "fetchedAt": "2026-10-29T00:46:31.350Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"How Letters Become Independent Spiritual Forces","starting_phrase":"And this is basically this whole chapter is is about what is, you know,","start_time_sec":9.64,"matched_text":"basically this whole chapter is is about what","score_norm":0.953,"confidence":"HIGH","token_span":[3,11],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The Importance of Letter Order and Purity","starting_phrase":"Now, by the way, there's one thing also that, for instance,","start_time_sec":116.56,"matched_text":"way, there's one thing also that, for instance,","score_norm":0.974,"confidence":"HIGH","token_span":[295,303],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Understanding the Eighth King of Tohu and Bina","starting_phrase":"And basically the this is this is the basic thing of the the the eighth the thing of the eighth king of תהו is that the eighth king of תהו,","start_time_sec":219.20065217391306,"matched_text":"basically the this is this is the basic thing of the the the eighth the thing of the eighth king of תהו is that the eighth king of תהו,","score_norm":0.872,"confidence":"HIGH","token_span":[527,556],"matched_content":11,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The Endless Cycle of Theories and Divine Intervention","starting_phrase":"And and and what does it mean די?","start_time_sec":372.1398913043479,"matched_text":"what does it mean די?","score_norm":0.95,"confidence":"HIGH","token_span":[909,914],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Divine Gift of Mashiach Ben Yosef and Modern Transmission","starting_phrase":"And actually, it was given to us by the by the by the מיטעלער רבי.","start_time_sec":571.6651086956523,"matched_text":"given to us by the by the by the מיטעלער רבי.","score_norm":0.883,"confidence":"HIGH","token_span":[1472,1483],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"From Candle to Bright Light: The Final Illumination","starting_phrase":"And the whole thing, you know, with a with a candle, שרגא בטיהרא,","start_time_sec":663.4763043478262,"matched_text":"whole thing, you know, with a with a candle, שרגא בטיהרא,","score_norm":0.957,"confidence":"HIGH","token_span":[2072,2083],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3}
+  ]
+}

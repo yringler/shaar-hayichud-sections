@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "020 Tape003-Side2-Ch2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1ca4c879-d03a-4a65-b416-9459a880b61a",
+  "transcript": "transcripts/020%20Tape003-Side2-Ch2.mp3.json",
+  "fetchedAt": "2026-10-29T00:34:33.633Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Purpose of התבוננות: work vs intellect","starting_phrase":"Okay? Yeah. Yeah. שהוא עיקר ענין ההתבוננות כנ״ל. התבונה.","start_time_sec":4.8,"matched_text":"Yeah. Yeah. שהוא עיקר ענין ההתבוננות כנ״ל. התבונה.","score_norm":0.991,"confidence":"HIGH","token_span":[1,9],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Goal of חסידות: fire up the heart and mind","starting_phrase":"He said the whole thing that my father wanted, the אלטר רבי, was that the חסידים should have a התפעלות אלקות.","start_time_sec":97.69141528239203,"matched_text":"said the whole thing that my father wanted, the אלטר רבי, was that the חסידים should have a התפעלות אלקות.","score_norm":0.964,"confidence":"HIGH","token_span":[229,249],"matched_content":13,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Letter nun vs mem: shape and meaning","starting_phrase":"Now why does he say that? I can tell you another letter where it is like that: מ.","start_time_sec":317.68,"matched_text":"why does he say that? I can tell you another letter where","score_norm":0.965,"confidence":"HIGH","token_span":[760,772],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"בינה שבבינה as the linchpin of powers","starting_phrase":"In other words, they're connected to each other. Means it's two things.","start_time_sec":387.88,"matched_text":"other words, they're connected to each other. Means it's two things.","score_norm":0.993,"confidence":"HIGH","token_span":[910,921],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":6},
+    {"title":"Hundred‑and‑one repetition creates a עובד","starting_phrase":"Now, the hundred and one time, that's what made him a עובד rather than just a משכיל.","start_time_sec":946.8,"matched_text":"hundred and one time, that's what made him a עובד rather than just a משכיל.","score_norm":0.974,"confidence":"HIGH","token_span":[2201,2216],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":6},
+    {"title":"Halachic Q&A: property acquisition via stolen money","starting_phrase":"He sits down and learns the בלאט. That evening the phone rings and somebody says, \"Rabbi, I have a question for you.\"","start_time_sec":1031.105707641196,"matched_text":"sits down and learns the בלאט. That evening the phone rings and somebody says, \"Rabbi, I have a question","score_norm":0.963,"confidence":"HIGH","token_span":[2395,2414],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3}
+  ]
+}

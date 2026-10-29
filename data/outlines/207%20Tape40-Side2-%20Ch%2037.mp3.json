@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "207 Tape40-Side2- Ch 37.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "415dd51d-4cde-4741-a920-c778708cbc48",
+  "transcript": "transcripts/207%20Tape40-Side2-%20Ch%2037.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:21.249Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Predestination and the Jacob‑Esau Example","starting_phrase":"Okay. Okay, so like יעקב and עשו, I mean from one side, you see that a person is born a certain way.","start_time_sec":15.6,"matched_text":"יעקב and עשו, I mean from one side, you see that a person is born a certain way.","score_norm":0.947,"confidence":"HIGH","token_span":[4,22],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Expressed vs Unexpressed Voice (קלא דמשתמע/קלא דלא משתמע)","starting_phrase":"All right. Okay, go ahead. Okay, so that's the קלא דמשתמע, is the actual voice,","start_time_sec":231.53,"matched_text":"All right. Okay, go ahead. Okay, so that's the קלא דמשתמע, is the actual voice,","score_norm":0.938,"confidence":"HIGH","token_span":[531,546],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Letters of Thought, לאה, and Emotional Measures","starting_phrase":"And the more מדות, if a person's real happy or real sad or real angry, it's like almost he can't think at all.","start_time_sec":498.61,"matched_text":"more מדות, if a person's real happy or real sad or real angry, it's like almost he can't think at all.","score_norm":0.964,"confidence":"HIGH","token_span":[1070,1091],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":3},
+    {"title":"Counting to Ten to Disrupt the Thought Stream","starting_phrase":"And that's the reason for counting to 10. The reason you count to 10 is is to break the מחשבה,","start_time_sec":670.8193610404297,"matched_text":"that's the reason for counting to 10. The reason you count to 10 is is to break the מחשבה,","score_norm":0.921,"confidence":"HIGH","token_span":[1426,1445],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":1},
+    {"title":"When Whistling Helps and When to Face Real Danger","starting_phrase":"But if you can really whistle a happy tune even with a lion there, that he can literally stop thinking that there's a lion there,","start_time_sec":775.6780831212892,"matched_text":"can really whistle a happy tune even with a lion there, that he can literally stop thinking that there's a lion there,","score_norm":0.956,"confidence":"HIGH","token_span":[1702,1724],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"Escapism: Movies, Sports, and Distraction from Problems","starting_phrase":"And a lot of these things that that people are into, you know, like going to movies, is is all because of this thing here.","start_time_sec":868.4099689001969,"matched_text":"lot of these things that that people are into, you know, like going to movies, is is all because of this thing here.","score_norm":0.908,"confidence":"HIGH","token_span":[1922,1945],"matched_content":10,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"מידות as the Source of Thought and Speech","starting_phrase":"There has to be some kind of מידות, otherwise you won't even talk, because there won't be the נצח to come up and talk.","start_time_sec":1274.79,"matched_text":"There has to be some kind of מידות, otherwise you won't even talk, because there won't be the נצח to come up and talk.","score_norm":0.958,"confidence":"HIGH","token_span":[2890,2914],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":6},
+    {"title":"Holiness, מלכות, and the Closing Reflection","starting_phrase":"And later on, he's going to explain how in in מלכות, everything can come into מלכות.","start_time_sec":1543.87,"matched_text":"later on, he's going to explain how in in מלכות, everything can come into מלכות.","score_norm":0.975,"confidence":"HIGH","token_span":[3463,3478],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":6}
+  ]
+}

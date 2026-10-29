@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "217 Tape47-Side2 Ch43-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "553378a5-d61d-4cce-9619-4db1a2bd71e0",
+  "transcript": "transcripts/217%20Tape47-Side2%20Ch43-.mp3.json",
+  "fetchedAt": "2026-10-29T00:44:56.217Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Electrons, Nails, and the Limits of Interchangeability","starting_phrase":"Hey, go ahead. So, if you would exchange those two electrons","start_time_sec":0,"matched_text":"Hey, go ahead. So, if you would exchange those two electrons,","score_norm":0.961,"confidence":"HIGH","token_span":[0,11],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Father’s Yahrzeit Vodka Tale and the Power of Blessings","starting_phrase":"You know, the guy that came in and brought a bottle of vodka","start_time_sec":104.34,"matched_text":"guy that came in and brought a brought a bottle of vodka","score_norm":0.894,"confidence":"HIGH","token_span":[262,274],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":1},
+    {"title":"Designated Chicken for Shabbat: Destiny in Food","starting_phrase":"Even the chicken that you're going to eat this שבת, it had to be that chicken.","start_time_sec":491.56,"matched_text":"Even the chicken that you're going to eat this שבת, it had to be that chicken.","score_norm":0.926,"confidence":"HIGH","token_span":[1151,1167],"matched_content":8,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Thought, Speech, Action: The Structure of Divine Planning","starting_phrase":"And then he says, of course, there is nothing outside of himself, but he","start_time_sec":554.46,"matched_text":"says, of course, there is nothing outside of himself,","score_norm":0.965,"confidence":"HIGH","token_span":[1307,1316],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Beyond Numbers: The Infinite Depth of Divine Thought","starting_phrase":"It's it's it's there's too much to talk about.","start_time_sec":755.62,"matched_text":"It's it's it's there's too much to talk about.","score_norm":0.991,"confidence":"HIGH","token_span":[1699,1708],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6}
+  ]
+}

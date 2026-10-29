@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "222 Tape50-Side1 Ch46.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1ba5934f-3a77-4557-924f-b6c892cf46c0",
+  "transcript": "transcripts/222%20Tape50-Side1%20Ch46.mp3.json",
+  "fetchedAt": "2026-10-29T00:46:03.523Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Science Tests סברא Against Reality","starting_phrase":"And what science does is, you know, they take the, they take the סברא and then they test it against physical reality.","start_time_sec":5.3,"matched_text":"what science does is, you know, they take the, they take the סברא and then they test it against physical reality.","score_norm":0.924,"confidence":"HIGH","token_span":[1,22],"matched_content":10,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Applying Theory to Create a Second God","starting_phrase":"And then we try to apply it to various things in order to come up with the second god, which is, in a way, sometimes it's really the first god, Right.","start_time_sec":119.56,"matched_text":"try to apply it to various things. And we apply it to various things in order to come up with the second god, which is, in a way, sometimes it's really the first god,","score_norm":0.921,"confidence":"HIGH","token_span":[236,270],"matched_content":16,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3},
+    {"title":"Living Under the Eighth King of תוהו","starting_phrase":"The basic point is that we're very obviously right now in the in the kingdom of the eighth king of תוהו.","start_time_sec":270.14590561224486,"matched_text":"basic point is that we're very obviously right now in the in the kingdom of the eighth king of תוהו.","score_norm":0.889,"confidence":"HIGH","token_span":[541,561],"matched_content":8,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"All‑Encompassing Chaos and Modern Availability","starting_phrase":"And also the the availability of everything, and it's all it's all part of the of the eighth king of תוהו.","start_time_sec":370.74,"matched_text":"also the the the availability of everything, and it's all it's all part of the of the eighth king of תוהו.","score_norm":0.928,"confidence":"HIGH","token_span":[736,757],"matched_content":11,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Eighth King as Joseph, the Dream Interpreter","starting_phrase":"And that's why this same מלך השמיני, who is the worst of the kings of תוהו, is also הוא בבחינת יוסף פותר החלומות.","start_time_sec":716.94,"matched_text":"that's why this same מלך השמיני, who is the worst of the kings of תוהו, is also הוא בבחינת יוסף פותר החלומות.","score_norm":0.966,"confidence":"HIGH","token_span":[1540,1562],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":6},
+    {"title":"From Dreams to Total Nightmare in תוהו","starting_phrase":"In other words, it's a total nightmare. It's not just a nice little dream anymore.","start_time_sec":860.02,"matched_text":"other words, it's a total nightmare. It's not just a nice little dream anymore.","score_norm":0.98,"confidence":"HIGH","token_span":[1871,1885],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Coverings of Light and the Concept of חשמל","starting_phrase":"And then the coverings become coverings of light.","start_time_sec":1193.9197193877817,"matched_text":"coverings become coverings of light.","score_norm":0.984,"confidence":"HIGH","token_span":[2627,2632],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3}
+  ]
+}

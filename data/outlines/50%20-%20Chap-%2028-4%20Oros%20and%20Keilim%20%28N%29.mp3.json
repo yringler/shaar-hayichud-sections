@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "50 - Chap- 28-4 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5d1d533d-0440-4070-9956-39d09f1113c6",
+  "transcript": "transcripts/50%20-%20Chap-%2028-4%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:31.840Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Spiritual form connects to vessel shape","starting_phrase":"So like we said that the spiritual form gets connected to the shape of the vessel","start_time_sec":4.04,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Brain as vessel of חכמה and intellect light","starting_phrase":"The vessel of חכמה דאצילות is like the brain, and the light is like the soul","start_time_sec":121.2,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"God creates Torah idea from wisdom vessel","starting_phrase":"So then, God created like the idea of like the תורה, it's not really the תורה yet","start_time_sec":207.36,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Fallacy of defining God as only good","starting_phrase":"If you define God as being only good, you already","start_time_sec":640.02,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Intellect as vessel and its limitations","starting_phrase":"So then you can call it an intellect, התחכמות דבר מה בפרט","start_time_sec":752.7,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "006 Tape018-Side1-Ch11.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "43565468-83de-468f-b037-e39b20b07c94",
+  "transcript": "transcripts/006%20Tape018-Side1-Ch11.mp3.json",
+  "fetchedAt": "2026-10-29T00:32:33.771Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Focusing on the Destination, Not the Throw","starting_phrase":"is he has to focus not on how he's going to throw it, but just on where it has to end up.","start_time_sec":3.48,"matched_text":"has to focus not on how he's going to throw it, but just on where it has to end up.","score_norm":0.942,"confidence":"HIGH","token_span":[2,22],"matched_content":11,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Introducing the Fourth מדריגה in the Hierarchy","starting_phrase":"And then he says: ומדריגה הד' - what מדריגה הד'?","start_time_sec":164.9,"matched_text":"says: ומדריגה הד' what מדריגה הד'?","score_norm":1,"confidence":"HIGH","token_span":[352,358],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"Exploring the קו המדה and Its Role","starting_phrase":"So, the קו, the רשימו and the קו, which, by the way, here he's talking about the beginning of the קו, which is even which is the קו המדה.","start_time_sec":273.78,"matched_text":"קו, the רשימו and the קו, which, by the way, here he's talking about the beginning of the קו, which is even which is the קו המדה.","score_norm":0.948,"confidence":"HIGH","token_span":[594,621],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":5},
+    {"title":"Physical Motion vs Spiritual Influence Explained","starting_phrase":"But really it's not, right. וככח התנועה שמתפשט","start_time_sec":412.14,"matched_text":"it's not, right. וככח התנועה שמתפשט","score_norm":0.985,"confidence":"HIGH","token_span":[895,901],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Defining גשמיות as a צמצום","starting_phrase":"He says what's the גשמיות? The גשמיות is a צמצום.","start_time_sec":529.58,"matched_text":"says what's the גשמיות? The גשמיות is a צמצום.","score_norm":0.939,"confidence":"HIGH","token_span":[1138,1147],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Reversing the Common View of הפשטת הגשמיות","starting_phrase":"So the whole thing of הפשטת הגשמיות is they have it backwards.","start_time_sec":795.3008747855918,"matched_text":"whole thing of הפשטת הגשמיות is they have it backwards.","score_norm":0.95,"confidence":"HIGH","token_span":[1796,1806],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "058 Tape014-Side2-Ch9.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "6ee9ccc6-94dc-4457-8dc9-9d41238ae3ee",
+  "transcript": "transcripts/058%20Tape014-Side2-Ch9.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:21.209Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Questioning Change in the Infinite Kingdom","starting_phrase":"והנה לכאורה אינו מובן מה שאמר אני","start_time_sec":0,"matched_text":"והנה לכאורה אינו מובן מה שאמר אני","score_norm":0.99,"confidence":"HIGH","token_span":[0,7],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Explaining צמצום through Projector Light Analogy","starting_phrase":"אבל מאחר שההמשכה שההמשכה בבחינת אור וזיו בלבד","start_time_sec":252.60198570699336,"matched_text":"מאחר שההמשכה שההמשכה בבחינת אור וזיו לבד,","score_norm":0.963,"confidence":"HIGH","token_span":[551,558],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Further Thoughts on צמצום and Perceived Light Changes","starting_phrase":"And even that, the fact that it's a אור","start_time_sec":413.96,"matched_text":"even that, the fact that it's a אור","score_norm":0.923,"confidence":"HIGH","token_span":[917,925],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Distinguishing Between Light (אור) and Flow (שפע)","starting_phrase":"There is a difference between a אור and a","start_time_sec":475.82,"matched_text":"difference between a אור","score_norm":0.765,"confidence":"HIGH","token_span":[1059,1063],"matched_content":3,"content_coverage":0.75,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Angel and Balaam Story Illustrating Hidden Light","starting_phrase":"And this is like the angel with בלעם, you know?","start_time_sec":839.7,"matched_text":"angel with בלעם,","score_norm":1,"confidence":"HIGH","token_span":[1870,1873],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Megillah as the Hidden Name of God","starting_phrase":"The whole מגילה is ממש the אייבערשטער","start_time_sec":1487.8055283307804,"matched_text":"whole מגילה is ממש the אייבערשטער.","score_norm":0.964,"confidence":"HIGH","token_span":[3359,3365],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"מלכות דעשיה as the Sole Exalted King","starting_phrase":"Which what do you mean מלכות דעשיה is המלך המרומם לבדו?","start_time_sec":1567.1023991832546,"matched_text":"Which what do you mean מלכות דעשיה is המלך המרומם לבדו?","score_norm":0.974,"confidence":"HIGH","token_span":[3723,3734],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Season of Transition Between שבעה עשר בתמוז","starting_phrase":"Now, as we said, we are in a season of transition.","start_time_sec":1652.4889280245009,"matched_text":"said, we are in a season of transition.","score_norm":0.896,"confidence":"HIGH","token_span":[3891,3899],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1}
+  ]
+}

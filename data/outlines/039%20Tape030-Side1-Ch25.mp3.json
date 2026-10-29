@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "039 Tape030-Side1-Ch25.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5e3f0ed8-0bc3-4fb6-9de1-319ecddac3fb",
+  "transcript": "transcripts/039%20Tape030-Side1-Ch25.mp3.json",
+  "fetchedAt": "2026-10-29T00:37:38.305Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Dark vs Light Mountains – Evil and Good","starting_phrase":"The the dark mountains and the light","start_time_sec":5.540625759416767,"matched_text":"dark mountains and the light","score_norm":0.953,"confidence":"HIGH","token_span":[2,7],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Second Level Higher Than Normal – Potential Danger","starting_phrase":"So, you notice that he's saying here that this","start_time_sec":140.04,"matched_text":"notice that he's saying here","score_norm":0.982,"confidence":"HIGH","token_span":[290,295],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Fanatic Passion: Blessings and Blindness","starting_phrase":"And also you know, like when somebody is","start_time_sec":268.06,"matched_text":"also you know, like when somebody","score_norm":0.924,"confidence":"HIGH","token_span":[545,551],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"When the Righteousness Blinds – The Rabbi Yossi Story","starting_phrase":"Right? Right. It's more, I don't know","start_time_sec":366.72,"matched_text":"It's more, I don't","score_norm":0.975,"confidence":"HIGH","token_span":[767,771],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Ratzon Wearing the Mind – Caution Required","starting_phrase":"And the the the רצון will overpower the","start_time_sec":438.3269805589346,"matched_text":"רצון will overpower","score_norm":1,"confidence":"HIGH","token_span":[1005,1008],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":3},
+    {"title":"Netsach and Hod – Weights of Giving","starting_phrase":"Now he's telling you נצח and הוד","start_time_sec":668.0660935601446,"matched_text":"he's telling you נצח and הוד","score_norm":0.964,"confidence":"HIGH","token_span":[1483,1489],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Chapter Link – Why Melacha Is Called a Wall","starting_phrase":"And this is basically, this chapter ties","start_time_sec":751.9950668286731,"matched_text":"basically, this chapter ties","score_norm":0.979,"confidence":"HIGH","token_span":[2521,2525],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Three Levels of Sechel – Chabad, Chagat, Nahi","starting_phrase":"And the basic thing is that, in other","start_time_sec":866.1775212636686,"matched_text":"basic thing is that, in other","score_norm":0.928,"confidence":"HIGH","token_span":[2673,2679],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Ratzon Overpowers Sechel – The Core Problem","starting_phrase":"So the problem here is that it really","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Normal Intellectual Process – Balancing Chesed and Gevurah","starting_phrase":"And this is the normal, this is the","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

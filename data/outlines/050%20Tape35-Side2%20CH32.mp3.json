@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "050 Tape35-Side2 CH32.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "b97a6afc-bb3f-429d-8cab-002fca234c6c",
+  "transcript": "transcripts/050%20Tape35-Side2%20CH32.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:12.438Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Essential צמצום Between Brain and Heart","starting_phrase":"והנה ודאי כאשר צריך להיות התהוות התפעלות המדה בלב מהעלם","start_time_sec":4.843593600764089,"matched_text":"והנה ודאי כאשר צריך להיות התהוות התפעלות המדה בלב מהעלם","score_norm":1,"confidence":"HIGH","token_span":[12,22],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Heart מדות Mirror the Intellect’s Qualities","starting_phrase":"אבל עם כל זה, המדות שבלב הן בדמיון ממש למדות שבשכל, ממש כעין התפעלותם במוח","start_time_sec":160.3749713467047,"matched_text":"כל זה, המדות שבלב הן בדמיון ממש למדות שבשכל, ממש כעין התפעלותם במוח,","score_norm":0.995,"confidence":"HIGH","token_span":[378,391],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":11},
+    {"title":"External vs Internal Tools of the Heart","starting_phrase":"אך הנה גם בחינת החיצוניות דכלים דנהי שבלב שהוא בחינת התפעלות החסד והאהבה","start_time_sec":245.26827841451566,"matched_text":"אך הנה גם בחינת החיצוניות דכלים דנהי שבלב שהוא בחינת התפעלות החסד והאהבה","score_norm":0.988,"confidence":"HIGH","token_span":[707,720],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":5},
+    {"title":"Studying פרק ב׳ with מרדכי: Letters and Meanings","starting_phrase":"I was learning with מרדכי for about an hour on on פרק ב׳, the second page.","start_time_sec":462.69018385864484,"matched_text":"learning with מרדכי for about an hour on on פרק ב׳, the second page.","score_norm":0.963,"confidence":"HIGH","token_span":[1970,1984],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":3},
+    {"title":"Distinguishing מחשבת שכל from לאה and Letters","starting_phrase":"מחשבת שכל means the מחשבה of the שכל","start_time_sec":621.3358094555869,"matched_text":"מחשבת שכל means the מחשבה of the שכל.","score_norm":0.949,"confidence":"HIGH","token_span":[2279,2287],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Holding the עיון: Understanding Meaning via מחשבת שכל","starting_phrase":"holding the עיון. Right, meaning we're understanding a meaning.","start_time_sec":1464.7698853868167,"matched_text":"holding the עיון. Right, meaning we're understanding a meaning.","score_norm":0.964,"confidence":"HIGH","token_span":[3830,3839],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Linking First and Second Parts of the Song","starting_phrase":"So, really it means that the first part of the song and the second part of the song must have something to do with each other.","start_time_sec":1531.795269818529,"matched_text":"means that the first part of the song and the second part of the song must have something to do with each other.","score_norm":0.955,"confidence":"HIGH","token_span":[3887,3910],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":4},
+    {"title":"The Flash of חכמה: Seeing the Overview","starting_phrase":"And then there's a flash. The חכמה puts the whole thing together","start_time_sec":1606.220539637058,"matched_text":"there's a flash. The חכמה puts the whole thing together","score_norm":0.971,"confidence":"HIGH","token_span":[3974,3984],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Through עיון We Realize Depth in a Simple Song","starting_phrase":"Through the עיון, we saw this, right? Right.","start_time_sec":1779.4822158548232,"matched_text":"Through the עיון, we saw","score_norm":0.955,"confidence":"HIGH","token_span":[4106,4111],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1}
+  ]
+}

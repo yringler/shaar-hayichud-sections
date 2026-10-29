@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "061 Ch5 part2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "61e47a6e-6b4c-40ac-a7d2-fed338742962",
+  "transcript": "transcripts/061%20Ch5%20part2.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:50.365Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Nature of Higher Understanding vs Perception","starting_phrase":"הוא בבחינת ראיית השכל שהוא למעלה מהשגה ותפיסה ממש,","start_time_sec":5.82,"matched_text":"הוא בבחינת ראיית השכל שהוא למעלה מהשגה ותפיסה ממש,","score_norm":0.992,"confidence":"HIGH","token_span":[0,9],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"True Humility Beyond Simple Comparisons","starting_phrase":"the סימן from this is that the the that there's this fantastic humility,","start_time_sec":66.68,"matched_text":"סימן from this is that the the that there's this fantastic humility,","score_norm":0.896,"confidence":"HIGH","token_span":[133,145],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Real Humility vs False Humbleness","starting_phrase":"So, from this will come the ביטול ביותר, means and and דווקא this is the real humility,","start_time_sec":164.5,"matched_text":"from this will come the ביטול ביותר, means and and דווקא this is the real humility,","score_norm":0.941,"confidence":"HIGH","token_span":[388,404],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Kabbalists' Misunderstanding of Humility and Understanding","starting_phrase":"And this is basically what you see with a lot of these kabbalists, that there's either one or the other.","start_time_sec":231.5,"matched_text":"basically what you see with a lot of these kabbalists, that there's either one or the other.","score_norm":0.948,"confidence":"HIGH","token_span":[561,578],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":3},
+    {"title":"Link Between Understanding (יש) and Awe (אין)","starting_phrase":"If he doesn't have the understanding in the יש, that means he doesn't really have the הפלאה in the אין.","start_time_sec":292.24,"matched_text":"doesn't have the understanding in the יש, that means he doesn't really have the הפלאה in the אין.","score_norm":0.925,"confidence":"HIGH","token_span":[730,748],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"The Great Principle of חסידות","starting_phrase":"זה כלל גדול, this is a כלל גדול, this is a general principle.","start_time_sec":383.48,"matched_text":"כלל גדול, this is a general principle.","score_norm":0.65,"confidence":"MEDIUM","token_span":[979,986],"matched_content":4,"content_coverage":0.667,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Humility Directly Proportional to Understanding","starting_phrase":"And according to how much you understand in the חסידות, that's how humble you are.","start_time_sec":464.28,"matched_text":"according to how much you understand in the חסידות, that's how humble","score_norm":0.96,"confidence":"HIGH","token_span":[1166,1178],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"Closing Remarks","starting_phrase":"זייט גוט. Right, you as well. Bye, הצלחה רבה, bye.","start_time_sec":628.82,"matched_text":"זייט געזונט. Right, you as well. Bye, הצלחה רבה, bye.","score_norm":0.955,"confidence":"HIGH","token_span":[1629,1639],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":5,"longest_content_run_strict":5}
+  ]
+}

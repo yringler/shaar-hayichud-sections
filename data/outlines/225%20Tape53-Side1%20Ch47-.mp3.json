@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "225 Tape53-Side1 Ch47-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "10ebf456-faeb-4da9-aa38-a506fe2638d2",
+  "transcript": "transcripts/225%20Tape53-Side1%20Ch47-.mp3.json",
+  "fetchedAt": "2026-10-29T00:46:37.491Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding the Kingdom of Atzilut and Speech","starting_phrase":"Good. Okay. אות ז'. אמנם עתה יש להבין","start_time_sec":0,"matched_text":"Good. Okay. אות ז'. אמנם עתה יש להבין","score_norm":0.991,"confidence":"HIGH","token_span":[0,8],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":6},
+    {"title":"Feeling the Letters: From Thought to Expression","starting_phrase":"In other words, when it becomes a felt thing","start_time_sec":96.42553054662355,"matched_text":"other words, when it becomes a felt thing","score_norm":0.974,"confidence":"HIGH","token_span":[194,202],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Voice as a Duplicated Image (Dmut) Explained","starting_phrase":"And the same thing like right now that I'm talking","start_time_sec":196.66919614147906,"matched_text":"same thing like right now that I'm talking,","score_norm":0.927,"confidence":"HIGH","token_span":[544,552],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"The Kingdom Becomes a Distinct Entity (Yesh)","starting_phrase":"In other words, what he said is that","start_time_sec":593.1396141479099,"matched_text":"other words, what he said","score_norm":0.98,"confidence":"HIGH","token_span":[1011,1016],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Emotion to Speech: From Anger to Words","starting_phrase":"And the same thing like the emotion of hate","start_time_sec":759.92,"matched_text":"same thing like the emotion of hate","score_norm":0.948,"confidence":"HIGH","token_span":[1286,1293],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Each Sefirah Includes Its Own Expression","starting_phrase":"In other words, within each ספירה there's also","start_time_sec":903.04,"matched_text":"other words, within each ספירה there's also","score_norm":1,"confidence":"HIGH","token_span":[1617,1624],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Complete Speech Construction Before External Delivery","starting_phrase":"In other words, the whole speech is all","start_time_sec":1501.6892926045234,"matched_text":"other words, the whole speech is all","score_norm":0.967,"confidence":"HIGH","token_span":[3000,3007],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2}
+  ]
+}

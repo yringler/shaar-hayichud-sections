@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "203 Tape38-side1 ch 35-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "55993c52-6a45-491b-9a1f-c7b73d247f34",
+  "transcript": "transcripts/203%20Tape38-side1%20ch%2035-.mp3.json",
+  "fetchedAt": "2026-10-29T00:42:45.194Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"הוד as the Final Measure","starting_phrase":"The ענין of הוד in general is the end of the מדות basically.","start_time_sec":6.18,"matched_text":"ענין of הוד in general is the end of the מדות basically.","score_norm":0.931,"confidence":"HIGH","token_span":[1,13],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Applying שכל to Enemies: גבורה vs חסד","starting_phrase":"And על פי שכל, like we discussed before, that על פי שכל, when the מדות","start_time_sec":76.38400098911963,"matched_text":"פי שכל, like we discussed before, that על פי שכל, when the מדות","score_norm":0.958,"confidence":"HIGH","token_span":[174,187],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Modern Disconnected חסד in America","starting_phrase":"Like we see basically in America, there's there's a disconnected חסד, right, in terms of,","start_time_sec":192.54539317507366,"matched_text":"see basically in America, there's there's a disconnected חסד, right, in terms","score_norm":0.965,"confidence":"HIGH","token_span":[588,600],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Contemporary Heretical Trends among פרומר ייד","starting_phrase":"So we went so far down that פרומע יידן are coming up with ridiculous ideas like that","start_time_sec":1180.32,"matched_text":"went so far down that פרומע יידן are coming up with ridiculous ideas","score_norm":0.98,"confidence":"HIGH","token_span":[2775,2788],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Urgency of משיח in a Declining Generation","starting_phrase":"If משיח wouldn't come now, like it says that the משיח comes either when it's a very high generation","start_time_sec":1567.26,"matched_text":"משיח wouldn't come now, like it says that the משיח comes either when it's a very high generation,","score_norm":0.957,"confidence":"HIGH","token_span":[3686,3704],"matched_content":11,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Reform and Conservative drift from Judaism","starting_phrase":"matter of fact, most of the Reform","start_time_sec":1634.9876928783399,"matched_text":"matter of fact, most of the Reform","score_norm":0.953,"confidence":"HIGH","token_span":[3849,3856],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "69 - Chap- 31-3 Hiskalelus and Tikun in the Keilim.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "33e20add-9c09-40d0-89fc-b5c6b62c4117",
+  "transcript": "transcripts/69%20-%20Chap-%2031-3%20Hiskalelus%20and%20Tikun%20in%20the%20Keilim.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:34.443Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Apparent Contradiction Between Inner and Outer Vessels","starting_phrase":"אך, however, הנה לכאורה יש סתירה לכל זה.","start_time_sec":3.78,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Intention vs Action: Charity Example","starting_phrase":"So, for example, a person gives צדקה, it's a מצוה.","start_time_sec":135.96,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Limits of Outer Vessels: Angelic Roles","starting_phrase":"ואלה לא בחיצוניות, and we do not have this התכללות in the חיצוניות,","start_time_sec":207.22,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Both Inner and Outer Vessels Have תכללות","starting_phrase":"So now we're going to say that really they're both true.","start_time_sec":341.84,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Miracles Demonstrate Outer Vessel Contradictions","starting_phrase":"like all the miracles which the whole thing of a miracle is that it happens in the חיצוניות של הכלי.","start_time_sec":492.1,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Aron Space Paradox: Occupying No Space","starting_phrase":"וכאי גוונא מקום ארון אינו מן המדה וכולי וכולי,","start_time_sec":587.58,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

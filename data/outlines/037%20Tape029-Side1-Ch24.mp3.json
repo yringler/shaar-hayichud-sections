@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "037 Tape029-Side1-Ch24.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7525d1fa-f7bb-4570-a247-caa17e8344a4",
+  "transcript": "transcripts/037%20Tape029-Side1-Ch24.mp3.json",
+  "fetchedAt": "2026-10-29T00:37:09.789Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Connection of Woman and Soul via Pleasure","starting_phrase":"Check this. So this, the האריז״ל said it","start_time_sec":0,"matched_text":"Check this. So this, the האריז״ל said","score_norm":0.916,"confidence":"HIGH","token_span":[0,7],"matched_content":3,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Purpose of חיבוט הקבר, גלגול, גיהנם","starting_phrase":"And that's the whole thing with the חיבוט הקבר and the גלגול","start_time_sec":69.16,"matched_text":"that's the whole thing with the חיבוט הקבר and the גלגול","score_norm":0.962,"confidence":"HIGH","token_span":[127,138],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Reluctant Visit to the Rabbi and יחידות","starting_phrase":"He didn't want to go. He said, \"Ah, I already know from all these רביס,\"","start_time_sec":142.24,"matched_text":"didn't want to go. He said, \"Ah, I already know from all these רביס,\"","score_norm":0.96,"confidence":"HIGH","token_span":[310,324],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"ראשונות תענוג ורצון עצמי Explanation","starting_phrase":"הנה ג' ראשונות דתענוג ורצון עצמי מלובש בכול","start_time_sec":317.9869819600197,"matched_text":"הנה ג' ראשונות דתענוג ורצון עצמי מלובש בכול,","score_norm":1,"confidence":"HIGH","token_span":[837,845],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"גבורה of תענוג and Its Limitations","starting_phrase":"In other words, the גבורה of the תענוג, it's because of the גבורה of the תענוג","start_time_sec":552.98,"matched_text":"other words, the גבורה of the תענוג, it's because of the גבורה of the תענוג","score_norm":0.934,"confidence":"HIGH","token_span":[1364,1379],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Infinite Nature of the Universe in עתיק","starting_phrase":"So now we can see that the the universe is infinite.","start_time_sec":1043.78,"matched_text":"can see that the the universe is infinite.","score_norm":0.932,"confidence":"HIGH","token_span":[2526,2534],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":2},
+    {"title":"Why Do We Run?","starting_phrase":"First, the why. Why do we run?","start_time_sec":1729.102642613359,"matched_text":"First, the why. Why do we run?","score_norm":0.973,"confidence":"HIGH","token_span":[3967,3974],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3}
+  ]
+}

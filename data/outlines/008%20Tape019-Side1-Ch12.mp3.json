@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "008 Tape019-Side1-Ch12.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "60cf4334-26ea-496a-b6c9-112ce8cbc25f",
+  "transcript": "transcripts/008%20Tape019-Side1-Ch12.mp3.json",
+  "fetchedAt": "2026-10-29T00:33:01.060Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Unclear Acrostic and Seeking the Underlying Issue","starting_phrase":"I don't know what it's an acrostic for. But it's it's I think it's green something,","start_time_sec":3.78,"matched_text":"don't know what it's an acrostic for. But it's it's I think it's green something,","score_norm":0.96,"confidence":"HIGH","token_span":[1,16],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Ball Rolling Example Illustrates Hidden Intent in Action","starting_phrase":"Like, for instance, you can see a ball rolling down the street and you know somebody kicked it,","start_time_sec":76.3,"matched_text":"instance, you can see a ball rolling down the street and you know somebody kicked","score_norm":0.958,"confidence":"HIGH","token_span":[196,211],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Larger Hidden Meaning Beyond Simple Remembrance","starting_phrase":"There's an even bigger העלם, שדומה לענין הרושם לזכרון לבד.","start_time_sec":203.06,"matched_text":"There's an even bigger העלם, שדומה לענין הרושם לזכרון לבד.","score_norm":0.993,"confidence":"HIGH","token_span":[514,524],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":8},
+    {"title":"Writing Letters as a Vessel for the Soul","starting_phrase":"When you write a letter, when you write a letter, it's actually connected,","start_time_sec":403.4709086491735,"matched_text":"when you write a letter, when you write a letter, it's actually connected,","score_norm":0.956,"confidence":"HIGH","token_span":[986,999],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Using Progressive Similes to Reveal Deeper Layers","starting_phrase":"Why does he use all these משלים, each one progressively lesser than the one before it?","start_time_sec":662.3767395529638,"matched_text":"Why does he use all these משלים, each one progressively lesser than the one before","score_norm":0.983,"confidence":"HIGH","token_span":[1526,1541],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":6},
+    {"title":"Impression Analogy: Tracing the Original Message","starting_phrase":"Now this is not in the book, I made this one up.","start_time_sec":769.7709086491735,"matched_text":"not in the book, I made this one up.","score_norm":0.945,"confidence":"HIGH","token_span":[1999,2008],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Reversed Seal Symbolizes Opposite Essence","starting_phrase":"It's backwards. It's backwards. It's a לעומת זה.","start_time_sec":948.2335422740524,"matched_text":"It's backwards. It's backwards. It's a לעומת","score_norm":0.985,"confidence":"HIGH","token_span":[2167,2174],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Four Similes Showing Varying Levels of Completeness","starting_phrase":"The first משל has the thing that it's all there.","start_time_sec":1157.0334791059277,"matched_text":"first משל has the thing that it's all there.","score_norm":0.977,"confidence":"HIGH","token_span":[2697,2706],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Light Precedes Darkness in the Order of Teaching","starting_phrase":"In other words, really if you look at the actual סדר like we said here,","start_time_sec":1600.24,"matched_text":"other words, really if you look at the actual סדר like we said here,","score_norm":0.933,"confidence":"HIGH","token_span":[3643,3657],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Original Light vs. Condensed Mishnah","starting_phrase":"from the חושך, this is really from the original","start_time_sec":1730.46,"matched_text":"from the חושך, this is really from the original","score_norm":0.909,"confidence":"HIGH","token_span":[3889,3898],"matched_content":4,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1}
+  ]
+}

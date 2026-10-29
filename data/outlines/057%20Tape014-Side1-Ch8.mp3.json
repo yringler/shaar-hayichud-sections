@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "057 Tape014-Side1-Ch8.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5a37a4a7-5f08-4546-b35f-b8421b5fe81f",
+  "transcript": "transcripts/057%20Tape014-Side1-Ch8.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:14.340Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Starting the Lecture and Recording","starting_phrase":"Okay, you got the tape recorder on? Yeah, it's on now.","start_time_sec":2.78,"matched_text":"got the tape recorder on? Yeah, it's","score_norm":0.972,"confidence":"HIGH","token_span":[2,9],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Hand, Bones and Moral Responsibility","starting_phrase":"And if he does something with his hand, it goes on his עצמות.","start_time_sec":161.84,"matched_text":"does something with his hand, it goes on his עצמות.","score_norm":0.981,"confidence":"HIGH","token_span":[317,327],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Mordechai, Haman and Divine Decree","starting_phrase":"And yet, even by המן, it doesn't matter, because as you see in the as you see in the מגילה","start_time_sec":240.28,"matched_text":"yet, even by המן, it doesn't matter, because as you see in the as you see in the מגילה,","score_norm":0.924,"confidence":"HIGH","token_span":[501,520],"matched_content":9,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Unity of Action and Creation","starting_phrase":"עד בחינת עשיה דמלכות דעשיה נעוץ סופם בתחילת הכל","start_time_sec":461.72,"matched_text":"עד בחינת עשיה דמלכות דעשיה נעשה סובב ומקיף על הכל","score_norm":0.606,"confidence":"MEDIUM","token_span":[1051,1061],"matched_content":6,"content_coverage":0.667,"longest_content_run_soft":5,"longest_content_run_strict":5},
+    {"title":"Knowing the Chain Simplifies Understanding","starting_phrase":"If you really know the סדר השתלשלות, then it becomes totally obvious to you.","start_time_sec":1004.94,"matched_text":"סדר השתלשלות, then it becomes totally obvious","score_norm":0.974,"confidence":"HIGH","token_span":[2372,2379],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Divine Kingship Over All Worlds","starting_phrase":"Your מלכות is the מלכות of all the worlds","start_time_sec":1137.7977450980388,"matched_text":"Your מלכות is the מלכות of all the worlds,","score_norm":0.937,"confidence":"HIGH","token_span":[2776,2785],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Instruments of Divine Will","starting_phrase":"He chose to be the instrument for it. You know, it says","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

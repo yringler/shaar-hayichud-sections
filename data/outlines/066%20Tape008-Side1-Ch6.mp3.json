@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "066 Tape008-Side1-Ch6.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5df23319-2c4f-4f50-97a9-21ca5cee345f",
+  "transcript": "transcripts/066%20Tape008-Side1-Ch6.mp3.json",
+  "fetchedAt": "2026-10-29T00:41:40.408Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Bitul vs Simcha: The Opposite of Joy","starting_phrase":"אם רק משה אמר בישמח בך, הנה כן","start_time_sec":9.88,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Understanding Springs from Not Understanding","starting_phrase":"So what he means over here that the power","start_time_sec":92.26,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Bina’s Drive Toward the Divine","starting_phrase":"The whole push of בינה and the whole","start_time_sec":153.5,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Ta'anug and Ratzon’s limited connection","starting_phrase":"Whereas everything else, so like for instance","start_time_sec":1714.2754313099,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Love for HaShem: never enough","starting_phrase":"And same thing with love. None","start_time_sec":1783.79952076677,"matched_text":"","score_norm":1,"confidence":"HIGH","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"Bina: the furthest from the Atzmut","starting_phrase":"in the thing that he said, that","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

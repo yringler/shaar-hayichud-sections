@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "72 - Chap- 32-2 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "3c86eefd-bc89-4d68-81fb-15967bfff318",
+  "transcript": "transcripts/72%20-%20Chap-%2032-2%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:56.818Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The 32 Chambers of the Mind Explained","starting_phrase":"Now he's going to get a little bit into the heart, in the heart, דהיינו מל\"ב חדרים שבמוח, from the 32 chambers that are in the brain, שנקראים ל\"ב שבילין דבינה, which are called the 32 paths of בינה,","start_time_sec":3.54,"matched_text":"he's going to get a little bit into the heart, in the heart, דהיינו מל\"ב חדרים שבמוח, from the 32 chambers that are in the brain, שנקראים ל\"ב שבילין דבינה, which are called the 32 paths of בינה,","score_norm":0.949,"confidence":"HIGH","token_span":[1,39],"matched_content":23,"content_coverage":0.958,"longest_content_run_soft":14,"longest_content_run_strict":3}
+  ]
+}

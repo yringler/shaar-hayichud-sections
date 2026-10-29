@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "223 Tape50-Side2 Ch46.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "7b399171-d04e-46aa-8de5-5b8d63b8e59f",
+  "transcript": "transcripts/223%20Tape50-Side2%20Ch46.mp3.json",
+  "fetchedAt": "2026-10-29T00:46:09.378Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Candle Light vs Darkness Perception","starting_phrase":"שאי אפשר לומר באור הנר מצד עצמו שמבריק אורו בעצם החושך לילה יותר מביום","start_time_sec":4.26,"matched_text":"שאי אפשר לומר באור הנר מצד עצמו שמבריק אורו בעצם החושך לילה יותר מביום,","score_norm":1,"confidence":"HIGH","token_span":[0,14],"matched_content":14,"content_coverage":1,"longest_content_run_soft":14,"longest_content_run_strict":14},
+    {"title":"Diamond Sparkle Compared to Air","starting_phrase":"And the the diamond, that the diamond shines more because it's the חומר.","start_time_sec":122.32,"matched_text":"diamond, that the diamond shines more because it's the חומר.","score_norm":0.965,"confidence":"HIGH","token_span":[237,247],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Understanding the Term נוגה","starting_phrase":"And וזהו בחינת נוגה שיש בה ב' פירושים כידוע.","start_time_sec":241.45033878949374,"matched_text":"וזהו בחינת נוגה שיש בה ב' פירושים כידוע.","score_norm":0.991,"confidence":"HIGH","token_span":[502,510],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Light Through Clouds and Rainbows","starting_phrase":"על דרך דוגמה, מאור השמש המאיר בענן שאורו מוכפל שם","start_time_sec":331.2406775789875,"matched_text":"דרך דוגמה, מאור השמש המאיר בענן שאורו מוכפל שם,","score_norm":1,"confidence":"HIGH","token_span":[661,670],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Material Purity: זך vs גס","starting_phrase":"But not in a totally גס, so that's the thing of קליפת נוגה","start_time_sec":474.44,"matched_text":"not in a totally גס, so that's the thing of קליפת נוגה","score_norm":0.947,"confidence":"HIGH","token_span":[949,961],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Human Purification and Divine Light","starting_phrase":"And this is also with people. The thing of the חומר, you know, if you need חומר","start_time_sec":558.96,"matched_text":"also with people. The thing of the חומר, you know, if you need חומר,","score_norm":0.923,"confidence":"HIGH","token_span":[1132,1146],"matched_content":7,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"The Root of חשמל in בינה","starting_phrase":"And this whole thing is the is the שורש of the חשמל ש the חשמל comes out from חיצוניות בינה.","start_time_sec":751.16,"matched_text":"whole thing is the is the שורש of the חשמל ש the חשמל comes out from חיצוניות בינה.","score_norm":0.954,"confidence":"HIGH","token_span":[1490,1508],"matched_content":11,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"How Good Intentions Degenerate","starting_phrase":"And you see even in like things that start off, like even in the bad stuff","start_time_sec":865.18,"matched_text":"see even in like things that start off, like even in in in the bad stuff,","score_norm":0.926,"confidence":"HIGH","token_span":[1736,1752],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"The Wings of the Divine Presence","starting_phrase":"And that's called the כנפי שכינה. ונקרא כנפי שכינה, שמשם שורש נשמת נשמת הגרים.","start_time_sec":1050.5903387894937,"matched_text":"כנפי שכינה. ונקרא כנפי שכינה, שמשם שורש נשמת נשמת הגרים.","score_norm":0.851,"confidence":"HIGH","token_span":[2084,2094],"matched_content":10,"content_coverage":0.833,"longest_content_run_soft":10,"longest_content_run_strict":10}
+  ]
+}

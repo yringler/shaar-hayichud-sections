@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "74 - Chap- 32-4 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "960f08cb-79a8-4b34-bf8a-6d69f2b9c9a6",
+  "transcript": "transcripts/74%20-%20Chap-%2032-4%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:13.767Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Lights, vessels, and Z'A of Atzilut","starting_phrase":"Finished explaining the lights and the vessels. Now we started explaining the idea of ז״א of אצילות because the reason that we started explaining lights and vessels now is because the main idea of the vessels are the vessels of ז״א of אצילות.","start_time_sec":0.24,"matched_text":"Finished explaining the lights and the vessels. Now we started explaining the idea of ז״א of אצילות because the reason that we started explaining lights and vessels now is because the main idea of the vessels are the vessels of ז״א of אצילות.","score_norm":0.928,"confidence":"HIGH","token_span":[0,43],"matched_content":22,"content_coverage":1,"longest_content_run_soft":22,"longest_content_run_strict":3},
+    {"title":"Neranchy: נפש, רוח, נשמה, חיה, יחידה explained","starting_phrase":"Then we start explaining that the idea like that there's the נרנח״י: the נפש, רוח, נשמה, חיה, יחידה.","start_time_sec":123.58,"matched_text":"start explaining that the idea like that there's the נרנח״י: the נפש, רוח, נשמה, חיה, יחידה.","score_norm":0.957,"confidence":"HIGH","token_span":[392,408],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Mind to heart: four brain parts","starting_phrase":"And then we started explaining about how it goes from the mind to the heart. That the mind has four parts to it.","start_time_sec":231.08,"matched_text":"started explaining about how it goes from the mind to the heart. That the mind has four parts","score_norm":0.963,"confidence":"HIGH","token_span":[689,707],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":4},
+    {"title":"32 pathways of בינה and the heart","starting_phrase":"So eight times four is 32, and that's the idea of the 32 pathways of בינה, the ל״ב שבילי בינה.","start_time_sec":292.14,"matched_text":"eight times four is 32, and that's the idea of the 32 pathways of בינה, the ל״ב שבילי בינה.","score_norm":0.958,"confidence":"HIGH","token_span":[876,895],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":3},
+    {"title":"Mind-heart connection and the נמשל","starting_phrase":"Then the נמשל, that would mean when the mind the heart connect, that would mean that the awareness of Godliness comes out into how the way that we act.","start_time_sec":427.76,"matched_text":"נמשל, that would mean when the mind the heart connect, that would mean that the awareness of Godliness comes out into how the way that we act,","score_norm":0.941,"confidence":"HIGH","token_span":[1330,1357],"matched_content":15,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Maturity levels of Z'A: גדלות vs קטנות","starting_phrase":"We're going to so soon we're going to explain the different levels of maturity of ז״א, and how whether it's has a גדלות המוחין or a קטנות המוחין, and everything like that.","start_time_sec":529.8,"matched_text":"We're going to so soon we're going to explain the different levels of maturity of ז״א, and how whether it's has a גדלות המוחין or a קטנות המוחין, and everything","score_norm":0.959,"confidence":"HIGH","token_span":[1669,1699],"matched_content":19,"content_coverage":1,"longest_content_run_soft":19,"longest_content_run_strict":4}
+  ]
+}

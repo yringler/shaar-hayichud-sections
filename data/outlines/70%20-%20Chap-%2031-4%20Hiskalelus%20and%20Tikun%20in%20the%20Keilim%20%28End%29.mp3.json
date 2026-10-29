@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "70 - Chap- 31-4 Hiskalelus and Tikun in the Keilim (End).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c38ff57d-d9e3-4ad8-b84a-dfdaff278d8e",
+  "transcript": "transcripts/70%20-%20Chap-%2031-4%20Hiskalelus%20and%20Tikun%20in%20the%20Keilim%20%28End%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:40.936Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Role of the Makif and Kovei HaMadda","starting_phrase":"And the מקיף, which is the source of the external vessels","start_time_sec":6.513154761904764,"matched_text":"מקיף, which is the source of the external vessels","score_norm":0.941,"confidence":"HIGH","token_span":[20,29],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Man as First and Last: Matter Before Form","starting_phrase":"About man it says, \"You made me last and first.\"","start_time_sec":101,"matched_text":"About man it says, \"You made me last and first.\"","score_norm":0.969,"confidence":"HIGH","token_span":[268,278],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Chair Analogy: Desire Shapes Form from Pre‑Existing Matter","starting_phrase":"So the form of the chair is coming out of the lowest level of your desire to sit","start_time_sec":209,"matched_text":"form of the chair is coming out of the lowest level of your desire to sit","score_norm":0.941,"confidence":"HIGH","token_span":[528,544],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Assembly Line Lesson: Specialization Demands Unity","starting_phrase":"And the more divided it is, the more specialized each person is","start_time_sec":330.94,"matched_text":"more divided it is, the more specialized each person","score_norm":0.958,"confidence":"HIGH","token_span":[896,905],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"From Adam to Fragmentation: Need for Unity","starting_phrase":"Well, the main idea is that, like it started out, that there was just like אדם הראשון","start_time_sec":417.24,"matched_text":"Well, the main idea is that, like it started out, that there was just like אדם הראשון,","score_norm":0.919,"confidence":"HIGH","token_span":[1148,1165],"matched_content":8,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

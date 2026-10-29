@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "83 - Know Where to Jump.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "bda14cde-876d-4c65-bc17-53f0673b037f",
+  "transcript": "transcripts/83%20-%20Know%20Where%20to%20Jump.mp3.json",
+  "fetchedAt": "2026-10-29T00:31:09.395Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Two Steps of Repentance (תשובה תתאה & תעלה)","starting_phrase":"Well, no, a person can't, that's the thing. There's two there's two things, like a person wants to do תשובה, there's two steps:","start_time_sec":0.7800000000000022,"matched_text":"Well, no, a person can't, that's the thing. There's two there's two things, like a person wants to do תשובה, there's two steps:","score_norm":0.975,"confidence":"HIGH","token_span":[0,23],"matched_content":18,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":6},
+    {"title":"Jacob’s Strategy: Preparing Before the Big Jump","starting_phrase":"That's what he says about why like יעקב went to לבן first before going to עשו, because like his עבודה with the place of לבן was like just figuring out everything within קדושה,","start_time_sec":75.04,"matched_text":"That's what he says about why like יעקב went to לבן first before going to עשו, because like his עבודה with the place of לבן was like just figuring out everything within קדושה,","score_norm":0.962,"confidence":"HIGH","token_span":[230,263],"matched_content":23,"content_coverage":1,"longest_content_run_soft":18,"longest_content_run_strict":5}
+  ]
+}

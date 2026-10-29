@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "231 Tape57-Side2 Ch53-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "dd301b77-b817-41f0-a35e-bc7c715e1eb2",
+  "transcript": "transcripts/231%20Tape57-Side2%20Ch53-.mp3.json",
+  "fetchedAt": "2026-10-29T00:47:52.757Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Two Hardest Chapters of the Book","starting_phrase":"נ״ג, basically, like I said, these are the two hardest chapters of the book.","start_time_sec":7.7,"matched_text":"נ״ג, basically, like I said, these are the two hardest chapters of the book.","score_norm":0.932,"confidence":"HIGH","token_span":[0,14],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":3},
+    {"title":"Structure of שער היחוד – Four Parts","starting_phrase":"And I I told him that שער היחוד is made up of four parts.","start_time_sec":84.91736438356165,"matched_text":"told him that שער היחוד is made up of four parts.","score_norm":0.976,"confidence":"HIGH","token_span":[166,177],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":2},
+    {"title":"Starting the Deep Contemplation Section","starting_phrase":"Now, we're going to start. נו, גימל, ובכל הנ\"ל, יובן למשכיל כללות כל ההתבוננות,","start_time_sec":369.46,"matched_text":"we're going to start. נו, גימל, ובכל הנ\"ל, יובן למשכיל כללות כל ההתבוננות,","score_norm":0.975,"confidence":"HIGH","token_span":[732,745],"matched_content":10,"content_coverage":0.909,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"The World Is Merely a Lower Descent","starting_phrase":"the whole world is extrinsic, and it really doesn't need to exist at all.","start_time_sec":774.7094630136957,"matched_text":"whole world is extrinsic, and it really doesn't need to exist at all.","score_norm":0.938,"confidence":"HIGH","token_span":[1738,1751],"matched_content":7,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"The Purpose (or Lack) of the יחיד","starting_phrase":"the whole reason for the יחיד was to end up with us.","start_time_sec":1128.84,"matched_text":"whole reason for the יחיד was to end up with us.","score_norm":0.96,"confidence":"HIGH","token_span":[2468,2479],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"נחת רוח לפני שאמרתי ונעשה רצוני Reference","starting_phrase":"I just read it also somewhere, I don't remember where. I just read it in the daily שיעורים, you know, the... Yeah, I don't remember where, I just read it. נחת רוח לפני שאמרתי ונעשה רצוני.","start_time_sec":1215.4894575342469,"matched_text":"read it also somewhere, I don't remember where. I just read it in the daily שיעורים, you know, the... Yeah, I don't remember where, I just read it. נחת רוח לפני שאמרתי ונעשה רצוני.","score_norm":0.954,"confidence":"HIGH","token_span":[2672,2706],"matched_content":20,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":6},
+    {"title":"All of אצילות Reduces to עשיה","starting_phrase":"The whole thing, including אצילות, is nothing but עשיה by him.","start_time_sec":1371.78,"matched_text":"whole thing, including אצילות, is nothing but עשיה by him.","score_norm":0.969,"confidence":"HIGH","token_span":[2993,3003],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4}
+  ]
+}

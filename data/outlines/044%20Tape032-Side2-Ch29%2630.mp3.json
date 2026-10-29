@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "044 Tape032-Side2-Ch29&30.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "c16ff85e-4b66-46fe-8712-48a03e65622b",
+  "transcript": "transcripts/044%20Tape032-Side2-Ch29%2630.mp3.json",
+  "fetchedAt": "2026-10-29T00:38:21.782Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Divine Power: Infinite Upward and Finite Downward","starting_phrase":"The same like the אייבערשטער has the power to go up","start_time_sec":0,"matched_text":"same like the אייבערשטער has the power to go up,","score_norm":0.954,"confidence":"HIGH","token_span":[1,11],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Light as Chesed, Contraction as Gevurah in Heaven","starting_phrase":"So upstairs, as far as the אייבערשטער Himself is concerned","start_time_sec":124.04,"matched_text":"upstairs, as far as the אייבערשטער Himself is concerned,","score_norm":0.947,"confidence":"HIGH","token_span":[247,256],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Tools Without Light: Body Without Soul Analogy","starting_phrase":"ל. ובזה יובן המאמר וכד אנת תסתלק מנייהו","start_time_sec":214.50520812685826,"matched_text":"ובזה יובן המאמר וכד אנת תסתלק מנייהו","score_norm":1,"confidence":"HIGH","token_span":[409,416],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Intention on the Name Brings Light Automatically","starting_phrase":"And once you have the כלי, the light comes automatically","start_time_sec":374.41124876114975,"matched_text":"once you have the כלי, the light comes automatically.","score_norm":0.966,"confidence":"HIGH","token_span":[768,777],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Writing G‑d with a Dash: Intentional Practice","starting_phrase":"When you write God, you put a dash for the same reason","start_time_sec":456.23041625371656,"matched_text":"When you write God, you put a dash for the same reason.","score_norm":0.951,"confidence":"HIGH","token_span":[997,1009],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Three Types of Prayer: Moses, David, and the Poor","starting_phrase":"So there’s a תפלה למשה, that means when a big צדיק","start_time_sec":1621.62,"matched_text":"תפלה למשה, that means when a big צדיק","score_norm":0.839,"confidence":"HIGH","token_span":[3662,3670],"matched_content":6,"content_coverage":0.75,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Why תפלה לדוד Is More Than Simple Songs","starting_phrase":"you know? It's not it's not so simple. Also, תפלה לדוד means you have to know all the songs.","start_time_sec":1734.68,"matched_text":"It's not it's not so simple. Also, תפלה לדוד means you have to know all the songs.","score_norm":0.969,"confidence":"HIGH","token_span":[3922,3939],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":5},
+    {"title":"Kabbalistic Vowel Kavanot: Yud‑Kuf‑Kaf Variations","starting_phrase":"So there’s a thing, there’s י-ק-ו-ק with חיריק, and י-ק-ו-ק","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

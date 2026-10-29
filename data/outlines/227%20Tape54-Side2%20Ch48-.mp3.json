@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "227 Tape54-Side2 Ch48-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f1acb39a-9a0f-41bb-8f40-8469bd47b0ea",
+  "transcript": "transcripts/227%20Tape54-Side2%20Ch48-.mp3.json",
+  "fetchedAt": "2026-10-29T00:47:11.620Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Computer copying sounds like a telephone","starting_phrase":"Thanks. The computer will give over the whole שייכות.","start_time_sec":0,"matched_text":"Thanks. The computer will give over the whole שייכות.","score_norm":0.98,"confidence":"HIGH","token_span":[0,9],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Limits of copying without true wisdom","starting_phrase":"In the other places, you can't do that.","start_time_sec":112.14,"matched_text":"other places, you can't do","score_norm":0.982,"confidence":"HIGH","token_span":[304,309],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Torah codes as universal source code","starting_phrase":"the thing with the תורה codes. Yeah, I was wondering about that.","start_time_sec":242.1,"matched_text":"thing with the תורה codes. Yeah, I was wondering about","score_norm":0.97,"confidence":"HIGH","token_span":[631,641],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Pac‑Man analogy for source code","starting_phrase":"In other words, you know, like when you play Pac-Man, the only way you can play it is if you feed the code into the computer.","start_time_sec":320.84,"matched_text":"other words, you know, like when you play Pac-Man, the only way you can play it is if you feed the code into the computer.","score_norm":0.918,"confidence":"HIGH","token_span":[831,856],"matched_content":12,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Three ענינים before the נסירה","starting_phrase":"And then he explains the ענין of the three ענינים before the נסירה, it is He doesn't explain it, he mentions them: אחור באחור, אחור בפנים, and a זנב.","start_time_sec":498.34,"matched_text":"explains the ענין of the three ענינים before the נסירה, it is He doesn't explain it, he mentions them: אחור באחור, אחור בפנים, and a זנב.","score_norm":0.954,"confidence":"HIGH","token_span":[1258,1284],"matched_content":15,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":6},
+    {"title":"Two constructions of מלכות","starting_phrase":"Then he explains the two ענינים of the בנין of מלכות. Which the really two ענינים is the בנין of מלכות and the בנין of מלכות of מלכות.","start_time_sec":590.5956207332499,"matched_text":"explains the two ענינים of the בנין of מלכות. Which the really two ענינים is the בנין of מלכות and the בנין of מלכות of מלכות.","score_norm":0.926,"confidence":"HIGH","token_span":[1428,1454],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":2},
+    {"title":"פרטות הבנין of מלכות on Rosh HaShana","starting_phrase":"והנה בחינת פרטות הבנין דמלכות הנקרא כלה, שכלולה מהכל, because the מלכות has from all the ספירות in it.","start_time_sec":707.417810366625,"matched_text":"והנה בחינת פרטות הבנין דמלכות הנקרא כלה, שכלולה מהכל, because the מלכות has from all the ספירות","score_norm":0.991,"confidence":"HIGH","token_span":[1772,1789],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":10},
+    {"title":"The Challenge of Conquering Personal Mountains","starting_phrase":"in a way it is, there's a little","start_time_sec":1693.74,"matched_text":"way it is, there's a little","score_norm":0.928,"confidence":"HIGH","token_span":[3883,3889],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":1}
+  ]
+}

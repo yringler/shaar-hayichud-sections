@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "040 Tape030-Side2-Ch26.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "5528b64a-81cd-47ca-a197-1027ae7df484",
+  "transcript": "transcripts/040%20Tape030-Side2-Ch26.mp3.json",
+  "fetchedAt": "2026-10-29T00:37:48.270Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Light Descent of the Ten Sefirot","starting_phrase":"והנה זהו בחינת ירידת האור עשר ספירות דאבא עצמו מבחינת פנימיות המוחין דאבא, שאין מקבלין מחו״ג דאריך אנפין, ומכל שכן שאינם מקבלים ממזלות דאריך אנפין כנ״ל.","start_time_sec":0,"matched_text":"והנה זהו בחינת ירידת האור עשר ספירות דאבא עצמו מבחינת פנימיות המוחין דאבא, שאין מקבלין מחו״ג דאריך אנפין, ומכל שכן שאינם מקבלים ממזלות דאריך אנפין כנ״ל.","score_norm":1,"confidence":"HIGH","token_span":[0,26],"matched_content":26,"content_coverage":1,"longest_content_run_soft":26,"longest_content_run_strict":26},
+    {"title":"Inner Unity of Wisdom and Understanding","starting_phrase":"דהיינו הבן בחכמה וחכם בבינה. שזהו בחינת יחוד פנימיות דאו״א.","start_time_sec":119.92376528117369,"matched_text":"דהיינו הבן בחכמה וחכם בבינה. שזהו בחינת יחוד פנימיות דאו״א.","score_norm":1,"confidence":"HIGH","token_span":[167,177],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Analyzing Talmud: Hassid and Gevura","starting_phrase":"In other words, the עיון is into whether it's חייב or זכאי, meaning חסד and גבורה.","start_time_sec":183.64,"matched_text":"other words, the עיון is into whether it's חייב or זכאי, meaning חסד and גבורה.","score_norm":0.974,"confidence":"HIGH","token_span":[302,317],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":4},
+    {"title":"Intellectual Axiom and Its Impact","starting_phrase":"They have an axiom, the הנחה שכלית, that they By them it's an axiom that this is the way reality is.","start_time_sec":714.74,"matched_text":"have an axiom, the הנחה שכלית, that they By them it's an axiom that this is the way reality","score_norm":0.923,"confidence":"HIGH","token_span":[1450,1469],"matched_content":9,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Depth of Concept: שער הנון","starting_phrase":"Now that's the פנימיות בינה. Like you'll see that in chapter one he says that the עומק המושג is called the שער הנון.","start_time_sec":836.4,"matched_text":"that's the פנימיות בינה. Like you'll see that in chapter one he says that the עומק המושג is called the שער הנון,","score_norm":0.949,"confidence":"HIGH","token_span":[1743,1765],"matched_content":13,"content_coverage":1,"longest_content_run_soft":13,"longest_content_run_strict":2},
+    {"title":"Mochin of Zayin and the Week","starting_phrase":"In other words, the the the מוחין of ז\"א, which ז\"א the מדות of ז\"א is called the seven days of the week.","start_time_sec":965,"matched_text":"other words, the the the מוחין of ז\"א, which ז\"א the מדות of ז\"א is called the seven days of the week.","score_norm":0.877,"confidence":"HIGH","token_span":[1997,2019],"matched_content":9,"content_coverage":0.6,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Shabbat vs Weekday: Inner Intent","starting_phrase":"And that's the difference between שבת וחול וכולי, קריאת שמע הכוונה בהוי' אלקינו, היינו בבפנימיות דאו\"א, הוי' is חכמה, אלקינו בינה.","start_time_sec":1056.06,"matched_text":"שבת לחול וכולי, קריאת שמע הכוונה בהוי' אלקינו, היינו בבחינת בפנימיות דאו\"א, הוי' is חכמה, אלקינו בינה.","score_norm":0.919,"confidence":"HIGH","token_span":[2193,2210],"matched_content":13,"content_coverage":0.684,"longest_content_run_soft":9,"longest_content_run_strict":9},
+    {"title":"Messiah and the Need for פנימיות ייחוד","starting_phrase":"And that's the whole thing of משיח depends on the פנימיות ייחוד of אבא, means on התבוננות דווקא.","start_time_sec":1499.2,"matched_text":"that's what he's saying. That the coming of משיח depends on the פנימיות ייחוד of אבא, means on התבוננות דווקא.","score_norm":0.757,"confidence":"HIGH","token_span":[3129,3149],"matched_content":9,"content_coverage":0.818,"longest_content_run_soft":9,"longest_content_run_strict":2}
+  ]
+}

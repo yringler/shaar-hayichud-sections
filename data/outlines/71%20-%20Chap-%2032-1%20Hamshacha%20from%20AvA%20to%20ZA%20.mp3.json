@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "71 - Chap- 32-1 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "54b8d278-3e4e-42ad-a4f7-bb4893e1e733",
+  "transcript": "transcripts/71%20-%20Chap-%2032-1%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:47.284Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Introduction to the Heart and Supernal Man","starting_phrase":"Chapter 32. Now we are going to talk about the heart.","start_time_sec":4.279999999999999,"matched_text":"Chapter 32. Now we are going to talk about the heart.","score_norm":0.945,"confidence":"HIGH","token_span":[0,11],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Understanding Zeir Anpin (ז\"א) and Its Influence","starting_phrase":"And so now we understand based on what we explained until now","start_time_sec":64.58,"matched_text":"understand based on what we explained until","score_norm":0.973,"confidence":"HIGH","token_span":[137,144],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Man as Image of God and Cosmic Microcosm","starting_phrase":"דבצלם אלקים עשה את האדם וכולי, that man was made","start_time_sec":201.54,"matched_text":"דבצלם אלקים עשה את האדם וכולי, that man was made","score_norm":0.983,"confidence":"HIGH","token_span":[498,508],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":6},
+    {"title":"Free Choice: Human Nature Versus Animal Instincts","starting_phrase":"Unlike animals that that have only a certain nature.","start_time_sec":341.6,"matched_text":"Unlike animals that that have only a certain nature.","score_norm":0.964,"confidence":"HIGH","token_span":[869,878],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Inner Desire (חיה) and Unity (יחידה) Beyond Vessels","starting_phrase":"והוא בבחינת הרצון והתענוג העצמי הפשוט שבבחינת יחידה.","start_time_sec":534.02,"matched_text":"והוא בבחינת הרצון והתענוג העצמי הפשוט שבבחינת יחידה.","score_norm":1,"confidence":"HIGH","token_span":[1451,1459],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"From Intellectual Light to Understanding and Emotion","starting_phrase":"That once it comes to be revealed intellect in the brain, that's called the light of חכמה, the light of אבא.","start_time_sec":764.58,"matched_text":"once it comes to be revealed intellect in the brain, that's called the light of חכמה, the light of אבא.","score_norm":0.939,"confidence":"HIGH","token_span":[2050,2070],"matched_content":11,"content_coverage":1,"longest_content_run_soft":11,"longest_content_run_strict":3}
+  ]
+}

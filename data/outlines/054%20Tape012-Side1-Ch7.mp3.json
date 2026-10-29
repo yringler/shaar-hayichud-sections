@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "054 Tape012-Side1-Ch7.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9683b152-592f-4153-9ab1-02b29242e928",
+  "transcript": "transcripts/054%20Tape012-Side1-Ch7.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:47.214Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Spreading Beyond the Borders – Balloon Analogy","starting_phrase":"Is that because the מעלה of the real thing of","start_time_sec":4.6,"matched_text":"because the מעלה of the real thing","score_norm":0.942,"confidence":"HIGH","token_span":[2,9],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"The Middle is Nothing – Transparency Explained","starting_phrase":"There's really all this stuff in the middle","start_time_sec":95.76,"matched_text":"There's really all this stuff in the middle","score_norm":0.922,"confidence":"HIGH","token_span":[181,189],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"God is Here – Forgetting Contemplation","starting_phrase":"To the point that you can even forget the התבוננות.","start_time_sec":198.1,"matched_text":"point that you can even forget the התבוננות.","score_norm":0.957,"confidence":"HIGH","token_span":[422,430],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Fan Club Analogy – Wanting All Details of God","starting_phrase":"You can see this from fan clubs. From what?","start_time_sec":290.70351706036746,"matched_text":"can see this from fan clubs. From what?","score_norm":0.989,"confidence":"HIGH","token_span":[708,716],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":5},
+    {"title":"Ignoring God is the Greatest Insult","starting_phrase":"It's the biggest insult you can have.","start_time_sec":485.17758530183727,"matched_text":"It's the biggest insult you can have.","score_norm":0.969,"confidence":"HIGH","token_span":[1150,1157],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Desire to Act – Walking Without Thought","starting_phrase":"But when you talk, you don't have to think about it.","start_time_sec":586.9202362204661,"matched_text":"when you talk, you don't have to think about","score_norm":0.962,"confidence":"HIGH","token_span":[1450,1459],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

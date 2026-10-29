@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "031 Tape026-Side1-Ch20.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "3eb67380-37e6-4502-8d28-db397cb47de6",
+  "transcript": "transcripts/031%20Tape026-Side1-Ch20.mp3.json",
+  "fetchedAt": "2026-10-29T00:36:11.152Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Three Quinas and the Crown Structure","starting_phrase":"Okay, כ״א. Okay. ולהבין כללות ענין התכללות ג׳ קווין דאינון חכמה ימין ובינה שמאל ודעת באמצע כמ״ש בפרדס דפנימיות הכתר נקרא כתר","start_time_sec":0,"matched_text":"כ״א. Okay. ולהבין כללות ענין התכללות ג׳ קווין דאינון חכמה ימין ובינה שמאל ודעת באמצע כמ״ש בפרדס דפנימיות הכתר נקרא כתר","score_norm":0.997,"confidence":"HIGH","token_span":[1,22],"matched_content":20,"content_coverage":1,"longest_content_run_soft":20,"longest_content_run_strict":19},
+    {"title":"Middle Line (דעת) Connecting חכמה and בינה","starting_phrase":"The דעת is the שכל of decision it's called.","start_time_sec":127.49358752166383,"matched_text":"דעת is the שכל of decision it's called.","score_norm":0.955,"confidence":"HIGH","token_span":[398,406],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"נצח vs הוד: Teaching Extremes","starting_phrase":"So that means נצח means to totally give out the thing over to the student, even if it'll totally make him crazy.","start_time_sec":289.6759123545405,"matched_text":"means נצח means to totally give out the thing over to the student, even if it'll totally make him crazy.","score_norm":0.976,"confidence":"HIGH","token_span":[854,874],"matched_content":15,"content_coverage":1,"longest_content_run_soft":15,"longest_content_run_strict":5},
+    {"title":"תפארת as רחמים and Its Link to דעת","starting_phrase":"And what is תפארת? תפארת is the ענין of רחמים.","start_time_sec":842.1236692250548,"matched_text":"what is תפארת? תפארת is the ענין of רחמים.","score_norm":0.941,"confidence":"HIGH","token_span":[2370,2379],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Understanding the Twelve Diagonal Lines","starting_phrase":"There's more, there's more than twelve diagonal lines","start_time_sec":1547.1722431295002,"matched_text":"There's more, there's more than twelve diagonal lines","score_norm":1,"confidence":"HIGH","token_span":[3901,3909],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":8},
+    {"title":"Why the Lines are Considered Diagonal","starting_phrase":"One is when you're standing in the middle of the סוכה, like doing the נענועים","start_time_sec":1669.8833424114882,"matched_text":"One is when you're standing in the middle of the סוכה, like doing the נענועים,","score_norm":0.94,"confidence":"HIGH","token_span":[3964,3979],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3}
+  ]
+}

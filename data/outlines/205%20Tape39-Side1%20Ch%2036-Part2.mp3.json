@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "205 Tape39-Side1 Ch 36-Part2.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "8218d955-28d3-4f4a-bbab-cfbb8a809772",
+  "transcript": "transcripts/205%20Tape39-Side1%20Ch%2036-Part2.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:02.284Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Visual Tricks in Weight‑Loss Seminars","starting_phrase":"If you ever, if you ever see, if you ever watch any","start_time_sec":5.12,"matched_text":"ever, if you ever see, if you ever watch any","score_norm":0.952,"confidence":"HIGH","token_span":[2,12],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"The Power of ראייה in Motivation","starting_phrase":"It's an ענין of ראיה. Right. The ראיה affects","start_time_sec":66.9,"matched_text":"It's an ענין of ראיה. Right. The ראיה affects,","score_norm":0.937,"confidence":"HIGH","token_span":[173,182],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Why People Pay: Intellectual Knowledge vs Action","starting_phrase":"As a matter of fact, that's why they paid the money. Right.","start_time_sec":136.98,"matched_text":"matter of fact, that's why they paid the money.","score_norm":0.964,"confidence":"HIGH","token_span":[370,379],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"תבונה and חכמה: Deeper Levels of Insight","starting_phrase":"In other words, it's not the same like just when he understands.","start_time_sec":233.04,"matched_text":"other words, it's not the same like just when he understands.","score_norm":0.956,"confidence":"HIGH","token_span":[556,567],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Ninja Analogy for Hidden Perception","starting_phrase":"What does it mean ראיה בעיני בשר? ראיה בעיני בשר means that he can literally look on God with his physical eyes.","start_time_sec":299.8943745863666,"matched_text":"What does it mean ראיה בעיני בשר? ראיה בעיני בשר means that he can literally look on God with his physical eyes.","score_norm":0.971,"confidence":"HIGH","token_span":[728,750],"matched_content":16,"content_coverage":1,"longest_content_run_soft":16,"longest_content_run_strict":7}
+  ]
+}

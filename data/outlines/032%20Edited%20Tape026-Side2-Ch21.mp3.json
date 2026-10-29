@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "032 Edited Tape026-Side2-Ch21.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "0f3da23d-070a-4d13-898f-d24aa905deca",
+  "transcript": "transcripts/032%20Edited%20Tape026-Side2-Ch21.mp3.json",
+  "fetchedAt": "2026-10-29T00:36:19.437Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Book-as-Cube Hand Rotation Demo","starting_phrase":"Yeah, I had to flip the tape.","start_time_sec":0,"matched_text":"Yeah, I had to flip the tape.","score_norm":0.952,"confidence":"HIGH","token_span":[0,7],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":1},
+    {"title":"Diagonal Paths Between חסד, גבורה, and תפארת","starting_phrase":"So the right and the left is two opposites, same like the up and the down","start_time_sec":160.16,"matched_text":"left is two opposites, same like the up and the down,","score_norm":0.943,"confidence":"HIGH","token_span":[371,382],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Infinite Desire (רצון) Beyond All Limits","starting_phrase":"In other words, what what he wants in the house before he starts thinking about it is an infinite house.","start_time_sec":365.26,"matched_text":"other words, what what he wants in the house before he starts thinking about it is an infinite house.","score_norm":0.958,"confidence":"HIGH","token_span":[761,780],"matched_content":12,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Brain's Air and Water Layers Explained","starting_phrase":"On the brain, there is a layer of air between the brain and the גולגלתא.","start_time_sec":706.52,"matched_text":"brain, there is a layer of air between the brain and the גולגלתא.","score_norm":0.938,"confidence":"HIGH","token_span":[1607,1620],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":2},
+    {"title":"Belief, Heresy, and the Promise of Immortality","starting_phrase":"If you don't believe this, you're a heretic.","start_time_sec":1227.66,"matched_text":"don't believe this, you're a heretic.","score_norm":0.963,"confidence":"HIGH","token_span":[2689,2695],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"קווי אלכסון and the Interior Crown Concept","starting_phrase":"And also in the in the חג״ת,","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null},
+    {"title":"טלא דבדולחא: The Brain-Injecting Drug","starting_phrase":"The טלא דבדולחא is like that. It actually","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

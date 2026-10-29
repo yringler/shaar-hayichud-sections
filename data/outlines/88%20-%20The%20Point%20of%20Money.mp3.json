@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "88 - The Point of Money.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "9dbfac3a-ef56-4225-b83e-d03661312293",
+  "transcript": "transcripts/88%20-%20The%20Point%20of%20Money.mp3.json",
+  "fetchedAt": "2026-10-29T00:31:37.571Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Finding Joy in What You Do","starting_phrase":"Yeah, exactly. It's very important to do something you love,","start_time_sec":2.38,"matched_text":"Yeah, exactly. It's very important to do something you love,","score_norm":0.963,"confidence":"HIGH","token_span":[0,10],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"The Real Purpose of Money","starting_phrase":"The whole purpose of it was that you should be able to do something you like","start_time_sec":92.06,"matched_text":"whole purpose of it was that you should be able to do something","score_norm":0.891,"confidence":"HIGH","token_span":[323,336],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "47 - Chap- 28-1 Oros and Keilim (N).mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "3bae495b-a0f2-4519-8089-6d8ff6b05dbf",
+  "transcript": "transcripts/47%20-%20Chap-%2028-1%20Oros%20and%20Keilim%20%28N%29.mp3.json",
+  "fetchedAt": "2026-10-29T00:29:29.488Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Soul’s Entry as a Parable","starting_phrase":"והנמשל מדוגמא זו, the נמשל from this comparison of the","start_time_sec":0,"matched_text":"והנמשל מדוגמא זו, the נמשל from this comparison","score_norm":0.979,"confidence":"HIGH","token_span":[0,8],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Levels Before אצילות and the Soul","starting_phrase":"Basically all the levels before אצילות, all the way down to the lights of אצילות, are like the soul","start_time_sec":89.2,"matched_text":"Basically all the levels before אצילות, all the way down to the lights of אצילות, are like the soul.","score_norm":0.948,"confidence":"HIGH","token_span":[195,214],"matched_content":11,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":4},
+    {"title":"Real Existence of השכל as Revelation","starting_phrase":"In other words, that the real existence of the שכל is just revealing you","start_time_sec":159.14,"matched_text":"other words, that the real existence of the שכל is just revealing","score_norm":0.929,"confidence":"HIGH","token_span":[390,402],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Apple Color Analogy for Essence","starting_phrase":"But the essential sweetness is there inherently, before, right, with regardless of the color","start_time_sec":320.92,"matched_text":"essential sweetness is there inherently, before, right, with regardless of the color","score_norm":0.964,"confidence":"HIGH","token_span":[845,857],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"א\"ק as God's Chosen General Way","starting_phrase":"In other words, א\"ק is that God like chose the general way that He's revealed,","start_time_sec":575.6,"matched_text":"other words, א\"ק is that God like chose the general way that He's revealed,","score_norm":0.932,"confidence":"HIGH","token_span":[1558,1572],"matched_content":8,"content_coverage":0.8,"longest_content_run_soft":8,"longest_content_run_strict":2}
+  ]
+}

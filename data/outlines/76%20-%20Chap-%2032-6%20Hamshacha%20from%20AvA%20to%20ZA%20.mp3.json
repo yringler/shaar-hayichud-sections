@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "76 - Chap- 32-6 Hamshacha from AvA to ZA .mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "d3471c9f-0f83-42cb-8523-4770455cee8e",
+  "transcript": "transcripts/76%20-%20Chap-%2032-6%20Hamshacha%20from%20AvA%20to%20ZA%20.mp3.json",
+  "fetchedAt": "2026-10-29T00:30:29.148Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Mind Rules the Heart: Understanding the Connection","starting_phrase":"אך עם כל זה nevertheless המדות שבלב","start_time_sec":0,"matched_text":"אך עם כל זה nevertheless המדות שבלב","score_norm":0.972,"confidence":"HIGH","token_span":[0,7],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Changing Your Understanding Changes Your Emotions","starting_phrase":"So that's the best way to change yourself.","start_time_sec":85.96,"matched_text":"that's the best way to change yourself.","score_norm":0.97,"confidence":"HIGH","token_span":[309,316],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"The Three Layers of an Emotion","starting_phrase":"In other words, the feeling of being angry","start_time_sec":202.48,"matched_text":"other words, the feeling of being angry","score_norm":0.971,"confidence":"HIGH","token_span":[655,662],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Lungs as the External Vessel for Emotion","starting_phrase":"So the most obvious is like you feel that it comes to speaking,","start_time_sec":321.52,"matched_text":"most obvious is like you feel that it comes to speaking,","score_norm":0.916,"confidence":"HIGH","token_span":[1010,1021],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Desire, Intellect, and the Flow to the Heart","starting_phrase":"Well, let's first do the משל before you do.","start_time_sec":484.1,"matched_text":"Well, let's first do the משל before you do.","score_norm":0.98,"confidence":"HIGH","token_span":[1505,1514],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":4},
+    {"title":"Daily Mood Shifts Linked to Breath and Health","starting_phrase":"And that is the day-to-day of things,","start_time_sec":null,"matched_text":"","score_norm":0,"confidence":"NONE","token_span":null,"matched_content":null,"content_coverage":null,"longest_content_run_soft":null,"longest_content_run_strict":null}
+  ]
+}

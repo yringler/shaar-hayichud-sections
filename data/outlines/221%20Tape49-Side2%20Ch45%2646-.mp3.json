@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "221 Tape49-Side2 Ch45&46-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "bcbf573d-51c6-4f1a-b4ce-b084d985b770",
+  "transcript": "transcripts/221%20Tape49-Side2%20Ch45%2646-.mp3.json",
+  "fetchedAt": "2026-10-29T00:45:53.910Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Root of the Parable and Its Higher Source","starting_phrase":"Okay, ולהבין זה בתוספת ביאור, הרי ידוע שזהו גם כן שורש ענין המשלים,","start_time_sec":0,"matched_text":"ולהבין זה בתוספת ביאור, הרי ידוע שזהו גם כן שורש ענין המשלים,","score_norm":0.988,"confidence":"HIGH","token_span":[1,13],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":5},
+    {"title":"Literal Misunderstandings of Metaphorical Teachings","starting_phrase":"And doesn't realize that it's a משל, and this is what happened with the עבודה זרה's","start_time_sec":207.771711006782,"matched_text":"doesn't realize that it's a משל, and this is what happened with the עבודה זרה's,","score_norm":0.953,"confidence":"HIGH","token_span":[454,469],"matched_content":9,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":3},
+    {"title":"Letters as Path to Intellectual Light","starting_phrase":"The same thing in the שורש של בחינת האותיות.","start_time_sec":373.2471413667184,"matched_text":"same thing in the שורש of בחינת האותיות.","score_norm":0.958,"confidence":"HIGH","token_span":[720,728],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"From Fleshly Garments to Garments of Light","starting_phrase":"If you think that the משל is the actual thing, then it becomes כתנות עור","start_time_sec":512.7215388628052,"matched_text":"think that the משל is the actual thing, then it becomes כתנות עור,","score_norm":0.938,"confidence":"HIGH","token_span":[1149,1162],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":3},
+    {"title":"Science as the Modern King (מלך השמיני)","starting_phrase":"The basic thing right now is basically the age of science.","start_time_sec":714.6221596244095,"matched_text":"basic thing right now is basically the age of science.","score_norm":0.925,"confidence":"HIGH","token_span":[1922,1932],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Scientific Method as Analysis and Theory Formation","starting_phrase":"And what science is, and we talked about this before, the the real thing that science is, is the scientific method.","start_time_sec":1635.7659937402173,"matched_text":"what science is, and we talked about this before, the the real thing that science is, is the scientific method.","score_norm":0.929,"confidence":"HIGH","token_span":[3559,3579],"matched_content":10,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Mishna on Scattered Coins","starting_phrase":"משנה that מעות מפוזרות","start_time_sec":1792,"matched_text":"משנה that מעות מפוזרות\"","score_norm":0.98,"confidence":"HIGH","token_span":[3830,3834],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

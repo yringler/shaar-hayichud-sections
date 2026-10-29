@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "052 Tape36-Side2 CH33-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "bc9ddc7d-e29d-40d2-bd48-a40f7e368ac1",
+  "transcript": "transcripts/052%20Tape36-Side2%20CH33-.mp3.json",
+  "fetchedAt": "2026-10-29T00:39:31.654Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Unity of All Details in Divine Will","starting_phrase":"ועענין ההתבוננות אחת מריבוי כל הפרטים אל","start_time_sec":0,"matched_text":"ההתבוננות אחת מריבוי כל הפרטים אל","score_norm":1,"confidence":"HIGH","token_span":[1,7],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"External Heart Instruments and Infinite Desire","starting_phrase":"In other words, it's talking now בחיצוניות","start_time_sec":60.94,"matched_text":"other words, it's talking now בחיצוניות","score_norm":0.986,"confidence":"HIGH","token_span":[91,97],"matched_content":5,"content_coverage":1,"longest_content_run_soft":5,"longest_content_run_strict":4},
+    {"title":"Human Experience Mirrors Divine Flow","starting_phrase":"And this is all like it happens","start_time_sec":206.6,"matched_text":"all like it happens","score_norm":0.932,"confidence":"HIGH","token_span":[369,373],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"Mapping the Infinite in a Tiny Picture","starting_phrase":"And it's like a thing, like a","start_time_sec":291.54,"matched_text":"it's all one thing.","score_norm":0.908,"confidence":"HIGH","token_span":[535,539],"matched_content":2,"content_coverage":1,"longest_content_run_soft":2,"longest_content_run_strict":1},
+    {"title":"אבא as the Bridge Between Levels","starting_phrase":"Where does where does אבא fit","start_time_sec":611.6,"matched_text":"Where does where does אבא fit","score_norm":1,"confidence":"HIGH","token_span":[1206,1212],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":6},
+    {"title":"התבוננות as the Core Methodology","starting_phrase":"the main method is the התבוננות. The","start_time_sec":831.98,"matched_text":"main method is the התבוננות.","score_norm":0.958,"confidence":"HIGH","token_span":[1696,1701],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2}
+  ]
+}

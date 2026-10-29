@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "208 Tape41-side1Ch38-.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "f5471268-5440-43bc-adda-0f54cdcac90a",
+  "transcript": "transcripts/208%20Tape41-side1Ch38-.mp3.json",
+  "fetchedAt": "2026-10-29T00:43:32.549Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Understanding detailed path of thought, speech, action","starting_phrase":"Yeah. והנה ל\"ח. והנה מעתה יש להבין דרך פרט יותר","start_time_sec":0,"matched_text":"Yeah. והנה ל\"ח. והנה מעתה יש להבין דרך פרט יותר","score_norm":0.986,"confidence":"HIGH","token_span":[0,10],"matched_content":9,"content_coverage":0.9,"longest_content_run_soft":9,"longest_content_run_strict":7},
+    {"title":"Simple material: raw sound of letters","starting_phrase":"In other words, the the חומר הפשוט is the actual sound","start_time_sec":92.63791540785525,"matched_text":"other words, the the חומר הפשוט is the actual sound,","score_norm":0.951,"confidence":"HIGH","token_span":[281,291],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2},
+    {"title":"Questioning dual kinds of soul letters","starting_phrase":"And you say, what do you mean, how come the letters","start_time_sec":260.72,"matched_text":"say, what do you mean, how come the letters","score_norm":0.958,"confidence":"HIGH","token_span":[443,452],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Pre‑desire letters in the soul","starting_phrase":"והנה גם קודם שהתהוה מקור לרצון פשוט ותענוג פשוט","start_time_sec":348.92,"matched_text":"והנה גם קודם שהתהוה מקור לרצון פשוט ותענוג פשוט,","score_norm":0.992,"confidence":"HIGH","token_span":[653,662],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":7},
+    {"title":"First desire composed of letters","starting_phrase":"And even the first רצון, the רצון הפשוט, had to come from","start_time_sec":480.40000000000003,"matched_text":"even the first רצון, the רצון הפשוט, had to come from","score_norm":0.97,"confidence":"HIGH","token_span":[913,924],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":3},
+    {"title":"Are letters the limiting power?","starting_phrase":"So, these letters are the כח הגבול?","start_time_sec":552.78,"matched_text":"letters are the כח הגבול?\"","score_norm":0.947,"confidence":"HIGH","token_span":[1115,1120],"matched_content":3,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Letters as source of reality","starting_phrase":"And it's not just a definition, it's what makes it what it is","start_time_sec":743.1122960725077,"matched_text":"it's not just to define, it's what makes it what","score_norm":0.782,"confidence":"HIGH","token_span":[1581,1591],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Emotions expressed through letters","starting_phrase":"And even the emotions come in letters.","start_time_sec":822.78,"matched_text":"even the emotions come in letters.","score_norm":0.96,"confidence":"HIGH","token_span":[1789,1795],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2},
+    {"title":"Letters cascade through spiritual worlds","starting_phrase":"final world here comes from the אותיות","start_time_sec":1762.6836647187595,"matched_text":"final world here comes from the אותיות","score_norm":0.988,"confidence":"HIGH","token_span":[3842,3849],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":5}
+  ]
+}

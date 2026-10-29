@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "056 Tape013-Side1-Ch8.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1a5abdd0-a2a9-43d9-97c7-7fa70adb7ccb",
+  "transcript": "transcripts/056%20Tape013-Side1-Ch8.mp3.json",
+  "fetchedAt": "2026-10-29T00:40:05.186Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"The Unity of Wisdom from Creation to Action","starting_phrase":"כי כמו שנאמר בראשית בחכמה, מחכמתא ברא, כך בחכמה יצר ועשה.","start_time_sec":0,"matched_text":"כמו שנאמר בראשית בחכמה, מחכמתא ברא, כך בחכמה יצר ועשה.","score_norm":1,"confidence":"HIGH","token_span":[1,11],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":10},
+    {"title":"Genius Tested by Practical Outcomes (Finance, War Tactics)","starting_phrase":"So that, for instance, like if you say, you know, this guy is a financial genius.","start_time_sec":346.46511864406773,"matched_text":"instance, like if you say, you know, this guy is a financial genius.","score_norm":0.884,"confidence":"HIGH","token_span":[636,649],"matched_content":5,"content_coverage":1,"longest_content_run_soft":3,"longest_content_run_strict":2},
+    {"title":"Divine Wisdom Flowing from אצילות to עשייה","starting_phrase":"וה' נתן חכמה לשלמה, שהיה בעולם העשיה, הרי נמשך השפעה זו מחכמה","start_time_sec":599.150745762714,"matched_text":"וה' נתן חכמה לשלמה, שהיה בעולם העשיה, הרי נמשך השפעה זו מחכמה","score_norm":1,"confidence":"HIGH","token_span":[1254,1266],"matched_content":12,"content_coverage":1,"longest_content_run_soft":12,"longest_content_run_strict":12},
+    {"title":"Brain versus Hands: Same Wisdom in Action","starting_phrase":"וכך אנו מבקשים אתה חונן לאדם דעת","start_time_sec":796.22,"matched_text":"וכך אנו מבקשים אתה חונן לאדם דעת,","score_norm":1,"confidence":"HIGH","token_span":[1521,1528],"matched_content":7,"content_coverage":1,"longest_content_run_soft":7,"longest_content_run_strict":7},
+    {"title":"Creation Verse: From 'Let There Be Light' to Action","starting_phrase":"Where are we? עסק מעשה מעשה, מה ויאמר אלקים יהי אור","start_time_sec":1119.5358305084728,"matched_text":"Where are we? עסק מעשה מעשה, מה ויאמר אלקים יהי אור","score_norm":0.976,"confidence":"HIGH","token_span":[2437,2448],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":4},
+    {"title":"First and Last: The All‑Encompassing Wisdom","starting_phrase":"אם כן, מה שנאמר אני ראשון ואני אחרון","start_time_sec":1265.4837288135586,"matched_text":"כן, מה שנאמר אני ראשון ואני אחרון,","score_norm":0.99,"confidence":"HIGH","token_span":[3003,3010],"matched_content":6,"content_coverage":0.857,"longest_content_run_soft":6,"longest_content_run_strict":5},
+    {"title":"Only Ten Sefirot Exist Across All Levels","starting_phrase":"And the basic thing is that's one of the things it says","start_time_sec":1708.84,"matched_text":"basic thing is that's one of the things it says","score_norm":0.951,"confidence":"HIGH","token_span":[3321,3331],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":2}
+  ]
+}

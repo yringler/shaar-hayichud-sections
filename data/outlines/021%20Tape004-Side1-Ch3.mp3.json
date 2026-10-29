@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "021 Tape004-Side1-Ch3.mp3",
+  "provider": "sofer.ai",
+  "transcriptionId": "1350eeec-f0cc-499f-b967-97b016828650",
+  "transcript": "transcripts/021%20Tape004-Side1-Ch3.mp3.json",
+  "fetchedAt": "2026-10-29T00:34:44.412Z",
+  "request": {
+    "monotone": true,
+    "conclusion_bias": false
+  },
+  "topics": [
+    {"title":"Recap of Chapter Three and Prior Concepts","starting_phrase":"Chapter three. Or it's basically chapter three is the conclusion of chapter two.","start_time_sec":2.96,"matched_text":"Chapter three. Or it's basically chapter three is the conclusion of chapter two.","score_norm":0.969,"confidence":"HIGH","token_span":[0,13],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":4},
+    {"title":"Depth, Width, Length and Their Metaphors","starting_phrase":"The the עיון into, in other words, later on the whole","start_time_sec":114.52851527290936,"matched_text":"עיון into, in other words, later on the whole","score_norm":0.965,"confidence":"HIGH","token_span":[214,223],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"The Concept of Daat Hayo and the Four Worlds","starting_phrase":"So basically now he's telling you the ענין of דעת הוי׳ is דווקא in the סדר השתלשלות","start_time_sec":313.8840610916375,"matched_text":"basically now he's telling you the ענין of דעת הוי׳ is דווקא in the סדר השתלשלות,","score_norm":0.947,"confidence":"HIGH","token_span":[1059,1075],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":2},
+    {"title":"Intellectual vs Physical Vision (Ra'iyat Sechel)","starting_phrase":"The ראייה of נבואה is to see ממש with the eyes.","start_time_sec":428.41,"matched_text":"ראייה of נבואה is to see ממש with the eyes.","score_norm":0.952,"confidence":"HIGH","token_span":[1276,1286],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":3},
+    {"title":"Introducing Chapter Two: The Role of Tevunah","starting_phrase":"Now he's getting to chapter two. ובחינת התבונה","start_time_sec":690.17,"matched_text":"he's getting to chapter two. ובחינת התבונה,","score_norm":0.989,"confidence":"HIGH","token_span":[1514,1521],"matched_content":6,"content_coverage":1,"longest_content_run_soft":6,"longest_content_run_strict":4},
+    {"title":"Elder Rabbi and Younger Rabbi Tale on Tevunah","starting_phrase":"There’s a story of the אלטער רבי and the מיטעלער רבי.","start_time_sec":835.09,"matched_text":"story of the אלטער רבי and the מיטעלער רבי.","score_norm":0.803,"confidence":"HIGH","token_span":[1829,1838],"matched_content":5,"content_coverage":0.714,"longest_content_run_soft":5,"longest_content_run_strict":2},
+    {"title":"Finding Hidden Bunnies: Perception and Revelation","starting_phrase":"Now over here it's also it's a thing like אתה אל מסתתר.","start_time_sec":995.85,"matched_text":"over here it's also it's a thing like אתה אל מסתתר.","score_norm":0.984,"confidence":"HIGH","token_span":[2309,2320],"matched_content":9,"content_coverage":1,"longest_content_run_soft":9,"longest_content_run_strict":5},
+    {"title":"Why Many Lack Tevunah in Chassidus","starting_phrase":"And they they don't have no תבונה in it.","start_time_sec":1196.4855458187283,"matched_text":"don't have no תבונה","score_norm":1,"confidence":"HIGH","token_span":[2769,2773],"matched_content":4,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":4},
+    {"title":"Prayer as Bringing Godliness into the World","starting_phrase":"They think that during the תפלה they will think about abstract things.","start_time_sec":1304.51,"matched_text":"think that during the תפלה they will think about abstract things.","score_norm":0.974,"confidence":"HIGH","token_span":[3044,3055],"matched_content":8,"content_coverage":1,"longest_content_run_soft":8,"longest_content_run_strict":5},
+    {"title":"Chassidus vs World: Abstract Ideas vs Real Life","starting_phrase":"But the other thing he said here, because there's two different things by him.","start_time_sec":1610.19,"matched_text":"other thing he said here, because there's two different things by him.","score_norm":0.985,"confidence":"HIGH","token_span":[3787,3799],"matched_content":10,"content_coverage":1,"longest_content_run_soft":10,"longest_content_run_strict":7},
+    {"title":"Recap Chapter Overview","starting_phrase":"And well, we did a whole chapter. This this was really a recap chapter.","start_time_sec":1671.73,"matched_text":"well, we did a whole chapter. This this was really a recap chapter.","score_norm":0.922,"confidence":"HIGH","token_span":[3981,3994],"matched_content":6,"content_coverage":1,"longest_content_run_soft":4,"longest_content_run_strict":2}
+  ]
+}
