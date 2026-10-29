@@ -409,7 +409,34 @@ body:has(.listen.is-active) {
   color: #fff;
 }
 
-.listen a.listen-transcript { color: #3d5a80; white-space: nowrap; }
+/* Transcript and Follow in the text links (player panel, class lists,
+   transcript pages): pill buttons like Follow along, in the link colour. */
+a.audio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.audio-link:hover {
+  background: #3d5a80;
+  color: #fff;
+}
+
+a.audio-link:focus-visible {
+  outline: 2px solid #3d5a80;
+  outline-offset: 2px;
+}
 
 /* The transcript of the class in the player, at the top of the docked
    panel (so the controls stay put at the bottom edge): about half the
@@ -607,11 +634,27 @@ p:has(> .line.is-discussing),
 .is-following .tseg { cursor: pointer; }
 
 .track-links {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-inline-start: 0.75rem;
-  font-size: 0.85rem;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 0 0.25rem;
+}
+
+.ltr-content .track-title:has(+ .track-links) { margin-block-end: 0.6rem; }
+
+.track-links-label,
+.transcript-follow {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #4a4a68;
+}
+
+.transcript-follow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .index-context {

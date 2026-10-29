@@ -185,6 +185,36 @@ export function chooseSeries<S extends { id: string }>(
   return { series, fellBack: savedId !== null };
 }
 
+/**
+ * The `?teacher=` value of a series in links: its title with everything but
+ * ASCII letters and digits dropped ("Rabbi Markel Series (Advanced)" ->
+ * "RabbiMarkelSeriesAdvanced"). Hugo templates build the same value
+ * (class-track.html, audio/transcript.html).
+ */
+export function teacherKey(title: string): string {
+  return title.replace(/[^A-Za-z0-9]+/g, '');
+}
+
+/**
+ * The series a `?teacher=` value names among `here`: its catalog id, its
+ * teacherKey (case-insensitive), or the only series whose key starts with
+ * the value ("RabbiMarkel"). Undefined when none or several match.
+ */
+export function resolveTeacher<S extends { id: string; title: string }>(
+  here: readonly S[],
+  value: string | null,
+): S | undefined {
+  const q = teacherKey(value ?? '').toLowerCase();
+  if (!q) return undefined;
+  const byId = here.find((s) => s.id === value?.trim());
+  if (byId) return byId;
+  const key = (s: S) => teacherKey(s.title).toLowerCase();
+  const exact = here.find((s) => key(s) === q);
+  if (exact) return exact;
+  const prefixed = here.filter((s) => key(s).startsWith(q));
+  return prefixed.length === 1 ? prefixed[0] : undefined;
+}
+
 /** data/schema/v1/transcript.schema.json (the fields the site reads). */
 export interface Transcript {
   schemaVersion: 1;

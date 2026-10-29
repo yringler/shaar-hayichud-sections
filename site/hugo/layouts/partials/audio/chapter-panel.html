@@ -45,7 +45,7 @@
     <button type="button" class="follow-along" data-follow-along data-js-only hidden aria-pressed="false">Follow along</button>
     <button type="button" class="listen-transcript-toggle" data-listen-transcript-toggle hidden aria-expanded="false" aria-controls="listen-transcript-pane">Show transcript</button>
     {{- $t := index $audio.transcripts $first.id }}
-    <a class="listen-transcript" data-listen-transcript href="{{ with $t }}{{ .url }}{{ end }}" target="_blank" rel="noopener"{{ if not $t }} hidden{{ end }}>Transcript{{ partial "new-tab.html" . }}</a>
+    <a class="listen-transcript audio-link" data-listen-transcript href="{{ with $t }}{{ .url }}{{ end }}" target="_blank" rel="noopener"{{ if not $t }} hidden{{ end }}>Transcript{{ partial "new-tab.html" . }}</a>
   </div>
   <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
   <p class="listen-note" data-listen-note role="status" hidden></p>

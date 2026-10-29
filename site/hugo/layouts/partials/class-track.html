@@ -1,21 +1,25 @@
 {{- /* One lecture from the catalog: audio player (canonical url) + title,
        plus links to its transcript page and the chapter it is aligned to,
-       when those are published. */ -}}
+       when those are published. The chapter link carries ?teacher= (the
+       series' teacherKey, see audio/model.ts) so the chapter page opens with
+       this class's teacher, without changing the reader's saved choice. */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
+{{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
 {{- $transcript := index $audio.transcripts .id -}}
 {{- $aligned := index $audio.aligned .id -}}
+{{- $teacher := "" -}}
+{{- with index $lectures .id }}{{ $teacher = printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" .series.title) }}{{ end -}}
 <div class="track">
   <audio controls preload="none" src="{{ .url }}"></audio>
-  <p class="track-title">{{ .title }}
-    {{- if or $transcript $aligned }}
-    <span class="track-links">
-      {{- with $aligned }}
-        {{- if eq (len .all) 1 }}<a href="{{ .url }}">Follow in the text</a>
-        {{- else }}{{ range $i, $c := .all }}<a href="{{ $c.url }}">{{ if not $i }}Follow in the text: {{ end }}{{ replaceRE `^chapter_0*` "Ch " $c.chapter }}</a>{{ end }}
-        {{- end }}
-      {{- end -}}
-      {{- with $transcript }}<a href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
-    </span>
+  <p class="track-title">{{ .title }}</p>
+  {{- if or $transcript $aligned }}
+  <p class="track-links">
+    {{- with $aligned }}
+      {{- if eq (len .all) 1 }}<a class="audio-link" href="{{ .url }}{{ $teacher }}">Follow in the text</a>
+      {{- else }}<span class="track-links-label">Follow in the text:</span>{{ range .all }}<a class="audio-link" href="{{ .url }}{{ $teacher }}">{{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>{{ end }}
+      {{- end }}
     {{- end -}}
+    {{- with $transcript }}<a class="audio-link" href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
   </p>
+  {{- end }}
 </div>
