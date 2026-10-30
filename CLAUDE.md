@@ -1,6 +1,6 @@
 # Shaar Hayichud Sections — Monorepo
 
-This repo has one shared data directory, two sub-projects and a Dart package. Read each one's own docs for details.
+This repo has one shared data directory, two sub-projects and a Dart package. Read each one's own docs for details
 
 ## Layout
 
