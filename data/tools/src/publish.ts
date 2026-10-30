@@ -140,6 +140,22 @@ const SENTENCE_END = /[.?!]["'”’)\]]*$/;
 const round2 = (n: number) => Math.round(n * 100) / 100;
 
 /**
+ * Writes the Name as G-d in machine-made English (Sofer transcripts and
+ * outline titles), the spelling the chapter translations use: God, God's,
+ * Godly, Godliness (and all-caps forms) become G-d, G-d's, G-dly, G-dliness.
+ * Lower-case "godly" and "godliness" always mean the same and change too, but
+ * a bare lower-case "god" or "gods" ("their god is science") is left alone.
+ * The stored Sofer files keep Sofer's spelling; this runs only on what is
+ * published.
+ */
+export function reverentSpelling(text: string): string {
+  return text
+    .replace(/\bGod(liness|ly)?\b/g, 'G-d$1')
+    .replace(/\bGOD(LINESS|LY)?\b/g, 'G-D$1')
+    .replace(/\bgod(liness|ly)\b/g, 'g-d$1');
+}
+
+/**
  * Groups words into paragraphs: split at every change of speaker (when the
  * words carry speaker labels), at long pauses, or at a sentence end once the
  * paragraph is long enough (sooner if the speaker pauses there).
@@ -154,7 +170,7 @@ export function paragraphs(words: TimedWord[], opts: ParagraphOptions = DEFAULT_
     out.push({
       startSeconds: round2(current[0]!.start),
       endSeconds: round2(Math.max(current[current.length - 1]!.end, current[0]!.start)),
-      text: current.map((w) => w.word.trim()).join(' '),
+      text: reverentSpelling(current.map((w) => w.word.trim()).join(' ')),
       ...(speaker !== null ? { speaker } : {}),
     });
     current = [];
@@ -339,7 +355,7 @@ export interface PublishedOutline {
 export function publishOutline(lectureId: string, topics: SourceTopic[], generatedBy = 'sofer.ai'): PublishedOutline {
   const kept: PublishedOutline['topics'] = [];
   for (const t of topics) {
-    const title = typeof t.title === 'string' ? t.title.trim() : '';
+    const title = typeof t.title === 'string' ? reverentSpelling(t.title.trim()) : '';
     if (typeof t.start_time_sec !== 'number' || title === '') continue;
     if (t.confidence !== 'HIGH' && t.confidence !== 'MEDIUM') continue;
     kept.push({ title, startSeconds: round2(t.start_time_sec), confidence: t.confidence });

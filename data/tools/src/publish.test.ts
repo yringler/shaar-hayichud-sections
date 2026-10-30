@@ -16,6 +16,7 @@ import {
   parsePublishPolicy,
   publishAlignment,
   publishOutline,
+  reverentSpelling,
   retimeTopics,
   sourceTopics,
   selectPublished,
@@ -81,7 +82,28 @@ describe('chapterKeyOf', () => {
   });
 });
 
+describe('reverentSpelling', () => {
+  it('writes God and its forms as G-d', () => {
+    assert.equal(
+      reverentSpelling("God, God's will. Godliness and godliness, Godly and godly. GOD. God-fearing \"God?\""),
+      "G-d, G-d's will. G-dliness and g-dliness, G-dly and g-dly. G-D. G-d-fearing \"G-d?\"",
+    );
+  });
+
+  it('leaves lower-case god, plurals and other words alone', () => {
+    const s = 'their god is science, other gods, Gods, Godel, good, Godzilla, ungodly';
+    assert.equal(reverentSpelling(s), s);
+  });
+});
+
 describe('paragraphs', () => {
+  it('spells God as G-d in the published text', () => {
+    assert.deepEqual(
+      paragraphs(words(['the', 'God', 'of', 'Godliness.'])).map((x) => x.text),
+      ['the G-d of G-dliness.'],
+    );
+  });
+
   it('splits at a long pause once the paragraph has enough words', () => {
     const w = words(['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']);
     // A 2.5 s pause after the ninth word.
@@ -281,6 +303,11 @@ describe('publishOutline', () => {
     });
     assert.deepEqual(sourceTopics([{ title: 't', confidence: 'HIGH' }]).length, 1);
     assert.deepEqual(sourceTopics({ nothing: true }), []);
+  });
+
+  it('spells God as G-d in topic titles', () => {
+    const topics = [{ title: 'Knowing God', start_time_sec: 1, confidence: 'HIGH' }];
+    assert.equal(publishOutline('a.mp3', topics).topics[0]!.title, 'Knowing G-d');
   });
 });
 
