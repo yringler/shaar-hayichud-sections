@@ -1,7 +1,7 @@
 # data/ — single source of truth
 
 Everything the site, the section tool and the Flutter app show about Shaar
-Hayichud comes from this directory:
+Hayichud comes from this directory : 
 
 | Path | What it is | Edited by |
 |------|------------|-----------|
