@@ -327,10 +327,13 @@ function createReader(): Reader {
     if (opener) {
       // After autoplay moved the reader on, the link can be far from where
       // the page was left: bring it on screen, once the history traversal
-      // has restored the page's scroll position.
+      // has restored the page's scroll position. With a fragment in the URL
+      // (#class-…), that traversal also moves focus to the body after
+      // popstate, so focus the link again then.
       const el = opener;
       el.focus({ preventScroll: true });
       window.setTimeout(() => {
+        if (!lesson) el.focus({ preventScroll: true });
         const r = el.getBoundingClientRect();
         if (r.bottom < 0 || r.top > window.innerHeight) el.scrollIntoView({ block: 'center' });
       }, 0);

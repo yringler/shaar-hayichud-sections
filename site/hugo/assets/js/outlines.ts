@@ -4,7 +4,8 @@
  *
  * - Expand all / Collapse all for the classes' `<details>` (the buttons are
  *   `data-js-only`, shown here).
- * - The part in view is marked in the side nav (`aria-current`).
+ * - The part in view is marked in the side nav (`aria-current="location"`);
+ *   the first part until a part reaches the top 30% of the viewport.
  *
  * Nothing is opened on load, also when the URL names a part: the parts and
  * chapters are headings, always visible.
@@ -25,7 +26,8 @@ if (controls && classes.length > 0) {
 }
 
 // Scroll spy: the current part is the first one crossing the top 30% of the
-// viewport; between parts the last one stays marked.
+// viewport; between parts the last one stays marked, and before any part
+// gets there (the page top) the first one is.
 const parts = Array.from(document.querySelectorAll<HTMLElement>('section.outline-part'));
 const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('a[data-outlines-part]'));
 let current = '';
@@ -34,7 +36,7 @@ function mark(id: string): void {
   if (id === current) return;
   current = id;
   for (const a of links) {
-    if (a.dataset['outlinesPart'] === id) a.setAttribute('aria-current', 'true');
+    if (a.dataset['outlinesPart'] === id) a.setAttribute('aria-current', 'location');
     else a.removeAttribute('aria-current');
   }
 }
@@ -53,4 +55,5 @@ if (parts.length > 1 && links.length > 0 && 'IntersectionObserver' in window) {
     { rootMargin: '0px 0px -70% 0px' },
   );
   for (const p of parts) observer.observe(p);
+  if (parts[0]) mark(parts[0].id);
 }

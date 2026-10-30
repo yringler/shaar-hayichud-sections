@@ -21,7 +21,6 @@
       "pageLang" "en"
       "dir" "ltr"
       "seriesIndex" $si
-      "seriesSlug" $seriesSlug
       "layout" "series"
     )
     "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/" $legacy)) slice)
@@ -42,7 +41,6 @@
           "dir" "ltr"
           "seriesIndex" $si
           "partIndex" $pi
-          "seriesSlug" $seriesSlug
         )
         "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/%s/" $legacy $partSlug)) slice)
       ) -}}

@@ -68,7 +68,9 @@ export function parseDeepLink(search: string, hash: string): { boxId: string | n
  * The topic a deep link with `t` (whole seconds) selects and where it plays
  * from. Links carry the topic's start floored, so the topic is the last one
  * with floor(startSeconds) <= t (the first when none is), and the seek
- * target is its exact start when t names it, else t itself. Null without topics.
+ * target is its exact start when t names it, else t itself. A t past the
+ * last topic's start (the class's length is unknown here, so it may be past
+ * the end) plays from that topic's start instead. Null without topics.
  */
 export function deepLinkTarget<T extends Pick<Topic, 'startSeconds'>>(
   topics: readonly T[],
@@ -80,7 +82,9 @@ export function deepLinkTarget<T extends Pick<Topic, 'startSeconds'>>(
     if (Math.floor(x.startSeconds) <= t) topic = x;
     else break;
   }
-  return { topic, seek: Math.floor(topic.startSeconds) === t ? topic.startSeconds : t };
+  const start = Math.floor(topic.startSeconds);
+  const pastLast = topic === topics[topics.length - 1] && t > start;
+  return { topic, seek: start === t || pastLast ? topic.startSeconds : t };
 }
 
 export interface Ref {

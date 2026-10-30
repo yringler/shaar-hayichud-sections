@@ -1,18 +1,21 @@
 /**
  * DOM helpers shared by classes.ts and play.ts: seeking an <audio> and
  * playing it, and the scrolling conventions (reduced motion, a quiet time
- * after the reader scrolls).
+ * after the reader scrolls), which follow.ts uses too.
  *
  * Seeks wait for the metadata when the audio is not loaded yet
  * (preload=none), so a seek can be pending for a while. Each <audio> keeps
  * at most one pending seek: a later playAt() cancels the earlier one, so a
  * slow load can never land on a stale position. classes.js and play.js are
- * separate bundles but never run on the same page; follow.js (loaded by
- * play.js) seeks only an <audio> that is already loaded.
+ * separate bundles but never run on the same page. follow.js (loaded by
+ * play.js) is a separate bundle with its own copy of this module, so it
+ * cannot see play.js's pending seeks: clicking a transcript paragraph (or
+ * its play button) sets `currentTime` and calls `play()` directly. A
+ * pending playAt() from play.js can then still land afterwards.
  */
 
 /** No automatic scrolling of a scroll region for this long after the reader scrolls it. */
-export const USER_SCROLL_QUIET_MS = 5000;
+const USER_SCROLL_QUIET_MS = 5000;
 const SCROLL_KEYS = ['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '];
 
 /** Cancels the pending seek of each <audio> that has one. */

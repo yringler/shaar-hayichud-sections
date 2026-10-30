@@ -1314,6 +1314,45 @@ async function check(name, fn) {
     }
   });
 
+  await check('a page loaded with #class-… (with and without ?t): closing the reader with Esc or browser Back returns focus to the link', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}${MARKEL_PART_1}`);
+      // A box well down the page, with lesson text.
+      const id = await page.evaluate(() => [...document.querySelectorAll('.track:has(a[data-lesson-open])')].map((b) => b.id).at(2));
+      assert.ok(id, 'a third box with lesson text');
+      for (const q of ['', '?t=0']) {
+        await page.goto('about:blank'); // a real page load with the hash, not a fragment navigation
+        const { box } = await arrive(page, `${MARKEL_PART_1}${q}#${encodeURIComponent(id)}`);
+        const link = box.locator('a[data-lesson-open]').first();
+        const reader = page.locator('.reader');
+        const focusedLink = async (how) => {
+          await reader.waitFor({ state: 'hidden' });
+          // The history traversal moves focus to the body after popstate; classes.js takes it back.
+          await page.waitForFunction((a) => document.activeElement === a, await link.elementHandle(), { timeout: 2000 }).catch(async () => {
+            const on = await page.evaluate(() => document.activeElement?.outerHTML.slice(0, 80));
+            throw new Error(`${q || 'no ?t'}, ${how}: focus on ${on}`);
+          });
+          await page.waitForTimeout(300);
+          assert.equal(await link.evaluate((a) => document.activeElement === a), true, `${q || 'no ?t'}, ${how}: focus moved away again`);
+          assert.equal(decodeURIComponent(new URL(page.url()).hash.slice(1)), id);
+        };
+        await link.click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await reader.locator('.reader-back').focus();
+        await page.keyboard.press('Escape');
+        await focusedLink('Esc');
+        await link.click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await page.goBack();
+        await focusedLink('browser Back');
+      }
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
   // ---------------- outlines pages ----------------
   const outlineSeries = fs.readdirSync(path.join(PUBLIC, 'outlines'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
 
@@ -1417,11 +1456,17 @@ async function check(name, fn) {
         if (name === 'desktop') {
           assert.ok(await side.isVisible());
           assert.ok(await jump.isHidden());
+          // At the top of the page the first part is the current one.
+          const currentPart = () => side.locator('a[aria-current]').evaluateAll((as) => as.map((a) => [a.dataset.outlinesPart, a.getAttribute('aria-current')]));
+          const firstPart = await page.locator('section.outline-part').first().getAttribute('id');
+          assert.deepEqual(await currentPart(), [[firstPart, 'location']]);
           // Sticky: still there after scrolling far down.
           await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight / 2));
           await page.waitForTimeout(300);
           const r = await side.boundingBox();
           assert.ok(r && r.y < 900 && r.y + r.height > 0, `side nav at ${JSON.stringify(r)}`);
+          const later = await currentPart();
+          assert.ok(later.length === 1 && later[0][0] !== firstPart && later[0][1] === 'location', JSON.stringify(later));
           await page.evaluate(() => window.scrollTo(0, 0));
         } else {
           assert.ok(await side.isHidden());

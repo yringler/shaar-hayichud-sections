@@ -247,8 +247,24 @@ test("deepLinkTarget: the last topic whose floored start is <= t; its exact star
   // Before the first topic: the first one is selected, playing from t.
   assert.deepEqual(at(0), ["A", 0]);
   assert.deepEqual(at(11), ["A", 11]);
-  // Past the end: the last topic, from t.
-  assert.deepEqual(at(99999), ["C", 99999]);
+  // Past the last topic's start (maybe past the end of the class): the last topic, from its start.
+  assert.deepEqual(at(301), ["C", 300]);
+  assert.deepEqual(at(99999), ["C", 300]);
   // No topics.
   assert.equal(deepLinkTarget([], 95), null);
+});
+
+test("deepLinkTarget: an oversized t never seeks past the last topic's exact start", () => {
+  const topics = [
+    { title: "A", startSeconds: 0, confidence: "HIGH" },
+    { title: "B", startSeconds: 1800.75, confidence: "HIGH" },
+  ];
+  assert.deepEqual(deepLinkTarget(topics, 100000), { topic: topics[1], seek: 1800.75 });
+  assert.deepEqual(deepLinkTarget(topics, 1801), { topic: topics[1], seek: 1800.75 });
+  // The link B produces still plays from its exact start; between A and B, from t.
+  assert.deepEqual(deepLinkTarget(topics, 1800), { topic: topics[1], seek: 1800.75 });
+  assert.deepEqual(deepLinkTarget(topics, 900), { topic: topics[0], seek: 900 });
+  // A single topic: anything past its start plays from it.
+  assert.deepEqual(deepLinkTarget([topics[1]], 5000), { topic: topics[1], seek: 1800.75 });
+  assert.deepEqual(deepLinkTarget([topics[1]], 60), { topic: topics[1], seek: 60 });
 });
