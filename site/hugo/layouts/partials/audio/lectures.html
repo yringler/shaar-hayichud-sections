@@ -1,30 +1,41 @@
 {{- /* Every catalog lecture by id, with its place in the catalog:
-       dict "lecture" (catalog lecture) "series" (series section) "seriesSlug"
-       "part" (the series' child section it is under, or nil) "partUrl"
-       "headings" (titles between the series and the lecture).
+       dict "lecture" (catalog lecture) "series" (series section) "seriesUrl"
+       "part" (the series' child section it is under, or nil) "partUrl" (its
+       class page: the part page, or the series page for a lecture directly
+       under the series) "anchor" (the id of its box there, class-<id | urlize>)
+       "classUrl" (partUrl#anchor) "headings" (titles between the series and
+       the lecture). URLs come from classes-url.html.
        Call with partialCached "audio/lectures.html" . "lectures". */ -}}
 {{- $catalog := partial "catalog.html" . -}}
 {{- /* Scratch, not merge: merge would lowercase the (case-sensitive) ids. */ -}}
 {{- $out := newScratch -}}
 {{- range $series := $catalog.series -}}
-  {{- $seriesSlug := $series.title | urlize -}}
-  {{- $seriesUrl := printf "/classes/%s/" $seriesSlug -}}
+  {{- $seriesUrl := partial "classes-url.html" (dict "series" $series) -}}
   {{- range $a := $series.items -}}
+    {{- $partUrl := $seriesUrl -}}
+    {{- $found := slice -}}
     {{- if eq $a.type "lecture" -}}
-      {{- $out.SetInMap "m" $a.id (dict "lecture" $a "series" $series "seriesUrl" $seriesUrl "part" nil "partUrl" $seriesUrl "headings" slice) -}}
+      {{- $found = slice (dict "lecture" $a "headings" slice) -}}
     {{- else -}}
-      {{- $partUrl := printf "/classes/%s/%s/" $seriesSlug ($a.title | urlize) -}}
+      {{- $partUrl = partial "classes-url.html" (dict "series" $series "part" $a) -}}
       {{- range $b := $a.items -}}
         {{- if eq $b.type "lecture" -}}
-          {{- $out.SetInMap "m" $b.id (dict "lecture" $b "series" $series "seriesUrl" $seriesUrl "part" $a "partUrl" $partUrl "headings" (slice $a.title)) -}}
+          {{- $found = $found | append (slice (dict "lecture" $b "headings" (slice $a.title))) -}}
         {{- else -}}
           {{- range $c := $b.items -}}
             {{- if eq $c.type "lecture" -}}
-              {{- $out.SetInMap "m" $c.id (dict "lecture" $c "series" $series "seriesUrl" $seriesUrl "part" $a "partUrl" $partUrl "headings" (slice $a.title $b.title)) -}}
+              {{- $found = $found | append (slice (dict "lecture" $c "headings" (slice $a.title $b.title))) -}}
             {{- end -}}
           {{- end -}}
         {{- end -}}
       {{- end -}}
+    {{- end -}}
+    {{- range $found -}}
+      {{- $anchor := printf "class-%s" (.lecture.id | urlize) -}}
+      {{- $out.SetInMap "m" .lecture.id (dict
+        "lecture" .lecture "series" $series "seriesUrl" $seriesUrl
+        "part" (cond (eq $a.type "lecture") nil $a) "partUrl" $partUrl "headings" .headings
+        "anchor" $anchor "classUrl" (printf "%s#%s" $partUrl $anchor)) -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

@@ -44,12 +44,13 @@ These are dashboard settings (Pages project → Settings → Builds); a Pages Wr
 ```
 hugo/
   hugo.toml        # Hugo config: baseURL, params, module mounts (see below)
-  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes)
+  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes, outlines)
   data/i18n.json   # nav label translations (en/he)
-  layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog, class-track, audio/)
-  assets/js/       # entry points play.ts, follow.ts, classes.ts; shared audio/model.ts (pure, unit tested),
+  layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog,
+                   #   classes-url, format-time, class-track, part-nav, audio/, outlines/; see Hugo partials)
+  assets/js/       # entry points play.ts, follow.ts, classes.ts, outlines.ts; shared audio/model.ts (pure, unit tested),
                    #   audio/store.ts (localStorage), audio/player.ts (playAt/seekOnPlay, scrolling helpers)
-                   #   (see Class lists, Audio on chapter pages)
+                   #   (see Class lists, Audio on chapter pages, Outlines pages)
   static/          # CNAME, _headers, texts/index.json
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
@@ -80,6 +81,23 @@ Each chapter generates 3 pages:
 - `/texts/chapter-N/` — English view
 - `/he/texts/chapter-N/` — Hebrew view
 - `/translation/chapter-N/` — Translation view (only if chapter has translations)
+
+The class catalog generates more:
+- `content/classes/_content.gotmpl`: `/classes/<series>/` and `/classes/<series>/<part>/` (see Audio Classes), and `/classes/transcripts/<slug>/`
+- `content/outlines/_content.gotmpl`: `/outlines/<series>/` for each series with at least one published outline (see Outlines pages); `content/outlines/_index.md` is `/outlines/`
+
+## Site nav
+
+`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) shows in both languages and always links the English `/outlines/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
+
+## Hugo partials
+
+- `catalog.html`: the class catalog (`site.Data.v1.catalog`), failing the build when the data build has not run.
+- `classes-url.html`: the one place that builds class page URLs. `dict "series" $s` → `/classes/<series>/`; with `"part" $p` → `/classes/<series>/<part>/` (slugs: `title | urlize`). `content/classes/_content.gotmpl` creates those pages with its own slugs and must agree with it.
+- `audio/lectures.html` (cached): every catalog lecture by ID with its `series`, `seriesUrl`, `part`, `partUrl` (its class page: the part page, or the series page for a lecture directly under the series), `anchor` (`class-<id | urlize>`, the id of its box) and `classUrl` (`partUrl#anchor`). Use these instead of building class links.
+- `format-time.html`: seconds → `h:mm:ss` or `m:ss`, the same as `formatTime()` in `assets/js/audio/model.ts`. Every time shown by a template goes through it.
+- `audio/outline.html`: a lecture's published topics (`title`, `startSeconds`) or an empty slice. `audio/topics.html`: a class box's collapsed topic list (`details[data-track-topics]`, one `button[data-start]` per topic), used by `class-track.html`.
+- `outlines/tree.html`, `outlines/class.html`, `outlines/class-details.html`, `outlines/nav.html`: the outlines pages (below).
 
 ## Directionality
 
@@ -124,6 +142,20 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - Footnote digit markers stripped from Hebrew text content: `replaceRE \d+`
 - Child sections recursed into (flat HTML output, not nested divs)
 - Translation shown only when page param `showTranslation` is true
+
+## Outlines pages
+
+`/outlines/` (`layouts/outlines/list.html`) introduces the auto-generated topic outlines and has one card per series that has an outlines page: its counts and a link to each of its parts there (`/outlines/<series>/#<part anchor>`).
+
+`/outlines/<series>/` (`layouts/outlines/single.html`, same series slug as `/classes/`) shows the whole series in catalog order, every topic pre-rendered:
+
+- Breadcrumb, `h1` (series title), counts, Expand all / Collapse all (`.outlines-controls`, `data-js-only`).
+- Each part is a `section.outline-part` with an `<h2>` and `id="<part title | urlize>"`, and a link to its class page. Each chapter heading in it is a `section.outline-chapter` with an `<h3>` and `id="<part anchor>--<chapter title | urlize>"`, set off by a side border, so the part's loose classes (outside any heading) are visibly not in a chapter.
+- Each class with an outline is a collapsed `details.outline-class`: the summary has the title and topic count; inside, an "Open class" link to its box (`classUrl`) and an `<ol class="outline-topics">` of topic deep links, `<partUrl>?t=<int startSeconds>#<box anchor>`, each "`<span>time</span> title`". classes.js on the class page opens that box's topics and offers Play from there (see Class lists). The markup is lean on purpose (the Walters page has about 930 topics): the time span has no class, and only titles with Hebrew letters are wrapped in `<bdi>`.
+- `partials/outlines/tree.html` (cached per series) builds the page's model and decides what is shown: parts and chapter headings without any outlined class are left out; a class without an outline inside a shown heading is listed plainly (title linking to its box, "no outline yet"); lectures directly under the series form a last part, "Other classes" (`#other-classes`). The adapter makes a page only for a series with at least one outline.
+- Build failures: two parts or chapters on one page with the same anchor (or an empty one), and a lecture missing from `audio/lectures.html` (its links would have no target).
+- Wide screens (≥ 64rem): the body widens to 72rem (`body:has(.outlines-layout)`) for a sticky side nav (`nav.outlines-nav`) listing parts → chapters. Narrow screens hide it and show the same list (`partials/outlines/nav.html`) in a "Jump to" `<details>` at the top.
+- `outlines.js` (`assets/js/outlines.ts`): Expand all / Collapse all, and the part crossing the top 30% of the viewport gets `aria-current` in the side nav (IntersectionObserver). It opens nothing on load, also when the URL names a part.
 
 ## Audio Classes
 

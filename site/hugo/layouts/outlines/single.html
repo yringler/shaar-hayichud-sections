@@ -1,0 +1,51 @@
+{{ define "main" }}
+  {{- /* A series outlines page (content/outlines/_content.gotmpl): every part
+         as an <h2> section, its chapter headings as <h3> sections, each class
+         a collapsed <details> of topic deep links (outlines/class-details.html),
+         in catalog order, all pre-rendered. A sticky side nav of parts and
+         chapters on wide screens, a "Jump to" disclosure on narrow ones.
+         outlines.js adds Expand all / Collapse all and marks the part in view
+         in the side nav. */ -}}
+  {{ $catalog := partial "catalog.html" . }}
+  {{ $series := index $catalog.series .Params.seriesIndex }}
+  {{ $tree := partialCached "outlines/tree.html" $series $series.id }}
+  <div class="ltr-content outlines-layout">
+    <nav class="outlines-nav" aria-label="Parts of this series">
+      {{ partial "outlines/nav.html" $tree }}
+    </nav>
+    <div class="outlines-body">
+      <p class="breadcrumb"><a href="/outlines/">Class outlines</a> → {{ $series.title }}</p>
+      <h1>{{ $series.title }}</h1>
+      <p class="outlines-about">{{ $tree.outlined }} classes · {{ $tree.topics }} auto-generated topics.
+        Each topic opens its class on <a href="{{ partial "classes-url.html" (dict "series" $series) }}">the class pages</a>, ready to play from there.</p>
+      <details class="outlines-jump">
+        <summary>Jump to</summary>
+        <nav aria-label="Parts of this series">
+          {{ partial "outlines/nav.html" $tree }}
+        </nav>
+      </details>
+      <p class="outlines-controls" data-js-only hidden>
+        <button type="button" data-outlines-expand>Expand all</button>
+        <button type="button" data-outlines-collapse>Collapse all</button>
+      </p>
+      {{ range $tree.parts }}
+      <section class="outline-part" id="{{ .anchor }}">
+        <h2>{{ .title }} <span class="outline-count">{{ .outlined }} classes</span></h2>
+        <p class="outline-part-link"><a href="{{ .partUrl }}">Class page for {{ .title }}</a></p>
+        {{ range .items }}
+          {{ if .chapter }}
+          <section class="outline-chapter" id="{{ .anchor }}">
+            <h3>{{ .title }}</h3>
+            {{ range .classes }}{{ partial "outlines/class-details.html" . }}{{ end }}
+          </section>
+          {{ else }}
+            {{ partial "outlines/class-details.html" .lecture }}
+          {{ end }}
+        {{ end }}
+      </section>
+      {{ end }}
+    </div>
+  </div>
+  {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
+  <script type="module" src="{{ $scripts.outlines.RelPermalink }}" integrity="{{ $scripts.outlines.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}

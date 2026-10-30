@@ -14,27 +14,16 @@
 {{- $transcript := index $audio.transcripts .id -}}
 {{- $aligned := index $audio.aligned .id -}}
 {{- $text := partial "audio/lesson-text.html" .id -}}
-{{- $teacher := "" -}}
-{{- with index $lectures .id }}{{ $teacher = printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" .series.title) }}{{ end -}}
-<div class="track" id="class-{{ .id | urlize }}"{{ with $text }} data-lesson{{ end }}>
+{{- $info := index $lectures .id -}}
+{{- if not $info }}{{ errorf "class-track: lecture %q is missing from audio/lectures.html" .id }}{{ end -}}
+{{- $teacher := printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" $info.series.title) -}}
+<div class="track" id="{{ $info.anchor }}"{{ with $text }} data-lesson{{ end }}>
   <div class="track-player">
     <audio controls preload="none" src="{{ .url }}"></audio>
     <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
   </div>
   <p class="track-title">{{ .title }}</p>
-  {{- with index $audio.outlines .id }}
-  {{- with (resources.Get . | transform.Unmarshal).topics }}
-  <details class="listen-topics" data-track-topics data-js-only hidden>
-    <summary>Topics in this class <span class="auto-generated">(auto-generated)</span></summary>
-    <ol>
-      {{- range . }}
-      {{- $s := int .startSeconds }}{{ $h := div $s 3600 }}{{ $m := mod (div $s 60) 60 }}
-      <li><button type="button" data-start="{{ .startSeconds }}"><span class="listen-topic-time">{{ if $h }}{{ printf "%d:%02d:%02d" $h $m (mod $s 60) }}{{ else }}{{ printf "%d:%02d" $m (mod $s 60) }}{{ end }}</span> {{ .title }}</button></li>
-      {{- end }}
-    </ol>
-  </details>
-  {{- end }}
-  {{- end }}
+  {{- partial "audio/topics.html" .id }}
   {{- with $text }}
   {{- $multi := gt (len .) 1 }}
   <div class="lesson-text" data-lesson-text dir="rtl" lang="he" role="group" aria-label="Text of this class" tabindex="0">

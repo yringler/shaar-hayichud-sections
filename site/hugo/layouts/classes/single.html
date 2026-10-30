@@ -9,11 +9,11 @@
 
     <p class="breadcrumb">
       <a href="/classes/">Classes</a> →
-      <a href="/classes/{{ .Params.seriesSlug }}/">{{ $series.title }}</a> →
+      <a href="{{ partial "classes-url.html" (dict "series" $series) }}">{{ $series.title }}</a> →
       {{ $part.title }}
     </p>
     <h1>{{ $part.title }}</h1>
-    {{- $nav := dict "series" $series "seriesSlug" .Params.seriesSlug "partIndex" .Params.partIndex }}
+    {{- $nav := dict "series" $series "partIndex" .Params.partIndex }}
     {{ partial "part-nav.html" (merge $nav (dict "label" "Previous and next part")) }}
 
     {{- /* Quick table of contents for long pages: one link per heading. */ -}}

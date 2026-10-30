@@ -1,0 +1,10 @@
+{{- /* One class for the outlines pages: dict "lecture" (catalog lecture)
+       "info" (its audio/lectures.html entry: classUrl, partUrl, anchor)
+       "topics" (audio/outline.html, maybe empty). Context: a catalog
+       lecture. A lecture missing from audio/lectures.html has no class box
+       to link to, so it fails the build. */ -}}
+{{- $info := index (partialCached "audio/lectures.html" . "lectures") .id -}}
+{{- if not $info -}}
+  {{- errorf "outlines: lecture %q is missing from audio/lectures.html, so its topic links have no target" .id -}}
+{{- end -}}
+{{- return dict "lecture" . "info" $info "topics" (partial "audio/outline.html" .id) -}}

@@ -59,7 +59,7 @@
     <h2>{{ $strings.nav.classes }}</h2>
     <ul class="index-list">
       {{ range (partial "catalog.html" .).series }}
-      <li><a href="/classes/{{ .title | urlize }}/">{{ .title }}</a></li>
+      <li><a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a></li>
       {{ end }}
     </ul>
   </section>
