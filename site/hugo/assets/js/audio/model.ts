@@ -44,18 +44,23 @@ export function topicAt<T extends Pick<Topic, 'startSeconds'>>(topics: readonly 
   return found;
 }
 
+/** The id a URL fragment names: `#` dropped, percent-decoded (as it is when the escape is malformed). */
+export function hashId(hash: string): string {
+  const id = hash.replace(/^#/, '');
+  try {
+    return decodeURIComponent(id);
+  } catch {
+    return id;
+  }
+}
+
 /**
  * A topic deep link (`<part page>?t=<T>#class-<lecture id | urlize>`): the
  * track box id from the hash (decoded, only a `class-…` id) and `t`, whole
  * seconds (fractions dropped). Null for a missing or invalid part.
  */
 export function parseDeepLink(search: string, hash: string): { boxId: string | null; t: number | null } {
-  let id = hash.replace(/^#/, '');
-  try {
-    id = decodeURIComponent(id);
-  } catch {
-    // Malformed escape: use the hash as it is.
-  }
+  const id = hashId(hash);
   const raw = new URLSearchParams(search).get('t')?.trim() ?? '';
   const n = raw === '' ? Number.NaN : Number(raw);
   return {

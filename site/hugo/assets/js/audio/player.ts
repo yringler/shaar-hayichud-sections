@@ -65,6 +65,23 @@ export function seekOnPlay(audio: HTMLMediaElement, t: number): void {
   armSeek(audio, 'play', () => seek(audio, t));
 }
 
+/**
+ * Puts `id` (the line now playing) in the URL's fragment with
+ * history.replaceState: no history entry, no scroll, no hashchange, and the
+ * entry's state is kept (the class list reader's entry has one). A no-op
+ * when the fragment already names it, so it is cheap to call on every
+ * timeupdate.
+ */
+export function replaceHash(id: string): void {
+  const hash = `#${encodeURIComponent(id)}`;
+  if (window.location.hash === hash) return;
+  try {
+    window.history.replaceState(window.history.state, '', hash);
+  } catch {
+    // Safari rate-limits replaceState (SecurityError): the next line tries again.
+  }
+}
+
 export const smoothScroll = (): ScrollBehavior =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 

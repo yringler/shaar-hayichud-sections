@@ -13,6 +13,7 @@ import {
   formatTime,
   lectureItems,
   nextInSeries,
+  hashId,
   parseDeepLink,
   rankRefs,
   scrollToShow,
@@ -225,6 +226,14 @@ test("parseDeepLink: the class box id from the hash and t in whole seconds", () 
   assert.deepEqual(parseDeepLink("?t=5", "#intro"), { boxId: null, t: 5 });
   assert.deepEqual(parseDeepLink("?t=5", ""), { boxId: null, t: 5 });
   assert.deepEqual(parseDeepLink("", "#class-%E0%A4"), { boxId: "class-%E0%A4", t: null });
+});
+
+test("hashId: the fragment without #, percent-decoded when it can be", () => {
+  assert.equal(hashId("#wospio7l"), "wospio7l");
+  assert.equal(hashId("wospio7l"), "wospio7l");
+  assert.equal(hashId("#class-a%20b"), "class-a b");
+  assert.equal(hashId("#%E0%A4"), "%E0%A4");
+  assert.equal(hashId(""), "");
 });
 
 test("deepLinkTarget: the last topic whose floored start is <= t; its exact start when t names it", () => {

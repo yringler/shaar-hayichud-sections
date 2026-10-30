@@ -300,6 +300,16 @@ async function check(name, fn) {
       assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
       await seek(page, r.startSeconds + 2);
       assert.deepEqual(await discussing(page), ['gbyeqivs']);
+      // The playing line is the URL's fragment (replaceState: no history entry).
+      await page.waitForFunction(() => location.hash === '#gbyeqivs');
+      const pathBefore = new URL(page.url()).pathname;
+      const historyBefore = await page.evaluate(() => history.length);
+      await seek(page, refOf(chapter10.lines.find((l) => l.lineId !== 'gbyeqivs' && refOf(l.lineId, MARKEL_10)).lineId, MARKEL_10).startSeconds + 0.5);
+      await page.waitForFunction(() => location.hash !== '#gbyeqivs');
+      assert.equal(await page.evaluate(() => history.length), historyBefore);
+      assert.equal(new URL(page.url()).pathname, pathBefore);
+      assert.equal(await page.evaluate(() => document.getElementById(location.hash.slice(1))?.classList.contains('line')), true);
+      await seek(page, r.startSeconds + 2);
       const border = await page.evaluate(() => getComputedStyle(document.getElementById('gbyeqivs').closest('p, .content')).borderRightWidth);
       assert.equal(border, '3px'); // RTL: inline-start is the right side
       // Lines that start at the same instant are current together. Re-timing removed the
@@ -649,7 +659,8 @@ async function check(name, fn) {
       let s = await audioState(page);
       assert.equal(s.src, chapter10.lectures[last].url);
       assert.equal(s.paused, true);
-      assert.equal(page.url(), url);
+      // No navigation (the fragment follows the playing line).
+      assert.equal(page.url().replace(/#.*/, ''), url.replace(/#.*/, ''));
       assert.equal(await page.locator('[data-listen-select]').inputValue(), String(last));
       assert.match(await page.locator('[data-listen-note]').textContent(), /last class of Rabbi Benyamin Walters Original Class on this chapter/);
 
@@ -870,6 +881,7 @@ async function check(name, fn) {
       const list = `${base}/classes/rabbi-benyamin-walters-original-class/chapters-10-15/`;
       try {
         await page.goto(list);
+        const entries = await page.evaluate(() => history.length);
         const box = page.locator('.track[data-lesson]').first();
         const preview = box.locator('[data-lesson-text]');
         // About three phrases tall, scrolling on its own.
@@ -888,6 +900,10 @@ async function check(name, fn) {
         );
         await page.waitForTimeout(500);
         assert.equal(await preview.locator('.line.is-discussing').count(), 1);
+        // The playing line is the URL's fragment (replaceState: no history entry).
+        const lineHash = () => page.evaluate(() => decodeURIComponent(location.hash.slice(1)));
+        assert.equal(await lineHash(), await preview.locator('.line.is-discussing').getAttribute('data-line'));
+        assert.equal(await page.evaluate(() => history.length), entries);
         // The current line is in view inside the box, and the page did not scroll for it.
         const vis = await preview.evaluate((el) => {
           const c = el.querySelector('.is-discussing').getBoundingClientRect();
@@ -937,7 +953,12 @@ async function check(name, fn) {
         // Browser Back closes it; the class still plays; the page is the list.
         await page.goBack();
         await reader.waitFor({ state: 'hidden' });
-        assert.equal(page.url(), list);
+        assert.equal(page.url().replace(/#.*/, ''), list);
+        // The entry gone back to had an older fragment: the playing class puts its line back.
+        await page.waitForFunction(
+          (p) => location.hash.slice(1) === p.querySelector('.line.is-discussing')?.dataset.line,
+          await preview.elementHandle(),
+        );
         assert.equal(await page.evaluate(() => window.__noReload), true);
         assert.equal(await audio.evaluate((a) => a.paused), false);
         assert.equal(await audio.evaluate((a) => getComputedStyle(a.closest('.track-player')).position), 'static');
@@ -973,7 +994,7 @@ async function check(name, fn) {
         await reader.locator('.reader-back').dblclick();
         await reader.waitFor({ state: 'hidden' });
         await page.waitForTimeout(300);
-        assert.equal(page.url(), list);
+        assert.equal(page.url().replace(/#.*/, ''), list);
         await page.screenshot({ path: path.join(shots, `classes-list-${name}.png`) });
         assert.deepEqual(errors, []);
       } finally {
@@ -1308,6 +1329,45 @@ async function check(name, fn) {
       await page.evaluate((id) => (location.hash = `#${id}`), other);
       await page.waitForFunction((id) => document.getElementById(id).querySelector('[data-track-topics]').open, other);
       assert.equal(await page.locator('.deep-play').count(), 0);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('a class page loaded with #<line id>: the first box aligning the line is shown, its text at the line, Play from focused; it plays there', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}${MARKEL_PART_1}`);
+      // An aligned line of the third lesson box that no earlier box aligns.
+      const { id, boxId, start } = await page.evaluate(() => {
+        const boxes = [...document.querySelectorAll('.track[data-lesson]')];
+        const box = boxes[2];
+        const earlier = new Set(boxes.slice(0, 2).flatMap((b) => [...b.querySelectorAll('.line[data-start]')].map((l) => l.dataset.line)));
+        const lines = [...box.querySelectorAll('.line[data-start]')].filter((l) => !earlier.has(l.dataset.line));
+        const line = lines[Math.floor(lines.length / 2)];
+        return { id: line.dataset.line, boxId: box.id, start: Number(line.dataset.start) };
+      });
+      await page.goto('about:blank');
+      await page.goto(`${base}${MARKEL_PART_1}#${id}`);
+      await page.waitForLoadState('load');
+      await page.waitForTimeout(300);
+      const box = page.locator(`[id="${boxId}"]`);
+      const play = box.locator('button.deep-play');
+      assert.equal(await play.count(), 1);
+      assert.equal(await page.evaluate(() => document.activeElement?.matches('.track button.deep-play')), true);
+      const top = await box.evaluate((b) => b.getBoundingClientRect().top);
+      assert.ok(top >= -2 && top < 200, `box top at ${top}`);
+      const shown = await box.locator(`[data-lesson-text] .line[data-line="${id}"]`).evaluate((el) => {
+        const r = el.getBoundingClientRect();
+        const p = el.closest('[data-lesson-text]').getBoundingClientRect();
+        return r.bottom > p.top && r.top < p.bottom;
+      });
+      assert.ok(shown, 'the line is in view in the lesson text');
+      const audio = box.locator('audio');
+      assert.equal(await audio.evaluate((a) => a.paused), true);
+      await play.click();
+      await page.waitForFunction(([el, t]) => !el.paused && Math.abs(el.currentTime - t) < 1.5, [await audio.elementHandle(), start], { timeout: 15000 });
       assert.deepEqual(errors, []);
     } finally {
       await context.close();
