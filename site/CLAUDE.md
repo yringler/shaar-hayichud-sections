@@ -21,7 +21,10 @@ yarn serve    # data + Hugo dev server with live reload
 yarn test     # Unit tests (lib/json-renderer.js, the audio model) + typecheck of hugo/assets/js
               #   (typecheck needs ../data/tools installed: yarn data does it)
 yarn test:e2e [dir]  # OPT-IN browser test of the audio features on hugo/public (run yarn build
-              #   first; needs Playwright with Chromium and ffmpeg). Screenshots go to [dir].
+              #   first; needs Playwright with Chromium and ffmpeg): chapter pages, transcript pages,
+              #   class lists (lesson text, reader, topics, Autoplay next), topic deep links,
+              #   the outlines pages (all their links checked in the built HTML) and the site nav.
+              #   Screenshots go to [dir].
               #   Under Yarn PnP Playwright may not resolve: run it as
               #   NODE_PATH=$(npm root -g) node scripts/e2e-audio.cjs [dir]
 yarn test:scripts  # Unit tests for scripts/sefaria-swap.py (python3)
