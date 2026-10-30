@@ -1,5 +1,5 @@
 {{- /* Previous / next part of the same series, for a part page
-       (classes/single.html). Context: dict "series" "seriesSlug" "partIndex".
+       (classes/single.html). Context: dict "series" "partIndex" "label".
        Only section items have part pages (the content adapter), so lectures
        directly under a series are skipped. */ -}}
 {{- $prev := false }}
@@ -13,13 +13,13 @@
 {{- if or $prev $next }}
 <nav class="part-nav" aria-label="{{ .label }}">
   {{- with $prev }}
-  <a class="part-nav-prev" rel="prev" href="/classes/{{ $.seriesSlug }}/{{ .title | urlize }}/">
+  <a class="part-nav-prev" rel="prev" href="{{ partial "classes-url.html" (dict "series" $.series "part" .) }}">
     <span class="part-nav-dir"><span aria-hidden="true">←</span> Previous</span>
     <span class="part-nav-title">{{ .title }}</span>
   </a>
   {{- end }}
   {{- with $next }}
-  <a class="part-nav-next" rel="next" href="/classes/{{ $.seriesSlug }}/{{ .title | urlize }}/">
+  <a class="part-nav-next" rel="next" href="{{ partial "classes-url.html" (dict "series" $.series "part" .) }}">
     <span class="part-nav-dir">Next <span aria-hidden="true">→</span></span>
     <span class="part-nav-title">{{ .title }}</span>
   </a>

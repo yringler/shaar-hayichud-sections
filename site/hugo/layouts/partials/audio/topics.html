@@ -1,0 +1,14 @@
+{{- /* A class box's auto-generated topics (class-track.html): a collapsed
+       list, shown by classes.js (data-js-only), where each topic plays the
+       class from data-start. Context: the lecture id. Renders nothing when
+       the class has no published outline. */ -}}
+{{- with partial "audio/outline.html" . }}
+  <details class="listen-topics" data-track-topics data-js-only hidden>
+    <summary>Topics in this class <span class="auto-generated">(auto-generated)</span></summary>
+    <ol>
+      {{- range . }}
+      <li><button type="button" data-start="{{ .startSeconds }}"><span class="listen-topic-time">{{ partial "format-time.html" .startSeconds }}</span> {{ .title }}</button></li>
+      {{- end }}
+    </ol>
+  </details>
+{{- end }}

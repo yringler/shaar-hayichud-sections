@@ -4,7 +4,6 @@
     {{ if isset .Params "seriesindex" }}
       {{- /* Series page */ -}}
       {{ $series := index $catalog.series .Params.seriesIndex }}
-      {{ $seriesSlug := .Params.seriesSlug }}
       <p class="breadcrumb"><a href="/classes/">Classes</a> → {{ $series.title }}</p>
       <h1>{{ $series.title }}</h1>
       {{ $parts := where $series.items "type" "section" }}
@@ -12,7 +11,7 @@
       <ul class="part-list">
         {{ range . }}
         <li>
-          <a href="/classes/{{ $seriesSlug }}/{{ .title | urlize }}/">{{ .title }}</a>
+          <a href="{{ partial "classes-url.html" (dict "series" $series "part" .) }}">{{ .title }}</a>
           <span class="track-count">{{ .lectureCount }} tracks</span>
         </li>
         {{ end }}
@@ -29,7 +28,7 @@
       <ul class="part-list">
         {{ range $catalog.series }}
         <li>
-          <a href="/classes/{{ .title | urlize }}/">{{ .title }}</a>
+          <a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a>
           <span class="track-count">{{ .lectureCount }} tracks</span>
         </li>
         {{ end }}

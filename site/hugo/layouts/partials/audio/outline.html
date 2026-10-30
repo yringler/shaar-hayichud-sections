@@ -1,0 +1,7 @@
+{{- /* The published auto-generated topics of a lecture (outline.schema.json:
+       title, startSeconds), or an empty slice. Context: the lecture id. */ -}}
+{{- $topics := slice -}}
+{{- with index (partialCached "audio/index.html" . "audio").outlines . -}}
+  {{- $topics = (resources.Get . | transform.Unmarshal).topics | default slice -}}
+{{- end -}}
+{{- return $topics -}}
