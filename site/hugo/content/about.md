@@ -15,6 +15,9 @@ dir: ltr
   <li><strong><a href="/texts/index.json">Raw JSON</a></strong> — Machine-readable index of the source JSON chapter files.</li>
 </ul>
 
+<h2>App</h2>
+<p>The classes are also available in the <em>Shaar Hayichud Classes</em> app, for <a href="https://play.google.com/store/apps/details?id=org.yrappdev.shaar_hayichud">Android</a> and <a href="https://apps.apple.com/us/app/shaar-hayichud-classes/id1542889125">iOS</a>.</p>
+
 <h2>About the Text</h2>
 <p><em>Shaar Hayichud</em> ("The Gate of Unity") was authored by Rabbi Dov Ber of Lubavitch (1773–1827), the Mitteler Rebbe, second leader of Chabad Chassidus.</p>
 <p>This work is called the key to Kabbalah and Chassidus. It brings clarity to the entire methodology of Kabbalah and to the process of creation known as the chaining down of the worlds (<em>hishtalshelus</em>). It is therefore a foundation for unlocking the secrets of Kabbalah and the treasure troves of Chassidus — a must-read for any sincere seeker of Divine truth.</p>
