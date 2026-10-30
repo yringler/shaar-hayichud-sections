@@ -29,9 +29,64 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["epub-gen", "npm:0.1.0"],\
+          ["pagefind", "npm:1.4.0"],\
           ["shaar-hayichud-sections", "workspace:."]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@pagefind/darwin-arm64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-darwin-arm64-npm-1.4.0-8828b378dd/node_modules/@pagefind/darwin-arm64/",\
+        "packageDependencies": [\
+          ["@pagefind/darwin-arm64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@pagefind/darwin-x64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-darwin-x64-npm-1.4.0-1b645ab1ab/node_modules/@pagefind/darwin-x64/",\
+        "packageDependencies": [\
+          ["@pagefind/darwin-x64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@pagefind/freebsd-x64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-freebsd-x64-npm-1.4.0-46307a9648/node_modules/@pagefind/freebsd-x64/",\
+        "packageDependencies": [\
+          ["@pagefind/freebsd-x64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@pagefind/linux-arm64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-linux-arm64-npm-1.4.0-d7fc248c3a/node_modules/@pagefind/linux-arm64/",\
+        "packageDependencies": [\
+          ["@pagefind/linux-arm64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@pagefind/linux-x64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-linux-x64-npm-1.4.0-ca719fd2ea/node_modules/@pagefind/linux-x64/",\
+        "packageDependencies": [\
+          ["@pagefind/linux-x64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@pagefind/windows-x64", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/unplugged/@pagefind-windows-x64-npm-1.4.0-5f3deb2000/node_modules/@pagefind/windows-x64/",\
+        "packageDependencies": [\
+          ["@pagefind/windows-x64", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["archiver", [\
@@ -1044,6 +1099,21 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["pagefind", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "./.yarn/cache/pagefind-npm-1.4.0-9ae789223b-4a9ccb57e0.zip/node_modules/pagefind/",\
+        "packageDependencies": [\
+          ["@pagefind/darwin-arm64", "npm:1.4.0"],\
+          ["@pagefind/darwin-x64", "npm:1.4.0"],\
+          ["@pagefind/freebsd-x64", "npm:1.4.0"],\
+          ["@pagefind/linux-arm64", "npm:1.4.0"],\
+          ["@pagefind/linux-x64", "npm:1.4.0"],\
+          ["@pagefind/windows-x64", "npm:1.4.0"],\
+          ["pagefind", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["path-is-absolute", [\
       ["npm:1.0.1", {\
         "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-127da03c82.zip/node_modules/path-is-absolute/",\
@@ -1138,6 +1208,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["epub-gen", "npm:0.1.0"],\
+          ["pagefind", "npm:1.4.0"],\
           ["shaar-hayichud-sections", "workspace:."]\
         ],\
         "linkType": "SOFT"\

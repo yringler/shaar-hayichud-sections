@@ -10,3 +10,4 @@ _site
 !.yarn/versions
 **/*local.json
 __pycache__/
+scripts/build/

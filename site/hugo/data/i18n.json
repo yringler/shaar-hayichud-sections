@@ -6,6 +6,7 @@
       "texts": "Texts",
       "classes": "Classes",
       "outlines": "Outlines",
+      "search": "Search",
       "about": "About"
     }
   },
@@ -16,6 +17,7 @@
       "texts": "טקסטים",
       "classes": "שיעורים",
       "outlines": "תקצירי שיעורים",
+      "search": "חיפוש",
       "about": "אודות"
     }
   }

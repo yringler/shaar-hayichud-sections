@@ -1225,3 +1225,123 @@ button.deep-play:focus-visible {
   font-weight: 600;
   box-shadow: inset 3px 0 0 #c08a2e;
 }
+
+/* ── Search (/search/, search.js) ── */
+/* The line or transcript paragraph a link (a search result) points at. */
+.line:target,
+.tseg:target {
+  background: #fdf3d8;
+  box-shadow: 0 0 0 0.15em #fdf3d8;
+  border-radius: 2px;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+}
+
+.search-form input[type='search'] {
+  flex: 1 1 16rem;
+  min-inline-size: 0;
+  font: inherit;
+  font-size: 1.05rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d4cfc8;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.search-form select,
+.search-form button,
+.search-more {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid #3d5a80;
+  border-radius: 8px;
+  background: #fff;
+  color: #3d5a80;
+  max-inline-size: 100%;
+}
+
+.search-form button,
+.search-more { cursor: pointer; }
+
+.search-form button:hover,
+.search-more:hover {
+  background: #3d5a80;
+  color: #fff;
+}
+
+.search-about,
+.search-status {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: #7a7a98;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.search-result {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #e8e4df;
+  overflow-wrap: anywhere;
+}
+
+.search-result-link {
+  display: block;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.search-result-link:hover .search-title { color: #3d5a80; text-decoration: underline; }
+
+.search-kind {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #7a7a98;
+  border: 1px solid #ddd8d2;
+  border-radius: 4px;
+  padding: 0 0.35em;
+  vertical-align: 0.1em;
+}
+
+.search-result.is-text .search-kind,
+.search-result.is-translation .search-kind { color: #7a5a1e; border-color: #e3cf9f; }
+
+.search-title { font-weight: 600; }
+
+.search-context {
+  display: block;
+  font-size: 0.85rem;
+  color: #7a7a98;
+}
+
+.search-snippet {
+  margin: 0.4rem 0 0;
+  line-height: 1.6;
+}
+
+.search-snippet[lang='he'] { font-size: 1.1rem; }
+
+.search-result mark {
+  background: #fdf3d8;
+  color: inherit;
+  border-radius: 2px;
+  box-shadow: 0 0 0 0.1em #fdf3d8;
+}
+
+.search-more { margin-block-start: 1rem; }

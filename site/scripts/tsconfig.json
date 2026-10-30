@@ -1,0 +1,18 @@
+{
+  "//": "Compiles scripts/search-index.ts (and the search/text.ts and audio/model.ts it shares with the browser) to scripts/build/ for Node, with ../data/tools' TypeScript: yarn search-index runs it. Compiled rather than run as .ts so the deploy does not depend on Node's type stripping.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rewriteRelativeImportExtensions": true,
+    "rootDir": "..",
+    "outDir": "build",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+    "typeRoots": ["../../data/tools/node_modules/@types"],
+    "types": ["node"]
+  },
+  "files": ["search-index.ts"]
+}

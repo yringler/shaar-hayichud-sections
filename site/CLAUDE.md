@@ -9,21 +9,22 @@ Static site for chapters of Shaar Hayichud with labeled subsections, plus audio 
 ## Tech Stack
 
 - **Hugo** — static site generator (Go templates)
-- **Yarn 4** — package manager (epub script; `yarn build` also installs and runs `../data/tools`)
-- **TypeScript** for the audio scripts (`hugo/assets/js/`), bundled by Hugo's built-in `js.Build` (esbuild); type-checked with `../data/tools`' TypeScript, so the site has no JS dependencies of its own
+- **Yarn 4** (PnP) — package manager (epub script; `yarn build` also installs and runs `../data/tools`)
+- **TypeScript** for the browser scripts (`hugo/assets/js/`), bundled by Hugo's built-in `js.Build` (esbuild); type-checked with `../data/tools`' TypeScript. The site's only build dependency is **Pagefind** (pinned, see Search), for the search index
 
 ## Commands
 
 ```bash
 yarn data     # Validate ../data and generate ../data/dist/v1 (run by build/serve)
-yarn build    # data + Hugo build → hugo/public/ (minified)
-yarn serve    # data + Hugo dev server with live reload
-yarn test     # Unit tests (lib/json-renderer.js, the audio model) + typecheck of hugo/assets/js
+yarn build    # data + Hugo build → hugo/public/ (minified) + yarn search-index
+yarn serve    # data + Hugo dev server with live reload (no search index; see Search)
+yarn search-index  # compile scripts/search-index.ts (tsc → scripts/build/) and write hugo/public/pagefind/
+yarn test     # Unit tests (lib/json-renderer.js, the audio model, search text) + typecheck of hugo/assets/js and scripts/search-index.ts
               #   (typecheck needs ../data/tools installed: yarn data does it)
 yarn test:e2e [dir]  # OPT-IN browser test of the audio features on hugo/public (run yarn build
               #   first; needs Playwright with Chromium and ffmpeg): chapter pages, transcript pages,
               #   class lists (lesson text, reader, topics, Autoplay next), topic deep links,
-              #   the outlines pages (all their links checked in the built HTML) and the site nav.
+              #   the outlines pages (all their links checked in the built HTML), the site nav and search.
               #   Screenshots go to [dir].
               #   Under Yarn PnP Playwright may not resolve: run it as
               #   NODE_PATH=$(npm root -g) node scripts/e2e-audio.cjs [dir]
@@ -47,16 +48,19 @@ These are dashboard settings (Pages project → Settings → Builds); a Pages Wr
 ```
 hugo/
   hugo.toml        # Hugo config: baseURL, params, module mounts (see below)
-  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes, outlines)
+  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes, outlines); search/_index.md
   data/i18n.json   # nav label translations (en/he)
   layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog,
                    #   classes-url, format-time, class-track, part-nav, audio/, outlines/; see Hugo partials)
-  assets/js/       # entry points play.ts, follow.ts, classes.ts, outlines.ts; shared audio/model.ts (pure, unit tested),
-                   #   audio/store.ts (localStorage), audio/player.ts (playAt/seekOnPlay, scrolling helpers)
-                   #   (see Class lists, Audio on chapter pages, Outlines pages)
+  assets/js/       # entry points play.ts, follow.ts, classes.ts, outlines.ts, search.ts; shared audio/model.ts (pure, unit tested),
+                   #   audio/store.ts (localStorage), audio/player.ts (playAt/seekOnPlay, scrolling helpers),
+                   #   search/text.ts + search/glossary.ts (pure, shared with the indexer, unit tested)
+                   #   (see Class lists, Audio on chapter pages, Outlines pages, Search)
   static/          # CNAME, _headers, texts/index.json
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
+lib/search-text.test.mjs  # unit tests for hugo/assets/js/search/text.ts
+scripts/search-index.ts   # yarn search-index (Search); scripts/tsconfig.json compiles it to scripts/build/ (git-ignored)
 scripts/e2e-audio.cjs # yarn test:e2e
 epub/build-epub.mjs   # generates dist/shaar-hayichud.epub from ../data/chapters
 ```
@@ -91,7 +95,7 @@ The class catalog generates more:
 
 ## Site nav
 
-`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) shows in both languages and always links the English `/outlines/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
+`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, Search, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) and Search (`חיפוש`) show in both languages and always link the English `/outlines/` and `/search/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
 
 ## Hugo partials
 
@@ -159,6 +163,18 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - Build failures: two parts or chapters on one page with the same anchor (or an empty one), and a lecture missing from `audio/lectures.html` (its links would have no target).
 - Wide screens (≥ 64rem): the body widens to 72rem (`body:has(.outlines-layout)`) for a sticky side nav (`nav.outlines-nav`) listing parts → chapters. Narrow screens hide it and show the same list (`partials/outlines/nav.html`) in a "Jump to" `<details>` at the top.
 - `outlines.js` (`assets/js/outlines.ts`): Expand all / Collapse all, and the part crossing the top 30% of the viewport gets `aria-current="location"` in the side nav (IntersectionObserver; the first part until one gets there). It opens nothing on load, also when the URL names a part.
+
+## Search
+
+`/search/` (`content/search/_index.md`, `layouts/search/list.html`, `search.js` from `assets/js/search.ts`) searches a [Pagefind](https://pagefind.app) index that `yarn build` writes to `hugo/public/pagefind/` after Hugo (`yarn search-index`). There is no server: Pagefind's `pagefind.js` loads only the index chunks and result fragments a query needs (about 70–200 KB per search).
+
+- **What is indexed**: the search page writes `/search/manifest.json` (the chapter and translation pages, and every published transcript with its transcript page, part page and box anchor from `audio/lectures.html`). `scripts/search-index.ts` reads it, takes the text from the published copies in the same output (`texts/<chapter>.json`, `data/v1/transcripts/`, `data/v1/outlines/`), so search covers exactly what `audio-publish.json` publishes, adds Pagefind custom records and deletes the manifest. `yarn serve` has no index: the page says search is unavailable.
+- **Records**: one per chapter section with lines of its own, one per translated section, one per `PARAGRAPHS_PER_RECORD` (3) transcript paragraphs, one per class outline. Each record's `meta.parts` is JSON `[[href, time, text], …]` (a line `<chapter page>#<line id>`, a paragraph `<transcript page>#t<N>`, a topic deep link `<part page>?t=<int>#<anchor>`); `search.ts` links and shows the first part with a marked word. Grouping keeps the file count down: Pagefind writes one fragment file per record, and Cloudflare Pages allows 20,000 files per deployment (the site is about 6,800 with the index). Filters: `in` (`Text` / `Classes`) and `teacher` (series title); the page's "Search in" select maps to them (`s<series id>` options carry `data-teacher`), and `?q=&in=` are kept in the URL (`replaceState`).
+- **Pagefind is pinned to 1.4.0.** 1.5 also searches every meta field, which would match the stored display text and the URLs in `meta.parts` (a class's slug would find all its records). Check that before upgrading.
+- **Hebrew** (`assets/js/search/text.ts`, shared by indexer and page; unit tested): `foldWord()` drops quotes, gershayim/geresh (`אבי"ע`, `אבי''ע`, `אבי״ע` all → `אביע`), niqqud and edge punctuation and lowercases. A record's content is its folded words followed by extra tokens: each Hebrew word without up to three prefix letters (`ו ה ב כ ל מ ש ד`, at least two letters left), so `חכמה` finds `ובחכמה`, and the canonical token (the entry's first Hebrew form) of every glossary term in it. `analyzeQuery()` rewrites glossary forms in the query, also behind prefix letters, to their canonical tokens, so `chochmah`, `חכמת` and `בחכמה` search `חכמה`, and `ממלא וסובב` works although Pagefind needs every query word in a record. Display text is never folded: `matcher()` and `snippet()` mark the matching words in the original.
+- **Glossary** (`assets/js/search/glossary.ts`): key terms with their Hebrew spellings and Latin transliterations. Keep the first Hebrew form one word where possible, and leave out transliterations that are ordinary English words (`or`).
+- **Arriving from a result**: `.line:target` / `.tseg:target` get a highlight; on a transcript page play.ts (`seekToHashParagraph()`) arms `seekOnPlay()` to the `#tN` paragraph's start (also on `hashchange`), so the native play starts there. Never autoplays.
+- Pagefind's own fallback: a query word that is in no record matches the longest indexed word it starts with, so a nonsense word can return a few loose results.
 
 ## Audio Classes
 
