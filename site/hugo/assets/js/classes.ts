@@ -25,6 +25,9 @@
  *   scrolled the page in the last 5 s.
  * - Topic deep links (`?t=<seconds>#class-<id>`): open that box's topics,
  *   select the topic and offer a focused "Play from" button (never autoplay).
+ * - While a lesson plays, the URL's fragment is its current line id
+ *   (replaceState). Arriving with one, the first box that aligns that line
+ *   is shown, its lesson text scrolled to the line, with a "Play from" button.
  *
  * Without JavaScript the boxes keep their plain player, the scrollable text
  * and links to the chapter pages.
@@ -32,6 +35,7 @@
 import {
   deepLinkTarget,
   formatTime,
+  hashId,
   parseDeepLink,
   scrollToShow,
   spanAt,
@@ -39,7 +43,7 @@ import {
   topicAt,
   type Span,
 } from './audio/model.ts';
-import { playAt, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
+import { playAt, replaceHash, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
 import { autoplayNext, markPlaying } from './audio/store.ts';
 
 const CURRENT_CLASS = 'is-discussing';
@@ -136,7 +140,12 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
     }
     const el = span ? previewLine(span.keys[0]!) : null;
     if (el && !audio.paused && quiet()) showIn(preview, el, smoothScroll());
-    if (!audio.paused) reader.follow(lesson);
+    if (audio.paused) return;
+    reader.follow(lesson);
+    // The playing line in the URL (#<line id>, no history entry). On every
+    // update, not only when the line changes: closing the reader goes back
+    // to the entry before it, whose URL has the earlier fragment.
+    if (span) replaceHash(span.keys[0]!);
   };
   for (const ev of ['timeupdate', 'seeked', 'play'] as const) audio.addEventListener(ev, update);
 
@@ -535,11 +544,11 @@ function deepPlayButton(audio: HTMLAudioElement, seek: number): HTMLButtonElemen
  * button seeks there too on its first play (seekOnPlay(), which any
  * playAt() cancels). `t` is then dropped from the URL. Never autoplays.
  */
-function initDeepLinks(topics: ReadonlyMap<HTMLElement, Topics>): void {
+function initDeepLinks(topics: ReadonlyMap<HTMLElement, Topics>, lessons: ReadonlyMap<HTMLAudioElement, Lesson>): void {
   const go = (arrival: boolean) => {
     const { boxId, t } = parseDeepLink(window.location.search, window.location.hash);
     const box = boxId === null ? null : document.getElementById(boxId);
-    if (!box?.classList.contains('track')) return;
+    if (!box?.classList.contains('track')) return goLine(arrival);
     const list = topics.get(box);
     list?.open();
     const audio = box.querySelector<HTMLAudioElement>('audio');
@@ -563,6 +572,35 @@ function initDeepLinks(topics: ReadonlyMap<HTMLElement, Topics>): void {
     show();
     // The browser's own fragment navigation on load runs after this script
     // and moves focus to the body (the box is not focusable): do it again then.
+    if (arrival && document.readyState !== 'complete') {
+      window.addEventListener('load', () => window.setTimeout(show, 0), { once: true });
+    }
+  };
+  /**
+   * `#<line id>` (written by a lesson while it plays): the first box whose
+   * class aligns that line (a line can be in several), scrolled into view
+   * with its lesson text at the line; on arrival, a focused "Play from"
+   * button and the native play button's first play start there.
+   */
+  const goLine = (arrival: boolean) => {
+    const id = hashId(window.location.hash);
+    if (!id) return;
+    const lesson = [...lessons.values()].find((l) => l.times.has(id));
+    const line = lesson?.preview.querySelector<HTMLElement>(`.line[data-line="${CSS.escape(id)}"]`);
+    if (!lesson || !line) return;
+    const start = lesson.times.get(id)!.start;
+    let button: HTMLButtonElement | null = null;
+    if (arrival) {
+      button = deepPlayButton(lesson.audio, start);
+      lesson.player.after(button);
+      seekOnPlay(lesson.audio, start);
+    }
+    const show = () => {
+      lesson.box.scrollIntoView({ block: 'start' });
+      showIn(lesson.preview, line, 'auto');
+      button?.focus({ preventScroll: true });
+    };
+    show();
     if (arrival && document.readyState !== 'complete') {
       window.addEventListener('load', () => window.setTimeout(show, 0), { once: true });
     }
@@ -596,7 +634,7 @@ function init(): void {
   }
   initAutoplay(boxes, lessons, reader);
   // After initAutoplay: it unhides the topic lists, which moves the boxes.
-  initDeepLinks(topics);
+  initDeepLinks(topics, lessons);
 }
 
 init();

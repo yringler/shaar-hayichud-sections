@@ -32,7 +32,7 @@ import {
   type Topic,
   type Transcript,
 } from './audio/model.ts';
-import { playAt, scrollWatcher, smoothScroll } from './audio/player.ts';
+import { playAt, replaceHash, scrollWatcher, smoothScroll } from './audio/player.ts';
 import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
@@ -594,22 +594,35 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   });
 
   const spanCache = new Map<number, Span[]>();
+  const spansFor = (src: string): Span[] => {
+    const i = lectureOfSrc(src);
+    if (i === null || !data) return [];
+    let s = spanCache.get(i);
+    if (!s) {
+      s = spans(lectureItems(data, i));
+      spanCache.set(i, s);
+    }
+    return s;
+  };
+
+  // ---- the line under discussion in the URL (#<line id>, no history entry) ----
+  // Whether or not Follow along is on; kept when playback pauses or stops, so
+  // a reload or a copied link lands on that line.
+  const showLineInUrl = () => {
+    if (audio.paused) return;
+    const span = spanAt(spansFor(audio.getAttribute('src') || audio.currentSrc), audio.currentTime);
+    const id = span?.keys.find((k) => document.getElementById(k)?.classList.contains('line'));
+    if (id) replaceHash(id);
+  };
+  for (const ev of ['timeupdate', 'seeked', 'play'] as const) audio.addEventListener(ev, showLineInUrl);
+
   return {
     setFollowing(on: boolean) {
       following = on;
       void dataReady.then(() => showOutline());
       if (on) updatePane(true);
     },
-    spansFor(src: string): Span[] {
-      const i = lectureOfSrc(src);
-      if (i === null || !data) return [];
-      let s = spanCache.get(i);
-      if (!s) {
-        s = spans(lectureItems(data, i));
-        spanCache.set(i, s);
-      }
-      return s;
-    },
+    spansFor,
     onSourceChange(fn: () => void) {
       listeners.push(fn);
     },
