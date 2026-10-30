@@ -985,3 +985,43 @@ html.reader-open { overflow: hidden; }
   .reader:not([hidden]) { animation: reader-in 0.2s ease-out; }
   @keyframes reader-in { from { transform: translateY(1.5rem); opacity: 0; } }
 }
+
+/* Topic deep links (classes.ts) */
+/* ?t=…#class-…: the box clears the top edge when scrolled to, the linked
+   topic is highlighted, and a "▶ Play from m:ss" pill (like a.audio-link)
+   sits under the player. */
+.track { scroll-margin-block-start: 1rem; }
+
+button.deep-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  margin-block-end: 0.5rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button.deep-play:hover {
+  background: #3d5a80;
+  color: #fff;
+}
+
+button.deep-play:focus-visible {
+  outline: 2px solid #3d5a80;
+  outline-offset: 2px;
+}
+
+.listen-topics li.is-selected button {
+  background: #f5efe3;
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 #c08a2e;
+}

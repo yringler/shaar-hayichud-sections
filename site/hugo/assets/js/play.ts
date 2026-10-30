@@ -32,6 +32,7 @@ import {
   type Topic,
   type Transcript,
 } from './audio/model.ts';
+import { playAt, scrollWatcher, smoothScroll } from './audio/player.ts';
 import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
@@ -43,11 +44,6 @@ const SERIES_KEY = 'shaarHayichud.audio.series';
 const TEACHER_PARAM = 'teacher';
 /** localStorage key of Follow along on/off ("on" / "off"), shared by chapter and transcript pages. */
 const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
-/** No automatic scrolling of the transcript region for this long after the reader scrolls it. */
-const USER_SCROLL_QUIET_MS = 5000;
-
-const smoothScroll = (): ScrollBehavior =>
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 function init(panel: HTMLElement): void {
   const audio = panel.querySelector<HTMLAudioElement>('[data-listen-audio]');
@@ -240,20 +236,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     syncControls(lecture);
     if (autoplayAt === null) return;
     activate();
-    const seekTo = autoplayAt;
-    if (audio.readyState >= 1) {
-      audio.currentTime = seekTo;
-    } else {
-      // Not loaded yet: seek as soon as the duration is known.
-      audio.addEventListener(
-        'loadedmetadata',
-        () => {
-          audio.currentTime = seekTo;
-        },
-        { once: true },
-      );
-    }
-    void audio.play().catch(() => undefined);
+    void playAt(audio, autoplayAt);
   };
 
   /** The reader's saved teacher (possibly not on this chapter). */
@@ -420,7 +403,8 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   let paneSpans: Span[] = [];
   let paneParas: HTMLElement[] = [];
   let paneSpan: Span | null = null;
-  let lastPaneScroll = 0;
+  /** The reader has not scrolled the region for a while (see scrollWatcher()). */
+  const paneQuiet = pane ? scrollWatcher(pane) : () => true;
 
   const loadTranscript = (path: string): Promise<Transcript | null> => {
     let p = transcripts.get(path);
@@ -450,7 +434,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     } else if (!reposition) return;
     const el = span ? paneParas[Number(span.keys[0])] : undefined;
     if (!el) return;
-    const auto = following && !audio.paused && Date.now() - lastPaneScroll > USER_SCROLL_QUIET_MS;
+    const auto = following && !audio.paused && paneQuiet();
     if (!reposition && !auto) return;
     const top = el.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop;
     const to = scrollToShow(pane.scrollTop, pane.clientHeight, top, el.offsetHeight);
@@ -535,14 +519,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     }
     showNote(null);
     setLecture(paneLecture, Number(p.dataset['start']));
-  });
-  const markPaneScroll = () => {
-    lastPaneScroll = Date.now();
-  };
-  pane?.addEventListener('wheel', markPaneScroll, { passive: true });
-  pane?.addEventListener('touchmove', markPaneScroll, { passive: true });
-  pane?.addEventListener('keydown', (e) => {
-    if (['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '].includes(e.key)) markPaneScroll();
   });
   audio.addEventListener('timeupdate', () => updatePane(false));
   audio.addEventListener('seeked', () => updatePane(false));

@@ -8,10 +8,12 @@ import assert from "node:assert/strict";
 import {
   chapterSeries,
   chooseSeries,
+  deepLinkTarget,
   DEFAULT_SERIES_ID,
   formatTime,
   lectureItems,
   nextInSeries,
+  parseDeepLink,
   rankRefs,
   scrollToShow,
   segmentItems,
@@ -201,4 +203,52 @@ test("formatTime", () => {
   assert.equal(formatTime(0), "0:00");
   assert.equal(formatTime(75.9), "1:15");
   assert.equal(formatTime(3725), "1:02:05");
+});
+
+test("parseDeepLink: the class box id from the hash and t in whole seconds", () => {
+  assert.deepEqual(parseDeepLink("?t=95", "#class-016-tape001-side2-ch1.mp3"), {
+    boxId: "class-016-tape001-side2-ch1.mp3",
+    t: 95,
+  });
+  // Percent-encoded hash; other parameters around t.
+  assert.deepEqual(parseDeepLink("?teacher=X&t=7&x=1", "#class-a%20b"), { boxId: "class-a b", t: 7 });
+  assert.deepEqual(parseDeepLink("?t=95.9", "#class-x"), { boxId: "class-x", t: 95 });
+  assert.deepEqual(parseDeepLink("?t=0", "#class-x"), { boxId: "class-x", t: 0 });
+  // No t, empty, NaN or negative t.
+  assert.deepEqual(parseDeepLink("", "#class-x"), { boxId: "class-x", t: null });
+  assert.deepEqual(parseDeepLink("?t=", "#class-x"), { boxId: "class-x", t: null });
+  assert.deepEqual(parseDeepLink("?t=abc", "#class-x"), { boxId: "class-x", t: null });
+  assert.deepEqual(parseDeepLink("?t=NaN", "#class-x"), { boxId: "class-x", t: null });
+  assert.deepEqual(parseDeepLink("?t=-5", "#class-x"), { boxId: "class-x", t: null });
+  assert.deepEqual(parseDeepLink("?t=Infinity", "#class-x"), { boxId: "class-x", t: null });
+  // Not a class box, no hash, malformed escape.
+  assert.deepEqual(parseDeepLink("?t=5", "#intro"), { boxId: null, t: 5 });
+  assert.deepEqual(parseDeepLink("?t=5", ""), { boxId: null, t: 5 });
+  assert.deepEqual(parseDeepLink("", "#class-%E0%A4"), { boxId: "class-%E0%A4", t: null });
+});
+
+test("deepLinkTarget: the last topic whose floored start is <= t; its exact start when t names it", () => {
+  const topics = [
+    { title: "A", startSeconds: 12.4, confidence: "HIGH" },
+    { title: "B", startSeconds: 95.68, confidence: "HIGH" },
+    { title: "C", startSeconds: 300, confidence: "MEDIUM" },
+  ];
+  const at = (t) => {
+    const r = deepLinkTarget(topics, t);
+    return r && [r.topic.title, r.seek];
+  };
+  // The link a topic produces (floored start) plays from its exact start.
+  assert.deepEqual(at(95), ["B", 95.68]);
+  assert.deepEqual(at(12), ["A", 12.4]);
+  assert.deepEqual(at(300), ["C", 300]);
+  // Between topics: the one under way, from t.
+  assert.deepEqual(at(96), ["B", 96]);
+  assert.deepEqual(at(94), ["A", 94]);
+  // Before the first topic: the first one is selected, playing from t.
+  assert.deepEqual(at(0), ["A", 0]);
+  assert.deepEqual(at(11), ["A", 11]);
+  // Past the end: the last topic, from t.
+  assert.deepEqual(at(99999), ["C", 99999]);
+  // No topics.
+  assert.equal(deepLinkTarget([], 95), null);
 });

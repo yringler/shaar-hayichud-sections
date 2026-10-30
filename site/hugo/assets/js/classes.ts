@@ -23,45 +23,32 @@
  *   class, it moves on to the next lesson (or closes when that one has no
  *   text); otherwise the next box is scrolled into view, unless the reader
  *   scrolled the page in the last 5 s.
+ * - Topic deep links (`?t=<seconds>#class-<id>`): open that box's topics,
+ *   select the topic and offer a focused "Play from" button (never autoplay).
  *
  * Without JavaScript the boxes keep their plain player, the scrollable text
  * and links to the chapter pages.
  */
-import { formatTime, scrollToShow, spanAt, spans, topicAt, type Span } from './audio/model.ts';
+import {
+  deepLinkTarget,
+  formatTime,
+  parseDeepLink,
+  scrollToShow,
+  spanAt,
+  spans,
+  topicAt,
+  type Span,
+} from './audio/model.ts';
+import { playAt, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
 import { autoplayNext, markPlaying } from './audio/store.ts';
 
-/** No automatic scrolling of a scroll region for this long after the reader scrolls it. */
-const USER_SCROLL_QUIET_MS = 5000;
 const CURRENT_CLASS = 'is-discussing';
-const SCROLL_KEYS = ['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '];
-
-const smoothScroll = (): ScrollBehavior =>
-  window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 /** A click meant to play: not part of a text selection or a double-click, not on a link. */
 const isPlainClick = (e: MouseEvent): boolean => {
   const sel = window.getSelection();
   return !(sel && !sel.isCollapsed) && e.detail <= 1 && !(e.target as Element).closest('a');
 };
-
-/**
- * Tracks the last time the reader scrolled `el` (wheel, touch or keys),
- * ignoring events inside `ignore` (regions that scroll on their own).
- * Returns whether that was long enough ago for automatic scrolling.
- */
-function scrollWatcher(el: HTMLElement | Window, ignore?: string): () => boolean {
-  let last = 0;
-  const mark = (e: Event) => {
-    if (ignore && e.target instanceof Element && e.target.closest(ignore)) return;
-    last = Date.now();
-  };
-  el.addEventListener('wheel', mark, { passive: true });
-  el.addEventListener('touchmove', mark, { passive: true });
-  el.addEventListener('keydown', (e) => {
-    if (SCROLL_KEYS.includes((e as KeyboardEvent).key)) mark(e);
-  });
-  return () => Date.now() - last > USER_SCROLL_QUIET_MS;
-}
 
 /** scrollTo inside `region` (never the page) so `el` is in view; see scrollToShow(). */
 function showIn(region: HTMLElement, el: HTMLElement, behavior: ScrollBehavior): void {
@@ -102,26 +89,6 @@ interface Lesson {
   spans: Span[];
   /** Highlighted span; null when none. */
   current: Span | null;
-}
-
-/** Plays from `at`; resolves false when the browser refuses to start (autoplay policy). */
-function play(audio: HTMLAudioElement, at: number): Promise<boolean> {
-  if (audio.readyState >= 1) {
-    audio.currentTime = at;
-  } else {
-    // Not loaded yet: seek as soon as the duration is known.
-    audio.addEventListener(
-      'loadedmetadata',
-      () => {
-        audio.currentTime = at;
-      },
-      { once: true },
-    );
-  }
-  return audio.play().then(
-    () => true,
-    () => false,
-  );
 }
 
 function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
@@ -177,10 +144,10 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
   preview.addEventListener('click', (e) => {
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-start]');
-    if (button) return void play(audio, Number(button.dataset['start']));
+    if (button) return void playAt(audio, Number(button.dataset['start']));
     const line = target.closest<HTMLElement>('.line.has-audio');
     const t = line && times.get(line.dataset['line']!);
-    if (t && isPlainClick(e)) void play(audio, t.start);
+    if (t && isPlainClick(e)) void playAt(audio, t.start);
   });
 
   for (const link of box.querySelectorAll<HTMLAnchorElement>('a[data-lesson-open]')) {
@@ -193,25 +160,62 @@ function initLesson(box: HTMLElement, reader: Reader): Lesson | null {
   return lesson;
 }
 
+/** A box's topic list, as deep links use it. */
+interface Topics {
+  /** Opens the list (its `<details>`). */
+  open(): void;
+  /**
+   * Marks the topic a `?t=` deep link names (deepLinkTarget(): aria-current
+   * and is-selected), shows it in the list and returns where to play from.
+   */
+  select(t: number): number;
+}
+
 /** The box's topic list: each topic plays the class from its start; the one under way is marked. */
-function initTopics(box: HTMLElement): void {
+function initTopics(box: HTMLElement): Topics | null {
   const audio = box.querySelector<HTMLAudioElement>('audio');
-  const list = box.querySelector<HTMLElement>('[data-track-topics]');
-  if (!audio || !list) return;
+  const list = box.querySelector<HTMLDetailsElement>('[data-track-topics]');
+  if (!audio || !list) return null;
   const items = [...list.querySelectorAll<HTMLButtonElement>('button[data-start]')].map((button) => ({
     button,
     startSeconds: Number(button.dataset['start']),
   }));
-  for (const t of items) t.button.addEventListener('click', () => void play(audio, t.startSeconds));
-  let current: (typeof items)[number] | null = null;
-  const update = () => {
-    const t = audio.currentTime > 0 || !audio.paused ? topicAt(items, audio.currentTime) : null;
-    if (t === current) return;
+  if (items.length === 0) return null;
+  type Item = (typeof items)[number];
+  for (const t of items) t.button.addEventListener('click', () => void playAt(audio, t.startSeconds));
+  let current: Item | null = null;
+  /** The deep link's topic (is-selected) until another topic is under way. */
+  let selected: Item | null = null;
+  const setCurrent = (t: Item | null) => {
     current?.button.parentElement?.removeAttribute('aria-current');
     t?.button.parentElement?.setAttribute('aria-current', 'true');
     current = t;
   };
+  const update = () => {
+    const t = audio.currentTime > 0 || !audio.paused ? topicAt(items, audio.currentTime) : null;
+    if (t === current) return;
+    if (t && selected && t !== selected) {
+      selected.button.parentElement?.classList.remove('is-selected');
+      selected = null;
+    }
+    setCurrent(t);
+  };
   for (const ev of ['timeupdate', 'seeked', 'play'] as const) audio.addEventListener(ev, update);
+  return {
+    open() {
+      list.open = true;
+    },
+    select(t: number) {
+      const { topic, seek } = deepLinkTarget(items, t)!; // items is not empty
+      setCurrent(topic);
+      selected = topic;
+      const li = topic.button.parentElement;
+      li?.classList.add('is-selected');
+      const ol = li?.parentElement;
+      if (li && ol) showIn(ol, li, 'auto');
+      return seek;
+    },
+  };
 }
 
 function mark(el: Element | null | undefined, on: boolean): void {
@@ -363,10 +367,10 @@ function createReader(): Reader {
     if (!lesson) return;
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-start]');
-    if (button) return void play(lesson.audio, Number(button.dataset['start']));
+    if (button) return void playAt(lesson.audio, Number(button.dataset['start']));
     const line = target.closest<HTMLElement>('.line.has-audio');
     const t = line && lesson.times.get(line.id);
-    if (t && isPlainClick(e)) void play(lesson.audio, t.start);
+    if (t && isPlainClick(e)) void playAt(lesson.audio, t.start);
   });
 
   const open = async (l: Lesson, page: string, from: HTMLElement) => {
@@ -484,7 +488,7 @@ function initAutoplay(boxes: readonly HTMLElement[], lessons: ReadonlyMap<HTMLAu
       // A class hidden behind the reader (not the docked one) does not move on.
       if (open && open.audio !== e.target) return;
       const focusNext = () => next.box.querySelector<HTMLElement>('a, audio') ?? undefined;
-      void play(next.audio, 0).then((started) => {
+      void playAt(next.audio, 0).then((started) => {
         if (!started) {
           // Refused (autoplay policy): show the next class so it can be started by hand.
           if (reader?.lesson) void reader.close(focusNext()).then(() => reveal(next.box));
@@ -505,6 +509,65 @@ function initAutoplay(boxes: readonly HTMLElement[], lessons: ReadonlyMap<HTMLAu
   );
 }
 
+// ---- Topic deep links: <part page>?t=<T>#class-<lecture id | urlize> ----
+
+/** URL parameter of a topic deep link: the topic's start in whole seconds. */
+const TIME_PARAM = 't';
+
+/** The "▶ Play from m:ss" button a deep link puts under the box's player. */
+function deepPlayButton(audio: HTMLAudioElement, seek: number): HTMLButtonElement {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'audio-link deep-play';
+  b.textContent = `▶ Play from ${formatTime(seek)}`;
+  b.addEventListener('click', () => void playAt(audio, seek));
+  return b;
+}
+
+/**
+ * A `#class-…` hash opens that box's topics and scrolls the box into view
+ * again (the topic lists above it changed height after the browser's own
+ * fragment scroll). On arrival with `?t=`, the topic it names is selected
+ * and a focused "Play from" button plays from there; the native play
+ * button seeks there too on its first play (seekOnPlay(), which any
+ * playAt() cancels). `t` is then dropped from the URL. Never autoplays.
+ */
+function initDeepLinks(topics: ReadonlyMap<HTMLElement, Topics>): void {
+  const go = (arrival: boolean) => {
+    const { boxId, t } = parseDeepLink(window.location.search, window.location.hash);
+    const box = boxId === null ? null : document.getElementById(boxId);
+    if (!box?.classList.contains('track')) return;
+    const list = topics.get(box);
+    list?.open();
+    const audio = box.querySelector<HTMLAudioElement>('audio');
+    let button: HTMLButtonElement | null = null;
+    if (arrival && t !== null && list && audio) {
+      const seek = list.select(t);
+      button = deepPlayButton(audio, seek);
+      (audio.closest('.track-player') ?? audio).after(button);
+      seekOnPlay(audio, seek);
+    }
+    if (arrival && new URLSearchParams(window.location.search).has(TIME_PARAM)) {
+      // Keep the hash, and the history state (createReader() may have reset it).
+      const u = new URL(window.location.href);
+      u.searchParams.delete(TIME_PARAM);
+      window.history.replaceState(window.history.state, '', u);
+    }
+    const show = () => {
+      box.scrollIntoView({ block: 'start' });
+      button?.focus({ preventScroll: true });
+    };
+    show();
+    // The browser's own fragment navigation on load runs after this script
+    // and moves focus to the body (the box is not focusable): do it again then.
+    if (arrival && document.readyState !== 'complete') {
+      window.addEventListener('load', () => window.setTimeout(show, 0), { once: true });
+    }
+  };
+  go(true);
+  window.addEventListener('hashchange', () => go(false));
+}
+
 function init(): void {
   const boxes = [...document.querySelectorAll<HTMLElement>('.track')];
   if (boxes.length === 0) return;
@@ -523,8 +586,14 @@ function init(): void {
     const lesson = reader && initLesson(box, reader);
     if (lesson) lessons.set(lesson.audio, lesson);
   }
-  for (const box of boxes) initTopics(box);
+  const topics = new Map<HTMLElement, Topics>();
+  for (const box of boxes) {
+    const t = initTopics(box);
+    if (t) topics.set(box, t);
+  }
   initAutoplay(boxes, lessons, reader);
+  // After initAutoplay: it unhides the topic lists, which moves the boxes.
+  initDeepLinks(topics);
 }
 
 init();
