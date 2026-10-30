@@ -11,7 +11,9 @@
  * Play from, the native play's seek, a topic click winning over it, a
  * hash-only link), the outlines pages (every link checked against the built
  * HTML, Expand/Collapse all, side nav or "Jump to", a topic link to its
- * class) and the site nav (Outlines, no Translation item).
+ * class), the site nav (Outlines, Search, no Translation item) and search
+ * (/search/ over the Pagefind index: transliterations, prefixes, filters,
+ * links to a transcript paragraph and a chapter line).
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -1591,6 +1593,98 @@ async function check(name, fn) {
       assert.ok(await link.isVisible());
       await link.click();
       await page.waitForURL(`${base}/outlines/`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  // ---------------- search ----------------
+  /** Runs a search on /search/ and returns the status text and the results' kind, href and text. */
+  const searchFor = async (page, q, where = '') => {
+    await page.goto(`${base}/search/?q=${encodeURIComponent(q)}${where ? `&in=${where}` : ''}`);
+    // The count shows before the first results render.
+    await page.waitForFunction(() => {
+      const status = document.querySelector('[data-search-status]')?.textContent ?? '';
+      return status === 'No results.' || (/\d+ results?/.test(status) && document.querySelector('.search-result'));
+    });
+    const status = (await page.textContent('[data-search-status]')) ?? '';
+    const results = await page.$$eval('.search-result', (els) =>
+      els.map((e) => ({
+        kind: [...e.classList].find((c) => c.startsWith('is-'))?.slice(3),
+        href: e.querySelector('a')?.getAttribute('href') ?? '',
+        marks: [...e.querySelectorAll('mark')].map((m) => m.textContent),
+      })),
+    );
+    return { status, results };
+  };
+
+  await check('search: the Search nav item on English and Hebrew pages; the index is built and the manifest removed', async () => {
+    for (const [rel, label] of [['index.html', 'Search'], ['he/index.html', 'חיפוש']]) {
+      const nav = /<nav>([\s\S]*?)<\/nav>/.exec(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'))?.[1] ?? '';
+      assert.match(nav, new RegExp(`<a href="?/search/"?>${label}</a>`), rel);
+    }
+    assert.ok(fs.existsSync(path.join(PUBLIC, 'pagefind', 'pagefind.js')), 'pagefind index (yarn build runs yarn search-index)');
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'search', 'manifest.json')), 'the indexer deletes the manifest');
+  });
+
+  await check('search: transliterations, prefixes, gershayim and filters; marked words; URL kept', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      const translit = await searchFor(page, 'chochmah');
+      const hebrew = await searchFor(page, 'חכמה');
+      assert.ok(translit.results.length > 0);
+      assert.equal(translit.status, hebrew.status, 'chochmah and חכמה find the same');
+      assert.ok(translit.results.some((r) => r.marks.length > 0), 'matching words are marked');
+      assert.ok(hebrew.results.some((r) => r.marks.some((m) => /[והבכלמשד]חכמה/.test(m ?? ''))), 'prefixed forms are found and marked');
+      assert.ok((await searchFor(page, 'אבי"ע')).results.length > 0);
+      assert.ok((await searchFor(page, "אבי''ע")).results.length > 0);
+
+      const text = await searchFor(page, 'מקום פנוי', 'text');
+      assert.ok(text.results.length > 0);
+      for (const r of text.results) {
+        assert.equal(r.kind, 'text');
+        assert.match(r.href, /^\/texts\/chapter-\d+\/#[a-z0-9]+$/);
+      }
+      assert.equal(new URL(page.url()).searchParams.get('in'), 'text');
+
+      const markel = await searchFor(page, 'ממלא וסובב', 's37');
+      assert.ok(markel.results.length > 0, 'a prefixed glossary term in a multi-word query');
+      for (const r of markel.results) assert.match(r.href, /^\/classes\//);
+
+      // Typing updates the results and the URL.
+      await page.fill('#search-q', 'reshimu');
+      await page.waitForFunction(() => new URL(location.href).searchParams.get('q') === 'reshimu');
+      await page.waitForSelector('.search-result');
+      assert.deepEqual(errors, []);
+      await page.screenshot({ path: path.join(shots, 'search.png') });
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('search: a transcript result opens its paragraph (:target) and the player starts there; a text result opens its line', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      const { results } = await searchFor(page, 'reshimu', 'classes');
+      const hit = results.find((r) => r.kind === 'class');
+      assert.ok(hit, 'a transcript result');
+      assert.match(hit.href, /^\/classes\/transcripts\/[^/]+\/#t\d+$/);
+      await page.click(`.search-result a[href="${hit.href}"]`);
+      await page.waitForURL(`${base}${hit.href}`);
+      const start = await page.evaluate(() => Number(document.querySelector('.tseg:target')?.dataset.start));
+      assert.ok(Number.isFinite(start), 'the paragraph is the :target');
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await page.waitForFunction(() => document.querySelector('[data-listen-audio]').currentTime > 0);
+      const t = await page.evaluate(() => document.querySelector('[data-listen-audio]').currentTime);
+      assert.ok(Math.abs(t - start) < 3, `plays from the paragraph (${t} vs ${start})`);
+
+      const text = await searchFor(page, 'צמצום', 'text');
+      const line = text.results[0];
+      assert.ok(line);
+      await page.click('.search-result a');
+      await page.waitForURL(`${base}${line.href}`);
+      assert.ok(await page.evaluate(() => document.querySelector(':target')?.classList.contains('line')));
       assert.deepEqual(errors, []);
     } finally {
       await context.close();

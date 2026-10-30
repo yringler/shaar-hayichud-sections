@@ -1,12 +1,13 @@
 {{- /* The audio scripts, built from assets/js/*.ts by js.Build (esbuild ships
        inside every Hugo build, extended or not) and fingerprinted. Returns
-       dict "play" "follow" "classes" "outlines" (resources). classes.js runs on the
+       dict "play" "follow" "classes" "outlines" "search" (resources). classes.js runs on the
        class lists (lesson text previews and the in-page reader); outlines.js
-       on the series outlines pages. follow.js is never linked directly:
+       on the series outlines pages; search.js on /search/. follow.js is never linked directly:
        play.js imports it when Follow along is turned on. */ -}}
 {{- $opts := dict "format" "esm" "target" "es2020" "minify" true -}}
 {{- $play := resources.Get "js/play.ts" | js.Build (merge $opts (dict "targetPath" "js/play.js")) | fingerprint -}}
 {{- $follow := resources.Get "js/follow.ts" | js.Build (merge $opts (dict "targetPath" "js/follow.js")) | fingerprint -}}
 {{- $classes := resources.Get "js/classes.ts" | js.Build (merge $opts (dict "targetPath" "js/classes.js")) | fingerprint -}}
 {{- $outlines := resources.Get "js/outlines.ts" | js.Build (merge $opts (dict "targetPath" "js/outlines.js")) | fingerprint -}}
-{{- return dict "play" $play "follow" $follow "classes" $classes "outlines" $outlines -}}
+{{- $search := resources.Get "js/search.ts" | js.Build (merge $opts (dict "targetPath" "js/search.js")) | fingerprint -}}
+{{- return dict "play" $play "follow" $follow "classes" $classes "outlines" $outlines "search" $search -}}

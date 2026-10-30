@@ -16,6 +16,7 @@ import {
   chapterSeries,
   chooseSeries,
   formatTime,
+  hashId,
   lectureItems,
   nextInSeries,
   rankRefs,
@@ -32,7 +33,7 @@ import {
   type Topic,
   type Transcript,
 } from './audio/model.ts';
-import { playAt, replaceHash, scrollWatcher, smoothScroll } from './audio/player.ts';
+import { playAt, replaceHash, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
 import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
@@ -72,6 +73,7 @@ function init(panel: HTMLElement): void {
 
   const chapterUrl = panel.dataset['chapterAlignments'];
   const chapter = chapterUrl ? initChapter(panel, audio, chapterUrl, activate) : null;
+  if (!chapter) seekToHashParagraph(audio);
 
   // Follow along
   const followButton = panel.querySelector<HTMLButtonElement>('[data-follow-along]');
@@ -116,6 +118,23 @@ function init(panel: HTMLElement): void {
   });
   // Left on last time: turn it on again (without starting playback).
   if (followButton && readStore(FOLLOW_KEY) === 'on') void setFollow(true, false);
+}
+
+/**
+ * Transcript pages: a fragment naming a paragraph (`#t42`, as search results
+ * link) arms the player to start there on its next play (the browser's own
+ * fragment scroll shows the paragraph; CSS marks it with :target). Never
+ * autoplays.
+ */
+function seekToHashParagraph(audio: HTMLAudioElement): void {
+  const arm = () => {
+    const id = hashId(window.location.hash);
+    const el = id ? document.getElementById(id) : null;
+    const start = Number(el?.dataset['start']);
+    if (el?.closest('[data-transcript]') && Number.isFinite(start)) seekOnPlay(audio, start);
+  };
+  arm();
+  window.addEventListener('hashchange', arm);
 }
 
 /** Transcript pages: paragraphs with data-start / data-end. */

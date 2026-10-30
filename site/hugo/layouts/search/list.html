@@ -1,0 +1,59 @@
+{{ define "main" }}
+  {{- /* /search/: the search form and results (search.js, over the Pagefind
+         index that scripts/search-index.ts builds after Hugo). This page also
+         writes /search/manifest.json, the indexer's list of what to index and
+         where it lives; the indexer deletes it. */ -}}
+  {{- $audio := partialCached "audio/index.html" . "audio" -}}
+  {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
+  {{- $catalog := partial "catalog.html" . -}}
+  {{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
+
+  {{- $chapters := slice -}}
+  {{- range $p := sort (where site.RegularPages "Section" "texts") "Params.chapter_data" -}}
+    {{- with $p.Params.chapter_data -}}{{- $chapters = $chapters | append (dict "key" . "url" $p.RelPermalink "title" $p.Title) -}}{{- end -}}
+  {{- end -}}
+  {{- $translations := slice -}}
+  {{- range $p := sort (where site.RegularPages "Section" "translation") "Params.chapter_data" -}}
+    {{- with $p.Params.chapter_data -}}{{- $translations = $translations | append (dict "key" . "url" $p.RelPermalink "title" $p.Title) -}}{{- end -}}
+  {{- end -}}
+  {{- $list := slice -}}
+  {{- $withTranscripts := slice -}}
+  {{- range $id, $t := $audio.transcripts -}}
+    {{- $info := index $lectures $id -}}
+    {{- if not $info -}}{{- errorf "search: published transcript %q is missing from audio/lectures.html" $id -}}{{- end -}}
+    {{- $list = $list | append (dict
+      "id" $id "title" $info.lecture.title "series" $info.series.title "headings" ($info.headings | default slice)
+      "transcriptUrl" $t.url "partUrl" $info.partUrl "anchor" $info.anchor) -}}
+    {{- $withTranscripts = $withTranscripts | append $info.series.id -}}
+  {{- end -}}
+  {{- with resources.FromString "search/manifest.json" (dict "chapters" $chapters "translations" $translations "lectures" $list | jsonify) -}}
+    {{- .Publish -}}
+  {{- end -}}
+
+  <div class="ltr-content search-page">
+    <h1>{{ .Title }}</h1>
+    <form class="search-form" action="/search/" method="get" role="search" data-search-form>
+      <label class="visually-hidden" for="search-q">Search for</label>
+      <input id="search-q" type="search" name="q" dir="auto" autocomplete="off" spellcheck="false"
+        placeholder="חכמה, tzimtzum, ממלא וסובב…">
+      <label class="visually-hidden" for="search-in">Search in</label>
+      <select id="search-in" name="in">
+        <option value="">Everything</option>
+        <option value="text">The text</option>
+        <option value="classes">All classes</option>
+        {{- range $catalog.series }}{{ if in $withTranscripts .id }}
+        <option value="s{{ .id }}" data-teacher="{{ .title }}">{{ .title }}</option>
+        {{- end }}{{ end }}
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <p class="search-about">Searches the Hebrew text, its translation, the class transcripts and their topics.
+      A Hebrew word also finds it with prefix letters (<bdi>חכמה</bdi> finds <bdi>ובחכמה</bdi>), and key terms
+      match across spellings and transliterations (<i>chochmah</i>, <bdi>מידות</bdi>). The transcripts are
+      machine-made, so a term may be misspelled in them.</p>
+    <p class="search-status" data-search-status aria-live="polite"><noscript>Search needs JavaScript.</noscript></p>
+    <ol class="search-results" data-search-results></ol>
+    <button type="button" class="search-more" data-search-more hidden>More results</button>
+  </div>
+  <script type="module" src="{{ $scripts.search.RelPermalink }}" integrity="{{ $scripts.search.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
