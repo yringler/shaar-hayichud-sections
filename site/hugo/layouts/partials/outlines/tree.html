@@ -1,0 +1,101 @@
+{{- /* The outline of one series, for the outlines pages: its parts in catalog
+       order, each with its classes and chapter headings, and the published
+       topics of every class. Context: a catalog series. Call with
+       partialCached "outlines/tree.html" $series $series.id.
+       Returns dict "classes" "outlined" "topics" (counts) "parts" (slice of
+         dict "title" "anchor" "partUrl" "classes" "outlined" "topics"
+           "items" (slice, catalog order, of
+             dict "lecture" (a class, below) or
+             dict "chapter" "title" "anchor" "classes" (slice of classes)))
+       and a class is dict "lecture" (catalog lecture) "info" (its
+       audio/lectures.html entry) "topics" (audio/outline.html).
+       Parts and chapter headings with no outlined class are left out; a class
+       without an outline inside a kept heading stays (listed plainly).
+       Lectures directly under the series form a last part, "Other classes".
+       The catalog is at most three levels deep (as in audio/lectures.html).
+       Two parts, or two chapters, with the same anchor fail the build. */ -}}
+{{- $series := . -}}
+{{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
+{{- $s := newScratch -}}
+{{- $s.Set "parts" slice -}}
+{{- $s.Set "direct" slice -}}
+{{- $anchors := newScratch -}}
+{{- range $a := $series.items -}}
+  {{- if eq $a.type "lecture" -}}
+    {{- $s.Add "direct" (slice $a) -}}
+  {{- else -}}
+    {{- $partAnchor := $a.title | urlize -}}
+    {{- $items := slice -}}
+    {{- $p := newScratch -}}
+    {{- range $b := $a.items -}}
+      {{- if eq $b.type "lecture" -}}
+        {{- $c := partial "outlines/class.html" $b -}}
+        {{- $p.Add "classes" 1 -}}
+        {{- with $c.topics }}{{ $p.Add "outlined" 1 }}{{ $p.Add "topics" (len .) }}{{ end -}}
+        {{- $items = $items | append (slice (dict "lecture" $c)) -}}
+      {{- else -}}
+        {{- $list := slice -}}
+        {{- $any := false -}}
+        {{- range $l := $b.items -}}
+          {{- if eq $l.type "lecture" -}}
+            {{- $c := partial "outlines/class.html" $l -}}
+            {{- $list = $list | append (slice $c) -}}
+            {{- with $c.topics }}{{ $any = true }}{{ end -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if $any -}}
+          {{- range $list -}}
+            {{- $p.Add "classes" 1 -}}
+            {{- with .topics }}{{ $p.Add "outlined" 1 }}{{ $p.Add "topics" (len .) }}{{ end -}}
+          {{- end -}}
+          {{- $anchor := printf "%s--%s" $partAnchor ($b.title | urlize) -}}
+          {{- $items = $items | append (slice (dict "chapter" true "title" $b.title "anchor" $anchor "classes" $list)) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if $p.Get "outlined" -}}
+      {{- $s.Add "parts" (slice (dict
+        "title" $a.title "anchor" $partAnchor
+        "partUrl" (partial "classes-url.html" (dict "series" $series "part" $a))
+        "classes" ($p.Get "classes") "outlined" ($p.Get "outlined") "topics" ($p.Get "topics")
+        "items" $items)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Lectures directly under the series (their class page is the series page). */ -}}
+{{- with $s.Get "direct" -}}
+  {{- $items := slice -}}
+  {{- $p := newScratch -}}
+  {{- range . -}}
+    {{- $c := partial "outlines/class.html" . -}}
+    {{- $p.Add "classes" 1 -}}
+    {{- with $c.topics }}{{ $p.Add "outlined" 1 }}{{ $p.Add "topics" (len .) }}{{ end -}}
+    {{- $items = $items | append (slice (dict "lecture" $c)) -}}
+  {{- end -}}
+  {{- if $p.Get "outlined" -}}
+    {{- $s.Add "parts" (slice (dict
+      "title" "Other classes" "anchor" "other-classes"
+      "partUrl" (partial "classes-url.html" (dict "series" $series))
+      "classes" ($p.Get "classes") "outlined" ($p.Get "outlined") "topics" ($p.Get "topics")
+      "items" $items)) -}}
+  {{- end -}}
+{{- end -}}
+{{- /* Totals, and unique non-empty anchors (parts and chapters share the page). */ -}}
+{{- $t := newScratch -}}
+{{- range $part := $s.Get "parts" -}}
+  {{- $t.Add "classes" .classes -}}{{- $t.Add "outlined" .outlined -}}{{- $t.Add "topics" .topics -}}
+  {{- $list := slice .anchor -}}
+  {{- range .items }}{{ if .chapter }}{{ $list = $list | append .anchor }}{{ end }}{{ end -}}
+  {{- range $list -}}
+    {{- if or (not .) (hasSuffix . "--") -}}
+      {{- errorf "outlines: a heading in %q (%s) gives an empty anchor" $series.title $part.title -}}
+    {{- end -}}
+    {{- with $anchors.Get . -}}
+      {{- errorf "outlines: two headings in %q share the anchor #%s" $series.title . -}}
+    {{- end -}}
+    {{- $anchors.Set . . -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict
+  "classes" ($t.Get "classes" | default 0) "outlined" ($t.Get "outlined" | default 0) "topics" ($t.Get "topics" | default 0)
+  "parts" ($s.Get "parts") -}}

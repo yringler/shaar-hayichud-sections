@@ -3,6 +3,13 @@
   {{ $strings := index site.Data.i18n $lang }}
   <h1>{{ $strings.nav.texts }}</h1>
 
+  {{- /* The translation has no nav item of its own: it is reached from here. */}}
+  {{ if eq $lang "en" }}
+  <ul class="index-list texts-translation">
+    <li><a href="/translation/">English translation →</a></li>
+  </ul>
+  {{ end }}
+
   <ul class="index-list">
     {{ $chapters := slice }}
     {{ range $key, $val := site.Data.chapters }}

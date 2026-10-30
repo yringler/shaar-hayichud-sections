@@ -11,8 +11,8 @@ body {
   background: #faf9f7;
 }
 
-/* ── Nav ── */
-nav {
+/* ── Nav (the site nav only: other navs style themselves) ── */
+body > nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -24,7 +24,7 @@ nav {
   font-size: 0.95rem;
 }
 
-nav a {
+body > nav a {
   color: #4a4a68;
   text-decoration: none;
   padding: 0.35rem 0.85rem;
@@ -32,7 +32,7 @@ nav a {
   transition: background 0.2s, color 0.2s;
 }
 
-nav a:hover {
+body > nav a:hover {
   background: #eae6e1;
   color: #1a1a2e;
 }
@@ -184,14 +184,17 @@ ul.index-list a:hover {
     hyphens: auto;
   }
 
-  nav {
+  body > nav {
     gap: 0.25rem;
   }
 
-  nav a {
+  body > nav a {
     padding: 0.3rem 0.6rem;
     font-size: 0.85rem;
   }
+
+  .class-toc a,
+  .part-nav a { font-size: 0.85rem; }
 
   ul.index-list a {
     padding: 0.6rem 0.75rem;
@@ -782,10 +785,9 @@ details.index-group > ul.index-list {
 
 /* ── Class lists: quick contents, lesson text, in-page reader ── */
 nav.class-toc {
-  display: block;
-  padding: 0;
   margin-block: 0 1.5rem;
-  border: 0;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
 }
 
 .class-toc ul {
@@ -804,7 +806,10 @@ nav.class-toc {
   border: 1px solid #ddd8d2;
   border-radius: 999px;
   background: #fff;
+  text-decoration: none;
 }
+
+.class-toc a:hover { background: #eae6e1; }
 
 .class-toc .track-count { font-size: 0.8rem; color: #7a7a98; }
 
@@ -815,11 +820,11 @@ nav.class-toc {
 nav.part-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   gap: 0.75rem;
   margin-block: 0 1.5rem;
-  padding: 0;
-  border: 0;
   font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
 }
 
 .ltr-content > nav.part-nav:last-child { margin-block: 2.5rem 0; }
@@ -984,4 +989,199 @@ html.reader-open { overflow: hidden; }
 @media (prefers-reduced-motion: no-preference) {
   .reader:not([hidden]) { animation: reader-in 0.2s ease-out; }
   @keyframes reader-in { from { transform: translateY(1.5rem); opacity: 0; } }
+}
+
+/* Outlines pages */
+/* /outlines/: one card per series. A series page (/outlines/<series>/) is
+   wider than the rest of the site on wide screens, to fit a sticky side nav
+   of its parts and chapters; narrow screens get the "Jump to" disclosure. */
+ul.texts-translation a { border-color: #3d5a80; color: #3d5a80; font-weight: 600; }
+
+.outlines-about { color: #5a5a78; }
+
+.outline-series-card { margin-block: 2.5rem; }
+.outline-series-card h2 { margin-block-end: 0.25rem; }
+
+.outline-series-count,
+.outline-count {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #7a7a98;
+  letter-spacing: 0;
+}
+
+.outline-series-count { margin-block: 0 0.75rem; }
+.outline-count { white-space: nowrap; }
+
+.outlines-nav { display: none; }
+
+.outlines-nav-list,
+.outlines-nav-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.outlines-nav-list a {
+  display: block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  color: #4a4a68;
+  text-decoration: none;
+}
+
+.outlines-nav-list a:hover { background: #f0ece7; color: #1a1a2e; }
+.outlines-nav-list > li { margin-block: 0.35rem; }
+.outlines-nav-list > li > a { font-weight: 600; color: #2d2d4a; }
+.outlines-nav-list ol a { font-size: 0.85em; }
+
+.outlines-jump {
+  margin-block: 1rem 1.5rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fff;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.outlines-jump > summary { cursor: pointer; padding: 0.6rem 1rem; color: #2d2d4a; }
+.outlines-jump[open] > summary { border-block-end: 1px solid #e8e4df; }
+.outlines-jump nav { padding: 0.25rem 0.5rem 0.75rem; }
+
+/* Chapters as a wrapping row under their part, so the list stays short. */
+.outlines-jump .outlines-nav-list ol { display: flex; flex-wrap: wrap; padding-inline-start: 0.5rem; }
+
+.outlines-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block: 0 1rem; }
+.outlines-controls[hidden] { display: none; }
+
+.outlines-controls button {
+  font: inherit;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  cursor: pointer;
+}
+
+.outlines-controls button:hover { background: #3d5a80; color: #fff; }
+.outlines-controls button:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+
+/* Not the site's `section + section` rule: the h2 rule divides parts. */
+section.outline-part,
+section.outline-chapter { padding-block-start: 0; border-block-start: 0; }
+section.outline-part { margin-block: 0; scroll-margin-block-start: 1rem; }
+
+.outline-part h2 {
+  margin-block: 2.5rem 0.25rem;
+  padding-block-end: 0.35rem;
+  border-block-end: 2px solid #e8e4df;
+}
+
+.outline-part-link {
+  margin-block: 0 0.75rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
+/* A chapter heading and its classes, set off from the part's loose classes. */
+section.outline-chapter {
+  margin-block: 1rem;
+  padding-inline-start: 0.85rem;
+  border-inline-start: 2px solid #e8e4df;
+  scroll-margin-block-start: 1rem;
+}
+
+.outline-chapter h3 {
+  margin-block: 0 0.4rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 1.05rem;
+  color: #4a4a68;
+}
+
+details.outline-class,
+.outline-class-plain {
+  margin-block: 0.4rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fff;
+  overflow-wrap: anywhere;
+}
+
+.outline-class-plain { padding: 0.5rem 1rem; }
+
+details.outline-class > summary {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  color: #2d2d4a;
+}
+
+details.outline-class[open] > summary { border-block-end: 1px solid #e8e4df; }
+
+.outline-open { margin: 0.6rem 1rem 0.25rem; }
+
+.outline-topics {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0.5rem 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.outline-topics a {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.outline-topics a:hover { background: #f5efe3; color: #1a1a2e; }
+
+/* The topic's time (class-details.html leaves it without a class). */
+.outline-topics a > span {
+  flex: none;
+  min-inline-size: 3.2em;
+  padding-block-start: 0.1em;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #7a7a98;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 64rem) {
+  body:has(.outlines-layout) { max-width: 72rem; }
+
+  .outlines-layout {
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .outlines-nav {
+    display: block;
+    position: sticky;
+    top: 1rem;
+    max-block-size: calc(100vh - 2rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .outlines-nav a[aria-current] {
+    background: #f0ece7;
+    box-shadow: inset 3px 0 0 #3d5a80;
+  }
+
+  .outlines-jump { display: none; }
 }

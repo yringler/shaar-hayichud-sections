@@ -1,0 +1,29 @@
+{{ define "main" }}
+  {{- /* /outlines/: one card per series page the content adapter made (a
+         series with at least one published outline), in catalog order, with
+         its counts and a link to each part on its outlines page. */ -}}
+  {{ $catalog := partial "catalog.html" . }}
+  <div class="ltr-content outlines-index">
+    <h1>{{ .Title }}</h1>
+    <p class="outlines-about">Auto-generated topic outlines of the classes that have a transcript, series by series.
+      Each topic links to its class on the class page, ready to play from that point.
+      The outlines are machine-made (Sofer.ai): expect rough titles.</p>
+    {{ range sort .RegularPages "Params.seriesIndex" }}
+      {{ $series := index $catalog.series .Params.seriesIndex }}
+      {{ $tree := partialCached "outlines/tree.html" $series $series.id }}
+      {{ $url := .RelPermalink }}
+      <section class="outline-series-card">
+        <h2><a href="{{ $url }}">{{ $series.title }}</a></h2>
+        <p class="outline-series-count">{{ $tree.outlined }} classes · {{ $tree.topics }} topics</p>
+        <ul class="part-list">
+          {{ range $tree.parts }}
+          <li>
+            <a href="{{ $url }}#{{ .anchor }}">{{ .title }}</a>
+            <span class="track-count">{{ .outlined }} classes</span>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </div>
+{{ end }}
