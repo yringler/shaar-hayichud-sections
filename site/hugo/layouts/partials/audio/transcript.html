@@ -47,8 +47,7 @@
   {{- /* Auto-generated topics (outline.schema.json) as headings: a topic goes
          before the first paragraph that starts no more than 5 s before it
          (the last paragraph takes any later ones). */ -}}
-  {{- $topics := slice -}}
-  {{- with index $audio.outlines $id }}{{ $topics = (resources.Get . | transform.Unmarshal).topics }}{{ end -}}
+  {{- $topics := partial "audio/outline.html" $id -}}
   {{- $n := len $data.segments -}}
   <div class="transcript" data-transcript lang="en">
     {{- range $i, $seg := $data.segments }}
@@ -56,7 +55,7 @@
     {{- range $topics }}
       {{- $k := sub .startSeconds 5 }}
       {{- if and (gt $k $lo) (or (eq $i (sub $n 1)) (le $k $seg.startSeconds)) }}
-    <h2 class="topic" data-topic-start="{{ .startSeconds }}">{{ .title }} <span class="topic-time">{{ printf "%d:%02d" (div (int .startSeconds) 60) (mod (int .startSeconds) 60) }}</span></h2>
+    <h2 class="topic" data-topic-start="{{ .startSeconds }}">{{ .title }} <span class="topic-time">{{ partial "format-time.html" .startSeconds }}</span></h2>
       {{- end }}
     {{- end }}
     {{- $sp := $seg.speaker | default "" }}

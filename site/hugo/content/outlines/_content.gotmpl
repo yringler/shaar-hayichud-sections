@@ -1,0 +1,22 @@
+{{- /* Content adapter: one outlines page per series that has at least one
+       published topic outline, at /outlines/<series slug>/ (the same slug as
+       its /classes/ page). Rendered by layouts/outlines/single.html from
+       partials/outlines/tree.html; /outlines/ (layouts/outlines/list.html)
+       lists these pages. */ -}}
+{{- $catalog := partial "catalog.html" . -}}
+{{- range $si, $series := $catalog.series -}}
+  {{- $tree := partialCached "outlines/tree.html" $series $series.id -}}
+  {{- if $tree.outlined -}}
+    {{- $.AddPage (dict
+      "mediaType" "text/html"
+      "path" ($series.title | urlize)
+      "title" (printf "Outlines: %s" $series.title)
+      "kind" "page"
+      "params" (dict
+        "pageLang" "en"
+        "dir" "ltr"
+        "seriesIndex" $si
+      )
+    ) -}}
+  {{- end -}}
+{{- end -}}

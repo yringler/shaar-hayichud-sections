@@ -1,5 +1,7 @@
 {{- /* Content adapter: generates series and part pages from the class catalog
-       (built from the repo's data/classes.txt; see layouts/partials/catalog.html). */ -}}
+       (built from the repo's data/classes.txt; see layouts/partials/catalog.html).
+       Templates link to these pages through partials/classes-url.html, which
+       must build the same slugs (title | urlize) as this file. */ -}}
 {{- $catalog := partial "catalog.html" . -}}
 
 {{- /* Series whose title changed: keep their old URLs working. */ -}}
@@ -19,7 +21,6 @@
       "pageLang" "en"
       "dir" "ltr"
       "seriesIndex" $si
-      "seriesSlug" $seriesSlug
       "layout" "series"
     )
     "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/" $legacy)) slice)
@@ -40,7 +41,6 @@
           "dir" "ltr"
           "seriesIndex" $si
           "partIndex" $pi
-          "seriesSlug" $seriesSlug
         )
         "aliases" (cond (ne $legacy nil) (slice (printf "/classes/%s/%s/" $legacy $partSlug)) slice)
       ) -}}

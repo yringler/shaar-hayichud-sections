@@ -8,6 +8,7 @@
  * list or transcript) does not count: play.ts handles that region itself.
  */
 import { formatTime, spanAt, type Span } from './audio/model.ts';
+import { scrollWatcher, smoothScroll } from './audio/player.ts';
 
 export interface FollowOptions {
   audio: HTMLAudioElement;
@@ -31,15 +32,14 @@ export interface FollowController {
 }
 
 export const CURRENT_CLASS = 'is-discussing';
-/** No automatic scrolling for this long after the reader scrolls. */
-const USER_SCROLL_QUIET_MS = 5000;
 
 export function startFollow(o: FollowOptions): FollowController {
   const { audio } = o;
   let enabled = false;
   let current: Element[] = [];
   let currentSpan: Span | null = null;
-  let lastUserScroll = 0;
+  // The reader has not scrolled the page lately (scrolling inside the panel does not count).
+  const quiet = scrollWatcher(window, '[data-listen]');
 
   // The src attribute changes at once; currentSrc only once the new source loads.
   const srcOf = () => audio.getAttribute('src') || audio.currentSrc;
@@ -75,25 +75,14 @@ export function startFollow(o: FollowOptions): FollowController {
       el.setAttribute('aria-current', 'true');
     }
     const first = current[0];
-    if (first && !audio.paused && Date.now() - lastUserScroll > USER_SCROLL_QUIET_MS && offscreen(first)) {
-      const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      first.scrollIntoView({ block: 'center', behavior: smooth ? 'smooth' : 'auto' });
+    if (first && !audio.paused && quiet() && offscreen(first)) {
+      first.scrollIntoView({ block: 'center', behavior: smoothScroll() });
     }
   };
 
   for (const ev of ['timeupdate', 'seeked', 'play', 'loadedmetadata'] as const) audio.addEventListener(ev, update);
   audio.addEventListener('emptied', () => {
     clear();
-  });
-
-  const markScroll = (e: Event) => {
-    if (e.target instanceof Element && e.target.closest('[data-listen]')) return;
-    lastUserScroll = Date.now();
-  };
-  window.addEventListener('wheel', markScroll, { passive: true });
-  window.addEventListener('touchmove', markScroll, { passive: true });
-  window.addEventListener('keydown', (e) => {
-    if (['PageUp', 'PageDown', 'ArrowUp', 'ArrowDown', 'Home', 'End', ' '].includes(e.key)) markScroll(e);
   });
 
   // Transcript paragraphs: click / Enter seeks there.

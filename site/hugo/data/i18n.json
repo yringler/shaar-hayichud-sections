@@ -5,6 +5,7 @@
       "home": "Shaar Hayichud",
       "texts": "Texts",
       "classes": "Classes",
+      "outlines": "Outlines",
       "about": "About"
     }
   },
@@ -14,6 +15,7 @@
       "home": "שער היחוד",
       "texts": "טקסטים",
       "classes": "שיעורים",
+      "outlines": "תקצירי שיעורים",
       "about": "אודות"
     }
   }

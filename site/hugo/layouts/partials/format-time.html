@@ -1,0 +1,8 @@
+{{- /* Seconds → "h:mm:ss" (an hour or more) or "m:ss": the same output as
+       formatTime() in assets/js/audio/model.ts. Context: seconds (number). */ -}}
+{{- $s := int (math.Max 0 .) -}}
+{{- $h := div $s 3600 -}}
+{{- $m := mod (div $s 60) 60 -}}
+{{- $out := printf "%d:%02d" $m (mod $s 60) -}}
+{{- if $h }}{{ $out = printf "%d:%02d:%02d" $h $m (mod $s 60) }}{{ end -}}
+{{- return $out -}}

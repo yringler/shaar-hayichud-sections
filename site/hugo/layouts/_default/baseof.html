@@ -19,8 +19,10 @@
   <nav>
     <a href="{{ if eq $lang "he" }}/he/{{ else }}/{{ end }}">{{ $strings.nav.home }}</a>
     <a href="{{ if eq $lang "he" }}/he/{{ else }}/{{ end }}texts/">{{ $strings.nav.texts }}</a>
-    {{ if eq $lang "en" }}<a href="/translation/">Translation</a>{{ end }}
     <a href="/classes/">{{ $strings.nav.classes }}</a>
+    {{- /* The outlines are English only: both languages link /outlines/.
+           The translation is linked from the (English) Texts page. */}}
+    <a href="/outlines/">{{ $strings.nav.outlines }}</a>
     <a href="/about/">{{ $strings.nav.about }}</a>
     {{ $otherLang := cond (eq $lang "he") "en" "he" }}
     {{ $otherStrings := index site.Data.i18n $otherLang }}

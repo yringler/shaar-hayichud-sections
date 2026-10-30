@@ -1,0 +1,23 @@
+{{- /* One class on a series outlines page. Context: an outlines/class.html
+       entry. With an outline: a collapsed <details> (title, topic count) with
+       an Open class link to its box and every topic as a deep link
+       (<partUrl>?t=<whole seconds>#<box anchor>; classes.js opens the box's
+       topics and offers Play from there). Without one: the title as a plain
+       link to its box. A topic is "<span>time</span> title"; the page is
+       about 1,000 topics, so the markup is kept lean: the time span has no
+       class (outlines CSS styles it by position), and only titles with
+       Hebrew in them (about 28%) sit in <bdi>. */ -}}
+{{- $info := .info }}
+{{- with .topics }}
+<details class="outline-class">
+  <summary><bdi>{{ $info.lecture.title }}</bdi> <span class="outline-count">{{ len . }} topics</span></summary>
+  <p class="outline-open"><a class="audio-link" href="{{ $info.classUrl }}">Open class</a></p>
+  <ol class="outline-topics">
+    {{- range . }}
+    <li><a href="{{ $info.partUrl }}?t={{ int .startSeconds }}#{{ $info.anchor }}"><span>{{ partial "format-time.html" .startSeconds }}</span> {{ if findRE `[\x{0590}-\x{05FF}]` .title 1 }}<bdi>{{ .title }}</bdi>{{ else }}{{ .title }}{{ end }}</a></li>
+    {{- end }}
+  </ol>
+</details>
+{{- else }}
+<p class="outline-class outline-class-plain"><a href="{{ $info.classUrl }}"><bdi>{{ $info.lecture.title }}</bdi></a> <span class="outline-count">no outline yet</span></p>
+{{- end }}

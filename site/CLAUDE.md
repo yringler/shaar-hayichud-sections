@@ -21,7 +21,10 @@ yarn serve    # data + Hugo dev server with live reload
 yarn test     # Unit tests (lib/json-renderer.js, the audio model) + typecheck of hugo/assets/js
               #   (typecheck needs ../data/tools installed: yarn data does it)
 yarn test:e2e [dir]  # OPT-IN browser test of the audio features on hugo/public (run yarn build
-              #   first; needs Playwright with Chromium and ffmpeg). Screenshots go to [dir].
+              #   first; needs Playwright with Chromium and ffmpeg): chapter pages, transcript pages,
+              #   class lists (lesson text, reader, topics, Autoplay next), topic deep links,
+              #   the outlines pages (all their links checked in the built HTML) and the site nav.
+              #   Screenshots go to [dir].
               #   Under Yarn PnP Playwright may not resolve: run it as
               #   NODE_PATH=$(npm root -g) node scripts/e2e-audio.cjs [dir]
 yarn test:scripts  # Unit tests for scripts/sefaria-swap.py (python3)
@@ -44,10 +47,13 @@ These are dashboard settings (Pages project → Settings → Builds); a Pages Wr
 ```
 hugo/
   hugo.toml        # Hugo config: baseURL, params, module mounts (see below)
-  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes)
+  content/         # section stubs + _content.gotmpl content adapters (texts, he, translation, classes, outlines)
   data/i18n.json   # nav label translations (en/he)
-  layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog, class-track, audio/)
-  assets/js/       # play.ts, follow.ts, classes.ts, audio/model.ts, audio/store.ts (see Class lists, Audio on chapter pages)
+  layouts/         # baseof, per-section list/single layouts, partials (render-textnode, catalog,
+                   #   classes-url, format-time, class-track, part-nav, audio/, outlines/; see Hugo partials)
+  assets/js/       # entry points play.ts, follow.ts, classes.ts, outlines.ts; shared audio/model.ts (pure, unit tested),
+                   #   audio/store.ts (localStorage), audio/player.ts (playAt/seekOnPlay, scrolling helpers)
+                   #   (see Class lists, Audio on chapter pages, Outlines pages)
   static/          # CNAME, _headers, texts/index.json
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
@@ -78,6 +84,23 @@ Each chapter generates 3 pages:
 - `/texts/chapter-N/` — English view
 - `/he/texts/chapter-N/` — Hebrew view
 - `/translation/chapter-N/` — Translation view (only if chapter has translations)
+
+The class catalog generates more:
+- `content/classes/_content.gotmpl`: `/classes/<series>/` and `/classes/<series>/<part>/` (see Audio Classes), and `/classes/transcripts/<slug>/`
+- `content/outlines/_content.gotmpl`: `/outlines/<series>/` for each series with at least one published outline (see Outlines pages); `content/outlines/_index.md` is `/outlines/`
+
+## Site nav
+
+`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) shows in both languages and always links the English `/outlines/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
+
+## Hugo partials
+
+- `catalog.html`: the class catalog (`site.Data.v1.catalog`), failing the build when the data build has not run.
+- `classes-url.html`: the one place that builds class page URLs. `dict "series" $s` → `/classes/<series>/`; with `"part" $p` → `/classes/<series>/<part>/` (slugs: `title | urlize`). `content/classes/_content.gotmpl` creates those pages with its own slugs and must agree with it.
+- `audio/lectures.html` (cached): every catalog lecture by ID with its `series`, `seriesUrl`, `part`, `partUrl` (its class page: the part page, or the series page for a lecture directly under the series), `anchor` (`class-<id | urlize>`, the id of its box) and `classUrl` (`partUrl#anchor`). Use these instead of building class links.
+- `format-time.html`: seconds → `h:mm:ss` or `m:ss`, the same as `formatTime()` in `assets/js/audio/model.ts`. Every time shown by a template goes through it.
+- `audio/outline.html`: a lecture's published topics (`title`, `startSeconds`) or an empty slice. `audio/topics.html`: a class box's collapsed topic list (`details[data-track-topics]`, one `button[data-start]` per topic), used by `class-track.html`.
+- `outlines/tree.html`, `outlines/class.html`, `outlines/class-details.html`, `outlines/nav.html`: the outlines pages (below).
 
 ## Directionality
 
@@ -123,6 +146,20 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - Child sections recursed into (flat HTML output, not nested divs)
 - Translation shown only when page param `showTranslation` is true
 
+## Outlines pages
+
+`/outlines/` (`layouts/outlines/list.html`) introduces the auto-generated topic outlines and has one card per series that has an outlines page: its counts and a link to each of its parts there (`/outlines/<series>/#<part anchor>`).
+
+`/outlines/<series>/` (`layouts/outlines/single.html`, same series slug as `/classes/`) shows the whole series in catalog order, every topic pre-rendered:
+
+- Breadcrumb, `h1` (series title), counts, Expand all / Collapse all (`.outlines-controls`, `data-js-only`).
+- Each part is a `section.outline-part` with an `<h2>` and `id="<part title | urlize>"`, and a link to its class page. Each chapter heading in it is a `section.outline-chapter` with an `<h3>` and `id="<part anchor>--<chapter title | urlize>"`, set off by a side border, so the part's loose classes (outside any heading) are visibly not in a chapter.
+- Each class with an outline is a collapsed `details.outline-class`: the summary has the title and topic count; inside, an "Open class" link to its box (`classUrl`) and an `<ol class="outline-topics">` of topic deep links, `<partUrl>?t=<int startSeconds>#<box anchor>`, each "`<span>time</span> title`". classes.js on the class page opens that box's topics and offers Play from there (see Class lists). The markup is lean on purpose (the Walters page has about 930 topics): the time span has no class, and only titles with Hebrew letters are wrapped in `<bdi>`.
+- `partials/outlines/tree.html` (cached per series) builds the page's model and decides what is shown: parts and chapter headings without any outlined class are left out; a class without an outline in a shown part, loose or inside a shown heading, is listed plainly (title linking to its box, "no outline yet"); lectures directly under the series form a last part, "Other classes" (`#other-classes`). The adapter makes a page only for a series with at least one outline.
+- Build failures: two parts or chapters on one page with the same anchor (or an empty one), and a lecture missing from `audio/lectures.html` (its links would have no target).
+- Wide screens (≥ 64rem): the body widens to 72rem (`body:has(.outlines-layout)`) for a sticky side nav (`nav.outlines-nav`) listing parts → chapters. Narrow screens hide it and show the same list (`partials/outlines/nav.html`) in a "Jump to" `<details>` at the top.
+- `outlines.js` (`assets/js/outlines.ts`): Expand all / Collapse all, and the part crossing the top 30% of the viewport gets `aria-current="location"` in the side nav (IntersectionObserver; the first part until one gets there). It opens nothing on load, also when the URL names a part.
+
 ## Audio Classes
 
 - The source is `../data/classes.txt`. The data build turns it into `catalog.json`, a tree of series → sections → lectures with stable IDs and one canonical `url` per lecture. Hugo never parses `classes.txt` itself.
@@ -135,7 +172,9 @@ Tell the two apart by `children`: a section always has it, a line never does.
 - A part page has previous/next cards (`partials/part-nav.html`, `nav.part-nav`, `rel=prev`/`rel=next`) under its heading and again at the end: the neighbouring part pages of the same series in catalog order (section items only; lectures directly under a series have no part page). The first part has only Next, the last only Previous.
 - A part page with more than one heading starts with a quick contents list (`nav.class-toc`): one pill link per heading (`#<title | urlize>`, the `section.chapter-section` id) with its class count; two headings with the same anchor, or an empty one, fail the build. Each track box has `id="class-<lecture id | urlize>"`.
 - Each aligned class shows the chapter text it reads (`partials/audio/lesson-text.html`): every line from its first aligned line to its last in reading order (`audio/chapter-lines.html` → `audio/flatten-lines.html`, numbered like `render-textnode.html`), per chapter it reads, with `data-start`/`data-end` from the class's own alignment (`alignments/<id>.json`) on aligned lines. The lines carry `data-line`, never `id` (a line can appear in several boxes). The box (`.lesson-text`, `dir=rtl`) is about three phrases tall and scrolls on its own.
-- `classes.js` (`assets/js/classes.ts`, built by `audio/scripts.html`): one class plays at a time; preview lines get a ▶ button and clicking one (or the line text, selection-safe) plays from there; while the class plays, the current line gets `is-discussing` and the box scrolls itself (never the page; quiet 5 s after the reader scrolls it). "Follow in the text" (`a[data-lesson-open]`) opens the in-page reader instead of navigating: a full-screen `role=dialog` that shows the chapter text taken from the chapter page (`[data-aligned-text]`, fetched once per chapter), lines outside the lesson muted, ▶ and click-to-seek on the lesson's aligned lines, the current line marked and kept in view. The class's own `<audio>` stays where it is in the DOM and is docked by CSS together with its Autoplay next toggle (their wrapper, `.track.is-reading .track-player`, `position: fixed`), so playback is never interrupted. While it is open everything but the reader and the docked player is `inert`, so focus stays in the dialog and the player. Opening pushes a history entry (a page loaded on such an entry clears it); ← Back to classes (once, even on a double-click), Esc or the browser's Back close it and return focus to the link. A chapter page that fails to load is fetched again on the next open. A modified click (new tab) still goes to the chapter page.
+- `classes.js` (`assets/js/classes.ts`, built by `audio/scripts.html`): one class plays at a time; preview lines get a ▶ button and clicking one (or the line text, selection-safe) plays from there; while the class plays, the current line gets `is-discussing` and the box scrolls itself (never the page; quiet 5 s after the reader scrolls it). "Follow in the text" (`a[data-lesson-open]`) opens the in-page reader instead of navigating: a full-screen `role=dialog` that shows the chapter text taken from the chapter page (`[data-aligned-text]`, fetched once per chapter), lines outside the lesson muted, ▶ and click-to-seek on the lesson's aligned lines, the current line marked and kept in view. The class's own `<audio>` stays where it is in the DOM and is docked by CSS together with its Autoplay next toggle (their wrapper, `.track.is-reading .track-player`, `position: fixed`), so playback is never interrupted. While it is open everything but the reader and the docked player is `inert`, so focus stays in the dialog and the player. Opening pushes a history entry (a page loaded on such an entry clears it); ← Back to classes (once, even on a double-click), Esc or the browser's Back close it and return focus to the link (focused again in a 0 ms timeout: with a `#class-…` fragment in the URL, Chromium's history traversal moves focus to the body right after `popstate`). A chapter page that fails to load is fetched again on the next open. A modified click (new tab) still goes to the chapter page.
+- Every seek goes through `playAt(audio, t)` (`audio/player.ts`, shared with play.ts): it waits for `loadedmetadata` when the `<audio>` is not loaded yet (`preload=none`) and keeps at most one pending seek per `<audio>` (a WeakMap), so a later `playAt()` cancels an earlier one that is still waiting; it resolves false when the browser refuses to play. `seekOnPlay(audio, t)` arms a seek for the next native play, also cancelled by any `playAt()`. `smoothScroll()` and `scrollWatcher()` (the 5 s quiet after the reader scrolls) live there too; follow.ts uses them as well (its bundle gets its own copy, fine for these stateless helpers, but it cannot see play.js's pending seeks: a transcript paragraph click sets `currentTime` directly).
+- **Topic deep links**: `<part page>?t=<T>#class-<lecture id | urlize>` (`T` = the topic's `startSeconds` floored). On arrival classes.ts (`initDeepLinks()`, after `initAutoplay()` unhides the `[data-js-only]` topic lists) opens the box's topics; with `?t` and topics it selects the last topic whose floored start is ≤ `t`, else the first (`deepLinkTarget()` in `audio/model.ts`; `parseDeepLink()` reads the URL), marks its `<li>` `aria-current` + `is-selected` (kept until another topic is under way), and puts a focused `button.audio-link.deep-play` "▶ Play from m:ss" under the player. It plays from the topic's exact start when `t` names it or is past the last topic's start (the class may be shorter than `t`), else from `t`; the native play button seeks there too on its first play (`seekOnPlay()`). `t` is then dropped from the URL (`history.replaceState(history.state, '', …)`, hash kept). The box is scrolled into view again (`.track` has `scroll-margin-block-start`), and once more after `load`, since the browser's own fragment navigation then moves focus to the body. Never autoplays. Without `?t`, or on a `hashchange` to a `#class-…` box, it only opens the topics and scrolls.
 - **Autoplay next**: a checkbox under each box's `<audio>` (`[data-autoplay-next]`, `data-js-only`), shown only while that box's class plays (`.track.is-playing`, kept by `markPlaying()` in `audio/store.ts`). When on and a class ends, the next box on the page (document order, across headings) plays from the start. If the reader is open on the class that ended, it swaps to the next lesson (`swap()`: same history entry, its player docked), or closes when that class has no lesson text (focus moves to that box). A class hidden behind the reader never autoplays (opening the reader pauses every other class), and when the browser refuses to start the next class (autoplay policy) the reader closes and the box is shown so it can be started by hand. Closing the reader after a swap brings the focused link on screen. Otherwise the next box is scrolled into view (`block: nearest`, smooth unless reduced motion) unless the reader scrolled the page in the last 5 s (scrolling inside a lesson text box or the reader does not count). The page's last class just stops.
 
 ## Audio on chapter pages and transcript pages

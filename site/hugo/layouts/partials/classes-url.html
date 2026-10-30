@@ -1,0 +1,8 @@
+{{- /* URL of a class list page: the series page, or with "part" the page of
+       one of its child sections. Context: dict "series" (catalog series)
+       ["part" (a section directly under it)]. The one place templates build
+       these URLs; content/classes/_content.gotmpl creates the pages with the
+       same slugs (title | urlize) and must agree with it. */ -}}
+{{- $url := printf "/classes/%s/" (.series.title | urlize) -}}
+{{- with .part }}{{ $url = printf "%s%s/" $url (.title | urlize) }}{{ end -}}
+{{- return $url -}}

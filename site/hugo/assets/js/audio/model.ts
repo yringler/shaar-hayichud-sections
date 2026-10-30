@@ -1,7 +1,8 @@
 /**
- * Pure logic shared by play.ts and follow.ts: the published chapter
+ * Pure logic shared by play.ts, follow.ts and classes.ts: the published chapter
  * alignment shape (data/schema/v1/chapter-alignments.schema.json), choosing
- * which class to play for a line, and which line is current at a time.
+ * which class to play for a line, which line is current at a time, and
+ * topic deep links.
  * No DOM access, so it is unit tested directly (site/lib/audio-model.test.mjs).
  */
 
@@ -41,6 +42,49 @@ export function topicAt<T extends Pick<Topic, 'startSeconds'>>(topics: readonly 
     else break;
   }
   return found;
+}
+
+/**
+ * A topic deep link (`<part page>?t=<T>#class-<lecture id | urlize>`): the
+ * track box id from the hash (decoded, only a `class-…` id) and `t`, whole
+ * seconds (fractions dropped). Null for a missing or invalid part.
+ */
+export function parseDeepLink(search: string, hash: string): { boxId: string | null; t: number | null } {
+  let id = hash.replace(/^#/, '');
+  try {
+    id = decodeURIComponent(id);
+  } catch {
+    // Malformed escape: use the hash as it is.
+  }
+  const raw = new URLSearchParams(search).get('t')?.trim() ?? '';
+  const n = raw === '' ? Number.NaN : Number(raw);
+  return {
+    boxId: id.startsWith('class-') ? id : null,
+    t: Number.isFinite(n) && n >= 0 ? Math.floor(n) : null,
+  };
+}
+
+/**
+ * The topic a deep link with `t` (whole seconds) selects and where it plays
+ * from. Links carry the topic's start floored, so the topic is the last one
+ * with floor(startSeconds) <= t (the first when none is), and the seek
+ * target is its exact start when t names it, else t itself. A t past the
+ * last topic's start (the class's length is unknown here, so it may be past
+ * the end) plays from that topic's start instead. Null without topics.
+ */
+export function deepLinkTarget<T extends Pick<Topic, 'startSeconds'>>(
+  topics: readonly T[],
+  t: number,
+): { topic: T; seek: number } | null {
+  let topic = topics[0];
+  if (!topic) return null;
+  for (const x of topics) {
+    if (Math.floor(x.startSeconds) <= t) topic = x;
+    else break;
+  }
+  const start = Math.floor(topic.startSeconds);
+  const pastLast = topic === topics[topics.length - 1] && t > start;
+  return { topic, seek: start === t || pastLast ? topic.startSeconds : t };
 }
 
 export interface Ref {

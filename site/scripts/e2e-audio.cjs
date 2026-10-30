@@ -6,7 +6,12 @@
  * is-discussing border, saved on/off), the transcript region in the docked
  * panel, new-tab transcript links, blocked storage, a transcript page, phone
  * width, pages without audio staying untouched, the class lists (contents,
- * lesson text preview, the in-page reader), and Autoplay next on both.
+ * lesson text preview, the in-page reader, the topic lists), Autoplay next on
+ * both, topic deep links (?t=…#class-…: arrival at desktop and phone width,
+ * Play from, the native play's seek, a topic click winning over it, a
+ * hash-only link), the outlines pages (every link checked against the built
+ * HTML, Expand/Collapse all, side nav or "Jump to", a topic link to its
+ * class) and the site nav (Outlines, no Translation item).
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -1144,6 +1149,393 @@ async function check(name, fn) {
       }
     });
   }
+
+  // ---------------- class page topics and topic deep links ----------------
+  const MARKEL_PART_1 = '/classes/rabbi-markel-series-advanced/part-1-chapters-10-15/';
+
+  await check('class page topics: hidden without JS, shown with it; a topic plays from its start; the current one gets aria-current while playing', async () => {
+    const html = fs.readFileSync(path.join(PUBLIC, decodePath(MARKEL_PART_1), 'index.html'), 'utf8');
+    const lists = [...html.matchAll(/<details [^>]*data-track-topics[^>]*>/g)].map((m) => m[0]);
+    assert.ok(lists.length > 3);
+    for (const d of lists) assert.match(d, /data-js-only hidden/);
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}${MARKEL_PART_1}`);
+      const box = page.locator('.track:has([data-track-topics])').first();
+      const topics = box.locator('details[data-track-topics]');
+      await topics.locator('summary').waitFor();
+      assert.equal(await page.locator('.track [data-track-topics][hidden]').count(), 0);
+      assert.equal(await topics.evaluate((d) => d.open), false);
+      assert.match(await topics.locator('summary').textContent(), /Topics in this class.*auto-generated/);
+      await topics.locator('summary').click();
+      const items = topics.locator('li');
+      assert.ok((await items.count()) >= 3);
+      assert.equal(await topics.locator('li[aria-current]').count(), 0);
+      const start = Number(await items.nth(1).locator('button').getAttribute('data-start'));
+      await items.nth(1).locator('button').click();
+      const audio = await box.locator('audio').elementHandle();
+      await page.waitForFunction(([a, t]) => !a.paused && Math.abs(a.currentTime - t) < 1.5, [audio, start], { timeout: 15000 });
+      await page.waitForTimeout(300);
+      assert.equal(await items.nth(1).getAttribute('aria-current'), 'true');
+      assert.equal(await topics.locator('li[aria-current]').count(), 1);
+      // Playback moves on into the next topic: the mark follows.
+      const next = Number(await items.nth(2).locator('button').getAttribute('data-start'));
+      await audio.evaluate((a, t) => (a.currentTime = t), next + 1);
+      await page.waitForFunction((li) => li.getAttribute('aria-current') === 'true', await items.nth(2).elementHandle());
+      assert.equal(await topics.locator('li[aria-current]').count(), 1);
+      await page.screenshot({ path: path.join(shots, 'classes-topics-desktop.png') });
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  // Topic deep links as the outlines page renders them, grouped by class box.
+  const outlineLinks = (series) => {
+    const html = fs.readFileSync(path.join(PUBLIC, 'outlines', series, 'index.html'), 'utf8');
+    const boxes = new Map();
+    for (const m of html.matchAll(/<a href="?([^" >]*\?t=(\d+)#(class-[^" >]+))"?>/g)) {
+      const href = m[1].replaceAll('&amp;', '&');
+      const box = decodeURIComponent(m[3]);
+      if (!boxes.has(box)) boxes.set(box, []);
+      boxes.get(box).push({ href, path: href.split('?')[0], t: Number(m[2]), box });
+    }
+    return [...boxes.values()];
+  };
+  // A class well down its page (not the first box), with a few topics.
+  const deepBox = outlineLinks('rabbi-markel-series-advanced').filter((links) => links.length >= 4)[4];
+
+  /** Load a deep link; return the box, its topic items and its <audio>, once classes.js is done with the arrival. */
+  async function arrive(page, href) {
+    await page.goto(`${base}${href}`);
+    await page.waitForFunction(() => document.readyState === 'complete');
+    await page.waitForTimeout(300); // the re-scroll and focus after load
+    const box = page.locator(`[id="${new URL(href, base).hash.slice(1)}"]`);
+    return { box, items: box.locator('[data-track-topics] li'), audio: await box.locator('audio').elementHandle() };
+  }
+  const audioAt = (page, audio, t, tol = 1.5) =>
+    page.waitForFunction(([a, t, tol]) => !a.paused && Math.abs(a.currentTime - t) < tol, [audio, t, tol], { timeout: 15000 });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`topic deep link (${name}): topics open, the topic selected, Play from focused, ?t dropped (hash kept), no autoplay; the button plays there`, async () => {
+      assert.ok(deepBox, 'a Markel class with 4+ topics');
+      const k = 2;
+      const link = deepBox[k];
+      const { context, page, errors } = await newPage(browser, base, { context: ctx });
+      try {
+        const { box, items, audio } = await arrive(page, link.href);
+        assert.equal(await box.locator('details[data-track-topics]').evaluate((d) => d.open && !d.hidden), true);
+        assert.equal(await items.nth(k).getAttribute('aria-current'), 'true');
+        assert.equal(await items.nth(k).evaluate((li) => li.classList.contains('is-selected')), true);
+        assert.equal(await box.locator('[data-track-topics] li[aria-current], [data-track-topics] li.is-selected').count(), 1);
+        const start = Number(await items.nth(k).locator('button').getAttribute('data-start'));
+        assert.equal(Math.floor(start), link.t);
+        const time = (await items.nth(k).locator('.listen-topic-time').textContent()).trim();
+        const play = box.locator('button.deep-play');
+        assert.equal(await play.count(), 1);
+        assert.equal((await play.textContent()).trim(), `▶ Play from ${time}`);
+        assert.equal(await page.evaluate(() => document.activeElement?.matches('.track button.deep-play')), true);
+        const url = new URL(page.url());
+        assert.equal(url.pathname, link.path);
+        assert.equal(url.search, '');
+        assert.equal(decodeURIComponent(url.hash.slice(1)), link.box);
+        // The box is on screen, near the top (the topic lists above it opened after the fragment scroll).
+        const top = await box.evaluate((b) => b.getBoundingClientRect().top);
+        assert.ok(top >= -2 && top < 200, `box top at ${top}`);
+        // No autoplay.
+        await page.waitForTimeout(700);
+        assert.deepEqual(await page.$$eval('.track audio', (as) => as.filter((a) => !a.paused || a.currentTime > 0).length), 0);
+        await page.screenshot({ path: path.join(shots, `classes-deep-link-${name}.png`) });
+        // The button plays the class from the topic's exact start.
+        if (name === 'phone') await play.tap();
+        else await page.keyboard.press('Enter');
+        await audioAt(page, audio, start);
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  await check('topic deep link: the native play seeks to the target once; a topic click after arrival wins over the pending seek', async () => {
+    const k = 2;
+    const link = deepBox[k];
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      let { items, audio } = await arrive(page, link.href);
+      const start = Number(await items.nth(k).locator('button').getAttribute('data-start'));
+      // The native controls' play (the same play event): seeks to the topic.
+      await audio.evaluate((a) => a.play());
+      await audioAt(page, audio, start);
+      // Only the first play: later plays continue where the reader is.
+      await audio.evaluate((a) => {
+        a.pause();
+        a.currentTime = 10;
+      });
+      await audio.evaluate((a) => a.play());
+      await page.waitForTimeout(800);
+      await audioAt(page, audio, 10, 2.5);
+
+      // Again from the link, but the reader picks another topic first.
+      ({ items, audio } = await arrive(page, link.href));
+      const other = Number(await items.nth(k + 1).locator('button').getAttribute('data-start'));
+      await items.nth(k + 1).locator('button').click();
+      await audioAt(page, audio, other);
+      await page.waitForTimeout(1000);
+      await audioAt(page, audio, other, 2.5);
+      assert.equal(await items.nth(k + 1).getAttribute('aria-current'), 'true');
+      assert.equal(await items.nth(k).evaluate((li) => li.hasAttribute('aria-current') || li.classList.contains('is-selected')), false);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('a #class-… link without ?t opens the topics and shows the box, selecting nothing; so does a hashchange', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      const { box, audio } = await arrive(page, `${deepBox[0].path}#${deepBox[0].box}`);
+      assert.equal(await box.locator('details[data-track-topics]').evaluate((d) => d.open), true);
+      assert.equal(await page.locator('.deep-play, [data-track-topics] li[aria-current], [data-track-topics] li.is-selected').count(), 0);
+      const top = await box.evaluate((b) => b.getBoundingClientRect().top);
+      assert.ok(top >= -2 && top < 200, `box top at ${top}`);
+      assert.equal(await audio.evaluate((a) => a.paused), true);
+      // Another box on the same page, by hash.
+      const other = await page.evaluate((id) => [...document.querySelectorAll('.track:has([data-track-topics])')].map((b) => b.id).filter((x) => x !== id).at(-1), deepBox[0].box);
+      await page.evaluate((id) => (location.hash = `#${id}`), other);
+      await page.waitForFunction((id) => document.getElementById(id).querySelector('[data-track-topics]').open, other);
+      assert.equal(await page.locator('.deep-play').count(), 0);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('a page loaded with #class-… (with and without ?t): closing the reader with Esc or browser Back returns focus to the link', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}${MARKEL_PART_1}`);
+      // A box well down the page, with lesson text.
+      const id = await page.evaluate(() => [...document.querySelectorAll('.track:has(a[data-lesson-open])')].map((b) => b.id).at(2));
+      assert.ok(id, 'a third box with lesson text');
+      for (const q of ['', '?t=0']) {
+        await page.goto('about:blank'); // a real page load with the hash, not a fragment navigation
+        const { box } = await arrive(page, `${MARKEL_PART_1}${q}#${encodeURIComponent(id)}`);
+        const link = box.locator('a[data-lesson-open]').first();
+        const reader = page.locator('.reader');
+        const focusedLink = async (how) => {
+          await reader.waitFor({ state: 'hidden' });
+          // The history traversal moves focus to the body after popstate; classes.js takes it back.
+          await page.waitForFunction((a) => document.activeElement === a, await link.elementHandle(), { timeout: 2000 }).catch(async () => {
+            const on = await page.evaluate(() => document.activeElement?.outerHTML.slice(0, 80));
+            throw new Error(`${q || 'no ?t'}, ${how}: focus on ${on}`);
+          });
+          await page.waitForTimeout(300);
+          assert.equal(await link.evaluate((a) => document.activeElement === a), true, `${q || 'no ?t'}, ${how}: focus moved away again`);
+          assert.equal(decodeURIComponent(new URL(page.url()).hash.slice(1)), id);
+        };
+        await link.click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await reader.locator('.reader-back').focus();
+        await page.keyboard.press('Escape');
+        await focusedLink('Esc');
+        await link.click();
+        await reader.locator('.line.in-lesson').first().waitFor();
+        await page.goBack();
+        await focusedLink('browser Back');
+      }
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  // ---------------- outlines pages ----------------
+  const outlineSeries = fs.readdirSync(path.join(PUBLIC, 'outlines'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+
+  await check('outlines pages: every link (series, parts, chapters, Open class, every topic) points to an existing page and id', async () => {
+    const decodeHtml = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    const ids = new Map();
+    const idsOf = (file) => {
+      if (!ids.has(file)) {
+        const html = fs.readFileSync(file, 'utf8');
+        ids.set(file, new Set([...html.matchAll(/\sid=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map((m) => decodeHtml(m[1] ?? m[2] ?? m[3]))));
+      }
+      return ids.get(file);
+    };
+    const pages = ['index.html', ...outlineSeries.map((s) => path.join(s, 'index.html'))];
+    assert.ok(outlineSeries.length >= 1);
+    let topics = 0;
+    let links = 0;
+    const broken = [];
+    for (const rel of pages) {
+      const pageUrl = new URL(`/outlines/${rel.replace(/index\.html$/, '')}`, 'http://x');
+      const html = fs.readFileSync(path.join(PUBLIC, 'outlines', rel), 'utf8');
+      // Only the page's own content: the header nav and footer are the same on every page.
+      const main = html.slice(html.indexOf('<main'), html.lastIndexOf('</main>'));
+      assert.ok(main.length > 0, `${rel} has a <main>`);
+      for (const m of main.matchAll(/<a\s[^>]*?href=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)) {
+        const u = new URL(decodeHtml(m[1] ?? m[2] ?? m[3]), pageUrl);
+        if (u.host !== 'x') continue;
+        links++;
+        let file = path.join(PUBLIC, decodeURIComponent(u.pathname));
+        if (u.pathname.endsWith('/')) file = path.join(file, 'index.html');
+        const id = decodeURIComponent(u.hash.slice(1));
+        if (!fs.existsSync(file)) broken.push(`${rel}: ${u.pathname} (no page)`);
+        else if (id && !idsOf(file).has(id)) broken.push(`${rel}: ${u.pathname}#${id} (no such id)`);
+        if (u.searchParams.has('t')) {
+          topics++;
+          assert.match(u.searchParams.get('t'), /^\d+$/);
+          assert.match(id, /^class-/);
+        }
+      }
+    }
+    assert.deepEqual(broken.slice(0, 20), [], `${broken.length} broken links`);
+    // Every topic of every outlines page was checked: the counts the pages show add up.
+    const index = fs.readFileSync(path.join(PUBLIC, 'outlines', 'index.html'), 'utf8');
+    const shown = [...index.matchAll(/(\d+) topics/g)].reduce((n, m) => n + Number(m[1]), 0);
+    assert.ok(topics > 100 && topics === shown, `${topics} topic links, the index says ${shown}`);
+    assert.ok(links > topics);
+  });
+
+  await check('/outlines/ lists each series page; its links open the series page and part', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/outlines/`);
+      const cards = page.locator('.outline-series-card');
+      assert.equal(await cards.count(), outlineSeries.length);
+      const hrefs = await cards.locator('h2 a').evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+      assert.deepEqual([...hrefs].sort(), outlineSeries.map((s) => `/outlines/${s}/`).sort());
+      for (let i = 0; i < (await cards.count()); i++) assert.ok((await cards.nth(i).locator('.part-list a').count()) >= 1);
+      // A part link: the series page, scrolled to that part.
+      const part = cards.nth(0).locator('.part-list a').nth(1);
+      const href = await part.getAttribute('href');
+      await part.click();
+      await page.waitForURL(`${base}${href}`);
+      const id = new URL(href, base).hash.slice(1);
+      const top = await page.locator(`[id="${id}"]`).evaluate((s) => s.getBoundingClientRect().top);
+      assert.ok(top >= -2 && top < 100, `part top at ${top}`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`outlines series page (${name}): renders collapsed; Expand/Collapse all; ${name === 'desktop' ? 'side nav' : '"Jump to", no sideways scroll'}; a topic opens its class with the topic selected`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: ctx });
+      try {
+        await page.goto(`${base}/outlines/rabbi-markel-series-advanced/`);
+        assert.equal((await page.locator('h1').textContent()).trim(), 'Rabbi Markel Series (Advanced)');
+        assert.ok((await page.locator('section.outline-part h2').count()) >= 2);
+        assert.ok((await page.locator('section.outline-chapter h3').count()) >= 2);
+        const classes = page.locator('details.outline-class');
+        const n = await classes.count();
+        assert.ok(n > 10);
+        const open = () => classes.evaluateAll((ds) => ds.filter((d) => d.open).length);
+        assert.equal(await open(), 0);
+        // Expand all / Collapse all (shown by outlines.js).
+        await page.locator('[data-outlines-expand]').waitFor();
+        await page.locator('[data-outlines-expand]').click();
+        assert.equal(await open(), n);
+        assert.ok(await page.locator('ol.outline-topics a').first().isVisible());
+        const overflow = () => page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+        assert.ok((await overflow()) <= 0, `page scrolls sideways by ${await overflow()}px (all expanded)`);
+        await page.screenshot({ path: path.join(shots, `outlines-expanded-${name}.png`) });
+        await page.locator('[data-outlines-collapse]').click();
+        assert.equal(await open(), 0);
+
+        const side = page.locator('nav.outlines-nav');
+        const jump = page.locator('details.outlines-jump');
+        if (name === 'desktop') {
+          assert.ok(await side.isVisible());
+          assert.ok(await jump.isHidden());
+          // At the top of the page the first part is the current one.
+          const currentPart = () => side.locator('a[aria-current]').evaluateAll((as) => as.map((a) => [a.dataset.outlinesPart, a.getAttribute('aria-current')]));
+          const firstPart = await page.locator('section.outline-part').first().getAttribute('id');
+          assert.deepEqual(await currentPart(), [[firstPart, 'location']]);
+          // Sticky: still there after scrolling far down.
+          await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight / 2));
+          await page.waitForTimeout(300);
+          const r = await side.boundingBox();
+          assert.ok(r && r.y < 900 && r.y + r.height > 0, `side nav at ${JSON.stringify(r)}`);
+          const later = await currentPart();
+          assert.ok(later.length === 1 && later[0][0] !== firstPart && later[0][1] === 'location', JSON.stringify(later));
+          await page.evaluate(() => window.scrollTo(0, 0));
+        } else {
+          assert.ok(await side.isHidden());
+          assert.ok(await jump.isVisible());
+          await jump.locator('summary').tap();
+          const a = jump.locator('a[data-outlines-part]').nth(1);
+          assert.ok(await a.isVisible());
+          assert.ok((await overflow()) <= 0, `page scrolls sideways by ${await overflow()}px`);
+          await page.screenshot({ path: path.join(shots, `outlines-jump-${name}.png`) });
+          const id = await a.getAttribute('data-outlines-part');
+          await a.tap();
+          await page.waitForFunction((id) => location.hash === `#${id}`, id);
+          await page.waitForFunction((id) => Math.abs(document.getElementById(id).getBoundingClientRect().top) < 100, id);
+        }
+
+        // A topic link: the class page with that topic selected and Play from focused.
+        const cls = classes.nth(3);
+        await cls.locator('summary').click();
+        const topic = cls.locator('ol.outline-topics a').nth(1);
+        const href = await topic.getAttribute('href');
+        const title = (await topic.textContent()).replace(/^\s*[\d:]+\s*/, '').trim();
+        if (name === 'phone') await topic.tap();
+        else await topic.click();
+        const u = new URL(href, base);
+        await page.waitForURL((url) => url.pathname === u.pathname);
+        await page.waitForFunction(() => document.activeElement?.matches('.track button.deep-play'));
+        const box = page.locator(`[id="${decodeURIComponent(u.hash.slice(1))}"]`);
+        const sel = box.locator('[data-track-topics] li.is-selected');
+        assert.equal(await sel.getAttribute('aria-current'), 'true');
+        assert.equal((await sel.locator('button').textContent()).replace(/^\s*[\d:]+\s*/, '').trim(), title);
+        assert.equal(new URL(page.url()).search, '');
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  // ---------------- site nav ----------------
+  await check('site nav: Outlines on English and Hebrew pages, no Translation; the Texts page links the translation', async () => {
+    const pages = [
+      ['index.html', 'Outlines'],
+      ['texts/chapter-10/index.html', 'Outlines'],
+      ['classes/index.html', 'Outlines'],
+      ['outlines/index.html', 'Outlines'],
+      ['he/index.html', 'תקצירי שיעורים'],
+      ['he/texts/chapter-10/index.html', 'תקצירי שיעורים'],
+    ];
+    for (const [rel, label] of pages) {
+      const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+      const nav = /<nav>([\s\S]*?)<\/nav>/.exec(html)?.[1];
+      assert.ok(nav, `${rel}: site nav`);
+      assert.match(nav, new RegExp(`<a href="?/outlines/"?>${label}</a>`), `${rel}: Outlines link`);
+      assert.doesNotMatch(nav, /translation|Translation|תרגום/, `${rel}: no Translation item`);
+    }
+    const texts = fs.readFileSync(path.join(PUBLIC, 'texts', 'index.html'), 'utf8');
+    assert.match(texts, /<a href="?\/translation\/"?>English translation/);
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/he/texts/chapter-10/`);
+      const link = page.locator('body > nav a[href="/outlines/"]');
+      assert.ok(await link.isVisible());
+      await link.click();
+      await page.waitForURL(`${base}/outlines/`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
 
   await browser.close();
   server.close();
