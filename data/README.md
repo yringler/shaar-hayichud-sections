@@ -488,3 +488,10 @@ For each published lecture the build writes, when the source exists:
   or MEDIUM confidence, as `{title, startSeconds, confidence}` in time order,
   with `generatedBy: "sofer.ai"`. Show them as auto-generated.
 
+Published transcript text and outline titles spell the Name as G-d, like the
+chapter translations: `reverentSpelling` in `tools/src/publish.ts` turns God,
+God's, Godly and Godliness (and lower-case godly and godliness) into G-d,
+G-d's, G-dly and G-dliness. A bare lower-case "god" ("their god is science")
+is left alone. The stored Sofer files in `transcripts/` and `outlines/` keep
+Sofer's spelling.
+
