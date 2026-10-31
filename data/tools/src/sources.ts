@@ -1,6 +1,7 @@
 /**
  * Validation of the committed transcripts (data/transcripts/), alignments
- * (data/alignments/) and outlines (data/outlines/). They are source files: the build checks them but does
+ * (data/alignments/), outlines (data/outlines/), re-timed words (data/retimed/)
+ * and audio edit lists (data/edits/). They are source files: the build checks them but does
  * not publish them yet (the /data/v1 transcript and alignment collections
  * stay reserved until the alignment quality has been reviewed).
  */
@@ -8,6 +9,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { Ajv2020, type ValidateFunction } from 'ajv/dist/2020.js';
 import { checkAlignmentLineIds, type Alignment, type LineLocation } from './chapter.js';
+import { checkAudioEdits, type AudioEditsFile } from './audio-edits.js';
 import { checkRetimed, type RetimedFile } from './retimed.js';
 import { lectureFileName, type SoferWord } from './transcripts.js';
 import type { SchemaSet } from './validate.js';
@@ -18,6 +20,7 @@ export interface SourcePaths {
   alignmentsDir: string;
   outlinesDir: string;
   retimedDir: string;
+  editsDir: string;
   sourceSchemaDir: string;
 }
 
@@ -28,6 +31,7 @@ export function defaultSourcePaths(dataDir: string): SourcePaths {
     alignmentsDir: path.join(dataDir, 'alignments'),
     outlinesDir: path.join(dataDir, 'outlines'),
     retimedDir: path.join(dataDir, 'retimed'),
+    editsDir: path.join(dataDir, 'edits'),
     sourceSchemaDir: path.join(dataDir, 'schema', 'sources'),
   };
 }
@@ -66,6 +70,10 @@ const fileNameError = (label: string, file: string, lectureId: unknown, lectureI
  * transcript it names exists, one entry per transcript word, monotone
  * times, and a transcriptSha that matches the transcript (a stale file is
  * an error: yarn align would otherwise silently use Sofer's times).
+ * Audio edit lists: source schema, file name, lecture exists, the transcript
+ * it names exists, a transcriptSha that matches it (stale is an error, as for
+ * re-timed files), edits in order, non-overlapping and inside the audio, and
+ * a recorded render made from the current edits.
  */
 export function validateSources(
   paths: SourcePaths,
@@ -136,6 +144,29 @@ export function validateSources(
         continue;
       }
       errors.push(...checkRetimed(r, words).map((e) => `retimed/${file}: ${e}`));
+    }
+  }
+
+  const edits = readJsonFiles(paths.editsDir, errors, 'edits');
+  if (edits.length > 0) {
+    const validate = sourceSchema('audio-edits.schema.json');
+    for (const { file, data } of edits) {
+      if (!validate(data)) {
+        for (const e of (validate.errors ?? []).slice(0, 5)) errors.push(`edits/${file}: ${e.instancePath || '/'} ${e.message}`);
+        continue;
+      }
+      const d = data as AudioEditsFile;
+      errors.push(...fileNameError('edits', file, d.lectureId, lectureIds));
+      if (d.transcript !== `transcripts/${file}`) {
+        errors.push(`edits/${file}: "transcript" must be transcripts/${file}`);
+        continue;
+      }
+      const words = transcriptWords.get(d.transcript);
+      if (words === undefined) {
+        errors.push(`edits/${file}: transcript "${d.transcript}" does not exist (or is invalid)`);
+        continue;
+      }
+      errors.push(...checkAudioEdits(d, words).map((e) => `edits/${file}: ${e}`));
     }
   }
 

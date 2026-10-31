@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/sources/audio-edits.schema.json",
+  "title": "Listener back-channel edits of a class recording (source file, not published)",
+  "description": "data/edits/<encoded lecture id>.json, written by data/retime (`backchannel detect`, then `backchannel render` fills in `output`). Each edit is a span of the original audio replaced by room tone (fill mode: the edited file has the same duration, so every timestamp stays valid). The data build also checks the file name, that the lecture and transcript exist, that `transcriptSha` matches the transcript, and that the edits are in order, do not overlap and lie inside the audio.",
+  "type": "object",
+  "required": ["schemaVersion", "lectureId", "mode", "transcript", "transcriptSha", "wordTimes", "method", "source", "stats", "edits", "kept", "output"],
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "seconds": { "type": "number", "minimum": 0 }
+  },
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lectureId": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+    "mode": { "description": "Edits replace audio with room tone; nothing is cut.", "const": "fill" },
+    "transcript": { "description": "Path of the stored transcript, relative to data/.", "type": "string", "minLength": 1 },
+    "transcriptSha": {
+      "description": "transcriptSha of the transcript the detection used (as in retimed.schema.json).",
+      "$ref": "#/$defs/sha256"
+    },
+    "wordTimes": { "description": "Which word times bracketed the transcript's \"Right.\"s.", "enum": ["retimed", "sofer"] },
+    "method": {
+      "description": "Detector name, version, thresholds and models.",
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "version": { "type": "integer", "minimum": 1 },
+        "thresholds": { "type": "object" }
+      }
+    },
+    "source": {
+      "description": "The original recording the edits apply to.",
+      "type": "object",
+      "required": ["url", "sha256", "sampleRate", "channels", "durationSeconds"],
+      "properties": {
+        "url": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "sampleRate": { "type": "integer", "minimum": 1 },
+        "channels": { "type": "integer", "minimum": 1 },
+        "durationSeconds": { "$ref": "#/$defs/seconds" },
+        "bitrate": { "description": "bits per second (ffprobe)", "anyOf": [{ "type": "integer", "minimum": 1 }, { "type": "null" }] }
+      }
+    },
+    "stats": { "description": "Counts for people.", "type": "object" },
+    "edits": {
+      "description": "Spans replaced by room tone, in order, seconds in the original audio.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start", "end", "class", "action"],
+        "additionalProperties": false,
+        "properties": {
+          "start": { "$ref": "#/$defs/seconds" },
+          "end": { "$ref": "#/$defs/seconds" },
+          "class": { "description": "isolated: in a pause; overlap: touches the teacher's speech.", "enum": ["isolated", "overlap"] },
+          "action": { "description": "fill: the whole span; partial-fill: the part of an overlap outside the teacher's speech.", "enum": ["fill", "partial-fill"] },
+          "src": { "description": "What found it: audio (an energy burst), audio+tx, or tx (a transcript \"Right.\").", "type": "string" },
+          "scores": { "type": "object" }
+        }
+      }
+    },
+    "kept": {
+      "description": "Candidates left alone, with the reason (for review).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["start", "end", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "start": { "$ref": "#/$defs/seconds" },
+          "end": { "$ref": "#/$defs/seconds" },
+          "reason": { "type": "string" }
+        }
+      }
+    },
+    "output": {
+      "description": "The rendered file (null until rendered). It is uploaded next to the original as `filename`.",
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["filename", "sha256", "durationSeconds", "bitrate", "sampleRate", "channels", "encoder", "editsSha", "verify"],
+          "properties": {
+            "filename": { "type": "string", "pattern": " \\(edited\\)\\.mp3$" },
+            "sha256": { "$ref": "#/$defs/sha256" },
+            "bytes": { "type": "integer", "minimum": 1 },
+            "durationSeconds": { "$ref": "#/$defs/seconds" },
+            "bitrate": { "type": "integer", "minimum": 1 },
+            "sampleRate": { "type": "integer", "minimum": 1 },
+            "channels": { "type": "integer", "minimum": 1 },
+            "encoder": { "type": "string" },
+            "editsSha": { "description": "sha256 of the edits' start, end and action the file was rendered from.", "$ref": "#/$defs/sha256" },
+            "verify": {
+              "type": "object",
+              "required": ["ok"],
+              "properties": { "ok": { "const": true } }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

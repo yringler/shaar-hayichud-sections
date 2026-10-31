@@ -152,3 +152,175 @@ falling back to Sofer's times.
 compared with the word times `yarn align` uses, so once a tape is retimed its
 range boundaries must be in retimed time. Check the overrides of any tape you
 retime.
+
+## Back-channel removal (`backchannel`)
+
+In the Rabbi Markel series (`:37`) a listener says a standalone "Right." about
+100-135 times an hour, often in the teacher's pauses. `backchannel` finds them
+and writes an edited copy of each tape in which they are replaced by room
+tone. It shares this package and its cache but has its own extra; like
+`retime`, nothing in the data build or the deploy needs it.
+
+```bash
+cd data/retime
+uv sync --extra edit                                   # + speechbrain, faster-whisper, scipy
+uv run backchannel detect --lecture "063 Ch5 part4.mp3" --render
+uv run backchannel detect --all-markel --render        # whole series; resumable
+uv run backchannel contact --all-markel --reel         # review clips
+uv run pytest                                          # unit tests (the DSP ones need the extra)
+```
+
+**Fill, never cut.** Every edit keeps its length: the span is replaced by
+room tone from the nearest quiet stretch (same pause first, else within
+10 s, never another edit), RMS-matched to the quiet frames around the edit
+(within +-6 dB), looped from random offsets with 15 ms raised-cosine joins and
+borders. The edited file has the same duration as the original, so every
+timestamp in `data/` (transcripts, retimed words, alignments, outlines) is
+valid for both. Ducking and source separation were tried and dropped.
+
+**Precision over recall.** A missed "right" stays audible; a cut into the
+teacher's words damages the class. The rules below keep the teacher-damage
+count at 0 on the hand-labelled evaluation windows.
+
+### Subcommands
+
+| | |
+|---|---|
+| `detect` | writes `data/edits/<encoded lecture id>.json` (atomically). `--render` renders each lecture right after; `--features-only` only fills the stage-1 cache |
+| `render` | fills, encodes and verifies the edited mp3 into `<cache>/edited/<CDN folder>/<stem> (edited).mp3`, and records it in the edit list's `output` |
+| `contact` | review clips per lecture into `<cache>/contact/<encoded id>/` (3 s of the original, a beep, the same 3 s edited) with `index.json`: every overlap edit, every capped edit, the 3 weakest speaker scores and an even sample of the rest (`--per-lecture`, default 8). `--reel` joins all of them into `<cache>/contact/review-reel.mp3` + `.json` |
+| `backchannel-upload` | the upload plan and upload (below) |
+
+Selection: `--lecture ID` (repeatable), `--series N`, `--all-markel` (=
+`--series 37`); `--shard K/N` takes every N-th selected lecture (run N
+processes with `--threads 1` to use N CPUs); `--max-minutes`, `--force`,
+`--dry-run`, `--cache`, `--threads` as for `retime`.
+
+**Resuming.** `detect` skips a lecture whose edit list already has the
+transcript's current `transcriptSha`, the same word-time source and the
+current method version, before anything is downloaded. The slow stage-1
+features are cached per tape in `<cache>/backchannel/features/`, so a
+re-detect after a threshold change takes seconds. `render` skips a lecture
+whose recorded output is verified, was made from the current edits
+(`output.editsSha`) and still has its sha256 in the cache. A killed run
+leaves no half file (temp file plus rename everywhere).
+
+**Cost.** About 5 min of wall time per audio hour on 4 threads, almost all
+of it stage 1 (the per-burst CTC keyword check dominates); the 47 h series
+took about 2 h with 4 one-thread shards. Rendering is about 10 s per tape.
+
+**Inputs.** The audio is the transcript's `audioUrl`, downloaded to
+`<cache>/audio/` like `retime`. Models run on a 16 kHz mono decode; the
+render works at the tape's native rate and channels (some tapes are 32 kHz
+stereo). Transcript brackets use the retimed word times when a current
+`data/retimed/` file exists, else Sofer's (the edit list's `wordTimes`); the
+audio-led detection does not need either. Models: speechbrain
+`spkrec-ecapa-voxceleb` and faster-whisper `base` (pinned revisions,
+downloaded once to `<cache>/models/`), and MMS_FA (shared with `retime`).
+
+### Method (`src/retime/backchannel/`, version 1)
+
+1. **Bursts** (`dsp.py`): speech-band (300-3400 Hz) energy per 10 ms over a
+   rolling 3 s 10th-percentile floor; runs above floor + 7 dB that reach
+   floor + 14 dB, 80-700 ms long, with at least 100 ms of quiet on both sides.
+2. **Speaker** (`features.py`, `listener.py`): an ECAPA embedding per burst;
+   the teacher's centroid from 200 slices of 0.4 s of long speech; the
+   listener's from the bursts that sit alone in the bracket of a transcript
+   "Right." (seeds). Score = cos(listener) - cos(teacher), leave-one-out. A
+   tape with fewer than 30 seeds adds the pooled listener of the three
+   reference tapes (063, 002, 214; built once into
+   `<cache>/backchannel/pool-v1.npz`).
+3. **Keyword**: MMS_FA CTC forced-alignment score of "right" against
+   yeah/okay/yes/so/and on each burst padded with room tone, and faster-whisper
+   base on one reel of all burst clips per tape. A burst scoring over 0.10
+   is the listener's; with either keyword check it is a "right".
+4. **Frame posterior**: a small per-tape MLP on +-5 frames of 40 log-mel
+   bands, trained on the tape's own confident "right" bursts against the
+   teacher (borrowing the reference tapes' listener frames when it has fewer
+   than 1000), gives a 10 ms listener posterior. It trims each audio-led edit
+   to its listener core and finds the "right"s inside transcript brackets that
+   no burst explained (residuals; confirmed by an ECAPA score over 0.05).
+5. **Edits** (`detect.py`): isolated "right"s are filled whole; residuals
+   that touch the teacher's speech become `partial-fill` (never into a
+   preceding teacher tail, at most 100 ms into a following onset). A residual
+   needs a loud listener core (5+ frames with posterior > 0.8 and energy 20 dB
+   over the floor): the posterior also runs high on quiet frames and on the
+   decaying tail of the teacher's words. Any edit over 0.6 s is cut to its
+   loud core plus at most 150 ms of decay (one candidate ran 0.5 s into the
+   teacher's next words).
+
+**Evaluation.** Three hand-labelled 10 min windows (063 0-600 s, 002
+600-1200 s, 214 1200-1800 s; 93 listener events): precision 0.987, recall
+0.828, teacher damage 0 (October 2026). Recall on "right"s that overlap the
+teacher is low (4 of 10); they are left in rather than risk the teacher.
+
+### Render and verification (`render.py`)
+
+CBR libmp3lame at the smallest standard rate that is at least 1.25x the
+source's (24 kb/s sources -> 32 kb/s, 96 -> 128), at the native sample rate
+and channels, with the original's tags copied. The render then decodes its
+own output and requires: exactly the original's sample count; a
+cross-correlation lag of 0 against the edited PCM at five places; no zero
+run of 10 ms or more inside any edit; and at least 10 dB SNR against the
+original outside the edits (100 ms guard). The sha256, size, duration,
+bitrate, encoder, `editsSha` and these results go into `output`.
+
+### Output: `data/edits/<encoded lecture id>.json`
+
+Schema: `data/schema/sources/audio-edits.schema.json`; named like the
+transcript; one edit per line.
+
+```json
+{
+  "schemaVersion": 1, "lectureId": "063 Ch5 part4.mp3", "mode": "fill",
+  "transcript": "transcripts/063%20Ch5%20part4.mp3.json", "transcriptSha": "…", "wordTimes": "retimed",
+  "method": { "name": "audio-led-listener", "version": 1, "thresholds": {…}, "models": {…}, "pool": […] },
+  "source": { "url": "https://media…", "sha256": "…", "sampleRate": 16000, "channels": 1, "durationSeconds": 1645.2, "bitrate": 24000 },
+  "stats": { "bursts": 320, "seeds": 48, "edits": 108, "removedSeconds": 37.9, … },
+  "edits": [
+    {"start": 21.14, "end": 21.38, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.278, "P": 0.943}},
+    …
+  ],
+  "kept": [ {"start": 350.85, "end": 351.25, "reason": "audio:listener-other:isolated"}, … ],
+  "output": { "filename": "063 Ch5 part4 (edited).mp3", "sha256": "…", "durationSeconds": …, "bitrate": 32000,
+              "sampleRate": 16000, "channels": 1, "encoder": "…", "editsSha": "…", "verify": {"ok": true, …} }
+}
+```
+
+Times are seconds in the original (and, since nothing moves, the edited)
+audio. `class` is `isolated` (in a pause) or `overlap` (touches the
+teacher); `action` `fill` or `partial-fill`; `src` `audio`, `audio+tx` or
+`tx`. `kept` lists candidates left alone with the reason, for review.
+`editsSha` = sha256 of `start.toFixed(2) TAB end.toFixed(2) TAB action LF`
+per edit (`editlist.py` and `data/tools/src/audio-edits.ts` share a test
+vector).
+
+The data build checks the schema, the file name, that the lecture and its
+transcript exist, that `transcriptSha` matches the transcript (a stale
+file fails the build, as for `retimed/`: rerun `backchannel detect` or
+delete the file), that edits are ordered, disjoint and inside the audio,
+and that a recorded `output` was rendered from the current edits.
+
+### Upload (`backchannel-upload`)
+
+The edited file goes to the same CDN folder as the original: bucket key =
+the catalog `>` folder + "/" + `<stem> (edited).mp3`, unencoded (the CDN
+URL is that key percent-encoded). The original stays.
+
+```bash
+export R2_ENV_FILE=~/.r2-shaar.env   # or R2_ENDPOINT / R2_BUCKET / AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY
+uv run --extra edit --with boto3 backchannel-upload --all-markel --plan-json plan.json     # read-only plan
+uv run --extra edit --with boto3 backchannel-upload --all-markel --execute                 # upload
+uv run --extra edit backchannel-upload --all-markel --classes-patch classes.patch         # then the catalog change
+```
+
+Credentials are read only from the environment or that file, never from
+arguments, and never printed. The plan HEADs every original key (must
+exist, same size as the cached original) and edited key (must not exist).
+`--execute` uploads only lectures that pass, with `Content-Type: audio/mpeg`
+and `If-None-Match: *` (never overwrites), then HEADs each new object and
+checks its size and ETag (MD5). After the upload, apply the classes.txt
+patch: it renames each file line to the edited file with an `@ <old id>`
+line before it, so lecture IDs (favorites, downloads) do not change and the
+durations stay as they are. Then `cd ../tools && yarn build-data`, and
+`NODE_USE_ENV_PROXY=1 yarn check-urls` to see the new URLs resolve.

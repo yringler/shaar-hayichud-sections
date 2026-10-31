@@ -14,10 +14,15 @@ dependencies = [
 [project.optional-dependencies]
 # Independent spot check of re-timed words (retime-verify).
 verify = ["faster-whisper>=1.2", "soundfile>=0.13"]
+# Listener back-channel ("Right.") removal (backchannel detect / render / contact).
+# Never needed by the data build or the deploy.
+edit = ["speechbrain>=1.0,<1.2", "faster-whisper>=1.2", "scipy>=1.11", "huggingface-hub>=0.23"]
 
 [project.scripts]
 retime = "retime.cli:main"
 retime-verify = "retime.verify:main"
+backchannel = "retime.backchannel.cli:main"
+backchannel-upload = "retime.backchannel.upload:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]

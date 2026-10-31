@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "214 Tape46-Side1 Ch41&42.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/214%20Tape46-Side1%20Ch41%2642.mp3.json",
+  "transcriptSha": "9909d7a402a8c9b514dfe6b1123394323bbc4fc8ce0662e8b517e7a7fe821398",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/214%20Tape46-Side1%20Ch41%2642.mp3",
+    "sha256": "b6cf4de03c7707a5261c9b81f3d77be9bf724070c298558fa7d49fe9c7093a9a",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1845.108,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 229,
+    "transcriptRights": 17,
+    "seeds": 8,
+    "pooledSpeaker": true,
+    "listenerBursts": 16,
+    "posterior": {
+      "posFrames": 318,
+      "pooledPosFrames": 5428,
+      "negFrames": 19469,
+      "valTpr": 0.993,
+      "valFpr": 0.004
+    },
+    "edits": 14,
+    "isolated": 14,
+    "overlap": 0,
+    "editsPerHour": 27.3,
+    "removedSeconds": 3.99,
+    "seconds": 155.0
+  },
+  "edits": [
+    {"start": 393.48, "end": 393.95, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.296, "P": 0.91, "ctcRight": -2.81, "whisper": "Right."}},
+    {"start": 1191.7, "end": 1191.94, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.258, "P": 0.91, "ctcRight": -1.67, "whisper": "Right."}},
+    {"start": 1199.79, "end": 1200.05, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.223, "P": 0.815, "ctcRight": -2.73, "whisper": "Right."}},
+    {"start": 1207.31, "end": 1207.57, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.326, "P": 0.893, "ctcRight": -2.05, "whisper": "Right.  Yes,"}},
+    {"start": 1308.05, "end": 1308.34, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.256, "P": 0.788, "ctcRight": -1.52, "whisper": "five  five"}},
+    {"start": 1318.92, "end": 1319.13, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.163, "P": 0.762}},
+    {"start": 1425.08, "end": 1425.47, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.382, "P": 0.935, "ctcRight": -0.65, "whisper": "make...  right."}},
+    {"start": 1478.42, "end": 1478.73, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.317, "P": 0.927, "ctcRight": -1.47, "whisper": "Right."}},
+    {"start": 1519.51, "end": 1519.84, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.346, "P": 0.923, "ctcRight": -3.46, "whisper": "Right.", "cappedFrom": [1519.49, 1520.12]}},
+    {"start": 1536.25, "end": 1536.5, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.251, "P": 0.889, "ctcRight": -3.56, "whisper": "make...  right.  So"}},
+    {"start": 1693.82, "end": 1694.05, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.312, "P": 0.923, "ctcRight": -3.01, "whisper": "Right."}},
+    {"start": 1727.47, "end": 1727.73, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.349, "P": 0.932, "ctcRight": -1.54, "whisper": "Right."}},
+    {"start": 1762.34, "end": 1762.57, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.453, "P": 0.913, "ctcRight": -2.2, "whisper": "right."}},
+    {"start": 1776.03, "end": 1776.29, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.333, "P": 0.915, "ctcRight": -1.08, "whisper": "right."}}
+  ],
+  "kept": [
+    {"start": 726.86, "end": 727.83, "reason": "tx:unlocalized:?"},
+    {"start": 728.68, "end": 729.07, "reason": "audio:listener-other:isolated heard 'Bible.  He'"},
+    {"start": 1254.0, "end": 1254.21, "reason": "audio:low-P:? heard 'Yeah...'"},
+    {"start": 1361.2, "end": 1362.59, "reason": "tx:unlocalized:?"},
+    {"start": 1418.2, "end": 1418.4, "reason": "audio:low-P:? heard 'analyze  the'"},
+    {"start": 1495.38, "end": 1496.58, "reason": "tx:unlocalized:?"},
+    {"start": 1517.82, "end": 1518.73, "reason": "tx:unlocalized:?"},
+    {"start": 1533.8, "end": 1535.3, "reason": "tx:unlocalized:?"},
+    {"start": 1760.34, "end": 1760.97, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "214 Tape46-Side1 Ch41&42 (edited).mp3",
+    "sha256": "7552cb73971010bc5cced69f92e9efd28e7852fa248e9ed97bdfda24e252e373",
+    "bytes": 29523043,
+    "durationSeconds": 1845.144,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "6f1018e76773d8b054ba0d59f231cfe4b0aed0e5e79f03d343a61440a890beb7",
+    "toneFrom": {
+      "same pause": 10,
+      "nearby": 4
+    },
+    "verify": {
+      "samples": 59043456,
+      "samplesOut": 59043456,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}
