@@ -19,6 +19,7 @@ from . import dsp
 
 CTC_WORDS = ("right", "yeah", "okay", "yes", "so", "and")
 REF_SLICES = 200  # teacher reference slices, 0.4 s each, from active stretches longer than 2 s
+REF_MIN_FRAMES = (200, 100, 60)  # ... or 1 s, or 0.6 s, on a tape with no stretch that long
 REEL_GAP = 0.8
 FEATURES_VERSION = 1
 
@@ -28,6 +29,8 @@ def embed(enc, clips: list[np.ndarray]) -> np.ndarray:
     import torch
 
     out = []
+    if not clips:
+        return np.zeros((0, 192), np.float32)
     with torch.inference_mode():
         for c in clips:
             x = torch.from_numpy(np.ascontiguousarray(c)).float().unsqueeze(0)
@@ -88,7 +91,11 @@ def compute(w: np.ndarray, models, log=print) -> dict:
     enc = models.ecapa()
     E = embed(enc, [w[int(b["start"] * dsp.SR):int(b["end"] * dsp.SR)] for b in bursts])
     rng = np.random.default_rng(0)
-    long = [(a, b) for a, b in dsp.runs(e > floor + 7) if b - a > 200]
+    active = dsp.runs(e > floor + 7)
+    for n in REF_MIN_FRAMES:
+        long = [(a, b) for a, b in active if b - a > n]
+        if long:
+            break
     refs = []
     for _ in range(REF_SLICES if long else 0):
         a, b = long[rng.integers(len(long))]

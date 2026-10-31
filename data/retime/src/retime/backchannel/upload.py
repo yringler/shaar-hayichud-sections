@@ -5,9 +5,9 @@
     uv run backchannel-upload --all-markel --classes-patch OUT.patch     # the classes.txt change (no bucket)
 
 The bucket key is the lecture's catalog `>` folder + "/" + filename, unencoded (the CDN URL is
-that key percent-encoded). Credentials come only from the environment (R2_ENDPOINT, R2_BUCKET,
-AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY) or from a KEY=VALUE file named by --env-file or
-$R2_ENV_FILE; never from the command line, and they are never printed.
+that key percent-encoded). Credentials come only from a KEY=VALUE file named by --env-file or
+$R2_ENV_FILE (R2_ENDPOINT, R2_BUCKET, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY; the file wins over
+the shell), else from those environment variables; never from the command line, never printed.
 
 Plan checks, per lecture: a verified render is recorded in the edit list, the cached file's
 sha256 matches it, the original's key exists with the cached original's size, and the edited
@@ -37,16 +37,20 @@ ENV_KEYS = ("R2_ENDPOINT", "R2_BUCKET", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_
 
 
 def read_env(env_file: str | None) -> dict:
-    env = {k: os.environ[k] for k in ENV_KEYS if os.environ.get(k)}
+    """Credentials from --env-file / $R2_ENV_FILE when given (all four keys from that file, so stray AWS_*
+    variables in the shell cannot mix in), else from the environment."""
     f = env_file or os.environ.get("R2_ENV_FILE")
     if f:
+        env = {}
         for line in Path(f).expanduser().read_text("utf-8").splitlines():
             if "=" in line and not line.lstrip().startswith("#"):
                 k, v = line.split("=", 1)
-                env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+                env[k.strip().removeprefix("export ").strip()] = v.strip().strip('"').strip("'")
+    else:
+        env = {k: os.environ[k] for k in ENV_KEYS if os.environ.get(k)}
     missing = [k for k in ENV_KEYS if not env.get(k)]
     if missing:
-        raise SystemExit(f"missing credentials: {', '.join(missing)} (environment or --env-file)")
+        raise SystemExit(f"missing credentials: {', '.join(missing)} ({f or 'environment'})")
     return env
 
 
@@ -103,6 +107,8 @@ def plan_items(data: Path, cache: Path, series: list[str], ids: list[str]) -> li
             out.append(item)
             continue
         item.update(editedFilename=o["filename"], editedKey=f"{lec.folder}/{o['filename']}", edits=len(doc["edits"]))
+        if not doc["edits"]:
+            item["skip"] = "no edits: the original stays as it is"
         local = cache / "edited" / lec.folder / o["filename"]
         item["local"] = str(local)
         if o["filename"] != catalog.edited_filename(lec.filename):
@@ -186,7 +192,7 @@ def main(argv=None) -> int:
     cache = (a.cache or default_cache()).expanduser().resolve()
     items = plan_items(data, cache, series, a.lecture)
     if a.classes_patch:
-        ok = [it for it in items if not it["problems"]]
+        ok = [it for it in items if not it["problems"] and not it.get("skip")]
         a.classes_patch.write_text(classes_patch(data, ok), "utf-8")
         print(f"{a.classes_patch}: {len(ok)} of {len(items)} lecture(s) renamed")
         return 0
@@ -194,17 +200,21 @@ def main(argv=None) -> int:
     s3 = client(env)
     bucket = env["R2_BUCKET"]
     check_bucket(s3, bucket, items)
-    ready = [it for it in items if not it["problems"]]
+    ready = [it for it in items if not it["problems"] and not it.get("skip")]
     total = sum(it.get("bytes", 0) for it in ready)
     for it in items:
+        if it.get("skip") and not it["problems"]:
+            print(f"--  {it['originalKey']}  ({it['skip']})")
+            continue
         flag = "ok " if not it["problems"] else "NO "
         print(f"{flag} {it.get('editedKey', it['originalKey'])}" + (f"  <- {'; '.join(it['problems'])}" if it["problems"] else ""))
-    print(f"\n{len(ready)} of {len(items)} ready to upload, {total / 1e6:.1f} MB")
+    skipped = sum(1 for it in items if it.get("skip") and not it["problems"])
+    print(f"\n{len(ready)} of {len(items)} ready to upload ({skipped} without edits skipped), {total / 1e6:.1f} MB")
     if a.plan_json:
         a.plan_json.write_text(json.dumps(items, ensure_ascii=False, indent=1), "utf-8")
     if not a.execute:
         print("plan only (pass --execute to upload)")
-        return 0 if len(ready) == len(items) else 1
+        return 0 if len(ready) + skipped == len(items) else 1
     failed = 0
     for it in ready:
         try:

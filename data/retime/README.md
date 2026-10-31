@@ -207,7 +207,7 @@ leaves no half file (temp file plus rename everywhere).
 
 **Cost.** About 5 min of wall time per audio hour on 4 threads, almost all
 of it stage 1 (the per-burst CTC keyword check dominates); the 47 h series
-took about 2 h with 4 one-thread shards. Rendering is about 10 s per tape.
+took about 2 h with 4 one-thread shards. Detection after that is about 20 s per tape and a render 20-45 s.
 
 **Inputs.** The audio is the transcript's `audioUrl`, downloaded to
 `<cache>/audio/` like `retime`. Models run on a 16 kHz mono decode; the

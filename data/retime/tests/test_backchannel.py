@@ -255,3 +255,16 @@ def test_classes_patch_adds_old_id_and_keeps_duration(tmp_path):
     patch = upload.classes_patch(tmp_path, items)
     assert "-001 Intro.mp3:722.9\n+@ 001 Intro.mp3\n+001 Intro (edited).mp3:722.9\n" in patch
     assert "-002 new.mp3:5\n+002 new (edited).mp3:5\n" in patch and "+@ 002" not in patch
+
+
+def test_upload_credentials_file_wins_over_stray_shell_vars(tmp_path, monkeypatch):
+    from retime.backchannel import upload
+
+    f = tmp_path / "r2.env"
+    f.write_text("R2_ENDPOINT=https://e\nR2_BUCKET=b\nAWS_ACCESS_KEY_ID='k'\nAWS_SECRET_ACCESS_KEY=s\n", "utf-8")
+    monkeypatch.setenv("AWS_ACCESS_KEY_ID", "other")
+    env = upload.read_env(str(f))
+    assert env["AWS_ACCESS_KEY_ID"] == "k" and env["R2_BUCKET"] == "b"
+    monkeypatch.delenv("R2_ENV_FILE", raising=False)
+    with pytest.raises(SystemExit):
+        upload.read_env(None)  # environment lacks R2_ENDPOINT / R2_BUCKET

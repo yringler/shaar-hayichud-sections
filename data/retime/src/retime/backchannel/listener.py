@@ -88,6 +88,8 @@ def logmel(w: np.ndarray) -> np.ndarray:
 
 
 def stack(F: np.ndarray, idx: np.ndarray) -> np.ndarray:
+    if len(idx) == 0:
+        return np.zeros((0, F.shape[1] * (2 * CTX + 1)), F.dtype)
     ii = np.clip(idx[:, None] + np.arange(-CTX, CTX + 1)[None, :], 0, len(F) - 1)
     return F[ii].reshape(len(idx), -1)
 

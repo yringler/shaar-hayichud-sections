@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "001 Intro.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/001%20Intro.mp3.json",
+  "transcriptSha": "89373a2146c80fff0488d42229e05aff73f32824b8bead6bdf8a9842aa2bdc01",
+  "wordTimes": "sofer",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Advanced%20%20part%201%20ch%2010-15%20compact/001%20Intro.mp3",
+    "sha256": "471eed9245e97d05cae4b463cc78f151d08e4ee4e87ac960072aa080df27c3c9",
+    "sampleRate": 22050,
+    "channels": 1,
+    "durationSeconds": 722.997,
+    "bitrate": 32000
+  },
+  "stats": {
+    "bursts": 179,
+    "transcriptRights": 0,
+    "seeds": 0,
+    "pooledSpeaker": true,
+    "listenerBursts": 4,
+    "posterior": {
+      "posFrames": 0,
+      "pooledPosFrames": 5774,
+      "negFrames": 18573,
+      "valTpr": 0.999,
+      "valFpr": 0.001
+    },
+    "edits": 0,
+    "isolated": 0,
+    "overlap": 0,
+    "editsPerHour": 0.0,
+    "removedSeconds": 0,
+    "seconds": 166.6
+  },
+  "edits": [],
+  "kept": [
+    {"start": 83.8, "end": 83.9, "reason": "audio:low-P:? heard 'a'"},
+    {"start": 132.05, "end": 132.27, "reason": "audio:low-P:? heard 'deep  study,'"},
+    {"start": 346.24, "end": 346.4, "reason": "audio:low-P:? heard 'the  boat,'"},
+    {"start": 550.77, "end": 551.15, "reason": "audio:low-P:? heard '-based  full'"}
+  ],
+  "output": {
+    "filename": "001 Intro (edited).mp3",
+    "sha256": "76e23d453c5c6b8b8d46d33f0ea7fbc858ba26bffdc2f0f7316caebc57ebcbb2",
+    "bytes": 3615440,
+    "durationSeconds": 723.017,
+    "bitrate": 40000,
+    "sampleRate": 22050,
+    "channels": 1,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "toneFrom": {},
+    "verify": {
+      "samples": 15941376,
+      "samplesOut": 15941376,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 20.1,
+      "ok": true,
+      "durationDiffSeconds": 0.02
+    }
+  }
+}
