@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "202 Tape37-Side2-ch 34 35.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/202%20Tape37-Side2-ch%2034%2035.mp3.json",
+  "transcriptSha": "11d25867c8a6ce932b6fab6860f2b0107f7a2fd768c104cf595f58aa7c4a175e",
+  "wordTimes": "sofer",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/202%20Tape37-Side2-ch%2034%2035.mp3",
+    "sha256": "6c5e730221327ea7f0a128a73a5ae699c10b79457c6917f373bc0cd351be7f67",
+    "sampleRate": 16000,
+    "channels": 2,
+    "durationSeconds": 1595.906,
+    "bitrate": 40000
+  },
+  "stats": {
+    "bursts": 200,
+    "transcriptRights": 31,
+    "seeds": 12,
+    "pooledSpeaker": true,
+    "listenerBursts": 18,
+    "posterior": {
+      "posFrames": 372,
+      "pooledPosFrames": 5774,
+      "negFrames": 19068,
+      "valTpr": 0.996,
+      "valFpr": 0.005
+    },
+    "edits": 25,
+    "isolated": 17,
+    "overlap": 8,
+    "editsPerHour": 56.4,
+    "removedSeconds": 9.11,
+    "seconds": 154.0
+  },
+  "edits": [
+    {"start": 185.12, "end": 185.48, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.502, "P": 0.678, "ctcRight": -2.69, "whisper": "point"}},
+    {"start": 265.13, "end": 265.53, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.54, "P": 0.808, "ctcRight": -3.37, "whisper": "write"}},
+    {"start": 273.8, "end": 274.12, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.271, "P": 0.936, "ctcRight": -2.81, "whisper": "write"}},
+    {"start": 390.97, "end": 391.36, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.326, "P": 0.853, "ctcRight": -2.56, "whisper": "write"}},
+    {"start": 399.11, "end": 399.58, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.349, "P": 0.94, "ctcRight": -2.02, "whisper": "write  you"}},
+    {"start": 409.11, "end": 409.24, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.132, "P": 0.779}},
+    {"start": 422.42, "end": 422.81, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.363, "P": 0.937, "ctcRight": -2.42, "whisper": "write  Start"}},
+    {"start": 450.39, "end": 450.62, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.254, "P": 0.863}},
+    {"start": 541.17, "end": 541.56, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.247, "P": 0.946, "ctcRight": -2.14, "whisper": "right."}},
+    {"start": 558.21, "end": 558.63, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.302, "P": 0.905, "ctcRight": -2.4, "whisper": "Right.", "cappedFrom": [558.02, 558.65]}},
+    {"start": 571.33, "end": 571.73, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.388, "P": 0.896}},
+    {"start": 595.38, "end": 595.68, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.256, "P": 0.914, "ctcRight": -3.12, "whisper": "Right."}},
+    {"start": 620.06, "end": 620.66, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.419, "P": 0.929, "cappedFrom": [620.05, 620.7]}},
+    {"start": 819.28, "end": 819.56, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.15, "P": 0.846}},
+    {"start": 1343.77, "end": 1344.1, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.352, "P": 0.919, "ctcRight": -2.44, "whisper": "This...  Right."}},
+    {"start": 1444.17, "end": 1444.64, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.467, "P": 0.949, "ctcRight": -3.61, "whisper": "Frank"}},
+    {"start": 1462.78, "end": 1463.19, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.38, "P": 0.924, "ctcRight": -2.31, "whisper": "Frank  Frank"}},
+    {"start": 1479.66, "end": 1479.89, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.317, "P": 0.896, "cappedFrom": [1479.64, 1480.26]}},
+    {"start": 1489.64, "end": 1490.03, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.315, "P": 0.905}},
+    {"start": 1502.83, "end": 1503.04, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.401, "P": 0.779}},
+    {"start": 1529.4, "end": 1529.75, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.254, "P": 0.868}},
+    {"start": 1535.18, "end": 1535.78, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.387, "P": 0.744}},
+    {"start": 1547.45, "end": 1547.9, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.336, "P": 0.843, "ctcRight": -2.36, "whisper": "Right."}},
+    {"start": 1570.98, "end": 1571.17, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.413, "P": 0.873}},
+    {"start": 1586.06, "end": 1586.46, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.184, "P": 0.92, "ctcRight": -2.66, "whisper": "Right."}}
+  ],
+  "kept": [
+    {"start": 331.79, "end": 332.01, "reason": "audio:low-P:?"},
+    {"start": 500.22, "end": 500.7, "reason": "tx:unlocalized:?"},
+    {"start": 507.28, "end": 508.36, "reason": "tx:unlocalized:?"},
+    {"start": 527.52, "end": 527.96, "reason": "tx:unlocalized:?"},
+    {"start": 824.26, "end": 824.65, "reason": "audio:low-P:?"},
+    {"start": 824.9, "end": 825.03, "reason": "tx:tx-lowspk:isolated"},
+    {"start": 845.09, "end": 845.34, "reason": "tx:tx-lowspk:overlap"},
+    {"start": 857.54, "end": 857.85, "reason": "tx:tx-lowspk:isolated"},
+    {"start": 1539.29, "end": 1539.57, "reason": "tx:tx-lowspk:overlap"},
+    {"start": 1548.12, "end": 1548.29, "reason": "audio:low-P:?"},
+    {"start": 1548.45, "end": 1548.81, "reason": "audio:low-P:?"}
+  ],
+  "output": {
+    "filename": "202 Tape37-Side2-ch 34 35 (edited).mp3",
+    "sha256": "4c6528a9c84c4aa7aadc90ef4ff45d037a2958171318ae0d6049a1d485557805",
+    "bytes": 11172049,
+    "durationSeconds": 1595.952,
+    "bitrate": 56000,
+    "sampleRate": 16000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "69f6c2b98a8ef4981d01af78c5b33282398e96f70ebe6d5a07785805faacd026",
+    "toneFrom": {
+      "same pause": 16,
+      "nearby": 9
+    },
+    "verify": {
+      "samples": 25534080,
+      "samplesOut": 25534080,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 24.5,
+      "ok": true,
+      "durationDiffSeconds": 0.046
+    }
+  }
+}
