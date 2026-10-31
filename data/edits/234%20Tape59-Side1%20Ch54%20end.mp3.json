@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "234 Tape59-Side1 Ch54 end.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/234%20Tape59-Side1%20Ch54%20end.mp3.json",
+  "transcriptSha": "eae0520abf41ce8d74b7fd69239142768cfb83be9163b23ef754ebbe6d660539",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/234%20Tape59-Side1%20Ch54%20end.mp3",
+    "sha256": "28bd7ca31eecd717819637ffbf4065a99327d847852b84ae39c5b47889b69d80",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1718.856,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 153,
+    "transcriptRights": 37,
+    "seeds": 15,
+    "pooledSpeaker": true,
+    "listenerBursts": 24,
+    "posterior": {
+      "posFrames": 342,
+      "pooledPosFrames": 5774,
+      "negFrames": 15335,
+      "valTpr": 0.984,
+      "valFpr": 0.004
+    },
+    "edits": 28,
+    "isolated": 21,
+    "overlap": 7,
+    "editsPerHour": 58.6,
+    "removedSeconds": 7.37,
+    "seconds": 127.7
+  },
+  "edits": [
+    {"start": 104.25, "end": 104.5, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.546, "P": 0.821}},
+    {"start": 139.75, "end": 140.03, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.33, "P": 0.797, "ctcRight": -0.58, "whisper": "Right."}},
+    {"start": 174.39, "end": 174.71, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.291, "P": 0.876, "ctcRight": -1.07, "whisper": "right."}},
+    {"start": 198.62, "end": 199.02, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.348, "P": 0.84, "ctcRight": -1.42, "whisper": "Right."}},
+    {"start": 234.15, "end": 234.59, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.338, "P": 0.815, "ctcRight": -2.09, "whisper": "Right."}},
+    {"start": 246.87, "end": 247.08, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.254, "P": 0.678, "ctcRight": -1.27}},
+    {"start": 267.75, "end": 268.04, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.357, "P": 0.817, "ctcRight": -1.95, "whisper": "kept...  Right."}},
+    {"start": 353.56, "end": 353.85, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.338, "P": 0.842, "ctcRight": -2.08}},
+    {"start": 361.11, "end": 361.36, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.366, "P": 0.848}},
+    {"start": 386.35, "end": 386.64, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.408, "P": 0.873, "ctcRight": -2.45, "whisper": "Right  You"}},
+    {"start": 421.89, "end": 422.14, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.291, "P": 0.78}},
+    {"start": 428.33, "end": 428.55, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.366, "P": 0.669, "ctcRight": -3.35, "whisper": "Right  And"}},
+    {"start": 484.91, "end": 485.19, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.282, "P": 0.796, "ctcRight": -2.64, "whisper": "Right"}},
+    {"start": 522.87, "end": 523.03, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.362, "P": 0.839}},
+    {"start": 565.67, "end": 565.81, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.341, "P": 0.715}},
+    {"start": 576.67, "end": 576.97, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.364, "P": 0.903, "ctcRight": -2.71, "whisper": "Right."}},
+    {"start": 607.26, "end": 607.56, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.385, "P": 0.708, "ctcRight": -2.96, "whisper": "Right.  love"}},
+    {"start": 640.66, "end": 640.9, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.331, "P": 0.614, "ctcRight": -2.33, "whisper": "Right"}},
+    {"start": 651.62, "end": 651.78, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.371, "P": 0.78}},
+    {"start": 689.21, "end": 689.56, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.373, "P": 0.857}},
+    {"start": 696.05, "end": 696.18, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.417, "P": 0.717}},
+    {"start": 707.14, "end": 707.4, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.399, "P": 0.914, "ctcRight": -2.24, "whisper": "Right"}},
+    {"start": 714.74, "end": 715.02, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.391, "P": 0.668, "ctcRight": -2.99}},
+    {"start": 724.18, "end": 724.44, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.366, "P": 0.808, "ctcRight": -2.37}},
+    {"start": 771.68, "end": 771.93, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.37, "P": 0.86}},
+    {"start": 776.04, "end": 776.36, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.452, "P": 0.73, "ctcRight": -1.48}},
+    {"start": 780.75, "end": 781.01, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.342, "P": 0.876, "ctcRight": -2.7}},
+    {"start": 793.42, "end": 793.61, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.194, "P": 0.815}}
+  ],
+  "kept": [
+    {"start": 10.76, "end": 11.03, "reason": "tx:tx-lowspk:isolated"},
+    {"start": 118.7, "end": 119.13, "reason": "audio:low-P:? heard 'the  line.  Sorry,'"},
+    {"start": 209.86, "end": 209.98, "reason": "audio:low-P:?"},
+    {"start": 281.46, "end": 281.81, "reason": "audio:low-P:? heard 'Yes.'"},
+    {"start": 328.85, "end": 329.27, "reason": "tx:unlocalized:?"},
+    {"start": 335.44, "end": 336.58, "reason": "tx:unlocalized:?"},
+    {"start": 370.36, "end": 370.84, "reason": "tx:unlocalized:?"},
+    {"start": 377.52, "end": 378.04, "reason": "audio:low-P:?"},
+    {"start": 457.17, "end": 457.64, "reason": "tx:unlocalized:?"},
+    {"start": 481.71, "end": 483.0, "reason": "tx:unlocalized:?"},
+    {"start": 487.39, "end": 487.54, "reason": "tx:tx-lowspk:isolated"},
+    {"start": 666.51, "end": 667.09, "reason": "audio:low-P:? heard 'Musa,  Van  This,'"},
+    {"start": 729.44, "end": 729.62, "reason": "tx:unlocalized:?"},
+    {"start": 742.53, "end": 742.9, "reason": "audio:low-P:?"},
+    {"start": 744.34, "end": 745.21, "reason": "tx:unlocalized:?"},
+    {"start": 756.26, "end": 757.97, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "234 Tape59-Side1 Ch54 end (edited).mp3",
+    "sha256": "c1ce026bce13558d1f152e9453c1f7466fd6b57eb6765e6f404510541a18b48a",
+    "bytes": 27503005,
+    "durationSeconds": 1718.892,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "ff009396a165d79ee77fd010164e51e073274c6d3b247c15228b1949b28b327b",
+    "toneFrom": {
+      "nearby": 4,
+      "same pause": 24
+    },
+    "verify": {
+      "samples": 55003392,
+      "samplesOut": 55003392,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "224 Tape51-Side1 Ch46-.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/224%20Tape51-Side1%20Ch46-.mp3.json",
+  "transcriptSha": "3fa8bf5ad2245616e9522fd06a6185e25db91d4c8366083b4a9846637ce6d68e",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/224%20Tape51-Side1%20Ch46-.mp3",
+    "sha256": "d8ee57e92ad9657ea158dd1edbe78247f01d551cd43f100a216de2f653fbac7c",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1036.008,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 178,
+    "transcriptRights": 19,
+    "seeds": 4,
+    "pooledSpeaker": true,
+    "listenerBursts": 17,
+    "posterior": {
+      "posFrames": 296,
+      "pooledPosFrames": 5774,
+      "negFrames": 18275,
+      "valTpr": 0.995,
+      "valFpr": 0.014
+    },
+    "edits": 17,
+    "isolated": 16,
+    "overlap": 1,
+    "editsPerHour": 59.1,
+    "removedSeconds": 5.18,
+    "seconds": 163.2
+  },
+  "edits": [
+    {"start": 351.43, "end": 351.73, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.325, "P": 0.908, "ctcRight": -1.06, "whisper": "Right.  But..."}},
+    {"start": 415.96, "end": 416.33, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.372, "P": 0.829, "ctcRight": -2.98, "whisper": "Right."}},
+    {"start": 541.57, "end": 541.88, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.248, "P": 0.725, "ctcRight": -2.88, "whisper": "one."}},
+    {"start": 645.73, "end": 646.04, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.388, "P": 0.915, "ctcRight": -1.47, "whisper": "rider."}},
+    {"start": 661.47, "end": 661.75, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.389, "P": 0.928, "ctcRight": -2.92, "whisper": "R  rider."}},
+    {"start": 699.51, "end": 699.83, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.402, "P": 0.783}},
+    {"start": 701.56, "end": 701.83, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.297, "P": 0.897, "ctcRight": -0.74, "whisper": "Right."}},
+    {"start": 743.93, "end": 744.19, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.422, "P": 0.909, "ctcRight": -2.98, "whisper": "Right."}},
+    {"start": 756.45, "end": 756.72, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.344, "P": 0.961, "ctcRight": -3.14, "whisper": "Right."}},
+    {"start": 780.55, "end": 780.85, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.242, "P": 0.877, "ctcRight": -2.92, "whisper": "Right."}},
+    {"start": 838.89, "end": 839.2, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.236, "P": 0.651, "ctcRight": -3.13}},
+    {"start": 898.89, "end": 899.22, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.357, "P": 0.886}},
+    {"start": 951.84, "end": 952.11, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.472, "P": 0.849, "ctcRight": -2.22, "whisper": "Right."}},
+    {"start": 959.22, "end": 959.47, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.335, "P": 0.904, "ctcRight": -2.97, "whisper": "Right."}},
+    {"start": 961.83, "end": 962.18, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.298, "P": 0.793, "ctcRight": -2.83, "whisper": "Right."}},
+    {"start": 983.5, "end": 983.9, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.314, "P": 0.812, "ctcRight": -3.08, "whisper": "Right."}},
+    {"start": 1005.0, "end": 1005.28, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.267, "P": 0.896, "ctcRight": -2.79, "whisper": "Right.  and"}}
+  ],
+  "kept": [
+    {"start": 412.71, "end": 412.96, "reason": "audio:low-P:? heard 'Yeah.'"},
+    {"start": 618.2, "end": 619.64, "reason": "tx:unlocalized:?"},
+    {"start": 696.82, "end": 698.67, "reason": "tx:unlocalized:?"},
+    {"start": 890.89, "end": 891.05, "reason": "audio:low-P:? heard 'Black.'"},
+    {"start": 993.53, "end": 993.67, "reason": "tx:tx-lowspk:overlap"},
+    {"start": 1003.87, "end": 1004.35, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "224 Tape51-Side1 Ch46- (edited).mp3",
+    "sha256": "e5347c6a77979cd5f6c1e95175142052779042456aa02cf9deeae90325035786",
+    "bytes": 16577442,
+    "durationSeconds": 1036.044,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "c7f35c4f063c2898b065665d8e5ca237579f94f90b6380c4624e6193160162a2",
+    "toneFrom": {
+      "same pause": 15,
+      "nearby": 2
+    },
+    "verify": {
+      "samples": 33152256,
+      "samplesOut": 33152256,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}

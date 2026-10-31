@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "230 Tape57-Side1Ch52-.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/230%20Tape57-Side1Ch52-.mp3.json",
+  "transcriptSha": "6a46b27b1b2f0dcb1f7164d02c8100bf2bc959b9475c24eeea6383f993a97604",
+  "wordTimes": "sofer",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/230%20Tape57-Side1Ch52-.mp3",
+    "sha256": "79b60e7114cbbcbc8da3816929a6d0677d47bf378738901c31b56a31887dda72",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1664.388,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 259,
+    "transcriptRights": 20,
+    "seeds": 11,
+    "pooledSpeaker": true,
+    "listenerBursts": 27,
+    "posterior": {
+      "posFrames": 557,
+      "pooledPosFrames": 5774,
+      "negFrames": 19774,
+      "valTpr": 0.987,
+      "valFpr": 0.006
+    },
+    "edits": 22,
+    "isolated": 18,
+    "overlap": 4,
+    "editsPerHour": 47.6,
+    "removedSeconds": 8.35,
+    "seconds": 206.6
+  },
+  "edits": [
+    {"start": 281.32, "end": 281.67, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.457, "P": 0.632, "ctcRight": -2.11, "whisper": "right  through...", "cappedFrom": [280.97, 281.69]}},
+    {"start": 311.36, "end": 311.72, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.325, "P": 0.909, "ctcRight": -1.38, "whisper": "Right."}},
+    {"start": 317.29, "end": 317.6, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.231, "P": 0.927, "ctcRight": -1.24, "whisper": "Right."}},
+    {"start": 343.61, "end": 343.97, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.275, "P": 0.889, "ctcRight": -0.48, "whisper": "the...  Right."}},
+    {"start": 448.72, "end": 449.15, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.442, "P": 0.878}},
+    {"start": 481.61, "end": 482.0, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.316, "P": 0.931}},
+    {"start": 488.61, "end": 488.9, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.337, "P": 0.941}},
+    {"start": 504.0, "end": 504.37, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.327, "P": 0.936, "ctcRight": -3.42, "whisper": "Right."}},
+    {"start": 631.76, "end": 632.24, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.465, "P": 0.906, "ctcRight": -0.91}},
+    {"start": 645.74, "end": 646.22, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.393, "P": 0.919, "ctcRight": -2.9, "whisper": "right,"}},
+    {"start": 746.34, "end": 746.67, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.249, "P": 0.921, "ctcRight": -2.36, "whisper": "Right."}},
+    {"start": 971.53, "end": 971.91, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.339, "P": 0.938, "ctcRight": -1.73, "whisper": "Right."}},
+    {"start": 978.43, "end": 978.74, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.358, "P": 0.95, "ctcRight": -1.94, "whisper": "Right."}},
+    {"start": 996.65, "end": 997.06, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.299, "P": 0.855, "ctcRight": -1.2, "whisper": "the...  Right.  That's"}},
+    {"start": 1019.8, "end": 1020.27, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.512, "P": 0.918, "ctcRight": -1.76, "whisper": "Right."}},
+    {"start": 1113.47, "end": 1113.83, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.431, "P": 0.923, "ctcRight": -1.7, "whisper": "Right."}},
+    {"start": 1120.52, "end": 1120.87, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.36, "P": 0.935, "ctcRight": -1.8, "whisper": "Right."}},
+    {"start": 1364.85, "end": 1365.25, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.321, "P": 0.879, "ctcRight": -2.05, "whisper": "Right."}},
+    {"start": 1377.57, "end": 1377.91, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.422, "P": 0.889}},
+    {"start": 1505.01, "end": 1505.48, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.494, "P": 0.755, "ctcRight": -2.5, "whisper": "right,"}},
+    {"start": 1554.61, "end": 1554.99, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.477, "P": 0.869}},
+    {"start": 1608.91, "end": 1609.24, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.408, "P": 0.923, "ctcRight": -3.18, "whisper": "right."}}
+  ],
+  "kept": [
+    {"start": 124.78, "end": 125.04, "reason": "audio:listener-other:isolated heard 'She'"},
+    {"start": 249.86, "end": 250.1, "reason": "audio:listener-other:isolated heard '...the...'"},
+    {"start": 453.76, "end": 454.05, "reason": "audio:listener-other:isolated heard 'rod  in'"},
+    {"start": 583.35, "end": 584.63, "reason": "tx:unlocalized:?"},
+    {"start": 702.3, "end": 702.56, "reason": "audio:low-P:? heard 'name,'"},
+    {"start": 873.97, "end": 874.15, "reason": "audio:low-P:? heard 'So,'"},
+    {"start": 1137.04, "end": 1137.29, "reason": "audio:low-P:? heard 'The'"},
+    {"start": 1221.63, "end": 1221.99, "reason": "audio:low-P:? heard 'scallion,'"},
+    {"start": 1352.75, "end": 1353.11, "reason": "audio:low-P:?"},
+    {"start": 1399.96, "end": 1400.05, "reason": "audio:low-P:?"},
+    {"start": 1577.29, "end": 1577.47, "reason": "audio:listener-other:isolated heard 'He'"}
+  ],
+  "output": {
+    "filename": "230 Tape57-Side1Ch52- (edited).mp3",
+    "sha256": "b378f65932016a6f4dc63f7dabf10eba4ef6364ffde82e7244f0caf27a0cd7bc",
+    "bytes": 26631526,
+    "durationSeconds": 1664.424,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "3f69279587e04c226fe2a9b2bce08d7d7c45b9fdfaadcb6426fd2fddcf8ca736",
+    "toneFrom": {
+      "nearby": 8,
+      "same pause": 14
+    },
+    "verify": {
+      "samples": 53260416,
+      "samplesOut": 53260416,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "216 Tape47-Side1Ch42&43-.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/216%20Tape47-Side1Ch42%2643-.mp3.json",
+  "transcriptSha": "c10e1dcf0021e9945e0f5a37858e4c7868ff197c78bccff2676d3016aa38f342",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/216%20Tape47-Side1Ch42%2643-.mp3",
+    "sha256": "9a2d952c8ffdf30fbb28c6e03324015e333cb134fcca5176dc5943bae345ca21",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1809.396,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 290,
+    "transcriptRights": 37,
+    "seeds": 6,
+    "pooledSpeaker": true,
+    "listenerBursts": 21,
+    "posterior": {
+      "posFrames": 458,
+      "pooledPosFrames": 5774,
+      "negFrames": 19661,
+      "valTpr": 0.985,
+      "valFpr": 0.004
+    },
+    "edits": 23,
+    "isolated": 19,
+    "overlap": 4,
+    "editsPerHour": 45.8,
+    "removedSeconds": 7.3,
+    "seconds": 224.7
+  },
+  "edits": [
+    {"start": 1233.58, "end": 1233.88, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.245, "P": 0.846}},
+    {"start": 1288.25, "end": 1288.6, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.328, "P": 0.94, "ctcRight": -1.61, "whisper": "Right."}},
+    {"start": 1298.86, "end": 1299.13, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.23, "P": 0.917, "ctcRight": -1.87, "whisper": "Right."}},
+    {"start": 1375.56, "end": 1375.88, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.264, "P": 0.878, "ctcRight": -2.4, "whisper": "Right."}},
+    {"start": 1427.68, "end": 1427.97, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.274, "P": 0.949, "ctcRight": -1.34, "whisper": "Right."}},
+    {"start": 1461.08, "end": 1461.37, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.363, "P": 0.953, "ctcRight": -2.49, "whisper": "it's...  Right.  then"}},
+    {"start": 1483.48, "end": 1483.99, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.31, "P": 0.804, "ctcRight": -1.6, "whisper": "right  right"}},
+    {"start": 1495.02, "end": 1495.34, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.351, "P": 0.939, "ctcRight": -2.42, "whisper": "right  right"}},
+    {"start": 1499.46, "end": 1499.88, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.303, "P": 0.859, "ctcRight": -2.23, "whisper": "right"}},
+    {"start": 1502.74, "end": 1503.08, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.367, "P": 0.941, "ctcRight": -0.46, "whisper": "right  right"}},
+    {"start": 1512.09, "end": 1512.63, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.267, "P": 0.903, "ctcRight": -2.67, "whisper": "right  right  right"}},
+    {"start": 1525.29, "end": 1525.66, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.277, "P": 0.922, "ctcRight": -1.31, "whisper": "right  that"}},
+    {"start": 1542.41, "end": 1542.82, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.299, "P": 0.913, "ctcRight": -1.64, "whisper": "right."}},
+    {"start": 1606.26, "end": 1606.52, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.219, "P": 0.761}},
+    {"start": 1651.19, "end": 1651.42, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.344, "P": 0.951, "ctcRight": -2.81, "whisper": "Right."}},
+    {"start": 1661.69, "end": 1661.96, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.251, "P": 0.84, "ctcRight": -2.82}},
+    {"start": 1667.41, "end": 1667.67, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.2, "P": 0.756, "ctcRight": -3.23, "whisper": "with...  Right."}},
+    {"start": 1678.69, "end": 1678.98, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.217, "P": 0.646, "ctcRight": -3.12, "whisper": "and...  Right."}},
+    {"start": 1692.53, "end": 1692.77, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.279, "P": 0.908, "ctcRight": -2.25, "whisper": "Right.  Right,"}},
+    {"start": 1722.31, "end": 1722.57, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.062, "P": 0.896}},
+    {"start": 1727.37, "end": 1727.68, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.28, "P": 0.797, "ctcRight": -1.37, "whisper": "right,"}},
+    {"start": 1753.61, "end": 1753.81, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.383, "P": 0.803}},
+    {"start": 1771.19, "end": 1771.44, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.313, "P": 0.828}}
+  ],
+  "kept": [
+    {"start": 397.5, "end": 397.72, "reason": "tx:unlocalized:?"},
+    {"start": 407.32, "end": 409.34, "reason": "tx:unlocalized:?"},
+    {"start": 420.82, "end": 421.4, "reason": "tx:unlocalized:?"},
+    {"start": 461.08, "end": 468.5, "reason": "tx:unlocalized:?"},
+    {"start": 680.86, "end": 682.78, "reason": "tx:unlocalized:?"},
+    {"start": 1020.43, "end": 1020.71, "reason": "audio:listener-other:isolated"},
+    {"start": 1264.64, "end": 1264.99, "reason": "tx:unlocalized:?"},
+    {"start": 1498.31, "end": 1498.43, "reason": "tx:right:no loud listener core"},
+    {"start": 1509.86, "end": 1511.05, "reason": "tx:unlocalized:?"},
+    {"start": 1523.73, "end": 1524.55, "reason": "tx:unlocalized:?"},
+    {"start": 1569.24, "end": 1570.29, "reason": "tx:unlocalized:?"},
+    {"start": 1578.63, "end": 1579.0, "reason": "tx:unlocalized:?"},
+    {"start": 1592.0, "end": 1594.24, "reason": "tx:unlocalized:?"},
+    {"start": 1597.88, "end": 1598.24, "reason": "tx:unlocalized:?"},
+    {"start": 1612.07, "end": 1612.34, "reason": "audio:low-P:? heard 'Right.'"},
+    {"start": 1612.17, "end": 1613.6, "reason": "tx:unlocalized:?"},
+    {"start": 1630.34, "end": 1632.31, "reason": "tx:unlocalized:?"},
+    {"start": 1655.8, "end": 1655.93, "reason": "tx:right:no loud listener core"},
+    {"start": 1665.74, "end": 1666.8, "reason": "tx:unlocalized:?"},
+    {"start": 1678.72, "end": 1678.84, "reason": "tx:right:no loud listener core"},
+    {"start": 1683.22, "end": 1683.95, "reason": "tx:unlocalized:?"},
+    {"start": 1693.32, "end": 1693.84, "reason": "audio:low-P:? heard 'you  know,'"},
+    {"start": 1741.24, "end": 1742.55, "reason": "tx:unlocalized:?"},
+    {"start": 1751.56, "end": 1752.32, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "216 Tape47-Side1Ch42&43- (edited).mp3",
+    "sha256": "dd0615c79c705820234230d5f9e51c17711b9f80cd5f5e575763876075214eef",
+    "bytes": 28951651,
+    "durationSeconds": 1809.432,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "d64033244f54c26e722d16a777a00edc367361ba655de6352853543d6d121554",
+    "toneFrom": {
+      "same pause": 20,
+      "nearby": 3
+    },
+    "verify": {
+      "samples": 57900672,
+      "samplesOut": 57900672,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}
