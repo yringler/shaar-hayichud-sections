@@ -7,7 +7,7 @@
   "wordTimes": "retimed",
   "method": {
     "name": "audio-led-listener",
-    "version": 1,
+    "version": 2,
     "thresholds": {
       "burstHiDb": 14.0,
       "burstLoDb": 7.0,
@@ -21,9 +21,11 @@
       "minSeeds": 30,
       "posFrameSpeaker": 0.15,
       "audioMinPosterior": 0.6,
+      "overlapEdits": true,
       "residualSpeaker": 0.05,
       "residualMaxSeconds": 0.6,
       "residualMinCoreFrames": 5,
+      "overlapOnsetFrames": 0,
       "maxEditSeconds": 0.6,
       "corePosterior": 0.8,
       "coreDb": 20.0,
@@ -67,7 +69,7 @@
     "overlap": 2,
     "editsPerHour": 110.1,
     "removedSeconds": 6.6,
-    "seconds": 268.4
+    "seconds": 136.5
   },
   "edits": [
     {"start": 78.75, "end": 79.05, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.432, "P": 0.951, "ctcRight": -1.22, "whisper": "So,"}},

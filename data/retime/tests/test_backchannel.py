@@ -1,14 +1,15 @@
-"""Pure parts of retime.backchannel: no models, no network (scipy is in the `edit` extra)."""
+"""Pure parts of retime.backchannel: no models, no network. The burst tests need scipy (the `edit` extra)."""
+import importlib.util
 import json
 
 import numpy as np
 import pytest
 
-pytest.importorskip("scipy")
+from retime.backchannel import catalog, dsp, editlist, media
+from retime.backchannel import detect as D
+from retime.backchannel.words import Words, transcript_rights
 
-from retime.backchannel import catalog, dsp, editlist, media  # noqa: E402
-from retime.backchannel import detect as D  # noqa: E402
-from retime.backchannel.words import Words, transcript_rights  # noqa: E402
+needs_scipy = pytest.mark.skipif(importlib.util.find_spec("scipy") is None, reason="needs the edit extra (scipy)")
 
 SR = dsp.SR
 
@@ -32,6 +33,7 @@ def place(w, *parts):
 # ---------------------------------------------------------------- burst detection
 
 
+@needs_scipy
 def test_burst_in_pause_is_found_with_its_edges():
     w = place(hiss(12 * SR), tone(5.0, 0.3))
     e, fl = dsp.energy_floor(w)
@@ -42,6 +44,7 @@ def test_burst_in_pause_is_found_with_its_edges():
     assert b["pre"] > 1 and b["post"] > 1 and b["peak"] > dsp.BURST_HI_DB
 
 
+@needs_scipy
 def test_long_speech_and_no_pause_are_not_bursts():
     # 1.5 s of "speech" is too long; two 0.2 s bursts 50 ms apart merge, 0.3 s + 0.05 s gap lacks a pause
     w = place(hiss(14 * SR), tone(2.0, 1.5), tone(7.0, 0.2), tone(7.25, 0.2))
@@ -206,12 +209,12 @@ def test_cap_cuts_overlong_edit_to_loud_core_plus_tail():
     assert int(fr.core(30, 140).sum()) == 30
 
 
-def test_partial_never_cuts_into_preceding_teacher_tail():
-    ps = np.full(100, 0.1)
+def test_partial_never_cuts_into_teacher_tail_or_onset():
+    ps = np.full(100, 0.1)  # low posterior, 25 dB over the floor: the teacher everywhere but 30-60
     ps[30:60] = 0.9
-    fr = frames(ps, rabbi=range(20, 30))
+    fr = frames(ps)
     a, b = fr.partial(20, 70)
-    assert a == 30 and b == 70
+    assert a == 30 and b == 60
 
 
 def test_transcript_rights_standalone_and_bracket():
@@ -268,3 +271,24 @@ def test_upload_credentials_file_wins_over_stray_shell_vars(tmp_path, monkeypatc
     monkeypatch.delenv("R2_ENV_FILE", raising=False)
     with pytest.raises(SystemExit):
         upload.read_env(None)  # environment lacks R2_ENDPOINT / R2_BUCKET
+
+
+def test_select_rules_loud_core_overlap_switch_and_cap(monkeypatch):
+    ps = np.full(400, 0.05)
+    db = np.full(400, 3.0)
+    ps[100:130], db[100:130] = 0.95, 30.0  # loud listener "right" ...
+    db[130:160] = 25.0  # ... with the teacher right after it (low posterior, loud): an overlap
+    ps[250:280], db[250:280] = 0.95, 12.0  # high posterior but quiet: no loud core
+    fr = frames(ps, db=db)
+    cands = [
+        {"start": 1.0, "end": 1.31, "src": "tx", "label": "right", "cls": "overlap", "spk": 0.3, "P": 0.9},
+        {"start": 2.5, "end": 2.8, "src": "tx", "label": "right", "cls": "isolated", "spk": 0.3, "P": 0.9},
+        {"start": 3.0, "end": 3.2, "src": "audio", "label": "listener-other", "cls": "isolated", "spk": 0.2},
+    ]
+    edits, kept = D.select(cands, fr)
+    assert [(e["class"], e["action"]) for e in edits] == [("overlap", "partial-fill")]
+    assert edits[0]["end"] <= 1.30  # stops at the teacher's first frame
+    assert {k["reason"] for k in kept} == {"tx:right:no loud listener core", "audio:listener-other:isolated"}
+    monkeypatch.setattr(D, "OVERLAP", False)
+    edits, kept = D.select(cands, fr)
+    assert edits == [] and any("overlap edits turned off" in k["reason"] for k in kept)

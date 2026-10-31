@@ -18,7 +18,8 @@ from . import dsp, editlist, features, listener, media, words
 from .models import Models, describe
 
 METHOD_NAME = "audio-led-listener"
-METHOD_VERSION = 1
+METHOD_VERSION = 2  # 2: partial-fills stop at the teacher's onset (1 allowed 100 ms into it)
+POOL_VERSION = 1  # the listener pool depends on stage 1 and the speaker rules only
 
 # Reference tapes for the pooled listener (embeddings and posterior training frames). A tape with
 # fewer than listener.MIN_SEEDS transcript seeds, or too few listener frames, borrows from these.
@@ -81,7 +82,7 @@ class Context:
         """{lecture id: (listener embeddings, listener frames)} of the reference tapes (built once, cached)."""
         if self._pool is not None:
             return self._pool
-        path = self.work / f"pool-v{METHOD_VERSION}.npz"
+        path = self.work / f"pool-v{POOL_VERSION}.npz"
         self.work.mkdir(parents=True, exist_ok=True)
         with open(self.work / "pool.lock", "w") as lk:
             fcntl.flock(lk, fcntl.LOCK_EX)
@@ -138,7 +139,8 @@ class Context:
     def is_current(self, lec: Lecture, wd: words.Words) -> bool:
         doc = editlist.read(self.edits_path(lec))
         return bool(doc) and doc.get("transcriptSha") == wd.transcript_sha and doc.get("wordTimes") == wd.source and \
-            doc.get("method", {}).get("version") == METHOD_VERSION and doc.get("method", {}).get("name") == METHOD_NAME
+            doc.get("method", {}).get("version") == METHOD_VERSION and doc.get("method", {}).get("name") == METHOD_NAME and \
+            doc.get("method", {}).get("thresholds") == D.thresholds()
 
     def analyse(self, lec: Lecture) -> dict:
         """Everything detection needs short of the final selection (candidates, frames, decisions)."""

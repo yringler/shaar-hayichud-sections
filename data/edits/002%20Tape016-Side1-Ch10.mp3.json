@@ -7,7 +7,7 @@
   "wordTimes": "retimed",
   "method": {
     "name": "audio-led-listener",
-    "version": 1,
+    "version": 2,
     "thresholds": {
       "burstHiDb": 14.0,
       "burstLoDb": 7.0,
@@ -21,9 +21,11 @@
       "minSeeds": 30,
       "posFrameSpeaker": 0.15,
       "audioMinPosterior": 0.6,
+      "overlapEdits": true,
       "residualSpeaker": 0.05,
       "residualMaxSeconds": 0.6,
       "residualMinCoreFrames": 5,
+      "overlapOnsetFrames": 0,
       "maxEditSeconds": 0.6,
       "corePosterior": 0.8,
       "coreDb": 20.0,
@@ -67,7 +69,7 @@
     "overlap": 5,
     "editsPerHour": 155.6,
     "removedSeconds": 31.5,
-    "seconds": 128.6
+    "seconds": 124.3
   },
   "edits": [
     {"start": 55.26, "end": 55.63, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.271, "P": 0.954, "ctcRight": -0.88, "whisper": "gonna...  Right."}},

@@ -186,7 +186,7 @@ count at 0 on the hand-labelled evaluation windows.
 
 | | |
 |---|---|
-| `detect` | writes `data/edits/<encoded lecture id>.json` (atomically). `--render` renders each lecture right after; `--features-only` only fills the stage-1 cache |
+| `detect` | writes `data/edits/<encoded lecture id>.json` (atomically). `--render` renders each lecture right after; `--features-only` only fills the stage-1 cache; `--no-overlap` makes no partial-fill edits (every overlap candidate goes to `kept`) |
 | `render` | fills, encodes and verifies the edited mp3 into `<cache>/edited/<CDN folder>/<stem> (edited).mp3`, and records it in the edit list's `output` |
 | `contact` | review clips per lecture into `<cache>/contact/<encoded id>/` (3 s of the original, a beep, the same 3 s edited) with `index.json`: every overlap edit, every capped edit, the 3 weakest speaker scores and an even sample of the rest (`--per-lecture`, default 8). `--reel` joins all of them into `<cache>/contact/review-reel.mp3` + `.json` |
 | `backchannel-upload` | the upload plan and upload (below) |
@@ -218,7 +218,7 @@ audio-led detection does not need either. Models: speechbrain
 `spkrec-ecapa-voxceleb` and faster-whisper `base` (pinned revisions,
 downloaded once to `<cache>/models/`), and MMS_FA (shared with `retime`).
 
-### Method (`src/retime/backchannel/`, version 1)
+### Method (`src/retime/backchannel/`, version 2)
 
 1. **Bursts** (`dsp.py`): speech-band (300-3400 Hz) energy per 10 ms over a
    rolling 3 s 10th-percentile floor; runs above floor + 7 dB that reach
@@ -242,7 +242,7 @@ downloaded once to `<cache>/models/`), and MMS_FA (shared with `retime`).
    no burst explained (residuals; confirmed by an ECAPA score over 0.05).
 5. **Edits** (`detect.py`): isolated "right"s are filled whole; residuals
    that touch the teacher's speech become `partial-fill` (never into a
-   preceding teacher tail, at most 100 ms into a following onset). A residual
+   preceding teacher tail, never into a following onset). A residual
    needs a loud listener core (5+ frames with posterior > 0.8 and energy 20 dB
    over the floor): the posterior also runs high on quiet frames and on the
    decaying tail of the teacher's words. Any edit over 0.6 s is cut to its
@@ -253,6 +253,18 @@ downloaded once to `<cache>/models/`), and MMS_FA (shared with `retime`).
 600-1200 s, 214 1200-1800 s; 93 listener events): precision 0.987, recall
 0.828, teacher damage 0 (October 2026). Recall on "right"s that overlap the
 teacher is low (4 of 10); they are left in rather than risk the teacher.
+
+**Whole series (October 2026).** 107 tapes, 47.2 h: 5,043 edits (4,406
+isolated, 637 partial-fill overlaps), 29.3 min of audio filled, against
+5,299 standalone "Right."s in the transcripts. An automatic screen
+transcribed 4 s around 1,643 edits (every overlap and capped edit, plus 8
+random per tape) before and after with faster-whisper: a back-channel word
+was heard near 1,292 of them before and 34 after. A teacher word near the
+edit went missing in 6.6% of audio-led isolated edits (the screen's own
+noise: on these tapes whisper's wording changes from run to run) but in 15%
+of overlap and transcript-found isolated edits, so some of those may clip
+the teacher. Listen to the overlap clips (`contact`) before going live; if
+they do, rerun `detect --no-overlap --render`.
 
 ### Render and verification (`render.py`)
 

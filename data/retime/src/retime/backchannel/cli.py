@@ -20,7 +20,7 @@ from pathlib import Path
 
 from .. import files
 from ..cli import default_cache
-from . import catalog, contact as C, editlist, pipeline, render as RD, words
+from . import catalog, contact as C, detect as D, editlist, pipeline, render as RD, words
 
 MARKEL_SERIES = "37"
 
@@ -42,6 +42,7 @@ def parse_args(argv=None):
         s.add_argument("--dry-run", action="store_true", help="list what would be done")
         if name == "detect":
             s.add_argument("--render", action="store_true", help="render each lecture right after detecting it")
+            s.add_argument("--no-overlap", action="store_true", help="no partial-fill edits (keep every overlap candidate)")
             s.add_argument("--features-only", action="store_true", help="only compute and cache the stage-1 features (the slow part)")
         if name == "contact":
             s.add_argument("--per-lecture", type=int, default=8, help="clips per lecture (overlap and capped edits always)")
@@ -77,6 +78,8 @@ def main(argv=None) -> int:
     t0 = time.time()
     data = a.data.resolve()
     cache = (a.cache or default_cache()).expanduser().resolve()
+    if getattr(a, "no_overlap", False):
+        D.OVERLAP = False
     ctx = pipeline.Context(data, cache, a.threads)
     todo = select(a, data, ctx.by_id)
     for stale in (data / "edits").glob(".*.tmp*"):

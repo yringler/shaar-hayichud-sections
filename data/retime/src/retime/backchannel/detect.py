@@ -10,8 +10,8 @@ Candidates:
 
 Edits (precision first; every other candidate goes to `kept` with its reason):
   * isolated: audio-led "right"s, and transcript residuals not touching teacher speech;
-  * overlap (partial-fill): transcript residuals that touch teacher speech, trimmed so they never
-    cut into a preceding teacher tail and run at most 100 ms into a following onset;
+  * overlap (partial-fill): transcript residuals that touch teacher speech, trimmed so they stop at
+    the teacher's frames on both sides (never into a preceding tail or a following onset);
   * a transcript residual needs a loud listener core: at least MIN_CORE frames with Ps > CAP_P and
     energy CORE_DB over the floor. The posterior runs high on quiet frames and on the decaying
     tail of the teacher's words, which it was never trained on; a core that is only such frames
@@ -33,7 +33,9 @@ LIS_P, LIS_DB = 0.5, 7.0
 AUDIO_MIN_P = 0.6  # mean posterior of an audio-led edit (0.75 when its speaker score is under POS_SPK)
 TX_SPK = 0.05  # residual speaker score to count as "right"
 TX_MAX = 0.6  # s, longest residual edit (after capping)
+OVERLAP = True  # make partial-fill edits at all (`detect --no-overlap` turns them off)
 OVL_MIN = 0.06  # s, shortest partial-fill
+OVL_ONSET = 0  # frames a partial-fill may run into a following teacher onset (the experiment allowed 10)
 MAX_EDIT = 0.6  # s, longest edit; longer ones are capped to the loud listener core
 CAP_P = 0.8  # listener core: posterior above this ...
 CORE_DB = 20.0  # ... and energy this far over the floor
@@ -47,8 +49,8 @@ def thresholds() -> dict:
         "burstHiDb": dsp.BURST_HI_DB, "burstLoDb": dsp.BURST_LO_DB, "burstMinPause": dsp.BURST_MIN_PAUSE,
         "burstDur": [dsp.BURST_MIN_DUR, dsp.BURST_MAX_DUR], "speaker": listener.SPK_TH, "ctcRight": listener.CTC_TH,
         "minSeeds": listener.MIN_SEEDS, "posFrameSpeaker": listener.POS_SPK, "audioMinPosterior": AUDIO_MIN_P,
-        "residualSpeaker": TX_SPK, "residualMaxSeconds": TX_MAX, "residualMinCoreFrames": MIN_CORE,
-        "maxEditSeconds": MAX_EDIT, "corePosterior": CAP_P, "coreDb": CORE_DB, "capTailFrames": TAIL, "padFrames": PAD,
+        "overlapEdits": OVERLAP, "residualSpeaker": TX_SPK, "residualMaxSeconds": TX_MAX, "residualMinCoreFrames": MIN_CORE,
+        "overlapOnsetFrames": OVL_ONSET, "maxEditSeconds": MAX_EDIT, "corePosterior": CAP_P, "coreDb": CORE_DB, "capTailFrames": TAIL, "padFrames": PAD,
     }
 
 
@@ -126,7 +128,7 @@ class Frames:
         return x, min(y, x + max_frames)
 
     def partial(self, a: int, b: int):
-        """Trim an overlap span: never into a preceding teacher tail, at most 100 ms into a following onset."""
+        """Trim an overlap span: never into a preceding teacher tail, at most OVL_ONSET frames into a following onset."""
         core = np.where(self.Ps[a:b] > LIS_P)[0]
         if not len(core):
             return None
@@ -136,7 +138,7 @@ class Frames:
             a = a + pre[-1] + 1
         post = np.where(self.rabc[cb:b])[0]
         if len(post):
-            b = min(b, cb + post[0] + 10)
+            b = min(b, cb + post[0] + OVL_ONSET)
         return a, b
 
 
@@ -243,6 +245,9 @@ def select(cands: list[dict], fr: Frames) -> tuple[list[dict], list[dict]]:
             if cls == "isolated":
                 edits.append({"start": r2(x / 100), "end": r2(y / 100), "class": "isolated", "action": "fill",
                               "src": "tx", "scores": scores(c, **ex)})
+                continue
+            if not OVERLAP:
+                keep(c, "tx:right:overlap:overlap edits turned off")
                 continue
             p = fr.partial(x, y)
             if p is None or (p[1] - p[0]) / 100 < OVL_MIN:
