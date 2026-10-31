@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "217 Tape47-Side2 Ch43-.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/217%20Tape47-Side2%20Ch43-.mp3.json",
+  "transcriptSha": "2d22b8899fa91f30c08d2c353c2df00a17a10fc4006d6079267d72549a6614e7",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/217%20Tape47-Side2%20Ch43-.mp3",
+    "sha256": "6895db4abbcdccd6ebb4acc36533fa862ae95b5e1b8e00bf14caad627bfbb667",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 895.824,
+    "bitrate": 96000
+  },
+  "stats": {
+    "bursts": 159,
+    "transcriptRights": 8,
+    "seeds": 2,
+    "pooledSpeaker": true,
+    "listenerBursts": 10,
+    "posterior": {
+      "posFrames": 195,
+      "pooledPosFrames": 5774,
+      "negFrames": 17712,
+      "valTpr": 0.997,
+      "valFpr": 0.005
+    },
+    "edits": 10,
+    "isolated": 8,
+    "overlap": 2,
+    "editsPerHour": 40.2,
+    "removedSeconds": 3.44,
+    "seconds": 116.8
+  },
+  "edits": [
+    {"start": 50.34, "end": 50.72, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.302, "P": 0.807, "ctcRight": -2.96, "whisper": "Right."}},
+    {"start": 53.11, "end": 53.63, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.359, "P": 0.865, "ctcRight": -1.3}},
+    {"start": 74.61, "end": 74.9, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.318, "P": 0.977, "ctcRight": -2.49, "whisper": "Right."}},
+    {"start": 84.1, "end": 84.58, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.273, "P": 0.946, "ctcRight": -3.38, "whisper": "Right."}},
+    {"start": 88.19, "end": 88.35, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.379, "P": 0.795}},
+    {"start": 498.44, "end": 498.73, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.206, "P": 0.966, "ctcRight": -2.42, "whisper": "right  no"}},
+    {"start": 528.75, "end": 529.18, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.241, "P": 0.968, "ctcRight": -1.83, "whisper": "right  by"}},
+    {"start": 814.5, "end": 814.77, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.361, "P": 0.921, "ctcRight": -3.21, "whisper": "it's  right."}},
+    {"start": 819.39, "end": 819.65, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.362, "P": 0.733}},
+    {"start": 843.63, "end": 843.99, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.348, "P": 0.899, "ctcRight": -1.51, "whisper": "Right."}}
+  ],
+  "kept": [
+    {"start": 37.03, "end": 37.65, "reason": "tx:right:no loud listener core"},
+    {"start": 194.95, "end": 195.64, "reason": "audio:listener-other:isolated heard 'by  now.'"},
+    {"start": 416.74, "end": 417.02, "reason": "audio:low-P:? heard 'and...  Five  hands.'"},
+    {"start": 637.88, "end": 640.11, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "217 Tape47-Side2 Ch43- (edited).mp3",
+    "sha256": "c4d3da43ebfcece090aa8898bff3be850cbf376ad6eab3e28e340b2ecb2d1bcc",
+    "bytes": 14334497,
+    "durationSeconds": 895.86,
+    "bitrate": 128000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "ae38cb7fad8310d6668b9f303f1994b52e31c6baaf872f0ff47253fb80981250",
+    "toneFrom": {
+      "same pause": 8,
+      "nearby": 2
+    },
+    "verify": {
+      "samples": 28666368,
+      "samplesOut": 28666368,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 25.9,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}

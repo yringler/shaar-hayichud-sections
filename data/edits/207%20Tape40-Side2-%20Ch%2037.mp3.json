@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "207 Tape40-Side2- Ch 37.mp3",
+  "mode": "fill",
+  "transcript": "transcripts/207%20Tape40-Side2-%20Ch%2037.mp3.json",
+  "transcriptSha": "1e992807d5609350f7d12a96ddb710f63597824799d2bc602388c2de5cd778d7",
+  "wordTimes": "retimed",
+  "method": {
+    "name": "audio-led-listener",
+    "version": 1,
+    "thresholds": {
+      "burstHiDb": 14.0,
+      "burstLoDb": 7.0,
+      "burstMinPause": 0.1,
+      "burstDur": [
+        0.08,
+        0.7
+      ],
+      "speaker": 0.1,
+      "ctcRight": -1.0,
+      "minSeeds": 30,
+      "posFrameSpeaker": 0.15,
+      "audioMinPosterior": 0.6,
+      "residualSpeaker": 0.05,
+      "residualMaxSeconds": 0.6,
+      "residualMinCoreFrames": 5,
+      "maxEditSeconds": 0.6,
+      "corePosterior": 0.8,
+      "coreDb": 20.0,
+      "capTailFrames": 15,
+      "padFrames": 2
+    },
+    "models": {
+      "speaker": "speechbrain/spkrec-ecapa-voxceleb@0f99f2d0ebe8",
+      "keywordCtc": "torchaudio MMS_FA (with <star>)",
+      "keywordAsr": "Systran/faster-whisper-base@ebe41f70d5b6"
+    },
+    "pool": [
+      "063 Ch5 part4.mp3",
+      "002 Tape016-Side1-Ch10.mp3",
+      "214 Tape46-Side1 Ch41&42.mp3"
+    ]
+  },
+  "source": {
+    "url": "https://media.shaarhayichudresources.com/Markel%20Advanced%20Compact%20Seminar/Edited%20advanced%20pt%202%20%2034-%20end/207%20Tape40-Side2-%20Ch%2037.mp3",
+    "sha256": "18d08c233cfa206123c8f4a04b3eabf6556e1bc9edc364ab203d4331d0cee4e9",
+    "sampleRate": 32000,
+    "channels": 2,
+    "durationSeconds": 1603.512,
+    "bitrate": 80000
+  },
+  "stats": {
+    "bursts": 212,
+    "transcriptRights": 44,
+    "seeds": 14,
+    "pooledSpeaker": true,
+    "listenerBursts": 36,
+    "posterior": {
+      "posFrames": 877,
+      "pooledPosFrames": 5774,
+      "negFrames": 19141,
+      "valTpr": 0.997,
+      "valFpr": 0.017
+    },
+    "edits": 37,
+    "isolated": 35,
+    "overlap": 2,
+    "editsPerHour": 83.1,
+    "removedSeconds": 14.99,
+    "seconds": 166.4
+  },
+  "edits": [
+    {"start": 125.73, "end": 126.11, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.221, "P": 0.862, "ctcRight": -0.89, "whisper": "Right."}},
+    {"start": 286.05, "end": 286.59, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.276, "P": 0.849, "ctcRight": -1.43, "whisper": "Right."}},
+    {"start": 295.81, "end": 296.1, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.2, "P": 0.942}},
+    {"start": 300.9, "end": 301.29, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.211, "P": 0.968, "ctcRight": -0.54, "whisper": "Right."}},
+    {"start": 325.06, "end": 325.49, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.233, "P": 0.973, "ctcRight": -0.55, "whisper": "even...  Right.  It's"}},
+    {"start": 343.92, "end": 344.36, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.364, "P": 0.951, "ctcRight": -0.86, "whisper": "right."}},
+    {"start": 379.65, "end": 379.98, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.26, "P": 0.896, "ctcRight": -1.32}},
+    {"start": 389.43, "end": 389.86, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.379, "P": 0.964, "ctcRight": -0.62, "whisper": "right."}},
+    {"start": 447.08, "end": 447.48, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.233, "P": 0.952, "ctcRight": -3.73, "whisper": "Right."}},
+    {"start": 463.69, "end": 464.07, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.432, "P": 0.984, "ctcRight": -2.22}},
+    {"start": 508.33, "end": 508.58, "class": "isolated", "action": "fill", "src": "tx", "scores": {"spk": 0.267, "P": 0.901}},
+    {"start": 525.71, "end": 526.11, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.335, "P": 0.944, "ctcRight": -1.52}},
+    {"start": 653.49, "end": 654.03, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.25, "P": 0.851, "ctcRight": -3.52}},
+    {"start": 689.92, "end": 690.3, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.325, "P": 0.893, "ctcRight": -2.03}},
+    {"start": 699.96, "end": 700.36, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.243, "P": 0.97, "ctcRight": -0.2, "whisper": "Right."}},
+    {"start": 734.3, "end": 734.6, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.267, "P": 0.788}},
+    {"start": 774.11, "end": 774.52, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.222, "P": 0.973, "ctcRight": -2.44, "whisper": "Right."}},
+    {"start": 796.57, "end": 796.93, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.348, "P": 0.942, "ctcRight": -3.27, "whisper": "Right."}},
+    {"start": 826.28, "end": 826.66, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.23, "P": 0.893, "ctcRight": -1.15, "whisper": "Right."}},
+    {"start": 834.66, "end": 835.06, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.409, "P": 0.958, "ctcRight": -1.34, "whisper": "Right.  So"}},
+    {"start": 846.95, "end": 847.41, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.249, "P": 0.887, "ctcRight": -0.64, "whisper": "right  and"}},
+    {"start": 885.29, "end": 885.71, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.29, "P": 0.934, "ctcRight": -0.9, "whisper": "right  right"}},
+    {"start": 905.75, "end": 906.16, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.428, "P": 0.952, "ctcRight": -2.55, "whisper": "right  and"}},
+    {"start": 910.0, "end": 910.47, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.394, "P": 0.934, "ctcRight": -1.52, "whisper": "right"}},
+    {"start": 914.35, "end": 914.83, "class": "overlap", "action": "partial-fill", "src": "tx", "scores": {"spk": 0.36, "P": 0.896}},
+    {"start": 936.07, "end": 936.5, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.356, "P": 0.899, "ctcRight": -1.18, "whisper": "right  or"}},
+    {"start": 950.69, "end": 951.09, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.196, "P": 0.938, "ctcRight": -1.82, "whisper": "right  so"}},
+    {"start": 959.37, "end": 959.78, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.303, "P": 0.949, "ctcRight": -0.82, "whisper": "right  they"}},
+    {"start": 1030.93, "end": 1031.33, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.377, "P": 0.955, "ctcRight": -1.49, "whisper": "Right."}},
+    {"start": 1033.93, "end": 1034.34, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.288, "P": 0.951, "ctcRight": -1.53, "whisper": "Right."}},
+    {"start": 1043.98, "end": 1044.36, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.201, "P": 0.934, "ctcRight": -2.37}},
+    {"start": 1083.72, "end": 1084.07, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.284, "P": 0.942, "ctcRight": -1.67, "whisper": "up"}},
+    {"start": 1414.9, "end": 1415.24, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.263, "P": 0.951, "ctcRight": -1.97, "whisper": "Right."}},
+    {"start": 1435.71, "end": 1436.17, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.217, "P": 0.857, "ctcRight": -1.21, "whisper": "Right."}},
+    {"start": 1482.6, "end": 1483.02, "class": "isolated", "action": "fill", "src": "audio+tx", "scores": {"spk": 0.342, "P": 0.867, "ctcRight": -2.78, "whisper": "this..."}},
+    {"start": 1513.33, "end": 1513.78, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.27, "P": 0.909, "ctcRight": -0.97, "whisper": "to...  Right."}},
+    {"start": 1522.78, "end": 1523.25, "class": "isolated", "action": "fill", "src": "audio", "scores": {"spk": 0.202, "P": 0.919, "ctcRight": -3.35, "whisper": "Right."}}
+  ],
+  "kept": [
+    {"start": 113.41, "end": 113.6, "reason": "audio:low-P:? heard 'fixed.'"},
+    {"start": 124.06, "end": 124.95, "reason": "tx:unlocalized:?"},
+    {"start": 141.68, "end": 143.21, "reason": "tx:unlocalized:?"},
+    {"start": 392.59, "end": 392.89, "reason": "audio:listener-other:isolated heard 'And'"},
+    {"start": 517.68, "end": 518.06, "reason": "audio:listener-other:isolated"},
+    {"start": 667.98, "end": 668.83, "reason": "tx:unlocalized:?"},
+    {"start": 712.48, "end": 713.23, "reason": "tx:unlocalized:?"},
+    {"start": 766.27, "end": 766.72, "reason": "tx:unlocalized:?"},
+    {"start": 816.24, "end": 817.66, "reason": "tx:unlocalized:?"},
+    {"start": 864.9, "end": 865.81, "reason": "tx:unlocalized:?"},
+    {"start": 1102.74, "end": 1104.58, "reason": "tx:unlocalized:?"},
+    {"start": 1272.92, "end": 1273.86, "reason": "tx:unlocalized:?"},
+    {"start": 1295.28, "end": 1296.11, "reason": "tx:unlocalized:?"},
+    {"start": 1413.18, "end": 1414.17, "reason": "tx:unlocalized:?"}
+  ],
+  "output": {
+    "filename": "207 Tape40-Side2- Ch 37 (edited).mp3",
+    "sha256": "75bc7393fd31568563b65c61b856dec202d0eb95897817082c921ff1c5ae926d",
+    "bytes": 22450297,
+    "durationSeconds": 1603.548,
+    "bitrate": 112000,
+    "sampleRate": 32000,
+    "channels": 2,
+    "encoder": "libmp3lame via ffmpeg version 6.1.1-3ubuntu5, CBR",
+    "editsSha": "803cc4af60be304d7bedbb9f52d99532e90e48dcef1b3927f374333fdfdcb05d",
+    "toneFrom": {
+      "nearby": 8,
+      "same pause": 29
+    },
+    "verify": {
+      "samples": 51312384,
+      "samplesOut": 51312384,
+      "lengthDiff": 0,
+      "lags": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxZeroRunInEdits": 0,
+      "snrOutsideDb": 26.0,
+      "ok": true,
+      "durationDiffSeconds": 0.036
+    }
+  }
+}
