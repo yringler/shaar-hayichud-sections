@@ -12,11 +12,12 @@ Hayichud comes from this directory :
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
+| `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
-| `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript) | hand |
+| `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript, retimed words, audio edits) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
-| `retime/` | Python forced-alignment re-timing tool; never needed by the build or deploy ([README](retime/README.md)) | hand |
+| `retime/` | Python forced-alignment re-timing tool and the back-channel remover (`backchannel`); never needed by the build or deploy ([README](retime/README.md)) | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
 
 `site/`'s `yarn build` runs the data build first, so a Cloudflare Pages deploy
@@ -447,6 +448,41 @@ count, non-monotone times), so it can never be silently ignored, and on an
 alignment whose `method.times` differs from what the lecture has now (rerun
 `yarn align` after retiming). Python is only needed to make the files; the
 build and the deploy only read them.
+
+### Back-channel edits (`data/retime/`, `backchannel`)
+
+In the Rabbi Markel series a listener answers the teacher with a standalone
+"Right." about 100-135 times an hour. `backchannel` (in `data/retime/`, behind
+`uv sync --extra edit`; [README](retime/README.md#back-channel-removal-backchannel))
+finds them from the audio (short energy bursts in pauses, a speaker check
+against the teacher, two keyword checks, a per-tape 10 ms listener
+posterior) and from the transcript's "Right." brackets, and writes
+`edits/<lecture>.json` (`schema/sources/audio-edits.schema.json`): the spans,
+each `isolated` (`fill`) or `overlap` (`partial-fill`, only the part outside
+the teacher's speech), with their scores, the candidates it `kept`, the
+source file's sha256, rate, channels and duration, and, once rendered, the
+`output` file's sha256, duration, bitrate and verification.
+
+```bash
+cd data/retime && uv sync --extra edit
+uv run backchannel detect --all-markel --render   # resumable; edits/ + <cache>/edited/
+uv run backchannel contact --all-markel --reel    # clips to listen to
+```
+
+Edits are filled with room tone, never cut, so the edited file has the
+original's duration and every time in `transcripts/`, `retimed/`,
+`alignments/` and `outlines/` holds for both files. Precision comes first: a
+missed "right" stays, the teacher's words are never touched (0 damaged
+words on the labelled windows; precision 0.99, recall 0.83).
+
+The edited mp3 is uploaded next to the original as `<stem> (edited).mp3`
+(the original is kept), and only then does `classes.txt` switch to it, with
+an `@ <old id>` line so the lecture keeps its ID (`backchannel-upload
+--classes-patch` writes that change). The data build checks every edit list:
+schema, file name, lecture and transcript exist, `transcriptSha` matches the
+transcript (stale is an error, as for `retimed/`), edits ordered, disjoint
+and inside the audio, and a recorded render made from the current edits.
+Nothing in `edits/` is published.
 
 ### Publishing audio
 
