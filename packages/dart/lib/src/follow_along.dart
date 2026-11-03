@@ -129,9 +129,15 @@ List<ChapterAlignmentsRef> rankRefs(
 ) {
   int cmp(ChapterAlignmentsRef a, ChapterAlignmentsRef b) {
     int flag(bool v) => v ? 0 : 1;
-    final ds =
-        flag(seriesOf(a.lecture) == pref.seriesId) -
-        flag(seriesOf(b.lecture) == pref.seriesId);
+    // Like the site's `lectures[i]?.seriesId === pref.seriesId`: a lecture
+    // with no series (index out of range) never counts as preferred, even
+    // when no series is preferred.
+    bool preferred(int lecture) {
+      final s = seriesOf(lecture);
+      return s != null && s == pref.seriesId;
+    }
+
+    final ds = flag(preferred(a.lecture)) - flag(preferred(b.lecture));
     if (ds != 0) return ds;
     final dc =
         flag(a.lecture == pref.currentLecture) -

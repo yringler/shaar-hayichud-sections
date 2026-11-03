@@ -78,6 +78,8 @@ valid v1 catalog. Refresh the bundled copy when you release the app.
 
 ## Versions
 
+- **1.3.1**: `rankRefs` never treats a lecture without a series as the
+  preferred one (parity with the site for out-of-range indexes).
 - **1.3.0**: follow-along logic, ported from the site's
   `audio/model.ts` and checked against the same vectors: `spans` /
   `spanAt` (the current line or transcript paragraph at a time), `rankRefs`

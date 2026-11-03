@@ -137,6 +137,29 @@ void main() {
     });
   });
 
+  test('rankRefs: a lecture with no series is never the preferred one', () {
+    // Lecture 5 is out of range (no series). With no preferred series it
+    // must not jump ahead of a better real lecture (the site compares
+    // undefined with null as unequal).
+    String? seriesOf(int i) => i == 0 ? '0' : null;
+    expect(
+      rankRefs(
+        [ref(5, 2, 0.5), ref(0, 1, 0.9)],
+        seriesOf,
+        const RefPreference(),
+      ).map((r) => r.lecture),
+      [0, 5],
+    );
+    expect(
+      rankRefs(
+        [ref(5, 2, 0.9), ref(0, 1, 0.5)],
+        seriesOf,
+        const RefPreference(seriesId: '0'),
+      ).map((r) => r.lecture),
+      [0, 5],
+    );
+  });
+
   group('ChapterAlignmentsIndex', () {
     final data = ChapterAlignments(
       chapter: 'chapter_10',
