@@ -78,6 +78,10 @@ valid v1 catalog. Refresh the bundled copy when you release the app.
 
 ## Versions
 
+- **1.5.0**: `ChapterAlignmentsLecture.chapterStartSeconds` (where a class's
+  part on a chapter starts) and `playStart` (and
+  `ChapterAlignmentsIndex.playStart`): a tap on a class's first line on a
+  chapter plays a short lead-in, or offers a longer one (an intro).
 - **1.4.0**: `lineInClass` and `playableRefs` (and
   `ChapterAlignmentsIndex.playableRefs`): a chosen class plays every line it
   reads; other lines play the best other class and can be marked.

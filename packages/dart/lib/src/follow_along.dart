@@ -180,6 +180,46 @@ List<ChapterAlignmentsRef> playableRefs(
   return rankRefs(own.isNotEmpty ? own : refs, seriesOf, pref);
 }
 
+/// A lead-in shorter than this before a class's first line on a chapter is
+/// played rather than offered ([playStart]): "let's begin", a pause, the
+/// hand-off from the previous chapter.
+const double introSnapSeconds = 15;
+
+/// Where "play from here" on a line starts, for [ref] (the one
+/// [playableRefs] chose), and an earlier start to offer, if any.
+///
+/// A class's first line on a chapter (no ref of that class here starts
+/// earlier) can come well after the class's part on the chapter starts
+/// ([ChapterAlignmentsLecture.chapterStartSeconds]: an intro, a review, the
+/// hand-off from the previous chapter, or lines the aligner missed). A
+/// lead-in shorter than [snap] plays from the part's start; a longer one
+/// plays from the line, as every other line does, and offers the part's
+/// start (`offerStartSeconds`, for a "From start of class" control). Any
+/// other line, or a class without `chapterStartSeconds`, plays from the
+/// line with nothing offered.
+({double seekSeconds, double? offerStartSeconds}) playStart(
+  ChapterAlignments data,
+  ChapterAlignmentsRef ref, {
+  double snap = introSnapSeconds,
+}) {
+  final plain = (seekSeconds: ref.startSeconds, offerStartSeconds: null);
+  final lectures = data.lectures;
+  final part = ref.lecture >= 0 && ref.lecture < lectures.length
+      ? lectures[ref.lecture].chapterStartSeconds
+      : null;
+  if (part == null || part >= ref.startSeconds) return plain;
+  for (final line in data.lines) {
+    for (final r in line.refs) {
+      if (r.lecture == ref.lecture && r.startSeconds < ref.startSeconds) {
+        return plain;
+      }
+    }
+  }
+  return ref.startSeconds - part < snap
+      ? (seekSeconds: part, offerStartSeconds: null)
+      : (seekSeconds: ref.startSeconds, offerStartSeconds: part);
+}
+
 /// The index of the class after [lecture] in its own series (catalog order),
 /// or null after the series' last class. Autoplay next stops there: it never
 /// moves on to another chapter.
@@ -311,6 +351,12 @@ extension ChapterAlignmentsIndex on ChapterAlignments {
     );
   }
 
+  /// [playStart] for [ref], a ref of a line of this chapter.
+  ({double seekSeconds, double? offerStartSeconds}) playStart(
+    ChapterAlignmentsRef ref, {
+    double snap = introSnapSeconds,
+  }) => _playStart(this, ref, snap: snap);
+
   /// [nextInSeries] within this chapter.
   int? nextInSeries(int lecture) => _nextInSeries(seriesIds, lecture);
 
@@ -331,5 +377,6 @@ extension TranscriptTiming on Transcript {
 // shadow.
 const _rankRefs = rankRefs;
 const _playableRefs = playableRefs;
+const _playStart = playStart;
 const _nextInSeries = nextInSeries;
 const _chooseSeries = chooseSeries;

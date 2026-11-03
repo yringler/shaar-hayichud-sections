@@ -23,6 +23,8 @@ export interface DataPaths {
   sources: SourcePaths;
   /** Which transcripts / alignments are published (data/audio-publish.json). */
   audioPolicy: string;
+  /** Hand-set starts of a class's part on a chapter (data/chapter-starts.json). */
+  chapterStarts: string;
 }
 
 export function defaultPaths(dataDir = DATA_DIR): DataPaths {
@@ -33,6 +35,7 @@ export function defaultPaths(dataDir = DATA_DIR): DataPaths {
     distDir: path.join(dataDir, 'dist'),
     sources: defaultSourcePaths(dataDir),
     audioPolicy: path.join(dataDir, 'audio-publish.json'),
+    chapterStarts: path.join(dataDir, 'chapter-starts.json'),
   };
 }
 
@@ -89,6 +92,7 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   const audio = publishAudio({
     dataDir: paths.sources.dataDir,
     policyFile: paths.audioPolicy,
+    chapterStartsFile: paths.chapterStarts,
     catalog,
     chapters: loaded.chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })),
     schemas,

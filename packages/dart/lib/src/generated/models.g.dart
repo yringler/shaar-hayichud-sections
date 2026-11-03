@@ -861,6 +861,7 @@ final class ChapterAlignmentsLecture {
     required this.alignment,
     this.transcript,
     this.outline,
+    this.chapterStartSeconds,
   });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
@@ -908,6 +909,10 @@ final class ChapterAlignmentsLecture {
         m["outline"],
         (v) => _string(v, 'ChapterAlignmentsLecture.outline'),
       ),
+      chapterStartSeconds: _opt(
+        m["chapterStartSeconds"],
+        (v) => _double(v, 'ChapterAlignmentsLecture.chapterStartSeconds'),
+      ),
     );
   }
 
@@ -940,6 +945,9 @@ final class ChapterAlignmentsLecture {
   /// Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.
   final String? outline;
 
+  /// Where the class's part on this chapter starts, in seconds: 0 on the chapter the class reaches first, and on a later chapter shortly before its first line or where data/chapter-starts.json sets it. Never after the class's first line here. A line tap on the class's first line here may start from it or offer it (playStart in the site's audio/model.ts and the Dart package). Absent in files built before it existed.
+  final double? chapterStartSeconds;
+
   Map<String, Object?> toJson() => {
     "id": id,
     "url": url,
@@ -951,6 +959,7 @@ final class ChapterAlignmentsLecture {
     "alignment": alignment,
     if (transcript != null) "transcript": transcript,
     if (outline != null) "outline": outline,
+    if (chapterStartSeconds != null) "chapterStartSeconds": chapterStartSeconds,
   };
 
   @override
@@ -966,7 +975,8 @@ final class ChapterAlignmentsLecture {
           other.durationSeconds == durationSeconds &&
           other.alignment == alignment &&
           other.transcript == transcript &&
-          other.outline == outline);
+          other.outline == outline &&
+          other.chapterStartSeconds == chapterStartSeconds);
 
   @override
   int get hashCode => Object.hashAll([
@@ -980,6 +990,7 @@ final class ChapterAlignmentsLecture {
     alignment,
     transcript,
     outline,
+    chapterStartSeconds,
   ]);
 
   @override

@@ -91,6 +91,11 @@
         "outline": {
           "description": "Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.",
           "type": "string"
+        },
+        "chapterStartSeconds": {
+          "description": "Where the class's part on this chapter starts, in seconds: 0 on the chapter the class reaches first, and on a later chapter shortly before its first line or where data/chapter-starts.json sets it. Never after the class's first line here. A line tap on the class's first line here may start from it or offer it (playStart in the site's audio/model.ts and the Dart package). Absent in files built before it existed.",
+          "type": "number",
+          "minimum": 0
         }
       }
     },

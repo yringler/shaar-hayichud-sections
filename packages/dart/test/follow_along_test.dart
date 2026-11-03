@@ -38,6 +38,21 @@ ChapterAlignmentsLecture lecture(String id, String seriesId) =>
       alignment: '',
     );
 
+extension on ChapterAlignmentsLecture {
+  ChapterAlignmentsLecture copyWithStart(double? start) =>
+      ChapterAlignmentsLecture(
+        id: id,
+        url: url,
+        title: title,
+        seriesId: seriesId,
+        series: series,
+        part: part,
+        durationSeconds: durationSeconds,
+        alignment: alignment,
+        chapterStartSeconds: start,
+      );
+}
+
 OutlineTopic topic(double start) => OutlineTopic(
   title: 't$start',
   startSeconds: start,
@@ -130,6 +145,38 @@ void main() {
                 in (c['expect']! as List<Object?>).cast<List<Object?>>())
               [e[0], num_(e[1])],
           ],
+        );
+      });
+    }
+
+    for (final c in cases('playStart')) {
+      test('playStart: ${c['name']}', () {
+        final starts = (c['chapterStarts']! as List<Object?>);
+        final data = ChapterAlignments(
+          chapter: 'chapter_01',
+          lectures: [
+            for (final (i, cs) in starts.indexed)
+              lecture('v$i', '0').copyWithStart(cs == null ? null : num_(cs)),
+          ],
+          lines: [
+            for (final (i, refs)
+                in (c['lines']! as List<Object?>).cast<List<Object?>>().indexed)
+              ChapterAlignmentsLine(
+                lineId: 'l$i',
+                refs: [
+                  for (final r in refs.cast<List<Object?>>())
+                    ref(r[0]! as int, num_(r[1]), 1),
+                ],
+              ),
+          ],
+        );
+        final r = (c['ref']! as List<Object?>);
+        final got = data.playStart(ref(r[0]! as int, num_(r[1]), 1));
+        final expected = (c['expect']! as List<Object?>);
+        expect(got.seekSeconds, num_(expected[0]));
+        expect(
+          got.offerStartSeconds,
+          expected[1] == null ? isNull : num_(expected[1]),
         );
       });
     }

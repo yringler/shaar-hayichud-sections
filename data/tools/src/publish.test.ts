@@ -9,10 +9,14 @@ import { parseClassesTxt } from './parse.js';
 import { build, DATA_DIR, defaultPaths } from './pipeline.js';
 import {
   alignmentChapters,
+  applyChapterStarts,
+  CHAPTER_LEAD_SECONDS,
   chapterAlignments,
+  chapterStarts,
   chapterKeyOf,
   lectureInfos,
   paragraphs,
+  parseChapterStarts,
   parsePublishPolicy,
   publishAlignment,
   publishOutline,
@@ -259,6 +263,63 @@ describe('chapterAlignments', () => {
     const r = chapterAlignments('chapter_03', chapter, [two], infos, new Set());
     assert.deepEqual(r.lines.map((l) => l.lineId), ['aaaaaaaa']);
     assert.deepEqual(r.lectures.map((l) => l.id), ['a.mp3']);
+  });
+});
+
+describe('chapter starts', () => {
+  const chapter: Chapter = [{ children: [{ id: 'aaaaaaaa', text: 'x' }] }];
+  const s = (chapter: string, startSeconds: number, endSeconds = startSeconds + 5) => ({ chapter, startSeconds, endSeconds });
+  const al = (segments: ReturnType<typeof s>[]) => ({
+    schemaVersion: 1 as const,
+    lectureId: 'a.mp3',
+    chapter: 'chapter_03',
+    segments: segments.map((x) => ({ ...x, lineId: 'aaaaaaaa', confidence: 1 })),
+  });
+
+  it('starts the first chapter at 0 and a later one shortly before its first line', () => {
+    assert.equal(CHAPTER_LEAD_SECONDS, 3);
+    const r = chapterStarts([s('chapter_03', 64), s('chapter_03', 200), s('chapter_04', 900.1234), s('chapter_04', 950)]);
+    assert.deepEqual([...r], [['chapter_03', 0], ['chapter_04', 897.123]]);
+  });
+
+  it('never starts a later chapter inside the previous chapter\'s last line', () => {
+    const r = chapterStarts([s('chapter_03', 10, 899), s('chapter_04', 900)]);
+    assert.equal(r.get('chapter_04'), 899);
+    // A line of the previous chapter that runs past the next one's start: the first line itself.
+    assert.equal(chapterStarts([s('chapter_03', 10, 950), s('chapter_04', 900)]).get('chapter_04'), 900);
+  });
+
+  it('starts a chapter the class opens with at 0 even after a recap of another chapter in the same class', () => {
+    // A class that opens with a recap of chapter 3, then reads chapter 4.
+    const r = chapterStarts([s('chapter_03', 5, 60), s('chapter_04', 272.7), s('chapter_03', 280)]);
+    assert.deepEqual([...r], [['chapter_03', 0], ['chapter_04', 269.7]]);
+  });
+
+  it('parses data/chapter-starts.json and rejects bad entries', () => {
+    const ok = parseChapterStarts({ $comment: 'x', lectures: { 'a.mp3': { chapter_04: { startSeconds: 872, note: 'n' } } } });
+    assert.deepEqual(ok.errors, []);
+    assert.equal(ok.starts.get('a.mp3')?.get('chapter_04'), 872);
+    const bad = parseChapterStarts({ lectures: { 'a.mp3': { ch4: { startSeconds: -1, x: 1 } } }, extra: 1 });
+    assert.equal(bad.errors.length, 4, bad.errors.join('\n'));
+    assert.deepEqual(parseChapterStarts([]).errors, ['must be an object']);
+  });
+
+  it('applies overrides, which must not start after the class\'s first line on the chapter', () => {
+    const a = al([s('chapter_03', 10), s('chapter_04', 892.5)]);
+    assert.deepEqual([...applyChapterStarts(a, new Map([['chapter_04', 872]]), 1500).starts], [['chapter_03', 0], ['chapter_04', 872]]);
+    // At the first line itself: allowed (nothing earlier is offered).
+    assert.deepEqual(applyChapterStarts(a, new Map([['chapter_04', 892.5]]), 1500).errors, []);
+    assert.match(applyChapterStarts(a, new Map([['chapter_04', 893]]), 1500).errors[0]!, /after the class's first line/);
+    assert.match(applyChapterStarts(a, new Map([['chapter_05', 1]]), 1500).errors[0]!, /no published line/);
+    // Defaults are kept where there is no override.
+    assert.equal(applyChapterStarts(a, undefined, null).starts.get('chapter_04'), 889.5);
+  });
+
+  it('publishes chapterStartSeconds on each lecture of a chapter index', () => {
+    const r = chapterAlignments('chapter_03', chapter, [al([s('chapter_03', 10)])], infos, new Set(), new Set(), new Map([['a.mp3', new Map([['chapter_03', 0]])]]));
+    assert.equal(r.lectures[0]!.chapterStartSeconds, 0);
+    const none = chapterAlignments('chapter_03', chapter, [al([s('chapter_03', 10)])], infos, new Set());
+    assert.equal('chapterStartSeconds' in none.lectures[0]!, false);
   });
 });
 
