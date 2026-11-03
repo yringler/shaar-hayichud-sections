@@ -25,5 +25,8 @@ dir: ltr
 <p><em>Shaar Hayichud</em> ("The Gate of Unity") was authored by Rabbi Dov Ber of Lubavitch (1773–1827), the Mitteler Rebbe, second leader of Chabad Chassidus.</p>
 <p>This work is called the key to Kabbalah and Chassidus. It brings clarity to the entire methodology of Kabbalah and to the process of creation known as the chaining down of the worlds (<em>hishtalshelus</em>). It is therefore a foundation for unlocking the secrets of Kabbalah and the treasure troves of Chassidus — a must-read for any sincere seeker of Divine truth.</p>
 
+<h2>Font</h2>
+<p>The Hebrew text is set in <a href="https://bdenckla.github.io/MAM-basics/taamey-d/Taamey_D.html">Taamey D</a> by Ben Denckla, derived from Yoram Gnat's Taamey Frank CLM, under the GNU GPL version 2 with a font exception (<a href="/fonts/taamey-d-1.2/license.txt">license</a>; <a href="https://bdenckla.github.io/MAM-basics/taamey-d/downloads/">source</a>).</p>
+
 <h2>Contact</h2>
 <p>Yehuda Ringler — <a href="mailto:yrappdev@gmail.com">yrappdev@gmail.com</a></p>
