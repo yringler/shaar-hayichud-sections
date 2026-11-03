@@ -56,7 +56,7 @@ hugo/
                    #   audio/store.ts (localStorage), audio/player.ts (playAt/seekOnPlay, scrolling helpers),
                    #   search/text.ts + search/glossary.ts (pure, shared with the indexer, unit tested)
                    #   (see Class lists, Audio on chapter pages, Outlines pages, Search)
-  static/          # CNAME, _headers, texts/index.json
+  static/          # CNAME, _headers, texts/index.json, fonts/ (Taamey D for Hebrew text, in a versioned folder: a new release goes in a new folder)
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
 lib/audio-model.vectors.json  # test vectors also run by the Dart port (packages/dart follow_along.dart): keep the two in step

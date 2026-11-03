@@ -1,10 +1,29 @@
+/* Hebrew reading text is set in Taamey D (Ben Denckla, GPL-2 with a font
+   exception; static/fonts/taamey-d-1.2/license.txt). unicode-range limits it
+   to Hebrew, so Latin text in the same stack stays Georgia. The folder is
+   versioned, so the files can be cached as immutable: a new release goes in a
+   new folder. */
+@font-face {
+  font-family: 'Taamey D';
+  src: url('/fonts/taamey-d-1.2/Taamey_D.woff2') format('woff2'),
+       url('/fonts/taamey-d-1.2/Taamey_D.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0590-05FF, U+FB1D-FB4F, U+25CC;
+}
+
+:root {
+  --serif: 'Taamey D', 'Georgia', 'Times New Roman', serif;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
   max-width: 52rem;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: var(--serif);
   font-size: 1.15rem;
   line-height: 1.85;
   color: #1a1a2e;
@@ -454,7 +473,7 @@ a.audio-link:focus-visible {
   margin: -0.75rem -1rem 0.6rem;
   padding: 0.75rem 1.25rem 0.25rem;
   border-block-end: 1px solid #e8e4df;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: var(--serif);
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -879,7 +898,7 @@ nav.part-nav {
   overscroll-behavior: contain;
   margin-block: 0.6rem 0.75rem;
   padding: 0.4rem 1rem;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: var(--serif);
   font-size: 1.1rem;
   line-height: 1.8;
   color: #1a1a2e;
