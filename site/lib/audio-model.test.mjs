@@ -12,6 +12,8 @@ import {
   deepLinkTarget,
   DEFAULT_SERIES_ID,
   formatTime,
+  lineInClass,
+  playableRefs,
   lectureItems,
   nextInSeries,
   hashId,
@@ -319,5 +321,19 @@ test("vectors: topicAt", () => {
     const topics = c.topics.map((startSeconds) => ({ title: "", startSeconds, confidence: "HIGH" }));
     const found = topicAt(topics, c.t);
     assert.equal(found, c.expect === null ? null : topics[c.expect]);
+  }
+});
+
+for (const c of vectors.playableRefs) {
+  test(`vectors: playableRefs: ${c.name}`, () => {
+    const refs = c.refs.map(([l, s, conf]) => ref(l, s, conf));
+    const got = playableRefs(refs, seriesLectures(c.series), c.pref, c.selected).map((r) => [r.lecture, r.startSeconds]);
+    assert.deepEqual(got, c.expect);
+  });
+}
+
+test("vectors: lineInClass", () => {
+  for (const c of vectors.lineInClass) {
+    assert.equal(lineInClass(c.refs.map((lecture) => ({ lecture })), c.selected), c.expect, JSON.stringify(c));
   }
 });

@@ -104,6 +104,50 @@ void main() {
       });
     }
 
+    for (final c in cases('playableRefs')) {
+      test('playableRefs: ${c['name']}', () {
+        final series = (c['series']! as List<Object?>).cast<String>();
+        final refs = [
+          for (final r in (c['refs']! as List<Object?>).cast<List<Object?>>())
+            ref(r[0]! as int, num_(r[1]), num_(r[2])),
+        ];
+        final pref = c['pref']! as Map<String, Object?>;
+        final ranked = playableRefs(
+          refs,
+          (i) => i < series.length ? series[i] : null,
+          RefPreference(
+            seriesId: pref['seriesId'] as String?,
+            currentLecture: pref['currentLecture'] as int?,
+          ),
+          c['selected'] as int?,
+        );
+        expect(
+          [
+            for (final r in ranked) [r.lecture, r.startSeconds],
+          ],
+          [
+            for (final e
+                in (c['expect']! as List<Object?>).cast<List<Object?>>())
+              [e[0], num_(e[1])],
+          ],
+        );
+      });
+    }
+
+    test('lineInClass', () {
+      for (final c in cases('lineInClass')) {
+        final refs = [
+          for (final l in (c['refs']! as List<Object?>).cast<int>())
+            ref(l, 0, 1),
+        ];
+        expect(
+          lineInClass(refs, c['selected'] as int?),
+          c['expect'],
+          reason: '$c',
+        );
+      }
+    });
+
     test('nextInSeries', () {
       for (final c in cases('nextInSeries')) {
         final series = (c['series']! as List<Object?>).cast<String>();

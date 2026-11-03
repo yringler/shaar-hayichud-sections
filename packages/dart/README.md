@@ -78,6 +78,9 @@ valid v1 catalog. Refresh the bundled copy when you release the app.
 
 ## Versions
 
+- **1.4.0**: `playableRefs` and `lineInClass` (and
+  `ChapterAlignmentsIndex.playableRefs`): with a class chosen, a line plays
+  only that class, and lines it doesn't read can't play.
 - **1.3.1**: `rankRefs` never treats a lecture without a series as the
   preferred one (parity with the site for out-of-range indexes).
 - **1.3.0**: follow-along logic, ported from the site's

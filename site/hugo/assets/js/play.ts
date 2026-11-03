@@ -18,8 +18,9 @@ import {
   formatTime,
   hashId,
   lectureItems,
+  lineInClass,
   nextInSeries,
-  rankRefs,
+  playableRefs,
   resolveTeacher,
   scrollToShow,
   segmentItems,
@@ -218,6 +219,11 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   };
   // The src attribute changes at once; currentSrc only once the new source starts loading.
   const currentLecture = () => lectureOfSrc(audio.getAttribute('src') || audio.currentSrc || '');
+  /** The class chosen in the Class selector (the one in the player): line buttons play only it. */
+  const chosenLecture = (): number | null => {
+    const v = select?.value;
+    return v ? Number(v) : currentLecture();
+  };
   const selectedSeries = (): string | null => seriesSelect?.value || null;
   const seriesTitle = (id: string | null) =>
     [...(seriesSelect?.options ?? [])].find((o) => o.value === id)?.textContent?.trim() ?? '';
@@ -237,6 +243,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       fillClasses(opt.dataset['series']);
     }
     if (select) select.value = String(lecture);
+    updateLineStates();
     if (transcriptLink) {
       const href = opt.dataset['transcript'];
       transcriptLink.hidden = !href;
@@ -284,7 +291,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     const line = data?.lines.find((x) => x.lineId === lineId);
     if (!data || !line) return [];
     const seriesId = wanted?.id ?? selectedSeries();
-    return rankRefs(line.refs, data.lectures, { currentLecture: currentLecture(), seriesId });
+    return playableRefs(line.refs, data.lectures, { currentLecture: currentLecture(), seriesId }, chosenLecture());
   };
 
   const dataReady = fetch(url)
@@ -381,6 +388,40 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       b.dataset['line'] = line.lineId;
       b.setAttribute('aria-label', 'Play from here');
       span.before(b);
+      lineRefs.set(line.lineId, line.refs);
+    }
+    updateLineStates();
+  };
+
+  /** Each decorated line's refs, by line id. */
+  const lineRefs = new Map<string, ChapterAlignments['lines'][number]['refs']>();
+
+  /** Why a line can't play: the chosen class doesn't read it. */
+  const notInClassNote = (): string => {
+    const l = data?.lectures[chosenLecture() ?? -1];
+    return l ? `This line is not in “${l.title}”. Choose another class to play it.` : '';
+  };
+
+  /**
+   * Line buttons of lines the chosen class doesn't read are disabled
+   * (aria-disabled, so a click still reaches the handler and explains why;
+   * the title shows the same on hover).
+   */
+  const updateLineStates = () => {
+    const chosen = chosenLecture();
+    const note = notInClassNote();
+    for (const b of document.querySelectorAll<HTMLButtonElement>('.line-play[data-line]')) {
+      const refs = lineRefs.get(b.dataset['line']!);
+      if (!refs) continue;
+      if (lineInClass(refs, chosen)) {
+        b.removeAttribute('aria-disabled');
+        b.removeAttribute('title');
+        b.setAttribute('aria-label', 'Play from here');
+      } else {
+        b.setAttribute('aria-disabled', 'true');
+        b.title = note;
+        b.setAttribute('aria-label', `Play from here (unavailable: ${note})`);
+      }
     }
   };
 
@@ -392,6 +433,10 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-line]');
     if (button) {
+      if (button.getAttribute('aria-disabled') === 'true') {
+        showNote(notInClassNote());
+        return;
+      }
       const best = ranked(button.dataset['line']!)[0];
       if (best) playRef(best);
       return;
@@ -408,6 +453,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       if (s && !s.isCollapsed) return;
       const best = ranked(line.id)[0];
       if (best) playRef(best);
+      else showNote(notInClassNote());
     }, 250);
   });
 

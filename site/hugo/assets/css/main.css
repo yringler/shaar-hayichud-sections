@@ -610,6 +610,16 @@ a.audio-link:focus-visible {
   color: #fff;
 }
 
+/* A line the chosen class doesn't read: still focusable and clickable (the
+   click explains why it can't play), drawn faded. */
+.line-play[aria-disabled="true"],
+.line-play[aria-disabled="true"]:hover {
+  background: transparent;
+  border-color: #e6dcc8;
+  color: #cdbb98;
+  cursor: not-allowed;
+}
+
 .line-play:focus-visible,
 .follow-along:focus-visible,
 .listen-transcript-toggle:focus-visible {

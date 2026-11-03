@@ -158,6 +158,26 @@ List<ChapterAlignmentsRef> rankRefs(
   return [for (final (_, r) in indexed) r];
 }
 
+/// Whether a line (its refs) can play while the class [selected] (a lecture
+/// index: the class in the player) is chosen: only lines that class reads.
+/// With no class chosen, every aligned line can.
+bool lineInClass(Iterable<ChapterAlignmentsRef> refs, int? selected) =>
+    selected == null || refs.any((r) => r.lecture == selected);
+
+/// Candidates for "play from here" on a line, best first: with a class
+/// [selected], only that class's ranges (empty when it doesn't read the
+/// line); else every class's, ranked by [rankRefs].
+List<ChapterAlignmentsRef> playableRefs(
+  Iterable<ChapterAlignmentsRef> refs,
+  String? Function(int lecture) seriesOf,
+  RefPreference pref,
+  int? selected,
+) => rankRefs(
+  selected == null ? refs : refs.where((r) => r.lecture == selected),
+  seriesOf,
+  pref,
+);
+
 /// The index of the class after [lecture] in its own series (catalog order),
 /// or null after the series' last class. Autoplay next stops there: it never
 /// moves on to another chapter.
@@ -273,6 +293,22 @@ extension ChapterAlignmentsIndex on ChapterAlignments {
     );
   }
 
+  /// [playableRefs] for a line of this chapter, with [selected] the chosen
+  /// class (lecture index) or null.
+  List<ChapterAlignmentsRef> playableRefs(
+    ChapterAlignmentsLine line,
+    RefPreference pref,
+    int? selected,
+  ) {
+    final ids = seriesIds;
+    return _playableRefs(
+      line.refs,
+      (i) => i >= 0 && i < ids.length ? ids[i] : null,
+      pref,
+      selected,
+    );
+  }
+
   /// [nextInSeries] within this chapter.
   int? nextInSeries(int lecture) => _nextInSeries(seriesIds, lecture);
 
@@ -292,5 +328,6 @@ extension TranscriptTiming on Transcript {
 // Aliases so the extension methods can call the top-level functions they
 // shadow.
 const _rankRefs = rankRefs;
+const _playableRefs = playableRefs;
 const _nextInSeries = nextInSeries;
 const _chooseSeries = chooseSeries;
