@@ -5,6 +5,7 @@
  */
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import {
   chapterSeries,
   chooseSeries,
@@ -276,4 +277,47 @@ test("deepLinkTarget: an oversized t never seeks past the last topic's exact sta
   // A single topic: anything past its start plays from it.
   assert.deepEqual(deepLinkTarget([topics[1]], 5000), { topic: topics[1], seek: 1800.75 });
   assert.deepEqual(deepLinkTarget([topics[1]], 60), { topic: topics[1], seek: 60 });
+});
+
+// Vectors shared with the Dart port (packages/dart/lib/src/follow_along.dart),
+// so the site and the apps choose the same class and highlight the same line.
+const vectors = JSON.parse(readFileSync(new URL("./audio-model.vectors.json", import.meta.url), "utf8"));
+const seriesLectures = (ids) => ids.map((seriesId, i) => ({ ...lectures[0], id: `v${i}`, seriesId }));
+
+for (const c of vectors.rankRefs) {
+  test(`vectors: rankRefs: ${c.name}`, () => {
+    const refs = c.refs.map(([l, s, conf]) => ref(l, s, conf));
+    const got = rankRefs(refs, seriesLectures(c.series), c.pref).map((r) => [r.lecture, r.startSeconds]);
+    assert.deepEqual(got, c.expect);
+  });
+}
+
+for (const c of vectors.spans) {
+  test(`vectors: spans: ${c.name}`, () => {
+    const items = c.items.map(([key, start, end]) => ({ key, start, end }));
+    const s = c.hold === undefined ? spans(items) : spans(items, c.hold);
+    assert.deepEqual(s.map((x) => [x.start, x.end, x.keys]), c.expect);
+    for (const [t, keys] of c.at) assert.deepEqual(spanAt(s, t)?.keys ?? null, keys, `spanAt(${t})`);
+  });
+}
+
+test("vectors: nextInSeries", () => {
+  for (const c of vectors.nextInSeries) {
+    assert.equal(nextInSeries(c.series.map((seriesId) => ({ seriesId })), c.lecture), c.expect);
+  }
+});
+
+for (const c of vectors.chooseSeries) {
+  test(`vectors: chooseSeries: ${c.name}`, () => {
+    const r = chooseSeries(c.here.map((id) => ({ id })), c.saved);
+    assert.deepEqual({ series: r.series?.id ?? null, fellBack: r.fellBack }, c.expect);
+  });
+}
+
+test("vectors: topicAt", () => {
+  for (const c of vectors.topicAt) {
+    const topics = c.topics.map((startSeconds) => ({ title: "", startSeconds, confidence: "HIGH" }));
+    const found = topicAt(topics, c.t);
+    assert.equal(found, c.expect === null ? null : topics[c.expect]);
+  }
 });
