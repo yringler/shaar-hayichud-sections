@@ -18,8 +18,9 @@ import {
   formatTime,
   hashId,
   lectureItems,
+  lineInClass,
   nextInSeries,
-  rankRefs,
+  playableRefs,
   resolveTeacher,
   scrollToShow,
   segmentItems,
@@ -218,6 +219,11 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   };
   // The src attribute changes at once; currentSrc only once the new source starts loading.
   const currentLecture = () => lectureOfSrc(audio.getAttribute('src') || audio.currentSrc || '');
+  /** The class chosen in the Class selector (the one in the player): line buttons play only it. */
+  const chosenLecture = (): number | null => {
+    const v = select?.value;
+    return v ? Number(v) : currentLecture();
+  };
   const selectedSeries = (): string | null => seriesSelect?.value || null;
   const seriesTitle = (id: string | null) =>
     [...(seriesSelect?.options ?? [])].find((o) => o.value === id)?.textContent?.trim() ?? '';
@@ -237,6 +243,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       fillClasses(opt.dataset['series']);
     }
     if (select) select.value = String(lecture);
+    updateLineStates();
     if (transcriptLink) {
       const href = opt.dataset['transcript'];
       transcriptLink.hidden = !href;
@@ -272,10 +279,15 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   const playRef = (r: Ref) => {
     const l = data?.lectures[r.lecture];
     if (!l) return;
+    // Leaving the chosen class for a line it doesn't read says so first.
+    const chosen = chosenLecture();
+    const from = chosen === null || chosen === r.lecture ? undefined : data?.lectures[chosen];
     showNote(
-      wanted && l.seriesId !== wanted.id
-        ? `This line is not in ${wanted.title}'s classes yet; playing ${l.series}: ${l.title}.`
-        : null,
+      from
+        ? `This line is not in “${from.title}”; playing ${l.series}: ${l.title}.`
+        : wanted && l.seriesId !== wanted.id
+          ? `This line is not in ${wanted.title}'s classes yet; playing ${l.series}: ${l.title}.`
+          : null,
     );
     setLecture(r.lecture, r.startSeconds);
   };
@@ -284,7 +296,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     const line = data?.lines.find((x) => x.lineId === lineId);
     if (!data || !line) return [];
     const seriesId = wanted?.id ?? selectedSeries();
-    return rankRefs(line.refs, data.lectures, { currentLecture: currentLecture(), seriesId });
+    return playableRefs(line.refs, data.lectures, { currentLecture: currentLecture(), seriesId }, chosenLecture());
   };
 
   const dataReady = fetch(url)
@@ -381,6 +393,40 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       b.dataset['line'] = line.lineId;
       b.setAttribute('aria-label', 'Play from here');
       span.before(b);
+      lineRefs.set(line.lineId, line.refs);
+    }
+    updateLineStates();
+  };
+
+  /** Each decorated line's refs, by line id. */
+  const lineRefs = new Map<string, ChapterAlignments['lines'][number]['refs']>();
+
+  /** The hint on a line the chosen class doesn't read. */
+  const otherClassHint = (): string => {
+    const l = data?.lectures[chosenLecture() ?? -1];
+    return l ? `Not in “${l.title}”: plays another class` : '';
+  };
+
+  /**
+   * Line buttons of lines the chosen class doesn't read are marked
+   * (.is-other-class, drawn hollow) with a title; they still play, another
+   * class, and the note says so.
+   */
+  const updateLineStates = () => {
+    const chosen = chosenLecture();
+    const hint = otherClassHint();
+    for (const b of document.querySelectorAll<HTMLButtonElement>('.line-play[data-line]')) {
+      const refs = lineRefs.get(b.dataset['line']!);
+      if (!refs) continue;
+      const other = !lineInClass(refs, chosen);
+      b.classList.toggle('is-other-class', other);
+      if (other) {
+        b.title = hint;
+        b.setAttribute('aria-label', `Play from here (${hint})`);
+      } else {
+        b.removeAttribute('title');
+        b.setAttribute('aria-label', 'Play from here');
+      }
     }
   };
 

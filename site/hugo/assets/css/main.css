@@ -610,6 +610,14 @@ a.audio-link:focus-visible {
   color: #fff;
 }
 
+/* A line the chosen class doesn't read: it plays another class, so its
+   button is drawn hollow (dashed ring, no fill) until hovered. */
+.line-play.is-other-class:not(:hover):not(:focus-visible) {
+  background: transparent;
+  border-style: dashed;
+  color: #b9a47e;
+}
+
 .line-play:focus-visible,
 .follow-along:focus-visible,
 .listen-transcript-toggle:focus-visible {

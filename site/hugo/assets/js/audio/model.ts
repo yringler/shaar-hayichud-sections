@@ -4,7 +4,8 @@
  * which class to play for a line, which line is current at a time, and
  * topic deep links.
  * No DOM access, so it is unit tested directly (site/lib/audio-model.test.mjs).
- * rankRefs, spans/spanAt, nextInSeries, chooseSeries and topicAt are ported to
+ * rankRefs, playableRefs, lineInClass, spans/spanAt, nextInSeries, chooseSeries
+ * and topicAt are ported to
  * Dart for the apps (packages/dart/lib/src/follow_along.dart); both run the
  * vectors in site/lib/audio-model.vectors.json, so change them together.
  */
@@ -139,6 +140,31 @@ export function rankRefs(refs: readonly Ref[], lectures: readonly Lecture[], pre
     }
     return 0;
   });
+}
+
+/**
+ * Whether the class `selected` (index into ChapterAlignments.lectures: the
+ * class in the selector / player) reads a line. Lines it doesn't read still
+ * play (another class), but are marked. With no class chosen, true.
+ */
+export function lineInClass(refs: readonly Pick<Ref, 'lecture'>[], selected: number | null): boolean {
+  return selected === null || refs.some((r) => r.lecture === selected);
+}
+
+/**
+ * Candidates for "play from here" on a line, best first: when the chosen
+ * class reads the line, only its ranges (a chosen class is never left for
+ * another on a line it reads, whatever the teacher preference); else every
+ * class's, ranked by rankRefs.
+ */
+export function playableRefs(
+  refs: readonly Ref[],
+  lectures: readonly Lecture[],
+  pref: Preference,
+  selected: number | null,
+): Ref[] {
+  const own = selected === null ? [] : refs.filter((r) => r.lecture === selected);
+  return rankRefs(own.length > 0 ? own : refs, lectures, pref);
 }
 
 /** A stretch of a recording during which `keys` (line ids or paragraph ids) are current. */
