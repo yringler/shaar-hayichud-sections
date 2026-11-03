@@ -630,6 +630,62 @@ async function check(name, fn) {
     await context.close();
   });
 
+  await check('a two-chapter class\'s first line on its later chapter (35): offers the start of its part on it; gone in another class', async () => {
+    const ch35 = readJson(path.join(DIST, 'alignments', 'chapters', 'chapter_35.json'));
+    const at = (id) => ch35.lectures.findIndex((l) => l.id === id);
+    const M202 = at('202 Tape37-Side2-ch 34 35.mp3');
+    const M203 = at('203 Tape38-side1 ch 35-.mp3');
+    // The data this check relies on: 202 reads chapter 34, then chapter 35 from
+    // its chapterStartSeconds; qcjf7kfw is its first chapter-35 line, well after that.
+    const part = ch35.lectures[M202].chapterStartSeconds;
+    const line = ch35.lines.find((l) => l.lineId === 'qcjf7kfw');
+    const ref = line.refs.find((r) => r.lecture === M202);
+    assert.equal(line.refs.length, 1);
+    assert.equal(ref.startSeconds, Math.min(...ch35.lines.flatMap((l) => l.refs.filter((r) => r.lecture === M202).map((r) => r.startSeconds))));
+    assert.ok(part > 0 && ref.startSeconds - part >= 15);
+    assert.equal(ch35.lectures[M203].chapterStartSeconds, 0);
+    assert.ok(ch35.lectures.every((l) => l.seriesId === ch35.lectures[M202].seriesId));
+    const gap = Math.floor(ref.startSeconds - part);
+    const mmss = `${Math.floor(gap / 60)}:${String(gap % 60).padStart(2, '0')}`;
+
+    // Nothing saved: the default teacher (Walters) has no classes here, so the
+    // page shows Markel's, quietly (no note: nothing the reader chose was overridden).
+    const { context, page, errors } = await newPage(browser, base);
+    await page.goto(`${base}/texts/chapter-35/`);
+    await page.waitForSelector('.line-play');
+    assert.equal(await page.locator('[data-listen-series]').inputValue(), ch35.lectures[M202].seriesId);
+    assert.ok(await page.locator('[data-listen-note]').isHidden());
+    const offer = page.locator('[data-listen-from-start]');
+    assert.ok(await offer.isHidden());
+
+    await page.click('.line-play[data-line="qcjf7kfw"]');
+    await waitTime(page, ref.startSeconds);
+    assert.equal((await audioState(page)).src, ch35.lectures[M202].url);
+    await offer.waitFor({ state: 'visible' });
+    assert.equal((await offer.textContent()).trim(), `⏮ From start of this chapter in the class (${mmss} earlier)`);
+    await page.screenshot({ path: path.join(shots, 'from-start-chapter-offer.png') });
+    await offer.click();
+    await waitTime(page, part);
+    assert.ok(await offer.isHidden());
+    assert.equal((await audioState(page)).paused, false);
+    assert.equal((await audioState(page)).src, ch35.lectures[M202].url);
+
+    // Offered again on a new tap; another class in the Class selector drops it.
+    await page.click('.line-play[data-line="qcjf7kfw"]');
+    await waitTime(page, ref.startSeconds);
+    await offer.waitFor({ state: 'visible' });
+    await page.selectOption('[data-listen-select]', String(M203));
+    await page.waitForFunction((u) => {
+      const a = document.querySelector('[data-listen-audio]');
+      return (a.currentSrc || a.src) === u && !a.paused;
+    }, ch35.lectures[M203].url);
+    await offer.waitFor({ state: 'hidden' });
+    assert.deepEqual(errors, []);
+    // 203 has just started loading: let its media request end quietly.
+    await context.unrouteAll({ behavior: 'ignoreErrors' });
+    await context.close();
+  });
+
   await check('the transcript toggle is hidden for a class without a published transcript', async () => {
     const { context, page, errors } = await newPage(browser, base);
     const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
