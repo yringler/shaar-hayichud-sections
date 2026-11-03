@@ -4,8 +4,8 @@
  * which class to play for a line, which line is current at a time, and
  * topic deep links.
  * No DOM access, so it is unit tested directly (site/lib/audio-model.test.mjs).
- * rankRefs, playableRefs, lineInClass, spans/spanAt, nextInSeries, chooseSeries
- * and topicAt are ported to
+ * rankRefs, playableRefs, lineInClass, playStart, spans/spanAt, nextInSeries,
+ * chooseSeries and topicAt are ported to
  * Dart for the apps (packages/dart/lib/src/follow_along.dart); both run the
  * vectors in site/lib/audio-model.vectors.json, so change them together.
  */
@@ -22,6 +22,8 @@ export interface Lecture {
   transcript?: string;
   /** Auto-generated topic outline (outline.schema.json), relative to /data/v1/. */
   outline?: string;
+  /** Where the class's part on this chapter starts (absent in older files): see playStart. */
+  chapterStartSeconds?: number;
 }
 
 /** data/schema/v1/outline.schema.json */
@@ -165,6 +167,48 @@ export function playableRefs(
 ): Ref[] {
   const own = selected === null ? [] : refs.filter((r) => r.lecture === selected);
   return rankRefs(own.length > 0 ? own : refs, lectures, pref);
+}
+
+/**
+ * A lead-in shorter than this before a class's first line on a chapter is
+ * played rather than offered (playStart): "let's begin", a pause, the
+ * hand-off from the previous chapter.
+ */
+export const INTRO_SNAP_SECONDS = 15;
+
+export interface PlayStart {
+  /** Where to play from. */
+  seekSeconds: number;
+  /**
+   * An earlier start to offer ("From start of class" / of its part on the
+   * chapter), or null: the class's part on the chapter begins this long
+   * before the line that was played.
+   */
+  offerStartSeconds: number | null;
+}
+
+/**
+ * Where "play from here" on a line starts, for `ref` (the one playableRefs
+ * chose). A class's first line on a chapter (no ref of that class here
+ * starts earlier) can come well after the class's part on the chapter
+ * starts (`chapterStartSeconds`: an intro, a review, the hand-off from the
+ * previous chapter, or lines the aligner missed). A lead-in shorter than
+ * `snap` plays from the part's start; a longer one plays from the line, as
+ * every other line does, and offers the part's start. Any other line, or a
+ * class without chapterStartSeconds, plays from the line, nothing offered.
+ */
+export function playStart(
+  data: Pick<ChapterAlignments, 'lectures' | 'lines'>,
+  ref: Pick<Ref, 'lecture' | 'startSeconds'>,
+  snap = INTRO_SNAP_SECONDS,
+): PlayStart {
+  const plain: PlayStart = { seekSeconds: ref.startSeconds, offerStartSeconds: null };
+  const part = data.lectures[ref.lecture]?.chapterStartSeconds;
+  if (part === undefined || part >= ref.startSeconds) return plain;
+  for (const line of data.lines) {
+    for (const r of line.refs) if (r.lecture === ref.lecture && r.startSeconds < ref.startSeconds) return plain;
+  }
+  return ref.startSeconds - part < snap ? { seekSeconds: part, offerStartSeconds: null } : { seekSeconds: ref.startSeconds, offerStartSeconds: part };
 }
 
 /** A stretch of a recording during which `keys` (line ids or paragraph ids) are current. */

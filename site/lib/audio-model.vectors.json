@@ -148,6 +148,78 @@
       "expect": [[1, 40], [1, 20], [1, 90]]
     }
   ],
+  "playStart": [
+    {
+      "name": "the class's first line after a long intro: play the line, offer the start",
+      "chapterStarts": [0],
+      "lines": [[[0, 63.8]], [[0, 108.7]]],
+      "ref": [0, 63.8],
+      "expect": [63.8, 0]
+    },
+    {
+      "name": "a short lead-in is played, nothing offered",
+      "chapterStarts": [0],
+      "lines": [[[0, 12.9]]],
+      "ref": [0, 12.9],
+      "expect": [0, null]
+    },
+    {
+      "name": "a lead-in of exactly the threshold is offered",
+      "chapterStarts": [0],
+      "lines": [[[0, 15]]],
+      "ref": [0, 15],
+      "expect": [15, 0]
+    },
+    {
+      "name": "any later line plays from itself",
+      "chapterStarts": [0],
+      "lines": [[[0, 63.8]], [[0, 108.7]]],
+      "ref": [0, 108.7],
+      "expect": [108.7, null]
+    },
+    {
+      "name": "a later chapter of a two-chapter class: the hand-off just before the first line is played",
+      "chapterStarts": [1267.75],
+      "lines": [[[0, 1270.75]], [[0, 1300]]],
+      "ref": [0, 1270.75],
+      "expect": [1267.75, null]
+    },
+    {
+      "name": "a later chapter with a hand-set start well before its first line: offered",
+      "chapterStarts": [872],
+      "lines": [[[0, 892.5]]],
+      "ref": [0, 892.5],
+      "expect": [892.5, 872]
+    },
+    {
+      "name": "the part starts at the first line itself: nothing to offer",
+      "chapterStarts": [919.28],
+      "lines": [[[0, 919.28]]],
+      "ref": [0, 919.28],
+      "expect": [919.28, null]
+    },
+    {
+      "name": "only the class's own refs count: another class reading earlier does not",
+      "chapterStarts": [0, 0],
+      "lines": [[[1, 5]], [[0, 64], [1, 40]]],
+      "ref": [0, 64],
+      "expect": [64, 0]
+    },
+    {
+      "name": "the class reads an earlier line here: no offer on this one",
+      "chapterStarts": [0],
+      "lines": [[[0, 300]], [[0, 64]]],
+      "ref": [0, 300],
+      "expect": [300, null]
+    },
+    {
+      "name": "a file without chapterStartSeconds: the line, nothing offered",
+      "chapterStarts": [null],
+      "lines": [[[0, 63.8]]],
+      "ref": [0, 63.8],
+      "expect": [63.8, null]
+    }
+  ],
   "lineInClass": [
     { "refs": [0, 2], "selected": null, "expect": true },
     { "refs": [0, 2], "selected": 2, "expect": true },

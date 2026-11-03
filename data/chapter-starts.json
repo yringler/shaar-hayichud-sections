@@ -1,0 +1,23 @@
+{
+  "$comment": "Where a class's part on a chapter starts, for classes where the data build's default is wrong (see data/README.md, 'Where a class starts on a chapter'). Lecture id -> chapter key -> { startSeconds, note }. startSeconds is audio time (the time in the mp3 the catalog plays), at most the class's first published line on that chapter; the build publishes it as the lecture's chapterStartSeconds in alignments/chapters/<key>.json. Checked by listening, November 2026.",
+  "lectures": {
+    "202 Tape37-Side2-ch 34 35.mp3": {
+      "chapter_35": {
+        "startSeconds": 872.0,
+        "note": "right after 'you can turn the tape off now' (14:29-14:31); the aside that follows ('some chapters, in some places, two chapters are like one chapter') belongs to chapter 35. The default (first line 14:52 - 3 s) starts inside it"
+      }
+    },
+    "209 Tape41-Side2 Ch38&39.mp3": {
+      "chapter_39": {
+        "startSeconds": 706.0,
+        "note": "after 'Okay, you can turn the tape off now. Go ahead.' (ends 11:45.9): 'He started asking this question, now we're in 39...' is a real intro to chapter 39, before its first line at 12:02"
+      }
+    },
+    "221 Tape49-Side2 Ch45&46-.mp3": {
+      "chapter_46": {
+        "startSeconds": 919.28,
+        "note": "at chapter 46's first line (15:19, checked). The ~200 s preview of chapter 46 from 11:48 ('Okay, so this chapter is very apropos...') is too far back to offer from a line; the default (first line - 3 s) would start in the preview's last sentence"
+      }
+    }
+  }
+}

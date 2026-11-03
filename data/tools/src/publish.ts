@@ -8,7 +8,9 @@
  * - outlines/<encoded id>.json       schema/v1/outline.schema.json
  *
  * Which lectures are published, and the confidence floor, come from one
- * file: data/audio-publish.json (PublishPolicy). The raw Sofer files are
+ * file: data/audio-publish.json (PublishPolicy). Where each class starts on
+ * each chapter it reads is computed (chapterStarts) and can be set by hand
+ * in data/chapter-starts.json. The raw Sofer files are
  * never published; transcripts are converted to paragraphs, with the
  * re-timed word times from data/retimed/ when the lecture has them.
  */
@@ -256,6 +258,8 @@ export interface ChapterAlignments {
     transcript?: string;
     /** Published topic outline, relative to /data/v1/, if there is one. */
     outline?: string;
+    /** Where the class's part on this chapter starts (chapterStarts). */
+    chapterStartSeconds?: number;
   }[];
   /** Aligned lines in document order; refs sorted by confidence (desc), then lecture order. */
   lines: {
@@ -271,6 +275,7 @@ export function chapterAlignments(
   infos: Map<string, LectureInfo>,
   transcriptIds: Set<string>,
   outlineIds: Set<string> = new Set(),
+  starts: Map<string, Map<string, number>> = new Map(),
 ): ChapterAlignments {
   // Lectures in catalog order.
   const order = [...infos.keys()];
@@ -291,6 +296,7 @@ export function chapterAlignments(
       alignment: `alignments/${file}`,
       ...(transcriptIds.has(a.lectureId) ? { transcript: `transcripts/${file}` } : {}),
       ...(outlineIds.has(a.lectureId) ? { outline: `outlines/${file}` } : {}),
+      ...(starts.get(a.lectureId)?.has(chapterKey) ? { chapterStartSeconds: starts.get(a.lectureId)!.get(chapterKey)! } : {}),
     };
   });
   const byLine = new Map<string, ChapterAlignments['lines'][number]['refs']>();
@@ -310,6 +316,97 @@ export function chapterAlignments(
     lines.push({ lineId: line.id, refs });
   }
   return { schemaVersion: 1, chapter: chapterKey, lectures, lines };
+}
+
+// ---------------------------------------------------------------------------
+// Where a class starts on each chapter it reads
+// ---------------------------------------------------------------------------
+
+/** How far before a later chapter's first line its part starts by default (the hand-off, "Okay, go ahead"). */
+export const CHAPTER_LEAD_SECONDS = 3;
+
+/**
+ * Where a class's part on each chapter it reads starts, by chapter key: 0 on
+ * the chapter it reaches first (its intro is the class's opening), and on a
+ * later chapter CHAPTER_LEAD_SECONDS before that chapter's first line, but
+ * never inside the previous chapter's lines (not before the latest end of a
+ * line of another chapter that starts earlier). Times are rounded to ms.
+ */
+export function chapterStarts(segments: readonly Pick<PublishedAlignment['segments'][number], 'startSeconds' | 'endSeconds' | 'chapter'>[]): Map<string, number> {
+  const first = new Map<string, number>();
+  for (const s of segments) first.set(s.chapter, Math.min(first.get(s.chapter) ?? Infinity, s.startSeconds));
+  const out = new Map<string, number>();
+  for (const [chapter, start] of first) {
+    const before = segments.filter((s) => s.chapter !== chapter && s.startSeconds < start);
+    if (before.length === 0) {
+      out.set(chapter, 0);
+      continue;
+    }
+    const prevEnd = Math.max(...before.map((s) => s.endSeconds));
+    const t = Math.min(start, Math.max(start - CHAPTER_LEAD_SECONDS, prevEnd));
+    out.set(chapter, Math.round(Math.max(0, t) * 1000) / 1000);
+  }
+  return out;
+}
+
+/** data/chapter-starts.json: lecture id -> chapter key -> start (seconds). */
+export function parseChapterStarts(raw: unknown): { starts: Map<string, Map<string, number>>; errors: string[] } {
+  const errors: string[] = [];
+  const starts = new Map<string, Map<string, number>>();
+  const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
+  if (!isObj(raw)) return { starts, errors: ['must be an object'] };
+  for (const k of Object.keys(raw)) if (k !== '$comment' && k !== 'lectures') errors.push(`unknown key "${k}"`);
+  const lectures = raw['lectures'];
+  if (!isObj(lectures)) return { starts, errors: [...errors, '"lectures" must be an object'] };
+  for (const [id, chapters] of Object.entries(lectures)) {
+    if (!isObj(chapters)) {
+      errors.push(`${id}: must be an object of chapter keys`);
+      continue;
+    }
+    const m = new Map<string, number>();
+    for (const [key, entry] of Object.entries(chapters)) {
+      const where = `${id}: ${key}`;
+      if (!/^chapter_\d+$/.test(key)) errors.push(`${where}: not a chapter key`);
+      if (!isObj(entry)) {
+        errors.push(`${where}: must be { startSeconds, note }`);
+        continue;
+      }
+      for (const k of Object.keys(entry)) if (k !== 'startSeconds' && k !== 'note') errors.push(`${where}: unknown key "${k}"`);
+      if (entry['note'] !== undefined && typeof entry['note'] !== 'string') errors.push(`${where}: "note" must be a string`);
+      const t = entry['startSeconds'];
+      if (typeof t !== 'number' || !Number.isFinite(t) || t < 0) errors.push(`${where}: "startSeconds" must be a number >= 0`);
+      else m.set(key, t);
+    }
+    starts.set(id, m);
+  }
+  return { starts, errors };
+}
+
+/**
+ * Overrides applied to a published alignment's computed starts. Errors when
+ * an override names a chapter the class has no published line on, or starts
+ * after the class's first published line there (the line would play from
+ * before its own part), or past the class's end.
+ */
+export function applyChapterStarts(
+  a: PublishedAlignment,
+  overrides: Map<string, number> | undefined,
+  durationSeconds: number | null,
+): { starts: Map<string, number>; errors: string[] } {
+  const starts = chapterStarts(a.segments);
+  const errors: string[] = [];
+  for (const [key, t] of overrides ?? []) {
+    const lines = a.segments.filter((s) => s.chapter === key);
+    if (lines.length === 0) {
+      errors.push(`${a.lectureId}: ${key}: the class has no published line on this chapter`);
+      continue;
+    }
+    const first = Math.min(...lines.map((s) => s.startSeconds));
+    if (t > first) errors.push(`${a.lectureId}: ${key}: startSeconds ${t} is after the class's first line here (${first}); listen again (re-aligned or re-timed?)`);
+    else if (durationSeconds !== null && t > durationSeconds) errors.push(`${a.lectureId}: ${key}: startSeconds ${t} is past the class's end (${durationSeconds})`);
+    else starts.set(key, t);
+  }
+  return { starts, errors };
 }
 
 // ---------------------------------------------------------------------------
@@ -379,6 +476,8 @@ export function sourceTopics(raw: unknown): SourceTopic[] {
 export interface PublishInput {
   dataDir: string;
   policyFile: string;
+  /** data/chapter-starts.json (optional: no overrides when missing). */
+  chapterStartsFile?: string;
   catalog: Catalog;
   chapters: { key: string; data: Chapter }[];
   schemas: SchemaSet;
@@ -433,12 +532,26 @@ export function publishAudio(input: PublishInput): PublishedAudio {
   out.errors.push(...[...policyErrors, ...selected.errors].map((e) => `${policyName}: ${e}`));
   if (out.errors.length > 0) return out;
 
+  const overrides = new Map<string, Map<string, number>>();
+  if (input.chapterStartsFile && existsSync(input.chapterStartsFile)) {
+    const name = path.basename(input.chapterStartsFile);
+    const parsed = parseChapterStarts(readJson(input.chapterStartsFile));
+    out.errors.push(...parsed.errors.map((e) => `${name}: ${e}`));
+    for (const [id, m] of parsed.starts) {
+      if (!infos.has(id)) out.errors.push(`${name}: ${id}: not a catalog lecture id`);
+      else if (!selected.ids.has(id)) out.errors.push(`${name}: ${id}: not published (audio-publish.json)`);
+      else overrides.set(id, m);
+    }
+    if (out.errors.length > 0) return out;
+  }
+
   const published = [...infos.keys()].filter((id) => selected.ids.has(id));
   const fileOf = (id: string) => `${encodePathSegment(id)}.json`;
 
   const transcriptIds = new Set<string>();
   const outlineIds = new Set<string>();
   const alignmentsByChapter = new Map<string, PublishedAlignment[]>();
+  const startsByLecture = new Map<string, Map<string, number>>();
   for (const id of published) {
     const info = infos.get(id)!;
     const alignmentFile = path.join(dataDir, 'alignments', fileOf(id));
@@ -471,6 +584,9 @@ export function publishAudio(input: PublishInput): PublishedAudio {
       const p = `alignments/${fileOf(id)}`;
       files.set(p, a);
       out.alignmentItems.push({ id, path: p, schema: 'schema/alignment.schema.json' });
+      const starts = applyChapterStarts(a, overrides.get(id), info.lecture.durationSeconds);
+      out.errors.push(...starts.errors.map((e) => `chapter-starts.json: ${e}`));
+      startsByLecture.set(id, starts.starts);
       // A class that reads two chapters is listed on both chapters' indexes.
       for (const key of alignmentChapters(a)) {
         alignmentsByChapter.set(key, [...(alignmentsByChapter.get(key) ?? []), a]);
@@ -500,10 +616,14 @@ export function publishAudio(input: PublishInput): PublishedAudio {
     }
   }
 
+  for (const id of overrides.keys()) {
+    if (!startsByLecture.has(id)) out.errors.push(`chapter-starts.json: ${id}: has no committed alignment`);
+  }
+
   for (const ch of input.chapters) {
     const list = alignmentsByChapter.get(ch.key);
     if (!list) continue;
-    const index = chapterAlignments(ch.key, ch.data, list, infos, transcriptIds, outlineIds);
+    const index = chapterAlignments(ch.key, ch.data, list, infos, transcriptIds, outlineIds, startsByLecture);
     if (index.lines.length === 0) continue;
     const p = `alignments/chapters/${ch.key}.json`;
     files.set(p, index);

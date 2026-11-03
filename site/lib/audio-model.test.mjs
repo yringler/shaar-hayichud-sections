@@ -14,6 +14,7 @@ import {
   formatTime,
   lineInClass,
   playableRefs,
+  playStart,
   lectureItems,
   nextInSeries,
   hashId,
@@ -337,3 +338,14 @@ test("vectors: lineInClass", () => {
     assert.equal(lineInClass(c.refs.map((lecture) => ({ lecture })), c.selected), c.expect, JSON.stringify(c));
   }
 });
+
+for (const c of vectors.playStart) {
+  test(`vectors: playStart: ${c.name}`, () => {
+    const data = {
+      lectures: c.chapterStarts.map((cs, i) => ({ ...lectures[0], id: `v${i}`, ...(cs === null ? {} : { chapterStartSeconds: cs }) })),
+      lines: c.lines.map((refs, i) => ({ lineId: `l${i}`, refs: refs.map(([l, s]) => ref(l, s, 1)) })),
+    };
+    const got = playStart(data, { lecture: c.ref[0], startSeconds: c.ref[1] });
+    assert.deepEqual([got.seekSeconds, got.offerStartSeconds], c.expect);
+  });
+}

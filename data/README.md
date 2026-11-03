@@ -14,6 +14,7 @@ Hayichud comes from this directory :
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
+| `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript, retimed words, audio edits) | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
@@ -507,8 +508,10 @@ For each published lecture the build writes, when the source exists:
 - `alignments/chapters/chapter_NN.json`: every published class aligned to the
   chapter (`lectures[]`: id, url, title, series, part, and paths of its
   alignment, transcript and outline) and `lines[]` in document order, each
-  with `refs[]` (`lecture` index, start, end, confidence; best first). The
-  site's chapter player reads this file.
+  with `refs[]` (`lecture` index, start, end, confidence; best first). Each
+  lecture also has `chapterStartSeconds`, where its part on this chapter
+  starts (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)).
+  The site's chapter player reads this file.
 - `transcripts/<lecture>.json`: the words (with `retimed/` times when the
   lecture has them) as paragraphs (`segments[]` of
   `startSeconds`/`endSeconds`/`text`, plus `speaker` when Sofer labelled
@@ -523,6 +526,45 @@ For each published lecture the build writes, when the source exists:
   "HIGH"|"MEDIUM"|"LOW"|"NONE", ...}`), only topics with a start time and HIGH
   or MEDIUM confidence, as `{title, startSeconds, confidence}` in time order,
   with `generatedBy: "sofer.ai"`. Show them as auto-generated.
+
+#### Where a class starts on a chapter
+
+Many classes open with an intro before the first line of text (Walters 1-1
+reads its first line at 1:04), and a class that reads two chapters hands
+over to the second one with "Okay, go ahead" or a short intro. A tap on a
+class's first line would skip that. So each lecture of a chapter index
+carries `chapterStartSeconds`, and the clients' `playStart` (site
+`audio/model.ts`, Dart `follow_along.dart`, shared vectors) decides from it:
+a lead-in under 15 s is played, a longer one is offered ("From start of
+class") while the line plays from itself.
+
+`chapterStarts()` in `tools/src/publish.ts` computes it from the published
+segments: 0 on the chapter the class reaches first, and on a later chapter
+3 s (`CHAPTER_LEAD_SECONDS`) before its first line, never inside the
+previous chapter's lines. Pauses do not mark the switch: the recorder was
+usually stopped between chapters ("you can turn the tape off now"), so the
+boundary pauses are no longer than ordinary ones (checked on all 16 Markel
+two-chapter tapes, November 2026); the first line minus 3 s was right on 13
+of them.
+
+`chapter-starts.json` sets it by hand where that is wrong, found by
+listening:
+
+```json
+{ "lectures": {
+  "209 Tape41-Side2 Ch38&39.mp3": {
+    "chapter_39": { "startSeconds": 706.0, "note": "intro to chapter 39 after 'Go ahead.'" }
+  }
+} }
+```
+
+`startSeconds` is audio time (the mp3 the catalog plays) and may not be
+after the class's first published line on that chapter: the build fails
+then (and for unknown or unpublished lectures, chapters the class has no
+line on, or a time past its end). Set it to the first line itself to offer
+nothing earlier (221: its 200 s preview of chapter 46 is too far back). An
+override is checked against the alignment, so re-check it when a tape is
+re-aligned or re-timed and the build complains.
 
 Published transcript text and outline titles spell the Name as G-d, like the
 chapter translations: `reverentSpelling` in `tools/src/publish.ts` turns God,

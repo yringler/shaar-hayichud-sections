@@ -3,7 +3,8 @@
        Without JavaScript: a plain player for the first class. With play.js: the
        teacher (series) and class selectors, Follow along, the Show transcript
        toggle (the transcript region above the controls, filled by play.js),
-       Autoplay next (under the player) and per-line play buttons. The series
+       Autoplay next (under the player), the "From start of class" offer
+       after a tap on a class's first line, and per-line play buttons. The series
        choice and Follow along and Autoplay next on/off are saved
        (localStorage) across pages. */ -}}
 {{- $d := .data -}}
@@ -50,6 +51,7 @@
   </div>
   <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
   <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
+  <button type="button" class="deep-play listen-from-start" data-listen-from-start hidden></button>
   <p class="listen-note" data-listen-note role="status" hidden></p>
   <p class="listen-now" data-listen-now aria-live="polite" hidden></p>
   <details class="listen-topics" data-listen-topics hidden>

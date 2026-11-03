@@ -1237,6 +1237,15 @@ button.deep-play {
   white-space: nowrap;
 }
 
+/* "⏮ From start of class (1:04 earlier)" under the chapter player
+   (play.ts): the same pill, a little smaller, aligned like Autoplay next. */
+button.listen-from-start {
+  align-self: flex-start;
+  margin-block: 0.3rem 0;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+}
+
 button.deep-play:hover {
   background: #3d5a80;
   color: #fff;
