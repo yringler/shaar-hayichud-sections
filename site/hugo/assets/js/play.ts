@@ -21,6 +21,7 @@ import {
   lineInClass,
   nextInSeries,
   playableRefs,
+  playStart,
   resolveTeacher,
   scrollToShow,
   segmentItems,
@@ -276,9 +277,49 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
    */
   let wanted: Teacher | null = null;
 
+  // ---- "From start of class": a tap on a class's first line on the chapter
+  // that comes well after the class's part on it starts (an intro, or the
+  // hand-off from the previous chapter) plays the line and offers that start
+  // (playStart in audio/model.ts). The offer goes once playback is past the
+  // line's range (at least 10 s), in another class, or after another tap. ----
+  const fromStart = panel.querySelector<HTMLButtonElement>('[data-listen-from-start]');
+  let offer: { url: string; start: number; until: number; armed: boolean } | null = null;
+  const hideOffer = () => {
+    offer = null;
+    if (fromStart) fromStart.hidden = true;
+  };
+  const showOffer = (url: string, start: number, line: Ref) => {
+    if (!fromStart) return;
+    const what = start === 0 ? 'class' : 'this chapter in the class';
+    const label = `From start of ${what} (${formatTime(line.startSeconds - start)} earlier)`;
+    fromStart.replaceChildren(
+      Object.assign(document.createElement('span'), { textContent: '⏮' }),
+      document.createTextNode(` ${label}`),
+    );
+    fromStart.firstElementChild?.setAttribute('aria-hidden', 'true');
+    fromStart.title = `Play from ${formatTime(start)}`;
+    // Armed by the seek to the line, so the old position before it does not count.
+    offer = { url, start, until: Math.max(line.endSeconds, line.startSeconds + 10), armed: false };
+    fromStart.hidden = false;
+  };
+  fromStart?.addEventListener('click', () => {
+    if (!offer) return;
+    const t = offer.start;
+    hideOffer();
+    void playAt(audio, t);
+  });
+  audio.addEventListener('seeked', () => {
+    if (offer) offer.armed = true;
+  });
+  audio.addEventListener('timeupdate', () => {
+    if (!offer) return;
+    if ((audio.getAttribute('src') || audio.currentSrc) !== offer.url) hideOffer();
+    else if (offer.armed && !audio.seeking && (audio.currentTime > offer.until || audio.currentTime < offer.start - 1)) hideOffer();
+  });
+
   const playRef = (r: Ref) => {
     const l = data?.lectures[r.lecture];
-    if (!l) return;
+    if (!l || !data) return;
     // Leaving the chosen class for a line it doesn't read says so first.
     const chosen = chosenLecture();
     const from = chosen === null || chosen === r.lecture ? undefined : data?.lectures[chosen];
@@ -289,7 +330,10 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
           ? `This line is not in ${wanted.title}'s classes yet; playing ${l.series}: ${l.title}.`
           : null,
     );
-    setLecture(r.lecture, r.startSeconds);
+    const start = playStart(data, r);
+    setLecture(r.lecture, start.seekSeconds);
+    if (start.offerStartSeconds === null) hideOffer();
+    else showOffer(l.url, start.offerStartSeconds, r);
   };
 
   const ranked = (lineId: string): Ref[] => {

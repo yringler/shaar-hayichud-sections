@@ -579,6 +579,57 @@ async function check(name, fn) {
     await context.close();
   });
 
+  await check('a class\'s first line after its intro: plays the line and offers the start; a short lead-in is played; later lines offer nothing', async () => {
+    const ch1 = readJson(path.join(DIST, 'alignments', 'chapters', 'chapter_01.json'));
+    const at = (id) => ch1.lectures.findIndex((l) => l.id === id);
+    const W11 = at('09 - Chap- 1-1 Chochmah Binah Daas.mp3');
+    const W17 = at('15 - Chap- 1-7 Chochmah Binah Daas.mp3');
+    const firstRef = (lineId, lecture) => ch1.lines.find((l) => l.lineId === lineId).refs.find((r) => r.lecture === lecture);
+    // The data this check relies on: 1-1 reads its first line at 1:04, 1-7 at 0:13.
+    assert.equal(ch1.lectures[W11].chapterStartSeconds, 0);
+    const intro = firstRef('xazelgse', W11);
+    const short = firstRef('wctxrksu', W17);
+    assert.ok(intro.startSeconds >= 15 && short.startSeconds < 15 && short.startSeconds > 0);
+    const { context, page, errors } = await newPage(browser, base);
+    await page.goto(`${base}/texts/chapter-1/`);
+    await page.waitForSelector('.line-play');
+    const offer = page.locator('[data-listen-from-start]');
+    assert.ok(await offer.isHidden());
+
+    await page.click('.line-play[data-line="xazelgse"]');
+    await waitTime(page, intro.startSeconds);
+    assert.equal((await audioState(page)).src, ch1.lectures[W11].url);
+    await offer.waitFor({ state: 'visible' });
+    assert.equal((await offer.textContent()).trim(), '⏮ From start of class (1:03 earlier)');
+    await page.screenshot({ path: path.join(shots, 'from-start-offer.png') });
+    await offer.click();
+    await waitTime(page, 0);
+    assert.ok(await offer.isHidden());
+    assert.equal((await audioState(page)).paused, false);
+
+    // Offered again on a new tap, then dropped once playback is past the line.
+    await page.click('.line-play[data-line="xazelgse"]');
+    await waitTime(page, intro.startSeconds);
+    await offer.waitFor({ state: 'visible' });
+    await seek(page, Math.max(intro.endSeconds, intro.startSeconds + 10) + 2);
+    await offer.waitFor({ state: 'hidden' });
+
+    // A lead-in under 15 s is played: from the start, nothing offered.
+    await page.click('.line-play[data-line="wctxrksu"]');
+    await waitTime(page, 0);
+    assert.equal((await audioState(page)).src, ch1.lectures[W17].url);
+    await page.waitForTimeout(300);
+    assert.ok(await offer.isHidden());
+
+    // Any later line of a class plays from itself with nothing offered.
+    const later = ch1.lines.find((l) => l.refs.length === 1 && l.refs[0].lecture === W11 && l.refs[0].startSeconds > intro.startSeconds);
+    await page.click(`.line-play[data-line="${later.lineId}"]`);
+    await waitTime(page, later.refs[0].startSeconds);
+    assert.ok(await offer.isHidden());
+    assert.deepEqual(errors, []);
+    await context.close();
+  });
+
   await check('the transcript toggle is hidden for a class without a published transcript', async () => {
     const { context, page, errors } = await newPage(browser, base);
     const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
