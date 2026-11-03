@@ -711,7 +711,13 @@ async function check(name, fn) {
     // The docked bar stays compact: about a fifth of the screen at most.
     await page.screenshot({ path: path.join(shots, 'chapter10-phone-follow-along.png') });
     const bar = await paneState(page);
-    assert.ok(bar.panel <= 0.25 * bar.innerHeight, `bar is ${bar.panel}px of ${bar.innerHeight}`);
+    // The line is not in the chosen class, so the note explains the switch;
+    // the bar itself (without the note) stays compact.
+    const noteH = await page.evaluate(() => {
+      const n = document.querySelector('[data-listen-note]');
+      return n && !n.hidden ? n.getBoundingClientRect().height : 0;
+    });
+    assert.ok(bar.panel - noteH <= 0.25 * bar.innerHeight, `bar is ${bar.panel - noteH}px (+${noteH}px note) of ${bar.innerHeight}`);
     // This class has no outline: no topic list, no stale "Now:" from another class.
     if (!chapter10.lectures[r.lecture].outline) {
       assert.ok(await page.locator('[data-listen-topics]').isHidden());
