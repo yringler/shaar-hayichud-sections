@@ -4,6 +4,9 @@
  * which class to play for a line, which line is current at a time, and
  * topic deep links.
  * No DOM access, so it is unit tested directly (site/lib/audio-model.test.mjs).
+ * rankRefs, spans/spanAt, nextInSeries, chooseSeries and topicAt are ported to
+ * Dart for the apps (packages/dart/lib/src/follow_along.dart); both run the
+ * vectors in site/lib/audio-model.vectors.json, so change them together.
  */
 
 export interface Lecture {

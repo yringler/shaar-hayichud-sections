@@ -78,6 +78,12 @@ valid v1 catalog. Refresh the bundled copy when you release the app.
 
 ## Versions
 
+- **1.3.0**: follow-along logic, ported from the site's
+  `audio/model.ts` and checked against the same vectors: `spans` /
+  `spanAt` (the current line or transcript paragraph at a time), `rankRefs`
+  (which class plays for a line), `nextInSeries` (autoplay next, within the
+  chapter), `chooseSeries`, `topicAt`, and the `ChapterAlignmentsIndex`
+  and `TranscriptTiming` extensions.
 - **1.2.0**: alignments and transcripts are published. Added
   `ChapterAlignments` (`alignments/chapters/chapter_NN.json`),
   `parseChapterAlignments`, `DataUrls.chapterAlignments` /

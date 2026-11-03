@@ -4,6 +4,7 @@
 library;
 
 export 'src/catalog_extensions.dart';
+export 'src/follow_along.dart';
 export 'src/generated/models.g.dart';
 export 'src/loader.dart';
 export 'src/urls.dart';

@@ -59,6 +59,7 @@ hugo/
   static/          # CNAME, _headers, texts/index.json
 lib/json-renderer.js  # renderJsonToHtml, used by the EPUB builder (tests alongside)
 lib/audio-model.test.mjs  # unit tests for hugo/assets/js/audio/model.ts (Node 22.18+ runs .ts directly)
+lib/audio-model.vectors.json  # test vectors also run by the Dart port (packages/dart follow_along.dart): keep the two in step
 lib/search-text.test.mjs  # unit tests for hugo/assets/js/search/text.ts
 scripts/search-index.ts   # yarn search-index (Search); scripts/tsconfig.json compiles it to scripts/build/ (git-ignored)
 scripts/e2e-audio.cjs # yarn test:e2e
