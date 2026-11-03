@@ -143,18 +143,19 @@ export function rankRefs(refs: readonly Ref[], lectures: readonly Lecture[], pre
 }
 
 /**
- * Whether a line can play while the class `selected` (index into
- * ChapterAlignments.lectures: the class in the selector / player) is chosen:
- * only lines that class reads. With no class chosen, every aligned line can.
+ * Whether the class `selected` (index into ChapterAlignments.lectures: the
+ * class in the selector / player) reads a line. Lines it doesn't read still
+ * play (another class), but are marked. With no class chosen, true.
  */
 export function lineInClass(refs: readonly Pick<Ref, 'lecture'>[], selected: number | null): boolean {
   return selected === null || refs.some((r) => r.lecture === selected);
 }
 
 /**
- * Candidates for "play from here" on a line, best first: with a class
- * chosen, only that class's ranges (empty when it doesn't read the line);
- * else every class's, ranked by rankRefs.
+ * Candidates for "play from here" on a line, best first: when the chosen
+ * class reads the line, only its ranges (a chosen class is never left for
+ * another on a line it reads, whatever the teacher preference); else every
+ * class's, ranked by rankRefs.
  */
 export function playableRefs(
   refs: readonly Ref[],
@@ -162,8 +163,8 @@ export function playableRefs(
   pref: Preference,
   selected: number | null,
 ): Ref[] {
-  const pool = selected === null ? refs : refs.filter((r) => r.lecture === selected);
-  return rankRefs(pool, lectures, pref);
+  const own = selected === null ? [] : refs.filter((r) => r.lecture === selected);
+  return rankRefs(own.length > 0 ? own : refs, lectures, pref);
 }
 
 /** A stretch of a recording during which `keys` (line ids or paragraph ids) are current. */

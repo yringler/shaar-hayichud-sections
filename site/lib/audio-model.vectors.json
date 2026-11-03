@@ -124,12 +124,20 @@
       "expect": [[2, 50]]
     },
     {
-      "name": "the chosen class does not read the line: nothing to play",
+      "name": "the chosen class does not read the line: every class, ranked",
       "series": ["0", "0", "37"],
       "refs": [[0, 10, 0.8], [1, 3, 0.9]],
       "pref": { "seriesId": "0", "currentLecture": 2 },
       "selected": 2,
-      "expect": []
+      "expect": [[1, 3], [0, 10]]
+    },
+    {
+      "name": "the chosen class reads the line: it wins over the preferred teacher",
+      "series": ["0", "0", "37"],
+      "refs": [[0, 10, 0.99], [2, 50, 0.5]],
+      "pref": { "seriesId": "0", "currentLecture": 2 },
+      "selected": 2,
+      "expect": [[2, 50]]
     },
     {
       "name": "the chosen class reads the line twice: higher confidence, then earlier",

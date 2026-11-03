@@ -279,10 +279,15 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   const playRef = (r: Ref) => {
     const l = data?.lectures[r.lecture];
     if (!l) return;
+    // Leaving the chosen class for a line it doesn't read says so first.
+    const chosen = chosenLecture();
+    const from = chosen === null || chosen === r.lecture ? undefined : data?.lectures[chosen];
     showNote(
-      wanted && l.seriesId !== wanted.id
-        ? `This line is not in ${wanted.title}'s classes yet; playing ${l.series}: ${l.title}.`
-        : null,
+      from
+        ? `This line is not in “${from.title}”; playing ${l.series}: ${l.title}.`
+        : wanted && l.seriesId !== wanted.id
+          ? `This line is not in ${wanted.title}'s classes yet; playing ${l.series}: ${l.title}.`
+          : null,
     );
     setLecture(r.lecture, r.startSeconds);
   };
@@ -396,31 +401,31 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
   /** Each decorated line's refs, by line id. */
   const lineRefs = new Map<string, ChapterAlignments['lines'][number]['refs']>();
 
-  /** Why a line can't play: the chosen class doesn't read it. */
-  const notInClassNote = (): string => {
+  /** The hint on a line the chosen class doesn't read. */
+  const otherClassHint = (): string => {
     const l = data?.lectures[chosenLecture() ?? -1];
-    return l ? `This line is not in “${l.title}”. Choose another class to play it.` : '';
+    return l ? `Not in “${l.title}”: plays another class` : '';
   };
 
   /**
-   * Line buttons of lines the chosen class doesn't read are disabled
-   * (aria-disabled, so a click still reaches the handler and explains why;
-   * the title shows the same on hover).
+   * Line buttons of lines the chosen class doesn't read are marked
+   * (.is-other-class, drawn hollow) with a title; they still play, another
+   * class, and the note says so.
    */
   const updateLineStates = () => {
     const chosen = chosenLecture();
-    const note = notInClassNote();
+    const hint = otherClassHint();
     for (const b of document.querySelectorAll<HTMLButtonElement>('.line-play[data-line]')) {
       const refs = lineRefs.get(b.dataset['line']!);
       if (!refs) continue;
-      if (lineInClass(refs, chosen)) {
-        b.removeAttribute('aria-disabled');
+      const other = !lineInClass(refs, chosen);
+      b.classList.toggle('is-other-class', other);
+      if (other) {
+        b.title = hint;
+        b.setAttribute('aria-label', `Play from here (${hint})`);
+      } else {
         b.removeAttribute('title');
         b.setAttribute('aria-label', 'Play from here');
-      } else {
-        b.setAttribute('aria-disabled', 'true');
-        b.title = note;
-        b.setAttribute('aria-label', `Play from here (unavailable: ${note})`);
       }
     }
   };
@@ -433,10 +438,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     const target = e.target as Element;
     const button = target.closest<HTMLElement>('.line-play[data-line]');
     if (button) {
-      if (button.getAttribute('aria-disabled') === 'true') {
-        showNote(notInClassNote());
-        return;
-      }
       const best = ranked(button.dataset['line']!)[0];
       if (best) playRef(best);
       return;
@@ -453,7 +454,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       if (s && !s.isCollapsed) return;
       const best = ranked(line.id)[0];
       if (best) playRef(best);
-      else showNote(notInClassNote());
     }, 250);
   });
 

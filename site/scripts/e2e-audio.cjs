@@ -260,7 +260,7 @@ async function check(name, fn) {
       assert.ok(await page.locator('[data-listen-note]').isHidden());
     });
 
-    await check('a line only Markel covers plays Markel and says so', async () => {
+    await check('a line the chosen class does not read: marked, plays another class (Markel) and says so', async () => {
       // Every chapter 10 line is in a Walters class now, so use the first chapter that has a Markel-only line.
       const found = fs
         .readdirSync(path.join(DIST, 'alignments', 'chapters'))
@@ -278,11 +278,19 @@ async function check(name, fn) {
       const other = await newPage(browser, base);
       try {
         await other.page.goto(`${base}/texts/chapter-${n}/`);
-        await other.page.click(`.line-play[data-line="${l.lineId}"]`);
+        const button = other.page.locator(`.line-play[data-line="${l.lineId}"]`);
+        // The default teacher's first class is chosen and doesn't read this
+        // line: the button is marked, but still plays (Markel), and says so.
+        await other.page.waitForFunction((id) => document.querySelector(`.line-play[data-line="${id}"]`)?.classList.contains('is-other-class'), l.lineId);
+        assert.match(await button.getAttribute('title'), /^Not in “.+”: plays another class$/);
+        assert.equal(await button.getAttribute('aria-disabled'), null);
+        await button.click();
         await waitTime(other.page, l.refs[0].startSeconds);
         assert.equal((await audioState(other.page)).src, ch.lectures[l.refs[0].lecture].url);
-        assert.match(await other.page.locator('[data-listen-note]').textContent(), /not in Rabbi Benyamin Walters Original Class's classes yet; playing Rabbi Markel/);
+        assert.match(await other.page.locator('[data-listen-note]').textContent(), /^This line is not in “.+”; playing Rabbi Markel/);
         assert.equal(await other.page.locator('[data-listen-series]').inputValue(), '37');
+        // Now Markel's class is chosen: its lines are no longer marked.
+        assert.equal(await button.getAttribute('class'), 'line-play');
       } finally {
         await other.context.close();
       }

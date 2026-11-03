@@ -158,25 +158,27 @@ List<ChapterAlignmentsRef> rankRefs(
   return [for (final (_, r) in indexed) r];
 }
 
-/// Whether a line (its refs) can play while the class [selected] (a lecture
-/// index: the class in the player) is chosen: only lines that class reads.
-/// With no class chosen, every aligned line can.
+/// Whether the class [selected] (a lecture index: the class in the player)
+/// reads a line (its refs). Lines it doesn't read still play (another
+/// class), but are marked. With no class chosen, true.
 bool lineInClass(Iterable<ChapterAlignmentsRef> refs, int? selected) =>
     selected == null || refs.any((r) => r.lecture == selected);
 
-/// Candidates for "play from here" on a line, best first: with a class
-/// [selected], only that class's ranges (empty when it doesn't read the
-/// line); else every class's, ranked by [rankRefs].
+/// Candidates for "play from here" on a line, best first: when the chosen
+/// class [selected] reads the line, only its ranges (a chosen class is never
+/// left for another on a line it reads, whatever the teacher preference);
+/// else every class's, ranked by [rankRefs].
 List<ChapterAlignmentsRef> playableRefs(
   Iterable<ChapterAlignmentsRef> refs,
   String? Function(int lecture) seriesOf,
   RefPreference pref,
   int? selected,
-) => rankRefs(
-  selected == null ? refs : refs.where((r) => r.lecture == selected),
-  seriesOf,
-  pref,
-);
+) {
+  final own = selected == null
+      ? const <ChapterAlignmentsRef>[]
+      : refs.where((r) => r.lecture == selected).toList();
+  return rankRefs(own.isNotEmpty ? own : refs, seriesOf, pref);
+}
 
 /// The index of the class after [lecture] in its own series (catalog order),
 /// or null after the series' last class. Autoplay next stops there: it never
