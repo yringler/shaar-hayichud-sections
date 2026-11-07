@@ -113,7 +113,7 @@ corepack yarn serve:offline           # serve the last build without rebuilding
 
 The editor lists and loads the chapters in the checkout's `data/chapters/`, and asks for no password. Each save writes the chapter file and makes a local git commit of only that file, with the save message; anything else you have staged or changed is left alone. A chapter changed on disk since you loaded it is refused, as online. Push the commits yourself when you are back online. The Hugo site is not involved.
 
-The server listens on `127.0.0.1` only. Icons do not show offline (they load from a CDN); every button also has a text label. Bundling the icons is a follow-up.
+The server listens on `127.0.0.1` only.
 
 ## License
 

@@ -20,7 +20,14 @@
               "src/styles.css",
               "@awesome.me/webawesome/dist/styles/webawesome.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "assets": [
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@fortawesome/fontawesome-free/svgs/solid",
+                "output": "fontawesome/svgs/solid"
+              }
+            ]
           },
           "configurations": {
             "production": {

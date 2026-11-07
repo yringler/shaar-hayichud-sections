@@ -48,7 +48,7 @@
         (click)="onSave()"
         [title]="currentFile() ? 'Save ' + currentFile() + ' to GitHub' : 'Set a chapter number first'"
       >
-        <wa-icon [name]="saveStatus() === 'saving' ? 'arrow-clockwise' : 'cloud-upload'" slot="start"></wa-icon>
+        <wa-icon [name]="saveStatus() === 'saving' ? 'arrow-rotate-right' : 'cloud-arrow-up'" slot="start"></wa-icon>
         @if (saveStatus() === 'saving') { Saving... }
         @else if (saveStatus() === 'success') { Saved! }
         @else if (saveStatus() === 'error') { Error }
@@ -85,7 +85,7 @@
   @if (showSaveOverlay()) {
     <div class="save-overlay">
       <div class="save-overlay-content">
-        <wa-icon name="cloud-upload" style="font-size: 3rem;"></wa-icon>
+        <wa-icon name="cloud-arrow-up" style="font-size: 3rem;"></wa-icon>
         <span>Saving...</span>
       </div>
     </div>

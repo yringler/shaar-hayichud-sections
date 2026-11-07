@@ -13,6 +13,7 @@ Angular 21, standalone components, zoneless change detection, signals.
 | `src/app/services/` (others) | Saving through `POST /api/save`, auth, and the chapter library | yes |
 | `src/save-api/` | The one save implementation (`handleSave`), the `SaveStore` interface, and the GitHub store; Fetch `Request`/`Response` only, so it runs in Workers and Node; reuses `editor/chapter-check.ts` | no |
 | `functions/api/save.ts` | Cloudflare Pages Function: CORS plus `handleSave` with the GitHub store | n/a |
+| `src/icons.ts` | Points Web Awesome's default icon library at the Font Awesome Free SVGs that `angular.json` copies from `@fortawesome/fontawesome-free` into the build (`/fontawesome/svgs/solid/`), so no icon comes from a CDN; imported first by `main.ts` | no |
 | `server/` | Offline mode (Node only): `local.ts` (CLI), `local-server.ts` (static app, `/texts/`, `/api/save`), `git-worktree-store.ts` (writes and commits in the local checkout) | no |
 
 ## Data flow
