@@ -1,6 +1,6 @@
 # Claude Code Instructions — section-tool
 
-> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is saved by `functions/api/save.ts` (GitHub contents API) into the repo's [`data/chapters/`](../data/README.md), the single source of truth that the [`site/` sub-project](../site/CLAUDE.md) renders and publishes. Saved files must match `data/schema/v1/chapter.schema.json`; the site build fails otherwise.
+> **Monorepo context**: This is the `section-tool/` sub-project. See the [root CLAUDE.md](../CLAUDE.md) for an overview of the full repo. The JSON produced here is saved into the repo's [`data/chapters/`](../data/README.md), the single source of truth that the [`site/` sub-project](../site/CLAUDE.md) renders and publishes. One save implementation, `src/save-api/handle-save.ts`, is used by `functions/api/save.ts` (Cloudflare Pages Function, commits through the GitHub contents API) and by `server/local.ts` (offline mode: writes the local checkout and commits locally). Saved files must match `data/schema/v1/chapter.schema.json`; the site build fails otherwise.
 
 A keyboard-driven Angular 21 editor (standalone components, signals, zoneless, Vitest) for dividing Hebrew chapter text into nested sections. See [ARCHITECTURE.md](ARCHITECTURE.md) for the layout and data flow.
 
@@ -14,6 +14,7 @@ These are the invariants; keep them when changing anything.
 4. **Ids are injected.** Editor code gets fresh ids from an `IdSource` (the `ID_SOURCE` token), never from `crypto` directly. Section (node) ids are in-memory only and are not persisted.
 5. **Line ids are carried, never regenerated.** Lines have persisted ids that alignments point at. Every command must keep the ids of the lines it keeps or moves, and mint fresh ids (unique in the document) only for new lines. Splits never cut a line; a join is a delete plus an insert. Lines removed by one command and brought back by a later one (undo, cut and paste) get their id back from the service's retired lines. The rules live in `editor/lines.ts`; see ARCHITECTURE.md.
 6. **Load and save are a tested pair.** `editor/serialization.ts` parses chapter JSON and prints it back in the file's own layout. The golden test in `serialization.spec.ts` checks that every `data/chapters/*.json` file round-trips byte for byte, line ids included; keep it passing.
+7. **One save implementation.** The HTTP contract (`GET {xmlBaseUrl}/texts/index.json` and `/texts/<file>`, `POST {saveApiBaseUrl}/api/save`) is the seam between the frontend and either backend. Validation, path rules, the stale-base check and the response shape live only in `handleSave`; the Pages Function and the local server are thin adapters that pass a `SaveStore`. Stores report a file's version as its git blob sha; the local store hashes the bytes on disk, and the local server serves those exact bytes.
 
 ## Adding or changing behavior
 
@@ -26,6 +27,7 @@ These are the invariants; keep them when changing anything.
 - `yarn test` (the package pins Yarn 4; if the global yarn is 1.x, use `corepack yarn test`). Pass `--watch=false` for a single run.
 - Specs use the helpers in `src/app/editor/testing.ts`: `node(...)`/`nodeWith(...)` and `t('id:text', ...)` (a text run) to build trees, `sequentialIds()`/`provideSequentialIds()` for deterministic ids, and `deepFreeze()` so a test fails if a command mutates its input.
 - Some specs read `../data/` relative to the working directory (the golden round trip, the chapter check, the line-id format check), so run tests from `section-tool/`.
+- `yarn test` also runs the Node-only specs in `server/` (listed in `angular.json`'s test `include`); the `git-worktree-store` specs need `git` on PATH and work in temporary repositories. `yarn typecheck:server` type-checks `server/` and `src/save-api/` (`tsconfig.server.json`).
 
 ## Common commands
 
@@ -33,6 +35,7 @@ These are the invariants; keep them when changing anything.
 yarn start   # dev server at http://localhost:4200
 yarn test    # Vitest
 yarn build   # production build
+yarn offline # build and serve at http://localhost:4300; saves commit to the local checkout
 ```
 
 ## Keyboard shortcuts (user-facing)

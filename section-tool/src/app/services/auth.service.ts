@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 const STORAGE_KEY = 'editor_api_password';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
+  /** Whether saves need the editor password (false in the offline build, whose local server has no auth). */
+  readonly required: boolean = environment.requireAuth;
+
   private password: string | null = localStorage.getItem(STORAGE_KEY);
 
   getPassword(): string {

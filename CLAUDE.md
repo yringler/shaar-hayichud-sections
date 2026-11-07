@@ -13,7 +13,7 @@ This repo has one shared data directory, two sub-projects and a Dart package. Re
 
 ## How the pieces relate
 
-- `section-tool` edits chapter files (`TextNode[]` arrays). Its Cloudflare Pages Function saves them to `data/chapters/` through the GitHub API.
+- `section-tool` edits chapter files (`TextNode[]` arrays). Its Cloudflare Pages Function saves them to `data/chapters/` through the GitHub API. Offline, `yarn offline` serves the same editor from a local Node server that writes `data/chapters/` in the local checkout and commits each save locally (pushing stays manual); both share one save implementation.
 - `data/tools` validates `data/` (catalog grammar, stable IDs, JSON Schemas) and writes `data/dist/v1/`. This directory is generated and git-ignored.
 - `site`'s `yarn build` runs the data build, then Hugo, then the Pagefind search index over what the site published (`/search/`). Hugo renders pages from `data/chapters/` and the generated catalog, and publishes `data/dist/v1/` at `/data/v1/`. Other clients, such as the lessons2 Flutter app, read that published JSON, using the Dart models in `packages/dart/`.
 - `data/tools` `yarn transcribe` stores Sofer.ai word-timestamped transcripts of classes in `data/transcripts/` (needs `SOFER_API_KEY`; never commit the key), and `yarn align` maps them to chapter line IDs in `data/alignments/`. `yarn outline` stores Sofer topic outlines in `data/outlines/`. `data/retime` (Python, uv; never needed by the build or deploy) re-times Sofer's often-broken word times against the audio into `data/retimed/`, which `yarn align` and the published transcripts prefer; a stale retimed file fails the build. All are keyed by catalog lecture ID and validated by the data build, which publishes the lectures allowlisted in `data/audio-publish.json` under `/data/v1/{alignments,transcripts,outlines}/`. See [data/README.md](data/README.md#transcripts-and-alignments).
@@ -45,6 +45,7 @@ dart test
 cd section-tool
 yarn install
 yarn start       # dev server at http://localhost:4200
+yarn offline     # offline editor at http://localhost:4300; saves commit locally
 yarn test        # Vitest unit tests
 
 # Site (Hugo; needs hugo on PATH)
