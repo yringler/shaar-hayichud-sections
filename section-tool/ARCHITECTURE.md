@@ -10,8 +10,11 @@ Angular 21, standalone components, zoneless change detection, signals.
 | `src/app/editor/` | The document logic: commands (`applyCommand`), immutable tree helpers, line-id logic, the keymap, chapter JSON load/save, and the pre-save chapter check | no (except the `ID_SOURCE` token and test helpers) |
 | `src/app/services/text-section.service.ts` | Holds the document in a signal and exposes `dispatch(command)` plus the derived `jsonOutput` | yes |
 | `src/app/components/`, `src/app/text-sectioner/` | Rendering and user input | yes |
-| `src/app/services/` (others) | Saving through the Cloudflare Pages Function, auth, and the chapter library | yes |
-| `functions/api/save.ts` | Cloudflare Pages Function that commits a chapter to `data/chapters/`; reuses `editor/chapter-check.ts` | n/a |
+| `src/app/services/` (others) | Saving through `POST /api/save`, auth, and the chapter library | yes |
+| `src/save-api/` | The one save implementation (`handleSave`), the `SaveStore` interface, and the GitHub store; Fetch `Request`/`Response` only, so it runs in Workers and Node; reuses `editor/chapter-check.ts` | no |
+| `functions/api/save.ts` | Cloudflare Pages Function: CORS plus `handleSave` with the GitHub store | n/a |
+| `src/icons.ts` | Points Web Awesome's default icon library at the Font Awesome Free SVGs that `angular.json` copies from `@fortawesome/fontawesome-free` into the build (`/fontawesome/svgs/solid/`), so no icon comes from a CDN; imported first by `main.ts` | no |
+| `server/` | Offline mode (Node only): `local.ts` (CLI), `local-server.ts` (static app, `/texts/`, `/api/save`), `git-worktree-store.ts` (writes and commits in the local checkout) | no |
 
 ## Data flow
 
@@ -40,4 +43,18 @@ Text runs are tracked by position in the template, not by line id: a run's first
 
 `editor/serialization.ts` parses chapter JSON into editor nodes and prints the tree back as the JSON the editor saves, in the loaded file's own layout. A golden test checks that loading and saving every chapter in `data/chapters/` is byte-identical.
 
-Loading reports how many lines got a fresh id because theirs was missing, invalid or duplicated (or the file used the old plain-string format); the editor asks before saving such a file, since that replaces persisted ids. Saves also carry the git blob sha of the JSON that was loaded (`services/base-version.ts`), and `functions/api/save.ts` refuses (409) to overwrite a file that changed since: the editor loads from the deployed site, which can lag behind the repository.
+Loading reports how many lines got a fresh id because theirs was missing, invalid or duplicated (or the file used the old plain-string format); the editor asks before saving such a file, since that replaces persisted ids. Saves also carry the git blob sha of the JSON that was loaded (`services/base-version.ts`), and the save endpoint refuses (409) to overwrite a file that changed since: the editor loads from the deployed site, which can lag behind the repository.
+
+## Saving
+
+The frontend talks to its backend only through an HTTP contract, configured by `xmlBaseUrl` and `saveApiBaseUrl` in the environment:
+
+- `GET {xmlBaseUrl}/texts/index.json` lists the chapters (`[{ file, url }]`); `GET {xmlBaseUrl}/texts/<file>` returns the file's exact bytes.
+- `POST {saveApiBaseUrl}/api/save` with `{ path, content, message, baseSha? }` answers `{ commitSha, contentSha }`. 401 makes the editor ask for the password again (only when `environment.requireAuth`); 409 means the chapter changed since it was loaded.
+
+`src/save-api/handle-save.ts` implements the endpoint once: auth (skipped when `apiSecret` is null), body and path validation, the chapter check, the stale-base check and the response shape. It reads and writes through a `SaveStore`: `currentSha(path)` returns the file's git blob sha (null if missing), and `write(path, content, message, expectedSha)` commits it, failing with a `StoreError(409)` if the file is no longer at `expectedSha`. There are two stores:
+
+- **GitHub** (`src/save-api/github-store.ts`, used by `functions/api/save.ts`): the contents API, whose `sha` on PUT is GitHub's own compare-and-swap.
+- **Git worktree** (`server/git-worktree-store.ts`, used by the offline server): hashes the bytes on disk, and under a per-process lock re-checks the sha, writes the file, runs `git add` and `git commit --only -- <path>`, so only that chapter is committed and whatever else is staged or modified stays as it was. Unchanged content makes no commit. If git fails (a pre-commit hook, say), the file's previous bytes are restored and it is unstaged.
+
+Offline mode (`yarn offline`) builds the app with `environment.offline.ts` (empty base URLs, no password) into `dist/offline/`, and `server/local.ts` serves it on `127.0.0.1` together with the checkout's `data/chapters/` at `/texts/` and `/api/save`, all same-origin. The server refuses requests whose `Host` is not `localhost` or `127.0.0.1` on its port, saves with a foreign `Origin` or a non-JSON content type, and never sends CORS headers, so other sites in the browser cannot read chapters or commit. Pushing is left to the user.

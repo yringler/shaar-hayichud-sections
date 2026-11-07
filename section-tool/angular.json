@@ -20,7 +20,14 @@
               "src/styles.css",
               "@awesome.me/webawesome/dist/styles/webawesome.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "assets": [
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@fortawesome/fontawesome-free/svgs/solid",
+                "output": "fontawesome/svgs/solid"
+              }
+            ]
           },
           "configurations": {
             "production": {
@@ -43,6 +50,23 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "offline": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.offline.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ],
+              "outputHashing": "all",
+              "outputPath": "dist/offline"
             }
           },
           "defaultConfiguration": "production"
@@ -51,7 +75,11 @@
           "builder": "@angular/build:unit-test",
           "options": {
             "tsConfig": "tsconfig.spec.json",
-            "buildTarget": "hebrew-section-tool:build:development"
+            "buildTarget": "hebrew-section-tool:build:development",
+            "include": [
+              "**/*.spec.ts",
+              "../server/**/*.spec.ts"
+            ]
           }
         },
         "serve": {

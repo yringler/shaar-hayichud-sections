@@ -9,7 +9,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:library": "tsx src/app/services/xml-library.manual-test.ts",
-    "dev:full": "ng build --configuration development && npx wrangler pages dev dist/hebrew-section-tool/browser"
+    "dev:full": "ng build --configuration development && npx wrangler pages dev dist/hebrew-section-tool/browser",
+    "build:offline": "NG_CLI_ANALYTICS=false ng build --configuration offline",
+    "serve:offline": "tsx server/local.ts",
+    "offline": "yarn build:offline && yarn serve:offline",
+    "typecheck:server": "tsc -p tsconfig.server.json"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +25,8 @@
     "@angular/platform-browser": "^21.1.4",
     "@angular/platform-browser-dynamic": "^21.1.4",
     "@angular/router": "^21.1.4",
-    "@awesome.me/webawesome": "^3.2.1",
+    "@awesome.me/webawesome": "^3.14.0",
+    "@fortawesome/fontawesome-free": "7.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

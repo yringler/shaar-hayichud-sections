@@ -37,7 +37,7 @@ export class SaveService {
       setTimeout(() => this.status.set('idle'), 3000);
       return saved;
     } catch (err) {
-      if (err instanceof HttpErrorResponse && err.status === 401) {
+      if (err instanceof HttpErrorResponse && err.status === 401 && this.auth.required) {
         // Clear stored password and re-prompt
         this.auth.clearPassword();
         this.auth.promptForPassword();
@@ -60,11 +60,10 @@ export class SaveService {
   }
 
   private async attemptSave(path: string, content: string, message: string, baseSha: string | null): Promise<string> {
-    const password = this.auth.getPassword();
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${password}`,
-    });
+    let headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    if (this.auth.required) {
+      headers = headers.set('Authorization', `Bearer ${this.auth.getPassword()}`);
+    }
     const url = `${environment.saveApiBaseUrl}/api/save`;
     const body = baseSha ? { path, content, message, baseSha } : { path, content, message };
     const response = await firstValueFrom(this.http.post<SaveResponse>(url, body, { headers }));

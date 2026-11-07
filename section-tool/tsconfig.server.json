@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["server/**/*.ts", "src/save-api/**/*.ts"],
+  "exclude": ["**/*.spec.ts"]
+}

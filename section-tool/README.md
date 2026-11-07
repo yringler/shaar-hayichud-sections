@@ -89,7 +89,31 @@ Open your browser at `http://localhost:4200/`
 
 - **Copy**: Copy JSON to clipboard
 - **Download**: Save as a .json file
-- **Save**: Commit the chapter to `data/chapters/` on GitHub, in the file's own layout (indent, trailing newline), so the commit shows only what changed. Both the editor and the save function refuse a chapter whose lines lack valid, unique IDs.
+- **Save**: Commit the chapter to `data/chapters/` on GitHub (or, in [offline mode](#offline-mode), in your local checkout), in the file's own layout (indent, trailing newline), so the commit shows only what changed. Both the editor and the save endpoint refuse a chapter whose lines lack valid, unique IDs.
+
+## Offline mode
+
+Edit chapters with no internet connection, straight from a checkout of the repository.
+
+Once, while online (from `section-tool/`):
+
+```bash
+corepack yarn install          # also caches Yarn 4 itself
+git config user.name "Your Name"   # if git has no identity yet
+git config user.email "you@example.com"
+```
+
+Then, offline:
+
+```bash
+corepack yarn offline                 # build, then serve at http://localhost:4300/
+corepack yarn offline --port 4400     # another port (or PORT=4400)
+corepack yarn serve:offline           # serve the last build without rebuilding
+```
+
+The editor lists and loads the chapters in the checkout's `data/chapters/`, and asks for no password. Each save writes the chapter file and makes a local git commit of only that file, with the save message; anything else you have staged or changed is left alone. A chapter changed on disk since you loaded it is refused, as online. Push the commits yourself when you are back online. The Hugo site is not involved.
+
+The server listens on `127.0.0.1` only.
 
 ## License
 
