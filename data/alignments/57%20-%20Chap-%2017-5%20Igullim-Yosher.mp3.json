@@ -15,16 +15,17 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
-    }
+    },
+    "times": "sofer"
   },
   "stats": {
     "transcriptWords": 2360,
     "hebrewWords": 178,
     "matchedWords": 43,
-    "chapterLines": 60,
+    "chapterLines": 62,
     "alignedLines": 4,
-    "firstLineIndex": 32,
-    "lastLineIndex": 35,
+    "firstLineIndex": 34,
+    "lastLineIndex": 37,
     "meanConfidence": 0.654
   },
   "segments": [

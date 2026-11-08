@@ -27,7 +27,7 @@
     "transcriptWords": 4173,
     "hebrewWords": 913,
     "matchedWords": 278,
-    "chapterLines": 108,
+    "chapterLines": 109,
     "alignedLines": 27,
     "firstLineIndex": 0,
     "lastLineIndex": 27,
@@ -42,7 +42,7 @@
       },
       {
         "chapter": "chapter_16",
-        "chapterLines": 44,
+        "chapterLines": 45,
         "alignedLines": 0,
         "firstLineIndex": -1,
         "lastLineIndex": -1
