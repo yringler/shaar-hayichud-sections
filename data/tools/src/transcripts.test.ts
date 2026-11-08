@@ -15,6 +15,7 @@ import {
   formatTranscript,
   lectureContexts,
   lectureFileName,
+  lecturesReadingChapters,
   selectLectures,
   soferTitleFor,
   type StoredTranscript,
@@ -81,6 +82,21 @@ describe('lecture contexts', () => {
     assert.deepEqual(chapterKeysFor(by('old-id.mp3')), ['chapter_03']);
     assert.deepEqual(chapterKeysFor(by('022 d.mp3')), ['chapter_15', 'chapter_16']);
     assert.deepEqual(chapterKeysFor(by('030 e.mp3')), ['chapter_32']);
+    // --chapter: every lecture reading the chapter, a two-chapter class included.
+    assert.deepEqual(
+      lecturesReadingChapters(markel, ['chapter_16']).map((c) => c.lecture.id),
+      ['022 d.mp3'],
+    );
+    assert.deepEqual(
+      lecturesReadingChapters(markel, ['chapter_10', 'chapter_32']).map((c) => c.lecture.id),
+      ['002 a.mp3', '003 b.mp3', '030 e.mp3'],
+    );
+    assert.deepEqual(
+      lecturesReadingChapters(markel, ['chapter_16'], new Map([['030 e.mp3', { chapters: ['chapter_16'] }]])).map(
+        (c) => c.lecture.id,
+      ),
+      ['022 d.mp3', '030 e.mp3'],
+    );
     // --section on the part takes the loose lectures and the ones under its sub-headings.
     assert.deepEqual(
       selectLectures(markel, [], ['38']).selected.map((c) => c.lecture.id),

@@ -265,6 +265,19 @@ export function selectLectures(
 }
 
 /**
+ * The lectures that read any of `chapterKeys` (chapterKeysFor), in catalog
+ * order: the ones whose alignments go stale when those chapters' text changes.
+ */
+export function lecturesReadingChapters(
+  all: readonly LectureContext[],
+  chapterKeys: readonly string[],
+  overrides: ChapterOverrides = new Map(),
+): LectureContext[] {
+  const wanted = new Set(chapterKeys);
+  return all.filter((c) => chapterKeysFor(c, overrides).some((k) => wanted.has(k)));
+}
+
+/**
  * data/alignments/<encoded lecture id>.json. A superset of the published
  * v1 alignment shape (schema/v1/alignment.schema.json): the build validates
  * it against that schema and checks that every segment's lineId exists in

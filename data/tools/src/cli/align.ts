@@ -7,7 +7,10 @@
  * every lecture that has a stored transcript and teaches one or two
  * chapters (chapterKeysFor: data/alignment-chapters.json, else a "Chapter N"
  * / "End Chapter N and Chapter M" lecture title, else its innermost
- * heading); narrow it with --lecture <id> / --section <heading id>. A class
+ * heading); narrow it with --lecture <id> / --section <heading id>, and/or
+ * to the lectures that read a chapter with --chapter <key> (e.g. chapter_18;
+ * repeatable), which is what to rerun after editing that chapter's text. A
+ * --chapter run with nothing to align is not an error. A class
  * that reads two chapters is aligned against their lines concatenated in
  * reading order, so its segments carry both chapters; an override with
  * time ranges aligns each range to its own chapter instead.
@@ -40,6 +43,7 @@ import {
   alignmentPath,
   chapterKeysFor,
   lectureContexts,
+  lecturesReadingChapters,
   parseChapterOverrides,
   selectLectures,
   transcriptPath,
@@ -52,6 +56,7 @@ const { values } = parseArgs({
   options: {
     lecture: { type: 'string', multiple: true, default: [] },
     section: { type: 'string', multiple: true, default: [] },
+    chapter: { type: 'string', multiple: true, default: [] },
     'after-previous': { type: 'boolean', default: false },
     'min-confidence': { type: 'string' },
     verbose: { type: 'boolean', default: false },
@@ -88,7 +93,17 @@ if (picked.errors.length > 0) {
   for (const e of picked.errors) console.error(e);
   process.exit(2);
 }
-const todo = picked.selected.filter((c) => existsSync(transcriptPath(DATA_DIR, c.lecture.id)));
+const unknownChapters = values.chapter.filter((k) => !chapterFiles.has(k));
+if (unknownChapters.length > 0) {
+  for (const k of unknownChapters) console.error(`--chapter ${k}: no data/chapters/${k}.json`);
+  process.exit(2);
+}
+const reading = values.chapter.length > 0 ? lecturesReadingChapters(picked.selected, values.chapter, overrides) : picked.selected;
+const todo = reading.filter((c) => existsSync(transcriptPath(DATA_DIR, c.lecture.id)));
+if (todo.length === 0 && values.chapter.length > 0) {
+  console.log(`No lecture with a stored transcript reads ${values.chapter.join(', ')}; nothing to align.`);
+  process.exit(0);
+}
 if (todo.length === 0) {
   console.error('No selected lecture has a stored transcript (run yarn transcribe first).');
   process.exit(2);
