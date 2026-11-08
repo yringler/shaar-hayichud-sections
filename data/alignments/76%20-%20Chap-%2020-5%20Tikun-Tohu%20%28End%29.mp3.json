@@ -15,7 +15,8 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
-    }
+    },
+    "times": "sofer"
   },
   "stats": {
     "transcriptWords": 1476,
