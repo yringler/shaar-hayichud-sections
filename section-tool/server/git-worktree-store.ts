@@ -1,6 +1,9 @@
 /**
  * A SaveStore over a local git checkout (offline mode): each save writes
- * data/chapters/<file>.json in the working tree and commits only that file.
+ * data/chapters/<file>.json in the working tree and commits only that file,
+ * plus, with a `realign` hook, the data/alignments/ files the hook changed
+ * (re-aligning class transcripts to the edited chapter's lines). Files that
+ * were already modified before the save are never swept into its commit.
  * Node only.
  */
 import { execFile } from 'node:child_process';
@@ -12,6 +15,19 @@ import { SaveResult, SaveStore, StoreError } from '../src/save-api/save-store';
 
 const CHAPTER_PATH = /^data\/chapters\/[A-Za-z0-9_-]+\.json$/;
 const MAX_BUFFER = 10 * 1024 * 1024;
+const ALIGNMENTS_DIR = 'data/alignments';
+
+/**
+ * Re-aligns transcripts after a chapter file was written, updating files in
+ * data/alignments/. Called with the chapter's repo path before the commit.
+ * Its errors are logged and the chapter is committed alone.
+ */
+export type Realign = (repoPath: string) => Promise<void>;
+
+export interface GitWorktreeStoreOptions {
+  git?: string;
+  realign?: Realign;
+}
 
 /** The git blob sha (hex SHA-1 of "blob <byte length>\0<bytes>") of raw bytes. */
 export function gitBlobShaOfBytes(bytes: Uint8Array): string {
@@ -68,10 +84,16 @@ export class GitWorktreeStore implements SaveStore {
   /** Serializes writes so compare-and-swap and commit are atomic per process. */
   private queue: Promise<unknown> = Promise.resolve();
 
+  private readonly git: string;
+  private readonly realign: Realign | undefined;
+
   constructor(
     readonly repoRoot: string,
-    private readonly git = 'git',
-  ) {}
+    options: GitWorktreeStoreOptions = {},
+  ) {
+    this.git = options.git ?? 'git';
+    this.realign = options.realign;
+  }
 
   async currentSha(repoPath: string): Promise<string | null> {
     const bytes = await this.readBytes(this.resolve(repoPath));
@@ -98,10 +120,12 @@ export class GitWorktreeStore implements SaveStore {
 
     const bytes = Buffer.from(content, 'utf8');
     const contentSha = gitBlobShaOfBytes(bytes);
+    const dirtyBefore = this.realign ? await this.changedAlignments() : new Set<string>();
     await writeFile(abs, bytes);
 
     let added = false;
     let committed = false;
+    let realigned: string[] = [];
     try {
       await this.runGit(['add', '--', repoPath]);
       added = true;
@@ -111,13 +135,19 @@ export class GitWorktreeStore implements SaveStore {
         return { commitSha: head, contentSha };
       }
 
-      await this.runGit(['commit', '--only', '-m', message, '--', repoPath]);
+      realigned = await this.runRealign(repoPath, dirtyBefore);
+      if (realigned.length > 0) await this.runGit(['add', '--', ...realigned]);
+
+      await this.runGit(['commit', '--only', '-m', message, '--', repoPath, ...realigned]);
       committed = true;
       const { stdout } = await this.runGit(['rev-parse', 'HEAD']);
       return { commitSha: stdout.trim(), contentSha };
     } catch (err) {
       // Once the commit exists, the file on disk is what was committed: keep it.
-      if (!committed) await this.rollback(repoPath, abs, prev, added);
+      if (!committed) {
+        await this.rollback(repoPath, abs, prev, added);
+        await this.discard(realigned);
+      }
       if (err instanceof GitError) {
         throw new StoreError(500, `git ${err.args[0]} failed: ${err.stderr.trim() || err.message}`);
       }
@@ -138,6 +168,54 @@ export class GitWorktreeStore implements SaveStore {
         await this.runGit(['reset', '-q', '--', repoPath]);
       } catch {
         // Best effort (e.g. no HEAD yet).
+      }
+    }
+  }
+
+  /**
+   * Runs the realign hook; returns the alignment files it changed that were
+   * clean before the save. A failing hook is logged and changes nothing
+   * committed (its partial output is discarded).
+   */
+  private async runRealign(repoPath: string, dirtyBefore: ReadonlySet<string>): Promise<string[]> {
+    if (!this.realign) return [];
+    let changed: string[];
+    try {
+      await this.realign(repoPath);
+      changed = [...(await this.changedAlignments())].filter((f) => !dirtyBefore.has(f));
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      console.warn(`re-alignment after saving ${repoPath} failed; committing the chapter alone: ${message}`);
+      await this.discard([...(await this.changedAlignments())].filter((f) => !dirtyBefore.has(f)));
+      return [];
+    }
+    return changed.sort();
+  }
+
+  /** Modified or untracked files under data/alignments/, as repo paths. */
+  private async changedAlignments(): Promise<Set<string>> {
+    const { stdout } = await this.runGit(['status', '--porcelain', '-z', '--untracked-files=all', '--', ALIGNMENTS_DIR]);
+    // Entries are "XY <path>\0"; renames are not expected here.
+    return new Set(
+      stdout
+        .split('\0')
+        .filter((e) => e.length > 3)
+        .map((e) => e.slice(3)),
+    );
+  }
+
+  /** Restores tracked files to HEAD and deletes untracked ones; errors are ignored. */
+  private async discard(files: readonly string[]): Promise<void> {
+    for (const file of files) {
+      try {
+        await this.runGit(['checkout', '-q', 'HEAD', '--', file]);
+      } catch {
+        try {
+          await this.runGit(['rm', '-q', '--cached', '--ignore-unmatch', '--', file]);
+          await unlink(path.join(this.repoRoot, file));
+        } catch {
+          // Best effort.
+        }
       }
     }
   }

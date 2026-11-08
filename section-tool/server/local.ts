@@ -2,13 +2,16 @@
  * Offline mode entry point: `yarn serve:offline [--port <n>] [--dist <dir>]`.
  * Serves the offline Angular build and saves chapters into the local checkout
  * of the repository containing the working directory, one local commit per
- * save. Pushing is left to the user.
+ * save. Each save also re-aligns the class transcripts of the saved chapter
+ * (data/tools `yarn align --chapter`) and commits the changed
+ * data/alignments/ files with it. Pushing is left to the user.
  */
 import { existsSync, statSync } from 'node:fs';
 import * as path from 'node:path';
 
 import { findRepoRoot, GitWorktreeStore } from './git-worktree-store';
 import { createLocalServer } from './local-server';
+import { createRealign } from './realign';
 
 const DEFAULT_PORT = 4300;
 
@@ -61,7 +64,10 @@ async function main(): Promise<void> {
     throw new Error(`No data/chapters/ directory in ${repoRoot}`);
   }
 
-  const server = createLocalServer({ distDir, chaptersDir, store: new GitWorktreeStore(repoRoot) });
+  const hook = await createRealign(repoRoot);
+  if ('reason' in hook) console.warn(`Saves will not re-align class transcripts: ${hook.reason}`);
+  const store = new GitWorktreeStore(repoRoot, { realign: 'realign' in hook ? hook.realign : undefined });
+  const server = createLocalServer({ distDir, chaptersDir, store });
   server.on('error', (err: NodeJS.ErrnoException) => {
     if (err.code === 'EADDRINUSE') {
       console.error(`Port ${port} is in use; try --port <n>`);
@@ -73,6 +79,7 @@ async function main(): Promise<void> {
   server.listen(port, '127.0.0.1', () => {
     console.log(`Section tool (offline): http://localhost:${port}/`);
     console.log(`Saves write data/chapters/ in ${repoRoot} and commit locally. Push yourself.`);
+    if ('realign' in hook) console.log('Each save re-aligns that chapter\'s classes into the same commit.');
   });
 }
 
