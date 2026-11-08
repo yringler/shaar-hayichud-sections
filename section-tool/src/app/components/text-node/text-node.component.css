@@ -142,3 +142,13 @@ wa-textarea.text-area::part(textarea) {
   /* Force integer pixel boundaries */
   transform: translate3d(0, 0, 0);
 }
+
+/*
+ * Web Awesome >= 3.14 sizes the hidden auto-resize adjuster (which shares the
+ * textarea's grid cell) to the full scrollHeight. Without the same cap as the
+ * textarea, long text makes the box as tall as the whole text, with the capped
+ * textarea centred inside it.
+ */
+wa-textarea::part(textarea-adjuster) {
+  max-height: 20em;
+}
