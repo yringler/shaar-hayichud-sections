@@ -38,6 +38,8 @@ yarn build   # production build
 yarn offline # build and serve at http://localhost:4300; saves commit to the local checkout
 ```
 
+To run the editor in a headless browser (Claude Code cloud sessions included), load a chapter and screenshot it, see the `run-section-tool` skill (`.claude/skills/run-section-tool/`). It uses offline mode because dev mode needs the Hugo site, wrangler and auth.
+
 ## Keyboard shortcuts (user-facing)
 
 Splits move whole lines: the line holding the cursor, and everything after it, moves (unless the cursor is at the end of a line).
