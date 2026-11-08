@@ -15,13 +15,14 @@
       "clusterGapSeconds": 150,
       "minConfidence": 0.35,
       "startLine": 0
-    }
+    },
+    "times": "sofer"
   },
   "stats": {
     "transcriptWords": 4189,
     "hebrewWords": 814,
     "matchedWords": 338,
-    "chapterLines": 108,
+    "chapterLines": 109,
     "alignedLines": 32,
     "firstLineIndex": 27,
     "lastLineIndex": 58,
@@ -36,7 +37,7 @@
       },
       {
         "chapter": "chapter_16",
-        "chapterLines": 44,
+        "chapterLines": 45,
         "alignedLines": 0,
         "firstLineIndex": -1,
         "lastLineIndex": -1

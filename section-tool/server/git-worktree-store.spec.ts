@@ -213,4 +213,94 @@ describe('GitWorktreeStore', () => {
     },
     TIMEOUT,
   );
+
+  describe('with a realign hook', () => {
+    const ALIGN_A = 'data/alignments/a.json';
+    const ALIGN_B = 'data/alignments/b.json';
+    const ALIGN_NEW = 'data/alignments/new.json';
+    let calls: string[];
+
+    beforeEach(() => {
+      mkdirSync(path.join(root, 'data', 'alignments'), { recursive: true });
+      writeFileSync(path.join(root, ALIGN_A), 'a1\n');
+      writeFileSync(path.join(root, ALIGN_B), 'b1\n');
+      git(root, 'add', '-A');
+      git(root, 'commit', '-q', '-m', 'alignments');
+      calls = [];
+    });
+
+    it(
+      'commits the alignment files the hook changed with the chapter',
+      async () => {
+        store = new GitWorktreeStore(root, {
+          realign: async (repoPath) => {
+            calls.push(repoPath);
+            writeFileSync(path.join(root, ALIGN_A), 'a2\n');
+            writeFileSync(path.join(root, ALIGN_NEW), 'new\n');
+          },
+        });
+        await store.write(CHAPTER, '[]\n', 'Update chapter 1', await gitBlobSha(HEBREW));
+        expect(calls).toEqual([CHAPTER]);
+        expect(git(root, 'show', '--name-only', '--format=', 'HEAD').split('\n').sort()).toEqual(
+          [ALIGN_A, ALIGN_NEW, CHAPTER].sort(),
+        );
+        expect(git(root, 'status', '--porcelain')).toBe('');
+      },
+      TIMEOUT,
+    );
+
+    it(
+      'leaves alignment files that were already modified out of the commit',
+      async () => {
+        writeFileSync(path.join(root, ALIGN_B), 'mine\n');
+        store = new GitWorktreeStore(root, {
+          realign: async () => {
+            writeFileSync(path.join(root, ALIGN_A), 'a2\n');
+            writeFileSync(path.join(root, ALIGN_B), 'b2\n');
+          },
+        });
+        await store.write(CHAPTER, '[]\n', 'Update chapter 1', await gitBlobSha(HEBREW));
+        expect(git(root, 'show', '--name-only', '--format=', 'HEAD').split('\n').sort()).toEqual(
+          [ALIGN_A, CHAPTER].sort(),
+        );
+        expect(statusOf(root, ALIGN_B)).toBe(' M data/alignments/b.json');
+      },
+      TIMEOUT,
+    );
+
+    it(
+      'commits the chapter alone and discards partial output when the hook fails',
+      async () => {
+        const warn = vi.spyOn(console, 'warn').mockImplementation(() => undefined);
+        store = new GitWorktreeStore(root, {
+          realign: async () => {
+            writeFileSync(path.join(root, ALIGN_A), 'half\n');
+            writeFileSync(path.join(root, ALIGN_NEW), 'half\n');
+            throw new Error('retimed file is stale');
+          },
+        });
+        try {
+          await store.write(CHAPTER, '[]\n', 'Update chapter 1', await gitBlobSha(HEBREW));
+          expect(git(root, 'show', '--name-only', '--format=', 'HEAD')).toBe(CHAPTER);
+          expect(readFileSync(path.join(root, ALIGN_A), 'utf8')).toBe('a1\n');
+          expect(existsSync(path.join(root, ALIGN_NEW))).toBe(false);
+          expect(git(root, 'status', '--porcelain')).toBe('');
+          expect(warn).toHaveBeenCalledWith(expect.stringContaining('retimed file is stale'));
+        } finally {
+          warn.mockRestore();
+        }
+      },
+      TIMEOUT,
+    );
+
+    it(
+      'does not run the hook when the chapter is unchanged',
+      async () => {
+        store = new GitWorktreeStore(root, { realign: async (p) => void calls.push(p) });
+        await store.write(CHAPTER, HEBREW, 'same', await gitBlobSha(HEBREW));
+        expect(calls).toEqual([]);
+      },
+      TIMEOUT,
+    );
+  });
 });

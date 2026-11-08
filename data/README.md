@@ -195,6 +195,7 @@ yarn transcribe                   # no arguments: resume (poll) batches a previo
 yarn outline                      # topic outline for every transcript that lacks a current one
 yarn align                        # every lecture with a stored transcript
 yarn align --section 4 --verbose  # print each line with the words heard
+yarn align --chapter chapter_18   # only the lectures that read chapter 18
 ```
 
 Behind an HTTP proxy, prefix commands with `NODE_USE_ENV_PROXY=1`.
@@ -347,7 +348,18 @@ every call and stops if one costs more than `--max-cents-per-call` (default
 ### `yarn align`
 
 Offline and deterministic; rerun after a transcript, chapter or the algorithm
-changes. Lectures that teach one or two chapters are aligned, against
+changes. With nothing stale it rewrites every file byte for byte.
+
+Chapter edits re-align themselves. A save in the offline editor runs
+`yarn align --chapter <key>` and commits the changed alignments with the
+chapter. A push to `master` that changes `data/chapters/`,
+`alignment-chapters.json` or the alignment code runs the `realign` GitHub
+workflow (`.github/workflows/realign.yml`): a full `yarn align`, a commit of
+any changed `alignments/` files back to `master`, then `yarn build-data`. The
+cloud editor commits only the chapter, so the Cloudflare Pages build of that
+commit can fail on an alignment that points at a split or deleted line; the
+workflow's commit follows within a minute or two and deploys. A new transcript
+or retimed file still needs a manual `yarn align`. Lectures that teach one or two chapters are aligned, against
 `chapters/chapter_NN.json`. Which chapters: an entry in
 `alignment-chapters.json` (below), else the lecture's own `- Title` when it
 names chapters (Markel's `- Chapter 3` or `- End Chapter 34 and Chapter 35`
