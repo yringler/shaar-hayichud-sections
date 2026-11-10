@@ -27,11 +27,11 @@
     "transcriptWords": 3681,
     "hebrewWords": 1300,
     "matchedWords": 662,
-    "chapterLines": 59,
-    "alignedLines": 59,
+    "chapterLines": 60,
+    "alignedLines": 60,
     "firstLineIndex": 0,
-    "lastLineIndex": 58,
-    "meanConfidence": 0.837
+    "lastLineIndex": 59,
+    "meanConfidence": 0.833
   },
   "segments": [
     {"startSeconds":6.88,"endSeconds":9.33,"chapter":"chapter_26","lineId":"g6mg6ikn","confidence":0.48,"matchedWords":6,"lineWords":12,"firstWord":3,"lastWord":8},
@@ -47,7 +47,8 @@
     {"startSeconds":85.44,"endSeconds":88.3,"chapter":"chapter_26","lineId":"5xeephey","confidence":0.8,"matchedWords":6,"lineWords":7,"firstWord":139,"lastWord":145},
     {"startSeconds":89.54,"endSeconds":98.98,"chapter":"chapter_26","lineId":"tuk7opny","confidence":0.827,"matchedWords":13,"lineWords":16,"firstWord":146,"lastWord":160},
     {"startSeconds":103.91,"endSeconds":112.24,"chapter":"chapter_26","lineId":"olwzsdpn","confidence":0.848,"matchedWords":10,"lineWords":11,"firstWord":167,"lastWord":176},
-    {"startSeconds":112.24,"endSeconds":118.78,"chapter":"chapter_26","lineId":"ccy4dtjx","confidence":0.836,"matchedWords":12,"lineWords":18,"firstWord":177,"lastWord":189},
+    {"startSeconds":112.24,"endSeconds":116.72,"chapter":"chapter_26","lineId":"ccy4dtjx","confidence":1,"matchedWords":9,"lineWords":10,"firstWord":177,"lastWord":185},
+    {"startSeconds":117.38,"endSeconds":118.78,"chapter":"chapter_26","lineId":"53lkltb6","confidence":0.429,"matchedWords":3,"lineWords":8,"firstWord":187,"lastWord":189},
     {"startSeconds":351.6,"endSeconds":366.77,"chapter":"chapter_26","lineId":"w4c2yx2c","confidence":0.931,"matchedWords":15,"lineWords":17,"firstWord":680,"lastWord":715},
     {"startSeconds":367.41,"endSeconds":369.73,"chapter":"chapter_26","lineId":"qvo2affp","confidence":1,"matchedWords":4,"lineWords":4,"firstWord":717,"lastWord":720},
     {"startSeconds":373.84,"endSeconds":377.96,"chapter":"chapter_26","lineId":"xvm4fckm","confidence":0.959,"matchedWords":8,"lineWords":8,"firstWord":732,"lastWord":739},

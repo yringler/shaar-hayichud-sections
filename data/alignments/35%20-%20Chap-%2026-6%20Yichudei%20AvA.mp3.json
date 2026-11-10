@@ -22,10 +22,10 @@
     "transcriptWords": 1902,
     "hebrewWords": 286,
     "matchedWords": 61,
-    "chapterLines": 59,
+    "chapterLines": 60,
     "alignedLines": 5,
-    "firstLineIndex": 25,
-    "lastLineIndex": 29,
+    "firstLineIndex": 26,
+    "lastLineIndex": 30,
     "meanConfidence": 0.769
   },
   "segments": [

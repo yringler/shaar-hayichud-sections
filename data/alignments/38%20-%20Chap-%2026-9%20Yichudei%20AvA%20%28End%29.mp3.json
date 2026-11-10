@@ -27,10 +27,10 @@
     "transcriptWords": 1538,
     "hebrewWords": 339,
     "matchedWords": 204,
-    "chapterLines": 59,
+    "chapterLines": 60,
     "alignedLines": 19,
-    "firstLineIndex": 40,
-    "lastLineIndex": 58,
+    "firstLineIndex": 41,
+    "lastLineIndex": 59,
     "meanConfidence": 0.901
   },
   "segments": [
