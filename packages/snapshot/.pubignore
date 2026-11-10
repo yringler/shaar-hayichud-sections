@@ -1,0 +1,7 @@
+# Replaces .gitignore for `dart pub publish`, so the generated data/ ships.
+.dart_tool/
+pubspec.lock
+build/
+test/
+tool/
+CLAUDE.md

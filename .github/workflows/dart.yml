@@ -1,0 +1,69 @@
+# Checks the two Dart packages: shaar_hayichud_data (packages/dart; its
+# tests check the committed models match data/schema/v1) and shaar_hayichud_snapshot
+# (packages/snapshot; data/ built from data/dist/v1, not committed), then
+# dry-runs publishing both. Publishing itself is tag-driven
+# (publish-data-package.yml, publish-snapshot.yml).
+name: Dart packages
+
+on:
+  pull_request:
+    paths:
+      - packages/**
+      - data/schema/**
+      - data/tools/**
+      - site/lib/audio-model.vectors.json
+      - .github/workflows/dart.yml
+  push:
+    branches: [master]
+    paths:
+      - packages/**
+      - data/schema/**
+      - data/tools/**
+      - site/lib/audio-model.vectors.json
+      - .github/workflows/dart.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # data/tools runs the Yarn release pinned in site/.yarn/releases (yarnPath).
+      - name: Build data
+        working-directory: data/tools
+        run: |
+          corepack enable
+          yarn install --immutable
+          yarn build-data
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 3.13.7
+
+      - name: shaar_hayichud_data
+        working-directory: packages/dart
+        run: |
+          dart pub get
+          dart format --output=none --set-exit-if-changed lib test tool
+          dart analyze --fatal-infos
+          dart test
+          dart pub publish --dry-run
+
+      - name: shaar_hayichud_snapshot
+        working-directory: packages/snapshot
+        run: |
+          dart pub get
+          dart run tool/build_snapshot.dart
+          dart format --output=none --set-exit-if-changed lib test tool
+          dart analyze --fatal-infos
+          dart test
+          dart pub publish --dry-run

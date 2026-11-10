@@ -1,0 +1,6 @@
+.dart_tool/
+pubspec.lock
+build/
+# Written by tool/build_snapshot.dart from data/dist/v1. Not committed; the
+# published package includes it (.pubignore below does not list it).
+data/

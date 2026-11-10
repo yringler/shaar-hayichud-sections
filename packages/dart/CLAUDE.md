@@ -1,12 +1,14 @@
 # packages/dart — `shaar_hayichud_data`
 
 Pure Dart (no Flutter) models and loader for the JSON published under
-`/data/v1/`. Consumed by the lessons2 Flutter app as a git dependency
-(`path: packages/dart`), so keep it Flutter-free with no runtime dependencies,
-and keep the SDK constraint compatible with lessons2.
+`/data/v1/`. Published to pub.dev and used from there by the lessons2 Flutter
+app, so keep it Flutter-free with no runtime dependencies, and keep the SDK
+constraint compatible with lessons2. The bundled data lives in a separate
+package, `packages/snapshot`, so data refreshes don't version this one.
 
 - `data/schema/v1/` is the source of truth. `lib/src/generated/` is produced
   from it by `tool/generate_models.dart`; never hand-edit generated code.
+  It is committed; regenerate after a schema change.
   If a schema uses a construct the generator doesn't support, extend the
   generator (it fails loudly on unknown constructs).
 - Hand-written code (`lib/src/`): parsing entry points, canonical `/data/v1/`
@@ -20,7 +22,10 @@ and keep the SDK constraint compatible with lessons2.
   first.
 - Catalog IDs and chapter line IDs are persisted (by apps and alignments);
   nothing here may rename or rewrite them.
-- Bump `version` in `pubspec.yaml` and add a line under README "Versions"
-  when the public API changes.
+- Bump `version` in `pubspec.yaml` and add a `CHANGELOG.md` entry when the
+  public API changes. After merging, the version is released by pushing the
+  tag `shaar_hayichud_data-v<version>` (`.github/workflows/publish-data-package.yml`
+  checks the tag matches and publishes). pub.dev versions are permanent.
 
-Checks: `dart analyze`, `dart test`.
+Checks: `dart analyze`, `dart test`
+(`.github/workflows/dart.yml` runs them, plus a publish dry run).
