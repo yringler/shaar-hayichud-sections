@@ -22,11 +22,11 @@
     "transcriptWords": 1972,
     "hebrewWords": 359,
     "matchedWords": 185,
-    "chapterLines": 54,
-    "alignedLines": 15,
+    "chapterLines": 55,
+    "alignedLines": 16,
     "firstLineIndex": 31,
-    "lastLineIndex": 45,
-    "meanConfidence": 0.933
+    "lastLineIndex": 46,
+    "meanConfidence": 0.917
   },
   "segments": [
     {"startSeconds":3.78,"endSeconds":9.2,"chapter":"chapter_31","lineId":"uxyqehsy","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":0,"lastWord":7},
@@ -40,7 +40,8 @@
     {"startSeconds":321.04,"endSeconds":323.72,"chapter":"chapter_31","lineId":"23cgutdu","confidence":0.8,"matchedWords":4,"lineWords":6,"firstWord":835,"lastWord":838},
     {"startSeconds":344.48,"endSeconds":382.84,"chapter":"chapter_31","lineId":"vl5i7vri","confidence":0.979,"matchedWords":27,"lineWords":28,"firstWord":897,"lastWord":979},
     {"startSeconds":390.7,"endSeconds":398.56,"chapter":"chapter_31","lineId":"iin6rpf5","confidence":0.944,"matchedWords":7,"lineWords":7,"firstWord":991,"lastWord":1002},
-    {"startSeconds":409.032,"endSeconds":485.96,"chapter":"chapter_31","lineId":"xooeawcd","confidence":0.891,"matchedWords":10,"lineWords":12,"firstWord":1032,"lastWord":1250},
+    {"startSeconds":409.032,"endSeconds":481.42,"chapter":"chapter_31","lineId":"ahgupi2p","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":1032,"lastWord":1237},
+    {"startSeconds":484.36,"endSeconds":485.96,"chapter":"chapter_31","lineId":"p5eidmgo","confidence":0.56,"matchedWords":3,"lineWords":5,"firstWord":1247,"lastWord":1250},
     {"startSeconds":488.472,"endSeconds":491.92,"chapter":"chapter_31","lineId":"gxl4uhtn","confidence":0.965,"matchedWords":10,"lineWords":10,"firstWord":1259,"lastWord":1268},
     {"startSeconds":498.5,"endSeconds":515.68,"chapter":"chapter_31","lineId":"fmf7fanc","confidence":0.867,"matchedWords":13,"lineWords":16,"firstWord":1290,"lastWord":1321},
     {"startSeconds":519.26,"endSeconds":590.14,"chapter":"chapter_31","lineId":"stctkxkx","confidence":0.68,"matchedWords":10,"lineWords":16,"firstWord":1328,"lastWord":1553}
