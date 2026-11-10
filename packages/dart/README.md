@@ -80,13 +80,12 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## Development
 
-Models in `lib/src/generated/` are generated from
-`data/schema/v1/*.schema.json` and are not committed (the published package
-includes them). Generate them after `dart pub get` and after changing a
-schema:
+Models in `lib/src/generated/` are generated from `data/schema/v1/*.schema.json`
+and committed. After changing a schema:
 
 ```bash
-dart run tool/generate_models.dart
+dart run tool/generate_models.dart          # regenerate
+dart run tool/generate_models.dart --check  # fails if out of date (also run by dart test)
 ```
 
 Tests round-trip every file in `data/dist/v1/` and `data/chapters/`, so build
@@ -95,7 +94,6 @@ the data first:
 ```bash
 (cd ../../data/tools && yarn install && yarn build-data)
 dart pub get
-dart run tool/generate_models.dart
 dart analyze
 dart test
 ```
@@ -118,8 +116,8 @@ Publishing is automated from GitHub Actions
    `master`.
 2. Tag that commit and push the tag (as yourself, not from a workflow):
    `git tag shaar_hayichud_data-v1.6.0 && git push origin shaar_hayichud_data-v1.6.0`.
-   The workflow checks the tag matches `version`, generates the models, runs
-   the tests and publishes.
+   The workflow checks the tag matches `version`, runs the tests (which
+   check the committed models are current) and publishes.
 
 For an unreleased change in an app's preview build, publish a prerelease
 (`1.6.0-dev.1`, tag `shaar_hayichud_data-v1.6.0-dev.1`).

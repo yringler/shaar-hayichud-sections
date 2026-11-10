@@ -1,4 +1,4 @@
-# Replaces .gitignore for `dart pub publish`, so the generated models ship.
+# What `dart pub publish` leaves out (replaces .gitignore for publishing).
 .dart_tool/
 pubspec.lock
 build/

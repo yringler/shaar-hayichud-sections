@@ -48,11 +48,10 @@ jobs:
             exit 1
           fi
 
-      - name: Generate, check
+      - name: Check
         working-directory: packages/dart
         run: |
           dart pub get
-          dart run tool/generate_models.dart
           dart analyze --fatal-infos
           dart test
 

@@ -52,6 +52,5 @@ cd "$CLAUDE_PROJECT_DIR"
 (cd site && yarn install)
 # section-tool pins Yarn 4.13 through packageManager with no yarnPath, so run it through Corepack.
 (cd section-tool && COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack yarn install)
-# The Dart models are generated, not committed.
-(cd packages/dart && "$BIN/dart" pub get && "$BIN/dart" run tool/generate_models.dart)
+(cd packages/dart && "$BIN/dart" pub get)
 (cd packages/snapshot && "$BIN/dart" pub get)

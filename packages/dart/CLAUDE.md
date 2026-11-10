@@ -8,8 +8,7 @@ package, `packages/snapshot`, so data refreshes don't version this one.
 
 - `data/schema/v1/` is the source of truth. `lib/src/generated/` is produced
   from it by `tool/generate_models.dart`; never hand-edit generated code.
-  It is git-ignored (run the generator after `dart pub get`) and shipped
-  because `.pubignore` replaces `.gitignore` when publishing; never commit it.
+  It is committed; regenerate after a schema change.
   If a schema uses a construct the generator doesn't support, extend the
   generator (it fails loudly on unknown constructs).
 - Hand-written code (`lib/src/`): parsing entry points, canonical `/data/v1/`
@@ -18,8 +17,9 @@ package, `packages/snapshot`, so data refreshes don't version this one.
   must behave like the site: both run `site/lib/audio-model.vectors.json`,
   so a change there goes in both, with a new vector. URL encoding must
   stay identical to `data/tools` (a test checks every catalog URL).
-- Tests round-trip every file in `data/dist/v1/` and `data/chapters/`. Run
-  `yarn build-data` in `data/tools` and the generator first.
+- Tests round-trip every file in `data/dist/v1/` and `data/chapters/`, and
+  check the generated file is current. Run `yarn build-data` in `data/tools`
+  first.
 - Catalog IDs and chapter line IDs are persisted (by apps and alignments);
   nothing here may rename or rewrite them.
 - Bump `version` in `pubspec.yaml` and add a `CHANGELOG.md` entry when the
@@ -27,5 +27,5 @@ package, `packages/snapshot`, so data refreshes don't version this one.
   tag `shaar_hayichud_data-v<version>` (`.github/workflows/publish-data-package.yml`
   checks the tag matches and publishes). pub.dev versions are permanent.
 
-Checks: `dart run tool/generate_models.dart`, `dart analyze`, `dart test`
+Checks: `dart analyze`, `dart test`
 (`.github/workflows/dart.yml` runs them, plus a publish dry run).
