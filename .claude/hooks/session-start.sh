@@ -11,7 +11,8 @@ fi
 # Hugo: pinned to Cloudflare Pages' default (v3 build image), so local builds
 # match production. See site/CLAUDE.md before changing it.
 HUGO_VERSION=0.147.7
-# Dart SDK for packages/dart (pubspec: sdk ^3.8.0).
+# Dart SDK for packages/dart and packages/snapshot (pubspec: sdk ^3.8.0);
+# the same version as the Dart workflows in .github/workflows.
 DART_VERSION=3.13.7
 
 OPT="$HOME/.local/opt"
@@ -51,4 +52,6 @@ cd "$CLAUDE_PROJECT_DIR"
 (cd site && yarn install)
 # section-tool pins Yarn 4.13 through packageManager with no yarnPath, so run it through Corepack.
 (cd section-tool && COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack yarn install)
-(cd packages/dart && "$BIN/dart" pub get)
+# The Dart models are generated, not committed.
+(cd packages/dart && "$BIN/dart" pub get && "$BIN/dart" run tool/generate_models.dart)
+(cd packages/snapshot && "$BIN/dart" pub get)

@@ -1,0 +1,61 @@
+# Publishes packages/dart (shaar_hayichud_data) to pub.dev when a tag
+# shaar_hayichud_data-v<version> is pushed. <version> must equal pubspec.yaml's
+# version. Authentication is pub.dev's GitHub OIDC automated publishing (no
+# stored secret): pub.dev admin → Automated publishing → this repository,
+# tag pattern shaar_hayichud_data-v{{version}}, environment pub.dev.
+# Tags pushed with GITHUB_TOKEN don't start workflows: push the tag yourself.
+name: Publish shaar_hayichud_data
+
+on:
+  push:
+    tags:
+      - 'shaar_hayichud_data-v[0-9]+.[0-9]+.[0-9]+*'
+
+permissions:
+  contents: read
+  id-token: write # pub.dev OIDC
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: pub.dev
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build data (the tests read it)
+        working-directory: data/tools
+        run: |
+          corepack enable
+          yarn install --immutable
+          yarn build-data
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 3.13.7
+
+      - name: Check the tag matches the pubspec version
+        working-directory: packages/dart
+        run: |
+          tag_version="${GITHUB_REF_NAME#shaar_hayichud_data-v}"
+          pubspec_version="$(sed -n 's/^version:[[:space:]]*//p' pubspec.yaml)"
+          if [ "$tag_version" != "$pubspec_version" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match pubspec version $pubspec_version" >&2
+            exit 1
+          fi
+
+      - name: Generate, check
+        working-directory: packages/dart
+        run: |
+          dart pub get
+          dart run tool/generate_models.dart
+          dart analyze --fatal-infos
+          dart test
+
+      - name: Publish
+        working-directory: packages/dart
+        run: dart pub publish --force

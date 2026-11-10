@@ -1,0 +1,9 @@
+# Replaces .gitignore for `dart pub publish`, so the generated models ship.
+.dart_tool/
+pubspec.lock
+build/
+# The tests and the generator read ../../data and ../../site, so they cannot
+# run from the published archive.
+test/
+tool/
+CLAUDE.md

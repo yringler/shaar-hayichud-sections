@@ -1,0 +1,59 @@
+# Publishes packages/snapshot (shaar_hayichud_snapshot) to pub.dev when a tag
+# shaar_hayichud_snapshot-v<version> is pushed, with the data of the tagged
+# commit. Versions are 1.<YYYYMMDD>.<n>; the tag sets the version (pubspec's
+# is a placeholder). Tag a master commit whose data build is green, e.g.
+#   git tag shaar_hayichud_snapshot-v1.20261110.0 origin/master
+#   git push origin shaar_hayichud_snapshot-v1.20261110.0
+# Authentication is pub.dev's GitHub OIDC automated publishing: pub.dev
+# admin → Automated publishing → this repository, tag pattern
+# shaar_hayichud_snapshot-v{{version}}, environment pub.dev.
+# Tags pushed with GITHUB_TOKEN don't start workflows: push the tag yourself.
+name: Publish shaar_hayichud_snapshot
+
+on:
+  push:
+    tags:
+      - 'shaar_hayichud_snapshot-v[0-9]+.[0-9]+.[0-9]+*'
+
+permissions:
+  contents: read
+  id-token: write # pub.dev OIDC
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: pub.dev
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Validates the data too: a commit with stale alignments fails here.
+      - name: Build data
+        working-directory: data/tools
+        run: |
+          corepack enable
+          yarn install --immutable
+          yarn build-data
+
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: 3.13.7
+
+      - name: Build the snapshot
+        working-directory: packages/snapshot
+        run: |
+          version="${GITHUB_REF_NAME#shaar_hayichud_snapshot-v}"
+          dart pub get
+          dart run tool/set_version.dart "$version"
+          dart run tool/build_snapshot.dart
+          dart test
+
+      # --force: the version stamp leaves pubspec.yaml modified in git, which
+      # pub reports as a warning.
+      - name: Publish
+        working-directory: packages/snapshot
+        run: dart pub publish --force

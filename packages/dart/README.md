@@ -9,11 +9,7 @@ transcripts. No Flutter dependency, so it works in apps, CLIs and servers.
 
 ```yaml
 dependencies:
-  shaar_hayichud_data:
-    git:
-      url: https://github.com/yringler/shaar-hayichud-sections
-      path: packages/dart
-      ref: main # or a commit sha to pin
+  shaar_hayichud_data: ^1.5.0
 ```
 
 ## Use
@@ -56,16 +52,17 @@ for every lecture) but only exists for files outside the catalog.
 
 ## Bundling a snapshot
 
-Apps should ship a copy of `catalog.json` so they work offline and on first
-launch:
-
-1. Build it: `cd data/tools && yarn install && yarn build-data`, then copy
-   `data/dist/v1/catalog.json` into the app's assets (or download the published
-   `https://www.shaarhayichudresources.com/data/v1/catalog.json`).
-2. At runtime, fetch the latest catalog and fall back to the bundled copy:
+Apps should ship a copy of the data so they work offline and on first launch.
+Flutter apps can depend on
+[`shaar_hayichud_snapshot`](https://pub.dev/packages/shaar_hayichud_snapshot),
+which bundles `catalog.json`, the chapters and the chapter alignments as
+assets, pinned by the app's `pubspec.lock`. At runtime, fetch the latest
+catalog and fall back to the bundled copy:
 
 ```dart
-final bundled = await rootBundle.loadString('assets/catalog.json'); // Flutter
+import 'package:shaar_hayichud_snapshot/shaar_hayichud_snapshot.dart';
+
+final bundled = await rootBundle.loadString(snapshotAsset('catalog.json'));
 String? fetched;
 try {
   fetched = (await http.get(const DataUrls().catalog)).body;
@@ -74,47 +71,22 @@ final catalog = parseCatalogWithFallback(fetched: fetched, bundled: bundled);
 ```
 
 `parseCatalogWithFallback` uses the fetched text unless it is null or not a
-valid v1 catalog. Refresh the bundled copy when you release the app.
+valid v1 catalog. Upgrade the snapshot when you release the app
+(`dart pub upgrade shaar_hayichud_snapshot`).
 
 ## Versions
 
-- **1.5.0**: `ChapterAlignmentsLecture.chapterStartSeconds` (where a class's
-  part on a chapter starts) and `playStart` (and
-  `ChapterAlignmentsIndex.playStart`): a tap on a class's first line on a
-  chapter plays a short lead-in, or offers a longer one (an intro).
-- **1.4.0**: `lineInClass` and `playableRefs` (and
-  `ChapterAlignmentsIndex.playableRefs`): a chosen class plays every line it
-  reads; other lines play the best other class and can be marked.
-- **1.3.1**: `rankRefs` never treats a lecture without a series as the
-  preferred one (parity with the site for out-of-range indexes).
-- **1.3.0**: follow-along logic, ported from the site's
-  `audio/model.ts` and checked against the same vectors: `spans` /
-  `spanAt` (the current line or transcript paragraph at a time), `rankRefs`
-  (which class plays for a line), `nextInSeries` (autoplay next, within the
-  chapter), `chooseSeries`, `topicAt`, and the `ChapterAlignmentsIndex`
-  and `TranscriptTiming` extensions.
-- **1.2.0**: alignments and transcripts are published. Added
-  `ChapterAlignments` (`alignments/chapters/chapter_NN.json`),
-  `parseChapterAlignments`, `DataUrls.chapterAlignments` /
-  `chapterAlignmentsIndex`, `Outline` (`outlines/<lecture>.json`,
-  auto-generated topics), `parseOutline`, `DataUrls.outline` /
-  `outlinesIndex`, and the optional `Alignment.chapter`,
-  `AlignmentSegment.confidence`, `Transcript.chapter` and
-  `ChapterAlignmentsLecture.outline`.
-- **1.1.0**: chapter text is a list of `TextLine` (`id` + `text`) instead of
-  newline-joined strings (`TextFragment` is gone); `TextNode` no longer has
-  `id` or the deprecated `text`; alignment segments reference `lineId`.
-  Added `allLines` and `Chapter.indexLines()`.
-- **1.0.0**: first release.
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Development
 
-Models in `lib/src/generated/` are generated from `data/schema/v1/*.schema.json`
-and committed. After changing a schema:
+Models in `lib/src/generated/` are generated from
+`data/schema/v1/*.schema.json` and are not committed (the published package
+includes them). Generate them after `dart pub get` and after changing a
+schema:
 
 ```bash
-dart run tool/generate_models.dart          # regenerate
-dart run tool/generate_models.dart --check  # fails if out of date (also run by dart test)
+dart run tool/generate_models.dart
 ```
 
 Tests round-trip every file in `data/dist/v1/` and `data/chapters/`, so build
@@ -123,6 +95,31 @@ the data first:
 ```bash
 (cd ../../data/tools && yarn install && yarn build-data)
 dart pub get
+dart run tool/generate_models.dart
 dart analyze
 dart test
 ```
+
+To use a local checkout from an app (lessons2) while changing both, add a
+git-ignored `pubspec_overrides.yaml` at the app's workspace root:
+
+```yaml
+dependency_overrides:
+  shaar_hayichud_data:
+    path: ../shaar-hayichud-sections/packages/dart
+```
+
+## Releasing
+
+Publishing is automated from GitHub Actions
+(`.github/workflows/publish-data-package.yml`):
+
+1. Bump `version` in `pubspec.yaml` and add a `CHANGELOG.md` entry; merge to
+   `master`.
+2. Tag that commit and push the tag (as yourself, not from a workflow):
+   `git tag shaar_hayichud_data-v1.6.0 && git push origin shaar_hayichud_data-v1.6.0`.
+   The workflow checks the tag matches `version`, generates the models, runs
+   the tests and publishes.
+
+For an unreleased change in an app's preview build, publish a prerelease
+(`1.6.0-dev.1`, tag `shaar_hayichud_data-v1.6.0-dev.1`).

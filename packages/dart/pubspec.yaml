@@ -4,8 +4,13 @@ description: >-
   (/data/v1/ catalog, chapters, alignments and transcripts).
   Models are generated from data/schema/v1.
 version: 1.5.0
-publish_to: none
-repository: https://github.com/yringler/shaar-hayichud-sections
+repository: https://github.com/yringler/shaar-hayichud-sections/tree/master/packages/dart
+issue_tracker: https://github.com/yringler/shaar-hayichud-sections/issues
+topics:
+  - judaism
+  - torah
+  - hebrew
+  - audio
 
 environment:
   sdk: ^3.8.0

@@ -1,3 +1,7 @@
 .dart_tool/
 pubspec.lock
 build/
+# Generated from data/schema/v1 by tool/generate_models.dart. Not committed:
+# run the generator after `dart pub get`. The published package includes it
+# (.pubignore below does not list it).
+lib/src/generated/

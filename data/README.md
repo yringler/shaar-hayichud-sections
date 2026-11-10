@@ -7,7 +7,7 @@ Hayichud comes from this directory :
 |------|------------|-----------|
 | `classes.txt` | Audio class catalog (series → sections → lectures) | hand, plus `yarn set-durations` |
 | `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees of lines (see below) | section-tool (saves via the GitHub API) |
-| `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
+| `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them (not committed; generated in CI and before publishing) | hand |
 | `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |

@@ -1,0 +1,32 @@
+name: shaar_hayichud_snapshot
+description: >-
+  A bundled snapshot of the Shaar Hayichud data (/data/v1/ catalog, chapter
+  text and chapter alignments) as Flutter assets, so apps work offline from
+  the first launch. Pairs with shaar_hayichud_data.
+# Placeholder: the publish workflow sets the version from the git tag
+# (shaar_hayichud_snapshot-v<version>). Versions are 1.<YYYYMMDD>.<n>; the
+# major version is the /data/v1 schema version.
+version: 1.20261110.0
+repository: https://github.com/yringler/shaar-hayichud-sections/tree/master/packages/snapshot
+issue_tracker: https://github.com/yringler/shaar-hayichud-sections/issues
+topics:
+  - judaism
+  - torah
+  - hebrew
+
+environment:
+  sdk: ^3.8.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0
+
+# Assets a dependency declares are bundled by the Flutter app that depends on
+# it, under packages/shaar_hayichud_snapshot/<path>. The package itself needs
+# no Flutter dependency for that. data/ is written by tool/build_snapshot.dart.
+flutter:
+  assets:
+    - data/v1/catalog.json
+    - data/v1/snapshot.txt
+    - data/v1/chapters/
+    - data/v1/alignments/chapters/
