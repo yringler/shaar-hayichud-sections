@@ -8,6 +8,10 @@
       "outlines": "Outlines",
       "search": "Search",
       "about": "About"
+    },
+    "app": {
+      "link": "Read along with the classes in the app",
+      "platforms": "Android and iOS"
     }
   },
   "he": {
@@ -19,6 +23,10 @@
       "outlines": "תקצירי שיעורים",
       "search": "חיפוש",
       "about": "אודות"
+    },
+    "app": {
+      "link": "לימוד עם השיעורים באפליקציה",
+      "platforms": "אנדרואיד ו־iOS"
     }
   }
 }
