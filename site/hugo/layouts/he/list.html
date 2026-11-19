@@ -3,6 +3,7 @@
   {{ $strings := index site.Data.i18n $lang }}
   <h1>{{ site.Title }}</h1>
   <p>{{ site.Params.description }}</p>
+  <p class="app-note"><a href="/app/">{{ $strings.app.link }}</a> · {{ $strings.app.platforms }}</p>
 
   <section>
     <h2>{{ $strings.nav.texts }}</h2>

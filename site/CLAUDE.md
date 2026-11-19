@@ -96,7 +96,7 @@ The class catalog generates more:
 
 ## Site nav
 
-`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, Search, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) and Search (`חיפוש`) show in both languages and always link the English `/outlines/` and `/search/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
+`layouts/_default/baseof.html`: Home, Texts, Classes, Outlines, Search, About, plus the language switch. Labels come from `data/i18n.json` (`nav.*`, en/he). Outlines (`תקצירי שיעורים` in Hebrew) and Search (`חיפוש`) show in both languages and always link the English `/outlines/` and `/search/`. The translation has no nav item: the English Texts page (`layouts/texts/list.html`) starts with an "English translation →" entry linking `/translation/`. The app page (`/app/`, `content/app.md`: store badges, a scroll-snap strip of screenshots served from the media CDN (`app/screenshots/` in the R2 bucket), feature cards; badges in `static/img/badges/`) is deliberately not in the nav: the home pages (en and he) link it in one line under the description (`.app-note`, `i18n.json` `app.*`), and About links it too. Only the site nav (`body > nav`) gets the nav bar styles in `main.css`; other `<nav>` elements (`nav.class-toc`, `nav.part-nav`, `nav.outlines-nav`) style themselves.
 
 ## Hugo partials
 

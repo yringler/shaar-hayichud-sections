@@ -16,7 +16,7 @@ dir: ltr
 </ul>
 
 <h2>App</h2>
-<p>The classes are also available in the <em>Shaar Hayichud Classes</em> app, for <a href="https://play.google.com/store/apps/details?id=org.yrappdev.shaar_hayichud">Android</a> and <a href="https://apps.apple.com/us/app/shaar-hayichud-classes/id1542889125">iOS</a>.</p>
+<p>The classes are also available in the <em>Shaar Hayichud Classes</em> app, for <a href="https://play.google.com/store/apps/details?id=org.yrappdev.shaar_hayichud">Android</a> and <a href="https://apps.apple.com/us/app/shaar-hayichud-classes/id1542889125">iOS</a>: it opens on the text and plays the classes from its lines (<a href="/app/">more about the app</a>).</p>
 
 <h2>Other Resources</h2>
 <p><a href="https://neirot.com/">Neirot</a> has a translation of and commentary on <em>Shaar Hayichud</em>, and much more.</p>
