@@ -5,14 +5,15 @@
   <p>{{ site.Params.description }}</p>
   <p class="app-note"><a href="/app/">{{ $strings.app.link }}</a> · {{ $strings.app.platforms }}</p>
 
+  {{ $chapters := slice }}
+  {{ range $key, $val := site.Data.chapters }}
+    {{ $chapters = $chapters | append $key }}
+  {{ end }}
+  {{ $sorted := sort $chapters }}
+  {{ $count := string (len $sorted) }}
   <section>
-    <h2>{{ $strings.nav.texts }}</h2>
+    <h2>{{ $strings.nav.texts }}<span class="h2-count"> · {{ replace $strings.home.chapterCount "{n}" $count }}</span></h2>
     <ul class="index-list">
-      {{ $chapters := slice }}
-      {{ range $key, $val := site.Data.chapters }}
-        {{ $chapters = $chapters | append $key }}
-      {{ end }}
-      {{ $sorted := sort $chapters }}
       {{ range first 5 $sorted }}
         {{ $numStr := replaceRE `^chapter_0*` "" . }}
         {{ if eq $lang "he" }}
@@ -22,7 +23,7 @@
         {{ end }}
       {{ end }}
       {{ if gt (len $sorted) 5 }}
-      <li><a href="{{ if eq $lang "he" }}/he/{{ else }}/{{ end }}texts/">{{ $strings.nav.texts }} &rarr;</a></li>
+      <li class="index-more"><a href="{{ if eq $lang "he" }}/he/{{ else }}/{{ end }}texts/">{{ replace $strings.home.allChapters "{n}" $count }} <span class="arrow" aria-hidden="true">&rarr;</span></a></li>
       {{ end }}
     </ul>
   </section>

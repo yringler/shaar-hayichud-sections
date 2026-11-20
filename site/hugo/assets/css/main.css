@@ -188,6 +188,42 @@ ul.index-list a:hover {
   transform: translateX(4px);
 }
 
+[dir="rtl"] ul.index-list a:hover {
+  transform: translateX(-4px);
+}
+
+/* Homepage: the chapter count beside the heading, and the "All N chapters"
+   link after the first few chapters. It is styled as an outlined button, not
+   another card, so the list doesn't look complete. */
+.h2-count {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #7a7a98;
+  letter-spacing: 0;
+}
+
+ul.index-list li.index-more a {
+  margin-block-start: 0.5rem;
+  background: transparent;
+  border-color: #3d5a80;
+  color: #3d5a80;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+}
+
+ul.index-list li.index-more a:hover,
+ul.index-list li.index-more a:focus-visible {
+  background: #3d5a80;
+  color: #fff;
+  transform: none;
+}
+
+[dir="rtl"] .arrow {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 1.05rem;
