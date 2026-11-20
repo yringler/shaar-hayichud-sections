@@ -12,6 +12,10 @@
     "app": {
       "link": "Read along with the classes in the app",
       "platforms": "Android and iOS"
+    },
+    "home": {
+      "chapterCount": "{n} chapters",
+      "allChapters": "All {n} chapters"
     }
   },
   "he": {
@@ -27,6 +31,10 @@
     "app": {
       "link": "לימוד עם השיעורים באפליקציה",
       "platforms": "אנדרואיד ו־iOS"
+    },
+    "home": {
+      "chapterCount": "{n} פרקים",
+      "allChapters": "כל {n} הפרקים"
     }
   }
 }
