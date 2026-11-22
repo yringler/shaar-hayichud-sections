@@ -1709,7 +1709,7 @@
       ]
     },
     {
-      "text": "terms is trimmed to 12 key terms; the incidental words (mafrish, mesha'er, ma'atzil, tachas, beiso zo ishto, ha'atka, ma'atik harim, derech ma'avar, hachlata, shiur koma and others) are glossed inline at first use only. None of them is in translit.json.",
+      "text": "terms is trimmed to 12 key terms; the incidental words (mafrish, mesha'er, ma'atzil, tachas, beiso zo ishto, ha'atka, ma'atik harim, derech ma'avar, hachlata, shiur koma and others) are glossed inline at first use only. None of them is in translit.json, except ma'atzil, added when the chapters were merged.",
       "lines": [
         "kj4quzwc",
         "mcyk3gkn"

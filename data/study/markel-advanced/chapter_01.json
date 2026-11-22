@@ -2799,7 +2799,7 @@
       ]
     },
     {
-      "text": "The terms nefesh, ruach, neshama and chaya, Radla, Yesod Abba, Ayin Beis, SaG, hemshech and farkvetsht are not in translit.json; they are defined in this file's terms, which therefore runs past twelve entries.",
+      "text": "The terms nefesh, ruach, neshama and chaya, Radla, Yesod Abba, hemshech and farkvetsht are not in translit.json (Ayin Beis and SaG were added to it when the chapters were merged); they are defined in this file's terms, which therefore runs past twelve entries.",
       "lines": [
         "xazelgse",
         "rdgog5tv",
