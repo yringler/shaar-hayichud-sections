@@ -427,10 +427,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    61,
-                    340
-                  ],
+                  "words": [61, 340],
                   "start": 35.81,
                   "end": 164.62
                 }
@@ -442,10 +439,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    341,
-                    683
-                  ],
+                  "words": [341, 683],
                   "start": 165.13,
                   "end": 302.07
                 }
@@ -457,14 +451,19 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    684,
-                    866
-                  ],
+                  "words": [684, 866],
                   "start": 302.8,
                   "end": 368.52
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Calls concentration-based meditation, as other religions and movements practise it, the mistake of idol worship.",
+                "action": "replace",
+                "publishable": "The mistake is to treat *daas* as the primary instrument: to concentrate and expect the concentration itself to bring one there. But *daas* is a vessel for going deeper into a matter one already has, not for reaching it. *Daas* needs content, and it does not supply the content; *bina sheb'bina* does."
+              }
             }
           ]
         },
@@ -489,10 +488,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    881,
-                    1130
-                  ],
+                  "words": [881, 1130],
                   "start": 376.13,
                   "end": 479.26
                 }
@@ -500,14 +496,12 @@
             },
             {
               "kind": "mashal",
+              "title": "The physicist and the root of physics",
               "text": "In physics there is the explanation. Then there is the real physicist, who already understands more than the explanation. But that does not mean he has the root of physics, which is like metaphysics, and the root of physics would answer questions in other fields too. That is *taalumos chachma*.",
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1131,
-                    1223
-                  ],
+                  "words": [1131, 1223],
                   "start": 479.47,
                   "end": 519.62
                 }
@@ -519,10 +513,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1224,
-                    1310
-                  ],
+                  "words": [1224, 1310],
                   "start": 521.54,
                   "end": 563.08
                 }
@@ -550,10 +541,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1311,
-                    1582
-                  ],
+                  "words": [1311, 1582],
                   "start": 563.14,
                   "end": 670.86
                 }
@@ -579,14 +567,12 @@
           "blocks": [
             {
               "kind": "mashal",
+              "title": "Two springs, one aquifer",
               "text": "**The depth of the spring is the beginning and source of its inception, at its very depth.** Under the ground is the aquifer, a giant ocean beneath the ground from which the spring comes.\n\nOne sees one spring and another spring, but both connect to the same *taalumos chachma*. On the surface they are two different things: this one is in Pittsburgh, that one in California. Go down far enough, and there is one big ocean both come from. So too, follow physics or psychology to its ultimate conclusion, and they come from the same source.",
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1583,
-                    1752
-                  ],
+                  "words": [1583, 1752],
                   "start": 670.93,
                   "end": 739.13
                 }
@@ -598,10 +584,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1753,
-                    1920
-                  ],
+                  "words": [1753, 1920],
                   "start": 739.13,
                   "end": 829.33
                 }
@@ -613,10 +596,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1921,
-                    1954
-                  ],
+                  "words": [1921, 1954],
                   "start": 829.54,
                   "end": 843.3
                 }
@@ -648,10 +628,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    1955,
-                    2267
-                  ],
+                  "words": [1955, 2267],
                   "start": 843.64,
                   "end": 966.98
                 }
@@ -663,10 +640,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    2295,
-                    2586
-                  ],
+                  "words": [2295, 2586],
                   "start": 981.5,
                   "end": 1098.96
                 }
@@ -678,10 +652,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    2587,
-                    2728
-                  ],
+                  "words": [2587, 2728],
                   "start": 1099,
                   "end": 1157.38
                 }
@@ -689,14 +660,12 @@
             },
             {
               "kind": "mashal",
+              "title": "One fishy plus one fishy",
               "text": "Children learn addition with \"one fishy plus one fishy is two fishies,\" then with many examples and homework. Eventually one knows how to add any numbers. Not because the brain holds every sum, like 2,500 plus 7,600, but because it holds the *tamtzis* of the whole thing: the examples are thrown away and the way to add remains. That *tamtzis* is the depth of the concept.",
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    2797,
-                    3029
-                  ],
+                  "words": [2797, 3029],
                   "start": 1188.98,
                   "end": 1269.52
                 }
@@ -708,10 +677,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    3061,
-                    3380
-                  ],
+                  "words": [3061, 3380],
                   "start": 1289.62,
                   "end": 1401.44
                 }
@@ -739,10 +705,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    3381,
-                    3634
-                  ],
+                  "words": [3381, 3634],
                   "start": 1401.74,
                   "end": 1505.94
                 }
@@ -754,10 +717,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    3635,
-                    3800
-                  ],
+                  "words": [3635, 3800],
                   "start": 1506.96,
                   "end": 1573.46
                 }
@@ -769,10 +729,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    3835,
-                    4120
-                  ],
+                  "words": [3835, 4120],
                   "start": 1594.64,
                   "end": 1698.5
                 }
@@ -784,10 +741,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    4121,
-                    4256
-                  ],
+                  "words": [4121, 4256],
                   "start": 1700.81,
                   "end": 1759.44
                 }
@@ -799,10 +753,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    4257,
-                    4565
-                  ],
+                  "words": [4257, 4565],
                   "start": 1761.16,
                   "end": 1875.89
                 }
@@ -838,10 +789,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    4566,
-                    4608
-                  ],
+                  "words": [4566, 4608],
                   "start": 1875.94,
                   "end": 1899.52
                 }
@@ -849,14 +797,12 @@
             },
             {
               "kind": "mashal",
+              "title": "Who invents in computers",
               "text": "An innovation in computers is not made by someone who meditated in the Himalayas but by people who work with computers over and over. They could not have thought about the innovation, which they did not know yet; they thought about what they already knew, and came up with something new. So too the engineers who make better cars learned in college about the cars we already have. And the invention is in their own field: a computer engineer will not invent a new drug, he will invent a better computer. That is *chachma sheb'bina*.",
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    4609,
-                    4917
-                  ],
+                  "words": [4609, 4917],
                   "start": 1899.7,
                   "end": 2013.54
                 }
@@ -868,10 +814,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    5078,
-                    5305
-                  ],
+                  "words": [5078, 5305],
                   "start": 2068.27,
                   "end": 2145.78
                 }
@@ -883,10 +826,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    5408,
-                    5607
-                  ],
+                  "words": [5408, 5607],
                   "start": 2182.74,
                   "end": 2252.04
                 }
@@ -898,10 +838,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    5608,
-                    5858
-                  ],
+                  "words": [5608, 5858],
                   "start": 2253.24,
                   "end": 2345.06
                 }
@@ -913,10 +850,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    5960,
-                    6158
-                  ],
+                  "words": [5960, 6158],
                   "start": 2379.78,
                   "end": 2451.7
                 }
@@ -942,10 +876,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    6230,
-                    6458
-                  ],
+                  "words": [6230, 6458],
                   "start": 2478.74,
                   "end": 2563.39
                 }
@@ -957,10 +888,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    6459,
-                    6539
-                  ],
+                  "words": [6459, 6539],
                   "start": 2563.73,
                   "end": 2593.76
                 }
@@ -991,10 +919,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    6540,
-                    6704
-                  ],
+                  "words": [6540, 6704],
                   "start": 2593.76,
                   "end": 2660.76
                 }
@@ -1028,10 +953,7 @@
               "audio": [
                 {
                   "lecture": "015 Tape001-Side1-Ch1.mp3",
-                  "words": [
-                    6705,
-                    6778
-                  ],
+                  "words": [6705, 6778],
                   "start": 2661.46,
                   "end": 2694.5
                 }
@@ -1043,10 +965,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    2,
-                    289
-                  ],
+                  "words": [2, 289],
                   "start": 5.74,
                   "end": 119.7
                 }
@@ -1054,14 +973,12 @@
             },
             {
               "kind": "mashal",
+              "title": "The Wright brothers and the car engineer",
               "text": "The Wright brothers (not truly men of understanding, he notes, but good as an outer *mashal*) were bicycle makers. They did not look at a motor as just a car motor; they looked into its root, a supplier of power, and saw that as it powers a car it could power an airplane. Someone at a more external level would see a bicycle chain only as part of a bicycle and never think how it applies to anything else. They saw it as a way to move energy from the feet to the wheel through the chain and gears, from one thing to another, and the first airplanes drove the propeller that way.",
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    327,
-                    645
-                  ],
+                  "words": [327, 645],
                   "start": 130,
                   "end": 253.01
                 }
@@ -1086,10 +1003,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    646,
-                    787
-                  ],
+                  "words": [646, 787],
                   "start": 253.95,
                   "end": 312.38
                 }
@@ -1101,10 +1015,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    788,
-                    909
-                  ],
+                  "words": [788, 909],
                   "start": 312.42,
                   "end": 355.83
                 }
@@ -1129,10 +1040,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    910,
-                    1013
-                  ],
+                  "words": [910, 1013],
                   "start": 355.83,
                   "end": 398.66
                 }
@@ -1164,10 +1072,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1014,
-                    1084
-                  ],
+                  "words": [1014, 1084],
                   "start": 398.66,
                   "end": 428.42
                 }
@@ -1195,10 +1100,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1085,
-                    1163
-                  ],
+                  "words": [1085, 1163],
                   "start": 428.8,
                   "end": 466.31
                 }
@@ -1223,10 +1125,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1164,
-                    1318
-                  ],
+                  "words": [1164, 1318],
                   "start": 466.31,
                   "end": 529.64
                 }
@@ -1247,14 +1146,12 @@
           "blocks": [
             {
               "kind": "mashal",
+              "title": "Length and width hang on the depth",
               "text": "**the extent of the length and width of *Chochmah* and *Binah* is dependent upon the aspect of the depth of the comprehension**. In *Chassidus* the length and width can be tremendous, because the depth is tremendous.\n\nEveryone understands that chess is a deeper game than checkers, so all kinds of books of strategy are written on chess. On checkers one can also write, but how much? The depth of chess is greater, so its length and width are greater.",
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1319,
-                    1425
-                  ],
+                  "words": [1319, 1425],
                   "start": 531.44,
                   "end": 576.02
                 }
@@ -1266,10 +1163,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1426,
-                    1655
-                  ],
+                  "words": [1426, 1655],
                   "start": 576.77,
                   "end": 663.42
                 }
@@ -1281,10 +1175,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    1861,
-                    2317
-                  ],
+                  "words": [1861, 2317],
                   "start": 740.18,
                   "end": 895.98
                 }
@@ -1296,10 +1187,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    2363,
-                    2610
-                  ],
+                  "words": [2363, 2610],
                   "start": 915.16,
                   "end": 1018.58
                 }
@@ -1311,10 +1199,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    2612,
-                    2774
-                  ],
+                  "words": [2612, 2774],
                   "start": 1019.95,
                   "end": 1077.74
                 }
@@ -1326,10 +1211,7 @@
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
-                  "words": [
-                    2968,
-                    3153
-                  ],
+                  "words": [2968, 3153],
                   "start": 1152.68,
                   "end": 1208.66
                 }
@@ -1356,14 +1238,12 @@
           "blocks": [
             {
               "kind": "mashal",
+              "title": "The deep dive",
               "text": "**is not the actual delving into the depth of the comprehension**: *ha'amakas hadaas* is the deepening, not the depth itself.\n\nWhen you take a deep dive off a board, *ha'amakas hadaas* is the dive; the depth is the depth of the pool. Or the divers in Hawaii who jump off their little boats after money thrown into the water: the depth is the floor of the ocean, and the dive is what gets them there.",
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    93,
-                    223
-                  ],
+                  "words": [93, 223],
                   "start": 59.92,
                   "end": 107.1
                 }
@@ -1375,10 +1255,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    224,
-                    313
-                  ],
+                  "words": [224, 313],
                   "start": 107.76,
                   "end": 140.74
                 }
@@ -1414,10 +1291,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    314,
-                    546
-                  ],
+                  "words": [314, 546],
                   "start": 141.8,
                   "end": 220.98
                 }
@@ -1429,10 +1303,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    547,
-                    961
-                  ],
+                  "words": [547, 961],
                   "start": 221.99,
                   "end": 376.72
                 }
@@ -1444,14 +1315,19 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    1412,
-                    1495
-                  ],
+                  "words": [1412, 1495],
                   "start": 548.76,
                   "end": 575.96
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Comments on the text's words about women's daas.",
+                "action": "replace",
+                "publishable": "**those who have a long attention span** can sit with one thing much longer; children, generally, have a short attention span. **There are those who have a broad attention span, but not a long attention span**: one who knows a little of everything but cannot stay with one thing for long. A strong *daas* means being strongly opinionated; a light *daas* means changing one's opinion easily."
+              }
             },
             {
               "kind": "explanation",
@@ -1460,14 +1336,18 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    1496,
-                    1713
-                  ],
+                  "words": [1496, 1713],
                   "start": 576.62,
                   "end": 655.02
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Compares the daas of women and men, with examples (a man who is into rock and roll and his girlfriend; the wife of a gadol).",
+                "action": "omit"
+              }
             },
             {
               "kind": "explanation",
@@ -1476,10 +1356,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    1316,
-                    1411
-                  ],
+                  "words": [1316, 1411],
                   "start": 509.74,
                   "end": 547.94
                 }
@@ -1487,14 +1364,12 @@
             },
             {
               "kind": "mashal",
+              "title": "The boy who loved hockey",
               "text": "He knew a boy who seemed to have no attention span for anything at school and did poorly in mathematics, but loved hockey. He had books on hockey with whole pages of statistics that looked like mathematics books, and he could sit with them for hours. According to the depth of one's *daas* in something, its length grows longer.",
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    1714,
-                    1866
-                  ],
+                  "words": [1714, 1866],
                   "start": 656.41,
                   "end": 708.18
                 }
@@ -1524,10 +1399,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    1867,
-                    2017
-                  ],
+                  "words": [1867, 2017],
                   "start": 709.31,
                   "end": 771.7
                 }
@@ -1539,10 +1411,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    2018,
-                    2133
-                  ],
+                  "words": [2018, 2133],
                   "start": 772.11,
                   "end": 819.16
                 }
@@ -1573,10 +1442,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    2134,
-                    2341
-                  ],
+                  "words": [2134, 2341],
                   "start": 819.24,
                   "end": 915.79
                 }
@@ -1588,10 +1454,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    2342,
-                    2718
-                  ],
+                  "words": [2342, 2718],
                   "start": 916.78,
                   "end": 1052.84
                 }
@@ -1621,10 +1484,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    2719,
-                    2883
-                  ],
+                  "words": [2719, 2883],
                   "start": 1052.84,
                   "end": 1119.46
                 }
@@ -1636,10 +1496,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    2884,
-                    3001
-                  ],
+                  "words": [2884, 3001],
                   "start": 1120.2,
                   "end": 1165.06
                 }
@@ -1664,10 +1521,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    3002,
-                    3329
-                  ],
+                  "words": [3002, 3329],
                   "start": 1165.57,
                   "end": 1295.02
                 }
@@ -1696,10 +1550,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    3330,
-                    3488
-                  ],
+                  "words": [3330, 3488],
                   "start": 1297.36,
                   "end": 1357.56
                 }
@@ -1711,10 +1562,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    3489,
-                    3694
-                  ],
+                  "words": [3489, 3694],
                   "start": 1362,
                   "end": 1451.1
                 }
@@ -1739,10 +1587,7 @@
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
-                  "words": [
-                    3695,
-                    4056
-                  ],
+                  "words": [3695, 4056],
                   "start": 1453.24,
                   "end": 1590.6
                 }

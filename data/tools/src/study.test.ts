@@ -9,6 +9,7 @@ import {
   chapterWordRange,
   checkStudy,
   checkStudyChapter,
+  expandPhrases,
   formatStudyFile,
   gaps,
   loadStudy,
@@ -19,7 +20,7 @@ import {
   stampTimes,
   type StudyChapterFile,
 } from './study.js';
-import { dumpChapter, sentences } from './study-dump.js';
+import { dumpChapter, foldBackchannel, sentences } from './study-dump.js';
 import type { StoredAlignment } from './transcripts.js';
 
 /** A complete miniature data/ directory: data/tools/fixtures/study/. */
@@ -100,14 +101,24 @@ describe('checkStudyChapter: lectures and audio', () => {
   });
 
   it('reports times that are not the words\' times as stale, and stampTimes mends them', () => {
-    has(check((f) => (audio(f).start = 3)), /^stale: .*are not the times of words \[0, 13\] \(0–13.8\); run yarn study-times/);
-    has(check((f) => delete audio(f).end), /^stale: .*has no start\/end; run yarn study-times/);
+    has(check((f) => (audio(f).start = 3)), /^stale: .*are not the times of words \[0, 13\] \(0–13.8\); run yarn study-fill/);
+    has(check((f) => delete audio(f).end), /^stale: .*has no start\/end; run yarn study-fill/);
     const file = structuredClone(gold);
     audio(file).start = 3;
     delete file.sections[0]!.passages[0]!.blocks[1]!.audio[0]!.end;
     assert.deepEqual(stampTimes(file, ctx), { changed: 2, errors: [] });
     assert.deepEqual(file, gold);
     assert.deepEqual(stampTimes(file, ctx), { changed: 0, errors: [] });
+  });
+
+  it('expandPhrases fills the Hebrew of phrases written with "to"', () => {
+    const file = structuredClone(gold);
+    const passage = file.sections[0]!.passages[1]!;
+    passage.phrases = [{ to: 'שצריך', en: 'since one must' }, { en: 'first prepare' }] as never;
+    assert.deepEqual(expandPhrases(file, ctx), { changed: 2, errors: [] });
+    assert.deepEqual(file, gold);
+    passage.phrases = [{ to: 'איננו', en: 'x' }, { en: 'y' }] as never;
+    assert.match(expandPhrases(file, ctx).errors[0]!, /"to": "איננו" is not a word of the passage/);
   });
 
   it('warns when a block is far from where the class reads its passage', () => {
@@ -213,6 +224,13 @@ describe('helpers', () => {
     const s = sentences(words, 0, 13, new Set([4]));
     assert.deepEqual(s.map((x) => x.words), [[0, 0], [1, 3], [4, 13]]);
     assert.equal(s[2]!.text, 'והנה ידוע המאמר, it is known what the Zohar says.');
+    const folded = foldBackchannel([
+      { words: [0, 5], start: 0, text: 'It is like that.' },
+      { words: [6, 6], start: 3, text: 'Right.' },
+      { words: [7, 9], start: 4, text: 'Right or wrong?' },
+      { words: [10, 10], start: 5, text: 'Right.' },
+    ], new Set([10]));
+    assert.deepEqual(folded.map((x) => x.words), [[0, 6], [7, 9], [10, 10]]);
   });
 });
 

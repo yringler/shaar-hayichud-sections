@@ -1,18 +1,20 @@
 /**
- * yarn study-times [--series <id>] [--chapter <N>] [--check]
+ * yarn study-fill [--series <id>] [--chapter <N>] [--check]
  *
- * Writes the start/end seconds of every audio reference in data/study/ from
- * its word range and the lecture's current word times (data/retimed/ when the
- * lecture has them), fills a lecture's empty transcriptionId, and rewrites
- * the file in the standard formatting. Run it after writing or editing a
- * study file, and after a tape is re-timed. --check writes nothing and exits
- * 1 if a file would change.
+ * Fills in what a study file (data/study/) derives from the rest of data/:
+ * the Hebrew of phrases written in shorthand ({ "to": "<last word>" }), the
+ * start/end seconds of every audio reference from its word range and the
+ * lecture's current word times (data/retimed/ when the lecture has them),
+ * and a lecture's empty transcriptionId. It then rewrites the file in the
+ * standard formatting. Run it after writing or editing a study file, and
+ * after a tape is re-timed. --check writes nothing and exits 1 if a file
+ * would change.
  */
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
 import { DATA_DIR } from '../pipeline.js';
-import { formatStudyFile, loadStudyContext, stampTimes, type StudyChapterFile } from '../study.js';
+import { expandPhrases, formatStudyFile, loadStudyContext, stampTimes, type StudyChapterFile } from '../study.js';
 import { chapterKey } from '../transcripts.js';
 
 const { values } = parseArgs({
@@ -37,7 +39,10 @@ for (const entry of readdirSync(studyDir, { withFileTypes: true })) {
       failed = true;
       continue;
     }
-    const { changed, errors } = stampTimes(data, ctx);
+    const phrases = expandPhrases(data, ctx);
+    const times = stampTimes(data, ctx);
+    const errors = [...phrases.errors, ...times.errors];
+    const changed = times.changed;
     for (const e of errors) console.error(`${entry.name}/${name}: ${e}`);
     if (errors.length > 0) failed = true;
     const after = formatStudyFile(data);
@@ -46,7 +51,7 @@ for (const entry of readdirSync(studyDir, { withFileTypes: true })) {
     if (values.check) console.log(`${entry.name}/${name}: would change (${changed} time(s))`);
     else {
       writeFileSync(file, after);
-      console.log(`${entry.name}/${name}: written (${changed} time(s) changed)`);
+      console.log(`${entry.name}/${name}: written (${phrases.changed} phrase(s) expanded, ${changed} time(s) changed)`);
     }
   }
 }

@@ -133,7 +133,7 @@
       "items": { "type": "integer", "minimum": 0 }
     },
     "audio": {
-      "description": "A stretch of one recording. `words` is the anchor; `start` and `end` are the seconds of those words in the audio the catalog plays, written by `yarn study-times` (never by hand).",
+      "description": "A stretch of one recording. `words` is the anchor; `start` and `end` are the seconds of those words in the audio the catalog plays, written by `yarn study-fill` (never by hand).",
       "type": "object",
       "additionalProperties": false,
       "required": ["lecture", "words"],

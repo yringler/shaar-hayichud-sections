@@ -15,7 +15,7 @@
     "outline": "yarn compile && node build/cli/outline.js",
     "study-check": "yarn compile && node build/cli/study-check.js",
     "study-dump": "yarn compile && node build/cli/study-dump.js",
-    "study-times": "yarn compile && node build/cli/study-times.js"
+    "study-fill": "yarn compile && node build/cli/study-fill.js"
   },
   "dependencies": {
     "ajv": "^8.17.1",

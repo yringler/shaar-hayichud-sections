@@ -528,9 +528,9 @@ export function checkStudyChapter(
     if (!timed) return true;
     const start = round2(t.words[first]!.start);
     const end = round2(Math.max(t.words[last]!.end, t.words[first]!.start));
-    if (a.start === undefined || a.end === undefined) add('stale', `${at} has no start/end; run yarn study-times`);
+    if (a.start === undefined || a.end === undefined) add('stale', `${at} has no start/end; run yarn study-fill`);
     else if (Math.abs(a.start - start) > 0.011 || Math.abs(a.end - end) > 0.011) {
-      add('stale', `${at} start/end ${a.start}–${a.end} are not the times of words [${first}, ${last}] (${start}–${end}); run yarn study-times`);
+      add('stale', `${at} start/end ${a.start}–${a.end} are not the times of words [${first}, ${last}] (${start}–${end}); run yarn study-fill`);
     }
     const duration = ctx.lectures.get(a.lecture)?.lecture.durationSeconds ?? null;
     if (duration !== null && end > duration + 5) add('error', `${at} ends at ${end} s, past the end of the recording (${duration} s)`);
@@ -585,9 +585,11 @@ export function checkStudyChapter(
 
     // Bold is for words quoted from the passage's translation.
     if (passage.phrases) {
-      const english = collapse(passage.phrases.map((p) => p.en.replace(/\*/g, '')).join(' '));
+      // Compared without case and punctuation, so a quote may drop the comma its phrase ends with.
+      const plain = (t: string) => collapse(t.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, ' '));
+      const english = plain(passage.phrases.map((p) => p.en).join(' '));
       for (const q of boldQuotes(block.text)) {
-        if (!english.includes(q)) add('warning', `${at} bold "${q.length > 50 ? `${q.slice(0, 50)}…` : q}" is not in the passage's translation; bold only quotes it`);
+        if (!english.includes(plain(q))) add('warning', `${at} bold "${q.length > 50 ? `${q.slice(0, 50)}…` : q}" is not in the passage's translation; bold only quotes it`);
       }
     }
 
@@ -640,7 +642,7 @@ export function checkStudyChapter(
 
   // --- terms, questions, notes, prose ---------------------------------------
   const table = new Map((translit?.terms ?? []).map((t) => [hebrewKey(t.he), t.term]));
-  const prose = [file.overview, ...file.sections.flatMap((s) => [s.summary]), ...[...walkBlocks(file)].flatMap((b) => [b.block.text, b.block.question ?? ''])].join('\n');
+  const prose = [file.overview, ...file.sections.flatMap((s) => [s.summary, ...s.passages.flatMap((p) => (p.phrases ?? []).map((f) => f.en))]), ...[...walkBlocks(file)].flatMap((b) => [b.block.text, b.block.question ?? ''])].join('\n');
   const seenTerms = new Set<string>();
   for (const [ti, t] of file.terms.entries()) {
     const at = `/terms/${ti}`;
@@ -729,6 +731,63 @@ export function checkStudy(dataDir: string, given?: StudyContext, only: { series
 // Writing: times, and the public view
 // ---------------------------------------------------------------------------
 
+const bare = (word: string): string => word.replace(/^[("'״׳]+|[)"'״׳,.:;?!]+$/g, '');
+
+/**
+ * Expands the writer's shorthand for phrases: a phrase may be written
+ * `{ "to": "<its last Hebrew word>", "en": "…" }` instead of with `he`; it
+ * then runs from where the previous phrase ended through the next
+ * occurrence of that word (punctuation around it ignored), and the last
+ * phrase of a passage may leave out both and takes the rest. `he` is copied
+ * from the chapter's lines, so it cannot be mistyped.
+ */
+export function expandPhrases(file: StudyChapterFile, ctx: StudyContext): { changed: number; errors: string[] } {
+  const errors: string[] = [];
+  let changed = 0;
+  const lines = new Map((ctx.chapterLines(file.chapter) ?? []).map((l) => [l.id, l.text]));
+  for (const [si, section] of file.sections.entries()) {
+    for (const [pi, passage] of section.passages.entries()) {
+      const at = `/sections/${si}/passages/${pi}`;
+      const phrases = passage.phrases as (Partial<StudyPhrase> & { to?: string })[] | undefined;
+      if (!phrases || phrases.every((p) => p.he !== undefined && p.to === undefined)) continue;
+      if (!passage.lines.every((id) => lines.has(id))) {
+        errors.push(`${at}: cannot expand phrases: a line id is not in ${file.chapter}`);
+        continue;
+      }
+      const tokens = collapse(passage.lines.map((id) => lines.get(id)!).join(' ')).split(' ');
+      let cursor = 0;
+      for (const [fi, p] of phrases.entries()) {
+        if (p.he !== undefined && p.to === undefined) {
+          cursor += collapse(p.he).split(' ').length;
+          continue;
+        }
+        let end: number;
+        if (p.to !== undefined) {
+          end = tokens.findIndex((t, i) => i >= cursor && (t === p.to || bare(t) === bare(p.to!)));
+          if (end < 0) {
+            errors.push(`${at}/phrases/${fi}: "to": "${p.to}" is not a word of the passage after "${tokens.slice(Math.max(0, cursor - 3), cursor).join(' ')}" (left: "${tokens.slice(cursor).join(' ')}")`);
+            break;
+          }
+        } else if (fi === phrases.length - 1) end = tokens.length - 1;
+        else {
+          errors.push(`${at}/phrases/${fi}: has neither "he" nor "to" (only the last phrase may leave both out)`);
+          break;
+        }
+        if (end < cursor) {
+          errors.push(`${at}/phrases/${fi}: nothing is left of the passage for this phrase`);
+          break;
+        }
+        const { en, notes } = p;
+        for (const k of Object.keys(p)) delete (p as Record<string, unknown>)[k];
+        Object.assign(p, { he: tokens.slice(cursor, end + 1).join(' '), en, ...(notes !== undefined ? { notes } : {}) });
+        cursor = end + 1;
+        changed += 1;
+      }
+    }
+  }
+  return { changed, errors };
+}
+
 /**
  * Writes every audio reference's start/end from its word range (and fills a
  * missing transcriptionId of a listed lecture). Returns how many references
@@ -767,8 +826,9 @@ export function stampTimes(file: StudyChapterFile, ctx: StudyContext): { changed
   return { changed, errors };
 }
 
-/** How a study file is written to disk. */
-export const formatStudyFile = (file: StudyChapterFile): string => `${JSON.stringify(file, null, 2)}\n`;
+/** How a study file is written to disk: two-space JSON, with each word range on one line. */
+export const formatStudyFile = (file: StudyChapterFile): string =>
+  `${JSON.stringify(file, null, 2).replace(/"words": \[\s*(\d+),\s*(\d+)\s*\]/g, '"words": [$1, $2]')}\n`;
 
 /**
  * The file as a public build would show it: a block flagged `sensitivity`

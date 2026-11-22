@@ -54,10 +54,7 @@
               "audio": [
                 {
                   "lecture": "t1.mp3",
-                  "words": [
-                    0,
-                    13
-                  ],
+                  "words": [0, 13],
                   "start": 0,
                   "end": 13.8
                 }
@@ -70,10 +67,7 @@
               "audio": [
                 {
                   "lecture": "t1.mp3",
-                  "words": [
-                    14,
-                    19
-                  ],
+                  "words": [14, 19],
                   "start": 14,
                   "end": 19.8
                 }
@@ -102,10 +96,7 @@
               "audio": [
                 {
                   "lecture": "t1.mp3",
-                  "words": [
-                    20,
-                    35
-                  ],
+                  "words": [20, 35],
                   "start": 20,
                   "end": 35.8
                 }
@@ -145,10 +136,7 @@
   "omitted": [
     {
       "lecture": "t1.mp3",
-      "words": [
-        36,
-        40
-      ],
+      "words": [36, 40],
       "reason": "logistics"
     }
   ],

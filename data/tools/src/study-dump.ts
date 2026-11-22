@@ -51,6 +51,23 @@ export function sentences(words: readonly SoferWord[], from: number, to: number,
   return out;
 }
 
+const BACKCHANNEL = /^(right|mhm|mm-hmm|uh-huh|okay|yeah)[.,!]?$/i;
+
+/**
+ * Folds a listener's one-word answer ("Right.") into the sentence before it:
+ * its words stay inside that sentence's range, its text is dropped. Not
+ * across the start of a line (`breaks`).
+ */
+export function foldBackchannel(sents: Sentence[], breaks: ReadonlySet<number> = new Set()): Sentence[] {
+  const out: Sentence[] = [];
+  for (const s of sents) {
+    const prev = out[out.length - 1];
+    if (prev && BACKCHANNEL.test(s.text) && !breaks.has(s.words[0])) prev.words = [prev.words[0], s.words[1]];
+    else out.push({ ...s, words: [...s.words] });
+  }
+  return out;
+}
+
 export interface DumpOptions {
   /** Only these lectures' transcripts (ids or leading numbers such as "064"). Default: all. */
   lectures?: string[];
@@ -170,10 +187,11 @@ export function dumpChapter(ctx: StudyContext, series: StudySeriesFile, translit
         for (const x of topics) out.push(`  - ${reverentSpelling(x.title)}`);
       }
     }
-    out.push('Each sentence: [w<first>-<last> <time>]. Cite a stretch as "words": [first of its first sentence, last of its last sentence].');
+    out.push('Each sentence: [w<first>-<last> <time>]. Cite a stretch as "words": [first of its first sentence, last of its last sentence]. A listener\'s one-word "Right." is folded into the sentence before it.');
     const marks = new Map<number, string[]>();
     for (const s of segs) marks.set(s.firstWord, [...(marks.get(s.firstWord) ?? []), `=== LINE ${index.get(s.lineId)! + 1} ${s.lineId} (conf ${s.confidence}): ${lines[index.get(s.lineId)!]!.text}`]);
-    const sents = sentences(t.words, range[0], range[1], new Set(marks.keys()));
+    const breaks = new Set(marks.keys());
+    const sents = foldBackchannel(sentences(t.words, range[0], range[1], breaks), breaks);
     for (const s of sents) {
       for (const m of marks.get(s.words[0]) ?? []) out.push('', m);
       out.push(`[w${s.words[0]}-${s.words[1]} ${clock(s.start)}] ${s.text}`);
