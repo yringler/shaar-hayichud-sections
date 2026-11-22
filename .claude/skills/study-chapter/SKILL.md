@@ -5,7 +5,7 @@ description: Write or revise one chapter's study guide file (data/study/<series>
 
 # Write one chapter's study guide
 
-Skill version 3. You produce exactly one file:
+Skill version 4. You produce exactly one file:
 `data/study/<series>/chapter_NN.json`. You are given a series id (a
 directory under `data/study/`, e.g. `markel-advanced`) and a chapter number.
 
@@ -121,6 +121,7 @@ every warning:
 | phrase audio … lie outside class …'s part on the chapter | you cited the wrong class or stretch; find where he translates it here |
 | a mashal/story/digression without a "title" | add one |
 | is N words; split it | split at the turn of thought |
+| is N words for M words of class; condense it | cut the restatements, setup and filler; keep his example, image, joke and best line |
 | has Hebrew script | transliterate |
 | term … does not appear in the file's prose | use it or drop it from `terms` |
 | spelled differently across chapters | use the other chapter's spelling unless it is wrong; report it |
@@ -143,6 +144,8 @@ it. For each block, the question is "did he say this, here?"
       the world. Compare `study-check`'s coverage lines: each class should
       be near 100% cited plus omitted.
 - [ ] Nothing was softened. Where his wording is blunt, the block is.
+- [ ] Condensed, not transcribed: each block is about a third to a half of
+      the words it cites, and still has his examples and best lines.
 - [ ] Every block a public edition could not print as it stands has
       `sensitivity`, in a block of its own where possible, with a
       `publishable` text that keeps the teaching.
