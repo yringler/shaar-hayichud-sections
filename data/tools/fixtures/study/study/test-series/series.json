@@ -1,0 +1,8 @@
+{
+ "schemaVersion": 1,
+ "id": "test-series",
+ "catalogSeriesId": "1",
+ "teacher": "A Teacher",
+ "title": "Test Series",
+ "translation": "As translated in class."
+}

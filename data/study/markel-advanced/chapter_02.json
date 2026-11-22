@@ -1,0 +1,2670 @@
+{
+  "schemaVersion": 1,
+  "series": "markel-advanced",
+  "chapter": "chapter_02",
+  "title": "Bina and tevuna: grasping a concept, and drawing it up to others",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 2",
+    "date": "2026-11-22"
+  },
+  "lectures": [
+    {
+      "id": "018 Tape002-Side2-Ch2.mp3",
+      "transcriptionId": "09f64068-87e7-4a1d-aaaf-de4f1491770a"
+    },
+    {
+      "id": "019 Tape003-Side1-Ch2.mp3",
+      "transcriptionId": "72e1c614-3d0b-46b2-9c49-eb405bbe003f"
+    },
+    {
+      "id": "020 Tape003-Side2-Ch2.mp3",
+      "transcriptionId": "1ca4c879-d03a-4a65-b416-9459a880b61a"
+    }
+  ],
+  "overview": "*Bina* has two levels. *Bina* itself goes down into a concept and understands it; *tevuna* is the light of *bina* spreading out, and it comes from *kelita*, going over the matter again even after it is understood. The man of *bina* goes down into the deep well and drinks; the man of *tevuna* brings the water up to the sheep, as the Mitteler Rebbe brings this book's depth to us. Without *tevuna* the understanding stays where it is: the Greeks had a steam turbine and never applied it, and a scholar can master a whole *pilpul* and still not rule guilty or innocent. *Bina* has emotions of its own, but there is always another hand; it takes a man of *tevuna*, who has absorbed the matter, to decide. *Tevuna* is *ben u'vas*, the lower mother that gives birth to the *middos* through *daas*, while *bina* is the grandmother. And what carries *bina* over into *tevuna* is *bina sheb'bina*, the one power in your hands: the hundred and first time makes an *oved*. *Hisbonenus* is *avoda*, and the goal is to get fired up.",
+  "terms": [
+    {
+      "term": "tevuna",
+      "he": "תבונה",
+      "gloss": "the light of bina spreading out: bringing a concept down to others, into application and into the emotions",
+      "line": "dqtw2mat"
+    },
+    {
+      "term": "kelita",
+      "he": "קליטה",
+      "gloss": "absorbing a concept like a sponge, so that it becomes part of you; it comes from going over it again after it is understood",
+      "line": "fx4uzm2l"
+    },
+    {
+      "term": "ish tevuna",
+      "he": "איש תבונה",
+      "gloss": "a man of tevuna, who draws the deep waters up to the sheep",
+      "line": "fx4uzm2l"
+    },
+    {
+      "term": "tafsan",
+      "he": "תפסן",
+      "gloss": "a grasper, \"a chapper\": strong in bina, but his understanding stays where it is",
+      "line": "3olgfxjf"
+    },
+    {
+      "term": "pilpul",
+      "he": "פלפול",
+      "gloss": "Talmudic debate, with its many lines of reasoning",
+      "line": "6wn65rrk"
+    },
+    {
+      "term": "poskim",
+      "he": "פוסקים",
+      "gloss": "halachic authorities, who bring a ruling out of the reasoning",
+      "line": "rblvjh2o"
+    },
+    {
+      "term": "hiyuli",
+      "he": "היולי",
+      "gloss": "formless potential; an idea of which nobody yet knows what can be done with it",
+      "line": "lgvfw7db"
+    },
+    {
+      "term": "psak halacha",
+      "he": "פסק הלכה",
+      "gloss": "a halachic ruling; it takes a man of tevuna",
+      "line": "kpvuxwit"
+    },
+    {
+      "term": "hataya",
+      "he": "הטיה",
+      "gloss": "tilting, inclining; the work of the mind of daas, which finally decides",
+      "line": "kpvuxwit"
+    },
+    {
+      "term": "machshevas sechel",
+      "he": "מחשבת שכל",
+      "gloss": "the thought of the intellect: the letters the intellect is dressed in, from Malchus of tevuna",
+      "line": "ucybbuqv"
+    },
+    {
+      "term": "machshava iyunis",
+      "he": "מחשבה עיונית",
+      "gloss": "analytical thought, the process of iyun itself, dressed in the letters of machshevas sechel",
+      "line": "ucybbuqv"
+    },
+    {
+      "term": "ben u'vas",
+      "he": "בן ובת",
+      "gloss": "son and daughter, the letters of tevuna: chesed and gevura of daas, born of tevuna",
+      "line": "virffb7u"
+    },
+    {
+      "term": "Ima tata'a",
+      "he": "אמא תתאה",
+      "gloss": "the lower mother: tevuna, which actually gives birth to the middos",
+      "line": "p4zitoes"
+    },
+    {
+      "term": "uvchein",
+      "he": "ובכן",
+      "gloss": "\"and so\": the conclusion of an analysis, which is all that goes down into the heart",
+      "line": "swd6m54u"
+    },
+    {
+      "term": "avodas hamochin",
+      "he": "עבודת המוחין",
+      "gloss": "the service of the mind, where the whole Chabad of bina comes into it",
+      "line": "swd6m54u"
+    },
+    {
+      "term": "bina sheb'bina",
+      "he": "בינה שבבינה",
+      "gloss": "bina within bina: hisbonenus, going over the same length again, which brings the kelita and so joins bina to tevuna",
+      "line": "5lrvb2he"
+    },
+    {
+      "term": "grober mentsh",
+      "he": "גראבע מענטש",
+      "gloss": "Yiddish, a coarse person",
+      "line": "3olgfxjf"
+    },
+    {
+      "term": "himmel",
+      "he": "הימל",
+      "gloss": "Yiddish, heaven; \"up in the himmel\", lofty and unreal",
+      "line": "4a3kdl7g"
+    },
+    {
+      "term": "Ayin Beis",
+      "he": "ע״ב",
+      "gloss": "the series of Chassidic discourses of that name, the measure of deep learning here",
+      "line": "ktlyq343"
+    },
+    {
+      "term": "SaG",
+      "he": "ס״ג",
+      "gloss": "a name of G-d; here SaG of SaG is bina sheb'bina, where the shevira begins",
+      "line": "5lrvb2he"
+    },
+    {
+      "term": "MaH",
+      "he": "מ״ה",
+      "gloss": "a name of G-d; the new MaH is the source of repair, not of Tohu",
+      "line": "5lrvb2he"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tevuna is bina spreading out, and it comes from going over it once more",
+      "summary": "*Bina* has two levels, *bina* and *tevuna*. *Tevuna* is the light of *bina* spreading out, and it comes from *kelita*: going over a matter again even after it is understood well, so that the man of *tevuna* can draw the deep waters up to others.",
+      "passages": [
+        {
+          "lines": [
+            "dqtw2mat"
+          ],
+          "phrases": [
+            {
+              "he": "(ב) והנה ידוע שיש בבינה עצמה ב' מדרגות, בינה ותבונה,",
+              "en": "And in *bina* there's two levels: *bina* and *tevuna*.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [24, 31],
+                "start": 19.36,
+                "end": 21.8
+              }
+            },
+            {
+              "he": "וענין התבונה הוא בחינת התפשטות אור הבינה"
+            },
+            {
+              "he": "(כמו שכתוב בזהר דאבא ואמא תתאין הם ישראל סבא ותבונה,"
+            },
+            {
+              "he": "ונקרא אימא תתאה כו')",
+              "en": "*Tevuna* is called the lower mother.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [88, 95],
+                "start": 52.47,
+                "end": 56.08
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In *bina* there are two levels, *bina* and *tevuna*. *Bina*, as was already discussed, basically means analysis. *Tevuna* is the spreading out of the light of *bina*. He skips the parenthesis to finish the definition first, which runs into the next line: it spreads out because the concept is absorbed well in the receiving vessel of the grasp of *bina*.\n\nThen the parenthesis: the *Zohar* says that the lower father and mother are *Yisroel Saba* and *Tevuna*, and *tevuna* is called *Ima tata'a* (the lower mother). So what is *tevuna*? The spreading out of the light of *bina*.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [17, 104],
+                  "start": 15.02,
+                  "end": 62.82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fx4uzm2l"
+          ],
+          "phrases": [
+            {
+              "he": "מצד קליטתה היטב בכלי המקבל ההשגה דבינה,",
+              "en": "It gets absorbed into the *kli hamekabel* of the *hasaga*, into your brain.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [189, 201],
+                "start": 95.34,
+                "end": 99.94
+              }
+            },
+            {
+              "he": "על כן מתפשט בה להביאה בכמה ענינים נבדלים מעצם ההשגה,",
+              "en": "Then it can spread out and it can go into various things that are separate from the actual understanding itself.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [212, 231],
+                "start": 107.08,
+                "end": 115.82
+              }
+            },
+            {
+              "he": "והוא הנקרא איש תבונה,",
+              "en": "And that's what's called an *ish tevuna*,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [237, 243],
+                "start": 118.26,
+                "end": 120.62
+              }
+            },
+            {
+              "he": "כמו מים עמוקים כו' איש תבונה ידלנה.",
+              "en": "the *ish tevuna* can draw out the deep waters.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [250, 265],
+                "start": 123.16,
+                "end": 130.2
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "keyPoint",
+              "text": "This too comes *davka* from *hisbonenus* (contemplation), from going over it and over it. When you do the *hisbonenus* until you understand the thing really well, and you stop there, you will have *bina*, but you will not have *tevuna*. If you go over it again even after you understand it really well, and you keep going over it, then it gets absorbed into the receiving vessel of the grasp, into your brain. Then it spreads out, and it can go into various things that are separate from the understanding itself.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [105, 232],
+                  "start": 62.9,
+                  "end": 116.49
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That is what is called *ish tevuna* (a man of *tevuna*), as the verse says: deep waters, and the man of *tevuna* can draw them out.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [233, 268],
+                  "start": 116.5,
+                  "end": 133.36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lg4oylvk"
+          ],
+          "phrases": [
+            {
+              "he": "מים עמוקים הם בחינת עמקות בינה שנשאר בהעלם העצמיות,",
+              "en": "The real depth of the *bina*, which remains in the *helem ha'atzmiyus* of the concept itself.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [279, 294],
+                "start": 142.2,
+                "end": 148.84
+              }
+            },
+            {
+              "he": "ואיש תבונה דווקא ידלנה",
+              "en": "*Davka* the *ish tevuna*, *davka* the Mitteler Rebbe, can draw it out,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [345, 358],
+                "start": 166.23,
+                "end": 173.42
+              }
+            },
+            {
+              "he": "וישאבנה מן ההעלם",
+              "en": "and he draws it out from the *helem*,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [361, 370],
+                "start": 174.36,
+                "end": 177.5
+              }
+            },
+            {
+              "he": "להביאה להתפשטות בכמה אופנים שונים"
+            },
+            {
+              "he": "לרוות את המקבלים"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The real depth of the *bina* stays in the hiding of the essence of the concept itself. So it is with some of the things being learned in this book: the actual thing being talked about really stays hidden in itself.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [269, 318],
+                  "start": 133.86,
+                  "end": 157.98
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "As always, this book is a *mashal* (analogy) on itself. *Davka* the man of *tevuna*, *davka* the Mitteler Rebbe, can draw it out. He draws it out of the hiding to bring it into spreading out in many different ways, to quench the thirst of the receivers: us.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [319, 380],
+                  "start": 158.22,
+                  "end": 186.32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The deep well: the man of bina goes down to the water, the man of tevuna brings it up to the sheep",
+      "summary": "The man of *bina* goes down into the well and drinks there; the man of *tevuna* brings the water up to the sheep, as the Mitteler Rebbe brings this book's depth to us. *Tevuna* is a power that spreads out from *bina*: of the two, *bina* is the width and *tevuna* the length.",
+      "passages": [
+        {
+          "lines": [
+            "wbbx7sao"
+          ],
+          "phrases": [
+            {
+              "he": "כמו הדולה מים עמוקים להשקות הצאן כו'",
+              "en": "Like, for instance, somebody who draws out very deep water from a well in order to give drink to the sheep.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [387, 407],
+                "start": 190.58,
+                "end": 199.88
+              }
+            },
+            {
+              "he": "והוא כמו שאנו רואים בחוש,",
+              "en": "Like we see in actuality:",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [550, 554],
+                "start": 252.3,
+                "end": 253.5
+              }
+            },
+            {
+              "he": "שבהיות השכל והסברא עמוקים ביותר מהכיל בהשגת אדם,"
+            },
+            {
+              "he": "הנקרא מים עמוקים כו',"
+            },
+            {
+              "he": "שהוא בחינת עומק המושג הנזכר לעיל"
+            },
+            {
+              "he": "שהאורך והרוחב ממנו בא כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "Throw the sheep in, or bring the water up",
+              "text": "Like somebody who draws very deep water out of a well to give the sheep a drink. There are two things you can do: you can take each sheep, throw it into the well and take it back out again, or you can take the water out and bring it to the level of the sheep.\n\nFirst of all there has to be a man of *bina*. What he does is go deep into the well itself. He does not bring the water out. The reason he can drink the water is that he is all the way down at the level of the water, in the depths; that is why he can drink. But it does not help the sheep. The man of *tevuna* can take that water and bring it out, from deep water to shallow water.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [381, 544],
+                  "start": 187.54,
+                  "end": 246.82
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As we see in actual experience, and again, right here is a *mashal* on it: this book is talking about very deep stuff, the deep waters of the *taalumos chachma* (the hidden depths of wisdom). They are the aquifer. That is what a well is: you dig down into the aquifer, and the water in the well stays in the aquifer. That is the depth of the concept mentioned above, from which the length and the width come.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [545, 651],
+                  "start": 248.54,
+                  "end": 292.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ktlyq343"
+          ],
+          "phrases": [
+            {
+              "he": "ואיש בעל תבונה דווקא ידלנה,",
+              "en": "*Davka* the *ish tevuna*, over here the Mitteler Rebbe, can draw it out, like from a well.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [657, 673],
+                "start": 297.73,
+                "end": 306.38
+              }
+            },
+            {
+              "he": "פירוש שיוציא לאור בחינת העלם העומק המושג",
+              "en": "He'll bring out to the outer light that hidden *omek hamusag*,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [705, 715],
+                "start": 319.51,
+                "end": 325.26
+              }
+            },
+            {
+              "he": "עד שיכילנו השגת האדם,",
+              "en": "until a regular person, who doesn't have such a deep mind like the Mitteler Rebbe, like us,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [725, 742],
+                "start": 330.78,
+                "end": 335.88
+              }
+            },
+            {
+              "he": "כאלו לא היה עמוק כלל,",
+              "en": "as if it was not deep at all.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [866, 873],
+                "start": 380.82,
+                "end": 382.08
+              }
+            },
+            {
+              "he": "כמו הדולה מים עמוקים שמקרב את העומק כו'",
+              "en": "Like a guy who draws out the deep water from the well, which means basically from the aquifer, that he brings the *omek* close to the sheep.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [944, 974],
+                "start": 406.72,
+                "end": 418.54
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Davka* the man of *tevuna*, here the Mitteler Rebbe, can draw it out like water from a well, with the, what do you call it? (\"The pail.\" \"Yeah, the pail.\") He will bring out to the light the hidden depth of the concept, until a person's grasp can hold it: a regular person who does not have such a deep mind as the Mitteler Rebbe. Like us.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [652, 758],
+                  "start": 293.15,
+                  "end": 342.84
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "How can we understand it? As was said before, we do not even have enough *daas* to learn *Ayin Beis* really properly. This is stuff that even the earlier generations, who had fantastic big minds and big *bina*, could not go into, not to this depth. And here we are getting this depth. Why? Because the man of *tevuna* brought it out to our level, the way he brings the water out of the aquifer to the sheep: as if it were not deep at all.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [759, 873],
+                  "start": 342.92,
+                  "end": 382.08
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "And we are learning this stuff. You say, \"Well, it's deep stuff.\" Yes, but it is deep stuff according to Americans and our college students. A regular college student, with a little bit of explanation, could learn this. Like our \"New and Improved Kabbalah\" series.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [874, 939],
+                  "start": 382.14,
+                  "end": 404.55
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Like one who draws up deep waters, which means basically from the aquifer: who brings the depth close, to the sheep.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [940, 974],
+                  "start": 404.86,
+                  "end": 418.54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "e6rnhnmx"
+          ],
+          "phrases": [
+            {
+              "he": "ולפי זה מוכרח לומר"
+            },
+            {
+              "he": "שכח התבונה הוא כח המתפשט מכח הבינה",
+              "en": "The *koach hatevuna* is a power that spreads out from the *koach habina*,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1074, 1086],
+                "start": 458.2,
+                "end": 461.9
+              }
+            },
+            {
+              "he": "להביא עומקה לגילוי למטה למקבלים כו'",
+              "en": "to be able to bring the depth downward to the *mekablim*.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1127, 1137],
+                "start": 477.58,
+                "end": 481.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This is not the actual power of *bina*. The power of *bina* does not mean drawing the water out of the aquifer. It means going down into the aquifer, like a guy with a drill who goes down. Not only that: in order to drink, he himself has to go down into the depth. That is the power of *bina*: he goes down in there.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [975, 1072],
+                  "start": 421.98,
+                  "end": 457.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But the power of *tevuna* is a power that spreads out from the power of *bina*. If you do not have the understanding into the thing, you are not going to be able to bring it out. You have to have *davka* the power of *bina* first, and then to bring its depth into revelation below, to the receivers.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1073, 1137],
+                  "start": 457.88,
+                  "end": 481.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In terms of these two, *bina* and *tevuna*, *tevuna* is the *orech* (length). As he explained, the length of *bina* is the power to explain it, except that the length of *bina* is the power to explain it to yourself, while the length of *tevuna* is the power to explain it to somebody else. Each of them has a width and a length of its own, but as far as the two of them go, *tevuna* is the length and *bina* is the *rochav* (width): *bina* means spreading out into all the different parts. That is the real thing of *bina*, even though compared with *chachma*, *chachma* is called the width and *bina* the length. Within *bina*, *bina* is the width and *tevuna* the length.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1138, 1332],
+                  "start": 482.52,
+                  "end": 553.95
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "The two Leviathans",
+              "text": "By the way, that is the secret of the two Leviathans, the straight *nun* and the bent *nun*. *Hisbonenus* has two *nuns*, the straight one and the crooked one. It says there is a straight serpent and a crooked serpent. The crooked serpent was the female, and it was killed. The straight serpent is the male, and he was, what do you call it? Neutered. He was left alive, but he had to be neutered, because otherwise *tevuna* itself could somehow have had babies even without the female.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1333, 1469],
+                  "start": 553.95,
+                  "end": 622.74
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "According to this you can explain the whole matter of the Leviathans: why *davka* *tevuna* was left. And you see that the real *bina* is pretty much gone. The main thing of *bina* that people have is more the applications, which is really *tevuna*. What they are learning is basically the applications of the physical world.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1470, 1541],
+                  "start": 627.16,
+                  "end": 656.6
+                }
+              ],
+              "join": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The tafsan: a fine grasp that never comes out, like the Greeks",
+      "summary": "A man can be strong in *bina*, a good grasper, and still nothing comes out of his understanding, neither an application nor an explanation to anyone else. Whole societies are like this: the Greeks had the ideas and never applied them; the Americans are not so much understanders as appliers.",
+      "passages": [
+        {
+          "lines": [
+            "3olgfxjf"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן כשאינו איש תבונות,",
+              "en": "When he's not an *ish tevunos*,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1552, 1557],
+                "start": 666.96,
+                "end": 668.16
+              }
+            },
+            {
+              "he": "גם שהוא בעל השגה במוח דבינה"
+            },
+            {
+              "he": "(שנקרא תפסן בלשון העולם)",
+              "en": "(*tafsan*: a chapper)",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1566, 1568],
+                "start": 673.48,
+                "end": 674.6
+              }
+            },
+            {
+              "he": "יוכל להיות שהשגתו נשארת רק כמו שהיא בעצם, במוח הבינה שלו",
+              "en": "He understands it, but his understanding stays just the way it is.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1610, 1625],
+                "start": 692.98,
+                "end": 697.96
+              }
+            },
+            {
+              "he": "שנקרא רוח בינתו לבד,",
+              "en": "His own understanding only,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1650, 1654],
+                "start": 706.92,
+                "end": 709
+              }
+            },
+            {
+              "he": "ולא יבוא ממנה שום התפשטות למטה בענין נבדל שחוץ מן עצם ההשגה כלל",
+              "en": "and it will not come out into any kind of application, for instance, or any kind of explanation to somebody else, outside the *etzem hahasaga*.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [1668, 1692],
+                "start": 717.8,
+                "end": 726.32
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This is not so when he is not a man of *tevunos*, even though he is a master of grasp in the mind of *bina*. He is called a *tafsan*, \"a chapper\" in the language of the world: he has a good chap on the thing, he can grasp it. That is a person who has *bina*, but not so much *tevuna*. It can be that his grasp stays only as it is in itself: he understands it, but his understanding just stays the way it is. The reason he can drink the water is that he went down into the depth.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1542, 1645],
+                  "start": 658.12,
+                  "end": 704.47
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "\"His own understanding\" alone means his own understanding only. And it will not come out into anything outside the grasp itself: no application, and no explanation to somebody else.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1646, 1692],
+                  "start": 704.8,
+                  "end": 726.32
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "The Greeks' steam turbine",
+              "text": "This is also so in societies. It is like the difference between the Greeks and the Americans. The Greek power was a power of *bina*; the American power is *davka* the power of *tevuna*. They are not so much understanders as appliers.\n\nThe Greeks actually had a steam turbine. There is a little thing in the museum, an actual turbine engine that works on steam. But by them it was just philosophers who sat around and thought thoughts. Like a man of *bina*, they never once thought of applying it, of making an appliance run on it. And this technology was really available about two thousand years ago, more than two thousand years ago, in the Greek times. They also knew that oil from the ground could burn, but they never thought once of applying it to anything. They only thought of it as abstract *bina* stuff.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1693, 1911],
+                  "start": 726.9,
+                  "end": 833.12
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "They could have had an Industrial Revolution",
+              "text": "And the American specialty, and not just the American but the whole modern Western society: airplanes, trains, cars, electricity. They knew about electricity by the Greeks. They knew about the wheel, they had wagons with wheels, they knew about metal, and they had a turbine engine. (\"They could have started the Industrial Revolution two thousand years ago.\" \"Yeah, if they would have applied it.\") Really, all of these things were available. People think, \"Oh, we're so smart, the modern generation.\" It is not really true. They are the ones who did the actual thought; here we are doing the application.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [1930, 2101],
+                  "start": 841.3,
+                  "end": 919.88
+                }
+              ],
+              "join": true
+            },
+            {
+              "kind": "aside",
+              "text": "A lot of these thoughts were available already before, and as a matter of fact, compared to them, people nowadays are kind of low style: they only think about bread and butter. The reason the Greeks never thought of the application is that they never even thought on such a low level. For them it was all intellectual, pure intellect. It was the pursuit of intellect, not the pursuit of the dollar.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2102, 2194],
+                  "start": 920.22,
+                  "end": 952.88
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Calls people of today, and by implication Americans, low-style people who only think about bread and butter and the dollar.",
+                "action": "replace",
+                "publishable": "A lot of these thoughts were available already before. The reason the Greeks never thought of the application is that for them it was all intellectual, pure intellect: the pursuit of intellect, and not of its uses."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "In America it is *davka* the pursuit of applications. So a lot of the things people think they did, like airplanes: the aerodynamic theory was known. They had kites in the old days, they knew that birds fly, and they had an idea of how it worked. They just never tried to put it together into an application. Why? Because they were into *bina*; they had nothing to do with *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2195, 2299],
+                  "start": 953.26,
+                  "end": 991.31
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So you can have a person, and not just a person but whole societies, where the whole thing stays in the *bina*, and no spreading out comes of it at all, even though he might really be a bigger master of *bina* than the master of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2300, 2354],
+                  "start": 993.96,
+                  "end": 1013.58
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "A lot of these Americans, like the Wright brothers and Edison, were not really such great philosophers, not on the high intellectual level of the Greek philosophers. If a Greek philosopher would have met any of them, he would have considered him a *grober mentsh* (a coarse person): \"That's what you think about? Not refined, upper things? You think about how to make a better horse carriage? Who cares about horse carriages? We care about intellect.\" They would actually have considered this guy a lowlife.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2355, 2471],
+                  "start": 1014.36,
+                  "end": 1063.16
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "But nonetheless, you can have a person who has more *tevuna* even though he does not have so much *bina*. And nonetheless, the advances in *tevuna* too come *davka* from *bina sheb'bina* (*bina* within *bina*), *davka* from the analysis of the thing.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2472, 2514],
+                  "start": 1064.26,
+                  "end": 1084.11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2urk3tl6"
+          ],
+          "phrases": [
+            {
+              "he": "וגם שיש בהשגה אורך ורוחב ועומק כנזכר לעיל,"
+            },
+            {
+              "he": "הכל הוא רק בעצם ההשגה, כמו שהיא,"
+            },
+            {
+              "he": "אבל לא שיתגלה למטה בענין נבדל,"
+            },
+            {
+              "he": "ומכל שכן עומק המושג הרי נשאר בעומקו בהעלם לעצמו,",
+              "en": "And especially the *omek hamusag* stays deep inside of itself.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [2601, 2616],
+                "start": 1120.31,
+                "end": 1127.94
+              }
+            },
+            {
+              "he": "וכן האורך והרוחב,",
+              "en": "Even the length and the width,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [2746, 2751],
+                "start": 1174.82,
+                "end": 1176.34
+              }
+            },
+            {
+              "he": "הכל בעצם ההשגה כמו שהיא, שהיא במקומה לבד"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Even the explaining downward, the length, is really mostly to himself, not to others. To explain to somebody else is *davka* the matter of *tevuna*. But not so that it is revealed below in a separate matter, and to reveal the thing in a separate matter is the whole matter of a *mashal*. That's a *mashal*, right?",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2515, 2596],
+                  "start": 1084.38,
+                  "end": 1117.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And all the more the depth of the concept stays in its depth, hidden in itself. It stays deep inside itself. Like by the Greek philosophers: nothing actually came out of it. And not only did nothing come out of it, they did not even really explain it to the regular people.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2597, 2650],
+                  "start": 1117.68,
+                  "end": 1139.84
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "That is another thing. In America the whole thing is that you have to explain it to everybody, everybody should understand. Even a stupid guy has to go to school and learn it. Over there it was just for the elite. A few elite were happy to think about these things, and they never thought they should explain it to the guy working in the marketplace.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2651, 2742],
+                  "start": 1140.2,
+                  "end": 1172.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And so the length and the width: it is all in the grasp itself, as it is, where it is.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2743, 2758],
+                  "start": 1172.84,
+                  "end": 1179.56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Talmudic debate that yields no ruling: an idea that is only hiyuli",
+      "summary": "One can master a whole *pilpul* and still be unable to bring out of it a ruling of guilty or innocent; a concept by itself is only *hiyuli*, and \"you can't do nothing with it\". The power of *tevuna* brings the grasp down into a separate matter: a ruling, an arousal of the heart, thought in many ways.",
+      "passages": [
+        {
+          "lines": [
+            "wdjketw2",
+            "6wn65rrk",
+            "rblvjh2o"
+          ],
+          "phrases": [
+            {
+              "he": "ודוגמא לכל זה,"
+            },
+            {
+              "he": "הנה אנו רואים בעומק הפלפול בתלמוד"
+            },
+            {
+              "he": "וטעמים בסברות רבות כך וכך"
+            },
+            {
+              "he": "גם שבאים בהשגה דבינה,"
+            },
+            {
+              "he": "אבל לא יוכלו עדיין להוציא לאור מעצם השכל"
+            },
+            {
+              "he": "איזה פסק דין חייב או זכאי כלל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "An example of all this: there are people who can have a whole *pilpul* (Talmudic debate) and understand all the different *sevaros* (lines of reasoning), but they cannot really apply it to anything. They cannot bring out to the light from the intellect itself any ruling of guilty or innocent.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2759, 2814],
+                  "start": 1183.66,
+                  "end": 1208.8
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "And really, in a way, the power of *tevuna* has a higher root than the power of *bina*, because to bring the thing out you really have to understand it, in a way, deeper than the original understanding.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2815, 2853],
+                  "start": 1209.34,
+                  "end": 1226.92
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "You see this with the Greek philosophers. In one way they were greater than the modern scientists, to the point where they would consider the modern scientists *davka* *grobe mentshen* (coarse people). But the fact that the modern scientists went and applied it finally gave them a deeper understanding of the thing than the Greek philosophers had with their *bina*. So right now we understand some of these things better, even though they had the theory back then and we are not such big theoreticians. Because we applied it, we ended up understanding the principles even better than they did.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2854, 2972],
+                  "start": 1227.34,
+                  "end": 1283.06
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "Archimedes and the eureka",
+              "text": "Even by the Greeks, the big special story of the smart Greek is *davka* about *tevuna*, not *bina*: the eureka story, with Archimedes. He was basically just one of these Greek guys who used to sit around and think stuff, and he never tried to apply any of it. Then the king had a problem, and he had to come up with an application for it. And then came the eureka, which is the whole thing of understanding deeper into the thing. Because he had to apply it, *davka* then he understood somehow deeper into the thing, and came up with the principle of the displacement of water according to the mass.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [2973, 3119],
+                  "start": 1284.74,
+                  "end": 1344.71
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So somebody can understand the Talmud, but the big *poskim* (halachic authorities), like the Rambam, could apply it to an actual ruling of guilty or innocent.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [3120, 3154],
+                  "start": 1346.28,
+                  "end": 1359.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4wuqv36w",
+            "7pwfwk4y"
+          ],
+          "phrases": [
+            {
+              "he": "דהיינו שלא יוכל להוציא מתוך הסברה"
+            },
+            {
+              "he": "איזה חיוב על פי זה השכל"
+            },
+            {
+              "he": "ולא איזה זכות על פי זה השכל"
+            },
+            {
+              "he": "כי עדיין אין השכל והסברה רק השכלה שכליות לבד,"
+            },
+            {
+              "he": "בלתי ימצא ממנו שום התפשטות בהטיות לענין נבדל הימנה,"
+            },
+            {
+              "he": "שהוא לחייב על ידה או לזכות על ידה"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "You can learn the whole subject, whatever you want to learn in the Talmud, but to actually *pasken* (rule) on it, you will not be able to do.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [3155, 3207],
+                  "start": 1360.1,
+                  "end": 1381.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Which is to find guilty by it, or to find innocent by it: that is the matter of *chesed* and *gevura* (kindness and severity). The *chesed* and *gevura* do not come out of *bina*. They come *davka* from *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [3208, 3270],
+                  "start": 1381.58,
+                  "end": 1407.57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lgvfw7db",
+            "mhlftuki"
+          ],
+          "phrases": [
+            {
+              "he": "והרי זה כמו דבר ההיולי",
+              "en": "And it's just a *hiyuli*.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [3276, 3280],
+                "start": 1410.14,
+                "end": 1412.41
+              }
+            },
+            {
+              "he": "שלא נודע עדיין מה ימצא ממנה ומה יעשה בה",
+              "en": "It's just like an idea, but nobody knows what will come out of it and what he can do with it.",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [3290, 3310],
+                "start": 1417.5,
+                "end": 1423.04
+              }
+            },
+            {
+              "he": "(בל\"א דער מושכל אליין כמו שהוא"
+            },
+            {
+              "he": "ער קאן מיט אים נישט טאן קיין זאך",
+              "en": "He can't do nothing with it,",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [3326, 3331],
+                "start": 1433.14,
+                "end": 1434.42
+              }
+            },
+            {
+              "he": "ניט צו קערין לזכות או לחוב כו')",
+              "en": "to be *noteh* to either *zechus* or *chiyuv*.)",
+              "audio": {
+                "lecture": "018 Tape002-Side2-Ch2.mp3",
+                "words": [3337, 3345],
+                "start": 1440.67,
+                "end": 1447.62
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "It is just a *hiyuli*. It is just an idea, and nobody knows what will come out of it and what you can do with it. And in Yiddish: the concept alone, as it is, **he can't do nothing with it**, to lean either to merit or to guilt.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [3271, 3346],
+                  "start": 1408.04,
+                  "end": 1448.72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rok4avng"
+          ],
+          "phrases": [
+            {
+              "he": "ואמנם כח התבונה שמתפשט ממוח הבינה,"
+            },
+            {
+              "he": "היינו מה שביכולתו להביא עצם ההשגה"
+            },
+            {
+              "he": "לבחינת התפשטות למטה ממנה"
+            },
+            {
+              "he": "בכל ענין נבדל הימנה,"
+            },
+            {
+              "he": "או לחיוב או לזכות"
+            },
+            {
+              "he": "או להתפעל בלב,"
+            },
+            {
+              "he": "וכן להביאה במחשבה בכמה אופנים שונים כו'."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Or to be aroused in the heart: in other words, he knows that this is a thing from which *hispaalus* (arousal) will come. And likewise to bring it into thought, as explained elsewhere: here he is starting up what he is going to discuss later in the book, that the letters of thought come out of *Malchus* of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "018 Tape002-Side2-Ch2.mp3",
+                  "words": [3347, 3429],
+                  "start": 1449.32,
+                  "end": 1480.24
+                }
+              ]
+            },
+            {
+              "kind": "recap",
+              "text": "So far: *tevuna* is the power of *bina* to spread out. It can bring the grasp itself below it, into any matter separate from it, and into the *middos* (emotions). However, the power of *tevuna* can also go up, the same as *bina* can go up. As he says, in *bina* itself there is *bina* and *tevuna*, and *tevuna* is really a full *bina* all by itself; it can go up too.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [58, 154],
+                  "start": 33.3,
+                  "end": 73.78
+                }
+              ],
+              "outOfPlace": "Class 019 opens by going back over the definition of tevuna before it reads the next line; placed after the last line of class 018."
+            },
+            {
+              "kind": "explanation",
+              "text": "So the power of *chachma sheb'bina* (*chachma* within *bina*) actually originates in *tevuna*. *Chachma sheb'bina* is to discover a new thing within the same thing, off to the side, and that is in a way the same matter as *tevuna*. It originates from *tevuna* to come out as the width: *tevuna* is really a length, but when it goes up, the width is really a new thing, the power of *bina* in the essence of the matter spreading out to a new thing within the same matter. And as he said there, the *chachma* of *bina* relates to the *bina* of *chachma*, which is to understand one thing from another, and that is also *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [155, 285],
+                  "start": 74.76,
+                  "end": 128.99
+                }
+              ],
+              "outOfPlace": "Class 019 opens by going back over the definition of tevuna before it reads the next line; placed after the last line of class 018."
+            },
+            {
+              "kind": "explanation",
+              "text": "Not only that: what do they call a *bina sheb'chachma*? A *navon* (a person of understanding). A *navon* means somebody who has *tevuna*; that is what they call him. They do not call him a *mevin chacham* or something like that; they call him a *navon*, because to understand something from inside something is really *tevuna* going up.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [286, 340],
+                  "start": 129.62,
+                  "end": 155.36
+                }
+              ],
+              "outOfPlace": "Class 019 opens by going back over the definition of tevuna before it reads the next line; placed after the last line of class 018."
+            },
+            {
+              "kind": "explanation",
+              "text": "*Bina sheb'bina* is the power that activates all the powers, including *tevuna*, by going over it again and again until there is the *kelita*. The levels, as he gave them, go up: first *bina sheb'bina*, then *chachma sheb'bina*. Now he is talking about how the levels go down. But *chachma sheb'bina* comes *davka* from the *kelita*, not really from the *bina*, because *bina* is only into the thing itself, not even into a new thing within the thing; it only understands the concept itself. A width is already something else, and it comes *davka* from the *kelita*. When you have a good *kelita*, that is when the power of *chachma sheb'bina* gets activated. The height, going up, is something different again. It is all a spreading of the light of *bina* into other things, including up.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [341, 539],
+                  "start": 156.1,
+                  "end": 235.14
+                }
+              ],
+              "outOfPlace": "Class 019 opens by going back over the definition of tevuna before it reads the next line; placed after the last line of class 018."
+            },
+            {
+              "kind": "explanation",
+              "text": "You can see it in the first sentence of the chapter, that *tevuna* is the spreading out of the light of *bina* because it is absorbed well in the receiving vessel. He does not say the spreading down. He says the spreading, and spreading means in all the different directions. That is really the matter of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [540, 596],
+                  "start": 235.66,
+                  "end": 262.57
+                }
+              ],
+              "outOfPlace": "Class 019 opens by going back over the definition of tevuna before it reads the next line; placed after the last line of class 018."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The emotions within bina, and the man of tevuna who comes to a decision",
+      "summary": "*Bina* has emotions of its own, the intellect leaning toward merit or guilt, but they are still intellect, and in *bina* there is always another hand. Bringing them out into a final decision or a halachic ruling takes a man of *tevuna*, who has absorbed the matter.",
+      "passages": [
+        {
+          "lines": [
+            "z4uyw4pm",
+            "x7a3trji"
+          ],
+          "phrases": [
+            {
+              "he": "אך לכאורה אנו רואים שיש בבינה עצמה בחינת מדות"
+            },
+            {
+              "he": "הנקרא ז׳ תחתונים דבינה,"
+            },
+            {
+              "he": "ונקרא מדות שבשכל המטה כלפי זכות"
+            },
+            {
+              "he": "או שכל מטה כלפי חוב כידוע"
+            },
+            {
+              "he": "היינו כמו שהמדות שבשכל הן בעצם ההשגה עדיין בהעלם"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Now he is starting a new thing. What he explained before was the *Chabad* (the intellect) of *bina*. Now he speaks of the seven lower levels of *bina*, the *middos* of *bina*, which are the forty-nine gates: the *middos* in the intellect that leans toward merit, or an intellect that leans toward guilt. When you analyze something, besides understanding it you also come up with: this is a good thing, or this is a bad thing.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [597, 695],
+                  "start": 262.98,
+                  "end": 303.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Besides understanding exactly what the intellectual thing is. Here, for instance, where we are learning *Chassidus*, by analyzing it we are learning, and we are also coming to a decision that this is a good thing. That is an intellect leaning toward merit, and that is already a *midda* (an emotion), not the actual intellect of what the *Chassidus* is. It is a decision whether it is good or bad, and that decision is what is going to awaken the *daas*, whether the *daas* will be into the thing or against it.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [696, 798],
+                  "start": 303.04,
+                  "end": 340.51
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Still hidden: it is not that you actually like it, as an actual emotion. It is just a mental decision that this seems a good thing that I should like. It is intellect. The *middos* of the intellect are not *middos*; they are intellect.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [799, 863],
+                  "start": 340.84,
+                  "end": 371.94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "kpvuxwit"
+          ],
+          "phrases": [
+            {
+              "he": "אבל להביא בחינת התגלותן"
+            },
+            {
+              "he": "בדבר נבדל,",
+              "en": "into an actual *psak halacha*,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [1778, 1782],
+                "start": 739.88,
+                "end": 741.3
+              }
+            },
+            {
+              "he": "כמו להורות"
+            },
+            {
+              "he": "בענין מקרה דבר מה",
+              "en": "in an actual thing that happens,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [1789, 1794],
+                "start": 743.42,
+                "end": 744.62
+              }
+            },
+            {
+              "he": "על פי השכל והסברא הזאת,"
+            },
+            {
+              "he": "להטות את המשפט של זה הענין"
+            },
+            {
+              "he": "לחסד וגבורה שבו דוקא,"
+            },
+            {
+              "he": "הרי איש תבונה דווקא"
+            },
+            {
+              "he": "יוציא לאור מן המדות שבבינה כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "Fiddler on the Roof: on the other hand",
+              "text": "In *bina* there are forty-nine *middos*, seven *middos*, whatever. It is like in *Fiddler on the Roof*: on the one hand, it is a good thing. But on the other hand, from this *sevara*, it is a bad thing. And on the other hand, from that *sevara*, it is a good thing. As long as it is in the intellectual brain of *bina*, there are many other hands. You can understand that in such and such a way it is a good thing and in such and such a way it is a bad thing.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [864, 1010],
+                  "start": 372.22,
+                  "end": 438.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But to bring it out, to say what it finally is: that is already *tevuna*, *davka* a man of *tevuna*. To come out with a *psak halacha* (a halachic ruling) takes *davka* a man of *tevuna*. And later on he will explain that the real ruling comes from *daas*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1011, 1058],
+                  "start": 439.32,
+                  "end": 458.14
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "That is why women cannot be rebbes, rabbis, *poskim*: because they do not have a strong enough *daas*. There has to come a time to decide, and this is basically why women are indecisive, why they have less *daas*. It is not really that they have less *daas* than a man does; actually they have the same amount of *daas* that a man does. But the fact that they have a *bina yeseira* (an extra measure of *bina*) messes up their *daas*. They always come up with another hand, and they cannot stop coming up with the other hand.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1059, 1154],
+                  "start": 458.2,
+                  "end": 495.88
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Says women cannot be rabbis or poskim because their extra bina messes up their daas, and calls them indecisive.",
+                "action": "replace",
+                "publishable": "An abundance of *bina*, a *bina yeseira* (an extra measure of *bina*), can unsettle the *daas*: one always comes up with another hand, and cannot stop coming up with the other hand."
+              }
+            },
+            {
+              "kind": "mashal",
+              "title": "The businessman who thinks too much",
+              "text": "Like in business courses: a guy who thinks too much cannot be a good businessman, because there has to come a time when you finally have to make a decision, even though you do not know all the details. In *bina* there is always going to be another detail. Details are infinite.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1155, 1230],
+                  "start": 499.44,
+                  "end": 522.38
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "And that is why women, it is not that they can never make a decision, they can, but that is why they are *kalei daas* (light of *daas*): they always come up with another detail and cannot make that final decision. The mind of *daas* is the mind of *hataya* (tilting). In the *bina* it tells you all kinds of things, like this, like that, but finally you say, \"Listen, I gotta make a decision already.\"",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1231, 1318],
+                  "start": 522.88,
+                  "end": 558.78
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Explains \"kalei daas\" as women always coming up with another detail and being unable to decide.",
+                "action": "replace",
+                "publishable": "The mind of *daas* is the mind of *hataya* (tilting). In the *bina* it tells you all kinds of things, like this, like that, but finally you say, \"Listen, I gotta make a decision already.\""
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "And the decision comes almost from a feeling for the thing, rather than from the actual reasoning, though it is influenced by all the different things in *bina*, the *sevaros*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1319, 1355],
+                  "start": 558.96,
+                  "end": 577.66
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Jumping without a parachute",
+              "text": "Where the *sevaros* are completely weighed to one side, it does not take much of a decision; anybody can make it. If you ask, \"Should I jump out of an airplane without a parachute?\", you do not have to bring in an intellect of *hataya* to get rid of all the other hands. There ain't no other hands; there is only one hand over there.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1356, 1429],
+                  "start": 578.2,
+                  "end": 604.96
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "(\"Unless you're suicidal.\") \"Yeah, right. If you're suicidal, then the answer is yes. Also a very simple answer. If you say, 'I want to kill myself, should I jump out of the airplane now without a parachute?', the answer is yes. Because if you do this, you'll kill yourself. And if you're a normal person that doesn't want to kill himself, the answer is no.\"",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1430, 1510],
+                  "start": 605.18,
+                  "end": 631.61
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Jokes about a suicidal person deciding to jump.",
+                "action": "omit"
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "The intellect that leans is needed where the balance is close, and where there is stuff you cannot know right now, and you have to come up with a feeling.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1511, 1562],
+                  "start": 632.18,
+                  "end": 652
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But the basic thing here is that making the actual decision in halacha is *davka* the man of *tevuna*. What makes a great one great, like the Rambam or the Rif, is that they learned it so well that they had the *kelita*. They did not just understand it; they absorbed it. It became part of their brain, and therefore they can come up with a halachic decision.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1563, 1644],
+                  "start": 652.44,
+                  "end": 680.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And they can come up with the decision not just from a feeling, like the thing of *shasik Rav* (Rav was silent): he could not give you the whole explanation, and yet he came up with a decision. The decision came from *chachma*, but in the brain of *daas* he leaned *davka* toward that decision, and he said, \"That's the decision.\" But they can usually come up with the decision out of *tevuna*, without having to resort to a feeling for it.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1645, 1756],
+                  "start": 681.28,
+                  "end": 727.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Reading the line again: to bring the *middos* of the intellect, still hidden in the grasp itself, into revelation in a separate thing means into an actual ruling, in the case of something that happened. So the basic things in *tevuna* are explanation and application. Before, it was explanation, bringing the water out to the sheep; now he says application too. And this is application into doing something, not just a matter of halacha. Say you have a scientific understanding, like the Greeks with the steam engine, who did not think of applying it.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1757, 1914],
+                  "start": 727.43,
+                  "end": 788.8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "sh5m4ohl",
+            "6xwunvmq"
+          ],
+          "phrases": [
+            {
+              "he": "ואיש תבונות היינו כח הקולט בכי טוב לעצם ההשגה,",
+              "en": "Means the absorption of the *hasaga*.",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [1930, 1935],
+                "start": 796.14,
+                "end": 798.04
+              }
+            },
+            {
+              "he": "על כן מתפשטת ההשגה בו"
+            },
+            {
+              "he": "לעשות ולהורות בה כמה ענינים נבדלים לגמרי"
+            },
+            {
+              "he": "וגם ביכולתו להביא את עומק בינה לידי גילוי כנזכר לעיל"
+            },
+            {
+              "he": "ודי למבין"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "What does a man of *tevunos* mean? The absorption of the grasp, therefore the grasp spreads out in him, and the *kelita* is the *Keser* (crown) of *tevuna*. And that too, by the way, comes from the *hisbonenus*, from the double *nun*, going over and over and over. You go over it until you understand it, and if you stop there, you won't have no *kelita*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1915, 1998],
+                  "start": 789.05,
+                  "end": 818.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So now there are two things, the application and the explanation. Really he said there are basically three: the essence of *tevuna* is *kelita*, and the power of *tevuna* is to spread the thing out. Generally, when we say *tevuna*, it means downward: either to bring it down into application, or to bring it down into an explanation to somebody else.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [1999, 2078],
+                  "start": 820.36,
+                  "end": 859.72
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yisroel Saba and Tevuna: the emotions of the mind as they come out, and the root of the letters of thought",
+      "summary": "*Tevuna* is the *middos* of *bina* as they come out of *bina*, as *Yisroel Saba* is those of *chachma*, and each becomes a full *partzuf*. Its *Malchus* is the root of the letters of thought, *Leah*: still part of the mind itself, while thought is already a garment.",
+      "passages": [
+        {
+          "lines": [
+            "ucybbuqv"
+          ],
+          "phrases": [
+            {
+              "he": "(והיינו בחינת אבא ואמא תתאין ישראל סבא ותבונה"
+            },
+            {
+              "he": "ישראל סבא מדות דחכמה ותבונה מדות דבינה"
+            },
+            {
+              "he": "אך באין בבחינת הגילוי לחוץ"
+            },
+            {
+              "he": "ובחינת מלכות דתבונה הוא השכל הבא במחשבה"
+            },
+            {
+              "he": "הנקרא אותיות מחשבת שכל",
+              "en": "That's the letters of the *machshevas sechel*, the *machshava* how it is still in the *sechel*,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [2266, 2281],
+                "start": 948.7,
+                "end": 953.32
+              }
+            },
+            {
+              "he": "שהשכל מתלבש בה"
+            },
+            {
+              "he": "והוא בחינת כלי חיצוני למחשבה עיונית"
+            },
+            {
+              "he": "שהוא גלוי השגה דבינה עצמה מצד עצם השכל והסברא כו'"
+            },
+            {
+              "he": "ומבחינת מלכות דתבונה נמשך שרש אותיות המחשבה עצמה"
+            },
+            {
+              "he": "שנקרא לאה כו'"
+            },
+            {
+              "he": "והוא ד' רבתי דאחד)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The lower father and mother, *Yisroel Saba* and *Tevuna*: *Yisroel Saba* is the *middos* of *chachma*, and *Tevuna* the *middos* of *bina*. But it is not just the *middos* of *chachma* and of *bina*. It is a special thing: as they come into revelation to the outside.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2079, 2113],
+                  "start": 860.08,
+                  "end": 880.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is not just the *middos* of *bina*, because he just told you that the *middos* of *bina* are not *tevuna*: you can have *middos* of *bina* and not be able to apply them. The *middos* of *bina* itself are the *middos* of *bina* as they stay inside. *Tevuna* is the *middos* of *bina* as they come out of *bina*. And it is the *middos*, not the intellect, of *bina*: the actual intellect, the *hisbonenus*, the *Chabad* of *bina*, stays totally inside itself. However, even though *Yisroel Saba* and *Tevuna* are just the *middos* of *chachma* and *bina*, they become a whole *partzuf* with ten *sefiros*. In *tevuna* there is also a *Chabad* of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2114, 2254],
+                  "start": 881.2,
+                  "end": 936.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And *Malchus* of *tevuna* is the intellect that comes into thought, the letters of the *machshevas sechel*: the thought as it still is in the intellect, in which the intellect is dressed. That is what he is going to explain later as *Leah*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2255, 2297],
+                  "start": 939.28,
+                  "end": 960.49
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *machshava iyunis* is the actual *iyun* (analysis) into the thing, which takes place inside the intellect, and it is dressed in what is called the *machshevas sechel*, which is the actual letters. The two are almost the same thing; it is a very, very refined distinction. The *machshevas sechel* means the thought of the intellect; the *machshava iyunis* means the actual process of *iyun* itself, but it is dressed in letters. You cannot have a *machshava iyunis* without the outer letters of *machshevas sechel*. And the *machshevas sechel* comes *davka* from *Malchus* of *tevuna*, because it takes the actual inner *iyun* and puts it into a separate thing, which is letters: in other words, words. It puts it into actual words and concepts.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2298, 2443],
+                  "start": 961.71,
+                  "end": 1026.22
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "So *Malchus* of *tevuna* is not actually *Leah* itself, only its root?",
+              "askedBy": "student",
+              "text": "No: *Malchus* of *tevuna* is still part of the essence, of the intellect itself, as it is coming out. In terms of the worlds, *Leah* is already considered like *Beriya*, *Yetzira* and *Asiya*: the actual thought, speech and action. Thought is not part of the essence anymore; it is a garment. *Malchus* of *tevuna* is still part of the body. It is not a garment; it is the actual inner intellect.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2444, 2561],
+                  "start": 1028.16,
+                  "end": 1087.44
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Speech over the telephone",
+              "text": "Right now we are talking. The letters of speech are a totally separate garment. They are really nothing but sounds. You see that they travel over the telephone: they are turned into squiggles of electricity, then the electricity is turned back into squiggles of air movement on your side so your ear can hear it, and then it is turned back into squiggles of electricity in your ear that travel along your nerves. And my speech came out of my thought, which was letters, basically the same as the letters of speech: it is not really part of me. They are a little different, a more inner garment, in my brain. It gets dressed like a garment, *kalvush yachlif* (like a garment, it changes): it puts it on and takes it off. But the *Malchus* of *tevuna* is still part of the body; it is the actual brain. *Leah* is already sort of talking inside your head. All this is going to be explained in much later parts of the book; he is just bringing it up here.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2562, 2811],
+                  "start": 1091.98,
+                  "end": 1202.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Malchus* of *tevuna*, which is called *Leah*, is the large *dalet* of *echad*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2812, 2843],
+                  "start": 1203.26,
+                  "end": 1233.03
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ben u'vas: tevuna's three dimensions, and the lower mother who gives birth to the emotions",
+      "summary": "The letters of *tevuna* spell *ben u'vas*, son and daughter: the two sides of *daas* that bring the emotions. Its depth is *kelita*, its length is bringing the grasp down to teach and to act, its width is spreading it out in thought. *Bina* is only the grandmother; *tevuna* is the lower mother who actually gives birth to the *middos*.",
+      "passages": [
+        {
+          "lines": [
+            "virffb7u"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו שנקרא תבונה בן ובת כידוע,"
+            },
+            {
+              "he": "להיות כי גם בתבונה יש ג' דברים,"
+            },
+            {
+              "he": "עומק ואורך ורוחב."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This too will be explained later. If you break up the letters of *tevuna*, you get *ben u'vas*. And basically *ben u'vas* means *chesed* and *gevura*, meaning *daas*: as he explains later, the mind of *daas* splits into two minds, *chesed* and *gevura*. So *tevuna* is where the *daas* comes from. Bringing the thing into an actual feeling of *middos* comes *davka* from *tevuna*. That is the actual mother of the children, the lower mother. *Bina* does not really bring the children directly, only through the lower mother.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2844, 2982],
+                  "start": 1233.61,
+                  "end": 1298.63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7h7ajdbp",
+            "hvkuw7gq"
+          ],
+          "phrases": [
+            {
+              "he": "העומק הוא עצם כח התבונה הזאת שבאותה ההשגה,"
+            },
+            {
+              "he": "כמו שהיא בשעה שקולטת אותה כו'"
+            },
+            {
+              "he": "ובה יוכל עומק ההשגה הנזכר לעיל לבוא לגלוי,"
+            },
+            {
+              "he": "כנזכר לעיל בפסוק איש תבונה ידלנה כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "Holding it, or soaking it up like a sponge",
+              "text": "The depth is the actual *kelita*: it gets the thing by actually absorbing it, not just that it hops on it and holds onto it. Holding onto it means you are holding it from the outside. *Kelita* means you absorb it like a sponge. It now becomes part of you.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [2983, 3052],
+                  "start": 1298.87,
+                  "end": 1331.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And *davka* through this *kelita* the depth of the grasp, the *omek hamusag* (the depth of the concept), can come into revelation, as in the verse, \"a man of *tevuna* will draw it out.\" This comes *davka* from the depth.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3053, 3093],
+                  "start": 1330.86,
+                  "end": 1351.68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "uxwal6su",
+            "5qr26bde"
+          ],
+          "phrases": [
+            {
+              "he": "והאורך הוא ירידתה בענין אחר הנבדל,",
+              "en": "Either the bringing down into a separate thing,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3107, 3115],
+                "start": 1361.46,
+                "end": 1366.26
+              }
+            },
+            {
+              "he": "להורות בו ולעשות מעשים רבים על ידה כו'",
+              "en": "either to teach somebody else, to explain, or else to apply: to do, to apply it into actual action.",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3116, 3139],
+                "start": 1366.4,
+                "end": 1375.1
+              }
+            },
+            {
+              "he": "והרוחב הוא בחינת התפשטות התבונה בעצם ההשגה,"
+            },
+            {
+              "he": "להרחיבה במחשבה בכמה רבוי אופנים שונים"
+            },
+            {
+              "he": "ולא כמו שהיא לבד כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The length is bringing it down into a separate thing: either **to teach** somebody else, to explain, or to apply it, to do many deeds by it, to put it into actual action.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3094, 3139],
+                  "start": 1352.09,
+                  "end": 1375.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So he is telling you that the *chachma*, the width, of *bina* really comes from the width of *tevuna*. It is *davka* when you have the *kelita* that you can have the actual widening in *bina* itself too.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3140, 3195],
+                  "start": 1375.71,
+                  "end": 1407.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And one other thing that he does not mention here but mentioned before: since it is in *bina*, it is also in *tevuna*, the height. There is a height too: *davka* from the power of the *kelita* you can come to understand one thing from another. And it is *davka* a person who absorbs the matter who can have that, and that is why he is called a *navon*. The root of *navon* is *tevuna*. Not a *mevin*: a *navon* means a master of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3196, 3290],
+                  "start": 1409.26,
+                  "end": 1445.48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "u7ixfupf",
+            "p4zitoes"
+          ],
+          "phrases": [
+            {
+              "he": "ומה שכלולה התבונה מב''ן וב''ת,"
+            },
+            {
+              "he": "היינו מה שמתבונה דוקא יולדו המדות בגלוי מהות בפני עצמם,"
+            },
+            {
+              "he": "כי מבינה עצמה לא היו תולדות המדות",
+              "en": "From *bina* itself there won't be a *toldah* of the actual *midda*,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3323, 3334],
+                "start": 1462.02,
+                "end": 1465.04
+              }
+            },
+            {
+              "he": "אף על פי שנקרא אם הבנים כו'",
+              "en": "even though it's called *em habanim*",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3356, 3362],
+                "start": 1476.2,
+                "end": 1478.08
+              }
+            },
+            {
+              "he": "(אבל היא אימא עילאה)",
+              "en": "(it's the upper mother).",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3526, 3529],
+                "start": 1553.8,
+                "end": 1554.86
+              }
+            },
+            {
+              "he": "מה שאין כן התבונה נקרא אימא תתאה"
+            },
+            {
+              "he": "להוליד המדות,",
+              "en": "actually gave birth to the *middos*,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3540, 3545],
+                "start": 1558.55,
+                "end": 1559.78
+              }
+            },
+            {
+              "he": "והוא בחינת ב''ן וב''ת, אהבה ויראה,"
+            },
+            {
+              "he": "שבאים בהתכללות בתבונה דוקא,"
+            },
+            {
+              "he": "שהיא בחינת התפשטות אור הבינה למטה כנזכר לעיל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "From *tevuna* *davka* the *middos*, *chesed* and *gevura*, are born, revealed in themselves, through the brain of *daas*. For from *bina* itself the *middos* would not have been born, because *bina* stays totally intellectual, and there is always another hand, always another analysis. Even though it is called \"the mother of the children\", because without the original *hisbonenus* there would be no *tevuna* either.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3291, 3373],
+                  "start": 1445.84,
+                  "end": 1482.43
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Bina the grandmother",
+              "text": "But it is the upper mother: in a way, like a grandmother. (\"The original source, but not the immediate one.\") Yes, *bina* is really the grandmother. It should be called the *savta*, as *Yisroel Saba* is called the grandfather. Really, in another way of looking at it, *chachma* should be called the grandfather and *bina* the grandmother, because *bina* is not the mother of the *middos*; it is the mother of the *tevuna*, the mother of the mother of the *middos*. In other words, it is the mother of the *middos* of *bina* itself, and those *middos* of *bina*, when they come out, are *tevuna*. So *bina* is really the mother of *tevuna*, not the actual mother of the *middos*: the upper mother.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3374, 3529],
+                  "start": 1482.88,
+                  "end": 1554.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But *tevuna* is called the lower mother, to give birth to the *middos*: it actually gives birth to them. Which come included *davka* in *tevuna*: it is *davka* in *tevuna* that all the other hands come together into one, to bring out the actual final *midda*. In *bina* it is all still in little pieces, a piece here and a piece there, and you cannot put all the pieces together to come up with an actual product. That is *davka* in *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3530, 3634],
+                  "start": 1554.9,
+                  "end": 1598.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Which is the spreading out of the light of *bina* downward. If you notice, upstairs he did not say \"downward\". Now he makes a sharper definition: what we generally call *tevuna* means *davka* downward, the lower mother. The real power of *tevuna*, as he said before, is spreading out in all kinds of other ways too, except that in those other ways there are other names for it: *chachma* of *bina*, *bina* of *chachma*, and various other things. And as *chachma* and *bina* have a source in the hidden *chachma* and the hidden *bina* of *Arich*, *tevuna* too has a source in the hidden *tevuna* of *Arich*: if *bina* has two things, *bina* and *tevuna*, then the *bina* of *Arich* has two things too.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3635, 3763],
+                  "start": 1600.3,
+                  "end": 1660.43
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The intellect of the emotions comes from tevuna, and the point is to get fired up",
+      "summary": "The *mochin* of the *middos* come from *tevuna*, the go-between that carries the *uvchein* of *bina* into the heart. That is the whole point of *hisbonenus*: it is *avoda*, not intellect, and the goal is to get fired up, in the heart, in the mind, in the will, and in the very essence of the soul.",
+      "passages": [
+        {
+          "lines": [
+            "tpverqfr",
+            "pteqr67h",
+            "swd6m54u"
+          ],
+          "phrases": [
+            {
+              "he": "וגם לזה הטעם בחינת המוחין שבמדות נמשך מבחינת התבונה",
+              "en": "And that's why the *mochin* of the *middos*, in other words the *mochin* of *Z\"A*, comes from *tevuna*, not from *bina*.",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3773, 3794],
+                "start": 1667.84,
+                "end": 1674.76
+              }
+            },
+            {
+              "he": "(וכמו שכתוב יהו״ה בחכמה יסד ארץ,"
+            },
+            {
+              "he": "דאבא יסד ברתא כו'"
+            },
+            {
+              "he": "כונן שמים בתבונה,"
+            },
+            {
+              "he": "שמים הן בחינת המדות, אש מים כידוע"
+            },
+            {
+              "he": "וכן ובתבונה"
+            },
+            {
+              "he": "יתכונן,",
+              "en": "it'll be established,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [3845, 3847],
+                "start": 1706.41,
+                "end": 1708.01
+              }
+            },
+            {
+              "he": "שהוא בחינת קיום המדות בבחינת המוחין דתבונה שבהם,"
+            },
+            {
+              "he": "כי התבונה כמו ממוצע להביא מוחין מבחינת מדות דבינה במדות שבלב"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "That is why the *mochin* of the *middos*, in other words the *mochin* of *Zeir Anpin*, come from *tevuna*, not from *bina*. As the verse says, \"*Havaya* founded the earth with *chachma*\": Abba founded the daughter, *Malchus* comes from *chachma*. \"He established the heavens with *tevuna*\", not with *bina*. The heavens are fire and water, the *middos*, *chesed* and *gevura*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3764, 3826],
+                  "start": 1660.48,
+                  "end": 1697.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "\"And by *tevuna* it is established\": \"I don't know what the whole rest of the verse is.\" It will be established, but what will be established? The existence of the *middos* through the *mochin* of *tevuna* within them: the *mochin* of the *middos* come *davka* from *tevuna*. *Tevuna* is a go-between: the *mochin* of the *middos* come from the *middos* of the *mochin*. They come from the *middos* of *bina*, but in order to come out and become the *mochin* of the *middos*, they have to go through *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3827, 3948],
+                  "start": 1698.64,
+                  "end": 1762.42
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "And this is basically what is called an *uvchein* (\"and so\"). The *mochin* of the *middos* are an *uvchein*, without the essence, the intellect, the *Chabad* of *bina*: just the *middos* of *bina*. That is the whole matter of *avodas halev* (the service of the heart): you have to bring it down into the heart, because the only thing that goes through is the end of it, only its *uvchein*, not the intellect itself. Whereas in *avodas hamochin* (the service of the mind) the whole *Chabad* of *bina* comes into it.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [3949, 4051],
+                  "start": 1762.98,
+                  "end": 1799.87
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4a3kdl7g"
+          ],
+          "phrases": [
+            {
+              "he": "שזהו כמו כח ההבאה בענין הנבדל,",
+              "en": "that is like to bring it into something different,",
+              "audio": {
+                "lecture": "019 Tape003-Side1-Ch2.mp3",
+                "words": [4060, 4069],
+                "start": 1807.7,
+                "end": 1811.44
+              }
+            },
+            {
+              "he": "שהוא עיקר ענין התבונה כנזכר לעיל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The power of bringing [it] into the separate matter means to bring the intellect into the *midda*, and a *midda* is something separate, a thing apart from the intellect. As was said, the power of *bina* does various things. One of them is to teach other people. Another is to apply, and applying includes bringing out the actual *middos*, bringing the intellect into an application of actual feeling.",
+              "audio": [
+                {
+                  "lecture": "019 Tape003-Side1-Ch2.mp3",
+                  "words": [4052, 4150],
+                  "start": 1799.89,
+                  "end": 1838.86
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "He reads the end of the line as \"the main matter of *hisbonenus*\": not just *tevuna*, though it is *tevuna* too. The main thing of *hisbonenus* is to bring it into the *middos*. That was the whole thing in *Kuntres HaHispaalus*. The whole thing is not just to be a *maskil* (a person of intellect); it is to be an *oved* (one who serves G-d). *Hisbonenus* is *avoda*, not *haskala* (intellectual grasp). *Haskala* means it is just an intellectual thing: you think about it intellectually, and it is a very nice intellectual thing.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [0, 88],
+                  "start": 3.9,
+                  "end": 41.16
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "aside",
+              "text": "That is where most people make a very big mistake. They think that this whole business of learning like *Shaar HaYichud*, or like *Ayin Beis*, means that the people who learn it are *maskilim*. (\"Right, it's just up in the *himmel* (heaven).\") Up in the *himmel*. But *avoda* means to kvetch your face. *Daas*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [89, 148],
+                  "start": 42.54,
+                  "end": 62
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "explanation",
+              "text": "And he is saying: no, the whole thing of the *hisbonenus* is *davka* *tevuna*, because the *daas* comes *davka* from *tevuna*. The *ben u'vas*, the mind of *daas*, which brings about the actual *middos*, that is the whole matter of the *hisbonenus*. And that is from *tevuna*: to bring the *middos* of *bina* into becoming the intellect of the *middos*, and to bring about *middos*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [149, 217],
+                  "start": 64.32,
+                  "end": 94.5
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "avodah",
+              "text": "That is the whole thing, as he explained in *Kuntres HaHispaalus*. He said that the whole thing his father, the Alter Rebbe, wanted was that the chassidim should have a *hispaalus Elokus* (an excitement over G-dliness). That is the goal. The goal is really the *middos*; the goal is to get excited. The goal is not just to sit there: \"Oh, well, this is very nice. So tell me, so what is *Arich* and what is *Atik*? Oh, that's so interesting.\" That is not the goal. The goal is to get fired up. That is the goal of *avodas halev*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [218, 323],
+                  "start": 94.74,
+                  "end": 141.6
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "avodah",
+              "text": "An even bigger goal is to get totally fired up, where your whole brain gets fired up: that is *avodas hamochin*, where even the thought becomes hot, the thought of *bina* itself. And an even bigger goal is up in *Atik* and *Arich*: that the *ratzon* (will) should get hot. You should get a hot *ratzon* and *taanug* (delight) for this stuff, to become a total addict to it, so that this is where you get your *taanug* from.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [324, 422],
+                  "start": 141.88,
+                  "end": 178.18
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "story",
+              "title": "Chassidus instead of blood",
+              "text": "And the even higher thing is the essence of the *yechida* (the essence of the soul): this is me, this is what I am. It is said of the Mitteler Rebbe that if you would poke him with a needle, *Chassidus* would come out instead of blood. Blood means your soul; the soul is in the blood.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [423, 482],
+                  "start": 179.38,
+                  "end": 203.04
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            },
+            {
+              "kind": "avodah",
+              "text": "It means that it is not just that your heart is getting hot, or your head, or your very will, that this is your *taanug* and you cannot have any *taanug* without it. It is even more than this: even if you will suffer from the *Chassidus*. It is higher than *taanug*. *Taanug* means: if you get the *taanug*, you want it; if you do not get it, you do not want it. But the essence of the soul means he is willing to die for the sanctification of G-d's Name. That is the whole matter of *yechida*. You see it, as he explains, even in a simple Jew, who is willing to give up everything, including the *taanug*. Why? \"Because this is what I really am. I am *Chassidus*.\" That is the highest matter, and that is basically what he explains there: the *hispaalus* of the five levels of the soul.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [483, 667],
+                  "start": 203.04,
+                  "end": 273.71
+                }
+              ],
+              "outOfPlace": "The tape ran out in the middle of this line; class 020 opens by finishing it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The two nuns: hisbonenus, bina sheb'bina, carries bina over into tevuna",
+      "summary": "*Bina* has a bent *nun*, the width, and a straight *nun*, the length, and the *nun* is spelled with both. *Hisbonenus*, *bina sheb'bina*, joins *bina* to *tevuna* through the straight *nun*: going over the same explanation once more brings the *kelita*, as the hundred and first time makes an *oved*. It is the one power in your hands.",
+      "passages": [
+        {
+          "lines": [
+            "kga2nxgl",
+            "kt3ffmsq"
+          ],
+          "phrases": [
+            {
+              "he": "וידוע גם כן שיש נו''ן כפופה ונו''ן פשוטה בבינה,",
+              "en": "In *bina* itself there's a *nun pshuta* and a *nun kfufa*,",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [678, 690],
+                "start": 278.23,
+                "end": 281.54
+              }
+            },
+            {
+              "he": "להיות נו''ן כפופה הוא הרוחב"
+            },
+            {
+              "he": "ונו''ן פשוטה הוא האורך"
+            },
+            {
+              "he": "ונ' המלוי שלו בנ' פשוטה",
+              "en": "The *milui* of *nun* is with a long *nun*.",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [738, 746],
+                "start": 305.01,
+                "end": 310.1
+              }
+            },
+            {
+              "he": "מה שאין כן בשאר מילוי האותיות"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In *bina* itself there is a straight *nun* and a bent *nun*, and the same in *tevuna*. And as far as the general thing of *bina* and *tevuna* goes, *bina* is the bent one and *tevuna* the straight one: the bent *nun* is the width and the straight *nun* is the length. The spelling out of *nun* ends with a long *nun*: *nun*, *vav*, *nun*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [668, 758],
+                  "start": 273.71,
+                  "end": 316.32
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Why does he say it is not so in the other letters? The mem also ends with a mem, the open mem and the closed one; and a vav ends with a vav.",
+              "askedBy": "teacher",
+              "text": "The special thing of a *nun* is that its spelling out is *nun*, *vav*, *nun*: a bent *nun* and a straight *nun*, a *nun* and a *nun*, connected to each other. It means two things: there is this one and that one. In the *mem*, the open *mem* and the closed *mem* are really two levels of the same thing. And the *vav*? (\"I'm not really sure.\") It both separates them and unites them. When you say \"and\", it means there are two things, and it means they are connected. So in *bina* there are two separate matters, not just two separate levels: there is *bina* and there is *tevuna*. And the length and the width too are special things here.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [759, 1035],
+                  "start": 317.2,
+                  "end": 446.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "63bj73g4",
+            "5lrvb2he"
+          ],
+          "phrases": [
+            {
+              "he": "כי האורך נכלל ברוחב",
+              "en": "because the length is included in the width.",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [1040, 1047],
+                "start": 447.82,
+                "end": 451.52
+              }
+            },
+            {
+              "he": "וכך הוא בתבונה,",
+              "en": "And the same thing in *tevuna*: there's a length and a width.",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [1109, 1120],
+                "start": 476,
+                "end": 478.96
+              }
+            },
+            {
+              "he": "ואמנם נון הכפל בענין הנקרא התבוננות,"
+            },
+            {
+              "he": "כמו עמי לא התבונן וכו',"
+            },
+            {
+              "he": "שזהו בחינת פנימית בינה הנקרא עיון,"
+            },
+            {
+              "he": "לעמוד על דבר כו'"
+            },
+            {
+              "he": "שנקרא בינה שבבינה,"
+            },
+            {
+              "he": "הוא ממוצע בין בינה לתבונה",
+              "en": "The *hisbonenus* is the *emtza'i* between the two.",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [1196, 1203],
+                "start": 526.54,
+                "end": 528.96
+              }
+            },
+            {
+              "he": "על ידי הנו''ן פשוטה,",
+              "en": "through the *nun pshuta*, through the *orech* of *bina* itself,",
+              "audio": {
+                "lecture": "020 Tape003-Side2-Ch2.mp3",
+                "words": [1863, 1872],
+                "start": 803.3,
+                "end": 806.82
+              }
+            },
+            {
+              "he": "שמחמתו נקרא התבוננות כו'"
+            },
+            {
+              "he": "ודי למבין:"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "For the length is included in the width: the spelling out of the length is included in the width. If you have the width of the whole explanation in your head, you can bring it down to explain it to other people. If you do not have the width, you cannot explain it. And so it is in *tevuna*: there is a length and a width. And the doubled *nun* is in the matter called *hisbonenus*, the inwardness of *bina* called *iyun*, to get to the bottom of a thing by going over it again and again.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1036, 1143],
+                  "start": 446.78,
+                  "end": 501.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Which is called *bina sheb'bina*, a double *nun*. It is the go-between between *bina* and *tevuna*. As was said before, it is *davka* *bina sheb'bina* that brings about the *kelita*. How do you get from *bina* to *tevuna*? With the *hisbonenus*: you learn it one more time. The *hisbonenus* is the middle between the two. In *bina* itself he has a chap on the intellect. He says, \"Okay, so now I chap the intellect. How do I go to the next stage, having the *tevuna* of the intellect, to be able to apply it to outer things and to teach it to other people?\" He says, \"Through *bina sheb'bina*.\" \"What do you mean?\" \"Because *bina sheb'bina* will bring about the *kelita*.\" There is no special power of *kelita*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1144, 1290],
+                  "start": 501.86,
+                  "end": 555.68
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So basically he is telling you that *bina sheb'bina* is the main power of all the powers. (\"That's the linchpin.\") It is not just the linchpin; it is the one that is in your hands. The other powers are not really in your hands.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1291, 1334],
+                  "start": 558.32,
+                  "end": 575.64
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Even the power of *daas*, which is partially in your hands, since you can force yourself to concentrate on something, really comes *davka* from *bina sheb'bina*. Even the *avoda zara*-niks (idolaters) who just meditate on a candle or something like that do it because of an understanding they have. It is a wrong understanding, but you see that all of these forums that tell you to meditate on the emptiness and stuff like that are doing, in the forum, an explanation, not a meditation. And they do it because they did a *hisbonenus*, an analysis of the thing.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1335, 1435],
+                  "start": 576.08,
+                  "end": 622.64
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Calls practitioners of meditation \"avoda zara-niks\" (idolaters).",
+                "action": "replace",
+                "publishable": "Even the power of *daas*, which is partially in your hands, since you can force yourself to concentrate on something, really comes *davka* from *bina sheb'bina*. Even those who meditate on a candle, or on the emptiness, do it because of an understanding they have: what they are given first is an explanation, not a meditation, and they do it because they did a *hisbonenus*, an analysis of the thing."
+              }
+            },
+            {
+              "kind": "digression",
+              "title": "The shevira begins in bina sheb'bina",
+              "text": "And this, by the way, is where the whole matter of *Tohu* started. The *shevira* (the breaking of the vessels) starts in *SaG* of *SaG*, *bina sheb'bina*, in the *hisbonenus*. That is the root of all the kings, and that is basically the real eighth king of *Tohu*, not the new *MaH*: the new *MaH* is where it becomes repaired already. That is the source of repair, not a *Tohu* thing. But the *shevira* is where they did the *hisbonenus* of this and that and something else, and decided that since you really want to get to the *chachma*, and the real thing is the rising into *chachma*, which is above *bina* and below *bina*, so how do you get to them? With *daas*. But the real thing he is saying is that *davka* *bina sheb'bina* is the go-between between *bina* and *tevuna* through the straight *nun*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1436, 1636],
+                  "start": 623.74,
+                  "end": 710.26
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "So the shevira is in the uvchein?",
+              "askedBy": "student",
+              "text": "Yes, the *shevira* is in the *uvchein*. He says that in *bina* itself there is no *shevira*, but really it is there. The *shevira* is in the *middos* of *bina*, in the decision that he came up with. In *bina* itself, in the *Chabad* of *bina*, in *bina sheb'bina*, there is no real *shevira*, but that is really the source of the *shevira*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1637, 1761],
+                  "start": 710.26,
+                  "end": 752.52
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Take the pro-choice people. In their analysis there seem to be famines in the world, and overpopulation, and gangs and stuff like that. That is true; I agree with that. So what should we do? I would say, well, we should study *Chassidus*. They say, well, let's kill all the babies. The *uvchein* is where the *shevira* is.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1762, 1840],
+                  "start": 752.52,
+                  "end": 791.24
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "Sums up the pro-choice position as \"let's kill all the babies\".",
+                "action": "replace",
+                "publishable": "Two people can agree on the whole analysis of a problem in the world and draw opposite conclusions from it: one says, well, we should study *Chassidus*, and the other draws a destructive conclusion. The *uvchein* is where the *shevira* is."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "So that is the go-between between *bina* and *tevuna* through the straight *nun*, and it is *davka* through the straight *nun*, the length of *bina* itself: in *bina*, the *hisbonenus* itself is really the straight *nun*. In *bina*, the *chachma* of *bina* is the width, coming up with all kinds of new things. But to have the *kelita* it is *davka* not by coming up with new things. It is by going over the same explanation another time, through going through this length one more time. Not \"Okay, okay, fine, we understood it, so now let's go and learn another *Bava*.\" That is a width, and it will not bring about the *kelita*.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1841, 1967],
+                  "start": 795.22,
+                  "end": 849.48
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "The *kelita* comes *davka* from learning this book once over again. As any college student knows, if you want to absorb the material, you have to read it another time: not go off to the width, but go through this same explanation, this same length, again.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [1968, 2020],
+                  "start": 849.94,
+                  "end": 867.74
+                }
+              ]
+            },
+            {
+              "kind": "recap",
+              "text": "So this is what he has explained up to now. In the first chapter he explained how *bina sheb'bina* is the one that activates all the powers higher than it. *Daas* he explained somewhat separately, but not exactly how it gets activated. Now he has explained that *daas*, *ben u'vas*, gets activated *davka* from *tevuna*, and *tevuna* gets activated *davka* from *bina sheb'bina*, from going over the length one more time.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [2021, 2110],
+                  "start": 869.66,
+                  "end": 906.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That also explains the difference in *Tanya* between one who serves G-d and one who did not serve Him: he went over it a hundred and one times. Why is it, when he did it a hundred times, called that he did not serve? Besides the fact that he put no effort into it, since that was their habit, there is the other thing being talked about here, the difference between *avoda* and *haskala*. The hundred times were to understand the matter. The hundred and first time is what made him an *oved* rather than just a *maskil*. That is what brought the *daas* into the thing, and that it went into his *middos* came *davka* from the hundred and first time.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [2111, 2242],
+                  "start": 908.26,
+                  "end": 962.57
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The hundred and first time is when he already understood it; that is why they learned it a hundred times, to understand it properly. And the hundred and first time is where the *kelita* started. \"But I already understood it. What do you mean? I learned it a hundred times already.\" Yes, you learned it a hundred times, you understand it, very good: you are a *maskil*. But as far as an *oved*, you are not considered an *oved*, because you have no *daas* in it. The *daas* comes from *tevuna*; you have no *middos*, your *middos* are not aroused. You did not bring it down into the *middos*, which is the whole matter of *avoda*. And as he says here: and this is enough for one who understands.",
+              "audio": [
+                {
+                  "lecture": "020 Tape003-Side2-Ch2.mp3",
+                  "words": [2243, 2373],
+                  "start": 963.86,
+                  "end": 1018.9
+                }
+              ],
+              "join": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "How does *tevuna* come about, and why does understanding a matter really well not yet give it?",
+      "lines": [
+        "fx4uzm2l"
+      ]
+    },
+    {
+      "question": "In the deep well, what does the man of *bina* do, and what does the man of *tevuna* do? Who are the sheep here?",
+      "lines": [
+        "wbbx7sao",
+        "ktlyq343"
+      ]
+    },
+    {
+      "question": "What do the Greeks' steam turbine and Archimedes' eureka show about *bina* and *tevuna*?",
+      "lines": [
+        "3olgfxjf",
+        "rblvjh2o"
+      ]
+    },
+    {
+      "question": "Why can someone who understands every *sevara* of a *pilpul* still be unable to rule guilty or innocent, and what did the Rambam have that he lacks?",
+      "lines": [
+        "rblvjh2o",
+        "kpvuxwit"
+      ]
+    },
+    {
+      "question": "Why is *tevuna* the lower mother of the *middos*, and *bina* in a way only the grandmother?",
+      "lines": [
+        "u7ixfupf",
+        "p4zitoes"
+      ]
+    },
+    {
+      "question": "How does *bina sheb'bina* bring a person from *bina* to *tevuna*, and what does this have to do with learning a matter a hundred and one times?",
+      "lines": [
+        "63bj73g4",
+        "5lrvb2he"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "018 Tape002-Side2-Ch2.mp3",
+      "words": [0, 16],
+      "reason": "logistics",
+      "note": "Welcome; is the tape recording ready."
+    },
+    {
+      "lecture": "018 Tape002-Side2-Ch2.mp3",
+      "words": [1912, 1929],
+      "reason": "logistics",
+      "note": "He stops to take a phone call."
+    },
+    {
+      "lecture": "018 Tape002-Side2-Ch2.mp3",
+      "words": [3430, 3468],
+      "reason": "logistics",
+      "note": "Stopping because the crew is about to come in; a word on what the next class starts (the seven lower sefiros of bina)."
+    },
+    {
+      "lecture": "019 Tape003-Side1-Ch2.mp3",
+      "words": [0, 57],
+      "reason": "logistics",
+      "note": "Finding the place on the page."
+    },
+    {
+      "lecture": "019 Tape003-Side1-Ch2.mp3",
+      "words": [4151, 4165],
+      "reason": "logistics",
+      "note": "Flipping the tape."
+    },
+    {
+      "lecture": "020 Tape003-Side2-Ch2.mp3",
+      "words": [2374, 2393],
+      "reason": "logistics",
+      "note": "\"Now we can go back to the Q&As. Let me turn off the tape.\""
+    },
+    {
+      "lecture": "020 Tape003-Side2-Ch2.mp3",
+      "words": [2394, 3009],
+      "reason": "other",
+      "note": "After the tape was to be turned off, the side holds another recording: the end of a story about a rabbi who is asked a question on the page he learned that day, and a Talmudic discussion of buying a field with misappropriated money."
+    }
+  ],
+  "notes": [
+    {
+      "text": "The phrases follow his reading and rendering in class, replacing the published translation the demo port carried. Where he only reads (much of lines 22, 28-32), the English is a plain rendering in his words.",
+      "lines": [
+        "ucybbuqv",
+        "u7ixfupf",
+        "tpverqfr"
+      ]
+    },
+    {
+      "text": "The two Leviathans (018 9:13-10:48): the account of the male neutered and the female killed is from the Gemara (Bava Basra 74b); he does not cite it. His point about why tevuna 'was left' and bina is 'pretty much gone' is reported as he said it; the thread is loose in the recording and worth a listen.",
+      "lines": [
+        "e6rnhnmx"
+      ]
+    },
+    {
+      "text": "'Shasik Rav' (019 11:21-12:01): he uses it for Rav deciding without giving the explanation; in the Gemara the phrase usually means Rav had no answer. Left as he said it.",
+      "lines": [
+        "kpvuxwit"
+      ]
+    },
+    {
+      "text": "The class reads the end of line 33 as 'the main matter of hisbonenus' (020 0:07) where the text has 'of tevuna'; he says 'no, not tevuna, well, yeah, tevuna'. The phrase follows the printed text.",
+      "lines": [
+        "4a3kdl7g"
+      ]
+    },
+    {
+      "text": "020 opening: 'Like Dovid is doing' (1:54) is unclear (King David, or someone present?) and is left out of the block on getting fired up.",
+      "lines": [
+        "4a3kdl7g"
+      ]
+    },
+    {
+      "text": "The mem and vav exchange (020 5:17-7:25) has no speaker labels; who suggests the mem and who says 'I'm not really sure' about the vav is a guess. Check against the audio.",
+      "lines": [
+        "kt3ffmsq"
+      ]
+    },
+    {
+      "text": "Line 17's 'leans' (המטה) is heard in the transcript as 'makeh' (המכה, strikes) at 019 w630-656; taken as the printed 'mateh'.",
+      "lines": [
+        "z4uyw4pm"
+      ]
+    },
+    {
+      "text": "018 w3174-3207: the transcript has him say one can learn 'helem u'metziyus' or whatever in the Talmud; the words are probably misheard and are left out.",
+      "lines": [
+        "4wuqv36w"
+      ]
+    },
+    {
+      "text": "The opening of 019 (0:33-4:22) goes back over the definition of tevuna (its going up: chachma sheb'bina, navon) and is placed under line 16, the last line of 018, with outOfPlace.",
+      "lines": [
+        "rok4avng"
+      ]
+    },
+    {
+      "text": "Class 020 has Sofer's word times, not re-timed ones; the seconds may be off.",
+      "lines": [
+        "kga2nxgl"
+      ]
+    },
+    {
+      "text": "At the end of line 16 (018 w3392-3429) the class reads \"and also to bring the letters of thought, as explained elsewhere\" (וכן להביא אותיות המחשבה כמו שנתבאר במ\"א), not the printed \"and also to bring it into thought in several different ways\". The block's 'as explained elsewhere' and its 'letters of thought' follow his reading; the phrases follow the printed text.",
+      "lines": [
+        "rok4avng"
+      ]
+    },
+    {
+      "text": "020 w1544-1614 (the shevira as the hisbonenus that wants to reach chachma, 'which is above bina and below bina... how do you get to them? With daas') is garbled in the transcript; the digression's reading of it is tentative. The clear part is the shevira starting in SaG of SaG, the real eighth king of Tohu, not the new MaH.",
+      "lines": [
+        "5lrvb2he"
+      ]
+    }
+  ]
+}

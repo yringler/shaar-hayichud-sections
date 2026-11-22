@@ -1,5 +1,5 @@
 /**
- * yarn build-data — validate data/ and write data/dist/v1/.
+ * yarn build-data — validate data/ and write data/dist/v1/ (and dist/study-beta/).
  * Options: --out <dir> (default data/dist), --cdn-base <origin>.
  */
 import path from 'node:path';
@@ -24,8 +24,18 @@ if (result.errors.length > 0) {
   process.exit(1);
 }
 
+const warnings = result.warnings ?? [];
+const stale = warnings.filter((w) => w.includes(': (stale) '));
+for (const w of stale) console.warn(`warning: ${w}`);
+if (warnings.length > 0) {
+  console.warn(
+    `Study guides: ${stale.length} stale reference(s), ${warnings.length - stale.length} other warning(s); see yarn study-check.`,
+  );
+}
+
 const series = result.catalog?.series ?? [];
 const lectures = series.reduce((n, s) => n + s.lectureCount, 0);
 console.log(
   `Wrote ${result.outDir}: ${series.length} series, ${lectures} lectures, ${result.chapters?.length ?? 0} chapters.`,
 );
+console.log(`Wrote ${result.studyBetaDir}: ${result.studyBetaFiles ?? 0} study guide(s) for the beta.`);

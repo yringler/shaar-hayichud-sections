@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/study/study-chapter.schema.json",
+  "title": "Study guide for one chapter, from one class series (source file, not published)",
+  "description": "data/study/<series>/chapter_NN.json: a class series' teaching of one chapter, cut into passages (runs of chapter lines) and, under each, small blocks of prose that each point at the stretch of the recording they were written from. Lines are named by their stable line ids (data/chapters/), recordings by catalog lecture id plus a word range into the stored transcript (data/transcripts/<lecture>.json, result.timestamps) and the seconds of those words. The data build checks the schema and the references (tools/src/study.ts); see data/study/STYLE.md for how the text is written.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "series", "chapter", "title", "status", "lectures", "overview", "terms", "sections", "reviewQuestions"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "series": {
+      "description": "Study series id: the name of the directory under data/study/ (its series.json names the catalog series).",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "chapter": { "description": "Chapter file key, e.g. 'chapter_06'.", "type": "string", "pattern": "^chapter_\\d{2}$" },
+    "title": { "description": "English working title of the chapter.", "$ref": "#/$defs/line" },
+    "status": {
+      "description": "draft: written by a generator, not checked by a person. edited: a person has corrected it. reviewed: approved by the teacher or someone he named.",
+      "enum": ["draft", "edited", "reviewed"]
+    },
+    "provenance": {
+      "description": "How the file was made. Free of personal data and of generator names.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method"],
+      "properties": {
+        "method": { "enum": ["generated", "migrated", "hand"] },
+        "from": { "description": "What it was migrated or generated from (a repository and commit, a skill and its version).", "$ref": "#/$defs/line" },
+        "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "lectures": {
+      "description": "Every lecture the file cites, in class order, with the Sofer transcription its word indexes count into. A transcript that was re-transcribed since makes the file stale (an error).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "transcriptionId"],
+        "properties": {
+          "id": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+          "transcriptionId": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "overview": { "description": "What the chapter says, as the classes teach it. About 100 to 200 words.", "$ref": "#/$defs/prose" },
+    "overviewAudio": {
+      "description": "Where the classes introduce or sum up the chapter as a whole, if they do.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/audio" }
+    },
+    "terms": {
+      "description": "The chapter's key terms, glossed as the classes explain them. A term whose Hebrew is in data/study/translit.json must use that spelling; a term that is not there is defined here.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["term", "he", "gloss"],
+        "properties": {
+          "term": { "description": "Transliteration, as written in the prose.", "$ref": "#/$defs/line" },
+          "he": { "$ref": "#/$defs/line" },
+          "gloss": { "$ref": "#/$defs/line" },
+          "line": { "description": "The line where the term first matters in this chapter.", "$ref": "#/$defs/lineId" }
+        }
+      }
+    },
+    "sections": {
+      "description": "The chapter cut into concepts, in order. Their passages cover every line of the chapter exactly once, in document order.",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "reviewQuestions": {
+      "description": "Questions a student can answer from the file, each with the lines whose passage answers it.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question", "lines"],
+        "properties": {
+          "question": { "$ref": "#/$defs/prose" },
+          "lines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lineId" } }
+        }
+      }
+    },
+    "omitted": {
+      "description": "Stretches of the chapter's classes that no block was written from, each with the reason, so that nothing is dropped silently. The check warns about a long stretch that is neither cited nor listed here.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lecture", "words", "reason"],
+        "properties": {
+          "lecture": { "type": "string", "minLength": 1 },
+          "words": { "$ref": "#/$defs/wordRange" },
+          "reason": {
+            "description": "logistics: tape, phone, scheduling, who is on the call. reading: the text read or reread with no comment. repetition: said again with nothing added (the block that has it cites the better telling). unclear: garbled, or the writer could not tell what was meant. other-chapter: belongs to another chapter's file. other: say what in the note.",
+            "enum": ["logistics", "reading", "repetition", "unclear", "other-chapter", "other"]
+          },
+          "note": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "notes": {
+      "description": "For the reviewer: what the writer was unsure of, left out or decided.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "lines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lineId" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "lineId": { "description": "A chapter line id (data/chapters/).", "type": "string", "pattern": "^[a-z2-7]{8}$" },
+    "line": { "description": "One line of plain text.", "type": "string", "minLength": 1, "pattern": "^[^\\n]+$" },
+    "prose": {
+      "description": "Markdown, inline only: *italics* for transliterated terms and titles, **bold** only for words quoted from the passage's translation, and a blank line between paragraphs. No headings, lists, links, block quotes, HTML or line breaks inside a paragraph.",
+      "type": "string",
+      "minLength": 1
+    },
+    "wordRange": {
+      "description": "[first, last]: indexes (0-based, inclusive) into the lecture's transcript words (data/transcripts/<lecture>.json, result.timestamps). They survive re-timing, which keeps the words and changes only their times.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "integer", "minimum": 0 }
+    },
+    "audio": {
+      "description": "A stretch of one recording. `words` is the anchor; `start` and `end` are the seconds of those words in the audio the catalog plays, written by `yarn study-fill` (never by hand).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lecture", "words"],
+      "properties": {
+        "lecture": { "description": "Catalog lecture id, one of the file's `lectures`.", "type": "string", "minLength": 1 },
+        "words": { "$ref": "#/$defs/wordRange" },
+        "start": { "type": "number", "minimum": 0 },
+        "end": { "type": "number", "minimum": 0 }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary", "passages"],
+      "properties": {
+        "title": { "description": "A descriptive heading ('Girsa: understanding at first glance'), not 'Part 3'.", "$ref": "#/$defs/line" },
+        "summary": { "description": "The concept in one or two sentences ('In short').", "$ref": "#/$defs/prose" },
+        "passages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/passage" } }
+      }
+    },
+    "passage": {
+      "description": "One or more consecutive lines taught together: the Hebrew (by line id), its translation phrase by phrase, and the blocks that explain it.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lines", "blocks"],
+      "properties": {
+        "lines": { "description": "Consecutive line ids, in document order.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lineId" } },
+        "phrases": {
+          "description": "The passage's Hebrew cut into phrases, as the class reads it, each with the teacher's English where he gives one. The `he` of the phrases, joined by spaces, is exactly the text of the passage's lines joined by spaces, so the translation can never drift from the text unnoticed. Required when a class reads the passage; not allowed on a passage skipped as 'no-recording'.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["he"],
+            "properties": {
+              "he": { "$ref": "#/$defs/line" },
+              "en": { "description": "The teacher's own English for the phrase, as he gives it in the class `audio` points at. Inline Markdown (italics only). Left out where he reads the phrase without translating it. Without `audio` only in a series whose series.json names a `publishedTranslation` (then `en` is that translation, verbatim).", "$ref": "#/$defs/line" },
+              "audio": { "description": "Where in the class he gives this English: the stretch of his rendering of the phrase (not the reading of the Hebrew).", "$ref": "#/$defs/audio" },
+              "notes": { "description": "Translator's footnotes to the phrase.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/line" } }
+            }
+          }
+        },
+        "blocks": { "type": "array", "items": { "$ref": "#/$defs/block" } },
+        "skip": {
+          "description": "Why the passage has no blocks. no-recording: the series has no class on these lines. read-only: the class reads and translates them and says nothing more.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reason"],
+          "properties": {
+            "reason": { "enum": ["no-recording", "read-only"] },
+            "note": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "block": {
+      "description": "One thought of the class, a paragraph or two, written from the stretch of recording in `audio`. Blocks are the paragraphs the spoken class does not have: each one is a place to jump to.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "text", "audio"],
+      "properties": {
+        "kind": {
+          "description": "explanation: what the words of the passage mean. mashal: an analogy or example, with what it stands for. keyPoint: the point to take away. question: a question raised in class (by a student or by the teacher) and its answer. story: a story or recollection. avodah: what to do with this, in prayer, contemplation or conduct. aside: a remark off the line, humor or a sharp opinion included. digression: a longer excursion away from the text. recap: a later summary of the passage (often from the next class).",
+          "enum": ["explanation", "mashal", "keyPoint", "question", "story", "avodah", "aside", "digression", "recap"]
+        },
+        "title": { "description": "A short label to navigate by ('The schnorrers' recommendation'). Expected on mashal, story and digression blocks.", "$ref": "#/$defs/line" },
+        "question": { "description": "For kind 'question': the question itself; `text` is the answer.", "$ref": "#/$defs/prose" },
+        "askedBy": { "description": "For kind 'question': who raised it.", "enum": ["student", "teacher"] },
+        "text": { "$ref": "#/$defs/prose" },
+        "join": { "description": "Presentation hint: the block runs on in the previous block's paragraph.", "const": true },
+        "audio": {
+          "description": "Where it is said. The first entry is the main one (the play button); the rest are other tellings of the same thing.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/audio" }
+        },
+        "outOfPlace": { "description": "Why the main audio is far from where the class reads the passage's lines (a point made earlier or later and placed here). Silences the check's warning.", "type": "string", "minLength": 1 },
+        "sensitivity": { "$ref": "#/$defs/sensitivity" }
+      }
+    },
+    "sensitivity": {
+      "description": "Marks a block that should not be published as it stands. `text` is never softened: it stays as the teacher said it. A public build replaces the block's text with `publishable` (action 'replace') or leaves the block out (action 'omit').",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["categories", "reason", "action"],
+      "properties": {
+        "categories": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": ["women", "other-religions", "other-groups", "named-person", "politics", "crude", "health-or-legal", "private", "other"]
+          }
+        },
+        "reason": { "description": "What a public reader could object to or misread, in a sentence.", "type": "string", "minLength": 1 },
+        "action": { "enum": ["replace", "omit"] },
+        "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' (checked by the data build).", "$ref": "#/$defs/prose" },
+        "publishableTitle": { "$ref": "#/$defs/line" }
+      }
+    }
+  }
+}

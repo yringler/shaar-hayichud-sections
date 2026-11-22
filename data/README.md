@@ -12,11 +12,13 @@ Hayichud comes from this directory :
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
+| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). Not in `dist/v1`; an unlisted beta copy is written to `dist/study-beta/` | writers (people or agents), `yarn study-fill` |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
 | `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript, retimed words, audio edits) | hand |
+| `schema/study/` | JSON Schemas of the study guides (chapter file, series file, transliteration table); not published | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
 | `retime/` | Python forced-alignment re-timing tool and the back-channel remover (`backchannel`); never needed by the build or deploy ([README](retime/README.md)) | hand |
 | `dist/` | Generated output (git-ignored) | `yarn build-data` |
@@ -178,6 +180,9 @@ yarn set-durations  # ffprobe lectures with no :seconds and write the result int
 yarn transcribe     # Sofer.ai transcripts -> transcripts/ (needs SOFER_API_KEY; see below)
 yarn outline        # Sofer.ai topic outlines -> outlines/ (needs SOFER_API_KEY)
 yarn align          # transcripts + chapters -> alignments/ (offline)
+yarn study-dump     # what a study guide writer needs, as text (see Study guides)
+yarn study-fill     # study guides: phrases' Hebrew, seconds from word ranges, formatting
+yarn study-check    # study guides: strict check (schema, lines, audio, spellings)
 ```
 
 ## Transcripts and alignments
@@ -585,3 +590,180 @@ G-d's, G-dly and G-dliness. A bare lower-case "god" ("their god is science")
 is left alone. The stored Sofer files in `transcripts/` and `outlines/` keep
 Sofer's spelling.
 
+## Study guides (`data/study/`)
+
+A study guide turns a class series' recordings of a chapter into something
+that can be read and navigated: the chapter's lines, the teacher's translation
+of them phrase by phrase, and under them small blocks of prose (an explanation, a *mashal*,
+a story, a question and its answer, a practical point, an aside), each
+pointing at the stretch of recording it was written from. It began as a
+separate demo (`yringler/shaarhayichudstudydemo`); here it is data, written
+by people or by agents (`.claude/skills/study-chapter/`), checked by the data
+build, and **not published** in the API: nothing under `study/` reaches
+`dist/v1/` (or the Dart snapshot). The only copy that leaves the repo is the
+unlisted, unversioned [beta export](#the-study-beta-export) for the lessons2
+closed beta.
+
+```
+study/
+  STYLE.md                  how the files are written (voice, kinds of block, sensitivity)
+  translit.json             one spelling per Hebrew term (shared; chapter writers do not edit it)
+  <series>/
+    series.json             the catalog series the files are written from
+    NOTES.md                what a writer needs to know about this series
+    chapter_NN.json         one chapter (schema/study/study-chapter.schema.json)
+```
+
+A chapter file, in outline:
+
+```json
+{
+  "schemaVersion": 1, "series": "markel-advanced", "chapter": "chapter_09",
+  "title": "…", "status": "draft", "provenance": { "method": "generated", "from": "…", "date": "…" },
+  "lectures": [{ "id": "058 Tape014-Side2-Ch9.mp3", "transcriptionId": "6ee9ccc6-…" }],
+  "overview": "…", "terms": [{ "term": "tzimtzum", "he": "צמצום", "gloss": "…", "line": "jgxhg273" }],
+  "sections": [{
+    "title": "The answer is tzimtzum: a light, not cause and effect", "summary": "…",
+    "passages": [{
+      "lines": ["jgxhg273", "fqrwiien", "la52lxbp"],
+      "phrases": [
+        { "he": "והתירוץ לכל זה הוא ענין הצמצום", "en": "The explanation is the matter of the *tzimtzum*",
+          "audio": { "lecture": "058 Tape014-Side2-Ch9.mp3", "words": [467, 473], "start": 220.12, "end": 222.88 } },
+        { "he": "כידוע" }
+      ],
+      "blocks": [{
+        "kind": "mashal", "title": "The film in the projector", "text": "…",
+        "audio": [{ "lecture": "058 Tape014-Side2-Ch9.mp3", "words": [584, 747], "start": 268.8, "end": 338.32 }],
+        "sensitivity": { "categories": ["women"], "reason": "…", "action": "replace", "publishable": "…" }
+      }]
+    }]
+  }],
+  "reviewQuestions": [{ "question": "…", "lines": ["fqrwiien"] }],
+  "omitted": [{ "lecture": "…", "words": [3875, 3917], "reason": "logistics" }],
+  "notes": [{ "text": "…", "lines": ["efwibyo2"] }]
+}
+```
+
+What each part is anchored to:
+
+- **Text**: passages name chapter **line IDs**. Together they cover every
+  line of the chapter once, in order. A passage's `phrases` spell out its
+  lines' Hebrew exactly (joined by spaces), so a translation cannot outlive
+  an edit of the text unnoticed.
+- **Translation**: a phrase's `en` is only the teacher's own English from
+  the class, and its `audio` (one entry, the same shape as a block's) points
+  at where he says it. A phrase he reads without translating has `he` alone;
+  a passage no class reads (`skip: no-recording`) has no phrases. English
+  without `audio` is allowed only in a series whose `series.json` names a
+  `publishedTranslation`; none does.
+- **Audio**: a block's `audio` names a catalog **lecture ID** and a **word
+  range** `[first, last]` into that lecture's stored transcript
+  (`transcripts/<lecture>.json`, `result.timestamps`). Word indexes are the
+  anchor because they survive re-timing (`retimed/` keeps the words and
+  changes their times). `start`/`end` are the seconds of those words in the
+  audio the catalog plays, written by `yarn study-fill`, never by hand. The
+  file's `lectures` records each transcript's `transcriptionId`; a tape that
+  is transcribed again (`yarn transcribe --resubmit`) makes the file an
+  error until its ranges are redone.
+- **Kinds of block**: `explanation`, `mashal`, `keyPoint`, `question`,
+  `story`, `avodah`, `aside`, `digression`, `recap`. The first `audio` entry
+  is the block's own; further entries are other tellings of the same thing.
+- **Prose** is Markdown, inline only: `*italics*` (transliterated terms),
+  `**bold**` (only words quoted from the passage's translation) and blank
+  lines between paragraphs.
+- **Sensitivity**: the files keep the class as it was said. A block that
+  should not be published as it stands carries `sensitivity` (categories, a
+  reason, and `action`: `replace` with a `publishable` text, or `omit`).
+  `publicView()` in `tools/src/study.ts` applies it; nothing uses it yet.
+- **Nothing dropped silently**: a stretch of a chapter's class that no block
+  cites is listed in `omitted` with a reason, or the check warns about it.
+
+### Checks
+
+`yarn build-data` checks every study file (`tools/src/study.ts`), in three
+levels:
+
+| Level | Examples | `yarn build-data` | `yarn study-check` |
+|-------|----------|-------------------|--------------------|
+| error | invalid JSON or schema; unknown lecture, or one outside the series; a word range past the transcript's end; a transcript re-made since; Markdown that is not allowed; "God" spelled out; a term spelled against `translit.json`; `replace` with no `publishable`; a phrase's `en` with no `audio` (or `audio` with no `en`); phrases on a `no-recording` passage | fails | fails |
+| stale | a line ID that is no longer in the chapter; lines not covered once and in order; phrases that are not the lines' text; `start`/`end` that are not the word range's times | warns | fails |
+| warning | a block far (120 s) from where the class reads its passage, without `outOfPlace`; a phrase's `audio` more than 120 s outside its class's part on the chapter; 250 or more uncited words of class; a class of the chapter the file never cites; bold that does not quote the translation; a `mashal`, `story` or `digression` with no title; a block over 260 words; Hebrew script in prose; a term spelled two ways across chapters | counts | prints |
+
+Stale references only warn in the build so that editing a chapter in the
+section tool, or re-timing a tape, never blocks a deploy. After such a
+change run `yarn study-fill` (it re-stamps seconds) and `yarn study-check`,
+and mend the passages whose lines changed.
+
+```bash
+cd data/tools
+yarn study-dump --series markel-advanced --chapter 9              # everything a writer needs
+yarn study-dump --series markel-advanced --chapter 6 --lecture 064  # one class of a long chapter
+yarn study-dump --series markel-advanced --chapter 6 --no-transcripts
+yarn study-dump --series markel-advanced --chapter 9 --lecture 058 --words 584-620  # each word with its index
+yarn study-fill --series markel-advanced --chapter 9              # after writing or editing
+yarn study-check --series markel-advanced --chapter 9             # strict; also prints coverage
+yarn study-check --quiet                                          # all files, no warnings
+```
+
+`yarn study-dump` prints the chapter's lines with their IDs and where each
+is read, the series' classes on the chapter (the ones the catalog or
+`alignment-chapters.json` ties to it, plus `chapterLectures` in
+`series.json`), the spellings from `translit.json` that occur, and each
+class's transcript in sentences, `[w<first>-<last> <time>]`, with a
+`=== LINE` mark where the alignment says a line is read. `--words` prints
+one stretch of one class word by word with indexes, for citing part of a
+sentence (a phrase's English).
+
+The tests (`tools/src/study.test.ts`) run against a miniature data
+directory, `tools/fixtures/study/` (catalog, chapter, transcript, alignment
+and a study file that passes every check).
+
+`yarn study-fill` also expands the writers' shorthand for phrases:
+`{ "to": "<last Hebrew word of the phrase>", "en": "…", "audio": … }` becomes
+`{ "he": "…", "en": "…", "audio": … }` with the Hebrew copied from the
+chapter, and stamps phrase `audio` seconds as it does blocks'.
+
+### The study-beta export
+
+`yarn build-data` also writes `dist/study-beta/` (`tools/src/study-export.ts`),
+which the site publishes at `/data/study-beta/` with `X-Robots-Tag: noindex`.
+It is deliberately not disallowed in a `robots.txt`: a crawler that obeys a
+Disallow never fetches the files, so it never sees their `noindex`, and a
+disallowed URL linked from elsewhere can still be indexed by its URL alone. It is for the lessons2 closed beta only: not part
+of `v1`, not in `dist/v1/index.json`, never in the snapshot package, and its
+shape may change (`schemaVersion` is bumped when it breaks). Only files with
+no error are exported; a stale file is exported with `"stale": true`.
+
+- `index.json`: `{ schemaVersion: 1, generated, series: [{ id, catalogSeriesId,
+  teacher, title, chapters: { chapter_09: { file, status, stale?, lectures:
+  [{ id, start, end, continuesIn? }] } } }] }`. A lecture's `start`/`end` are
+  its part of the chapter in seconds (`chapterWordRange`, timed with the
+  words the site plays; without an alignment, the span of the guide's own
+  audio). `continuesIn` is the chapter the class reads on into, from its
+  alignment.
+- `<series>/<chapter>.json`: `schemaVersion`, `series`, `chapter`, `title`,
+  `status`, `stale?`, `provenance: { method }`, `overview`, `overviewAudio?`
+  (where the class sums the chapter up, `{ lecture, start, end }[]`) and `sections` →
+  `passages` (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains
+  `lines`: the line IDs whose text it overlaps, by character offsets into the
+  passage's lines joined by spaces; `en` is present only where the teacher
+  translates the phrase, and then its `audio` becomes `lecture`, `start` and
+  `end` on the phrase. Block `audio` is `{ lecture, start, end }`;
+  `sensitivity`, `outOfPlace` and phrase `notes` are kept. Word ranges,
+  `lectures`/`transcriptionId`, provenance details, `terms`,
+  `reviewQuestions`, `omitted` and `notes` are dropped. Fields are copied
+  from a whitelist, so a new writer-side field does not leak.
+
+Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
+trimming, stale and erroring files).
+
+### State (November 2026)
+
+Two series. `markel-advanced` (catalog series 37) has chapters 1–19, each
+written from the classes, reviewed against the transcripts and then
+migrated to class-only phrase translations (each `en` anchored with
+`audio`; phrases he only reads are Hebrew-only). `walters-original`
+(catalog series 0) has chapter 10, a sample. Nobody has yet listened to
+the audio against the blocks, and tapes with only Sofer's word times may
+start a second or two off.
+A new series needs a directory with `series.json` and `NOTES.md`.

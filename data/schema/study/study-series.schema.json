@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/study/study-series.schema.json",
+  "title": "A class series that has study guide files (source file, not published)",
+  "description": "data/study/<series>/series.json: which catalog series the directory's chapter files are written from.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "catalogSeriesId", "teacher", "title", "translation"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": { "description": "The directory name.", "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "catalogSeriesId": { "description": "The ':N' id of the series' '#' heading in classes.txt.", "type": "string", "pattern": "^\\d+$" },
+    "teacher": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "translation": { "description": "Where the English of the passages' phrases comes from, in a sentence.", "type": "string", "minLength": 1 },
+    "publishedTranslation": {
+      "description": "A published translation the phrases' English is taken from, verbatim. Only with it may a phrase have `en` without the class `audio` it was said in. No series uses it today: phrases carry the teacher's own rendering from the class.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "source", "license"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "source": { "description": "Where it is published (a URL, or a book and edition).", "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 }
+      }
+    },
+    "chapterLectures": {
+      "description": "Lectures that discuss a chapter but that neither the catalog nor an alignment ties to it (a series introduction, say). Chapter key -> lecture ids. `yarn study-dump` adds them to the chapter's classes.",
+      "type": "object",
+      "propertyNames": { "pattern": "^chapter_\\d{2}$" },
+      "additionalProperties": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+    }
+  }
+}

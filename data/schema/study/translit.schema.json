@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/schema/study/translit.schema.json",
+  "title": "Transliteration table of the study guides (source file, not published)",
+  "description": "data/study/translit.json: one spelling for each Hebrew term written in English prose. Several Hebrew spellings may share a term; one Hebrew spelling has one term.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "terms"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["he", "term"],
+        "properties": {
+          "he": { "type": "string", "minLength": 1 },
+          "term": { "type": "string", "minLength": 1 },
+          "gloss": { "description": "A plain or literal meaning, not an explanation.", "type": "string", "minLength": 1 },
+          "group": { "description": "Heading the term is listed under, for people.", "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

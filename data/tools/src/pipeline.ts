@@ -1,7 +1,7 @@
 /**
  * The whole data build: classes.txt + chapters/ -> dist/v1/.
  */
-import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildCatalog, catalogLectures, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
@@ -9,6 +9,8 @@ import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
+import { exportStudyBeta, type StudyBetaExport } from './study-export.js';
+import { checkStudy, loadStudyContext } from './study.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
 /** data/ (this file compiles to data/tools/build/pipeline.js). */
@@ -60,9 +62,14 @@ export function loadCatalog(paths: DataPaths, schemas: SchemaSet, cdnBase = DEFA
 
 export interface BuildResult {
   errors: string[];
+  /** Problems that do not stop the build (stale or doubtful study guide references). */
+  warnings?: string[];
   catalog?: Catalog;
   chapters?: ChapterFile[];
   outDir?: string;
+  /** dist/study-beta/ and how many guides it holds. */
+  studyBetaDir?: string;
+  studyBetaFiles?: number;
 }
 
 const writeJson = (file: string, data: unknown) => {
@@ -87,6 +94,24 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     // line ids); the ones audio-publish.json selects are published below.
     const lectureIds = new Set([...catalog.series.flatMap((s) => [...catalogLectures(s.items)])].map((l) => l.id));
     errors.push(...validateSources(paths.sources, schemas, lectureIds, lines.index));
+  }
+  // Study guides (data/study/) are checked, not published. Only an error in
+  // a file itself fails the build: a reference gone stale because a chapter
+  // was edited or a tape re-timed is a warning here (`yarn study-check` is
+  // the strict check), so that editing a chapter never blocks a deploy.
+  const warnings: string[] = [];
+  let studyBeta: StudyBetaExport | null = null;
+  if (errors.length === 0) {
+    const dataDir = paths.sources.dataDir;
+    const studyCtx = existsSync(path.join(dataDir, 'study')) ? loadStudyContext(dataDir) : undefined;
+    const study = checkStudy(dataDir, studyCtx);
+    for (const i of study.issues) {
+      if (i.level === 'error') errors.push(`${i.file}: ${i.message}`);
+      else warnings.push(`${i.file}: (${i.level}) ${i.message}`);
+    }
+    // The lessons2 beta's copy (dist/study-beta/, not under v1): files with
+    // no error, stale ones included.
+    if (studyCtx) studyBeta = exportStudyBeta(dataDir, studyCtx, study.issues);
   }
   if (errors.length > 0) return { errors };
   const audio = publishAudio({
@@ -136,5 +161,13 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     ],
   });
 
-  return { errors: [], catalog, chapters: loaded.chapters, outDir };
+  // Study guides for the lessons2 closed beta, published unlisted at
+  // /data/study-beta/ (see study-export.ts). Always written, so the site's
+  // mount exists even with no guides.
+  const studyDir = path.join(paths.distDir, 'study-beta');
+  rmSync(studyDir, { recursive: true, force: true });
+  for (const [rel, data] of studyBeta?.files ?? []) writeJson(path.join(studyDir, ...rel.split('/')), data);
+  writeJson(path.join(studyDir, 'index.json'), studyBeta?.index ?? { schemaVersion: 1, generated: new Date().toISOString(), series: [] });
+
+  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir, studyBetaDir: studyDir, studyBetaFiles: studyBeta?.files.size ?? 0 };
 }
