@@ -15,8 +15,8 @@ without replacing the recording:
 
 - the chapter's own lines stay the spine: every line is in a passage, in
   order;
-- under each passage, the translation phrase by phrase, then **blocks**: one
-  thought each, a paragraph or two, in readable prose;
+- under each passage, the teacher's translation phrase by phrase, then
+  **blocks**: one thought each, a paragraph or two, in readable prose;
 - every block points at the stretch of the recording it was written from, so
   a reader can hear the teacher say it. The block is the paragraph the
   recording lacks, and the place to jump to;
@@ -45,7 +45,7 @@ chapter
   title, overview (100–200 words), terms (6–12)
   sections (4–9)                    a concept, with a descriptive title and a summary
     passages (1–8 per section)      consecutive lines taught together (usually 1–4)
-      phrases                       the lines' Hebrew, phrase by phrase, with English
+      phrases                       the lines' Hebrew, phrase by phrase, with his English
       blocks                        what the class says about them, in class order
   reviewQuestions (4–6)
   omitted                           stretches of class no block uses, with the reason
@@ -59,29 +59,44 @@ chapter
   sentences.
 - **Passages** cover every line of the chapter exactly once, in order. Start
   a new passage where the teacher stops reading and starts explaining.
-- A passage the series never reads has `"blocks": []` and
-  `"skip": { "reason": "no-recording" }` (phrases optional). One the class
+- A passage the series never reads has `"blocks": []`,
+  `"skip": { "reason": "no-recording" }` and no `phrases`. One the class
   reads and translates without comment has phrases and
   `"skip": { "reason": "read-only" }`; better, join it to its neighbour.
 
 ## Phrases
 
 The passage's Hebrew cut where the teacher stops to translate, usually 2 to
-10 words a phrase, each with its English.
+10 words a phrase.
+
+**The English is only his, from this class.** A phrase's `en` is the
+teacher's own rendering, as he gives it when he reads the phrase, and its
+`audio` points at where he says it. Nothing else goes in `en`: no rendering
+of your own, however plain, and no published translation.
 
 - `he` must be the lines' text exactly. Do not type it: write
-  `{ "to": "<the phrase's last word>", "en": "…" }` and let `yarn study-fill`
-  copy the Hebrew from the chapter (the last phrase of a passage needs no
-  `to`). `to` is matched from where the previous phrase ended, ignoring
-  punctuation around the word.
-- `en` follows the teacher's own rendering when he gives one; where he only
-  reads, give a plain, literal rendering in the words he uses elsewhere. Keep
-  a term he leaves in Hebrew as an italic transliteration with the meaning
-  after it at first use: `the *tzimtzum* (contraction)`. Words added for
-  English sense go in square brackets. Italics only, no bold.
-- A series whose translation comes from a published one says so in
-  `series.json` or the file's `provenance`; then `en` is that translation,
-  verbatim, and its footnotes go in `notes`.
+  `{ "to": "<the phrase's last word>", "en": "…", "audio": … }` and let
+  `yarn study-fill` copy the Hebrew from the chapter (the last phrase of a
+  passage needs no `to`). `to` is matched from where the previous phrase
+  ended, ignoring punctuation around the word.
+- `audio` is `{ "lecture": "<lecture id>", "words": [first, last] }`: the
+  stretch where he gives the English of that phrase, usually just after he
+  reads it, not the reading of the Hebrew. Sentence ranges are too coarse:
+  `yarn study-dump … --lecture <number> --words <first>-<last>` prints each
+  word of a stretch with its index. A phrase he translates twice cites the
+  telling its `en` follows.
+- `en` is his English tidied as a block is (false starts and "you know"
+  dropped), not reworded. Keep a term he leaves in Hebrew as an italic
+  transliteration, with his gloss after it if he gives one:
+  `the *tzimtzum* (contraction)`. Add no words of your own. Italics only,
+  no bold.
+- **A phrase he reads but does not translate** keeps its `he` and has no
+  `en` and no `audio`: `{ "to": "<last word>" }`. Cut it where his
+  translated phrases end, so his English is never stretched over words he did
+  not translate.
+- A passage no class reads has no phrases at all.
+- Only a series whose `series.json` names a `publishedTranslation` may have
+  `en` without `audio`; none does.
 
 ## Blocks
 

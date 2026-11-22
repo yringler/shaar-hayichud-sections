@@ -162,16 +162,17 @@
       "properties": {
         "lines": { "description": "Consecutive line ids, in document order.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lineId" } },
         "phrases": {
-          "description": "The passage's Hebrew cut into phrases, each with its English. The `he` of the phrases, joined by spaces, is exactly the text of the passage's lines joined by spaces, so the translation can never drift from the text unnoticed. Required unless the passage is skipped as 'no-recording'.",
+          "description": "The passage's Hebrew cut into phrases, as the class reads it, each with the teacher's English where he gives one. The `he` of the phrases, joined by spaces, is exactly the text of the passage's lines joined by spaces, so the translation can never drift from the text unnoticed. Required when a class reads the passage; not allowed on a passage skipped as 'no-recording'.",
           "type": "array",
           "minItems": 1,
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["he", "en"],
+            "required": ["he"],
             "properties": {
               "he": { "$ref": "#/$defs/line" },
-              "en": { "description": "Inline Markdown (italics only).", "$ref": "#/$defs/line" },
+              "en": { "description": "The teacher's own English for the phrase, as he gives it in the class `audio` points at. Inline Markdown (italics only). Left out where he reads the phrase without translating it. Without `audio` only in a series whose series.json names a `publishedTranslation` (then `en` is that translation, verbatim).", "$ref": "#/$defs/line" },
+              "audio": { "description": "Where in the class he gives this English: the stretch of his rendering of the phrase (not the reading of the Hebrew).", "$ref": "#/$defs/audio" },
               "notes": { "description": "Translator's footnotes to the phrase.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/line" } }
             }
           }

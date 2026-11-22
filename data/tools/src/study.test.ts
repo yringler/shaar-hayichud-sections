@@ -20,7 +20,7 @@ import {
   stampTimes,
   type StudyChapterFile,
 } from './study.js';
-import { dumpChapter, foldBackchannel, sentences } from './study-dump.js';
+import { dumpChapter, dumpWords, foldBackchannel, sentences } from './study-dump.js';
 import type { StoredAlignment } from './transcripts.js';
 
 /** A complete miniature data/ directory: data/tools/fixtures/study/. */
@@ -82,6 +82,47 @@ describe('checkStudyChapter: lines and phrases', () => {
     has(check((f) => delete f.sections[0]!.passages[0]!.phrases), /^error: .*has no "phrases"/);
     has(check((f) => (f.sections[0]!.passages[0]!.skip = { reason: 'read-only' })), /^error: .*has both "skip" and blocks/);
   });
+
+  it('wants no phrases on a passage no class reads', () => {
+    has(check((f) => (f.sections[0]!.passages[2]!.phrases = [{ he: 'וזה אינו אלא כך' }])), /^error: \/sections\/0\/passages\/2 is skipped as no-recording but has "phrases"/);
+    // An error of the new rule: it fails study-check, and the build only warns until the guides are migrated.
+    const file = structuredClone(gold);
+    file.sections[0]!.passages[2]!.phrases = [{ he: 'וזה אינו אלא כך' }];
+    assert.deepEqual(checkStudyChapter(REL, file, series, loaded.translit, ctx).issues.map((i) => [i.level, i.transitional]), [['error', true]]);
+  });
+});
+
+describe('checkStudyChapter: the translation is the class\'s', () => {
+  const phrase = (f: StudyChapterFile) => f.sections[0]!.passages[1]!.phrases![0]!;
+
+  it('keeps a phrase he does not translate as Hebrew only', () => {
+    // (Only the bold that quoted its English now warns.)
+    assert.deepEqual(check((f) => { delete phrase(f).en; delete phrase(f).audio; }).filter((i) => !i.startsWith('warning')), []);
+    has(check((f) => delete phrase(f).en), /^error: .*phrases\/0 has "audio" but no "en"/);
+  });
+
+  it('rejects English with no anchor in the class, unless the series names a published translation', () => {
+    has(check((f) => delete phrase(f).audio), /^error: \/sections\/0\/passages\/1\/phrases\/0 has "en" but no "audio"/);
+    const file = structuredClone(gold);
+    delete phrase(file).audio;
+    const published = { ...series, publishedTranslation: { title: 'A Translation', source: 'A book', license: 'CC-BY' } };
+    assert.deepEqual(checkStudyChapter(REL, file, published, loaded.translit, ctx).issues, []);
+  });
+
+  it('checks the anchor like block audio: listed lecture, word range, times', () => {
+    has(check((f) => (phrase(f).audio!.lecture = 'nope.mp3')), /^error: .*phrases\/0\/audio lecture "nope.mp3" is not in the file's "lectures"/);
+    has(check((f) => (phrase(f).audio!.words = [30, 41])), /^error: .*phrases\/0\/audio words \[30, 41\]: the transcript has 41 words/);
+    has(check((f) => (phrase(f).audio!.start = 3)), /^stale: .*phrases\/0\/audio start\/end 3–26.8 are not the times of words \[25, 26\]/);
+  });
+
+  it('warns when the anchor is outside the class\'s part on this chapter', () => {
+    // Make the class's part on chapter_01 word 0 alone: chapter_02 starts at word 1.
+    const far = structuredClone(ctx.alignment('t1.mp3')!);
+    far.segments = [...far.segments.map((s) => ({ ...s, firstWord: 0 })), { ...far.segments[0]!, chapter: 'chapter_02', firstWord: 1 }];
+    const moved = { ...ctx, alignment: (id: string) => (id === 't1.mp3' ? far : ctx.alignment(id)) };
+    const issues = checkStudyChapter(REL, gold, series, loaded.translit, moved, { slackSeconds: 5 }).issues.map((i) => `${i.level}: ${i.message}`);
+    has(issues, /^warning: .*phrases\/0\/audio words \[25, 26\] \(0:25\) lie outside class "t1.mp3"'s part on chapter_01 \(words \[0, 0\]/);
+  });
 });
 
 describe('checkStudyChapter: lectures and audio', () => {
@@ -106,7 +147,8 @@ describe('checkStudyChapter: lectures and audio', () => {
     const file = structuredClone(gold);
     audio(file).start = 3;
     delete file.sections[0]!.passages[0]!.blocks[1]!.audio[0]!.end;
-    assert.deepEqual(stampTimes(file, ctx), { changed: 2, errors: [] });
+    delete file.sections[0]!.passages[1]!.phrases![1]!.audio!.start;
+    assert.deepEqual(stampTimes(file, ctx), { changed: 3, errors: [] });
     assert.deepEqual(file, gold);
     assert.deepEqual(stampTimes(file, ctx), { changed: 0, errors: [] });
   });
@@ -114,8 +156,10 @@ describe('checkStudyChapter: lectures and audio', () => {
   it('expandPhrases fills the Hebrew of phrases written with "to"', () => {
     const file = structuredClone(gold);
     const passage = file.sections[0]!.passages[1]!;
-    passage.phrases = [{ to: 'שצריך', en: 'since one must' }, { en: 'first prepare' }] as never;
-    assert.deepEqual(expandPhrases(file, ctx), { changed: 2, errors: [] });
+    const [one, two] = gold.sections[0]!.passages[1]!.phrases!;
+    passage.phrases = [{ to: 'שצריך', en: one!.en, audio: one!.audio }, { en: two!.en, audio: two!.audio }] as never;
+    file.sections[0]!.passages[0]!.phrases = [{ to: 'והנה' }, structuredClone(gold.sections[0]!.passages[0]!.phrases![1]!)] as never;
+    assert.deepEqual(expandPhrases(file, ctx), { changed: 3, errors: [] });
     assert.deepEqual(file, gold);
     passage.phrases = [{ to: 'איננו', en: 'x' }, { en: 'y' }] as never;
     assert.match(expandPhrases(file, ctx).errors[0]!, /"to": "איננו" is not a word of the passage/);
@@ -124,7 +168,7 @@ describe('checkStudyChapter: lectures and audio', () => {
   it('warns when a block is far from where the class reads its passage', () => {
     const far = (f: StudyChapterFile) => {
       const block = f.sections[0]!.passages[0]!.blocks.pop()!;
-      f.sections[0]!.passages[2] = { lines: ['ccccccc2'], phrases: [{ he: 'וזה אינו אלא כך', en: 'and this is only so' }], blocks: [block] };
+      f.sections[0]!.passages[2] = { lines: ['ccccccc2'], phrases: [{ he: 'וזה אינו אלא כך' }], blocks: [block] };
     };
     has(check(far), /^warning: .*class "t1.mp3" does not read this passage's lines; .*"outOfPlace"/);
     assert.deepEqual(check((f) => { far(f); f.sections[0]!.passages[2]!.blocks[0]!.outOfPlace = 'The example is given earlier.'; }), []);
@@ -168,7 +212,7 @@ describe('checkStudyChapter: prose, terms and sensitivity', () => {
     has(check((f) => (flagged(f).sensitivity!.action = 'omit')), /^error: .*action "omit" and a publishable text/);
 
     const pub = publicView(gold);
-    assert.equal(flagged(pub).text, '**one must first prepare** the soul. That is the whole work.');
+    assert.equal(flagged(pub).text, '**one must prepare the soul first**. That is the whole work.');
     assert.equal(flagged(pub).sensitivity, undefined);
     assert.equal(pub.notes, undefined);
     assert.equal(pub.omitted, undefined);
@@ -245,9 +289,16 @@ describe('dumpChapter', () => {
   });
 });
 
+describe('dumpWords', () => {
+  it('prints each word with its index, a line per sentence', () => {
+    assert.equal(dumpWords(ctx, 't1.mp3', 24, 31), '# "t1.mp3" words [24, 31]\n[0:24] 24:הכנה, 25:one 26:must 27:prepare 28:the 29:soul 30:first.\n[0:31] 31:That\n');
+  });
+});
+
 describe('data/study', () => {
   it('has no errors and no stale references', () => {
-    const bad = checkStudy(DATA_DIR).issues.filter((i) => i.level !== 'warning');
+    // Transitional errors are the guides not yet migrated to the class-only translation rule.
+    const bad = checkStudy(DATA_DIR).issues.filter((i) => i.level !== 'warning' && !i.transitional);
     assert.deepEqual(bad, []);
   });
 });

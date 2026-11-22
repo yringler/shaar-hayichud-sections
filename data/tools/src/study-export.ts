@@ -8,7 +8,8 @@
  *                              each class's part of the chapter in seconds
  *   <series>/<chapter>.json    one guide: no word ranges, transcription ids,
  *                              terms, review questions, omissions or notes;
- *                              each phrase gets the line ids it overlaps
+ *                              each phrase gets the line ids it overlaps,
+ *                              and its audio is flattened to lecture/start/end
  *
  * Only a file with no error is exported. A stale file (a chapter line edited
  * or a tape re-timed since it was written) is exported and marked `stale`.
@@ -71,7 +72,19 @@ export interface StudyBetaAudio {
 }
 
 export type StudyBetaBlock = Omit<StudyBlock, 'audio'> & { audio: StudyBetaAudio[] };
-export type StudyBetaPhrase = StudyPhrase & { lines: string[] };
+/**
+ * A phrase as the app reads it: `en` only where the teacher translates it,
+ * and then (from the phrase's `audio`) the lecture and seconds where he does.
+ */
+export interface StudyBetaPhrase {
+  he: string;
+  en?: string;
+  lecture?: string;
+  start?: number;
+  end?: number;
+  notes?: string[];
+  lines: string[];
+}
 export interface StudyBetaPassage {
   lines: string[];
   phrases?: StudyBetaPhrase[];
@@ -201,7 +214,8 @@ export function studyBetaChapter(file: StudyChapterFile, lines: readonly Line[],
             ? {
                 phrases: p.phrases.map((f, i) => ({
                   he: f.he,
-                  en: f.en,
+                  ...(f.en !== undefined ? { en: f.en } : {}),
+                  ...(f.audio ? trimAudio(f.audio) : {}),
                   ...(f.notes !== undefined ? { notes: [...f.notes] } : {}),
                   lines: mapped[i]!,
                 })),

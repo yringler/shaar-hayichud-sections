@@ -5,7 +5,7 @@ description: Write or revise one chapter's study guide file (data/study/<series>
 
 # Write one chapter's study guide
 
-Skill version 2. You produce exactly one file:
+Skill version 3. You produce exactly one file:
 `data/study/<series>/chapter_NN.json`. You are given a series id (a
 directory under `data/study/`, e.g. `markel-advanced`) and a chapter number.
 
@@ -21,7 +21,9 @@ term, define it in your file's `terms`). Do not commit unless told to.
 2. `data/study/<series>/NOTES.md`: what holds for this series.
 3. `data/study/markel-advanced/chapter_09.json`: the model file. Look at how
    its passages, phrases and blocks are cut, how long blocks are, how asides
-   and questions are kept, and at its one `sensitivity` flag.
+   and questions are kept, and at its one `sensitivity` flag. Its phrases
+   may predate the rule that their English is anchored to the class: for
+   phrases, follow STYLE.md, not the model.
 4. The dump (run in `data/tools`; `corepack yarn` if plain `yarn` is 1.x;
    `yarn install` once if `node_modules` is missing):
 
@@ -43,7 +45,9 @@ term, define it in your file's `terms`). Do not commit unless told to.
 If the file already exists (a ported or earlier draft), you are revising it:
 read it too, keep what is right, and bring it up to STYLE.md (phrases cut as
 taught in class, every stretch of class accounted for, titles, flags). Set
-`provenance` to `generated`.
+`provenance` to `generated`. An older file's English that is not anchored to
+the class (a published translation, or a rendering the writer made up) is
+not kept: each phrase gets his English with its `audio`, or none.
 
 ## 2. Plan
 
@@ -76,11 +80,19 @@ Things that go wrong here:
 Write the file (see the schema, `data/schema/study/study-chapter.schema.json`,
 and the model). Mechanics that save mistakes:
 
-- **Phrases**: never type Hebrew. Write `{ "to": "<last word>", "en": "…" }`;
-  the last phrase of a passage is just `{ "en": "…" }`. `to` matches the
-  first occurrence of that word after the previous phrase's end, so when
-  the word repeats inside the phrase (a second `כו'`, a second `מלא`), end
-  the phrase at the earlier one or pick a different cut.
+- **Phrases**: never type Hebrew. Write
+  `{ "to": "<last word>", "en": "…", "audio": { "lecture": "…", "words": [first, last] } }`;
+  the last phrase of a passage leaves out `to`. `to` matches the first
+  occurrence of that word after the previous phrase's end, so when the word
+  repeats inside the phrase (a second `כו'`, a second `מלא`), end the phrase
+  at the earlier one or pick a different cut.
+- **Only his English.** `en` is what he says the phrase means, where he
+  says it; `audio` is that stretch (his English, not his reading of the
+  Hebrew). Find it in the dump after the `=== LINE` mark, then get exact
+  word indexes with `study-dump … --lecture <number> --words <first>-<last>`.
+  A phrase he reads without translating is `{ "to": "<last word>" }`
+  (Hebrew only). Never write English he did not say, and never take it from
+  Sefaria or another translation. A `no-recording` passage has no phrases.
 - **Audio**: `{ "lecture": "<full lecture id>", "words": [first, last] }`,
   from the `[w<first>-<last>]` of the dump. No `start`/`end`.
 - `lectures`: every lecture you cite, with the `transcriptionId` the dump's
@@ -106,6 +118,7 @@ every warning:
 | starts at …, but the class reads this passage at … | move the block to the passage it explains, or add `outOfPlace` |
 | class … does not read this passage's lines | the same |
 | bold … is not in the passage's translation | quote the phrase's `en` exactly, or drop the bold |
+| phrase audio … lie outside class …'s part on the chapter | you cited the wrong class or stretch; find where he translates it here |
 | a mashal/story/digression without a "title" | add one |
 | is N words; split it | split at the turn of thought |
 | has Hebrew script | transliterate |
@@ -133,8 +146,9 @@ it. For each block, the question is "did he say this, here?"
 - [ ] Every block a public edition could not print as it stands has
       `sensitivity`, in a block of its own where possible, with a
       `publishable` text that keeps the teaching.
-- [ ] Phrases: read each `he` beside its `en`; the English is that Hebrew
-      and no more. The cuts fall where he pauses.
+- [ ] Phrases: reread the words each phrase's `audio` cites: its `en` is
+      what he says there, for that Hebrew and no more. Phrases he does not translate
+      have no `en`. The cuts fall where he pauses.
 - [ ] Bold quotes only the translation. Terms are spelled as the dump's
       spellings list says. First use glossed. G-d spelled so.
 - [ ] Section titles describe; summaries are one or two sentences; the

@@ -107,7 +107,12 @@ describe('exportStudyBeta', () => {
     assert.ok(blocks.some((b) => b.sensitivity !== undefined));
     assert.ok(ch.sections.some((s) => s.passages.some((p) => p.skip !== undefined)));
     const first = ch.sections[0]!.passages[0]!;
-    assert.deepEqual(first.phrases, [{ he: 'והנה ידוע המאמר', en: 'It is known what the *Zohar* says', notes: ["A translator's footnote."], lines: ['aaaaaaa2'] }]);
+    // A phrase he translates carries his English and where he says it; one he only reads, its Hebrew.
+    assert.deepEqual(first.phrases, [
+      { he: 'והנה', lines: ['aaaaaaa2'] },
+      { he: 'ידוע המאמר', en: 'It is known what the *Zohar* says', lecture: 't1.mp3', start: 7, end: 13.8, notes: ["A translator's footnote."], lines: ['aaaaaaa2'] },
+    ]);
+    for (const p of ch.sections.flatMap((s) => s.passages.flatMap((x) => x.phrases ?? []))) assert.ok(!('audio' in p), 'a phrase keeps its audio object');
   });
 
   it('does not copy a field the app does not read', () => {
@@ -119,7 +124,7 @@ describe('exportStudyBeta', () => {
 
   it('exports a stale file, marked stale', () => {
     const dir = fixtureWith((f) => {
-      f.sections[0]!.passages[0]!.phrases![0]!.he = 'והנה ידוע המאמר הזה';
+      f.sections[0]!.passages[0]!.phrases![1]!.he = 'ידוע המאמר הזה';
     });
     const out = run(dir);
     assert.equal(out.index.series[0]!.chapters.chapter_01!.stale, true);

@@ -40,8 +40,17 @@
           ],
           "phrases": [
             {
-              "he": "והנה ידוע המאמר",
+              "he": "והנה"
+            },
+            {
+              "he": "ידוע המאמר",
               "en": "It is known what the *Zohar* says",
+              "audio": {
+                "lecture": "t1.mp3",
+                "words": [7, 13],
+                "start": 7,
+                "end": 13.8
+              },
               "notes": [
                 "A translator's footnote."
               ]
@@ -82,17 +91,29 @@
           "phrases": [
             {
               "he": "להיות שצריך",
-              "en": "since one must"
+              "en": "one must",
+              "audio": {
+                "lecture": "t1.mp3",
+                "words": [25, 26],
+                "start": 25,
+                "end": 26.8
+              }
             },
             {
               "he": "להקדים הכנה",
-              "en": "first prepare"
+              "en": "prepare the soul first",
+              "audio": {
+                "lecture": "t1.mp3",
+                "words": [27, 30],
+                "start": 27,
+                "end": 30.8
+              }
             }
           ],
           "blocks": [
             {
               "kind": "avodah",
-              "text": "**one must first prepare** the soul. That is the whole work, and whoever skips it is fooling himself.",
+              "text": "**one must prepare the soul first**. That is the whole work, and whoever skips it is fooling himself.",
               "audio": [
                 {
                   "lecture": "t1.mp3",
@@ -107,7 +128,7 @@
                 ],
                 "reason": "Blunt about people who skip the preparation.",
                 "action": "replace",
-                "publishable": "**one must first prepare** the soul. That is the whole work."
+                "publishable": "**one must prepare the soul first**. That is the whole work."
               }
             }
           ]

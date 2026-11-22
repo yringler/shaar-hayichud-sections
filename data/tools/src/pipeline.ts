@@ -99,6 +99,7 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   // a file itself fails the build: a reference gone stale because a chapter
   // was edited or a tape re-timed is a warning here (`yarn study-check` is
   // the strict check), so that editing a chapter never blocks a deploy.
+  // So is a transitional error (StudyIssue.transitional).
   const warnings: string[] = [];
   let studyBeta: StudyBetaExport | null = null;
   if (errors.length === 0) {
@@ -106,7 +107,9 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     const studyCtx = existsSync(path.join(dataDir, 'study')) ? loadStudyContext(dataDir) : undefined;
     const study = checkStudy(dataDir, studyCtx);
     for (const i of study.issues) {
-      (i.level === 'error' ? errors : warnings).push(`${i.file}: ${i.level === 'error' ? '' : `(${i.level}) `}${i.message}`);
+      // A transitional error (a rule the older guides do not follow yet) only warns here.
+      if (i.level === 'error' && !i.transitional) errors.push(`${i.file}: ${i.message}`);
+      else warnings.push(`${i.file}: (${i.transitional ? 'error, pending migration' : i.level}) ${i.message}`);
     }
     // The lessons2 beta's copy (dist/study-beta/, not under v1): files with
     // no error, stale ones included.

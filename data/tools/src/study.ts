@@ -70,7 +70,10 @@ export interface StudyBlock {
 
 export interface StudyPhrase {
   he: string;
-  en: string;
+  /** The teacher's own English for the phrase; absent where he reads it without translating. */
+  en?: string;
+  /** Where in the class he gives that English (required with `en`, unless the series has a `publishedTranslation`). */
+  audio?: StudyAudio;
   notes?: string[];
 }
 
@@ -111,6 +114,8 @@ export interface StudySeriesFile {
   teacher: string;
   title: string;
   translation: string;
+  /** A published translation the phrases' English is taken from verbatim; only then may `en` come without `audio`. */
+  publishedTranslation?: { title: string; source: string; license: string };
   chapterLectures?: Record<string, string[]>;
 }
 
@@ -126,6 +131,14 @@ export interface StudyIssue {
   /** Path relative to data/, e.g. "study/markel-advanced/chapter_06.json". */
   file: string;
   message: string;
+  /**
+   * An error of a rule the guides written before it do not follow yet (the
+   * phrases' English comes only from the class, November 2026). It fails
+   * `yarn study-check` and keeps the file out of the beta export like any
+   * error, but `yarn build-data` only warns about it until every guide is
+   * migrated. Drop the flag (and this field) then.
+   */
+  transitional?: true;
 }
 
 // ---------------------------------------------------------------------------
@@ -356,7 +369,11 @@ export function loadStudy(dataDir: string, schemaDir = path.join(dataDir, 'schem
 // Checks
 // ---------------------------------------------------------------------------
 
-/** A block's main audio may be this far (s) outside the stretch where the class reads its passage. */
+/**
+ * A block's main audio may be this far (s) outside the stretch where the
+ * class reads its passage, and a phrase's audio this far outside the class's
+ * part on the chapter.
+ */
 export const PLACE_SLACK_SECONDS = 120;
 /** An uncited stretch of a class at least this long (words) is reported unless `omitted` lists it. */
 export const GAP_WORDS = 250;
@@ -417,10 +434,12 @@ export function checkStudyChapter(
   series: StudySeriesFile,
   translit: TranslitFile | null,
   ctx: StudyContext,
-  opts: { gapWords?: number } = {},
+  opts: { gapWords?: number; slackSeconds?: number } = {},
 ): { issues: StudyIssue[]; stats: ChapterStats } {
+  const slack = opts.slackSeconds ?? PLACE_SLACK_SECONDS;
   const issues: StudyIssue[] = [];
   const add = (level: IssueLevel, message: string) => issues.push({ level, file: rel, message });
+  const addTransitional = (message: string) => issues.push({ level: 'error', file: rel, message, transitional: true });
   const stats: ChapterStats = { passages: 0, skipped: 0, blocks: 0, byKind: {}, flagged: 0, words: 0, coverage: [] };
 
   const key = path.basename(rel, '.json');
@@ -457,8 +476,10 @@ export function checkStudyChapter(
       if (passage.skip) stats.skipped += 1;
       if (passage.skip && passage.blocks.length > 0) add('error', `${at} has both "skip" and blocks`);
       if (!passage.skip && passage.blocks.length === 0) add('error', `${at} has no blocks; add a "skip" with the reason`);
-      if (!passage.phrases) {
-        if (passage.skip?.reason !== 'no-recording') add('error', `${at} has no "phrases" (only a passage skipped as no-recording may leave them out)`);
+      if (passage.skip?.reason === 'no-recording') {
+        if (passage.phrases) addTransitional(`${at} is skipped as no-recording but has "phrases"; a passage no class reads has none (the English comes only from the class)`);
+      } else if (!passage.phrases) {
+        add('error', `${at} has no "phrases" (only a passage skipped as no-recording may leave them out)`);
       } else if (passage.lines.every((id) => lineIndex.has(id))) {
         const text = collapse(passage.lines.map((id) => lines[lineIndex.get(id)!]!.text).join(' '));
         const joined = collapse(passage.phrases.map((p) => p.he).join(' '));
@@ -467,10 +488,17 @@ export function checkStudyChapter(
           while (i < text.length && text[i] === joined[i]) i += 1;
           add('stale', `${at} the phrases' Hebrew is not the text of its lines; they part at "${joined.slice(Math.max(0, i - 15), i + 25)}" (text: "${text.slice(Math.max(0, i - 15), i + 25)}")`);
         }
-        for (const [fi, p] of passage.phrases.entries()) {
-          const en = proseProblems(p.en);
-          for (const e of en.errors) add('error', `${at}/phrases/${fi}/en ${e}`);
-          if (/\*\*/.test(p.en)) add('error', `${at}/phrases/${fi}/en has bold; a translation has italics only`);
+      }
+      for (const [fi, p] of (passage.phrases ?? []).entries()) {
+        if (p.en === undefined) {
+          if (p.audio) add('error', `${at}/phrases/${fi} has "audio" but no "en"; write the English he gives there, or drop the audio`);
+          continue;
+        }
+        const en = proseProblems(p.en);
+        for (const e of en.errors) add('error', `${at}/phrases/${fi}/en ${e}`);
+        if (/\*\*/.test(p.en)) add('error', `${at}/phrases/${fi}/en has bold; a translation has italics only`);
+        if (!p.audio && !series.publishedTranslation) {
+          addTransitional(`${at}/phrases/${fi} has "en" but no "audio": the English must be the teacher's own, anchored to where he says it in class; if he does not translate this phrase, leave "en" out`);
         }
       }
     }
@@ -589,7 +617,7 @@ export function checkStudyChapter(
     if (passage.phrases) {
       // Compared without case and punctuation, so a quote may drop the comma its phrase ends with.
       const plain = (t: string) => collapse(t.toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, ' '));
-      const english = plain(passage.phrases.map((p) => p.en).join(' '));
+      const english = plain(passage.phrases.map((p) => p.en ?? '').join(' '));
       for (const q of boldQuotes(block.text)) {
         if (!english.includes(plain(q))) add('warning', `${at} bold "${q.length > 50 ? `${q.slice(0, 50)}…` : q}" is not in the passage's translation; bold only quotes it`);
       }
@@ -610,12 +638,34 @@ export function checkStudyChapter(
         if (segs.length > 0) add('warning', `${at} class "${a.lecture}" does not read this passage's lines; if the block belongs here, say why in "outOfPlace"`);
         continue;
       }
-      const from = t.words[here[0]!.firstWord]!.start - PLACE_SLACK_SECONDS;
+      const from = t.words[here[0]!.firstWord]!.start - slack;
       const after = segs.find((s) => s.index > hi && s.firstWord > here[here.length - 1]!.firstWord);
-      const to = (after ? t.words[after.firstWord]!.start : t.words[t.words.length - 1]!.end) + PLACE_SLACK_SECONDS;
+      const to = (after ? t.words[after.firstWord]!.start : t.words[t.words.length - 1]!.end) + slack;
       const at0 = t.words[a.words[0]]!.start;
       if (at0 < from || at0 > to) {
-        add('warning', `${at} starts at ${clock(at0)}, but the class reads this passage at ${clock(from + PLACE_SLACK_SECONDS)}–${clock(to - PLACE_SLACK_SECONDS)}; move the block, or say why in "outOfPlace"`);
+        add('warning', `${at} starts at ${clock(at0)}, but the class reads this passage at ${clock(from + slack)}–${clock(to - slack)}; move the block, or say why in "outOfPlace"`);
+      }
+    }
+  }
+
+  // A phrase's English is anchored where the class gives it: within the class's part on this chapter.
+  for (const [si, section] of file.sections.entries()) {
+    for (const [pi, passage] of section.passages.entries()) {
+      for (const [fi, p] of (passage.phrases ?? []).entries()) {
+        if (!p.audio) continue;
+        const at = `/sections/${si}/passages/${pi}/phrases/${fi}/audio`;
+        if (!checkAudio(at, p.audio, true)) continue;
+        const t = transcripts.get(p.audio.lecture)!;
+        const range = chapterWordRange(ctx.alignment(p.audio.lecture), t.words.length, key);
+        if (!range) {
+          add('warning', `${at} class "${p.audio.lecture}" has no part on ${key}; is this the class that translates the phrase?`);
+          continue;
+        }
+        const [from, to] = [t.words[range[0]]!.start - slack, t.words[range[1]]!.end + slack];
+        const [w0, w1] = p.audio.words;
+        if (t.words[w0]!.start < from || t.words[w1]!.end > to) {
+          add('warning', `${at} words [${w0}, ${w1}] (${clock(t.words[w0]!.start)}) lie outside class "${p.audio.lecture}"'s part on ${key} (words [${range[0]}, ${range[1]}], ${clock(from + slack)}–${clock(to - slack)})`);
+        }
       }
     }
   }
@@ -644,7 +694,7 @@ export function checkStudyChapter(
 
   // --- terms, questions, notes, prose ---------------------------------------
   const table = new Map((translit?.terms ?? []).map((t) => [hebrewKey(t.he), t.term]));
-  const prose = [file.overview, ...file.sections.flatMap((s) => [s.summary, ...s.passages.flatMap((p) => (p.phrases ?? []).map((f) => f.en))]), ...[...walkBlocks(file)].flatMap((b) => [b.block.text, b.block.question ?? ''])].join('\n');
+  const prose = [file.overview, ...file.sections.flatMap((s) => [s.summary, ...s.passages.flatMap((p) => (p.phrases ?? []).map((f) => f.en ?? ''))]), ...[...walkBlocks(file)].flatMap((b) => [b.block.text, b.block.question ?? ''])].join('\n');
   const seenTerms = new Set<string>();
   for (const [ti, t] of file.terms.entries()) {
     const at = `/terms/${ti}`;
@@ -741,7 +791,9 @@ const bare = (word: string): string => word.replace(/^[("'״׳]+|[)"'״׳,.:;?!]
  * then runs from where the previous phrase ended through the next
  * occurrence of that word (punctuation around it ignored), and the last
  * phrase of a passage may leave out both and takes the rest. `he` is copied
- * from the chapter's lines, so it cannot be mistyped.
+ * from the chapter's lines, so it cannot be mistyped. `en`, `audio` and
+ * `notes` are kept (a phrase he does not translate has neither `en` nor
+ * `audio`).
  */
 export function expandPhrases(file: StudyChapterFile, ctx: StudyContext): { changed: number; errors: string[] } {
   const errors: string[] = [];
@@ -779,9 +831,14 @@ export function expandPhrases(file: StudyChapterFile, ctx: StudyContext): { chan
           errors.push(`${at}/phrases/${fi}: nothing is left of the passage for this phrase`);
           break;
         }
-        const { en, notes } = p;
+        const { en, audio, notes } = p;
         for (const k of Object.keys(p)) delete (p as Record<string, unknown>)[k];
-        Object.assign(p, { he: tokens.slice(cursor, end + 1).join(' '), en, ...(notes !== undefined ? { notes } : {}) });
+        Object.assign(p, {
+          he: tokens.slice(cursor, end + 1).join(' '),
+          ...(en !== undefined ? { en } : {}),
+          ...(audio !== undefined ? { audio } : {}),
+          ...(notes !== undefined ? { notes } : {}),
+        });
         cursor = end + 1;
         changed += 1;
       }
@@ -791,9 +848,10 @@ export function expandPhrases(file: StudyChapterFile, ctx: StudyContext): { chan
 }
 
 /**
- * Writes every audio reference's start/end from its word range (and fills a
- * missing transcriptionId of a listed lecture). Returns how many references
- * changed and what could not be stamped.
+ * Writes every audio reference's start/end (blocks', the overview's and
+ * phrases') from its word range, and fills a missing transcriptionId of a
+ * listed lecture. Returns how many references changed and what could not be
+ * stamped.
  */
 export function stampTimes(file: StudyChapterFile, ctx: StudyContext): { changed: number; errors: string[] } {
   const errors: string[] = [];
@@ -808,6 +866,11 @@ export function stampTimes(file: StudyChapterFile, ctx: StudyContext): { changed
   }
   const refs: { a: StudyAudio; at: string }[] = (file.overviewAudio ?? []).map((a, i) => ({ a, at: `/overviewAudio/${i}` }));
   for (const { block, at } of walkBlocks(file)) refs.push(...block.audio.map((a, i) => ({ a, at: `${at}/audio/${i}` })));
+  for (const [si, section] of file.sections.entries()) {
+    for (const [pi, passage] of section.passages.entries()) {
+      for (const [fi, p] of (passage.phrases ?? []).entries()) if (p.audio) refs.push({ a: p.audio, at: `/sections/${si}/passages/${pi}/phrases/${fi}/audio` });
+    }
+  }
   {
     for (const { a, at } of refs) {
       const t = ctx.transcript(a.lecture);

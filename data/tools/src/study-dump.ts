@@ -199,3 +199,26 @@ export function dumpChapter(ctx: StudyContext, series: StudySeriesFile, translit
   }
   return `${out.join('\n')}\n`;
 }
+
+/**
+ * Words [first, last] of a class one by one, each with its index
+ * (`25:one 26:must`), a line per sentence prefixed with its time: for citing
+ * part of a sentence, such as the stretch where the teacher gives the English
+ * of one phrase.
+ */
+export function dumpWords(ctx: StudyContext, lectureId: string, first: number, last: number): string {
+  const t = ctx.transcript(lectureId);
+  if (!t) throw new Error(`lecture "${lectureId}" has no stored transcript`);
+  const to = Math.min(last, t.words.length - 1);
+  if (first < 0 || first > to) throw new Error(`words [${first}, ${last}]: the transcript has ${t.words.length} words`);
+  const out = [`# "${lectureId}" words [${first}, ${to}]`];
+  for (const s of sentences(t.words, first, to)) {
+    const words: string[] = [];
+    for (let i = s.words[0]; i <= s.words[1]; i += 1) {
+      const w = reverentSpelling(t.words[i]!.word.trim());
+      if (w !== '') words.push(`${i}:${w}`);
+    }
+    out.push(`[${clock(s.start)}] ${words.join(' ')}`);
+  }
+  return `${out.join('\n')}\n`;
+}

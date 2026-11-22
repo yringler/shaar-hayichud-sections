@@ -54,10 +54,13 @@ What a writer of this series' study files needs to know beyond
 
 ## Translation
 
-Phrases follow his in-class rendering. Chapters 1–5 and 10 were ported from
-the study guide demo and carry his published translation (Sefaria, "The Gate
-of Unity", 2023, CC-BY) a paragraph at a time; when one of those chapters is
-rewritten, cut it into phrases as he translates in class.
+Phrases carry only his English as he gives it in class, each with the
+`audio` of where he says it; a phrase he reads without translating has no
+English (STYLE.md, Phrases). His published translation (Sefaria, "The Gate
+of Unity", 2023, CC-BY) is not used: whether and how to show it is a separate
+decision. Chapters 1–5 and 10 were ported from the study guide demo with
+that translation a paragraph at a time; when one of them is rewritten, cut it
+into phrases as he translates in class and drop the published English.
 
 ## Sensitivity, for this series
 
