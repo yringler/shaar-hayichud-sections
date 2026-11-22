@@ -92,6 +92,30 @@
       "he": "הרחבה",
       "gloss": "breadth; the full breadth of the Essence as the giver has it, which the line does not bring",
       "line": "fz7fclsz"
+    },
+    {
+      "term": "mispashet",
+      "he": "מתפשט",
+      "gloss": "spreads out; \"it cannot be mispashet\"",
+      "line": "fr4jzccp"
+    },
+    {
+      "term": "maala mata",
+      "he": "מעלה ומטה",
+      "gloss": "an above and a below, from the giver to the receiver: all the Kav makes",
+      "line": "65gwqckh"
+    },
+    {
+      "term": "hamshachos",
+      "he": "המשכות",
+      "gloss": "drawings down; the line includes all kinds of them, because it is to any somebody",
+      "line": "fbmrsmfk"
+    },
+    {
+      "term": "mamshich",
+      "he": "ממשיך",
+      "gloss": "draws down",
+      "line": "523qyksv"
     }
   ],
   "sections": [
@@ -110,42 +134,34 @@
           ],
           "phrases": [
             {
-              "he": "(יד) ומעתה יש להבין בבחינת הקו והחוט שנמשך מבחינת הרשימו הנזכר לעיל, דרך פרט",
-              "en": "(14) Now we have to understand the *Kav* (line) and the thread drawn from the *reshimu* (impression) mentioned above, in detail."
+              "he": "(יד) ומעתה יש להבין בבחינת הקו והחוט שנמשך מבחינת הרשימו הנזכר לעיל, דרך פרט"
             },
             {
-              "he": "ותחלה יש להבין בו בענין כללותו,",
-              "en": "And first we have to understand it in its general sense:"
+              "he": "ותחלה יש להבין בו בענין כללותו,"
             },
             {
-              "he": "שהוא בחינת ההיפוך ממש מבחינת הרשימו הנזכר לעיל",
-              "en": "that it is *mamash* the opposite of the *reshimu* mentioned above."
+              "he": "שהוא בחינת ההיפוך ממש מבחינת הרשימו הנזכר לעיל"
             },
             {
-              "he": "כי הנה הנקודה מורה ההעלם והסתלקות הכל,",
-              "en": "For the point indicates the hiding and withdrawal of everything,"
+              "he": "כי הנה הנקודה מורה ההעלם והסתלקות הכל,"
             },
             {
-              "he": "עד שלא נשאר רק כנקודה א'",
-              "en": "until only a single point is left;"
+              "he": "עד שלא נשאר רק כנקודה א'"
             },
             {
-              "he": "וגם נקודה או רושם זה מורה בחינת העדר ההתפשטות למטה דוקא",
-              "en": "and this point, or impression, also indicates the absence of spreading downward, *davka*,"
+              "he": "וגם נקודה או רושם זה מורה בחינת העדר ההתפשטות למטה דוקא"
             },
             {
-              "he": "דהיינו ענין העדר ההמשכה וההתגלות לאורך ורוחב",
-              "en": "that is, the absence of drawing down and of revelation in length and breadth,"
+              "he": "דהיינו ענין העדר ההמשכה וההתגלות לאורך ורוחב"
             },
             {
-              "he": "כצורת הי' שאין בו תוך וחלל כו' כידוע.",
-              "en": "like the shape of the *yud*, which has no inside and no hollow, as is known."
+              "he": "כצורת הי' שאין בו תוך וחלל כו' כידוע."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Chapter 14. The *inyan* (matter) of the *Or Ein Sof*, the *tzimtzum* (contraction) and the *reshimu* (impression) is finished, and now begins the *Kav v'chut*, the line and the thread.\n\nFirst its general idea: the *Kav* is **the opposite of the *reshimu***. The *reshimu* is a *nekuda* (a point): everything is hidden and withdrawn until only one point is left. Nothing spreads down, there is no length and no breadth, like the shape of the *yud*, which has no inside.",
+              "text": "Chapter 14. The *inyan* (matter) of the *Or Ein Sof*, the *tzimtzum* (contraction) and the *reshimu* (impression) is finished, and now begins the *Kav v'chut*, the line and the thread.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -165,30 +181,42 @@
           ],
           "phrases": [
             {
-              "he": "והנה בענין צמצום שלו מלמעלה,",
-              "en": "Now, as for its contraction from above,"
+              "he": "והנה בענין צמצום שלו מלמעלה,"
             },
             {
-              "he": "דהיינו מה שנשאר בבחינת נקודה לבד,",
-              "en": "that is, that it remains only as a point,"
+              "he": "דהיינו מה שנשאר בבחינת נקודה לבד,"
             },
             {
               "he": "יוכל להיות שיהיה מזה להיפוך",
-              "en": "it could be that the opposite comes of it,"
+              "en": "It could be that really it could be the opposite from this.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1850, 1861],
+                "start": 916.42,
+                "end": 919.44
+              }
             },
             {
-              "he": "מפני שמחמת זה יוכלל בו הכל בקיצור ורמז וכהאי גוונא",
-              "en": "because through this everything can be included in it, in brief and in hint, and the like;"
+              "he": "מפני שמחמת זה יוכלל בו הכל בקיצור ורמז וכהאי גוונא"
             },
             {
-              "he": "ואדרבה זהו עיקר סיבת כל גלוי ההשפעה כנזכר לעיל",
-              "en": "and just opposite, this is the main cause of all revelation of the flow, as mentioned above."
+              "he": "ואדרבה",
+              "en": "just opposite",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1872, 1873],
+                "start": 926.34,
+                "end": 927.52
+              }
+            },
+            {
+              "he": "זהו עיקר סיבת כל גלוי ההשפעה כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It could be that really the opposite comes of it. Because it is only a point, everything can be included in it in brief and in hint. *V'adraba*, just opposite: that is the main cause of all revelation.",
+              "text": "It could be that really it could be the opposite from this. *V'adraba*, just the opposite.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -208,30 +236,39 @@
           ],
           "phrases": [
             {
-              "he": "אבל מה שמנקודה זו מורה העדר ההתפשטות לגמרי למטה לכאורה,",
-              "en": "But that this point indicates no spreading down at all, seemingly,"
+              "he": "אבל מה שמנקודה זו מורה העדר ההתפשטות לגמרי למטה לכאורה, זהו ודאי נקרא צמצום גמור ואמיתי",
+              "en": "So it appears that the fact that the *reshimu* is totally into itself, and really the *reshimu* does not spread, so it would seem it's a real *tzimtzum*.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1905, 1932],
+                "start": 952.66,
+                "end": 964.04
+              }
             },
             {
-              "he": "זהו ודאי נקרא צמצום גמור ואמיתי",
-              "en": "that is certainly called a complete *tzimtzum*, and a true one,"
+              "he": "להעלים ולהסתיר לבלתי יבוא האור למטה"
             },
             {
-              "he": "להעלים ולהסתיר לבלתי יבוא האור למטה",
-              "en": "to hide and conceal, so that the light should not come down."
+              "he": "ואם כן איך יומשך מנקודה זו"
             },
             {
-              "he": "ואם כן איך יומשך מנקודה זו היפוכו ממש,",
-              "en": "If so, how can its *mamash* opposite be drawn from this point,"
+              "he": "היפוכו ממש,",
+              "en": "*mamash* opposite",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1941, 1942],
+                "start": 968.24,
+                "end": 969.08
+              }
             },
             {
-              "he": "שהוא בחינת המשכה והתפשטות דקו כו'.",
-              "en": "which is the drawing down and spreading of the *Kav*?"
+              "he": "שהוא בחינת המשכה והתפשטות דקו כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "But the point also shows that nothing at all spreads down, and that is a complete *tzimtzum*, *kipshuto* (literally), and a true one: **to hide and conceal, so that the light should not come down**. The *reshimu* is totally into itself and does not spread, so it would seem to be a real *tzimtzum*.\n\nIf so, how can its *mamash* opposite come out of it? The whole thing of the *Kav* is *hispashtus* (spreading out). As it says in various places in Kabbala, the whole thing of the line is that it goes up and down: spreading is the main *inyan* of the *Kav*.",
+              "text": "The *tzimtzum* here means *kipshuto* (literally). So it appears that the *reshimu* is totally into itself and really does not spread, so it would seem to be a real *tzimtzum*.\n\n*Mamash* opposite: the whole thing of the *Kav* is the *inyan* of *hispashtus* (spreading out). As it says in various places in Kabbala, the whole thing of the line is that it goes up and down: spreading is the main *inyan* of the *Kav*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -255,22 +292,26 @@
           ],
           "phrases": [
             {
-              "he": "אך הנה ידוע שבאמת הנקודה והקו אינם ב' הפכים,",
-              "en": "But it is known that in truth the point and the line are not two opposites,"
+              "he": "אך הנה ידוע שבאמת הנקודה והקו אינם ב' הפכים,"
             },
             {
               "he": "שהרי הקו נמשך מן הנקודה,",
-              "en": "since the line is drawn from the point,"
+              "en": "since the *Kav* actually comes out from the *nekuda*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2017, 2025],
+                "start": 996.48,
+                "end": 999.34
+              }
             },
             {
-              "he": "ומחיבור נקודות יחד נעשה קו כו'.",
-              "en": "and from joining points together a line is made."
+              "he": "ומחיבור נקודות יחד נעשה קו כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "In truth they are not really two opposites: the *Kav* actually comes out from the *nekuda*, and **from joining points together a line is made**. Here he is bringing geometry. The point, the line, the *shetach* (area), length and breadth, all these things are basically geometric *meshalim* (analogies).",
+              "text": "In truth they are not really two opposites, since the *Kav* actually comes out from the *nekuda*. Here he is bringing geometry. The point, the line, the *shetach* (area), length and breadth, all these things are basically geometric *meshalim* (analogies).",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -336,42 +377,55 @@
           ],
           "phrases": [
             {
-              "he": "אך הענין הוא כידוע",
-              "en": "But the matter is, as is known,"
+              "he": "אך הענין הוא כידוע"
             },
             {
-              "he": "שהנקודה הוא כמו בחינת ההיולי לגבי הקו",
-              "en": "that the point is like the *hiyuli* (raw potential) in relation to the line,"
+              "he": "שהנקודה הוא כמו בחינת ההיולי לגבי הקו"
             },
             {
-              "he": "וכמו כל בחינת היולי או חומר פשוט",
-              "en": "and like every *hiyuli*, or simple matter:"
+              "he": "וכמו כל בחינת היולי או חומר פשוט"
             },
             {
-              "he": "שאף על פי שהוא בהעדר ההתפשטות דוקא,",
-              "en": "although it is *davka* without spreading,"
+              "he": "שאף על פי שהוא בהעדר ההתפשטות דוקא,"
             },
             {
               "he": "אין זה הכרחי כלל,",
-              "en": "this is not necessary at all;"
+              "en": "doesn't mean it cannot be *mispashet*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2826, 2831],
+                "start": 1341.6,
+                "end": 1344.58
+              }
             },
             {
               "he": "רק מצד עצם מהות ההיולי,",
-              "en": "it is only because of the very essence of the *hiyuli*,"
+              "en": "just because of the fact that it's a *hiyuli*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2838, 2846],
+                "start": 1349.66,
+                "end": 1351.62
+              }
             },
             {
               "he": "מפני שהוא למעלה עדיין מבחינת התפשטות",
-              "en": "because it is still above spreading,"
+              "en": "it still remains higher than the *hispashtus*, really",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2893, 2900],
+                "start": 1369.72,
+                "end": 1372.1
+              }
             },
             {
-              "he": "ולזאת לא ירד מעצמותו",
-              "en": "and therefore it did not come down from its essence."
+              "he": "ולזאת לא ירד מעצמותו"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "A *nekuda* is not opposite to a *Kav* as an antagonistic opposition. It is opposite to it in being its *hiyuli*: **like every *hiyuli*, or simple matter**, which has no spreading, and that is **not necessary at all**.",
+              "text": "A *nekuda* is not opposite from a *Kav* in the sense of being an antagonistic opposition to it, but rather in the fact that it is a *hiyuli*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -421,7 +475,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And yet the soul itself is a thing in itself; the soul itself is without spreading. Every *hiyuli* or simple matter, though it is without spreading, it doesn't mean it cannot spread. It is only because it is a *hiyuli*, **because it is still above spreading**, and that is why **it did not come down from its essence**. Not because it cannot spread: just the opposite, the whole spreading does come from it. But the thing itself is a *hiyuli*, which even when there is spreading still remains higher than the spreading.",
+              "text": "And yet the soul itself is really a thing in itself. Every *hiyuli* or simple matter, though it is without spreading, it doesn't mean it cannot spread. It is just because it is a *hiyuli*. Not because it cannot spread: just the opposite, the whole spreading does come from it. But the thing itself is a *hiyuli*, which even when there is spreading still remains higher than the spreading.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -444,54 +498,71 @@
           ],
           "phrases": [
             {
-              "he": "וכמו היולי של חיות החי בגלוי,",
-              "en": "Like the *hiyuli* of the life of the living in revelation,"
+              "he": "וכמו היולי של חיות החי בגלוי,"
             },
             {
               "he": "בעודנה כלולה בעצם,",
-              "en": "while it is still included in the essence,"
+              "en": "while it's still included in the *etzem*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2929, 2935],
+                "start": 1386.38,
+                "end": 1388.44
+              }
             },
             {
-              "he": "שאינה מתפשטת להחיות כו'",
-              "en": "not spreading to give life;"
+              "he": "שאינה מתפשטת להחיות כו'"
             },
             {
-              "he": "וכהיולי של כח התנועה בעצם,",
-              "en": "and like the *hiyuli* of the power of movement in the essence,"
+              "he": "וכהיולי של כח התנועה בעצם,"
             },
             {
-              "he": "טרם שמתפשט להניע",
-              "en": "before it spreads to move;"
+              "he": "טרם שמתפשט להניע"
             },
             {
-              "he": "וככח הצמיחה טרם שמתפשט להצמיח",
-              "en": "and like the power of growth before it spreads to make grow;"
+              "he": "וככח הצמיחה טרם שמתפשט להצמיח"
             },
             {
-              "he": "וככח השכל טרם שמתפשט להשכיל,",
-              "en": "and like the power of the intellect before it spreads to think;"
+              "he": "וככח השכל טרם שמתפשט להשכיל,"
             },
             {
               "he": "וכהאי גוונא רבים בדומה",
-              "en": "and many similar to these."
+              "en": "There's many many *meshalim* that you can say for this.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2962, 2971],
+                "start": 1402.76,
+                "end": 1407.8
+              }
             },
             {
-              "he": "הרי יובן שהעדר ההתפשטות הזאת לא נקרא צמצום אמיתי מצד עצמו",
-              "en": "So it will be understood that this absence of spreading is not called a true *tzimtzum* in itself."
+              "he": "הרי יובן שהעדר ההתפשטות הזאת לא נקרא צמצום אמיתי מצד עצמו"
             },
             {
               "he": "אדרבה",
-              "en": "Just the opposite,"
+              "en": "just the opposite",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [2997, 2999],
+                "start": 1421.22,
+                "end": 1422.56
+              }
             },
             {
               "he": "הרי הוא כח ההיולי העצמי שממנו נמצא הכל בהתגלות והתפשטות",
-              "en": "it is the power of the essential *hiyuli*, from which everything comes to be, in revelation and spreading."
+              "en": "It's *davka* from this is what the *hispashtus* is coming from.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3010, 3020],
+                "start": 1427.16,
+                "end": 1429.62
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The examples: **the *hiyuli* of the life of the living**, which, as was said, even a chicken can understand, **while it is still included in the essence**, not yet spread to give life to the whole; the power of movement before it moves; the power of growth before it makes grow; the intellect before it thinks. There are many, many *meshalim* you can say for this.",
+              "text": "As was said, even a chicken can understand this, while it is still included in the *etzem*. There are many, many *meshalim* you can say for this.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -503,7 +574,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So this absence of spreading is not a true *tzimtzum* in itself. It is not a lack of ability to spread. *Adraba*, just the opposite: it is the power of the essential *hiyuli*, and it is *davka* from this that the spreading comes. As was said, a chicken can understand this.",
+              "text": "It's not that it is actually a lack of ability to spread. *Adraba*, just the opposite: it is *davka* from this that the spreading is coming. As was said, a chicken can understand this.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -531,41 +602,68 @@
           "phrases": [
             {
               "he": "וכהאי גוונא יובן",
-              "en": "And in the same way it will be understood"
+              "en": "so in the same way it'll be understood",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3035, 3042],
+                "start": 1436.14,
+                "end": 1439.88
+              }
             },
             {
               "he": "בבחינת נקודה לגבי הקו",
-              "en": "of the point in relation to the line:"
+              "en": "the *reshimu* in relationship to the *Kav*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3047, 3056],
+                "start": 1442.34,
+                "end": 1447.14
+              }
             },
             {
-              "he": "שהעדר התפשטותה הוא רק מצד היותה",
-              "en": "that its not spreading is only because of its being"
+              "he": "שהעדר התפשטותה הוא רק מצד היותה"
             },
             {
-              "he": "בבחינת העצמיות שלמעלה מבחינת ההתפשטות עדיין",
-              "en": "the essential level that is still above spreading."
+              "he": "בבחינת העצמיות שלמעלה מבחינת ההתפשטות עדיין"
             },
             {
               "he": "והגם שבאה על ידי צמצום הכל,",
-              "en": "And although it came through the contraction of everything,"
+              "en": "even though it comes from a *tzimtzum*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3099, 3105],
+                "start": 1471.5,
+                "end": 1472.74
+              }
             },
             {
-              "he": "עד שלא נשאר רק כנקודה א' כנזכר לעיל,",
-              "en": "until only a single point was left, as mentioned above,"
+              "he": "עד שלא נשאר רק כנקודה א' כנזכר לעיל,"
             },
             {
               "he": "אך הרי זה עצמו מורה שכל בחינת העצמיות כלול בה",
-              "en": "still, this itself shows that the whole of the essential level is included in it."
+              "en": "that the whole *Atzmus* is included in the *reshimu*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3124, 3132],
+                "start": 1477.88,
+                "end": 1481
+              }
             },
             {
               "he": "ולהיות כן, בלתי מתפשטת למטה",
-              "en": "And because this is so, it does not spread down."
+              "en": "that really does not: it didn't go out of *Ein Sof* at all",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3207, 3219],
+                "start": 1514.24,
+                "end": 1518.08
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "In the same way the point in relation to the line, the *reshimu* in relation to the *Kav*: it does not spread only because it is **the essential level that is still above spreading**. And though it came through a *tzimtzum* of everything, until only one point was left, this itself shows that the whole essence is included in it.",
+              "text": "So in the same way it will be understood of the *reshimu* in relationship to the *Kav*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -577,7 +675,7 @@
             },
             {
               "kind": "explanation",
-              "text": "It doesn't matter that it comes from a *tzimtzum*. As was explained, like the Gemara in the Mishna, the whole *Atzmus* (Essence) is included in the *reshimu*. And since the *reshimu* is really a point of the essence, even though it is after the *tzimtzum* it is still part of the *etzem*: the *etzem* contracted itself into a point. There is no spreading to the outside yet. The *reshimu* did not go outside of the *Ein Sof* yet; it's the line that goes outside. **It does not spread down**: it didn't go out of the *Ein Sof* at all.\n\nAnd here is a very good *mashal* for this.",
+              "text": "It doesn't matter that it comes from a *tzimtzum*. As was explained, like the Gemara in the Mishna, the whole *Atzmus* (Essence) is included in the *reshimu*. And since the *reshimu* is really a point of the essence, even though it is after the *tzimtzum* it is still part of the *etzem*: the *etzem* contracted itself into a point. There is no spreading to the outside yet. The *reshimu* did not go outside of the *Ein Sof* yet; it's the line that goes outside. It does not spread down: it didn't go out of the *Ein Sof* at all.\n\nAnd here is a very good *mashal* for this.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -598,47 +696,70 @@
           ],
           "phrases": [
             {
-              "he": "וכמשל התלמיד לפני רבו",
-              "en": "Like the analogy of the student before his teacher:"
+              "he": "וכמשל התלמיד לפני רבו"
             },
             {
               "he": "דאיידי דטריד למבלע",
-              "en": "since he is busy swallowing,"
+              "en": "he is very busy with swallowing, in other words, with absorbing what the Rebbe is saying",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3235, 3251],
+                "start": 1526.42,
+                "end": 1533.24
+              }
             },
             {
               "he": "ונעשה כנקודה בצמצום כל עצמותו כו',",
-              "en": "he becomes like a point, in the contraction of his whole self,"
+              "en": "and his whole *Atzmus* is like gone there and he's becoming a whole *nekuda*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3327, 3340],
+                "start": 1567.6,
+                "end": 1571.94
+              }
             },
             {
-              "he": "לא פליט להשפיע לזולתו בהתפשטות",
-              "en": "and does not let anything out to give to another in spreading."
+              "he": "לא פליט להשפיע לזולתו בהתפשטות"
             },
             {
               "he": "אמנם אחר קבלתו,",
-              "en": "But after he has received,"
+              "en": "but after he received",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3408, 3411],
+                "start": 1597.26,
+                "end": 1599
+              }
             },
             {
               "he": "אדרבה",
-              "en": "just the opposite,"
+              "en": "just the opposite",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3413, 3415],
+                "start": 1600.64,
+                "end": 1601.48
+              }
             },
             {
-              "he": "מזה הצמצום שהיה בבחינת נקודה,",
-              "en": "from this very contraction, that was as a point,"
+              "he": "מזה הצמצום שהיה בבחינת נקודה, הוא שנמשך ממנו כל ההשפעה והתפשטות לזולתו כו'",
+              "en": "from this itself came the whole *hashpa'a* and *hispashtus* to downstairs",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3534, 3546],
+                "start": 1646.44,
+                "end": 1652.88
+              }
             },
             {
-              "he": "הוא שנמשך ממנו כל ההשפעה והתפשטות לזולתו כו'",
-              "en": "is drawn all the giving and spreading to another,"
-            },
-            {
-              "he": "וכמו שכתוב במקום אחר",
-              "en": "as is written elsewhere."
+              "he": "וכמו שכתוב במקום אחר"
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "The student swallowing his teacher's words",
-              "text": "**since he is busy swallowing**: he is very busy absorbing what the Rebbe is saying, and **he becomes like a point, in the contraction of his whole self**. You try to talk to him; he will not talk to you.",
+              "text": "He is very busy swallowing, absorbing what the Rebbe is saying. You try to talk to him; he will not talk to you.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -663,7 +784,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Or in general, a student listening to a Rebbe: his whole *Atzmus* is gone there, and he becomes a whole *nekuda*. This is the whole *inyan* of *daas* (knowledge, the mind's taking in of a thing). He does not let anything out; there is no spreading. If the next guy asks him what the Rebbe is saying, they'll just shove him away: get out of here. He won't even say get out of here; he won't even hear him. He's so busy listening to the Rebbe.",
+              "text": "Or in general, a student listening to a Rebbe: his whole *Atzmus* is gone there, and he becomes a whole *nekuda*. This is the whole *inyan* of *daas* (knowledge, the mind's taking in of a thing). If the next guy asks him what the Rebbe is saying, they'll just shove him away: get out of here. He won't even say get out of here; he won't even hear him. He's so busy listening to the Rebbe.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -675,7 +796,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**But after he has received**, *adraba*, just the opposite: from this very contraction, when he was a point, comes all the giving and spreading down. That's why he can *chazer* (repeat) the whole thing by heart. And not just repeating it by heart: understanding it and giving an explanation to another guy works exactly the same way.\n\nWhen his teacher was there he listened to him so well that he *mamash* had nothing to do with anything outside of this. His whole being was contracted away, and he was totally a point of just listening to his teacher. Not only was that not a *tzimtzum*: *adraba*, from this itself came the whole giving and spreading downstairs, **as is written elsewhere**.",
+              "text": "But after he has received, *adraba*, just the opposite. That's why he can *chazer* (repeat) the whole thing by heart. And not just repeating it by heart: understanding it and giving an explanation to another guy works exactly the same way.\n\nWhen his teacher was there he listened to him so well that he *mamash* had nothing to do with anything outside of this. His whole being was contracted away, and he was totally a point of just listening to his teacher. Not only was that not a *tzimtzum*: *adraba*, from this itself came the whole giving and spreading downstairs.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -693,12 +814,10 @@
           ],
           "phrases": [
             {
-              "he": "ומכל זה יובן שהקו הנמשך מן הנקודה",
-              "en": "From all this it will be understood that the line drawn from the point"
+              "he": "ומכל זה יובן שהקו הנמשך מן הנקודה"
             },
             {
-              "he": "הוא רק כמו בחינת התפשטות מן היולי העצמי",
-              "en": "is only like a spreading out from the essential *hiyuli*."
+              "he": "הוא רק כמו בחינת התפשטות מן היולי העצמי"
             }
           ],
           "blocks": [
@@ -729,25 +848,35 @@
           "phrases": [
             {
               "he": "אמנם מה שנמשך בבחינת קו קצר,",
-              "en": "However, as for what is drawn as a short line,"
+              "en": "this thing that it is coming out in a way of a *kav katzar*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [3690, 3703],
+                "start": 1717.76,
+                "end": 1721.46
+              }
             },
             {
-              "he": "הנה מבואר במקום אחר,",
-              "en": "it is explained elsewhere"
+              "he": "הנה מבואר במקום אחר,"
             },
             {
-              "he": "שכמו שהנקודה בחינת היולי לגבי הקו,",
-              "en": "that just as the point is a *hiyuli* in relation to the line,"
+              "he": "שכמו שהנקודה בחינת היולי לגבי הקו,"
             },
             {
               "he": "כך הקו בחינת היולי לבחינת אורך ורוחב דשטח",
-              "en": "so the line is a *hiyuli* for the length and breadth of an area."
+              "en": "A *Kav* is like a *hiyuli* to an area, a plane.",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [419, 429],
+                "start": 238.32,
+                "end": 243.65
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "*Amnam*, now the next thing: **what is drawn as a short line**, this thing that comes out in a way of a *kav katzar*. There are several *inyanim* in the *Kav*. In some places he calls it a *kav katzar* (a short line), and later on you will see him say it is even before the *tehiru tata'a* (the lower purity). It is still called *stima d'chol stimin* (the most hidden of all hidden), and it really is also part of the *Ein Sof*, even though it is after the *tzimtzum*, just as the *reshimu* is.\n\nNot only that: it is not a lesser thing than the *reshimu*, in the same way that the *reshimu* is not a lesser thing than the *Or Ein Sof*. They are different powers. It is exactly the same as the *reshimu*, except that it is coming down. And it is not just that: this is about the level of power that it is, and it is not a lower level of power.",
+              "text": "*Amnam*, now the next thing: what is drawn as a short line, this thing that comes out in a way of a *kav katzar*. There are several *inyanim* in the *Kav*. In some places he calls it a *kav katzar* (a short line), and later on you will see him say it is even before the *tehiru tata'a* (the lower purity). It is still called *stima d'chol stimin* (the most hidden of all hidden), and it really is also part of the *Ein Sof*, even though it is after the *tzimtzum*, just as the *reshimu* is.\n\nNot only that: it is not a lesser thing than the *reshimu*, in the same way that the *reshimu* is not a lesser thing than the *Or Ein Sof*. They are different powers. It is exactly the same as the *reshimu*, except that it is coming down. And it is not just that: this is about the level of power that it is, and it is not a lower level of power.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -810,7 +939,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**just as the point is a *hiyuli* in relation to the line**, so a *Kav* is like a *hiyuli* to an area, a plane. In the same way that you make a line by having a point travel between two other points, you make an area by having a line travel between two lines.",
+              "text": "A *Kav* is like a *hiyuli* to an area, a plane. In the same way that you make a line by having a point travel between two other points, you make an area by having a line travel between two lines.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -836,30 +965,39 @@
           ],
           "phrases": [
             {
-              "he": "להיות ידוע שהקו,",
-              "en": "For it is known that the line,"
+              "he": "להיות ידוע שהקו,"
             },
             {
-              "he": "הגם שהוא בא בבחינת המשכה והתפשטות מלמעלה למטה,",
-              "en": "although it comes as a drawing down and spreading from above to below,"
+              "he": "הגם שהוא בא בבחינת המשכה והתפשטות מלמעלה למטה,"
             },
             {
-              "he": "אבל אינו ענין פרטית אופן המשכה כלל",
-              "en": "is not a matter of any particular way of drawing down at all;"
+              "he": "אבל אינו ענין פרטית אופן המשכה כלל"
             },
             {
               "he": "רק מה שנמשך האור מלמעלה למטה בלבד",
-              "en": "only that the light is drawn from above to below,"
+              "en": "the line is only what is from up to down",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2058, 2067],
+                "start": 904.28,
+                "end": 906.08
+              }
             },
             {
               "he": "שעל ידי זה נמצא בחינת מעלה ומטה מהמשפיע אל המקבל",
-              "en": "through which there comes to be an above and a below, from the *mashpia* (giver) to the *mekabel* (receiver)."
+              "en": "through this comes a *maala mata* from *mashpia* to the *mekabel*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2068, 2079],
+                "start": 906.62,
+                "end": 910.94
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "That's why in general the actual *inyan* of the *kav hamida* is *davka* the *kav katzar*: usually the *kav hamida* means the actual *kav katzar*, which measures everything else. But Rabbi Markel thinks you could also say (he says he hasn't seen it) that the *midida*, the actual measurement, is also the *Kav*. That's why it says that the *Kav* goes down to the end of *Atzilus*: that is its measurement. And it **is not a matter of any particular way of drawing down at all**.",
+              "text": "That's why in general the actual *inyan* of the *kav hamida* is *davka* the *kav katzar*: usually the *kav hamida* means the actual *kav katzar*, which measures everything else. But Rabbi Markel thinks you could also say (he says he hasn't seen it) that the *midida*, the actual measurement, is also the *Kav*. That's why it says that the *Kav* goes down to the end of *Atzilus*: that is its measurement.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1015,7 +1153,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So the line is only from up to down, and through it comes an above and a below, **from the *mashpia* (giver) to the *mekabel* (receiver)**. But in the original line there is no actual *mekabel*; he only knows that there is a *mekabel*. That means only that there is an up and a down, nothing more. You don't know where the down is, and therefore you also don't know where the up is. The up doesn't start at the beginning of the line; it starts before the *tzimtzum*, because you don't know how far up into the original *sechel* (intellect) you will have to go to bring it down, since you don't know who you're giving it to. It's just that there is an up and there is a down; that's all it is.",
+              "text": "So the line is only from up to down, and through it comes an above and a below, from the *mashpia* (giver) to the *mekabel* (receiver). But in the original line there is no actual *mekabel*; he only knows that there is a *mekabel*. That means only that there is an up and a down, nothing more. You don't know where the down is, and therefore you also don't know where the up is. The up doesn't start at the beginning of the line; it starts before the *tzimtzum*, because you don't know how far up into the original *sechel* (intellect) you will have to go to bring it down, since you don't know who you're giving it to. It's just that there is an up and there is a down; that's all it is.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1034,30 +1172,46 @@
           ],
           "phrases": [
             {
-              "he": "מה שאין כן בהיולי דנקודה",
-              "en": "Whereas in the *hiyuli* of the point"
+              "he": "מה שאין כן בהיולי דנקודה"
             },
             {
               "he": "אין בו מעלה ומטה,",
-              "en": "there is no above and below,"
+              "en": "there is no up and down",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2235, 2240],
+                "start": 969.45,
+                "end": 970.8
+              }
             },
             {
               "he": "ראש תוך וסוף כו' כידוע",
-              "en": "no head, middle and end, as is known."
+              "en": "there's no beginning or end, there's no middle",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2241, 2250],
+                "start": 970.82,
+                "end": 976.02
+              }
             },
             {
-              "he": "(וזהו מה שכתוב בעץ חיים",
-              "en": "(And this is what is written in *Etz Chaim*,"
+              "he": "(וזהו מה שכתוב בעץ חיים"
             },
             {
               "he": "דכל עיקר הארת הקו אינו רק להיות בחינת מעלה ומטה כמו שיתבאר)",
-              "en": "that the whole point of the shining of the *Kav* is only to make an above and a below, as will be explained.)"
+              "en": "the whole thing of the *Kav* is only to make up and down",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2270, 2282],
+                "start": 985.86,
+                "end": 988.53
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "In the point **there is no above and below**, no beginning and end. Like when you say \"mathematics\": which mathematics? The calculus? No, it's just a point. There is no up and down, no beginning or end, no middle: *kulo k'echad*, all of it as one. And that is what *Etz Chaim* says: the whole thing of the *Kav* is only to make up and down. That is the whole *inyan* of the *Kav*.",
+              "text": "The point is like when you say \"mathematics.\" Which mathematics? The calculus? No, it's just a point. There is no up and down, no beginning or end, no middle: *kulo k'echad*, all of it as one. And that is what *Etz Chaim* says: the whole thing of the *Kav* is only to make up and down. That is the whole *inyan* of the *Kav*.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1084,30 +1238,32 @@
           "phrases": [
             {
               "he": "וכמשל אמת הבנין,",
-              "en": "Like the analogy of the builder's measure,"
+              "en": "like the measuring stick",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2293, 2296],
+                "start": 991.95,
+                "end": 993.18
+              }
             },
             {
-              "he": "שאינו בא בגדר שטח הבנין עצמו,",
-              "en": "which does not come within the bounds of the area of the building itself,"
+              "he": "שאינו בא בגדר שטח הבנין עצמו,"
             },
             {
-              "he": "לאורך ורוחב",
-              "en": "in length and breadth,"
+              "he": "לאורך ורוחב"
             },
             {
-              "he": "רק שבו מודד כל מדידת אורך וכל מדידת רוחב",
-              "en": "but with it one measures every measure of length and every measure of breadth;"
+              "he": "רק שבו מודד כל מדידת אורך וכל מדידת רוחב"
             },
             {
-              "he": "והוא עצמו רק כמו קו הקצר שכולל כל אופני מדידות של אורך ורוחב כו'",
-              "en": "and it itself is only like the short line, which includes all the ways of measuring length and breadth."
+              "he": "והוא עצמו רק כמו קו הקצר שכולל כל אופני מדידות של אורך ורוחב כו'"
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "The builder's measuring stick",
-              "text": "The *amas habinyan* (the builder's measure) is the measuring stick. It is not part of the area of the building, in length or in breadth. Even for the length: you don't need a different length to measure two feet and a different length to measure fifty feet. You use the same tape measure, and **it itself is only like the short line**.",
+              "text": "The *amas habinyan* (the builder's measure) is like the measuring stick. Even for the length, you don't need a different length to measure two feet and a different length to measure fifty feet. You use the same tape measure.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1137,26 +1293,29 @@
           ],
           "phrases": [
             {
-              "he": "כך ציור הקו בחינת היולי",
-              "en": "So the form of the line is a *hiyuli*"
+              "he": "כך ציור הקו בחינת היולי לגבי בחינת שטח האותיות",
+              "en": "Not only that, the *Kav* is also a *hiyuli* for letters.",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2404, 2414],
+                "start": 1036.58,
+                "end": 1041.14
+              }
             },
             {
-              "he": "לגבי בחינת שטח האותיות לעשותם באורך ורוחב,",
-              "en": "in relation to the area of the letters, to make them in length and breadth,"
+              "he": "לעשותם באורך ורוחב,"
             },
             {
-              "he": "כמו בחינת קוין שבאות הב' כו'",
-              "en": "like the lines in the letter *beis*,"
+              "he": "כמו בחינת קוין שבאות הב' כו'"
             },
             {
-              "he": "וכמו שכתוב במקום אחר",
-              "en": "as is written elsewhere."
+              "he": "וכמו שכתוב במקום אחר"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Not only that: the *Kav* is also a *hiyuli* for letters, **like the lines in the letter *beis***. A *beis* is made of three lines: you have three lines, you have a *beis*. If somebody knows how to make a line, you can teach him how to make a *beis*. So this line includes all ideas in it, because it includes all the letters, and the letters can be put into all kinds of ideas.",
+              "text": "Not only that: the *Kav* is also a *hiyuli* for letters. A *beis* is made of three lines: you have three lines, you have a *beis*. If somebody knows how to make a line, you can teach him how to make a *beis*. So this line includes all ideas in it, because it includes all the letters, and the letters can be put into all kinds of ideas.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1182,38 +1341,55 @@
           ],
           "phrases": [
             {
-              "he": "ולפי זה גם ראשית המשכת הקו מן הנקודה,",
-              "en": "Accordingly, also the beginning of the drawing of the line from the point,"
+              "he": "ולפי זה גם ראשית המשכת הקו מן הנקודה,"
             },
             {
-              "he": "הגם שהוא בא בבחינת התפשטות והמשכה,",
-              "en": "although it comes as spreading and drawing down,"
+              "he": "הגם שהוא בא בבחינת התפשטות והמשכה,"
             },
             {
-              "he": "אבל הוא בחינת המשכה היולית עדיין,",
-              "en": "is still a drawing down that is *hiyuli*,"
+              "he": "אבל הוא בחינת המשכה היולית עדיין,"
             },
             {
-              "he": "לכלול כמה פרטי אופני המשכות לאורך ורוחב במדה",
-              "en": "to include many particular ways of drawing down, in length and breadth, in measure."
+              "he": "לכלול כמה פרטי אופני המשכות",
+              "en": "and this includes all kinds of different *hamshachos*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2561, 2568],
+                "start": 1102.8,
+                "end": 1105.36
+              }
+            },
+            {
+              "he": "לאורך ורוחב במדה"
             },
             {
               "he": "ולזה נקרא קו המדה כידוע",
-              "en": "And this is why it is called the *kav hamida* (the line of measure), as is known."
+              "en": "and that's why it's called *kav hamida*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2627, 2633],
+                "start": 1125.65,
+                "end": 1127.7
+              }
             },
             {
               "he": "ועל זה מורה צורתו שהוא קצר בעצם,",
-              "en": "And its shape shows this: it is short in essence,"
+              "en": "means it just comes out",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2641, 2645],
+                "start": 1132.78,
+                "end": 1133.78
+              }
             },
             {
-              "he": "והולך ונמשך מלמעלה למטה בלבד",
-              "en": "and only goes and is drawn from above to below."
+              "he": "והולך ונמשך מלמעלה למטה בלבד"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**still a drawing down that is *hiyuli***: it's not that it actually comes out at all. Nothing happened. He just first thought what he's going to teach, mathematics, and then he thought, \"Well, I'm going to teach it to somebody.\" That's it; that's all it is, and that's the line. It includes all kinds of different ways of drawing down, because it's to any somebody, in length and in breadth. A big somebody, you'll have a big *rochav* that you can give over to him. A little somebody, you won't be able to give him such a big *rochav*, but you'll have to go through a much bigger *orech*.",
+              "text": "It's not that it actually comes out at all. Nothing happened. He just first thought what he's going to teach, mathematics, and then he thought, \"Well, I'm going to teach it to somebody.\" That's it; that's all it is, and that's the line. It includes all kinds of different ways of drawing down, because it's to any somebody. A big somebody, you'll have a big *rochav* that you can give over to him. A little somebody, you won't be able to give him such a big *rochav*, but you'll have to go through a much bigger *orech*.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1225,7 +1401,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And that's why it is called *kav hamida*. And its shape shows it: it is **short in essence**, it just comes out, and goes from above to below. It just comes out, and that's it.",
+              "text": "And that's why it is called *kav hamida*. It just comes out, and that's it.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1245,42 +1421,60 @@
           ],
           "phrases": [
             {
-              "he": "אבל הוא כולל בהמשכתו על כל פנים",
-              "en": "But in its drawing down it includes, at any rate,"
-            },
-            {
-              "he": "כל מה שיש בהעלם ההיולי דנקודה כו',",
-              "en": "all that is in the hiddenness of the *hiyuli* of the point,"
+              "he": "אבל הוא כולל בהמשכתו על כל פנים כל מה שיש בהעלם ההיולי דנקודה כו',",
+              "en": "but it includes in this that it's *mamshich* everything that is hidden in the *reshimu*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2676, 2693],
+                "start": 1146.04,
+                "end": 1153
+              }
             },
             {
               "he": "רק שבא באופן המשכה למטה",
-              "en": "only that it comes in a way of spreading downward."
+              "en": "but it comes in a way of spreading downwards",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2699, 2707],
+                "start": 1156.3,
+                "end": 1158.28
+              }
             },
             {
-              "he": "והוא בא מכח אור העצמי הנעלם שבעצמות המשפיע",
-              "en": "And it comes from the power of the hidden essential light in the essence of the *mashpia*"
-            },
-            {
-              "he": "שלפני צמצומו בנקודה א'",
-              "en": "that was before his contraction into a single point,"
+              "he": "והוא בא מכח אור העצמי הנעלם שבעצמות המשפיע שלפני צמצומו בנקודה א'",
+              "en": "and really it comes from the same power that the *tzimtzum* comes",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2721, 2741],
+                "start": 1165.44,
+                "end": 1174.05
+              }
             },
             {
               "he": "רק שבא דרך קו לבד,",
-              "en": "only that it comes by way of a line alone,"
+              "en": "except that it doesn't come in a way of a full infinite light, but only in a way of a *kav katzar*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2748, 2771],
+                "start": 1176.62,
+                "end": 1183.41
+              }
             },
             {
-              "he": "ולא כמו שהוא בעצמות המשפיע,",
-              "en": "and not as it is in the essence of the *mashpia*,"
-            },
-            {
-              "he": "שהוא בהרחבת הערך של העצמות ממש",
-              "en": "which is in the breadth of the measure of the Essence itself."
+              "he": "ולא כמו שהוא בעצמות המשפיע, שהוא בהרחבת הערך של העצמות ממש",
+              "en": "the explanation is going to come according to the *mekabel*, not according to how the *mashpia* understands it",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2790, 2808],
+                "start": 1191.85,
+                "end": 1200.62
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It includes in its drawing down everything that is hidden in the *reshimu*, **only that it comes in a way of spreading downward**. And really it comes from the same power that the *tzimtzum* comes from: from the hidden light in the essence of the *mashpia*, before his contraction into one point.",
+              "text": "It includes in its drawing down everything that is hidden in the *reshimu*, only that it comes in a way of spreading downward. And really it comes from the same power that the *tzimtzum* comes from.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1292,7 +1486,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**only that it comes by way of a line alone**: not in a way of a full infinite light, but only in a way of a *kav katzar*. And not as it is in the essence of the *mashpia*, in the *harchava* (breadth) of the measure of the *Atzmus*. In other words, the explanation is going to come according to the *mekabel*, not according to how the *mashpia* understands it.",
+              "text": "Except that it doesn't come in a way of a full infinite light, but only in a way of a *kav katzar*. In other words, the explanation is going to come according to the *mekabel*, not according to how the *mashpia* understands it.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",
@@ -1313,34 +1507,66 @@
           ],
           "phrases": [
             {
-              "he": "ובקו זה הנה אור העצמות בא לפי ערך המקבלים לבד",
-              "en": "And in this line the light of the Essence comes only according to the measure of the *mekablim* (receivers);"
+              "he": "ובקו זה הנה אור העצמות"
             },
             {
-              "he": "אבל עם כל זה",
-              "en": "but with all that,"
+              "he": "בא לפי ערך המקבלים לבד",
+              "en": "only according to the students",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2831, 2835],
+                "start": 1208.36,
+                "end": 1209.4
+              }
+            },
+            {
+              "he": "אבל עם כל זה"
             },
             {
               "he": "הרי יש בו מעין ודוגמת אור העצמות הנעלם בנקודה כו',",
-              "en": "there is in it something of the kind and a likeness of the light of the Essence hidden in the point,"
+              "en": "It has *mamash*, actually, the same thing like the *or ha'Atzmus* which is in the *reshimu*",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2888, 2906],
+                "start": 1234.14,
+                "end": 1239.74
+              }
             },
             {
               "he": "רק שבא בדרך המשכה למטה",
-              "en": "only that it comes in a way of spreading downward."
+              "en": "only that it comes in a way of spreading downwards",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2912, 2921],
+                "start": 1242.66,
+                "end": 1244.86
+              }
             },
             {
               "he": "על כן בא בציור קו",
-              "en": "Therefore it comes in the form of a line,"
+              "en": "that's why it comes, and we call it like a line",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2930, 2941],
+                "start": 1252.63,
+                "end": 1256.06
+              }
             },
             {
               "he": "והוא בחינת היולי לכל אור ושפע המקבלים כו' ודי למבין:",
-              "en": "and it is a *hiyuli* for all the light and *shefa* (flow) of the *mekablim*; and this is enough for one who understands."
+              "en": "And it's already in a way of a *hiyuli* for any kind of *or* and *shefa* to any kind of *mekabel*, and this is enough to understand.",
+              "audio": {
+                "lecture": "011 Tape020-Side2-Ch14.mp3",
+                "words": [2952, 2978],
+                "start": 1259.5,
+                "end": 1268.56
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "In this line the light of the *Atzmus* comes **only according to the measure of the *mekablim* (receivers)**, only according to the students. But nonetheless: this book we are learning now, even though the book is according to us, really comes from the original *harchava* of the *Atzmus* of the Rebbe, even when it is in a *Kav*.",
+              "text": "It comes only according to the *mekablim* (receivers), only according to the students. But nonetheless: this book we are learning now, even though the book is according to us, really comes from the original *harchava* (breadth) of the *Atzmus* of the Rebbe, even when it is in a *Kav*.",
               "audio": [
                 {
                   "lecture": "011 Tape020-Side2-Ch14.mp3",

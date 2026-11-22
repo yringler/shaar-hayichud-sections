@@ -129,28 +129,39 @@
           ],
           "phrases": [
             {
-              "he": "(י) ומעתה הנה יש להבין דרך פרט בכל ד' עולמות דאבי''ע,",
-              "en": "(10) Now, we have to understand *derech prat* (in the particular way) all four worlds of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*:"
+              "he": "(י) ומעתה הנה יש להבין דרך פרט",
+              "en": "So now he's going to explain in the *derech prat*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [27, 36],
+                "start": 20.92,
+                "end": 22.76
+              }
             },
             {
-              "he": "דהיינו בכל פרטי ענין עשר ספירות דאבי''ע",
-              "en": "that is, in all the particulars of the ten *sefiros* of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*,"
+              "he": "בכל ד' עולמות דאבי''ע,"
             },
             {
-              "he": "אורות וכלים והתלבשותן זה בזה",
-              "en": "the lights and the vessels and how they are dressed one in the other,"
+              "he": "דהיינו בכל פרטי ענין עשר ספירות דאבי''ע"
+            },
+            {
+              "he": "אורות וכלים והתלבשותן זה בזה"
             },
             {
               "he": "בכל פרטיהן,",
-              "en": "in all their particulars;"
+              "en": "He's going to explain all the particulars.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [61, 67],
+                "start": 33.14,
+                "end": 34.74
+              }
             },
             {
-              "he": "גם בכל ספירה שמתחלקת לפרטי פרטיות",
-              "en": "even every *sefira*, which divides into particulars of particulars,"
+              "he": "גם בכל ספירה שמתחלקת לפרטי פרטיות"
             },
             {
-              "he": "כמו גם בבחינת חסד דמלכות שבחכמה שבמלכות דחסד וכהאי גוונא",
-              "en": "as in *chesed* of *Malchus* of *chachma* of *Malchus* of *chesed*, and the like."
+              "he": "כמו גם בבחינת חסד דמלכות שבחכמה שבמלכות דחסד וכהאי גוונא"
             }
           ],
           "blocks": [
@@ -261,7 +272,7 @@
             },
             {
               "kind": "explanation",
-              "text": "\"Now, chapter 10.\" Now that he has told us that *hisbonenus* has to be done *derech prat*, he is going to explain in the *derech prat*. **all the particulars of the ten *sefiros***: this is what he is going to explain, everything.",
+              "text": "\"Now, chapter 10.\" Now that he has told us that *hisbonenus* has to be done *derech prat*, he is going to explain in the *derech prat*. all the particulars of the ten *sefiros*: this is what he is going to explain, everything.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -273,7 +284,7 @@
             },
             {
               "kind": "explanation",
-              "text": "He is going to explain all the particulars, and **every *sefira*, which divides into particulars of particulars**: *chesed* of *Malchus* of *chachma* of *Malchus* of *chesed*, five levels. That means any five levels. When you finish this thing you should be able to figure it out; and really *v'chahai gavna*, \"and the like\", means even six levels.",
+              "text": "He is going to explain all the particulars, and every *sefira*, which divides into particulars of particulars: *chesed* of *Malchus* of *chachma* of *Malchus* of *chesed*, five levels. That means any five levels. When you finish this thing you should be able to figure it out; and really *v'chahai gavna*, \"and the like\", means even six levels.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -292,24 +303,23 @@
           ],
           "phrases": [
             {
-              "he": "וענין יחודם והתכללותם",
-              "en": "And the matter of their unification and their inclusion"
+              "he": "וענין יחודם והתכללותם בבחינת הכתר שבכל עולם,",
+              "en": "How everything is included in the *Keser* of each world,",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [120, 129],
+                "start": 60.35,
+                "end": 62.8
+              }
             },
             {
-              "he": "בבחינת הכתר שבכל עולם,",
-              "en": "in the *Keser* of each world,"
+              "he": "שהוא בחינת הממוצע בין עולם העליון לתחתון הימנו"
             },
             {
-              "he": "שהוא בחינת הממוצע בין עולם העליון לתחתון הימנו",
-              "en": "which is the intermediary between the upper world and the one below it,"
+              "he": "כידוע הכלל דרך קיצור"
             },
             {
-              "he": "כידוע הכלל דרך קיצור",
-              "en": "as the rule is known, in short:"
-            },
-            {
-              "he": "שמבחינת מלכות שבעליון נעשה כתר לתחתון, עד רום המעלות.",
-              "en": "the *Malchus* of the upper becomes the *Keser* of the lower, up to the highest of levels."
+              "he": "שמבחינת מלכות שבעליון נעשה כתר לתחתון, עד רום המעלות."
             }
           ],
           "blocks": [
@@ -341,29 +351,45 @@
           "phrases": [
             {
               "he": "אך הנה מתחלה",
-              "en": "However, first of all"
+              "en": "However, now that we're getting started, first of all",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [169, 180],
+                "start": 80.54,
+                "end": 84.08
+              }
             },
             {
-              "he": "יש לכל מתבונן להתבונן במקור הראשון",
-              "en": "every contemplator has to contemplate the first source,"
+              "he": "יש לכל מתבונן להתבונן במקור הראשון"
             },
             {
               "he": "הנקרא מקורא דקולא",
-              "en": "called *Mekora d'Kula*, the source of everything,"
+              "en": "the source of everything,",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [200, 203],
+                "start": 93.62,
+                "end": 94.76
+              }
             },
             {
-              "he": "שהוא בבחינת עצמות אור אין סוף",
-              "en": "which is the Essence of the *Or Ein Sof*"
+              "he": "שהוא בבחינת עצמות אור אין סוף"
             },
             {
               "he": "שלפני הצמצום הנקרא מקום פנוי הנזכר לעיל",
-              "en": "before the *tzimtzum*, which is called the *makom panui* (the empty place), mentioned above."
+              "en": "before the *tzimtzum*, which is called the *makom panui*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [224, 232],
+                "start": 102.28,
+                "end": 104.28
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Now that we are getting started, first of all we have to get started with a certain thing: **the first source, … called *Mekora d'Kula*, the source of everything**. It is the Essence of the *Or Ein Sof* (the infinite light) before the *tzimtzum*, the *tzimtzum* that is called the *makom panui*.",
+              "text": "Now that we are getting started, first of all we have to get started with a certain thing: the first source, … called *Mekora d'Kula*, the source of everything. It is the Essence of the *Or Ein Sof* (the infinite light) before the *tzimtzum*, the *tzimtzum* that is called the *makom panui*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -383,21 +409,29 @@
           "phrases": [
             {
               "he": "גם שם דרך פרט דוקא",
-              "en": "There too, *davka* (specifically) in the particular way."
+              "en": "And over there we're also going to look in a way of a *derech prat*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [238, 252],
+                "start": 108.08,
+                "end": 111.05
+              }
             },
             {
-              "he": "והוא הנקרא מאריך באחד,",
-              "en": "This is what is called *ma'arich b'echad* (lengthening the word *Echad*),"
-            },
-            {
-              "he": "באחדות הפשוטה דוקא",
-              "en": "*davka* in the simple oneness."
+              "he": "והוא הנקרא מאריך באחד, באחדות הפשוטה דוקא",
+              "en": "This is the inner meaning of *ma'arich b'echad* in *Hashem Elokeinu Hashem Echad*: he looks at length *b'achdus hapeshuta davka*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [257, 290],
+                "start": 112.96,
+                "end": 127.68
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Over there too we are going to look *derech prat*. That is the inner meaning of *ma'arich b'echad*, drawing out the word *Echad* in \"*Hashem Elokeinu Hashem Echad*\": that one looks at length into **the simple oneness**.",
+              "text": "Over there too we are going to look *derech prat*. That is the inner meaning of *ma'arich b'echad*, drawing out the word *Echad* in \"*Hashem Elokeinu Hashem Echad*\": that one looks at length into the simple oneness.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -417,25 +451,49 @@
           "phrases": [
             {
               "he": "ונחלק לג' מדריגות דרך כלל",
-              "en": "And it divides into three levels, in general,"
+              "en": "In general we divide it into three levels.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [296, 303],
+                "start": 133.36,
+                "end": 136.24
+              }
             },
             {
               "he": "ובכל א' כלול מי׳ ספירות",
-              "en": "and each one includes ten *sefiros*."
+              "en": "Each one of them includes within it ten *sefiros*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [408, 416],
+                "start": 179.64,
+                "end": 182.66
+              }
             },
             {
               "he": "והוא יחיד ואחד וקדמון,",
-              "en": "These are *Yachid*, *Echad* and *Kadmon*;"
+              "en": "These three levels: *Yachid*, *Echad* and *Kadmon*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [418, 423],
+                "start": 183.95,
+                "end": 188.55
+              }
             },
             {
               "he": "והכל בבחינת עצמות אור אין סוף שלפני הצמצום הראשון הנזכר לעיל",
-              "en": "and all of it is the Essence of the *Or Ein Sof*, before the first *tzimtzum* mentioned above."
+              "en": "This all is still inside the *Atzmus*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [434, 443],
+                "start": 192.74,
+                "end": 195.08
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**in general** we divide it into three levels. Really, of course, it divides into many more levels, because these three are only the levels of the *pnimiyus ha'or* (the inner aspect of the light). He is not even talking about the *Maor* (the source of the light) here. The *pnimiyus ha'or* divides into three levels, and then there is the *hispashtus ha'or* (the spreading forth of the light). He is talking about the *etzem ha'or*, the light itself, and, as we were just saying before, there are more levels; but in general we are talking about the *Atzmus Or Ein Sof* (the Essence of the infinite light) here. **each one includes ten *sefiros***.\n\nThe three levels are *Yachid* (singular), *Echad* (one) and *Kadmon* (preceding). And all this is still inside the *Atzmus*.",
+              "text": "**in general** we divide it into three levels. Really, of course, it divides into many more levels, because these three are only the levels of the *pnimiyus ha'or* (the inner aspect of the light). He is not even talking about the *Maor* (the source of the light) here. The *pnimiyus ha'or* divides into three levels, and then there is the *hispashtus ha'or* (the spreading forth of the light). He is talking about the *etzem ha'or*, the light itself, and, as we were just saying before, there are more levels; but in general we are talking about the *Atzmus Or Ein Sof* (the Essence of the infinite light) here. each one includes ten *sefiros*.\n\nThe three levels are *Yachid* (singular), *Echad* (one) and *Kadmon* (preceding). And all this is still inside the *Atzmus*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -462,39 +520,32 @@
           ],
           "phrases": [
             {
-              "he": "בחינת יחיד משמעו לבדו ממש",
-              "en": "*Yachid* means *mamash* (actually, literally) alone,"
+              "he": "בחינת יחיד משמעו לבדו ממש"
             },
             {
-              "he": "והוא למעלה מהתאחדות נפרדים",
-              "en": "which is above a unification of separate things,"
+              "he": "והוא למעלה מהתאחדות נפרדים"
             },
             {
-              "he": "שנקרא אחד כידוע",
-              "en": "which is called *Echad*, as is known."
+              "he": "שנקרא אחד כידוע"
             },
             {
-              "he": "ולפי זה בבחינת העצמות ממש",
-              "en": "So in the Essence itself"
+              "he": "ולפי זה בבחינת העצמות ממש"
             },
             {
-              "he": "לא יתכן לומר עדיין ענין עשר ספירות כלל",
-              "en": "one cannot yet speak of ten *sefiros* at all."
+              "he": "לא יתכן לומר עדיין ענין עשר ספירות כלל"
             },
             {
-              "he": "וכמו מלכות דאין סוף,",
-              "en": "As with *Malchus* of the *Ein Sof*:"
+              "he": "וכמו מלכות דאין סוף,"
             },
             {
-              "he": "שממילא מובן שקדם לזה בחינת כתר וחכמה כו'",
-              "en": "from it one understands by itself that *Keser* and *chachma* came before it."
+              "he": "שממילא מובן שקדם לזה בחינת כתר וחכמה כו'"
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "Speech means a will and a brain",
-              "text": "He reads that **one cannot yet speak of ten *sefiros* at all**, and then the comparison: *Malchus* of the *Ein Sof*, which by itself shows that *Keser* and *chachma* came before it. *Malchus* means speech. If you see speech somewhere, there has to be a *ratzon* (will) and a brain. You cannot have speech without a will and a brain.",
+              "text": "He reads that one cannot yet speak of ten *sefiros* at all, and then the comparison: *Malchus* of the *Ein Sof*, which by itself shows that *Keser* and *chachma* came before it. *Malchus* means speech. If you see speech somewhere, there has to be a *ratzon* (will) and a brain. You cannot have speech without a will and a brain.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -513,30 +564,39 @@
           ],
           "phrases": [
             {
-              "he": "ובאמת גם בבחינת העצמות דאור אין סוף",
-              "en": "And in truth, even the Essence of the *Or Ein Sof*"
+              "he": "ובאמת גם בבחינת העצמות דאור אין סוף"
             },
             {
-              "he": "שנקרא לבדו",
-              "en": "which is called *Levado* (Alone)"
+              "he": "שנקרא לבדו"
             },
             {
-              "he": "כלול בעצמו י׳ ספירות",
-              "en": "includes in itself ten *sefiros*;"
+              "he": "כלול בעצמו י׳ ספירות"
             },
             {
               "he": "אך שנקרא חכים לא בחכמה ידיעא כידוע,",
-              "en": "only it is called \"wise, but not with a known wisdom\", as is known,"
+              "en": "He is wise, but not with a wisdom that can be separated out so you can know that this is the wisdom.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [640, 669],
+                "start": 313.01,
+                "end": 323.46
+              }
             },
             {
               "he": "עד ולאו מכל אלין מדות כלל.",
-              "en": "up to \"and not of any of these attributes at all.\""
+              "en": "It's not just that *lav b'chachma yedia*; it really is not of these *middos* at all.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [684, 700],
+                "start": 330.12,
+                "end": 336.9
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**includes in itself ten *sefiros***. And by the way, this level that is called *Levado*: in *Emek HaMelech* (a Kabbalistic work) he calls the *Maor* and the *Levad* levels of *Yachid*. In other words, here he is talking about the most external level of *Yachid*, which is the most inward level of the *Or Ein Sof*. So even the *Atzmus Or Ein Sof* includes in itself ten *sefiros*.",
+              "text": "includes in itself ten *sefiros*. And by the way, this level that is called *Levado*: in *Emek HaMelech* (a Kabbalistic work) he calls the *Maor* and the *Levad* levels of *Yachid*. In other words, here he is talking about the most external level of *Yachid*, which is the most inward level of the *Or Ein Sof*. So even the *Atzmus Or Ein Sof* includes in itself ten *sefiros*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -548,7 +608,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**\"wise, but not with a known wisdom\"** means: not with a discernible *chachma* (wisdom). It can be explained in different ways too, but the main explanation is that He is wise, but not with a wisdom that can be separated out so that you can know: this is the wisdom. And then **\"and not of any of these attributes at all\"**: it is not only that He is not wise with a known wisdom; He really is not of these *middos* (attributes) at all. Just the opposite: the *middos* come from Him. Not that they describe Him in any way.",
+              "text": "\"wise, but not with a known wisdom\" means: not with a discernible *chachma* (wisdom). It can be explained in different ways too, but the main explanation is that He is wise, but not with a wisdom that can be separated out so that you can know: this is the wisdom. And then \"and not of any of these attributes at all\": it is not only that He is not wise with a known wisdom; He really is not of these *middos* (attributes) at all. Just the opposite: the *middos* come from Him. Not that they describe Him in any way.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -573,26 +633,29 @@
           ],
           "phrases": [
             {
-              "he": "והענין הוא",
-              "en": "The matter is this:"
+              "he": "והענין הוא"
             },
             {
-              "he": "דבאמת כמו שעצמות האין סוף הוא אור פשוט בתכלית הפשיטות,",
-              "en": "in truth, just as the Essence of the *Ein Sof* is a simple light, utterly simple,"
+              "he": "דבאמת כמו שעצמות האין סוף הוא אור פשוט בתכלית הפשיטות,"
             },
             {
-              "he": "כך ממש בחינת אורו וזיוו הנקרא אור אין סוף",
-              "en": "so *mamash* is His light and radiance, called the *Or Ein Sof*:"
+              "he": "כך ממש בחינת אורו וזיוו הנקרא אור אין סוף"
             },
             {
               "he": "דהיינו הוא ושמו בלבד כנזכר לעיל",
-              "en": "that is, only He and His Name, as mentioned above."
+              "en": "That means only Him and His name.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [752, 759],
+                "start": 363.51,
+                "end": 367.12
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "First he is talking about the *Maor*, the Essence, which is **a simple light, utterly simple**; and **so *mamash* is His light and radiance** (*mamash*: actually, literally): **only He and His Name**. The word *bilvad* (only) here is a total hint; he is not really explaining it here. The simple meaning is that there is only Him and His Name: there is no other level, that is all there is. But really it is within the matter of *Levado*. So \"Him and His Name\" means: the *Atzmus Ein Sof* is \"He\", and the *Or Ein Sof* is \"His Name\".",
+              "text": "First he is talking about the *Maor*, the Essence, which is a simple light, utterly simple; and so *mamash* is His light and radiance (*mamash*: actually, literally): only He and His Name. The word *bilvad* (only) here is a total hint; he is not really explaining it here. The simple meaning is that there is only Him and His Name: there is no other level, that is all there is. But really it is within the matter of *Levado*. So \"Him and His Name\" means: the *Atzmus Ein Sof* is \"He\", and the *Or Ein Sof* is \"His Name\".",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -611,16 +674,17 @@
           ],
           "phrases": [
             {
-              "he": "והוא הנקרא טהירו עילאה",
-              "en": "This is what is called *tehiru ila'a* (the upper purity),"
+              "he": "והוא הנקרא טהירו עילאה"
             },
             {
-              "he": "שזהו ענין ובחינת התגלות אור עצמותו",
-              "en": "which is the revelation of the light of His Essence"
-            },
-            {
-              "he": "כמו שהוא דוקא",
-              "en": "*davka* exactly as it is."
+              "he": "שזהו ענין ובחינת התגלות אור עצמותו כמו שהוא דוקא",
+              "en": "That is the revelation of the light of Himself, exactly how He is.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [899, 915],
+                "start": 435.5,
+                "end": 447.01
+              }
             }
           ],
           "blocks": [
@@ -638,7 +702,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**the revelation of the light of His Essence *davka* exactly as it is** (*davka*: specifically, precisely): the actual revelation, exactly as He is. It is explained in another place that the *etzem Atzmus Or Ein Sof* is really a revelation to Himself. It is still not the revelation that is going to go out to others. It is just to Himself, not to anybody else. It is *mamash* to nobody.",
+              "text": "the revelation of the light of His Essence *davka* exactly as it is (*davka*: specifically, precisely): the actual revelation, exactly as He is. It is explained in another place that the *etzem Atzmus Or Ein Sof* is really a revelation to Himself. It is still not the revelation that is going to go out to others. It is just to Himself, not to anybody else. It is *mamash* to nobody.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -658,25 +722,49 @@
           "phrases": [
             {
               "he": "והוא הנקרא יחיד,",
-              "en": "This is what is called *Yachid*:"
+              "en": "This is what is called *Yachid*:",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [984, 989],
+                "start": 480.3,
+                "end": 482.24
+              }
             },
             {
               "he": "שאין עוד מלבדו",
-              "en": "there is no more besides Him"
+              "en": "there's no more besides Him,",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [993, 997],
+                "start": 484.36,
+                "end": 485.64
+              }
             },
             {
               "he": "לומר בו לשון התאחדות או לשון יחוד",
-              "en": "to speak of Him in terms of unification, or of unity."
+              "en": "that you really cannot even call it a unification or a unity.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1043, 1054],
+                "start": 507.49,
+                "end": 514.88
+              }
             },
             {
               "he": "וזהו אנת הוא חד ולא בחושבן י' כו'.",
-              "en": "And this is \"You are One, and not in a count\": [the count of] ten."
+              "en": "You are one and not with a *cheshbon*, not with a mathematics. Which mathematics? Ten: that's ten *sefiros*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1110, 1127],
+                "start": 540.02,
+                "end": 547.02
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**there is no more besides Him**, *ein od milvado*. But remember that this *ein od milvado* is really its most external part: the actual *gilui* (revelation) of it, which can almost be called its *hispashtus* (spreading forth). **to speak of Him in terms of unification, or of unity**: you really cannot even call it a unification or a unity, because it does not apply to it. Even to call it *Yachid* is wrong, since he just said *yichud*, and *Yachid* is a word of *yichud*, unity.",
+              "text": "there is no more besides Him, *ein od milvado*. But remember that this *ein od milvado* is really its most external part: the actual *gilui* (revelation) of it, which can almost be called its *hispashtus* (spreading forth). to speak of Him in terms of unification, or of unity: you really cannot even call it a unification or a unity, because it does not apply to it. Even to call it *Yachid* is wrong, since he just said *yichud*, and *Yachid* is a word of *yichud*, unity.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -708,27 +796,35 @@
           "phrases": [
             {
               "he": "אך מה שאמרו חכים ולא בחכמה ידיעא כו'",
-              "en": "But what they said, \"wise, but not with a known wisdom\","
+              "en": "So why do they say He is wise, but not with a known wisdom?",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1136, 1149],
+                "start": 552.42,
+                "end": 555.58
+              }
             },
             {
-              "he": "שיש על כל פנים חלוקי מדריגות,",
-              "en": "that there are at any rate distinctions of levels,"
+              "he": "שיש על כל פנים חלוקי מדריגות,"
             },
             {
-              "he": "חכים ומבין חסדן ורחמן כו'",
-              "en": "wise and understanding, kind and merciful,"
+              "he": "חכים ומבין חסדן ורחמן כו'"
             },
             {
               "he": "הכל לא מצד עצמותו,",
-              "en": "all this is not from the side of His Essence,"
+              "en": "This thing that we're calling *chacham* is not really that it actually describes Him.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1180, 1193],
+                "start": 569,
+                "end": 574.82
+              }
             },
             {
-              "he": "רק מצד מה ששיער בעצמו בכח",
-              "en": "only from what He estimated in Himself, in potential,"
+              "he": "רק מצד מה ששיער בעצמו בכח"
             },
             {
-              "he": "מה שעתיד להיות בפועל אחר הצמצום הראשון הנזכר לעיל",
-              "en": "of what would be in actuality after the first *tzimtzum* mentioned above."
+              "he": "מה שעתיד להיות בפועל אחר הצמצום הראשון הנזכר לעיל"
             }
           ],
           "blocks": [
@@ -820,29 +916,38 @@
           "phrases": [
             {
               "he": "(וכמו שכתוב במקדש מלך בלשון האריז''ל עצמו ומבואר במקום אחר באריכות)",
-              "en": "(As is written in *Mikdash Melech*, in the words of the Arizal himself, and explained elsewhere at length.)"
+              "en": "This is explained in the *Mikdash Melech*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1678, 1686],
+                "start": 826.1,
+                "end": 835.46
+              }
             },
             {
-              "he": "וזהו ענין כללות המאמר הראשון בזוהר,",
-              "en": "And this is the general meaning of the first saying of the *Zohar*:"
+              "he": "וזהו ענין כללות המאמר הראשון בזוהר,"
             },
             {
-              "he": "בריש הורמנא דמלכא גליף גליפו בטהירו עילאה",
-              "en": "\"At the head of the King's authority, He engraved an engraving in the *tehiru ila'a*.\""
+              "he": "בריש הורמנא דמלכא גליף גליפו בטהירו עילאה"
             },
             {
-              "he": "פירוש בעצמות גלוי אורו הפשוט הנזכר לעיל שנקרא טהירו עילאה,",
-              "en": "That is: in the Essence of the revelation of His simple light mentioned above, called *tehiru ila'a*,"
+              "he": "פירוש בעצמות גלוי אורו הפשוט הנזכר לעיל שנקרא טהירו עילאה,"
             },
             {
               "he": "גליף גליפו שהוא ענין חקיקת אותיות",
-              "en": "\"He engraved an engraving\", which is the engraving of letters."
+              "en": "He engraved letters,",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1729, 1731],
+                "start": 862.98,
+                "end": 866.54
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This is explained in *Mikdash Melech* (a commentary on the Zohar); this little blurb here is a reference, a footnote.\n\nThen the first saying of the *Zohar*: **\"He engraved an engraving\", which is the engraving of letters**. He engraved letters. Later on we will learn that there is the *ratzon hapashut* (the simple will), and within the *ratzon hapashut* there is the *ratzon hamuchlat* (the absolute will); that is the engraving of letters.",
+              "text": "This is explained in *Mikdash Melech* (a commentary on the Zohar); this little blurb here is a reference, a footnote.\n\nThen the first saying of the *Zohar*: \"He engraved an engraving\", which is the engraving of letters. He engraved letters. Later on we will learn that there is the *ratzon hapashut* (the simple will), and within the *ratzon hapashut* there is the *ratzon hamuchlat* (the absolute will); that is the engraving of letters.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -861,38 +966,31 @@
           ],
           "phrases": [
             {
-              "he": "ובריש הורמנא,",
-              "en": "And \"at the head of the authority\":"
+              "he": "ובריש הורמנא,"
             },
             {
-              "he": "שזה כשעלה ברצונו הפשוט,",
-              "en": "that is when it arose in His simple will,"
+              "he": "שזה כשעלה ברצונו הפשוט,"
             },
             {
-              "he": "הוא בחינת כתר,",
-              "en": "which is *Keser*;"
+              "he": "הוא בחינת כתר,"
             },
             {
-              "he": "ובחינת האותיות שחקק",
-              "en": "and the letters that He engraved"
+              "he": "ובחינת האותיות שחקק"
             },
             {
-              "he": "הוא בחינת המלכות דאור אין סוף",
-              "en": "are the *Malchus* of the *Or Ein Sof*."
+              "he": "הוא בחינת המלכות דאור אין סוף"
             },
             {
-              "he": "ואם כן יש ראש וסוף,",
-              "en": "If so, there is a head and an end,"
+              "he": "ואם כן יש ראש וסוף,"
             },
             {
-              "he": "כתר ומלכות, גם בבחינת עצמיות אור אין סוף",
-              "en": "*Keser* and *Malchus*, even in the Essence of the *Or Ein Sof*."
+              "he": "כתר ומלכות, גם בבחינת עצמיות אור אין סוף"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**when it arose in His simple will**: that He wants a certain thing. So if you are telling me it is like this, **there is a head and an end, *Keser* and *Malchus***, in the Essence of the *Or Ein Sof*. Not only that: you have to say there is a *chachma*, because how did He figure out how to make letters? \"A dog can have a *ratzon*, and he can't write it.\" And you have to say there is a *bina*, because to divide into letters you have to have *bina*. And presumably, if there is *bina* there are *middos*.",
+              "text": "when it arose in His simple will: that He wants a certain thing. So if you are telling me it is like this, there is a head and an end, *Keser* and *Malchus*, in the Essence of the *Or Ein Sof*. Not only that: you have to say there is a *chachma*, because how did He figure out how to make letters? \"A dog can have a *ratzon*, and he can't write it.\" And you have to say there is a *bina*, because to divide into letters you have to have *bina*. And presumably, if there is *bina* there are *middos*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -911,28 +1009,57 @@
           ],
           "phrases": [
             {
-              "he": "וביאורו",
-              "en": "And the explanation:"
+              "he": "וביאורו"
             },
             {
-              "he": "שעלה במחשבה ורצון הפשוט אנא אמלוך",
-              "en": "it arose in the thought and the simple will, \"*Ana Emloch*\" (I shall rule);"
+              "he": "שעלה במחשבה ורצון הפשוט",
+              "en": "When it came up in the *ratzon hapashut*",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1917, 1924],
+                "start": 951.14,
+                "end": 953.38
+              }
+            },
+            {
+              "he": "אנא אמלוך",
+              "en": "\"I will rule.\"",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [1948, 1950],
+                "start": 971.78,
+                "end": 972.38
+              }
             },
             {
               "he": "והכל בעצמותו עדיין,",
-              "en": "and all this is still within His Essence,"
+              "en": "This is still inside of Himself.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2098, 2103],
+                "start": 1047.62,
+                "end": 1049.14
+              }
             },
             {
-              "he": "קודם ענין מה ששיער בעצמו בכח דוקא",
-              "en": "before what He estimated in Himself, *davka* in potential,"
-            },
-            {
-              "he": "כל מה שיהיה לו רצון למלוכה בגלוי,",
-              "en": "of everything by which He would have a will for kingship in the open,"
+              "he": "קודם ענין מה ששיער בעצמו בכח דוקא כל מה שיהיה לו רצון למלוכה בגלוי,",
+              "en": "This is still before He actually figured out.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2116, 2123],
+                "start": 1056.28,
+                "end": 1063.38
+              }
             },
             {
               "he": "והוא אחר הצמצום הנקרא מקום פנוי כו'",
-              "en": "which is after the *tzimtzum* called the *makom panui*."
+              "en": "The *shiur* is what will be after the *tzimtzum*.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2428, 2436],
+                "start": 1189.76,
+                "end": 1192.34
+              }
             }
           ],
           "blocks": [
@@ -940,7 +1067,7 @@
               "kind": "question",
               "question": "You just told us there is no Keser and Malchus there; now you are saying there is?",
               "askedBy": "teacher",
-              "text": "**And the explanation**: what is going on here? Before this he already did it several times: he said there is and there isn't. The explanation is that it **arose in the thought and the simple will, \"*Ana Emloch*\"**.",
+              "text": "And the explanation: what is going on here? Before this he already did it several times: he said there is and there isn't. The explanation is that it arose in the thought and the simple will, \"*Ana Emloch*\".",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -965,7 +1092,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**all this is still within His Essence**, before He actually figured it out. This is the *glif glifu* (He engraved an engraving), and the *glif glifu* also has levels: a *glif glifu* in *Yachid*, one in *Echad* and one in *Kadmon*. The *shiur* (estimation) is in *Kadmon*. Usually they say that the *glif glifu* is a *shiur*, but there is a *glif glifu* higher than the *shiur*, which is what he says here: this is before the *shiur*, it is in the simple will, and we have not even got to *Echad*; we are talking about *Yachid*. So in *Yachid* itself there is a *glif glifu*, and the actual decision for the Jew is in *Yachid*.",
+              "text": "all this is still within His Essence, before He actually figured it out. This is the *glif glifu* (He engraved an engraving), and the *glif glifu* also has levels: a *glif glifu* in *Yachid*, one in *Echad* and one in *Kadmon*. The *shiur* (estimation) is in *Kadmon*. Usually they say that the *glif glifu* is a *shiur*, but there is a *glif glifu* higher than the *shiur*, which is what he says here: this is before the *shiur*, it is in the simple will, and we have not even got to *Echad*; we are talking about *Yachid*. So in *Yachid* itself there is a *glif glifu*, and the actual decision for the Jew is in *Yachid*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -989,7 +1116,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**which is after the *tzimtzum***: the *shiur* is what will be after the *tzimtzum*. So what exactly is going on here? From one side we are saying it is a perfect unity that has no parts, and then we are talking about parts.",
+              "text": "which is after the *tzimtzum*: the *shiur* is what will be after the *tzimtzum*. So what exactly is going on here? From one side we are saying it is a perfect unity that has no parts, and then we are talking about parts.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -1014,26 +1141,22 @@
           ],
           "phrases": [
             {
-              "he": "והדמיון בזה ידוע",
-              "en": "The comparison for this is known"
+              "he": "והדמיון בזה ידוע"
             },
             {
-              "he": "מכחות הנפש בהתגלות מרצון עד המעשה",
-              "en": "from the powers of the soul, as they are revealed from the will down to the deed:"
+              "he": "מכחות הנפש בהתגלות מרצון עד המעשה"
             },
             {
-              "he": "שישנם כולם בפרט",
-              "en": "they are all there, in particular,"
+              "he": "שישנם כולם בפרט"
             },
             {
-              "he": "בהעלם אור עצמות הנפש שנקרא בחינת יחידה",
-              "en": "hidden in the light of the soul's essence, called *yechida*."
+              "he": "בהעלם אור עצמות הנפש שנקרא בחינת יחידה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**they are all there, in particular**: the various powers. The *yechida* (the essence of the soul) is a unitary thing and is not made up of powers, but nonetheless you have to say that the powers are there.",
+              "text": "they are all there, in particular: the various powers. The *yechida* (the essence of the soul) is a unitary thing and is not made up of powers, but nonetheless you have to say that the powers are there.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -1052,24 +1175,30 @@
           ],
           "phrases": [
             {
-              "he": "כמו על דרך דוגמא",
-              "en": "For example,"
+              "he": "כמו על דרך דוגמא"
             },
             {
-              "he": "כאשר האדם הוא חפץ חסד וטוב להטיב בדבר פרט,",
-              "en": "when a person has a *chafetz chesed* (desire for kindness) and goodness, to do good in a particular thing,"
+              "he": "כאשר האדם הוא חפץ חסד וטוב להטיב בדבר פרט,"
             },
             {
-              "he": "שזהו בא מצד שיש בו מדה זאת דחפץ חסד וטוב",
-              "en": "it comes from his having this attribute of desiring kindness and goodness"
-            },
-            {
-              "he": "בבחינת עצמות נפשו, הנקרא יחידה",
-              "en": "in the essence of his soul, called *yechida*."
+              "he": "שזהו בא מצד שיש בו מדה זאת דחפץ חסד וטוב בבחינת עצמות נפשו, הנקרא יחידה",
+              "en": "It means that he is a kind person himself.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2547, 2555],
+                "start": 1241.97,
+                "end": 1246.16
+              }
             },
             {
               "he": "על כן בא חפץ חסד זה בגלוי מן העלמו",
-              "en": "That is why this desire for kindness comes into the open out of its hiddenness."
+              "en": "That's why this *chafetz chesed* comes into revelation from its hiddenness.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2888, 2898],
+                "start": 1362.41,
+                "end": 1367.86
+              }
             }
           ],
           "blocks": [
@@ -1088,7 +1217,7 @@
             {
               "kind": "mashal",
               "title": "The schnorrers' recommendation",
-              "text": "**That is why this desire for kindness comes into the open**: he is kind, and you can see this by the *schnorrers* (beggars). The *schnorrers* tell each other where to go. One *schnorrer* says: \"Go to this one, he's a good guy, he'll help you.\" So you say, \"How do you know he'll help me? What, do you know the future?\" \"I don't have to know the future. He's a good guy, that's why he'll help you.\" \"How do you know he's a good guy? Did you see his goodness?\" \"No, I didn't see his goodness. But he helped me, and he helped Shloimy over here, and he helped Chaimy. So I figure that since he's helping everybody, he must be a good guy.\"\n\nNot that he *has* a kindness: if you say he has a kindness, then maybe he lost his kindness today. Maybe he got hit on the head and the kindness kind of went away. \"No, he's a good guy himself.\" That is what it means: he himself is a good guy. That is why the *chafetz chesed* comes out from its hiddenness, and that is why he helped me, and Shloimy, and Chaimy.",
+              "text": "That is why this desire for kindness comes into the open: he is kind, and you can see this by the *schnorrers* (beggars). The *schnorrers* tell each other where to go. One *schnorrer* says: \"Go to this one, he's a good guy, he'll help you.\" So you say, \"How do you know he'll help me? What, do you know the future?\" \"I don't have to know the future. He's a good guy, that's why he'll help you.\" \"How do you know he's a good guy? Did you see his goodness?\" \"No, I didn't see his goodness. But he helped me, and he helped Shloimy over here, and he helped Chaimy. So I figure that since he's helping everybody, he must be a good guy.\"\n\nNot that he *has* a kindness: if you say he has a kindness, then maybe he lost his kindness today. Maybe he got hit on the head and the kindness kind of went away. \"No, he's a good guy himself.\" That is what it means: he himself is a good guy. That is why the *chafetz chesed* comes out from its hiddenness, and that is why he helped me, and Shloimy, and Chaimy.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -1108,23 +1237,43 @@
           "phrases": [
             {
               "he": "ומוכרח לומר בוודאי",
-              "en": "So you have to say for sure"
+              "en": "So you have to say for sure",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [2920, 2926],
+                "start": 1374.56,
+                "end": 1376.26
+              }
             },
             {
-              "he": "שחפץ חסד זה בעצמות נפשו",
-              "en": "that this desire for kindness in the essence of his soul"
-            },
-            {
-              "he": "הוא בבחינת כח היולי בעצמיות",
-              "en": "is a *hiyuli* (raw, formless) power, in essence,"
+              "he": "שחפץ חסד זה בעצמות נפשו הוא בבחינת כח היולי בעצמיות",
+              "en": "that the *chafetz chesed* is a *hiyuli*,",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [3124, 3130],
+                "start": 1438.44,
+                "end": 1440.3
+              }
             },
             {
               "he": "לכלול כל מה שעתיד לחפוץ בחסד וטוב",
-              "en": "to include everything he will ever want of kindness and good,"
+              "en": "any kind of good thing.",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [3138, 3142],
+                "start": 1443.8,
+                "end": 1444.82
+              }
             },
             {
               "he": "בכל פרטי פרטי הענינים שיבקשו ממנו",
-              "en": "in all the particulars of particulars that will be asked of him."
+              "en": "It includes all the different particular things that people will ask from him.",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [579, 593],
+                "start": 268.93,
+                "end": 276.7
+              }
             }
           ],
           "blocks": [
@@ -1143,7 +1292,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**to include everything he will ever want of kindness and good**, any kind of good thing, **in all the particulars of particulars that will be asked of him**. If you go and ask him for pants, it is included in the *hiyuli*.",
+              "text": "to include everything he will ever want of kindness and good, any kind of good thing, in all the particulars of particulars that will be asked of him. If you go and ask him for pants, it is included in the *hiyuli*.",
               "audio": [
                 {
                   "lecture": "002 Tape016-Side1-Ch10.mp3",
@@ -1231,23 +1380,39 @@
           "phrases": [
             {
               "he": "ואם כן בהכרח",
-              "en": "So you have to say"
+              "en": "So you have to say",
+              "audio": {
+                "lecture": "002 Tape016-Side1-Ch10.mp3",
+                "words": [3167, 3171],
+                "start": 1456.94,
+                "end": 1457.72
+              }
             },
             {
-              "he": "שקודם שעלה ברצונו וחפצו זה שבגלוי,",
-              "en": "that before this revealed will and desire of his arose,"
+              "he": "שקודם שעלה ברצונו וחפצו זה שבגלוי,"
             },
             {
-              "he": "להטיב חסדו בדבר זה הפרטי,",
-              "en": "to do his kindness in this particular thing,"
+              "he": "להטיב חסדו בדבר זה הפרטי,"
             },
             {
               "he": "היה כלול בעצמיות חפץ חסד ההיולי",
-              "en": "it was included in the essence of the *hiyuli* desire for kindness,"
+              "en": "that the *chesed* for shoes was included in the *chafetz chesed hahiyuli*.",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [989, 1000],
+                "start": 451.34,
+                "end": 456.22
+              }
             },
             {
               "he": "ויצא מן ההיולי להתגלות בדבר פרטי זה",
-              "en": "and it came out from the *hiyuli* to be revealed in this particular thing."
+              "en": "And it came out from the *hiyuli* to be *misgaleh* in this particular kindness.",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [1009, 1022],
+                "start": 461.62,
+                "end": 466.42
+              }
             }
           ],
           "blocks": [
@@ -1451,24 +1616,30 @@
           ],
           "phrases": [
             {
-              "he": "ואנו רואים שיש בחפץ חסד זה",
-              "en": "And we see that in this desire for kindness there is"
+              "he": "ואנו רואים שיש בחפץ חסד זה שכל וחכמה ומדות ומחשבה ודבור ומעשה",
+              "en": "We see that when the *chafetz chesed* of the *atzmiyus* comes into actuality, we see that there's a *sechel*.",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [1042, 1066],
+                "start": 479.5,
+                "end": 491.34
+              }
             },
             {
-              "he": "שכל וחכמה ומדות ומחשבה ודבור ומעשה",
-              "en": "intellect and wisdom, and *middos*, and thought, speech and action."
+              "he": "אם כן ודאי במקור חפץ חסד זה בהעלמו,"
             },
             {
-              "he": "אם כן ודאי במקור חפץ חסד זה בהעלמו,",
-              "en": "If so, certainly in the source of this desire for kindness, in its hiddenness,"
-            },
-            {
-              "he": "כשהיה כלול בעצמיות החפץ חסד ההיולי,",
-              "en": "when it was included in the essence of the *hiyuli* desire for kindness,"
+              "he": "כשהיה כלול בעצמיות החפץ חסד ההיולי,"
             },
             {
               "he": "גם כן מהתחלקות שכל ומדות ומחשבה דבור ומעשה שבו",
-              "en": "there was also the division of intellect, *middos*, thought, speech and action in it."
+              "en": "There also had to be a division of these things.",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [1319, 1328],
+                "start": 583.22,
+                "end": 586.96
+              }
             }
           ],
           "blocks": [
@@ -1507,7 +1678,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**there was also the division**: otherwise, how could it come out like that? The revealed *chesed* has ten *sefiros*, so the hidden *chesed* also had to have ten *sefiros*.",
+              "text": "there was also the division: otherwise, how could it come out like that? The revealed *chesed* has ten *sefiros*, so the hidden *chesed* also had to have ten *sefiros*.",
               "audio": [
                 {
                   "lecture": "003 Tape016-Side2-Ch10.mp3",
@@ -1525,26 +1696,22 @@
           ],
           "phrases": [
             {
-              "he": "אבל בבחינת עצמיות חפץ חסד ההיולי,",
-              "en": "But in the essence of the *hiyuli* desire for kindness,"
+              "he": "אבל בבחינת עצמיות חפץ חסד ההיולי,"
             },
             {
-              "he": "כמו שהוא קודם שבא עדיין בדבר פרטי,",
-              "en": "as it is before it has come into a particular thing,"
+              "he": "כמו שהוא קודם שבא עדיין בדבר פרטי,"
             },
             {
-              "he": "הגם שבודאי גם שם יש התחלקות שכל ומדות כו',",
-              "en": "even though certainly there too there is a division of intellect and *middos*,"
+              "he": "הגם שבודאי גם שם יש התחלקות שכל ומדות כו',"
             },
             {
-              "he": "מכל מקום כלולים ומתאחדים בתכלית",
-              "en": "still they are included and unified completely."
+              "he": "מכל מקום כלולים ומתאחדים בתכלית"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It is the same as the shoes and the sandwiches. Over there there were not really two different *chassadim*, and **unified** does not mean that they were connected together to build up a bigger *chesed*. It does not mean that. It means there really were not two separate things; it was only one thing. And the same with the ten *sefiros* of the essential *sefira*, of the essential *chafetz chesed*.",
+              "text": "It is the same as the shoes and the sandwiches. Over there there were not really two different *chassadim*, and unified does not mean that they were connected together to build up a bigger *chesed*. It does not mean that. It means there really were not two separate things; it was only one thing. And the same with the ten *sefiros* of the essential *sefira*, of the essential *chafetz chesed*.",
               "audio": [
                 {
                   "lecture": "003 Tape016-Side2-Ch10.mp3",
@@ -1581,30 +1748,42 @@
           ],
           "phrases": [
             {
-              "he": "וכמו כן במדה פרטית אחרת שבעצמיות,",
-              "en": "And so too with any other particular attribute in the essence,"
+              "he": "וכמו כן במדה פרטית אחרת שבעצמיות,"
             },
             {
-              "he": "כמו מדת הגבורה והתפארת והנצח וכהאי גוונא",
-              "en": "like the attribute of *gevura*, *tiferes*, *netzach* and the like,"
+              "he": "כמו מדת הגבורה והתפארת והנצח וכהאי גוונא"
             },
             {
               "he": "עד בחינת המלכות",
-              "en": "down to *Malchus*,"
+              "en": "all the way to *Malchus*,",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [1869, 1873],
+                "start": 812.85,
+                "end": 814.08
+              }
             },
             {
-              "he": "שהוא מדת ההתנשאות",
-              "en": "which is the attribute of *hisnasus* (rising above):"
+              "he": "שהוא מדת ההתנשאות"
             },
             {
-              "he": "שכלול בודאי מי', רצון וחפץ למלוכה וחכמה ומדות ומחשבה כו'.",
-              "en": "it is certainly made of ten: a will and desire to rule, and wisdom, and *middos*, and thought, and so on."
+              "he": "שכלול בודאי מי',",
+              "en": "Certainly, same like all the other *sefiros*, it's made up from ten *sefiros*,",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [1892, 1907],
+                "start": 824.6,
+                "end": 830.34
+              }
+            },
+            {
+              "he": "רצון וחפץ למלוכה וחכמה ומדות ומחשבה כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "*Chafetz chesed* is one particular *sefira* that he gave the example on, but really every other attribute in the essence is like that, **like the attribute of *gevura*, *tiferes*, *netzach* and the like**. For instance, a guy who likes to win: it is because he has the attribute of *netzach* (victory) in his soul.",
+              "text": "*Chafetz chesed* is one particular *sefira* that he gave the example on, but really every other attribute in the essence is like that, like the attribute of *gevura*, *tiferes*, *netzach* and the like. For instance, a guy who likes to win: it is because he has the attribute of *netzach* (victory) in his soul.",
               "audio": [
                 {
                   "lecture": "003 Tape016-Side2-Ch10.mp3",
@@ -1654,7 +1833,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Any of these attributes you can give a *mashal* on, but he gave the *mashal* on *chesed*; \"and by the way, I think he picked *chesed* in particular because the world comes from *chafetz chesed*\". And he goes **down to *Malchus***, which is also the attribute the world came out from, **the attribute of *hisnasus***. It too **is certainly made of ten**, like all the other *sefiros*: the will and desire to rule, which is the *Keser*; *chachma*; *middos*; and thought, speech and action, *Malchus* of *Malchus*.",
+              "text": "Any of these attributes you can give a *mashal* on, but he gave the *mashal* on *chesed*; \"and by the way, I think he picked *chesed* in particular because the world comes from *chafetz chesed*\". And he goes down to *Malchus*, which is also the attribute the world came out from, the attribute of *hisnasus*. It too is certainly made of ten, like all the other *sefiros*: the will and desire to rule, which is the *Keser*; *chachma*; *middos*; and thought, speech and action, *Malchus* of *Malchus*.",
               "audio": [
                 {
                   "lecture": "003 Tape016-Side2-Ch10.mp3",
@@ -1674,23 +1853,25 @@
           "phrases": [
             {
               "he": "אך קודם שבא לבחינת התגלות בדבר פרט,",
-              "en": "But before it comes to be revealed in a particular thing,"
+              "en": "But before it became *hisgalus* for a particular thing,",
+              "audio": {
+                "lecture": "003 Tape016-Side2-Ch10.mp3",
+                "words": [2066, 2074],
+                "start": 904.07,
+                "end": 907.7
+              }
             },
             {
-              "he": "כמו למלוך על מדינה זו וכהאי גוונא,",
-              "en": "like ruling over this country and the like,"
+              "he": "כמו למלוך על מדינה זו וכהאי גוונא,"
             },
             {
-              "he": "כלולים ומתאחדים בתכלית",
-              "en": "they are included and unified completely"
+              "he": "כלולים ומתאחדים בתכלית"
             },
             {
-              "he": "בבחינת מדת המלוכה ההיולית העצמית",
-              "en": "in the essential, *hiyuli* attribute of kingship,"
+              "he": "בבחינת מדת המלוכה ההיולית העצמית"
             },
             {
-              "he": "כמו בעצמות חפץ חסד ההיולי הנ\"ל",
-              "en": "as in the essence of the *hiyuli* desire for kindness mentioned above."
+              "he": "כמו בעצמות חפץ חסד ההיולי הנ\"ל"
             }
           ],
           "blocks": [
@@ -1708,7 +1889,7 @@
             },
             {
               "kind": "explanation",
-              "text": "But **before it comes to be revealed in a particular thing, like ruling over this country**, there was the original attribute of kingship. The *hiyuli* for it existed before it actually happened. **they are included and unified completely in the essential, *hiyuli* attribute of kingship**: the same thing, as we said before.",
+              "text": "But before it comes to be revealed in a particular thing, like ruling over this country, there was the original attribute of kingship. The *hiyuli* for it existed before it actually happened. they are included and unified completely in the essential, *hiyuli* attribute of kingship: the same thing, as we said before.",
               "audio": [
                 {
                   "lecture": "003 Tape016-Side2-Ch10.mp3",
@@ -1734,56 +1915,6 @@
             "g2qcwxap",
             "vekq2pag"
           ],
-          "phrases": [
-            {
-              "he": "וא\"כ מובן ממילא",
-              "en": "So it is understood by itself"
-            },
-            {
-              "he": "שבחינת מדת העצמיות דכח''ב וחג''ת ונהי''ם ההיולים שבעצמיות הנפש,",
-              "en": "that the essential, *hiyuli* attributes of *chachma*, *bina* and *daas*, *chesed*, *gevura* and *tiferes*, *netzach*, *hod* and *yesod*, in the soul's essence,"
-            },
-            {
-              "he": "לא יתכן לומר גם לשון זה שמתאחדים וכלולים",
-              "en": "cannot even be described this way, that they are unified and included"
-            },
-            {
-              "he": "בעצמיות הנפש הנקרא יחידה",
-              "en": "in the soul's essence, called *yechida*,"
-            },
-            {
-              "he": "מאחר שאינן נבדלים מן העצם כלל",
-              "en": "since they are not separate from the essence at all."
-            },
-            {
-              "he": "כמו מדת חפץ חסד ההיולי הנזכר לעיל שמוטבע בטבעית ועצמיות",
-              "en": "Like the *hiyuli* desire for kindness mentioned above, which is imprinted in the nature and essence [of the soul]:"
-            },
-            {
-              "he": "הגם שהוא חלק אחד הנמשך מעצם הנפש ממש,",
-              "en": "even though it is one part drawn from the very essence of the soul,"
-            },
-            {
-              "he": "שלמעלה מהיות חפץ חסד בעצמיות,",
-              "en": "which is above being a desire for kindness in essence,"
-            },
-            {
-              "he": "שזהו ענין פרטי ממהותה העצמית הפשוטה בתכלית",
-              "en": "since that is a particular matter of its utterly simple essential being,"
-            },
-            {
-              "he": "מכל מקום אי אפשר לומר בו",
-              "en": "still one cannot say of it"
-            },
-            {
-              "he": "שמתאחד במדת נצוח ההיולית הנטוע בעצם הנפש,",
-              "en": "that it is unified with the *hiyuli* attribute of winning, planted in the soul's essence,"
-            },
-            {
-              "he": "מאחר שמיוחדים שניהם בעצמות ואינן נבדלים כלל וכלל מן העצם",
-              "en": "since both are one in the essence and are not separate from the essence at all."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -1794,36 +1925,6 @@
             "acwrgywe",
             "6wdk5zh3",
             "pyoebevr"
-          ],
-          "phrases": [
-            {
-              "he": "על דרך דוגמא כח התנועה שנכלל ממש בעצם החי",
-              "en": "For example, the power of movement, which is *mamash* included in the living being itself"
-            },
-            {
-              "he": "קודם שמניעו לגמרי, שאינו נבדל מן העצם כלל",
-              "en": "before it moves it at all, where it is not separate from the essence at all."
-            },
-            {
-              "he": "אף על פי שבגלוי כח התנועה להניע דבר פרט,",
-              "en": "Although when revealed, the power of movement, to move a particular thing,"
-            },
-            {
-              "he": "יתחלק לכמה פרטי אופנים,",
-              "en": "divides into many particular ways,"
-            },
-            {
-              "he": "אי אפשר לומר שכל אופני פרטי התנועה כלולים ומתאחדים היו,",
-              "en": "one cannot say that all the particular ways of movement were included and unified"
-            },
-            {
-              "he": "כשהיה כח התנועה נכלל בעצם החי",
-              "en": "when the power of movement was included in the living being itself,"
-            },
-            {
-              "he": "מאחר שאז לא היה בסוג וגדר תנועה כלל, לא בכלל ולא בפרט כו'",
-              "en": "since then it was not in the category or bounds of movement at all, neither in general nor in particular."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -1836,40 +1937,6 @@
             "wnms4r4h",
             "4wskhb56",
             "uuzf3ey2"
-          ],
-          "phrases": [
-            {
-              "he": "וכן בחינת גילוי התפשטות החיות להחיות כל הגוף",
-              "en": "So too the revelation of the spreading of life, to enliven the whole body,"
-            },
-            {
-              "he": "בעודנו כלול לגמרי בעצם רוח החיים",
-              "en": "while it is still wholly included in the essence of the spirit of life:"
-            },
-            {
-              "he": "הגם שבגלויו מתחלק לראיה ושמיעה לעין ואוזן וכהאי גוונא",
-              "en": "although when revealed it divides into sight and hearing, for the eye and the ear, and the like,"
-            },
-            {
-              "he": "שבודאי גם טרם בואו להתגשם בעין ואוזן בפועל,",
-              "en": "and certainly even before it comes to be embodied in the eye and the ear in actuality,"
-            },
-            {
-              "he": "היה כלול בו חיות הראיה הרוחנית לעין בפני עצמו,",
-              "en": "there was included in it the spiritual life of sight for the eye on its own,"
-            },
-            {
-              "he": "וחיות השמיעה באוזן בפני עצמו",
-              "en": "and the life of hearing in the ear on its own,"
-            },
-            {
-              "he": "מכל מקום קודם שבאה עצם הנפש לכלל בחינת התפשטות החיות,",
-              "en": "still, before the essence of the soul comes to the spreading of life,"
-            },
-            {
-              "he": "גם שכלול בה, הרי זה כהתכללות כח התנועה בעצם החי הנזכר לעיל",
-              "en": "though it is included in it, it is like the inclusion of the power of movement in the living being, mentioned above."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -1884,44 +1951,6 @@
             "kpq6rnts",
             "kcyvcac3"
           ],
-          "phrases": [
-            {
-              "he": "וכל מה שמוכן ועתיד לבוא לידי גלוי בפועל החיות עדיין,",
-              "en": "Whatever is still ready and about to come into the revealed activity of life:"
-            },
-            {
-              "he": "יתכן היחוד וההתכללות דראיה ושמיעה וכהאי גוונא",
-              "en": "there unification and inclusion of sight and hearing and the like can apply;"
-            },
-            {
-              "he": "אבל כאשר כלול לגמרי בעצם הנפש",
-              "en": "but when it is wholly included in the essence of the soul"
-            },
-            {
-              "he": "והיה כלא יש במציאות התפשטות חיות כלל וכלל",
-              "en": "and it is as if there were no spreading of life in existence at all,"
-            },
-            {
-              "he": "מצד עצם הנפש שלמעלה הרבה מבחינת התפשטות,",
-              "en": "from the side of the soul's essence, which is far above spreading forth,"
-            },
-            {
-              "he": "רק שכולל בעצמות גם כן בחינת ההתפשטות,",
-              "en": "only that in its essence it includes spreading forth too,"
-            },
-            {
-              "he": "כעצם החי שכולל בעצמו כח התנועה כנזכר לעיל",
-              "en": "like the living being that includes the power of movement in itself, as mentioned above,"
-            },
-            {
-              "he": "אם כן איך יתכן בחינת היחוד והתכללות דפרטי אור וחיות",
-              "en": "then how can there be unification and inclusion of particulars of light and life,"
-            },
-            {
-              "he": "רק מצד שעתיד ומוכן לצאת בהתפשטות חיות בהתחלקות פרטי חיות",
-              "en": "except because it is about to, and ready to, come out in a spreading of life divided into particulars of life?"
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -1933,20 +1962,20 @@
           ],
           "phrases": [
             {
-              "he": "מזה מוכרח לומר",
-              "en": "From this one must say"
+              "he": "מזה מוכרח לומר"
             },
             {
-              "he": "שיש כל פרטים הללו בהתפשטות הכלולה בעצם לגמרי,",
-              "en": "that all these particulars are in the spreading forth that is wholly included in the essence;"
+              "he": "שיש כל פרטים הללו בהתפשטות הכלולה בעצם לגמרי,"
             },
             {
-              "he": "שאם לא כן",
-              "en": "for if not,"
-            },
-            {
-              "he": "מאין נמצאו פרטים הללו בגלוי ההתפשטות",
-              "en": "where would these particulars in the revealed spreading forth come from?"
+              "he": "שאם לא כן מאין נמצאו פרטים הללו בגלוי ההתפשטות",
+              "en": "Where did it come from?",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [3351, 3355],
+                "start": 1311.38,
+                "end": 1312.12
+              }
             }
           ],
           "blocks": [
@@ -1981,7 +2010,7 @@
             {
               "kind": "mashal",
               "title": "Where did my car come from?",
-              "text": "**where would these particulars … come from?** Where did my car come from? If you say, \"Well, you can't say there's an actual car in the *Aibershter*\", that's right. From one side, that is what we said here: you cannot say that in the actual *chesed* there is a *chesed* to help somebody fix his car. On the other hand, if you do not say there is a *chesed* to help somebody fix his car, you broke the whole *chesed*; it is not a *chesed* anymore. So if you say that my car actually existed inside the *Aibershter*, it sounds kind of silly; the *Aibershter* is not made up of cars. On the other hand, if you say that my car did not exist in the *Aibershter*, then it is not the *Aibershter*. So where did the car come from? What, from another *Aibershter*? It came from somewhere.",
+              "text": "where would these particulars … come from? Where did my car come from? If you say, \"Well, you can't say there's an actual car in the *Aibershter*\", that's right. From one side, that is what we said here: you cannot say that in the actual *chesed* there is a *chesed* to help somebody fix his car. On the other hand, if you do not say there is a *chesed* to help somebody fix his car, you broke the whole *chesed*; it is not a *chesed* anymore. So if you say that my car actually existed inside the *Aibershter*, it sounds kind of silly; the *Aibershter* is not made up of cars. On the other hand, if you say that my car did not exist in the *Aibershter*, then it is not the *Aibershter*. So where did the car come from? What, from another *Aibershter*? It came from somewhere.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2005,7 +2034,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And how can you say so, if there is nothing but the *Aibershter*? The same way you say that in the essential *chesed* there were all the particulars. So all the particulars are there. In the *mashal* that is the particular of just a *chesed* for a particular, not the actual sandwich; in the *nimshal* the actual sandwich came out from there, not just a will to give a sandwich, which was really something separate from Him. So you have to say: **where would these particulars in the revealed spreading forth come from?**",
+              "text": "And how can you say so, if there is nothing but the *Aibershter*? The same way you say that in the essential *chesed* there were all the particulars. So all the particulars are there. In the *mashal* that is the particular of just a *chesed* for a particular, not the actual sandwich; in the *nimshal* the actual sandwich came out from there, not just a will to give a sandwich, which was really something separate from Him. So you have to say: where would these particulars in the revealed spreading forth come from?",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2023,16 +2052,17 @@
           ],
           "phrases": [
             {
-              "he": "כמו האור וזיו שכלול בעצם השמש,",
-              "en": "Like the light and radiance included in the body of the sun,"
+              "he": "כמו האור וזיו שכלול בעצם השמש, שיש בו בהעלם כל פרטי אופני זיו המתפשט",
+              "en": "When the light was inside the sun, it already had all the particular things.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [709, 722],
+                "start": 284.84,
+                "end": 288.72
+              }
             },
             {
-              "he": "שיש בו בהעלם כל פרטי אופני זיו המתפשט",
-              "en": "which has in it, hidden, all the particular kinds of the radiance that spreads out,"
-            },
-            {
-              "he": "וכהאי גוונא ודי למבין.",
-              "en": "and the like. This is enough for one who understands."
+              "he": "וכהאי גוונא ודי למבין."
             }
           ],
           "blocks": [
@@ -2066,50 +2096,54 @@
           ],
           "phrases": [
             {
-              "he": "ונמצא ג' מדריגות זה אחר זה נמשך מעצמיות הנפש ממש,",
-              "en": "So there are three levels, one after another, drawn *mamash* from the essence of the soul,"
+              "he": "ונמצא ג' מדריגות זה אחר זה נמשך מעצמיות הנפש ממש,"
             },
             {
-              "he": "הנקרא בחינת יחידה",
-              "en": "called *yechida*."
+              "he": "הנקרא בחינת יחידה"
             },
             {
-              "he": "הא' י' כחות עצמיים והיוליים,",
-              "en": "The first: ten essential, *hiyuli* powers,"
+              "he": "הא' י' כחות עצמיים והיוליים,"
             },
             {
-              "he": "כמו חפץ חסד העצמי והיולי וכהאי גוונא",
-              "en": "like the essential, *hiyuli* desire for kindness, and the like,"
+              "he": "כמו חפץ חסד העצמי והיולי וכהאי גוונא"
             },
             {
-              "he": "כלולים בה בתכלית,",
-              "en": "wholly included in it,"
+              "he": "כלולים בה בתכלית,"
             },
             {
-              "he": "כהתכללות כח התנועה בעצם החי",
-              "en": "as the power of movement is included in the living being itself,"
+              "he": "כהתכללות כח התנועה בעצם החי"
             },
             {
-              "he": "וכהתכללות התפשטות החיות בעצם כנזכר לעיל",
-              "en": "and as the spreading of life is included in the essence, as mentioned above."
+              "he": "וכהתכללות התפשטות החיות בעצם כנזכר לעיל"
             },
             {
               "he": "ולא יתכן בהם לומר לשון התאחדות מדברים נבדלים יחד",
-              "en": "One cannot speak of them as a unification of separate things together,"
+              "en": "You can't even say it's a unification.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [902, 908],
+                "start": 362.19,
+                "end": 363.74
+              }
             },
             {
-              "he": "אחר שכלולים לגמרי בעצם,",
-              "en": "since they are wholly included in the essence"
+              "he": "אחר שכלולים לגמרי בעצם,"
             },
             {
               "he": "והיה כלא היה במציאות כלל וכלל כנזכר לעיל",
-              "en": "and are as if they did not exist at all, as mentioned above."
+              "en": "It's like they *mamash* don't exist, totally; like we explained before.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [918, 933],
+                "start": 368.31,
+                "end": 373.86
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This is the matter of *Yachid*. **wholly included in it** means they *mamash* do not exist. It is like the power of movement in the living being: it is not just that they do not exist; the *yechida* is not even in the bounds and limits of them at all, not in that category. So **one cannot speak of them as a unification**: you cannot even say it is a unification. **as if they did not exist at all**: they *mamash* do not exist, totally. So that is *Yachid*.",
+              "text": "This is the matter of *Yachid*. wholly included in it means they *mamash* do not exist. It is like the power of movement in the living being: it is not just that they do not exist; the *yechida* is not even in the bounds and limits of them at all, not in that category. So one cannot speak of them as a unification: you cannot even say it is a unification. as if they did not exist at all: they *mamash* do not exist, totally. So that is *Yachid*.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2129,24 +2163,27 @@
           ],
           "phrases": [
             {
-              "he": "והב' בחינת התפשטות י' כחות",
-              "en": "The second: the spreading forth of ten powers"
+              "he": "והב' בחינת התפשטות י' כחות שמוכנים לבא בבחינת גלוי",
+              "en": "It's a thing of *hispashtus*, that it's *muchan* to come out in various ways, like *chesed* or whatever of the ten *sefiros*.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [949, 970],
+                "start": 383.78,
+                "end": 394.43
+              }
             },
             {
-              "he": "שמוכנים לבא בבחינת גלוי",
-              "en": "that are ready to come into revelation,"
+              "he": "כמו חפץ חסד העצמי ההיולי שבא לדבר חסד בדרך פרט"
             },
             {
-              "he": "כמו חפץ חסד העצמי ההיולי שבא לדבר חסד בדרך פרט",
-              "en": "like the essential, *hiyuli* desire for kindness that comes to a particular act of kindness,"
-            },
-            {
-              "he": "גם קודם שנמשך בפועל ממש,",
-              "en": "even before it is drawn into actual deed,"
-            },
-            {
-              "he": "רק כשעתיד ומוכן לצאת לדבר פרט",
-              "en": "only when it is about to, and ready to, come out to a particular thing."
+              "he": "גם קודם שנמשך בפועל ממש, רק כשעתיד ומוכן לצאת לדבר פרט",
+              "en": "There's a point where it's *muchan* to come out to a *prat*, but you don't have a *prat* yet.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [1032, 1051],
+                "start": 422.44,
+                "end": 429.42
+              }
             }
           ],
           "blocks": [
@@ -2165,7 +2202,7 @@
             {
               "kind": "mashal",
               "title": "Avraham sitting by the tent",
-              "text": "**even before it is drawn into actual deed**: like when *Avraham Avinu* is sitting by the tent. He is already ready to have a *chesed* come out, but nothing is coming out, because nobody came yet. So there is a point where it is ready to come out to a particular, but you don't have a particular yet. It is just a thing, and that is *Echad*.",
+              "text": "even before it is drawn into actual deed: like when *Avraham Avinu* is sitting by the tent. He is already ready to have a *chesed* come out, but nothing is coming out, because nobody came yet. So there is a point where it is ready to come out to a particular, but you don't have a particular yet. It is just a thing, and that is *Echad*.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2185,21 +2222,25 @@
           "phrases": [
             {
               "he": "שם יתכן ענין האחדות מכמה פרטים שבו",
-              "en": "There one can speak of the unity of the many particulars in it,"
+              "en": "There you can say that it's made of various things,",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [1070, 1079],
+                "start": 438.14,
+                "end": 440.46
+              }
             },
             {
-              "he": "כמו שכל ומדות שבחפץ חסד זה",
-              "en": "like the intellect and *middos* in this desire for kindness"
+              "he": "כמו שכל ומדות שבחפץ חסד זה"
             },
             {
-              "he": "הנמשך מהעלמות ההיולי הכללי כו'.",
-              "en": "that is drawn from the hiddenness of the general *hiyuli*."
+              "he": "הנמשך מהעלמות ההיולי הכללי כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "There you can say that it is made of various things, **like the intellect and *middos* in this desire for kindness**; and even there it is not *mamash* really a unification. **drawn from the hiddenness of the general *hiyuli***: if these powers came out of the essence, where they totally did not exist, you have to say there is a point where they started to have an ability to exist. It is not an actual existence, by the way; it is just an ability that it could exist. That is *Echad*, and there you can say that this ability is made up of a bunch of abilities, all unified together as the general *hispashtus* of the soul.",
+              "text": "There you can say that it is made of various things, like the intellect and *middos* in this desire for kindness; and even there it is not *mamash* really a unification. drawn from the hiddenness of the general *hiyuli*: if these powers came out of the essence, where they totally did not exist, you have to say there is a point where they started to have an ability to exist. It is not an actual existence, by the way; it is just an ability that it could exist. That is *Echad*, and there you can say that this ability is made up of a bunch of abilities, all unified together as the general *hispashtus* of the soul.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2217,12 +2258,10 @@
           ],
           "phrases": [
             {
-              "he": "והג' כשנמשך ובא לאותו דבר פרט,",
-              "en": "The third: when it is drawn and comes to that particular thing,"
+              "he": "והג' כשנמשך ובא לאותו דבר פרט,"
             },
             {
-              "he": "רק שעדיין לא בא מצד העדר ומניעה",
-              "en": "only it has not yet come, because of an absence and a hindrance."
+              "he": "רק שעדיין לא בא מצד העדר ומניעה"
             }
           ],
           "blocks": [
@@ -2262,29 +2301,31 @@
           "phrases": [
             {
               "he": "אבל ההכנה בעצמה כבר בשלימותה,",
-              "en": "But the preparation itself is already complete,"
+              "en": "but the preparation is all complete,",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [1559, 1564],
+                "start": 620.66,
+                "end": 622.8
+              }
             },
             {
-              "he": "ולא חסר רק לבא בהתגלות בפועל ממש",
-              "en": "and all that is missing is to come into revelation in actual deed;"
+              "he": "ולא חסר רק לבא בהתגלות בפועל ממש"
             },
             {
-              "he": "דהיינו שכבר שיער היטב בעצמו בדרך פרט",
-              "en": "that is, he has already estimated well in himself, in particular,"
+              "he": "דהיינו שכבר שיער היטב בעצמו בדרך פרט"
             },
             {
-              "he": "לאותו דבר שבא לפועל ממש",
-              "en": "for that thing which comes into actual deed,"
+              "he": "לאותו דבר שבא לפועל ממש"
             },
             {
-              "he": "והיינו שיער בעצמו בכח מה שצריך להביא בפועל",
-              "en": "that is, he estimated in himself, in potential, what has to be brought into deed."
+              "he": "והיינו שיער בעצמו בכח מה שצריך להביא בפועל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the preparation itself is already complete**; **all that is missing is to come into revelation in actual deed**. He has already estimated in himself, in particular, the thing that comes into actual deed: like to grab the bottle.",
+              "text": "the preparation itself is already complete; all that is missing is to come into revelation in actual deed. He has already estimated in himself, in particular, the thing that comes into actual deed: like to grab the bottle.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2308,18 +2349,16 @@
           ],
           "phrases": [
             {
-              "he": "כמו על דרך דוגמא הנזכר לעיל בכח התנועה",
-              "en": "As in the example mentioned above, of the power of movement"
+              "he": "כמו על דרך דוגמא הנזכר לעיל בכח התנועה"
             },
             {
-              "he": "כשעתידה לצאת בגלוי בדבר פרט",
-              "en": "when it is about to come out into the open, in a particular thing."
+              "he": "כשעתידה לצאת בגלוי בדבר פרט"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the power of movement when it is about to come out**, like to grab a bottle. That means that even if he did make this movement, it is connected to this third level.",
+              "text": "the power of movement when it is about to come out, like to grab a bottle. That means that even if he did make this movement, it is connected to this third level.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2362,20 +2401,6 @@
             "oot5uryh",
             "uwqzjjvc"
           ],
-          "phrases": [
-            {
-              "he": "וכמו התפשטות החיות להחיות לגוף כשמוכן לצאת",
-              "en": "And like the spreading of life to enliven the body, when it is ready to come out,"
-            },
-            {
-              "he": "שכלולים שם ביחוד כללי כל החיות פרטיי'",
-              "en": "where all the particular powers of life are included there in a general unity."
-            },
-            {
-              "he": "ואח\"כ הוא מה ששיער והכין כבר בכח התנועה איך להניע דרך פרט",
-              "en": "And after that is what he has already estimated and prepared in the power of movement, how to move in a particular way."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -2388,11 +2413,23 @@
           "phrases": [
             {
               "he": "וכן מה ששיער התגלות התפשטות רוח החיים,",
-              "en": "So too when he estimates the revelation of the spreading of the spirit of life,"
+              "en": "when he is *meshaer* how much revelation of the *ruach hachayim* is going to be,",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [1881, 1895],
+                "start": 765.46,
+                "end": 768.96
+              }
             },
             {
               "he": "והוכן בו מה שעתיד להחיות בפועל ממש",
-              "en": "and what it will actually enliven is already prepared in it."
+              "en": "and it's already included what he is *asid lehachayos* in *poel mamash*",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [1904, 1915],
+                "start": 773.14,
+                "end": 778.34
+              }
             }
           ],
           "blocks": [
@@ -2417,22 +2454,30 @@
           ],
           "phrases": [
             {
-              "he": "וכמו כן דמיון כח הצומח",
-              "en": "And so too the comparison of the power of growth"
-            },
-            {
-              "he": "כשמוכן להצמיח בפועל ממש,",
-              "en": "when it is ready to make [a plant] actually grow:"
+              "he": "וכמו כן דמיון כח הצומח כשמוכן להצמיח בפועל ממש,",
+              "en": "The same thing, like the *koach hatzomeach* in the ground, when it's *mamash* already connected to a tree and it's ready to actually give this tree the power to grow:",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2015, 2048],
+                "start": 818.68,
+                "end": 834.14
+              }
             },
             {
               "he": "שיש בזה גם כן ענין ג' מדריגות הללו",
-              "en": "it too has these three levels."
+              "en": "each one of these *kochos* has these three *madreigos*.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2058, 2066],
+                "start": 837.79,
+                "end": 841.22
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The power of growth in the ground, when it is *mamash* already connected to a tree and ready actually to give the tree the power to grow, **it too has these three levels**. Each of these powers has these three levels, and they are all connected even to the actual deed. The deed is connected not just to *Kadmon*: *Kadmon* is connected to *Echad*, and *Echad* to *Yachid*.",
+              "text": "The power of growth in the ground, when it is *mamash* already connected to a tree and ready actually to give the tree the power to grow, it too has these three levels. Each of these powers has these three levels, and they are all connected even to the actual deed. The deed is connected not just to *Kadmon*: *Kadmon* is connected to *Echad*, and *Echad* to *Yachid*.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2465,32 +2510,46 @@
           ],
           "phrases": [
             {
-              "he": "והכל הוא טרם שבא הדבר עדיין בפועל ממש",
-              "en": "And all this is before the thing has actually come into deed,"
+              "he": "והכל הוא טרם שבא הדבר עדיין בפועל ממש"
             },
             {
-              "he": "כמו התנועה קודם שבאה בגשם הנפעל",
-              "en": "like the movement before it comes into the physical thing that is moved,"
+              "he": "כמו התנועה קודם שבאה בגשם הנפעל"
             },
             {
-              "he": "או החיות הרוחני קודם שבא בגשם הגוף",
-              "en": "or the spiritual life before it comes into the physical body,"
+              "he": "או החיות הרוחני קודם שבא בגשם הגוף"
             },
             {
               "he": "ששם משתנה ממהות רוחנית למהות גשם,",
-              "en": "where it changes from a spiritual being into a physical being,"
+              "en": "Where it actually comes into an actual *tnua*, a *tnua* is not anymore the thing of the soul; it's a physical movement.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2256, 2278],
+                "start": 908.91,
+                "end": 917.22
+              }
             },
             {
               "he": "שהוא בחינת תנועה גשמיות",
-              "en": "which is physical movement"
+              "en": "That's a physical *tnua*.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2283, 2286],
+                "start": 920.93,
+                "end": 922.92
+              }
             },
             {
-              "he": "והחיות גשמיות",
-              "en": "and physical life;"
+              "he": "והחיות גשמיות"
             },
             {
               "he": "וכהאי גוונא בגשם הצמיחה כו'",
-              "en": "and the like in the physical plant."
+              "en": "the actual plant.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2294, 2296],
+                "start": 926.76,
+                "end": 928.22
+              }
             }
           ],
           "blocks": [
@@ -2508,7 +2567,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Where it actually comes into an actual movement, the movement is not the thing of the soul anymore. It is a physical movement; and the life is physical too. And so **in the physical plant**, the actual plant: it is not the power of growth at all. It is a different thing; it is a plant, like a piece of wood.",
+              "text": "Where it actually comes into an actual movement, the movement is not the thing of the soul anymore. It is a physical movement; and the life is physical too. And so in the physical plant, the actual plant: it is not the power of growth at all. It is a different thing; it is a plant, like a piece of wood.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2526,23 +2585,31 @@
           ],
           "phrases": [
             {
-              "he": "שצריך לזה בחינת צמצום וכיווץ בגלוי זה הרוחני בתחלה,",
-              "en": "for which a *tzimtzum* and a contraction of this spiritual revelation is needed first,"
-            },
-            {
-              "he": "כדי שיבוא מכלל רוחניות לגשמיות",
-              "en": "so that it may come from the realm of the spiritual to the physical"
+              "he": "שצריך לזה בחינת צמצום וכיווץ בגלוי זה הרוחני בתחלה, כדי שיבוא מכלל רוחניות לגשמיות",
+              "en": "In order to come from the spiritual to the physical, you have to make a *tzimtzum*.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2718, 2733],
+                "start": 1098.5,
+                "end": 1104.32
+              }
             },
             {
               "he": "(כמו שיתבאר באות הי''ב):",
-              "en": "(as will be explained in section 12)."
+              "en": "This will be explained, *b'ezras Hashem*, in chapter 12.",
+              "audio": {
+                "lecture": "004 Tape017-Side1-Ch10.mp3",
+                "words": [2736, 2743],
+                "start": 1105.08,
+                "end": 1109.49
+              }
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "Costello and the Wolf Man",
-              "text": "**a *tzimtzum* and a contraction … is needed first**. The example: \"Did you ever see Abbott and Costello and the Wolf Man?\" (They work out who is who: Abbott is the tall one, the straight man, Costello the short one.) Costello is standing there, Abbott is standing there, and the Wolf Man is standing behind Abbott, and Costello goes [he acts out the sputtering]. Why is he doing that? Because he is so panicked by seeing the Wolf Man that he cannot *metzamtzem* (contract) his speech into the particular letters. He wants to say the whole speech as it is inside him, at one shot. And since he cannot make a *tzimtzum*, he cannot make the particular thing.",
+              "text": "a *tzimtzum* and a contraction … is needed first. The example: \"Did you ever see Abbott and Costello and the Wolf Man?\" (They work out who is who: Abbott is the tall one, the straight man, Costello the short one.) Costello is standing there, Abbott is standing there, and the Wolf Man is standing behind Abbott, and Costello goes [he acts out the sputtering]. Why is he doing that? Because he is so panicked by seeing the Wolf Man that he cannot *metzamtzem* (contract) his speech into the particular letters. He wants to say the whole speech as it is inside him, at one shot. And since he cannot make a *tzimtzum*, he cannot make the particular thing.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2599,7 +2666,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So to come from the spiritual to the physical you have to make a *tzimtzum*, **as will be explained** with G-d's help in chapter 12.",
+              "text": "So to come from the spiritual to the physical you have to make a *tzimtzum*, as will be explained with G-d's help in chapter 12.",
               "audio": [
                 {
                   "lecture": "004 Tape017-Side1-Ch10.mp3",
@@ -2776,14 +2843,14 @@
       ]
     },
     {
-      "text": "No recording covers lines qujawkgb-kcyvcac3: tape 003 ends after line ctm4eaq3 and tape 004 opens mid-discussion (the eye's power to see a sofa in China), just before line 5jn5xeq5. The phrases of those lines are a plain rendering, not his.",
+      "text": "No recording covers lines qujawkgb-kcyvcac3: tape 003 ends after line ctm4eaq3 and tape 004 opens mid-discussion (the eye's power to see a sofa in China), just before line 5jn5xeq5. Those passages have no phrases.",
       "lines": [
         "qujawkgb",
         "5jn5xeq5"
       ]
     },
     {
-      "text": "Lines bn74tlmj-uwqzjjvc are not read: after line oty7ghqk tape 004 goes straight to line cm6dr6ig (12:42). Their phrases are a plain rendering.",
+      "text": "Lines bn74tlmj-uwqzjjvc are not read: after line oty7ghqk tape 004 goes straight to line cm6dr6ig (12:42). That passage has no phrases.",
       "lines": [
         "bn74tlmj",
         "oot5uryh",
@@ -2803,7 +2870,7 @@
       ]
     },
     {
-      "text": "Phrases follow his in-class reading where he gives an English rendering; where he only reads, they are a plain literal rendering in his words. He reads some lines with small differences from the printed text (e.g. line 4 \"amuda d'bein\" for \"hamemutza bein\", line 88 \"b'gashem hanefesh\" for \"b'gashem hanif'al\"); the phrases follow the printed text.",
+      "text": "A phrase has English only where he translates it in class, anchored to where he says it; a phrase he only reads keeps its Hebrew alone. Where he gives his English in a later telling (tape 003's reread of lines 37-40, the end-of-chapter recap on tape 004), the anchor points there. He reads some lines with small differences from the printed text (e.g. line 4 \"amuda d'bein\" for \"hamemutza bein\", line 88 \"b'gashem hanefesh\" for \"b'gashem hanif'al\"); the phrases follow the printed text.",
       "lines": [
         "wmljth42",
         "qzvlx5zk"

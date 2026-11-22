@@ -111,19 +111,23 @@
           "phrases": [
             {
               "he": "(ז) ומעתה יש להקדים בתחלה",
-              "en": "(7) And now we must first set out,"
+              "en": "So first of all, we have to give you what the general overview is",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [141, 154],
+                "start": 71.6,
+                "end": 75.36
+              }
             },
             {
-              "he": "וקודם להידיעה בפרטות כל ההשתלשלות",
-              "en": "before the knowledge of the whole *hishtalshelus* (chain of descent) in its particulars,"
-            },
-            {
-              "he": "ענין הנזכר לעיל (באות ד')",
-              "en": "the matter mentioned above (in chapter 4):"
-            },
-            {
-              "he": "בחיבור הפרט עם הכלל דווקא כו'",
-              "en": "the joining of the *prat* (particular) with the *klal* (whole), *davka*."
+              "he": "וקודם להידיעה בפרטות כל ההשתלשלות ענין הנזכר לעיל (באות ד') בחיבור הפרט עם הכלל דווקא כו'",
+              "en": "so that later on, when we tell you all the *pratim*, you'll know where it fits into the *klal*",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [155, 177],
+                "start": 76,
+                "end": 83.38
+              }
             }
           ],
           "blocks": [
@@ -141,7 +145,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**the joining of the *prat* (particular) with the *klal* (whole), *davka***. So first of all comes what the general overview is, so that later on, when all the particulars are given, you will know where each one fits into the *klal*.",
+              "text": "the joining of the *prat* (particular) with the *klal* (whole), *davka*. So first of all comes what the general overview is, so that later on, when all the particulars are given, you will know where each one fits into the *klal*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -160,42 +164,41 @@
           ],
           "phrases": [
             {
-              "he": "בהיות ידוע לכל מעיין בספר הזוהר ובספרי הקבלה האמיתים",
-              "en": "As is known to everyone who looks into the *Zohar* and the true books of Kabbala"
+              "he": "בהיות ידוע לכל מעיין בספר הזוהר ובספרי הקבלה האמיתים"
             },
             {
-              "he": "בהשתלשלות והתלבשות הפרצופים כו'",
-              "en": "about the descent and enclothing of the *partzufim* (configurations),"
+              "he": "בהשתלשלות והתלבשות הפרצופים כו'"
             },
             {
-              "he": "בסדר קצר ההכרחי לכל אדם לידע",
-              "en": "in the short order that every person needs to know:"
+              "he": "בסדר קצר ההכרחי לכל אדם לידע"
             },
             {
-              "he": "מתחלה אחדות הפשוטה מריש כל דרגין",
-              "en": "first the simple unity, from the head of all levels"
+              "he": "מתחלה אחדות הפשוטה מריש כל דרגין"
             },
             {
-              "he": "עד סוף כל דרגין בסוף עולם השפל שלנו",
-              "en": "to the end of all levels, at the end of our lowly world,"
+              "he": "עד סוף כל דרגין בסוף עולם השפל שלנו"
             },
             {
               "he": "שהוא בא בחיבור וקשר אחד ממש",
-              "en": "which comes in one joining and bond, *mamash*,"
+              "en": "It's really all one connected thing; it's not a whole bunch of different things.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [218, 231],
+                "start": 105.94,
+                "end": 109.66
+              }
             },
             {
-              "he": "מראש לסוף ממש כשלשלת כו'",
-              "en": "from the beginning to the end, *mamash*, like a chain,"
+              "he": "מראש לסוף ממש כשלשלת כו'"
             },
             {
-              "he": "שמשתלשל מעילה לעילה כו'",
-              "en": "that descends from cause to cause."
+              "he": "שמשתלשל מעילה לעילה כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The *Zohar* and the true books of Kabbala describe the descent and enclothing of the *partzufim*; here is the short order of it that every person needs to know. From the simple unity at the head of all levels to the end of all levels, at the end of our lowly world, it **comes in one joining and bond, *mamash***. It is really all one connected thing, not a whole bunch of different things, from the beginning to the end, *mamash*, like a chain.",
+              "text": "The *Zohar* and the true books of Kabbala describe the descent and enclothing of the *partzufim*; here is the short order of it that every person needs to know. From the simple unity at the head of all levels to the end of all levels, at the end of our lowly world, it comes in one joining and bond, *mamash*. It is really all one connected thing, not a whole bunch of different things, from the beginning to the end, *mamash*, like a chain.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -228,42 +231,65 @@
           ],
           "phrases": [
             {
-              "he": "ואור הראשון דאחדות הפשוט שנקרא עילת כל העילת",
-              "en": "And the first light of the simple unity, which is called the cause of all causes,"
+              "he": "ואור הראשון דאחדות הפשוט שנקרא עילת כל העילת"
             },
             {
-              "he": "הוא הנקרא ראשון או קדמון",
-              "en": "is what is called First or *Kadmon* (preceding),"
+              "he": "הוא הנקרא ראשון או קדמון"
             },
             {
               "he": "כמו שכתוב אני ראשון ואני אחרון",
-              "en": "as it is written, \"I am first and I am last.\""
+              "en": "I'm the first, I'm the last.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [318, 323],
+                "start": 151.49,
+                "end": 153.7
+              }
             },
             {
-              "he": "אני ראשון הוא בחינת מלכות דאין סוף אחר הצמצום הראשון הנקרא מקום פנוי כו'",
-              "en": "\"I am first\" is *Malchus* (kingship) of the *Ein Sof* (the Infinite) after the first *tzimtzum* (contraction), which is called the *makom panui* (the empty place);"
+              "he": "אני ראשון הוא בחינת מלכות דאין סוף אחר הצמצום הראשון הנקרא מקום פנוי כו'"
             },
             {
-              "he": "ואני אחרון סוף הכל הוא בחינת מלכות דמלכות דעשיה מקור התהוות זה העולם השפל",
-              "en": "and \"I am last,\" the end of everything, is *Malchus* of *Malchus* of *Asiya*, the source from which this lowly world comes into being."
+              "he": "ואני אחרון סוף הכל הוא בחינת מלכות דמלכות דעשיה מקור התהוות זה העולם השפל"
             },
             {
-              "he": "ונעוץ תחלתן בסופן וסופן בתחלתן",
-              "en": "Their beginning is wedged in their end and their end in their beginning,"
+              "he": "ונעוץ תחלתן בסופן וסופן בתחלתן"
             },
             {
-              "he": "והיו לאחדים ממש כשלשלת",
-              "en": "and they become one, *mamash*, like a chain,"
+              "he": "והיו לאחדים ממש",
+              "en": "It's not two different things; it's *mamash* one thing,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [365, 373],
+                "start": 179.34,
+                "end": 181.7
+              }
+            },
+            {
+              "he": "כשלשלת",
+              "en": "like a chain:",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [375, 377],
+                "start": 183.6,
+                "end": 184.28
+              }
             },
             {
               "he": "שהאחרונה ביותר קשורה בהעליונה ביותר",
-              "en": "in which the very last is bound to the very highest."
+              "en": "when you put a chain together, the end of the chain connects to the beginning.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [383, 398],
+                "start": 187.04,
+                "end": 192.16
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The first light of the simple unity, the cause of all causes, is called First, as it says: **\"I am first and I am last.\"** I'm the first, I'm the last. \"I am first\" is *Malchus* (kingship) of the *Ein Sof* (the Infinite) after the first *tzimtzum* (contraction), the *makom panui* (the empty place); \"I am last\" is *Malchus* of *Malchus* of *Asiya* (the world of Action), the source of this lowly world. So it is all the same.",
+              "text": "The first light of the simple unity, the cause of all causes, is called First, as it says: \"I am first and I am last.\" I'm the first, I'm the last. \"I am first\" is *Malchus* (kingship) of the *Ein Sof* (the Infinite) after the first *tzimtzum* (contraction), the *makom panui* (the empty place); \"I am last\" is *Malchus* of *Malchus* of *Asiya* (the world of Action), the source of this lowly world. So it is all the same.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -276,7 +302,7 @@
             {
               "kind": "mashal",
               "title": "The chain and the necklace",
-              "text": "**Their beginning is wedged in their end**, and they are one: not two different things, *mamash* one thing, **like a chain**, in which the last is bound to the highest. When you put a chain together, the end of the chain connects to the beginning. And it is *davka* the end of the chain that is more connected to the beginning than the middle links. (A student: \"Like a necklace.\" \"Like a necklace, right.\") It is the end of the chain that gets connected to the beginning of the chain.",
+              "text": "Their beginning is wedged in their end, and they are one: not two different things, *mamash* one thing, **like a chain**, in which the last is bound to the highest. When you put a chain together, the end of the chain connects to the beginning. And it is *davka* the end of the chain that is more connected to the beginning than the middle links. (A student: \"Like a necklace.\" \"Like a necklace, right.\") It is the end of the chain that gets connected to the beginning of the chain.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -295,17 +321,32 @@
           "phrases": [
             {
               "he": "וזה שכתוב ראו כי אני אני הוא,",
-              "en": "And this is what is written, \"See that I, I am He\":"
+              "en": "You should see that the same One that I'm down here is the same One that I'm up there:",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [449, 467],
+                "start": 220.9,
+                "end": 225.42
+              }
             },
             {
-              "he": "בלא שינוי מראש לסוף כלל",
-              "en": "with no change at all from beginning to end."
+              "he": "בלא שינוי",
+              "en": "it's *mamash* no change",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [470, 473],
+                "start": 227.62,
+                "end": 228.66
+              }
+            },
+            {
+              "he": "מראש לסוף כלל"
             }
           ],
           "blocks": [
             {
               "kind": "keyPoint",
-              "text": "**\"See that I, I am He\"**: you should see that the same One who is down here is the same One who is up there, **with no change at all from beginning to end**, *mamash* no change. That is the whole *inyan* (matter) of what you are supposed to get here. If it looks to you like two different things, you are not really getting it. That is not what *Chassidus* is all about. *Chassidus* means that all the way down to here is *mamash* the *Aibershter*.",
+              "text": "\"See that I, I am He\": you should see that the same One who is down here is the same One who is up there, with no change at all from beginning to end, *mamash* no change. That is the whole *inyan* (matter) of what you are supposed to get here. If it looks to you like two different things, you are not really getting it. That is not what *Chassidus* is all about. *Chassidus* means that all the way down to here is *mamash* the *Aibershter*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -323,26 +364,53 @@
           ],
           "phrases": [
             {
-              "he": "והגם שידוע שיש ריבוי פרטי השתלשלות מאד מאד מראש לסוף,",
-              "en": "And even though it is known that there are very, very many particulars of the *hishtalshelus* from beginning to end,"
+              "he": "והגם שידוע שיש ריבוי פרטי השתלשלות מאד מאד",
+              "en": "even though there's really many, many particular things in *hishtalshelus*",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [543, 552],
+                "start": 252.38,
+                "end": 256.67
+              }
+            },
+            {
+              "he": "מראש לסוף,"
             },
             {
               "he": "הנה זה כל האדם",
-              "en": "this is the whole of man:"
+              "en": "this is the whole thing, why you're here:",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [560, 567],
+                "start": 260.9,
+                "end": 262.54
+              }
             },
             {
               "he": "בהתבוננות כל פרטי פרטיות מראש לסוף,",
-              "en": "in the contemplation of all the particulars of particulars from beginning to end,"
+              "en": "the whole reason you have to do the *hisbonenus* of all the *pratim*,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [587, 603],
+                "start": 269.8,
+                "end": 273.8
+              }
             },
             {
               "he": "לחבר הכל ליחוד הכללי דאחדות הפשוט הנקרא ראשון",
-              "en": "to join everything to the general unification of the simple unity, which is called First."
+              "en": "to connect the whole thing to the *achdus pshuta* of the beginning of the whole thing.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [612, 627],
+                "start": 280.7,
+                "end": 285.96
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "There are really very, very many particular things in the *hishtalshelus* from beginning to end, but **this is the whole of man**: this is the whole reason you are here, your whole purpose in the world. The whole reason you have to do the *hisbonenus* of all the particulars is to connect the whole thing to the simple unity at the beginning of the whole thing. It means that the whole thing is a matter of *ein od milvado* (there is nothing besides Him).",
+              "text": "There are really very, very many particular things in the *hishtalshelus* from beginning to end, but this is the whole of man: this is the whole reason you are here, your whole purpose in the world. The whole reason you have to do the *hisbonenus* of all the particulars is to connect the whole thing to the simple unity at the beginning of the whole thing. It means that the whole thing is a matter of *ein od milvado* (there is nothing besides Him).",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -406,17 +474,22 @@
           "phrases": [
             {
               "he": "וכמו שכתוב אני אני הוא ממש",
-              "en": "As it is written, \"I, I am He,\" *mamash*,"
+              "en": "It's *mamash*: the *Aibershter* is here.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1013, 1017],
+                "start": 483.35,
+                "end": 484.94
+              }
             },
             {
-              "he": "וכמו שכתוב אני יהו״ה לא שניתי כו'",
-              "en": "and as it is written, \"I, *Havaya*, have not changed.\""
+              "he": "וכמו שכתוב אני יהו״ה לא שניתי כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"I, I am He,\" *mamash***: the *Aibershter* is *mamash* here. In other words, the same way that I am here and the same way that you are here, the same way the *Aibershter* is here on the conference call, *mamash* like that. (A student: \"Even more so.\" \"Even more so, right.\")",
+              "text": "\"I, I am He,\" *mamash*: the *Aibershter* is *mamash* here. In other words, the same way that I am here and the same way that you are here, the same way the *Aibershter* is here on the conference call, *mamash* like that. (A student: \"Even more so.\" \"Even more so, right.\")",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -441,7 +514,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**\"I, *Havaya*, have not changed.\"** Even though He is called First, it is *mamash* the same *Aibershter* down here. It is not that this is a *tzimtzum* of the *Aibershter* down here. It is *mamash* His very Essence and being, *atzmuso umahuso*, that is on the conference call with us.",
+              "text": "\"I, *Havaya*, have not changed.\" Even though He is called First, it is *mamash* the same *Aibershter* down here. It is not that this is a *tzimtzum* of the *Aibershter* down here. It is *mamash* His very Essence and being, *atzmuso umahuso*, that is on the conference call with us.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -459,18 +532,16 @@
           ],
           "phrases": [
             {
-              "he": "וזהו עיקר קוטב היסוד המוסד בהתבוננות הפרט דוקא,",
-              "en": "And this is the main pivot of the foundation laid in the contemplation of the particular, *davka*:"
+              "he": "וזהו עיקר קוטב היסוד המוסד בהתבוננות הפרט דוקא,"
             },
             {
-              "he": "שיומשך הכל אל הכלל כנזכר לעיל.",
-              "en": "that everything be drawn to the *klal*, as mentioned above."
+              "he": "שיומשך הכל אל הכלל כנזכר לעיל."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This is **the main pivot of the foundation** laid in the contemplation of the particular: **that everything be drawn to the *klal***. So the whole thing is that *mamash* the *Aibershter* is here.",
+              "text": "This is the main pivot of the foundation laid in the contemplation of the particular: that everything be drawn to the *klal*. So the whole thing is that *mamash* the *Aibershter* is here.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -498,41 +569,75 @@
           "phrases": [
             {
               "he": "וביאור הדבר למתחילים,",
-              "en": "To explain this for beginners:"
+              "en": "So now, to explain this thing to the beginners:",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1270, 1278],
+                "start": 594.54,
+                "end": 597.48
+              }
             },
             {
               "he": "הנה ידוע בדרך קצרה",
-              "en": "it is known, in a short way,"
+              "en": "now he's going to give us the short overview.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1283, 1291],
+                "start": 599.12,
+                "end": 601.82
+              }
             },
             {
-              "he": "בסדר ריבוי השתלשלות דבחינת הקו וחוט שנמשך אחר צמצום הראשון,",
-              "en": "the order of the many steps of the descent of the *Kav* (line) and thread that is drawn after the first *tzimtzum*."
+              "he": "בסדר ריבוי השתלשלות דבחינת הקו וחוט שנמשך אחר צמצום הראשון,"
             },
             {
               "he": "הוא כך",
-              "en": "This is how it is."
+              "en": "This is how it is.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1304, 1308],
+                "start": 608.26,
+                "end": 608.94
+              }
             },
             {
               "he": "דבתחלה קודם הצמצום הראשון היה הוא ושמו בלבד כו'",
-              "en": "At first, before the first *tzimtzum*, there was He and His Name alone:"
+              "en": "Was just Him and the light.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1317, 1322],
+                "start": 613.5,
+                "end": 615
+              }
             },
             {
               "he": "דהיינו עצמיות אין סוף ברוך הוא ואורו וזיוו הנקרא שמו",
-              "en": "that is, the Essence of the *Ein Sof*, blessed be He, and His light and radiance, which is called His Name."
+              "en": "There was the *Atzmus Ein Sof* and the *Or Ein Sof*, which is called His Name.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1334, 1350],
+                "start": 623.51,
+                "end": 629.77
+              }
             },
             {
-              "he": "הכל היה בבחינת עצמיות שלו בבחינת אין סוף ממש,",
-              "en": "Everything was in His own essence, as *Ein Sof*, *mamash*,"
+              "he": "הכל היה בבחינת עצמיות שלו בבחינת אין סוף ממש,"
             },
             {
               "he": "והיה ממלא את כל החלל כו'",
-              "en": "and it filled the whole *chalal* (space)."
+              "en": "The *Ein Sof* and His light was filling up the whole *chalal*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1411, 1422],
+                "start": 654.68,
+                "end": 658.52
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**To explain this for beginners**, he now gives the short overview: the order of the *Kav* (line) and thread that is drawn after the first *tzimtzum*. \"This is how it is.\" **At first, before the first *tzimtzum*, there was He and His Name alone**: just Him and the light. There was the Essence of the *Ein Sof* and the *Or Ein Sof* (the infinite light), which is called His Name. Everything was in His own essence, as *Ein Sof*, *mamash*.",
+              "text": "To explain this for beginners, he now gives the short overview: the order of the *Kav* (line) and thread that is drawn after the first *tzimtzum*. \"This is how it is.\" At first, before the first *tzimtzum*, there was He and His Name alone: just Him and the light. There was the Essence of the *Ein Sof* and the *Or Ein Sof* (the infinite light), which is called His Name. Everything was in His own essence, as *Ein Sof*, *mamash*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -566,30 +671,25 @@
           ],
           "phrases": [
             {
-              "he": "ואחר כך צמצם את עצמו",
-              "en": "Then He contracted Himself,"
+              "he": "ואחר כך צמצם את עצמו"
             },
             {
-              "he": "ונשאר בחינת רשימו מן הצמצום שבחלל זה",
-              "en": "and there remained a *reshimu* (an impression) of the *tzimtzum* in this *chalal*."
+              "he": "ונשאר בחינת רשימו מן הצמצום שבחלל זה"
             },
             {
-              "he": "ומרושם זה נמשך בחינת הקו וחוט בבחינת מקיף ופנימי כו'",
-              "en": "From this impression the *Kav* and thread is drawn, as *makif* (encompassing) and *pnimi* (inner)."
+              "he": "ומרושם זה נמשך בחינת הקו וחוט בבחינת מקיף ופנימי כו'"
             },
             {
-              "he": "ונקרא אור אין סוף שלפני הצמצום בשם טהירו עילאה",
-              "en": "The *Or Ein Sof* before the *tzimtzum* is called *tehiru ila'a* (the upper purity),"
+              "he": "ונקרא אור אין סוף שלפני הצמצום בשם טהירו עילאה"
             },
             {
-              "he": "ובחינת מקיף הכללי דקו זה בראשיתו נקרא טהירו תתאה כידוע",
-              "en": "and the general *makif* of this *Kav*, at its beginning, is called *tehiru tata'a* (the lower purity), as is known."
+              "he": "ובחינת מקיף הכללי דקו זה בראשיתו נקרא טהירו תתאה כידוע"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Then He contracted Himself**, and there remained a *reshimu* (impression) of the *tzimtzum* in this *chalal*. From that impression the *Kav* and thread is drawn, as *makif* (encompassing light) and *pnimi* (inner light). The light before the *tzimtzum* is called *tehiru ila'a* (the upper purity), and the general *makif* of the *Kav* at its beginning is the *tehiru tata'a* (the lower purity). So now he is basically going over the whole general *inyan* of the *hishtalshelus*.",
+              "text": "Then He contracted Himself, and there remained a *reshimu* (impression) of the *tzimtzum* in this *chalal*. From that impression the *Kav* and thread is drawn, as *makif* (encompassing light) and *pnimi* (inner light). The light before the *tzimtzum* is called *tehiru ila'a* (the upper purity), and the general *makif* of the *Kav* at its beginning is the *tehiru tata'a* (the lower purity). So now he is basically going over the whole general *inyan* of the *hishtalshelus*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -610,38 +710,48 @@
           ],
           "phrases": [
             {
-              "he": "ואחר כך נמשך על ידי צמצום, מלכות דאין סוף להיות כתר דאדם קדמון",
-              "en": "Then, through a *tzimtzum*, *Malchus* of the *Ein Sof* is drawn down to become *Keser* (crown) of *Adam Kadmon*;"
+              "he": "ואחר כך נמשך על ידי צמצום, מלכות דאין סוף להיות כתר דאדם קדמון"
             },
             {
-              "he": "וממלכות דאדם קדמון נעשה כתר לעתיק יומין ואריך אנפין",
-              "en": "from *Malchus* of *Adam Kadmon* comes *Keser* of *Atik Yomin* and *Arich Anpin*;"
+              "he": "וממלכות דאדם קדמון נעשה כתר לעתיק יומין ואריך אנפין"
             },
             {
-              "he": "וממלכות דאריך אנפין נעשה כתר לאבא ואמא",
-              "en": "from *Malchus* of *Arich Anpin* comes *Keser* of *Abba* and *Ima*;"
+              "he": "וממלכות דאריך אנפין נעשה כתר לאבא ואמא"
             },
             {
-              "he": "וממלכות דאבא ואמא נעשה כתר לזעיר אנפין ומזעיר אנפין לנוקבא",
-              "en": "from *Malchus* of *Abba* and *Ima*, *Keser* of *Zeir Anpin*, and from *Zeir Anpin* to *Nukva*;"
+              "he": "וממלכות דאבא ואמא נעשה כתר לזעיר אנפין ומזעיר אנפין לנוקבא"
             },
             {
-              "he": "עד שממלכות דאצילות נעשה כתר לבריאה",
-              "en": "until *Malchus* of *Atzilus* becomes *Keser* of *Beriya*."
+              "he": "עד שממלכות דאצילות נעשה כתר לבריאה"
             },
             {
-              "he": "וכך מבריאה ליצירה ומיצירה לעשיה",
-              "en": "And so from *Beriya* to *Yetzira*, and from *Yetzira* to *Asiya*,"
+              "he": "וכך מבריאה ליצירה",
+              "en": "And then the whole thing goes over again in *Beriya*: all these levels go over again in *Beriya*, till *Malchus* of *Beriya* becomes *Keser* of *Yetzira*;",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1638, 1663],
+                "start": 773.14,
+                "end": 781.82
+              }
+            },
+            {
+              "he": "ומיצירה לעשיה"
             },
             {
               "he": "עד בחינת מלכות שבמלכות דעשיה סוף הכל כו'",
-              "en": "down to *Malchus* of *Malchus* of *Asiya*, the end of everything."
+              "en": "this keeps going all the way, to *Malchus* of *Malchus* of *Asiya*, the end of everything.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1670, 1686],
+                "start": 785.89,
+                "end": 792.68
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Then *Malchus* of the *Ein Sof* is drawn down through a *tzimtzum* to become *Keser* (crown) of *Adam Kadmon*; *Malchus* of *Adam Kadmon* becomes *Keser* of *Atik Yomin* and *Arich Anpin*, and so on through *Abba*, *Ima*, *Zeir Anpin* and *Nukva*, **until *Malchus* of *Atzilus* becomes *Keser* of *Beriya***. \"That's how it works.\" Then the whole thing goes over again in *Beriya*: all these levels go over again in *Beriya* till *Malchus* of *Beriya* becomes *Keser* of *Yetzira*, and then again from *Yetzira* to *Asiya*.",
+              "text": "Then *Malchus* of the *Ein Sof* is drawn down through a *tzimtzum* to become *Keser* (crown) of *Adam Kadmon*; *Malchus* of *Adam Kadmon* becomes *Keser* of *Atik Yomin* and *Arich Anpin*, and so on through *Abba*, *Ima*, *Zeir Anpin* and *Nukva*, until *Malchus* of *Atzilus* becomes *Keser* of *Beriya*. \"That's how it works.\" Then the whole thing goes over again in *Beriya*: all these levels go over again in *Beriya* till *Malchus* of *Beriya* becomes *Keser* of *Yetzira*, and then again from *Yetzira* to *Asiya*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -680,26 +790,39 @@
           ],
           "phrases": [
             {
-              "he": "ונמצא סוף הכל שהוא מלכות דמלכות דעשיה,",
-              "en": "So the end of everything, *Malchus* of *Malchus* of *Asiya*,"
+              "he": "ונמצא סוף הכל",
+              "en": "The end of everything,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1731, 1734],
+                "start": 813.08,
+                "end": 814.04
+              }
             },
             {
-              "he": "נעוץ בתחלת הכל שהוא בחינת מלכות דאין סוף שמתצמצם להיות כתר לאדם קדמון",
-              "en": "is wedged in the beginning of everything, *Malchus* of the *Ein Sof* that contracts to become *Keser* of *Adam Kadmon*,"
+              "he": "שהוא מלכות דמלכות דעשיה,"
             },
             {
-              "he": "כמו שכתוב בעץ חיים בהתחלתו בשער הכללים,",
-              "en": "as is explained in *Etz Chaim*, at its beginning, in *Shaar HaKlalim*."
+              "he": "נעוץ בתחלת הכל שהוא בחינת מלכות דאין סוף שמתצמצם להיות כתר לאדם קדמון"
+            },
+            {
+              "he": "כמו שכתוב בעץ חיים בהתחלתו בשער הכללים,"
             },
             {
               "he": "והיינו אני ראשון ואני אחרון כנזכר לעיל",
-              "en": "And this is \"I am first and I am last,\" as mentioned above."
+              "en": "And this is what it means: *ani rishon*, *Malchus* of *Ein Sof*; *v'ani acharon*, *Malchus* of *Malchus* of *Asiya*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1759, 1782],
+                "start": 833.22,
+                "end": 841.76
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**So the end of everything**, *Malchus* of *Malchus* of *Asiya*, is wedged in the beginning of everything, *Malchus* of the *Ein Sof* as it contracts to become *Keser* of *Adam Kadmon*, as *Etz Chaim* explains at its very beginning. And this is what \"I am first and I am last\" means: \"I am first\" is *Malchus* of the *Ein Sof*, and \"I am last\" is *Malchus* of *Malchus* of *Asiya*.",
+              "text": "So the end of everything, *Malchus* of *Malchus* of *Asiya*, is wedged in the beginning of everything, *Malchus* of the *Ein Sof* as it contracts to become *Keser* of *Adam Kadmon*, as *Etz Chaim* explains at its very beginning. And this is what \"I am first and I am last\" means: \"I am first\" is *Malchus* of the *Ein Sof*, and \"I am last\" is *Malchus* of *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -718,26 +841,29 @@
           ],
           "phrases": [
             {
-              "he": "(מה שאין כן בחינת עצמות אור אין סוף שלפני הצמצום",
-              "en": "(But the Essence of the *Or Ein Sof* before the *tzimtzum*"
+              "he": "(מה שאין כן בחינת עצמות אור אין סוף שלפני הצמצום"
             },
             {
-              "he": "לא נקרא עדיין גם בשם תחלה וסוף",
-              "en": "is not yet called even by the name of beginning and end,"
+              "he": "לא נקרא עדיין גם בשם תחלה וסוף"
             },
             {
-              "he": "כי הרי הוא בחינת אור עצמות עדיין כמו שהוא טרם שנמשך בשביל השפעה למטה",
-              "en": "for it is still the light of the Essence as it is, before it was drawn out to give forth below,"
+              "he": "כי הרי הוא בחינת אור עצמות עדיין כמו שהוא טרם שנמשך בשביל השפעה למטה"
             },
             {
               "he": "כמו שכתוב אתה קדוש ושמך קדוש כו' כידוע)",
-              "en": "as it is written, \"You are holy and Your Name is holy,\" as is known.)"
+              "en": "Both *Atah*, Himself, and the light are *kadosh*: totally removed, with nothing to do with all this *hishtalshelus*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1902, 1923],
+                "start": 893.96,
+                "end": 902.89
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "But the Essence of the *Or Ein Sof* before the *tzimtzum* **is not yet called even by the name of beginning and end**: it is still the light of the Essence as it is, before it was drawn out to give forth below. Notice that he says this whole *hishtalshelus* runs from *Malchus* of the *Ein Sof* after the *tzimtzum* to *Malchus* of *Malchus* of *Asiya*. So it seems there are two levels he is leaving out of it: the Essence of the *Or Ein Sof*, which is higher than the *hishtalshelus*, and us, who are lower than the *hishtalshelus*.",
+              "text": "But the Essence of the *Or Ein Sof* before the *tzimtzum* is not yet called even by the name of beginning and end: it is still the light of the Essence as it is, before it was drawn out to give forth below. Notice that he says this whole *hishtalshelus* runs from *Malchus* of the *Ein Sof* after the *tzimtzum* to *Malchus* of *Malchus* of *Asiya*. So it seems there are two levels he is leaving out of it: the Essence of the *Or Ein Sof*, which is higher than the *hishtalshelus*, and us, who are lower than the *hishtalshelus*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -749,7 +875,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "And that is the thing: really we are the ones who connect to the actual *Atzmus*, through the mitzvos \"and stuff like that.\" As it says, \"**You are holy and Your Name is holy**\": both You, Himself, and the light are holy, totally removed. They have nothing to do with all this *hishtalshelus*.",
+              "text": "And that is the thing: really we are the ones who connect to the actual *Atzmus*, through the mitzvos \"and stuff like that.\" As it says, \"You are holy and Your Name is holy\": both You, Himself, and the light are holy, totally removed. They have nothing to do with all this *hishtalshelus*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -774,30 +900,36 @@
           ],
           "phrases": [
             {
-              "he": "והנה אחר, היחוד",
-              "en": "But the unification:"
+              "he": "והנה אחר, היחוד"
             },
             {
-              "he": "בהתבוננות היטב בכל פרטי ההשתלשלות",
-              "en": "only with a good contemplation of all the particulars of the *hishtalshelus*,"
-            },
-            {
-              "he": "מריש כל דרגין שהוא מלכות דאין סוף עד מלכות דעשיה דוקא,",
-              "en": "from the head of all levels, *Malchus* of the *Ein Sof*, to *Malchus* of *Asiya*, *davka*:"
+              "he": "בהתבוננות היטב בכל פרטי ההשתלשלות מריש כל דרגין שהוא מלכות דאין סוף עד מלכות דעשיה דוקא,",
+              "en": "Only when you look good and understand all the *pratim*, from the beginning to the end,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1948, 1963],
+                "start": 912.76,
+                "end": 917.16
+              }
             },
             {
               "he": "אזי יומשך הכל אל המקור הראשון",
-              "en": "then everything will be drawn to the first source,"
+              "en": "only then can you pull the whole thing even higher than *Malchus* of *Ein Sof* after the *tzimtzum*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [1969, 1987],
+                "start": 921.76,
+                "end": 930.08
+              }
             },
             {
-              "he": "שהוא בחינת עצמיות אור אין סוף שלפני הצמצום",
-              "en": "the Essence of the *Or Ein Sof* before the *tzimtzum*."
+              "he": "שהוא בחינת עצמיות אור אין סוף שלפני הצמצום"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The text now explains **the unification**. Only when you look well and understand all the particulars, **from the head of all levels, *Malchus* of the *Ein Sof*, to *Malchus* of *Asiya*, *davka***, from the beginning to the end, then **everything will be drawn to the first source**. Only then can you pull the whole thing even higher than *Malchus* of the *Ein Sof* after the *tzimtzum*. To what? To the Essence of the *Or Ein Sof* before the *tzimtzum*.",
+              "text": "The text now explains the unification. Only when you look well and understand all the particulars, from the head of all levels, *Malchus* of the *Ein Sof*, to *Malchus* of *Asiya*, *davka*, from the beginning to the end, then everything will be drawn to the first source. Only then can you pull the whole thing even higher than *Malchus* of the *Ein Sof* after the *tzimtzum*. To what? To the Essence of the *Or Ein Sof* before the *tzimtzum*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -818,33 +950,55 @@
           "phrases": [
             {
               "he": "והיינו כוונה כללית דפסוק ראשון ביחודא עילאה דקריאת שמע",
-              "en": "And this is the general *kavana* (intention) of the first verse, the *yichuda ila'a* (upper unification) of the *Shema*:"
+              "en": "That's the *kavana* of the *Shema Yisrael*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [2017, 2023],
+                "start": 948.26,
+                "end": 951.3
+              }
             },
             {
-              "he": "יהו״ה אחד,",
-              "en": "\"*Havaya* is One\":"
+              "he": "יהו״ה אחד,"
             },
             {
-              "he": "אחדות פשוט ממש שלפני הצמצום הראשון,",
-              "en": "a simple unity, *mamash*, before the first *tzimtzum*;"
+              "he": "אחדות פשוט ממש שלפני הצמצום הראשון,"
             },
             {
               "he": "שעל זה אמר בספר יצירה לפני אחד מה אתה סופר",
-              "en": "of which the *Sefer Yetzira* says, \"Before one, what do you count?\""
+              "en": "What do you count before one?",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [2035, 2040],
+                "start": 961.42,
+                "end": 962.86
+              }
             },
             {
               "he": "למעלה מי׳ ספירות כו'",
-              "en": "above the ten *sefiros*."
+              "en": "Higher than the ten *sefiros*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [2046, 2050],
+                "start": 967.36,
+                "end": 968.38
+              }
             },
             {
               "he": "וכמאמר אנת הוא חד ולא בחושבן י׳ ספירות כו' וכידוע",
-              "en": "And as the saying goes, \"You are One, and not in the count of the ten *sefiros*,\" as is known."
+              "en": "You are one, and not even in a *cheshbon* of ten *sefiros*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [2101, 2113],
+                "start": 996.18,
+                "end": 999.88
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This is the general *kavana* (intention) of the first verse of the *Shema*, the *yichuda ila'a* (the upper unification): **\"*Havaya* is One\"**, a simple unity, *mamash*, before the first *tzimtzum*. That is the *kavana* of *Shema Yisroel*. Of this the *Sefer Yetzira* says, \"Before one, what do you count?\" Higher than the ten *sefiros* of *Echad*, what do you count? In fact it explains in various places that \"*Havaya* is One\" really refers to *Yachid* (the Singular), and to how *Echad* is included in *Yachid*. As the saying goes, \"You are One, and not in the count of the ten *sefiros*\": not even in a count of ten *sefiros*, a totally higher level, as will be explained later in chapter 10.",
+              "text": "This is the general *kavana* (intention) of the first verse of the *Shema*, the *yichuda ila'a* (the upper unification): \"*Havaya* is One\", a simple unity, *mamash*, before the first *tzimtzum*. That is the *kavana* of *Shema Yisroel*. Of this the *Sefer Yetzira* says, \"Before one, what do you count?\" Higher than the ten *sefiros* of *Echad*, what do you count? In fact it explains in various places that \"*Havaya* is One\" really refers to *Yachid* (the Singular), and to how *Echad* is included in *Yachid*. As the saying goes, \"You are One, and not in the count of the ten *sefiros*\": not even in a count of ten *sefiros*, a totally higher level, as will be explained later in chapter 10.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -863,26 +1017,29 @@
           ],
           "phrases": [
             {
-              "he": "וכוונה כללית דברוך שם כבוד מלכותו לעולם ועד ביחודא תתאה",
-              "en": "And the general *kavana* of \"Blessed be the Name of the glory of His kingdom forever and ever,\" the *yichuda tata'a* (lower unification),"
+              "he": "וכוונה כללית דברוך שם כבוד מלכותו לעולם ועד ביחודא תתאה"
             },
             {
-              "he": "הוא בחינת מלכות דאין סוף אחר הצמצום",
-              "en": "is *Malchus* of the *Ein Sof* after the *tzimtzum*,"
+              "he": "הוא בחינת מלכות דאין סוף אחר הצמצום"
             },
             {
               "he": "שעל זה אמר מלכותך מלכות כל עולמים,",
-              "en": "of which it says, \"Your kingship is the kingship of all worlds,\""
+              "en": "Your *Malchus* is *Malchus* of all the worlds,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [2150, 2157],
+                "start": 1020.44,
+                "end": 1022.8
+              }
             },
             {
-              "he": "עד מלכות דעשיה שהוא ענין אני ראשון ואני אחרון הנזכר לעיל",
-              "en": "down to *Malchus* of *Asiya*; which is the matter of \"I am first and I am last\" mentioned above."
+              "he": "עד מלכות דעשיה שהוא ענין אני ראשון ואני אחרון הנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The general *kavana* of \"Blessed be the Name of the glory of His kingdom forever and ever,\" the *yichuda tata'a* (the lower unification), is *Malchus* of the *Ein Sof* after the *tzimtzum*. Of this it says, **\"Your kingship is the kingship of all worlds,\"** from *Malchus* of the *Ein Sof* after the *tzimtzum* down to *Malchus* of *Asiya*. It is the same *Malchus*. That is the way of a king's *Malchus*: it is the same *Malchus* from Hodu to Kush. And that is what \"Blessed be the Name of the glory of His kingdom, *l'olam va'ed*\" means; and *va'ed* is *echad*.",
+              "text": "The general *kavana* of \"Blessed be the Name of the glory of His kingdom forever and ever,\" the *yichuda tata'a* (the lower unification), is *Malchus* of the *Ein Sof* after the *tzimtzum*. Of this it says, \"Your kingship is the kingship of all worlds,\" from *Malchus* of the *Ein Sof* after the *tzimtzum* down to *Malchus* of *Asiya*. It is the same *Malchus*. That is the way of a king's *Malchus*: it is the same *Malchus* from Hodu to Kush. And that is what \"Blessed be the Name of the glory of His kingdom, *l'olam va'ed*\" means; and *va'ed* is *echad*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -992,7 +1149,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So right now the *Malchus* runs from *Malchus* of the *Ein Sof* to *Malchus* of *Asiya*: that is the matter of **\"I am first and I am last\"**, and of \"Your kingship is the kingship of all worlds,\" down to *Malchus* of *Asiya*.",
+              "text": "So right now the *Malchus* runs from *Malchus* of the *Ein Sof* to *Malchus* of *Asiya*: that is the matter of \"I am first and I am last\", and of \"Your kingship is the kingship of all worlds,\" down to *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1017,22 +1174,19 @@
           ],
           "phrases": [
             {
-              "he": "וכל יחוד וחיבור דראש לסוף זה אחר ההתבוננות בפרטיות רבות שביניהם",
-              "en": "And every unification and joining of this beginning to end, after the contemplation of the many particulars between them,"
+              "he": "וכל יחוד וחיבור דראש לסוף זה אחר ההתבוננות בפרטיות רבות שביניהם"
             },
             {
-              "he": "אינו רק כמו פרט אחד לגבי בחינת הכלל הכוללם יחד",
-              "en": "is only like one particular compared to the *klal* that includes them all together,"
+              "he": "אינו רק כמו פרט אחד לגבי בחינת הכלל הכוללם יחד"
             },
             {
-              "he": "שהוא בחינת מקיף הכללי דעגול שמקיף לקו",
-              "en": "which is the general *makif* of the *igul* (circle) that encompasses the *Kav*."
+              "he": "שהוא בחינת מקיף הכללי דעגול שמקיף לקו"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And every unification and joining of this beginning to end, after the contemplation of the many particulars between them,** **is only like one particular compared to the *klal* that includes them all together**: the general *makif* of the *igul* (circle) that encompasses the *Kav*, which he reads as the *Kav* of the *machshava kduma* (the primordial thought).",
+              "text": "And every unification and joining of this beginning to end, after the contemplation of the many particulars between them, is only like one particular compared to the *klal* that includes them all together: the general *makif* of the *igul* (circle) that encompasses the *Kav*, which he reads as the *Kav* of the *machshava kduma* (the primordial thought).",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1065,25 +1219,42 @@
           "phrases": [
             {
               "he": "וגם הוא פרט אחד יחשב",
-              "en": "And it too is counted as one particular"
+              "en": "The *machshava kduma* is only one *prat*",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3064, 3070],
+                "start": 1453.46,
+                "end": 1455.7
+              }
             },
             {
-              "he": "לגבי עצמיות אור אין סוף שלפני הצמצום שנקרא טהירו עילאה",
-              "en": "compared to the Essence of the *Or Ein Sof* before the *tzimtzum*, called *tehiru ila'a*,"
+              "he": "לגבי עצמיות אור אין סוף שלפני הצמצום שנקרא טהירו עילאה"
             },
             {
               "he": "שלמעלה מהיות גם בחינת כלל לפרט,",
-              "en": "which is above being even a *klal* to a *prat*,"
+              "en": "That's not even called a *klal* to a *prat*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3087, 3095],
+                "start": 1462.43,
+                "end": 1464.84
+              }
             },
             {
               "he": "מאחר שנקרא קדוש ומובדל בבחינת העצמיות",
-              "en": "since it is called holy and separate, in its essence."
+              "en": "It's totally separate from it, has nothing to do with it.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3100, 3110],
+                "start": 1467.68,
+                "end": 1471.25
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And it too is counted as one particular**: the *machshava kduma* is only one *prat* compared to the Essence of the *Or Ein Sof* before the *tzimtzum*, the *tehiru ila'a*. That is **above being even a *klal* to a *prat***: it is not even called a *klal* to a *prat*. It is called holy and separate: it is totally separate from it and has nothing to do with it, in its essence.",
+              "text": "And it too is counted as one particular: the *machshava kduma* is only one *prat* compared to the Essence of the *Or Ein Sof* before the *tzimtzum*, the *tehiru ila'a*. That is above being even a *klal* to a *prat*: it is not even called a *klal* to a *prat*. It is called holy and separate: it is totally separate from it and has nothing to do with it, in its essence.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1102,26 +1273,32 @@
           ],
           "phrases": [
             {
-              "he": "וזהו פירוש יחיד חי העולמים",
-              "en": "And this is the meaning of \"*Yachid* (the Singular), life of the worlds\":"
+              "he": "וזהו פירוש יחיד חי העולמים"
             },
             {
-              "he": "מבחינת יחיד זה נמשך על ידי צמצום הראשון הנזכר לעיל",
-              "en": "from this *Yachid* is drawn, through the first *tzimtzum* mentioned above,"
+              "he": "מבחינת יחיד זה נמשך על ידי צמצום הראשון הנזכר לעיל"
             },
             {
-              "he": "להיות נקרא חי כל העולמים דאבי''ע שבקו בבחינת מקיף ופנימי כו'",
-              "en": "to be called the life of all the worlds of *Atzilus*, *Beriya*, *Yetzira* and *Asiya* that are in the *Kav*, as *makif* and *pnimi*,"
+              "he": "להיות נקרא חי כל העולמים דאבי''ע שבקו בבחינת מקיף ופנימי כו'"
             },
             {
-              "he": "וכידוע ודי למבין.",
-              "en": "as is known. This is enough for one who understands."
+              "he": "וכידוע",
+              "en": "As is known.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3158, 3160],
+                "start": 1501.5,
+                "end": 1502.1
+              }
+            },
+            {
+              "he": "ודי למבין."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And this is the meaning of \"*Yachid* (the Singular), life of the worlds\"**: from this *Yachid* is drawn, through the first *tzimtzum*, what is called the life of all the worlds. From *Yachid* comes the *machshava kduma*, and it comes as *makif* and *pnimi*, as is known. \"And this will basically be the framework.\"",
+              "text": "And this is the meaning of \"*Yachid* (the Singular), life of the worlds\": from this *Yachid* is drawn, through the first *tzimtzum*, what is called the life of all the worlds. From *Yachid* comes the *machshava kduma*, and it comes as *makif* and *pnimi*, as is known. \"And this will basically be the framework.\"",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1147,30 +1324,42 @@
           ],
           "phrases": [
             {
-              "he": "ואחר שיבואר לאדם ביאור כל פרט בסדר השתלשלות זאת,",
-              "en": "And after a person has had each particular of this order of *hishtalshelus* explained,"
+              "he": "ואחר שיבואר לאדם ביאור כל פרט בסדר השתלשלות זאת,"
             },
             {
-              "he": "הצריך לכל אדם לידע ולקבוע בנפשו",
-              "en": "which every person needs to know and fix in his soul,"
+              "he": "הצריך לכל אדם לידע ולקבוע בנפשו"
             },
             {
-              "he": "הנה תמיד כל ימי חייו ירגיל מוחו ולבו",
-              "en": "then always, all the days of his life, he should train his mind and heart,"
+              "he": "הנה תמיד כל ימי חייו",
+              "en": "the whole time, every day of his life,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3191, 3206],
+                "start": 1516.92,
+                "end": 1521.76
+              }
             },
             {
-              "he": "אחר טוב ידיעתו ורגילותו תמיד בכל פרטיהם דווקא",
-              "en": "once he knows it well and is used to it, constantly, in all their particulars, *davka*,"
+              "he": "ירגיל מוחו ולבו"
+            },
+            {
+              "he": "אחר טוב ידיעתו ורגילותו תמיד בכל פרטיהם דווקא"
             },
             {
               "he": "לעשות הקיצור מן האריכות מראש לסוף יחד",
-              "en": "to make the short out of the long, from beginning to end together."
+              "en": "he should be *margil* himself to immediately see that the *Aibershter* is *mamash* here.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3226, 3239],
+                "start": 1535.49,
+                "end": 1546.58
+              }
             }
           ],
           "blocks": [
             {
               "kind": "avodah",
-              "text": "After a person has had each particular of this order explained, he must know and fix in his soul that **always, all the days of his life**, the whole time, every day of his life, he should **train his mind and heart** in all their particulars, *davka*, **to make the short out of the long, from beginning to end together**: he should train himself to see immediately that the *Aibershter* is *mamash* here.",
+              "text": "After a person has had each particular of this order explained, he must know and fix in his soul that always, all the days of his life, the whole time, every day of his life, he should train his mind and heart in all their particulars, *davka*, to make the short out of the long, from beginning to end together: he should train himself to see immediately that the *Aibershter* is *mamash* here.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1203,17 +1392,22 @@
           "phrases": [
             {
               "he": "עד שברגע א' ממש בהתבונן בנפשו בסוף הכל,",
-              "en": "until, in one moment, *mamash*, when he contemplates in his soul the end of everything,"
+              "en": "Whenever he sees whatever happened, immediately he can put the whole thing together in one shot,",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3359, 3374],
+                "start": 1602.82,
+                "end": 1612.68
+              }
             },
             {
-              "he": "שהוא השגות איכות התהוות יש מאין הגשם דגלגלים וד' יסודות הגשמיים וכל פרטי עולם הזה השפל",
-              "en": "which is the grasp of how the physical comes into being as *yesh* (something) from *ayin* (nothing): the *galgalim* (celestial orbits), the four physical elements and all the details of this lowly world,"
+              "he": "שהוא השגות איכות התהוות יש מאין הגשם דגלגלים וד' יסודות הגשמיים וכל פרטי עולם הזה השפל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**until, in one moment, *mamash***, when he contemplates the end of everything, how the physical comes into being, the *galgalim* (celestial orbits), the four elements and all the details of this world: whenever he sees whatever happened, he can immediately put the whole thing together in one shot, where the *galgalim* go to the *Ofanim* (a class of angels) and through *Asiya*, *Yetzira*, *Beriya*, *Atzilus*. Whoosh, straight to the *Aibershter*, and he says the *Aibershter* did this. There was a hurricane: who did it? It was the *Aibershter*. And the food tasted real good: who did it? It was the *Aibershter*.",
+              "text": "until, in one moment, *mamash*, when he contemplates the end of everything, how the physical comes into being, the *galgalim* (celestial orbits), the four elements and all the details of this world: whenever he sees whatever happened, he can immediately put the whole thing together in one shot, where the *galgalim* go to the *Ofanim* (a class of angels) and through *Asiya*, *Yetzira*, *Beriya*, *Atzilus*. Whoosh, straight to the *Aibershter*, and he says the *Aibershter* did this. There was a hurricane: who did it? It was the *Aibershter*. And the food tasted real good: who did it? It was the *Aibershter*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1232,34 +1426,42 @@
           ],
           "phrases": [
             {
-              "he": "כמו שכתוב שאו מרום עיניכם,",
-              "en": "as it is written, \"Lift up your eyes on high\""
+              "he": "כמו שכתוב שאו מרום עיניכם,"
             },
             {
-              "he": "בראיה גשמיית,",
-              "en": "with physical sight,"
+              "he": "בראיה גשמיית,"
             },
             {
               "he": "וראו מי ברא אלה,",
-              "en": "\"and see who created these\":"
+              "en": "and see who created these things",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3486, 3491],
+                "start": 1658.44,
+                "end": 1661.2
+              }
             },
             {
-              "he": "בגשמיות התהוותם ליש גמור ממש בצמצום היותר אחרון",
-              "en": "in the physicality of their coming into being as a complete *yesh*, *mamash*, in the very last *tzimtzum*,"
+              "he": "בגשמיות התהוותם ליש גמור ממש בצמצום היותר אחרון"
             },
             {
               "he": "שבזה ממש שורה בבחינת אין סוף דוקא",
-              "en": "that in this, *mamash*, the *Ein Sof* rests, *davka*,"
+              "en": "But in the *gashmiyus*, when he sees the *gashmiyus* in front of him, in that is the *Ein Sof*, *davka*",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3542, 3561],
+                "start": 1682.82,
+                "end": 1688.72
+              }
             },
             {
-              "he": "מבחינת תחלת הכל, שהוא בחינת מלכות דאין סוף שלפני מקור האצי'",
-              "en": "from the beginning of everything, *Malchus* of the *Ein Sof* before the source of *Atzilus*."
+              "he": "מבחינת תחלת הכל, שהוא בחינת מלכות דאין סוף שלפני מקור האצי'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "\"**Lift up your eyes on high**,\" **with physical sight**. And this, by the way, is the *inyan* of *re'iya* (sight): you know that *Moshiach* will bring the thing in a way of *re'iya*. It means that *mamash*, when a person tastes his food, he is tasting the *Aibershter*. \"**and see who created these**,\" in the actual physicality of their coming into being as a complete *yesh*, in the very last *tzimtzum*.",
+              "text": "\"Lift up your eyes on high,\" with physical sight. And this, by the way, is the *inyan* of *re'iya* (sight): you know that *Moshiach* will bring the thing in a way of *re'iya*. It means that *mamash*, when a person tastes his food, he is tasting the *Aibershter*. \"**and see who created these**,\" in the actual physicality of their coming into being as a complete *yesh*, in the very last *tzimtzum*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1271,7 +1473,7 @@
             },
             {
               "kind": "explanation",
-              "text": "The text says **that in this, *mamash*, the *Ein Sof* rests, *davka***. Now he is bringing in the levels he left out before. Before, he went only down to *Malchus* of *Asiya*; now he brings in the physical. When a person sees the physical in front of him, in that is the *Ein Sof*, *davka*: the beginning of everything, *Malchus* of the *Ein Sof* before *Atzilus*.",
+              "text": "The text says that in this, *mamash*, the *Ein Sof* rests, *davka*. Now he is bringing in the levels he left out before. Before, he went only down to *Malchus* of *Asiya*; now he brings in the physical. When a person sees the physical in front of him, in that is the *Ein Sof*, *davka*: the beginning of everything, *Malchus* of the *Ein Sof* before *Atzilus*.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1296,20 +1498,23 @@
           ],
           "phrases": [
             {
-              "he": "וע\"כ לא נזכר בכל ספר תהלים בשבחי גדולת יהו״ה רק בדרך פשוט,",
-              "en": "And therefore the whole Book of *Tehillim* (Psalms) mentions the praises of G-d's greatness only in a simple way:"
+              "he": "וע\"כ לא נזכר בכל ספר תהלים בשבחי גדולת יהו״ה רק בדרך פשוט,"
             },
             {
-              "he": "בגדולות ונפלאות מעשה יהו״ה בשמים וארץ וכל צבאם הגשמיים דוקא",
-              "en": "in the great and wondrous works of G-d in heaven and earth and all their physical hosts, *davka*;"
+              "he": "בגדולות ונפלאות מעשה יהו״ה בשמים וארץ וכל צבאם הגשמיים דוקא"
             },
             {
               "he": "ולא נזכר שבחי גדולתו בעולמות העליונים רוחניים",
-              "en": "and does not mention the praises of His greatness in the upper, spiritual worlds,"
+              "en": "It doesn't talk about the angels and stuff like that in *Tehillim*.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3717, 3729],
+                "start": 1768.74,
+                "end": 1771.64
+              }
             },
             {
-              "he": "עד רום המעלות שלפני האצילות כו'",
-              "en": "up to the highest levels before *Atzilus*."
+              "he": "עד רום המעלות שלפני האצילות כו'"
             }
           ],
           "blocks": [
@@ -1317,7 +1522,7 @@
               "kind": "question",
               "question": "Bunnies, lions and boats: that is the praise of G-d?",
               "askedBy": "teacher",
-              "text": "**the whole Book of *Tehillim* (Psalms) mentions the praises of G-d's greatness only in a simple way**. It says that each bunny has a rock to run under, and the young lions roar for their prey, and the boats go on the sea and the waves are so big. So what kind of thing is that? That is the praise of G-d? That is not the praise of G-d. This whole planet is some tiny little nothing. What are you telling me about the bunnies? He says: \"No, just the opposite. The whole thing that the *Aibershter* feeds the bunnies and gives each one a rock to hide under, that's the whole thing. That's where you see the actual *Atzmus*.\"",
+              "text": "the whole Book of *Tehillim* (Psalms) mentions the praises of G-d's greatness only in a simple way. It says that each bunny has a rock to run under, and the young lions roar for their prey, and the boats go on the sea and the waves are so big. So what kind of thing is that? That is the praise of G-d? That is not the praise of G-d. This whole planet is some tiny little nothing. What are you telling me about the bunnies? He says: \"No, just the opposite. The whole thing that the *Aibershter* feeds the bunnies and gives each one a rock to hide under, that's the whole thing. That's where you see the actual *Atzmus*.\"",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1329,7 +1534,7 @@
             },
             {
               "kind": "explanation",
-              "text": "*Tehillim* **does not mention the praises of His greatness in the upper, spiritual worlds**. It does not talk about the angels and stuff like that. It talks about \"Oh, You helped me with my enemy.\" So what, He helped you with your enemy? Why not talk at least about the angels, and why even about the angels? Talk higher, talk about big things, **up to the highest levels before *Atzilus***. It does not talk about any of those things. Why? Because their beginning is wedged in their end, *davka*: it is down here in the world that the real thing of the *Aibershter* is. As was said before, \"I, I am He,\" *mamash*: I am Him, right here, *davka* with us.",
+              "text": "*Tehillim* does not mention the praises of His greatness in the upper, spiritual worlds. It does not talk about the angels and stuff like that. It talks about \"Oh, You helped me with my enemy.\" So what, He helped you with your enemy? Why not talk at least about the angels, and why even about the angels? Talk higher, talk about big things, up to the highest levels before *Atzilus*. It does not talk about any of those things. Why? Because their beginning is wedged in their end, *davka*: it is down here in the world that the real thing of the *Aibershter* is. As was said before, \"I, I am He,\" *mamash*: I am Him, right here, *davka* with us.",
               "audio": [
                 {
                   "lecture": "053 Tape011-Side2-Ch7.mp3",
@@ -1375,26 +1580,46 @@
           ],
           "phrases": [
             {
-              "he": "מפני שנעוץ תחלתן בסופן דוקא כנזכר לעיל",
-              "en": "Because their beginning is wedged in their end, *davka*, as mentioned above,"
+              "he": "מפני שנעוץ תחלתן בסופן דוקא כנזכר לעיל"
             },
             {
               "he": "וכמו שכתוב אני אני הוא ממש וכו'",
-              "en": "and as it is written, \"I, I am He,\" *mamash*;"
+              "en": "*Mamash*: I am Him, right here. With us.",
+              "audio": {
+                "lecture": "053 Tape011-Side2-Ch7.mp3",
+                "words": [3822, 3829],
+                "start": 1806.36,
+                "end": 1809.54
+              }
             },
             {
-              "he": "ועצמיות אור אין סוף הוא הסובב כו' ודי למבין.",
-              "en": "and the Essence of the *Or Ein Sof* is what encompasses [everything]. This is enough for one who understands."
+              "he": "ועצמיות אור אין סוף הוא הסובב כו'",
+              "en": "The *Atzmus Ein Sof* is the actual *sovev* on the whole thing.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [100, 113],
+                "start": 55.76,
+                "end": 59.62
+              }
+            },
+            {
+              "he": "ודי למבין."
             },
             {
               "he": "וזהו אמיתית המכוון בהתבוננות בפרט כנזכר לעיל",
-              "en": "And this is the truth of what is intended in the contemplation of the particular, as mentioned above."
+              "en": "And that's the real *amitiyus* in the *kavanos* of *hisbonenus bifrat*, as mentioned above",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [120, 130],
+                "start": 63.57,
+                "end": 68.89
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "\"I, I am He,\" *mamash*, and **the Essence of the *Or Ein Sof* is what encompasses [everything]**: the *Atzmus* of the *Ein Sof* is the actual *sovev* (the encompassing) on the whole thing, *davka*. And this is the real truth of the *kavana* in the contemplation of the particular: that *davka* through it you see how the *Aibershter* is *mamash* here.",
+              "text": "\"I, I am He,\" *mamash*, and the Essence of the *Or Ein Sof* is what encompasses [everything]: the *Atzmus* of the *Ein Sof* is the actual *sovev* (the encompassing) on the whole thing, *davka*. And this is the real truth of the *kavana* in the contemplation of the particular: that *davka* through it you see how the *Aibershter* is *mamash* here.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1414,25 +1639,52 @@
           "phrases": [
             {
               "he": "(וגם שלפי החשבון בפרטי ההשתלשלות, רחוק מאד מאד מראש לסוף,",
-              "en": "(And although by the reckoning of the particulars of the *hishtalshelus* it is very, very far from beginning to end,"
+              "en": "It looks very far.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [159, 162],
+                "start": 83.84,
+                "end": 85.32
+              }
             },
             {
               "he": "אבל באמת קרוב מאד בלי הפסק והסתר כלל באמצע",
-              "en": "in truth it is very close, with no break and no hiding at all in the middle;"
+              "en": "It's really totally close, without no *hefsek* at all.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [169, 177],
+                "start": 89.34,
+                "end": 92.06
+              }
             },
             {
               "he": "וכמו שכתוב אני אני הוא",
-              "en": "as it is written, \"I, I am He,\""
+              "en": "It's *mamash* Me. I am right here, I'm right here with you.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [294, 305],
+                "start": 140.52,
+                "end": 143.9
+              }
             },
             {
-              "he": "ומבלעדי באמצעיתא כו' ודי למבין)",
-              "en": "\"and besides Me\" in the middle [there is nothing]. This is enough for one who understands.)"
+              "he": "ומבלעדי באמצעיתא כו'",
+              "en": "And beside Me, in the middle, there's nothing.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [309, 316],
+                "start": 149.02,
+                "end": 153.18
+              }
+            },
+            {
+              "he": "ודי למבין)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**by the reckoning of the particulars of the *hishtalshelus* it is very, very far from beginning to end**: it looks very far. But **in truth it is very close, with no break and no hiding at all in the middle**: it is really totally close, with no break at all.",
+              "text": "by the reckoning of the particulars of the *hishtalshelus* it is very, very far from beginning to end: it looks very far. But in truth it is very close, with no break and no hiding at all in the middle: it is really totally close, with no break at all.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1457,7 +1709,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So it is with the whole *hishtalshelus*: all the connections in the middle, with all the particulars, this goes into that and that goes into this, but really it is all transparent and totally discounted. As it says, **\"I, I am He,\"**: it is *mamash* Me, I am right here with you. **\"and besides Me\" in the middle** there is nothing. I am at the beginning of the thing, I am at the end of the thing, and besides Me there is nothing else: all the middle is not there.",
+              "text": "So it is with the whole *hishtalshelus*: all the connections in the middle, with all the particulars, this goes into that and that goes into this, but really it is all transparent and totally discounted. As it says, \"I, I am He,\": it is *mamash* Me, I am right here with you. \"and besides Me\" in the middle there is nothing. I am at the beginning of the thing, I am at the end of the thing, and besides Me there is nothing else: all the middle is not there.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1476,38 +1728,32 @@
           ],
           "phrases": [
             {
-              "he": "(וכמו שכתוב כי האלהי״ם עשה את האדם",
-              "en": "(And as it is written, \"For G-d made man\""
+              "he": "(וכמו שכתוב כי האלהי״ם עשה את האדם קדמאה ראשית הקו, ישר מראשו לסופו",
+              "en": "The *Aibershter* made *Adam Kadmon* totally straight",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [361, 366],
+                "start": 170.4,
+                "end": 174.84
+              }
             },
             {
-              "he": "קדמאה ראשית הקו,",
-              "en": "(the first [man], the beginning of the *Kav*)"
+              "he": "עד עקב דאדם קדמון שמסתיים בסוף העשיה בבחינת יושר"
             },
             {
-              "he": "ישר מראשו לסופו",
-              "en": "\"straight,\" from his head to his end,"
+              "he": "שהוא ההתכללות גמור מראשו לסופו,"
             },
             {
-              "he": "עד עקב דאדם קדמון שמסתיים בסוף העשיה בבחינת יושר",
-              "en": "down to the heel of *Adam Kadmon*, which ends at the end of *Asiya*, as straightness,"
+              "he": "והמה בקשו חשבונות רבים בבחינת העגולים כו'"
             },
             {
-              "he": "שהוא ההתכללות גמור מראשו לסופו,",
-              "en": "which is a complete inclusion from his head to his end;"
-            },
-            {
-              "he": "והמה בקשו חשבונות רבים בבחינת העגולים כו'",
-              "en": "\"but they sought many reckonings,\" as circles,"
-            },
-            {
-              "he": "בפירוד והתחלקות זה למעלה מזה כו')",
-              "en": "in separation and division, one above the other.)"
+              "he": "בפירוד והתחלקות זה למעלה מזה כו')"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "\"**For G-d made man**\" straight: the *Aibershter* made *Adam Kadmon* totally straight, **from his head to his end**. The business of *Adam Kadmon* is one straight line that goes, poof, straight from there to here, all the way down to the end of *Asiya*, as straightness. That is the way it is, and you have to take it simply: *mamash* the *Aibershter* is here. To the point that you can even forget the *hisbonenus*, like what the Rebbe said, *al daas hatinok hazeh*, according to the mind of this child.",
+              "text": "\"For G-d made man\" straight: the *Aibershter* made *Adam Kadmon* totally straight, from his head to his end. The business of *Adam Kadmon* is one straight line that goes, poof, straight from there to here, all the way down to the end of *Asiya*, as straightness. That is the way it is, and you have to take it simply: *mamash* the *Aibershter* is here. To the point that you can even forget the *hisbonenus*, like what the Rebbe said, *al daas hatinok hazeh*, according to the mind of this child.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1521,7 +1767,7 @@
               "kind": "question",
               "question": "So what do you need all this hisbonenus for? Why all the complications?",
               "askedBy": "teacher",
-              "text": "Why not do like the simple Jew in all those stories of the Baal Shem Tov, who took a whistle \"and stuff like that\"? Yes: if you could actually believe, like a baby, that the *Aibershter* is *mamash* here, it would be fine. But the problem is that it is not really like that. Why? Because \"**they sought many reckonings**,\" circles, in separation, one above the other. People are not really seeing it straight. You say: if I save my money and put it in an IRA account, then by the time I'm 65... What does anything have to do with that?",
+              "text": "Why not do like the simple Jew in all those stories of the Baal Shem Tov, who took a whistle \"and stuff like that\"? Yes: if you could actually believe, like a baby, that the *Aibershter* is *mamash* here, it would be fine. But the problem is that it is not really like that. Why? Because \"they sought many reckonings,\" circles, in separation, one above the other. People are not really seeing it straight. You say: if I save my money and put it in an IRA account, then by the time I'm 65... What does anything have to do with that?",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1598,38 +1844,38 @@
           ],
           "phrases": [
             {
-              "he": "ויובן כל הנזכר לעיל בדרך קצרה מאד בבחינת הכתרים שבכל עולם",
-              "en": "All the above can be understood in a very short way from the *Kesarim* (crowns) of each world:"
+              "he": "ויובן כל הנזכר לעיל בדרך קצרה מאד בבחינת הכתרים שבכל עולם"
             },
             {
               "he": "שאין בכתרים בחינת השתלשלות עילה ועלול בריחוק המדרגה כלל",
-              "en": "that in the *Kesarim* there is no *hishtalshelus* of cause and effect, with a distance of level, at all."
+              "en": "By the *Kesarim*, there's no real *hispashtus*.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [1182, 1193],
+                "start": 491.42,
+                "end": 496.64
+              }
             },
             {
-              "he": "כמו בחינת הרצון הפשוט שבעצמיות אור אין סוף,",
-              "en": "Like the simple will in the Essence of the *Or Ein Sof*,"
+              "he": "כמו בחינת הרצון הפשוט שבעצמיות אור אין סוף,"
             },
             {
-              "he": "כמו שכתוב כשעלה ברצונו הפשוט כו',",
-              "en": "as it says, \"When it arose in His simple will\":"
+              "he": "כמו שכתוב כשעלה ברצונו הפשוט כו',"
             },
             {
-              "he": "בחינת מלכות דאין סוף עצמה כשעלה במחשבה הפשוטה אנא אמלוך כו'",
-              "en": "*Malchus* of the *Ein Sof* itself, when \"*Ana Emloch* (I shall rule)\" arose in the simple thought,"
+              "he": "בחינת מלכות דאין סוף עצמה כשעלה במחשבה הפשוטה אנא אמלוך כו'"
             },
             {
-              "he": "שהוא למעלה מרצון להאציל או לברוא כו'",
-              "en": "which is above a will to emanate or to create,"
+              "he": "שהוא למעלה מרצון להאציל או לברוא כו'"
             },
             {
-              "he": "רק בחינת היולי עדיין",
-              "en": "but only *hiyuli* (raw potential) still."
+              "he": "רק בחינת היולי עדיין"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "All this can be understood **in a very short way from the *Kesarim* (crowns) of each world**. Really, by the *Kesarim* there is no real spreading out, no cause and effect with a distance of level. It is like the simple will in the Essence of the *Or Ein Sof*: \"when it arose in His simple will,\" *Malchus* of the *Ein Sof* itself, when *Ana Emloch* (I shall rule) arose in the simple thought. That is above a will to emanate or to create: **only *hiyuli* (raw potential) still**.",
+              "text": "All this can be understood in a very short way from the *Kesarim* (crowns) of each world. Really, by the *Kesarim* there is no real spreading out, no cause and effect with a distance of level. It is like the simple will in the Essence of the *Or Ein Sof*: \"when it arose in His simple will,\" *Malchus* of the *Ein Sof* itself, when *Ana Emloch* (I shall rule) arose in the simple thought. That is above a will to emanate or to create: only *hiyuli* (raw potential) still.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1650,34 +1896,35 @@
           ],
           "phrases": [
             {
-              "he": "וממנו נתצמצם תחילה בחינת רצון הקדום שנקרא כתר לאדם קדמון",
-              "en": "And from it was first contracted the primordial will, called *Keser* of *Adam Kadmon*;"
+              "he": "וממנו נתצמצם תחילה בחינת רצון הקדום שנקרא כתר לאדם קדמון"
             },
             {
-              "he": "ואחר כך הרצון להאציל, בחינת כתר דאצילות בכלל",
-              "en": "then the will to emanate, *Keser* of *Atzilus* as a whole;"
+              "he": "ואחר כך הרצון להאציל, בחינת כתר דאצילות בכלל"
             },
             {
-              "he": "ואחר כך הרצון לברוא, בחינת כתר שבמלכות דבריאה,",
-              "en": "then the will to create, *Keser* of *Malchus* of *Beriya*;"
+              "he": "ואחר כך הרצון לברוא, בחינת כתר שבמלכות דבריאה,"
             },
             {
-              "he": "ואחר כך כתר מלכות דיצירה כו'",
-              "en": "then *Keser* of *Malchus* of *Yetzira*,"
+              "he": "ואחר כך כתר מלכות דיצירה כו'"
             },
             {
-              "he": "עד כתר מלכות דעשיה, הרצון לעשות",
-              "en": "down to *Keser* of *Malchus* of *Asiya*, the will to make."
+              "he": "עד כתר מלכות דעשיה, הרצון לעשות"
             },
             {
               "he": "וכמו שכתוב כל אשר חפץ יהו״ה עשה כו'",
-              "en": "As it is written, \"All that G-d desired, He did.\""
+              "en": "What He wanted, that's what He did.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [1284, 1290],
+                "start": 543.38,
+                "end": 544.82
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "From it was first contracted **the primordial will**, *Keser* of *Adam Kadmon*; then the will to emanate, *Keser* of *Atzilus*; then the will to create, and so on down to *Keser* of *Malchus* of *Asiya*, **the will to make**. \"All that G-d desired, He did\": *mamash* like one thing, all one continuum. What He wanted, that is what He did. In a person too, the will to do is not less than the will to think about it. Actually it is more: the whole reason he is thinking about it is because he wants to do it.",
+              "text": "From it was first contracted the primordial will, *Keser* of *Adam Kadmon*; then the will to emanate, *Keser* of *Atzilus*; then the will to create, and so on down to *Keser* of *Malchus* of *Asiya*, the will to make. \"All that G-d desired, He did\": *mamash* like one thing, all one continuum. What He wanted, that is what He did. In a person too, the will to do is not less than the will to think about it. Actually it is more: the whole reason he is thinking about it is because he wants to do it.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -1697,34 +1944,42 @@
           ],
           "phrases": [
             {
-              "he": "ומהו ההפרש באדם התחתון בבחינת רצונו ועצמותו ההיולי",
-              "en": "And what difference is there in man below, in his will and his *hiyuli* essence,"
+              "he": "ומהו ההפרש באדם התחתון בבחינת רצונו ועצמותו ההיולי"
             },
             {
-              "he": "שהיה כלול בו ד' רצונות",
-              "en": "in which four wills were included,"
+              "he": "שהיה כלול בו ד' רצונות"
             },
             {
-              "he": "כמו רצון לעצמות גופו לרצון לפעול ולעשות היותר אחרון,",
-              "en": "from the will for the essence of his body to the will to act and do the very last thing?"
+              "he": "כמו רצון לעצמות גופו לרצון לפעול ולעשות היותר אחרון,"
             },
             {
               "he": "הכל משרש ומקור אחד יצא כו'",
-              "en": "It all came out from one root and source."
+              "en": "it's all the same *ratzon*.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [1359, 1363],
+                "start": 573.71,
+                "end": 574.76
+              }
             },
             {
               "he": "כך אין הפרש ממש בין בחינת רצונו הפשוט שנמשך להיות רצון להאציל,",
-              "en": "So there is no difference, *mamash*, between His simple will drawn down to be the will to emanate"
+              "en": "So it's *mamash* one thing.",
+              "audio": {
+                "lecture": "054 Tape012-Side1-Ch7.mp3",
+                "words": [1398, 1402],
+                "start": 592.58,
+                "end": 595.63
+              }
             },
             {
-              "he": "לבחינת רצונו הפשוט שנמשך להיות חפץ יהו״ה בכל אשר עשה בסוף עולם העשיה שלנו כו' ודי למבין",
-              "en": "and His simple will drawn down to be G-d's desire in all that He did at the end of our world of *Asiya*. This is enough for one who understands."
+              "he": "לבחינת רצונו הפשוט שנמשך להיות חפץ יהו״ה בכל אשר עשה בסוף עולם העשיה שלנו כו' ודי למבין"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And what difference is there in man below**? In his will and his *hiyuli* essence all the wills were included, from the will for the essence of his body to the will to act and do the very last thing: it all comes from one root and source; it is all the same will. **So there is no difference, *mamash***, between His simple will drawn down to be the will to emanate and His simple will drawn down to be G-d's desire in all that He did at the end of our world of *Asiya*. It is *mamash* one thing, all connected, the same as by a person.",
+              "text": "And what difference is there in man below? In his will and his *hiyuli* essence all the wills were included, from the will for the essence of his body to the will to act and do the very last thing: it all comes from one root and source; it is all the same will. So there is no difference, *mamash*, between His simple will drawn down to be the will to emanate and His simple will drawn down to be G-d's desire in all that He did at the end of our world of *Asiya*. It is *mamash* one thing, all connected, the same as by a person.",
               "audio": [
                 {
                   "lecture": "054 Tape012-Side1-Ch7.mp3",
@@ -2103,7 +2358,7 @@
       ]
     },
     {
-      "text": "Line 28 prints \"והנה אחר, היחוד\"; he reads it as \"והנה אך היחוד\" (053 w1924-1933, partly garbled) and renders it \"Only when you look good... then\" (w1948). The phrases follow his reading: the printed אחר is taken as אך, \"But the unification:\", with \"only\" carried into line 29.",
+      "text": "Line 28 prints \"והנה אחר, היחוד\"; he reads it as \"והנה אך היחוד\" (053 w1924-1933, partly garbled) and renders it \"Only when you look good... then\" (w1948). The phrase keeps the printed text and has no English of its own; his \"only\" is carried into line 29.",
       "lines": [
         "qdsa32jz"
       ]

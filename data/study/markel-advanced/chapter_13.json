@@ -6,7 +6,7 @@
   "status": "draft",
   "provenance": {
     "method": "generated",
-    "from": "study-chapter skill, version 2",
+    "from": "study-chapter skill, version 3",
     "date": "2026-11-22"
   },
   "lectures": [
@@ -111,38 +111,31 @@
           ],
           "phrases": [
             {
-              "he": "(יג) והנמשל מכל הנזכר לעיל יובן למעלה",
-              "en": "(13) The *nimshal* (what the analogy stands for) of all the above is understood above,"
+              "he": "(יג) והנמשל מכל הנזכר לעיל יובן למעלה"
             },
             {
-              "he": "בכללות ענין הצמצום הנקרא מקום פנוי,",
-              "en": "in the general matter of the *tzimtzum* (contraction), called the *makom panui* (the empty place):"
+              "he": "בכללות ענין הצמצום הנקרא מקום פנוי,"
             },
             {
-              "he": "שזהו בחינת הסתלקות וההעלם לעצמותו",
-              "en": "that it is a withdrawal and hiding of His Essence,"
+              "he": "שזהו בחינת הסתלקות וההעלם לעצמותו"
             },
             {
-              "he": "כדי שיוכל להיות אחר כך בחינת השפעת אור כנזכר לעיל",
-              "en": "so that afterwards there can be a flow of light, as explained above;"
+              "he": "כדי שיוכל להיות אחר כך בחינת השפעת אור כנזכר לעיל"
             },
             {
-              "he": "ולא שנסתלק ונתעלם לגמרי",
-              "en": "and not that it withdrew and was hidden altogether,"
+              "he": "ולא שנסתלק ונתעלם לגמרי"
             },
             {
-              "he": "אלא כמשל הסתלקות והעלם בעצמו,",
-              "en": "but like the analogy of a withdrawal and hiding within himself"
+              "he": "אלא כמשל הסתלקות והעלם בעצמו,"
             },
             {
-              "he": "הידיעה של כל העומק והאריכות כששונה דרך קיצור כנ\"ל",
-              "en": "of the knowledge of all the depth and the length, when he teaches by way of a *kitzur* (shortening), as explained above."
+              "he": "הידיעה של כל העומק והאריכות כששונה דרך קיצור כנ\"ל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Here comes the *nimshal* of the analogy of chapter 12. Above, the *tzimtzum* called the *makom panui* is a withdrawal of His very Essence, so that afterwards there can be a flow of light, **and not that it withdrew and was hidden altogether**. It is like the teacher of chapter 12, who withdraws and hides within himself all the depth and the length of what he knows when he teaches it by way of a *kitzur*.",
+              "text": "As was said in chapter 12: this is the *nimshal* of the analogy of chapter 12.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -160,26 +153,22 @@
           ],
           "phrases": [
             {
-              "he": "א\"כ לפי זה",
-              "en": "If so, according to this,"
+              "he": "א\"כ לפי זה"
             },
             {
-              "he": "גם אחר כל ההשתלשלות דאבי''ע שעומד במקום פנוי זה,",
-              "en": "even after the whole chain of *ABYA* (*Atzilus*, *Beriya*, *Yetzira* and *Asiya*) that stands in this empty place,"
+              "he": "גם אחר כל ההשתלשלות דאבי''ע שעומד במקום פנוי זה,"
             },
             {
-              "he": "הרי בחינת העלם אור העצמות",
-              "en": "the hidden light of the Essence"
+              "he": "הרי בחינת העלם אור העצמות"
             },
             {
-              "he": "מקיף וסובב לכל השתלשלות דקו",
-              "en": "encompasses and surrounds the whole chain of the *Kav*."
+              "he": "מקיף וסובב לכל השתלשלות דקו"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So even after the whole chain of *ABYA*, which stands in this empty place, **the hidden light of the Essence** surrounds the whole chain of the *Kav*. It is the same as was said of the teacher: the whole *pilpul* (debate) of the Gemara is *sovev* (surrounding) on the Mishna.",
+              "text": "As was said there, it is the same as with the teacher: the whole *pilpul* (debate) of the Gemara is *sovev* (surrounding) on the Mishna.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -209,34 +198,42 @@
           ],
           "phrases": [
             {
-              "he": "וכמו שהיה אור העצמות קודם הצמצום",
-              "en": "And just as the light of the Essence, before the *tzimtzum*,"
+              "he": "וכמו שהיה אור העצמות קודם הצמצום"
             },
             {
-              "he": "ממלא את כל החלל ריקן ומקום פנוי הזה",
-              "en": "filled the whole empty *chalal* (space) and this empty place,"
+              "he": "ממלא את כל החלל ריקן ומקום פנוי הזה"
             },
             {
-              "he": "כמו שכתוב בעץ חיים,",
-              "en": "as is written in *Etz Chaim*,"
+              "he": "כמו שכתוב בעץ חיים,"
             },
             {
-              "he": "כך גם אחר הצמצום",
-              "en": "so too after the *tzimtzum*"
+              "he": "כך גם אחר הצמצום"
             },
             {
               "he": "הרי ישנו לאור העצמיות כמו שהוא בבחינת אין סוף ממש,",
-              "en": "the light of the Essence is there as it is, *mamash* infinite,"
+              "en": "It's still there, exactly the same way.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3342, 3348],
+                "start": 1454.72,
+                "end": 1456.36
+              }
             },
             {
               "he": "רק שלא נגלה למטה לגבי שפע המקבלים",
-              "en": "only that it is not revealed below, to the flow of the receivers (*mekablim*)."
+              "en": "It's just that it's not seen to the *mekabel*.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3520, 3528],
+                "start": 1526.29,
+                "end": 1529.22
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "As the light of the Essence filled the whole empty space before the *tzimtzum*, so it is still really filling up the whole thing. It is the same by the teacher: it is not that his knowledge really disappeared in any way. His knowledge still fills up his whole brain, and the smaller knowledge is filled with it in exactly the same way. That is what Reb Hillel said: it does not mean that there is actually a hole in the light.",
+              "text": "The light of the Essence is still really filling up the whole thing, the same as by the teacher. It is not that his knowledge really disappeared in any way. His knowledge still fills up his whole brain, and the smaller knowledge is still filled with it in exactly the same way. That is what Reb Hillel said: it does not mean that there is actually a hole in the light.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -248,7 +245,7 @@
             },
             {
               "kind": "explanation",
-              "text": "It is still there, exactly the same way, **only that it is not revealed below, to the flow of the receivers**. As far as the *mekablim* go, it is just like when the teacher tells them the Mishna: they see only the outside of the Mishna. They do not get the whole *sovev* of the Gemara on it, and yet it really is there.",
+              "text": "It is still there, exactly the same way. Only, as far as the *mekablim* go, it is just like when the teacher tells them the Mishna: they see only the outside of the Mishna. They do not get the whole *sovev* of the Gemara on it, and yet it really is there.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -281,21 +278,25 @@
           "phrases": [
             {
               "he": "אבל לגבי עצמותו אין שינוי בזה כלל",
-              "en": "But with respect to His Essence there is no change in this at all,"
+              "en": "As far as the *mashpia*, it's totally no *shinui*.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3552, 3565],
+                "start": 1540.06,
+                "end": 1546.82
+              }
             },
             {
-              "he": "וכמו משל היודע כל האריכות להשיב לשואלו מיד,",
-              "en": "as in the analogy of one who knows all the length, to answer whoever asks him at once,"
+              "he": "וכמו משל היודע כל האריכות להשיב לשואלו מיד,"
             },
             {
-              "he": "גם בשעה ששונה לתלמידו בקיצור כו'.",
-              "en": "even while he teaches his student in short."
+              "he": "גם בשעה ששונה לתלמידו בקיצור כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But with respect to His Essence there is no change in this at all**. As far as the *mekabel* goes, it is really not gone; it is just not seen by him. As far as the *mashpia* (the giver) goes, there is totally no change.\n\nThe reader starts \"like the known analogy\", *hamashal hayadua*. \"It's not *hayodea kol ha'arichus*?\" \"Oh, here it says *hayadua*.\" And it is read again: like the analogy of one who knows all the length and can answer whoever asks him at once, even while he is teaching his student in short.",
+              "text": "As far as the *mekabel* goes, it is really not gone; it is just not seen by him. As far as the *mashpia* (the giver) goes, there is totally no change.\n\nThe reader starts \"like the known analogy\", *hamashal hayadua*. \"It's not *hayodea kol ha'arichus*?\" \"Oh, here it says *hayadua*.\" And the line is read again.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -321,25 +322,35 @@
           "phrases": [
             {
               "he": "ומה שכתוב ישת חשך סתרו",
-              "en": "And what is written, \"He made darkness His hiding place,\""
+              "en": "He surrounds himself with darkness, that he hides himself; he puts darkness around himself to hide himself.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3608, 3633],
+                "start": 1582.27,
+                "end": 1593.3
+              }
             },
             {
-              "he": "וכמאמרז''ל ברישא חשוכה כו',",
-              "en": "and the saying of our Sages, \"at first, darkness,\""
+              "he": "וכמאמרז''ל ברישא חשוכה כו',"
             },
             {
               "he": "היינו לגבי למטה",
-              "en": "that is, with respect to below,"
+              "en": "as far as to the downstairs.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3688, 3693],
+                "start": 1632.86,
+                "end": 1634.44
+              }
             },
             {
-              "he": "שנמשך רק מבחינת הרשימו שנשאר אחר ההעלם כנזכר לעיל",
-              "en": "which is drawn only from the *reshimu* (impression) that remained after the hiding, as explained above."
+              "he": "שנמשך רק מבחינת הרשימו שנשאר אחר ההעלם כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "\"**He made darkness His hiding place**\": He puts darkness around Himself to hide Himself. And our Sages say, at first darkness. But **that is, with respect to below**. If you look at the actual order, as it was laid out here, the light preceded the darkness. The darkness is not first; the light is first, really. Only as far as the creation of the world goes, as far as downstairs, is it first darkness.",
+              "text": "He surrounds Himself with darkness: He puts darkness around Himself to hide Himself. And as our Sages say, *berisha chashucha* (at first, darkness). If you look at the actual order, as it was laid out here, really the light preceded the darkness. The darkness is not first; the light is first, really. What they say, *berisha chashucha*, is as far as downstairs.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -352,7 +363,7 @@
             {
               "kind": "mashal",
               "title": "The confused student and the teacher who knows",
-              "text": "Below, which is drawn only from the *reshimu* left after the hiding, it starts with the darkness. But as far as the real thing goes, it really started with the light. It is the same with a teacher. By the student it starts with a big sense of confusion. By the teacher it does not: the teacher starts off knowing the whole thing, and then he makes a concealment and has to tell him tiny little things.",
+              "text": "So as far as downstairs goes, it starts with the darkness. But as far as the real thing goes, it really started with the light. It is the same with a teacher. By the student it starts with a big sense of confusion. By the teacher it does not: the teacher starts off knowing the whole thing, and then he makes a concealment and has to tell him tiny little things.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -371,26 +382,36 @@
           ],
           "phrases": [
             {
-              "he": "וזהו אתה קדוש ושמך,",
-              "en": "And this is \"You are holy and Your Name\":"
+              "he": "וזהו אתה קדוש ושמך,"
             },
             {
-              "he": "אור העצמי, קדוש ומובדל",
-              "en": "the light of the Essence is holy and set apart."
+              "he": "אור העצמי, קדוש ומובדל"
             },
             {
               "he": "ואתה הוא קודם כו'",
-              "en": "And \"You are He before\" [the world was created, and You are He after],"
+              "en": "You're before the world and you're after the world, exactly the same.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3839, 3850],
+                "start": 1704.66,
+                "end": 1708.73
+              }
             },
             {
               "he": "כמו שכתוב אני יהו״ה לא שניתי כו'",
-              "en": "as is written, \"I, *Havaya*, have not changed.\""
+              "en": "Is really no difference.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3857, 3860],
+                "start": 1710.46,
+                "end": 1711.42
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "\"You are holy and Your Name is holy\": the light of the Essence is set apart. A student stops him: \"Over here it says *or ha'atzmi kadosh umuvdal*.\" \"Okay, good. That makes more sense like that\": the light of the Essence is holy and set apart. And \"**You are He before**\": You are before the world and You are after the world, exactly the same, as it says, \"I, *Havaya*, have not changed.\" There is really no difference.",
+              "text": "*Ata kadosh veshimcha kadosh*. A student stops him: \"Over here it says *or ha'atzmi kadosh umuvdal*.\" \"Okay, good. That makes more sense like that.\" And *ve'ata hu kodem*: You are before the world and You are after the world, exactly the same, as it says, *Ani Havaya lo shinisi*: there is really no difference.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -410,25 +431,35 @@
           "phrases": [
             {
               "he": "משום דמה שמגלה עמוקות מני חשך",
-              "en": "For what \"reveals deep things out of darkness\""
+              "en": "This thing that he reveals the *amukos* from the *choshech*,",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3882, 3891],
+                "start": 1726.06,
+                "end": 1730.36
+              }
             },
             {
-              "he": "והעלם זה אחר כך בהארת הקו,",
-              "en": "and out of this hiding afterwards, in the shining of the *Kav*,"
+              "he": "והעלם זה אחר כך בהארת הקו,"
             },
             {
               "he": "הוא דווקא מאותו אור העצמות שלפני הצמצום",
-              "en": "is *davka* from that same light of the Essence that was before the *tzimtzum*."
+              "en": "this is really from the original *or ha'etzem*, which was before the *tzimtzum*.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [3892, 3904],
+                "start": 1732.04,
+                "end": 1735.48
+              }
             },
             {
-              "he": "וזהו אתה הוא כו' וכידוע",
-              "en": "And this is \"You are He\", as is known."
+              "he": "וזהו אתה הוא כו' וכידוע"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "What **reveals deep things out of darkness**, and out of this hiding, afterwards, in the shining of the *Kav*, is really from the original light of the Essence that was before the *tzimtzum*.",
+              "text": "This thing, that he reveals the *amukos* (deep things) out of the darkness, is really from the original light of the Essence, which was before the *tzimtzum*.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -479,36 +510,53 @@
           ],
           "phrases": [
             {
-              "he": "ואמנם לא נקרא אור העצמות שמקיף ההשתלשלות שבמקום פנוי כו',",
-              "en": "However, the light of the Essence that encompasses the chain in the empty place is not called"
+              "he": "ואמנם לא נקרא אור העצמות שמקיף ההשתלשלות שבמקום פנוי כו', כמו בחינת מקיף לפנימי,",
+              "en": "It's really not even called a *makif* at all to a *pnimi*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [101, 112],
+                "start": 64.21,
+                "end": 66.86
+              }
             },
             {
-              "he": "כמו בחינת מקיף לפנימי,",
-              "en": "a *makif* (encompassing light) to an inner one,"
+              "he": "כמקיף הכללי דקו"
             },
             {
-              "he": "כמקיף הכללי דקו",
-              "en": "like the general *makif* of the *Kav*,"
-            },
-            {
-              "he": "שמקיף לאבי''ע בשוה כו'",
-              "en": "which encompasses *ABYA* equally."
+              "he": "שמקיף לאבי''ע בשוה כו'"
             },
             {
               "he": "כי הרי עדיין אינו בגדר וסוג בחינת אור השפעה כלל,",
-              "en": "For it is still not at all in the bounds and category of a light of influence,"
+              "en": "It really has nothing to do with it.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [177, 184],
+                "start": 95.84,
+                "end": 97.74
+              }
             },
             {
               "he": "גם לא להיות בחינת מקיף כו'",
-              "en": "nor is it even a *makif*;"
+              "en": "It's not really in a way of a *pnimi*, and it's not really in a way of a *makif*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [210, 228],
+                "start": 107.73,
+                "end": 111.06
+              }
             },
             {
-              "he": "רק אור העצמות,",
-              "en": "only the light of the Essence,"
+              "he": "רק אור העצמות,"
             },
             {
               "he": "שהוא בחינת התגלותו כמו שהוא בעצמות",
-              "en": "which is His revelation as He is in the Essence."
+              "en": "And it's still the same; it really didn't change.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [239, 248],
+                "start": 116.68,
+                "end": 118.98
+              }
             }
           ],
           "blocks": [
@@ -526,7 +574,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**For it is still not at all in the bounds and category of a light of influence**: it really has nothing to do with it. A *makif* means that it encompasses something; this really has nothing to do with it. It is not in the way of a *pnimi* and not in the way of a *makif*. It is **only the light of the Essence**, as it is in the Essence, and it is still the same: it really did not change.",
+              "text": "It really has nothing to do with it. It is not really a *makif*: a *makif* means that it is *makif* on something, and this really has nothing to do with it. It is not in the way of a *pnimi* and not in the way of a *makif*. It is still the same: it really did not change.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -545,30 +593,25 @@
           ],
           "phrases": [
             {
-              "he": "ולזה אנו אומרים הוא קיים",
-              "en": "And for this we say, \"He exists"
+              "he": "ולזה אנו אומרים הוא קיים"
             },
             {
-              "he": "ושמו קיים",
-              "en": "and His Name exists,\""
+              "he": "ושמו קיים"
             },
             {
-              "he": "וכן ברוך הוא וברוך שמו וכהאי גוונא,",
-              "en": "and likewise \"Blessed is He and blessed is His Name,\" and the like:"
+              "he": "וכן ברוך הוא וברוך שמו וכהאי גוונא,"
             },
             {
-              "he": "רק מבחינת אותיות דגליף בטהירו עילאה זה,",
-              "en": "only from the letters of the engraving in this *tehiru ila'a* (upper purity),"
+              "he": "רק מבחינת אותיות דגליף בטהירו עילאה זה,"
             },
             {
-              "he": "שהוא מה ששיער בעצמו בכח כו'",
-              "en": "which is what He measured within Himself, in potential."
+              "he": "שהוא מה ששיער בעצמו בכח כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So we say \"He exists and His Name exists\", and \"Blessed is He and blessed is His Name\": it is exactly the same as before. What comes is **only from the letters of the engraving** in the *tehiru ila'a*. And this is a hint to what goes on in *Ayin Beis* (the Rebbe Rashab's series of discourses): that from the original Essence of the light nothing went through.",
+              "text": "So we say *Hu kayam ushmo kayam*, and likewise *baruch Hu uvaruch shmo*: it is exactly the same as before. And this is a hint towards what goes on in *Ayin Beis* (the Rebbe Rashab's series of discourses): that from the original Essence of the light nothing went through.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -617,7 +660,7 @@
             },
             {
               "kind": "aside",
-              "text": "So it is only from the *glif glifu* in the *tehiru ila'a*, **which is what He measured within Himself, in potential**: the Rebbe first of all had to estimate for himself what can these idiots understand. \"What am I going to... I have to write a book, so I have to make a *shiur* (measure): what can these idiots understand?\" You know what I'm saying?",
+              "text": "So it is only from the *glif glifu* in the *tehiru ila'a*: the Rebbe first of all had to estimate for himself what can these idiots understand. \"What am I going to... I have to write a book, so I have to make a *shiur* (measure): what can these idiots understand?\" You know what I'm saying?",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -632,7 +675,7 @@
                 ],
                 "reason": "Has the Mitteler Rebbe call his readers \"these idiots\" (said twice) while estimating what they can understand.",
                 "action": "replace",
-                "publishable": "So it is only from the *glif glifu* in the *tehiru ila'a*, **which is what He measured within Himself, in potential**: the Rebbe first of all had to estimate for himself what these readers could understand. \"I have to write a book, so I have to make a *shiur* (measure): what can they understand?\""
+                "publishable": "So it is only from the *glif glifu* in the *tehiru ila'a*, which is what He measured within Himself, in potential: the Rebbe first of all had to estimate for himself what these readers could understand. \"I have to write a book, so I have to make a *shiur* (measure): what can they understand?\""
               }
             },
             {
@@ -669,21 +712,32 @@
           "phrases": [
             {
               "he": "וגם זה הוא הנשאר בבחינת העלם והסתלקות קצת",
-              "en": "And even this remains somewhat hidden and withdrawn,"
+              "en": "Even by this, *haaros meshuarim* is also pretty much in a way of *helem* and *histalkus*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [982, 996],
+                "start": 397.38,
+                "end": 404.3
+              }
             },
             {
               "he": "דהיינו רק לפי ערך אופן הנצרך להשתלשלות אחר צמצום זה",
-              "en": "that is, only according to the manner needed for the chain after this *tzimtzum*."
+              "en": "It is only according to what he had to give over to us.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1006, 1019],
+                "start": 409.6,
+                "end": 413
+              }
             },
             {
-              "he": "ודי למבין.",
-              "en": "And this is enough for one who understands."
+              "he": "ודי למבין."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And even this remains somewhat hidden and withdrawn**: even these measured radiances are pretty much in a way of hiding and withdrawal, only according to the manner needed for the chain after this *tzimtzum*. It is only according to what He had to give over to us; it is only according to the *mekabel*. So much for the analogy of the teacher and the student.",
+              "text": "Even by this, the measured radiances are also pretty much in a way of hiding and withdrawal. It is only according to what He had to give over to us; it is only according to the *mekabel*. So much for the analogy of the teacher and the student.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -708,42 +762,34 @@
           ],
           "phrases": [
             {
-              "he": "וגם על פי אופן משל הב' הנזכר לעיל דחיות הנפש בגוף,",
-              "en": "And also according to the second analogy mentioned above, of the life of the soul in the body,"
+              "he": "וגם על פי אופן משל הב' הנזכר לעיל דחיות הנפש בגוף,"
             },
             {
-              "he": "שמשתנה ממהות רוחני למהות גשמי כנזכר לעיל",
-              "en": "which changes from a spiritual being to a physical being, as explained above,"
+              "he": "שמשתנה ממהות רוחני למהות גשמי כנזכר לעיל"
             },
             {
-              "he": "גם כן אין זה שינוי כלל,",
-              "en": "this too is no change at all."
+              "he": "גם כן אין זה שינוי כלל,"
             },
             {
-              "he": "שהרי כמו שיש קישור וחיבור לחיות הגשמי לחיות הרוחני",
-              "en": "For just as there is a bond and connection of the physical life to the spiritual life,"
+              "he": "שהרי כמו שיש קישור וחיבור לחיות הגשמי לחיות הרוחני"
             },
             {
-              "he": "ממה שרואים התפעלות הנפש ממקרי חיות הגוף,",
-              "en": "as we see the soul affected by what happens to the life of the body,"
+              "he": "ממה שרואים התפעלות הנפש ממקרי חיות הגוף,"
             },
             {
-              "he": "ועם כל זה לא ישתנה בעצם הרוחנית מחסרון התפשטות חיות אבר גשמי כנזכר לעיל,",
-              "en": "and even so the spiritual essence does not change when the life of a physical limb stops spreading, as explained above,"
+              "he": "ועם כל זה לא ישתנה בעצם הרוחנית מחסרון התפשטות חיות אבר גשמי כנזכר לעיל,"
             },
             {
-              "he": "כך אין שינוי בבחינת אור העצמות,",
-              "en": "so there is no change in the light of the Essence,"
+              "he": "כך אין שינוי בבחינת אור העצמות,"
             },
             {
-              "he": "להיותו מאיר גם אחר הצמצום",
-              "en": "since it shines even after the *tzimtzum*,"
+              "he": "להיותו מאיר גם אחר הצמצום"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The second analogy above, the life of the soul in the body, which changes from a spiritual being to a physical being, says the same: **this too is no change at all**. There is a bond between the physical life and the spiritual life, as we see the soul affected by what happens to the body, and even so the spiritual essence does not change when a physical limb loses its life. Even though you see that he is affected, really he is not affected at all.",
+              "text": "And so by the second analogy too: even though you see that he is affected, yet really he is not affected at all.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -789,7 +835,7 @@
             },
             {
               "kind": "explanation",
-              "text": "The *ruchniyus* and the *gashmiyus* (physicality) are the analogy, the *ruchniyus* included, as above, and **so there is no change in the light of the Essence**, **since it shines even after the *tzimtzum***.",
+              "text": "The *ruchniyus* and the *gashmiyus* (physicality) are the analogy, the *ruchniyus* included, as above.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -808,26 +854,22 @@
           ],
           "phrases": [
             {
-              "he": "גם שאינו רק לפי ערך ההשתלשלות",
-              "en": "even though it is only according to the measure of the chain,"
+              "he": "גם שאינו רק לפי ערך ההשתלשלות"
             },
             {
-              "he": "הרי יש ביניהם קשר וחיבור,",
-              "en": "there is a bond and connection between them;"
+              "he": "הרי יש ביניהם קשר וחיבור,"
             },
             {
-              "he": "ועם כל זה בצמצום האור בבחינת הקו,",
-              "en": "and even so, in the contraction of the light into the *Kav*,"
+              "he": "ועם כל זה בצמצום האור בבחינת הקו,"
             },
             {
-              "he": "אין זה שינוי כלל באור העצמות על פי משל זה",
-              "en": "this is no change at all in the light of the Essence, according to this analogy."
+              "he": "אין זה שינוי כלל באור העצמות על פי משל זה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**even though it is only according to the measure of the chain**: in the analogy it is not really the original power of the soul that lights up later, and in the *nimshal* too it is not really the same original light, only according to the chain. Nonetheless **there is a bond and connection between them**, and even so, in the contraction of the light into the *Kav*, it is no change at all in the light of the Essence. (The reader says \"and according to this\" and is stopped: \"Wait, wait: and even so.\")",
+              "text": "Even though it is only according to the chain: in the analogy it is not really the original power of the soul that lights up later, and so in the *nimshal* too it is not really the same original light, only according to the chain. (Reading on, he stops himself: \"Wait, wait,\" and reads the line again.)",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -846,26 +888,29 @@
           ],
           "phrases": [
             {
-              "he": "וכן על פי משל הג' מכח התנועה בגשם",
-              "en": "And so according to the third analogy, of the power of motion in a physical thing,"
+              "he": "וכן על פי משל הג' מכח התנועה בגשם"
             },
             {
-              "he": "או כמשל התחכמות מכח המשכיל הנזכר לעיל",
-              "en": "or the analogy of *hischakmus* (being smart) from the power of the intellect, mentioned above:"
+              "he": "או כמשל התחכמות מכח המשכיל הנזכר לעיל"
             },
             {
               "he": "הכל עולה לסגנון א' כנזכר לעיל באריכות",
-              "en": "it all comes to one style, as explained above at length."
+              "en": "It's all one thing, like we explained in chapter 12.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1376, 1387],
+                "start": 577.3,
+                "end": 588.21
+              }
             },
             {
-              "he": "ודי למבין.",
-              "en": "And this is enough for one who understands."
+              "he": "ודי למבין."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "That was the second analogy. And so by the third, of the power of motion in a physical thing, or of *hischakmus* from the power of the intellect: **it all comes to one style**, it is all one thing, as was explained at length in chapter 12.",
+              "text": "That was the second analogy. And so by the third: it is all one thing, as was explained at length in chapter 12.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -894,41 +939,68 @@
           "phrases": [
             {
               "he": "ואמנם בבחינת הרשימו",
-              "en": "However, as for the *reshimu*,"
+              "en": "But however, as far as the *reshimu*,",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1400, 1406],
+                "start": 594.8,
+                "end": 596.38
+              }
             },
             {
-              "he": "שמבואר למעלה, שזהו כמו הקיצור שכלול בו כל האריכות",
-              "en": "which was explained above to be like the *kitzur* that includes all the length,"
+              "he": "שמבואר למעלה, שזהו כמו הקיצור שכלול בו כל האריכות"
             },
             {
-              "he": "הנה למעלה יובן מזה שזהו בחינת כח ההגבלה",
-              "en": "above it is understood from this that it is the *koach hahagbala* (power of limitation)"
+              "he": "הנה למעלה יובן מזה שזהו בחינת כח ההגבלה שיש באור אין סוף",
+              "en": "that's to say, there is a *koach hagbala* in the *Or Ein Sof*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1453, 1467],
+                "start": 626.11,
+                "end": 630.61
+              }
             },
             {
-              "he": "שיש באור אין סוף הבלתי מוגבל בעצם",
-              "en": "that is in the *Or Ein Sof*, which is in itself unlimited:"
+              "he": "הבלתי מוגבל בעצם"
             },
             {
               "he": "דהיינו להביא כל הארות אור העצמות הבלתי גבול בבחינת הגבול",
-              "en": "that is, to bring all the unlimited radiances of the light of the Essence into limitation."
+              "en": "He has the power to take this whole infinite light and squeeze it into nothing.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1489, 1503],
+                "start": 641.52,
+                "end": 646.04
+              }
             },
             {
               "he": "שזהו ענין הרושם",
-              "en": "This is the matter of the *roshem* (impression),"
+              "en": "That's the whole *inyan* of the *roshem*,",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1507, 1513],
+                "start": 649.96,
+                "end": 651.84
+              }
             },
             {
               "he": "שכולל בבחינת הגבלה מבחינת כל עצמות אור אין סוף,",
-              "en": "which includes, in a limited way, the whole Essence of the *Or Ein Sof*,"
+              "en": "it includes the whole *Atzmus Or Ein Sof* in it.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1523, 1532],
+                "start": 654.46,
+                "end": 656.62
+              }
             },
             {
-              "he": "כמשל הקיצור שכולל הכל כו'",
-              "en": "like the analogy of the *kitzur*, which includes everything."
+              "he": "כמשל הקיצור שכולל הכל כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So that is the matter of the *tzimtzum*. But as for the *reshimu*, which was explained above to be like the *kitzur* that includes all the length: what is this *tzimtzum* and *reshimu* upstairs? Especially the *reshimu*, which holds the whole length: it means that there is a *koach hahagbala* in the *Or Ein Sof*, which is in itself unlimited. There is this power.",
+              "text": "So that is the matter of the *tzimtzum*. But as for the *reshimu*: what is this *tzimtzum* and *reshimu* upstairs? Especially the *reshimu*, which holds the whole length: it means that there is a *koach hahagbala* in the *Or Ein Sof*. There is this power.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -940,7 +1012,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**that is, to bring all the unlimited radiances of the light of the Essence into limitation**. He has the power to take this whole infinite light and squeeze it into nothing. That is the whole matter of the *roshem*: it includes the whole Essence of the *Or Ein Sof* in it, like the *kitzur* that includes everything.",
+              "text": "He has the power to take this whole infinite light and squeeze it into nothing. That is the whole matter of the *roshem*: it includes the whole Essence of the *Or Ein Sof* in it.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -960,25 +1032,28 @@
           "phrases": [
             {
               "he": "כי הוא יתברך כל יכול,",
-              "en": "For He, blessed be He, can do anything,"
+              "en": "He can do anything He wants.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1543, 1548],
+                "start": 663.56,
+                "end": 665
+              }
             },
             {
-              "he": "וכלול בו גם כן מכח המגביל",
-              "en": "and included in Him is also the power that limits,"
+              "he": "וכלול בו גם כן מכח המגביל"
             },
             {
-              "he": "להגביל ולכלול ברשימה א' מכל אור העצמות כו'",
-              "en": "to limit and include in one *reshima* (impression) all the light of the Essence,"
+              "he": "להגביל ולכלול ברשימה א' מכל אור העצמות כו'"
             },
             {
-              "he": "וכמו שכתוב במקום אחר באריכות.",
-              "en": "as is written elsewhere at length."
+              "he": "וכמו שכתוב במקום אחר באריכות."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**For He, blessed be He, can do anything**: He can do anything He wants. So included in Him is also the power that limits, to limit and include in one impression all the light of the Essence.",
+              "text": "He can do anything He wants.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -998,26 +1073,53 @@
           ],
           "phrases": [
             {
-              "he": "אך הנה באמת אין זה דמיון אמיתי לבחינת הרשימו הנשאר בחלל ריקן ומקום פנוי הנזכר לעיל",
-              "en": "But in truth this is not a true likeness of the *reshimu* that remained in the empty *chalal* and empty place mentioned above,"
+              "he": "אך הנה באמת אין זה דמיון אמיתי לבחינת הרשימו הנשאר בחלל ריקן ומקום פנוי הנזכר לעיל"
             },
             {
               "he": "כי הוא מורה שנסתלק משם הכל",
-              "en": "for it shows that everything withdrew from there,"
+              "en": "Nothing is left.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1683, 1685],
+                "start": 754.84,
+                "end": 755.7
+              }
             },
             {
-              "he": "ולא שנשאר איזה אור רק שהוא בקצור וגבול,",
-              "en": "not that some light remained, only short and limited,"
+              "he": "ולא שנשאר איזה אור",
+              "en": "Not that there was any light left,",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1690, 1696],
+                "start": 757.88,
+                "end": 759.2
+              }
+            },
+            {
+              "he": "רק שהוא בקצור וגבול,",
+              "en": "except it's a tiny little light.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1701, 1706],
+                "start": 761.26,
+                "end": 762.84
+              }
             },
             {
               "he": "אלא רק בחינת רשימו בעלמא כו'",
-              "en": "but only a mere *reshimu*."
+              "en": "Nothing is really left, just sort of like an impression.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1712, 1721],
+                "start": 766.29,
+                "end": 771.35
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But in truth this is not a true likeness** of the *reshimu* left in the empty space, **for it shows that everything withdrew from there**: nothing is left. It is **not that some light remained, only short and limited**, a tiny little light; it is only a mere *reshimu*. Nothing is really left, just sort of an impression; the actual thing is gone.",
+              "text": "Nothing is left. It is not that there was any light left, a tiny little light. Nothing is really left, just sort of an impression; the actual thing is gone.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1051,22 +1153,26 @@
           ],
           "phrases": [
             {
-              "he": "אם כן הדמיון האמיתי הוא מרושם וציון קו קצר שעושין האומנין,",
-              "en": "If so, the true likeness is the outline and mark of a short line that craftsmen make,"
+              "he": "אם כן הדמיון האמיתי הוא מרושם וציון קו קצר שעושין האומנין,"
             },
             {
-              "he": "שכולל כל אריכות מעשה הבנין",
-              "en": "which includes the whole length of the work of the building;"
+              "he": "שכולל כל אריכות מעשה הבנין"
             },
             {
               "he": "ויותר מזה כמו האות לזכרון כנזכר לעיל",
-              "en": "and more than that, like the letter for remembering, mentioned above."
+              "en": "Even more is like the acrostics.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [1764, 1769],
+                "start": 793.04,
+                "end": 795.36
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**If so, the true likeness is the outline and mark of a short line that craftsmen make**, which includes the whole length of the building: like the blueprint. And even more than that, like the letters for remembering: the acrostics.",
+              "text": "It is like the blueprint. Even more, it is like the acrostics.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1128,7 +1234,7 @@
             {
               "kind": "mashal",
               "title": "Every Good Boy",
-              "text": "And even more so in the direction of all gone: **like the letter for remembering**. There you cannot even tell what it is. Like \"Every Good Boy\": you cannot figure out what it is just from knowing the letters. Nonetheless something is still left: those are the first letters.",
+              "text": "And even more so in the direction of all gone: like the letter for remembering. There you cannot even tell what it is. Like \"Every Good Boy\": you cannot figure out what it is just from knowing the letters. Nonetheless something is still left: those are the first letters.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1146,18 +1252,23 @@
           ],
           "phrases": [
             {
-              "he": "וכך למעלה כתיב זכר רב טובך,",
-              "en": "And so above it is written, \"the remembrance of Your great goodness\":"
+              "he": "וכך למעלה כתיב זכר רב טובך, העצמי",
+              "en": "It's only a remembrance of the *rav tuvcha ha'atzmi*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [2606, 2614],
+                "start": 1115.08,
+                "end": 1118.32
+              }
             },
             {
-              "he": "העצמי כו' וכהאי גוונא",
-              "en": "the essential [goodness], and the like."
+              "he": "כו' וכהאי גוונא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "And so it is understood above, as it is written, \"**the remembrance of Your great goodness**\", the essential goodness: it is only a remembrance of the essential great goodness. It is not the actual great goodness, only a remembrance of it, like the letter for remembering.",
+              "text": "It is only a remembrance of the *rav tuvcha ha'atzmi* (Your essential great goodness). It is not the actual *rav tuvcha*, only a remembrance of it, like the letter for remembering.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1186,34 +1297,38 @@
           ],
           "phrases": [
             {
-              "he": "ויותר בהעלם והסתלקות הוא כמשל הזורק אבן כו' כנזכר לעיל",
-              "en": "And more hidden and withdrawn is the analogy of one who throws a stone, mentioned above."
+              "he": "ויותר בהעלם והסתלקות הוא כמשל הזורק אבן כו' כנזכר לעיל"
             },
             {
-              "he": "וכך אמר בספר הבהיר וכמו זרקא כו'",
-              "en": "And so it says in *Sefer HaBahir*, \"like *zarka* (throwing).\""
+              "he": "וכך אמר בספר הבהיר"
             },
             {
-              "he": "שהרי בחינת הרשימו נשאר נבדל בריחוק מקום מעצמות האור וכו'",
-              "en": "For the *reshimu* remains separate, far away from the Essence of the light."
+              "he": "וכמו זרקא כו'",
+              "en": "like he threw a stone.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [2649, 2653],
+                "start": 1134.88,
+                "end": 1136.06
+              }
             },
             {
-              "he": "ונקרא כח הנעלם ברשימו זו בחינת העלם אור, נבדל מהעלם עצמות האור דאין סוף",
-              "en": "And the power hidden in this *reshimu* is called a hidden light, separate from the hiddenness of the Essence of the light of the *Ein Sof*,"
+              "he": "שהרי בחינת הרשימו נשאר נבדל בריחוק מקום מעצמות האור וכו'"
             },
             {
-              "he": "כמו כח נבדל הנעלם בזריקת אבן",
-              "en": "like the separate power hidden in the throw of a stone,"
+              "he": "ונקרא כח הנעלם ברשימו זו בחינת העלם אור, נבדל מהעלם עצמות האור דאין סוף"
             },
             {
-              "he": "שבא מכח היד שכבר נעלם בעצמו כו'",
-              "en": "which comes from the power of the hand, which has already withdrawn into itself."
+              "he": "כמו כח נבדל הנעלם בזריקת אבן"
+            },
+            {
+              "he": "שבא מכח היד שכבר נעלם בעצמו כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And more hidden and withdrawn is the analogy of one who throws a stone**, as *Sefer HaBahir* says: like he threw a stone. The *reshimu* remains separate, far from the Essence of the light, like the separate power hidden in a thrown stone. It is as if the actual original person is gone; that is what this analogy shows. The stone is still going with the original power, but the power that threw it is gone. It is like it is going by itself. And that is how the world is: it looks like the world is going by itself, like a thrown stone where you do not even see anymore who threw it.",
+              "text": "Like he threw a stone. It is as if the actual original person is gone; that is what this analogy shows. The stone is still going with the original power, but the power that threw it is gone. It is like it is going by itself. And that is how the world is: it looks like the world is going by itself, like a thrown stone where you do not even see anymore who threw it.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1225,7 +1340,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**which comes from the power of the hand, which has already withdrawn into itself**. Not only can you not see the power of the hand anymore; it is not continuing anymore. The actual hand is not throwing anymore. The power of the movement went back into the hand.",
+              "text": "Not only that: the power of the hand is not just that you cannot see it anymore; it is not continuing anymore. The actual hand is not throwing anymore. The power of the movement went back into the hand.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1247,37 +1362,72 @@
           "phrases": [
             {
               "he": "(וכדמיון כל הגלגלים וכוכבי לכת",
-              "en": "(And like all the *galgalim* (celestial spheres) and the planets,"
+              "en": "like the whole physical universe with all the stars and planets",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [2832, 2842],
+                "start": 1214.1,
+                "end": 1219.48
+              }
             },
             {
               "he": "שסובבים מכח תנועה אלהי״ת הנעלם,",
-              "en": "which revolve from the power of a hidden G-dly motion,"
+              "en": "that are still moving around and around from the original throwing;",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [2843, 2853],
+                "start": 1219.74,
+                "end": 1225.34
+              }
             },
             {
               "he": "שבא בבחינת זריקה מאור וכח האלה״י דט' כלים החיצונים דמלכות דעשיה",
-              "en": "which came as a throw from the G-dly light and power of the nine outer vessels of *Malchus* of *Asiya*;"
+              "en": "and this came from the nine outside *keilim* of *Malchus* of *Asiya*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [2968, 2979],
+                "start": 1284.03,
+                "end": 1293.04
+              }
             },
             {
-              "he": "שנקרא זה כח הנבדל בחינת מלכות שבמלכות",
-              "en": "this is called the separate power, *Malchus* of *Malchus*,"
+              "he": "שנקרא זה כח הנבדל בחינת מלכות שבמלכות"
             },
             {
               "he": "הבא בערך ריחוק נבדל",
-              "en": "which comes in a way of separate distance;"
+              "en": "in a faraway way,",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3162, 3165],
+                "start": 1380.36,
+                "end": 1381.58
+              }
             },
             {
               "he": "ולא כמו הכתיבה באצבע או כח יד הפועל עצמו בנפעל",
-              "en": "and not like writing with the finger, or the power of the hand of the maker itself in the made,"
+              "en": "and not like the actual hand that's moving it.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3166, 3174],
+                "start": 1381.61,
+                "end": 1383.8
+              }
             },
             {
               "he": "שזהו גלוי עצם הכח בקירוב, שנקרא בחינת מלכות כמו שכתוב במקום אחר באריכות)",
-              "en": "which is the revelation of the power itself, close by, called *Malchus*, as is written elsewhere at length.)"
+              "en": "And there you can see the hand.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3175, 3181],
+                "start": 1384.21,
+                "end": 1385.74
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Like all the *galgalim* and the planets, which revolve from the power of a hidden motion that came as a throw from the nine outer vessels of *Malchus* of *Asiya*: the whole physical universe, with all the stars and planets, is still moving around and around from the original throw.",
+              "text": "It is like the whole physical universe, with all the stars and planets, that is still moving around and around from the original throw.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1309,7 +1459,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And this came from the nine outer vessels of *Malchus* of *Asiya*. It is called **the separate power**, *Malchus* of *Malchus*, which comes from a separate distance; not like the power of the hand of the maker itself in the made, which is the revelation of the power itself, close by, called *Malchus*.",
+              "text": "And this came from the nine outer vessels of *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1354,34 +1504,35 @@
           ],
           "phrases": [
             {
-              "he": "ומשלים היותר קרובים לזה הוא כמו הרמז שהשכל בהעלם בתנועה הגשמיית",
-              "en": "And the closest analogies to this are like a hint, where the intellect is hidden in a physical movement;"
+              "he": "ומשלים היותר קרובים לזה הוא כמו הרמז שהשכל בהעלם בתנועה הגשמיית"
             },
             {
               "he": "שזהו נקרא בחינת הלבשה ותפיסא בדבר נבדל כו'",
-              "en": "this is called being dressed and caught in a separate thing;"
+              "en": "That the *sechel* is caught in a movement, which is a totally different *inyan* than a *sechel*.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3245, 3260],
+                "start": 1431.6,
+                "end": 1442.13
+              }
             },
             {
-              "he": "וכן כשכותב שכל וחכמה בתנועת האצבע כו' כנזכר לעיל",
-              "en": "and likewise when one writes intellect and wisdom with the movement of the finger, as above."
+              "he": "וכן כשכותב שכל וחכמה בתנועת האצבע כו' כנזכר לעיל"
             },
             {
-              "he": "כך למעלה, בחינת הרשימו בחינת דבר נבדל בערך,",
-              "en": "So above: the *reshimu* is a thing separate in kind,"
+              "he": "כך למעלה, בחינת הרשימו בחינת דבר נבדל בערך,"
             },
             {
-              "he": "שבו מלובש בהעלם מכללות אור העצמות כו'",
-              "en": "in which something of the whole light of the Essence is dressed, hidden."
+              "he": "שבו מלובש בהעלם מכללות אור העצמות כו'"
             },
             {
-              "he": "ודי למבין.",
-              "en": "And this is enough for one who understands."
+              "he": "ודי למבין."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And the closest analogies to this are like a hint, where the intellect is hidden in a physical movement**: the intellect is caught in a movement, which is a totally different thing from intellect.",
+              "text": "The intellect is caught in a movement, which is a totally different thing from intellect.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1405,7 +1556,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So above, the *reshimu* is a thing separate in kind, in which the whole light of the Essence is dressed, hidden. So here he went over the analogies of chapter 12.",
+              "text": "So here he basically went over the analogies of chapter 12.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1430,7 +1581,13 @@
           "phrases": [
             {
               "he": "ואמנם מכל אלה יובן על כל פנים כללות ענין הרשימו",
-              "en": "However, from all these at least the general matter of the *reshimu* is understood:"
+              "en": "So from all these *meshalim*, even though one is a little bit more this way and one is a little bit more that way, when you put them all together, then you can understand at least the general *inyan*, what the *reshimu* was all about.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3369, 3417],
+                "start": 1492.47,
+                "end": 1505.2
+              }
             }
           ],
           "blocks": [
@@ -1456,29 +1613,31 @@
           "phrases": [
             {
               "he": "דגם שהוא בא בבחינת הסתלקות הכל,",
-              "en": "that even though it comes as a withdrawal of everything,"
+              "en": "There is nothing left there.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3427, 3431],
+                "start": 1508.79,
+                "end": 1509.68
+              }
             },
             {
-              "he": "ולא נשאר בה רק בהעלם גדול בחינת תכלית הקיצור והרמז כו'",
-              "en": "and nothing remains in it except, in great hiddenness, the utmost of shortening and hint,"
+              "he": "ולא נשאר בה רק בהעלם גדול בחינת תכלית הקיצור והרמז כו'"
             },
             {
-              "he": "או ככח נבדל כו', אבל",
-              "en": "or like a separate power, yet"
+              "he": "או ככח נבדל כו', אבל"
             },
             {
-              "he": "מכל מקום מזה עצמו בא ונמשך כל פרטי ההשתלשלות דקו",
-              "en": "nonetheless from this itself come and are drawn all the details of the chain of the *Kav*,"
+              "he": "מכל מקום מזה עצמו בא ונמשך כל פרטי ההשתלשלות דקו"
             },
             {
-              "he": "שנמשך מרשימו זו",
-              "en": "which is drawn from this *reshimu*."
+              "he": "שנמשך מרשימו זו"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Even though it comes as a withdrawal of everything, and there is really nothing left there, only, in great hiddenness, the utmost of shortening and hint, or like a separate power, still, from this itself all the details of the chain of the *Kav* are drawn. Here he says very clearly that the *Kav* comes from the *reshimu*.",
+              "text": "Everything is really... there is nothing left there. Here he says very clearly that the *Kav* comes from the *reshimu*.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1510,17 +1669,22 @@
           "phrases": [
             {
               "he": "כי ברשימו זו להיותה כוללת הכל בהעלם על כל פנים,",
-              "en": "For this *reshimu*, since it includes everything, at least in hiding,"
+              "en": "Since it includes everything, even though it's *b'helem*, nonetheless it's everything.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3642, 3653],
+                "start": 1626.44,
+                "end": 1631.62
+              }
             },
             {
-              "he": "היא הנותנת שיוכל לבא הכל בהתגלות על ידי בחינת הקו עד סוף העשיה",
-              "en": "is what makes it possible for everything to come into revelation through the *Kav*, to the end of *Asiya*."
+              "he": "היא הנותנת שיוכל לבא הכל בהתגלות על ידי בחינת הקו עד סוף העשיה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Since this *reshimu* includes everything, even though it is in hiding, it is nonetheless everything. That **is what makes it possible for everything to come into revelation through the *Kav*, to the end of *Asiya***.",
+              "text": "Since it includes everything, even though it is in hiding, nonetheless it is everything.",
               "audio": [
                 {
                   "lecture": "009 Tape019-Side2-Ch13.mp3",
@@ -1539,7 +1703,13 @@
           "phrases": [
             {
               "he": "וכמאמר כל היצור לא נכחד ממך",
-              "en": "As it is said, \"No *yetzur* (fashioned thing) is missing from You.\""
+              "en": "That all the *yetzur* is not missing from You.",
+              "audio": {
+                "lecture": "009 Tape019-Side2-Ch13.mp3",
+                "words": [3674, 3682],
+                "start": 1645.54,
+                "end": 1647.82
+              }
             }
           ],
           "blocks": [
@@ -1592,37 +1762,51 @@
           "phrases": [
             {
               "he": "ממך דוקא,",
-              "en": "*Davka* \"from You\":"
+              "en": "Means in You.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [150, 152],
+                "start": 69.08,
+                "end": 71.77
+              }
             },
             {
               "he": "שזהו הכל נעשה ונמשך בגלוי",
-              "en": "that everything is made and drawn into revelation"
+              "en": "that everything came out in *gilui*.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [158, 163],
+                "start": 76.54,
+                "end": 78.76
+              }
             },
             {
-              "he": "כמו שעלה ברצונו הפשוט בעצמות האור שלפני הצמצום",
-              "en": "as it arose in His simple will in the Essence of the light before the *tzimtzum*,"
+              "he": "כמו שעלה ברצונו הפשוט בעצמות האור שלפני הצמצום"
             },
             {
-              "he": "כמו ששיער בעצמו כו'",
-              "en": "as He measured within Himself."
+              "he": "כמו ששיער בעצמו כו'"
             },
             {
-              "he": "שהרי במחשבה קדומה זו ששיער בעצמו",
-              "en": "For in this *machshava kduma* (primordial thought), in which He measured within Himself,"
+              "he": "שהרי במחשבה קדומה זו ששיער בעצמו"
             },
             {
               "he": "הוא צופה ומביט הכל בסקירה א'",
-              "en": "He looks and sees everything in one glance,"
+              "en": "He sees the whole thing in one shot, everything.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [198, 208],
+                "start": 101.08,
+                "end": 104.08
+              }
             },
             {
-              "he": "דהיינו מה שנסקר בהעלם ובקיצור ורמז ברשימו זו כו'",
-              "en": "that is, what is surveyed in hiding, in short and in hint, in this *reshimu*."
+              "he": "דהיינו מה שנסקר בהעלם ובקיצור ורמז ברשימו זו כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "*Davka* \"from You\", in You: everything came out in revelation as it arose in His simple will in the Essence of the light before the *tzimtzum*, as He measured within Himself. The *machshava kduma* is after the *tzimtzum*, and the measuring within Himself is before the *tzimtzum*; there **He looks and sees everything in one glance**. He sees the whole thing in one shot, everything. It is all included there.",
+              "text": "*Mimcha davka* means in You: everything came out in revelation. The *machshava kduma* is after the *tzimtzum*, and the measuring within Himself is before the *tzimtzum*. He sees the whole thing in one shot, everything. It is all included there.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1634,7 +1818,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**that is, what is surveyed in hiding, in short and in hint**: in the *machshava kduma* is the beginning of the reconstitution of what was already included, hidden, in the *reshimu*. And it was really already measured even before that, in the measuring of the *glif glifu*.",
+              "text": "In the *machshava kduma* is the beginning of the reconstitution of what was already included, hidden, in the *reshimu*. And it was really already measured even before that, in the measuring of the *glif glifu*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1661,29 +1845,48 @@
           "phrases": [
             {
               "he": "והרי זה כמשל רושם האומן,",
-              "en": "And this is like the analogy of the craftsman's outline,"
+              "en": "It's like the blueprint.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [264, 267],
+                "start": 139.07,
+                "end": 140.78
+              }
             },
             {
-              "he": "שממנו דוקא ידע לעשות כל אריכות מעשה הבנין בפרטי פרטיו מראשו לסופו",
-              "en": "from which *davka* he knows how to do the whole length of the work of the building, in all its details, from beginning to end;"
+              "he": "שממנו דוקא ידע לעשות כל אריכות מעשה הבנין בפרטי פרטיו מראשו לסופו"
             },
             {
-              "he": "רק כדי שלא יתעלם ממנו טעמו ונימוקו בעצמותו לאריכות הענין,",
-              "en": "only so that its reason and logic in himself, for the whole length of the matter, should not be hidden from him,"
+              "he": "רק כדי שלא יתעלם ממנו טעמו ונימוקו בעצמותו לאריכות הענין,"
             },
             {
               "he": "הוא עושה לו רושם לזכרון",
-              "en": "he makes himself an outline for remembering,"
+              "en": "Therefore he makes a blueprint to remember his original plan,",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [349, 358],
+                "start": 181.56,
+                "end": 185.42
+              }
             },
             {
-              "he": "שלא ינטה מזה ולא יצטרך לעיין בעצמו מחדש",
-              "en": "so that he should not stray from it, and not need to think it through in himself anew."
+              "he": "שלא ינטה מזה"
+            },
+            {
+              "he": "ולא יצטרך לעיין בעצמו מחדש",
+              "en": "he doesn't have to look inside of himself anymore.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [367, 375],
+                "start": 188.78,
+                "end": 191.28
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And this is like the analogy of the craftsman's outline**: the blueprint, from which *davka* he knows how to do the whole length of the building, in all its details, from beginning to end. What he is really telling you here is that the blueprint has a source in a previous blueprint that was in his head. So that he should not have to rethink it every time (\"Oh yeah, how did I plan to make this wall?\"), what does he do? **he makes himself an outline for remembering**: he makes a blueprint to remember his original plan.",
+              "text": "It is like the blueprint. What he is really telling you here is that the blueprint has a source in a previous blueprint that was in his head. So that he should not have to rethink it every time (\"Oh yeah, how did I plan to make this wall?\"), what does he do? He makes a blueprint to remember his original plan.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1695,7 +1898,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**so that he should not stray from it, and not need to think it through in himself anew**. He does not have to look inside of himself anymore. But really, the blueprint originated before the blueprint. So here it says that what the *Aibershter* does is make the blueprint. And it is not that you say: why could He not just look inside Himself? He is already inside Himself. Here it is a little different, because it is almost as if He just makes the blueprint, and the blueprint makes the world.",
+              "text": "He does not have to look inside of himself anymore. But really, the blueprint originated before the blueprint. So here it says that what the *Aibershter* does is make the blueprint. And it is not that you say: why could He not just look inside Himself? He is already inside Himself. Here it is a little different, because it is almost as if He just makes the blueprint, and the blueprint makes the world.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1752,22 +1955,26 @@
           ],
           "phrases": [
             {
-              "he": "וכמו כן ענין הציונים ללימוד עמוק שבעצמו כו'",
-              "en": "And likewise the *tziyunim* (marks) for a deep study of one's own:"
+              "he": "וכמו כן ענין הציונים ללימוד עמוק שבעצמו כו'"
             },
             {
-              "he": "שזהו תועלת לידע מהם כל אורך עיון עומק עצמותו שיש לו,",
-              "en": "that they are useful to know from them the whole length of the *iyun* (analysis) of the very depth that he has,"
+              "he": "שזהו תועלת לידע מהם כל אורך עיון עומק עצמותו שיש לו,"
             },
             {
               "he": "פן ינטה ממנו כו'",
-              "en": "lest he stray from it."
+              "en": "without veering away from it.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [832, 836],
+                "start": 397.76,
+                "end": 399.6
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Likewise the marks for a deep study of one's own: if he wants to remember, instead of having to start thinking about the whole thing, he just thinks of the *tziyun* (mark) and automatically remembers the whole thing, **lest he stray from it**: without veering away from it.",
+              "text": "In other words: if he wants to remember, instead of having to start thinking about the whole thing, he just thinks of the *tziyun* (mark) and automatically remembers the whole thing, without veering away from it.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1787,26 +1994,46 @@
           ],
           "phrases": [
             {
-              "he": "וכך בחינת הרשימו הזאת הכוללת ברמז ובקיצור מכל אור העצמות הנעלם בה,",
-              "en": "And so this *reshimu*, which includes in hint and in short all the light of the Essence hidden in it,"
+              "he": "וכך בחינת הרשימו הזאת",
+              "en": "The same way, this *reshimu*",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [841, 845],
+                "start": 402.79,
+                "end": 404.06
+              }
+            },
+            {
+              "he": "הכוללת ברמז ובקיצור מכל אור העצמות הנעלם בה,"
             },
             {
               "he": "הוא עצמו המקור לכל ההמשכות דקו וחוט",
-              "en": "is itself the source of all the drawings-down of the *Kav* and the thread,"
+              "en": "this *reshimu* itself is the *makor* to the whole *hamshacha* of the *Kav*,",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [875, 888],
+                "start": 423.46,
+                "end": 427.41
+              }
             },
             {
-              "he": "בבחינת מקיף ופנימי מראשו לסופו",
-              "en": "as *makif* and *pnimi* (inner), from beginning to end,"
+              "he": "בבחינת מקיף ופנימי מראשו לסופו"
             },
             {
               "he": "שיהיה הכל כמו שעלה ברצונו וחכמתו הפשוטה בעצמות אור אין סוף ממש כו'",
-              "en": "that everything should be as it arose in His simple will and wisdom, in the very Essence of the *Or Ein Sof*."
+              "en": "that everything should be exactly like it was planned before the *tzimtzum*.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [906, 917],
+                "start": 435.94,
+                "end": 439.12
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The same way, this *reshimu*, which includes in hint and in short all the light of the Essence hidden in it, **is itself the source of all the drawings-down of the *Kav***, as *makif* and as *pnimi*, from beginning to end, so that everything should be exactly as it was planned before the *tzimtzum*.",
+              "text": "The same way, this *reshimu* itself is the source of the whole drawing-down of the *Kav*, so that everything should be exactly as it was planned before the *tzimtzum*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1825,26 +2052,36 @@
           ],
           "phrases": [
             {
-              "he": "וזהו מה שכתוב במקום אחר שהנקודה יש בה העלם והתגלות,",
-              "en": "And this is what is written elsewhere, that the *nekuda* (point) has in it hiding and revelation,"
+              "he": "וזהו מה שכתוב במקום אחר שהנקודה יש בה העלם והתגלות,"
             },
             {
-              "he": "ב' הפכים",
-              "en": "two opposites:"
+              "he": "ב' הפכים"
             },
             {
               "he": "העלם מכל מה שעליון הימנה בערך,",
-              "en": "hiding of everything that is above it in kind,"
+              "en": "is a hiding away of everything that's above it,",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [936, 944],
+                "start": 451.72,
+                "end": 456.76
+              }
             },
             {
               "he": "וגילוי הכל למקבלים נמצא ממנה דוקא",
-              "en": "and the revelation of everything to the receivers is found *davka* from it."
+              "en": "and everything that's going to come to the *mekablim* will come *davka* out of this *nekuda* of the *reshimu*.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [951, 969],
+                "start": 461.08,
+                "end": 466.08
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Elsewhere it says that the *nekuda* has in it hiding and revelation, **two opposites**: it hides everything that is above it, and everything that is going to come to the *mekablim* will come *davka* out of this point of the *reshimu*.",
+              "text": "It is a hiding away of everything that is above it. And everything that is going to come to the *mekablim* will come *davka* out of this point of the *reshimu*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1888,22 +2125,36 @@
           ],
           "phrases": [
             {
-              "he": "והוא בחינת הקו שנמשך מן הרשימו",
-              "en": "And this is the *Kav* that is drawn from the *reshimu*,"
+              "he": "והוא בחינת הקו שנמשך מן הרשימו"
             },
             {
-              "he": "שהוא כצורת ו' שראשו י' והולך ונמשך למטה",
-              "en": "which is like the shape of a *vav*, whose head is a *yud*, going and drawn downward,"
+              "he": "שהוא כצורת ו' שראשו י'",
+              "en": "that the head of the *vav* is a *yud*;",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1493, 1501],
+                "start": 745.8,
+                "end": 746.9
+              }
             },
             {
-              "he": "כמו שכתוב במקום אחר באריכות",
-              "en": "as is written elsewhere at length."
+              "he": "והולך ונמשך למטה",
+              "en": "is like a point with a line coming out of it.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1505, 1515],
+                "start": 748.4,
+                "end": 752.7
+              }
+            },
+            {
+              "he": "כמו שכתוב במקום אחר באריכות"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And this is the *Kav* that is drawn from the *reshimu*, which is like the shape of a *vav*, whose head is a *yud*, going and drawn downward**: like a point with a line coming out of it, **as is written elsewhere at length**.",
+              "text": "That is like a *vav*: the head of the *vav* is a *yud*, like a point with a line coming out of it.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -1961,34 +2212,28 @@
           ],
           "phrases": [
             {
-              "he": "ובכל זה מובן כללות ענין הצמצום דמקום פנוי ובחינת הרשימו והקו",
-              "en": "And with all this the general matter of the *tzimtzum* of the empty place, the *reshimu* and the *Kav* is understood:"
+              "he": "ובכל זה מובן כללות ענין הצמצום דמקום פנוי ובחינת הרשימו והקו"
             },
             {
-              "he": "שהוא רק בחינת הגבלה בעצמות כדי שיומשך הכל בגלוי",
-              "en": "that it is only a limitation in the Essence, so that everything be drawn into revelation."
+              "he": "שהוא רק בחינת הגבלה בעצמות כדי שיומשך הכל בגלוי"
             },
             {
-              "he": "וזה שכתוב כי עמך מקור חיים,",
-              "en": "And this is what is written, \"For with You is the source of life;"
+              "he": "וזה שכתוב כי עמך מקור חיים,"
             },
             {
-              "he": "באורך העצמי",
-              "en": "in Your light,\" the essential light,"
+              "he": "באורך העצמי"
             },
             {
-              "he": "נראה אור, אור של תולדה,",
-              "en": "\"we see light\": a light that is a *tolda* (offspring),"
+              "he": "נראה אור, אור של תולדה,"
             },
             {
-              "he": "שהוא בחינת הקו וכמו שיתבאר בעזרת ה׳",
-              "en": "which is the *Kav*, as will be explained, with G-d's help."
+              "he": "שהוא בחינת הקו וכמו שיתבאר בעזרת ה׳"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "From all this the general matter of the *tzimtzum*, the empty place, the *reshimu* and the *Kav* is understood: **that it is only a limitation in the Essence**. And that is \"in Your light we see light\": the essential light, and a light that is a *tolda*, which is the *Kav*. It does not really mean that the actual *Kav* comes from the original light; it comes from the original light that is hidden in the *reshimu*. As will be explained, with G-d's help.",
+              "text": "*Be'orcha nireh or* means a light that is a *tolda* (offspring). But it does not really mean that the actual *Kav* comes from the original light; it comes from the original light that is hidden in the *reshimu*.",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -2008,29 +2253,38 @@
           "phrases": [
             {
               "he": "וזה כל האדם,",
-              "en": "And this is the whole of man:"
+              "en": "And this is the whole reason that a person is here:",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1593, 1603],
+                "start": 797.24,
+                "end": 799.58
+              }
             },
             {
               "he": "להעמיק דעתו בכל זה וכיוצא בו",
-              "en": "to deepen his mind in all this and the like,"
+              "en": "to think about this.",
+              "audio": {
+                "lecture": "010- Tape020-Side1-Ch13.mp3",
+                "words": [1610, 1613],
+                "start": 802.88,
+                "end": 803.84
+              }
             },
             {
-              "he": "מפני שמזה דוקא יבוא לכלל היחוד האמיתי בהתקשרות נפשו בחיי כל החיים העליונים,",
-              "en": "because from this *davka* he will come to the true unity, in the bond of his soul with the Life of all the higher life,"
+              "he": "מפני שמזה דוקא יבוא לכלל היחוד האמיתי בהתקשרות נפשו בחיי כל החיים העליונים,"
             },
             {
-              "he": "שהוא עצמות אור אין סוף ממש",
-              "en": "which is the very Essence of the *Or Ein Sof*,"
+              "he": "שהוא עצמות אור אין סוף ממש"
             },
             {
-              "he": "מטעם הנזכר לעיל ודי למבין:",
-              "en": "for the reason given above. And this is enough for one who understands."
+              "he": "מטעם הנזכר לעיל ודי למבין:"
             }
           ],
           "blocks": [
             {
               "kind": "avodah",
-              "text": "**And this is the whole of man**: this is the whole reason a person is here, **to deepen his mind in all this**, to think about this. \"That's the whole reason we're here.\" Because from this *davka* he will come to the true unity, in the bond of his soul with the very Essence of the *Or Ein Sof*. As was explained before: by understanding that the whole thing down here is nothing but a *tzimtzum* of it, he will be connected *davka* to the *etzem* (essence).",
+              "text": "This is the whole reason a person is here: to think about this. \"That's the whole reason we're here.\" As he explained before, by understanding that the whole thing down here is nothing but a *tzimtzum* of it, he will be connected *davka* to the *etzem* (essence).",
               "audio": [
                 {
                   "lecture": "010- Tape020-Side1-Ch13.mp3",
@@ -2195,7 +2449,7 @@
       ]
     },
     {
-      "text": "Line 76 is misread in the recording (\"rashum shechakak bagilui\"); he does not translate it, so its phrase is a plain rendering.",
+      "text": "Line 76 is misread in the recording (\"rashum shechakak bagilui\"); he does not translate it, so its phrase has no English.",
       "lines": [
         "wmocy6b4"
       ]

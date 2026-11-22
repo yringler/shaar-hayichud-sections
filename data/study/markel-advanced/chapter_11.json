@@ -100,28 +100,29 @@
           ],
           "phrases": [
             {
-              "he": "(יא) והנמשל מכל הנזכר לעיל בנפש",
-              "en": "(11) And the *nimshal* (what the analogy stands for) of all that was said above about the soul"
+              "he": "(יא) והנמשל מכל הנזכר לעיל בנפש"
             },
             {
-              "he": "יובן למשכיל",
-              "en": "will be understood by the thoughtful"
+              "he": "יובן למשכיל"
             },
             {
-              "he": "למעלה בעצמות אור אין סוף שלפני הצמצום",
-              "en": "above, in the Essence of the *Or Ein Sof* (the infinite light) before the *tzimtzum* (contraction),"
+              "he": "למעלה בעצמות אור אין סוף שלפני הצמצום"
             },
             {
-              "he": "שנקרא יחיד",
-              "en": "which is called *Yachid* (singular)."
+              "he": "שנקרא יחיד"
             },
             {
               "he": "וכלול גם שם מעשר ספירות,",
-              "en": "So over there it also includes in it ten *sefiros*,"
+              "en": "So over there it also includes in it ten *sefiros*,",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [87, 96],
+                "start": 47.6,
+                "end": 51.08
+              }
             },
             {
-              "he": "ונקרא עשר ספירות הגנוזות בהעלם העצמות ממש",
-              "en": "and they are called the ten *sefiros* hidden in the concealment of the Essence itself."
+              "he": "ונקרא עשר ספירות הגנוזות בהעלם העצמות ממש"
             }
           ],
           "blocks": [
@@ -139,7 +140,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Notice that he gives a whole long definition. It is not just \"the ten hidden *sefiros*\", because the ten *sefiros* in *Adam Kadmon* are also called the ten hidden *sefiros*. These are the ten *sefiros* hidden **in the concealment of the Essence itself**.",
+              "text": "Notice that he gives a whole long definition. It is not just \"the ten hidden *sefiros*\", because the ten *sefiros* in *Adam Kadmon* are also called the ten hidden *sefiros*. These are the ten *sefiros* hidden in the concealment of the Essence itself.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -240,26 +241,36 @@
           ],
           "phrases": [
             {
-              "he": "כמו בחינת חפץ חסד",
-              "en": "Like the *chafetz chesed* (desire for kindness)"
+              "he": "כמו בחינת חפץ חסד"
             },
             {
-              "he": "שכלול בבחינת עצמיות דאור אין סוף,",
-              "en": "that is included in the very Essence of the *Or Ein Sof*,"
+              "he": "שכלול בבחינת עצמיות דאור אין סוף,"
             },
             {
               "he": "שמחמתו וסיבתו היה הרצון הפשוט לכל ההשתלשלות,",
-              "en": "because of which, and caused by which, came the simple will for the whole *hishtalshelus* (chain of descent),"
+              "en": "Because of this *chafetz chesed*, this is what caused the original *ratzon hapashut* for all *hishtalshelus*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1043, 1058],
+                "start": 464.12,
+                "end": 473.6
+              }
             },
             {
               "he": "שזהו בדבר פרט",
-              "en": "which is in a *davar prat* (a particular thing)."
+              "en": "That this whole *hishtalshelus*, in terms of the *Aibershter*, is considered just one little *prat*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1062, 1076],
+                "start": 475.4,
+                "end": 483.48
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Because of this *chafetz chesed* in the very Essence came the original *ratzon hapashut* (simple will) for all of *hishtalshelus*. **which is in a** *davar prat*: as far as the *Aibershter* (the One Above) is concerned, this whole *hishtalshelus* is considered just one little *prat*. It is not the whole thing He is into; it is like one little *prat*.",
+              "text": "Because of this *chafetz chesed* in the very Essence came the original *ratzon hapashut* (simple will) for all of *hishtalshelus*. It is in a *davar prat*: as far as the *Aibershter* (the One Above) is concerned, this whole *hishtalshelus* is considered just one little *prat*. It is not the whole thing He is into; it is like one little *prat*.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -336,34 +347,35 @@
           ],
           "phrases": [
             {
-              "he": "כמו שכתוב בעץ חיים בהקדמה,",
-              "en": "As is written in *Etz Chaim*, in the introduction:"
+              "he": "כמו שכתוב בעץ חיים בהקדמה,"
             },
             {
-              "he": "כשעלה ברצונו הפשוט כו'",
-              "en": "\"When it arose in His simple will...\""
+              "he": "כשעלה ברצונו הפשוט כו'"
             },
             {
-              "he": "ובודאי סיבת עליית הרצון הפשוט בעצמותו",
-              "en": "And certainly the reason the simple will arose in His Essence"
+              "he": "ובודאי סיבת עליית הרצון הפשוט בעצמותו"
             },
             {
-              "he": "היינו רק כי חפץ חסד הוא בעצמו",
-              "en": "is only that He is *chafetz chesed* in Himself."
+              "he": "היינו רק כי חפץ חסד הוא בעצמו"
             },
             {
               "he": "על כן עלה ברצונו להטיב חסדו",
-              "en": "Therefore it arose in His will to bestow His kindness,"
+              "en": "That's why He decided to do a good thing.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1489, 1497],
+                "start": 651.44,
+                "end": 653.68
+              }
             },
             {
-              "he": "להיות מקור למקור להשתלשלות דקו וחוט כו'",
-              "en": "to be a source of the source for the *hishtalshelus* of the *Kav* and the thread."
+              "he": "להיות מקור למקור להשתלשלות דקו וחוט כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The *Etz Chaim* says in its introduction, \"When it arose in His simple will\", and certainly the reason the simple will arose is only that He is kind in Himself. It is like a kind person. They say, \"Why did you do a kind thing?\" Because he's a kind person. **Therefore it arose in His will to bestow His kindness**: that is why He decided to do a good thing, to be a source of the source for what comes to be outside.",
+              "text": "The *Etz Chaim* says in its introduction, \"When it arose in His simple will\", and certainly the reason the simple will arose is only that He is kind in Himself. It is like a kind person. They say, \"Why did you do a kind thing?\" Because he's a kind person. Therefore it arose in His will to bestow His kindness: that is why He decided to do a good thing, to be a source of the source for what comes to be outside.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -409,34 +421,49 @@
           ],
           "phrases": [
             {
-              "he": "והרי זה על דרך דוגמא",
-              "en": "This is by way of example:"
+              "he": "והרי זה על דרך דוגמא"
             },
             {
-              "he": "כשמחמת עצמיות המדה דחפץ חסד הכלולה בבחינת יחידה כנזכר לעיל,",
-              "en": "when, because of the essence of the attribute of *chafetz chesed* that is included in the *yechida* (the essence of the soul), as said above,"
+              "he": "כשמחמת עצמיות המדה דחפץ חסד הכלולה בבחינת יחידה כנזכר לעיל,"
             },
             {
-              "he": "עולה ברצונו לעשות טוב וחסד בדבר פרט כנזכר לעיל",
-              "en": "it rises in his will to do good and kindness in a particular thing, as said above,"
+              "he": "עולה ברצונו לעשות טוב וחסד בדבר פרט כנזכר לעיל"
             },
             {
               "he": "שבא בגלוי מן העלמו ההיולי דחפץ חסד,",
-              "en": "which comes into revelation from the *hiyuli* (raw potential) concealment of the *chafetz chesed*,"
+              "en": "that comes from the hidden *chafetz chesed*:",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1809, 1815],
+                "start": 793.48,
+                "end": 796.98
+              }
             },
             {
               "he": "לכלול כל מה שיעלה בפרט ברצונו להטיב",
-              "en": "to include all that will arise in particular in his will to do good:"
+              "en": "anything that he will have a *ratzon* to do good was already included.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1823, 1835],
+                "start": 802.14,
+                "end": 806.98
+              }
             },
             {
               "he": "הכל בא מחמתו וכחו כו'",
-              "en": "everything comes because of it and its power."
+              "en": "Everything comes because of the power of the *hiyuli* of *chafetz chesed*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [1841, 1851],
+                "start": 809.66,
+                "end": 813.98
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "By way of example: because of the essence of the *chafetz chesed* in the *yechida*, it rises in a man's will to do good in a particular thing, to give a person a sandwich. That particular comes out of the hidden *chafetz chesed*, and anything that he will ever have a will to do good in was already included in it. **everything comes because of it and its power**: the power of the *hiyuli* (raw potential) *chafetz chesed*.",
+              "text": "By way of example: because of the essence of the *chafetz chesed* in the *yechida*, it rises in a man's will to do good in a particular thing, to give a person a sandwich. That particular comes out of the hidden *chafetz chesed*, and anything that he will ever have a will to do good in was already included in it. Everything comes because of it and its power: the power of the *hiyuli* (raw potential) *chafetz chesed*.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -456,34 +483,28 @@
           ],
           "phrases": [
             {
-              "he": "וכמו שבגלוי רצון שבא מחמת חפץ חסד זה,",
-              "en": "And just as the revealed will that comes because of this *chafetz chesed*"
+              "he": "וכמו שבגלוי רצון שבא מחמת חפץ חסד זה,"
             },
             {
-              "he": "כלול מי', חב''ד ומדות כו'",
-              "en": "is made of ten, *Chabad* (chachma, bina and daas) and *middos* (emotional attributes),"
+              "he": "כלול מי', חב''ד ומדות כו'"
             },
             {
-              "he": "מזה מוכרח שגם בבחינת חפץ חסד ההיולי שכלול בעצמות ממש,",
-              "en": "it follows that the *hiyuli* *chafetz chesed* included in the Essence itself"
+              "he": "מזה מוכרח שגם בבחינת חפץ חסד ההיולי שכלול בעצמות ממש,"
             },
             {
-              "he": "כלול מי', חכמה ומדות כו'",
-              "en": "is also made of ten, *chachma* (wisdom) and *middos*;"
+              "he": "כלול מי', חכמה ומדות כו'"
             },
             {
-              "he": "רק שלא יתכן בהם לומר גם ענין ההתכללות והאחדות,",
-              "en": "only that one cannot say of them even inclusion and unity,"
+              "he": "רק שלא יתכן בהם לומר גם ענין ההתכללות והאחדות,"
             },
             {
-              "he": "אחר שכלול בעצמות בבחינת היולי עדיין כו'",
-              "en": "since they are included in the Essence, still as *hiyuli*."
+              "he": "אחר שכלול בעצמות בבחינת היולי עדיין כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Just as the revealed will that comes from this *chafetz chesed* is made of ten, *Chabad* and *middos*, as the last chapter said, so the *hiyuli* *chafetz chesed* included in the Essence itself is made of ten, **only that one cannot say of them even inclusion and unity**, because they are still included in the Essence as *hiyuli*.",
+              "text": "Just as the revealed will that comes from this *chafetz chesed* is made of ten, *Chabad* and *middos*, as the last chapter said, so the *hiyuli* *chafetz chesed* included in the Essence itself is made of ten, only that one cannot say of them even inclusion and unity, because they are still included in the Essence as *hiyuli*.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -521,26 +542,22 @@
           ],
           "phrases": [
             {
-              "he": "וכמו כן במדה זולתה,",
-              "en": "And so too with another attribute,"
+              "he": "וכמו כן במדה זולתה,"
             },
             {
-              "he": "כמו מדת הגבורה או הנצח והתפארת וכהאי גוונא",
-              "en": "such as the attribute of *gevura* (might), or *netzach* and *tiferes*, and the like:"
+              "he": "כמו מדת הגבורה או הנצח והתפארת וכהאי גוונא"
             },
             {
-              "he": "הכל הוא כלול בעצמיות דאור אין סוף שנקרא טהירו עילאה",
-              "en": "it is all included in the Essence of the *Or Ein Sof*, which is called *tehiru ila'a* (the upper purity),"
+              "he": "הכל הוא כלול בעצמיות דאור אין סוף שנקרא טהירו עילאה"
             },
             {
-              "he": "והוא הנקרא יחיד שלמעלה מאחד פשוט כו'",
-              "en": "and that is what is called *Yachid*, which is above simple One."
+              "he": "והוא הנקרא יחיד שלמעלה מאחד פשוט כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "He reads straight on: so too with every other attribute, *gevura*, *netzach*, *tiferes* and the like. It is all included in the Essence of the *Or Ein Sof*, the *tehiru ila'a*, and that is *Yachid*, **which is above simple One**.",
+              "text": "He reads straight on: so too with every other attribute, *gevura*, *netzach*, *tiferes* and the like. It is all included in the Essence of the *Or Ein Sof*, the *tehiru ila'a*, and that is *Yachid*, which is above simple One.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -562,58 +579,46 @@
           ],
           "phrases": [
             {
-              "he": "עד בחינת מדת המלוכה",
-              "en": "Up to the attribute of kingship"
+              "he": "עד בחינת מדת המלוכה"
             },
             {
-              "he": "בעצמות אור אין סוף",
-              "en": "in the Essence of the *Or Ein Sof*,"
+              "he": "בעצמות אור אין סוף"
             },
             {
-              "he": "שנקרא מלכות דאין סוף",
-              "en": "which is called *Malchus* of the *Ein Sof*:"
+              "he": "שנקרא מלכות דאין סוף"
             },
             {
-              "he": "גם הוא כלול בבחינת היולי העצמי דעצמות אור אין סוף",
-              "en": "it too is included in the essential *hiyuli* of the Essence of the *Or Ein Sof*,"
+              "he": "גם הוא כלול בבחינת היולי העצמי דעצמות אור אין סוף"
             },
             {
-              "he": "שהוא בבחינת אין סוף ממש",
-              "en": "which is truly infinite."
+              "he": "שהוא בבחינת אין סוף ממש"
             },
             {
-              "he": "וכמו שחפץ חסד בבחינת אין סוף ממש בעצמות,",
-              "en": "And just as *chafetz chesed* is truly infinite in the Essence,"
+              "he": "וכמו שחפץ חסד בבחינת אין סוף ממש בעצמות,"
             },
             {
-              "he": "או לחכמתו אין סוף,",
-              "en": "or \"His wisdom is infinite,\""
+              "he": "או לחכמתו אין סוף,"
             },
             {
-              "he": "כך מדת ההתנשאות",
-              "en": "so the attribute of *hisnasus* (exaltation)"
+              "he": "כך מדת ההתנשאות"
             },
             {
-              "he": "שכלול בעצמות אור אין סוף",
-              "en": "that is included in the Essence of the *Or Ein Sof*"
+              "he": "שכלול בעצמות אור אין סוף"
             },
             {
-              "he": "הוא בבחינת אין סוף",
-              "en": "is infinite,"
+              "he": "הוא בבחינת אין סוף"
             },
             {
-              "he": "וכלול מי' בהעלם העצמות,",
-              "en": "and it is made of ten in the concealment of the Essence:"
+              "he": "וכלול מי' בהעלם העצמות,"
             },
             {
-              "he": "שהוא בחינת הרצון והתענוג וחכמה ומדות שבמדות המלוכה",
-              "en": "the will and the delight, and *chachma* and *middos*, that are in the attribute of kingship."
+              "he": "שהוא בחינת הרצון והתענוג וחכמה ומדות שבמדות המלוכה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So it goes **Up to the attribute of kingship** in the Essence of the *Or Ein Sof*, called *Malchus* of the *Ein Sof*: here he is talking about *Malchus* of *Yachid*. It too is included in the essential *hiyuli*, and it is truly infinite. Just as *chafetz chesed* in the Essence is infinite, so the attribute of *hisnasus* is infinite, \"and this is *mamash* exactly what it said in the last chapter.\" It too is made of ten: the will and the delight, *chachma* and *middos*, of the attribute of kingship.",
+              "text": "So it goes up to the attribute of kingship in the Essence of the *Or Ein Sof*, called *Malchus* of the *Ein Sof*: here he is talking about *Malchus* of *Yachid*. It too is included in the essential *hiyuli*, and it is truly infinite. Just as *chafetz chesed* in the Essence is infinite, so the attribute of *hisnasus* is infinite, \"and this is *mamash* exactly what it said in the last chapter.\" It too is made of ten: the will and the delight, *chachma* and *middos*, of the attribute of kingship.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -632,28 +637,40 @@
           ],
           "phrases": [
             {
-              "he": "אך ענין אנא אמלוך שעלה ברצונו ומחשבתו הפשוט,",
-              "en": "But the matter of *Ana Emloch* (I shall rule), which arose in His simple will and thought,"
+              "he": "אך",
+              "en": "However,",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2080, 2080],
+                "start": 921.95,
+                "end": 922.45
+              }
             },
             {
-              "he": "היינו כשבא בדבר פרט,",
-              "en": "is when it comes into a particular thing,"
-            },
-            {
-              "he": "לבחינת ההשתלשלות בגלוי מהעלמו ההיולי",
-              "en": "into *hishtalshelus*, in revelation, out of its *hiyuli* concealment,"
+              "he": "ענין אנא אמלוך שעלה ברצונו ומחשבתו הפשוט, היינו כשבא בדבר פרט, לבחינת ההשתלשלות בגלוי מהעלמו ההיולי",
+              "en": "This thing of *Ana Emloch* means that He had a *machshava* to have it in a revelation from the *hiyuli*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2118, 2137],
+                "start": 955.7,
+                "end": 963.42
+              }
             },
             {
               "he": "כנזכר לעיל במדה דחפץ חסד באדם למטה,",
-              "en": "as said above of the attribute of *chafetz chesed* in man below,"
+              "en": "Like we said in the last chapter, that in the *midda* of *chafetz chesed* there, there was the thing of doing the *chesed* to somebody else.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2146, 2172],
+                "start": 976.82,
+                "end": 988.64
+              }
             },
             {
-              "he": "וכנזכר לעיל במשל י' כחות הכלולים שבבחינת יחידה,",
-              "en": "and as said above in the analogy of the ten powers included in the *yechida*,"
+              "he": "וכנזכר לעיל במשל י' כחות הכלולים שבבחינת יחידה,"
             },
             {
-              "he": "בבחינת היולי ועצמיות כו'",
-              "en": "as *hiyuli* and essence."
+              "he": "בבחינת היולי ועצמיות כו'"
             }
           ],
           "blocks": [
@@ -690,22 +707,19 @@
           ],
           "phrases": [
             {
-              "he": "שאינן נבדלים מן העצם כלל",
-              "en": "which are not separate from the essence at all,"
+              "he": "שאינן נבדלים מן העצם כלל"
             },
             {
-              "he": "וכמו כח התנועה שכלול בעצם החי,",
-              "en": "like the power of motion that is included in the essence of the living being,"
+              "he": "וכמו כח התנועה שכלול בעצם החי,"
             },
             {
-              "he": "וכהתפשטות החיות ההיולי הכלול בעצם הנפש ממש כנזכר לעיל",
-              "en": "and like the spreading forth of the *hiyuli* life included in the very essence of the soul, as said above."
+              "he": "וכהתפשטות החיות ההיולי הכלול בעצם הנפש ממש כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The powers are **not separate from the essence at all**, like the power of motion included in the essence of a living being. And by the way, the *Ana Emloch* is also completely included, even though it is in a particular. That is the matter of *Yachid*, including the *Ana Emloch*.",
+              "text": "The powers are not separate from the essence at all, like the power of motion included in the essence of a living being. And by the way, the *Ana Emloch* is also completely included, even though it is in a particular. That is the matter of *Yachid*, including the *Ana Emloch*.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -731,26 +745,29 @@
           ],
           "phrases": [
             {
-              "he": "ולמטה מזה",
-              "en": "Below this"
+              "he": "ולמטה מזה"
             },
             {
-              "he": "הוא בחינת אור אין סוף המאיר ומתפשט",
-              "en": "is the *Or Ein Sof* that shines and spreads forth,"
+              "he": "הוא בחינת אור אין סוף המאיר ומתפשט"
             },
             {
               "he": "והכל עדיין בבחינת עצמותו לפני הצמצום",
-              "en": "and all of it is still in His Essence, before the *tzimtzum*;"
+              "en": "So, in other words, this is still in the *Atzmus Or Ein Sof*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2305, 2317],
+                "start": 1064.76,
+                "end": 1067.7
+              }
             },
             {
-              "he": "וזהו הנקרא אחדות הפשוטה",
-              "en": "and this is what is called *achdus hapshuta* (simple unity)."
+              "he": "וזהו הנקרא אחדות הפשוטה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Below this**: now the matter of *Echad*. It is the *Or Ein Sof* that shines and spreads forth, all of it still in His Essence before the *tzimtzum*, and it is called *achdus hapshuta*. In other words, this is still in the *Atzmus Or Ein Sof*. It is not really the spreading forth of the *Or Ein Sof*. It is a spreading forth inside Himself, meaning really the *hiyuli* for the spreading forth.",
+              "text": "Below this: now the matter of *Echad*. It is the *Or Ein Sof* that shines and spreads forth, all of it still in His Essence before the *tzimtzum*, and it is called *achdus hapshuta*. In other words, this is still in the *Atzmus Or Ein Sof*. It is not really the spreading forth of the *Or Ein Sof*. It is a spreading forth inside Himself, meaning really the *hiyuli* for the spreading forth.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -793,26 +810,29 @@
           ],
           "phrases": [
             {
-              "he": "שיתכן שם בחינת התכללות ואחדות בעשר ספירות",
-              "en": "where one can speak of inclusion and unity in the ten *sefiros*;"
+              "he": "שיתכן שם בחינת התכללות ואחדות בעשר ספירות"
             },
             {
-              "he": "וגם הם נקרא עשר ספירות בלי מה,",
-              "en": "and they too are called the ten *sefiros* *bli ma* (without what),"
+              "he": "וגם הם נקרא עשר ספירות בלי מה,"
             },
             {
               "he": "כי הוא למעלה גם מבחינת הכנה להשפעה למטה בגלוי עדיין",
-              "en": "for it is still above even preparation to give influence below in revelation;"
+              "en": "It's still not really even prepared for *hashpa'a* downstairs, to revelation.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2555, 2570],
+                "start": 1172.16,
+                "end": 1179.14
+              }
             },
             {
-              "he": "רק שמוכן לצאת מההיולי בדבר פרט",
-              "en": "only that it is ready to come out of the *hiyuli* into a particular thing."
+              "he": "רק שמוכן לצאת מההיולי בדבר פרט"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "There one can speak of division (he reads \"division\" where the text has \"inclusion\") and unity in the ten *sefiros*, **and they too are called the ten** *sefiros* *bli ma*: even there it is still *bli ma*; it is not that it is actually ten *sefiros*. Why? Because it is still above even being prepared to give influence below, in revelation.",
+              "text": "There one can speak of division (he reads \"division\" where the text has \"inclusion\") and unity in the ten *sefiros*, and they too are called the ten *sefiros* *bli ma*: even there it is still *bli ma*; it is not that it is actually ten *sefiros*. Why? Because it is still above even being prepared to give influence below, in revelation.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -844,30 +864,49 @@
           ],
           "phrases": [
             {
-              "he": "כמו חפץ חסד ההיולי הנזכר לעיל,",
-              "en": "Like the *hiyuli* *chafetz chesed* mentioned above,"
+              "he": "כמו חפץ חסד ההיולי הנזכר לעיל,"
             },
             {
-              "he": "כשבא לענין הרצון וחפץ חסד בהשתלשלות דקו כו'",
-              "en": "when it comes to the will and desire for kindness in the *hishtalshelus* of the *Kav*:"
+              "he": "כשבא לענין הרצון וחפץ חסד בהשתלשלות דקו כו'"
             },
             {
               "he": "גם שלא יצא עדיין בגלוי גמור, גם בעצמו,",
-              "en": "even though it has not yet come out in full revelation, even in itself,"
+              "en": "Meaning, he doesn't even know yet what it is.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2636, 2644],
+                "start": 1207.44,
+                "end": 1209.96
+              }
             },
             {
               "he": "על כל פנים שם יתכן בחינת אחדות והתכללות",
-              "en": "at any rate there one can speak of unity and inclusion;"
+              "en": "There you could say it's unification of powers.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2662, 2669],
+                "start": 1218.8,
+                "end": 1220.8
+              }
             },
             {
-              "he": "רק שנקרא אחדות הפשוטה בהיותו עדיין באור עצמותו הפשוט בתכלית",
-              "en": "only it is called simple unity, since it is still in the light of His Essence, utterly simple."
+              "he": "רק שנקרא אחדות הפשוטה בהיותו עדיין באור עצמותו"
+            },
+            {
+              "he": "הפשוט בתכלית",
+              "en": "It's totally *pashut*.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2751, 2753],
+                "start": 1255.83,
+                "end": 1257.12
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Like the *hiyuli* *chafetz chesed* when it comes to the will for the *hishtalshelus*: **even though it has not yet come out in full revelation, even in itself**. That means He doesn't even know yet what it is, because *Kadmon* here also did not really come out. **at any rate there one can speak of unity and inclusion**: there you could say there is a unification of powers.",
+              "text": "Like the *hiyuli* *chafetz chesed* when it comes to the will for the *hishtalshelus*: even though it has not yet come out in full revelation, even in itself. That means He doesn't even know yet what it is, because *Kadmon* here also did not really come out. At any rate there one can speak of unity and inclusion: there you could say there is a unification of powers.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -892,7 +931,7 @@
             },
             {
               "kind": "explanation",
-              "text": "It is *achdus hapshuta*. In *Yachid* you really can't even call it unity, because there are no powers yet. Here it is called simple unity because it is still in His Essence, **utterly simple**: totally simple.",
+              "text": "It is *achdus hapshuta*. In *Yachid* you really can't even call it unity, because there are no powers yet. Here it is called simple unity because it is still in His Essence, utterly simple: totally simple.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -910,26 +949,36 @@
           ],
           "phrases": [
             {
-              "he": "וכמו בחינת התחלקות שכל ומדות כו' שבחפץ חסד זה,",
-              "en": "And like the division into intellect and *middos* in this *chafetz chesed*,"
+              "he": "וכמו בחינת התחלקות שכל ומדות כו' שבחפץ חסד זה,"
             },
             {
-              "he": "שמחמתו הוא שעלה ברצונו וחכמתו להטיב כו'",
-              "en": "because of which it arose in His will and wisdom to do good,"
+              "he": "שמחמתו הוא שעלה ברצונו וחכמתו להטיב כו'"
             },
             {
               "he": "גם טרם בואו לגלוי כלל וכלל כו',",
-              "en": "even before it comes into revelation at all,"
+              "en": "Even before it came into an actual revelation.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2774, 2781],
+                "start": 1268.07,
+                "end": 1271.92
+              }
             },
             {
               "he": "וכנזכר לעיל במדריגה הב' בנפש האדם.",
-              "en": "as said above of the second level in the soul of man."
+              "en": "Like we explained in chapter 10.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2787, 2792],
+                "start": 1275.8,
+                "end": 1277.38
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So too the division into intellect and *middos* in this *chafetz chesed*, because of which it arose in His will and wisdom to do good. It is there **even before it comes into revelation at all**, before it came into an actual revelation, as was explained in chapter 10 of the second level in the soul of man.",
+              "text": "So too the division into intellect and *middos* in this *chafetz chesed*, because of which it arose in His will and wisdom to do good. It is there even before it comes into revelation at all, before it came into an actual revelation, as was explained in chapter 10 of the second level in the soul of man.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -955,26 +1004,32 @@
           ],
           "phrases": [
             {
-              "he": "והג' כאשר מבחינת חפץ חסד זה הוא שעלה כבר ברצון ושכל כו'",
-              "en": "And the third: when from this *chafetz chesed* it has already arisen in will and intellect,"
+              "he": "והג' כאשר מבחינת חפץ חסד זה הוא שעלה כבר ברצון ושכל כו'"
             },
             {
-              "he": "והוכן בכל השיעור באותיות ששיער בעצמו",
-              "en": "and is prepared in the whole *shiur* (estimation), in letters, which He estimated in Himself:"
+              "he": "והוכן בכל השיעור באותיות ששיער בעצמו"
             },
             {
-              "he": "איך יהיה איכות אופן ההשפעה ממש לחוץ מעצמותו",
-              "en": "how the quality and manner of the influence will be, *mamash*, outside His Essence."
+              "he": "איך יהיה איכות אופן ההשפעה ממש לחוץ מעצמותו"
             },
             {
-              "he": "על דרך דוגמא מכח התנועה המוכן איך להניע",
-              "en": "By way of example, the power of motion that is ready how to move,"
+              "he": "על דרך דוגמא מכח התנועה"
+            },
+            {
+              "he": "המוכן איך להניע",
+              "en": "In other words, it's already completely *muchan*, exactly how to grab the bottle.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [2827, 2839],
+                "start": 1295.72,
+                "end": 1299.91
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The third level: from this *chafetz chesed* it has already arisen in will and intellect, and is prepared in the whole *shiur*, how the influence will be, *mamash*, outside His Essence. **By way of example, the power of motion that is ready how to move**: in other words, it is already completely ready exactly how to grab the bottle, and it is about to do it.",
+              "text": "The third level: from this *chafetz chesed* it has already arisen in will and intellect, and is prepared in the whole *shiur*, how the influence will be, *mamash*, outside His Essence. By way of example, the power of motion that is ready how to move: in other words, it is already completely ready exactly how to grab the bottle, and it is about to do it.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -1017,22 +1072,26 @@
           ],
           "phrases": [
             {
-              "he": "וכח החיות המוכן איך להחיות",
-              "en": "and the power of life that is ready how to give life,"
+              "he": "וכח החיות המוכן איך להחיות"
             },
             {
-              "he": "כשמוכנים כבר בשיעור ואופן מוגבל,",
-              "en": "when they are already prepared in a limited measure and manner,"
+              "he": "כשמוכנים כבר בשיעור ואופן מוגבל,"
             },
             {
               "he": "כנזכר לעיל בענין מדריגה הג' בנפש",
-              "en": "as said above of the third level in the soul."
+              "en": "Like we said in chapter 10.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [3287, 3292],
+                "start": 1463.32,
+                "end": 1464.5
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**and the power of life that is ready how to give life**, **when they are already prepared in a limited measure and manner**. In other words: in *Echad* it is just ready to have the powers; in *Kadmon* the actual thing is *mamash* ready, all the way to the end. The motion in the power of motion is *mamash* all ready, but it is still not separate from the power of motion. There is no movement yet.",
+              "text": "And the power of life that is ready how to give life, when they are already prepared in a limited measure and manner. In other words: in *Echad* it is just ready to have the powers; in *Kadmon* the actual thing is *mamash* ready, all the way to the end. The motion in the power of motion is *mamash* all ready, but it is still not separate from the power of motion. There is no movement yet.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -1044,7 +1103,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And not only that: you see that even in *Kadmon* it is still simple unity. When somebody else grabbed the bottle, the power of motion turned into a power of speech; and if somebody else would get the bottle from this guy, then it wouldn't be speech like that either. It is still in *Kadmon*, and it can change from one to the other, **as said above of the third level in the soul**, in chapter 10.",
+              "text": "And not only that: you see that even in *Kadmon* it is still simple unity. When somebody else grabbed the bottle, the power of motion turned into a power of speech; and if somebody else would get the bottle from this guy, then it wouldn't be speech like that either. It is still in *Kadmon*, and it can change from one to the other, as said above of the third level in the soul, in chapter 10.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -1067,49 +1126,61 @@
           "phrases": [
             {
               "he": "ולמעלה,",
-              "en": "And above [in the *nimshal*]:"
+              "en": "And upstairs, in the *nimshal*:",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [3294, 3296],
+                "start": 1466.54,
+                "end": 1467.6
+              }
             },
             {
-              "he": "היינו מה ששיער בעצמות אור אין סוף שנקרא טהירו עילאה",
-              "en": "that is, what He estimated in the Essence of the *Or Ein Sof*, called *tehiru ila'a*:"
-            },
-            {
-              "he": "באופן ושיעור מה שרוצה בהשתלשלות",
-              "en": "the manner and measure of what He wants in the *hishtalshelus*,"
-            },
-            {
-              "he": "בפועל התגלות דקו עד סוף עולם העשיה",
-              "en": "in actual revelation of the *Kav*, to the end of the world of *Asiya*."
+              "he": "היינו מה ששיער בעצמות אור אין סוף שנקרא טהירו עילאה באופן ושיעור מה שרוצה בהשתלשלות בפועל התגלות דקו עד סוף עולם העשיה",
+              "en": "*Mamash* He was *mesha'er* in *Kadmon*, which means in *Atzmus Or Ein Sof*, all the way down to here.",
+              "audio": {
+                "lecture": "005 Tape017-Side2-Ch11.mp3",
+                "words": [3319, 3337],
+                "start": 1480.56,
+                "end": 1489.2
+              }
             },
             {
               "he": "שזהו מה שכתוב גליף גליפו בטהירו עילאה",
-              "en": "This is what is written, *glif glifu* (He engraved an engraving) in the *tehiru ila'a*,"
+              "en": "This is what is said: *glif glifu b'tehiru ila'a*,",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [105, 113],
+                "start": 55.9,
+                "end": 58.14
+              }
             },
             {
-              "he": "כנזכר לעיל",
-              "en": "as said above."
+              "he": "כנזכר לעיל"
             },
             {
               "he": "והוא הנקרא בחינת קדמון,",
-              "en": "And it is what is called *Kadmon* (preceding):"
+              "en": "Now he's calling the *glif glifu* *Kadmon*.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [119, 126],
+                "start": 60.82,
+                "end": 64.78
+              }
             },
             {
-              "he": "דהיינו מה שקדם אופן הרצון להשפיע טרם שמשפיע עדיין בגלוי ממש",
-              "en": "that is, the manner of the will to give influence that came before, before He actually gives influence in revelation."
+              "he": "דהיינו מה שקדם אופן הרצון להשפיע טרם שמשפיע עדיין בגלוי ממש"
             },
             {
-              "he": "וזהו עדיין לפני הצמצום הראשון הנקרא מקום פנוי וחלל כו'",
-              "en": "And this is still before the first *tzimtzum*, which is called the *makom panui* (the empty place) and the void,"
+              "he": "וזהו עדיין לפני הצמצום הראשון הנקרא מקום פנוי וחלל כו'"
             },
             {
-              "he": "כנ\"ל וד\"ל.",
-              "en": "as said above; and it is enough for the understanding."
+              "he": "כנ\"ל וד\"ל."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "And above, in the *nimshal*: what He estimated in the Essence of the *Or Ein Sof*, the manner and measure of what He wants in the *hishtalshelus*, all the way **to the end of the world of** *Asiya*. *Mamash*: He estimated it in *Kadmon*, which means in the *Atzmus Or Ein Sof*, all the way down to here.",
+              "text": "And above, in the *nimshal*: what He estimated in the Essence of the *Or Ein Sof*, the manner and measure of what He wants in the *hishtalshelus*, all the way to the end of the world of *Asiya*. *Mamash*: He estimated it in *Kadmon*, which means in the *Atzmus Or Ein Sof*, all the way down to here.",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -1221,7 +1292,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And the really real matter of the *glif glifu* is *Malchus* of *Kadmon*: the actual letters of the whole thing, when He has made the *shiur* and the whole thing is connected to the thing, the actual final letters of exactly what the definitions of the movement are going to be, till the end of the line. **that is, the manner of the will to give influence that came before**, before it gave influence in actual revelation; and this is still before the first *tzimtzum*, called the *makom panui* and the void. \"And that's the recap of chapter 10.\"",
+              "text": "And the really real matter of the *glif glifu* is *Malchus* of *Kadmon*: the actual letters of the whole thing, when He has made the *shiur* and the whole thing is connected to the thing, the actual final letters of exactly what the definitions of the movement are going to be, till the end of the line. That is, the manner of the will to give influence that came before, before it gave influence in actual revelation; and this is still before the first *tzimtzum*, called the *makom panui* and the void. \"And that's the recap of chapter 10.\"",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1248,23 +1319,29 @@
           "phrases": [
             {
               "he": "ומדריג' הד' הוא מה שאחר הצמצום הנזכר לעיל",
-              "en": "And the fourth level is what, after the *tzimtzum* mentioned above,"
+              "en": "So the fourth *madreiga* is the actual world after the *tzimtzum*.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [476, 487],
+                "start": 218.1,
+                "end": 222.54
+              }
             },
             {
-              "he": "נשאר בחינת הרשימו ונמשך ממנו הקו",
-              "en": "the *reshimu* (impression) remained, and from it the *Kav* was drawn,"
+              "he": "נשאר בחינת הרשימו ונמשך ממנו הקו"
             },
             {
-              "he": "שהוא בכללות בחינת טהירו תתאה,",
-              "en": "which is in general the *tehiru tata'a* (the lower purity),"
+              "he": "שהוא בכללות בחינת טהירו תתאה, בחינת מקיף כללי לכל השתלשלות דקו כו'",
+              "en": "And that's the *tehiru tata'a*, which is the *makif klali* for the whole *hishtalshelus* of the *Kav*.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [636, 652],
+                "start": 291.26,
+                "end": 296.64
+              }
             },
             {
-              "he": "בחינת מקיף כללי לכל השתלשלות דקו כו'",
-              "en": "a general encompassing light for the whole *hishtalshelus* of the *Kav*;"
-            },
-            {
-              "he": "שזהו הבא בבחינת השפעה למטה מן העצמות,",
-              "en": "this is what comes as influence below the Essence."
+              "he": "שזהו הבא בבחינת השפעה למטה מן העצמות,"
             }
           ],
           "blocks": [
@@ -1308,7 +1385,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "**this is what comes as influence below the Essence**. And really it is not just a general encompassing light: it is the whole *hishtalshelus* of the *Kav*, till *Asiya*. Really, that whole thing, to the end, is *mamash* the fourth level of the *Atzmus*, all the way down to here. In other words, it is not a separate thing; it is *mamash* a level of the *Atzmus*.",
+              "text": "This is what comes as influence below the Essence. And really it is not just a general encompassing light: it is the whole *hishtalshelus* of the *Kav*, till *Asiya*. Really, that whole thing, to the end, is *mamash* the fourth level of the *Atzmus*, all the way down to here. In other words, it is not a separate thing; it is *mamash* a level of the *Atzmus*.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1322,7 +1399,7 @@
               "kind": "question",
               "question": "You just said that it is part of the Atzmus, but he says here that it \"comes as influence below the Essence\"?",
               "askedBy": "student",
-              "text": "Below the Essence means below the Essence as it is before the *tzimtzum*. The fourth level is a general encompassing light for the whole *hishtalshelus* of the *Kav*, **this is what comes as influence below the Essence**; but there is no real \"below the Essence\". \"Below the Essence\" means below the Essence before the *tzimtzum*.",
+              "text": "Below the Essence means below the Essence as it is before the *tzimtzum*. The fourth level is a general encompassing light for the whole *hishtalshelus* of the *Kav*, this is what comes as influence below the Essence; but there is no real \"below the Essence\". \"Below the Essence\" means below the Essence before the *tzimtzum*.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1347,45 +1424,50 @@
           "phrases": [
             {
               "he": "כמשל חיות המתפשט בגלוי להחיות כו'",
-              "en": "Like the analogy of the life that spreads out in revelation to give life [to the body],"
+              "en": "Like how it comes into the body, where it's considered the life of the body, which is like a separate thing.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [859, 880],
+                "start": 401.7,
+                "end": 408.72
+              }
             },
             {
-              "he": "וככח התנועה שמתפשטת להניע הנפעל בגלוי כו'",
-              "en": "and the power of motion that spreads out to move the thing moved, in revelation,"
+              "he": "וככח התנועה שמתפשטת להניע הנפעל בגלוי כו'"
             },
             {
-              "he": "שמשתנה ממהות רוחני למהות הגשמה כנזכר לעיל",
-              "en": "which changes from a spiritual essence to an essence of physicality, as said above;"
+              "he": "שמשתנה ממהות רוחני למהות הגשמה כנזכר לעיל"
             },
             {
               "he": "וכמו צמיחה גשמית מצמיחה רוחנית",
-              "en": "or like physical growth from spiritual growth:"
+              "en": "The actual plant, that comes from *tzemicha ruchanis*, which is just the *hiyuli* in the ground.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [970, 984],
+                "start": 442.45,
+                "end": 452.34
+              }
             },
             {
-              "he": "כך הוא ערך האור שאחר הצמצום",
-              "en": "so is the light after the *tzimtzum*"
+              "he": "כך הוא ערך האור שאחר הצמצום"
             },
             {
-              "he": "לגבי האור העצמי שלפני הצמצום",
-              "en": "compared to the essential light before the *tzimtzum*."
+              "he": "לגבי האור העצמי שלפני הצמצום"
             },
             {
-              "he": "דמשום זה הוצרך להיות ענין הצמצום הזה,",
-              "en": "For this reason this *tzimtzum* had to be,"
+              "he": "דמשום זה הוצרך להיות ענין הצמצום הזה,"
             },
             {
-              "he": "רק בשביל שיוכל להיות הארת האור שבקו,",
-              "en": "only so that there could be the shining of the light in the *Kav*,"
+              "he": "רק בשביל שיוכל להיות הארת האור שבקו,"
             },
             {
-              "he": "שבא בשביל מקור לאבי''ע כידוע",
-              "en": "which comes to be a source for *Atzilus*, *Beriya*, *Yetzira* and *Asiya*, as is known."
+              "he": "שבא בשביל מקור לאבי''ע כידוע"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "He reads the lines through, and then explains them. **Like the analogy of the life that spreads out in revelation to give life**: like how it comes into the body, where it is considered the life of the body, which is like a separate thing. It is like a separate thing; it is not really a separate thing.",
+              "text": "He reads the lines through, and then explains them. Like the analogy of the life that spreads out in revelation to give life: like how it comes into the body, where it is considered the life of the body, which is like a separate thing. It is like a separate thing; it is not really a separate thing.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1404,7 +1486,7 @@
             {
               "kind": "mashal",
               "title": "An electric current in the arm",
-              "text": "**and the power of motion that spreads out to move the thing moved, in revelation**: for instance, the motion that actually moves in your arm is not really your soul. It is electric impulses that move your muscles. As a matter of fact, if you run an electric current through your arm, you can move the muscle without wanting to. It is *mamash* an electric impulse; it is not the soul, really.",
+              "text": "And the power of motion that spreads out to move the thing moved, in revelation: for instance, the motion that actually moves in your arm is not really your soul. It is electric impulses that move your muscles. As a matter of fact, if you run an electric current through your arm, you can move the muscle without wanting to. It is *mamash* an electric impulse; it is not the soul, really.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1416,7 +1498,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**which changes from a spiritual essence to an essence of physicality**, or like physical growth: the actual plant, which comes from spiritual growth, which is just the *hiyuli* in the ground; there is no real growth in the ground. So is the light after the *tzimtzum* compared to the light itself before the *tzimtzum*: it is *mamash* a contracted thing.",
+              "text": "It changes from a spiritual essence to an essence of physicality, or like physical growth: the actual plant, which comes from spiritual growth, which is just the *hiyuli* in the ground; there is no real growth in the ground. So is the light after the *tzimtzum* compared to the light itself before the *tzimtzum*: it is *mamash* a contracted thing.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1448,31 +1530,38 @@
           "phrases": [
             {
               "he": "אך עם כל זה",
-              "en": "But nonetheless,"
+              "en": "But nonetheless,",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [1074, 1075],
+                "start": 492.06,
+                "end": 493.26
+              }
             },
             {
               "he": "הרי כל פרטי העשר ספירות דאבי''ע,",
-              "en": "all the particulars of the ten *sefiros* of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*,"
+              "en": "all the *pratim*, all the way to the end of *Asiya*,",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [1082, 1092],
+                "start": 497.16,
+                "end": 501.2
+              }
             },
             {
-              "he": "הכל כלולים מתחלה בעצמות אור אין סוף",
-              "en": "all of it is included from the start in the Essence of the *Or Ein Sof*,"
+              "he": "הכל כלולים מתחלה בעצמות אור אין סוף"
             },
             {
-              "he": "בבחינת היולי ועצמי",
-              "en": "as *hiyuli* and essence;"
+              "he": "בבחינת היולי ועצמי"
             },
             {
-              "he": "ואחר כך על ידי הצמצום",
-              "en": "and afterwards, through the *tzimtzum*,"
+              "he": "ואחר כך על ידי הצמצום"
             },
             {
-              "he": "משתנה לפי אופן מוגבל",
-              "en": "it changes into a limited manner"
+              "he": "משתנה לפי אופן מוגבל"
             },
             {
-              "he": "בהשפעה הכללית דקו בבחינת סובב",
-              "en": "in the general influence of the *Kav*, as *sovev* (encompassing)."
+              "he": "בהשפעה הכללית דקו בבחינת סובב"
             }
           ],
           "blocks": [
@@ -1585,22 +1674,29 @@
           ],
           "phrases": [
             {
-              "he": "והרי זה כדוגמת חיות הנפש הרוחנית כשבאה להחיות הגוף",
-              "en": "This is like the life of the spiritual soul when it comes to give life to the body,"
+              "he": "והרי זה כדוגמת חיות הנפש הרוחנית כשבאה להחיות הגוף"
             },
             {
-              "he": "שכלולה ברוחניות מכל פרטי חיות הגשמיות, ראיה ושמיעה שבגוף הגשמי כנזכר לעיל",
-              "en": "which includes, spiritually, all the particulars of physical life, sight and hearing in the physical body, as said above."
+              "he": "שכלולה ברוחניות מכל פרטי חיות הגשמיות, ראיה ושמיעה שבגוף הגשמי"
             },
             {
-              "he": "(וענין הצמצום והרשימה יתבאר בסמוך)",
-              "en": "(And the matter of the *tzimtzum* and the *reshimu* will be explained shortly.)"
+              "he": "כנזכר לעיל",
+              "en": "Like we explain in chapter 10.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [1919, 1924],
+                "start": 843.67,
+                "end": 846.44
+              }
+            },
+            {
+              "he": "(וענין הצמצום והרשימה יתבאר בסמוך)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is like the life of the spiritual soul when it comes to give life to the body**, which includes, spiritually, all the particulars of physical life, sight and hearing, as explained in chapter 10. (\"And I'm going to have to stop over here.\" \"All right.\" \"Go ahead.\") The matter of the *tzimtzum* and the *reshimu* will be explained shortly.",
+              "text": "This is like the life of the spiritual soul when it comes to give life to the body, which includes, spiritually, all the particulars of physical life, sight and hearing, as explained in chapter 10. (\"And I'm going to have to stop over here.\" \"All right.\" \"Go ahead.\") The matter of the *tzimtzum* and the *reshimu* will be explained shortly.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1628,48 +1724,50 @@
           ],
           "phrases": [
             {
-              "he": "(וזהו פירוש כללי למה שכתוב ברוך שאמר והיה העולם",
-              "en": "(And this is a general explanation of what is said, \"Blessed is He who spoke, and the world came to be\":"
+              "he": "(וזהו פירוש כללי למה שכתוב ברוך שאמר והיה העולם"
             },
             {
-              "he": "פירוש שאמר בהעלם,",
-              "en": "\"spoke\" means in concealment,"
+              "he": "פירוש שאמר בהעלם,"
             },
             {
-              "he": "ברצונו הפשוט שבמלכות דאין סוף,",
-              "en": "in His simple will in *Malchus* of the *Ein Sof*,"
+              "he": "ברצונו הפשוט שבמלכות דאין סוף,"
             },
             {
-              "he": "בהיותו עדיין כלול בחפץ חסד העצמי הנזכר לעיל",
-              "en": "while it is still included in the essential *chafetz chesed* mentioned above;"
+              "he": "בהיותו עדיין כלול בחפץ חסד העצמי הנזכר לעיל"
             },
             {
-              "he": "ואחר כך והיה,",
-              "en": "and afterwards, \"came to be\":"
+              "he": "ואחר כך והיה,"
             },
             {
-              "he": "בגלוי אור המתפשט לדבר פרט להשתלשלות,",
-              "en": "in revelation, the light that spreads forth into a particular thing, into *hishtalshelus*,"
+              "he": "בגלוי אור המתפשט לדבר פרט להשתלשלות,"
             },
             {
-              "he": "להיות מקור לכל העולמות",
-              "en": "to be a source for all the worlds."
+              "he": "להיות מקור לכל העולמות"
             },
             {
-              "he": "ופירוש והיה העולם,",
-              "en": "And \"the world came to be\" means"
+              "he": "ופירוש והיה העולם,"
             },
             {
-              "he": "היינו דווקא מן מה ששיער בעצמו בכח",
-              "en": "*davka* from what He estimated in Himself, in potential,"
+              "he": "היינו דווקא מן מה ששיער בעצמו בכח"
             },
             {
-              "he": "שהוא שרש מה שמתהווה אחר כך העולם הכללי שנמשך מן הקו",
-              "en": "which is the root of what afterwards comes to be, the general world, drawn from the *Kav*,"
+              "he": "שהוא שרש מה שמתהווה"
             },
             {
-              "he": "וכו' וכנזכר לעיל ודי למבין.",
-              "en": "as said above; and it is enough for the understanding."
+              "he": "אחר כך העולם הכללי",
+              "en": "Means the general worlds,",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [2001, 2005],
+                "start": 880.82,
+                "end": 889.52
+              }
+            },
+            {
+              "he": "שנמשך מן הקו"
+            },
+            {
+              "he": "וכו' וכנזכר לעיל ודי למבין."
             }
           ],
           "blocks": [
@@ -1698,44 +1796,52 @@
           ],
           "phrases": [
             {
-              "he": "וברוך הוא, נסתר,",
-              "en": "And \"Blessed is He\": \"He\" is hidden;"
+              "he": "וברוך הוא, נסתר,"
             },
             {
-              "he": "היינו בחינת קדמונו של עולם",
-              "en": "that is, the *Kadmon* of the world,"
+              "he": "היינו בחינת קדמונו של עולם"
             },
             {
-              "he": "דהיינו מה ששיער בעצמו בכח כו'",
-              "en": "that is, what He estimated in Himself, in potential."
+              "he": "דהיינו מה ששיער בעצמו בכח כו'"
             },
             {
-              "he": "וכמו שכתוב מגיד מראשית אחרית,",
-              "en": "As it is written, \"He tells the end from the beginning\":"
+              "he": "וכמו שכתוב מגיד מראשית אחרית,"
             },
             {
               "he": "מראשית הקו עד סופו כו'",
-              "en": "from the beginning of the *Kav* to its end."
+              "en": "from the beginning of the *Kav* till the end of the *Kav*.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [2050, 2061],
+                "start": 914.8,
+                "end": 917.48
+              }
             },
             {
               "he": "ומקדם אשר לא נעשה עדיין",
-              "en": "\"And from before, what was not yet done\":"
+              "en": "*Kedem* means even before the *tzimtzum* He tells what wasn't even made yet.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [2071, 2083],
+                "start": 922.68,
+                "end": 926.36
+              }
             },
             {
-              "he": "היינו מקדמונו של עולם הנזכר לעיל",
-              "en": "that is, from the *Kadmon* of the world mentioned above,"
+              "he": "היינו מקדמונו של עולם הנזכר לעיל"
             },
             {
-              "he": "ונקרא ימי קדם,",
-              "en": "and it is called *yemei kedem* (the days of old),"
+              "he": "ונקרא ימי קדם, שקודם למה שנמשך בקו",
+              "en": "*Yemei kedem* means the *middos* in *Kadmon*, before it even came into the *Kav*.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [2123, 2137],
+                "start": 944.72,
+                "end": 950.4
+              }
             },
             {
-              "he": "שקודם למה שנמשך בקו",
-              "en": "which precede what is drawn into the *Kav*;"
-            },
-            {
-              "he": "והוא מה שקדם בעצמו בכח, מה שעתיד להיות בפועל כו' ודי למבין.",
-              "en": "and it is what preceded in Himself, in potential, what would later be in actuality; and it is enough for the understanding."
+              "he": "והוא מה שקדם בעצמו בכח, מה שעתיד להיות בפועל כו' ודי למבין."
             }
           ],
           "blocks": [
@@ -1753,7 +1859,7 @@
             },
             {
               "kind": "explanation",
-              "text": "\"And from before, what was not yet done\": \"before\" means that even before the *tzimtzum* He tells what wasn't even made yet. Even before it was made, He already told you; He already knew what it is going to be. It is called *yemei kedem*, which precede what is drawn into the *Kav*. In other places he will sometimes say that *yemei kedem* is a different thing, but here *yemei kedem* means the *middos* in *Kadmon*, before they even came into the *Kav*. **and it is what preceded in Himself, in potential, what would later be in actuality**: the *glif glifu* in *Kadmon*, where the *shiur* is.",
+              "text": "\"And from before, what was not yet done\": \"before\" means that even before the *tzimtzum* He tells what wasn't even made yet. Even before it was made, He already told you; He already knew what it is going to be. It is called *yemei kedem*, which precede what is drawn into the *Kav*. In other places he will sometimes say that *yemei kedem* is a different thing, but here *yemei kedem* means the *middos* in *Kadmon*, before they even came into the *Kav*. And it is what preceded in Himself, in potential, what would later be in actuality: the *glif glifu* in *Kadmon*, where the *shiur* is.",
               "audio": [
                 {
                   "lecture": "006 Tape018-Side1-Ch11.mp3",
@@ -1773,19 +1879,22 @@
           "phrases": [
             {
               "he": "ומה שכתוב ברוך אומר ועושה כו',",
-              "en": "And what is said, \"Blessed is He who says and does\":"
+              "en": "He says, and He did it.",
+              "audio": {
+                "lecture": "006 Tape018-Side1-Ch11.mp3",
+                "words": [2169, 2174],
+                "start": 967.46,
+                "end": 972.12
+              }
             },
             {
-              "he": "היינו מה שנמשך בקו בפועל ממש",
-              "en": "that is what is drawn into the *Kav* in actual fact."
+              "he": "היינו מה שנמשך בקו בפועל ממש"
             },
             {
-              "he": "ועושה בראשית כו',",
-              "en": "\"Who does the work of creation\":"
+              "he": "ועושה בראשית כו',"
             },
             {
-              "he": "הוא כל שיעור קומת אדם קדמון כו'",
-              "en": "it is the whole *shiur koma* (full stature) of *Adam Kadmon*."
+              "he": "הוא כל שיעור קומת אדם קדמון כו'"
             }
           ],
           "blocks": [
@@ -1822,20 +1931,16 @@
           ],
           "phrases": [
             {
-              "he": "וגוזר ומקיים, בתחלה,",
-              "en": "\"Decrees and fulfils\": first,"
+              "he": "וגוזר ומקיים, בתחלה,"
             },
             {
-              "he": "הוא בחינת קו המדה שלפני אדם קדמון",
-              "en": "it is the *kav hamida* (the line of measure) before *Adam Kadmon*,"
+              "he": "הוא בחינת קו המדה שלפני אדם קדמון"
             },
             {
-              "he": "שהוא בחינת צמצום דרשימו שנמשך ממנו הקו כידוע,",
-              "en": "which is the *tzimtzum* of the *reshimu* from which the *Kav* is drawn, as is known,"
+              "he": "שהוא בחינת צמצום דרשימו שנמשך ממנו הקו כידוע,"
             },
             {
-              "he": "וכמו שיתבאר בעזרת השם בסמוך):",
-              "en": "and as will be explained shortly, with G-d's help.)"
+              "he": "וכמו שיתבאר בעזרת השם בסמוך):"
             }
           ],
           "blocks": [

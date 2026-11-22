@@ -170,26 +170,36 @@
           ],
           "phrases": [
             {
-              "he": "(טו) והנמשל מכל הנזכר לעיל יובן",
-              "en": "(15) The *nimshal* (what the analogy stands for) of all the above will be understood"
+              "he": "(טו) והנמשל מכל הנזכר לעיל יובן"
             },
             {
-              "he": "בבחינת רושם שנשאר בחלל ומקום פנוי הנזכר לעיל",
-              "en": "in the *roshem* (the impression) that remained in the *chalal* (the space), the *makom panui* (the empty place) mentioned above"
+              "he": "בבחינת רושם שנשאר בחלל ומקום פנוי הנזכר לעיל"
             },
             {
               "he": "(שהוא יו\"ד דס\"ג שבטהירו עילאה",
-              "en": "(which is the *yud* of *SaG* in the *tehiru ila'a* (the upper purity),"
+              "en": "which is the *yud* of the *SaG*; this *reshimu* is the *yud* of the *SaG* into *tehiru ila'a*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [25, 42],
+                "start": 19.96,
+                "end": 24.28
+              }
             },
             {
               "he": "כמו שכתוב בספר עמק המלך)",
-              "en": "as it says in the book *Emek HaMelech*)."
+              "en": "as it explains in *Emek HaMelech*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [43, 48],
+                "start": 24.28,
+                "end": 26.1
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Chapter 14 gave the analogy; here is the *nimshal*: the *roshem* that remained in the *chalal*, the empty place. And the text adds in parentheses that this *reshimu* (the impression left after the *tzimtzum*) is **the *yud* of *SaG* in the *tehiru ila'a***, as *Emek HaMelech* explains. What does that mean exactly?",
+              "text": "Chapter 14 gave the analogy; here is the *nimshal*: the *roshem* that remained in the *chalal*, the empty place. And the text adds in parentheses that this *reshimu* (the impression left after the *tzimtzum*) is the *yud* of *SaG* in the *tehiru ila'a*, as *Emek HaMelech* explains. What does that mean exactly?",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -305,29 +315,58 @@
           "phrases": [
             {
               "he": "שהוא בחינת היולי",
-              "en": "That it is a *hiyuli* (raw potential),"
+              "en": "That the *reshimu* is a *hiyuli*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1191, 1196],
+                "start": 486.47,
+                "end": 489.66
+              }
             },
             {
               "he": "כולל כל מה שיסתעף ממנו על ידי הקו וחוט כו'",
-              "en": "which includes anything that will branch out of it through the *Kav* and the thread."
+              "en": "which includes anything which will branch out of it through the *Kav v'chut*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1197, 1209],
+                "start": 489.84,
+                "end": 493.84
+              }
             },
             {
-              "he": "וגם שנתעלם כללות האור העצמות עד שלא נשאר רק בחינת רשימו,",
-              "en": "And even though the whole light of the Essence was hidden, until nothing was left but a *reshimu*,"
+              "he": "וגם שנתעלם כללות האור העצמות"
             },
             {
-              "he": "עם כל זה ודאי הכל נכלל בו בקיצור",
-              "en": "still, certainly everything is included in it in short;"
+              "he": "עד שלא נשאר רק בחינת רשימו,",
+              "en": "still there's nothing but *reshimu* left",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1221, 1226],
+                "start": 499.28,
+                "end": 501.1
+              }
             },
             {
-              "he": "על ידי זה הצמצום דווקא כנזכר לעיל",
-              "en": "and *davka* through this *tzimtzum*, as explained above."
+              "he": "עם כל זה ודאי הכל נכלל בו בקיצור"
+            },
+            {
+              "he": "על ידי זה הצמצום דווקא"
+            },
+            {
+              "he": "כנזכר לעיל",
+              "en": "like was explained before",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1275, 1278],
+                "start": 526.42,
+                "end": 527.46
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The *reshimu* is a *hiyuli* **which includes anything that will branch out of it through the *Kav* and the thread**. And even though nothing is left but a *reshimu*, **still, certainly everything is included in it in short**. He is recapping here all the way back to chapter 12.",
+              "text": "The *reshimu* is a *hiyuli* which includes anything that will branch out of it through the *Kav* and the thread. And even though nothing is left but a *reshimu*, still, certainly everything is included in it in short. He is recapping here all the way back to chapter 12.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -347,34 +386,39 @@
           ],
           "phrases": [
             {
-              "he": "וגם מה שהוא מורה העדר ההתפשטות למטה,",
-              "en": "And also, that it shows an absence of spreading forth below"
+              "he": "וגם מה שהוא מורה העדר ההתפשטות למטה,"
             },
             {
-              "he": "אינו בחינת צמצום גמור",
-              "en": "is not a complete *tzimtzum*,"
+              "he": "אינו בחינת צמצום גמור"
             },
             {
-              "he": "רק מצד שהוא בחינת כח ההיולי כו' כנזכר לעיל",
-              "en": "only because it is the power of the *hiyuli*, as explained above;"
+              "he": "רק מצד שהוא בחינת כח ההיולי כו' כנזכר לעיל"
             },
             {
-              "he": "רק להיותו כח מגביל לכללות האור הראשון,",
-              "en": "only because it is a power that limits the whole of the first light,"
-            },
-            {
-              "he": "על כן בלתי מתפשט רק דרך קו,",
-              "en": "therefore it does not spread forth except by way of a line,"
+              "he": "רק להיותו כח מגביל לכללות האור הראשון, על כן בלתי מתפשט רק דרך קו,",
+              "en": "Since it's the *koach hamagbil*, that's why the light in it, even when it is *misposhet*, is not *misposhet* in an infinite way like it was before, but only in a *metzumtzam* way, *derech Kav*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1331, 1365],
+                "start": 553.26,
+                "end": 567.46
+              }
             },
             {
               "he": "לפי אופן ההשפעה כנזכר לעיל.",
-              "en": "according to the manner of the giving, as explained above."
+              "en": "according to the *hashpa'a*, which goes according to the *mekabel*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1370, 1380],
+                "start": 569.8,
+                "end": 572.48
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "As explained in the last chapter, the *reshimu* shows *davka* **an absence of spreading forth below**. That **is not a complete *tzimtzum***. Since it is the limiting power, the light in it, even when it spreads forth, does not spread in an infinite way as it did before, but only in a contracted way, **by way of a line, according to the manner of the giving**. And the giving goes according to the *mekabel* (the receiver).",
+              "text": "As explained in the last chapter, the *reshimu* shows *davka* an absence of spreading forth below. That is not a complete *tzimtzum*. Since it is the limiting power, the light in it, even when it spreads forth, does not spread in an infinite way as it did before, but only in a contracted way, by way of a line, according to the manner of the giving. And the giving goes according to the *mekabel* (the receiver).",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -399,30 +443,29 @@
           ],
           "phrases": [
             {
-              "he": "אמנם יובן מהנזכר לעיל",
-              "en": "But it will be understood from all the above"
+              "he": "אמנם יובן מהנזכר לעיל"
             },
             {
-              "he": "דקו זה יש בו מכח האור הראשון שלפני הצמצום",
-              "en": "that this *Kav* has in it of the power of the first light before the *tzimtzum*,"
+              "he": "דקו זה יש בו מכח האור הראשון שלפני הצמצום"
             },
             {
-              "he": "בבחינת אין סוף ממש,",
-              "en": "*mamash* as the *Ein Sof*;"
+              "he": "בבחינת אין סוף ממש,"
             },
             {
-              "he": "רק שבא דרך קו,",
-              "en": "only that it comes by way of a line,"
-            },
-            {
-              "he": "לפי אופן המקבלים כו'",
-              "en": "according to the manner of the receivers (*mekablim*)."
+              "he": "רק שבא דרך קו, לפי אופן המקבלים כו'",
+              "en": "the only reason it comes because of *Kav* is because of the *mekablim davka*, not because of the *mashpia*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1550, 1569],
+                "start": 641.42,
+                "end": 646.96
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**this *Kav* has in it of the power of the first light before the *tzimtzum*, *mamash* as the *Ein Sof***. First of all, the *reshimu* itself has the entire *Ein Sof* in it. And not only the *reshimu*: the *Kav*, as it expands, can be expanded all the way back to the original light.",
+              "text": "this *Kav* has in it of the power of the first light before the *tzimtzum*, *mamash* as the *Ein Sof*. First of all, the *reshimu* itself has the entire *Ein Sof* in it. And not only the *reshimu*: the *Kav*, as it expands, can be expanded all the way back to the original light.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -435,7 +478,7 @@
             {
               "kind": "mashal",
               "title": "The Rogatchover talking to his equal",
-              "text": "If the teacher is talking to somebody on his own level, *mamash*, he can tell him exactly. If the Rogatchover is talking to another guy like that, and not to little students, then it is *mamash* as the *Ein Sof*, even in the *Kav*. That the *Kav* has a measurement according to the *mekablim* depends on who the *mekabel* is. If he is somebody like himself, he can expand it, and *mamash* the whole *Or Ein Sof* is in there. **only that it comes by way of a line, according to the manner of the receivers**: the only reason it comes as a *Kav* is *davka* the *mekablim*, not the *mashpia* (the giver).",
+              "text": "If the teacher is talking to somebody on his own level, *mamash*, he can tell him exactly. If the Rogatchover is talking to another guy like that, and not to little students, then it is *mamash* as the *Ein Sof*, even in the *Kav*. That the *Kav* has a measurement according to the *mekablim* depends on who the *mekabel* is. If he is somebody like himself, he can expand it, and *mamash* the whole *Or Ein Sof* is in there. only that it comes by way of a line, according to the manner of the receivers: the only reason it comes as a *Kav* is *davka* the *mekablim*, not the *mashpia* (the giver).",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -456,42 +499,55 @@
           ],
           "phrases": [
             {
-              "he": "ובזה יובן מה שכתוב באורך נראה אור",
-              "en": "And with this will be understood what it says, \"In Your light we see light\":"
+              "he": "ובזה יובן מה שכתוב באורך נראה אור"
             },
             {
               "he": "בחינת הארה דהארה הנקרא אור של תולדה",
-              "en": "the level of a glow of a glow (*haara d'haara*), called a light of offspring (*or shel tolda*);"
+              "en": "a secondary light, which is called *haara d'haara*, *or shel tolda*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1599, 1610],
+                "start": 661.48,
+                "end": 665.52
+              }
             },
             {
               "he": "שאחר הצמצום בוקע האור דרך קו בעלמא כו',",
-              "en": "for after the *tzimtzum* the light breaks through only by way of a mere line,"
+              "en": "it only breaks through in a very *metzumtzam* way, just like a little line of light",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1636, 1652],
+                "start": 674.78,
+                "end": 682.88
+              }
             },
             {
-              "he": "אבל הוא בא מאורך העצמי",
-              "en": "but it comes from Your essential light,"
+              "he": "אבל הוא בא מאורך העצמי"
             },
             {
               "he": "להיות שברשימו הרי נכלל הכל וממנו נמשך הקו",
-              "en": "since in the *reshimu* everything is included, and from it the *Kav* is drawn,"
+              "en": "it's the whole thing of the *reshimu* that goes into the *Kav*, and the *reshimu* has the whole thing of the whole *Ein Sof*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [1678, 1705],
+                "start": 696.86,
+                "end": 705.02
+              }
             },
             {
-              "he": "בבחינת היולי לכללות השפע",
-              "en": "as a *hiyuli* for the whole of the flow,"
+              "he": "בבחינת היולי לכללות השפע"
             },
             {
-              "he": "להיות בבחינת מעלה ומטה על כל פנים,",
-              "en": "so that there is at least an above and a below,"
+              "he": "להיות בבחינת מעלה ומטה על כל פנים,"
             },
             {
-              "he": "כמו שכתוב בעץ חיים",
-              "en": "as it says in *Etz Chaim*."
+              "he": "כמו שכתוב בעץ חיים"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"In Your light we see light\"**: this explanation for the *mekabel* really comes from the actual light of the *mashpia*. Even though it is a secondary light, which is called *haara d'haara*, a glow of a glow, and **called a light of offspring**, still it really comes from the original light.",
+              "text": "\"In Your light we see light\": this explanation for the *mekabel* really comes from the actual light of the *mashpia*. Even though it is a secondary light, which is called *haara d'haara*, a glow of a glow, and called a light of offspring, still it really comes from the original light.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -503,7 +559,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**after the *tzimtzum* the light breaks through only by way of a mere line**: it breaks through in a very contracted way, just like a little line of light. **but it comes from Your essential light**. The whole *reshimu* goes into the *Kav*, and the *reshimu* has the whole *Ein Sof*.",
+              "text": "after the *tzimtzum* the light breaks through only by way of a mere line: it breaks through in a very contracted way, just like a little line of light. but it comes from Your essential light. The whole *reshimu* goes into the *Kav*, and the *reshimu* has the whole *Ein Sof*.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -517,7 +573,7 @@
               "kind": "question",
               "question": "The *tevuna* explains according to the receiver; so is the light of the *Kav* not according to the receiver after all?",
               "askedBy": "student",
-              "text": "He first ties **\"but it comes from Your essential light\"** to the *tevuna*: that's from the *tevuna*. Then the word is settled: the student reads *me'erech*, and it is not *erech*, it is \"Your light\", the light of **\"In Your light we see light\"**. Then he presses: this goes back to what was said before, that the *tevuna* of the *Aibershter* (the One Above) is according to the *mekabel*.\n\nThe *tevuna* itself is not. The *tevuna* itself is the *Aibershter*'s *tevuna*, and everything is in there. Even though it is a *tevuna*, and now He is going to put it into an explanation according to the *mekabel*, the *tevuna* itself is the *Aibershter*'s. And not only the flow itself: even the later explanation, which is only according to the measure of the *mekabel*, comes *mamash* from the actual knowledge of the *mashpia*.",
+              "text": "He first ties \"but it comes from Your essential light\" to the *tevuna*: that's from the *tevuna*. Then the word is settled: the student reads *me'erech*, and it is not *erech*, it is \"Your light\", the light of \"In Your light we see light\". Then he presses: this goes back to what was said before, that the *tevuna* of the *Aibershter* (the One Above) is according to the *mekabel*.\n\nThe *tevuna* itself is not. The *tevuna* itself is the *Aibershter*'s *tevuna*, and everything is in there. Even though it is a *tevuna*, and now He is going to put it into an explanation according to the *mekabel*, the *tevuna* itself is the *Aibershter*'s. And not only the flow itself: even the later explanation, which is only according to the measure of the *mekabel*, comes *mamash* from the actual knowledge of the *mashpia*.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -579,7 +635,7 @@
             {
               "kind": "mashal",
               "title": "The student will be a Rebbe himself",
-              "text": "Not only that: it is not really a *tzimtzum*. That is the whole *kavana* (intention). The intention in the *Kav* is not to bring a contracted light down. In the analogy of the Rebbe with the student, the intention is not just to explain a little tiny explanation to the student. The intention is that by the end of all the explanations he gets the whole thing. And not just that he gets the whole thing and finally understands the same as the Rebbe: he will be a Rebbe himself, just like the Rebbe. So it is really going to pass over the whole *Atzmus* (the Essence), which means that the whole *etzem* is in there. And all this **so that there is at least an above and a below, as it says in *Etz Chaim***.",
+              "text": "Not only that: it is not really a *tzimtzum*. That is the whole *kavana* (intention). The intention in the *Kav* is not to bring a contracted light down. In the analogy of the Rebbe with the student, the intention is not just to explain a little tiny explanation to the student. The intention is that by the end of all the explanations he gets the whole thing. And not just that he gets the whole thing and finally understands the same as the Rebbe: he will be a Rebbe himself, just like the Rebbe. So it is really going to pass over the whole *Atzmus* (the Essence), which means that the whole *etzem* is in there. And all this so that there is at least an above and a below, as it says in *Etz Chaim*.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -607,42 +663,51 @@
           ],
           "phrases": [
             {
-              "he": "ומזה הטעם יובן תירוץ על ב' ענינים הפכים שנמצא בקו זה",
-              "en": "And for this reason the answer will be understood to two opposite things that are found in this *Kav*:"
+              "he": "ומזה הטעם יובן תירוץ על"
             },
             {
-              "he": "הא' אשר בכחו דוקא לאכללא שמאלא בימינא כו'",
-              "en": "the first, that *davka* it has the power \"to include the left in the right\";"
+              "he": "ב' ענינים הפכים שנמצא בקו זה",
+              "en": "the two opposites which is in the *Kav*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [2454, 2463],
+                "start": 984.97,
+                "end": 988.06
+              }
             },
             {
-              "he": "שהוא בחינת ההתכללות והיחודים",
-              "en": "which is the *hiskalelus* (inclusion) and the *yichudim* (unifications)"
+              "he": "הא' אשר בכחו דוקא לאכללא שמאלא בימינא כו'"
             },
             {
-              "he": "של כל האורות המסתעפים מכתר דאדם קדמון עד מלכות דאצילות",
-              "en": "of all the lights that branch out, from *Keser* of *Adam Kadmon* down to *Malchus* of *Atzilus*;"
+              "he": "שהוא בחינת ההתכללות והיחודים"
             },
             {
-              "he": "עד שעל ידו דוקא יוחלף האור בכלי שאינו שלו,",
-              "en": "so that *davka* through it a light is exchanged into a vessel that is not its own,"
+              "he": "של כל האורות המסתעפים מכתר דאדם קדמון עד מלכות דאצילות"
             },
             {
-              "he": "כמו אור החסד בכלי הגבורה כו'",
-              "en": "like the light of *chesed* in the vessel of *gevura*,"
+              "he": "עד שעל ידו דוקא יוחלף האור בכלי שאינו שלו,"
+            },
+            {
+              "he": "כמו אור החסד בכלי הגבורה כו'"
             },
             {
               "he": "כמו שכתוב במקום אחר באריכות",
-              "en": "as explained elsewhere at length"
+              "en": "This will be explained later, I think it's chapter 21 or 22 or something like that",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [2521, 2536],
+                "start": 1019.04,
+                "end": 1022.84
+              }
             },
             {
-              "he": "בענין וא''ו דוהנורא כו'",
-              "en": "on the *vav* of \"and the awesome\"."
+              "he": "בענין וא''ו דוהנורא כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "There are **two opposite things that are found in this *Kav***. The first: **that *davka* it has the power \"to include the left in the right\"**, the *hiskalelus* and *yichudim* of all the lights from *Keser* of *Adam Kadmon* to *Malchus* of *Atzilus*, **so that *davka* through it a light is exchanged into a vessel that is not its own**. *Davka* the *Kav* is the power of all the unifications. This will be explained later, he thinks in chapter 21 or 22 or something like that.",
+              "text": "There are two opposite things that are found in this *Kav*. The first: that *davka* it has the power \"to include the left in the right\", the *hiskalelus* and *yichudim* of all the lights from *Keser* of *Adam Kadmon* to *Malchus* of *Atzilus*, so that *davka* through it a light is exchanged into a vessel that is not its own. *Davka* the *Kav* is the power of all the unifications. This will be explained later, he thinks in chapter 21 or 22 or something like that.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -666,7 +731,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**on the *vav* of \"and the awesome\"**: \"the great, the mighty and the awesome\" that we say of the *Aibershter*. \"The great\", *chesed*, is the *Or Ein Sof*; \"the mighty\" is the *tzimtzum*; and \"and the awesome\" is the *Kav*. The *vav* of *v'hanora* is the *Kav*.",
+              "text": "on the *vav* of \"and the awesome\": \"the great, the mighty and the awesome\" that we say of the *Aibershter*. \"The great\", *chesed*, is the *Or Ein Sof*; \"the mighty\" is the *tzimtzum*; and \"and the awesome\" is the *Kav*. The *vav* of *v'hanora* is the *Kav*.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -686,26 +751,29 @@
           ],
           "phrases": [
             {
-              "he": "והב' מה שנקרא בשם קו המדה דוקא,",
-              "en": "And the second: that it is called by the name *kav hamida* (the line of measure) *davka*,"
+              "he": "והב' מה שנקרא בשם קו המדה דוקא,"
             },
             {
-              "he": "למדוד כל אורות וכלים כו'",
-              "en": "to measure all lights and vessels,"
+              "he": "למדוד כל אורות וכלים כו'"
             },
             {
-              "he": "וכנזכר לעיל בענין הקו שנקרא אמת הבנין כו'",
-              "en": "as explained above about the *Kav* that is called the cubit of the building;"
+              "he": "וכנזכר לעיל בענין הקו שנקרא אמת הבנין כו'"
             },
             {
               "he": "שזהו היפוך ההתכללות לכאורה.",
-              "en": "which is, seemingly, the opposite of the *hiskalelus*."
+              "en": "that's the opposite",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [2750, 2752],
+                "start": 1111.94,
+                "end": 1112.98
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And the second: that it is called by the name *kav hamida***. What does it mean, that it measures? Measuring means that each one is different. **to measure all lights and vessels** is what makes this one *chachma* and this one *bina*: two different things, by measuring what the measurement of each thing is. And it is *haynu hach*, one and the same: the power to divide is the power to connect. It is *mamash* the same power, and it includes both powers in it.",
+              "text": "And the second: that it is called by the name *kav hamida*. What does it mean, that it measures? Measuring means that each one is different. to measure all lights and vessels is what makes this one *chachma* and this one *bina*: two different things, by measuring what the measurement of each thing is. And it is *haynu hach*, one and the same: the power to divide is the power to connect. It is *mamash* the same power, and it includes both powers in it.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -717,7 +785,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**which is, seemingly, the opposite of the *hiskalelus***. To measure means this one is this and this one is that: the right and the left and the middle. As it says, \"one long, one short and one in between\". It measures the long one and the short one, the right and the left.",
+              "text": "which is, seemingly, the opposite of the *hiskalelus*. To measure means this one is this and this one is that: the right and the left and the middle. As it says, \"one long, one short and one in between\". It measures the long one and the short one, the right and the left.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -743,17 +811,29 @@
           "phrases": [
             {
               "he": "אך הענין הוא דשניהם אמת",
-              "en": "But the point is that both are true;"
+              "en": "Really, they're both true. It has both powers.",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [2806, 2813],
+                "start": 1133.18,
+                "end": 1135.03
+              }
             },
             {
               "he": "ואדרבה הא בהא תליא",
-              "en": "on the contrary, the one depends on the other."
+              "en": "not only that, just the opposite: the one is connected to the other",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [2815, 2830],
+                "start": 1135.36,
+                "end": 1141.12
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But the point is that both are true**: it has both powers. And not only that, just the opposite: **the one depends on the other**. Because he has the power to separate, he has the power to connect; and because he has the power to connect, he has the power to separate.",
+              "text": "But the point is that both are true: it has both powers. And not only that, just the opposite: the one depends on the other. Because he has the power to separate, he has the power to connect; and because he has the power to connect, he has the power to separate.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -793,7 +873,7 @@
             {
               "kind": "mashal",
               "title": "Only the king can pardon",
-              "text": "\"So you have to go to the king. He made the law to put you in, so he can pardon you, even against the law.\" (\"Huh?\" Yes: a pardon means against the law. He made the law in the first place, so he can pardon you.) The judge says, \"I can't pardon you. I can only go according to the law. I don't really have the power to put you in there; I didn't put you in there, the law put you in there. I'm just the guy who decides according to the law.\" If you want, you have to go to the originator of the law. The one who puts you in there is the one who can take you out. It is *mamash* the same power: the one who can divide is the one who can connect. **the one depends on the other**.",
+              "text": "\"So you have to go to the king. He made the law to put you in, so he can pardon you, even against the law.\" (\"Huh?\" Yes: a pardon means against the law. He made the law in the first place, so he can pardon you.) The judge says, \"I can't pardon you. I can only go according to the law. I don't really have the power to put you in there; I didn't put you in there, the law put you in there. I'm just the guy who decides according to the law.\" If you want, you have to go to the originator of the law. The one who puts you in there is the one who can take you out. It is *mamash* the same power: the one who can divide is the one who can connect. the one depends on the other.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -815,42 +895,62 @@
           ],
           "phrases": [
             {
-              "he": "משום דשרש זה הקו",
-              "en": "Because the root of this *Kav*"
+              "he": "משום דשרש זה הקו"
             },
             {
-              "he": "מכח הראשון דעצמיות אור אין סוף שלפני הצמצום הוא בא",
-              "en": "comes from the first power of the Essence of the *Or Ein Sof* before the *tzimtzum*,"
+              "he": "מכח הראשון דעצמיות אור אין סוף שלפני הצמצום הוא בא"
             },
             {
-              "he": "כנזכר לעיל בענין באורך דוקא נראה אור דקו זה",
-              "en": "as explained above about \"in Your light *davka* we see light\", [the light] of this *Kav*;"
+              "he": "כנזכר לעיל בענין באורך דוקא נראה אור דקו זה"
             },
             {
               "he": "ובכח האור העצמות דאין סוף",
-              "en": "and with the power of the light of the Essence of the *Ein Sof*"
+              "en": "In the power of the *Ein Sof*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3322, 3328],
+                "start": 1309.28,
+                "end": 1310.72
+              }
             },
             {
-              "he": "ודאי יש לעשות בחינת התכללות ויחודים של כל ההפכים",
-              "en": "there is certainly [the power] to make *hiskalelus* and *yichudim* of all the opposites"
+              "he": "ודאי יש לעשות בחינת התכללות ויחודים של כל ההפכים בכל ההשתלשלות",
+              "en": "there's certainly a power to make all the *yichudim* in all the *hishtalshelus*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3329, 3342],
+                "start": 1310.82,
+                "end": 1316.52
+              }
             },
             {
-              "he": "בכל ההשתלשלות מראש דאדם קדמון כו' עד מלכות דאצילות",
-              "en": "in the whole chain of descent, from the head of *Adam Kadmon* down to *Malchus* of *Atzilus*;"
+              "he": "מראש דאדם קדמון כו' עד מלכות דאצילות"
             },
             {
               "he": "וכמאמר אנת הוא דמייחד לון ומקשר לון כו',",
-              "en": "as the saying goes, \"You are the one who unifies them and ties them together\";"
+              "en": "you're the one that unifies and ties them together",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3362, 3375],
+                "start": 1325.39,
+                "end": 1329.3
+              }
             },
             {
               "he": "אנת הוא מלגאו ומלבר כו'",
-              "en": "\"You are within and without\"."
+              "en": "you're from the inside and you're from the outside",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3380, 3388],
+                "start": 1332.4,
+                "end": 1334.24
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Because the root of this *Kav* comes from the first power of the Essence of the *Or Ein Sof* before the *tzimtzum***, as was said about \"the way it goes out shines for him\". In the power of the *Ein Sof* there is certainly a power to make all the *yichudim* in the whole chain of descent, because in the *Or Ein Sof* they are all one. **\"You are the one who unifies them and ties them together\"**; **\"You are within and without\"**: You are from the inside and You are from the outside.",
+              "text": "Because the root of this *Kav* comes from the first power of the Essence of the *Or Ein Sof* before the *tzimtzum*, as was said about \"the way it goes out shines for him\". In the power of the *Ein Sof* there is certainly a power to make all the *yichudim* in the whole chain of descent, because in the *Or Ein Sof* they are all one. \"You are the one who unifies them and ties them together\"; \"You are within and without\": You are from the inside and You are from the outside.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -869,21 +969,32 @@
           "phrases": [
             {
               "he": "וכן ענין שם מ''ה מלגאו",
-              "en": "And so too the inner Name *MaH*,"
+              "en": "the thing of the *Shem MaH* on the inside",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3400, 3407],
+                "start": 1342.18,
+                "end": 1343.96
+              }
             },
             {
               "he": "דאיהו אורח כל האצילות כו'",
-              "en": "which is the path of all of *Atzilus*,"
+              "en": "which is the way of the whole *Atzilus*",
+              "audio": {
+                "lecture": "012 Tape021-Side1-Ch15.mp3",
+                "words": [3408, 3415],
+                "start": 1345.12,
+                "end": 1347.12
+              }
             },
             {
-              "he": "וכהאי גוונא",
-              "en": "and the like."
+              "he": "וכהאי גוונא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the inner Name *MaH*, which is the path of all of *Atzilus***. What does that mean? The Name *MaH* is basically the line. Of the four, *AB*, *SaG*, *MaH* and *BaN*, *MaH* is the *vav*: in general *Zeir Anpin* and the *middos* (attributes) coming down. And *middos* means the *kav hamida*, that it measures it. That is the measurement.",
+              "text": "the inner Name *MaH*, which is the path of all of *Atzilus*. What does that mean? The Name *MaH* is basically the line. Of the four, *AB*, *SaG*, *MaH* and *BaN*, *MaH* is the *vav*: in general *Zeir Anpin* and the *middos* (attributes) coming down. And *middos* means the *kav hamida*, that it measures it. That is the measurement.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -895,7 +1006,7 @@
             },
             {
               "kind": "explanation",
-              "text": "It comes from the *reshimu*, which is the *SaG*, and then the line comes down, the Name *MaH*, **the path of all of *Atzilus***. Not a length: *orach* is a path, a pathway, the pathway of the entire *Atzilus*. The light of the line comes down to the end of *Atzilus*. That is the inner *MaH*. The outer *MaH* is another, lower *MaH*; the inner *MaH* is this line.",
+              "text": "It comes from the *reshimu*, which is the *SaG*, and then the line comes down, the Name *MaH*, the path of all of *Atzilus*. Not a length: *orach* is a path, a pathway, the pathway of the entire *Atzilus*. The light of the line comes down to the end of *Atzilus*. That is the inner *MaH*. The outer *MaH* is another, lower *MaH*; the inner *MaH* is this line.",
               "audio": [
                 {
                   "lecture": "012 Tape021-Side1-Ch15.mp3",
@@ -955,7 +1066,7 @@
             },
             {
               "kind": "recap",
-              "text": "The next side opens in the middle of the same point. The *Kav* is the inner *MaH*, the *kav hamida*, the line that measures. The outer *MaH* is the *middos* of *Atzilus*. And **the path of all of *Atzilus*** means that the whole measurement that will later be in *Atzilus*, in its *MaH*, the outer *MaH*, comes from the inner *MaH*: it is already included in the inner *MaH* of the *Kav*.",
+              "text": "The next side opens in the middle of the same point. The *Kav* is the inner *MaH*, the *kav hamida*, the line that measures. The outer *MaH* is the *middos* of *Atzilus*. And the path of all of *Atzilus* means that the whole measurement that will later be in *Atzilus*, in its *MaH*, the outer *MaH*, comes from the inner *MaH*: it is already included in the inner *MaH* of the *Kav*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1153,46 +1264,72 @@
           ],
           "phrases": [
             {
-              "he": "הכל הוא מצד הארת אור העצמות דאין סוף שבקו זה,",
-              "en": "It is all from the glow of the light of the Essence of the *Ein Sof* in this *Kav*,"
+              "he": "הכל הוא מצד הארת אור העצמות דאין סוף שבקו זה,"
             },
             {
-              "he": "שהולך ונמשך עד למטה במלכות,",
-              "en": "which goes and is drawn all the way down into *Malchus*,"
+              "he": "שהולך ונמשך עד למטה במלכות,"
             },
             {
               "he": "סוף כל דרגין",
-              "en": "the end of all levels."
+              "en": "this thing, that he can spread downwards all the way to *sof kol dargin*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1560, 1573],
+                "start": 705.72,
+                "end": 711.62
+              }
             },
             {
               "he": "והיא הנותנת",
-              "en": "And that is the very thing that gives it"
+              "en": "this is the same thing that gives it",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1574, 1581],
+                "start": 711.86,
+                "end": 717.52
+              }
             },
             {
-              "he": "דוקא שיש בכחו למדוד מדה וגבול לכל אורות וכלים",
-              "en": "*davka* the power to measure a measure and a limit for all lights and vessels"
+              "he": "דוקא שיש בכחו למדוד מדה וגבול לכל אורות וכלים"
             },
             {
-              "he": "ולכל יחוד משפיע ומקבל,",
-              "en": "and for every unification of giver and receiver:"
+              "he": "ולכל יחוד משפיע ומקבל,"
             },
             {
               "he": "כמה יהיה מ''ד ומ''ן כו'",
-              "en": "how much *mayin duchrin* and *mayin nukvin* there will be;"
+              "en": "in terms of different classes, the influence from above and the influence from below: he measures it all",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1601, 1617],
+                "start": 725.4,
+                "end": 736.6
+              }
             },
             {
               "he": "מצד בחינת הרשימו המגביל לכל אור העצמות באופנים שונים",
-              "en": "from the side of the *reshimu*, which limits all the light of the Essence in different ways,"
+              "en": "that's the power of the *hagbala*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1630, 1635],
+                "start": 740.7,
+                "end": 742.2
+              }
             },
             {
               "he": "כמו ששיער בעצמות אור אין סוף לפני הצמצום כו'",
-              "en": "as He estimated in the Essence of the *Or Ein Sof* before the *tzimtzum*."
+              "en": "these *ofanim meshunim* of the *tzimtzumim*, already *meshuar* before the actual *tzimtzum*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1655, 1666],
+                "start": 751.06,
+                "end": 756.68
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "(\"We're on the bottom line,\" of the page.) **It is all from the glow of the light of the Essence of the *Ein Sof* in this *Kav*, which goes and is drawn all the way down into *Malchus*, the end of all levels**: he is talking about *Malchus* of *Atzilus*, and it could also be talking about *Malchus* of *Asiya*.",
+              "text": "(\"We're on the bottom line,\" of the page.) It is all from the glow of the light of the Essence of the *Ein Sof* in this *Kav*, which goes and is drawn all the way down into *Malchus*, the end of all levels: he is talking about *Malchus* of *Atzilus*, and it could also be talking about *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1204,7 +1341,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**And that is the very thing that gives it** the power to measure: that it can spread downwards all the way to the end of all levels is the same thing that gives it the power to measure for every light and vessel and for every unification of *mashpia* and *mekabel*, **how much *mayin duchrin* and *mayin nukvin* there will be**: the influence from above and the influence from below. In terms of the different classes, he measures it all.",
+              "text": "And that is the very thing that gives it the power to measure: that it can spread downwards all the way to the end of all levels is the same thing that gives it the power to measure for every light and vessel and for every unification of *mashpia* and *mekabel*, how much *mayin duchrin* and *mayin nukvin* there will be: the influence from above and the influence from below. In terms of the different classes, he measures it all.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1216,7 +1353,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**from the side of the *reshimu*, which limits**: that is the power of limitation. And both of these powers are included in the *Kav*, **as He estimated in the Essence of the *Or Ein Sof* before the *tzimtzum***: these different ways of the contractions were already estimated before the actual *tzimtzum*. As was said of reaching for the vodka bottle, or of the cat jumping.",
+              "text": "from the side of the *reshimu*, which limits: that is the power of limitation. And both of these powers are included in the *Kav*, as He estimated in the Essence of the *Or Ein Sof* before the *tzimtzum*: these different ways of the contractions were already estimated before the actual *tzimtzum*. As was said of reaching for the vodka bottle, or of the cat jumping.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1236,42 +1373,69 @@
           ],
           "phrases": [
             {
-              "he": "ונמצא מצד עצמות האור שבקו",
-              "en": "So it turns out: from the side of the Essence of the light in the *Kav*,"
+              "he": "ונמצא מצד עצמות האור שבקו"
             },
             {
               "he": "נקרא בחינת היולי ליכלל ולחבר את הכל כו',",
-              "en": "it is called a *hiyuli* to include and to join everything;"
+              "en": "it's the *hiyuli* for all the unifications",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1699, 1705],
+                "start": 771.17,
+                "end": 776.76
+              }
             },
             {
               "he": "ומצד כח הרשימו המגביל שבו מגביל שיעור ומדה לכל,",
-              "en": "and from the side of the limiting power of the *reshimu* in it, it limits a measure and a size for everything,"
+              "en": "it can make all the *hagbalos* and give a *shiur u'midda* to everything",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1715, 1727],
+                "start": 782.84,
+                "end": 789.09
+              }
             },
             {
               "he": "על דרך אותו בחינת השיעור הראשון שנכלל ברשימו זו",
-              "en": "in the manner of that first measure (*shiur*) that was included in this *reshimu*;"
+              "en": "and it can make the *hagbalos* according to the original *shiur* in the *glif glifu*, which was included in the *reshimu*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1737, 1757],
+                "start": 794.74,
+                "end": 808.62
+              }
             },
             {
               "he": "על דרך משל אומן העושה רושם,",
-              "en": "as in the analogy of a craftsman who makes an outline (*roshem*),"
+              "en": "he makes a blueprint",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1781, 1784],
+                "start": 818.52,
+                "end": 821.78
+              }
             },
             {
-              "he": "שמגביל האופן של המעשה,",
-              "en": "which limits the manner of the work,"
+              "he": "שמגביל האופן של המעשה,"
             },
             {
-              "he": "שיהיה הכל מדוקדק כמו שהוחלט השיעור בעצמו",
-              "en": "so that everything comes out exact, as the measure was decided in itself,"
+              "he": "שיהיה הכל מדוקדק כמו שהוחלט השיעור בעצמו"
             },
             {
               "he": "שלא ינטה ימין ושמאל כו'",
-              "en": "that it should not turn right or left."
+              "en": "that he'll not go right or left from the original plan",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1789, 1799],
+                "start": 822.54,
+                "end": 825.94
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**from the side of the Essence of the light in the *Kav*, it is called a *hiyuli* to include and to join everything**: it is the *hiyuli* for all the unifications. **and from the side of the limiting power of the *reshimu* in it**, it can make all the limits and give a measure and size to everything, according to the original *shiur* in the *glif glifu* (He engraved an engraving), which was included in the *reshimu*.",
+              "text": "from the side of the Essence of the light in the *Kav*, it is called a *hiyuli* to include and to join everything: it is the *hiyuli* for all the unifications. and from the side of the limiting power of the *reshimu* in it, it can make all the limits and give a measure and size to everything, according to the original *shiur* in the *glif glifu* (He engraved an engraving), which was included in the *reshimu*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1283,7 +1447,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**as in the analogy of a craftsman who makes an outline**: he makes a blueprint, **so that everything comes out exact**, **that it should not turn right or left** from the original plan. And yet he does not have to rethink the whole plan anymore; it is all written down.",
+              "text": "as in the analogy of a craftsman who makes an outline: he makes a blueprint, so that everything comes out exact, that it should not turn right or left from the original plan. And yet he does not have to rethink the whole plan anymore; it is all written down.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1308,26 +1472,29 @@
           ],
           "phrases": [
             {
-              "he": "ואף על פי שאם לפעמים יהיה תוספת אור בנאצלים,",
-              "en": "And even though at times there will be an addition of light in the emanated beings,"
+              "he": "ואף על פי שאם לפעמים יהיה תוספת אור בנאצלים,"
             },
             {
               "he": "יתר מכפי מאמר קו המדה כו',",
-              "en": "more than the word of the *kav hamida*,"
+              "en": "different from the *kav hamida*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [1829, 1833],
+                "start": 838.34,
+                "end": 841.92
+              }
             },
             {
-              "he": "היינו מכח האור העצמות דוקא",
-              "en": "that is *davka* from the power of the light of the Essence,"
+              "he": "היינו מכח האור העצמות דוקא"
             },
             {
-              "he": "שלפעמים יאיר כך ולפעמים יאיר כך",
-              "en": "that sometimes shines this way and sometimes that way."
+              "he": "שלפעמים יאיר כך ולפעמים יאיר כך"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**at times there will be an addition of light in the emanated beings, more than the word of the *kav hamida***, different from the *kav hamida*: **that is *davka* from the power of the light of the Essence, that sometimes shines this way and sometimes that way**. What does that mean? That sometimes it does not go according to the *kav hamida*. So what is the *kav hamida*?",
+              "text": "at times there will be an addition of light in the emanated beings, more than the word of the *kav hamida*, different from the *kav hamida*: that is *davka* from the power of the light of the Essence, that sometimes shines this way and sometimes that way. What does that mean? That sometimes it does not go according to the *kav hamida*. So what is the *kav hamida*?",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1391,7 +1558,7 @@
             },
             {
               "kind": "explanation",
-              "text": "He does not have to go according to the plan. He can put a light into the plan that is way too big for what was supposed to be there: **an addition of light … more than the word of the *kav hamida***, **that is *davka* from the power of the light of the Essence**, **that sometimes shines this way and sometimes that way**.",
+              "text": "He does not have to go according to the plan. He can put a light into the plan that is way too big for what was supposed to be there: an addition of light … more than the word of the *kav hamida*, that is *davka* from the power of the light of the Essence, that sometimes shines this way and sometimes that way.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1413,38 +1580,41 @@
           ],
           "phrases": [
             {
-              "he": "ולזה הטעם",
-              "en": "And for this reason,"
+              "he": "ולזה הטעם"
             },
             {
-              "he": "כל בחינת התחדשות אור באבי''ע, הכל מעצמות אור אין סוף שלפני הצמצום דוקא",
-              "en": "every renewal of light in *ABYA* is all *davka* from the Essence of the *Or Ein Sof* before the *tzimtzum*;"
+              "he": "כל בחינת התחדשות אור באבי''ע, הכל מעצמות אור אין סוף שלפני הצמצום דוקא"
             },
             {
-              "he": "דהיינו מפני שבאורו העצמי נראה אור בקו זה",
-              "en": "that is, because in His essential light a light is seen in this *Kav*,"
+              "he": "דהיינו מפני שבאורו העצמי נראה אור בקו זה"
             },
             {
-              "he": "לפעמים בתוספת ולפעמים בגרעון",
-              "en": "sometimes with more and sometimes with less;"
+              "he": "לפעמים בתוספת"
             },
             {
-              "he": "וכן בשינויי היחודים שבכל הפרצופים",
-              "en": "and so too in the changes of the unifications in all the *partzufim*,"
+              "he": "ולפעמים בגרעון",
+              "en": "Sometimes it's less than what you're supposed to get.",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [2674, 2682],
+                "start": 1173.94,
+                "end": 1178.94
+              }
             },
             {
-              "he": "מאדם קדמון עד עקב דאדם קדמון בסוף העשיה",
-              "en": "from *Adam Kadmon* to the heel of *Adam Kadmon* at the end of *Asiya*,"
+              "he": "וכן בשינויי היחודים שבכל הפרצופים"
             },
             {
-              "he": "כמו השינוי מזמן בית המקדש לזמן הגלות וכהאי גוונא",
-              "en": "like the change from the time of the Temple to the time of exile, and the like."
+              "he": "מאדם קדמון עד עקב דאדם קדמון בסוף העשיה"
+            },
+            {
+              "he": "כמו השינוי מזמן בית המקדש לזמן הגלות וכהאי גוונא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**every renewal of light in *ABYA*** (*Atzilus*, *Beriya*, *Yetzira* and *Asiya*) **is all *davka* from the Essence of the *Or Ein Sof* before the *tzimtzum***, because the *Aibershter* Himself is doing it. **sometimes with more and sometimes with less**: sometimes it is less than what you are supposed to get. **like the change from the time of the Temple to the time of exile**: how things are now is not really according to plan.",
+              "text": "every renewal of light in *ABYA* (*Atzilus*, *Beriya*, *Yetzira* and *Asiya*) is all *davka* from the Essence of the *Or Ein Sof* before the *tzimtzum*, because the *Aibershter* Himself is doing it. sometimes with more and sometimes with less: sometimes it is less than what you are supposed to get. like the change from the time of the Temple to the time of exile: how things are now is not really according to plan.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1517,7 +1687,7 @@
             {
               "kind": "digression",
               "title": "Why the fireworks at Sinai?",
-              "text": "But it is not just that. The giving of the Torah was not from the *kav hamida*, and neither was the splitting of the Sea. The whole world was shaking. The Sea did not have to be like that either: He could have just killed the Egyptians, they could have dropped dead of a heart attack, or a fire could have burned down all the pyramids. One of the things it says is that it was *davka* because He wanted to do it with water. But He could have done it in another, nice way. And especially at the giving of the Torah, the whole world was shaking, with angels flying around. What's going on here? It is not the natural order of things. *Kav hamida* means that it goes naturally according to the measurements: this is what was supposed to happen, and that is what happens. So why all of that? As He said to Moshe, \"so that they should believe in you\". It is done to impress them, and when you impress them like that, they will keep the Torah properly. **and the like**: in the time of exile as well.",
+              "text": "But it is not just that. The giving of the Torah was not from the *kav hamida*, and neither was the splitting of the Sea. The whole world was shaking. The Sea did not have to be like that either: He could have just killed the Egyptians, they could have dropped dead of a heart attack, or a fire could have burned down all the pyramids. One of the things it says is that it was *davka* because He wanted to do it with water. But He could have done it in another, nice way. And especially at the giving of the Torah, the whole world was shaking, with angels flying around. What's going on here? It is not the natural order of things. *Kav hamida* means that it goes naturally according to the measurements: this is what was supposed to happen, and that is what happens. So why all of that? As He said to Moshe, \"so that they should believe in you\". It is done to impress them, and when you impress them like that, they will keep the Torah properly. and the like: in the time of exile as well.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1539,38 +1709,38 @@
           ],
           "phrases": [
             {
-              "he": "ודרך כלל הרי אנו אומרים יהי רצון מלפניך",
-              "en": "And in general, we say, \"May it be the will from before You\":"
+              "he": "ודרך כלל הרי אנו אומרים יהי רצון מלפניך"
             },
             {
-              "he": "מלפני עצמותך ממש,",
-              "en": "from before Your Essence, *mamash*,"
+              "he": "מלפני עצמותך ממש,"
             },
             {
-              "he": "שלמעלה מי׳ ספירות העצמיים גם כן",
-              "en": "which is above even the ten essential *sefiros*;"
+              "he": "שלמעלה מי׳ ספירות העצמיים גם כן"
             },
             {
               "he": "לשנות הרצון הפשוט שכבר נמשך בעצמות האור דאין סוף",
-              "en": "to change the simple will that was already drawn in the Essence of the light of the *Ein Sof*"
+              "en": "We want you to change the actual *ratzon*, the *ratzon* that made the *glif glifu*. We want you to change the whole plan.",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [3460, 3482],
+                "start": 1458.72,
+                "end": 1461.75
+              }
             },
             {
-              "he": "לבא בשיעור ששיער בעצמו עד סיום הקו,",
-              "en": "[which was] to come in the measure He measured in Himself, down to the end of the *Kav*,"
+              "he": "לבא בשיעור ששיער בעצמו עד סיום הקו,"
             },
             {
-              "he": "באופן אחר,",
-              "en": "[that it come] in another way,"
+              "he": "באופן אחר,"
             },
             {
-              "he": "כמו מדין לחסד וכהאי גוונא",
-              "en": "as from *din* to *chesed*, and the like."
+              "he": "כמו מדין לחסד וכהאי גוונא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"May it be the will from before You\": from before Your Essence, *mamash***. We are telling Him: we want You to change the actual *ratzon* (will), the *ratzon* that made the *glif glifu*. We want You to change the whole plan, **as from *din* to *chesed***.",
+              "text": "\"May it be the will from before You\": from before Your Essence, *mamash*. We are telling Him: we want You to change the actual *ratzon* (will), the *ratzon* that made the *glif glifu*. We want You to change the whole plan, as from *din* to *chesed*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1597,38 +1767,31 @@
           ],
           "phrases": [
             {
-              "he": "וכנזכר לעיל (בסוף אות הט') בענין אני יהו״ה לא שניתי",
-              "en": "As explained above (at the end of section 9) about \"I, *Havaya*, have not changed\":"
+              "he": "וכנזכר לעיל (בסוף אות הט') בענין אני יהו״ה לא שניתי"
             },
             {
-              "he": "בין רצון של חסד לדין באור הראשון שלפני הצמצום",
-              "en": "between a will of *chesed* and [a will of] *din* in the first light before the *tzimtzum*;"
+              "he": "בין רצון של חסד לדין באור הראשון שלפני הצמצום"
             },
             {
-              "he": "מטעם הנזכר לעיל",
-              "en": "for the reason explained above"
+              "he": "מטעם הנזכר לעיל"
             },
             {
-              "he": "(באות יו''ד) בענין חפץ חסד",
-              "en": "(in section 10) about the *chafetz chesed* (the desire for kindness)"
+              "he": "(באות יו''ד) בענין חפץ חסד"
             },
             {
-              "he": "שבעצמות ההיולי שנכלל בעצמות כו'",
-              "en": "in the Essence, the *hiyuli* included in the Essence,"
+              "he": "שבעצמות ההיולי שנכלל בעצמות כו'"
             },
             {
-              "he": "שיש בו ג' מדריגות עד שבא בדבר פרט כו'",
-              "en": "which has three levels until it comes into a particular thing"
+              "he": "שיש בו ג' מדריגות עד שבא בדבר פרט כו'"
             },
             {
-              "he": "(כמבואר באריכות באות י''א)",
-              "en": "(as explained at length in section 11)."
+              "he": "(כמבואר באריכות באות י''א)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"I, *Havaya*, have not changed\": between a will of *chesed* and [a will of] *din* in the first light before the *tzimtzum***: that it is really only the *tzimtzum* that changes. And this is the *chafetz chesed* **which has three levels until it comes into a particular thing**. What we ask is that He change all the way to the beginning, to *Yachid*, so that as it goes through *Yachid*, *Echad* and *Kadmon*, and finally to the *glif glifu*, the *Malchus* of *Kadmon* and the *shiur*, the *shiur* should be different. And so what goes into the *reshimu* will be different, and therefore what goes into the *Kav* will be different.",
+              "text": "\"I, *Havaya*, have not changed\": between a will of *chesed* and [a will of] *din* in the first light before the *tzimtzum*: that it is really only the *tzimtzum* that changes. And this is the *chafetz chesed* which has three levels until it comes into a particular thing. What we ask is that He change all the way to the beginning, to *Yachid*, so that as it goes through *Yachid*, *Echad* and *Kadmon*, and finally to the *glif glifu*, the *Malchus* of *Kadmon* and the *shiur*, the *shiur* should be different. And so what goes into the *reshimu* will be different, and therefore what goes into the *Kav* will be different.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1659,22 +1822,19 @@
           ],
           "phrases": [
             {
-              "he": "וכשאמרו אליו ולא למדותיו,",
-              "en": "And when they said, \"to Him and not to His attributes\","
+              "he": "וכשאמרו אליו ולא למדותיו,"
             },
             {
-              "he": "מדבר גם במדותיו העצמיים שבאור העצמות",
-              "en": "it speaks even of His essential attributes in the light of the Essence,"
+              "he": "מדבר גם במדותיו העצמיים שבאור העצמות"
             },
             {
-              "he": "מפני שהעצמות דאור אין סוף, לאו מכל אלין מדות כלל כו' ודי למבין.",
-              "en": "because the Essence of the *Or Ein Sof* is \"not of these attributes at all\"; and this suffices for one who understands."
+              "he": "מפני שהעצמות דאור אין סוף, לאו מכל אלין מדות כלל כו' ודי למבין."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"to Him and not to His attributes\"** speaks **even of His essential attributes**: even higher than the essential *middos* of the *Or Ein Sof*. **because the Essence of the *Or Ein Sof* is \"not of these attributes at all\"**, which means He can change all the *middos*.",
+              "text": "\"to Him and not to His attributes\" speaks even of His essential attributes: even higher than the essential *middos* of the *Or Ein Sof*. because the Essence of the *Or Ein Sof* is \"not of these attributes at all\", which means He can change all the *middos*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1692,22 +1852,36 @@
           ],
           "phrases": [
             {
-              "he": "וזהו אנת הוא דמיחד לון כו',",
-              "en": "And this is \"You are the one who unifies them\":"
+              "he": "וזהו",
+              "en": "this is what it means",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [3712, 3716],
+                "start": 1584.26,
+                "end": 1587.02
+              }
+            },
+            {
+              "he": "אנת הוא דמיחד לון כו',"
             },
             {
               "he": "אנת דוקא,",
-              "en": "\"You\", *davka*;"
+              "en": "that means *davka* You",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [3724, 3727],
+                "start": 1589.94,
+                "end": 1590.86
+              }
             },
             {
-              "he": "שזהו אנת הוא חד ולא בחושבן י׳ ספירות כו'",
-              "en": "meaning, \"You are one, and not in the count of the ten *sefiros*\"."
+              "he": "שזהו אנת הוא חד ולא בחושבן י׳ ספירות כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"You\", *davka***: *davka* You. They are not really different things, and the only reason you see them as different things is that you are forgetting about the You. When it is fierce, it is really the *Aibershter* who is there. You are not really dealing with the *midas hadin* (the attribute of judgement); you are really dealing with the *Aibershter*.",
+              "text": "\"You\", *davka*: *davka* You. They are not really different things, and the only reason you see them as different things is that you are forgetting about the You. When it is fierce, it is really the *Aibershter* who is there. You are not really dealing with the *midas hadin* (the attribute of judgement); you are really dealing with the *Aibershter*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1727,25 +1901,28 @@
           "phrases": [
             {
               "he": "וכן מעצמות אור אין סוף דוקא בא כח הגבול והמדה",
-              "en": "And so too, *davka* from the Essence of the *Or Ein Sof* comes the power of limit and measure"
+              "en": "It's really coming from the *Atzmus Or Ein Sof*",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [3798, 3806],
+                "start": 1620.78,
+                "end": 1624.1
+              }
             },
             {
-              "he": "אשר בבחינת רשימו שבקו",
-              "en": "that is in the *reshimu* in the *Kav*,"
+              "he": "אשר בבחינת רשימו שבקו"
             },
             {
-              "he": "שמחמת זה נקרא קו המדה",
-              "en": "for which it is called the *kav hamida*;"
+              "he": "שמחמת זה נקרא קו המדה"
             },
             {
-              "he": "והא בהא תליה דוקא",
-              "en": "and the one *davka* depends on the other."
+              "he": "והא בהא תליה דוקא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the power of limit and measure that is in the *reshimu* in the *Kav*, for which it is called the *kav hamida***, is really coming from the *Atzmus Or Ein Sof*. **and the one *davka* depends on the other** means that it is the *Aibershter* Himself who is doing it.",
+              "text": "the power of limit and measure that is in the *reshimu* in the *Kav*, for which it is called the *kav hamida*, is really coming from the *Atzmus Or Ein Sof*. and the one *davka* depends on the other means that it is the *Aibershter* Himself who is doing it.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1771,34 +1948,28 @@
           ],
           "phrases": [
             {
-              "he": "(וכמו שכתוב במקום אחר בענין כללות חסד וגבורה שבעצמות אור אין סוף",
-              "en": "(As explained elsewhere about the whole of *chesed* and *gevura* in the Essence of the *Or Ein Sof*:"
+              "he": "(וכמו שכתוב במקום אחר בענין כללות חסד וגבורה שבעצמות אור אין סוף"
             },
             {
-              "he": "שהוא בחינת כח הגבול להגביל ולהעלים בעצמותו",
-              "en": "which is the power of limit, to limit and to hide in His Essence,"
+              "he": "שהוא בחינת כח הגבול להגביל ולהעלים בעצמותו"
             },
             {
-              "he": "בעילוי אחר עילוי עד אין קץ ושיעור",
-              "en": "rising higher and higher without end or measure;"
+              "he": "בעילוי אחר עילוי עד אין קץ ושיעור"
             },
             {
-              "he": "והיינו אור אין סוף למעלה עד אין קץ כו',",
-              "en": "that is, the *Or Ein Sof* above, without end;"
+              "he": "והיינו אור אין סוף למעלה עד אין קץ כו',"
             },
             {
-              "he": "ובחינת התפשטות האור למטה מטה עד אין תכלית",
-              "en": "and the spreading forth of the light down and down without limit,"
+              "he": "ובחינת התפשטות האור למטה מטה עד אין תכלית"
             },
             {
-              "he": "שעל ידי הקו שנמשך מן הרשימו כו'",
-              "en": "which is through the *Kav* drawn from the *reshimu*."
+              "he": "שעל ידי הקו שנמשך מן הרשימו כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the power of limit, to limit and to hide in His Essence, rising higher and higher without end or measure; that is, the *Or Ein Sof* above, without end**. Now he is calling it backwards. Now he says *gevura* is the light going up and up, the *Or Ein Sof*, and *chesed* is **the spreading forth of the light down and down**: the *tzimtzum* and *reshimu* in the *Kav* are *davka* the *chesed*. That is backwards from what was said before.",
+              "text": "the power of limit, to limit and to hide in His Essence, rising higher and higher without end or measure; that is, the *Or Ein Sof* above, without end. Now he is calling it backwards. Now he says *gevura* is the light going up and up, the *Or Ein Sof*, and *chesed* is the spreading forth of the light down and down: the *tzimtzum* and *reshimu* in the *Kav* are *davka* the *chesed*. That is backwards from what was said before.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1823,7 +1994,7 @@
             {
               "kind": "mashal",
               "title": "The seal in the wax",
-              "text": "That is what it means by a revelation of a revelation, what he says later on: it is like the impression of the seal in the wax. Take a seal and put it in the wax, and it is flipped around. That is the *or shel tolda*. **which is through the *Kav* drawn from the *reshimu***.",
+              "text": "That is what it means by a revelation of a revelation, what he says later on: it is like the impression of the seal in the wax. Take a seal and put it in the wax, and it is flipped around. That is the *or shel tolda*. which is through the *Kav* drawn from the *reshimu*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1843,21 +2014,39 @@
           "phrases": [
             {
               "he": "וב' קוין שקולין המה בבחינת אין סוף",
-              "en": "And the two lines are of equal weight, as *Ein Sof*;"
+              "en": "these are two exact powers, and they're both infinite",
+              "audio": {
+                "lecture": "013 Tape021-Side2-Ch15.mp3",
+                "words": [4102, 4113],
+                "start": 1761.22,
+                "end": 1769.72
+              }
             },
             {
               "he": "על כן גם בירידת האור דאין סוף בקו זה,",
-              "en": "therefore also in the descent of the light of the *Ein Sof* in this *Kav*,"
+              "en": "so in the *Kav*, also it's like that",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [16, 23],
+                "start": 14.6,
+                "end": 16.3
+              }
             },
             {
               "he": "שקולין ב' כחות הללו לצמצם ולהגביל או לחבר ולייחד",
-              "en": "these two powers are of equal weight: to contract and to limit, or to join and to unite."
+              "en": "It has exactly the two powers, to expand or to contract; *tzimtzum* and *harchava* together are equal",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [28, 44],
+                "start": 18.08,
+                "end": 26.58
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the two lines are of equal weight, as *Ein Sof***: these are two exact powers, and they are both infinite. **therefore also in the descent of the light of the *Ein Sof* in this *Kav***, the power of the light and the power of the *reshimu* are equal. The *reshimu* has the power to limit the entire light, and the light has the power to blot out the whole *reshimu*, to fill out the whole *chalal*.",
+              "text": "the two lines are of equal weight, as *Ein Sof*: these are two exact powers, and they are both infinite. therefore also in the descent of the light of the *Ein Sof* in this *Kav*, the power of the light and the power of the *reshimu* are equal. The *reshimu* has the power to limit the entire light, and the light has the power to blot out the whole *reshimu*, to fill out the whole *chalal*.",
               "audio": [
                 {
                   "lecture": "013 Tape021-Side2-Ch15.mp3",
@@ -1869,7 +2058,7 @@
             },
             {
               "kind": "recap",
-              "text": "The next tape reads the lines again: in the *Kav* it is also like that. **these two powers are of equal weight**: it has exactly the two powers, to expand or to contract, contraction and expansion together, and they are equal.",
+              "text": "The next tape reads the lines again: in the *Kav* it is also like that. these two powers are of equal weight: it has exactly the two powers, to expand or to contract, contraction and expansion together, and they are equal.",
               "audio": [
                 {
                   "lecture": "014 Tape022-Side1-Ch15&16.mp3",
@@ -1888,42 +2077,72 @@
           ],
           "phrases": [
             {
-              "he": "וכן ענין שינויי האור וההמשכה,",
-              "en": "And so too the changes of the light and of its drawing down,"
+              "he": "וכן ענין שינויי האור וההמשכה,"
             },
             {
               "he": "אם בתוספת או בגרעון,",
-              "en": "whether more or less,"
+              "en": "whether the power to increase the light or the power to decrease the light",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [54, 68],
+                "start": 30.7,
+                "end": 34.52
+              }
             },
             {
-              "he": "כמו מזמן לזמן, כמו מחול לשבת ויום טוב,",
-              "en": "as from time to time, as from weekday to Shabbos and festival,"
+              "he": "כמו מזמן לזמן, כמו מחול לשבת ויום טוב,"
             },
             {
-              "he": "וכן מזמן בית המקדש לזמן הגלות,",
-              "en": "and so from the time of the Temple to the time of exile:"
+              "he": "וכן מזמן בית המקדש לזמן הגלות,"
             },
             {
               "he": "הכל בכח א' שקול,",
-              "en": "it is all one power, of equal weight,"
+              "en": "it's really one power",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [87, 90],
+                "start": 41.37,
+                "end": 42.8
+              }
             },
             {
               "he": "שנחלק לב' קוין חסד וגבורה",
-              "en": "which is divided into two lines, *chesed* and *gevura*,"
+              "en": "that is divided into two powers",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [96, 101],
+                "start": 46.16,
+                "end": 48.9
+              }
             },
             {
-              "he": "הבא מכח ואור הראשון דעצמות אין סוף",
-              "en": "which comes from the first power and light of the Essence of the *Ein Sof*"
+              "he": "הבא מכח ואור הראשון דעצמות אין סוף"
             },
             {
-              "he": "כמו שהוא בעצמו בבחינת חסד וגבורה כו' ודי למבין)",
-              "en": "as it is in itself, as *chesed* and *gevura*; and this suffices for one who understands.)"
+              "he": "כמו שהוא בעצמו",
+              "en": "how He is in Himself",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [122, 126],
+                "start": 58.76,
+                "end": 59.94
+              }
+            },
+            {
+              "he": "בבחינת חסד וגבורה כו' ודי למבין)",
+              "en": "that the light and the *reshimu* are the *chesed* and *gevura* of the *Atzmus Ein Sof*",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [132, 146],
+                "start": 61.86,
+                "end": 66.36
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**the changes of the light and of its drawing down, whether more or less**: the power to increase the light or the power to decrease the light, from weekday to Shabbos and festival, from the time of the Temple to the time of exile. **it is all one power, of equal weight, which is divided into two lines, *chesed* and *gevura***. It comes from the Essence of the *Ein Sof*; not the *Atzmus Or Ein Sof*, he stresses, the *Atzmus Ein Sof*, **as it is in itself**. The light and the *reshimu* are the *chesed* and *gevura* of the *Atzmus Ein Sof*, and the line is the *tiferes*; and you can say it one way or the other, which one is the *chesed* and which the *gevura*.",
+              "text": "the changes of the light and of its drawing down, whether more or less: the power to increase the light or the power to decrease the light, from weekday to Shabbos and festival, from the time of the Temple to the time of exile. it is all one power, of equal weight, which is divided into two lines, *chesed* and *gevura*. It comes from the Essence of the *Ein Sof*; not the *Atzmus Or Ein Sof*, he stresses, the *Atzmus Ein Sof*, as it is in itself. The light and the *reshimu* are the *chesed* and *gevura* of the *Atzmus Ein Sof*, and the line is the *tiferes*; and you can say it one way or the other, which one is the *chesed* and which the *gevura*.",
               "audio": [
                 {
                   "lecture": "014 Tape022-Side1-Ch15&16.mp3",
@@ -1944,29 +2163,55 @@
           "phrases": [
             {
               "he": "והיינו כמבואר למעלה (באות הי''ד) דקו לגבי שטח הוא היולי",
-              "en": "That is, as explained above (in section 14), that a line, compared to a surface, is a *hiyuli*"
+              "en": "a line is a *hiyuli* to a *shetach*",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [196, 204],
+                "start": 87.02,
+                "end": 93.7
+              }
             },
             {
-              "he": "כולל על דרך אותו האור וכח העצמי שבעצמות של המשפיע,",
-              "en": "that includes, in the manner of that light and essential power in the essence of the giver;"
+              "he": "כולל על דרך אותו האור וכח העצמי שבעצמות של המשפיע,"
             },
             {
               "he": "רק שבעצמות הוא בהרחבת הערך ביותר,",
-              "en": "only that in the essence it is in the widest extent,"
+              "en": "In the *Atzmus*, in the *mashpia*, the *harchava* is very wide",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [211, 224],
+                "start": 100.6,
+                "end": 107.7
+              }
             },
             {
               "he": "ובקו זה בא כח זה עצמו בבחינת הצמצום שפע והמשכה למקבלים כו'",
-              "en": "and in this *Kav* this very power comes in the form of the *tzimtzum*, a flow and a drawing down to the receivers."
+              "en": "the *mekablim*: the way it goes, as the line goes down it's narrower and narrower",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [225, 241],
+                "start": 108.3,
+                "end": 114.22
+              }
             },
             {
-              "he": "ואם כן גם בבחינת צמצום והתפשטות שבו, משם הוא בא דווקא ודי למבין:",
-              "en": "If so, the contraction and the spreading forth in it also come *davka* from there; and this suffices for one who understands."
+              "he": "ואם כן גם בבחינת צמצום והתפשטות שבו, משם הוא בא דווקא",
+              "en": "So the *inyan* of the *tzimtzum* and *hispashtus* in the *Kav* comes from the *tzimtzum* and *hispashtus* before, in the *Atzmus*",
+              "audio": {
+                "lecture": "014 Tape022-Side1-Ch15&16.mp3",
+                "words": [322, 344],
+                "start": 149.3,
+                "end": 158.72
+              }
+            },
+            {
+              "he": "ודי למבין:"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**a line, compared to a surface, is a *hiyuli***. In the *Atzmus*, in the *mashpia*, the breadth is very wide. For the *mekablim*, as the line goes down it is narrower and narrower. When you teach college students, you give them much more of a surface than you give to little kids. And that surface too has the *Kav* as its *hiyuli*. But in the *Atzmus* it is **in the widest extent**: there the breadth is totally wide. **and in this *Kav* this very power comes in the form of the *tzimtzum***, drawn down to the receivers.",
+              "text": "a line, compared to a surface, is a *hiyuli*. In the *Atzmus*, in the *mashpia*, the breadth is very wide. For the *mekablim*, as the line goes down it is narrower and narrower. When you teach college students, you give them much more of a surface than you give to little kids. And that surface too has the *Kav* as its *hiyuli*. But in the *Atzmus* it is in the widest extent: there the breadth is totally wide. and in this *Kav* this very power comes in the form of the *tzimtzum*, drawn down to the receivers.",
               "audio": [
                 {
                   "lecture": "014 Tape022-Side1-Ch15&16.mp3",
@@ -1978,7 +2223,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "**the contraction and the spreading forth in it also come *davka* from there**: the contraction and the spreading forth in the *Kav* come from the contraction and spreading forth before, in the *Atzmus*. Even all the way down here, where there is a total *tzimtzum* and a tiny, tiny little light, this is *mamash* the power of the *Aibershter* Himself. What does it mean exactly, \"from there\"? The power that is down here is *mamash* the power from there. Even in a kindergarten, you are still getting the whole power of the teacher.",
+              "text": "the contraction and the spreading forth in it also come *davka* from there: the contraction and the spreading forth in the *Kav* come from the contraction and spreading forth before, in the *Atzmus*. Even all the way down here, where there is a total *tzimtzum* and a tiny, tiny little light, this is *mamash* the power of the *Aibershter* Himself. What does it mean exactly, \"from there\"? The power that is down here is *mamash* the power from there. Even in a kindergarten, you are still getting the whole power of the teacher.",
               "audio": [
                 {
                   "lecture": "014 Tape022-Side1-Ch15&16.mp3",

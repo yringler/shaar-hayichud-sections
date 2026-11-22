@@ -34,12 +34,6 @@
       "line": "2yfsgzou"
     },
     {
-      "term": "ila v'alul",
-      "he": "עילה ועלול",
-      "gloss": "cause and effect; the way chachma comes down from world to world",
-      "line": "2yfsgzou"
-    },
-    {
       "term": "memutzaim",
       "he": "ממוצעים",
       "gloss": "intermediaries; the steps in between, which in general \"don't really count\"",
@@ -101,44 +95,6 @@
             "pieex5vf",
             "neo5p3c2"
           ],
-          "phrases": [
-            {
-              "he": "(ח) וכך על דרך זה שבבחינת הכתר יש יחוד כל פרטיהם אל הכלל",
-              "en": "(8) And in this same way: just as in *Keser* there is a unification of all its particulars with the whole,"
-            },
-            {
-              "he": "עד בחינת הרצון הפשוט שבעצמיות אור אין סוף ממש כנזכר לעיל,",
-              "en": "up to the simple will in the very Essence of the *Or Ein Sof*, as explained above,"
-            },
-            {
-              "he": "כך יוכל האדם להתבונן גם בבחינת החכמה שבכל עולם מראש לסוף",
-              "en": "so a person can contemplate *chachma* too, in every world, from beginning to end."
-            },
-            {
-              "he": "והוא מה שכתוב בראשית ברא כו'",
-              "en": "This is what is written, \"In the beginning He created,\""
-            },
-            {
-              "he": "ותרגום ירושלמי בחוכמתא",
-              "en": "and the Jerusalem Targum renders it \"with wisdom,\""
-            },
-            {
-              "he": "ואונקלוס תירגם בקדמין ברא",
-              "en": "and Onkelos rendered \"with the first He created\";"
-            },
-            {
-              "he": "שהוא בחינת הכתר שנקרא קדמון,",
-              "en": "that is *Keser*, which is called *Kadmon* (preceding),"
-            },
-            {
-              "he": "להיותו בבחינת העצמיות שמקודם לחכמה",
-              "en": "since it is of the essence, which precedes *chachma*;"
-            },
-            {
-              "he": "כי החכמה מאין תמצא, לא בחינת אין ממש, מה שאין כן הרצון כו'",
-              "en": "for \"*chachma* is found from *ayin* (nothing),\" not *ayin* itself, unlike the will."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording",
@@ -152,32 +108,6 @@
             "3cjyt2j2",
             "c5pkaijh",
             "gvf5twag"
-          ],
-          "phrases": [
-            {
-              "he": "אבל כמו שהרצון נתצמצם מן העצמות עד שמתלבש בעשיה",
-              "en": "But just as the will is contracted from the Essence until it is dressed in *Asiya*,"
-            },
-            {
-              "he": "להיות כל אשר חפץ עשה כנזכר לעיל",
-              "en": "so that \"all that He desired He did,\" as explained above,"
-            },
-            {
-              "he": "כך בחינת החכמה מתצמצמת מן העצמות",
-              "en": "so *chachma* is contracted from the Essence,"
-            },
-            {
-              "he": "שנקרא שם חכמה הקדומה או חכמה הפשוטה באחדות פשוט כו'",
-              "en": "where it is called the primordial *chachma*, or the simple *chachma*, in a simple oneness;"
-            },
-            {
-              "he": "ומשם נמשך מלמעלה למטה בכל עולם ועולם דאבי''ע עד בחינת חכמה שבמלכות דמלכות דעשייה",
-              "en": "and from there it is drawn from above to below in each and every world of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*, down to *chachma* of *Malchus* of *Malchus* of *Asiya*,"
-            },
-            {
-              "he": "שעל זה נאמר כולם בחכמה עשית",
-              "en": "of which it is said, \"You made them all with wisdom.\""
-            }
           ],
           "blocks": [],
           "skip": {
@@ -202,46 +132,44 @@
           ],
           "phrases": [
             {
-              "he": "כי כמו שכתוב בראשית, בחכמתא ברא,",
-              "en": "For just as it is written, \"In the beginning,\" [rendered] \"with wisdom He created,\""
+              "he": "כי כמו שכתוב בראשית, בחכמתא ברא,"
             },
             {
-              "he": "כך בחכמה יצר ועשה",
-              "en": "so with *chachma* He formed and made;"
+              "he": "כך בחכמה יצר ועשה"
             },
             {
-              "he": "כמו ברצון, שברא ויצר ועשה הכל ברצון אחד",
-              "en": "as with the will: He created, formed and made everything with one will,"
+              "he": "כמו ברצון, שברא ויצר ועשה הכל ברצון אחד"
             },
             {
-              "he": "רק שנשתלשל וירד מעולם הבריאה לעולם היצירה",
-              "en": "only it came down by stages and descended from the world of *Beriya* to the world of *Yetzira*"
+              "he": "רק שנשתלשל וירד מעולם הבריאה לעולם היצירה"
             },
             {
-              "he": "ומעולם היצירה לעשיה בירידת מדריגות עילה ועלול",
-              "en": "and from the world of *Yetzira* to *Asiya*, in a descent of levels by *ila v'alul* (cause and effect),"
+              "he": "ומעולם היצירה לעשיה בירידת מדריגות עילה ועלול"
             },
             {
-              "he": "כמו ממלכות דכתר דבריאה נעשה כתר ליצירה כו'",
-              "en": "as *Malchus* of *Keser* of *Beriya* becomes *Keser* of *Yetzira*, and so on."
+              "he": "כמו ממלכות דכתר דבריאה נעשה כתר ליצירה כו'"
             },
             {
-              "he": "כך בחכמה אחד ברא ויצר ועשה",
-              "en": "So with one *chachma* He created, formed and made,"
+              "he": "כך בחכמה אחד ברא ויצר ועשה"
             },
             {
-              "he": "רק שירד ונשתלשל מבריאה ליצירה כו'",
-              "en": "only it came down by stages from *Beriya* to *Yetzira*,"
+              "he": "רק שירד ונשתלשל מבריאה ליצירה כו'"
             },
             {
               "he": "דהיינו שנמשך מבחינת מלכות שבחכמה דבריאה לחכמה שבמלכות דיצירה",
-              "en": "that is, it is drawn from *Malchus* of *chachma* of *Beriya* to *chachma* of *Malchus* of *Yetzira*."
+              "en": "*Malchus* of *chachma* becomes *chachma* of *Malchus* of *Yetzira*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [528, 536],
+                "start": 285.35,
+                "end": 295.18
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Just as He created, formed and made everything with one will, so He created, formed and made with one *chachma*. It only comes down through a *hishtalshelus* (chain of descent) from *Beriya* to *Yetzira* to *Asiya*, level by level, by cause and effect: **as *Malchus* of *Keser* of *Beriya* becomes *Keser* of *Yetzira*.** And yet it is one *chachma*.",
+              "text": "Just as He created, formed and made everything with one will, so He created, formed and made with one *chachma*. It only comes down through a *hishtalshelus* (chain of descent) from *Beriya* to *Yetzira* to *Asiya*, level by level, by cause and effect: as *Malchus* of *Keser* of *Beriya* becomes *Keser* of *Yetzira*. And yet it is one *chachma*.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -291,7 +219,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**it is drawn from *Malchus* of *chachma* of *Beriya* to *chachma* of *Malchus* of *Yetzira***, and in the middle there are a whole bunch more levels: from *Malchus* of *chachma* of *Beriya* to *chachma* of *Malchus* of *Beriya*, down to *chachma* of *Malchus* of *Malchus*, which becomes *chachma* of *Keser* of *Yetzira*, and all the way down, finally, to *chachma* of *Malchus* of *Yetzira*.",
+              "text": "it is drawn from *Malchus* of *chachma* of *Beriya* to *chachma* of *Malchus* of *Yetzira*, and in the middle there are a whole bunch more levels: from *Malchus* of *chachma* of *Beriya* to *chachma* of *Malchus* of *Beriya*, down to *chachma* of *Malchus* of *Malchus*, which becomes *chachma* of *Keser* of *Yetzira*, and all the way down, finally, to *chachma* of *Malchus* of *Yetzira*.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -309,30 +237,46 @@
           ],
           "phrases": [
             {
-              "he": "ועל דרך זה מיצירה לעשיה",
-              "en": "And in this way from *Yetzira* to *Asiya*,"
+              "he": "ועל דרך זה מיצירה לעשיה"
             },
             {
               "he": "עד חכמה שבמלכות דעשיה",
-              "en": "down to *chachma* of *Malchus* of *Asiya*,"
+              "en": "the *chachma* of the actual making of the thing.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [609, 618],
+                "start": 336.4,
+                "end": 338.8
+              }
             },
             {
               "he": "שעל זה אמר כולם בחכמה עשית,",
-              "en": "of which it says, \"You made them all with a *chachma*,\""
+              "en": "You made them all with a *chachma*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [625, 631],
+                "start": 343.64,
+                "end": 345.02
+              }
             },
             {
               "he": "וכן יהו״ה בחכמה יסד ארץ",
-              "en": "and so, \"*Havaya* with *chachma* founded the earth,\""
+              "en": "With *chachma* He actually made this actual earth.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [940, 947],
+                "start": 476.94,
+                "end": 479.96
+              }
             },
             {
-              "he": "וכהאי גוונא",
-              "en": "and the like."
+              "he": "וכהאי גוונא"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**down to *chachma* of *Malchus* of *Asiya***: the *chachma* of the actual making of the thing. Of this it says **\"You made them all with a *chachma*.\"**",
+              "text": "down to *chachma* of *Malchus* of *Asiya*: the *chachma* of the actual making of the thing. Of this it says **\"You made them all with a *chachma*.\"**",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -370,7 +314,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**\"*Havaya* with *chachma* founded the earth\"**: with *chachma* He actually made this actual earth. That means the whole *chachma* of how plants work, how animals work and how everything is put together.",
+              "text": "\"*Havaya* with *chachma* founded the earth\": with *chachma* He actually made this actual earth. That means the whole *chachma* of how plants work, how animals work and how everything is put together.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -388,30 +332,53 @@
           ],
           "phrases": [
             {
-              "he": "(והגם שדרך פרט הרי משתלשל מבחינת מלכות דמלכות דבריאה",
-              "en": "(And although, in the particular way, it comes down by stages from *Malchus* of *Malchus* of *Beriya*"
+              "he": "(והגם שדרך פרט הרי משתלשל מבחינת מלכות דמלכות דבריאה להיות כתר ליצירה",
+              "en": "Really it goes from *chachma* of *Beriya*, is *mishtalshel* to *Malchus* of *Beriya*, and from *Malchus* of *Beriya* it's *mishtalshel* to become *Keser* of *Yetzira*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [986, 1011],
+                "start": 501.36,
+                "end": 512.18
+              }
             },
             {
-              "he": "להיות כתר ליצירה",
-              "en": "to be *Keser* of *Yetzira*,"
+              "he": "והחכמה דיצירה ממלכות דכתר דיצירה,",
+              "en": "And then the *chachma* of *Yetzira* comes from *Malchus* of *Keser* of *Yetzira*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1012, 1024],
+                "start": 513.52,
+                "end": 517.96
+              }
             },
             {
-              "he": "והחכמה דיצירה ממלכות דכתר דיצירה, מכל מקום",
-              "en": "and the *chachma* of *Yetzira* from *Malchus* of *Keser* of *Yetzira*, nevertheless,"
+              "he": "מכל מקום",
+              "en": "But nonetheless,",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1046, 1047],
+                "start": 529.84,
+                "end": 530.56
+              }
             },
             {
-              "he": "דרך כלל כל בחינת עילה ועלול מעולם לעולם נמשך מזה לזה",
-              "en": "in the general way, every [step of] cause and effect from world to world is drawn from one to the next"
+              "he": "דרך כלל כל בחינת עילה ועלול מעולם לעולם"
             },
             {
-              "he": "שלא על ידי צמצום רבוי הממוצעים שביניהם",
-              "en": "not through the contraction of the many *memutzaim* (intermediaries) between them."
+              "he": "נמשך מזה לזה שלא על ידי צמצום רבוי הממוצעים שביניהם",
+              "en": "it really comes without *hishtalshelus*; the *memutzaim* don't really count.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1241, 1252],
+                "start": 607.38,
+                "end": 613.3
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "In the particular way, the *chachma* of *Beriya* comes down to *Malchus* of *Beriya*, and *Malchus* of *Beriya* comes down to become *Keser* of *Yetzira*; then the *chachma* of *Yetzira* comes from *Malchus* of *Keser* of *Yetzira*. **nevertheless, in the general way**, from world to world, it is drawn **not through the contraction of the many *memutzaim* (intermediaries) between them.**",
+              "text": "In the particular way, the *chachma* of *Beriya* comes down to *Malchus* of *Beriya*, and *Malchus* of *Beriya* comes down to become *Keser* of *Yetzira*; then the *chachma* of *Yetzira* comes from *Malchus* of *Keser* of *Yetzira*. nevertheless, in the general way, from world to world, it is drawn not through the contraction of the many *memutzaim* (intermediaries) between them.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -453,46 +420,37 @@
           ],
           "phrases": [
             {
-              "he": "כמו ויהו״ה נתן חכמה לשלמה, שהיה בעולם העשיה",
-              "en": "As, \"And *Havaya* gave *chachma* to Shlomo,\" who was in the world of *Asiya*:"
+              "he": "כמו ויהו״ה נתן חכמה לשלמה, שהיה בעולם העשיה"
             },
             {
-              "he": "הרי נמשך השפעה זו מחכמה שבעצמיות אור אין סוף",
-              "en": "this influence is drawn from the *chachma* in the very Essence of the *Or Ein Sof*"
+              "he": "הרי נמשך השפעה זו מחכמה שבעצמיות אור אין סוף"
             },
             {
-              "he": "לחכמה דאדם קדמון",
-              "en": "to the *chachma* of *Adam Kadmon*,"
+              "he": "לחכמה דאדם קדמון"
             },
             {
-              "he": "ומחכמה דאדם קדמון לחכמה סתימאה דעתיק יומין ואריך אנפין",
-              "en": "and from the *chachma* of *Adam Kadmon* to the hidden *chachma* of *Atik Yomin* and *Arich Anpin*,"
+              "he": "ומחכמה דאדם קדמון לחכמה סתימאה דעתיק יומין ואריך אנפין"
             },
             {
-              "he": "ומשם לאור אבא דאצילות",
-              "en": "and from there to the light of *Abba* of *Atzilus*,"
+              "he": "ומשם לאור אבא דאצילות"
             },
             {
-              "he": "עד בחינת חכמה שבמלכות דאצילות",
-              "en": "down to *chachma* of *Malchus* of *Atzilus*,"
+              "he": "עד בחינת חכמה שבמלכות דאצילות"
             },
             {
-              "he": "ומשם לחכמה שבמלכות דבריאה",
-              "en": "and from there to *chachma* of *Malchus* of *Beriya*;"
+              "he": "ומשם לחכמה שבמלכות דבריאה"
             },
             {
-              "he": "וכן על דרך זה מבריאה ליצירה ומיצירה לעשיה,",
-              "en": "and so in this way from *Beriya* to *Yetzira* and from *Yetzira* to *Asiya*,"
+              "he": "וכן על דרך זה מבריאה ליצירה ומיצירה לעשיה,"
             },
             {
-              "he": "עד שבא האור ושפע חכמה אלהי״ת הזאת בנשמת שלמה מחכמה שבמלכות דעשיה",
-              "en": "until this light and flow of G-dly *chachma* came into Shlomo's soul from *chachma* of *Malchus* of *Asiya*."
+              "he": "עד שבא האור ושפע חכמה אלהי״ת הזאת בנשמת שלמה מחכמה שבמלכות דעשיה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"And *Havaya* gave *chachma* to Shlomo,\" who was in the world of *Asiya*.** His wisdom came from the *chachma* in the Essence of the *Or Ein Sof*, through *Adam Kadmon*, *Atik* and *Arich*, *Abba* of *Atzilus*, and on down, world by world, to *chachma* of *Malchus* of *Asiya*, and from there into his soul. It is all *tzimtzum*. But the *chachma* nonetheless came from upstairs. It is all connected.",
+              "text": "\"And *Havaya* gave *chachma* to Shlomo,\" who was in the world of *Asiya*. His wisdom came from the *chachma* in the Essence of the *Or Ein Sof*, through *Adam Kadmon*, *Atik* and *Arich*, *Abba* of *Atzilus*, and on down, world by world, to *chachma* of *Malchus* of *Asiya*, and from there into his soul. It is all *tzimtzum*. But the *chachma* nonetheless came from upstairs. It is all connected.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -510,30 +468,25 @@
           ],
           "phrases": [
             {
-              "he": "וכן בהיכל קדש הקדשים שבבית המקדש",
-              "en": "So too in the chamber of the Holy of Holies in the Temple:"
+              "he": "וכן בהיכל קדש הקדשים שבבית המקדש"
             },
             {
-              "he": "האיר מכתר וחכמה שבעצמיות",
-              "en": "it shone from the *Keser* and *chachma* in the Essence"
+              "he": "האיר מכתר וחכמה שבעצמיות"
             },
             {
-              "he": "עד בחינת כתר וחכמה שבהיכל קדש קדשים דעשיה",
-              "en": "down to the *Keser* and *chachma* of the Holy of Holies of *Asiya*;"
+              "he": "עד בחינת כתר וחכמה שבהיכל קדש קדשים דעשיה"
             },
             {
-              "he": "בלוחות וארון גשמיים שהיו עומדים בהיכל קדש קדשים הבנוי למטה,",
-              "en": "in the physical Tablets and Ark that stood in the Holy of Holies built below"
+              "he": "בלוחות וארון גשמיים שהיו עומדים בהיכל קדש קדשים הבנוי למטה,"
             },
             {
-              "he": "היה שורה מכתר וחכמה דהיכל קדש קדשים דעשיה הרוחניות כו'",
-              "en": "there rested [the light] from the *Keser* and *chachma* of the spiritual Holy of Holies of *Asiya*."
+              "he": "היה שורה מכתר וחכמה דהיכל קדש קדשים דעשיה הרוחניות כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Here he gives a slightly different *shita* (view) than the *Tanya*. In the *Tanya* it says that the Holy of Holies had its light directly from *Malchus* of *Atzilus* and *Beriya*, without being dressed in *Yetzira* and *Asiya*, with no *hishtalshelus* down to the spiritual *Asiya*. You could say that the *Tanya* is talking about the second Temple. But that will not work, because here he says **in the physical Tablets and Ark**, and those were only in the first Temple. So you have to say it is both ways: it really was without *hishtalshelus*, and yet it did come down into an actual physical Ark, which came out of *Malchus* of *Asiya*.",
+              "text": "Here he gives a slightly different *shita* (view) than the *Tanya*. In the *Tanya* it says that the Holy of Holies had its light directly from *Malchus* of *Atzilus* and *Beriya*, without being dressed in *Yetzira* and *Asiya*, with no *hishtalshelus* down to the spiritual *Asiya*. You could say that the *Tanya* is talking about the second Temple. But that will not work, because here he says in the physical Tablets and Ark, and those were only in the first Temple. So you have to say it is both ways: it really was without *hishtalshelus*, and yet it did come down into an actual physical Ark, which came out of *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -551,22 +504,26 @@
           ],
           "phrases": [
             {
-              "he": "(וכך אנו מבקשים, אתה חונן לאדם דעת כו'",
-              "en": "(And so we ask: \"You graciously give man *daas*,\" and so on,"
+              "he": "(וכך אנו מבקשים, אתה חונן לאדם דעת כו'"
             },
             {
               "he": "וחננו מאתך דוקא כו'",
-              "en": "and \"grant us from You,\" *davka*, and so on;"
+              "en": "Give us *daas* from Your *daas*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1559, 1564],
+                "start": 817.57,
+                "end": 821.32
+              }
             },
             {
-              "he": "ודי למבין)",
-              "en": "and this is enough for one who understands.)"
+              "he": "ודי למבין)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"grant us from You.\"** Why would it say that? Why does it not say: give us *daas* from the *daas* of *Malchus* of *Asiya*? It says: give us *daas* from Your *daas*.",
+              "text": "\"grant us from You.\" Why would it say that? Why does it not say: give us *daas* from the *daas* of *Malchus* of *Asiya*? It says: give us *daas* from Your *daas*.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -592,38 +549,41 @@
           ],
           "phrases": [
             {
-              "he": "(ועל דרך משל הנה יובן באדם התחתון,",
-              "en": "(And by way of analogy it is understood in man below:"
+              "he": "(ועל דרך משל הנה יובן באדם התחתון,"
             },
             {
-              "he": "כמו שחכמתו העצמיות ההיולית",
-              "en": "how his essential, *hiyuli* (raw, potential) *chachma*"
+              "he": "כמו שחכמתו העצמיות ההיולית"
             },
             {
-              "he": "כולל כל הסתעפות התפשטות אור חכמתו,",
-              "en": "includes all the branching out of the spreading of the light of his *chachma*,"
+              "he": "כולל כל הסתעפות התפשטות אור חכמתו,"
             },
             {
-              "he": "עד לחוץ מעצמות שלו לגמרי",
-              "en": "until it is entirely outside his essence;"
+              "he": "עד לחוץ מעצמות שלו לגמרי"
             },
             {
-              "he": "והוא עד שכל המלובש בעשיה גשמית, נבדלת לגמרי",
-              "en": "that is, down to the intellect dressed in physical action, which is entirely separate."
+              "he": "והוא עד שכל המלובש בעשיה גשמית,",
+              "en": "Which is like when he's making an actual thing: the *sechel* is *mluvash* in the power of his hands.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1655, 1673],
+                "start": 863.98,
+                "end": 869.54
+              }
             },
             {
-              "he": "ואין הפרש אצלו בין התפשטות חכמתו העצמיות בעצם שכלו להשכיל עיון שכלי,",
-              "en": "And there is no difference for him between the spreading of his essential *chachma* in the essence of his mind, to grasp an intellectual *iyun* (analysis),"
+              "he": "נבדלת לגמרי"
             },
             {
-              "he": "להתפשטות שלה בעשיה נבדלת",
-              "en": "and its spreading into a separate action."
+              "he": "ואין הפרש אצלו בין התפשטות חכמתו העצמיות בעצם שכלו להשכיל עיון שכלי,"
+            },
+            {
+              "he": "להתפשטות שלה בעשיה נבדלת"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**by way of analogy it is understood in man below.** When a man is making something, it is really the *chachma* in his brain. It is the same as here: \"dead dogs don't bark.\" Go and take his brain out of his head, and you will see that his hands will not be able to make that beautiful thing anymore.",
+              "text": "by way of analogy it is understood in man below. When a man is making something, it is really the *chachma* in his brain. It is the same as here: \"dead dogs don't bark.\" Go and take his brain out of his head, and you will see that his hands will not be able to make that beautiful thing anymore.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -635,7 +595,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**down to the intellect dressed in physical action**: when he is making an actual thing, the *sechel* is dressed in the power of his hands. But nonetheless **there is no difference for him**. The same brain is being used.",
+              "text": "down to the intellect dressed in physical action: when he is making an actual thing, the *sechel* is dressed in the power of his hands. But nonetheless there is no difference for him. The same brain is being used.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -669,37 +629,65 @@
           "phrases": [
             {
               "he": "שהכל נקרא בשם התחכמות אחד,",
-              "en": "For it is all called by the name of one *hischakmus* (being smart):"
+              "en": "It's all called \"he's a smart guy.\"",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1872, 1878],
+                "start": 968.56,
+                "end": 970.72
+              }
             },
             {
               "he": "אלא שזה ברוחניות ובעצמותו יותר,",
-              "en": "only this one is more spiritual and more inside himself,"
+              "en": "So this one is more a *ruchnius* thing and more inside of himself.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1885, 1897],
+                "start": 974.94,
+                "end": 978.92
+              }
             },
             {
               "he": "ובעשיה בא בדבר נבדל",
-              "en": "and in action it comes into a separate thing;"
+              "en": "In *Asiya*, it comes into a separate thing.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1902, 1909],
+                "start": 982.18,
+                "end": 984.08
+              }
             },
             {
               "he": "עד שלגבי בחינת העצמות ממש הרי הכל רק התחכמות אחד,",
-              "en": "so that as far as his own self is concerned, it is all only one *hischakmus*;"
+              "en": "As far as he's concerned, it's all one *hischakmus*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1920, 1928],
+                "start": 990.46,
+                "end": 994.64
+              }
             },
             {
-              "he": "רק שהולכת ומתפשטת מעיון שכלו למדותיו ולמחשבתו,",
-              "en": "only it goes and spreads from the analysis of his mind to his *middos* and his thought,"
+              "he": "רק שהולכת ומתפשטת מעיון שכלו למדותיו ולמחשבתו,"
             },
             {
-              "he": "עד שעושה ממש בחכמתו זו",
-              "en": "until he actually acts with this *chachma* of his,"
+              "he": "עד שעושה ממש בחכמתו זו"
             },
             {
               "he": "כמו בהתחכמות בעסק משא ומתן כו')",
-              "en": "as in being smart in business, and so on.)"
+              "en": "Like when he tries to be a smart guy with a business.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [1949, 1960],
+                "start": 1008.87,
+                "end": 1016.34
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**it is all called by the name of one *hischakmus***: it is all called \"he's a smart guy.\" **only this one is more spiritual and more inside himself, and in action it comes into a separate thing.** As far as he himself is concerned, it is all one *hischakmus*, spreading from his mind to his *middos* and thought until he acts with it. **as in being smart in business**: when he tries to be a smart guy in business, it is really the same smartness.",
+              "text": "it is all called by the name of one *hischakmus*: it is all called \"he's a smart guy.\" only this one is more spiritual and more inside himself, and in action it comes into a separate thing. As far as he himself is concerned, it is all one *hischakmus*, spreading from his mind to his *middos* and thought until he acts with it. as in being smart in business: when he tries to be a smart guy in business, it is really the same smartness.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -780,34 +768,28 @@
           ],
           "phrases": [
             {
-              "he": "וכמו ויאמר אלהי״ם יהי אור שבדיבור,",
-              "en": "And as \"And *Elokim* said, Let there be light,\" which is in speech,"
+              "he": "וכמו ויאמר אלהי״ם יהי אור שבדיבור,"
             },
             {
-              "he": "ובא לידי מעשה כמו שכתוב ויהי אור",
-              "en": "and it came into action, as it says, \"And there was light\":"
+              "he": "ובא לידי מעשה כמו שכתוב ויהי אור"
             },
             {
-              "he": "הרי התחלתו מבחינת חכמתו העצמית שבעצמיות המאציל",
-              "en": "its beginning is from His essential *chachma* in the very Essence of the Emanator,"
+              "he": "הרי התחלתו מבחינת חכמתו העצמית שבעצמיות המאציל"
             },
             {
-              "he": "שהאציל האור ואחר כך ברא ויצר ועשה כו'",
-              "en": "who emanated the light and afterwards created, formed and made."
+              "he": "שהאציל האור ואחר כך ברא ויצר ועשה כו'"
             },
             {
-              "he": "וכך הוא בכל פרטי התהוות הנאצלים והנבראים והנוצרים והמעשים מעצמות האין סוף כו'",
-              "en": "And so it is in all the particulars of the coming into being of what is emanated, created, formed and made, from the Essence of the *Ein Sof*:"
+              "he": "וכך הוא בכל פרטי התהוות הנאצלים והנבראים והנוצרים והמעשים מעצמות האין סוף כו'"
             },
             {
-              "he": "כולם מיוחדים ומקושרים כל פרטיהם בעצמיות אור אין סוף שבאבי''ע",
-              "en": "they are all united and bound, in all their particulars, with the very Essence of the *Or Ein Sof* in *Atzilus*, *Beriya*, *Yetzira* and *Asiya*."
+              "he": "כולם מיוחדים ומקושרים כל פרטיהם בעצמיות אור אין סוף שבאבי''ע"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"Let there be light,\"** and \"there was light\": the speech came into action, and **its beginning is from His essential *chachma* in the very Essence of the Emanator.** (In the reading he notices that a *vav* is missing in his copy here.) And the same as with will and *chachma*, it is the same with all the *middos*: **they are all united and bound** with the Essence.",
+              "text": "\"Let there be light,\" and \"there was light\": the speech came into action, and its beginning is from His essential *chachma* in the very Essence of the Emanator. (In the reading he notices that a *vav* is missing in his copy here.) And the same as with will and *chachma*, it is the same with all the *middos*: they are all united and bound with the Essence.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -826,26 +808,26 @@
           ],
           "phrases": [
             {
-              "he": "ואין הפרש לגבי עצמו",
-              "en": "And there is no difference as far as He is concerned"
+              "he": "ואין הפרש לגבי עצמו בין ראשון לאחרון כלל",
+              "en": "As far as He's concerned... by Him it makes no difference, an angel or a worm.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [2533, 2552],
+                "start": 1261.7,
+                "end": 1268.96
+              }
             },
             {
-              "he": "בין ראשון לאחרון כלל",
-              "en": "between first and last at all."
+              "he": "ואם כן מה שכתוב אני ראשון ואני אחרון"
             },
             {
-              "he": "ואם כן מה שכתוב אני ראשון ואני אחרון",
-              "en": "If so, what is written, \"I am first and I am last,\""
-            },
-            {
-              "he": "קאי גם בבחינת החכמה שבראש האצילות עד חכמה שבסוף העשיה כו'",
-              "en": "applies also to the *chachma* at the head of *Atzilus* down to the *chachma* at the end of *Asiya*."
+              "he": "קאי גם בבחינת החכמה שבראש האצילות עד חכמה שבסוף העשיה כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**there is no difference as far as He is concerned between first and last at all.** By Him it makes no difference: an angel or a worm, the same thing.",
+              "text": "there is no difference as far as He is concerned between first and last at all. By Him it makes no difference: an angel or a worm, the same thing.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -884,7 +866,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Or the clouds, or the little flower there being crushed by the horse. As far as he is concerned it is all the same thing: \"By me, to make the worm and to make the king is exactly the same thing.\" So **there is no difference as far as He is concerned between first and last at all**, and **\"I am first and I am last\"** applies also to the *chachma* at the head of *Atzilus* down to the *chachma* at the end of *Asiya*.",
+              "text": "Or the clouds, or the little flower there being crushed by the horse. As far as he is concerned it is all the same thing: \"By me, to make the worm and to make the king is exactly the same thing.\" So there is no difference as far as He is concerned between first and last at all, and \"I am first and I am last\" applies also to the *chachma* at the head of *Atzilus* down to the *chachma* at the end of *Asiya*.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -912,49 +894,66 @@
           "phrases": [
             {
               "he": "וכן יובן על דרך זה",
-              "en": "And in the same way this is understood"
+              "en": "And in the same way this is understood",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3025, 3032],
+                "start": 1463.54,
+                "end": 1465.62
+              }
             },
             {
-              "he": "דרך פרט בחינת יחוד כללי בבחינת המדות",
-              "en": "in the particular way: the general unification in the *middos*"
+              "he": "דרך פרט בחינת יחוד כללי"
             },
             {
-              "he": "ומחשבה דבור ומעשה שבכל עולם מד' עולמות דאבי''ע",
-              "en": "and thought, speech and action in every one of the four worlds of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*:"
+              "he": "בבחינת המדות ומחשבה דבור ומעשה",
+              "en": "and the same applies to any of the *middos* and even the *levushim*, *machshava*, *dibur* and *maaseh*,",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3048, 3063],
+                "start": 1471.7,
+                "end": 1479.3
+              }
             },
             {
-              "he": "שמדות דאצילות מתלבשים במדות דבריאה",
-              "en": "the *middos* of *Atzilus* are dressed in the *middos* of *Beriya*,"
+              "he": "שבכל עולם מד' עולמות דאבי''ע"
             },
             {
-              "he": "ומדות דבריאה במדות דיצירה ומדות דיצירה במדות דעשיה,",
-              "en": "and the *middos* of *Beriya* in the *middos* of *Yetzira*, and the *middos* of *Yetzira* in the *middos* of *Asiya*,"
+              "he": "שמדות דאצילות מתלבשים במדות דבריאה"
             },
             {
-              "he": "עד שבחינת ו׳ קצוות דעשיה נעוץ בתחלת הכל,",
-              "en": "until the six extremities of *Asiya* are wedged into the beginning of all,"
+              "he": "ומדות דבריאה במדות דיצירה ומדות דיצירה במדות דעשיה,"
             },
             {
-              "he": "במדותיו העצמיים שלפני האצילות",
-              "en": "in His essential *middos* before *Atzilus*,"
+              "he": "עד שבחינת ו׳ קצוות דעשיה נעוץ בתחלת הכל,"
             },
             {
-              "he": "שעל זה אמר המתנשא מימות עולם כידוע",
-              "en": "of which it says, \"Exalted from the days of the world,\" as is known."
+              "he": "במדותיו העצמיים שלפני האצילות"
             },
             {
-              "he": "והם בחינת ז׳ תחתונים דעתיק יומין עד ז׳ תחתונים דאדם קדמון",
-              "en": "These are the seven lower [*sefiros*] of *Atik Yomin*, up to the seven lower of *Adam Kadmon*,"
+              "he": "שעל זה אמר המתנשא מימות עולם כידוע"
             },
             {
-              "he": "עד מדות שבאור אין סוף עצמו הגנוזות בעצמות שלו ממש",
-              "en": "up to the *middos* in the *Or Ein Sof* itself, hidden in His very Essence."
+              "he": "והם בחינת ז׳ תחתונים דעתיק יומין",
+              "en": "the seven *middos* of *Atik*,",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3133, 3137],
+                "start": 1612.18,
+                "end": 1613.68
+              }
+            },
+            {
+              "he": "עד ז׳ תחתונים דאדם קדמון"
+            },
+            {
+              "he": "עד מדות שבאור אין סוף עצמו הגנוזות בעצמות שלו ממש"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And in the same way** it is understood with the *middos*, and even with the garments, thought, speech and action, in each of the four worlds. The *middos* of *Atzilus* are dressed in those of *Beriya*, and so on down, until the lowest extremity of *Asiya* is wedged into the beginning of all, **in His essential *middos* before *Atzilus***: in the actual, as we said, self-*chesed*. These are **the seven lower [*sefiros*] of *Atik Yomin***, the seven *middos* of *Atik*, up to the seven of *Adam Kadmon*, up to the *middos* hidden in the Essence itself.",
+              "text": "**And in the same way** it is understood with the *middos*, and even with the garments, thought, speech and action, in each of the four worlds. The *middos* of *Atzilus* are dressed in those of *Beriya*, and so on down, until the lowest extremity of *Asiya* is wedged into the beginning of all, in His essential *middos* before *Atzilus*: in the actual, as we said, self-*chesed*. These are the seven lower [*sefiros*] of *Atik Yomin*, the seven *middos* of *Atik*, up to the seven of *Adam Kadmon*, up to the *middos* hidden in the Essence itself.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -974,30 +973,46 @@
           ],
           "phrases": [
             {
-              "he": "כמו בחינת חסד שבאור אין סוף עצמו,",
-              "en": "Like the *chesed* in the *Or Ein Sof* itself,"
+              "he": "כמו בחינת חסד שבאור אין סוף עצמו,"
             },
             {
               "he": "שעל זה אמר חסדי יהו״ה כי לא תמנו כו'",
-              "en": "of which it says, \"The kindnesses of *Havaya*, that we have not been consumed,\""
+              "en": "It's the *chesed* of the *Aibershter*, that He had mercy on us down here in physical.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3165, 3180],
+                "start": 1628.03,
+                "end": 1634.05
+              }
             },
             {
-              "he": "בבחינת אין סוף ממש",
-              "en": "as the *Ein Sof* itself;"
+              "he": "בבחינת אין סוף ממש"
             },
             {
               "he": "אנו אומרים יהי חסדך זה עלינו ממש",
-              "en": "[yet] we say, \"May this kindness of Yours be upon us,\" *mamash*,"
+              "en": "Your *chesed* should be on us,",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3196, 3201],
+                "start": 1644.32,
+                "end": 1645.6
+              }
             },
             {
               "he": "בבחינת חסד מצומצם שבמדות דמלכות דמלכות דעשיה שמאיר בעולם הזה כו'",
-              "en": "in a contracted *chesed* in the *middos* of *Malchus* of *Malchus* of *Asiya*, which shines in this world."
+              "en": "to give us actual help.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3212, 3216],
+                "start": 1651.36,
+                "end": 1653.75
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"The kindnesses of *Havaya*, that we have not been consumed\"**: it is the *chesed* of the *Aibershter*, that He had mercy on us down here in the physical, and it is the *Ein Sof* itself. And we say **\"May this kindness of Yours be upon us\"**: Your *chesed* should be on us, as a contracted *chesed* of *Malchus* of *Malchus* of *Asiya*, **which shines in this world**, to give us actual help.",
+              "text": "\"The kindnesses of *Havaya*, that we have not been consumed\": it is the *chesed* of the *Aibershter*, that He had mercy on us down here in the physical, and it is the *Ein Sof* itself. And we say \"May this kindness of Yours be upon us\": Your *chesed* should be on us, as a contracted *chesed* of *Malchus* of *Malchus* of *Asiya*, which shines in this world, to give us actual help.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -1018,38 +1033,42 @@
           ],
           "phrases": [
             {
-              "he": "וכן מבחינת מחשבה שבעצמותו נמשך עד בחינת מחשבה דמלכות דעשיה,",
-              "en": "So too, from the thought in His Essence it is drawn down to the thought of *Malchus* of *Asiya*,"
-            },
-            {
-              "he": "אשר חושב לעשות בפועל ממש",
-              "en": "which thinks to do, in actual deed."
+              "he": "וכן מבחינת מחשבה שבעצמותו נמשך עד בחינת מחשבה דמלכות דעשיה, אשר חושב לעשות בפועל ממש",
+              "en": "From His *machshava* in *Atzmus* it goes all the way to the thought to do something in actuality.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3233, 3249],
+                "start": 1664.5,
+                "end": 1670.16
+              }
             },
             {
               "he": "וכן בדבור ומעשה כו',",
-              "en": "So too in speech and action."
+              "en": "And this is all even in *dibur* and *maaseh*.",
+              "audio": {
+                "lecture": "056 Tape013-Side1-Ch8.mp3",
+                "words": [3253, 3260],
+                "start": 1672.32,
+                "end": 1674.26
+              }
             },
             {
-              "he": "כי כמו שכל אשר חפץ ברצון העצמות עושה,",
-              "en": "For just as all that He desires in the will of the Essence, He does,"
+              "he": "כי כמו שכל אשר חפץ ברצון העצמות עושה,"
             },
             {
-              "he": "כך כל אשר חפץ ברצונו העצמי חושב כו'",
-              "en": "so all that He desires in His essential will, He thinks;"
+              "he": "כך כל אשר חפץ ברצונו העצמי חושב כו'"
             },
             {
-              "he": "רק שיורד ונמשך בהשתלשלות עד חפצו ורצונו ושכלו ומחשבתו בעשיה בפועל ממש כו'",
-              "en": "only it comes down and is drawn through the *hishtalshelus* to His desire, will, intellect and thought in actual action,"
+              "he": "רק שיורד ונמשך בהשתלשלות עד חפצו ורצונו ושכלו ומחשבתו בעשיה בפועל ממש כו'"
             },
             {
-              "he": "אבל הכל רק רצון ושכל ומדה ומחשבה ומעשה אחד תחשב לגבי בחינת העצמות ממש, כמובן מכל הנ\"ל וד\"ל.",
-              "en": "but it is all reckoned as one will, intellect, *midda*, thought and action as far as the Essence itself is concerned, as is understood from all the above, and this is enough for one who understands."
+              "he": "אבל הכל רק רצון ושכל ומדה ומחשבה ומעשה אחד תחשב לגבי בחינת העצמות ממש, כמובן מכל הנ\"ל וד\"ל."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "From His thought in the *Atzmus* (the Essence) it goes all the way down to the thought of doing something in actuality. **So too in speech and action**: even in speech and action, it comes from His inner power of speech and action. It comes down through the *hishtalshelus*, **but it is all reckoned as one will, intellect, *midda*, thought and action as far as the Essence itself is concerned.**",
+              "text": "From His thought in the *Atzmus* (the Essence) it goes all the way down to the thought of doing something in actuality. So too in speech and action: even in speech and action, it comes from His inner power of speech and action. It comes down through the *hishtalshelus*, but it is all reckoned as one will, intellect, *midda*, thought and action as far as the Essence itself is concerned.",
               "audio": [
                 {
                   "lecture": "056 Tape013-Side1-Ch8.mp3",
@@ -1100,26 +1119,32 @@
           ],
           "phrases": [
             {
-              "he": "ואחכ\"ז הרי ישכיל האדם בהתבוננותו במי ברא אלה בגשמיות,",
-              "en": "After all this, a person will grasp, in his contemplation of \"Who created these\" in physicality,"
+              "he": "ואחכ\"ז הרי ישכיל האדם בהתבוננותו במי ברא אלה בגשמיות,"
             },
             {
-              "he": "איך שלא נבדל גם הפרט היותר אחרון מהמקור הכללי היותר ראשון",
-              "en": "how even the very last particular is not separate from the very first general source,"
+              "he": "איך שלא נבדל גם הפרט היותר אחרון מהמקור הכללי היותר ראשון"
             },
             {
-              "he": "גם בכל פרט שבכל דבר ודבר כמו בבריאת שמים או ארץ או כל פרטי חלקי דומם צומח חי ומדבר",
-              "en": "also in every particular of every thing, as in the creation of heaven or earth, or all the particular parts of the mineral, plant, animal and human,"
+              "he": "גם בכל פרט שבכל דבר ודבר כמו בבריאת שמים או ארץ או כל פרטי חלקי דומם צומח חי ומדבר"
             },
             {
-              "he": "איך ששרשם ברוחניות דמלכות דעשיה עד רום המעלות אחוז וקשור כשלשלת כו'",
-              "en": "how their root, in the spirituality of *Malchus* of *Asiya*, up to the highest of levels, is held and bound like a chain."
+              "he": "איך ששרשם ברוחניות דמלכות דעשיה עד רום המעלות"
+            },
+            {
+              "he": "אחוז וקשור כשלשלת כו'",
+              "en": "totally connected.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [69, 70],
+                "start": 37.58,
+                "end": 39.76
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**how even the very last particular is not separate from the very first general source** … **held and bound like a chain**: totally connected. He said that the *chachma* of Shlomo was connected, even though it is very contracted. But it is not only by Shlomo; it is by everybody. It is the *Aibershter*'s *chachma* that he is using, because there is only one *chachma*. What he said at the top of the page about business is also coming from this *chachma*.",
+              "text": "how even the very last particular is not separate from the very first general source … held and bound like a chain: totally connected. He said that the *chachma* of Shlomo was connected, even though it is very contracted. But it is not only by Shlomo; it is by everybody. It is the *Aibershter*'s *chachma* that he is using, because there is only one *chachma*. What he said at the top of the page about business is also coming from this *chachma*.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1154,46 +1179,44 @@
           ],
           "phrases": [
             {
-              "he": "וכמו שכתוב בראשית ברא, בקדמין ובחוכמתא כו'",
-              "en": "And as it is written, \"In the beginning He created,\" \"with the first\" and \"with wisdom\":"
+              "he": "וכמו שכתוב בראשית ברא, בקדמין ובחוכמתא כו'"
             },
             {
-              "he": "הרי בחינת כתר וחכמה שבאבי''ע מיוחדים",
-              "en": "*Keser* and *chachma* in *Atzilus*, *Beriya*, *Yetzira* and *Asiya* are united;"
+              "he": "הרי בחינת כתר וחכמה שבאבי''ע מיוחדים"
             },
             {
-              "he": "כך כל פרטיהם המסתעפים מהם במדות ובמחשבה דבור ומעשה שבכל עולם",
-              "en": "so too all their particulars that branch out from them, in the *middos* and in thought, speech and action in every world"
+              "he": "כך כל פרטיהם המסתעפים מהם במדות ובמחשבה דבור ומעשה שבכל עולם"
             },
             {
-              "he": "(שהוא כללות עשר ספירות דכל עולם שהוא עתיק יומין ואריך אנפין ואבא ואימא וזעיר אנפין ונוקבא דאבי״ע(",
-              "en": "(which is the whole of the ten *sefiros* of each world, that is, *Atik Yomin* and *Arich Anpin*, *Abba* and *Ima*, *Zeir Anpin* and *Nukva* of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*),"
+              "he": "(שהוא כללות עשר ספירות דכל עולם שהוא עתיק יומין ואריך אנפין ואבא ואימא וזעיר אנפין ונוקבא דאבי״ע("
             },
             {
-              "he": "עד בחינת עשיה דמלכות דעשיה,",
-              "en": "down to the action of *Malchus* of *Asiya*:"
+              "he": "עד בחינת עשיה דמלכות דעשיה,"
             },
             {
-              "he": "נעוץ סופן בתחלת הכל",
-              "en": "their end is wedged into the beginning of all."
+              "he": "נעוץ סופן בתחלת הכל"
             },
             {
-              "he": "דכמו שבקדמון האציל כו'",
-              "en": "For just as with the *Kadmon* He emanated,"
+              "he": "דכמו שבקדמון האציל כו'"
             },
             {
-              "he": "כך בקדמון זה עצמו ברא ויצר ועשה,",
-              "en": "so with this same *Kadmon* itself He created, formed and made,"
+              "he": "כך בקדמון זה עצמו ברא ויצר ועשה,"
             },
             {
               "he": "כמו שכתוב כל אשר חפץ כו'",
-              "en": "as it is written, \"All that He desired [He did].\""
+              "en": "Everything that He's *chafetz*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1075, 1078],
+                "start": 474.66,
+                "end": 482.75
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Keser and chachma in Atzilus, Beriya, Yetzira and Asiya are united**, and so are all their particulars, in the *middos*, thought, speech and action, the whole ten *sefiros* of each world, down to the action of *Malchus* of *Asiya*: **their end is wedged into the beginning of all.** With the same *Kadmon* with which He emanated, He created, formed and made.",
+              "text": "Keser and chachma in Atzilus, Beriya, Yetzira and Asiya are united, and so are all their particulars, in the *middos*, thought, speech and action, the whole ten *sefiros* of each world, down to the action of *Malchus* of *Asiya*: their end is wedged into the beginning of all. With the same *Kadmon* with which He emanated, He created, formed and made.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1339,7 +1362,7 @@
             },
             {
               "kind": "explanation",
-              "text": "He goes back to the text: down to the action of *Malchus* of *Asiya*, **just as with the *Kadmon***, the Essence, **so with this same *Kadmon* itself He created, formed and made, as it is written, \"All that He desired.\"** *Chafetz* (desired) is as in *chafetz chesed*: it means in the *Atzmus*, all the way down to *Malchus* of *Atzilus*, and really all the way down to actual *Asiya*. *Malchus* of *Atzilus* is like going from the brain to the hand, and *Malchus* of *Asiya* is going from the hand to the external utensil.",
+              "text": "He goes back to the text: down to the action of *Malchus* of *Asiya*, just as with the *Kadmon*, the Essence, so with this same *Kadmon* itself He created, formed and made, as it is written, \"All that He desired.\" *Chafetz* (desired) is as in *chafetz chesed*: it means in the *Atzmus*, all the way down to *Malchus* of *Atzilus*, and really all the way down to actual *Asiya*. *Malchus* of *Atzilus* is like going from the brain to the hand, and *Malchus* of *Asiya* is going from the hand to the external utensil.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1365,29 +1388,45 @@
           "phrases": [
             {
               "he": "וכך במדות,",
-              "en": "And so in the *middos*,"
+              "en": "It's the same thing like in the *ratzon*; the same thing is the *middos*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1153, 1166],
+                "start": 514.68,
+                "end": 518.75
+              }
             },
             {
               "he": "כמו הנה מקום אתי,",
-              "en": "as \"There is a place with me,\""
+              "en": "There is a place with me.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1171, 1176],
+                "start": 520.54,
+                "end": 522.55
+              }
             },
             {
-              "he": "בחי' ביטול הו׳ קצוות",
-              "en": "the *bittul* (self-nullification) of the six extremities;"
+              "he": "בחי' ביטול הו׳ קצוות"
             },
             {
-              "he": "לך יהו״ה הגדולה, בכל עולם",
-              "en": "\"Yours, *Havaya*, is the greatness,\" in every world"
+              "he": "לך יהו״ה הגדולה, בכל עולם"
             },
             {
               "he": "לפי מה שהוא",
-              "en": "according to what it is."
+              "en": "According to this world.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1272, 1275],
+                "start": 561.46,
+                "end": 562.94
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And so in the *middos***: the same as in the *ratzon*. **\"There is a place with me.\"** **\"Yours, *Havaya*, is the greatness,\" in every world**: as we said about the place, the only way you can have an emotion is *Lecha Havaya*, Yours. It does not mean only the greatness of *Atzilus*, or the Essence. It means that even the emotion you have, of *chesed* or *gevura*, the place for it and what gives it existence is still the *Aibershter*, in every world, all the way down to the *kelipos*: **according to what it is**, according to this world.",
+              "text": "And so in the *middos*: the same as in the *ratzon*. **\"There is a place with me.\"** \"Yours, *Havaya*, is the greatness,\" in every world: as we said about the place, the only way you can have an emotion is *Lecha Havaya*, Yours. It does not mean only the greatness of *Atzilus*, or the Essence. It means that even the emotion you have, of *chesed* or *gevura*, the place for it and what gives it existence is still the *Aibershter*, in every world, all the way down to the *kelipos*: according to what it is, according to this world.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1407,33 +1446,48 @@
           "phrases": [
             {
               "he": "עד בחינת מקום העצמי שנקרא מקומו,",
-              "en": "up to the essential place, which is called \"His place,\""
+              "en": "All the way to the *makom ha'atzmi*, which is His place.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1304, 1314],
+                "start": 579.58,
+                "end": 583.2
+              }
             },
             {
-              "he": "וכמאמר רבותינו זכרונם לברכה הוא מקומו של עולם",
-              "en": "as our Sages say, \"He is the place of the world\""
+              "he": "וכמאמר רבותינו זכרונם לברכה הוא מקומו של עולם"
             },
             {
-              "he": "ואין העולם מקומו",
-              "en": "and the world is not His place."
+              "he": "ואין העולם מקומו"
             },
             {
               "he": "וכן מאמר הידוע דאיהו תפיס בכל עלמין",
-              "en": "And so the well-known saying, \"He holds all the worlds\""
+              "en": "He holds on to all the worlds,",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1344, 1350],
+                "start": 597.22,
+                "end": 599.41
+              }
             },
             {
-              "he": "ולית מאן דתפיס ביה,",
-              "en": "and there is none who holds Him,"
+              "he": "ולית מאן דתפיס ביה,"
             },
             {
               "he": "אפילו מחשבה ורצון הקדום כו'",
-              "en": "not even the primordial thought and will."
+              "en": "even the *machshava kduma*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1360, 1363],
+                "start": 601.42,
+                "end": 602.78
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**up to the essential place, which is called \"His place\"**: *Mekomo*, the place of the *Aibershter*, which is the real *Atzmus*. (A student: that is \"Blessed be the glory of *Havaya* from His place\". From His own place.) **He holds all the worlds, and there is none who holds Him, not even** the *machshava kduma* (the primordial thought), which is the *tehiru tata'a*.",
+              "text": "up to the essential place, which is called \"His place\": *Mekomo*, the place of the *Aibershter*, which is the real *Atzmus*. (A student: that is \"Blessed be the glory of *Havaya* from His place\". From His own place.) He holds all the worlds, and there is none who holds Him, not even the *machshava kduma* (the primordial thought), which is the *tehiru tata'a*.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1452,16 +1506,27 @@
           ],
           "phrases": [
             {
-              "he": "ומכל זה הרי יובן בחינת יחוד וחיבור הפרט אל הכלל",
-              "en": "And from all this is understood the unification and joining of the particular with the whole,"
+              "he": "ומכל זה הרי יובן בחינת יחוד וחיבור הפרט אל הכלל דרך כללות הכל מעצמיות אור אין סוף באבי''ע",
+              "en": "So from this, you understand that it's a direct connection all the way to the *Aibershter*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [1389, 1404],
+                "start": 621.2,
+                "end": 628.74
+              }
             },
             {
-              "he": "דרך כללות הכל מעצמיות אור אין סוף באבי''ע",
-              "en": "in the general way of the whole, from the very Essence of the *Or Ein Sof* in *Atzilus*, *Beriya*, *Yetzira* and *Asiya*;"
+              "he": "מלבד בחינת היחוד שבכל עולם דרך פרט,"
             },
             {
-              "he": "מלבד בחינת היחוד שבכל עולם דרך פרט, בעשר ספירות שבו כו'",
-              "en": "besides the unification in each world in the particular way, in its ten *sefiros*."
+              "he": "בעשר ספירות שבו כו'",
+              "en": "by the *sefiros*, so to speak.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2160, 2165],
+                "start": 929.22,
+                "end": 930.42
+              }
             }
           ],
           "blocks": [
@@ -1554,7 +1619,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**the unification and joining of the particular with the whole** means to connect all the way from the stone to the self, **in the general way of the whole**, to the *Aibershter* Himself. **besides the unification in each world in the particular way**, in the *sefiros*, so to speak: to realize that the ten *sefiros* of the heart are connected to the ten *sefiros* of the brain, and the *chachma* in the hand is connected to the *chachma* in the head.",
+              "text": "the unification and joining of the particular with the whole means to connect all the way from the stone to the self, in the general way of the whole, to the *Aibershter* Himself. besides the unification in each world in the particular way, in the *sefiros*, so to speak: to realize that the ten *sefiros* of the heart are connected to the ten *sefiros* of the brain, and the *chachma* in the hand is connected to the *chachma* in the head.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1593,30 +1658,39 @@
           ],
           "phrases": [
             {
-              "he": "אך אף על פי שיודע האדם כל ביאור ההשתלשלות דאבי''ע בפרט,",
-              "en": "But even though a person knows the whole explanation of the *hishtalshelus* of *Atzilus*, *Beriya*, *Yetzira* and *Asiya* in detail,"
+              "he": "אך אף על פי שיודע האדם כל ביאור ההשתלשלות דאבי''ע בפרט,"
             },
             {
-              "he": "ימשוך נפשו ליחוד הפרט אל היחוד בכלל,",
-              "en": "he should draw his soul to the unification of the particular with the general unification,"
+              "he": "ימשוך נפשו ליחוד הפרט אל היחוד בכלל,"
             },
             {
-              "he": "עד עצמיות אור אין סוף ממש על דרך הנזכר לעיל וכהאי גוונא",
-              "en": "up to the very Essence of the *Or Ein Sof*, in the way explained above, and the like;"
+              "he": "עד עצמיות אור אין סוף ממש על דרך הנזכר לעיל וכהאי גוונא"
             },
             {
               "he": "מלבד היחוד וביטול כל עולם בפרט לגבי העצמות כו'",
-              "en": "besides the unification and *bittul* of each world in particular before the Essence;"
+              "en": "Beside the *yichud* of every particular world,",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2455, 2461],
+                "start": 1031.08,
+                "end": 1033.98
+              }
             },
             {
               "he": "עד שיבוא לו כל ההתבוננות שמרחיב בפרט בענין זה, בקיצור מופלג",
-              "en": "until all the contemplation that he expands on in detail in this matter comes to him in a *kitzur muflag* (an extreme shortening)."
+              "en": "until finally, once he really knows his *hisbonenus*, the whole thing will come to him with a *kitzur muflag*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2512, 2549],
+                "start": 1052.66,
+                "end": 1061
+              }
             }
           ],
           "blocks": [
             {
               "kind": "avodah",
-              "text": "**he should draw his soul to the unification of the particular with the general unification.** Really, what he is saying is that you only have to try to do this when you are starting. If you really know the *seder hishtalshelus*, it becomes totally obvious to you. You don't have to figure out that when a person threw a stone at you it was him who threw it. You don't say, \"Let me make the *yichudim* here: the stone came from the hand...\" You don't have to do that. It is automatic, one shot.",
+              "text": "he should draw his soul to the unification of the particular with the general unification. Really, what he is saying is that you only have to try to do this when you are starting. If you really know the *seder hishtalshelus*, it becomes totally obvious to you. You don't have to figure out that when a person threw a stone at you it was him who threw it. You don't say, \"Let me make the *yichudim* here: the stone came from the hand...\" You don't have to do that. It is automatic, one shot.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1628,7 +1702,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**besides the unification and *bittul* of each world in particular**: besides the unity of every particular world. It is the same as the heart: if he had a feeling in his heart, you know that he had the feeling, and if he had a thought in his brain, you know that he had the thought.",
+              "text": "besides the unification and *bittul* of each world in particular: besides the unity of every particular world. It is the same as the heart: if he had a feeling in his heart, you know that he had the feeling, and if he had a thought in his brain, you know that he had the thought.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1641,7 +1715,7 @@
             {
               "kind": "mashal",
               "title": "\"He hit me\"",
-              "text": "**until all the contemplation … comes to him in a *kitzur muflag***. As said at the beginning, he will have to try; but once he really knows his *hisbonenus*, the whole thing will come to him in a *kitzur muflag*: \"He hit me.\" Even a little kid knows that. A little kid comes and says his brother hit him. He doesn't say \"his hand hit me\"; he says \"he hit me\". That is a *kitzur muflag*: *ani ani hu*.",
+              "text": "until all the contemplation … comes to him in a *kitzur muflag*. As said at the beginning, he will have to try; but once he really knows his *hisbonenus*, the whole thing will come to him in a *kitzur muflag*: \"He hit me.\" Even a little kid knows that. A little kid comes and says his brother hit him. He doesn't say \"his hand hit me\"; he says \"he hit me\". That is a *kitzur muflag*: *ani ani hu*.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1664,42 +1738,59 @@
           ],
           "phrases": [
             {
-              "he": "כמו מלכותך מלכות כל עולמים",
-              "en": "As, \"Your kingship is the kingship of all worlds\":"
+              "he": "כמו מלכותך מלכות כל עולמים"
             },
             {
-              "he": "שזהו בחינת מלכות דאין סוף במלכות דמלכות דעשיה",
-              "en": "this is *Malchus* of the *Ein Sof* in *Malchus* of *Malchus* of *Asiya*,"
+              "he": "שזהו בחינת מלכות דאין סוף במלכות דמלכות דעשיה"
             },
             {
-              "he": "על דרך הנזכר לעיל ברצון וחכמה ומדות כו'",
-              "en": "in the way explained above with will, *chachma* and *middos*;"
+              "he": "על דרך הנזכר לעיל ברצון וחכמה ומדות כו'"
             },
             {
               "he": "כמו שכתוב ראו כי אני אני הוא ממש",
-              "en": "as it is written, \"See now that I, I am He,\" *mamash*;"
+              "en": "I am the same one at the beginning and the end;",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2632, 2642],
+                "start": 1091,
+                "end": 1093.08
+              }
             },
             {
               "he": "וכן אני יהו״ה לא שניתי",
-              "en": "and so, \"I, *Havaya*, have not changed.\""
+              "en": "it's not a different *Aibershter* down here.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2648, 2654],
+                "start": 1095.28,
+                "end": 1096.86
+              }
             },
             {
-              "he": "בחינת אני הוא בחינת מלכות, שהוא בחינת אין דכתר,",
-              "en": "\"I am He\" is *Malchus*, which is the *ayin* of *Keser*,"
-            },
-            {
-              "he": "דנעוץ תחלתן בסופן",
-              "en": "for their beginning is wedged in their end,"
+              "he": "בחינת אני הוא בחינת מלכות, שהוא בחינת אין דכתר, דנעוץ תחלתן בסופן",
+              "en": "The *ayin* of the *Keser* is right away in the *Malchus*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2684, 2697],
+                "start": 1108.14,
+                "end": 1112.06
+              }
             },
             {
               "he": "בכל עולם בפרט וכן דרך כללות הכל",
-              "en": "in each world in particular, and so too in the general way of the whole."
+              "en": "Besides the fact that it goes from the highest *Keser* to the lowest *Malchus*, in every world it is also like that.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2698, 2718],
+                "start": 1112.64,
+                "end": 1117.42
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"Your kingship is the kingship of all worlds\"**: *Malchus* of the *Ein Sof* and *Malchus* of *Asiya*, one shot. **\"See now that I, I am He\"**: I am the same one at the beginning and at the end. **\"I, *Havaya*, have not changed\"**: it is not a different *Aibershter* down here.",
+              "text": "\"Your kingship is the kingship of all worlds\": *Malchus* of the *Ein Sof* and *Malchus* of *Asiya*, one shot. \"See now that I, I am He\": I am the same one at the beginning and at the end. \"I, *Havaya*, have not changed\": it is not a different *Aibershter* down here.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1711,7 +1802,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**in each world in particular**: in each world it is also like that, and that is why it says *Keser Malchus*. The *ayin* of the *Keser* is right away in the *Malchus*. Besides its going from the highest *Keser* to the lowest *Malchus*, in every world it is like that too. *Keser Malchus*: what happened to the *sefiros* in the middle? It is as if they don't exist. He wanted it, and He did it.",
+              "text": "in each world in particular: in each world it is also like that, and that is why it says *Keser Malchus*. The *ayin* of the *Keser* is right away in the *Malchus*. Besides its going from the highest *Keser* to the lowest *Malchus*, in every world it is like that too. *Keser Malchus*: what happened to the *sefiros* in the middle? It is as if they don't exist. He wanted it, and He did it.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1730,30 +1821,39 @@
           ],
           "phrases": [
             {
-              "he": "ולזה אומר אני יהו״ה לא שניתי,",
-              "en": "And therefore He says, \"I, *Havaya*, have not changed\":"
+              "he": "ולזה אומר אני יהו״ה לא שניתי,"
             },
             {
               "he": "בין מלכות דאין סוף למלכות דעשיה, כלל",
-              "en": "between *Malchus* of the *Ein Sof* and *Malchus* of *Asiya*, not at all."
+              "en": "No difference: the same *Aibershter*.",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2764, 2768],
+                "start": 1133.26,
+                "end": 1135.33
+              }
             },
             {
               "he": "וזה שכתוב מלכותך הוא מלכות כל עולמים",
-              "en": "And this is what is written, \"Your kingship is the kingship of all worlds,\""
+              "en": "Your *Malchus* is the *Malchus* of all the worlds,",
+              "audio": {
+                "lecture": "057 Tape014-Side1-Ch8.mp3",
+                "words": [2776, 2784],
+                "start": 1137.8,
+                "end": 1142.49
+              }
             },
             {
-              "he": "עד מלכות דמלכות דעשיה,",
-              "en": "down to *Malchus* of *Malchus* of *Asiya*,"
+              "he": "עד מלכות דמלכות דעשיה,"
             },
             {
-              "he": "מטעם כל הנזכר לעיל ודי למבין:",
-              "en": "for the reason of all the above; and this is enough for one who understands."
+              "he": "מטעם כל הנזכר לעיל ודי למבין:"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"I, *Havaya*, have not changed\" between *Malchus* of the *Ein Sof* and *Malchus* of *Asiya*, not at all**: no difference, the same *Aibershter*. **\"Your kingship is the kingship of all worlds\"**: Your *Malchus* is the *Malchus* of all the worlds, \"from Hodu to Kush\".",
+              "text": "\"I, *Havaya*, have not changed\" between *Malchus* of the *Ein Sof* and *Malchus* of *Asiya*, not at all: no difference, the same *Aibershter*. \"Your kingship is the kingship of all worlds\": Your *Malchus* is the *Malchus* of all the worlds, \"from Hodu to Kush\".",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",
@@ -1766,7 +1866,7 @@
             {
               "kind": "mashal",
               "title": "From Shushan to the border",
-              "text": "From Shushan the capital to the far extremities of the kingdom, it is all the same *Malchus*. Just because you go away from Shushan the capital, the *Malchus* does not get lessened at all. It is just as strong by the border as it is in the capital, and it is the same law everywhere: **down to *Malchus* of *Malchus* of *Asiya***.",
+              "text": "From Shushan the capital to the far extremities of the kingdom, it is all the same *Malchus*. Just because you go away from Shushan the capital, the *Malchus* does not get lessened at all. It is just as strong by the border as it is in the capital, and it is the same law everywhere: down to *Malchus* of *Malchus* of *Asiya*.",
               "audio": [
                 {
                   "lecture": "057 Tape014-Side1-Ch8.mp3",

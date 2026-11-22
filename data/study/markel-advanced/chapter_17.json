@@ -111,60 +111,49 @@
           ],
           "phrases": [
             {
-              "he": "(יז) והנה מעתה יש להבין בפרטי ענין הקו",
-              "en": "(17) Now, from here on, we have to understand the details of the matter of the *Kav* (the line),"
+              "he": "(יז) והנה מעתה יש להבין בפרטי ענין הקו"
             },
             {
-              "he": "כמו שהוא בבחינת עגולים כו'.",
-              "en": "as it is in the aspect of *igulim* (circles)."
+              "he": "כמו שהוא בבחינת עגולים כו'."
             },
             {
-              "he": "והנה תחלה יש להקדים בבחינת ראשית הקו הזה",
-              "en": "But first we must preface [a word] on the beginning of this *Kav*,"
+              "he": "והנה תחלה יש להקדים בבחינת ראשית הקו הזה"
             },
             {
-              "he": "שבא בבחינת אור פנימי",
-              "en": "which comes as *or pnimi* (inner light),"
+              "he": "שבא בבחינת אור פנימי"
             },
             {
-              "he": "ואחר כך מתעגל",
-              "en": "and afterwards becomes a circle,"
+              "he": "ואחר כך מתעגל"
             },
             {
-              "he": "ונמשך בבחינת אור פנימי",
-              "en": "and draws on again as inner light,"
+              "he": "ונמשך בבחינת אור פנימי"
             },
             {
-              "he": "וחוזר ומתעגל כו'",
-              "en": "and again becomes a circle."
+              "he": "וחוזר ומתעגל כו'"
             },
             {
-              "he": "ומבואר בעץ חיים שבבחינת עשר ספירות דעגולים,",
-              "en": "It is explained in *Etz Chaim* that in the ten sefiros of the circles,"
+              "he": "ומבואר בעץ חיים שבבחינת עשר ספירות דעגולים,"
             },
             {
-              "he": "העליון מכולם משובח מכולם והפנימי מכולם גרוע כו',",
-              "en": "the highest of them all is the finest of them all, and the innermost of them all is the poorest;"
+              "he": "העליון מכולם משובח מכולם והפנימי מכולם גרוע כו',"
             },
             {
-              "he": "ובבחינת עשר ספירות דיושר להיפך,",
-              "en": "and in the ten sefiros of *yosher* (straightness) it is the opposite:"
+              "he": "ובבחינת עשר ספירות דיושר להיפך,"
             },
             {
-              "he": "העליון גרוע והפנימי משובח כו'.",
-              "en": "the highest is the poorest, and the innermost the finest."
+              "he": "העליון גרוע והפנימי משובח כו'."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The class opens by reading the first lines straight through: from here on we have to understand the details of the *Kav* as it is in *igulim*. First, the beginning of the *Kav* comes as an inner light, then becomes a circle, then draws on as an inner light and again becomes a circle. And the *Etz Chaim* says that in the circles **the highest of them all is the finest of them all**, and in *yosher* it is the other way round. The explanation follows.",
+              "text": "The class opens by reading these first lines straight through in Hebrew, without translating them; the explanation follows.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
-                  "words": [0, 55],
+                  "words": [0, 54],
                   "start": 0,
-                  "end": 40.85
+                  "end": 39.94
                 }
               ]
             }
@@ -185,44 +174,56 @@
           ],
           "phrases": [
             {
-              "he": "וביאור הדברים, הנה ידוע שבחינת רצון קדום זה,",
-              "en": "The explanation of the matter: it is known that this *ratzon kadum* (primordial will),"
+              "he": "וביאור הדברים, הנה ידוע שבחינת רצון קדום זה,"
             },
             {
-              "he": "הגם שלגבי בחינת רצון הפשוט המוחלט בעצמות",
-              "en": "even though, compared to the simple and absolute will in the Essence,"
+              "he": "הגם שלגבי בחינת רצון הפשוט המוחלט בעצמות נקרא התפשטות רצון,",
+              "en": "compared to the *Atzmus*, it's called *hispashtus ratzon*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [602, 609],
+                "start": 350.82,
+                "end": 355.39
+              }
             },
             {
-              "he": "נקרא התפשטות רצון,",
-              "en": "it is called a *hispashtus* (spreading out) of will,"
+              "he": "אבל עדיין הוא בהעלם ולא בגלוי כלל"
             },
             {
-              "he": "אבל עדיין הוא בהעלם ולא בגלוי כלל",
-              "en": "it is still hidden and not revealed at all;"
-            },
-            {
-              "he": "כי אינו רק השפעת והמשכת רצון הפשוט של חפץ חסד שהוחלט בעצמות מכבר,",
-              "en": "for it is only the flow and drawing down of the simple will of *chafetz chesed* (desire for kindness) that was already decided in the Essence,"
-            },
-            {
-              "he": "כך יהיה בפועל ממש",
-              "en": "that so it shall be, in actual fact."
+              "he": "כי אינו רק השפעת והמשכת רצון הפשוט של חפץ חסד שהוחלט בעצמות מכבר, כך יהיה בפועל ממש",
+              "en": "it is just simply the same *ratzon pashut* that was already decided, that that's the way it should be",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [120, 138],
+                "start": 89.86,
+                "end": 101.24
+              }
             },
             {
               "he": "ומיד שעולה במחשבה זאת שיהיה הכל,",
-              "en": "And as soon as this comes up in thought, that everything shall be,"
+              "en": "and when it came up in an actual *machshava*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [139, 147],
+                "start": 101.34,
+                "end": 103.42
+              }
             },
             {
               "he": "הוא הנקרא מחשבה ורצון קדום",
-              "en": "that is what is called the primordial thought and will,"
+              "en": "that's what's called a *ratzon kadum*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [148, 153],
+                "start": 105.64,
+                "end": 107
+              }
             },
             {
-              "he": "שכולל כל מה שבתוכו רצונות פרטים",
-              "en": "which includes everything within it, particular wills,"
+              "he": "שכולל כל מה שבתוכו רצונות פרטים"
             },
             {
-              "he": "כנזכר לעיל במשל הבנין",
-              "en": "as explained above in the analogy of the building."
+              "he": "כנזכר לעיל במשל הבנין"
             }
           ],
           "blocks": [
@@ -304,7 +305,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So **that is what is called the primordial thought and will**, and it is *mamash* the same thing, including all the particular wills. Compared to the *Atzmus* it is called a spreading out of will. But it is really still just for Himself, not for the thing yet: for His own enjoyment. As with a chair: it is not really the chair He wants, it is His own sitting. That is the analogy of the building.",
+              "text": "So that is what is called the primordial thought and will, and it is *mamash* the same thing, including all the particular wills. Compared to the *Atzmus* it is called a spreading out of will. But it is really still just for Himself, not for the thing yet: for His own enjoyment. As with a chair: it is not really the chair He wants, it is His own sitting. That is the analogy of the building.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -323,17 +324,29 @@
           "phrases": [
             {
               "he": "אם כן עדיין רצון קדום זה הכל בעצמו",
-              "en": "If so, this *ratzon kadum* is still all within Himself,"
+              "en": "It's really still all inside of Himself",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [674, 680],
+                "start": 398.39,
+                "end": 401.08
+              }
             },
             {
               "he": "בלתי התגלות לחוץ,",
-              "en": "without being revealed to the outside."
+              "en": "without coming to the outside, without being really revealed to the outside.",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [681, 692],
+                "start": 401.6,
+                "end": 404.98
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So the *ratzon kadum* is really still all inside of Himself, **without being revealed to the outside**.",
+              "text": "So the *ratzon kadum* is really still all inside of Himself, without being revealed to the outside.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -357,14 +370,13 @@
           ],
           "phrases": [
             {
-              "he": "אבל ממנו נעשה הכל אחר כך",
-              "en": "But from it everything is made afterwards."
+              "he": "אבל ממנו נעשה הכל אחר כך"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But from it everything is made afterwards**. This is the matter of \"by knowing Himself, He knows everything\". What does that mean, and how could He know everything? It was said that all the details were really there. But, you say, they were not there in the way they are made out.",
+              "text": "But from it everything is made afterwards. This is the matter of \"by knowing Himself, He knows everything\". What does that mean, and how could He know everything? It was said that all the details were really there. But, you say, they were not there in the way they are made out.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -402,7 +414,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**But from it everything is made afterwards**: from the way he is, that is how everything is made afterwards. That is not quite what it says, though. It says from this *ratzon kadum*; but in this *ratzon kadum* it is really Himself.",
+              "text": "But from it everything is made afterwards: from the way he is, that is how everything is made afterwards. That is not quite what it says, though. It says from this *ratzon kadum*; but in this *ratzon kadum* it is really Himself.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -420,22 +432,30 @@
           ],
           "phrases": [
             {
-              "he": "וזהו כי הוא אמר,",
-              "en": "And this is \"For He said,\""
-            },
-            {
-              "he": "במחשבה הקדומה,",
-              "en": "in the primordial thought,"
+              "he": "וזהו כי הוא אמר, במחשבה הקדומה,",
+              "en": "He said in *machshava kduma*,",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1089, 1093],
+                "start": 584.25,
+                "end": 585.82
+              }
             },
             {
               "he": "ויהי כו'",
-              "en": "\"and it was.\""
+              "en": "and then it was.",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1094, 1098],
+                "start": 587.54,
+                "end": 590.02
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "He said it in the *machshava kduma*, **\"and it was.\"** What did He say in the *machshava kduma*? That was the whole thing. As far as the *Aibershter* (G-d) is concerned, He said it in the *machshava kduma* and finished. Then it came out by itself already.",
+              "text": "He said it in the *machshava kduma*, \"and it was.\" What did He say in the *machshava kduma*? That was the whole thing. As far as the *Aibershter* (G-d) is concerned, He said it in the *machshava kduma* and finished. Then it came out by itself already.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -454,26 +474,36 @@
           ],
           "phrases": [
             {
-              "he": "ונקרא חיי כל העולמים",
-              "en": "And it is called the life of all the worlds,"
+              "he": "ונקרא חיי כל העולמים"
             },
             {
-              "he": "מראש דאדם קדמון עד עקב אדם קדמון בסוף עשיה,",
-              "en": "from the head of *Adam Kadmon* to the heel of *Adam Kadmon* at the end of *Asiya*;"
+              "he": "מראש דאדם קדמון עד עקב אדם קדמון בסוף עשיה,"
             },
             {
               "he": "והיינו כל היצור לא נכחד כו'",
-              "en": "and this is \"No creature is hidden [from You]\": nothing is missing;"
+              "en": "that nothing is missing",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1150, 1153],
+                "start": 613.1,
+                "end": 614.56
+              }
             },
             {
               "he": "שאין פרט היותר אחרון שלא קדם להיות ברצון ובמחשבה זו",
-              "en": "for there is no detail, even the very last, that was not first in this will and thought."
+              "en": "There's nothing that wasn't originally over there.",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1893, 1899],
+                "start": 997.24,
+                "end": 1000.3
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"No creature is hidden [from You]\"** means that nothing is missing. In preparing the final thing, every detail of the final thing has to come with a detail of the *Atzmus* that it is being prepared for.",
+              "text": "\"No creature is hidden [from You]\" means that nothing is missing. In preparing the final thing, every detail of the final thing has to come with a detail of the *Atzmus* that it is being prepared for.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -549,7 +579,7 @@
             },
             {
               "kind": "avodah",
-              "text": "So in terms of respect, you have to respect everything. If you see a squirrel, you are seeing G-d. \"What do you mean?\" You have to think about it. Anything that is in what He wanted is part of Him; it fits some part of Him. As with clothing: there is no part of the clothing that does not fit some part of the king. If you spit on a part of the clothing, even on the shoe, you are spitting on the king. So you have to have a lot of respect. That is what **\"No creature is hidden [from You]\"** tells you: when you are looking at anything, you are literally looking at the *Aibershter*.",
+              "text": "So in terms of respect, you have to respect everything. If you see a squirrel, you are seeing G-d. \"What do you mean?\" You have to think about it. Anything that is in what He wanted is part of Him; it fits some part of Him. As with clothing: there is no part of the clothing that does not fit some part of the king. If you spit on a part of the clothing, even on the shoe, you are spitting on the king. So you have to have a lot of respect. That is what \"No creature is hidden [from You]\" tells you: when you are looking at anything, you are literally looking at the *Aibershter*.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -561,7 +591,7 @@
             },
             {
               "kind": "aside",
-              "text": "**for there is no detail, even the very last, that was not first in this will and thought.** There is nothing that was not originally over there. So it doesn't matter. You can see \"some stupid dirty bum walking down the street half drunk\", and you say, \"What about him?\" Yes: even the very last detail could not be there unless it was first over there.",
+              "text": "for there is no detail, even the very last, that was not first in this will and thought. There is nothing that was not originally over there. So it doesn't matter. You can see \"some stupid dirty bum walking down the street half drunk\", and you say, \"What about him?\" Yes: even the very last detail could not be there unless it was first over there.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -587,26 +617,36 @@
           ],
           "phrases": [
             {
-              "he": "ואדרבה סוף מעשה,",
-              "en": "Just the opposite: the end of the deed,"
+              "he": "ואדרבה",
+              "en": "Just the opposite.",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1972, 1976],
+                "start": 1029.61,
+                "end": 1031.84
+              }
             },
             {
-              "he": "כמו בסוף אלף הז',",
-              "en": "as at the end of the seventh millennium,"
+              "he": "סוף מעשה, כמו בסוף אלף הז',"
             },
             {
               "he": "עלה במחשבה קדומה זו תחלה",
-              "en": "came up first in this primordial thought,"
+              "en": "It came up in this *machshava kduma*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [1989, 1996],
+                "start": 1037.58,
+                "end": 1040.02
+              }
             },
             {
-              "he": "כמו שכתוב במקום אחר באריכות",
-              "en": "as is written elsewhere at length."
+              "he": "כמו שכתוב במקום אחר באריכות"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Not only that. It is not that *davka* the worlds of *Atzilus* were really over there and we are not so really over there. **Just the opposite: the end of the deed … came up first in this primordial thought.** You see this in clothing as well.",
+              "text": "Not only that. It is not that *davka* the worlds of *Atzilus* were really over there and we are not so really over there. Just the opposite: the end of the deed … came up first in this primordial thought. You see this in clothing as well.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -666,7 +706,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So here too the real thing is *davka* when the whole thing is finished: **as at the end of the seventh millennium**. Not only the end of the deed in the sense of the actual world being there, but even in terms of the physical world, the whole thing was how it is going to be at the end of the seventh millennium, \"when we have already sat down and studied *Shaar HaYichud* for a thousand years. And not only *Shaar HaYichud*, but with all its commentaries, like *Ayin Beis* and stuff like that.\" When we will have had the thousand years of *Moshiach*, then it is already the thing that He wanted, \"and then we can start on the fifty thousand jubilees.\" And this **came up first in this primordial thought, as is written elsewhere at length.**",
+              "text": "So here too the real thing is *davka* when the whole thing is finished: as at the end of the seventh millennium. Not only the end of the deed in the sense of the actual world being there, but even in terms of the physical world, the whole thing was how it is going to be at the end of the seventh millennium, \"when we have already sat down and studied *Shaar HaYichud* for a thousand years. And not only *Shaar HaYichud*, but with all its commentaries, like *Ayin Beis* and stuff like that.\" When we will have had the thousand years of *Moshiach*, then it is already the thing that He wanted, \"and then we can start on the fifty thousand jubilees.\" And this came up first in this primordial thought, as is written elsewhere at length.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -691,28 +731,47 @@
           ],
           "phrases": [
             {
-              "he": "(ובלשון הזהר נקרא עתיקא דעתיקין",
-              "en": "(In the language of the *Zohar* it is called *Atika d'Atikin* (the Ancient of the Ancients)"
-            },
-            {
-              "he": "או עתיקא סתימאה",
-              "en": "or *Atika Stima'a* (the hidden Ancient One),"
+              "he": "(ובלשון הזהר נקרא עתיקא דעתיקין או עתיקא סתימאה",
+              "en": "this *machshava kduma* is called *Atika d'Atikin* or *Atika Stima'a*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [2605, 2614],
+                "start": 1318.6,
+                "end": 1323.96
+              }
             },
             {
               "he": "והוא בחינת רעוא דכל רעווין עילאין",
-              "en": "and it is *Raava d'chol Raavin Ila'in*, the will of all the upper wills,"
+              "en": "it's also called the *ratzon* of all the *ratzonos*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [2691, 2699],
+                "start": 1374.82,
+                "end": 1376.64
+              }
             },
             {
               "he": "דאתגליין במצחא דעתיקא קדישא כו'",
-              "en": "which are revealed in the *metzach* (forehead) of *Atika Kadisha* (the holy Ancient One);"
+              "en": "these things are revealed in the *metzach* of *Atika Kadisha*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [2705, 2714],
+                "start": 1382.56,
+                "end": 1390.91
+              }
             },
             {
-              "he": "כי ברצון מלובש התענוג,",
-              "en": "for the delight is dressed in the will,"
+              "he": "כי ברצון מלובש התענוג,"
             },
             {
               "he": "והיו לאחדים ממש",
-              "en": "and they become *mamash* one."
+              "en": "it's *mamash* one thing",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [2751, 2754],
+                "start": 1410.23,
+                "end": 1411.3
+              }
             }
           ],
           "blocks": [
@@ -730,7 +789,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Besides being called the delight of all delights, it is also called **the will of all the upper wills**, revealed in the *metzach* of *Atika Kadisha*. Why both names? **for the delight is dressed in the will, and they become *mamash* one.** It is *mamash* one thing.",
+              "text": "Besides being called the delight of all delights, it is also called the will of all the upper wills, revealed in the *metzach* of *Atika Kadisha*. Why both names? for the delight is dressed in the will, and they become *mamash* one. It is *mamash* one thing.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -750,46 +809,37 @@
           ],
           "phrases": [
             {
-              "he": "וברצון הפשוט ההיולי",
-              "en": "And in the simple, *hiyuli* (raw, all-including) will"
+              "he": "וברצון הפשוט ההיולי"
             },
             {
-              "he": "שבחפץ חסד ההיולי (הנזכר לעיל באות יוד ואות יא)",
-              "en": "of the *hiyuli* *chafetz chesed* (mentioned above in sections 10 and 11)"
+              "he": "שבחפץ חסד ההיולי (הנזכר לעיל באות יוד ואות יא)"
             },
             {
-              "he": "היה כלול בו התענוג הפשוט שבעצמות",
-              "en": "was included the simple delight in the Essence,"
+              "he": "היה כלול בו התענוג הפשוט שבעצמות"
             },
             {
-              "he": "שנקרא שעשועי המלך בעצמותו כו'",
-              "en": "which is called *sha'ashuei hamelech* (the King's delight) in Himself;"
+              "he": "שנקרא שעשועי המלך בעצמותו כו'"
             },
             {
-              "he": "וגם בג' מדריגות עד שבא בדבר פרט,",
-              "en": "and also in the three levels, until it comes to a particular thing,"
+              "he": "וגם בג' מדריגות עד שבא בדבר פרט,"
             },
             {
-              "he": "אנא אמלוך,",
-              "en": "*Ana Emloch* (I shall rule),"
+              "he": "אנא אמלוך,"
             },
             {
-              "he": "שזה בחינת מלכות דאין סוף שלפני הצמצום",
-              "en": "which is *Malchus* of the *Ein Sof* before the *tzimtzum*,"
+              "he": "שזה בחינת מלכות דאין סוף שלפני הצמצום"
             },
             {
-              "he": "כמו שכתוב שם",
-              "en": "as is written there,"
+              "he": "כמו שכתוב שם"
             },
             {
-              "he": "הכל בחינת שעשועי המלך בעצמו בטהירו עילאה",
-              "en": "it is all the King's delight in Himself, in the *tehiru ila'a* (the upper purity)."
+              "he": "הכל בחינת שעשועי המלך בעצמו בטהירו עילאה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This, the King's delight in Himself, is *mamash* even more than *Atika d'Atikin*. *Atika d'Atikin* is already the actual delight, compared to the delight as it was there; over there it was *mamash* prior, still the *Atzmus*. And there it is not just that it is not composite: over there it is *hayah k'lo hayah* (as if it were not there). And so in all **three levels**, *Yachid*, *Echad* and *Kadmon*, until *Ana Emloch*, *Malchus* of the *Ein Sof* before the *tzimtzum*: **it is all the King's delight in Himself**.",
+              "text": "This, *sha'ashuei hamelech*, the King's delight in Himself, is *mamash* even more than *Atika d'Atikin*. *Atika d'Atikin* is already the actual delight, compared to the delight as it was there; over there it was *mamash* prior, still the *Atzmus*. And there it is not just that it is not composite: over there it is *hayah k'lo hayah* (as if it were not there). And so in all three levels, *Yachid*, *Echad* and *Kadmon*, until *Ana Emloch*, *Malchus* of the *Ein Sof* before the *tzimtzum*: it is all the King's delight in Himself.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -807,20 +857,16 @@
           ],
           "phrases": [
             {
-              "he": "אך עתיקא דעתיקין מקור כל התענוגים",
-              "en": "But *Atika d'Atikin*, the source of all delights,"
+              "he": "אך עתיקא דעתיקין מקור כל התענוגים"
             },
             {
-              "he": "או רעוא דכל רעויין כו',",
-              "en": "or *Raava d'chol Raavin*,"
+              "he": "או רעוא דכל רעויין כו',"
             },
             {
-              "he": "היינו בבחינת הקו שאחר הצמצום",
-              "en": "is in the *Kav* after the *tzimtzum*,"
+              "he": "היינו בבחינת הקו שאחר הצמצום"
             },
             {
-              "he": "שכולל כמה רצונות ותענוגים שעתידים לבוא בגלוי",
-              "en": "which includes many wills and delights that are to come into revelation."
+              "he": "שכולל כמה רצונות ותענוגים שעתידים לבוא בגלוי"
             }
           ],
           "blocks": [
@@ -838,7 +884,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So it is not like the *ratzon hapashut*. The *ratzon hapashut* is not a will for Himself; it is Himself. The simple delight is *mamash* Himself: not a will or a delight for Himself, *mamash* Himself. And this one is the will for Himself, **which includes many wills and delights that are to come into revelation.**",
+              "text": "So it is not like the *ratzon hapashut*. The *ratzon hapashut* is not a will for Himself; it is Himself. The simple delight is *mamash* Himself: not a will or a delight for Himself, *mamash* Himself. And this one is the will for Himself, which includes many wills and delights that are to come into revelation.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -857,42 +903,62 @@
           ],
           "phrases": [
             {
-              "he": "ועתיקא סתימאה הוא בבחינת כתר דאדם קדמון",
-              "en": "And *Atika Stima'a* is *Keser* of *Adam Kadmon*,"
+              "he": "ועתיקא סתימאה הוא בבחינת כתר דאדם קדמון"
             },
             {
               "he": "שהוא בהעלם הרצון והתענוג לעצמו עדיין,",
-              "en": "where the will and delight are still hidden, for Himself,"
+              "en": "It's really still for Himself",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3040, 3044],
+                "start": 1563.59,
+                "end": 1565.78
+              }
             },
             {
-              "he": "רק שחושב להיות הדבר כך בפועל הגילוי",
-              "en": "only He thinks that the thing should be so in actual revelation,"
+              "he": "רק שחושב להיות הדבר כך בפועל הגילוי"
             },
             {
-              "he": "כמו להיות גילוי הרצון והתענוג להאציל עשר ספירות כו'",
-              "en": "such as that there be a revelation of the will and delight to emanate ten sefiros"
+              "he": "כמו להיות גילוי הרצון והתענוג להאציל עשר ספירות כו'"
             },
             {
               "he": "(ולכך נקרא עתיקא סתימאה בחינת העלם לגלוי על כל פנים",
-              "en": "(and that is why it is called *Atika Stima'a*: a hiddenness [ready] for revelation, at any rate;"
+              "en": "it's called *Atika Stima'a*: it's already an *Atik*, but it's *stum*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3141, 3152],
+                "start": 1618.34,
+                "end": 1624.23
+              }
             },
             {
               "he": "מה שאין כן ראשית הקו נקרא סתימא דכל סתימין",
-              "en": "whereas the beginning of the *Kav* is called *stima d'chol stimin* (the most hidden of all hidden),"
+              "en": "But the *reishis hakav* is called *stima d'chol stimin*,",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3153, 3163],
+                "start": 1624.23,
+                "end": 1628.23
+              }
             },
             {
               "he": "דגם מחשבה דאדם קדמון לא תפיס ביה כו')",
-              "en": "which even the thought of *Adam Kadmon* does not grasp);"
+              "en": "that even *Atika Stima'a* cannot grasp it",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3164, 3170],
+                "start": 1628.57,
+                "end": 1633.18
+              }
             },
             {
-              "he": "ולהיות הרצון והתענוג לברוא כו'",
-              "en": "and that there be the will and delight to create."
+              "he": "ולהיות הרצון והתענוג לברוא כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It is really still for Himself, **only He thinks that the thing should be so in actual revelation**. It is not just *mamash* Himself; it is *mamash* Himself thinking in terms of sitting, so that there will have to be a chair, even though He is not really thinking of a chair.",
+              "text": "It is really still for Himself, only He thinks that the thing should be so in actual revelation. It is not just *mamash* Himself; it is *mamash* Himself thinking in terms of sitting, so that there will have to be a chair, even though He is not really thinking of a chair.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -904,7 +970,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**that there be a revelation of the will and delight to emanate ten sefiros**: but it is not really the will for *Atzilus* yet. The *ratzon kadum* is called *Atika Stima'a*: it is already an *Atik*, but it is hidden. The very beginning of the *Kav* is called *stima d'chol stimin*, which even *Atika Stima'a* cannot grasp. And the sentence reads on past the parenthesis: to emanate ten sefiros, **and that there be the will and delight to create.**",
+              "text": "that there be a revelation of the will and delight to emanate ten sefiros: but it is not really the will for *Atzilus* yet. The *ratzon kadum* is called *Atika Stima'a*: it is already an *Atik*, but it is hidden. The very beginning of the *Kav* is called *stima d'chol stimin*, which even *Atika Stima'a* cannot grasp. And the sentence reads on past the parenthesis: to emanate ten sefiros, and that there be the will and delight to create.",
               "audio": [
                 {
                   "lecture": "025 Tape023-Side1-Ch16.mp3",
@@ -923,20 +989,30 @@
           ],
           "phrases": [
             {
-              "he": "ועתיקא קדישא הוא התענוג שבחכמה",
-              "en": "And *Atika Kadisha* is the delight in *chachma*,"
+              "he": "ועתיקא קדישא הוא התענוג שבחכמה"
             },
             {
               "he": "והוא בחינת עתיק יומין ואריך אנפין דאצילות,",
-              "en": "and it is *Atik Yomin* and *Arich Anpin* of *Atzilus*,"
+              "en": "of *Atzilus*: what is usually called *Atik* and *Arich*",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3237, 3249],
+                "start": 1661.7,
+                "end": 1666.92
+              }
             },
             {
               "he": "שהרצון והתענוג בא בגלוי",
-              "en": "where the will and delight come into revelation,"
+              "en": "*Atik* and *Arich* is the *taanug* and *ratzon hagalui*; that's where the *gilui* is",
+              "audio": {
+                "lecture": "025 Tape023-Side1-Ch16.mp3",
+                "words": [3280, 3295],
+                "start": 1683.85,
+                "end": 1689.18
+              }
             },
             {
-              "he": "כמו שיתבאר הכל דרך פרט)",
-              "en": "as will all be explained in detail.)"
+              "he": "כמו שיתבאר הכל דרך פרט)"
             }
           ],
           "blocks": [
@@ -1112,7 +1188,7 @@
             {
               "kind": "question",
               "question": "Where does this parenthesis start, and where does it end?",
-              "text": "Reading lines 21-23 again: should a parenthesis open before *Atika Kadisha*, with **as will all be explained in detail** as its end? The parenthesis from *ve'lachach* to \"even the thought of *Adam Kadmon* does not grasp it\" ends by itself. \"No, but this parenthesis starts *uvilshon haZohar*, it starts all the way up\": the one that ends at **in detail** begins at \"In the language of the *Zohar*\" in line 14. \"Yeah, it's so weird.\" \"This whole thing has been a parenthesis.\"",
+              "text": "Reading lines 21-23 again: should a parenthesis open before *Atika Kadisha*, with as will all be explained in detail as its end? The parenthesis from *ve'lachach* to \"even the thought of *Adam Kadmon* does not grasp it\" ends by itself. \"No, but this parenthesis starts *uvilshon haZohar*, it starts all the way up\": the one that ends at in detail begins at \"In the language of the *Zohar*\" in line 14. \"Yeah, it's so weird.\" \"This whole thing has been a parenthesis.\"",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1179,26 +1255,22 @@
           ],
           "phrases": [
             {
-              "he": "והנה בחינת עשר ספירות דעגולים זה תחת זה הוא כידוע,",
-              "en": "Now, the ten sefiros of the circles, one beneath the other, are as is known:"
+              "he": "והנה בחינת עשר ספירות דעגולים זה תחת זה הוא כידוע,"
             },
             {
-              "he": "שכל עילה מקפת לעלול",
-              "en": "every cause surrounds its effect,"
+              "he": "שכל עילה מקפת לעלול"
             },
             {
-              "he": "ועלול לא ישיג לעילה שלו כי אם בריחוק מקום ממנו,",
-              "en": "and the effect does not reach its cause except at a distance of place from it,"
+              "he": "ועלול לא ישיג לעילה שלו כי אם בריחוק מקום ממנו,"
             },
             {
-              "he": "כאשר יהיה האופן בתוך כו'",
-              "en": "\"as a wheel would be within [a wheel].\""
+              "he": "כאשר יהיה האופן בתוך כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The tape picks up with the reading. Until now he was talking about the *machshava kduma*; now he is going to explain the circles and *yosher*. **every cause surrounds its effect, and the effect does not reach its cause except at a distance of place from it.**",
+              "text": "The tape picks up with the reading. Until now he was talking about the *machshava kduma*; now he is going to explain the circles and *yosher*. every cause surrounds its effect, and the effect does not reach its cause except at a distance of place from it.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1218,38 +1290,52 @@
           ],
           "phrases": [
             {
-              "he": "ויובן זה מהרצון הבא בגלוי גמור",
-              "en": "This can be understood from the will that comes in complete revelation:"
+              "he": "ויובן זה מהרצון הבא בגלוי גמור"
             },
             {
               "he": "שגם שכלול הרצון הזה מי', חכמה ומדות,",
-              "en": "although this will includes ten, *chachma* and *middos*,"
+              "en": "Even though it has ten *sefiros*,",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2362, 2368],
+                "start": 1122.98,
+                "end": 1124.8
+              }
             },
             {
               "he": "אבל תחלתו בא רק בהסכם א'",
-              "en": "at its start it comes only as one consent,"
+              "en": "when it comes in the beginning, it just comes as one *heskem*, one *ratzon*",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2369, 2382],
+                "start": 1124.9,
+                "end": 1128.16
+              }
             },
             {
-              "he": "בלי התחלקות ניכר בו",
-              "en": "with no division noticeable in it."
+              "he": "בלי התחלקות ניכר בו"
             },
             {
               "he": "והוא הנקרא עיגול רצון כללי",
-              "en": "And this is called the circle of general will,"
+              "en": "So even in a lower *ratzon*, *ratzon galui*, it first comes as an *igul klali*.",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2390, 2405],
+                "start": 1134.76,
+                "end": 1142.09
+              }
             },
             {
-              "he": "מקיף לכל מה שבא בתוכו מכחו דוקא,",
-              "en": "surrounding all that comes within it, *davka* from its power,"
+              "he": "מקיף לכל מה שבא בתוכו מכחו דוקא,"
             },
             {
-              "he": "אך בריחוק מקום",
-              "en": "but at a distance of place."
+              "he": "אך בריחוק מקום"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Here we are talking about the *ratzon kadum*, and now he makes an analogy from the revealed will. When you first have a will, it is just a will. Even though it has ten sefiros, at the beginning it comes as one consent, one will. So even a lower will, a revealed will, comes first as a general circle, **surrounding all that comes within it**.",
+              "text": "Here we are talking about the *ratzon kadum*, and now he makes an analogy from the revealed will. When you first have a will, it is just a will. Even though it has ten sefiros, at the beginning it comes as one consent, one will. So even a lower will, a revealed will, comes first as a general circle, surrounding all that comes within it.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1269,34 +1355,49 @@
           ],
           "phrases": [
             {
-              "he": "כמו הטעם ושכל לרצון זה, שנקרא עלול שלו",
-              "en": "Like the *taam* (reason) and intellect for this will, which is called its effect:"
+              "he": "כמו הטעם ושכל לרצון זה, שנקרא עלול שלו"
             },
             {
               "he": "אי אפשר שיהיה קרוב בערך אל עילתו, שהוא הרצון,",
-              "en": "it cannot be close in value to its cause, which is the will,"
+              "en": "The *taam* cannot get close to the *ratzon*,",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2445, 2452],
+                "start": 1160.3,
+                "end": 1165.2
+              }
             },
             {
               "he": "כי הרי אין טעם לרצון כלל כידוע,",
-              "en": "for there is no reason for a will at all, as is known,"
+              "en": "because really there is no actual reason for a *ratzon*",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2453, 2462],
+                "start": 1165.3,
+                "end": 1167.87
+              }
             },
             {
               "he": "ולעולם לא ישיגנו",
-              "en": "and it will never reach it;"
+              "en": "it's not possible to understand it",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2468, 2473],
+                "start": 1169.24,
+                "end": 1171.98
+              }
             },
             {
-              "he": "אבל מכל מקום מכח הרצון נעשה עיגול החכמה גם כן",
-              "en": "but nevertheless, from the power of the will the circle of *chachma* is made too,"
+              "he": "אבל מכל מקום מכח הרצון נעשה עיגול החכמה גם כן"
             },
             {
-              "he": "בלי התחלקות ניכר ליה כו'",
-              "en": "also with no division noticeable in it."
+              "he": "בלי התחלקות ניכר ליה כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Really, **there is no reason for a will**. The reason cannot get close to the will, because there is really no actual reason for a will. It is not possible to understand it, because it has no *sechel*: there is no *sechel* to a will.",
+              "text": "Really, there is no reason for a will. The reason cannot get close to the will, because there is really no actual reason for a will. It is not possible to understand it, because it has no *sechel*: there is no *sechel* to a will.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1308,7 +1409,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**the circle of *chachma***: it is not actually *chachma*. It is a circle of *chachma*, meaning a will of *chachma*: either the *chachma* to come up with a way to get what is willed, or else a *chachma* to rationalize the will.",
+              "text": "the circle of *chachma*: it is not actually *chachma*. It is a circle of *chachma*, meaning a will of *chachma*: either the *chachma* to come up with a way to get what is willed, or else a *chachma* to rationalize the will.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1326,19 +1427,21 @@
           ],
           "phrases": [
             {
-              "he": "כמו משל השוחד,",
-              "en": "As in the analogy of the *shochad* (the bribe):"
-            },
-            {
-              "he": "שימצא טעם לרצון",
-              "en": "that it should find a reason for the will."
+              "he": "כמו משל השוחד, שימצא טעם לרצון",
+              "en": "the *shochad* is that he should find a reason for the *ratzon*",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [2567, 2577],
+                "start": 1209.16,
+                "end": 1213.76
+              }
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "The bribe",
-              "text": "**As in the analogy of the *shochad***: the bribe is that he should find a reason for the will. That is what is called rationalization.",
+              "text": "As in the analogy of the *shochad*: the bribe is that he should find a reason for the will. That is what is called rationalization.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1371,30 +1474,25 @@
           ],
           "phrases": [
             {
-              "he": "וגם שבטעם זה כלול גם כן מיו''ד, רצון ושכל ומדות,",
-              "en": "And although this reason too includes ten, will, intellect and *middos*,"
+              "he": "וגם שבטעם זה כלול גם כן מיו''ד, רצון ושכל ומדות,"
             },
             {
-              "he": "אבל נעשה בבחינת כללי כו'",
-              "en": "it is made in a general way;"
+              "he": "אבל נעשה בבחינת כללי כו'"
             },
             {
-              "he": "ועל דרך זה לא ישיגנו העיגול דבינה שנעשה מכחו,",
-              "en": "in the same way the circle of *bina*, which is made from its power, does not reach it;"
+              "he": "ועל דרך זה לא ישיגנו העיגול דבינה שנעשה מכחו,"
             },
             {
-              "he": "ועל דרך זה המדות זה תחת זה עד סוף מעשה",
-              "en": "and in the same way the *middos*, one beneath the other, down to the end of the deed,"
+              "he": "ועל דרך זה המדות זה תחת זה עד סוף מעשה"
             },
             {
-              "he": "שהוא עיגול האחרון",
-              "en": "which is the last circle."
+              "he": "שהוא עיגול האחרון"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The reason has to include will, intellect and *middos*, but **it is made in a general way**: basically it is just a will to have a reason for the will. And **in the same way the circle of *bina***: a will to come up with an analysis for the reason.",
+              "text": "The reason has to include will, intellect and *middos*, but it is made in a general way: basically it is just a will to have a reason for the will. And in the same way the circle of *bina*: a will to come up with an analysis for the reason.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1438,7 +1536,7 @@
             },
             {
               "kind": "aside",
-              "text": "**and in the same way the *middos*, one beneath the other, down to the end of the deed**. You see the same thing in politics. It could be a guy you can't stand, but he's a Republican and you're a Republican, so you like him, just because he's a Republican. So why do you like him?",
+              "text": "and in the same way the *middos*, one beneath the other, down to the end of the deed. You see the same thing in politics. It could be a guy you can't stand, but he's a Republican and you're a Republican, so you like him, just because he's a Republican. So why do you like him?",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1465,21 +1563,32 @@
           "phrases": [
             {
               "he": "והכל ברצונו לעצמו",
-              "en": "And all of it is in His will for Himself,"
+              "en": "It's only the *ratzon* for Himself still",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3073, 3079],
+                "start": 1433.34,
+                "end": 1435.5
+              }
             },
             {
-              "he": "כלול הכל עד סוף מעשה",
-              "en": "including everything down to the end of the deed,"
+              "he": "כלול הכל עד סוף מעשה"
             },
             {
               "he": "שהוא הפנימי מכולם כו'",
-              "en": "which is the innermost of them all."
+              "en": "that's the innermost of all of them",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3110, 3116],
+                "start": 1448.22,
+                "end": 1450.04
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "None of this whole thing is actually any kind of *sechel* or *midda*. They are all the will itself, still only the will for Himself, **down to the end of the deed, which is the innermost of them all**: all the way to where He thinks inside of Himself how wonderful it would be to actually have a thing like this happen. That is the innermost of all of them.",
+              "text": "None of this whole thing is actually any kind of *sechel* or *midda*. They are all the will itself, still only the will for Himself, down to the end of the deed, which is the innermost of them all: all the way to where He thinks inside of Himself how wonderful it would be to actually have a thing like this happen. That is the innermost of all of them.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1505,38 +1614,38 @@
           ],
           "phrases": [
             {
-              "he": "וכך הוא ברצון הנעלם הנקרא רצון הקדום הנזכר לעיל,",
-              "en": "And so it is in the hidden will called the *ratzon kadum* mentioned above,"
+              "he": "וכך הוא ברצון הנעלם הנקרא רצון הקדום הנזכר לעיל,"
             },
             {
-              "he": "מקור כל הרצונות",
-              "en": "the source of all wills:"
+              "he": "מקור כל הרצונות"
             },
             {
-              "he": "כלול מי׳ ספירות על דרך זה,",
-              "en": "it includes ten sefiros in this way,"
+              "he": "כלול מי׳ ספירות על דרך זה,"
             },
             {
-              "he": "עיגול בתוך עיגול עד עיגול דסוף מעשה,",
-              "en": "circle within circle, down to the circle of the end of the deed,"
+              "he": "עיגול בתוך עיגול עד עיגול דסוף מעשה,"
             },
             {
               "he": "שהוא הרצון לסוף מעשה,",
-              "en": "which is the will for the end of the deed,"
+              "en": "it's a *ratzon* for the *sof maaseh*",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3182, 3187],
+                "start": 1480.94,
+                "end": 1482.63
+              }
             },
             {
-              "he": "להיות כל אשר חפץ עושה בפועל ממש כו'",
-              "en": "that all He desires He does, in actual fact;"
+              "he": "להיות כל אשר חפץ עושה בפועל ממש כו'"
             },
             {
-              "he": "והעיגול העליון הכולל הכל הוא רצון הקדום הנזכר לעיל",
-              "en": "and the uppermost circle, which includes everything, is the *ratzon kadum* mentioned above."
+              "he": "והעיגול העליון הכולל הכל הוא רצון הקדום הנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The way a revealed will comes, the same is in the hidden will called the *ratzon kadum*: all ten sefiros, **circle within circle, down to the circle of the end of the deed**. It is not actually a circle of deed; it is a will for the end of the deed, **that all He desires He does**, and basically the whole thing is nothing but a daydream.",
+              "text": "The way a revealed will comes, the same is in the hidden will called the *ratzon kadum*: all ten sefiros, circle within circle, down to the circle of the end of the deed. It is not actually a circle of deed; it is a will for the end of the deed, that all He desires He does, and basically the whole thing is nothing but a daydream.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1555,17 +1664,29 @@
           "phrases": [
             {
               "he": "וכשבא הרצון לעצמו הזה להיות בפועל ממש",
-              "en": "And when this will for Himself comes to be in actual fact,"
+              "en": "when it comes to actually being *b'poel mamash*",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3221, 3228],
+                "start": 1505.14,
+                "end": 1507.88
+              }
             },
             {
               "he": "הרי הוא להיפוך",
-              "en": "it is the opposite:"
+              "en": "then it has to be the opposite:",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3362, 3368],
+                "start": 1565.02,
+                "end": 1566.62
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**when this will for Himself comes to be in actual fact**: in order to have *yosher* you have to have circles first, because the circles are the daydream, the ambitions. Without the circles you would not have the *yosher*: without the first will and all the wills inside it, all the way down to the will for the deed. The *Malchus* of the circles becomes the *Keser* of *yosher*.",
+              "text": "when this will for Himself comes to be in actual fact: in order to have *yosher* you have to have circles first, because the circles are the daydream, the ambitions. Without the circles you would not have the *yosher*: without the first will and all the wills inside it, all the way down to the will for the deed. The *Malchus* of the circles becomes the *Keser* of *yosher*.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1577,7 +1698,7 @@
             },
             {
               "kind": "explanation",
-              "text": "When it goes all the way to the end of the deed, he is sitting around daydreaming about the thing, how nice it would be. And then from that he says, \"You know, but let's actually do it.\" Then **it is the opposite**.",
+              "text": "When it goes all the way to the end of the deed, he is sitting around daydreaming about the thing, how nice it would be. And then from that he says, \"You know, but let's actually do it.\" Then it is the opposite.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1596,11 +1717,16 @@
           "phrases": [
             {
               "he": "שהרצון מתעלם ומתלבש בשכל",
-              "en": "the will is hidden and dressed in the intellect,"
+              "en": "the *ratzon* has to be *misalem* and *mislabesh* in the *sechel*,",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3601, 3611],
+                "start": 1646.34,
+                "end": 1648.82
+              }
             },
             {
-              "he": "והשכל מקיפו",
-              "en": "and the intellect surrounds it."
+              "he": "והשכל מקיפו"
             }
           ],
           "blocks": [
@@ -1619,7 +1745,7 @@
             },
             {
               "kind": "explanation",
-              "text": "All the way down to the will for the deed itself, he is sitting around dreaming how nice it will be to have a house. And in the daydream the house is an infinite house, because that is how it is in the will. Then he decides: \"You know, let's go and do the actual thing.\" So now he has to think. He has to get rid of the will and see what is really going on here. How much money does he have? Can he really have a house like this? The *sechel* has to take over: **the will is hidden and dressed in the intellect, and the intellect surrounds it.**",
+              "text": "All the way down to the will for the deed itself, he is sitting around dreaming how nice it will be to have a house. And in the daydream the house is an infinite house, because that is how it is in the will. Then he decides: \"You know, let's go and do the actual thing.\" So now he has to think. He has to get rid of the will and see what is really going on here. How much money does he have? Can he really have a house like this? The *sechel* has to take over: the will is hidden and dressed in the intellect, and the intellect surrounds it.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1641,49 +1767,77 @@
           "phrases": [
             {
               "he": "והשכל מתעלם ומתלבש במדות זה תחת זה עד סוף מעשה,",
-              "en": "And the intellect is hidden and dressed in the *middos*, one beneath the other, down to the end of the deed,"
+              "en": "And then the *sechel*, the *chachma*, has to be actually *misalem* and *mislabesh* in the actual, a real analysis of what's really going on here. And then it has to be *mislabesh* in the *middos*, *zu tachas zu ad sof maaseh*,",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3614, 3654],
+                "start": 1651.06,
+                "end": 1665.04
+              }
             },
             {
               "he": "הוא העליון מהכל",
-              "en": "which is the uppermost of all;"
+              "en": "That's the topmost.",
+              "audio": {
+                "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
+                "words": [3668, 3670],
+                "start": 1683.6,
+                "end": 1684.88
+              }
             },
             {
-              "he": "דהיינו כח המעשה בפועל ממש",
-              "en": "that is, the power of action, in actual fact:"
+              "he": "דהיינו כח המעשה בפועל ממש"
             },
             {
               "he": "הרי בו מלובש המחשבה",
-              "en": "in it is dressed the thought,"
+              "en": "In what a person does you can see what he's thinking,",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [25, 35],
+                "start": 17.2,
+                "end": 20.22
+              }
             },
             {
               "he": "ובמחשבה מלובש המדות",
-              "en": "and in the thought the *middos*,"
+              "en": "in what he's thinking you can see what his *middos* are.",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [36, 46],
+                "start": 20.17,
+                "end": 22.3
+              }
             },
             {
-              "he": "ובמדות מלובש החכמה ובינה",
-              "en": "and in the *middos* *chachma* and *bina*,"
+              "he": "ובמדות מלובש החכמה ובינה"
             },
             {
-              "he": "ובחכמה מלובש הרצון והתענוג",
-              "en": "and in *chachma* the will and the delight."
+              "he": "ובחכמה מלובש הרצון והתענוג"
             },
             {
-              "he": "ונמצא פנימי מכולם הוא הרצון והתענוג,",
-              "en": "So the innermost of all is the will and the delight,"
+              "he": "ונמצא פנימי מכולם הוא הרצון והתענוג,"
             },
             {
-              "he": "וחיצון שבכולם הוא המעשה גרוע כו'",
-              "en": "and the outermost of all is the deed, the lowest thing."
+              "he": "וחיצון שבכולם הוא המעשה"
             },
             {
-              "he": "והוא בבחינת היושר כשבא בבחינת התלבשות העליון בתחתון כו'",
-              "en": "And this is in *yosher*, when it comes as the upper dressing in the lower."
+              "he": "גרוע כו'",
+              "en": "the lowest thing.",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [70, 72],
+                "start": 32.02,
+                "end": 32.7
+              }
+            },
+            {
+              "he": "והוא בבחינת היושר כשבא בבחינת התלבשות העליון בתחתון כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Then the *sechel*, the *chachma*, has to be actually hidden and dressed in a real analysis of what is really going on here, and then dressed in **the *middos*, one beneath the other, down to the end of the deed, which is the uppermost of all**.",
+              "text": "Then the *sechel*, the *chachma*, has to be actually hidden and dressed in a real analysis of what is really going on here, and then dressed in the *middos*, one beneath the other, down to the end of the deed, which is the uppermost of all.",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1695,7 +1849,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**which is the uppermost of all**: it says that He made man *yashar* (straight), and when you look at a person you see him in the way of *yosher*. What you are seeing in a person is the deed, the outside of everything, which stands on top. Inside his deed are his emotions; from what he is doing and what he is saying you can tell…",
+              "text": "which is the uppermost of all: it says that He made man *yashar* (straight), and when you look at a person you see him in the way of *yosher*. What you are seeing in a person is the deed, the outside of everything, which stands on top. Inside his deed are his emotions; from what he is doing and what he is saying you can tell…",
               "audio": [
                 {
                   "lecture": "026 Edited Tape023-Side2-Ch17.mp3",
@@ -1707,7 +1861,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**the power of action, in actual fact**, as you see in a person: in what a person does you can see what he is thinking, and in what he is thinking you can see what his *middos* are; in the *middos* are dressed *chachma* and *bina*, and in *chachma* the will and the delight. **So the innermost of all is the will and the delight, and the outermost of all is the deed, the lowest thing.** And it is actually an enclothement: the will is actually dressed in the *sechel*.",
+              "text": "the power of action, in actual fact, as you see in a person: in what a person does you can see what he is thinking, and in what he is thinking you can see what his *middos* are; in the *middos* are dressed *chachma* and *bina*, and in *chachma* the will and the delight. So the innermost of all is the will and the delight, and the outermost of all is the deed, the lowest thing. And it is actually an enclothement: the will is actually dressed in the *sechel*.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1734,29 +1888,38 @@
           "phrases": [
             {
               "he": "אבל בבחינת רצון הקדום הנזכר לעיל שעדיין הוא בעצמו,",
-              "en": "But in the *ratzon kadum* mentioned above, which is still within Himself,"
+              "en": "the *ratzon kadum*: He's still inside of Himself, it didn't go to the outside yet;",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [101, 117],
+                "start": 52.04,
+                "end": 56.12
+              }
             },
             {
               "he": "על כן נמשך בבחינת עיגולים",
-              "en": "it therefore comes in the way of circles,"
+              "en": "therefore it comes in the way of *igulim*,",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [123, 130],
+                "start": 61.62,
+                "end": 63.62
+              }
             },
             {
-              "he": "שהעליון מהכל הוא העלם הרצון הכולל הזה",
-              "en": "where the uppermost of all is the hiddenness of this all-including will;"
+              "he": "שהעליון מהכל הוא העלם הרצון הכולל הזה"
             },
             {
-              "he": "ועיגול הראשון שבו הוא הרצון ותענוג לכללות כל השתלשלות שבתוכו,",
-              "en": "and its first circle is the will and delight for the whole chain within it,"
+              "he": "ועיגול הראשון שבו הוא הרצון ותענוג לכללות כל השתלשלות שבתוכו,"
             },
             {
-              "he": "ועיגול זה מקיף כללי לאבי''ע כנזכר לעיל",
-              "en": "and this circle is a general *makif* (encompassing light) for *ABYA*, as mentioned above."
+              "he": "ועיגול זה מקיף כללי לאבי''ע כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But in the *ratzon kadum* … which is still within Himself**: the *ratzon kadum* is really still inside of Himself; it has not gone to the outside yet. Therefore it comes in the way of circles, **where the uppermost of all is the hiddenness of this all-including will**, and its first circle is the general *makif* of *ABYA*.",
+              "text": "But in the *ratzon kadum* … which is still within Himself: the *ratzon kadum* is really still inside of Himself; it has not gone to the outside yet. Therefore it comes in the way of circles, where the uppermost of all is the hiddenness of this all-including will, and its first circle is the general *makif* of *ABYA*.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1778,62 +1941,56 @@
           ],
           "phrases": [
             {
-              "he": "וראשית הקו הוא בחינת המשכה היולית",
-              "en": "And the beginning of the *Kav* is a *hiyuli* drawing-down,"
+              "he": "וראשית הקו הוא בחינת המשכה היולית"
             },
             {
-              "he": "כמו קו קצר המתצמצם מעילה לעלול,",
-              "en": "like a short line contracted from cause to effect,"
+              "he": "כמו קו קצר המתצמצם מעילה לעלול,"
             },
             {
               "he": "כמו מן הרצון לחכמה",
-              "en": "as from the will to *chachma*,"
+              "en": "from the *ratzon* to *chachma* there's only a little thing goes through, not the whole thing goes through",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [169, 186],
+                "start": 87.99,
+                "end": 92.06
+              }
             },
             {
-              "he": "וכהאי גוונא",
-              "en": "and the like:"
+              "he": "וכהאי גוונא"
             },
             {
-              "he": "כך מבחינת הרשימו הנזכר לעיל",
-              "en": "so from the *reshimu* mentioned above"
+              "he": "כך מבחינת הרשימו הנזכר לעיל"
             },
             {
-              "he": "נמשך קו בצמצום גדול מאד",
-              "en": "a line is drawn, in a very great contraction."
+              "he": "נמשך קו בצמצום גדול מאד"
             },
             {
-              "he": "דהגם שהרשימו הוא בא בהגבלה כנזכר לעיל,",
-              "en": "For although the *reshimu* comes in limitation, as mentioned above,"
+              "he": "דהגם שהרשימו הוא בא בהגבלה כנזכר לעיל,"
             },
             {
-              "he": "אבל הוא מבחינת עולם האין סוף על כל פנים,",
-              "en": "it is still of the world of the *Ein Sof*, at any rate,"
+              "he": "אבל הוא מבחינת עולם האין סוף על כל פנים,"
             },
             {
-              "he": "רק שהוא בחינת האחרונה שנעשה בקיצור כו'",
-              "en": "only it is the last level, made in shortened form;"
+              "he": "רק שהוא בחינת האחרונה שנעשה בקיצור כו'"
             },
             {
-              "he": "מה שאין כן להיות רצון קדום שהוא בא לכלל השפעה חוץ מעולם האין סוף",
-              "en": "whereas for the *ratzon kadum* to be, which comes to the point of flowing outside the world of the *Ein Sof*,"
+              "he": "מה שאין כן להיות רצון קדום שהוא בא לכלל השפעה חוץ מעולם האין סוף"
             },
             {
-              "he": "רק שהוא היולי כולל הכל כו'",
-              "en": "only it is a *hiyuli* that includes everything;"
+              "he": "רק שהוא היולי כולל הכל כו'"
             },
             {
-              "he": "על כן נמשך דרך קו קצר כו'",
-              "en": "therefore it is drawn by way of a short line,"
+              "he": "על כן נמשך דרך קו קצר כו'"
             },
             {
-              "he": "ודי למבין",
-              "en": "and this suffices for one who understands."
+              "he": "ודי למבין"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**as from the will to *chachma***: from the will to *chachma* only a little thing goes through; not the whole thing goes through. **so from the *reshimu* … a line is drawn, in a very great contraction.**",
+              "text": "as from the will to *chachma*: from the will to *chachma* only a little thing goes through; not the whole thing goes through. so from the *reshimu* … a line is drawn, in a very great contraction.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1845,7 +2002,7 @@
             },
             {
               "kind": "explanation",
-              "text": "The *reshimu* is a limitation only in regard to the *Ein Sof*; in regard to what comes after it, it is itself *Ein Sof*. So even though you say that the *reshimu* is nothing, to come down to the *ratzon kadum* you have to make a *tzimtzum* even from that. That is why it is only **by way of a short line**.",
+              "text": "The *reshimu* is a limitation only in regard to the *Ein Sof*; in regard to what comes after it, it is itself *Ein Sof*. So even though you say that the *reshimu* is nothing, to come down to the *ratzon kadum* you have to make a *tzimtzum* even from that. That is why it is only by way of a short line.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1866,33 +2023,48 @@
           "phrases": [
             {
               "he": "(והוא מה שכתוב בעץ חיים דכל עיקר הארת הקו אינו רק להיות בחינת מעלה ומטה",
-              "en": "(And this is what is written in *Etz Chaim*, that the whole point of the shining of the *Kav* is only that there be up and down,"
+              "en": "The whole thing of the *Kav* is only to have up and down,",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [311, 323],
+                "start": 160.9,
+                "end": 163.24
+              }
             },
             {
               "he": "כמו ביו''ד עגולים עד סוף מעשה כו'",
-              "en": "as in the ten circles, down to the end of the deed;"
+              "en": "to make ten *igulim* one above the other till *sof maaseh*",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [333, 343],
+                "start": 167.1,
+                "end": 170.02
+              }
             },
             {
-              "he": "מה שאין כן בעולם האין סוף אין שם אפילו בחינת מעלה ומטה,",
-              "en": "whereas in the world of the *Ein Sof* there is not even up and down,"
+              "he": "מה שאין כן בעולם האין סוף אין שם אפילו בחינת מעלה ומטה,"
             },
             {
               "he": "רק אחדות פשוט בתכלית כנזכר לעיל",
-              "en": "only utterly simple unity, as mentioned above;"
+              "en": "it's all one thing",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [384, 387],
+                "start": 185.85,
+                "end": 186.68
+              }
             },
             {
-              "he": "וגם ששיער בעצמו מה שעתיד כו'",
-              "en": "and even though He gauged in Himself what would be,"
+              "he": "וגם ששיער בעצמו מה שעתיד כו'"
             },
             {
-              "he": "הכל הוא בעצמותו ממש שהוא בבחינת אין סוף ממש",
-              "en": "it is all in His very Essence, which is *Ein Sof* *mamash*."
+              "he": "הכל הוא בעצמותו ממש שהוא בבחינת אין סוף ממש"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The whole thing of the *Kav* is only to have up and down: to make ten circles, one above the other, down to the end of the deed, to have an order of wills. **whereas in the world of the *Ein Sof***, meaning including the *reshimu*, **there is not even up and down**: no up and down between *chachma* and *bina*, or between *middos* and *sechel*. It is all one thing.",
+              "text": "The whole thing of the *Kav* is only to have up and down: to make ten circles, one above the other, down to the end of the deed, to have an order of wills. whereas in the world of the *Ein Sof*, meaning including the *reshimu*, there is not even up and down: no up and down between *chachma* and *bina*, or between *middos* and *sechel*. It is all one thing.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1905,7 +2077,7 @@
             {
               "kind": "mashal",
               "title": "Knowing a man's taste",
-              "text": "**it is all in His very Essence**: it is not an actual thing separate from the *Atzmus*. That He gauged in Himself what would be is like a taste: from a person's taste you can tell what he would like, but there is nothing actually there other than just the person. It does not mean there is an actual separate will.",
+              "text": "it is all in His very Essence: it is not an actual thing separate from the *Atzmus*. That He gauged in Himself what would be is like a taste: from a person's taste you can tell what he would like, but there is nothing actually there other than just the person. It does not mean there is an actual separate will.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -1926,23 +2098,39 @@
           "phrases": [
             {
               "he": "ולזה אמר בעץ חיים דגם בבחינת מלכות דאין סוף אין רשאים לדבר כו'",
-              "en": "That is why *Etz Chaim* says that even of *Malchus* of the *Ein Sof* one may not speak;"
+              "en": "even *Malchus d'Ein Sof*, you're still not allowed to talk;",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [468, 478],
+                "start": 220.88,
+                "end": 223.62
+              }
             },
             {
               "he": "רק בבחינת הקו ובחינת אדם קדמון כו'",
-              "en": "only of the *Kav* and *Adam Kadmon*,"
+              "en": "you're only allowed by the *bechinas hakav*",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [503, 509],
+                "start": 234.3,
+                "end": 236.18
+              }
             },
             {
-              "he": "שהוא בחינת מקור הראשון לכל ההשתלשלות,",
-              "en": "which is the first source of the whole *hishtalshelus* (chain of descent),"
+              "he": "שהוא בחינת מקור הראשון לכל ההשתלשלות,"
             },
             {
               "he": "יוכל לבא בהשגה בריבוי ההשתלשלות עד עשר ספירות שבאצילות בבי''ע כו'",
-              "en": "can one come to grasp, in the many steps of the chain, down to the ten sefiros of *Atzilus* in *Beriya, Yetzira and Asiya*,"
+              "en": "there you can come in *hasaga* with all kinds of *meshalim*, till you have the *mashal* of how the ten *sefiros* of *Atzilus* are in *Beriya, Yetzira and Asiya*",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [562, 591],
+                "start": 258.28,
+                "end": 271.76
+              }
             },
             {
-              "he": "מאחר שנקרא בשם עילת כל העילות כו' או קדמון כו'",
-              "en": "since it is called by the name \"Cause of all causes\" or *Kadmon*."
+              "he": "מאחר שנקרא בשם עילת כל העילות כו' או קדמון כו'"
             }
           ],
           "blocks": [
@@ -1980,32 +2168,33 @@
           ],
           "phrases": [
             {
-              "he": "אבל בעצמות אור אין סוף לית מחשבה תפיסא ביה,",
-              "en": "But in the Essence of the *Or Ein Sof*, \"no thought grasps Him,\""
+              "he": "אבל בעצמות אור אין סוף לית מחשבה תפיסא ביה, אפילו מחשבה הקדומה הנזכר לעיל",
+              "en": "even the *machshava kduma* cannot grasp in *Atzmus Or Ein Sof*,",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [645, 656],
+                "start": 299.32,
+                "end": 305.18
+              }
             },
             {
-              "he": "אפילו מחשבה הקדומה הנזכר לעיל",
-              "en": "not even the primordial thought mentioned above,"
+              "he": "להיות כי העולם האין סוף נבדל בערך ונקרא קדוש לגמרי מצד הצמצום הנזכר לעיל",
+              "en": "because the *helem* of the *Ein Sof* totally has nothing to do with after the *tzimtzum*.",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [670, 683],
+                "start": 310.68,
+                "end": 315
+              }
             },
             {
-              "he": "להיות כי העולם האין סוף נבדל בערך ונקרא קדוש לגמרי",
-              "en": "because the world of the *Ein Sof* is separate in value and is called utterly holy"
+              "he": "ובחינת רצון קדום הנזכר לעיל נקרא שמו הגדול,"
             },
             {
-              "he": "מצד הצמצום הנזכר לעיל",
-              "en": "because of the *tzimtzum* mentioned above."
+              "he": "שמו גימטריא רצון,"
             },
             {
-              "he": "ובחינת רצון קדום הנזכר לעיל נקרא שמו הגדול,",
-              "en": "And the *ratzon kadum* mentioned above is called His great Name:"
-            },
-            {
-              "he": "שמו גימטריא רצון,",
-              "en": "*shemo* (His Name) has the numerical value of *ratzon*;"
-            },
-            {
-              "he": "והוא ענין יהא שמיה רבה מברך כו'",
-              "en": "and this is \"May His great Name be blessed.\""
+              "he": "והוא ענין יהא שמיה רבה מברך כו'"
             }
           ],
           "blocks": [
@@ -2023,7 +2212,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**\"May His great Name be blessed\"**: the great Name means that the upper, general will should come down to here; that the original *machshava kduma*, which is for the end of the deed of the seventh millennium, should come down to here: that *Moshiach* should come.",
+              "text": "\"May His great Name be blessed\": the great Name means that the upper, general will should come down to here; that the original *machshava kduma*, which is for the end of the deed of the seventh millennium, should come down to here: that *Moshiach* should come.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -2043,24 +2232,26 @@
           ],
           "phrases": [
             {
-              "he": "(וכידוע דבחינת אדם קדמון נקרא אדם דבריאה כו'",
-              "en": "(As is known, *Adam Kadmon* is called the man of creation,"
+              "he": "(וכידוע דבחינת אדם קדמון נקרא אדם דבריאה כו'"
             },
             {
-              "he": "וכמו שיתבאר",
-              "en": "as will be explained;"
+              "he": "וכמו שיתבאר"
             },
             {
               "he": "מה שאין כן בעצמות אור אין סוף נאמר כי לא אדם הוא כו'",
-              "en": "whereas of the Essence of the *Or Ein Sof* it is said, \"For He is not a man\";"
+              "en": "In *Atzmus Or Ein Sof* it says He's not a man.",
+              "audio": {
+                "lecture": "027 Tape024-Side1-Ch17.mp3",
+                "words": [763, 773],
+                "start": 355.86,
+                "end": 360.66
+              }
             },
             {
-              "he": "וכידוע בכונות דנשמת כל חי, שהוא בחינת אדם קדמון כו'",
-              "en": "and as is known in the *kavanos* of *Nishmas kol chai*, that it is *Adam Kadmon*, etc.;"
+              "he": "וכידוע בכונות דנשמת כל חי, שהוא בחינת אדם קדמון כו'"
             },
             {
-              "he": "ודי למבין):",
-              "en": "and this suffices for one who understands.)"
+              "he": "ודי למבין):"
             }
           ],
           "blocks": [
@@ -2235,7 +2426,7 @@
       ]
     },
     {
-      "text": "Where he only reads (lines 1-3, 16-18, 20-23, 41-62 largely), the phrases are a plain literal rendering in his words elsewhere, not his own translation.",
+      "text": "A phrase's English is only Rabbi Markel's own rendering in class, anchored to where he says it; where he only reads the Hebrew (lines 1-3, 16-18, 24 and most of 41-62) or only explains it, the phrase has no English.",
       "lines": [
         "zmrrqmag",
         "msl6ha2b",
@@ -2253,6 +2444,18 @@
       "text": "Class 026 has Sofer's word times, not re-timed ones; its seconds may be off.",
       "lines": [
         "my3xkqc7"
+      ]
+    },
+    {
+      "text": "027 w670-683: he reads ha'olam ha'Ein Sof as he'elem ha'Ein Sof, and his English keeps it (\"the helem of the Ein Sof\"); the phrase's English follows what he says.",
+      "lines": [
+        "tvtir6tt"
+      ]
+    },
+    {
+      "text": "025 w3228-3249: with no speakers in the transcript, \"Atika Kadisha is Atik and Arich... of Atzilus, means what is usually called Atik and Arich\" may be partly the student's; it is taken as the class's rendering of line 23.",
+      "lines": [
+        "ajxsi7j3"
       ]
     }
   ]

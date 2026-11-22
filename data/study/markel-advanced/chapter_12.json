@@ -107,34 +107,42 @@
           ],
           "phrases": [
             {
-              "he": "(יב) ומעתה יש להבין ביאור ענין הצמצום הראשון הנזכר לעיל",
-              "en": "(12) Now we must understand the explanation of the first *tzimtzum* (contraction) mentioned above,"
+              "he": "(יב) ומעתה יש להבין ביאור ענין הצמצום הראשון הנזכר לעיל"
             },
             {
-              "he": "ובחינת הרשימו שנשאר כו'",
-              "en": "and the *reshimu* (impression) that remained."
+              "he": "ובחינת הרשימו שנשאר כו'"
             },
             {
               "he": "הגם שידוע ליודעים,",
-              "en": "Even though it is known to those who know,"
+              "en": "even though in general people know about this,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [34, 41],
+                "start": 19,
+                "end": 21.82
+              }
             },
             {
-              "he": "הרי יש בזה פרטים רבים",
-              "en": "there are many *pratim* (particulars) in it,"
+              "he": "הרי יש בזה פרטים רבים"
             },
             {
-              "he": "וצריך להעמיק הדעת בהם ביותר",
-              "en": "and one has to go very deep into them,"
+              "he": "וצריך להעמיק הדעת בהם ביותר"
             },
             {
               "he": "כי זהו עיקר היחוד האמיתי בעצמות אור אין סוף",
-              "en": "for this is the main thing of the true unity in the Essence of the *Or Ein Sof*:"
+              "en": "the main thing in understanding in terms of the *yichud* is to understand the *inyan* of the *tzimtzum* and *reshimu*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [62, 83],
+                "start": 32.02,
+                "end": 38.38
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Now the *inyan* is going to be the *inyan* of the *tzimtzum* and the *reshimu*. **Even though it is known to those who know**: in general people know about this. But **there are many *pratim* (particulars) in it**, and one has to go deep into them, because the main thing in understanding the unity is to understand the *tzimtzum* and the *reshimu*.",
+              "text": "Now the *inyan* is going to be the *inyan* of the *tzimtzum* and the *reshimu*. Even though it is known to those who know: in general people know about this. But there are many *pratim* (particulars) in it, and one has to go deep into them, because the main thing in understanding the unity is to understand the *tzimtzum* and the *reshimu*.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -154,26 +162,22 @@
           ],
           "phrases": [
             {
-              "he": "איך דכולא קמיה כלא כו',",
-              "en": "how everything before Him is as nothing,"
+              "he": "איך דכולא קמיה כלא כו',"
             },
             {
-              "he": "גם בבחינת כללות כל ההשתלשלות דקו וכו'",
-              "en": "even the whole of the *hishtalshelus* (chain of descent) of the *Kav*,"
+              "he": "גם בבחינת כללות כל ההשתלשלות דקו וכו'"
             },
             {
-              "he": "עד שיוכל אדם לכוון רצונו במסירת נפש לעצמות אור אין סוף לבדו",
-              "en": "until a person can direct his will, with *mesirus nefesh* (self-sacrifice), to the Essence of the *Or Ein Sof* alone,"
+              "he": "עד שיוכל אדם לכוון רצונו במסירת נפש לעצמות אור אין סוף לבדו"
             },
             {
-              "he": "כמו שכתוב אתה הוא יהו״ה לבדך, אתה כו',",
-              "en": "as it is written, \"You are He, *Havaya*, alone; You...\""
+              "he": "כמו שכתוב אתה הוא יהו״ה לבדך, אתה כו',"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "What one has to see is that **everything before Him is as nothing**, and not only the details: **even the whole of the *hishtalshelus* (chain of descent) of the *Kav***. The point of it is that a person should be able to give his will and his *mesirus nefesh* to the Essence of the *Ein Sof* alone, and not get fooled by the whole *hishtalshelus*. **\"You are He, *Havaya*, alone.\"**",
+              "text": "What one has to see is that everything before Him is as nothing, and not only the details: even the whole of the *hishtalshelus* (chain of descent) of the *Kav*. The point of it is that a person should be able to give his will and his *mesirus nefesh* to the Essence of the *Ein Sof* alone, and not get fooled by the whole *hishtalshelus*. \"You are He, *Havaya*, alone.\"",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -192,26 +196,22 @@
           ],
           "phrases": [
             {
-              "he": "וזהו המלך המרומם לבדו,",
-              "en": "And this is \"the King who alone is exalted\":"
+              "he": "וזהו המלך המרומם לבדו,"
             },
             {
-              "he": "בחינת מלכות דאין סוף שלפני הצמצום",
-              "en": "the *Malchus* of the *Ein Sof* before the *tzimtzum*,"
+              "he": "בחינת מלכות דאין סוף שלפני הצמצום"
             },
             {
-              "he": "שמתנשא גם מימות עולם דאדם קדמון,",
-              "en": "which is exalted even above the *yemos olam* (days of the world) of *Adam Kadmon*,"
+              "he": "שמתנשא גם מימות עולם דאדם קדמון,"
             },
             {
-              "he": "שנקרא ימי קדם הנזכר לעיל",
-              "en": "which are called *yemei kedem* (the days of old), as mentioned above."
+              "he": "שנקרא ימי קדם הנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"The King who alone is exalted\"** is the *Malchus* of the *Ein Sof* before the *tzimtzum*, raised even above the days of *Adam Kadmon*, which are called *yemei kedem*. By the way, as he said before, usually *yemos olam* means *Atzilus*, and *yemei kedem* means the *middos* of *Atik* and *Arich*. Here the text is saying a different thing.",
+              "text": "\"The King who alone is exalted\" is the *Malchus* of the *Ein Sof* before the *tzimtzum*, raised even above the days of *Adam Kadmon*, which are called *yemei kedem*. By the way, as he said before, usually *yemos olam* means *Atzilus*, and *yemei kedem* means the *middos* of *Atik* and *Arich*. Here the text is saying a different thing.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -232,54 +232,57 @@
           ],
           "phrases": [
             {
-              "he": "וזהו השמים,",
-              "en": "And this is \"the heavens\":"
+              "he": "וזהו השמים,"
             },
             {
-              "he": "בחינת סובב הכללי שאחר הצמצום",
-              "en": "the general *sovev* (encompassing light) after the *tzimtzum*;"
+              "he": "בחינת סובב הכללי שאחר הצמצום"
             },
             {
-              "he": "ושמי השמים, שלפני הצמצום,",
-              "en": "and \"the heavens of the heavens\", before the *tzimtzum*,"
+              "he": "ושמי השמים, שלפני הצמצום,"
             },
             {
-              "he": "לא יכלכלוך,",
-              "en": "\"cannot contain You\","
+              "he": "לא יכלכלוך,"
             },
             {
               "he": "גם בבחינת כלי לכלי,",
-              "en": "not even as a *kli* (vessel) for a vessel,"
+              "en": "a *kli* to a *kli*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [205, 209],
+                "start": 104.9,
+                "end": 106.1
+              }
             },
             {
               "he": "כמו גליף גליפו בטהירו עילאה כו'",
-              "en": "like the *glif glifu* (engraving) in the *tehiru ila'a* (the upper purity);"
+              "en": "even a *glif glifu* in the *tehiru ila'a* is not even a *kli* for a *kli* for the actual *Aibershter*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [217, 238],
+                "start": 111.21,
+                "end": 116.32
+              }
             },
             {
-              "he": "ודי למבין",
-              "en": "and this is enough for one who understands."
+              "he": "ודי למבין"
             },
             {
-              "he": "וכמו שכתוב מי לי בשמים,",
-              "en": "And as it is written, \"Whom do I have in heaven?\","
+              "he": "וכמו שכתוב מי לי בשמים,"
             },
             {
-              "he": "שהוא גם בחינת סובב הכללי שלפני הצמצום שנקרא שמי השמים כו'",
-              "en": "which is also the general *sovev* before the *tzimtzum*, called \"the heavens of the heavens\";"
+              "he": "שהוא גם בחינת סובב הכללי שלפני הצמצום שנקרא שמי השמים כו'"
             },
             {
-              "he": "ועמך לא חפצתי בארץ,",
-              "en": "\"and with You I desire nothing on earth\":"
+              "he": "ועמך לא חפצתי בארץ,"
             },
             {
-              "he": "בבחינת קו וחוט בחינת ממלא הכללי כו'",
-              "en": "as the *Kav* and thread, the general *memalei* (the filling light)."
+              "he": "בבחינת קו וחוט בחינת ממלא הכללי כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**\"The heavens\"** is the general *sovev* after the *tzimtzum*, and **\"the heavens of the heavens\", before the *tzimtzum*, \"cannot contain You\"**. *Yechalkelucha* means a *kli* to a *kli*: even the *glif glifu* in the *tehiru ila'a* is not even a vessel for a vessel for the actual *Aibershter* (G-d).",
+              "text": "\"The heavens\" is the general *sovev* after the *tzimtzum*, and \"the heavens of the heavens\", before the *tzimtzum*, \"cannot contain You\". *Yechalkelucha* means a *kli* to a *kli*: even the *glif glifu* in the *tehiru ila'a* is not even a vessel for a vessel for the actual *Aibershter* (G-d).",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -291,7 +294,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Then **\"Whom do I have in heaven?\"** In other words, here \"heaven\" is what the previous explanation called \"the heavens of the heavens\", the general *sovev* before the *tzimtzum*; and **\"on earth\"** is the *Kav* and thread, the general *memalei*. That is the preface to the chapter, and now he is going to explain the actual *inyan*.",
+              "text": "Then \"Whom do I have in heaven?\" In other words, here \"heaven\" is what the previous explanation called \"the heavens of the heavens\", the general *sovev* before the *tzimtzum*; and \"on earth\" is the *Kav* and thread, the general *memalei*. That is the preface to the chapter, and now he is going to explain the actual *inyan*.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -318,38 +321,38 @@
           ],
           "phrases": [
             {
-              "he": "והנה יש כמה אופנים במשלים שונים",
-              "en": "Now there are several ways, in different *meshalim* (analogies),"
+              "he": "והנה יש כמה אופנים במשלים שונים"
             },
             {
-              "he": "להשכיל ביאור ענין הצמצום הנקרא מקום פנוי כידוע למעיין",
-              "en": "to grasp the explanation of the *tzimtzum* called the *makom panui* (the empty place), as is known to one who studies it."
+              "he": "להשכיל ביאור ענין הצמצום הנקרא מקום פנוי כידוע למעיין"
             },
             {
               "he": "וכללותו עולה בסגנון א',",
-              "en": "But in general it all comes to one *inyan*:"
+              "en": "But in general it's one *inyan*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [321, 326],
+                "start": 161.03,
+                "end": 164.48
+              }
             },
             {
-              "he": "והוא כדי שיוכל להיות אור אין סוף בבחינת השפעה בצמצום בבחינת קו,",
-              "en": "in order that the *Or Ein Sof* could flow in a contracted way, as a *Kav*,"
+              "he": "והוא כדי שיוכל להיות אור אין סוף בבחינת השפעה בצמצום בבחינת קו,"
             },
             {
-              "he": "הוצרך לצמצם עצמות אורו שישאר בהעלם בעצמותו כו'",
-              "en": "He had to contract the Essence of His light, so that it would stay hidden in His Essence,"
+              "he": "הוצרך לצמצם עצמות אורו שישאר בהעלם בעצמותו כו'"
             },
             {
-              "he": "ולא יאיר כולו, רק אפס קצהו בלבד",
-              "en": "and not all of it would shine, only the merest edge of it,"
+              "he": "ולא יאיר כולו, רק אפס קצהו בלבד"
             },
             {
-              "he": "כדי שיהיה אחר כך המשכות האור בדילוג הערך",
-              "en": "so that afterwards the light could be drawn down by a leap across the gap (*b'dilug ha'erech*)."
+              "he": "כדי שיהיה אחר כך המשכות האור בדילוג הערך"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**There are several ways, in different *meshalim***, to grasp the *tzimtzum* called the *makom panui*, **but in general it all comes to one *inyan***: for there to be a flow in a contracted way, as a *Kav*, He had to contract the Essence of His light so that it stays hidden in His Essence.",
+              "text": "There are several ways, in different *meshalim*, to grasp the *tzimtzum* called the *makom panui*, but in general it all comes to one *inyan*: for there to be a flow in a contracted way, as a *Kav*, He had to contract the Essence of His light so that it stays hidden in His Essence.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -361,7 +364,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**Not all of it would shine, only the merest edge of it**, so that afterwards the light can be drawn down *b'dilug ha'erech*, by a leap. \"That's the *inyan* of the *tzimtzum* and *reshimu*.\" And now he is going to give *meshalim*.",
+              "text": "Not all of it would shine, only the merest edge of it, so that afterwards the light can be drawn down *b'dilug ha'erech*, by a leap. \"That's the *inyan* of the *tzimtzum* and *reshimu*.\" And now he is going to give *meshalim*.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -386,30 +389,25 @@
           ],
           "phrases": [
             {
-              "he": "והרי זה כמשל אור שכל עמוק ורחב שבעצמות המשפיע",
-              "en": "This is like the light of a deep and broad intellect in the very self of the *mashpia* (the giver):"
+              "he": "והרי זה כמשל אור שכל עמוק ורחב שבעצמות המשפיע"
             },
             {
-              "he": "שכדי שיומשך ממנו למקבל הבלתי ערך אליו,",
-              "en": "in order that it be drawn from him to a *mekabel* (receiver) who is not on his level,"
+              "he": "שכדי שיומשך ממנו למקבל הבלתי ערך אליו,"
             },
             {
-              "he": "הוצרך המשפיע להעלים בעצמו כל עומק השגתו,",
-              "en": "the giver had to hide in himself the whole depth of his comprehension,"
+              "he": "הוצרך המשפיע להעלים בעצמו כל עומק השגתו,"
             },
             {
-              "he": "ולא ישאר רק בחינת רושם, כנקודה א',",
-              "en": "so that nothing remains but a *roshem* (an impression), like one dot,"
+              "he": "ולא ישאר רק בחינת רושם, כנקודה א',"
             },
             {
-              "he": "מכל העומק והרוחב",
-              "en": "of all the depth and breadth."
+              "he": "מכל העומק והרוחב"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The first *mashal*: the light of a deep and broad intellect in the *mashpia* himself. For it to come to a *mekabel* who is not on his level at all, **the giver had to hide in himself the whole depth of his comprehension**, so that only a *roshem* is left, **like one dot, of all the depth and breadth**.",
+              "text": "The first *mashal*: the light of a deep and broad intellect in the *mashpia* himself. For it to come to a *mekabel* who is not on his level at all, the giver had to hide in himself the whole depth of his comprehension, so that only a *roshem* is left, like one dot, of all the depth and breadth.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -431,45 +429,82 @@
           "phrases": [
             {
               "he": "ולא שנסתלק ונתעלם לגמרי",
-              "en": "Not that it went away and was hidden altogether;"
+              "en": "It's not that it actually disappears,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [416, 421],
+                "start": 214.8,
+                "end": 219.22
+              }
             },
             {
               "he": "רק כמו השונה בדרך קצרה,",
-              "en": "it is only like one who teaches in a short way,"
+              "en": "it's like a Mishna in relationship to the Talmud,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [440, 448],
+                "start": 229.48,
+                "end": 233.76
+              }
             },
             {
               "he": "שכל העומק ורוחב הפלפול ישנו בשכלו,",
-              "en": "where the whole depth and breadth of the *pilpul* (the Talmudic debate) is in his mind,"
+              "en": "that when he says a Mishna, he knows the whole Gemara on it,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [455, 467],
+                "start": 239.42,
+                "end": 244.28
+              }
             },
             {
-              "he": "רק שהוא נכלל לפי שעה בהעלם עצמותו",
-              "en": "only that for the time being it is included, hidden, in his self,"
+              "he": "רק שהוא נכלל לפי שעה בהעלם עצמותו"
             },
             {
               "he": "בשעה שאומר הדין דרך קיצור",
-              "en": "while he says the law in a short way."
+              "en": "when he's saying the Mishna in a short way.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [480, 488],
+                "start": 250.94,
+                "end": 252.68
+              }
             },
             {
               "he": "ומיד שישאלוהו ירחיב הדבר כו'",
-              "en": "And the minute somebody asks him, he will expand it."
+              "en": "The minute somebody will ask him, he'll be able to tell you the whole big *pilpul* on it.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [493, 510],
+                "start": 256.46,
+                "end": 260.04
+              }
             },
             {
-              "he": "רק בשביל שיובן למקבל דרך זה הקצר,",
-              "en": "Only, so that the receiver should understand in this short way,"
-            },
-            {
-              "he": "מעלים גם בעצמו לפי שעה כו'",
-              "en": "he hides it even in himself for the time being,"
+              "he": "רק בשביל שיובן למקבל דרך זה הקצר, מעלים גם בעצמו לפי שעה כו'",
+              "en": "Because he is teaching little children *Mishnayos*, so even inside of himself he is hiding it for the time being,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [523, 542],
+                "start": 268.45,
+                "end": 279.98
+              }
             },
             {
               "he": "וכמו שכתוב במקום אחר באריכות",
-              "en": "as is written elsewhere at length."
+              "en": "like it explains in another place at length.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [548, 555],
+                "start": 284.56,
+                "end": 286.4
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Not that it went away and was hidden altogether**: it does not actually disappear, because this whole thing is happening in the *mashpia* himself. It is like a Mishna in relation to the Talmud. When he says a Mishna he knows the whole Gemara on it; it is only included in him, hidden, for the time being, while he says it in a short way. And **the minute somebody asks him**, he will be able to tell you the whole big *pilpul* on it.",
+              "text": "Not that it went away and was hidden altogether: it does not actually disappear, because this whole thing is happening in the *mashpia* himself. It is like a Mishna in relation to the Talmud. When he says a Mishna he knows the whole Gemara on it; it is only included in him, hidden, for the time being, while he says it in a short way. And the minute somebody asks him, he will be able to tell you the whole big *pilpul* on it.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -481,7 +516,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**So that the receiver should understand in this short way, he hides it even in himself for the time being**: because he is teaching little children Mishnayos, even inside himself he is hiding it for the time being, as it explains at length elsewhere.",
+              "text": "So that the receiver should understand in this short way, he hides it even in himself for the time being: because he is teaching little children Mishnayos, even inside himself he is hiding it for the time being, as it explains at length elsewhere.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -501,25 +536,49 @@
           "phrases": [
             {
               "he": "13 ומה שנשאר כמו נקודה, שהוא דרך קצרה,",
-              "en": "[13] And what is left like a dot, which is the short way,"
+              "en": "And what is left like a *nekuda*, which is a short way,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [563, 574],
+                "start": 292.22,
+                "end": 294.82
+              }
             },
             {
               "he": "אין זה צמצום גמור ואמיתי",
-              "en": "is not a total and real *tzimtzum*,"
+              "en": "first of all, it's not a total *tzimtzum*, and secondly, it's not even a real *tzimtzum*,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [588, 603],
+                "start": 299.06,
+                "end": 303.9
+              }
             },
             {
               "he": "כמו המצמצם ומעלים לגמרי,",
-              "en": "like one who contracts and hides altogether,"
+              "en": "like somebody who actually makes a real *tzimtzum* and totally hides it,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [608, 619],
+                "start": 308.76,
+                "end": 312.54
+              }
             },
             {
               "he": "שנחסר למקבל לגמרי",
-              "en": "so that it is missing to the receiver altogether."
+              "en": "that over there it's missing by the *mekabel* totally.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [623, 631],
+                "start": 320.74,
+                "end": 324.1
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And what is left like a dot, which is the short way, is not a total and real *tzimtzum***. First of all it is not a total *tzimtzum*, and secondly it is not even a real *tzimtzum*: not **like one who contracts and hides altogether**, who really makes a *tzimtzum* and totally hides it, so that by the *mekabel* it is totally missing.",
+              "text": "And what is left like a dot, which is the short way, is not a total and real *tzimtzum*. First of all it is not a total *tzimtzum*, and secondly it is not even a real *tzimtzum*: not like one who contracts and hides altogether, who really makes a *tzimtzum* and totally hides it, so that by the *mekabel* it is totally missing.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -574,18 +633,16 @@
           ],
           "phrases": [
             {
-              "he": "אלא הענין הוא שכולל בדרך קצר זה כל האריכות,",
-              "en": "Rather, the point is that this short way includes all the length;"
+              "he": "אלא הענין הוא שכולל בדרך קצר זה כל האריכות,"
             },
             {
-              "he": "לא יחסר דבר וחצי דבר",
-              "en": "not a thing, not half a thing, is missing,"
+              "he": "לא יחסר דבר וחצי דבר"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This short way includes all the length; not a thing, not half a thing, is missing.** So this is not even like the *mashal* of a *goyishe* (non-Jewish) school. You have to take *davka* the *mashal* in a Jewish school, because the Mishna is not just a *kitzur* (shortening) that leaves some things out. In the Mishna there is nothing missing at all: the whole Talmud is included in it.",
+              "text": "This short way includes all the length; not a thing, not half a thing, is missing. So this is not even like the *mashal* of a *goyishe* (non-Jewish) school. You have to take *davka* the *mashal* in a Jewish school, because the Mishna is not just a *kitzur* (shortening) that leaves some things out. In the Mishna there is nothing missing at all: the whole Talmud is included in it.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -600,7 +657,7 @@
                 ],
                 "reason": "Contrasts a \"goyishe\" school, whose summaries leave things out, with a Jewish one.",
                 "action": "replace",
-                "publishable": "**This short way includes all the length; not a thing, not half a thing, is missing.** So this is not like an ordinary summary in school. The *mashal* has to be the Mishna, because the Mishna is not just a *kitzur* (shortening) that leaves some things out. In the Mishna there is nothing missing at all: the whole Talmud is included in it."
+                "publishable": "This short way includes all the length; not a thing, not half a thing, is missing. So this is not like an ordinary summary in school. The *mashal* has to be the Mishna, because the Mishna is not just a *kitzur* (shortening) that leaves some things out. In the Mishna there is nothing missing at all: the whole Talmud is included in it."
               }
             }
           ]
@@ -611,12 +668,10 @@
           ],
           "phrases": [
             {
-              "he": "כמו שכלול בדין הקצר שבמשנה",
-              "en": "as in the short law of the Mishna"
+              "he": "כמו שכלול בדין הקצר שבמשנה"
             },
             {
-              "he": "כל האריכות הפלפול שבגמרא",
-              "en": "is included all the length of the *pilpul* of the Gemara."
+              "he": "כל האריכות הפלפול שבגמרא"
             }
           ],
           "blocks": [
@@ -643,30 +698,35 @@
           ],
           "phrases": [
             {
-              "he": "וכמו שלא נעלם ליודע כל הפלפול",
-              "en": "And as the whole *pilpul* is not hidden from one who knows it"
+              "he": "וכמו שלא נעלם ליודע כל הפלפול"
             },
             {
-              "he": "גם בשעה ששונה לעצמו דרך קיצור כו'",
-              "en": "even while he says it over to himself in a short way,"
+              "he": "גם בשעה ששונה לעצמו דרך קיצור כו'"
             },
             {
-              "he": "שנמצא שידיעתו באריכות מקפת בהעלם כל התגלות הקיצור",
-              "en": "so that his knowledge at length encompasses, hidden, everything revealed in the short version,"
+              "he": "שנמצא שידיעתו באריכות מקפת בהעלם כל התגלות הקיצור"
             },
             {
-              "he": "ולא שנסתלק לגמרי כשכחה וכהאי גוונא כו'",
-              "en": "and it did not go away altogether, as in forgetting and the like;"
+              "he": "ולא שנסתלק לגמרי כשכחה",
+              "en": "It's not that it really went away, like he forgot it.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1394, 1405],
+                "start": 670.36,
+                "end": 673.56
+              }
             },
             {
-              "he": "וכמו שכתוב ביאור זה באריכות במקום אחר.",
-              "en": "as this is explained at length elsewhere."
+              "he": "וכהאי גוונא כו'"
+            },
+            {
+              "he": "וכמו שכתוב ביאור זה באריכות במקום אחר."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "When somebody really knows the whole Gemara, a big real *talmid chacham* like they used to have in the olden days, then even when he says a Mishna he knows the whole thing, as if Rashi were saying a Mishna. **His knowledge at length encompasses, hidden, everything revealed in the short version.**",
+              "text": "When somebody really knows the whole Gemara, a big real *talmid chacham* like they used to have in the olden days, then even when he says a Mishna he knows the whole thing, as if Rashi were saying a Mishna. His knowledge at length encompasses, hidden, everything revealed in the short version.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -678,7 +738,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**It did not go away altogether, as in forgetting.** If you forget something, it went away, like somebody who has amnesia, *chas v'shalom* (Heaven forbid). But he knows the whole thing right now, even while he is saying it the short way.",
+              "text": "It did not go away altogether, as in forgetting. If you forget something, it went away, like somebody who has amnesia, *chas v'shalom* (Heaven forbid). But he knows the whole thing right now, even while he is saying it the short way.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -704,30 +764,39 @@
           ],
           "phrases": [
             {
-              "he": "ואופן משל הב' מחיות הנפש בגוף",
-              "en": "And the second kind of analogy, from the life of the soul in the body,"
+              "he": "ואופן משל הב' מחיות הנפש בגוף"
             },
             {
               "he": "גם כן עולה על דרך הנזכר לעיל",
-              "en": "also comes out the same way as above:"
+              "en": "It also comes in the same way.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1462, 1468],
+                "start": 696,
+                "end": 697.32
+              }
             },
             {
-              "he": "והוא בהיות שכדי שישתנה מחיי רוחניים שבעצם הנפש לחיי בשר,",
-              "en": "in order that the spiritual life in the essence of the soul be changed into the life of flesh,"
+              "he": "והוא בהיות שכדי שישתנה מחיי רוחניים שבעצם הנפש לחיי בשר,"
             },
             {
-              "he": "הוצרך להיות בחינת העלם וכיווץ האור של הנפש בתחלה",
-              "en": "there first had to be a hiding and a shrinking of the light of the soul,"
+              "he": "הוצרך להיות בחינת העלם וכיווץ האור של הנפש בתחלה"
             },
             {
               "he": "לפי שאין ערך ביניהם",
-              "en": "because there is no comparison between them."
+              "en": "it's a totally different *inyan*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1609, 1613],
+                "start": 758.48,
+                "end": 759.76
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**The second kind of analogy, from the life of the soul in the body**, comes out the same way. For the spiritual life of the soul to turn into the life of the flesh, there first has to be **a hiding and a shrinking of the light of the soul, because there is no comparison between them**. The soul just as it is cannot come into the body.",
+              "text": "The second kind of analogy, from the life of the soul in the body, comes out the same way. For the spiritual life of the soul to turn into the life of the flesh, there first has to be a hiding and a shrinking of the light of the soul, because there is no comparison between them. The soul just as it is cannot come into the body.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -739,7 +808,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Even a little piece of the soul, one power of the soul, cannot. As they were talking about before, with Abbott and Costello and the Wolf Man: even the *koach hadibur* (power of speech) or the *koach hatnua* (power of motion), if the whole *koach hatnua* tries to come in, it will not be able to, and there will be no motion. So certainly the whole soul cannot go into the body. First of all it is too infinite for it, and secondly, **there is no comparison between them**: it is a totally different *inyan*, it has nothing to do with the body.",
+              "text": "Even a little piece of the soul, one power of the soul, cannot. As they were talking about before, with Abbott and Costello and the Wolf Man: even the *koach hadibur* (power of speech) or the *koach hatnua* (power of motion), if the whole *koach hatnua* tries to come in, it will not be able to, and there will be no motion. So certainly the whole soul cannot go into the body. First of all it is too infinite for it, and secondly, there is no comparison between them: it is a totally different *inyan*, it has nothing to do with the body.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -760,25 +829,52 @@
           "phrases": [
             {
               "he": "ועם כל זה הרי מתפעלת הנפש ממקרי הגוף",
-              "en": "And nonetheless the soul is moved by what happens to the body."
+              "en": "But nonetheless, the soul is *mispa'el*, it gets excited from what happens to the body.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1634, 1648],
+                "start": 770.28,
+                "end": 778.64
+              }
             },
             {
               "he": "אם כן גם אור הגשמת החיות",
-              "en": "If so, the light of the life made physical also"
+              "en": "the light of the *hagshamas hachayus*, which is the actual physical life,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1671, 1682],
+                "start": 791.38,
+                "end": 795.9
+              }
             },
             {
               "he": "תתחבר ונקשר אל אור עצמותה הרוחני",
-              "en": "is joined and bound to the spiritual light of its essence,"
+              "en": "So it's connected.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1689, 1691],
+                "start": 800.82,
+                "end": 801.74
+              }
             },
             {
-              "he": "כצמיחה גשמית שנקשר בכח הצומח הרוחני כו'",
-              "en": "like physical growth, which is bound to the spiritual power of growth."
+              "he": "כצמיחה גשמית"
+            },
+            {
+              "he": "שנקשר בכח הצומח הרוחני כו'",
+              "en": "that it's connected to the *koach hatzomeach haruchani*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1831, 1838],
+                "start": 871.54,
+                "end": 873.43
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And nonetheless the soul is moved by what happens to the body**: it is *mispa'el*, it gets excited from what happens to the body. Whether something bad happens or something good, the soul feels it. **If so, the light of the life made physical**, the actual physical life, **is joined and bound** to the spiritual. So it is connected.",
+              "text": "And nonetheless the soul is moved by what happens to the body: it is *mispa'el*, it gets excited from what happens to the body. Whether something bad happens or something good, the soul feels it. If so, the light of the life made physical, the actual physical life, is joined and bound to the spiritual. So it is connected.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -803,7 +899,7 @@
             {
               "kind": "mashal",
               "title": "The plant out of the ground",
-              "text": "**Like physical growth, which is bound to the spiritual power of growth**: you see that if you take the plant out of the ground, it stops growing.",
+              "text": "Like physical growth, which is bound to the spiritual power of growth: you see that if you take the plant out of the ground, it stops growing.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -823,21 +919,39 @@
           "phrases": [
             {
               "he": "ובהחתך אבר הגוף",
-              "en": "And when a limb of the body is cut off,"
+              "en": "And another proof of this is that if somebody accidentally loses a limb, like an arm or a leg or something like that, *chas veshalom*,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1858, 1882],
+                "start": 883.6,
+                "end": 893.42
+              }
             },
             {
               "he": "לא יחסר באור וחיות רוחניות של אבר זה",
-              "en": "nothing is missing from the spiritual light and life of that limb,"
+              "en": "the spirituality of it will not be missing anything.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1893, 1901],
+                "start": 900.84,
+                "end": 904.38
+              }
             },
             {
               "he": "וראיה מסומא שמוליד שלם כו' כידוע",
-              "en": "and the proof is from a blind man, who begets a whole child, as is known."
+              "en": "that somebody who, *chas veshalom*, gets blind, it doesn't mean that from now on all his children will be like that, but rather they are born whole.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [1907, 1934],
+                "start": 906.7,
+                "end": 921.34
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Another proof: if somebody accidentally loses a limb, an arm or a leg or something like that, *chas v'shalom*, **nothing is missing from the spiritual light and life of that limb**. Its spirituality is not missing anything.",
+              "text": "Another proof: if somebody accidentally loses a limb, an arm or a leg or something like that, *chas v'shalom*, nothing is missing from the spiritual light and life of that limb. Its spirituality is not missing anything.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -849,7 +963,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**The proof is from a blind man.** Somebody who, *chas v'shalom*, becomes blind does not have blind children from then on; they are born whole. The same with anybody who loses any other limb. If somebody loses a finger, *chas v'shalom*, that does not mean all the rest of his generations will be missing that finger. Just the opposite: they will actually have the finger.",
+              "text": "The proof is from a blind man. Somebody who, *chas v'shalom*, becomes blind does not have blind children from then on; they are born whole. The same with anybody who loses any other limb. If somebody loses a finger, *chas v'shalom*, that does not mean all the rest of his generations will be missing that finger. Just the opposite: they will actually have the finger.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -882,34 +996,35 @@
           ],
           "phrases": [
             {
-              "he": "אין זה רק שהרוחניות הוא בהעלם,",
-              "en": "It is only that the spirituality is hidden;"
+              "he": "אין זה רק שהרוחניות הוא בהעלם,"
             },
             {
-              "he": "וישנו במציאותו,",
-              "en": "it is there, in its existence,"
+              "he": "וישנו במציאותו,"
             },
             {
-              "he": "חופף על חיות הגשמי שבגוף",
-              "en": "hovering over the physical life in the body,"
+              "he": "חופף על חיות הגשמי שבגוף"
             },
             {
               "he": "ונקרא צלם איש כו'",
-              "en": "and it is called the *tzelem* of a man."
+              "en": "And that's called a phantom person. It's not really a phantom person, it's the *tzelem*.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [2075, 2089],
+                "start": 977.8,
+                "end": 984.58
+              }
             },
             {
-              "he": "והיינו על דרך הנזכר לעיל בידיעה שבהעלם כו'",
-              "en": "This is like what was said above about knowledge that is hidden."
+              "he": "והיינו על דרך הנזכר לעיל בידיעה שבהעלם כו'"
             },
             {
-              "he": "(וכל זה מבואר באריכות במקום אחר)",
-              "en": "(All this is explained at length elsewhere.)"
+              "he": "(וכל זה מבואר באריכות במקום אחר)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**It is only that the spirituality is hidden; it is there**, hovering over the physical life of the body, **and it is called the *tzelem* of a man**. Call it a phantom person; only it is not really a phantom person, it is the *tzelem*. \"I don't know how you say *tzelem* in English\": a picture, an image. But it is not really an image; it is more than an image. It is the form. *B'tzalmeinu kidmuseinu*, \"in our image, after our likeness\", yes, but in Hebrew it means a bit more than that. *Tzelem* means that the whole actual form of the person is there.",
+              "text": "It is only that the spirituality is hidden; it is there, hovering over the physical life of the body, and it is called the *tzelem* of a man. Call it a phantom person; only it is not really a phantom person, it is the *tzelem*. \"I don't know how you say *tzelem* in English\": a picture, an image. But it is not really an image; it is more than an image. It is the form. *B'tzalmeinu kidmuseinu*, \"in our image, after our likeness\", yes, but in Hebrew it means a bit more than that. *Tzelem* means that the whole actual form of the person is there.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -946,7 +1061,7 @@
             },
             {
               "kind": "explanation",
-              "text": "In other words, from the minute of conception, when the male and female parts join together; and not only that, it was really there even before that, only in two pieces. And even before those two pieces were there, it was already included in the genetic makeup of his father and his mother, except that you do not know which pieces he will get from each. So the spirituality, the form, the *tzelem*, is already there before that. **All this is explained at length elsewhere.**",
+              "text": "In other words, from the minute of conception, when the male and female parts join together; and not only that, it was really there even before that, only in two pieces. And even before those two pieces were there, it was already included in the genetic makeup of his father and his mother, except that you do not know which pieces he will get from each. So the spirituality, the form, the *tzelem*, is already there before that. All this is explained at length elsewhere.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -972,31 +1087,33 @@
           ],
           "phrases": [
             {
-              "he": "וכן כח התנועה הרוחניות כשבאה בתנועת הגשם,",
-              "en": "So too the spiritual power of motion, when it comes into the motion of the physical,"
+              "he": "וכן כח התנועה הרוחניות כשבאה בתנועת הגשם,"
             },
             {
-              "he": "מתצמצמת בעצמותה כו'",
-              "en": "is contracted in its essence;"
+              "he": "מתצמצמת בעצמותה כו'"
             },
             {
-              "he": "ועם כל זה התנועה גשמית מחוברת ומקושרת בתנועה הרוחנית",
-              "en": "and nonetheless the physical motion is joined and bound to the spiritual motion."
+              "he": "ועם כל זה התנועה גשמית מחוברת ומקושרת בתנועה הרוחנית"
             },
             {
               "he": "וכהאי גוונא באופנים אחרים",
-              "en": "And the same in other ways,"
+              "en": "this is exactly the same *mashal* you can say in many different ways,",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [2829, 2841],
+                "start": 1273.51,
+                "end": 1277.56
+              }
             },
             {
-              "he": "כמו ענין התחכמות שכל פרטי מכח המשכיל שלו ששורה עליו בהעלם כו'.",
-              "en": "like *hischakmus* (being smart) in a particular intellect, from the power of his mind that rests on it, hidden."
+              "he": "כמו ענין התחכמות שכל פרטי מכח המשכיל שלו ששורה עליו בהעלם כו'."
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "The dinosaur in the street",
-              "text": "**So too the spiritual power of motion, when it comes into the motion of the physical, is contracted in its essence.** As they were talking about before: a guy is walking down the street and all of a sudden a dinosaur comes up. If there is no *tzimtzum* of the spiritual motion when it comes into the physical motion, there will be no physical motion. He'll freeze. He freezes up and cannot make any motion at all.",
+              "text": "So too the spiritual power of motion, when it comes into the motion of the physical, is contracted in its essence. As they were talking about before: a guy is walking down the street and all of a sudden a dinosaur comes up. If there is no *tzimtzum* of the spiritual motion when it comes into the physical motion, there will be no physical motion. He'll freeze. He freezes up and cannot make any motion at all.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1021,7 +1138,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**And the same in other ways**: exactly the same *mashal* can be said in many different ways, **like *hischakmus* (being smart) in a particular intellect, from the power of his mind**, which was there in him hidden, and all kinds of other things.",
+              "text": "And the same in other ways: exactly the same *mashal* can be said in many different ways, like *hischakmus* (being smart) in a particular intellect, from the power of his mind, which was there in him hidden, and all kinds of other things.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1045,22 +1162,19 @@
           ],
           "phrases": [
             {
-              "he": "ואמנם להבין בחינת הרשימו",
-              "en": "But to understand the *reshimu*,"
+              "he": "ואמנם להבין בחינת הרשימו"
             },
             {
-              "he": "שענינו מורה בחינת הסתלקות בהעלם",
-              "en": "whose very meaning shows a withdrawal into hiding,"
+              "he": "שענינו מורה בחינת הסתלקות בהעלם"
             },
             {
-              "he": "ולא נשאר מהכל רק רושם כו'",
-              "en": "and that nothing at all is left but an impression,"
+              "he": "ולא נשאר מהכל רק רושם כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**But to understand the *reshimu*, whose very meaning shows a withdrawal into hiding, and that nothing at all is left but an impression.** The first things were not really that. In the Mishna, even though it is a *kitzur*, it is the same *inyan* as the Gemara. It is what they call *hamu'at hamachzik es hamerubeh*, the little that holds the much; it is not that it is totally gone. That is first of all. Secondly, it is the same *inyan*.",
+              "text": "But to understand the *reshimu*, whose very meaning shows a withdrawal into hiding, and that nothing at all is left but an impression. The first things were not really that. In the Mishna, even though it is a *kitzur*, it is the same *inyan* as the Gemara. It is what they call *hamu'at hamachzik es hamerubeh*, the little that holds the much; it is not that it is totally gone. That is first of all. Secondly, it is the same *inyan*.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1131,26 +1245,22 @@
           ],
           "phrases": [
             {
-              "he": "הוא מובן יותר מענינים משלים אחרים,",
-              "en": "is understood better from other matters, other analogies,"
+              "he": "הוא מובן יותר מענינים משלים אחרים,"
             },
             {
-              "he": "כמו הרושם שעושה האומן",
-              "en": "like the impression (*roshem*) a craftsman makes,"
+              "he": "כמו הרושם שעושה האומן"
             },
             {
-              "he": "שיוכל לעשות הבנין בקיצור קו זה שברושם,",
-              "en": "so that he can make the building from the brevity of this line in the sketch,"
+              "he": "שיוכל לעשות הבנין בקיצור קו זה שברושם,"
             },
             {
-              "he": "שכולל כל אריכות המעשה בקיצור רושם זה",
-              "en": "which includes all the length of the work in the brevity of this sketch."
+              "he": "שכולל כל אריכות המעשה בקיצור רושם זה"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It is understood better from other analogies, **like the impression (*roshem*) a craftsman makes**. He is talking about a blueprint. In this little blueprint is the whole *inyan* of exactly how to build a building: **all the length of the work in the brevity of this sketch**.",
+              "text": "It is understood better from other analogies, like the impression (*roshem*) a craftsman makes. He is talking about a blueprint. In this little blueprint is the whole *inyan* of exactly how to build a building: all the length of the work in the brevity of this sketch.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1170,19 +1280,29 @@
           "phrases": [
             {
               "he": "או כמו שעושה לזכרון הנקרא אות",
-              "en": "Or like what one makes as a reminder, called an *os* (a sign),"
+              "en": "just like an *os*, like a sign.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [3910, 3916],
+                "start": 1693.1,
+                "end": 1694.76
+              }
             },
             {
-              "he": "שאין האות ענין שייך אל עצם הענין,",
-              "en": "where the sign has nothing to do with the thing itself,"
+              "he": "שאין האות ענין שייך אל עצם הענין,"
             },
             {
               "he": "רק לזכרון בעלמא,",
-              "en": "only to remind,"
+              "en": "just in order to remember.",
+              "audio": {
+                "lecture": "007 Tape018-Side2-Ch12.mp3",
+                "words": [4175, 4179],
+                "start": 1823.82,
+                "end": 1824.86
+              }
             },
             {
-              "he": "כמו עשה לך ציונים כו'",
-              "en": "as in \"set up *tziyunim* (markers) for yourself.\""
+              "he": "כמו עשה לך ציונים כו'"
             }
           ],
           "blocks": [
@@ -1229,7 +1349,7 @@
             },
             {
               "kind": "explanation",
-              "text": "That is like **what one makes as a reminder, called an *os***: not just notes, even less than notes, only a sign. **The sign has nothing to do with the thing itself.**",
+              "text": "That is like what one makes as a reminder, called an *os*: not just notes, even less than notes, only a sign. The sign has nothing to do with the thing itself.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1261,18 +1381,16 @@
           ],
           "phrases": [
             {
-              "he": "וזהו בחינת העלם יותר מקיצור ההלכה ששונה וכולל בו הכל",
-              "en": "And this is more hidden than the short law that one teaches, which includes everything,"
+              "he": "וזהו בחינת העלם יותר מקיצור ההלכה ששונה וכולל בו הכל"
             },
             {
-              "he": "שעל כל פנים שייך ענין הקיצור אל האריכות",
-              "en": "for there at least the short version belongs to the long."
+              "he": "שעל כל פנים שייך ענין הקיצור אל האריכות"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is more hidden than the short law**, because **there at least the short version belongs to the long**. If you find money, there is a whole *pilpul* and all this; but nonetheless the *inyan* is finding money, and that is the actual *inyan*. In the Mishna, that is *mamash* the *inyan* you are talking about. In the *os* it is not the *inyan* at all. It is only to remember.",
+              "text": "This is more hidden than the short law, because there at least the short version belongs to the long. If you find money, there is a whole *pilpul* and all this; but nonetheless the *inyan* is finding money, and that is the actual *inyan*. In the Mishna, that is *mamash* the *inyan* you are talking about. In the *os* it is not the *inyan* at all. It is only to remember.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1309,18 +1427,16 @@
           ],
           "phrases": [
             {
-              "he": "ויש עוד אופן ברשימו זו",
-              "en": "And there is another kind of this *reshimu*"
+              "he": "ויש עוד אופן ברשימו זו"
             },
             {
-              "he": "שהוא מורה ענין הצמצום וההעלם הרבה יותר",
-              "en": "which shows the *tzimtzum* and the hiding much more."
+              "he": "שהוא מורה ענין הצמצום וההעלם הרבה יותר"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And there is another kind of this *reshimu*, which shows the *tzimtzum* and the hiding much more**, and this already shows the actual *inyan* of the *reshimu*.",
+              "text": "And there is another kind of this *reshimu*, which shows the *tzimtzum* and the hiding much more, and this already shows the actual *inyan* of the *reshimu*.",
               "audio": [
                 {
                   "lecture": "007 Tape018-Side2-Ch12.mp3",
@@ -1342,34 +1458,38 @@
           ],
           "phrases": [
             {
-              "he": "והוא כמו הזורק אבן,",
-              "en": "It is like one who throws a stone,"
+              "he": "והוא כמו הזורק אבן,"
             },
             {
-              "he": "שכח המוליך אותו נבדל מן העצם",
-              "en": "where the power that carries it is separate from the self;"
+              "he": "שכח המוליך אותו נבדל מן העצם"
             },
             {
-              "he": "ועם כל זה כל כח התנועה מלובש בו בהעלם",
-              "en": "and nonetheless the whole power of motion is dressed in it, hidden,"
+              "he": "ועם כל זה",
+              "en": "but nonetheless,",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [225, 226],
+                "start": 87.78,
+                "end": 88.84
+              }
             },
             {
-              "he": "אך שהוא בריחוק נבדל ביותר מכחו העצמי שבידו",
-              "en": "only it is far away, very separate from his essential power in his hand;"
+              "he": "כל כח התנועה מלובש בו בהעלם"
             },
             {
-              "he": "מה שאין כן כח התנועה עצמה שמניעה בעצמו בגשם",
-              "en": "unlike the power of motion itself, when he moves the physical thing himself,"
+              "he": "אך שהוא בריחוק נבדל ביותר מכחו העצמי שבידו"
             },
             {
-              "he": "שמלובש בגלוי בגשם ביותר כנזכר לעיל",
-              "en": "where it is dressed in the physical thing, revealed, much more, as said above."
+              "he": "מה שאין כן כח התנועה עצמה שמניעה בעצמו בגשם"
+            },
+            {
+              "he": "שמלובש בגלוי בגשם ביותר כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**One who throws a stone, where the power that carries it is separate from the self.** You see a ball rolling down the street and you know somebody kicked it, but you cannot even see the person anymore.",
+              "text": "One who throws a stone, where the power that carries it is separate from the self. You see a ball rolling down the street and you know somebody kicked it, but you cannot even see the person anymore.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1382,7 +1502,7 @@
             {
               "kind": "mashal",
               "title": "You broke the window",
-              "text": "**And nonetheless the whole power of motion is dressed in it, hidden.** If the stone comes through your window, you can go and sue the person. Why? Because his power of motion is dressed in the stone, and you can blame him for it. It means that not just the power of motion, but the actual intention of the self is dressed in the stone. He says, \"What do you want from me? The stone broke your window.\" \"No, you broke the window.\" \"What do you mean I broke the window? I wasn't even there. I was far away from your window. I never went anywhere close to your window.\" \"Doesn't matter. You broke the window.\" Or, like that song, \"I Shot the Sheriff\": what do you mean I shot? I didn't shoot the sheriff, the bullet got the sheriff. But you say that you yourself broke the window. So not just the power of motion: the actual *etzem* is dressed in it.",
+              "text": "And nonetheless the whole power of motion is dressed in it, hidden. If the stone comes through your window, you can go and sue the person. Why? Because his power of motion is dressed in the stone, and you can blame him for it. It means that not just the power of motion, but the actual intention of the self is dressed in the stone. He says, \"What do you want from me? The stone broke your window.\" \"No, you broke the window.\" \"What do you mean I broke the window? I wasn't even there. I was far away from your window. I never went anywhere close to your window.\" \"Doesn't matter. You broke the window.\" Or, like that song, \"I Shot the Sheriff\": what do you mean I shot? I didn't shoot the sheriff, the bullet got the sheriff. But you say that you yourself broke the window. So not just the power of motion: the actual *etzem* is dressed in it.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1394,7 +1514,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**Only it is far away, very separate from his essential power in his hand**, unlike when he is actually moving something he is holding in his hand: then it is actually connected to it. In other places in *Chassidus* this *mashal* is given for *Malchus* and *Malchus* of *Malchus*. *Malchus* is when he is actually holding the thing in his hand, and *Malchus* of *Malchus* is when he throws it away.",
+              "text": "Only it is far away, very separate from his essential power in his hand, unlike when he is actually moving something he is holding in his hand: then it is actually connected to it. In other places in *Chassidus* this *mashal* is given for *Malchus* and *Malchus* of *Malchus*. *Malchus* is when he is actually holding the thing in his hand, and *Malchus* of *Malchus* is when he throws it away.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1413,17 +1533,29 @@
           "phrases": [
             {
               "he": "ויש בחינת העלם יותר גם מזה,",
-              "en": "And there is a hiding even greater than this,"
+              "en": "There's an even bigger *helem*,",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [514, 518],
+                "start": 202.66,
+                "end": 204.06
+              }
             },
             {
               "he": "שדומה לענין הרושם לזכרון לבד",
-              "en": "which is like the impression made only as a reminder,"
+              "en": "like a *roshem* just for a remembrance.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [524, 530],
+                "start": 207.98,
+                "end": 216.1
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**There is a hiding even greater than this**: **the impression made only as a reminder**. Not like an acrostic. An acrostic, *rashei teivos*, still has something of the thing: those are the letters, and you know it is telling you words that begin with them. This is like a string around your finger, which is only a *remez*. The string does not tell you, \"Oh, it must be something to do with strings.\" It has nothing at all to do with string.",
+              "text": "There is a hiding even greater than this: the impression made only as a reminder. Not like an acrostic. An acrostic, *rashei teivos*, still has something of the thing: those are the letters, and you know it is telling you words that begin with them. This is like a string around your finger, which is only a *remez*. The string does not tell you, \"Oh, it must be something to do with strings.\" It has nothing at all to do with string.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1443,21 +1575,25 @@
           "phrases": [
             {
               "he": "והוא כמו הרומז בידו לאיזה שכל עמוק ביותר",
-              "en": "like one who hints with his hand at some very deep idea,"
+              "en": "that a very heavy *sechel* can be enclothed.",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [636, 644],
+                "start": 261.88,
+                "end": 271.88
+              }
             },
             {
-              "he": "שנבדל תנועה גשמית מהשכל הרוחני,",
-              "en": "where the physical motion is separate from the spiritual idea,"
+              "he": "שנבדל תנועה גשמית מהשכל הרוחני,"
             },
             {
-              "he": "ועם כל זה מבין השכל מתוכו כו'",
-              "en": "and nonetheless one understands the idea from it."
+              "he": "ועם כל זה מבין השכל מתוכו כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**One who hints with his hand at some very deep idea**: a very heavy *sechel* can be dressed in it. **The physical motion is separate from the spiritual idea, and nonetheless one understands the idea from it.**",
+              "text": "One who hints with his hand at some very deep idea: a very heavy *sechel* can be dressed in it. The physical motion is separate from the spiritual idea, and nonetheless one understands the idea from it.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1521,17 +1657,22 @@
           "phrases": [
             {
               "he": "ויותר מזה העלם אור השכל בתנועת האצבע בכתיבתו אותו",
-              "en": "And more than this is the hiding of the light of the intellect in the movement of the finger as one writes it,"
+              "en": "And even more than that is the light of the *sechel* which is enclothed in the movement of the finger when it writes it,",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [908, 937],
+                "start": 371.38,
+                "end": 383.38
+              }
             },
             {
-              "he": "וכמו שכתוב במקום אחר באריכות",
-              "en": "as is written elsewhere at length."
+              "he": "וכמו שכתוב במקום אחר באריכות"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And more than this is the hiding of the light of the intellect in the movement of the finger as one writes it**: when it writes, it is writing down the *sechel*, and yet it is just a motion.",
+              "text": "And more than this is the hiding of the light of the intellect in the movement of the finger as one writes it: when it writes, it is writing down the *sechel*, and yet it is just a motion.",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",
@@ -1570,21 +1711,25 @@
           "phrases": [
             {
               "he": "והכל עולה לסגנון א' הנזכר לעיל",
-              "en": "And all of it comes to the one pattern mentioned above:"
+              "en": "All of these things is really telling you only one thing:",
+              "audio": {
+                "lecture": "008 Tape019-Side1-Ch12.mp3",
+                "words": [1167, 1177],
+                "start": 486.96,
+                "end": 493.6
+              }
             },
             {
-              "he": "שבחינת העצמות נשאר בהעלם וכלול ברושם ונקודה זו כו'",
-              "en": "that the Essence remains hidden and is included in this impression and dot."
+              "he": "שבחינת העצמות נשאר בהעלם וכלול ברושם ונקודה זו כו'"
             },
             {
-              "he": "ודי למבין:",
-              "en": "And this is enough for one who understands."
+              "he": "ודי למבין:"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**All of it comes to the one pattern**: all these things are really telling you only one thing, **that the Essence remains hidden and is included in this impression**. Not just the intellect of it, but the *etzem*, the actual selfness. And that is why you say, \"You broke the window.\"",
+              "text": "All of it comes to the one pattern: all these things are really telling you only one thing, that the Essence remains hidden and is included in this impression. Not just the intellect of it, but the *etzem*, the actual selfness. And that is why you say, \"You broke the window.\"",
               "audio": [
                 {
                   "lecture": "008 Tape019-Side1-Ch12.mp3",

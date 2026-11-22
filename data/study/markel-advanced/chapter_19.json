@@ -100,26 +100,22 @@
           ],
           "phrases": [
             {
-              "he": "(יט) ומעתה יש להבין בשרש עשר ספירות הנאצלים,",
-              "en": "(19) Now we must understand the root of the ten emanated *sefiros*,"
+              "he": "(יט) ומעתה יש להבין בשרש עשר ספירות הנאצלים,"
             },
             {
-              "he": "ששרשם מבחינת מלכות דאדם קדמון",
-              "en": "whose root is from *Malchus* of *Adam Kadmon*,"
+              "he": "ששרשם מבחינת מלכות דאדם קדמון"
             },
             {
-              "he": "כמו שכתוב בעץ חיים בשער הכללים",
-              "en": "as is written in *Etz Chaim*, in the Gate of the General Principles,"
+              "he": "כמו שכתוב בעץ חיים בשער הכללים"
             },
             {
-              "he": "דמבחינת מלכות דאדם קדמון נעשה כתר דעתיק יומין כו'",
-              "en": "that from *Malchus* of *Adam Kadmon* comes *Keser* of *Atik Yomin*."
+              "he": "דמבחינת מלכות דאדם קדמון נעשה כתר דעתיק יומין כו'"
             }
           ],
           "blocks": [],
           "skip": {
             "reason": "read-only",
-            "note": "Class 029 opens by reading lines 1 to 7 straight through, with no translation or comment; the phrases are a plain rendering."
+            "note": "Class 029 opens by reading lines 1 to 7 straight through, with no translation or comment."
           }
         }
       ]
@@ -138,50 +134,40 @@
           ],
           "phrases": [
             {
-              "he": "והנה תחלה יש להקדים בענין עשר ספירות הגנוזות בהעלם,",
-              "en": "Now first we must preface the matter of the ten *sefiros* hidden away in concealment,"
+              "he": "והנה תחלה יש להקדים בענין עשר ספירות הגנוזות בהעלם,"
             },
             {
-              "he": "איך שיוצאים לידי גלוי",
-              "en": "how they come out into revelation."
+              "he": "איך שיוצאים לידי גלוי"
             },
             {
-              "he": "שזהו מה שכתוב קורא הדורות מראש,",
-              "en": "This is what is written, \"He calls the generations from the head\":"
+              "he": "שזהו מה שכתוב קורא הדורות מראש,"
             },
             {
-              "he": "מראש דאדם קדמון כו'",
-              "en": "from the head of *Adam Kadmon*."
+              "he": "מראש דאדם קדמון כו'"
             },
             {
-              "he": "ואמר בספר יצירה שזהו כשלהבת הקשורה בגחלת,",
-              "en": "And *Sefer Yetzira* says that this is \"like a flame bound to a coal\";"
+              "he": "ואמר בספר יצירה שזהו כשלהבת הקשורה בגחלת,"
             },
             {
-              "he": "וכהאי גוונא יש דמיונות רבים",
-              "en": "and there are many comparisons of this kind."
+              "he": "וכהאי גוונא יש דמיונות רבים"
             },
             {
-              "he": "ויובן יותר מי' כחות הנפש",
-              "en": "It will be understood better from the ten powers of the soul."
+              "he": "ויובן יותר מי' כחות הנפש"
             },
             {
-              "he": "דהנה ידוע ענין העלם וגלוי אינו כהתפשטות כח מן העצם,",
-              "en": "For it is known that concealment and revelation is not like a power spreading forth from the essence,"
+              "he": "דהנה ידוע ענין העלם וגלוי אינו כהתפשטות כח מן העצם,"
             },
             {
-              "he": "כמו כח הפועל שמתפשט בפעולה,",
-              "en": "like the power of the doer that spreads into the deed,"
+              "he": "כמו כח הפועל שמתפשט בפעולה,"
             },
             {
-              "he": "שזהו מהות כח העצם שנקרא עילה ועלול",
-              "en": "which is the very being of the essence's power, and is called cause and effect."
+              "he": "שזהו מהות כח העצם שנקרא עילה ועלול"
             }
           ],
           "blocks": [],
           "skip": {
             "reason": "read-only",
-            "note": "Read in class 029 without comment; the reading breaks off in the middle of line 7, where the tape goes over to a class on chapter 20. The phrases are a plain rendering."
+            "note": "Read in class 029 without comment; the reading breaks off in the middle of line 7, where the tape goes over to a class on chapter 20."
           }
         },
         {
@@ -190,40 +176,10 @@
             "unzaaghg",
             "rexsxqcq"
           ],
-          "phrases": [
-            {
-              "he": "אלא כמו בחינת זיו ואור של העצם",
-              "en": "but like a glow and a light of the essence,"
-            },
-            {
-              "he": "כהארת זיו אור השמש,",
-              "en": "like the shining of the glow of the sun's light,"
-            },
-            {
-              "he": "וכחיות אור הנפש בכלי הגוף,",
-              "en": "and like the life of the soul's light in the vessels of the body,"
-            },
-            {
-              "he": "וכהתחכמות מכח השכל וכהאי גוונא",
-              "en": "and like being clever, from the power of the intellect, and the like."
-            },
-            {
-              "he": "והיותר דמיון אמיתי לגלוי ההעלם",
-              "en": "And the truest comparison for the revelation of the hidden"
-            },
-            {
-              "he": "הוא כמו גלוי התנועה מן החי",
-              "en": "is like the revelation of movement from the living being,"
-            },
-            {
-              "he": "וכאותיות המחשבה ואותיות הדיבור וכהאי גוונא",
-              "en": "and like the letters of thought and the letters of speech, and the like."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording",
-            "note": "Lines 8 to 39 are not heard in the series: on tape 029 a class on chapter 20 takes their place. The phrases are a plain rendering."
+            "note": "Lines 8 to 39 are not heard in the series: on tape 029 a class on chapter 20 takes their place."
           }
         },
         {
@@ -231,32 +187,6 @@
             "tz3wlkag",
             "22f5anl7",
             "bgvjske6"
-          ],
-          "phrases": [
-            {
-              "he": "וכל זה יותר אמיתי מדמיון שלהבת הקשורה בהעלם בגחלת",
-              "en": "All this is truer than the comparison of the flame bound up in concealment in the coal."
-            },
-            {
-              "he": "שאף על פי שבגחלת היה השלהבת בהעלם,",
-              "en": "For although in the coal the flame was hidden,"
-            },
-            {
-              "he": "אבל הרי על כל פנים ממהות חום שבגחלת יצא השלהבת,",
-              "en": "still, at any rate, the flame came out of the very being of the heat in the coal,"
-            },
-            {
-              "he": "ואין זה אמיתית ענין הגלוי",
-              "en": "and that is not the truth of revelation;"
-            },
-            {
-              "he": "רק כמו בחינת מראה וגוון לבד,",
-              "en": "[true revelation is] only like a look and a color alone,"
-            },
-            {
-              "he": "כגוון התפוח שאינו ממהות התפוח, וכידוע",
-              "en": "like the color of the apple, which is not of the apple's very being, as is known."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -275,32 +205,6 @@
             "tu2xk2bu",
             "2per7hjk"
           ],
-          "phrases": [
-            {
-              "he": "וכך הוא בגלוי העלם עצם כחות הנפש,",
-              "en": "So it is in the revelation of the hidden essence of the soul's powers,"
-            },
-            {
-              "he": "כמו כח מדת החסד בעצם",
-              "en": "like the power of the attribute of *chesed* in the essence."
-            },
-            {
-              "he": "שגלוי שלו היינו כאשר מצד עצמיות מדה זו בעצם הנפש,",
-              "en": "Its revelation is this: because of the very essence of this attribute in the essence of the soul,"
-            },
-            {
-              "he": "הרי מתהווה רצון ושכל של חסד וטוב תמיד",
-              "en": "a will and an intellect of kindness and good always come into being;"
-            },
-            {
-              "he": "ולהיפך במי שמדתו העצמית באכזריות,",
-              "en": "and the opposite: in one whose essential attribute is cruelty,"
-            },
-            {
-              "he": "מתהווה רצון ושכל לדין ועונש",
-              "en": "there comes into being a will and an intellect for *din* (judgement) and punishment."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -309,20 +213,6 @@
         {
           "lines": [
             "2ikfkm3u"
-          ],
-          "phrases": [
-            {
-              "he": "והנה התהוות מקור לרצון זה, לחסד או לדין,",
-              "en": "Now the coming into being of a source for this will, for kindness or for judgement,"
-            },
-            {
-              "he": "נחשב עדיין מעצם המדה,",
-              "en": "is still counted as of the essence of the attribute,"
-            },
-            {
-              "he": "שאינו נבדל הימנה כלל",
-              "en": "for it is not separate from it at all."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -336,36 +226,6 @@
             "u2viuxqa",
             "a3bcxgo5"
           ],
-          "phrases": [
-            {
-              "he": "אבל מה שנולד רצון בגלוי לדין או להיפוכו,",
-              "en": "But that a will is born in revelation, for judgement or the opposite,"
-            },
-            {
-              "he": "זהו רק כמו בחינת התגלות מראה לעצם",
-              "en": "that is only like the showing of a look of the essence,"
-            },
-            {
-              "he": "כהתגלות התנועה בעצם החי",
-              "en": "like the revelation of movement in the living being itself,"
-            },
-            {
-              "he": "וכגלוי החיות בדבר נבדל, שהוא הגוף",
-              "en": "and like the revelation of life in a separate thing, which is the body:"
-            },
-            {
-              "he": "שמפני שהוא חי בעצם, מגלה חיותו בתנועה",
-              "en": "because it is alive in its essence, it reveals its life in movement;"
-            },
-            {
-              "he": "וכן מפני שהוא דבר חי בעצם, מחיה גם לגוף הדומם",
-              "en": "and likewise, because it is a living thing in its essence, it gives life even to the inanimate body,"
-            },
-            {
-              "he": "שנקרא חיי בשר כו'",
-              "en": "which is called \"the life of the flesh.\""
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -375,20 +235,6 @@
           "lines": [
             "wdr6iwer",
             "7dk4a7yk"
-          ],
-          "phrases": [
-            {
-              "he": "כי גלוי רצון זה בא בדבר נבדל,",
-              "en": "For the revelation of this will comes in a separate thing,"
-            },
-            {
-              "he": "שהוא ענין זה של חסד או דין",
-              "en": "which is this particular matter of kindness or judgement;"
-            },
-            {
-              "he": "אבל מקור המוליד רצון זה הוא בא מכח עצם המדה לבד",
-              "en": "but the source that gives birth to this will comes from the power of the essence of the attribute alone."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -401,44 +247,6 @@
             "3lbohrsh",
             "vsakhlzt"
           ],
-          "phrases": [
-            {
-              "he": "ומובן ממילא,",
-              "en": "And it is understood of itself:"
-            },
-            {
-              "he": "בהיות שיש כמה אופני דברים שיוליד רצון מיוחד לכל אחד",
-              "en": "since there are many kinds of things, it gives birth to a will of its own for each one"
-            },
-            {
-              "he": "ממקור אחד,",
-              "en": "from one source,"
-            },
-            {
-              "he": "שהוא תלוי בעצם המדה תמיד כו'",
-              "en": "which always depends on the essence of the attribute."
-            },
-            {
-              "he": "וגם שכל המטה תמיד כלפי רצון וחסד,",
-              "en": "And also an intellect that always tilts toward will and kindness"
-            },
-            {
-              "he": "היינו רק מצד עצם מדת החסד",
-              "en": "is only because of the essence of the attribute of *chesed*,"
-            },
-            {
-              "he": "שמוליד תמיד רצון ושכל לחסד דוקא",
-              "en": "which always gives birth to a will and an intellect for kindness, *davka*."
-            },
-            {
-              "he": "ויש כמה ענינים נבדלים",
-              "en": "And there are many separate matters,"
-            },
-            {
-              "he": "ולכל אחד מוליד רצון ושכל בפני עצמו כו' ודי למבין",
-              "en": "and for each one it gives birth to a will and an intellect of its own. This is enough for one who understands."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -450,36 +258,6 @@
             "sggpxbba",
             "otiu6z4l"
           ],
-          "phrases": [
-            {
-              "he": "ונמצא שהרצון לרצון של חסד בכלל,",
-              "en": "So the will for a will of kindness in general"
-            },
-            {
-              "he": "יוכל להוליד כמה רצונות של חסד בפרט,",
-              "en": "can give birth to many wills of kindness in particular,"
-            },
-            {
-              "he": "בכמה ענינים שונים באופנים שונים מאד",
-              "en": "in many different matters, in very different ways,"
-            },
-            {
-              "he": "והכל ממקור אחד,",
-              "en": "and all from one source,"
-            },
-            {
-              "he": "שהוא רצון הנעלם הנקרא עצם הרצון של חסד,",
-              "en": "which is the hidden will called the essence of the will for kindness,"
-            },
-            {
-              "he": "מצד עצמיות המדה ההיולית",
-              "en": "because of the essence of the attribute in its *hiyuli* (raw potential) state;"
-            },
-            {
-              "he": "רק שבא בדרך פרט להיות רצון לרצון זה בדבר פרט זה כו' ודי למבין.",
-              "en": "only it comes *derech prat* (in a particular way), to be this will for a will in this particular thing. This is enough for one who understands."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -489,24 +267,6 @@
           "lines": [
             "4bc7okcf",
             "egk3hbg2"
-          ],
-          "phrases": [
-            {
-              "he": "ומובן על כל פנים שיש הפרש גדול בין גלוי הרצון לחסד,",
-              "en": "At any rate it is understood that there is a great difference between the revelation of the will for kindness,"
-            },
-            {
-              "he": "שאינו רק בחינת גלוי ההעלם של עצם הרצון, המוליד רצון זה",
-              "en": "which is only a revelation of what is hidden in the essence of the will that gives birth to this will,"
-            },
-            {
-              "he": "שהוא בא מכח עצם המדה,",
-              "en": "and [the essence of the will itself,] which comes from the power of the essence of the attribute"
-            },
-            {
-              "he": "שהוא אינו בחינת נבדל כו' ודי למבין.",
-              "en": "and is not something separate. This is enough for one who understands."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -526,32 +286,6 @@
             "ddps5rvn",
             "lfqoewig"
           ],
-          "phrases": [
-            {
-              "he": "ועל דרך משל זה יובן",
-              "en": "By way of this analogy we will understand"
-            },
-            {
-              "he": "ענין קורא הדורות מראש דאדם קדמון כו'",
-              "en": "\"He calls the generations from the head\" of *Adam Kadmon*:"
-            },
-            {
-              "he": "כמשל הקורא דבר שיצא מהעלמו לגלוי לחוץ",
-              "en": "like one who calls out a thing, which went out of its concealment into revelation outside;"
-            },
-            {
-              "he": "כך כל עיקר בחינת עשר ספירות דאצילות",
-              "en": "so the whole essence of the ten *sefiros* of *Atzilus*"
-            },
-            {
-              "he": "הוא שיצאו מהעלמם לגלוי בלבד",
-              "en": "is that they went out of their concealment into revelation, and no more."
-            },
-            {
-              "he": "ועל כן נקראו בשם אורות או ספירות, כמו זיו ואור",
-              "en": "That is why they are called lights, or *sefiros*, like a glow and a light."
-            }
-          ],
           "blocks": [],
           "skip": {
             "reason": "no-recording"
@@ -562,36 +296,6 @@
             "ttm2l7k2",
             "swn25rlz",
             "bxj3fuyi"
-          ],
-          "phrases": [
-            {
-              "he": "וכמו כל בחינת גלוי ההעלם שאינו רק בבחינת אור,",
-              "en": "Like any revelation of the hidden, which is only a light,"
-            },
-            {
-              "he": "וכבחינת מראה וגוון,",
-              "en": "like a look and a color,"
-            },
-            {
-              "he": "וכמו תנועת החי כו'",
-              "en": "and like the movement of the living being."
-            },
-            {
-              "he": "והיינו כמו ויאצל מן הרוח,",
-              "en": "And this is like \"and He set apart from the spirit\":"
-            },
-            {
-              "he": "שאין זה רוחו של משה",
-              "en": "this is not the spirit of Moshe [itself],"
-            },
-            {
-              "he": "רק בחינת גלוי אורו וזיוו לבד, הוא שנאצל והופרש,",
-              "en": "only the revelation of his light and glow alone was what was emanated and set apart,"
-            },
-            {
-              "he": "כגלוי שלהבת מן הגחלת וכהאי גוונא כו'",
-              "en": "like the revelation of a flame from the coal, and the like."
-            }
           ],
           "blocks": [],
           "skip": {
@@ -606,38 +310,19 @@
           ],
           "phrases": [
             {
-              "he": "וכל זה יובן על פי משל הנזכר לעיל",
-              "en": "All this is understood by the analogy mentioned above"
+              "he": "וכל זה יובן על פי משל הנזכר לעיל מענין גלוי הרצון בדבר נבדל"
             },
             {
-              "he": "מענין גלוי הרצון בדבר נבדל",
-              "en": "of the revelation of the will in a separate thing,"
+              "he": "שיוצא מהעלם עצם הרצון שמצד עצמיות כנזכר לעיל"
             },
             {
-              "he": "שיוצא מהעלם עצם הרצון שמצד עצמיות כנזכר לעיל",
-              "en": "which comes out of the concealment of the *etzem haratzon* (the essence of the will) that comes from the very essence, as mentioned above."
-            },
-            {
-              "he": "כך בחינת כתרים דעשר ספירות דאצילות",
-              "en": "So the *Kesarim* (crowns) of the ten *sefiros* of *Atzilus*"
-            },
-            {
-              "he": "הן רק בחינת גלוי רצון",
-              "en": "are only a revelation of will"
-            },
-            {
-              "he": "לגבי העלם עצם הרצון שנקרא רצון לרצון,",
-              "en": "relative to the concealment of the essence of the will, which is called the will for a will,"
-            },
-            {
-              "he": "שהוא בבחינת אדם קדמון כנזכר לעיל",
-              "en": "which is in *Adam Kadmon*, as mentioned above."
+              "he": "כך בחינת כתרים דעשר ספירות דאצילות הן רק בחינת גלוי רצון לגבי העלם עצם הרצון שנקרא רצון לרצון, שהוא בבחינת אדם קדמון כנזכר לעיל"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**which comes out of the concealment of the *etzem haratzon* (the essence of the will) that comes from the very essence**: so **the *Kesarim* (crowns) of the ten *sefiros* of *Atzilus* … are only a revelation of will** relative to the hidden essence of the will, which is called the *ratzon l'ratzon* (the will for a will) and is in *Adam Kadmon*. Over here he calls *Adam Kadmon* the *etzem haratzon*.",
+              "text": "The revealed will comes out of the concealment of the *etzem haratzon* (the essence of the will), and so the *Kesarim* (crowns) of the ten *sefiros* of *Atzilus* are only a revelation of will relative to the hidden essence of the will, which is called the *ratzon l'ratzon* (the will for a will) and is in *Adam Kadmon*. Over here he calls *Adam Kadmon* the *etzem haratzon*.",
               "audio": [
                 {
                   "lecture": "029 Tape025-Side1-Ch19.mp3",
@@ -656,26 +341,26 @@
           ],
           "phrases": [
             {
-              "he": "וכמו מבחינת העלם הרצון דחסד דאדם קדמון",
-              "en": "Like from the hidden will of *chesed* of *Adam Kadmon*"
+              "he": "וכמו מבחינת העלם הרצון דחסד דאדם קדמון נמשך גלוי רצון לחסד דאצילות",
+              "en": "like from his self-image of being an *ish chesed* (*Adam Kadmon* means the first conception of himself, what kind of person he's going to be): from the *chesed* of that will come a *gilui ratzon* for *chesed*, actually coming out in a particular *chesed*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [3485, 3534],
+                "start": 1434.61,
+                "end": 1461.38
+              }
             },
             {
-              "he": "נמשך גלוי רצון לחסד דאצילות",
-              "en": "is drawn a revealed will for *chesed* of *Atzilus*,"
+              "he": "שנקרא כתר דחסד כו'"
             },
             {
-              "he": "שנקרא כתר דחסד כו'",
-              "en": "which is called *Keser* of *chesed*;"
-            },
-            {
-              "he": "וכן מבחינת העלם רצון דחכמה כו'",
-              "en": "and so from the hidden will of *chachma* (wisdom)."
+              "he": "וכן מבחינת העלם רצון דחכמה כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Like from the hidden will of *chesed* of *Adam Kadmon* … is drawn a revealed will for *chesed* of *Atzilus***. In a person: *Adam Kadmon* means the first conception of himself, what kind of person he is going to be, his self-image of being an *ish chesed* (a man of kindness). From the *chesed* of that comes a revealed will for *chesed*, actually coming out in a particular *chesed*, and that is what is called **Keser of *chesed***. So the source of *Keser* of *chesed* is in *chesed* of *Adam Kadmon*; **and so from the hidden will of *chachma* (wisdom)**.",
+              "text": "From the hidden will of *chesed* of *Adam Kadmon* is drawn a revealed will for *chesed* of *Atzilus*. In a person: *Adam Kadmon* means the first conception of himself, what kind of person he is going to be, his self-image of being an *ish chesed* (a man of kindness). From the *chesed* of that comes a revealed will for *chesed*, actually coming out in a particular *chesed*, and that is what is called *Keser* of *chesed*. So the source of *Keser* of *chesed* is in *chesed* of *Adam Kadmon*; and so from the hidden will of *chachma* (wisdom).",
               "audio": [
                 {
                   "lecture": "029 Tape025-Side1-Ch19.mp3",
@@ -699,34 +384,39 @@
           ],
           "phrases": [
             {
-              "he": "אך כמו שמובן ממשל הנזכר לעיל",
-              "en": "But as is understood from the analogy mentioned above,"
-            },
-            {
-              "he": "שזהו הנקרא התהוות רצון לרצון,",
-              "en": "that this is what is called the coming into being of a will for a will,"
+              "he": "אך כמו שמובן ממשל הנזכר לעיל שזהו הנקרא התהוות רצון לרצון,"
             },
             {
               "he": "הרי הוא בא בבחינת הכלל",
-              "en": "it comes in a general fashion,"
+              "en": "it comes in a general fashion, it's a *heskem klali*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [3583, 3592],
+                "start": 1492.09,
+                "end": 1494.82
+              }
             },
             {
-              "he": "להוליד כמה מיני רצון וכמה ענינים אופנים שונים כו',",
-              "en": "to give birth to many kinds of will, and many matters, all kinds of different ways in particulars;"
+              "he": "להוליד כמה מיני רצון"
             },
             {
-              "he": "כך מבחינת רצון לרצון לחסד באדם קדמון",
-              "en": "so from the will for a will for *chesed* in *Adam Kadmon*"
+              "he": "וכמה ענינים אופנים שונים כו',",
+              "en": "all kinds of different ways in *pratim*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [3602, 3608],
+                "start": 1502.28,
+                "end": 1503.98
+              }
             },
             {
-              "he": "נולד כמה מיני גלוי רצון של חסד באצילות",
-              "en": "are born many kinds of revealed will of *chesed* in *Atzilus*."
+              "he": "כך מבחינת רצון לרצון לחסד באדם קדמון נולד כמה מיני גלוי רצון של חסד באצילות"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This thing that is called the coming into being of a will from a will, **it comes in a general fashion**. Out of it come many kinds of will, in many matters, **all kinds of different ways in particulars**. And in the same way **from the will for a will for *chesed* in *Adam Kadmon* … are born many kinds of revealed will of *chesed* in *Atzilus***.",
+              "text": "This thing that is called the coming into being of a will from a will, **it comes in a general fashion**. Out of it come many kinds of will, in many matters, **all kinds of different ways in *pratim***. And in the same way from the will for a will for *chesed* in *Adam Kadmon* are born many kinds of revealed will of *chesed* in *Atzilus*.",
               "audio": [
                 {
                   "lecture": "029 Tape025-Side1-Ch19.mp3",
@@ -751,30 +441,33 @@
           ],
           "phrases": [
             {
-              "he": "והענין הוא",
-              "en": "And the matter is this:"
+              "he": "והענין הוא"
             },
             {
-              "he": "דמבחינת המלכות של מדה דאדם קדמון",
-              "en": "from the *Malchus* of an attribute of *Adam Kadmon*"
+              "he": "דמבחינת המלכות של מדה דאדם קדמון נעשה בחינת כתר דמדה דאצילות",
+              "en": "from *Malchus* of a *midda* of *Adam Kadmon* becomes the *Keser* of that *midda* of *Atzilus*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [3840, 3859],
+                "start": 1638.29,
+                "end": 1645.24
+              }
             },
             {
-              "he": "נעשה בחינת כתר דמדה דאצילות",
-              "en": "comes the *Keser* of the attribute of *Atzilus*;"
-            },
-            {
-              "he": "ובכללות העשר ספירות",
-              "en": "and in the ten *sefiros* as a whole,"
-            },
-            {
-              "he": "הרי רק מבחינת מלכות דאדם קדמון נעשה כתר דאצילות",
-              "en": "only from *Malchus* of *Adam Kadmon* comes *Keser* of *Atzilus*."
+              "he": "ובכללות העשר ספירות הרי רק מבחינת מלכות דאדם קדמון נעשה כתר דאצילות",
+              "en": "in general, from *Malchus* of *Adam Kadmon* becomes *Keser* of *Atzilus*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [3863, 3872],
+                "start": 1646.08,
+                "end": 1651.01
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And the matter is this**: so far it was in general, and now he is going to tell it in more particular. In particular, **from the *Malchus* of an attribute of *Adam Kadmon* … comes the *Keser* of the attribute of *Atzilus***. And **in the ten *sefiros* as a whole, … only from *Malchus* of *Adam Kadmon* comes *Keser* of *Atzilus***.",
+              "text": "And the matter is this: so far it was in general, and now he is going to tell it in more particular. In particular, **from *Malchus* of a *midda* of *Adam Kadmon* becomes the *Keser* of that *midda* of *Atzilus***. And **in general, from *Malchus* of *Adam Kadmon* becomes *Keser* of *Atzilus***.",
               "audio": [
                 {
                   "lecture": "029 Tape025-Side1-Ch19.mp3",
@@ -819,18 +512,13 @@
           ],
           "phrases": [
             {
-              "he": "והוא רק מבחינת אותיות וגלוי עצם העלם הרצון,",
-              "en": "That is, only from the letters and the revelation of the essence of the hidden will"
-            },
-            {
-              "he": "נעשה אור העצם של גלוי רצון כו'",
-              "en": "comes the essential light of the revealed will."
+              "he": "והוא רק מבחינת אותיות וגלוי עצם העלם הרצון, נעשה אור העצם של גלוי רצון כו'"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**That is, only from the letters and the revelation of the essence of the hidden will … comes the essential light of the revealed will.** He is going to explain this in the parenthesis. And the explanation in the parenthesis is not only on this: it is in general on the whole *inyan* (matter) of how the *Malchus* of the upper becomes the *Keser* of the lower.",
+              "text": "That is, only from the letters and the revelation of the essence of the hidden will comes the essential light of the revealed will. He is going to explain this in the parenthesis. And the explanation in the parenthesis is not only on this: it is in general on the whole *inyan* (matter) of how the *Malchus* of the upper becomes the *Keser* of the lower.",
               "audio": [
                 {
                   "lecture": "029 Tape025-Side1-Ch19.mp3",
@@ -848,16 +536,27 @@
           ],
           "phrases": [
             {
-              "he": "(שהוא כמו שמבואר באות הי''ח דרק מבחינת סוף מעשה דעצם הרצון",
-              "en": "(As explained in [chapter] 18, only from the *sof maaseh* (the end of the deed) of the essence of the will"
+              "he": "(שהוא כמו שמבואר באות הי''ח"
             },
             {
-              "he": "נעשה רצון לרצון",
-              "en": "comes the will for a will,"
+              "he": "דרק מבחינת סוף מעשה דעצם הרצון נעשה רצון לרצון",
+              "en": "the *sof maaseh* of the *ratzon kadum* comes out the *Keser* of the *ratzon l'ratzon*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [90, 105],
+                "start": 54.1,
+                "end": 61.52
+              }
             },
             {
               "he": "שהוא עשר ספירות דאדם קדמון)",
-              "en": "which is the ten *sefiros* of *Adam Kadmon*.)"
+              "en": "which is the ten *sefiros* of *Adam Kadmon*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [106, 111],
+                "start": 61.52,
+                "end": 64.47
+              }
             }
           ],
           "blocks": [
@@ -875,7 +574,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**As explained in [chapter] 18, only from the *sof maaseh* (the end of the deed) of the essence of the will … comes the will for a will**. Notice that here he does not call the will for a will the essence of the will, as he did before. Here **the essence of the will** means the *ratzon kadum* (the preceding will). From the *sof maaseh* of the *ratzon kadum* comes out the *Keser* of the will for a will, **which is the ten *sefiros* of *Adam Kadmon***.",
+              "text": "As explained in chapter 18, only from the *sof maaseh* (the end of the deed) of the essence of the will comes the will for a will. Notice that here he does not call the will for a will the essence of the will, as he did before. Here the essence of the will means the *ratzon kadum* (the preceding will). From **the *sof maaseh* of the *ratzon kadum* comes out the *Keser* of the *ratzon l'ratzon***, which is the ten *sefiros* of *Adam Kadmon*.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -911,22 +610,33 @@
           ],
           "phrases": [
             {
-              "he": "(על דרך דוגמא,",
-              "en": "(For example:"
+              "he": "(על דרך דוגמא,"
             },
             {
               "he": "מגלוי רצון שבדבור המשפיע",
-              "en": "from the revealed will in the speech of the *mashpia* (the giver)"
+              "en": "when the *Rebbe* says something and he reveals in his speech, which is his *Malchus*, that he wants the *chassidim* to do such and such a thing",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [240, 266],
+                "start": 134.84,
+                "end": 146.82
+              }
             },
             {
               "he": "נעשה עצם הרצון למקבל",
-              "en": "comes the essence of the will in the *mekabel* (the receiver);"
+              "en": "this becomes the *etzem haratzon* in the *mekabel*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [274, 280],
+                "start": 151.16,
+                "end": 154.52
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**from the revealed will in the speech of the *mashpia* (the giver) … comes the essence of the will in the *mekabel* (the receiver)**. That means: from the *Malchus* of *Keser* comes *Keser* of *Keser* in the *mekabel*, in the lower level.",
+              "text": "From the revealed will in the speech of the *mashpia* (the giver) comes the essence of the will in the *mekabel* (the receiver). That means: from the *Malchus* of *Keser* comes *Keser* of *Keser* in the *mekabel*, in the lower level.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -958,17 +668,29 @@
           "phrases": [
             {
               "he": "כמו שמאותיות גלוי השכל שבדבור שבמשפיע",
-              "en": "just as from the letters of the revealed intellect in the speech of the *mashpia*"
+              "en": "the letters of revelation of the *sechel* in the writing (instead of *dibur* you can say writing) of the *mashpia*, of the *Rebbe*, this book",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [308, 334],
+                "start": 178.76,
+                "end": 187.84
+              }
             },
             {
               "he": "נעשה עצם אור השכל במקבל",
-              "en": "comes the essential light of the intellect in the *mekabel*;"
+              "en": "by us, this becomes the *etzem or hasechel*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [340, 347],
+                "start": 192.26,
+                "end": 194.6
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**just as from the letters of the revealed intellect in the speech of the *mashpia* … comes the essential light of the intellect in the *mekabel***.",
+              "text": "Just as from the letters of the revealed intellect in the speech of the *mashpia* comes the essential light of the intellect in the *mekabel*.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -1001,26 +723,33 @@
           "phrases": [
             {
               "he": "וכך רק מאותיות וגלוי חסד שבדבור דמשפיע",
-              "en": "and so only from the letters and the revelation of kindness in the speech of the *mashpia*"
+              "en": "if the *Rebbe* says you should go out and help Jews, put *tefillin* with people and help them and be *mekarev* people",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [399, 420],
+                "start": 220.8,
+                "end": 227.08
+              }
             },
             {
               "he": "נעשה אור הרצון לחסד למקבל",
-              "en": "comes the light of the will for kindness in the *mekabel*;"
+              "en": "this becomes *or haratzon l'chesed* in the *mekabel*, by the *chassid*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [422, 430],
+                "start": 228.54,
+                "end": 234.32
+              }
             },
             {
-              "he": "כידוע בכל עילה ועלול,",
-              "en": "as is known of every cause and effect,"
-            },
-            {
-              "he": "שמבחינת האחרונה שבעילה נעשה ראש ושרש לעלול",
-              "en": "that from the last level of the cause comes the head and root of the effect."
+              "he": "כידוע בכל עילה ועלול, שמבחינת האחרונה שבעילה נעשה ראש ושרש לעלול"
             }
           ],
           "blocks": [
             {
               "kind": "mashal",
               "title": "Go out and help Jews",
-              "text": "**and so only from the letters and the revelation of kindness in the speech of the *mashpia* … comes the light of the will for kindness in the *mekabel***. If the Rebbe says you should go out and help Jews, put *tefillin* on with people, help them and bring them close, this becomes the light of the will for *chesed* in the *mekabel*, by the *chassid*.",
+              "text": "And so only from the letters and the revelation of kindness in the speech of the *mashpia* comes the light of the will for kindness in the *mekabel*. If the Rebbe says you should go out and help Jews, put *tefillin* on with people, help them and bring them close, this becomes the light of the will for *chesed* in the *mekabel*, by the *chassid*.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -1032,7 +761,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And this you can see in any attribute, **as is known of every cause and effect, … that from the last level of the cause comes the head and root of the effect**.",
+              "text": "And this you can see in any attribute, as is known of every cause and effect, that from the last level of the cause comes the head and root of the effect.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -1052,33 +781,52 @@
           "phrases": [
             {
               "he": "וכך מבחינת מלכות דאדם קדמון בכלל",
-              "en": "And so from *Malchus* of *Adam Kadmon* in general"
+              "en": "same thing as in particular, same thing in general",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [460, 468],
+                "start": 252.96,
+                "end": 256.52
+              }
             },
             {
               "he": "נעשה בחינת כתר דעתיק יומין כו'",
-              "en": "comes *Keser* of *Atik Yomin*;"
+              "en": "the general talk of the *Rebbe* becomes the general *Keser* of the *chassid*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [473, 485],
+                "start": 261.48,
+                "end": 266.92
+              }
             },
             {
               "he": "דהיינו מבחינת גלוי רצון לרצון שבדבור בלבד,",
-              "en": "that is, only from the revealed will for a will in speech,"
+              "en": "just the final *dibur*, so to speak, of the *ratzon l'ratzon*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [494, 505],
+                "start": 275.98,
+                "end": 279.6
+              }
             },
             {
-              "he": "נעשה בחינת מקור כל גלוי רצון שמצד התענוג",
-              "en": "comes the source of every revealed will that comes from the *taanug* (delight),"
-            },
-            {
-              "he": "שנקרא כתר דעתיק יומין כו'",
-              "en": "called *Keser* of *Atik Yomin*,"
+              "he": "נעשה בחינת מקור כל גלוי רצון שמצד התענוג שנקרא כתר דעתיק יומין כו'"
             },
             {
               "he": "וכמו שיתבאר)",
-              "en": "as will be explained.)"
+              "en": "like will be explained later",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [520, 524],
+                "start": 287.12,
+                "end": 288.26
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And so from *Malchus* of *Adam Kadmon* in general**: the same as in particular, the same thing in general, it **comes *Keser* of *Atik Yomin***. The general talk of the Rebbe becomes the general *Keser* of the *chassid*. **that is, only from the revealed will for a will in speech**, meaning just the final speech, so to speak, of the will for a will, **comes the source of every revealed will that comes from the *taanug* (delight)**, called *Keser* of *Atik*, as will be explained later.",
+              "text": "And so from *Malchus* of *Adam Kadmon* in general, the same as in particular, comes *Keser* of *Atik Yomin*. The general talk of the Rebbe becomes the general *Keser* of the *chassid*. That is, only from the revealed will for a will in speech, meaning just the final speech, so to speak, of the will for a will, comes the source of every revealed will that comes from the *taanug* (delight), called *Keser* of *Atik*, as will be explained later.",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -1109,21 +857,39 @@
           "phrases": [
             {
               "he": "והיינו כללות ענין העשר ספירות דאצילות",
-              "en": "And this is the general matter of the ten *sefiros* of *Atzilus*,"
+              "en": "this is the general *inyan* of the ten *sefiros* of *Atzilus*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [551, 566],
+                "start": 303.56,
+                "end": 308.58
+              }
             },
             {
               "he": "שיצאו מהעלם עשר ספירות דאדם קדמון,",
-              "en": "which came out of the concealment of the ten *sefiros* of *Adam Kadmon*,"
+              "en": "they just came out from the *helem* of the ten *sefiros* of *Adam Kadmon*, in a way of just a *gilui*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [572, 592],
+                "start": 310.66,
+                "end": 316.1
+              }
             },
             {
               "he": "כמו שכתוב קורא הדורות מראש כו':",
-              "en": "as it is written, \"He calls the generations from the head.\""
+              "en": "He calls out the generations from the head of *Adam Kadmon*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [598, 608],
+                "start": 321.54,
+                "end": 325.64
+              }
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And this is the general matter of the ten *sefiros* of *Atzilus***: what was talked about in this chapter. The ten *sefiros* of *Atzilus* just came out of the concealment of the ten *sefiros* of *Adam Kadmon*, in a way of only a *gilui* (revelation). As it says, **\"He calls the generations from the head\"**: He calls out the generations from the head of *Adam Kadmon*. \"That's chapter 19.\"",
+              "text": "And this is the general matter of the ten *sefiros* of *Atzilus*: what was talked about in this chapter. The ten *sefiros* of *Atzilus* just came out of the concealment of the ten *sefiros* of *Adam Kadmon*, in a way of only a *gilui* (revelation). As it says, \"He calls the generations from the head\": **He calls out the generations from the head of *Adam Kadmon***. \"That's chapter 19.\"",
               "audio": [
                 {
                   "lecture": "030 Tape025-Side2-Ch20.mp3",
@@ -1213,7 +979,7 @@
   ],
   "notes": [
     {
-      "text": "Tape 029 reads lines 1 to 7 (words 0-78) and then, from \"Okay, go ahead\" (word 79) to about word 3415, holds a class on the end of chapter 20, which continues class 030; the chapter 19 class resumes just before line 40 (word 3435), in the middle of the sentence. Lines 8 to 39 are never heard in the series, and their phrases, like those of lines 1 to 7, are a plain rendering, not his. The chapter 20 material (with the missionaries, the released offender and Beis Hillel and Beis Shammai) should go into chapter 20's file from 029 words 79-3415.",
+      "text": "Tape 029 reads lines 1 to 7 (words 0-78) and then, from \"Okay, go ahead\" (word 79) to about word 3415, holds a class on the end of chapter 20, which continues class 030; the chapter 19 class resumes just before line 40 (word 3435), in the middle of the sentence. Lines 8 to 39 are never heard in the series and have no phrases; lines 1 to 7 and 39 to 41 are read without translation, so their phrases have only the Hebrew. The chapter 20 material (with the missionaries, the released offender and Beis Hillel and Beis Shammai) should go into chapter 20's file from 029 words 79-3415.",
       "lines": [
         "2c5deke6",
         "s2bhihtq",
