@@ -36,7 +36,8 @@ title = "Shaar Hayichud"
 
 # The study guides for the lessons2 closed beta (data/dist/study-beta/,
 # written by the data build): unlisted and unversioned, served noindex
-# (static/_headers) and disallowed in static/robots.txt.
+# (static/_headers). Not disallowed in a robots.txt: a crawler that may not
+# fetch a URL never sees its noindex.
 [[module.mounts]]
   source = "../../data/dist/study-beta"
   target = "static/data/study-beta"

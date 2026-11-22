@@ -712,8 +712,10 @@ and a study file that passes every check).
 ### The study-beta export
 
 `yarn build-data` also writes `dist/study-beta/` (`tools/src/study-export.ts`),
-which the site publishes at `/data/study-beta/` with `X-Robots-Tag: noindex`
-and a `robots.txt` Disallow. It is for the lessons2 closed beta only: not part
+which the site publishes at `/data/study-beta/` with `X-Robots-Tag: noindex`.
+It is deliberately not disallowed in a `robots.txt`: a crawler that obeys a
+Disallow never fetches the files, so it never sees their `noindex`, and a
+disallowed URL linked from elsewhere can still be indexed by its URL alone. It is for the lessons2 closed beta only: not part
 of `v1`, not in `dist/v1/index.json`, never in the snapshot package, and its
 shape may change (`schemaVersion` is bumped when it breaks). Only files with
 no error are exported; a stale file is exported with `"stale": true`.
