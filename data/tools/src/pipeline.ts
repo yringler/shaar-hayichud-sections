@@ -9,7 +9,7 @@ import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
-import { exportStudyBeta, type StudyBetaExport } from './study-export.js';
+import { exportStudyBeta, exportStudyPublic, type StudyBetaExport, type StudyPublicExport } from './study-export.js';
 import { checkStudy, loadStudyContext } from './study.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
@@ -70,6 +70,8 @@ export interface BuildResult {
   /** dist/study-beta/ and how many guides it holds. */
   studyBetaDir?: string;
   studyBetaFiles?: number;
+  /** How many public study guides dist/v1/study/ holds. */
+  studyPublicFiles?: number;
 }
 
 const writeJson = (file: string, data: unknown) => {
@@ -101,6 +103,7 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   // the strict check), so that editing a chapter never blocks a deploy.
   const warnings: string[] = [];
   let studyBeta: StudyBetaExport | null = null;
+  let studyPublic: StudyPublicExport | null = null;
   if (errors.length === 0) {
     const dataDir = paths.sources.dataDir;
     const studyCtx = existsSync(path.join(dataDir, 'study')) ? loadStudyContext(dataDir) : undefined;
@@ -112,6 +115,12 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     // The lessons2 beta's copy (dist/study-beta/, not under v1): files with
     // no error, stale ones included.
     if (studyCtx) studyBeta = exportStudyBeta(dataDir, studyCtx, study.issues);
+    // The public edition of the series whose teacher allowed it (dist/v1/study/).
+    if (studyCtx) {
+      studyPublic = exportStudyPublic(dataDir, studyCtx, study.issues);
+      errors.push(...schemas.validate('studyIndex', studyPublic.index).map((e) => `study/index.json: ${e}`));
+      for (const [rel, data] of studyPublic.files) errors.push(...schemas.validate('study', data).map((e) => `${rel}: ${e}`));
+    }
   }
   if (errors.length > 0) return { errors };
   const audio = publishAudio({
@@ -146,6 +155,10 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   writeJson(path.join(outDir, 'transcripts', 'index.json'), { schemaVersion: 1, items: audio.transcriptItems });
   writeJson(path.join(outDir, 'outlines', 'index.json'), { schemaVersion: 1, items: audio.outlineItems });
 
+  // Public study guides: always an index, even when no series is public.
+  for (const [rel, data] of studyPublic?.files ?? []) writeJson(path.join(outDir, ...rel.split('/')), data);
+  writeJson(path.join(outDir, 'study', 'index.json'), studyPublic?.index ?? { schemaVersion: 1, series: [] });
+
   mkdirSync(path.join(outDir, 'schema'), { recursive: true });
   for (const file of schemas.files()) copyFileSync(path.join(paths.schemaDir, file), path.join(outDir, 'schema', file));
 
@@ -158,6 +171,7 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
       { id: 'chapter-alignments', path: 'alignments/chapters/index.json', schema: 'schema/index.schema.json' },
       { id: 'transcripts', path: 'transcripts/index.json', schema: 'schema/index.schema.json' },
       { id: 'outlines', path: 'outlines/index.json', schema: 'schema/index.schema.json' },
+      { id: 'study', path: 'study/index.json', schema: 'schema/study-index.schema.json' },
     ],
   });
 
@@ -169,5 +183,5 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   for (const [rel, data] of studyBeta?.files ?? []) writeJson(path.join(studyDir, ...rel.split('/')), data);
   writeJson(path.join(studyDir, 'index.json'), studyBeta?.index ?? { schemaVersion: 1, generated: new Date().toISOString(), series: [] });
 
-  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir, studyBetaDir: studyDir, studyBetaFiles: studyBeta?.files.size ?? 0 };
+  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir, studyBetaDir: studyDir, studyBetaFiles: studyBeta?.files.size ?? 0, studyPublicFiles: studyPublic?.files.size ?? 0 };
 }

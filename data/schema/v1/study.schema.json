@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/study.schema.json",
+  "title": "Study guide (v1)",
+  "description": "Shape of /data/v1/study/<series>/<chapter>.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Published only for series whose teacher allowed it, in their public edition (blocks marked sensitive in the source are replaced by their publishable text or left out).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "series", "chapter", "title", "status", "overview", "sections"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "series": { "description": "The study series id (see study/index.json).", "type": "string", "minLength": 1 },
+    "chapter": { "description": "Chapter key, as in chapters/.", "type": "string", "pattern": "^chapter_\\d{2}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "status": {
+      "description": "draft: written by a generator, not checked by a person. edited: a person has corrected it. reviewed: approved by the teacher or someone he named.",
+      "enum": ["draft", "edited", "reviewed"]
+    },
+    "stale": { "description": "Present (true) when the guide no longer matches the chapter's text or the recordings' timing in places.", "type": "boolean" },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method"],
+      "properties": { "method": { "enum": ["generated", "migrated", "hand"] } }
+    },
+    "overview": { "description": "The chapter as the class teaches it, a paragraph or two.", "$ref": "#/$defs/prose" },
+    "overviewAudio": { "description": "Where the class sums the chapter up.", "type": "array", "items": { "$ref": "#/$defs/audio" } },
+    "sections": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/section" } }
+  },
+  "$defs": {
+    "prose": {
+      "description": "Markdown, inline only: *italics* for transliterated terms and titles, **bold** only for words quoted from the passage's translation, and a blank line between paragraphs.",
+      "type": "string",
+      "minLength": 1
+    },
+    "lineId": { "description": "A chapter line id.", "type": "string", "pattern": "^[a-z2-7]{8}$" },
+    "audio": {
+      "description": "A stretch of one recording: a catalog lecture id and the seconds, in the audio the catalog plays.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lecture"],
+      "properties": {
+        "lecture": { "type": "string", "minLength": 1 },
+        "start": { "type": "number", "minimum": 0 },
+        "end": { "type": "number", "minimum": 0 }
+      }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary", "passages"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "$ref": "#/$defs/prose" },
+        "passages": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/passage" } }
+      }
+    },
+    "passage": {
+      "description": "One or more consecutive lines taught together.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lines", "blocks"],
+      "properties": {
+        "lines": { "description": "Consecutive line ids, in document order. Together the passages cover the chapter's lines once, in order.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/lineId" } },
+        "phrases": { "description": "The passage's Hebrew cut into phrases as the class reads it; their `he` joined by spaces is the lines' text. Absent where no class reads the lines.", "type": "array", "items": { "$ref": "#/$defs/phrase" } },
+        "blocks": { "type": "array", "items": { "$ref": "#/$defs/block" } },
+        "skip": {
+          "description": "Why the passage has no blocks. no-recording: the series has no class on these lines. read-only: the class reads and translates them and says nothing more.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reason"],
+          "properties": {
+            "reason": { "enum": ["no-recording", "read-only"] },
+            "note": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["he", "lines"],
+      "properties": {
+        "he": { "type": "string", "minLength": 1 },
+        "en": { "description": "The teacher's own English for the phrase, where he gives one (inline Markdown, italics only); then `lecture`, `start` and `end` say where he says it.", "type": "string", "minLength": 1 },
+        "lecture": { "type": "string", "minLength": 1 },
+        "start": { "type": "number", "minimum": 0 },
+        "end": { "type": "number", "minimum": 0 },
+        "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "lines": { "description": "The line ids whose text the phrase overlaps.", "type": "array", "items": { "$ref": "#/$defs/lineId" } }
+      }
+    },
+    "block": {
+      "description": "One thought of the class, a paragraph or two.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "text", "audio"],
+      "properties": {
+        "kind": {
+          "description": "explanation: what the words mean. mashal: an analogy, with what it stands for. keyPoint: the point to take away. question: a question raised in class and its answer. story: a story or recollection. avodah: what to do with this. aside: a remark off the line. digression: a longer excursion. recap: a later summary of the passage.",
+          "enum": ["explanation", "mashal", "keyPoint", "question", "story", "avodah", "aside", "digression", "recap"]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "question": { "description": "For kind question: the question; `text` is the answer.", "$ref": "#/$defs/prose" },
+        "askedBy": { "enum": ["student", "teacher"] },
+        "text": { "$ref": "#/$defs/prose" },
+        "join": { "description": "Presentation hint: the block runs on in the previous block's paragraph.", "type": "boolean" },
+        "audio": { "description": "Where it is said; the first entry is the main one, the rest other tellings of the same thing.", "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/audio" } },
+        "outOfPlace": { "description": "Why the main audio is far from where the class reads the passage's lines.", "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

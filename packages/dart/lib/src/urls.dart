@@ -97,6 +97,16 @@ class DataUrls {
   Uri outline(String lectureId) =>
       _at('outlines/${encodePathSegment(lectureId)}.json');
 
+  /// The public study guides: which series has a guide for which chapter.
+  Uri get studyIndex => _at('study/index.json');
+
+  /// One public study guide, by study series id (`StudyIndexSeries.id`)
+  /// and chapter key, e.g. `walters-original`, `chapter_10` (404 when the
+  /// series has none for it; prefer `StudyIndexChapter.path` with [resolve]).
+  Uri studyGuide(String seriesId, String chapterKey) => _at(
+    'study/${encodePathSegment(seriesId)}/${encodePathSegment(chapterKey)}.json',
+  );
+
   /// A JSON Schema by file name, e.g. `catalog.schema.json`.
   Uri schema(String fileName) => _at('schema/${encodePathSegment(fileName)}');
 

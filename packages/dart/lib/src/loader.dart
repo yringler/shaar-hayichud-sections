@@ -27,6 +27,14 @@ Outline parseOutline(String source) => Outline.fromJson(_decode(source));
 Transcript parseTranscript(String source) =>
     Transcript.fromJson(_decode(source));
 
+/// Parses the study guide listing (`study/index.json`).
+StudyIndex parseStudyIndex(String source) =>
+    StudyIndex.fromJson(_decode(source));
+
+/// Parses one study guide (`study/<series>/<chapter>.json`).
+StudyGuide parseStudyGuide(String source) =>
+    StudyGuide.fromJson(_decode(source));
+
 /// Parses [fetched] (e.g. the latest `catalog.json` from the network) and
 /// falls back to [bundled] (the copy shipped with the app) when [fetched] is
 /// null or not a valid v1 catalog. [bundled] must parse.

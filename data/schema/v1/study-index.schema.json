@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.shaarhayichudresources.com/data/v1/schema/study-index.schema.json",
+  "title": "Study guide listing (v1)",
+  "description": "Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "series"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "series": { "type": "array", "items": { "$ref": "#/$defs/series" } }
+  },
+  "$defs": {
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "catalogSeriesId", "teacher", "title", "chapters"],
+      "properties": {
+        "id": { "description": "Study series id (the guides' `series`).", "type": "string", "minLength": 1 },
+        "catalogSeriesId": { "description": "The catalog series the guides are written from.", "type": "string", "minLength": 1 },
+        "teacher": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "chapters": { "description": "In chapter order.", "type": "array", "items": { "$ref": "#/$defs/chapter" } }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chapter", "path", "status", "lectures"],
+      "properties": {
+        "chapter": { "description": "Chapter key, as in chapters/.", "type": "string", "pattern": "^chapter_\\d{2}$" },
+        "path": { "description": "Path of the guide, relative to /data/v1/.", "type": "string", "minLength": 1 },
+        "status": { "enum": ["draft", "edited", "reviewed"] },
+        "stale": { "type": "boolean" },
+        "lectures": { "description": "The classes the guide cites, in class order.", "type": "array", "items": { "$ref": "#/$defs/lecture" } }
+      }
+    },
+    "lecture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "start", "end"],
+      "properties": {
+        "id": { "description": "Catalog lecture id.", "type": "string", "minLength": 1 },
+        "start": { "description": "Seconds (audio time) where the class's part on this chapter starts.", "type": "number", "minimum": 0 },
+        "end": { "type": "number", "minimum": 0 },
+        "continuesIn": { "description": "The chapter the class reads on into after this one.", "type": "string", "pattern": "^chapter_\\d{2}$" }
+      }
+    }
+  }
+}

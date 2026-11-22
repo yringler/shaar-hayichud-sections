@@ -12,7 +12,7 @@ Hayichud comes from this directory :
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
-| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). Not in `dist/v1`; an unlisted beta copy is written to `dist/study-beta/` | writers (people or agents), `yarn study-fill` |
+| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). The public edition of series whose teacher allowed it is published in `dist/v1/study/`; an unlisted beta copy of all of them is written to `dist/study-beta/` | writers (people or agents), `yarn study-fill` |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
@@ -40,6 +40,7 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 | `/data/v1/alignments/chapters/index.json`, `/data/v1/alignments/chapters/chapter_NN.json` | `index.schema.json`, `chapter-alignments.schema.json` — per chapter: the classes that discuss it and, per aligned line, every class's range |
 | `/data/v1/transcripts/index.json`, `/data/v1/transcripts/<lecture>.json` | `index.schema.json`, `transcript.schema.json` — paragraphs with start/end times (and `speaker` when Sofer labelled speakers) |
 | `/data/v1/outlines/index.json`, `/data/v1/outlines/<lecture>.json` | `index.schema.json`, `outline.schema.json` — auto-generated topics on the class timeline |
+| `/data/v1/study/index.json`, `/data/v1/study/<series>/chapter_NN.json` | `study-index.schema.json`, `study.schema.json` — public study guides (see [Public study guides](#public-study-guides-v1study)) |
 | `/data/v1/schema/*.schema.json` | the schemas themselves |
 
 `/data/*` is served with `Access-Control-Allow-Origin: *` (see
@@ -599,10 +600,11 @@ a story, a question and its answer, a practical point, an aside), each
 pointing at the stretch of recording it was written from. It began as a
 separate demo (`yringler/shaarhayichudstudydemo`); here it is data, written
 by people or by agents (`.claude/skills/study-chapter/`), checked by the data
-build, and **not published** in the API: nothing under `study/` reaches
-`dist/v1/` (or the Dart snapshot). The only copy that leaves the repo is the
-unlisted, unversioned [beta export](#the-study-beta-export) for the lessons2
-closed beta.
+build, and published in two ways: the [public edition](#public-study-guides-v1study)
+of a series whose teacher has allowed it (`"public"` in its `series.json`)
+goes into `dist/v1/study/`, and every series goes into the unlisted,
+unversioned [beta export](#the-study-beta-export) for the lessons2 closed
+beta. Neither is in the Dart snapshot package.
 
 ```
 study/
@@ -674,7 +676,8 @@ What each part is anchored to:
 - **Sensitivity**: the files keep the class as it was said. A block that
   should not be published as it stands carries `sensitivity` (categories, a
   reason, and `action`: `replace` with a `publishable` text, or `omit`).
-  `publicView()` in `tools/src/study.ts` applies it; nothing uses it yet.
+  `publicView()` in `tools/src/study.ts` applies it, for the
+  [public edition](#public-study-guides-v1study).
 - **Nothing dropped silently**: a stretch of a chapter's class that no block
   cites is listed in `omitted` with a reason, or the check warns about it.
 
@@ -756,6 +759,29 @@ no error are exported; a stale file is exported with `"stale": true`.
 
 Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
 trimming, stale and erroring files).
+
+### Public study guides (`v1/study/`)
+
+A series is public when its `series.json` has `public`: who gave permission
+and when (`{ "permission": "…", "date": "YYYY-MM-DD" }`). Set it only on the
+teacher's word. `yarn build-data` then writes, beside the rest of `v1`
+(`exportStudyPublic` in `tools/src/study-export.ts`):
+
+- `study/index.json` (`schema/v1/study-index.schema.json`): `{ schemaVersion,
+  series: [{ id, catalogSeriesId, teacher, title, chapters: [{ chapter, path,
+  status, stale?, lectures: [{ id, start, end, continuesIn? }] }] }] }`, the
+  chapters in order, `path` relative to `/data/v1/`. Unlike the beta index it
+  has no timestamp, so an unchanged build is byte-identical.
+- `study/<series>/chapter_NN.json` (`schema/v1/study.schema.json`): the beta
+  export's shape, of the guide's **public edition** (`publicView()`): a block
+  with `sensitivity` is replaced by its `publishable` text (and
+  `publishableTitle`), or dropped when its action is `omit`, so no
+  `sensitivity` is published.
+
+As with the beta, only files with no error are written and a stale one is
+marked `stale`. The build validates both against their v1 schemas, and the
+Dart package has models for them (`StudyIndex`, `StudyGuide`). The Dart
+snapshot package does not bundle them: the app fetches them.
 
 ### State (November 2026)
 

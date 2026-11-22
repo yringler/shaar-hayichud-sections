@@ -117,6 +117,8 @@ export interface StudySeriesFile {
   /** A published translation the phrases' English is taken from verbatim; only then may `en` come without `audio`. */
   publishedTranslation?: { title: string; source: string; license: string };
   chapterLectures?: Record<string, string[]>;
+  /** The teacher allowed publication: the build writes the public edition to dist/v1/study/. */
+  public?: { permission: string; date: string };
 }
 
 export interface TranslitFile {
