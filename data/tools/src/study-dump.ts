@@ -108,7 +108,7 @@ export function dumpChapter(ctx: StudyContext, series: StudySeriesFile, translit
       continue;
     }
     const part = range ? `chapter part words [${range[0]}, ${range[1]}] (${clock(t.words[range[0]]!.start)}–${clock(t.words[range[1]]!.end)})` : 'no part on this chapter';
-    const read = segs.length > 0 ? `reads lines ${Math.min(...segs.map((s) => index.get(s.lineId)!)) + 1}–${Math.max(...segs.map((s) => index.get(s.lineId)!)) + 1} (${segs.length} aligned)` : 'reads no line (free discussion)';
+    const read = !range ? 'reads only other chapters' : segs.length > 0 ? `reads lines ${Math.min(...segs.map((s) => index.get(s.lineId)!)) + 1}–${Math.max(...segs.map((s) => index.get(s.lineId)!)) + 1} (${segs.length} aligned)` : 'reads no line (free discussion)';
     out.push(`- "${id}" transcriptionId ${t.transcriptionId}: ${t.words.length} words, ${clock(lc.lecture.durationSeconds ?? t.words[t.words.length - 1]!.end)}, ${t.times} times; ${part}; ${read}`);
   }
 

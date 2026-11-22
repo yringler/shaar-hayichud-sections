@@ -503,7 +503,9 @@ export function checkStudyChapter(
   }
   const expected = chapterLectureIds(ctx, series, key);
   for (const id of expected) {
-    if (!listed.has(id) && ctx.transcript(id)) add('warning', `class "${id}" is on ${key} but the file does not cite it`);
+    const t = ctx.transcript(id);
+    // A class the catalog files under two chapters may read only the other one.
+    if (!listed.has(id) && t && chapterWordRange(ctx.alignment(id), t.words.length, key)) add('warning', `class "${id}" is on ${key} but the file does not cite it`);
   }
 
   // --- audio -----------------------------------------------------------------
