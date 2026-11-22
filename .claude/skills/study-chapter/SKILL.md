@@ -30,6 +30,12 @@ term, define it in your file's `terms`). Do not commit unless told to.
    yarn study-dump --series <series> --chapter <N> --lecture <number> # one class
    ```
 
+   When other writers are running at the same time, do not use `yarn`
+   for these tools (each `yarn study-*` recompiles into the shared
+   `build/` directory): call the compiled CLIs, `node build/cli/study-dump.js
+   …`, `node build/cli/study-fill.js …`, `node build/cli/study-check.js …`,
+   with the same arguments.
+
    Save each class's dump to a file in your scratch directory and read it
    **whole**, in class order, before writing anything about it. Do not write
    from the auto-generated topics, from memory of the book, or from skimming.
