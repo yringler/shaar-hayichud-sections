@@ -12,7 +12,7 @@ Hayichud comes from this directory :
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
-| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). Not published | writers (people or agents), `yarn study-fill` |
+| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). Not in `dist/v1`; an unlisted beta copy is written to `dist/study-beta/` | writers (people or agents), `yarn study-fill` |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
@@ -599,7 +599,10 @@ a story, a question and its answer, a practical point, an aside), each
 pointing at the stretch of recording it was written from. It began as a
 separate demo (`yringler/shaarhayichudstudydemo`); here it is data, written
 by people or by agents (`.claude/skills/study-chapter/`), checked by the data
-build, and **not published**: nothing under `study/` reaches `dist/v1/`.
+build, and **not published** in the API: nothing under `study/` reaches
+`dist/v1/` (or the Dart snapshot). The only copy that leaves the repo is the
+unlisted, unversioned [beta export](#the-study-beta-export) for the lessons2
+closed beta.
 
 ```
 study/
@@ -705,6 +708,35 @@ and a study file that passes every check).
 `yarn study-fill` also expands the writers' shorthand for phrases:
 `{ "to": "<last Hebrew word of the phrase>", "en": "…" }` becomes
 `{ "he": "…", "en": "…" }` with the Hebrew copied from the chapter.
+
+### The study-beta export
+
+`yarn build-data` also writes `dist/study-beta/` (`tools/src/study-export.ts`),
+which the site publishes at `/data/study-beta/` with `X-Robots-Tag: noindex`
+and a `robots.txt` Disallow. It is for the lessons2 closed beta only: not part
+of `v1`, not in `dist/v1/index.json`, never in the snapshot package, and its
+shape may change (`schemaVersion` is bumped when it breaks). Only files with
+no error are exported; a stale file is exported with `"stale": true`.
+
+- `index.json`: `{ schemaVersion: 1, generated, series: [{ id, catalogSeriesId,
+  teacher, title, chapters: { chapter_09: { file, status, stale?, lectures:
+  [{ id, start, end, continuesIn? }] } } }] }`. A lecture's `start`/`end` are
+  its part of the chapter in seconds (`chapterWordRange`, timed with the
+  words the site plays; without an alignment, the span of the guide's own
+  audio). `continuesIn` is the chapter the class reads on into, from its
+  alignment.
+- `<series>/<chapter>.json`: `schemaVersion`, `series`, `chapter`, `title`,
+  `status`, `stale?`, `provenance: { method }`, `overview` and `sections` →
+  `passages` (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains
+  `lines`: the line IDs whose text it overlaps, by character offsets into the
+  passage's lines joined by spaces. Block `audio` is `{ lecture, start, end }`;
+  `sensitivity`, `outOfPlace` and phrase `notes` are kept. Word ranges,
+  `lectures`/`transcriptionId`, provenance details, `overviewAudio`, `terms`,
+  `reviewQuestions`, `omitted` and `notes` are dropped. Fields are copied
+  from a whitelist, so a new writer-side field does not leak.
+
+Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
+trimming, stale and erroring files).
 
 ### State (November 2026)
 
