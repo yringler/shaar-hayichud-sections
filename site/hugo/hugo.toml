@@ -34,6 +34,14 @@ title = "Shaar Hayichud"
   source = "../../data/dist/v1"
   target = "static/data/v1"
 
+# The study guides for the lessons2 closed beta (data/dist/study-beta/,
+# written by the data build): unlisted and unversioned, served noindex
+# (static/_headers). Not disallowed in a robots.txt: a crawler that may not
+# fetch a URL never sees its noindex.
+[[module.mounts]]
+  source = "../../data/dist/study-beta"
+  target = "static/data/study-beta"
+
 # Mount the single file (not the directory + a file filter): includeFiles was
 # removed in Hugo 0.153 and its replacement does not exist before then, so a
 # file mount is the only form that builds on every Hugo version.

@@ -1,7 +1,7 @@
 /**
  * The whole data build: classes.txt + chapters/ -> dist/v1/.
  */
-import { copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildCatalog, catalogLectures, DEFAULT_CDN_BASE, type Catalog } from './catalog.js';
@@ -9,7 +9,8 @@ import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
-import { checkStudy } from './study.js';
+import { exportStudyBeta, type StudyBetaExport } from './study-export.js';
+import { checkStudy, loadStudyContext } from './study.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
 /** data/ (this file compiles to data/tools/build/pipeline.js). */
@@ -66,6 +67,9 @@ export interface BuildResult {
   catalog?: Catalog;
   chapters?: ChapterFile[];
   outDir?: string;
+  /** dist/study-beta/ and how many guides it holds. */
+  studyBetaDir?: string;
+  studyBetaFiles?: number;
 }
 
 const writeJson = (file: string, data: unknown) => {
@@ -96,10 +100,17 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   // was edited or a tape re-timed is a warning here (`yarn study-check` is
   // the strict check), so that editing a chapter never blocks a deploy.
   const warnings: string[] = [];
+  let studyBeta: StudyBetaExport | null = null;
   if (errors.length === 0) {
-    for (const i of checkStudy(paths.sources.dataDir).issues) {
+    const dataDir = paths.sources.dataDir;
+    const studyCtx = existsSync(path.join(dataDir, 'study')) ? loadStudyContext(dataDir) : undefined;
+    const study = checkStudy(dataDir, studyCtx);
+    for (const i of study.issues) {
       (i.level === 'error' ? errors : warnings).push(`${i.file}: ${i.level === 'error' ? '' : `(${i.level}) `}${i.message}`);
     }
+    // The lessons2 beta's copy (dist/study-beta/, not under v1): files with
+    // no error, stale ones included.
+    if (studyCtx) studyBeta = exportStudyBeta(dataDir, studyCtx, study.issues);
   }
   if (errors.length > 0) return { errors };
   const audio = publishAudio({
@@ -149,5 +160,13 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     ],
   });
 
-  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir };
+  // Study guides for the lessons2 closed beta, published unlisted at
+  // /data/study-beta/ (see study-export.ts). Always written, so the site's
+  // mount exists even with no guides.
+  const studyDir = path.join(paths.distDir, 'study-beta');
+  rmSync(studyDir, { recursive: true, force: true });
+  for (const [rel, data] of studyBeta?.files ?? []) writeJson(path.join(studyDir, ...rel.split('/')), data);
+  writeJson(path.join(studyDir, 'index.json'), studyBeta?.index ?? { schemaVersion: 1, generated: new Date().toISOString(), series: [] });
+
+  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir, studyBetaDir: studyDir, studyBetaFiles: studyBeta?.files.size ?? 0 };
 }
