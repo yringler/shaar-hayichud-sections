@@ -2,13 +2,12 @@
   "schemaVersion": 1,
   "series": "markel-advanced",
   "chapter": "chapter_05",
-  "title": "The two sides of contemplation: comprehension and wonder",
+  "title": "Two sides of every contemplation: the bina that grasps and the chachma that wonders",
   "status": "draft",
   "provenance": {
-    "method": "migrated",
-    "from": "yringler/shaarhayichudstudydemo@7d285c9 (content/chapter_05)",
-    "date": "2026-11-22",
-    "note": "Ported from the demo's Markdown. Three things are coarser than a file written for this format: the phrases are whole paragraphs of Rabbi Markel's published translation (Sefaria, \"The Gate of Unity\", 2023, CC-BY), not phrases as translated in class; each block's word range starts where the demo's listen link pointed and its end is estimated (up to the next cited point, at most about 450 words); and the demo's style left out banter, stories and digressions, which `yarn study-check` lists as uncited stretches."
+    "method": "generated",
+    "from": "study-chapter skill, version 2",
+    "date": "2026-11-22"
   },
   "lectures": [
     {
@@ -22,87 +21,133 @@
     {
       "id": "062 Ch5 part3.mp3",
       "transcriptionId": "b7db504c-e6f5-4af3-9239-44cbf4b5bbe4"
+    },
+    {
+      "id": "063 Ch5 part4.mp3",
+      "transcriptionId": "52aaf780-d9ef-4242-818d-396c3f705a90"
     }
   ],
-  "overview": "Every contemplation of creation has two sides. One is the \"something\": how a created thing comes from \"nothing\". The \"hearing\" of *bina* can grasp this fully, and grasping it brings felt joy. The other is the G-dly \"nothing\" itself, which cannot be grasped. It is glimpsed only in the \"sight\" of *chachma*, a flash that is as certain as seeing with one's eyes, and it brings *bittul*, a loss of all sense of self. The deeper one goes, the more one understands, and the farther above the essence appears. It works this through for the orbits, which come from a mere glimmer of *Malchus* of *Malchus* of *Asiya*, and for *Atzilus*. Its great principle is that the joy and the *bittul* must come together, in exact proportion. Comprehension without *bittul*, or *bittul* without comprehension, is self-deception, and real humility is not lowliness.",
+  "overview": "Chapter four said that contemplation must go into every particular, and this book promises to explain them all. Before it does, chapter five explains how such contemplation is done without fooling oneself. Every contemplation of how something comes from nothing has two sides. The *bina* side, the \"hearing\", grasps fully how the *yesh* comes out of the *ayin*, and it brings joy: he feels himself getting bigger. The *chachma* side, the \"sight\", sees in a flash that what brings it into being is beyond all grasp, and it brings *bittul*: the more he delves, the farther away it gets, like a giant who keeps growing. The example is the orbits, the whole gigantic universe, which come from a glimmer of *Malchus* of *Malchus* of *Asiya*; and the same holds in *Atzilus*.\n\nThe great principle is that the two come together, in exact proportion. Whoever has the understanding without the *bittul* understood nothing, and whoever claims *bittul* without the understanding is having dreams, and is no humble man at all. Rabbi Markel takes this on to the two camps he sees around him: the *ovdim* who will not study and the *maskilim* who only collect points.",
   "terms": [
-    {
-      "term": "seder hishtalshelus",
-      "he": "סדר השתלשלות",
-      "gloss": "the chain of descending worlds",
-      "line": "ygnb62xw"
-    },
-    {
-      "term": "yesh",
-      "he": "יש",
-      "gloss": "something; existence",
-      "line": "pkznyhp2"
-    },
-    {
-      "term": "ayin",
-      "he": "אין",
-      "gloss": "nothing",
-      "line": "gtbbdu52"
-    },
     {
       "term": "hasaga",
       "he": "השגה",
-      "gloss": "comprehension, grasp",
+      "gloss": "comprehension; like masig gvul, the mind actually goes into the thing's own property",
       "line": "pwrbb6gc"
     },
     {
       "term": "re'iya",
-      "he": "ראיה",
-      "gloss": "sight; the mind's seeing, the mode of chachma",
-      "line": "qmf4a6xz"
+      "he": "ראייה",
+      "gloss": "sight; the flash of chachma, seeing with the mind's eye, more certain than any explanation",
+      "line": "eadoqao5"
     },
     {
       "term": "shemiya",
       "he": "שמיעה",
-      "gloss": "hearing; full comprehension, the mode of bina",
+      "gloss": "hearing; the complete comprehension of bina",
       "line": "k7bckltv"
     },
     {
       "term": "bittul",
       "he": "ביטול",
-      "gloss": "self-nullification",
+      "gloss": "self-nullification; from chachma, not feeling himself, and not even feeling that",
       "line": "spyrpezj"
     },
     {
       "term": "simcha",
       "he": "שמחה",
-      "gloss": "joy",
+      "gloss": "joy; from bina, a felt good heart, he feels himself getting bigger",
       "line": "56p3cwfd"
     },
     {
       "term": "hafla'a",
       "he": "הפלאה",
-      "gloss": "wondrousness; being beyond grasp",
+      "gloss": "wonder, a \"wow\": the thing is beyond him, the more he delves the farther it gets",
+      "line": "ss7vqfmm"
+    },
+    {
+      "term": "mahus",
+      "he": "מהות",
+      "gloss": "what a thing actually is, as against its metzius, its relationships",
+      "line": "ss7vqfmm"
+    },
+    {
+      "term": "metzius",
+      "he": "מציאות",
+      "gloss": "existence; here, knowing the relationships of a thing, not what it is",
       "line": "ss7vqfmm"
     },
     {
       "term": "muchrach b'hasaga",
       "he": "מוכרח בהשגה",
-      "gloss": "compelled by comprehension; what the mind must conclude without grasping it",
+      "gloss": "compelled by comprehension: logic dictates that it must be so, without grasping what it is",
       "line": "r6gsf4qi"
     },
     {
-      "term": "shiflus",
-      "he": "שפלות",
-      "gloss": "lowliness",
-      "line": "bpqt4mzz"
+      "term": "masig gvul",
+      "he": "משיג גבול",
+      "gloss": "one who moves the fence into the other man's property; the root of hasaga",
+      "line": "k7bckltv"
     },
     {
-      "term": "anivus",
-      "he": "עניוות",
-      "gloss": "humility",
-      "line": "bpqt4mzz"
+      "term": "mekoriyim nivdalim",
+      "he": "מקוריים נבדלים",
+      "gloss": "sources that are separate: the middos of Atzilus, which have nothing to do with Beriya, Yetzira and Asiya",
+      "line": "qbvyvu4l"
+    },
+    {
+      "term": "shemarim",
+      "he": "שמרים",
+      "gloss": "dregs, waste; the Shemarei Ofanim, from a speck of which the universe is induced",
+      "line": "r6gsf4qi"
+    },
+    {
+      "term": "ga'ava",
+      "he": "גאוה",
+      "gloss": "pride; a ba'al ga'ava, a proud man, one who thinks he is something",
+      "line": "2o5mbc3x"
+    },
+    {
+      "term": "anav",
+      "he": "ענו",
+      "gloss": "a humble man",
+      "line": "3l576k5y"
+    },
+    {
+      "term": "dimyon shav",
+      "he": "דמיון שוא",
+      "gloss": "a false imagination; bittul with no comprehension, or comprehension with no bittul",
+      "line": "3l576k5y"
+    },
+    {
+      "term": "Ayin Beis",
+      "he": "ע״ב",
+      "gloss": "the series of Chassidic discourses of that name, the measure of deep learning here",
+      "line": "3l576k5y"
+    },
+    {
+      "term": "hiskashrus",
+      "he": "התקשרות",
+      "gloss": "connection to the Rebbe",
+      "line": "3l576k5y"
+    },
+    {
+      "term": "beinoni",
+      "he": "בינוני",
+      "gloss": "the intermediate man of the Tanya, who does no wrong but is not a tzaddik",
+      "line": "cay5uw3u"
+    },
+    {
+      "term": "shvitz",
+      "he": "שוויץ",
+      "gloss": "(Yiddish) to boast; a shvitzer, a boaster",
+      "line": "3l576k5y"
     }
   ],
   "sections": [
     {
-      "title": "Knowing every particular, and the promise of a special treatise",
-      "summary": "Contemplating in particulars needs knowledge of every level of the chain of worlds, which the general works do not make accessible. The author promises to explain all that is needed in this book, but first he must explain how contemplation is to be done.",
+      "title": "Every particular must be known: a promise, and first a warning about how",
+      "summary": "Contemplating in particulars needs every level of the worlds, which no other book makes available; this book promises to explain all of it. But first it must explain how to contemplate without fooling oneself.",
       "passages": [
         {
           "lines": [
@@ -111,49 +156,44 @@
           ],
           "phrases": [
             {
-              "he": "(ה) והנה אחר שנתבאר שצריך להתבונן דרך פרט דוקא, הרי מן ההכרח לידע כל פרטי חילוקי המדריגות בכל פרטי סדרי ההשתלשלות דאבי''ע, להתבונן בהם",
-              "en": "After having explained the need to contemplate specifically in a manner of particulars, it follows, of necessity, that one must know all the particular levels in all the details of the chaining down of the worlds (*Seder HaHishtalshelut*) of *Atzilut, Briyah, Yetzirah,* and *Asiyah,* so that one may contemplate them."
+              "he": "(ה) והנה אחר שנתבאר שצריך להתבונן דרך פרט דוקא,",
+              "en": "(5) Now, after it has been explained that one must contemplate *derech prat* (in particulars), *davka*,"
+            },
+            {
+              "he": "הרי מן ההכרח לידע כל פרטי חילוקי המדריגות",
+              "en": "it is necessary to know all the particular differences between the levels"
+            },
+            {
+              "he": "בכל פרטי סדרי ההשתלשלות דאבי''ע, להתבונן בהם",
+              "en": "in all the particular orders of the *seder hishtalshelus* (the chain of descending worlds) of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*, to contemplate them,"
             },
             {
               "he": "אשר אינם מובנים לכל מכללי התורות כו'",
-              "en": "These particulars cannot be understood by everyone through the general teachings [of Kabbalah and Chassidus]."
+              "en": "which are not understood by everyone from the general body of the teachings."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "**After having explained the need to contemplate specifically in a manner of particulars, it follows, of necessity, that one must know all the particular levels** in all the details of *seder hishtalshelus* (the chain of descending worlds), in order to contemplate them.",
+              "kind": "keyPoint",
+              "text": "\"Chapter five is a very important chapter.\" It explains what a thing is from the side of *chachma* (wisdom, the first flash of an idea) and what it is from the side of *bina* (understanding), and how the two work together when one studies *Chassidus*. It really belongs as well with the chapters from about 25 onwards, on the unity of the service.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [74, 103],
+                  "words": [0, 73],
+                  "start": 0,
+                  "end": 42.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "We said that one has to contemplate each particular thing and know all the different details: so that is what one has to know.\n\nAnd this, he is telling you, is not available anywhere else. **The general body of the teachings** means something like *Etz Chaim*. Certainly not from the *Zohar* or the *Sefer Yetzira*; and even from the works of the *Arizal* it is not easy, it is not possible, to understand what they are talking about. So what is the solution?",
+              "audio": [
+                {
+                  "lecture": "060 Ch5 part1.mp3",
+                  "words": [74, 219],
                   "start": 43.68,
-                  "end": 58.5
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**These particulars cannot be understood by everyone through the general teachings**. All the details have to be known, and they are not available anywhere else.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [104, 148],
-                  "start": 59.18,
-                  "end": 76.5
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "\"The general teachings\" means works like *Etz Chaim*. Certainly not from the *Zohar* or *Sefer Yetzira*, and even from the works of the *Arizal* it is not possible to understand what they are talking about. So what is the solution?",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [149, 220],
-                  "start": 76.54,
-                  "end": 101.18
+                  "end": 99.1
                 }
               ]
             }
@@ -165,60 +205,40 @@
           ],
           "phrases": [
             {
-              "he": "ויבוארו כולם בקונטרס מיוחד, מן הצריך מכל פרט, וממילא יובן למבין ויודע כמה פרטים אחרים",
-              "en": "Therefore, whatever needs explanation in each detail, will be explained in a special pamphlet, so that a person of understanding will automatically understand them and will come to know many other details.",
-              "notes": [
-                "That is, from chapter 10 and on of this book."
-              ]
+              "he": "ויבוארו כולם בקונטרס מיוחד,",
+              "en": "They will all be explained in a special tract,"
+            },
+            {
+              "he": "מן הצריך מכל פרט,",
+              "en": "what is needed from every particular,"
+            },
+            {
+              "he": "וממילא יובן למבין ויודע כמה פרטים אחרים",
+              "en": "and from them, one who understands and knows will automatically understand many other particulars."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "Therefore, **whatever needs explanation in each detail, will be explained in a special pamphlet**.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [221, 223],
-                  "start": 101.28,
-                  "end": 102.62
-                }
-              ]
-            },
-            {
               "kind": "mashal",
-              "title": "Shaking the Megilla at \"this letter\"",
-              "text": "When reading the *Megilla*, at \"this second letter\" one shakes the scroll, to show that this is the letter being spoken of. So at \"a special pamphlet\" one should shake this book: this is the book he means.",
+              "title": "Shaking the Megillah",
+              "text": "**They will all be explained in a special tract.** Here you have to do what you do with the Megillah. \"You know what I'm talking about?\" \"No, I don't.\" When you read the Megillah and say \"this second letter\", you shake the Megillah, to show that this is the letter they are talking about. So when you say **a special tract**, you have to shake this book, to show that this is the book we are talking about.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [224, 338],
-                  "start": 102.66,
+                  "words": [220, 338],
+                  "start": 100.6,
                   "end": 139
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "It is a promise: everything is explained in this book. Not literally every detail, but what is needed from each particular, and once that is understood well, **a person of understanding will automatically understand** the other particulars as well.",
+              "kind": "keyPoint",
+              "text": "What he gives you here is a promise that he is going to explain everything; everything is explained in this book. \"What do you mean? It's not totally everything.\" He says: \"What I'm explaining to you is **what is needed from every particular**, and when you understand it well, you'll automatically understand all the particulars, everything.\"\n\nThat is a very big promise. He is basically telling you that he is going to explain the whole of Kabbalah and *Chassidus* in this book, with all the particulars: everything you need to be able to do what he said in chapter four.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [339, 412],
+                  "words": [339, 464],
                   "start": 139.08,
-                  "end": 164.57
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "That is a very big promise: to explain all of *Kabbala* and *Chassidus* in this book, with every particular needed to do what chapter 4 asked.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [413, 464],
-                  "start": 164.62,
                   "end": 183.02
                 }
               ]
@@ -231,44 +251,39 @@
           ],
           "phrases": [
             {
-              "he": "אך תחילה צריך להקדים באיכות ההתבוננות גם בדרך פרט, עוד ענין אחד הצריך ביותר לכל החפץ באמת בקרבת אלהי״ם ואינו רוצה לצאת ידי חובתו להטעות את עצמו כו'",
-              "en": "However, it first is necessary to introduce one more point (which also will be explained in detail) of how *Hitbonenut* contemplation should be done. This is extremely necessary for all those who truly desire closeness to *HaShem*-יהו״ה and do not seek to merely fulfill their obligations and deceive themselves [that they thereby are truly serving Him] etc."
+              "he": "אך תחילה צריך להקדים באיכות ההתבוננות",
+              "en": "But first one must explain the how of the *hisbonenus* (contemplation),"
+            },
+            {
+              "he": "גם בדרך פרט,",
+              "en": "even in the particular way:"
+            },
+            {
+              "he": "עוד ענין אחד הצריך ביותר",
+              "en": "one more matter, which is most needed"
+            },
+            {
+              "he": "לכל החפץ באמת בקרבת אלהי״ם",
+              "en": "by everyone who truly wants closeness to G-d"
+            },
+            {
+              "he": "ואינו רוצה לצאת ידי חובתו",
+              "en": "and does not want just to discharge his duty"
+            },
+            {
+              "he": "להטעות את עצמו כו'",
+              "en": "and fool himself."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Before that, **it first is necessary to introduce one more point** about **how *Hitbonenut* contemplation should be done**.",
+              "text": "**But first**: before we get to the particulars, which start in chapter seven and go through the end of the book. He told us what the *hisbonenus* is, what it is about, the *seder hishtalshelus*, and that it has to be done in the particular way. Now he is going to explain the how of it: there is a certain way it has to be done, if you want to study properly and not fool yourself, or just be *yotzei*: \"Oh yeah, I learned a *sicha* today.\"",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [465, 493],
+                  "words": [465, 602],
                   "start": 183.03,
-                  "end": 193.64
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The book has said what this contemplation is, what it is about (*seder hishtalshelus*), and that it must be done in particulars. Now it explains the how: there is a certain way it has to be done.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [494, 555],
-                  "start": 194.12,
-                  "end": 212.54
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "This is **extremely necessary for all those who truly desire closeness to** G-d **and do not seek to merely fulfill their obligations and deceive themselves**: for whoever wants to study properly without fooling himself, and not just to have done his duty: \"I learned a *sicha* today.\"",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [556, 602],
-                  "start": 212.6,
                   "end": 230.35
                 }
               ]
@@ -278,8 +293,8 @@
       ]
     },
     {
-      "title": "Two sides of every contemplation: the something and the nothing",
-      "summary": "Every contemplation of creation has two sides: how the created 'something' comes from 'nothing', which can be fully understood, and the G-dly 'nothing' itself, which cannot. That nothing is glimpsed in a flash of *chachma*, which, like seeing with one's eyes, is more certain than any explanation.",
+      "title": "The something, which lies well in the mind, and the nothing, seen in a flash",
+      "summary": "Every contemplation has two sides: how the *yesh* comes from the *ayin*, which can be explained until it lies well in the brain, and the infinite *ayin* itself, which no explanation reaches but which flashes in the mind. That flash, like seeing an airplane fly, is more certain than any explanation.",
       "passages": [
         {
           "lines": [
@@ -288,35 +303,35 @@
           ],
           "phrases": [
             {
-              "he": "והוא בהיותו ידוע שבכל התבוננות בענין אלה״י דהתהוות יש מאין בכל מקום לפי מה שהוא, הרי כולל ב' ענינים",
-              "en": "As known, every contemplation upon the G-dly matter of the coming into being of something from nothing, each contemplation, according to its place [in the order of things], includes two matters;"
+              "he": "והוא בהיותו ידוע שבכל התבוננות בענין אלה״י דהתהוות יש מאין",
+              "en": "It is this: it is known that every contemplation of a G-dly matter, of how something comes into being from nothing,"
             },
             {
-              "he": "הא' בחינת ביטול היש לאין, שזהו השגת ערך הבעל גבול תחילה באיכות אופן התהוות מציאותו מאין כו'",
-              "en": "The first is the aspect of the nullification of the “something” to the “nothing.” This begins with the comprehension of the relativity of limited beings, by understanding how their existence is derived from the “nothingness.”"
+              "he": "בכל מקום לפי מה שהוא,",
+              "en": "wherever it is, according to what it is,"
+            },
+            {
+              "he": "הרי כולל ב' ענינים",
+              "en": "includes two things."
+            },
+            {
+              "he": "הא' בחינת ביטול היש לאין,",
+              "en": "The first is the *bittul* (nullification) of the *yesh* (something) to the *ayin* (nothing),"
+            },
+            {
+              "he": "שזהו השגת ערך הבעל גבול תחילה באיכות אופן התהוות מציאותו מאין כו'",
+              "en": "which is the grasp of the relation of the limited thing, first of all of how its existence comes into being from nothing;"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "As is known, **every contemplation upon the G-dly matter of the coming into being of something from nothing**, any contemplation at all, wherever one learns *Chassidus*, **includes two matters**.",
+              "text": "Any kind of *hisbonenus* at all, wherever you learn *Chassidus*, no matter what it is, **includes two things**. The first is the *bittul* of the *yesh* to the *ayin*: how the something comes out of the nothing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [603, 636],
+                  "words": [603, 660],
                   "start": 230.79,
-                  "end": 249.34
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**The first is the aspect of the nullification of the “something” to the “nothing.”** It **begins with the comprehension of the relativity of limited beings, by understanding how their existence is derived from the “nothingness.”**",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [637, 660],
-                  "start": 250.29,
                   "end": 266.18
                 }
               ]
@@ -330,32 +345,31 @@
           ],
           "phrases": [
             {
-              "he": "שזה קרוב אל השכל ביותר על ידי כמה מיני הסברים ודמיונות המשלים, וכהאי גוונא עד שנתאמת במוח היטב (בל\"א עש לייגט זיך אין מוח זייער כו')",
-              "en": "This is brought close to the intellect through various explanations and analogies and the like, until the truth of it becomes well settled in his mind."
+              "he": "שזה קרוב אל השכל ביותר",
+              "en": "and this is very close to the intellect,"
+            },
+            {
+              "he": "על ידי כמה מיני הסברים ודמיונות המשלים, וכהאי גוונא",
+              "en": "through all kinds of explanations and images, *meshalim* (analogies), and the like,"
+            },
+            {
+              "he": "עד שנתאמת במוח היטב",
+              "en": "until it becomes well established in the mind"
+            },
+            {
+              "he": "(בל\"א עש לייגט זיך אין מוח זייער כו')",
+              "en": "(in Yiddish: it lies very well in the brain)."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is brought close to the intellect through various explanations and analogies and the like**: how the \"something\" comes out of the \"nothing\" can be fully understood through explanations, images and analogies (*meshalim*).",
+              "text": "How the something comes out of the nothing can be understood with a total understanding, through all the explanations, images and *meshalim*. In Yiddish, *es leigt zich in moach zeier*: \"it lies real good in the brain.\" This is something that can be explained until it *mamash* lies well in your brain.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [661, 709],
+                  "words": [661, 738],
                   "start": 266.31,
-                  "end": 289.1
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The text adds, in Yiddish (a line the translation leaves out), that it lies very well in the mind: this is something that can be explained until it really settles well in one's mind.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [710, 738],
-                  "start": 289.67,
                   "end": 299.54
                 }
               ]
@@ -369,48 +383,31 @@
           ],
           "phrases": [
             {
-              "he": "והב' ענין בחינת האין האלה״י המהווה אותו ואיך שהוא נבדל בערך, להיותו בלתי בעל גבול כו'",
-              "en": "The second matter is the aspect of the G-dly “nothingness” that bring him into being, and how *HaShem*-יהו״ה, blessed is He, is totally separate, relative [to created beings], since He has no limitations."
+              "he": "והב' ענין בחינת האין האלה״י המהווה אותו",
+              "en": "The second is the G-dly *ayin* that brings it into being,"
+            },
+            {
+              "he": "ואיך שהוא נבדל בערך,",
+              "en": "and how it is separate beyond relation,"
+            },
+            {
+              "he": "להיותו בלתי בעל גבול כו'",
+              "en": "being without limit."
             },
             {
               "he": "וזהו הנעלם מעיני השכל בהשגה גמורה",
-              "en": "This matter is concealed from the eyes of the intellect and cannot be fully grasped."
+              "en": "And this is hidden from the eyes of the intellect, from a total *hasaga* (comprehension),"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**The second matter is the aspect of the G-dly “nothingness” that bring him into being**, and how G-d is separate beyond comparison, **since He has no limitations**.",
+              "text": "The other thing: when you learn how something comes into being, there is also where it is coming into being from, the G-dly *ayin*, which is totally infinite. And infinite does not even mean what most people think, like an infinite number or something like that. It means totally infinite: totally undefined. **This is hidden from the eyes of the intellect**: it cannot really be understood in a total *hasaga*.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [739, 754],
+                  "words": [739, 833],
                   "start": 300.44,
-                  "end": 308.51
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "When learning how something comes into being, there is also the question of where it comes from: the G-dly \"nothing\" (*ayin*), which is entirely infinite. And \"infinite\" does not mean what most people think, like an infinite number. It means entirely undefined.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [755, 816],
-                  "start": 308.7,
-                  "end": 333.12
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**This matter is concealed from the eyes of the intellect and cannot be fully grasped**: it cannot be understood with a full comprehension (*hasaga*).",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [817, 833],
-                  "start": 334.07,
                   "end": 341.2
                 }
               ]
@@ -423,32 +420,27 @@
           ],
           "phrases": [
             {
-              "he": "רק מכל מקום יוברק כמו ברק בסקירה בעלמא במוחו אמיתת ענינו כמו שהוא",
-              "en": "However, the truth of it will, nonetheless, flash like lightning in his brain, so that he will glimpse the truth of the matter, as it is."
+              "he": "רק מכל מקום יוברק כמו ברק",
+              "en": "only, all the same, there flashes like lightning,"
+            },
+            {
+              "he": "בסקירה בעלמא במוחו",
+              "en": "in a mere glance, in his mind,"
+            },
+            {
+              "he": "אמיתת ענינו כמו שהוא",
+              "en": "the truth of what it is, as it is,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**However, the truth of it will, nonetheless, flash like lightning in his brain**. A flash is a matter of *chachma*, while \"full comprehension\" is a matter of *bina*.",
+              "text": "Remember: a flash is a matter of *chachma*. The first side, the total *hasaga*, is a matter of *bina*; and at the same time there should be a flash of what it is really talking about. The explanation cannot really tell you what it is, but there should be a flash of *chachma* into what it really is, **as it is**.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [834, 883],
+                  "words": [834, 927],
                   "start": 341.6,
-                  "end": 362.57
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "At the same time as the comprehension, there should be a flash of what it is really talking about. Although the explanation cannot tell you what the thing truly is, there should be a flash of *chachma* into what it really is, **as it is**.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [884, 927],
-                  "start": 362.7,
                   "end": 380.1
                 }
               ]
@@ -461,14 +453,18 @@
           ],
           "phrases": [
             {
-              "he": "אבל הוא בבחינת ההעלם כאילו נתאמת הדבר בראיה חושיית",
-              "en": "However, although it is in an aspect of concealment, it will be as true for him as if he saw it with physical sight."
+              "he": "אבל הוא בבחינת ההעלם",
+              "en": "but it is in a way of *helem* (concealment),"
+            },
+            {
+              "he": "כאילו נתאמת הדבר בראיה חושיית",
+              "en": "as if the thing had become real to him by physical seeing."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "However, **although it is in an aspect of concealment, it will be as true for him as if he saw it with physical sight.** Seeing with the mind is like seeing with the eyes.",
+              "text": "**But it is in a way of *helem***, and yet **as if the thing had become real to him by physical seeing**. A mental seeing is like a physical seeing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -480,8 +476,8 @@
             },
             {
               "kind": "mashal",
-              "title": "Explaining an airplane, and flying in one",
-              "text": "You could explain everything about an airplane, its aerodynamics and its mathematics, to someone who never heard of one, until he understands that it could work. That is how the Wright brothers worked: there had never been an airplane, but from aerodynamics, and from seeing that birds fly, they figured one could be made to work. Then there is someone to whom nothing was explained, but who saw an airplane fly. Someone who has all the explanations can be argued out of it with better explanations that it is impossible. Someone who saw it fly cannot be convinced that there is no such thing.",
+              "title": "Explaining an airplane, and seeing one fly",
+              "text": "Take an airplane. To somebody who never heard of an airplane, you could explain the whole business of aerodynamics and the mathematics of it, until he understands that this thing could work. Like the Wright brothers: there never was an airplane, and yet they figured, \"Hey, according to aerodynamics, and look, birds can fly, so we can make an airplane work.\"\n\nThen there is somebody you didn't explain nothing to, but he saw an airplane fly. A guy like that you couldn't even convince that there can't be such a thing. \"What do you mean there's no such thing as an airplane? I saw it.\" The one who has all the explanations, I can give him better explanations that it's not possible, and convince him. But somebody who saw an airplane fly, there is no way to convince him out of it.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -492,8 +488,8 @@
               ]
             },
             {
-              "kind": "explanation",
-              "text": "So the flash, though it is concealed, is not an explanation, and does not include the particulars, is in a way a stronger certainty than the explanation.",
+              "kind": "keyPoint",
+              "text": "So this flash, even though it is in a way of *helem*, is not really an explanation, and he does not really know the *pratim* (particulars), is in a way a stronger conviction than the explanation. The same as with the airplane: the guy who saw it, there is no way you can convince him that there is no such thing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -508,8 +504,8 @@
       ]
     },
     {
-      "title": "The sight of chachma and the hearing of bina",
-      "summary": "The 'sight' of *chachma* glimpses the G-dly nothing and brings *bittul*, a loss of all feeling of self; the 'hearing' of *bina* fully grasps how something comes from nothing and brings felt joy. The deeper one goes, the more one grasps through *bina*, and the farther away the essence appears through *chachma*.",
+      "title": "The sight of chachma brings bittul, the hearing of bina brings joy",
+      "summary": "The flash of *chachma* is a seeing with the mind's eye; its response is *bittul*, not feeling himself and not even feeling that. The full grasp of *bina*, the hearing, brings felt joy: the more he grasps, the bigger he feels. And they run opposite: the more he delves, the more *bina* grasps and the farther away the *ayin* gets.",
       "passages": [
         {
           "lines": [
@@ -518,35 +514,31 @@
           ],
           "phrases": [
             {
-              "he": "והוא ההפרש בין בחינת ראיה דחכמה כח מ''ה שבנפש, שרואה ולא בראיה חושיית כי אם ראיה שכליית בהברקה למעלה מן השגה הגמורה",
-              "en": "This is the difference between the aspect of the “sight” of *Chochmah*, [and the aspect of the “hearing” of *Binah*]. The sight of *Chochmah*, the *Koach Ma”h* (the power of “what”), is the sight of the soul that sees, but not with tangible sight. Rather, it is a flash of intellectual sight which is beyond full comprehension.",
-              "notes": [
-                "The letters of *Chochmah* (חכמה) can be rearranged to spell *Koach Mah* (כח מה), meaning “the power of ‘what’.” This represents the aspect of the sublimation to *HaShem*-יהו״ה of *Chochmah*, as in the verse (Ex. 16:7-8), “*V’Nachnu Mah* – and what are we.”"
-              ]
+              "he": "והוא ההפרש",
+              "en": "And this is the difference"
+            },
+            {
+              "he": "בין בחינת ראיה דחכמה כח מ''ה שבנפש,",
+              "en": "between the *re'iya* (sight) of *chachma*, the power of *mah* in the soul,"
+            },
+            {
+              "he": "שרואה ולא בראיה חושיית כי אם ראיה שכליית",
+              "en": "which sees, not with physical sight but with the sight of the mind,"
+            },
+            {
+              "he": "בהברקה למעלה מן השגה הגמורה",
+              "en": "in a flash, above complete comprehension,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is the difference between the aspect of the “sight” of *Chochmah*** and the “hearing” of *Bina*. The sight of *chachma*, the power of \"what\" in the soul, **is the sight of the soul that sees, but not with tangible sight**: he sees with his mind's eye.",
+              "text": "**The sight of the mind**: he sees with his mind's eye. **In a flash, above complete comprehension**: he sees a flash of the thing, not by chopping it up in an explanation.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1268, 1292],
+                  "words": [1268, 1318],
                   "start": 508.16,
-                  "end": 517.66
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "Rather, **it is a flash of intellectual sight which is beyond full comprehension**: he sees a flash of the thing, not by chopping it up into an explanation.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1293, 1318],
-                  "start": 518.84,
                   "end": 527.1
                 }
               ]
@@ -560,58 +552,32 @@
           ],
           "phrases": [
             {
-              "he": "ועל כן ההתפעלות מזה אינו רק בחינת הביטול שהוא רק העדר הרגשת עצמו מכל וכל כו' (בל\"א ער ווערט צו רירט פון ארט ואינו מרגיש גם זה גופא כו')",
-              "en": "Therefore, the arousal that results from this is nothing but the aspect of nullification, which is the complete absence of awareness of self."
+              "he": "ועל כן ההתפעלות מזה אינו רק בחינת הביטול",
+              "en": "and so the *hispaalus* (emotional response) from it is only *bittul*,"
+            },
+            {
+              "he": "שהוא רק העדר הרגשת עצמו מכל וכל כו'",
+              "en": "which is only the absence of feeling himself, altogether"
+            },
+            {
+              "he": "(בל\"א ער ווערט צו רירט פון ארט",
+              "en": "(in Yiddish: he is moved from his place,"
+            },
+            {
+              "he": "ואינו מרגיש גם זה גופא כו')",
+              "en": "and does not feel even this itself),"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Therefore, the arousal that results from this is nothing but the aspect of nullification** (*bittul*) toward the idea.",
+              "text": "The *hispaalus* that comes from the *chachma* is a nullification to the idea: basically, the lack of feeling of himself. In Yiddish, *er vert tzerirt fun ort*: he is totally removed from feeling, **and does not feel even this itself**. He does not even feel that he is not feeling it. Why? Because when he has the flash, all he feels is the flash; he does not feel himself, and he does not even realize that he does not feel himself. That is the sign of the flash of *chachma*.\n\nThat is the first half of the difference the text began a few lines back, \"between the sight of *chachma*\", and now it goes on:",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1319, 1337],
+                  "words": [1319, 1469],
                   "start": 529.22,
-                  "end": 542.22
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "It is **the complete absence of awareness of self**: the basic emotion that comes from *chachma* is that he does not feel himself.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1338, 1366],
-                  "start": 543.01,
-                  "end": 557.36
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The text adds in Yiddish (a line the translation leaves out) that he is moved from his place, and does not feel even this.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1367, 1404],
-                  "start": 557.62,
-                  "end": 576.74
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "He does not even feel that he is not feeling. Why? Because when he has the flash, all he feels is the flash. He does not feel himself, and does not even notice that he does not feel himself. That is the sign of the flash of *chachma*.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1405, 1468],
-                  "start": 576.82,
-                  "end": 605.88
+                  "end": 606.12
                 }
               ]
             }
@@ -623,39 +589,34 @@
           ],
           "phrases": [
             {
-              "he": "ובין בחינת שמיעה דבינה, שבאה בהשגה גמורה ממש, שהוא באיכות התהוות היש מאין כנזכר לעיל",
-              "en": "The aspect of the “hearing” of *Binah*, on the other hand, comes with full comprehension, literally. This is to say that he comprehends how the “something” comes into existence from the “nothing,” as explained above."
+              "he": "ובין בחינת שמיעה דבינה,",
+              "en": "and the *shemiya* (hearing) of *bina*,"
+            },
+            {
+              "he": "שבאה בהשגה גמורה ממש,",
+              "en": "which comes in a complete *hasaga*, *mamash*,"
+            },
+            {
+              "he": "שהוא באיכות התהוות היש מאין כנזכר לעיל",
+              "en": "in how the something comes into being from nothing, as said above;"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**The aspect of the “hearing” of *Binah*, on the other hand, comes with full comprehension, literally.**",
+              "text": "**A complete *hasaga*, *mamash***: the mind goes into the *meshalim* and into the stuff, *mamash*. You know what *hasaga* means? It is from *masig gvul*. You know what a *masig gvul* is? He moves the fence into the other guy's property: he actually goes into the other guy's property. That is what *hasaga* means, that your mind actually goes into the actual domain of the thing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1469, 1502],
-                  "start": 605.88,
-                  "end": 619.5
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The grasp of the analogies and the material is a real *hasaga*. *Hasaga* is related to *masig gevul*, one who moves the fence into his neighbour's property: he actually goes into the other man's property. So *hasaga* means that the mind actually enters the domain of the thing.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1503, 1557],
-                  "start": 619.5,
+                  "words": [1470, 1557],
+                  "start": 606.34,
                   "end": 638.94
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "What it grasps is **how the “something” comes into existence from the “nothing,”**: for instance, how the worlds of *Beriya*, *Yetzira* and *Asiya* come out of *Malchus* of *Atzilus*, and also *yichuda ila'a* (the higher unity).",
+              "text": "**In how the something comes into being from nothing**: as in the various ideas of how the worlds of *Beriya*, *Yetzira* and *Asiya* come out of *Malchus* of *Atzilus*, and also the matter of the *yichuda ila'a* (the higher unity).",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -675,60 +636,43 @@
           "phrases": [
             {
               "he": "שההתפעלות מזה הוא השמחה במורגש וטוב לב",
-              "en": "The resulting arousal is a tangible feeling of joy and good-heartedness."
+              "en": "and the *hispaalus* from this is *simcha* (joy), felt, and a good heart."
             },
             {
-              "he": "כל שמשיג יותר, יותר טוב לו, (בל\"א עש איז זייער גוט ומחי' לנפש כו') וכל שמעמיק יותר, יותר משיג",
-              "en": "The more he grasps, the better he feels and the more he delves into it, the more he grasps."
+              "he": "כל שמשיג יותר, יותר טוב לו,",
+              "en": "The more he grasps, the better it is for him"
+            },
+            {
+              "he": "(בל\"א עש איז זייער גוט ומחי' לנפש כו')",
+              "en": "(in Yiddish: it is very good, and gives life to the soul),"
+            },
+            {
+              "he": "וכל שמעמיק יותר, יותר משיג",
+              "en": "and the more he delves, the more he grasps."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**The resulting arousal is a tangible feeling of joy and good-heartedness.** It is the exact opposite of the arousal from *chachma*: not that he does not feel himself, but the reverse; he feels himself more and more.",
+              "text": "Here the *hispaalus* is exactly the opposite. It is not that he does not feel himself; just the opposite, he feels himself more and more. **The more he grasps, the better it is for him**: the more he understands, the happier he is.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1604, 1641],
+                  "words": [1604, 1656],
                   "start": 661.12,
-                  "end": 676.76
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**The more he grasps, the better he feels**: the more he understands, the happier he is.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1642, 1656],
-                  "start": 677.56,
                   "end": 683.38
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "The text puts it in Yiddish: it is very good and revives the soul, a really good thing for him. \"I am getting such great insights, I am growing and growing with this.\" He actually feels that it is good for him and that he is becoming bigger.",
+              "text": "In Yiddish, *es iz zeier gut*: a real good thing, and a real *mechaye* for him, *mamash* a *mechaye*. \"Wow, I'm getting such big *hasagos*, and I'm *mamash* growing and growing with this thing.\" He feels that he is getting bigger. He actually feels it: it is a good thing for him, and he is getting bigger. **And the more he delves, the more he grasps**: the deeper he looks into it, the more he understands, the more he *chapt*.",
               "join": true,
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1657, 1719],
+                  "words": [1657, 1743],
                   "start": 684.44,
-                  "end": 707.32
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "And **the more he delves into it, the more he grasps**.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1720, 1743],
-                  "start": 708.09,
                   "end": 720.32
                 }
               ]
@@ -741,14 +685,22 @@
           ],
           "phrases": [
             {
-              "he": "ובבחינת הראיה דחכמה הוא להיפוך, כל שיעמיק יותר, יותר יפלא ממנו מהות בחינת האין האלה״י המהווה כו'",
-              "en": "In contrast, the aspect of the “sight” of *Chochmah* is the opposite. The more he delves into it, the more the G-dly “nothingness” that creates, becomes removed and astounding to him."
+              "he": "ובבחינת הראיה דחכמה הוא להיפוך,",
+              "en": "And with the *re'iya* of *chachma* it is the opposite:"
+            },
+            {
+              "he": "כל שיעמיק יותר, יותר יפלא ממנו",
+              "en": "the more he delves, the farther beyond him is"
+            },
+            {
+              "he": "מהות בחינת האין האלה״י המהווה כו'",
+              "en": "the *mahus* (what it is) of the G-dly *ayin* that brings into being,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**In contrast, the aspect of the “sight” of *Chochmah* is the opposite. The more he delves into it**, the farther away it is.",
+              "text": "**With the *re'iya* of *chachma* it is the opposite**: the more he looks into it, the farther away it is.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -761,38 +713,25 @@
             {
               "kind": "mashal",
               "title": "The Aibershter on the second floor",
-              "text": "Someone who knows no *Chassidus* at all, when he says \"the *Aibershter*\", thinks we live on the first floor and the *Aibershter* lives on the second. Someone who learns a little more says He lives on the tenth floor; then it becomes the Empire State Building; then it is in the clouds; then all the way up to the moon. Each time it is farther away. Those who have not learned *Chassidus* almost think of the *Aibershter* as a physical thing, a spiritual-physical thing made of air: we are made of lead and He is made of helium. The more *Chassidus* one learns, the more one sees that it is totally beyond.",
+              "text": "Somebody who doesn't know *Chassidus* at all says \"the *Aibershter*\" (G-d), and he thinks that we live on the first floor and the *Aibershter* lives on the second floor. Somebody who learns a little bit more says the *Aibershter* lives on the tenth floor. Then it becomes the Empire State Building. Then, \"Oh no, it's in the clouds.\" Then, \"No, it's all the way up to the moon.\" Each time it goes farther and farther away.\n\nSomebody who didn't learn *Chassidus* almost thinks the *Aibershter* is almost a physical thing. A spiritual physical thing, you know, made out of air or something: we are made out of lead and the *Aibershter* is made out of helium. It's almost like that. Whereas the more you learn *Chassidus*, the more you see that it is totally, totally beyond.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1775, 1956],
+                  "words": [1775, 1972],
                   "start": 734.78,
-                  "end": 794.38
+                  "end": 798.98
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "And what is totally beyond is even *Malchus* of *Asiya*, never mind higher levels.",
+              "text": "And this thing that is totally beyond is even *Malchus* of *Asiya*, never mind the higher levels. The more he delves, the farther beyond him is **the *mahus***: what it actually is, not the *metzius*. *Metzius* is knowing what the various relationships are; but what it really is goes farther and farther away.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [1957, 1989],
-                  "start": 794.48,
-                  "end": 808.92
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The more he delves, the more **the G-dly “nothingness” that creates, becomes removed and astounding to him**: what it actually is (*mahus*), not its existence (*metzius*). Existence means knowing what the relationships are; what it really is goes farther and farther away.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [1990, 2036],
-                  "start": 809.94,
-                  "end": 834.93
+                  "words": [1973, 2037],
+                  "start": 800.94,
+                  "end": 835.85
                 }
               ]
             }
@@ -804,19 +743,27 @@
           ],
           "phrases": [
             {
-              "he": "בהפלאת הערך יותר ויותר כו' עד שיצטער וידאג כו' (כמ\"ש בכתבי'12)",
-              "en": "This astonishment over the awesome gap and absence of any comparison [between *HaShem*-יהו״ה, blessed is He, who is beyond all limit, and himself], grows and grows, until he is bewildered and consternated over it etc., (as it is written in the Chassidic manuscripts)."
+              "he": "בהפלאת הערך יותר ויותר כו'",
+              "en": "in *hafla'a* (wonder) beyond relation, more and more,"
+            },
+            {
+              "he": "עד שיצטער וידאג כו'",
+              "en": "until he grieves and worries"
+            },
+            {
+              "he": "(כמ\"ש בכתבי'12)",
+              "en": "(as is explained in the writings)."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This astonishment over the awesome gap and absence of any comparison** grows and grows, until it makes him truly sad and he worries that it is going farther and farther away: How will I ever understand this at all? How will I have a connection to it? **(as it is written in the Chassidic manuscripts)**.",
+              "text": "**Until he grieves and worries**: till it *mamash* makes him sad, and he worries that it is going farther and farther away. \"How will I ever understand this at all? How will I have a connection to this?\" As is explained in the writings.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2037, 2085],
-                  "start": 835.35,
+                  "words": [2038, 2085],
+                  "start": 836.13,
                   "end": 855.88
                 }
               ]
@@ -826,102 +773,73 @@
       ]
     },
     {
-      "title": "Both at once: a worried heart and joy",
-      "summary": "Whoever contemplates in particulars comes to both the concealed and the revealed side, and feels two opposites at once: worry at how far beyond him the G-dly nothing is, and joy at grasping how everything comes into being. The worry is the source of true humility.",
+      "title": "Two opposites at once: a worried heart and joy",
+      "summary": "Whoever learns in particulars properly gets both at the same time: worry at how far beyond him the *ayin* is, which is where true humility comes from, and joy at what he has grasped. The humility is not \"I'm not so great as Einstein\", but the man who has seen Og and is shown a ten-foot giant.",
       "passages": [
         {
           "lines": [
-            "iujm3ylb"
-          ],
-          "phrases": [
-            {
-              "he": "ולפי\"ז הרי בכל מעיין בדרך פרט יבוא לכלל ב' ענינים האלה בהתבוננות, בהעלם וגילוי",
-              "en": "Accordingly, all those who contemplate in a manner of particulars [rather than a general manner] will become [aware of] these two aspects through their contemplation; the concealed aspect and the revealed aspect."
-            }
-          ],
-          "blocks": [
-            {
-              "kind": "explanation",
-              "text": "**Accordingly, all those who contemplate in a manner of particulars**, anyone who learns properly in the particular way that chapter 4 explained, **will become [aware of] these two aspects through their contemplation; the concealed aspect and the revealed aspect.**",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2086, 2117],
-                  "start": 857.28,
-                  "end": 871.92
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "lines": [
+            "iujm3ylb",
             "yk6kcz2a"
           ],
           "phrases": [
             {
-              "he": "והתפעלות הנולד ב' הפכים הם, לבו דואג בקרבו על עוצם הפלאת ההשגה באין האלה״י המהווה כו', והשמחה מהשגתו בכי טוב באיכות התהוות המתהווה כו'",
-              "en": "Accordingly, the arousal that is born of it [is comprised of] two opposites; “His heart is worried within him” because he comprehends the astounding greatness of the G-dly “nothing” that brings [everything] into being, and he is [simultaneously] joyful because of his thorough grasp of how all that exists comes into being.",
-              "notes": [
-                "See Tractate Chagigah 13a"
-              ]
+              "he": "ולפי\"ז הרי בכל מעיין בדרך פרט",
+              "en": "So according to this, anyone who looks into it in the particular way"
+            },
+            {
+              "he": "יבוא לכלל ב' ענינים האלה בהתבוננות,",
+              "en": "will come to these two things in contemplation,"
+            },
+            {
+              "he": "בהעלם וגילוי",
+              "en": "in *helem* and *gilui* (revelation),"
+            },
+            {
+              "he": "והתפעלות הנולד ב' הפכים הם,",
+              "en": "and the *hispaalus* that is born: they are two opposites:"
+            },
+            {
+              "he": "לבו דואג בקרבו",
+              "en": "his heart worries within him"
+            },
+            {
+              "he": "על עוצם הפלאת ההשגה באין האלה״י המהווה כו',",
+              "en": "over how utterly beyond grasp is the G-dly *ayin* that brings into being,"
+            },
+            {
+              "he": "והשמחה מהשגתו בכי טוב באיכות התהוות המתהווה כו'",
+              "en": "and joy from his grasp, in a good way, of how what comes into being comes into being."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The concealed is the \"nothing\" that creates; the revealed is the \"something\" that is created.",
+              "text": "Anybody who learns properly, in the particular way explained in chapter four, will come to both: the *helem* of the *ayin* that brings into being and the *gilui* of the *yesh* that comes into being. And the *hispaalus* he should get out of it is **two opposites**.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2118, 2150],
-                  "start": 872.26,
-                  "end": 885.73
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "Accordingly, **the arousal that is born of it [is comprised of] two opposites**, at the same time.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2151, 2167],
-                  "start": 886.44,
+                  "words": [2086, 2167],
+                  "start": 857.28,
                   "end": 894.29
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "**“His heart is worried within him”** **because he comprehends the astounding greatness of the G-dly “nothing” that brings [everything] into being**, and this gives him a feeling of nothingness, as if he were nothing at all.",
-              "join": true,
+              "kind": "keyPoint",
+              "text": "**His heart worries within him** over how utterly beyond grasp the *ayin* is. That gives him a feeling of nothingness: he is a total nothing. And this is where true humility comes from, not from *mussar*-ing yourself out. The real, true humility is not that you think, \"Oh, I am not so great as Einstein.\" That is not such a true humility. That is like saying, \"Well, I'm not so tall as Magic Johnson.\" There is still some kind of a relation.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2168, 2198],
+                  "words": [2168, 2270],
                   "start": 896.66,
-                  "end": 910.26
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "This is where true humility comes from, not from lecturing oneself into it. True humility is not \"I am not as great as Einstein\": that is like saying \"I am not as tall as Magic Johnson.\" There is still some comparison.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2199, 2270],
-                  "start": 911.52,
                   "end": 940.48
                 }
               ]
             },
             {
               "kind": "mashal",
-              "title": "A giant, after seeing Og",
-              "text": "A man who has seen *Og* king of Bashan is taken to the circus to see a giant, and is shown a man ten feet tall. \"That's a giant?\" he says. He is used to a giant who can lift a mountain. *Moshe Rabbeinu* was eighteen feet tall, jumped eighteen feet in the air with an eighteen-foot sword, fifty-four feet in all, and struck *Og* in the ankle. So the more one understands, the more *batel* one is: the greater the wonder, the bigger the giant. Before, he thought a ten-foot man was a giant; now he sees that jumping fifty feet up would only reach the ankle.",
+              "title": "The circus giant, after Og",
+              "text": "A guy saw Og, king of Bashan. They tell him, \"Hey, we're going to the circus to see a giant,\" and at the circus they show him a guy ten feet tall. \"Here, look at the giant.\" \"Is that a giant?\" He is used to Og, who can lift up a mountain, a giant a thousand feet tall or something. *Moshe Rabbeinu* was eighteen feet tall, he jumped eighteen feet in the air, his sword was eighteen feet, that makes fifty-four feet, and he hit Og in the ankle. His ankle was fifty-four feet up. And here they show him a guy ten feet tall: \"That's a giant?\"\n\nThe same here: the more he understands, the more he is *batel* (nullified). The greater the wonder, the bigger the giant gets. Before, he thought it was a ten-foot giant; now he sees, \"Wait a minute, if you jump fifty feet in the air, you're just going to hit his ankle.\" So **his heart worries within him**.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -933,7 +851,7 @@
             },
             {
               "kind": "explanation",
-              "text": "So there are the two: he truly worries at how far the thing is from him, and at the same time **he is [simultaneously] joyful because of his thorough grasp of how all that exists comes into being**, how the \"something\" comes out of the \"nothing\".",
+              "text": "So those are the two things. One, he *mamash* worries about how far this thing is away from him. And at the same time he is very happy from what he understood: **joy from his grasp** of how the something comes out of the nothing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -948,8 +866,8 @@
       ]
     },
     {
-      "title": "An example from the lowest level: the orbits",
-      "summary": "Grasping how the vast, powerful orbits come from a mere glimmer of *Malchus* of *Malchus* of *Asiya* brings joy and a sense of its greatness. What that source is in itself stays hidden: the mind can only conclude that it must be so (*muchrach b'hasaga*), and the response is wonder.",
+      "title": "The example from the lowest level: the orbits and Malchus of Malchus of Asiya",
+      "summary": "The whole gigantic universe, every star an atomic explosion, comes from the outer vessels of *Malchus* of *Malchus* of *Asiya*; grasping that brings joy. What that source is stays hidden: the mind only concludes that it must be so (*muchrach b'hasaga*), and the response is a \"wow\": I can't even imagine.",
       "passages": [
         {
           "lines": [
@@ -958,52 +876,35 @@
           ],
           "phrases": [
             {
-              "he": "כמו על דרך דוגמא המתבונן דרך פרט בהתהוות הגלגלים מאין האלה״י שהיא מבחינת כלים חיצונים דמלכות דמלכות דעשיה",
-              "en": "This may be understood by example of one who contemplates in a manner of particulars into the coming into being of the planetary orbits from the G-dly “nothing,” which comes about from the aspect of the external vessels of *Malchut* of *Malchut* of *Asiyah*."
+              "he": "כמו על דרך דוגמא",
+              "en": "For example:"
             },
             {
-              "he": "שהוא רק מבחינת כלי חיצוניות, הארה דהארה לבד, המאיר בנפש של זה הגלגל בהשגה במהווה אותו",
-              "en": "In other words, he comprehends how it is only from the external vessels and is merely a glimmer of a glimmer, which radiates within the soul of the celestial orb as it grasps that which gives it its existence.",
-              "notes": [
-                "That is, a star or planet"
-              ]
+              "he": "המתבונן דרך פרט בהתהוות הגלגלים",
+              "en": "one who contemplates, in the particular way, how the *galgalim* (the orbits) come into being"
+            },
+            {
+              "he": "מאין האלה״י שהיא מבחינת כלים חיצונים דמלכות דמלכות דעשיה",
+              "en": "from the G-dly *ayin*, which is from the outer vessels of *Malchus* of *Malchus* of *Asiya*,"
+            },
+            {
+              "he": "שהוא רק מבחינת כלי חיצוניות, הארה דהארה לבד,",
+              "en": "which is only from the outer vessels, a glimmer of a glimmer only,"
+            },
+            {
+              "he": "המאיר בנפש של זה הגלגל בהשגה במהווה אותו",
+              "en": "that shines in the soul of this orbit, in its grasp of what brings it into being;"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Take **one who contemplates in a manner of particulars into the coming into being of the planetary orbits from the G-dly “nothing,”**, which comes **from the aspect of the external vessels of *Malchut* of *Malchut* of *Asiyah***.",
+              "text": "Notice that he is talking about *davka* the lowest things, *mamash* something you can see. You look around and see the sun and the moon and the stars going around the earth, and the earth too is a big ball going around and around. And how this comes out from **the outer vessels of *Malchus* of *Malchus* of *Asiya***, **a glimmer of a glimmer only**.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2553, 2570],
+                  "words": [2553, 2652],
                   "start": 1045.52,
-                  "end": 1053.6
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The text deliberately chooses the lowest things, something one can actually see: one looks around and sees the sun, the moon and the stars going around, and the earth, a big ball, going around too.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2571, 2635],
-                  "start": 1053.66,
-                  "end": 1074.84
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "And he considers how this comes out of the outer vessels of *Malchus* of *Malchus* of *Asiya*: **merely a glimmer of a glimmer, which radiates within the soul of the celestial orb** as it grasps what creates it.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2636, 2652],
-                  "start": 1074.96,
                   "end": 1084.28
                 }
               ]
@@ -1016,14 +917,18 @@
           ],
           "phrases": [
             {
-              "he": "ועל דרך זה גם במלאכים דבריאה דאימה מקננא כו' שמשיגים כח האלה״י דמלכות דמלכות דאצילות כו' המהווה אותם",
-              "en": "Likewise, he understands how the angels of the world of *Briyah,* (“In which *Imma* (*Binah* of *Atzilut*) resides”), comprehend the G-dly power of *Malchut* of *Malchut* of *Atzilut* which brings them into existence."
+              "he": "ועל דרך זה גם במלאכים דבריאה דאימה מקננא כו'",
+              "en": "and in the same way the angels of *Beriya*, where *Ima* (*bina*) nests,"
+            },
+            {
+              "he": "שמשיגים כח האלה״י דמלכות דמלכות דאצילות כו' המהווה אותם",
+              "en": "who grasp the G-dly power of *Malchus* of *Malchus* of *Atzilus* that brings them into being;"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Likewise, he understands how the angels of the world of *Briyah*** grasp **the G-dly power of *Malchut* of *Malchut* of *Atzilut* which brings them into existence**.",
+              "text": "The same with the angels of *Beriya*: they have an understanding in *bina*, which is the sky above them. They have a *hasaga* in the G-dly power of *Malchus* of *Malchus* of *Atzilus* that brings them into being.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -1035,7 +940,7 @@
             },
             {
               "kind": "explanation",
-              "text": "This adds something. Everybody says there are *yichuda ila'a* and *yichuda tata'a*, the higher and the lower unity. But within *yichuda tata'a* there is another: this physical world comes out of *Malchus* of *Malchus* of *Asiya*. Then *Beriya*, *Yetzira* and *Asiya* come out of *Malchus* of *Malchus* of *Atzilus*, and *Atzilus* comes out of *Malchus* of *Malchus* of *Ein Sof*.",
+              "text": "So he gave you here another thing. Everybody says there is *yichuda ila'a* and *yichuda tata'a* (the lower unity). Really, in the *yichuda tata'a* there is another one: this physical world, how it comes out of *Malchus* of *Malchus* of *Asiya*. Then there are *Beriya*, *Yetzira* and *Asiya*, which come out of *Malchus* of *Malchus* of *Atzilus*; and then *Atzilus*, which comes out of *Malchus* of *Malchus* of the *Ein Sof*.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -1053,32 +958,31 @@
           ],
           "phrases": [
             {
-              "he": "הרי זהו המושג בהשגה, ויתפעל מגדולת הבורא ואיך שהמה בטלים בתמידות, כמו שכתוב וצבא השמים לך משתחווים, בסיבובם כו'",
-              "en": "He grasps these concepts in a way of comprehension, and he becomes aroused by the greatness of the Creator, and how they [the angels, stars and planets] are constantly sublimated [to Him], as stated, “And the hosts of the heavens bow down to You,” in their orbits etc."
+              "he": "הרי זהו המושג בהשגה,",
+              "en": "this is what is grasped in actual *hasaga*,"
+            },
+            {
+              "he": "ויתפעל מגדולת הבורא",
+              "en": "and he is moved by the greatness of the Creator,"
+            },
+            {
+              "he": "ואיך שהמה בטלים בתמידות,",
+              "en": "and how they are *batel* constantly,"
+            },
+            {
+              "he": "כמו שכתוב וצבא השמים לך משתחווים, בסיבובם כו'",
+              "en": "as it is written, \"and the host of heaven bows to You\", in their going around."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**He grasps these concepts in a way of comprehension, and he becomes aroused by the greatness of the Creator, and how they [the angels, stars and planets] are constantly sublimated [to Him]**, as the verse says, \"And the hosts of the heavens bow down to You.\"",
+              "text": "**This is what is grasped in actual *hasaga***. Look: the whole universe is so big and so gigantic, with these stars, each star like a gigantic atomic explosion; and all the power of the entire universe is like nothing compared to what *Malchus* of *Malchus* of *Asiya* is.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2783, 2809],
+                  "words": [2783, 2851],
                   "start": 1143.34,
-                  "end": 1159.9
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The universe is so vast, and each star is like a gigantic atomic explosion, yet all the power of the whole universe is nothing compared to *Malchus* of *Malchus* of *Asiya*.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2810, 2851],
-                  "start": 1160.02,
                   "end": 1182.22
                 }
               ]
@@ -1092,56 +996,39 @@
           ],
           "phrases": [
             {
-              "he": "אבל בחינת האין האלה״י דמלכות דעשיה המהווה, נעלם מהותו מן ההשגה",
-              "en": "However, the aspect of the G-dly “nothingness,” the essential creative force of *Malchut* of *Asiyah*, is concealed from his grasp."
+              "he": "אבל בחינת האין האלה״י דמלכות דעשיה המהווה,",
+              "en": "But the G-dly *ayin* of *Malchus* of *Asiya* that brings into being:"
             },
             {
-              "he": "רק שממילא הוא מוכרח בהשגה, אחר התאמת אופן הענין של ההתהוות היש כו'",
-              "en": "However, it is automatically forced into his comprehension, because the understanding of how the “something” comes into existence has become true for him."
+              "he": "נעלם מהותו מן ההשגה",
+              "en": "what it is is hidden from comprehension;"
+            },
+            {
+              "he": "רק שממילא הוא מוכרח בהשגה,",
+              "en": "only, of itself, it is *muchrach b'hasaga* (compelled by comprehension),"
+            },
+            {
+              "he": "אחר התאמת אופן הענין של ההתהוות היש כו'",
+              "en": "after the way the *yesh* comes into being has become real to him,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**However, the aspect of the G-dly “nothingness,” the essential creative force of *Malchut* of *Asiyah*, is concealed from his grasp.** What is *Malchus* of *Malchus* of *Asiya* really?",
+              "text": "What is *Malchus* of *Malchus* of *Asiya* really? **What it is is hidden from comprehension.** We understand the relationship of the world to it, the *metzius*; but the actual *mahus* is hidden.\n\n***Muchrach b'hasaga***: it is not that he actually understands what it is. The mind, the logic, dictates that it must be like that.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [2852, 2868],
+                  "words": [2852, 2927],
                   "start": 1182.88,
-                  "end": 1189.26
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "We understand the relationship of the world to it, its existence (*metzius*); what it actually is (*mahus*) is hidden from comprehension.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2869, 2894],
-                  "start": 1190.74,
-                  "end": 1201.84
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**However, it is automatically forced into his comprehension**: not that he actually understands what it is, but the mind's logic dictates that it must be so.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [2895, 2927],
-                  "start": 1202.57,
                   "end": 1222.9
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "The universe is so big and so strong. The sun is a gigantic atomic explosion with an amazing amount of power, and the sun is a tiny dot in the whole universe; and moving all those stars around takes fantastic amounts of power. All of that comes from *Malchus* of *Malchus* of *Asiya*, so the mind is compelled to say: what an amazing thing *Malchus* of *Malchus* of *Asiya* must be. But he does not actually understand what it is: it is *muchrach b'hasaga*, forced on the mind.",
-              "join": true,
+              "kind": "mashal",
+              "title": "The sun, a gigantic atomic explosion",
+              "text": "Logic dictates: the whole universe is so big and so strong. Just imagine what an explosion is, and what an atomic explosion is; the sun is a gigantic atomic explosion with such amazing amounts of power, and the sun is just a tiny little dot in the whole universe. And the power it takes for all those stars to go around and around: fantastic amounts of power. All of that is coming from *Malchus* of *Malchus* of *Asiya*. So the mind is compelled: what an amazing thing *Malchus* of *Malchus* of *Asiya* must be! Not that he actually understands what it is. It is just *muchrach b'hasaga*.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -1153,13 +1040,13 @@
             },
             {
               "kind": "explanation",
-              "text": "This comes **because the understanding of how the “something” comes into existence has become true for him**: once it is clear to him how the \"something\" of the orbits comes into being from *Malchus* of *Malchus* of *Asiya*, and not even from all of it, only from the edge of its chambers, he says: Wow, what it must be! If this is only the little bit that comes out of it, imagine what it is!",
+              "text": "**After the way the *yesh* comes into being has become real to him**: after he goes through the explanation and it is verified to him how the *yesh* of the orbits comes into being from *Malchus* of *Malchus* of *Asiya*; and not even from *Malchus* of *Malchus* of *Asiya*, but really from just the end of its *heichalos* (chambers), from the *shemarim* (waste) of the *Ofanim*. Once he understands that, he says, \"Wow, what it must be!\" His mind dictates: if this is only the little bit that comes out of it, imagine what it is!",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3058, 3165],
+                  "words": [3058, 3166],
                   "start": 1278.92,
-                  "end": 1323.26
+                  "end": 1324.34
                 }
               ]
             }
@@ -1171,39 +1058,30 @@
           ],
           "phrases": [
             {
-              "he": "ובבחינת ההעלם לבד הוא מושג, ובהפלאת הערך נבדל דוקא",
-              "en": "Furthermore, it is only comprehended in a concealed way, specifically because of the astonishment over the total absence of comparison."
+              "he": "ובבחינת ההעלם לבד הוא מושג,",
+              "en": "it is grasped only in a way of *helem*,"
+            },
+            {
+              "he": "ובהפלאת הערך נבדל דוקא",
+              "en": "and in wonder, as separate beyond relation, *davka*."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Furthermore, **it is only comprehended in a concealed way**: only as something the mind is forced to conclude, not that he actually gets it.",
+              "text": "**It is grasped only in a way of *helem***: only as *muchrach b'hasaga*, not that he actually gets it; **and in wonder**, a total amazement. There is the *hispaalus* from understanding the whole thing, the orbits, this goes around this and that goes around that, and so on: that he understands, and from that he gets *simcha*.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3166, 3191],
-                  "start": 1324.02,
-                  "end": 1333.16
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "And it is grasped **because of the astonishment over the total absence of comparison**, in sheer amazement.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3192, 3234],
-                  "start": 1334,
+                  "words": [3167, 3234],
+                  "start": 1324.62,
                   "end": 1350.42
                 }
               ]
             },
             {
               "kind": "keyPoint",
-              "text": "Understanding how the orbits work, how this one goes around that one, gives him joy. Thinking about what *Malchus* of *Malchus* of *Asiya* actually is gives him a \"wow\", a wonder (*hafla'a*): \"I can't even imagine what it must be.\" Not \"imagine what it is\", but the very response is that one cannot imagine it; it is entirely removed from him.",
+              "text": "But from thinking about what *Malchus* of *Malchus* of *Asiya* actually is, what he gets is a wow. A wow means an amazement, a *hafla'a*, a *pele*. \"Wow, what a *pele*! What it has to be, I can't even imagine.\" It is not \"imagine what it is\": the *hispaalus* is \"I can't even imagine.\" It is totally beyond him, totally removed from him. So it is grasped **as separate beyond relation, *davka***: as how separate it is.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
@@ -1218,8 +1096,8 @@
       ]
     },
     {
-      "title": "The same in Atzilus, and the sign of true understanding",
-      "summary": "In *Atzilus* too, the relationships of its lights and *middos* can be grasped through analogies, while the true 'nothing' of the Emanator is seen only by the mind's sight, above comprehension. Both must come together, and the sign of it is a *bittul* beyond any comparison.",
+      "title": "The same in Atzilus: what the mind sees above comprehension",
+      "summary": "In *Atzilus* too the relationships of the lights and the *middos* can be understood by images from below, while the true *ayin* that shines on them is seen only by the sight of the mind. If you think you have understood it, you have not: the explanation that does not point you beyond itself was not understood. The sign is a *bittul* beyond all relation, the real humility, which is not lowliness.",
       "passages": [
         {
           "lines": [
@@ -1229,48 +1107,31 @@
           ],
           "phrases": [
             {
-              "he": "וכך הוא בהתבוננות פרטיות באצילות באורות וכלים, כמו באצילות אור חסד שבמלכות או באצילות אור חסד שבחכמה ואיך שנאצל",
-              "en": "This is likewise so in the contemplation of the particulars of the world of *Atzilut*, in its lights and vessels. For example, the contemplation on the light of *Chessed* of *Malchut* of *Atzilut*, or the contemplation on the light of *Chessed* of *Chochmah* of *Atzilut*, to understand how they were emanated."
+              "he": "וכך הוא בהתבוננות פרטיות באצילות באורות וכלים,",
+              "en": "And so it is in particular contemplation of *Atzilus*, of the lights and vessels,"
+            },
+            {
+              "he": "כמו באצילות אור חסד שבמלכות או באצילות אור חסד שבחכמה",
+              "en": "like, in *Atzilus*, the light of *chesed* in *Malchus*, or in *Atzilus* the light of *chesed* in *chachma*,"
+            },
+            {
+              "he": "ואיך שנאצל",
+              "en": "and how it is emanated:"
             },
             {
               "he": "יושג על דרך דמיון מאור הנאצל למטה בגילוי מהעלם העצמות",
-              "en": "This can be comprehended by way of analogy from how light is emanated into revelation from its concealment in the essence [of the luminary], here below [in the physical world]."
+              "en": "it is grasped by an image, from the light emanated below, revealed out of the concealment of the Essence,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is likewise so in the contemplation of the particulars of the world of *Atzilut*, in its lights and vessels**: for example **the light of *Chessed* of *Malchut* of *Atzilut*, or** of **the light of *Chessed* of *Chochmah* of *Atzilut***. He understands the relationships, and **how they were emanated**.",
+              "text": "He understands the relationships, and **how it is emanated** in *Atzilus*. **It is grasped by an image**: again, it is not that he understands what *Atzilus* really is. He understands the relationships within *Atzilus* according to the *meshalim* down here.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3336, 3364],
+                  "words": [3336, 3412],
                   "start": 1392.9,
-                  "end": 1411.74
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**This can be comprehended by way of analogy from how light is emanated into revelation from its concealment in the essence**.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3365, 3383],
-                  "start": 1411.86,
-                  "end": 1423.5
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "Again, it is not that he understands what *Atzilus* really is; he understands the relationships within *Atzilus* by the analogies down here.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3384, 3412],
-                  "start": 1424.36,
                   "end": 1433.42
                 }
               ]
@@ -1283,23 +1144,25 @@
           ],
           "phrases": [
             {
-              "he": "כמו ויאצל מן הרוח דמשה כו' וכהאי גוונא",
-              "en": "This is also similar to how Moshe, “emanated from his spirit,” and the like.",
-              "notes": [
-                "Numbers 11:25"
-              ]
+              "he": "כמו ויאצל מן הרוח דמשה כו'",
+              "en": "as in \"and He drew of the spirit\" of Moshe,"
+            },
+            {
+              "he": "וכהאי גוונא",
+              "en": "and the like."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "**This is also similar to how Moshe, “emanated from his spirit,”**: just as *Moshe* emanated of his spirit onto the elders, and *Moshe* lost nothing, **and the like**, the various other analogies.",
+              "kind": "mashal",
+              "title": "Moshe's spirit on the elders",
+              "text": "It is the same thing as Moshe drawing from his spirit onto the elders: nothing was lost to Moshe. **And the like**: the various other *meshalim*.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3413, 3449],
+                  "words": [3413, 3448],
                   "start": 1434.3,
-                  "end": 1448.01
+                  "end": 1447.43
                 }
               ]
             }
@@ -1311,33 +1174,24 @@
           ],
           "phrases": [
             {
-              "he": "ויושג גם כן בענין התהוות מדות דאצילות גם שהן בחינת מקוריים נבדלים מן השפעה האלהי״ת בנבראים כו'",
-              "en": "Furthermore, although the emotive qualities (*Midot*) of the world of *Atzilut* are only in the aspect of sources, and are separate from the G-dly influence as it is within creation, he nonetheless will comprehend how they come into being."
+              "he": "ויושג גם כן בענין התהוות מדות דאצילות",
+              "en": "And one also grasps how the *middos* (attributes) of *Atzilus* come into being,"
+            },
+            {
+              "he": "גם שהן בחינת מקוריים נבדלים מן השפעה האלהי״ת בנבראים כו'",
+              "en": "although they are sources, separate from the G-dly flow into the creatures,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "This too can be understood with real comprehension: **he nonetheless will comprehend how** the *middos* (attributes) of *Atzilus* **come into being**.",
+              "text": "This too can be understood in *hasaga*: how the *middos* of *Atzilus* come into being, even though they are *mekoriyim nivdalim*, sources that are totally different from the actual G-dly flow into *Beriya*, *Yetzira* and *Asiya*. The actual *middos* of *Atzilus* have nothing to do with those worlds. They are their sources, but they are totally separate from them; the whole of *Beriya*, *Yetzira* and *Asiya* comes out only from *Malchus* of *Malchus* of *Atzilus*, not even from *Malchus* of *Atzilus*. And this he can understand.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3450, 3501],
-                  "start": 1448.1,
-                  "end": 1473.5
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "He grasps this even though **the emotive qualities (*Midot*) of the world of *Atzilut* are only in the aspect of sources, and are separate from the G-dly influence as it is within creation**. The *middos* of *Atzilus* themselves have nothing to do with *Beriya*, *Yetzira* and *Asiya*. Though they are their sources, they are entirely separate from them; the worlds of *Beriya*, *Yetzira* and *Asiya* come out only from *Malchus* of *Malchus* of *Atzilus*, not even from *Malchus* of *Atzilus*. And he can understand this: how the *middos* of *Atzilus* are separate sources.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3502, 3567],
-                  "start": 1473.99,
-                  "end": 1500
+                  "words": [3449, 3568],
+                  "start": 1447.51,
+                  "end": 1501.38
                 }
               ]
             }
@@ -1349,70 +1203,56 @@
           ],
           "phrases": [
             {
-              "he": "אבל בחינת אין האמיתי המאיר עליהם מאור עצמות המאצילם, לא יושג אף בדמיון שכל כי אם בהעלם לבד, והוא בבחינת ראית השכל שלמעלה מן השגה ותפיסא ממש",
-              "en": "However, the aspect of the true “nothingness” that shines upon them from the light of the Essential Self of *HaShem*-יהו״ה, blessed is He, who emanates them, cannot be grasped even through intellectual comparisons. Rather, it may only be [grasped] in a concealed fashion, which is the aspect of the intellectual sight, which is higher than actual comprehension and grasp."
+              "he": "אבל בחינת אין האמיתי המאיר עליהם מאור עצמות המאצילם,",
+              "en": "but the true *ayin* that shines on them from the light of the Essence of the One who emanates them"
+            },
+            {
+              "he": "לא יושג אף בדמיון שכל",
+              "en": "cannot be grasped even by an image of the mind,"
+            },
+            {
+              "he": "כי אם בהעלם לבד,",
+              "en": "only as hidden;"
+            },
+            {
+              "he": "והוא בבחינת ראית השכל שלמעלה מן השגה ותפיסא ממש",
+              "en": "and it is in the sight of the mind, which is above comprehension and grasp, *mamash*,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**However, the aspect of the true “nothingness” that shines upon them from the light of the Essential Self** of the Emanator **cannot be grasped even through intellectual comparisons**: it cannot be understood even through an image.",
+              "text": "That **cannot be grasped even by an image of the mind**; **only as hidden**, as we said before: it is *muchrach b'hasaga*, you have to say that it must be so. **The sight of the mind** means that the *sechel* sees that there is something higher than the actual understanding.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3568, 3590],
-                  "start": 1501.1,
-                  "end": 1512.1
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "**Rather, it may only be [grasped] in a concealed fashion**, as said before: it is forced on the mind, one must say that it must be so.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3591, 3620],
-                  "start": 1512.63,
-                  "end": 1523.78
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "This **is the aspect of the intellectual sight, which is higher than actual comprehension and grasp**: the intellect sees that there is something higher than the understanding itself.",
-              "audio": [
-                {
-                  "lecture": "060 Ch5 part1.mp3",
-                  "words": [3621, 3644],
-                  "start": 1524.1,
+                  "words": [3569, 3644],
+                  "start": 1501.66,
                   "end": 1534.8
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "At every level of understanding in *Chassidus* there are two things: one understands the actual explanation of how the \"something\" comes from the \"nothing\", and at the same time one sees that there is something entirely beyond the understanding. And they have to come together.",
-              "join": true,
+              "kind": "keyPoint",
+              "text": "So in understanding, at any level of *Chassidus*, there are two things. One, you understand the actual explanation of how the *yesh* comes from the *ayin*. The other, at the same time, you see that there is something totally higher than the understanding. And it has to be simultaneous.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3645, 3721],
+                  "words": [3645, 3702],
                   "start": 1535.14,
-                  "end": 1566.34
+                  "end": 1562.12
                 }
               ]
             },
             {
               "kind": "keyPoint",
-              "text": "The introduction to *Etz Chaim* and many kabbalistic and Chassidic books say that if you think you actually understand, you do not understand. \"But here, in this book, I understand!\" Yes, you understand the explanation and how something comes from nothing. That does not mean you should not understand; just the opposite: you should understand that there is something beyond understanding. If you do not get that, you have lost the whole point. Even what you understand you have not understood properly, because it did not point you to what is beyond understanding. If you did not see how fantastically removed *Malchus* of *Malchus* of *Asiya* is from you, you did not really understand how the \"something\" came out of the \"nothing\".",
+              "text": "If you think you are really getting it, \"now this is what the thing is\": look in the introduction to *Etz Chaim*, and in many kabbalistic and Chassidic books. What they tell you is that if you think you actually understand, then you don't understand. \"What do you mean? I understand. Maybe *Etz Chaim* is not so easy, but look here, especially in this book, we understand.\" He says: \"Yeah, yeah, you understand the explanation, and you understand how the *yesh* comes from the *ayin*. It's not that you should not understand; just the opposite. But at the same time you should understand that there is something beyond the understanding.\"\n\nIf you don't get that, you lost the whole point. Even the stuff you understand you are not understanding properly, because it did not point you to the part beyond the understanding. If you didn't get how fantastically removed from you *Malchus* of *Malchus* of *Asiya* is, you really didn't understand how the something came out of the nothing.",
               "audio": [
                 {
                   "lecture": "060 Ch5 part1.mp3",
-                  "words": [3722, 3947],
-                  "start": 1566.4,
-                  "end": 1644.94
+                  "words": [3703, 3937],
+                  "start": 1562.18,
+                  "end": 1640.94
                 }
               ]
             }
@@ -1425,62 +1265,48 @@
           ],
           "phrases": [
             {
-              "he": "וכמאמר לית מחשבה תפיסא בך כו', שהוא מחשבה דבינה כו'",
-              "en": "This is like the saying, “No thought can grasp You,” which refers to the thought of *Binah*."
+              "he": "וכמאמר לית מחשבה תפיסא בך כו',",
+              "en": "as the saying goes, \"No thought grasps You at all,\""
             },
             {
-              "he": "דהיינו שזהו היפך ההשגה, כי כל שמעמיק יותר, יותר מופלא הימנו עצמיות אור המאציל כו'",
-              "en": "In other words, this is the opposite of comprehension, for the more he delves [into it], the more astounding will the essential light of the Emanator be for him."
+              "he": "שהוא מחשבה דבינה כו'",
+              "en": "which is the thought of *bina*;"
+            },
+            {
+              "he": "דהיינו שזהו היפך ההשגה,",
+              "en": "that is, this is the opposite of *hasaga*:"
+            },
+            {
+              "he": "כי כל שמעמיק יותר, יותר מופלא הימנו",
+              "en": "for the more he delves, the more amazingly far from him is"
+            },
+            {
+              "he": "עצמיות אור המאציל כו'",
+              "en": "the very self of the light of the One who emanates,"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is like the saying, “No thought can grasp You,” which refers to the thought of *Binah*.**",
+              "text": "**The thought of *bina***: the thought of understanding. The thought of the *hasaga* of the explanations does not grasp the actual *mahus* of the thing at all.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [9, 23],
+                  "words": [9, 44],
                   "start": 10.04,
-                  "end": 18.36
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "The thought of understanding, of the explanations, does not grasp the essence of the thing at all.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [24, 44],
-                  "start": 20.2,
                   "end": 27.12
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "**In other words, this is the opposite of comprehension**: the sight of *chachma* is the exact opposite of *hasaga*.",
+              "text": "This sight of *chachma* is the exact **opposite of *hasaga***. The more he learns and the more deeply he thinks into it, the more amazingly far from him the thing is: the actual selfness of the light of the *Aibershter*.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [45, 72],
+                  "words": [45, 122],
                   "start": 27.6,
-                  "end": 40.1
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "For **the more he delves [into it], the more astounding will the essential light of the Emanator be for him**: the more he learns and the more deeply he thinks, the more amazingly far it is from him.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [73, 121],
-                  "start": 40.57,
-                  "end": 61.17
+                  "end": 62.16
                 }
               ]
             }
@@ -1492,39 +1318,31 @@
           ],
           "phrases": [
             {
-              "he": "והסימן לזה הוא הנולד מזה, בחינת הביטול ביותר כנזכר לעיל",
-              "en": "The indication of this [type of arousal] is that a very great aspect of nullification is born [in him]."
+              "he": "והסימן לזה הוא הנולד מזה,",
+              "en": "and the sign of this is what is born of it:"
+            },
+            {
+              "he": "בחינת הביטול ביותר כנזכר לעיל",
+              "en": "the greatest *bittul*, as said above."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "**The indication of this** is that **a very great aspect of nullification is born [in him]**: a tremendous humility.",
+              "kind": "mashal",
+              "title": "Og, and Moshe's \"Whoa, dude!\"",
+              "text": "**The sign of this** is a fantastic humility. The actual humility is not that he is humble next to the ten-foot guy. It is when he realizes what a real giant is, like Og king of Bashan: \"Wow, there's no way I'm going up against him.\" Even *Moshe Rabbeinu* went up against him only because the *Aibershter* promised to help him. Moshe was worried. When he saw Og he said, \"Wait a minute! Whoa! Whoa, dude! This guy is picking up mountains and throwing them at us! How are we going to fight him?\" So it is a matter of total *bittul* and humility.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [122, 162],
-                  "start": 61.9,
-                  "end": 78.72
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "Not humility in comparison to the ten-foot man, but what he feels when he realizes what a real giant is, like *Og* king of Bashan: \"There is no way I can go up against him.\" Even *Moshe Rabbeinu* went up against him only because the *Aibershter* promised to help him. When *Moshe* saw *Og*, he was worried: this one picks up mountains and throws them at us; how will we fight him? It is a matter of total *bittul* and humility.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [163, 278],
-                  "start": 79.11,
+                  "words": [123, 278],
+                  "start": 62.2,
                   "end": 121.38
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "This is where real humility comes from. Most people think humility means being humble because you are five feet tall and the other man is ten. Here it is entirely beyond comparison: \"I am nothing, not even an inch tall. The whole universe, with its suns, is nothing compared to *Malchus* of *Asiya*, never mind the light of the Emanator. What do I have to talk about?\"",
+              "text": "This is where the real humility comes from, not from what most people think humility is: basically, being humble that you are five feet tall and the other guy is ten feet tall. Here it is totally beyond relation. \"Wait a minute, I'm a total nothing, I'm not even an inch tall. I'm like nothing.\" The whole universe with the suns and everything is nothing, never mind next to the light of the Emanator: next to *Malchus* of *Asiya*. So what do I have to talk about?",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1535,8 +1353,8 @@
               ]
             },
             {
-              "kind": "explanation",
-              "text": "What people think of as humility is really lowliness (*shiflus*), and one is not supposed to be lowly, thinking \"I am not such a big shot, I don't understand so well.\" Just the opposite: he is a big shot. He has the comprehension of *bina*, he knows he has it, he is happy with it, and he knows it is good for him. But compared to the actual wonder, it makes no difference how big he is: he is still nothing.",
+              "kind": "keyPoint",
+              "text": "From this comes **the greatest *bittul***, and *davka* this is the real humility. What people think humbleness is, is really *shiflus* (lowliness), and you are not supposed to be lowly. They think you should think, \"Oh, I'm not such a big shot, I don't understand so good.\" He says, \"No, just the opposite.\" He is a big shot. He got the *hasaga* of *bina*, and he knows he got it, and he is very happy from it, and he knows it is good for him. But in comparison with the actual *hafla'a*, it makes no difference how big he is: it is still nothing.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1551,8 +1369,8 @@
       ]
     },
     {
-      "title": "Joy and nullification come together, in proportion",
-      "summary": "The joy of *bina* and the *bittul* of *chachma* must come together in every contemplation, and each depends on the other: the more one grasps, the more one is nullified. This is the great principle of all contemplation.",
+      "title": "Joy and bittul come together, in proportion: the great principle",
+      "summary": "The *bittul* of *chachma* and the joy of *bina* must come together in every contemplation, and each depends on the other: as big a shot as he becomes in understanding, so humble does he become. This is not a by-the-way; it is the central principle of all *Chassidus*.",
       "passages": [
         {
           "lines": [
@@ -1561,43 +1379,34 @@
           ],
           "phrases": [
             {
-              "he": "ונמצא בחינת הביטול והשמחה שמסתעפים ונולדים מחכמה ובינה שבכל פרט, בהכרח שבאים כאחד דוקא",
-              "en": "[From all the above] we find, that of necessity, the [opposite] aspects of nullification and joy, which branch out and are born of the *Chochmah* and *Binah* [that is, the contemplation] of each particular, specifically come together, as one."
+              "he": "ונמצא בחינת הביטול והשמחה שמסתעפים ונולדים מחכמה ובינה שבכל פרט,",
+              "en": "So the *bittul* and the *simcha* that branch out and are born of the *chachma* and *bina* in every particular"
+            },
+            {
+              "he": "בהכרח שבאים כאחד דוקא",
+              "en": "must come together, *davka*,"
             },
             {
               "he": "בכל התבוננות בכל פרט ופרט דווקא",
-              "en": "This is true of all *Hitbonenut-*contemplation of each particular detail, specifically."
+              "en": "in every contemplation, in each and every particular, *davka*."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "It follows that **the [opposite] aspects of nullification and joy, which branch out and are born of the *Chochmah* and *Binah* [that is, the contemplation] of each particular, specifically come together, as one**: they come simultaneously.",
+              "text": "**Must come together**: simultaneously. And if they don't come simultaneously, that means you are not studying *Chassidus* properly.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [526, 543],
+                  "words": [526, 557],
                   "start": 210.82,
-                  "end": 222.18
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "If they do not come together, one is not studying *Chassidus* properly.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [544, 557],
-                  "start": 224.12,
                   "end": 229.88
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "This is what is seen with many kabbalists: they have one or the other. Either they have the understanding and become real big shots, thinking that now they are really something; or they do not want to understand anything, and want only some sense of wonder and humility. But that is not real humility, since without comprehension there is no real wonder either: it is false humility.",
+              "kind": "aside",
+              "text": "And this is basically what you see with a lot of these kabbalists: there is either one or the other. Either there is the understanding, and they get to be real big shots and think they are really something now. Or else they don't want to understand nothing; they just want some kind of a sense of *hafla'a* and humility. But since there is no *hasaga*, there is no *hafla'a* either, no real *hafla'a*. It is not a real humility. It is a false humility.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1605,11 +1414,19 @@
                   "start": 230.86,
                   "end": 266.8
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Sweeping criticism of \"a lot of these kabbalists\" as either self-important or falsely humble.",
+                "action": "replace",
+                "publishable": "There are those who have only one or the other. Either there is the understanding, and they think they are really something now. Or else they don't want to understand anything; they just want some kind of a sense of *hafla'a* and humility. But since there is no *hasaga*, there is no real *hafla'a* either. It is not a real humility. It is a false humility."
+              }
             },
             {
               "kind": "explanation",
-              "text": "**This is true of all *Hitbonenut*-contemplation of each particular detail, specifically**: every contemplation in this whole book has both.",
+              "text": "**In every contemplation, in each and every particular**: any *hisbonenus* that you go through in this whole book goes into both of these things.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1627,45 +1444,42 @@
           ],
           "phrases": [
             {
-              "he": "והא בהא תליא, ואם לא השמחה ביש מההשגה בטוב, לא יבוא להפלאת וריחוק ההשגה באי''ן",
-              "en": "These two aspects are interdependent. If he has no joy from the thorough comprehension of the “something,” then he will also not come to the astonishment and sense of distance in his inability to grasp the “nothingness.”"
+              "he": "והא בהא תליא,",
+              "en": "One depends on the other:"
+            },
+            {
+              "he": "ואם לא השמחה ביש מההשגה בטוב,",
+              "en": "if there is no joy in the *yesh*, from grasping it well,"
+            },
+            {
+              "he": "לא יבוא להפלאת וריחוק ההשגה באי''ן",
+              "en": "he will not come to the wonder and the remoteness from grasp of the *ayin*."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**These two aspects are interdependent**: if one is missing, the other is missing too.",
+              "text": "**One depends on the other**: if you don't get one, you don't have the other either. If he doesn't have the understanding in the *yesh*, he doesn't really have the *hafla'a* in the *ayin*.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [690, 715],
+                  "words": [690, 747],
                   "start": 276.24,
-                  "end": 281.38
+                  "end": 298.18
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "**If he has no joy from the thorough comprehension of the “something,” then he will also not come to the astonishment and sense of distance in his inability to grasp the “nothingness.”** If he has no understanding of the \"something\", he has no real wonder at the \"nothing\".",
-              "join": true,
+              "kind": "question",
+              "question": "And what about the one who says, \"I just have the hafla'a. I believe in G-d, I'm a humble guy, a simple little guy; I don't need all this understanding\"?",
+              "askedBy": "teacher",
+              "text": "\"Hey, how could you be a simple little guy? You don't have the understanding: that means you don't have the *hafla'a*, and you're not really a humble guy. You're really a *ba'al ga'ava* (a proud man). You think you're something.\" \"What do you mean? I don't think I'm something.\" \"Yes, you do. Even if it's a little tiny thing that you think you are. Because you don't have the *hasaga* of *bina*, you're a *ba'al ga'ava*.\"",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [716, 755],
-                  "start": 283.58,
-                  "end": 299.78
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "One says: \"I just have the wonder. I believe in G-d, I am humble, a simple little fellow; I don't need all this understanding.\" The answer: How can you be a simple little fellow? You have no understanding, so you have no wonder, and you are not really humble: you are really proud (*baal gaava*). \"What do you mean? I don't think I'm anything.\" Yes, you do. Even if it is a tiny bit, you think you are something, because you lack the comprehension of *bina*.",
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [756, 872],
-                  "start": 300.09,
-                  "end": 336.04
+                  "words": [748, 867],
+                  "start": 298.78,
+                  "end": 333.74
                 }
               ]
             }
@@ -1677,31 +1491,23 @@
           ],
           "phrases": [
             {
-              "he": "ולפי ערך השמחה כך ערך הביטול ממש, כי כפי ערך ההשגה במתהווה, כך ערך ההפלאה בהבדל המהווה כו'",
-              "en": "The degree of his joy is, literally, commensurate to the degree of his nullification, for his comprehension of the created is commensurate to his astonishment at the separateness of the Creator."
+              "he": "ולפי ערך השמחה כך ערך הביטול ממש,",
+              "en": "And according to the measure of the joy is the measure of the *bittul*, *mamash*;"
+            },
+            {
+              "he": "כי כפי ערך ההשגה במתהווה, כך ערך ההפלאה בהבדל המהווה כו'",
+              "en": "for according to the measure of the grasp of what comes into being is the measure of the wonder at how separate is what brings it into being."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "**The degree of his joy is, literally, commensurate to the degree of his nullification**: as happy as he is, and as great as he realizes he is becoming, truly becoming a master of the deepest secrets, so great is his *bittul*, so humble does he become.",
+              "kind": "keyPoint",
+              "text": "And at the same time: according to how happy he is, and what a great big shot he realizes he is becoming, that he is *mamash* becoming a master of *razei d'razin* (the secrets of secrets), literally, that is how much the *bittul* is; that is how humble he will get. Exactly according to his *hasaga* in how the *yesh* comes into being is the measure of the *hafla'a*: how fantastically above us the *Aibershter* is.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [873, 920],
-                  "start": 337.86,
-                  "end": 355.96
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "For **his comprehension of the created is commensurate to his astonishment at the separateness of the Creator**: exactly as far as he grasps how the \"something\" comes into being, so far is his wonder at how fantastically far above us the *Aibershter* is.",
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [921, 954],
-                  "start": 356.82,
+                  "words": [868, 954],
+                  "start": 334.92,
                   "end": 374.66
                 }
               ]
@@ -1715,31 +1521,18 @@
           "phrases": [
             {
               "he": "וזהו כלל גדול בכל ההתבוננות בפרט ובכלל",
-              "en": "This is an important principle [that applies to] every *Hitbonenut*-contemplation, whether general or particular."
+              "en": "And this is a great principle in all contemplation, particular and general."
             }
           ],
           "blocks": [
             {
-              "kind": "explanation",
-              "text": "**This is an important principle**. It is not something said in passing; it is a great general principle (*klal gadol*), like \"Love your fellow as yourself is a great principle of the Torah.\"",
+              "kind": "keyPoint",
+              "text": "**This is a great principle.** It is not just something I'm telling you by the way. It is a *klal gadol*, a general principle, like \"Love your fellow as yourself: this is a great principle of the Torah.\" This is the central principle of the whole of *Chassidus*; in terms of *hisbonenus*, it is the great principle, of every contemplation, particular and general.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [955, 996],
+                  "words": [955, 1020],
                   "start": 375.04,
-                  "end": 390.78
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "It is the central principle of all of *Chassidus*: it applies to **every *Hitbonenut*-contemplation, whether general or particular**.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [997, 1020],
-                  "start": 390.93,
                   "end": 401.68
                 }
               ]
@@ -1749,8 +1542,8 @@
       ]
     },
     {
-      "title": "Two delusions: comprehension without bittul, bittul without comprehension",
-      "summary": "Whoever thinks he grasps creation but has no *bittul* has grasped nothing, and whoever imagines *bittul* without grasping how things come into being is fooling himself; the two rise and fall together. Real humility is not lowliness: one who knows no *Chassidus* cannot claim to be a simple believer.",
+      "title": "Two dreams: understanding without bittul, bittul without understanding",
+      "summary": "Whoever thinks he grasps creation and has no *bittul* has grasped nothing; whoever imagines he is *batel* without grasping it has a *dimyon shav*, a false imagination. In the third class this becomes the two sicknesses: those who say \"we are *ovdim*, you are *maskilim*\", and the big shots who know only points.",
       "passages": [
         {
           "lines": [
@@ -1758,14 +1551,22 @@
           ],
           "phrases": [
             {
-              "he": "(מה שאין כן מי שנדמה לא שתופס היטב ההתהוות ואין לו בחינת ביטול מצד המהווה, לא השיג כלום בוודאי בלי ספק",
-              "en": "(In contrast, if it appears to someone that he thoroughly grasps the aspect of creation, but he lacks the aspect of nullification to the Creator, then, without a doubt, it is a certainty that he has not grasped anything."
+              "he": "(מה שאין כן מי שנדמה לא שתופס היטב ההתהוות",
+              "en": "(Whereas one who imagines that he grasps well how things come into being,"
+            },
+            {
+              "he": "ואין לו בחינת ביטול מצד המהווה,",
+              "en": "and has no *bittul* from the side of what brings them into being,"
+            },
+            {
+              "he": "לא השיג כלום בוודאי בלי ספק",
+              "en": "has grasped nothing, certainly, without a doubt."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**In contrast, if it appears to someone that he thoroughly grasps the aspect of creation, but he lacks the aspect of nullification to the Creator, then, without a doubt, it is a certainty that he has not grasped anything.** If no *bittul* is seen in him, he understood nothing, and the text says so: certainly, without a doubt.",
+              "text": "If you don't see any *bittul* there, then he didn't understand nothing. And he says it: **certainly, without a doubt**.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1784,18 +1585,38 @@
           ],
           "phrases": [
             {
-              "he": "ומי שידמה לו בחינת הביטול בעצמו מצד הפלאת ערך המהווה כו' ולא השיג בכי טוב לאופן המתהוה כו', דמיון שווא הוא ואין לו בחינת ביטול כלל",
-              "en": "Likewise, if someone imagines that he possesses the aspect of nullification through the realization of the wondrousness of the Creator, but does not thoroughly comprehend the manner of how [everything] comes into being, it is a false imagination and he has no nullification whatsoever."
+              "he": "ומי שידמה לו בחינת הביטול בעצמו מצד הפלאת ערך המהווה כו'",
+              "en": "And one who imagines he has *bittul* himself from the wonder of what brings into being,"
             },
             {
-              "he": "כי הא בהא תליא לפי ערך דווקא מטעם הנזכר לעיל",
-              "en": "These two are interdependent and commensurate to each other, for the above-mentioned reason."
+              "he": "ולא השיג בכי טוב לאופן המתהוה כו',",
+              "en": "and has not grasped well how things come into being:"
+            },
+            {
+              "he": "דמיון שווא הוא",
+              "en": "it is a *dimyon shav* (a false imagination),"
+            },
+            {
+              "he": "ואין לו בחינת ביטול כלל",
+              "en": "and he has no *bittul* at all;"
+            },
+            {
+              "he": "כי הא בהא תליא",
+              "en": "for one depends on the other,"
+            },
+            {
+              "he": "לפי ערך דווקא",
+              "en": "commensurate, *davka*,"
+            },
+            {
+              "he": "מטעם הנזכר לעיל",
+              "en": "for the reason said above."
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "Likewise, **if someone imagines that he possesses the aspect of nullification through the realization of the wondrousness of the Creator**, thinking, \"I have *bittul* because I think about G-d's greatness,\" **but does not thoroughly comprehend the manner of how [everything] comes into being**, and does not know the matters of *seder hishtalshelus*, **it is a false imagination and he has no nullification whatsoever**. He is not humble at all.",
+              "text": "Somebody who thinks, \"Well, I'm just having *bittul* because I think of the greatness of G-d,\" and does not know the matters of the *seder hishtalshelus*: **it is a *dimyon shav***, just a false imagination. **He has no *bittul* at all**: he is not a humble guy.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1807,7 +1628,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**These two are interdependent and commensurate to each other**: one depends on the other, in exact proportion. As much as one understands in *Chassidus*, so humble is one; and as *batel* as one is, so much does one understand in *Chassidus*.",
+              "text": "**One depends on the other**, exactly according to the measure. \"It's commensurate. Is that what you call it? Commensurate, right?\" According to how much you understand in *Chassidus*, that is how humble you are; and according to how *batel* you are, that is how much you understand in *Chassidus*. In direct proportion to each other.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
@@ -1818,33 +1639,95 @@
               ]
             },
             {
-              "kind": "explanation",
-              "text": "The next class (part 3) returns to this. If a person feels he is nothing next to G-d but something next to someone else, he is not truly humble. Before the *Aibershter* he is nothing, really nothing; and whoever knows the greatness of the *Aibershter* knows that he is really nothing.",
+              "kind": "story",
+              "title": "Motel the humble and the sixth aliya",
+              "text": "The next class opens with a student who wants to clarify the humility. He tells a story. In a certain *shtibel* there was a man called Motel der Anav, Motel the humble, well known as a very humble person. And he always had the sixth *aliya*. One Shabbos they didn't give him the sixth *aliya*; they gave it to somebody else. After *shul* he threw a whole big tantrum: \"How can he give it to this person? You know that I get the sixth *aliya*!\" He went on and on and wouldn't stop. Finally they told him, \"What's going on here? We thought you're Motel the humble. Where's your *anivus* (humility)?\" He said, \"I am an *anav*. Next to G-d I'm nothing. But next to this *patz*?\"",
+              "outOfPlace": "Class 062 opens with this, a student's question on the humility point of the previous class, before it rereads these lines.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
-                  "words": [227, 384],
-                  "start": 90.76,
-                  "end": 168.78
+                  "words": [0, 210],
+                  "start": 0,
+                  "end": 79.4
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "crude"
+                ],
+                "reason": "The punchline uses a coarse Yiddish insult.",
+                "action": "replace",
+                "publishable": "The next class opens with a student who wants to clarify the humility. He tells a story. In a certain *shtibel* there was a man called Motel der Anav, Motel the humble, well known as a very humble person. And he always had the sixth *aliya*. One Shabbos they didn't give him the sixth *aliya*; they gave it to somebody else. After *shul* he threw a whole big tantrum: \"How can he give it to this person? You know that I get the sixth *aliya*!\" He went on and on and wouldn't stop. Finally they told him, \"What's going on here? We thought you're Motel the humble. Where's your *anivus* (humility)?\" He said, \"I am an *anav*. Next to G-d I'm nothing. But next to this fellow?\""
+              }
+            },
+            {
+              "kind": "keyPoint",
+              "text": "\"That's not really what I meant.\" If you feel that you are nothing compared to G-d but something compared to somebody, you are not a real *anav*. In front of the *Aibershter* you are nothing; not just nothing in front of the *Aibershter*: you are *mamash* nothing. If you know the greatness of the *Aibershter*, you know you are *mamash* nothing.\n\nNot only that: it is explained in *Tanya* that whatever happens is really from the *Aibershter*, *ein od milvado* (there is nothing besides Him). It is straight in *Tanya*. If they gave this other guy the sixth *aliya*, whatever the reason it happened, it was the *Aibershter* that gave it to him. Even if somebody curses you out, it is the *Aibershter* cursing you out; if you get upset about it, you are literally getting upset at the *Aibershter*. So it is basically a lack of understanding. But humbleness does not mean weakness: *Moshe Rabbeinu* was also very strong when somebody came up against him. That is a whole different story.",
+              "outOfPlace": "Class 062, answering the student's story before it rereads these lines.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [211, 410],
+                  "start": 83.6,
+                  "end": 189.15
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "As the chapter says, without the great sense of self that comes from *bina*, there is no humility: the one who grasps feels it is good, is happy with it, and knows it is making him bigger, and \"commensurate to the degree of his joy is the degree of his *bittul*.\"",
-              "join": true,
+              "kind": "digression",
+              "title": "The sixty-fourth brain",
+              "text": "You know how the brains open up into thirty-two and thirty-two, sixty-four altogether? It says that a *talmid chacham* should have no more than a sixty-fourth of *ga'ava* (pride); more than that, and he is called coarse. So why a sixty-fourth? You would think: nothing. But this is what it says, \"His heart was lifted up in the ways of G-d.\" This is the sixty-fourth brain. The sixty-fourth brain is the brain of *ga'ava*, total infinite *ga'ava*; and that is the brain which is basically the actual brain of humility, which proves that he is humble.",
+              "outOfPlace": "Class 062, before it rereads these lines; it leads into his reading of them.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
-                  "words": [695, 867],
+                  "words": [411, 519],
+                  "start": 189.44,
+                  "end": 244.08
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "Let the one who boasts boast",
+              "text": "Why so? Because it says one should not *shvitz* (boast): not the wise man in his wisdom, not the mighty man in his might, not the rich man in his riches. And they explain that a mighty man does not mean like the Terminator. Who is mighty? He who conquers his inclination. Who is rich? He who is happy with his lot. Who is wise? He who learns from every man. So even about that you are not allowed to be a *shvitzer*. No *ga'ava* is allowed.\n\nThen it says, \"but in this let the one who boasts boast.\" He calls him *mamash* a *shvitzer*, and that means the sixty-fourth brain. It doesn't say it's okay to *shvitz*: he says he should *shvitz*! In what? \"Understanding and knowing Me\": in knowing *Chassidus*.",
+              "outOfPlace": "Class 062, before it rereads these lines.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [520, 694],
+                  "start": 245.56,
+                  "end": 334.24
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "This is basically what chapter five says: if there is not a total megalomania on the one side, there is not the *anivus* on the other side. If he doesn't have the *hasaga* of *bina* and know it, there is nothing. Notice that he says he knows it, he feels it is good, he is happy from it, he knows it is making him bigger, and he is getting a bigger and bigger ego from the side of *bina*. And then he says, \"one depends on the other\": according to the measure of the joy is the measure of the *bittul*, *mamash*; according to the measure of the *hasaga*, \"I know the *seder hishtalshelus*\", so much is the *bittul*.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [695, 837],
                   "start": 334.62,
-                  "end": 415.64
+                  "end": 401.2
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "These are the two basic sicknesses: *bina* without *chachma*, or *chachma* without *bina*.",
+              "text": "And he goes even further: if there is one without the other, he calls it, what is it, *dimyonos shav*. \"It is a *dimyon shav*, and he has no *bittul* at all; for one depends on the other,\" commensurate.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [838, 887],
+                  "start": 401.65,
+                  "end": 430.07
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So these are basically the two sicknesses. *Kuntres HaHispaalus* (the Tract on Ecstasy) describes all kinds of sicknesses, but the two basic ones are *bina* without *chachma*, and *chachma* without *bina*.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
@@ -1855,9 +1738,8 @@
               ]
             },
             {
-              "kind": "explanation",
-              "text": "There are those who say \"we are the ones who serve (*ovdim*); you are just intellectuals (*maskilim*); the real thing is *avoda*, and you are into comprehension.\" But without comprehension there is no *bittul*, so their *bittul* and their *avoda* are nothing; as the chapters so far explain, without contemplation there is no *avoda*.",
-              "join": true,
+              "kind": "aside",
+              "text": "So there are two types of people. There are the people who say they are *ovdim* (those who serve G-d) and we are *maskilim* (people of intellect); and that is already the best of them, the most refined. \"You know, the real thing is *avoda*, and you're just into *hasagos*.\" The thing is, if there is no *hasaga* there is no *bittul*, so their *bittul* and their *avoda* is nothing. Not only that: as all the chapters up to here explain, if there is no *hisbonenus* there is no *avoda*. They are not *ovdim* at all.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
@@ -1865,11 +1747,19 @@
                   "start": 450.83,
                   "end": 490.46
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Dismisses a camp within Chassidus (those who stress avoda over study) as having no avoda and no bittul at all.",
+                "action": "replace",
+                "publishable": "Some say, \"The real thing is *avoda* (divine service), and you're just into *hasagos*.\" The thing is, if there is no *hasaga* there is no *bittul*; and, as all the chapters up to here explain, if there is no *hisbonenus* there is no *avoda*."
+              }
             },
             {
-              "kind": "explanation",
-              "text": "Someone says, \"I am *batel* to the *Rebbe*; why do I need to study this?\" Then he is neither *batel* to the *Rebbe* nor to the *Aibershter*; it is all false imaginings. The *Rebbe* is *Chassidus*: not wanting to know the particulars of *Chassidus* means not really wanting to know about the *Rebbe*.",
+              "kind": "aside",
+              "text": "And they don't have a *bittul*. Somebody says, \"Oh, I'm *batel* to the Rebbe. What do I need to study this stuff for?\" So you're not *batel* to the Rebbe, and you're not *batel* to the *Aibershter*. It is all *dimyonos shav*: you are having dreams. \"The Rebbe is *Chassidus*.\" \"Yeah, the Rebbe is *Chassidus*.\" If you don't want to know the *pratim* of *Chassidus*, it means you don't really want to know about the Rebbe.",
               "join": true,
               "audio": [
                 {
@@ -1878,47 +1768,100 @@
                   "start": 490.76,
                   "end": 523.83
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Mocks those who claim bittul to the Rebbe instead of study as dreamers.",
+                "action": "replace",
+                "publishable": "Someone may say, \"I'm *batel* to the Rebbe; what do I need to study this for?\" But the Rebbe is *Chassidus*. Not wanting to know the *pratim* of *Chassidus* means not really wanting to know the Rebbe, and without them there is no *bittul* to the Rebbe or to the *Aibershter*."
+              }
             },
             {
               "kind": "explanation",
-              "text": "The verse says: \"Let not the wise man glory in his wisdom… but let him who glories glory in this: understanding and knowing Me, that I am G-d who does kindness, justice and righteousness in the earth, for in these I delight.\" It does not say this is permitted; it says one should glory in it, like a *mitzva*.",
+              "text": "Here is the actual verse: \"Thus says G-d: Let not the wise man boast of his wisdom, let not the mighty man boast of his might, let not the rich man boast of his riches; but in this let the one who boasts boast: understanding and knowing Me, that I am *Havaya*, who does kindness, justice and righteousness in the earth, for in these I delight, says G-d.\" That's what I wanted: \"in these I delight\". These are the people I have delight in; no, \"in these\" means those people.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
-                  "words": [1132, 1308],
+                  "words": [1132, 1198],
                   "start": 524.32,
-                  "end": 617.86
+                  "end": 559.38
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "To know Him as G-d all the way up, who does justice and righteousness all the way down, and \"in these I delight\": these things down here are what He wanted up there. The will in the Essence extends all the way down. This describes the whole *seder hishtalshelus*: to know it, not mechanically, but knowing that it is truly the *Aibershter* and what He wanted.",
-              "join": true,
+              "text": "It goes even further: righteousness and justice are basically also the matter of *halacha*. What would that have to do with it? The *ki* (\"that\", \"for\") has four meanings, and here it is a continuation: understand and know Me, that I am *Havaya* all the way up, who does the righteousness and justice in the earth all the way down. And \"for in these I delight\" is also a continuation: these things down here are what I wanted up there. The *ratzon* (will) in the *Atzmus* (the Essence) spells out all the way down, \"the end of the deed is first in thought\". It describes the whole *seder hishtalshelus*. To know it, but not just to know the *seder hishtalshelus* in a mechanistic way: to know that it is *mamash* the *Aibershter*, that this is what He wanted.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
-                  "words": [1309, 1516],
-                  "start": 620,
-                  "end": 711.82
+                  "words": [1199, 1398],
+                  "start": 560.16,
+                  "end": 656.47
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "On the other side are those with *bina* and no *bittul*. Their lack of *bittul* shows that they do not understand what they study, so they have no *bina* either. They are the \"big shots\" of *Chassidus* who know a great many separate points but cannot put them together.",
+              "text": "And notice what he says: \"in this let the one who boasts boast.\" He doesn't say it's okay; he says you should do it. The other things are not okay, and this he says you should do, like a *mitzva*. You are not just advised, \"Oh, well, if you want to, it's okay.\" No: that is what you should do.",
               "audio": [
                 {
                   "lecture": "062 Ch5 part3.mp3",
-                  "words": [1576, 1689],
-                  "start": 736.24,
+                  "words": [1399, 1474],
+                  "start": 656.47,
+                  "end": 688.17
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "So the biggest criticism is: \"Eh, what do you need to study this stuff? You need to be *batel* to the Rebbe, you have to have *hiskashrus* (connection to the Rebbe).\" The answer to that is: if you don't have the *hasaga* of *bina*, you don't have the *bittul*. You absolutely don't have the *bittul*.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [1475, 1551],
+                  "start": 688.98,
+                  "end": 728.35
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Part of his polemic against a camp within Chassidus that prefers hiskashrus to study.",
+                "action": "replace",
+                "publishable": "One may hear: \"What do you need to study this for? You need to be *batel* to the Rebbe, you need *hiskashrus* (connection to the Rebbe).\" The answer is that without the *hasaga* of *bina* there is no *bittul*."
+              }
+            },
+            {
+              "kind": "aside",
+              "text": "On the other side there are the people who say, \"Why do you have to study that? Now you have to study *Ayin Beis*.\" Those are the people who have *bina* without *bittul*. They don't really have a *bittul*; and like he says, not having the *bittul* shows that they don't understand what they are studying, so they don't have the *bina* either. These are basically the guys who are the big shots of *Chassidus*, who know *Chassidus*. These people are *Olam HaNekudim*, the world of points. They only know points, points; they can't put them together. They know fantastic amounts of points. By him it's all points, points.",
+              "audio": [
+                {
+                  "lecture": "062 Ch5 part3.mp3",
+                  "words": [1552, 1689],
+                  "start": 728.38,
                   "end": 784.65
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Ridicules the learned \"big shots of Chassidus\" as a world of disconnected points.",
+                "action": "replace",
+                "publishable": "There is also the opposite mistake: *bina* without *bittul*. One who has no *bittul* shows that he does not understand what he studies, so he does not have the *bina* either. He knows a great many separate points and cannot put them together; it is like *Olam HaNekudim*, the world of points."
+              }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Many fool themselves: the higher, the more real; and the face-kvetchers",
+      "summary": "Many who were raised on *Chassidus* fool themselves about humility. The fourth class takes the two mistakes apart: for those with only *bina*, the higher worlds are abstract, when the higher you go the more real it gets and the greater the *hafla'a*; those with only *bittul* are not sure who is bigger, they or the *Aibershter*.",
+      "passages": [
         {
           "lines": [
             "6poehxhz",
@@ -1926,76 +1869,540 @@
           ],
           "phrases": [
             {
-              "he": "וכידוע לכל טועמי טעם בהתבוננות באמת ואינם מטעים את עצמו כלל",
-              "en": "This is known to all who have tasted true *Hitbonenut*, and do not at all delude themselves."
+              "he": "וכידוע לכל טועמי טעם בהתבוננות באמת",
+              "en": "as is known to all who have tasted the taste of contemplation in truth"
             },
             {
-              "he": "וכאשר יובן כל זה לרגילים בדברי חסידות מנעוריהם כו' ורבים מאד יטעו בעצמם בכל זה בכמה אופנים שונים וכו'):",
-              "en": "This is likewise understood by those who are accustomed to the teachings of *Chassidut* from their youth. However, a great many people delude themselves in all this, in many different ways etc.)"
+              "he": "ואינם מטעים את עצמו כלל",
+              "en": "and do not fool themselves at all;"
+            },
+            {
+              "he": "וכאשר יובן כל זה לרגילים בדברי חסידות מנעוריהם כו'",
+              "en": "and as all this is understood by those used to the words of *Chassidus* from their youth;"
+            },
+            {
+              "he": "ורבים מאד יטעו בעצמם בכל זה",
+              "en": "and very many make a mistake in themselves in all this,"
+            },
+            {
+              "he": "בכמה אופנים שונים וכו'):",
+              "en": "in many different ways.)"
             }
           ],
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**This is known to all who have tasted true *Hitbonenut*, and do not at all delude themselves.**",
+              "text": "**Very many make a mistake in themselves in all this**: they think they know *Chassidus*, and they think they are humble, **in many different ways**.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [1206, 1233],
+                  "words": [1206, 1292],
                   "start": 477.78,
-                  "end": 488.96
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "It **is likewise understood by those who are accustomed to the teachings of *Chassidut* from their youth. However, a great many people delude themselves in all this, in many different ways**: they think they know *Chassidus*, and they think they are humble.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [1234, 1292],
-                  "start": 489.06,
                   "end": 512.32
                 }
               ]
             },
             {
-              "kind": "explanation",
-              "text": "But humility is not lowliness. *Moshe Rabbeinu* was the humblest man there was, yet in various places he acted like a king, and when they did not listen to him he became angry. What kind of humility is that? He was comparing himself with the *Aibershter*: not that he did not know his own level, just the opposite.",
+              "kind": "keyPoint",
+              "text": "Humility is not what they think, *shiflus*. *Moshe Rabbeinu*, it explains, was the most humble person there was, and yet you see in various places he acted like a king; if they didn't listen to him, he got mad. What kind of humility is this? Because he was comparing himself with the *Aibershter*; not that he didn't know his own level. Just the opposite.\n\nWhat he says here is just the opposite of what they think. If you are not a big shot in *Chassidus*, you are not a simple guy. You can't call yourself an idiot like \"the simpleton believes every word\", \"I'm just a little nothing who just believes in G-d.\" He says, \"No, you're not. You don't know no *Chassidus*, so how can you be a little nothing who just believes in G-d?\" Because one depends on the other.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [1293, 1385],
+                  "words": [1293, 1453],
                   "start": 512.85,
-                  "end": 546.38
-                }
-              ]
-            },
-            {
-              "kind": "explanation",
-              "text": "What the text says here is the opposite of the common view: if you are not a big shot in *Chassidus*, you are not a simple person. You cannot call yourself a simpleton who \"just believes in G-d\" when you know no *Chassidus*, because the two depend on each other.",
-              "join": true,
-              "audio": [
-                {
-                  "lecture": "061 Ch5 part2.mp3",
-                  "words": [1386, 1453],
-                  "start": 546.45,
                   "end": 566.92
                 }
               ]
             },
             {
               "kind": "explanation",
-              "text": "This also connects with later matters: it is the joy of *bina* and the *bittul* of *chachma*, which belongs with the chapters on the union of *Abba*, a constant union: \"two companions who never part\". There cannot be one without the other: without *bina* there is no *chachma*, and without *chachma* no *bina*. One cannot have only the understanding of *bina*, or only the *bittul* of *chachma*, as some say: \"just blank out your mind.\" That is *chachma*? There is no *chachma* without *bina*.",
+              "text": "By the way, this also fits with the matters later on: this is basically the *simcha* of *bina* and the *bittul* of *chachma*, and it belongs with the chapters on the *yichud* of *Abba* (*chachma*) and *Ima* (*bina*), which is constant. \"Two friends that never leave each other\": you can't have one without the other. If you don't have *bina* you don't have *chachma*; if you don't have *chachma* you don't have *bina*. You can't have just the understanding into it, and you can't have just a *bittul* of *chachma*.",
               "audio": [
                 {
                   "lecture": "061 Ch5 part2.mp3",
-                  "words": [1454, 1639],
+                  "words": [1454, 1587],
                   "start": 572.64,
-                  "end": 658.93
+                  "end": 613.93
                 }
               ]
+            },
+            {
+              "kind": "aside",
+              "text": "Like what these idiots are saying: \"Oh, just blank out your mind.\" And that's *chachma*? No, there can't be *chachma*, cause there ain't no *chachma* without *bina*. One depends on the other.",
+              "audio": [
+                {
+                  "lecture": "061 Ch5 part2.mp3",
+                  "words": [1588, 1625],
+                  "start": 613.93,
+                  "end": 629.65
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups",
+                  "other-religions"
+                ],
+                "reason": "Calls those who teach emptying the mind (meditation practices) idiots.",
+                "action": "replace",
+                "publishable": "Some say, \"Just blank out your mind.\" Is that *chachma*? There can't be *chachma* that way, because there is no *chachma* without *bina*. One depends on the other."
+              }
+            },
+            {
+              "kind": "digression",
+              "title": "Ice cream for the Aibershter",
+              "text": "The whole thing is that the original *ratzon* of the *Atzmus* is *davka* for the physical. Not for *Atzilus*, not for any of the worlds: *davka* for the Jew putting on *tefillin*, which means a physical ice cream for the *Aibershter*. As a matter of fact, it's not just *tefillin*: the *Aibershter* *mamash* wants to eat an ice cream, and that is why He gave us the laws of *kashrus*, so He'll be able to taste an ice cream. \"And make a *bracha* on it.\" \"So what did He have to come up with an ice cream for?\" \"'Cause He wanted ice cream. He likes ice cream.\" No: that there should be a physical *taanug* (delight) that you make the *bracha* on.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49). The tape opens mid-thought, picking up from 062 the will in the *Atzmus* for the physical (the *sof maaseh* of 062).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [0, 150],
+                  "start": 4.46,
+                  "end": 52.44
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Strong anthropomorphic humor: G-d \"mamash wants to eat an ice cream\" and gave the laws of kashrus so He can taste one.",
+                "action": "replace",
+                "publishable": "The whole thing is that the original *ratzon* of the *Atzmus* is *davka* for the physical. Not for *Atzilus*, not for any of the worlds: *davka* for the Jew putting on *tefillin*. And it's not just *tefillin*: the *Aibershter* wants a physical delight, and that is why He gave us the laws of *kashrus* and a *bracha* to make: that there should be a physical *taanug* (delight) that you make the *bracha* on."
+              }
+            },
+            {
+              "kind": "digression",
+              "title": "Chazir and ice cream",
+              "text": "If you drink water and you aren't really thirsty, you don't make a *bracha*, because water has no taste: if you drink it to get down an aspirin, no *bracha*. *Hanaa* means a physical pleasure, like eating ice cream; that you do have to make a *bracha* on, because you are giving the *Aibershter* a physical pleasure. He gets a terrible pain out of having to eat a piece of *chazir*, and a great pleasure out of eating the ice cream.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [151, 307],
+                  "start": 53.34,
+                  "end": 111.41
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Continues the anthropomorphic humor: G-d gets a terrible pain from eating chazir and great pleasure from eating the ice cream.",
+                "action": "replace",
+                "publishable": "If you drink water and you aren't really thirsty, you don't make a *bracha*, because water has no taste: if you drink it to get down an aspirin, no *bracha*. *Hanaa* means a physical pleasure, like eating ice cream; that you do have to make a *bracha* on, because through it the *Aibershter* has pleasure from the physical. What is forbidden, like *chazir*, is against His will; the kosher ice cream with its *bracha* is His great pleasure.",
+                "publishableTitle": "Water, ice cream and a bracha"
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "So this is the sickness of the people who have the *bina*, meaning all the particular points, without the *chachma* of seeing what is past it, how it all gets put together, so that you see there is something beyond the whole thing. They say, \"What do you mean? We see that there's something beyond this whole thing. Our whole method is that it's all abstract.\"",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [308, 383],
+                  "start": 111.81,
+                  "end": 141.44
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The bachur in the fourth-year class",
+              "text": "\"I'll tell you what happened once.\" A *bachur* came over to Rabbi Markel and told him that *meshalim*, physicalizing the concepts, is only for the first-year class; but he is in the fourth-year class, so that's not for him.\n\nBut remember what we learned in chapter four: you start with the orbits and see how it goes up to *Malchus* of *Asiya*, and from this he gets a fantastic sense of *bittul*. By them, actually, there is no sense of *bittul*. Why? Because when you go up to *Malchus* of *Asiya*, by them it is less than what the orbits are.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [384, 532],
+                  "start": 141.41,
+                  "end": 195.83
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "What the sun is worth",
+              "text": "Take an orbit like the sun. What's the sun? What kind of energy? If you could get the energy of the sun, you could be a zillionaire. What do the Arabs have? The Arabs have energy: that's the whole thing they have, the oil, and the oil is energy. And some of these people are totally bugged out: look how much money this person has. Tell them, \"I can give you ten million dollars,\" and they'll go out of their *keilim*. So the sun is worth more than ten million dollars.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [533, 651],
+                  "start": 195.86,
+                  "end": 234.72
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "\"The Arabs\" as a nation whose whole wealth is oil, beside a remark about people \"bugged out\" over money.",
+                "action": "replace",
+                "publishable": "Take an orbit like the sun. What's the sun? What kind of energy? If you could get the energy of the sun, you could be a zillionaire. Whole countries are rich from oil, and oil is energy. Tell people, \"I can give you ten million dollars,\" and they'll go out of their *keilim*. So the sun is worth more than ten million dollars."
+              }
+            },
+            {
+              "kind": "digression",
+              "title": "Buying sunlight at the supermarket",
+              "text": "Everything that goes on: the dams they build, you know how much money they get off a dam? Millions of dollars, and that's just from a little bit of sunlight, because the sunlight evaporates the sea water and brings it up the hill. The wind, too: a hurricane caused ten million dollars of damage, and you can harness the wind for money, with electrical windmills. As he explains later in the book, all the *parnasa* (livelihood) we have is from the climate. We were talking about the price of oranges; and not just oranges: everything in the supermarket came from the sun. You are buying transformed sunlight your body can use for energy; that's all you're paying for. And the sunlight that gets to us is just one teeny little ray of the sun out of the whole 360 degrees.",
+              "join": true,
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [652, 913],
+                  "start": 237.3,
+                  "end": 333.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So this is the *hisbonenus*: look how great the sun is. And the sun is only like a mustard seed in the universe; not even, less than a mustard seed, a tiny speck. Take a mustard seed and put it on your property: what the sun is to even this galaxy is probably less than that. Even the finite numbers we are talking about boggle the human mind; and not the numbers of the molecules, just the number of the stars.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [914, 1040],
+                  "start": 334.78,
+                  "end": 389.61
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And all of this comes out from the *Shemarei Ofanim*. It is not even actually coming out: it is induced by them, like a magnet; it is not their actual power.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1041, 1109],
+                  "start": 390.27,
+                  "end": 417.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And the *Shemarei Ofanim* are just the *shemarim*: their excretion, from their sewer system. And not even the whole sewer system: a speck of their sewer system brings our whole universe into being.",
+              "join": true,
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1110, 1164],
+                  "start": 418.17,
+                  "end": 440.32
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "crude"
+                ],
+                "reason": "Renders shemarim, the dregs of the Ofanim, as excretion from their sewer system.",
+                "action": "replace",
+                "publishable": "And the *Shemarei Ofanim* are just the *shemarim*, the dregs; and not even all of them: a speck of their dregs brings our whole universe into being."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "And that is only the *heichalos* of *Malchus* of *Malchus* of *Asiya*, not even *Malchus* of *Malchus* of *Asiya* itself, with zillions of angels. You can count the angels in a troop, but \"His troops are without number\"; and all of that is in one *heichal*, and a troop in a *heichal* is again not even a mustard seed, and the *heichal* is one of many. The *heichalos* are the total externality of *Malchus* of *Malchus* of *Asiya*, and that is not even *Malchus* of *Asiya* yet.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1165, 1295],
+                  "start": 441.62,
+                  "end": 490.28
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So are we talking about an abstract thing? Not an abstract thing. We are talking about the power of the sun coming from there. It is not abstract.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1296, 1329],
+                  "start": 491.1,
+                  "end": 509.06
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The emperor who wanted to see the lion",
+              "text": "Now that we analyze it like that: even an angel. There is a story in the *Gemara*. The emperor, \"I don't remember which emperor\", saw the verse \"A lion roars, who will not fear?\" He called the rabbis: \"Your Torah is full of nonsense. I'm not scared of a lion's roar. Who's scared of a lion's roar?\" They used to have circuses and throw people to the lions, so he'd heard a lion's roar. They told him it is not talking about this kind of lion; it is talking about the upper lion. \"I want to see the upper lion. Tell him to come here.\" \"What are you talking about? If he comes here, the whole world will be destroyed.\" \"Either you tell him to come here, or I'll make decrees against the Jews.\" \"Okay, but we warned you.\"\n\nThey told the lion to come, and the lion took one step. Everything shook; an earthquake, things falling down, and the emperor was struck speechless. The lion took another step, closer, and from those two steps almost the whole city was destroyed. \"No, no, tell him to go back!\" And this is just an angel.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1330, 1659],
+                  "start": 509.92,
+                  "end": 630.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And he thinks *Malchus* of *Atzilus* is some kind of an abstract thing, an abstract concept. Rabbi Markel told him: no, it is more physical than we are. That doesn't mean it is *gashmi* (material). It means as far as actual energy goes.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49). Rabbi Markel is answering the *bachur* of the story of the fourth-year class.",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1660, 1729],
+                  "start": 633.08,
+                  "end": 671.56
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The atom and the telephone",
+              "text": "We know what we are made from. Any scientist will tell you that an atom is an *or* (light) and a *kli* (vessel): there is a bunch of energy, and something that seems to hold it together. And an atomic explosion does not even let the light out of the vessel. It is not the light that is inside the pieces; it is just the energy that holds the atom together, and not even all of it, a tiny bit, the nucleus; and not the power inside the nucleus, just the power holding its pieces together. And that is an amazing power. The telephone I'm holding: if I knew how to take the vessels off, to open up the *kli*, just the power holding its atoms together could blow up the whole universe. So basically we are made from energy.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1730, 1939],
+                  "start": 672.16,
+                  "end": 758.7
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Now, when it says *Or Ein Sof* (the infinite light), \"Oh, it's a *mashal*.\" What does that mean, a *mashal*? The same as the radiance of the sun, so the radiance of the *Aibershter*, but not an actual light. Or *chachma*: *chachma* does not mean a light, it is like your *chachma* lighting up a concept. Or *chesed*: \"the world is built on *chesed*\". That is the *mahus*, as against the *metzius* we were talking about, and that is also the matter of chapter five: *bina* understands into the *metzius*, and *chachma* gets the *bittul* from an insight into the *mahus*. That is basically what chapter five is about: the *hasaga* is into the *metzius* of the thing, and the *hafla'a* is into its *mahus*.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [1940, 2097],
+                  "start": 758.76,
+                  "end": 824.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So what is the *hafla'a*? Wait a minute: look at even *Malchus* of *Malchus* of *Asiya*. You know how many millions of dollars, if you could get *Malchus* of *Malchus* of *Asiya* to be your *gvir* (rich patron)? You know how much he's got in the bank? What do you mean, in the bank? \"Mine is the silver and Mine is the gold.\" \"Oh no, that means *chesed* and *gevura*.\" No, that means money, man. If the *Aibershter* wanted, right now He could give us a billion dollars.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2098, 2188],
+                  "start": 824.32,
+                  "end": 863.15
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "A nickel from Bill Gates",
+              "text": "And not only that: to say that the *Aibershter* can give us a billion dollars is an insult. It's like saying, you need a nickel, go to Bill Gates, he could give you a nickel. What do you mean Bill Gates could give you a nickel? You'll go to Bill Gates for a nickel? It would *mamash* be an insult to him. \"What, are you insulting me? You're taking up my time with nonsense?\"",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2189, 2280],
+                  "start": 863.8,
+                  "end": 892.15
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "They see the hidden world as just some kind of an abstract thing. It is not like that: up there there is more *mahus*, not less. The whole energy of the world, and the whole value, whatever has value here, like gold, and the stock market that works on values: upstairs, as in the first *hisbonenus* we were talking about, from this earth up to *Malchus* of *Malchus* of *Asiya*, there is more money.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2310, 2438],
+                  "start": 900.81,
+                  "end": 960.18
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "More streets up there, and dragons",
+              "text": "And there are more streets. \"More what?\" \"More streets.\" \"Streets?\" \"Streets, like you live on a street.\" Where did the street come from? From *Malchus* of *Malchus* of *Asiya*; and they have more streets up there. Not all the streets came down, the same as not all the light came out of the sun. Up there there are more streets, more houses, more people, more bodies, because all the bodies came from there, and more animals: all kinds of animals up there that we don't even have.\n\nBesides the actual world, all the fantasy worlds have to be up there, like the Star Wars world: any world we have in any fantasy is coming from somewhere. Up there it exists as an actual world: not that it came into existence, but if *Malchus* of *Malchus* of *Asiya* wanted to, it could make it, with all those creatures. As a matter of fact, all those creatures exist on the next level up from the physical plane, the demon worlds, the world of the imagination, the dream world. In the dream world there are dragons. We don't have dragons; over there they do.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2439, 2714],
+                  "start": 960.49,
+                  "end": 1077.02
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So they have it totally backwards, totally upside down. Why? Because they don't have the proper *hasaga* into the *meshalim*. The higher you go, the more real it gets, not the opposite. Isn't that the first thing the *Rambam* says: He is the real reality, the real *metzius*, and all *metzius* comes from His *metzius*. He is the real reality, and this world is just a shadow; not even a shadow, a shadow of a shadow. The closer you get to His reality, the more real it is. Not the less real: the more real, and there is more stuff up there. \"Yeah, but you're making it physical.\" No: it does not mean it is physical up there. But it is not that there is less up there; there is more, because the whole of down here is coming from up there.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2715, 2908],
+                  "start": 1077.59,
+                  "end": 1149
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "When you say *chachma*: \"My thoughts are not your thoughts.\" *Bina* is like *machshava* (thought), *dibur* (speech), *maaseh* (action), and he says, \"My thoughts are not your thoughts.\" When you think something, you can't make it exist. My thought can actually bring a sun into being. So in the thought there has to be more energy than there is in the sun: actual, physical energy. And not only physical energy: such a higher energy that you can't even call it physical anymore, like the whole matter in chapter ten, that it is so high you can't even call it spiritual anymore, or even *chachma*.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [2909, 3042],
+                  "start": 1150.14,
+                  "end": 1206.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So they have it backwards. Why? Because they don't have the *hasaga* of *bina*, so they don't have the sight of *chachma*, and that is why they don't have the *hafla'a*. Why don't they have the *hafla'a*? Because by them, as you go up it gets less: there is nothing up there.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3043, 3102],
+                  "start": 1207.08,
+                  "end": 1231.75
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The Grand Canyon and a herd of elephants",
+              "text": "If you learn it properly: you know what a *hafla'a* is? When somebody goes to the Grand Canyon, he gets a *hafla'a*. Or when somebody sees Og king of Bashan: a *hafla'a* and a *bittul*. Or when somebody is standing there and a herd of elephants runs through the town. That is the matter of *hafla'a*.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3103, 3192],
+                  "start": 1231.75,
+                  "end": 1266.29
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "They don't have *hafla'a* because as they go up they didn't do the proper *hisbonenus*. They didn't make the analysis: if the orbits are so big, and the orbits only come out of the *Sarei Ofanim*, imagine how big the *Sarei Ofanim* are. The *Midrash* basically says it explicitly: as you go up, it is all the more so. More so, not less so; not just some far-off abstract thing up there. That is the thing: the more he delves, the more amazingly far from him it gets. Wow, what can it be already? How much money does this guy have? \"Owner of heaven and earth.\" How much energy can you put up there?",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49), quoting line 38.",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3193, 3345],
+                  "start": 1266.9,
+                  "end": 1332.28
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Two raging bulls",
+              "text": "Who was it that was going to think of the greatness and the power of the *Aibershter*? So he thought of a raging bull running with all this power, knocking things down. \"No, that can't be enough for the *Aibershter*.\" So: two raging bulls. And the people who laugh at this are basically doing exactly the same thing.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3346, 3441],
+                  "start": 1332.32,
+                  "end": 1371.78
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "That is what he says, that they have *dimyonos shav*. And then there is the other side: we were just talking about the big *maskilim*; now the guys who have the *bittul* and don't have the *hasagos*. The people who kvetch their faces, the face-kvetchers. Some of these guys, you can *mamash* look inside their brain a little bit and see what they think of themselves: they're not really sure who's bigger, them or the *Aibershter*. Because after all, the *Aibershter* is an *Aibershter*, but they have a *yetzer hara* which they conquered so good. And basically the whole thing is *dimyonos shav*.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3442, 3592],
+                  "start": 1372.25,
+                  "end": 1431.24
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Mocks a type within the Chassidic world (\"face-kvetchers\") as unsure whether they or G-d is bigger.",
+                "action": "replace",
+                "publishable": "That is what he says, that both mistakes are *dimyonos shav*. And there is the other side: those who have the *bittul* and not the *hasagos*. Without the *hasaga*, such a one can come to think a great deal of himself, of how well he has conquered his *yetzer hara*; and the whole thing is *dimyonos shav*."
+              }
+            },
+            {
+              "kind": "mashal",
+              "title": "The satiated lion",
+              "text": "Even the way they conquered the *yetzer hara*: what they basically did is feed the *yetzer hara* so good that he doesn't bother them. What they have is a satiated lion. If you have a lion and you keep feeding him a whole bunch of stuff, he'll leave you alone.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3593, 3657],
+                  "start": 1431.8,
+                  "end": 1458.96
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Continues the mockery of the same type: their victory over the yetzer hara is only a fed lion.",
+                "action": "replace",
+                "publishable": "There is a way of conquering the *yetzer hara* that only feeds him so well that he doesn't bother you: a satiated lion. If you keep feeding a lion a whole bunch of stuff, he'll leave you alone."
+              }
+            },
+            {
+              "kind": "story",
+              "title": "The Alter Rebbe's beinoni and Yekusiel Liepler",
+              "text": "These people are at least *beinonim*; at least that is how they feel about themselves. If they're making a mistake, actually they're *tzaddikim*; and if they're making a mistake, maybe they're not *tzaddikim*, maybe a *beinoni* who studies all the time. Like Rava, who thought he was a *beinoni*: that kind of *beinoni*. Or a *beinoni* like the *Alter Rebbe*.\n\nThe *Alter Rebbe* said, \"I'm a *beinoni*.\" So Yekusiel Liepler told him, \"What do you mean? I know that I'm a *beinoni*. If you're a *beinoni*, that would make me a total nothing; and I know I am a *beinoni*, so how could you say that?\" The *Alter Rebbe* told him there are different levels of *beinonim*. So they are a *beinoni* at least like the *Alter Rebbe*, not like Yekusiel.",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49).",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3658, 3865],
+                  "start": 1459.06,
+                  "end": 1536.76
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "The story is told to mock the same type as rating themselves beinonim on the Alter Rebbe's level.",
+                "action": "replace",
+                "publishable": "The *Alter Rebbe* said, \"I'm a *beinoni*.\" So Yekusiel Liepler told him, \"What do you mean? I know that I'm a *beinoni*. If you're a *beinoni*, that would make me a total nothing; and I know I am a *beinoni*, so how could you say that?\" The *Alter Rebbe* told him there are different levels of *beinonim*. Like Rava, who thought he was a *beinoni*: that kind of *beinoni*."
+              }
+            },
+            {
+              "kind": "aside",
+              "text": "And their criticism of us is that we are *maskilim*. That's one criticism. The other: they're *ovdim*, and we are *maskilim*; and not only *maskilim*, but arrogant people involved in a *razi li* thing, \"my secret is mine\". That's all we want, *razi li*, *razi li*, to get the false sense of being kabbalists, almost like kosher Jewish hermetic kabbalists. We want to do magic, we're just concerned with powers, or whatever kind of crazy thing they want to come up with. (The tape ends here.)",
+              "outOfPlace": "Class 063 reads no line: a free discussion of the chapter's two mistakes (lines 45-49); the end of the tape.",
+              "audio": [
+                {
+                  "lecture": "063 Ch5 part4.mp3",
+                  "words": [3866, 4005],
+                  "start": 1538.15,
+                  "end": 1616.96
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Part of the polemic between camps; their charges against \"us\" are dismissed as crazy.",
+                "action": "replace",
+                "publishable": "The criticism one hears of those who study is that they are *maskilim*, not *ovdim*; that they are after *razi li*, \"my secret is mine\", a false sense of being kabbalists, of powers and magic."
+              }
             }
           ]
         }
@@ -2004,85 +2411,143 @@
   ],
   "reviewQuestions": [
     {
-      "question": "What are the two matters included in every contemplation of creation?",
+      "question": "What are the two sides of every contemplation, and which one can be explained until \"it lies real good in the brain\"?",
       "lines": [
-        "nhwh7v5l"
+        "pkznyhp2",
+        "gtbbdu52",
+        "7l225e54",
+        "vgbyyblu",
+        "nhwh7v5l",
+        "pwrbb6gc"
       ]
     },
     {
-      "question": "How is the flash of *chachma*, though concealed, more certain than an explanation? What does the airplane show?",
+      "question": "How can a flash that gives no particulars be a stronger conviction than an explanation? Use the airplane.",
       "lines": [
         "lgkhj5jr"
       ]
     },
     {
-      "question": "What emotion comes from the \"hearing\" of *bina*, and what from the \"sight\" of *chachma*? How does each change as one goes deeper?",
+      "question": "What is the *hispaalus* of the sight of *chachma*, and what is the *hispaalus* of the hearing of *bina*? Why are they opposites?",
       "lines": [
-        "ss7vqfmm"
+        "spyrpezj",
+        "5a7vfmsj",
+        "56p3cwfd",
+        "q55y6wh5"
       ]
     },
     {
-      "question": "What does *muchrach b'hasaga* mean in the contemplation of the orbits?",
+      "question": "Why is true humility not \"I'm not so great as Einstein\"? What does the man who saw Og say at the circus?",
       "lines": [
+        "iujm3ylb",
+        "yk6kcz2a"
+      ]
+    },
+    {
+      "question": "What does *muchrach b'hasaga* mean, in the example of the orbits and *Malchus* of *Malchus* of *Asiya*?",
+      "lines": [
+        "4wl2vjml",
         "r6gsf4qi"
       ]
     },
     {
-      "question": "Why is the humility of \"I am not as tall as someone else\" not true humility? What does *Og* king of Bashan show?",
+      "question": "Why is the one who says \"I'm a simple guy who just believes, I don't need the understanding\" not humble, and why is the one with understanding and no *bittul* not understanding?",
       "lines": [
-        "bpqt4mzz"
+        "2o5mbc3x",
+        "byd4h6cl",
+        "3l576k5y",
+        "5jllzwqj"
       ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "060 Ch5 part1.mp3",
+      "words": [3938, 3947],
+      "reason": "logistics",
+      "note": "\"I need to flip the tape.\""
     },
     {
-      "question": "Why does someone who claims *bittul* without comprehension have no *bittul* at all?",
-      "lines": [
-        "3l576k5y"
-      ]
+      "lecture": "061 Ch5 part2.mp3",
+      "words": [0, 8],
+      "reason": "reading",
+      "note": "The new side opens by rereading the end of line 36."
+    },
+    {
+      "lecture": "061 Ch5 part2.mp3",
+      "words": [1626, 1639],
+      "reason": "logistics",
+      "note": "Goodbyes at the end of the call."
+    },
+    {
+      "lecture": "063 Ch5 part4.mp3",
+      "words": [2281, 2309],
+      "reason": "unclear",
+      "note": "\"Wait, hold on... everything what's in the Earth is there's an ocean\": a broken sentence, meaning unclear."
     }
   ],
   "notes": [
     {
-      "text": "the translation's footnote says the 'special pamphlet' is chapter 10 on; in class he says the explanation starts 'in chapters 7 through the end of the book'. Neither number is repeated in the explanation.",
-      "lines": [
-        "yz4pfxd3",
-        "pdfwxinp"
-      ]
-    },
-    {
-      "text": "in class the line is read יוברק מבורק בזכירה בעלמא במוחי (printed: יוברק כמו ברק בסקירה בעלמא במוחו). The explanation follows his point (a flash of chachma) without building on the variant words.",
-      "lines": [
-        "u24q357u"
-      ]
-    },
-    {
-      "text": "in class the line is read דאינון מבינים (printed: דאימה מקננא), and he says the angels of Beriya have understanding in bina, 'which is the sky above them'. That phrase is unclear and is left out.",
+      "text": "In class line 26 is heard as \"דאינון מבינים\" and explained as the angels of Beriya having an understanding in bina, \"the sky above them\"; the text has דאימה מקננא (where Ima nests). The phrase renders the text; the block keeps what he said.",
       "lines": [
         "ohhmqokm"
       ]
     },
     {
-      "text": "in class the line is read ערך חסד ('the relationship of Chesed') where the text has אור חסד ('the light of Chesed').",
+      "text": "Line 32 is read in class as ערך חסד (the relation of chesed) where the text has אור חסד; the phrase follows the text.",
       "lines": [
-        "2uwwbnxe",
         "d4rv5z6u"
       ]
     },
     {
-      "text": "tape 062 (part 3) opens by clarifying the humility point, starting from a student's story (מאטל דער ענו) and Rabbi Markel's answer; only the answer is used, cited at 062 1:30, which is before 062's aligned lines and may be flagged as outside coverage. Left out: his explanation of 'the 64th brain' and a talmid chacham's 'one sixty-fourth of pride' (062 3:09–5:31), which is hard to follow in the transcript.",
+      "text": "In 060 the transcript has \"לשמאל האופנים\" for what is surely the Shemarei (or Sarei) Ofanim of chapter 4; 063 says \"שמרי אופנים\" and later \"שרי אופנים\". The block on line 29 writes the shemarim of the Ofanim.",
       "lines": [
-        "3l576k5y",
-        "5jllzwqj"
+        "r6gsf4qi"
       ]
     },
     {
-      "text": "in 062 he describes the opposite camp as people who say 'Why do you have to study that? Now you have to study ע״ב.' It is not clear what ע״ב refers to, so it is left out. His reading of the four meanings of כי in the verse (062 9:50–10:24) is only partly kept.",
+      "text": "Line 34: \"It's the same thing, like how Moshe was maasil from his ruach on the elders, but not that nothing was lost to Moshe\" is garbled; the block takes the evident meaning, that nothing was lost to Moshe.",
       "lines": [
-        "3l576k5y",
-        "5jllzwqj"
+        "olabsbxi"
       ]
     },
     {
-      "text": "Tape 063 (part 4) has no aligned lines (only an auto-generated outline: the sickness of bina without chachma, the learned and the beinoni, and others), so nothing here is drawn from it."
+      "text": "062's sixty-fourth brain: \"If he has more than a 64th, it's 63, and then he's called a gas\" is garbled; the block keeps only that more than a sixty-fourth makes him coarse. The source he alludes to (a talmid chacham should have an eighth of an eighth of pride) is not named in class.",
+      "lines": [
+        "3l576k5y"
+      ]
+    },
+    {
+      "text": "062 \"Now you have to study ע״ב\": taken as the discourse series Ayin Beis, with chapters 2 and 3 of this series; the old note had left it out as unclear.",
+      "lines": [
+        "3l576k5y"
+      ]
+    },
+    {
+      "text": "The emperor and the lion (063) is the Gemara's story of the Caesar and Rabbi Yehoshua ben Chananya and the lion of Bei Ilai (Chullin 59b); he says he does not remember which emperor, and the block leaves it so.",
+      "lines": [
+        "cay5uw3u"
+      ]
+    },
+    {
+      "text": "063 reads no line; all its blocks are under the last passage with outOfPlace. It is a continuation of 062's two sicknesses (lines 45-47) as much as of line 49's \"many make a mistake\".",
+      "lines": [
+        "cay5uw3u"
+      ]
+    },
+    {
+      "text": "The phrases follow his in-class reading where he translates; where he only reads (for example lines 1, 24-25, 31-33), they are a plain rendering in his words.",
+      "lines": [
+        "ygnb62xw",
+        "2r2cbx4p",
+        "2uwwbnxe"
+      ]
+    },
+    {
+      "text": "The terms list exceeds twelve because every term the table lacks is defined here, as the task asked.",
+      "lines": [
+        "ygnb62xw"
+      ]
     }
   ]
 }

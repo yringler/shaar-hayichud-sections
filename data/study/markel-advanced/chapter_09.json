@@ -6,7 +6,7 @@
   "status": "draft",
   "provenance": {
     "method": "generated",
-    "from": "study-chapter skill, version 1",
+    "from": "study-chapter skill, version 2",
     "date": "2026-11-22"
   },
   "lectures": [
@@ -19,7 +19,7 @@
       "transcriptionId": "5ae7e9ce-dcc1-4ecf-8264-1ed0e5fe48d8"
     }
   ],
-  "overview": "The earlier chapters showed that everything below comes *mamash* from the Essence: the kindness of *Malchus* of *Asiya* is the essential kindness itself. Chapter 9 asks the obvious question. Below there is change, from *din* to *chesed*, a new creation every day, a prayer for \"a new will\". If it all comes from the Essence, how can He say \"I have not changed\"?\n\nThe answer is the *tzimtzum*. What comes down is a light, not a flow by cause and effect, and even the light comes through contractions, like one projector lamp behind many films. The change is only for the receivers. This is true of the encompassing light and of the inner light as well, at every step from the *Kav* to *Malchus* of *Asiya*, because the *tzimtzum* is not literal: the whole light is here, hidden. And the will \"from before You\" never changes either: He wants one thing, and only what it is dressed in changes. Rabbi Markel calls this the hardest chapter and the point of the whole book.",
+  "overview": "The earlier chapters showed that everything below comes *mamash* (literally) from the Essence: the kindness of *Malchus* of *Asiya* is the essential kindness itself. Chapter 9 asks the obvious question. Below there is change, from *din* to *chesed*, a new creation every day, a prayer for \"a new will\". If it all comes from the Essence, how can He say \"I have not changed\"?\n\nThe answer is the *tzimtzum*. What comes down is a light, not a flow by cause and effect, and even the light comes through contractions, like one projector lamp behind many films. The change is only for the receivers. This is true of the encompassing light and of the inner light as well, at every step from the *Kav* to *Malchus* of *Asiya*, because the *tzimtzum* is not literal: the whole light is here, hidden. And the will \"from before You\" never changes either: He wants one thing, and only what it is dressed in changes. Rabbi Markel calls this the hardest chapter and the point of the whole book.",
   "terms": [
     {
       "term": "tzimtzum",
@@ -92,6 +92,72 @@
       "he": "מחשבה קדומה",
       "gloss": "the primordial thought, in which there is only the end of the deed",
       "line": "jf7ukxwy"
+    },
+    {
+      "term": "hishtalshelus",
+      "he": "השתלשלות",
+      "gloss": "the chain of descent, world from world; down here the light of the chain is mamash the original light, hidden",
+      "line": "vhaty2uw"
+    },
+    {
+      "term": "kipshuto",
+      "he": "כפשוטו",
+      "gloss": "literally; the tzimtzum is not literal, as it is in a projector",
+      "line": "vhaty2uw"
+    },
+    {
+      "term": "Imma",
+      "he": "אימא",
+      "gloss": "lit. mother; bina as a partzuf, beside Abba",
+      "line": "r4bsr7z3"
+    },
+    {
+      "term": "tolda",
+      "he": "תולדה",
+      "gloss": "an offspring, a product: the light a vessel gives off when the inner light strikes it, like the glow of a television screen",
+      "line": "hpa23sec"
+    },
+    {
+      "term": "rasha",
+      "he": "רשע",
+      "gloss": "a wicked man; what Haman is on the outside",
+      "line": "hpa23sec"
+    },
+    {
+      "term": "ad d'lo yada",
+      "he": "עד דלא ידע",
+      "gloss": "until one does not know [the difference between Haman and Mordechai]; on the inside there is none",
+      "line": "hpa23sec"
+    },
+    {
+      "term": "dira b'tachtonim",
+      "he": "דירה בתחתונים",
+      "gloss": "a dwelling below: the house the Aibershter wants with His wife, the Jews",
+      "line": "v5o6feof"
+    },
+    {
+      "term": "Knesses Yisroel",
+      "he": "כנסת ישראל",
+      "gloss": "the community of Israel, the wife in the analogy of the house",
+      "line": "v5o6feof"
+    },
+    {
+      "term": "Kesarim",
+      "he": "כתרים",
+      "gloss": "the crowns: the Keser of each level, whose unifications chapters 7 and 8 describe",
+      "line": "bkvdsddd"
+    },
+    {
+      "term": "maamar",
+      "he": "מאמר",
+      "gloss": "a Chassidic discourse",
+      "line": "bkvdsddd"
+    },
+    {
+      "term": "yahrtzeit",
+      "he": "יארצייט",
+      "gloss": "(Yiddish) the anniversary of a passing",
+      "line": "bkvdsddd"
     }
   ],
   "sections": [
@@ -135,7 +201,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The chapter opens with a question on everything said so far. *Malchus* of *Asiya* is *mamash* the same thing as *Malchus* of the *Ein Sof*: that was the point of **\"I, I am He.\"** But in *Malchus* of *Asiya* there is actual change, *hispaalus* between *din* and *chesed*. If everything comes from *Malchus* of the *Ein Sof*, the change had to be there as well.",
+              "text": "The chapter opens with a question on everything said so far. *Malchus* of *Asiya* is *mamash* (literally) the same thing as *Malchus* of the *Ein Sof*: that was the point of **\"I, I am He.\"** But in *Malchus* of *Asiya* there is actual change, *hispaalus* between *din* and *chesed*. If everything comes from *Malchus* of the *Ein Sof*, the change had to be there as well.",
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
@@ -174,7 +240,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "The same equality was learned from \"Your kingship is the kingship of all worlds\": the *chafetz chesed* (desire for kindness) that arises in the simple will of the Essence is the one that arrives in *Malchus* of *Asiya*. **and likewise the opposite**: in *gevura* it is the same.",
+              "text": "The same equality was learned from \"Your kingship is the kingship of all worlds\": the *chafetz chesed* (desire for kindness) that arises in the simple will of the Essence is the one that arrives in *Malchus* of *Asiya*. **and likewise the opposite**: in *gevura* (might, restraint) it is the same.",
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
@@ -438,7 +504,7 @@
           "phrases": [
             {
               "he": "וכך הוא עד רום המעלות",
-              "en": "And so it is up to the highest of levels."
+              "en": "And so it is all the way to the top."
             },
             {
               "he": "ואחר הצמצום יש בחינת שינוי,",
@@ -524,7 +590,7 @@
           "phrases": [
             {
               "he": "ואמנם גם בבחינת אור הוצרך להיות על ידי צמצום",
-              "en": "Yet even as light, it had to come by way of *tzimtzum*."
+              "en": "Yet even in the light itself, it had to be through a *tzimtzum*."
             },
             {
               "he": "ועל כן צריך כל אדם לידע ענין הצמצום",
@@ -553,6 +619,18 @@
               ]
             },
             {
+              "kind": "explanation",
+              "text": "**for it is the main thing**: this is the main thing of how the whole thing did not really change.",
+              "audio": [
+                {
+                  "lecture": "058 Tape014-Side2-Ch9.mp3",
+                  "words": [1354, 1360],
+                  "start": 599.41,
+                  "end": 602.26
+                }
+              ]
+            },
+            {
               "kind": "question",
               "question": "In a projector there really is a change between the light before it hits the film and after: less light comes through. Is the tzimtzum not the same?",
               "askedBy": "teacher",
@@ -560,8 +638,8 @@
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [1354, 1533],
-                  "start": 599.41,
+                  "words": [1361, 1533],
+                  "start": 602.32,
                   "end": 673.36
                 }
               ]
@@ -627,7 +705,7 @@
           "phrases": [
             {
               "he": "הגם שזהו לגבי בחינת המקיף בלבד",
-              "en": "Granted, this is only with respect to the encompassing light (*makif*),"
+              "en": "Even though this is only in relation to the encompassing light (*makif*),"
             },
             {
               "he": "הנקרא סובב כל עלמין בכלל ובפרט",
@@ -717,7 +795,7 @@
             {
               "kind": "story",
               "title": "The prophet's servant and the chariots of angels",
-              "text": "The king of Aram sent his whole army, and the prophet's servant was scared: \"Help, Rebbe, the whole army is surrounding us!\" The prophet said: *Aibershter*, open his eyes. And he saw millions of chariots of angels all around them. Before his eyes were opened they were already there; otherwise how could the prophet see them? He did not make them come. He only opened the man's eyes, and he saw what was already there. And there is more there than angels. As the text says, up to the highest of levels: it is all right here. Nothing changed, except in the receiver, who cannot see it. So in *memalei* too it is equal: upper and lower are the same.",
+              "text": "He thinks it is by Yechezkel, \"Yechezkel or Yeshayahu, or I can't remember which one\": the king of Aram sent his whole army, and the prophet's servant was scared: \"Help, Rebbe, the whole army is surrounding us!\" The prophet said: *Aibershter* (the One Above, G-d), open his eyes. And he saw millions of chariots of angels all around them. Before his eyes were opened they were already there; otherwise how could the prophet see them? He did not make them come. He only opened the man's eyes, and he saw what was already there. And there is more there than angels. As the text says, up to the highest of levels: it is all right here. Nothing changed, except in the receiver, who cannot see it. So in *memalei* too it is equal: upper and lower are the same.",
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
@@ -750,7 +828,7 @@
             },
             {
               "he": "בהשוואה אחת דווקא מלא",
-              "en": "\"fill\", *davka* in one equal way."
+              "en": "\"fill\", *davka* (precisely) in one equal way."
             },
             {
               "he": "זה גם כן בבחינת אור פנימי",
@@ -819,7 +897,7 @@
           "phrases": [
             {
               "he": "וכידוע דגם בבחינת הקו וחוט שנמשך מעצמות אור אין סוף",
-              "en": "As is known, the *Kav* (line) and thread that is drawn from the Essence of the *Or Ein Sof*,"
+              "en": "As is known, even the *Kav* (line) and thread that is drawn from the Essence of the *Or Ein Sof*,"
             },
             {
               "he": "שנקרא ממלא כל עלמין דאבי''ע בכלל,",
@@ -952,9 +1030,9 @@
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [2765, 2917],
+                  "words": [2765, 2918],
                   "start": 1288.38,
-                  "end": 1348.28
+                  "end": 1349.57
                 }
               ]
             },
@@ -964,9 +1042,9 @@
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [2918, 3092],
-                  "start": 1349.07,
-                  "end": 1430.26
+                  "words": [2919, 3093],
+                  "start": 1350.18,
+                  "end": 1431.4
                 }
               ]
             },
@@ -977,21 +1055,21 @@
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [3093, 3302],
-                  "start": 1431.22,
-                  "end": 1520.8
+                  "words": [3094, 3279],
+                  "start": 1432.44,
+                  "end": 1510.94
                 }
               ]
             },
             {
               "kind": "digression",
               "title": "The whole Megillah is G-d's Name",
-              "text": "The *Aibershter* is never mentioned in the Megillah. Why? A short digest of all the explanations, as far as it touches this chapter: the whole Megillah is *mamash* the *Aibershter*. It is Torah, and the Torah is the *Aibershter*'s Name; so the whole Megillah is His Name, and that is why the Name appears at no point in it. But to say that Name you have to read the whole Megillah from beginning to end. It is the same with *Elokim*: say only the first three letters and it does not mean G-d. Or take only the *hei* and the *yud*: \"Hi, hi, how you doing?\" Leave out one \"Haman\" and it is not G-d's Name anymore. How could Haman be G-d's Name? As far as the outside goes, from the *tzimtzum*, Haman is Haman. As far as the *or pnimi* goes, there is no difference.",
+              "text": "As far as the external thing goes, Haman is the *rasha*. But as far as the internal thing, the *Aibershter*, goes: the *Aibershter* is never mentioned in the Megillah. Why? A short digest of all the explanations, as far as it touches this chapter: the whole Megillah is *mamash* the *Aibershter*. It is Torah, and the Torah is the *Aibershter*'s Name; so the whole Megillah is His Name, and that is why the Name appears at no point in it. But to say that Name you have to read the whole Megillah from beginning to end. It is the same with *Elokim*: say only the first three letters and it does not mean G-d. Or take only the *hei* and the *yud*: \"Hi, hi, how you doing?\" Leave out one \"Haman\" and it is not G-d's Name anymore. How could Haman be G-d's Name? As far as the outside goes, from the *tzimtzum*, Haman is Haman. As far as the *or pnimi* goes, there is no difference.",
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [3303, 3529],
-                  "start": 1520.97,
+                  "words": [3280, 3529],
+                  "start": 1511.03,
                   "end": 1621.46
                 }
               ]
@@ -999,13 +1077,13 @@
             {
               "kind": "mashal",
               "title": "The beam crossing the pixels",
-              "text": "When the inner light hits, you say *Vayehi bimei Achashverosh*. It is like the light travelling along the pixels of the TV: it hits here, \"now you say this one.\" When it comes to Haman it says, \"now you say Haman,\" and all the kids are going to make noise. If you leave that out, you did not do the mitzvah of the Megillah; you did not say G-d's Name. On the outside there is a change between Haman and Mordechai. On the inside there is none: the same thing that tells you to say \"Haman\" tells you to say \"Mordechai\".",
+              "text": "When the inner light hits, you say *Vayehi bimei Achashverosh* (\"And it was in the days of Achashverosh\", the Megillah's opening words). It is like the light travelling along the pixels of the TV: it hits here, \"now you say this one.\" When it comes to Haman it says, \"now you say Haman,\" and all the kids are going to make noise. If you leave that out, you did not do the mitzvah of the Megillah; you did not say G-d's Name. On the outside there is a change between Haman and Mordechai. On the inside there is none: the same thing that tells you to say \"Haman\" tells you to say \"Mordechai\".",
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [3530, 3663],
+                  "words": [3530, 3664],
                   "start": 1621.6,
-                  "end": 1678.15
+                  "end": 1679.24
                 }
               ]
             }
@@ -1042,8 +1120,8 @@
               "audio": [
                 {
                   "lecture": "058 Tape014-Side2-Ch9.mp3",
-                  "words": [3664, 3752],
-                  "start": 1678.74,
+                  "words": [3692, 3752],
+                  "start": 1691.76,
                   "end": 1723.74
                 }
               ]
@@ -1092,7 +1170,7 @@
             },
             {
               "he": "ברישא חשוכא והדר נהורא",
-              "en": "first darkness, and then light.\""
+              "en": "first darkness, and then the light returned.\""
             },
             {
               "he": "וכן משאמרו רבותינו ז''ל בתחלה עלה במחשבה לברוא במידת הדין,",
@@ -1171,9 +1249,9 @@
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [448, 589],
+                  "words": [448, 590],
                   "start": 228.74,
-                  "end": 305.46
+                  "end": 306.15
                 }
               ]
             },
@@ -1184,9 +1262,9 @@
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [590, 806],
-                  "start": 305.7,
-                  "end": 386.98
+                  "words": [591, 807],
+                  "start": 306.15,
+                  "end": 388.5
                 }
               ]
             },
@@ -1194,13 +1272,13 @@
               "kind": "question",
               "question": "We go through all the steps because we cannot make a pizza just appear. He could. And could He not have made a kind of person who could simply jump, with no levels in between?",
               "askedBy": "teacher",
-              "text": "He could have. \"What do you mean He couldn't? What do you mean it wouldn't have worked? He could have made it work.\" But that is not what He wanted. He created the world to make known to us how things are, and what He wanted in the end was a kind of person like us, who would be able to learn *Chassidus* like this: a person who learns the *seder hishtalshelus* and from it gets the original thing that came before. That is why He had to make the levels. But what He wanted was only the end of it. We are the intrinsic, and that whole other business is extrinsic. It was created for us.",
+              "text": "He could have. \"What do you mean He couldn't? What do you mean it wouldn't have worked? He could have made it work.\" But that is not what He wanted. He created the world to make known to us how things are, and what He wanted in the end was a kind of person like us, who would be able to learn *Chassidus* (the teachings of Chassidism) like this: a person who learns the *seder hishtalshelus* (the order of the chain of worlds) and from it gets the original thing that came before. That is why He had to make the levels. But what He wanted was only the end of it. We are the intrinsic, and that whole other business is extrinsic. It was created for us.",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [807, 1086],
-                  "start": 388,
-                  "end": 498.57
+                  "words": [808, 1087],
+                  "start": 389.32,
+                  "end": 499.07
                 }
               ]
             },
@@ -1211,8 +1289,8 @@
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [1087, 1194],
-                  "start": 498.57,
+                  "words": [1088, 1194],
+                  "start": 499.1,
                   "end": 545.84
                 }
               ]
@@ -1228,7 +1306,9 @@
         {
           "lines": [
             "v5o6feof",
-            "2u3u2pl3"
+            "2u3u2pl3",
+            "4pdriezf",
+            "etlegw6l"
           ],
           "phrases": [
             {
@@ -1242,6 +1322,18 @@
             {
               "he": "בין רצון של חסד או דין בכל עולם דאבי''ע",
               "en": "whether in a will of *chesed* or of *din*, in every world of *Atzilus*, *Beriya*, *Yetzira* and *Asiya*,"
+            },
+            {
+              "he": "היינו כמו שהוא קודם הצמצום",
+              "en": "that is as it is before the *tzimtzum*"
+            },
+            {
+              "he": "ומסך שבוקע בו ונעשה כתר לעולם התחתון",
+              "en": "and the *masach* that is broken through to become the *Keser* of the lower world."
+            },
+            {
+              "he": "ועל זה אמר יהי רצון מלפניך דייקא",
+              "en": "And of this it says \"May it be Your will from before You\": \"from before You\" precisely."
             }
           ],
           "blocks": [
@@ -1262,13 +1354,13 @@
               "kind": "question",
               "question": "But when we say \"May it be Your will\", we are saying that we are changing the will.",
               "askedBy": "teacher",
-              "text": "This too is not really a change in the *ratzon*, not even in the *ratzon*. The *Aibershter* wanted a *dira b'tachtonim* (a dwelling below): a house with His wife, with the Jews, *Knesses Yisroel*.",
+              "text": "This too is not really a change in the *ratzon*, not even in the *ratzon*. The *Aibershter* wanted a *dira b'tachtonim* (a dwelling below): a house with His wife, with the Jews, *Knesses Yisroel* (the community of Israel).",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [1312, 1394],
+                  "words": [1312, 1395],
                   "start": 611.88,
-                  "end": 644.75
+                  "end": 646.02
                 }
               ]
             },
@@ -1279,8 +1371,8 @@
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [1395, 1654],
-                  "start": 645.52,
+                  "words": [1396, 1654],
+                  "start": 646.8,
                   "end": 765.12
                 }
               ],
@@ -1293,29 +1385,7 @@
                 "publishable": "A man builds a house for his wife and tells her how beautiful it will be: brown walls, and a games room in the basement. She wants it otherwise: different walls, and a lounge in the basement where she can bring her friends. So he runs back to the architect, and the architect says: \"What, you changed your mind? I thought you told me you're a guy that never changes. *Ani Havaya lo shanisi*.\" \"I didn't change nothing. I wanted to make my wife happy. That's what I always wanted. I don't care which walls. That's what I wanted before and that's what I want now. So what changed?\"\n\nWhat changed is only the external things that this will is dressed in: how to make his wife happy. And that is why his wife can say to him *yehi ratzon milfanecha*: change this will, for one kind of house, into a will for what I want. That is why we can say \"May it be Your will\": what He really wanted was to make His wife happy.",
                 "publishableTitle": "The house and the architect"
               }
-            }
-          ]
-        },
-        {
-          "lines": [
-            "4pdriezf",
-            "etlegw6l"
-          ],
-          "phrases": [
-            {
-              "he": "היינו כמו שהוא קודם הצמצום",
-              "en": "that is as it is before the *tzimtzum*"
             },
-            {
-              "he": "ומסך שבוקע בו ונעשה כתר לעולם התחתון",
-              "en": "and the *masach* that is broken through to become the *Keser* of the lower world."
-            },
-            {
-              "he": "ועל זה אמר יהי רצון מלפניך דייקא",
-              "en": "And of this it says \"May it be Your will from before You\": \"from before You\" precisely."
-            }
-          ],
-          "blocks": [
             {
               "kind": "explanation",
               "text": "**\"from before You\" precisely**. As far as the *ratzon* for what kind of wall there will be, it did change: from a brown wall to a pink wall. But the *ratzon milfanecha*, the will from before You, is exactly the same. He wanted to keep his wife happy.",
@@ -1338,7 +1408,7 @@
           "phrases": [
             {
               "he": "וכל בחינת מעלה ומטה שבעולם זה שוין כו'",
-              "en": "All the above and below of this world are equal [before Him]."
+              "en": "All the above and below of this world are the same [as far as He is concerned]."
             },
             {
               "he": "אבל אחר הצמצום נמשך הרצון בחכמה ומדות בשינויים",
@@ -1376,7 +1446,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "\"This is actually the hardest chapter of the whole book.\" Some other chapters are more intricate and harder to follow, but this one is the hardest to understand. And it is the actual point of the whole book. The point is not in chapters like seven and eight, which give the general picture and all the unifications of the *Kesarim*, of *chachma* and of the other *middos*. It is this chapter, the one before chapter 10: *Ani Havaya lo shanisi*, I have not changed.",
+              "text": "\"This is actually the hardest chapter of the whole book.\" Some other chapters are more intricate and harder to follow, but this one is the hardest to understand. And it is the actual point of the whole book. The point is not in chapters like seven and eight, which give the general picture and all the unifications of the *Kesarim* (crowns), of *chachma* and of the other *middos*. It is this chapter, the one before chapter 10: *Ani Havaya lo shanisi*, I have not changed.",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
@@ -1400,7 +1470,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And, as the text will explain later, the power of the *tzimtzum* is itself an infinite power of the *Atzmus*. By Him, to open and to close are the same power. In a way the closing is almost the higher power. It is no great feat to be an infinite light in an infinite light. To be an infinite light in a finite world is the greater feat.",
+              "text": "And, as the text will explain later, the power of the *tzimtzum* is itself an infinite power of the *Atzmus*. By Him, to open and to close are the same power. In a way the closing is almost the higher power. It is no *chachma* (no great wisdom) to be an infinite light in an infinite light. To be an infinite light in a finite world is the greater *chachma*.",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
@@ -1413,7 +1483,7 @@
             {
               "kind": "mashal",
               "title": "The last of three thousand meshalim",
-              "text": "Shlomo HaMelech made three thousand *meshalim* (analogies). It is *davka* the last *mashal*, that he was able to put it into so low a *mashal*, which is the highest wisdom. And this world is a last *mashal*.",
+              "text": "Shlomo HaMelech made three thousand *meshalim* (analogies). It is *davka* the last *mashal*, that he was able to put it into so low a *mashal*, which is the highest *chachma*. And this world is a last *mashal*.",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
@@ -1426,7 +1496,7 @@
             {
               "kind": "mashal",
               "title": "What a small child thinks",
-              "text": "The point of the whole book is that the *Aibershter* is literally here. That is the *daas* of a small child. What does a child think? That the *Aibershter* is *mamash* standing here with us. Why can't we see Him? Because He is invisible. That is exactly what is said here. There is a *maamar* of the Mitteler Rebbe which says that this is so close to the truth that it is *mamash* the truth. It is like those angels: they were there, only the man could not see them. The *Aibershter* is *mamash* here; we just cannot see Him.",
+              "text": "The point of the whole book is that the *Aibershter* is literally here. That is the *daas* (knowledge) of a small child. What does a child think? That the *Aibershter* is *mamash* standing here with us. Why can't we see Him? Because He is invisible. That is exactly what is said here. There is a *maamar* (discourse) of the Mitteler Rebbe which says that this is so close to the truth that it is *mamash* the truth. It is like those angels: they were there, only the man could not see them. The *Aibershter* is *mamash* here; we just cannot see Him.",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
@@ -1442,20 +1512,20 @@
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [2410, 2533],
+                  "words": [2410, 2534],
                   "start": 1124.86,
-                  "end": 1172.72
+                  "end": 1177.39
                 }
               ]
             },
             {
               "kind": "aside",
-              "text": "Chapter nine: the ninth is the Mitteler Rebbe's birthday and *yahrtzeit*, and it is this week. \"This is the Mitteler Rebbe's week.\" The class is on the fourth of Kislev, and the whole week builds up to the ninth and the tenth of Kislev, the Mitteler Rebbe's days. \"Very special week.\"",
+              "text": "Chapter nine: the ninth is the Mitteler Rebbe's birthday and *yahrtzeit* (the anniversary of his passing), and it is this week. \"This is the Mitteler Rebbe's week.\" The class is on the fourth of Kislev, and the whole week builds up to the ninth and the tenth of Kislev, the Mitteler Rebbe's days. \"Very special week.\"",
               "audio": [
                 {
                   "lecture": "059 Tape015-Side1-Ch9.mp3",
-                  "words": [2534, 2645],
-                  "start": 1176.89,
+                  "words": [2535, 2645],
+                  "start": 1180.48,
                   "end": 1264.79
                 }
               ]
@@ -1511,14 +1581,26 @@
   "omitted": [
     {
       "lecture": "058 Tape014-Side2-Ch9.mp3",
-      "words": [3875, 3917],
+      "words": [3665, 3691],
+      "reason": "reading",
+      "note": "He rereads lines 40-42, partly in Yiddish; the transcript is garbled and he adds nothing."
+    },
+    {
+      "lecture": "058 Tape014-Side2-Ch9.mp3",
+      "words": [3875, 3884],
+      "reason": "logistics",
+      "note": "\"All right. Let me flip, let me put the tape.\""
+    },
+    {
+      "lecture": "058 Tape014-Side2-Ch9.mp3",
+      "words": [3885, 3917],
       "reason": "other",
-      "note": "\"Let me flip the tape\", then the end of the side holds another recording (a different speaker, on the Three Weeks)."
+      "note": "The end of the side holds another recording (a different speaker, on the Three Weeks)."
     }
   ],
   "notes": [
     {
-      "text": "He is not sure which prophet the story of the servant and the chariots is about (\"Yechezkel or Yeshayahu, I can't remember\"); the block says \"the prophet\". It is Elisha (II Kings 6).",
+      "text": "He is not sure which prophet the story of the servant and the chariots is about (\"I think it's by Yechezkel. Yechezkel or Yeshayahu, or I can't remember which one\"); the block keeps his words. It is Elisha (II Kings 6).",
       "lines": [
         "efwibyo2"
       ]
@@ -1530,15 +1612,16 @@
       ]
     },
     {
-      "text": "The reading of lines 49-51 is broken in the recording (the transcript has him reading different words), and he does not translate them; the phrases are a plain rendering, not his.",
+      "text": "He reads lines 49-51 from \"the old text\" (059 w1823: \"I have the old text\"), whose wording differs from the chapter file: his line 50 reads \"ועל פי זה יתבאר גם כן ענין הבקשות מן רצון חסד או דין בכל עולם דבי\\\"ע\" (\"the matter of requests\", w1655-1670), and his line 51 also differs. He does not translate them; the phrases are a plain rendering of the chapter file, not his. Lines 49-52 are one passage because his reading of line 50 (w1655) opens the block on lines 51-52. The alignment mark for line 50 (059 w1612, conf 0.84) falls inside the pool-table mashal; the true reading is w1655-1670 (for the owner of data/alignments).",
       "lines": [
         "v5o6feof",
         "2u3u2pl3",
-        "4pdriezf"
+        "4pdriezf",
+        "etlegw6l"
       ]
     },
     {
-      "text": "The Megillah digression begins \"now we're learning about Yaakov and Esav\", but the class's own remark at the end dates it to the week of 4 Kislev.",
+      "text": "Class 058 gives no date. The next tape, 059, is on 4 Kislev (059 w2602), so \"now we're learning about Yaakov and Esav\" fits the weekly portion of that season.",
       "lines": [
         "hpa23sec"
       ]
