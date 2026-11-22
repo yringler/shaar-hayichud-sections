@@ -26,11 +26,10 @@ if (result.errors.length > 0) {
 
 const warnings = result.warnings ?? [];
 const stale = warnings.filter((w) => w.includes(': (stale) '));
-const pending = warnings.filter((w) => w.includes(': (error, pending migration) '));
 for (const w of stale) console.warn(`warning: ${w}`);
 if (warnings.length > 0) {
   console.warn(
-    `Study guides: ${stale.length} stale reference(s), ${pending.length} error(s) pending migration (their files are left out of the beta export), ${warnings.length - stale.length - pending.length} other warning(s); see yarn study-check.`,
+    `Study guides: ${stale.length} stale reference(s), ${warnings.length - stale.length} other warning(s); see yarn study-check.`,
   );
 }
 

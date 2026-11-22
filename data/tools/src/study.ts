@@ -131,14 +131,6 @@ export interface StudyIssue {
   /** Path relative to data/, e.g. "study/markel-advanced/chapter_06.json". */
   file: string;
   message: string;
-  /**
-   * An error of a rule the guides written before it do not follow yet (the
-   * phrases' English comes only from the class, November 2026). It fails
-   * `yarn study-check` and keeps the file out of the beta export like any
-   * error, but `yarn build-data` only warns about it until every guide is
-   * migrated. Drop the flag (and this field) then.
-   */
-  transitional?: true;
 }
 
 // ---------------------------------------------------------------------------
@@ -439,7 +431,7 @@ export function checkStudyChapter(
   const slack = opts.slackSeconds ?? PLACE_SLACK_SECONDS;
   const issues: StudyIssue[] = [];
   const add = (level: IssueLevel, message: string) => issues.push({ level, file: rel, message });
-  const addTransitional = (message: string) => issues.push({ level: 'error', file: rel, message, transitional: true });
+  const addError = (message: string) => issues.push({ level: 'error', file: rel, message });
   const stats: ChapterStats = { passages: 0, skipped: 0, blocks: 0, byKind: {}, flagged: 0, words: 0, coverage: [] };
 
   const key = path.basename(rel, '.json');
@@ -477,7 +469,7 @@ export function checkStudyChapter(
       if (passage.skip && passage.blocks.length > 0) add('error', `${at} has both "skip" and blocks`);
       if (!passage.skip && passage.blocks.length === 0) add('error', `${at} has no blocks; add a "skip" with the reason`);
       if (passage.skip?.reason === 'no-recording') {
-        if (passage.phrases) addTransitional(`${at} is skipped as no-recording but has "phrases"; a passage no class reads has none (the English comes only from the class)`);
+        if (passage.phrases) addError(`${at} is skipped as no-recording but has "phrases"; a passage no class reads has none (the English comes only from the class)`);
       } else if (!passage.phrases) {
         add('error', `${at} has no "phrases" (only a passage skipped as no-recording may leave them out)`);
       } else if (passage.lines.every((id) => lineIndex.has(id))) {
@@ -498,7 +490,7 @@ export function checkStudyChapter(
         for (const e of en.errors) add('error', `${at}/phrases/${fi}/en ${e}`);
         if (/\*\*/.test(p.en)) add('error', `${at}/phrases/${fi}/en has bold; a translation has italics only`);
         if (!p.audio && !series.publishedTranslation) {
-          addTransitional(`${at}/phrases/${fi} has "en" but no "audio": the English must be the teacher's own, anchored to where he says it in class; if he does not translate this phrase, leave "en" out`);
+          addError(`${at}/phrases/${fi} has "en" but no "audio": the English must be the teacher's own, anchored to where he says it in class; if he does not translate this phrase, leave "en" out`);
         }
       }
     }

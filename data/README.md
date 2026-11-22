@@ -685,17 +685,12 @@ levels:
 
 | Level | Examples | `yarn build-data` | `yarn study-check` |
 |-------|----------|-------------------|--------------------|
-| error | invalid JSON or schema; unknown lecture, or one outside the series; a word range past the transcript's end; a transcript re-made since; Markdown that is not allowed; "God" spelled out; a term spelled against `translit.json`; `replace` with no `publishable`; a phrase's `en` with no `audio` (or `audio` with no `en`); phrases on a `no-recording` passage | fails (the last two only warn, see below) | fails |
+| error | invalid JSON or schema; unknown lecture, or one outside the series; a word range past the transcript's end; a transcript re-made since; Markdown that is not allowed; "God" spelled out; a term spelled against `translit.json`; `replace` with no `publishable`; a phrase's `en` with no `audio` (or `audio` with no `en`); phrases on a `no-recording` passage | fails | fails |
 | stale | a line ID that is no longer in the chapter; lines not covered once and in order; phrases that are not the lines' text; `start`/`end` that are not the word range's times | warns | fails |
 | warning | a block far (120 s) from where the class reads its passage, without `outOfPlace`; a phrase's `audio` more than 120 s outside its class's part on the chapter; 250 or more uncited words of class; a class of the chapter the file never cites; bold that does not quote the translation; a `mashal`, `story` or `digression` with no title; a block over 260 words; Hebrew script in prose; a term spelled two ways across chapters | counts | prints |
 
 Stale references only warn in the build so that editing a chapter in the
-section tool, or re-timing a tape, never blocks a deploy. The two
-translation errors are *transitional* (`StudyIssue.transitional`): the
-guides written before the rule (November 2026) do not follow it yet, so the
-build only warns about them, but such a file is left out of the beta export
-and fails `yarn study-check` like any error. Drop the flag once every guide
-is migrated. After such a
+section tool, or re-timing a tape, never blocks a deploy. After such a
 change run `yarn study-fill` (it re-stamps seconds) and `yarn study-check`,
 and mend the passages whose lines changed.
 
@@ -763,13 +758,11 @@ trimming, stale and erroring files).
 
 ### State (November 2026)
 
-One series, `markel-advanced` (catalog series 37). Chapters 1–5 and 10 were
-ported from the demo: their phrases are whole paragraphs of Rabbi Markel's
-published translation (Sefaria, "The Gate of Unity", 2023, CC-BY), their
-word ranges start where the demo's listen links pointed and end at an
-estimate, and they follow the demo's style, which left out stories and
-digressions. Chapter 9 was written for this format and is the model. Every
-chapter predates the rule that a phrase's English comes only from the class
-(with `audio`), and is being migrated to it; until a chapter is, it has
-transitional errors and is not in the beta export.
+Two series. `markel-advanced` (catalog series 37) has chapters 1–19, each
+written from the classes, reviewed against the transcripts and then
+migrated to class-only phrase translations (each `en` anchored with
+`audio`; phrases he only reads are Hebrew-only). `walters-original`
+(catalog series 0) has chapter 10, a sample. Nobody has yet listened to
+the audio against the blocks, and tapes with only Sofer's word times may
+start a second or two off.
 A new series needs a directory with `series.json` and `NOTES.md`.

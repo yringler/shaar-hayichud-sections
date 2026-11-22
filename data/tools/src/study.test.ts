@@ -85,10 +85,6 @@ describe('checkStudyChapter: lines and phrases', () => {
 
   it('wants no phrases on a passage no class reads', () => {
     has(check((f) => (f.sections[0]!.passages[2]!.phrases = [{ he: 'וזה אינו אלא כך' }])), /^error: \/sections\/0\/passages\/2 is skipped as no-recording but has "phrases"/);
-    // An error of the new rule: it fails study-check, and the build only warns until the guides are migrated.
-    const file = structuredClone(gold);
-    file.sections[0]!.passages[2]!.phrases = [{ he: 'וזה אינו אלא כך' }];
-    assert.deepEqual(checkStudyChapter(REL, file, series, loaded.translit, ctx).issues.map((i) => [i.level, i.transitional]), [['error', true]]);
   });
 });
 
@@ -298,7 +294,7 @@ describe('dumpWords', () => {
 describe('data/study', () => {
   it('has no errors and no stale references', () => {
     // Transitional errors are the guides not yet migrated to the class-only translation rule.
-    const bad = checkStudy(DATA_DIR).issues.filter((i) => i.level !== 'warning' && !i.transitional);
+    const bad = checkStudy(DATA_DIR).issues.filter((i) => i.level !== 'warning');
     assert.deepEqual(bad, []);
   });
 });
