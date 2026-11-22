@@ -1,0 +1,2931 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-original",
+  "chapter": "chapter_02",
+  "title": "Bina and tevuna: abstract understanding, and the power to apply it",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 3",
+    "date": "2026-11-22"
+  },
+  "lectures": [
+    {
+      "id": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+      "transcriptionId": "28cc5936-fec8-47c2-b010-74d2edcece52"
+    },
+    {
+      "id": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+      "transcriptionId": "bfe2dd01-5bf6-45cb-aa1b-71b876a2563c"
+    },
+    {
+      "id": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+      "transcriptionId": "a1e6e4aa-4592-41e0-87b2-9f2e6d8e8ca2"
+    },
+    {
+      "id": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+      "transcriptionId": "a1d54456-83f1-491d-97ac-a22d45f500c6"
+    },
+    {
+      "id": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+      "transcriptionId": "e17574e3-4953-43d2-be9b-809954164b5c"
+    }
+  ],
+  "overview": "Chapter 1 taught *hisbonenus* as it rises to *chachma*; chapter 2 brings it down to the emotions and to action. *Bina* has two levels. *Bina* itself is abstract understanding: the *tafsan* with a sharp grasp, the *Gemara* learned *b'iyun* that yields no *halacha*, pure science, an idea that is still a *hiyuli*. *Tevuna*, the light of *bina* spreading out, is applied understanding, and it comes from *kelita*: absorbing the idea until it is the way you think. Then, like the shepherd who draws deep water up to the sheep, the man of *tevuna* can rule in a particular case, explain the depth simply, and feel it in his heart.\n\n*Tevuna* has its own depth, length and width; its letters spell *ben u'vas*, because the emotions are born from *tevuna*, the lower mother, which also gives them their intellect and keeps them going. The way to get it is the double *nun* of *hisbonenus*: go over the idea again and again, in your own words, until it sinks in.",
+  "overviewAudio": [
+    {
+      "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+      "words": [184, 210],
+      "start": 78,
+      "end": 88.28
+    },
+    {
+      "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+      "words": [765, 798],
+      "start": 301.22,
+      "end": 313.66
+    }
+  ],
+  "terms": [
+    {
+      "term": "tevuna",
+      "he": "תבונה",
+      "gloss": "applied understanding: the light of bina spreading out into application, into the emotions, and into explaining it to others",
+      "line": "dqtw2mat"
+    },
+    {
+      "term": "kelita",
+      "he": "קליטה",
+      "gloss": "absorption: the idea sinks in until it becomes the way you think, the root of tevuna",
+      "line": "fx4uzm2l"
+    },
+    {
+      "term": "ish tevuna",
+      "he": "איש תבונה",
+      "gloss": "a man of tevuna, who draws the deep waters up so that anyone can drink",
+      "line": "fx4uzm2l"
+    },
+    {
+      "term": "tafsan",
+      "he": "תפסן",
+      "gloss": "a grasper: a quick, sharp mind whose understanding stays in the theory",
+      "line": "3olgfxjf"
+    },
+    {
+      "term": "hiyuli",
+      "he": "היולי",
+      "gloss": "raw potential: an idea of which nobody yet knows what will come out",
+      "line": "lgvfw7db"
+    },
+    {
+      "term": "tefisa",
+      "he": "תפיסה",
+      "gloss": "grasping a concept while it stays outside of you, as opposed to kelita",
+      "line": "6xwunvmq"
+    },
+    {
+      "term": "ben u'vas",
+      "he": "בן ובת",
+      "gloss": "son and daughter, the letters of tevuna: love and fear, born from tevuna",
+      "line": "virffb7u"
+    },
+    {
+      "term": "Ima tata'a",
+      "he": "אמא תתאה",
+      "gloss": "the lower mother: tevuna, the womb that actually gives birth to the middos",
+      "line": "p4zitoes"
+    },
+    {
+      "term": "Ima ila'a",
+      "he": "אימא עילאה",
+      "gloss": "the upper mother: bina, the real source of the middos but not their direct source",
+      "line": "u7ixfupf"
+    },
+    {
+      "term": "uvchein",
+      "he": "ובכן",
+      "gloss": "\"and so\": the conclusion that applies the idea to me, which turns understanding into emotion",
+      "line": "u7ixfupf"
+    },
+    {
+      "term": "Leah",
+      "he": "לאה",
+      "gloss": "thought itself, the letters of thought, coming from Malchus of tevuna",
+      "line": "ucybbuqv"
+    },
+    {
+      "term": "nun pshuta",
+      "he": "נו\"ן פשוטה",
+      "gloss": "the straight, long nun: the length; the second nun of hisbonenus, which carries bina into tevuna",
+      "line": "kga2nxgl"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tevuna is bina spreading out: the man of tevuna draws up the deep waters",
+      "summary": "*Bina* has two levels, *bina* and *tevuna*. *Bina* is abstract understanding; *tevuna* is applied understanding, the light of *bina* spreading out, and it comes when the idea is absorbed so well that it becomes yours. Then, like the shepherd who draws deep water up to the sheep, a man of *tevuna* can bring the depth out so simply that it is as if it was never deep.",
+      "passages": [
+        {
+          "lines": [
+            "dqtw2mat"
+          ],
+          "phrases": [
+            {
+              "he": "(ב) והנה ידוע שיש בבינה עצמה ב' מדרגות, בינה ותבונה,",
+              "en": "It's known that *bina* itself has two levels: *bina* and *tevuna*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [108, 118],
+                "start": 45.8,
+                "end": 53.12
+              }
+            },
+            {
+              "he": "וענין התבונה הוא בחינת התפשטות אור הבינה",
+              "en": "The idea of *tevuna* is the spreading out of the light of *bina*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [218, 230],
+                "start": 93.62,
+                "end": 97.48
+              }
+            },
+            {
+              "he": "(כמו שכתוב בזהר",
+              "en": "Like it says in the *Zohar*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [234, 239],
+                "start": 99.42,
+                "end": 101.32
+              }
+            },
+            {
+              "he": "דאבא ואמא תתאין הם ישראל סבא ותבונה,",
+              "en": "the lower father and mother, meaning the lower *chachma* and *bina*, are called *Yisroel Saba*, grandfather Israel, and *tevuna*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [252, 271],
+                "start": 107.22,
+                "end": 116.78
+              }
+            },
+            {
+              "he": "ונקרא אימא תתאה כו')"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "recap",
+              "text": "In the first chapter we explained what *hisbonenus* (contemplation) is and how it works: that *hisbonenus* is *iyun* (close analysis), how it relates to *omek hadaas* (the depth of *daas*), and what a *ma'amik* (one who delves) is. That was basically explaining *Chabad* (*chachma*, *bina* and *daas*), and the *Chabad* of *Chabad*.\n\nNow we are going to explain how your *hisbonenus* not only brings you up to the *chachma* and the *Keser* (crown), but also brings you down to the emotions, to the *middos* (emotional attributes) of the *sechel* (intellect). And that will lead to actual emotions and actual *maaseh* (action).",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [3, 98],
+                  "start": 4.08,
+                  "end": 39.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**It's known that bina itself has two levels: bina and tevuna.** *Tevuna* is mentioned in *Tanya* in different places, but most people do not realize what it is unless they learn a *maamar* (discourse) that explains the difference between *bina* and *tevuna*.\n\nWe explained what *bina* is in the last chapter. *Bina* (understanding) means to understand something, to make distinctions, to see the difference between each part of a thing and see all of its details. Now we are going to explain what *tevuna* is: *tevuna* is the power of applied understanding, as opposed to abstract understanding.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [99, 210],
+                  "start": 40.2,
+                  "end": 88.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**The idea of tevuna is the spreading out of the light of bina.** As it says in the *Zohar*, **the lower father and mother, meaning the lower chachma and bina, are called Yisroel Saba, grandfather Israel, and tevuna.** *Yisroel Saba* is the *hispashtus* (spreading forth) of *chachma*, and *tevuna* is the *hispashtus* of *bina*: these are the *middos* of *chachma* and *bina*, the way they go out of *chachma* and *bina*.\n\nNow, what causes this spreading out of the light of *bina*?",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [211, 316],
+                  "start": 89,
+                  "end": 135.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fx4uzm2l"
+          ],
+          "phrases": [
+            {
+              "he": "מצד קליטתה היטב בכלי המקבל ההשגה דבינה,",
+              "en": "This is because the idea is very well received, or very well absorbed, into the vessel that receives the understanding of *bina*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [324, 345],
+                "start": 142.14,
+                "end": 151.24
+              }
+            },
+            {
+              "he": "על כן מתפשט בה להביאה בכמה ענינים נבדלים מעצם ההשגה,",
+              "en": "Therefore, the idea spreads out in it to come into many, many different things that are separate from the abstract understanding.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [356, 376],
+                "start": 157.5,
+                "end": 166.92
+              }
+            },
+            {
+              "he": "והוא הנקרא איש תבונה,",
+              "en": "And this is what is called a man of *tevuna*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [446, 455],
+                "start": 191.18,
+                "end": 193.56
+              }
+            },
+            {
+              "he": "כמו מים עמוקים כו' איש תבונה ידלנה.",
+              "en": "Like it says in the verse, deep waters... a man of *tevuna* can draw it out.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [456, 478],
+                "start": 194.16,
+                "end": 201.72
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The light of *bina* spreads out **because the idea is very well received, or very well absorbed, into the vessel that receives the understanding of bina.** **Therefore, the idea spreads out in it to come into many, many different things that are separate from the abstract understanding.**\n\nIn other words, when you really understand the idea well and it really sinks into your brain, you are able to apply it outside of the textbooks. You really get it, it becomes one with you, you really see the idea, and now it is yours, and you can use it in all different ways. **This is what is called a man of tevuna**, as the verse says: deep waters, **a man of tevuna can draw it out.** What does this mean?",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [317, 482],
+                  "start": 135.8,
+                  "end": 202.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lg4oylvk",
+            "wbbx7sao"
+          ],
+          "phrases": [
+            {
+              "he": "מים עמוקים",
+              "en": "the deep waters,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [485, 487],
+                "start": 204.72,
+                "end": 205.58
+              }
+            },
+            {
+              "he": "הם בחינת עמקות בינה",
+              "en": "that is the depth of *bina*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [492, 497],
+                "start": 207.08,
+                "end": 208.54
+              }
+            },
+            {
+              "he": "שנשאר בהעלם העצמיות,",
+              "en": "The depth of *bina* remains hidden in yourself.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [501, 508],
+                "start": 212.72,
+                "end": 215.12
+              }
+            },
+            {
+              "he": "ואיש תבונה",
+              "en": "and a man of *tevuna*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [547, 551],
+                "start": 231.18,
+                "end": 231.98
+              }
+            },
+            {
+              "he": "דווקא",
+              "en": "only such a person that has this type of understanding",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [553, 562],
+                "start": 233.22,
+                "end": 235.72
+              }
+            },
+            {
+              "he": "ידלנה",
+              "en": "can draw it out,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [564, 567],
+                "start": 237.16,
+                "end": 237.92
+              }
+            },
+            {
+              "he": "וישאבנה מן ההעלם",
+              "en": "and can draw it from its hiddenness,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [569, 577],
+                "start": 239.4,
+                "end": 244.8
+              }
+            },
+            {
+              "he": "להביאה להתפשטות",
+              "en": "to bring it out into application",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [580, 585],
+                "start": 247.44,
+                "end": 250.18
+              }
+            },
+            {
+              "he": "בכמה אופנים שונים",
+              "en": "many different ways,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [589, 591],
+                "start": 251.2,
+                "end": 252
+              }
+            },
+            {
+              "he": "לרוות את המקבלים",
+              "en": "to quench the thirst of the *mekablim*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [595, 601],
+                "start": 254.32,
+                "end": 257.08
+              }
+            },
+            {
+              "he": "כמו הדולה מים עמוקים להשקות הצאן כו'",
+              "en": "like somebody that draws deep waters to water sheep.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [612, 620],
+                "start": 261.46,
+                "end": 265.8
+              }
+            },
+            {
+              "he": "והוא כמו שאנו רואים",
+              "en": "and this is like what we see,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [703, 709],
+                "start": 290.66,
+                "end": 291.88
+              }
+            },
+            {
+              "he": "בחוש,",
+              "en": "tangibly,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [711, 711],
+                "start": 292.92,
+                "end": 293.44
+              }
+            },
+            {
+              "he": "שבהיות השכל והסברא עמוקים ביותר מהכיל בהשגת אדם,",
+              "en": "that when an idea or a *sevara* is very deep, and it's too deep for a person to grasp,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [720, 738],
+                "start": 299.86,
+                "end": 308.94
+              }
+            },
+            {
+              "he": "הנקרא מים עמוקים כו', שהוא בחינת עומק המושג הנזכר לעיל",
+              "en": "that's the depth of understanding that we discussed in the last *perek*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [748, 759],
+                "start": 314.71,
+                "end": 319.25
+              }
+            },
+            {
+              "he": "שהאורך והרוחב ממנו בא כו'",
+              "en": "which the length and the width of the idea come out from that point.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [765, 778],
+                "start": 322.67,
+                "end": 325.27
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The deep waters, that is the depth of bina.** **The depth of bina remains hidden in yourself.** It is like the *omek hamusag* (the depth of the concept) of the last chapter: the depth cannot really be explained directly, it is only explained through the length and the width. So the depth of it, the deep waters, remains hidden.\n\n**And a man of tevuna**, *davka* (specifically), **only such a person that has this type of understanding, can draw it out, and can draw it from its hiddenness, to bring it out into application** in **many different ways**, **to quench the thirst of the mekablim** (the receivers).",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [483, 604],
+                  "start": 203.5,
+                  "end": 257.76
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The shepherd at the deep well",
+              "text": "The sheep are thirsty and they need water, and the shepherd goes and gets them water from a well. The water in the well is very deep, but he is able to lower a bucket down and bring the water up. Now they are able to get the exact same water, but now it is not deep at all.\n\nThe verse has two words for it: *yidlena* means to draw it, like with a bucket, and *yishavena* means to pour it out into a trough.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [605, 698],
+                  "start": 257.76,
+                  "end": 288.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And this is like what we see, tangibly, that when an idea or a sevara is very deep, and it's too deep for a person to grasp**, it is called deep waters. **That's the depth of understanding that we discussed in the last perek**, the point that **the length and the width of the idea come out from**.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [699, 778],
+                  "start": 288.46,
+                  "end": 325.27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ktlyq343",
+            "e6rnhnmx"
+          ],
+          "phrases": [
+            {
+              "he": "ואיש בעל תבונה דווקא ידלנה,",
+              "en": "And specifically a person that has this power of *tevuna* can draw out this depth.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [784, 798],
+                "start": 328.53,
+                "end": 333.55
+              }
+            },
+            {
+              "he": "פירוש שיוציא לאור בחינת העלם העומק המושג",
+              "en": "He's able to bring out to light, in order to reveal, this hidden depth of the idea,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [806, 822],
+                "start": 339.81,
+                "end": 345.97
+              }
+            },
+            {
+              "he": "עד שיכילנו השגת האדם,",
+              "en": "until a person's mind can grasp it, can understand it,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [827, 836],
+                "start": 349.99,
+                "end": 354.29
+              }
+            },
+            {
+              "he": "כאלו לא היה עמוק כלל,",
+              "en": "as if it wasn't deep at all.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [842, 848],
+                "start": 355.37,
+                "end": 357.19
+              }
+            },
+            {
+              "he": "כמו הדולה מים עמוקים שמקרב את העומק כו'",
+              "en": "Like the shepherd that draws the water from the well, that now brings it close to the sheep, as if it wasn't deep at all.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [865, 894],
+                "start": 364.97,
+                "end": 374.25
+              }
+            },
+            {
+              "he": "ולפי זה",
+              "en": "And based on this,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [908, 911],
+                "start": 378.57,
+                "end": 379.31
+              }
+            },
+            {
+              "he": "מוכרח לומר",
+              "en": "we must say",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [914, 916],
+                "start": 380.35,
+                "end": 380.97
+              }
+            },
+            {
+              "he": "שכח התבונה הוא כח המתפשט מכח הבינה להביא עומקה לגילוי למטה למקבלים כו'",
+              "en": "that the power of *tevuna* is the ability to bring out the understanding of *bina*, to bring its depth so that it should be understood to other people, to the *mekabel*.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [930, 959],
+                "start": 388.17,
+                "end": 399.81
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And specifically a person that has this power of tevuna can draw out this depth.** **He's able to bring out to light, in order to reveal, this hidden depth of the idea, until a person's mind can grasp it, can understand it, as if it wasn't deep at all.** Now it becomes a simple idea. **Like the shepherd that draws the water from the well, that now brings it close to the sheep**: now it is not deep, now it is right in front of them.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [779, 905],
+                  "start": 325.97,
+                  "end": 377.53
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "**And based on this, we must say that the power of tevuna is the ability to bring out the understanding of bina, to bring its depth so that it should be understood to other people.** So the power to teach an idea to somebody else, who does not grasp it on his own, to bring it out and make it simpler for him, comes from the power of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [906, 1001],
+                  "start": 378.01,
+                  "end": 412.55
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The tafsan: a sharp grasp that stays in the theory",
+      "summary": "Someone who is not a man of *tevuna* can still have a quick, sharp grasp, a *tafsan*, and yet his understanding stays in his own *bina*: he cannot teach it or apply it. Even its length and width are only the textbook's examples, all within the theory, and its depth stays hidden even to him.",
+      "passages": [
+        {
+          "lines": [
+            "3olgfxjf"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן כשאינו איש תבונות,",
+              "en": "On the other hand, when somebody is not a man of *tevunos*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1008, 1019],
+                "start": 415.71,
+                "end": 418.67
+              }
+            },
+            {
+              "he": "גם שהוא בעל השגה במוח דבינה",
+              "en": "even if he does understand personally, he's able to understand the idea with his faculty of *bina*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1047, 1063],
+                "start": 428.11,
+                "end": 435.47
+              }
+            },
+            {
+              "he": "(שנקרא תפסן בלשון העולם)",
+              "en": "which the world calls a *tafsan*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1068, 1076],
+                "start": 437.97,
+                "end": 441.35
+              }
+            },
+            {
+              "he": "יוכל להיות שהשגתו נשארת רק כמו שהיא בעצם, במוח הבינה שלו",
+              "en": "it can be that his understanding will remain the way it is, just in his faculty of *bina*,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1116, 1133],
+                "start": 456.07,
+                "end": 462.73
+              }
+            },
+            {
+              "he": "שנקרא רוח בינתו לבד,",
+              "en": "that's called just his spirit of understanding,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1168, 1175],
+                "start": 472.67,
+                "end": 477.05
+              }
+            },
+            {
+              "he": "ולא יבוא ממנה שום התפשטות למטה",
+              "en": "and no application will come out from it,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1182, 1189],
+                "start": 481.91,
+                "end": 484.23
+              }
+            },
+            {
+              "he": "בענין נבדל שחוץ מן עצם ההשגה כלל",
+              "en": "in any matter that's separate from the abstract understanding at all.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1197, 1207],
+                "start": 487.73,
+                "end": 492.31
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**On the other hand, when somebody is not a man of tevunos**, he does not have this type of understanding, where he really absorbs the idea and can now bring it out simply. **Even if he does understand personally, he's able to understand the idea with his faculty of bina, which the world calls a tafsan** (a grasper): he is good at grasping things, he has a quick, sharp mind, he can grasp things well. But that does not mean that he is able to teach it.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1002, 1103],
+                  "start": 412.55,
+                  "end": 448.63
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**It can be that his understanding will remain the way it is, just in his faculty of bina**, in his own understanding, and he will not be able to explain it to somebody else or apply it in anything. It just remains in abstract theory, and **that's called just his spirit of understanding**, **and no application will come out from it, in any matter that's separate from the abstract understanding at all.**",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1104, 1214],
+                  "start": 448.63,
+                  "end": 494.19
+                }
+              ],
+              "join": true
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2urk3tl6"
+          ],
+          "phrases": [
+            {
+              "he": "וגם שיש בהשגה אורך ורוחב ועומק כנזכר לעיל,",
+              "en": "and even though the understanding of the theory itself has a length and a width and a depth,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1222, 1239],
+                "start": 498.39,
+                "end": 504.21
+              }
+            },
+            {
+              "he": "הכל הוא רק בעצם ההשגה,",
+              "en": "even all of this, even the length and the width, are just part of the abstract understanding,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1245, 1261],
+                "start": 507.15,
+                "end": 512.31
+              }
+            },
+            {
+              "he": "כמו שהיא,",
+              "en": "as it is, in its natural state.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1264, 1272],
+                "start": 514.77,
+                "end": 517.79
+              }
+            },
+            {
+              "he": "אבל לא שיתגלה למטה בענין נבדל,",
+              "en": "But it doesn't mean that it will be expressed in something separate,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1319, 1330],
+                "start": 532.83,
+                "end": 537.07
+              }
+            },
+            {
+              "he": "ומכל שכן עומק המושג הרי נשאר בעומקו בהעלם לעצמו,",
+              "en": "and for sure the depth of his understanding remains hidden to himself,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1347, 1358],
+                "start": 545.83,
+                "end": 551.35
+              }
+            },
+            {
+              "he": "וכן האורך והרוחב,",
+              "en": "and even the length and the width",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1368, 1374],
+                "start": 554.77,
+                "end": 556.33
+              }
+            },
+            {
+              "he": "הכל בעצם ההשגה",
+              "en": "are all within the idea itself,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1378, 1383],
+                "start": 558.19,
+                "end": 560.89
+              }
+            },
+            {
+              "he": "כמו שהיא, שהיא במקומה לבד",
+              "en": "the way it is in its place alone.",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1388, 1395],
+                "start": 562.87,
+                "end": 565.09
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And even though the understanding of the theory itself has a length and a width and a depth, even all of this, even the length and the width, are just part of the abstract understanding, as it is, in its natural state.** This is like all in the textbooks: in order to explain the idea he has to have *meshalim* (analogies) and examples, and then he has all these different parts of the idea, but it is all in the theory.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1215, 1312],
+                  "start": 494.77,
+                  "end": 529.29
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**But it doesn't mean that it will be expressed in something separate**: it will not be applied in anything else. **And for sure the depth of his understanding remains hidden to himself**: he cannot explain the depth. **And even the length and the width are all within the idea itself, the way it is in its place alone**: it is all just in theory.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1313, 1401],
+                  "start": 529.95,
+                  "end": 566.73
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The example: a Talmudic pilpul that yields no ruling, an idea that is only hiyuli",
+      "summary": "Someone can learn a *Gemara* in depth, with all the *sevaros* of the commentators, and still not know the *halacha*: the reasoning stays an abstract thing that rules neither liable nor exempt. Such an idea is a *hiyuli*, of which nobody yet knows what will come out.",
+      "passages": [
+        {
+          "lines": [
+            "wdjketw2",
+            "6wn65rrk",
+            "rblvjh2o"
+          ],
+          "phrases": [
+            {
+              "he": "ודוגמא לכל זה,",
+              "en": "And an example for all of this:",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1405, 1411],
+                "start": 569.53,
+                "end": 571.75
+              }
+            },
+            {
+              "he": "הנה אנו רואים בעומק הפלפול בתלמוד וטעמים בסברות רבות כך וכך",
+              "en": "when a person's learning *Gemara*, and they learn a whole *pilpul* with many different reasons and *sevaros*, one this way and one that way,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1423, 1447],
+                "start": 580.33,
+                "end": 587.93
+              }
+            },
+            {
+              "he": "גם שבאים בהשגה דבינה,",
+              "en": "even when they understand it very well,",
+              "audio": {
+                "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                "words": [1468, 1474],
+                "start": 595.49,
+                "end": 597.21
+              }
+            },
+            {
+              "he": "אבל לא יוכלו עדיין להוציא לאור מעצם השכל איזה פסק דין חייב או זכאי כלל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And an example for all of this:** **when a person's learning Gemara, and they learn a whole pilpul with many different reasons and sevaros, one this way and one that way**, with all the *Rishonim* and *Acharonim* (the earlier and later commentators), a whole *pilpul* (Talmudic debate), **even when they understand it very well**, they still cannot bring out of the intellect itself any ruling, liable or exempt, at all.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1402, 1489],
+                  "start": 567.93,
+                  "end": 604.21
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So even though a person can learn *Gemara* (the Talmud) *b'iyun* (in depth) and understand it very well, with all the *sevaros* (lines of reasoning), it is very possible, and this is usually the case, that he is not going to know the *halacha* (the law in practice) from it at all.\n\nLearning *Gemara* and learning *halacha* are almost two opposite ways of learning. When you learn *Gemara b'iyun* you are going into the depth, you are going up, away from the practical; when you learn *halacha* you are going down. So unless you specially learn the *Gemara l'halacha* (for the practical law), you are usually not going to see it: you have to switch the whole direction of your thinking to bring it out.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1490, 1605],
+                  "start": 604.99,
+                  "end": 645.86
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "That is why, for a lot of people, when they start learning *semicha* (rabbinic ordination), it is a big change in their whole way of learning. They are used to learning *Gemara b'iyun* without learning it *l'halacha*, and all of a sudden now they are learning it *l'halacha*.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+                  "words": [1606, 1659],
+                  "start": 645.86,
+                  "end": 660.39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4wuqv36w"
+          ],
+          "phrases": [
+            {
+              "he": "דהיינו",
+              "en": "This means",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [1, 2],
+                "start": 3.8,
+                "end": 4.86
+              }
+            },
+            {
+              "he": "שלא יוכל להוציא מתוך הסברה איזה חיוב על פי זה השכל ולא איזה זכות על פי זה השכל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This means** that he cannot bring out of the reasoning any liability, or any merit, according to this intellect. He learns the *Gemara* and understands that there is a certain *sevara*: according to *Rashi* the *sevara* is like this, according to *Tosfos* it is like that, and then the *Rosh*, and the *Ran*, and the *Rif*, and the *Rambam*, and the *Ramban*: they have all these *sevaros*.\n\nBut now if I ask you, \"Okay, so according to this *sevara*, how would it come out in this case?\" I do not know yet how it will apply in this case. That is a whole other level of understanding, to see how that *sevara* would come out practically, and he does not know how to do that yet.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [0, 141],
+                  "start": 2.56,
+                  "end": 54.54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7pwfwk4y"
+          ],
+          "phrases": [
+            {
+              "he": "כי עדיין אין השכל והסברה רק השכלה שכליות לבד,",
+              "en": "Because right now, it's just an abstract, intellectual thing.",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [151, 159],
+                "start": 59.48,
+                "end": 63.46
+              }
+            },
+            {
+              "he": "בלתי ימצא ממנו שום התפשטות בהטיות לענין נבדל הימנה,"
+            },
+            {
+              "he": "שהוא לחייב על ידה או לזכות על ידה",
+              "en": "which means to find guilt because of it or merit because of it.",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [410, 423],
+                "start": 152.5,
+                "end": 158.08
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Because right now, it's just an abstract, intellectual thing.** It is purely intellectual, with no spreading out or inclining toward anything separate from it. Right now it is just a *pilpul* about what the definition of this liability is: is it a *gavra* (on the person), is it a *cheftza* (on the object), is it because of this, is it because of that?",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [142, 206],
+                  "start": 54.54,
+                  "end": 83.34
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The first inquiry in Bava Kama",
+              "text": "Rabbi Walters remembers learning *Bava Kama*: at the beginning there was a whole *chakira* (inquiry) about why you are liable when your property damages something. Is it because of the *he'eder hashmira* (the failure to guard it), or because there is an actual obligation, that you have a relationship to your money? Different disputes like that.\n\nAt first you are just trying to understand the reason for the *halacha*. You can understand it one way or the other way, and at first you do not see any *nafka mina*, any practical difference. Then when you ask what the practical difference is, they tell you: if somebody betroths a woman on condition that this is the reason for the law. \"You know, that's what they tell you.\"",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [207, 348],
+                  "start": 84.06,
+                  "end": 133.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In other words, right now they are only after the thing itself. They are just learning it; they do not care what the practical thing is. Afterwards we will see if there is a practical thing; right now they just want to understand the reason. So right now it will not come out to anything separate, **which means to find guilt because of it or merit because of it.**",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [349, 423],
+                  "start": 134.82,
+                  "end": 158.08
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lgvfw7db",
+            "mhlftuki"
+          ],
+          "phrases": [
+            {
+              "he": "והרי זה כמו דבר ההיולי",
+              "en": "This is like something that is a *hiyuli*, like an essence,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [429, 439],
+                "start": 162.82,
+                "end": 167.12
+              }
+            },
+            {
+              "he": "שלא נודע עדיין מה ימצא ממנה ומה יעשה בה",
+              "en": "that we do not yet know what will come out from it or what can be done with it.",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [457, 475],
+                "start": 175.32,
+                "end": 179.64
+              }
+            },
+            {
+              "he": "(בל\"א דער מושכל אליין כמו שהוא",
+              "en": "In Yiddish we would say: the idea itself as it is, meaning the abstract theory,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [552, 566],
+                "start": 211.78,
+                "end": 217.02
+              }
+            },
+            {
+              "he": "ער קאן מיט אים נישט טאן קיין זאך ניט",
+              "en": "he can't do anything with it,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [576, 581],
+                "start": 219.87,
+                "end": 222.56
+              }
+            },
+            {
+              "he": "צו קערין לזכות או לחוב כו')",
+              "en": "to lean the judgment to merit or to liability.",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [588, 596],
+                "start": 224.34,
+                "end": 229.92
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is like something that is a hiyuli, like an essence**, like we explained in chapters 10 and 11 (*hiyuli*: raw potential), **that we do not yet know what will come out from it or what can be done with it.** We have no idea yet, because it could come out in so many different ways.\n\nIn Yiddish we would say: **the idea itself as it is, meaning the abstract theory**, just an abstract theory: **he can't do anything with it, to lean the judgment to merit or to liability.**",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [424, 597],
+                  "start": 158.08,
+                  "end": 230.27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The power of tevuna: application to a ruling, to the heart and to thought",
+      "summary": "*Tevuna* brings the abstract understanding down into what is separate from it: a ruling of guilty or innocent, an emotion in the heart, many ways of thinking it. *Bina* is pure science and *Gemara b'iyun*; *tevuna* is applied science, *halacha*, and knowing how to set up a kosher kitchen.",
+      "passages": [
+        {
+          "lines": [
+            "rok4avng"
+          ],
+          "phrases": [
+            {
+              "he": "ואמנם",
+              "en": "However,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [599, 599],
+                "start": 230.63,
+                "end": 230.99
+              }
+            },
+            {
+              "he": "כח התבונה שמתפשט ממוח הבינה,",
+              "en": "the power of *tevuna* that spreads out from the faculty of *bina*:",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [623, 634],
+                "start": 245.6,
+                "end": 249.18
+              }
+            },
+            {
+              "he": "היינו מה שביכולתו להביא עצם ההשגה לבחינת התפשטות למטה ממנה",
+              "en": "it's in the ability of this power to bring the abstract understanding to application in something lower than it,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [645, 663],
+                "start": 254.64,
+                "end": 262.78
+              }
+            },
+            {
+              "he": "בכל ענין נבדל הימנה,",
+              "en": "in anything separate from it,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [668, 672],
+                "start": 264.64,
+                "end": 266.32
+              }
+            },
+            {
+              "he": "או לחיוב או לזכות",
+              "en": "whether that means to find the judgment of guilt or innocence,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [677, 688],
+                "start": 267.74,
+                "end": 272.66
+              }
+            },
+            {
+              "he": "או להתפעל בלב,",
+              "en": "or to bring it to an excitement in your heart, that you should have an emotional reaction because of this understanding,",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [692, 715],
+                "start": 275.18,
+                "end": 282.18
+              }
+            },
+            {
+              "he": "וכן להביאה במחשבה בכמה אופנים שונים כו'.",
+              "en": "and also to be able to bring it into thought in many different ways, that you should be able to explain the idea to yourself in all different ways, conceptualize it, even the depth of it, in many ways.",
+              "audio": {
+                "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                "words": [723, 764],
+                "start": 285.82,
+                "end": 300.02
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**However**, this problem of being stuck in the world of abstract theory is only in *bina* itself. But **the power of tevuna that spreads out from the faculty of bina: it's in the ability of this power to bring the abstract understanding to application in something lower than it, in anything separate from it**: **whether that means to find the judgment of guilt or innocence**, **or to bring it to an excitement in your heart, that you should have an emotional reaction because of this understanding**, **and also to be able to bring it into thought in many different ways**: to explain the idea to yourself in all different ways, to conceptualize it, even its depth.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [598, 764],
+                  "start": 230.27,
+                  "end": 300.02
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "So this is the general difference between *bina* and *tevuna*: *bina* is the abstract understanding, and it is still like a *hiyuli* to its applications; *tevuna* is the power of applied understanding.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [765, 798],
+                  "start": 301.22,
+                  "end": 313.66
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "This is like the difference between somebody who learns *Gemara* just *l'iyun*, like a *pilpul*, and somebody who learns *halacha*. \"And actually I think that it used to be that Chabad would stress learning *Gemara l'halacha*.\" Rabbi Walters is not sure whether there is a reason that changed, or whether it was just because it became popular in the world to learn *Gemara* in the *pilpul* style. \"But I don't know, I heard that that's the way that it was always done.\" It might say so in *Kuntres Etz HaChaim*.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [799, 904],
+                  "start": 314.36,
+                  "end": 352.78
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Pure and applied science",
+              "text": "This is also the difference in other things, like science or mathematics, where they have what is called pure science and applied science. Pure means just the theory, not applied to anything yet: in pure mathematics you are learning about the numbers and the formulas. Applied mathematics is when they use it for engineering, like when they want to send something to the moon and have to use mathematics to figure out the trajectories. The same when they build a bridge: they have to figure out all the variables, the pressure and the wind, and in case there is an earthquake, how that would affect the structure. All these kinds of things are the practical side of it.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [905, 1059],
+                  "start": 353.54,
+                  "end": 402.5
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Learning shechita in the Gemara and in the Shulchan Aruch",
+              "text": "When you are learning *Shulchan Aruch* (the Code of Jewish Law), you are learning a practical understanding. It is not the same as actually doing it, but you are already learning an idea that relates to doing it.\n\nWhen you learn the *Gemara* about *shechita* (ritual slaughter), you are learning why this type of *shechita* is kosher and that type is not. You are trying to understand the real essential determinant, the key factor that everything is based on; you are just trying to find that point. That is like trying to find the depth of a *bina*. That type of learning is *bina*, and when you just want to learn what to do practically, that is *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [1060, 1199],
+                  "start": 403.62,
+                  "end": 449.04
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The hard steel knife",
+              "text": "And a lot of the things of *tevuna* are circumstantial. That the knife has to be sharp is a practical thing. The main thing is that the *shechita* is done in a way that does not rip the skin: it cuts not because of ripping, not because of your pressure, but because of the sharpness of the knife. So practically you want a very sharp knife, and very hard, so that it will not nick easily, because if it has a nick it will rip; therefore they use very hard steel.\n\nBut really you are allowed to *shecht* with anything that is sharp, and it does not even have to be that sharp. You could go back and forth all day, cutting very slowly, and it would be kosher, as long as you are not applying pressure and it is not ripping. So the hard steel knife is a practical thing.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [1200, 1404],
+                  "start": 450.1,
+                  "end": 511.08
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Setting up a kosher kitchen",
+              "text": "You see very much this difference, between seeing the abstract idea and seeing a practical way to do it, between the way *bochurim* (yeshiva boys) learn and the way girls learn, let's say *kashrus* (the kosher laws). Even when *bochurim* are learning *semicha*, it is still much more the theory of it. But then you have to learn how to actually set up your kitchen in a way that will practically keep things kosher. There is a whole different *sechel* in knowing what is kosher and what is not, and then knowing how to make sure that you do not run into those problems: having separate dishes and separate burners, setting it up in a way that will reduce the number of problems. That is a whole other *chachma*, a whole other power of understanding: to be able to apply it like that.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 2-2 Yisroel Saba and Tvunah.mp3",
+                  "words": [1405, 1568],
+                  "start": 511.7,
+                  "end": 562.66
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Contrasts the way yeshiva boys and girls learn kashrus as a generalisation about men and women.",
+                "action": "replace",
+                "publishable": "You see this difference, between seeing the abstract idea and seeing a practical way to do it, in learning *kashrus* (the kosher laws). Even learning for *semicha* is still much more the theory of it. But then you have to learn how to actually set up your kitchen in a way that will practically keep things kosher. There is a whole different *sechel* in knowing what is kosher and what is not, and then knowing how to make sure that you do not run into those problems: having separate dishes and separate burners, setting it up in a way that will reduce the number of problems. That is a whole other *chachma*, a whole other power of understanding: to be able to apply it like that."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The middos within bina stay in theory; the man of tevuna brings the ruling out",
+      "summary": "*Bina* has emotions of its own, the intellect that leans to merit or to guilt, so it seems that *tevuna* is not needed. But those emotions stay hidden in the theory; only the man of *tevuna*, who has not just grasped the idea (*tefisa*) but absorbed it (*kelita*), can rule in a particular case and explain the depth to anyone.",
+      "passages": [
+        {
+          "lines": [
+            "z4uyw4pm"
+          ],
+          "phrases": [
+            {
+              "he": "אך לכאורה אנו רואים",
+              "en": "However, seemingly we see",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [4, 7],
+                "start": 6.02,
+                "end": 8.6
+              }
+            },
+            {
+              "he": "שיש בבינה עצמה בחינת מדות",
+              "en": "that seemingly *bina* itself has *middos*,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [13, 18],
+                "start": 11.5,
+                "end": 14.59
+              }
+            },
+            {
+              "he": "הנקרא ז׳ תחתונים דבינה,",
+              "en": "which are called the seven lower *sefiros* of *bina*.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [24, 32],
+                "start": 19.04,
+                "end": 21.2
+              }
+            },
+            {
+              "he": "ונקרא מדות שבשכל",
+              "en": "And these are called the emotions of the intellect,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [62, 70],
+                "start": 31.84,
+                "end": 34.61
+              }
+            },
+            {
+              "he": "המטה כלפי זכות או שכל מטה כלפי חוב",
+              "en": "an intellect that leans towards merit or an intellect that leans towards guilt.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [79, 94],
+                "start": 39.5,
+                "end": 45.88
+              }
+            },
+            {
+              "he": "כידוע"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**However, seemingly we see that seemingly bina itself has middos, which are called the seven lower sefiros of bina.** So it seems that we do not need *tevuna* to be the application of *bina*: *bina* itself has *middos*, and those are its application. **And these are called the emotions of the intellect, an intellect that leans towards merit or an intellect that leans towards guilt.** That is the idea of the emotions of the intellect: the intellect tells you either that it is *chayav* (liable) or that it is *patur* (exempt).",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [0, 121],
+                  "start": 0,
+                  "end": 55.59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "x7a3trji",
+            "kpvuxwit"
+          ],
+          "phrases": [
+            {
+              "he": "היינו כמו שהמדות שבשכל הן בעצם ההשגה עדיין בהעלם",
+              "en": "So the emotions of *bina* itself are the emotions of the intellect the way they are in the abstract theory, and they're still hidden.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [131, 165],
+                "start": 63.28,
+                "end": 76.63
+              }
+            },
+            {
+              "he": "אבל להביא בחינת התגלותן בדבר נבדל,",
+              "en": "But to be able to reveal them in something separate,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [172, 186],
+                "start": 78.37,
+                "end": 84.81
+              }
+            },
+            {
+              "he": "כמו להורות בענין מקרה דבר מה על פי השכל והסברא הזאת,",
+              "en": "to say the ruling in a particular case based on this intellect and this logic,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [198, 213],
+                "start": 90.26,
+                "end": 97.92
+              }
+            },
+            {
+              "he": "להטות את המשפט של זה הענין לחסד וגבורה שבו דוקא,",
+              "en": "to influence the judgment of this case to either the *chesed* or *gevura*,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [224, 236],
+                "start": 102.92,
+                "end": 109.03
+              }
+            },
+            {
+              "he": "הרי איש תבונה דווקא יוציא לאור מן המדות שבבינה כו'",
+              "en": "specifically a person of *tevuna* is able to bring out the ruling from the emotions of *bina*.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [248, 264],
+                "start": 112.85,
+                "end": 118.57
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**So the emotions of bina itself are the emotions of the intellect the way they are in the abstract theory, and they're still hidden.** **But to be able to reveal them in something separate, to say the ruling in a particular case based on this intellect and this logic, to influence the judgment of this case to either the chesed or gevura** (kindness or severity): **specifically a person of tevuna is able to bring out the ruling from the emotions of bina.**",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [122, 264],
+                  "start": 55.59,
+                  "end": 118.57
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the difference we spoke of in learning the *pilpul* of the *Gemara*. It is true that there is hidden in it that this one says *chayav* and this one says *patur*, and even if you know an actual ruling there, it is all still in the theory. You do not know how the ruling applies, because that is an abstract case, and you do not know how it would apply to a particular situation to know the *halacha*.\n\nIt is like the difference between learning *Gemara* and learning *semicha*. Even though the *Gemara* sometimes states a *halacha*, it is very far for most people to see the ruling from that. To be able to bring it out and apply it, to see how this theory would apply in a particular case, is a thing of an *ish tevuna* (a man of *tevuna*).",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [265, 417],
+                  "start": 118.57,
+                  "end": 165.14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "sh5m4ohl",
+            "6xwunvmq"
+          ],
+          "phrases": [
+            {
+              "he": "ואיש תבונות היינו כח הקולט בכי טוב לעצם ההשגה,",
+              "en": "A man of *tevunos* means the ability to really absorb the theory, to really internalize it, to really become one with the way you think and feel and view the world.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [420, 464],
+                "start": 166.36,
+                "end": 184.87
+              }
+            },
+            {
+              "he": "על כן מתפשטת ההשגה בו לעשות ולהורות בה כמה ענינים נבדלים לגמרי",
+              "en": "Therefore, since this idea becomes one with him, it's able to spread out: he's able to use it, to make a judgment based on it, in many things that are totally separate from the theory.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [477, 525],
+                "start": 194.7,
+                "end": 212.45
+              }
+            },
+            {
+              "he": "וגם ביכולתו להביא את עומק בינה לידי גילוי כנזכר לעיל",
+              "en": "And he can also bring out the depth of *bina* and explain it in a way that's understandable, like we said before.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [535, 556],
+                "start": 217.42,
+                "end": 225.68
+              }
+            },
+            {
+              "he": "ודי למבין"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**A man of tevunos means the ability to really absorb the theory, to really internalize it, to really become one with the way you think and feel and view the world.** **Therefore, since this idea becomes one with him, it's able to spread out**: he is able to use it, **to make a judgment based on it, in many things that are totally separate from the theory.** **And he can also bring out the depth of bina and explain it in a way that's understandable, like we said before.**",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [418, 556],
+                  "start": 165.14,
+                  "end": 225.68
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "This is the difference. The depth of *bina* is just *tefisa* (grasping): you grasp the concept, but it is something separate from you that you are holding. You understand it, but it is not really part of the way you think; it is something you can appreciate. That is just *bina*, abstract understanding separate from you.\n\n*Tevuna* requires not just *tefisa* but *kelita* (absorption): that it totally sinks into your brain, so that you actually think that way and really see it. Then automatically you start to see it in all different cases: \"How would I use this way of reasoning in this case, in this case?\" You see it in everything, so you can give examples and *meshalim* for it, even in regular day-to-day life, to make the depth of *bina* understandable to a regular person, and you can apply it in different cases, because you really internalized it. That is the thing of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [557, 757],
+                  "start": 226.36,
+                  "end": 288.63
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yisroel Saba and tevuna, Malchus of tevuna and the letters of thought",
+      "summary": "*Yisroel Saba* and *tevuna* are the emotions of *chachma* and of *bina* as they come out into application: the intuitive feel, and the power to explain. *Malchus* of *tevuna* attaches the concept to words, the letters of thought, an outer vessel for analysis; and from it comes thought itself, *Leah*.",
+      "passages": [
+        {
+          "lines": [
+            "ucybbuqv"
+          ],
+          "phrases": [
+            {
+              "he": "(והיינו בחינת אבא ואמא תתאין ישראל סבא ותבונה",
+              "en": "And this is the idea that the lower father and mother are *Yisroel Saba* and *tevuna*.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [766, 785],
+                "start": 291.64,
+                "end": 300.44
+              }
+            },
+            {
+              "he": "ישראל סבא מדות דחכמה ותבונה מדות דבינה",
+              "en": "*Yisroel Saba* is the *middos*, the emotions, of *chachma*, and *tevuna* is the emotions of *bina*.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [795, 811],
+                "start": 303.96,
+                "end": 310.32
+              }
+            },
+            {
+              "he": "אך באין בבחינת הגילוי לחוץ",
+              "en": "But these are the emotions of *chachma* and *bina* the way they come outside, to be revealed outside of the *etzem* idea.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1051, 1072],
+                "start": 380.8,
+                "end": 388.1
+              }
+            },
+            {
+              "he": "ובחינת מלכות דתבונה",
+              "en": "And what's the idea of *Malchus* of *tevuna*?",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1110, 1117],
+                "start": 397.62,
+                "end": 400.2
+              }
+            },
+            {
+              "he": "הוא השכל הבא במחשבה",
+              "en": "This is the intellect that comes into thought.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1133, 1140],
+                "start": 406.12,
+                "end": 408.79
+              }
+            },
+            {
+              "he": "הנקרא אותיות מחשבת שכל",
+              "en": "This is called the letters of intellectual thought,",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1145, 1152],
+                "start": 411.28,
+                "end": 414.43
+              }
+            },
+            {
+              "he": "שהשכל מתלבש בה",
+              "en": "which the intellect is enclothed in this type of thought.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1156, 1165],
+                "start": 416.24,
+                "end": 418.68
+              }
+            },
+            {
+              "he": "והוא בחינת כלי חיצוני למחשבה עיונית",
+              "en": "This is the external vessel for analytical thought.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1331, 1338],
+                "start": 469.52,
+                "end": 473.76
+              }
+            },
+            {
+              "he": "שהוא גלוי השגה דבינה עצמה מצד עצם השכל והסברא כו'",
+              "en": "Which this intellectual thought is revealing the actual understanding of *bina* itself, relating to the intellect and the logic.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1628, 1646],
+                "start": 563.64,
+                "end": 571.04
+              }
+            },
+            {
+              "he": "ומבחינת מלכות דתבונה נמשך שרש אותיות המחשבה עצמה שנקרא לאה כו'"
+            },
+            {
+              "he": "והוא ד' רבתי דאחד)",
+              "en": "And this is the large *dalet* of the word *Echad*.",
+              "audio": {
+                "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                "words": [1734, 1745],
+                "start": 606.28,
+                "end": 610.38
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And this is the idea that the lower father and mother are Yisroel Saba and tevuna.** **Yisroel Saba is the middos, the emotions, of chachma, and tevuna is the emotions of bina.** So *Yisroel Saba* is when somebody has an application in an intuitive way.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [758, 824],
+                  "start": 288.63,
+                  "end": 315.58
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "Shatik Rav: the ruling he could not explain",
+              "text": "Somebody just has a gut feeling that this is the right way to do something, the right thing or the wrong thing to do. He cannot explain why; he just has a feeling. That is like *Yisroel Saba*.\n\nIt is like the case where the *Gemara* says *shatik Rav* (Rav was silent). In *Beitza* there is a dispute, \"I think it's the *machlokes*,\" about the difference between an egg laid on *Yom Tov*, which is *muktza* because it is *nolad* (newly come into being), and a cow born on *Yom Tov*, which is not *nolad* and not *muktza*. Rav ruled that there is a difference, that a cow is not *nolad*; they asked him why, and he could not answer. But he did not retract his ruling. *Shatik Rav*: he was quiet. Even though he could not explain the difference, he saw intuitively that there was one. That is the thing of *Yisroel Saba*. Then somebody else came along and explained the difference: that is the thing of *tevuna*, being able to explain why the ruling should be so.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [825, 1045],
+                  "start": 315.58,
+                  "end": 377.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**But these are the emotions of chachma and bina the way they come outside, to be revealed outside of the etzem idea** (the idea itself). It is not the way the *middos* are included in the theory, but the way it is brought out into application. That is the idea of *Yisroel Saba* and *tevuna* in general.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1046, 1106],
+                  "start": 378.04,
+                  "end": 396.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And what's the idea of Malchus of tevuna?** *Malchus* (kingship) of *tevuna* is the application into thought, speech and action. **This is the intellect that comes into thought.** **This is called the letters of intellectual thought, which the intellect is enclothed in this type of thought.**\n\nWhat is this? It is the external thing of *tevuna*. *Malchus* of *tevuna* takes the concept, the theory, and attaches it, applies it, to words, to a language, so that when you want to think about this idea, you think about it in terms of this word.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1107, 1223],
+                  "start": 396.22,
+                  "end": 436.87
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The child's rubber stamps",
+              "text": "It is kind of like a little kid who has rubber stamps. On one side the stamp has a picture of a cow, and on the other side it says the word cow. If he wants to write the word cow, he takes the stamp that says cow and stamps it, and it writes C-O-W. On the one side it is the thing itself, and on the other side it is the word. That is what *Malchus* of *tevuna* does: it connects the concept to the words.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1224, 1324],
+                  "start": 436.87,
+                  "end": 465.93
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This is the external vessel for analytical thought.** It helps you analyze something, think about it in depth, because you talk to yourself about the idea and that helps your mind work it over. But really your mind works it over even if you are not thinking it in words. Talking to yourself is not the actual thought process of *bina* that makes you understand; it is just a *kli* (vessel) to help you focus your mind on the right ideas. You can see your power of *bina* at work, understanding something, even without consciously thinking words.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1325, 1438],
+                  "start": 465.93,
+                  "end": 508.13
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Staring at the tiles",
+              "text": "Stare at tiles arranged in a very simple pattern, say straight boxes or black and white checkers, and your mind tries to make all kinds of patterns out of it. First you see it as diagonals, then as straight lines, then as boxes. You keep trying to make different patterns out of it, because the pattern is too simple, and your mind of *bina* keeps looking for different, more complicated patterns. That is your power of *bina* trying to analyze: it tries to cut it up this way and that way, to find different ways to analyze it. And if you also think it to yourself in words, that is like a *kli* to help your mind do that.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1439, 1617],
+                  "start": 508.13,
+                  "end": 559.13
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Which this intellectual thought is revealing the actual understanding of bina itself, relating to the intellect and the logic.** In other words, *Malchus* of *tevuna* brings the actual understanding of *bina* out into thought. That is another thing *tevuna* does.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1618, 1667],
+                  "start": 559.13,
+                  "end": 580.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And from *Malchus* of *tevuna* comes the root of the letters of thought itself. Once you have this *Malchus* of *tevuna*, associating ideas with words in order to think, you can have the words themselves without the thought, and so now you can have thought itself, which is called *Leah*, as will be explained later about thought. **And this is the large dalet of the word Echad**: the large *dalet* of *Echad* is *Leah*, the way it comes from *Malchus* of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 2-3 Yisroel Saba and Tvunah.mp3",
+                  "words": [1668, 1754],
+                  "start": 580.78,
+                  "end": 613.38
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ben u'vas: tevuna's three dimensions, and the lower mother who gives birth to the emotions",
+      "summary": "*Tevuna* has its own depth, length and width: its depth is *kelita*, absorbing the idea; its length is bringing it down into something else, a ruling, an invention, a skill; its width is thinking it in many ways. Its letters spell *ben u'vas*, son and daughter, because the emotions are actually born from *tevuna*, the lower mother, and not from *bina*, the upper mother.",
+      "passages": [
+        {
+          "lines": [
+            "virffb7u"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו שנקרא תבונה",
+              "en": "And this is what is called *tevuna*,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [3, 9],
+                "start": 5.86,
+                "end": 8.04
+              }
+            },
+            {
+              "he": "בן ובת כידוע,",
+              "en": "which *tevuna* has the letters of *ben u'vas*,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [10, 17],
+                "start": 8.04,
+                "end": 11.7
+              }
+            },
+            {
+              "he": "להיות כי גם בתבונה יש ג' דברים,",
+              "en": "because *tevuna* also has three things:",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [63, 68],
+                "start": 28.8,
+                "end": 31.36
+              }
+            },
+            {
+              "he": "עומק ואורך ורוחב.",
+              "en": "a depth, a length, and a width.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [72, 78],
+                "start": 33.38,
+                "end": 34.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And this is what is called tevuna, which tevuna has the letters of ben u'vas** (son and daughter): it has a *beis* and a *tav*, then a *nun*, so you could read it *ben* and *bas* with the *vav*, and it has an extra *hei*. **Because tevuna also has three things: a depth, a length, and a width.** So now we are going to explain the dimensions of *tevuna*, the way we explained in the first chapter the dimensions of *chachma*, *bina* and *daas*. And *ben u'vas* means that *tevuna* is a source of the *middos*, which will be explained shortly.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [0, 122],
+                  "start": 3.46,
+                  "end": 48.72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7h7ajdbp",
+            "hvkuw7gq"
+          ],
+          "phrases": [
+            {
+              "he": "העומק הוא עצם כח התבונה הזאת שבאותה ההשגה,",
+              "en": "The depth of *tevuna* is the essence of the power of *tevuna* in this understanding,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [131, 145],
+                "start": 54.8,
+                "end": 61.88
+              }
+            },
+            {
+              "he": "כמו שהיא בשעה שקולטת אותה כו'",
+              "en": "the way that it is at the time that you absorb it.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [178, 188],
+                "start": 73.62,
+                "end": 75.84
+              }
+            },
+            {
+              "he": "ובה יוכל עומק ההשגה הנזכר לעיל לבוא לגלוי,",
+              "en": "And when a person has this, that they really absorb the idea, then they're able to bring the depth out to reveal it,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [429, 451],
+                "start": 147.58,
+                "end": 155.08
+              }
+            },
+            {
+              "he": "כנזכר לעיל בפסוק איש תבונה ידלנה כו'",
+              "en": "like we explained before about how a man of *tevuna* can draw out the deep waters.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [471, 507],
+                "start": 160.06,
+                "end": 171.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The depth of tevuna is the essence of the power of tevuna in this understanding**: the ability to apply, the type of understanding that lets you apply what you understand. **The way that it is at the time that you absorb it**: the main thing of *tevuna* is the *kelita* (absorption), that you really absorb the idea well. *Hasaga* (comprehension) means that you grasp it, you are holding it, but it is outside of you. *Tevuna* requires that you are *koleit* the idea, that you absorb it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [123, 237],
+                  "start": 49.38,
+                  "end": 92.68
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The Rav who goes over the Shulchan Aruch",
+              "text": "So it is not just something you grasp and understand intellectually outside of you. It has to be the way you think, the way you see things, really integrated into your thinking. Let's say a *Rav* wants to *paskin* (rule on) *halacha*. It is not good enough that he learns a *halacha* and understands it. He has to go over, let's say, the Alter Rebbe's *Shulchan Aruch* over and over again, until he really absorbs the way the *Shulchan Aruch* thinks about it, and starts to think about it in the same logic, the same order and the same categories. When he starts to see things through the eyes of the *halacha*, he is able to apply it and *paskin* in different situations, because he is able to see beyond the textbook. The same with anything: when you really absorb it, you are able to apply it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [238, 420],
+                  "start": 92.82,
+                  "end": 143.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And when a person has this, that they really absorb the idea, then they're able to bring the depth out to reveal it**, to explain the depth to somebody in a way that seems simple, **like we explained before about how a man of tevuna**, who has this power of understanding that can apply things, *davka* he **can draw out the deep waters** and explain it to somebody. So the depth of *tevuna*, again, is this *kelita*, this absorption, really internalizing the idea into your way of thinking.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [421, 539],
+                  "start": 143.74,
+                  "end": 183.46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "uxwal6su"
+          ],
+          "phrases": [
+            {
+              "he": "והאורך",
+              "en": "the length of *tevuna*",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [541, 544],
+                "start": 185.82,
+                "end": 186.78
+              }
+            },
+            {
+              "he": "הוא ירידתה בענין אחר",
+              "en": "is to bring the idea down into something else, a different subject, a different idea,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [549, 563],
+                "start": 191.2,
+                "end": 197.6
+              }
+            },
+            {
+              "he": "הנבדל,",
+              "en": "which is separate from the original idea that you're studying,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [565, 574],
+                "start": 199.08,
+                "end": 203.06
+              }
+            },
+            {
+              "he": "להורות בו ולעשות מעשים רבים על ידה כו'",
+              "en": "to give advice based on it, or to *paskin* based on it, and to do many different things with it.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [583, 602],
+                "start": 207.04,
+                "end": 213.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The length of tevuna is to bring the idea down into something else, a different subject, a different idea, which is separate from the original idea that you're studying, to give advice based on it, or to paskin based on it, and to do many different things with it.** You take an idea you understand, you learned something, and now you are able to *paskin* based on it, or apply it in your life; you take some theory and find a way to make money out of it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [540, 657],
+                  "start": 185.08,
+                  "end": 224.9
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The Greek steam engine and the American steamboat",
+              "text": "The ancient Greeks invented a type of steam engine, but it was never really applied until much later, in America, when they made a steamboat out of it. There were technical limitations why they could not really use it yet, but it was also just a mindset: the Greeks would learn things just in the way of pure science, they just wanted to understand things, and in America there was, especially at a certain time, a very big push to invent things and develop technology. That is more of a *tevuna* type of thinking.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [658, 776],
+                  "start": 225.98,
+                  "end": 266.74
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "From relativity to the bomb",
+              "text": "The same with how they went from the theory of relativity to the atomic bomb. Einstein discovered this theory, and it was all very nice, but it was just a theory, and some physicists were happy that he had figured out a theory that explains things. But then he realized that based on this theory you could make a bomb. They called the president and told him, \"We could make a bomb, and you better make this bomb before the Russians make it.\" And so they started the Manhattan Project to make the first bomb. That is the length of *tevuna*: once you understand an idea and absorb it, you are able to apply it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [777, 914],
+                  "start": 267.34,
+                  "end": 307.32
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "A historical slip printed under his name: the warning to the president was about Germany, not the Russians.",
+                "action": "replace",
+                "publishable": "The same with how they went from the theory of relativity to the atomic bomb. Einstein discovered this theory, and it was all very nice, but it was just a theory, and some physicists were happy that he had figured out a theory that explains things. But then he realized that based on this theory you could make a bomb. They called the president and told him, \"We could make a bomb, and you should make this bomb.\" And so they started the Manhattan Project to make the first bomb. That is the length of *tevuna*: once you understand an idea and absorb it, you are able to apply it."
+              }
+            },
+            {
+              "kind": "avodah",
+              "text": "So in a way this is the most important thing for anybody studying to learn a skill: a doctor, a lawyer, a mechanic, anything a person wants to be. He has to understand it in a way that he really absorbs the lessons, and then he is able to apply them, to use his understanding to actually do things, or to give somebody advice in that area. The same with a *Rav*, and the same with *Chassidus* (Chassidic teaching): if a person wants to be able to apply it, the main thing is *tevuna*. But that is explained in the next chapter.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [915, 1035],
+                  "start": 307.96,
+                  "end": 341.81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5qr26bde"
+          ],
+          "phrases": [
+            {
+              "he": "והרוחב",
+              "en": "And the width:",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1037, 1039],
+                "start": 342.7,
+                "end": 343.36
+              }
+            },
+            {
+              "he": "הוא בחינת התפשטות התבונה בעצם ההשגה,",
+              "en": "the width of *tevuna* is to expand, to spread out the idea within the idea itself, to apply the theory within the understanding,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1046, 1069],
+                "start": 349.64,
+                "end": 362.21
+              }
+            },
+            {
+              "he": "להרחיבה במחשבה בכמה רבוי אופנים שונים",
+              "en": "that you should be able to think about the idea in many different ways,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1076, 1089],
+                "start": 364.2,
+                "end": 369.61
+              }
+            },
+            {
+              "he": "ולא כמו שהיא לבד כו'",
+              "en": "and not just the way it is alone.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1095, 1102],
+                "start": 371.94,
+                "end": 374.82
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And the width: the width of tevuna is to expand, to spread out the idea within the idea itself, to apply the theory within the understanding, that you should be able to think about the idea in many different ways, and not just the way it is alone.** With the power of *tevuna* you do not have to think about the concept in the terms in which you originally learned it. You can find all different types of examples, explanations and ways to think about it; and when you explain it, you can do that too: find all kinds of stories and examples, all these different ways of understanding the idea or explaining it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1036, 1189],
+                  "start": 341.81,
+                  "end": 398.96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "u7ixfupf"
+          ],
+          "phrases": [
+            {
+              "he": "ומה שכלולה התבונה מב''ן וב''ת,",
+              "en": "And this, that *tevuna* includes within it *ben* and *bas*,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1195, 1204],
+                "start": 402.92,
+                "end": 406.25
+              }
+            },
+            {
+              "he": "היינו מה שמתבונה דוקא יולדו המדות בגלוי מהות בפני עצמם,",
+              "en": "this represents that specifically from *tevuna* the *middos* are revealed, that they come out to be their own: the source of having an actual emotion, of actual love and actual fear, separate from your intellect, is from *tevuna*.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1215, 1255],
+                "start": 407.91,
+                "end": 430.9
+              }
+            },
+            {
+              "he": "כי מבינה עצמה לא היו תולדות המדות",
+              "en": "Because from *bina* itself the emotions would not be born, they would not come out,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1467, 1481],
+                "start": 496.78,
+                "end": 501.2
+              }
+            },
+            {
+              "he": "אף על פי שנקרא אם הבנים כו'",
+              "en": "even though *bina* is called the mother of the children, which means that it is the source of the emotions,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1489, 1508],
+                "start": 505.1,
+                "end": 510.75
+              }
+            },
+            {
+              "he": "(אבל היא אימא עילאה)",
+              "en": "but it's the upper mother.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1513, 1517],
+                "start": 512.86,
+                "end": 513.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And this, that tevuna includes within it ben and bas, this represents that specifically from tevuna the middos are revealed, that they come out to be their own: the source of having an actual emotion, of actual love and actual fear, separate from your intellect, is from tevuna.** Separate does not mean that the mind no longer rules: it is always *moach shalit al halev* (the mind rules the heart). It means that you actually feel an emotion, as opposed to the *middos* of *bina* explained earlier in this chapter, where the *midda* is still within the theory of the *sevara*.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1190, 1305],
+                  "start": 398.96,
+                  "end": 447.54
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Whoever takes from his fellow",
+              "text": "In theory, you are learning the *Gemara* and you have a certain *sevara*, and in theory that *sevara* says that this man is responsible, let's say, but you do not know how to apply it to this case, to know who is responsible. You know a rule, let's say *hamotzi mechaveiro alav hara'aya* (whoever takes from his fellow must bring the proof), and you understand that rule. Now you come to a certain case and you are not sure who is taking from whom, so you do not know how to *paskin* in this case; you only know the theory that would determine it. So the emotion is hidden within the theory. When you know how to apply it, the emotion can actually come out of the understanding.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1306, 1448],
+                  "start": 448.3,
+                  "end": 488.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So this is why *davka* from *tevuna* the *middos* come out, **because from bina itself the emotions would not be born, they would not come out, even though bina is called the mother of the children, which means that it is the source of the emotions, but it's the upper mother**, *Ima ila'a*. Even though it is their source, it is not the direct source. It is not good enough to have *bina* to bring you to an emotion. If you want it to affect you, you have to understand not just in theory, but how it applies to you. You have to have the *uvchein* (\"and so\": the conclusion).",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1449, 1574],
+                  "start": 489.44,
+                  "end": 527.13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "p4zitoes"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן התבונה נקרא אימא תתאה",
+              "en": "But *tevuna* is called the lower mother,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1582, 1588],
+                "start": 529.56,
+                "end": 531.1
+              }
+            },
+            {
+              "he": "להוליד המדות,",
+              "en": "to give birth to the *middos*.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1599, 1604],
+                "start": 534.03,
+                "end": 535.36
+              }
+            },
+            {
+              "he": "והוא בחינת ב''ן וב''ת, אהבה ויראה,",
+              "en": "And this is the idea of *ben u'vas*, love and fear,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1820, 1832],
+                "start": 608.52,
+                "end": 613
+              }
+            },
+            {
+              "he": "שבאים בהתכללות בתבונה דוקא,",
+              "en": "that they are included in *tevuna* specifically,",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1837, 1843],
+                "start": 616.08,
+                "end": 620.18
+              }
+            },
+            {
+              "he": "שהיא בחינת התפשטות אור הבינה למטה כנזכר לעיל",
+              "en": "which *tevuna* is the spreading of the light of *bina* below, to everything separate from *bina*.",
+              "audio": {
+                "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                "words": [1851, 1866],
+                "start": 623.46,
+                "end": 628.5
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**But tevuna is called the lower mother**, *Ima tata'a*, which is like the thing of the *uvchein*, **to give birth to the middos.**",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1575, 1604],
+                  "start": 527.13,
+                  "end": 535.36
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The upper mother and the womb",
+              "text": "This is like a person, where there is really only one mother: *bina* and *tevuna* are two parts of the same thing. The main thing of a person is the intellect and the emotions, the personality, and when you speak about somebody's mother you are mainly speaking about her intellect, emotions and personality. That is who you are talking about, but that is the upper mother, her upper faculties, her head and heart. But the actual birth of a child comes from the womb: that is what actually gives birth to the child, and that is like the lower mother.\n\nSo even though *bina* is called the mother of the children, because it is their real source, the actual birth of the children comes only from *tevuna*. We do not really focus on *tevuna* as its own thing, because doing *hisbonenus* will bring you to *tevuna*, which has not been discussed yet.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1605, 1815],
+                  "start": 535.54,
+                  "end": 605.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And this is the idea of ben u'vas, love and fear, that they are included in tevuna specifically, which tevuna is the spreading of the light of bina below, to everything separate from bina.** So *tevuna* is the power of the intellect that can apply the *sechel* to tell you, in a certain situation, whether it should be *chesed* or *gevura*.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1816, 1901],
+                  "start": 606.62,
+                  "end": 637.08
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The lion in the classroom",
+              "text": "A kid in school learns about a lion; let's say he is learning about Shimshon and the lion. The teacher tells him about lions, how they have big teeth, how strong they are, and how big a miracle it was that Shimshon was able to kill the lion. So now he understands what a lion is. And if he thinks about it, he will not just understand what a lion is; he will have *tevuna*, and he will say, \"Whoa, lions are dangerous. Therefore, the *uvchein*: I should be scared of the lion. The lion is bad for me.\" That is the *tevuna*.\n\nRight now he does not actually feel a fear of the lion, because there is no lion in the room. He does not have a *daas* for it, because it does not relate to him. When the lion walks into the room, his *daas* connects his *tevuna* to the actual emotion, and then an emotion actually comes out of it.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [1902, 2101],
+                  "start": 637.96,
+                  "end": 700.4
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "But even before he has a *daas*, the real emotion is the *tevuna*. The fact that your mind tells you that this thing is dangerous, and if it comes near you, get away: that is the emotion. That is the point where the *moach* (mind) tells the *lev* (heart) what to do: *moach shalit al halev*. Your heart is only going to get actually excited if it is relevant right now, but that is where the *midda* really comes from.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 2-4 Yisroel Saba and Tvunah.mp3",
+                  "words": [2102, 2180],
+                  "start": 700.72,
+                  "end": 724.04
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The intellect of the emotions comes from tevuna, which keeps them going",
+      "summary": "The *mochin* of the *middos*, the intellect that tells an emotion how to go and keeps it going, come from *tevuna*: G-d maintains the heavens, fire and water, with *tevuna*. *Tevuna* is the intermediary that turns the *middos* of *bina*, which have nothing to do with a particular case, into what I should feel now.",
+      "passages": [
+        {
+          "lines": [
+            "tpverqfr"
+          ],
+          "phrases": [
+            {
+              "he": "וגם לזה הטעם בחינת המוחין שבמדות נמשך מבחינת התבונה",
+              "en": "And this is also the reason why the intellect of the emotions comes from *tevuna*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [9, 23],
+                "start": 7.4,
+                "end": 11.96
+              }
+            },
+            {
+              "he": "(וכמו שכתוב יהו״ה בחכמה יסד ארץ,",
+              "en": "as it says, G-d founded the earth with *chachma*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [413, 423],
+                "start": 126.42,
+                "end": 133.18
+              }
+            },
+            {
+              "he": "דאבא יסד ברתא כו'",
+              "en": "because the father founds the daughter.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [427, 432],
+                "start": 135.32,
+                "end": 138.48
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And this is also the reason why the intellect of the emotions comes from tevuna.** Once you have an emotion, the intellect of the emotion is what tells it how to go, and it is also what keeps it going. As just explained, *tevuna* takes the *sechel* and applies it down, and tells your emotion in each situation whether this is good or bad. Should you be happy about this or sad about it? Should you like this or hate it? What applies your understanding of this thing and of the situation to how you should actually feel is *tevuna*, and that is the intellect of the emotions: it tells your emotion what intellect to have, and based on that it keeps the emotion going.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [0, 168],
+                  "start": 3.7,
+                  "end": 55.84
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The child who falls down",
+              "text": "You can see this when a little kid, a baby or even an older kid, falls down. At first he is shocked, just thinking about what happened. Then all of a sudden he calms down a little, realizes what happened, it hits him, and he starts to cry. Why did he not cry right away? Because when it first happened he was shocked, and right away his *chachma* and *bina* were analyzing what happened, trying to figure out what was going on. While he was involved in the mind he did not feel an emotion. Then, after he calmed down a little, he says, \"Wait a minute, that hurt me,\" and he starts to cry.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [169, 312],
+                  "start": 56.5,
+                  "end": 97.32
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "\"Hey, he hit me!\"",
+              "text": "The same if somebody hits somebody. Sometimes at first he is really shocked and does not get angry: \"What's going on?\" Then when he realizes what is going on, he says, \"Hey, he hit me! How could he hit me?\" His *sechel* tells him that he should get mad, and as soon as his *sechel* says, \"Oh, you shouldn't let him do that,\" he starts to get angry. That is the way it is with every emotion.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [313, 406],
+                  "start": 98.22,
+                  "end": 122.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**As it says, G-d founded the earth with chachma, because the father founds the daughter**: *chachma* is the source of *Malchus*, and the earth represents *Malchus*, as will be explained later.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [407, 452],
+                  "start": 122.08,
+                  "end": 146.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "pteqr67h"
+          ],
+          "phrases": [
+            {
+              "he": "כונן שמים בתבונה,",
+              "en": "He maintains the heavens with *tevuna*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [456, 461],
+                "start": 149.68,
+                "end": 152.5
+              }
+            },
+            {
+              "he": "שמים הן בחינת המדות, אש מים כידוע",
+              "en": "And the heavens represent the two emotions, *esh u'mayim*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [469, 479],
+                "start": 156.56,
+                "end": 160.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**He maintains the heavens with tevuna.** **And the heavens represent the two emotions, esh u'mayim.** The word *shamayim* (heavens), it says, is a contraction of *esh u'mayim* (fire and water), and that represents *chesed* and *gevura*. So *tevuna* is what maintains the emotions of *chesed* and *gevura*, of fire and water, because the *sechel* has to tell them what to feel, or else the feelings will go away.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [453, 531],
+                  "start": 147.14,
+                  "end": 183.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "swd6m54u",
+            "4a3kdl7g"
+          ],
+          "phrases": [
+            {
+              "he": "וכן ובתבונה יתכונן,",
+              "en": "And similarly it says, with *tevuna* they are established,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [533, 544],
+                "start": 184.72,
+                "end": 190.16
+              }
+            },
+            {
+              "he": "שהוא בחינת קיום המדות בבחינת המוחין דתבונה שבהם,",
+              "en": "which this is the maintenance of the emotions from the *mochin* of *tevuna*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [553, 573],
+                "start": 195.12,
+                "end": 202.18
+              }
+            },
+            {
+              "he": "כי התבונה כמו ממוצע",
+              "en": "Because *tevuna* is like a sort of intermediary:",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [768, 776],
+                "start": 253.4,
+                "end": 257.18
+              }
+            },
+            {
+              "he": "להביא מוחין מבחינת מדות דבינה במדות שבלב",
+              "en": "it brings an intellect from the emotions of *bina* to the emotions of the heart.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [784, 798],
+                "start": 260.78,
+                "end": 268.38
+              }
+            },
+            {
+              "he": "שזהו כמו כח ההבאה בענין הנבדל, שהוא עיקר ענין התבונה כנזכר לעיל",
+              "en": "That is like the power of bringing something out into something separate from the *sechel*, and this is the general thing of *tevuna*, like we've been explaining.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1014, 1048],
+                "start": 339,
+                "end": 349.12
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And similarly it says, with tevuna they are established, which this is the maintenance of the emotions from the mochin of tevuna**: the intellect that tells the emotions what they should feel is what keeps the emotion going.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [532, 589],
+                  "start": 183.66,
+                  "end": 206.7
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The tape recorder in the head",
+              "text": "You see that when a person has an emotion, he has a little tape recorder going off in his head over and over again, repeating a certain thing. If he is angry he keeps repeating to himself, \"Oh, look what that guy did to me. I'm not going to let him get away with it.\" That is like an *uvchein*. The same with a love: \"Oh, I like this so much. This is so great. This is so great.\" He keeps telling himself that, and that is what keeps the emotion going.\n\nAnd you see sometimes, when people want to hype themselves up, that friends keep telling each other, \"Oh, isn't this great? This is great.\" They want to keep the feeling going.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [590, 763],
+                  "start": 206.98,
+                  "end": 248.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Because tevuna is like a sort of intermediary: it brings an intellect from the emotions of bina to the emotions of the heart.** To go from the absolutely theoretical *middos* of *bina*, spoken of earlier, which have nothing to do with a particular case, to an actual feeling of what I should feel now, you need the *tevuna*, which translates the *sechel* into an *uvchein*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [764, 847],
+                  "start": 249.36,
+                  "end": 284.88
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The chicken brought to the rabbi",
+              "text": "The woman brings the chicken to the rabbi, and he says, \"Well, according to the *Rema*, according to the *Shach*, according to the *Bach*,\" and he starts this whole *pilpul*: it is based on a *Gemara*, it is a dispute, this opinion and that opinion, and it really depends on how you understand this and that. At the end she says, \"So is it kosher or not?\" She does not want to hear the whole *pilpul*; she just wants to know whether it is kosher. So even though you can understand the whole *pilpul* and the whole theory, you have to be able to take it from the theory to the deed: so what does that mean in this case? That is the thing of *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [848, 992],
+                  "start": 286.54,
+                  "end": 326.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This transferring of something from intellect to emotions **is like the power of bringing something out into something separate from the sechel**, because the emotions are separate from the *sechel*, **and this is the general thing of tevuna, like we've been explaining**: the ability to apply the intellect to something separate from it. In this case the power of application is applied to an emotion.\n\nSo now it has been explained what *tevuna* is, and the difference between *tevuna* and the *middos* of *bina*: the *middos* of *bina* are in the theory, and *tevuna* is applying it outside of the theory. Now we are going to explain how you get *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [993, 1124],
+                  "start": 326.94,
+                  "end": 372.44
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The two nuns: hisbonenus, bina sheb'bina, brings bina out into tevuna",
+      "summary": "*Bina* has a bent *nun*, its width, and a straight *nun*, its length, and the name *nun* is spelled with both: the length is included in the width. The double *nun* of *hisbonenus* is *bina sheb'bina*, the intermediary between *bina* and *tevuna*: go over the idea again and again, in your own words, and you absorb it and get *tevuna*.",
+      "passages": [
+        {
+          "lines": [
+            "kga2nxgl",
+            "kt3ffmsq"
+          ],
+          "phrases": [
+            {
+              "he": "וידוע גם כן שיש נו''ן כפופה ונו''ן פשוטה בבינה,",
+              "en": "It's known that there is both a bent *nun* and a straight *nun*, a long *nun*, in *bina*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1134, 1151],
+                "start": 378.44,
+                "end": 384.62
+              }
+            },
+            {
+              "he": "להיות נו''ן כפופה הוא הרוחב ונו''ן פשוטה הוא האורך",
+              "en": "The bent *nun* represents the width of *bina*, and the long *nun* represents the length of *bina*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1171, 1188],
+                "start": 393.62,
+                "end": 399.02
+              }
+            },
+            {
+              "he": "ונ' המלוי שלו בנ' פשוטה",
+              "en": "And the letter *nun* is special: when you're spelling out the name of the letter *nun*, you spell it with a long *nun*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1206, 1246],
+                "start": 406.66,
+                "end": 418.36
+              }
+            },
+            {
+              "he": "מה שאין כן בשאר מילוי האותיות",
+              "en": "This is not the case with any other letter in the Hebrew *alef-beis*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1272, 1285],
+                "start": 427.7,
+                "end": 432.06
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**It's known that there is both a bent nun and a straight nun, a long nun, in bina.** In general the letter *nun* represents *bina*, and **the bent nun represents the width of bina, and the long nun represents the length of bina**, because the bent *nun* goes out to a width and the long *nun* just goes down.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1125, 1211],
+                  "start": 372.44,
+                  "end": 408.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And the letter nun is special.** What is its *milui* (the spelling out of a letter's name)? You spell it with a long *nun*: *nun*, *vav*, *nun*, a bent *nun* and a long *nun*. **This is not the case with any other letter in the Hebrew alef-beis.** The only other letter doubled in its *milui* is *mem*, but there it is not a straight *mem* but a closed *mem*, and the significance of those two *mems* will be explained later. The other letters that have a long form, like *kaf*, *pei* and *tzadik*, are not spelled out with the long one. So what does this represent?",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1212, 1359],
+                  "start": 408.26,
+                  "end": 458.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "63bj73g4"
+          ],
+          "phrases": [
+            {
+              "he": "כי האורך נכלל ברוחב",
+              "en": "The length is included in the width.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1364, 1370],
+                "start": 461.54,
+                "end": 463.42
+              }
+            },
+            {
+              "he": "וכך הוא בתבונה,",
+              "en": "The same thing with *tevuna*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1510, 1514],
+                "start": 508.2,
+                "end": 509.28
+              }
+            },
+            {
+              "he": "ואמנם נון הכפל בענין הנקרא התבוננות,",
+              "en": "But the double *nun* that we find in the word *hisbonenus*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1876, 1886],
+                "start": 619.76,
+                "end": 627.72
+              }
+            },
+            {
+              "he": "כמו עמי לא התבונן וכו',",
+              "en": "like it says, \"My people do not contemplate.\"",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1892, 1899],
+                "start": 629,
+                "end": 633.6
+              }
+            },
+            {
+              "he": "שזהו בחינת פנימית בינה",
+              "en": "Which this *hisbonenus* is the inner thing of *bina*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [1996, 2004],
+                "start": 658.5,
+                "end": 660.98
+              }
+            },
+            {
+              "he": "הנקרא עיון,",
+              "en": "which is called analysis or study,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [2007, 2012],
+                "start": 661.76,
+                "end": 663.52
+              }
+            },
+            {
+              "he": "לעמוד על דבר כו'",
+              "en": "to dwell on a thing, on a matter, until you understand it clearly.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [2017, 2029],
+                "start": 665.8,
+                "end": 669.5
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The length is included in the width.** The *milui* of a letter is the explanation of the letter. If I point to a letter *nun* on a page, a bent *nun*, a regular *nun*, and ask you what letter that is, you will tell me \"*nun*\". By telling me \"*nun*\" you told me a bent *nun* and a straight *nun*, because what you told me was *nun*, *vav*, *nun*. So the explanation of a bent *nun* includes a long *nun*: the length is included in the width. When you study an idea and study its width, and see it with many different explanations, you start to get the length, that you are able to explain it simply too.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1360, 1506],
+                  "start": 459.48,
+                  "end": 505.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**The same thing with tevuna.** The ability to apply the idea outside of itself, which is the length of *tevuna*, to do things with it, to give advice or a ruling based on it, and to bring it to an emotion, depends on the width of *tevuna*: that you can explain it to yourself in many different ways and find examples of it outside of the idea itself.\n\nThe difference between the width of *bina* and the width of *tevuna* is that the width of *bina* is only the explanations and *meshalim* that are necessary to understand the idea itself.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1507, 1636],
+                  "start": 506.56,
+                  "end": 546.04
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The motivational speaker's stories",
+              "text": "Once you understand the idea itself, *tevuna* is like a good speaker, who finds all these stories and examples and cute ways of saying it that are not really necessary to understand the idea. They help it sink in, though.\n\nYou see this with motivational speakers and inspirational books: one of the main things they do is just give you stories to illustrate the point. It is not really helping you understand the point; you understand it already. But by giving you a lot of examples and sayings and cute little quotes, it helps you feel it, it inspires you. Listen to any get-rich-quick tape: they tell you all these stories of people the program worked for, and it gets you excited, because you see this case and that case with all the details. It is not helping you understand anything; it helps you appreciate it.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1637, 1869],
+                  "start": 546.66,
+                  "end": 617.84
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**But the double nun that we find in the word hisbonenus, like it says, \"My people do not contemplate.\"** Before, we explained the two *nuns* as meaning that you have to learn it over and over again: in *hisbonenus* you have to do it over and over until you understand it very clearly. But now we see that the two *nuns* are really a bent *nun* and a straight *nun*. **Which this hisbonenus is the inner thing of bina, which is called analysis or study, to dwell on a thing, on a matter, until you understand it clearly.**",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [1870, 2029],
+                  "start": 617.84,
+                  "end": 669.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5lrvb2he"
+          ],
+          "phrases": [
+            {
+              "he": "שנקרא בינה שבבינה,",
+              "en": "This is called *bina sheb'bina*.",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [2033, 2037],
+                "start": 671.14,
+                "end": 672.3
+              }
+            },
+            {
+              "he": "הוא ממוצע בין בינה לתבונה",
+              "en": "So this *hisbonenus* is the intermediary between *bina* and *tevuna*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [2043, 2052],
+                "start": 675.8,
+                "end": 679.7
+              }
+            },
+            {
+              "he": "על ידי הנו''ן פשוטה,",
+              "en": "through the *nun pshuta*,",
+              "audio": {
+                "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                "words": [2057, 2060],
+                "start": 682.26,
+                "end": 683.56
+              }
+            },
+            {
+              "he": "שמחמתו נקרא התבוננות כו' ודי למבין:"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is called bina sheb'bina** (*bina* within *bina*). **So this hisbonenus is the intermediary between bina and tevuna, through the nun pshuta** (the straight *nun*). Because it has two *nuns*: the first *nun* is just understanding the idea, and the second *nun* is bringing that idea out into *tevuna*. When you do the *hisbonenus* of *bina sheb'bina* over and over again, first you get the bent *nun*, which is the *bina* itself: you understand it. Then the length of *bina* brings it out into *tevuna*, and that is the straight *nun* of *hisbonenus*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [2030, 2140],
+                  "start": 669.72,
+                  "end": 711.86
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "So the way to get *tevuna* is by doing a lot of *hisbonenus*. If you do *hisbonenus* and understand the idea in theory but cannot apply it, it means you have to do the *nun* again: go back over it a few more times. If you study the idea more and try to explain it to yourself in different ways, you will start to develop a *kelita* for it, to absorb it, and then you will have *tevuna*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [2141, 2232],
+                  "start": 712.8,
+                  "end": 736.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "One more thing about the double *nun* of *hisbonenus*, the bent and the straight: these are two different types of study. You see this in *Kuntres Etz HaChaim*, where the Rebbe Rashab explains how to learn *nigleh* (the revealed Torah), how to learn *Gemara*, with the same system that is explained here in chapters one and two for how to do *hisbonenus*. He explains that there are two steps in learning. First you learn it and understand it, and are able to say over the words of the original very well. Then, after you understand the original words very well, you say it over in your own words. That process of saying it over in your own words is *tevuna*. And that is what was said before about the width of *tevuna*: being able to say it in different words, in your own words.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [2233, 2420],
+                  "start": 738.52,
+                  "end": 790.12
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "When you can switch the idea into your own words, which is the width of *tevuna*, that brings you the length of *tevuna*; and when you have the length and the width, you are able to get the depth, and that brings you to the *kelita*, that you really absorb the idea.\n\nSo there are two types of learning. In one you just focus on the original material: if you are learning the *meshalim* in *Chassidus*, or whatever idea, you have to understand them all very well and get the original very well. Then, to get the *tevuna*, you have to try to say it over in your own words and apply it to different situations, and also to your own life. When you try to do that, you start to absorb it and get *tevuna*. So it is two different types of learning: a bent-*nun* learning and a straight-*nun* learning.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 2-5 Yisroel Saba and Tvunah (End).mp3",
+                  "words": [2421, 2607],
+                  "start": 790.92,
+                  "end": 835.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What makes the light of *bina* spread out into *tevuna*, and what does the shepherd at the well show about the man of *tevuna*?",
+      "lines": [
+        "fx4uzm2l",
+        "lg4oylvk",
+        "wbbx7sao",
+        "ktlyq343",
+        "e6rnhnmx"
+      ]
+    },
+    {
+      "question": "Why can a *tafsan*, or someone who knows a *pilpul* with all its *sevaros*, still be unable to rule in a particular case?",
+      "lines": [
+        "3olgfxjf",
+        "wdjketw2",
+        "6wn65rrk",
+        "rblvjh2o",
+        "4wuqv36w"
+      ]
+    },
+    {
+      "question": "If *bina* has *middos* of its own, the intellect leaning to merit or to guilt, why is *tevuna* still needed?",
+      "lines": [
+        "z4uyw4pm",
+        "x7a3trji",
+        "kpvuxwit"
+      ]
+    },
+    {
+      "question": "What are the depth, the length and the width of *tevuna*?",
+      "lines": [
+        "7h7ajdbp",
+        "uxwal6su",
+        "5qr26bde"
+      ]
+    },
+    {
+      "question": "Why are the emotions born from *tevuna*, the lower mother, and not from *bina*, and what does the lion in the classroom show?",
+      "lines": [
+        "u7ixfupf",
+        "p4zitoes"
+      ]
+    },
+    {
+      "question": "How do the two *nuns* of *hisbonenus* show the way to get *tevuna*?",
+      "lines": [
+        "63bj73g4",
+        "5lrvb2he"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "19 - Chap- 2-1 Yisroel Saba and Tvunah .mp3",
+      "words": [0, 2],
+      "reason": "logistics",
+      "note": "\"Lights, camera, action.\" The start of the recording."
+    }
+  ],
+  "notes": [
+    {
+      "text": "Phrases he reads without translating keep their Hebrew alone: the end of line 1 (v'nikra Ima tata'a), the second half of line 11 (he explains it in the next sentences), most of line 12, the middle of line 13, the end of line 17 (kayadua), the end of line 21 (v'dai l'mevin), the clause of line 22 on the root of the letters of thought called Leah (21 w1679-1729 explains it rather than translating it), and the end of line 37. Line 33's phrase cites his explanation right after the reading (23 w1014-1048), his only rendering of it.",
+      "lines": [
+        "dqtw2mat",
+        "rblvjh2o",
+        "4wuqv36w",
+        "7pwfwk4y",
+        "z4uyw4pm",
+        "6xwunvmq",
+        "ucybbuqv",
+        "4a3kdl7g",
+        "5lrvb2he"
+      ]
+    },
+    {
+      "text": "The atomic bomb: he says the physicists told the president to make the bomb \"before the Russians make it\" (22 w844-876), and that \"he\" (apparently Einstein) realized a bomb could be made. Historically the 1939 letter warned of Germany. Kept as he said it. Flagged (other) for a public edition, whose text drops only the clause about the Russians.",
+      "lines": [
+        "uxwal6su"
+      ]
+    },
+    {
+      "text": "Shatik Rav (21 w877-1045): he gives it from memory (\"I think it's the machlokes\"), as a dispute in Beitza over an egg laid on Yom Tov and a cow born on Yom Tov. A reviewer may want to check the source; the block keeps his account.",
+      "lines": [
+        "ucybbuqv"
+      ]
+    },
+    {
+      "text": "Shechita (20 w1317-1388): he says one may slaughter with anything sharp, even slowly all day, as long as there is no pressing or ripping. Kept as an illustration of the practical versus the essential; it is not flagged, but a public edition may want a reviewer to read it as halacha.",
+      "lines": [
+        "rok4avng"
+      ]
+    },
+    {
+      "text": "Sensitivity: two flags. The contrast between how yeshiva boys and girls learn kashrus (20 w1405-1568, women); and the atomic-bomb mashal's \"before the Russians\" (22 w777-914, other), a historical slip under his name. Left unflagged: the woman who brings her chicken to the rabbi (a stock scene; the joke is on the rabbi's pilpul), the Greeks' and America's mindsets, and motivational speakers and get-rich-quick tapes (said without contempt, as an example of tevuna's stories). The remark that it became popular to learn Gemara in the pilpul style is an opinion on a way of learning, not on people.",
+      "lines": [
+        "rok4avng",
+        "swd6m54u",
+        "uxwal6su",
+        "63bj73g4"
+      ]
+    },
+    {
+      "text": "Kuntres Etz HaChaim (the Rebbe Rashab's tract on learning) is spelled here as a title; the table's Etz Chaim is the Arizal's book, a different work.",
+      "lines": [
+        "rok4avng",
+        "5lrvb2he"
+      ]
+    }
+  ]
+}

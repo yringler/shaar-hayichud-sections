@@ -789,7 +789,10 @@ Two series. `markel-advanced` (catalog series 37) has chapters 1–19, each
 written from the classes, reviewed against the transcripts and then
 migrated to class-only phrase translations (each `en` anchored with
 `audio`; phrases he only reads are Hebrew-only). `walters-original`
-(catalog series 0) has chapter 10, a sample. Nobody has yet listened to
+(catalog series 0) has every chapter the series teaches (1, 2 and 10–32),
+each written from the classes and then reviewed against the transcripts
+by a second agent; it is public (Rabbi Walters gave permission), so its
+87 sensitivity flags decide what `/data/v1/study/` prints. Nobody has yet listened to
 the audio against the blocks, and tapes with only Sofer's word times may
 start a second or two off.
 A new series needs a directory with `series.json` and `NOTES.md`.

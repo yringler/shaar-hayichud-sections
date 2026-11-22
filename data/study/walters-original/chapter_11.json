@@ -1,0 +1,2970 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-original",
+  "chapter": "chapter_11",
+  "title": "The nimshal in G-d: Yachid, Echad, Kadmon, and the fourth level after the tzimtzum",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 3",
+    "date": "2026-11-22"
+  },
+  "lectures": [
+    {
+      "id": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+      "transcriptionId": "f90ce0c8-aa50-45df-9a72-1764fd046a18"
+    },
+    {
+      "id": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+      "transcriptionId": "cb6100cd-21a0-47ff-b0fa-379871dcc9d3"
+    },
+    {
+      "id": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+      "transcriptionId": "69c50d3a-e412-46ed-82f2-2e8e0e858538"
+    },
+    {
+      "id": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+      "transcriptionId": "300d0f0d-438a-464f-9906-8ebce21392bb"
+    },
+    {
+      "id": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+      "transcriptionId": "a6e8daf1-8a3f-4cd0-b244-a0a7636b22b7"
+    },
+    {
+      "id": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+      "transcriptionId": "62e19153-4468-44c1-8bd5-c3b9141b7c48"
+    }
+  ],
+  "overview": "Chapter 11 is the *nimshal* of chapter 10: the three levels of the soul's powers, applied to G-d. In *Yachid*, the *Atzmus Or Ein Sof* before the *tzimtzum*, the ten *sefiros* are \"hidden in the very essence\". G-d's *chafetz chesed*, His power to create, includes every *sefira* the way a kind person's kindness includes the intellect, emotions and deeds of every kindness he will do, with none of them there as a separate thing; you cannot teach a computer to be kind. Even *Malchus*, His pleasure from others listening to Him, is there, and it is infinite, which is why the smallest detail of a *mitzva* matters. *Echad* is the light that shines and spreads: *sefiros* without end, united and still \"without a what\", like the man who wants to do a nice thing and does not know what. *Kadmon* is the whole estimation in letters, down to the hairs on your head, like the basketball player who has not yet thrown. A fourth level, the *reshimu* and the *Kav* after the *tzimtzum*, is brought here to show that everything after it was first in the Essence. The chapter ends by reading the levels into *Baruch She'amar*.",
+  "terms": [
+    {
+      "term": "chafetz chesed",
+      "he": "חפץ חסד",
+      "gloss": "the desire for kindness; above, G-d's power to create, the reason for the simple will to make the whole chain",
+      "line": "twc6hia4"
+    },
+    {
+      "term": "hiyuli",
+      "he": "היולי",
+      "gloss": "the concealed essential state: a simple essence that includes every detail with none of them there as a separate thing",
+      "line": "a4r4uhuq"
+    },
+    {
+      "term": "tehiru ila'a",
+      "he": "טהירו עילאה",
+      "gloss": "the upper purity: only G-d, revealed to Himself, where nothing is seen even as separate from Him",
+      "line": "3bp4dvgk"
+    },
+    {
+      "term": "melucha",
+      "he": "מלוכה",
+      "gloss": "kingship",
+      "line": "aydlysav"
+    },
+    {
+      "term": "Malchus d'Ein Sof",
+      "he": "מלכות דאין סוף",
+      "gloss": "the kingship of the Infinite: the ability to take pleasure from others listening to Him, infinite in the Essence",
+      "line": "aydlysav"
+    },
+    {
+      "term": "chok",
+      "he": "חק",
+      "gloss": "a commandment done just because G-d said so; in their essence all the mitzvos are a chok",
+      "line": "y5ou5imc"
+    },
+    {
+      "term": "sefiros b'li ma",
+      "he": "ספירות בלי מה",
+      "gloss": "sefiros without a what: separate things that have no distinct nature yet",
+      "line": "4zngdgsn"
+    },
+    {
+      "term": "Kadmon",
+      "he": "קדמון",
+      "gloss": "preceding: He already preceded within Himself exactly how He will give, every detail pre-planned",
+      "line": "nwxkqqj7"
+    },
+    {
+      "term": "reshimu",
+      "he": "רשימו",
+      "gloss": "the impression of the original light left after the first tzimtzum: the letters of Kadmon without the light in them",
+      "line": "7iafp4dr"
+    },
+    {
+      "term": "tehiru tata'a",
+      "he": "טהירו תתאה",
+      "gloss": "the lower purity: the reshimu and the start of the Kav, G-d's revelation relating to something separate, the general makif of the chain",
+      "line": "ih24iwn2"
+    },
+    {
+      "term": "nistar",
+      "he": "נסתר",
+      "gloss": "hidden: \"Blessed is He\" in the third person, the source of the world whose identity is hidden",
+      "line": "sy5u5uzp"
+    },
+    {
+      "term": "kav hamida",
+      "he": "קו המדה",
+      "gloss": "the measuring line before Adam Kadmon, which divides the light into ten circles as estimated in the reshimu",
+      "line": "intao3hc"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Yachid: every attribute is in the Essence the way kindness is in a kind person",
+      "summary": "The *nimshal* of the soul's three levels begins with the *Atzmus Or Ein Sof* before the *tzimtzum*, called *Yachid*. There the ten *sefiros* are \"hidden in the very essence\": G-d's *chafetz chesed*, His power to create, includes every *sefira*, and so does His *Malchus*, the way a kind person's kindness includes every detail of every kindness he will do, with none of them there as a separate thing.",
+      "passages": [
+        {
+          "lines": [
+            "kxpbjywu",
+            "pls7l3ay"
+          ],
+          "phrases": [
+            {
+              "he": "(יא) והנמשל מכל הנזכר לעיל בנפש",
+              "en": "the *nimshal* for everything that we spoke about in the previous chapter regarding the soul,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [4, 21],
+                "start": 5.2,
+                "end": 14.16
+              }
+            },
+            {
+              "he": "יובן למשכיל",
+              "en": "the correspondence to these three levels is understood to a *maskil*, to somebody that knows how to find the abstract point, the *chachma*,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [43, 68],
+                "start": 26.8,
+                "end": 41.78
+              }
+            },
+            {
+              "he": "למעלה בעצמות אור אין סוף שלפני הצמצום",
+              "en": "it's understood above in G-dliness, in the essence of the infinite light that precedes the *tzimtzum*,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [75, 90],
+                "start": 42.58,
+                "end": 49.78
+              }
+            },
+            {
+              "he": "שנקרא יחיד",
+              "en": "which this light is called *Yachid*, alone, single,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [93, 100],
+                "start": 52.16,
+                "end": 55.86
+              }
+            },
+            {
+              "he": "וכלול גם שם מעשר ספירות,",
+              "en": "and even there are included ten *sefiros*,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [106, 112],
+                "start": 59.14,
+                "end": 62.64
+              }
+            },
+            {
+              "he": "ונקרא עשר ספירות הגנוזות בהעלם העצמות ממש",
+              "en": "And these are called the ten hidden away *sefiros* in the concealment of the very essence, the very self.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [120, 138],
+                "start": 67.4,
+                "end": 75.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The nimshal for everything that we spoke about in the previous chapter regarding the soul**: chapter 10 explained the three levels of how the powers are revealed from the *yechida* (the essence of the soul). What corresponds to these three levels above **is understood to a maskil** (a person of intellect): **to somebody that knows how to find the abstract point, the chachma**.\n\nAbove, it is understood **in the essence of the infinite light that precedes the tzimtzum** (contraction), and this light is called *Yachid*: **alone, single**.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [0, 100],
+                  "start": 1.2,
+                  "end": 55.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And even there are included ten sefiros**, and they are called **the ten hidden away sefiros in the concealment of the very essence**. Usually, when one says *eser sefiros hagnuzos* (the ten hidden *sefiros*), it means the way the *sefiros* are in *Adam Kadmon* or something like that. Here they are called hidden \"in the concealment of the very essence\": the way the *sefiros* are hidden in the *Atzmus Ein Sof* before the *tzimtzum*.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [101, 190],
+                  "start": 56.94,
+                  "end": 100.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "twc6hia4",
+            "nmczn7fa",
+            "grie67de",
+            "s5hfeq2l",
+            "cviljhsx"
+          ],
+          "phrases": [
+            {
+              "he": "כמו בחינת חפץ חסד שכלול בבחינת עצמיות דאור אין סוף,",
+              "en": "like the desire for kindness, which was included in the essence of the infinite light,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [200, 214],
+                "start": 106.42,
+                "end": 112
+              }
+            },
+            {
+              "he": "שמחמתו וסיבתו היה הרצון הפשוט לכל ההשתלשלות,",
+              "en": "that because of it and as a result of it came the simple desire for the entire *hishtalshelus*.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [222, 239],
+                "start": 118.88,
+                "end": 125.8
+              }
+            },
+            {
+              "he": "שזהו בדבר פרט",
+              "en": "which this is a detail.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [243, 247],
+                "start": 128.36,
+                "end": 130.82
+              }
+            },
+            {
+              "he": "כמו שכתוב בעץ חיים בהקדמה,",
+              "en": "like it says in *Etz Chaim* in the introduction,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [353, 361],
+                "start": 174.24,
+                "end": 176.48
+              }
+            },
+            {
+              "he": "כשעלה ברצונו הפשוט כו'",
+              "en": "when it came up in G-d's simple desire to create the world,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [366, 377],
+                "start": 179.64,
+                "end": 183.38
+              }
+            },
+            {
+              "he": "ובודאי סיבת עליית הרצון הפשוט בעצמותו היינו רק כי חפץ חסד הוא בעצמו",
+              "en": "and the reason for this simple desire in Himself to create the world is because He desires kindness within Himself.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [391, 416],
+                "start": 190.68,
+                "end": 202.52
+              }
+            },
+            {
+              "he": "על כן",
+              "en": "therefore,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [419, 419],
+                "start": 205.32,
+                "end": 205.72
+              }
+            },
+            {
+              "he": "עלה ברצונו להטיב חסדו",
+              "en": "therefore it arose in desire to make good, in other words, to express His kindness,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [424, 438],
+                "start": 207.98,
+                "end": 212.12
+              }
+            },
+            {
+              "he": "להיות מקור למקור להשתלשלות דקו וחוט כו'",
+              "en": "to make a source for a source for the *hishtalshelus* of the *kavim*, etc.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [445, 458],
+                "start": 215.08,
+                "end": 219.08
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Like the desire for kindness, which was included in the essence of the infinite light, that because of it and as a result of it came the simple desire for the entire hishtalshelus** (the chain of descent). **Which this is a detail.**\n\nIt is like the *mashal* (analogy) of the nice person, *chafetz chesed*: he sees the poor person and has a desire to help him, or he wants to buy his friend a birthday present. That is a particular desire for *chesed* (kindness). So too, the world was created because of the *chafetz chesed*, and the desire to create this particular *hishtalshelus*, with these ten *sefiros*, is the *davar prat*, the particular thing.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [191, 347],
+                  "start": 100.84,
+                  "end": 170.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As it says **in Etz Chaim in the introduction**: **when it came up in G-d's simple desire to create the world**. And the reason for that simple desire in Himself is **because He desires kindness within Himself**. **Therefore it arose in desire to make good**, to express His kindness: **to make a source for a source for the hishtalshelus**.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [348, 458],
+                  "start": 170.28,
+                  "end": 219.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It explains in *Tanya* that the *nimshal* (what the analogy stands for) of *chesed* above is G-d's *koach* (power), His ability to create and to enliven without end. So the source of the *hishtalshelus* is G-d's power of creation. That is the *chesed*, and the *chafetz chesed* is there because G-d is a Creator. Essentially, G-d has this thing that He is a Creator, and the whole *hishtalshelus* only reveals the ability of creation. In the same way, a person is essentially a kind person, and he expresses it with a desire for the kind thing.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [459, 567],
+                  "start": 221.5,
+                  "end": 276.3
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Creation is something separate and something limited, and still its source must come from G-d. The only way a creation could exist is if there is a Creator, and only G-d could be a Creator.\n\nThis is how the *sefiros* are in the level of *Yachid*: not that they are *mamash* (actually) there as *sefiros*, but the *yecholes* (ability) for them must come from the *etzem* (essence), from G-d.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [568, 665],
+                  "start": 277.54,
+                  "end": 312.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fsx6hnch",
+            "a4r4uhuq",
+            "d3jpuevz"
+          ],
+          "phrases": [
+            {
+              "he": "והרי זה על דרך דוגמא",
+              "en": "this is similar,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [674, 676],
+                "start": 315.85,
+                "end": 317.11
+              }
+            },
+            {
+              "he": "כשמחמת עצמיות המדה דחפץ חסד הכלולה בבחינת יחידה כנזכר לעיל,",
+              "en": "like when, as a result of a person's essential desire for kindness, which is included in his *yechida*,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [686, 703],
+                "start": 320.88,
+                "end": 325.49
+              }
+            },
+            {
+              "he": "עולה ברצונו לעשות טוב וחסד בדבר פרט כנזכר לעיל",
+              "en": "It then comes up in his desire to do a particular *chesed* and *tov* in a particular way,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [712, 729],
+                "start": 342.94,
+                "end": 350.46
+              }
+            },
+            {
+              "he": "שבא בגלוי מן העלמו ההיולי דחפץ חסד,",
+              "en": "and then it becomes revealed from its concealed *hiyuli*, its concealed essential state in his essential desire for *chesed*,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [744, 762],
+                "start": 361.08,
+                "end": 371.14
+              }
+            },
+            {
+              "he": "לכלול כל מה שיעלה בפרט ברצונו להטיב",
+              "en": "and now it becomes a desire that includes everything that will come up in detail, every detail that he'll ever want to do, every kindness he'll ever want to do.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [763, 794],
+                "start": 371.14,
+                "end": 384.32
+              }
+            },
+            {
+              "he": "הכל בא מחמתו וכחו כו'",
+              "en": "Everything comes as a result of and through the power of this *chafetz chesed*.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [800, 813],
+                "start": 387.98,
+                "end": 392.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is similar** to a person: **as a result of a person's essential desire for kindness, which is included in his yechida, it then comes up in his desire to do a particular chesed** and *tov* (good). **It becomes revealed from its concealed hiyuli** (raw potential), its concealed essential state in his desire for *chesed*, and now it is a desire **that includes everything that will come up in detail**: every kindness he will ever want to do. **Everything comes as a result of and through the power of this chafetz chesed.**",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [666, 813],
+                  "start": 312.5,
+                  "end": 392.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So it is all really an expression of the *chafetz chesed*. In the same way, the entire *hishtalshelus* is a *gilui* (revelation) of G-d's essential *yecholes* to create, to make a *hishtalshelus*. And that is how the *hishtalshelus* really comes from the *Atzmus Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [814, 845],
+                  "start": 393.22,
+                  "end": 408.54
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "How can the hishtalshelus, a creation of something separate from G-d, have its source in the Atzmus Ein Sof?",
+              "askedBy": "teacher",
+              "text": "This is the real question that chapters 10 and 11 come to explain: how does a *hishtalshelus*, a creation of something separate from G-d, which is the whole idea of the *hishtalshelus*, have a source? How is it part of the *Atzmus Ein Sof*, which means the revelation of G-d's essence exactly the way He is?\n\nThe answer is that G-d cannot be defined as \"this, and that's all He is\". But among other things, He surely is a Creator also: He has the ability to create. Therefore the creations are included in knowing Him, because to know what His ability of creation is, you have to understand the creations. And since G-d Himself knows what He is, He knows that He can create, and He knows all the creations He can make.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [846, 1021],
+                  "start": 409.9,
+                  "end": 473.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "kcb4r75d",
+            "c33vypdb",
+            "ode6voeg"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שבגלוי רצון שבא מחמת חפץ חסד זה,",
+              "en": "and just like the revealed desire of kindness that comes as a result of this essential desire for kindness,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1035, 1063],
+                "start": 481.92,
+                "end": 496.36
+              }
+            },
+            {
+              "he": "כלול מי', חב''ד ומדות כו'",
+              "en": "just like when it's revealed it includes ten *sefiros*, that there's the *Chabad* and the *middos* and the *machshava*, *dibur* and *maaseh*.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1064, 1084],
+                "start": 497.46,
+                "end": 503.64
+              }
+            },
+            {
+              "he": "מזה מוכרח שגם בבחינת חפץ חסד ההיולי שכלול בעצמות ממש, כלול מי', חכמה ומדות כו'"
+            },
+            {
+              "he": "רק שלא יתכן בהם לומר גם ענין ההתכללות והאחדות,",
+              "en": "Only that even though we're saying that all these ten powers must be there in the kindness, you can't say that they are separate things that unite and are included in one there,",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1301, 1340],
+                "start": 582.12,
+                "end": 597.96
+              }
+            },
+            {
+              "he": "אחר שכלול בעצמות בבחינת היולי עדיין כו'",
+              "en": "because they're completely one with the self, and they're still like a simple essence. They're still what's called a *hiyuli*, a simple essence.",
+              "audio": {
+                "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1355, 1378],
+                "start": 603.48,
+                "end": 611.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Now back to the person, in the *mashal*. **Just like the revealed desire of kindness** that comes from his essential desire for kindness **includes ten sefiros**, *Chabad* (*chachma*, *bina* and *daas*) and the *middos* (emotional attributes) and *machshava*, *dibur* and *maaseh* (thought, speech and action): he has a whole *sechel* (intellect) and *middos* for how to do the *chesed*, as the last chapter explained.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1022, 1105],
+                  "start": 473.1,
+                  "end": 510.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Therefore, since we see that when the person actually expresses the kindness it comes out with intellect and emotions and all these things, we must say that they are inherent in the kindness: he has this essential thing in himself, that he knows what kindness is. It is an aspect of the human soul that, when it expresses itself, part of the way it expresses itself is in kindness. And included in that is that for it to be a kindness, it has to be done with a *sechel*, with *middos*, and with thought, speech and action, and he knows how to make all of those come out in the way of *chesed*. Since all these details came out from him, they were all included in the essence of the kindness the way it was in his soul.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1106, 1284],
+                  "start": 510.04,
+                  "end": 571.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Only that even though** all these ten powers must be there in the kindness, **you can't say that they are separate things that unite and are included in one there.** Why not? **Because they're completely one with the self**: they are still what is called a *hiyuli*, **a simple essence**.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1285, 1378],
+                  "start": 573.18,
+                  "end": 611.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As explained in *Kuntres Inyana shel Toras HaChassidus* and in other places, an essence is higher than everything, and it goes into everything. It is like oil, which does not mix with anything and permeates everything. So the real essence of kindness is higher than any details and any sort of explanation.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1379, 1444],
+                  "start": 614.06,
+                  "end": 641.86
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "That is why only a person can really have a thing of kindness. You cannot make a checklist of what it means to be kind: if you do this, and you do that, and you smile, then \"you could teach a computer how to be kind.\" No, you can't, because the real thing of kindness is essentially beyond explanation. \"It's a higher thing. It's an essence.\"",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1445, 1519],
+                  "start": 643.74,
+                  "end": 665.32
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "Once you have that point, it will automatically come out in everything: in a certain way in the *sechel*, in a certain way in the *middos*, and in a certain way in thought, speech and action. The kindness affects everything, each in its own way, but it all comes from that one point of *chesed*. If a person has that thing, that they appreciate the *chesed*, they will automatically know how to bring it out in the *sechel* and in the *middos* and in everything. And if they do not have it, you could try to act it out, and make your *sechel* look like it, and make your *middos* look like it, \"but it still won't really be *chesed*.\"",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1520, 1652],
+                  "start": 666.78,
+                  "end": 701.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the idea of the *etzem*. In the *hiyuli* of the *chesed*, the essence of the *chesed*, we say that it includes all ten, the *sechel* and the *middos* and everything, but there, there is only the *chesed*. There is really only the kindness, nothing else; you do not see that there is a *sechel* or *middos* there at all.\n\nIn the same way in the *nimshal*: when G-d actually reveals this thing of *chesed* and makes the *hishtalshelus*, it comes out with ten *sefiros*, but really it is all included in one thing, the thing of *chesed*, His power of being a Creator.",
+              "audio": [
+                {
+                  "lecture": "18 - Chap- 11-1 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1653, 1774],
+                  "start": 702.42,
+                  "end": 744.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "s4wpq4jf",
+            "3bp4dvgk",
+            "u2udh3z2"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו כן במדה זולתה,",
+              "en": "in the same way with another *midda*,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [5, 11],
+                "start": 4.72,
+                "end": 7.09
+              }
+            },
+            {
+              "he": "כמו מדת הגבורה",
+              "en": "like the *midda* of *gevura*, of severity, of judgment, of limitation,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [15, 25],
+                "start": 9.3,
+                "end": 14.62
+              }
+            },
+            {
+              "he": "או הנצח",
+              "en": "or the *midda* of victory, of conquering, of enduring, overcoming obstacles,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [28, 38],
+                "start": 17.44,
+                "end": 25.28
+              }
+            },
+            {
+              "he": "והתפארת",
+              "en": "and of beauty,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [40, 42],
+                "start": 27.06,
+                "end": 27.76
+              }
+            },
+            {
+              "he": "וכהאי גוונא",
+              "en": "and the like,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [45, 47],
+                "start": 29.96,
+                "end": 30.45
+              }
+            },
+            {
+              "he": "הכל הוא כלול בעצמיות דאור אין סוף",
+              "en": "All of these are included in the self, the essence of the *Ein Sof*,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [57, 70],
+                "start": 35.82,
+                "end": 40.62
+              }
+            },
+            {
+              "he": "שנקרא טהירו עילאה",
+              "en": "which is called the upper purity.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [71, 76],
+                "start": 40.66,
+                "end": 42.62
+              }
+            },
+            {
+              "he": "והוא הנקרא יחיד",
+              "en": "and this is what is called *Yachid*, alone, single,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [563, 571],
+                "start": 228.02,
+                "end": 232.42
+              }
+            },
+            {
+              "he": "שלמעלה מאחד פשוט כו'",
+              "en": "which is higher than a simple *Echad*, a simple unity, simple one, which already recognizes parts.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [725, 742],
+                "start": 290.48,
+                "end": 299.63
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**In the same way with another midda** (attribute): **like the midda of gevura** (might), **of severity, of judgment, of limitation**; *netzach*, **victory, of conquering, of enduring, overcoming obstacles**; and *tiferes*, **beauty**.\n\nG-d inherently has the ability of *gevura*: He is a *gibor* (mighty one), He can limit things and hide His light, to make a *tzimtzum* and everything. And *netzach*: even with any changes and any type of *tzimtzum* and *hishtalshelus* that He makes, He still endures, and His light can still shine there. Even by the lowest place, the *gilui* of G-d is still there.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [0, 168],
+                  "start": 0,
+                  "end": 80.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And *tiferes*, beauty: something beautiful is not all one color, but something that puts together many colors, and opposite colors. So *tiferes* is G-d's ability to put together opposites. He puts together the soul and the body: the soul is an eternal spiritual being and the body a limited physical being, opposites, and G-d puts them together until they become like one thing.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [169, 259],
+                  "start": 82.4,
+                  "end": 121.66
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The Ark that took up no space",
+              "text": "Similarly, there is being *l'maala min hateva* (higher than nature), and there are the limitations of time and space, of nature, and G-d puts them together in different ways. Especially the Ark in the Holy Temple: \"the Ark was not of the measure.\" On the one hand the Ark took up space, and at the same time it did not. If you measured the Ark, it measured two and a half cubits, and the Holy of Holies was ten cubits. But if you measured from one side of the Ark to the wall of the Holy of Holies, and from the other side to the other wall, you would get five cubits on each side. It did not take up two and a half cubits. And there are all different examples.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [260, 414],
+                  "start": 121.66,
+                  "end": 174.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And the like**: the same applies to all the other *sefiros*. All ten are included **in the self, the essence of the Ein Sof, which is called the upper purity**, *tehiru ila'a*.\n\nIt is called the upper purity because pure means like pure oil: it is only one thing, only oil. So here it is pure: it is only G-d, and you see only a revelation of G-d. The lower purity is where you see something separate from G-d as revealing Him, but you still see it all as revealing Him. Here you do not even see it as something separate from G-d.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [415, 558],
+                  "start": 174.02,
+                  "end": 224.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And this is what is called Yachid, alone, single.** Here you see that there is just G-d, and He is G-d. Because of what He is, He is essentially the essence of all possible existence, and He inherently includes the ten *sefiros*. But not that you see the ten *sefiros* there as any type of existence at all: you just see G-d. Because you know what G-d is, you automatically know that G-d can do *chesed*, and *chachma*, and *gevura*, and *netzach*, and *hod*. Not because you are thinking about *chesed* and *gevura*: if you know what it means to be an *Aibershter* (the One Above), you automatically know that He can do anything, including these things.\n\nThis is **higher than a simple Echad, a simple unity, simple one, which already recognizes parts**: the unity of parts.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [559, 747],
+                  "start": 224.2,
+                  "end": 301.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "aydlysav",
+            "tsj3dsxk",
+            "ztilxifu"
+          ],
+          "phrases": [
+            {
+              "he": "עד בחינת מדת המלוכה בעצמות אור אין סוף",
+              "en": "until there's even the *midda* of *melucha*, the attribute of kingship, in the *Atzmus* of the infinite light,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [756, 773],
+                "start": 306.46,
+                "end": 313.7
+              }
+            },
+            {
+              "he": "שנקרא מלכות דאין סוף",
+              "en": "which is called *Malchus* of *Ein Sof*.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [778, 784],
+                "start": 315.84,
+                "end": 317.45
+              }
+            },
+            {
+              "he": "גם הוא כלול בבחינת היולי העצמי דעצמות אור אין סוף",
+              "en": "that even this, even the attribute of *Malchus*, is included in the self-*hiyuli*, the essential power of the *Atzmus Or Ein Sof*, of the essence of the infinite light.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [821, 852],
+                "start": 331.96,
+                "end": 347.36
+              }
+            },
+            {
+              "he": "שהוא בבחינת אין סוף ממש",
+              "en": "and it is completely infinite,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1086, 1090],
+                "start": 433.86,
+                "end": 435.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Until there's even the midda of melucha, the attribute of kingship,** in the *Atzmus* of the infinite light, **which is called Malchus of Ein Sof** (the kingship of the Infinite). **Even this, even the attribute of Malchus, is included** in the self-*hiyuli*, the essential power of the *Atzmus Or Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [748, 852],
+                  "start": 301.4,
+                  "end": 347.36
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Why is it a chiddush (a new insight), and why is it stressed, that even Malchus is there?",
+              "askedBy": "teacher",
+              "text": "The idea of *Malchus*, as the book will explain later, is having pleasure specifically from others, from something outside of you. It comes mainly from people praising you and being *mevatel* themselves to you (setting themselves aside), placing themselves under you, and that gives you the desire and the pleasure of being on top of them. It relates specifically to something outside of you, so you might think that it is missing from the *Atzmus Or Ein Sof*, because it already relates to something separate.\n\nBut he says no. G-d can do anything, and if He wants to, He can also have pleasure from something separate from Him, which is the idea of being a king.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [853, 998],
+                  "start": 348.3,
+                  "end": 403.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "His pleasure comes specifically from other people listening to what He tells them to do. \"The fact that you went and you put on *tefillin* this morning, like G-d gets pleasure from that specifically\": not just that He told you to do it, but that you went and actually listened and did it. That is what gives Him His pleasure. So that ability is also in the *Atzmus Or Ein Sof*, **and it is completely infinite**, just like all the other powers.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [999, 1098],
+                  "start": 403.9,
+                  "end": 438.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rpulhfy6",
+            "y5ou5imc"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שחפץ חסד בבחינת אין סוף ממש בעצמות,",
+              "en": "just like G-d's desire for kindness is infinite in His essence,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1111, 1125],
+                "start": 443.94,
+                "end": 451.6
+              }
+            },
+            {
+              "he": "או לחכמתו אין סוף,",
+              "en": "or that we say that to His wisdom there's no end, that His wisdom is *Ein Sof*,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1126, 1142],
+                "start": 452.14,
+                "end": 456.75
+              }
+            },
+            {
+              "he": "כך מדת ההתנשאות",
+              "en": "so too the attribute of leadership, of being above, raised above others,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1151, 1163],
+                "start": 458.65,
+                "end": 466.64
+              }
+            },
+            {
+              "he": "שכלול בעצמות אור אין סוף",
+              "en": "which is included in the essence of the infinite light,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1169, 1178],
+                "start": 468.48,
+                "end": 470.81
+              }
+            },
+            {
+              "he": "הוא בבחינת אין סוף",
+              "en": "it is also infinite.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1183, 1186],
+                "start": 471.91,
+                "end": 473.3
+              }
+            },
+            {
+              "he": "וכלול מי' בהעלם העצמות,",
+              "en": "it also includes ten *sefiros*, the way that it's in the concealment of G-d's essence,",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1697, 1713],
+                "start": 643.54,
+                "end": 650.84
+              }
+            },
+            {
+              "he": "שהוא בחינת הרצון והתענוג וחכמה ומדות שבמדות המלוכה",
+              "en": "which this is the desire, and the pleasure, and the wisdom, and the emotions of the attribute of kingship.",
+              "audio": {
+                "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1722, 1740],
+                "start": 657.36,
+                "end": 664
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Just like G-d's desire for kindness is infinite in His essence**, and as we say that **to His wisdom there's no end**, **so too the attribute of leadership, of being above, raised above others**, *hisnasus*, **which is included in the essence of the infinite light: it is also infinite.**",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1099, 1186],
+                  "start": 438.76,
+                  "end": 473.3
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "What does it mean that His hisnasus is infinite?",
+              "askedBy": "teacher",
+              "text": "Not only can G-d decide that He is going to care and get pleasure from us doing something: He can care infinitely, and give infinite importance to the smallest thing. Even the tiniest little *diyuk* (detail): if you do the *mitzva* (commandment) like this it is kosher, and if you do it like that it is not. \"You say, what does G-d care?\"\n\nThe answer is that He decided that He wants to be a king and that He wants us to listen to Him, and it makes all the difference in the world, because He gives infinite importance to even the smallest thing: His attribute of *Malchus* is infinite. \"It's true that He doesn't have to care, but if He decides to care, nobody can care like He can.\"",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1187, 1342],
+                  "start": 474.48,
+                  "end": 523.5
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "That is why it is so important that the *mitzvos*, and specifically the *diyukim* (details), are done according to *halacha* (Jewish law). A person can do everything right: he is putting on *tefillin* and everything is perfect, except that one of the letters is missing a little drop, or there is a little hole right next to it, some tiny thing in one of all the letters. Everything else is perfect, the boxes are perfect and the straps are perfect, \"but that little drop off, oh, that's it, it's nothing.\" Or the *tefillin* themselves are perfectly good, but he puts them a little bit in the wrong place on his arm: \"it's nothing, it's like he didn't put them on.\" It is all in a way of *Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1343, 1497],
+                  "start": 525.38,
+                  "end": 569.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "All of the *middos* are included in the *Ein Sof*, but here *chesed* and *Malchus* are stressed. *Chesed* is the source of creating the world: the world was first created in a way of pure kindness, because there was nobody there. But the real *pnimiyus* (inner part) of the *ratzon* (will) was for *Malchus*: G-d wanted to be King over the Jews, and also over the gentiles doing the seven commandments. This *ratzon* to be King, that we should do the *mitzvos* and make a *dira b'tachtonim* (a dwelling below), was the real inner *ratzon* G-d wanted; He gets *taanug* (delight) from us doing something. That is an extra *taanug*, which was not there when the world was just created in a way of *chesed*.\n\nSo these are the two: the world as it is of itself, without Torah and *mitzvos*, which is from *chesed*; and the world in its *pnimiyus*, which is from *Malchus*, the idea of Torah and *mitzvos*. These are the main *middos* that relate to the whole world.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1498, 1684],
+                  "start": 572.74,
+                  "end": 633.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This *midda* of *Malchus*, of *hisnasus*, also **includes ten sefiros, the way that it's in the concealment of G-d's essence**: **the desire, and the pleasure, and the wisdom, and the emotions of the attribute of kingship.** Everything is already included there, and this is the source of all the *mitzvos* and the wisdom of the Torah and everything that relates to the *mitzvos*. Automatically included in this essential thing that G-d is King is: if He is going to be King, what kind of kingship did He want? That He wants to be King over the Jews (*b'mi nimlach*, \"who should I rule over\": *b'nishmasan shel tzaddikim*, with the souls of the *tzaddikim*, the righteous), and what *mitzvos* He is going to want to give them, and everything like that.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1685, 1838],
+                  "start": 636.78,
+                  "end": 693.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Just as the kind person, because he is kind, knows the essence of kindness, and so automatically knows how to be kind in all the details, how the *chachma* should be kind, and the *bina*, and the *middos*, and none of the details are separate things: in the same way, included in G-d's wanting to be King is how the *ratzon* to be King is, and the *taanug*, and the *sechel* of being a king, and the *middos* of being a king. How G-d is going to be King is all already included there. He could do it in different ways, but it will always come out in certain ways, because there is a certain thing of being a king.",
+              "audio": [
+                {
+                  "lecture": "19 - Chap- 11-2  Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1839, 2000],
+                  "start": 695.2,
+                  "end": 739.92
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "One of those things, for example, is the idea of a *chok* (a commandment without a reason). Even though the *mitzvos* come onto a *sechel*, in their essence they are always a *chok*, just because G-d said so. If a *mitzva* were really for a certain reason, you would not be doing it because G-d said so; you would be doing it because it makes sense. So part of every *mitzva* is that it is a *chok*. There are other things like that, which are like the essence, what defines *melucha* and how it comes into everything. *Malchus* will be discussed a lot more at the end of the book.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [0, 118],
+                  "start": 2.72,
+                  "end": 43.1
+                }
+              ],
+              "join": true,
+              "outOfPlace": "Class 20 opens by finishing class 19's point on line 21, before it reads line 22."
+            }
+          ]
+        },
+        {
+          "lines": [
+            "bjjttzpz",
+            "eexnfor7",
+            "ax3ltiru",
+            "iqmqgtdc"
+          ],
+          "phrases": [
+            {
+              "he": "אך ענין אנא אמלוך",
+              "en": "But the idea of *Ana Emloch*, that it says that Hashem said to Himself, \"I want to be king,\"",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [142, 160],
+                "start": 60.78,
+                "end": 66.42
+              }
+            },
+            {
+              "he": "שעלה ברצונו ומחשבתו הפשוט,",
+              "en": "That's when it came up in His simple *ratzon* and *machshava*,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [236, 246],
+                "start": 92.46,
+                "end": 95.56
+              }
+            },
+            {
+              "he": "היינו כשבא בדבר פרט,",
+              "en": "which is a particular thing,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [252, 256],
+                "start": 96.66,
+                "end": 98.68
+              }
+            },
+            {
+              "he": "לבחינת ההשתלשלות בגלוי מהעלמו ההיולי",
+              "en": "for the *hishtalshelus*, when it's revealed from its concealed state,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [257, 269],
+                "start": 98.68,
+                "end": 105
+              }
+            },
+            {
+              "he": "כנזכר לעיל במדה דחפץ חסד באדם למטה,",
+              "en": "like we've said before about the *midda* of the *chafetz chesed* in a person below.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [270, 284],
+                "start": 105.74,
+                "end": 110.66
+              }
+            },
+            {
+              "he": "וכנזכר לעיל במשל י' כחות הכלולים שבבחינת יחידה,",
+              "en": "like we explained in last chapter about the ten *kochos*, the way they're included in the *yechida*,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [363, 379],
+                "start": 141.96,
+                "end": 148.58
+              }
+            },
+            {
+              "he": "בבחינת היולי ועצמיות כו'",
+              "en": "they're in the way of an essence and one with the self,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [392, 403],
+                "start": 152.7,
+                "end": 155.08
+              }
+            },
+            {
+              "he": "שאינן נבדלים מן העצם כלל",
+              "en": "that they're not separate from the essence, the self, at all,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [411, 421],
+                "start": 161.94,
+                "end": 163.54
+              }
+            },
+            {
+              "he": "וכמו כח התנועה שכלול בעצם החי,",
+              "en": "like the power of movement that's included in the essence of a living thing,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [433, 446],
+                "start": 170.7,
+                "end": 175.45
+              }
+            },
+            {
+              "he": "וכהתפשטות החיות ההיולי הכלול בעצם הנפש ממש כנזכר לעיל",
+              "en": "And like the power of consciousness the way it's included in the essence of the soul *mamash*, like we explained in last chapter.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [455, 477],
+                "start": 181.58,
+                "end": 190.84
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**But the idea of Ana Emloch** (I shall rule), **that it says that Hashem said to Himself, \"I want to be king,\"** is already a lower thing. It is not the power of kingship as it is included in G-d's essence in the way of *Yachid*, where just because G-d is G-d He has the ability to be a king. When G-d said, \"*Ana Emloch*, I want to be king,\" that is already the next level: an actual *aliyas haratzon* (rising of the will) to be King in a particular thing. **That's when it came up in His simple ratzon and machshava, which is a particular thing,** for the *hishtalshelus*, **when it's revealed from its concealed state, like we've said before about the midda of the chafetz chesed in a person below.**",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [119, 284],
+                  "start": 43.1,
+                  "end": 110.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "There the level of *Yachid* was explained: the essential thing of kindness, that he is a kind person, before it comes to a particular desire, which includes the ability to come out to all the particulars. And then there is when he actually has a particular desire to help: to give the person a coat, the shoes, to give somebody a birthday present, whatever it is.\n\n**Like we explained in last chapter about the ten kochos** (powers), **the way they're included in the yechida**, which is the *mashal* for the level of *Yachid*: **they're in the way of an essence and one with the self, that they're not separate from the essence, the self, at all.** \"It's really just you.\"",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [285, 426],
+                  "start": 111.78,
+                  "end": 163.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Like the power of movement that's included in the essence of a living thing, and like the power of consciousness the way it's included in the essence of the soul** in chapter 10's *meshalim*: the first level in those *meshalim* is totally one with the self, so you cannot find any details there to say that they are separate things that are united. So too, this is the *mashal* for the level of *Yachid*. The first level of the *Ein Sof* is a *gilui* of G-d exactly the way He is: just to appreciate that G-d is like an essence, that He transcends all limitations and all divisions, and automatically He can also come into anything.\n\nThat is the first stage. Now to the next stage: *Echad*.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [427, 585],
+                  "start": 163.54,
+                  "end": 230.02
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Echad: the light that shines and spreads, ten sefiros without a what",
+      "summary": "Below *Yachid* is the infinite light that shines and spreads, still in G-d's essence before the *tzimtzum*: the *sefiros* \"without end\", which can be known without being G-d. There the *sefiros* are separate things united, a simple unity, yet *b'li ma*, without a what, like the man who wants to do a nice thing and cannot yet say what.",
+      "passages": [
+        {
+          "lines": [
+            "7q7tzcm5",
+            "xcj2af4j"
+          ],
+          "phrases": [
+            {
+              "he": "ולמטה מזה",
+              "en": "and lower than this, lower than *Yachid*,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [588, 594],
+                "start": 230.88,
+                "end": 234.07
+              }
+            },
+            {
+              "he": "הוא בחינת אור אין סוף המאיר ומתפשט",
+              "en": "is the infinite light that shines and spreads.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [602, 609],
+                "start": 236.27,
+                "end": 240.42
+              }
+            },
+            {
+              "he": "והכל עדיין בבחינת עצמותו לפני הצמצום",
+              "en": "but this is still in Himself, in the essence, in G-d's essence before the *tzimtzum*.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [745, 759],
+                "start": 291.3,
+                "end": 295.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And lower than this, lower than Yachid, is the infinite light that shines and spreads.** This is something that can be revealed.\n\nFor example, in *Basi L'Gani* it is explained, in 25 and in 46, that *l'maala maala ad ein ketz* (higher and higher without end) and *l'mata mata ad ein tachlis* (lower and lower without limit) are two levels in the *Or Ein Sof* itself. *L'maala maala ad ein ketz* is like *Yachid*: the essence of the light, which essentially cannot be revealed, because it is the essence that transcends expression in particulars. *Echad* and *Kadmon* are the *l'mata mata* in the *Or Ein Sof*, the light that already relates to coming down. This is the next level, the *Or Ein Sof* that is *meir u'mispashet* (shines and spreads).",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [586, 738],
+                  "start": 230.7,
+                  "end": 288.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**But this is still in Himself**, **in G-d's essence before the tzimtzum**. The level of *Echad* is the level of *sefiros ad ein ketz* (*sefiros* without end): G-d can make infinite *sefiros*, and infinite things that are not *sefiros*, all different ways to reveal Himself. But a *sefira* is already a limitation: a revelation going out in a limited way. Here we speak only of the ten *sefiros*, but really this level includes all the *sefiros*; it is just that it is now coming out in the way of a *sefira*. That can already be revealed as separate from Him. *Chesed* is already not G-d; it is just *chesed*. So it can be revealed separate from Him: it can be *meir u'mispashet*.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [739, 907],
+                  "start": 288.54,
+                  "end": 350.58
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The essence of it is G-d Himself. To know that, *yedaativ hayisiv* (if I knew Him, I would be Him): you would have to be Him to know it. So that cannot be revealed outside of Him. \"Either you're Him and you know it, or you're not Him and you don't know it.\" But once it is *meir u'mispashet*, you can know what kindness is without being G-d, and you can know what *chachma* is without being G-d.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [908, 995],
+                  "start": 351.56,
+                  "end": 380.51
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "All this is still in His essence before the *tzimtzum*. What does that mean? Before G-d makes the *tzimtzum*, part of knowing Himself is that He knows all of these different *sefiros* and how He could reveal them. If He were going to make a *tzimtzum* and a *hishtalshelus*, He knows all the different *sefiros* He could reveal and make.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [996, 1071],
+                  "start": 380.51,
+                  "end": 409.18
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Sitting G-d down to ask, and the teacher",
+              "text": "If you were going to sit G-d down and ask Him, \"Let's say You were going to make a world, how would it be?\", He could tell you exactly how He would make it. Or if He would make a different one: you could ask Him every way He could make a world, and He could explain it to you.\n\nThis is like the *mashal* that is always given of a teacher, who already knows how to explain the subject to the student. He knows it in a way that is higher than explaining it to the student, and he also knows it in a way that he could explain it. This level is like being able to explain it.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1072, 1212],
+                  "start": 410.56,
+                  "end": 445.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ebblgcsv",
+            "4zngdgsn",
+            "s4ayi7ps"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו הנקרא אחדות הפשוטה",
+              "en": "this is what's called a simple unity,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1217, 1223],
+                "start": 448.32,
+                "end": 450.12
+              }
+            },
+            {
+              "he": "שיתכן שם בחינת התכללות ואחדות בעשר ספירות",
+              "en": "There you can speak of the ten *sefiros* as being separate things that are included and united.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1231, 1247],
+                "start": 454.26,
+                "end": 459
+              }
+            },
+            {
+              "he": "וגם הם נקרא עשר ספירות בלי מה,",
+              "en": "but they're also called the ten *sefiros b'li ma*, without a what, meaning without a *mahus*.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1507, 1521],
+                "start": 553.28,
+                "end": 559.1
+              }
+            },
+            {
+              "he": "כי הוא למעלה גם מבחינת הכנה להשפעה למטה בגלוי עדיין",
+              "en": "because it's still before the preparation to give something, to reveal something below.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1546, 1560],
+                "start": 569.44,
+                "end": 580.42
+              }
+            },
+            {
+              "he": "רק שמוכן לצאת מההיולי בדבר פרט",
+              "en": "just that it is ready to come out from the essence to a particular thing.",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1782, 1796],
+                "start": 651.24,
+                "end": 655.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is what's called a simple unity**: **there you can speak of the ten sefiros as being separate things that are included and united.** There you already see the ten *sefiros*, that they are separate things, that there is *chachma* and there is *chesed*, and you see G-d as this greater being that has all of them. You appreciate that G-d is not just *chesed* and not just *chachma*: He has all of them. Really, you have to appreciate that He is something higher, which is *Yachid*. But at this level, you appreciate that G-d has every ability.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1213, 1341],
+                  "start": 446.14,
+                  "end": 491.36
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Really that does not define G-d: \"that's not good enough.\" You would say, \"What is G-d?\" G-d is a being that possesses all ten *sefiros*, and not only that, He possesses infinite *sefiros*, every different *sefira* that could be, every different power. That is not good enough, \"cuz like then you could say, 'Oh, so it's like this magic wand that has every different magic power or something.'\" That totally does not reach G-d. But that is the best a philosopher could come up with if they try to define Him.\n\nThat is already what is *meir u'mispashet*. Once you go outside the *etzem*, you are never going to really get the *etzem*, but this is the best type of *gilui*. That is the way it is revealed.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1342, 1466],
+                  "start": 492.98,
+                  "end": 532.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**But they're also called the ten sefiros b'li ma, without a what, meaning without a mahus** (what a thing is in itself). Not only are these ten *sefiros* included there and put together like one thing, so that you see you really need all of them; you also cannot say what they are. They do not have a distinct entity or nature, **because it's still before the preparation to give something, to reveal something below.**",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1467, 1560],
+                  "start": 535.76,
+                  "end": 580.42
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "\"I want to do a nice thing.\" \"What?\" \"I don't know.\"",
+              "text": "A person knows he wants to do a particular *chesed*: he wants to give his friend a present, but he does not yet know at all what he is going to give him.\n\n\"Well, what are you going to do?\"\n\n\"I want to do a nice thing.\"\n\n\"Well, what do you want to do?\"\n\n\"I don't know.\"\n\nOr even if he says, \"I want to buy him a present\": \"Okay, well, what do you want to get him?\" \"I don't know.\" \"How are you going to get it?\" \"I don't know.\" So he does not have a *ma* (a what): he cannot tell you what he is going to do.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1561, 1687],
+                  "start": 581.94,
+                  "end": 614.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So too at this level. Whenever we speak of the *sefiros* before they have vessels, you cannot really say what is *chesed* and what is *gevura*, and this is the highest level of that. It loses the distinction between them: what is the difference between *chesed* and *gevura*, really?\n\n**Just that it is ready to come out from the essence to a particular thing.** But it did not yet come out in a particular way, so it can still come out in any way.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1688, 1815],
+                  "start": 615.72,
+                  "end": 660.63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wxzq3si7"
+          ],
+          "phrases": [
+            {
+              "he": "כמו חפץ חסד ההיולי הנזכר לעיל,",
+              "en": "like the *chafetz chesed hiyuli* that we explained before,",
+              "audio": {
+                "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1821, 1829],
+                "start": 662.46,
+                "end": 665.76
+              }
+            },
+            {
+              "he": "כשבא לענין הרצון וחפץ חסד בהשתלשלות דקו כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Like the chafetz chesed hiyuli that we explained before**: the second stage is when the desire for kindness, which in the *nimshal* is the power to create, G-d's desire to reveal Himself and express Himself as a Creator, comes to the second stage. That is, G-d is actually going to make a creation, a *hishtalshelus*, to reveal this thing of *chesed*. So there is already a recognition that there are going to be *pratim* (particulars) and separate things. That is the whole idea of creation: it is something separate from Him.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1816, 1930],
+                  "start": 660.63,
+                  "end": 711.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In the level of *Yachid* we say that because we know what G-d is, we automatically know that He is also a Creator. Not that we can define Him as being a Creator, but He obviously can also create. The next stage is that in order to appreciate that He is a Creator, we can also appreciate creation. If G-d will show you everything He could create, the whole power of creation, that is a *gilui* that He is a Creator, but it already recognizes that there is something separate: He is showing you the power of creation, and not Himself the Creator.\n\nSo that is *Echad* here. Even before any particular *hishtalshelus* is made, the idea that there can be a *hishtalshelus* already recognizes parts, because it is already the way it is going to come out to a *hishtalshelus*. But it is still included in the *Atzmus Ein Sof*, because it is part of revealing that He is a Creator. It is not yet knowing the creations that He could make.",
+              "audio": [
+                {
+                  "lecture": "20 - Chap- 11-3 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1931, 2112],
+                  "start": 712.08,
+                  "end": 777.98
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2jrerxnh",
+            "vqmzwjzz",
+            "p6pj5rbw"
+          ],
+          "phrases": [
+            {
+              "he": "גם שלא יצא עדיין בגלוי גמור,",
+              "en": "even though it wasn't revealed yet,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [65, 70],
+                "start": 19.86,
+                "end": 21.06
+              }
+            },
+            {
+              "he": "גם בעצמו,",
+              "en": "even to Himself.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [73, 75],
+                "start": 22.36,
+                "end": 23.02
+              }
+            },
+            {
+              "he": "על כל פנים שם יתכן בחינת אחדות והתכללות",
+              "en": "Nevertheless, at least, there you can already say that there are separate things that are united and included.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [198, 239],
+                "start": 65.82,
+                "end": 79.84
+              }
+            },
+            {
+              "he": "רק שנקרא אחדות הפשוטה",
+              "en": "but this is called a simple unity still,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [251, 258],
+                "start": 86.68,
+                "end": 89.18
+              }
+            },
+            {
+              "he": "בהיותו עדיין באור עצמותו הפשוט בתכלית",
+              "en": "because we're speaking about the way that all of these things are in the light, the revelation of G-d's essence, which is completely simple.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [265, 288],
+                "start": 93.18,
+                "end": 101.74
+              }
+            },
+            {
+              "he": "וכמו בחינת התחלקות שכל ומדות כו' שבחפץ חסד זה,",
+              "en": "and this is like the divisions of intellect and emotions and everything else, *machshava*, *dibur* and *maaseh*, in the desire for kindness.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [388, 408],
+                "start": 144.52,
+                "end": 152.26
+              }
+            },
+            {
+              "he": "שמחמתו הוא שעלה ברצונו וחכמתו להטיב כו'",
+              "en": "that because of this desire, it arose in His *ratzon* and in His wisdom to do good.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [430, 446],
+                "start": 164.16,
+                "end": 169.74
+              }
+            },
+            {
+              "he": "גם טרם בואו לגלוי כלל וכלל כו',",
+              "en": "even before it's revealed at all, in any way of the details of it.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [454, 467],
+                "start": 175.06,
+                "end": 178.9
+              }
+            },
+            {
+              "he": "וכנזכר לעיל במדריגה הב' בנפש האדם.",
+              "en": "like we discussed previously in the last chapter about the second stage in the soul of man.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [559, 575],
+                "start": 213.04,
+                "end": 217.3
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "It is not really the creations yet: this is knowing the power of creation. To appreciate what it means to be a Creator, you have to appreciate the power of creation, and then you have to appreciate the creations, which is the next level.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [0, 58],
+                  "start": 3,
+                  "end": 15.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Even though it wasn't revealed yet, even to Himself**: G-d did not yet make the *hashara* (estimation) and the *tzimtzum* to make it come out in a certain way. And it is not a thing of time. At this level we speak of the power of *chesed* itself, and here it could come out in any way. It can make any *hishtalshelus*, and it could make infinite *sefiros*, *sefiros ein ketz*. This does not mean the *sefira* of *chesed* as it is in our *hishtalshelus*. It means the *inyan* (idea) of *chesed* that is included in the *etzem*, which is like *l'mata mata ad ein tachlis*: to be *meir u'mispashet*.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [59, 197],
+                  "start": 17.26,
+                  "end": 65.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Nevertheless, at least, there you can already say that there are separate things that are united and included**, even though it is not yet in a way of a *ma*, and it does not yet have a defined *metzius* (existence). Because here you are already speaking of something separate.\n\n**But this is called a simple unity still, because we're speaking about the way that all of these things are in the light, the revelation of G-d's essence, which is completely simple.** Even though we now speak of the way G-d is revealed in *sefiros*, which is already an *or* (light), *meir u'mispashet*, we are speaking about G-d. In a person there are only ten *sefiros*, but by G-d it is really *sefiros ein ketz*, and it is totally simple: you cannot really define the parts. There is just the idea that there could be parts, but you could divide them in infinite ways, and there are no real inherent divisions there yet.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [198, 378],
+                  "start": 65.82,
+                  "end": 136.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And this is like the divisions of intellect and emotions and everything else**, thought, speech and action, **in the desire for kindness**. Now we speak about the *nimshal*, G-d's desire to make the world, the *hishtalshelus*: **because of this desire, it arose in His ratzon and in His wisdom to do good**, **even before it's revealed at all**.\n\nOnce there came an actual *aliyas haratzon*, that He wants actually to make a *chesed*, right away there is the recognition that He is going to reveal it outside of Himself, that it is going to come into parts and into a certain *tzura* (form). He did not yet make any estimation of how it will be, so you cannot yet say any details. It is still simple, but it recognizes that it will be made up of parts, **like we discussed previously in the last chapter about the second stage in the soul of man.** That is the level of *Echad*.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [379, 581],
+                  "start": 137.83,
+                  "end": 222.08
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kadmon: every detail already estimated, before the first tzimtzum",
+      "summary": "The third level is the *ratzon* already prepared with the whole estimation in letters of how the influence will come out, like the basketball player who knows exactly how to shoot and has not thrown: *glif glifu*, down to the hairs on your head. It precedes the giving, and it is still before the first *tzimtzum*, so even the apple was there in the *Or Ein Sof*.",
+      "passages": [
+        {
+          "lines": [
+            "fecpk2tq",
+            "mqrwqcsf"
+          ],
+          "phrases": [
+            {
+              "he": "והג'",
+              "en": "the third level, which is what's called *Kadmon*,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [583, 590],
+                "start": 222.74,
+                "end": 224.92
+              }
+            },
+            {
+              "he": "כאשר מבחינת חפץ חסד זה",
+              "en": "when from this desire for kindness,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [600, 605],
+                "start": 229.94,
+                "end": 232.48
+              }
+            },
+            {
+              "he": "הוא שעלה כבר ברצון ושכל כו'",
+              "en": "it already arose in His *ratzon* and *sechel*, it already came up as an actual desire to do the *chesed*,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [617, 635],
+                "start": 238.02,
+                "end": 243.12
+              }
+            },
+            {
+              "he": "והוכן בכל השיעור באותיות ששיער בעצמו",
+              "en": "it was prepared with the entire estimation in letters that He estimates to Himself,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [662, 676],
+                "start": 253.04,
+                "end": 260.88
+              }
+            },
+            {
+              "he": "איך יהיה איכות אופן ההשפעה ממש לחוץ מעצמותו",
+              "en": "exactly how the *hashpaa* is going to come out from Him, in which way it will come out,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [716, 733],
+                "start": 282.38,
+                "end": 290.06
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The third level, which is what's called Kadmon** (preceding): **when from this desire for kindness it already arose in His ratzon and sechel**, already as an actual desire to do the *chesed*. Not only that, which were the first two levels; now it came to the third level: **it was prepared with the entire estimation in letters that He estimates to Himself**.\n\nLetters mean anything expressed in a certain limited way (letters will be explained more later): **exactly how the hashpaa** (the influence) **is going to come out from Him, in which way it will come out.**",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [582, 733],
+                  "start": 222.08,
+                  "end": 290.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wtm5kqk3",
+            "anu7zmhn",
+            "446xwma2"
+          ],
+          "phrases": [
+            {
+              "he": "על דרך דוגמא מכח התנועה המוכן איך להניע",
+              "en": "like this is like the power of movement, when he's prepared, he knows exactly how he's going to move.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [742, 759],
+                "start": 294.64,
+                "end": 300.96
+              }
+            },
+            {
+              "he": "וכח החיות המוכן איך להחיות",
+              "en": "or like the power of consciousness which is ready now to enliven the body,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [833, 846],
+                "start": 324,
+                "end": 328.38
+              }
+            },
+            {
+              "he": "כשמוכנים כבר בשיעור ואופן מוגבל,",
+              "en": "and they're prepared already with an estimation and in a limited way.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [897, 908],
+                "start": 352.62,
+                "end": 357.24
+              }
+            },
+            {
+              "he": "כנזכר לעיל בענין מדריגה הג' בנפש",
+              "en": "like we explained before about the third level in the soul of man,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [914, 926],
+                "start": 362.06,
+                "end": 364.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The basketball player who never shoots",
+              "text": "**Like the power of movement, when he's prepared, he knows exactly how he's going to move.** He is playing basketball and he is going to shoot the ball to the hoop. He knows exactly how to do it, he is really good, and he knows exactly how to throw it to get it in: \"He's definitely going to get it in if you let him throw it.\" But he did not throw it yet. Then somebody grabs the ball from him.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [734, 827],
+                  "start": 291.18,
+                  "end": 319.52
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The eye ready to see",
+              "text": "**Or like the power of consciousness which is ready now to enliven the body**, and now it is *mamash* ready: it is already in your eye, it already went into the physical eye, and it is ready now to see *davka* (specifically) red and blue and green and yellow and things like that. But you did not actually see yet.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [828, 890],
+                  "start": 321.16,
+                  "end": 346.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And they're prepared already with an estimation and in a limited way, like we explained before about the third level in the soul of man.** This is the level where it is completely ready: you estimated exactly what you are going to do, you know every detail of the way it will be *b'poel* (in actuality), only you did not do it yet.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [891, 962],
+                  "start": 348.36,
+                  "end": 375.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "d5duiofe",
+            "nu4pph6s",
+            "opyzpxec"
+          ],
+          "phrases": [
+            {
+              "he": "ולמעלה,",
+              "en": "and above in G-dliness,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [964, 967],
+                "start": 378.52,
+                "end": 380.16
+              }
+            },
+            {
+              "he": "היינו מה ששיער בעצמות אור אין סוף שנקרא טהירו עילאה",
+              "en": "this is the estimation that G-d made in the *Atzmus Ein Sof*, which is called the upper purity,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [977, 994],
+                "start": 386.16,
+                "end": 391.82
+              }
+            },
+            {
+              "he": "באופן ושיעור מה שרוצה בהשתלשלות בפועל התגלות דקו עד סוף עולם העשיה",
+              "en": "that G-d estimated exactly what He wants to happen in the *hishtalshelus* when He actually makes it come revealed from the *Kav* all the way to the end of the world of *Asiya*,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1018, 1051],
+                "start": 403.44,
+                "end": 414.48
+              }
+            },
+            {
+              "he": "שזהו מה שכתוב גליף גליפו בטהירו עילאה כנזכר לעיל",
+              "en": "this is what it says that He engraved an engraving in the upper purity, like we said before,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1094, 1111],
+                "start": 428.88,
+                "end": 432.3
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And above in G-dliness, this is the estimation that G-d made in the Atzmus Ein Sof, which is called the upper purity**: we are still speaking of the level of *tehiru ila'a*. **G-d estimated exactly what He wants to happen in the hishtalshelus when He actually makes it come revealed from the Kav** (the line of light) **all the way to the end of the world of Asiya** (Action): all the way down to every physical thing, \"the last hair on your head.\" He estimated exactly how many hairs would be on your head and exactly which way they would curve.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [963, 1085],
+                  "start": 377.48,
+                  "end": 423.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This is what it says that He engraved an engraving in the upper purity**, *glif glifu*: He engraved the letters. He estimated exactly everything of the way it is going to come out in our *hishtalshelus*.\n\nNot only does He know the power of kindness; not only does He know that He can create and make a *hishtalshelus*; not only does He know what the power of making a *hishtalshelus* is like and how it could include all the *sefiros*, the *sefiros d'ein ketz*. He also knows every single world and every single creature He could make, with all its details, and then He also chooses which one He is going to make.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1086, 1223],
+                  "start": 425.22,
+                  "end": 475.32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "nwxkqqj7",
+            "qmpyck4z"
+          ],
+          "phrases": [
+            {
+              "he": "והוא הנקרא בחינת קדמון,",
+              "en": "this is what's called *Kadmon*,",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1228, 1232],
+                "start": 476.86,
+                "end": 478.04
+              }
+            },
+            {
+              "he": "דהיינו מה שקדם אופן הרצון להשפיע טרם שמשפיע עדיין בגלוי ממש",
+              "en": "*Kadmon* means to precede, meaning that He already preceded within Himself exactly the way that He's going to want to be *mashpia* before He actually did it.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1251, 1277],
+                "start": 487.2,
+                "end": 499.84
+              }
+            },
+            {
+              "he": "וזהו עדיין לפני הצמצום הראשון",
+              "en": "And this is still before the first *tzimtzum*.",
+              "audio": {
+                "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1299, 1306],
+                "start": 510.92,
+                "end": 513.46
+              }
+            },
+            {
+              "he": "הנקרא מקום פנוי וחלל כו' כנ\"ל וד\"ל."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is what's called Kadmon.** Why is it called *Kadmon*? **Kadmon means to precede**: **He already preceded within Himself exactly the way that He's going to want to be mashpia** (give) **before He actually did it.** Every detail was already pre-planned. **And this is still before the first tzimtzum.**",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1224, 1306],
+                  "start": 475.4,
+                  "end": 513.46
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Rabbi Walters once saw this explained, he thinks in a *sicha* (a talk): to really appreciate the *Aibershter*, to really appreciate G-d, you have to appreciate Him from three angles. That He is higher than everything, which is *Yachid*: His essence is beyond every type of limitation, *sefiros* and creations. That He includes all things. And not only that: every single last thing we have, even in our physical world, has a unique *maala* (virtue) and a unique *gilui* of the *etzem*, so to really appreciate G-d you have to appreciate every single thing here too.\n\nThat is how everything is part of the *Atzmus Ein Sof*, part of the *gilui* of G-d Himself: to really appreciate what He is, you have to appreciate how He is higher than all forms and all limitations, how He includes all powers and all abilities, and also every single particular being. G-d's being includes *mamash* every particular being.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1307, 1524],
+                  "start": 515.42,
+                  "end": 598.56
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "These are all three levels in the *Or Ein Sof*; once there is an actual *or*, there has to be a *tzimtzum* to make the *or*. Before that, in the *Maor* (the source of light), there is only a *yecholes*, not *b'poel*. But once it comes to the *or*, the level of *Kadmon* of the *Or Ein Sof* has *mamash* every single thing that is in our world.\n\nAnything you see in the world, like an apple, was *mamash* there in the *Or Ein Sof* before the *tzimtzum*. Only you did not see it as an apple, because you saw it the way it is included in the *Or Ein Sof*: you see it as a *gilui* of G-d. After the *tzimtzum*, the *tzimtzumim* hide everything except for the apple, and the same with everything.",
+              "audio": [
+                {
+                  "lecture": "21 - Chap- 11-4 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1525, 1681],
+                  "start": 598.78,
+                  "end": 647.24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The fourth level: after the tzimtzum, the reshimu, the Kav and the lower purity",
+      "summary": "After the first *tzimtzum* an impression is left, the *reshimu*, and from it the *Kav*: the *tehiru tata'a*, the general *makif* of the whole chain, where G-d is still all that is revealed but already as relating to something separate. The light after the *tzimtzum* is to the light before it as physical growth to the spiritual power of growth, and the *tzimtzum* is needed so that a finite, measured light can be the source of the four worlds.",
+      "passages": [
+        {
+          "lines": [
+            "7iafp4dr",
+            "ih24iwn2",
+            "43kfrjct"
+          ],
+          "phrases": [
+            {
+              "he": "ומדריג' הד'",
+              "en": "and the fourth level,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [74, 77],
+                "start": 32.68,
+                "end": 33.62
+              }
+            },
+            {
+              "he": "הוא מה שאחר הצמצום הנזכר לעיל נשאר בחינת הרשימו",
+              "en": "is how after this *tzimtzum*, this first *tzimtzum*, there is left an impression.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [86, 98],
+                "start": 39.28,
+                "end": 45.66
+              }
+            },
+            {
+              "he": "ונמשך ממנו הקו",
+              "en": "and from this *reshimu* comes the *Kav*.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [115, 121],
+                "start": 55.76,
+                "end": 58
+              }
+            },
+            {
+              "he": "שהוא בכללות בחינת טהירו תתאה,",
+              "en": "which in general this is the *tehiru tata'a*, the lower purity.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [210, 220],
+                "start": 94.56,
+                "end": 99.48
+              }
+            },
+            {
+              "he": "בחינת מקיף כללי לכל השתלשלות דקו כו'",
+              "en": "and this is the general *makif* that includes everything that's going to come out in the *Kav*.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [256, 272],
+                "start": 113.88,
+                "end": 120.4
+              }
+            },
+            {
+              "he": "שזהו הבא בבחינת השפעה למטה מן העצמות,",
+              "en": "this is already the light that comes out to go lower than the *Atzmus*, to be brought down to a *mekabel*.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [494, 516],
+                "start": 216,
+                "end": 227.54
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *nimshal* of the three levels, *Yachid*, *Echad* and *Kadmon*, is finished. Now comes the next step in the *hishtalshelus*. This is an introduction to what will be explained in the next chapter, and it will also show how everything that comes after the *tzimtzum* connects back to these three levels before the *tzimtzum*.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [0, 72],
+                  "start": 1.4,
+                  "end": 31.92
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And the fourth level is how after this tzimtzum, this first tzimtzum, there is left an impression**: the *reshimu*, the impression of the original light, is the fourth level. **And from this reshimu comes the Kav.**",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [73, 121],
+                  "start": 31.92,
+                  "end": 58
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Why is the tzimtzum not counted as the fourth level?",
+              "askedBy": "teacher",
+              "text": "Because the *tzimtzum* is not really a level of the *or*, of the revelation: it is a process that the *or* undergoes. So the next real stage in the light's revelation is the *reshimu*, which is revealed as just an impression of the original light. What the *reshimu* is will be explained at the end of the next chapter, and the *Kav* after that.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [122, 204],
+                  "start": 58.98,
+                  "end": 88.64
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Which in general this is the tehiru tata'a, the lower purity**: this *reshimu*, and the beginning of the *Kav*, is called the lower purity, as opposed to the light before the *tzimtzum*, which is called the upper purity. **And this is the general makif** (encompassing light) **that includes everything that's going to come out in the Kav.**\n\n*Tehiru* means pure. *Tehiru ila'a*, the upper purity, is the revelation of G-d Himself to Himself: there is nothing else, just the revelation of G-d. *Tehiru tata'a* is the revelation of G-d, but relating to something separate. It is still only a revelation of Him, but already seen as something separate.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [205, 333],
+                  "start": 89.5,
+                  "end": 151
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Light in its source, out of it, and through the glasses",
+              "text": "There is not yet an actual *mekabel* (receiver); that comes later in the *hishtalshelus*. But *tehiru ila'a* is like the way the light is included in the source of the light, and *tehiru tata'a* is like the light that came out, which is still a total revelation of its source. Then the light goes through all these different glasses and curtains and things, and then you cannot see the original thing anymore.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [334, 421],
+                  "start": 151.92,
+                  "end": 184.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the *tehiru tata'a* is the *makif* of this whole *hishtalshelus*. What does that mean? The real essence and the real point of everything in this *hishtalshelus* is to reveal G-d. The revelation of G-d in our *hishtalshelus* is the *tehiru tata'a*. The central revelation of G-d, which encompasses all *hishtalshelusim* and everything, is the *tehiru ila'a*.\n\n**This is already the light that comes out to go lower than the Atzmus, to be brought down to a mekabel.**",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [422, 516],
+                  "start": 185.28,
+                  "end": 227.54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "twno5bil",
+            "zvlyx24o",
+            "qmskcjn4"
+          ],
+          "phrases": [
+            {
+              "he": "כמשל חיות המתפשט בגלוי להחיות כו'",
+              "en": "like an analogy of the life force, the consciousness, that spreads into the body to bring out the life in the body,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [523, 546],
+                "start": 233.12,
+                "end": 243.96
+              }
+            },
+            {
+              "he": "וככח התנועה שמתפשטת להניע הנפעל בגלוי כו'",
+              "en": "or like the power of movement that when it actually spreads out,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [571, 582],
+                "start": 260.04,
+                "end": 264.86
+              }
+            },
+            {
+              "he": "שמשתנה ממהות רוחני למהות הגשמה",
+              "en": "at that point it changes from being a spiritual thing, a spiritual essence, a spiritual nature, to being a physical thing.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [639, 659],
+                "start": 290.18,
+                "end": 298.76
+              }
+            },
+            {
+              "he": "כנזכר לעיל",
+              "en": "like we said before.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [660, 663],
+                "start": 299.66,
+                "end": 300.7
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Like an analogy of the life force, the consciousness, that spreads into the body to bring out the life in the body**, so that you actually see and hear, taste and smell and touch. **Or like the power of movement that when it actually spreads out**: *Yachid*, *Echad* and *Kadmon* are the different levels in your essential ability to move, but when you actually move, your essential power of movement comes out to be revealed in a particular thing. That is already what we call the lower purity.\n\n**At that point it changes from being a spiritual thing, a spiritual essence, a spiritual nature, to being a physical thing.** And for that you need the *tzimtzum*, as at the end of chapter 10.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [517, 681],
+                  "start": 228.52,
+                  "end": 306.22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rxuqhizb",
+            "4xlky6ck",
+            "amc7mitd"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו צמיחה גשמית מצמיחה רוחנית",
+              "en": "or like physical growth of an actual plant from the spiritual power of growth,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [687, 700],
+                "start": 310.38,
+                "end": 316.65
+              }
+            },
+            {
+              "he": "כך הוא ערך האור שאחר הצמצום",
+              "en": "This is similarly the relationship between the light after the *tzimtzum*",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [717, 727],
+                "start": 324.97,
+                "end": 329.84
+              }
+            },
+            {
+              "he": "לגבי האור העצמי שלפני הצמצום",
+              "en": "to the light before the *tzimtzum*,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [728, 733],
+                "start": 329.84,
+                "end": 331.22
+              }
+            },
+            {
+              "he": "דמשום זה הוצרך להיות ענין הצמצום הזה,",
+              "en": "and this is why there has to be this *tzimtzum*,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [811, 820],
+                "start": 365.52,
+                "end": 367.32
+              }
+            },
+            {
+              "he": "רק בשביל שיוכל להיות הארת האור שבקו,"
+            },
+            {
+              "he": "שבא בשביל מקור לאבי''ע כידוע",
+              "en": "And then it can be the source for the worlds of *Atzilus*, *Beriya*, *Yetzira*, *Asiya*.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [866, 880],
+                "start": 387.44,
+                "end": 392.21
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Or like physical growth of an actual plant from the spiritual power of growth: this is similarly the relationship between the light after the tzimtzum to the light before the tzimtzum.** It is like a complete qualitative quantum leap. It changes totally, from an infinite light to a finite light: from a revelation of G-d Himself, in a totally infinite way, to the revelation of a particular thing, and just that you would see G-d through it. Now it is like the revelation of the ten *sefiros*.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [682, 803],
+                  "start": 307.14,
+                  "end": 360.27
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**And this is why there has to be this tzimtzum.** For the light to come out in a measured, finite way, which is the idea of the *Kav*, a finite, measured light, there has to be the *tzimtzum* first. **And then it can be the source for the worlds of Atzilus, Beriya, Yetzira, Asiya.**",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [804, 880],
+                  "start": 360.27,
+                  "end": 392.21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Everything after the tzimtzum was first in the Essence",
+      "summary": "The point of bringing the fourth level here: all the details of the ten *sefiros* of the four worlds were included at first in the *hiyuli* of the *Atzmus Or Ein Sof*, and the *tzimtzum* only changes them into a limited, general influence. So the soul already holds every perception before the body triggers it, like white light that holds every color the stained glass lets through.",
+      "passages": [
+        {
+          "lines": [
+            "kzngjhf6",
+            "kvr3qmhh"
+          ],
+          "phrases": [
+            {
+              "he": "אך עם כל זה הרי כל פרטי העשר ספירות דאבי''ע,",
+              "en": "nevertheless, all the details, the ten *sefiros*, in all the levels of *hishtalshelus*, in *Atzilus*, *Beriya*, *Yetzira*, *Asiya*,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [944, 961],
+                "start": 419.14,
+                "end": 426.56
+              }
+            },
+            {
+              "he": "הכל כלולים מתחלה בעצמות אור אין סוף בבחינת היולי ועצמי",
+              "en": "all of those details were originally included in the *Atzmus Or Ein Sof*, in the *hiyuli* in the *Atzmus Or Ein Sof*.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [962, 981],
+                "start": 427.22,
+                "end": 434.88
+              }
+            },
+            {
+              "he": "ואחר כך על ידי הצמצום משתנה לפי אופן מוגבל בהשפעה הכללית דקו בבחינת סובב",
+              "en": "Then, through the *tzimtzum*, it gets changed to be, instead of this essential *hiyuli* power, revealed as a general power that relates specifically to what's going to come out in the *hishtalshelus*,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1006, 1040],
+                "start": 448.88,
+                "end": 462.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "keyPoint",
+              "text": "This is the main point he wants to bring out in bringing the fourth level here. Even though there is this whole *tzimtzum* between the third level and the fourth, between *Kadmon* and the *reshimu*, **nevertheless, all the details, the ten sefiros, in all the levels of hishtalshelus, in Atzilus, Beriya, Yetzira, Asiya** (the four worlds), **were originally included in the Atzmus Or Ein Sof, in the hiyuli**. What is coming out now is what was already there.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [881, 991],
+                  "start": 392.21,
+                  "end": 439.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Then, through the tzimtzum, it gets changed**: instead of being this essential *hiyuli* power, it is now revealed as a general power that relates specifically to what is going to come out in the *hishtalshelus*, and it becomes more and more detailed as it goes down the *hishtalshelus*.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [992, 1054],
+                  "start": 439.38,
+                  "end": 465.39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "qkyjlmgn",
+            "h5awp4fj",
+            "beoamgxv"
+          ],
+          "phrases": [
+            {
+              "he": "והרי זה כדוגמת חיות הנפש הרוחנית כשבאה להחיות הגוף",
+              "en": "this is like when a person's soul's power of consciousness comes into the body,",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1064, 1081],
+                "start": 473.18,
+                "end": 479.13
+              }
+            },
+            {
+              "he": "שכלולה ברוחניות מכל פרטי חיות הגשמיות, ראיה ושמיעה שבגוף הגשמי כנזכר לעיל"
+            },
+            {
+              "he": "(וענין הצמצום והרשימה יתבאר בסמוך)",
+              "en": "and we will explain the idea of *tzimtzum* and *reshimu* soon in the next chapters.",
+              "audio": {
+                "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                "words": [1596, 1609],
+                "start": 662.52,
+                "end": 667.02
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is like when a person's soul's power of consciousness comes into the body.** Before the soul came into the body, it already had the power of sight, and the power to hear, and to smell, and touch, red and blue, all the different sensations the soul experiences in the body: those sensations really come from the soul. When the soul comes into the body, it links certain things in the body to trigger certain sensations, but it is really something essential to the soul, not the body, because perceptions are not really a physical thing. \"They're psychophysical, that's what they call them\": the way your soul reacts to a certain stimulus from outside. You already have all the perceptions in your soul, and your body just triggers them and brings them out.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1055, 1247],
+                  "start": 465.39,
+                  "end": 547.44
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "White light through stained glass",
+              "text": "It is like the *mashal* that is given of light with stained glass, which is really just holding back some of the light. White light has all the colors in it, and when you put it through different colored glasses, it hides everything in the light except for that color. If it goes through a blue glass, it hides the red and the yellow in the light and reveals just the blue. If it shines through a red glass, \"it hides the red and the yellow.\"\n\nThe same way, the soul's perception of itself, its essential self-awareness, already includes all of these perceptions of colors and sounds. When it comes into the body, the body filters away and hides the different perceptions, so that the soul focuses on certain aspects of itself, which are the different perceptions. All your body does is trigger which *tzimtzum* should happen; it is really all coming from the soul itself.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1248, 1438],
+                  "start": 548.64,
+                  "end": 611.48
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Why does this fourth level belong here, among the levels of the Atzmus?",
+              "askedBy": "teacher",
+              "text": "Here we are talking about levels of the revelation of the *Atzmus*; why are we now saying that after the *tzimtzum* is still a revelation of G-d Himself, still part of the *Atzmus Ein Sof*, like a fourth level in it?\n\nFrom the point of view of the *hishtalshelus*, it is like something separate. But from this point of view, as the next chapter will explain, the *tzimtzum* is not *kipshuto* (literal): everything that comes out after the *tzimtzum* is really a revelation of *mamash* what was before the *tzimtzum*, only in a small way, a *metzumtzam* (contracted) way. It is still *mamash* a revelation of G-d.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1439, 1588],
+                  "start": 612.32,
+                  "end": 660.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**We will explain the idea of tzimtzum and reshimu soon in the next chapters.** This level is in this chapter because, as just explained, the *reshimu* that comes out after the *tzimtzum*, which includes all the details that will be after the *tzimtzum* in the *hishtalshelus*, was all included first, before the *tzimtzum*. The *reshimu* is the letters of *Kadmon* that relate to this *hishtalshelus*, without the light in them. So you do not see how it is a revelation of G-d; you just see the letters that were estimated in *Kadmon*. The point is to connect everything after the *tzimtzum* to before the *tzimtzum*, to see how everything is still a revelation of the *Atzmus Ein Sof*, of G-d Himself.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1589, 1733],
+                  "start": 660.62,
+                  "end": 718.24
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The present you give your friend for his birthday, which you bought in the store, does not come from your *hiyuli* of kindness. The shoes and the coat do not come from the *hiyuli* of kindness; only the desire to give them does. But in the *mashal* of the consciousness in the body, the actual perceptions, the actual blue and red, come from your soul and happen in your soul. That is the difference: in that *mashal* it is going up, not going down. You are receiving, so it goes up into yourself, not out from yourself. That is why it is a *mashal* for how everything is *mamash* coming from before.",
+              "audio": [
+                {
+                  "lecture": "22 - Chap- 11-5 Atzmus Ohr Ein Sof (N).mp3",
+                  "words": [1734, 1848],
+                  "start": 721.02,
+                  "end": 763.68
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Baruch She'amar: \"He said\", \"and there was\", \"the world\"",
+      "summary": "The levels are read into the opening of *Baruch She'amar*: \"He said\" in concealment is *Yachid*, \"and there was\" is *Echad*, \"the world\", what He estimated, is *Kadmon*. Then the chapter jumps ahead: *Baruch Hu*, hidden, is the origin of the world, the estimation without its light; \"says and does\" is the *Kav* in actuality, \"makes the beginning\" is *Adam Kadmon*, and \"decrees and fulfils\" is the *kav hamida* before it.",
+      "passages": [
+        {
+          "lines": [
+            "m45toc7w",
+            "puzdwfro",
+            "55fz4bgp"
+          ],
+          "phrases": [
+            {
+              "he": "(וזהו פירוש כללי למה שכתוב"
+            },
+            {
+              "he": "ברוך שאמר והיה העולם",
+              "en": "\"Blessed is He that said and the world came to be.\"",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [88, 98],
+                "start": 38.28,
+                "end": 42.27
+              }
+            },
+            {
+              "he": "פירוש שאמר בהעלם, ברצונו הפשוט שבמלכות דאין סוף,",
+              "en": "He said it to Himself, so it was like still hidden within His simple desire of *Malchus d'Ein Sof*,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [117, 135],
+                "start": 56.44,
+                "end": 67.6
+              }
+            },
+            {
+              "he": "בהיותו עדיין כלול בחפץ חסד העצמי הנזכר לעיל",
+              "en": "the way it's still included in the *chafetz chesed ha'atzmi*.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [143, 152],
+                "start": 70.4,
+                "end": 72.8
+              }
+            },
+            {
+              "he": "ואחר כך והיה,",
+              "en": "and then it came to be,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [164, 169],
+                "start": 82.82,
+                "end": 84.84
+              }
+            },
+            {
+              "he": "בגלוי אור המתפשט לדבר פרט",
+              "en": "that already *v'haya* means that it's already coming out as something. We don't know what yet, but it's coming to a particular thing,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [178, 200],
+                "start": 90.32,
+                "end": 96.98
+              }
+            },
+            {
+              "he": "להשתלשלות, להיות מקור לכל העולמות",
+              "en": "to be a source for all of the worlds.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [206, 214],
+                "start": 100.66,
+                "end": 105.04
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Now the *Mitteler Rebbe* (Rabbi DovBer of Lubavitch, the author) gives a short *perush hamilos* (explanation of the words) of the beginning of *Baruch She'amar* and shows how these levels correspond to it. But he also jumps ahead and shows how some of the levels explained later correspond, \"so you kind of have to come back and see\": look at this again after you learn about those levels.\n\nWe say, **\"Blessed is He that said and the world came to be.\"** What does it mean?",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [0, 103],
+                  "start": 2.92,
+                  "end": 51.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "\"He said\" in concealment: **He said it to Himself, so it was like still hidden within His simple desire of Malchus d'Ein Sof**, **the way it's still included in the chafetz chesed ha'atzmi** (the essential *chafetz chesed*). He said it in *Yachid*.\n\n**And then it came to be**, *v'haya*, in the revelation of the light that spreads to a particular thing: **it's already coming out as something. We don't know what yet, but it's coming to a particular thing**, to the *hishtalshelus*, **to be a source for all of the worlds.** That is already the light, the general light that comes out to be the source for the worlds, which is *Echad*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [104, 234],
+                  "start": 51.24,
+                  "end": 109.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "35dlgkvt",
+            "rqqetcnp"
+          ],
+          "phrases": [
+            {
+              "he": "ופירוש והיה העולם,",
+              "en": "and what does it mean, \"and the world came to be\"?",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [238, 248],
+                "start": 112.04,
+                "end": 114.42
+              }
+            },
+            {
+              "he": "היינו דווקא מן מה ששיער בעצמו בכח",
+              "en": "that means that the world came out according to what G-d said, the way that He estimated that He wanted the world, that's exactly the way the world comes out.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [256, 285],
+                "start": 118.32,
+                "end": 125.62
+              }
+            },
+            {
+              "he": "שהוא שרש מה שמתהווה אחר כך העולם הכללי שנמשך מן הקו וכו' וכנזכר לעיל ודי למבין.",
+              "en": "And this estimation in Himself of exactly what's going to be is the source of everything that comes out into the world after the *tzimtzum* in the *Kav* and everything,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [314, 343],
+                "start": 137.38,
+                "end": 149.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And what does it mean, \"and the world came to be\"?** **That means that the world came out according to what G-d said, the way that He estimated that He wanted the world**: that is exactly the way the world comes out. So the details of what will come out, *ha'olam*, \"the world\", is *Kadmon*. **And this estimation in Himself of exactly what's going to be is the source of everything that comes out into the world after the tzimtzum in the Kav.**",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [235, 345],
+                  "start": 109.4,
+                  "end": 150.3
+                }
+              ]
+            },
+            {
+              "kind": "recap",
+              "text": "If you just look at the simple meaning of the words, \"Blessed is He that said and the world came to be\" is one big title. First of all, we use all of these words to refer to G-d Himself: we identify who we are talking about, whom we are blessing. \"Blessed is He that said and the world came to be\" shows that we are talking about the *Atzmus d'Ein Sof*, because we refer to G-d Himself.\n\nWithin this there are three stages. *Baruch She'amar*, the One who said: He could say whatever He wants. That is a total *hiyuli*, just that He has the ability to say. It does not mean that anything separate from Him came at all. Then we say *v'haya*, and something came to be: it is ready to come out, but the details are not there yet. And *ha'olam* means that the exact details came out. But we speak about the way that \"and the world came to be\" is part of \"He said\", the essential *hiyuli* ability to say and make the world. So these three, \"said\", \"came to be\" and \"the world\", correspond to *Yachid*, *Echad* and *Kadmon*. That is the end of the *perush hamilos* that relates to what was learned, *v'dai l'mevin* (and this is enough for one who understands).",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [346, 583],
+                  "start": 152.2,
+                  "end": 243.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "sy5u5uzp",
+            "cuypbbsi"
+          ],
+          "phrases": [
+            {
+              "he": "וברוך הוא,",
+              "en": "\"Blessed is He,\"",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [613, 615],
+                "start": 258.1,
+                "end": 259.04
+              }
+            },
+            {
+              "he": "נסתר,",
+              "en": "So that's the idea of *nistar*, that's the thing that it's like hidden.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [650, 662],
+                "start": 271.9,
+                "end": 275.3
+              }
+            },
+            {
+              "he": "היינו בחינת קדמונו של עולם",
+              "en": "that G-d precedes the world, that He's like the origin of the world.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [673, 686],
+                "start": 279.56,
+                "end": 285.32
+              }
+            },
+            {
+              "he": "דהיינו מה ששיער בעצמו בכח כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Now he continues a little in *Baruch She'amar*, with the *perush hamilos* of what comes after. When it says *Baruch Hu*, **\"Blessed is He,\"** we are no longer identifying whom we are talking about at all. We just say, \"Blessed is He\": it is in the third person, with no description of whom we mean. **So that's the idea of nistar** (hidden). It is *kadmono shel olam* (the One who precedes the world): **that G-d precedes the world, that He's like the origin of the world.**",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [584, 686],
+                  "start": 244.5,
+                  "end": 285.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is G-d as the source of what comes out in the world. These are the letters as they were estimated in *Kadmon*, but now as they come to be the source of the world. It is like the way the *reshimu* has all that estimation, now to actually come out, and the light is hidden. So now you do not know who it is anymore, and that is why it does not say \"the One who said and the world came to be\": that is now hidden. You just see Him as this mysterious source of the world, \"the great cosmic secret or something.\"",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [687, 832],
+                  "start": 286.24,
+                  "end": 339.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5s2gllvn",
+            "4qkcwcq3",
+            "zaueijdm",
+            "fxagl3u3"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שכתוב מגיד מראשית אחרית,",
+              "en": "that G-d says from the beginning to the end.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [838, 846],
+                "start": 341.72,
+                "end": 344.92
+              }
+            },
+            {
+              "he": "מראשית הקו עד סופו כו'"
+            },
+            {
+              "he": "ומקדם אשר לא נעשה עדיין",
+              "en": "and before it actually happened, He says what's going to be.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [906, 916],
+                "start": 367.12,
+                "end": 371.22
+              }
+            },
+            {
+              "he": "היינו מקדמונו של עולם הנזכר לעיל",
+              "en": "this is from the level that's called *kadmono shel olam*, that is the origin of the world.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [944, 960],
+                "start": 381.1,
+                "end": 387.86
+              }
+            },
+            {
+              "he": "ונקרא ימי קדם,",
+              "en": "it's called the olden days, the original days,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [964, 971],
+                "start": 388.86,
+                "end": 392.8
+              }
+            },
+            {
+              "he": "שקודם למה שנמשך בקו",
+              "en": "which precedes what goes into the *Kav*.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [985, 991],
+                "start": 399.38,
+                "end": 401.72
+              }
+            },
+            {
+              "he": "והוא מה שקדם בעצמו בכח, מה שעתיד להיות בפועל כו' ודי למבין.",
+              "en": "and this is the whole estimation of what's going to actually happen, that preceded within Himself.",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [1004, 1025],
+                "start": 406.52,
+                "end": 413.94
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "As it says, *magid mereishis acharis*, **that G-d says from the beginning to the end.** The simple meaning is that at the beginning G-d says what is going to happen at the end: He knows the future. But here we are saying that G-d dictates the whole *hishtalshelus* from the beginning to the end: He estimated everything. **And before it actually happened, He says what's going to be**: even though it did not happen at all, before any *hishtalshelus* started, He already had the whole thing set up.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [833, 938],
+                  "start": 339.06,
+                  "end": 378.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This is from the level that's called kadmono shel olam, that is the origin of the world.** **It's called the olden days, the original days**, *yemei kedem*, \"you know, like they say the good old days,\" **which precedes what goes into the Kav.** **And this is the whole estimation of what's going to actually happen, that preceded within Himself.**",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [939, 1025],
+                  "start": 378.66,
+                  "end": 413.94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ildtkzxl",
+            "2y6pw4of",
+            "intao3hc",
+            "vutyncgy"
+          ],
+          "phrases": [
+            {
+              "he": "ומה שכתוב ברוך אומר ועושה כו',",
+              "en": "and this that it says, \"Blessed is He that says and does,\"",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [1031, 1046],
+                "start": 419.58,
+                "end": 428.26
+              }
+            },
+            {
+              "he": "היינו מה שנמשך בקו בפועל ממש"
+            },
+            {
+              "he": "ועושה בראשית כו',",
+              "en": "it makes the beginning, which that is *Adam Kadmon*,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [1122, 1129],
+                "start": 459.54,
+                "end": 462.8
+              }
+            },
+            {
+              "he": "הוא כל שיעור קומת אדם קדמון כו'",
+              "en": "That's the whole standing of *Adam Kadmon*,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [1138, 1143],
+                "start": 467.1,
+                "end": 469.66
+              }
+            },
+            {
+              "he": "וגוזר ומקיים, בתחלה,"
+            },
+            {
+              "he": "הוא בחינת קו המדה שלפני אדם קדמון",
+              "en": "the measuring line is before *Adam Kadmon*,",
+              "audio": {
+                "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                "words": [1205, 1210],
+                "start": 490.34,
+                "end": 491.7
+              }
+            },
+            {
+              "he": "שהוא בחינת צמצום דרשימו שנמשך ממנו הקו כידוע, וכמו שיתבאר בעזרת השם בסמוך):"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**And this that it says, \"Blessed is He that says and does\"**: this second \"says\" is already when it comes out *b'poel*, when there is a revelation. It is not the hidden saying to Himself; now He is actually bringing it out. This is the beginning of the *Kav*, the first circle of the *Kav*, which will be explained later and is called the *ratzon kadum* (the preceding will). Then from that first circle of the *Kav*: \"makes the beginning\", *oseh bereishis*, **it makes the beginning, which that is Adam Kadmon** (the first world). **That's the whole standing of Adam Kadmon**: all the *partzufim* (statures) of *Adam Kadmon*, all the *sefiros* and all the details of *Adam Kadmon* come out according to the saying of the circles of the *Kav*.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [1026, 1171],
+                  "start": 416.34,
+                  "end": 478.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But in between \"Blessed is He that says and does\" and \"Blessed is He that makes the beginning\" there is \"Blessed is He that decrees and fulfils\", *gozer u'mekayem*. That is the *kav hamida*: **the measuring line is before Adam Kadmon**, which measures things out so that the circles come out in a particular way. That is what divides it into ten circles, and then brings it out into the *yosher* (the upright line) of *Adam Kadmon*.\n\nThis is the *tzimtzum* of the *reshimu* from which the *Kav* is drawn: the *Kav* measures everything out according to the way it was estimated in the *reshimu*, and that is what divides it up to come out a certain way, as will be explained later.",
+              "audio": [
+                {
+                  "lecture": "23 - Chap- 11-6 Atzmus Ohr Ein Sof (N)(End).mp3",
+                  "words": [1172, 1304],
+                  "start": 478.52,
+                  "end": 524.54
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "If *Yachid* has no parts, in what sense are the ten *sefiros* there? How does the kind person's kindness show it, and why can't you teach a computer to be kind?",
+      "lines": [
+        "kcb4r75d",
+        "c33vypdb",
+        "ode6voeg"
+      ]
+    },
+    {
+      "question": "Why is it a *chiddush* that even *Malchus* is in the *Atzmus Or Ein Sof*, and what follows from its being infinite for the details of a *mitzva*?",
+      "lines": [
+        "aydlysav",
+        "tsj3dsxk",
+        "ztilxifu",
+        "rpulhfy6",
+        "y5ou5imc"
+      ]
+    },
+    {
+      "question": "What does it mean that at the level of *Echad* the *sefiros* are united and yet *b'li ma*, \"without a what\"? How does the man who wants \"to do a nice thing\" illustrate it?",
+      "lines": [
+        "ebblgcsv",
+        "4zngdgsn",
+        "s4ayi7ps"
+      ]
+    },
+    {
+      "question": "How do the basketball player and the eye ready to see illustrate *Kadmon*, the third level?",
+      "lines": [
+        "wtm5kqk3",
+        "anu7zmhn",
+        "446xwma2"
+      ]
+    },
+    {
+      "question": "Why is the level after the *tzimtzum* brought here among the levels of the *Atzmus*, and why is the soul's perception in the body a better *mashal* for it than the birthday present?",
+      "lines": [
+        "qkyjlmgn",
+        "h5awp4fj",
+        "beoamgxv"
+      ]
+    },
+    {
+      "question": "How do \"He said\", \"and there was\" and \"the world\" in *Baruch She'amar* correspond to *Yachid*, *Echad* and *Kadmon*?",
+      "lines": [
+        "35dlgkvt",
+        "rqqetcnp"
+      ]
+    }
+  ],
+  "omitted": [],
+  "notes": [
+    {
+      "text": "Phrases that cite his rendering inside the explanation a few sentences after the reading, rather than right after it: line 22 (20 w142-269, after he reads lines 22-23 straight through at w119-141), the end of line 43 (21 w1251-1277), line 54 (22 w901-981), line 55 (22 w1006-1040) and the end of line 61 (23 w178-200).",
+      "lines": [
+        "bjjttzpz",
+        "nwxkqqj7",
+        "kzngjhf6",
+        "kvr3qmhh",
+        "55fz4bgp"
+      ]
+    },
+    {
+      "text": "Phrases he reads without translating keep their Hebrew alone: line 12, the end of line 31, the end of line 44, the middle of line 53, line 57 (he explains it rather than rendering it), the start of line 59, line 65, the end of line 66, the end of line 70, the start of line 72 and line 73.",
+      "lines": [
+        "c33vypdb",
+        "wxzq3si7",
+        "qmpyck4z",
+        "amc7mitd",
+        "h5awp4fj",
+        "m45toc7w",
+        "cuypbbsi",
+        "5s2gllvn",
+        "ildtkzxl",
+        "intao3hc",
+        "vutyncgy"
+      ]
+    },
+    {
+      "text": "Line 7: the chapter has \"dekav v'chut\"; he reads \"d'hakavim\" and his English keeps \"the kavim\". The phrase's en follows what he said.",
+      "lines": [
+        "cviljhsx"
+      ]
+    },
+    {
+      "text": "18 w1338-1349 (\"but that they are are distinct in some way\") seems to say the opposite of the sentence it ends; left out of the block on line 13 as unclear.",
+      "lines": [
+        "ode6voeg"
+      ]
+    },
+    {
+      "text": "20 w1755-1775 (\"they're not yet like in a chacham yodea or anything\") is unclear and left out of the last block on lines 28-30.",
+      "lines": [
+        "4zngdgsn",
+        "s4ayi7ps"
+      ]
+    },
+    {
+      "text": "He glosses \"b'mi nimlach\" as \"who should I rule over\" (19 w1804-1838); nimlach usually means \"consulted\". The block keeps his gloss.",
+      "lines": [
+        "y5ou5imc"
+      ]
+    },
+    {
+      "text": "Stained glass (22 w1339-1352): \"If it shines through a red glass, it hides the red and the yellow\": a slip for the blue and the yellow. Kept in quotation marks as said.",
+      "lines": [
+        "h5awp4fj"
+      ]
+    },
+    {
+      "text": "Basi L'Gani \"in 25 and in 46\" (20 w617-656), as he gave it; presumably the chapters of the maamarim. Kuntres Inyana shel Toras HaChassidus on the essence that does not mix and permeates everything, like oil (18 w1379-1425), also as he gave it.",
+      "lines": [
+        "7q7tzcm5",
+        "ode6voeg"
+      ]
+    },
+    {
+      "text": "21 w1525-1553: \"once there's an actual or, there has to be a tzimtzum to make the or\" is kept as he said it; the sense is not fully clear.",
+      "lines": [
+        "qmpyck4z"
+      ]
+    },
+    {
+      "text": "Class openings: class 20 opens by finishing class 19's point on line 21 (the chok, 20 w0-118), placed under lines 20-21 with outOfPlace. Class 21 opens by reading the first two words of line 32 and finishing the point on line 31 (21 w0-58); that block is under lines 32-34, where the reading is. The recap of the three words of Baruch She'amar (23 w346-583) falls after the alignment's mark for line 64 but sums up lines 59-63, so it is placed there.",
+      "lines": [
+        "y5ou5imc",
+        "2jrerxnh",
+        "35dlgkvt",
+        "rqqetcnp"
+      ]
+    },
+    {
+      "text": "Line 15's alignment (conf 0.5) marks his second reading at 19 w456; he first reads it at w48-56 straight after line 14, and the phrase cites the English right after that first reading (w57-76).",
+      "lines": [
+        "3bp4dvgk"
+      ]
+    },
+    {
+      "text": "Sensitivity: no block is flagged. Considered and left unflagged as ordinary Torah positions or criticism of an idea: G-d wanting to be King over the Jews \"and also the gentiles doing the seven commandments\" (19 w1506-1574); \"that's the best that like a philosopher could come up with\" (20 w1417-1434); the halachic detail that tefillin with one letter missing a drop, or placed a little wrong on the arm, are \"nothing\" (19 w1343-1497), stated as a general point of law, not advice on a case.",
+      "lines": [
+        "y5ou5imc",
+        "4zngdgsn",
+        "rpulhfy6"
+      ]
+    },
+    {
+      "text": "Class 23 jumps ahead to levels explained later in the book (the first circle of the Kav, ratzon kadum, Adam Kadmon, the kav hamida and yosher), as he says the Mitteler Rebbe does here.",
+      "lines": [
+        "ildtkzxl",
+        "2y6pw4of",
+        "intao3hc",
+        "vutyncgy"
+      ]
+    }
+  ]
+}
