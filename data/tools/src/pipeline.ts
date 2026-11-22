@@ -9,6 +9,7 @@ import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
+import { checkStudy } from './study.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
 /** data/ (this file compiles to data/tools/build/pipeline.js). */
@@ -60,6 +61,8 @@ export function loadCatalog(paths: DataPaths, schemas: SchemaSet, cdnBase = DEFA
 
 export interface BuildResult {
   errors: string[];
+  /** Problems that do not stop the build (stale or doubtful study guide references). */
+  warnings?: string[];
   catalog?: Catalog;
   chapters?: ChapterFile[];
   outDir?: string;
@@ -87,6 +90,16 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     // line ids); the ones audio-publish.json selects are published below.
     const lectureIds = new Set([...catalog.series.flatMap((s) => [...catalogLectures(s.items)])].map((l) => l.id));
     errors.push(...validateSources(paths.sources, schemas, lectureIds, lines.index));
+  }
+  // Study guides (data/study/) are checked, not published. Only an error in
+  // a file itself fails the build: a reference gone stale because a chapter
+  // was edited or a tape re-timed is a warning here (`yarn study-check` is
+  // the strict check), so that editing a chapter never blocks a deploy.
+  const warnings: string[] = [];
+  if (errors.length === 0) {
+    for (const i of checkStudy(paths.sources.dataDir).issues) {
+      (i.level === 'error' ? errors : warnings).push(`${i.file}: ${i.level === 'error' ? '' : `(${i.level}) `}${i.message}`);
+    }
   }
   if (errors.length > 0) return { errors };
   const audio = publishAudio({
@@ -136,5 +149,5 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     ],
   });
 
-  return { errors: [], catalog, chapters: loaded.chapters, outDir };
+  return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir };
 }

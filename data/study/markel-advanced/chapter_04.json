@@ -1,0 +1,2301 @@
+{
+  "schemaVersion": 1,
+  "series": "markel-advanced",
+  "chapter": "chapter_04",
+  "title": "General and particular contemplation",
+  "status": "draft",
+  "provenance": {
+    "method": "migrated",
+    "from": "yringler/shaarhayichudstudydemo@7d285c9 (content/chapter_04)",
+    "date": "2026-11-22",
+    "note": "Ported from the demo's Markdown. Three things are coarser than a file written for this format: the phrases are whole paragraphs of Rabbi Markel's published translation (Sefaria, \"The Gate of Unity\", 2023, CC-BY), not phrases as translated in class; each block's word range starts where the demo's listen link pointed and its end is estimated (up to the next cited point, at most about 450 words); and the demo's style left out banter, stories and digressions, which `yarn study-check` lists as uncited stretches."
+  },
+  "lectures": [
+    {
+      "id": "022 Tape004-Side2-Ch4.mp3",
+      "transcriptionId": "be38e254-cdab-4c61-9ff4-57514724f62d"
+    },
+    {
+      "id": "023 Tape005-Side1-Ch4.mp3",
+      "transcriptionId": "257b7de3-c346-4614-b01b-ec55d5af94c2"
+    }
+  ],
+  "overview": "Chapter 4 asks how contemplation should be done: as a whole (*derech klal*) or detail by detail (*derech prat*). The general way holds the real goal, that G-d is in everything and everything is nullified to Him. But on its own it lets a person believe he understands while G-d stays far away, and can even lead to false delusions. Particulars bring the idea close. Starting from what can be grasped, often from how things work in ourselves, one climbs step by step: from the orbits and angels to *Malchus* of *Atzilus*, and through the *partzufim* to the *Kav*, until the general is reached truly. Each unification is a detail of a higher one; the general unification is the nullification of everything to G-d's essence. The particulars are studied only to reach Him. In prayer, too, the particular meanings strengthen the general intent, though a beginner starts with the general.",
+  "terms": [
+    {
+      "term": "derech klal",
+      "he": "דרך כלל",
+      "gloss": "the general way; contemplating a subject as a whole",
+      "line": "6cakse44"
+    },
+    {
+      "term": "derech prat",
+      "he": "דרך פרט",
+      "gloss": "the particular way; contemplating a subject detail by detail",
+      "line": "6cakse44"
+    },
+    {
+      "term": "memalei kol almin",
+      "he": "ממלא כל עלמין",
+      "gloss": "(the light) that fills all worlds",
+      "line": "6cakse44"
+    },
+    {
+      "term": "yichuda ila'a",
+      "he": "יחודא עילאה",
+      "gloss": "the higher unity",
+      "line": "m2zpt3ak"
+    },
+    {
+      "term": "yichuda tata'a",
+      "he": "יחודא תתאה",
+      "gloss": "the lower unity",
+      "line": "4ps3yns6"
+    },
+    {
+      "term": "mahus",
+      "he": "מהות",
+      "gloss": "what a thing is in itself",
+      "line": "gl5dssvh"
+    },
+    {
+      "term": "metzius",
+      "he": "מציאות",
+      "gloss": "existence",
+      "line": "gl5dssvh"
+    },
+    {
+      "term": "galgalim",
+      "he": "גלגלים",
+      "gloss": "the celestial orbits (spheres)",
+      "line": "dy5e5akm"
+    },
+    {
+      "term": "partzufim",
+      "he": "פרצופים",
+      "gloss": "lit. faces; the statures of the sefiros",
+      "line": "5vrj527z"
+    },
+    {
+      "term": "amkus hadaas",
+      "he": "עמקות הדעת",
+      "gloss": "depth of daas",
+      "line": "uh5vf7sj"
+    },
+    {
+      "term": "yichud prati",
+      "he": "יחוד פרטי",
+      "gloss": "a particular unification",
+      "line": "h7aoass4"
+    },
+    {
+      "term": "yichud klali",
+      "he": "יחוד כללי",
+      "gloss": "the general unification",
+      "line": "h7aoass4"
+    }
+  ],
+  "sections": [
+    {
+      "title": "The question: contemplating in general, or in particulars",
+      "summary": "Should contemplation take the subject as a whole (*derech klal*) or go through it in particulars (*derech prat*)? Even the general way has many analogies and details, but they all serve one general idea.",
+      "passages": [
+        {
+          "lines": [
+            "6cakse44",
+            "cbwgwjex"
+          ],
+          "phrases": [
+            {
+              "he": "(ד) ומעתה יש לבאר באיכות ענין ההתבוננות, אם דרך כלל או דרך פרט דווקא, כמו על דרך דוגמא בהשגה אלקית דבחינת ממלא כל עלמין, דרך כלל בג' עולמות בי''ע, הכל שרש ענין א' הוא בכל המשלים דזיו והתפשטות או אותיות כו', וכללותו רק ענין הגלוי מן ההעלם",
+              "en": "We must now explain how one should contemplate (*Hitbonenut*), whether it should specifically be done in a general way, or in a way of particulars. For example, [this may be understood] in [regard to] the G-dly comprehension into the aspect of how *HaShem*’s-יהו״ה G-dliness fills all worlds (*Memaleh Kol Almin*). In the general comprehension [of how *HaShem*’s-יהו״ה G-dliness permeates] the three [created] worlds of *Briyah, Yetzirah,* and *Asiyah*, all the examples of the ray [emanating from the luminary], or of the spreading forth [of Divine influence], or of the letters [of speech] etc., are all rooted in one general matter, that of “the revelation of that which is the hidden.”",
+              "notes": [
+                "*Giluy HaHe’elem* (revelation of the hidden). This matter and all of its analogies will be explained later in chapter 19."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This chapter is about the particular: it teaches that the material has to be learned in a particular manner. **We must now explain how one should contemplate**: in a general way (*derech klal*) or specifically in a way of particulars (*derech prat*)? The text gives an example from the contemplation of how G-dliness fills the three worlds of *Beriya*, *Yetzira* and *Asiya* (*memalei kol almin*, the light that fills all worlds). In the general comprehension of this, **all the examples of the ray [emanating from the luminary], or of the spreading forth [of Divine influence], or of the letters [of speech] etc., are all rooted in one general matter**, the revelation of what was hidden.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4,
+                    83
+                  ],
+                  "start": 7.08,
+                  "end": 42.46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "w5vczvps"
+          ],
+          "phrases": [
+            {
+              "he": "או כמו ערך הנבדל לבחינת בעל גבול מחודש לגבי בלתי בעל גבול דרך כלל, שיש בזה ריבוי אופנים, והכל בכלל, גם שנמצא בזה ענינים פרטים הרבה (כמו שיתבאר)",
+              "en": "Likewise, in the general [comprehension of the great] difference between a created, limited being, relative to *HaShem*-יהו״ה, blessed is He, the Unlimited Being; [although] there are many particular ways to [understand] this and [although] there are many details (as will be explained), [nonetheless], it all is [understood in a] general [manner]."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Even the general way has **many particular ways to [understand] this**: there are many analogies (*meshalim*) even in a *derech klal*. In general, the *Aibershter* fills the world the way the soul fills the body, or like the sun, and so on. And He is totally separate from it, as an unlimited Being is from a created, limited one. Practically everybody is aware of these ideas in a general way, if not with all the analogies.\n\nSo a *derech klal* does not mean a single way with no length, breadth and depth (*orech*, *rochav* and *omek*). It has many ways, and even within it there are many particular matters, as the text will explain later. **[nonetheless], it all is [understood in a] general [manner]**.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    84,
+                    247
+                  ],
+                  "start": 42.6,
+                  "end": 105.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rbofzdcy"
+          ],
+          "phrases": [
+            {
+              "he": "או דרך פרט, להתבונן בכל עולם ובכל נברא ובכל פרטי מדריגות חלוקים בסדרי ההשתלשלות מעילה לעילה בכל אחד בפני עצמו דוקא כו'",
+              "en": "Or, [on the other hand], should one contemplate in a manner of particulars, [analyzing] each world, each creature and each of the various particular levels in the [entire] chaining down [of the worlds], from cause to [subsequent] cause, [analyzing] each one, specifically in and of itself?"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The alternative is to contemplate **in a manner of particulars, [analyzing] each world, each creature and each of the various particular levels in the [entire] chaining down [of the worlds], from cause to [subsequent] cause**. This is more than knowing that the *Aibershter* fills the world like a soul fills a body. Even of the soul and body, everybody knows in general that the soul fills the body. But then there is the question of how it works in the eye, and how it makes a tooth grow: each detail in a particular way, each one by itself.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    248,
+                    359
+                  ],
+                  "start": 105.94,
+                  "end": 146.52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "m2zpt3ak",
+            "7bttavsf",
+            "zdts5g2i",
+            "3rfvlpku"
+          ],
+          "phrases": [
+            {
+              "he": "וכך הוא השאלה בהתבוננות ביחודא עילאה באורות וכלים דאצילות בכל פרטי עשר ספירות עד עצמות אור אין סוף",
+              "en": "This, likewise, is the question in regard to the contemplation of the “Upper Unity,” of the lights and vessels [of the world] of *Atzilut*, including all the details of the ten *sefirot,* until the Essential Self of the Limitless Light (*Atzmoot Ohr Ein Sof)*."
+            },
+            {
+              "he": "אם להתבונן בכללות ענין אור האצילות באיכות צמצומו מן העצמות ואיך שנבדל הערך לגבי עצמות המאציל",
+              "en": "Should one contemplate this in a general manner, [that is] the matter of the light of *Atzilut*, how it comes about from the Essential Self of *HaShem*-יהו״ה, blessed is He, through *Tzimtzum*, and how it is incomparable to the Essential Self of the Emanator?"
+            },
+            {
+              "he": "ואיך דאיהו וחיוהי חד כו' (גם שיש בו ענינים פרטיים הרבה מאד כמו שיתבאר)",
+              "en": "Likewise [in regard to the general contemplation of] how “He and His life force are one” (although there are many particulars in this, as will be explained, [nonetheless, it still is a general contemplation])."
+            },
+            {
+              "he": "בכמה מיני משלים כמו שלהבת הקשורה כו' שנזכר בספר יצירה או כענין גלוי ההעלם דכחות הנפש מעצמות הנפש דרך כלל כידוע",
+              "en": "[He can understand this matter generally,] through various analogies, such as [the analogy] mentioned in *Sefer Yetzirah* of a flame that is bound [to the coal], or such as a general [understanding] of the revelation of the faculties of the soul from their concealment in the essence of the soul."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same question arises about **the contemplation of the “Upper Unity,”** (*yichuda ila'a*): **the lights and vessels [of the world] of *Atzilut*, including all the details of the ten *sefirot*** up to the essence of the *Or Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    360,
+                    376
+                  ],
+                  "start": 147.75,
+                  "end": 157.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Should one contemplate it in general: how the light of *Atzilus* comes from G-d's essence through contraction (*tzimtzum*), and how it is incomparable to the Emanator?",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    377,
+                    392
+                  ],
+                  "start": 157.13,
+                  "end": 165.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Or how, in general, **“He and His life force are one”**: how the *sefiros* of *Atzilus* are truly unified, and how the infinite light is contracted in order to come into them.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    393,
+                    442
+                  ],
+                  "start": 165.89,
+                  "end": 188.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This too has a great many details, as will be explained. It can be understood generally **through various analogies**, such as the flame bound to the coal mentioned in *Sefer Yetzira*, or the way the soul's faculties are revealed from their concealment in the soul's essence.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    443,
+                    465
+                  ],
+                  "start": 188.22,
+                  "end": 199
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4ps3yns6"
+          ],
+          "phrases": [
+            {
+              "he": "עד שאחר העיון יושג בחינת העומק מזה כנזכר לעיל בהשגה דממלא כל עלמין שנקרא יחודא תתאה כידוע.",
+              "en": "Through this analysis he will come to comprehend the depth [of the concept] of how the light of *HaShem*-יהו״ה, blessed is He, fills all worlds, which is called, “The Lower Unity,” as known."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Through this one comes to understand the depth of it: that the worlds of *Beriya*, *Yetzira* and *Asiya* are full of G-dliness, understood in a general way, or that the world of *Atzilus* is unified with the Emanator. So the subjects of *yichuda ila'a* and *yichuda tata'a* (the higher and the lower unity) can both be discussed in a general manner.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    466,
+                    541
+                  ],
+                  "start": 200.01,
+                  "end": 231
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But what the text calls \"a general manner\" is in fact a particular manner compared to what most people take this contemplation to be. Most people, especially in our days, do not go even this far. They say: G-d fills everything, it is all one, the world is the universe and the universe is the world. And they figure they have already grasped it.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    542,
+                    613
+                  ],
+                  "start": 232.13,
+                  "end": 257.84
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The general way holds the goal, but can deceive",
+      "summary": "The real goal is the general idea: that G-d is in everything and everything is nullified to Him. But one who has only the general idea can believe he understands while G-d is in fact far from him.",
+      "passages": [
+        {
+          "lines": [
+            "ecmvdyqt",
+            "ymyj432g",
+            "yaj77wry"
+          ],
+          "phrases": [
+            {
+              "he": "והנה באמת לא ראי זה כו' דיש מעלה בהתבוננות דרך כלל כדי שיוכל לבא לבחינת העומק בכלל שהוא בחינת עצמות אור האלקי",
+              "en": "Now, in truth, the two [methods] are dissimilar [to each other]. [On the one hand] there is an advantage to general contemplation, that through it one will be able to come to the general depth [of the matter], which is the general aspect of the essence of the G-dly light."
+            },
+            {
+              "he": "בבחינת הכלל, בין ביחודא עילאה בין ביחודא תתאה, שזהו עיקר התכלית בגלוי אלקות בנפש כו'",
+              "en": "[However] he will reach this only in a general way, whether in [regard to the comprehension of] the “Upper Unity,” or the “Lower Unity.” This revelation of G-dliness in his soul is the ultimate purpose of contemplation."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In truth, **the two [methods] are dissimilar**: one is not really like the other.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    614,
+                    657
+                  ],
+                  "start": 260.24,
+                  "end": 280.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On the one hand, **there is an advantage to general contemplation**, since through it one reaches **the general aspect of the essence of the G-dly light**. The real thing is, in fact, specifically the general.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    658,
+                    742
+                  ],
+                  "start": 280.86,
+                  "end": 307.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is the same as in chapter 1: why go for *bina* (understanding) when the real thing is *chachma* (wisdom)? *Chachma* is the general (*klal*) and *bina* is the particular (*prat*). Here too, what one is really after is the main thing, the *klal*: in *yichuda tata'a*, how G-d fills the world, and in *yichuda ila'a*, how the *sefiros* are unified with the Emanator. That is what one really wants.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    743,
+                    792
+                  ],
+                  "start": 308.4,
+                  "end": 326.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "One does not need every detail, such as how the letters come out of *Malchus* of *Malchus* of *tevuna* after beginning in analytic thought. When one gets into the nitty-gritty of analogies like that, it can seem that one is not talking about G-dliness at all, only about how language is made, how the mind cuts an idea up into letters.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    793,
+                    984
+                  ],
+                  "start": 326.2,
+                  "end": 391.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The general way speaks of the main thing: how G-d is everywhere and in everything, and how everything is nullified (*batel*) to the *Aibershter*. **This revelation of G-dliness in his soul is the ultimate purpose of contemplation.** The general is the real goal.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    985,
+                    1065
+                  ],
+                  "start": 391.92,
+                  "end": 420.52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4wq4cyji",
+            "eza4x224"
+          ],
+          "phrases": [
+            {
+              "he": "ויש מעלה בהתבוננות דרך פרט דוקא מצד עוצם הקירוב גלוי אור האלקי בנפשו יותר, כי בהתבוננות דרך כלל יוכל להטעות את עצמו עד שנדמה לו כי מאד קרוב אליו הדבר",
+              "en": "[On the other hand] there is also an advantage to contemplating specifically in a way of particulars, since [through it] the revelation of the G-dly light in his soul will be incredibly closer to him. For, through contemplation in a general way it is possible for one to delude himself, so that it appears to him that this matter is very close to him."
+            },
+            {
+              "he": "ובאמת מרחוק מאד יהו״ה נראה לו בהיותו דרך כלל לבד",
+              "en": "However, in truth, when he only [contemplates] in a general manner, *HaShem*-יהו״ה appears to him from afar."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "On the other hand, **there is also an advantage to contemplating specifically in a way of particulars**: it brings the revelation of the light much closer to his soul. Why? Because in general contemplation **it is possible for one to delude himself**, so that he imagines he really understands.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1066,
+                    1120
+                  ],
+                  "start": 421.38,
+                  "end": 443.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**However, in truth, when he only [contemplates] in a general manner**, G-d is seen from afar.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1121,
+                    1215
+                  ],
+                  "start": 443.98,
+                  "end": 478.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "One who says \"G-d is all, all is everything and all is one\" has only a very vague idea. He can take that general notion and understand it in a way that is exactly the opposite of how it really is, while thinking that he understands it well. This is because it is only general, and he does not know the actual particulars of how it is so.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1216,
+                    1241
+                  ],
+                  "start": 479.9,
+                  "end": 486.24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Particulars bring it close: from what we grasp in ourselves, upward",
+      "summary": "What is grasped in particulars is truly grasped, even if at first it is only how things work in ourselves. From each particular one rises to a higher one, until the general is reached without self-deception.",
+      "passages": [
+        {
+          "lines": [
+            "gl5dssvh"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן ההתבוננות דרך פרט, שכל פרטי בהשגה בדבר פרטי, הרי יוקבע בנפשו בבחינת הקירוב ביותר",
+              "en": "This is not the case when one contemplates in a manner of particulars, to comprehend all the details of each particular. ]When he does this[, it becomes embedded in his soul in a very close way."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is not the case when one contemplates in a manner of particulars**, thinking about particular ideas through their various explanations. Then **it becomes embedded in his soul in a very close way**: it comes into his will, which becomes bound up with his mind.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1242,
+                    1302
+                  ],
+                  "start": 487.84,
+                  "end": 522.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From such a particular, for example *Malchus* of *Malchus* of *tevuna*, or how *Malchus* of *Malchus* of *Asiya* comes down into the *kelipos*, he can understand a great deal. This is not a grasp of what the thing is in itself (*mahus*), but an actual grasp of its existence (*metzius*): exactly how these things exist. And from that he can understand the level above.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1303,
+                    1458
+                  ],
+                  "start": 522.69,
+                  "end": 591.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "What was really understood in the first three chapters, about *chachma*, *bina* and *tevuna*, with analogies such as the difference between the Americans and the Greeks, was how we ourselves have *bina*, *tevuna* and *chachma*. Strictly, it was not even the *Chabad* of the *kelipos* in general but of our own *kelipa*, our own physical nature. Yet from that particular one goes to the general: from our own *bina* to the general *bina* of the *kelipos*, from there to the *bina* of the spiritual worlds of *Beriya*, *Yetzira* and *Asiya*, and from there up to *Atzilus* and higher.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1459,
+                    1686
+                  ],
+                  "start": 591.76,
+                  "end": 671.9
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The whole of \"His understanding is unsearchable\" was not grasped, but our own *tevuna* was grasped truly: so well that it can be explained exactly to someone else, with new analogies made to fit his kind of mind. That is unlike the one who says \"all is one and one is all\" and does not know how it works.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1687,
+                    1865
+                  ],
+                  "start": 672.64,
+                  "end": 742.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It can seem that this is not about G-dliness at all, only how the human mind works: we came to understand G-dliness and are learning psychology. That is why the text said that the two methods are not alike (*lo re'i zeh*).",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1921,
+                    1988
+                  ],
+                  "start": 765.54,
+                  "end": 786.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But from this, \"from my flesh I perceive G-d,\" one understands a higher general idea, which in turn becomes a particular of a still higher one, and so on.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    1989,
+                    2027
+                  ],
+                  "start": 789.22,
+                  "end": 801.38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "mioark6c"
+          ],
+          "phrases": [
+            {
+              "he": "וממנו יבוא להשגת דבר פרטי העליון הימנו בהדרגה, עד שיבוא לכלל ההשגה בכלליות, שאז מתאמת יותר בלתי הטעות את עצמו כלל",
+              "en": "From this, he will come to comprehend a [higher] particular, on a higher level, until he comes to the general comprehension of the general matter. In this way [the comprehension] is truer, without deluding himself at all."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**From this, he will come to comprehend a [higher] particular**, step by step, **until he comes to the general comprehension of the general matter**: how it is in the *Chabad* of the *Or Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2028,
+                    2049
+                  ],
+                  "start": 802.58,
+                  "end": 814.13
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Of course, what that is in itself remains unknown. If one truly knew it, one could do the same and create a world. But it does not matter: what one understands is the existence of the relationship between these things.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2050,
+                    2157
+                  ],
+                  "start": 814.3,
+                  "end": 849.85
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Take delight and will (*taanug* and *ratzon*): there is no delight without will and no will without delight. This is understood from oneself: I want something because I enjoy it, and I enjoy it because I want it. Why does a person want a steak? Because he enjoys it. Why does he enjoy it? Because he is hungry and wants it. The same holds for more refined things, such as honour or an idea: going up the ladder from a physical steak to intellect, will and delight are one.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2158,
+                    2334
+                  ],
+                  "start": 850.36,
+                  "end": 912.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From this one can understand the relationship of will and delight all the way up to the will and delight of G-d's essence, which cannot itself be grasped, being part of the Essence, entirely undefined. Even so, one understands that there is no will without delight and no delight without will: the relationship is truly understood.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2335,
+                    2411
+                  ],
+                  "start": 912.2,
+                  "end": 939.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In this way **[the comprehension] is truer, without deluding himself at all**, and he does not make the mistake described earlier.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2412,
+                    2451
+                  ],
+                  "start": 939.16,
+                  "end": 954.16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Climbing the ladder: from the orbits to Malchus of Atzilus",
+      "summary": "The contemplation goes bottom-up: from the orbits and stars, through the angels and each world's *sefiros*, to *Malchus* of *Atzilus*. Followed link by link, the trail from a gas bill or an orange back to G-d makes Him close and undeniable.",
+      "passages": [
+        {
+          "lines": [
+            "dy5e5akm"
+          ],
+          "phrases": [
+            {
+              "he": "כמו כשתחלה יתבונן דרך פרט בממלא כל עלמין באיכות התהוות שרש שפע ברוחניות דגלגלים ומזלות מאין ליש דעשיה, משמרי האופנים",
+              "en": "For example, when he starts contemplating the matter of how the light of *HaShem*-יהו״ה, blessed is He, fills all worlds, in a manner of particulars, [he begins by contemplating] how the root of the spiritual influence of the orbits and constellations come into actuality, out of nothing, from the waste matter of the *Ophanim* angels."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The example of particular contemplation in *memalei kol almin* starts with **how the root of the spiritual influence of the orbits and constellations come into actuality, out of nothing, from the waste matter of the** *Ofanim* angels.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2452,
+                    2492
+                  ],
+                  "start": 955.38,
+                  "end": 971.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This runs backwards from the way the book works. The book's explanation is top-down; the contemplation is bottom-up. Afterwards, when one thinks the matter over, one starts from the part one understands. And even when the explanation runs top-down, it is understood as it is down here.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2493,
+                    2581
+                  ],
+                  "start": 972.06,
+                  "end": 1007.88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ux6ompgg",
+            "dipad6g6",
+            "mv2hugwv"
+          ],
+          "phrases": [
+            {
+              "he": "ואחר כך יתבונן בפרטיות באופנים וחיות כו' עד בחינת מלכות דעשיה, כללות האור האלקי שמהוה עולם העשיה",
+              "en": "Afterwards, he contemplates the *Ophanim* angels, and the *Chayot* angels in a manner of particulars etc. ]This contemplation continues[ until ]he reaches[ the aspect of *Malchut* [of the world] of *Asiyah,* which is the general G-dly light that brings the world of *Asiyah* into being."
+            },
+            {
+              "he": "ועל דרך זה בפרטי י׳ ספירות דעשיה עד בחינת מלכות דיצירה שנעשה כתר לעשיה",
+              "en": "[He continues] in this way, [contemplating] the details of the ten *sefirot* [of the world] of *Asiyah* until he [reaches] the aspect of *Malchut* of *Yetzirah*, which becomes the *Keter* [for the world] of *Asiyah*."
+            },
+            {
+              "he": "וכן על דרך זה בפרטיות דיצירה ובפרטיות דבריאה כו'",
+              "en": "In this manner [he contemplates] the particulars [of the world] of *Yetzirah*, and [then] the particulars [of the world] of *Briyah*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Once he understands how the physical world comes out from the *Ofanim*, he goes on to the *Ofanim* and the *Chayos*, the angels, until he reaches **the aspect of *Malchut* [of the world] of *Asiyah,* which is the general G-dly light that brings the world of *Asiyah* into being**.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2582,
+                    2654
+                  ],
+                  "start": 1007.9,
+                  "end": 1043.77
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From *Malchus* of *Asiya* he goes up through **the details of the ten *sefirot* [of the world] of *Asiyah*** to *Keser* of *Asiya*, and from there to **the aspect of *Malchut* of *Yetzirah*, which becomes the *Keter* [for the world] of *Asiyah***.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2655,
+                    2710
+                  ],
+                  "start": 1043.81,
+                  "end": 1066.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**In this manner** he goes up through *Yetzira* and then *Beriya*, like Jacob's ladder. This is also what prayer (*tefilla*) is: contemplation is divine service (*avoda*), and *avoda* is *tefilla*, and *tefilla* means going up the ladder.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2711,
+                    2777
+                  ],
+                  "start": 1066.49,
+                  "end": 1088.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rde6lkyu"
+          ],
+          "phrases": [
+            {
+              "he": "עד בחינת מלכות דאצילות כללות הכל כו' שנקרא שם אלהי״ם בכלל כידוע",
+              "en": "[He continues in this way] until [he reaches] the aspect of *Malchut* of *Atzilut*, [which is] the totality of everything, and is generally called by the name G-d-*Elohi”m-*אלהי״ם, as known."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "He goes up to *Keser* of *Beriya*, and so understands how *Malchus* of *Atzilus* becomes *Keser* of *Beriya*: *Malchus* of *Atzilus*, **the totality of everything** that includes all of *Beriya*, *Yetzira* and *Asiya*. That is *yichuda tata'a*.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2778,
+                    2822
+                  ],
+                  "start": 1088.88,
+                  "end": 1108.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is not the explanation, which goes from above to below; it is about seeing, as in \"Lift up your eyes on high.\" Once one has the explanation in particulars, one can literally look at the world.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2823,
+                    2860
+                  ],
+                  "start": 1109.82,
+                  "end": 1122.94
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "It is cold today because it is winter, and it is winter because of where we are in the constellations as the orbits turn. That is why the leaves are falling and why I have to wear a sweater. My heater is on, and the gas bill will hit me at the end of the month: the orbits are spending my money on gas. If it affects me, it affects the man next door, all of Pittsburgh, all of North America, the price of gas, the price of energy, even the situation of Israel and the Arabs. One goes up from level to level through the particulars, and what moves all of it is the orbits, the constellation we are under.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    2861,
+                    3226
+                  ],
+                  "start": 1122.88,
+                  "end": 1263.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From there one goes up and up: from the orbits to the *Ofanim*, from the *Ofanim* to *Malchus* of *Asiya*, all the way to *Malchus* of *Atzilus*, which includes all the outer worlds, **and is generally called by the name G-d-*Elohi”m*** (*Elokim*).",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3246,
+                    3297
+                  ],
+                  "start": 1277.75,
+                  "end": 1297.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rfkeroz7",
+            "ozsyxvkr"
+          ],
+          "phrases": [
+            {
+              "he": "שאז מתאמת הדבר יותר בקירוב כו', כי אחר העיון היטב בכל הפרטים, הגם שכל פרט בפני עצמו אינו ענין אלהות בכללות ואינו רק בחינת טפל פרטי לבד, אבל כאשר יתחבר כל העיון מכל הפרטים אל הכלל, אז יוקבע יותר בנפש בחינת הכלל",
+              "en": "In this way, after thorough analysis, he realizes the truth of the matter, in a way of great closeness. For, although, in and of itself, each particular of his contemplation is generally not a matter of G-dliness and is only a particular that is of secondary importance, nonetheless, when his whole analysis of all the particulars, comes together and becomes bound to the general principle, then the general principle will become embedded in his soul to a greater degree."
+            },
+            {
+              "he": "כאשר בדוק ומנוסה לכל עוסק בעמקות בהתבוננות",
+              "en": "This has been tried and tested by all those who have toiled deeply in *Hitbonenut* contemplation."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Then the matter truly comes **in a way of great closeness**: G-d is behind my high gas bill. It is the name *Elokim*, not coincidence.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3298,
+                    3380
+                  ],
+                  "start": 1298.28,
+                  "end": 1329.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The good food on *Shabbos* came from the sun, the moon, the water and the earth, and those were affected by the years: one year a drought, another a frost, and oranges were expensive. Everybody says the *Aibershter* gives us oranges; this is following the trail of exactly how He gives them. I bought the orange in a store, but the orbits affect how much money I have and what oranges cost. The angels affect the orbits, and *Malchus* of *Asiya* affects the angels. Like a private investigator, one follows the trail up and finds who did it: the *Aibershter*, *Malchus* of *Atzilus*, *Elokim*.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3424,
+                    3613
+                  ],
+                  "start": 1345.66,
+                  "end": 1414.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then nobody can spin a tale and persuade me that there is no G-d: I can show the whole trail of how G-d got me the orange.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3614,
+                    3667
+                  ],
+                  "start": 1416.78,
+                  "end": 1434.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Yet **each particular of his contemplation is generally not a matter of G-dliness**. It may have nothing to do with G-dliness at all, like the sweater one started with. It is **only a particular that is of secondary importance**: why even talk about it? We want to talk about G-d, and you are talking about your sweater and your gas bill.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3668,
+                    3816
+                  ],
+                  "start": 1434.78,
+                  "end": 1487.43
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "Nonetheless, **when his whole analysis of all the particulars, comes together and becomes bound to the general principle**, you have an airplane. Everybody knows what an airplane is, but the engineer knows where every screw goes and all its aerodynamics. \"It flies because it has wings\"? Make a thing with wings and throw it: it falls. In engineering school there is the screw class, the propeller class, the algebra class, and the student asks what algebra has to do with airplanes. A child who wants to be a doctor is first taught A, B, C. First all the particulars, then one can actually be a doctor.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    3817,
+                    4148
+                  ],
+                  "start": 1487.96,
+                  "end": 1608.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So although the real thing is specifically the general, only when one knows all the particulars does one really know the general.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4205,
+                    4257
+                  ],
+                  "start": 1623.44,
+                  "end": 1644.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This has been tried and tested by all those who have toiled deeply in** contemplation: by anyone who has done the deepest contemplation properly.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4258,
+                    4280
+                  ],
+                  "start": 1644.9,
+                  "end": 1658.35
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The upper unity in particulars, and the delusion of the merely general",
+      "summary": "In the upper unity too, it is knowing how each *partzuf* comes from the one above, up to the *Kav* and beyond, that implants the Emanator's essence in the soul. Concentrating the mind only on one vague general idea leads to false delusions.",
+      "passages": [
+        {
+          "lines": [
+            "5vrj527z",
+            "dn6asu54"
+          ],
+          "phrases": [
+            {
+              "he": "וגם ביחודא עילאה בהתבוננות דרך פרט בכל פרטי העשר ספירות בפרצופים דזעיר אנפין ונוקבא ואבא ואמא ואריך אנפין ועתיק יומין עד ראשית הקו באדם קדמון כו'",
+              "en": "Likewise, the contemplation of the “Upper Unity” should be in a manner of particulars [as well]; to understand each particular detail of the ten *sefirot* of the statures of *Zeir Anpin* and *Nukvah, Abba* and *Imma*, *Arich Anpin* and *Atik Yomin*, all the way to the beginning of the *Kav* in *Adam Kadmon* etc."
+            },
+            {
+              "he": "דרך פרט דוקא, הוא המועיל לקבוע בנפש מבחינת כללות עצמות המאציל הכוללם יחד",
+              "en": "It is specifically [the contemplation of all this], in a manner of particulars, that will cause the general light of the essence of the Emanator, which includes and unifies everything, to be implanted in his soul."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Likewise, the contemplation of the “Upper Unity” should be in a manner of particulars**: in all the details of the ten *sefiros* and the *partzufim* (statures) of *Zeir Anpin* and *Nukva*, *Abba* and *Ima*, *Arich Anpin* and *Atik Yomin*, knowing how they work and how each connects with the next. It is not enough to say that *Zeir Anpin* is G-d's light. One should know exactly how *Zeir Anpin* and *Nukva* come from *Abba* and *Ima*, and how *Abba* and *Ima* come from *Arich* and *Atik*.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4281,
+                    4378
+                  ],
+                  "start": 1658.75,
+                  "end": 1696.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**It is specifically [the contemplation of all this], in a manner of particulars**, that leads **the general light of the essence of the Emanator, which includes and unifies everything**, into the soul. That is what one really wants to know, not even *Malchus* of *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4379,
+                    4414
+                  ],
+                  "start": 1696.94,
+                  "end": 1709.95
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From *Malchus* of *Atzilus* one goes to the union of *Zeir Anpin* and *Nukva*, from there to the union of *Abba* and *Ima*, then to how it comes down from *Arich* and *Atik*, and how they come out from *Adam Kadmon*, up to the beginning of the line (*Kav*). Then how the *Kav* comes out after the impression left by the contraction, and before that, the contraction and the infinite light.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4415,
+                    4507
+                  ],
+                  "start": 1710.06,
+                  "end": 1736.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Otherwise it is only: \"There is an infinite light.\" And what is the infinite light? Like a light bulb, a big light bulb: that is basically how people understand it. Why all these *partzufim*? \"There's a G-d, and finished.\" No: it is specifically knowing the particulars that leads to the general essence of the Emanator.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4508,
+                    4606
+                  ],
+                  "start": 1737.34,
+                  "end": 1771.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "u7ddzurz",
+            "btuptc4q"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן ההתבוננות דרך כלל לבד כנזכר לעיל שמרחוק יהו״ה נראה לו",
+              "en": "However, this is not the case if one only contemplates in a general manner, so that *HaShem*-יהו״ה appears to him from afar, as mentioned previously."
+            },
+            {
+              "he": "(עד שיוכל ליפול בדמיונות כוזבות כשוטים וחסרי הדעת מצד צמצום כלי מוחו רק בדבר א' והוא כללי כו')",
+              "en": "(For, through this, it is possible for him to fall into false delusions, as do fools and those who lack *Da’at*. ]This comes about[ because they focus their entire mind solely on one general matter.)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "However, **this is not the case if one only contemplates in a general manner**, thinking only that there is a G-d in the world: then he sees G-d from very far away.",
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4607,
+                    4644
+                  ],
+                  "start": 1771.98,
+                  "end": 1785.92
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then **it is possible for him to fall into false delusions, as do fools and those who lack** understanding, even into total idolatry.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "022 Tape004-Side2-Ch4.mp3",
+                  "words": [
+                    4645,
+                    4673
+                  ],
+                  "start": 1786.09,
+                  "end": 1829.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This comes **because they focus their entire mind solely on one general matter**: he concentrates his whole mind on just one thing, and that is a general, vague matter.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    65,
+                    93
+                  ],
+                  "start": 37.94,
+                  "end": 52.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Such people sit and meditate on the depth of everything, that there is a G-d and He is infinite, and they actually have visions and false imaginations.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    9,
+                    64
+                  ],
+                  "start": 8.18,
+                  "end": 37.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "uh5vf7sj",
+            "uhtyhr74"
+          ],
+          "phrases": [
+            {
+              "he": "אבל צמצום העמקת הדעת בכל פרט הוא ההיפוך מן הטעות והריחוק",
+              "en": "However, the focusing and delving of one’s concentration into each detail is the opposite of error and distance [from *HaShem*-יהו״ה]."
+            },
+            {
+              "he": "אדרבא, על ידי זה מתקרב הדבר יותר אצלו בהיותו הולך מפרט לפרט העליון הימנו עד שכוללם יחד, ליחד יחוד כללי ולא יחוד פרטי",
+              "en": "On the contrary, through this, the matter becomes closer to his [mind] since he goes from one particular to a higher particular until he unifies them all in a general unification, rather than a unification of particulars."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**However, the focusing and delving of one’s concentration into each detail is the opposite of error and distance**.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    94,
+                    129
+                  ],
+                  "start": 54.92,
+                  "end": 67.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Chapter 1 said that one must have depth of *daas* (*amkus hadaas*), the *kli* (vessel) for everything. That is true, but the *kli* is not to sit and meditate on the final general idea one is meant to reach. It is to contemplate every particular and have *amkus hadaas* in every particular: while learning this particular, one is wholly focused on understanding this particular and no other. That is the opposite of error, and of seeing the thing only in a far-off, vague way that can be turned upside down.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    130,
+                    232
+                  ],
+                  "start": 68.02,
+                  "end": 106.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**On the contrary, through this, the matter becomes closer**, as **he goes from one particular to a higher particular until he unifies them all in a general unification**.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    233,
+                    279
+                  ],
+                  "start": 107.54,
+                  "end": 128.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is no longer seen from afar: he has connected all the particulars and knows the thing with all its details, as a doctor knows the body, or as the engineer knows the airplane.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    280,
+                    340
+                  ],
+                  "start": 128.9,
+                  "end": 170.84
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Particular unifications and the general unification",
+      "summary": "Unifying the levels of one attribute, such as *chesed* through all the worlds, is only a particular unification; each unification is a detail of a higher one. The general unification is the nullification of the whole chain of the *Kav* to the essence of the *Or Ein Sof*.",
+      "passages": [
+        {
+          "lines": [
+            "h7aoass4",
+            "bcsqcn75"
+          ],
+          "phrases": [
+            {
+              "he": "כמו לך יהו״ה הגדולה כו' שענין היחוד האלקי הוא בחינת עומק ההשגה בביטול היש לאין ביחודא עילאה ויחודא תתאה",
+              "en": "This may be understood from the unification (*Yichud*) of “Yours, *HaShem*-יהו״ה, is the greatness.” The [general] matter of G-dly unification is the aspect of the depth of comprehending the nullification of the “something” to the “nothing,” [both] in [the comprehension of] the “Upper Unity” and the “Lower Unity.”"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**“Yours, *HaShem*-יהו״ה, is the greatness.”** With this the text begins to explain the particular unification (*yichud prati*) and the general unification (*yichud klali*). The matter of G-dly unification is the depth of comprehending the nullification of the \"something\" to the \"nothing\", in both the upper and the lower unity.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    341,
+                    365
+                  ],
+                  "start": 172.1,
+                  "end": 185.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A particular unification is the unification of greatness: for instance, how *Malchus* of *Asiya* is connected to *Malchus* of *Yetzira*, *Malchus* of *Yetzira* to *Malchus* of *Beriya*, and so on up to *Malchus* of *Ein Sof*.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    366,
+                    421
+                  ],
+                  "start": 186.16,
+                  "end": 208.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "But that is only a particular unification. Beyond it, one connects all the particular unifications to G-d Himself: the nullification of the \"something\" of the particulars to the total \"nothing\", understanding the whole thing together.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    422,
+                    504
+                  ],
+                  "start": 209.1,
+                  "end": 248.08
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "aryg5wsm",
+            "jv7slzlo"
+          ],
+          "phrases": [
+            {
+              "he": "ויש יחוד פרטי בדבר פרטי, כמו לך יהו״ה הגדולה שהוא בחינת חסד שבמלכות דאצילות בבי''ע דרך פרט בכל עולם כו'",
+              "en": "Now there [also] is a particular unification for each particular thing. For example, in “Yours *HaShem*-יהו״ה is the greatness,” this is the aspect of *Chessed* of *Malchut* [of the world] of *Atzilut* [as it is invested] in [the worlds of] *Briyah, Yetzirah* and *Asiyah*, in a particular way for each world.",
+              "notes": [
+                "Greatness refers to *Chessed*."
+              ]
+            },
+            {
+              "he": "וגם כללותו אינו אלא פרט מדה א' ממדה שבמלכות כו'",
+              "en": "That is, even the general matter here is only a single particular quality of a particular quality of *Malchut*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Now there [also] is a particular unification for each particular thing.** In “Yours, G-d, is the greatness,” greatness is the aspect of *chesed* of *Malchus* of *Atzilus* in *Beriya*, *Yetzira* and *Asiya*, **in a particular way for each world**: understanding how the *chesed* of *Atzilus* comes into the kindnesses of each particular world. That is only a unification of the kindnesses.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    505,
+                    534
+                  ],
+                  "start": 248.34,
+                  "end": 262.81
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**That is, even the general matter here is only a single particular quality**. Even the whole of it is only a particular, and treating it as the whole is still a mistake, like the people who say \"G-d is love.\" Then why do so many bad things happen? What happened to justice?",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    535,
+                    587
+                  ],
+                  "start": 264.58,
+                  "end": 288.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "They follow one particular. If one knows only the matters of kindness, the right line and not the left, one cannot put them together and go the next step higher.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    588,
+                    680
+                  ],
+                  "start": 288.88,
+                  "end": 323.88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "yl7nvrbz",
+            "s2jqfu2i"
+          ],
+          "phrases": [
+            {
+              "he": "ולך יהו״ה הגבורה בכללותו ופרטיו בכל עולם נקרא יחוד פרטי",
+              "en": "Likewise, [when one contemplates] “Yours *HaShem*-יהו״ה is the might,” both in general and in its particulars in each world, [it] is, [nonetheless], considered to be a particular unification."
+            },
+            {
+              "he": "ועל דרך זה בכל יחודים פרטיים שבי׳ ספירות דבי''ע כידוע",
+              "en": "The same [principle] applies to the unifications of all the particulars of the ten *sefirot* [of each of the worlds] of *Briyah*, *Yetzirah,* and *Asiyah*, as known."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same is true of might: **“Yours *HaShem*-יהו״ה is the might,” both in general and in its particulars in each world, [it] is, [nonetheless], considered to be a particular unification**.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    681,
+                    688
+                  ],
+                  "start": 323.88,
+                  "end": 328.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**The same [principle] applies to the unifications of all the particulars of the ten *sefirot*** of *Beriya*, *Yetzira* and *Asiya*. One learns all the particulars, then the unifications of the particulars, until one can unify all the *sefiros* of the upper worlds with the same *sefiros* in the lower worlds.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    689,
+                    733
+                  ],
+                  "start": 328.31,
+                  "end": 346.02
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7ydzweo3",
+            "o57vid2s"
+          ],
+          "phrases": [
+            {
+              "he": "אבל יחוד הכללי הוא כמו מה שכתוב הנה מקום אתי או המלך המרומם כו' המתנשא מכל ימות עולם דו׳ קצוות ומוחין חכמה ובינה שבהם כו'",
+              "en": "In contrast, a general unification is like [the understanding of], “Behold, the place is with Me,” or, “The exalted King… who is aloof from the days of the world.” [In other words, He is aloof from “the days of the world,” which refers to] the six directions (the emotional *Sefirot*) and the intellect of *Chochmah* and *Binah* [of the worlds]."
+            },
+            {
+              "he": "וגם זה פרט יחשב לגבי עצמות בחינת המלכות שהוא כתר מל'",
+              "en": "However, in comparison to the essence of *Malchut* of *Atzilut*, which is *Keter Malchut*, even this is, [likewise], only considered to be a particular."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**In contrast, a general unification is like [the understanding of]** \"Behold, the place is with Me\": the whole “place” of the world is with Him. It means understanding that the world is nothing but G-dliness, truly understanding what that means, not in the idolatrous sense.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    734,
+                    792
+                  ],
+                  "start": 346.16,
+                  "end": 369.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "“**The exalted King**”: the *Aibershter* is King of the whole world, **aloof** from the six directions and from *chachma* and *bina*. The *Aibershter* Himself is higher than all ten *sefiros*, even the ten essential *sefiros*.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    793,
+                    847
+                  ],
+                  "start": 370.3,
+                  "end": 394.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Compared to the essence of *Malchus*, **even this is, [likewise], only considered to be a particular.** Here the text speaks of the ten *sefiros* of *Malchus* of *Atzilus*: understanding how the King is entirely above its separate *sefiros*.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    848,
+                    908
+                  ],
+                  "start": 399.56,
+                  "end": 428.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Even that is only a particular compared to the inner part of *Malchus* of *Atzilus*, which is *Keser* of *Malchus*.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    909,
+                    954
+                  ],
+                  "start": 428.94,
+                  "end": 445.71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "vr3kwue2",
+            "2p5ilpn2"
+          ],
+          "phrases": [
+            {
+              "he": "וכה\"ג בע\"ס דאצי' כו' עד עצמות בחינת מלכות דאין סוף בראשית הקו, יש יחודים פרטים הרבה בכל ספירה ופרצוף כו'",
+              "en": "In a similar manner [there is a contemplation of] all the other *sefirot* [of the world] of *Atzilut*, until the essence of the aspect of *Malchut* of *Ein Sof* (the Unlimited One), at the beginning of the *Kav*. There are many unifications of the many particulars in each *sefirah* and *partzuf* (stature)."
+            },
+            {
+              "he": "ויחוד הכללי בכללות ביטול כל ההשתלשלות דקו כו' לגבי עצמות אור אין סוף כידוע.",
+              "en": "The general unification, [however], is the general nullification of the entire chaining down of the *Kav,* relative to the Essential Self of the Limitless Light (*Atzmoot Ohr Ein Sof*), as known."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In the same way one goes higher and higher through the ten *sefiros* of *Atzilus*, **until the essence of the aspect of *Malchut* of *Ein Sof* (the Unlimited One), at the beginning of the *Kav***, unifying everything into it.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    955,
+                    986
+                  ],
+                  "start": 446.13,
+                  "end": 457.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**There are many unifications of the many particulars in each *sefirah* and *partzuf***, and each unification is a detail compared to a higher general idea. Even a great unification is still only a detail compared to the next level up.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    987,
+                    1039
+                  ],
+                  "start": 457.32,
+                  "end": 487.63
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Finally, after this whole ascent, there is the general unification, which **is the general nullification of the entire chaining down of the *Kav,* relative to the Essential Self of the Limitless Light**.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1040,
+                    1084
+                  ],
+                  "start": 488.55,
+                  "end": 508.9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The particular needs the general, and the general needs the particular",
+      "summary": "One who starts from the general, however hard he works at it, will not have the truth embedded as one who reaches the general through the particulars. Yet particulars that are never put together into a whole are no better.",
+      "passages": [
+        {
+          "lines": [
+            "qknviiwj"
+          ],
+          "phrases": [
+            {
+              "he": "אך הנה מי שלא העמיק דעתו ביחודים פרטים ומתחיל מבחינת הכלל, גם שבא לו ביגיעה רבה בהשגות רבות באיכות ענין הביטול בכלל, כמו כשלהבת כו' וכהאי גוונא, לא יוקבע בנפשו אמיתית ענינו כל כך, כמו אחר עיון היטב בכל פרטיים, עד שמהם יבוא לבחינת בכלל.",
+              "en": "However, [this is not the case with] one who has not delved his concentration into particular unifications, but, [rather], begins with the general aspect. Even though he toils greatly in [comprehending] the many general concepts of how everything is generally sublimated to *HaShem*-יהו״ה, blessed is He, such as the aforementioned analogy of the flame, and other such [concepts], [nonetheless], the truth of the matter will not become as embedded in his soul, as much as it would have been, had he gone through a thorough analysis into the particular details, which would bring him to [truly understand] the general [concept]."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Consider **one who has not delved his concentration into particular unifications, but, [rather], begins with the general aspect** says that everything comes from the infinite light. Even if he works hard at it and does not stop at the bare statement, but thinks about the soul in the body and the flame from the coal, and thinks hard about exactly how this nullification is, still **the truth of the matter will not become as embedded in his soul**. It will not be fixed in his soul and mind as it is after real, thorough analysis (*iyun*) of every particular, from which he comes to the general.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1085,
+                    1217
+                  ],
+                  "start": 510.2,
+                  "end": 564.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "zn3lz4x4"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו דפרט אצטריך לכלל וכלל אצטריך לפרט, מפני שאין כלל בלא פרט כו'",
+              "en": "This then, is the meaning of, “the particular requires the general and the general requires the particular,” for no general [concept] can exist without particulars.",
+              "notes": [
+                "See Zohar Shmot 3a, Terumah 161b, V’Etchanan 264a."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This is the meaning of “**the particular requires the general and the general requires the particular**”: to do it properly, one cannot get stuck on the particulars either. After the particulars, one has to unify them into a general whole. Someone who knows only the screws, and not how they go together, will never build an airplane.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1218,
+                    1300
+                  ],
+                  "start": 566.02,
+                  "end": 592.84
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "The blind men and the elephant: one thought an elephant is like a palm tree, another that it is like a broom, because none of them realized that what he held was only a particular.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1301,
+                    1370
+                  ],
+                  "start": 593.35,
+                  "end": 615.56
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the particular way by itself is also not good. That is the way of the scientists, who learn the particulars and never try to put them together into a whole, and so they think the particulars somehow work by themselves.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1371,
+                    1420
+                  ],
+                  "start": 617.24,
+                  "end": 637.77
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "For **no general [concept] can exist without particulars**, and no particular without the general: to understand a thing properly one must know all its particulars, and knowing them all, one can understand the whole.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1421,
+                    1467
+                  ],
+                  "start": 638.79,
+                  "end": 650.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "vcbhnpks"
+          ],
+          "phrases": [
+            {
+              "he": "(ודבר זה כבר נחלקו בו הרבה מגדולי הראשונים כמו הרמב''ם והטור, אם לכוון בפירוש המלות דרך פרט בגדלות יהו״ה, אם לכוון דרך כלל, לפני מי אתה עומד ומתפלל כו' כמו שכתוב בכתבים)",
+              "en": "(This matter has already been debated by many of the foremost *Rishonim,* such as the Rambam and the Tur. [That is], whether [during prayer] one’s intentions should be focused on the particular meanings of the words, such as [contemplating] the greatness of *HaShem*-יהו״ה [in a way of particulars]? Or, whether one’s intent should rather be to realize, in a general way, before Whom he is standing and praying? This matter is discussed in [Chassidic] manuscripts)."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This matter has already been debated by many of the foremost *Rishonim,* such as the Rambam and the Tur.**",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1468,
+                    1498
+                  ],
+                  "start": 651.21,
+                  "end": 668.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It concerns the service of prayer, which is the whole point of contemplating and going up. What is one supposed to think? When saying \"Yours, G-d, is the greatness,\" should one think of greatness, and at \"the might\" think of might, and so on through all the intentions (*kavanos*)? **Or, whether one’s intent should rather be to realize, in a general way, before Whom he is standing and praying?** That is: simply to think, \"I am standing before the *Aibershter*.\"",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1499,
+                    1571
+                  ],
+                  "start": 669.16,
+                  "end": 694.9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Every particular aimed at the Essence",
+      "summary": "One cannot think a general and a particular thought at once, but one whose whole desire is for G-d's essence directs every particular to it. The particulars are studied only to reach Him, never as a subject for its own sake.",
+      "passages": [
+        {
+          "lines": [
+            "c7f2eggx"
+          ],
+          "phrases": [
+            {
+              "he": "והגם שהמחשבה כללית עם המחשבה פרטית לא ישכנו כאחד, מכל מקום מי שהוא מעמיק בכל לבו ובכל חפצו לעצמות האלקות דוקא, הנה גם בעיונו בפרטיות יכוין הכל אל המחשבה הכללית דעצמות דוקא",
+              "en": "Now, although [as a rule] a general thought and a particular thought cannot exist simultaneously, nonetheless, he who delves with all his heart and with all his desire, specifically to [contemplate] the essence of *HaShem*’s-יהו״ה G-dliness, even though his analysis is into the particulars, he will specifically direct everything to the general thought of *HaShem*’s-יהו״ה Essential Self."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "As a rule, **a general thought and a particular thought cannot exist simultaneously**: one cannot think about two things at once. If you are thinking before Whom you stand, you are thinking of that; if you are thinking of *Malchus* of *tevuna*, you are thinking of that.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1572,
+                    1634
+                  ],
+                  "start": 696.05,
+                  "end": 720.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Nevertheless, **he who delves with all his heart and with all his desire, specifically to [contemplate] the essence** of G-dliness directs even his study of particulars to the general thought of the Essence.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1635,
+                    1714
+                  ],
+                  "start": 723.39,
+                  "end": 755.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It may seem that we learn one particular, then another; now only about *bina*, now about *chachma*, as though it were human psychology. But since the depth and desire are directed to the essence of G-dliness, we know that this is not at all what it is about: the intention (*kavana*) is truly to the Essence.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1715,
+                    1745
+                  ],
+                  "start": 755.98,
+                  "end": 768.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Not only that: his thought is more on the Essence than that of someone who is focused on the Essence itself.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1746,
+                    1763
+                  ],
+                  "start": 768.77,
+                  "end": 775.02
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5i6usyit"
+          ],
+          "phrases": [
+            {
+              "he": "ולא יפול מכללות הכונה כלל מחמת צמצום הכונה הפרטיות, מאחר שכל הפרטים אינם נמשכים והולכים רק אחר הכלל דוקא, כידוע לכל הולך בדרך אמת, ליהו״ה לבדו דוקא, כמו שכתבו זכרונם לברכה אליו ולא למדותיו",
+              "en": "He will not fall from the general intention at all, as a result of focusing on the particulars. This is because all the particulars are drawn to and follow the general principle, as known to all who travel upon the “Path of Truth,” [who direct themselves] specifically only to *HaShem*-יהו״ה, blessed is He. Likewise, this is as stated by the Sages, “[pray] to Him rather than to His qualities.”"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**He will not fall from the general intention at all, as a result of focusing on the particulars.**",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1764,
+                    1783
+                  ],
+                  "start": 775.07,
+                  "end": 783.95
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The intention to the essence of the *Aibershter* is not disturbed by talking about small details, even when, as said before, the subject seems to be not *tevuna*, *bina*, *chachma* or *Malchus* of *Atzilus*, but our own particular *kelipa*. Since he is truly directed to the *Aibershter*, it does not disturb. On the contrary, it is what makes the intention proper.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1784,
+                    1872
+                  ],
+                  "start": 784.36,
+                  "end": 821.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is **because all the particulars are drawn to and follow the general principle**: all the particulars he thinks about follow only the general, the *Aibershter* Himself.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1873,
+                    1911
+                  ],
+                  "start": 822.94,
+                  "end": 850.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As known to whoever learns in the proper way, directed only to the *Aibershter*, and as the Sages said, **“[pray] to Him rather than to His qualities.”** The whole intention of this study is to the *Aibershter* Himself, and has nothing to do with the attributes (*middos*) as such.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1912,
+                    1971
+                  ],
+                  "start": 850.43,
+                  "end": 870.28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "xgtmunuk",
+            "zgrqgxhr"
+          ],
+          "phrases": [
+            {
+              "he": "רק כללות ענין ההתבוננות בפרטי מדותיו הוא רק כדי שיבא לעצמותו ומהותו דוקא",
+              "en": "[This is to say that] the main intent of the matter of contemplating the particulars is solely for the specific purpose of coming to the Essential Self and being of *HaShem*-יהו״ה Himself."
+            },
+            {
+              "he": "ולא לכוון העיקר רק בכוונה של הפרט, כמו בשביל איזה לימוד לעצמו.",
+              "en": "[In other words], one should never consider the particulars to be the main thing, such as studying a subject for itself [rather than to know *HaShem*-יהו״ה]."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In other words, **the main intent of the matter of contemplating the particulars is solely for the specific purpose of coming to the Essential Self and being** of G-d Himself. That is the main thing one intends.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1972,
+                    1993
+                  ],
+                  "start": 871.34,
+                  "end": 879.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "And **one should never consider the particulars to be the main thing, such as studying a subject for itself**, as someone does who wants to learn a thing for himself.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    1994,
+                    2031
+                  ],
+                  "start": 880.09,
+                  "end": 901.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "An etymologist or a psychologist wants to learn what *bina* is and what *chachma* is, and that is what he is really learning. What is learned here has nothing to do with *bina* and *chachma* as such: we are learning about the *Aibershter*.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2032,
+                    2091
+                  ],
+                  "start": 901.3,
+                  "end": 924.03
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5456xgdn",
+            "zjpzclgm"
+          ],
+          "phrases": [
+            {
+              "he": "גם בעיונו בספר הזוהר ובכתבי האריז''ל צריך להיות על דרך זה דוקא ודי למבין",
+              "en": "Likewise, one’s analysis of the Zohar and the writings of the Ari’zal must specifically be in this manner. This will suffice those of understanding."
+            },
+            {
+              "he": "(וכאשר מקובל היה אבי אדוני מורי ורבי זכרונו לברכה נשמתו עדן בדבר זה מפי הרב המגיד זכרונו לברכה בפירוש גמור וכך שמעתי מפיו זכרונו לברכה)",
+              "en": "(My father, our master, mentor and teacher [the Alter Rebbe] of blessed memory, whose soul is in *Eden*, received this teaching from the mouth of the *Rav,* the *Maggid* [of Mezeritch] of blessed memory, with a full explanation, and this is how I heard it from his mouth.)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Likewise, one’s analysis of the Zohar and the writings of the Ari’zal must specifically be in this manner.** Some people want to look in the *Zohar* to find out about demons or the like; but all of it must be specifically in this way. **This will suffice those of understanding.**",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2092,
+                    2161
+                  ],
+                  "start": 924.2,
+                  "end": 948.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The author, the *Mitteler Rebbe*, adds that his father, the *Alter Rebbe*, received this teaching **from the mouth of the *Rav,* the *Maggid*** of Mezritch, **with a full explanation**, and that he heard it from his father's mouth.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2162,
+                    2211
+                  ],
+                  "start": 950.43,
+                  "end": 970.8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Particular intentions in prayer, and where a beginner starts",
+      "summary": "Knowing the particular, kabbalistic meanings does not confuse the general intent of prayer; it strengthens it. But a beginner should pray with the general thought first, and grow into the particulars little by little.",
+      "passages": [
+        {
+          "lines": [
+            "r5obmubs",
+            "mq4fqasn"
+          ],
+          "phrases": [
+            {
+              "he": "ובזה מתורץ שאלת השואלים על פירוש המלות דרך פרט ליודעים בהם, איך שאינם מבלבלים את מחשבת הכלל",
+              "en": "Through all of the above we have answered the question of those who inquire regarding the specific [kabbalistic] meanings of the words [of the prayers]. How is it that those who know them do not become confused [and distracted] from the general intent?"
+            },
+            {
+              "he": "אלא אדרבא כוונות פירוש המלות על פי המלות עפ\"י הקבלה מסייעים לחזק את עומק השגת הכלל בעצמות אלקות, כידוע לטועמי טעם בהם דרך פרט כו'",
+              "en": "Rather, on the contrary, the intent of the meaning of the words [of prayer], as explained by Kabbalah, serves to strengthen the depth of one’s general grasp of the Essential Self of *HaShem*-יהו״ה, as known to those who have tasted [the contemplation of the words of the prayers] in a way of particulars."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Through all of the above we have answered the question of those who inquire regarding the specific [kabbalistic] meanings of the words**: **How is it that those who know them do not become confused [and distracted] from the general intent?**",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2212,
+                    2228
+                  ],
+                  "start": 971.82,
+                  "end": 980.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same question is asked about this study, though it is study and not yet prayer with the meanings of the words. Many people ask: what are you studying? The main thing is that there is nothing besides Him. You are just intellectuals interested in all kinds of kabbalistic matters, who want to know all sorts of particulars.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2229,
+                    2310
+                  ],
+                  "start": 982.37,
+                  "end": 1010.84
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The answer is no, and this is what the *Mitteler Rebbe* tells us his father told him, and the *Maggid* told his father: it does not confuse one's understanding of G-dliness.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2311,
+                    2364
+                  ],
+                  "start": 1011.34,
+                  "end": 1032.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Rather, on the contrary, the intent of the meaning of the words [of prayer], as explained by Kabbalah, serves to strengthen the depth of one’s general grasp of the Essential Self** of G-d.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2365,
+                    2388
+                  ],
+                  "start": 1032.84,
+                  "end": 1043.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "\"Why learn kabbalistic matters? The main thing is that there is a G-d and nothing besides Him\": this is one of the big complaints against our way. But it is **known to those who have tasted** this learning in a particular way.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2389,
+                    2453
+                  ],
+                  "start": 1043.97,
+                  "end": 1075.86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lnibmlc5"
+          ],
+          "phrases": [
+            {
+              "he": "רק החדשים יותר טוב להם להעמיק דרך כלל תחלה, עד שיורגלו מעט מעט בדרך הפרט דווקא ודי למבין:",
+              "en": "However, for those who are novices, it is best that, at first, they should delve in a general way, until they become accustomed, little by little, to specifically contemplate the particulars [during prayer]. This will suffice those of understanding."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So how should one pray: should one start praying according to the intentions of the *Arizal*? No.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2454,
+                    2476
+                  ],
+                  "start": 1076.88,
+                  "end": 1083.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Rather, **for those who are novices, it is best that, at first, they should delve in a general way, until they become accustomed, little by little**, to the particulars. When praying, they should simply pray as one standing before the *Aibershter*, until they have learned more, and then they will be able to pray this way too.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2477,
+                    2549
+                  ],
+                  "start": 1083.46,
+                  "end": 1104.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In connection with this he mentions *lechatchila ariber* (going straight over the top, from the outset).",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2550,
+                    2649
+                  ],
+                  "start": 1104.94,
+                  "end": 1145.07
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "First comes learning, then prayer: first the learning of the matters and their particulars, then depth of *daas* in them, to bring the intention to the Essence in prayer, which is the service of the heart.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2780,
+                    2856
+                  ],
+                  "start": 1200.84,
+                  "end": 1228.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Rebbe Maharash*'s *lechatchila ariber* meant the service of the mind; the *Rebbe* said a second *lechatchila ariber* on top of it, \"depth within depth\".",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2857,
+                    2924
+                  ],
+                  "start": 1228.84,
+                  "end": 1255.05
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Rebbe* said we are already in the days of *Moshiach*, and explained the *Rambam*'s words that then the whole world's occupation will be only to know G-d. Then even a man polishing his car in the corner, which seems not just a particular unrelated to the general but its very opposite, a *kelipa*, is nothing but \"there is nothing besides Him\", understood properly. That is not the far-off pantheistic nonsense that the world is G-d.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    2925,
+                    3184
+                  ],
+                  "start": 1255.05,
+                  "end": 1357.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So this book, which used to be called *Kuntres HaHisbonenus* (the tract on contemplation), is for us *Shaar HaYichud* (the gate of unity); if it is to be called a tract, it should be called a tract on knowing G-d.",
+              "audio": [
+                {
+                  "lecture": "023 Tape005-Side1-Ch4.mp3",
+                  "words": [
+                    3280,
+                    3444
+                  ],
+                  "start": 1392.58,
+                  "end": 1541.13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What is the real goal of contemplation, and why is it reached through the general way rather than the particular?",
+      "lines": [
+        "yaj77wry"
+      ]
+    },
+    {
+      "question": "How can a person who contemplates only in general deceive himself?",
+      "lines": [
+        "eza4x224"
+      ]
+    },
+    {
+      "question": "Why does particular contemplation run bottom-up, and how does the gas bill or the orange lead back to *Elokim*?",
+      "lines": [
+        "rde6lkyu"
+      ]
+    },
+    {
+      "question": "Why is contemplating *chesed* through all the worlds still only a particular unification, and what is the general unification?",
+      "lines": [
+        "2p5ilpn2"
+      ]
+    },
+    {
+      "question": "What do the blind men and the elephant show about the particular and the general?",
+      "lines": [
+        "zn3lz4x4"
+      ]
+    },
+    {
+      "question": "How should a beginner pray, according to the end of the chapter?",
+      "lines": [
+        "lnibmlc5"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "the alignment confidence here is low (0.49), and in the class the line is read as עד שאף ראיה יתירה rather than the printed עד שאחר העיון יושג. The explanation follows what he says about the line, not that reading.",
+      "lines": [
+        "4ps3yns6"
+      ]
+    },
+    {
+      "text": "he illustrates delight and will with something learned earlier ('when we learned in א\"ק'); it is not clear which text or class he means, so the reference is left out.",
+      "lines": [
+        "mioark6c"
+      ]
+    },
+    {
+      "text": "he ends the line with a reference to a later chapter ('like the ענין in chapter 18') inside a garbled phrase (עד ריש ועקב עקב בא״ק); left out.",
+      "lines": [
+        "5vrj527z"
+      ]
+    },
+    {
+      "text": "tape 022 ends mid-line ('flip the tape'); the rest of the line is at the start of 023, and the opening of 023 (before its first aligned line) continues the thought about those who meditate on the general alone. Both are cited.",
+      "lines": [
+        "btuptc4q"
+      ]
+    },
+    {
+      "text": "after finishing the chapter he talks at length about לכתחילה אריבער and the days of Moshiach. Kept here only in outline. Left out: that 'we don't even have to worry about davening', like Rashbi who learned and did not daven, with the story of Choni HaMe'agel and Rashbi and the rain (19:09–19:38). It is easy to misread out of context, and he should say whether and how it belongs in a study guide.",
+      "lines": [
+        "lnibmlc5"
+      ]
+    },
+    {
+      "text": "tape 023 from about 24:00 to the end (24:00–26:53) does not sound like the class: a few sentences with long gaps between them ('someone who merely studies it…', 'Torah as the living foundation of life'). They may be a different recording or a transcription artifact, so they are left out.",
+      "lines": [
+        "lnibmlc5"
+      ]
+    }
+  ]
+}

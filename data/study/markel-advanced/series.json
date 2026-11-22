@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "markel-advanced",
+  "catalogSeriesId": "37",
+  "teacher": "Rabbi Amiram Markel",
+  "title": "Rabbi Markel Series (Advanced)",
+  "translation": "As Rabbi Markel translates each phrase while it is read in class; where he does not, a plain rendering in his terms. A chapter file may say otherwise in its provenance note.",
+  "chapterLectures": {
+    "chapter_10": ["001 Intro.mp3"]
+  }
+}

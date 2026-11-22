@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "series": "test-series",
+  "chapter": "chapter_01",
+  "title": "A known saying and the preparation it asks for",
+  "status": "draft",
+  "provenance": {
+    "method": "hand",
+    "note": "Test fixture."
+  },
+  "lectures": [
+    {
+      "id": "t1.mp3",
+      "transcriptionId": "tid-1"
+    }
+  ],
+  "overview": "The chapter opens with a known saying and says that the soul needs *hachana* first.",
+  "terms": [
+    {
+      "term": "hachana",
+      "he": "הכנה",
+      "gloss": "preparation of the soul",
+      "line": "bbbbbbb2"
+    },
+    {
+      "term": "maamar",
+      "he": "מאמר",
+      "gloss": "a saying",
+      "line": "aaaaaaa2"
+    }
+  ],
+  "sections": [
+    {
+      "title": "The known saying",
+      "summary": "A *maamar* everyone knows, and what it takes to receive it.",
+      "passages": [
+        {
+          "lines": [
+            "aaaaaaa2"
+          ],
+          "phrases": [
+            {
+              "he": "והנה ידוע המאמר",
+              "en": "It is known what the *Zohar* says",
+              "notes": [
+                "A translator's footnote."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**It is known**: the *maamar* is a familiar one.",
+              "audio": [
+                {
+                  "lecture": "t1.mp3",
+                  "words": [
+                    0,
+                    13
+                  ],
+                  "start": 0,
+                  "end": 13.8
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The river and its source",
+              "text": "Like a river, which has a source.",
+              "audio": [
+                {
+                  "lecture": "t1.mp3",
+                  "words": [
+                    14,
+                    19
+                  ],
+                  "start": 14,
+                  "end": 19.8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "bbbbbbb2"
+          ],
+          "phrases": [
+            {
+              "he": "להיות שצריך",
+              "en": "since one must"
+            },
+            {
+              "he": "להקדים הכנה",
+              "en": "first prepare"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "avodah",
+              "text": "**one must first prepare** the soul. That is the whole work, and whoever skips it is fooling himself.",
+              "audio": [
+                {
+                  "lecture": "t1.mp3",
+                  "words": [
+                    20,
+                    35
+                  ],
+                  "start": 20,
+                  "end": 35.8
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Blunt about people who skip the preparation.",
+                "action": "replace",
+                "publishable": "**one must first prepare** the soul. That is the whole work."
+              }
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ccccccc2"
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording",
+            "note": "The class ends before this line."
+          }
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What must come before the *maamar* can be received?",
+      "lines": [
+        "bbbbbbb2"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "t1.mp3",
+      "words": [
+        36,
+        40
+      ],
+      "reason": "logistics"
+    }
+  ],
+  "notes": [
+    {
+      "text": "Nothing to note.",
+      "lines": [
+        "aaaaaaa2"
+      ]
+    }
+  ]
+}

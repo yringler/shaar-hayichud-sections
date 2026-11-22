@@ -1,0 +1,37 @@
+{
+ "schemaVersion": 1,
+ "lectureId": "t1.mp3",
+ "chapter": "chapter_01",
+ "transcript": "transcripts/t1.mp3.json",
+ "transcriptionId": "tid-1",
+ "method": {
+  "name": "fixture",
+  "version": 1,
+  "options": {}
+ },
+ "stats": {},
+ "segments": [
+  {
+   "startSeconds": 4.0,
+   "endSeconds": 6.8,
+   "chapter": "chapter_01",
+   "lineId": "aaaaaaa2",
+   "confidence": 0.9,
+   "matchedWords": 3,
+   "lineWords": 3,
+   "firstWord": 4,
+   "lastWord": 6
+  },
+  {
+   "startSeconds": 21.0,
+   "endSeconds": 24.8,
+   "chapter": "chapter_01",
+   "lineId": "bbbbbbb2",
+   "confidence": 0.9,
+   "matchedWords": 4,
+   "lineWords": 4,
+   "firstWord": 21,
+   "lastWord": 24
+  }
+ ]
+}

@@ -24,6 +24,13 @@ if (result.errors.length > 0) {
   process.exit(1);
 }
 
+const warnings = result.warnings ?? [];
+const stale = warnings.filter((w) => w.includes(': (stale) '));
+for (const w of stale) console.warn(`warning: ${w}`);
+if (warnings.length > 0) {
+  console.warn(`Study guides: ${stale.length} stale reference(s), ${warnings.length - stale.length} other warning(s); see yarn study-check.`);
+}
+
 const series = result.catalog?.series ?? [];
 const lectures = series.reduce((n, s) => n + s.lectureCount, 0);
 console.log(

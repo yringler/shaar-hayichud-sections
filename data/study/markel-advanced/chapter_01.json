@@ -1,0 +1,1893 @@
+{
+  "schemaVersion": 1,
+  "series": "markel-advanced",
+  "chapter": "chapter_01",
+  "title": "What contemplation is: iyun, depth and daas",
+  "status": "draft",
+  "provenance": {
+    "method": "migrated",
+    "from": "yringler/shaarhayichudstudydemo@7d285c9 (content/chapter_01)",
+    "date": "2026-11-22",
+    "note": "Ported from the demo's Markdown. Three things are coarser than a file written for this format: the phrases are whole paragraphs of Rabbi Markel's published translation (Sefaria, \"The Gate of Unity\", 2023, CC-BY), not phrases as translated in class; each block's word range starts where the demo's listen link pointed and its end is estimated (up to the next cited point, at most about 450 words); and the demo's style left out banter, stories and digressions, which `yarn study-check` lists as uncited stretches."
+  },
+  "lectures": [
+    {
+      "id": "015 Tape001-Side1-Ch1.mp3",
+      "transcriptionId": "33f28836-ac89-4876-bf48-ff727313d0a9"
+    },
+    {
+      "id": "016 Tape001-Side2-Ch1.mp3",
+      "transcriptionId": "e72d84b6-f49c-4674-9424-bc01eeb9008a"
+    },
+    {
+      "id": "017 Tape002-Side1-Ch1.mp3",
+      "transcriptionId": "2a87558c-6585-4bcb-9a70-1b5c6d1d04fe"
+    }
+  ],
+  "overview": "Chapter 1 asks what contemplation (*hisbonenus*) really is. It sets surface study (*girsa*), which grasps a subject at first glance, against *iyun*, which stays with a concept until it reaches its depth, and pictures every concept as a river with width, length and depth. The recorded classes begin at §21. What people call deep concentration turns out to be only a vessel: the content comes from analysis, *bina sheb'bina*, held by *daas*. Delving (*ma'amik*) reaches the concept's root in the hidden depths of *chachma*, the aquifer under every spring. The chapter then maps the levels: *chachma sheb'bina*, new insight within one field; *bina sheb'chachma*, understanding one thing from another; and the order in which they grow from one another. It ends with *daas* itself: its length, width and depth, its focus on a single point, and its dependence on *bina*.",
+  "terms": [
+    {
+      "term": "girsa",
+      "he": "גירסא",
+      "gloss": "lit. reading; surface study that grasps a subject only at first glance",
+      "line": "edcbjtrl"
+    },
+    {
+      "term": "iyun",
+      "he": "עיון",
+      "gloss": "close analysis that sorts a matter into all its parts",
+      "line": "edcbjtrl"
+    },
+    {
+      "term": "omek hamusag",
+      "he": "עומק המושג",
+      "gloss": "the depth of the concept; its essential point, the essence left after working through the explanation",
+      "line": "ceetsykf"
+    },
+    {
+      "term": "ha'amakas hadaas",
+      "he": "העמקת הדעת",
+      "gloss": "deep concentration; a vessel for reaching the depth, not the depth itself",
+      "line": "rdgog5tv"
+    },
+    {
+      "term": "ma'amik",
+      "he": "מעמיק",
+      "gloss": "delving; thinking a concept over and over until it reaches its root",
+      "line": "pshrmzmb"
+    },
+    {
+      "term": "taalumos chachma",
+      "he": "תעלומות חכמה",
+      "gloss": "the hidden depths of wisdom; the root, like an aquifer, that all wisdoms come from",
+      "line": "ugupmtsr"
+    },
+    {
+      "term": "tamtzis",
+      "he": "תמצית",
+      "gloss": "essence in the sense of an extract, like instant coffee from coffee beans",
+      "line": "6dfmnw2o"
+    },
+    {
+      "term": "shaar hanun",
+      "he": "שער הנון",
+      "gloss": "the fiftieth gate of bina; the depth of the concept, whose root reaches the depth of chachma",
+      "line": "pimwc3gh"
+    },
+    {
+      "term": "bina sheb'bina",
+      "he": "בינה שבבינה",
+      "gloss": "analysis of a matter into all its parts; it gives a concept its length",
+      "line": "wctxrksu"
+    },
+    {
+      "term": "chachma sheb'bina",
+      "he": "חכמה שבבינה",
+      "gloss": "new insight within the same field; it gives a concept its width",
+      "line": "66dcrnqt"
+    },
+    {
+      "term": "bina sheb'chachma",
+      "he": "בינה שבחכמה",
+      "gloss": "the power within an insight to be explained in many ways, and inwardly to understand one thing from another",
+      "line": "7mt3upbi"
+    },
+    {
+      "term": "navon",
+      "he": "נבון",
+      "gloss": "a person of understanding; one who understands one thing from another",
+      "line": "47u5u6vn"
+    }
+  ],
+  "sections": [
+    {
+      "title": "What hisbonenus is: gazing into the depths of a concept",
+      "summary": "The chapter sets out to explain what contemplation (*hisbonenus*) essentially is: gazing strongly into the depths of a concept and staying with it until it is understood in every detail. This is the inner aspect of *bina*, which the Talmud calls *iyun*.",
+      "passages": [
+        {
+          "lines": [
+            "xazelgse"
+          ],
+          "phrases": [
+            {
+              "he": "הנה כבר מבואר באריכות בקונטרס מיוחד בפרטי אופני ההתפעלות במוח ולב, ומחשבה שנולד מן ההתבוננות לפי סדר ה' מדריגות נפש רוח נשמה חיה יחידה כו'.",
+              "en": "We already have explained at length in a special pamphlet, concerning the particular manners in which one may be aroused in his mind and heart, and the thought that is born of contemplation (*hitbonenut*), according to the five levels of the soul, the *Nefesh*, *Ru’ach*, *Neshamah*, *Chayah*, and *Yechidah.*",
+              "notes": [
+                "Referring to *Kuntrus Ha’hitpa’alut*, also authored by Rabbi Dov Ber of Lubavitch, translated into English under the title Divine Inspiration."
+              ]
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "mrqahnmm"
+          ],
+          "phrases": [
+            {
+              "he": "ומעתה יש לבאר היטב במהות גוף ענין ההתבוננות, מה היא בעצם ובמה יתבונן.",
+              "en": "We must now clearly explain the matter of contemplation itself, [to understand] what it essentially is, and what one should contemplate."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "g4fdcli2"
+          ],
+          "phrases": [
+            {
+              "he": "והנה מהות ההתבוננות בעצם הוא ענין ההסתכלות החזקה בעמקות הענין ולעמוד עליו הרבה עד שיבין אותו על בוריו בכל חלקיו בפרטי פרטיות",
+              "en": "In essence, contemplation (*hitbonenut*) is the matter of gazing strongly into the depths of a concept, keeping [one’s mind] upon it for long periods, until he understands it thoroughly in all of its particular parts and details."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "edcbjtrl"
+          ],
+          "phrases": [
+            {
+              "he": "והוא בחינת פנימיות בינה הנקרא בלשון הגמרא בשם עיון, כמו שאמר במסכת סוכה הא למגרס והא לעיוני",
+              "en": "This is the inner aspect of the faculty of *Binah* (Understanding). In the terminology of the Talmud, it is called by the term “*Iyun*” – עיון, (in depth study). This is as stated in tractate Sukka, “There is *Girsa* – גירסא (surface study), and there is *Iyun* – עיון (in depth study).”",
+              "notes": [
+                "See tractate Sukka 28b."
+              ]
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Girsa: understanding at first glance",
+      "summary": "*Girsa* grasps a subject only at first glance, flowing through it quickly without pausing, like a passing look at an object: in time it is forgotten, and only its general outline can be told to someone else.",
+      "passages": [
+        {
+          "lines": [
+            "3aem2a2q"
+          ],
+          "phrases": [
+            {
+              "he": "פירוש הגירסא הוא רק הבנת הדבר בהשקפה ראשונה, שהולכת ונובעת במהירות בלתי עכוב והעמדה כלל כידוע",
+              "en": "The explanation of surface study is that one understands the subject matter only at first glance. That is, [he] flows quickly through the subject matter [which he studies], without restraining [himself] and pausing at all, as known."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "iobezm3p",
+            "ffb3yrwq"
+          ],
+          "phrases": [
+            {
+              "he": "על דרך משל המביט בעינו על דבר מה ואינו מתבונן כלל על הדבר באיכותו ומהותו בכל חלקיו הפנימים וחיצונים, רק דרך מעביר בעלמא",
+              "en": "For example, one may gaze upon a certain object without contemplating it at all, [to understand the nature of] how or what it is. [He does not investigate] all of its inner and outer parts, except in a passing fashion."
+            },
+            {
+              "he": "שבמשך זמן ודאי ישכח עליו לגמרי וגם לא יוכל לספר לזולתו רק כלליות ענין אותו הדבר שראה בהעברת העין ולא בטביעת עין כלל",
+              "en": "Certainly, with the passage of time, he will forget about it altogether. Furthermore, he will only be able to relate the general matter of what he saw to his fellowman. [This is because his eyes only fell upon it] in a passing fashion, without keeping his eyes upon it at all."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "tigfmarz"
+          ],
+          "phrases": [
+            {
+              "he": "וכן העברת עין השכל באיזה סברא בהשקפה ראשונה בלתי עכוב והעמדה לעיין בו היטב, ולא ידע בסברא זו לתכליתה כלל",
+              "en": "This is likewise the case when the mind’s eye gazes upon a specific logical construct in just a passing fashion. [Because he understands the concept] only at first glance without pausing and restraining [himself] to analyze and investigate it properly, he will not come to know the concept to its ultimate depth at all."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Width, length and depth: every concept is like a river",
+      "summary": "Every concept has width (its explanation from all angles), length (its descent into analogies, down to a child's level) and depth (its essential point, like a river's undercurrent, from which everything else spreads). *Bina* is called a river and *chachma* a spring.",
+      "passages": [
+        {
+          "lines": [
+            "cy46bzo7"
+          ],
+          "phrases": [
+            {
+              "he": "כי הנה ג' דברים הוא שיש בכל דבר מושכל. עומק ואורך ורוחב.",
+              "en": "Now, there are three matters in every intellectual concept. [These are;] depth, length and width."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "kbu523ut",
+            "67ihjptr"
+          ],
+          "phrases": [
+            {
+              "he": "הרוחב הוא בחינת הסבר המושכל לכל צד בפרטים הרבה כרוחב הנהר, ולא דברים כהווייתן לבד, כנהר קצר.",
+              "en": "The width is the explanation of the concept from all angles, with many particulars. This is analogous to the width of a wide river. In contrast, the understanding of a concept simply, as it is, is similar to a narrow river."
+            },
+            {
+              "he": "ואורך הוא עוצם ירידות ההשכלה להלביש את המושכל במשלים שונים עד להביאו בהשגות התינוק קטן כו', כנהר שהולך ומתמשך לאורך (וכמו שמבואר באריכות בכתבים בענין אורך היריעה כו')",
+              "en": "The length [of a concept] is the tremendous descent of the concept, to invest it into various different analogies so that it may even be brought within the reach of a small child. This is analogous to a flowing river that draws out to its length. (This concept is explained at length in [Chassidic] manuscripts in regard to the matter of the length of the hides.)",
+              "notes": [
+                "See Biurei Zohar (of the Mittler Rebbe), Pekudei & Noach."
+              ]
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "j7dd3yah",
+            "vuobhjav"
+          ],
+          "phrases": [
+            {
+              "he": "והעומק הוא כעומק הנהר שמשם מתרחב ובעצמו אינו רחב כלל, אבל הוא עיקר עצם הנהר (הנקרא שטרוים) שהוא עיקר מרוצת הילוכו ממקורו",
+              "en": "The depth [of a concept] is analogous to the depth of a river. From [its depth the river] widens, but in and of itself, it is not wide at all. However, it is the main essence of the river (which is called the “undercurrent”), for it is the main strength of its flow from its source."
+            },
+            {
+              "he": "ומים שעל גביו בגובה ולצדדי העומק טפלים אליו, שאינן רק בחינת התגברות התפשטותו בלבד, לצדדים ברוחב ובגובה ובאורך ההילוך כו'",
+              "en": "The waters that are above [the depth], to its height or to its sides and [even] to its length, are secondary to it, for they only represent the spreading forth of its strength."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "ceetsykf"
+          ],
+          "phrases": [
+            {
+              "he": "כך עומק המושכל הוא בחינת עצם נקודתו כמו שהוא, ונקרא עומק המושג",
+              "en": "Likewise, the depth of the concept is the aspect of its essential point, as it is [in and of itself]. This is what is called “The depth of that which is comprehended” (*Omek Ha’Moosag*)."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "2ub5ct7q"
+          ],
+          "phrases": [
+            {
+              "he": "שכל מה שנתפשט בהסבר ההשגה לכל צד, ברוחב גדול בכמה פרטים, וכן לאורך בעוצם הירידה, וגם בחינת הגובה למעלה, להשכיל ממנו עוד למעלה ממנו הרבה, (עד בחינת עומק רום כמו התגברות המים למעלה מעלה בזמן המבול שכזה יהיה לימות המשיח ברוחניות בשנת ת\"ר לחיי נח כמו שכתוב בזוהר דאתפתחו מבועין דחכמתא כו' והיינו מעיינות תהום החכמה שיתגברו למעלה מעלה ויכסו כל ההרים כו' וארובות השמים נפתחו כו' להמשיך מן המים שמעל השמים הנקרא עומק רום שתלוי בעומק תחת כי נעוץ תחילתן בסופן כמו העמק שאלה או הגבה למעלה כו' וכמו שכתוב בכתבים) הכל נמשך מעצם עומק נקודתו כמו שהוא נובע מן החכמה הנקרא אין, וכמו שכתוב ונהר יוצא מעדן כו'",
+              "en": "Everything that spreads forth in the explanation of this concept, [either] the great width with many angles and details, and also the great descent of the length, and even the height above, to understand higher [concepts] through this [concept], (all the way until the depth of the heights (*Omek Rom*), like the overpowering of the waters in the time of the flood [during the times of Noah]. Likewise, there will be a spiritual flood in the days of Moshiach, in the 600th year of the life of Noah. This is as stated in the Zohar that “the wellsprings of wisdom will open.” These are the springs of the depths of wisdom, “which will overpower and rise up and will cover all the mountains.” Then, “the reservoirs of the heavens shall open up,” and there shall be drawn down “the waters that are above the heavens.” This is called the depth of the height (*Omek Rom*), which is dependent upon the depth below (*Omek Tachat*), because, “The beginning is bound up with the end,” as in the verse, “Cast your questions to the depths or raise it on high”) are all drawn from the essential depth of the point [of the concept], which is how it spreads forth from the insight of *Chochmah* – Wisdom, which is called “*ein -* nothing.” This is as stated, “A river goes out from *Eden*.”",
+              "notes": [
+                "Zohar I 117a",
+                "Genesis 7",
+                "Sefer Yetzirah 1:7",
+                "Isaiah 7:11",
+                "See Tikkunei Zohar, Tikkun 42; *Maamarei Admor HaEmtza’ee*, *Bereshit* p.2"
+              ]
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "hnicuvea"
+          ],
+          "phrases": [
+            {
+              "he": "שהבינה נקרא נהר והחכמה נקרא מעיין, כידוע",
+              "en": "*Binah* (understanding) is called a river, while *Chochmah* (insight) is called a spring, as known."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Iyun: keeping the mind on a concept until it reaches the depth",
+      "summary": "*Iyun* is slow, in-depth study that keeps the mind on a concept in order to reach its innermost point, like a long, attentive look at an object. This is what *hisbonenus* means, spelled with a double *nun*.",
+      "passages": [
+        {
+          "lines": [
+            "4svvsngr",
+            "7rhzbe7q"
+          ],
+          "phrases": [
+            {
+              "he": "והוא הנקרא עיון, שעומד על דבר המושכל ומעיין בו הרבה מאד, שהוא העיכוב היפך המהירות",
+              "en": "This then, is [the mode of study] called *Iyun* (in depth study); that he keeps his mind on the concept and analyzes it greatly. This is [a] slow [in depth study] which is the opposite of [the] quick [surface level of study]."
+            },
+            {
+              "he": "דהיינו כדי לבא לעומקו של המושכל כמו שהוא בעצם פנימיותו ותוך תוכו דווקא",
+              "en": "The purpose of this is specifically to reach the depth of the concept, as it is in its innermost essential point."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "ii5vundu"
+          ],
+          "phrases": [
+            {
+              "he": "כמו המסתכל על דבר מה בעינו ולא בהעברה בעלמא, אלא בפקוח וטביעת עינו בעיכוב גדול, עד שיודע אותו היטב בכל חלקיו הפנימים ותוך תוכו כו'",
+              "en": "This is analogous to one who gazes his eyes upon a certain object, but not in a passing manner. Rather, [he keeps his eyes upon it] with great attention and scrutiny, taking his time until he knows it well, in all of its internal and innermost components."
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        },
+        {
+          "lines": [
+            "m523heuq"
+          ],
+          "phrases": [
+            {
+              "he": "והוא הנקרא התבוננות בנו''ן הכפול דוקא, דהיינו שמתבונן ומעיין בו הרבה וכמו שפירש רש''י: בעיוני, לעמוד על הדבר להבינו על בוריו כו'.",
+              "en": "This [type of study] is called *Hitbonenut* – contemplation. [The word *Hitbonenut* (התבוננות) is] specifically spelled with two *Nuns* (נ – N), to signify that one [is to] contemplate it and analyze it greatly. This is in accordance with the explanation of Rashi [on the word] *Iyun*, “To stand upon the subject, to understand it clearly.”",
+              "notes": [
+                "See Rashi on tractate Sukka, 28b."
+              ]
+            }
+          ],
+          "blocks": [],
+          "skip": {
+            "reason": "no-recording"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Concentration is only a vessel; delving reaches the hidden depths of chachma",
+      "summary": "What people call deep concentration (*ha'amakas hadaas*) is only a vessel for reaching the depth of a concept; it supplies no content of its own. Delving (*ma'amik*) goes further, to the concept's root in the hidden depths of *chachma*, the aquifer from which every spring of wisdom flows.",
+      "passages": [
+        {
+          "lines": [
+            "rdgog5tv"
+          ],
+          "phrases": [
+            {
+              "he": "ונמצא בחינת העיון הזה הוא רק בחינת כלי לבחינת ההעמקה דבינה עצמה, כי לכאורה בחינת העיון הזה נקרא העמקת הדעת בלשון בעולם, ואינו כן, דהעמקת הדעת היינו בחינת כלי לבד לבוא לעומק של הענין ממש",
+              "en": "We find that this aspect of *Iyun* is only an aspect of a receptacle for the delving of *Binah* itself. For, at first glance, this aspect of *Iyun* is called “the delving of the concentration” in common usage. [In truth], this is not the case, for the delving of the concentration is only a vessel, [that allows one] to come to the actual depth of the concept.",
+              "notes": [
+                "*Ha’amakat Ha’da’at*"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**We find that this aspect of *Iyun* is only an aspect of a receptacle for the delving of *Binah* itself.** This sums up what has been said so far: *iyun* (close analysis), which is *bina sheb'bina*, is a *kli* (vessel) for *hasaga* (comprehension), the depth of the concept (*omek hamusag*), which is the *Keser* (crown) of *bina*. The learning is the vessel for understanding the explanation. Though the text does not say it here, the chain goes on: *hasaga*, understanding the explanation, is a *kli* for *havana*, the outer level of *chachma*, where one sees the thing itself and not only its explanation. That is a *kli* for *taalumos chachma*, seeing the inner essence of the thing, which is already in *Keser*, the higher knowing (*daas elyon*); and that in turn is a vessel for a level higher still, where one experiences the thing itself with nothing of oneself involved. Each lower level is a *kli* for a higher one.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    61,
+                    340
+                  ],
+                  "start": 35.81,
+                  "end": 164.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Now the text turns downward. **at first glance, this aspect of *Iyun* is called “the delving of the concentration” in common usage**: everyone calls it contemplation or meditation, the way *Kuntres HaHisbonenus* is called the tract on meditation. **[In truth], this is not the case**, for **the delving of the concentration is only a vessel**. At every level concentration is the outer vessel. Without it *bina sheb'bina* will not work; going from the depth of the concept to the actual grasp of the thing also needs *daas*, and so does going from the outer *havana* of *chachma* to its inner level. Once one knows the explanation, one has to concentrate on it to go deeper. So *daas* is an instrument for going deeper, not the depth itself; in fact it is an instrument for an instrument, since *bina sheb'bina*, which works on the explanation, is what actually gets one there.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    341,
+                    683
+                  ],
+                  "start": 165.13,
+                  "end": 302.07
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "This is the whole mistake of idol worship: treating *daas* as the primary instrument. One concentrates, thinking \"G-d, G-d, G-d,\" and expects the concentration to bring one there. But *daas* is a vessel for going deeper into a matter one already has, not for reaching it. *Daas* needs content, and it does not supply the content; *bina sheb'bina* does.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    684,
+                    866
+                  ],
+                  "start": 302.8,
+                  "end": 368.52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "pshrmzmb",
+            "cfysav74"
+          ],
+          "phrases": [
+            {
+              "he": "ולמעלה מזה הוא נקרא מעמיק, שמגיע למעלה גם מן החכמה עצמה, שהגם שהחכמה היא בחינת האין ממש של המושכל, קודם שבא לכלל עומק נקודת המושג שבבינה, כמעיין לגבי נהר כנזכר לעיל",
+              "en": "[A] higher [level than the level of the “delving of the concentration” (*Ha’amakat Ha’da’at*)], is what is called “delving” (*Ma’amik*). [This method of delving allows one] to reach higher than even *Chochmah* itself. Now, seemingly, *Chochmah* is literally an aspect of the intangible “nothingness” of the concept, [as it exists even] before it comes into the category of being the essential depth or point of the concept in the comprehension of *Binah*. As mentioned previously, it is like the waters of a spring in comparison to the waters of a river.",
+              "notes": [
+                "See the explanations of the famed Chassid of the Mittler Rebbe, Rabbi Hillel of Paritch, to Chapter 1, translated and annotated under the title Listen Israel."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**is what is called “delving” (*Ma’amik*)**. *Ma'amik* is also concentration. Concentration on *bina sheb'bina* is the lower kind, *ha'amakas hadaas*. *Ma'amik* is concentrating on the depth of the concept, even when one holds it by way of a *mashal* (analogy), thinking it over and over, and this reaches **higher than even *Chochmah* itself**. The outer level of *chachma* is seeing the explanation, and not only the explanation but what it is about; yet it is not seeing the actual thing. That is *taalumos chachma*, which reaches the root of the thing, so that through it one can see what other things are about as well.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    881,
+                    1130
+                  ],
+                  "start": 376.13,
+                  "end": 479.26
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "In physics there is the explanation. Then there is the real physicist, who already understands more than the explanation. But that does not mean he has the root of physics, which is like metaphysics, and the root of physics would answer questions in other fields too. That is *taalumos chachma*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1131,
+                    1223
+                  ],
+                  "start": 479.47,
+                  "end": 519.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Now, seemingly, *Chochmah* is literally an aspect of the intangible “nothingness” of the concept**: *chachma* is the concept before it takes any particular form or explanation, whereas the depth of the concept is the depth of this particular explanation.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1224,
+                    1310
+                  ],
+                  "start": 521.54,
+                  "end": 563.08
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ugupmtsr"
+          ],
+          "phrases": [
+            {
+              "he": "אבל בחינת העמקה בשרש של המושכל, שרשה מגיע בשרש הממשיך לנביעת מעיין דחכמה כו', ונקרא עמקי החכמה או תעלומות חכמה, כי כמו שיש עומק ואורך ורוחב בבינה שנקרא יש כנזכר לעיל, כך יש עומק ואורך ורוחב במעיין דחכמה שנקרא אין",
+              "en": "Nonetheless, the aspect of delving in [this] source of the concept, its source reaches into the very source of the flow of the waters of the spring of *Chochmah*, which is called “the depths of *Chochmah*” or “the hidden-ness of *Chochmah.*” For, just as there are depth, length and width in *Binah*, which is called “*yesh* – something,” there is likewise a depth, length and width in the spring of *Chochmah*, which is called “*ein* – nothing.”",
+              "notes": [
+                "*Omkei Chochmah* or *Ta’alumot Chochmah*. See also Job 11:6"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**its source reaches into the very source of the flow of the waters of the spring of *Chochmah***. A scientist can look deeply into physics and gain all kinds of insights, yet never look deeper still: how did the whole thing come into existence in the first place? Even their own language shows what is missing. They speak of the laws of nature, and a law means that someone makes it; where does the law come from? What is the root of the *muskal* (the concept)? If one does not keep thinking about the root, one may reach the *ayin* (nothing) where *chachma* is grasped not as an explanation, and go no further. The root is where the whole spring of *chachma* comes from, **which is called “the depths of *Chochmah*”**, its hidden parts. And just as *bina*, called *yesh* (something), has depth, length and width, so does the spring of *chachma*, called *ayin*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1311,
+                    1582
+                  ],
+                  "start": 563.14,
+                  "end": 670.86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "en4s7zas"
+          ],
+          "phrases": [
+            {
+              "he": "ועומק המעיין היינו תחילת שרש מחצבו בעומקו, שמשם מתפשט נביעתו למעלה עד שבוקע ויוצא טיפין טיפין בגילוי מהעלמו, ותכלית העלמו הוא תכלית עמקו למטה, כמו מעיינות תהום נבקעו, דארעא חלחולי מחלחלא כו' בגידין שיש להם עומק ראשון, ובזה נאמר והחכמה מאין, מהעלם החכמה הנקרא עומק החכמה",
+              "en": "The depth of the spring is the beginning and source of its inception, at its very depth. From there its flow spreads upward until drops of water burst forth into revelation from their concealment [within the ground]. Its utmost concealment is in its ultimate depth below (in the aquifer), as [in the verse], “the wellsprings of the abyss burst forth.” For, the earth is riddled with fissures and veins [of water], which have a primary depth. About this it is stated, “*Chochmah* is [found] from nothing,” that is, from the concealed *Chochmah* which is called the depth of *Chochmah*.",
+              "notes": [
+                "Genesis 7:11",
+                "Talmud Bavli, tractate Chagiga 22a",
+                "Job 28:12"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "**The depth of the spring is the beginning and source of its inception, at its very depth.** Under the ground is the aquifer, a giant ocean beneath the ground from which the spring comes.\n\nOne sees one spring and another spring, but both connect to the same *taalumos chachma*. On the surface they are two different things: this one is in Pittsburgh, that one in California. Go down far enough, and there is one big ocean both come from. So too, follow physics or psychology to its ultimate conclusion, and they come from the same source.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1583,
+                    1752
+                  ],
+                  "start": 670.93,
+                  "end": 739.13
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**the wellsprings of the abyss burst forth**: what is called the spring is really only its tail, its end, like the *Malchus* (kingship) of the spring and not its *Keser*. **the earth is riddled with fissures** and veins, as with oil. What one sees above is not the real essence of the spring; what makes the spring is its **primary depth**, the aquifer.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1753,
+                    1920
+                  ],
+                  "start": 739.13,
+                  "end": 829.33
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "About this it is said, **“*Chochmah* is [found] from nothing,”** that is, from the hidden depth of *chachma*. Compared with that depth, *chachma* itself is already something that exists (*metzius*); the real *ayin* of *chachma* is *taalumos chachma*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1921,
+                    1954
+                  ],
+                  "start": 829.54,
+                  "end": 843.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The depth of the concept: a distilled essence, and the fiftieth gate",
+      "summary": "*Chachma* is a new insight that flashes like lightning, but its true essence is its hidden root. The depth of the concept in *bina* is only the *tamtzis* of an explanation, the 'nothing of the something'; yet delving into it reaches the depths of *chachma* and brings new light into *bina*, and holds that light in a form that can be explained.",
+      "passages": [
+        {
+          "lines": [
+            "6dfmnw2o",
+            "clembo3b"
+          ],
+          "phrases": [
+            {
+              "he": "והחכמה הוא המצאת שכל החדש שיוצא כברק כו' כידוע, ומקור מחצבו בהעלם עומקו הוא עיקר עצמיות ותוך תוכו כנ\"ל בביאור ענין עומק המושג דבינה שאינ' רק העומק של ההשגה דבינה המורגש בבחינת יש בהבנת דבר מה בסברא נגלית, שעומק של הסבר ההשגה הוא בחינת אין של היש דהשגה בלבד, ואין לו ערך לגבי אין דחכמה טרם שבא לכלל השגה כלל, גם לא בבחינת העומק שבה, שהוא תמציתה",
+              "en": "Now, *Chochmah* is the discovery of new insight which emerges like a bolt of lightning, as known. [The source of its inception in its hidden depths is its innermost essence. This is similar to the previous explanation of the matter of the depth of the comprehended concept (*Omek Ha’Moosag*) of *Binah*.] However, that was only in regard to the depth of the comprehension of *Binah* which is felt in a tangible way, with revealed explanations [on a subject]. The depth of this explanation of the concept is only the aspect of the “nothing of the something” of comprehension. Therefore, its depth, which is its essential point, is of no comparison to the “nothing” of *Chochmah* before it comes into the category of comprehension altogether."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**Now, *Chochmah* is the discovery of new insight which emerges like a bolt of lightning**. But the lightning is already the *yesh* of *chachma*: even in revealed *chachma*, the flash is where the idea can be brought out, its connection to the outside. **The source of its inception in its hidden depths is its innermost essence**: the real *chachma* is *taalumos chachma* in *Keser*. That is why \"*chachma*\" in Kabbalistic and Chassidic books often means the *chachma* of *Arich*: when it is said that Torah comes from *chachma*, it means the *chachma* of *Arich*, not the revealed *chachma* of *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    1955,
+                    2267
+                  ],
+                  "start": 843.64,
+                  "end": 966.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Here *bina* serves as a *mashal* for *chachma*. The depth of the concept is **the depth of the comprehension of *Binah* which is felt in a tangible way, with revealed explanations**: a *sevara* (line of reasoning) is already a *yesh*, like a theory. **The depth of this explanation of the concept is only the aspect of the “nothing of the something” of comprehension**, the *ayin* of the *yesh* of this explanation, and it **is of no comparison to the “nothing” of *Chochmah* before it comes into the category of comprehension altogether**. So there is a ladder: the depth of the concept is the *ayin* of the *yesh*; the flash is the *yesh* of the *ayin*; deeper is the *ayin* of the *ayin*; and deepest of all is the *ayin* in *taalumos chachma*, which has nothing to do with this particular wisdom. All wisdoms come from it, not just this spring but all the springs.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    2295,
+                    2586
+                  ],
+                  "start": 981.5,
+                  "end": 1098.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The text calls this depth **its essential point**; the word is *tamtzis*. A *tamtzis* is an essence in the sense of an extract: what remains after something has been processed and its taste drawn out, as instant coffee is the *tamtzis* of coffee beans.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    2587,
+                    2728
+                  ],
+                  "start": 1099,
+                  "end": 1157.38
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "Children learn addition with \"one fishy plus one fishy is two fishies,\" then with many examples and homework. Eventually one knows how to add any numbers. Not because the brain holds every sum, like 2,500 plus 7,600, but because it holds the *tamtzis* of the whole thing: the examples are thrown away and the way to add remains. That *tamtzis* is the depth of the concept.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    2797,
+                    3029
+                  ],
+                  "start": 1188.98,
+                  "end": 1269.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is explained elsewhere (he thinks in *Kuntres HaHispaalus*) that there is a summary before contemplation and a summary after it. A story is told of the Deitschel (some say the Alter Rebbe with his father-in-law): asked what he had learned, he said, \"That there is a G-d in the world.\" Told that even the maid knows that, he answered, \"She thinks there is a G-d in the world. I know there is a G-d in the world.\" On the surface the two summaries look exactly the same; the difference is that he had the *tamtzis* that comes afterward, and, as the text will explain, there is more even after the *tamtzis*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    3061,
+                    3380
+                  ],
+                  "start": 1289.62,
+                  "end": 1401.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "pimwc3gh"
+          ],
+          "phrases": [
+            {
+              "he": "ואמנם עומק המושג נקרא שער הנו''ן דבינה, גם שנמשך מאין דחכמה ליש, (כמו מעיין יוצא מבית קדש הקדשים תחלתו כקרני חגבים כו' וכהאי גוונא) שרשו מגיע בעומק דחכמה הנזכר לעיל, וכנראה בחוש שכל מעמיק רק בעומק המושג, הוא ממציא למקור ושרש המושכל, להמציא בחינת חדשות דאור החכמה בבינה, והוא הנקרא מעמיק לשון מפעיל, שמפעיל לעומ' דחו\"ב",
+              "en": "Nevertheless, although the depth of the comprehension, which is called the 50th gate of *Binah*, is drawn from the “nothing” of *Chochmah* to “something,” (like the teaching, “A spring will flow out of the chamber of the Holy of Holies; its beginning will be like the antennae of a grasshopper, and it will then widen into the expanse of a river,” and the like,) its source also reaches into the depths of *Chochmah* itself. It is clearly observable that the delving specifically into the depth of the comprehension (*omek hamoosag* of *Binah*) will bring one to the source and root of the concept, thus enabling him to bring new light of *Chochmah* (insight) into *Binah* (tangible comprehension). This, then, is what is called *Ma’amik* – delving, which is an active verb, for he is activating the depths of *Chochmah* and *Binah.*",
+              "notes": [
+                "Talmud Bavli, Yoma 77b"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**the depth of the comprehension, which is called the 50th gate of *Binah*** raises a question. The *shaar hanun* (fiftieth gate) of *bina* is not so simple: even *Moshe Rabbeinu* had a hard time reaching it. How can it be just the *tamtzis* of the explanation? There is depth, and there is the depth of the depth. The fiftieth gate is in *bina*, bringing the *ayin* of *chachma* into the *yesh* of an explanation, and it starts narrow: **its beginning will be like the antennae of a grasshopper**. That is also why *bina* is called a shofar, narrow at one end and wide at the other, like the horn of plenty.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    3381,
+                    3634
+                  ],
+                  "start": 1401.74,
+                  "end": 1505.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Still, **its source also reaches into the depths of *Chochmah* itself**. The first depth is the *Keser* of *bina* of *Atzilus*. But just as *chachma* has a depth in the *chachma* of *Arich*, there is also *bina* of *Arich*, and the fiftieth gate keeps going higher, to *bina* of *Atik* and beyond.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    3635,
+                    3800
+                  ],
+                  "start": 1506.96,
+                  "end": 1573.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**It is clearly observable** in this very study. The book delves into explanations: the first chapters explain what *hisbonenus* is, and from chapter 10 on it explains how the world came into existence, *seder hishtalshelus* (the chain of descending worlds). One delves only into the explanation, yet it brings a **new light of *Chochmah* (insight) into *Binah***. As one of the participants in these classes often says, each time he reads the book it is a whole new book. It is the same book with exactly the same letters, but now he sees it in a new light of *chachma* in *bina*. Even things that are not explained in the book at all come from the book.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    3835,
+                    4120
+                  ],
+                  "start": 1594.64,
+                  "end": 1698.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This, then, is what is called *Ma’amik* – delving, which is an active verb**. *Ha'amakas hadaas* is concentrating while one first learns, as in the class itself. *Ma'amik* comes afterward, walking around thinking it over: what does it really mean, what is its root? It activates the depth of *chachma* and *bina*, in *Arich*, in *Atik*, and beyond.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    4121,
+                    4256
+                  ],
+                  "start": 1700.81,
+                  "end": 1759.44
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "In this *bina* has an advantage over *chachma* (he is not sure whether the text says it later). When the fiftieth gate reaches into the depth of *chachma*, it grasps it as a *yesh*, so it can be brought out into an explanation and to other people. Someone who has only a spiritual insight or intuitive feeling may be unable to explain it, and may even lose it himself a few days later, like inventors (he mentions the story of Edison) who forgot a flash of insight unless they wrote it down at once. The fiftieth gate of *bina* goes as deep as the depth of *chachma*, but holds it as a *yesh*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    4257,
+                    4565
+                  ],
+                  "start": 1761.16,
+                  "end": 1875.89
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wise in understanding: new insight within the same field",
+      "summary": "“Be wise in understanding” is *chachma sheb'bina*: a new insight, but within the same field. It comes only through *iyun*, *bina sheb'bina*, the analysis that sorts a matter into all its parts, held in the vessel of *daas*. The *Keser* of *bina* is the depth of the concept, whose root reaches the depth of *chachma*.",
+      "passages": [
+        {
+          "lines": [
+            "wctxrksu",
+            "7oyqxyo6"
+          ],
+          "phrases": [
+            {
+              "he": "(ולפ\"ז מ\"ש הבן בחכמה וחכם בבינה שמבואר בכתבים, דהיינו ע''ב דס''ג חכם בבינה, שהוא רק להבין דבר חידוש אחר מתוך המושג דבינה, שזה אינו אלא על ידי בחינת העיון הנזכר לעיל, שהוא המברר כל חלקיו על בוריו, ונקרא בינה שבבינה",
+              "en": "(According to what we have explained, we may understand the statement, “Understand with wisdom and be wise in understanding.” In [Chassidic] manuscripts it is explained that “wise in understanding” refers to *A”b* of *Sa”G* (*Chochmah* of *Binah*). This is [the ability] to understand a new insight within the comprehension of *Binah*. This only comes through the aspect of *Iyun* – the analysis mentioned earlier, which clarifies all the particular parts until they are clear. This *Iyun* (analysis) is what is called *Binah* of *Binah*.",
+              "notes": [
+                "See Sefer Yetzirah 1:4",
+                "The four letters of the Name *HaShem*-יהו״ה correspond to the ten *sefirot*. The thorn of the letter *Yod* (י) corresponds to *Keter*. The body of the letter *Yod* (י) corresponds to *Chochmah*. The first letter *Heh* (ה) corresponds to how the seminal point of the *Yod* of *Chochmah* becomes expanded into the length and width of the *Heh* of *Binah*. The *Vav* (ו) which has a numerical value of six corresponds to the six emotional *sefirot*. The last *Heh* (ה) corresponds to *Malchut*. This will all be explained later in greater detail. What is relevant here is that the four-letter name *HaShem*-יהו״ה can be expanded. In other words, instead of *Y* (י) the letter *Yod* would be spelled out as יוד. The same is done with the other three letters of the name. Now, when it is spelled out with *Yod’s* (i.e. יו\"ד ה\"י וי\"ו ה\"י) it has a numerical value of 72 and corresponds to *Chochmah*, which is the name *A”b* – ע\"ב (meaning 72). When it is spelled out with *Yod’s* and an *Aleph* (יו\"ד ה\"י וא\"ו ה\"י) its numerical value is 63 and corresponds to *Binah*. This is the name *Sa”G* – ס\"ג, which equals 63. We may now understand the above statement that, “be wise in understanding” refers to *A”b* of *Sa”G*. In other words, it refers to the *sefirah*; *Chochmah* of *Binah*. Likewise, the aspect of *Sa”G* of *A”b* corresponds to *Binah* of *Chochmah*. The Mittler Rebbe will now explain this further. (The explanation of the expansions of the Name *HaShem*-יהו״ה will be discussed later in the book.)"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**“Understand with wisdom and be wise in understanding.”** \"Wise in understanding\" is *chachma* of *bina*. **This is [the ability] to understand a new insight within the comprehension of *Binah***: a new insight, but in this same *bina*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    4566,
+                    4608
+                  ],
+                  "start": 1875.94,
+                  "end": 1899.52
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "An innovation in computers is not made by someone who meditated in the Himalayas but by people who work with computers over and over. They could not have thought about the innovation, which they did not know yet; they thought about what they already knew, and came up with something new. So too the engineers who make better cars learned in college about the cars we already have. And the invention is in their own field: a computer engineer will not invent a new drug, he will invent a better computer. That is *chachma sheb'bina*.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    4609,
+                    4917
+                  ],
+                  "start": 1899.7,
+                  "end": 2013.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It works through *bina sheb'bina* within the *kli* of *daas*. Someone who studies computers only to become a millionaire, with no real interest in computers, has *bina sheb'bina* without the *kli* of *daas*, and will probably invent nothing. Yet a vessel alone is also useless: a glass will not help a man dying of thirst in the desert, and water thrown at him without a glass spills into the sand.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    5078,
+                    5305
+                  ],
+                  "start": 2068.27,
+                  "end": 2145.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**This only comes through the aspect of *Iyun***. One cannot decide, \"Now I'm going to innovate something.\" He cites a tract of the Rebbe Rashab on how to learn Talmud: one should not go after a *chiddush* (new insight). Trying to make one produces a \"real\" *chiddush*, something invented out of one's own head that was not told to *Moshe Rabbeinu* at Sinai. The true *chiddush* of a seasoned student comes when he learns the text first, and then with Rashi. Whoever wants to be an innovator will never be one; it is specifically through *iyun* that the *chiddush* comes by itself.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    5408,
+                    5607
+                  ],
+                  "start": 2182.74,
+                  "end": 2252.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is what the whole chapter is about: *bina sheb'bina* within the vessel of *daas* activates all the powers, above it and below it. The arousal of the *middos* (emotional attributes) comes from *hisbonenus*, and so too the depth of *chachma*, which one really wants, is reached not by meditating on the light but through *iyun*. Even *daas*, one's connection to a matter, is activated by it: the more one understands about anything, the more one's *daas* toward it is activated.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    5608,
+                    5858
+                  ],
+                  "start": 2253.24,
+                  "end": 2345.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Iyun* is the analysis **which clarifies all the particular parts until they are clear**, separating a thing into its parts by their classes. A personality, for example, divides into intellect and emotions; intellect into *chachma*, *bina* and *daas*, with *Keser* above them; the emotions into seven, basically love and fear; and each of those divides further. **This *Iyun* (analysis) is what is called *Binah* of *Binah*.**",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    5960,
+                    6158
+                  ],
+                  "start": 2379.78,
+                  "end": 2451.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "66dcrnqt",
+            "r5wkpae2"
+          ],
+          "phrases": [
+            {
+              "he": "ואחר כך יוכל להוליד ולהתחכם להמציא הבנה והשגה חדשה, אבל רק בהשגה זו עצמה שנקרא חכמה שבבינה, אבל כתר דבינה הוא עומק המושג הנזכר לעיל, המגיע שרשו בעומק החכמה כנזכר לעיל.",
+              "en": "After [a person has done this] he will be capable of bringing new insight into understanding and comprehension, but only within the subject matter itself. This insight is what is called *Chochmah* of *Binah*. Now, *Keter* of *Binah* is the aforementioned depth of the comprehension (the *Omek HaMoosag*) the source of which reaches into the depth of *Chochmah*, as explained above."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**After [a person has done this] he will be capable of bringing new insight into understanding and comprehension, but only within the subject matter itself.** Only after this analysis. It is specifically the people who know every part of a car who can come up with a better car; someone with no idea how the motor works cannot. And only within that field. The Wright brothers took a motor from a car and put it on an airplane, but that is still a machine for travel, and is really a matter of *tevuna* (drawing an idea out), going from one field to another. The basic meaning of *chachma sheb'bina* is innovation within this *hasaga* itself.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    6230,
+                    6458
+                  ],
+                  "start": 2478.74,
+                  "end": 2563.39
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Now, *Keter* of *Binah* is the aforementioned depth of the comprehension**. The *Keser* of *bina* has an outer level, which is just understanding the explanation, but its root is in the depth of *chachma*: what one really wants to understand is not just the explanation but the actual thing.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    6459,
+                    6539
+                  ],
+                  "start": 2563.73,
+                  "end": 2593.76
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Understand with wisdom: the navon who understands one thing from another",
+      "summary": "“Understand with wisdom” is *bina sheb'chachma*. Outwardly it is the power within an insight to be explained in many ways; inwardly it is the power of the *navon* to understand one thing from another, even a different field altogether, because it reaches the aquifer that all wisdoms come from. That is higher than the insight of the wise man.",
+      "passages": [
+        {
+          "lines": [
+            "7mt3upbi"
+          ],
+          "phrases": [
+            {
+              "he": "והבן בחכמה היינו ס''ג דע''ב, שהוא כח ההסבר בחכמה עצמה, שיוכל להביאו בפנים מסבירות הרבה, והוא למעלה מן ההשגה דבינה עדיין",
+              "en": "Now, “understand with wisdom” refers to *Sa”G* of *A”b* (*Binah* of *Chochmah*). This is the power of explanation within *Chochmah* itself, that he is capable of bringing it into many different explanations and facets. Nonetheless, it is still higher than the comprehension of *Binah*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is the power of explanation within *Chochmah* itself**: *bina* of *chachma*, the inherent, *hiyuli* (raw, potential) power of explanation within an insight. Once one understands something beyond its explanation, as the *ayin* of *chachma*, it is inherent in that *chachma* that it can be explained. One has not explained it yet, but if someone asks, one will be able to bring it **into many different explanations and facets**, not just one. Yet **it is still higher than the comprehension of *Binah***: he has not actually explained it; it is the potential for explanation.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    6540,
+                    6704
+                  ],
+                  "start": 2593.76,
+                  "end": 2660.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "47u5u6vn",
+            "7xlwb6pw"
+          ],
+          "phrases": [
+            {
+              "he": "ומה שאמרו נבונים לא אשתכחו, שהוא המבין דבר מתוך דבר דוקא",
+              "en": "[This type of understanding may be understood from the explanation of] the statement [regarding Moshe], “He could not find ‘men of understanding’ (*Nevonim*).” [This (*Navon*) specifically] refers to “one who understands one thing from another.”",
+              "notes": [
+                "See tractate Eruvin 100b",
+                "See tractate Chagigah 14a"
+              ]
+            },
+            {
+              "he": "היינו מצד שרש כח זה דהבן בחכמה שמגיע בעומק דחכמה הנזכר לעיל, על כן יוכל להבין דבר חכמה אחרת לגמרי מתוך דבר חכמה זאת",
+              "en": "The reason [he is capable of this] is because of the source of this power of “understand with wisdom” (*Binah* of *Chochmah*) that reaches into the depths of *Chochmah*, which was mentioned previously. For this reason, from one subject matter and wisdom he will be capable of understanding a completely different wisdom."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**He could not find ‘men of understanding’**. *Bina sheb'chachma* has two aspects. Going downward, it is the power of explanation just described, which brings *chachma* into the many explanations of *bina*. But when the sages said there were no men of understanding, they did not mean there was no one who could explain.",
+              "audio": [
+                {
+                  "lecture": "015 Tape001-Side1-Ch1.mp3",
+                  "words": [
+                    6705,
+                    6778
+                  ],
+                  "start": 2661.46,
+                  "end": 2694.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The real, inner *bina* of *chachma* is **one who understands one thing from another**: understanding a deeper wisdom from an outer one. And because this power **reaches into the depths of *Chochmah***, into the aquifer that is the source of all wisdoms, **he will be capable of understanding a completely different wisdom**, a different field altogether. So this power can go down, it can go up, and it can go sideways. Sideways is like a width: it brings the insight into another wisdom that may be on the same level as this one.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    2,
+                    289
+                  ],
+                  "start": 5.74,
+                  "end": 119.7
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "The Wright brothers (not truly men of understanding, he notes, but good as an outer *mashal*) were bicycle makers. They did not look at a motor as just a car motor; they looked into its root, a supplier of power, and saw that as it powers a car it could power an airplane. Someone at a more external level would see a bicycle chain only as part of a bicycle and never think how it applies to anything else. They saw it as a way to move energy from the feet to the wheel through the chain and gears, from one thing to another, and the first airplanes drove the propeller that way.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    327,
+                    645
+                  ],
+                  "start": 130,
+                  "end": 253.01
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "feq46pb4"
+          ],
+          "phrases": [
+            {
+              "he": "שזהו למעלה במדריגה מן החכם, דהיינו מגופה של המצאות החכמה זו מאין, שאינו מבין ממנה חכמה ושכל אחר",
+              "en": "This [aspect of understanding] is much greater in level than that of a *Chacham*. That is, [a *Chacham* only has] insights from “nothing” into the particular subject matter of [his] investigation, but he does not understand an entirely different wisdom from it."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This [aspect of understanding] is much greater in level than that of a *Chacham*.** The outer, downward side, explaining outward, is lower than *chachma sheb'chachma*. But the inner *bina sheb'chachma*, the *navon*, is higher than the wise man, who is *chachma sheb'chachma*. The wise man has an invention; the *navon* may not come up with a new invention, but he can take an old invention and bring out something wholly new. In a way it has a higher source, reaching deeper than *chachma* itself, into understanding one thing from another.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    646,
+                    787
+                  ],
+                  "start": 253.95,
+                  "end": 312.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Remember that the subject is what *hisbonenus* means in *Chassidus*. *Bina sheb'bina* activates *chachma sheb'bina*, and *chachma sheb'bina* activates *bina sheb'chachma*. Then, seeing with the eye of *chachma*, one will understand not just the *seder hishtalshelus* but one thing from another: from the *seder hishtalshelus*, something deeper than the *seder hishtalshelus*. This is the power the book will discuss later.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    788,
+                    909
+                  ],
+                  "start": 312.42,
+                  "end": 355.83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fbecfg7n"
+          ],
+          "phrases": [
+            {
+              "he": "(ומכל מקום מה שבהשגה דבינה מבין השגה חדשה מתוך ההשגה זו, שרשה בהבן דחכמה, שמבין דבר מתוך דבר, רק שזה בהעלם מקור השכל כו' ודי למבין).",
+              "en": "(Nonetheless, the source of the comprehension of a new insight within [the field of] his comprehension is also the matter of “understand with wisdom” (*Binah* of *Chochmah*). In other words, its source is in the ability to understand one thing from another. However, this remains concealed in the source of the intellect. This will suffice those of understanding.)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**the source of the comprehension of a new insight within [the field of] his comprehension is also the matter of “understand with wisdom”**: the root of *chachma sheb'bina* is in *bina sheb'chachma*. **However, this remains concealed in the source of the intellect.** The one is in the hidden part of the intellect and the other in its revealed part.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    910,
+                    1013
+                  ],
+                  "start": 355.83,
+                  "end": 398.66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The order of the levels: length, width and depth",
+      "summary": "*Hisbonenus* starts with *bina sheb'bina*, analysis down to every detail, which gives a concept its length; *chachma sheb'bina*, new insight within the same subject, gives it width; and how long and wide it becomes depends on its depth, the *Keser* of *bina*. For the student it also works the other way: one reaches the depth only by going through the length.",
+      "passages": [
+        {
+          "lines": [
+            "vrsgqwdc",
+            "ykpa7sqa"
+          ],
+          "phrases": [
+            {
+              "he": "ונמצא סדר המדרגות כך הם, בחינת עיון הנזכר לעיל לעמוד על בוריו כו' נקרא בינה שבבינה, להבחין תכלית ההבחנה בפנימיות וחיצוניות",
+              "en": "We find that the order of levels is as follows; [first is] the aspect of *Iyun –* analysis, mentioned earlier. [That is], to keep one’s mind on [the concept, and investigate its particulars], until it is completely clear. This is called *Binah* of *Binah*; to clarify and distinguish between all the inner and outer specifics, with the utmost precision."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**We find that the order of levels is as follows**: now the text tells how *hisbonenus* is done. One starts with *bina sheb'bina*, going through the analysis of all the separate parts, **to clarify and distinguish between all the inner and outer specifics, with the utmost precision**: to examine, as far as examining can go, the inner and outer details of whatever one is examining.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1014,
+                    1084
+                  ],
+                  "start": 398.66,
+                  "end": 428.42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fuudukmx"
+          ],
+          "phrases": [
+            {
+              "he": "וגם מזה יוכל להיות בחינת האורך, להוריד ההשגה בלבושים רבים עד שתתגשם להשגות התינוק כנזכר לעיל, אבל לא בחינת הרוחב בהסברים שונים לכל צד כו'",
+              "en": "From this, it also is possible for there to be the aspect of a length, to lower the concept through many investments, until it is made tangible to the comprehension of a child, as explained previously. Nonetheless, [he does] not [yet have] the aspect of a width, with various explanations of all its angles.",
+              "notes": [
+                "In analogies."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "From *bina sheb'bina* also comes the length of *bina*: **to lower the concept through many investments**, explaining it down into *meshalim* (analogies) until a child can grasp it. So *bina sheb'bina* is also the length of *bina*. But it does not have **the aspect of a width, with various explanations of all its angles**. Different explanations are already an innovation, and that is not *bina sheb'bina*. *Bina sheb'bina* understands within this explanation only, along this one length.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1085,
+                    1163
+                  ],
+                  "start": 428.8,
+                  "end": 466.31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "qipfrgb7"
+          ],
+          "phrases": [
+            {
+              "he": "ואחר כך מבחינת חכמה שבבינה, להמציא חדשות בהשגה א' כנזכר לעיל, הוא הנקרא רוחב, וממנו כח דבינה שבבינה העושה בחינת אורך",
+              "en": "Following this is the aspect of *Chochmah* of *Binah*, which is [the ability] to bring forth insights, [but only] in the specific subject [under his investigation], as previously explained. This is [the aspect of] the width, from which the aspect of *Binah* of *Binah* creates a length."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The width is *chachma sheb'bina*: **to bring forth insights, [but only] in the specific subject**, a new twist on the matter, a new *inyan* (idea), but only in this *hasaga*. **This is [the aspect of] the width, from which the aspect of *Binah* of *Binah* creates a length**: once one has a new twist on a matter, one can make a whole new length by going and analyzing that twist.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1164,
+                    1318
+                  ],
+                  "start": 466.31,
+                  "end": 529.64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "zfgfsjbt"
+          ],
+          "phrases": [
+            {
+              "he": "אבל שיעור האורך והרוחב דחכמה ובינה שבבינה, הוא תלוי בבחינת עומק המושג שנקרא כתר דבינה, וכנראה בחוש שלפי ערך העומק כך יהיה ערך הרוחב והאורך בכל השגת דבר מה וד\"ל).",
+              "en": "Nonetheless, the extent of the length and width of *Chochmah* and *Binah* is dependent upon the aspect of the depth of the comprehension, which is called *Keter* of *Binah*. It is clearly observable with any comprehension of any subject matter that according to the measure of the depth will be the measures of the length and width. This will suffice those of understanding.)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "**the extent of the length and width of *Chochmah* and *Binah* is dependent upon the aspect of the depth of the comprehension**. In *Chassidus* the length and width can be tremendous, because the depth is tremendous.\n\nEveryone understands that chess is a deeper game than checkers, so all kinds of books of strategy are written on chess. On checkers one can also write, but how much? The depth of chess is greater, so its length and width are greater.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1319,
+                    1425
+                  ],
+                  "start": 531.44,
+                  "end": 576.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It also works the other way, which the text does not say here though it is really the main point of the chapter: one reaches the depth only by going through the length and the width, not just by concentrating on it. A doctor who studied for seven years went through the length; one who also knows other kinds of medicine has a width, and because of it may have a greater depth.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1426,
+                    1655
+                  ],
+                  "start": 576.77,
+                  "end": 663.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The text describes it from above to below, as a teacher presents it: from the depth comes the width, and from the width the length. The student goes from below to above, and should concentrate specifically on the length. If he tries for the width he will just jump around: a physicist one day, a chemist the next, then computers, then airplanes. That is a wide *daas* without a deep one. A width is many lengths, and to learn one does *bina sheb'bina*, a single length. Someone who has learned other Kabbalistic works may object, \"It says *chachma* is not this!\" That is a different length, to be set aside while learning this one. After going through the length of this book, one will understand how *chachma* both has letters and does not, is a point and yet has dimensions: two explanations, which together give a width.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    1861,
+                    2317
+                  ],
+                  "start": 740.18,
+                  "end": 895.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the order runs from *bina sheb'bina*, one length, to *chachma sheb'bina*, new things within this explanation; then to the outer *bina sheb'chachma*, the potential of many explanations; that activates *chachma sheb'chachma*; and from there the inner *bina sheb'chachma* reaches *taalumos chachma*, understanding one thing from another. Understanding that the river spoken of here is not a river, going from the *mashal* to the *nimshal* (what the analogy stands for), is itself this power.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    2363,
+                    2610
+                  ],
+                  "start": 915.16,
+                  "end": 1018.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is said that Moshiach will open up the river into seven streams: along its length, not across it. Going up a river leads to the spring and on to the aquifer, and he will open it all the way, so that the hidden wellsprings of the deep burst out, as in the Flood.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    2612,
+                    2774
+                  ],
+                  "start": 1019.95,
+                  "end": 1077.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "One might ask why the text uses Kabbalistic Names for *chachma* of *bina* and *bina* of *chachma*, when the explanation would be the same without them. The book was written in its time for Kabbalists, and later in the book the Names will come into play; for now it is enough to understand *chachma* of *bina* and *bina* of *chachma*.",
+              "audio": [
+                {
+                  "lecture": "016 Tape001-Side2-Ch1.mp3",
+                  "words": [
+                    2968,
+                    3153
+                  ],
+                  "start": 1152.68,
+                  "end": 1208.66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Daas: the dive, not the depth",
+      "summary": "What people call deep concentration is not the depth itself but what carries one there, as a dive carries a diver to the ocean floor. *Daas* is the bond of one's feeling to a concept; it brings one into the depth, but only after the analysis of *iyun*. *Daas* too has length, width and depth, and its depth draws out its length and width.",
+      "passages": [
+        {
+          "lines": [
+            "inf44erc"
+          ],
+          "phrases": [
+            {
+              "he": "ולפ\"ז מה שקוראים העולם העמקת הדעת, אין זה גופה של העמקה, כמו עומק המושג דבינה, שלזה לא יש שייכות לדעת",
+              "en": "According to what we have explained, what is commonly called *ha’amakat ha’da’at* – the delving of the concentration (or meditation), is not the actual delving into the depth of the comprehension (the *omek hamoosag*). This is because the faculty of *Da’at* has no relation to it."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "**is not the actual delving into the depth of the comprehension**: *ha'amakas hadaas* is the deepening, not the depth itself.\n\nWhen you take a deep dive off a board, *ha'amakas hadaas* is the dive; the depth is the depth of the pool. Or the divers in Hawaii who jump off their little boats after money thrown into the water: the depth is the floor of the ocean, and the dive is what gets them there.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    93,
+                    223
+                  ],
+                  "start": 59.92,
+                  "end": 107.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So **the faculty of *Da’at* has no relation to it**. The actual depth of a concept has nothing to do with concentration. To understand the depth of how computers work, one has to concentrate at school to get it, but the concept itself has nothing to do with concentration.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    224,
+                    313
+                  ],
+                  "start": 107.76,
+                  "end": 140.74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "v676iwfg",
+            "5663nwe6"
+          ],
+          "phrases": [
+            {
+              "he": "אך הדעת הוא בחינת התקשרות הרגשתו במושג ביותר, והוא שמביא לידי בחינת העמקה במושג, אחר בחינת העיון הנזכר לעיל, שהוא רק כמו בחינת כלי לעומק ההשגה כנזכר לעיל.",
+              "en": "Rather, the faculty of *Da’at* is the aspect of the strong connection of one’s feelings to a concept. It [is this type of concentration which] brings one to the depth of the comprehended concept, [but only] after the aforementioned analysis (*Iyun*), which acts as a receptacle for the depth of the comprehension (*omek hamoosag*), as previously explained.",
+              "notes": [
+                "Concentration and interest. See Tanya Ch. 3"
+              ]
+            },
+            {
+              "he": "וגם בדעת יש אורך ורוחב ועומק, כמו יש מי שדעתו קצרה ויש שדעתו ארוכה ויש שדעתו רחבה ולא ארוכה ודעת חזק או דעת קל כנשים שדעתן קלות, הוא בלתי עומק הדעת וממילא דעתו קצרה כו'",
+              "en": "Now, *Da’at* – concentration, also possesses the three dimensions of length, width and depth. For example, there are those who have a short attention span, and those who have a long attention span. There are those who have a broad attention span, but not a long attention span. There are those who possess strong concentration, and those of weak concentration, like “women who have a light *Da’at.*” That is, because they lack the depth of concentration, subsequently their concentration is short.",
+              "notes": [
+                "See Tractate Shabbat 33b"
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**the faculty of *Da’at* is the aspect of the strong connection of one’s feelings to a concept**: concentration, connecting one's feeling very much into the concept. This is what **brings one to the depth of the comprehended concept**, after the analysis. Knowing all the details is still not enough. Two children in a classroom hear exactly the same explanation from the same teacher, and one gets A's and the other D's: one had *daas* and the other did not, so one reached the depth of the concept and the other did not. Yet it is only **after the aforementioned analysis**. A child who decides that since he concentrates so hard he will stay home and concentrate will get nowhere, because he never got the explanation. *Daas* is only a vessel for going deep into the *hasaga*; one has to have the *hasaga*.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    314,
+                    546
+                  ],
+                  "start": 141.8,
+                  "end": 220.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**Now, *Da’at* – concentration, also possesses the three dimensions of length, width and depth.** The length of *daas* is, first, the attention span. It is also the power to hold an idea whole: to do the proper contemplation with *daas* once one has the depth of the concept, one has to hold the entire book in one's head at once, or at least the matter at hand, such as this paragraph about *daas*. And how long can one concentrate? With an attention span of three seconds, learning together is impossible; these classes need one to set everything else aside for half an hour to an hour. In some works a single idea runs 30 to 100 chapters, and really the whole work is one idea; holding it takes an incredible length of *daas*.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    547,
+                    961
+                  ],
+                  "start": 221.99,
+                  "end": 376.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**those who have a long attention span** can sit with one thing much longer; children, generally, have a short attention span. **There are those who have a broad attention span, but not a long attention span**: one who knows a little of everything but cannot stay with one thing for long. A strong *daas* means being strongly opinionated; a light *daas* means changing one's opinion easily. On the words **women who have a light** *daas*, he stresses that this is a comparison of people on the same level; it does not rule out that some women have a stronger *daas* than certain men.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    1412,
+                    1495
+                  ],
+                  "start": 548.76,
+                  "end": 575.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A *frum* woman who is into learning could rightly say that most men do not have as weighty a *daas* as she does. But compare a man who is into rock and roll with his girlfriend, and her *daas* will be lighter still than his. Likewise the wife of one of the *gedolim* may have more *daas* than you, but compared with her husband it may not be so: it is according to the level.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    1496,
+                    1713
+                  ],
+                  "start": 576.62,
+                  "end": 655.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It means **because they lack the depth of concentration, subsequently their concentration is short**, like a little child's: one who is not deeply into a thing has a short *daas* for it. As with *bina*, the depth brings about the width and the length.",
+              "join": true,
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    1316,
+                    1411
+                  ],
+                  "start": 509.74,
+                  "end": 547.94
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "He knew a boy who seemed to have no attention span for anything at school and did poorly in mathematics, but loved hockey. He had books on hockey with whole pages of statistics that looked like mathematics books, and he could sit with them for hours. According to the depth of one's *daas* in something, its length grows longer.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    1714,
+                    1866
+                  ],
+                  "start": 656.41,
+                  "end": 708.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "b4ghv6uq",
+            "frjdgmr3"
+          ],
+          "phrases": [
+            {
+              "he": "והפרש זה בין קלי הדעת לעומקי הדעת, בין גדול לקטן ידוע, שהתינוק שדעתו קל, היינו שאין בו כח המרגיש והתקשרות כלל לדבר זה שמבין או רוצה בו, רק בחיצוניות מאד",
+              "en": "The difference between a weak concentration and a deep concentration can be understood by the difference between a child and an adult, as known. A child has a weak concentration. This is to say that he only possesses a very external connection or feelings towards the object of his understanding or desire."
+            },
+            {
+              "he": "על כן יתפתה להיפוכו, מה שאין כן הגדול שדעתו עמוקה באותו דבר שמבין או רוצה בו, הוא הנקרא העמקת הדעת, שממילא נמשך אורך הדעת ורוחב הדעת כנזכר לעיל בבינה.",
+              "en": "For this reason, a child can be easily seduced into desiring the very opposite [of his original desire]. In contrast, an adult has a deep connection to the object of his understanding and desire, which is called the depth of concentration (or interest). ]Because he possesses this depth[, this automatically draws out a length of concentration and a width of concentration, as we previously explained regarding *Binah*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**The difference between a weak concentration and a deep concentration can be understood by the difference between a child and an adult**: a child **only possesses a very external connection or feelings towards the object of his understanding or desire**. A child wants a toy so much, gets it, and two seconds later has forgotten it. Why, when he wanted it so much? Because the connection was only external; it did not touch him at an inner level.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    1867,
+                    2017
+                  ],
+                  "start": 709.31,
+                  "end": 771.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**In contrast, an adult has a deep connection to the object of his understanding and desire**, like a committed communist, bound to it in a far more inward way. That is called the depth of *daas*, and **this automatically draws out a length of concentration and a width of concentration**. Someone who is really deep into a thing automatically has a long attention span, can hold long ideas in his head, and has the width to see it in many different ways, just as with *bina* the length and width come from the depth.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    2018,
+                    2133
+                  ],
+                  "start": 772.11,
+                  "end": 819.16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Deep daas: gathering the whole mind into one point",
+      "summary": "The sign of deep *daas* is that the mind seems to squeeze itself around one point, the opposite of *iyun*, which spreads into every detail. Yet concentrating wholly on one point at a time is what brings one to the depth of the concept, up to *daas elyon*, which unites *chachma* and *bina*; and *daas* and *bina* depend on each other.",
+      "passages": [
+        {
+          "lines": [
+            "t3kfsj3c"
+          ],
+          "phrases": [
+            {
+              "he": "וסימן להעמקת הדעת הוא אשר נראה כענין צמצום וכיווץ כלי המוח, לעוצם עומק התקשרותו במושכל, (בל\"א ער איז דרינן פר נומען פר קוועצט שטארק זייער ביז עס3 איז זייער מצומצם רק בתנוע' אחת4 וסקירה אחת לבד כו') שמזה דוקא בא עצם עומק השגה על ידי העיון דבינה",
+              "en": "The sign for [this] deep concentration is that [because of the great depth of his connection to the concept] it appears as if he is contracting and focusing the vessel of his brain. It is specifically through this deep concentration that he can come to an essential and deep comprehension of the subject matter, through the aforementioned analysis of *Binah*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**it appears as if he is contracting and focusing the vessel of his brain**: that is the outward sign that someone is concentrating. He looks as if he is squeezing up his brain, his whole face squeezed together, so deeply is he connected to the concept. The text's Yiddish says he is wholly taken up and strongly squeezed together, contracted into one movement and one look: totally focused on one thing.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    2134,
+                    2341
+                  ],
+                  "start": 819.24,
+                  "end": 915.79
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "**It is specifically through this deep concentration that he can come to an essential and deep comprehension of the subject matter**. This book is always a *mashal* for itself. The whole book is really one continuous idea, and to do the *iyun* fully one finally has to hold it all in one's head; yet right now the class is squeezed into the subject of *daas* alone. It is not thinking about the *Malchus* of *tevuna*, or how the letters come out, or the difference between *chachma* and *bina*. Thinking about them now would actually take away from going deep into this. A good student asks according to the subject; one who keeps asking about other matters learns nothing. What brings one to the real depth of the concept is squeezing oneself into this one matter and leaving all the others aside.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    2342,
+                    2718
+                  ],
+                  "start": 916.78,
+                  "end": 1052.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7jdikglb",
+            "inpfbvtq"
+          ],
+          "phrases": [
+            {
+              "he": "שהוא היפך הצמצום והכיווץ, שהרי העיון דבינה, גם שעומד ומעוכב בצמצום וכיווץ בתחלתו, אבל מיד מתפשת לרוחב הרבה בכל פרטי חלקיו, בהבחנת פרטיות הרבה כידוע",
+              "en": "]However, the aspect of analysis] is the very opposite of contraction and focus (of all his mental capacities). Although, initially, [the analysis of *Binah*] begins with focus and contraction, it nonetheless immediately spreads forth with great expansiveness, with the clarification of all the particular components and details, as known."
+            },
+            {
+              "he": "מה שאין כן הצמצום והכיווץ דהעמקת הדעת, אדרבה, הוא רק הצמצום, שהוא הקיבוץ והאסיפה מכל כח שכלו להתקשר רק במושכל זה",
+              "en": "This is not the case with the contraction and focus of the delving of the concentration. On the contrary, [the concentration] is only the contraction and focus, the aspect of gathering all of one’s mental capacities to connect only to this specific matter."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**the very opposite of contraction and focus**. The *iyun* of *bina* means cutting a matter up into little pieces. **Although, initially, [the analysis of *Binah*] begins with focus and contraction, it nonetheless immediately spreads forth with great expansiveness**: it starts with one point, but at once spreads into all its parts (in this book: the *Malchus* of *tevuna*, the letters, the outer and the inner, the angels). That is what *hisbonenus* means, cutting a matter into all its sections and parts.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    2719,
+                    2883
+                  ],
+                  "start": 1052.84,
+                  "end": 1119.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Daas* is just the opposite. **On the contrary, [the concentration] is only the contraction and focus**: not going into everything, but contracting away everything else, **gathering all of one’s mental capacities to connect only to this specific matter**. So the class takes the whole power of the mind and puts it on *daas* alone, although there are so many other things to think about. It is exactly the opposite of *bina*.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    2884,
+                    3001
+                  ],
+                  "start": 1120.2,
+                  "end": 1165.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "zarq44py"
+          ],
+          "phrases": [
+            {
+              "he": "שזה היפך בחינת התפשטות העיון בהרחבת ענין המושכל, (בל\"א דער קלעפ מיט דעם אריין לייגין זיך גאר כו') ואמנם על ידי העמקת הדעת בא לידי עמקות המושכל עד שרשו בעמקי החכמה ובינה",
+              "en": "This is the very opposite of the spreading forth of the analysis with a great breadth into the subject matter. However, it is through the delving of the concentration that one can come to the depth of the concept, until its very source in the depths of *Chochmah* and *Binah*."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**This is the very opposite of the spreading forth of the analysis with a great breadth into the subject matter.** In the text's Yiddish, he busies himself with this one thing and nothing else. **However, it is through the delving of the concentration that one can come to the depth of the concept, until its very source in the depths of *Chochmah* and *Binah*.** This does not mean staying with one point forever, going over it again and again in a cave in the Himalayas, which is basically what they do there. The other points will come: the next chapter is about *tevuna*, and then *daas* will be set aside and the whole concentration put on that. When doing a particular point, one is totally concentrated on that point, and that is what brings one to the actual depth of the concept, as it is in the depth of *chachma* and *bina*, in *taalumos chachma*.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    3002,
+                    3329
+                  ],
+                  "start": 1165.57,
+                  "end": 1295.02
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "r3exqicw"
+          ],
+          "phrases": [
+            {
+              "he": "(עד בחינת דעת עליון דמזווג חכמה לבינה כמו שכתוב למעלה בענין עומק המושג דבינה, והיינו דדעת גנוז בפומא דאימא כו'",
+              "en": "([Through the above he is capable of] reaching the aspect of the upper *Da’at* which unites *Chochmah* and *Binah*, as was explained previously regarding the matter of the depth of the comprehension (*Omek HaMoosag*) of *Binah*. This is the meaning of the statement, “*Da’at* is hidden in the mouth of *Imma*.”",
+              "notes": [
+                "See Zohar (Idra D’Mishkena) Mishpatim 123, 1.",
+                "*Imma –* Mother, refers to *Binah,* while *Abba* – Father, refers to *Chochmah*. This will be discussed in much greater detail later in the book."
+              ]
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "**reaching the aspect of the upper *Da’at* which unites *Chochmah* and *Binah***: *daas elyon* (higher knowledge), which, like *Keser*, is above *chachma* and *bina* and puts them together. It means one knows the thing: one learned it and now knows it. The lower *daas*, *daas tachton*, is only the vessel. *Daas elyon* means the thing is now part of one's mind, connected to oneself, one with oneself, as \"Adam knew Chava\": they became one. The whole of *chachma* and *bina* is now joined together in the *Keser*.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    3330,
+                    3488
+                  ],
+                  "start": 1297.36,
+                  "end": 1357.56
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Daas* **is hidden in the mouth of** *bina*. The mouth is like *Malchus*, an upper *Malchus*: when one wants to bring *bina* out into speech, as in teaching, one has to bring *daas* into it. The class is not sitting down to concentrate like the yogis; it is trying to understand, and to give a lesson. In talking it out, the concentration comes by itself and *daas* is revealed, because that is where it was hidden in the first place.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    3489,
+                    3694
+                  ],
+                  "start": 1362,
+                  "end": 1451.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4uo54llm"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שאמרו, משה שהוא הדעת, זכה לבינה שהוא שער הנון, כי הא בהא תליא, וכמה שכתוב בכתבים בכמה דוכתי ודי למבין.",
+              "en": "It is likewise stated, “*Moshe,* who corresponds to [the faculty of] *Da’at,* merited *Binah*,” which refers [specifically] to the fiftieth gate [of *Binah*]. These [two faculties] are interdependent, as explained in various writings and [Chassidic] manuscripts. This will suffice those of understanding.)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Moshe, who is *daas*, **merited *Binah***, the fiftieth gate. Moshe is *daas*, but a Jewish *daas*, one that goes specifically into *bina*. A *daas* unconnected to *bina*, where each of the *sefiros* stands on its own, is just concentration, on nothing in particular. It was because Moshe was connected to the matter that he merited *bina*. **These [two faculties] are interdependent**, as it says: if there is no *daas* there is no *bina*, and if there is no *bina* there is no *daas*. If you do not concentrate on your lesson you will understand nothing; and if there is nothing to understand you will lose interest. Without the lower *daas* of concentrating on the lesson there will be no understanding, and without understanding there will be no *daas elyon*, and you will not know anything. Concentration with no explanation does not rise from *daas tachton* to *daas elyon*: one just sits there and concentrates and knows nothing, and if one does seem to come to know something, it is a vain imagination.",
+              "audio": [
+                {
+                  "lecture": "017 Tape002-Side1-Ch1.mp3",
+                  "words": [
+                    3695,
+                    4056
+                  ],
+                  "start": 1453.24,
+                  "end": 1590.6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "Why is what people call deep concentration only a vessel, and what supplies the content that concentration works on?",
+      "lines": [
+        "rdgog5tv"
+      ]
+    },
+    {
+      "question": "How does the analogy of springs and an aquifer explain *taalumos chachma*?",
+      "lines": [
+        "en4s7zas"
+      ]
+    },
+    {
+      "question": "What is a *tamtzis*, and how does learning to add illustrate it?",
+      "lines": [
+        "6dfmnw2o",
+        "clembo3b"
+      ]
+    },
+    {
+      "question": "How does *chachma sheb'bina* differ from *bina sheb'chachma*, as in the car engineer and the Wright brothers?",
+      "lines": [
+        "7xlwb6pw"
+      ]
+    },
+    {
+      "question": "Why must a student go through the length before he can reach the depth, and what goes wrong if he reaches for width first?",
+      "lines": [
+        "zfgfsjbt"
+      ]
+    },
+    {
+      "question": "Why do *daas* and *bina* depend on each other?",
+      "lines": [
+        "4uo54llm"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "tape 015 opens with a recap of the unrecorded class (0:35–2:33). It is used here because it explains the line being read, not given a separate block under lines 4svvsngr–m523heuq. Its last step names a level above taalumos chachma (רדל״א, 'experiencing the thing itself without anything from yourself'); I wrote it as 'a level higher still' without naming it.",
+      "lines": [
+        "rdgog5tv"
+      ]
+    },
+    {
+      "text": "his explanation that 'וחכמה מאין תמצא means the chachma is already a metzius' is read at the start of the line 6dfmnw2o span (015 13:51) and is placed here, with the verse it explains.",
+      "lines": [
+        "en4s7zas"
+      ]
+    },
+    {
+      "text": "the story of 'I know there is a G-d in the world' is told of the 'דייטשל' (some say the Alter Rebbe with his father-in-law), as he gave it; please check the name. He says he thinks the 'summary before and after hisbonenus' is in Kuntres HaHispaalus; reported with his hedge.",
+      "lines": [
+        "6dfmnw2o",
+        "clembo3b"
+      ]
+    },
+    {
+      "text": "left out two short asides: that the lightning flash is 'already Yesod Abba', and that Atzmus is mistranslated as 'essence'.",
+      "lines": [
+        "6dfmnw2o",
+        "clembo3b"
+      ]
+    },
+    {
+      "text": "left out brief forward references to נגילה ונשמחה בך and the Leviathan that moves between the upper and lower waters, which he says the book explains later.",
+      "lines": [
+        "pimwc3gh"
+      ]
+    },
+    {
+      "text": "alignment confidence for line 7oyqxyo6 is 0.438; the listen times were checked against the transcript and are right. The transcript's 'עד דסלק' is ע״ב דס״ג misheard.",
+      "lines": [
+        "wctxrksu",
+        "7oyqxyo6"
+      ]
+    },
+    {
+      "text": "left out, for length, his remark that there is also a negative daas (understanding that something is bad, one wants to stay away from it) and the television-screen example of sorting into parts.",
+      "lines": [
+        "wctxrksu",
+        "7oyqxyo6"
+      ]
+    },
+    {
+      "text": "alignment confidence 0.432 (line 47u5u6vn) and 0.458 (line 7xlwb6pw). Tape 015 ends in the middle of his explanation of line 47u5u6vn ('He's saying that's something…') and tape 016 resumes at line 7xlwb6pw, so a little may be missing at the tape change.",
+      "lines": [
+        "47u5u6vn",
+        "7xlwb6pw"
+      ]
+    },
+    {
+      "text": "he connects this power with 'נגיל ונשמח בך, בך ממש', which he says the book discusses later; I wrote only 'as the book will discuss later'.",
+      "lines": [
+        "feq46pb4"
+      ]
+    },
+    {
+      "text": "alignment confidence 0.517; the span runs to the end of tape 016 (8:26–28:15). Left out as off-topic: the Jackie Mason joke and the remarks that the book is written 'even for the Aibershter'; also, for length, his remark that the Rebbe Rashab was proudest of the Frierdiker Rebbe for reading Shaar HaYichud on his own and writing a commentary on it, that the book, like the story of Yosef, is written on every level, and his advice not to learn Rabbi Hillel of Paritch's commentary yet because it brings in much more Kabbala.",
+      "lines": [
+        "zfgfsjbt"
+      ]
+    },
+    {
+      "text": "'it says explicitly that Moshiach will open up the river and it will become seven נחלים' is reported as he gave it, without a source.",
+      "lines": [
+        "zfgfsjbt"
+      ]
+    },
+    {
+      "text": "the span of line v676iwfg already reads and explains the start of line 5663nwe6, so the two are one unit. He gives as an example of a long work 'in ע״ב, for instance… both of these books are an המשך' and later 'when you go through עין בית'; unclear which works he means (perhaps the hemshech Ayin-Beis), so I wrote only 'some works'.",
+      "lines": [
+        "v676iwfg",
+        "5663nwe6"
+      ]
+    },
+    {
+      "text": "alignment confidence 0.576. His examples (a frum woman, a rock-and-roll man's girlfriend, a rebbetzin) are kept at the editor's request. At 9:08 the transcript reads 'it doesn't mean that there's some women who have a stronger daas than certain men'; read in context as 'does not rule out'. Please check against the audio.",
+      "lines": [
+        "5663nwe6"
+      ]
+    },
+    {
+      "text": "left out his personal recollection of Rabbi Raichik's intense concentration while davening, given as an illustration of the outward sign.",
+      "lines": [
+        "t3kfsj3c"
+      ]
+    },
+    {
+      "text": "alignment confidence 0.657. He contrasts Moshe's 'Jewish daas', which goes into bina, with a 'goyishe daas', which he calls the daas of Tohu, where each sefira stands on its own. I kept the idea and softened the label to 'a daas unconnected to bina'; please check the wording.",
+      "lines": [
+        "4uo54llm"
+      ]
+    }
+  ]
+}
