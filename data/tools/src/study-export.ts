@@ -101,6 +101,8 @@ export interface StudyBetaChapter {
   stale?: true;
   provenance?: { method: NonNullable<StudyChapterFile['provenance']>['method'] };
   overview: string;
+  /** Where the class sums the chapter up; present only when the guide cites it. */
+  overviewAudio?: StudyBetaAudio[];
   sections: { title: string; summary: string; passages: StudyBetaPassage[] }[];
 }
 
@@ -202,6 +204,7 @@ export function studyBetaChapter(file: StudyChapterFile, lines: readonly Line[],
     ...(stale ? { stale: true as const } : {}),
     ...(file.provenance ? { provenance: { method: file.provenance.method } } : {}),
     overview: file.overview,
+    ...(file.overviewAudio?.length ? { overviewAudio: file.overviewAudio.map(trimAudio) } : {}),
     sections: file.sections.map((s) => ({
       title: s.title,
       summary: s.summary,

@@ -742,14 +742,15 @@ no error are exported; a stale file is exported with `"stale": true`.
   audio). `continuesIn` is the chapter the class reads on into, from its
   alignment.
 - `<series>/<chapter>.json`: `schemaVersion`, `series`, `chapter`, `title`,
-  `status`, `stale?`, `provenance: { method }`, `overview` and `sections` →
+  `status`, `stale?`, `provenance: { method }`, `overview`, `overviewAudio?`
+  (where the class sums the chapter up, `{ lecture, start, end }[]`) and `sections` →
   `passages` (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains
   `lines`: the line IDs whose text it overlaps, by character offsets into the
   passage's lines joined by spaces; `en` is present only where the teacher
   translates the phrase, and then its `audio` becomes `lecture`, `start` and
   `end` on the phrase. Block `audio` is `{ lecture, start, end }`;
   `sensitivity`, `outOfPlace` and phrase `notes` are kept. Word ranges,
-  `lectures`/`transcriptionId`, provenance details, `overviewAudio`, `terms`,
+  `lectures`/`transcriptionId`, provenance details, `terms`,
   `reviewQuestions`, `omitted` and `notes` are dropped. Fields are copied
   from a whitelist, so a new writer-side field does not leak.
 

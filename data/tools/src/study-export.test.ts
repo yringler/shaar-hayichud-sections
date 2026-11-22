@@ -122,6 +122,16 @@ describe('exportStudyBeta', () => {
     assert.ok(!JSON.stringify(ch).includes('draftNote'));
   });
 
+  it('keeps where the class sums the chapter up, as { lecture, start, end }', () => {
+    const file = structuredClone(loadStudy(FIXTURE, SCHEMAS).series[0]!.chapters[0]!.data!);
+    const lines = loadStudyContext(FIXTURE).chapterLines('chapter_01')!;
+    assert.ok(!('overviewAudio' in studyBetaChapter(file, lines, false)), 'no overviewAudio when the guide cites none');
+    file.overviewAudio = [{ lecture: 't1.mp3', words: [0, 3], start: 0.5, end: 4.25 }];
+    const ch = studyBetaChapter(file, lines, false);
+    assert.deepEqual(ch.overviewAudio, [{ lecture: 't1.mp3', start: 0.5, end: 4.25 }]);
+    assert.deepEqual(Object.keys(ch).slice(6, 9), ['overview', 'overviewAudio', 'sections']);
+  });
+
   it('exports a stale file, marked stale', () => {
     const dir = fixtureWith((f) => {
       f.sections[0]!.passages[0]!.phrases![1]!.he = 'ידוע המאמר הזה';
