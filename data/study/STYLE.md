@@ -240,13 +240,30 @@ Flag a block with `sensitivity` when it does any of these:
   one sentence and not the explanation around it.
 - When in doubt, flag. A flag costs nothing; a missed one is found by a
   stranger.
-- `"reviewed": "YYYY-MM-DD"` on a flag means a person has checked it against
-  the class and accepted it as it stands. Never add it yourself. If you
-  change a reviewed block's `text` or `title`, or its flag's `action`,
-  `publishable` or `publishableTitle`, delete `reviewed`: the change needs a
-  new look.
+- `"reviewed": "YYYY-MM-DD"` on a flag means the flag has been accepted as it
+  stands: by a person who checked it against the class, or under a standing
+  ruling below. Add it yourself only under a ruling. If you change a
+  reviewed block's `text` or `title`, or its flag's `action`, `publishable`
+  or `publishableTitle`, delete `reviewed`: the change needs a new look.
 - Do not flag ordinary humor, strong Torah positions stated as such, or
   criticism of ideas (as opposed to people and groups).
+
+### Standing rulings
+
+Decisions the owner has made once for every flag of a kind. A flag that
+meets one is settled: when you write or review it, make it meet the ruling
+and set `reviewed` to today's date. Anything that does not clearly fit goes
+to the owner unreviewed.
+
+1. **A dismissive remark in passing** (about scientists, academics or another
+   profession, another religion or its followers, and the like). Still flag
+   it. The `publishable` text drops the remark or puts it neutrally, and
+   keeps the point he was making with it. Keeping the point is the only
+   test: you have leeway to condense, reorder or rephrase further than the
+   `text` does to get there. If the remark *is* the point (nothing is left
+   without it), use `omit`. This ruling does not cover a remark that is
+   crude, names a person, or is about women, politics or a nation or race;
+   those stay with the owner.
 
 ## Prose rules
 

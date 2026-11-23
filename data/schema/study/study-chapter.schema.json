@@ -233,7 +233,7 @@
         "action": { "enum": ["replace", "omit"] },
         "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' (checked by the data build).", "$ref": "#/$defs/prose" },
         "publishableTitle": { "$ref": "#/$defs/line" },
-        "reviewed": { "description": "The day a person read this flag against the class and accepted it as it stands: the action, and with 'replace' the publishable text and title. Set only by a person. Whoever later changes the block's text or title, or this flag's action, publishable or publishableTitle, deletes it. Dropped from both exports.", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+        "reviewed": { "description": "The day this flag was accepted as it stands (the action, and with 'replace' the publishable text and title): by a person who read it against the class, or under a standing ruling in data/study/STYLE.md. Whoever later changes the block's text or title, or this flag's action, publishable or publishableTitle, deletes it. Dropped from both exports.", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
       }
     }
   }

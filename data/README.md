@@ -679,8 +679,8 @@ What each part is anchored to:
   `publicView()` in `tools/src/study.ts` applies it, for the
   [public edition](#public-study-guides-v1study). `reviewed: "YYYY-MM-DD"`
   on the flag records that a person checked it against the class and
-  accepted it as it stands; without it a flag is the writer's proposal.
-  Only a person sets it, and an edit to the block's text or title or to the
+  accepted it as it stands, or that it meets a standing ruling
+  (`study/STYLE.md`); without it a flag is the writer's proposal. An edit to the block's text or title or to the
   flag's action, `publishable` or `publishableTitle` deletes it. A flag
   found unnecessary is removed, not marked. Neither export carries
   `reviewed`.
