@@ -1792,15 +1792,7 @@
                   "end": 162.66
                 }
               ],
-              "outOfPlace": "Class 75 opens by finishing class 74's point on mesirus nefesh, before it reads line 28 (\"so after all of that introduction\"); placed with class 74's nimshal.",
-              "sensitivity": {
-                "categories": [
-                  "health-or-legal"
-                ],
-                "reason": "Says that rather than eat forbidden food when told his life depends on it, a person is allowed to expect a miracle; a reader might take it as license to refuse food or treatment in real danger.",
-                "action": "replace",
-                "publishable": "Even in *ruchniyus*. When the Alter Rebbe was in jail they told him, \"You have to eat, or else you'll be killing yourself,\" if he refused the non-kosher food. Some opinions allow refusing, but \"that's not such an example\": the danger was not certain or immediate, and even halachically it is not such a big question. With the attitude that the world is here for *Torah* and *mitzvos*, as the Rebbe said about the Frierdiker Rebbe, \"you know you're going to win.\""
-              }
+              "outOfPlace": "Class 75 opens by finishing class 74's point on mesirus nefesh, before it reads line 28 (\"so after all of that introduction\"); placed with class 74's nimshal."
             },
             {
               "kind": "keyPoint",
@@ -3180,6 +3172,9 @@
       "lines": [
         "o7kv6thm"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the flag on the Alter Rebbe and \"expect a miracle\" (75 w343) was removed by the reviewer: printed as said."
     }
   ]
 }

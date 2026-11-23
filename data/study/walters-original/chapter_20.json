@@ -802,15 +802,7 @@
                   "start": 126.07,
                   "end": 139.3
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "politics",
-                  "other-groups"
-                ],
-                "reason": "A political opinion on the conflict between Jews and Arabs in Israel and on democracy there.",
-                "action": "omit"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2429,6 +2421,9 @@
         "gjkm43zm",
         "n5nd2zav"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the flag on the Israel and democracy remark (73 w343) was removed by the reviewer: printed as said."
     }
   ]
 }

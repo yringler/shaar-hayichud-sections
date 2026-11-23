@@ -2614,15 +2614,7 @@
                   "start": 202.58,
                   "end": 320.32
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "health-or-legal"
-                ],
-                "reason": "Says faith healing and psychic healers work, that a sick person is sick because his soul stopped caring, and that regular medicine is not guaranteed; a reader might act on it about medical treatment.",
-                "action": "replace",
-                "publishable": "And there are deeper and deeper levels, at which the soul has more power over the body than is normally revealed. Even the way the body reacts to a stimulus comes from the soul, not purely from the physical. It is more or less *meluvash b'teva* (enclothed in nature), but either way it is within nature, and either way it is really above nature."
-              }
+              ]
             }
           ]
         }
@@ -3261,6 +3253,9 @@
         "tb4traks",
         "vpflhzvm"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the flag on faith healing (45 w547) was removed by the reviewer: printed as said."
     }
   ]
 }
