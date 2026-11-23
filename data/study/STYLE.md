@@ -267,12 +267,6 @@ to the owner unreviewed.
    without it), it may be published as said: `action: "keep"`. This ruling does not cover a remark that is
    crude, names a person, or is about women, politics or a nation or race;
    those stay with the owner.
-2. **Crude language or imagery** (`crude`) is omitted: `action: "omit"`, on
-   whatever else the flag names. To keep the teaching around it, the crude
-   part goes in a block of its own (an `aside`) and only that block is
-   flagged and omitted. If it cannot be separated (the image *is* the
-   mashal, the insult *is* the punchline), omit the whole block and say in
-   the reason what the public edition loses.
 
 ## Prose rules
 
