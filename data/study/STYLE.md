@@ -232,6 +232,10 @@ Flag a block with `sensitivity` when it does any of these:
 - `action: "replace"` with a `publishable` text that keeps the teaching and
   drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
   left (a pure aside).
+- A `publishable` text may keep only the point. A joke or an image that is
+  easy to misread in print (Rabbi Raichik's nose through his tallis) can be
+  left out of it: the block's audio is there for whoever wants the class
+  itself, and listeners get the full flavor.
 - Put the remark in a block of its own (an `aside`), so that the swap touches
   one sentence and not the explanation around it.
 - When in doubt, flag. A flag costs nothing; a missed one is found by a
