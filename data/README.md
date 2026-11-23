@@ -798,7 +798,9 @@ trimming, both editions, stale and erroring files).
 Two series. `markel-advanced` (catalog series 37) has chapters 1–19, each
 written from the classes, reviewed against the transcripts and then
 migrated to class-only phrase translations (each `en` anchored with
-`audio`; phrases he only reads are Hebrew-only). `walters-original`
+`audio`; phrases he only reads are Hebrew-only), then rewritten as guide
+prose (his spoken lines out of quotation marks) and sensitivity-reviewed by
+a person: its 52 flags are all `reviewed`. `walters-original`
 (catalog series 0) has every chapter the series teaches (1, 2 and 10–32),
 each written from the classes and then reviewed against the transcripts
 by a second agent; it is public (Rabbi Walters gave permission), so its
