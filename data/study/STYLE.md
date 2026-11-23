@@ -161,9 +161,18 @@ of the class, and often the part a student remembers.
   Tanya*: "The light of the projector stays the same." Do not write "Rabbi
   Markel says" in every block. The file is his class throughout.
 - **Keep his manner.** Use his examples, his turns of phrase, his order, his
-  humor, his bluntness. If he says "poof, the world", write that. A line of
-  his worth having word for word goes in quotation marks. Dialogue he acts out
-  ("What, you changed your mind?") stays dialogue.
+  humor, his bluntness. If he says "poof, the world", write that.
+- **Write a guide, not a recording.** Say his point in written prose, in the
+  guide's voice. His spoken English stays out of quotation marks: at most one
+  short quote per block, and only a line a reader would remember (a
+  punchline, a striking image), not ordinary explanation he happened to say.
+  Dialogue he acts out and exchanges with students ("What do you mean?" "I
+  understand.") become a sentence of prose. Verbal flair spices up the
+  recording but the guide loses nothing without it; the audio keeps it. A
+  quotation of a source (a verse, the Gemara, a saying of a Rebbe) is not his
+  spoken English and stays quoted. (Chapters 1–19 of `markel-advanced` were
+  rewritten this way in November 2026, after the reviewer found the blocks
+  "keep the literal too much".)
 - **Do not soften, tidy or improve.** No hedges he did not make, no balance he
   did not give, no modern sensitivity, no moral he did not draw. If he is
   rude about something, the block is rude about it (and flagged, below).
@@ -173,8 +182,8 @@ of the class, and often the part a student remembers.
   restatement of the same idea, and recaps of what the block already said.
   Join what he says in three tries into one clear sentence. Tell a *mashal* or
   a story in its few decisive moves, not every beat. Keep what is his: the
-  example, the image, the joke, the turn of phrase, and his best lines word
-  for word in quotation marks. Condensing never adds, softens or reorders the
+  example, the image, the joke, the turn of phrase, and the one line worth
+  quoting. Condensing never adds, softens or reorders the
   argument; it only leaves out what he said twice or said on the way.
 - Name him (as the series' `NOTES.md` says) only for something personal: a
   recollection, an opinion he marks as his own, a disagreement with a reading.
