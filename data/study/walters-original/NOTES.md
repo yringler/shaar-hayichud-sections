@@ -231,11 +231,12 @@ Flagged, with the precedent:
   say so in the reason.
 - **Health and law**: his own medical claims and remedies (curing cancer and
   an inhalant in the Q and A on 15, the adrenal glands and the fluid under
-  the skull in 21, the liver, faith healing and "fry their brain" in 27,
+  the skull in 21, the liver and "fry their brain" in 27,
   reflexology and bloodletting in 31, wrapping a fevered patient in 22),
-  loose rulings on liability (29) and on risking one's life for a mitzva
-  (32): `health-or-legal`. Physiology that only explains a line, or the
-  Mitteler Rebbe's own claim (sight failing in old age, 31), is not flagged.
+  loose rulings on liability (29): `health-or-legal`. Physiology that only
+  explains a line, or the Mitteler Rebbe's own claim (sight failing in old
+  age, 31), is not flagged; nor, after review, faith healing (27) or the
+  Alter Rebbe "allowed to expect a miracle" on risking one's life (32).
 - **Misstated halacha and history under his name**: the mitzva of kiddush
   "is not verbal" and no wine on Shabbos if you don't enjoy it (26), the bomb
   built "before the Russians" (2): `other`, with a publishable text that
