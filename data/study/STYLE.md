@@ -232,6 +232,13 @@ Flag a block with `sensitivity` when it does any of these:
 - `action: "replace"` with a `publishable` text that keeps the teaching and
   drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
   left (a pure aside).
+- Write the two side by side: everything outside the flagged remark is the
+  same words in `text` and `publishable`, so that a word diff of the two
+  shows only what the reason names. If writing the public text finds a
+  tighter way to say the rest, tighten `text` the same way: a reviewer who
+  sees the whole block reworded cannot tell what the flag removes, and a
+  `text` left closer to the transcript than its public twin is not
+  condensed enough.
 - A `publishable` text may keep only the point. A joke or an image that is
   easy to misread in print (Rabbi Raichik's nose through his tallis) can be
   left out of it: the block's audio is there for whoever wants the class
