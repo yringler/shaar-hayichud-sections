@@ -15,6 +15,11 @@ same time. Do not edit `data/study/translit.json`, `STYLE.md`, `NOTES.md`,
 one of them is wrong or lacking, say so in your final report (and, for a
 term, define it in your file's `terms`). Do not commit unless told to.
 
+The guide is there to make it easier to connect to the class, not to
+replace it: write each block so a reader knows what that stretch of
+recording teaches and is led to hear it, not so the recording becomes
+unnecessary.
+
 ## 1. Read
 
 1. `data/study/STYLE.md`: the rules. Read all of it; it is the contract.

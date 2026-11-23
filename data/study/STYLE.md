@@ -26,6 +26,16 @@ without replacing the recording:
   **condensed**: a reader gets in two minutes what took him ten. It is not a
   transcript, not a summary of the chapter and not a new commentary.
 
+**The guide is there to make it easier to connect to the class, not to
+replace it.** That is the test for every choice below. A block says what he
+teaches clearly enough that a reader knows what is in that stretch and
+wants to hear it, and points at the audio where he says it. It does not try
+to carry everything the recording carries: his voice, his timing, the
+flavor of a joke and the back-and-forth with the class stay in the
+recording, which is one tap away. So a block can drop flair and spoken
+asides without loss, and a softened public text loses little; what a block
+must never do is change what he teaches.
+
 ## Sources
 
 Write from the series' classes on the chapter and from nothing else.
