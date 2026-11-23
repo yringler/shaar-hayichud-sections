@@ -606,7 +606,8 @@
                 ],
                 "reason": "Calls a drunk man in the street \"some stupid dirty bum\".",
                 "action": "replace",
-                "publishable": "No detail, even the very last, was not first in this will and thought: **There's nothing that wasn't originally over there.** So it doesn't matter. You see a man walking down the street half drunk and say, \"What about him?\" Even the very last detail could not be there unless it was first over there."
+                "publishable": "No detail, even the very last, was not first in this will and thought: **There's nothing that wasn't originally over there.** So it doesn't matter. You see a man walking down the street half drunk and say, \"What about him?\" Even the very last detail could not be there unless it was first over there.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -694,15 +695,7 @@
                   "end": 1222.26
                 }
               ],
-              "join": true,
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Built on a stock picture of the wife who cares about the chandelier and is unimpressed by the bare building.",
-                "action": "replace",
-                "publishable": "He wanted to please his wife, and what they were both thinking about was the fixtures on the ceiling, the beautiful chandelier: the most external level, done at the very end. First the studs, then the drywall, and for the construction crew it is a finished building. But walk in and look: dust all over the floor, and not even a floor yet, just a piece of plywood. Now come the decorators. And in the first thought, that is how you saw it, not the stuff behind it."
-              }
+              "join": true
             },
             {
               "kind": "explanation",
@@ -1134,15 +1127,7 @@
                   "end": 433.08
                 }
               ],
-              "outOfPlace": "The next class (the second side of the tape) goes on with *Atika Kadisha* and its *metzach* before it rereads lines 21-23; kept here, in class order, under the passage being discussed.",
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "A generalisation that women take special delight in shopping and in planning the house.",
-                "action": "replace",
-                "publishable": "There is a big delight even when one shops for a car: a big delight in the actual shopping, and before that in sitting around talking about what one plans to buy, especially when planning a house. There is a big delight just in that."
-              }
+              "outOfPlace": "The next class (the second side of the tape) goes on with *Atika Kadisha* and its *metzach* before it rereads lines 21-23; kept here, in class order, under the passage being discussed."
             },
             {
               "kind": "keyPoint",
@@ -1519,7 +1504,8 @@
                 ],
                 "reason": "Says that a man who runs for president only wants to be president and his reasons are not true.",
                 "action": "replace",
-                "publishable": "You find this in public life too: a person wants something and comes up with a reason why, and a reason why his position has to be correct. Why does he want it? Because of this and because of that. But really he simply wants it."
+                "publishable": "You find this in public life too: a person wants something and comes up with a reason why, and a reason why his position has to be correct. Why does he want it? Because of this and because of that. But really he simply wants it.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1544,15 +1530,7 @@
                   "start": 1391.2,
                   "end": 1414.7
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "politics"
-                ],
-                "reason": "A partisan example: liking a man one cannot stand because he is a Republican.",
-                "action": "replace",
-                "publishable": "So too the *middos*, one after the other, down to the end of the deed. You see it in any loyalty: it could be a man you can't stand, but he is on your side, so you like him, just because he is on your side. So why do you like him?"
-              }
+              ]
             }
           ]
         },

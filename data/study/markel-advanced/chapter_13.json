@@ -675,7 +675,8 @@
                 ],
                 "reason": "Has the Mitteler Rebbe call his readers \"these idiots\" (said twice) while estimating what they can understand.",
                 "action": "replace",
-                "publishable": "So it is only from the *glif glifu* in the *tehiru ila'a*, what He measured within Himself: the Rebbe first had to estimate it. \"I have to write a book, so I have to make a *shiur* (measure): what can they understand?\""
+                "publishable": "So it is only from the *glif glifu* in the *tehiru ila'a*, what He measured within Himself: the Rebbe first had to estimate it. \"I have to write a book, so I have to make a *shiur* (measure): what can they understand?\"",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -830,8 +831,8 @@
                 ],
                 "reason": "\"These people are making a very big mistake\": a swipe at a group he does not name, who take the analogy for spirituality itself.",
                 "action": "replace",
-                "recommend": "raw",
-                "publishable": "By the way, it is a very big mistake to think this analogy is *ruchniyus* (spirituality). It is not; it is an analogy, and the *ruchniyus* is also an analogy."
+                "publishable": "By the way, it is a very big mistake to think this analogy is *ruchniyus* (spirituality). It is not; it is an analogy, and the *ruchniyus* is also an analogy.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1448,16 +1449,7 @@
                   "start": 1225.76,
                   "end": 1282.44
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other"
-                ],
-                "reason": "An opinion on science: he sets the Big Bang aside and dates the start of the universe's motion to 5763 years ago, as a thrown stone traced back only seems to start from the ground.",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "Trace a thrown thing back and you trace it all the way to the ground: \"Wow, it blew up from the ground.\" It did not; it started in the middle, from where you threw it. So here: the motion of the universe really started in the middle, from the throw."
-              }
+              ]
             },
             {
               "kind": "explanation",

@@ -437,7 +437,8 @@
                 ],
                 "reason": "Calls the way of those who study Kabbala to meditate on the sefiros \"total baloney\".",
                 "action": "replace",
-                "publishable": "Learning this in order to know how to meditate on the *sefiros*, or to know which *sefira* is acting, is not what it is all about. The whole *inyan* is that the *Aibershter* is here, *mamash* here, standing."
+                "publishable": "Learning this in order to know how to meditate on the *sefiros*, or to know which *sefira* is acting, is not what it is all about. The whole *inyan* is that the *Aibershter* is here, *mamash* here, standing.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1136,16 +1137,7 @@
                   "start": 1307.5,
                   "end": 1350.88
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "politics"
-                ],
-                "reason": "A current-events example naming Bush's conquest of Iraq, which a public edition might read as a political remark.",
-                "action": "replace",
-                "publishable": "Over here in this world there is a bunch of rebel bands running around, as in a country that has been conquered but not yet consolidated: it is not a real *Malchus*, the sovereignty is not recognized. And in sovereignty, especially in *Malchus* as opposed to dictatorship, a *Malchus* is a thing that has to be recognized. The King has to be coronated *davka* by His subjects.",
-                "publishableTitle": "A conquest not yet consolidated"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2075,7 +2067,8 @@
                 ],
                 "reason": "Mocks an identifiable kind of student in his own community, who strings together Ayin Beis, Torah Or and the Rebbe's talks without understanding any of them.",
                 "action": "replace",
-                "publishable": "A person may try to make *chiddushim* (new insights), to tie together one thing he learned in *Ayin Beis* with another thing he learned in *Torah Or* and a *sicha* (talk) of the Rebbe, without realizing that they might be talking about different things: different lengths, different explanations. And he may not even have the length, the *hisbonenus* of the one simple length, because he started out with fifth grade instead of with kindergarten."
+                "publishable": "A person may try to make *chiddushim* (new insights), to tie together one thing he learned in *Ayin Beis* with another thing he learned in *Torah Or* and a *sicha* (talk) of the Rebbe, without realizing that they might be talking about different things: different lengths, different explanations. And he may not even have the length, the *hisbonenus* of the one simple length, because he started out with fifth grade instead of with kindergarten.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2122,7 +2115,8 @@
                 ],
                 "reason": "Continues the mockery of \"these people\" who want to relate Shaar HaYichud to Ayin Beis without understanding either.",
                 "action": "replace",
-                "publishable": "If what you have is only points, points, without the whole length, then when you learn a simple explanation from *Shaar HaYichud* you will try to relate it to what it says in *Ayin Beis*: you want to do a width. But you do not yet understand the length there, nor the length here, and you already want to be on a width."
+                "publishable": "If what you have is only points, points, without the whole length, then when you learn a simple explanation from *Shaar HaYichud* you will try to relate it to what it says in *Ayin Beis*: you want to do a width. But you do not yet understand the length there, nor the length here, and you already want to be on a width.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2157,9 +2151,8 @@
                 ],
                 "reason": "Treats becoming a Muslim as the end of the road to ruin, and says that most people's Judaism is really idolatry.",
                 "action": "replace",
-                "recommend": "judgment",
-                "judgmentNote": "Two remarks in one: that becoming a Muslim is the end of the road is a position; that most people's Judaism is really idolatry may be doctrine or a jab at people.",
-                "publishable": "In the olden days they said not to study Kabbala and *Chassidus*, because it will mix you up. You will make dark from the light and light from the dark, and you could end up like Shabsai Tzvi, G-d forbid. Or even if you stay a Jew, you will mix it all up in your head, and you will have a Judaism that is really *avoda zara* (idolatry)."
+                "publishable": "In the olden days they said not to study Kabbala and *Chassidus*, because it will mix you up. You will make dark from the light and light from the dark, and you could end up like Shabsai Tzvi, G-d forbid. Or even if you stay a Jew, you will mix it all up in your head, and you will have a Judaism that is really *avoda zara* (idolatry).",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2227,15 +2220,7 @@
                   "end": 848.4
                 }
               ],
-              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage.",
-              "sensitivity": {
-                "categories": [
-                  "named-person"
-                ],
-                "reason": "Calls the books of a named recent scholar, Gershom Scholem, \"a total heresy\".",
-                "action": "replace",
-                "publishable": "It makes no difference to him: it could be *Imrei Bina*, it could be *Chovos HaLevavos*, it could be *Yedios Achronos*, or a book of heresy: here is an *aleph* and here is a *beis*, *mamash* the same thing."
-              }
+              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage."
             },
             {
               "kind": "explanation",

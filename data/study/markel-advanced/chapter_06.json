@@ -536,16 +536,7 @@
                   "start": 545.9,
                   "end": 597.41
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Characterises scientists as a group as having been \"very full of themselves\".",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "The scientific theory is one of the expressions of the eighth king of *Tohu* (the world of Chaos): a *bina* of *Tohu*, unconnected to G-d. Yet the eighth king does not die. In the 19th century science was sure it had disproved that there is a G-d; the more it gets into things, the more it sees that there seems to be a Controller of the universe."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -596,15 +587,7 @@
                   "end": 1346.44
                 }
               ],
-              "outOfPlace": "Class 065 is a free discussion that reads no line; this part of it returns to line 11, the joy that is in G-dliness and not in the explanation.",
-              "sensitivity": {
-                "categories": [
-                  "politics"
-                ],
-                "reason": "A joke naming a political party.",
-                "action": "replace",
-                "publishable": "A joy in what? Not in the intricate study, the talking and discussing. People have philosophy groups: they get together and *hak a tchainik* (Yiddish: bang a kettle, chatter on). They even have a politics group that discusses a theory none of them holds, and get a big joy and *taanug* out of the intricacies of the explanations. The joy of that *bina* comes from the beauty of the explanation. That is not what is happening here."
-              }
+              "outOfPlace": "Class 065 is a free discussion that reads no line; this part of it returns to line 11, the joy that is in G-dliness and not in the explanation."
             },
             {
               "kind": "mashal",
@@ -830,8 +813,8 @@
                 ],
                 "reason": "Gives the founder of another religion as the first example of what G-d is not.",
                 "action": "replace",
-                "recommend": "raw",
-                "publishable": "You can't figure out what the *Aibershter* is, but you can figure out what He is not: He is not a person. \"If you know so good, so what is it?\" \"The actual *mahus* you can't figure out. But I can tell you what it's not.\" That is the real *hasagas hashlila*: a comprehension, not in *chachma*, but an actual form of logic that figures out what the thing is not."
+                "publishable": "You can't figure out what the *Aibershter* is, but you can figure out what He is not: He is not a person. \"If you know so good, so what is it?\" \"The actual *mahus* you can't figure out. But I can tell you what it's not.\" That is the real *hasagas hashlila*: a comprehension, not in *chachma*, but an actual form of logic that figures out what the thing is not.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1689,7 +1672,8 @@
                 ],
                 "reason": "Calls ordinary people \"stupid\" and makes fun of \"the kind of people around here\".",
                 "action": "replace",
-                "publishable": "But in *bina* you see that even a person who is not a *bina* type... You'd say it applies here too: a non-intellectual is not trying to become an intellectual; just the opposite, he thinks they're all eggheads. But it's not true. Every person wants to be a *mevin* (one who understands). Talk to any fan: he'll tell you why the Steelers lost, the quarterback made that play wrong, he should have done it like that, a whole analysis. And then he feels like he's a *mevin*."
+                "publishable": "But in *bina* you see that even a person who is not a *bina* type... You'd say it applies here too: a non-intellectual is not trying to become an intellectual; just the opposite, he thinks they're all eggheads. But it's not true. Every person wants to be a *mevin* (one who understands). Talk to any fan: he'll tell you why the Steelers lost, the quarterback made that play wrong, he should have done it like that, a whole analysis. And then he feels like he's a *mevin*.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1846,7 +1830,8 @@
                 ],
                 "reason": "Crude image (the fish's fecal matter in the ocean).",
                 "action": "replace",
-                "publishable": "In the ocean, if I'm standing next to you, you don't care: to the ocean it's negligible, even rotten fish. But it's still there, all of it, the absolute amount. It is just *k'la chashiv*, considered as nothing. That is *kula kamei k'la chashiv*: there is a *kaf* there, *k'la*, *like* nothing."
+                "publishable": "In the ocean, if I'm standing next to you, you don't care: to the ocean it's negligible, even rotten fish. But it's still there, all of it, the absolute amount. It is just *k'la chashiv*, considered as nothing. That is *kula kamei k'la chashiv*: there is a *kaf* there, *k'la*, *like* nothing.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2803,7 +2788,8 @@
                 ],
                 "reason": "Calls the ordinary American sinner a \"total American shvantz\", a crude Yiddish word.",
                 "action": "replace",
-                "publishable": "Because He wanted a nightmare, so we should end up in Europe, and finally in America. In a nightmare the biggest thing happens: an elephant, *pila*, the biggest animal, goes into the eye of a needle, *kufa d'machta*, the littlest thing; and the roots are *pila*, *pele*, wonder, and *machta*, *chotei*, a sinner. The *Aibershter* can go into the brain not of Rabbi Akiva, but of a normal sinner, a *rasha*, the lowest of the low. Where can that happen? There was a book, \"Only in America\". That is the reason for the exile: the thing that can't fit in his brain. In America everything is possible. They told the Frierdiker Rebbe, \"This is America.\""
+                "publishable": "Because He wanted a nightmare, so we should end up in Europe, and finally in America. In a nightmare the biggest thing happens: an elephant, *pila*, the biggest animal, goes into the eye of a needle, *kufa d'machta*, the littlest thing; and the roots are *pila*, *pele*, wonder, and *machta*, *chotei*, a sinner. The *Aibershter* can go into the brain not of Rabbi Akiva, but of a normal sinner, a *rasha*, the lowest of the low. Where can that happen? There was a book, \"Only in America\". That is the reason for the exile: the thing that can't fit in his brain. In America everything is possible. They told the Frierdiker Rebbe, \"This is America.\"",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -3420,7 +3406,8 @@
                 ],
                 "reason": "Calls himself and his listeners \"idiots like us\".",
                 "action": "replace",
-                "publishable": "And in the exile and the redemption: what did the *Aibershter* see to pick *davka* people like us, when *bina* is from the highest things? Guys who, by the levels of how they used to be, don't have no *middos* and not much of a *sechel* (intellect) either. Why? First, with no *middos* to interfere, we can get no sense of accomplishment or enjoyment from anywhere but the *bina*. And in *bina*, the more he doesn't understand, the more he is connected to G-dliness."
+                "publishable": "And in the exile and the redemption: what did the *Aibershter* see to pick *davka* people like us, when *bina* is from the highest things? Guys who, by the levels of how they used to be, don't have no *middos* and not much of a *sechel* (intellect) either. Why? First, with no *middos* to interfere, we can get no sense of accomplishment or enjoyment from anywhere but the *bina*. And in *bina*, the more he doesn't understand, the more he is connected to G-dliness.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -3441,7 +3428,8 @@
                 ],
                 "reason": "\"We're total idiots,\" of himself and his generation.",
                 "action": "replace",
-                "publishable": "We don't understand better than any previous generation. (\"Yeah, we're pretty good at not understanding.\") We understand nothing, and not just us: the whole generation. Why not pick the older generations, who could have understood better? *Davka* because of that: the sense of not understanding is strongest by us, the farthest away. So *teshuva ila'a*, the *yichudim* (unifications), everything is *davka* from *bina*. *Bina* is the central... (the side ends here)."
+                "publishable": "We don't understand better than any previous generation. (\"Yeah, we're pretty good at not understanding.\") We understand nothing, and not just us: the whole generation. Why not pick the older generations, who could have understood better? *Davka* because of that: the sense of not understanding is strongest by us, the farthest away. So *teshuva ila'a*, the *yichudim* (unifications), everything is *davka* from *bina*. *Bina* is the central... (the side ends here).",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -3614,7 +3602,8 @@
                 ],
                 "reason": "The punchline calls the passenger \"Idiot\".",
                 "action": "replace",
-                "publishable": "The simple tears over the sins of youth are *mamash* the same thing as going towards the Essence. You fly from Los Angeles to New York, 3,000 miles, and the guy on the plane says, \"We've gone 1,000 miles from Los Angeles.\" \"And how much closer to New York are we?\" \"I told you, we're 1,000 miles farther from Los Angeles. So we have to be 1,000 miles closer to New York.\" On a line, how far you left from where you're leaving is how close you got to where you're going."
+                "publishable": "The simple tears over the sins of youth are *mamash* the same thing as going towards the Essence. You fly from Los Angeles to New York, 3,000 miles, and the guy on the plane says, \"We've gone 1,000 miles from Los Angeles.\" \"And how much closer to New York are we?\" \"I told you, we're 1,000 miles farther from Los Angeles. So we have to be 1,000 miles closer to New York.\" On a line, how far you left from where you're leaving is how close you got to where you're going.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -4322,17 +4311,7 @@
                   "start": 1546.67,
                   "end": 1575.58
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups",
-                  "named-person"
-                ],
-                "reason": "Calls a named Kabbala movement \"total heretics\".",
-                "action": "replace",
-                "publishable": "He got a letter from a young man whose father is getting involved with a popular Kabbala movement, and the son is wondering what's happening, because it looks like his father is becoming more and more lax with the *mitzvos*.",
-                "publishableTitle": "The letter"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4531,7 +4510,8 @@
                 ],
                 "reason": "Says of Jews who do not keep the mitzvos that their brain is \"made out of pig meat\".",
                 "action": "replace",
-                "publishable": "\"If it's so simple, the explanation is right here in front of us: it was already given, here it is, and anybody can grab it.\" No, they can't: not without the preparation, putting on *tefillin* every day and keeping kosher."
+                "publishable": "\"If it's so simple, the explanation is right here in front of us: it was already given, here it is, and anybody can grab it.\" No, they can't: not without the preparation, putting on *tefillin* every day and keeping kosher.",
+                "reviewed": "2026-11-23"
               }
             },
             {

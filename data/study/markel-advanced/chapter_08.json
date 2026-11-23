@@ -746,16 +746,7 @@
                   "start": 1174.1,
                   "end": 1202.57
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "A generalisation that women have less daas and cannot concentrate as well as a man.",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "It is the same with anyone who has a *bina yeseira* (an extra measure of *bina*): it is not that he is less smart, it is that he is smarter. He always thinks of another detail, so it is harder for him to concentrate. It affects the *daas*."
-              }
+              ]
             }
           ]
         },
@@ -1262,15 +1253,7 @@
                   "start": 186.98,
                   "end": 210.36
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "named-person"
-                ],
-                "reason": "A joke that treats O.J. Simpson, by name, as the killer in the murders he was acquitted of.",
-                "action": "replace",
-                "publishable": "A murderer would have a perfect defense: \"I didn't do it, it's obvious that a knife did it. A person didn't do it. It was a knife that did it.\""
-              }
+              ]
             },
             {
               "kind": "explanation",

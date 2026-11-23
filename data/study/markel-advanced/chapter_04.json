@@ -1420,7 +1420,8 @@
                 ],
                 "reason": "Says the merely general meditator can fall into \"total avoda zara things, like the idiots\", of people who practise such meditation.",
                 "action": "replace",
-                "publishable": "Until he can fall into false imaginings, like fools and those who lack *daas*."
+                "publishable": "Until he can fall into false imaginings, like fools and those who lack *daas*.",
+                "reviewed": "2026-11-23"
               },
               "audio": [
                 {
@@ -1448,7 +1449,8 @@
                 ],
                 "reason": "Calls people who practise this kind of meditation, and have visions from it, \"total idiots\".",
                 "action": "replace",
-                "publishable": "After the tape is turned: what do such people do? They sit and meditate on the *omka d'chula*, the depth of everything, that there is a G-d and He is infinite, and they *mamash* have visions: false imaginations, of the kind the text calls foolish."
+                "publishable": "After the tape is turned: what do such people do? They sit and meditate on the *omka d'chula*, the depth of everything, that there is a G-d and He is infinite, and they *mamash* have visions: false imaginations, of the kind the text calls foolish.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1696,15 +1698,7 @@
                   "start": 264.58,
                   "end": 288.1
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "\"The people who say G-d is love\" points, without naming it, at another religion's creed, as an example of a mistake.",
-                "action": "replace",
-                "publishable": "And even the whole of it is only a particular, and taking it for the whole is still a mistake. Say that G-d is only love: then why do so many bad things happen? What happened to justice?"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -1834,13 +1828,6 @@
             {
               "kind": "aside",
               "text": "That is, \"not according to the *avoda zara* (idolatry) means\".",
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "Calls the other understanding of \"the world is nothing but G-dliness\" (the world itself as G-d, as other religions or pantheism hold) idolatry.",
-                "action": "omit"
-              },
               "audio": [
                 {
                   "lecture": "023 Tape005-Side1-Ch4.mp3",
@@ -2101,15 +2088,7 @@
                   "start": 617.24,
                   "end": 637.77
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "A sweeping remark about scientists as a group: they only collect details and think the details work by themselves.",
-                "action": "replace",
-                "publishable": "This is the way of anyone who learns the *pratim* and never puts them together into a *klal*: he ends up thinking the *pratim* somehow work by themselves."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2650,7 +2629,8 @@
                 ],
                 "reason": "\"We don't even have to worry about davenen\", taken out of the class, reads as license not to pray; he means that the learning itself is already directed to the Essence.",
                 "action": "replace",
-                "publishable": "Here we should mention *lechatchila ariber* (over the top from the start). The Rebbe said that by us we can go *lechatchila ariber*, \"and he really meant *lechatchila ariber*, *lechatchila ariber*\", on top of the one the *Rebbe Maharash* said: straight to living like *Moshiach*, like Rashbi."
+                "publishable": "Here we should mention *lechatchila ariber* (over the top from the start). The Rebbe said that by us we can go *lechatchila ariber*, \"and he really meant *lechatchila ariber*, *lechatchila ariber*\", on top of the one the *Rebbe Maharash* said: straight to living like *Moshiach*, like Rashbi.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2664,15 +2644,7 @@
                   "start": 1149.35,
                   "end": 1200.06
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other"
-                ],
-                "reason": "Continues the point that \"even without davenen\" the learning suffices; a reader could take it as a rule about prayer.",
-                "action": "replace",
-                "publishable": "Rashbi just learned. Choni HaMe'agel *davened* and got the rain; Rashbi just said *Chassidus*, and the rain came. So by us we can go *lechatchila ariber*, straight to *daas Havaya* (knowing G-d), intending the *Atzmus* directly in the learning itself. The whole thing is one."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2729,7 +2701,8 @@
                 ],
                 "reason": "Answers people who call us \"chassidim of the Mitteler Rebbe\" (\"It's not true\"), and says the Mitteler Rebbe's chassidim \"did not get it the way we do\": a claim about other approaches within Chabad.",
                 "action": "replace",
-                "publishable": "We are very lucky to be learning this book, and we are *chassidim* of the Rebbe. Next to the *Mitteler Rebbe*'s *chassidim*, \"we're like, I wouldn't even say babies, we're like amoebas\": if they were angels, we are people; if people, we are donkeys."
+                "publishable": "We are very lucky to be learning this book, and we are *chassidim* of the Rebbe. Next to the *Mitteler Rebbe*'s *chassidim*, \"we're like, I wouldn't even say babies, we're like amoebas\": if they were angels, we are people; if people, we are donkeys.",
+                "reviewed": "2026-11-23"
               }
             },
             {

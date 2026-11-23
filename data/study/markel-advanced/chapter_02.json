@@ -753,7 +753,8 @@
                 ],
                 "reason": "Calls people of today, and by implication Americans, low-style people who only think about bread and butter and the dollar.",
                 "action": "replace",
-                "publishable": "A lot of these thoughts were available already before. The reason the Greeks never thought of the application is that for them it was all intellectual, pure intellect: the pursuit of intellect, and not of its uses."
+                "publishable": "A lot of these thoughts were available already before. The reason the Greeks never thought of the application is that for them it was all intellectual, pure intellect: the pursuit of intellect, and not of its uses.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1365,15 +1366,7 @@
                   "start": 458.2,
                   "end": 495.88
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Says women cannot be rabbis or poskim because their extra bina messes up their daas, and calls them indecisive.",
-                "action": "replace",
-                "publishable": "An abundance of *bina*, a *bina yeseira* (an extra measure of *bina*), can unsettle the *daas*: one always comes up with another hand, and cannot stop coming up with the other hand."
-              }
+              ]
             },
             {
               "kind": "mashal",
@@ -1398,15 +1391,7 @@
                   "start": 522.88,
                   "end": 558.78
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Explains \"kalei daas\" as women always coming up with another detail and being unable to decide.",
-                "action": "replace",
-                "publishable": "The mind of *daas* is the mind of *hataya* (tilting). In the *bina* it tells you all kinds of things, like this, like that, but finally you say, \"Listen, I gotta make a decision already.\""
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -1449,7 +1434,8 @@
                   "other"
                 ],
                 "reason": "Jokes about a suicidal person deciding to jump.",
-                "action": "omit"
+                "action": "omit",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2381,15 +2367,7 @@
                   "start": 576.08,
                   "end": 622.64
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "Calls practitioners of meditation \"avoda zara-niks\" (idolaters).",
-                "action": "replace",
-                "publishable": "Even the power of *daas*, which is partially in your hands, since you can force yourself to concentrate on something, really comes *davka* from *bina sheb'bina*. Even those who meditate on a candle, or on the emptiness, do it because of an understanding they have. It is a wrong understanding, but what they are given first is an explanation, not a meditation, and they do it because they did a *hisbonenus*, an analysis of the thing."
-              }
+              ]
             },
             {
               "kind": "digression",
@@ -2435,7 +2413,8 @@
                 ],
                 "reason": "Sums up the pro-choice position as \"let's kill all the babies\".",
                 "action": "replace",
-                "publishable": "Two people can agree on the whole analysis of a problem in the world and draw opposite conclusions from it: one says, well, we should study *Chassidus*, and the other draws a destructive conclusion. The *uvchein* is where the *shevira* is."
+                "publishable": "Two people can agree on the whole analysis of a problem in the world and draw opposite conclusions from it: one says, well, we should study *Chassidus*, and the other draws a destructive conclusion. The *uvchein* is where the *shevira* is.",
+                "reviewed": "2026-11-23"
               }
             },
             {

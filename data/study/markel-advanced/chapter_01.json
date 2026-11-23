@@ -332,15 +332,7 @@
                   "start": 303.46,
                   "end": 345.54
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "Calls practices that seek G-d through concentration alone idol worship.",
-                "action": "replace",
-                "publishable": "This is the mistake of approaches that make *daas* the primary instrument. They may grant that concentration is not the thing itself, \"the G-d realization or whatever they want to call it\", but they go for it directly through *daas*: you think \"G-d, G-d, G-d\", and the concentration is supposed to get you there."
-              }
+              ]
             },
             {
               "kind": "keyPoint",
@@ -468,15 +460,7 @@
                   "start": 563.14,
                   "end": 608.64
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "A jab at scientists for missing the point in their own language.",
-                "action": "replace",
-                "publishable": "A scientist can look deeply into physics and get all kinds of insights; the deeper question is how the whole thing came into existence in the first place. Even the language says it: \"the laws of nature\", and a law means somebody is making this law. Where does it come from? What is the root of the *muskal* (the concept)?"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -780,7 +764,8 @@
                 ],
                 "reason": "Calls the maid in the story \"a stupid maid\".",
                 "action": "replace",
-                "publishable": "He had the summary after the *hisbonenus*; she had the one before. Here again is where they make their mistake: on the surface the two look exactly the same. He said what the maid said. So what's the difference? What makes him the big Rebbe, and her a simple maid? He had the *tamtzis* afterwards, and, as he will explain, there is more even after the *tamtzis*. That is the *omek hamusag*."
+                "publishable": "He had the summary after the *hisbonenus*; she had the one before. Here again is where they make their mistake: on the surface the two look exactly the same. He said what the maid said. So what's the difference? What makes him the big Rebbe, and her a simple maid? He had the *tamtzis* afterwards, and, as he will explain, there is more even after the *tamtzis*. That is the *omek hamusag*.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1747,15 +1732,7 @@
                   "start": 637.9,
                   "end": 673.86
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "health-or-legal"
-                ],
-                "reason": "Suggests a doctor who also knows oriental and homeopathic medicine may be the better doctor.",
-                "action": "replace",
-                "publishable": "Someone who knows a field in more than one way has a width, and because he has a bigger width he might have a bigger depth also. So it works both ways."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -1878,15 +1855,7 @@
                   "start": 1382.94,
                   "end": 1474.11
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other"
-                ],
-                "reason": "Says he mostly tells people not to learn Reb Hillel Paritcher's commentary on the book.",
-                "action": "replace",
-                "publishable": "For now the answer is that this book was written for kabbalists. Reb Hillel Paritcher is more complicated than this and brings in a lot more Kabbala. Part of what he is doing is answering the complaint people had against the Mitteler Rebbe, as against the *Rambam*: he didn't bring sources. \"Where is he coming up with this crazy stuff from? That's not what it says in *Etz Chaim*.\" *Etz Chaim* says *Ayin Beis* of *SaG*, and he's talking about something you can apply to building cars and bicycles. \"Hey, told you that's the *Ayin Beis* of the *SaG* and the *SaG* of the *Ayin Beis*.\" So Reb Hillel Paritcher is a lot of apologetics, \"not exactly apologetics\", showing how this comes from Kabbala, and for that you have to know the Kabbala."
-              }
+              ]
             },
             {
               "kind": "keyPoint",
@@ -1929,8 +1898,8 @@
                   "other"
                 ],
                 "reason": "Jokes that G-d had to read this book to find out who He is; it sets up the identity-crisis joke of the next block.",
-                "action": "replace",
-                "publishable": "Another story, with Jackie Mason: \"I went to a psychologist. He says, I'm going to help you find yourself. What do you mean find myself? I'm right over here! I know where I am! He says, no, I'm going to help you find out who you are. You mean I'm not me? I thought I was me. So maybe really you're me and I'm you, so you give me the 50 bucks!\""
+                "action": "omit",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1950,7 +1919,8 @@
                 ],
                 "reason": "Jokes that G-d had an identity crisis and owes the psychologist's fee.",
                 "action": "replace",
-                "publishable": "So this book is written even, as it were, for the *Aibershter*. That's why He wanted the world: to get the explanation *davka* from us, the way we understand it. Today's three-way conference call was actually a four-way conference call: one line was arranged for the *Aibershter*, and He was listening in too."
+                "publishable": "So this book is written even, as it were, for the *Aibershter*. That's why He wanted the world: to get the explanation *davka* from us, the way we understand it. Today's three-way conference call was actually a four-way conference call: one line was arranged for the *Aibershter*, and He was listening in too.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -2216,7 +2186,8 @@
                 ],
                 "reason": "Generalises about Americans' attention span and pokes fun at Indian and Scandinavian films.",
                 "action": "replace",
-                "publishable": "Research says a television audience's attention span is about ten to fifteen minutes; that's why they put the commercials. In movies too, a scene that runs too long loses the audience."
+                "publishable": "Research says a television audience's attention span is about ten to fifteen minutes; that's why they put the commercials. In movies too, a scene that runs too long loses the audience.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2260,7 +2231,8 @@
                 ],
                 "reason": "Compares the daas of women and men in his own examples beyond the line's words.",
                 "action": "replace",
-                "publishable": "like women, whose *daas* is light. It doesn't mean there aren't some women who have a stronger *daas* than certain men; we're talking about people on the same level. It's according to the level."
+                "publishable": "like women, whose *daas* is light. It doesn't mean there aren't some women who have a stronger *daas* than certain men; we're talking about people on the same level. It's according to the level.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2494,7 +2466,8 @@
                 "reason": "A joke about the nose of a named, recently deceased rabbi.",
                 "action": "replace",
                 "publishable": "Rabbi Markel saw Rabbi Raichik, may he rest in peace, sometimes davening, concentrating very hard. That's the sign: you kvetch up your face, as if you're trying to kvetch up your brain.",
-                "publishableTitle": "Rabbi Raichik davening"
+                "publishableTitle": "Rabbi Raichik davening",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -2723,15 +2696,7 @@
                   "start": 1237.05,
                   "end": 1256.36
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "Mocks Eastern meditators in a Himalayan cave repeating a phrase.",
-                "action": "replace",
-                "publishable": "It's not that we'll just sit and repeat: \"*Daas* is delving, *daas* is the concentration of all the powers of your brain, *daas* is the concentration of all the powers of your brain, *daas*...\""
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2850,15 +2815,7 @@
                   "start": 1453.24,
                   "end": 1501.43
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Contrasts a Jewish daas with \"the daas of the goyim\", a goyishe daas of Tohu.",
-                "action": "replace",
-                "publishable": "and as they said, Moshe, who is *daas*: this *daas* goes *davka* into the *bina*. A *daas* not connected to *bina* is a *daas* of *Tohu*, where each *sefira* is on its own, not connected to the others: just concentration. \"On what? Well, what do you mean on what? Concentration is just all by itself, right, *Tohu*.\""
-              }
+              ]
             },
             {
               "kind": "explanation",

@@ -657,8 +657,8 @@
                 ],
                 "reason": "Contrasts a \"goyishe\" school, whose summaries leave things out, with a Jewish one.",
                 "action": "replace",
-                "recommend": "raw",
-                "publishable": "The short way includes all the length; not a thing, not half a thing, is missing. So it is not like an ordinary summary in school: the *mashal* has to be the Mishna, because the Mishna is not a *kitzur* (shortening) that leaves things out. Nothing is missing; the whole Talmud is included in it."
+                "publishable": "The short way includes all the length; not a thing, not half a thing, is missing. So it is not like an ordinary summary in school: the *mashal* has to be the Mishna, because the Mishna is not a *kitzur* (shortening) that leaves things out. Nothing is missing; the whole Talmud is included in it.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1634,7 +1634,8 @@
                 ],
                 "reason": "A jab at the hippies for turning the victory sign into a peace sign.",
                 "action": "replace",
-                "publishable": "Or the V-sign; though that is really a letter: V for victory. It means winning the war, *netzach*. So it is not a *remez* but a *tziyun*, *rashei teivos*."
+                "publishable": "Or the V-sign; though that is really a letter: V for victory. It means winning the war, *netzach*. So it is not a *remez* but a *tziyun*, *rashei teivos*.",
+                "reviewed": "2026-11-23"
               }
             },
             {

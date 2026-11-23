@@ -945,15 +945,7 @@
                   "start": 1445.64,
                   "end": 1494
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Opens with a passing generalisation, \"women go shopping\".",
-                "action": "replace",
-                "publishable": "Somebody who knows another person very well says, \"Oh, she would love this dress.\" \"How do you know? She never saw this dress.\" \"Because I know her.\" So there is already a decision in her for this dress, though she never saw it and might never see it: a will and a delight, already decided, and it didn't come to action at all."
-              }
+              ]
             },
             {
               "kind": "explanation",

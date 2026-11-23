@@ -331,15 +331,7 @@
                   "start": 1015.88,
                   "end": 1049.13
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions"
-                ],
-                "reason": "Dismisses the Hermetic tradition's mystical geometry as \"crazy meshugaas\".",
-                "action": "replace",
-                "publishable": "Others too speak of a mystical geometry. But don't forget *gematria*: it basically means geometry. Or rather, geometry comes from *gematria*."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -1099,8 +1091,8 @@
                 ],
                 "reason": "Describes the lowest possible receivers as \"creatures that are almost like monkeys\".",
                 "action": "replace",
-                "recommend": "raw",
-                "publishable": "It could be a *mekabel* *mamash* like himself, needing only a *kav katzar*; or a bit further, down to *Adam Kadmon*, to *Atzilus*, to us in *Asiya*, or even further down. You can measure any kind of line with it."
+                "publishable": "It could be a *mekabel* *mamash* like himself, needing only a *kav katzar*; or a bit further, down to *Adam Kadmon*, to *Atzilus*, to us in *Asiya*, or even further down. You can measure any kind of line with it.",
+                "reviewed": "2026-11-23"
               }
             },
             {
