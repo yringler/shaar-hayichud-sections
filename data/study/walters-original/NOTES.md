@@ -166,13 +166,12 @@ Flagged, with the precedent:
   Describing Arius as "this Christian" (1) is not flagged.
 - **Politics**: "a liberal" in 19, liberalism in 26, church and state (19):
   `politics`, replaced with a neutral word. Liberal and conservative named
-  evenly (17, 20) was left. The reviewer removed the flags on "only the
-  Republican side" (1) and on Israel and democracy (20): printed as said.
+  evenly (17, 20) was left. The reviewer decided "only the
+  Republican side" (1) and Israel and democracy (20) print as said (`keep`).
 - **Women**: his own generalisations beyond a line ("women get more
   emotional, because they're kalei daas" in 32, and the "some lady" of the
-  chicken story in 12, borderline): `women`. The reviewer removed the flags
-  on chapter 1, class 17 (women's daas, multitasking, judges) and on boys
-  and girls learning kashrus (2): printed as said, in condensed form. The
+  chicken story in 12, borderline): `women`. The reviewer decided chapter 1, class 17 (women's daas, multitasking, judges) and boys
+  and girls learning kashrus (2) print as said (`keep`), in condensed form. The
   line's own words ("a light daas, like women") and a line's Talmudic
   figure (30) are not flagged.
 - **Health and law**: his own medical claims and remedies (curing cancer and

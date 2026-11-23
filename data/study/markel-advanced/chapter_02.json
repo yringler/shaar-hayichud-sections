@@ -1375,7 +1375,15 @@
                   "start": 458.2,
                   "end": 495.88
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Says women cannot be rabbis or poskim because their extra bina messes up their daas, and calls them indecisive.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "mashal",
@@ -1400,7 +1408,15 @@
                   "start": 522.88,
                   "end": 558.78
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Explains \"kalei daas\" as women always coming up with another detail and being unable to decide.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2376,7 +2392,15 @@
                   "start": 576.08,
                   "end": 622.64
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Calls practitioners of meditation \"avoda zara-niks\" (idolaters).",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "digression",

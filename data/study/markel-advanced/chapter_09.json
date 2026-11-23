@@ -1507,7 +1507,15 @@
                   "start": 646.8,
                   "end": 765.12
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "The analogy is built on a stock picture of what a husband wants in a house and what a wife wants (pool table against pink walls and hair dryers for her friends).",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

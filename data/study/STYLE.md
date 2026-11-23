@@ -343,6 +343,11 @@ Flag a block with `sensitivity` when it does any of these:
   change a reviewed block's `text` or `title`, or its flag's `action`,
   `publishable` or `publishableTitle`, delete `reviewed`: the change needs a
   new look.
+- A flag is never deleted because a reviewer chose to print it as said: it
+  becomes `"action": "keep"` (with `reviewed`, no `publishable`), so that a
+  later reviewer can go through every flag again. Both exports print a `keep`
+  block as said and without the flag. Only a writer's flag that should never
+  have been raised (a rule says it is not flagged) is removed.
 - Do not flag ordinary humor or criticism of ideas (as opposed to people
   and groups).
 - **Flag the teacher, not the text.** The chapter's own words, a figure of
@@ -359,6 +364,10 @@ Flag a block with `sensitivity` when it does any of these:
 - **"Goy", "goyim", "goyishe"** are his plain words for a non-Jew, non-Jews
   and non-Jewish. Where it is just the word, it is not flagged. Flag
   (`other-groups`) only contempt.
+- **Reform and Conservative** called heretics, "not rabbis", or outside
+  Torah: that is the classical halachic position, not his delivery, and is
+  not flagged (other-groups covers contempt beyond it: insults, mockery).
+  Criticism of *frum* camps and their ideas is still flagged as usual.
 - A wrong halacha or a wrong fact of history stated under his name is
   `other`, with a `publishable` text that drops the claim. A slip in a source
   (a wrong chapter or tractate) only goes in `notes`.
@@ -404,7 +413,7 @@ The flag decides content only; concision is already done in both texts
   and the first chapters of a new series or teacher.
 
 `recommend` is the writer's lean and changes nothing published: the public
-edition applies `action` until a person removes the flag or accepts it.
+edition applies `action` until a person decides the flag (raw is `keep`).
 
 ## Prose rules
 

@@ -1137,7 +1137,15 @@
                   "start": 1307.5,
                   "end": 1350.88
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "A current-events example naming Bush's conquest of Iraq, which a public edition might read as a political remark.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2220,7 +2228,15 @@
                   "end": 848.4
                 }
               ],
-              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage."
+              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage.",
+              "sensitivity": {
+                "categories": [
+                  "named-person"
+                ],
+                "reason": "Calls the books of a named recent scholar, Gershom Scholem, \"a total heresy\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

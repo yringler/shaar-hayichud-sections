@@ -8,7 +8,8 @@ DUMP is the directory ArtifactData wrote with
 published with: a decision is applied only if the block still carries the
 same flag (same reason) and the same text the reviewer saw.
 
-  raw  -> the flag is removed: the block prints as said
+  raw  -> action "keep" (publishable removed), reviewed = DATE: the block
+          prints as said, and the flag stays as a record for a later review
   soft -> action "replace", the reviewer's own publishable/publishableTitle
           if they wrote one, reviewed = DATE
   drop -> action "omit" (publishable removed), reviewed = DATE
@@ -60,16 +61,12 @@ for p in sorted(Path(a.dump).glob("*.json")):
         continue
     old = dict(s)
     core = lambda x: {key: v for key, v in x.items() if key not in ("reviewed", "recommend", "judgmentNote")}
-    if dec == "raw":
-        del b["sensitivity"]
-        counts["raw"] += 1
-        continue
-    if dec not in ("soft", "drop"):
+    if dec not in ("raw", "soft", "drop"):
         skipped.append((bid, f"unknown decision {dec!r}"))
         continue
     new = core(old)
-    if dec == "drop":
-        new["action"] = "omit"
+    if dec in ("raw", "drop"):
+        new["action"] = "keep" if dec == "raw" else "omit"
         new.pop("publishable", None)
         new.pop("publishableTitle", None)
     else:

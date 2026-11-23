@@ -4560,7 +4560,15 @@
                   "start": 210,
                   "end": 260.94
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "Names one party (\"only in the Republican side\") as the example of a narrow daas, which a reader may take as a partisan jab.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -4596,7 +4604,15 @@
                   "start": 338.63,
                   "end": 382.68
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "In his own voice, past the line's words, generalizes that women are better at multitasking than men because their daas is lighter, and that men hold their opinions more firmly than women.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -4620,7 +4636,15 @@
                   "start": 416.6,
                   "end": 436.98
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Says in his own voice \"It's harder for women to do that\" (to feel compassion and still see the other side) and gives that as the reason women are not judges. That women do not serve as judges is halacha; the explanation of it is his generalization about women.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -4670,7 +4694,15 @@
                   "start": 543.14,
                   "end": 560.88
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "A generalization about men and women in his own voice: men connect more deeply, get more engrossed and obsessed; women less. Nothing of the teaching is left without it.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -4682,7 +4714,15 @@
                   "start": 562.38,
                   "end": 593.96
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Ends by tying the trade-off between daas and bina to women (\"That's why women have bina yeseira also\"). Bina yeseira in women is a saying of Chazal, but here it is drawn from his own claim that women have a lighter daas; the trade-off itself is kept.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },
@@ -4828,7 +4868,15 @@
                   "start": 696.12,
                   "end": 726.32
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Compares women with children and men in his own voice: women have more daas than a child but only for one kav at a time; men can hold both sides at once.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },

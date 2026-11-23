@@ -145,7 +145,15 @@
                   "end": 65.39
                 }
               ],
-              "outOfPlace": "Class 041 opens by finishing the previous tape's discussion of chapter 26 before it reads line 1; placed here."
+              "outOfPlace": "Class 041 opens by finishing the previous tape's discussion of chapter 26 before it reads line 1; placed here.",
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Calls Americans' belief in America a fanaticism.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "recap",

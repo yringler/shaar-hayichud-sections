@@ -695,7 +695,15 @@
                   "end": 1222.26
                 }
               ],
-              "join": true
+              "join": true,
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Built on a stock picture of the wife who cares about the chandelier and is unimpressed by the bare building.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1127,7 +1135,15 @@
                   "end": 433.08
                 }
               ],
-              "outOfPlace": "The next class (the second side of the tape) goes on with *Atika Kadisha* and its *metzach* before it rereads lines 21-23; kept here, in class order, under the passage being discussed."
+              "outOfPlace": "The next class (the second side of the tape) goes on with *Atika Kadisha* and its *metzach* before it rereads lines 21-23; kept here, in class order, under the passage being discussed.",
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "A generalisation that women take special delight in shopping and in planning the house.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "keyPoint",
@@ -1530,7 +1546,15 @@
                   "start": 1391.2,
                   "end": 1414.7
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "A partisan example: liking a man one cannot stand because he is a Republican.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },

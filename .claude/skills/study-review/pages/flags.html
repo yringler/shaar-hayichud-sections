@@ -223,7 +223,11 @@ function statusOf(f) {
     case "print": return "raw";
     case "accept": return recommended(f);
     case "edit": return d.action === "omit" ? "drop" : "soft";
-    default: return "";
+    default: {
+      // No decision on this page: a flag a person already reviewed shows what the file says (keep = printed as said).
+      const fs = f.sensitivity;
+      return fs.reviewed ? ({ keep: "raw", replace: "soft", omit: "drop" }[fs.action] || "") : "";
+    }
   }
 }
 // The softened text: your edit if you made one, else the writer's recommendation.
@@ -275,7 +279,7 @@ function sheetHtml(f, showDiff, showTr) {
   // The right column always shows the softened text (the alternative to the uncensored one); its header says what the public edition prints.
   let right, canDiff = false;
   if (soft.publishable) { canDiff = true; right = diffOn ? unifiedDiffHtml(writtenRaw, pubRaw) : paras(pubRaw); }
-  else right = `<p class="omitted">No softened text yet. Use “Edit softened text” to write one.</p>`;
+  else right = `<p class="omitted">${f.sensitivity.action === "keep" ? "Decided: printed as said, so there is no softened text. Use “Edit softened text” to write one." : "No softened text yet. Use “Edit softened text” to write one."}</p>`;
   const prints = { raw: "raw: the uncensored text as written", drop: "nothing: the block is dropped", soft: "this softened text" }[shownAs];
   const rightLabel = `Softened${soft.edited ? " · your edit" : ""}`;
   const printsLine = `<div class="prints ${shownAs}">Public edition prints <b>${prints}</b>${st ? "" : " (recommended)"}</div>`;

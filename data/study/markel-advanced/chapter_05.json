@@ -2460,7 +2460,15 @@
                   "start": 195.86,
                   "end": 234.72
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "\"The Arabs\" as a nation whose whole wealth is oil, beside a remark about people \"bugged out\" over money.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "digression",
@@ -2751,7 +2759,15 @@
                   "start": 1372.25,
                   "end": 1431.24
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Mocks a type within the Chassidic world (\"face-kvetchers\") as unsure whether they or G-d is bigger.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "mashal",
@@ -2765,7 +2781,15 @@
                   "start": 1431.8,
                   "end": 1458.96
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Continues the mockery of the same type: their victory over the yetzer hara is only a fed lion.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "story",
@@ -2779,7 +2803,15 @@
                   "start": 1459.06,
                   "end": 1536.76
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "The story is told to mock the same type as rating themselves beinonim on the Alter Rebbe's level.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "aside",

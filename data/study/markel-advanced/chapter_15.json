@@ -1103,7 +1103,15 @@
                   "end": 129.5
                 }
               ],
-              "outOfPlace": "Class 013 opens in the middle of class 012's explanation of line 28 and stays with it until it finishes reading the line at w1519."
+              "outOfPlace": "Class 013 opens in the middle of class 012's explanation of line 28 and stays with it until it finishes reading the line at w1519.",
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "A generalisation about how boys and girls, men and women, must be spoken to.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "mashal",
@@ -1117,7 +1125,15 @@
                   "end": 195.78
                 }
               ],
-              "outOfPlace": "Class 013 opens in the middle of class 012's explanation of line 28 and stays with it until it finishes reading the line at w1519."
+              "outOfPlace": "Class 013 opens in the middle of class 012's explanation of line 28 and stays with it until it finishes reading the line at w1519.",
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Caricatures children of a poor urban school as five-year-olds carrying guns.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1644,7 +1660,15 @@
                   "start": 1276.76,
                   "end": 1301.28
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Dismisses the founding claims of most other religions as \"some guy went to the desert and he got this thing\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "digression",

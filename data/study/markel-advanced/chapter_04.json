@@ -1698,7 +1698,15 @@
                   "start": 264.58,
                   "end": 288.1
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "\"The people who say G-d is love\" points, without naming it, at another religion's creed, as an example of a mistake.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1835,7 +1843,15 @@
                   "start": 367.66,
                   "end": 369.62
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Calls the other understanding of \"the world is nothing but G-dliness\" (the world itself as G-d, as other religions or pantheism hold) idolatry.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2088,7 +2104,15 @@
                   "start": 617.24,
                   "end": 637.77
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "A sweeping remark about scientists as a group: they only collect details and think the details work by themselves.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2644,7 +2668,15 @@
                   "start": 1149.35,
                   "end": 1200.06
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Continues the point that \"even without davenen\" the learning suffices; a reader could take it as a rule about prayer.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

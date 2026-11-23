@@ -176,7 +176,8 @@ const trimBlock = (b: StudyBlock): ExportBlock => ({
   ...(b.join ? { join: true as const } : {}),
   audio: b.audio.map(trimAudio),
   ...(b.outOfPlace !== undefined ? { outOfPlace: b.outOfPlace } : {}),
-  ...(b.sensitivity !== undefined ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
+  // A 'keep' flag has nothing for the app to swap (the block prints as said); it stays in data/study/ as a review record.
+  ...(b.sensitivity !== undefined && b.sensitivity.action !== 'keep' ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
 });
 
 /** The flag as the beta app reads it: the review stamp and the writer's lean are editorial and stay in data/study/. */

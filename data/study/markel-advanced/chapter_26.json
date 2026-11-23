@@ -959,7 +959,16 @@
                   "start": 1412.62,
                   "end": 1432.88
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal",
+                  "other"
+                ],
+                "reason": "A remark on physical conception that a reader could take as a medical claim, and intimate in subject.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },

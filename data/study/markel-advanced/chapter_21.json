@@ -1691,7 +1691,15 @@
                   "start": 1215.44,
                   "end": 1303.26
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Says that whoever does not believe in the resurrection as taught here is a heretic and \"not Jewish\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "aside",
@@ -1706,12 +1714,11 @@
               ],
               "sensitivity": {
                 "categories": [
-                  "other-groups",
                   "other"
                 ],
-                "reason": "Calls the unbeliever \"Reform\", and says a heretic is liable to death and \"supposed to be killed\" but for the status of a tinok shenishba.",
+                "reason": "Says a heretic is *chayav misa*, \"supposed to be killed\", but for the status of a *tinok shenishba*.",
                 "action": "replace",
-                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew). The tape ends mid-sentence.",
+                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform. The tape ends mid-sentence.",
                 "reviewed": "2026-11-23"
               }
             }

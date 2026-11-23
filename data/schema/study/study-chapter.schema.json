@@ -216,7 +216,7 @@
       }
     },
     "sensitivity": {
-      "description": "Marks a block that should not be published as it stands. `text` is never softened: it stays as the teacher said it. A public build replaces the block's text with `publishable` (action 'replace') or leaves the block out (action 'omit').",
+      "description": "Marks a block that should not be published as it stands. `text` is never softened: it stays as the teacher said it. A public build replaces the block's text with `publishable` (action 'replace'), leaves the block out (action 'omit'), or prints it as said (action 'keep': a person decided it prints raw; the flag stays so the decision can be reviewed again).",
       "type": "object",
       "additionalProperties": false,
       "required": ["categories", "reason", "action"],
@@ -230,8 +230,8 @@
           }
         },
         "reason": { "description": "What a public reader could object to or misread, in a sentence.", "type": "string", "minLength": 1 },
-        "action": { "enum": ["replace", "omit"] },
-        "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' (checked by the data build).", "$ref": "#/$defs/prose" },
+        "action": { "description": "replace: print publishable. omit: leave the block out. keep: print the text as said (set by a person, with reviewed; no publishable). Both exports print a keep block as said, without the flag.", "enum": ["replace", "omit", "keep"] },
+        "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' or 'keep' (checked by the data build).", "$ref": "#/$defs/prose" },
         "publishableTitle": { "$ref": "#/$defs/line" },
         "recommend": { "description": "The writer's lean, for the reviewer: 'raw' when the remark is the teaching itself (a position of Torah or Chassidus stated as such) and could print as said, 'judgment' when a rule cannot settle it and a person must weigh it (say why in judgmentNote). Absent: the action is the recommendation. It changes nothing in the public edition, which applies the action until a person removes the flag. Dropped from both exports.", "enum": ["raw", "judgment"] },
         "judgmentNote": { "description": "With recommend 'judgment': what the reviewer has to weigh, in a sentence. Dropped from both exports.", "type": "string", "minLength": 1 },

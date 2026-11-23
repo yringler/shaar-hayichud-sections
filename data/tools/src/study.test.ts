@@ -220,6 +220,18 @@ describe('checkStudyChapter: prose, terms and sensitivity', () => {
     const omit = structuredClone(gold);
     flagged(omit).sensitivity = { categories: ['other'], reason: 'r', action: 'omit' };
     assert.deepEqual(publicView(omit).sections[0]!.passages[1]!.blocks, []);
+
+    // keep: a person decided it prints as said; the flag stays in the source as a record.
+    const keep = (f: StudyChapterFile) => {
+      flagged(f).sensitivity = { categories: ['other'], reason: 'r', action: 'keep', reviewed: '2026-11-23' };
+    };
+    has(check((f) => { keep(f); flagged(f).sensitivity!.publishable = 'p'; }), /^error: .*action "keep" \(print as said\) and a publishable text/);
+    has(check((f) => { keep(f); delete flagged(f).sensitivity!.reviewed; }), /^error: .*action "keep" without "reviewed"/);
+    const kept = structuredClone(gold);
+    keep(kept);
+    const keptPub = flagged(publicView(kept));
+    assert.equal(keptPub.text, flagged(gold).text);
+    assert.equal(keptPub.sensitivity, undefined);
   });
 });
 

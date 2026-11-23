@@ -1449,7 +1449,15 @@
                   "start": 1225.76,
                   "end": 1282.44
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "An opinion on science: he sets the Big Bang aside and dates the start of the universe's motion to 5763 years ago, as a thrown stone traced back only seems to start from the ground.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
