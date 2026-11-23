@@ -1,0 +1,459 @@
+<title>{{TITLE}}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Frank+Ruhl+Libre:wght@400;500&display=swap">
+<style>
+/* Layout: sticky ledger bar (progress + filters) over a single column of review sheets, each comparing the class as written with its public text. */
+:root {
+  --bg: #eef0f3; --sheet: #ffffff; --ink: #1b2230; --muted: #5d6676; --rule: #d6dae2; --soft: #f5f6f9;
+  --accent: #2f4fb0; --accent-ink: #ffffff;
+  --ok: #1f7a4d; --ok-bg: #e2f3ea; --said: #2a64a8; --said-bg: #e1ecf8; --edit: #9a5b06; --edit-bg: #fbeed6;
+  --del: #b4232f; --del-bg: #fbe3e5; --ins-bg: #ddf1e4; --ins: #17623d;
+  --f-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-text: "Literata", Georgia, "Times New Roman", serif;
+  --f-he: "Frank Ruhl Libre", "David", "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12161d; --sheet: #1a1f29; --ink: #e5e8ee; --muted: #9aa3b2; --rule: #2e3644; --soft: #222835;
+  --accent: #8ea6ff; --accent-ink: #10152a;
+  --ok: #6fd19d; --ok-bg: #173527; --said: #8cbcf2; --said-bg: #182b42; --edit: #f0b860; --edit-bg: #3a2c12;
+  --del: #ff8e97; --del-bg: #45202a; --ins-bg: #183a28; --ins: #8de0b0; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12161d; --sheet: #1a1f29; --ink: #e5e8ee; --muted: #9aa3b2; --rule: #2e3644; --soft: #222835;
+  --accent: #8ea6ff; --accent-ink: #10152a;
+  --ok: #6fd19d; --ok-bg: #173527; --said: #8cbcf2; --said-bg: #182b42; --edit: #f0b860; --edit-bg: #3a2c12;
+  --del: #ff8e97; --del-bg: #45202a; --ins-bg: #183a28; --ins: #8de0b0; color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--f-ui); font-size: 14px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--sheet); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 1px solid var(--rule); }
+header.bar .wrap { padding-block: 12px; display: grid; gap: 10px; }
+.toprow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+h1 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.sub { color: var(--muted); font-size: 13px; }
+.progress { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--soft); }
+.progress span { display: block; height: 100%; }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.counts b { color: var(--ink); font-weight: 600; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+select, input[type=search], input[type=text], textarea {
+  font: inherit; color: var(--ink); background: var(--soft); border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; min-width: 0; }
+input[type=search] { flex: 1 1 180px; }
+textarea { width: 100%; box-sizing: border-box; resize: vertical; font-family: var(--f-text); font-size: 14.5px; line-height: 1.55; }
+button { font: inherit; font-size: 13px; font-weight: 500; border-radius: 6px; padding: 6px 12px; cursor: pointer; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+button:hover { border-color: var(--muted); }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible, .sheet:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.on-soft { background: var(--ok-bg); border-color: var(--ok); color: var(--ok); }
+button.on-raw { background: var(--said-bg); border-color: var(--said); color: var(--said); }
+button.on-drop { background: var(--del-bg); border-color: var(--del); color: var(--del); }
+.rec { font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .7; margin-left: 4px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.banner { font-size: 13px; padding: 8px 12px; border-radius: 6px; background: var(--edit-bg); color: var(--edit); }
+
+main .wrap { padding-block: 18px 60px; display: grid; gap: 16px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; display: grid; gap: 12px; scroll-margin-top: 150px; }
+.sheet[data-status="soft"] { border-left: 4px solid var(--ok); }
+.sheet[data-status="raw"] { border-left: 4px solid var(--said); }
+.sheet[data-status="drop"] { border-left: 4px solid var(--del); }
+.sheet.cur { box-shadow: 0 0 0 2px var(--accent); }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.meta .num { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+.pill { font-size: 11.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); }
+.pill.soft { background: var(--ok-bg); color: var(--ok); }
+.pill.raw { background: var(--said-bg); color: var(--said); }
+.pill.drop { background: var(--del-bg); color: var(--del); }
+.chip { font-size: 12px; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--rule); color: var(--ink); }
+.chip.omit { border-color: var(--del); color: var(--del); }
+.prints { font-size: 12.5px; padding: 6px 10px; border-radius: 6px; background: var(--soft); color: var(--muted); }
+.prints b { color: var(--ink); font-weight: 600; }
+.prints.raw { background: var(--said-bg); } .prints.raw b { color: var(--said); }
+.prints.drop { background: var(--del-bg); } .prints.drop b { color: var(--del); }
+.prints.soft { background: var(--ok-bg); } .prints.soft b { color: var(--ok); }
+.chip.judg { border-color: var(--edit); color: var(--edit); background: var(--edit-bg); font-weight: 600; }
+h2 { font-family: var(--f-text); font-size: 17px; font-weight: 600; margin: 0; text-wrap: balance; }
+h2 .kind { font-family: var(--f-ui); font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 8px; vertical-align: 2px; }
+.reason { font-size: 13.5px; background: var(--soft); border-radius: 6px; padding: 8px 10px; }
+.reason b { font-weight: 600; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 760px) { .compare { grid-template-columns: 1fr; } }
+.col { min-width: 0; display: grid; gap: 6px; align-content: start; }
+.col h3 { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.prose { font-family: var(--f-text); font-size: 15px; line-height: 1.62; overflow-wrap: anywhere; }
+.prose p { margin: 0 0 .7em; } .prose p:last-child { margin: 0; }
+.prose .ttl { font-weight: 600; display: block; margin-bottom: .3em; }
+del.d { background: var(--del-bg); color: var(--del); text-decoration: line-through; text-decoration-thickness: 1px; }
+ins.i { background: var(--ins-bg); color: var(--ins); text-decoration: none; }
+.prose.diffing { line-height: 1.75; }
+.prose.diffing del.d, .prose.diffing ins.i { border-radius: 3px; padding: 0 2px; }
+.legend { font-size: 12px; display: flex; gap: 8px; }
+.legend del, .legend ins { padding: 0 5px; border-radius: 3px; }
+button.mini { font-size: 11.5px; font-weight: 600; letter-spacing: .02em; text-transform: none; padding: 2px 9px; border-radius: 999px; }
+button.mini.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.col h3 button.mini { margin-left: auto; }
+.audio { align-items: center; }
+.trpanel { display: grid; gap: 6px; }
+.trpanel h3 { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.trpanel .said { max-height: 420px; }
+.omitted { font-family: var(--f-ui); font-style: italic; color: var(--del); }
+details { border-top: 1px solid var(--rule); padding-top: 8px; }
+details > summary { cursor: pointer; font-size: 12.5px; font-weight: 500; color: var(--muted); }
+details .body { padding-top: 8px; display: grid; gap: 8px; }
+.said { font-family: var(--f-text); font-size: 14px; line-height: 1.6; color: var(--ink); max-height: 340px; overflow: auto; background: var(--soft); border-radius: 6px; padding: 8px 10px; }
+.he { font-family: var(--f-he); font-size: 18px; line-height: 1.7; direction: rtl; text-align: right; }
+.audio { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
+.audio a { color: var(--accent); font-variant-numeric: tabular-nums; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.actions .sp { flex: 1; }
+.editor { display: grid; gap: 8px; background: var(--edit-bg); border-radius: 8px; padding: 10px; }
+.editor label { font-size: 12px; font-weight: 600; color: var(--muted); display: grid; gap: 4px; }
+.editor .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.note textarea { font-family: var(--f-ui); font-size: 13.5px; }
+.saved { font-size: 12px; color: var(--muted); }
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+kbd { font-family: var(--f-ui); font-size: 11px; border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; }
+.keys { font-size: 12px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="toprow">
+      <h1>{{HEADING}}</h1>
+      <span class="sub" id="subline"></span>
+    </div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="counts" id="counts">Loading flags…</div>
+    <div class="filters">
+      <select id="fChapter" aria-label="Chapter"><option value="">All chapters</option></select>
+      <select id="fCat" aria-label="Category"><option value="">All categories</option></select>
+      <select id="fStatus" aria-label="Status">
+        <option value="">Any status</option>
+        <option value="pending" selected>Not decided</option>
+        <option value="raw">Raw</option>
+        <option value="soft">Softened</option>
+        <option value="edited">Softened, your edit</option>
+        <option value="drop">Drop</option>
+        <option value="judgment">Needs your judgment</option>
+        <option value="recraw">Undecided, raw recommended</option>
+        <option value="noted">Has a note</option>
+      </select>
+      <input type="search" id="fText" placeholder="Search text, reason, transcript">
+      <label class="keys"><input type="checkbox" id="fDiff"> Show changes on all</label>
+      <label class="keys"><input type="checkbox" id="fTr"> Open all transcripts</label>
+      <button id="copyBtn" type="button">Copy decisions</button>
+    </div>
+    <div class="keys"><kbd>j</kbd>/<kbd>k</kbd> next/previous · <kbd>r</kbd> raw · <kbd>s</kbd> softened · <kbd>x</kbd> drop · <kbd>e</kbd> edit softened text · <kbd>n</kbd> note · <kbd>d</kbd> changes · <kbd>t</kbd> transcript</div>
+    <div class="banner" id="banner" hidden></div>
+  </div>
+</header>
+<main><div class="wrap" id="list"><div class="empty">Loading the flags…</div></div></main>
+
+<script>
+"use strict";
+const CHAPTER_NAMES = (c) => "Ch. " + parseInt(c.replace("chapter_", ""), 10);
+// Public-edition decision per flag. None of them changes the uncensored text:
+// raw = publish the block as said (flag removed), soft = publish the softened text, drop = leave the block out.
+const STATUS_LABEL = { raw: "Raw", soft: "Softened", drop: "Drop", "": "Not decided" };
+let FLAGS = [];
+let decisions = {};     // id -> doc data
+let db = null, col = null, dbReady = false;
+let current = null;     // id of the focused sheet
+const editing = new Set();
+const diffOpen = new Set(); // cards whose "changes" view differs from the header default
+const trOpen = new Set();   // cards whose transcript differs from the header default
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const mdInline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>");
+const fmtT = (t) => { if (t == null) return "?"; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ":" + String(s).padStart(2, "0"); };
+
+function paras(text) { return String(text || "").split(/\n\s*\n/).map((p) => "<p>" + mdInline(p) + "</p>").join(""); }
+
+// Word diff (LCS) between two Markdown texts; output keeps paragraph breaks.
+function tokenize(s) { return String(s || "").split(/(\n\s*\n)|\s+/).filter((t) => t !== undefined && t !== ""); }
+// One combined view of the change from a (as written) to b (public): cut words struck through, new words highlighted.
+// Markdown is rendered per token, so emphasis that spans several words shows as plain text in this view.
+function unifiedDiffHtml(a, b) {
+  const A = tokenize(a), B = tokenize(b), n = A.length, m = B.length;
+  const L = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    L[i][j] = A[i] === B[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const ops = []; // [kind, token] with kind "=" | "-" | "+"
+  let i = 0, j = 0;
+  while (i < n && j < m) {
+    if (A[i] === B[j]) { ops.push(["=", A[i]]); i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) ops.push(["-", A[i++]]);
+    else ops.push(["+", B[j++]]);
+  }
+  while (i < n) ops.push(["-", A[i++]]);
+  while (j < m) ops.push(["+", B[j++]]);
+  // Show each changed stretch as all its cut words, then all its new words.
+  const out = [];
+  let k = 0;
+  const tok = (t) => (/^\n/.test(t) ? "</p><p>" : mdInline(t));
+  while (k < ops.length) {
+    if (ops[k][0] === "=") { out.push(tok(ops[k][1])); k++; continue; }
+    const del = [], ins = [];
+    while (k < ops.length && ops[k][0] !== "=") { (ops[k][0] === "-" ? del : ins).push(ops[k][1]); k++; }
+    const run = (arr, tag, cls) => {
+      const parts = arr.map(tok).join(" ").split("</p><p>");
+      return parts.map((p) => (p.trim() ? `<${tag} class="${cls}">${p.trim()}</${tag}>` : "")).join("</p><p>");
+    };
+    if (del.length) out.push(run(del, "del", "d"));
+    if (ins.length) out.push(run(ins, "ins", "i"));
+  }
+  return ("<p>" + out.join(" ") + "</p>").replace(/ ?<\/p><p> ?/g, "</p><p>").replace(/<p><\/p>/g, "");
+}
+
+// The writer's lean: recommend "raw" (the remark is the teaching itself), "judgment" (no lean: a person weighs it), else the action.
+const recommended = (f) => {
+  const s = f.sensitivity;
+  if (s.recommend === "raw") return "raw";
+  if (s.recommend === "judgment") return "";
+  return s.action === "omit" ? "drop" : "soft";
+};
+// Decisions saved by the first version of this page used accept/print/edit.
+function statusOf(f) {
+  const d = decisions[f.id] || {};
+  switch (d.decision) {
+    case "raw": case "soft": case "drop": return d.decision;
+    case "print": return "raw";
+    case "accept": return recommended(f);
+    case "edit": return d.action === "omit" ? "drop" : "soft";
+    default: return "";
+  }
+}
+// The softened text: your edit if you made one, else the writer's recommendation.
+function softened(f) {
+  const d = decisions[f.id] || {}, s = f.sensitivity;
+  const edited = d.publishable != null;
+  return { publishable: edited ? d.publishable : s.publishable, publishableTitle: edited ? d.publishableTitle : s.publishableTitle, edited };
+}
+
+function render() {
+  const fc = $("fChapter").value, fk = $("fCat").value, fs = $("fStatus").value, ft = $("fText").value.trim().toLowerCase();
+  const showDiff = $("fDiff").checked, showTr = $("fTr").checked;
+  const shown = FLAGS.filter((f) => {
+    if (fc && f.chapter !== fc) return false;
+    if (fk && !f.sensitivity.categories.includes(fk)) return false;
+    const st = statusOf(f);
+    if (fs === "pending" && st) return false;
+    if (fs === "noted" && !(decisions[f.id] || {}).note) return false;
+    if (fs === "edited" && !(st === "soft" && softened(f).edited)) return false;
+    if (fs === "judgment" && f.sensitivity.recommend !== "judgment") return false;
+    if (fs === "recraw" && (st || f.sensitivity.recommend !== "raw")) return false;
+    if (fs && !["pending", "noted", "edited", "judgment", "recraw"].includes(fs) && st !== fs) return false;
+    if (ft) {
+      const hay = [f.text, f.title, f.sensitivity.reason, f.sensitivity.publishable, f.said, f.section, (decisions[f.id] || {}).note].join(" ").toLowerCase();
+      if (!hay.includes(ft)) return false;
+    }
+    return true;
+  });
+  const list = $("list");
+  if (!shown.length) {
+    list.innerHTML = `<div class="empty">${fs === "pending" ? "Every flag that matches these filters has a decision." : "No flags match these filters."}</div>`;
+  } else {
+    list.innerHTML = shown.map((f) => sheetHtml(f, showDiff, showTr)).join("");
+  }
+  renderCounts();
+  if (current && !shown.some((f) => f.id === current)) current = null;
+  markCurrent();
+}
+
+function sheetHtml(f, showDiff, showTr) {
+  const s = f.sensitivity, d = decisions[f.id] || {}, st = statusOf(f), rec = recommended(f), soft = softened(f);
+  const shownAs = st || rec || (s.action === "omit" ? "drop" : "soft"); // an undecided flag shows the recommendation
+  const idx = FLAGS.indexOf(f) + 1;
+  const writtenRaw = (f.title ? `**${f.title}**\n\n` : "") + f.text;
+  const pubTitle = soft.publishableTitle ?? f.title;
+  const pubRaw = (pubTitle ? `**${pubTitle}**\n\n` : "") + (soft.publishable || "");
+  const left = paras(writtenRaw);
+  const diffOn = diffOpen.has(f.id) !== showDiff; // per-card toggle flips the header default
+  // The right column always shows the softened text (the alternative to the uncensored one); its header says what the public edition prints.
+  let right, canDiff = false;
+  if (soft.publishable) { canDiff = true; right = diffOn ? unifiedDiffHtml(writtenRaw, pubRaw) : paras(pubRaw); }
+  else right = `<p class="omitted">No softened text yet. Use “Edit softened text” to write one.</p>`;
+  const prints = { raw: "raw: the uncensored text as written", drop: "nothing: the block is dropped", soft: "this softened text" }[shownAs];
+  const rightLabel = `Softened${soft.edited ? " · your edit" : ""}`;
+  const printsLine = `<div class="prints ${shownAs}">Public edition prints <b>${prints}</b>${st ? "" : " (recommended)"}</div>`;
+  const diffBtn = canDiff ? `<button type="button" class="mini${diffOn ? " on" : ""}" data-act="toggle-diff" aria-pressed="${diffOn}">${diffOn ? "Hide changes" : "Show changes"}</button>` : "";
+  const trOn = trOpen.has(f.id) !== showTr;
+  const audio = f.audio.map((a, k) => a.url
+    ? `<a href="${esc(a.url)}#t=${a.start ?? 0},${a.end ?? ""}" target="_blank" rel="noopener">${k ? "Also told: " : "Listen "}${fmtT(a.start)}–${fmtT(a.end)}</a> <span class="sub">${esc(a.lecture)}</span>`
+    : `<span class="sub">${esc(a.lecture)} ${fmtT(a.start)}–${fmtT(a.end)}</span>`).join("");
+  const ed = editing.has(f.id);
+  const dis = dbReady ? "" : "disabled";
+  return `<article class="sheet${current === f.id ? " cur" : ""}" id="s-${esc(f.id)}" data-id="${esc(f.id)}" data-status="${st}" tabindex="-1">
+    <div class="meta"><span class="num">#${idx}</span><span>${CHAPTER_NAMES(f.chapter)} · ${esc(f.chapterTitle)}</span><span>§ ${esc(f.section)}</span>
+      <span class="pill ${st}">${STATUS_LABEL[st]}</span></div>
+    <h2><span class="kind">${esc(f.kind)}</span>${f.title ? mdInline(f.title) : "<span class='sub'>(untitled block)</span>"}</h2>
+    <div class="meta">${s.categories.map((c) => `<span class="chip">${esc(c)}</span>`).join("")}${rec ? `<span class="chip${rec === "drop" ? " omit" : ""}">recommended: ${{ raw: "raw", soft: "softened", drop: "drop" }[rec]}</span>` : `<span class="chip judg">needs your judgment</span>`}</div>
+    <div class="reason"><b>Why flagged:</b> ${mdInline(s.reason)}${s.judgmentNote ? `<br><b>To weigh:</b> ${mdInline(s.judgmentNote)}` : ""}</div>
+    <div class="compare">
+      <div class="col"><h3>Uncensored · as written</h3><div class="prose">${left}</div></div>
+      <div class="col"><h3>${rightLabel}${diffBtn}</h3><div class="prose${diffOn ? " diffing" : ""}">${right}</div>
+        ${diffOn && canDiff ? `<div class="legend"><del class="d">cut</del> <ins class="i">added</ins></div>` : ""}${printsLine}</div>
+    </div>
+    ${ed ? editorHtml(f) : ""}
+    <div class="audio"><button type="button" class="mini${trOn ? " on" : ""}" data-act="toggle-tr" aria-expanded="${trOn}">${trOn ? "Hide transcript" : "Transcript"}</button>${audio}</div>
+    ${trOn ? `<div class="trpanel"><h3>Transcript · what he said in this block's audio (${f.said.split(/\s+/).length} words)</h3><div class="said">${esc(f.said)}</div></div>` : ""}
+    ${f.passageHe ? `<details><summary>The passage this block explains</summary><div class="body"><div class="he">${esc(f.passageHe)}</div>${f.passageEn ? `<div class="prose">${mdInline(f.passageEn)}</div>` : ""}</div></details>` : ""}
+    <div class="actions">
+      ${["raw", "soft", "drop"].map((k) => `<button type="button" data-act="${k}" class="${st === k ? "on-" + k : ""}" ${dis} title="${
+        { raw: "Publish the block exactly as said", soft: "Publish the softened text", drop: "Leave the block out of the public edition" }[k]}">${STATUS_LABEL[k]}${k === rec ? '<span class="rec">rec.</span>' : ""}</button>`).join("")}
+      <button type="button" data-act="edit" ${dis} title="Write or change the softened text">Edit softened text</button>
+      ${st ? `<button type="button" data-act="clear" ${dis}>Undo decision</button>` : ""}
+      <span class="sp"></span>
+      <span class="saved">${d.at ? "Saved " + new Date(d.at).toLocaleString() : ""}</span>
+    </div>
+    <div class="note"><textarea id="note-${esc(f.id)}" data-note="${esc(f.id)}" rows="${d.note ? 2 : 1}" placeholder="Note for this flag (saved when you leave the box)" ${dis}>${esc(d.note || "")}</textarea></div>
+  </article>`;
+}
+
+function editorHtml(f) {
+  const hasTitle = !!f.title, soft = softened(f);
+  return `<div class="editor" data-editor="${esc(f.id)}">
+    ${hasTitle ? `<label>Softened title<input type="text" id="et-${esc(f.id)}" value="${esc(soft.publishableTitle ?? f.title)}"></label>` : ""}
+    <label>Softened text (Markdown: *italics*, **bold**, blank line between paragraphs). Saving marks the flag Softened.<textarea id="ep-${esc(f.id)}" rows="8">${esc(soft.publishable ?? f.text)}</textarea></label>
+    <div class="row"><button type="button" class="primary" data-act="save-edit">Save softened text</button><button type="button" data-act="cancel-edit">Cancel</button>
+      <button type="button" data-act="from-written">Start from the text as written</button></div>
+  </div>`;
+}
+
+function renderCounts() {
+  const c = { raw: 0, soft: 0, drop: 0, "": 0 };
+  let noted = 0;
+  FLAGS.forEach((f) => { c[statusOf(f)]++; if ((decisions[f.id] || {}).note) noted++; });
+  const n = FLAGS.length || 1;
+  $("progress").innerHTML = [["raw", "var(--said)"], ["soft", "var(--ok)"], ["drop", "var(--del)"]]
+    .map(([k, col]) => `<span style="width:${(c[k] / n) * 100}%;background:${col}"></span>`).join("");
+  const done = c.raw + c.soft + c.drop;
+  $("counts").innerHTML = `<span><b>${done}</b> of <b>${FLAGS.length}</b> decided</span>
+    <span><i class="dot" style="background:var(--said)"></i>${c.raw} raw</span>
+    <span><i class="dot" style="background:var(--ok)"></i>${c.soft} softened</span>
+    <span><i class="dot" style="background:var(--del)"></i>${c.drop} dropped</span>
+    <span>${noted} with notes</span>`;
+}
+
+function markCurrent() {
+  document.querySelectorAll(".sheet.cur").forEach((e) => e.classList.remove("cur"));
+  if (current) { const el = document.getElementById("s-" + current); if (el) el.classList.add("cur"); }
+}
+
+async function save(id, patch) {
+  if (!dbReady) return;
+  const next = { ...(decisions[id] || {}), ...patch, at: new Date().toISOString() };
+  for (const k of Object.keys(next)) if (next[k] === undefined || next[k] === null) delete next[k];
+  const prev = decisions[id];
+  decisions[id] = next;
+  render();
+  try {
+    if (!next.decision && !next.note) await col.doc(id).delete();
+    else await col.doc(id).set(next);
+  } catch (e) {
+    decisions[id] = prev; render();
+    showBanner("Couldn't save (" + (e && (e.code || e.message)) + "). Your last change was not kept.");
+  }
+}
+
+function showBanner(msg) { const b = $("banner"); b.textContent = msg; b.hidden = !msg; }
+
+function decide(id, act) {
+  const f = FLAGS.find((x) => x.id === id); if (!f) return;
+  current = id;
+  const flip = (set) => { set.has(id) ? set.delete(id) : set.add(id); render(); };
+  if (act === "toggle-diff") return flip(diffOpen);
+  if (act === "toggle-tr") return flip(trOpen);
+  if (act === "soft" && !softened(f).publishable) act = "edit"; // nothing to publish yet: write it first
+  if (act === "raw" || act === "soft" || act === "drop") { editing.delete(id); save(id, { decision: act, action: undefined }); }
+  else if (act === "clear") { editing.delete(id); save(id, { decision: undefined, action: undefined }); }
+  else if (act === "edit") { editing.add(id); render(); const t = document.getElementById("ep-" + id); if (t) t.focus(); }
+  else if (act === "cancel-edit") { editing.delete(id); render(); }
+  else if (act === "from-written") { const t = document.getElementById("ep-" + id); if (t) t.value = f.text; }
+  else if (act === "save-edit") {
+    const pub = document.getElementById("ep-" + id).value.trim();
+    const tEl = document.getElementById("et-" + id);
+    if (!pub) { showBanner("The softened text is empty. Write it, or choose Drop."); return; }
+    const patch = { decision: "soft", action: undefined, publishable: pub, publishableTitle: tEl ? tEl.value.trim() : undefined };
+    showBanner("");
+    editing.delete(id); save(id, patch);
+  }
+}
+
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("button[data-act]"); if (!b) return;
+  const sheet = b.closest(".sheet"); if (sheet) decide(sheet.dataset.id, b.dataset.act);
+});
+document.addEventListener("focusout", (e) => {
+  const t = e.target; if (!t.dataset || !t.dataset.note) return;
+  const id = t.dataset.note, v = t.value.trim();
+  if (v !== ((decisions[id] || {}).note || "")) save(id, { note: v || undefined });
+});
+document.addEventListener("focusin", (e) => { const s = e.target.closest && e.target.closest(".sheet"); if (s && s.dataset.id !== current) { current = s.dataset.id; markCurrent(); } });
+
+document.addEventListener("keydown", (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const tag = (e.target.tagName || "").toLowerCase();
+  if (tag === "textarea" || tag === "input" || tag === "select") { if (e.key === "Escape") e.target.blur(); return; }
+  const sheets = [...document.querySelectorAll(".sheet")]; if (!sheets.length) return;
+  let i = sheets.findIndex((s) => s.dataset.id === current);
+  const go = (k) => { const s = sheets[Math.max(0, Math.min(sheets.length - 1, k))]; current = s.dataset.id; markCurrent(); s.scrollIntoView({ block: "start" }); };
+  if (e.key === "j") { go(i + 1); e.preventDefault(); }
+  else if (e.key === "k") { go(i < 0 ? 0 : i - 1); e.preventDefault(); }
+  else if (i >= 0 && (e.key === "r" || e.key === "s" || e.key === "x" || e.key === "e")) {
+    e.preventDefault();
+    const act = { r: "raw", s: "soft", x: "drop", e: "edit" }[e.key];
+    // Under the "Not decided" filter the sheet disappears; keep the place by moving to the next one.
+    const nextId = sheets[i + 1] ? sheets[i + 1].dataset.id : null;
+    decide(current, act);
+    if (act !== "edit" && $("fStatus").value === "pending" && nextId) { current = nextId; markCurrent(); const el = document.getElementById("s-" + nextId); if (el) el.scrollIntoView({ block: "start" }); }
+  } else if (i >= 0 && (e.key === "d" || e.key === "t")) {
+    e.preventDefault(); decide(current, e.key === "d" ? "toggle-diff" : "toggle-tr");
+  } else if (i >= 0 && e.key === "n") { e.preventDefault(); const t = document.getElementById("note-" + current); if (t) t.focus(); }
+});
+
+["fChapter", "fCat", "fStatus"].forEach((id) => $(id).addEventListener("change", render));
+// The header switches set the default for every card and reset the per-card toggles.
+$("fDiff").addEventListener("change", () => { diffOpen.clear(); render(); });
+$("fTr").addEventListener("change", () => { trOpen.clear(); render(); });
+let st; $("fText").addEventListener("input", () => { clearTimeout(st); st = setTimeout(render, 200); });
+
+$("copyBtn").addEventListener("click", () => {
+  const out = Object.fromEntries(Object.entries(decisions).filter(([, v]) => v.decision || v.note));
+  const txt = JSON.stringify(out, null, 2);
+  const done = () => { $("copyBtn").textContent = "Copied"; setTimeout(() => ($("copyBtn").textContent = "Copy decisions"), 1500); };
+  try { navigator.clipboard.writeText(txt).then(done, () => fallbackCopy(txt)); } catch { fallbackCopy(txt); }
+});
+function fallbackCopy(txt) { const t = document.createElement("textarea"); t.value = txt; document.body.appendChild(t); t.select(); try { document.execCommand("copy"); } catch {} t.remove(); }
+
+async function boot() {
+  try {
+    const doc = await (await fetch("flags.json")).json(); FLAGS = doc.flags;
+    $("subline").textContent = `${doc.title} · study guides · built ${doc.built}`;
+  } catch (e) { $("list").innerHTML = `<div class="empty">Couldn't load the flags file (flags.json).</div>`; return; }
+  const chapters = [...new Set(FLAGS.map((f) => f.chapter))];
+  $("fChapter").insertAdjacentHTML("beforeend", chapters.map((c) => `<option value="${c}">${CHAPTER_NAMES(c)} (${FLAGS.filter((f) => f.chapter === c).length})</option>`).join(""));
+  const cats = {}; FLAGS.forEach((f) => f.sensitivity.categories.forEach((c) => (cats[c] = (cats[c] || 0) + 1)));
+  $("fCat").insertAdjacentHTML("beforeend", Object.keys(cats).sort().map((c) => `<option value="${c}">${c} (${cats[c]})</option>`).join(""));
+  render();
+
+  const timer = setTimeout(() => { if (!dbReady) showBanner("Saved decisions haven't loaded yet. Buttons stay off until they do."); }, 10000);
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db) { clearTimeout(timer); showBanner("Decisions can't be saved in this view (sign in to claude.ai and open the artifact there). You can still read every flag."); return; }
+  col = db.collection("reviews");
+  col.onSnapshot((snap) => {
+    clearTimeout(timer);
+    const next = {}; snap.docs.forEach((d) => (next[d.id] = d.data()));
+    decisions = next;
+    if (!dbReady) { dbReady = true; showBanner(""); }
+    // Keep an open editor's or note's typing: skip the re-render while the viewer is typing.
+    const a = document.activeElement;
+    if (a && (a.tagName === "TEXTAREA" || a.tagName === "INPUT") && a.closest(".sheet")) { renderCounts(); return; }
+    render();
+  }, (e) => { clearTimeout(timer); showBanner("Couldn't load saved decisions (" + e.code + ")."); });
+}
+boot();
+</script>
