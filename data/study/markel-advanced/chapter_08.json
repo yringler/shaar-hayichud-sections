@@ -755,7 +755,15 @@
                   "start": 1174.1,
                   "end": 1202.57
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "A generalisation that women have less daas and cannot concentrate as well as a man.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },
@@ -1262,7 +1270,15 @@
                   "start": 186.98,
                   "end": 210.36
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "named-person"
+                ],
+                "reason": "A joke that treats O.J. Simpson, by name, as the killer in the murders he was acquitted of.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

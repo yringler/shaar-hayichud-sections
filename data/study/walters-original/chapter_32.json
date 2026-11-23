@@ -1794,7 +1794,15 @@
                   "end": 162.66
                 }
               ],
-              "outOfPlace": "Class 75 opens by finishing class 74's point on mesirus nefesh, before it reads line 28 (\"so after all of that introduction\"); placed with class 74's nimshal."
+              "outOfPlace": "Class 75 opens by finishing class 74's point on mesirus nefesh, before it reads line 28 (\"so after all of that introduction\"); placed with class 74's nimshal.",
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "Says that rather than eat forbidden food when told his life depends on it, a person is allowed to expect a miracle; a reader might take it as license to refuse food or treatment in real danger.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "keyPoint",

@@ -1977,7 +1977,16 @@
                   "start": 483.36,
                   "end": 542.4
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions",
+                  "other-groups"
+                ],
+                "reason": "Teases the hippies who became Lubavitchers as \"still the same hippies\" and sets Christianity and Hinduism against Yiddishkeit.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2027,7 +2036,15 @@
                   "start": 679.01,
                   "end": 744.42
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Says in passing that even among non-Jews some are willing to sacrifice their children.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         }

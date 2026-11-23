@@ -945,7 +945,15 @@
                   "start": 1445.64,
                   "end": 1494
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Opens with a passing generalisation, \"women go shopping\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

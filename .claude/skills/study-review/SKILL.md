@@ -53,7 +53,7 @@ themselves are already written, so the `artifact-design` pass is done.
 Shows every flagged block: the uncensored text beside the softened text
 (with a word diff), why it was flagged, the writer's lean (`recommend`), the
 transcript of its audio, a Listen link and the passage. The reviewer
-decides **Raw** (print as said), **Softened** (print the softened text, or
+decides **Raw** (print as said; the flag is kept), **Softened** (print the softened text, or
 their own edit of it) or **Drop** (leave the block out), and can add a note.
 
 ```bash
@@ -74,8 +74,10 @@ what is there):
 1. `ArtifactData` action `query`, collection `reviews`, `query: {limit: 1000}`,
    `out_dir: <scratchpad>/db` (writes `<scratchpad>/db/reviews/<id>.json`).
 2. `python3 $S/apply_decisions.py --series <series> --flags $OUT/flags.json --dump <scratchpad>/db/reviews --dry-run`,
-   read the summary, then run it without `--dry-run`. It removes a Raw
-   flag, sets `action` and `reviewed` (today) on Softened and Drop, uses the
+   read the summary, then run it without `--dry-run`. It sets `reviewed`
+   (today) and `action`: `keep` for Raw (the softened text is removed; the
+   flag stays as a record, so a later reviewer can go through every flag
+   again), `replace` for Softened and `omit` for Drop. It uses the
    reviewer's own softened text where they wrote one, and drops the
    writer's lean. It skips (and lists) any block whose text or flag changed
    since the page was built. **Notes are printed, not applied**: act on each

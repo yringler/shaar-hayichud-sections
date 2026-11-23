@@ -1350,7 +1350,15 @@
                   "start": 382.84,
                   "end": 404.37
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "\"G-d is love\" and \"unconditional love\" are slogans associated with Christian preaching; the rejection can be read as aimed at another religion.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1533,7 +1541,15 @@
                   "end": 99.98
                 }
               ],
-              "outOfPlace": "Tape 003 opens by finishing the foundation example of tape 002 on these lines."
+              "outOfPlace": "Tape 003 opens by finishing the foundation example of tape 002 on these lines.",
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "Names communism, and Marx and Engels, among the worst things in the world.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1643,7 +1659,15 @@
                   "start": 472.04,
                   "end": 538.88
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "The example is a drunk who beats his family.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2635,7 +2659,15 @@
                   "start": 1084.32,
                   "end": 1095.94
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "Gives a cause of stuttering and a way to treat it (\"teach them how to slow down\"), which a reader might act on.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

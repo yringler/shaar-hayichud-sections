@@ -538,7 +538,15 @@
                   "start": 848.26,
                   "end": 860.24
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Sets the gentiles, who stay in Tohu and will not compromise, against the Jews, who are Tikkun.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -858,7 +866,15 @@
                   "start": 1428.33,
                   "end": 1457.5
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Reads a verse about dashing the enemy's infants as Tikkun, directly after the remarks on the Palestinians.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         }
@@ -921,7 +937,15 @@
                   "start": 1503.33,
                   "end": 1541.18
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Gives the Romans, Esav, throwing people to the lions as a nation whose essential attribute is cruelty.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },
@@ -1056,7 +1080,15 @@
                   "start": 1640.38,
                   "end": 1720.5
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "The angels' complaint is put as \"look what the Arabs are going to do\", and Tohu as \"that's Yishmael, kill him\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1414,7 +1446,16 @@
                   "start": 522.44,
                   "end": 605.06
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions",
+                  "named-person"
+                ],
+                "reason": "Makes Bin Laden the Muslim missionary and says Islam means submission on pain of death.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "mashal",
@@ -1427,7 +1468,15 @@
                   "start": 605.8,
                   "end": 696.2
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Christian and Muslim missionaries as Tohu, and the Crusades.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "question",
@@ -1441,7 +1490,15 @@
                   "start": 697.2,
                   "end": 734.32
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Says the Christian missionary wants to force the issue.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1453,7 +1510,15 @@
                   "start": 735,
                   "end": 823.24
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Christians were not so nice when they had power, and are polite only for lack of it.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1465,7 +1530,16 @@
                   "start": 823.36,
                   "end": 902.64
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions",
+                  "other-groups"
+                ],
+                "reason": "The Salvation Army not really interested in helping; the Christian missionary as Bin Laden and the Inquisition.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1520,7 +1594,15 @@
                   "start": 1045.96,
                   "end": 1131.14
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Continues the comparison of Muslim and American missionaries.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

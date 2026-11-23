@@ -332,7 +332,15 @@
                   "start": 303.46,
                   "end": 345.54
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Calls practices that seek G-d through concentration alone idol worship.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "keyPoint",
@@ -460,7 +468,15 @@
                   "start": 563.14,
                   "end": 608.64
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "A jab at scientists for missing the point in their own language.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1732,7 +1748,15 @@
                   "start": 637.9,
                   "end": 673.86
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "Suggests a doctor who also knows oriental and homeopathic medicine may be the better doctor.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -1855,7 +1879,15 @@
                   "start": 1382.94,
                   "end": 1474.11
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Says he mostly tells people not to learn Reb Hillel Paritcher's commentary on the book.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "keyPoint",
@@ -2696,7 +2728,15 @@
                   "start": 1237.05,
                   "end": 1256.36
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Mocks Eastern meditators in a Himalayan cave repeating a phrase.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -2815,7 +2855,15 @@
                   "start": 1453.24,
                   "end": 1501.43
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Contrasts a Jewish daas with \"the daas of the goyim\", a goyishe daas of Tohu.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

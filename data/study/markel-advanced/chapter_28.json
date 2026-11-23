@@ -260,7 +260,15 @@
                   "start": 206.18,
                   "end": 228.18
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Says cruelty, the circuses, was the very essence of the Romans, and ties it to Esav.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",
@@ -309,7 +317,15 @@
                   "start": 246.66,
                   "end": 278.04
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Repeats the Romans' circuses as coming from their essential self-image.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             }
           ]
         },
@@ -1145,7 +1161,15 @@
                   "start": 1486.47,
                   "end": 1507.05
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "women"
+                ],
+                "reason": "Builds the example on the stock picture of a woman screaming at a mouse.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "mashal",

@@ -375,10 +375,8 @@
                   "other"
                 ],
                 "reason": "\"When somebody can't talk in letters, he can't think in letters either\" could be read as a claim about people who cannot speak.",
-                "action": "replace",
-                "publishable": "That is one of the whole reasons that Torah study has to be *davka* (specifically) by talking and not only by thinking: talking activates thinking. Speech has to come through thought, but speech is the higher of the two.",
-                "recommend": "judgment",
-                "judgmentNote": "He may mean only that the letters of speech underlie the letters of thought; weigh whether the last sentence reads as a statement about people with a disability."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1322,8 +1320,7 @@
                 "reason": "Calls Americans crass and coarse, quoting a saying of the Frierdiker Rebbe.",
                 "action": "replace",
                 "publishable": "Just the opposite: the main thing about an abstract idea is how much money you can make with it. As the Frierdiker Rebbe (the previous Rebbe) said, you see what people value from what they ask: \"What's he worth?\" Not that he is worth something because he is a *talmid chacham* (a Torah scholar), a *tzaddik*, a *parush* (an ascetic), but \"he's worth $100 million\". Yet even the $100 million is an abstraction.",
-                "recommend": "judgment",
-                "judgmentNote": "The remark is the Frierdiker Rebbe's, which he quotes as a teaching on how people measure worth; weigh whether to print the Rebbe's words about Americans as said."
+                "reviewed": "2026-11-23"
               }
             },
             {

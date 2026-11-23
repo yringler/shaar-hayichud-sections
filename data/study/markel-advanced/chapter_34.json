@@ -697,7 +697,8 @@
                 ],
                 "reason": "Uses a coarse word for a child or a dog relieving himself.",
                 "action": "replace",
-                "publishable": "At six you can already explain to him that he shouldn't wet the carpet. A dog you can't explain it to: he doesn't do it because you'll hit him. That is training; you never explained that the carpet will get ruined. You can teach a dog not to attack certain people because they are our friends, but that is not an explanation: his *middos* themselves are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without understanding why. A six-year-old can already be given certain reasons, but it is not a real *sechel*, only a *sechel* for the *middos* themselves."
+                "publishable": "At six you can already explain to him that he shouldn't wet the carpet. A dog you can't explain it to: he doesn't do it because you'll hit him. That is training; you never explained that the carpet will get ruined. You can teach a dog not to attack certain people because they are our friends, but that is not an explanation: his *middos* themselves are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without understanding why. A six-year-old can already be given certain reasons, but it is not a real *sechel*, only a *sechel* for the *middos* themselves.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -802,7 +803,8 @@
                 ],
                 "reason": "Says some old people are like an animal, and that some are nice to others only to sell a product.",
                 "action": "replace",
-                "publishable": "And there are people seventy years old who never got to six, with only natural *mochin*. Others' whole mind for conduct is how to get their way: they're nice to people not because they understand there is such a thing as niceness, but because it serves them."
+                "publishable": "And there are people seventy years old who never got to six, with only natural *mochin*. Others' whole mind for conduct is how to get their way: they're nice to people not because they understand there is such a thing as niceness, but because it serves them.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -821,9 +823,8 @@
                   "other"
                 ],
                 "reason": "Judges that almost nobody reaches the level of twenty, that most people stop at nine or below, and that a great many are not even at six.",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "So the ages are not exact: an older person may reach only six or nine, a younger one what the text calls twenty. And what it calls twenty is very rare; most stop at nine, where one starts to think what it's all about. The text speaks of the ideal, a child growing up in a *frum* family studying Torah properly. Six means conduct by *sechel*, though only the *sechel* of \"this is going to come back and haunt me\", what goes around comes around: if I'm mean to people, if I get drunk and beat up my family."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {

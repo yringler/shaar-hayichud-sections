@@ -331,7 +331,15 @@
                   "start": 1015.88,
                   "end": 1049.13
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "Dismisses the Hermetic tradition's mystical geometry as \"crazy meshugaas\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

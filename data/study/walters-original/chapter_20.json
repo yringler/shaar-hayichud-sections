@@ -802,7 +802,16 @@
                   "start": 126.07,
                   "end": 139.3
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics",
+                  "other-groups"
+                ],
+                "reason": "A political opinion on the conflict between Jews and Arabs in Israel and on democracy there.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "explanation",

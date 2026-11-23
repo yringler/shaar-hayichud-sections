@@ -51,7 +51,8 @@ export type BlockKind = (typeof BLOCK_KINDS)[number];
 export interface StudySensitivity {
   categories: string[];
   reason: string;
-  action: 'replace' | 'omit';
+  /** keep: a person decided the block prints as said; the flag is kept as a record for a later review. */
+  action: 'replace' | 'omit' | 'keep';
   publishable?: string;
   publishableTitle?: string;
   /** The writer's lean for the reviewer (absent: the action). Changes nothing published. Not exported. */
@@ -605,6 +606,8 @@ export function checkStudyChapter(
       const s = block.sensitivity;
       if (s.action === 'replace' && s.publishable === undefined) add('error', `${at}/sensitivity has action "replace" but no "publishable" text`);
       if (s.action === 'omit' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "omit" and a publishable text; choose one`);
+      if (s.action === 'keep' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "keep" (print as said) and a publishable text; drop the publishable text`);
+      if (s.action === 'keep' && s.reviewed === undefined) add('error', `${at}/sensitivity has action "keep" without "reviewed": only a person decides a block prints as said`);
       if ((s.recommend === 'judgment') !== (s.judgmentNote !== undefined)) add('error', `${at}/sensitivity: "judgmentNote" goes with recommend "judgment", and only with it`);
     }
     if (block.kind === 'question' && block.question === undefined) add('error', `${at} is a question block without "question"`);
@@ -909,8 +912,9 @@ export const formatStudyFile = (file: StudyChapterFile): string =>
 
 /**
  * The file as a public build would show it: a block flagged `sensitivity`
- * is left out (action 'omit') or carries its `publishable` text (action
- * 'replace'); the reviewer's notes and the omission list are dropped.
+ * is left out (action 'omit'), carries its `publishable` text (action
+ * 'replace') or prints as said (action 'keep'); the reviewer's notes and the
+ * omission list are dropped.
  */
 export function publicView(file: StudyChapterFile): StudyChapterFile {
   const copy = structuredClone(file);
@@ -923,6 +927,7 @@ export function publicView(file: StudyChapterFile): StudyChapterFile {
         if (!s) return [b];
         if (s.action === 'omit') return [];
         const { sensitivity: _dropped, ...rest } = b;
+        if (s.action === 'keep') return [rest];
         return [{ ...rest, text: s.publishable!, ...(s.publishableTitle !== undefined ? { title: s.publishableTitle } : {}) }];
       });
     }

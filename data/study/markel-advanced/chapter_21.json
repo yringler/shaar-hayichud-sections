@@ -1691,7 +1691,15 @@
                   "start": 1215.44,
                   "end": 1303.26
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Says that whoever does not believe in the resurrection as taught here is a heretic and \"not Jewish\".",
+                "action": "keep",
+                "reviewed": "2026-11-23"
+              }
             },
             {
               "kind": "aside",

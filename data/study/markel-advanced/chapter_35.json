@@ -173,7 +173,8 @@
                 ],
                 "reason": "Says an occult school of Kabbalah has \"a lot of nonsense\".",
                 "action": "replace",
-                "publishable": "This is the big mistake of the Hermetic Kabbalah: their saying, \"Do what thou wilt, that is the whole law.\" They take *ratzon* to mean what you want, and that, to do what you want, is *middos* of *Tohu* (the world of chaos). The real *ratzon* is total *bittul* (self-nullification), higher than *chachma*: not just nullification, it is not there at all. As was learned recently, from *chachma* on the soul has vessels in the body, but *chaya* and *yechida*, the delight and the will, are totally above the body. The inner will is not your will; it is the divine *ratzon*. They turn the whole thing upside down, into doing whatever you want."
+                "publishable": "This is the big mistake of the Hermetic Kabbalah: their saying, \"Do what thou wilt, that is the whole law.\" They take *ratzon* to mean what you want, and that, to do what you want, is *middos* of *Tohu* (the world of chaos). The real *ratzon* is total *bittul* (self-nullification), higher than *chachma*: not just nullification, it is not there at all. As was learned recently, from *chachma* on the soul has vessels in the body, but *chaya* and *yechida*, the delight and the will, are totally above the body. The inner will is not your will; it is the divine *ratzon*. They turn the whole thing upside down, into doing whatever you want.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -649,9 +650,8 @@
                   "other-groups"
                 ],
                 "reason": "Says much of what passes for Judaism is actually idol worship (in the Mitteler Rebbe's name).",
-                "action": "replace",
-                "publishable": "This is what the Mitteler Rebbe said: a lot of what passes for Judaism can come so close to *avoda zara* (idol worship) that it is really *mamash* (actually) *avoda zara*.",
-                "recommend": "raw"
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -674,8 +674,7 @@
                 "reason": "Says a Jew's idea of Judaism is really Christianity, and that most such ideas come from Christianity.",
                 "action": "replace",
                 "publishable": "What is *Yiddishkeit* (Judaism) and what is *avoda zara*? When the first tapes, the Inner Secrets, were just made in California, before the professional copies, someone was copying them by himself and sold one. The buyer came back: \"This is *mamash avoda zara*. This is pagan worship.\" To him the matters of *Kabbala* are not Jewish at all; his Judaism was the whole anthropomorphic thing, with no *Kabbala* in it. Told that G-d controls the planets, he called it astrology, forbidden.",
-                "recommend": "judgment",
-                "judgmentNote": "That a Kabbala-less, anthropomorphic Judaism comes from Christianity is his view of the history of ideas and part of his point about hoda'a cut off from the sechel; weigh whether to print it in a public edition."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -694,8 +693,8 @@
                   "other-groups"
                 ],
                 "reason": "Says the observance of frum Jews today is disconnected from its reason.",
-                "action": "replace",
-                "publishable": "So the final *hoda'a*: a person who just has *hoda'a*, like a regular *frum* (observant) man. A *hoda'a* can become so disconnected from the *sechel* that it is not the same thing anymore; it has gone away."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -730,7 +729,8 @@
                 ],
                 "reason": "\"Kill all the damn Arabs\" as his example.",
                 "action": "replace",
-                "publishable": "Say we should go to war against an enemy, and people answer, \"Judaism is a religion of love.\" Not true: Judaism says that if you try to make peace with the enemy and it does not work, you go to war against them. By the *sechel*, with the *middos* of *Tikkun* (the world of repair), even an *ish chesed* (a man of kindness) meets an enemy who does him harm with a *sechel* of *gevura*, not of *chesed*."
+                "publishable": "Say we should go to war against an enemy, and people answer, \"Judaism is a religion of love.\" Not true: Judaism says that if you try to make peace with the enemy and it does not work, you go to war against them. By the *sechel*, with the *middos* of *Tikkun* (the world of repair), even an *ish chesed* (a man of kindness) meets an enemy who does him harm with a *sechel* of *gevura*, not of *chesed*.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -865,8 +865,8 @@
                   "politics"
                 ],
                 "reason": "A jab at American justice for releasing murderers.",
-                "action": "replace",
-                "publishable": "We see a disconnected *chesed* when dangerous criminals are let out because one has to be nice to them."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1525,7 +1525,8 @@
                 ],
                 "reason": "Says the ideas of observant Jews may be actual idol worship.",
                 "action": "replace",
-                "publishable": "The *partzuf* (the full stature) of Yaakov is a regular Jew. Even an outer Jew who just keeps the *Shulchan Aruch* (the code of law) stays a Jew. Whatever his ideas, it makes no difference: he keeps *halacha*, he is a kosher Jew. He is a Yaakov, not a Yisroel, but not an Esav either; he is still alive. You can buy from his bakery, trust him, eat kosher food in his house. He is a *frummer Yid* (an observant Jew)."
+                "publishable": "The *partzuf* (the full stature) of Yaakov is a regular Jew. Even an outer Jew who just keeps the *Shulchan Aruch* (the code of law) stays a Jew. Whatever his ideas, it makes no difference: he keeps *halacha*, he is a kosher Jew. He is a Yaakov, not a Yisroel, but not an Esav either; he is still alive. You can buy from his bakery, trust him, eat kosher food in his house. He is a *frummer Yid* (an observant Jew).",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1545,10 +1546,8 @@
                   "other-groups"
                 ],
                 "reason": "Names the misnagdim as the camp whose service is cut off from the mind.",
-                "action": "replace",
-                "publishable": "But some *frum* Jews make their whole thing working on the *middos*: be a good Jew, be nice, and not study *hisbonenus* (contemplation) or *Kabbala*. They fix up the *middos* directly, \"as He is merciful, so be merciful,\" imitating G-d from the outside. The real imitation of G-d is the *nefesh hasichlis* (the intellectual soul) emulating the *nefesh haElokis* (the G-dly soul). Working directly on the *nefesh habehamis* (the animal soul), the thighs can become disconnected.",
-                "recommend": "judgment",
-                "judgmentNote": "The critique of refining the middos from the outside, without the mind, is his teaching on the line (a view of a practice, which usually prints raw); naming the misnagdim, and their calling hisbonenus avoda zara, is a jab at a camp of fellow Jews."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1569,7 +1568,8 @@
                 ],
                 "reason": "Says *frum* Jews today come up with \"ridiculous ideas\" and sell them as kosher Torah.",
                 "action": "replace",
-                "publishable": "They are *frum* Jews, and they are trying to be; they are not like the Reform and Conservative, who were really heretics and wanted to be heretics. We have gone so far down that *frum* Jews come up with ideas like these and present them as Torah. Still, he is not trying to be a heretic; he is a Yaakov, and his Judaism is still alive: even a Yaakov does not die. But his ideas are not connected to *daas elyon* (higher knowledge); what he says is not *daas Torah* (the Torah's view) anymore."
+                "publishable": "They are *frum* Jews, and they are trying to be; they are not like the Reform and Conservative, who were really heretics and wanted to be heretics. We have gone so far down that *frum* Jews come up with ideas like these and present them as Torah. Still, he is not trying to be a heretic; he is a Yaakov, and his Judaism is still alive: even a Yaakov does not die. But his ideas are not connected to *daas elyon* (higher knowledge); what he says is not *daas Torah* (the Torah's view) anymore.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1614,7 +1614,7 @@
                 "reason": "Calls science and the surrounding non-Jewish philosophy the angel of Esav.",
                 "action": "replace",
                 "publishable": "It happened because the angel of Esav, the philosophy of the world around them, was able to dislocate their hip. But he is still Yaakov; he is just not going straight.",
-                "recommend": "raw"
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1797,7 +1797,8 @@
                 ],
                 "reason": "\"Marry a shikse, or maybe even a monkey,\" said of observant Jews.",
                 "action": "replace",
-                "publishable": "But the outer Yaakov that is disconnected is getting to the point that if this kept going a few more years, they would not be Jews anymore. They are really disconnected already and it would become total, and that is why Moshiach has to come."
+                "publishable": "But the outer Yaakov that is disconnected is getting to the point that if this kept going a few more years, they would not be Jews anymore. They are really disconnected already and it would become total, and that is why Moshiach has to come.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1817,7 +1818,8 @@
                 ],
                 "reason": "Says a group of observant, outreach-minded Jews has been taken by the Satan, and the generation is totally gone.",
                 "action": "replace",
-                "publishable": "Even Jews whose whole matter started off not only to be religious themselves but to bring other people into the religion can be caught, because we are already on such a low level. It says Moshiach comes either in a very high generation or in a generation that is totally gone, and our generation is basically totally gone already. If not for Moshiach, very soon the whole thing would fall apart."
+                "publishable": "Even Jews whose whole matter started off not only to be religious themselves but to bring other people into the religion can be caught, because we are already on such a low level. It says Moshiach comes either in a very high generation or in a generation that is totally gone, and our generation is basically totally gone already. If not for Moshiach, very soon the whole thing would fall apart.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1861,8 +1863,8 @@
                   "other"
                 ],
                 "reason": "Groups Herzl with \"the original Reformers\" who went against observance (Herzl led the Zionist movement, not Reform).",
-                "action": "replace",
-                "publishable": "In fact most of the Reform, the Conservative and the *freie Yidden* (non-observant Jews) did not deny the religion. They came to America and became disconnected. Unlike the original Reformers, who went against *frumkeit* (observance), many simply fell away, because they were Yaakov: they did not know that much, and slowly they got mixed in."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {

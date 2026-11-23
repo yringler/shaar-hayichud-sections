@@ -341,7 +341,8 @@
                 ],
                 "reason": "A coarse word for where the shot is given, in a medical example a reader could take as advice.",
                 "action": "replace",
-                "publishable": "Exercise helps everything, the brain included. And if somebody has an infection in his brain, the treatment can be given elsewhere in the body; it doesn't have to go straight into his brain."
+                "publishable": "Exercise helps everything, the brain included. And if somebody has an infection in his brain, the treatment can be given elsewhere in the body; it doesn't have to go straight into his brain.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -939,8 +940,8 @@
                   "other-religions"
                 ],
                 "reason": "Says missionaries' love for the people they approach is really an intention of hate and control.",
-                "action": "replace",
-                "publishable": "You see this in anyone who sets out to win people over. They work themselves up to love everybody, and really love them, but it is not really a love: it is an intention of *gevura*, which is control. They want to control this person."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1531,8 +1532,7 @@
                 "reason": "Pictures Native Americans as glory-seeking braves who \"go whooping into battle\".",
                 "action": "replace",
                 "publishable": "That is why the white man conquered the Indian. From the side of the light, their inner side, the Indians were more unified and more heroic. But each one was a whole brave, each one an army. You couldn't tell him: you can't have the glory, you'll be the guy who cleans the fish. \"What do you mean? I'm a brave. I want to earn my feathers.\" In the white man's army some soldiers couldn't care less; they were career soldiers, not so brave. But they were separated into different functions. The Indians each wanted all the glory.",
-                "recommend": "judgment",
-                "judgmentNote": "The mashal is his example of division of labor and its point survives as written; weigh whether the picture of the Indians, beyond \"whooping\", reads as a stereotype in print."
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1586,7 +1586,8 @@
                 ],
                 "reason": "Continues the picture of the Indian as a glory-seeking warrior who would scorn a desk job.",
                 "action": "replace",
-                "publishable": "By the Indians there could be no inclusion: with no division, each one did the same whole thing by himself, so inclusion of what? **A thing and its opposite like one**: one man does the hero's thing while another is a milquetoast in the office writing reports, a pencil pusher, the very opposite of a soldier. Try to get a born warrior to be a pencil pusher: he wants the glory."
+                "publishable": "By the Indians there could be no inclusion: with no division, each one did the same whole thing by himself, so inclusion of what? **A thing and its opposite like one**: one man does the hero's thing while another is a milquetoast in the office writing reports, a pencil pusher, the very opposite of a soldier. Try to get a born warrior to be a pencil pusher: he wants the glory.",
+                "reviewed": "2026-11-23"
               }
             }
           ]

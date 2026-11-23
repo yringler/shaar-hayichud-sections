@@ -464,10 +464,8 @@
                   "named-person"
                 ],
                 "reason": "Says the voice of a recent, named singer was not great and sometimes off-key, and that a living one has no great voice or training.",
-                "action": "replace",
-                "publishable": "Some very famous singers really don't have a good voice, or the training either. Two examples: Shlomo Carlebach, *alav hashalom*, and, *l'havdil*, Bob Dylan. In the Jewish song market Carlebach is probably the biggest superstar, more than Mordechai Ben David or anybody like that, though some of them have a much better voice. But he could really get the feeling into the song, so people loved to hear it. The same with Bob Dylan: he conveys a real feeling in the song.",
-                "recommend": "judgment",
-                "judgmentNote": "The remark on their voices is mild, affectionate, and is the point of the example (feeling, not voice); it may well print as said."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -710,10 +708,8 @@
                   "women"
                 ],
                 "reason": "A stock scene of a wife who says \"nothing\" is the matter in a crying voice.",
-                "action": "replace",
-                "publishable": "Listening to someone talk, you hear not only the words but the emotions. Someone asks a person close to him what's the matter, and the answer is that nothing is the matter. From the voice you can tell it is not nothing: it is a crying voice. Going by the words alone he would say, \"That's nice, I'm glad you're happy.\"",
-                "recommend": "judgment",
-                "judgmentNote": "An ordinary household scene, not a claim about women; the point (emotion heard in the voice) is the same either way, and it may print as said."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1455,8 +1451,7 @@
                 "reason": "Advice on handling fears and phobias (listen to the phobia first) that a reader might act on.",
                 "action": "replace",
                 "publishable": "Sometimes it is good to whistle a happy tune: where it is not a real lion. Where there is a real lion, do something about it. That too is a *tikkun* (repair): knowing when to whistle a happy tune and when to listen to the fear.",
-                "recommend": "judgment",
-                "judgmentNote": "Practical psychological advice in his own name; it is common sense and may print as said, but it is the kind of remark a reader acts on."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1490,7 +1485,8 @@
                 ],
                 "reason": "Sneers at sports fans as people avoiding their own problems, and says women watch soap operas to escape theirs.",
                 "action": "replace",
-                "publishable": "A lot of the people who talk about who won the football game would get depressed if they thought about their own problems, so they think about the football game instead. That is also why people like to watch all these soap operas: it gets them off their own problems."
+                "publishable": "A lot of the people who talk about who won the football game would get depressed if they thought about their own problems, so they think about the football game instead. That is also why people like to watch all these soap operas: it gets them off their own problems.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1734,8 +1730,8 @@
                   "crude"
                 ],
                 "reason": "The saying calls the one who says what he thinks a meshuga (a madman).",
-                "action": "replace",
-                "publishable": "Sometimes it goes from thought straight into speech: **he says what he thinks**. As they say, a smart guy thinks what he says."
+                "action": "keep",
+                "reviewed": "2026-11-23"
               }
             },
             {
