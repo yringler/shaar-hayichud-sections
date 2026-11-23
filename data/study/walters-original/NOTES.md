@@ -205,26 +205,28 @@ Flagged, with the precedent:
 - **Groups and professions**: scientists as "haughty idiots" or "the
   scientists say" (28, 30), philosophers who "don't know how to use logic"
   (28), modern men and ancient cultures (27), builders as "stupid people"
-  (14), robot teachers and Walmart cashiers (15), an Iranian (22), Africa
-  (16, 18): `other-groups`. Criticism of an idea ("science doesn't tell you
-  why", the philosopher's definition of G-d) is not flagged.
+  (14), fellow Jews' "stupid humility" in dress (28), robot teachers and
+  Walmart cashiers (15), an Iranian (22), Africa (16, 18): `other-groups`.
+  Criticism of an idea ("science doesn't tell you why", the philosopher's
+  definition of G-d) is not flagged.
 - **Movements within Judaism**: Reform and Conservative (26, 32), the "Rebbe
   is Moshiach" belief as an example (17, 26), the Chassidim and Misnagdim
   history told from memory (18), baalei teshuva who are "not going to be
-  human" (20), chassidim who dress by imitation (28): `other-groups`. The
+  human" (20), chassidim who dress by imitation (18, 28): `other-groups`. The
   Alter Rebbe and the Gra aside (22) was left, as it criticises no one.
 - **Other religions**: Christianity and "Yoshke" (20), missionaries (20, 25),
   Eastern religions, New Age and "cultish" things (17): `other-religions`.
   Describing Arius as "this Christian" (1) is not flagged.
-- **Politics**: a single partisan side used as an example ("only the
-  Republican side" in 1, "a liberal" in 19, liberalism in 26), church and
-  state (19): `politics`, replaced with a neutral word. Liberal and
-  conservative named evenly as two leanings (17, 20) was left, and the
-  reviewer removed the flag on Israel and democracy (20): printed as said.
-- **Women**: his own generalisations beyond a line (chapter 1, class 17:
-  women's daas, multitasking, judges), boys and girls learning kashrus (2),
-  "women get more emotional, because they're kalei daas" (32), and the
-  "some lady" of the chicken story (12, borderline): `women`. The line's own
+- **Politics**: a single partisan side used as an example ("a liberal" in
+  19, liberalism in 26), church and state (19): `politics`, replaced with a
+  neutral word. Liberal and conservative named evenly as two leanings (17,
+  20) was left. The reviewer removed the flags on "only the Republican side"
+  (1) and on Israel and democracy (20): printed as said.
+- **Women**: his own generalisations beyond a line ("women get more
+  emotional, because they're kalei daas" in 32, and the "some lady" of the
+  chicken story in 12, borderline): `women`. The reviewer removed the flags
+  on chapter 1, class 17 (women's daas, multitasking, judges) and on boys
+  and girls learning kashrus (2): printed as said, in condensed form. The line's own
   words ("a light daas, like women") and a line's Talmudic figure (30) are
   not flagged. Where his remark rests on a halacha or a saying of Chazal
   (women are not judges, *bina yeseira*), flag his own explanation of it and
@@ -238,7 +240,8 @@ Flagged, with the precedent:
   age, 31), is not flagged; nor, after review, faith healing (27) or the
   Alter Rebbe "allowed to expect a miracle" on risking one's life (32).
 - **Misstated halacha and history under his name**: the mitzva of kiddush
-  "is not verbal" and no wine on Shabbos if you don't enjoy it (26), the bomb
+  "is not verbal" and no wine on Shabbos if you don't enjoy it (26), a
+  *shechita* "back and forth all day" (2, `judgment`), the bomb
   built "before the Russians" (2): `other`, with a publishable text that
   drops the claim. A source slip (a wrong chapter or tractate) only goes in
   `notes`.

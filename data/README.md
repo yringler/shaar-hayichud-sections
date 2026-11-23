@@ -803,8 +803,10 @@ prose (his spoken lines out of quotation marks) and sensitivity-reviewed by
 a person: its 52 flags are all `reviewed`. `walters-original`
 (catalog series 0) has every chapter the series teaches (1, 2 and 10–32),
 each written from the classes and then reviewed against the transcripts
-by a second agent; it is public (Rabbi Walters gave permission), so its
-87 sensitivity flags decide what `/data/v1/study/` prints. Nobody has yet listened to
+by a second agent, then rewritten as guide prose the same way; it is
+public (Rabbi Walters gave permission), so its 73 sensitivity flags (17
+leaning `judgment`, 3 `raw`, none yet `reviewed` since the rewrite) decide
+what `/data/v1/study/` prints. Nobody has yet listened to
 the audio against the blocks, and tapes with only Sofer's word times may
 start a second or two off.
 A new series needs a directory with `series.json` and `NOTES.md`.
