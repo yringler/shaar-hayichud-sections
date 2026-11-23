@@ -677,7 +677,13 @@ What each part is anchored to:
   should not be published as it stands carries `sensitivity` (categories, a
   reason, and `action`: `replace` with a `publishable` text, or `omit`).
   `publicView()` in `tools/src/study.ts` applies it, for the
-  [public edition](#public-study-guides-v1study).
+  [public edition](#public-study-guides-v1study). `reviewed: "YYYY-MM-DD"`
+  on the flag records that a person checked it against the class and
+  accepted it as it stands; without it a flag is the writer's proposal.
+  Only a person sets it, and an edit to the block's text or title or to the
+  flag's action, `publishable` or `publishableTitle` deletes it. A flag
+  found unnecessary is removed, not marked. Neither export carries
+  `reviewed`.
 - **Nothing dropped silently**: a stretch of a chapter's class that no block
   cites is listed in `omitted` with a reason, or the check warns about it.
 

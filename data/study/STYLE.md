@@ -240,6 +240,11 @@ Flag a block with `sensitivity` when it does any of these:
   one sentence and not the explanation around it.
 - When in doubt, flag. A flag costs nothing; a missed one is found by a
   stranger.
+- `"reviewed": "YYYY-MM-DD"` on a flag means a person has checked it against
+  the class and accepted it as it stands. Never add it yourself. If you
+  change a reviewed block's `text` or `title`, or its flag's `action`,
+  `publishable` or `publishableTitle`, delete `reviewed`: the change needs a
+  new look.
 - Do not flag ordinary humor, strong Torah positions stated as such, or
   criticism of ideas (as opposed to people and groups).
 
