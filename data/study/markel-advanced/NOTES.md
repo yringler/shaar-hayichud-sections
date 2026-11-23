@@ -87,5 +87,13 @@ viewpoints (the husband and the wife at the building) prints raw, because
 softening the two into "they were both" kills the point. Teasing of
 Republicans prints raw: he is one, and it is a group teasing itself.
 
+From the review of chapter 20 (the Bin Laden *mashal*, printed raw): a
+sharp claim is said **once**. He hammers a striking point three to five
+times in a row ("he would kill everybody… kill millions… kill his own
+people… kill himself"); the block keeps it once, in its strongest form,
+with his one best example, and drops the rest. Raw is about what is said,
+not about keeping every repetition of it. This holds for every block, flagged
+or not.
+
 The sensitivity review of chapters 1–18 was finished on 2026-11-23: 38
 flags printed raw (removed), 45 softened and 5 dropped (marked `reviewed`).
