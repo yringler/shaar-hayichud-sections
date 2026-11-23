@@ -307,7 +307,7 @@
             },
             {
               "kind": "aside",
-              "text": "\"He's on the phone with his brother learning *Shaar HaYichud*.\"",
+              "text": "\"He's busy learning *Shaar HaYichud*.\"",
               "audio": [
                 {
                   "lecture": "005 Tape017-Side2-Ch11.mp3",
@@ -315,15 +315,7 @@
                   "start": 610.3,
                   "end": 613.11
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "The joke pictures G-d as the speaker himself is in this class: on the phone with his brother, learning this book; it identifies the student as his brother.",
-                "action": "replace",
-                "publishable": "\"He's busy learning *Shaar HaYichud*.\""
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2112,6 +2104,9 @@
         "43kfrjct",
         "twno5bil"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

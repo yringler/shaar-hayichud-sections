@@ -1948,7 +1948,7 @@
             {
               "kind": "mashal",
               "title": "Five oranges and one fishy",
-              "text": "That is breaking the point of math into a hierarchy of more basic ideas. \"Now my wife's going to teach today, she's starting to teach math and ABCs to the little kids at the *cheder* here.\" Before adding five and eight, \"I think they're just like counting things\": a picture of five oranges, and they circle four, five or six. Then adding: \"one fishy and one fishy and that equals two fishies.\" Later come the more advanced things.",
+              "text": "That is breaking the point of math into a hierarchy of more basic ideas. Little kids starting math, before adding five and eight, are just counting things: a picture of five oranges, and they circle four, five or six. Then adding: \"one fishy and one fishy and that equals two fishies.\" Later come the more advanced things.",
               "join": true,
               "audio": [
                 {
@@ -1957,15 +1957,7 @@
                   "start": 350.82,
                   "end": 403.22
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names his wife's teaching job at the local school.",
-                "action": "replace",
-                "publishable": "That is breaking the point of math into a hierarchy of more basic ideas. Little kids starting math, before adding five and eight, are just counting things: a picture of five oranges, and they circle four, five or six. Then adding: \"one fishy and one fishy and that equals two fishies.\" Later come the more advanced things."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2329,7 +2321,7 @@
             {
               "kind": "mashal",
               "title": "Three lines make an A",
-              "text": "**So, too, a line is also *hiyuli* for the *shetach* of letters, to be able to write them in a length and a width.** \"My wife's teaching them\" the ABCs. \"Kids, do you know how to write the ABCs?\" \"No.\" \"Well, can you make a line?\" \"Yeah.\" \"Well if you can make a line, then you can make the ABCs. Look, I'll show you.\" A line here, one here, one here, \"and now you have an A.\" Put the same three another way and you have an N, or a Y. \"You know, it's magic... Magic lines.\" The *Kav* is a *hiyuli* to make any letters.",
+              "text": "**So, too, a line is also *hiyuli* for the *shetach* of letters, to be able to write them in a length and a width.** Children learning the ABCs: \"Kids, do you know how to write the ABCs?\" \"No.\" \"Well, can you make a line?\" \"Yeah.\" \"Well if you can make a line, then you can make the ABCs. Look, I'll show you.\" A line here, one here, one here, \"and now you have an A.\" Put the same three another way and you have an N, or a Y. \"You know, it's magic... Magic lines.\" The *Kav* is a *hiyuli* to make any letters.",
               "audio": [
                 {
                   "lecture": "39 - Chap- 14-5 The Kav (M) (End).mp3",
@@ -2337,15 +2329,7 @@
                   "start": 217.78,
                   "end": 276
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Mentions that his wife teaches the children.",
-                "action": "replace",
-                "publishable": "**So, too, a line is also *hiyuli* for the *shetach* of letters, to be able to write them in a length and a width.** Children learning the ABCs: \"Kids, do you know how to write the ABCs?\" \"No.\" \"Well, can you make a line?\" \"Yeah.\" \"Well if you can make a line, then you can make the ABCs. Look, I'll show you.\" A line here, one here, one here, \"and now you have an A.\" Put the same three another way and you have an N, or a Y. \"You know, it's magic... Magic lines.\" The *Kav* is a *hiyuli* to make any letters."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2874,6 +2858,9 @@
       "lines": [
         "ogwo4i63"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

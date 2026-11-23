@@ -249,11 +249,10 @@ Flagged, with the precedent:
   Markel's website" (17), the Rabbi Hollander story (26): `named-person`.
   Rebbe stories told with reverence, and a name used only as an example of
   wealth, are not flagged.
-- **Private**: the student Shmuel, in a block of its own each time he is
-  named (27-29); his wife's teaching at the local cheder (14); his nephew's
-  wedding (28). The permission covers his classes, not his family or
-  students, so these stay flagged. A passing, unnamed "my nephew" anecdote
-  (29) was left.
+- **Private**: the student Shmuel (27-29), his wife's teaching at the local
+  cheder (14) and his nephew's wedding (28) are now written without the
+  person (STYLE.md, People in the class): "a friend you know", "little kids
+  starting math", "a little kid who puts on his father's hat". Not flagged.
 - **Crude**: "angel poop" (14), drugs "laced with rat poison" (17), the
   *tachas* joke (31, mild).
 - **The one in chapter 10**: a charitable foundation is "a machine" that

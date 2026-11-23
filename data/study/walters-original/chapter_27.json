@@ -444,7 +444,7 @@
             {
               "kind": "mashal",
               "title": "Who are you?",
-              "text": "You get to know Him a little from His wisdom, His kindness, all these things, but what you know is not tangible. Like a person: \"I know you, as much as I know you, after all of our experiences together and sitting next to you in 770.\" But asked \"Who are you?\", I still cannot explain your *etzem* (essence): \"It's just you, it's just Shmuel.\" I see you in all kinds of things, \"That's a you kind of thing,\" a certain style. That revelation of the person is *b'li ma*; the vessel is tangible.",
+              "text": "You get to know Him a little from His wisdom, His kindness, all these things, but what you know is not tangible. Like a friend you know, as much as you know him, after all your experiences together. Asked \"Who is he?\", you still cannot explain his *etzem* (essence): \"It's just him.\" You see him in all kinds of things, \"That's a him kind of thing,\" a certain style. That revelation of the person is *b'li ma*; the vessel is tangible.",
               "audio": [
                 {
                   "lecture": "39 - Chap- 27-1 Oros and Keilim (M).mp3",
@@ -452,15 +452,7 @@
                   "start": 342.66,
                   "end": 408.94
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names a student in the class (Shmuel) and where they sit together (770).",
-                "action": "replace",
-                "publishable": "You get to know Him a little from His wisdom, His kindness, all these things, but what you know is not tangible. Like a friend you know, as much as you know him, after all your experiences together. Asked \"Who is he?\", you still cannot explain his *etzem* (essence): \"It's just him.\" You see him in all kinds of things, \"That's a him kind of thing,\" a certain style. That revelation of the person is *b'li ma*; the vessel is tangible."
-              }
+              ]
             },
             {
               "kind": "keyPoint",
@@ -1111,7 +1103,7 @@
             {
               "kind": "mashal",
               "title": "Saying a person's name",
-              "text": "*Atzilus* is like the soul in the body. Say \"Shmuel\" and people picture you: your body with your consciousness in it. Unless I specify your inner self, detached from your body, or the expression of you in your work, which would be like *Beriya*, *Yetzira* and *Asiya*, I mean you, the center: *Atzilus*.",
+              "text": "*Atzilus* is like the soul in the body. Say a person's name and people picture him: his body with his consciousness in it. Unless I specify his inner self, detached from his body, or the expression of him in his work, which would be like *Beriya*, *Yetzira* and *Asiya*, I mean him, the center: *Atzilus*.",
               "audio": [
                 {
                   "lecture": "40 - Chap- 27-2 Oros and Keilim (M).mp3",
@@ -1119,15 +1111,7 @@
                   "start": 811.64,
                   "end": 851.96
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names a student in the class (Shmuel).",
-                "action": "replace",
-                "publishable": "*Atzilus* is like the soul in the body. Say a person's name and people picture him: his body with his consciousness in it. Unless I specify his inner self, detached from his body, or the expression of him in his work, which would be like *Beriya*, *Yetzira* and *Asiya*, I mean him, the center: *Atzilus*."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -3256,6 +3240,9 @@
     },
     {
       "text": "Review (2026-11-23): the flag on faith healing (45 w547) was removed by the reviewer: printed as said."
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

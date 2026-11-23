@@ -180,6 +180,14 @@ of the class, and often the part a student remembers.
   recollection, an opinion he marks as his own, a disagreement with a reading.
 - In a `story` or `aside`, tell it as he tells it, in the third person about
   him if he is in it.
+- **People in the class.** When he uses someone present or close as his
+  example (a student by name, the student's wife, his own wife, son or
+  grandson), write the same point without the person: "a frum woman who is
+  into learning", "a small child learning his letters", "a friend you have
+  known for years". Never put their name, family or circumstances in the
+  text; the example loses nothing. This is the one place the text does not
+  keep what he said, so it needs no flag. Flag `private` only when the point
+  cannot be made without the person.
 
 ## Faithfulness
 
@@ -209,7 +217,7 @@ Flag a block with `sensitivity` when it does any of these:
 | `politics` | partisan or political opinions |
 | `crude` | crude language or imagery |
 | `health-or-legal` | medical, psychological, legal or financial advice a reader might act on |
-| `private` | personal details of a student, the family, the teacher |
+| `private` | personal details that cannot be written out of the point (see People in the class) |
 | `other` | anything else you would not print with his name on it without asking him |
 
 ```json

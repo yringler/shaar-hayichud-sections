@@ -5,7 +5,7 @@ description: Write or revise one chapter's study guide file (data/study/<series>
 
 # Write one chapter's study guide
 
-Skill version 4. You produce exactly one file:
+Skill version 5. You produce exactly one file:
 `data/study/<series>/chapter_NN.json`. You are given a series id (a
 directory under `data/study/`, e.g. `markel-advanced`) and a chapter number.
 
@@ -144,6 +144,8 @@ it. For each block, the question is "did he say this, here?"
       the world. Compare `study-check`'s coverage lines: each class should
       be near 100% cited plus omitted.
 - [ ] Nothing was softened. Where his wording is blunt, the block is.
+- [ ] No one in the class is in the text: a student, his wife, the
+      teacher's family appear as "a frum woman", "a small child", "a friend".
 - [ ] Condensed, not transcribed: each block is about a third to a half of
       the words it cites, and still has his examples and best lines.
 - [ ] Every block a public edition could not print as it stands has
