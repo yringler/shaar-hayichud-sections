@@ -68,3 +68,8 @@ Flag freely (see STYLE.md). Seen so far: remarks about women (chapter 10),
 "idol worship" said of other religions and of meditation practices
 (chapter 1), remarks on communism and on foundations and bureaucracies
 (chapter 10), jokes built on what husbands and wives want (chapter 9).
+
+"Idiot" (of other people, of a character in a joke, or of himself and
+his listeners) is always flagged (`crude` when it is only the word), with a
+`replace` text that drops or swaps the word: the reviewer prefers the
+softened version wherever he says it.
