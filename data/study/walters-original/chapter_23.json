@@ -6,8 +6,8 @@
   "status": "draft",
   "provenance": {
     "method": "generated",
-    "from": "study-chapter skill, version 3",
-    "date": "2026-11-22"
+    "from": "study-chapter skill, version 5",
+    "date": "2026-11-23"
   },
   "lectures": [
     {
@@ -348,7 +348,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**That's why it is called Atik Yomin.** It is usually translated \"the Ancient of Days\", but *atik* can mean old, removed, or to copy. Here it means removed from the days of the world, from the *middos*, as in **the one that uproots mountains**.\n\n**So all this is known**: the *pnimiyus* of *Keser* is removed from the world, the end of the *ma'atzil*; its *chitzoniyus* (outer side) relates to the world, the root and head of the *ne'etzalim*.",
+              "text": "**That's why it is called Atik Yomin.** It is usually translated \"the Ancient of Days\", but *atik* can mean old, removed, or to copy. Here it means removed from the days of the world, the *middos*, as in **the one that uproots mountains**.\n\n**So all this is known**: the *pnimiyus* of *Keser*, removed from the world, is the end of the *ma'atzil*; its *chitzoniyus* (outer side), which relates to the world, is the root and head of the *ne'etzalim*.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -360,7 +360,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "As usual, the Mitteler Rebbe opens a topic with its sources and basic kabbalistic terms, and only then gives the *meshalim* (analogies) and explanations. Having quoted *Etz Chaim* on this level, he now adds a question, almost.",
+              "text": "As usual, the Mitteler Rebbe opens a topic with its sources and basic kabbalistic terms, and only then gives the *meshalim* (analogies) and explanations. Having quoted *Etz Chaim*, he now adds what is almost a question.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -461,7 +461,7 @@
               "kind": "question",
               "question": "So is the Keser one level, or is it two levels?",
               "askedBy": "teacher",
-              "text": "Obviously it is both. *Keser* is one level: *Atik* and *Arich Anpin* are not two different things. Yet the two aspects are distinct: as *Atik Yomin* it is removed, as *Arich Anpin* it is enclothed in the worlds. How that works is what we have to understand, and now he begins a *mashal* (analogy) to explain it.",
+              "text": "Obviously it is both. *Keser* is one level: *Atik* and *Arich Anpin* are not two things. Yet the two aspects are distinct: as *Atik Yomin* it is removed, as *Arich Anpin* it is enclothed in the worlds. How that works is what we have to understand, and now he begins a *mashal* (analogy) to explain it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -503,7 +503,7 @@
             {
               "kind": "mashal",
               "title": "Pleasure and desire",
-              "text": "**The explanation of these matters is known**: **the mashal for this is pleasure and desire.** The *mashal* for *Atik Yomin* is pleasure, and the *mashal* for *Arich Anpin* is desire.",
+              "text": "**The explanation of these matters is known**: **the mashal for this is pleasure and desire**, pleasure for *Atik Yomin* and desire for *Arich Anpin*.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -581,7 +581,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Every desire has a pleasure in it, has a pleasure behind it, and if it wasn't for that pleasure, then you wouldn't want it at all.** You want a thing because you will enjoy it. **For example the desire for riches, or the desire for honor**: if it was not fun to be rich, or pleasurable to be honored, **you wouldn't want it at all**.",
+              "text": "**Every desire has a pleasure in it, has a pleasure behind it, and if it wasn't for that pleasure, then you wouldn't want it at all.** You want a thing because you will enjoy it. **For example the desire for riches, or the desire for honor**: were it no fun to be rich or to be honored, **you wouldn't want it at all**.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -594,7 +594,7 @@
             {
               "kind": "mashal",
               "title": "The tax form and the autographs",
-              "text": "If being rich were only a nuisance and a complicated tax form, people would not want it. If fame were only a pain, people taking your picture all the time and wanting your signature, with no pleasure behind it, nobody would want it.",
+              "text": "If being rich were only a nuisance and a complicated tax form, people would not want it. If fame were only a pain, people taking your picture all the time and wanting your signature, nobody would want it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -635,7 +635,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**If so, that means that the pleasure is the inner thing of the ratzon.** **Seemingly.** What gives rise to the desire is that you can get pleasure from the thing, so the pleasure is the inner cause, the *pnimiyus*, and the desire is its outcome. First he enjoys being rich, or honored, and then comes the desire for riches or honor, to get that pleasure.\n\nThat is the way it seems. But it is not that simple. Why?",
+              "text": "**If so, that means that the pleasure is the inner thing of the ratzon.** **Seemingly.** What gives rise to the desire is the pleasure you can get from the thing, so the pleasure is the inner cause, the *pnimiyus*, and the desire its outcome: first he enjoys riches or honor, then comes the desire for them, to get that pleasure.\n\nSo it seems. But it is not that simple.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -720,7 +720,7 @@
             {
               "kind": "mashal",
               "title": "Food stuffed down the throat",
-              "text": "Even something normally pleasurable is not enjoyed if a person does not want it. In *halacha* (Jewish law), if someone stuffs food down another's throat against his will, he has no *hanaa* (benefit, enjoyment), which matters where the only problem is getting *hanaa*. The same whenever somebody is forced to do something.",
+              "text": "Even something normally pleasurable is not enjoyed if a person does not want it. In *halacha* (Jewish law), one who has food stuffed down his throat against his will has no *hanaa* (benefit, enjoyment), which matters where the only problem is getting *hanaa*. So whenever somebody is forced to do something.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -733,7 +733,7 @@
             {
               "kind": "mashal",
               "title": "The kid banging pots and pans",
-              "text": "A kid banging on pots and pans: it is noise, not music. But he enjoys it and everybody else hates it. He wants to make the noise, so he enjoys it; they do not want it, so they hate it.",
+              "text": "A kid banging on pots and pans makes noise, not music, yet he enjoys it and everybody else hates it: he wants to make the noise, and they do not want it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -746,7 +746,7 @@
             {
               "kind": "mashal",
               "title": "The favorite CD",
-              "text": "Music is the opposite case, inherently pleasurable, yet if somebody does not want it he will not enjoy it. If he wants quiet right now, even his favorite CD is painful. You could say his mood makes it painful, so he does not want it because he does not enjoy it.\n\nBut say somebody becomes *frum* (religiously observant) and no longer wants non-Jewish music, and someone puts it on in the room. A lot of times he is disturbed by it. Nothing made him stop liking it; he just does not want it. So when you decide you want something, you enjoy it.",
+              "text": "Music is the opposite case, inherently pleasurable, yet someone who wants quiet right now finds even his favorite CD painful. You could say his mood makes it painful, so he does not want it because he does not enjoy it.\n\nBut take someone who becomes *frum* (religiously observant) and no longer wants non-Jewish music: when someone puts it on in the room, he is often disturbed by it. Nothing made him stop liking it; he just does not want it. So when you decide you want something, you enjoy it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -834,7 +834,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "So the pleasure seemed to be the *pnimiyus*, and then the *ratzon*. Now he says **you cannot have one without the other**: **you can't have a desire without a pleasure, and you can't have a pleasure without a desire.** Neither can be the *pnimiyus* that stands alone with the other coming from it. They are always interdependent.",
+              "text": "So pleasure seemed the *pnimiyus*, and then *ratzon* did. Now he says **you cannot have one without the other**: **you can't have a desire without a pleasure, and you can't have a pleasure without a desire.** Neither is a *pnimiyus* standing alone with the other coming from it; they are always interdependent.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -846,7 +846,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**Based on this**, **we must say that they are really one entity**, **because they can only exist when you have them both together.** Were desire and pleasure separate, you could have one without the other. You never do; one may be dominant, but they are always together, \"two sides of the same coin.\"",
+              "text": "**Based on this**, **we must say that they are really one entity**, **because they can only exist when you have them both together.** Were desire and pleasure separate, you could have one without the other, and you never do; one may be dominant, but they are always together, two sides of the same coin.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -858,7 +858,7 @@
             },
             {
               "kind": "explanation",
-              "text": "*Ratzon* and *taanug* both mean connecting yourself to something outside yourself. If you connect to something you do not have yet, or that is not fully revealed, it is *ratzon*: you go towards it. When you get it, it is pleasure. You get the pleasure because you want it, and want it because of the pleasure, since both come from a third, higher thing: that you connect yourself to it.",
+              "text": "*Ratzon* and *taanug* both mean connecting yourself to something outside yourself. If it is something you do not have yet, or that is not fully revealed, it is *ratzon*: you go towards it; when you get it, it is pleasure. You get the pleasure because you want it, and want it because of the pleasure, since both come from a third, higher thing: that you connect yourself to it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -871,7 +871,7 @@
             {
               "kind": "mashal",
               "title": "It's his sound",
-              "text": "So the kid with the pots and pans enjoys it because he wants it: he decided to do it, put himself into it, and now the sound is beautiful to him, \"'cause it's his sound.\"\n\nAnd where the desire is less clear and you mainly see the pleasure, a person enjoys something because he associates himself with it: \"Ah, that reminds me of myself.\" Seeing himself in it, he goes after it.",
+              "text": "So the kid with the pots and pans enjoys it because he wants it: he decided to do it and put himself into it, so the sound is beautiful to him, \"'cause it's his sound.\"\n\nAnd where the desire is less clear and you mainly see the pleasure, a person enjoys something because he associates himself with it, because it reminds him somehow of himself; seeing himself in it, he goes after it.",
               "audio": [
                 {
                   "lecture": "01 - Chap- 23-1 Keser (M).mp3",
@@ -896,7 +896,7 @@
             {
               "kind": "mashal",
               "title": "The mouth and the stomach",
-              "text": "If right now you do not want something, it is because right now you would not enjoy it. The desire to eat is amplified by hunger, and when you are full eating starts to hurt and the *taanug* is gone. Yet if you eat quickly when very hungry, your mouth still wants more while your stomach is full and it hurts.\n\nThat is a fight between two desires, the mouth's and the stomach's: it takes time for the stomach to tell the mouth to stop, and sweet things especially make you want more. But that is already a *ratzon murkav* (a composite will), many desires for a reason, not the *etzem ratzon* or the *etzem taanug*, with a whole bunch of *sechel* (intellect) involved: the whole thing of *Tikun*, discussed a little already.",
+              "text": "If you do not want something right now, it is because you would not enjoy it right now. The desire to eat is amplified by hunger, and when you are full, eating hurts and the *taanug* is gone. Yet eat quickly when very hungry, and your mouth still wants more while your stomach is full and it hurts.\n\nThat is a fight between two desires, the mouth's and the stomach's: it takes time for the stomach to tell the mouth to stop, and sweet things especially make you want more. But that is already a *ratzon murkav* (a composite will), many desires with a reason, not the *etzem ratzon* or the *etzem taanug*, with a whole lot of *sechel* (intellect) involved: the whole matter of *Tikun*, touched on already.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -968,7 +968,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**All of this applies whether you're speaking about an essential and simple pleasure and desire, or… a pleasure and desire that is murkav, it's complex**: based on a reason, wanting this this much and that that much, a whole system of desires, about something separate from you.\n\nAn essential *ratzon* and *taanug* is part of you: you desire part of yourself, like the *chafetz chesed* (the desire for kindness) of chapter 10. You want to be a nice person; you enjoy being nice.",
+              "text": "**All of this applies whether you're speaking about an essential and simple pleasure and desire, or… a pleasure and desire that is murkav, it's complex**: based on a reason, this much of one and that much of another, a whole system of desires about something separate from you.\n\nAn essential *ratzon* and *taanug* is part of you: you desire part of yourself, like the *chafetz chesed* (the desire for kindness) of chapter 10. You want to be a nice person; you enjoy being nice.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1125,7 +1125,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**In general, we see that the nature of the soul is that it's drawn after anything that is pleasurable, until a person's whole self, their whole essence can get caught up in this pleasure.** Most powerfully, even **when it's a taanug murkav in just a very specific thing that's separate from themselves**, a person can get totally obsessed with it.",
+              "text": "**In general, we see that the nature of the soul is that it's drawn after anything that is pleasurable, until a person's whole self, their whole essence can get caught up in this pleasure.** Most powerfully, even **when it's a taanug murkav in just a very specific thing that's separate from themselves**, a person can become totally obsessed with it.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1137,7 +1137,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**For example, let's say honor**: for some people honor and fame become their whole life. **Or money**: a separate thing, yet the pleasure in it consumes them. **Or… in chachma**: the classic professor, whose whole life is his intellectual work. In *middos*: some live for *chesed* (kindness), to be kind; some for *din* (judgement), justice; in *netzach* (victory) some are very competitive, always one up. **Hispaarus means to show off**: needing everybody to \"ooh and ahh\" at them. **And so too with any other midda**: *yesod*, a teacher whose whole life is giving over; *Malchus*, to be a king.",
+              "text": "**For example, let's say honor**: for some people honor and fame become their whole life. **Or money**: a separate thing, yet the pleasure in it consumes them. **Or… in chachma**: the classic professor, whose whole life is his intellectual work. In *middos*, some live to be kind, *chesed*, some for *din* (judgement), justice; in *netzach* (victory) some are very competitive, always one up. **Hispaarus means to show off**: some need everybody to praise them and ooh and ahh. **And so too with any other midda**: *yesod*, a teacher whose whole life is giving over; *Malchus*, to be a king.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1243,7 +1243,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**Therefore the soul will be drawn after any pleasure, even a oneg murkav, even something separate from it, and it will run away from pain, which is the opposite of pleasure.** The soul is this ability for pleasure: not quite its essence, as will be said, but almost. So it goes after anything pleasurable, because that is what it is, and it flees pain, which takes the soul out of the thing.",
+              "text": "**Therefore the soul will be drawn after any pleasure, even a oneg murkav, even something separate from it, and it will run away from pain, which is the opposite of pleasure.** The soul is this ability for pleasure: not quite its essence, as will be said, but almost. It goes after anything pleasurable because that is what it is, and flees pain, which takes the soul out of the thing.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1295,7 +1295,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**These are two equally weighed lines**: pleasure and pain, polar opposites, are totally equal. **To the exact same extent that the soul, its light, becomes full from something that's pleasurable**, expressing itself in all its *sechel* and *middos*, a great *hispashtus* (spreading forth), **so too with the reverse**: pain **diminishes the light of the soul**. A person in pain withdraws into himself, uses neither *sechel* nor *middos*, and everything becomes dry and mechanical.",
+              "text": "**These are two equally weighed lines**: pleasure and pain, polar opposites, are totally equal. **To the exact same extent that the soul, its light, becomes full from something that's pleasurable**, putting itself into all its *sechel* and *middos*, a great *hispashtus* (spreading forth), **so too with the reverse**: pain **diminishes the light of the soul**. A person in pain withdraws into himself, uses neither *sechel* nor *middos*, and everything becomes dry and mechanical.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1307,7 +1307,7 @@
             },
             {
               "kind": "explanation",
-              "text": "That is why something traumatic can make a person withdraw, maybe from life in general, until his soul no longer expresses itself. A big pleasure brings out all his qualities: he does everything better, with much more life and energy, because pleasure draws the soul into everything.",
+              "text": "That is why something traumatic can make a person withdraw, perhaps from life in general, until his soul no longer expresses itself; while a big pleasure brings out all his qualities, and he does everything better, with much more life and energy.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1319,7 +1319,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "This is what *Chassidus* (Chassidic teaching) does in G-dliness: it reveals the G-dly *taanug* in everything. And that is why it brings so much more vitality into everything.",
+              "text": "This is what *Chassidus* (Chassidic teaching) does in G-dliness: it reveals the G-dly *taanug* in everything, and so brings much more vitality into everything.",
               "audio": [
                 {
                   "lecture": "02 - Chap- 23-2 Keser (M) .mp3",
@@ -1402,7 +1402,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**From this we see**, **this shows us the essential nature of the soul**, **that it is pleasure**. **And the main proof is the fact that the soul will run away and be withdrawn from pain.** **This is more of a proof than the pleasure**: from the pull of pleasure you could say the soul is something else and pleasure is \"just an add-on, a bonus.\" That pain takes the soul away shows that this is what it is.",
+              "text": "**From this we see**, **this shows us the essential nature of the soul**, **that it is pleasure**. **And the main proof is the fact that the soul will run away and be withdrawn from pain.** **This is more of a proof than the pleasure**: from the pull of pleasure you could say the soul is something else and pleasure only a bonus; that pain takes the soul away shows that this is what it is.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1555,7 +1555,7 @@
             {
               "kind": "digression",
               "title": "Klos hanefesh comes from the revelations, not the essence",
-              "text": "This happens only from the *giluyim* (revelations) of G-dliness, which are more in the higher worlds, so a great pleasure in them draws the soul up and away from the body. The essence of G-dliness is found *davka* (precisely) in the physical world, since G-d chose a *dira b'tachtonim* (a dwelling below). Recognizing that brings *shov* (return) rather than *ratzo* (running out): the soul wants to be here, and its pleasure here is greater, for here there is *hasagas hamahus* (a grasp of the essence) of G-d Himself. A person who does not appreciate that can have *klos hanefesh*.",
+              "text": "This happens only from the *giluyim* (revelations) of G-dliness, which are more in the higher worlds, so a great pleasure in them draws the soul up and away from the body. The essence of G-dliness is found *davka* (precisely) in the physical world, since G-d chose a *dira b'tachtonim* (a dwelling below). Recognizing that brings *shov* (return) rather than *ratzo* (running out): the soul wants to be here, and its pleasure here is greater, for here there is *hasagas hamahus* (a grasp of the essence) of G-d Himself. One who does not appreciate that can have *klos hanefesh*.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1619,7 +1619,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And on the other hand, the soul can also be completely exhausted… with the diminishing of the light completely, through and through, from intense pain.** That too is *klos hanefesh*. In depression a person loses his pleasure in life, his soul is removed from his body, and it can go so far that he actually dies.",
+              "text": "**And on the other hand, the soul can also be completely exhausted… with the diminishing of the light completely, through and through, from intense pain.** That too is *klos hanefesh*. In depression a person loses his pleasure in life and his soul is removed from his body, so far that he can actually die.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1657,7 +1657,7 @@
             },
             {
               "kind": "explanation",
-              "text": "And you see the other side too: if somebody has a great pleasure in something, he will forget and drop everything else and just totally put himself into this thing.",
+              "text": "And the other side too: someone with a great pleasure in something will forget and drop everything else and put himself totally into it.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1788,7 +1788,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**This is really what maintains this nature**: being a nice person means he derives a lot of pleasure from doing nice things, so he wants to do them all the time, **to the point that the main vitality of his soul, his whole life, comes through this pleasure of goodness and kindness.**",
+              "text": "**This is really what maintains this nature**: being a nice person means he gets so much pleasure from doing nice things that he wants to do them all the time, **to the point that the main vitality of his soul, his whole life, comes through this pleasure of goodness and kindness.**",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1800,7 +1800,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "This does not mean he only wants the pleasure and not the kindness. His pleasure is in helping the other person; he is not looking to help himself. It means he associates himself with kindness: that is who he is, and his whole self, his whole ego (\"not in a negative sense of ego, but his whole being\"), comes through kindness.",
+              "text": "This does not mean he wants only the pleasure and not the kindness: his pleasure is in the other person being helped, not in helping himself. It means he associates himself with kindness. That is who he is, and his whole sense of self, his whole ego in no negative sense, comes through kindness.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1812,7 +1812,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "So the more kindness he does, the more pleasure, because it expresses his self: he sees himself as a nice person, so in each kindness he sees himself. And again, his sense of self is that he is selfless, so this takes nothing from the selflessness of his kindness. This is not someone who does kindness so that people will praise him. He really wants the kindness.",
+              "text": "So the more kindness he does, the more pleasure, because each kindness expresses the self he sees: a nice person. And again, his sense of self is that he is selfless, so this takes nothing from the selflessness of his kindness. This is not someone who does kindness so that people will praise him; he really wants the kindness.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1856,7 +1856,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**And on the other side, somebody that's naturally cruel**: inflicting pain on somebody makes him feel great, makes him feel big, and the more cruelty he can impose on people, or animals or whatever, the happier he is.",
+              "text": "**And on the other side, somebody that's naturally cruel**: inflicting pain makes him feel great, makes him feel big, and the more cruelty he can impose on people, or animals, the happier he is.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1950,7 +1950,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**And if he will not win, then he'll get sick.** He is so caught up in competition that he has to win, and losing disturbs him so much that it makes him ill.",
+              "text": "**And if he will not win, then he'll get sick**: losing disturbs him so much that it makes him ill.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1962,7 +1962,7 @@
             },
             {
               "kind": "aside",
-              "text": "I think you see this with a lot of world champions. Some are good sports who enjoy the game. But some, apparently like Bobby Fischer with chess, made winning their whole self, their whole ego: to crush the other person, viciously, and even get sick over losing.",
+              "text": "Rabbi Walters thinks you see this with a lot of world champions. Some are good sports who enjoy the game. But some, apparently like Bobby Fischer with chess, made winning their whole self, their whole ego: to crush the other person, viciously, and even get sick over losing.",
               "audio": [
                 {
                   "lecture": "03 - Chap- 23-3 Keser (M)  .mp3",
@@ -1977,7 +1977,7 @@
                 ],
                 "reason": "Names Bobby Fischer, a public figure who died in 2008, and describes him as vicious and sick over losing.",
                 "action": "replace",
-                "publishable": "I think you see this with a lot of world champions. Some are good sports who enjoy the game. But for some, winning is their whole self, their whole ego: to crush the other person, and even get sick over losing."
+                "publishable": "Rabbi Walters thinks you see this with a lot of world champions. Some are good sports who enjoy the game. But some made winning their whole self, their whole ego: to crush the other person, and even get sick over losing."
               }
             }
           ]
@@ -2093,7 +2093,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**Like it says in the Gemara**, one of the sages of the *Talmud* said it: **if it wouldn't be for the joy of study, then I would not be able to learn so well.**",
+              "text": "**Like it says in the Gemara**, in the words of one of the sages of the *Talmud*: **if it wouldn't be for the joy of study, then I would not be able to learn so well.**",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2105,7 +2105,7 @@
             },
             {
               "kind": "keyPoint",
-              "text": "It is not a matter of discipline. You can force yourself to do something, but to be good at it and accomplish you have to be invested in it. Forcing yourself does help, because it comes from your *koach haratzon* (power of will), the same thing as *taanug*: you connect yourself to it, and the effort gives you pleasure in it. But that is not the point here.",
+              "text": "It is not a matter of discipline. You can force yourself to do something, but to be good at it and accomplish you have to be invested in it. Forcing yourself does help, because it comes from your *koach haratzon* (power of will), which is the same thing as *taanug*: you connect yourself to it, and the effort gives you pleasure in it. But that is not the point here.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2178,7 +2178,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**As is known, the idea that it says that the wisdom of a person enlightens his face**: an idea makes the face shine, and a *chacham b'etzem* (wise in essence) has a face always shining. **Because the liquid** over the brain, between skull and brain, **is physically the hiyuli of taanug, it's the essence of pleasure. And that liquid is also the source of sechel**, the *koach hamaskil* (the power of insight).",
+              "text": "**As is known, the idea that it says that the wisdom of a person enlightens his face**: an idea makes the face shine, and the face of a *chacham b'etzem* (wise in essence) is always shining. **Because the liquid** between skull and brain **is physically the hiyuli of taanug, it's the essence of pleasure. And that liquid is also the source of sechel**, the *koach hamaskil* (the power of insight).",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2190,7 +2190,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Membranes over the brain filter this liquid, and how it is filtered activates *sechel* (more on this later). When it reaches the brain it both triggers thought and gives pleasure. So intellect is a localized, specific pleasure, a pleasure in a certain form, and that pleasure comes out as a shining face: more blood flow, so it shines.",
+              "text": "Membranes over the brain filter this liquid, and how it is filtered activates *sechel* (more on this later). When it reaches the brain it both triggers thought and gives pleasure. So intellect is a localized, specific pleasure, a pleasure in a certain form, and that pleasure comes out as a shining face, with more blood flow to it.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2202,7 +2202,7 @@
             },
             {
               "kind": "explanation",
-              "text": "A very happy or excited person's face shines; when you drink, your face gets red. Different pleasures give different colors. So a very wise person has a certain glow from this pleasure, and so does a very kind one: he is always happy, because he enjoys life. \"Even the painful parts he enjoys.\"",
+              "text": "A very happy or excited person's face shines, as a drink turns the face red, and different pleasures give different colors. So a very wise person has a certain glow from this pleasure, and so does a very kind one: he is always happy, because he enjoys life, even the painful parts.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2259,7 +2259,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**However**, **unique is ratzon among all of the kochos of the nefesh** (the powers of the soul), **that only with ratzon do we see that without ratzon there will be no taanug.** *Taanug* keeps all the powers going, but only *ratzon* is also a source of *taanug*. Without *chachma* you still have *taanug*; without *ratzon* you do not.",
+              "text": "**However**, **unique is ratzon among all of the kochos of the nefesh** (the powers of the soul), **that only with ratzon do we see that without ratzon there will be no taanug.** *Taanug* keeps all the powers going, but only *ratzon* is also a source of *taanug*: without *chachma* you still have *taanug*; without *ratzon* you do not.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2271,7 +2271,7 @@
             },
             {
               "kind": "explanation",
-              "text": "If you do not enjoy *chachma* or *bina* you will not have them: you will not understand, or be good at logic. But without *bina* or *chachma* you still have *taanug*. It is one-way: *taanug* keeps the *sechel* and *middos* going, but you do not need them to have *taanug*. \"You don't have to be smart to enjoy things\"; being smarter does not mean more *taanug*. With *ratzon*, though, if you do not want something you will not enjoy it. **And this we see even with all the pratei middos** (the particular attributes).",
+              "text": "If you do not enjoy *chachma* or *bina* you will not have them: you will not understand, or be good at logic. But without *bina* or *chachma* you still have *taanug*. It is one-way: *taanug* keeps the *sechel* and *middos* going, but you do not need them to have *taanug*. You don't have to be smart to enjoy things, and being smarter does not mean more *taanug*. With *ratzon*, though, if you do not want something you will not enjoy it. **And this we see even with all the pratei middos** (the particular attributes).",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2385,7 +2385,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**If you don't want chesed or if you don't want din, you won't enjoy it.** Even somebody who normally enjoys *chesed* will not enjoy it at a time he does not want it, say because it will be bad for him. **And also if he doesn't want to study, he doesn't want to come up with ideas now, you won't enjoy it at all.**",
+              "text": "**If you don't want chesed or if you don't want din, you won't enjoy it.** Even someone who normally enjoys *chesed* will not enjoy it when he does not want it, say because it will be bad for him. **And also if he doesn't want to study, he doesn't want to come up with ideas now, you won't enjoy it at all.**",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2398,7 +2398,7 @@
             {
               "kind": "mashal",
               "title": "Playing with a little kid",
-              "text": "**If a person doesn't want to win at all, then he won't have a pleasure in winning.** Playing with a little kid, you want him to win, so winning yourself gives you no pleasure. **And the same thing with showing off**: if you want people to make a big deal about you, you enjoy it; if you want to keep things quiet, it makes you uncomfortable.",
+              "text": "**If a person doesn't want to win at all, then he won't have a pleasure in winning**: playing with a little kid, you want him to win, so winning yourself gives you no pleasure. **And the same thing with showing off**: if you want people to make a big deal about you, you enjoy it; if you want to keep things quiet, it makes you uncomfortable.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2410,7 +2410,7 @@
             },
             {
               "kind": "explanation",
-              "text": "**And the same thing with the other pleasures of this world, like money and honor and the like**: **if a person doesn't want them, then he won't enjoy them at all.** Money? \"What do I need it for? It's a headache.\" And the same with honor.",
+              "text": "**And the same thing with the other pleasures of this world, like money and honor and the like**: **if a person doesn't want them, then he won't enjoy them at all.** Money is then only a headache, and so too honor.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2493,7 +2493,7 @@
             },
             {
               "kind": "explanation",
-              "text": "*Taanug* and *ratzon* mean connecting and investing yourself in something: the more of them, the more you succeed and express yourself there, the soul's light spreading into it. That is why they are said to be like the *etzem hanefesh*: not the essence itself, but what connects it to something else. Two sides of one coin: *ratzon* goes out to the thing, *taanug* is what comes back to you from it.",
+              "text": "*Taanug* and *ratzon* mean connecting and investing yourself in something: the more of them, the more you succeed and express yourself there, the soul's light spreading into it. That is why they are said to be like the *etzem hanefesh*: not the essence itself, but what connects it to something else. Two sides of one coin: *ratzon* goes out to the thing; *taanug* is what comes back to you from it.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2505,7 +2505,7 @@
             },
             {
               "kind": "explanation",
-              "text": "In *ratzon* your connection to the thing is felt as a void, and you rush to fill the form you chose. Once you have it and filled that form, you get the pleasure of feeling yourself in it: \"Ah, it expresses me.\" **And therefore also with every one of the soul's powers, their main existence or continuance comes from the pleasure and the desire.**",
+              "text": "In *ratzon* your connection to the thing is felt as a void, and you rush to fill the form you chose. Once you have it and have filled that form, you get the pleasure of feeling yourself in it, that it expresses you. **And therefore also with every one of the soul's powers, their main existence or continuance comes from the pleasure and the desire.**",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2590,7 +2590,7 @@
             {
               "kind": "mashal",
               "title": "The friend who stops you in a rush",
-              "text": "You are in a rush to go do something you are excited about, not even a meeting you might miss, and a friend stops you to talk for a minute. Talking to him is no pain; you enjoy it. But right now it keeps you from what you want, so it is very painful; you are eaten up. It is painful automatically, because it stops what you want.",
+              "text": "You are in a rush to do something you are excited about, not even a meeting you might miss, and a friend stops you to talk for a minute. Talking to him is no pain; you enjoy it. But right now he keeps you from what you want, so it is very painful and you are eaten up: painful automatically, because it stops what you want.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2663,7 +2663,7 @@
           "blocks": [
             {
               "kind": "explanation",
-              "text": "**For example, if a person wants to love his enemy, he'll take pleasure in him.** **Or if somebody doesn't want his beloved**, **then he'll get pain from him**. If he wants his enemy for something, he enjoys him; and even the company of someone he likes, like the friend who stops you in a rush, is painful when he does not want it.",
+              "text": "**For example, if a person wants to love his enemy, he'll take pleasure in him.** **Or if somebody doesn't want his beloved**, **then he'll get pain from him**. Want your enemy for something and you enjoy his company; and the company of someone you like, like the friend who stops you in a rush, is painful when you do not want it.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2675,7 +2675,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Similarly, **if a person enjoys something, even if it's something that's hateful to him, that hurts him, he'll want it.** People develop a pleasure in alcohol or drugs: at first it tastes bad, it is disgusting and it totally messes you up, but because some pleasure comes from it, you want it.",
+              "text": "Likewise, **if a person enjoys something, even if it's something that's hateful to him, that hurts him, he'll want it.** People develop a pleasure in alcohol or drugs: at first it tastes bad, it is disgusting and it totally messes you up, but because some pleasure comes from it, you want it.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
@@ -2688,7 +2688,7 @@
             {
               "kind": "mashal",
               "title": "Donating blood",
-              "text": "**And if a person gets pain from something that's beloved to him, something that he likes, he won't want it.** A very kind person donates blood, and it hurts, or it makes him faint a little; because of that pain he does not want to do it anymore. It makes him kind of afraid.",
+              "text": "**And if a person gets pain from something that's beloved to him, something that he likes, he won't want it.** A very kind person donates blood, and it hurts, or makes him faint a little; because of that pain he no longer wants to, and is kind of afraid to.",
               "audio": [
                 {
                   "lecture": "04 - Chap- 23-4 Keser (M) (End).mp3",
