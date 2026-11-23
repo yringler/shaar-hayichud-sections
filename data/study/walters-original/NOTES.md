@@ -218,9 +218,9 @@ Flagged, with the precedent:
   Describing Arius as "this Christian" (1) is not flagged.
 - **Politics**: a single partisan side used as an example ("only the
   Republican side" in 1, "a liberal" in 19, liberalism in 26), church and
-  state (19), Israel and democracy (20, omit): `politics`, replaced with a
-  neutral word. Liberal and conservative named evenly as two leanings (17,
-  20) was left.
+  state (19): `politics`, replaced with a neutral word. Liberal and
+  conservative named evenly as two leanings (17, 20) was left, and the
+  reviewer removed the flag on Israel and democracy (20): printed as said.
 - **Women**: his own generalisations beyond a line (chapter 1, class 17:
   women's daas, multitasking, judges), boys and girls learning kashrus (2),
   "women get more emotional, because they're kalei daas" (32), and the
