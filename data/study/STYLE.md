@@ -359,6 +359,10 @@ Flag a block with `sensitivity` when it does any of these:
 - **"Goy", "goyim", "goyishe"** are his plain words for a non-Jew, non-Jews
   and non-Jewish. Where it is just the word, it is not flagged. Flag
   (`other-groups`) only contempt.
+- **Reform and Conservative** called heretics, "not rabbis", or outside
+  Torah: that is the classical halachic position, not his delivery, and is
+  not flagged (other-groups covers contempt beyond it: insults, mockery).
+  Criticism of *frum* camps and their ideas is still flagged as usual.
 - A wrong halacha or a wrong fact of history stated under his name is
   `other`, with a `publishable` text that drops the claim. A slip in a source
   (a wrong chapter or tractate) only goes in `notes`.

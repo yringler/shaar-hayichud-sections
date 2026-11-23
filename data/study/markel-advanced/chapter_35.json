@@ -1567,9 +1567,9 @@
                 "categories": [
                   "other-groups"
                 ],
-                "reason": "Calls the Reform and Conservative movements heretics and the ideas of some frum Jews ridiculous.",
+                "reason": "Says *frum* Jews today come up with \"ridiculous ideas\" and sell them as kosher Torah.",
                 "action": "replace",
-                "publishable": "They are *frum* Jews, and they are trying to be. We have gone so far down that *frum* Jews come up with ideas like these and present them as Torah. Still, he is not trying to be a heretic; he is a Yaakov, and his Judaism is still alive: even a Yaakov does not die. But his ideas are not connected to *daas elyon* (higher knowledge); what he says is not *daas Torah* (the Torah's view) anymore."
+                "publishable": "They are *frum* Jews, and they are trying to be; they are not like the Reform and Conservative, who were really heretics and wanted to be heretics. We have gone so far down that *frum* Jews come up with ideas like these and present them as Torah. Still, he is not trying to be a heretic; he is a Yaakov, and his Judaism is still alive: even a Yaakov does not die. But his ideas are not connected to *daas elyon* (higher knowledge); what he says is not *daas Torah* (the Torah's view) anymore."
               }
             },
             {
@@ -1857,13 +1857,12 @@
               ],
               "sensitivity": {
                 "categories": [
-                  "other-groups",
                   "named-person",
                   "other"
                 ],
                 "reason": "Groups Herzl with \"the original Reformers\" who went against observance (Herzl led the Zionist movement, not Reform).",
                 "action": "replace",
-                "publishable": "In fact most of the Jews who left observance did not deny the religion. They came to America and became disconnected. Many simply fell away, because they were Yaakov: they did not know that much, and slowly they got mixed in."
+                "publishable": "In fact most of the Reform, the Conservative and the *freie Yidden* (non-observant Jews) did not deny the religion. They came to America and became disconnected. Unlike the original Reformers, who went against *frumkeit* (observance), many simply fell away, because they were Yaakov: they did not know that much, and slowly they got mixed in."
               }
             },
             {
