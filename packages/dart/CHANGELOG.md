@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.1
+
+- The first published 1.6 release: 1.6.0 was never published to pub.dev.
+  No code changes from 1.6.0.
+
 ## 1.6.0
 
 - Public study guides (`/data/v1/study/`): `StudyIndex` (`study/index.json`:
