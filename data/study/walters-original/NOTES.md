@@ -121,7 +121,10 @@ the sensitivity section below is not optional reading.
   his hot cocoa and fuzzy slippers and the knock at the door; the two
   beggars on the park bench ("He gave me a coat." "I don't need a coat.");
   the cat stalking a mouse; "I ran out of passing-the-salt movements." Keep
-  the props, the jokes and the dialogue.
+  the props and the jokes; the dialogue he acts out becomes a sentence of
+  prose, with at most one line of his quoted per block (STYLE.md, "Write a
+  guide, not a recording"; the files were rewritten this way in November
+  2026, as `markel-advanced` was).
 - He reuses his images across chapters and refers back to them without
   retelling them: the coat (10, 30), the architect's blueprint (13-15), the
   teacher's class plan and how much to make the student work (13, 15, 21),
