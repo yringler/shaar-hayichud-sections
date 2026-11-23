@@ -3,7 +3,7 @@ description: >-
   Pure Dart models and loader for the Shaar Hayichud published data
   (/data/v1/ catalog, chapters, alignments and transcripts).
   Models are generated from data/schema/v1.
-version: 1.6.1
+version: 1.6.2
 repository: https://github.com/yringler/shaar-hayichud-sections/tree/master/packages/dart
 issue_tracker: https://github.com/yringler/shaar-hayichud-sections/issues
 topics:
