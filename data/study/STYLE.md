@@ -231,7 +231,10 @@ Flag a block with `sensitivity` when it does any of these:
 
 - `action: "replace"` with a `publishable` text that keeps the teaching and
   drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
-  left (a pure aside).
+  left (a pure aside); or `action: "keep"` when it may be printed as said
+  (a standing ruling below says when): the flag and its reason stay in the
+  file and the beta, and a public build prints the `text` unchanged. `keep`
+  and `omit` have no `publishable`.
 - A `publishable` text may keep only the point. A joke or an image that is
   easy to misread in print (Rabbi Raichik's nose through his tallis) can be
   left out of it: the block's audio is there for whoever wants the class
@@ -261,7 +264,7 @@ to the owner unreviewed.
    keeps the point he was making with it. Keeping the point is the only
    test: you have leeway to condense, reorder or rephrase further than the
    `text` does to get there. If the remark *is* the point (nothing is left
-   without it), use `omit`. This ruling does not cover a remark that is
+   without it), it may be published as said: `action: "keep"`. This ruling does not cover a remark that is
    crude, names a person, or is about women, politics or a nation or race;
    those stay with the owner.
 

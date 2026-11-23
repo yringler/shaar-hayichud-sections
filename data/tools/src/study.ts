@@ -51,7 +51,8 @@ export type BlockKind = (typeof BLOCK_KINDS)[number];
 export interface StudySensitivity {
   categories: string[];
   reason: string;
-  action: 'replace' | 'omit';
+  /** 'keep': flagged, but a public build prints the block as said. */
+  action: 'replace' | 'omit' | 'keep';
   publishable?: string;
   publishableTitle?: string;
   /** YYYY-MM-DD: a person accepted this flag as it stands. Not exported. */
@@ -600,7 +601,7 @@ export function checkStudyChapter(
     if (block.sensitivity) {
       const s = block.sensitivity;
       if (s.action === 'replace' && s.publishable === undefined) add('error', `${at}/sensitivity has action "replace" but no "publishable" text`);
-      if (s.action === 'omit' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "omit" and a publishable text; choose one`);
+      if (s.action !== 'replace' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "${s.action}" and a publishable text; choose one`);
     }
     if (block.kind === 'question' && block.question === undefined) add('error', `${at} is a question block without "question"`);
     if (block.kind !== 'question' && (block.question !== undefined || block.askedBy !== undefined)) add('error', `${at} has "question"/"askedBy" but is not a question block`);
@@ -904,8 +905,9 @@ export const formatStudyFile = (file: StudyChapterFile): string =>
 
 /**
  * The file as a public build would show it: a block flagged `sensitivity`
- * is left out (action 'omit') or carries its `publishable` text (action
- * 'replace'); the reviewer's notes and the omission list are dropped.
+ * is left out (action 'omit'), carries its `publishable` text (action
+ * 'replace') or stays as it is (action 'keep'), without the flag; the
+ * reviewer's notes and the omission list are dropped.
  */
 export function publicView(file: StudyChapterFile): StudyChapterFile {
   const copy = structuredClone(file);
@@ -918,6 +920,7 @@ export function publicView(file: StudyChapterFile): StudyChapterFile {
         if (!s) return [b];
         if (s.action === 'omit') return [];
         const { sensitivity: _dropped, ...rest } = b;
+        if (s.action === 'keep') return [rest];
         return [{ ...rest, text: s.publishable!, ...(s.publishableTitle !== undefined ? { title: s.publishableTitle } : {}) }];
       });
     }

@@ -675,7 +675,8 @@ What each part is anchored to:
   lines between paragraphs.
 - **Sensitivity**: the files keep the class as it was said. A block that
   should not be published as it stands carries `sensitivity` (categories, a
-  reason, and `action`: `replace` with a `publishable` text, or `omit`).
+  reason, and `action`: `replace` with a `publishable` text, `omit`, or
+  `keep`: flagged, but printed as said).
   `publicView()` in `tools/src/study.ts` applies it, for the
   [public edition](#public-study-guides-v1study). `reviewed: "YYYY-MM-DD"`
   on the flag records that a person checked it against the class and
@@ -763,8 +764,8 @@ teacher's word. `yarn build-data` then writes its guides, beside the rest of
   does not leak.
 - Each guide is in its **public edition** (`publicView()`): a block with
   `sensitivity` is replaced by its `publishable` text (and
-  `publishableTitle`), or dropped when its action is `omit`, so no
-  `sensitivity` is published.
+  `publishableTitle`), dropped when its action is `omit`, or printed as
+  written when it is `keep`, so no `sensitivity` is published.
 
 Only files with no error are written; a stale one is marked `"stale": true`.
 The build validates the files against the v1 schemas, and the Dart package
@@ -779,7 +780,11 @@ fetches them.
 `/data/study-beta/v1/study/` with `X-Robots-Tag: noindex`. It is the same
 shape as `v1/study/` (the same schemas, validated by the build), with every
 series, permitted or not, each guide **as written**: blocks keep their
-`sensitivity` (optional in the v1 schema, and only ever present here). It is
+`sensitivity` (optional in the v1 schema, and only ever present here),
+without `reviewed`. The v1 schema knows only `replace` and `omit` (and
+`shaar_hayichud_data` 1.7.0 rejects any other action), so a `keep` flag is
+exported as `replace` with `publishable` equal to the block's own text,
+which is what it means for a public build. It is
 for the lessons2 closed beta only: not part of `v1`, not in
 `dist/v1/index.json` and never in the snapshot package.
 

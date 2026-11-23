@@ -58,7 +58,9 @@ export interface ExportAudio {
   end?: number;
 }
 
-export type ExportBlock = Omit<StudyBlock, 'audio'> & { audio: ExportAudio[] };
+/** A flag as v1 carries it: no review stamp, and only the actions the v1 schema knows. */
+export type ExportSensitivity = Omit<StudySensitivity, 'reviewed' | 'action'> & { action: 'replace' | 'omit' };
+export type ExportBlock = Omit<StudyBlock, 'audio' | 'sensitivity'> & { audio: ExportAudio[]; sensitivity?: ExportSensitivity };
 /**
  * A phrase as the app reads it: `en` only where the teacher translates it,
  * and then (from the phrase's `audio`) the lecture and seconds where he does.
@@ -176,13 +178,19 @@ const trimBlock = (b: StudyBlock): ExportBlock => ({
   ...(b.join ? { join: true as const } : {}),
   audio: b.audio.map(trimAudio),
   ...(b.outOfPlace !== undefined ? { outOfPlace: b.outOfPlace } : {}),
-  ...(b.sensitivity !== undefined ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
+  ...(b.sensitivity !== undefined ? { sensitivity: trimSensitivity(b.sensitivity, b.text) } : {}),
 });
 
-/** The flag as the beta app reads it: the review stamp is editorial and stays in data/study/. */
-function trimSensitivity(s: StudySensitivity): StudySensitivity {
+/**
+ * The flag as the beta app reads it: the review stamp is editorial and stays
+ * in data/study/. The v1 schema (and shaar_hayichud_data 1.7.0, which throws
+ * on an unknown action) knows only 'replace' and 'omit', so a 'keep' flag is
+ * written as what it means for a public build: replace the text with itself.
+ */
+function trimSensitivity(s: StudySensitivity, text: string): ExportSensitivity {
   const { reviewed: _reviewed, ...rest } = structuredClone(s);
-  return rest;
+  if (rest.action === 'keep') return { ...rest, action: 'replace', publishable: text };
+  return { ...rest, action: rest.action };
 }
 
 /** One guide as the app reads it. `lines` is the chapter's lines in order. */

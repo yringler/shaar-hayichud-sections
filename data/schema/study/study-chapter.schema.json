@@ -216,7 +216,7 @@
       }
     },
     "sensitivity": {
-      "description": "Marks a block that should not be published as it stands. `text` is never softened: it stays as the teacher said it. A public build replaces the block's text with `publishable` (action 'replace') or leaves the block out (action 'omit').",
+      "description": "Marks a block that should not be published as it stands. `text` is never softened: it stays as the teacher said it. A public build replaces the block's text with `publishable` (action 'replace'), leaves the block out (action 'omit'), or prints it as said (action 'keep': flagged so readers of the private text see the note, but cleared for public).",
       "type": "object",
       "additionalProperties": false,
       "required": ["categories", "reason", "action"],
@@ -230,8 +230,8 @@
           }
         },
         "reason": { "description": "What a public reader could object to or misread, in a sentence.", "type": "string", "minLength": 1 },
-        "action": { "enum": ["replace", "omit"] },
-        "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' (checked by the data build).", "$ref": "#/$defs/prose" },
+        "action": { "enum": ["replace", "omit", "keep"] },
+        "publishable": { "description": "Alternate text that keeps the point and drops what the reason names. Required with action 'replace', not allowed with 'omit' or 'keep' (checked by the data build).", "$ref": "#/$defs/prose" },
         "publishableTitle": { "$ref": "#/$defs/line" },
         "reviewed": { "description": "The day this flag was accepted as it stands (the action, and with 'replace' the publishable text and title): by a person who read it against the class, or under a standing ruling in data/study/STYLE.md. Whoever later changes the block's text or title, or this flag's action, publishable or publishableTitle, deletes it. Dropped from both exports.", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
       }

@@ -218,6 +218,13 @@ describe('checkStudyChapter: prose, terms and sensitivity', () => {
     const omit = structuredClone(gold);
     flagged(omit).sensitivity = { categories: ['other'], reason: 'r', action: 'omit' };
     assert.deepEqual(publicView(omit).sections[0]!.passages[1]!.blocks, []);
+
+    has(check((f) => (flagged(f).sensitivity!.action = 'keep')), /^error: .*action "keep" and a publishable text/);
+    const keep = structuredClone(gold);
+    flagged(keep).sensitivity = { categories: ['other-religions'], reason: 'r', action: 'keep' };
+    const kept = publicView(keep).sections[0]!.passages[1]!.blocks[0]!;
+    assert.equal(kept.text, flagged(gold).text); // printed as said
+    assert.equal(kept.sensitivity, undefined);
   });
 });
 
