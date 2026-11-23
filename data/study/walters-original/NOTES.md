@@ -205,10 +205,11 @@ Flagged, with the precedent:
 - **Groups and professions**: scientists as "haughty idiots" or "the
   scientists say" (28, 30), philosophers who "don't know how to use logic"
   (28), modern men and ancient cultures (27), builders as "stupid people"
-  (14), fellow Jews' "stupid humility" in dress (28), robot teachers and
-  Walmart cashiers (15), an Iranian (22), Africa (16, 18): `other-groups`.
-  Criticism of an idea ("science doesn't tell you why", the philosopher's
-  definition of G-d) is not flagged.
+  (14), robot teachers and Walmart cashiers (15), an Iranian (22), Africa
+  (16, 18): `other-groups`. Criticism of an idea ("science doesn't tell you
+  why", the philosopher's definition of G-d) is not flagged. His "a kind of
+  a stupid humility" (28) is written "a kind of foolish humility", at the
+  reviewer's word, and not flagged.
 - **Movements within Judaism**: Reform and Conservative (26, 32), the "Rebbe
   is Moshiach" belief as an example (17, 26), the Chassidim and Misnagdim
   history told from memory (18), baalei teshuva who are "not going to be
