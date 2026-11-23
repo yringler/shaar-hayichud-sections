@@ -4560,15 +4560,7 @@
                   "start": 210,
                   "end": 260.94
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "politics"
-                ],
-                "reason": "Names one party (\"only in the Republican side\") as the example of a narrow daas, which a reader may take as a partisan jab.",
-                "action": "replace",
-                "publishable": "A wide *daas* can also hold two opposites at once, see both sides of an argument. A narrow *daas* is interested in politics, say, but only in one side of it, a narrow aspect. So in *Chassidus*: only *avoda'dike maamarim* (discourses on divine service), or only *haskala'dike maamarim* (discourses of intellectual explanation), only one Rebbe's discourses, or only *maamarim* and not *sichos*, letters or stories. Interest in one aspect alone is a narrow *daas*."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4604,15 +4596,7 @@
                   "start": 338.63,
                   "end": 382.68
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "In his own voice, past the line's words, generalizes that women are better at multitasking than men because their daas is lighter, and that men hold their opinions more firmly than women.",
-                "action": "replace",
-                "publishable": "A light *daas* does not get so engrossed in any one thing: such a person is good at doing several things at once, and more flexible, while a strong *daas* holds very firmly to one thing and one opinion. That is a *daas kal* (a light *daas*)."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4636,15 +4620,7 @@
                   "start": 416.6,
                   "end": 436.98
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Says in his own voice \"It's harder for women to do that\" (to feel compassion and still see the other side) and gives that as the reason women are not judges. That women do not serve as judges is halacha; the explanation of it is his generalization about women.",
-                "action": "replace",
-                "publishable": "A judge must be able to put aside the compassion he feels, which is his *temimus'dike daas*, his one *kav*, and see it now from the other side."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4694,14 +4670,7 @@
                   "start": 543.14,
                   "end": 560.88
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "A generalization about men and women in his own voice: men connect more deeply, get more engrossed and obsessed; women less. Nothing of the teaching is left without it.",
-                "action": "omit"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4713,15 +4682,7 @@
                   "start": 562.38,
                   "end": 593.96
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Ends by tying the trade-off between daas and bina to women (\"That's why women have bina yeseira also\"). Bina yeseira in women is a saying of Chazal, but here it is drawn from his own claim that women have a lighter daas; the trade-off itself is kept.",
-                "action": "replace",
-                "publishable": "He will explain that though *bina* and *daas* are tools that work together, they are opposite: more *daas* at a moment means less *bina*, and the reverse. *Daas* brings more *bina* afterwards, but at the moment a lighter *daas* gives better *bina*. \"It's kind of a trade-off.\""
-              }
+              ]
             }
           ]
         },
@@ -4867,15 +4828,7 @@
                   "start": 696.12,
                   "end": 726.32
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Compares women with children and men in his own voice: women have more daas than a child but only for one kav at a time; men can hold both sides at once.",
-                "action": "replace",
-                "publishable": "A child has no *daas*. A light *daas* is a *daas*, but for one *kav* at a time. A strong *daas* gets much more obsessed with what it gets into, but can also hold both sides of a thing at once."
-              }
+              ]
             }
           ]
         },
@@ -5521,6 +5474,9 @@
       "lines": [
         "xazelgse"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the flags on the six class 17 remarks (the \"Republican side\" example and the five on women and men, 17 w666-2209) were removed by the reviewer: printed as said, in condensed form."
     }
   ]
 }

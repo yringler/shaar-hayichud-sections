@@ -1248,15 +1248,7 @@
                   "start": 511.7,
                   "end": 562.66
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Contrasts the way yeshiva boys and girls learn kashrus as a generalisation about men and women.",
-                "action": "replace",
-                "publishable": "You see this difference, between the abstract idea and a practical way to do it, in learning *kashrus* (the kosher laws). Even learning for *semicha* is much more the theory. But setting up a kitchen so that it practically stays kosher, with separate dishes and separate burners, in a way that reduces the number of problems, \"is a whole nother *chachma*\": a whole other power of understanding."
-              }
+              ]
             }
           ]
         }
@@ -2926,6 +2918,9 @@
         "rok4avng",
         "5lrvb2he"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the flag on the kosher kitchen mashal (20 w1405-1568, bochurim and girls) was removed by the reviewer: printed as said."
     }
   ]
 }

@@ -1284,9 +1284,9 @@
                 "categories": [
                   "women"
                 ],
-                "reason": "The questioner is \"some lady\" who does not want the sources and \"will be confused\" by them; read alone it can sound condescending to women.",
+                "reason": "\"She will be confused\" makes a light joke at the questioner, who was a woman; the public text keeps her (it was the women who brought the chickens) and drops only that remark.",
                 "action": "replace",
-                "publishable": "Back in Europe you took a chicken to the *shochet* (slaughterer), then to the *dayan* (rabbinic judge) to check that it was kosher, then home to salt it, so chickens were always coming to the *Rav*. Somebody asks if his is kosher, and the *Rav* starts, \"Well, the *Shach* says like this, and the *Taz* said like that.\" He does not want to know all that; he will be confused."
+                "publishable": "Back in Europe you took a chicken to the *shochet* (slaughterer), then to the *dayan* (rabbinic judge) to check that it was kosher, then home to salt it, so chickens were always coming to the *Rav*. A woman asks if hers is kosher, and he starts, \"Well, the *Shach* says like this, and the *Taz* said like that.\" She does not want to know all that."
               }
             },
             {
@@ -3077,6 +3077,9 @@
         "v2czkbo4",
         "x77uv56y"
       ]
+    },
+    {
+      "text": "Review (2026-11-23): the chicken story (26 w1174) keeps the woman as the one asking in its public text; only \"she will be confused\" is dropped."
     }
   ]
 }
