@@ -105,6 +105,49 @@ void main() {
     });
   });
 
+  // The beta export: every series as written, in the same v1 shape, with
+  // blocks' `sensitivity` (lessons2's closed beta reads it with these models).
+  group('dist/study-beta/v1', () {
+    final beta = Directory('${dataDir.path}/dist/study-beta/v1');
+    final files =
+        beta.existsSync()
+              ? beta
+                    .listSync(recursive: true)
+                    .whereType<File>()
+                    .where((f) => f.path.endsWith('.json'))
+                    .toList()
+              : <File>[]
+          ..sort((a, b) => a.path.compareTo(b.path));
+
+    test('has an index', () {
+      expect(File('${beta.path}/study/index.json').existsSync(), isTrue);
+    });
+
+    for (final f in files) {
+      final path = rel(f, beta);
+      test('round-trips $path', () {
+        final source = f.readAsStringSync();
+        expect(roundTrip(path, source), equals(jsonDecode(source)));
+      });
+    }
+
+    test('keeps the sensitivity flags the public edition applies', () {
+      final guides = [
+        for (final f in files)
+          if (rel(f, beta) != 'study/index.json')
+            parseStudyGuide(f.readAsStringSync()),
+      ];
+      final flagged = [
+        for (final g in guides)
+          for (final s in g.sections)
+            for (final p in s.passages)
+              for (final b in p.blocks)
+                if (b.sensitivity != null) b.sensitivity!,
+      ];
+      expect(flagged, isNotEmpty);
+    });
+  });
+
   group('data/chapters (source)', () {
     final dir = Directory('${dataDir.path}/chapters');
     final files =

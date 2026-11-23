@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://www.shaarhayichudresources.com/data/v1/schema/study-index.schema.json",
   "title": "Study guide listing (v1)",
-  "description": "Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from.",
+  "description": "Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from. The unlisted beta export (/data/study-beta/v1/study/index.json) lists every series in the same shape.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "series"],
@@ -29,7 +29,7 @@
       "required": ["chapter", "path", "status", "lectures"],
       "properties": {
         "chapter": { "description": "Chapter key, as in chapters/.", "type": "string", "pattern": "^chapter_\\d{2}$" },
-        "path": { "description": "Path of the guide, relative to /data/v1/.", "type": "string", "minLength": 1 },
+        "path": { "description": "Path of the guide, relative to the edition's root (/data/v1/, or /data/study-beta/v1/ for the beta export).", "type": "string", "minLength": 1 },
         "status": { "enum": ["draft", "edited", "reviewed"] },
         "stale": { "type": "boolean" },
         "lectures": { "description": "The classes the guide cites, in class order.", "type": "array", "items": { "$ref": "#/$defs/lecture" } }

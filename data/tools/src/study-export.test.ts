@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 import { DATA_DIR } from './pipeline.js';
-import { continuesIn, exportStudyBeta, exportStudyPublic, phraseLines, studyBetaChapter } from './study-export.js';
+import { continuesIn, exportChapter, exportStudy, phraseLines } from './study-export.js';
 import { checkStudy, loadStudy, loadStudyContext, type StudyChapterFile, type StudySeriesFile } from './study.js';
 import { SchemaSet } from './validate.js';
 import type { StoredAlignment } from './transcripts.js';
@@ -12,12 +12,11 @@ import type { StoredAlignment } from './transcripts.js';
 const FIXTURE = path.join(DATA_DIR, 'tools', 'fixtures', 'study');
 const SCHEMAS = path.join(DATA_DIR, 'schema', 'study');
 const REL = 'study/test-series/chapter_01.json';
-const GENERATED = '2026-01-01T00:00:00.000Z';
 
 const run = (dir: string) => {
   const ctx = loadStudyContext(dir);
   const { issues } = checkStudy(dir, ctx, { schemaDir: SCHEMAS });
-  return exportStudyBeta(dir, ctx, issues, GENERATED, SCHEMAS);
+  return exportStudy(dir, ctx, issues, 'beta', SCHEMAS);
 };
 /** A copy of the fixture with its study file changed. */
 const fixtureWith = (change: (f: StudyChapterFile) => void): string => {
@@ -74,30 +73,34 @@ describe('continuesIn', () => {
   });
 });
 
-describe('exportStudyBeta', () => {
-  it('writes the index: series, chapter file, status and each class part in seconds', () => {
+describe('exportStudy, beta edition', () => {
+  it('writes the index of every series, permitted or not: chapter path, status and each class part in seconds', () => {
     const out = run(FIXTURE);
     assert.deepEqual(out.skipped, []);
     assert.deepEqual(out.index, {
       schemaVersion: 1,
-      generated: GENERATED,
       series: [
         {
           id: 'test-series',
           catalogSeriesId: '1',
           teacher: loadStudy(FIXTURE, SCHEMAS).series[0]!.data!.teacher,
           title: loadStudy(FIXTURE, SCHEMAS).series[0]!.data!.title,
-          chapters: {
-            chapter_01: { file: 'test-series/chapter_01.json', status: 'draft', lectures: [{ id: 't1.mp3', start: 0, end: 40.8 }] },
-          },
+          chapters: [{ chapter: 'chapter_01', path: REL, status: 'draft', lectures: [{ id: 't1.mp3', start: 0, end: 40.8 }] }],
         },
       ],
     });
-    assert.deepEqual([...out.files.keys()], ['test-series/chapter_01.json']);
+    assert.deepEqual([...out.files.keys()], [REL]);
+  });
+
+  it('is valid against the v1 schemas, sensitivity and all', () => {
+    const out = run(FIXTURE);
+    const schemas = new SchemaSet(path.join(DATA_DIR, 'schema', 'v1'));
+    assert.deepEqual(schemas.validate('studyIndex', out.index), []);
+    assert.deepEqual(schemas.validate('study', out.files.get(REL)!), []);
   });
 
   it('trims the guide: no words, transcription ids, terms, questions, omissions, notes or provenance details', () => {
-    const ch = run(FIXTURE).files.get('test-series/chapter_01.json')!;
+    const ch = run(FIXTURE).files.get(REL)!;
     assert.deepEqual(Object.keys(ch), ['schemaVersion', 'series', 'chapter', 'title', 'status', 'provenance', 'overview', 'sections']);
     assert.deepEqual(ch.provenance, { method: 'hand' });
     const json = JSON.stringify(ch);
@@ -119,16 +122,16 @@ describe('exportStudyBeta', () => {
   it('does not copy a field the app does not read', () => {
     const file = structuredClone(loadStudy(FIXTURE, SCHEMAS).series[0]!.chapters[0]!.data!);
     (file.sections[0]!.passages[0]!.blocks[0] as unknown as Record<string, unknown>).draftNote = 'x';
-    const ch = studyBetaChapter(file, loadStudyContext(FIXTURE).chapterLines('chapter_01')!, false);
+    const ch = exportChapter(file, loadStudyContext(FIXTURE).chapterLines('chapter_01')!, false);
     assert.ok(!JSON.stringify(ch).includes('draftNote'));
   });
 
   it('keeps where the class sums the chapter up, as { lecture, start, end }', () => {
     const file = structuredClone(loadStudy(FIXTURE, SCHEMAS).series[0]!.chapters[0]!.data!);
     const lines = loadStudyContext(FIXTURE).chapterLines('chapter_01')!;
-    assert.ok(!('overviewAudio' in studyBetaChapter(file, lines, false)), 'no overviewAudio when the guide cites none');
+    assert.ok(!('overviewAudio' in exportChapter(file, lines, false)), 'no overviewAudio when the guide cites none');
     file.overviewAudio = [{ lecture: 't1.mp3', words: [0, 3], start: 0.5, end: 4.25 }];
-    const ch = studyBetaChapter(file, lines, false);
+    const ch = exportChapter(file, lines, false);
     assert.deepEqual(ch.overviewAudio, [{ lecture: 't1.mp3', start: 0.5, end: 4.25 }]);
     assert.deepEqual(Object.keys(ch).slice(6, 9), ['overview', 'overviewAudio', 'sections']);
   });
@@ -138,8 +141,8 @@ describe('exportStudyBeta', () => {
       f.sections[0]!.passages[0]!.phrases![1]!.he = 'ידוע המאמר הזה';
     });
     const out = run(dir);
-    assert.equal(out.index.series[0]!.chapters.chapter_01!.stale, true);
-    assert.equal(out.files.get('test-series/chapter_01.json')!.stale, true);
+    assert.equal(out.index.series[0]!.chapters[0]!.stale, true);
+    assert.equal(out.files.get(REL)!.stale, true);
   });
 
   it('leaves out a file with an error', () => {
@@ -149,7 +152,7 @@ describe('exportStudyBeta', () => {
     const out = run(dir);
     assert.deepEqual(out.skipped, [REL]);
     assert.equal(out.files.size, 0);
-    assert.deepEqual(out.index.series[0]!.chapters, {});
+    assert.deepEqual(out.index.series[0]!.chapters, []);
   });
 });
 
@@ -166,13 +169,13 @@ const seriesWith = (change: (s: StudySeriesFile) => void): string => {
 const runPublic = (dir: string) => {
   const ctx = loadStudyContext(dir);
   const { issues } = checkStudy(dir, ctx, { schemaDir: SCHEMAS });
-  return exportStudyPublic(dir, ctx, issues, SCHEMAS);
+  return exportStudy(dir, ctx, issues, 'public', SCHEMAS);
 };
 const PUBLIC = (s: StudySeriesFile) => {
   s.public = { permission: 'The teacher allowed it.', date: '2026-11-22' };
 };
 
-describe('exportStudyPublic', () => {
+describe('exportStudy, public edition', () => {
   it('exports nothing for a series without permission', () => {
     const out = runPublic(FIXTURE);
     assert.deepEqual(out.index, { schemaVersion: 1, series: [] });
@@ -203,13 +206,13 @@ describe('exportStudyPublic', () => {
 });
 
 describe('build', () => {
-  it('writes dist/study-beta/ beside dist/v1/, never inside it', () => {
-    const dist = path.join(DATA_DIR, 'dist');
-    if (!existsSync(path.join(dist, 'study-beta', 'index.json'))) return; // run `yarn build-data` first
-    assert.ok(!existsSync(path.join(dist, 'v1', 'study-beta')));
-    const index = JSON.parse(readFileSync(path.join(dist, 'study-beta', 'index.json'), 'utf8'));
-    assert.equal(index.schemaVersion, 1);
-    for (const s of index.series) for (const c of Object.values(s.chapters) as { file: string }[]) assert.ok(existsSync(path.join(dist, 'study-beta', c.file)));
+  it('writes the beta export to dist/study-beta/v1/study/ beside dist/v1/, never inside it', () => {
+    const beta = path.join(DATA_DIR, 'dist', 'study-beta', 'v1');
+    if (!existsSync(path.join(beta, 'study', 'index.json'))) return; // run `yarn build-data` first
+    assert.ok(!existsSync(path.join(DATA_DIR, 'dist', 'v1', 'study-beta')));
+    assert.ok(!existsSync(path.join(DATA_DIR, 'dist', 'study-beta', 'index.json')), 'the old beta index is still written');
+    const index = JSON.parse(readFileSync(path.join(beta, 'study', 'index.json'), 'utf8')) as { series: { chapters: { path: string }[] }[] };
+    for (const s of index.series) for (const c of s.chapters) assert.ok(existsSync(path.join(beta, c.path)), c.path);
   });
 
   it('writes the public study guides under dist/v1/study/, listed in index.json, with no sensitivity flag', () => {

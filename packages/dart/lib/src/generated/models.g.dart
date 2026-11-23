@@ -127,6 +127,47 @@ enum StudyGuideBlockAskedBy {
   }
 }
 
+enum StudyGuideSensitivityCategory {
+  women("women"),
+  otherReligions("other-religions"),
+  otherGroups("other-groups"),
+  namedPerson("named-person"),
+  politics("politics"),
+  crude("crude"),
+  healthOrLegal("health-or-legal"),
+  private("private"),
+  other("other");
+
+  const StudyGuideSensitivityCategory(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideSensitivityCategory fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideSensitivityCategory: unknown value $json');
+  }
+}
+
+enum StudyGuideSensitivityAction {
+  replace("replace"),
+  omit("omit");
+
+  const StudyGuideSensitivityAction(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideSensitivityAction fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideSensitivityAction: unknown value $json');
+  }
+}
+
 enum StudyGuidePassageSkipReason {
   noRecording("no-recording"),
   readOnly("read-only");
@@ -1595,6 +1636,88 @@ final class StudyGuidePhrase {
   String toString() => 'StudyGuidePhrase(${toJson()})';
 }
 
+/// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
+final class StudyGuideSensitivity {
+  const StudyGuideSensitivity({
+    required this.categories,
+    required this.reason,
+    required this.action,
+    this.publishable,
+    this.publishableTitle,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuideSensitivity.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuideSensitivity');
+    return StudyGuideSensitivity(
+      categories: List.unmodifiable(
+        _list(
+          _req(m, "categories", 'StudyGuideSensitivity.categories'),
+          'StudyGuideSensitivity.categories',
+        ).map((e) => StudyGuideSensitivityCategory.fromJson(e)),
+      ),
+      reason: _string(
+        _req(m, "reason", 'StudyGuideSensitivity.reason'),
+        'StudyGuideSensitivity.reason',
+      ),
+      action: StudyGuideSensitivityAction.fromJson(
+        _req(m, "action", 'StudyGuideSensitivity.action'),
+      ),
+      publishable: _opt(
+        m["publishable"],
+        (v) => _string(v, 'StudyGuideSensitivity.publishable'),
+      ),
+      publishableTitle: _opt(
+        m["publishableTitle"],
+        (v) => _string(v, 'StudyGuideSensitivity.publishableTitle'),
+      ),
+    );
+  }
+
+  final List<StudyGuideSensitivityCategory> categories;
+
+  /// What a public reader could object to or misread, in a sentence.
+  final String reason;
+
+  final StudyGuideSensitivityAction action;
+
+  /// Alternate text that keeps the point and drops what the reason names; present with action replace.
+  final String? publishable;
+
+  final String? publishableTitle;
+
+  Map<String, Object?> toJson() => {
+    "categories": [for (final e in categories) e.json],
+    "reason": reason,
+    "action": action.json,
+    if (publishable != null) "publishable": publishable,
+    if (publishableTitle != null) "publishableTitle": publishableTitle,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuideSensitivity &&
+          _listEquals(other.categories, categories) &&
+          other.reason == reason &&
+          other.action == action &&
+          other.publishable == publishable &&
+          other.publishableTitle == publishableTitle);
+
+  @override
+  int get hashCode => Object.hashAll([
+    Object.hashAll(categories),
+    reason,
+    action,
+    publishable,
+    publishableTitle,
+  ]);
+
+  @override
+  String toString() => 'StudyGuideSensitivity(${toJson()})';
+}
+
 /// One thought of the class, a paragraph or two.
 final class StudyGuideBlock {
   const StudyGuideBlock({
@@ -1606,6 +1729,7 @@ final class StudyGuideBlock {
     this.join,
     required this.audio,
     this.outOfPlace,
+    this.sensitivity,
   });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
@@ -1637,6 +1761,10 @@ final class StudyGuideBlock {
         m["outOfPlace"],
         (v) => _string(v, 'StudyGuideBlock.outOfPlace'),
       ),
+      sensitivity: _opt(
+        m["sensitivity"],
+        (v) => StudyGuideSensitivity.fromJson(v),
+      ),
     );
   }
 
@@ -1662,6 +1790,9 @@ final class StudyGuideBlock {
   /// Why the main audio is far from where the class reads the passage's lines.
   final String? outOfPlace;
 
+  /// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
+  final StudyGuideSensitivity? sensitivity;
+
   Map<String, Object?> toJson() => {
     "kind": kind.json,
     if (title != null) "title": title,
@@ -1671,6 +1802,7 @@ final class StudyGuideBlock {
     if (join != null) "join": join,
     "audio": [for (final e in audio) e.toJson()],
     if (outOfPlace != null) "outOfPlace": outOfPlace,
+    if (sensitivity != null) "sensitivity": sensitivity!.toJson(),
   };
 
   @override
@@ -1684,7 +1816,8 @@ final class StudyGuideBlock {
           other.text == text &&
           other.join == join &&
           _listEquals(other.audio, audio) &&
-          other.outOfPlace == outOfPlace);
+          other.outOfPlace == outOfPlace &&
+          other.sensitivity == sensitivity);
 
   @override
   int get hashCode => Object.hashAll([
@@ -1696,6 +1829,7 @@ final class StudyGuideBlock {
     join,
     Object.hashAll(audio),
     outOfPlace,
+    sensitivity,
   ]);
 
   @override
@@ -1879,7 +2013,7 @@ final class StudyGuideSection {
 
 /// Study guide (v1)
 ///
-/// Shape of /data/v1/study/`<series>`/`<chapter>`.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Published only for series whose teacher allowed it, in their public edition (blocks marked sensitive in the source are replaced by their publishable text or left out).
+/// Shape of /data/v1/study/`<series>`/`<chapter>`.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Published for series whose teacher allowed it, in their public edition (blocks marked sensitive in the source are replaced by their publishable text or left out); the unlisted beta export (/data/study-beta/v1/study/) has every series in the same shape, as written, with each block's `sensitivity`.
 final class StudyGuide {
   const StudyGuide({
     required this.series,
@@ -2116,7 +2250,7 @@ final class StudyIndexChapter {
   /// Chapter key, as in chapters/.
   final String chapter;
 
-  /// Path of the guide, relative to /data/v1/.
+  /// Path of the guide, relative to the edition's root (/data/v1/, or /data/study-beta/v1/ for the beta export).
   final String path;
 
   final StudyIndexChapterStatus status;
@@ -2234,7 +2368,7 @@ final class StudyIndexSeries {
 
 /// Study guide listing (v1)
 ///
-/// Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from.
+/// Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from. The unlisted beta export (/data/study-beta/v1/study/index.json) lists every series in the same shape.
 final class StudyIndex {
   const StudyIndex({required this.series});
 

@@ -74,7 +74,7 @@ come from `../data/` (see [data/README.md](../data/README.md)).
 `hugo.toml` mounts directories from outside `hugo/`:
 - `../../data/chapters` → `data/chapters` (`site.Data.chapters`) and `static/texts` (legacy raw JSON at `/texts/chapter_NN.json`)
 - `../../data/dist/v1` → `static/data/v1` (the published JSON API)
-- `../../data/dist/study-beta` → `static/data/study-beta` (study guides for the lessons2 closed beta; unversioned, `X-Robots-Tag: noindex` in `static/_headers`, deliberately not disallowed in a robots.txt, so crawlers see the noindex; see `data/README.md`, "The study-beta export")
+- `../../data/dist/study-beta` → `static/data/study-beta` (the study guides of every series for the lessons2 closed beta, in the v1 shape under `v1/study/`; `X-Robots-Tag: noindex` in `static/_headers`, deliberately not disallowed in a robots.txt, so crawlers see the noindex; see `data/README.md`, "The study-beta export")
 - `../../data/dist/v1/catalog.json` → `data/v1` (`site.Data.v1.catalog`, read via the `catalog.html` partial, which fails the build if the data build has not run)
 - `../../data/dist/v1` → `assets/data/v1` (audio alignments, transcripts and outlines, read with `resources.Get … | transform.Unmarshal` by `partials/audio/`). Adding an assets mount replaces the default one, so `assets` → `assets` is listed too.
 

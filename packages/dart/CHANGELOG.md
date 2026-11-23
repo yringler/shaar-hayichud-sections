@@ -1,9 +1,18 @@
 # Changelog
 
-## 1.6.1
+## 1.7.0
 
-- The first published 1.6 release: 1.6.0 was never published to pub.dev.
-  No code changes from 1.6.0.
+- `StudyGuideBlock.sensitivity` (`StudyGuideSensitivity`: categories,
+  reason, action, publishable text and title): optional in
+  `schema/v1/study.schema.json`. The public edition (`/data/v1/study/`)
+  never has it; the unlisted beta export (`/data/study-beta/v1/study/`),
+  every series as written in the same shape, does, so both read with these
+  models.
+
+## 1.6.2
+
+- The first published 1.6 release: 1.6.0 and 1.6.1 were never published to
+  pub.dev. No code changes from 1.6.0.
 
 ## 1.6.0
 

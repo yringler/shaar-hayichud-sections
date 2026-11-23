@@ -34,8 +34,9 @@ title = "Shaar Hayichud"
   source = "../../data/dist/v1"
   target = "static/data/v1"
 
-# The study guides for the lessons2 closed beta (data/dist/study-beta/,
-# written by the data build): unlisted and unversioned, served noindex
+# The study guides of every series for the lessons2 closed beta
+# (data/dist/study-beta/v1/study/, written by the data build in the v1
+# shape): unlisted, served noindex
 # (static/_headers). Not disallowed in a robots.txt: a crawler that may not
 # fetch a URL never sees its noindex.
 [[module.mounts]]

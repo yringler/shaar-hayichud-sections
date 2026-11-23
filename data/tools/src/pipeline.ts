@@ -9,7 +9,7 @@ import { indexLineIds, type Chapter } from './chapter.js';
 import { parseClassesTxt, type ParseResult } from './parse.js';
 import { publishAudio } from './publish.js';
 import { defaultSourcePaths, validateSources, type SourcePaths } from './sources.js';
-import { exportStudyBeta, exportStudyPublic, type StudyBetaExport, type StudyPublicExport } from './study-export.js';
+import { exportStudy, type StudyExport } from './study-export.js';
 import { checkStudy, loadStudyContext } from './study.js';
 import { loadChapters, SchemaSet, validateStructure, type ChapterFile } from './validate.js';
 
@@ -67,7 +67,7 @@ export interface BuildResult {
   catalog?: Catalog;
   chapters?: ChapterFile[];
   outDir?: string;
-  /** dist/study-beta/ and how many guides it holds. */
+  /** dist/study-beta/ (the beta export, in v1/study/ under it) and how many guides it holds. */
   studyBetaDir?: string;
   studyBetaFiles?: number;
   /** How many public study guides dist/v1/study/ holds. */
@@ -102,8 +102,8 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
   // was edited or a tape re-timed is a warning here (`yarn study-check` is
   // the strict check), so that editing a chapter never blocks a deploy.
   const warnings: string[] = [];
-  let studyBeta: StudyBetaExport | null = null;
-  let studyPublic: StudyPublicExport | null = null;
+  let studyBeta: StudyExport | null = null;
+  let studyPublic: StudyExport | null = null;
   if (errors.length === 0) {
     const dataDir = paths.sources.dataDir;
     const studyCtx = existsSync(path.join(dataDir, 'study')) ? loadStudyContext(dataDir) : undefined;
@@ -112,14 +112,17 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
       if (i.level === 'error') errors.push(`${i.file}: ${i.message}`);
       else warnings.push(`${i.file}: (${i.level}) ${i.message}`);
     }
-    // The lessons2 beta's copy (dist/study-beta/, not under v1): files with
-    // no error, stale ones included.
-    if (studyCtx) studyBeta = exportStudyBeta(dataDir, studyCtx, study.issues);
-    // The public edition of the series whose teacher allowed it (dist/v1/study/).
+    // Two editions in the v1 shape, files with no error (stale ones marked):
+    // the public edition of the series whose teacher allowed it
+    // (dist/v1/study/), and every series as written for the lessons2 closed
+    // beta (dist/study-beta/v1/study/, outside v1).
     if (studyCtx) {
-      studyPublic = exportStudyPublic(dataDir, studyCtx, study.issues);
-      errors.push(...schemas.validate('studyIndex', studyPublic.index).map((e) => `study/index.json: ${e}`));
-      for (const [rel, data] of studyPublic.files) errors.push(...schemas.validate('study', data).map((e) => `${rel}: ${e}`));
+      studyPublic = exportStudy(dataDir, studyCtx, study.issues, 'public');
+      studyBeta = exportStudy(dataDir, studyCtx, study.issues, 'beta');
+      for (const [name, out] of [['v1', studyPublic], ['study-beta/v1', studyBeta]] as const) {
+        errors.push(...schemas.validate('studyIndex', out.index).map((e) => `${name}/study/index.json: ${e}`));
+        for (const [rel, data] of out.files) errors.push(...schemas.validate('study', data).map((e) => `${name}/${rel}: ${e}`));
+      }
     }
   }
   if (errors.length > 0) return { errors };
@@ -175,13 +178,14 @@ export function build(paths: DataPaths, cdnBase = DEFAULT_CDN_BASE): BuildResult
     ],
   });
 
-  // Study guides for the lessons2 closed beta, published unlisted at
-  // /data/study-beta/ (see study-export.ts). Always written, so the site's
-  // mount exists even with no guides.
+  // Study guides for the lessons2 closed beta, in the v1 shape, published
+  // unlisted at /data/study-beta/v1/study/ (see study-export.ts). Always
+  // written, so the site's mount exists even with no guides.
   const studyDir = path.join(paths.distDir, 'study-beta');
   rmSync(studyDir, { recursive: true, force: true });
-  for (const [rel, data] of studyBeta?.files ?? []) writeJson(path.join(studyDir, ...rel.split('/')), data);
-  writeJson(path.join(studyDir, 'index.json'), studyBeta?.index ?? { schemaVersion: 1, generated: new Date().toISOString(), series: [] });
+  const betaRoot = path.join(studyDir, 'v1');
+  for (const [rel, data] of studyBeta?.files ?? []) writeJson(path.join(betaRoot, ...rel.split('/')), data);
+  writeJson(path.join(betaRoot, 'study', 'index.json'), studyBeta?.index ?? { schemaVersion: 1, series: [] });
 
   return { errors: [], warnings, catalog, chapters: loaded.chapters, outDir, studyBetaDir: studyDir, studyBetaFiles: studyBeta?.files.size ?? 0, studyPublicFiles: studyPublic?.files.size ?? 0 };
 }
