@@ -22,8 +22,9 @@ without replacing the recording:
   recording lacks, and the place to jump to;
 - an analogy, a story, a question, a practical point and a digression are
   each their own block, labelled, so they can be found, listed and skipped;
-- it is the teacher's class, in his words and his manner. It is neither a
-  summary nor a new commentary.
+- it is the teacher's class, in his manner and with his examples,
+  **condensed**: a reader gets in two minutes what took him ten. It is not a
+  transcript, not a summary of the chapter and not a new commentary.
 
 ## Sources
 
@@ -114,7 +115,9 @@ A block is one thought of the class. It has a `kind`, `text`, and `audio`.
 | `digression` | a longer excursion away from the text | `title` |
 | `recap` | a later summary of the passage (often the next class's opening) | |
 
-- **Size.** 30 to 200 words. A long explanation is several blocks, one per
+- **Size.** 30 to 150 words, and about a third to a half of the words it
+  cites (the check warns past 60% on a stretch of 120 words or more). A long
+  explanation is several blocks, one per
   step; set `"join": true` on a block that continues the previous block's
   paragraph. If he only translates a line, one short block is enough.
 - **Order.** Class order. A point he makes elsewhere (an earlier class, a
@@ -164,9 +167,15 @@ of the class, and often the part a student remembers.
 - **Do not soften, tidy or improve.** No hedges he did not make, no balance he
   did not give, no modern sensitivity, no moral he did not draw. If he is
   rude about something, the block is rude about it (and flagged, below).
-- **Rework speech into prose.** Drop false starts, repetitions, "you know",
-  the listener's "Right." Join what he says in three tries into one clear
-  sentence. Keep his words where they are good.
+- **Condense, do not transcribe.** Speech circles; the block goes straight.
+  Drop false starts, repetitions, "you know", the listener's "Right.", the
+  setup before a point ("let me explain something"), the second and third
+  restatement of the same idea, and recaps of what the block already said.
+  Join what he says in three tries into one clear sentence. Tell a *mashal* or
+  a story in its few decisive moves, not every beat. Keep what is his: the
+  example, the image, the joke, the turn of phrase, and his best lines word
+  for word in quotation marks. Condensing never adds, softens or reorders the
+  argument; it only leaves out what he said twice or said on the way.
 - Name him (as the series' `NOTES.md` says) only for something personal: a
   recollection, an opinion he marks as his own, a disagreement with a reading.
 - In a `story` or `aside`, tell it as he tells it, in the third person about
@@ -213,7 +222,7 @@ Flag a block with `sensitivity` when it does any of these:
 ```
 
 - `action: "replace"` with a `publishable` text that keeps the teaching and
-  drops only what the reason names; or `action: "omit"` when nothing would be
+  drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
   left (a pure aside).
 - Put the remark in a block of its own (an `aside`), so that the swap touches
   one sentence and not the explanation around it.

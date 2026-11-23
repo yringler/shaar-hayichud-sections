@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.6.0
+
+- Public study guides (`/data/v1/study/`): `StudyIndex` (`study/index.json`:
+  the series with public guides, each chapter's guide and the classes it is
+  written from, with their part of the chapter in seconds) and `StudyGuide`
+  (one chapter: passages of line ids, the teacher's phrase-by-phrase English
+  with where he says it, and audio-anchored blocks), generated from
+  `schema/v1/study*.schema.json`; `parseStudyIndex`, `parseStudyGuide`,
+  `DataUrls.studyIndex` and `DataUrls.studyGuide`.
+
 ## 1.5.0
 
 - First release on pub.dev.

@@ -4,5 +4,19 @@
   "catalogSeriesId": "0",
   "teacher": "Rabbi Benyamin Walters",
   "title": "Rabbi Benyamin Walters Original Class",
-  "translation": "Only as Rabbi Walters translates each phrase while he reads it in class, anchored to where he says it; a phrase he reads without translating has no English."
+  "translation": "Only as Rabbi Walters translates each phrase while he reads it in class, anchored to where he says it; a phrase he reads without translating has no English.",
+  "public": {
+    "permission": "Rabbi Benyamin Walters gave permission to publish his study guides publicly, in the app and on the site.",
+    "date": "2026-11-22"
+  },
+  "chapterLectures": {
+    "chapter_15": [
+      "47 - Q and A on 15-a.mp3",
+      "48 - Q and A on 15-b.mp3"
+    ],
+    "chapter_28": [
+      "55 - More on Chap- 28-A.mp3",
+      "56 - More on Chap- 28-B.mp3"
+    ]
+  }
 }

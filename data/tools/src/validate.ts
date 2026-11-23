@@ -15,6 +15,8 @@ export const SCHEMA_FILES = {
   chapterAlignments: 'chapter-alignments.schema.json',
   outline: 'outline.schema.json',
   index: 'index.schema.json',
+  study: 'study.schema.json',
+  studyIndex: 'study-index.schema.json',
 } as const;
 
 export type SchemaName = keyof typeof SCHEMA_FILES;

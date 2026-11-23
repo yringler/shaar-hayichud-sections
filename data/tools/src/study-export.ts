@@ -13,6 +13,12 @@
  *
  * Only a file with no error is exported. A stale file (a chapter line edited
  * or a tape re-timed since it was written) is exported and marked `stale`.
+ *
+ * The public export (exportStudyPublic, dist/v1/study/) is the same shape,
+ * for the series whose series.json has `public` (the teacher's permission),
+ * each guide in its public edition (publicView: sensitive blocks replaced by
+ * their publishable text or left out, so no `sensitivity` remains), with a
+ * v1 index (schema/v1/study-index.schema.json) and no timestamp.
  */
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -21,6 +27,7 @@ import {
   chapterWordRange,
   collapse,
   loadStudy,
+  publicView,
   type StudyAudio,
   type StudyBlock,
   type StudyChapterFile,
@@ -277,4 +284,56 @@ export function exportStudyBeta(dataDir: string, ctx: StudyContext, issues: read
     index.series.push({ id: series.id, catalogSeriesId: series.catalogSeriesId, teacher: series.teacher, title: series.title, chapters });
   }
   return { index, files, skipped };
+}
+
+/** dist/v1/study/index.json (schema/v1/study-index.schema.json). */
+export interface StudyPublicIndex {
+  schemaVersion: 1;
+  series: {
+    id: string;
+    catalogSeriesId: string;
+    teacher: string;
+    title: string;
+    chapters: { chapter: string; path: string; status: StudyChapterFile['status']; stale?: true; lectures: StudyBetaLecture[] }[];
+  }[];
+}
+
+export interface StudyPublicExport {
+  index: StudyPublicIndex;
+  /** Path relative to dist/v1/ (`study/<series>/<chapter>.json`) -> its JSON (schema/v1/study.schema.json). */
+  files: Map<string, StudyBetaChapter>;
+}
+
+/**
+ * The public study guides, for dist/v1/study/: only series with `public` in
+ * series.json, only files with no error (stale ones marked), each in its
+ * public edition.
+ */
+export function exportStudyPublic(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], schemaDir?: string): StudyPublicExport {
+  const index: StudyPublicIndex = { schemaVersion: 1, series: [] };
+  const files = new Map<string, StudyBetaChapter>();
+  if (!existsSync(path.join(dataDir, 'study'))) return { index, files };
+  const levels = new Map<string, Set<string>>();
+  for (const i of issues) levels.set(i.file, (levels.get(i.file) ?? new Set()).add(i.level));
+  for (const s of loadStudy(dataDir, schemaDir).series) {
+    const series = s.data as StudySeriesFile | null;
+    if (!series?.public || levels.get(s.file)?.has('error')) continue;
+    const chapters: StudyPublicIndex['series'][number]['chapters'] = [];
+    for (const ch of [...s.chapters].sort((a, b) => a.key.localeCompare(b.key))) {
+      const lines = ctx.chapterLines(ch.key);
+      if (!ch.data || !lines || levels.get(ch.file)?.has('error')) continue;
+      const stale = levels.get(ch.file)?.has('stale') ?? false;
+      const rel = `study/${s.id}/${ch.key}.json`;
+      files.set(rel, studyBetaChapter(publicView(ch.data), lines, stale));
+      chapters.push({
+        chapter: ch.key,
+        path: rel,
+        status: ch.data.status,
+        ...(stale ? { stale: true as const } : {}),
+        lectures: ch.data.lectures.flatMap((l) => lectureSpan(ctx, ch.data!, l.id) ?? []),
+      });
+    }
+    index.series.push({ id: series.id, catalogSeriesId: series.catalogSeriesId, teacher: series.teacher, title: series.title, chapters });
+  }
+  return { index, files };
 }

@@ -12,6 +12,8 @@ import 'repo_data.dart';
 Object? roundTrip(String path, String source) {
   final p = path.replaceAll(r'\', '/');
   if (p == 'catalog.json') return parseCatalog(source).toJson();
+  if (p == 'study/index.json') return parseStudyIndex(source).toJson();
+  if (p.startsWith('study/')) return parseStudyGuide(source).toJson();
   if (p.endsWith('index.json')) return parseIndexListing(source).toJson();
   if (p.startsWith('alignments/chapters/')) {
     return parseChapterAlignments(source).toJson();
@@ -47,6 +49,7 @@ void main() {
           'chapters/index.json',
           'alignments/index.json',
           'transcripts/index.json',
+          'study/index.json',
         ]),
       );
       expect(names.where((n) => n.startsWith('chapters/chapter_')).length, 54);
@@ -60,8 +63,30 @@ void main() {
       });
     }
 
+    test('every public study guide the study index lists exists', () {
+      final index = parseStudyIndex(
+        File('${dist.path}/study/index.json').readAsStringSync(),
+      );
+      for (final series in index.series) {
+        for (final ch in series.chapters) {
+          final guide = parseStudyGuide(
+            File('${dist.path}/${ch.path}').readAsStringSync(),
+          );
+          expect(guide.series, series.id);
+          expect(guide.chapter, ch.chapter);
+          expect(
+            DataUrls().studyGuide(series.id, ch.chapter),
+            DataUrls().resolve(ch.path),
+          );
+        }
+      }
+    });
+
     test('every index entry resolves to a file', () {
-      for (final f in files.where((f) => f.path.endsWith('index.json'))) {
+      for (final f in files.where(
+        (f) =>
+            f.path.endsWith('index.json') && rel(f, dist) != 'study/index.json',
+      )) {
         final listing = parseIndexListing(f.readAsStringSync());
         for (final item in listing.items) {
           expect(

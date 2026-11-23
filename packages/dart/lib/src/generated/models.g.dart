@@ -48,6 +48,120 @@ enum OutlineTopicConfidence {
   }
 }
 
+/// draft: written by a generator, not checked by a person. edited: a person has corrected it. reviewed: approved by the teacher or someone he named.
+enum StudyGuideStatus {
+  draft("draft"),
+  edited("edited"),
+  reviewed("reviewed");
+
+  const StudyGuideStatus(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideStatus fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideStatus: unknown value $json');
+  }
+}
+
+enum StudyGuideProvenanceMethod {
+  generated("generated"),
+  migrated("migrated"),
+  hand("hand");
+
+  const StudyGuideProvenanceMethod(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideProvenanceMethod fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideProvenanceMethod: unknown value $json');
+  }
+}
+
+/// explanation: what the words mean. mashal: an analogy, with what it stands for. keyPoint: the point to take away. question: a question raised in class and its answer. story: a story or recollection. avodah: what to do with this. aside: a remark off the line. digression: a longer excursion. recap: a later summary of the passage.
+enum StudyGuideBlockKind {
+  explanation("explanation"),
+  mashal("mashal"),
+  keypoint("keyPoint"),
+  question("question"),
+  story("story"),
+  avodah("avodah"),
+  aside("aside"),
+  digression("digression"),
+  recap("recap");
+
+  const StudyGuideBlockKind(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideBlockKind fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideBlockKind: unknown value $json');
+  }
+}
+
+enum StudyGuideBlockAskedBy {
+  student("student"),
+  teacher("teacher");
+
+  const StudyGuideBlockAskedBy(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuideBlockAskedBy fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuideBlockAskedBy: unknown value $json');
+  }
+}
+
+enum StudyGuidePassageSkipReason {
+  noRecording("no-recording"),
+  readOnly("read-only");
+
+  const StudyGuidePassageSkipReason(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyGuidePassageSkipReason fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyGuidePassageSkipReason: unknown value $json');
+  }
+}
+
+enum StudyIndexChapterStatus {
+  draft("draft"),
+  edited("edited"),
+  reviewed("reviewed");
+
+  const StudyIndexChapterStatus(this.json);
+
+  /// The value as it appears in JSON.
+  final String json;
+
+  static StudyIndexChapterStatus fromJson(Object? json) {
+    for (final v in values) {
+      if (v.json == json) return v;
+    }
+    throw FormatException('StudyIndexChapterStatus: unknown value $json');
+  }
+}
+
 /// One of: [CatalogSection], [CatalogLecture].
 sealed class CatalogItem {
   const CatalogItem();
@@ -1309,6 +1423,860 @@ final class Outline {
 
   @override
   String toString() => 'Outline(${toJson()})';
+}
+
+final class StudyGuideProvenance {
+  const StudyGuideProvenance({required this.method});
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuideProvenance.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuideProvenance');
+    return StudyGuideProvenance(
+      method: StudyGuideProvenanceMethod.fromJson(
+        _req(m, "method", 'StudyGuideProvenance.method'),
+      ),
+    );
+  }
+
+  final StudyGuideProvenanceMethod method;
+
+  Map<String, Object?> toJson() => {"method": method.json};
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuideProvenance && other.method == method);
+
+  @override
+  int get hashCode => Object.hashAll([method]);
+
+  @override
+  String toString() => 'StudyGuideProvenance(${toJson()})';
+}
+
+/// A stretch of one recording: a catalog lecture id and the seconds, in the audio the catalog plays.
+final class StudyGuideAudio {
+  const StudyGuideAudio({required this.lecture, this.start, this.end});
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuideAudio.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuideAudio');
+    return StudyGuideAudio(
+      lecture: _string(
+        _req(m, "lecture", 'StudyGuideAudio.lecture'),
+        'StudyGuideAudio.lecture',
+      ),
+      start: _opt(m["start"], (v) => _double(v, 'StudyGuideAudio.start')),
+      end: _opt(m["end"], (v) => _double(v, 'StudyGuideAudio.end')),
+    );
+  }
+
+  final String lecture;
+
+  final double? start;
+
+  final double? end;
+
+  Map<String, Object?> toJson() => {
+    "lecture": lecture,
+    if (start != null) "start": start,
+    if (end != null) "end": end,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuideAudio &&
+          other.lecture == lecture &&
+          other.start == start &&
+          other.end == end);
+
+  @override
+  int get hashCode => Object.hashAll([lecture, start, end]);
+
+  @override
+  String toString() => 'StudyGuideAudio(${toJson()})';
+}
+
+final class StudyGuidePhrase {
+  const StudyGuidePhrase({
+    required this.he,
+    this.en,
+    this.lecture,
+    this.start,
+    this.end,
+    this.notes,
+    required this.lines,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuidePhrase.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuidePhrase');
+    return StudyGuidePhrase(
+      he: _string(_req(m, "he", 'StudyGuidePhrase.he'), 'StudyGuidePhrase.he'),
+      en: _opt(m["en"], (v) => _string(v, 'StudyGuidePhrase.en')),
+      lecture: _opt(
+        m["lecture"],
+        (v) => _string(v, 'StudyGuidePhrase.lecture'),
+      ),
+      start: _opt(m["start"], (v) => _double(v, 'StudyGuidePhrase.start')),
+      end: _opt(m["end"], (v) => _double(v, 'StudyGuidePhrase.end')),
+      notes: _opt(
+        m["notes"],
+        (v) => List.unmodifiable(
+          _list(
+            v,
+            'StudyGuidePhrase.notes',
+          ).map((e) => _string(e, 'StudyGuidePhrase.notes')),
+        ),
+      ),
+      lines: List.unmodifiable(
+        _list(
+          _req(m, "lines", 'StudyGuidePhrase.lines'),
+          'StudyGuidePhrase.lines',
+        ).map((e) => _string(e, 'StudyGuidePhrase.lines')),
+      ),
+    );
+  }
+
+  final String he;
+
+  /// The teacher's own English for the phrase, where he gives one (inline Markdown, italics only); then `lecture`, `start` and `end` say where he says it.
+  final String? en;
+
+  final String? lecture;
+
+  final double? start;
+
+  final double? end;
+
+  final List<String>? notes;
+
+  /// The line ids whose text the phrase overlaps.
+  final List<String> lines;
+
+  Map<String, Object?> toJson() => {
+    "he": he,
+    if (en != null) "en": en,
+    if (lecture != null) "lecture": lecture,
+    if (start != null) "start": start,
+    if (end != null) "end": end,
+    if (notes != null) "notes": [for (final e in notes!) e],
+    "lines": [for (final e in lines) e],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuidePhrase &&
+          other.he == he &&
+          other.en == en &&
+          other.lecture == lecture &&
+          other.start == start &&
+          other.end == end &&
+          _listEquals(other.notes, notes) &&
+          _listEquals(other.lines, lines));
+
+  @override
+  int get hashCode => Object.hashAll([
+    he,
+    en,
+    lecture,
+    start,
+    end,
+    notes == null ? null : Object.hashAll(notes!),
+    Object.hashAll(lines),
+  ]);
+
+  @override
+  String toString() => 'StudyGuidePhrase(${toJson()})';
+}
+
+/// One thought of the class, a paragraph or two.
+final class StudyGuideBlock {
+  const StudyGuideBlock({
+    required this.kind,
+    this.title,
+    this.question,
+    this.askedBy,
+    required this.text,
+    this.join,
+    required this.audio,
+    this.outOfPlace,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuideBlock.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuideBlock');
+    return StudyGuideBlock(
+      kind: StudyGuideBlockKind.fromJson(
+        _req(m, "kind", 'StudyGuideBlock.kind'),
+      ),
+      title: _opt(m["title"], (v) => _string(v, 'StudyGuideBlock.title')),
+      question: _opt(
+        m["question"],
+        (v) => _string(v, 'StudyGuideBlock.question'),
+      ),
+      askedBy: _opt(m["askedBy"], (v) => StudyGuideBlockAskedBy.fromJson(v)),
+      text: _string(
+        _req(m, "text", 'StudyGuideBlock.text'),
+        'StudyGuideBlock.text',
+      ),
+      join: _opt(m["join"], (v) => _bool(v, 'StudyGuideBlock.join')),
+      audio: List.unmodifiable(
+        _list(
+          _req(m, "audio", 'StudyGuideBlock.audio'),
+          'StudyGuideBlock.audio',
+        ).map((e) => StudyGuideAudio.fromJson(e)),
+      ),
+      outOfPlace: _opt(
+        m["outOfPlace"],
+        (v) => _string(v, 'StudyGuideBlock.outOfPlace'),
+      ),
+    );
+  }
+
+  /// explanation: what the words mean. mashal: an analogy, with what it stands for. keyPoint: the point to take away. question: a question raised in class and its answer. story: a story or recollection. avodah: what to do with this. aside: a remark off the line. digression: a longer excursion. recap: a later summary of the passage.
+  final StudyGuideBlockKind kind;
+
+  final String? title;
+
+  /// For kind question: the question; `text` is the answer.
+  final String? question;
+
+  final StudyGuideBlockAskedBy? askedBy;
+
+  /// Markdown, inline only: *italics* for transliterated terms and titles, **bold** only for words quoted from the passage's translation, and a blank line between paragraphs.
+  final String text;
+
+  /// Presentation hint: the block runs on in the previous block's paragraph.
+  final bool? join;
+
+  /// Where it is said; the first entry is the main one, the rest other tellings of the same thing.
+  final List<StudyGuideAudio> audio;
+
+  /// Why the main audio is far from where the class reads the passage's lines.
+  final String? outOfPlace;
+
+  Map<String, Object?> toJson() => {
+    "kind": kind.json,
+    if (title != null) "title": title,
+    if (question != null) "question": question,
+    if (askedBy != null) "askedBy": askedBy!.json,
+    "text": text,
+    if (join != null) "join": join,
+    "audio": [for (final e in audio) e.toJson()],
+    if (outOfPlace != null) "outOfPlace": outOfPlace,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuideBlock &&
+          other.kind == kind &&
+          other.title == title &&
+          other.question == question &&
+          other.askedBy == askedBy &&
+          other.text == text &&
+          other.join == join &&
+          _listEquals(other.audio, audio) &&
+          other.outOfPlace == outOfPlace);
+
+  @override
+  int get hashCode => Object.hashAll([
+    kind,
+    title,
+    question,
+    askedBy,
+    text,
+    join,
+    Object.hashAll(audio),
+    outOfPlace,
+  ]);
+
+  @override
+  String toString() => 'StudyGuideBlock(${toJson()})';
+}
+
+/// Why the passage has no blocks. no-recording: the series has no class on these lines. read-only: the class reads and translates them and says nothing more.
+final class StudyGuidePassageSkip {
+  const StudyGuidePassageSkip({required this.reason, this.note});
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuidePassageSkip.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuidePassageSkip');
+    return StudyGuidePassageSkip(
+      reason: StudyGuidePassageSkipReason.fromJson(
+        _req(m, "reason", 'StudyGuidePassageSkip.reason'),
+      ),
+      note: _opt(m["note"], (v) => _string(v, 'StudyGuidePassageSkip.note')),
+    );
+  }
+
+  final StudyGuidePassageSkipReason reason;
+
+  final String? note;
+
+  Map<String, Object?> toJson() => {
+    "reason": reason.json,
+    if (note != null) "note": note,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuidePassageSkip &&
+          other.reason == reason &&
+          other.note == note);
+
+  @override
+  int get hashCode => Object.hashAll([reason, note]);
+
+  @override
+  String toString() => 'StudyGuidePassageSkip(${toJson()})';
+}
+
+/// One or more consecutive lines taught together.
+final class StudyGuidePassage {
+  const StudyGuidePassage({
+    required this.lines,
+    this.phrases,
+    required this.blocks,
+    this.skip,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuidePassage.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuidePassage');
+    return StudyGuidePassage(
+      lines: List.unmodifiable(
+        _list(
+          _req(m, "lines", 'StudyGuidePassage.lines'),
+          'StudyGuidePassage.lines',
+        ).map((e) => _string(e, 'StudyGuidePassage.lines')),
+      ),
+      phrases: _opt(
+        m["phrases"],
+        (v) => List.unmodifiable(
+          _list(
+            v,
+            'StudyGuidePassage.phrases',
+          ).map((e) => StudyGuidePhrase.fromJson(e)),
+        ),
+      ),
+      blocks: List.unmodifiable(
+        _list(
+          _req(m, "blocks", 'StudyGuidePassage.blocks'),
+          'StudyGuidePassage.blocks',
+        ).map((e) => StudyGuideBlock.fromJson(e)),
+      ),
+      skip: _opt(m["skip"], (v) => StudyGuidePassageSkip.fromJson(v)),
+    );
+  }
+
+  /// Consecutive line ids, in document order. Together the passages cover the chapter's lines once, in order.
+  final List<String> lines;
+
+  /// The passage's Hebrew cut into phrases as the class reads it; their `he` joined by spaces is the lines' text. Absent where no class reads the lines.
+  final List<StudyGuidePhrase>? phrases;
+
+  final List<StudyGuideBlock> blocks;
+
+  /// Why the passage has no blocks. no-recording: the series has no class on these lines. read-only: the class reads and translates them and says nothing more.
+  final StudyGuidePassageSkip? skip;
+
+  Map<String, Object?> toJson() => {
+    "lines": [for (final e in lines) e],
+    if (phrases != null) "phrases": [for (final e in phrases!) e.toJson()],
+    "blocks": [for (final e in blocks) e.toJson()],
+    if (skip != null) "skip": skip!.toJson(),
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuidePassage &&
+          _listEquals(other.lines, lines) &&
+          _listEquals(other.phrases, phrases) &&
+          _listEquals(other.blocks, blocks) &&
+          other.skip == skip);
+
+  @override
+  int get hashCode => Object.hashAll([
+    Object.hashAll(lines),
+    phrases == null ? null : Object.hashAll(phrases!),
+    Object.hashAll(blocks),
+    skip,
+  ]);
+
+  @override
+  String toString() => 'StudyGuidePassage(${toJson()})';
+}
+
+final class StudyGuideSection {
+  const StudyGuideSection({
+    required this.title,
+    required this.summary,
+    required this.passages,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuideSection.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuideSection');
+    return StudyGuideSection(
+      title: _string(
+        _req(m, "title", 'StudyGuideSection.title'),
+        'StudyGuideSection.title',
+      ),
+      summary: _string(
+        _req(m, "summary", 'StudyGuideSection.summary'),
+        'StudyGuideSection.summary',
+      ),
+      passages: List.unmodifiable(
+        _list(
+          _req(m, "passages", 'StudyGuideSection.passages'),
+          'StudyGuideSection.passages',
+        ).map((e) => StudyGuidePassage.fromJson(e)),
+      ),
+    );
+  }
+
+  final String title;
+
+  /// Markdown, inline only: *italics* for transliterated terms and titles, **bold** only for words quoted from the passage's translation, and a blank line between paragraphs.
+  final String summary;
+
+  final List<StudyGuidePassage> passages;
+
+  Map<String, Object?> toJson() => {
+    "title": title,
+    "summary": summary,
+    "passages": [for (final e in passages) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuideSection &&
+          other.title == title &&
+          other.summary == summary &&
+          _listEquals(other.passages, passages));
+
+  @override
+  int get hashCode =>
+      Object.hashAll([title, summary, Object.hashAll(passages)]);
+
+  @override
+  String toString() => 'StudyGuideSection(${toJson()})';
+}
+
+/// Study guide (v1)
+///
+/// Shape of /data/v1/study/`<series>`/`<chapter>`.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Published only for series whose teacher allowed it, in their public edition (blocks marked sensitive in the source are replaced by their publishable text or left out).
+final class StudyGuide {
+  const StudyGuide({
+    required this.series,
+    required this.chapter,
+    required this.title,
+    required this.status,
+    this.stale,
+    this.provenance,
+    required this.overview,
+    this.overviewAudio,
+    required this.sections,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyGuide.fromJson(Object? json) {
+    final m = _map(json, 'StudyGuide');
+    if (m['schemaVersion'] != 1) {
+      throw FormatException(
+        'StudyGuide.schemaVersion: expected 1, got ${m['schemaVersion']}',
+      );
+    }
+    return StudyGuide(
+      series: _string(
+        _req(m, "series", 'StudyGuide.series'),
+        'StudyGuide.series',
+      ),
+      chapter: _string(
+        _req(m, "chapter", 'StudyGuide.chapter'),
+        'StudyGuide.chapter',
+      ),
+      title: _string(_req(m, "title", 'StudyGuide.title'), 'StudyGuide.title'),
+      status: StudyGuideStatus.fromJson(_req(m, "status", 'StudyGuide.status')),
+      stale: _opt(m["stale"], (v) => _bool(v, 'StudyGuide.stale')),
+      provenance: _opt(
+        m["provenance"],
+        (v) => StudyGuideProvenance.fromJson(v),
+      ),
+      overview: _string(
+        _req(m, "overview", 'StudyGuide.overview'),
+        'StudyGuide.overview',
+      ),
+      overviewAudio: _opt(
+        m["overviewAudio"],
+        (v) => List.unmodifiable(
+          _list(
+            v,
+            'StudyGuide.overviewAudio',
+          ).map((e) => StudyGuideAudio.fromJson(e)),
+        ),
+      ),
+      sections: List.unmodifiable(
+        _list(
+          _req(m, "sections", 'StudyGuide.sections'),
+          'StudyGuide.sections',
+        ).map((e) => StudyGuideSection.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Always 1.
+  int get schemaVersion => 1;
+
+  /// The study series id (see study/index.json).
+  final String series;
+
+  /// Chapter key, as in chapters/.
+  final String chapter;
+
+  final String title;
+
+  /// draft: written by a generator, not checked by a person. edited: a person has corrected it. reviewed: approved by the teacher or someone he named.
+  final StudyGuideStatus status;
+
+  /// Present (true) when the guide no longer matches the chapter's text or the recordings' timing in places.
+  final bool? stale;
+
+  final StudyGuideProvenance? provenance;
+
+  /// The chapter as the class teaches it, a paragraph or two.
+  final String overview;
+
+  /// Where the class sums the chapter up.
+  final List<StudyGuideAudio>? overviewAudio;
+
+  final List<StudyGuideSection> sections;
+
+  Map<String, Object?> toJson() => {
+    "schemaVersion": schemaVersion,
+    "series": series,
+    "chapter": chapter,
+    "title": title,
+    "status": status.json,
+    if (stale != null) "stale": stale,
+    if (provenance != null) "provenance": provenance!.toJson(),
+    "overview": overview,
+    if (overviewAudio != null)
+      "overviewAudio": [for (final e in overviewAudio!) e.toJson()],
+    "sections": [for (final e in sections) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyGuide &&
+          other.series == series &&
+          other.chapter == chapter &&
+          other.title == title &&
+          other.status == status &&
+          other.stale == stale &&
+          other.provenance == provenance &&
+          other.overview == overview &&
+          _listEquals(other.overviewAudio, overviewAudio) &&
+          _listEquals(other.sections, sections));
+
+  @override
+  int get hashCode => Object.hashAll([
+    series,
+    chapter,
+    title,
+    status,
+    stale,
+    provenance,
+    overview,
+    overviewAudio == null ? null : Object.hashAll(overviewAudio!),
+    Object.hashAll(sections),
+  ]);
+
+  @override
+  String toString() => 'StudyGuide(${toJson()})';
+}
+
+final class StudyIndexLecture {
+  const StudyIndexLecture({
+    required this.id,
+    required this.start,
+    required this.end,
+    this.continuesIn,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyIndexLecture.fromJson(Object? json) {
+    final m = _map(json, 'StudyIndexLecture');
+    return StudyIndexLecture(
+      id: _string(
+        _req(m, "id", 'StudyIndexLecture.id'),
+        'StudyIndexLecture.id',
+      ),
+      start: _double(
+        _req(m, "start", 'StudyIndexLecture.start'),
+        'StudyIndexLecture.start',
+      ),
+      end: _double(
+        _req(m, "end", 'StudyIndexLecture.end'),
+        'StudyIndexLecture.end',
+      ),
+      continuesIn: _opt(
+        m["continuesIn"],
+        (v) => _string(v, 'StudyIndexLecture.continuesIn'),
+      ),
+    );
+  }
+
+  /// Catalog lecture id.
+  final String id;
+
+  /// Seconds (audio time) where the class's part on this chapter starts.
+  final double start;
+
+  final double end;
+
+  /// The chapter the class reads on into after this one.
+  final String? continuesIn;
+
+  Map<String, Object?> toJson() => {
+    "id": id,
+    "start": start,
+    "end": end,
+    if (continuesIn != null) "continuesIn": continuesIn,
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyIndexLecture &&
+          other.id == id &&
+          other.start == start &&
+          other.end == end &&
+          other.continuesIn == continuesIn);
+
+  @override
+  int get hashCode => Object.hashAll([id, start, end, continuesIn]);
+
+  @override
+  String toString() => 'StudyIndexLecture(${toJson()})';
+}
+
+final class StudyIndexChapter {
+  const StudyIndexChapter({
+    required this.chapter,
+    required this.path,
+    required this.status,
+    this.stale,
+    required this.lectures,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyIndexChapter.fromJson(Object? json) {
+    final m = _map(json, 'StudyIndexChapter');
+    return StudyIndexChapter(
+      chapter: _string(
+        _req(m, "chapter", 'StudyIndexChapter.chapter'),
+        'StudyIndexChapter.chapter',
+      ),
+      path: _string(
+        _req(m, "path", 'StudyIndexChapter.path'),
+        'StudyIndexChapter.path',
+      ),
+      status: StudyIndexChapterStatus.fromJson(
+        _req(m, "status", 'StudyIndexChapter.status'),
+      ),
+      stale: _opt(m["stale"], (v) => _bool(v, 'StudyIndexChapter.stale')),
+      lectures: List.unmodifiable(
+        _list(
+          _req(m, "lectures", 'StudyIndexChapter.lectures'),
+          'StudyIndexChapter.lectures',
+        ).map((e) => StudyIndexLecture.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Chapter key, as in chapters/.
+  final String chapter;
+
+  /// Path of the guide, relative to /data/v1/.
+  final String path;
+
+  final StudyIndexChapterStatus status;
+
+  final bool? stale;
+
+  /// The classes the guide cites, in class order.
+  final List<StudyIndexLecture> lectures;
+
+  Map<String, Object?> toJson() => {
+    "chapter": chapter,
+    "path": path,
+    "status": status.json,
+    if (stale != null) "stale": stale,
+    "lectures": [for (final e in lectures) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyIndexChapter &&
+          other.chapter == chapter &&
+          other.path == path &&
+          other.status == status &&
+          other.stale == stale &&
+          _listEquals(other.lectures, lectures));
+
+  @override
+  int get hashCode =>
+      Object.hashAll([chapter, path, status, stale, Object.hashAll(lectures)]);
+
+  @override
+  String toString() => 'StudyIndexChapter(${toJson()})';
+}
+
+final class StudyIndexSeries {
+  const StudyIndexSeries({
+    required this.id,
+    required this.catalogSeriesId,
+    required this.teacher,
+    required this.title,
+    required this.chapters,
+  });
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyIndexSeries.fromJson(Object? json) {
+    final m = _map(json, 'StudyIndexSeries');
+    return StudyIndexSeries(
+      id: _string(_req(m, "id", 'StudyIndexSeries.id'), 'StudyIndexSeries.id'),
+      catalogSeriesId: _string(
+        _req(m, "catalogSeriesId", 'StudyIndexSeries.catalogSeriesId'),
+        'StudyIndexSeries.catalogSeriesId',
+      ),
+      teacher: _string(
+        _req(m, "teacher", 'StudyIndexSeries.teacher'),
+        'StudyIndexSeries.teacher',
+      ),
+      title: _string(
+        _req(m, "title", 'StudyIndexSeries.title'),
+        'StudyIndexSeries.title',
+      ),
+      chapters: List.unmodifiable(
+        _list(
+          _req(m, "chapters", 'StudyIndexSeries.chapters'),
+          'StudyIndexSeries.chapters',
+        ).map((e) => StudyIndexChapter.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Study series id (the guides' `series`).
+  final String id;
+
+  /// The catalog series the guides are written from.
+  final String catalogSeriesId;
+
+  final String teacher;
+
+  final String title;
+
+  /// In chapter order.
+  final List<StudyIndexChapter> chapters;
+
+  Map<String, Object?> toJson() => {
+    "id": id,
+    "catalogSeriesId": catalogSeriesId,
+    "teacher": teacher,
+    "title": title,
+    "chapters": [for (final e in chapters) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyIndexSeries &&
+          other.id == id &&
+          other.catalogSeriesId == catalogSeriesId &&
+          other.teacher == teacher &&
+          other.title == title &&
+          _listEquals(other.chapters, chapters));
+
+  @override
+  int get hashCode => Object.hashAll([
+    id,
+    catalogSeriesId,
+    teacher,
+    title,
+    Object.hashAll(chapters),
+  ]);
+
+  @override
+  String toString() => 'StudyIndexSeries(${toJson()})';
+}
+
+/// Study guide listing (v1)
+///
+/// Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from.
+final class StudyIndex {
+  const StudyIndex({required this.series});
+
+  /// Decodes from parsed JSON. Throws [FormatException] when
+  /// [json] does not match the schema. Unknown keys are ignored.
+  factory StudyIndex.fromJson(Object? json) {
+    final m = _map(json, 'StudyIndex');
+    if (m['schemaVersion'] != 1) {
+      throw FormatException(
+        'StudyIndex.schemaVersion: expected 1, got ${m['schemaVersion']}',
+      );
+    }
+    return StudyIndex(
+      series: List.unmodifiable(
+        _list(
+          _req(m, "series", 'StudyIndex.series'),
+          'StudyIndex.series',
+        ).map((e) => StudyIndexSeries.fromJson(e)),
+      ),
+    );
+  }
+
+  /// Always 1.
+  int get schemaVersion => 1;
+
+  final List<StudyIndexSeries> series;
+
+  Map<String, Object?> toJson() => {
+    "schemaVersion": schemaVersion,
+    "series": [for (final e in series) e.toJson()],
+  };
+
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is StudyIndex && _listEquals(other.series, series));
+
+  @override
+  int get hashCode => Object.hashAll([Object.hashAll(series)]);
+
+  @override
+  String toString() => 'StudyIndex(${toJson()})';
 }
 
 Map<String, Object?> _map(Object? json, String ctx) {

@@ -20,6 +20,8 @@ const schemaRoots = {
   'transcript.schema.json': 'Transcript',
   'chapter-alignments.schema.json': 'ChapterAlignments',
   'outline.schema.json': 'Outline',
+  'study.schema.json': 'StudyGuide',
+  'study-index.schema.json': 'StudyIndex',
 };
 
 /// Derived names that read badly are renamed here.

@@ -117,6 +117,8 @@ export interface StudySeriesFile {
   /** A published translation the phrases' English is taken from verbatim; only then may `en` come without `audio`. */
   publishedTranslation?: { title: string; source: string; license: string };
   chapterLectures?: Record<string, string[]>;
+  /** The teacher allowed publication: the build writes the public edition to dist/v1/study/. */
+  public?: { permission: string; date: string };
 }
 
 export interface TranslitFile {
@@ -371,6 +373,9 @@ export const PLACE_SLACK_SECONDS = 120;
 export const GAP_WORDS = 250;
 /** A block longer than this (words) is no longer one thought to jump to. */
 export const BLOCK_MAX_WORDS = 260;
+/** A block condenses the class: past this share of the words it cites (and on at least BLOCK_SHARE_MIN_CITED of them), it reads as a transcript. */
+export const BLOCK_MAX_SHARE = 0.6;
+export const BLOCK_SHARE_MIN_CITED = 120;
 
 export interface ChapterStats {
   passages: number;
@@ -601,6 +606,14 @@ export function checkStudyChapter(
       add('warning', `${at} is a ${block.kind} without a "title" to navigate by`);
     }
     if (wordCount(block.text) > BLOCK_MAX_WORDS) add('warning', `${at} is ${wordCount(block.text)} words; split it into blocks of one thought each (at most about ${BLOCK_MAX_WORDS})`);
+    const main = block.audio[0];
+    if (main) {
+      const cited = main.words[1] - main.words[0] + 1;
+      const prose = wordCount(block.text) + (block.question ? wordCount(block.question) : 0);
+      if (cited >= BLOCK_SHARE_MIN_CITED && prose > BLOCK_MAX_SHARE * cited) {
+        add('warning', `${at} is ${prose} words for ${cited} words of class (${Math.round((100 * prose) / cited)}%); condense it to about a third to a half of what he said`);
+      }
+    }
     const dup = seenText.get(block.text);
     if (dup) add('error', `${at} repeats the text of ${dup}`);
     else seenText.set(block.text, at);

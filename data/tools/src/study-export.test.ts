@@ -4,8 +4,9 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 import { DATA_DIR } from './pipeline.js';
-import { continuesIn, exportStudyBeta, phraseLines, studyBetaChapter } from './study-export.js';
-import { checkStudy, loadStudy, loadStudyContext, type StudyChapterFile } from './study.js';
+import { continuesIn, exportStudyBeta, exportStudyPublic, phraseLines, studyBetaChapter } from './study-export.js';
+import { checkStudy, loadStudy, loadStudyContext, type StudyChapterFile, type StudySeriesFile } from './study.js';
+import { SchemaSet } from './validate.js';
 import type { StoredAlignment } from './transcripts.js';
 
 const FIXTURE = path.join(DATA_DIR, 'tools', 'fixtures', 'study');
@@ -152,6 +153,55 @@ describe('exportStudyBeta', () => {
   });
 });
 
+/** A copy of the fixture with its series.json changed. */
+const seriesWith = (change: (s: StudySeriesFile) => void): string => {
+  const dir = mkdtempSync(path.join(tmpdir(), 'study-public-'));
+  cpSync(FIXTURE, dir, { recursive: true });
+  const file = path.join(dir, 'study', 'test-series', 'series.json');
+  const data = JSON.parse(readFileSync(file, 'utf8')) as StudySeriesFile;
+  change(data);
+  writeFileSync(file, JSON.stringify(data));
+  return dir;
+};
+const runPublic = (dir: string) => {
+  const ctx = loadStudyContext(dir);
+  const { issues } = checkStudy(dir, ctx, { schemaDir: SCHEMAS });
+  return exportStudyPublic(dir, ctx, issues, SCHEMAS);
+};
+const PUBLIC = (s: StudySeriesFile) => {
+  s.public = { permission: 'The teacher allowed it.', date: '2026-11-22' };
+};
+
+describe('exportStudyPublic', () => {
+  it('exports nothing for a series without permission', () => {
+    const out = runPublic(FIXTURE);
+    assert.deepEqual(out.index, { schemaVersion: 1, series: [] });
+    assert.equal(out.files.size, 0);
+  });
+
+  it('exports a public series in its public edition, valid against the v1 schemas', () => {
+    const out = runPublic(seriesWith(PUBLIC));
+    assert.deepEqual(out.index.series[0]!.chapters, [
+      { chapter: 'chapter_01', path: 'study/test-series/chapter_01.json', status: 'draft', lectures: [{ id: 't1.mp3', start: 0, end: 40.8 }] },
+    ]);
+    assert.ok(!('generated' in out.index));
+    const ch = out.files.get('study/test-series/chapter_01.json')!;
+    const blocks = ch.sections.flatMap((s) => s.passages.flatMap((p) => p.blocks));
+    assert.ok(blocks.every((b) => b.sensitivity === undefined), 'a sensitivity flag reached the public edition');
+    // The flagged block's publishable text replaced it (or it was omitted).
+    const source = loadStudy(FIXTURE, SCHEMAS).series[0]!.chapters[0]!.data!;
+    const flagged = source.sections.flatMap((s) => s.passages.flatMap((p) => p.blocks)).filter((b) => b.sensitivity);
+    assert.ok(flagged.length > 0);
+    for (const f of flagged) {
+      assert.ok(!blocks.some((b) => b.text === f.text), 'the flagged text is still published');
+      if (f.sensitivity!.action === 'replace') assert.ok(blocks.some((b) => b.text === f.sensitivity!.publishable));
+    }
+    const schemas = new SchemaSet(path.join(DATA_DIR, 'schema', 'v1'));
+    assert.deepEqual(schemas.validate('studyIndex', out.index), []);
+    assert.deepEqual(schemas.validate('study', ch), []);
+  });
+});
+
 describe('build', () => {
   it('writes dist/study-beta/ beside dist/v1/, never inside it', () => {
     const dist = path.join(DATA_DIR, 'dist');
@@ -160,5 +210,16 @@ describe('build', () => {
     const index = JSON.parse(readFileSync(path.join(dist, 'study-beta', 'index.json'), 'utf8'));
     assert.equal(index.schemaVersion, 1);
     for (const s of index.series) for (const c of Object.values(s.chapters) as { file: string }[]) assert.ok(existsSync(path.join(dist, 'study-beta', c.file)));
+  });
+
+  it('writes the public study guides under dist/v1/study/, listed in index.json, with no sensitivity flag', () => {
+    const v1 = path.join(DATA_DIR, 'dist', 'v1');
+    if (!existsSync(path.join(v1, 'study', 'index.json'))) return; // run `yarn build-data` first
+    const top = JSON.parse(readFileSync(path.join(v1, 'index.json'), 'utf8')) as { items: { id: string }[] };
+    assert.ok(top.items.some((i) => i.id === 'study'));
+    const index = JSON.parse(readFileSync(path.join(v1, 'study', 'index.json'), 'utf8')) as { series: { chapters: { path: string }[] }[] };
+    for (const s of index.series) {
+      for (const c of s.chapters) assert.ok(!readFileSync(path.join(v1, c.path), 'utf8').includes('"sensitivity"'), c.path);
+    }
   });
 });
