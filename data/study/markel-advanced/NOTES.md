@@ -68,3 +68,24 @@ Flag freely (see STYLE.md). Seen so far: remarks about women (chapter 10),
 "idol worship" said of other religions and of meditation practices
 (chapter 1), remarks on communism and on foundations and bureaucracies
 (chapter 10), jokes built on what husbands and wives want (chapter 9).
+
+"Idiot" (of other people, of a character in a joke, or of himself and
+his listeners) is always flagged (`crude` when it is only the word), with a
+`replace` text that drops or swaps the word: the reviewer prefers the
+softened version wherever he says it.
+
+The reviewer's first 31 decisions (November 2026) are the examples behind
+the raw/softened/drop test in STYLE.md. For Rabbi Markel in particular:
+his statements that a practice or creed is *avoda zara* print raw; his
+name-calling of the people who hold it is softened. His remarks on women
+print raw when they state the doctrine (chapter 2) and are softened when
+they run on into his own examples (chapter 1). Asides about *davenen* not
+being needed are a judgment for the reviewer.
+
+From the reviewer's notes: a *mashal* built on two people's different
+viewpoints (the husband and the wife at the building) prints raw, because
+softening the two into "they were both" kills the point. Teasing of
+Republicans prints raw: he is one, and it is a group teasing itself.
+
+The sensitivity review of chapters 1–18 was finished on 2026-11-23: 38
+flags printed raw (removed), 45 softened and 5 dropped (marked `reviewed`).

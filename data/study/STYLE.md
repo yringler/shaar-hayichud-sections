@@ -26,6 +26,16 @@ without replacing the recording:
   **condensed**: a reader gets in two minutes what took him ten. It is not a
   transcript, not a summary of the chapter and not a new commentary.
 
+**The guide is there to make it easier to connect to the class, not to
+replace it.** That is the test for every choice below. A block says what he
+teaches clearly enough that a reader knows what is in that stretch and
+wants to hear it, and points at the audio where he says it. It does not try
+to carry everything the recording carries: his voice, his timing, the
+flavor of a joke and the back-and-forth with the class stay in the
+recording, which is one tap away. So a block can drop flair and spoken
+asides without loss, and a softened public text loses little; what a block
+must never do is change what he teaches.
+
 ## Sources
 
 Write from the series' classes on the chapter and from nothing else.
@@ -161,9 +171,18 @@ of the class, and often the part a student remembers.
   Tanya*: "The light of the projector stays the same." Do not write "Rabbi
   Markel says" in every block. The file is his class throughout.
 - **Keep his manner.** Use his examples, his turns of phrase, his order, his
-  humor, his bluntness. If he says "poof, the world", write that. A line of
-  his worth having word for word goes in quotation marks. Dialogue he acts out
-  ("What, you changed your mind?") stays dialogue.
+  humor, his bluntness. If he says "poof, the world", write that.
+- **Write a guide, not a recording.** Say his point in written prose, in the
+  guide's voice. His spoken English stays out of quotation marks: at most one
+  short quote per block, and only a line a reader would remember (a
+  punchline, a striking image), not ordinary explanation he happened to say.
+  Dialogue he acts out and exchanges with students ("What do you mean?" "I
+  understand.") become a sentence of prose. Verbal flair spices up the
+  recording but the guide loses nothing without it; the audio keeps it. A
+  quotation of a source (a verse, the Gemara, a saying of a Rebbe) is not his
+  spoken English and stays quoted. (Chapters 1–19 of `markel-advanced` were
+  rewritten this way in November 2026, after the reviewer found the blocks
+  "keep the literal too much".)
 - **Do not soften, tidy or improve.** No hedges he did not make, no balance he
   did not give, no modern sensitivity, no moral he did not draw. If he is
   rude about something, the block is rude about it (and flagged, below).
@@ -173,8 +192,8 @@ of the class, and often the part a student remembers.
   restatement of the same idea, and recaps of what the block already said.
   Join what he says in three tries into one clear sentence. Tell a *mashal* or
   a story in its few decisive moves, not every beat. Keep what is his: the
-  example, the image, the joke, the turn of phrase, and his best lines word
-  for word in quotation marks. Condensing never adds, softens or reorders the
+  example, the image, the joke, the turn of phrase, and the one line worth
+  quoting. Condensing never adds, softens or reorders the
   argument; it only leaves out what he said twice or said on the way.
 - Name him (as the series' `NOTES.md` says) only for something personal: a
   recollection, an opinion he marks as his own, a disagreement with a reading.
@@ -232,6 +251,13 @@ Flag a block with `sensitivity` when it does any of these:
 - `action: "replace"` with a `publishable` text that keeps the teaching and
   drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
   left (a pure aside).
+- Write the two side by side: everything outside the flagged remark is the
+  same words in `text` and `publishable`, so that a word diff of the two
+  shows only what the reason names. If writing the public text finds a
+  tighter way to say the rest, tighten `text` the same way: a reviewer who
+  sees the whole block reworded cannot tell what the flag removes, and a
+  `text` left closer to the transcript than its public twin is not
+  condensed enough.
 - A `publishable` text may keep only the point. A joke or an image that is
   easy to misread in print (Rabbi Raichik's nose through his tallis) can be
   left out of it: the block's audio is there for whoever wants the class
@@ -245,8 +271,45 @@ Flag a block with `sensitivity` when it does any of these:
   change a reviewed block's `text` or `title`, or its flag's `action`,
   `publishable` or `publishableTitle`, delete `reviewed`: the change needs a
   new look.
-- Do not flag ordinary humor, strong Torah positions stated as such, or
-  criticism of ideas (as opposed to people and groups).
+- Do not flag ordinary humor or criticism of ideas (as opposed to people
+  and groups).
+
+### Raw, softened or dropped: the test
+
+The flag decides content only; concision is already done in both texts
+(above). For each flag ask: **is it the position, or the way he put it?**
+
+- **Raw** (`"recommend": "raw"`): the remark is the teaching itself, a
+  position of Torah or Chassidus stated as such, which a traditional reader
+  expects and a softened text would misrepresent. Meditation that seeks G-d
+  through concentration alone is *avoda zara*; "G-d is love" or pantheism is
+  a mistake; a Jewish *daas* against a goyishe one; women and *psak*, or
+  *kalei daas*, stated as the doctrine; a criticism of how scientists think;
+  his own view of a book or a practice. Flag it still (an outside reader may
+  object), write the `publishable` text as usual, and mark it `raw`: the
+  reviewer usually prints it as said.
+- **Softened** (`replace`, no `recommend`): the point stands, but the edge is
+  his delivery. Most often it is verbal flair: the remark spices up the
+  recording, and may even hold a deep truth, but the guide loses nothing
+  without it (he tells the camp that prefers *hiskashrus* to study "you're
+  having dreams"; the guide says "Someone may say, 'I'm *batel* to the Rebbe;
+  what do I need to study this for?'" and gives his answer). The audio keeps
+  the flavor for whoever wants it. Also: insults ("idiots", "stupid"), coarse words, jabs at present-day
+  cultures, nations or politics, sniping at fellow Jews and their camps or
+  groups, a joke at the expense of a real, recent person, or a doctrine
+  carried on into his own examples (women in general, then wives compared
+  with their husbands).
+- **Drop** (`omit`): a joke whose point is irreverence or darkness and that
+  carries no teaching (G-d reading the book to find out who He is; a
+  suicidal man deciding to jump).
+- **A person decides** (`"recommend": "judgment"`, with `judgmentNote`
+  saying what to weigh): a remark a reader could act on (prayer, health,
+  law, money: "we don't even have to worry about *davenen*"), a doctrine
+  that shades into examples where it is not clear which side it falls on,
+  and the first chapters of a new series or teacher.
+
+`recommend` is the writer's lean and changes nothing published: the public
+edition applies `action` until a person removes the flag or accepts it.
 
 ## Prose rules
 

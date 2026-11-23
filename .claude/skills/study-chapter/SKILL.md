@@ -15,6 +15,11 @@ same time. Do not edit `data/study/translit.json`, `STYLE.md`, `NOTES.md`,
 one of them is wrong or lacking, say so in your final report (and, for a
 term, define it in your file's `terms`). Do not commit unless told to.
 
+The guide is there to make it easier to connect to the class, not to
+replace it: write each block so a reader knows what that stretch of
+recording teaches and is led to hear it, not so the recording becomes
+unnecessary.
+
 ## 1. Read
 
 1. `data/study/STYLE.md`: the rules. Read all of it; it is the contract.
@@ -148,10 +153,20 @@ it. For each block, the question is "did he say this, here?"
       teacher's family appear as "a frum woman", "a small child", "a friend".
 - [ ] Condensed, not transcribed: each block is about a third to a half of
       the words it cites, and still has his examples and best lines.
+- [ ] Written as a guide: his spoken lines are prose in the guide's voice;
+      at most one short quote of his per block (sources stay quoted); acted-out
+      dialogue and student exchanges are one sentence; flair that teaches
+      nothing is gone.
 - [ ] Every block a public edition could not print as it stands has
       `sensitivity`, in a block of its own where possible, with a
-      `publishable` text that keeps the teaching. You never add
-      `reviewed`; you delete it from any flag whose block you changed.
+      `publishable` text that keeps the teaching. `text` and `publishable`
+      use the same words outside the flagged remark. Apply STYLE.md's test
+      (the position or the way he put it?): mark `recommend: "raw"` when the
+      remark is the teaching itself, `"judgment"` with a `judgmentNote` when a
+      person has to weigh it, nothing when it is his delivery (softened) or a
+      joke with no teaching (`omit`). Read the series' `NOTES.md` for the
+      reviewer's past calls. You never add `reviewed`; you delete it from any
+      flag whose block you changed.
 - [ ] Phrases: reread the words each phrase's `audio` cites: its `en` is
       what he says there, for that Hebrew and no more. Phrases he does not translate
       have no `en`. The cuts fall where he pauses.
