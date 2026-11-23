@@ -1556,8 +1556,8 @@
                   "crude"
                 ],
                 "reason": "A joke comparing other spiritual paths to cheap street drugs laced with rat poison, against pure \"government grade\" drugs.",
-                "action": "replace",
-                "publishable": "So they try all kinds of things that give them little tastes of it. But it is not the same as the pure thing."
+                "action": "omit",
+                "reviewed": "2026-11-23"
               }
             }
           ]

@@ -756,8 +756,8 @@
                   "crude"
                 ],
                 "reason": "Calls the physical world \"angel poop\", a crude image.",
-                "action": "replace",
-                "publishable": "And that is only the physical. This is much more than the physical: compared to it, the whole physical world is like nothing at all."
+                "action": "omit",
+                "reviewed": "2026-11-23"
               }
             },
             {
