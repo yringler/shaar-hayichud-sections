@@ -5,7 +5,7 @@ description: Write or revise one chapter's study guide file (data/study/<series>
 
 # Write one chapter's study guide
 
-Skill version 5. You produce exactly one file:
+Skill version 6. You produce exactly one file:
 `data/study/<series>/chapter_NN.json`. You are given a series id (a
 directory under `data/study/`, e.g. `markel-advanced`) and a chapter number.
 
@@ -23,7 +23,9 @@ unnecessary.
 ## 1. Read
 
 1. `data/study/STYLE.md`: the rules. Read all of it; it is the contract.
-2. `data/study/<series>/NOTES.md`: what holds for this series.
+2. `data/study/<series>/NOTES.md`: what holds for this series only: his
+   manner, the tapes, and the reviewer's calls on his content. Rules from
+   past reviews that hold for every series are in STYLE.md.
 3. `data/study/markel-advanced/chapter_09.json`: the model file. Look at how
    its passages, phrases and blocks are cut, how long blocks are, how asides
    and questions are kept, and at its one `sensitivity` flag. Its phrases
@@ -69,16 +71,11 @@ Things that go wrong here:
 
 - **Lines the class never reads** (the dump says `NOT READ`): they still
   need passages (`skip: no-recording`), grouped by sense.
-- **A class that reads no line** (free discussion): its blocks go under the
-  passage being discussed, with `outOfPlace` saying so, or under the
-  chapter's last passage if it is about the whole chapter.
-- **`=== LINE` marks are approximate.** The alignment marks where a line's
-  words are heard; he often reads the next phrase before finishing his
-  explanation of the last, or reads a line twice. Decide the block's passage
-  by what is being explained, not only by the mark.
-- **Tape ends.** A side can stop mid-sentence and the next class resume it.
-  The end of a side is sometimes another recording altogether: `omitted`,
-  reason `other`.
+- **A class that reads no line**, **classes that join mid-thought** and the
+  **end of a tape that is another recording**: STYLE.md, Structure and What
+  may be left out.
+- **`=== LINE` marks are approximate** (STYLE.md, Sources): decide the
+  block's passage by what is being explained, not only by the mark.
 
 ## 3. Write
 
@@ -126,7 +123,7 @@ every warning:
 | phrase audio … lie outside class …'s part on the chapter | you cited the wrong class or stretch; find where he translates it here |
 | a mashal/story/digression without a "title" | add one |
 | is N words; split it | split at the turn of thought |
-| is N words for M words of class; condense it | cut the restatements, setup and filler; keep his example, image, joke and best line |
+| is N words for M words of class; condense it | cut the restatements, setup and filler, and say a hammered point once; keep his example, image, joke and best line |
 | has Hebrew script | transliterate |
 | term … does not appear in the file's prose | use it or drop it from `terms` |
 | spelled differently across chapters | use the other chapter's spelling unless it is wrong; report it |
@@ -152,7 +149,8 @@ it. For each block, the question is "did he say this, here?"
 - [ ] No one in the class is in the text: a student, his wife, the
       teacher's family appear as "a frum woman", "a small child", "a friend".
 - [ ] Condensed, not transcribed: each block is about a third to a half of
-      the words it cites, and still has his examples and best lines.
+      the words it cites, and still has his examples and best lines. A
+      point he hammers several times in a row is said once, flagged or not.
 - [ ] Written as a guide: his spoken lines are prose in the guide's voice;
       at most one short quote of his per block (sources stay quoted); acted-out
       dialogue and student exchanges are one sentence; flair that teaches
@@ -164,8 +162,8 @@ it. For each block, the question is "did he say this, here?"
       (the position or the way he put it?): mark `recommend: "raw"` when the
       remark is the teaching itself, `"judgment"` with a `judgmentNote` when a
       person has to weigh it, nothing when it is his delivery (softened) or a
-      joke with no teaching (`omit`). Read the series' `NOTES.md` for the
-      reviewer's past calls. You never add `reviewed`; you delete it from any
+      joke with no teaching (`omit`). STYLE.md has the general calls; the
+      series' `NOTES.md` has the calls on this teacher. You never add `reviewed`; you delete it from any
       flag whose block you changed.
 - [ ] Phrases: reread the words each phrase's `audio` cites: its `en` is
       what he says there, for that Hebrew and no more. Phrases he does not translate

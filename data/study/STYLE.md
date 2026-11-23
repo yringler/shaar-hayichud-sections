@@ -49,6 +49,26 @@ The transcript is machine-made. Its Hebrew is what the machine heard, often
 wrong; the chapter's lines are the text. English can be misheard too: if a
 sentence makes no sense, do not guess (see Faithfulness).
 
+The transcript has no speaker labels, and it writes many Hebrew terms in
+Hebrew script inside English sentences ("the עיון is a כלי for the השגה"):
+write them transliterated (Prose rules). Where his reading of a line differs
+from the chapter file, the line is the text, and his English usually follows
+the line, a sign the transcript misheard. Check a block's prose against the
+line wherever the two differ: a block once followed "d'yihyeh lo bayis", a
+mishearing of ההיולי לבא לגלוי, and spoke of "a house of his own".
+
+Some tapes have Sofer's word times and not re-timed ones (the dump says
+which). Their seconds can be off by a lot; the word ranges are right, and
+`yarn study-fill` re-stamps the seconds when the tape is re-timed.
+
+The `=== LINE` marks are approximate; the dump's sentences are what count. A
+mark can land on his second reading or a reread, on a recap of earlier
+lines, or on a false hit in a review; a class can read half a line well
+before the line's mark; a line marked `NOT READ` can be read (often in
+Aramaic, or inside the previous line's mark). Place blocks by where he
+actually reads and what he is explaining. Do not edit alignments; report a
+wrong one.
+
 ## Structure
 
 ```
@@ -74,6 +94,15 @@ chapter
   `"skip": { "reason": "no-recording" }` and no `phrases`. One the class
   reads and translates without comment has phrases and
   `"skip": { "reason": "read-only" }`; better, join it to its neighbour.
+- **Classes join mid-thought.** A tape can stop in the middle of a line or a
+  sentence, and the next class pick it up. A class that opens by finishing
+  or summing up the previous one: place that under the passage it belongs
+  to, as a `recap` with `outOfPlace`.
+- **A class or a long stretch that reads no line** (an introduction, free
+  discussion, a review, an extra tape attached through `series.json`
+  `chapterLectures`): its blocks go under the passage they discuss or come
+  back to, or under the chapter's last passage when they are about the
+  chapter as a whole, each with `outOfPlace`.
 
 ## Phrases
 
@@ -105,6 +134,16 @@ of your own, however plain, and no published translation.
   `en` and no `audio`: `{ "to": "<last word>" }`. Cut it where his
   translated phrases end, so his English is never stretched over words he did
   not translate.
+- **Read on before leaving `en` empty.** He sometimes renders a line piece by
+  piece a sentence or two later, or only when he comes back to it. The
+  phrase may cite that later sentence; say so in `notes`. A line he never
+  reads keeps its Hebrew and no English, even if a nearby sentence restates
+  it.
+- **`en` stops where his rendering stops.** A gloss, summary or example that
+  runs on from it goes in the block. When he quotes a whole verse for one
+  word of it, the phrase gets only his English for its own words. When he
+  reads words without translating and then renders them with the next words,
+  make them one phrase.
 - A passage no class reads has no phrases at all.
 - Only a series whose `series.json` names a `publishedTranslation` may have
   `en` without `audio`; none does.
@@ -134,10 +173,23 @@ A block is one thought of the class. It has a `kind`, `text`, and `audio`.
   later recap) may be placed under the passage it explains; say so in
   `outOfPlace`.
 - **Titles** on `mashal`, `story` and `digression` are short labels to
-  navigate by: "The film in the projector", "Bilaam's donkey".
+  navigate by: "The film in the projector", "Bilaam's donkey". An image he
+  comes back to in later chapters keeps the same title wherever it appears.
+- **`mashal` or `story`.** A general pattern (husbands and wives, a source
+  cited as one more example) is a `mashal`; `story` is for a single event
+  (the dog on the boy's grave, a Rebbe story).
+- **`recap` or `explanation`.** When the text says "as explained above" and
+  he goes back over an earlier chapter's *mashal* right there, that is an
+  `explanation` in its place, not a `recap`.
 - **`question` blocks**: `question` is the question in a sentence, `askedBy`
   is `student` or `teacher`, `text` is the answer. Keep a student's question
-  only when he answers it.
+  only when he answers it. The transcript does not say who speaks: a question
+  is a `student`'s when you can hear it or he repeats it; one he puts
+  himself ("So you say, ...", "You're going to say to me, 'Wait a
+  minute...'") is the `teacher`'s. An answer to a question you cannot hear is
+  written as his own explanation; if you do infer the question, say so in
+  `notes`. Where a listener gave the example, say so ("like you were just
+  saying"); never write "as was said in class".
 
 ### Audio
 
@@ -160,6 +212,10 @@ Only what `omitted` has a reason for: `logistics` (the tape, the phone, who
 is on the call), `reading` (text read or reread with no comment),
 `repetition` (said again with nothing added), `unclear` (garbled, or you
 cannot tell what he meant), `other-chapter`, `other` (with a `note`).
+A remark to the recording or the room inside a block's stretch ("Still
+there?", "Where do we go?") is simply dropped from the prose; a stretch of
+them is `logistics`. A tape's last seconds that are another recording
+altogether (another speaker, another subject) are `other`, with a note.
 Everything else he says has a block, **including what is off the text**: the
 joke, the story about a relative, the opinion on science or politics, the
 complaint. Those are `aside`, `story` or `digression` blocks. They are part
@@ -180,9 +236,7 @@ of the class, and often the part a student remembers.
   understand.") become a sentence of prose. Verbal flair spices up the
   recording but the guide loses nothing without it; the audio keeps it. A
   quotation of a source (a verse, the Gemara, a saying of a Rebbe) is not his
-  spoken English and stays quoted. (Chapters 1–19 of `markel-advanced` were
-  rewritten this way in November 2026, after the reviewer found the blocks
-  "keep the literal too much".)
+  spoken English and stays quoted.
 - **Do not soften, tidy or improve.** No hedges he did not make, no balance he
   did not give, no modern sensitivity, no moral he did not draw. If he is
   rude about something, the block is rude about it (and flagged, below).
@@ -190,7 +244,13 @@ of the class, and often the part a student remembers.
   Drop false starts, repetitions, "you know", the listener's "Right.", the
   setup before a point ("let me explain something"), the second and third
   restatement of the same idea, and recaps of what the block already said.
-  Join what he says in three tries into one clear sentence. Tell a *mashal* or
+  Join what he says in three tries into one clear sentence. A sharp claim is
+  said once: when he hammers a point three to five times in a row (the Bin
+  Laden *mashal* in `markel-advanced` chapter 20: "he would kill
+  everybody... kill millions... kill his own people... kill himself"), the
+  block keeps it once, in its strongest form, with his one best example.
+  This holds for flagged blocks too: printing a remark raw keeps what he
+  said, not every repetition of it. Tell a *mashal* or
   a story in its few decisive moves, not every beat. Keep what is his: the
   example, the image, the joke, the turn of phrase, and the one line worth
   quoting. Condensing never adds, softens or reorders the
@@ -199,6 +259,10 @@ of the class, and often the part a student remembers.
   recollection, an opinion he marks as his own, a disagreement with a reading.
 - In a `story` or `aside`, tell it as he tells it, in the third person about
   him if he is in it.
+- **"We" and "he".** Keep his "we" when he announces what comes next ("now
+  we're going to explain"): "he" reads as the Mitteler Rebbe. When he speaks
+  as "I" or "me" inside a *mashal*, the third-person prose says "a person",
+  not an unclear "him".
 - **People in the class.** When he uses someone present or close as his
   example (a student by name, the student's wife, his own wife, son or
   grandson), write the same point without the person: "a frum woman who is
@@ -213,10 +277,15 @@ of the class, and often the part a student remembers.
 - Every sentence must be traceable to the cited words. No outside sources,
   cross-references or Torah content he did not say. If he cites a source,
   report it as he gave it, even loosely ("it says somewhere in the *Zohar*").
-  If he is unsure or wrong about a reference, write what he said and put the
-  correction in `notes`, not in the text.
+  If he is unsure or wrong about a reference or a fact, write what he said,
+  with his hesitation ("I think"), and put the correction in `notes`, not in
+  the text. When he corrects himself, the text has his final version and
+  `notes` the slip. Keep apart what he says he saw in a source and his own
+  "maybe" on top of it.
 - If a stretch is garbled or you cannot tell what he meant, leave it out,
   list it in `omitted` as `unclear`, and add a `notes` entry. Never guess.
+- When he comments on the printed text ("the os is supposed to be a tes"),
+  record it in `notes`; the chapter's lines stay the text.
 - Literal word meanings in glosses are allowed.
 
 ## Sensitivity
@@ -249,8 +318,11 @@ Flag a block with `sensitivity` when it does any of these:
 ```
 
 - `action: "replace"` with a `publishable` text that keeps the teaching and
-  drops only what the reason names, condensed as the `text` is; or `action: "omit"` when nothing would be
-  left (a pure aside).
+  drops only what the reason names, with his own example where it survives
+  (keep "a hut, or two huts and a couple of cows" and drop only "Africa"),
+  condensed as the `text` is. It neither softens more than the reason names
+  nor adds a sentence he did not say. `action: "omit"` only when nothing
+  would be left (a pure aside).
 - Write the two side by side: everything outside the flagged remark is the
   same words in `text` and `publishable`, so that a word diff of the two
   shows only what the reason names. If writing the public text finds a
@@ -273,6 +345,27 @@ Flag a block with `sensitivity` when it does any of these:
   new look.
 - Do not flag ordinary humor or criticism of ideas (as opposed to people
   and groups).
+- **Flag the teacher, not the text.** The chapter's own words, a figure of
+  the Talmud the line cites, the Mitteler Rebbe's own claims, and physiology
+  or science that only explains a line are not flagged. Where his remark
+  rests on a halacha or a saying of Chazal, flag his own explanation of it
+  and say so in the reason.
+- **Insult words** ("idiot", "stupid", said of people: others, a character
+  in a joke, himself or his listeners) are always flagged: `crude` when the
+  word is all there is, otherwise the category of whom it is said about,
+  with a `replace` text that drops or swaps the word. The `text` keeps the
+  word as he said it; a softer wording, the reviewer's included, goes in
+  `publishable`, never in `text`.
+- **"Goy", "goyim", "goyishe"** are his plain words for a non-Jew, non-Jews
+  and non-Jewish. Where it is just the word, it is not flagged. Flag
+  (`other-groups`) only contempt.
+- A wrong halacha or a wrong fact of history stated under his name is
+  `other`, with a `publishable` text that drops the claim. A slip in a source
+  (a wrong chapter or tractate) only goes in `notes`.
+- `named-person`: a Rebbe story told with reverence, or a name used only as
+  an example (of wealth, say), is not flagged.
+- `politics`: one partisan side used as an example is flagged; both sides
+  named evenly, as two leanings, is not.
 
 ### Raw, softened or dropped: the test
 
@@ -285,7 +378,9 @@ The flag decides content only; concision is already done in both texts
   through concentration alone is *avoda zara*; "G-d is love" or pantheism is
   a mistake; a Jewish *daas* against a goyishe one; women and *psak*, or
   *kalei daas*, stated as the doctrine; a criticism of how scientists think;
-  his own view of a book or a practice. Flag it still (an outside reader may
+  his own view of a book or a practice; a *mashal* built on two people's
+  different viewpoints (the husband and the wife at the building), where
+  softening the two into one kills the point. Flag it still (an outside reader may
   object), write the `publishable` text as usual, and mark it `raw`: the
   reviewer usually prints it as said.
 - **Softened** (`replace`, no `recommend`): the point stands, but the edge is

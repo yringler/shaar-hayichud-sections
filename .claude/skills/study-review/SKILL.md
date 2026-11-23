@@ -11,7 +11,7 @@ decisions are saved in each page's database, read back with the
 `ArtifactData` tool, and written into the files by the scripts here. The
 rules being reviewed against are in `data/study/STYLE.md` (Sensitivity; the
 raw / softened / drop test; "Write a guide, not a recording") and in the
-series' `NOTES.md`, where the reviewer's past calls are recorded. Read both
+series' `NOTES.md`, which has the reviewer's calls on that teacher's content. Read both
 before writing anything for the reviewer.
 
 ```
@@ -79,8 +79,8 @@ what is there):
    reviewer's own softened text where they wrote one, and drops the
    writer's lean. It skips (and lists) any block whose text or flag changed
    since the page was built. **Notes are printed, not applied**: act on each
-   (a note on a Raw block usually explains a call: record the rule it implies
-   in the series' `NOTES.md`).
+   (a note on a Raw block usually explains a call: record the rule it
+   implies, as "Where a rule goes" below says).
 3. `cd data/tools && yarn study-check --series <series>` (0 errors, 0
    warnings), `yarn build-data`, commit.
 4. Rebuild and republish the page so it shows the files as they now are.
@@ -116,7 +116,8 @@ Ratings are documents in the `ratings` collection, keyed by block id:
 `{ rating?: "good"|"more"|"less", note?, at }` (`more` = cut too much,
 `less` = still too long). Read them back the same way (`query`, `out_dir`)
 and act on them yourself: for "cut too much", put back what the transcript
-shows was lost; for "still too long", condense further; follow each note.
+shows was lost; for "still too long", condense further; follow each note,
+and record a note that states a rule as "Where a rule goes" below says.
 Edit by an edit list and `apply_edits.py` (below), check, commit, rebuild
 the page.
 
@@ -143,6 +144,24 @@ For a pass over many chapters (the November 2026 condensing of
    (an agent may not add flags: you add them, unreviewed, and they appear on
    page A) and places it was unsure; pass those on to the user.
 6. Build page B over the whole pass for the reviewer.
+
+## Where a rule goes
+
+A reviewer's note often states a rule. Write it down where it applies:
+
+- In `data/study/STYLE.md` when it would hold for any series: how to
+  condense, cut phrases or choose a kind, what to flag, how to soften, what
+  prints raw. Put it in the section it belongs to, with the case that
+  prompted it as a short example.
+- In the series' `NOTES.md` only when it is about this teacher: his manner
+  and words, the tapes and their transcripts, how to name him, and calls on
+  his particular content (which of his remarks print raw, how one of his
+  words is handled).
+- A general rule with an example from one series goes in STYLE.md only; the
+  series' `NOTES.md` needs no copy of it.
+
+When unsure, ask the reviewer. Say in the commit message which review a
+STYLE.md rule came from.
 
 ## Notes
 

@@ -17,9 +17,24 @@
       "chapter_17",
       "chapter_18"
     ],
+    "029 Tape025-Side1-Ch19.mp3": [
+      {
+        "chapter": "chapter_20",
+        "fromSeconds": 0,
+        "note": "catalogued Ch19, but up to word 3415 it teaches chapter 20 lines 35-48 (recorded after tape 030, which reads lines 1-35); verified by reading the transcript"
+      },
+      {
+        "chapter": "chapter_19",
+        "fromSeconds": 1392,
+        "note": "from word 3416 (23:12) it goes back to chapter 19 (lines 40 on)"
+      }
+    ],
     "030 Tape025-Side2-Ch20.mp3": [
       "chapter_19",
       "chapter_20"
+    ],
+    "031 Tape026-Side1-Ch20.mp3": [
+      "chapter_21"
     ],
     "036 Tape028-Side2-Ch24.mp3": [
       "chapter_23",

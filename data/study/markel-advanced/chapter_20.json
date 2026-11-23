@@ -1,0 +1,1758 @@
+{
+  "schemaVersion": 1,
+  "series": "markel-advanced",
+  "chapter": "chapter_20",
+  "title": "Point, sefira and partzuf: Tohu's will that cannot bend, and Tikkun's composite attributes",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 5",
+    "date": "2026-11-23"
+  },
+  "lectures": [
+    {
+      "id": "030 Tape025-Side2-Ch20.mp3",
+      "transcriptionId": "9c83b7d2-2b9e-4c7f-b322-3cdf9ded20d9"
+    },
+    {
+      "id": "029 Tape025-Side1-Ch19.mp3",
+      "transcriptionId": "27551daa-c239-46bd-ba1d-b6bde555a13e"
+    }
+  ],
+  "overview": "Before the details of the ten sefiros of *Atzilus*, the chapter sets out three levels, *nekuda*, *sefira* and *partzuf*, read in class as *akudim*, *nekudim* and *brudim*. In *Tohu* each attribute is a point: a revealed will for one particular kindness, with no reason and only one way. It has ten sefiros, but they do not divide, and it cannot meet its opposite: kindness has to die before judgement can reign, as in principle Beis Shammai still disagree with Beis Hillel.\n\nIn *Tikkun* the attribute goes out of itself into a spreading that answers to the thing outside it. That is the composite, *murkav*: a cruel man kind to the one who saved him, a kind man harsh to his enemy, love and hate for one person, a compromise that gets something done. G-d is angry with Shlomo and glad with him at once, and destroys the world, and later spares it, because people are bad. Rabbi Markel's examples are blunt: the enemy at war, the offender let out again, the fanatic and the missionary at the door. Fire and water mix only in vessels; in the lights themselves there is no mercy in judgement.",
+  "terms": [
+    {
+      "term": "Tohu",
+      "he": "תהו",
+      "gloss": "the world of Chaos: each attribute a point of will that will not bend or join its opposite",
+      "line": "xa265k5c"
+    },
+    {
+      "term": "Tikkun",
+      "he": "תיקון",
+      "gloss": "the world of Repair: the attribute goes out of itself according to the matter, so opposites can be included",
+      "line": "rwzf743a"
+    },
+    {
+      "term": "nekuda",
+      "he": "נקודה",
+      "gloss": "a point: the will for one thing as it first comes out, before it spreads",
+      "line": "nirthzun"
+    },
+    {
+      "term": "partzuf",
+      "he": "פרצוף",
+      "gloss": "lit. face; a full stature, a person, who includes all opposites",
+      "line": "muq6xacb"
+    },
+    {
+      "term": "akudim",
+      "he": "עקודים",
+      "gloss": "lit. bound, ring-straked; handcuffs: the ten sefiros in one vessel, the will; what the text calls nekuda",
+      "line": "muq6xacb"
+    },
+    {
+      "term": "nekudim",
+      "he": "נקודים",
+      "gloss": "lit. spotted; Tohu as sefira: ten sefiros that look divided and are still one point",
+      "line": "muq6xacb"
+    },
+    {
+      "term": "brudim",
+      "he": "ברודים",
+      "gloss": "lit. speckled; the partzuf of Tikkun, the attribute spread out into the deed",
+      "line": "muq6xacb"
+    },
+    {
+      "term": "hischalkus",
+      "he": "התחלקות",
+      "gloss": "division, as of each sefira into ten",
+      "line": "rwzf743a"
+    },
+    {
+      "term": "murkav",
+      "he": "מורכב",
+      "gloss": "composite, built together from pieces: an attribute that comes from the thing, not from one's nature",
+      "line": "jgxlk3k4"
+    },
+    {
+      "term": "pashut",
+      "he": "פשוט",
+      "gloss": "simple, one thing: that is what he wants and that is what he wants",
+      "line": "34fwqml4"
+    },
+    {
+      "term": "memutza",
+      "he": "ממוצע",
+      "gloss": "a middle, made of chesed and gevura together, along a whole spectrum",
+      "line": "gjkm43zm"
+    },
+    {
+      "term": "achzari",
+      "he": "אכזרי",
+      "gloss": "cruel; a mean guy by nature",
+      "line": "i7i3k7xk"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Tohu is a point: the will for one kindness, which does not spread",
+      "summary": "In *Tohu* each attribute is a point: a revealed will for one particular kindness, with no reason and no different ways. It is made of ten *sefiros*, will, intellect and attributes, but they do not divide: all of it is in one point and one vessel, the will.",
+      "passages": [
+        {
+          "lines": [
+            "muq6xacb",
+            "xa265k5c",
+            "rwzf743a",
+            "rk45rmh4",
+            "nirthzun",
+            "voplb4vi",
+            "wayhbk3m",
+            "7rsufwrw",
+            "hpeuxwia",
+            "h2ag6fcz"
+          ],
+          "phrases": [
+            {
+              "he": "(כ) והנה קודם שיבואר ענין פרטי העשר ספירות דאצילות יש להקדים ענין נקודה ספירה פרצוף כו'"
+            },
+            {
+              "he": "דהיות ידוע ההפרש שבין בחינת התהו לבחינת התיקון בכלל, דעשר ספירות דתהו הן בבחינת נקודות לבד, שהן בבחינת הכתרים"
+            },
+            {
+              "he": "ובעולם התיקון הוא בבחינת התחלקות כל ספירה לי', על כן ממילא נעשה בחינת התיקון שהוא בחינת ההתכללות על ידי שם מ''ה כו'"
+            },
+            {
+              "he": "וביאור הדברים ידוע",
+              "en": "The explanation is like this",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [692, 696],
+                "start": 376.59,
+                "end": 382.6
+              }
+            },
+            {
+              "he": "שבחינת הנקודות הוא בחינת העצמיות טרם שמתפשט, כנקודה שהיא בלתי מתפשטת כו' כמו אור מדת החסד, הנה בחינת עצמיות דמדת החסד הוא בחינת הכתר שלו"
+            },
+            {
+              "he": "ואמנם אין הכוונה על בחינת העצמיות דמדת החסד כמו שהוא נטוע ומושרש בעצם הנפש שנקרא יחידה כנזכר לעיל, שהוא בחינת היולי לגמרי (כנזכר לעיל באות יו''ד וי''א)"
+            },
+            {
+              "he": "אלא הכוונה הוא על בחינת גלוי הרצון לדבר חסד פרטי מן העלם חסד העצמיות ההיולי"
+            },
+            {
+              "he": "שגם זה הרצון הוא בלתי התפשטות עדיין רק כמו שהוא בלא טעם כלל לרצון זה, למה רוצה בגלוי לחסד זה כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "First, *nekuda*, *sefira* and *partzuf* (read in class as *akudim*, *nekudim* and *brudim*). The sefiros of *Tohu* (the world of Chaos) are only points, *Keser*; in *Tikkun* (the world of Repair) each divides into ten and they are included through the Name *MaH*. The point is not the kindness rooted in the *yechida*, pure *hiyuli*, but a revealed will for one particular kindness, with no reason. Not *Adam Kadmon*, which is higher: *Tohu* is the will as it first comes out, a *nekuda* (point) of a will.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [632, 811],
+                  "start": 346.05,
+                  "end": 443.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is what was said before: *igulim* (circles) precede *yosher* (straightness), and *Tohu* precedes *Tikkun*. There is no *Tikkun* without *Tohu* first; the will has to come out first. But in *Tohu* it comes out only as a will and stays the point; *Tikkun* means it goes through the *sechel* (intellect).",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [813, 879],
+                  "start": 444.58,
+                  "end": 472.32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rsagdxi4",
+            "q55ikjmv"
+          ],
+          "phrases": [
+            {
+              "he": "ומכל שכן שאין בו בחינת התחלקות אופנים שונים",
+              "en": "There's no different ways of how the *ratzon* will be: that's what he wants and that's what he wants.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [888, 907],
+                "start": 479.46,
+                "end": 484.93
+              }
+            },
+            {
+              "he": "או גם אם שכלו מטה כלפי חסד דווקא,",
+              "en": "And also in terms of a *sechel noteh klapei chesed*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [917, 926],
+                "start": 488.08,
+                "end": 491.98
+              }
+            },
+            {
+              "he": "אין בו התחלקות אופנים שונים",
+              "en": "There's no different ways: it's just a *sechel* for this thing that the *ratzon* was for.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [948, 971],
+                "start": 502.65,
+                "end": 510.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So the will has no different ways: that is what he wants and that is what he wants. The same is true of the intellect that leans toward *chesed*, which is no longer the *Keser* but the *chachma* of this *chesed* of *Tohu*. It is not really an intellect, only **a *sechel* for this thing that the *ratzon* was for**.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [880, 971],
+                  "start": 476.2,
+                  "end": 510.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "qlni5vyd",
+            "wxiszw7v"
+          ],
+          "phrases": [
+            {
+              "he": "אף על פי ששכל הנוטה בעצם לחסד ולזכות, הוא בחינת חכמה שבחסד העצמי,"
+            },
+            {
+              "he": "אבל גם הוא רק בבחינת נקודה",
+              "en": "It's all in this *nekuda* of the *chesed*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1050, 1060],
+                "start": 537.46,
+                "end": 541.48
+              }
+            },
+            {
+              "he": "וכן נצח שבחסד זה"
+            },
+            {
+              "he": "הוא בא בבחינת נקודה",
+              "en": "But this *netzach* is also *mibechinas nekuda*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1105, 1111],
+                "start": 556.93,
+                "end": 560.75
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "question",
+              "question": "The whole difference was that in *Tikkun* there is division; if here there is none, are there no ten *sefiros* in *Tohu*?",
+              "askedBy": "teacher",
+              "text": "There are. The intellect that leans in essence to kindness is the *chachma* of the essential *chesed*, already lower than the will. It does not mean there are no ten *sefiros*; it means they are not in the way of *hischalkus* (division). **It's all in this *nekuda* of the *chesed*.**",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [972, 1060],
+                  "start": 510.78,
+                  "end": 541.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So too the *netzach* (victory) of this kindness. There is no *chesed* of *Tohu* without *netzach*: he wants to overcome everything and do *davka* what he wills, for a will comes with a *netzach*. But this *netzach* too is only a point.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1061, 1111],
+                  "start": 541.69,
+                  "end": 560.75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fnitnu7g",
+            "fwclwcoj"
+          ],
+          "phrases": [
+            {
+              "he": "ונמצא דגם שבחינת החסד העצמי הבא בגלוי כלול מי', רצון ושכל ומדות,"
+            },
+            {
+              "he": "אבל אין בהם התחלקות ניכרת",
+              "en": "It doesn't mean that there's no ten *sefiros*; it means they don't divide into actual separate *sefiros*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1134, 1149],
+                "start": 570.78,
+                "end": 575.46
+              }
+            },
+            {
+              "he": "אלא כולן בבחינת נקודה אחד,",
+              "en": "The whole thing is in one *nekuda*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1155, 1162],
+                "start": 578.16,
+                "end": 580.3
+              }
+            },
+            {
+              "he": "והוא בחינת העקודים,"
+            },
+            {
+              "he": "שעקודים היו בכלי אחד כו'",
+              "en": "The whole *akudim* means the ten *sefiros* of *chesed* is in one *kli*, that is the *ratzon*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1186, 1207],
+                "start": 595.44,
+                "end": 609.52
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So the essential kindness that comes out really is made of ten, will, intellect and attributes, without a noticeable division: **they don't divide into actual separate *sefiros***. This is *akudim*, which he also calls *Tohu* in general, *nekudim*, the level of *sefira*: the ten sefiros of the *chesed* are in one *kli* (vessel), the will, and are still one point.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1112, 1223],
+                  "start": 560.87,
+                  "end": 615.17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tohu's opposites cannot meet: one reigns and dies, and in principle there is no compromise",
+      "summary": "Because each sefira of *Tohu* is the essential will for its own attribute, it has no vessel in which to join its opposite: kindness has to die before judgement can reign. In principle there is no compromise, as Beis Shammai still disagree with Beis Hillel though they act by Beis Hillel's ruling.",
+      "passages": [
+        {
+          "lines": [
+            "enmjaatf",
+            "aeock53g"
+          ],
+          "phrases": [
+            {
+              "he": "ולזה בחינת עשר ספירות דתהו הן בלתי מתיחדין ומתכללין זה עם זה אלא הן זה תחת זה",
+              "en": "They cannot join with each other, but they're one under the other, or one after the other.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1241, 1262],
+                "start": 625.32,
+                "end": 631.04
+              }
+            },
+            {
+              "he": "כמו שכתוב וימלוך וימת כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So the ten *sefiros* of *Tohu* cannot unite and be included in one another: **they're one under the other, or one after the other**. That is \"he reigned and he died\": *gevura* of *Tohu* cannot come into being as long as *chesed* of *Tohu* is in being, because they are opposites: it is the essential will for that attribute, and what he wants is *chesed*.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1224, 1330],
+                  "start": 615.72,
+                  "end": 666.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "msiw2fxn",
+            "ed3zsuh4",
+            "npzyjc7c",
+            "m3ic4ewd"
+          ],
+          "phrases": [
+            {
+              "he": "כמו רצון העצמי שבא בגלוי חסד"
+            },
+            {
+              "he": "הגם שכלול בו שכל כו',",
+              "en": "Really even though it does have ten *sefiros*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1342, 1349],
+                "start": 673.76,
+                "end": 676.28
+              }
+            },
+            {
+              "he": "לא יתחבר עם רצון עצמי היפוכו הבא בבחינת הדין"
+            },
+            {
+              "he": "גם שהוא כלול משכל הנוטה בעצם כלפי דין כו'",
+              "en": "Even though there's also a *sechel* that goes towards *din*.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1368, 1378],
+                "start": 684.45,
+                "end": 687.34
+              }
+            },
+            {
+              "he": "כי אין להם כלי שיוכלו להתכלל בו"
+            },
+            {
+              "he": "ב' הפכים כאלה",
+              "en": "Two opposites like this",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1404, 1407],
+                "start": 703.32,
+                "end": 708.2
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The essential will that comes out as kindness does have ten *sefiros*, an intellect among them, and the opposite will, for *din* (judgement), has an intellect that goes towards *din*. Still they cannot join: there is no vessel in which **two opposites like this** can be included. As he will explain later, the inclusion is *davka* in the vessels.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1331, 1407],
+                  "start": 666.8,
+                  "end": 708.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "jarxuqqn",
+            "clywpjq6"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שנראה בחוש, מי ששכלו מטה כלפי חסד בעצם, לא יוכל לסבול בשום אופן למנגדו, שהוא מי ששכלו מטה כלפי דין בעצם"
+            },
+            {
+              "he": "(כמחלוקת בית שמאי ובית הלל וכהאי גוונא,"
+            },
+            {
+              "he": "דגם שמנגדו יקשה עליו",
+              "en": "Even when the *menaged* brings up a good *kushya* in *sechel*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1787, 1797],
+                "start": 881.38,
+                "end": 885.28
+              }
+            },
+            {
+              "he": "ולא יוכל למצוא טעם",
+              "en": "and he can't come up with an answer",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1802, 1809],
+                "start": 888.04,
+                "end": 889.42
+              }
+            },
+            {
+              "he": "ישתוק, אבל לא יוכל להודות ולחזור בו, להתכלל בדעה שמנגדו כלל כו')",
+              "en": "He won't be able to answer, but he still won't be *modeh* to the opposite opinion.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1821, 1836],
+                "start": 894.03,
+                "end": 898.5
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "One can see it plainly: a man whose intellect leans in essence to kindness cannot bear one whose intellect leans in essence to judgement. This is the actual principle of the thing, and in principle it cannot compromise with the opposite principle.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1408, 1518],
+                  "start": 709.42,
+                  "end": 761.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Like the *machlokes* (dispute) of Beis Shammai and Beis Hillel, in its essence. Beis Shammai do act according to Beis Hillel, once the *halacha* (the law) was decided, but in principle they still disagree, even now. The Mishna does not say that Shammai stopped and changed his opinion. The *halacha* is not the essence of the *sefira*; it is already the spreading out into the deed.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1519, 1662],
+                  "start": 761.35,
+                  "end": 822.52
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "That is *Tikkun*, and among Jews it is *Tikkun*: in the essential will Beis Hillel and Beis Shammai disagree, and yet they can be included together, because it goes through into the actual spreading out of the thing, which is *brudim*.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1663, 1723],
+                  "start": 822.76,
+                  "end": 847.72
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "With the gentiles it stays in *Tohu*: they refuse to leave their principle to come up with a compromise.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1724, 1748],
+                  "start": 848.26,
+                  "end": 860.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Even when there is an actual compromise, the lights themselves do not join. So the text: even when the other side **brings up a good *kushya*** (a hard question) in *sechel* and he cannot answer, he falls silent, but **he still won't be *modeh*** (concede) to the opposite opinion.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1749, 1836],
+                  "start": 861.44,
+                  "end": 898.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tikkun: the attribute goes out of itself, and a compromise gets something done",
+      "summary": "In *Tikkun* the attribute comes out of its point into an outward spreading, beyond its own will and intellect, and so it can compromise for the sake of something outside it. Kindness because the other did him a favor, harshness toward an enemy though he is kind by nature: this is the composite, *murkav*, not the simple nature.",
+      "passages": [
+        {
+          "lines": [
+            "jpg326r2"
+          ],
+          "phrases": [
+            {
+              "he": "אבל בחינת התיקון"
+            },
+            {
+              "he": "היינו כאשר המדה בא מבחינת נקודה שלה להתפשטות חוץ מן העצמיות",
+              "en": "That means in terms of the actual *hispashtus* outward.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [1854, 1862],
+                "start": 907.86,
+                "end": 910.42
+              }
+            },
+            {
+              "he": "רצון ושכל שבה"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "What is *Tikkun*? The attribute comes out of its point into an actual spreading outward, and there a compromise is possible. I think like this and you think like that, but a compromise lets us at least do something: I get part of what I want, you get part of what you want. In the essence of the attribute I still do not agree with you.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1837, 1956],
+                  "start": 900.48,
+                  "end": 944.04
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The vote",
+              "text": "Like a democracy, America for one: everybody votes and a compromise comes out, but after the vote each person still believes what he believed.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [1957, 2010],
+                  "start": 947.28,
+                  "end": 965.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the difference: in *Tohu* they would not come up with a compromise, because they will not be *mispashet* (spread out) beyond the essential will. *Tikkun* is when the attribute comes from its point into a spreading outside its essence, its will and intellect.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2011, 2058],
+                  "start": 968.16,
+                  "end": 995.73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "kyec4dxr",
+            "hoon4pjy",
+            "i7i3k7xk",
+            "jgxlk3k4"
+          ],
+          "phrases": [
+            {
+              "he": "דהיינו כמו מדת החסד כאשר יולד הרצון ושכל להטות כלפי חסד לזולתו"
+            },
+            {
+              "he": "מצד שעשה לו טובה",
+              "en": "because the guy is doing him a favor",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2075, 2082],
+                "start": 1007.12,
+                "end": 1009.92
+              }
+            },
+            {
+              "he": "ולא מצד בחינת עצם הטוב הבא בגלוי בהכרח מטבע הטוב שבעצמיות נפשו",
+              "en": "Not because he's a good person",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2513, 2518],
+                "start": 1165.5,
+                "end": 1166.86
+              }
+            },
+            {
+              "he": "אדרבה",
+              "en": "Just the opposite",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2544, 2546],
+                "start": 1180.1,
+                "end": 1181.3
+              }
+            },
+            {
+              "he": "יוכל להיות אכזרי בטבע,",
+              "en": "he can be a mean guy",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2551, 2556],
+                "start": 1183.24,
+                "end": 1184.28
+              }
+            },
+            {
+              "he": "ולמי שחננו והצילו ממות וכהאי גוונא ירצה להטיב, ויטה שכלו עליו תמיד לחסד וזכות כו' וכהאי גוונא"
+            },
+            {
+              "he": "שזה נקרא חסד וטוב המורכב,",
+              "en": "It's composite: it's from outside things, it's external to it.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2579, 2591],
+                "start": 1196.15,
+                "end": 1201.52
+              }
+            },
+            {
+              "he": "ולא חסד פשוט ועצמי שמצד הטבע כלל",
+              "en": "Not because of his nature",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [2599, 2603],
+                "start": 1206.08,
+                "end": 1207.12
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "For example, kindness, when the will and intellect to lean to kindness toward another are born **because the guy is doing him a favor**. That, by the way, is the whole idea of a compromise: \"I'll scratch your back, and you'll scratch my back.\" I do not really agree with you, but I go along because I get something in return.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2059, 2150],
+                  "start": 995.93,
+                  "end": 1036.04
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Doesn't that make *Tikkun* unprincipled, opportunist, a wishy-washy \"you scratch my back\", while *Tohu* is the real principle?",
+              "askedBy": "teacher",
+              "text": "It sounds like politics: politicians go along, put deals together and do not stand up for their beliefs. But this is not the politician, who really has no belief; or he has one, to get elected, and does not care what he has to do for it. That is really a *Tohu* thing, a will that holds on to its will. Here you still hold to your principle and make a compromise, because if everybody just holds to his principles, finally nothing gets done.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2151, 2394],
+                  "start": 1036.33,
+                  "end": 1131.6
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics",
+                  "other-groups"
+                ],
+                "reason": "Says politicians have no belief except getting elected.",
+                "action": "replace",
+                "publishable": "It sounds like the deals of politics, where people go along and do not stand up for their beliefs. But one who has no belief except getting what he wants, and does not care what he has to do for it, is really a *Tohu* thing, a will that holds on to its will. Here you still hold to your principle and make a compromise, because if everybody just holds to his principles, finally nothing gets done.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "mashal",
+              "title": "The two cooks",
+              "text": "Two cooks: one says we have to cook like this, the other says like that, and they end up cooking nothing and everybody starves. So make a compromise: not exactly what you want, not exactly what I want, but at least everybody gets to eat. That is what you really wanted, because higher than *Tohu* and *Tikkun* is the will for the *sof maaseh* (the end of the deed): that something should get done.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2395, 2506],
+                  "start": 1131.74,
+                  "end": 1161.6
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So he leans to kindness toward the other not because he is a good person but because the other did him a favor. **Just the opposite**: he can be a mean guy by nature, an *achzari* (cruel man), and still, toward the one who was kind to him and saved him from death, his intellect will always lean to kindness and merit. This is composite kindness, *murkav*: it comes from outside things, **not because of his nature**.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2507, 2604],
+                  "start": 1162.18,
+                  "end": 1208.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "6hb6vpzw"
+          ],
+          "phrases": [
+            {
+              "he": "וכהאי גוונא יובן בהיפוכו, במדת הדין המורכב, להטות רצונו ושכלו כלפי חוב"
+            },
+            {
+              "he": "לשונאו שעשה לו רעה הרבה,",
+              "en": "to somebody that is doing bad to him",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3056, 3063],
+                "start": 1420.56,
+                "end": 1422.02
+              }
+            },
+            {
+              "he": "גם שבעצם טבעו הוא איש חסדן ורחמן כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same holds in reverse for composite judgement: will and intellect lean to guilt for an enemy who did him much harm, though by nature he is a kind and merciful man. Toward that one he will be a total *achzari*.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2605, 2625],
+                  "start": 1208.8,
+                  "end": 1224.68
+                },
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3049, 3078],
+                  "start": 1417.38,
+                  "end": 1428.08
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "This, he says, is where one sees that the Israelis are from *Tohu*. They go by their nature: a Jew is merciful by nature, so they feel bad for the poor Palestinians. In *Tikkun* there should be an intellect to kill all of them, including their kids and their babies, and not to feel sorry for anything: unless they give up, kill everything in the way. He thinks the Torah allows even cutting down fruit trees if one really has to, if that is what it takes to protect yourself. That is the will of *Tikkun*.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2626, 2826],
+                  "start": 1224.78,
+                  "end": 1310.14
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics",
+                  "other-groups"
+                ],
+                "reason": "Calls Israeli mercy toward the Palestinians Tohu and says Tikkun would kill all of them, babies and animals included.",
+                "action": "replace",
+                "publishable": "The composite judgement of *Tikkun* applies to an enemy at war. Going by a merciful nature and feeling sorry for an enemy who is trying to destroy you is *Tohu*. In *Tikkun* there should be an intellect that leans wholly to judgement against the enemy, until he gives up. He thinks the Torah allows even cutting down fruit trees if one really has to, if that is what it takes to protect yourself. That is the will of *Tikkun*.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "aside",
+              "text": "Those who say \"we have to think about them too; how do they feel, the poor guys?\" act from a *midda* (an attribute), not from *Tikkun*. *Tikkun* goes by how the other side is acting: since they are trying to get us, there is no mercy, only an intellect leaning to judgement on everything they have, even their good things, from the shish kebab to a *Sefer Torah* there that belongs to the Arabs. Everything is blown up, and *davka* that is *Tikkun*. The secular \"Shalom Achshav\" people are that way because it is their nature. The nature of a Jew is to be peaceful and kind, but that is *chesed* of *Tohu*, which refuses to be included with *din* or to let it in.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [2827, 3048],
+                  "start": 1310.66,
+                  "end": 1416.64
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "politics",
+                  "other-groups"
+                ],
+                "reason": "Destroying the enemy's culture, books and even a Sefer Torah, and a jab at the secular Shalom Achshav movement.",
+                "action": "replace",
+                "publishable": "Those who say of an enemy at war \"we have to think about them too\" act from a *midda* (an attribute), not from *Tikkun*. *Tikkun* goes by how the other side is acting: since they are trying to destroy us, there is no mercy, only an intellect leaning to judgement. The nature of a Jew is to be peaceful and kind, but that is *chesed* of *Tohu*, which refuses to be included with *din* or to let it in.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "question",
+              "question": "The Torah is called a *Toras chesed* (a Torah of kindness). How can Tehillim say \"Happy is he who seizes and dashes your infants against the rock\"? What kind of holy thing is this?",
+              "askedBy": "teacher",
+              "text": "Because that is *Tikkun*. *Tikkun* is when you have an enemy, you hate him, even if by nature you are good.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3079, 3151],
+                  "start": 1428.33,
+                  "end": 1457.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In the composite every mixture is possible: love and hate for one person, anger and joy at once",
+      "summary": "The simple has one way; the composite can be any mixture, a whole spectrum between kindness and judgement, love and hate for one person, even for one and the same reason. So the verses show G-d angry and glad with Shlomo at once, and destroying the world for the very thing for which He later spares it.",
+      "passages": [
+        {
+          "lines": [
+            "34fwqml4",
+            "wcrx7h2m"
+          ],
+          "phrases": [
+            {
+              "he": "ועל דרך זה יובן שיוכל להיות במורכב כמה מיני אופנים שונים מאד,",
+              "en": "In a *murkav* there can be all kinds of *harkavos*: you can put together all kinds of compositions.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3215, 3233],
+                "start": 1482,
+                "end": 1487.86
+              }
+            },
+            {
+              "he": "לפי אופן דבר שמורכב בו המדות"
+            },
+            {
+              "he": "כמו אהבה ושנאה התלויים בדבר כנזכר לעיל",
+              "en": "According to the thing, it's not either you totally love or you totally hate.",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3246, 3264],
+                "start": 1494.3,
+                "end": 1503.33
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So in the composite there can be many very different ways. In the simple, the *pashut*, that is what he wants and that is what he wants: one way only. **In a *murkav* there can be all kinds of *harkavos*** (compositions), according to the thing the attributes are composed with, like love and hate that depend on a thing: it is not either you totally love or you totally hate.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3152, 3264],
+                  "start": 1459.26,
+                  "end": 1503.33
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Where the essence of the attribute decides, it is one or the other: in one people the essence of the attribute is to be kind, and in Esav, the Romans, the essence of the attribute was throwing people to the lions. There is essential *chesed* and essential *din*. In the composite there can be all kinds of things in between, a *harkava* of the two, a whole spectrum.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3265, 3369],
+                  "start": 1503.33,
+                  "end": 1541.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "mztyvn6y",
+            "gjkm43zm"
+          ],
+          "phrases": [
+            {
+              "he": "הרי יוכל למצוא דבר שמצדו א' יאהבנו,",
+              "en": "He can find something in the other person that from one thing, he'll love that person",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3396, 3411],
+                "start": 1550.79,
+                "end": 1556.82
+              }
+            },
+            {
+              "he": "ויהיה רצונו ושכלו הכל לטוב וחסד,",
+              "en": "and he'll think of only good about him",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3418, 3425],
+                "start": 1559.18,
+                "end": 1561.06
+              }
+            },
+            {
+              "he": "ומצדו הב' באותו הדבר עצמו,",
+              "en": "In the same thing, or in the same person",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3432, 3440],
+                "start": 1564.84,
+                "end": 1567.22
+              }
+            },
+            {
+              "he": "ישנאנו ויטה רצונו ושכלו לרע ועונש"
+            },
+            {
+              "he": "עד שיוכל להיות בחינת ממוצע",
+              "en": "Till it can be a *memutza*",
+              "audio": {
+                "lecture": "030 Tape025-Side2-Ch20.mp3",
+                "words": [3586, 3591],
+                "start": 1630.08,
+                "end": 1631.16
+              }
+            },
+            {
+              "he": "כלול מחסד וגבורה יחד"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Besides that, going by the thing and not by his own nature, **he can find something in the other person that from one thing, he'll love that person** and think only good of him, and in the same person something he hates. More than that: in every person there are things you like and things you do not, and your final feeling toward him is a *harkava* of them all.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3370, 3529],
+                  "start": 1541.28,
+                  "end": 1604.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then the other case: *mamash* for the same reason you love him, for that same exact reason you hate him, and the text will give an example of that too. So there can be a *memutza* (a middle) made of *chesed* and *gevura* together, and a whole spectrum of them.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3530, 3610],
+                  "start": 1607.26,
+                  "end": 1638.32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5sk72j6g"
+          ],
+          "phrases": [
+            {
+              "he": "כמו שכתוב באשר משפטו שם כו'"
+            },
+            {
+              "he": "על שאול שהמית את הגבעונים",
+              "en": "He killed the *Givonim*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [160, 164],
+                "start": 84.56,
+                "end": 85.56
+              }
+            },
+            {
+              "he": "ועל שלא נספד כהלכה,",
+              "en": "They felt bad for him because he didn't get a proper *hesped*.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [169, 182],
+                "start": 86.46,
+                "end": 90.66
+              }
+            },
+            {
+              "he": "דבר והיפוכו כאחד",
+              "en": "At the same time",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [186, 189],
+                "start": 91.79,
+                "end": 92.84
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "story",
+              "title": "Yishmael, judged as he is now",
+              "text": "He takes the verse to be \"where he is\", said of Yishmael, with the same point. When Yishmael and his mother were sent away and he was sick, and the angel came, the angels asked the *Aibershter*: why are You being nice to him? Look what the Arabs are going to do. He answered: right now he is innocent; that is what he is now, and I have to go according to the *inyan* (the matter at hand). Going by the *inyan* is *Tikkun*. In *Tohu* you would say: we hate him, that's Yishmael, kill him. The line ends: a thing and its opposite at once.",
+              "audio": [
+                {
+                  "lecture": "030 Tape025-Side2-Ch20.mp3",
+                  "words": [3611, 3812],
+                  "start": 1640.38,
+                  "end": 1720.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On the next tape he takes up Shaul, though he is not sure of the whole story; he thinks it is in *Melachim*, when Shaul had died and the Givonim came and complained. There were two things. One was bad: he killed the Givonim; or rather he did not kill them, he killed the priests who gave them their livelihood. The other: they felt bad for him, because he did not get a proper *hesped* (eulogy). A thing and its opposite at the same time.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [82, 189],
+                  "start": 58.1,
+                  "end": 92.84
+                }
+              ],
+              "outOfPlace": "The next tape takes up line 35 where 030 stopped, explaining Shaul and the Givonim without rereading the line."
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tmmdtpfq",
+            "swlty5aa",
+            "h5eopk64",
+            "x7tx4okt",
+            "e4gyz4gv"
+          ],
+          "phrases": [
+            {
+              "he": "וכן כשנשא שלמה בת פרעה, על זה אמר כי על אפי כו'",
+              "en": "The *Aibershter* said, \"I'm mad at him.\"",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [201, 207],
+                "start": 98.21,
+                "end": 102.26
+              }
+            },
+            {
+              "he": "ושיר השירים נאמר על שמחת בנין בית המקדש",
+              "en": "So He's also happy.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [216, 219],
+                "start": 105.2,
+                "end": 106.64
+              }
+            },
+            {
+              "he": "וכמו שכתוב ביום שמחת לבו כו'"
+            },
+            {
+              "he": "שמחה וחרון אף, דבר והיפוכו כאחד",
+              "en": "At the same time He's mad at him and happy with him.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [307, 318],
+                "start": 134.46,
+                "end": 136.78
+              }
+            },
+            {
+              "he": "וכן כי יצר לב האדם רע וכו'",
+              "en": "The *Aibershter* said people are bad, so therefore what can you expect? After all, they're just people. So I'm not going to destroy the world anymore.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [335, 360],
+                "start": 146.33,
+                "end": 158.42
+              }
+            },
+            {
+              "he": "ומתחלה אמר",
+              "en": "But before the *Mabul* He said",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [362, 367],
+                "start": 160.02,
+                "end": 161.58
+              }
+            },
+            {
+              "he": "וירא יהו״ה כי רבה רעת האדם כו' וינחם כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So too Shlomo: because he married Pharaoh's daughter the *Aibershter* was angry with him, and because he built the *Beis HaMikdash*, on whose joy *Shir HaShirim* was said, He was happy with him. These are really two different things. Which was it? Both: not from the essence of the attribute, but because of a thing. Joy and anger at once.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [190, 318],
+                  "start": 93.98,
+                  "end": 136.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The next example is in the actual same thing. After the *Mabul* (the Flood) the *Aibershter* said: people are bad, what can you expect, they're just people, so I will not destroy the world anymore. But before the Flood, \"G-d saw that the evil of man was great\", and that is why He destroyed it. The whole reason was that they are bad, and now because they are bad He will not. From the same thing there can be two intellects and two opposites, not from the essence of the attribute but from the thing.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [319, 484],
+                  "start": 138.74,
+                  "end": 200.26
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The dog on the carpet",
+              "text": "Like a dog that pisses on the carpet: what do you want, he's a dog; or, on the other hand, hey, he pissed on my carpet!",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [485, 573],
+                  "start": 200.52,
+                  "end": 229.56
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "crude"
+                ],
+                "reason": "Coarse word for the dog's mess.",
+                "action": "replace",
+                "publishable": "Like a dog that makes a mess on the carpet: what do you want, he's a dog; or, on the other hand, hey, he ruined my carpet!",
+                "reviewed": "2026-11-23"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Composite attributes judge by the situation; kindness for its own sake is chesed of Tohu",
+      "summary": "The attributes of *Tikkun* are composite: they spread out according to the thing and not only from one's essence, so a thing and its opposite can be included. Kindness that comes from the essence alone, whatever the situation, is *chesed* of *Tohu*, and ends up bad.",
+      "passages": [
+        {
+          "lines": [
+            "h2u36i6l",
+            "ophiglrn",
+            "s64wb7yt"
+          ],
+          "phrases": [
+            {
+              "he": "כמו שכתוב במקום אחר שזהו מבחינת המדות דתיקון,",
+              "en": "That is already the *middos* of *Tikkun*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [582, 588],
+                "start": 233.1,
+                "end": 234.84
+              }
+            },
+            {
+              "he": "שהם בבחינת מורכבים",
+              "en": "They are composite.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [592, 594],
+                "start": 237.02,
+                "end": 238.48
+              }
+            },
+            {
+              "he": "דהיינו בהתפשטות דבר שלא מצד העצמיות לבד",
+              "en": "It comes from the situation; it's according to the situation, not according to what you feel. Not because of who you are.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [1165, 1190],
+                "start": 447.62,
+                "end": 458.58
+              }
+            },
+            {
+              "he": "על כן יוכל להיות התכללות דבר והיפוכו כו'",
+              "en": "That's why you can connect a thing and its opposite.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [1198, 1207],
+                "start": 462.24,
+                "end": 466.92
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "As explained elsewhere, these are already the attributes of *Tikkun*, which are composite. *Murkav* means built together from pieces; *pashut* (simple) means one thing. It is because of the thing, not because of the essence of the attribute, as when a man is kind and so will be kind in every situation.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [574, 654],
+                  "start": 229.92,
+                  "end": 266.06
+                }
+              ],
+              "outOfPlace": "He first reads lines 41-42 here (029 w574-629); the alignment marks only his rereading of them at w1148."
+            },
+            {
+              "kind": "mashal",
+              "title": "The offender let out again",
+              "text": "Like the kindness of the nations, *chesed le'umim chatas* (the kindness of nations is sin): in America they let criminals out. In the latest case a girl was kidnapped and cannot be found. The man, \"that Mexican guy\", a sex offender, had spent something like twenty years in jail or in an asylum; five days after they let him out he killed a woman; they put him back, let him out again, and days after, he did it again. What kind of *chesed* is that? It is not *Tikkun*, not from the thing: you decided you have to be nice, and there is no place for it. The first time you can say it was a mistake, but again? That is *chesed* of *Tohu*.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [655, 1023],
+                  "start": 267.1,
+                  "end": 392.44
+                }
+              ],
+              "outOfPlace": "His example for lines 41-42, between his first reading of them (029 w574) and the rereading the alignment marks (w1148).",
+              "sensitivity": {
+                "categories": [
+                  "named-person",
+                  "other-groups",
+                  "politics"
+                ],
+                "reason": "An identifiable recent criminal case, with the offender's nationality, and a jab at American justice.",
+                "action": "replace",
+                "publishable": "Like the kindness of the nations, *chesed le'umim chatas* (the kindness of nations is sin): a court lets a dangerous offender out, and days after his release he harms someone again; they put him back, let him out again, and again he does it. What kind of *chesed* is that? It is not *Tikkun*, not from the thing: you decided you have to be nice, and there is no place for it. The first time you can say it was a mistake, but again? That is *chesed* of *Tohu*.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "*Tikkun* goes according to the *inyan*, the situation. That is not a matter of the will but of the intellect, which looks at the situation and decides. We have to be nice, yes; but in this case, even if the man is *meshuga* and cannot be held responsible, fine: lock him up forever. That is real kindness, because *Tikkun* is real *chesed*. *Tohu* ends up always bad, and *Tikkun* is good.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1024, 1147],
+                  "start": 392.45,
+                  "end": 437.03
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the attributes of *Tikkun* are composite, spread out by the thing: **it comes from the situation; it's according to the situation, not according to what you feel**. **That's why you can connect a thing and its opposite.**",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1148, 1207],
+                  "start": 437.14,
+                  "end": 466.92
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Point, sefira, partzuf: the fanatic, the missionary at the door, and a person",
+      "summary": "*Nekuda* is *akudim*, a single will with nothing to talk about; *sefira* is *nekudim*, ten sefiros that only seem to listen and are still one point, because *akudim* and *nekudim* are both *Tohu*. Only the *partzuf* of *Tikkun* is a person who includes opposites, because each point goes out of itself into many vessels, according to the matter.",
+      "passages": [
+        {
+          "lines": [
+            "n5nd2zav",
+            "mcgrgwwx",
+            "pimwxhon"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו בחינת נקודה דתהו,"
+            },
+            {
+              "he": "דגם כשנעשה בהתחלקות לי',",
+              "en": "Even in *nekudim* there's already a *hischalkus* to ten.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [1271, 1281],
+                "start": 503.51,
+                "end": 509.43
+              }
+            },
+            {
+              "he": "אין זה רק ספירה"
+            },
+            {
+              "he": "ולא פרצוף אדם, שהוא בחינת ההתכללות מכל ההפכים כו'",
+              "en": "It's not really a *partzuf adam*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2844, 2849],
+                "start": 1136.04,
+                "end": 1137.38
+              }
+            },
+            {
+              "he": "אלא בבחינת התיקון,",
+              "en": "This only happens in the *Tikkun* itself",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2859, 2865],
+                "start": 1143.84,
+                "end": 1146.02
+              }
+            },
+            {
+              "he": "דוקא שכל נקודה בא בהתפשטות חוץ מעצמיותה,",
+              "en": "only when it goes according to the *inyan*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2872, 2879],
+                "start": 1150.04,
+                "end": 1153.71
+              }
+            },
+            {
+              "he": "שאז מתכללים על ידי ריבוי הכלים מכלים שונים",
+              "en": "Then it can be *niskalel* through the many, many different *keilim*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2897, 2907],
+                "start": 1161.12,
+                "end": 1164.56
+              }
+            },
+            {
+              "he": "שמורכבים בהם כו'",
+              "en": "that they're *murkav* according to the various different *inyanim*",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2910, 2918],
+                "start": 1166.8,
+                "end": 1169.71
+              }
+            },
+            {
+              "he": "ודי למבין"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Nekuda* and *partzuf* were discussed; *nekuda* is really *akudim*, *sefira* is *nekudim*, *partzuf* is *brudim*. So where is *nekudim*, the real *Tohu*? Here: the point of *Tohu*, even when it divides into ten, is only a *sefira*, not a *partzuf adam* (the stature of a man). In some places a point has no division at all, *Tohu* divides into ten, and *Tikkun* into a hundred.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1208, 1314],
+                  "start": 466.98,
+                  "end": 521.38
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Bin Laden: a point of will",
+              "text": "The *nekuda* is like a Muslim missionary: Bin Laden. He wants the whole world in Islam, which means submission, and given the power he would *mamash* kill millions who will not submit, his own people and himself included. There is no division of *sefiros* at all: that is what he wants and that is what he wants. You cannot sit and talk with him; there is nothing to talk about.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1315, 1487],
+                  "start": 522.44,
+                  "end": 605.06
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The missionary at the door: a sefira",
+              "text": "A *sefira* is like the Christian missionary who comes to your door (Christians too used to be like Bin Laden, with the Crusades). He is ten *sefiros* of *Tohu*: it looks like there is an intellect; he will sit, talk to you, be nice and invite you over. But he is not a *partzuf*, a person: the talk goes one way: he is talking at you, not to you, and not trying to understand what you say at all.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1488, 1719],
+                  "start": 605.8,
+                  "end": 696.2
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "There are ten *sefiros* in each *sefira*; so how are we different? I am also a missionary.",
+              "askedBy": "teacher",
+              "text": "Rabbi Markel says he too is trying to missionize the world, and in a way he is not listening to these people. But it is not that he does not listen: he does listen and understand them. The basic thing is that they are wrong, and he will sit with them and explain. The Christian missionary is not like that: he really wants to force the issue.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1720, 1831],
+                  "start": 697.2,
+                  "end": 734.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Why is he a *sefira* and not a point? Because he does not have the strength of the world of *akudim*. *Akudim*, as in the *akeida* (the binding), means handcuffs: the flock with a white ring around the ankle, where you tie them, as *nekudim* are spotted all over. The Christian world does not have the power the Muslim world has. The only reason it is a *sefira* is still *Tohu*: really it is all one point.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [1832, 2025],
+                  "start": 735,
+                  "end": 823.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "You see the man, polite, talking to you in a *sechel*-dik (reasoned) way. It makes no difference: you are not talking to a person, only to a *sefira* that looks like ten *sefiros*, an intellect and attributes. He seems to have compassion and will help a man, like the Salvation Army, but he is not really interested in helping him, only in his own idea. It does not go according to the *inyan*; it is not a real intellect or real attributes. Asked what *akudim* has to do with it: they have no power over us, we are not in their handcuffs. If we were, as we used to be, you would see the Christian missionary is also Bin Laden, like the Inquisition; really a point.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2026, 2265],
+                  "start": 823.36,
+                  "end": 902.64
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So the text says the point of *Tohu*, even divided into ten, is only a *sefira*, not a *partzuf*: between them there is no great difference. *Akudim* and *nekudim* are *Atik* and *Arich*, really one.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2266, 2391],
+                  "start": 903.56,
+                  "end": 956.56
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions"
+                ],
+                "reason": "The Christian missionary as Bin Laden, given the power.",
+                "action": "replace",
+                "publishable": "So the text says the point of *Tohu*, even divided into ten, is only a *sefira*, not a *partzuf*: between them there is no great difference. *Akudim* and *nekudim* are *Atik* and *Arich*, really one.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Why does it come into spreading at all; what is the difference between *akudim* and *nekudim*? In *akudim* he has no relation to the matter at all: a total nut, who will kill himself to blow up some babies. The other is at least a *sefira* because he lacks that power and has to relate to the world, so there is some compromise, only because there has to be. Nor is it a *partzuf*. He is on the level of *Arich*, not total *Atik*. *Atik* is *mamash* the essence of the thing, the essential delight, and does not go outside it; here the will is still a will for the thing, but it has to consider the outside world to a certain extent.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2392, 2607],
+                  "start": 958.36,
+                  "end": 1042
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-religions",
+                  "crude"
+                ],
+                "reason": "Calls the fanatic a total nut who will kill himself to blow up babies.",
+                "action": "replace",
+                "publishable": "Why does it come into spreading at all; what is the difference between *akudim* and *nekudim*? In *akudim* he has no relation to the matter at all: he will destroy himself to destroy others. The other is at least a *sefira* because he lacks that power and has to relate to the world, so there is some compromise, only because there has to be. Nor is it a *partzuf*. He is on the level of *Arich*, not total *Atik*. *Atik* is *mamash* the essence of the thing, the essential delight, and does not go outside it; here the will is still a will for the thing, but it has to consider the outside world to a certain extent.",
+                "reviewed": "2026-11-23"
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "That is why there is *Tohu* and *Tikkun*, two, and yet three levels. *Akudim* and *nekudim* are both *Tohu*: they explain that *akudim* is in *Atik* and *nekudim* in *Arich*, and *Atik* and *Arich* are one essence. The Muslim missionary and the American missionary are the same *Tohu*, one world.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2615, 2835],
+                  "start": 1045.96,
+                  "end": 1131.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is not a real division, and **it's not really a *partzuf adam***, which includes all opposites. **This only happens in the *Tikkun* itself**, when each point comes out of itself, **only when it goes according to the *inyan***. That is the work of the intellect: then they are included through the many different vessels, composed according to the different matters. In this matter the attribute is like this, in that matter like that: the attribute goes by the matter.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2836, 2950],
+                  "start": 1133.08,
+                  "end": 1180.98
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fire and water mixed: only vessels hold opposites, and there is no mercy in judgement",
+      "summary": "*Sefer Yetzira*'s fire and water mixed together is the composite: Michael and Gavriel do not put each other out because angels are vessels. In the lights themselves kindness is kindness and judgement is judgement: there is no mercy in the verdict, only in the sentencing, and Beis Shammai is still Beis Shammai.",
+      "passages": [
+        {
+          "lines": [
+            "h3cxbgxm",
+            "bpazforp"
+          ],
+          "phrases": [
+            {
+              "he": "וזה מה שכתוב בספר יצירה"
+            },
+            {
+              "he": "טרף אש ומים ובללן זה בזה",
+              "en": "He took, he grabbed fire and water and mixed them up, one inside the other.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2962, 2976],
+                "start": 1186.26,
+                "end": 1192.02
+              }
+            },
+            {
+              "he": "דהיינו בחינת המורכב דאש ומים דוקא,",
+              "en": "This is only in the *murkav* of *eish* and *mayim*.",
+              "audio": {
+                "lecture": "029 Tape025-Side1-Ch19.mp3",
+                "words": [2982, 2992],
+                "start": 1200.15,
+                "end": 1208.44
+              }
+            },
+            {
+              "he": "ולא בעצם מהותן כו' וכמו שכתוב במקום אחר באריכות:"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This is *Sefer Yetzira*: **he grabbed fire and water and mixed them up, one inside the other**. That is only in the composite of fire and water. It says that Michael and Gavriel, angels and opposites, do not put each other out, because an angel is a *kli*, not a light. Later, in the chapter after next, he will explain that a vessel can even take a light opposite to itself. But in the essence of the lights *chesed* is *chesed* and not *din*, and *din* is not *chesed*.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [2951, 3109],
+                  "start": 1181.27,
+                  "end": 1262.49
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As the *halacha* says, *ein rachamim badin* (there is no mercy in judgement), meaning the essential judgement. In the judgment of the court itself there is no mercy, because that is the essence of the attribute of judgement, the light and not a vessel. You may not consider that this one is rich and that one poor, or what brought him to this. You judge straight: did he do it? He did it, he's guilty. Mercy comes only in the spreading out of the thing, the sentencing.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [3110, 3285],
+                  "start": 1264.05,
+                  "end": 1337.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same with principle. Between the essential intellect leaning to kindness and the essential intellect leaning to judgement, like Beis Hillel and Beis Shammai, there is no inclusion and no compromise. That we do not go by Beis Shammai is in the applications, not in the essence. In the essence, Beis Shammai is still Beis Shammai.",
+              "audio": [
+                {
+                  "lecture": "029 Tape025-Side1-Ch19.mp3",
+                  "words": [3286, 3415],
+                  "start": 1337.49,
+                  "end": 1391.85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What is the point of *Tohu*, and how can it have ten *sefiros* and still no division?",
+      "lines": [
+        "fnitnu7g",
+        "fwclwcoj"
+      ]
+    },
+    {
+      "question": "Why must the *chesed* of *Tohu* die before its *gevura* can reign, and how do Beis Hillel and Beis Shammai show the same thing?",
+      "lines": [
+        "enmjaatf",
+        "aeock53g"
+      ]
+    },
+    {
+      "question": "How is a compromise of *Tikkun* different from the deals of someone who will do anything for what he wants, and what do the two cooks teach?",
+      "lines": [
+        "jpg326r2"
+      ]
+    },
+    {
+      "question": "What makes kindness composite, so that a cruel man can be kind and a kind man harsh?",
+      "lines": [
+        "kyec4dxr",
+        "hoon4pjy",
+        "i7i3k7xk",
+        "jgxlk3k4"
+      ]
+    },
+    {
+      "question": "How can G-d be angry and glad with Shlomo at once, and destroy the world and spare it for the same reason?",
+      "lines": [
+        "tmmdtpfq",
+        "swlty5aa",
+        "h5eopk64",
+        "x7tx4okt",
+        "e4gyz4gv"
+      ]
+    },
+    {
+      "question": "Why do Michael and Gavriel not put each other out, and why is there no mercy in judgement?",
+      "lines": [
+        "h3cxbgxm",
+        "bpazforp"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "030 Tape025-Side2-Ch20.mp3",
+      "words": [3813, 3820],
+      "reason": "logistics",
+      "note": "\"Hold on, I need to flip the tape.\""
+    },
+    {
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [79, 81],
+      "reason": "logistics",
+      "note": "\"Okay, go ahead.\" The class on chapter 20 starts here, after a few lines of chapter 19 read at the head of the tape."
+    },
+    {
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [2608, 2614],
+      "reason": "logistics",
+      "note": "\"Hold on for a minute. Hello?\""
+    },
+    {
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [0, 78],
+      "reason": "other-chapter",
+      "note": "The head of the tape: the opening lines of chapter 19, read without comment."
+    },
+    {
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [3416, 3435],
+      "reason": "logistics",
+      "note": "\"All right. Okay, be well... So did that make sense?\" The end of the class on chapter 20; chapter 19 resumes after it."
+    }
+  ],
+  "notes": [
+    {
+      "text": "Lines 35 (from Shaul) to 48 are taught on tape 029 (\"029 Tape025-Side1-Ch19\"), words 79-3415, which the catalog files under chapter 19. Though numbered 029, it was recorded after 030: it takes up line 35 where 030 stops. Tape 031, also filed under chapter 20, is a class on chapter 21 and is not used here.",
+      "lines": [
+        "5sk72j6g",
+        "tmmdtpfq",
+        "swlty5aa",
+        "h5eopk64",
+        "x7tx4okt",
+        "e4gyz4gv",
+        "h2u36i6l",
+        "ophiglrn",
+        "s64wb7yt",
+        "n5nd2zav",
+        "mcgrgwwx",
+        "pimwxhon",
+        "h3cxbgxm",
+        "bpazforp"
+      ]
+    },
+    {
+      "text": "Line 1 is read in class as \"ענין עקודים, נקודים, וברודים\" instead of \"נקודה ספירה פרצוף\"; in 029 (w1208-1246) he says nekuda is akudim, sefira is nekudim and partzuf is brudim. The phrase has no English.",
+      "lines": [
+        "muq6xacb"
+      ]
+    },
+    {
+      "text": "Line 35: he reads \"באשר נשפטו שם\" and takes it to be \"באשר הוא שם\" (Genesis 21:17, Yishmael), telling the midrash of the angels; then reads the end of the line as \"על שהאמת תחייב עונש, ועכשיו נשפט כהלכה, דבר והפוכו כאחד\" (030 w3802-3812), which is not the chapter file's wording. On 029 he takes up Shaul and the Givonim, saying he is not sure of the story and that it is \"in Melachim\"; it is II Samuel 21 (the priests of Nov, Yevamos 78b). The blocks keep his words.",
+      "lines": [
+        "5sk72j6g"
+      ]
+    },
+    {
+      "text": "030 w3265-3304: the transcript reads \"by a גוי the עצם המידות is חסדנים\"; it may have been \"a Yid\". The block says \"in one people\" and does not guess.",
+      "lines": [
+        "34fwqml4",
+        "wcrx7h2m"
+      ]
+    },
+    {
+      "text": "Line 47: the chapter reads \"טרף\", he reads \"צרף\" (grabbed/joined); his English is \"he took, he grabbed\".",
+      "lines": [
+        "h3cxbgxm"
+      ]
+    },
+    {
+      "text": "The question on Tehillim 137:9 (030 w3079-3151) follows directly on the remarks about the Palestinians; it is flagged raw on its own, but the reviewer may want to treat it with the two asides before it.",
+      "lines": [
+        "6hb6vpzw"
+      ]
+    },
+    {
+      "text": "Line 27's English (\"Not because he's a good person\", 030 w2513-2518) is said just before he reads the line, as he rereads line 26.",
+      "lines": [
+        "hoon4pjy"
+      ]
+    }
+  ]
+}

@@ -9,27 +9,16 @@ What a writer of this series' study files needs to know beyond
   are over the phone. A student reads the Hebrew a phrase at a time; Rabbi
   Markel repeats it, translates and explains. A listener answers "Right."
   after most sentences (the dump folds those away).
-- The transcripts have **no speaker labels**. A question is usually a
-  student's when the next sentence answers it ("So you say, …" is often
-  Rabbi Markel putting the question himself: that is `askedBy: "teacher"`).
-- Terms are in Hebrew script inside English sentences ("the עיון is a כלי
-  for the השגה"). Write them transliterated.
+- "So you say, ..." is often Rabbi Markel putting the question himself:
+  `askedBy: "teacher"` (STYLE.md, `question` blocks).
 - The series was not recorded in chapter order (chapters 10–15 first, with
   an introduction, tape 001; then 1–4, 16–33, 7–9, 5–6, 34–54), so a class
   may refer back to a chapter that comes later in the book.
-- Tapes begin and end mid-thought. A class often opens by finishing the
-  previous tape's point: place that under the passage it belongs to, as a
-  `recap` or with `outOfPlace`. A tape's last seconds are sometimes another
-  recording altogether (a different speaker, a different subject): list it
-  in `omitted` as `other`, with a note.
-- Some classes read no line at all (free discussion of the chapter: 063 on
-  chapter 5; 065, 067 and 072 on chapter 6). Their content still gets
-  blocks, under the passage it discusses, or under the chapter's last
-  passage when it is about the chapter as a whole.
-- A few tapes have Sofer's word times and not re-timed ones (the dump says
-  "sofer times"): the seconds can be off by a lot. The word ranges are still
-  right, and `yarn study-fill` re-stamps the seconds when the tape is
-  re-timed.
+- Sides begin and end mid-thought (STYLE.md, Structure), and a side's last
+  seconds are sometimes another recording altogether.
+- Classes that read no line: 063 on chapter 5; 065, 067 and 072 on
+  chapter 6.
+- A few tapes still have Sofer's word times (STYLE.md, Sources).
 
 ## His manner (keep it)
 
@@ -42,9 +31,10 @@ What a writer of this series' study files needs to know beyond
   politics, "the world", other approaches within Judaism, and now and then
   on men and women. They go in, as he says them, each in an `aside` of its
   own, flagged.
-- Stories about his teachers, relatives and students, by name. They go in;
-  flag `named-person` or `private` when a living or recent person is
-  criticised or exposed.
+- Stories about his teachers and others he knew, by name; flag
+  `named-person` when a living or recent person is criticised or exposed. A
+  student or his own family is never named: write the point without the
+  person (STYLE.md, People in the class).
 - He often says a chapter "is the point of the whole book" or "the hardest
   chapter": that is a `keyPoint` or `aside`, worth keeping.
 
@@ -54,38 +44,42 @@ What a writer of this series' study files needs to know beyond
 
 ## Translation
 
-Phrases carry only his English as he gives it in class, each with the
-`audio` of where he says it; a phrase he reads without translating has no
-English (STYLE.md, Phrases). His published translation (Sefaria, "The Gate
-of Unity", 2023, CC-BY) is not used: whether and how to show it is a separate
-decision. Chapters 1–5 and 10 were ported from the study guide demo with
-that translation a paragraph at a time; when one of them is rewritten, cut it
-into phrases as he translates in class and drop the published English.
+His published translation (Sefaria, "The Gate of Unity", 2023, CC-BY) is
+not used in phrases (STYLE.md, Phrases); whether and how to show it is a
+separate decision.
 
 ## Sensitivity, for this series
 
 Flag freely (see STYLE.md). Seen so far: remarks about women (chapter 10),
 "idol worship" said of other religions and of meditation practices
 (chapter 1), remarks on communism and on foundations and bureaucracies
-(chapter 10), jokes built on what husbands and wives want (chapter 9).
+(chapter 10), jokes built on what husbands and wives want (chapter 9), and
+"idiot", of other people and of himself and his listeners (STYLE.md,
+insult words).
 
-"Idiot" (of other people, of a character in a joke, or of himself and
-his listeners) is always flagged (`crude` when it is only the word), with a
-`replace` text that drops or swaps the word: the reviewer prefers the
-softened version wherever he says it.
+The reviewer's decisions on chapters 1–18 (November 2026) are the examples
+behind the raw/softened/drop test in STYLE.md: his *avoda zara* statements,
+his remarks on women (chapter 2 raw, chapter 1 softened), *davenen* (a
+judgment), the husband and wife at the building (raw). Teasing of
+Republicans prints raw: he is one, and it is a group teasing itself. The
+Bin Laden *mashal* (chapter 20, raw) is STYLE.md's example of a sharp claim
+said once.
 
-The reviewer's first 31 decisions (November 2026) are the examples behind
-the raw/softened/drop test in STYLE.md. For Rabbi Markel in particular:
-his statements that a practice or creed is *avoda zara* print raw; his
-name-calling of the people who hold it is softened. His remarks on women
-print raw when they state the doctrine (chapter 2) and are softened when
-they run on into his own examples (chapter 1). Asides about *davenen* not
-being needed are a judgment for the reviewer.
+## History
 
-From the reviewer's notes: a *mashal* built on two people's different
-viewpoints (the husband and the wife at the building) prints raw, because
-softening the two into "they were both" kills the point. Teasing of
-Republicans prints raw: he is one, and it is a group teasing itself.
-
-The sensitivity review of chapters 1–18 was finished on 2026-11-23: 38
-flags printed raw (removed), 45 softened and 5 dropped (marked `reviewed`).
+- Chapters 1–19 were rewritten as guide prose in November 2026, after the
+  reviewer found the blocks "keep the literal too much" (STYLE.md, "Write a
+  guide, not a recording").
+- The sensitivity review of chapters 1–18 was finished on 2026-11-23: 38
+  flags printed raw (removed), 45 softened and 5 dropped (marked
+  `reviewed`).
+- Chapters 20–29 were written with the study-chapter skill (version 5) in
+  November 2026, then trimmed so a hammered claim is said once. Tape 029 and
+  tape 031 were re-aligned to the chapters they really teach (20 and 21).
+- The sensitivity review of chapters 20–28 was finished on 2026-11-23: 20
+  flags printed raw (removed), 25 softened, none dropped. In chapter 20 the
+  reviewer printed raw the remarks on Islam, Bin Laden and the Inquisition
+  that are the *mashal* of the *nekuda* (the second "same Bin Laden" and the
+  "total nut" lines softened), and the verse on the enemy's infants read as
+  *Tikkun*; he softened the asides that apply it to the Palestinians and
+  their culture, the politicians, and the identifiable criminal case.
