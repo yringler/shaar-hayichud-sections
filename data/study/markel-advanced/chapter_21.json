@@ -1227,7 +1227,8 @@
                 ],
                 "reason": "Calls an ordinary person \"stupid\" in passing.",
                 "action": "replace",
-                "publishable": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Anybody really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite."
+                "publishable": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Anybody really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
@@ -1690,16 +1691,7 @@
                   "start": 1215.44,
                   "end": 1303.26
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other"
-                ],
-                "reason": "Says that whoever does not believe in the resurrection as taught here is a heretic and \"not Jewish\".",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "It is *techiyas hameisim* (the resurrection). Not only can this keep a living person immortal; it can bring a dead person back to life and make him immortal, though nothing is left of him but the *etzem luz* (the luz bone). Jurassic Park times, gigantic miracles, and the cause is *Chassidus*. What we hold in our hands is the hypodermic needle that injects straight into your brain."
-              }
+              ]
             },
             {
               "kind": "aside",
@@ -1719,9 +1711,8 @@
                 ],
                 "reason": "Calls the unbeliever \"Reform\", and says a heretic is liable to death and \"supposed to be killed\" but for the status of a tinok shenishba.",
                 "action": "replace",
-                "recommend": "judgment",
-                "judgmentNote": "That denying a principle of faith is heresy is doctrine and could print as said; the jab at Reform and the line about killing the heretic, even with tinok shenishba, need a person to weigh.",
-                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew). The tape ends mid-sentence."
+                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew). The tape ends mid-sentence.",
+                "reviewed": "2026-11-23"
               }
             }
           ]

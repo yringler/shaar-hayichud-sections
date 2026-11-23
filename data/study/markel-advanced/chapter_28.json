@@ -260,16 +260,7 @@
                   "start": 206.18,
                   "end": 228.18
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Says cruelty, the circuses, was the very essence of the Romans, and ties it to Esav.",
-                "action": "replace",
-                "publishable": "That is a thing of Esav. And the same the other way: if you have an Esav, then his cruelty, even though it is in a *davar nivdal*, is his *etzem* (essence). Like the color to the apple.",
-                "recommend": "raw"
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -318,16 +309,7 @@
                   "start": 246.66,
                   "end": 278.04
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Repeats the Romans' circuses as coming from their essential self-image.",
-                "action": "replace",
-                "publishable": "So all the lights of the ten *sefiros* come into being from the essential *osios* (letters) of the one who emanates them: **they come from the *etzem osios* of the *ma'atzil***. That is, from his self-image, as a people's deeds come from its self-image.",
-                "recommend": "raw"
-              }
+              ]
             }
           ]
         },
@@ -929,7 +911,8 @@
                 ],
                 "reason": "A crude word (\"poop\") in the picture of the mouse.",
                 "action": "replace",
-                "publishable": "Accordingly, one who intends the Names intends the source of the lights. Same as with the mouse: when the baker is *mechavein* (intends) what he was told, it is not just the external thing of a mouse but the internal thing: what the mouse is going to do, what a mouse is thinking. What is a mouse thinking? How to get into the bags of oats. Then he's going to run around inside the walls."
+                "publishable": "Accordingly, one who intends the Names intends the source of the lights. Same as with the mouse: when the baker is *mechavein* (intends) what he was told, it is not just the external thing of a mouse but the internal thing: what the mouse is going to do, what a mouse is thinking. What is a mouse thinking? How to get into the bags of oats. Then he's going to run around inside the walls.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1162,15 +1145,7 @@
                   "start": 1486.47,
                   "end": 1507.05
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "women"
-                ],
-                "reason": "Builds the example on the stock picture of a woman screaming at a mouse.",
-                "action": "replace",
-                "publishable": "Tell someone there's a mouse in the house and they shout. What is there to shout about? It's just a word. No, it is not just a word: it has an inner meaning, a *kavana* of an actual thing that scares them."
-              }
+              ]
             },
             {
               "kind": "mashal",

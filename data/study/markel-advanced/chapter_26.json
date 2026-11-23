@@ -596,8 +596,7 @@
                 "reason": "Uses a present-day activist cause as the example of an unexamined axiom; a reader in that cause could take it as a jab.",
                 "action": "replace",
                 "publishable": "By them it is axiomatic: you've got to support a certain cause. They are not asking whether you really should, still less how the thing came into being in the first place, only what to do now: raise money, make brochures. What the *middos* should be is already settled for them.",
-                "recommend": "judgment",
-                "judgmentNote": "The whales are a mild, almost neutral example and the point does not depend on them; it may well print raw."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -617,7 +616,8 @@
                 ],
                 "reason": "Calls most people sheep.",
                 "action": "replace",
-                "publishable": "So when did they think it through, to arrive at the axiom? Most people didn't. It was given to them; they just got it, and followed. Never mind the inner nature of reality, they never even thought about what the *middos* should be, or whether what they are doing is really right."
+                "publishable": "So when did they think it through, to arrive at the axiom? Most people didn't. It was given to them; they just got it, and followed. Never mind the inner nature of reality, they never even thought about what the *middos* should be, or whether what they are doing is really right.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -959,18 +959,7 @@
                   "start": 1412.62,
                   "end": 1432.88
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "health-or-legal",
-                  "other"
-                ],
-                "reason": "A remark on physical conception that a reader could take as a medical claim, and intimate in subject.",
-                "action": "replace",
-                "publishable": "By the way, it is like that below as well: a birth has to come from the inner delight.",
-                "recommend": "judgment",
-                "judgmentNote": "It is the standard parallel between the union above and below, said briefly and modestly; weigh whether it prints as said."
-              }
+              ]
             }
           ]
         },

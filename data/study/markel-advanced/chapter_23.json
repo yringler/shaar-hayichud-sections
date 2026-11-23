@@ -1789,7 +1789,8 @@
                 ],
                 "reason": "Calls the people who went to meet Arafat idiots: a jab at a political camp, about a named figure.",
                 "action": "replace",
-                "publishable": "**If he'll want to love his enemy**, he takes pleasure in him. People who go to shake hands with an enemy leader come back so glad, such a big *taanug*, that they got to meet him and shook his hand. What changed? He's your enemy. But since they want to love their enemy, they get a big pleasure out of it."
+                "publishable": "**If he'll want to love his enemy**, he takes pleasure in him. Like the guys who go to shake hands with Arafat: they come back so glad, such a big *taanug*, that they got to meet Arafat and shook his hand. But what changed? He's your enemy. But since they want to love their enemy, they get a big pleasure out of it.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1976,18 +1977,7 @@
                   "start": 483.36,
                   "end": 542.4
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-religions",
-                  "other-groups"
-                ],
-                "reason": "Teases the hippies who became Lubavitchers as \"still the same hippies\" and sets Christianity and Hinduism against Yiddishkeit.",
-                "action": "replace",
-                "publishable": "Many *baalei teshuva* in America were not really against *Yiddishkeit*. Even one who strayed far may not need such a high *teshuva*: he wanted the truth, to serve the *Aibershter*, and thought to get there as a spiritual person, in other ways. Many such seekers suddenly became Lubavitchers, and they did not change inside. They only realized you get it through *Yiddishkeit*.",
-                "recommend": "judgment",
-                "judgmentNote": "That one finds the truth through Yiddishkeit and not Hinduism is a position (raw by the series' rule); \"still the same hippies\" is affectionate teasing, but it is also his evidence that their inner will did not change."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -2037,15 +2027,7 @@
                   "start": 679.01,
                   "end": 744.42
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Says in passing that even among non-Jews some are willing to sacrifice their children.",
-                "action": "replace",
-                "publishable": "You sometimes see people willing to sacrifice their children for something. What the *Akeida* showed was that he, the very *ish chesed* (man of kindness), could change the essence of his *midda*. That is why it was the biggest test. Wouldn't being thrown into the fire himself be bigger? No: that was no change in the essence of his *midda*, so it did not prove *mesirus nefesh* into the *Atzmus*. *Mesirus nefesh* means *mesirus haratzon*: he gave up the will of the very essence of his *midda*."
-              }
+              ]
             }
           ]
         }

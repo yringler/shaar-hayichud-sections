@@ -119,4 +119,4 @@ def study_fill(series: str, chapter_names: list[str]) -> None:
     """Re-serialize in the house style (and re-stamp seconds) after a script rewrote a file."""
     for name in chapter_names:
         n = int(name.split("_")[1])
-        subprocess.run(["yarn", "-s", "study-fill", "--series", series, "--chapter", str(n)], cwd=TOOLS, check=True, capture_output=True)
+        subprocess.run(["yarn", "study-fill", "--series", series, "--chapter", str(n)], cwd=TOOLS, check=True, capture_output=True)

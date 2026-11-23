@@ -612,7 +612,8 @@
                 ],
                 "reason": "Vomit and people lying on the floor as the sign of a great farbrengen.",
                 "action": "replace",
-                "publishable": "A good *mashal* is a *farbrengen* (a Chassidic gathering). Come when it's over and see a few bottles of soda and some leftovers on the table, and you figure you didn't miss much. But if there's spaghetti on the walls and food all over the floor, you say, \"Wow, I really missed it.\" On the floor, it was some party; on the walls, you really know. *Davka* (precisely) what fell off, the leftovers and the rotten stuff, shows what a great party it was."
+                "publishable": "A good *mashal* is a *farbrengen* (a Chassidic gathering). Come when it's over and see a few bottles of soda and some leftovers on the table, and you figure you didn't miss much. But if there's spaghetti on the walls and food all over the floor, you say, \"Wow, I really missed it.\" On the floor, it was some party; on the walls, you really know. *Davka* (precisely) what fell off, the leftovers and the rotten stuff, shows what a great party it was.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -644,7 +645,8 @@
                 ],
                 "reason": "Drunk yeshiva students passed out under the table as the sign of the highest level.",
                 "action": "replace",
-                "publishable": "It can go all the way up to *Radla* (the unknowable head)."
+                "publishable": "It can go all the way up to *Radla* (the unknowable head).",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1163,7 +1165,8 @@
                 ],
                 "reason": "Calls communists and terrorists crazy and lumps whale activists in with them.",
                 "action": "replace",
-                "publishable": "Like people who are fanatical about whatever, who come up with a real smart thing."
+                "publishable": "Like people who are fanatical about whatever, who come up with a real smart thing.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1201,16 +1204,7 @@
                   "start": 304.08,
                   "end": 363.77
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Says scientists are blinded by wanting their theories, evolution among them, and sets them beside terrorists.",
-                "action": "replace",
-                "publishable": "The problem: it can totally blind you. Some thinkers come up with big ideas, but they have a blind spot: they want it so much to be like that, they can't let go of their theories. It can be very dark, the intellect not shining on it, though it brings much bigger ideas than *Nehi*.",
-                "recommend": "raw"
-              }
+              ]
             }
           ]
         },
@@ -1536,7 +1530,8 @@
                 ],
                 "reason": "A Yiddish vulgarity.",
                 "action": "replace",
-                "publishable": "When somebody is really angry he *mamash* can't do anything: shaking with anger, he can't talk or shout at the guy. He has to calm down a little just to shoot the guy. In the essence of the anger, *Chagas*, he is inside the *middah* itself. *Nehi* is already its *hispaalus* (stirring), what he wants to come out of it: now he can punch the guy in the nose."
+                "publishable": "When somebody is really angry he *mamash* can't do anything: shaking with anger, he can't talk or shout at the guy. He has to calm down a little just to shoot the guy. In the essence of the anger, *Chagas*, he is inside the *middah* itself. *Nehi* is already its *hispaalus* (stirring), what he wants to come out of it: now he can punch the guy in the nose.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1718,16 +1713,7 @@
                   "start": 1480.9,
                   "end": 1567.8
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Says gentile wise men cannot reach this wisdom at all, in contrast to the Jewish sages.",
-                "action": "replace",
-                "publishable": "You see it in the great Jewish *chachamim* (sages) and *geonim* (geniuses). Not big philosophers: theirs is a G-dly wisdom. They know things a person should not be able to know; their wisdom is not big but infinite. This level comes only when it is connected to *Havaya Havaya*, *Kel rachum v'chanun*: it is G-dliness.",
-                "recommend": "raw"
-              }
+              ]
             }
           ]
         }

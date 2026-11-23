@@ -73,3 +73,13 @@ said once.
 - The sensitivity review of chapters 1–18 was finished on 2026-11-23: 38
   flags printed raw (removed), 45 softened and 5 dropped (marked
   `reviewed`).
+- Chapters 20–29 were written with the study-chapter skill (version 5) in
+  November 2026, then trimmed so a hammered claim is said once. Tape 029 and
+  tape 031 were re-aligned to the chapters they really teach (20 and 21).
+- The sensitivity review of chapters 20–28 was finished on 2026-11-23: 20
+  flags printed raw (removed), 25 softened, none dropped. In chapter 20 the
+  reviewer printed raw the remarks on Islam, Bin Laden and the Inquisition
+  that are the *mashal* of the *nekuda* (the second "same Bin Laden" and the
+  "total nut" lines softened), and the verse on the enemy's infants read as
+  *Tikkun*; he softened the asides that apply it to the Palestinians and
+  their culture, the politicians, and the identifiable criminal case.

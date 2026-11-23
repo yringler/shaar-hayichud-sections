@@ -145,15 +145,7 @@
                   "end": 65.39
                 }
               ],
-              "outOfPlace": "Class 041 opens by finishing the previous tape's discussion of chapter 26 before it reads line 1; placed here.",
-              "sensitivity": {
-                "categories": [
-                  "other-groups"
-                ],
-                "reason": "Calls Americans' belief in America a fanaticism.",
-                "action": "replace",
-                "publishable": "There is always a level like this. In everybody there is a certain fanaticism: a man will tell you that his own country is the thing. By him it is a *hanacha sichlis* (an intellectual premise), because his *ratzon* is like that."
-              }
+              "outOfPlace": "Class 041 opens by finishing the previous tape's discussion of chapter 26 before it reads line 1; placed here."
             },
             {
               "kind": "recap",
@@ -794,8 +786,7 @@
                 "reason": "Says a person with Down syndrome could have been a genius had the cause been found and prevented: a medical claim, and a remark that touches families of people with disabilities.",
                 "action": "replace",
                 "publishable": "The light of the intellect, the life force that gives the *sechel* its power, is not really different. Sometimes, G-d forbid, a child's brain does not develop properly in the womb. It does not mean the child has a lesser soul: the light of the soul is the same.",
-                "recommend": "judgment",
-                "judgmentNote": "The teaching (a damaged vessel, not a lesser soul) is his and kind; weigh whether the Down syndrome example and the 'could have been a genius' claim can print as said."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -819,8 +810,7 @@
                 "reason": "Medical claims on the causes of Down syndrome and of disabilities in pregnancy, and the word 'retardation'.",
                 "action": "replace",
                 "publishable": "Many things can damage the vessel before birth. So the soul had the full power of the *sechel*, and really a bigger one: a damaged brain only shows it limited even more.",
-                "recommend": "judgment",
-                "judgmentNote": "Decide whether the medical examples (chromosome, drugs, alcohol in pregnancy) and the word 'retardation' print; the point survives without them."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -841,8 +831,7 @@
                 "reason": "Says food supplements in pregnancy make a child smarter: advice a reader might act on.",
                 "action": "replace",
                 "publishable": "It shows another thing too: what is done for the body before birth can make a child smarter. How come? Because there is no real definition in the light of the soul; the difference is not coming from it.",
-                "recommend": "judgment",
-                "judgmentNote": "A health claim a pregnant reader could act on; weigh whether to print it as he said it."
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1173,7 +1162,8 @@
                 ],
                 "reason": "Says the normal American who watched football all his life gets stupider and stupider, as seen in hospital visits.",
                 "action": "replace",
-                "publishable": "Someone who never exercised his mind his whole life: go on Rosh Hashana to do *mivtzoim* (the outreach campaigns) in the hospitals and you'll see they didn't get smart. It's the opposite: the mind declines."
+                "publishable": "Someone who never exercised his mind his whole life: go on Rosh Hashana to do *mivtzoim* (the outreach campaigns) in the hospitals and you'll see they didn't get smart. It's the opposite: the mind declines.",
+                "reviewed": "2026-11-23"
               }
             }
           ]
