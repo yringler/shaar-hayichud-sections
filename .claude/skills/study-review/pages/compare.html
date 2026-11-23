@@ -1,0 +1,284 @@
+<title>{{TITLE}}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap">
+<style>
+/* Layout: sticky bar (totals + filters) over one column of blocks, each comparing the guide text before and after condensing. */
+:root {
+  --bg: #eef0f3; --sheet: #ffffff; --ink: #1b2230; --muted: #5d6676; --rule: #d6dae2; --soft: #f5f6f9;
+  --accent: #2f4fb0; --accent-ink: #ffffff;
+  --ok: #1f7a4d; --ok-bg: #e2f3ea; --said: #2a64a8; --said-bg: #e1ecf8; --edit: #9a5b06; --edit-bg: #fbeed6;
+  --del: #b4232f; --del-bg: #fbe3e5; --ins-bg: #ddf1e4; --ins: #17623d;
+  --f-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-text: "Literata", Georgia, "Times New Roman", serif;
+  --f-he: "Frank Ruhl Libre", "David", "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12161d; --sheet: #1a1f29; --ink: #e5e8ee; --muted: #9aa3b2; --rule: #2e3644; --soft: #222835;
+  --accent: #8ea6ff; --accent-ink: #10152a;
+  --ok: #6fd19d; --ok-bg: #173527; --said: #8cbcf2; --said-bg: #182b42; --edit: #f0b860; --edit-bg: #3a2c12;
+  --del: #ff8e97; --del-bg: #45202a; --ins-bg: #183a28; --ins: #8de0b0; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12161d; --sheet: #1a1f29; --ink: #e5e8ee; --muted: #9aa3b2; --rule: #2e3644; --soft: #222835;
+  --accent: #8ea6ff; --accent-ink: #10152a;
+  --ok: #6fd19d; --ok-bg: #173527; --said: #8cbcf2; --said-bg: #182b42; --edit: #f0b860; --edit-bg: #3a2c12;
+  --del: #ff8e97; --del-bg: #45202a; --ins-bg: #183a28; --ins: #8de0b0; color-scheme: dark }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--f-ui); font-size: 14px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--sheet); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--sheet); border-bottom: 1px solid var(--rule); }
+header.bar .wrap { padding-block: 12px; display: grid; gap: 10px; }
+.toprow { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+h1 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+.sub { color: var(--muted); font-size: 13px; }
+.progress { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--soft); }
+.progress span { display: block; height: 100%; }
+.counts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.counts b { color: var(--ink); font-weight: 600; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 0; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+select, input[type=search], input[type=text], textarea {
+  font: inherit; color: var(--ink); background: var(--soft); border: 1px solid var(--rule); border-radius: 6px; padding: 5px 8px; min-width: 0; }
+input[type=search] { flex: 1 1 180px; }
+textarea { width: 100%; box-sizing: border-box; resize: vertical; font-family: var(--f-text); font-size: 14.5px; line-height: 1.55; }
+button { font: inherit; font-size: 13px; font-weight: 500; border-radius: 6px; padding: 6px 12px; cursor: pointer; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+button:hover { border-color: var(--muted); }
+button:focus-visible, select:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible, .sheet:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.on-soft { background: var(--ok-bg); border-color: var(--ok); color: var(--ok); }
+button.on-raw { background: var(--said-bg); border-color: var(--said); color: var(--said); }
+button.on-drop { background: var(--del-bg); border-color: var(--del); color: var(--del); }
+.rec { font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .7; margin-left: 4px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+button:disabled { opacity: .5; cursor: not-allowed; }
+.banner { font-size: 13px; padding: 8px 12px; border-radius: 6px; background: var(--edit-bg); color: var(--edit); }
+
+main .wrap { padding-block: 18px 60px; display: grid; gap: 16px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; display: grid; gap: 12px; scroll-margin-top: 150px; }
+.sheet[data-status="soft"] { border-left: 4px solid var(--ok); }
+.sheet[data-status="raw"] { border-left: 4px solid var(--said); }
+.sheet[data-status="drop"] { border-left: 4px solid var(--del); }
+.sheet.cur { box-shadow: 0 0 0 2px var(--accent); }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 12.5px; color: var(--muted); }
+.meta .num { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+.pill { font-size: 11.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); }
+.pill.soft { background: var(--ok-bg); color: var(--ok); }
+.pill.raw { background: var(--said-bg); color: var(--said); }
+.pill.drop { background: var(--del-bg); color: var(--del); }
+.chip { font-size: 12px; padding: 1px 7px; border-radius: 4px; border: 1px solid var(--rule); color: var(--ink); }
+.chip.omit { border-color: var(--del); color: var(--del); }
+.chip.judg { border-color: var(--edit); color: var(--edit); background: var(--edit-bg); font-weight: 600; }
+h2 { font-family: var(--f-text); font-size: 17px; font-weight: 600; margin: 0; text-wrap: balance; }
+h2 .kind { font-family: var(--f-ui); font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 8px; vertical-align: 2px; }
+.reason { font-size: 13.5px; background: var(--soft); border-radius: 6px; padding: 8px 10px; }
+.reason b { font-weight: 600; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+@media (max-width: 760px) { .compare { grid-template-columns: 1fr; } }
+.col { min-width: 0; display: grid; gap: 6px; align-content: start; }
+.col h3 { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.prose { font-family: var(--f-text); font-size: 15px; line-height: 1.62; overflow-wrap: anywhere; }
+.prose p { margin: 0 0 .7em; } .prose p:last-child { margin: 0; }
+.prose .ttl { font-weight: 600; display: block; margin-bottom: .3em; }
+del.d { background: var(--del-bg); color: var(--del); text-decoration: line-through; text-decoration-thickness: 1px; }
+ins.i { background: var(--ins-bg); color: var(--ins); text-decoration: none; }
+.prose.diffing { line-height: 1.75; }
+.prose.diffing del.d, .prose.diffing ins.i { border-radius: 3px; padding: 0 2px; }
+.legend { font-size: 12px; display: flex; gap: 8px; }
+.legend del, .legend ins { padding: 0 5px; border-radius: 3px; }
+button.mini { font-size: 11.5px; font-weight: 600; letter-spacing: .02em; text-transform: none; padding: 2px 9px; border-radius: 999px; }
+button.mini.on { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.col h3 button.mini { margin-left: auto; }
+.audio { align-items: center; }
+.trpanel { display: grid; gap: 6px; }
+.trpanel h3 { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.trpanel .said { max-height: 420px; }
+.omitted { font-family: var(--f-ui); font-style: italic; color: var(--del); }
+details { border-top: 1px solid var(--rule); padding-top: 8px; }
+details > summary { cursor: pointer; font-size: 12.5px; font-weight: 500; color: var(--muted); }
+details .body { padding-top: 8px; display: grid; gap: 8px; }
+.said { font-family: var(--f-text); font-size: 14px; line-height: 1.6; color: var(--ink); max-height: 340px; overflow: auto; background: var(--soft); border-radius: 6px; padding: 8px 10px; }
+.he { font-family: var(--f-he); font-size: 18px; line-height: 1.7; direction: rtl; text-align: right; }
+.audio { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; }
+.audio a { color: var(--accent); font-variant-numeric: tabular-nums; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.actions .sp { flex: 1; }
+.editor { display: grid; gap: 8px; background: var(--edit-bg); border-radius: 8px; padding: 10px; }
+.editor label { font-size: 12px; font-weight: 600; color: var(--muted); display: grid; gap: 4px; }
+.editor .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.note textarea { font-family: var(--f-ui); font-size: 13.5px; }
+.saved { font-size: 12px; color: var(--muted); }
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+kbd { font-family: var(--f-ui); font-size: 11px; border: 1px solid var(--rule); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; }
+.keys { font-size: 12px; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+<header class="bar">
+  <div class="wrap">
+    <div class="toprow">
+      <h1>{{HEADING}}</h1>
+      <span class="sub" id="subline"></span>
+    </div>
+    <div class="counts" id="overall">Loading…</div>
+    <div class="counts" id="counts"></div>
+    <div class="filters">
+      <select id="fCh" aria-label="Chapter"></select>
+      <select id="fSec" aria-label="Section"><option value="">All sections</option></select>
+      <select id="fShow" aria-label="Show">
+        <option value="changed" selected>Changed blocks</option>
+        <option value="all">All blocks</option>
+        <option value="unrated">Not yet rated</option>
+        <option value="flagged">Rated with a problem</option>
+        <option value="newflag">New flags (not reviewed)</option>
+      </select>
+      <label class="keys"><input type="checkbox" id="fDiff"> Show changes on all</label>
+      <label class="keys"><input type="checkbox" id="fTr"> Open all transcripts</label>
+    </div>
+    <div class="keys">Spot-check or read through: rate a block <b>Good</b>, <b>Cut too much</b> (teaching lost) or <b>Still too long</b>, and add a note if you want. Claude reads the ratings and notes back and fixes what you mark. Your place is remembered in this browser.</div>
+    <div class="banner" id="banner" hidden></div>
+  </div>
+</header>
+<main><div class="wrap" id="list"><div class="empty">Loading the blocks…</div></div></main>
+<script>
+"use strict";
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const mdInline = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>");
+const fmtT = (t) => { if (t == null) return "?"; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ":" + String(s).padStart(2, "0"); };
+
+function paras(text) { return String(text || "").split(/\n\s*\n/).map((p) => "<p>" + mdInline(p) + "</p>").join(""); }
+
+// Word diff (LCS) between two Markdown texts; output keeps paragraph breaks.
+function tokenize(s) { return String(s || "").split(/(\n\s*\n)|\s+/).filter((t) => t !== undefined && t !== ""); }
+// One combined view of the change from a (as written) to b (public): cut words struck through, new words highlighted.
+// Markdown is rendered per token, so emphasis that spans several words shows as plain text in this view.
+function unifiedDiffHtml(a, b) {
+  const A = tokenize(a), B = tokenize(b), n = A.length, m = B.length;
+  const L = Array.from({ length: n + 1 }, () => new Uint16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--)
+    L[i][j] = A[i] === B[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const ops = []; // [kind, token] with kind "=" | "-" | "+"
+  let i = 0, j = 0;
+  while (i < n && j < m) {
+    if (A[i] === B[j]) { ops.push(["=", A[i]]); i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) ops.push(["-", A[i++]]);
+    else ops.push(["+", B[j++]]);
+  }
+  while (i < n) ops.push(["-", A[i++]]);
+  while (j < m) ops.push(["+", B[j++]]);
+  // Show each changed stretch as all its cut words, then all its new words.
+  const out = [];
+  let k = 0;
+  const tok = (t) => (/^\n/.test(t) ? "</p><p>" : mdInline(t));
+  while (k < ops.length) {
+    if (ops[k][0] === "=") { out.push(tok(ops[k][1])); k++; continue; }
+    const del = [], ins = [];
+    while (k < ops.length && ops[k][0] !== "=") { (ops[k][0] === "-" ? del : ins).push(ops[k][1]); k++; }
+    const run = (arr, tag, cls) => {
+      const parts = arr.map(tok).join(" ").split("</p><p>");
+      return parts.map((p) => (p.trim() ? `<${tag} class="${cls}">${p.trim()}</${tag}>` : "")).join("</p><p>");
+    };
+    if (del.length) out.push(run(del, "del", "d"));
+    if (ins.length) out.push(run(ins, "ins", "i"));
+  }
+  return ("<p>" + out.join(" ") + "</p>").replace(/ ?<\/p><p> ?/g, "</p><p>").replace(/<p><\/p>/g, "");
+}
+
+
+const RATE = { good: "Good", more: "Cut too much", less: "Still too long" };
+let B = [], INDEX = [], ratings = {}, col = null, dbReady = false;
+const cache = {};
+const store = { get(k) { try { return localStorage.getItem(k); } catch { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch {} } };
+const diffOpen = new Set(), trOpen = new Set();
+const $ = (id) => document.getElementById(id);
+const wc = (s) => String(s || "").split(/\s+/).filter(Boolean).length;
+const qwc = (s) => (String(s || "").match(/"[^"]+"/g) || []).reduce((n, m) => n + wc(m), 0);
+
+function render() {
+  const fs = $("fSec").value, show = $("fShow").value, dAll = $("fDiff").checked, tAll = $("fTr").checked;
+  const shown = B.filter((b) => (!fs || String(b.section) === fs) &&
+    (show === "all" || (show === "changed" && b.changed) || (show === "unrated" && b.changed && !(ratings[b.id] || {}).rating) ||
+     (show === "flagged" && ["more", "less"].includes((ratings[b.id] || {}).rating)) || (show === "newflag" && b.flag === "new")));
+  $("list").innerHTML = shown.length ? shown.map((b) => card(b, dAll, tAll)).join("") : `<div class="empty">No blocks match.</div>`;
+  const ch = B.filter((b) => b.changed), before = B.reduce((n, b) => n + wc(b.old), 0), after = B.reduce((n, b) => n + wc(b.text), 0);
+  const qb = B.reduce((n, b) => n + qwc(b.old), 0), qa = B.reduce((n, b) => n + qwc(b.text), 0);
+  const r = { good: 0, more: 0, less: 0 }; Object.values(ratings).forEach((x) => x.rating && r[x.rating]++);
+  $("counts").innerHTML = `<span>This chapter: <b>${ch.length}</b> of <b>${B.length}</b> blocks changed</span><span><b>${before}</b> → <b>${after}</b> words</span><span>quoted <b>${qb}</b> → <b>${qa}</b></span>`;
+  $("overall").innerHTML = `<span>All chapters: <b>${INDEX.reduce((n, c) => n + c.changed, 0)}</b> of <b>${INDEX.reduce((n, c) => n + c.blocks, 0)}</b> blocks changed</span>
+    <span><i class="dot" style="background:var(--ok)"></i>${r.good} good</span><span><i class="dot" style="background:var(--del)"></i>${r.more} cut too much</span><span><i class="dot" style="background:var(--edit)"></i>${r.less} still too long</span><span>${Object.values(ratings).filter((x) => x.note).length} notes</span>`;
+}
+
+function card(b, dAll, tAll) {
+  const d = ratings[b.id] || {}, dOn = diffOpen.has(b.id) !== dAll, tOn = trOpen.has(b.id) !== tAll;
+  const oldRaw = (b.oldTitle ? `**${b.oldTitle}**\n\n` : "") + b.old, newRaw = (b.title ? `**${b.title}**\n\n` : "") + b.text;
+  const right = b.changed ? (dOn ? unifiedDiffHtml(oldRaw, newRaw) : paras(newRaw)) : `<p class="omitted">Left as it was.</p>`;
+  const a = b.audio;
+  const dis = dbReady ? "" : "disabled";
+  return `<article class="sheet" id="s-${esc(b.id)}" data-id="${esc(b.id)}" data-status="${d.rating === "good" ? "soft" : d.rating === "more" ? "drop" : d.rating === "less" ? "edit" : ""}">
+    <div class="meta"><span>§ ${esc(b.sectionTitle)}</span><span class="num">${wc(b.old)} → ${wc(b.text)} words</span>${b.flag === "new" ? `<span class="pill edit">new flag · review on the sensitivity page</span>` : b.flag ? `<span class="pill">flag reviewed · not condensed</span>` : ""}</div>
+    <h2><span class="kind">${esc(b.kind)}</span>${b.title ? mdInline(b.title) : ""}</h2>
+    <div class="compare">
+      <div class="col"><h3>Before</h3><div class="prose">${paras(oldRaw)}</div></div>
+      <div class="col"><h3>After${b.changed ? `<button type="button" class="mini${dOn ? " on" : ""}" data-act="diff">${dOn ? "Hide changes" : "Show changes"}</button>` : ""}</h3><div class="prose${dOn ? " diffing" : ""}">${right}</div>
+        ${dOn && b.changed ? `<div class="legend"><del class="d">cut</del> <ins class="i">added</ins></div>` : ""}</div>
+    </div>
+    <div class="audio"><button type="button" class="mini${tOn ? " on" : ""}" data-act="tr">${tOn ? "Hide transcript" : "Transcript"}</button>
+      ${a.url ? `<a href="${esc(a.url)}#t=${a.start ?? 0},${a.end ?? ""}" target="_blank" rel="noopener">Listen ${fmtT(a.start)}–${fmtT(a.end)}</a>` : ""} <span class="sub">${esc(a.lecture)}</span></div>
+    ${tOn ? `<div class="trpanel"><h3>Transcript (${wc(b.said)} words)</h3><div class="said">${esc(b.said)}</div></div>` : ""}
+    ${b.changed ? `<div class="actions">${Object.entries(RATE).map(([k, l]) => `<button type="button" data-act="${k}" class="${d.rating === k ? { good: "on-soft", more: "on-drop", less: "on-edit" }[k] : ""}" ${dis}>${l}</button>`).join("")}
+      ${d.rating ? `<button type="button" data-act="clear" ${dis}>Undo</button>` : ""}</div>
+    <div class="note"><textarea id="note-${esc(b.id)}" data-note="${esc(b.id)}" rows="1" placeholder="Note (saved when you leave the box)" ${dis}>${esc(d.note || "")}</textarea></div>` : ""}
+  </article>`;
+}
+
+async function save(id, patch) {
+  if (!dbReady) return;
+  const next = { ...(ratings[id] || {}), ...patch, at: new Date().toISOString() };
+  Object.keys(next).forEach((k) => next[k] == null && delete next[k]);
+  const prev = ratings[id]; ratings[id] = next; render();
+  try { (!next.rating && !next.note) ? await col.doc(id).delete() : await col.doc(id).set(next); }
+  catch (e) { ratings[id] = prev; render(); showBanner("Couldn't save (" + (e.code || e.message) + ")."); }
+}
+function showBanner(m) { $("banner").textContent = m; $("banner").hidden = !m; }
+
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-act]"); if (!btn) return;
+  const id = btn.closest(".sheet").dataset.id, act = btn.dataset.act;
+  const flip = (s) => { s.has(id) ? s.delete(id) : s.add(id); render(); };
+  if (act === "diff") flip(diffOpen); else if (act === "tr") flip(trOpen);
+  else if (act === "clear") save(id, { rating: null }); else save(id, { rating: act });
+});
+document.addEventListener("focusout", (e) => {
+  const t = e.target; if (!t.dataset || !t.dataset.note) return;
+  const v = t.value.trim(); if (v !== ((ratings[t.dataset.note] || {}).note || "")) save(t.dataset.note, { note: v || null });
+});
+$("fSec").addEventListener("change", render); $("fShow").addEventListener("change", render);
+$("fDiff").addEventListener("change", () => { diffOpen.clear(); render(); });
+$("fTr").addEventListener("change", () => { trOpen.clear(); render(); });
+
+async function loadChapter(ch) {
+  store.set("study-compare-ch", ch);
+  if (!cache[ch]) {
+    $("list").innerHTML = `<div class="empty">Loading ${esc(ch.replace("chapter_", "chapter "))}…</div>`;
+    try { cache[ch] = await (await fetch("ch/" + ch + ".json")).json(); } catch { $("list").innerHTML = `<div class="empty">Couldn't load ${esc(ch)}.</div>`; return; }
+  }
+  B = cache[ch];
+  const secs = [...new Map(B.map((b) => [b.section, b.sectionTitle]))];
+  $("fSec").innerHTML = `<option value="">All sections</option>` + secs.map(([i, t]) => `<option value="${i}">${esc(t)}</option>`).join("");
+  render(); window.scrollTo(0, 0);
+}
+$("fCh").addEventListener("change", () => loadChapter($("fCh").value));
+
+(async function boot() {
+  try { const doc = await (await fetch("ch/index.json")).json(); INDEX = doc.chapters; $("subline").textContent = `${doc.title} · before: ${doc.before} · after: ${doc.after}`; } catch { $("list").innerHTML = `<div class="empty">Couldn't load the chapter list.</div>`; return; }
+  $("fCh").innerHTML = INDEX.map((c) => `<option value="${c.chapter}">Ch. ${c.n} · ${c.changed} changed</option>`).join("");
+  const start = store.get("study-compare-ch"); if (start && INDEX.some((c) => c.chapter === start)) $("fCh").value = start;
+  await loadChapter($("fCh").value);
+  const timer = setTimeout(() => !dbReady && showBanner("Ratings haven't loaded yet; the buttons stay off until they do."), 10000);
+  const db = window.claude ? await window.claude.use("db") : null;
+  if (!db) { clearTimeout(timer); showBanner("Ratings can't be saved in this view; you can still read every block."); return; }
+  col = db.collection("ratings");
+  col.onSnapshot((snap) => {
+    clearTimeout(timer); const n = {}; snap.docs.forEach((d) => (n[d.id] = d.data())); ratings = n;
+    if (!dbReady) { dbReady = true; showBanner(""); }
+    const a = document.activeElement; if (a && a.tagName === "TEXTAREA") return; render();
+  }, (e) => { clearTimeout(timer); showBanner("Couldn't load ratings (" + e.code + ")."); });
+})();
+</script>
