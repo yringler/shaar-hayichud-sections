@@ -1420,7 +1420,8 @@
                 ],
                 "reason": "Says the merely general meditator can fall into \"total avoda zara things, like the idiots\", of people who practise such meditation.",
                 "action": "replace",
-                "publishable": "**Until he can fall into false imaginings, like fools and those who lack *daas***."
+                "publishable": "**Until he can fall into false imaginings, like fools and those who lack *daas***.",
+                "reviewed": "2026-11-23"
               },
               "audio": [
                 {
@@ -1448,7 +1449,8 @@
                 ],
                 "reason": "Calls people who practise this kind of meditation, and have visions from it, \"total idiots\".",
                 "action": "replace",
-                "publishable": "After the tape is turned: what do such people do? They sit and meditate on the *omka d'chula*, the depth of everything, that there is a G-d and He is infinite, and they *mamash* have visions: false imaginations, of the kind the text calls foolish."
+                "publishable": "After the tape is turned: what do such people do? They sit and meditate on the *omka d'chula*, the depth of everything, that there is a G-d and He is infinite, and they *mamash* have visions: false imaginations, of the kind the text calls foolish.",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1703,7 +1705,8 @@
                 ],
                 "reason": "\"The people who say G-d is love\" points, without naming it, at another religion's creed, as an example of a mistake.",
                 "action": "replace",
-                "publishable": "**And even the whole of it is only a particular**, and taking it for the whole is still a mistake. Say that G-d is only love: then why do so many bad things happen? What happened to justice?"
+                "publishable": "**And even the whole of it is only a particular**, and taking it for the whole is still a mistake. Say that G-d is only love: then why do so many bad things happen? What happened to justice?",
+                "reviewed": "2026-11-23"
               }
             },
             {
@@ -1838,8 +1841,9 @@
                 "categories": [
                   "other-religions"
                 ],
-                "reason": "Calls the other understanding of \"the world is nothing but G-dliness\" (the world itself as G-d, as other religions or pantheism hold) idolatry.",
-                "action": "omit"
+                "reason": "Calls the other understanding of \"the world is nothing but G-dliness\" (the world itself as G-d, as other religions or pantheism hold) idolatry. The remark is the point (which reading he means), so it is published as said.",
+                "action": "keep",
+                "reviewed": "2026-11-23"
               },
               "audio": [
                 {
@@ -2108,7 +2112,8 @@
                 ],
                 "reason": "A sweeping remark about scientists as a group: they only collect details and think the details work by themselves.",
                 "action": "replace",
-                "publishable": "This is the way of anyone who learns the *pratim* and never puts them together into a *klal*: he ends up thinking the *pratim* somehow work by themselves."
+                "publishable": "This is the way of anyone who learns the *pratim* and never puts them together into a *klal*: he ends up thinking the *pratim* somehow work by themselves.",
+                "reviewed": "2026-11-23"
               }
             },
             {
