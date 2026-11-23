@@ -1,24 +1,25 @@
 /**
- * The study-beta export: data/dist/study-beta/, a trimmed and enriched copy
- * of the study guides for the lessons2 closed beta (published by the site at
- * /data/study-beta/, noindex). Unversioned and not part of dist/v1, so it
- * never reaches the Dart snapshot package.
+ * The study guides' exports, both in the v1 shape (schema/v1/study.schema.json
+ * and study-index.schema.json):
  *
- *   index.json                 which series has a guide for which chapter, and
- *                              each class's part of the chapter in seconds
- *   <series>/<chapter>.json    one guide: no word ranges, transcription ids,
- *                              terms, review questions, omissions or notes;
- *                              each phrase gets the line ids it overlaps,
- *                              and its audio is flattened to lecture/start/end
+ * - public (dist/v1/study/): the series whose series.json has `public` (the
+ *   teacher's permission), each guide in its public edition (publicView:
+ *   sensitive blocks replaced by their publishable text or left out, so no
+ *   `sensitivity` remains). Published at /data/v1/study/.
+ * - beta (dist/study-beta/v1/study/): every series, as written (`sensitivity`
+ *   kept), for the lessons2 closed beta. Published unlisted (noindex) at
+ *   /data/study-beta/v1/study/, outside dist/v1, so it never reaches the Dart
+ *   snapshot package.
+ *
+ *   study/index.json               which series has a guide for which chapter,
+ *                                  and each class's part of the chapter in seconds
+ *   study/<series>/<chapter>.json  one guide: no word ranges, transcription ids,
+ *                                  terms, review questions, omissions or notes;
+ *                                  each phrase gets the line ids it overlaps,
+ *                                  and its audio is flattened to lecture/start/end
  *
  * Only a file with no error is exported. A stale file (a chapter line edited
  * or a tape re-timed since it was written) is exported and marked `stale`.
- *
- * The public export (exportStudyPublic, dist/v1/study/) is the same shape,
- * for the series whose series.json has `public` (the teacher's permission),
- * each guide in its public edition (publicView: sensitive blocks replaced by
- * their publishable text or left out, so no `sensitivity` remains), with a
- * v1 index (schema/v1/study-index.schema.json) and no timestamp.
  */
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -39,9 +40,9 @@ import {
 } from './study.js';
 import type { StoredAlignment } from './transcripts.js';
 
-export const STUDY_BETA_SCHEMA_VERSION = 1;
+export const STUDY_SCHEMA_VERSION = 1;
 
-export interface StudyBetaLecture {
+export interface ExportLecture {
   id: string;
   /** Seconds (audio time) where the class's part on this chapter starts and ends. */
   start: number;
@@ -50,40 +51,18 @@ export interface StudyBetaLecture {
   continuesIn?: string;
 }
 
-export interface StudyBetaIndexChapter {
-  /** Path of the guide, relative to the index. */
-  file: string;
-  status: StudyChapterFile['status'];
-  /** Present (true) when the guide no longer matches the text or the timing in places. */
-  stale?: true;
-  /** The classes the guide cites, in class order. */
-  lectures: StudyBetaLecture[];
-}
-
-export interface StudyBetaIndex {
-  schemaVersion: 1;
-  generated: string;
-  series: {
-    id: string;
-    catalogSeriesId: string;
-    teacher: string;
-    title: string;
-    chapters: Record<string, StudyBetaIndexChapter>;
-  }[];
-}
-
-export interface StudyBetaAudio {
+export interface ExportAudio {
   lecture: string;
   start?: number;
   end?: number;
 }
 
-export type StudyBetaBlock = Omit<StudyBlock, 'audio'> & { audio: StudyBetaAudio[] };
+export type ExportBlock = Omit<StudyBlock, 'audio'> & { audio: ExportAudio[] };
 /**
  * A phrase as the app reads it: `en` only where the teacher translates it,
  * and then (from the phrase's `audio`) the lecture and seconds where he does.
  */
-export interface StudyBetaPhrase {
+export interface ExportPhrase {
   he: string;
   en?: string;
   lecture?: string;
@@ -92,14 +71,14 @@ export interface StudyBetaPhrase {
   notes?: string[];
   lines: string[];
 }
-export interface StudyBetaPassage {
+export interface ExportPassage {
   lines: string[];
-  phrases?: StudyBetaPhrase[];
-  blocks: StudyBetaBlock[];
+  phrases?: ExportPhrase[];
+  blocks: ExportBlock[];
   skip?: StudyPassage['skip'];
 }
 
-export interface StudyBetaChapter {
+export interface ExportChapter {
   schemaVersion: 1;
   series: string;
   chapter: string;
@@ -109,8 +88,8 @@ export interface StudyBetaChapter {
   provenance?: { method: NonNullable<StudyChapterFile['provenance']>['method'] };
   overview: string;
   /** Where the class sums the chapter up; present only when the guide cites it. */
-  overviewAudio?: StudyBetaAudio[];
-  sections: { title: string; summary: string; passages: StudyBetaPassage[] }[];
+  overviewAudio?: ExportAudio[];
+  sections: { title: string; summary: string; passages: ExportPassage[] }[];
 }
 
 const round2 = (n: number): number => Math.round(n * 100) / 100;
@@ -158,7 +137,7 @@ export function continuesIn(alignment: StoredAlignment | null, chapter: string):
  * words the site plays; without a transcript or alignment, the span of the
  * guide's own audio for the class. Null when neither is known.
  */
-export function lectureSpan(ctx: StudyContext, file: StudyChapterFile, lectureId: string): StudyBetaLecture | null {
+export function lectureSpan(ctx: StudyContext, file: StudyChapterFile, lectureId: string): ExportLecture | null {
   const t = ctx.transcript(lectureId);
   const alignment = ctx.alignment(lectureId);
   const range = t ? chapterWordRange(alignment, t.words.length, file.chapter) : null;
@@ -180,14 +159,14 @@ export function lectureSpan(ctx: StudyContext, file: StudyChapterFile, lectureId
   return { id: lectureId, start: round2(start), end: round2(end), ...(next ? { continuesIn: next } : {}) };
 }
 
-const trimAudio = (a: StudyAudio): StudyBetaAudio => ({
+const trimAudio = (a: StudyAudio): ExportAudio => ({
   lecture: a.lecture,
   ...(a.start !== undefined ? { start: a.start } : {}),
   ...(a.end !== undefined ? { end: a.end } : {}),
 });
 
 /** Copies only the fields the app reads, so a new writer-side field never leaks into the export. */
-const trimBlock = (b: StudyBlock): StudyBetaBlock => ({
+const trimBlock = (b: StudyBlock): ExportBlock => ({
   kind: b.kind,
   ...(b.title !== undefined ? { title: b.title } : {}),
   ...(b.question !== undefined ? { question: b.question } : {}),
@@ -200,10 +179,10 @@ const trimBlock = (b: StudyBlock): StudyBetaBlock => ({
 });
 
 /** One guide as the app reads it. `lines` is the chapter's lines in order. */
-export function studyBetaChapter(file: StudyChapterFile, lines: readonly Line[], stale: boolean): StudyBetaChapter {
+export function exportChapter(file: StudyChapterFile, lines: readonly Line[], stale: boolean): ExportChapter {
   const byId = new Map(lines.map((l) => [l.id, l]));
   return {
-    schemaVersion: STUDY_BETA_SCHEMA_VERSION,
+    schemaVersion: STUDY_SCHEMA_VERSION,
     series: file.series,
     chapter: file.chapter,
     title: file.title,
@@ -239,92 +218,55 @@ export function studyBetaChapter(file: StudyChapterFile, lines: readonly Line[],
   };
 }
 
-export interface StudyBetaExport {
-  index: StudyBetaIndex;
-  /** Path relative to dist/study-beta/ -> its JSON (index.json not included). */
-  files: Map<string, StudyBetaChapter>;
-  /** Study files left out because they have errors (relative to data/). */
-  skipped: string[];
-}
-
-/**
- * Builds the export from data/study/. `issues` are checkStudy's for the same
- * directory: a file with an error (or whose series.json has one) is left out.
- */
-export function exportStudyBeta(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], generated = new Date().toISOString(), schemaDir?: string): StudyBetaExport {
-  const index: StudyBetaIndex = { schemaVersion: STUDY_BETA_SCHEMA_VERSION, generated, series: [] };
-  const files = new Map<string, StudyBetaChapter>();
-  const skipped: string[] = [];
-  if (!existsSync(path.join(dataDir, 'study'))) return { index, files, skipped };
-
-  const levels = new Map<string, Set<string>>();
-  for (const i of issues) levels.set(i.file, (levels.get(i.file) ?? new Set()).add(i.level));
-  const loaded = loadStudy(dataDir, schemaDir);
-  for (const s of loaded.series) {
-    const seriesOk = s.data !== null && !levels.get(s.file)?.has('error');
-    const chapters: Record<string, StudyBetaIndexChapter> = {};
-    for (const ch of s.chapters) {
-      const lines = ctx.chapterLines(ch.key);
-      if (!seriesOk || !ch.data || !lines || levels.get(ch.file)?.has('error')) {
-        skipped.push(ch.file);
-        continue;
-      }
-      const stale = levels.get(ch.file)?.has('stale') ?? false;
-      const rel = `${s.id}/${ch.key}.json`;
-      files.set(rel, studyBetaChapter(ch.data, lines, stale));
-      chapters[ch.key] = {
-        file: rel,
-        status: ch.data.status,
-        ...(stale ? { stale: true as const } : {}),
-        lectures: ch.data.lectures.flatMap((l) => lectureSpan(ctx, ch.data!, l.id) ?? []),
-      };
-    }
-    if (!seriesOk) continue;
-    const series = s.data as StudySeriesFile;
-    index.series.push({ id: series.id, catalogSeriesId: series.catalogSeriesId, teacher: series.teacher, title: series.title, chapters });
-  }
-  return { index, files, skipped };
-}
-
-/** dist/v1/study/index.json (schema/v1/study-index.schema.json). */
-export interface StudyPublicIndex {
+/** An export's study/index.json (schema/v1/study-index.schema.json). */
+export interface StudyIndex {
   schemaVersion: 1;
   series: {
     id: string;
     catalogSeriesId: string;
     teacher: string;
     title: string;
-    chapters: { chapter: string; path: string; status: StudyChapterFile['status']; stale?: true; lectures: StudyBetaLecture[] }[];
+    chapters: { chapter: string; path: string; status: StudyChapterFile['status']; stale?: true; lectures: ExportLecture[] }[];
   }[];
 }
 
-export interface StudyPublicExport {
-  index: StudyPublicIndex;
-  /** Path relative to dist/v1/ (`study/<series>/<chapter>.json`) -> its JSON (schema/v1/study.schema.json). */
-  files: Map<string, StudyBetaChapter>;
+export interface StudyExport {
+  index: StudyIndex;
+  /** Path relative to the edition's root (`study/<series>/<chapter>.json`) -> its JSON (schema/v1/study.schema.json). */
+  files: Map<string, ExportChapter>;
+  /** Study files of the edition's series left out because they have errors (relative to data/). */
+  skipped: string[];
 }
 
+/** public: the series allowed publication, in their public edition. beta: every series, as written. */
+export type StudyEdition = 'public' | 'beta';
+
 /**
- * The public study guides, for dist/v1/study/: only series with `public` in
- * series.json, only files with no error (stale ones marked), each in its
- * public edition.
+ * One edition of the study guides from data/study/. `issues` are
+ * checkStudy's for the same directory: a file with an error (or whose
+ * series.json has one) is left out; a stale one is marked.
  */
-export function exportStudyPublic(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], schemaDir?: string): StudyPublicExport {
-  const index: StudyPublicIndex = { schemaVersion: 1, series: [] };
-  const files = new Map<string, StudyBetaChapter>();
-  if (!existsSync(path.join(dataDir, 'study'))) return { index, files };
+export function exportStudy(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], edition: StudyEdition, schemaDir?: string): StudyExport {
+  const index: StudyIndex = { schemaVersion: STUDY_SCHEMA_VERSION, series: [] };
+  const files = new Map<string, ExportChapter>();
+  const skipped: string[] = [];
+  if (!existsSync(path.join(dataDir, 'study'))) return { index, files, skipped };
   const levels = new Map<string, Set<string>>();
   for (const i of issues) levels.set(i.file, (levels.get(i.file) ?? new Set()).add(i.level));
   for (const s of loadStudy(dataDir, schemaDir).series) {
     const series = s.data as StudySeriesFile | null;
-    if (!series?.public || levels.get(s.file)?.has('error')) continue;
-    const chapters: StudyPublicIndex['series'][number]['chapters'] = [];
+    if (series && edition === 'public' && !series.public) continue;
+    const seriesOk = series !== null && !levels.get(s.file)?.has('error');
+    const chapters: StudyIndex['series'][number]['chapters'] = [];
     for (const ch of [...s.chapters].sort((a, b) => a.key.localeCompare(b.key))) {
       const lines = ctx.chapterLines(ch.key);
-      if (!ch.data || !lines || levels.get(ch.file)?.has('error')) continue;
+      if (!seriesOk || !ch.data || !lines || levels.get(ch.file)?.has('error')) {
+        skipped.push(ch.file);
+        continue;
+      }
       const stale = levels.get(ch.file)?.has('stale') ?? false;
       const rel = `study/${s.id}/${ch.key}.json`;
-      files.set(rel, studyBetaChapter(publicView(ch.data), lines, stale));
+      files.set(rel, exportChapter(edition === 'public' ? publicView(ch.data) : ch.data, lines, stale));
       chapters.push({
         chapter: ch.key,
         path: rel,
@@ -333,7 +275,8 @@ export function exportStudyPublic(dataDir: string, ctx: StudyContext, issues: re
         lectures: ch.data.lectures.flatMap((l) => lectureSpan(ctx, ch.data!, l.id) ?? []),
       });
     }
+    if (!seriesOk) continue;
     index.series.push({ id: series.id, catalogSeriesId: series.catalogSeriesId, teacher: series.teacher, title: series.title, chapters });
   }
-  return { index, files };
+  return { index, files, skipped };
 }

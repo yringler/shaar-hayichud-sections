@@ -12,7 +12,7 @@ Hayichud comes from this directory :
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
-| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). The public edition of series whose teacher allowed it is published in `dist/v1/study/`; an unlisted beta copy of all of them is written to `dist/study-beta/` | writers (people or agents), `yarn study-fill` |
+| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). The public edition of series whose teacher allowed it is published in `dist/v1/study/`; an unlisted beta copy of all of them, as written and in the same shape, is written to `dist/study-beta/v1/study/` | writers (people or agents), `yarn study-fill` |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
@@ -602,9 +602,9 @@ separate demo (`yringler/shaarhayichudstudydemo`); here it is data, written
 by people or by agents (`.claude/skills/study-chapter/`), checked by the data
 build, and published in two ways: the [public edition](#public-study-guides-v1study)
 of a series whose teacher has allowed it (`"public"` in its `series.json`)
-goes into `dist/v1/study/`, and every series goes into the unlisted,
-unversioned [beta export](#the-study-beta-export) for the lessons2 closed
-beta. Neither is in the Dart snapshot package.
+goes into `dist/v1/study/`, and every series, as written, goes into the
+unlisted [beta export](#the-study-beta-export) for the lessons2 closed beta,
+in the same shape. Neither is in the Dart snapshot package.
 
 ```
 study/
@@ -726,62 +726,63 @@ and a study file that passes every check).
 `{ "he": "…", "en": "…", "audio": … }` with the Hebrew copied from the
 chapter, and stamps phrase `audio` seconds as it does blocks'.
 
-### The study-beta export
-
-`yarn build-data` also writes `dist/study-beta/` (`tools/src/study-export.ts`),
-which the site publishes at `/data/study-beta/` with `X-Robots-Tag: noindex`.
-It is deliberately not disallowed in a `robots.txt`: a crawler that obeys a
-Disallow never fetches the files, so it never sees their `noindex`, and a
-disallowed URL linked from elsewhere can still be indexed by its URL alone. It is for the lessons2 closed beta only: not part
-of `v1`, not in `dist/v1/index.json`, never in the snapshot package, and its
-shape may change (`schemaVersion` is bumped when it breaks). Only files with
-no error are exported; a stale file is exported with `"stale": true`.
-
-- `index.json`: `{ schemaVersion: 1, generated, series: [{ id, catalogSeriesId,
-  teacher, title, chapters: { chapter_09: { file, status, stale?, lectures:
-  [{ id, start, end, continuesIn? }] } } }] }`. A lecture's `start`/`end` are
-  its part of the chapter in seconds (`chapterWordRange`, timed with the
-  words the site plays; without an alignment, the span of the guide's own
-  audio). `continuesIn` is the chapter the class reads on into, from its
-  alignment.
-- `<series>/<chapter>.json`: `schemaVersion`, `series`, `chapter`, `title`,
-  `status`, `stale?`, `provenance: { method }`, `overview`, `overviewAudio?`
-  (where the class sums the chapter up, `{ lecture, start, end }[]`) and `sections` →
-  `passages` (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains
-  `lines`: the line IDs whose text it overlaps, by character offsets into the
-  passage's lines joined by spaces; `en` is present only where the teacher
-  translates the phrase, and then its `audio` becomes `lecture`, `start` and
-  `end` on the phrase. Block `audio` is `{ lecture, start, end }`;
-  `sensitivity`, `outOfPlace` and phrase `notes` are kept. Word ranges,
-  `lectures`/`transcriptionId`, provenance details, `terms`,
-  `reviewQuestions`, `omitted` and `notes` are dropped. Fields are copied
-  from a whitelist, so a new writer-side field does not leak.
-
-Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
-trimming, stale and erroring files).
-
 ### Public study guides (`v1/study/`)
 
 A series is public when its `series.json` has `public`: who gave permission
 and when (`{ "permission": "…", "date": "YYYY-MM-DD" }`). Set it only on the
-teacher's word. `yarn build-data` then writes, beside the rest of `v1`
-(`exportStudyPublic` in `tools/src/study-export.ts`):
+teacher's word. `yarn build-data` then writes its guides, beside the rest of
+`v1` (`exportStudy(…, 'public')` in `tools/src/study-export.ts`):
 
 - `study/index.json` (`schema/v1/study-index.schema.json`): `{ schemaVersion,
   series: [{ id, catalogSeriesId, teacher, title, chapters: [{ chapter, path,
   status, stale?, lectures: [{ id, start, end, continuesIn? }] }] }] }`, the
-  chapters in order, `path` relative to `/data/v1/`. Unlike the beta index it
-  has no timestamp, so an unchanged build is byte-identical.
-- `study/<series>/chapter_NN.json` (`schema/v1/study.schema.json`): the beta
-  export's shape, of the guide's **public edition** (`publicView()`): a block
-  with `sensitivity` is replaced by its `publishable` text (and
+  chapters in order, `path` relative to the edition's root (`/data/v1/`). A
+  lecture's `start`/`end` are its part of the chapter in seconds
+  (`chapterWordRange`, timed with the words the site plays; without an
+  alignment, the span of the guide's own audio). `continuesIn` is the chapter
+  the class reads on into, from its alignment. No timestamp, so an unchanged
+  build is byte-identical.
+- `study/<series>/chapter_NN.json` (`schema/v1/study.schema.json`):
+  `schemaVersion`, `series`, `chapter`, `title`, `status`, `stale?`,
+  `provenance: { method }`, `overview`, `overviewAudio?` (where the class sums
+  the chapter up, `{ lecture, start, end }[]`) and `sections` → `passages`
+  (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains `lines`: the
+  line IDs whose text it overlaps, by character offsets into the passage's
+  lines joined by spaces; `en` is present only where the teacher translates
+  the phrase, and then its `audio` becomes `lecture`, `start` and `end` on
+  the phrase. Block `audio` is `{ lecture, start, end }`; `outOfPlace` and
+  phrase `notes` are kept. Word ranges, `lectures`/`transcriptionId`,
+  provenance details, `terms`, `reviewQuestions`, `omitted` and `notes` are
+  dropped. Fields are copied from a whitelist, so a new writer-side field
+  does not leak.
+- Each guide is in its **public edition** (`publicView()`): a block with
+  `sensitivity` is replaced by its `publishable` text (and
   `publishableTitle`), or dropped when its action is `omit`, so no
   `sensitivity` is published.
 
-As with the beta, only files with no error are written and a stale one is
-marked `stale`. The build validates both against their v1 schemas, and the
-Dart package has models for them (`StudyIndex`, `StudyGuide`). The Dart
-snapshot package does not bundle them: the app fetches them.
+Only files with no error are written; a stale one is marked `"stale": true`.
+The build validates the files against the v1 schemas, and the Dart package
+has models for them (`StudyIndex`, `StudyGuide`), which lessons2 reads both
+editions with. The Dart snapshot package does not bundle them: the app
+fetches them.
+
+### The study-beta export
+
+`yarn build-data` also writes `dist/study-beta/v1/study/`
+(`exportStudy(…, 'beta')`), which the site publishes at
+`/data/study-beta/v1/study/` with `X-Robots-Tag: noindex`. It is the same
+shape as `v1/study/` (the same schemas, validated by the build), with every
+series, permitted or not, each guide **as written**: blocks keep their
+`sensitivity` (optional in the v1 schema, and only ever present here). It is
+for the lessons2 closed beta only: not part of `v1`, not in
+`dist/v1/index.json` and never in the snapshot package.
+
+It is deliberately not disallowed in a `robots.txt`: a crawler that obeys a
+Disallow never fetches the files, so it never sees their `noindex`, and a
+disallowed URL linked from elsewhere can still be indexed by its URL alone.
+
+Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
+trimming, both editions, stale and erroring files).
 
 ### State (November 2026)
 
