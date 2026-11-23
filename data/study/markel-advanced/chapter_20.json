@@ -17,10 +17,6 @@
     {
       "id": "029 Tape025-Side1-Ch19.mp3",
       "transcriptionId": "27551daa-c239-46bd-ba1d-b6bde555a13e"
-    },
-    {
-      "id": "031 Tape026-Side1-Ch20.mp3",
-      "transcriptionId": "3eb67380-37e6-4502-8d28-db397cb47de6"
     }
   ],
   "overview": "Before the details of the ten sefiros of *Atzilus*, the chapter sets out three levels, *nekuda*, *sefira* and *partzuf*, read in class as *akudim*, *nekudim* and *brudim*. In *Tohu* each attribute is a point: a revealed will for one particular kindness, with no reason and only one way. It has ten sefiros, but they do not divide, and it cannot meet its opposite: kindness has to die before judgement can reign, as in principle Beis Shammai still disagree with Beis Hillel.\n\nIn *Tikkun* the attribute goes out of itself into a spreading that answers to the thing outside it. That is the composite, *murkav*: a cruel man kind to the one who saved him, a kind man harsh to his enemy, love and hate for one person, a compromise that gets something done. G-d is angry with Shlomo and glad with him at once, and destroys the world, and later spares it, because people are bad. Rabbi Markel's examples are blunt: the enemy at war, the offender let out again, the fanatic and the missionary at the door. Fire and water mix only in vessels; in the lights themselves there is no mercy in judgement.",
@@ -1109,7 +1105,8 @@
                   "start": 58.1,
                   "end": 92.84
                 }
-              ]
+              ],
+              "outOfPlace": "The next tape takes up line 35 where 030 stopped, explaining Shaul and the Givonim without rereading the line."
             }
           ]
         },
@@ -1292,7 +1289,8 @@
                   "start": 229.92,
                   "end": 266.06
                 }
-              ]
+              ],
+              "outOfPlace": "He first reads lines 41-42 here (029 w574-629); the alignment marks only his rereading of them at w1148."
             },
             {
               "kind": "mashal",
@@ -1306,6 +1304,7 @@
                   "end": 392.44
                 }
               ],
+              "outOfPlace": "His example for lines 41-42, between his first reading of them (029 w574) and the rereading the alignment marks (w1148).",
               "sensitivity": {
                 "categories": [
                   "named-person",
@@ -1772,23 +1771,21 @@
       "note": "\"Hold on for a minute. Hello?\""
     },
     {
-      "lecture": "031 Tape026-Side1-Ch20.mp3",
-      "words": [0, 4038],
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [0, 78],
       "reason": "other-chapter",
-      "note": "The whole tape is a class on chapter 21 (\"Okay, chapter 21\"), from its opening line through the twelve diagonal lines; it belongs to chapter 21's file. The catalog files it under chapter 20, and the alignment puts chapter 20's lines 38-40 in it by mistake."
+      "note": "The head of the tape: the opening lines of chapter 19, read without comment."
+    },
+    {
+      "lecture": "029 Tape025-Side1-Ch19.mp3",
+      "words": [3416, 3435],
+      "reason": "logistics",
+      "note": "\"All right. Okay, be well... So did that make sense?\" The end of the class on chapter 20; chapter 19 resumes after it."
     }
   ],
   "notes": [
     {
-      "text": "Class 031 (\"031 Tape026-Side1-Ch20\", catalog chapter 20) is a class on chapter 21, not 20: it opens \"Okay, כ״א\" and reads chapter 21 from its first line (hs265b6q) through the middle line and the twelve diagonal lines, about chapter 21's lines 1-23 (chapter 21's dump shows those lines as NOT READ). The alignment's marks for chapter 20's lines 38-40 in 031 (conf 0.38, 0.6, 0.6) fall on chapter 21's own wording. The whole tape is listed in \"omitted\" as other-chapter; it needs to be tied to chapter 21 (catalog or series.json chapterLectures) and its chapter 20 alignment removed.",
-      "lines": [
-        "h5eopk64",
-        "x7tx4okt",
-        "e4gyz4gv"
-      ]
-    },
-    {
-      "text": "Lines 35 (from Shaul) to 48 are taught on tape 029 (\"029 Tape025-Side1-Ch19\"), words 79-3415, which the catalog files under chapter 19; chapter 19's file lists that stretch as other-chapter. This file cites it. 029 has no alignment marks for chapter 20, and series.json has no chapterLectures entry tying 029 to chapter_20, so study-dump for chapter 20 does not show it (it was read through the chapter 19 dump). Though numbered 029, it is recorded after 030: it takes up the line where 030 stops.",
+      "text": "Lines 35 (from Shaul) to 48 are taught on tape 029 (\"029 Tape025-Side1-Ch19\"), words 79-3415, which the catalog files under chapter 19. Though numbered 029, it was recorded after 030: it takes up line 35 where 030 stops. Tape 031, also filed under chapter 20, is a class on chapter 21 and is not used here.",
       "lines": [
         "5sk72j6g",
         "tmmdtpfq",
