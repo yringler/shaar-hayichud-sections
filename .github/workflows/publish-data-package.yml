@@ -4,12 +4,17 @@
 # stored secret): pub.dev admin → Automated publishing → this repository,
 # tag pattern shaar_hayichud_data-v{{version}}, environment pub.dev.
 # Tags pushed with GITHUB_TOKEN don't start workflows: push the tag yourself.
+#
+# It can also be run by hand (Actions tab -> Run workflow) to retry a publish, with "Use workflow
+# from" set to the tag, not a branch: pub.dev checks the run's ref against the tag pattern. That
+# needs "Enable publishing with workflow_dispatch events" ticked in pub.dev's Automated publishing.
 name: Publish shaar_hayichud_data
 
 on:
   push:
     tags:
       - 'shaar_hayichud_data-v[0-9]+.[0-9]+.[0-9]+*'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,6 +26,13 @@ jobs:
     timeout-minutes: 15
     environment: pub.dev
     steps:
+      - name: Check it runs on a release tag
+        run: |
+          if [ "$GITHUB_REF_TYPE" != tag ] || [[ "$GITHUB_REF_NAME" != shaar_hayichud_data-v* ]]; then
+            echo "::error::Run this from a shaar_hayichud_data-v<version> tag (\"Use workflow from\" -> Tags), not $GITHUB_REF_TYPE $GITHUB_REF_NAME." >&2
+            exit 1
+          fi
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
