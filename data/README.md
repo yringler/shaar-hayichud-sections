@@ -781,10 +781,8 @@ fetches them.
 shape as `v1/study/` (the same schemas, validated by the build), with every
 series, permitted or not, each guide **as written**: blocks keep their
 `sensitivity` (optional in the v1 schema, and only ever present here),
-without `reviewed`. The v1 schema knows only `replace` and `omit` (and
-`shaar_hayichud_data` 1.7.0 rejects any other action), so a `keep` flag is
-exported as `replace` with `publishable` equal to the block's own text,
-which is what it means for a public build. It is
+without `reviewed`. `keep` is in the v1 schema from `shaar_hayichud_data`
+1.8.0; 1.7.0 rejects a guide that has it. It is
 for the lessons2 closed beta only: not part of `v1`, not in
 `dist/v1/index.json` and never in the snapshot package.
 

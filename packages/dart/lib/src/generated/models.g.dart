@@ -153,7 +153,8 @@ enum StudyGuideSensitivityCategory {
 
 enum StudyGuideSensitivityAction {
   replace("replace"),
-  omit("omit");
+  omit("omit"),
+  keep("keep");
 
   const StudyGuideSensitivityAction(this.json);
 
@@ -1636,7 +1637,7 @@ final class StudyGuidePhrase {
   String toString() => 'StudyGuidePhrase(${toJson()})';
 }
 
-/// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
+/// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace), leaves it out (action omit), or prints it as written (action keep: flagged, but cleared for publication).
 final class StudyGuideSensitivity {
   const StudyGuideSensitivity({
     required this.categories,
@@ -1682,7 +1683,7 @@ final class StudyGuideSensitivity {
 
   final StudyGuideSensitivityAction action;
 
-  /// Alternate text that keeps the point and drops what the reason names; present with action replace.
+  /// Alternate text that keeps the point and drops what the reason names; present with action replace only.
   final String? publishable;
 
   final String? publishableTitle;
@@ -1790,7 +1791,7 @@ final class StudyGuideBlock {
   /// Why the main audio is far from where the class reads the passage's lines.
   final String? outOfPlace;
 
-  /// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
+  /// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace), leaves it out (action omit), or prints it as written (action keep: flagged, but cleared for publication).
   final StudyGuideSensitivity? sensitivity;
 
   Map<String, Object?> toJson() => {

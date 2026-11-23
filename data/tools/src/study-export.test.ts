@@ -92,14 +92,14 @@ describe('exportStudy, beta edition', () => {
     assert.deepEqual([...out.files.keys()], [REL]);
   });
 
-  it("writes a 'keep' flag as a replace with its own text, which v1 readers know", () => {
+  it("writes a 'keep' flag as it is, without the review stamp", () => {
     const dir = fixtureWith((f) => {
       const b = f.sections[0]!.passages[1]!.blocks[0]!;
       b.sensitivity = { categories: ['other-religions'], reason: 'r', action: 'keep', reviewed: '2026-11-23' };
     });
     const ch = run(dir).files.get(REL)!;
     const b = ch.sections[0]!.passages[1]!.blocks[0]!;
-    assert.deepEqual(b.sensitivity, { categories: ['other-religions'], reason: 'r', action: 'replace', publishable: b.text });
+    assert.deepEqual(b.sensitivity, { categories: ['other-religions'], reason: 'r', action: 'keep' });
     assert.deepEqual(new SchemaSet(path.join(DATA_DIR, 'schema', 'v1')).validate('study', ch), []);
   });
 

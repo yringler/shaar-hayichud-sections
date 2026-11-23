@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.8.0
+
+- `StudyGuideSensitivityAction.keep`: a flagged block a public build prints
+  as written (flagged so beta readers see the note, but cleared for
+  publication; no `publishable`). Only in the beta export, like the rest of
+  `sensitivity`. 1.7.0 throws a `FormatException` on a guide that has it.
+
 ## 1.7.0
 
 - `StudyGuideBlock.sensitivity` (`StudyGuideSensitivity`: categories,
