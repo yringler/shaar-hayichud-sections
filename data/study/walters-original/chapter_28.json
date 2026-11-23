@@ -1299,7 +1299,7 @@
             },
             {
               "kind": "aside",
-              "text": "\"So, that's how you show your Shmuel-ness, right?\" You show your personality and everything. And G-d shows it by showing how He uses the same ten *sefiros*.",
+              "text": "That is how you show who you are: you show your personality and everything. And G-d shows it by showing how He uses the same ten *sefiros*.",
               "audio": [
                 {
                   "lecture": "50 - Chap- 28-4 Oros and Keilim (N).mp3",
@@ -1307,15 +1307,7 @@
                   "start": 500.38,
                   "end": 509.54
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names a student in the class (Shmuel).",
-                "action": "replace",
-                "publishable": "That is how you show who you are: you show your personality and everything. And G-d shows it by showing how He uses the same ten *sefiros*."
-              }
+              ]
             },
             {
               "kind": "keyPoint",
@@ -1691,7 +1683,7 @@
             },
             {
               "kind": "explanation",
-              "text": "Just as \"I point to your body and say, oh, that's Shmuel,\" because your soul is in that vessel, so G-d reveals Himself through these vessels as if that is who He is, and it becomes a *yeshus*. That is the source of the perception of bad, as was explained a little.",
+              "text": "Just as I point to a person's body and say his name, because his soul is in that vessel, so G-d reveals Himself through these vessels as if that is who He is, and it becomes a *yeshus*. That is the source of the perception of bad, as was explained a little.",
               "audio": [
                 {
                   "lecture": "51 - Chap- 28-5 Oros and Keilim (N).mp3",
@@ -1700,15 +1692,7 @@
                   "end": 544.23
                 }
               ],
-              "join": true,
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names a student in the class (Shmuel).",
-                "action": "replace",
-                "publishable": "Just as I point to a person's body and say his name, because his soul is in that vessel, so G-d reveals Himself through these vessels as if that is who He is, and it becomes a *yeshus*. That is the source of the perception of bad, as was explained a little."
-              }
+              "join": true
             }
           ]
         }
@@ -2560,7 +2544,7 @@
             {
               "kind": "story",
               "title": "The nephew's wedding",
-              "text": "Most people do not appreciate this and are not doing it on purpose. They are just copying the Rebbe, like a little kid who puts on his father's clothes. His nephew likes to dress up. The other day Rabbi Walters came there and he had his father's hat on and his Shabbos suit. Asked what he was all dressed up for, he said he is having a wedding. \"So that's like kind of what it's like for most people, they're just copying the Rebbe.\"",
+              "text": "Most people do not appreciate this and are not doing it on purpose. They are just copying the Rebbe, like a little kid who puts on his father's hat and his Shabbos suit and, asked what he is all dressed up for, says he is having a wedding. \"So that's like kind of what it's like for most people, they're just copying the Rebbe.\"",
               "audio": [
                 {
                   "lecture": "54 - Chap- 28-8 Oros and Keilim (N) (End).mp3",
@@ -2572,10 +2556,9 @@
               "outOfPlace": "Class 54, the chapter's last tape, reads no line: it goes on with the difference between a kli and a tikun (lines 33-41), and is placed under the chapter's last line.",
               "sensitivity": {
                 "categories": [
-                  "private",
                   "other-groups"
                 ],
-                "reason": "Tells about his nephew, and says that most people who dress as chassidim are just copying the Rebbe like a child dressing up.",
+                "reason": "Says most people are just copying the Rebbe without appreciating it, a remark about a group.",
                 "action": "replace",
                 "publishable": "Clothes can be worn without appreciating what they are for, just copying, like a little child who wants to dress up and puts on his father's hat and his Shabbos suit, and when you ask him what he is all dressed up for, he says he is having a wedding."
               }
@@ -3123,6 +3106,9 @@
         "uzlsvl5e",
         "4ka2zgeb"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

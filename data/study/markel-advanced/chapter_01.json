@@ -1727,7 +1727,7 @@
             {
               "kind": "mashal",
               "title": "The doctor who went through the length",
-              "text": "It also works vice versa: you don't get to the depth by concentrating on it, only *davka* by going through the length and the width. A doctor who learned for seven years knows more about medicine than he did: all the explanations, where all the bones and organs are. \"Sometimes I consult her about things in *Chassidus*, like where it talks about the liver\", or how the brain is made, because she knows the physical makeup. Why? \"Because she's a doctor. She went through the length.\"",
+              "text": "It also works vice versa: you don't get to the depth by concentrating on it, only *davka* by going through the length and the width. A doctor who learned for seven years knows more about medicine than a layman: all the explanations, where all the bones and organs are. When *Chassidus* talks about the liver, or how the brain is made, a doctor can explain the physical makeup. Why? Because a doctor went through the length.",
               "audio": [
                 {
                   "lecture": "016 Tape001-Side2-Ch1.mp3",
@@ -1735,16 +1735,7 @@
                   "start": 577.66,
                   "end": 637.16
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Mentions a woman doctor he consults about Chassidus, apparently someone close to him.",
-                "action": "replace",
-                "publishable": "It also works vice versa: you don't get to the depth by concentrating on it, only *davka* by going through the length and the width. A doctor who learned for seven years knows more about medicine than a layman: all the explanations, where all the bones and organs are. When *Chassidus* talks about the liver, or how the brain is made, a doctor can explain the physical makeup. Why? Because a doctor went through the length.",
-                "publishableTitle": "The doctor who went through the length"
-              }
+              ]
             },
             {
               "kind": "aside",
@@ -2254,7 +2245,7 @@
             },
             {
               "kind": "aside",
-              "text": "like women, whose *daas* is light. It doesn't mean some women don't have a stronger *daas* than certain men. Take a frum woman like the student's wife: if she says, \"What do you mean I have a light *daas*?\", most men don't have as heavy a *daas* as she does, because she's a frum lady into learning, not like some guy into rock and roll. But \"we're talking in terms of people who are on the same level\": look at that guy's girlfriend and her *daas* is even lighter than his. \"Look at her, she has a bigger *daas* than you did,\" you say of the wife of one of the great rabbis. \"Yeah, but if you look at her in comparison to her husband, it might not be like that. It's according to the level.\"",
+              "text": "like women, whose *daas* is light. It doesn't mean some women don't have a stronger *daas* than certain men. Take a frum woman who is into learning: if she says, \"What do you mean I have a light *daas*?\", most men don't have as heavy a *daas* as she does; she is not like some guy into rock and roll. But \"we're talking in terms of people who are on the same level\": look at that guy's girlfriend and her *daas* is even lighter than his. Or the wife of one of the great rabbis: \"Look at her, she has a bigger *daas* than you did.\" \"Yeah, but if you look at her in comparison to her husband, it might not be like that. It's according to the level.\"",
               "audio": [
                 {
                   "lecture": "017 Tape002-Side1-Ch1.mp3",
@@ -2265,10 +2256,9 @@
               ],
               "sensitivity": {
                 "categories": [
-                  "women",
-                  "private"
+                  "women"
                 ],
-                "reason": "Explains \"women, whose daas is light\" with comparisons between women and men (the rock-and-roll guy's girlfriend, a Rebbetzin and her husband), and brings in the student's wife.",
+                "reason": "Compares the daas of women and men in his own examples beyond the line's words.",
                 "action": "replace",
                 "publishable": "**like women, whose *daas* is light**. It doesn't mean there aren't some women who have a stronger *daas* than certain men; we're talking about people on the same level. It's according to the level."
               }
@@ -3072,6 +3062,9 @@
       "lines": [
         "t3kfsj3c"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

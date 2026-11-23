@@ -1928,7 +1928,7 @@
             {
               "kind": "mashal",
               "title": "A name and a title",
-              "text": "**The real thing of Shem Havaya** (the four-letter Name) **is really the shem ha'etzem** (the proper name), **that's G-d's name.** Some names are titles: father, son, doctor, teacher. Then there is your name: \"your name is Shmuel. That's just your name.\" Shmuel also means something, \"G-d listened to my prayer\": Chana's prayer for a child was answered. So in a way it is a title, but that is not the main thing: it is just who you are.\n\nThe same with *Havaya*: it connotes *haya hoveh v'yihyeh* (He was, He is and He will be), and *mehaveh*, constantly creating, but that is not the real idea. It is just G-d's name, like \"G-d\" in English.",
+              "text": "The real thing of *Shem Havaya* (the four-letter Name) is the *shem ha'etzem* (the proper name): it is G-d's name. Some names are titles: father, son, doctor, teacher. Then there is your own name. A name like Shmuel also means something, \"G-d listened to my prayer\": Chana's prayer for a child was answered. So in a way it is a title, but that is not the main thing: it is just who you are.\n\nThe same with *Havaya*: it connotes *haya hoveh v'yihyeh* (He was, He is and He will be), and *mehaveh*, constantly creating, but that is not the real idea. It is just G-d's name, like \"G-d\" in English.",
               "audio": [
                 {
                   "lecture": "60 - Chap- 29-4 Gvul biKoach and Gvul biPoel.mp3",
@@ -1936,15 +1936,7 @@
                   "start": 512.31,
                   "end": 585.24
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Uses the name of a student in the class (Shmuel) as the example.",
-                "action": "replace",
-                "publishable": "The real thing of *Shem Havaya* (the four-letter Name) is the *shem ha'etzem* (the proper name): it is G-d's name. Some names are titles: father, son, doctor, teacher. Then there is your own name. A name like Shmuel also means something, \"G-d listened to my prayer\": Chana's prayer for a child was answered. So in a way it is a title, but that is not the main thing: it is just who you are.\n\nThe same with *Havaya*: it connotes *haya hoveh v'yihyeh* (He was, He is and He will be), and *mehaveh*, constantly creating, but that is not the real idea. It is just G-d's name, like \"G-d\" in English."
-              }
+              ]
             }
           ]
         },
@@ -2729,6 +2721,9 @@
         "wmhshpe5",
         "ew6yxhgl"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

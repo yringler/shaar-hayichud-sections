@@ -2162,8 +2162,8 @@
             },
             {
               "kind": "story",
-              "title": "The grandson who found an aleph",
-              "text": "It is like Rabbi Markel's grandson, Shuli. At two or three he started catching on to letters. Rabbi Markel would be reading a book, even one as complicated as *Shaar HaYichud* or *Ayin Beis*, or a *Chumash*, and the boy would look and say, \"Oh, look, an *aleph*!\" He knows the *aleph* just like his grandfather does. That is all they understand over there: a tiny little letter. Never mind the *inyan*; not the sentence, not even a word. It is the same as Shuli understanding that this is an *aleph*. \"Oh, here's another *aleph*!\" But to his grandfather these are two different *alephs*: each is in another word, and that word is part of a whole other *inyan*. \"So it's a whole different *aleph*.\"",
+              "title": "The child who found an aleph",
+              "text": "It is like a small child who is just starting to catch on to letters. You are reading a book, even one as complicated as *Shaar HaYichud* or *Ayin Beis*, or a *Chumash*, and the child looks and says, \"Oh, look, an *aleph*!\" He knows the *aleph* just like you do. That is all they understand over there: a tiny little letter. Never mind the *inyan*; not the sentence, not even a word. It is the same as the child understanding that this is an *aleph*. \"Oh, here's another *aleph*!\" But to the grown-up reading the book these are two different *alephs*: each is in another word, and that word is part of a whole other *inyan*. \"So it's a whole different *aleph*.\"",
               "audio": [
                 {
                   "lecture": "055 Tape012-Side2-Ch7.mp3",
@@ -2172,16 +2172,7 @@
                   "end": 647.7
                 }
               ],
-              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage.",
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names the teacher's small grandson (Shuli) and tells a family anecdote about him.",
-                "action": "replace",
-                "publishable": "It is like a small child who is just starting to catch on to letters. You are reading a book, even one as complicated as *Shaar HaYichud* or *Ayin Beis*, or a *Chumash*, and the child looks and says, \"Oh, look, an *aleph*!\" He knows the *aleph* just like you do. That is all they understand over there: a tiny little letter. Never mind the *inyan*; not the sentence, not even a word. It is the same as the child understanding that this is an *aleph*. \"Oh, here's another *aleph*!\" But to the grown-up reading the book these are two different *alephs*: each is in another word, and that word is part of a whole other *inyan*. \"So it's a whole different *aleph*.\"",
-                "publishableTitle": "The child who found an aleph"
-              }
+              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage."
             },
             {
               "kind": "explanation",
@@ -2212,7 +2203,7 @@
             {
               "kind": "mashal",
               "title": "Any book will do",
-              "text": "Their understanding is all points, points: *mamash* the same as Shuli. For Shuli it does not matter where you open the book: \"There's an *aleph*, look!\" Anywhere, he finds little things he knows and gets a big pleasure out of it: \"Oh, *beis*!\" \"Oh, look, an *ayin*!\" Nor does it matter which book. Open *Imrei Bina*, he understands just as well; open *Yedios Achronos*, the same thing: here is an *aleph* and here is a *beis*.",
+              "text": "Their understanding is all points, points: *mamash* the same as the small child. For him it does not matter where you open the book: \"There's an *aleph*, look!\" Anywhere, he finds little things he knows and gets a big pleasure out of it: \"Oh, *beis*!\" \"Oh, look, an *ayin*!\" Nor does it matter which book. Open *Imrei Bina*, he understands just as well; open *Yedios Achronos*, the same thing: here is an *aleph* and here is a *beis*.",
               "audio": [
                 {
                   "lecture": "055 Tape012-Side2-Ch7.mp3",
@@ -2221,15 +2212,7 @@
                   "end": 824.5
                 }
               ],
-              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage.",
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names the teacher's small grandson again.",
-                "action": "replace",
-                "publishable": "Their understanding is all points, points: *mamash* the same as the small child. For him it does not matter where you open the book: \"There's an *aleph*, look!\" Anywhere, he finds little things he knows and gets a big pleasure out of it: \"Oh, *beis*!\" \"Oh, look, an *ayin*!\" Nor does it matter which book. Open *Imrei Bina*, he understands just as well; open *Yedios Achronos*, the same thing: here is an *aleph* and here is a *beis*."
-              }
+              "outOfPlace": "Class 055 (free discussion), placed under the chapter's last passage."
             },
             {
               "kind": "aside",
@@ -2417,6 +2400,9 @@
       "lines": [
         "6xfhoqta"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }

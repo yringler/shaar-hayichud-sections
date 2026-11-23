@@ -3992,7 +3992,7 @@
             {
               "kind": "story",
               "title": "The shliach from Singapore",
-              "text": "\"Did I tell you about the guy from Singapore?\" At the *shluchim* convention in New York this weekend, Rabbi Markel's son Mendel met an old yeshiva friend, now the *shliach* of Singapore. \"Is your father here?\" (He thought Rabbi Markel might have come for the convention.) \"No. What do you need him for?\" \"I have a *gvir* (a wealthy man) with me from Singapore who's in a cyber yeshiva, and he'd like to meet him.\" These are the guys who supply you guys: a *shliach* went out there first and started the place, and now there's kosher food and a synagogue for you. So it's very important.",
+              "text": "At the *shluchim* convention in New York this weekend, someone met an old yeshiva friend, now the *shliach* of Singapore, who had brought a *gvir* (a wealthy man) with him from Singapore who studies in a cyber yeshiva. These are the guys who supply you guys: a *shliach* went out there first and started the place, and now there's kosher food and a synagogue for you. So it's very important.",
               "audio": [
                 {
                   "lecture": "070 Tape010-Side1-Ch6.mp3",
@@ -4000,15 +4000,7 @@
                   "start": 1094.81,
                   "end": 1163.76
                 }
-              ],
-              "sensitivity": {
-                "categories": [
-                  "private"
-                ],
-                "reason": "Names the teacher's son and tells of a supporter of a named shliach who wants to meet the teacher.",
-                "action": "replace",
-                "publishable": "At the *shluchim* convention in New York this weekend, someone met an old yeshiva friend, now the *shliach* of Singapore, who had brought a *gvir* (a wealthy man) with him from Singapore who studies in a cyber yeshiva. These are the guys who supply you guys: a *shliach* went out there first and started the place, and now there's kosher food and a synagogue for you. So it's very important."
-              }
+              ]
             },
             {
               "kind": "explanation",
@@ -4296,7 +4288,7 @@
             {
               "kind": "story",
               "title": "The letter from Toronto",
-              "text": "He got a letter from a guy in Toronto, a *Lubavitcher bochur* (young man), apparently. His father is getting mixed up with Bnei Baruch, a close sister group of the Berg people, also Ashlagians. He looked through their stuff: \"they're total heretics.\" And the boy wonders what's happening, because his father seems more and more lax with the *mitzvos*.",
+              "text": "He got a letter from a young *Lubavitcher bochur* (young man). His father is getting mixed up with Bnei Baruch, a close sister group of the Berg people, also Ashlagians. He looked through their stuff: \"they're total heretics.\" And the boy wonders what's happening, because his father seems more and more lax with the *mitzvos*.",
               "audio": [
                 {
                   "lecture": "070 Tape010-Side1-Ch6.mp3",
@@ -4308,10 +4300,9 @@
               "sensitivity": {
                 "categories": [
                   "other-groups",
-                  "named-person",
-                  "private"
+                  "named-person"
                 ],
-                "reason": "Calls named Kabbala groups \"total heretics\", and tells of a correspondent's father, identifiable by city.",
+                "reason": "Calls a named Kabbala movement \"total heretics\".",
                 "action": "replace",
                 "publishable": "He got a letter from a young man whose father is getting involved with a popular Kabbala movement, and the son is wondering what's happening, because it looks like his father is becoming more and more lax with the *mitzvos*.",
                 "publishableTitle": "The letter"
@@ -5320,6 +5311,9 @@
         "cchhghxe",
         "h2iujznh"
       ]
+    },
+    {
+      "text": "Personal details (2026-11-23): blocks that named a student, his family or the teacher's family now make the same point without the person (STYLE.md, People in the class)."
     }
   ]
 }
