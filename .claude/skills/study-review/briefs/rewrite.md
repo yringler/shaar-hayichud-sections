@@ -17,7 +17,9 @@ study-guide version of what he teaches there (STYLE.md, "Write a guide, not a
 recording" and "Condense, do not transcribe"):
 
 1. Cut repetition, restatements, setup lines, false starts, "you know",
-   recaps, and student back-and-forth that carries no point.
+   recaps, and student back-and-forth that carries no point. A sharp point
+   he hammers several times in a row is said once, in its strongest form,
+   with his one best example.
 2. Turn quoted spoken lines into guide prose. Rhetorical exchanges become one
    sentence. At most one short quote of his per block, and only a line a
    reader would remember. Quotations of sources (verses, Gemara, a Rebbe)
