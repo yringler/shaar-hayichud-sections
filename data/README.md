@@ -676,6 +676,9 @@ What each part is anchored to:
 - **Sensitivity**: the files keep the class as it was said. A block that
   should not be published as it stands carries `sensitivity` (categories, a
   reason, and `action`: `replace` with a `publishable` text, or `omit`).
+  The writer may add a lean for the reviewer, `recommend: "raw"` (the remark
+  is the teaching itself) or `"judgment"` with a `judgmentNote`, by the test
+  in `study/STYLE.md`; it changes nothing published.
   `publicView()` in `tools/src/study.ts` applies it, for the
   [public edition](#public-study-guides-v1study). `reviewed: "YYYY-MM-DD"`
   on the flag records that a person checked it against the class and
@@ -683,7 +686,7 @@ What each part is anchored to:
   Only a person sets it, and an edit to the block's text or title or to the
   flag's action, `publishable` or `publishableTitle` deletes it. A flag
   found unnecessary is removed, not marked. Neither export carries
-  `reviewed`.
+  `reviewed`, `recommend` or `judgmentNote`.
 - **Nothing dropped silently**: a stretch of a chapter's class that no block
   cites is listed in `omitted` with a reason, or the check warns about it.
 

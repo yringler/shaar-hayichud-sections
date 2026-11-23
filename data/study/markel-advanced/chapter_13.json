@@ -830,6 +830,7 @@
                 ],
                 "reason": "\"These people are making a very big mistake\": a swipe at a group he does not name, who take the analogy for spirituality itself.",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "By the way, it is a very big mistake to think this analogy is *ruchniyus* (spirituality). It is not; it is an analogy, and the *ruchniyus* is also an analogy."
               }
             },
@@ -1454,6 +1455,7 @@
                 ],
                 "reason": "An opinion on science: he sets the Big Bang aside and dates the start of the universe's motion to 5763 years ago, as a thrown stone traced back only seems to start from the ground.",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "Trace a thrown thing back and you trace it all the way to the ground: \"Wow, it blew up from the ground.\" It did not; it started in the middle, from where you threw it. So here: the motion of the universe really started in the middle, from the throw."
               }
             },

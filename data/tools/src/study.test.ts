@@ -206,6 +206,8 @@ describe('checkStudyChapter: prose, terms and sensitivity', () => {
     const flagged = (f: StudyChapterFile) => f.sections[0]!.passages[1]!.blocks[0]!;
     has(check((f) => delete flagged(f).sensitivity!.publishable), /^error: .*action "replace" but no "publishable"/);
     has(check((f) => (flagged(f).sensitivity!.action = 'omit')), /^error: .*action "omit" and a publishable text/);
+    has(check((f) => delete flagged(f).sensitivity!.judgmentNote), /^error: .*"judgmentNote" goes with recommend "judgment"/);
+    has(check((f) => delete flagged(f).sensitivity!.recommend), /^error: .*"judgmentNote" goes with recommend "judgment"/);
     assert.equal(flagged(gold).sensitivity!.reviewed, '2026-11-01'); // the fixture's flag has been reviewed
 
     const pub = publicView(gold);

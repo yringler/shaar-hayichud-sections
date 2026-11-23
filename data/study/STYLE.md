@@ -252,8 +252,45 @@ Flag a block with `sensitivity` when it does any of these:
   change a reviewed block's `text` or `title`, or its flag's `action`,
   `publishable` or `publishableTitle`, delete `reviewed`: the change needs a
   new look.
-- Do not flag ordinary humor, strong Torah positions stated as such, or
-  criticism of ideas (as opposed to people and groups).
+- Do not flag ordinary humor or criticism of ideas (as opposed to people
+  and groups).
+
+### Raw, softened or dropped: the test
+
+The flag decides content only; concision is already done in both texts
+(above). For each flag ask: **is it the position, or the way he put it?**
+
+- **Raw** (`"recommend": "raw"`): the remark is the teaching itself, a
+  position of Torah or Chassidus stated as such, which a traditional reader
+  expects and a softened text would misrepresent. Meditation that seeks G-d
+  through concentration alone is *avoda zara*; "G-d is love" or pantheism is
+  a mistake; a Jewish *daas* against a goyishe one; women and *psak*, or
+  *kalei daas*, stated as the doctrine; a criticism of how scientists think;
+  his own view of a book or a practice. Flag it still (an outside reader may
+  object), write the `publishable` text as usual, and mark it `raw`: the
+  reviewer usually prints it as said.
+- **Softened** (`replace`, no `recommend`): the point stands, but the edge is
+  his delivery. Most often it is verbal flair: the remark spices up the
+  recording, and may even hold a deep truth, but the guide loses nothing
+  without it (he tells the camp that prefers *hiskashrus* to study "you're
+  having dreams"; the guide says "Someone may say, 'I'm *batel* to the Rebbe;
+  what do I need to study this for?'" and gives his answer). The audio keeps
+  the flavor for whoever wants it. Also: insults ("idiots", "stupid"), coarse words, jabs at present-day
+  cultures, nations or politics, sniping at fellow Jews and their camps or
+  groups, a joke at the expense of a real, recent person, or a doctrine
+  carried on into his own examples (women in general, then wives compared
+  with their husbands).
+- **Drop** (`omit`): a joke whose point is irreverence or darkness and that
+  carries no teaching (G-d reading the book to find out who He is; a
+  suicidal man deciding to jump).
+- **A person decides** (`"recommend": "judgment"`, with `judgmentNote`
+  saying what to weigh): a remark a reader could act on (prayer, health,
+  law, money: "we don't even have to worry about *davenen*"), a doctrine
+  that shades into examples where it is not clear which side it falls on,
+  and the first chapters of a new series or teacher.
+
+`recommend` is the writer's lean and changes nothing published: the public
+edition applies `action` until a person removes the flag or accepts it.
 
 ## Prose rules
 

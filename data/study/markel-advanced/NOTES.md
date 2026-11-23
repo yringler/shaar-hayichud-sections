@@ -73,3 +73,11 @@ Flag freely (see STYLE.md). Seen so far: remarks about women (chapter 10),
 his listeners) is always flagged (`crude` when it is only the word), with a
 `replace` text that drops or swaps the word: the reviewer prefers the
 softened version wherever he says it.
+
+The reviewer's first 31 decisions (November 2026) are the examples behind
+the raw/softened/drop test in STYLE.md. For Rabbi Markel in particular:
+his statements that a practice or creed is *avoda zara* print raw; his
+name-calling of the people who hold it is softened. His remarks on women
+print raw when they state the doctrine (chapter 2) and are softened when
+they run on into his own examples (chapter 1). Asides about *davenen* not
+being needed are a judgment for the reviewer.

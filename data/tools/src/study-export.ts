@@ -179,9 +179,9 @@ const trimBlock = (b: StudyBlock): ExportBlock => ({
   ...(b.sensitivity !== undefined ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
 });
 
-/** The flag as the beta app reads it: the review stamp is editorial and stays in data/study/. */
+/** The flag as the beta app reads it: the review stamp and the writer's lean are editorial and stay in data/study/. */
 function trimSensitivity(s: StudySensitivity): StudySensitivity {
-  const { reviewed: _reviewed, ...rest } = structuredClone(s);
+  const { reviewed: _reviewed, recommend: _recommend, judgmentNote: _judgmentNote, ...rest } = structuredClone(s);
   return rest;
 }
 

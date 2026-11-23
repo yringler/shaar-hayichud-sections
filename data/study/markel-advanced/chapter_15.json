@@ -1109,6 +1109,7 @@
                 ],
                 "reason": "A generalisation about how boys and girls, men and women, must be spoken to.",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "It is all there, and he will act differently for different classes, speaking to each in the way that class needs. As the *Aibershter* told Moshe to speak one way and to say another, one group needs firmer words and another gentler ones."
               },
               "outOfPlace": "Class 013 opens in the middle of class 012's explanation of line 28 and stays with it until it finishes reading the line at w1519."
@@ -1667,6 +1668,7 @@
                 ],
                 "reason": "Dismisses the founding claims of most other religions as \"some guy went to the desert and he got this thing\".",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "Like the giving of the Torah: you didn't have to have all that hullabaloo. It could have been a quiet thing, Moshe off somewhere, not in front of two million people."
               }
             },

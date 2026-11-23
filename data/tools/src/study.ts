@@ -54,6 +54,10 @@ export interface StudySensitivity {
   action: 'replace' | 'omit';
   publishable?: string;
   publishableTitle?: string;
+  /** The writer's lean for the reviewer (absent: the action). Changes nothing published. Not exported. */
+  recommend?: 'raw' | 'judgment';
+  /** With recommend 'judgment': what the reviewer has to weigh. Not exported. */
+  judgmentNote?: string;
   /** YYYY-MM-DD: a person accepted this flag as it stands. Not exported. */
   reviewed?: string;
 }
@@ -601,6 +605,7 @@ export function checkStudyChapter(
       const s = block.sensitivity;
       if (s.action === 'replace' && s.publishable === undefined) add('error', `${at}/sensitivity has action "replace" but no "publishable" text`);
       if (s.action === 'omit' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "omit" and a publishable text; choose one`);
+      if ((s.recommend === 'judgment') !== (s.judgmentNote !== undefined)) add('error', `${at}/sensitivity: "judgmentNote" goes with recommend "judgment", and only with it`);
     }
     if (block.kind === 'question' && block.question === undefined) add('error', `${at} is a question block without "question"`);
     if (block.kind !== 'question' && (block.question !== undefined || block.askedBy !== undefined)) add('error', `${at} has "question"/"askedBy" but is not a question block`);

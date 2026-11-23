@@ -871,6 +871,8 @@
                 ],
                 "reason": "Says that G-d is \"stupid, not with a known stupidity\"; some readers would take the wording as irreverent, like the film joke after it.",
                 "action": "replace",
+                "recommend": "judgment",
+                "judgmentNote": "\"Stupid, not with a known stupidity\" names a real concept (a wisdom above knowing); is the wording the teaching or only his delivery?",
                 "publishable": "Another thing: as we learned before, *chachma* also includes its opposite. *Taanug* (delight) too is the power to have pleasure or the opposite: the ability to feel pain comes from *pnimiyus haKeser* of *Atik*, like the ability to feel pleasure. So the ability to lack wisdom also comes from Him, and if He is wise, not with a known wisdom, the opposite of wisdom is in Him too, not as you think it: a *shtus d'kedusha* (holy foolishness)."
               }
             },
@@ -1355,6 +1357,7 @@
                 ],
                 "reason": "\"G-d is love\" and \"unconditional love\" are slogans associated with Christian preaching; the rejection can be read as aimed at another religion.",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "For instance, if one says G-d is only love, with no *din* (judgement), one has taken out the attribute of *din*, and the attribute of *din* says there are conditions."
               }
             },
@@ -1661,6 +1664,7 @@
                 ],
                 "reason": "The example is a drunk who beats his family.",
                 "action": "replace",
+                "recommend": "raw",
                 "publishable": "When the essential *chafetz chesed* comes into actuality there is a *sechel* (intellect) in it: you have to figure out exactly how to do the *chesed*. Sometimes money given to the man asking will not reach the family that needs it, so you send the food to the family yourself. That shows there has to be a *sechel*."
               }
             },
@@ -2661,6 +2665,8 @@
                 ],
                 "reason": "Gives a cause of stuttering and a way to treat it (\"teach them how to slow down\"), which a reader might act on.",
                 "action": "replace",
+                "recommend": "judgment",
+                "judgmentNote": "Advice a reader could act on: is his cause and treatment of stuttering a teaching to keep, or advice to leave out?",
                 "publishable": "That is also why a person can stumble over his words: he is trying to put the whole thought into speech at one shot, without the *tzimtzum*."
               }
             },
