@@ -1,0 +1,1874 @@
+{
+  "schemaVersion": 1,
+  "series": "markel-advanced",
+  "chapter": "chapter_21",
+  "title": "The middle line from end to end, and the will with no reason above it",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 5",
+    "date": "2026-11-23"
+  },
+  "lectures": [
+    {
+      "id": "031 Tape026-Side1-Ch20.mp3",
+      "transcriptionId": "3eb67380-37e6-4502-8d28-db397cb47de6"
+    },
+    {
+      "id": "032 Edited Tape026-Side2-Ch21.mp3",
+      "transcriptionId": "0f3da23d-070a-4d13-898f-d24aa905deca"
+    }
+  ],
+  "overview": "Chapter 21 explains how the three lines of the *sefiros* are included in one another. As the classes teach it, each side attribute branches from the one above it and is still a different thing: *chesed* comes from *chachma*, from looking at a person's whole situation; *din* from *bina*, from looking too closely at the details. *Netzach* is conquest, and *hod* is the admission that detail after detail brings.\n\nThe sides meet only in the middle line. *Daas* decides because it connects to the person being judged. *Tiferes* is mercy, a chance on parole. *Yesod* is the fulcrum between *netzach* and *hod*, which weigh how much to give the student. All three are one connection of giver to receiver, running from *Keser* to *Malchus* as the middle bar from end to end; its twelve diagonal lines are shown on a *sukka* and on a closed book.\n\nThe middle line can join the sides because it reaches the inner *Keser*, a will with no reason, not even a hidden one: be silent, so it arose in thought. Between that *Keser* and its *chachma* is a partition, in the head the membrane of air. The dew that crosses it through the study of *Chassidus* is an addicting delight and, in full, literal immortality and the resurrection.",
+  "terms": [
+    {
+      "term": "kavin",
+      "he": "קוין",
+      "gloss": "lines: the right, left and middle lines the sefiros stand in",
+      "line": "hs265b6q"
+    },
+    {
+      "term": "mistaef",
+      "he": "מסתעף",
+      "gloss": "branches out; chesed is mistaef from chachma and is still not the same thing",
+      "line": "w657bnmb"
+    },
+    {
+      "term": "memutza",
+      "he": "ממוצע",
+      "gloss": "an intermediary; daas between chesed and din, yesod between netzach and hod",
+      "line": "tjgcxrjz"
+    },
+    {
+      "term": "daas noteh",
+      "he": "דעת נוטה",
+      "gloss": "the tilting daas: the intellect of decision, which connects to the person the decision is about",
+      "line": "tjgcxrjz"
+    },
+    {
+      "term": "rachamim",
+      "he": "רחמים",
+      "gloss": "mercy: after a verdict of guilt, a chance on probation; a compromise of kindness and sternness",
+      "line": "stujf5fr"
+    },
+    {
+      "term": "hod",
+      "he": "הוד",
+      "gloss": "acknowledgement: giving the student nothing but that he be modeh, admit; what detail after detail brings about",
+      "line": "jud5g5du"
+    },
+    {
+      "term": "yesod",
+      "he": "יסוד",
+      "gloss": "foundation: the fulcrum between netzach and hod, the connection of the giver to the receiver on the gut level",
+      "line": "jud5g5du"
+    },
+    {
+      "term": "modeh",
+      "he": "מודה",
+      "gloss": "admits, acknowledges: says uncle, you are the winner",
+      "line": "jud5g5du"
+    },
+    {
+      "term": "moznei tzedek",
+      "he": "מאזני צדק",
+      "gloss": "the scales of righteousness: netzach and hod",
+      "line": "pacplvxi"
+    },
+    {
+      "term": "hin tzedek",
+      "he": "הין צדק",
+      "gloss": "the measure of righteousness: yesod, the fulcrum of the scales",
+      "line": "pacplvxi"
+    },
+    {
+      "term": "shikul hadaas",
+      "he": "שיקול הדעת",
+      "gloss": "the weighing of the mind, in Chabad, before the decision",
+      "line": "sczz3usq"
+    },
+    {
+      "term": "hachraa",
+      "he": "הכרעה",
+      "gloss": "the decision, in Chagas",
+      "line": "sczz3usq"
+    },
+    {
+      "term": "beis din",
+      "he": "בית דין",
+      "gloss": "a court, whose work is analysis",
+      "line": "pdigphbs"
+    },
+    {
+      "term": "gvulei alachson",
+      "he": "גבולי אלכסון",
+      "gloss": "the diagonal boundaries: the twelve particular ways the lines connect",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "kavei alachson",
+      "he": "קווי אלכסון",
+      "gloss": "diagonal lines: where one attribute changes over to another",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "briach hatichon",
+      "he": "בריח התיכון",
+      "gloss": "the middle bar, which runs from end to end: the middle line, one thing from Keser to Malchus",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "emes",
+      "he": "אמת",
+      "gloss": "truth: the middle line, the line of Yaakov, one thing from beginning to end",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "Keser sheb'Keser",
+      "he": "כתר שבכתר",
+      "gloss": "the inner Keser: the essential will, with no reason and no division",
+      "line": "bzlbsqv7"
+    },
+    {
+      "term": "taam kamus",
+      "he": "טעם כמוס",
+      "gloss": "the hidden reason for the will: chachma of the Keser, where the will can already divide",
+      "line": "zrx6m2dg"
+    },
+    {
+      "term": "bilti mugbal",
+      "he": "בלתי מוגבל",
+      "gloss": "unlimited: the will itself, even a particular will",
+      "line": "risurkmt"
+    },
+    {
+      "term": "ratzon prati",
+      "he": "רצון פרטי",
+      "gloss": "a particular will, which is also really unlimited",
+      "line": "risurkmt"
+    },
+    {
+      "term": "hechlet atzmi",
+      "he": "החלט עצמי",
+      "gloss": "an essential decision: that is what He wants",
+      "line": "s77hpbow"
+    },
+    {
+      "term": "etzem haratzon",
+      "he": "עצם הרצון",
+      "gloss": "the essence of the will",
+      "line": "s77hpbow"
+    },
+    {
+      "term": "yemei olam",
+      "he": "ימי עולם",
+      "gloss": "the days of the world; set against yemei kedem, relative to what they are compared with",
+      "line": "xxzhkqd3"
+    },
+    {
+      "term": "parsa",
+      "he": "פרסא",
+      "gloss": "a partition; literally a (Persian) mile, because a separation is a separation",
+      "line": "yu4yzmlk"
+    },
+    {
+      "term": "kruma d'avira",
+      "he": "קרומא דאוירא",
+      "gloss": "the membrane of air between the brain and the skull: the partition below the inner Keser",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "gulgalta",
+      "he": "גולגלתא",
+      "gloss": "the skull: the etzem haratzon, Keser sheb'Keser",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "lachluchis",
+      "he": "לחלוחית",
+      "gloss": "moisture: the layer of liquid on the brain and on the skull, where the delight is",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "tala d'vdulcha",
+      "he": "טלא דבדולחא",
+      "gloss": "the dew of crystal: the physical drop brought down from the upper water to the lower, through the study of Chassidus",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "haskalos",
+      "he": "השכלות",
+      "gloss": "insights",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "koach hamaskil",
+      "he": "כח המשכיל",
+      "gloss": "the power that brings understanding: chachma d'Arich, the moisture on the brain",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "sam hachaim",
+      "he": "סם החיים",
+      "gloss": "the elixir of life",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "tal techiyas hameisim",
+      "he": "טל תחיית המתים",
+      "gloss": "the dew of the resurrection: another name of the tala d'vdulcha",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "mabul",
+      "he": "מבול",
+      "gloss": "a flood: the dew coming down constantly, in infinite amounts",
+      "line": "p3k5o756"
+    },
+    {
+      "term": "golus",
+      "he": "גלות",
+      "gloss": "exile, a will of judgement to be changed to kindness",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "techiyas hameisim",
+      "he": "תחיית המתים",
+      "gloss": "the resurrection of the dead, one of the thirteen principles",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "etzem luz",
+      "he": "עצם לוז",
+      "gloss": "the luz bone, from which a dead person is brought back",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "ikkarim",
+      "he": "עיקרים",
+      "gloss": "the principles of faith",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "chayav misa",
+      "he": "חייב מיתה",
+      "gloss": "liable to death",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "tinok shenishba",
+      "he": "תינוק שנשבה",
+      "gloss": "a child taken captive, who never learned",
+      "line": "2tnhylu2"
+    },
+    {
+      "term": "Kachab",
+      "he": "כח\"ב",
+      "gloss": "Keser, chachma and bina: the top level of the three, beside Chabad",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "naanuim",
+      "he": "נענועים",
+      "gloss": "the waving of the lulav, pointing at the walls, ceiling and floor",
+      "line": "nedzsunz"
+    },
+    {
+      "term": "tzedek",
+      "he": "צדק",
+      "gloss": "righteousness; the male of tzedaka, the one who does the favor: here yesod",
+      "line": "pacplvxi"
+    },
+    {
+      "term": "tzedaka",
+      "he": "צדקה",
+      "gloss": "charity, a favor done; the receiving side, Malchus",
+      "line": "pacplvxi"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Three lines, and the right one: each attribute branches from the one above it and is not the same",
+      "summary": "The inner *Keser* is above the three lines; below it the *sefiros* stand in a right, a left and a middle line, and the sides are joined only through the middle. On the right, *chesed* branches from *chachma* and *netzach* from *chesed*, and each is a different thing from its source.",
+      "passages": [
+        {
+          "lines": [
+            "hs265b6q",
+            "pp7xevqg",
+            "dahq6lik",
+            "j2vmv7pq",
+            "shw2swex",
+            "w657bnmb"
+          ],
+          "phrases": [
+            {
+              "he": "(כא) ובזה יובן כללות ענין ההתכללות דג' קוין דנאצלים, חח''ן מימין ובג''ה משמאל ודת''י באמצע כו' כמו שכתוב בפרדס דפנימית הכתר הנקרא כתר שבכתר, לא נחלק לג' קוין בחינת חיצוניות שבו, ממנו מתחלק לג' קוין והוא מבחינת חכמה שבכתר כו', וכידוע בכונות דהגדול הגבור והנורא כו'. וביאור הדברים, הנה בחינת התכללות הקוין ימין ושמאל הוא על ידי קו האמצעי דוקא"
+            },
+            {
+              "he": "והענין הוא דקו הימין חח''ן,"
+            },
+            {
+              "he": "הרי החסד ענף החכמה ומובדל הימנה",
+              "en": "Even though the *chesed* comes out, is *mistaef* out of the *chachma*, it's really not the same thing: *chesed* and *chachma* are two different *inyanim*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [69, 93],
+                "start": 52.32,
+                "end": 63.25
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Chapter 21 opens with the general matter of the three *kavin* (lines): *chachma* on the right, *bina* on the left, *daas* in the middle. The inner *Keser*, *Keser sheb'Keser*, is not divided into three lines; its outside, from *chachma* of the *Keser*, is. The side lines are included in each other only through the middle line. These lines are read straight through.\n\nThen the right line. *Chesed* is a branch of *chachma*, and separate from it: **even though the *chesed* comes out, is *mistaef* out of the *chachma*, it's really not the same thing**. They are two different *inyanim* (matters).",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [0, 93],
+                  "start": 0,
+                  "end": 63.25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "3rjzpvs5",
+            "6zhywlzz"
+          ],
+          "phrases": [
+            {
+              "he": "והוא מה שנסתעף החסד מצד השכל",
+              "en": "When you look at the general situation, it's *noteh l'chesed*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [106, 115],
+                "start": 69.04,
+                "end": 72.5
+              }
+            },
+            {
+              "he": "והטעם, שמטה כלפי חסד בדבר מורכב כנזכר לעיל"
+            },
+            {
+              "he": "וכן הנצח ענף החסד, מובדל הימנו.",
+              "en": "*Netzach* is not the same *inyan* of *chesed*; it's just when you want to do a *chesed*, so therefore you have to overcome the things that get in the way.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [145, 174],
+                "start": 87.7,
+                "end": 95.08
+              }
+            },
+            {
+              "he": "דהיינו מצד החסד יחויב בחינת הניצוח להביא החסד למעשה בפועל ממש כו'",
+              "en": "You have to overcome the things that stand in the way.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [187, 197],
+                "start": 103.46,
+                "end": 105.62
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Chesed* branches out of the intellect that leans to kindness. **When you look at the general situation, it's *noteh l'chesed*** (it leans to kindness): look over a person's whole thing and it leans to *chesed*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [94, 129],
+                  "start": 63.34,
+                  "end": 80.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So too *netzach* (victory) is a branch of *chesed*, and separate from it. *Netzach* is not the same *inyan* as *chesed*. When you want to do a *chesed*, **you have to overcome the things that stand in the way**: that is *netzach*. But *netzach* and *chesed* are two different things.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [130, 206],
+                  "start": 80.44,
+                  "end": 109.96
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Where a kindness comes from in court",
+              "text": "Going over the whole chapter again: *chesed* is a branch of *chachma*, but not the same *inyan*. *Chachma* is the brain of the overview, and a *chesed* comes from looking at a person's whole situation. In a court case: look where this man grew up, look at his family situation, he has little kids. The whole picture tends to *chasadim* (kindnesses). But not necessarily: *chachma* can also tell you that *din* (judgement) should come out of it.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1535, 1680],
+                  "start": 714.58,
+                  "end": 772.41
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "*Netzach* comes out of *chesed*, because to do the *chesed* you have to overcome what stands in the way. But *netzach* in itself is almost the opposite of *chesed*: it is conquest. Why would conquest be on the right side and not on the left? Because conquest is spreading: spreading your territory, growing. That is *chesed*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1681, 1800],
+                  "start": 773.2,
+                  "end": 824.25
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The left line: the details lean to judgement, and the trial that makes a man admit",
+      "summary": "On the left, *din* branches from *bina* and *hod* from *gevura*. Looking closely at the details tends to judgement, though not necessarily; a court is analysis, and enough details make the accused admit.",
+      "passages": [
+        {
+          "lines": [
+            "pdigphbs",
+            "2girow5l",
+            "gmwyi7di",
+            "zyydn5cb"
+          ],
+          "phrases": [
+            {
+              "he": "וקו השמאל היפוכו, כמו שכל המטה כלפי דין שנסתעף הימנו מידת הדין כו'",
+              "en": "When you start looking too much into the details, if you look too closely at a person's details, it'll tend to bring up *dinim*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [236, 259],
+                "start": 125.18,
+                "end": 132.66
+              }
+            },
+            {
+              "he": "כך בינה גבורה כו' כמו שכתוב אני בינה, לי גבורה כו' דהחכמה נוטה לחסדים ובינה מינה דינין כו' (וכמו שכתוב בעץ חיים דאבא מקור החסדים ואימא מקור כל הגבורות כו' וכידוע)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The left line is the opposite: an intellect that leans to *din*, from which the attribute of judgement branches out. **If you look too closely at a person's details, it'll tend to bring up *dinim*** (judgements). But not necessarily: *chachma* can bring up *dinim* too, and *bina* can bring up *chasadim*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [207, 278],
+                  "start": 109.51,
+                  "end": 141.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Analyze someone like the Rebbe and whatever you look at comes out fantastic. But a normal person: look closely enough at all the details and sooner or later you will find something wrong. Still, *din* only branches out of *bina*; *bina* and *din* are two things. The verse *ani bina li gevura* (I am understanding, mine is might) and the rest of the lines are read without comment.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [279, 366],
+                  "start": 142.5,
+                  "end": 182.09
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In the review: the left side is *ani bina li gevura*, and it can be seen two ways. *Bina* is the brain of the details. Start nitpicking at all the details and you can find something wrong in almost anybody, except very special people. But it need not come out *gevura*: *bina* can also report that everything was investigated and this is a wonderful guy. A *chesed* can come out of *bina*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1801, 1894],
+                  "start": 824.85,
+                  "end": 864.5
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "mashal",
+              "title": "The trial on cable",
+              "text": "A *beis din* (court) is really *bina*: what a court does is analyze. Watch a trial on cable, like the O.J. Simpson case: they did nothing to him, they didn't hit him, they only analyzed. Where were you on this day? How was that? *Din* is made of analysis. And out of it comes *hod* (acknowledgement): *bina* reaches down to *hod*, because detail after detail after detail brings the man to be *modeh* (to admit).",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1895, 2048],
+                  "start": 865.15,
+                  "end": 930.72
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "*Gevura* brings about *hod* too: a mighty man can make the other *modeh*, make him say uncle, be subdued, the opposite of *netzach*. *Netzach* is to win; *modeh* is to say, okay, you're the winner. Still, *hod* is not the same *inyan* as *gevura* or *bina*: they are three different things, and so are *chachma*, *chesed* and *netzach*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2049, 2126],
+                  "start": 931.12,
+                  "end": 965.06
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The middle line in the mind and the heart: daas decides, tiferes has mercy",
+      "summary": "The two sides are joined only through the middle line. *Daas* is the intellect of decision, because it connects to the person the decision is about; *tiferes* is mercy, which comes after judgement and combines kindness with sternness, the same connection on the level of the emotions.",
+      "passages": [
+        {
+          "lines": [
+            "hoghevys",
+            "tjgcxrjz"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת ההתכללות דב' קוין הללו שיבואו להתחבר במקום א', הוא על ידי קו האמצעי דת''י כו'"
+            },
+            {
+              "he": "כמו הדעת שהוא בחינת ממוצע להטות משכל של חסד לשכל של דין, ונקרא דעת נוטה",
+              "en": "The *daas* is the *sechel* of decision.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [397, 405],
+                "start": 198.22,
+                "end": 203.81
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The two lines come to be joined in one place only through the middle line. So *daas* is the *memutza* (intermediary) that tilts from an intellect of *chesed* to an intellect of *din*, and is called *daas noteh* (the tilting *daas*). **The *daas* is the *sechel* of decision**.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [367, 405],
+                  "start": 182.44,
+                  "end": 203.81
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Fiddler on the Roof: on the other hand",
+              "text": "As long as a thing is intellectual, *chachma* and *bina*, it is like Fiddler on the Roof: \"on the other hand\". In the intellect there is always another hand. You can always come up with a new maybe and a new other hand, and it never comes to an actual decision.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [406, 465],
+                  "start": 204.07,
+                  "end": 236.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Daas* means that he connects himself to the actual situation, and to the person the decision is about. Then he can actually tilt from an intellect of *chesed* to one of *din*, and from *din* to *chesed*. The whole analysis may tell you one thing, but when you have a feeling for the person, you change it.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [466, 541],
+                  "start": 237.54,
+                  "end": 272.95
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In the review: the middle line, *daas*, is the mind of connection. It connects *chachma* and *bina*, above all where it connects to the *mekabel* (the receiver), though it can also connect to the *mashpia* (the giver). *Daas* is concentration: totally concentrated on the *mashpia*, or, downward, on the *mekabel*. Because it is connected to the *mekabel* it can make the decision, which *chachma* and *bina* by themselves could not.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2127, 2258],
+                  "start": 967.28,
+                  "end": 1026.8
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "That is also why *daas* is the *ma'amik* (the one that delves), as in chapter one. *Daas* can connect up to the *Keser*, the *mashpia* of *chachma* and *bina*. So it puts the holistic view and the particular view together into an actual decision, and it connects them to the higher place, to get deeper into things than *chachma* and *bina* can alone.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2259, 2367],
+                  "start": 1029.2,
+                  "end": 1071.07
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            }
+          ]
+        },
+        {
+          "lines": [
+            "gnsidoux",
+            "sa2xhyzt"
+          ],
+          "phrases": [
+            {
+              "he": "(וכמו כי יצר לב כו' שנעשה שכל וטעם לזכות, אשר תחלה היה זה השכל עצמו נוטה כלפי חוב, כמו שכתוב וירא כי רבה רעת כו' וכהאי גוונא וכמו שכתוב במקום אחר)",
+              "en": "It's exactly the same thing: the analysis is the same thing, the people are bad.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [554, 569],
+                "start": 284.86,
+                "end": 289.4
+              }
+            },
+            {
+              "he": "ונמצא בדעת יחובר ב' שכליים הפכיים דחסד וגבורה להיות נוטה לחסד באופן זה ולדין באופן זה וכהאי גוונא,"
+            },
+            {
+              "he": "גם במקום אחד",
+              "en": "even in one thing",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [663, 668],
+                "start": 324.3,
+                "end": 325.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So with *ki yetzer lev* and *ki raba raas ha'adam*: **it's exactly the same thing: the analysis is the same thing, the people are bad**. Yet when the *Aibershter* (the One Above, G-d) looked at the situation before the flood, He decided to destroy the world, and when He looked at it after the flood, He decided *davka* (precisely) the opposite.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [542, 608],
+                  "start": 273,
+                  "end": 300.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So in *daas* the two opposite intellects, of *chesed* and of *gevura*, are joined, to lean to *chesed* in one way and to *din* in another. And it is *davka* in *daas* that *chachma* and *bina*, the overview of the whole thing and the details, come together, **even in one thing**.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [609, 668],
+                  "start": 301.38,
+                  "end": 325.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "23satlit",
+            "stujf5fr"
+          ],
+          "phrases": [
+            {
+              "he": "וכך מדת התפארת מכריע בין חסד וגבורה"
+            },
+            {
+              "he": "שהוא כמו הרחמים,",
+              "en": "*Rachamim* means mercy.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [683, 685],
+                "start": 333.46,
+                "end": 334.54
+              }
+            },
+            {
+              "he": "שאינו אלא אחר מידת הדין,",
+              "en": "Mercy is *davka* after the *midas hadin*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [703, 709],
+                "start": 342.68,
+                "end": 344.5
+              }
+            },
+            {
+              "he": "שעם כל זה רחמנות פוטרו,",
+              "en": "that even after that you have *rachamim* on him",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [715, 723],
+                "start": 347.8,
+                "end": 350.16
+              }
+            },
+            {
+              "he": "והיא מדת יעקב כידוע"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Tiferes* decides between *chesed* and *gevura*, as *rachamim* (mercy) does. Mercy means you found the man guilty, and then you have mercy; otherwise it is not mercy. **Mercy is *davka* after the *midas hadin*** (the attribute of judgement). But *rachamim* is not kindness. It means probation, not letting him go: we give you a chance, and if you don't perform on it, it goes back to *din*. A combination of the two, and the attribute of Yaakov.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [669, 813],
+                  "start": 326.05,
+                  "end": 381.68
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The judge who has a feeling about the man",
+              "text": "In the review: *tiferes* is *rachamim*, and the decision between *chesed* and *gevura*. It comes from the connection to the *mekabel*: in a court, the judge's compassion, his emotional empathy, for the man before him. The evidence does not look that bad, but he has a bad feeling about this guy; he must go by the decision of the case, so he gives him the maximum. Or the evidence looks really bad, but he feels the man is repentant; instead of life he gives him a certain amount of time, and then parole. Parole is a combination of the two: *rachamim* combines kindness and sternness into a compromise.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2368, 2603],
+                  "start": 1071.6,
+                  "end": 1191.86
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "So *rachamim* is not letting him off the hook. It tells the man: you're guilty, but it looks like you learned your lesson, so we'll give you a chance; blow the chance and we throw the whole book at you, worse than if you'd had none. It combines the two, but at bottom *rachamim* is compassion, empathy for the man.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2604, 2713],
+                  "start": 1192.13,
+                  "end": 1231.48
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "*Tiferes* is connected upward to *daas* as well: a feeling from the *mashpia* to the *mekabel* and from the *mekabel* to the *mashpia*, to ask for *rachamim* or to bring it down, as the *Tanya* speaks of bringing down mercy on your soul from above. So *tiferes* is exactly the same *inyan* as *daas*, connection: *daas* on the intellectual level, *tiferes* on the emotional level.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2714, 2823],
+                  "start": 1232.3,
+                  "end": 1283.19
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yesod, the scales and the fulcrum, and one line from Keser to Malchus",
+      "summary": "*Netzach* and *hod* weigh how much of the attribute to give over, and *yesod*, the fulcrum, connects the giver to the receiver. *Daas*, *tiferes* and *yesod* are one connection, and the middle line runs from *Keser*, the first giver, to *Malchus*, the last receiver; its particular joinings are the twelve diagonal lines.",
+      "passages": [
+        {
+          "lines": [
+            "jud5g5du",
+            "tpqoepv5",
+            "sczz3usq",
+            "pacplvxi"
+          ],
+          "phrases": [
+            {
+              "he": "וכן בחינת יסוד ממוצע לכלול ב' הפכים דנצח והוד"
+            },
+            {
+              "he": "שהוא ענין כליות יועצות הן ולאו קודם השפעת המשפיע כשצריך להשפיע עצם המדות חסד וגבורה"
+            },
+            {
+              "he": "וכמו כל שיקול הדעת בא בהכרעה",
+              "en": "There's a *shikul hadaas*, which means the *shikul hadaas* is in *Chabad*. Then there's the *hachraa*: the *hachraa* is in *Chagas*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [1295, 1316],
+                "start": 610.75,
+                "end": 623.44
+              }
+            },
+            {
+              "he": "ואחר הכרעה ישקול במאזני צדק שהן נצח והוד,"
+            },
+            {
+              "he": "איך להביא השפע למקבל כו'",
+              "en": "how to bring out the *shefa* to the *mekabel*",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [1332, 1340],
+                "start": 633.52,
+                "end": 635.38
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Yesod* (foundation) is the *memutza* that includes two opposites, *netzach* and *hod*. *Netzach* and *hod* are the back-and-forth, not over the essence of the attribute but over how to give it to the outside. *Netzach* is to give the student the whole thing, push it into his brain at one shot, even if it blows up his brain. *Netzach* means to conquer.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [814, 905],
+                  "start": 384.4,
+                  "end": 437.92
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Like with a dog",
+              "text": "*Hod* is to tell him nothing: listen to what I'm telling you, do as I told you, I'm not going to explain anything to you. That is what you do with a dog. You're not allowed to cross the street. Why? You don't have to know why. That is *hod*: you are just *modeh* to me. So *netzach* gives over the whole thing, *hod* gives over nothing, and *yesod* is the connection to the *mekabel*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [906, 1000],
+                  "start": 439.62,
+                  "end": 476.84
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Netzach* and *hod* are the two sides of the balance, yes and no, and *yesod* is the fulcrum. The text calls *netzach* and *hod* the *moznei tzedek* (the scales of righteousness), and *yesod* is called the *hin tzedek*: the *hin* is the fulcrum.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1001, 1061],
+                  "start": 477.94,
+                  "end": 510.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Tzedek* is the male of *tzedaka*. *Tzedaka* is doing a favor for another: the *tzedaka* is on the side of the *mekabel*, the act, and *tzedek* is the one who does it, the *mashpia*. So this is not the scales of the attribute itself.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1062, 1123],
+                  "start": 511.85,
+                  "end": 537.67
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Isn't *tzedek* *Malchus*, and *tzaddik* *yesod*?",
+              "askedBy": "student",
+              "text": "That is one way of saying it. Another place says *tzedek* is male and *tzedaka* female, *Zeir Anpin* and *Malchus*. The student objects that *tzedek* and *tzedaka* are the same thing and it doesn't matter; no, it is not the same. *Tzedek* here is *yesod*, as it says *hin tzedek*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1124, 1222],
+                  "start": 537.67,
+                  "end": 575.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So *yesod* is the connection to the *mekabel*. All three, *daas*, *tiferes* and *yesod*, are the connection to the *mekabel*: the *inyan* of the middle line is *mamash* (literally) the same thing all the way through.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1223, 1267],
+                  "start": 575.6,
+                  "end": 590.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Before the giver gives, it goes as all weighing of the mind goes, to a decision. **There's a *shikul hadaas***, a weighing, and it is in *Chabad*; then the *hachraa*, the decision, in *Chagas*. After the decision he weighs with the scales of righteousness, *netzach* and *hod*, **how to bring out the *shefa* to the *mekabel***: the flow to the receiver.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1268, 1340],
+                  "start": 593.55,
+                  "end": 635.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In the review: *yesod* is the connection of the *mashpia* to the *mekabel* and of the *mekabel* to the *mashpia*, the same thing again, on the gut level: not the inner emotion but the outward *hispaalus* (stirring) of the emotions. In teaching it is the weighing of *netzach* and *hod*, how much to give over: *netzach* gives the students the whole thing, *hod* nothing, only that they be *modeh* that you're right, and *yesod* weighs between them. How much? It depends who the *mekabel* is: on a higher level more *netzach* and less *hod*, on a lower level less *netzach* and more *hod*. In a *beis din*, *Chagas* is the verdict, *chesed* or *gevura*, innocent or guilty; *Nehi* is the sentencing.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [2824, 3060],
+                  "start": 1283.74,
+                  "end": 1384.26
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "Even when the *din* is light, within that *din* you can still throw the whole book at one man. So *yesod* too is connection, and all three are exactly the same *inyan*: the connection of the *mashpia* to the *mekabel*.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3061, 3156],
+                  "start": 1384.78,
+                  "end": 1421.7
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7htex5zm",
+            "nedzsunz"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו כללות ענין קו האמצעי דת''י, שמחבר לב' קוין דימין ושמאל"
+            },
+            {
+              "he": "ופרטי התכללותן נקרא י''ב גבולי אלכסון כידוע,",
+              "en": "The particular ways that they connect is called *yud-beis gvulei alachson*.",
+              "audio": {
+                "lecture": "031 Tape026-Side1-Ch20.mp3",
+                "words": [3479, 3489],
+                "start": 1583.3,
+                "end": 1587.6
+              }
+            },
+            {
+              "he": "וקו האמצעי נקרא בריח התיכון שמבריח מן הקצה כו'",
+              "en": "It's one *inyan* from the beginning to the end.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [543, 552],
+                "start": 258.2,
+                "end": 260.28
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "keyPoint",
+              "text": "That is the general matter of the middle line, which joins the two lines of right and left, and the class stops here. It is a very short chapter, but it has to be gone over with a very big *iyun* (close analysis): the middle line goes from one end to the other and is one *inyan* all the way through, while the right and left lines are only branches that split off.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [1341, 1445],
+                  "start": 636.81,
+                  "end": 677.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The main *mashpia* is the *Keser*, and the main *mekabel* is *Malchus*, which has nothing of its own. It is *davka* the middle line that connects them: *Keser*, *daas*, *tiferes*, *yesod*, *Malchus*. *Daas* is even called *daas tachton* (the lower knowledge) and *Keser* *daas elyon* (the higher knowledge). And the *Keser* is the *Malchus*: the *Keser* of the lower level is the *Malchus* of the upper one.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3157, 3298],
+                  "start": 1425.32,
+                  "end": 1494.56
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Keser* is *ratzon* (will), also called thought: a thought of the will, not of the intellect. There, *sof maaseh b'machshava techila* (the end of the deed is first in thought): *Malchus* is at the beginning of the will, and the middle line connects them. So the *briach hatichon* (the middle bar) runs from end to end, *mamash* one *inyan*: it is called *emes* (truth), the line of Yaakov.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3299, 3434],
+                  "start": 1494.6,
+                  "end": 1556.69
+                }
+              ],
+              "outOfPlace": "From the review of the whole chapter later in class 031 (w1535 on), placed under the lines it goes over."
+            },
+            {
+              "kind": "explanation",
+              "text": "**The particular ways that they connect is called *yud-beis gvulei alachson***, the twelve diagonal boundaries. Set out the *sefiros* in three lines and three levels, *Chabad* or *Kachab*, *Chagas* and *Nehi*, and there are horizontal, vertical and diagonal lines. On each level there are four diagonals, two pointing down and two pointing up, as in a *Magen David*: one set on *Chabad*, one on *Chagas*, one on *Nehi*. That is one way to count them.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3461, 3692],
+                  "start": 1572.82,
+                  "end": 1705.8
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The studs of the sukka",
+              "text": "Another way, from one of the explanations of *Imrei Bina*, though how it works is not entirely clear: the *sukka*. It has six surfaces, four walls, the ceiling and the floor: the six directions. It has eight corners, which will connect later to how the brain of *daas* opens up. And it has twelve studs: four in the ceiling, four on the floor and four on the sides holding it up. Seen in a *sukka*, the lines are three lines crossing, a three-dimensional cross.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3693, 3885],
+                  "start": 1705.8,
+                  "end": 1808.54
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Pointing at the studs",
+              "text": "That is what you do in the *naanuim* (the waving of the *lulav*). From the center to the studs there are twelve diagonal lines. Why call a stud diagonal, when it looks horizontal? Standing in the middle of the *sukka* doing the *naanuim*, you point at the walls, the ceiling and the floor, and those are straight. To point at any stud, you have to go diagonal.",
+              "audio": [
+                {
+                  "lecture": "031 Tape026-Side1-Ch20.mp3",
+                  "words": [3886, 4038],
+                  "start": 1811.04,
+                  "end": 1884.98
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Turning your hand on the book",
+              "text": "A stud still looks horizontal, not diagonal. So close your book: it is a block, like an elongated *sukka*. Put your right hand flat on top, half on the book and half off it on the right side, and bring it over to the side: now you touch the right side, vertical, where before you touched the top, horizontal. To go between the two you turn your hand along the corner, the edge between top and right, like the hinge a door turns on. Along those edges it turns from top to right, from right to front, from front to left.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [7, 365],
+                  "start": 2.77,
+                  "end": 155.96
+                }
+              ],
+              "outOfPlace": "The new tape side opens by finishing the diagonal lines of line 24 from class 031; class 032 reads line 24 itself only at w527."
+            },
+            {
+              "kind": "explanation",
+              "text": "Right and left are opposites, like up and down, so no diagonal joins them; a straight line does. Right is *chesed* and left is *gevura*, and they cannot actually touch. But the front is *tiferes*, and from *chesed* to *tiferes* you go along a diagonal. So in the diagram of three lines: from *chesed* to *gevura* a horizontal line, from each of them to *tiferes* a diagonal. The diagonals are where one changes over to the other: twelve combinations, the *kavei alachson* (diagonal lines).",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [366, 526],
+                  "start": 157.98,
+                  "end": 251.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The middle line is called the *briach hatichon* that runs from one end to the other: as said before, **it's one *inyan* from the beginning to the end**.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [527, 552],
+                  "start": 251.8,
+                  "end": 260.28
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The inner Keser: a will above the lines, unlimited, with ten sefiros of its own",
+      "summary": "The middle line can join right and left because it reaches the inner *Keser*, the essential will, which is simply what He wants and has no division. That will and its delight also have ten *sefiros*, a reason and attributes, all unlimited, and so they are called the days of old.",
+      "passages": [
+        {
+          "lines": [
+            "s77hpbow",
+            "ampmraon"
+          ],
+          "phrases": [
+            {
+              "he": "דהיינו שעולה עד בחינת פנימית הכתר,",
+              "en": "It goes all the way to the *etzem haratzon*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [567, 576],
+                "start": 268.67,
+                "end": 271.28
+              }
+            },
+            {
+              "he": "שלמעלה מהתחלקות הקוין",
+              "en": "There's no *hischalkus kavin* in it.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [621, 628],
+                "start": 288.1,
+                "end": 290.38
+              }
+            },
+            {
+              "he": "על כן יש בכחו לחבר ולכלול ב' הקוין כו'.",
+              "en": "That's why it can include the two *kavin*, right and left.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [645, 655],
+                "start": 297.72,
+                "end": 300.54
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The middle line can do this because it rises to the inner *Keser*. Running from end to end, **it goes all the way to the *etzem haratzon*** (the essence of the will), above the division of the lines. The will comes as a *hechlet atzmi* (an essential decision): that's what He wants, and that's what He wants. **There's no *hischalkus kavin*** (division into lines) in it, and since it is higher than the division, **that's why it can include the two *kavin*, right and left**.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [553, 655],
+                  "start": 260.28,
+                  "end": 300.54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "bzlbsqv7",
+            "5l777jtx"
+          ],
+          "phrases": [
+            {
+              "he": "וביאור ענין פנימית הכתר דנאצלים שנקרא כתר שבכתר (והוא בחינת כתר דעתיק יומין ואריך אנפין כו') היינו בחינת הרצון והתענוג הבא בגלוי,"
+            },
+            {
+              "he": "שנקרא אור הכתר,"
+            },
+            {
+              "he": "שגם הוא כלול מעשר ספירות",
+              "en": "*Keser* is also made of ten *sefiros*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [688, 694],
+                "start": 321.94,
+                "end": 326.04
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The inner *Keser* of the emanated worlds, called *Keser sheb'Keser*, is the *Keser* of *Atik Yomin* and *Arich Anpin*: the will and delight that come into the open, called the light of the *Keser*. And **Keser is also made of ten *sefiros***.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [656, 694],
+                  "start": 300.54,
+                  "end": 326.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "zrx6m2dg",
+            "krwj5ccs",
+            "risurkmt"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת חכמה שבכתר זהו הטעם לרצון ונקרא טעם כמוס לרצון וכן יש בו חסד ונצח"
+            },
+            {
+              "he": "והכל בבחינת הרצון שהוא בלתי מוגבל,",
+              "en": "When it comes, the actual *ratzon* itself is *bilti mugbal*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [723, 733],
+                "start": 346.38,
+                "end": 351.34
+              }
+            },
+            {
+              "he": "גם שבא בגלוי מעצם העלם הרצון כנזכר לעיל"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Chachma* in the *Keser* is the reason for the will, called *taam kamus l'ratzon* (the hidden reason for the will), and there is *chesed* and *netzach* in it too. But it is all in the will, which is unlimited: even when it comes out of the hidden will, **the actual *ratzon* itself is *bilti mugbal*** (unlimited). As will be learned later, even the *ratzon prati* (a particular will) is really unlimited.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [695, 759],
+                  "start": 326.04,
+                  "end": 364.18
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The house he really wants",
+              "text": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Even some stupid person, anybody, really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [760, 890],
+                  "start": 365.04,
+                  "end": 417.27
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "crude"
+                ],
+                "reason": "Calls an ordinary person \"stupid\" in passing.",
+                "action": "replace",
+                "publishable": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Anybody really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite."
+              }
+            }
+          ]
+        },
+        {
+          "lines": [
+            "xxzhkqd3"
+          ],
+          "phrases": [
+            {
+              "he": "ועל כן המדות שברצון ותענוג נקרא ימי קדם לגבי מדות שבחכמה ובינה שבאים בהגבלה כפי הגבלת השכל הגלוי בלבד"
+            },
+            {
+              "he": "כמו שיתבאר,",
+              "en": "this will be explained later",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [980, 984],
+                "start": 457.39,
+                "end": 459.36
+              }
+            },
+            {
+              "he": "עד בחינת מלכות שבכתר"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So the attributes in the will and delight are called *yemei kedem* (the days of old), as against the attributes in *chachma* and *bina*, which come limited by the revealed intellect; **this will be explained later**. Notice that here *yemei kedem* is said relative to other attributes, called *yemei olam* (the days of the world), while earlier in the book the attributes of *Adam Kadmon* are called *yemei olam* and those before the *tzimtzum* (contraction) *yemei kedem*. It depends on what they are compared with: here, as the text says, with the limited attributes of the intellect.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [891, 988],
+                  "start": 417.27,
+                  "end": 461.21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Where the will divides, and where it does not: a reason, even a hidden one",
+      "summary": "The outside of the *Keser*, its *chachma*, divides into right, left and middle because there the will has a hidden reason. The inner *Keser* has no reason at all, not even a hidden one: that is what He wants, and there is nothing to ask.",
+      "passages": [
+        {
+          "lines": [
+            "zjzdnw3o",
+            "egapaehh"
+          ],
+          "phrases": [
+            {
+              "he": "ומבחינת חיצוניות דכתר",
+              "en": "meaning from *chachma* of the *Keser*, not from *Keser* of *Keser*",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [992, 1002],
+                "start": 462.6,
+                "end": 470.02
+              }
+            },
+            {
+              "he": "נחלק לג' קוין"
+            },
+            {
+              "he": "מפני שבטעם הכמוס לרצון נקרא התחלקות הרצון לחסד וגבורה וממוצע כו'",
+              "en": "Where there is an explanation of why you want this, there there can already be a division of *chesed*, *gevura* and *memutza*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1016, 1049],
+                "start": 478.22,
+                "end": 492.11
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The outside of the *Keser*, **meaning from *chachma* of the *Keser*, not from *Keser* of *Keser***, divides into three lines. The reason is the hidden reason for the will: **where there is an explanation of why you want this, there there can already be a division of *chesed*, *gevura* and *memutza***.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [989, 1049],
+                  "start": 461.21,
+                  "end": 492.11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2vlp2myv",
+            "wfhz6btk"
+          ],
+          "phrases": [
+            {
+              "he": "אבל בכתר שבכתר שלמעלה מטעם כמוס לרצון עדיין, רק רצון פשוט ועצמי"
+            },
+            {
+              "he": "בלא טעם כלל",
+              "en": "There's no reason for it.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1068, 1072],
+                "start": 497.1,
+                "end": 498.06
+              }
+            },
+            {
+              "he": "כי אין טעם לרצון כלל,"
+            },
+            {
+              "he": "גם לא טעם כמוס",
+              "en": "Really there's not even a *taam kamus*: the *ratzon* itself really doesn't even have a *taam kamus*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1129, 1145],
+                "start": 520.74,
+                "end": 525.52
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "But in *Keser sheb'Keser*, the *etzem haratzon* above the hidden reason, there is only a simple, essential will: **there's no reason for it**. That's what He wants, and that's what He wants; there is nothing to divide. You can't move to the right or the left. Only in the hidden reason can you already move right or left. Why? Because there is no reason for a will at all, **not even a *taam kamus***.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1050, 1155],
+                  "start": 492.11,
+                  "end": 531.14
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "If a will has no reason, what about the delight: isn't that the reason he wants it?",
+              "askedBy": "teacher",
+              "text": "That is not the *taam* (reason) meant here; it means an intellectual reason. That he wants the *taanug* (delight) is the *etzem haratzon* itself: *ratzon* and *taanug* are *mamash* the same thing.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1156, 1223],
+                  "start": 531.38,
+                  "end": 551.04
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Chinese food and Sephardic food",
+              "text": "And the delight has no reason either: why does he want this delight and not another? As they say, *al taam v'al reiach ein l'hisvakeiach* (about taste and smell there is no arguing). One man likes Chinese food, another Sephardic food; there is nothing to talk about. *Oif a taaveh fregt men nisht kein kashes*: on a craving you don't ask questions. That's what he wants. And since there is no reason, it cannot divide into right and left.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1224, 1324],
+                  "start": 552.52,
+                  "end": 586.92
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Only at the hidden reason, once you come up with a reason, can it divide. And the reason is really a rationalization, just to explain it to other people, to show them you're not totally crazy. \"But really it's not true, you are totally crazy\": the will is totally crazy; it has absolutely no reason to it.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1325, 1420],
+                  "start": 589.54,
+                  "end": 621.24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4pi6gyvd",
+            "jv7d6a5h"
+          ],
+          "phrases": [
+            {
+              "he": "כענין שתוק כך עלה במחשבה כו',",
+              "en": "There's nothing to talk about.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1491, 1495],
+                "start": 647.7,
+                "end": 648.92
+              }
+            },
+            {
+              "he": "וכמו שכתוב במקום אחר"
+            },
+            {
+              "he": "על כן הוא למעלה מהתחלקות ימין ושמאל כו',"
+            },
+            {
+              "he": "הגם שבא בגלוי מבחינת האחרונה שבהעלם הרצון דבחינת אדם קדמון",
+              "en": "Even though it's already a *gilui* from the *helem haratzon* of *Adam Kadmon*, is still really infinite and without divisions.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1547, 1567],
+                "start": 671.72,
+                "end": 679.44
+              }
+            },
+            {
+              "he": "(כנזכר לעיל בסוף אות י''ט)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "story",
+              "title": "Be silent: so it arose in thought",
+              "text": "*Shtok, kach ala b'machshava* (Be silent, so it arose in thought) is about Rabbi Akiva. The angels asked, is that what You give such a great *talmid chacham* (Torah scholar)? It was Moshe Rabbeinu, a listener points out, who said it to the Master of the World. And the answer: be silent, so it arose in thought. **There's nothing to talk about**. It is the *etzem haratzon*: you can't ask for a reason, and there are no whys over there.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1421, 1528],
+                  "start": 621.24,
+                  "end": 661.95
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So it is above the division of right and left, though it already comes into the open from the concealed will: **even though it's already a *gilui* from the *helem haratzon* of *Adam Kadmon*, is still really infinite and without divisions**.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1529, 1570],
+                  "start": 661.95,
+                  "end": 680.83
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The curtain in the head, the dew that crosses it, and a will that can be changed",
+      "summary": "Between the inner *Keser* and its *chachma* is a partition, the holy of holies and the holy, and in the head it is the membrane of air between the brain and the skull. Bringing the dew of crystal down across it, through the study of *Chassidus*, gives an addicting delight and, in full, literal immortality and the resurrection; and a prayer to the will from before the partition can change judgement into kindness.",
+      "passages": [
+        {
+          "lines": [
+            "7wohuesj",
+            "yu4yzmlk"
+          ],
+          "phrases": [
+            {
+              "he": "ועל זה אמר והבדילה הפרוכת בין הקדש כו'"
+            },
+            {
+              "he": "בחינת פרסא שבין כתר דכתר לחכמה כו'",
+              "en": "The *Keser d'Keser* is called the *Kodesh HaKodashim*, and *chachma d'Keser* is called *Kodesh*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1587, 1600],
+                "start": 697.28,
+                "end": 701.2
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So it says *v'hivdila haparoches* (the curtain shall divide) between the holy and the holy of holies: the *parsa* (partition) between *Keser* of *Keser* and *chachma* of *Keser*. **The *Keser d'Keser* is called the *Kodesh HaKodashim*, and *chachma d'Keser* is called *Kodesh***.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1571, 1600],
+                  "start": 680.83,
+                  "end": 701.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "p3k5o756"
+          ],
+          "phrases": [
+            {
+              "he": "והוא בחינת קרומא דאוירא",
+              "en": "On the brain, there is a layer of air between the brain and the *gulgalta*.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [1605, 1619],
+                "start": 706.12,
+                "end": 717.02
+              }
+            },
+            {
+              "he": "כמו שכתוב במקום אחר באריכות",
+              "en": "this is all explained in other places at great length",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [2595, 2605],
+                "start": 1182.49,
+                "end": 1186
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "It is the *kruma d'avira* (the membrane of air): **on the brain, there is a layer of air between the brain and the *gulgalta*** (the skull). Whether the scientists know about this yet or not, it is there. They already know there is a layer of water, *lachluchis* (moisture), on top of the brain; then there is a layer of air, and that is a *parsa*.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1601, 1662],
+                  "start": 701.2,
+                  "end": 738.2
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "A miss is as good as a mile",
+              "text": "*Parsa* means a mile, a Persian mile, 2.3 miles. How can a tiny layer be a mile? You know the saying, a miss is as good as a mile: if you're trying to shoot somebody, missing him by one inch is as good as missing him by a mile. So a tiny little layer is called a mile. It is a separation, and once it's a separation, it's a separation.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1663, 1769],
+                  "start": 739.04,
+                  "end": 770.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Above the *kruma d'avira*, on the bottom of the skull, is another layer of *lachluchis*, and this too is known. The water on the skull is called the upper water, the water on the brain the lower water. Bringing down from the upper water to the lower is called *tala d'vdulcha* (the dew of crystal). It is a physical thing, a physical drop: not actually water, but a certain kind of liquid.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1770, 1879],
+                  "start": 770.28,
+                  "end": 828.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "They found out that what makes a person smart is not the volume of the brain but its surface area: the more wrinkles, the more surface. And the surface is moisture, where the *taanug* is. The *lachluchis* is the inside of *Atik*, the inside of the inside of *Abba*, where all the *haskalos* (insights) come from: the *koach hamaskil* (the power that brings understanding), *chachma d'Arich*, as in chapters one and two. Higher than that is the *gulgalta*, the *etzem haratzon*, *Keser sheb'Keser*: the holy of holies.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [1880, 2045],
+                  "start": 829.92,
+                  "end": 903.1
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "An injection straight into the brain",
+              "text": "The way to bring the *tala d'vdulcha*, also called *tal techiyas hameisim* (the dew of the resurrection), down from the upper waters to the lower is the study of *Chassidus*. So when we say the study of *Chassidus* is extremely addicting, it is not a spiritual or abstract matter: it is an actual drug injected directly into your brain, not into your arm. It comes from the essential delights, the *sam hachaim* (the elixir of life), and there is no bigger delight in the world. Once you have had an injection, it is completely addicting, with no known method to beat it. AA will not help; there is no *Tala d'Vdulcha* Anonymous, and if there were, it couldn't help you. Once you get a taste, it's all over.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2046, 2264],
+                  "start": 903.58,
+                  "end": 1016.66
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Most drugs are bad for your health and mess up your brain. Remember the advertisement, \"this is your brain on drugs\"? A friend found it a weird advertisement: that's my brain on drugs? It looks great. Look at those sunny-side-up eggs. Really, the *tala d'vdulcha* is like that.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2265, 2367],
+                  "start": 1017.52,
+                  "end": 1064.64
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Not only does it not lower your brain power, it raises it; not only does it not take from your health, it adds to it, up to a *mabul* (flood). When the upper waters come down to the lower and the windows of heaven open, the *tala d'vdulcha* comes down not drop by drop, which gives a fantastic rush, but constantly, in infinite amounts, and then it makes a person immortal. Literally: not spiritual immortality in heaven but physical. Bullets, fire and water will not kill him, and even demons and angels will be less than him. That is why the angels are so afraid of letting us have this taste of the Tree of Life. The partition between the two waters is the *kruma d'avira*, and **this is all explained in other places at great length**.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2368, 2606],
+                  "start": 1064.78,
+                  "end": 1186.47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "edd7nlcw",
+            "2tnhylu2"
+          ],
+          "phrases": [
+            {
+              "he": "ועל כן אומר יהי רצון מלפניך,"
+            },
+            {
+              "he": "מלפני הפרסא כו'",
+              "en": "higher than the *kruma d'avira*",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [2613, 2617],
+                "start": 1189.24,
+                "end": 1191.55
+              }
+            },
+            {
+              "he": "לשנות מרצון של דין לרצון של חסד וכהאי גוונא כו'",
+              "en": "to change over the whole from the *ratzon shel din* of the *golus* to the *ratzon shel chesed* of *bias haMoshiach*",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [2631, 2652],
+                "start": 1197.56,
+                "end": 1207.27
+              }
+            },
+            {
+              "he": "ודי למבין:",
+              "en": "This is enough to understand what we're really talking about.",
+              "audio": {
+                "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                "words": [2653, 2664],
+                "start": 1208.62,
+                "end": 1213.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So we say *yehi ratzon milfanecha* (may it be the will from before You), from before the *parsa*, **higher than the *kruma d'avira***: to change the will of *din* to a will of *chesed*. That is, **to change over the whole from the *ratzon shel din* of the *golus* to the *ratzon shel chesed* of *bias haMoshiach***: from the will of judgement of the exile to the will of kindness of the coming of Moshiach. And this is enough to understand what we are really talking about.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2607, 2665],
+                  "start": 1186.47,
+                  "end": 1214.52
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "That is what we are really talking about. However ridiculous it sounds, if you don't believe it you are a heretic, not Jewish: it is *techiyas hameisim* (the resurrection), one of the Rambam's thirteen principles. Not only can this keep a living person immortal; it can bring a dead person back to life and make him immortal, though nothing is left of him but the *etzem luz* (the luz bone). Jurassic Park times, gigantic miracles, and the cause is *Chassidus*. What we hold in our hands is the hypodermic needle that injects straight into your brain.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2666, 2826],
+                  "start": 1215.44,
+                  "end": 1303.26
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "Says that whoever does not believe in the resurrection as taught here is a heretic and \"not Jewish\".",
+                "action": "replace",
+                "recommend": "raw",
+                "publishable": "That is what we are really talking about. However ridiculous it sounds, it is *techiyas hameisim* (the resurrection), one of the Rambam's thirteen principles. Not only can this keep a living person immortal; it can bring a dead person back to life and make him immortal, though nothing is left of him but the *etzem luz* (the luz bone). Jurassic Park times, gigantic miracles, and the cause is *Chassidus*. What we hold in our hands is the hypodermic needle that injects straight into your brain."
+              }
+            },
+            {
+              "kind": "aside",
+              "text": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform. He is even *chayav misa* (liable to death), \"you're supposed to kill a guy like that\"; only nowadays they are *tinok shenishba* (captive children, who never learned). The tape ends mid-sentence.",
+              "audio": [
+                {
+                  "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+                  "words": [2827, 2953],
+                  "start": 1303.26,
+                  "end": 1375
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups",
+                  "other"
+                ],
+                "reason": "Calls the unbeliever \"Reform\", and says a heretic is liable to death and \"supposed to be killed\" but for the status of a tinok shenishba.",
+                "action": "replace",
+                "recommend": "judgment",
+                "judgmentNote": "That denying a principle of faith is heresy is doctrine and could print as said; the jab at Reform and the line about killing the heretic, even with tinok shenishba, need a person to weigh.",
+                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew). The tape ends mid-sentence."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "Why is *netzach* on the right side, with *chesed*, though it is conquest?",
+      "lines": [
+        "3rjzpvs5",
+        "6zhywlzz"
+      ]
+    },
+    {
+      "question": "Why can *daas* make a decision that *chachma* and *bina* by themselves cannot?",
+      "lines": [
+        "hoghevys",
+        "tjgcxrjz"
+      ]
+    },
+    {
+      "question": "How is *rachamim* different from kindness, and what does parole have to do with it?",
+      "lines": [
+        "23satlit",
+        "stujf5fr"
+      ]
+    },
+    {
+      "question": "What do *netzach*, *hod* and *yesod* each do when a teacher gives over a subject to a student?",
+      "lines": [
+        "jud5g5du",
+        "tpqoepv5",
+        "sczz3usq",
+        "pacplvxi"
+      ]
+    },
+    {
+      "question": "Why does the outside of the *Keser* divide into lines while *Keser sheb'Keser* does not?",
+      "lines": [
+        "zjzdnw3o",
+        "egapaehh",
+        "2vlp2myv",
+        "wfhz6btk"
+      ]
+    },
+    {
+      "question": "What is the *kruma d'avira*, and what is brought across it through the study of *Chassidus*?",
+      "lines": [
+        "p3k5o756"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "031 Tape026-Side1-Ch20.mp3",
+      "words": [1446, 1502],
+      "reason": "logistics",
+      "note": "The end of the phone call: when to call after Shabbos, wishes for a happy Chanukah, and finding the place again."
+    },
+    {
+      "lecture": "031 Tape026-Side1-Ch20.mp3",
+      "words": [1503, 1534],
+      "reason": "reading",
+      "note": "He rereads lines 21-23 before the review."
+    },
+    {
+      "lecture": "031 Tape026-Side1-Ch20.mp3",
+      "words": [3435, 3460],
+      "reason": "logistics",
+      "note": "\"So now we are getting back to the text. Where are we, exactly?\""
+    },
+    {
+      "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
+      "words": [0, 6],
+      "reason": "logistics",
+      "note": "\"Yeah, I had to flip the tape.\""
+    }
+  ],
+  "notes": [
+    {
+      "text": "Class 031 is catalogued as chapter 20 (Tape026-Side1-Ch20) but is a class on chapter 21: it opens \"Okay, kaf-alef\" (w0-2), reads lines 1-23 (w3-1352), reviews them (w1535-3434), reads lines 23-24 again (w3461) and teaches the twelve diagonal lines to the end of the side, which class 032 finishes. The alignment gives 031 no line of chapter 21 (so the dump shows lines 1-23 as NOT READ) and instead ties three of its readings to chapter 20 lines 38-40 (w130, w381, w549, confidence 0.38-0.6); those are his readings of chapter 21 lines 7-8, 13-14 and 15. Because of this, study-check warns that the phrase audio in 031 has no part on chapter_21, and reports no coverage line for 031; by hand, 031 is cited from w0 to w4038 except the stretches in \"omitted\". For the owner of data/alignments and classes.txt.",
+      "lines": [
+        "hs265b6q",
+        "3rjzpvs5",
+        "hoghevys",
+        "gnsidoux",
+        "nedzsunz"
+      ]
+    },
+    {
+      "text": "His text differs from the chapter file in places: line 1 \"dei-inun chachma yemin u'vina smol v'daas b'emtza\"; line 7 \"v'haynu ma she'hanetiya hi l'tovas hachesed mitzad hasechel\"; line 17 \"dugmas rachamim\" for \"shehu k'mo harachamim\"; line 23 \"d'ihu shemechaber\". His reading of line 20 is garbled and does not include \"kelayos yoatzos hen v'lav\"; the block on lines 19-22 leaves the kidneys out.",
+      "lines": [
+        "hs265b6q",
+        "3rjzpvs5",
+        "23satlit",
+        "tpqoepv5",
+        "7htex5zm"
+      ]
+    },
+    {
+      "text": "Line 15: he reads only \"k'mo ki yetzer lev\" and \"ki raba raas ha'adam\" and gives the point (the same analysis, before and after the flood, led to opposite decisions); he does not translate the verses, so the block keeps them transliterated and the phrase's English is his \"the analysis is the same thing, the people are bad\".",
+      "lines": [
+        "gnsidoux"
+      ]
+    },
+    {
+      "text": "The \"shtok\" story (032 w1421-1477): he first places it with Rabbi Akiva and the angels asking \"that's what you give such a great talmid chacham?\", and a listener says Moshe Rabbeinu said it, which he accepts. In the Gemara (Menachos 29b) it is Moshe who asks and is told \"be silent, so it arose in thought\". The block keeps what was said.",
+      "lines": [
+        "4pi6gyvd"
+      ]
+    },
+    {
+      "text": "The count of the twelve diagonal lines (031 w3556-3692) is muddled (\"six horizontal lines going down... six pointing up\", \"about must be seven lines\"); the block gives only his Magen David count, four per level on three levels. In the sukka (w3765-3820) his list of the eight points (chachma, bina, chesed, gevura, daas turning into two) does not add up to eight; the block does not list them. He says himself that he is not exactly sure how the sukka explanation of Imrei Bina works.",
+      "lines": [
+        "nedzsunz"
+      ]
+    },
+    {
+      "text": "Line 32 (032 w911-929): \"that's l'gabei hamiddos of Atikus(?) which is called yemei olam\" is garbled; the block says only that here yemei kedem is relative to other attributes called yemei olam, and gives his contrast with the earlier chapter.",
+      "lines": [
+        "xxzhkqd3"
+      ]
+    },
+    {
+      "text": "032 w7-12 \"It it's still horizontal, not diagonal\" may be a listener's objection or his own; the block writes it as the question the book demonstration answers. 032 w2827-2843 (\"You want to talk about flight of tell you, huh? I mean it's like totally ridiculous things.\") is garbled and may be a listener; the block reads it as his \"flights of fancy\" before \"this is the emes\".",
+      "lines": [
+        "nedzsunz",
+        "2tnhylu2"
+      ]
+    },
+    {
+      "text": "Class 032 has Sofer word times, not re-timed ones; its seconds may be off. The anatomy (a layer of air between brain and skull, intelligence from the surface of the brain) and the \"Tanya\" reference (bringing down mercy on your soul) are written as he gave them.",
+      "lines": [
+        "p3k5o756",
+        "stujf5fr"
+      ]
+    },
+    {
+      "text": "Flags: the \"stupid\" in the house mashal (crude, softened); the heresy statement about the resurrection (raw: the doctrine of the thirteen principles); the closing aside calling unbelievers Reform and liable to death (judgment). The O.J. Simpson trial and the dog in the hod mashal are ordinary examples and are not flagged.",
+      "lines": [
+        "risurkmt",
+        "2tnhylu2",
+        "pdigphbs",
+        "jud5g5du"
+      ]
+    }
+  ]
+}
