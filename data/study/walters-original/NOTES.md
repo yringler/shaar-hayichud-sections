@@ -121,7 +121,10 @@ the sensitivity section below is not optional reading.
   his hot cocoa and fuzzy slippers and the knock at the door; the two
   beggars on the park bench ("He gave me a coat." "I don't need a coat.");
   the cat stalking a mouse; "I ran out of passing-the-salt movements." Keep
-  the props, the jokes and the dialogue.
+  the props and the jokes; the dialogue he acts out becomes a sentence of
+  prose, with at most one line of his quoted per block (STYLE.md, "Write a
+  guide, not a recording"; the files were rewritten this way in November
+  2026, as `markel-advanced` was).
 - He reuses his images across chapters and refers back to them without
   retelling them: the coat (10, 30), the architect's blueprint (13-15), the
   teacher's class plan and how much to make the student work (13, 15, 21),
@@ -204,37 +207,42 @@ Flagged, with the precedent:
   (28), modern men and ancient cultures (27), builders as "stupid people"
   (14), robot teachers and Walmart cashiers (15), an Iranian (22), Africa
   (16, 18): `other-groups`. Criticism of an idea ("science doesn't tell you
-  why", the philosopher's definition of G-d) is not flagged.
+  why", the philosopher's definition of G-d) is not flagged. His "a kind of
+  a stupid humility" (28) is written "a kind of foolish humility", at the
+  reviewer's word, and not flagged.
 - **Movements within Judaism**: Reform and Conservative (26, 32), the "Rebbe
   is Moshiach" belief as an example (17, 26), the Chassidim and Misnagdim
   history told from memory (18), baalei teshuva who are "not going to be
-  human" (20), chassidim who dress by imitation (28): `other-groups`. The
+  human" (20), chassidim who dress by imitation (18, 28): `other-groups`. The
   Alter Rebbe and the Gra aside (22) was left, as it criticises no one.
 - **Other religions**: Christianity and "Yoshke" (20), missionaries (20, 25),
   Eastern religions, New Age and "cultish" things (17): `other-religions`.
   Describing Arius as "this Christian" (1) is not flagged.
-- **Politics**: a single partisan side used as an example ("only the
-  Republican side" in 1, "a liberal" in 19, liberalism in 26), church and
-  state (19), Israel and democracy (20, omit): `politics`, replaced with a
+- **Politics**: a single partisan side used as an example ("a liberal" in
+  19, liberalism in 26), church and state (19): `politics`, replaced with a
   neutral word. Liberal and conservative named evenly as two leanings (17,
-  20) was left.
-- **Women**: his own generalisations beyond a line (chapter 1, class 17:
-  women's daas, multitasking, judges), boys and girls learning kashrus (2),
-  "women get more emotional, because they're kalei daas" (32), and the
-  "some lady" of the chicken story (12, borderline): `women`. The line's own
+  20) was left. The reviewer removed the flags on "only the Republican side"
+  (1) and on Israel and democracy (20): printed as said.
+- **Women**: his own generalisations beyond a line ("women get more
+  emotional, because they're kalei daas" in 32, and the "some lady" of the
+  chicken story in 12, borderline): `women`. The reviewer removed the flags
+  on chapter 1, class 17 (women's daas, multitasking, judges) and on boys
+  and girls learning kashrus (2): printed as said, in condensed form. The line's own
   words ("a light daas, like women") and a line's Talmudic figure (30) are
   not flagged. Where his remark rests on a halacha or a saying of Chazal
   (women are not judges, *bina yeseira*), flag his own explanation of it and
   say so in the reason.
 - **Health and law**: his own medical claims and remedies (curing cancer and
   an inhalant in the Q and A on 15, the adrenal glands and the fluid under
-  the skull in 21, the liver, faith healing and "fry their brain" in 27,
+  the skull in 21, the liver and "fry their brain" in 27,
   reflexology and bloodletting in 31, wrapping a fevered patient in 22),
-  loose rulings on liability (29) and on risking one's life for a mitzva
-  (32): `health-or-legal`. Physiology that only explains a line, or the
-  Mitteler Rebbe's own claim (sight failing in old age, 31), is not flagged.
+  loose rulings on liability (29): `health-or-legal`. Physiology that only
+  explains a line, or the Mitteler Rebbe's own claim (sight failing in old
+  age, 31), is not flagged; nor, after review, faith healing (27) or the
+  Alter Rebbe "allowed to expect a miracle" on risking one's life (32).
 - **Misstated halacha and history under his name**: the mitzva of kiddush
-  "is not verbal" and no wine on Shabbos if you don't enjoy it (26), the bomb
+  "is not verbal" and no wine on Shabbos if you don't enjoy it (26), a
+  *shechita* "back and forth all day" (2, `judgment`), the bomb
   built "before the Russians" (2): `other`, with a publishable text that
   drops the claim. A source slip (a wrong chapter or tractate) only goes in
   `notes`.
