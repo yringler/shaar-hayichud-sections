@@ -54,6 +54,8 @@ export interface StudySensitivity {
   action: 'replace' | 'omit';
   publishable?: string;
   publishableTitle?: string;
+  /** YYYY-MM-DD: a person accepted this flag as it stands. Not exported. */
+  reviewed?: string;
 }
 
 export interface StudyBlock {

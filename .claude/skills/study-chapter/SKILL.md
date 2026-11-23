@@ -150,7 +150,8 @@ it. For each block, the question is "did he say this, here?"
       the words it cites, and still has his examples and best lines.
 - [ ] Every block a public edition could not print as it stands has
       `sensitivity`, in a block of its own where possible, with a
-      `publishable` text that keeps the teaching.
+      `publishable` text that keeps the teaching. You never add
+      `reviewed`; you delete it from any flag whose block you changed.
 - [ ] Phrases: reread the words each phrase's `audio` cites: its `en` is
       what he says there, for that Hebrew and no more. Phrases he does not translate
       have no `en`. The cuts fall where he pauses.

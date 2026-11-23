@@ -36,6 +36,7 @@ import {
   type StudyIssue,
   type StudyPassage,
   type StudyPhrase,
+  type StudySensitivity,
   type StudySeriesFile,
 } from './study.js';
 import type { StoredAlignment } from './transcripts.js';
@@ -175,8 +176,14 @@ const trimBlock = (b: StudyBlock): ExportBlock => ({
   ...(b.join ? { join: true as const } : {}),
   audio: b.audio.map(trimAudio),
   ...(b.outOfPlace !== undefined ? { outOfPlace: b.outOfPlace } : {}),
-  ...(b.sensitivity !== undefined ? { sensitivity: structuredClone(b.sensitivity) } : {}),
+  ...(b.sensitivity !== undefined ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
 });
+
+/** The flag as the beta app reads it: the review stamp is editorial and stays in data/study/. */
+function trimSensitivity(s: StudySensitivity): StudySensitivity {
+  const { reviewed: _reviewed, ...rest } = structuredClone(s);
+  return rest;
+}
 
 /** One guide as the app reads it. `lines` is the chapter's lines in order. */
 export function exportChapter(file: StudyChapterFile, lines: readonly Line[], stale: boolean): ExportChapter {

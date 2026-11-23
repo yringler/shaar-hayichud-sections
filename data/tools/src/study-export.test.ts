@@ -109,6 +109,7 @@ describe('exportStudy, beta edition', () => {
     for (const b of blocks) for (const a of b.audio) assert.deepEqual(Object.keys(a), ['lecture', 'start', 'end']);
     // Kept: sensitivity, phrase notes, skips, and every phrase knows its lines.
     assert.ok(blocks.some((b) => b.sensitivity !== undefined));
+    assert.ok(!json.includes('"reviewed"'), 'the review stamp reached the beta export');
     assert.ok(ch.sections.some((s) => s.passages.some((p) => p.skip !== undefined)));
     const first = ch.sections[0]!.passages[0]!;
     // A phrase he translates carries his English and where he says it; one he only reads, its Hebrew.
