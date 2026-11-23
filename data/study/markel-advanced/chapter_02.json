@@ -880,7 +880,15 @@
                   "start": 1140.2,
                   "end": 1172.54
                 }
-              ]
+              ],
+              "sensitivity": {
+                "categories": [
+                  "crude"
+                ],
+                "reason": "Calls the ordinary person who must be schooled \"a stupid guy\".",
+                "action": "replace",
+                "publishable": "That is another thing. In America the whole thing is that you have to explain it to everybody, everybody should understand. Even the simplest person has to go to school and learn it. Over there it was just for the elite. A few elite were happy to think about these things, and they never thought they should explain it to the guy working in the marketplace."
+              }
             },
             {
               "kind": "explanation",
