@@ -1,0 +1,65 @@
+{{- /* One block of a guide page, with the blocks that join it (join: true,
+       "runs on in the previous block's paragraph") spliced into its last
+       paragraph as inline spans. Context: dict "page" "block" "id" (the
+       anchor, b-<passage first line>-<n>) "joins" (slice of dict "block"
+       "id") "classes" (lecture id -> class entry from single.html: url,
+       label) "current" (the lecture of the class divider above it).
+       Every block element carries data-kind, data-lecture, data-start,
+       data-end (its first audio entry), data-tellings (JSON of its further
+       audio entries, when it has any) and data-out-of-place="1" for a block
+       said away from its passage, which is labelled "From <class> · m:ss"
+       (partials/study/from.html); the export's outOfPlace text is a note
+       for writers and is never shown. Its ▶ is a plain link to the
+       recording at that time (#t=, Media Fragments), so it works without
+       JS; a block from another class than the one around it names it. */ -}}
+{{- $page := .page -}}
+{{- $classes := .classes -}}
+{{- $current := .current -}}
+{{- $tags := dict "keyPoint" "Key point" "mashal" "Mashal" "story" "Story" "digression" "Digression" "avodah" "In practice" "question" "Question" "aside" "Aside" "recap" "Recap" -}}
+{{- $b := .block -}}
+{{- $a := index $b.audio 0 -}}
+{{- $c := index $classes $a.lecture -}}
+{{- $text := string ($page.RenderString (dict "display" "block") $b.text) -}}
+{{- range .joins -}}
+  {{- $j := .block -}}
+  {{- $ja := index $j.audio 0 -}}
+  {{- $jc := index $classes $ja.lecture -}}
+  {{- $jt := string ($page.RenderString (dict "display" "block") $j.text) -}}
+  {{- $first := replaceRE `(?s)^\s*<p>(.*?)</p>.*$` "$1" $jt -}}
+  {{- $rest := replaceRE `(?s)^\s*<p>.*?</p>\s*` "" $jt -}}
+  {{- $head := "" -}}
+  {{- if or (ne $j.kind $b.kind) (and $j.title (ne $j.title $b.title)) -}}
+    {{- with index $tags $j.kind }}{{ $head = printf `<span class="study-tag">%s</span> ` . }}{{ end -}}
+    {{- with $j.title }}{{ $head = printf `%s<span class="study-join-title">%s</span> ` $head (. | htmlEscape) }}{{ end -}}
+  {{- end -}}
+  {{- $times := "" -}}
+  {{- if isset $ja "start" }}{{ $times = printf ` data-start="%v" data-end="%v"` $ja.start $ja.end }}{{ end -}}
+  {{- $oop := "" -}}
+  {{- $jcur := $current -}}
+  {{- if $j.outOfPlace -}}
+    {{- $oop = ` data-out-of-place="1"` -}}
+    {{- $head = printf `<span class="study-from">%s</span> %s` (partial "study/from.html" (dict "audio" $ja "class" $jc "current" $current) | htmlEscape) $head -}}
+    {{- $jcur = $ja.lecture -}}
+  {{- end -}}
+  {{- $play := partial "study/play.html" (dict "audio" $ja "class" $jc "current" $jcur "inline" true) -}}
+  {{- $span := printf `<span class="study-block study-join kind-%s" id="%s" data-kind="%s" data-lecture="%s"%s%s>%s%s %s</span>`
+    $j.kind .id $j.kind ($ja.lecture | htmlEscape)
+    $times $oop
+    $play $head $first -}}
+  {{- $text = printf "%s %s</p>\n%s" (replaceRE `(?s)</p>\s*$` "" $text) $span $rest -}}
+{{- end -}}
+{{- $tag := index $tags $b.kind -}}
+<div class="study-block kind-{{ $b.kind }}{{ if ne $a.lecture $current }} is-other-class{{ end }}" id="{{ .id }}" data-kind="{{ $b.kind }}" data-lecture="{{ $a.lecture }}"{{ if isset $a "start" }} data-start="{{ $a.start }}" data-end="{{ $a.end }}"{{ end }}{{ if $b.outOfPlace }} data-out-of-place="1"{{ end }}{{ if gt (len $b.audio) 1 }} data-tellings="{{ after 1 $b.audio | jsonify }}"{{ end }}>
+  <p class="study-block-head">
+    {{- with $tag }}<span class="study-tag">{{ . }}</span>{{ end }}
+    {{- with $b.title }} <span class="study-block-title">{{ . }}</span>{{ end }}
+    {{- if eq $b.kind "question" }} <span class="study-asker">{{ if eq $b.askedBy "student" }}asked by a student{{ else if eq $b.askedBy "teacher" }}the teacher asks{{ end }}</span>{{ end }}
+    {{- if $b.outOfPlace }} <span class="study-from">{{ partial "study/from.html" (dict "audio" $a "class" $c "current" $current) }}</span>{{ end }}
+    {{- partial "study/play.html" (dict "audio" $a "class" $c "current" (cond (not $b.outOfPlace) $current $a.lecture) "inline" false) -}}
+  </p>
+  {{- with $b.question }}
+  <p class="study-question">{{ $page.RenderString . }}</p>
+  {{- end }}
+  {{ $text | safeHTML }}
+</div>
+{{- /**/ -}}

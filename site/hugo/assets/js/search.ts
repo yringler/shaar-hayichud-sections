@@ -25,7 +25,7 @@ interface Pagefind {
 const PAGEFIND_URL = '/pagefind/pagefind.js';
 const RESULTS_PAGE = 20;
 const DEBOUNCE_MS = 250;
-const KIND_LABEL: Record<string, string> = { text: 'Text', translation: 'Translation', class: 'Class', topic: 'Topic' };
+const KIND_LABEL: Record<string, string> = { text: 'Text', translation: 'Translation', class: 'Class', topic: 'Topic', study: 'Study guide' };
 
 let pagefindLoad: Promise<Pagefind> | null = null;
 function loadPagefind(): Promise<Pagefind> {
@@ -108,7 +108,8 @@ function renderResult(d: PagefindData, isHit: (w: string) => boolean): HTMLLIEle
       p.dir = 'rtl';
       p.lang = 'he';
     } else {
-      p.dir = 'ltr';
+      // A study passage's parts are its Hebrew or the teacher's English.
+      p.dir = kind === 'study' ? 'auto' : 'ltr';
     }
     renderParts(p, snippet(text, isHit));
     li.append(p);
@@ -139,6 +140,7 @@ function init(): void {
     const v = where.value;
     if (v === 'text') return { in: 'Text' };
     if (v === 'classes') return { in: 'Classes' };
+    if (v === 'study') return { in: 'Study guides' };
     const teacher = where.selectedOptions[0]?.dataset['teacher'];
     return teacher ? { teacher } : {};
   };

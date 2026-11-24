@@ -1,0 +1,25 @@
+{{- /* Content adapter: the public study guides (partials/study/index.html,
+       which reads only data/v1/study/index.json, the public edition). One
+       page per series at /study/<study series id>/ and one per guide at
+       /study/<study series id>/chapter-N/, rendered by layouts/study/list.html
+       and layouts/study/single.html. study/index.html builds the same URLs
+       (every link to a study page goes through it). /study/ is _index.md. */ -}}
+{{- $study := partialCached "study/index.html" . "study" -}}
+{{- range $s := $study.series -}}
+  {{- $.AddPage (dict
+    "path" $s.id
+    "title" (printf "Study guides: %s" $s.title)
+    "kind" "section"
+    "outputs" (slice "html")
+    "params" (dict "pageLang" "en" "dir" "ltr" "studySeries" $s.id)
+  ) -}}
+  {{- range $c := $s.chapters -}}
+    {{- $.AddPage (dict
+      "path" (printf "%s/chapter-%s" $s.id $c.number)
+      "title" (printf "Chapter %s study guide: %s" $c.number $s.teacher)
+      "kind" "page"
+      "outputs" (slice "html")
+      "params" (dict "pageLang" "en" "dir" "ltr" "studySeries" $s.id "studyChapter" $c.chapter)
+    ) -}}
+  {{- end -}}
+{{- end -}}

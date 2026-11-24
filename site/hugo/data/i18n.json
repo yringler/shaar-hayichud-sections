@@ -5,6 +5,7 @@
       "home": "Shaar Hayichud",
       "texts": "Texts",
       "classes": "Classes",
+      "study": "Study",
       "outlines": "Outlines",
       "search": "Search",
       "about": "About"
@@ -16,6 +17,10 @@
     "home": {
       "chapterCount": "{n} chapters",
       "allChapters": "All {n} chapters"
+    },
+    "study": {
+      "guide": "Study guide",
+      "badge": "Guide"
     }
   },
   "he": {
@@ -24,6 +29,7 @@
       "home": "שער היחוד",
       "texts": "טקסטים",
       "classes": "שיעורים",
+      "study": "מדריך לימוד",
       "outlines": "תקצירי שיעורים",
       "search": "חיפוש",
       "about": "אודות"
@@ -35,6 +41,10 @@
     "home": {
       "chapterCount": "{n} פרקים",
       "allChapters": "כל {n} הפרקים"
+    },
+    "study": {
+      "guide": "מדריך לימוד",
+      "badge": "מדריך"
     }
   }
 }

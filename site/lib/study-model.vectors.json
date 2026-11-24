@@ -1,0 +1,255 @@
+{
+  "$comment": "Shared test vectors for the study-guide timing model. Run by site/lib/study-model.test.mjs against hugo/assets/js/audio/study-model.ts, and meant to be run by a Dart port (packages/dart study_follow.dart) too, so the site and the apps follow a class the same way. Guides use the input shape (study.schema.json passages, sections flattened); keys are positional: passage \"i\", phrase \"i.pj\", block \"i.bj\". An `expect` lists only the fields it checks. Add a case here (not only in one test) when the logic changes.",
+  "guides": {
+    "main": [
+      {
+        "lines": ["aaaaaaaa"],
+        "phrases": [
+          { "lines": ["aaaaaaaa"], "en": "a", "lecture": "A", "start": 20, "end": 24 },
+          { "lines": ["aaaaaaaa"] },
+          { "lines": ["aaaaaaaa"], "en": "c", "lecture": "A", "start": 30, "end": 33 }
+        ],
+        "blocks": [{ "audio": [{ "lecture": "A", "start": 10, "end": 60 }] }]
+      },
+      {
+        "lines": ["bbbbbbbb", "cccccccc"],
+        "phrases": [
+          { "lines": ["bbbbbbbb"], "en": "zero", "lecture": "A", "start": 62, "end": 62 },
+          { "lines": ["cccccccc"], "en": "e", "lecture": "A", "start": 70, "end": 75 }
+        ],
+        "blocks": [
+          { "audio": [{ "lecture": "A", "start": 100, "end": 140 }] },
+          { "audio": [{ "lecture": "A", "start": 61, "end": 100 }] }
+        ]
+      },
+      {
+        "lines": ["dddddddd"],
+        "phrases": [{ "lines": ["dddddddd"], "en": "f", "lecture": "A", "start": 210, "end": 215 }],
+        "blocks": [{ "audio": [{ "lecture": "A", "start": 200, "end": 250 }] }]
+      },
+      {
+        "lines": ["eeeeeeee"],
+        "blocks": [
+          { "audio": [{ "lecture": "A", "start": 253, "end": 300 }], "outOfPlace": true },
+          { "audio": [{ "lecture": "A", "start": 253, "end": 280 }] },
+          { "audio": [{ "lecture": "A", "start": 290, "end": 330 }] }
+        ]
+      },
+      {
+        "lines": ["ffffffff"],
+        "phrases": [{ "lines": ["ffffffff"], "en": "g", "lecture": "B", "start": 25, "end": 27 }],
+        "blocks": [{ "audio": [{ "lecture": "B", "start": 20, "end": 50 }, { "lecture": "A", "start": 400, "end": 420 }] }]
+      },
+      {
+        "lines": ["gggggggg"],
+        "blocks": [{ "audio": [{ "lecture": "A", "start": 330, "end": 360 }], "outOfPlace": "said in the review at the end" }]
+      },
+      {
+        "lines": ["hhhhhhhh"],
+        "phrases": [{ "lines": ["hhhhhhhh"], "en": "h", "lecture": "A", "start": 440, "end": 445 }],
+        "blocks": [{ "audio": [{ "lecture": "A", "start": 430, "end": 480 }] }]
+      },
+      {
+        "lines": ["iiiiiiii"],
+        "phrases": [{ "lines": ["iiiiiiii"] }],
+        "blocks": [],
+        "skip": { "reason": "no-recording" }
+      }
+    ]
+  },
+  "parts": {
+    "main": [
+      { "id": "B", "start": 0, "end": 60 },
+      { "id": "A", "start": 5, "end": 480, "continuesIn": "chapter_11" }
+    ]
+  },
+  "studyAt": [
+    {
+      "name": "intro: before the part starts, then before the first item; the passage is the first item's",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [2, { "state": "before", "passage": 0, "phrase": null, "block": null, "readTo": null }],
+        [7, { "state": "before", "passage": 0, "block": null }]
+      ]
+    },
+    {
+      "name": "a block and its phrases; a phrase is held at most 5 s; a Hebrew-only phrase is never readTo",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [10, { "state": "playing", "passage": 0, "block": "0.b0", "phrase": null, "readTo": null, "lines": ["aaaaaaaa"] }],
+        [20, { "state": "playing", "passage": 0, "block": "0.b0", "phrase": "0.p0", "readTo": "0.p0" }],
+        [28.9, { "phrase": "0.p0" }],
+        [29.5, { "state": "playing", "phrase": null, "block": "0.b0", "readTo": "0.p0" }],
+        [31, { "phrase": "0.p2", "readTo": "0.p2" }],
+        [40, { "phrase": null, "readTo": "0.p2" }]
+      ]
+    },
+    {
+      "name": "zero-length phrase and an out-of-order block (array order is not time order)",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [61, { "passage": 1, "block": "1.b1", "phrase": null }],
+        [62, { "passage": 1, "block": "1.b1", "phrase": "1.p0", "lines": ["bbbbbbbb"] }],
+        [66.9, { "phrase": "1.p0" }],
+        [67, { "phrase": null, "lines": ["bbbbbbbb", "cccccccc"] }],
+        [72, { "phrase": "1.p1", "lines": ["cccccccc"] }],
+        [101, { "passage": 1, "block": "1.b0" }]
+      ]
+    },
+    {
+      "name": "a block is held 30 s past its end; a longer gap is a gap, keeping the last passage",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [150, { "state": "playing", "passage": 1, "block": "1.b0" }],
+        [169.9, { "state": "playing", "block": "1.b0" }],
+        [175, { "state": "gap", "passage": 1, "block": null, "phrase": null, "blocks": [] }],
+        [200, { "state": "playing", "passage": 2, "block": "2.b0" }]
+      ]
+    },
+    {
+      "name": "a short gap between blocks is held",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [251, { "state": "playing", "passage": 2, "block": "2.b0" }],
+        [252.9, { "state": "playing", "block": "2.b0" }]
+      ]
+    },
+    {
+      "name": "equal starts are current together (the block in place named); an overlap is cut at the next start",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [253, { "state": "playing", "passage": 3, "block": "3.b1", "blocks": ["3.b0", "3.b1"], "outOfPlace": false }],
+        [289.9, { "block": "3.b1" }],
+        [295, { "passage": 3, "block": "3.b2", "blocks": ["3.b2"] }]
+      ]
+    },
+    {
+      "name": "an outOfPlace block",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [345, { "state": "playing", "passage": 5, "block": "5.b0", "outOfPlace": true, "telling": false, "lines": ["gggggggg"] }],
+        [395, { "state": "gap", "passage": 5, "outOfPlace": false }]
+      ]
+    },
+    {
+      "name": "a further telling counts only when no main telling is current",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [405, { "state": "playing", "passage": 4, "block": "4.b0", "telling": true, "readTo": null }],
+        [435, { "state": "playing", "passage": 6, "block": "6.b0", "telling": false }]
+      ]
+    },
+    {
+      "name": "after the part's end, with continuesIn",
+      "guide": "main", "lecture": "A", "part": 1,
+      "at": [
+        [479.9, { "state": "playing", "passage": 6, "continuesIn": null }],
+        [480, { "state": "after", "passage": 6, "block": null, "continuesIn": "chapter_11" }],
+        [600, { "state": "after", "continuesIn": "chapter_11" }]
+      ]
+    },
+    {
+      "name": "another lecture sees only its own items",
+      "guide": "main", "lecture": "B", "part": 0,
+      "at": [
+        [10, { "state": "before", "passage": 4 }],
+        [26, { "state": "playing", "passage": 4, "phrase": "4.p0", "block": "4.b0", "telling": false, "readTo": "4.p0" }],
+        [60, { "state": "after", "continuesIn": null }]
+      ]
+    },
+    {
+      "name": "without a part: before the first item, and past the last hold a gap",
+      "guide": "main", "lecture": "A", "part": null,
+      "at": [
+        [0, { "state": "before", "passage": 0 }],
+        [600, { "state": "gap", "passage": 6 }]
+      ]
+    },
+    {
+      "name": "a lecture with nothing in the guide",
+      "guide": "main", "lecture": "Z", "part": null,
+      "at": [[10, { "state": "before", "passage": null, "lines": [] }]]
+    }
+  ],
+  "followPassage": [
+    {
+      "name": "the first position is followed at once",
+      "steps": [[0, "before", 2, false, false, 2], [1, "playing", 3, false, false, 2], [6, "playing", 3, false, false, 3]]
+    },
+    {
+      "name": "a forward change waits 5 s",
+      "steps": [[0, "playing", 0, false, false, 0], [3, "playing", 1, false, false, 0], [7.9, "playing", 1, false, true, 0], [8, "playing", 1, false, false, 1]]
+    },
+    {
+      "name": "a short backward flip is suppressed",
+      "steps": [
+        [0, "playing", 3, false, false, 3],
+        [10, "playing", 3, false, false, 3],
+        [12, "playing", 2, false, false, 3],
+        [15, "playing", 3, false, false, 3],
+        [20, "playing", 4, false, false, 3],
+        [24, "playing", 4, false, false, 3],
+        [25, "playing", 4, false, false, 4]
+      ]
+    },
+    {
+      "name": "an outOfPlace block alone more than one passage away is not followed; within one it is",
+      "steps": [
+        [0, "playing", 3, false, false, 3],
+        [5, "playing", 6, true, false, 3],
+        [20, "playing", 6, true, false, 3],
+        [21, "playing", 6, true, true, 3],
+        [30, "playing", 6, true, true, 6],
+        [40, "playing", 7, true, false, 6],
+        [45, "playing", 7, true, false, 7]
+      ]
+    },
+    {
+      "name": "a gap or after never changes the followed passage",
+      "steps": [[0, "playing", 1, false, false, 1], [5, "gap", 2, false, false, 1], [20, "gap", 2, false, false, 1], [30, "after", 2, false, false, 1]]
+    },
+    {
+      "name": "a time before the candidate's start restarts the wait",
+      "steps": [[0, "playing", 1, false, false, 1], [10, "playing", 2, false, false, 1], [4, "playing", 2, false, false, 1], [8, "playing", 2, false, false, 1], [9, "playing", 2, false, false, 2]]
+    }
+  ],
+  "shouldScrollTo": [
+    [null, 9, true, true],
+    [5, 6, true, true],
+    [5, 4, true, true],
+    [5, 7, true, false],
+    [5, 2, true, false],
+    [5, 20, false, true]
+  ],
+  "studySeekTarget": [
+    { "name": "passage: its lecture, a short lead-in before the lecture's first item is played", "el": { "passage": 0 }, "player": null, "expect": ["A", 5, null] },
+    { "name": "passage: the lecture in the player when it has the passage (a further telling)", "el": { "passage": 4 }, "player": "A", "expect": ["A", 400, null] },
+    { "name": "passage: in place first; a long lead-in is offered", "el": { "passage": 4 }, "player": null, "expect": ["B", 20, 0] },
+    { "name": "passage: its earliest item, whatever the array order", "el": { "passage": 1 }, "player": "A", "expect": ["A", 61, null] },
+    { "name": "passage: only an outOfPlace block", "el": { "passage": 5 }, "player": "B", "expect": ["A", 330, null] },
+    { "name": "passage without any time", "el": { "passage": 7 }, "player": "A", "expect": null },
+    { "name": "phrase: its start, the player's lecture not having it", "el": { "passage": 1, "phrase": 0 }, "player": "B", "expect": ["A", 62, null] },
+    { "name": "phrase: Hebrew-only plays from the last timed phrase before it", "el": { "passage": 0, "phrase": 1 }, "player": null, "expect": ["A", 20, null] },
+    { "name": "phrase: Hebrew-only with no timed phrase before it plays as its passage", "el": { "passage": 7, "phrase": 0 }, "player": null, "expect": null },
+    { "name": "block: its main telling", "el": { "passage": 3, "block": 1 }, "player": null, "expect": ["A", 253, null] },
+    { "name": "block: the main telling's lecture, with its lead-in", "el": { "passage": 4, "block": 0 }, "player": null, "expect": ["B", 20, 0] },
+    { "name": "block: a further telling in the player's lecture", "el": { "passage": 4, "block": 0 }, "player": "A", "expect": ["A", 400, null] }
+  ],
+  "nextStudyPart": [
+    { "parts": ["a", "b", "c"], "lecture": "a", "expect": "b" },
+    { "parts": ["a", "b", "c"], "lecture": "c", "expect": null },
+    { "parts": ["a", "b", "c"], "lecture": "x", "expect": null }
+  ],
+  "transcriptSlug": [
+    ["07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3", "07-chap-10-1-atmus-ohr-ein-sof-m"],
+    ["001 Intro.mp3", "001-intro"],
+    ["Tape 3.M4A", "tape-3"]
+  ],
+  "parseStudyLink": [
+    { "search": "?class=07-chap-10-1-atmus-ohr-ein-sof-m&t=125.7", "hash": "#abcdefgh", "expect": { "classSlug": "07-chap-10-1-atmus-ohr-ein-sof-m", "t": 125, "line": "abcdefgh", "anchor": "abcdefgh" } },
+    { "search": "", "hash": "#s-abcdefgh", "expect": { "classSlug": null, "t": null, "line": null, "anchor": "s-abcdefgh" } },
+    { "search": "?class=&t=-3", "hash": "", "expect": { "classSlug": null, "t": null, "line": null, "anchor": null } },
+    { "search": "?t=abc&class=%20x%20", "hash": "#ABCDEFGH", "expect": { "classSlug": "x", "t": null, "line": null, "anchor": "ABCDEFGH" } },
+    { "search": "?t=0", "hash": "#wospio7l", "expect": { "classSlug": null, "t": 0, "line": "wospio7l", "anchor": "wospio7l" } }
+  ]
+}

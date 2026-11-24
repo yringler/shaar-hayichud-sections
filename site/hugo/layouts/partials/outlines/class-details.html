@@ -6,12 +6,15 @@
        link to its box. A topic is "<span>time</span> title"; the page is
        about 1,000 topics, so the markup is kept lean: the time span has no
        class (outlines CSS styles it by position), and only titles with
-       Hebrew in them (about 28%) sit in <bdi>. */ -}}
+       Hebrew in them (about 28%) sit in <bdi>. A class a public study guide
+       cites also links the guide (Study guide · Chapter N) beside Open class. */ -}}
 {{- $info := .info }}
 {{- with .topics }}
 <details class="outline-class">
   <summary><bdi>{{ $info.lecture.title }}</bdi> <span class="outline-count">{{ len . }} topics</span></summary>
-  <p class="outline-open"><a class="audio-link" href="{{ $info.classUrl }}">Open class</a></p>
+  <p class="outline-open"><a class="audio-link" href="{{ $info.classUrl }}">Open class</a>
+    {{- $guides := index (partialCached "study/index.html" . "study").lectures $info.lecture.id }}
+    {{- range $guides }} <a class="audio-link" href="{{ .url }}">Study guide{{ if gt (len $guides) 1 }} · Chapter {{ .number }}{{ end }}</a>{{ end }}</p>
   <ol class="outline-topics">
     {{- range . }}
     <li><a href="{{ $info.partUrl }}?t={{ int .startSeconds }}#{{ $info.anchor }}"><span>{{ partial "format-time.html" .startSeconds }}</span> {{ if findRE `[\x{0590}-\x{05FF}]` .title 1 }}<bdi>{{ .title }}</bdi>{{ else }}{{ .title }}{{ end }}</a></li>

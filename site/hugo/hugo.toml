@@ -39,6 +39,10 @@ title = "Shaar Hayichud"
 # shape): unlisted, served noindex
 # (static/_headers). Not disallowed in a robots.txt: a crawler that may not
 # fetch a URL never sees its noindex.
+# Mounted under static/ ONLY, never as assets or data: no template can read
+# it, so the study pages (/study/, partials/study/index.html, which read the
+# public data/v1/study/ through the assets mount below) can never render a
+# beta guide or a block's `sensitivity`.
 [[module.mounts]]
   source = "../../data/dist/study-beta"
   target = "static/data/study-beta"

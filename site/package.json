@@ -5,7 +5,7 @@
     "data": "cd ../data/tools && yarn install --immutable && yarn build-data",
     "build": "yarn data && cd hugo && hugo --minify && cd .. && yarn search-index",
     "serve": "yarn data && cd hugo && hugo serve",
-    "test": "node --test lib/json-renderer.test.js lib/audio-model.test.mjs lib/search-text.test.mjs && yarn typecheck",
+    "test": "node --test lib/json-renderer.test.js lib/audio-model.test.mjs lib/study-model.test.mjs lib/search-text.test.mjs && yarn typecheck",
     "test:e2e": "node scripts/e2e-audio.cjs",
     "typecheck": "node ../data/tools/node_modules/typescript/bin/tsc -p hugo/assets/js && node ../data/tools/node_modules/typescript/bin/tsc -p scripts --noEmit",
     "test:scripts": "python3 -m unittest discover -s scripts",

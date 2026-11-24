@@ -13,7 +13,17 @@
  * HTML, Expand/Collapse all, side nav or "Jump to", a topic link to its
  * class), the site nav (Outlines, Search, no Translation item) and search
  * (/search/ over the Pagefind index: transliterations, prefixes, filters,
- * links to a transcript paragraph and a chapter line).
+ * links to a transcript paragraph and a chapter line) and the study guide
+ * pages (/study/: built from the public edition only, no Markel or beta
+ * anywhere else, every link into and out of them, every line, passage, phrase
+ * and block of every guide with its times, readable without JS at desktop and
+ * phone width, the Study nav item; with JS: the docked player, highlights
+ * following seeks, follow's scroll, detach and Back to now, a far outOfPlace
+ * block, class switch, ⏮15/15⏭, Autoplay next, arrival links that never
+ * autoplay, phrase taps, blocked storage, phone width; the chapter player's
+ * "Study guide →" pill; study passages in search).
+ *
+ *   E2E_ONLY=<regex> runs only the checks whose name matches.
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -170,7 +180,10 @@ const playToEnd = (handle) =>
 const AUTOPLAY_KEY = 'shaarHayichud.audio.autoplayNext';
 
 const results = [];
+/** E2E_ONLY=<regex>: run only the checks whose name matches (while working on one feature). */
+const only = process.env.E2E_ONLY ? new RegExp(process.env.E2E_ONLY) : null;
 async function check(name, fn) {
+  if (only && !only.test(name)) return;
   try {
     await fn();
     results.push(`ok   ${name}`);
@@ -1693,6 +1706,790 @@ async function check(name, fn) {
     });
   }
 
+  // ---------------- study guide pages ----------------
+  const studyIndex = readJson(path.join(DIST, 'study', 'index.json'));
+  const studyGuides = studyIndex.series.flatMap((s) =>
+    s.chapters.map((c) => ({ series: s, entry: c, url: `/study/${s.id}/chapter-${Number(c.chapter.slice(8))}/`, guide: readJson(path.join(DIST, c.path)) })),
+  );
+  const decodeEntities = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  const htmlIds = new Map();
+  const idsIn = (file) => {
+    if (!htmlIds.has(file)) {
+      const html = fs.readFileSync(file, 'utf8');
+      htmlIds.set(file, new Set([...html.matchAll(/\sid=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map((m) => decodeEntities(m[1] ?? m[2] ?? m[3]))));
+    }
+    return htmlIds.get(file);
+  };
+  /** Every built HTML page outside /data/, relative to PUBLIC. */
+  const allPages = (() => {
+    const out = [];
+    const walk = (dir) => {
+      for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, d.name);
+        if (d.isDirectory()) {
+          if (rel !== 'data' && rel !== 'pagefind') walk(rel);
+        } else if (d.name.endsWith('.html')) out.push(rel);
+      }
+    };
+    walk('');
+    return out;
+  })();
+  const lectureSlug = (id) => id.toLowerCase().replace(/\.(mp3|m4a)$/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const chapterLineIds = (key) => {
+    const ids = [];
+    const walk = (nodes) => {
+      for (const n of nodes) {
+        if (!n.children) continue;
+        for (const c of n.children) if (!c.children) ids.push(c.id);
+        walk(n.children);
+      }
+    };
+    walk(readJson(path.join(SITE, '..', 'data', 'chapters', `${key}.json`)));
+    return ids;
+  };
+
+  await check('study pages: /study/, each public series and guide is built; nothing but the public edition (no Markel, no beta, no sensitivity) outside /data/study-beta/', async () => {
+    assert.ok(studyGuides.length >= 20, `${studyGuides.length} public guides`);
+    assert.ok(fs.existsSync(path.join(PUBLIC, 'study', 'index.html')));
+    for (const s of studyIndex.series) assert.ok(fs.existsSync(path.join(PUBLIC, 'study', s.id, 'index.html')), s.id);
+    for (const g of studyGuides) assert.ok(fs.existsSync(path.join(PUBLIC, g.url, 'index.html')), g.url);
+    const built = fs.readdirSync(path.join(PUBLIC, 'study'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+    assert.deepEqual(built.sort(), studyIndex.series.map((s) => s.id).sort(), 'study series pages = the public index');
+    // The beta export is published (unlisted), and Markel (series 37) is in it but not public.
+    const beta = readJson(path.join(PUBLIC, 'data', 'study-beta', 'v1', 'study', 'index.json'));
+    assert.ok(beta.series.some((s) => s.id === 'markel-advanced'), 'the beta export lists markel-advanced');
+    assert.ok(!studyIndex.series.some((s) => s.id === 'markel-advanced' || s.catalogSeriesId === '37'), 'markel-advanced is not public');
+    const leaks = [];
+    const walk = (dir) => {
+      for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, d.name);
+        if (d.isDirectory()) {
+          // The JSON Schemas describe both editions, so they name the beta.
+          if (![path.join('data', 'study-beta'), path.join('data', 'v1', 'schema'), 'pagefind'].includes(rel)) walk(rel);
+        } else if (/\.(html|js|css|json|xml|txt)$/.test(d.name)) {
+          const text = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+          if (/markel-advanced|study-beta/.test(text) && rel !== '_headers') leaks.push(rel);
+        }
+      }
+    };
+    walk('');
+    assert.deepEqual(leaks, []);
+    // The published guides the pages are built from carry no sensitivity flags.
+    for (const g of studyGuides) {
+      for (const b of g.guide.sections.flatMap((s) => s.passages.flatMap((p) => p.blocks))) assert.ok(!('sensitivity' in b), `${g.url}: a block with sensitivity`);
+    }
+  });
+
+  await check('study pages: every link to a study page (chapter pages, class boxes, transcripts, outlines, /texts, nav) and every link on one resolves to an existing page, id and class', async () => {
+    const broken = [];
+    const into = new Map();
+    let links = 0;
+    for (const rel of allPages) {
+      const pageUrl = new URL(`/${rel.replace(/index\.html$/, '')}`, 'http://x');
+      const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+      const isStudy = rel.startsWith(`study${path.sep}`);
+      const main = isStudy ? html.slice(html.indexOf('<main'), html.lastIndexOf('</main>')) : html;
+      for (const m of main.matchAll(/<a\s[^>]*?href=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)) {
+        const u = new URL(decodeEntities(m[1] ?? m[2] ?? m[3]), pageUrl);
+        if (u.host !== 'x') continue;
+        if (!isStudy && !u.pathname.startsWith('/study/')) continue;
+        links++;
+        if (u.pathname.startsWith('/study/') && !isStudy) {
+          const kind = rel.split(path.sep)[0];
+          into.set(kind, (into.get(kind) ?? 0) + 1);
+        }
+        let file = path.join(PUBLIC, decodeURIComponent(u.pathname));
+        if (u.pathname.endsWith('/')) file = path.join(file, 'index.html');
+        const id = decodeURIComponent(u.hash.slice(1));
+        if (!fs.existsSync(file)) {
+          broken.push(`${rel}: ${u.pathname} (no page)`);
+          continue;
+        }
+        if (id && !idsIn(file).has(id)) broken.push(`${rel}: ${u.pathname}#${id} (no such id)`);
+        const cls = u.searchParams.get('class');
+        if (cls) {
+          const g = studyGuides.find((x) => x.url === u.pathname);
+          if (!g?.entry.lectures.some((l) => lectureSlug(l.id) === cls)) broken.push(`${rel}: ${u.pathname}?class=${cls} (not a class of the guide)`);
+        }
+      }
+    }
+    assert.deepEqual(broken.slice(0, 20), [], `${broken.length} broken links`);
+    // Links come in from every kind of page that should have them.
+    for (const kind of ['texts', 'he', 'classes', 'outlines', 'study']) assert.ok((into.get(kind) ?? 0) > 0 || kind === 'study', `links to the guides from /${kind}/ (${[...into]})`);
+    assert.ok(links > 1000, `${links} links checked`);
+    // Chapter pages: one "Study guide: <teacher>" line per guide of the chapter.
+    for (const g of studyGuides) {
+      const n = Number(g.entry.chapter.slice(8));
+      const html = fs.readFileSync(path.join(PUBLIC, 'texts', `chapter-${n}`, 'index.html'), 'utf8');
+      assert.match(html, new RegExp(`class="?study-guide-link"?>Study guide: <a href="?${g.url}"?><bdi lang="?en"?>${g.series.teacher}</bdi>`), `chapter ${n}`);
+    }
+    // A class box of a guided class links its guide with ?class=.
+    const g = studyGuides[0];
+    const l = g.entry.lectures[0];
+    const anyPart = allPages.filter((p) => p.startsWith(`classes${path.sep}`)).find((p) => fs.readFileSync(path.join(PUBLIC, p), 'utf8').includes(`${g.url}?class=${lectureSlug(l.id)}`));
+    assert.ok(anyPart, `a class page links ${g.url}?class=${lectureSlug(l.id)}`);
+  });
+
+  await check('study guide pages: every chapter line once (span.line id), every passage, phrase and block, with times; no writer notes (outOfPlace)', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: { viewport: { width: 1280, height: 900 }, javaScriptEnabled: false } });
+    try {
+      for (const g of studyGuides) {
+        await page.goto(`${base}${g.url}`);
+        const got = await page.evaluate(() => ({
+          lineIds: [...document.querySelectorAll('.study-text span.line[id]')].map((e) => e.id),
+          passages: [...document.querySelectorAll('.study-passage')].map((e) => e.id),
+          phrases: [...document.querySelectorAll('.phrase')].map((e) => [e.dataset.lecture ?? null, e.dataset.start ?? null, e.dataset.end ?? null]),
+          blocks: [...document.querySelectorAll('.study-block')].map((e) => [e.id, e.dataset.kind, e.dataset.lecture, e.dataset.start, e.dataset.end, e.dataset.outOfPlace ?? null]),
+          audio: [...document.querySelectorAll('audio')].map((a) => a.getAttribute('src')),
+          classAudio: [...document.querySelectorAll('li.study-class audio')].filter((a) => !a.hidden).map((a) => a.getAttribute('src')),
+          text: document.body.innerText,
+          ids: [...document.querySelectorAll('[id]')].map((e) => e.id),
+        }));
+        const label = g.url;
+        assert.equal(new Set(got.ids).size, got.ids.length, `${label}: duplicate ids`);
+        const lines = chapterLineIds(g.entry.chapter);
+        const guideLines = g.guide.sections.flatMap((s) => s.passages.flatMap((p) => p.lines));
+        assert.deepEqual(got.lineIds, guideLines.filter((id, i) => lines.includes(id) && guideLines.indexOf(id) === i), `${label}: line ids`);
+        if (!g.entry.stale) assert.deepEqual(got.lineIds, lines, `${label}: every chapter line, in order`);
+        const passages = g.guide.sections.flatMap((s) => s.passages);
+        assert.deepEqual(got.passages, passages.map((p) => `s-${p.lines[0]}`), `${label}: passages`);
+        const phrases = passages.flatMap((p) => p.phrases ?? []);
+        assert.deepEqual(got.phrases, phrases.map((p) => (p.en ? [p.lecture, String(p.start), String(p.end)] : [null, null, null])), `${label}: phrases`);
+        const blocks = passages.flatMap((p) => p.blocks.map((b, i) => [`b-${p.lines[0]}-${i + 1}`, b.kind, b.audio[0].lecture, String(b.audio[0].start), String(b.audio[0].end), b.outOfPlace ? '1' : null]));
+        assert.deepEqual(got.blocks, blocks, `${label}: blocks`);
+        for (const b of passages.flatMap((p) => p.blocks)) if (b.outOfPlace) assert.ok(!got.text.includes(b.outOfPlace), `${label}: shows a writer's outOfPlace note`);
+        assert.equal(got.audio.length, g.entry.lectures.length + 1, `${label}: one <audio> per class, and the docked player's`);
+        assert.equal(got.classAudio.length, g.entry.lectures.length, `${label}: one <audio> per class in the class list`);
+        if (g.entry.status === 'draft') assert.match(got.text, new RegExp(`Machine-drafted from ${g.series.teacher}’ class and not yet checked against it\\. The recording is the source\\.`));
+      }
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`study guide page without JS (${name}): readable, no sideways scroll, ${name === 'desktop' ? 'side nav' : '"Jump to"'}; ▶ links open the recording at the block; anchors land`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: { ...ctx, javaScriptEnabled: false } });
+      try {
+        const g = studyGuides.find((x) => x.entry.chapter === 'chapter_10') ?? studyGuides[0];
+        await page.goto(`${base}${g.url}`);
+        await page.evaluate(() => document.fonts.ready);
+        assert.equal(await page.locator('h1').textContent(), g.guide.title);
+        assert.ok(await page.locator('.study-notice').first().isVisible());
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), ctx.viewport.width, 'no sideways scroll');
+        const side = page.locator('nav.study-nav');
+        const jump = page.locator('details.study-jump');
+        assert.equal(await side.isVisible(), name === 'desktop');
+        assert.equal(await jump.isVisible(), name !== 'desktop');
+        const sections = g.guide.sections.length;
+        assert.equal(await side.locator('a[href^="#sec-"]').count(), sections);
+        // Hebrew in Taamey D, right to left; the teacher's English left to right.
+        const he = await page.locator('.study-text').first().evaluate((e) => [e.getAttribute('lang'), getComputedStyle(e).direction, getComputedStyle(e).fontFamily]);
+        assert.deepEqual(he.slice(0, 2), ['he', 'rtl']);
+        assert.match(he[2], /Taamey D/);
+        assert.equal(await page.locator('.phrase-en').first().evaluate((e) => getComputedStyle(e).direction), 'ltr');
+        // A block's ▶ is a link to the class recording at the block's start.
+        const block = page.locator('.study-block[data-start]').nth(3);
+        const [lecture, start] = await block.evaluate((e) => [e.dataset.lecture, e.dataset.start]);
+        const href = await block.locator('a.study-play').first().getAttribute('href');
+        const catalogUrl = await page.locator(`li.study-class[data-lecture="${lecture}"] audio`).getAttribute('src');
+        assert.equal(href, `${catalogUrl}#t=${start}`);
+        // Anchors: a passage, a block and a line.
+        const p = g.guide.sections[1].passages[0];
+        for (const id of [`s-${p.lines[0]}`, `b-${p.lines[0]}-1`, p.lines[0]]) {
+          await page.goto(`${base}${g.url}#${id}`);
+          const top = await page.locator(`[id="${id}"]`).evaluate((e) => e.getBoundingClientRect().top);
+          assert.ok(top >= -2 && top < 120, `#${id} at ${top}`);
+        }
+        await page.goto(`${base}${g.url}`);
+        await page.screenshot({ path: path.join(shots, `study-top-${name}.png`) });
+        await page.goto(`${base}${g.url}#s-${p.lines[0]}`);
+        await page.screenshot({ path: path.join(shots, `study-passage-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  // ---------------- study guide pages with JS (study.ts) ----------------
+  // The timing model the page uses (study-model.ts) picks the moments to test.
+  const { pathToFileURL } = require('node:url');
+  const studyModel = await import(pathToFileURL(path.join(SITE, 'hugo', 'assets', 'js', 'audio', 'study-model.ts')).href);
+  const { formatTime } = await import(pathToFileURL(path.join(SITE, 'hugo', 'assets', 'js', 'audio', 'model.ts')).href);
+  const g10 = studyGuides.find((x) => x.entry.chapter === 'chapter_10');
+  const g10Passages = studyModel.guidePassages(g10.guide);
+  const parts10 = g10.entry.lectures;
+  const g10Sections = g10.guide.sections.flatMap((s) => s.passages.map(() => s.title));
+  /** "i.bj" (the model's default block key) -> the block's element id. */
+  const blockElId = (key) => {
+    const [i, j] = key.split('.b').map(Number);
+    return `b-${g10Passages[i].lines[0]}-${j + 1}`;
+  };
+  /** Every whole second of a lecture's part with the model's position. */
+  const momentsOf = (lecture, passages = g10Passages) => {
+    const part = parts10.find((p) => p.id === lecture);
+    const tl = studyModel.studyTimeline(passages, lecture, part);
+    const out = [];
+    for (let t = Math.ceil(part.start); t < part.end; t++) out.push({ t, tl, ...studyModel.studyAt(tl, t) });
+    return out;
+  };
+  /** Moments of a lecture when a block (in place) alone is current, at least 3 s into it, one per block. */
+  const blockMoments = (lecture) => {
+    const seen = new Set();
+    return momentsOf(lecture).flatMap((m) => {
+      if (m.state !== 'playing' || m.phrase !== null || m.block === null || m.outOfPlace || seen.has(m.block)) return [];
+      const it = m.tl.byKey.get(m.block);
+      if (it.kind !== 'block' || m.t - it.start < 3 || it.end - m.t < 3) return [];
+      seen.add(m.block);
+      return [{ t: m.t, passage: m.passage, block: m.block, id: blockElId(m.block), start: it.start, end: it.end }];
+    });
+  };
+  /** Moments when a phrase is current, within a second of its start. */
+  const phraseMoments = (lecture) =>
+    momentsOf(lecture).flatMap((m) => {
+      if (m.state !== 'playing' || m.phrase === null) return [];
+      const it = m.tl.byKey.get(m.phrase);
+      if (m.t - it.start > 1) return [];
+      const [i, j] = m.phrase.split('.p').map(Number);
+      return [{ t: m.t, passage: m.passage, start: it.start, line: g10Passages[i].phrases[j].lines[0] }];
+    });
+  /** Where the page plays a block of g10 from ("i.bj" key), with `player` in the player. */
+  const blockSeek = (key, player) => {
+    const [i, j] = key.split('.b').map(Number);
+    return studyModel.studySeekTarget(g10Passages, parts10, { passage: i, block: j }, player);
+  };
+  const STUDY_AUDIO = '[data-study-audio]';
+  const studyState = (page) =>
+    page.evaluate((sel) => {
+      const a = document.querySelector(sel);
+      const bar = document.querySelector('[data-study-player]');
+      const pill = document.querySelector('[data-study-back-now]');
+      return {
+        src: a.getAttribute('src'),
+        t: a.currentTime,
+        paused: a.paused,
+        lecture: document.querySelector('[data-study-select]').value,
+        docked: bar.classList.contains('is-active'),
+        listenH: Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h')) || 0,
+        barH: bar.getBoundingClientRect().height,
+        current: [...document.querySelectorAll('.is-discussing')].map((e) => (e.id ? e.id : `phrase@${e.dataset.lecture}@${Number(e.dataset.start)}`)),
+        ariaCurrent: [...document.querySelectorAll('.is-discussing')].every((e) => e.getAttribute('aria-current') === 'true'),
+        now: document.querySelector('[data-study-now-text]').textContent,
+        live: document.querySelector('[data-study-live]').textContent,
+        hash: location.hash,
+        search: location.search,
+        scrollY: window.scrollY,
+        innerHeight: window.innerHeight,
+        pill: pill.hidden ? null : pill.textContent,
+        focus: document.activeElement?.id || document.activeElement?.className || '',
+        focusText: document.activeElement?.matches('button') ? document.activeElement.textContent : '',
+        note: document.querySelector('[data-study-note]').hidden ? null : document.querySelector('[data-study-note]').textContent,
+      };
+    }, STUDY_AUDIO);
+  /** The top of an element relative to the visible area (above the docked player). */
+  const topOf = (page, id) =>
+    page.evaluate((id) => {
+      const r = document.getElementById(id).getBoundingClientRect();
+      const bar = document.querySelector('[data-study-player]');
+      const visible = window.innerHeight - (bar.classList.contains('is-active') ? bar.offsetHeight : 0);
+      return { top: r.top, bottom: r.bottom, visible };
+    }, id);
+  const studySeek = async (page, t) => {
+    await page.evaluate(([sel, t]) => (document.querySelector(sel).currentTime = t), [STUDY_AUDIO, t]);
+    await page.waitForFunction(
+      ([sel, t]) => {
+        const a = document.querySelector(sel);
+        return !a.seeking && Math.abs(a.currentTime - t) < 1.5;
+      },
+      [STUDY_AUDIO, t],
+      { timeout: 15000 },
+    );
+    await page.waitForTimeout(400);
+  };
+  const waitPlaying = (page, t, tol = 1.5) =>
+    page.waitForFunction(
+      ([sel, t, tol]) => {
+        const a = document.querySelector(sel);
+        return !a.paused && Math.abs(a.currentTime - t) < tol;
+      },
+      [STUDY_AUDIO, t, tol],
+      { timeout: 15000 },
+    );
+  /** Plays a block from its own ▶ (the first in the block: its head's). */
+  const playBlock = async (page, id) => {
+    await page.locator(`[id="${id}"] a.study-play`).first().click();
+  };
+  const reduced = { viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' };
+
+  await check('study guide with JS: one docked player for the chapter\'s classes; a block\'s ▶ plays it there; highlights (aria-current), progress, Now:, the live region and the URL follow seeks; never autoplays', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      await page.goto(`${base}${g10.url}`);
+      await page.locator('[data-study-player]').waitFor();
+      assert.deepEqual(await page.$$eval('[data-study-select] option', (os) => os.map((o) => o.value)), parts10.map((p) => p.id), 'the chapter\'s classes, in index order');
+      assert.equal(await page.locator('li.study-class audio:visible').count(), 0, 'the class list\'s own players are hidden');
+      await page.waitForTimeout(500);
+      let s = await studyState(page);
+      assert.equal(s.paused, true, 'never autoplays');
+      assert.equal(s.docked, false);
+      assert.equal(s.listenH, 0);
+      assert.equal(s.src, await page.getAttribute(`li.study-class[data-lecture="${parts10[0].id}"]`, 'data-url'), 'the first class is in the player');
+
+      const L = parts10[2].id;
+      const tl = studyModel.studyTimeline(g10Passages, L, parts10[2]);
+      const mid = (b) => Math.round((b.start + b.end) / 2);
+      const m = blockMoments(L).find((b) => b.end - b.start > 20 && studyModel.studyAt(tl, mid(b)).block === b.block && studyModel.studyAt(tl, mid(b) + 1).block === b.block);
+      assert.ok(m, 'a long block of Part 3');
+      await playBlock(page, m.id);
+      await waitPlaying(page, blockSeek(m.block, parts10[0].id).seekSeconds);
+      await page.waitForTimeout(400);
+      s = await studyState(page);
+      assert.equal(s.lecture, L);
+      assert.ok(s.docked && s.listenH > 0 && Math.abs(s.listenH - s.barH) < 2, 'docked, with --listen-h');
+      assert.ok(s.current.includes(m.id), `the block is current (${s.current})`);
+      assert.ok(s.ariaCurrent);
+
+      // Into the block: its progress, the section, the passage's line in the URL.
+      await studySeek(page, mid(m));
+      s = await studyState(page);
+      assert.ok(s.current.includes(m.id), `still the block at ${mid(m)} (${s.current})`);
+      const p = Number(await page.locator(`[id="${m.id}"]`).evaluate((e) => e.style.getPropertyValue('--p')));
+      const want = (mid(m) - m.start) / (m.end - m.start);
+      assert.ok(Math.abs(p - want) < 0.1, `--p ${p} ~ ${want}`);
+      assert.equal(s.now, `Now: ${g10Sections[m.passage]}`);
+      assert.equal(s.live, `Now: ${g10Sections[m.passage]}`, 'the live region names the section');
+      assert.equal(s.hash, `#${g10Passages[m.passage].lines[0]}`);
+
+      // A phrase: tinted, its line in the URL; one block and one phrase at most.
+      const ph = phraseMoments(L).find((x) => x.passage !== m.passage) ?? phraseMoments(L)[0];
+      await studySeek(page, ph.t);
+      s = await studyState(page);
+      assert.ok(s.current.includes(`phrase@${L}@${ph.start}`), `the phrase is current (${s.current})`);
+      assert.equal(s.current.filter((c) => c.startsWith('phrase@')).length, 1);
+      assert.ok(s.ariaCurrent);
+      assert.equal(s.hash, `#${ph.line}`);
+      assert.match(await page.locator('.phrase.is-discussing').evaluate((e) => getComputedStyle(e).backgroundColor), /rgb\(253, 243, 216\)/);
+
+      // Paused: the highlight and the URL stay.
+      await page.evaluate((sel) => document.querySelector(sel).pause(), STUDY_AUDIO);
+      await page.waitForTimeout(300);
+      const after = await studyState(page);
+      assert.deepEqual([after.current, after.hash], [s.current, s.hash]);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide follow: a new off-screen block scrolls to 25%; scrolling it away detaches (Back to now, nothing moves) until the pill; a reader scroll pauses it; Follow off and on', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      await page.goto(`${base}${g10.url}`);
+      const L = parts10[4].id;
+      const bm = blockMoments(L);
+      const [a, c, d, e] = [bm[0], bm[Math.floor(bm.length / 3)], bm[Math.floor((2 * bm.length) / 3)], bm[bm.length - 1]];
+      assert.ok(new Set([a.id, c.id, d.id, e.id]).size === 4, 'four blocks');
+      await playBlock(page, a.id);
+      await waitPlaying(page, blockSeek(a.block, parts10[0].id).seekSeconds);
+
+      // Follow: a block that is not on screen is scrolled to 25% of the visible area.
+      await studySeek(page, c.t);
+      let r = await topOf(page, c.id);
+      assert.ok(Math.abs(r.top - 0.25 * r.visible) < 30, `block top at ${r.top} of ${r.visible}`);
+
+      // The reader scrolls the current block away: detached, Back to now.
+      await page.mouse.move(640, 300);
+      await page.mouse.wheel(0, -5000);
+      await page.waitForTimeout(700);
+      let s = await studyState(page);
+      assert.match(s.pill ?? '', /^↓ Back to now · |^↑ Back to now · /);
+      r = await topOf(page, c.id);
+      assert.ok(r.top > r.visible, 'the block is below the screen');
+      assert.match(s.pill, /^↓/);
+      const y = s.scrollY;
+      await studySeek(page, d.t);
+      await page.waitForTimeout(600);
+      s = await studyState(page);
+      assert.equal(s.scrollY, y, 'detached: the page stays put');
+      assert.ok(s.current.includes(d.id), 'highlights still follow');
+      assert.ok(s.pill, 'the pill stays');
+      await page.click('[data-study-back-now]');
+      await page.waitForTimeout(400);
+      s = await studyState(page);
+      r = await topOf(page, d.id);
+      assert.ok(r.top >= 0 && r.bottom > 0 && r.top < r.visible / 2, `back to the block (${r.top})`);
+      assert.equal(s.pill, null);
+      assert.equal(s.focus, await page.locator(`[id="${d.id}"]`).evaluate((e) => e.closest('div.study-block').id), 'focus moves to the block');
+
+      // A small scroll by the reader (the block stays on screen): the next block does not scroll the page.
+      await page.mouse.wheel(0, 80);
+      await page.waitForTimeout(300);
+      const y2 = (await studyState(page)).scrollY;
+      await studySeek(page, e.t);
+      await page.waitForTimeout(500);
+      s = await studyState(page);
+      assert.equal(s.scrollY, y2, 'quiet for 5 s after the reader scrolls');
+      assert.equal(s.pill, null, 'not detached by a scroll that kept the item on screen');
+
+      // Follow off (saved) and on again: on scrolls to the current block.
+      await page.click('[data-study-follow]');
+      assert.equal(await page.getAttribute('[data-study-follow]', 'aria-pressed'), 'false');
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.followAlong')), 'off');
+      await page.click('[data-study-follow]');
+      await page.waitForTimeout(300);
+      assert.equal(await page.evaluate(() => localStorage.getItem('shaarHayichud.audio.followAlong')), 'on');
+      r = await topOf(page, e.id);
+      assert.ok(Math.abs(r.top - 0.25 * r.visible) < 30, `Follow on shows the block (${r.top})`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide follow: an outOfPlace block far from the passage followed is highlighted, not scrolled to ("Now: aside on another passage · Go to")', async () => {
+    // No public guide has one today, so one is made: the last passage's first
+    // block gets a time inside a block of Part 2 and outOfPlace.
+    const L = parts10[1].id;
+    const last = g10Passages.length - 1;
+    const fakeId = `b-${g10Passages[last].lines[0]}-1`;
+    let pick = null;
+    for (const m of blockMoments(L)) {
+      if (Math.abs(m.passage - last) <= 1) continue;
+      const start = m.start + 2;
+      const passages = g10Passages.map((p, i) =>
+        i === last ? { ...p, blocks: p.blocks.map((b, j) => (j === 0 ? { ...b, outOfPlace: 'x', audio: [{ lecture: L, start, end: start + 10 }] } : b)) } : p,
+      );
+      const tl = studyModel.studyTimeline(passages, L, parts10[1]);
+      const at = studyModel.studyAt(tl, start + 0.7);
+      const before = studyModel.studyAt(tl, start - 1.5);
+      if (at.block === `${last}.b0` && at.phrase === null && at.outOfPlace && before.block === m.block && before.phrase === null) {
+        pick = { m, start };
+        break;
+      }
+    }
+    assert.ok(pick, 'a block of Part 2 to borrow a time from');
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      await page.addInitScript(
+        ([id, lecture, start]) => {
+          new MutationObserver((_, obs) => {
+            const el = document.getElementById(id);
+            if (!el) return;
+            Object.assign(el.dataset, { lecture, start: String(start), end: String(start + 10), outOfPlace: '1' });
+            obs.disconnect();
+          }).observe(document, { childList: true, subtree: true });
+        },
+        [fakeId, L, pick.start],
+      );
+      await page.goto(`${base}${g10.url}`);
+      await playBlock(page, pick.m.id);
+      await waitPlaying(page, blockSeek(pick.m.block, parts10[0].id).seekSeconds);
+      await studySeek(page, pick.start - 1.5);
+      // Played on (not a seek, which would follow the new position at once).
+      const y = (await studyState(page)).scrollY;
+      await page.waitForFunction(([sel, t]) => document.querySelector(sel).currentTime > t, [STUDY_AUDIO, pick.start + 0.6], { timeout: 10000 });
+      await page.waitForTimeout(300);
+      const s = await studyState(page);
+      assert.ok(s.current.includes(fakeId), `the far block is highlighted (${s.current})`);
+      assert.equal(s.now, 'Now: aside on another passage');
+      assert.ok(await page.locator('[data-study-goto]').isVisible(), 'Go to');
+      assert.equal(s.scrollY, y, 'the page stays put');
+      await page.click('[data-study-goto]');
+      await page.waitForTimeout(300);
+      const r = await topOf(page, fakeId);
+      assert.ok(r.top >= 0 && r.top < r.visible / 2, `Go to shows it (${r.top})`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide: switching class plays it from its part, ⏮15 / 15⏭, Autoplay next plays the next class from 0:00 and after the last offers the next chapter\'s guide', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      await page.goto(`${base}${g10.url}`);
+      const b1 = blockMoments(parts10[0].id)[1];
+      await playBlock(page, b1.id);
+      await waitPlaying(page, blockSeek(b1.block, parts10[0].id).seekSeconds);
+      await page.selectOption('[data-study-select]', parts10[1].id);
+      await waitPlaying(page, parts10[1].start);
+      let s = await studyState(page);
+      const url = await page.getAttribute(`li.study-class[data-lecture="${parts10[1].id}"]`, 'data-url');
+      assert.equal(s.src, url);
+      assert.ok(!s.current.includes(b1.id), 'the other class\'s block is no longer current');
+      const b2 = blockMoments(parts10[1].id)[1];
+      await studySeek(page, b2.t);
+      assert.ok((await studyState(page)).current.includes(b2.id));
+
+      const t0 = (await studyState(page)).t;
+      await page.click('[data-study-skip="15"]');
+      await page.waitForFunction(([sel, t]) => Math.abs(document.querySelector(sel).currentTime - t) < 1.5, [STUDY_AUDIO, t0 + 15]);
+      await page.click('[data-study-skip="-15"]');
+      await page.waitForFunction(([sel, t]) => Math.abs(document.querySelector(sel).currentTime - t) < 2.5, [STUDY_AUDIO, t0]);
+
+      // Autoplay next (the shared setting).
+      await page.check('[data-study-player] [data-autoplay-next]');
+      assert.equal(await page.evaluate((k) => localStorage.getItem(k), AUTOPLAY_KEY), 'on');
+      const n = parts10.length;
+      await page.selectOption('[data-study-select]', parts10[n - 2].id);
+      await waitPlaying(page, parts10[n - 2].start);
+      const audio = await page.locator(STUDY_AUDIO).elementHandle();
+      await playToEnd(audio);
+      await page.waitForFunction(([sel, id]) => document.querySelector('[data-study-select]').value === id && !document.querySelector(sel).paused, [STUDY_AUDIO, parts10[n - 1].id], { timeout: 15000 });
+      s = await studyState(page);
+      assert.ok(s.t < 5, `from the start (${s.t})`);
+      const label = await page.getAttribute(`li.study-class[data-lecture="${parts10[n - 1].id}"]`, 'data-label');
+      assert.equal(s.note, `Playing next: ${label}`);
+      await playToEnd(audio);
+      await page.waitForFunction((sel) => document.querySelector(sel).ended, STUDY_AUDIO, { timeout: 15000 });
+      await page.waitForTimeout(300);
+      s = await studyState(page);
+      assert.equal(s.note, 'That was the last class on this chapter.');
+      const next = studyGuides.find((x) => x.series.id === g10.series.id && x.entry.chapter === 'chapter_11');
+      const link = page.locator('[data-study-next]');
+      assert.ok(await link.isVisible(), 'a link to the next chapter\'s guide');
+      assert.equal(await link.getAttribute('href'), next.url);
+      assert.equal(await link.textContent(), 'Next: Chapter 11’s guide →');
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide arrival: ?class=&t= and #<line id> / #s-… mark the item with a focused "▶ Play from" (the player\'s own play starts there too); ?class= alone shows its divider; never autoplays; the parameters are dropped', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      const L = parts10[3].id;
+      const m = blockMoments(L)[2];
+      const arrive = async (u) => {
+        await page.goto('about:blank');
+        await page.goto(`${base}${g10.url}${u}`);
+        await page.waitForLoadState('load');
+        await page.waitForTimeout(400);
+        return studyState(page);
+      };
+      // A moment of a class.
+      let s = await arrive(`?class=${lectureSlug(L)}&t=${m.t}`);
+      assert.equal(s.search, '', 'class and t dropped');
+      assert.equal(s.paused, true, 'never autoplays');
+      assert.equal(s.lecture, L);
+      assert.equal(s.focusText, `▶ Play from ${formatTime(m.t)}`);
+      assert.deepEqual(await page.$$eval('.is-selected', (els) => els.map((e) => e.id)), [m.id]);
+      let r = await topOf(page, m.id);
+      assert.ok(r.top > 0 && r.top < r.visible, `the block is shown (${r.top})`);
+      await page.waitForTimeout(800);
+      assert.equal((await studyState(page)).paused, true);
+      // The player's own play button starts there.
+      await page.evaluate((sel) => document.querySelector(sel).play(), STUDY_AUDIO);
+      await waitPlaying(page, m.t, 2);
+      await page.waitForTimeout(300);
+      assert.ok((await studyState(page)).current.includes(m.id));
+
+      // A line: where its passage's first phrase on it plays from.
+      const onFirstLine = (p) => (p.phrases ?? []).findIndex((ph) => (p.lines.includes(ph.lines[0]) ? ph.lines[0] : p.lines[0]) === p.lines[0]);
+      const k = g10Passages.findIndex((p, i) => {
+        const ph = p.phrases?.[onFirstLine(p)];
+        return i > 10 && ph?.en && typeof ph.start === 'number';
+      });
+      const line = g10Passages[k].lines[0];
+      const j = onFirstLine(g10Passages[k]);
+      const seekLine = studyModel.studySeekTarget(g10Passages, parts10, { passage: k, phrase: j }, null);
+      s = await arrive(`#${line}`);
+      assert.equal(s.paused, true);
+      assert.equal(s.lecture, seekLine.lecture);
+      assert.equal(s.focusText, `▶ Play from ${formatTime(seekLine.seekSeconds)}`);
+      assert.equal(s.hash, `#${line}`);
+      await page.click('button.study-deep-play');
+      await waitPlaying(page, seekLine.seekSeconds);
+      assert.ok((await studyState(page)).docked);
+
+      // A passage anchor (search results).
+      const seekPassage = studyModel.studySeekTarget(g10Passages, parts10, { passage: k }, null);
+      s = await arrive(`#s-${line}`);
+      assert.equal(s.paused, true);
+      assert.equal(s.focusText, `▶ Play from ${formatTime(seekPassage.seekSeconds)}`);
+
+      // A class alone: its divider.
+      s = await arrive(`?class=${lectureSlug(L)}`);
+      assert.equal(s.search, '');
+      assert.equal(s.lecture, L);
+      assert.equal(await page.locator('button.study-deep-play').count(), 0);
+      r = await topOf(page, `c-${lectureSlug(L)}`);
+      assert.ok(r.top >= 0 && r.top < r.visible / 2, `the divider is shown (${r.top})`);
+
+      // An unknown class: nothing, quietly.
+      s = await arrive('?class=no-such-class&t=5');
+      assert.equal(s.search, '');
+      assert.equal(s.lecture, parts10[0].id);
+      assert.equal(await page.locator('button.study-deep-play').count(), 0);
+      assert.equal(s.paused, true);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide: tapping a phrase plays from it; a double-click (selecting a word) does not', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced });
+    try {
+      await page.goto(`${base}${g10.url}`);
+      const L = parts10[1].id;
+      const [ph, ph2] = phraseMoments(L).filter((x, i, all) => i === 0 || x.passage !== all[0].passage);
+      const phrase = (x) => page.locator(`.phrase[data-lecture="${L}"]`).filter({ has: page.locator('.phrase-en') }).and(page.locator(`[data-start="${x.start}"]`));
+      await phrase(ph2).locator('.phrase-en').dblclick();
+      await page.waitForTimeout(700);
+      assert.equal((await studyState(page)).paused, true, 'a double-click selects, never plays');
+      await page.evaluate(() => window.getSelection().removeAllRanges());
+      await phrase(ph).locator('.phrase-en').click();
+      await waitPlaying(page, ph.start);
+      const s = await studyState(page);
+      assert.equal(s.lecture, L);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('study guide with storage blocked: plays, follows and toggles Follow for the page only', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: reduced, blockStorage: true });
+    try {
+      await page.goto(`${base}${g10.url}`);
+      assert.equal(await page.getAttribute('[data-study-follow]', 'aria-pressed'), 'true', 'Follow is on by default');
+      const m = blockMoments(parts10[0].id)[1];
+      await playBlock(page, m.id);
+      await waitPlaying(page, blockSeek(m.block, parts10[0].id).seekSeconds);
+      await page.waitForTimeout(300);
+      assert.ok((await studyState(page)).current.includes(m.id));
+      await page.click('[data-study-follow]');
+      assert.equal(await page.getAttribute('[data-study-follow]', 'aria-pressed'), 'false');
+      await page.check('[data-study-player] [data-autoplay-next]');
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`study guide playing (${name}): docked bar, no sideways scroll, highlighted block and phrase, Back to now (screenshots)`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: { ...ctx, reducedMotion: 'reduce' } });
+      try {
+        await page.goto(`${base}${g10.url}`);
+        await page.evaluate(() => document.fonts.ready);
+        const L = parts10[6].id;
+        const ph = phraseMoments(L).find((x) => {
+          const at = studyModel.studyAt(studyModel.studyTimeline(g10Passages, L, parts10[6]), x.t + 0.3);
+          return at.block !== null && !at.outOfPlace && Number(at.block.split('.')[0]) === x.passage;
+        });
+        assert.ok(ph, 'a moment with a phrase and a block');
+        const block = blockMoments(L)[0];
+        if (name === 'phone') await page.locator(`[id="${block.id}"] a.study-play`).first().tap();
+        else await playBlock(page, block.id);
+        await waitPlaying(page, blockSeek(block.block, parts10[0].id).seekSeconds);
+        await studySeek(page, ph.t + 0.3);
+        let s = await studyState(page);
+        assert.equal(s.current.length, 2, `a block and a phrase (${s.current})`);
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), ctx.viewport.width, 'no sideways scroll');
+        assert.ok(s.barH <= (name === 'phone' ? 0.3 : 0.25) * s.innerHeight, `bar is ${s.barH}px of ${s.innerHeight}`);
+        // Every control of the bar is inside the screen.
+        const out = await page.$$eval('[data-study-player] select, [data-study-player] button:not([hidden]), [data-study-player] audio', (els) =>
+          els.filter((e) => e.checkVisibility()).map((e) => e.getBoundingClientRect()).filter((r) => r.left < 0 || r.right > window.innerWidth).length,
+        );
+        assert.equal(out, 0, 'bar controls fit');
+        // Show the phrase with its block for the screenshot.
+        await page.locator('.phrase.is-discussing').evaluate((e) => window.scrollBy(0, e.getBoundingClientRect().top - 90));
+        await page.waitForTimeout(200);
+        await page.screenshot({ path: path.join(shots, `study-playing-${name}.png`) });
+        if (name === 'phone') {
+          await page.evaluate(() => window.scrollBy(0, 3000));
+        } else {
+          await page.mouse.move(640, 300);
+          await page.mouse.wheel(0, 3000);
+        }
+        await page.waitForTimeout(600);
+        s = await studyState(page);
+        assert.match(s.pill ?? '', /^↑ Back to now · /);
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), ctx.viewport.width, 'no sideways scroll with the pill');
+        const pill = await page.locator('[data-study-back-now]').boundingBox();
+        assert.ok(pill.x >= 0 && pill.x + pill.width <= ctx.viewport.width, 'the pill fits');
+        await page.screenshot({ path: path.join(shots, `study-back-to-now-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  await check('chapter page: the "Study guide →" pill for the teacher in the player carries ?class= and, once played, &t=; it lands on the moment without playing', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/texts/chapter-10/`);
+      const pill = page.locator('[data-listen-study]');
+      await page.waitForFunction(() => document.querySelector('[data-listen-study]').getAttribute('href')?.includes('?class='));
+      const first = chapter10.lectures.find((l) => l.seriesId === '0');
+      assert.ok(await pill.isVisible());
+      assert.equal(await pill.getAttribute('href'), `${g10.url}?class=${lectureSlug(first.id)}`);
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await seek(page, 125.6);
+      const pillT = async () => {
+        const [href, t] = await Promise.all([pill.getAttribute('href'), page.evaluate(() => Math.floor(document.querySelector('[data-listen-audio]').currentTime))]);
+        return [href.replace(/&t=\d+$/, ''), Math.abs(Number(/&t=(\d+)$/.exec(href)?.[1]) - t) <= 1];
+      };
+      assert.deepEqual(await pillT(), [`${g10.url}?class=${lectureSlug(first.id)}`, true]);
+      // A teacher with no public guide: no pill.
+      await page.selectOption('[data-listen-series]', '37');
+      await page.waitForTimeout(300);
+      assert.equal(await pill.isVisible(), false);
+      await page.selectOption('[data-listen-series]', '0');
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
+      await seek(page, 125.6);
+      await page.evaluate(() => document.querySelector('[data-listen-audio]').pause());
+      await page.waitForTimeout(200);
+      const href = await pill.getAttribute('href');
+      assert.deepEqual(await pillT(), [`${g10.url}?class=${lectureSlug(first.id)}`, true], 'kept when paused');
+      await pill.click();
+      await page.waitForURL(`${base}${g10.url}`);
+      await page.waitForLoadState('load');
+      await page.waitForTimeout(400);
+      const s = await studyState(page);
+      assert.equal(s.paused, true, 'never autoplays');
+      assert.match(s.focusText, /^▶ Play from /, href);
+      assert.equal(await page.locator('.is-selected').count(), 1);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('/study/ and the series page list the public guides; the Study nav item on English and Hebrew pages', async () => {
+    for (const [rel, label] of [['index.html', 'Study'], ['he/index.html', 'מדריך לימוד'], ['texts/chapter-10/index.html', 'Study']]) {
+      const nav = /<nav>([\s\S]*?)<\/nav>/.exec(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'))?.[1] ?? '';
+      assert.match(nav, new RegExp(`<a href="?/classes/"?>[^<]*</a>\\s*<a href="?/study/"?>${label}</a>\\s*<a href="?/outlines/"?>`), `${rel}: Study between Classes and Outlines`);
+    }
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/study/`);
+      const cards = page.locator('.study-series-card');
+      assert.equal(await cards.count(), studyIndex.series.length);
+      await cards.first().locator('h2 a').click();
+      await page.waitForURL(`${base}/study/${studyIndex.series[0].id}/`);
+      const items = page.locator('.study-chapter-list a');
+      assert.equal(await items.count(), studyIndex.series[0].chapters.length);
+      await items.first().click();
+      await page.waitForURL(`${base}${studyGuides[0].url}`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
   // ---------------- site nav ----------------
   await check('site nav: Outlines on English and Hebrew pages, no Translation; the Texts page links the translation', async () => {
     const pages = [
@@ -1811,6 +2608,44 @@ async function check(name, fn) {
       await page.click('.search-result a');
       await page.waitForURL(`${base}${line.href}`);
       assert.ok(await page.evaluate(() => document.querySelector(':target')?.classList.contains('line')));
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  await check('search: study guide passages (filter Study guides, and under the teacher); a result opens the passage with Play from; the site stays well under 20,000 files', async () => {
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      const study = await searchFor(page, 'hiyuli', 'study');
+      assert.ok(study.results.length > 0, 'hiyuli is in the guides');
+      for (const r of study.results) {
+        assert.equal(r.kind, 'study');
+        assert.match(r.href, /^\/study\/[a-z0-9-]+\/chapter-\d+\/#s-[a-z2-7]{8}$/);
+        assert.ok(studyGuides.some((g) => r.href.startsWith(g.url)), `${r.href}: a public guide`);
+      }
+      assert.ok(study.results.some((r) => r.marks.length > 0), 'marked words');
+      assert.ok((await searchFor(page, 'צמצום', 'study')).results.length > 0, 'the Hebrew of the passages');
+      assert.ok((await searchFor(page, 'hiyuli', 's0')).results.some((r) => r.kind === 'study'), 'under the teacher');
+      assert.ok((await searchFor(page, 'hiyuli', 'classes')).results.every((r) => r.kind !== 'study'), 'not under All classes');
+      const hit = (await searchFor(page, 'hiyuli', 'study')).results[0];
+      await page.click(`.search-result a[href="${hit.href}"]`);
+      await page.waitForURL(`${base}${hit.href}`);
+      await page.waitForLoadState('load');
+      await page.waitForTimeout(300);
+      assert.ok(await page.evaluate(() => document.querySelector(':target')?.classList.contains('study-passage')));
+      assert.match(await page.evaluate(() => document.activeElement?.textContent ?? ''), /^▶ Play from \d+:\d\d$/);
+      assert.equal(await page.evaluate(() => document.querySelector('[data-study-audio]').paused), true);
+      let files = 0;
+      const walk = (dir) => {
+        for (const d of fs.readdirSync(dir, { withFileTypes: true })) {
+          if (d.isDirectory()) walk(path.join(dir, d.name));
+          else files++;
+        }
+      };
+      walk(PUBLIC);
+      assert.ok(files < 15000, `${files} files (Cloudflare Pages allows 20,000)`);
+      results.push(`     (${files} files in the site)`);
       assert.deepEqual(errors, []);
     } finally {
       await context.close();

@@ -1,0 +1,5 @@
+{{- /* The label of a block said away from its passage (outOfPlace): where
+       it was said, "From <class label> · m:ss". Computed from the block's
+       audio, never the writer's outOfPlace note. Context: dict "audio"
+       ({lecture, start}) "class" (its class entry: label). */ -}}
+{{- return printf "From %s · %s" .class.label (partial "format-time.html" (.audio.start | default 0)) -}}

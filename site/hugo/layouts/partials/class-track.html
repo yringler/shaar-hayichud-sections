@@ -8,13 +8,16 @@
        reader instead (data-lesson-open), keeping the audio playing, and
        shows Autoplay next under the player (.track-player, which the reader
        docks) and the class's auto-generated topics under its title (each
-       plays the class from there). */ -}}
+       plays the class from there). A class that a public study guide cites
+       links it ("Study guide", or one link per chapter for a class in two
+       guides: <guide>?class=<transcript slug>, partials/study/index.html). */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
 {{- $transcript := index $audio.transcripts .id -}}
 {{- $aligned := index $audio.aligned .id -}}
 {{- $text := partial "audio/lesson-text.html" .id -}}
 {{- $info := index $lectures .id -}}
+{{- $study := index (partialCached "study/index.html" . "study").lectures .id -}}
 {{- if not $info }}{{ errorf "class-track: lecture %q is missing from audio/lectures.html" .id }}{{ end -}}
 {{- $teacher := printf "?teacher=%s" (replaceRE `[^A-Za-z0-9]+` "" $info.series.title) -}}
 <div class="track" id="{{ $info.anchor }}"{{ with $text }} data-lesson{{ end }}>
@@ -40,7 +43,7 @@
     {{- end }}
   </div>
   {{- end }}
-  {{- if or $transcript $aligned }}
+  {{- if or $transcript $aligned $study }}
   <p class="track-links">
     {{- with $aligned }}
       {{- if eq (len .all) 1 }}<a class="audio-link" href="{{ .url }}{{ $teacher }}"{{ if $text }} data-lesson-open="{{ .url }}"{{ end }}>Follow in the text</a>
@@ -48,6 +51,11 @@
       {{- end }}
     {{- end -}}
     {{- with $transcript }}<a class="audio-link" href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
+    {{- with $study }}
+      {{- if eq (len .) 1 }}<a class="audio-link" href="{{ (index . 0).url }}">Study guide</a>
+      {{- else }}<span class="track-links-label">Study guide:</span>{{ range . }}<a class="audio-link" href="{{ .url }}">Chapter {{ .number }}</a>{{ end }}
+      {{- end }}
+    {{- end -}}
   </p>
   {{- end }}
 </div>

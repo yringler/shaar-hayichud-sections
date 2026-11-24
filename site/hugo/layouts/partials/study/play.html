@@ -1,0 +1,13 @@
+{{- /* A block's ▶: a link to its recording at the block's start (#t=, Media
+       Fragments: the browser's own player opens there), so it works without
+       JS. Context: dict "audio" ({lecture, start, end}) "class" (its class
+       entry from study/single.html: url, label) "current" (the lecture of
+       the class divider above) "inline" (bool: inside a joined paragraph).
+       A block from another class than the one around it names that class. */ -}}
+{{- $a := .audio -}}
+{{- $c := .class -}}
+{{- $start := $a.start | default 0 -}}
+{{- $time := partial "format-time.html" $start -}}
+{{- $other := ne $a.lecture .current -}}
+<a class="study-play{{ if .inline }} is-inline{{ end }}" href="{{ $c.url }}#t={{ $start }}" data-start="{{ $start }}" data-lecture="{{ $a.lecture }}" aria-label="Play {{ $c.label }} from {{ $time }}">▶ {{ if $other }}{{ $c.label }} · {{ end }}{{ $time }}</a>
+{{- /**/ -}}
