@@ -36,7 +36,8 @@ import {
   type Transcript,
 } from './audio/model.ts';
 import { playAt, replaceHash, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
-import { autoplayNext, markPlaying, readStore, writeStore } from './audio/store.ts';
+import { autoplayNext, FOLLOW_KEY, markPlaying, readStore, writeStore } from './audio/store.ts';
+import { studyLinkHref } from './audio/study-model.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
 
 type FollowModule = { startFollow: (o: FollowOptions) => FollowController };
@@ -45,8 +46,6 @@ type FollowModule = { startFollow: (o: FollowOptions) => FollowController };
 const SERIES_KEY = 'shaarHayichud.audio.series';
 /** URL parameter naming the teacher for this page load only (series id or teacherKey; never saved). */
 const TEACHER_PARAM = 'teacher';
-/** localStorage key of Follow along on/off ("on" / "off"), shared by chapter and transcript pages. */
-const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
 
 function init(panel: HTMLElement): void {
   const audio = panel.querySelector<HTMLAudioElement>('[data-listen-audio]');
@@ -195,6 +194,17 @@ function readSavedSeries(): SavedSeries | null {
 
 const saveSeries = (s: SavedSeries): void => writeStore(SERIES_KEY, JSON.stringify(s));
 
+/** The panel's data-study-guides: catalog series id -> its public guide of the chapter. */
+function readGuides(json: string | undefined): Record<string, { url: string; lectures: string[] } | undefined> {
+  if (!json) return {};
+  try {
+    const v: unknown = JSON.parse(json);
+    return v && typeof v === 'object' ? (v as Record<string, { url: string; lectures: string[] }>) : {};
+  } catch {
+    return {};
+  }
+}
+
 function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, activate: () => void): ChapterPlayer {
   const seriesSelect = panel.querySelector<HTMLSelectElement>('[data-listen-series]');
   const select = panel.querySelector<HTMLSelectElement>('[data-listen-select]');
@@ -251,6 +261,7 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       if (href) transcriptLink.href = href;
     }
     syncTranscript();
+    syncStudy();
   };
 
   const setLecture = (lecture: number, autoplayAt: number | null) => {
@@ -265,6 +276,22 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     activate();
     void playAt(audio, autoplayAt);
   };
+
+  // ---- "Study guide": the guide of the teacher in the player, at the class
+  // and (once it has played) the moment: ?class=<slug>&t=<s> ----
+  const studyLink = panel.querySelector<HTMLAnchorElement>('[data-listen-study]');
+  const guides = readGuides(panel.dataset['studyGuides']);
+  const syncStudy = () => {
+    if (!studyLink) return;
+    const l = data?.lectures[currentLecture() ?? -1];
+    const g = l ? guides[l.seriesId] : undefined;
+    studyLink.hidden = !g;
+    if (!g || !l) return;
+    const inGuide = g.lectures.includes(l.id);
+    const played = !audio.paused || audio.currentTime > 0;
+    studyLink.href = studyLinkHref(g.url, inGuide ? l.id : null, inGuide && played ? audio.currentTime : null);
+  };
+  for (const ev of ['timeupdate', 'seeked', 'pause'] as const) audio.addEventListener(ev, syncStudy);
 
   /** The reader's saved teacher (possibly not on this chapter). */
   let preferred: SavedSeries | null = readSavedSeries();

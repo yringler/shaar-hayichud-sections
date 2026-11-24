@@ -1,11 +1,18 @@
 /**
- * The reader's saved audio choices (localStorage), shared by play.ts and
- * classes.ts. Storage can be blocked (private mode, settings) and then
+ * The reader's saved audio choices (localStorage), shared by play.ts,
+ * classes.ts and study.ts. Storage can be blocked (private mode, settings) and then
  * throws: every access is guarded, and a choice then lasts for this page only.
  */
 
-/** localStorage key of Autoplay next on/off ("on" / "off"), shared by chapter pages and class lists. */
+/** localStorage key of Autoplay next on/off ("on" / "off"), shared by chapter pages, class lists and study guides. */
 export const AUTOPLAY_KEY = 'shaarHayichud.audio.autoplayNext';
+
+/**
+ * localStorage key of Follow along on/off ("on" / "off"), shared by chapter,
+ * transcript and study guide pages (unset: off on chapter and transcript
+ * pages, on on study guide pages).
+ */
+export const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
 
 export function readStore(key: string): string | null {
   try {

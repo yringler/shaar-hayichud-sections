@@ -547,6 +547,20 @@ a.audio-link:focus-visible {
   -webkit-user-select: none;
 }
 
+/* "Study guide →" (chapter panel, play.ts): the guide of the teacher in the
+   player, at the moment playing. Under the player, at the end of the
+   Autoplay next line while it plays (so the docked bar gets no taller). */
+.listen > a.listen-study {
+  align-self: flex-end;
+  margin-block-start: 0.3rem;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.7rem;
+}
+
+.listen:not(.is-active) > a.listen-study { display: flex; inline-size: fit-content; margin-inline-start: auto; }
+.listen.is-playing > .autoplay-next + a.listen-study { margin-block-start: -1.65rem; }
+.listen > a.listen-study[hidden] { display: none; }
+
 /* Only for the player that is playing (`is-playing`, set by the scripts). */
 .listen:not(.is-playing) .autoplay-next,
 .track:not(.is-playing) .autoplay-next { display: none; }
@@ -1393,6 +1407,7 @@ button.deep-play:focus-visible {
 
 .search-result.is-text .search-kind,
 .search-result.is-translation .search-kind { color: #7a5a1e; border-color: #e3cf9f; }
+.search-result.is-study .search-kind { color: #3f6b3e; border-color: #b9d1b8; }
 
 .search-title { font-weight: 600; }
 
@@ -1937,6 +1952,175 @@ ul.index-list li.has-study > a:first-child { padding-inline-end: 7.5rem; }
 }
 
 
+/* The docked class player of a guide page (partials/study/player.html,
+   study.ts): the chapter panel's .listen look and docking (.is-active,
+   --listen-h), with a class selector, ⏮15 / player / 15⏭, "Now:", Follow
+   and Autoplay next. */
+.study-player { margin-block: 1rem 1.5rem; }
+
+.study-pick { flex: 1 1 16rem; min-inline-size: 0; }
+.study-pick select { inline-size: 100%; min-inline-size: 0; }
+
+.study-transport {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.study-transport audio { flex: 1 1 auto; min-inline-size: 0; }
+
+button.study-skip-time {
+  flex: none;
+  min-inline-size: 2.75rem;
+  min-block-size: 2.5rem;
+  padding: 0 0.45rem;
+  border: 1px solid #d4cfc8;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  font: inherit;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button.study-skip-time:hover { background: #3d5a80; border-color: #3d5a80; color: #fff; }
+
+.study-now {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  min-inline-size: 0;
+}
+
+.study-now-text {
+  min-inline-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.study-now.is-muted { font-weight: 400; color: #5a5a78; }
+
+button.study-goto {
+  flex: none;
+  padding: 0 0.6rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.study-player-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.75rem;
+}
+
+.study-player .study-player-row > * { margin-block: 0.3rem 0; }
+.study-player a.study-next-guide { font-size: 0.85rem; padding: 0.25rem 0.7rem; }
+
+button.study-skip-time:focus-visible,
+button.study-goto:focus-visible,
+.study-back-now:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+
+/* With the script: phrases play when tapped. */
+.study-body.is-enhanced .phrase:not(.is-skip *) { cursor: pointer; }
+
+/* The phrase being said: a tint. The block being explained: its side
+   border, filled from the top as playback runs through it (--p, 0–1, set
+   by study.ts; full under reduced motion). */
+.phrase.is-discussing {
+  background: #fdf3d8;
+  box-shadow: 0 0 0 0.25rem #fdf3d8;
+  border-radius: 2px;
+}
+
+div.study-block { position: relative; }
+
+div.study-block.is-discussing:not(.kind-keyPoint) { background: #fcf4e3; }
+
+div.study-block.is-discussing::before {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: -4px;
+  inline-size: 5px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #c08a2e calc(var(--p, 1) * 100%), #e3cc9c 0);
+}
+
+span.study-join.is-discussing {
+  background: #fdf3d8;
+  box-shadow: 0 0 0 0.15rem #fdf3d8;
+  border-radius: 2px;
+}
+
+/* An arrival link's item (?class=&t=, #<line id>, #s-…, #b-…). */
+.is-selected:not(.is-discussing) {
+  background: #fdf3d8;
+  box-shadow: 0 0 0 0.35em #fdf3d8;
+  border-radius: 2px;
+}
+
+button.study-deep-play { margin-block: 0.25rem 0.5rem; }
+
+/* A block said away from its passage: where it was said. */
+.study-from {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: #5a5a78;
+}
+
+/* "↓ Back to now · Mashal: …": floats above the docked player while the
+   reader has scrolled the current item away. */
+.study-back-now {
+  position: fixed;
+  z-index: 6;
+  inset-inline: 0;
+  inset-block-end: calc(var(--listen-h, 0px) + 0.75rem);
+  margin-inline: auto;
+  inline-size: fit-content;
+  max-inline-size: calc(100vw - 2rem);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5rem 1rem;
+  min-block-size: 2.75rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #3d5a80;
+  color: #fff;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 10px rgba(26, 26, 46, 0.2);
+  cursor: pointer;
+}
+
+.study-back-now[hidden] { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  div.study-block.is-discussing::before { background: #c08a2e; }
+}
+
+@media (forced-colors: active) {
+  .phrase.is-discussing,
+  span.study-join.is-discussing,
+  .is-selected:not(.is-discussing) { background: Mark; color: MarkText; forced-color-adjust: none; }
+  div.study-block.is-discussing::before { background: Highlight; forced-color-adjust: none; }
+}
+
+@media (max-width: 600px) {
+  .study-player.is-active .listen-controls { flex-wrap: nowrap; }
+  .study-player .follow-along { padding: 0.25rem 0.6rem; font-size: 0.85rem; }
+}
+
 /* Print: the guide as a booklet, without players and navigation. */
 @media print {
   body { max-width: none; padding: 0; background: #fff; font-size: 11pt; }
@@ -1948,6 +2132,8 @@ ul.index-list li.has-study > a:first-child { padding-inline-end: 7.5rem; }
   .study-divider a,
   a.study-play,
   audio,
+  .study-back-now,
+  .study-deep-play,
   .listen { display: none !important; }
   .study-layout { display: block; }
   details::details-content { content-visibility: visible; display: block; }

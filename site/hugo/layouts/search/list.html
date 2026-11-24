@@ -2,7 +2,8 @@
   {{- /* /search/: the search form and results (search.js, over the Pagefind
          index that scripts/search-index.ts builds after Hugo). This page also
          writes /search/manifest.json, the indexer's list of what to index and
-         where it lives; the indexer deletes it. */ -}}
+         where it lives (chapters, translations, published transcripts, public
+         study guides); the indexer deletes it. */ -}}
   {{- $audio := partialCached "audio/index.html" . "audio" -}}
   {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
   {{- $catalog := partial "catalog.html" . -}}
@@ -26,7 +27,20 @@
       "transcriptUrl" $t.url "partUrl" $info.partUrl "anchor" $info.anchor) -}}
     {{- $withTranscripts = $withTranscripts | append $info.series.id -}}
   {{- end -}}
-  {{- with resources.FromString "search/manifest.json" (dict "chapters" $chapters "translations" $translations "lectures" $list | jsonify) -}}
+  {{- /* The public study guides only (study/index.html reads the public
+         index; the beta export is never readable by a template). */ -}}
+  {{- $study := slice -}}
+  {{- range (partialCached "study/index.html" . "study").series -}}
+    {{- $s := . -}}
+    {{- $teacher := $s.title -}}
+    {{- with index (where $catalog.series "id" $s.catalogSeriesId) 0 }}{{ $teacher = .title }}{{ end -}}
+    {{- range $s.chapters -}}
+      {{- $study = $study | append (dict
+        "url" .url "path" (strings.TrimPrefix "data/v1/" .path) "chapter" .chapter "number" .number
+        "teacher" $s.teacher "series" $teacher) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with resources.FromString "search/manifest.json" (dict "chapters" $chapters "translations" $translations "lectures" $list "study" $study | jsonify) -}}
     {{- .Publish -}}
   {{- end -}}
 
@@ -41,13 +55,14 @@
         <option value="">Everything</option>
         <option value="text">The text</option>
         <option value="classes">All classes</option>
+        <option value="study">Study guides</option>
         {{- range $catalog.series }}{{ if in $withTranscripts .id }}
         <option value="s{{ .id }}" data-teacher="{{ .title }}">{{ .title }}</option>
         {{- end }}{{ end }}
       </select>
       <button type="submit">Search</button>
     </form>
-    <p class="search-about">Searches the Hebrew text, its translation, the class transcripts and their topics.
+    <p class="search-about">Searches the Hebrew text, its translation, the class transcripts and their topics, and the study guides.
       A Hebrew word also finds it with prefix letters (<bdi>חכמה</bdi> finds <bdi>ובחכמה</bdi>), and key terms
       match across spellings and transliterations (<i>chochmah</i>, <bdi>מידות</bdi>). The transcripts are
       machine-made, so a term may be misspelled in them.</p>

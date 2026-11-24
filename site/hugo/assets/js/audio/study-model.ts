@@ -523,3 +523,39 @@ export function parseStudyLink(search: string, hash: string): StudyLink {
     anchor: anchor === '' ? null : anchor,
   };
 }
+
+/**
+ * A link into a guide at a moment of a class (the chapter player's "Study
+ * guide" pill): `<guide>?class=<transcript slug>` and, when `t` is given,
+ * `&t=<whole seconds>`; the guide alone when `lecture` is null. `guide` is
+ * a path (/study/<series>/chapter-N/) and keeps its own query, if any.
+ */
+export function studyLinkHref(guide: string, lecture: string | null, t: number | null = null): string {
+  if (lecture === null) return guide;
+  const [path, query = ''] = guide.split('?', 2) as [string, string?];
+  const q = new URLSearchParams(query);
+  q.set('class', transcriptSlug(lecture));
+  if (t !== null && Number.isFinite(t)) q.set('t', String(Math.max(0, Math.floor(t))));
+  else q.delete('t');
+  return `${path}?${q.toString()}`;
+}
+
+/**
+ * How far through an item playback is at t, from 0 (at or before its
+ * start) to 1 (at or past its end); 1 for a zero-length item once started.
+ * The guide page draws it on the current block's side border.
+ */
+export function itemProgress(start: number, end: number, t: number): number {
+  if (t <= start) return end > start ? 0 : t < start ? 0 : 1;
+  if (end <= start || t >= end) return 1;
+  return (t - start) / (end - start);
+}
+
+/**
+ * Where to scroll a page (window.scrollY) to show an element `ratio` of the
+ * way down the visible area (the window minus the docked player): `top` is
+ * the element's top relative to the viewport. Never negative.
+ */
+export function scrollTopFor(scrollY: number, top: number, visible: number, ratio: number): number {
+  return Math.max(0, Math.round(scrollY + top - visible * ratio));
+}

@@ -1,0 +1,41 @@
+{{- /* The docked class player of a guide page (layouts/study/single.html),
+       driven by study.js (assets/js/study.ts). Hidden without JS: each
+       class then keeps its own plain <audio> in "Classes on this chapter".
+       Its own `data-study-player` attribute (not data-listen), so play.js
+       never attaches to it; it borrows the chapter panel's .listen look and
+       docks the same way (.listen.is-active, --listen-h). Context: dict
+       "entry" (the chapter entry of study/index.html) "classes" (lecture id
+       -> class entry: label) "next" (the series' guide of the next chapter,
+       or nil). Also the floating "Back to now" pill and the visually hidden
+       live region that announces section changes. */ -}}
+{{- $entry := .entry -}}
+{{- $classes := .classes -}}
+<section class="listen study-player" data-study-player data-js-only hidden dir="ltr" aria-label="Class player"
+  {{- with .next }} data-next-url="{{ .url }}" data-next-label="Chapter {{ .number }}"{{ end }}>
+  <div class="listen-controls">
+    <label class="listen-pick study-pick">
+      <span class="listen-pick-label">Class</span>
+      <select data-study-select autocomplete="off">
+        {{- range $entry.lectures }}
+        <option value="{{ .id }}">{{ (index $classes .id).label }}</option>
+        {{- end }}
+      </select>
+    </label>
+    <button type="button" class="follow-along" data-study-follow aria-pressed="true">Follow</button>
+  </div>
+  <div class="study-transport">
+    <button type="button" class="study-skip-time" data-study-skip="-15" aria-label="Back 15 seconds" title="Back 15 seconds">⏮15</button>
+    <audio controls preload="none" data-study-audio></audio>
+    <button type="button" class="study-skip-time" data-study-skip="15" aria-label="Forward 15 seconds" title="Forward 15 seconds">15⏭</button>
+  </div>
+  <p class="listen-now study-now" data-study-now hidden><span class="study-now-text" data-study-now-text></span>
+    <button type="button" class="study-goto" data-study-goto hidden>Go to</button></p>
+  <div class="study-player-row">
+    <label class="autoplay-next"><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>
+    <button type="button" class="deep-play listen-from-start" data-study-from-start hidden></button>
+    <a class="audio-link study-next-guide" data-study-next hidden{{ with .next }} href="{{ .url }}"{{ end }}></a>
+  </div>
+  <p class="listen-note" data-study-note role="status" hidden></p>
+</section>
+<button type="button" class="study-back-now" data-study-back-now hidden></button>
+<p class="visually-hidden" data-study-live aria-live="polite"></p>

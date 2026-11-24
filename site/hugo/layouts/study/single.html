@@ -103,14 +103,20 @@
       <p class="study-notice is-stale">Out of date: parts of this guide no longer match the chapter’s current text or the recordings’ timing.</p>
       {{- end }}
 
+      {{- $next := index (where $series.chapters "number" (string (add (int $entry.number) 1))) 0 }}
+      {{ partial "study/player.html" (dict "entry" $entry "classes" $classes "next" $next) }}
+
       <details class="study-classes" id="classes">
         <summary>Classes on this chapter <span class="study-count">{{ len $entry.lectures }}</span></summary>
         <ol>
           {{- range $entry.lectures }}
           {{- $c := index $classes .id }}
-          <li class="study-class" data-lecture="{{ .id }}" data-start="{{ .start }}" data-end="{{ .end }}">
+          {{- $cont := "" }}
+          {{- with .continuesIn }}{{ with index (where $series.chapters "chapter" .) 0 }}{{ $cont = .url }}{{ end }}{{ end }}
+          <li class="study-class" data-lecture="{{ .id }}" data-start="{{ .start }}" data-end="{{ .end }}" data-label="{{ $c.label }}" data-url="{{ $c.url }}"
+            {{- with .continuesIn }} data-continues-in="{{ . }}"{{ end }}{{ with $cont }} data-continues-url="{{ . }}"{{ end }}>
             <p class="study-class-title">{{ $c.label }} <span class="study-count">{{ partial "format-time.html" .start }}–{{ partial "format-time.html" .end }}</span></p>
-            <audio controls preload="none" src="{{ $c.url }}"></audio>
+            <audio controls preload="none" src="{{ $c.url }}" data-no-js></audio>
             <p class="study-class-links">
               {{- if in $divided .id }}<a href="#c-{{ $c.slug }}">Where it starts</a> · {{ end -}}
               <a href="{{ $c.info.classUrl }}">Class page</a>
@@ -176,7 +182,7 @@
             {{- $seenLines.Set $lid true }}
             <div class="study-line">
               {{- with $info }}{{ if ne .number $prevNumber }}<span class="number">{{ .number }}</span>{{ $prevNumber = .number }}{{ end }}{{ end -}}
-              <span class="line{{ if not $info }} is-unknown{{ end }}"{{ if $first }} id="{{ $lid }}"{{ end }}>
+              <span class="line{{ if not $info }} is-unknown{{ end }}"{{ if $first }} id="{{ $lid }}"{{ end }} data-line="{{ $lid }}">
               {{- with $p.phrases }}
                 {{- range $byLine.Get $lid }}
                 <span class="phrase{{ if not .en }} is-untranslated{{ end }}"{{ with .lecture }} data-lecture="{{ . }}"{{ end }}{{ if isset . "start" }} data-start="{{ .start }}" data-end="{{ .end }}"{{ end }}><span class="phrase-he">{{ replaceRE `\d+` "" .he }}</span>
@@ -217,6 +223,8 @@
       {{- end }}
     </article>
   </div>
+  {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
+  <script type="module" src="{{ $scripts.study.RelPermalink }}" integrity="{{ $scripts.study.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
 
 {{- /* The sections of a guide as anchor links (side nav and "Jump to"). */ -}}

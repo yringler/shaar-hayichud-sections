@@ -21,6 +21,9 @@ import {
   studySeekTarget,
   studyTimeline,
   transcriptSlug,
+  studyLinkHref,
+  itemProgress,
+  scrollTopFor,
 } from "../hugo/assets/js/audio/study-model.ts";
 
 const vectors = JSON.parse(readFileSync(new URL("./study-model.vectors.json", import.meta.url), "utf8"));
@@ -148,4 +151,35 @@ test("real public guides: studyAt and followPassage over every lecture", { skip:
   assert.ok(changes > 0);
   assert.ok(backward <= 5, `${backward} backward passage changes of ${changes}`);
   console.log(`# real guides: ${lectures} lectures, ${samples} samples, ${changes} passage changes, ${backward} backward`);
+});
+
+test("studyLinkHref: a moment of a class in a guide", () => {
+  const g = "/study/walters-original/chapter-10/";
+  assert.equal(studyLinkHref(g, null), g);
+  assert.equal(studyLinkHref(g, "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3"), `${g}?class=07-chap-10-1-atmus-ohr-ein-sof-m`);
+  assert.equal(studyLinkHref(g, "07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3", 125.9), `${g}?class=07-chap-10-1-atmus-ohr-ein-sof-m&t=125`);
+  assert.equal(studyLinkHref(g, "a.mp3", -3), `${g}?class=a&t=0`);
+  assert.equal(studyLinkHref(`${g}?class=x&t=4`, "b.mp3"), `${g}?class=b`);
+  assert.equal(studyLinkHref(g, "a.mp3", Number.NaN), `${g}?class=a`);
+  // What parseStudyLink reads back.
+  const href = studyLinkHref(g, "Part 4.mp3", 61.5);
+  const link = parseStudyLink(href.slice(href.indexOf("?")), "");
+  assert.deepEqual([link.classSlug, link.t], ["part-4", 61]);
+});
+
+test("itemProgress", () => {
+  assert.equal(itemProgress(10, 20, 5), 0);
+  assert.equal(itemProgress(10, 20, 10), 0);
+  assert.equal(itemProgress(10, 20, 15), 0.5);
+  assert.equal(itemProgress(10, 20, 20), 1);
+  assert.equal(itemProgress(10, 20, 99), 1);
+  assert.equal(itemProgress(10, 10, 10), 1);
+  assert.equal(itemProgress(10, 10, 9), 0);
+  assert.equal(itemProgress(10, 5, 12), 1);
+});
+
+test("scrollTopFor", () => {
+  assert.equal(scrollTopFor(1000, 500, 800, 0.25), 1300);
+  assert.equal(scrollTopFor(1000, -200, 800, 0.3), 560);
+  assert.equal(scrollTopFor(0, 100, 800, 0.25), 0);
 });
