@@ -15,7 +15,12 @@ void main() {
   });
 
   test('series ids and order are stable', () {
-    expect(catalog.series.map((s) => s.id), ['0', '37', '75', '73']);
+    // The first four ids are persisted by clients and must never change; the
+    // 2020 edited and 5784 series were appended after them, in classes.txt order.
+    expect(
+      catalog.series.map((s) => s.id),
+      ['0', '37', '75', '73', '90', '102', '104'],
+    );
   });
 
   test('ids are unique across sections and lectures', () {
