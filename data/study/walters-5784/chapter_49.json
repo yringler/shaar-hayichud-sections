@@ -1,0 +1,2704 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-5784",
+  "chapter": "chapter_49",
+  "title": "The ten sefiros of Malchus of Atzilus: the crown, the chachma, the middos, and the kelim of speech",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 6",
+    "date": "2026-11-24"
+  },
+  "lectures": [
+    {
+      "id": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+      "transcriptionId": "f05e0502-bf09-476e-8e5a-eec286a7cf6d"
+    }
+  ],
+  "overview": "Chapter 49 continues the ten *sefiros* of *Malchus* of *Atzilus*. It starts with the crown, the simple pleasure and will above reason. The light of that will contracts into *chachma* and *bina* so that the will has a reason: this lower wisdom is the wisdom of Shlomo, and the wisdom in the end is rooted in the wisdom in the beginning. The chapter then turns to the *middos* of *Malchus*, which the *chachma* sets, as a king's laws are set by his vision. The *sefiros* of *Malchus* are sometimes small and sometimes great, as the *sefiros* of *Zeir Anpin* are, as a child grows, as the weekday differs from Shabbos, and as a person speaks differently to different listeners. The second half takes the ten *sefiros* as *kelim*: the letters of the ten utterances, with three levels, as in thought: the thought of speech, the speech of speech, and the action of speech. Each of the six *middos* has its own thought as a *kli* for its *mochin*. The last layer, *Malchus* of *Malchus*, begins in *Atzilus* and breaks through the curtain to become the source of *Beriya*.",
+  "terms": [
+    {
+      "term": "Malchus",
+      "he": "מלכות",
+      "gloss": "kingship; the tenth sefira, the self expressed outside the self",
+      "line": "qkclam4f"
+    },
+    {
+      "term": "Keser",
+      "he": "כתר",
+      "gloss": "the crown: the simple pleasure and will of Malchus, above reason",
+      "line": "bchxpiry"
+    },
+    {
+      "term": "Chachmas Shlomo",
+      "he": "חכמת שלמה",
+      "gloss": "the lower wisdom of Malchus, which gives the will a reason",
+      "line": "l3pavw3q"
+    },
+    {
+      "term": "osios",
+      "he": "אותיות",
+      "gloss": "letters; the symbols of thought and speech",
+      "line": "l3pavw3q"
+    },
+    {
+      "term": "mochin",
+      "he": "מוחין",
+      "gloss": "the intellectual faculties; the mind of a sefira",
+      "line": "pujwsrx5"
+    },
+    {
+      "term": "middos",
+      "he": "מדות",
+      "gloss": "emotional attributes",
+      "line": "gdptkcrj"
+    },
+    {
+      "term": "chagas",
+      "he": "חג״ת",
+      "gloss": "chesed, gevura and tiferes, the middos above Nehi",
+      "line": "gdptkcrj"
+    },
+    {
+      "term": "Nehi",
+      "he": "נה״י",
+      "gloss": "netzach, hod and yesod, the lowest middos of a sefira",
+      "line": "gdptkcrj"
+    },
+    {
+      "term": "katnus",
+      "he": "קטנות",
+      "gloss": "smallness: immaturity of a sefira; gadlus is its greatness",
+      "line": "mcfgonnw"
+    },
+    {
+      "term": "kli",
+      "he": "כלי",
+      "gloss": "vessel; the form through which a level is expressed",
+      "line": "fwd7gz75"
+    },
+    {
+      "term": "dibur",
+      "he": "דיבור",
+      "gloss": "speech",
+      "line": "jrzgwi4y"
+    },
+    {
+      "term": "maamar",
+      "he": "מאמר",
+      "gloss": "utterance; one of the ten utterances of creation",
+      "line": "pujwsrx5"
+    }
+  ],
+  "sections": [
+    {
+      "title": "The crown of Malchus: a simple will above reason",
+      "summary": "Before the ten sefiros are taken one by one, the class recalls the basic idea of Malchus and its crown: a simple pleasure and will that is higher than any reason.",
+      "passages": [
+        {
+          "lines": [
+            "qkclam4f",
+            "bchxpiry"
+          ],
+          "phrases": [
+            {
+              "he": "(מט) ומעתה",
+              "en": "Now",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [495, 495],
+                "start": 171.4,
+                "end": 171.5
+              }
+            },
+            {
+              "he": "יש להבין בפרטות",
+              "en": "we have to understand the details",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [496, 501],
+                "start": 171.52,
+                "end": 173.46
+              }
+            },
+            {
+              "he": "עשר ספירות",
+              "en": "the ten *sefiros*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [503, 505],
+                "start": 173.74,
+                "end": 174.54
+              }
+            },
+            {
+              "he": "דמלכות דאצילות",
+              "en": "of *Malchus* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [506, 509],
+                "start": 174.62,
+                "end": 175.72
+              }
+            },
+            {
+              "he": "שהוא בחינת התענוג והרצון הפשוט שיצא לידי גלוי באור מדה זו,",
+              "en": "the simple pleasure and desire that's being revealed and expressed in this *middah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [532, 544],
+                "start": 187.16,
+                "end": 192.8
+              }
+            },
+            {
+              "he": "הוא בחינת הכתר שבה בכלל כנזכר לעיל",
+              "en": "that's the *Keser* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [545, 549],
+                "start": 192.86,
+                "end": 194.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This chapter continues with *Malchus*, whose main *mashal* is speech. A person has inner ideas and feelings and can express them to others: that expression of the self outside the self is *Malchus*. The *nimshal* is G-d, who has His essential abilities and is infinite, and expresses them in creation, where it feels separate from Him. The soul and the body are both G-dly, but the soul feels connected to G-dliness and the body feels independent. A miracle feels connected to its source; nature makes the world seem to run on its own. Even Torah has this: it is G-dly, but it was given to us to understand and decide (*pasken*), and there it becomes independent.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [0, 349],
+                  "start": 0,
+                  "end": 121.92
+                }
+              ],
+              "outOfPlace": "Opening remarks before the first line is read: they introduce the chapter's idea of Malchus as a whole."
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Shechina* is another aspect of *Malchus*: G-dliness revealed within creation and within us, the sense that compels us to live a G-dly life. Keep these in mind. In this chapter we discuss the ten *sefiros* of the *partzuf* of *Malchus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [350, 486],
+                  "start": 122,
+                  "end": 166.9
+                }
+              ],
+              "outOfPlace": "Opening remarks before the first line is read: they introduce the chapter's idea of Malchus as a whole."
+            },
+            {
+              "kind": "explanation",
+              "text": "As we said, the simple pleasure and will revealed in this *middah* is the *Keser* of *Malchus*: G-d can make something seem separate from Him or independent, and He wants to. That desire is the *Keser*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [487, 588],
+                  "start": 167.44,
+                  "end": 209.02
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chachma tatah: the wisdom that gives reason to the will",
+      "summary": "The light of the will contracts into chachma and bina, giving the will a reason; that lower wisdom is the wisdom of Shlomo, and the chachma in the end is rooted in the chachma in the beginning.",
+      "passages": [
+        {
+          "lines": [
+            "l3pavw3q",
+            "yf55pfe3"
+          ],
+          "phrases": [
+            {
+              "he": "ואחר כך מתצמצם אור התענוג והרצון שלמעלה מן השכל וטעם,",
+              "en": "And then this light of this *taanug* and *ratzon* that's really higher than any reason, that becomes then limited, becomes contracted",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [740, 760],
+                "start": 262.71,
+                "end": 272.62
+              }
+            },
+            {
+              "he": "בבחינת חכמה ובינה לרצון זה,",
+              "en": "until it's able to go into *chachma* and *bina*, to create a reason and a logic for this *ratzon*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [761, 781],
+                "start": 272.66,
+                "end": 279.78
+              }
+            },
+            {
+              "he": "והוא בחינת החכמה שבמדת המלכות,",
+              "en": "And this is the *chachma* within the *middah* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1114, 1123],
+                "start": 375.84,
+                "end": 377.92
+              }
+            },
+            {
+              "he": "שנקרא חכמה תתאה",
+              "en": "which is called the lower wisdom",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1124, 1129],
+                "start": 377.96,
+                "end": 379.14
+              }
+            },
+            {
+              "he": "(חכמת שלמה)",
+              "en": "this is the wisdom of *Shlomo* the king",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1132, 1138],
+                "start": 380.64,
+                "end": 382.5
+              }
+            },
+            {
+              "he": "חכמה בסוף, ששרשה בחכמה בראש,",
+              "en": "this is the wisdom in the end, which is rooted in the wisdom in the beginning",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1283, 1298],
+                "start": 422.78,
+                "end": 425.68
+              }
+            },
+            {
+              "he": "בבחינת חכמה העצמית",
+              "en": "so it's originally coming from this essential *chachma*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1375, 1382],
+                "start": 451.26,
+                "end": 453.22
+              }
+            },
+            {
+              "he": "שמשם נמשך חכמה לרצון זה שבמדת המלכות",
+              "en": "which is the source of the *chachma* for that's of this *ratzon* that's being expressed in the *middah* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1390, 1409],
+                "start": 457.5,
+                "end": 463.84
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Everything in creation, and in *Torah*, has two aspects: it is simply because G-d wants it, with no reason, the *Keser* aspect; and it is an independent system that makes sense and can partly be understood, the *Malchus* of it, the *osios*. The world is created through two main things, G-d's *ratzon* and *Malchus*. The light of delight and will, higher than any reason, contracts into *chachma* and *bina*, so the will has a reason and a logic. Essentially, it is just because it is.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [589, 790],
+                  "start": 210.36,
+                  "end": 283.58
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Gravity: the math says how, not why",
+              "text": "Why do things fall? We call it gravity, but that is only a name. The math describes the *sechel* of how it works and predicts what will happen, but not why. Ask why it has these rules and the answer is that it is just a nature: that is the *Keser*, a will higher than reason. The nature put into things is part of what G-d wanted. What we see is the will itself, literally the ten *maamaros*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [791, 1005],
+                  "start": 283.6,
+                  "end": 343.74
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "DNA as the letters of speech",
+              "text": "The same is true of our nature. The DNA in the body is literally like the letters of G-d's speech, dictating how the body works, and it comes through the *dibur*. Why should it encode what it does? It is ultimately a will G-d set that way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1006, 1105],
+                  "start": 343.9,
+                  "end": 369.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *chachma* within the *middah* of *Malchus* is the lower wisdom, *Chachmas Shlomo*: the wisdom of how to be a king, which Shlomo asked for, to rule justly. There is a real creative *chachma* of G-dliness, and a *chachma* of a world with people in it, of how things are and how to run what is separate from you. Expressing something in words is the same *chachma*, in *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1106, 1273],
+                  "start": 370.78,
+                  "end": 418.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *chachma* in the end is rooted in the *chachma* in the beginning. Someone who explains or writes well must first understand well; what he says comes from his essential *chachma*. The wisdom of how to speak comes from that same source. So everything, even what appears separate, is an expression of G-d's wisdom, and all the wisdom in creation and nature comes from His *chachma*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1274, 1462],
+                  "start": 419.06,
+                  "end": 479.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bereishis and Elokim: the original chachma of Malchus",
+      "summary": "The ten utterances are the letters of speech, and Bereishis is one of them. Elokim is Malchus, and the original chachma from which all creation and all of Torah come is its mochin.",
+      "passages": [
+        {
+          "lines": [
+            "pujwsrx5"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו בראשית נמי מאמר הוא,",
+              "en": "And this is what it says that of the 10 utterances, seemingly there's only nine utterances that create the world, so it says *Bereishis* is also a *maamar*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1468, 1495],
+                "start": 482.76,
+                "end": 490
+              }
+            },
+            {
+              "he": "שהוא בחינת חכמה שבדבור די' מאמרות דאלהי״ם",
+              "en": "This is the wisdom that's coming into the speech of the 10 utterances of *Elokim* that are creating everything",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1543, 1561],
+                "start": 505,
+                "end": 510.7
+              }
+            },
+            {
+              "he": "כידוע,",
+              "en": "as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1563, 1565],
+                "start": 511.08,
+                "end": 511.46
+              }
+            },
+            {
+              "he": "והוא הנקרא בחינת מוחין דנוקבא דזעיר אנפין",
+              "en": "and that's the intellect, the *mochin* of *Nukva* of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1577, 1587],
+                "start": 515.86,
+                "end": 520.12
+              }
+            },
+            {
+              "he": "כידוע"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The ten utterances seem to be nine, so *Bereishis* is counted as one: the verse does not say G-d spoke there, but the *chachma* that *reishis* stands for is one of the ten. This is the *chachma* in the speech of the ten utterances of *Elokim*, which create everything; *Elokim* is *Malchus*, the *mochin* of *Nukva* of *Zeir Anpin*. It is the original *chachma* G-d chose for the physical world, the laws of creation the Rebbe liked to call them. All the *chachma* of *Torah* comes from it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1463, 1661],
+                  "start": 480.32,
+                  "end": 551.64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The middos of Malchus: greatness, smallness and the twelve hours",
+      "summary": "The middos come from chachma, and their form is set by a ruler's laws. The twelve hours of the day show G-d deciding, judging and sustaining, and that the world is given its own independent rules.",
+      "passages": [
+        {
+          "lines": [
+            "gdptkcrj"
+          ],
+          "phrases": [
+            {
+              "he": "ואחר כך נמשכו בחינת המדות",
+              "en": "And afterwards, from this *chachma* comes all the *middos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1674, 1682],
+                "start": 559.22,
+                "end": 563.1
+              }
+            },
+            {
+              "he": "דמלכות חג\"ת נה\"י,"
+            },
+            {
+              "he": "כמו מלך במשפט יעמיד כו'",
+              "en": "like it says that a king with his laws upholds the land",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1835, 1846],
+                "start": 614.38,
+                "end": 618.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *middos* come from this *chachma*. In a person they are what he likes and dislikes, as his intellect tells him what is good for him. Here they dictate how things are and set their exact form: each thing has a function and rules it must work within, such as how big a tree can grow, by physics and chemistry. Like the verse says, a king upholds the land with his laws: first a vision, then the laws, which are the *middos*, by which he conducts the country.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1662, 1880],
+                  "start": 552.8,
+                  "end": 629.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5mzocfmt"
+          ],
+          "phrases": [
+            {
+              "he": "(וכמאמר רבותינו זכרונם לברכה י\"ב שעות הוי היום,",
+              "en": "like our sages say, there are 12 hours in the day",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1883, 1905],
+                "start": 630.62,
+                "end": 636.58
+              }
+            },
+            {
+              "he": "ג' שעות יושב ועוסק בתורה",
+              "en": "the first three hours G-d sits and studies",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1911, 1918],
+                "start": 639.08,
+                "end": 641.16
+              }
+            },
+            {
+              "he": "בבחינת המוחין דמדות,",
+              "en": "that's the intellect of the *middos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1923, 1928],
+                "start": 643.34,
+                "end": 645.28
+              }
+            },
+            {
+              "he": "וג׳ שעות יושב ודן",
+              "en": "and then for three hours he sits and judges",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1949, 1957],
+                "start": 653.92,
+                "end": 656.18
+              }
+            },
+            {
+              "he": "על פי המוחין",
+              "en": "based on that intellect, he judges",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [1966, 1971],
+                "start": 658.8,
+                "end": 660.6
+              }
+            },
+            {
+              "he": "כו', וג׳ שעות יושב וזן בחינת נה\"י",
+              "en": "and then for three hours he sits and he sustains the world",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2032, 2043],
+                "start": 674.36,
+                "end": 676.58
+              }
+            },
+            {
+              "he": "כו', וכמו שכתוב במקום אחר באורך)",
+              "en": "as explained elsewhere at length",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2081, 2085],
+                "start": 687.18,
+                "end": 688.68
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The twelve hours of the day",
+              "text": "Our sages say there are twelve hours in the day. For the first three, G-d sits and learns Torah, the intellect of the *middos*, and decides what will happen that day. For the next three He judges from that intellect what will be *chesed*, *gevura* and *tiferes*: first the verdict, then the sentencing. For the last three He sustains the world, *netzach*, *hod* and *yesod*, deciding what gets more and what gets less and giving it out. So it goes from the *sechel* to the *middos*, as explained elsewhere at length.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [1881, 2104],
+                  "start": 629.74,
+                  "end": 694.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d made the world feel independent: He implanted the laws of nature, and Torah has its own internal logic, on which we decide (*pasken*). This goes as far as the midrash *Natzchuni bani*, where the *beis din* disagreed, so to speak, with G-d, and the *halacha* was decided as the *beis din* decided.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2105, 2220],
+                  "start": 694.8,
+                  "end": 730.55
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Everything made with chachma: the first day, and Targum Yonasan",
+      "summary": "Everything was created in the original chachma on the first day; the later days stabilized it. Targum Yonasan reads Bereishis as with wisdom.",
+      "passages": [
+        {
+          "lines": [
+            "dryan6ez"
+          ],
+          "phrases": [
+            {
+              "he": "וזה שכתוב",
+              "en": "that's what it says",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2223, 2226],
+                "start": 731.26,
+                "end": 731.82
+              }
+            },
+            {
+              "he": "כולם בחכמה עשית,",
+              "en": "The fact that everything is ultimately dictated based on this *chachma* is indicated in the verse that says everything was made with *chachma*, with wisdom",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2230, 2254],
+                "start": 733.8,
+                "end": 740.02
+              }
+            },
+            {
+              "he": "שהוא הכולל לכל המאמרות דמדות פרטיות שבדבר מלך",
+              "en": "so this includes all of the other *maamarim* with all the specific *middos* of the word of the king, the decrees of the king",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2432, 2456],
+                "start": 792.52,
+                "end": 797.74
+              }
+            },
+            {
+              "he": "כו', וכת\"י בראשית בחוכמתא",
+              "en": "and like *Targum Yonasan* translates, he translates the word *Bereishis* as meaning with wisdom",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2459, 2477],
+                "start": 801.3,
+                "end": 807.72
+              }
+            },
+            {
+              "he": "כידוע",
+              "en": "as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2488, 2490],
+                "start": 810.2,
+                "end": 810.66
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The verse says everything was made with *chachma*, so everything is ultimately dictated by this *chachma*. On the first day, when the verse says *Bereishis*, everything was really created.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2221, 2287],
+                  "start": 730.55,
+                  "end": 751.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Children are taught that G-d created light on the first day, the sky on the second, and so on; that is not really accurate. In the *Chumash* and *Rashi* everything was created on the first day, and the later days only stabilized it. The sun, moon and stars already existed, but their orbits were not yet fixed.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2288, 2407],
+                  "start": 751.46,
+                  "end": 784.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Everything is created in this original *chachma*, and all else is an outgrowth of it: the other *maamaros* with their *middos*, like the decrees of the king. *Targum Yonasan* translates *Bereishis* as 'with wisdom.'",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2408, 2490],
+                  "start": 785.08,
+                  "end": 810.66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Renewed every day: the mochin of Atzilus and the infinite in nature",
+      "summary": "Creation is renewed each day from the mochin of Atzilus, within fixed laws; every moment the light of Ein Sof is renewed, and the same will shows in the soul and the body, in language and in nature.",
+      "passages": [
+        {
+          "lines": [
+            "rqzyk26b"
+          ],
+          "phrases": [
+            {
+              "he": "ומחדש בכל יום מעשה בראשית",
+              "en": "And so then it says that every day G-d renews the works of creation",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2509, 2522],
+                "start": 820.32,
+                "end": 824.34
+              }
+            },
+            {
+              "he": "על פי המוחין שבמדות דמלכות דאצילות,",
+              "en": "that's based on this *mochin* of the *middos* of *Malchus* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2523, 2534],
+                "start": 824.8,
+                "end": 828.56
+              }
+            },
+            {
+              "he": "שיורדים בבי\"ע",
+              "en": "that's coming down into *BYA*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2535, 2539],
+                "start": 829.32,
+                "end": 830.42
+              }
+            },
+            {
+              "he": "בכל יום בחדושי אופנים שונים,",
+              "en": "Every day, there's different permutations of that, different based on the circumstances of what's happening",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2616, 2630],
+                "start": 850.86,
+                "end": 856.74
+              }
+            },
+            {
+              "he": "כמו שמקבלת המלכות מנה\"י דזעיר אנפין כו'",
+              "en": "according to what *Malchus* receives from *Nehi* of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2744, 2752],
+                "start": 894.4,
+                "end": 897.36
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Every day G-d renews the works of creation, based on the *mochin* of the *middos* of *Malchus* of *Atzilus*, which come down into *BYA*. In a simple sense the laws of creation do not change from day to day; G-d set up the laws of nature a certain way, and that is how the world runs, as *Chazal* stress.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2491, 2615],
+                  "start": 811.72,
+                  "end": 850.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Each day there are different permutations, but the original *chachma* does not change. A miracle, like the sea splitting, is a condition G-d put into creation from the start: the rules were set up with openings, so it does not really break them. Each day this happens in different ways, according to what *Malchus* receives from *Nehi* of *Zeir Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2616, 2752],
+                  "start": 850.86,
+                  "end": 897.36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fyiqscrw"
+          ],
+          "phrases": [
+            {
+              "he": "שמאבא ואמא דאצילות נמשכו מוחין חדשים לזעיר אנפין ונוקבא בכל יום",
+              "en": "they bring new *mochin*, new instructions, right, new understanding to *Zeir Anpin* and *Nukva*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [2775, 2787],
+                "start": 907.46,
+                "end": 913.72
+              }
+            },
+            {
+              "he": "כו', עד שבכל עת ושעה מתחדש אור ושפע ממקור הראשון,"
+            },
+            {
+              "he": "שהוא התענוג ורצון הפשוט שבמלכות דאין סוף",
+              "en": "it's ultimately an expression of and coming from *Hashem*'s simple *taanug* and *ratzon* of *Malchus* of *Ein Sof*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3017, 3034],
+                "start": 981.06,
+                "end": 986.32
+              }
+            },
+            {
+              "he": "כמו שכתוב מלכותך",
+              "en": "like it says, *Malchusecha*, that your *Malchus* is *Malchus kol olamim*, is the kingship of all worlds",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3037, 3053],
+                "start": 987.04,
+                "end": 991.74
+              }
+            },
+            {
+              "he": "כו' כידוע"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Every day *Abba* and *Ima* of *Atzilus*, *chachma* and *bina*, bring new *mochin* to *Zeir Anpin* and *Nukva*, a mission statement for what should happen that day. It is like the soul and the body: infinite things can be done with them, which is free choice, but the basic makeup does not change, only its use.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2753, 2873],
+                  "start": 898.64,
+                  "end": 936.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Once G-d sets up *Malchus*, everything comes through that *chachma*, as a person speaking a language uses its vocabulary and grammar, yet expresses his own *ratzon* and *sechel*. Everything is according to what you want to say.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2874, 2964],
+                  "start": 936.28,
+                  "end": 967.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d created a world that seems limited to time and space, and independent, yet everything He wants happens through it. It ultimately comes from the simple *taanug* and *ratzon* of *Malchus* of *Ein Sof*: 'Your *Malchus* is the kingship of all worlds.'",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [2965, 3067],
+                  "start": 967.96,
+                  "end": 995.02
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "As we understand nature more, we see it is more and more infinite. What once would have been a miracle, like seeing someone across the world, becomes natural as our understanding grows. The Rebbe says this is a big part of preparing for *Moshiach*: science and technology reveal the *Ein Sof* within the world itself.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3068, 3189],
+                  "start": 995.08,
+                  "end": 1035.32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Greatness and smallness: the ten sefiros of Malchus at different stages",
+      "summary": "The sefiros of Malchus are sometimes small and sometimes great, as the sefiros of Zeir Anpin are, and as a child grows, and as a person speaks to different people.",
+      "passages": [
+        {
+          "lines": [
+            "mcfgonnw",
+            "swlgzqib"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת עשר ספירות דמלכות,",
+              "en": "when it comes to the ten *sefiros* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3202, 3211],
+                "start": 1043.72,
+                "end": 1045.58
+              }
+            },
+            {
+              "he": "לפעמים הם בבחינת הקטנות",
+              "en": "sometimes they are in a state of immaturity, of *katnus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3212, 3221],
+                "start": 1046.26,
+                "end": 1048.88
+              }
+            },
+            {
+              "he": "ולפעמים הם בבחינת הגדלות",
+              "en": "and sometimes they're in a state of *gadlus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3222, 3229],
+                "start": 1048.92,
+                "end": 1051
+              }
+            },
+            {
+              "he": "על דרך הנזכר לעיל בעשר ספירות דזעיר אנפין,",
+              "en": "just like we explained with the ten *sefiros* of *Zeir Anpin*, and we gave a whole *mashal* of how a child develops",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3237, 3258],
+                "start": 1053.54,
+                "end": 1058.2
+              }
+            },
+            {
+              "he": "שיש מוחין דגדלות וקטנות במדות מאבא ואמא",
+              "en": "and when they're younger they're immature, and as they get older they become more mature",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3259, 3273],
+                "start": 1058.08,
+                "end": 1061.32
+              }
+            },
+            {
+              "he": "כו', עד תכלית הקטנות בנה\"י בחיצוניות הכלים כו'",
+              "en": "to the point where it can be completely the most immature, where it's only the *chitzonius*, *Nehi* of the *chitzonius* of *kelim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3448, 3470],
+                "start": 1124.72,
+                "end": 1130.86
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "How a child develops",
+              "text": "The ten *sefiros* of *Malchus* are sometimes *katnus*, immature, and sometimes *gadlus*, great, as the ten *sefiros* of *Zeir Anpin* were explained with a whole *mashal* of how a child develops: younger, immature; older, mature.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3190, 3273],
+                  "start": 1037.12,
+                  "end": 1061.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From G-d's side He gives things in a more hidden or more revealed way, as nature or as miracles: that is the difference between *katnus* and *gadlus*. Within nature too: in olden days people understood less, and now, with science and technology, we do things in a much bigger way. It is both what is given to us and how we understand. At its most immature, the *middos* from *Abba* and *Ima* are only in the outer *kelim*, the *Nehi* of the outer *kelim*, as with *Zeir Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3274, 3482],
+                  "start": 1062.39,
+                  "end": 1133.42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ugvz2ka3",
+            "zjcjeblz"
+          ],
+          "phrases": [
+            {
+              "he": "כך בבחינת התגלות דמלכות שנבנה בפרצוף בפני עצמו,",
+              "en": "so too when *Malchus* is revealed, where it becomes its own *partzuf*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3491, 3502],
+                "start": 1137.6,
+                "end": 1141.16
+              }
+            },
+            {
+              "he": "לפעמים יש בחינת גדלות המוחין במדות מבחינת חכמה ובינה שבמלכות,",
+              "en": "sometimes the *middos* are revealed in a very mature way, where the *chachma* and *bina* is revealed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3513, 3529],
+                "start": 1146.12,
+                "end": 1153.02
+              }
+            },
+            {
+              "he": "על דרך משל השכל המתפשט בהרחבה במדות המתגלים בדבור",
+              "en": "like for example, if a person's intellect is being expressed in their emotions, and then they're expressing it in their words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3539, 3559],
+                "start": 1158.34,
+                "end": 1164.32
+              }
+            },
+            {
+              "he": "ולפעמים מאיר בבחינת קטנות,",
+              "en": "and sometimes it shines in a way of *katnus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3958, 3966],
+                "start": 1269.62,
+                "end": 1270.94
+              }
+            },
+            {
+              "he": "עד שלפעמים המדות דמלכות בתכלית הקטנות",
+              "en": "until sometimes the *middos* and *Malchus* are very immature",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [3973, 3981],
+                "start": 1273.78,
+                "end": 1277.66
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "So too when *Malchus* is revealed as its own *partzuf*, its *middos* can be revealed very maturely, with *chachma* and *bina* showing. It is like the intellect spreading into the emotions and being expressed in words.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3483, 3559],
+                  "start": 1134.24,
+                  "end": 1164.32
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Speaking to different people",
+              "text": "The general idea of *Malchus* is *dibur*, so a person can speak in an immature way or a mature one. He speaks simply to a little child, and openly and deeply to someone who shares deep ideas. Even a mature person speaks according to whom he is talking to.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3560, 3686],
+                  "start": 1164.82,
+                  "end": 1197.38
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Harsh speech and the officer",
+              "text": "If a person is immature, you may have to speak harshly: do this or I will throw you in prison. A king might have to speak that way, which is very immature. But a person speaking to an officer who appreciates his kingdom's workings reveals his concerns, because he knows he can trust him.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3687, 3799],
+                  "start": 1197.44,
+                  "end": 1223.72
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Three ways of speaking to people",
+              "text": "Speak to a confrontational person by forcing him, since he is out to get you. Speak to a cooperative employee as one in charge, or as working together. Speak to a collaborative person, who puts in real effort, as a partner. How you speak depends on the maturity of the relationship.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3800, 3953],
+                  "start": 1224.02,
+                  "end": 1267.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Sometimes *Malchus* shines in *katnus*, and the *middos* are very immature: this is *middah keneged middah*. We do not want to listen, so we learn the hard way, as a child who burns himself learns not to play with fire. The same is true of *Torah* and *mitzvos*: we relate to them only as reward and punishment, or a person can appreciate that he should want a life of meaning and purpose.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [3954, 4151],
+                  "start": 1267.82,
+                  "end": 1322.6
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This goes back to *Kuntres HaHispaalus* and its five levels of the *nefesh hateva'it*, the body, the idea of *Malchus*. Refined by intellect and the world, the body can go from *katnus*, interested only in its own pleasure, up to wanting to serve G-d inwardly. These are the levels of *Malchus* in our *avodah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4152, 4266],
+                  "start": 1323.06,
+                  "end": 1352.76
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Malchus made small: the point under yesod, and the weekday and Shabbos",
+      "summary": "Malchus makes itself small, a point under yesod, and can rise again to be the crown of her husband; the weekday and Shabbos show the same difference of katnus and gadlus.",
+      "passages": [
+        {
+          "lines": [
+            "sbgqak3p"
+          ],
+          "phrases": [
+            {
+              "he": "(כמו שכתוב בזהר על פסוק שחורה אני",
+              "en": "like it says in the *Zohar*, the verse *Shechora ani*, that I am black, or I am dark",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4270, 4287],
+                "start": 1356.08,
+                "end": 1362.06
+              }
+            },
+            {
+              "he": "וכו', דאזעירת גרמה ואתעבידת כנקודה",
+              "en": "that it makes itself small",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4331, 4335],
+                "start": 1382.18,
+                "end": 1383.2
+              }
+            },
+            {
+              "he": "כו', שזהו נקודה תחת יסוד,",
+              "en": "first it becomes small like a point",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4345, 4351],
+                "start": 1385.98,
+                "end": 1387.84
+              }
+            },
+            {
+              "he": "וכמו שכתוב ותפול לפני רגליו כנזכר לעיל)",
+              "en": "like it says, that Esther threw herself at his feet, at *Achashverosh*'s feet, that's the idea of *Malchus* making itself small",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4365, 4389],
+                "start": 1393.96,
+                "end": 1403.32
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *Zohar* explains the verse *Shechora ani*, 'I am black,' which *Shir HaShirim* uses for *Malchus*, the beloved of *Shlomo HaMelech*. *Malchus* makes itself small: detaching from *Zeir Anpin*, it first becomes a point under *yesod*, as Esther threw herself at the feet of *Achashverosh*. That is the absolute *katnus* of *Malchus*; sometimes it rises to be *eishes chayil*, the crown of her husband. There are about ten levels. *Rav Hillel* goes into it briefly in his *biur*: a whole *sugya* in *Kabbalah*, beyond us now.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4267, 4468],
+                  "start": 1353.82,
+                  "end": 1432.7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "zwvlo6oa"
+          ],
+          "phrases": [
+            {
+              "he": "(וכמו ההפרש בין ימות החול לשבת,",
+              "en": "And an example of this difference of when *Malchus* is in a state of *katnus* and *gadlus* is the difference between the weekday and *Shabbos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4475, 4499],
+                "start": 1435.3,
+                "end": 1441.94
+              }
+            },
+            {
+              "he": "דבשבת מקבלת מחג\"ת דזעיר אנפין,",
+              "en": "And it says that on *Shabbos*, *Malchus* receives from *chagas* of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4711, 4722],
+                "start": 1509.24,
+                "end": 1511.82
+              }
+            },
+            {
+              "he": "כמו ימינא ושמאלא ובינייהו כלה",
+              "en": "like we say, in *Kabbalas Shabbos*. There's the right and the left, and between them is the *kallah*, is *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4724, 4751],
+                "start": 1513.44,
+                "end": 1522.08
+              }
+            },
+            {
+              "he": "כו', ולפעמים מקבלת בבחינת פנים בפנים,",
+              "en": "And sometimes *Malchus* goes all the way up to actually be face-to-face with *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4757, 4771],
+                "start": 1525.74,
+                "end": 1532.92
+              }
+            },
+            {
+              "he": "עד שביום הכפורים עולה המלכות עד בחינת פנימיות עתיק יומין כו')",
+              "en": "to the point where on *Yom Kippur*, *Malchus* is able to go all the way up to the *penimiyus* of *Atik Yomin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4783, 4804],
+                "start": 1538.9,
+                "end": 1544.52
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "On weekdays we relate to physical needs as *kol ma'asecha yihiyu l'shem Shamayim*: we work because we have to, not as the main thing. We want to serve G-d through *Torah* and *mitzvos*, but most of the time we do not.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4469, 4555],
+                  "start": 1433.2,
+                  "end": 1460.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On *Shabbos* the physical is elevated: we use the physical world to express our appreciation of our connection to G-d. As the *Tanya* says, what would be gluttony during the week is holy on *Shabbos*, as on a birthday, when the same physical things are elevated.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4556, 4666],
+                  "start": 1460.54,
+                  "end": 1496.6
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On *Shabbos* we stop thinking about work and about what is really important: family, our soul and G-d. *Malchus* receives from *chagas* of *Zeir Anpin*, as we say in *Kabbalas Shabbos*: the right and the left, and between them the *kallah*, *Malchus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4667, 4751],
+                  "start": 1496.84,
+                  "end": 1522.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Sometimes *Malchus* is face to face with *Zeir Anpin*; on *Yom Kippur* it goes up to the *penimiyus* of *Atik Yomin*. So I think, simply, that even as we fast and separate from the world, the body itself can feel the pleasure of the *yechida*, of being connected to G-d, higher than anything physical.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4752, 4869],
+                  "start": 1523.3,
+                  "end": 1569.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Our *bittul* to G-d and *kabbalas ol* can bring us to realize this is who we really are: that is the *binyan HaMalchus* and *aliyos HaMalchus*. We had been saying that *Malchus* has *gadlus* and *katnus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4870, 4956],
+                  "start": 1571.52,
+                  "end": 1602.12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The kelim of Malchus: the letters of speech, in three levels",
+      "summary": "Malchus is now taken as kelim: the letters of the ten utterances, and within them three levels, as in thought: the thought of speech, the speech of speech, and the action of speech.",
+      "passages": [
+        {
+          "lines": [
+            "fwd7gz75",
+            "jrzgwi4y"
+          ],
+          "phrases": [
+            {
+              "he": "והנה בחינת הכלים",
+              "en": "and now he's going to talk about the *kelim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4978, 4985],
+                "start": 1609.92,
+                "end": 1612.32
+              }
+            },
+            {
+              "he": "דעשר ספירות דמלכות דאצילות, הוא בחינת אותיות הדבור די' מאמרות,",
+              "en": "The *kelim* of the ten *sefiros* of *Malchus* of *Atzilus* are the letters of the speech of the ten utterances",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [4999, 5018],
+                "start": 1619.56,
+                "end": 1625.3
+              }
+            },
+            {
+              "he": "ויש בזה ג' מדריגות על דרך הנזכר לעיל במחשבה",
+              "en": "And just like we spoke about before in thought, there's also three levels in speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5065, 5079],
+                "start": 1640.46,
+                "end": 1645.1
+              }
+            },
+            {
+              "he": "והוא מחשבה שבדבור, בחינת כלי חב\"ד דנוקבא,",
+              "en": "So the thought of speech, that's the vessel for the *Chabad* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5111, 5123],
+                "start": 1655.86,
+                "end": 1660.12
+              }
+            },
+            {
+              "he": "ודבור שבדבור בחינת כלי הבל הדבור למדות דדבור,",
+              "en": "the speech of speech, that's the vessel of the breath of the speech, and in the tone of voice the breath is able to be expressed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5154, 5185],
+                "start": 1669.1,
+                "end": 1680.1
+              }
+            },
+            {
+              "he": "ומעשה שבדבור בחינת כלי נה\"י דמלכות,",
+              "en": "the action of *dibur*, that's the vessel of *Nehi* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5225, 5235],
+                "start": 1694.4,
+                "end": 1697.54
+              }
+            },
+            {
+              "he": "עד בחינת מלכות דמלכות דאצילות שבוקע המסך כו'."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Having finished the light of *Malchus*, the class turns to the *kelim*. The *kelim* of the ten *sefiros* of *Malchus* of *Atzilus* are the letters of speech of the ten utterances, like *yehi or* and *yehi rakia*. The inner *chachma* and *middos* are expressed through those words.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [4957, 5056],
+                  "start": 1603.84,
+                  "end": 1635.82
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Three levels in speech, as in thought: the thought of speech, the speech of speech, and the action of speech. The thought of speech is the *kli* for the *Chabad* of *Malchus*, the *chachma* of what you say. The speech of speech is the *kli* of the breath, whose tone expresses the *middos* of *dibur*: the emotion heard when someone is excited or sad.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5057, 5187],
+                  "start": 1636.51,
+                  "end": 1681.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The action of speech is the *kli* of *Nehi* of *Malchus*, up to *Malchus* of *Malchus* of *Atzilus*, which breaks through the curtain. But all this is still in *Atzilus*: not what is created, but G-d's ability to create a world with the ten utterances, still connected to Him.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5188, 5321],
+                  "start": 1681.4,
+                  "end": 1725.66
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Writing and throwing",
+              "text": "*Malchus* is like writing, holding on to something; *Malchus* of *Malchus* is like throwing it, where it seems totally separate, as we discussed long ago with the *reshimu*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5322, 5385],
+                  "start": 1726.32,
+                  "end": 1746.52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "oflgufn7"
+          ],
+          "phrases": [
+            {
+              "he": "וביאור הדברים ידוע,"
+            },
+            {
+              "he": "דמחשבה שבדבור היינו על דרך משל מחשבה שמלובשת בדבור",
+              "en": "that the thought of speech is the thought that is expressed, that is enclothed within the person's speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5405, 5422],
+                "start": 1759.47,
+                "end": 1765.86
+              }
+            },
+            {
+              "he": "כשאדם מדבר איזה דבר מה,",
+              "en": "when a person is speaking",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5427, 5431],
+                "start": 1768.42,
+                "end": 1769.22
+              }
+            },
+            {
+              "he": "שבודאי בכל דבור פרטי מלובש מחשבה פרטית שבפרטיות דבור זה",
+              "en": "Certainly, in everything the person's saying, they're thinking about what they're saying, and they have in mind what they're saying, that relates to the specifics of what they're saying in this moment",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5448, 5485],
+                "start": 1775.9,
+                "end": 1788.06
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The explanation is known: the thought of speech is the thought enclothed in speech. When a person says something, in each particular utterance there is a particular thought, related to the specifics of what he is saying at that moment; he certainly has in mind what he is saying.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5386, 5485],
+                  "start": 1749.74,
+                  "end": 1788.06
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The hidden maamar: thought in speech, and yehi or as chesed",
+      "summary": "A person's thought is enclothed in his speech, and in the utterance yehi or the thought is hidden; the light is the chesed of Malchus, and the first thousand years belong to it.",
+      "passages": [
+        {
+          "lines": [
+            "yqxzenhk"
+          ],
+          "phrases": [
+            {
+              "he": "כי כאופני הצרופי אותיות דמחשבה,",
+              "en": "According to what they're thinking, that's what they're going to say",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5497, 5508],
+                "start": 1794.54,
+                "end": 1797.64
+              }
+            },
+            {
+              "he": "כך ממש מתנהגים אופני צרופים דדבור",
+              "en": "exactly according to that you'll express it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5559, 5565],
+                "start": 1807.14,
+                "end": 1809.16
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "According to what a person thinks, so he says. He must hold his train of thought, and if he loses it he cannot speak. The expression is a *kli*: the same thought can be said in different languages, or written or typed. But the thought must be there; that is the *machshava* of *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5486, 5635],
+                  "start": 1788.62,
+                  "end": 1827.17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "amskxhdb"
+          ],
+          "phrases": [
+            {
+              "he": "(וכנזכר לעיל",
+              "en": "in parentheses, like we said previously",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5636, 5641],
+                "start": 1827.36,
+                "end": 1829.84
+              }
+            },
+            {
+              "he": "דעקבי לאה נכנסים תוך ראש רחל,",
+              "en": "it says the heels of *Leah* enter the head of *Rachel*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5651, 5660],
+                "start": 1832.92,
+                "end": 1835.06
+              }
+            },
+            {
+              "he": "דמבחינת דבור שבמחשבה נעשה מחשבה לדבור,",
+              "en": "that from the speech of thought becomes the thought of speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5673, 5683],
+                "start": 1840.3,
+                "end": 1844.06
+              }
+            },
+            {
+              "he": "ונכלל בזה גם המחשבה איך לדבר בכלל ובפרט",
+              "en": "and this includes not just the content of what you're trying to say, but also thinking how you're going to say it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5759, 5780],
+                "start": 1866.03,
+                "end": 1871.46
+              }
+            },
+            {
+              "he": "כו')",
+              "en": "You also have to think about how you want to express it, and there's a whole wisdom of how to speak, people teach lessons in speaking, lecturing",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5781, 5808],
+                "start": 1871.48,
+                "end": 1880.42
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The heels of *Leah* enter the head of *Rachel*: the speech of thought becomes the thought of speech. A person with an idea thinks how to express it, talks it over in his head and rehearses, and that becomes his train of thought while he speaks. That includes how to say it: there is a whole wisdom of speaking, which people teach in lessons on speaking and lecturing.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5636, 5812],
+                  "start": 1827.36,
+                  "end": 1882.48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "xqfanm6a"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו בפרט",
+              "en": "for example, let's give a specific example",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5815, 5821],
+                "start": 1883.98,
+                "end": 1886.3
+              }
+            },
+            {
+              "he": "דמאמר יהי אור",
+              "en": "the utterance let there be light",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5825, 5830],
+                "start": 1888.14,
+                "end": 1889.7
+              }
+            },
+            {
+              "he": "מלובש מחשבה דמאמר זה",
+              "en": "so within that there's a thought behind it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5835, 5842],
+                "start": 1892.52,
+                "end": 1894.42
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Take *yehi or*, 'let there be light', with a thought enclothed in it. G-d had an intention: light as a metaphor for His unity and an expression of the soul, physical light and the spiritual light of the intellect; behind the physical light is its *ruchniyus* and purpose. And He had to know what light is for it to happen. That knowledge is the thought enclothed in the utterance.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5813, 5963],
+                  "start": 1882.7,
+                  "end": 1932.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fvdmdt3y"
+          ],
+          "phrases": [
+            {
+              "he": "ונקרא מאמר סתום גם כן,",
+              "en": "and that's called the hidden *maamar*, even in the speech, the *machshava* of the *dibur* is called the hidden *maamar*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5967, 5994],
+                "start": 1934,
+                "end": 1944.62
+              }
+            },
+            {
+              "he": "כי לא בא בגלוי רק הדבור דיהי אור",
+              "en": "because it's not being revealed, the only thing that is revealed is the actual words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [5999, 6015],
+                "start": 1946.78,
+                "end": 1950.28
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The thought behind the speech is the *hidden maamar*, because only the words, *yehi or*, are revealed. A person's thought is not always apparent from what he says, especially in writing or texting, where you lose the cues of seeing him and hearing his tone of voice.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [5964, 6089],
+                  "start": 1932.68,
+                  "end": 1969.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Behind the light there is an inner purpose. You could measure its wavelengths, but that it looks red, green or blue to us is spiritual: it is put into the physical thing, not from it. So too the deeper aspects of light, like the awareness it gives us. A thought is plugged into the speech, and that is what is revealed in this *maamar*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6090, 6228],
+                  "start": 1971.28,
+                  "end": 2014.32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "a6hy6bvn"
+          ],
+          "phrases": [
+            {
+              "he": "ומחשבה זו בחינת כלי חב\"ד דמאמר זה",
+              "en": "and so this thought of the *kavana* and the inner *ruchniyus* of the light, that is the *kli* of *Chabad* of this *maamar*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6236, 6258],
+                "start": 2017.46,
+                "end": 2025.12
+              }
+            },
+            {
+              "he": "יהי אור, שהוא בחינת החסד דמלכות",
+              "en": "which this is the *chesed* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6266, 6273],
+                "start": 2029.34,
+                "end": 2033.02
+              }
+            },
+            {
+              "he": "כו' לאלף שנה הראשונים (כמו שיתבאר)",
+              "en": "like it says elsewhere, the first thousand years are all included in the first day of creation, is all the idea of let there be light, which is *chesed*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6306, 6340],
+                "start": 2045.62,
+                "end": 2052.92
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *kavana* and inner *ruchniyus* of the light is the *kli* of *Chabad* of *yehi or*, the *chesed* of *Malchus*: light expresses kindness, so what Hashem wants in *yehi or* is *chesed*. The first thousand years are in the first day of creation, the idea of *yehi or*; the second thousand are *yehi rakia*, which is why they were with *gevura*. The link of each day to a thousand years is explained later.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6229, 6387],
+                  "start": 2014.34,
+                  "end": 2066.44
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The six middos in speech: the kelim of kindness, judgment and mercy",
+      "summary": "Each of the six middos of Malchus has its own thought as a kli for its mochin; the words of a king come into literal letters, with chesed, gevura and tiferes, and speech carries a form, the speaking spirit.",
+      "passages": [
+        {
+          "lines": [
+            "eedf5bt2"
+          ],
+          "phrases": [
+            {
+              "he": "ומחשבה הב' דמאמר יהי רקיע",
+              "en": "and the second thought, of let there be a firmament",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6390, 6402],
+                "start": 2069.04,
+                "end": 2073.02
+              }
+            },
+            {
+              "he": "במדת הדין דמלכות,",
+              "en": "that's expressing the thought of *din* within *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6406, 6413],
+                "start": 2075.74,
+                "end": 2078.8
+              }
+            },
+            {
+              "he": "הוא בחינת כלי מוחין למדה זו כו'",
+              "en": "so that thought is the *kli* for the *mochin* of this *middah* of that's being expressed in the *maamar*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6420, 6439],
+                "start": 2081.46,
+                "end": 2088.14
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The second thought, of *yehi rakia*, is the thought of *din* within *Malchus*. That thought is the *kli* for the *mochin* of this *middah*, expressed in the utterance *yehi rakia*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6388, 6441],
+                  "start": 2067.24,
+                  "end": 2089.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "h2rfwr5y"
+          ],
+          "phrases": [
+            {
+              "he": "וכך בכל ו' המדות דמלכות,",
+              "en": "and so too with all the other six *middos* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6446, 6455],
+                "start": 2091.2,
+                "end": 2093.24
+              }
+            },
+            {
+              "he": "בחינת המחשבה שבהם הוא בחינת כלי המוחין שלהם",
+              "en": "there's the *kli* for the inner *kavana*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6464, 6471],
+                "start": 2097.88,
+                "end": 2101.66
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same goes for the other six *middos* of *Malchus*: the thought within each is the *kli* for its *mochin*. The thing you see is really there, and within it is its inner meaning and purpose, the human experience we relate to as a soul. That is its *machshava*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6442, 6539],
+                  "start": 2089.78,
+                  "end": 2119.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "k4v22p23"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת כלים דחג\"ת נה\"י",
+              "en": "and then there are the *kelim* of *chagas* and *Nehi*, of the *middos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6545, 6556],
+                "start": 2123.12,
+                "end": 2126.76
+              }
+            },
+            {
+              "he": "כו', הוא בחינת דבור שבדבור,",
+              "en": "that's the *dibur* of the *dibur*, the speech of the speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6586, 6596],
+                "start": 2137.48,
+                "end": 2139.38
+              }
+            },
+            {
+              "he": "שזהו על דרך משל אותיות דבר החסד או הדין שבדבור עצמו",
+              "en": "this is the actual words that's expressing the kindness or the judgment within the speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6621, 6635],
+                "start": 2151.6,
+                "end": 2157.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *kelim* of *chagas* and *Nehi*, the *middos*, are the speech of speech: the breath and tone of voice. The actual words express the kindness or the judgment within the speech, while the thought of speech is the *kli* for the *mochin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6540, 6635],
+                  "start": 2120.54,
+                  "end": 2157.98
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5vvobzof"
+          ],
+          "phrases": [
+            {
+              "he": "שבדבר וגזירת מלך",
+              "en": "that in the words and the decree of a king",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6639, 6648],
+                "start": 2164.32,
+                "end": 2166.34
+              }
+            },
+            {
+              "he": "יש בו מג' אלה, חסד דין ורחמים,"
+            },
+            {
+              "he": "בחינת חג\"ת,"
+            },
+            {
+              "he": "והוא דבר מלך בדבור באותיות ממש",
+              "en": "and this is the words of the king that's coming into literal letters",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6708, 6720],
+                "start": 2187.38,
+                "end": 2190.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "A king's decree",
+              "text": "In a king's words and decree there are *chesed*, *din* and *rachamim*, the *chagas*: he can decree a reward, or that someone's head be cut off, or mercy, forgiving someone who deserves punishment.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6636, 6707],
+                  "start": 2159.12,
+                  "end": 2187.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The words of the king come into literal letters: every day what happens to us is in a way of goodness, judgment or *tiferes*. As the *Tanya* explains, creation from nothing and miracles are *chesed*; what seems independent, like nature, is *din*; G-dliness revealed in nature through *tzaddikim* or miracles is *tiferes*. These are the *osios* of Hashem's *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6708, 6855],
+                  "start": 2187.38,
+                  "end": 2233.64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "pkool7oz"
+          ],
+          "phrases": [
+            {
+              "he": "והחכמה והמדות שמתגלה בו,",
+              "en": "And the wisdom and the *middos* that are being expressed through what actually happens to us,",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6864, 6879],
+                "start": 2242,
+                "end": 2245.6
+              }
+            },
+            {
+              "he": "הוא בחינת הצורה שבדבור,",
+              "en": "which is the form, the *tzura* of the *dibur*, the more spiritual aspect of the *dibur*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [6962, 6977],
+                "start": 2271.42,
+                "end": 2275.56
+              }
+            },
+            {
+              "he": "שנקרא רוח ממללא, נפש המדברת כו' כידוע",
+              "en": "and that's that *tzura*, that spirit is called the speaking spirit, *nefesh hamedabreis*, and that's the idea that, for example, man, we're called speaking, our soul is called the *ruach memalel*, as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7005, 7040],
+                "start": 2283.22,
+                "end": 2299.36
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The wisdom and *middos* expressed in what happens to us are the *tzura* of speech, its spiritual aspect. The physical is the *kli*, like the body, and the soul is inside it; even the body's nature and form is a *kli* for the soul. So there are the letters, and the *chachma* and *middos* expressed through them. We are called *nefesh hamedabreis*, speaking, and our soul is called *ruach memalel*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [6856, 7040],
+                  "start": 2236.42,
+                  "end": 2299.36
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Speaking to a tree",
+              "text": "Everything that happens has a spirit, a message we can understand. If we lacked that ability, you could speak to a tree and it would not understand you, since you do not speak its language. Trees have their own way of communicating, but G-d gave us the ability to learn from the world and understand even Him and His *ratzon*. That inner *tzura* is mirrored in the world, so we understand G-d's speech.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7041, 7211],
+                  "start": 2301.56,
+                  "end": 2352.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The sciences understand the world on a very physical, external level. *Torah* understands its deeper purpose and sees G-dliness, through *pshat*, *remez*, *drush* and *sod*, different levels of seeing the messages G-d gives us.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7212, 7284],
+                  "start": 2352.56,
+                  "end": 2372.98
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speech in action: the king's decree, and the word that becomes deed",
+      "summary": "The action of speech is the command that brings a thing about in actual deed, as the king's verdict is carried out and as G-d's 'let there be light' became light; the last layer is Malchus of Malchus, which begins in Atzilus and reaches Beriya.",
+      "passages": [
+        {
+          "lines": [
+            "znhydkko"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת המעשה שבדבור שהוא כלי נה\"י",
+              "en": "and the action of speech, that is the vessel",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7288, 7300],
+                "start": 2375.14,
+                "end": 2378.7
+              }
+            },
+            {
+              "he": "כו', היינו מה שבא בדבור ציווי אל המעשה בפועל ממש,",
+              "en": "that is when you use speech to give a command to actually do something, in actual action",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7313, 7331],
+                "start": 2383.86,
+                "end": 2390.68
+              }
+            },
+            {
+              "he": "כמו ויאמר אלהי״ם יהי כן",
+              "en": "for example, *Vayomer Elokim*, and G-d said, *yehi kein*, let it be so",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7369, 7381],
+                "start": 2399.36,
+                "end": 2402.72
+              }
+            },
+            {
+              "he": "בפועל ממש",
+              "en": "in actuality",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7405, 7406],
+                "start": 2409.56,
+                "end": 2410.16
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The action of speech is the *kli* of *Nehi*: using speech to command something that brings it about in actual deed. A king can find a person guilty, but there must also be the sentence: first the verdict, then the sentencing. So G-d said *yehi kein*, let it be so, and it was so: in actuality.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7285, 7406],
+                  "start": 2373.76,
+                  "end": 2410.16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "oc5tg4bt"
+          ],
+          "phrases": [
+            {
+              "he": "כמו שהמלך מצוה לעשות דבר בפועל ממש,",
+              "en": "the king says to actually do it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7414, 7420],
+                "start": 2414.74,
+                "end": 2415.82
+              }
+            },
+            {
+              "he": "שתחלה גוזר אומר בדבר המשפט,",
+              "en": "first the king gives a decree of the way he's going to judge the situation",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7426, 7440],
+                "start": 2419.88,
+                "end": 2423.76
+              }
+            },
+            {
+              "he": "שנקרא דבר וגזרת המלך שכלול מחג\"ת,",
+              "en": "that's called the words and the decree of the king, that includes",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7445, 7458],
+                "start": 2426.26,
+                "end": 2430.24
+              }
+            },
+            {
+              "he": "ואחר כך בא הפסק דין אל הציווי במעשה,",
+              "en": "but then there's the command that it should actually happen that way and how it's actually going to unfold",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7468, 7486],
+                "start": 2434.88,
+                "end": 2440.44
+              }
+            },
+            {
+              "he": "שנקרא בחינת נה\"י,",
+              "en": "that's called *Nehi*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7576, 7578],
+                "start": 2463.12,
+                "end": 2463.76
+              }
+            },
+            {
+              "he": "ובחינת כלי דנה\"י זה הוא אותיות הדבור שמצוה רק לעשות",
+              "en": "and the *kli* for this is where you just give a command to do something",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7589, 7603],
+                "start": 2469.28,
+                "end": 2471.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The king orders something done in actuality: first a decree of how he will judge, with its *chagas*, then the command for it to be carried out in one particular way. G-d could bring good fortune in many ways, but He decided to save the Jewish people by splitting the sea: it could have happened in many ways, but that was the specific thing He said.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7407, 7572],
+                  "start": 2410.94,
+                  "end": 2460.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That is *Nehi*, whose *kli* is simply a command: say 'Do this,' and he does it, without knowing why or whether it is good.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7573, 7635],
+                  "start": 2461.7,
+                  "end": 2478.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "mwvxcdfm"
+          ],
+          "phrases": [
+            {
+              "he": "(וכן עקימת שפתיו דהוי מעשה,",
+              "en": "and the same thing, like it says, that a person's moving their lips, that itself is like an action",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7641, 7660],
+                "start": 2483.7,
+                "end": 2489.38
+              }
+            },
+            {
+              "he": "שנקרא עשיה שבדבור",
+              "en": "the actual speaking is also called this the *asiyah* of *dibur*, the action of speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7696, 7709],
+                "start": 2497.64,
+                "end": 2502.62
+              }
+            },
+            {
+              "he": "גם כן, הענין הוא מה שנחתך הדבור לבוא לידי פועל ממש שהפה גומר,",
+              "en": "because a person could be thinking something and feeling something and they want to say it, but until you actually say it, you didn't say it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7722, 7747],
+                "start": 2508.74,
+                "end": 2513.76
+              }
+            },
+            {
+              "he": "לפי שיש דבור שאינו למעשה עדיין",
+              "en": "because sometimes a person could be speaking and it's theoretical",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7769, 7778],
+                "start": 2520.7,
+                "end": 2522.72
+              }
+            },
+            {
+              "he": "כו')",
+              "en": "and you have this like in *halacha*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7780, 7785],
+                "start": 2522.84,
+                "end": 2523.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Moving the lips is also an action, the *asiyah* of *dibur*: for certain *mitzvos* an action is required, and for certain things moving the lips counts. Speech is brought into action when the mouth finishes it: until a person says a thing he has not said it, and some things, once said, are a done deal. But speech can be theoretical, not yet an action, as in *halacha*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7636, 7785],
+                  "start": 2480.6,
+                  "end": 2523.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "If a person says something like, 'Will you marry me?', when the talk is not about marriage, and the context shows he does not mean it or is joking, it is not a real *halachic* binding thing. But if the context shows he means it, he can enter into a contract by what he says or agrees to.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7786, 7890],
+                  "start": 2524.42,
+                  "end": 2556.46
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "A legal rule on when a spoken statement binds, given with a marriage example; a reader could act on it as legal guidance.",
+                "action": "replace",
+                "publishable": "If a person says something like a proposal, when the talk is not about it, and the context shows he does not mean it or is joking, it is not a real *halachic* binding thing. But if the context shows he means it, he can enter into a contract by what he says or agrees to.",
+                "recommend": "judgment",
+                "judgmentNote": "Whether the marriage example and the word 'marriage' can stay; the rule on when speech binds is the teacher's own halachic statement and needs checking."
+              }
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lv52q5b5"
+          ],
+          "phrases": [
+            {
+              "he": "וזה שכתוב",
+              "en": "and this is what it says",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7893, 7898],
+                "start": 2558.46,
+                "end": 2559.38
+              }
+            },
+            {
+              "he": "ויאמר אלהי״ם יהי אור ורקיע,",
+              "en": "that *Hashem* says let there be light, and let there be a firmament",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7904, 7916],
+                "start": 2560.78,
+                "end": 2564.1
+              }
+            },
+            {
+              "he": "במעשה דוקא",
+              "en": "in action",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7919, 7920],
+                "start": 2565,
+                "end": 2565.44
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This is what the verse says: G-d says 'let there be light' and 'let there be a firmament', and this is specifically in action.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7891, 7920],
+                  "start": 2557.72,
+                  "end": 2565.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "bar5rufv"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת המעשה שנפעל מזה הדבור,",
+              "en": "and the action that actually came from this speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7926, 7934],
+                "start": 2568.25,
+                "end": 2570.1
+              }
+            },
+            {
+              "he": "כמו שכתוב ויהי אור וכהאי גוונא,",
+              "en": "like it says, *vayehi or*, and there was light",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7937, 7945],
+                "start": 2572.52,
+                "end": 2574.14
+              }
+            },
+            {
+              "he": "כדבר מלך שנעשה מזה הפועל ממש,",
+              "en": "it's like the word of a king",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [7955, 7963],
+                "start": 2578,
+                "end": 2579.54
+              }
+            },
+            {
+              "he": "הוא ענין מלכות דמלכות דאצילות",
+              "en": "that's the *Malchus* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8016, 8020],
+                "start": 2596.56,
+                "end": 2597.58
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The action that came from this speech is *vayehi or*, 'and there was light.' It is like a king's word: his words make it happen, because his servants carry them out. It seems indirect, but that is how it works with a king. This is the *Malchus* of *Malchus* of *Atzilus*: the event happens as decreed.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [7921, 8044],
+                  "start": 2566,
+                  "end": 2605.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wb22hoby"
+          ],
+          "phrases": [
+            {
+              "he": "שאין זה רק בבוא שפע אור בבחינת מקור התהוות יש מאין ממש"
+            },
+            {
+              "he": "כו', והיינו בחינת מלכות דמלכות דאצילות שבוקע המסך",
+              "en": "and this is *Malchus* of *Malchus* is what's breaking through the curtain that separates *Beriya* and *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8279, 8295],
+                "start": 2679.76,
+                "end": 2685.44
+              }
+            },
+            {
+              "he": "להיות מקור לבריאה כמו שיתבאר ודי למבין",
+              "en": "and becomes the source of *Beriya*, as we'll explain, this is enough to understand",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8301, 8314],
+                "start": 2686.56,
+                "end": 2689.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "These examples are what it looks like when things come down into *Beriya*: all just the ability for things to happen. When it actually creates something, a *neshama* or a *malach*, or makes things happen in the world, that is *Malchus* of *Malchus*; so too an actual *psak din*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [8045, 8143],
+                  "start": 2605.94,
+                  "end": 2635.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Analyzing the *Torah* to understand a *psak* is within *Atzilus*; giving the *psak* and saying that is it, is *Malchus* of *Malchus*, a separate thing. So the *Beis Yosef* would not change his *psak* because of a *Rambam* manuscript that seemed to say otherwise: they say no, he decided from his own understanding. This *Malchus* of *Malchus* of *Atzilus* breaks through the curtain separating *Beriya* from *Atzilus* and becomes the source of *Beriya*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [8144, 8327],
+                  "start": 2635.66,
+                  "end": 2693.14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "fm2w7quu"
+          ],
+          "phrases": [
+            {
+              "he": "(וגם הוא עדיין בבחינת אצילות,",
+              "en": "but even this *Malchus* of *Malchus* is still within *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8337, 8346],
+                "start": 2696.96,
+                "end": 2699.82
+              }
+            },
+            {
+              "he": "ונקרא בחינת עשיה שבמלכות דאצילות",
+              "en": "This is called *Asiya* of *Malchus* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8364, 8371],
+                "start": 2708.48,
+                "end": 2710.44
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Even this *Malchus* of *Malchus* is still within *Atzilus*. The ability to implement it begins there, and is called *Asiya* of *Malchus* of *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [8328, 8363],
+                  "start": 2693.7,
+                  "end": 2708.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "z6ze7mbv"
+          ],
+          "phrases": [
+            {
+              "he": "על דרך משל כח הפעולה הנבדלת מכח הפועל,",
+              "en": "like the power when you, let's say, throw something or do something",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8380, 8391],
+                "start": 2714.98,
+                "end": 2719.9
+              }
+            },
+            {
+              "he": "דגם שכח הפועל בחינת כח המעשה הוא,",
+              "en": "so you put your energy into something or your skill into something that you're making",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8395, 8409],
+                "start": 2720.96,
+                "end": 2726.46
+              }
+            },
+            {
+              "he": "אבל מה שיוצא מכחו בנפעל בחינת מלכות דמלכות הוא,",
+              "en": "that's what's called *Malchus* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                "words": [8464, 8468],
+                "start": 2743.62,
+                "end": 2745.26
+              }
+            },
+            {
+              "he": "כמו שכתוב במקום אחר("
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "Power and implement",
+              "text": "The power of the actor is separate from the power of the doer. The doer's power is also a power of action; what comes out of it into the thing acted on is *Malchus* of *Malchus*, as when you throw something. It begins in your arm or hand, and when you inject it into something separate, it seems separate, as when you throw it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/049 Shaar HaYichud ch 49.mp3",
+                  "words": [8364, 8502],
+                  "start": 2708.48,
+                  "end": 2754.12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What are the two aspects of the crown of Malchus, and how does the lower chachma come from it?",
+      "lines": [
+        "bchxpiry",
+        "l3pavw3q"
+      ]
+    },
+    {
+      "question": "Why are the ten sefiros of Malchus sometimes small and sometimes great?",
+      "lines": [
+        "mcfgonnw",
+        "swlgzqib",
+        "ugvz2ka3",
+        "zwvlo6oa"
+      ]
+    },
+    {
+      "question": "What are the three levels in speech, and what kli does each one correspond to?",
+      "lines": [
+        "fwd7gz75",
+        "jrzgwi4y"
+      ]
+    },
+    {
+      "question": "What is Malchus of Malchus, and where does it begin?",
+      "lines": [
+        "bar5rufv",
+        "wb22hoby"
+      ]
+    },
+    {
+      "question": "What is the thought of speech, and how does it relate to the letters of speech?",
+      "lines": [
+        "oflgufn7",
+        "yqxzenhk"
+      ]
+    }
+  ],
+  "omitted": [],
+  "notes": [
+    {
+      "text": "Lines 1-2: the class opens with about 486 words before line 1 is read (0-486: Malchus as speech, the soul and the body, miracles and nature, Torah, the Shechina). Both are placed under the first passage as out of place, because they introduce the whole chapter; their audio is before the line reading.",
+      "lines": [
+        "qkclam4f"
+      ]
+    },
+    {
+      "text": "Line 2: his English 'like we said previously' (for the Hebrew 'ki-nizkar le'eil') is not given its own phrase; the block opens 'As we said'.",
+      "lines": [
+        "bchxpiry"
+      ]
+    },
+    {
+      "text": "Reading stretches. Each passage's first block plays from the class's reading of its first line, and the reading stretches no block cited in the earlier draft are now in the audio of the block that follows them: class words 487-526, 1463-1467, 1536-1542, 1662-1682, 2491-2508, 5486-5508, 5812-5842 and 5995-6017. Nothing of the class is omitted.",
+      "lines": [
+        "qkclam4f",
+        "pujwsrx5",
+        "gdptkcrj",
+        "rqzyk26b",
+        "yqxzenhk",
+        "xqfanm6a",
+        "fvdmdt3y"
+      ]
+    },
+    {
+      "text": "'So, what did you say before?' (class words 5080-5085) is not written as a student's question. No listener is heard, and the words read as his own recall of the three levels in thought, which the next words answer. The block is his explanation. If a listener asked it, the answer would need an askedBy student question.",
+      "lines": [
+        "fwd7gz75",
+        "jrzgwi4y"
+      ]
+    },
+    {
+      "text": "Line 8: the English of 'shehu hakolel lekol hamaamarim' is given at class words 2432-2456, well after the line is read (2227-2229); the phrase cites that later rendering. The Chumash and Rashi are named as sources, as he names them. The block for 'children are taught' is an explanation, not an aside: it is about what the verse means, and his remark that the teaching is not accurate is kept as said.",
+      "lines": [
+        "dryan6ez"
+      ]
+    },
+    {
+      "text": "Line 9 and 10: the transcript's 'bchidushei afanim' is the chapter's 'bchidushei ofanim'; the English keeps the word as heard.",
+      "lines": [
+        "rqzyk26b"
+      ]
+    },
+    {
+      "text": "Line 16: the phrase on 'Kabbalas Shabbos' ends on his English ('is Malchus'). The Hebrew quotation he reads in between is not in the English, and the audio starts and stops on his words.",
+      "lines": [
+        "zwvlo6oa"
+      ]
+    },
+    {
+      "text": "Line 18: the transcript writes the abbreviation for Nehi with an extra letter at the end, which the line does not have. He says 'Nehi' in English, so the phrase keeps his word, and the chapter's line is the text.",
+      "lines": [
+        "jrzgwi4y"
+      ]
+    },
+    {
+      "text": "Line 22-23: his mention of the 'hidden maamar' (class words 5964-5994) is paired with the hidden thought, as he explains it: 'so this is called the hidden maamar even in the speech'. The English phrase keeps that wording.",
+      "lines": [
+        "fvdmdt3y"
+      ]
+    },
+    {
+      "text": "Line 15: 'the Zohar's Shechora ani' is his quotation of the verse and of the Zohar's reading. 'Rav Hillel's biur' is cited as he gives it.",
+      "lines": [
+        "sbgqak3p"
+      ]
+    },
+    {
+      "text": "The 'Natzchuni bani' midrash is spelled as heard; the transcript does not give it in Hebrew.",
+      "lines": [
+        "5mzocfmt"
+      ]
+    },
+    {
+      "text": "Line 16: the 'So I think' hedge (class words 4805-4869) is kept in its block; 'I think' is his hedge on the body's pleasure in the yechida.",
+      "lines": [
+        "zwvlo6oa"
+      ]
+    },
+    {
+      "text": "Line 28: the phrase on 'chesed, gevura, tiferes' is his reading of the three middos in Hebrew with no English, so it has no English and no audio; his English on the king's decree is in the block.",
+      "lines": [
+        "5vvobzof"
+      ]
+    },
+    {
+      "text": "Line 35: the transcript garbles the start of the line. The phrase 'Malchus of Malchus is what's breaking through the curtain' is taken from his English at class words 8279-8295.",
+      "lines": [
+        "wb22hoby"
+      ]
+    },
+    {
+      "text": "Sensitivity: one flag, on the remark about which spoken words bind (class words 7786-7890), with the example 'Will you marry me?'. It is a legal rule the teacher gives as halacha, and a reader could act on it, so it is recommended for judgment: the reviewer should decide whether the example and the word 'marriage' can stay. The Rebbe and Rambam references are not flagged.",
+      "lines": [
+        "mwvxcdfm"
+      ]
+    },
+    {
+      "text": "Spellings: 'kli' is the term in translit.json. 'kelim' is its plural, written so in chapters 45 to 47, and is not a second term. 'Ima' is spelled as translit.json has it. chagas, Nehi, katnus and gadlus are not in translit.json; they are in terms, spelled as the other 5784 chapters spell them. netzach, hod and yesod are as the class says them.",
+      "lines": [
+        "gdptkcrj"
+      ]
+    },
+    {
+      "text": "Coverage: every stretch of class is cited by a block, so omitted is empty. The stretches of reading that no block cited are folded into the audio of the next block (see the reading note above).",
+      "lines": [
+        "qkclam4f"
+      ]
+    }
+  ]
+}
