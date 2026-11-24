@@ -65,6 +65,16 @@ Republicans prints raw: he is one, and it is a group teasing itself. The
 Bin Laden *mashal* (chapter 20, raw) is STYLE.md's example of a sharp claim
 said once.
 
+Palestinians, Arabs and terrorists: a harsh description of them prints raw,
+and a call to harm civilians or destroy what is theirs is softened. Raw:
+Palestinians and terrorists made of the broken letters of *Tohu*, and demons
+whispering in "these *meshugene* Arabs'" ears to blow things up (chapter 45),
+and the Yishmael Midrash, "look what the Arabs are going to do" (chapter 20).
+Softened: "in *Tikkun* you'd kill all of them, including their babies", and
+blowing up their culture, books and a *Sefer Torah* (chapter 20). The
+softened text keeps the teaching (judgment toward an enemy at war is
+*Tikkun*). Flag both kinds; the writer recommends `raw` for the first.
+
 ## History
 
 - Chapters 1–19 were rewritten as guide prose in November 2026, after the
@@ -83,3 +93,7 @@ said once.
   "total nut" lines softened), and the verse on the enemy's infants read as
   *Tikkun*; he softened the asides that apply it to the Palestinians and
   their culture, the politicians, and the identifiable criminal case.
+- Chapters 40–49 were written with the study-chapter skill (version 6) in
+  November 2026. Their sensitivity review was finished on 2026-11-24: 11
+  flags printed raw (kept, action `keep`), 18 softened, none dropped. The
+  Palestinians rule above comes from comparing chapter 45 with chapter 20.
