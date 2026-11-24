@@ -46,6 +46,8 @@ describe('build (real data/)', () => {
         ['37', 'Rabbi Markel Series (Advanced)'],
         ['75', 'Rabbi Benyamin Walters New Class (2020)'],
         ['73', 'Rabbi Benyamin Walters Other Classes'],
+        ['90', 'Rabbi Benyamin Walters New Class (2020) - Edited'],
+        ['102', 'Rabbi Benyamin Walters Other Classes - Edited'],
       ],
     );
     const lectures = [...catalogLectures(catalog.series)];
@@ -53,12 +55,17 @@ describe('build (real data/)', () => {
     const renamed = new Map([["84 - The Rebbe's Shaar Hayichud.mp3", '84 - The Rebbes Shaar Hayichud.mp3']]);
     // Markel lectures point at their back-channel-edited sibling and keep the original's id.
     const unedited = (f: string) => f.replace(/ \(edited\)\.mp3$/, '.mp3');
-    assert.ok(lectures.every((l) => l.id === (renamed.get(l.filename) ?? unedited(l.filename))));
+    // The edited 2020 copies keep the originals' filenames in their own folder, so their id is folder/filename.
+    const expectedId = (l: (typeof lectures)[number]) =>
+      l.folder.startsWith('Walters 2020 Edited') ? `${l.folder}/${l.filename}` : (renamed.get(l.filename) ?? unedited(l.filename));
+    assert.ok(lectures.every((l) => l.id === expectedId(l)));
     assert.ok(lectures.some((l) => l.id === '84 - The Rebbes Shaar Hayichud.mp3'));
     const edited063 = lectures.find((l) => l.id === '063 Ch5 part4.mp3')!;
     assert.equal(edited063.filename, '063 Ch5 part4 (edited).mp3');
     const first2020 = lectures.find((l) => l.id === 'Shaar HaYichud 001.m4a')!;
     assert.equal(first2020.folder, 'Walters Shaar HaYichud Recordings 2020');
+    const firstEdited = lectures.find((l) => l.id === 'Walters 2020 Edited/Shaar HaYichud/Ch 01/Shaar HaYichud 001.m4a')!;
+    assert.equal(firstEdited.filename, 'Shaar HaYichud 001.m4a');
     assert.equal(lectures.filter((l) => l.id === '003 Tape016-Side2-Ch10.mp3').length, 1);
   });
 });

@@ -27,14 +27,21 @@ describe('transcription config', () => {
     }
   });
 
-  it('allows only Walters Original and Markel Advanced', () => {
+  it('allows Walters Original, Markel Advanced and the edited 2020 series', () => {
     assert.deepEqual(TRANSCRIPTION_SERIES.map((s) => s.title).sort(), [
+      'Rabbi Benyamin Walters New Class (2020) - Edited',
       'Rabbi Benyamin Walters Original Class',
+      'Rabbi Benyamin Walters Other Classes - Edited',
       'Rabbi Markel Series (Advanced)',
     ]);
     const { inScope, outOfScope } = partitionByScope(all);
     const titles = (xs: typeof all) => [...new Set(xs.map((c) => c.ancestors[0]!.title))].sort();
-    assert.deepEqual(titles(inScope), ['Rabbi Benyamin Walters Original Class', 'Rabbi Markel Series (Advanced)']);
+    assert.deepEqual(titles(inScope), [
+      'Rabbi Benyamin Walters New Class (2020) - Edited',
+      'Rabbi Benyamin Walters Original Class',
+      'Rabbi Benyamin Walters Other Classes - Edited',
+      'Rabbi Markel Series (Advanced)',
+    ]);
     assert.deepEqual(titles(outOfScope), ['Rabbi Benyamin Walters New Class (2020)', 'Rabbi Benyamin Walters Other Classes']);
   });
 
