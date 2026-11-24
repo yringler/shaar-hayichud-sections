@@ -419,8 +419,8 @@
                   "other-groups"
                 ],
                 "reason": "A jab at politicians as a type: they want honor for themselves and to \"stomp on everybody\".",
-                "action": "replace",
-                "publishable": "How can the essential will for honor come after anything? Look at a person who wants honor. He has to do all kinds of things, like giving other people honor. But the essential will for honor is for himself to get honor, and nobody else. That is in the *igulim*: there is no giving anyone else honor there, because there is nobody else."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -739,7 +739,8 @@
                 ],
                 "reason": "\"Shoot the bastard\" in the acted-out dialogue.",
                 "action": "replace",
-                "publishable": "When a man in a shirt and gloves moves, you know exactly where his hand is. A ninja is running around. \"I can't see him!\" \"What do you mean you can't see him? You see those black clothes moving around: shoot at those.\" You don't have to see his body; shoot at the clothes and you hit the man. Not \"Oh man, I killed a ninja suit\": the suit is fine, it's the ninja himself. You can even tell his arm from his head, and whether he is fat or skinny, because a ninja wears a close-fitting suit, like a stocking, not a tent. So with the letters: the external letters are the exact shape of the internal letters, fitted like a bodysuit."
+                "publishable": "When a man in a shirt and gloves moves, you know exactly where his hand is. A ninja is running around. \"I can't see him!\" \"What do you mean you can't see him? You see those black clothes moving around: shoot at those.\" You don't have to see his body; shoot at the clothes and you hit the man. Not \"Oh man, I killed a ninja suit\": the suit is fine, it's the ninja himself. You can even tell his arm from his head, and whether he is fat or skinny, because a ninja wears a close-fitting suit, like a stocking, not a tent. So with the letters: the external letters are the exact shape of the internal letters, fitted like a bodysuit.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -761,7 +762,8 @@
                 ],
                 "reason": "\"A smart guy or a stupid guy\" (insult word, said of people in general).",
                 "action": "replace",
-                "publishable": "From the clothing of a king you can see not just the body but the soul; and not only by a king. See how a person is dressed and you get a look into him, because he dresses according to his thought. Besides the clothes following the outer vessels of his body (a fat guy can't wear a skinny suit), what kind of clothing is it? A tuxedo or jeans? From it you can see the emotions and the intellect, almost how smart he is, and *mamash* the will."
+                "publishable": "From the clothing of a king you can see not just the body but the soul; and not only by a king. See how a person is dressed and you get a look into him, because he dresses according to his thought. Besides the clothes following the outer vessels of his body (a fat guy can't wear a skinny suit), what kind of clothing is it? A tuxedo or jeans? From it you can see the emotions and the intellect, almost how smart he is, and *mamash* the will.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -810,9 +812,8 @@
                 ],
                 "reason": "Practical guidance on prayer, retold from the Rebbe without a source, that a reader could act on.",
                 "action": "replace",
-                "recommend": "judgment",
-                "judgmentNote": "Whether a secondhand report of the Rebbe's advice on where hisbonenus belongs relative to davenen should print as told.",
-                "publishable": "These are abstractions, explanations of where to look, and where to look is *mibsari echeze Eloka* (\"from my flesh I see G-d\"). The best time for the *hisbonenus* is maybe at *davenen*, or another time when you have time to sit and think."
+                "publishable": "These are abstractions, explanations of where to look, and where to look is *mibsari echeze Eloka* (\"from my flesh I see G-d\"). The best time for the *hisbonenus* is maybe at *davenen*, or another time when you have time to sit and think.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -900,7 +901,8 @@
                 ],
                 "reason": "Says most people who learned Chassidus understand nothing, and that \"we\" are slightly smarter than them.",
                 "action": "replace",
-                "publishable": "That is why many of the people who sat and learned *Chassidus* don't understand it. A lot of them are pretty smart, and in things they feel, like money, they have a big smartness. This they never tried to feel, so they don't understand it."
+                "publishable": "That is why many of the people who sat and learned *Chassidus* don't understand it. A lot of them are pretty smart, and in things they feel, like money, they have a big smartness. This they never tried to feel, so they don't understand it.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1185,8 +1187,8 @@
                 ],
                 "reason": "Says there is no such thing as science and that most who believe in it never learned it.",
                 "action": "replace",
-                "recommend": "raw",
-                "publishable": "What we call *iyun* (analysis) is actually the scientific method. Rabbi Markel learned science, as a chemistry honors student at McGill. Science does not come up with actual things: it comes only from *Nehi* of *Arich*, not from the inner place, the *mazalos*, and goes only into the world. They come up with a theory and test it."
+                "publishable": "What we call *iyun* (analysis) is actually the scientific method. Rabbi Markel learned science, as a chemistry honors student at McGill. Science does not come up with actual things: it comes only from *Nehi* of *Arich*, not from the inner place, the *mazalos*, and goes only into the world. They come up with a theory and test it.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1325,9 +1327,8 @@
                   "other-groups"
                 ],
                 "reason": "A jab at scientists who work for cigarette companies.",
-                "action": "replace",
-                "recommend": "raw",
-                "publishable": "He does the experiment not because he *davka* wants it to come out one way."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {

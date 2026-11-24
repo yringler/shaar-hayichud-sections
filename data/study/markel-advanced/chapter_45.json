@@ -215,7 +215,8 @@
                 ],
                 "reason": "Names present-day groups (\"the Berg people\", the family behind a popular Kabbala center, and the Hermetic people) as having turned Kabbala into nonsense.",
                 "action": "replace",
-                "publishable": "The perfect example is *Chassidus*. Look on the internet and see what happened with *Kabbala* and *Chassidus*: they turned it worse than upside down, into total nonsense. People outside tried to study these kabbalistic things, and since the idea had too much light in it, it broke up into nonsense."
+                "publishable": "The perfect example is *Chassidus*. Look on the internet and see what happened with *Kabbala* and *Chassidus*: they turned it worse than upside down, into total nonsense. People outside tried to study these kabbalistic things, and since the idea had too much light in it, it broke up into nonsense.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -443,7 +444,8 @@
                 ],
                 "reason": "Likens one who seeks to experience G-d without letters, as non-Jewish mysticism teaches, to a dog.",
                 "action": "replace",
-                "publishable": "Everybody claims this, and *l'havdil* all the *goyishkeit* (the non-Jewish world) says He can only be experienced, not said. The text says this is a very big mistake. A light not contained in letters cannot be felt; then a person has no actual *daas*. That is no *daas* of *Havaya*. To know the *Aibershter*, or anything, it has to be *davka* in letters, and then it is the opposite: it is *mugbal*, held."
+                "publishable": "Everybody claims this, and *l'havdil* all the *goyishkeit* (the non-Jewish world) says He can only be experienced, not said. The text says this is a very big mistake. A light not contained in letters cannot be felt; then a person has no actual *daas*. That is no *daas* of *Havaya*. To know the *Aibershter*, or anything, it has to be *davka* in letters, and then it is the opposite: it is *mugbal*, held.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -487,7 +489,8 @@
                 ],
                 "reason": "Singles out present-day groups that study Kabbala (the Hermetic kabbalists, the people at \"the book center\") as being in a great confusion.",
                 "action": "replace",
-                "publishable": "Being put into letters makes an even bigger *bilbul* than not being put into letters. A simple guy who just says \"There's a G-d in the world\", with simple *emuna* in the *Aibershter*, who knows he has to keep the *mitzvos* and be a good Jew and never tries to put these things into words, has no *bilbul*, though of course he does not have it in a deeper way. It is *davka* those who try to get it deeper, studying the *Zohar* and such, by whom there is a fantastic *bilbul*."
+                "publishable": "Being put into letters makes an even bigger *bilbul* than not being put into letters. A simple guy who just says \"There's a G-d in the world\", with simple *emuna* in the *Aibershter*, who knows he has to keep the *mitzvos* and be a good Jew and never tries to put these things into words, has no *bilbul*, though of course he does not have it in a deeper way. It is *davka* those who try to get it deeper, studying the *Zohar* and such, by whom there is a fantastic *bilbul*.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -923,8 +926,8 @@
                   "politics"
                 ],
                 "reason": "Names the Palestinians, beside terrorists, as made up wholly of the broken letters of Tohu.",
-                "action": "replace",
-                "publishable": "Some are made up wholly of these broken letters of *Tohu*: it is their whole idea of life. This is the basic *inyan* of the breaking of *Tohu*. The real *Tohu* you see right here, right now."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -944,8 +947,8 @@
                   "politics"
                 ],
                 "reason": "Says demons put ideas in Palestinians' heads and whisper in \"these meshugene Arabs'\" ears to blow things up.",
-                "action": "replace",
-                "publishable": "And these letters of *chashmal* are what the talk of demons is about, demons making wars and making things happen. There are demons running around putting ideas in people's heads, and they are made of *chashmal*, made up of letters. They actually have a *partzuf*, a whole stature of ten *sefiros*. So how, in the old days, could some people see what the demons looked like? It is like what he heard on a CD he was given: in the letters of the DNA you can see what a person looks like. So there are actual demons running around whispering in people's ears to go and do harm, and they are made of *chashmal*, from the breaking of the vessels of *Tohu*."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1309,9 +1312,8 @@
                   "other-religions"
                 ],
                 "reason": "Says the Eastern religions take the mashal of light literally.",
-                "action": "replace",
-                "publishable": "Even now, some actually think it means a light: they talk of a white light or something like that.",
-                "recommend": "raw"
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {

@@ -532,7 +532,8 @@
                 ],
                 "reason": "A wrong fact stated as fact: London Bridge was bought by a Missouri businessman and rebuilt at Lake Havasu City, Arizona, not moved to Austin, Texas by a Texan.",
                 "action": "replace",
-                "publishable": "When London Bridge was bought and moved, they rebuilt it. They had to know of each stone where it fits with all the others, so they marked it: that is analysis. They could have put a bomb on it, and nobody would care how it goes back together, but that is destruction."
+                "publishable": "When London Bridge was bought and moved, they rebuilt it. They had to know of each stone where it fits with all the others, so they marked it: that is analysis. They could have put a bomb on it, and nobody would care how it goes back together, but that is destruction.",
+                "reviewed": "2026-11-24"
               }
             },
             {

@@ -658,8 +658,8 @@
                   "other"
                 ],
                 "reason": "Calls a man who walks the street talking to himself \"the craziest type of person\"; it can read as mockery of the mentally ill.",
-                "action": "replace",
-                "publishable": "The extreme is the person who walks around the street just talking to himself. He needs to talk so much that he doesn't even care whether anybody is listening, and nobody is. It happens because he never stops the talking in order to think."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1283,8 +1283,8 @@
                   "women"
                 ],
                 "reason": "A husband-and-wife joke: the wife who answers \"Nothing\" when she is angry.",
-                "action": "replace",
-                "publishable": "That is why a person wants to talk *davka* when he is happy and loving; when he is angry he usually doesn't want to talk. You ask someone, \"What is it?\" and hear, \"Nothing,\" and \"Don't you want to talk about it?\" \"Nope.\" When somebody doesn't want to talk about it, it means they're angry. When someone is loving and kind, he is in an expansive mood, and then he wants to talk."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {

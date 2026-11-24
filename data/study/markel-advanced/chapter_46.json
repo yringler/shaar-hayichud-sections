@@ -149,7 +149,7 @@
                 "reason": "Says that even frum Jews have made science their god.",
                 "action": "replace",
                 "publishable": "Right now their god is science. Not even money: the ultimate god is science. If a thing cannot be made to agree with science, it doesn't hold. And the funny thing is that people say \"science\" and are not even really following science.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -261,7 +261,8 @@
                 ],
                 "reason": "Calls people who use technology without understanding it \"the sheep\".",
                 "action": "replace",
-                "publishable": "That is *hisbonenus*, *bina sheb'bina*. And the scientific method we have today is not just the Greek way but the American way: *bina sheb'bina* with *tevuna sheb'tevuna*. The theories with a high probability of being right (to a scientist that only means several experiments did not disprove them) are applied to all kinds of things, to come up with the second god, sometimes really the first: *mamon* (money). The *bina sheb'bina* is applied for better solutions all the way down to earth, so that even people can use theories they might not understand: drive a car, or get on a computer and talk to somebody on the other side of the world."
+                "publishable": "That is *hisbonenus*, *bina sheb'bina*. And the scientific method we have today is not just the Greek way but the American way: *bina sheb'bina* with *tevuna sheb'tevuna*. The theories with a high probability of being right (to a scientist that only means several experiments did not disprove them) are applied to all kinds of things, to come up with the second god, sometimes really the first: *mamon* (money). The *bina sheb'bina* is applied for better solutions all the way down to earth, so that even people can use theories they might not understand: drive a car, or get on a computer and talk to somebody on the other side of the world.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -295,7 +296,8 @@
                 ],
                 "reason": "A sweeping judgment of the present-day world, its lewdness worse than ever before.",
                 "action": "replace",
-                "publishable": "He includes all the bad kings' things, so in a way it is much worse: the lust for money, conquering other nations, false *din*. All the emotional bad kings are now worse than ever, because the eighth includes them all, and everything is available. There always was terrorism, but now the eighth king makes it available for one man to come up with what was done to the Twin Towers; in the old days they could not have done it."
+                "publishable": "He includes all the bad kings' things, so in a way it is much worse: the lust for money, conquering other nations, false *din*. All the emotional bad kings are now worse than ever, because the eighth includes them all, and everything is available. There always was terrorism, but now the eighth king makes it available for one man to come up with what was done to the Twin Towers; in the old days they could not have done it.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -399,7 +401,8 @@
                 ],
                 "reason": "Calls those newly drawn to Kabbala \"the craziest people\".",
                 "action": "replace",
-                "publishable": "Because of this, all kinds of people are now starting to be attracted to rabbinical *Kabbala*. He also lets happen what the Rebbe said: before, you couldn't tell about the seven *mitzvos*; now you can, because it is the eighth king of *Tohu*. You can tell anybody anything. It is total, absolute *Tohu*, and *davka* he is Yosef who interprets dreams."
+                "publishable": "Because of this, all kinds of people are now starting to be attracted to rabbinical *Kabbala*. He also lets happen what the Rebbe said: before, you couldn't tell about the seven *mitzvos*; now you can, because it is the eighth king of *Tohu*. You can tell anybody anything. It is total, absolute *Tohu*, and *davka* he is Yosef who interprets dreams.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -663,10 +666,8 @@
                   "politics"
                 ],
                 "reason": "Gives abortion, as a remedy for overpopulation, as his example of a broken conclusion, calling it killing babies.",
-                "action": "replace",
-                "publishable": "A conclusion that turns a sound analysis into something evil: that is what a *shevira* is. It is in the conclusion, not in the original analysis.",
-                "recommend": "judgment",
-                "judgmentNote": "His view of abortion follows halacha, but as an example it is a political flashpoint; weigh whether to print it."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -730,8 +731,8 @@
                   "other-religions"
                 ],
                 "reason": "Says the missionaries who try to convert Jews do not think and are run by a chashmal, like the terrorists.",
-                "action": "replace",
-                "publishable": "The terrorists run around wanting to do this and that; they are not sitting and thinking, \"Wait a minute, is this business correct?\" There is no *iyun* there. They accepted a *chashmal*, and the *chashmal* runs their life: a demon possessing them."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1377,10 +1378,8 @@
                   "politics"
                 ],
                 "reason": "Political opinions: communism, and abortion called killing your own children.",
-                "action": "replace",
-                "publishable": "Even really bad stuff, in a way, started off from a good intention, and a lot of things that start with a good intention end up as the worst possible thing that could happen.",
-                "recommend": "judgment",
-                "judgmentNote": "His view of abortion follows halacha, but here it is an aside on a political question; weigh whether to print it."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1402,8 +1401,7 @@
                 "reason": "Says people who have fewer children for the sake of income, and a nation that runs up debt, are eating their children.",
                 "action": "replace",
                 "publishable": "He recalls, with a listener, the story from the time of the Tree of Knowledge that the Satan gave them a child and they ate him. A good intention can end up like that: eating your own children.",
-                "recommend": "judgment",
-                "judgmentNote": "A sharp judgment on family size and on national debt, both live political questions; weigh whether to print it."
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1453,7 +1451,7 @@
                 "action": "replace",
                 "publishable": "The proper order has its own advantage even when the letters are not cleansed. *Chassidus* explains that besides their order, the letters themselves can be dirty: the letters of a lustful thought are in the wrong order and are *mamash* dirty. But say I give you, written in letters made of mud, the number of a Swiss bank account with ten billion dollars in it. Does that detract from the account? Not at all. That is why the letters of *Chassidus* can take even letters of mud and tell you about a bank account with ten billion dollars: the order of the letters can supersede the impurity of the letters themselves.",
                 "publishableTitle": "Letters of mud and a Swiss bank account",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             }
           ]
@@ -1620,8 +1618,7 @@
                 "reason": "An oblique jab at present-day sexual morality (maaseh Mitzrayim) and at those who call its opponents bigots.",
                 "action": "replace",
                 "publishable": "And now it is even worse than in past generations, so the *middos* are worse too: what was considered lewd even back then is now considered goodness. He is describing here how the generation got there.",
-                "recommend": "judgment",
-                "judgmentNote": "It rests on a halachic prohibition (maaseh Mitzrayim) but reads as a jab at present-day culture and its defenders; weigh whether to print it."
+                "reviewed": "2026-11-24"
               }
             },
             {

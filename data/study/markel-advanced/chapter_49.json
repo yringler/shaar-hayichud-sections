@@ -579,10 +579,8 @@
                   "named-person"
                 ],
                 "reason": "Names living political leaders (Saddam Hussein, out of power at the time, and President Bush) as examples of a ruler's borrowed power; the line on Saddam is a jab at a named person.",
-                "action": "replace",
-                "publishable": "His power is not like Achashverosh's. A ruler can say whatever he wants and nobody listens to him once his power is gone, because it really came from their being scared of him; or his power comes from their having accepted him, voted for him.",
-                "recommend": "judgment",
-                "judgmentNote": "The names are only examples of where a king's power comes from, which STYLE.md would not flag; weigh whether naming Saddam and Bush, dated and political, should print."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
