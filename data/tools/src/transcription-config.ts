@@ -59,6 +59,14 @@ export const TRANSCRIPTION_SERIES: readonly SeriesTranscriptionConfig[] = [
     speakers: { mode: 'off' },
     note: 'Edited (chatter removed) copies of the 2020 other classes; the teacher is the main voice.',
   },
+  {
+    seriesId: '104',
+    title: 'Rabbi Benyamin Walters New Class (5784)',
+    // One-on-one with a single student who is rarely heard; most files are
+    // monologues, so speaker labeling would add cost without benefit.
+    speakers: { mode: 'off' },
+    note: 'One teacher and one student (chapters 33-54); the teacher is almost the only voice.',
+  },
   // Not in scope: the unedited originals, "Rabbi Benyamin Walters New Class
   // (2020)" (:75) and "Rabbi Benyamin Walters Other Classes" (:73); their
   // edited copies (:90, :102) are transcribed instead.
