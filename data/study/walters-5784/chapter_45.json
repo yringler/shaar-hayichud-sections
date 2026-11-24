@@ -1,0 +1,3358 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-5784",
+  "chapter": "chapter_45",
+  "title": "The garments of leather, the broken letters, and the mashal",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 6",
+    "date": "2026-11-24"
+  },
+  "lectures": [
+    {
+      "id": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+      "transcriptionId": "3325b19e-14da-4bd0-909f-e26bba5449df"
+    },
+    {
+      "id": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+      "transcriptionId": "0449d4f8-7b6a-4114-a96a-eff193711cf4"
+    }
+  ],
+  "overview": "Chapter 45 keeps the subject of letters as *kelim* (vessels) and *levushim* (garments). The garments of leather that G-d made for Adam and Chava are the *chashmal* of *Nogah*, a shell around the *sefiros* a good, refined garment that looks low, bringing out a higher light from the *makif* of *bina*. It then explains *shevira*, the breaking of the vessels: the letters of an idea break apart when the light is greater than they can hold, and when they are taken out of context. Someone without the depth misreads the same words, and dreams are the day's thoughts returned out of order. The garments of leather are the three kinds of letters of thought, speech and action; they guard the *middos* until a person can be guided by the *nefesh elokis*. The *chitzoniyus* of *binah* makes protective *levushim*, such as customs, stories and rules, which a child needs until he matures. A *mashal* has a higher source than what it explains, and Shlomo's three thousand *meshalim* hold their deepest source in the lowest one. Language is the same kind of bringing down. The chapter closes with protective shells and a truth that must be packaged so people take it in.",
+  "terms": [
+    {
+      "term": "chashmal",
+      "he": "חשמל",
+      "gloss": "a refined, holy garment: the shell around the sefiros that can bring out a higher light, here the chashmal of Nogah",
+      "line": "tstufy3c"
+    },
+    {
+      "term": "levush",
+      "he": "לבוש",
+      "gloss": "a garment: what clothes an idea or a middah, and can be a protective shell",
+      "line": "dfnirrwu"
+    },
+    {
+      "term": "kli",
+      "he": "כלי",
+      "gloss": "the vessel, plural *kelim*: what holds and limits a light, as the letters hold an idea",
+      "line": "aefiqxpl"
+    },
+    {
+      "term": "shevira",
+      "he": "שבירה",
+      "gloss": "the breaking of the vessels: when the light is too great for them, or an idea falls apart out of its context",
+      "line": "i2xxwoc2"
+    },
+    {
+      "term": "Tohu",
+      "he": "תהו",
+      "gloss": "the world of chaos, where the vessels first broke",
+      "line": "i2xxwoc2"
+    },
+    {
+      "term": "tikkun",
+      "he": "תיקון",
+      "gloss": "repair: after the breaking, the garment is repaired and becomes light",
+      "line": "5ur4tzex"
+    },
+    {
+      "term": "mashal",
+      "he": "משל",
+      "gloss": "an analogy; its source is higher than what it explains",
+      "line": "3jiglq2t"
+    },
+    {
+      "term": "nimshal",
+      "he": "נמשל",
+      "gloss": "what an analogy stands for",
+      "line": "as5nhrk6"
+    },
+    {
+      "term": "makif",
+      "he": "מקיף",
+      "gloss": "the encompassing light, higher than the inner light it surrounds",
+      "line": "4uhkcglt"
+    },
+    {
+      "term": "chitzoniyus",
+      "he": "חיצוניות",
+      "gloss": "the outer aspect of a faculty; of binah, the outer side that protects its chicks",
+      "line": "4uhkcglt"
+    },
+    {
+      "term": "bina",
+      "he": "בינה",
+      "gloss": "understanding: grasping and developing an idea",
+      "line": "4uhkcglt"
+    },
+    {
+      "term": "middos",
+      "he": "מדות",
+      "gloss": "the emotional attributes",
+      "line": "57srphhf"
+    }
+  ],
+  "sections": [
+    {
+      "title": "The garments of leather and the chashmal of Nogah",
+      "summary": "G-d makes garments of leather for Adam and Chava, and the chashmal of Nogah is the refined shell around the sefiros that carries a higher light.",
+      "passages": [
+        {
+          "lines": [
+            "e2dgno5c"
+          ],
+          "phrases": [
+            {
+              "he": "(מה) והנה כתיב",
+              "en": "And it says",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [155, 157],
+                "start": 66.86,
+                "end": 67.4
+              }
+            },
+            {
+              "he": "ויעש יהו״ה לאדם ולאשתו כתנות עור",
+              "en": "G-d made for them garments of leather",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [207, 213],
+                "start": 87.72,
+                "end": 91.2
+              }
+            },
+            {
+              "he": "וילבישם",
+              "en": "and he clothed them",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [214, 217],
+                "start": 91.46,
+                "end": 93.02
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The chapter continues the letters as *kelim* and *levushim*. The choice of words comes from the *makif* of *bina*, higher than conscious understanding. The *Maaseh Merkava* describes the Divine chariot surrounded by a glow like a *chashmal*, and Kabbalah explains that term in a specific way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [0, 152],
+                  "start": 0.22,
+                  "end": 65.9
+                }
+              ],
+              "outOfPlace": "Class 045.1 opens with the chapter's theme, before line 1 is read at 1:06 (\"and it says\")."
+            },
+            {
+              "kind": "story",
+              "title": "Garments of leather",
+              "text": "After Adam and Chava ate from the Tree of Knowledge, they were embarrassed and covered themselves. G-d then made them garments of leather and clothed them.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [153, 225],
+                  "start": 66.1,
+                  "end": 95.08
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tstufy3c",
+            "pnlkhjii",
+            "75idm4wi"
+          ],
+          "phrases": [
+            {
+              "he": "שזהו בחינת החשמ\"ל דנוגה",
+              "en": "This is what's called the *chashmal* of *Nogah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [238, 245],
+                "start": 102.52,
+                "end": 106.36
+              }
+            },
+            {
+              "he": "שמקיף לזעיר אנפין ונוקבא דאצילות שנקרא אדם ואשתו",
+              "en": "this is the idea that surrounds … Zeir Anpin is called Adam, Nukva is his wife",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [390, 409],
+                "start": 153.54,
+                "end": 160.42
+              }
+            },
+            {
+              "he": "עד מתחת רגליהם כו' כידוע",
+              "en": "it surrounds them, all the way to under their feet, all the way to shoes, as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [422, 443],
+                "start": 163.54,
+                "end": 171.28
+              }
+            },
+            {
+              "he": "ובתורתו של רבי מאיר",
+              "en": "but in Rabbi Meir's *sefer Torah*, it says in the *Gemara* that",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [453, 464],
+                "start": 175.38,
+                "end": 178.22
+              }
+            },
+            {
+              "he": "היה כתוב אור באלף",
+              "en": "in his *sefer Torah*, on the words 'garments of leather', he had it written with an alef, 'garments of light'",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [465, 483],
+                "start": 178.24,
+                "end": 184.7
+              }
+            },
+            {
+              "he": "שזהו בחינת זיהרא עילאה,",
+              "en": "this is the upper light",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [495, 499],
+                "start": 189.04,
+                "end": 190.64
+              }
+            },
+            {
+              "he": "כמו שכתוב עוטה אור כשלמה,",
+              "en": "it says G-d surrounds, he wraps himself in light like a cloak, like a garment",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [505, 520],
+                "start": 192.42,
+                "end": 198.58
+              }
+            },
+            {
+              "he": "שזהו אחר הבירורים דרפ\"ח כו'.",
+              "en": "and that is after the refinement of the 288 *nitzotzos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [541, 550],
+                "start": 207.4,
+                "end": 212.5
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *chashmal* of *Nogah* surrounds the holy worlds, the *sefiros* with the souls and the *malachim*. It begins already in *Atzilus*, and each world has its own *Nogah*, with the three impure *kelipos* around it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [226, 324],
+                  "start": 96.52,
+                  "end": 130.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *levush* of *Nogah* begins here. The *chashmal* of *Nogah* is a good, holy thing: a refined *levush*, not a negative *kelipah*. G-d giving the garments was a *chesed*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [325, 388],
+                  "start": 132.54,
+                  "end": 150.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *chashmal* surrounds *Zeir Anpin* and *Nukva* of *Atzilus*, which are Adam and his wife, all the way down to their feet.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [389, 443],
+                  "start": 153.4,
+                  "end": 171.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Gemara says that in Rabbi Meir's Torah scroll the words 'garments of leather' are written with an alef: 'garments of light.'",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [444, 491],
+                  "start": 171.48,
+                  "end": 187.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The upper light, *zihara ila'a*, is a garment: 'He wraps himself in light like a cloak.' Light itself can be called a garment, after the refinement of the 288 *nitzotzos*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [492, 551],
+                  "start": 187.5,
+                  "end": 213.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The idea starts as something coarse like leather, which does not let the light through. After it is refined it becomes *or* with an alef, very bright. Later, *Kelipas Nogah* blocks the light at first, and once refined it magnifies it. The *levush* of the *chashmal* has a dual nature: it is low, with a negative sense, yet it brings out a higher light from the *makif* of *bina*. We will see both sides.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [552, 730],
+                  "start": 213.28,
+                  "end": 269.6
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "If a Torah has to be exact in every letter, how can there be Torah scrolls with different letters?",
+              "askedBy": "student",
+              "text": "The essence of Torah is its inner light, the *pnimiyus* of Torah. That light is codified in *halacha* in one specific form, but it can come out in many valid forms. Once we decide that it is one way, it has to be that way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [736, 905],
+                  "start": 272.18,
+                  "end": 329.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Torah is understood differently by a simple person than by a *chacham* who sees the inner side, and that difference is a big theme of the chapter. I think the simple answer is that there are different traditions and they are all valid. On a deeper level, the spelling with an *ayin* is how Torah is revealed now, in *galus*, and when *Moshiach* comes it will be with an alef.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [906, 1075],
+                  "start": 330.76,
+                  "end": 400.82
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Originally, Moses wrote the Torah in seventy languages, and the script was written in different ways. There was more flexibility then. As we become lower with each generation we need more *chumros*, so we became stricter. This is the protective shell of the *chashmal* for the immature.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1076, 1195],
+                  "start": 403.2,
+                  "end": 439.18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shevira: the letters break when the light is too great for them",
+      "summary": "The breaking of the vessels, *shevira*, is the letters of an idea falling apart when they cannot hold the light, and it begins in *Tohu*.",
+      "passages": [
+        {
+          "lines": [
+            "5ur4tzex",
+            "aefiqxpl",
+            "qzcvhwwj",
+            "pqvhjytl",
+            "i2xxwoc2"
+          ],
+          "phrases": [
+            {
+              "he": "ומתחלה יש להבין קצת בביאור",
+              "en": "but first we just need a little bit of an explanation",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1210, 1220],
+                "start": 447.58,
+                "end": 450.62
+              }
+            },
+            {
+              "he": "ענין השבירה והתיקון בכללותן",
+              "en": "about what's the concept of the *shevira* and the *tikkun*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1221, 1230],
+                "start": 450.68,
+                "end": 453.54
+              }
+            },
+            {
+              "he": "שהוא בבחינת האותיות",
+              "en": "That refers to the letters",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1271, 1277],
+                "start": 469.82,
+                "end": 471.64
+              }
+            },
+            {
+              "he": "שנקרא כלים",
+              "en": "like we said, sometimes they're called *levushim*, but here in this context they're called *kelim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1282, 1301],
+                "start": 472.92,
+                "end": 477.58
+              }
+            },
+            {
+              "he": "שנשברו ונפלו מצד ריבוי האור שלא היה ביכולתם להכיל",
+              "en": "they broke and they fell because of the abundance of light they weren't able to contain",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1315, 1330],
+                "start": 485.66,
+                "end": 491.04
+              }
+            },
+            {
+              "he": "כמו שכתוב בעץ חיים",
+              "en": "like it says in *Etz Chaim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1335, 1340],
+                "start": 493.72,
+                "end": 494.58
+              }
+            },
+            {
+              "he": "וכמו שכתוב",
+              "en": "like it says, based on the verse",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1343, 1347],
+                "start": 496.74,
+                "end": 497.72
+              }
+            },
+            {
+              "he": "אתה פוררת בעזך ים",
+              "en": "that You crumbled the sea through Your might",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1352, 1359],
+                "start": 499.78,
+                "end": 503.44
+              }
+            },
+            {
+              "he": "שזהו בחינת התהו,",
+              "en": "this is the idea of the *Tohu*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1386, 1392],
+                "start": 513.66,
+                "end": 515.42
+              }
+            },
+            {
+              "he": "שנתפררו בחינת האותיות,"
+            },
+            {
+              "he": "שנקרא שבירת הכלים",
+              "en": "and that's the idea that in *Tohu* there was a very strong light, but the *kelim* were small, they weren't able to handle the light",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1401, 1424],
+                "start": 521.1,
+                "end": 527.68
+              }
+            },
+            {
+              "he": "כידוע",
+              "en": "and therefore it says they broke, they shattered, as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1425, 1436],
+                "start": 527.72,
+                "end": 532.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "First the *shevira* and the *tikkun* need explaining. The garment starts as *or* with an *ayin*, and once it is repaired it becomes *or* with an *alef*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1196, 1257],
+                  "start": 439.76,
+                  "end": 463.97
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The breaking of the *kli* concerns the letters, called *kelim* here, though sometimes *levushim*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1258, 1301],
+                  "start": 464.14,
+                  "end": 477.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "They broke and fell because the light was too abundant to contain, as *Etz Chaim* says.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1302, 1340],
+                  "start": 478.16,
+                  "end": 494.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The verse 'You crumbled the sea with Your might' gives the image: making crumbs, *peirurim*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1341, 1382],
+                  "start": 495.7,
+                  "end": 511.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is *Tohu*, where the letters scattered and the breaking of the *kelim* happened. The light was very strong and the *kelim* were too small to hold it, so they broke.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1383, 1450],
+                  "start": 511.16,
+                  "end": 536.02
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Too much depth: the letters of a mind that cannot hold the light",
+      "summary": "When the light is greater than the vessel, the letters scatter out of context. A mashal, a story and a listener's misreading show how the same words are grasped by one person and lost to another.",
+      "passages": [
+        {
+          "lines": [
+            "2badlwmm",
+            "6ocr6taz",
+            "mbzmvsfi"
+          ],
+          "phrases": [
+            {
+              "he": "וטעם הדבר ידוע,",
+              "en": "the reason for this is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1454, 1459],
+                "start": 538.02,
+                "end": 539.2
+              }
+            },
+            {
+              "he": "על דרך משל עומק אור שכל שלמעלה מכלי הגבלת המוח, אז ודאי יתבלבלו אותיות השכל שבמחשבה, מצד מיעוט כחם להכיל האור, כי רב הוא מהם",
+              "en": "then surely the letters of the intellect will become confused; the person's thoughts cannot arrange things properly, because they can't contain that light, because it's too great for them",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1709, 1768],
+                "start": 620.96,
+                "end": 641.98
+              }
+            },
+            {
+              "he": "מה שאין כן כלי המוח שמכיל לאור השכל העמוק,",
+              "en": "but if you have another person that's hearing the exact same words, but they do have the depth and the breadth of knowledge and ability to understand it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1779, 1806],
+                "start": 647.66,
+                "end": 656
+              }
+            },
+            {
+              "he": "אדרבא מוגבל ומתיישב ונעלם באותיות הללו",
+              "en": "the light is well defined and very settled and hidden, contained within these letters",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1835, 1849],
+                "start": 665.62,
+                "end": 673.34
+              }
+            },
+            {
+              "he": "(בלשון אידייש פאר נעמט",
+              "en": "you can say it's grasped",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1854, 1858],
+                "start": 675.36,
+                "end": 676.38
+              }
+            },
+            {
+              "he": "כו') וכאשר לא יכילו,",
+              "en": "but when a person doesn't understand the intent behind it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1869, 1878],
+                "start": 681.26,
+                "end": 684.88
+              }
+            },
+            {
+              "he": "אזי בהכרח שיתפרדו האותיות",
+              "en": "then by necessity they're going to end up falling apart out of context",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1903, 1912],
+                "start": 693.32,
+                "end": 696.36
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Take a professor explaining to someone who can't fully grasp it, a child or an adult not on that level, who overhears the lecture.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1451, 1529],
+                  "start": 536.78,
+                  "end": 563.66
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "Handkerchiefs",
+              "text": "The Alter Rebbe spoke *maamarim*, and simple people who came to hear them wept afterward. They had misheard *Atzilus*, a word they did not know, as a word for handkerchiefs in Yiddish, and pictured the souls trapped in sacks. They misunderstood, but still got the G-dly idea.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1530, 1648],
+                  "start": 563.76,
+                  "end": 600.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Someone without the depth to understand hears the words but doesn't see how they fit together, so he misunderstands.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1649, 1703],
+                  "start": 601.72,
+                  "end": 617.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The letters of the intellect in thought get confused when the person lacks the strength to contain the light, because it is too great for them.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1704, 1769],
+                  "start": 618.06,
+                  "end": 642.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Someone with the depth hears the same words, and everything fits in place: the light is well defined, settled and contained in these letters. That is what is called *far nemt*, grasped.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1770, 1865],
+                  "start": 644.18,
+                  "end": 678.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "When a person doesn't understand the intent, the letters fall apart out of context, as explained elsewhere at length. Two people hear the same thing; one grasps where it comes from, and the other takes it out of context. It happens in every field.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1866, 1982],
+                  "start": 679.27,
+                  "end": 718
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Math and science lectures are misunderstood the same way. Popular culture takes scientific ideas, misses their nuances, and turns them into something magical or unreal.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [1983, 2066],
+                  "start": 718.04,
+                  "end": 743.08
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Calls popular culture a group that misreads science and makes it magical: a sweeping remark about a body of people, which a public reader may take as contempt.",
+                "action": "replace",
+                "publishable": "Math and science lectures are misunderstood the same way. People take scientific ideas, miss their nuances, and turn them into something magical or unreal."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "The same happens in Torah and *halacha*: someone sees one statement without the whole picture and can reach the opposite of the *halacha*. The *navi* complains of people who learn Torah in pieces, one line here and one there.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2067, 2185],
+                  "start": 743.9,
+                  "end": 788.28
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A class on the limits of love",
+              "text": "A simple Jew attended a class by a much more learned man on the limits of *ahavas Yisrael*, where some *halachos* say not to have mercy on certain people. He came to Rabbi Walters and said it didn't seem right. He was right: the learned man did not know enough.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2186, 2321],
+                  "start": 789.78,
+                  "end": 833.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The sources say it, but they must be read with the statements that contradict them. A *sicha* of the Rebbe explains: the *mitzva* to love everybody has no limit, and specific limits apply to choosing close friends who are a good influence.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2322, 2444],
+                  "start": 833.74,
+                  "end": 872.64
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "A found item and the halacha",
+              "text": "The *halacha* is that money dropped with no identifying mark is right away *hefker*, and you don't have to return it. A simple person asked: how could you not return it? The learned man tried to defend the *halacha* as he understood it in the *Rambam*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2445, 2595],
+                  "start": 874.1,
+                  "end": 917.99
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "States a legal conclusion about an unmarked found item (hefker, no need to return it) that a reader could act on.",
+                "action": "replace",
+                "publishable": "The *halacha* is a legal definition: whether a person must spend time and money to return an object with no identifying mark. A simple person asked: how could you not return it? The learned man tried to defend the *halacha* as he understood it in the *Rambam*.",
+                "recommend": "judgment",
+                "judgmentNote": "A legal ruling a reader could act on. The teaching is the gap between what is right and what is legally required. A rav should weigh whether the example stays."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "The simple person was right. The *halacha* does not say you shouldn't return it or that it's wrong to. It is a precise legal question: are you required to spend time, money and effort, even missing your train, to do it? Sometimes it is the right thing to do.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2596, 2751],
+                  "start": 918.48,
+                  "end": 961.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The question is what a law addresses: a court obligation, or a statement of right and wrong. That depth of understanding is needed to see a law in context.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2752, 2824],
+                  "start": 961.46,
+                  "end": 974.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The context of the whole Torah is seeing the intrinsic value of every Jew and every thing, its essential G-dly worth, which the laws are there to bring out. A child who doesn't see that takes the rules as a negative, as if someone is trying to get him. They should be given out of love, because you see the child's potential.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2825, 2988],
+                  "start": 974.58,
+                  "end": 1018.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This kind of misunderstanding happens between people in many ways.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [2989, 3014],
+                  "start": 1018.42,
+                  "end": 1026.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "pwxtwlbk",
+            "fmdy6jhm"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שמבואר במקום אחר באריכות,",
+              "en": "as explained elsewhere at length",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [1918, 1922],
+                "start": 699.06,
+                "end": 700.72
+              }
+            },
+            {
+              "he": "שזהו כמו בתיבה אחת",
+              "en": "you can even have this example with just one single word",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3020, 3030],
+                "start": 1029.86,
+                "end": 1032.08
+              }
+            },
+            {
+              "he": "שתקצר להכיל האור הרב שבה,",
+              "en": "so even with one word, that if you can't fail to grasp, basically you don't have the recognition of the meaning of that word",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3203, 3231],
+                "start": 1081.38,
+                "end": 1089.46
+              }
+            },
+            {
+              "he": "יתפרדו האותיות שבה אנה ואנה, עד שלא יהיה מובן מזה כלום",
+              "en": "then the letters separate one here, one there, until you won't understand anything from the word",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3237, 3258],
+                "start": 1092.36,
+                "end": 1100.46
+              }
+            },
+            {
+              "he": "כתיבת ויאמר",
+              "en": "like let's say the word *vayomer*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3261, 3266],
+                "start": 1102.04,
+                "end": 1103.16
+              }
+            },
+            {
+              "he": "כשלא יכיל עומק המכוון שבו,",
+              "en": "if a person doesn't know what that word means, they don't know Hebrew",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3272, 3285],
+                "start": 1105.68,
+                "end": 1108.98
+              }
+            },
+            {
+              "he": "יתפרדו האותיות,",
+              "en": "then the letters get broken up",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3288, 3293],
+                "start": 1110.98,
+                "end": 1112.94
+              }
+            },
+            {
+              "he": "וישאר וי\"ו מ״ם",
+              "en": "and it just becomes",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3297, 3300],
+                "start": 1114.62,
+                "end": 1115.3
+              }
+            },
+            {
+              "he": "שבו מפורדין שלא כסדרן במקומן",
+              "en": "so those letters become separate without the proper context",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [3339, 3347],
+                "start": 1126.98,
+                "end": 1130
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Take one word. A person who knows the language recognizes it at once, even when the middle letters are scrambled and only the first and last are in place, because he knows the pattern of the word. You can look this up online. Someone who doesn't know the language can't repeat the word properly, because it is foreign to him.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3015, 3201],
+                  "start": 1028.2,
+                  "end": 1080.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "With one word that is too great to grasp, the letters separate, one here and one there, until nothing is understood from it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3202, 3258],
+                  "start": 1080.84,
+                  "end": 1100.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Take *vayomer*. Ask someone who doesn't know Hebrew what was said, and he hears loose letters, *vav* and *mem*, separated and out of order, without the context.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3259, 3347],
+                  "start": 1100.65,
+                  "end": 1130
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "Looking for a bank",
+              "text": "When the teacher was in yeshiva in Israel, he asked for a bank using the English word. In Hebrew the word is pronounced differently, and the person had no idea until he described it. Then he said, 'Oh, *bank*!' Without the recognition, even a small difference means nothing.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3348, 3454],
+                  "start": 1130.1,
+                  "end": 1159.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the basic *mashal* for *shevirat hakelim*: every *shevira* is a kind of *tzimtzum*, and not literal. It is a *tzimtzum* only from the side of the receiver; from the giver's side there is none.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3455, 3545],
+                  "start": 1161.7,
+                  "end": 1190.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The main *nimshal*: G-d's intrinsic love is shown, and one can misread it as, 'Then it doesn't matter, I can do whatever I want, G-d loves me anyway.' That is *tohu*. A child given unconditional love without understanding can reach the same wrong conclusion, so sometimes it must be clothed in a *levush* of *gevurah* so it does not go astray.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3546, 3702],
+                  "start": 1190.55,
+                  "end": 1237.4
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Religion in *Torah* and *mitzvos* is easily misconstrued into the opposite of itself: something judgmental. The Rebbe and the Baal Shem Tov spoke against those who use Torah to preach fire and brimstone at Jews.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3703, 3776],
+                  "start": 1238.34,
+                  "end": 1261.1
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Describes a group of religious preachers who attack other Jews with fire and brimstone, a jab at a camp within Judaism beyond the point of the teaching.",
+                "action": "replace",
+                "publishable": "Religion in *Torah* and *mitzvos* is easily misconstrued into the opposite of itself: something judgmental. The Rebbe and the Baal Shem Tov spoke against a misreading of Torah."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "People misunderstand *halacha* and each other all the time, and a child in school doesn't see the purpose behind the rules.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3777, 3831],
+                  "start": 1262.6,
+                  "end": 1278.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Physics: every theory is only an *effective theory*, true and useful in one aspect of reality; go to another part and the rules change. The teacher was discussing this today with a physicist. When you look deeper you see unity: all reality is made of the same few particles and four forces, and at higher energies the four forces unite into one.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3832, 3990],
+                  "start": 1278.97,
+                  "end": 1326.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The inner *g-dly* unity is splintered, and we see diversity because we don't see the depth. That is the idea of *shevirat hakelim*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [3991, 4056],
+                  "start": 1326.68,
+                  "end": 1349.64
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Physical pleasures taken out of context become a *yetzer hara*: one thinks they are only about pleasure, rather than their purpose of helping us serve G-d.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4057, 4116],
+                  "start": 1351.2,
+                  "end": 1371.04
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Wanting knowledge is a good thing, so wasn't eating from the Tree of Knowledge good?",
+              "askedBy": "student",
+              "text": "Yes, wanting knowledge is good, and we were meant to have the Tree of Knowledge. The real problem is that the Tree of Life had to come first: the good knowledge a person needs first is *bina*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4117, 4218],
+                  "start": 1373.14,
+                  "end": 1402.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Daas* is having an opinion: deciding what is good and bad. Lacking enough *bina*, a person jumps to decide. He would agree, I think, that even in science many people jump to conclusions: 'this is right, this is wrong.'",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4219, 4323],
+                  "start": 1402.76,
+                  "end": 1434.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The tree was a good thing, but it had to be at the right time and in the right place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4324, 4376],
+                  "start": 1434.88,
+                  "end": 1451.8
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "The same with intimacy: at first a person thinks anything that feels good is good, then he feels guilty and thinks it is bad and should be avoided.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4377, 4457],
+                  "start": 1451.84,
+                  "end": 1471.7
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "A sexual example (intimacy) given as a case of desire that is first taken as good and then felt as guilt. A public edition would not print it with his name on it without asking him.",
+                "action": "replace",
+                "publishable": "The same with physical desire: at first a person thinks anything that feels good is good, then he feels guilty and thinks it is bad and should be avoided.",
+                "recommend": "judgment",
+                "judgmentNote": "The point is about desire, not sex. The publishable text keeps the case with a neutral word. A person decides whether the example stays."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Desire to eat, and food that tastes sweet or salty, is given for a reason: it tells us what we need to survive. Taken out of context and made the goal, pleasure becomes unhealthy physically, morally, psychologically and spiritually.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4458, 4595],
+                  "start": 1472.02,
+                  "end": 1505.42
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "Could they be misunderstanding because they don't read the original Hebrew?",
+              "askedBy": "student",
+              "text": "It's a good point, and it could be. But even reading Hebrew, one must learn the explanations of *Chazal* from the right perspective, understanding the assumptions and the meaning of the words in context. That inner message is the *pnimiyus haTorah*, the checksum that protects Torah and makes sure we understand it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4596, 4731],
+                  "start": 1506.28,
+                  "end": 1554.56
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Midrash and Gemara are full of stories that are easy to misunderstand, since they are told as fairy tales. That is intentional in a certain way, as we will see.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4732, 4793],
+                  "start": 1555.3,
+                  "end": 1577.32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dreams: the day's thoughts come back out of order",
+      "summary": "Dreams are the day's thoughts returned without their connecting theme, and the same happens to an idea that is broken into pieces. Only the thought the person had that day can appear in a dream.",
+      "passages": [
+        {
+          "lines": [
+            "arjvzviw",
+            "trepqckf",
+            "shgtigk6",
+            "grlsxzvn"
+          ],
+          "phrases": [
+            {
+              "he": "(כדוגמת אותיות הרהורי לבו שביום,",
+              "en": "And this is like dreams",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [4805, 4809],
+                "start": 1584.78,
+                "end": 1585.92
+              }
+            },
+            {
+              "he": "שמתפרדין שלא במקומן ושלא כסדרן בחלומות",
+              "en": "all of the experiences and thoughts that a person had during the day come back up, but they come back unordered in a dream",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [4816, 4842],
+                "start": 1587.56,
+                "end": 1595.94
+              }
+            },
+            {
+              "he": "שבאין רק מצרופים שמהרהר ביום,",
+              "en": "that on the one hand the dreams are just the thoughts that we thought about during the day",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [4927, 4944],
+                "start": 1626.66,
+                "end": 1629.7
+              }
+            },
+            {
+              "he": "בלתי מסודרין,",
+              "en": "but they're not in order",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [4948, 4952],
+                "start": 1631.26,
+                "end": 1632.74
+              }
+            },
+            {
+              "he": "אלא אות מתיבה זו ואות מתיבה אחרת",
+              "en": "there's like a letter from one word and a letter from another word",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [4961, 4973],
+                "start": 1636.98,
+                "end": 1639
+              }
+            },
+            {
+              "he": "כו' ולכך החלומות שוא ידברו",
+              "en": "therefore dreams speak nonsense",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5012, 5015],
+                "start": 1652.12,
+                "end": 1653.5
+              }
+            },
+            {
+              "he": "כו' וכמו שכתוב במקום אחר)",
+              "en": "as is explained elsewhere",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5021, 5024],
+                "start": 1655.7,
+                "end": 1657.02
+              }
+            },
+            {
+              "he": "וזה הפירור נקרא שבירה לחלקים רבים",
+              "en": "this idea of taking an idea and separating it and breaking it apart into small pieces",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5031, 5047],
+                "start": 1660.86,
+                "end": 1667
+              }
+            },
+            {
+              "he": "וקטנים",
+              "en": "to the point where it loses its context, that's called *shevira*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5048, 5058],
+                "start": 1667.04,
+                "end": 1669.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Dreams are the day's thoughts coming back unordered. One purpose of dreaming seems to be that during the day we take in information, and the brain sorts through it, adjusts its wiring and resets. Part of that process is that the memories come back, but not in order.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4794, 4921],
+                  "start": 1578.42,
+                  "end": 1622.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The dream is just the thoughts of the day, but disordered: a letter from one thought and a letter from another, with no connecting theme to set them in place, so they become strange. Therefore dreams speak nonsense, as is explained elsewhere.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [4922, 5024],
+                  "start": 1623.48,
+                  "end": 1657.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Taking an idea apart into small pieces, until it loses its context, is *shevira*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5025, 5066],
+                  "start": 1657.68,
+                  "end": 1672.92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tguc5ntj",
+            "rs7dzrm3",
+            "3vn2cq75"
+          ],
+          "phrases": [
+            {
+              "he": "כי בבוא זה האות שנתפרר לעצמו במקום אחר,",
+              "en": "Because when you take one little part of that idea and you take it out of context",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5090, 5106],
+                "start": 1683.82,
+                "end": 1690.2
+              }
+            },
+            {
+              "he": "אין בו רק חלק מצומצם מאד מן השכל שהיה מקובץ בהיות התיבה בצירופה בשלימות",
+              "en": "it only has this little, little bit of the original idea when it was all put together",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5107, 5123],
+                "start": 1690.22,
+                "end": 1694.22
+              }
+            },
+            {
+              "he": "כו' וגם הוא מתפרר פירור אחר",
+              "en": "And even that little piece can then split apart again, and again",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5339, 5350],
+                "start": 1749.34,
+                "end": 1752.04
+              }
+            },
+            {
+              "he": "פירור, עד שנעשה מזה ענין זר לגמרי",
+              "en": "until it becomes completely something foreign that loses all semblance to the original context and the original meaning",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5361, 5378],
+                "start": 1754.46,
+                "end": 1761.44
+              }
+            },
+            {
+              "he": "(כדוגמת ענין החלומות מהרהורי לבו שביום,",
+              "en": "like in a dream, even though it comes from what a person was thinking during the day, it becomes completely nonsensical to the original thing",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5386, 5411],
+                "start": 1765.78,
+                "end": 1773.74
+              }
+            },
+            {
+              "he": "רק אף על פי כן לא יחלום פילא בקופא דמחטא,",
+              "en": "Yet it says that a person will still not dream an elephant going into the eye of a needle, because a person doesn't think about it during the day",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5424, 5452],
+                "start": 1778.8,
+                "end": 1787.56
+              }
+            },
+            {
+              "he": "רק מעין הרהורי לבו דוקא,",
+              "en": "they'll only think about something that's similar to what they thought about during the day",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5458, 5472],
+                "start": 1790.38,
+                "end": 1792.82
+              }
+            },
+            {
+              "he": "וכמו שכתוב במקום אחר בענין פותר חלומות דיוסף וכמו שיתבאר)",
+              "en": "like he explains elsewhere",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [5483, 5486],
+                "start": 1797.46,
+                "end": 1798.48
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Taking one little part of an idea out of its context leaves only a small piece of what the whole idea was when it was put together.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5067, 5123],
+                  "start": 1673.42,
+                  "end": 1694.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A piece of a puzzle is a piece, but you can't tell what it is until it is put together. Each letter alone can hardly carry meaning. A single cell has a little life, but it is not like a human until they come together. A society or a symphony reveals a higher kind of thing when many things harmonize.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5124, 5326],
+                  "start": 1694.44,
+                  "end": 1743.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Each piece can split again and again, until it becomes something completely foreign that loses the original context and meaning.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5327, 5378],
+                  "start": 1744.72,
+                  "end": 1761.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Like dreams, which come from the day's thoughts but turn into nonsense. Still, no one dreams of an elephant going through the eye of a needle, only of something like what he thought about that day, as explained elsewhere in the matter of Joseph's interpreters of dreams.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5379, 5486],
+                  "start": 1762.14,
+                  "end": 1798.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "What looks like hypocrisy in *galus*: we have urges from the *yetzer hara* and the *yetzer tov*, both parts of the *nefesh habehamis*, while the *nefesh elokis* wants higher, G-dly things.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5487, 5563],
+                  "start": 1800.9,
+                  "end": 1837.04
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "title": "The sources in Tanya",
+              "text": "The teacher recently began looking up the sources that *Tanya* quotes, and finds it astonishing how few people do. In chapter 1, where the two souls are quoted, the source explains the whole idea beautifully.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5564, 5633],
+                  "start": 1837.96,
+                  "end": 1862.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Yetzer tov* and *yetzer hara* start as two *malachim*. The *yetzer hara* comes first, alone, and becomes a *shed*; refined, it returns to being a *malach*. Both are the good and bad of the *nefesh habehamis*; the *nefesh elokis* is higher. *Tanya*, chapter 1, says the *nefesh habehamis* also has a good nature.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5634, 5742],
+                  "start": 1862.7,
+                  "end": 1895.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The desires come from different places. Understanding where they come from, a person can put everything in place, and then there is harmony.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5743, 5828],
+                  "start": 1896.28,
+                  "end": 1923.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the difference between *tohu* and *tikkun*. In *tohu* a person thinks one day he is a *tzaddik* and the next day a *rasha*, back and forth. With healthy understanding he knows he is a work in progress, with different parts that need different work, and sees himself as a *beinoni*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5829, 5933],
+                  "start": 1923.79,
+                  "end": 1945.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As it was explained to the teacher, *pila* is hinted at as *pele*, the knowledge of G-d beyond what we can know; the eye of a needle is the smallest thing, like human intellect.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [5934, 6003],
+                  "start": 1946.96,
+                  "end": 1969.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Normally G-dliness cannot be revealed in a dream, but *Tosafos* says that holds only if one doesn't think about it during the day. If we try to learn *Chassidus* in *galus* and do that *avodah*, it becomes possible, even in the state of a dream.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6004, 6110],
+                  "start": 1969.5,
+                  "end": 1997.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Joseph's interpreting of dreams comes later.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6111, 6125],
+                  "start": 1997.72,
+                  "end": 2001.96
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tikkun and the garments of the chashmal",
+      "summary": "The vessels fall lower and become a foreign garment, and the same garment can be used on purpose to protect the immature, as the garments of leather were.",
+      "passages": [
+        {
+          "lines": [
+            "6dugixqw",
+            "tocs7vsr",
+            "dfnirrwu"
+          ],
+          "phrases": [
+            {
+              "he": "וכך יובן למעלה",
+              "en": "and so too it's understood above",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6129, 6134],
+                "start": 2004.88,
+                "end": 2006.28
+              }
+            },
+            {
+              "he": "בענין שבירת הכלים דאורות דתהו,",
+              "en": "about what's this idea of *shevirat hakelim*, of the lights of *Tohu*; it talks about the lights of *Tohu* going into the vessels and they broke",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6138, 6162],
+                "start": 2008.34,
+                "end": 2016.58
+              }
+            },
+            {
+              "he": "שזהו בחינת פירור ופיזור האותיות שלהם,",
+              "en": "that's the idea of the separating and the scattering of the letters of these *kelim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6213, 6229],
+                "start": 2038.12,
+                "end": 2044.28
+              }
+            },
+            {
+              "he": "כמו שכתוב אתה פוררת",
+              "en": "like it says, you crumbled the sea, so the sea is this light of *Tohu*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6232, 6250],
+                "start": 2045.12,
+                "end": 2051.72
+              }
+            },
+            {
+              "he": "כו' והיינו שנפלו למטה",
+              "en": "and this idea is that through *shevirat hakelim* they fall down",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6268, 6278],
+                "start": 2059.06,
+                "end": 2062.56
+              }
+            },
+            {
+              "he": "מטה עד שנעשה בבחינת לבוש זר",
+              "en": "and the idea of falling is that they become viewed now as just a physical thing; they're seen now as something totally foreign from their original source",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6279, 6315],
+                "start": 2062.6,
+                "end": 2073.58
+              }
+            },
+            {
+              "he": "שזהו שרש ענין התהוות בחינת לבוש דחשמל",
+              "en": "and this is now we're getting back to this idea of the *levush* of the *chashmal*, now that we have this general understanding of the *shevirat hakelim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6323, 6353],
+                "start": 2077.66,
+                "end": 2087.26
+              }
+            },
+            {
+              "he": "כו' הנקרא כתנות עור",
+              "en": "but being done in an intentional and positive way",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6361, 6369],
+                "start": 2092.54,
+                "end": 2095.38
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The lights of *Tohu* went into the vessels and broke. The 288 sparks are only the first stage, from *Atzilus* to *Beriah*; from there the breaking goes further and further, into tiny sparks.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6126, 6206],
+                  "start": 2002.62,
+                  "end": 2032.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the scattering of the letters of the *kelim*, as in 'You crumbled the sea': the sea is the light of *Tohu*, spread apart.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6207, 6258],
+                  "start": 2033.53,
+                  "end": 2054.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Through the breaking they fall lower and lower until they become a foreign *levush*, seen now as merely physical and totally foreign to their source.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6259, 6315],
+                  "start": 2054.98,
+                  "end": 2073.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Now back to the *levush* of the *chashmal*, with the general understanding of the breaking. The breaking can create *kelipos*, unholy things that seem to oppose G-dliness. But the same *levush* can be used intentionally and positively; that is the *levush chashmal*, called the garment of leather.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6316, 6432],
+                  "start": 2074.22,
+                  "end": 2116.02
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "57srphhf",
+            "4ilfey5y"
+          ],
+          "phrases": [
+            {
+              "he": "וידוע",
+              "en": "and it's known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6434, 6436],
+                "start": 2117.74,
+                "end": 2118.46
+              }
+            },
+            {
+              "he": "דעור זה הן בחינת ג' מיני אותיות דמחשבה דבור ומעשה,",
+              "en": "that this leather is the three kinds of letters of thought, speech, and action",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6447, 6462],
+                "start": 2123.62,
+                "end": 2127.16
+              }
+            },
+            {
+              "he": "ששרשם הוא מאותיות דכלים דתהו שנתפררו וירדו למטה,",
+              "en": "that their source is from these *kelim* of *Tohu* that became scattered and fell below",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6471, 6484],
+                "start": 2132.04,
+                "end": 2138.58
+              }
+            },
+            {
+              "he": "ונעשה בחינת לבוש ומקיף להלביש לבחינת המדות דאדם",
+              "en": "and they become just this garment to surround the *middos* of a person",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6494, 6506],
+                "start": 2142.82,
+                "end": 2146.88
+              }
+            },
+            {
+              "he": "כו' וגם שהוא נעשה בבחינת לבוש נפרד,",
+              "en": "even though seemingly this becomes like this separate *levush*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6936, 6943],
+                "start": 2276,
+                "end": 2278.7
+              }
+            },
+            {
+              "he": "שרשו מלמעלה ממקור המוחין דבינה שבמדות",
+              "en": "seemingly you would think that this is a lower thing, but the ability to make this actually comes from a deeper wisdom",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [6952, 6973],
+                "start": 2284.14,
+                "end": 2291.62
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The leather is the three kinds of letters, of thought, speech and action. Their root is in the *kelim* of *Tohu*, which scattered and fell, and they became a *levush* around a person's *middos*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6433, 6506],
+                  "start": 2117.38,
+                  "end": 2146.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *yetzer hara* is a survival instinct G-d puts in us, so that we survive until we develop understanding and *daas*, until *bar mitzvah*, until the *yetzer tov* can come in. Until then we must survive, so G-d gives natural instincts: wanting pleasurable food, and running from danger.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6507, 6625],
+                  "start": 2147.7,
+                  "end": 2181.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The other side is how Torah comes down as the *Shulchan Aruch*, a *levush chashmal* of Judaism: simple laws of do and don't, and deep ideas brought down into simple stories in the *Gemara*, *midrash* and *Chumash*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6626, 6715],
+                  "start": 2182.66,
+                  "end": 2212.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Someone who knows the *pnimiyus haTorah* may see such simple practices, spinning a dreidel, eating latkes, sitting in a *sukkah*, as baby stuff, a G-dly thing turned into simple acts. Especially the customs.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6716, 6802],
+                  "start": 2212.94,
+                  "end": 2231.9
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Training wheels",
+              "text": "A child gets rules, do this and don't do that, until he is mature enough to know the right thing. Eventually he grows out of the training wheels, but until then he needs them.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6803, 6898],
+                  "start": 2232.16,
+                  "end": 2259.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Though the garment seems separate and lower, its root is higher, in the source of the *mochin* of *binah*. To understand for yourself, as the *avos* did before *Matan Torah*, is a revealed level. To bring the idea down into simple form that people who don't understand can still follow comes from a deeper wisdom: the source of *binah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [6930, 7066],
+                  "start": 2271.76,
+                  "end": 2315.54
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The interface",
+              "text": "Early computers needed a lot of computer science to use. Now graphical interfaces and touch screens let a little child use one without knowing how it works. Making it so simple requires a much deeper wisdom.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7067, 7147],
+                  "start": 2315.98,
+                  "end": 2340.94
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The chitzoniyus of binah: the levush that protects, and the Rebbe's levushim",
+      "summary": "The outer side of binah hovers over its chicks to protect them, and the customs and stories that look foreign protect what they carry. Physical levushim can still connect a person to the source.",
+      "passages": [
+        {
+          "lines": [
+            "4uhkcglt"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו גם כן בחינת חיצוניות בינה, שעל גוזליו ירחף",
+              "en": "and this is also the idea that it says the *chitzoniyus* of *binah* hovers over the baby birds",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [7157, 7175],
+                "start": 2345.28,
+                "end": 2350.72
+              }
+            },
+            {
+              "he": "לשמירה",
+              "en": "to protect them",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [7177, 7179],
+                "start": 2351.84,
+                "end": 2352.38
+              }
+            },
+            {
+              "he": "כו', שהוא מבחינת המקיף דבינה",
+              "en": "which comes from the *makif* of *bina*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [7185, 7191],
+                "start": 2355,
+                "end": 2356.22
+              }
+            },
+            {
+              "he": "בבחינת מ\"ם סתומה הנזכר לעיל ודי למבין.",
+              "en": "which is higher than the *penimiyus* of *bina*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                "words": [7192, 7199],
+                "start": 2356.24,
+                "end": 2358.7
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *chitzoniyus* of *binah* hovers over its chicks to protect them; it comes from the *makif* of *binah*. Codifying an idea into a procedure, a system, laws or customs is the same relationship.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7148, 7250],
+                  "start": 2341.6,
+                  "end": 2382.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Many customs seem strange to a rational person: at a wedding the *chupah* and the ring, at a *bris*, and the custom of giving crumbs to the birds on Shabbos Shira. They come from a very deep place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7251, 7384],
+                  "start": 2382.5,
+                  "end": 2422.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Sometimes it is intentional. Knowing a child or a simple person will not grasp the full depth, one can construct a shell that protects: like an egg around a bird, the placenta around a fetus, or a seed's hard shell that breaks open when it is ready to grow.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7385, 7516],
+                  "start": 2423.38,
+                  "end": 2460.44
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The Rebbe's interview",
+              "text": "In an interview, someone (I think one of the Hillel leaders) asked the Rebbe whether Gehinnom and Gan Eden are literal or metaphor. The Rebbe said different parts of us need different stories: a five-year-old, a ten-year-old, a seventy-year-old, each needs a story that works at its level.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7517, 7629],
+                  "start": 2461.26,
+                  "end": 2495.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "When a person sees the real depth, he can see the idea in very foreign contexts. That is the length of *binah*: bringing it down into explanations, customs and systems, and stories that look foreign but carry the essence, for the immature parts of ourselves, our *middos*. This is the *levush chashmal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7630, 7770],
+                  "start": 2496.34,
+                  "end": 2544.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Before 3 Tammuz, people asked the Rebbe what to do; now one must learn and understand. The Alter Rebbe, as *Tanya* quotes from *Igeres HaKodesh*, wants a visit to a *tzaddik* to be for *Torah* and *avodah*, not only for physical *brachos*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7771, 7859],
+                  "start": 2545.22,
+                  "end": 2571.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Yet the Rebbeim gave physical *brachos*. Even a foreign *levush* helps people connect to the *tzaddik* and *Torah*. In *Torah* itself the *mitzvos* are not meant to bring physical blessings; that is a *levush* on top of them.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7860, 7940],
+                  "start": 2572.34,
+                  "end": 2598.14
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "Moshe's mask",
+              "text": "When Moshe spoke to the *erev rav* he wore a mask, and to Israel he took it off. So the first paragraph of *Shema* has no physical reward or punishment, and *Vehaya im shamoa* does, for people on that level. Hashem told Moshe, who first looked down on that level, that it is great when people just fear Hashem.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [7941, 8104],
+                  "start": 2598.26,
+                  "end": 2642.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Not everyone is meant to become a *Moshe*, and that's fine.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8105, 8118],
+                  "start": 2642.88,
+                  "end": 2648.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Zohar* and the *Maggid* seem to say that davening should be only about the *Shechinah*, not one's own needs. The Rebbe says it is fine to daven for physical needs: the *neshamah* wants them for the sake of the *Shechinah*, even if one doesn't see that.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8119, 8225],
+                  "start": 2649.92,
+                  "end": 2678.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So understanding and rationality should not make us look down on simple childish things, or lose appreciation for them: part of us is still that child, and we still need that. If a person is on that level, that is where he is.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8226, 8327],
+                  "start": 2678.94,
+                  "end": 2712.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Truth reaches every level. When Moshe saw the thirteen *middos* of mercy he prostrated himself, because every person has a *yechida* shining at his own level, perhaps even greater than Moshe's, though in a simple form.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8328, 8418],
+                  "start": 2712.44,
+                  "end": 2738.02
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "We want to understand the *penimiyus* and have the rational side, and we must also appreciate these *levushim*, which directly express *emunah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8419, 8469],
+                  "start": 2738.7,
+                  "end": 2754.82
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The Lange Briv",
+              "text": "In a long letter, I think the *Lange Briv*, the Frierdiker Rebbe tells a story first as it happened, then as simple people told it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8470, 8526],
+                  "start": 2755,
+                  "end": 2771.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Objectively it happened one way, but the simple people's telling, in which Eliyahu came and it was a whole story, expresses *emunah*, a higher *makif*, even though it is out of context and irrational. That is beautiful.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8527, 8646],
+                  "start": 2772.48,
+                  "end": 2809.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is good to daven like a little child, imagining G-d in simple terms, which is not accurate at a deeper level. Yet these *levushim* help us plug into *emunah*, which is higher than understanding.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8647, 8732],
+                  "start": 2809.96,
+                  "end": 2836.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Rebbe would sit in the Frierdiker Rebbe's chair and stand there as if speaking to him. Simple *levushim* can help us tap into the *makif*. In general, the power of physical *mitzvos* is like that: even a *levush* comes from a higher place. That is one idea of the *chashmal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8733, 8856],
+                  "start": 2836.62,
+                  "end": 2872.2
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "What is the *nafka mina* that the *yetzer tov* is part of the *nefesh habehamis*, and not the *nefesh elokis*?",
+              "askedBy": "student",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8857, 8934],
+                  "start": 2874.08,
+                  "end": 2898.68
+                }
+              ],
+              "text": "Natural mercy comes from the *nefesh habehamis*. That is not the same as the *chesed* of *Avraham*, which sees a person's inner G-dly potential."
+            },
+            {
+              "kind": "explanation",
+              "text": "Natural good is haphazard: one gives in because it feels bad not to, which may enable and hurt the person. It is a blind goodness.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [8935, 9017],
+                  "start": 2898.82,
+                  "end": 2929.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Tzedakah* reveals one's *yechida*, which is higher than *taam vedaas*, understanding. This was recently in *Tanya*, about the *maalah* of giving *tzedakah*. It is a qualitatively higher kind of good.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9018, 9113],
+                  "start": 2929.76,
+                  "end": 2962
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The goody-goody",
+              "text": "The good of the *nefesh habehamis* is reactionary and self-centered, like a goody-goody child who wants to please the teachers. The *nefesh elokis* is creative and proactive, like someone who really wants to learn *lishmah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9114, 9197],
+                  "start": 2963.42,
+                  "end": 2992.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Once refined, the *yetzer hara* becomes a *yetzer hara* of *kedusha*: we use the self-centered motivations for holiness, to make Shabbos and Yom Tov special.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9198, 9325],
+                  "start": 2992.79,
+                  "end": 3036.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "When we understand how these work, we can use them in the proper context.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9326, 9364],
+                  "start": 3036.5,
+                  "end": 3053.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A child's *mitzvos* can create a tremendous connection to Hashem, sometimes better than an adult's, because *sechel* can get in the way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9365, 9390],
+                  "start": 3054.38,
+                  "end": 3063.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Children with disabilities are legally exempt from *mitzvos*, but the Rebbe says they are often more spiritual and feel a strong connection to G-d, so they should have every chance to give *tzedakah* and daven. Not being held accountable doesn't make it worthless.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9391, 9517],
+                  "start": 3064.8,
+                  "end": 3104.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This shows how easy it is to misunderstand *halacha*, and how powerful the simple connection is. We all have that part of us, with its intrinsic connection, just as a person with disabilities does.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+                  "words": [9518, 9588],
+                  "start": 3105.1,
+                  "end": 3129.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A mashal's source is higher than what it explains",
+      "summary": "Analogies (meshalim) come from a depth higher than the idea they explain, and only a mashal fitted to the idea reaches its depth; words and logic alone do not.",
+      "passages": [
+        {
+          "lines": [
+            "3jiglq2t",
+            "w5ybmyo2",
+            "oqayfcp4"
+          ],
+          "phrases": [
+            {
+              "he": "ולהבין זה בתוספת ביאור,",
+              "en": "to understand this more",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [51, 54],
+                "start": 20.86,
+                "end": 22.04
+              }
+            },
+            {
+              "he": "הנה ידוע שזהו גם כן שרש ענין המשלים,",
+              "en": "it's known, that this is the source of the concept of *meshalim*, of metaphors",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [57, 77],
+                "start": 26.38,
+                "end": 37.56
+              }
+            },
+            {
+              "he": "כמו ג' מאות משלים דרבי מאיר",
+              "en": "for example, 300 *meshalim* of Rabbi Meir; it says Rabbi Meir would say 300 *meshalim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [79, 93],
+                "start": 38.98,
+                "end": 44.84
+              }
+            },
+            {
+              "he": "כו', ששרש המשל למעלה מן הנמשל,"
+            },
+            {
+              "he": "כמו משלי שלמה",
+              "en": "like similarly it says about that *Shlomo HaMelech*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [187, 194],
+                "start": 77.84,
+                "end": 81.16
+              }
+            },
+            {
+              "he": "שהן חכמות עמוקות ביותר",
+              "en": "for giving *meshalim*, which are the deepest wisdoms",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [211, 222],
+                "start": 85.42,
+                "end": 92.32
+              }
+            },
+            {
+              "he": "שאין להם בחינת כלים באותיות",
+              "en": "and the whole idea is that you're trying to convey something that's so deep that you can't just express it in regular words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [228, 250],
+                "start": 95.84,
+                "end": 103.3
+              }
+            },
+            {
+              "he": "כי אם בהתלבשותם בענינים זרים נבדלים הרבה מן עצם החכמה,",
+              "en": "that the only way to express it is by using symbols, expressing it in something that's very foreign to the original idea",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [273, 294],
+                "start": 113.16,
+                "end": 121.4
+              }
+            },
+            {
+              "he": "שם דוקא יושג עומק החכמה כמו שיוכלו להשיג עומק השכל",
+              "en": "that's the only way. Only through these *meshalim* will you get the depth of the idea",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [305, 320],
+                "start": 127.4,
+                "end": 131.82
+              }
+            },
+            {
+              "he": "רק על ידי המשל דוקא,"
+            },
+            {
+              "he": "שלא יושג גם ברבוי הסבר דברים כו'",
+              "en": "you can only understand the depth through the *meshalim*, even if you would explain, give lots and lots of explanations",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [725, 751],
+                "start": 268.62,
+                "end": 276.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The class is in the middle of the *chashmal* and the *makif* of *binah*, and now turns to a *mashal*, an analogy.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [0, 46],
+                  "start": 0.24,
+                  "end": 18.3
+                }
+              ],
+              "outOfPlace": "Class 045.2 opens with a recap of 045.1, before line 28 is read."
+            },
+            {
+              "kind": "explanation",
+              "text": "The source of *meshalim* is in the depth of the idea. Rabbi Meir gave three hundred *meshalim*, and the source of a *mashal* is higher than the *nimshal*, what it stands for. The *mishlei* of Shlomo are the deepest wisdoms. A *mashal* seems to explain something simply for a child or a simple person, but its source is higher.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [47, 222],
+                  "start": 19.1,
+                  "end": 92.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Some ideas have no *kelim* in letters. They can only be conveyed by clothing them in foreign matters far from the essence of the wisdom. Only through a *mashal* does the depth come through, the way one grasps the depth of an intellect.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [223, 325],
+                  "start": 92.78,
+                  "end": 135.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "To express the depth of an idea, logic and its terms are not enough: you need a *mashal*. The general rule from the first two chapters: to bring an idea down, you must first reach its depth; more depth is needed to bring it down further.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [326, 419],
+                  "start": 136.22,
+                  "end": 170.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "To convey the real depth to someone you need depth beyond ordinary explanations: you must see how the idea goes beyond its own limits and is universal, and then find it in something else. That is what the *ish tevunos* does: he brings out depth and makes it seem not deep.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [420, 525],
+                  "start": 170.14,
+                  "end": 202.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A *mashal* anchors the words and logic in an experience the listener already has, and that experience gives the words meaning. Without experiencing the essence of the idea, one cannot understand it. This is why *naaseh* comes before *nishma*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [526, 637],
+                  "start": 202.8,
+                  "end": 238.04
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "In *Chassidus* the *meshalim* must not be overlooked or underestimated. They are fundamental: to understand a *mashal* and experience it within yourself gives the ability to understand the depth of the idea.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [638, 722],
+                  "start": 239.96,
+                  "end": 263.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Lots of explanations are not a source of truth; words only describe. A blind person can know all the words for color and still not know what it is without the experience. Once you have the experience, you can describe it and discuss its relationships with words.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [723, 880],
+                  "start": 268.36,
+                  "end": 312.34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "as5nhrk6",
+            "aqqrfe4e"
+          ],
+          "phrases": [
+            {
+              "he": "והמשל שנעשה לפי אופן הנמשל דוקא,"
+            },
+            {
+              "he": "הרי בהכרח שישיג לעומק ומקור מוצא הנמשל,",
+              "en": "In order for a *mashal* to be proper and to be really in line with the *nimshal*, you have to really have the depth of the idea, you have to really know what you're talking about, have experienced it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [894, 932],
+                "start": 322.18,
+                "end": 332.76
+              }
+            },
+            {
+              "he": "ואם לא, לא יכוון המשל לנמשל כלל כידוע",
+              "en": "if a person doesn't have the depth, then the *mashal* will not be fitting to the *nimshal* at all, as is known",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1039, 1066],
+                "start": 363.76,
+                "end": 371.34
+              }
+            },
+            {
+              "he": "אם כן"
+            },
+            {
+              "he": "שרש המשל במקור שכל הנמשל",
+              "en": "And if that's the case, that means that the source of the *mashal* was actually in the *sechel* of the *nimshal*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1292, 1312],
+                "start": 448.48,
+                "end": 454.64
+              }
+            },
+            {
+              "he": "ולמעלה הימנו",
+              "en": "it's actually higher than the *sechel* of the *nimshal*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1314, 1322],
+                "start": 454.8,
+                "end": 456.44
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "A *mashal* must fit the *nimshal*, so the one making it must have the depth and have experienced the idea. Someone who has only heard the words and knows them, but doesn't get it, can't make a proper *mashal*: he has only what he was told and can't make anything new.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [881, 987],
+                  "start": 314.18,
+                  "end": 346.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same in *halacha*: someone who only knows the *Shulchan Aruch* can't *pasken* a new case without the depth of what it is trying to accomplish.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [988, 1066],
+                  "start": 348.68,
+                  "end": 371.34
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "You might think a *mashal* is only for a small child, so it is less deep than what it stands for, being simple and foreign. But making a proper *mashal* requires understanding the depth, and the real depth is found in the *mashal*. This is why the Torah starts with stories.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1067, 1176],
+                  "start": 372,
+                  "end": 406.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Stories are fundamental in *Chassidus* too. The Baal Shem Tov said values and the essence of ideas can be given over only through stories and experiences.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1177, 1246],
+                  "start": 407.04,
+                  "end": 429.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Likewise, the simple *minhagim* and physical *mitzvos* carry the real essence of understanding.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1247, 1281],
+                  "start": 430.24,
+                  "end": 442.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "If so, the source of the *mashal* is in the *sechel* of the *nimshal*, higher than it. Explaining an idea comes from a deeper understanding beyond what can be expressed: the experience itself.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1282, 1360],
+                  "start": 443.32,
+                  "end": 470.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is a theme from earlier chapters, the twenty-sixth and the first two: to bring something down, you must have it higher and deeper.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1361, 1413],
+                  "start": 471.38,
+                  "end": 485.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This connects to the thirteen *tikkunei dikna*: the *mazalos* are compared to the hairs of the beard, which are external yet come from a deeper source.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1414, 1478],
+                  "start": 485.89,
+                  "end": 504.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "mfi7mzty"
+          ],
+          "phrases": [
+            {
+              "he": "ולזה אמר דברי חכמים וחידותם,",
+              "en": "and therefore it says, the words of the wise and their riddles",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1481, 1495],
+                "start": 508.52,
+                "end": 513.32
+              }
+            },
+            {
+              "he": "שלפי ערך עומק ומקור החכמה,",
+              "en": "according to the depth of the person's wisdom, that's going to be expressed in their ability to make these riddles and these *meshalim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1522, 1546],
+                "start": 524.6,
+                "end": 535.16
+              }
+            },
+            {
+              "he": "כך ערך החידות ומשלים, כמו משלים דרבי מאיר ומשלי שלמה",
+              "en": "like the *meshalim* of Rabbi Meir, because he was so wise he was able to give these *meshalim*; and Shlomo HaMelech, because he was the wisest of all men, he was able to give these *meshalim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1551, 1594],
+                "start": 537.86,
+                "end": 550
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "'The words of the wise and their riddles': the level of their riddles and *meshalim* follows the depth and source of their wisdom. Rabbi Meir's *meshalim* and Shlomo's show it: because he was so wise, he could give such *meshalim*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1479, 1594],
+                  "start": 507.72,
+                  "end": 550
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7344aovd"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שכתוב במקום אחר בענין וידבר ג' אלפים משל,",
+              "en": "and as is explained elsewhere, in the matter of 'He spoke three thousand *meshalim*'; it says Shlomo HaMelech spoke 3,000 parables",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1599, 1618],
+                "start": 552.36,
+                "end": 561.3
+              }
+            },
+            {
+              "he": "דהיינו משל למשל,",
+              "en": "every time he was explaining an idea, it was a *mashal* for a *mashal*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1635, 1652],
+                "start": 566.1,
+                "end": 570.76
+              }
+            },
+            {
+              "he": "כמו שכתוב בזהר",
+              "en": "like it says in the *Zohar*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1718, 1723],
+                "start": 587.86,
+                "end": 588.72
+              }
+            },
+            {
+              "he": "שהנמצא במשל האחרון,"
+            },
+            {
+              "he": "יותר שם הוא העומק והמקור היותר ראשון של הנמשל כו'",
+              "en": "So it turns out that the lowest, final *mashal*, which is bringing it all the way down to the most physical thing, really contains the deepest depth of the original *nimshal*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1737, 1772],
+                "start": 595.22,
+                "end": 606.26
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Shlomo HaMelech spoke three thousand *meshalim*. Every time he explained an idea, it was a *mashal* for a *mashal*: one leading to the next, up through a thousand stages in each of the three worlds.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1595, 1714],
+                  "start": 550.8,
+                  "end": 585.34
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As the *Zohar* says, the last and lowest *mashal* holds the deepest depth and the most original source of the *nimshal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1715, 1772],
+                  "start": 586.34,
+                  "end": 606.26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Language and the letters: bringing an idea down",
+      "summary": "Putting an idea into language, into letters, is bringing it down. It looks lower but comes from a high place, and it is what gives an idea its tangible depth.",
+      "passages": [
+        {
+          "lines": [
+            "bgcu5qpu",
+            "76wtg7at"
+          ],
+          "phrases": [
+            {
+              "he": "וכל זה הוא גם כן בשרש בחינת האותיות,",
+              "en": "And this is a similar idea in general, to taking an intellectual idea and putting it into language, into *osios*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1789, 1808],
+                "start": 613.7,
+                "end": 620.82
+              }
+            },
+            {
+              "he": "שעל ידיהם דוקא יושג היטב אור השכל"
+            },
+            {
+              "he": "כו' (וכמו כן יובן בענין ההגשמה של אור השכל,",
+              "en": "And this is the same thing with anytime that you take an idea and you make it more tangible",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [1986, 2004],
+                "start": 683.72,
+                "end": 688.78
+              }
+            },
+            {
+              "he": "כל שבא בהשגה והסבר בהגשמה ביותר למטה מטה, שם דוקא בחינת העומק והמקור של גוף פנימית אור השכל כו')",
+              "en": "which, like we said, is the idea of the *orech* of the idea, bringing it down, that requires that you have the depth, the real depth of the idea, and it's found there",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2040, 2072],
+                "start": 704.56,
+                "end": 714.1
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same is true at the root of the letters: an intellectual idea is put into symbols, spoken or written. Why, when we could have just the ideas? Because symbolic language is a deeper understanding than animals have, and it lets us convey ideas and build on what we know.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1773, 1909],
+                  "start": 607.26,
+                  "end": 655.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Bringing something down into something more external may look lower, but it comes from a very high place. There is a disadvantage: you may not see where it comes from.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1910, 1977],
+                  "start": 655.58,
+                  "end": 678.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same with making an idea tangible: the more an abstract idea is brought down to something concrete, the more the depth and source of its inner light is found in it. That is the whole idea of language, and especially of *meshalim*, which are a foreign symbol.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [1978, 2109],
+                  "start": 679.05,
+                  "end": 724.96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7kukdr3e",
+            "2s3nqdtq"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו גם כן בחינת חיצוניות בינה,",
+              "en": "and this is the whole idea of the *chitzoniyus* of *binah*, is this type of relationship",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2116, 2130],
+                "start": 728.87,
+                "end": 732.72
+              }
+            },
+            {
+              "he": "שמזה נעשה בחינת לבוש החשמל דבינה"
+            },
+            {
+              "he": "שעל זה אמר ויעש כתנות עור",
+              "en": "about this it says, that G-d made for Adam and Chava these garments of leather",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2566, 2583],
+                "start": 871.96,
+                "end": 876.4
+              }
+            },
+            {
+              "he": "כו', שהוא בחינת שומר למוחין שבמדות,",
+              "en": "this is the thing that guards the *mochin* of the *middos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2725, 2733],
+                "start": 922.22,
+                "end": 925.12
+              }
+            },
+            {
+              "he": "שלא יבא לבחינת טעות",
+              "en": "so they won't come to make a mistake",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2775, 2782],
+                "start": 937.85,
+                "end": 939.34
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *chitzoniyus* of *binah* is this relationship: from it is made the *levush* of the *chashmal* of *binah*, which is taking an idea and codifying it, creating a system.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2110, 2170],
+                  "start": 725.12,
+                  "end": 752.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "For someone who can't yet see what it means to be like the *avos*, Avraham, Yitzchak and Yaakov, we write it down: do this, don't do that. That is the *levush chashmal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2171, 2241],
+                  "start": 752.96,
+                  "end": 772.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is for someone who doesn't have the maturity to decide right and wrong alone: if he follows these guidelines he will mostly get it right. A business with a system that runs without the owner is the same kind of thing.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2242, 2326],
+                  "start": 772.42,
+                  "end": 795.82
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The algorithm",
+              "text": "A process turned into an algorithm that a computer can follow is this idea: you take the depth and turn it into an external system that can protect things.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2327, 2390],
+                  "start": 796.3,
+                  "end": 815.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Heuristics, shorthand for decisions, are faster and useful, but sometimes a decision needs depth. Creating procedures is less mature and more external.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2391, 2457],
+                  "start": 815.98,
+                  "end": 843.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Rituals and customs: many people do things a certain way without knowing why. Yet creating them takes real depth to do right and be effective. It is very hard, never perfect, but very powerful.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2458, 2562],
+                  "start": 845.16,
+                  "end": 870.72
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The verse says G-d made garments of leather for Adam and Chava. They were not ready to judge right and wrong, and they lacked understanding, so G-d gave them a guard until they grew.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2563, 2633],
+                  "start": 871.58,
+                  "end": 892.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The garments of leather are the *yetzer tov* and *yetzer hara*, built into the *nefesh habehamis*: instincts that keep us alive until the *nefesh elokis* can guide us. Though it seems lower and external, it comes from a high place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2634, 2720],
+                  "start": 893.26,
+                  "end": 918.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It guards the *mochin* of the *middos*, which don't yet understand: they ask what to do, and the guard tells them what is right, so they won't make a mistake. A parent says: don't play with matches, don't talk to strangers. Those rules are not always true, but they keep the child safe until he can judge, and they are pretty good.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2721, 2880],
+                  "start": 920.4,
+                  "end": 963
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Levushim that protect: the placenta, the wings, the sukkah",
+      "summary": "Protective shells, the mother bird's wings, the letters of bshalom and the sechach of the sukkah all express the levush that guards something until it can mature. Torah is brought down so people can use it.",
+      "passages": [
+        {
+          "lines": [
+            "z7no42q4"
+          ],
+          "phrases": [
+            {
+              "he": "(שמזה נעשה השליא לולד כו')",
+              "en": "And this is also like the idea of the placenta that protects the fetus as it's developing in the womb, so there's this idea that you need to have this kind of external garment or sac that's protecting something until it's able to mature",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2886, 2930],
+                "start": 967.28,
+                "end": 981.4
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Like the placenta that protects the fetus while it develops, a garment or sac protects something until it can mature.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2881, 2930],
+                  "start": 964.58,
+                  "end": 981.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "3mbhwpkz"
+          ],
+          "phrases": [
+            {
+              "he": "וכמו שכתוב במקום אחר באריכות",
+              "en": "as explained elsewhere at length",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2936, 2940],
+                "start": 984.36,
+                "end": 985.6
+              }
+            },
+            {
+              "he": "בענין אימא פרישת גדפהא",
+              "en": "that says the mother spreads her wings, the mother bird covers the children",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2945, 2957],
+                "start": 987.66,
+                "end": 991.68
+              }
+            },
+            {
+              "he": "כו' ובענין בשלו״ם, אותיות מלבו״ש",
+              "en": "and it says that the letters of *bshalom*, with peace, are the same letters as *malbush*, which means a garment",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2971, 2991],
+                "start": 996.72,
+                "end": 1003.54
+              }
+            },
+            {
+              "he": "כו', ובענין סכך דסוכה",
+              "en": "and this is the idea of this also this the *sechach* of the *sukkah*, that there's this idea of something that's shading us and protecting us",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [2995, 3020],
+                "start": 1006.16,
+                "end": 1012.58
+              }
+            },
+            {
+              "he": "וכהאי גוונא ודי למבין",
+              "en": "in a certain way we're sitting in the *sechach*, which is the *psoles*, leftover stuff from the harvest, a waste product, but it represents the *makif* of *bina*, which is really higher",
+              "audio": {
+                "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                "words": [3033, 3069],
+                "start": 1017.26,
+                "end": 1027.88
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The mother spreads her wings over the chicks, which is also the *levush chashmal*. And the letters of *bshalom* are those of *malbush*, a garment.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2931, 2991],
+                  "start": 982.28,
+                  "end": 1003.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *sechach* of the *sukkah* also shades and protects us. In a certain way we sit in the *sechach*, which is the leftover waste from the harvest, yet it represents the *makif* of *binah*, which is really higher.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [2992, 3069],
+                  "start": 1004.9,
+                  "end": 1027.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Throughout the *seder hishtalshelus*, in Torah and *mitzvos* and in life, we bring things down into a lower symbolic form, codify them, make them into a procedure or a shorthand.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3070, 3137],
+                  "start": 1028.8,
+                  "end": 1053.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Rules of thumb that people use are very useful, and making them comes from a deep place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3138, 3177],
+                  "start": 1053.94,
+                  "end": 1065.64
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "*Torah* is not meant only in the philosophically pure form for an elite few; it is expressed to help people in a practical way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3178, 3237],
+                  "start": 1066.78,
+                  "end": 1093.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Rebbe's letter on stories for the five-, ten- and seventy-year-old parts of us, which the teacher gives again here, says the same.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3238, 3314],
+                  "start": 1093.54,
+                  "end": 1110.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *chochmah* of Torah is that stories, symbols and customs matter, even though they are external. Even if one doesn't understand them, he will mature and understand the reason.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3315, 3379],
+                  "start": 1110.58,
+                  "end": 1140.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Give a small child a reason and he rationalizes his way out of the *mitzva*. Sometimes you need the external way: do it because it is good, don't do it because it is bad. That is what gets you the depth.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3380, 3485],
+                  "start": 1140.94,
+                  "end": 1168.64
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The graphic interface",
+              "text": "A graphic interface, with windows, a mouse, icons and touchscreens, lets you use a computer without understanding its code. That is exactly this type of thing.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3486, 3540],
+                  "start": 1168.86,
+                  "end": 1189.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Making it user-friendly takes more depth. That is what *Matan Torah* was about: the *avos* kept *Torah* on a high level, and the great thing was bringing it down so a simple person could connect to it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3541, 3648],
+                  "start": 1189.72,
+                  "end": 1225.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Sometimes the way a truth is packaged matters more: *halacha* is *emes l'emitoh*. A thing can be literally true for someone who understands it, but if people will misunderstand it and be hurt, it is not *emes l'emitoh*. When it is packaged so people take it in and do right, that is *emes l'emitoh*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.2.mp3",
+                  "words": [3649, 3786],
+                  "start": 1226.08,
+                  "end": 1276.58
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "Why is the *chashmal* of *Nogah* a good garment, even though it looks low?",
+      "lines": [
+        "tstufy3c"
+      ]
+    },
+    {
+      "question": "What happens to the letters of an idea when the light is greater than the vessel that holds it?",
+      "lines": [
+        "2badlwmm",
+        "mbzmvsfi"
+      ]
+    },
+    {
+      "question": "What do the garments of leather stand for, and what do they protect until a person is mature?",
+      "lines": [
+        "57srphhf",
+        "2s3nqdtq"
+      ]
+    },
+    {
+      "question": "How does the outer side of *binah* produce the protective *levushim* of customs, stories and rules?",
+      "lines": [
+        "4uhkcglt"
+      ]
+    },
+    {
+      "question": "Why is the source of a *mashal* higher than what it explains?",
+      "lines": [
+        "3jiglq2t",
+        "aqqrfe4e"
+      ]
+    },
+    {
+      "question": "What does the lowest, most physical *mashal* of Shlomo's three thousand contain?",
+      "lines": [
+        "7344aovd"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "text": "Line 1 is marked at 0:00 by the aligner, but the teacher reads 'vehinei kasuv' (the 'and it says') at about 1:06. The phrases cite his English after the reading; the intro before it is an outOfPlace block.",
+      "lines": [
+        "e2dgno5c"
+      ]
+    },
+    {
+      "text": "The question on different Torah scrolls (45.1, about 4:37) is restated by the teacher ('If a Torah has to be exact...'), and the teacher answers with 'that's a great question'. Kept as the student's, since he repeats it (STYLE). The student's voice is not heard.",
+      "lines": [
+        "pnlkhjii"
+      ]
+    },
+    {
+      "text": "The Tree of Knowledge question (45.1, about 23:00) is kept as the student's: a listener's 'Sure.', then 'like you're saying'. The 'not reading the original Hebrew' question (about 25:00) is kept as the student's: 'yes, it's a good point'. Neither voice is heard.",
+      "lines": [
+        "pwxtwlbk",
+        "fmdy6jhm"
+      ]
+    },
+    {
+      "text": "The Tanya digression (45.1, about 30:50) is the teacher's own: he says he has started 'a personal project' to look up the sources Tanya quotes. The listener's 'Yeah?' comes just before it. Written as his.",
+      "lines": [
+        "3vn2cq75"
+      ]
+    },
+    {
+      "text": "The 'nafka mina' question (45.1, about 47:54: 'So, what's the nafka mina that the yetzer tov is the nefesh habehamis...') is repeated by the teacher, so by STYLE it is the student's; it is now a question block (5.0.17). The student's voice is not heard. The reviewer should confirm.",
+      "lines": [
+        "4uhkcglt"
+      ]
+    },
+    {
+      "text": "The Rebbe's letter on stories for the five-, ten- and seventy-year-old parts of ourselves is told in 45.1 (the interview, about 41:00, block 5.0.3) and again in 45.2 (about 18:10, block 8.1.5). The second adds only the word 'letter' and the link to the chochma of Torah (8.1.6), so 8.1.5 is cut to a clause.",
+      "lines": [
+        "4uhkcglt",
+        "3mbhwpkz"
+      ]
+    },
+    {
+      "text": "The computer interface mashal is told in 45.1 (4.1.6, 'The interface') and again in 45.2 (8.1.8). 8.1.8 is cut to one line; 8.1.9 keeps the point about Matan Torah.",
+      "lines": [
+        "4ilfey5y",
+        "3mbhwpkz"
+      ]
+    },
+    {
+      "text": "Hedges kept: 'I think' on the simple answer about Torah scrolls, on the Lange Briv, on the Hillel leaders in the interview, and 'he would agree, I think' about science (2.1.12). The referent of 'he would agree' is not clear in the transcript (the Rebbe or the student); the reviewer should check.",
+      "lines": [
+        "pnlkhjii",
+        "4uhkcglt",
+        "pwxtwlbk"
+      ]
+    },
+    {
+      "text": "Flags: the found-item halacha (45.1, about 15:00) is health-or-legal with judgment; the pop-culture remark (about 12:00) and the fire-and-brimstone preachers (about 20:40) are other-groups; the intimacy example (about 24:30) is other, with judgment. Not flagged: 'even in the realm of science, a lot of people ... jumping to these conclusions' (about 23:45, block 2.1.12), the same kind of remark as the pop-culture one; the reviewer should decide both together. 2.0.11 states the same legal point as the flagged 2.0.10 (not required to miss your train) and is unflagged.",
+      "lines": [
+        "pwxtwlbk",
+        "fmdy6jhm"
+      ]
+    },
+    {
+      "text": "The five ranges the writer queried (2989-3014, 3678-3697, 4057-4116, 4783-4793, 5059-5066) were checked with --words: the indexes are exact, and each ends on a sentence with a listener's one-word 'Okay.' or 'Yeah.' folded in. The count of whitespace tokens differs from the index; the cited ranges are right.",
+      "lines": [
+        "pwxtwlbk",
+        "fmdy6jhm"
+      ]
+    },
+    {
+      "text": "Terms missing from translit.json and defined in this file: chashmal, levush, tikkun, chitzoniyus. Spellings used: bina, middos, makif, nimshal, mashal, Tohu, shevira, kelim (all in the table).",
+      "lines": [
+        "tstufy3c",
+        "4uhkcglt"
+      ]
+    },
+    {
+      "text": "2.0.8 names Rabbi Walters as the one the simple man came to: a recollection, so naming him is allowed (NOTES: 'Rabbi Walters', only where STYLE allows it).",
+      "lines": [
+        "6ocr6taz"
+      ]
+    },
+    {
+      "text": "Line 27's last phrase keeps 'vedai lamevin' inside its English stretch, since the teacher says it in the same breath as the English; the Hebrew tail has no English of its own.",
+      "lines": [
+        "4uhkcglt"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+      "words": [731, 735],
+      "reason": "logistics",
+      "note": "'Okay, let's get into it.' before the question on Torah scrolls."
+    },
+    {
+      "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+      "words": [6899, 6915],
+      "reason": "logistics",
+      "note": "'And this is a whole thing. Okay, let's finish this thing and then we'll talk about it.'"
+    },
+    {
+      "lecture": "Walters 5784 Edited/Ch 45/045 Shaar HaYichud ch 45.1.mp3",
+      "words": [6916, 6929],
+      "reason": "reading",
+      "note": "Rereads the Hebrew of line 25 (from 'mi-otiyos d'kelim d'Tohu') with no comment."
+    }
+  ]
+}
