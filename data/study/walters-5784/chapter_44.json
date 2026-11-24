@@ -1,0 +1,2118 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-5784",
+  "chapter": "chapter_44",
+  "title": "Word choice and the codified form: how an idea becomes speech, and speech becomes law",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 6",
+    "date": "2026-11-24"
+  },
+  "lectures": [
+    {
+      "id": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+      "transcriptionId": "a8319b2a-849c-4c0d-be08-64fa42ff26dc"
+    }
+  ],
+  "overview": "Chapter 44 asks how a thought becomes words, and why the choice of words is not a one-to-one link to the idea. The class begins with what he calls word choice: the division of the letters of thought, rooted in the five gevuros, which comes from a level above understanding. Every level of thought has this creative element, a choice that a chain of logic cannot fully explain. The closed and open maamar are hidden and revealed speech, and the closed and open mem are the subconscious choice of symbols and the speech that comes from it. The name Elokim carries this choice, the tzimtzum of the infinite into one form. Speech unlocks powers that thought alone does not, as a child who learns to speak shows. The middle of the chapter is about the square makif of Bina, which gives each midah its own wall, and about the mother bird hovering over her chicks until they can act from the spirit of the law. Last, an idea hardens like ice into the raki'a, a codified system that makes Torah accessible but can be mistaken for its essence, and the class applies this to minhag and to experience.",
+  "terms": [
+    {
+      "term": "tzimtzum",
+      "he": "צמצום",
+      "gloss": "contraction: the limiting of the infinite into one finite choice, through which a vessel is made",
+      "line": "e7yi3clb"
+    },
+    {
+      "term": "middas hadin",
+      "he": "מידת הדין",
+      "gloss": "the attribute of judgment: the limiting and choosing that creates a kli",
+      "line": "e7yi3clb"
+    },
+    {
+      "term": "Elokim",
+      "he": "אלקים",
+      "gloss": "the Name for the tzimtzum and the choice; its five letters can be arranged in 120 combinations",
+      "line": "aqasaxts"
+    },
+    {
+      "term": "mi eleh",
+      "he": "מי אלה",
+      "gloss": "'who are these': the spelling of Elokim that stands for the division that creates the middos",
+      "line": "nv6mul2j"
+    },
+    {
+      "term": "makif",
+      "he": "מקיף",
+      "gloss": "a surrounding light, which does not enter the vessel",
+      "line": "kcc5q2qs"
+    },
+    {
+      "term": "mem",
+      "he": "מ״ם",
+      "gloss": "the letter mem in two forms: the closed mem (mem sesuma) is subconscious thought choosing symbols; the open mem (mem pesucha) is the revealed speech they produce",
+      "line": "5ndy2eis"
+    },
+    {
+      "term": "mitzaf",
+      "he": "מצרף",
+      "gloss": "the power that combines the letters, and so chooses the words",
+      "line": "3t255gcs"
+    },
+    {
+      "term": "raki'a",
+      "he": "רקיע",
+      "gloss": "the firmament: the understanding of bina set into a form, like ice",
+      "line": "on7utdiz"
+    },
+    {
+      "term": "hasaga",
+      "he": "השגה",
+      "gloss": "comprehension: an idea grasped and put into letters",
+      "line": "hhquue6a"
+    },
+    {
+      "term": "levush",
+      "he": "לבוש",
+      "gloss": "garment: an external covering that expresses the inner thing",
+      "line": "jghlapk5"
+    },
+    {
+      "term": "chashmal",
+      "he": "חשמל",
+      "gloss": "the codified outer system, a levush that guards the immature until they can act from the spirit of the law",
+      "line": "jghlapk5"
+    },
+    {
+      "term": "middos",
+      "he": "מדות",
+      "gloss": "the emotional attributes, which receive from the inner light of bina",
+      "line": "ivradwyt"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Word choice: the division of letters starts above understanding",
+      "summary": "The chapter's subject is how an idea is put into words. The choice of words is a creative act that is not a one-to-one link to the idea, and it comes from a level above understanding. Thought also has a closed and an open form of speech.",
+      "passages": [
+        {
+          "lines": [
+            "oepijmbf",
+            "zklug3xu"
+          ],
+          "phrases": [
+            {
+              "he": "(מד) ומעתה יובן גם כן שרש ענין ההתחלקות דאותיות המחשבה מבחינת ה׳ גבורות מנצפ\"ך כו',",
+              "en": "Now we are going to also be able to understand the source or the idea of the division, here literally it means the division of the letters, but really in English we'd call this word choice.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [20, 55],
+                "start": 11.74,
+                "end": 23.2
+              }
+            },
+            {
+              "he": "ולמעלה מעלה גם במחשבה העצמית ומחשבה הקדומה ומחשבה סתימאה דאדם קדמון ואריך אנפין כו',",
+              "en": "So this applies on every single level of the *machshava*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [236, 245],
+                "start": 87.14,
+                "end": 90.3
+              }
+            },
+            {
+              "he": "עד מחשבה דזעיר אנפין, על דרך הנזכר לעיל בפרטיות הענין באדם התחתון,",
+              "en": "Whether you want to go to the most essential *machshava* in the *atzmiyus*, or *machshava kadmonah*, or the subconscious *machshava* of *Adam Kadmon* or *Arich Anpin*, or if you want to go down to the *machshava* of *Zeir Anpin*, at any level there's always this relationship.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [246, 294],
+                "start": 90.4,
+                "end": 108.68
+              }
+            },
+            {
+              "he": "ששרש התחלקות הצירופים באים מלמעלה ממקור ההשגה דבינה עצמה כו'",
+              "en": "Like we said before, when we were talking about the metaphor of a person, that the source of the person's choice of words is higher than the understanding itself.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [404, 446],
+                "start": 150.48,
+                "end": 169.5
+              }
+            },
+            {
+              "he": "וזהו ענין מאמר סתום ומאמר פתוח",
+              "en": "And this is the idea that it talks about in the *Zohar*, in different places, that what's called the closed *maamar* or the hidden words, the hidden idea, and the open idea.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [513, 544],
+                "start": 191.66,
+                "end": 201.87
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 1 gives the root of the division of the letters of thought: the five *gevuros* (*mem-nun-tzadi-pei-chaf*). In plain English, he says, this is what we would call word choice. Every thought has its content and the words we pick to express it. Two people can say the same thing in different languages, or in their own words, so there is no one-to-one link between what a person wants to express and how a person expresses it. This parallels how, through *Adam Kadmon*, the essential *ratzon* becomes attached to particular desires: that is only a revealing of what is hidden, not something essential, and it is called a creation.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6, 245],
+                  "start": 4.32,
+                  "end": 90.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same pattern holds at every level of thought, from the most essential down to *Zeir Anpin*. At each level, how an idea is put into words has a creative element, a choice that does not follow directly from the idea. He calls that a *levush*, a garment. The system does run as a chain of logical connections, but at every stage some details are simply G-d's choice and could have been different. The source of the choice of words is higher than understanding itself. The part of the mind that thinks about the content is directly connected to it; a deeper part chooses the words, and a person is not consciously aware of how they get chosen.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [246, 506],
+                  "start": 90.4,
+                  "end": 188
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "In simple terms, I think, a person says a plain idea, and there is a subtext between the lines: the person's style. Things get expressed that are not what is meant to be expressed. That is a subconscious *maamar*. You cannot help but leave your fingerprint on what you do, and that is true of everything we do.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [507, 671],
+                  "start": 189.08,
+                  "end": 241.24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Elokim: tzimtzum, choice, and the 120 combinations",
+      "summary": "The Name Elokim stands for the limiting of the infinite into one specific form, the tzimtzum that makes a vessel. Even in the subconscious thought of the essence, the letters are divided by choice, and the same divisions appear in the Name's spellings and in the upper and lower Elokim.",
+      "passages": [
+        {
+          "lines": [
+            "aqasaxts",
+            "e7yi3clb"
+          ],
+          "phrases": [
+            {
+              "he": "כמו ויאמר אלהי״ם,",
+              "en": "like it says, now going back to the idea of G-d's speech, it says, 'And G-d spoke,' or *Elokim*, and *Elokim* represents the 120 combinations.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [675, 702],
+                "start": 245.16,
+                "end": 258.76
+              }
+            },
+            {
+              "he": "אלהי״ם ק\"ך צירופים דמחשבה סתימאה שבעצמות ממש,",
+              "en": "If you take the five letters of *Elokim*, you could combine them into 120 different orders.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [703, 718],
+                "start": 258.78,
+                "end": 263.92
+              }
+            },
+            {
+              "he": "נקרא מאמר סתום בעצמות סתימא דכל סתימין כו'",
+              "en": "So these are the 120 combinations of the subconscious thought within the essence. This is called the closed *maamar*, the hidden *maamar* within the essence.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [723, 755],
+                "start": 268.01,
+                "end": 281.4
+              }
+            },
+            {
+              "he": "עד רום המעלות, כמו אלהי״ם הבין דרכה כו'",
+              "en": "all the way to the highest levels, like it says that G-d knows her way; this is talking about wisdom, but the idea is that there's this *gevurah* dictating also part of what's going on with the *sechel*, or with *chachma*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [1173, 1225],
+                "start": 410.8,
+                "end": 430.1
+              }
+            },
+            {
+              "he": "ובחינת אלהי״ם הזה הוא בחינת הצמצום וההסתלקות, וכמאר רבותינו זכרונם לברכה בתחלה עלה במחשבה לברוא במידת הדין שהוא שם אלהי״ם כו'",
+              "en": "Elokim represents, as it usually does, the idea of a *tzimtzum* and removal, as our Sages say: when G-d wanted to create the world, it first arose in His thought to create with *middas hadin*, which is the name *Elokim*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [1229, 1293],
+                "start": 432.2,
+                "end": 455.06
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Elokim* stands for the 120 combinations of its five letters: the subconscious thought within the essence itself, which he calls the closed *maamar*, hidden of all the hidden. This is the idea of the *gevuros*, and it is a choice. Even at the earliest stage of the *seder hishtalshelus*, when G-d decides to create a world with *sefiros* and a man, there are details, such as what the *sefiros* will be and what man will be, that logic does not explain. They are a direct choice.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [672, 877],
+                  "start": 243.08,
+                  "end": 317.82
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "A *mashal* has a part that matches what it stands for, the *nimshal*, and other details that are needed to tell it, which are not a direct comparison. Rambam says this in the *Moreh Nevuchim*. The same holds for a *kli* and its *levush*. A cup needs certain essential features, a material and a shape, but its exact color, texture and weight are not essential to it being a cup. Those circumstantial details are the subject here, and they come from the separate *tzimtzum* of these combinations of the names of *Elokim*. Logic takes you only so far: some things have reasons, and others simply come along with the thing as a choice.",
+              "title": "The cup and its circumstances",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [878, 1225],
+                  "start": 318.34,
+                  "end": 430.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 4 gives *Elokim* as *tzimtzum* and removal: our Sages say G-d first thought to create with *middas hadin*. G-d could have expressed His will to create in infinite ways. By removing the other possibilities He chose ten *sefiros*, not eleven or twelve or five, and the whole of that choice is the *tzimtzum*. The same is true of the soul and the body: the soul has a logical link to its mission, but the particular body is a choice. All the circumstances of the world and of history, and the *mitzvos*, have a general *kavanah*, and their details are G-d's choice.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [1226, 1559],
+                  "start": 430.84,
+                  "end": 534.78
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "text": "*Middas hadin* here only means the *tzimtzum*: limiting infinite possibilities to one finite, specific thing, which a *kli* requires. The *ratzon* that is expressed is really *chesed*; G-d wants to give something good. But to make a vessel for it, He has to choose, as when you decide what to do today: you exclude every other possibility and pick one. Creation is a process of limitation that begins with *din*. G-d puts aside every other possible universe and chooses this one, for the sake of *chesed*. Then, to express the idea, it has to be limited into words.",
+              "question": "Why would G-d want to create the world with *middas hadin* if He is the idea of *chesed*?",
+              "askedBy": "student",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [1560, 1887],
+                  "start": 535.38,
+                  "end": 644.12
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "A book he read recently on how the brain works described how babies are built for language. A baby looks where the parent looks, then looks back to check that you are both looking at the same thing, and only then can the parent say what it is called. That works only when you know you share attention. Learning language is the same process: focusing on one thing and creating a symbol for it.",
+              "title": "A baby learns that a word names a thing",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [1888, 2075],
+                  "start": 645.78,
+                  "end": 710.74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "i235lz43",
+            "zpzoxq24"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו בחינת התחלקות צירופי אותיות שבמחשבה סתימאה גם כן",
+              "en": "And this idea of this *midas hadin* is the idea of creating these differentiations of these letters, or these symbols, or these forms, even in this original thought in the *Atzmus*. Even before the *tzimtzum*, there has to be, like we talked about, the *gilaf gilafo*, engraving those letters.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2083, 2131],
+                "start": 714.62,
+                "end": 732.44
+              }
+            },
+            {
+              "he": "(כמו לפי תרגום אונקלוס בראשית בקדמין, שהוא הרצון הקדום היינו הרצון שבמחשבה הקדומה כו'",
+              "en": "So Onkelos translates *bereishis* as *bekadmin*, which represents *ratzon*, *keser*, the earlier will; this is the *ratzon* as it is expressed in the thought. So we call it the earlier *ratzon*, and also the earlier thought, because that *ratzon* gets expressed in letters.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2160, 2213],
+                "start": 743.56,
+                "end": 761.78
+              }
+            },
+            {
+              "he": "נקרא בחינת אלהי״ם בבחינת הצמצום וההתחלקות",
+              "en": "And therefore, *Elokim*, that's why it says *Bereishis bara Elokim*, right? So there right away had to be this *tzimtzum*, and the idea of focusing or choosing one thing, and having that thing have the divisions necessary to make it something and not something else.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2230, 2291],
+                "start": 767.97,
+                "end": 789.22
+              }
+            },
+            {
+              "he": "לפי מאמר רבותינו זכרונם לברכה דבראשית נמי מאמר הוא, שהוא בחינת מאמר סתום במחשבה הסתומה,",
+              "en": "like our sages say that *bereishis* is also one of the ten utterances that create the world, that's the closed *maamar* in the closed thought, but it doesn't say *vayomar Elokim*. With all the other nine it says, 'And G-d said.'",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2299, 2337],
+                "start": 793,
+                "end": 805.92
+              }
+            },
+            {
+              "he": "עד גם בבחינת מחשבה הפשוטה והעצמית כנזכר לעיל",
+              "en": "And this is true even in the simple *machshava*, the essential *machshava* that's before the *tzimtzum*, there is also, so to speak, these two stages.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2489, 2513],
+                "start": 863.28,
+                "end": 870.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 5 says the same division of letters is in the subconscious thought too: the *midas hadin* creates these differences even in the original thought of the *Atzmus*. Before the *tzimtzum* the letters are engraved, and the question is where they came from. This is a creative process, mostly *tzimtzum*. Line 6: Onkelos renders *bereishis* as *bekadmin*, the earlier will, the *ratzon* as it is expressed in thought. That is why the verse says *Bereishis bara Elokim*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [2076, 2291],
+                  "start": 710.96,
+                  "end": 789.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Our Sages say *bereishis* is one of the ten utterances that create the world: the subconscious utterance within the subconscious thought, which is why the verse does not say 'And G-d said' as it does for the other nine. Before you say something you choose the words in a pre-verbal stage, since you cannot use words you do not yet have. That is the closed *maamar*. Even in the simple, essential thought there are two stages: the engraving of the letters, and before that, the choice to create them.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [2292, 2567],
+                  "start": 789.88,
+                  "end": 885.08
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "nv6mul2j",
+            "6ldyzzf2",
+            "om3zv5an",
+            "5ndy2eis"
+          ],
+          "phrases": [
+            {
+              "he": "וכידוע דאלהי״ם אותיות מי אלה,",
+              "en": "as it's known, that *Elokim*, the letters *mi eleh*, that the name *Elokim* can also spell *mi eleh*, who are these?",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2569, 2588],
+                "start": 886.54,
+                "end": 893.84
+              }
+            },
+            {
+              "he": "שהוא בחינת התחלקות מי ברא אלה כו'",
+              "en": "And this is the idea of creating the divisions, which is the idea of the *middos*, like it says, lift your eyes up and see who created all of these.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2601, 2638],
+                "start": 899.4,
+                "end": 910.66
+              }
+            },
+            {
+              "he": "ואלהי״ם עלאה, בינה ומחשבה סתימאה דאריך אנפין ואדם קדמון כו', ואלהי״ם תתאה בחינת מלכות דתבונה ולאה וכו'",
+              "en": "the upper *Elokim* is *bina*, the subconscious thought of *Arich Anpin*, and *Adam Kadmon*, and there's also the lower *Elokim*, in the level of *Malchus d'Tevuna* and *Leah*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2698, 2722],
+                "start": 936.58,
+                "end": 947.48
+              }
+            },
+            {
+              "he": "וכמו שכתוב בזוהר דל\"ב ויאמר אלהי״ם הן ל\"ב שבילין דמתפתחין בבינה",
+              "en": "And there in the story of creation of the world, it says *Elokim* 32 times, and those 32 usages of the name *Elokim* represent the 32 pathways of *bina*, similar to the thirty-two paths of *chachma*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2884, 2935],
+                "start": 1004.6,
+                "end": 1024.06
+              }
+            },
+            {
+              "he": "שכולן בחינת מאמר סתום דדיבור שבמחשבה,",
+              "en": "And these are all the subconscious aspect of thought, the *dibbur* that is within thought, which is creating the speech within your thought, your ability to have symbols in yourself, whether verbal symbols of language or any sort of image; that's happening with this *bina*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [2940, 2998],
+                "start": 1027.02,
+                "end": 1054.08
+              }
+            },
+            {
+              "he": "שמזה נעשה מחשבה שבדיבור דמלכות שנקרא מאמר פתוח, כמו שיתבאר בענין בחינת מ\"ם סתומה ומ\"ם פתוחה כו')",
+              "en": "and that eventually creates the thought that powers your speech, but first you have to learn the language and choose those symbols within yourself, and then you can use them to speak, to *Malchus*. That actual speech is called the revealed *maamar*, what you're actually expressing, like we'll explain about the closed and open *mem*; this is what is represented by the two forms of the letter *mem*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [3003, 3086],
+                "start": 1056.52,
+                "end": 1080.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Elokim* can also be spelled *mi eleh*, 'who are these?' That spelling is the division that creates these, the idea of the *middos*, as in 'lift your eyes and see who created these.' *Mi* is *bina* creating *eleh*, which has the value of thirty-six, six times six *middos*: the particular dimensions of whatever you make. So the choice comes through the subconscious inner thought of *bina*, called *mi*. The upper *Elokim* is *bina*, the subconscious thought of *Arich Anpin* and *Adam Kadmon*; the lower is at the level of *Malchus d'Tevuna* and *Leah*. This happens within our own desires: we know what we want, then link the feeling to a self-image or worldview, which is an inner language. Speaking to others is the lower *Elokim*, where we choose our words.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [2568, 2866],
+                  "start": 885.8,
+                  "end": 994.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 9: *Vayomar Elokim* appears 32 times in the account of creation, and those 32 uses stand for the 32 pathways that open within *bina*, like the thirty-two paths of *chachma*. Line 10: all of these are the subconscious *maamar*, the speech that lies within thought. From that comes the thought that powers speech, and speech itself, in *Malchus*, is the open *maamar*. This is the idea of the closed and open *mem*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [2867, 3058],
+                  "start": 994.62,
+                  "end": 1072.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The closed *mem* is the subconscious process that links a symbol with a thought; the open *mem* is what is expressed from it. A symbol can reveal something hidden, like the color of an apple showing that it is ripe.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [3059, 3188],
+                  "start": 1072.88,
+                  "end": 1112.58
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "Symbols work this way. Certain actions make us call a person kind, and a smile makes us call one friendly, though we do not know what he feels. Language is the clearest case. Someone recently described reading as staring at ink blotches and hallucinating sounds and pictures. Someone else's words can set off an inner simulation in our minds.",
+              "title": "Symbols that stand for something",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [3189, 3328],
+                  "start": 1112.82,
+                  "end": 1166.52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speech is a higher power than thought",
+      "summary": "Choosing words narrows an idea into specific symbols, which looks like a loss, yet the power to do it comes from above understanding. Speech unlocks abilities that thought alone does not, as a child who learns to speak shows, and the same power makes a person fluent in a language.",
+      "passages": [
+        {
+          "lines": [
+            "zvjl3ruf",
+            "vap7zjbn",
+            "jpibxaa3"
+          ],
+          "phrases": [
+            {
+              "he": "ואמנם הנה שרש כח ההתחלקות הזאת, אף על פי שהוא בא בבחינת הצמצום, הנה הוא מלמעלה מכח ומקור עצם ההשגה כו'",
+              "en": "So even though the creation of these, choosing your symbols, choosing your words when you want to speak, is a process of limiting and focusing... nevertheless, it actually comes from a higher place than understanding itself, than the content itself.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [3350, 3459],
+                "start": 1175.9,
+                "end": 1214.94
+              }
+            },
+            {
+              "he": "וכמו שכתוב בזוהר על פסוק וקול התור נשמע בארצינו כו',",
+              "en": "like it says in the *Zohar*, on the verse, the voice of the dove is heard in our land, which we had previously.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [3836, 3860],
+                "start": 1324.42,
+                "end": 1332.46
+              }
+            },
+            {
+              "he": "שהוא בחינת קול דבינה שנשמע בבחינת התחלקות צירופים על ידי בחינת ה׳ גבורות מנצפ\"ך כו',",
+              "en": "And this is the idea that the voice of *bina*, that inner idea that's trying to be expressed, is felt through the division of the letters, which is through the idea of this.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [3875, 3907],
+                "start": 1339.56,
+                "end": 1349.52
+              }
+            },
+            {
+              "he": "שהוא בבוא האור בבחינת הדבור, עלמא דאתגליא שנקרא ארצנו כו'",
+              "en": "And this is when the light is being expressed in speech, which is called the revealed world.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4251, 4268],
+                "start": 1460.5,
+                "end": 1467.36
+              }
+            },
+            {
+              "he": "וכנזכר לעיל באריכות ממשל התנוק שאין לו מחשבה בהתחלקות אותיות כי אם כשידבר כו'",
+              "en": "like we explained previously at length, the analogy of a child who has no thought in the division of letters except when speaking. We see that speech requires a deeper power, because a little child, when first born, can think, and has basically the level of understanding of an animal.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4303, 4358],
+                "start": 1480.9,
+                "end": 1497.94
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 11: choosing symbols and words is a process of limiting and focusing, and it looks like making the idea less. Yet the power to do it comes from a higher place than understanding and than the content itself. That is one reason speech is unique to humans and higher than thought alone.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [3329, 3471],
+                  "start": 1167.14,
+                  "end": 1218.7
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "Animals think too. A rat at a fork in a maze pauses, looks right and left, runs a simulation of what will happen each way, and then decides; scans of its brain show this. What humans add is the ability to attach labels to ideas, which gives conscious control over what we think. That is metacognition, thinking about our own thinking and mental state. It also lets us communicate and build on what others have worked out, so we do not reinvent the wheel. Computers have a central problem here: at a choice with no logical reason, they cannot decide. So you need a higher ability that simply chooses, even when the intellect does not dictate one way or the other.",
+              "title": "A rat at a fork in a maze",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [3472, 3824],
+                  "start": 1218.76,
+                  "end": 1319.84
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Zohar's verse, 'the voice of the dove is heard in our land,' is the voice of *bina*, heard through the division of letters by the five *gevuros*. For the inner idea to be expressed, it needs the power of *tzimtzum* to bring it down. He gives an example from the world: some things look predictable, and some aspect of them always seems random. You can map the chemistry of molecules, but how those reactions become the processes of a cell is no longer deterministic, and cells working together into an organ show the same randomness. Science, when it tries to predict everything, reaches a wall: it seems rational, and then you ask why it must be this way. The speed of light has a value, and gravity has one, and we don't know why. There is always a level where logic stops and what is left is G-d's choice.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [3825, 4241],
+                  "start": 1320.54,
+                  "end": 1454.1
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "The light is expressed in speech, the revealed world, and for the voice of *bina* to be revealed in *Malchus* the words have to be chosen. He had explained at length the child who has no thought in the division of letters until it speaks. A newborn thinks at about the level of an animal. Once it learns to speak it can think on a far higher level: speech comes from a higher place and unlocks abilities that understanding alone does not.",
+              "title": "A child who learns to speak",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [4242, 4459],
+                  "start": 1454.74,
+                  "end": 1530.64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "3t255gcs",
+            "7bkf5vgb"
+          ],
+          "phrases": [
+            {
+              "he": "דבזמן שיש מצרף לדבור מחכמה מבחינת פנימיות חכמה אז יש מצרף לאותיות דמחשבה מפנימיות ומקור דבינה כו'",
+              "en": "like we spoke about previously, that there's this power, this *mitzaf*, that gives us the ability to speak. Speaking requires that when we want to say something we move our lips and throat in a certain way, and it's subconscious. That's this *mitzaf* of *chachma*. When that happens, it also unlocks this *mitzaf* of *bina*, that we unconsciously choose our words as we're speaking, and it just flows.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4477, 4575],
+                "start": 1539.64,
+                "end": 1577.1
+              }
+            },
+            {
+              "he": "ודוקא כח העושה הצירוף הוא מבחינת מקור דבינה,",
+              "en": "And this power that's making these connections, that's coming from the source of *bina*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4680, 4694],
+                "start": 1609.88,
+                "end": 1614.92
+              }
+            },
+            {
+              "he": "אבל גוף הצירופים בפרטי אופניהם, הרי הוא דווקא מכוון על פי הכוונה שבהשגה בפרט, על פי צמצום דמחשבת שכל העיונית שמסדר אופן הצירופים כו'",
+              "en": "So the content of what you're saying is directly coming from the idea, which is the *machshevas sechel* or the *iyun* of what you're trying to express. So there's a certain idea that you want to say, or you learn the language, that's also part of it.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4721, 4769],
+                "start": 1631.58,
+                "end": 1649.14
+              }
+            },
+            {
+              "he": "כנזכר לעיל",
+              "en": "So there was a process of logic and learning that's informing the content of the words, but then the words can just flow automatically, and the exact word choice, like the difference between how *Rashi* or *Tosafos* would express the same thing, comes from this hidden, deeper source of *bina*, which is subconscious, which is called the *makif* of *bina*, like we're going to see.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4770, 4845],
+                "start": 1649.52,
+                "end": 1672.3
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "The power of speech comes from *chachma*: when the speech has the *mitzaf* of *chachma*, the thought has the *mitzaf* of the inner *bina*, and the letters of thought are combined. This is like learning a new language or skill. At first you do it consciously, thinking through each step, translating every word. Then there is a point where you become fluent and can just say what you want. That unlocks the deeper power of the *mitzaf* of *chachma* and *bina*.",
+              "title": "Fluency in a new language",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [4460, 4671],
+                  "start": 1530.7,
+                  "end": 1603.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 15: the power that makes the connections comes from the source of *bina*. The specific combinations are directed by the understanding behind them, the *machshevas sechel* that orders them. The content comes straight from the idea you are trying to express. But the exact word choice, why Rashi and Tosafos say the same thing differently, comes from the hidden, subconscious source of *bina*: the *makif* of *bina*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [4672, 4845],
+                  "start": 1604.96,
+                  "end": 1672.3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The closed and open mem: the surrounding light of Bina",
+      "summary": "Thought has a closed form, the subconscious process that chooses words, and an open form, the revealed speech. Both sit inside Bina. The surrounding light of Bina, the square makif, gives each middah its own wall, and the class's main takeaway is that logic is bounded by assumptions that come from outside it.",
+      "passages": [
+        {
+          "lines": [
+            "cisksvim",
+            "oabiip7j"
+          ],
+          "phrases": [
+            {
+              "he": "ובאמת זהו בחינת מ\"ם פתוחה.",
+              "en": "And the truth is that when a person is thinking in words, that's still even the open *mem*, that's still a revealed, the open thought.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4851, 4877],
+                "start": 1676.14,
+                "end": 1687.18
+              }
+            },
+            {
+              "he": "כי הנה בבינה עצמה",
+              "en": "Within *bina* itself, so, in other words, until now we were saying the open *mem* is when you're speaking, and the closed *mem* is the process going on in your thought.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4882, 4912],
+                "start": 1689.94,
+                "end": 1697.84
+              }
+            },
+            {
+              "he": "יש מ\"ם סתומה ומ\"ם פתוחה, שנקרא מאמר סתום ומאמר פתוח",
+              "en": "*Bina* itself has the closed *mem* and the open *mem*, the subconscious thought and the revealed, conscious thought, and this is what's called the hidden or the subconscious *maamar*, and the open, revealed *maamar*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [4961, 5007],
+                "start": 1712.32,
+                "end": 1731.54
+              }
+            },
+            {
+              "he": "כי כל מאמר הוא במחשבה דבינה עצמה",
+              "en": "In general, the word *maamar*, as opposed to *dibbur*, represents a thought that's going on within the *machshava* of *bina* itself, and when you're saying what you're thinking, that's called *vayomar*, as opposed to *vayedaber*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [5015, 5049],
+                "start": 1735.06,
+                "end": 1745.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "When a person thinks in words, that is still the open *mem*, a revealed thought. The real closed *mem* is the subconscious process that chooses the words. *Bina* itself has a closed *mem* and an open *mem*: the subconscious thought and the revealed, conscious thought. So the hidden *maamar* and the open, revealed *maamar* are both within *bina*'s own thought. In general, *maamar*, as opposed to *dibbur*, is a thought going on within the *machshava* of *bina*. Saying what you think is called *vayomar*, not *vayedaber*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [4846, 5049],
+                  "start": 1672.3,
+                  "end": 1745.76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "t4en2m5v",
+            "oygdlvtc"
+          ],
+          "phrases": [
+            {
+              "he": "והוא ענין ההפרש בין בחינת מקיפים דאימא, שהוא עדיין בבחינת מ\"ם סתומה שמקיף מכל צד, והוא בריבוע דוקא,",
+              "en": "And the real *mem sesuma* is the *makif* of *bina*. Saying this is the difference between the *mem sesuma* and the *mem pesucha*; now we're explaining the *mem sesuma*. It is this *makif* of *bina*, which surrounds everything, but it's described as being a square *makif*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [5076, 5140],
+                "start": 1758.44,
+                "end": 1783.28
+              }
+            },
+            {
+              "he": "כמו שכתוב בזוהר על מ\"ם דלםרבה המשרה כו'",
+              "en": "like it talks about in the *Zohar*, about the *pasuk* *lamarbeh hamisrah*. In that *pasuk* the *mem* is a final *mem*, even though it's written in the middle of a word, which is unique, maybe the only place in *Tanach* where it does that, and it explains that this represents this closed *maamar*, and the idea of a square *makif*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [5141, 5226],
+                "start": 1783.52,
+                "end": 1814.7
+              }
+            },
+            {
+              "he": "ומבואר במקום אחר,"
+            },
+            {
+              "he": "ובין בחינת הארת המקיף הזה לעשות התחלקות הצירופים על ידי בחינת ה׳ גבורות מנצפ\"ך כו',",
+              "en": "So there's the source itself, which is the *makif* of *bina*, and then there's the way that *makif* creates the actual divisions. In other words, there's the power to choose, and there's the actual choices. When it makes the actual choices, it's choosing using the five *gevuros* to actually create specific letters, and those specific letters and words are becoming revealed.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6353, 6417],
+                "start": 2225.5,
+                "end": 2248.84
+              }
+            },
+            {
+              "he": "שהוא ענין מ\"ם פתוחה מאמר פתוח",
+              "en": "And that's the *mem pesucha*, the open *maamar*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6422, 6431],
+                "start": 2250.9,
+                "end": 2253.78
+              }
+            },
+            {
+              "he": "שהמחשבה הסתומה נעשית פתוחה בהתחלקות אותיות כו',",
+              "en": "And that's like, for example, the idea of *nigleh d'Torah*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6445, 6454],
+                "start": 2260.46,
+                "end": 2262.38
+              }
+            },
+            {
+              "he": "שזהו ענין ציור המ\"ם פתוחה כידוע.",
+              "en": "So we have this idea of *elu v'elu divrei Elokim chayim*, that *Torah* really could be expressed in many ways. And the fact that we *pasken* a certain way, and that it gets plugged in, and we say, okay now, this is the will of G-d, that's the open *maamar*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6455, 6504],
+                "start": 2262.38,
+                "end": 2274.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 18 explains the difference between two surroundings. The *makif* of *Imma* is still the closed *mem*: it surrounds from every side, and it is specifically square. The other is the light of that surrounding, which makes the division of letters through the five *gevuros*; that is the open *mem*, the open *maamar*. On the verse *lamarbeh hamisrah*, the Zohar has a final *mem* written in the middle of a word, which he thinks is unique in *Tanach*, and it stands for this closed *maamar* as a square surrounding. He notes that the Mitteler Rebbe sometimes writes very long parallels like this. The closed *mem* is the *makif* of *bina*, which surrounds everything and is described as square.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [5050, 5381],
+                  "start": 1746.36,
+                  "end": 1873.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A round *makif* is equidistant from all sides, so it is entirely beyond understanding: a matter of faith, or just a *ratzon*, because it is. A square *makif* is particular to each *midah*. It is like a cube with six sides, each side surrounding one of the *middos*; the *sukkah* and the *tefillin* represent this. So the square *makif* is tailored to what is said, but how it is expressed is a stylistic choice, the speaker's own style and preference, and the *kli* does not dictate it. There are levels of *makifim*: the sky, a square house, and clothes that fit closely. The *makif* of *bina* gives each *midah* its own wall, while the connection between what is expressed and how it is expressed is not directly logical. It is beyond the *kli*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [5382, 5699],
+                  "start": 1874.96,
+                  "end": 1982.68
+                }
+              ]
+            },
+            {
+              "kind": "digression",
+              "text": "He has not looked into this *midrash*, which he remembers from long ago. He thinks it is related to a tradition that the *Beis HaMikdash* would be destroyed once it became exactly square. Changes made before its destruction made it square: the simple people thought it a good sign, the sages a bad one. He thinks it may relate to the *geulah*, and to a law that has become mechanical and lost its *neshamah*.",
+              "title": "The square Beis HaMikdash",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [5700, 5851],
+                  "start": 1987.02,
+                  "end": 2044.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The square *mem* of *lamarbeh* is connected to the times of *Moshiach*, when the verse says there will be unlimited peace and good. It alludes to the time when *pnimiyus HaTorah* is revealed: the open *maamar* is the *nigleh* of *Torah*, and the closed *mem* is *pnimiyus*. In simple terms, I guess, the positive side of the square idea is that when people become aware of their assumptions, they see that *Torah* comes from a choice, and that the choice comes from appreciating the inherent goodness and G-dliness in every *neshamah* and in everything. Bringing that out liberates and brings the *geulah*. That is how he understands the verse, at least the basic idea.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [5852, 6090],
+                  "start": 2046.11,
+                  "end": 2133.74
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "A key takeaway: in *Torah* and *mitzvos*, people are often satisfied with a logic or a reason, but if they really think about it, the reason does not fully explain why things should be a certain way. So be aware of the limit of logic. Logic is bounded, like being in a box, and its assumptions come from outside the box; becoming aware of those assumptions is the revelation of the closed *mem*. The main perspective of *pnimiyus HaTorah* is the intrinsic value and G-dliness in every person and everything, and the limits and laws are there to express it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6091, 6331],
+                  "start": 2134.08,
+                  "end": 2211.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The source is the *makif* of *bina*, which makes the division of letters through the five *gevuros*: the power to choose, and then the actual choices. The choices become specific letters and words, which are revealed. That is the open *mem*, the open *maamar*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6332, 6431],
+                  "start": 2212.76,
+                  "end": 2253.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 19: a hidden thought becomes open through the division of letters; that is how the open *mem* is drawn. The example is the *nigleh* of *Torah*: *Torah* can be expressed in many ways. When we *pasken* one way and plug it in, saying this is G-d's will, that is the open *maamar*. Behind it is a system and an inner understanding that lets us choose, and asks why this way and not that. A proper *rav*, when he comes to a *psak* (this is not only these days; there is a letter of *Rav Levi Yitzchak* about it), can line up proofs and opinions on both sides, yet no deterministic thing gives the answer; he has to understand what the *Torah* wants here, whether to be *machmir* or *meikel*. Language is the same: knowing words one by one is different from speaking fluently, with the subconscious ability to let it flow.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6432, 6770],
+                  "start": 2254.2,
+                  "end": 2356.82
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The mother over the chicks: the middos and their protection",
+      "summary": "The middos are immature until they are guided. Binah hovers over them as a mother bird over her chicks, first protecting them and then training them toward independence, so that they can come to act from a sense of the spirit of the law. The same logic applies to love, to the sukkah and lulav, and to how words are understood between people.",
+      "passages": [
+        {
+          "lines": [
+            "kcc5q2qs",
+            "ivradwyt"
+          ],
+          "phrases": [
+            {
+              "he": "וביאור הדברים, הנה ידוע בביאור ענין מקיפים דבינה, בענין והאם רובצת על האפרוחים כו׳",
+              "en": "The explanation of this matter: it's known, about the idea of the *makifim* of *bina*, that the mother bird hovers over the chicks, over the baby birds.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6773, 6821],
+                "start": 2358.48,
+                "end": 2375.26
+              }
+            },
+            {
+              "he": "שהמדות מקבלים רק מבחינת השגה דאור פנימי דבינה כשנקרא אם הבנים, שאז נקרא אפרוחים כו',",
+              "en": "And so the middos, right? The chicks represent the middos, and the mother represents bina. So they're getting the or pnimi of bina, which is called the mother.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [6956, 7097],
+                "start": 2427.05,
+                "end": 2475.64
+              }
+            },
+            {
+              "he": "ובחינת גדלות המוחין דמדות בהעלם הבא מבחינת מקיפים,",
+              "en": "And the idea of when the *middos* have *gadlus hamochin*, when they have maturity, that comes from when they don't just understand what it says, like the rules, what they're told, well this is good and this is bad; they have to have a sense of the spirit of the law and what's between the lines, so to speak.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7226, 7286],
+                "start": 2518.96,
+                "end": 2537.16
+              }
+            },
+            {
+              "he": "היינו כשאם הבנים רובצת כו',",
+              "en": "And that's when the mother is hovering over the children.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7595, 7604],
+                "start": 2620.76,
+                "end": 2624.22
+              }
+            },
+            {
+              "he": "דהיינו להמשיך מה שלמעלה מהמוחין דבינה הנמשכים למדות",
+              "en": "In other words, the purpose of the mother bird there is, or like a parent training children, is to protect them, and it's two things: it's to protect them until they're old enough to be independent, and in the process you're trying to give them those experiences so that they'll be able to become independent.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7614, 7668],
+                "start": 2628.9,
+                "end": 2644.32
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 20 is the idea of the *makif* of *bina*, from the verse that the mother bird hovers over the chicks, to protect the young. Some creatures are born able to care for themselves. One commentator says the creatures made on the fifth day come from water and are born able to take care of themselves, like insects and fish; those made on the sixth day, like mammals and birds, have to be raised and taught by their parents.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6771, 6955],
+                  "start": 2357.72,
+                  "end": 2426.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 21: the chicks are the *middos* and the mother is *bina*. The *middos* receive only from the inner light of *bina*. They are immature: they wait for a trigger to tell them whether to be happy or scared, and when it comes they run off, freaking out and losing the bigger picture. Left with only that response, they need protecting, like immature chicks who see things black and white and go to extremes: if they hear something is good, they want a revolution; if bad, they want to burn it down. So you create boundaries to protect them: the idea of the *chashmal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [6956, 7216],
+                  "start": 2427.05,
+                  "end": 2511.48
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "text": "The *middos* mature, *gadlus hamochin*, when they have a sense of the spirit of the law and what lies between the lines. That is why we learn the idea of *bar mitzvah* from *Shimon* and *Levi* going to rescue *Dinah*: they did not need to be told it was right. It was still a little hasty, but it is the beginning of *gadlus*.",
+              "title": "Shimon and Levi and Dinah",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [7217, 7410],
+                  "start": 2512.46,
+                  "end": 2573.82
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A person can say, 'Just tell me what to do; I'll look in the *Shulchan Aruch* and ask the *Rebbe*.' That is *katnus*. Once a person internalizes the perspective, valuing *Torah* and *mitzvos* and each person, and has a sense of what G-d and the *Rebbe* want, then to a certain extent they could write the book. That intuition is the *gadlus* of the *mochin*. It comes from the *makif*, from what cannot be fully explained, and it comes through experience. The mother bird protects the chicks until they can be independent, giving them experiences along the way. At first it is a limitation, like training wheels; you inject the *makif* at the same time.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [7411, 7735],
+                  "start": 2573.78,
+                  "end": 2662.22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ytpxyxpl",
+            "45uida6y",
+            "alw6w5em"
+          ],
+          "phrases": [
+            {
+              "he": "(על דרך אהבה התלויה בדבר",
+              "en": "So, for example, you can love something for a reason, which means it's extrinsic.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7748, 7765],
+                "start": 2667.32,
+                "end": 2671.22
+              }
+            },
+            {
+              "he": "שדבר זה בא באהבה בבחינת אור פנימי, על כן כשבטל הדבר בטלה האהבה",
+              "en": "I just want to do it for the reward. I'm doing it for the candy, so that's the idea that the love is coming in a way of *or pnimi*, based on just what's in it for me. So therefore you have to attach it to something *or pnimi*: a prize, a check, a sticker. So when that reason goes away, then the love goes.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7766, 7892],
+                "start": 2671.34,
+                "end": 2698.22
+              }
+            },
+            {
+              "he": "מכל מקום נשאר בבחינת מקיף,"
+            },
+            {
+              "he": "שהוא בחינת ההעלם מאותו הדבר, שיוכל על ידי זה לחזור ולהתעורר ולבוא בבחינת אור פנימי כידוע)",
+              "en": "So then what's the point of doing that for *chinuch*? Because they still had the experience of the thing itself, and the intrinsic love of the thing remains on them in a way of *makif*, the hiddenness of the thing itself, so that later it can become light and be *or pnimi*. And then later that can come back and they can appreciate that in a way of *or pnimi*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [7898, 7966],
+                "start": 2700.86,
+                "end": 2720.1
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "A love that depends on a reason is in the way of *or pnimi*, tangible and revealed. Little children cannot yet appreciate wanting to learn for its own sake, so you attach it to something they can see: a prize, a check, a sticker. The love of the thing is extrinsic, and when the reason goes, the love goes.",
+              "title": "A prize for learning",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [7736, 7892],
+                  "start": 2662.24,
+                  "end": 2698.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Teaching this way is not wasted. The child still had the experience of the thing itself, and the intrinsic love stays with them as *makif*, a hiddenness of the thing, so that it can come back later and be felt as *or pnimi*. When they are older and are a vessel for it, they can appreciate doing it *lishma*. Along the way you slowly refine the reward, as the Rambam says: first it's for candy, then for money, then for clothes, then for honor, and eventually it's just *lishma*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [7893, 8092],
+                  "start": 2698.54,
+                  "end": 2756.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "v3kabas6"
+          ],
+          "phrases": [
+            {
+              "he": "שחופף עליהם, והוא בריבוע, שמתיישב עליהם ממש",
+              "en": "and this is the idea that the *bina* is hovering over the *middos*, and it's square, that actually sits on them. In other words, it's more closely connected to each *midah* than the round *makif*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [8095, 8140],
+                "start": 2759.64,
+                "end": 2775.42
+              }
+            },
+            {
+              "he": "כמו שכתוב במקום אחר בענין מ\"ם דלמרבה כו'",
+              "en": "like it explains elsewhere about this square *mem* of the word *lamarbeh*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [8148, 8159],
+                "start": 2778.56,
+                "end": 2782.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 25: *bina* hovers over the *middos* as a square *makif* that actually sits on them, so it is more closely connected to each *midah* than the round *makif*. He points to the square *mem* of *lamarbeh* elsewhere. The *sukkah* is a *makif* for each of the *middos*, which is why we shake the *lulav* in the *sukkah*: the *sukkah* is the *makif* of *bina*, and you take the *lulav* to each of the six directions and bring that *makif* in, to your heart.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8093, 8345],
+                  "start": 2756.99,
+                  "end": 2828.14
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "The *sukkah* stands for our intrinsic connection to G-d. Whatever you do in it is a *mitzvah*, because it expresses that we have a G-dly soul in a G-dly world. The *lulav* and *esrog* train us to become aware of that, so that after *Sukkos*, when we go out into the world, we realize the *sukkah* goes with us. That is the general process of *chinuch*.",
+              "title": "The sukkah and the lulav",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8346, 8496],
+                  "start": 2829.9,
+                  "end": 2870.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Speech works the same way. Words cannot express everything; much has to be implied. Language is useful only when both sides focus on the same thing and want the same thing. A person who is not aligned on that *makif* level will always find a way to twist the words and find loopholes.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8497, 8645],
+                  "start": 2871.86,
+                  "end": 2917.42
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Today in our society people reject the founding values of G-d and lack shared *makif*, so the words and laws and Constitution lose their source of meaning and turn slippery.",
+              "sensitivity": {
+                "categories": [
+                  "politics"
+                ],
+                "reason": "A sweeping jab at today's society, with the Constitution named as the example of values gone fluid; a public reader may take it as a political remark.",
+                "action": "replace",
+                "publishable": "People reject the founding values of G-d and lack shared *makif*, so the words and laws lose their source of meaning and turn slippery."
+              },
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8646, 8705],
+                  "start": 2917.78,
+                  "end": 2937.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That is why there are the *shalosh regalim*, a shared experience of coming to the *Beis HaMikdash*, and why to *daven* with a *minyan*: it is not only about a person doing the *mitzvos* his own way. The *chupah* is a square *makif* for a family, something bigger than a person.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8706, 8829],
+                  "start": 2939.21,
+                  "end": 2975.06
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "lqekfi7l",
+            "44xnsf7o"
+          ],
+          "phrases": [
+            {
+              "he": "וכללות הענין הוא על דרך דוגמא מידיעה במוח שמקפת את הדבר שיודע אותו,",
+              "en": "this general idea of this type of *makif* is like when you know something, like it talks about in *Tanya*: when you know something, the thing that you know is completely within your mind.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [8845, 8879],
+                "start": 2986.72,
+                "end": 2994.4
+              }
+            },
+            {
+              "he": "דהגם שהדבר נבדל, מכל מקום חופף ידיעה זו ומקפת מכל צד לאותו הדבר",
+              "en": "even though the thing is separate from you, you can envision the thing completely within your mind. So you have that knowledge of the thing that completely encompasses it.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [8880, 8946],
+                "start": 2994.46,
+                "end": 3021.9
+              }
+            },
+            {
+              "he": "(כמו ידיעת אלהו״ת, שמשגיח ויודע את כל הנבראים, שבידיעה זו מקיף אותם",
+              "en": "like G-d's knowledge that has *hashgacha pratis*: G-d knows all the creatures, and that this knowledge surrounds them and completely encompasses every single thing and its place in the world.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [8955, 8991],
+                "start": 3028.68,
+                "end": 3045.14
+              }
+            },
+            {
+              "he": "כמו שכתוב בלקוטי אמרים בידיעה שיודע כל הארץ כו')",
+              "en": "like it says in *Tanya*, that G-d knows the entire world, not only the outside but also the inside, all the way down to the little worm inside the earth.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9062, 9093],
+                "start": 3063.28,
+                "end": 3070.68
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "Here is an example of this type of *makif*: when you know something, the thing you know is completely within your mind. You can turn it over; you have a full simulation of it inside your mind, even though the thing is separate from you, and that knowledge completely encompasses it. The same is G-d's knowledge of all the creatures: He supervises them and knows them, and that knowledge surrounds them, as *Tanya* says. He knows the entire world, not only the outside but the inside, down to the little worm inside the earth. We see only ourselves, which is a more immature perspective; the *makif* is seeing the bigger picture.",
+              "title": "Knowing a thing in the mind",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [8830, 9093],
+                  "start": 2975.1,
+                  "end": 3070.68
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Light, water and ice: how an idea becomes codified",
+      "summary": "Once an idea is grasped and set into letters, it hardens like ice, the raki'a that is the codified form. Codifying makes Torah accessible, yet the form can be mistaken for the essence, so a minhag is not to be changed carelessly.",
+      "passages": [
+        {
+          "lines": [
+            "rf5gs5xi",
+            "on7utdiz"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו כמו מה שכתוב ועל ראשי החיות רקיע כעין הקרח כו',",
+              "en": "and this is what it says in the *Maaseh Merkavah*, the prophecy of the *merkavah*, that it describes how above the heads of the *chayos*, the angels, there was a firmament that was like ice.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9095, 9139],
+                "start": 3072.9,
+                "end": 3086.26
+              }
+            },
+            {
+              "he": "שהוא בחינת מקיף דבינה גם כן (שמזה נעשה לבוש החשמ\"ל מבחינת חיצוניות בינה כמו שיתבאר)",
+              "en": "So there is this *makif* on top of them: the *chayos* represent the *middos*, and on top of them is the *makif* of *bina*, which is compared to this ice. It is also the *makif* of *bina*, from which the *levush* of *chashmal* is made, from the external aspect of *bina*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9140, 9199],
+                "start": 3087.02,
+                "end": 3105.08
+              }
+            },
+            {
+              "he": "וכמו שכתוב במקום אחר בביאור ענין אור מים רקיע, דהשגה דבינה נקרא רקיע",
+              "en": "and it's explained elsewhere about this idea of light, water, *raki'a*: first it starts as a light, which is just a pure self-expression, and then it becomes more tangible, which is water, but it's still fluid, and then it becomes set in a certain form, which is the idea of a *raki'a*, which becomes like ice.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9222, 9281],
+                "start": 3113.52,
+                "end": 3127.92
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 28: the verse says that above the heads of the *chayos* there was a *raki'a* like ice. In the *Maaseh Merkavah* this is the *makif* of *bina*, from which the *levush* of *chashmal* comes. Line 29: light first, a pure self-expression; then water, more tangible but still fluid; then a *raki'a*, set in a form like ice. That is the *hasaga* of *bina*. This is the idea of codifying. The essence of the *Torah* was before *Matan Torah*, in the *avos*, and it became more tangible until we have set *halachos* in the *Shulchan Aruch*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [9094, 9352],
+                  "start": 3071.79,
+                  "end": 3146.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Codifying is a process of bringing down and limiting. Even though *eilu v'eilu divrei Elokim chayim* means the *Torah* could have been expressed in many ways, bringing it down and codifying it is a great power. That is what makes it accessible to millions and billions of people. Even writing it in the *Chumash*, in specific words and stories, limits it, and you have to peel back the layers to see the deeper meaning. An idea is easy; putting it into practice is harder, a deeper power.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [9353, 9562],
+                  "start": 3147.3,
+                  "end": 3204.66
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "text": "It is all a *mashal*. The idea of *nevuah* is that the prophets were reaching into this *makif* of perceiving things that are in *emunah*, higher than understanding, and they symbolized it in their imagination as a form, the way one does in a dream. When the verse says they heard G-d's voice at *Matan Torah*, it was metaphoric speech, not like hearing a person speak. The experience is compared to a dream, a kind of hallucination, where you visualize something you are trying to understand. A physicist trying to grasp quarks makes pictures that are not literally how they look. So there are deeper G-dly things, and they come out in the imagination. This is called the *raki'a*.",
+              "question": "Is the *merkavah* something he actually saw, or is it a *mashal*?",
+              "askedBy": "student",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [9563, 9877],
+                  "start": 3208.62,
+                  "end": 3338.18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "hhquue6a",
+            "g5f425og",
+            "tta7lmpw"
+          ],
+          "phrases": [
+            {
+              "he": "לפי שקודם שבא המושכל בבחינת השגה גמורה, עדיין הוא למעלה מבחינת הגבלת אותיות, כמו הסבר מושכל עמוק שאינו עדיין באופן מוגבל במוח הנקרא השגה ותפיסא",
+              "en": "And this is because when you have an idea, and that's just like the idea in *chachma*, and it didn't get completely fully understood, so it's still higher than being limited into letters. So you have this perception, this intuition, and now you need to explain, bring that out.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9913, 9966],
+                "start": 3356.26,
+                "end": 3375.46
+              }
+            },
+            {
+              "he": "הוא הנקרא מים דניידי, לבא בכמה אופנים שונים כו'",
+              "en": "So when it's in that state, where you know it but you don't have words for it, then it's compared to water, which is flowing and fluid and nebulous, and it can be expressed in many different ways. You could explain the same idea in many different forms.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [9967, 10017],
+                "start": 3375.76,
+                "end": 3390.72
+              }
+            },
+            {
+              "he": "מה שאין כן כשבא המושכל באופן מוגבל הנתפס ומושג בכלי מוחו ממש, נמשל לקרח, דאגלידי מיא וקיימא כו'",
+              "en": "But once that you explain it in a certain way, and it's fully grasped in that way, then it's compared to ice, to *gilidei maya*, which is frozen water, and then it becomes stable.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [10033, 10077],
+                "start": 3396.26,
+                "end": 3411.7
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "Before an idea reaches full *hasaga*, it is still above the limitation of letters: it is a deep idea that is not yet fixed in the mind as a limited grasp. In that state it is compared to flowing water, *mayim deniyidei*, which can come in many different forms. You can explain the same idea in many different ways.",
+              "title": "Water: an idea not yet fixed",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [9878, 10017],
+                  "start": 3338.36,
+                  "end": 3390.72
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "text": "Once the idea is grasped and held in the vessel of the mind, it is compared to ice, *gilidei maya*, frozen water, stable and fixed. *Hasaga* comes from *hasagas yad*, grasping with the hand: you cannot hold water, but you can hold ice. So to have *hasaga* of an idea you put it into letters, a system of logic or an explanation, which is only one way it could be expressed. As a teacher you bring it down and choose words; as a student you grasp that one idea, but once you rise back to *chachma* you realize it could be expressed in many ways.",
+              "title": "Ice you can hold",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10018, 10228],
+                  "start": 3390.8,
+                  "end": 3451.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This holds for the *Torah* too: you could validly *pasken* in many ways. Today there are many different *minhagim*, and all of them are valid.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10229, 10290],
+                  "start": 3453.4,
+                  "end": 3471.22
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "We tend to see it in black and white: my way is right, a stricter person a fanatic, a less strict one a heretic.",
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Two insult labels, 'fanatics' and 'heretics', for people in the stricter and the less strict camps, in a sweeping remark about frum camps.",
+                "action": "replace",
+                "publishable": "We tend to see it in black and white: my way is right, a stricter person an extremist, a less strict one more lenient."
+              },
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10291, 10339],
+                  "start": 3471.92,
+                  "end": 3482.54
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The essence is the same, in a different form. It is immature to feel rivalry over dress or custom. Once the essence is put into a tangible form, people mistake the form for the essence, which becomes like *avodah zarah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10340, 10439],
+                  "start": 3482.65,
+                  "end": 3509.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That is why G-d sets up the world to keep changing, and why *Chassidus* uses different *meshalim*, from *pshat*, *remez*, *drush* and *sod*, and keeps changing them, to break you out of the sense that anything is fixed. Logic is in the same position: it has very clearly been shown within science and mathematics that a complete logical system is impossible.",
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "States under his name that science and mathematics have clearly shown a complete logical system to be impossible. The mathematical result (incompleteness) is a theorem about formal systems; 'within science' goes beyond it.",
+                "action": "replace",
+                "recommend": "judgment",
+                "judgmentNote": "Decide whether the public text keeps the mathematical claim (the publishable keeps 'within mathematics') or drops the claim altogether.",
+                "publishable": "That is why G-d sets up the world to keep changing, and why *Chassidus* uses different *meshalim*, from *pshat*, *remez*, *drush* and *sod*, and keeps changing them, to break you out of the sense that anything is fixed. Logic is in the same position: it has very clearly been shown within mathematics that a complete logical system is impossible."
+              },
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10440, 10598],
+                  "start": 3510.08,
+                  "end": 3562.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "You can make almost anything seem to make sense, but any system relies on assumptions and axioms from outside itself. A system of logic is a caricature, useful for one aspect of reality within certain parameters: an effective theory. You can use its assumptions to build a bridge, but it is not a perfect description of reality, and if you zoom in or out you need a different theory.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10599, 10758],
+                  "start": 3563,
+                  "end": 3609
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Logic is not itself a source of truth. It expresses something higher, a *makif*, an assumption or an experience. The *halacha* and *minhagim* come from somewhere, which you must be aware of when a new situation comes up and you have to *pasken*. But it is very important not to break a system for no reason; it is hard to make a system that works, even if it is not perfect.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10759, 10911],
+                  "start": 3609.42,
+                  "end": 3659.14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "p3l2km7g",
+            "j3l22luz",
+            "zma3lylw",
+            "jdoc2x5q"
+          ],
+          "phrases": [
+            {
+              "he": "מלשון השג יד כו',",
+              "en": "It becomes fixed, from the phrase *hasagas yad*. And that's the idea of *hasaga*: something you can hold in your hand.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [10079, 10099],
+                "start": 3412.55,
+                "end": 3417.32
+              }
+            },
+            {
+              "he": "כמו שכתוב במקום אחר שזהו הנקרא רקיע, והוא ענין הקרח שעל גבי המוחין דחיות כו'",
+              "en": "and this is what's called a *raki'a* once it's set, and that's the idea of the ice, that's above the heads, above the understanding of the *chayos*. This is the *makif* that's on top of them.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [10918, 10959],
+                "start": 3662.58,
+                "end": 3672.98
+              }
+            },
+            {
+              "he": "ואמנם שרש הקרח הזה שבא דוקא בבחינת הגשמה גמורה, הוא מלמעלה מבחינת אור פנימי דבינה",
+              "en": "the source of this ice, which becomes tangible and very set, is higher than the inner light of *bina*; it's higher than the *or pnimi*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [10969, 10991],
+                "start": 3678.64,
+                "end": 3686.28
+              }
+            },
+            {
+              "he": "אלא הוא נמשך ונעשה מבחינת המקיף דבינה הנקרא מ\"ם סתומה, שבלתי מאיר ונמשך בגלוי כלל במדות",
+              "en": "this comes from this *makif* of *bina*, which is called the closed *mem*, which doesn't shine and is drawn out in revealed form into the *middos* as a whole, so that it's not something that can be directly expressed and understood within the *middos*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11082, 11118],
+                "start": 3709.8,
+                "end": 3722.08
+              }
+            },
+            {
+              "he": "על כן משם נעשה בחינת רקיע או קרח על גבי המוחין דמדות כו'",
+              "en": "And therefore, it becomes this *raki'a*, or this ice, that's on top of the *mochin* of the *middos*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11132, 11149],
+                "start": 3727.14,
+                "end": 3731.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 33: this is the *raki'a* once it is set, the ice above the *mochin* of the *chayos*. Line 34: the source of this ice, which comes in complete materiality, is higher than the inner light of *bina*. The ability to codify and *pasken*, and the external details of a *minhag*, come from a higher place, which is why you must be very careful before changing even a *minhag*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [10912, 11074],
+                  "start": 3659.15,
+                  "end": 3705.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 35: it comes from the *makif* of *bina*, the closed *mem*, which does not shine and is drawn out into the *middos*. Line 36: it becomes a *raki'a*, ice, on top of the *mochin* of the *middos*. As much as we understand a *halacha* or a *minhag* and its reason, it expresses something deeper beyond those reasons. A G-d-fearing person senses that a thing is beyond him and does not change it, except in certain cases where things melt and are then refrozen. Tradition matters even where you cannot say why.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11075, 11272],
+                  "start": 3706.3,
+                  "end": 3767.62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The garment that guards the middos, and the source of the mitzaf",
+      "summary": "The mekif of Bina clothes the middos as a levush of chashmal, a codified system that guards the immature until they can act from the spirit of the law. Its source is the power that makes the combinations of letters, which is deeper than the revealed letters. The class then applies this to minhag, to Chabad's emphasis on pnimiyus, and to what can only be learned by experience.",
+      "passages": [
+        {
+          "lines": [
+            "jghlapk5",
+            "bcryab3t"
+          ],
+          "phrases": [
+            {
+              "he": "והיינו והאם רובצת כו',",
+              "en": "and this is the idea that the mother is hovering over to protect the children.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11277, 11291],
+                "start": 3769.98,
+                "end": 3773.38
+              }
+            },
+            {
+              "he": "וכן ועל גוזליו ירחף כו', שזהו בחינת לבוש החשמ\"ל שמקיף בבחינת שומר למדות",
+              "en": "and this is the idea that it says that it hovers over its chicks, and this is like we're to talk about, that it creates this protective garment around the *middos* that protects them.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11435, 11476],
+                "start": 3812.7,
+                "end": 3825.9
+              }
+            },
+            {
+              "he": "(כמו שיתבאר בסמוך בענין כתנות עור כו', שמקיף לזעיר אנפין ונוקבא עד מתחת רגלי זעיר אנפין ונוקבא,",
+              "en": "like we're going to explain soon about the garments, the leather garments that G-d made for *Adam* and *Chava*, that surround *Zeir Anpin* and *Nukva*, all the way down under their feet.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11483, 11519],
+                "start": 3827.99,
+                "end": 3837.9
+              }
+            },
+            {
+              "he": "שממנו נעשה המסך שבין אצילות לבריאה כו')"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "text": "Line 37: the mother hovers to protect the children: a deeper *bitul* that guards the *middos*. Children listen to an authority because they sense he knows more. An adult going to a doctor is like a child, since he does not fully understand. You sense you are in good hands and do what they tell you, even without understanding all the reasons, and you do not rationalize your way out of it.",
+              "title": "The authority you trust",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11273, 11430],
+                  "start": 3768.04,
+                  "end": 3810.34
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 37 continues: the mother hovers over her chicks, the *levush* of *chashmal* around the *middos*, guarding them. Line 38: this *makif* starts above the *middos*, surrounds them as the *levush* of *chashmal*, and goes under them as the *mesach*, the curtain between *Atzilus* and *Beriya*, like the garments of skin G-d made for Adam and Chava.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11431, 11573],
+                  "start": 3810.54,
+                  "end": 3857.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Chashmal* is a term from the *Maaseh Merkavah*, a glow around the *merkavah*; today it means electricity, but then it meant a glow. He says it is basically a codified system: the *Shulchan Aruch* is the *chashmal* of Judaism. It protects someone not yet mature: when all else fails, follow the instructions. Shorthand rules keep you in order until you are mature enough for nuanced decisions. So this *makif* creates the *chashmal*, and later the interface with what is lower, which becomes like a language.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11574, 11808],
+                  "start": 3857.7,
+                  "end": 3935.48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "67di7kqg",
+            "rcslugdn"
+          ],
+          "phrases": [
+            {
+              "he": "והוא בחינת מקור דבינה,",
+              "en": "and this *makif* is really coming from the source of *bina*, the depth of *bina*.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11818, 11838],
+                "start": 3940.88,
+                "end": 3946.52
+              }
+            },
+            {
+              "he": "שמזה נמשך הכח העושה לבחינת התחלקות הצירופים דאותיות המחשבה"
+            },
+            {
+              "he": "הנקרא מצרף, ולא גוף הצירופים, שהוא דוקא בבחינת מ\"ם פתוחה מאמר פתוח כו'",
+              "en": "And so this is the idea that the power to create these distinctions, and to create the words and choose them, is this deeper power, the *makif* of *bina*, and that's higher than the revealed letters that are actually being expressed.",
+              "audio": {
+                "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                "words": [11862, 11907],
+                "start": 3957.9,
+                "end": 3972.96
+              }
+            },
+            {
+              "he": "ודי למבין"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Line 39: the *makif* of *bina* is the source of the power that divides the letters of thought. Line 40: that power is the *mitzaf*, not the body of the combinations. The power to choose the words is higher than the revealed letters that are actually expressed.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11809, 11923],
+                  "start": 3935.86,
+                  "end": 3978.21
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Past line 40 he applies the point to *minhag*: what matters most is not the particular way it is done, but the *bitul* with which you do what you are told, which is higher than the particular *kli*. Ashkenazim and Sefardim may do it differently; the real essence is the commitment to do whatever one's *rav*, the *Shulchan Aruch* and the *Rebbe* tell a person to do. A person who asks which way to do it thinks that is the main thing; a mature *rav* sees that the main thing is that he is ready to do what he is told.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [11924, 12160],
+                  "start": 3978.21,
+                  "end": 4047.68
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "Other considerations, like being *machmir* or *mekil*, come after that. Even the simplest *minhagim* and songs have a holiness that goes far beyond their logic and history. So why codify? From the deeper perspective one could ask why the rules are so limited. Originally *Moshe* thought he would bring everybody up to his level, and there would only have been the *luchos*, basic guidelines: 'go be G-dly.' That would have been the plan from the perspective of the essential understanding. But the people were not on that level and could not handle it, which is how the *cheit ha'egel* came about. The second *luchos* came with all the *halachos* and *aggados* and the whole system, where the *Torah* was brought down and codified. That was actually coming from a deeper place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [12161, 12451],
+                  "start": 4047.88,
+                  "end": 4139.52
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "*Moshe*'s recognition was that people matter more than truth: it is better to express the truth in a way they can grasp at their own level, even a childish one, than to be literally more accurate. Explaining everything rationally would destroy most people's connection to their *emunah*. This is the big *makif* of the whole *Torah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [12452, 12573],
+                  "start": 4140.3,
+                  "end": 4186.02
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "Each *mitzvah* has the general *bitul* that is the same for all *mitzvos*, and its own flavor of *bitul* and G-dliness in one area of life. *Tzedakah* gives a particular experience of kindness and *ahavas Yisroel*; the *Rebbe* giving out dollars so people can give *tzedakah* is an example. The general circle *makif* is *bitul*, the same *kavanah* for everything; each *mitzvah* expresses that theme in its own area, uniquely, all from the same *klal*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [12574, 12776],
+                  "start": 4190.36,
+                  "end": 4264
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the difference between general *Chassidus* and *Chabad*. General *Chassidus* is the *klal* of *emunah*; *Chabad* plugs that *klal* into each aspect of life, your *sechel*, your *middos* and each thing, and shows how it gives life to it in a unique way. The role of this *makif* is to bridge the general into life and to personalize it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [12777, 12897],
+                  "start": 4265.04,
+                  "end": 4302
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "avodah",
+              "text": "That is the idea behind decorating the *sukkah*. It is not enough to say 'I'm a Jew with *emunah*.' It is vital to personalize the connection with G-d, to make it part of every aspect of life and to find your own way to make it beautiful. That is *hiddur mitzvah*, bringing life to it in an individual way.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [12898, 13021],
+                  "start": 4302.25,
+                  "end": 4344.96
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "So we decorate the *sukkah* spiritually. There are a lot of *minhagim* and a lot of *sichos*; the *Rebbe* explains our *minhagim* and why we do and do not do certain things. In *Chabad* we expect people to be more sensitive to *pnimiyus*, and we try to train them toward a more mature perspective. What we want people to attune to is that the way to make the *sukkah* beautiful is not by hanging up physically beautiful things, but by inviting more guests and doing more *mitzvos* there. That is the main beauty.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13022, 13237],
+                  "start": 4349.82,
+                  "end": 4429.76
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "Minhagim are *levushim*, and you peel them back to create maturity. A child is told to do it for candy, then to become a *chashuv rav*, and eventually *lishma*. *Chabad* customs ask more of that maturity, but you have to know your audience.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13238, 13335],
+                  "start": 4431.4,
+                  "end": 4469.94
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Rebbe* would tell people who came to *Chabad* not to change their *levush*, their *chassidish* dress. *Chabad* is not about one way of dressing; diversity shows that.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13339, 13410],
+                  "start": 4472.83,
+                  "end": 4497.74
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "aside",
+              "text": "The way you show that is by diversity. I think it was a mistake to make the *yeshivos* dress code uniform after *Gimel Tammuz*.",
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "Calls a decision inside Chabad, the uniform dress code adopted in the yeshivos after Gimel Tammuz, a mistake; a criticism of a movement's own institutional choice, with the decision named.",
+                "action": "replace",
+                "recommend": "judgment",
+                "judgmentNote": "Criticism of an institution inside the movement, not contempt. Weigh whether it is a critique of a camp (flag stays) or his own view on an institutional matter that can print as said.",
+                "publishable": "The way you show that is by diversity."
+              },
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13411, 13458],
+                  "start": 4498.42,
+                  "end": 4512.02
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "Support it unless it is changed, because my view is not most important: a *Sanhedrin* votes and you follow the majority. Like *Beis Shammai* winning, strictness gains something and loses something. Every *chumra* is a *kula*, and every *kula* a *chumra*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13459, 13545],
+                  "start": 4512.76,
+                  "end": 4538.66
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "So you need depth to know when to be *machmir* and when *meikel*, and even the tone and the words matter. The more maturity a person has, the more comes out in these subtle things. This is the idea of *mesamesh talmidei chachamim*: you learn what is essential from helping a *talmid chacham* more than from his *Torah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13546, 13663],
+                  "start": 4538.8,
+                  "end": 4572.46
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "Some things can only be seen, not taught. How a person lives and talks gives a depth you do not get from a book, which is why one hangs around *chassidim* and watches them *farbrenging*. *Moshiach*'s main way of teaching is by example. The seven shepherds are teachers; the eight princes of men teach through *makif*, by example, and *Moshiach* heads them as *Moshe* heads the seven.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13664, 13866],
+                  "start": 4573.42,
+                  "end": 4635.4
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            },
+            {
+              "kind": "explanation",
+              "text": "So much cannot be put into words; you have to live and experience it. That is the power of the Beis HaMikdash and of going there, and today of going to 770 or the *ohel*. Logically you would ask what the difference is, since you can *daven* anywhere, or what we need the place for, to have a barbecue there. But prepared with the right mindset, you can experience something far beyond understanding, as with *Shabbos* and *Yom Tov*. You cannot explain *Shabbos* or *Simchas Torah* to someone; they have to experience it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+                  "words": [13867, 14118],
+                  "start": 4636.42,
+                  "end": 4710.1
+                }
+              ],
+              "outOfPlace": "Past line 40, with no further lines: the class applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha and Chabad practice."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "Why is the choice of words higher than understanding itself?",
+      "lines": [
+        "oepijmbf",
+        "zvjl3ruf",
+        "3t255gcs"
+      ]
+    },
+    {
+      "question": "What do the closed and open mem stand for?",
+      "lines": [
+        "5ndy2eis",
+        "cisksvim",
+        "oygdlvtc"
+      ]
+    },
+    {
+      "question": "In the mother-bird picture, what are the middos, and why do they need protecting?",
+      "lines": [
+        "ivradwyt",
+        "jghlapk5"
+      ]
+    },
+    {
+      "question": "Why is an idea compared first to water and then to ice, and why does that make codifying the Torah both necessary and risky?",
+      "lines": [
+        "hhquue6a",
+        "tta7lmpw",
+        "on7utdiz"
+      ]
+    },
+    {
+      "question": "How does the square makif differ from the round one?",
+      "lines": [
+        "t4en2m5v"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+      "words": [0, 2],
+      "reason": "logistics",
+      "note": "The opening words of the class: 'Okay, chapter 44.'"
+    },
+    {
+      "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+      "words": [3, 5],
+      "reason": "reading",
+      "note": "The chapter number read aloud in Hebrew (מ״ד, פרק מ״ד)."
+    },
+    {
+      "lecture": "Walters 5784 Edited/044 Shaar HaYichud ch 44.mp3",
+      "words": [13336, 13338],
+      "reason": "other",
+      "note": "A listener's agreement, 'Oh, yeah, 100%'. The teacher's reply begins at 13339."
+    }
+  ],
+  "notes": [
+    {
+      "text": "The class reads lines 1 to 40 in order and runs on for about 37 minutes after line 40 (words 11924 to 14118). That part applies the point of lines 39-40 (the makif of bina over the outer forms) to minhag, halacha, Chabad practice and experience. It is placed under the last passage with outOfPlace.",
+      "lines": [
+        "rcslugdn"
+      ]
+    },
+    {
+      "text": "The question block at words 1560-1887 is a student's, and inferred. The class has 'Okay, so why would G-d want to create the world with middas hadin if He's the idea of chesed?' (words 1564-1582), and he answers 'Excellent question' (1583), which is a reply to someone. The transcript does not label speakers; check against the audio.",
+      "lines": [
+        "e7yi3clb"
+      ]
+    },
+    {
+      "text": "The question block on the merkavah (words 9563-9877) is a student's, and inferred: 'So, is the merkavah something he actually saw or a mashal?' (9563) is answered 'So, it's all a mashal' (9574). The transcript does not label speakers; check against the audio.",
+      "lines": [
+        "rf5gs5xi",
+        "on7utdiz"
+      ]
+    },
+    {
+      "text": "Words 9700-9706 ('No, he may have seen it') are a listener's garbled remark inside the cited words of the merkavah block; they are not in the text.",
+      "lines": [
+        "rf5gs5xi"
+      ]
+    },
+    {
+      "text": "Line 18 is read three times: at words 5050 (first reading), 6332 (second) and 6418 (its last clause, 'the open mem, the open maamar'). The English for the last clause follows its reading at 6418 (the phrase cites 6422-6431), so that clause is translated where he reads it. The middle clause (the power of the makif to divide the letters through the five gevuros) has no English in the first reading; its English follows the second reading and is cited at 6353-6417, a later telling. The first clause's English, 'the real mem sesuma', is at 5076-5140.",
+      "lines": [
+        "t4en2m5v"
+      ]
+    },
+    {
+      "text": "Line 40 is garbled in the transcript after 'higher than the revealed letters that are actually being expressed' (word 11907): 'which is which those would be the closed mem, the open maamar, what's actually being expressed' (11908-11923). The English cited stops before the garble. The audio does not tell which mem is which, so the text does not say.",
+      "lines": [
+        "rcslugdn"
+      ]
+    },
+    {
+      "text": "Line 22 ('in the way of love that depends on a thing') is rendered by his English 'you can love something for a reason, which means it's extrinsic' (words 7748-7765). The English after it on the same stretch is line 23's.",
+      "lines": [
+        "ytpxyxpl",
+        "45uida6y"
+      ]
+    },
+    {
+      "text": "Line 33 begins 'from the phrase hasagas yad'. His English for it ('It becomes fixed') is at 10079-10099, after the English for line 32's ice image, which ends at 10077.",
+      "lines": [
+        "p3l2km7g"
+      ]
+    },
+    {
+      "text": "Line 25's second piece ('the square mem of lamarbeh') has its English at 8148-8159; the sukkah that follows is the block after it.",
+      "lines": [
+        "v3kabas6"
+      ]
+    },
+    {
+      "text": "Flagged for a person (politics): words 8646-8705, 'today in our society' and 'the Constitution'. The publishable drops those two. Judged a sweeping jab at present-day society, so replaced rather than printed as said.",
+      "lines": [
+        "v3kabas6"
+      ]
+    },
+    {
+      "text": "Flagged for a person (other-groups, insult words): words 10291-10339, 'fanatics' and 'heretics' for people in the stricter and the less strict camps. The publishable uses 'extremist' and 'more lenient'. The insult rule applies: the remark is about the attitude of people in camps, not a position of Torah.",
+      "lines": [
+        "hhquue6a",
+        "g5f425og",
+        "tta7lmpw"
+      ]
+    },
+    {
+      "text": "Flagged for a person (other, judgment): words 10440-10598, 'it has very clearly been shown within science and mathematics that a complete logical system is impossible'. The mathematical result is real (a theorem about formal systems), but 'within science' goes beyond it. The publishable keeps 'within mathematics'. The reviewer decides whether to print the claim.",
+      "lines": [
+        "hhquue6a",
+        "g5f425og",
+        "tta7lmpw"
+      ]
+    },
+    {
+      "text": "Flagged for a person (other-groups, judgment): words 13411-13458, the uniform yeshiva dress code after Gimel Tammuz called a mistake. The publishable drops the remark. The judgmentNote lists what to weigh: a critique of an institution inside the movement, not contempt.",
+      "lines": [
+        "rcslugdn"
+      ]
+    },
+    {
+      "text": "Not flagged, for the reviewer to confirm: the doctor analogy (words 11273-11430: trusting an authority, the way a child trusts a doctor; no medical advice); the Rebbe giving out dollars for tzedakah (12622-12679: a reverent example); Ashkenazim and Sefardim (11994-12053: neutral).",
+      "lines": [
+        "jghlapk5",
+        "bcryab3t"
+      ]
+    },
+    {
+      "text": "Words 13022-13059: the clause about which people need many minhagim is garbled in the transcript ('for a person that's on that level'). Only the audible 'there's a lot of minhagim' and 'a lot of sichos' are kept.",
+      "lines": [
+        "rcslugdn"
+      ]
+    },
+    {
+      "text": "The question 'Where does word choice come from?' (words 56-61) is his own, so it is the teacher's; the block that answers it is written as his explanation.",
+      "lines": [
+        "oepijmbf"
+      ]
+    },
+    {
+      "text": "Where he writes 'the Rebbe' the class means the Rebbe of Chabad. The Mitteler Rebbe is named at words 5086-5102, where he says the Mitteler Rebbe sometimes writes very long parallels like this.",
+      "lines": [
+        "t4en2m5v"
+      ]
+    }
+  ]
+}
