@@ -1,0 +1,55 @@
+{{ define "main" }}
+  {{- /* /study/ (content/study/_index.md): one card per public series, with
+         a link to each of its guides. /study/<series>/ (a section page of
+         content/study/_content.gotmpl, .Params.studySeries set): the
+         series' guides in book order, each with its title, class count and a
+         Draft or Out of date chip. Everything comes from
+         partials/study/index.html (the public edition only). */ -}}
+  {{ $study := partialCached "study/index.html" . "study" }}
+  {{ $id := .Params.studySeries }}
+  {{ if not $id }}
+  <div class="ltr-content study-index">
+    <h1>{{ .Title }}</h1>
+    <p class="study-about">Each guide follows one teacher's classes on a chapter: the text line by line with his own
+      translation, phrase by phrase, and what he says about it (explanations, <i>meshalim</i>, stories, questions),
+      each linked to the place in the recording. They are machine-drafted from the classes and not yet checked
+      against them: the recordings are the source.</p>
+    {{ range $study.series }}
+    <section class="study-series-card">
+      <h2><a href="{{ .url }}">{{ .teacher }}</a></h2>
+      <p class="study-series-count">{{ .title }} · {{ len .chapters }} chapters</p>
+      <ul class="study-chapter-chips">
+        {{- range .chapters }}
+        <li><a href="{{ .url }}">Chapter {{ .number }}</a></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+  {{ else }}
+  {{ $series := index (where $study.series "id" $id) 0 }}
+  {{ if not $series }}{{ errorf "study: no series %q in the study index" $id }}{{ end }}
+  {{ $catalogSeries := dict }}
+  {{ range (partial "catalog.html" .).series }}{{ if eq .id $series.catalogSeriesId }}{{ $catalogSeries = . }}{{ end }}{{ end }}
+  <div class="ltr-content study-index">
+    <p class="breadcrumb"><a href="/study/">Study guides</a> → {{ $series.teacher }}</p>
+    <h1>{{ $series.title }}</h1>
+    <p class="study-about">Study guides to {{ $series.teacher }}’s classes, chapter by chapter.
+      {{- with $catalogSeries }} The recordings are on <a href="{{ partial "classes-url.html" (dict "series" .) }}">the class pages</a>.{{ end }}</p>
+    <ul class="study-chapter-list">
+      {{- range $series.chapters }}
+      {{- $g := resources.Get .path | transform.Unmarshal }}
+      <li>
+        <a href="{{ .url }}">
+          <span class="study-chapter-name">Chapter {{ .number }}</span>
+          <span class="study-chapter-title">{{ $g.title }}</span>
+          <span class="study-chapter-meta">{{ len .lectures }} classes
+            {{- if eq .status "draft" }} <span class="study-chip">Draft</span>{{ end }}
+            {{- if .stale }} <span class="study-chip is-stale">Out of date</span>{{ end }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{ end }}
+{{ end }}

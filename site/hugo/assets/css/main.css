@@ -1520,3 +1520,442 @@ button.deep-play:focus-visible {
     scroll-padding-inline: 1rem;
   }
 }
+
+/* ── Study guides (/study/, layouts/study/) ──
+   /study/ has one card per public series, /study/<series>/ lists its guides,
+   and a guide page (/study/<series>/chapter-N/) interleaves the chapter's
+   Hebrew, cut into the class's phrases with the teacher's English under each
+   (two columns on wider screens), with blocks of prose styled by kind. Wide
+   screens get a sticky side nav of sections (like the outlines pages), narrow
+   ones a "Jump to" disclosure. Links into the guides from other pages:
+   .study-guide-link (chapter pages), .study-badge (/texts). */
+.study-about,
+.study-summary { color: #4a4a68; }
+
+.study-series-card { margin-block: 2.5rem; }
+.study-series-card h2 { margin-block-end: 0.25rem; }
+
+.study-series-count,
+.study-count,
+.study-chapter-name,
+.study-chapter-meta {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #7a7a98;
+  letter-spacing: 0;
+}
+
+.study-series-count { margin-block: 0 0.75rem; }
+.study-count { white-space: nowrap; }
+
+.study-chapter-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.study-chapter-chips a,
+.study-badge {
+  display: inline-block;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.study-chapter-chips a:hover,
+.study-badge:hover { background: #3d5a80; color: #fff; }
+
+/* On /texts the badge sits inside an index-list card: undo its link style. */
+ul.index-list a.study-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid #3d5a80;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  font-size: 0.75rem;
+}
+
+ul.index-list a.study-badge:hover { background: #3d5a80; color: #fff; transform: none; }
+
+.study-chapter-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.study-chapter-list a {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fff;
+  color: #2d2d4a;
+  text-decoration: none;
+  line-height: 1.45;
+}
+
+.study-chapter-list a:hover { background: #f0ece7; border-color: #d4cfc8; }
+.study-chapter-title { font-size: 1.05rem; }
+
+.study-chip {
+  display: inline-block;
+  margin-inline-start: 0.35rem;
+  padding: 0 0.5em;
+  border-radius: 999px;
+  background: #f5efe3;
+  color: #7a5212;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.study-chip.is-stale { background: #fbe9e6; color: #8a2c1f; }
+
+/* The guide page */
+.study-body h1 { font-size: 1.9rem; }
+
+.study-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 1rem;
+}
+
+.study-notice {
+  margin-block: 1rem;
+  padding: 0.5rem 0.85rem;
+  border-inline-start: 3px solid #c08a2e;
+  border-radius: 0 6px 6px 0;
+  background: #f5efe3;
+  color: #4a4a68;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.study-notice.is-stale { border-color: #b5523b; background: #fbe9e6; }
+
+details.study-classes,
+.study-jump {
+  margin-block: 1rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fff;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  scroll-margin-block-start: 1rem;
+}
+
+details.study-classes > summary,
+.study-jump > summary { cursor: pointer; padding: 0.6rem 1rem; color: #2d2d4a; }
+details.study-classes[open] > summary,
+.study-jump[open] > summary { border-block-end: 1px solid #e8e4df; }
+.study-jump nav { padding: 0.25rem 0.5rem 0.75rem; }
+
+.study-classes ol { list-style: none; margin: 0; padding: 0 1rem 0.5rem; }
+.study-class + .study-class { border-block-start: 1px solid #f0ece7; }
+.study-class-title { margin-block: 0.6rem 0.3rem; color: #2d2d4a; }
+.study-class audio { display: block; inline-size: 100%; block-size: 2.5rem; }
+.study-class-links { margin-block: 0.3rem 0.6rem; font-size: 0.85rem; color: #7a7a98; }
+
+.study-nav { display: none; }
+
+.study-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.study-nav-list a {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: #4a4a68;
+  text-decoration: none;
+}
+
+.study-nav-list a:hover { background: #f0ece7; color: #1a1a2e; }
+
+/* Not the site's `section + section` divider between sections: the h2
+   rule does that. */
+.study-section,
+.study-overview { scroll-margin-block-start: 1rem; }
+
+.study-section > h2 {
+  margin-block: 2.5rem 0.5rem;
+  padding-block-end: 0.35rem;
+  border-block-end: 2px solid #e8e4df;
+}
+
+section.study-section { margin-block-start: 0; padding-block-start: 0; border-block-start: 0; }
+
+/* Where a class starts: a rule with its name, ▶ and class page. */
+.study-divider {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.6rem;
+  margin-block: 2rem 1rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #5a5a78;
+  scroll-margin-block-start: 1rem;
+}
+
+.study-divider::before,
+.study-divider::after {
+  content: "";
+  flex: 1 1 1.5rem;
+  border-block-start: 1px dashed #c8c0b4;
+}
+
+.study-divider-label { font-weight: 600; }
+.study-divider-link { color: #3d5a80; }
+
+.study-passage { margin-block: 1.25rem 2rem; scroll-margin-block-start: 1rem; }
+
+/* The Hebrew lines (span.line, the line id), phrase by phrase. */
+.study-text { margin-block-end: 0.75rem; }
+
+/* The section number (render-textnode.html's) where it changes, in a
+   column of its own, so every line's text starts at the same edge. */
+.study-line {
+  position: relative;
+  padding-inline-start: 2.4rem;
+}
+
+.study-line .number {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 0.45rem;
+  margin: 0;
+}
+
+.study-line .line { display: block; }
+
+.phrase {
+  display: block;
+  padding-block: 0.2rem;
+}
+
+.phrase + .phrase { border-block-start: 1px solid #f0ece7; }
+
+.phrase-he {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #1a1a2e;
+}
+
+.phrase-en {
+  display: block;
+  text-align: start;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4a4a68;
+}
+
+.phrase.is-untranslated .phrase-he { color: #5a5a78; }
+
+.study-passage.is-skip .line { color: #8a8aa0; }
+
+.study-skip {
+  margin-block: 0.25rem 0;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #7a7a98;
+}
+
+/* Blocks, by kind (the tag is text, never colour alone). */
+.study-block {
+  margin-block: 0.85rem;
+  padding: 0.05rem 0 0.05rem 0.9rem;
+  border-inline-start: 3px solid #e8e4df;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+div.study-block > p { margin-block: 0.4rem; }
+
+.study-block-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.5rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+div.study-block > p.study-block-head { margin-block: 0.3rem 0.2rem; }
+
+/* An explanation has no tag: its ▶ floats beside the text (unless it names
+   another class: then it is too long to float). */
+.study-block.kind-explanation:not(.is-other-class) > .study-block-head { float: right; margin: 0.25rem 0 0.25rem 0.75rem; }
+
+.study-tag {
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7a5212;
+}
+
+.study-block-title,
+.study-join-title { font-weight: 600; color: #2d2d4a; }
+.study-block-title { font-size: 0.95rem; }
+.study-asker { color: #7a7a98; }
+
+a.study-play {
+  display: inline-block;
+  margin-inline-start: auto;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid #d4cfc8;
+  border-radius: 999px;
+  background: #fff;
+  color: #3d5a80;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+a.study-play:hover { background: #3d5a80; border-color: #3d5a80; color: #fff; }
+a.study-play:focus-visible { outline: 2px solid #3d5a80; outline-offset: 2px; }
+a.study-play.is-inline { margin-inline: 0 0.35rem; font-size: 0.75rem; vertical-align: 0.1em; }
+
+.study-block.kind-keyPoint {
+  padding: 0.35rem 0.9rem;
+  border-color: #3d5a80;
+  border-radius: 0 6px 6px 0;
+  background: #f1f4f8;
+  font-size: 1.1rem;
+}
+
+.study-block.kind-mashal,
+.study-block.kind-story,
+.study-block.kind-digression { border-color: #c08a2e; }
+.study-block.kind-avodah { border-color: #5b8a5a; }
+.study-block.kind-avodah .study-tag { color: #3f6b3e; }
+.study-block.kind-question { border-color: #8a80b0; }
+.study-question { font-style: italic; color: #2d2d4a; }
+
+.study-block.kind-aside,
+.study-block.kind-recap { color: #5a5a78; font-size: 0.98rem; border-color: #efebe6; }
+.study-block.kind-aside .study-tag,
+.study-block.kind-recap .study-tag { color: #7a7a98; }
+
+/* A joined block runs on inline; only a :target highlights it. */
+span.study-join { border: 0; padding: 0; margin: 0; font-size: inherit; }
+
+.study-block:target,
+.study-passage:target,
+.study-divider:target {
+  background: #fdf3d8;
+  box-shadow: 0 0 0 0.35em #fdf3d8;
+  border-radius: 2px;
+}
+
+@media (min-width: 48rem) {
+  /* Interlinear in two columns: Hebrew on the right, English beside it. */
+  .phrase {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 600px) {
+  .study-body h1 { font-size: 1.5rem; }
+  .study-block { padding-inline-start: 0.7rem; }
+  .study-line { padding-inline-start: 1.9rem; }
+}
+
+@media (min-width: 64rem) {
+  body:has(.study-layout) { max-width: 72rem; }
+
+  .study-layout {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .study-nav {
+    display: block;
+    position: sticky;
+    top: 1rem;
+    max-block-size: calc(100vh - 2rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.35;
+  }
+
+  .study-nav-list li { margin-block: 0.25rem; }
+  .study-jump { display: none; }
+}
+
+/* Links into the guides: a line above a chapter's text, a badge on /texts. */
+main > p.study-guide-link {
+  margin-block: 0 1.25rem;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #4a4a68;
+}
+
+ul.index-list li.has-study { position: relative; }
+ul.index-list li.has-study > a:first-child { padding-inline-end: 7.5rem; }
+
+.study-badges {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: 0.75rem;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 0.3rem;
+}
+
+
+/* Print: the guide as a booklet, without players and navigation. */
+@media print {
+  body { max-width: none; padding: 0; background: #fff; font-size: 11pt; }
+  body > nav,
+  .study-nav,
+  .study-jump,
+  .study-classes,
+  .study-links,
+  .study-divider a,
+  a.study-play,
+  audio,
+  .listen { display: none !important; }
+  .study-layout { display: block; }
+  details::details-content { content-visibility: visible; display: block; }
+  .study-block,
+  .phrase,
+  .study-divider { break-inside: avoid; }
+  .study-section > h2,
+  .study-divider,
+  .study-overview > h2 { break-after: avoid; }
+  .study-block-head:not(:has(.study-tag, .study-block-title)) { display: none; }
+}

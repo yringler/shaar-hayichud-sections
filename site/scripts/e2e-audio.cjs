@@ -13,7 +13,11 @@
  * HTML, Expand/Collapse all, side nav or "Jump to", a topic link to its
  * class), the site nav (Outlines, Search, no Translation item) and search
  * (/search/ over the Pagefind index: transliterations, prefixes, filters,
- * links to a transcript paragraph and a chapter line).
+ * links to a transcript paragraph and a chapter line) and the study guide
+ * pages (/study/: built from the public edition only, no Markel or beta
+ * anywhere else, every link into and out of them, every line, passage, phrase
+ * and block of every guide with its times, readable without JS at desktop and
+ * phone width, the Study nav item).
  *
  *   yarn build && yarn test:e2e [screenshot dir]
  *
@@ -1692,6 +1696,236 @@ async function check(name, fn) {
       }
     });
   }
+
+  // ---------------- study guide pages ----------------
+  const studyIndex = readJson(path.join(DIST, 'study', 'index.json'));
+  const studyGuides = studyIndex.series.flatMap((s) =>
+    s.chapters.map((c) => ({ series: s, entry: c, url: `/study/${s.id}/chapter-${Number(c.chapter.slice(8))}/`, guide: readJson(path.join(DIST, c.path)) })),
+  );
+  const decodeEntities = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  const htmlIds = new Map();
+  const idsIn = (file) => {
+    if (!htmlIds.has(file)) {
+      const html = fs.readFileSync(file, 'utf8');
+      htmlIds.set(file, new Set([...html.matchAll(/\sid=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)].map((m) => decodeEntities(m[1] ?? m[2] ?? m[3]))));
+    }
+    return htmlIds.get(file);
+  };
+  /** Every built HTML page outside /data/, relative to PUBLIC. */
+  const allPages = (() => {
+    const out = [];
+    const walk = (dir) => {
+      for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, d.name);
+        if (d.isDirectory()) {
+          if (rel !== 'data' && rel !== 'pagefind') walk(rel);
+        } else if (d.name.endsWith('.html')) out.push(rel);
+      }
+    };
+    walk('');
+    return out;
+  })();
+  const lectureSlug = (id) => id.toLowerCase().replace(/\.(mp3|m4a)$/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  const chapterLineIds = (key) => {
+    const ids = [];
+    const walk = (nodes) => {
+      for (const n of nodes) {
+        if (!n.children) continue;
+        for (const c of n.children) if (!c.children) ids.push(c.id);
+        walk(n.children);
+      }
+    };
+    walk(readJson(path.join(SITE, '..', 'data', 'chapters', `${key}.json`)));
+    return ids;
+  };
+
+  await check('study pages: /study/, each public series and guide is built; nothing but the public edition (no Markel, no beta, no sensitivity) outside /data/study-beta/', async () => {
+    assert.ok(studyGuides.length >= 20, `${studyGuides.length} public guides`);
+    assert.ok(fs.existsSync(path.join(PUBLIC, 'study', 'index.html')));
+    for (const s of studyIndex.series) assert.ok(fs.existsSync(path.join(PUBLIC, 'study', s.id, 'index.html')), s.id);
+    for (const g of studyGuides) assert.ok(fs.existsSync(path.join(PUBLIC, g.url, 'index.html')), g.url);
+    const built = fs.readdirSync(path.join(PUBLIC, 'study'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+    assert.deepEqual(built.sort(), studyIndex.series.map((s) => s.id).sort(), 'study series pages = the public index');
+    // The beta export is published (unlisted), and Markel (series 37) is in it but not public.
+    const beta = readJson(path.join(PUBLIC, 'data', 'study-beta', 'v1', 'study', 'index.json'));
+    assert.ok(beta.series.some((s) => s.id === 'markel-advanced'), 'the beta export lists markel-advanced');
+    assert.ok(!studyIndex.series.some((s) => s.id === 'markel-advanced' || s.catalogSeriesId === '37'), 'markel-advanced is not public');
+    const leaks = [];
+    const walk = (dir) => {
+      for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, d.name);
+        if (d.isDirectory()) {
+          // The JSON Schemas describe both editions, so they name the beta.
+          if (![path.join('data', 'study-beta'), path.join('data', 'v1', 'schema'), 'pagefind'].includes(rel)) walk(rel);
+        } else if (/\.(html|js|css|json|xml|txt)$/.test(d.name)) {
+          const text = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+          if (/markel-advanced|study-beta/.test(text) && rel !== '_headers') leaks.push(rel);
+        }
+      }
+    };
+    walk('');
+    assert.deepEqual(leaks, []);
+    // The published guides the pages are built from carry no sensitivity flags.
+    for (const g of studyGuides) {
+      for (const b of g.guide.sections.flatMap((s) => s.passages.flatMap((p) => p.blocks))) assert.ok(!('sensitivity' in b), `${g.url}: a block with sensitivity`);
+    }
+  });
+
+  await check('study pages: every link to a study page (chapter pages, class boxes, transcripts, outlines, /texts, nav) and every link on one resolves to an existing page, id and class', async () => {
+    const broken = [];
+    const into = new Map();
+    let links = 0;
+    for (const rel of allPages) {
+      const pageUrl = new URL(`/${rel.replace(/index\.html$/, '')}`, 'http://x');
+      const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+      const isStudy = rel.startsWith(`study${path.sep}`);
+      const main = isStudy ? html.slice(html.indexOf('<main'), html.lastIndexOf('</main>')) : html;
+      for (const m of main.matchAll(/<a\s[^>]*?href=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)) {
+        const u = new URL(decodeEntities(m[1] ?? m[2] ?? m[3]), pageUrl);
+        if (u.host !== 'x') continue;
+        if (!isStudy && !u.pathname.startsWith('/study/')) continue;
+        links++;
+        if (u.pathname.startsWith('/study/') && !isStudy) {
+          const kind = rel.split(path.sep)[0];
+          into.set(kind, (into.get(kind) ?? 0) + 1);
+        }
+        let file = path.join(PUBLIC, decodeURIComponent(u.pathname));
+        if (u.pathname.endsWith('/')) file = path.join(file, 'index.html');
+        const id = decodeURIComponent(u.hash.slice(1));
+        if (!fs.existsSync(file)) {
+          broken.push(`${rel}: ${u.pathname} (no page)`);
+          continue;
+        }
+        if (id && !idsIn(file).has(id)) broken.push(`${rel}: ${u.pathname}#${id} (no such id)`);
+        const cls = u.searchParams.get('class');
+        if (cls) {
+          const g = studyGuides.find((x) => x.url === u.pathname);
+          if (!g?.entry.lectures.some((l) => lectureSlug(l.id) === cls)) broken.push(`${rel}: ${u.pathname}?class=${cls} (not a class of the guide)`);
+        }
+      }
+    }
+    assert.deepEqual(broken.slice(0, 20), [], `${broken.length} broken links`);
+    // Links come in from every kind of page that should have them.
+    for (const kind of ['texts', 'he', 'classes', 'outlines', 'study']) assert.ok((into.get(kind) ?? 0) > 0 || kind === 'study', `links to the guides from /${kind}/ (${[...into]})`);
+    assert.ok(links > 1000, `${links} links checked`);
+    // Chapter pages: one "Study guide: <teacher>" line per guide of the chapter.
+    for (const g of studyGuides) {
+      const n = Number(g.entry.chapter.slice(8));
+      const html = fs.readFileSync(path.join(PUBLIC, 'texts', `chapter-${n}`, 'index.html'), 'utf8');
+      assert.match(html, new RegExp(`class="?study-guide-link"?>Study guide: <a href="?${g.url}"?><bdi lang="?en"?>${g.series.teacher}</bdi>`), `chapter ${n}`);
+    }
+    // A class box of a guided class links its guide with ?class=.
+    const g = studyGuides[0];
+    const l = g.entry.lectures[0];
+    const anyPart = allPages.filter((p) => p.startsWith(`classes${path.sep}`)).find((p) => fs.readFileSync(path.join(PUBLIC, p), 'utf8').includes(`${g.url}?class=${lectureSlug(l.id)}`));
+    assert.ok(anyPart, `a class page links ${g.url}?class=${lectureSlug(l.id)}`);
+  });
+
+  await check('study guide pages: every chapter line once (span.line id), every passage, phrase and block, with times; no writer notes (outOfPlace)', async () => {
+    const { context, page, errors } = await newPage(browser, base, { context: { viewport: { width: 1280, height: 900 }, javaScriptEnabled: false } });
+    try {
+      for (const g of studyGuides) {
+        await page.goto(`${base}${g.url}`);
+        const got = await page.evaluate(() => ({
+          lineIds: [...document.querySelectorAll('.study-text span.line[id]')].map((e) => e.id),
+          passages: [...document.querySelectorAll('.study-passage')].map((e) => e.id),
+          phrases: [...document.querySelectorAll('.phrase')].map((e) => [e.dataset.lecture ?? null, e.dataset.start ?? null, e.dataset.end ?? null]),
+          blocks: [...document.querySelectorAll('.study-block')].map((e) => [e.id, e.dataset.kind, e.dataset.lecture, e.dataset.start, e.dataset.end, e.dataset.outOfPlace ?? null]),
+          audio: [...document.querySelectorAll('audio')].map((a) => a.getAttribute('src')),
+          text: document.body.innerText,
+          ids: [...document.querySelectorAll('[id]')].map((e) => e.id),
+        }));
+        const label = g.url;
+        assert.equal(new Set(got.ids).size, got.ids.length, `${label}: duplicate ids`);
+        const lines = chapterLineIds(g.entry.chapter);
+        const guideLines = g.guide.sections.flatMap((s) => s.passages.flatMap((p) => p.lines));
+        assert.deepEqual(got.lineIds, guideLines.filter((id, i) => lines.includes(id) && guideLines.indexOf(id) === i), `${label}: line ids`);
+        if (!g.entry.stale) assert.deepEqual(got.lineIds, lines, `${label}: every chapter line, in order`);
+        const passages = g.guide.sections.flatMap((s) => s.passages);
+        assert.deepEqual(got.passages, passages.map((p) => `s-${p.lines[0]}`), `${label}: passages`);
+        const phrases = passages.flatMap((p) => p.phrases ?? []);
+        assert.deepEqual(got.phrases, phrases.map((p) => (p.en ? [p.lecture, String(p.start), String(p.end)] : [null, null, null])), `${label}: phrases`);
+        const blocks = passages.flatMap((p) => p.blocks.map((b, i) => [`b-${p.lines[0]}-${i + 1}`, b.kind, b.audio[0].lecture, String(b.audio[0].start), String(b.audio[0].end), b.outOfPlace ? '1' : null]));
+        assert.deepEqual(got.blocks, blocks, `${label}: blocks`);
+        for (const b of passages.flatMap((p) => p.blocks)) if (b.outOfPlace) assert.ok(!got.text.includes(b.outOfPlace), `${label}: shows a writer's outOfPlace note`);
+        assert.equal(got.audio.length, g.entry.lectures.length, `${label}: one <audio> per class`);
+        if (g.entry.status === 'draft') assert.match(got.text, new RegExp(`Machine-drafted from ${g.series.teacher}’ class and not yet checked against it\\. The recording is the source\\.`));
+      }
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
+
+  for (const [name, ctx] of [
+    ['desktop', { viewport: { width: 1280, height: 900 } }],
+    ['phone', { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 }],
+  ]) {
+    await check(`study guide page without JS (${name}): readable, no sideways scroll, ${name === 'desktop' ? 'side nav' : '"Jump to"'}; ▶ links open the recording at the block; anchors land`, async () => {
+      const { context, page, errors } = await newPage(browser, base, { context: { ...ctx, javaScriptEnabled: false } });
+      try {
+        const g = studyGuides.find((x) => x.entry.chapter === 'chapter_10') ?? studyGuides[0];
+        await page.goto(`${base}${g.url}`);
+        await page.evaluate(() => document.fonts.ready);
+        assert.equal(await page.locator('h1').textContent(), g.guide.title);
+        assert.ok(await page.locator('.study-notice').first().isVisible());
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), ctx.viewport.width, 'no sideways scroll');
+        const side = page.locator('nav.study-nav');
+        const jump = page.locator('details.study-jump');
+        assert.equal(await side.isVisible(), name === 'desktop');
+        assert.equal(await jump.isVisible(), name !== 'desktop');
+        const sections = g.guide.sections.length;
+        assert.equal(await side.locator('a[href^="#sec-"]').count(), sections);
+        // Hebrew in Taamey D, right to left; the teacher's English left to right.
+        const he = await page.locator('.study-text').first().evaluate((e) => [e.getAttribute('lang'), getComputedStyle(e).direction, getComputedStyle(e).fontFamily]);
+        assert.deepEqual(he.slice(0, 2), ['he', 'rtl']);
+        assert.match(he[2], /Taamey D/);
+        assert.equal(await page.locator('.phrase-en').first().evaluate((e) => getComputedStyle(e).direction), 'ltr');
+        // A block's ▶ is a link to the class recording at the block's start.
+        const block = page.locator('.study-block[data-start]').nth(3);
+        const [lecture, start] = await block.evaluate((e) => [e.dataset.lecture, e.dataset.start]);
+        const href = await block.locator('a.study-play').first().getAttribute('href');
+        const catalogUrl = await page.locator(`li.study-class[data-lecture="${lecture}"] audio`).getAttribute('src');
+        assert.equal(href, `${catalogUrl}#t=${start}`);
+        // Anchors: a passage, a block and a line.
+        const p = g.guide.sections[1].passages[0];
+        for (const id of [`s-${p.lines[0]}`, `b-${p.lines[0]}-1`, p.lines[0]]) {
+          await page.goto(`${base}${g.url}#${id}`);
+          const top = await page.locator(`[id="${id}"]`).evaluate((e) => e.getBoundingClientRect().top);
+          assert.ok(top >= -2 && top < 120, `#${id} at ${top}`);
+        }
+        await page.goto(`${base}${g.url}`);
+        await page.screenshot({ path: path.join(shots, `study-top-${name}.png`) });
+        await page.goto(`${base}${g.url}#s-${p.lines[0]}`);
+        await page.screenshot({ path: path.join(shots, `study-passage-${name}.png`) });
+        assert.deepEqual(errors, []);
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
+  await check('/study/ and the series page list the public guides; the Study nav item on English and Hebrew pages', async () => {
+    for (const [rel, label] of [['index.html', 'Study'], ['he/index.html', 'מדריך לימוד'], ['texts/chapter-10/index.html', 'Study']]) {
+      const nav = /<nav>([\s\S]*?)<\/nav>/.exec(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'))?.[1] ?? '';
+      assert.match(nav, new RegExp(`<a href="?/classes/"?>[^<]*</a>\\s*<a href="?/study/"?>${label}</a>\\s*<a href="?/outlines/"?>`), `${rel}: Study between Classes and Outlines`);
+    }
+    const { context, page, errors } = await newPage(browser, base);
+    try {
+      await page.goto(`${base}/study/`);
+      const cards = page.locator('.study-series-card');
+      assert.equal(await cards.count(), studyIndex.series.length);
+      await cards.first().locator('h2 a').click();
+      await page.waitForURL(`${base}/study/${studyIndex.series[0].id}/`);
+      const items = page.locator('.study-chapter-list a');
+      assert.equal(await items.count(), studyIndex.series[0].chapters.length);
+      await items.first().click();
+      await page.waitForURL(`${base}${studyGuides[0].url}`);
+      assert.deepEqual(errors, []);
+    } finally {
+      await context.close();
+    }
+  });
 
   // ---------------- site nav ----------------
   await check('site nav: Outlines on English and Hebrew pages, no Translation; the Texts page links the translation', async () => {

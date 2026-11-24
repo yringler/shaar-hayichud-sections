@@ -1,0 +1,53 @@
+{{- /* Where a guide page (layouts/study/single.html) marks the start of each
+       class. Context: the guide (study.schema.json). Walks the passages in
+       document order (a passage's phrases, then its blocks) over the
+       in-place items only: timed phrases and blocks without outOfPlace (an
+       outOfPlace block was said elsewhere: a Q and A tape, a later class).
+       A class starts at its first in-place item: before the passage when
+       that is the passage's first in-place item, else before the first
+       in-place block of that class in the passage, else (only phrases of it
+       there) before the next passage.
+       Returns dict
+         "passage": first line id -> slice of lecture ids starting before it
+         "block":   "<first line id>-<n>" (n from 1) -> lecture id starting before it
+       A class with no in-place item (a Q and A tape) gets no divider. */ -}}
+{{- $seen := newScratch -}}
+{{- $out := newScratch -}}
+{{- $out.Set "passage" dict -}}
+{{- $out.Set "block" dict -}}
+{{- $pending := slice -}}
+{{- range $section := .sections -}}
+  {{- range $p := $section.passages -}}
+    {{- $key := index $p.lines 0 -}}
+    {{- $items := slice -}}
+    {{- range $p.phrases -}}
+      {{- with .lecture }}{{ $items = $items | append (dict "k" "p" "i" 0 "l" .) }}{{ end -}}
+    {{- end -}}
+    {{- range $i, $b := $p.blocks -}}
+      {{- if not $b.outOfPlace -}}
+        {{- $items = $items | append (dict "k" "b" "i" (add $i 1) "l" (index $b.audio 0).lecture) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $before := $pending -}}
+    {{- $pending = slice -}}
+    {{- $new := newScratch -}}
+    {{- range $j, $it := $items -}}
+      {{- if and (not ($seen.Get $it.l)) (not ($new.Get $it.l)) -}}
+        {{- $new.Set $it.l true -}}
+        {{- if eq $j 0 -}}
+          {{- $before = $before | append $it.l -}}
+        {{- else -}}
+          {{- $blocks := where (where $items "k" "b") "l" $it.l -}}
+          {{- with $blocks -}}
+            {{- $out.SetInMap "block" (printf "%s-%d" $key (index . 0).i) $it.l -}}
+          {{- else -}}
+            {{- $pending = $pending | append $it.l -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range $it := $items }}{{ $seen.Set $it.l true }}{{ end -}}
+    {{- with $before }}{{ $out.SetInMap "passage" $key . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- return dict "passage" ($out.Get "passage") "block" ($out.Get "block") -}}

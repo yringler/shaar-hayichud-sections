@@ -6,6 +6,13 @@
     {{- $hideHebrew := .Params.hideHebrew | default false -}}
     {{- /* Published class alignments for this chapter, if any: a player plus
            data-t (best start, seconds) on every aligned line. */ -}}
+    {{- /* "Study guide: <teacher>", one line per public series with a guide
+           for this chapter (partials/study/index.html). Plain links, so they
+           work without JS. */ -}}
+    {{- $strings := index site.Data.i18n (.Params.pageLang | default "en") -}}
+    {{- range index (partialCached "study/index.html" . "study").chapters $chapterKey }}
+    <p class="study-guide-link">{{ $strings.study.guide }}: <a href="{{ .url }}"><bdi lang="en">{{ .teacher }}</bdi></a></p>
+    {{- end }}
     {{- $lineTimes := dict -}}
     {{- $aligned := false -}}
     {{- if not $hideHebrew -}}

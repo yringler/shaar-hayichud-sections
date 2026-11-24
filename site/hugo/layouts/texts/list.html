@@ -16,13 +16,15 @@
     {{ range $key, $val := site.Data.chapters }}
       {{ $chapters = $chapters | append $key }}
     {{ end }}
+    {{- /* A chapter with public study guides gets a badge per guide
+           (partials/study/index.html), beside its card. */}}
+    {{ $study := partialCached "study/index.html" . "study" }}
     {{ range sort $chapters }}
       {{ $numStr := replaceRE `^chapter_0*` "" . }}
-      {{ if eq $lang "he" }}
-      <li><a href="/he/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
-      {{ else }}
-      <li><a href="/texts/chapter-{{ $numStr }}/">Chapter {{ $numStr }}</a></li>
-      {{ end }}
+      {{ $guides := index $study.chapters . }}
+      <li{{ with $guides }} class="has-study"{{ end }}><a href="{{ printf "%s/texts/chapter-%s/" (cond (eq $lang "he") "/he" "") $numStr }}">Chapter {{ $numStr }}</a>
+        {{- with $guides }}<span class="study-badges">{{ range . }}<a class="study-badge" href="{{ .url }}" title="{{ $strings.study.guide }}: {{ .teacher }}">{{ $strings.study.badge }}</a>{{ end }}</span>{{ end -}}
+      </li>
     {{ end }}
   </ul>
 
