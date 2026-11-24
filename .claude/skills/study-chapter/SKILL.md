@@ -148,8 +148,9 @@ it. For each block, the question is "did he say this, here?"
 - [ ] Nothing was softened. Where his wording is blunt, the block is.
 - [ ] No one in the class is in the text: a student, his wife, the
       teacher's family appear as "a frum woman", "a small child", "a friend".
-- [ ] Condensed, not transcribed: each block is about a third to a half of
-      the words it cites, and still has his examples and best lines. A
+- [ ] Condensed, not transcribed: each block is about a third of the words
+      it cites (up to half only for the cases STYLE.md, Size, names), and
+      still has his examples and best lines. The chapter comes to 30-40%. A
       point he hammers several times in a row is said once, flagged or not.
 - [ ] Written as a guide: his spoken lines are prose in the guide's voice;
       at most one short quote of his per block (sources stay quoted); acted-out

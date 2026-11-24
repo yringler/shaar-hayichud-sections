@@ -164,8 +164,15 @@ A block is one thought of the class. It has a `kind`, `text`, and `audio`.
 | `digression` | a longer excursion away from the text | `title` |
 | `recap` | a later summary of the passage (often the next class's opening) | |
 
-- **Size.** 30 to 150 words, and about a third to a half of the words it
-  cites (the check warns past 60% on a stretch of 120 words or more). A long
+- **Size.** 30 to 150 words, and about **a third** of the words it cites.
+  Go longer, up to half, only when each sentence he says is a separate step
+  of an argument, when a *mashal* or story's details carry the point, when
+  he said it tersely the first time (a short stretch with no restatement),
+  or when most of the stretch is his reading and translation of the line.
+  Restatement, false starts, setup, "you know" and the listener's replies
+  never justify length. Past half is a defect: the check warns past 50% on a
+  stretch of 120 words or more, and when a chapter's blocks pass 45% of the
+  class words they cite. A chapter normally comes to 30-40%. A long
   explanation is several blocks, one per
   step; set `"join": true` on a block that continues the previous block's
   paragraph. If he only translates a line, one short block is enough.
