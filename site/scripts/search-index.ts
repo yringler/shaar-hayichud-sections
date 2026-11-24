@@ -21,7 +21,13 @@
  * - PARAGRAPHS_PER_RECORD transcript paragraphs (<transcript page>#t<N>,
  *   where play.js arms the player to start there); filter "teacher" is the
  *   series title;
- * - a class's outline topics (each its topic deep link on the class page).
+ * - a class's outline topics (each its topic deep link on the class page);
+ * - a public study guide's passage (filter "in" is Study guides, "teacher"
+ *   the catalog series title): the Hebrew of its lines (from the chapter's
+ *   published text), the teacher's English of its phrases and each block's
+ *   prose, all linking <guide>#s-<first line id>. One record per passage,
+ *   not per block, keeps the file count down. Only the public index
+ *   (data/v1/study/) is read.
  * Content is indexContent() of the parts' text (search/text.ts); the parts
  * keep the original text for display.
  */
@@ -41,6 +47,26 @@ interface Manifest {
     transcriptUrl: string;
     partUrl: string;
     anchor: string;
+  }[];
+  /** Public study guides (study/index.json): guide page, guide JSON (relative to data/v1/), chapter key. */
+  study?: {
+    url: string;
+    path: string;
+    chapter: string;
+    number: string;
+    teacher: string;
+    series: string;
+  }[];
+}
+
+interface StudyGuideJson {
+  sections: {
+    title: string;
+    passages: {
+      lines: string[];
+      phrases?: { he: string; en?: string }[];
+      blocks: { title?: string; question?: string; text: string }[];
+    }[];
   }[];
 }
 
@@ -81,6 +107,14 @@ const readJson = <T>(path: string): T => JSON.parse(readFileSync(path, 'utf8')) 
 /** Footnote digit markers are stripped from chapter text, as render-textnode.html does. */
 const stripFootnotes = (s: string) => s.replace(/\d+/g, '');
 
+/** Study guide prose as plain text: the emphasis markers (*, **, _) of its Markdown dropped. */
+const plainProse = (s: string) =>
+  s
+    .replace(/\*+/g, '')
+    .replace(/(^|[^\p{L}\p{N}])_+|_+(?=[^\p{L}\p{N}]|$)/gu, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+
 async function main(): Promise<void> {
   const publicDir = resolve(process.argv[2] ?? 'hugo/public');
   const manifestPath = join(publicDir, 'search', 'manifest.json');
@@ -94,7 +128,7 @@ async function main(): Promise<void> {
   if (!created.index) throw new Error(`pagefind: ${created.errors.join('; ')}`);
   const index = created.index;
 
-  const counts = { text: 0, translation: 0, class: 0, topic: 0 };
+  const counts = { text: 0, translation: 0, class: 0, topic: 0, study: 0 };
   const add = async (kind: keyof typeof counts, meta: Record<string, string>, filters: Record<string, string[]>, parts: Part[]) => {
     const first = parts[0];
     const content = indexContent(parts.map((p) => p[2]).join(' '));
@@ -166,13 +200,41 @@ async function main(): Promise<void> {
     );
   }
 
+  for (const g of manifest.study ?? []) {
+    const lineText = new Map<string, string>();
+    const walk = (nodes: (TextLine | TextSection)[]) => {
+      for (const n of nodes) {
+        if (isSection(n)) walk(n.children);
+        else lineText.set(n.id, stripFootnotes(n.text));
+      }
+    };
+    walk(readJson<TextSection[]>(join(publicDir, 'texts', `${g.chapter}.json`)));
+    const guide = readJson<StudyGuideJson>(join(publicDir, 'data', 'v1', g.path));
+    for (const section of guide.sections) {
+      for (const p of section.passages) {
+        const first = p.lines[0];
+        if (!first) continue;
+        const href = `${g.url}#s-${first}`;
+        const hebrew = p.lines.map((id) => lineText.get(id) ?? '').filter(Boolean).join(' ');
+        const english = (p.phrases ?? []).map((ph) => (ph.en ? plainProse(ph.en) : '')).filter(Boolean).join(' ');
+        const blocks = p.blocks.map((b) => plainProse([b.title, b.question, b.text].filter(Boolean).join(' · ')));
+        await add(
+          'study',
+          { title: section.title, context: `Chapter ${g.number} · ${g.teacher}` },
+          { in: ['Study guides'], teacher: [g.series] },
+          [hebrew, english, ...blocks].filter(Boolean).map((t): Part => [href, '', t]),
+        );
+      }
+    }
+  }
+
   const written = await index.writeFiles({ outputPath: join(publicDir, 'pagefind') });
   if (written.errors.length) throw new Error(`pagefind: ${written.errors.join('; ')}`);
   await pagefind.close();
   rmSync(manifestPath);
   console.log(
     `Search index: ${counts.text} text sections, ${counts.translation} translated sections, ` +
-      `${counts.class} transcript records, ${counts.topic} class outlines → ${join(publicDir, 'pagefind')}`,
+      `${counts.class} transcript records, ${counts.topic} class outlines, ${counts.study} study passages → ${join(publicDir, 'pagefind')}`,
   );
 }
 

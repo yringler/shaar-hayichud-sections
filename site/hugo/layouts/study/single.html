@@ -1,0 +1,250 @@
+{{ define "main" }}
+  {{- /* A study guide page, /study/<series>/chapter-N/
+         (content/study/_content.gotmpl), from the public guide
+         data/v1/study/<series>/chapter_NN.json, all pre-rendered and readable
+         without JS:
+         - breadcrumb, title, links to the chapter text and the class pages,
+           the draft / stale notices, the classes (a plain <audio preload=none>
+           each, URL from the catalog), the overview;
+         - each section (id sec-<first line>) with its passages: the Hebrew
+           lines (span.line id=<line id>, once per line) cut into the class's
+           phrases, the teacher's English under each, then the blocks
+           (partials/study/block.html), and a class divider (id c-<slug>)
+           where each class starts (partials/study/plan.html).
+         Anchors: passage s-<first line id>, block b-<first line id>-<n>
+         (n from 1 in the passage; they move when a guide is edited). Timed
+         elements carry data-lecture, data-start, data-end (seconds).
+         Guards: a block with `sensitivity` (only the beta export has them)
+         fails the build. Line ids missing from the chapter (a stale guide)
+         are rendered from the guide's own Hebrew, or left out, never fatal. */ -}}
+  {{- $study := partialCached "study/index.html" . "study" -}}
+  {{- $series := index (where $study.series "id" .Params.studySeries) 0 -}}
+  {{- $entry := index (where $series.chapters "chapter" .Params.studyChapter) 0 -}}
+  {{- if not $entry }}{{ errorf "study: no guide %s/%s in the study index" .Params.studySeries .Params.studyChapter }}{{ end -}}
+  {{- $g := resources.Get $entry.path | transform.Unmarshal -}}
+  {{- if or (ne $g.series $series.id) (ne $g.chapter $entry.chapter) -}}
+    {{- errorf "study: %s is %s/%s, not %s/%s" $entry.path $g.series $g.chapter $series.id $entry.chapter -}}
+  {{- end -}}
+  {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
+  {{- $audio := partialCached "audio/index.html" . "audio" -}}
+
+  {{- /* Public edition only, and every lecture the guide cites. */ -}}
+  {{- $ids := slice -}}
+  {{- range $entry.lectures }}{{ $ids = $ids | append .id }}{{ end -}}
+  {{- range $g.overviewAudio }}{{ $ids = $ids | append .lecture }}{{ end -}}
+  {{- range $g.sections -}}
+    {{- range .passages -}}
+      {{- range .phrases }}{{ with .lecture }}{{ $ids = $ids | append . }}{{ end }}{{ end -}}
+      {{- range .blocks -}}
+        {{- if isset . "sensitivity" -}}
+          {{- errorf "study: a block of %s has `sensitivity`: only the public edition may be rendered (is the beta export mounted where a template can read it?)" $entry.path -}}
+        {{- end -}}
+        {{- range .audio }}{{ $ids = $ids | append .lecture }}{{ end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* lecture id -> dict "id" "url" (recording) "label" "slug" "start"
+         (its part of the chapter) "info" (audio/lectures.html) "transcript" */ -}}
+  {{- $starts := newScratch -}}
+  {{- range $entry.lectures }}{{ $starts.Set .id .start }}{{ end -}}
+  {{- $cls := newScratch -}}
+  {{- $order := slice -}}
+  {{- range $id := $ids | uniq -}}
+    {{- $info := index $lectures $id -}}
+    {{- if not $info }}{{ errorf "study: %s cites lecture %q, which is not in the catalog" $entry.path $id }}{{ end -}}
+    {{- $label := $info.lecture.title -}}
+    {{- with $info.headings -}}
+      {{- $last := index . (sub (len .) 1) -}}
+      {{- if and (ne $last (printf "Chapter %s" $entry.number)) (ne $last $label) }}{{ $label = printf "%s · %s" $last $label }}{{ end -}}
+    {{- end -}}
+    {{- $slug := $id | lower | replaceRE `\.(mp3|m4a)$` "" | replaceRE `[^a-z0-9]+` "-" -}}
+    {{- $slug = strings.Trim $slug "-" -}}
+    {{- $cls.SetInMap "m" $id (dict "id" $id "url" $info.lecture.url "label" $label "slug" $slug
+      "start" (($starts.Get $id) | default 0) "info" $info "transcript" (index $audio.transcripts $id)) -}}
+    {{- $order = $order | append $id -}}
+  {{- end -}}
+  {{- $classes := $cls.Get "m" -}}
+
+  {{- /* The chapter's lines: id -> dict "text" "number". */ -}}
+  {{- $lineInfo := newScratch -}}
+  {{- range partialCached "audio/chapter-lines.html" $entry.chapter $entry.chapter -}}
+    {{- $lineInfo.Set .id . -}}
+  {{- end -}}
+  {{- $plan := partial "study/plan.html" $g -}}
+  {{- $divided := slice -}}
+  {{- range $plan.passage }}{{ $divided = $divided | append . }}{{ end -}}
+  {{- range $plan.block }}{{ $divided = $divided | append . }}{{ end -}}
+  {{- $teacherKey := replaceRE `[^A-Za-z0-9]+` "" $series.title -}}
+  {{- $possessive := cond (hasSuffix $series.teacher "s") (printf "%s’" $series.teacher) (printf "%s’s" $series.teacher) -}}
+
+  <div class="ltr-content study-layout">
+    <nav class="study-nav" aria-label="Sections of this guide">
+      {{ template "study-nav" $g }}
+    </nav>
+    <article class="study-body" data-study data-series="{{ $series.id }}" data-chapter="{{ $entry.chapter }}">
+      <p class="breadcrumb"><a href="/study/">Study guides</a> → <a href="{{ $series.url }}">{{ $series.teacher }}</a> → Chapter {{ $entry.number }}</p>
+      <h1>{{ $g.title }}</h1>
+      <p class="study-links">
+        <a class="audio-link" href="/texts/chapter-{{ $entry.number }}/?teacher={{ $teacherKey }}">Chapter text</a>
+        {{- $parts := newScratch -}}
+        {{- range $order -}}
+          {{- $c := index $classes . -}}
+          {{- if not ($parts.Get $c.info.partUrl) -}}
+            {{- $parts.Set $c.info.partUrl true -}}
+            <a class="audio-link" href="{{ $c.info.classUrl }}">Class page{{ with $c.info.part }}: {{ .title }}{{ end }}</a>
+          {{- end -}}
+        {{- end }}
+      </p>
+      {{- if eq $g.status "draft" }}
+      <p class="study-notice">Machine-drafted from {{ $possessive }} class and not yet checked against it. The recording is the source.</p>
+      {{- end }}
+      {{- if $g.stale }}
+      <p class="study-notice is-stale">Out of date: parts of this guide no longer match the chapter’s current text or the recordings’ timing.</p>
+      {{- end }}
+
+      {{- $next := index (where $series.chapters "number" (string (add (int $entry.number) 1))) 0 }}
+      {{ partial "study/player.html" (dict "entry" $entry "classes" $classes "next" $next) }}
+
+      <details class="study-classes" id="classes">
+        <summary>Classes on this chapter <span class="study-count">{{ len $entry.lectures }}</span></summary>
+        <ol>
+          {{- range $entry.lectures }}
+          {{- $c := index $classes .id }}
+          {{- $cont := "" }}
+          {{- with .continuesIn }}{{ with index (where $series.chapters "chapter" .) 0 }}{{ $cont = .url }}{{ end }}{{ end }}
+          <li class="study-class" data-lecture="{{ .id }}" data-start="{{ .start }}" data-end="{{ .end }}" data-label="{{ $c.label }}" data-url="{{ $c.url }}"
+            {{- with .continuesIn }} data-continues-in="{{ . }}"{{ end }}{{ with $cont }} data-continues-url="{{ . }}"{{ end }}>
+            <p class="study-class-title">{{ $c.label }} <span class="study-count">{{ partial "format-time.html" .start }}–{{ partial "format-time.html" .end }}</span></p>
+            <audio controls preload="none" src="{{ $c.url }}" data-no-js></audio>
+            <p class="study-class-links">
+              {{- if in $divided .id }}<a href="#c-{{ $c.slug }}">Where it starts</a> · {{ end -}}
+              <a href="{{ $c.info.classUrl }}">Class page</a>
+              {{- with $c.transcript }} · <a href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end }}
+            </p>
+          </li>
+          {{- end }}
+        </ol>
+      </details>
+
+      <details class="study-jump">
+        <summary>Jump to</summary>
+        <nav aria-label="Sections of this guide">{{ template "study-nav" $g }}</nav>
+      </details>
+
+      <section class="study-overview" id="overview">
+        <h2>Overview</h2>
+        {{ .RenderString (dict "display" "block") $g.overview }}
+        {{- with $g.overviewAudio }}
+        <p class="study-overview-audio">Where the class sums it up:
+          {{- range . }} {{ partial "study/play.html" (dict "audio" . "class" (index $classes .lecture) "current" "" "inline" true) }}{{ end }}</p>
+        {{- end }}
+      </section>
+
+      {{- $seenLines := newScratch -}}
+      {{- $prevNumber := "" -}}
+      {{- $current := "" -}}
+      {{- range $si, $section := $g.sections }}
+      <section class="study-section" id="sec-{{ index (index $section.passages 0).lines 0 }}">
+        <h2>{{ $section.title }}</h2>
+        <div class="study-summary">{{ $.RenderString (dict "display" "block") $section.summary }}</div>
+        {{- range $p := $section.passages }}
+        {{- $key := index $p.lines 0 }}
+        {{- range index $plan.passage $key }}
+          {{- $current = . }}
+          {{- template "study-divider" (dict "class" (index $classes .)) }}
+        {{- end }}
+        {{- /* The passage's time: its first in-place item's class, from the
+               earliest to the latest in-place item of that class here. */ -}}
+        {{- $pl := "" }}{{ $ps := -1.0 }}{{ $pe := -1.0 }}
+        {{- $timed := slice }}
+        {{- range $p.phrases }}{{ if isset . "start" }}{{ $timed = $timed | append (dict "l" .lecture "s" .start "e" .end) }}{{ end }}{{ end }}
+        {{- range $p.blocks }}{{ if not .outOfPlace }}{{ with index .audio 0 }}{{ if isset . "start" }}{{ $timed = $timed | append (dict "l" .lecture "s" .start "e" .end) }}{{ end }}{{ end }}{{ end }}{{ end }}
+        {{- with $timed }}{{ $pl = (index . 0).l }}{{ end }}
+        {{- range where $timed "l" $pl }}
+          {{- if or (lt $ps 0.0) (lt .s $ps) }}{{ $ps = .s }}{{ end }}
+          {{- if gt .e $pe }}{{ $pe = .e }}{{ end }}
+        {{- end }}
+        <div class="study-passage{{ with $p.skip }} is-skip{{ end }}" id="s-{{ $key }}"{{ if $pl }} data-lecture="{{ $pl }}" data-start="{{ $ps }}" data-end="{{ $pe }}"{{ end }}>
+          {{- /* Phrases grouped by the first of their lines (a phrase over two
+                 lines sits on the first; a line with no phrase of its own is
+                 an empty anchor). */ -}}
+          {{- $byLine := newScratch }}
+          {{- range $p.phrases }}
+            {{- $l := index (.lines | default (slice $key)) 0 }}
+            {{- if not (in $p.lines $l) }}{{ $l = $key }}{{ end }}
+            {{- $byLine.Add $l (slice .) }}
+          {{- end }}
+          <div class="study-text" lang="he" dir="rtl">
+            {{- range $lid := $p.lines }}
+            {{- $info := $lineInfo.Get $lid }}
+            {{- $first := not ($seenLines.Get $lid) }}
+            {{- $seenLines.Set $lid true }}
+            <div class="study-line">
+              {{- with $info }}{{ if ne .number $prevNumber }}<span class="number">{{ .number }}</span>{{ $prevNumber = .number }}{{ end }}{{ end -}}
+              <span class="line{{ if not $info }} is-unknown{{ end }}"{{ if $first }} id="{{ $lid }}"{{ end }} data-line="{{ $lid }}">
+              {{- with $p.phrases }}
+                {{- range $byLine.Get $lid }}
+                <span class="phrase{{ if not .en }} is-untranslated{{ end }}"{{ with .lecture }} data-lecture="{{ . }}"{{ end }}{{ if isset . "start" }} data-start="{{ .start }}" data-end="{{ .end }}"{{ end }}><span class="phrase-he">{{ replaceRE `\d+` "" .he }}</span>
+                  {{- with .en }}<span class="phrase-en" lang="en" dir="ltr">{{ $.RenderString . }}</span>{{ end }}</span>
+                {{- end }}
+              {{- else }}
+                {{- with $info }}{{ replaceRE `\d+` "" .text }}{{ end }}
+              {{- end -}}
+              </span>
+            </div>
+            {{- end }}
+          </div>
+          {{- with $p.skip }}
+          <p class="study-skip">{{ if eq .reason "no-recording" }}No class in this series reads these lines.{{ else }}Read and translated in class, with nothing more said.{{ end }}</p>
+          {{- end }}
+          {{- /* Blocks, each with the join blocks that follow it. */ -}}
+          {{- $groups := slice }}
+          {{- range $bi, $b := $p.blocks }}
+            {{- $n := add $bi 1 }}
+            {{- $item := dict "block" $b "id" (printf "b-%s-%d" $key $n) "n" $n }}
+            {{- if and $b.join $groups }}
+              {{- $last := index $groups (sub (len $groups) 1) }}
+              {{- $groups = first (sub (len $groups) 1) $groups | append (dict "main" $last.main "joins" ($last.joins | append $item)) }}
+            {{- else }}
+              {{- $groups = $groups | append (dict "main" $item "joins" slice) }}
+            {{- end }}
+          {{- end }}
+          {{- range $groups }}
+            {{- with index $plan.block (printf "%s-%d" $key .main.n) }}
+              {{- $current = . }}
+              {{- template "study-divider" (dict "class" (index $classes .)) }}
+            {{- end }}
+            {{- partial "study/block.html" (dict "page" $ "block" .main.block "id" .main.id "joins" .joins "classes" $classes "current" $current) }}
+          {{- end }}
+        </div>
+        {{- end }}
+      </section>
+      {{- end }}
+    </article>
+  </div>
+  {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
+  <script type="module" src="{{ $scripts.study.RelPermalink }}" integrity="{{ $scripts.study.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+
+{{- /* The sections of a guide as anchor links (side nav and "Jump to"). */ -}}
+{{ define "study-nav" }}
+<ol class="study-nav-list">
+  <li><a href="#overview">Overview</a></li>
+  {{- range .sections }}
+  <li><a href="#sec-{{ index (index .passages 0).lines 0 }}">{{ .title }}</a></li>
+  {{- end }}
+  <li><a href="#classes">Classes</a></li>
+</ol>
+{{ end }}
+
+{{- /* Where a class starts: its name, a ▶ link to its recording at its
+       part of the chapter, and its class page. Context: dict "class". */ -}}
+{{ define "study-divider" }}
+{{- $c := .class }}
+<p class="study-divider" id="c-{{ $c.slug }}" data-lecture="{{ $c.id }}" data-start="{{ $c.start }}">
+  <span class="study-divider-label">Class: {{ $c.label }}</span>
+  <a class="study-play" href="{{ $c.url }}#t={{ $c.start }}" aria-label="Play {{ $c.label }} from {{ partial "format-time.html" $c.start }}">▶ {{ partial "format-time.html" $c.start }}</a>
+  <a class="study-divider-link" href="{{ $c.info.classUrl }}">Class page</a>
+</p>
+{{- end }}

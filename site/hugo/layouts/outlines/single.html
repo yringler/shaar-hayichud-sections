@@ -9,6 +9,7 @@
   {{ $catalog := partial "catalog.html" . }}
   {{ $series := index $catalog.series .Params.seriesIndex }}
   {{ $tree := partialCached "outlines/tree.html" $series $series.id }}
+  {{ $study := partialCached "study/index.html" . "study" }}
   <div class="ltr-content outlines-layout">
     <nav class="outlines-nav" aria-label="Parts of this series">
       {{ partial "outlines/nav.html" $tree }}
@@ -36,6 +37,13 @@
           {{ if .chapter }}
           <section class="outline-chapter" id="{{ .anchor }}">
             <h3>{{ .title }}</h3>
+            {{- /* The guides that the heading's classes are in (study/index.html). */}}
+            {{- $guides := slice }}
+            {{- $numbers := newScratch }}
+            {{- range .classes }}{{ range index $study.lectures .lecture.id }}{{ $guides = $guides | append .page }}{{ $numbers.Set .page .number }}{{ end }}{{ end }}
+            {{- with $guides | uniq }}
+            <p class="outline-part-link">{{ range $i, $g := . }}{{ if $i }} · {{ end }}<a href="{{ $g }}">Study guide for Chapter {{ $numbers.Get $g }}</a>{{ end }}</p>
+            {{- end }}
             {{ range .classes }}{{ partial "outlines/class-details.html" . }}{{ end }}
           </section>
           {{ else }}

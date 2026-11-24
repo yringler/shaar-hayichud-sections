@@ -22,6 +22,10 @@
   <p class="transcript-follow">Follow it in the text of
     {{- range $i, $c := .all }}{{ if $i }} and{{ end }} <a class="audio-link" href="{{ $c.url }}{{ $teacher }}">{{ replaceRE `^chapter_0*` "Chapter " $c.chapter }}</a>{{ end }}</p>
   {{- end }}
+  {{- with index (partialCached "study/index.html" . "study").lectures $id }}
+  <p class="transcript-follow">Study guide for this class:
+    {{- range $i, $g := . }}{{ if $i }} and{{ end }} <a class="audio-link" href="{{ $g.url }}">Chapter {{ $g.number }}</a>{{ end }}</p>
+  {{- end }}
   <p class="transcript-about">{{ $info.series.title }}.
     Machine transcription (Sofer.ai): expect mistakes, especially in Hebrew terms.
     {{- with index $audio.outlines $id }} Topic headings are auto-generated.{{ end }}</p>
