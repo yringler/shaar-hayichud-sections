@@ -302,8 +302,7 @@
                 "reason": "Applies the line to Arafat and to Israel's peace-making: whatever he offers, even peace, is wrong.",
                 "action": "replace",
                 "publishable": "Whatever the *menaged* wants, even to give you a present, there is something wrong with it, as the Trojans found out. With the *l'umas zeh*, it does not matter what it is or how nice it looks.",
-                "recommend": "judgment",
-                "judgmentNote": "The series prints harsh descriptions of terrorists raw (NOTES.md), but this one is also a view on Israeli policy (peace with Arafat). Weigh whether the political application is the teaching or his aside."
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -335,9 +334,8 @@
                   "other-groups"
                 ],
                 "reason": "Calls the teaching that the Torah agrees with science, as some outreach presents it, a heresy, and heresy worse than idol worship.",
-                "action": "replace",
-                "publishable": "And heresy is worse than *avoda zara* (idol worship): from *avoda zara* one does *teshuva* more easily. Look at what the *Rambam* says of a heretic. Menashe did all the *avoda zara* and then did *teshuva*. Achav and the like did not, yet the *Aibershter* (the One Above, G-d) still sent them prophets to urge them: the gates were open, they only had to do it. But of *Acher* a voice said that everyone can do *teshuva* except *Acher*. Nothing stands in the way of *teshuva*, and he could have; but the gates were closed.",
-                "recommend": "raw"
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -370,7 +368,8 @@
                 ],
                 "reason": "Names an outreach organization's website and says it misquotes sources.",
                 "action": "replace",
-                "publishable": "And it is *davka* intellectual. It says: how could science be wrong? And I am not telling you the Torah is wrong and science is right; I am only showing you how the Torah really says like science. Then they come up with lies: the *Ramban* said such a thing, or Rabbi Yitzchak of Acco, or Rashi; they even quoted Yonasan ben Uziel and misquoted Rashi. But Rashi says seven days, and seven days is seven days. Rashi never said such a thing."
+                "publishable": "And it is *davka* intellectual. It says: how could science be wrong? And I am not telling you the Torah is wrong and science is right; I am only showing you how the Torah really says like science. Then they come up with lies: the *Ramban* said such a thing, or Rabbi Yitzchak of Acco, or Rashi; they even quoted Yonasan ben Uziel and misquoted Rashi. But Rashi says seven days, and seven days is seven days. Rashi never said such a thing.",
+                "reviewed": "2026-11-24"
               }
             }
           ]
@@ -414,7 +413,8 @@
                 ],
                 "reason": "Names the Kabbalah Centre, and calls the people who come to Chabad from such places witches, warlocks, vampires and crazy people.",
                 "action": "replace",
-                "publishable": "Others will bring in people, and the people will look and say, wait a minute, something is wrong here. And the *yetzer hara* will come to us, because the *Chassidus* we teach is made to addict the *yetzer hara*, through the *nefesh habehamis* (the animal soul): the worst addiction there is. The *Aibershter* created the *yetzer hara* and a *tavlin* (spice) for it: the *yetzer hara* has the drug to addict everybody else, and we have the drug to addict him. So look who is coming to us. Sooner or later they end up by us, because by us it is like a *shilya*, a *kelipa*."
+                "publishable": "Others will bring in people, and the people will look and say, wait a minute, something is wrong here. And the *yetzer hara* will come to us, because the *Chassidus* we teach is made to addict the *yetzer hara*, through the *nefesh habehamis* (the animal soul): the worst addiction there is. The *Aibershter* created the *yetzer hara* and a *tavlin* (spice) for it: the *yetzer hara* has the drug to addict everybody else, and we have the drug to addict him. So look who is coming to us. Sooner or later they end up by us, because by us it is like a *shilya*, a *kelipa*.",
+                "reviewed": "2026-11-24"
               }
             }
           ]
@@ -531,10 +531,8 @@
                   "other-groups"
                 ],
                 "reason": "Abortion as a holocaust bigger than the Holocaust, set against the attention paid to homosexuals.",
-                "action": "replace",
-                "publishable": "For instance, abortion: the abortions of the last forty years worldwide, he thinks, are in the hundreds of millions. And yet, where is the *shevira* (the breaking)?",
-                "recommend": "judgment",
-                "judgmentNote": "His view of abortion is a Torah position he holds, but the comparison with the Holocaust and the jab at the attention paid to homosexuals are his delivery. Weigh whether the publishable text keeps enough of the example."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -566,7 +564,8 @@
                 ],
                 "reason": "Mocks ecology, global warming and the balance of nature as reasons to kill people.",
                 "action": "replace",
-                "publishable": "There are all kinds of analyses: a lot of children do not get a proper education, or will grow up in bad situations, with starvation. The conclusion: good, so let's kill them. A good *uvchein*: we will solve all the world's problems."
+                "publishable": "There are all kinds of analyses: a lot of children do not get a proper education, or will grow up in bad situations, with starvation. The conclusion: good, so let's kill them. A good *uvchein*: we will solve all the world's problems.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -695,7 +694,8 @@
                 ],
                 "reason": "Names a living scientist and author as the basis of the con.",
                 "action": "replace",
-                "publishable": "Not a single *gadol* said that. What they say is all based on some scientist, and then they make it fit what the *Rambam* said. But the *Rambam* did not say that: ask him and he would say it was seven days; ask Rashi, seven days, *kipshuto* (literally). Ask them whether Adam came from a monkey, and they would say no, it was a specific creation. That is *pshat* in the Torah."
+                "publishable": "Not a single *gadol* said that. What they say is all based on some scientist, and then they make it fit what the *Rambam* said. But the *Rambam* did not say that: ask him and he would say it was seven days; ask Rashi, seven days, *kipshuto* (literally). Ask them whether Adam came from a monkey, and they would say no, it was a specific creation. That is *pshat* in the Torah.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -717,7 +717,7 @@
                 "reason": "Quotes Rosenberg calling Darwin \"the meshuga\" (crazy).",
                 "action": "replace",
                 "publishable": "On Darwinism, as in an email he sent: Yudel Rosenberg (he gropes for the name), who translated the *Zohar* into Hebrew, writes that according to the *Zohar* there was not evolution but devolution: the apes came from people. There were apparently two points, a devolution by Kayin and, he thinks, another by the people of the Tower of Bavel; by Kayin he knows for sure. Rosenberg writes that maybe this is where Darwin got his ideas. He is of the school of the real kabbalists, a real *ben Torah*, with *haskamos* (approbations) from practically every *gadol* in Europe, Rabbi Chaim Berlin among them, and of course the Rebbe Rashab. For Lubavitch there is no need to go to Rosenberg: we have the letters of the Rebbe, straight, that this is a heresy. So where do they get that the *gedolim* said such a thing?",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -764,7 +764,8 @@
                 ],
                 "reason": "An identifiable rabbi, labelled \"the YU type\", who \"totally does not understand what he is talking about\".",
                 "action": "replace",
-                "publishable": "A rabbi wrote a whole thing against what the Rebbe says about *kefiya* (compelling) of the *goyim*, bringing various opinions. One says that in our days you cannot kill a *goy*; but the *Rambam* never said you could: for that you need a *beis din* that can kill, and that is not what *kefiya* means. Another, the *Rema* or someone, says that even when the Sanhedrin had the power, you could not kill him before the sentence was passed; you had to take him to *beis din*. So how does that disprove what the Rebbe said?"
+                "publishable": "A rabbi wrote a whole thing against what the Rebbe says about *kefiya* (compelling) of the *goyim*, bringing various opinions. One says that in our days you cannot kill a *goy*; but the *Rambam* never said you could: for that you need a *beis din* that can kill, and that is not what *kefiya* means. Another, the *Rema* or someone, says that even when the Sanhedrin had the power, you could not kill him before the sentence was passed; you had to take him to *beis din*. So how does that disprove what the Rebbe said?",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -796,7 +797,8 @@
                 ],
                 "reason": "The same identifiable rabbi: he twisted the sources, \"saving us from the Lubavitcher Rebbe\".",
                 "action": "replace",
-                "publishable": "Like lighting a fire on Shabbos, which the *Rambam* calls *halacha l'Moshe miSinai*, and nobody disagrees with him. Whoever twists the other opinions thinks he is right, that he is helping out. They do not think it is a *kefira*. That is what it says: first the *yetzer hara* comes and tells you to do a mitzva, and they think it is a mitzva. That is *Arami oved avi*: the *Arami* messed up their brains, and they cannot think straight anymore. It is cunning, the *chachma* of *kelipa*."
+                "publishable": "Like lighting a fire on Shabbos, which the *Rambam* calls *halacha l'Moshe miSinai*, and nobody disagrees with him. Whoever twists the other opinions thinks he is right, that he is helping out. They do not think it is a *kefira*. That is what it says: first the *yetzer hara* comes and tells you to do a mitzva, and they think it is a mitzva. That is *Arami oved avi*: the *Arami* messed up their brains, and they cannot think straight anymore. It is cunning, the *chachma* of *kelipa*.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -817,8 +819,7 @@
                 "reason": "Says those who do not hold of chachmas ha'emes have a Yiddishkeit of cunning and falsehood and want your money.",
                 "action": "replace",
                 "publishable": "**It's a *chachma* to do bad**: so their whole thing is bad, even what does not look like heresy, all their nice-looking sermons. They are wise to do evil and not to do good, on anything. **Really they're not *chachamim***: it is only *armumis* (cunning) and falsehood. *Chachma* means *chachmas ha'emes* (the wisdom of truth), this teaching. \"As is known\": who doesn't know this?",
-                "recommend": "judgment",
-                "judgmentNote": "That a chachma cut off from chachmas ha'emes is cunning is the line's own teaching; the whole Yiddishkeit of those who reject Kabbala and \"what they want is your money\" are his. Weigh how much of the second to keep."
+                "reviewed": "2026-11-24"
               }
             }
           ]
@@ -1026,7 +1027,8 @@
                 ],
                 "reason": "\"Their brain is in their behind.\"",
                 "action": "replace",
-                "publishable": "But it is an upside-down *partzuf*: it goes down, not up. The whole thing is upside down. *Belial* means they are not going to go up but down: the ten *sefiros* of *kelipa* are upside down, a downward motion. And the man who wrestled is the one fighting with Yaakov."
+                "publishable": "But it is an upside-down *partzuf*: it goes down, not up. The whole thing is upside down. *Belial* means they are not going to go up but down: the ten *sefiros* of *kelipa* are upside down, a downward motion. And the man who wrestled is the one fighting with Yaakov.",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1073,7 +1075,7 @@
                 "reason": "Calls philosophers the worst people of all, worse than murderers, and the head of the kelipa.",
                 "action": "replace",
                 "publishable": "It is the reverse; so where is the worst of it? Not in the murderer in the street but in the *omek*, the *chachma*: *Keser*, *chachma* and *bina*, the philosophy behind this whole thing. It still starts in the *mochin* (the intellect) and goes down to the *middos*, only upside down, and it is called sorcery and the deeds of sorcery; in the language of the Gemara, the gates of impurity.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             }
           ]
@@ -1198,9 +1200,8 @@
                   "other-groups"
                 ],
                 "reason": "Applies \"the chesed of Yishmael\" to the Arabs: hospitality for honor, and they might kill you if it is not acknowledged.",
-                "action": "replace",
-                "publishable": "He will do the *chesed*, but because he wants the honor, to be a big shot; and if you do not acknowledge what a great host he is, he will get mad. That is the next thing the text says.",
-                "recommend": "raw"
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1431,7 +1432,7 @@
                 "reason": "Of the impure kelipos of \"the wilderness of the nations\": the nations' whole delight is only in this world and only in bad things.",
                 "action": "replace",
                 "publishable": "They are *Keser* of *kelipa*: utter evil with no mixture of good at all. What does *Keser* of *kelipa* mean, when the nations are *mamash* *Asiya*? Upside down. **Totally bad**.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -1452,7 +1453,7 @@
                 "reason": "Says of them (the nations of the line before) that what they love is to go to war.",
                 "action": "replace",
                 "publishable": "This is called \"a wicked man who has evil\". And **there's no *birur* for them at all**, only in the future, as it is written, \"I will remove the spirit of impurity\" entirely. And that will happen in the future: meaning tomorrow.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             }
           ]

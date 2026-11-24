@@ -347,7 +347,7 @@
                 "reason": "Says non-Jews are not intrinsic to creation, only extrinsic.",
                 "action": "replace",
                 "publishable": "The whole world is extrinsic; it really does not need to exist at all.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -380,8 +380,7 @@
                 "reason": "Dismisses motherhood (\"what do you need motherhood for?\") and calls the taste of food part of the evil; a reader could take it as contempt for mothers and ordinary life.",
                 "action": "replace",
                 "publishable": "People think G-d loves the world and loves people, and that is why He made them. He would not have to make people; He would have destroyed the world at the giving of the Torah: \"If you accept the Torah, fine. If not, I'm going to destroy it all. What do I need it for?\" There is no intrinsic value in the world per se, absolutely none. It is not a wonderful world full of love: as you go up, even the love of a mother in *Asiya* is a bigger thing, and you would not think of these things anymore. Or that Chinese food and shish kebab: just for that it was worth having a world? Absolutely not true. The taste of the food is part of the evil.",
-                "recommend": "judgment",
-                "judgmentNote": "Whether \"what do you need motherhood for?\" is only his delivery, or part of the teaching that the world's goods are nothing beside the higher worlds; the taste of food as part of the evil is kept in both texts as his position."
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -763,10 +762,8 @@
                   "politics"
                 ],
                 "reason": "Names Arafat, Bin Laden and Bush together as the kingdoms of Yishmael and Edom.",
-                "action": "replace",
-                "publishable": "\"Behold, G-d rides on a swift cloud,\" and the *Zohar*'s clouds for a chariot: the *Aibershter* is riding on it. Even the rulers of today, the different kingdoms, the kingdom of Yishmael and the kingdom of Edom, have *Malchus* of *Asiya* dressed in them, and what is happening is what the *Aibershter* wanted to happen right now.",
-                "recommend": "judgment",
-                "judgmentNote": "The kingdoms of Yishmael and Edom are the teaching; whether naming a US president beside Arafat and Bin Laden prints as said is a call on present-day politics."
+                "action": "keep",
+                "reviewed": "2026-11-24"
               }
             },
             {
@@ -788,7 +785,7 @@
                 "reason": "Says of a real terror attack (Madrid) that it was G-d who struck.",
                 "action": "replace",
                 "publishable": "\"Shall the axe boast over the one who hews with it?\" The *Aibershter* is holding them. If you get hit by the axe, who hit you? It was the *Aibershter*.",
-                "recommend": "raw"
+                "reviewed": "2026-11-24"
               }
             }
           ]
