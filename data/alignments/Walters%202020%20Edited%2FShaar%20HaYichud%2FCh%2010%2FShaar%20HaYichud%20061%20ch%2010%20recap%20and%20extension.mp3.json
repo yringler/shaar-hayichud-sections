@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 10/Shaar HaYichud 061 ch 10 recap and extension.mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2010%2FShaar%20HaYichud%20061%20ch%2010%20recap%20and%20extension.mp3.json",
+  "transcriptionId": "845c1d66-ca7b-4015-bb51-a94fe47c294c",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "sofer"
+  },
+  "stats": {
+    "transcriptWords": 3840,
+    "hebrewWords": 189,
+    "matchedWords": 5,
+    "chapterLines": 91,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}

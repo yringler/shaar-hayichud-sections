@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 10/Shaar HaYichud 057 ch 10 intro recap.mp3",
+  "chapter": "chapter_10",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2010%2FShaar%20HaYichud%20057%20ch%2010%20intro%20recap.mp3.json",
+  "transcriptionId": "eba04858-342a-426a-9188-bdb8f87e2437",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "sofer"
+  },
+  "stats": {
+    "transcriptWords": 1289,
+    "hebrewWords": 76,
+    "matchedWords": 3,
+    "chapterLines": 91,
+    "alignedLines": 0,
+    "firstLineIndex": -1,
+    "lastLineIndex": -1,
+    "meanConfidence": 0
+  },
+  "segments": []
+}
