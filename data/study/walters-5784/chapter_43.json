@@ -1,0 +1,3664 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-5784",
+  "chapter": "chapter_43",
+  "title": "Thought, speech and action through the chain of descent",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 6",
+    "date": "2026-11-24"
+  },
+  "lectures": [
+    {
+      "id": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+      "transcriptionId": "dcaefdbc-ea26-4fab-a8af-a6d5a41d7a63"
+    }
+  ],
+  "overview": "This stretch of the chapter follows one paradigm, thought (*machshava*), speech (*dibur*) and action (*maaseh*), through the whole chain of descent (*seder hishtalshelus*). Its first example is the end of the deed: the final deeds of our *avoda* arose in G-d's first thought, the cause of the whole chain. G-d's essential thought has the same three parts: the final deed, the speech of thought (letters engraved within the self, \"He said and it came to be\"), and the thought of thought, where an idea is plugged into words. The words \"I will be king\" (*Ana Emloch*) express the will and wisdom behind creation.\n\nAfter the *tzimtzum* the pattern goes down again, through the *ratzon kadum*, *Adam Kadmon*, *Atik Yomin* and *Arich Anpin*. It also runs through a person, whose hidden thought descends to the feelings of the heart, called *Leah*; speech is *Rachel*. The large *dalet* of *Echad*, speech still joined to its source in thought, and *Zeir Anpin*'s ten *sefiros* show the same paradigm. The chapter closes with *Etz Chaim*: the heel of Leah enters the head of Rachel, humility is the heel and fear is the head, and action is proper only when the inner *kavana* is present.",
+  "terms": [
+    {
+      "term": "machshava",
+      "he": "מחשבה",
+      "gloss": "thought",
+      "line": "ikv26oay"
+    },
+    {
+      "term": "dibur",
+      "he": "דיבור",
+      "gloss": "speech",
+      "line": "hnevns3d"
+    },
+    {
+      "term": "maaseh",
+      "he": "מעשה",
+      "gloss": "action",
+      "line": "hnevns3d"
+    },
+    {
+      "term": "tzimtzum",
+      "he": "צמצום",
+      "gloss": "contraction",
+      "line": "ikv26oay"
+    },
+    {
+      "term": "ratzon kadum",
+      "he": "רצון קדום",
+      "gloss": "the preceding (primordial) will",
+      "line": "jwkvxllu"
+    },
+    {
+      "term": "Adam Kadmon",
+      "he": "אדם קדמון",
+      "gloss": "lit. primordial man; the first world",
+      "line": "k3jzeq2t"
+    },
+    {
+      "term": "Zeir Anpin",
+      "he": "זעיר אנפין",
+      "gloss": "lit. the small countenance; the middos of Atzilus",
+      "line": "agpahsq3"
+    },
+    {
+      "term": "Leah",
+      "he": "לאה",
+      "gloss": "the level of thought that clothes the middos of the heart",
+      "line": "4emrdz4d"
+    },
+    {
+      "term": "Rachel",
+      "he": "רחל",
+      "gloss": "the level of speech that clothes the middos",
+      "line": "m3zv7cn2"
+    },
+    {
+      "term": "dalet rabasi",
+      "he": "דלת רבתי",
+      "gloss": "the large dalet: speech still joined to its source in thought",
+      "line": "ifj4g4xc"
+    },
+    {
+      "term": "tevuna",
+      "he": "תבונה",
+      "gloss": "understanding; the source that creates associations",
+      "line": "gay6mng2"
+    },
+    {
+      "term": "osios",
+      "he": "אותיות",
+      "gloss": "letters: the symbols of thought and speech",
+      "line": "tlyjtirn"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Every level has thought, speech and action, and the end of the deed comes first",
+      "summary": "The three levels of thought, speech and action appear at every stage of the chain of worlds. In G-d's essential thought, the final deed came first, and G-d knows the world as something that appears separate.",
+      "passages": [
+        {
+          "lines": [
+            "ikv26oay"
+          ],
+          "phrases": [
+            {
+              "he": "(מג)",
+              "en": "Chapter 43",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2, 3],
+                "start": 1.68,
+                "end": 2.52
+              }
+            },
+            {
+              "he": "ומכל הנזכר לעיל יובן",
+              "en": "from all this it's understood",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [228, 232],
+                "start": 80.8,
+                "end": 81.53
+              }
+            },
+            {
+              "he": "גם כן הנמשל",
+              "en": "they'll be able to understand the *nimshal*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [259, 265],
+                "start": 97.4,
+                "end": 99.12
+              }
+            },
+            {
+              "he": "למשכיל למעלה בהתבוננות",
+              "en": "how we find what these ideas represent in G-dliness",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [266, 274],
+                "start": 99.6,
+                "end": 102.74
+              }
+            },
+            {
+              "he": "כמה פרטים בהשתלשלות",
+              "en": "from this many details of the *seder hishtalshelus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [280, 288],
+                "start": 104.62,
+                "end": 107
+              }
+            },
+            {
+              "he": "מלמעלה מעלה עד למטה מטה",
+              "en": "from the highest level to the lowest level",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [289, 296],
+                "start": 107,
+                "end": 108.68
+              }
+            },
+            {
+              "he": "שנכללו כולם בכלל אל מקור הראשון",
+              "en": "how they're all all of the levels of the *seder hishtalshelus* really are all going back to their original source",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [303, 322],
+                "start": 109.62,
+                "end": 120.3
+              }
+            },
+            {
+              "he": "שהוא כאשר עלה במחשבתו הפשוטה",
+              "en": "when it arose in G-d's simple thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [329, 335],
+                "start": 122.58,
+                "end": 125.4
+              }
+            },
+            {
+              "he": "כו' בעצמות אור אין סוף שלפני הצמצום",
+              "en": "in the infinite light, the essence of the infinite light before the *tzimtzum*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [385, 397],
+                "start": 140.12,
+                "end": 145.72
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The class has finished its first discussion of letters, thought and speech. Now the whole *seder hishtalshelus* is tied to that theme: every concept learned so far, from the light before the *tzimtzum* to *machshava* and *dibur*, is found on every level, each according to its place.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [0, 224],
+                  "start": 0.52,
+                  "end": 80.5
+                }
+              ],
+              "outOfPlace": "Opening remarks before the class reads line 1; they set up the theme for the whole chapter."
+            },
+            {
+              "kind": "explanation",
+              "text": "Understood in this way, a person can see the *nimshal* and the many details of the *seder hishtalshelus*, from the highest level to the lowest, all returning to the first source.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [225, 306],
+                  "start": 80.5,
+                  "end": 115.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "All the levels go back to their source, which arose in G-d's simple thought. The infinite light before the *tzimtzum* is G-d's self-expression, His revelation to Himself, and everything is an extension of it on the model of *machshava* and *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [307, 427],
+                  "start": 115.2,
+                  "end": 155.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "hnevns3d"
+          ],
+          "phrases": [
+            {
+              "he": "שכלול מג' מדריגות מחשבה דבור ומעשה שבמחשבה הנזכר לעיל",
+              "en": "that this original thought for creation included these three aspects of the thought, speech, and action of thought that we discussed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [436, 456],
+                "start": 155.84,
+                "end": 169.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The original thought includes the three levels. The *maaseh* of *machshava* is picturing something outside yourself, just its image: an apple, a chair, a tree.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [428, 492],
+                  "start": 155.84,
+                  "end": 182.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *dibur* of *machshava* creates symbols for those things: the thing itself, and a symbol standing for something.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [493, 529],
+                  "start": 182.6,
+                  "end": 196.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *machshava* of *machshava* arranges those symbols into words, which express an idea higher than the letters: intellect and emotion expressed in thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [530, 589],
+                  "start": 196.94,
+                  "end": 215.3
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "What would that be in the *nimshal*?",
+              "askedBy": "teacher",
+              "text": "The answer follows in the next passage.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [590, 604],
+                  "start": 215.72,
+                  "end": 218.94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ddg6itfk"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת מעשה שבמחשבה העצמית שבעצמות ממש",
+              "en": "That the level of *maaseh* of *machshava*, the way it is in the essential thought before the *tzimtzum*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [619, 636],
+                "start": 225,
+                "end": 230.46
+              }
+            },
+            {
+              "he": "הוא כמו ענין סוף מעשה שעלה במחשבה תחלה",
+              "en": "is the fact that the final deeds of us people doing our *avoda* down here on earth, that arose in Hashem's original thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [637, 663],
+                "start": 231.04,
+                "end": 243.4
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *maaseh* of *machshava* in G-d's essential thought is like the end of a deed: our final *avoda* arose in His original thought, before the *tzimtzum*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [605, 663],
+                  "start": 218.94,
+                  "end": 243.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The first thing G-d envisioned, the cause of the whole chain.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [664, 685],
+                  "start": 243.52,
+                  "end": 251.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The end of the deed comes first: our *avoda* arose first, and the whole *seder* came from it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [686, 726],
+                  "start": 251.66,
+                  "end": 264.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2ghoadj3"
+          ],
+          "phrases": [
+            {
+              "he": "(ודלא כלשון הרמב\"ם",
+              "en": "and this is different from what this is not referring to what the *Rambam* speaks about",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [730, 745],
+                "start": 266.58,
+                "end": 271.4
+              }
+            },
+            {
+              "he": "בידיעת עצמו יודע את הכל",
+              "en": "that with G-d's knowledge of himself he knows everything",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [754, 762],
+                "start": 273.98,
+                "end": 276.44
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The line is not referring to the Rambam's statement that G-d knows everything through His knowledge of Himself.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [727, 762],
+                  "start": 264.9,
+                  "end": 276.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "a2n6eqzc"
+          ],
+          "phrases": [
+            {
+              "he": "אלא מה שיודע את כל ההשתלשלות דאבי\"ע בידיעה שחוץ ממנו,"
+            },
+            {
+              "he": "היינו בחינת עשיה שבמחשבה,",
+              "en": "In other words, when we're speaking about the idea of the *osios* of *machshava*, *dibur*, and *maaseh*, this is G-d's ability to create things that appear separate",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [773, 799],
+                "start": 282.28,
+                "end": 291.46
+              }
+            },
+            {
+              "he": "כמו שחושב בציור דבר נבדל,",
+              "en": "this is the idea like a person that's picturing in their mind the image of something separate",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [874, 892],
+                "start": 312.92,
+                "end": 317.98
+              }
+            },
+            {
+              "he": "הגם שאין לך דבר חוץ כו')",
+              "en": "even though in G-dliness there's nothing outside of G-d, but G-d has this ability to create something as if it is separate",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [898, 919],
+                "start": 319.32,
+                "end": 327.16
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "G-d knows the worlds through knowledge outside Himself: *asiya* of *machshava*, an ability to create what seems separate.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [763, 799],
+                  "start": 276.44,
+                  "end": 291.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Already in His essence G-d has the *hiyuli*, the essential ability to create things that will appear separate, and knowledge of what they would be like.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [800, 858],
+                  "start": 291.94,
+                  "end": 306.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A person pictures something separate from himself, though nothing is outside G-d. G-d can create something as if it were separate; from our side, once the world exists, the knowledge of what it will be was already there: the *maaseh* of *machshava*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [859, 948],
+                  "start": 306.9,
+                  "end": 333.8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Speech and the thought of thought in G-d's essential thought",
+      "summary": "In G-d's essence, speech is a symbolic language made as a garment for what is essential, and the thought of thought is the way an idea is plugged into words.",
+      "passages": [
+        {
+          "lines": [
+            "hcpmyn4y"
+          ],
+          "phrases": [
+            {
+              "he": "ובחינת דבור שבמחשבה"
+            },
+            {
+              "he": "העצמית",
+              "en": "what's the level of *dibur* of G-d's essential thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1010, 1018],
+                "start": 360.54,
+                "end": 363.3
+              }
+            },
+            {
+              "he": "הוא כמו מה ששיער בעצמו בכח מה שעתיד להיות בהשתלשלות",
+              "en": "that G-d estimated what's going to be in the whole *seder hishtalshelus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1073, 1084],
+                "start": 385.96,
+                "end": 388.54
+              }
+            },
+            {
+              "he": "כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The writer and the audience",
+              "text": "A person creating something, such as a story or a movie, pictures the audience's perspective as well as his own. We have this too.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [949, 1005],
+                  "start": 333.8,
+                  "end": 356.7
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "question": "What is the level of *dibur* of G-d's essential thought?",
+              "askedBy": "teacher",
+              "text": "It is when we create symbols for sensations, which are more essential. Speech is then the language made as a *levush*, a garment.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1006, 1055],
+                  "start": 358.42,
+                  "end": 379.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So G-d, in His essential thought, estimated what would be in the whole *seder hishtalshelus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1056, 1085],
+                  "start": 380.16,
+                  "end": 388.68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "tlyjtirn"
+          ],
+          "phrases": [
+            {
+              "he": "שזה שנאמר גליף גליפו בטהירו עילאה,",
+              "en": "like it says that G-d engraved letters in the upper light, the upper purity",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1092, 1105],
+                "start": 392.28,
+                "end": 397.92
+              }
+            },
+            {
+              "he": "חקיקת אותיות בעצמות כו'",
+              "en": "the engraving of letters within the self",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1317, 1323],
+                "start": 464.88,
+                "end": 466.48
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Gelif gelifo* (an engraving of an engraving) means an engraving for something else: letters engraved in the upper light.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1086, 1126],
+                  "start": 388.8,
+                  "end": 410.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The letters are a *levush* expressing something essential: the essential idea is the first engraving, and what the letters are engraved for is the second, the creation of a symbolic language.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1127, 1197],
+                  "start": 410.2,
+                  "end": 431.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *seder hishtalshelus* is a means to an end: G-d wanted something essential, and could have created the world in many other ways.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1198, 1255],
+                  "start": 431.58,
+                  "end": 446.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That He chose these ten *sefiros* and these worlds is all a *levush*. The plan behind it is the *dibur* of *machshava*, the engraving of letters within the self.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1256, 1323],
+                  "start": 446.6,
+                  "end": 466.48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "o3zcvz53"
+          ],
+          "phrases": [
+            {
+              "he": "וכן מה שכתוב כי הוא אמר,",
+              "en": "this level of the *dibur* of *machshava* is expressed when we say, that G-d said",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1329, 1347],
+                "start": 468.9,
+                "end": 476.22
+              }
+            },
+            {
+              "he": "במחשבה העצמית, ויהי,",
+              "en": "within His essential thought, which is *dibur* of *machshava*, and it came to be",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1365, 1378],
+                "start": 480.32,
+                "end": 484.08
+              }
+            },
+            {
+              "he": "ההוא אמר ולא יעשה,",
+              "en": "does G-d say and it doesn't come to be",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1389, 1397],
+                "start": 487.12,
+                "end": 489.28
+              }
+            },
+            {
+              "he": "על ידי צמצום הראשון",
+              "en": "G-d's initial thought with Himself is expressed after the *tzimtzum* or through the *tzimtzum*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1477, 1490],
+                "start": 514.54,
+                "end": 518.38
+              }
+            },
+            {
+              "he": "כו' וכהאי גוונא",
+              "en": "and so other types of sources are referring to this level",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1493, 1503],
+                "start": 519.68,
+                "end": 523.26
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The level of *dibur* of *machshava* shows when we say \"He said and it came to be\": He said within His essential thought, and it came to be.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1324, 1379],
+                  "start": 466.48,
+                  "end": 484.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Does G-d say and it doesn't come to be? In Hebrew, *amar* can mean thinking, or speaking what is on your mind; *dibur* focuses on the speech itself.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1380, 1451],
+                  "start": 484.7,
+                  "end": 504.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "\"Does G-d say and it doesn't happen\" is His initial thought with Himself, expressed after or through the *tzimtzum*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1452, 1490],
+                  "start": 506.32,
+                  "end": 518.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Other sources refer to this level.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1491, 1503],
+                  "start": 518.78,
+                  "end": 523.26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "hhmwe4yh"
+          ],
+          "phrases": [
+            {
+              "he": "כי כל אמירה הוא בבחינת דבור שבמחשבה הנזכר לעיל",
+              "en": "Whenever it uses the term *amira*, *amar*, that verb in Hebrew, that *shoresh*, refers to *dibur* of *machshava*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1512, 1532],
+                "start": 526.6,
+                "end": 534.36
+              }
+            },
+            {
+              "he": "(שלמעלה משמיעת דבור זולתו,",
+              "en": "this is higher than when you're hearing what somebody else is saying",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1557, 1576],
+                "start": 544.06,
+                "end": 548.7
+              }
+            },
+            {
+              "he": "כמו הטה אזנך ושמע",
+              "en": "lend your ear and listen",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1581, 1585],
+                "start": 552.96,
+                "end": 554.36
+              }
+            },
+            {
+              "he": "כו' ויקשב וישמע",
+              "en": "they hearkened, they paid attention and they listened",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1589, 1596],
+                "start": 556,
+                "end": 559.28
+              }
+            },
+            {
+              "he": "וכהאי גוונא)"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Every *amira* (saying) is *dibur* of *machshava*, and *amar* refers to it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1504, 1532],
+                  "start": 523.9,
+                  "end": 534.36
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Higher than hearing someone else is speaking to yourself in your mind, preparing what you will say. Hearing others is another aspect, as in \"lend your ear and listen\".",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1533, 1598],
+                  "start": 534.92,
+                  "end": 559.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That is a different matter. Here the subject is G-d planning how He will express what He wants to create: the *dibur* of *machshava*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1599, 1667],
+                  "start": 560.44,
+                  "end": 581.4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "r3th4bn7"
+          ],
+          "phrases": [
+            {
+              "he": "ומחשבה שבמחשבה העצמית",
+              "en": "what's the thought of the thought, the essential thought of thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1671, 1681],
+                "start": 583.68,
+                "end": 586.48
+              }
+            },
+            {
+              "he": "היינו כמו שמבואר למעלה",
+              "en": "So just like we explained before",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1693, 1698],
+                "start": 591.9,
+                "end": 593.08
+              }
+            },
+            {
+              "he": "במחשבת השכלת הענין בצירופים",
+              "en": "the level of thought of thought is when a person is using their thought to express an idea, and so they're taking their idea and then they're plugging it in to words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1699, 1730],
+                "start": 593.5,
+                "end": 602.8
+              }
+            },
+            {
+              "he": "שונים כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "question",
+              "question": "What is the thought of the thought, the essential thought of thought?",
+              "askedBy": "teacher",
+              "text": "A person uses thought to express an idea, plugging it into words so that it expresses an intellect (*sechel*). Learning a language is one thing; using it to express thoughts and feelings is another.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1668, 1762],
+                  "start": 581.8,
+                  "end": 611.84
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "I will be king: the will and wisdom behind creation, and the depth of G-d's thought",
+      "summary": "G-d's will to be King rests on His essential wisdom and will, and the chesed that awakened creation was stirred by our deeds. The depth of His thought is infinite, and our avoda reveals it.",
+      "passages": [
+        {
+          "lines": [
+            "jubfhfxl"
+          ],
+          "phrases": [
+            {
+              "he": "והוא כאשר עלה ברצונו ומחשבתו אנא אמלוך",
+              "en": "This is when it arose in G-d's will and in His thought, \"I will be king.\"",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1770, 1785],
+                "start": 614.88,
+                "end": 618.98
+              }
+            },
+            {
+              "he": "וכהאי גוונא,"
+            },
+            {
+              "he": "והוא על פי חכמתו ורצונו העצמית כו'",
+              "en": "they're based on G-d's essential wisdom and essential will",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1860, 1868],
+                "start": 644.04,
+                "end": 646.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "It arose in G-d's will and thought, as *Ana Emloch*, the idea of \"I will be king.\" There was an intention for creation, the *dira b'tachtonim* (a dwelling below), expressed within the plan of creating the world.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1763, 1840],
+                  "start": 612.16,
+                  "end": 636.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The words \"I will be king\" rest on G-d's essential wisdom and will.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1841, 1868],
+                  "start": 636.44,
+                  "end": 646.78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5i5n2bmc"
+          ],
+          "phrases": [
+            {
+              "he": "וזהו שאמר והיה העולם,",
+              "en": "and this is what it says, that G-d said and the world came into being",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1873, 1887],
+                "start": 650.1,
+                "end": 652.68
+              }
+            },
+            {
+              "he": "בבחינת מלכות דאין סוף,",
+              "en": "This is the level of *Malchus* of *Ein Sof*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1892, 1900],
+                "start": 654.3,
+                "end": 656.9
+              }
+            },
+            {
+              "he": "אנא אמלוך כו'",
+              "en": "which is the idea of *Ana Emloch*, that I will be king",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1922, 1934],
+                "start": 664.96,
+                "end": 667.82
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "On the level of *Malchus* of *Ein Sof*, G-d said and the world came into being. One aspect within it conveys His *ratzon* and *sechel*, the idea of \"I will be king.\"",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1869, 1934],
+                  "start": 648.04,
+                  "end": 667.82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wdunw4ry"
+          ],
+          "phrases": [
+            {
+              "he": "(ולפי זה מה שנתעורר בחינת חפץ חסד הראשון",
+              "en": "when we say that the original desire for creating the world, which is the original *chafetz chesed*, G-d's desire to do kindness, to create the world so that there'll be creatures to do kindness",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1948, 1981],
+                "start": 674.2,
+                "end": 683.9
+              }
+            },
+            {
+              "he": "על ידי מעשה התחתונים",
+              "en": "and that was based on G-d envisioning our *avoda*, what we were going to do",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [1982, 1997],
+                "start": 684.1,
+                "end": 688.48
+              }
+            },
+            {
+              "he": "כו' שמחמתו עלה במחשבתו ורצונו",
+              "en": "that's what triggered the *chafetz chesed*, and that's what caused it to arise in G-d's thought and will",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2056, 2078],
+                "start": 708.68,
+                "end": 716.42
+              }
+            },
+            {
+              "he": "כו', הרי הוא מגיע לתחלת התעוררות הרצון במחשבה העצמית",
+              "en": "So that means that our actions goes up to this highest level of the *ratzon* that's within the essential *machshava*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2099, 2118],
+                "start": 723.66,
+                "end": 733.12
+              }
+            },
+            {
+              "he": "וכו')"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The original desire to create, the *chafetz chesed*, was awakened through the deeds of the lower ones: G-d wanted creatures to do kindness.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1935, 1994],
+                  "start": 668.3,
+                  "end": 688.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "As the Rebbe emphasizes, the whole *seder hishtalshelus*, even the highest *Or Ein Sof*, exists for our *avoda*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [1995, 2037],
+                  "start": 688.16,
+                  "end": 701.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d envisioned our deeds, which triggered the *chafetz chesed*; it arose in His thought and will, and then the revelation of the powers. So our *avoda* reaches the arousal of the will.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2038, 2118],
+                  "start": 701.78,
+                  "end": 733.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Our *avoda* reaches the beginning of the thought, up to the cause of the entire *seder hishtalshelus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2119, 2169],
+                  "start": 733.12,
+                  "end": 746.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "bzlsxgjj"
+          ],
+          "phrases": [
+            {
+              "he": "וזה שכתוב נפלאותיך ומחשבותיך אלינו",
+              "en": "and this is what it says, that Your wonders and Your thoughts are to us",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2172, 2189],
+                "start": 748.16,
+                "end": 756.56
+              }
+            },
+            {
+              "he": "כו' עצמו מספר",
+              "en": "they are too great or too many or too intense, too great to be able to be described",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2192, 2209],
+                "start": 757.78,
+                "end": 763.58
+              }
+            },
+            {
+              "he": "כמו שכתוב לתבונתו אין מספר",
+              "en": "like it says, there's no number to Your understanding",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2212, 2223],
+                "start": 764.58,
+                "end": 769.04
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Your wonders and Your thoughts are too great, too many, too intense to describe; there is no number to His understanding, as the verse says.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2170, 2223],
+                  "start": 747.3,
+                  "end": 769.04
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "vl6eexit"
+          ],
+          "phrases": [
+            {
+              "he": "כי לפי ערך העמקת החכמה והדעת,",
+              "en": "that according to the depth of the wisdom or the idea that is being expressed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2241, 2255],
+                "start": 778.16,
+                "end": 783.64
+              }
+            },
+            {
+              "he": "כן ערך העמקת בחינת המחשבה",
+              "en": "so that's when we say the depth of a thought, it means how deep is the idea that's expressed behind it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2256, 2276],
+                "start": 783.86,
+                "end": 789.58
+              }
+            },
+            {
+              "he": "העצמית בעצמות אור אין סוף,"
+            },
+            {
+              "he": "כמו מה מאד עמקו מחשבותיך",
+              "en": "like we say, how deep are Your thoughts",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2351, 2362],
+                "start": 812.16,
+                "end": 815.78
+              }
+            },
+            {
+              "he": "וכנזכר לעיל ודי למבין."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The depth of a thought is the depth of the idea behind it; so too G-d's essential thought in the essence of the infinite light.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2224, 2276],
+                  "start": 769.04,
+                  "end": 789.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This infinite wisdom and infinite will being expressed can never be fully investigated or expressed: every creature is a variation of this original thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2277, 2366],
+                  "start": 789.92,
+                  "end": 816.94
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "We are separate from G-d and must do *avoda*: that perspective is the ultimate purpose of creation. So our *avoda* is serious, reaching to the very essence.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2367, 2460],
+                  "start": 817.38,
+                  "end": 851.08
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "Through *avoda* we reveal G-d's infinitely deep essence, with no end to the new lights we can reveal. As he cites the *Hayom Yom*, the Baal Shem Tov compares the Jewish people to the ground, whose treasures only mining can reveal.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2461, 2597],
+                  "start": 851.72,
+                  "end": 892.6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "After the tzimtzum, the same three levels go down to Adam Kadmon",
+      "summary": "The pattern continues after the tzimtzum: a simple will and thought, the first igul, and then Adam Kadmon, where the essential desire gets associations that are filtered and condensed at each stage.",
+      "passages": [
+        {
+          "lines": [
+            "jwkvxllu"
+          ],
+          "phrases": [
+            {
+              "he": "ועל דרך זה",
+              "en": "so that's the way that the idea of *machshava*, these different levels, three levels of *machshava* are before the *tzimtzum*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2601, 2620],
+                "start": 893.68,
+                "end": 899.52
+              }
+            },
+            {
+              "he": "יובן גם כן בירידת המדריגה בהשתלשלות אור הרצון ומחשבה דאחדות פשוט, אחר הצמצום הראשון הנקרא מקום פנוי כו'",
+              "en": "so, too, when we go down the level, we have the desire and the thought that this simple *ratzon* and *machshava* comes after the first *tzimtzum*, which is called the *makom panui*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2721, 2755],
+                "start": 929.58,
+                "end": 943.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same applies to the three levels before the *tzimtzum*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2598, 2620],
+                  "start": 892.8,
+                  "end": 899.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "After the *tzimtzum* the *ratzon kadum* (also called *machshava kduma*) is the original desire, the first *igul* and the beginning of the line, expressed as a *machshava*, and from there it comes into *Adam Kadmon*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2621, 2703],
+                  "start": 899.52,
+                  "end": 922.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Likewise, the simple will and thought come after the first *tzimtzum*, called the *makom panui* (the empty place).",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2704, 2755],
+                  "start": 922.9,
+                  "end": 943.56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "36nbegwj"
+          ],
+          "phrases": [
+            {
+              "he": "בבחינת הארת הקו",
+              "en": "into the light of the *kav*, the *reishit hakav*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2759, 2767],
+                "start": 944.74,
+                "end": 946.92
+              }
+            },
+            {
+              "he": "כו' שהוא בחינת הרצון ומחשבה הקדומה,",
+              "en": "this is the original thought, the original desire and the original thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2773, 2784],
+                "start": 949.42,
+                "end": 953.14
+              }
+            },
+            {
+              "he": "שצופה ומביט הכל בסקירה אחת",
+              "en": "where it says that G-d envisioned the entire, everything in creation, all in one glance",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2791, 2805],
+                "start": 955.46,
+                "end": 959.66
+              }
+            },
+            {
+              "he": "כו', שכלול גם כן מג' מדריגות מחשבה דבור ומעשה",
+              "en": "it also has these three levels of *machshava*, *dibur* and *maaseh*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2929, 2938],
+                "start": 996.78,
+                "end": 999.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Into the light of the *kav* is the original will and original thought, which sees and beholds everything in one glance.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2756, 2805],
+                  "start": 943.56,
+                  "end": 959.66
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Picturing before committing",
+              "text": "Before the *tzimtzum* everything was envisioned in terms of Himself. The *mashal*: a person pictures something in theory; deciding to do it brings focus, which is the *tzimtzum*, and a new version of the thought on how to do it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2806, 2902],
+                  "start": 959.82,
+                  "end": 987.42
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "That first thought holds G-d's plan for the whole world, with the three levels.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2903, 2941],
+                  "start": 987.78,
+                  "end": 1000.58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ilamoxmr"
+          ],
+          "phrases": [
+            {
+              "he": "(שנקרא בי\"ע,",
+              "en": "which are called *Beriah*, *Yetzirah*, and *Asiyah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [2944, 2950],
+                "start": 1002.22,
+                "end": 1003.58
+              }
+            },
+            {
+              "he": "כי המחשבה בבריאה והדבור ביצירה והמעשה בעשיה",
+              "en": "because *Beriah* corresponds to thought, *dibur* corresponds to *Yetzirah*, and *maaseh* corresponds to *Asiyah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3041, 3054],
+                "start": 1030.66,
+                "end": 1037.34
+              }
+            },
+            {
+              "he": "וכמו שכתוב בראתיו יצרתיו כו' כידוע)",
+              "en": "like it says, that I've created, I've formed, and I've even made",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3057, 3072],
+                "start": 1038.26,
+                "end": 1043.46
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The original thought includes the final action done here: the system that brings it down, the laws of nature and the Torah, and the inner purpose, Torah and *mitzvos*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [2942, 3033],
+                  "start": 1001.22,
+                  "end": 1025.92
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Thought corresponds to *Beriah*, speech to *Yetzirah* and action to *Asiyah*, as it says: \"I created him, I formed him, and I even made him,\" for My honor.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3034, 3090],
+                  "start": 1026.44,
+                  "end": 1047.56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "k3jzeq2t"
+          ],
+          "phrases": [
+            {
+              "he": "עד בחינת הרצון",
+              "en": "in this *ratzon kadum*, that includes the inner desire for all these things",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3098, 3110],
+                "start": 1051.8,
+                "end": 1057.12
+              }
+            },
+            {
+              "he": "שבמחשבה סתימאה דאדם קדמון ועתיק יומין ואריך אנפין",
+              "en": "So we have this process come into the *ratzon* and then the thought, the first, the subconscious *ratzon* and *machshava* of *Adam Kadmon*, and then *Atik Yomin*, and then *Arich Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3258, 3287],
+                "start": 1101.26,
+                "end": 1109.18
+              }
+            },
+            {
+              "he": "כו', שבא למטה בסדר השתלשלות בדרך פרט",
+              "en": "based on that, there are specific things that are desirable and pleasurable, in other words, things that reveal G-dliness and things that hide G-dliness and things like that",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3424, 3452],
+                "start": 1151.34,
+                "end": 1160.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *ratzon kadum* includes the inner desire for all these things; in terms of the self it is everything.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3091, 3132],
+                  "start": 1047.96,
+                  "end": 1062.56
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "A home you want to feel",
+              "text": "Like wanting a home to feel a certain way in, versus what you do outside to get it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3133, 3172],
+                  "start": 1063.22,
+                  "end": 1074.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then we come to *Adam Kadmon*, where we create associations of what the essential desire will mean outside. As explained in chapters 18 and 19, those associations are creating a *machshava*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3173, 3257],
+                  "start": 1075.14,
+                  "end": 1100.86
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The desire is filtered and condensed at each stage: *Adam Kadmon*, *Atik Yomin*, *Arich Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3258, 3299],
+                  "start": 1101.26,
+                  "end": 1116.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Adam Kadmon*'s *ratzon* is like a person creating a self-image and worldview that makes these associations. Here G-d sets up the basic logic of the Torah, of good and bad, of reality, time and space. Those systems are *Adam Kadmon*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3300, 3398],
+                  "start": 1116.06,
+                  "end": 1141.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then *ratzon* and *taanug* are revealed in *Atik* and *Arich*, making some things desirable: those that reveal G-dliness and those that hide it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3399, 3458],
+                  "start": 1141.32,
+                  "end": 1165.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Each level has three stages: the essential thing (the *maaseh* of *machshava*), its symbol (*dibur*), and the *kavana* plugged into it (*machshava* of *machshava*), down to every detail.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3459, 3540],
+                  "start": 1165.3,
+                  "end": 1189.52
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Planning something to do",
+              "text": "A person planning an action has the general thought first, then a specific desire for each step.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3541, 3584],
+                  "start": 1191.02,
+                  "end": 1201.32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "A person's thought goes down to the feelings, and the thought that stays thought",
+      "summary": "In a person, the essential thought descends into will, sechel and middos, reaching Leah, the thought that clothes the feelings of the heart. Some thoughts never reach speech or action, and can be changed.",
+      "passages": [
+        {
+          "lines": [
+            "4emrdz4d"
+          ],
+          "phrases": [
+            {
+              "he": "כמשל באדם למטה,"
+            },
+            {
+              "he": "שיורד הארת אור עצם המחשבה העצמית הנעלמה בעצמות הנפש,",
+              "en": "that a person's essential desire and essential thought that's hidden within their soul",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3603, 3615],
+                "start": 1210.94,
+                "end": 1217.28
+              }
+            },
+            {
+              "he": "בגלוי ברצון ושכל ומדות",
+              "en": "becomes revealed into a specific *sechel* and *middos*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3616, 3622],
+                "start": 1217.28,
+                "end": 1220.56
+              }
+            },
+            {
+              "he": "כו', עד בחינת המחשבה שמלבשת המדות שבלב",
+              "en": "until the thought that just becomes a way to express how a person's feeling, the feelings of the heart",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3650, 3668],
+                "start": 1229.02,
+                "end": 1234.24
+              }
+            },
+            {
+              "he": "שנקרא לאה,",
+              "en": "and that level of thought is called *Leah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3671, 3678],
+                "start": 1235.36,
+                "end": 1236.42
+              }
+            },
+            {
+              "he": "שכלול מג' מדריגות מחשבה דבור ומעשה כו' כנזכר לעיל",
+              "en": "and there again there are all these three levels that a person can be aware of the different sensations",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3686, 3704],
+                "start": 1240.12,
+                "end": 1246.2
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The hidden thought in a person",
+              "text": "In a person, the essential thought hidden in the soul becomes revealed in will, *sechel* and *middos*: a plan for a specific thing, and how he feels about it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3585, 3643],
+                  "start": 1201.52,
+                  "end": 1224.6
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The thought that clothes the heart's feelings is called *Leah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3644, 3678],
+                  "start": 1224.6,
+                  "end": 1236.42
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Sensations and words",
+              "text": "All three levels appear here too. When a person is happy, angry or sad, his heart rate and breathing change: that is the *maaseh* of *machshava*. He names the feeling, \"I'm feeling happy.\" This helps teach children to identify feelings.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3679, 3795],
+                  "start": 1236.42,
+                  "end": 1273.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then we attach a reason and theory for the feeling and what to do about it: the *machshava* of *machshava*, sometimes right, sometimes wrong.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3796, 3847],
+                  "start": 1273.84,
+                  "end": 1290.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "agpahsq3"
+          ],
+          "phrases": [
+            {
+              "he": "ולמעלה, היינו עד בחינת אותיות מחשבותיו של מדותיו שבאצילות",
+              "en": "and in G-dliness in a similar way, this is the idea that there are the letters of the thought of G-d's *middos* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3857, 3880],
+                "start": 1296.02,
+                "end": 1301.72
+              }
+            },
+            {
+              "he": "שנקרא זעיר אנפין,",
+              "en": "which is called *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3884, 3888],
+                "start": 1302.74,
+                "end": 1303.92
+              }
+            },
+            {
+              "he": "שעל זה אמר ויאמר יהו״ה אל לבו,",
+              "en": "and that's the idea that it says Hashem spoke to his heart",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3896, 3907],
+                "start": 1303.92,
+                "end": 1309.4
+              }
+            },
+            {
+              "he": "אמירה זו במחשבה כו'",
+              "en": "this is in thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [3990, 3993],
+                "start": 1337.82,
+                "end": 1338.36
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The letters of thought of the *middos* of *Atzilus* are *Zeir Anpin*, where it says Hashem spoke to His heart.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3848, 3907],
+                  "start": 1290.44,
+                  "end": 1309.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Judgment works measure for measure, on what we do with Torah and mitzvos, as with the Flood before and after: Hashem spoke to His heart, whether to destroy the world. This is speech in thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3908, 3993],
+                  "start": 1309.74,
+                  "end": 1338.36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "dpwfkdds"
+          ],
+          "phrases": [
+            {
+              "he": "ולפעמים נשאר הדבר במחשבה עלאה דזעיר אנפין",
+              "en": "and sometimes the thought remains in the upper thought of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4001, 4012],
+                "start": 1342.64,
+                "end": 1346.34
+              }
+            },
+            {
+              "he": "שנקרא אדם העליון,",
+              "en": "which is called the supernal man",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4016, 4021],
+                "start": 1349.12,
+                "end": 1350.58
+              }
+            },
+            {
+              "he": "כמו וינחם יהו״ה",
+              "en": "like it says, that G-d regretted what he did",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4024, 4034],
+                "start": 1351.54,
+                "end": 1355.02
+              }
+            },
+            {
+              "he": "כו' שחזרה זו במחשבה, שלא הביאה לדבור ולמעשה כלל",
+              "en": "in other words the idea of *vayinachem* is that this thought becomes changed within the *machshava*, it gets changed what it's associated with, and therefore it doesn't come to *dibur* and *maaseh* at all",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4116, 4149],
+                "start": 1385.52,
+                "end": 1394.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Some thoughts remain in the upper thought of *Zeir Anpin*, the supernal man: *vayinachem*, G-d regretted.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [3994, 4034],
+                  "start": 1338.36,
+                  "end": 1355.02
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Once a thought becomes a decree (*dibur*) and is expressed, it happens; but what we do can lead to a *midda* such as *din*, which can be changed.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4035, 4108],
+                  "start": 1355.36,
+                  "end": 1380.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The thought changes within *machshava*, so it never reaches *dibur* or *maaseh*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4109, 4149],
+                  "start": 1381.76,
+                  "end": 1394.18
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The Flood and repentance",
+              "text": "The Flood: had they done repentance, the waters would have become waters of blessing. He thinks it was because of Noach.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4150, 4200],
+                  "start": 1394.54,
+                  "end": 1415.6
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Noach could change, so for him the Flood was not devastating; for others it had its result.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4201, 4241],
+                  "start": 1415.86,
+                  "end": 1425
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d sets things up: His will, *sechel* and *middos* plug into a *machshava* and certain letters in an external form, and this causes external events.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4242, 4301],
+                  "start": 1425.38,
+                  "end": 1442.96
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "What it means depends partly on us: negative if we stay as we are, good if we change. We can learn, change and grow, and that causes the change: measure for measure.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4302, 4376],
+                  "start": 1443.18,
+                  "end": 1464.32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wv2bz4aa"
+          ],
+          "phrases": [
+            {
+              "he": "כענין ליבא לפומיא לא גליא,",
+              "en": "like it says that the heart didn't reveal to the mouth",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4382, 4392],
+                "start": 1468.54,
+                "end": 1470.82
+              }
+            },
+            {
+              "he": "וכמו צדיק ורשע לא קאמר",
+              "en": "like it says, that G-d doesn't decree who will be a *tzaddik* and who will be a *rasha*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4394, 4415],
+                "start": 1471.82,
+                "end": 1476.1
+              }
+            },
+            {
+              "he": "כידוע ודי למבין",
+              "en": "and this is enough to understand",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4565, 4570],
+                "start": 1518.52,
+                "end": 1520.62
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "As it says, the heart does not reveal itself to the mouth. G-d does not decree who will be a *tzaddik* and who a *rasha*; tendencies and situations make one or the other easier.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4377, 4452],
+                  "start": 1464.32,
+                  "end": 1485.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "These are the opportunities, the *machshava* of *machshava*; what it means for the person depends on his choice.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4453, 4506],
+                  "start": 1486,
+                  "end": 1499.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Some people turn a difficult start around to good. We can change how a thought goes from *machshava* to *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4507, 4561],
+                  "start": 1500,
+                  "end": 1517.88
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zoom out and zoom in: the same three levels in each world and in Zeir Anpin",
+      "summary": "Adam Kadmon, Atik and Arich, and Zeir Anpin each carry one of machshava, dibur and maaseh, and the same pattern repeats at every scale, from the whole chain down to each detail.",
+      "passages": [
+        {
+          "lines": [
+            "jph4hks4"
+          ],
+          "phrases": [
+            {
+              "he": "(ודרך כללות הכל,",
+              "en": "and in general, when we zoom out",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4577, 4583],
+                "start": 1525.94,
+                "end": 1529.24
+              }
+            },
+            {
+              "he": "בחינת ג' מדרגות במחשבה דבור ומעשה,",
+              "en": "we can also view the whole *seder hishtalshelus* as being made up of these three levels",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4589, 4604],
+                "start": 1530.16,
+                "end": 1535.48
+              }
+            },
+            {
+              "he": "אדם קדמון במחשבה - בחינת אדם דבריאה,",
+              "en": "we can also view *Adam Kadmon* as being in *machshava*, the level of *Adam d'Beriah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4738, 4749],
+                "start": 1570.04,
+                "end": 1573.3
+              }
+            },
+            {
+              "he": "ובחינת עתיק יומין ואריך אנפין בבחינת דבור - אדם דיצירה,"
+            },
+            {
+              "he": "ובחינת זעיר אנפין נקרא בחינת אדם דעשיה"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Zooming out, the whole *seder hishtalshelus* is made of these three levels.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4574, 4604],
+                  "start": 1525.22,
+                  "end": 1535.48
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "Every idea we learn is like a fractal.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4605, 4635],
+                  "start": 1535.58,
+                  "end": 1542.04
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The fractal",
+              "text": "A pattern repeats: zoomed out, a thing shows a structure, and zoomed in, the same structure appears again, in the whole *seder hishtalshelus* and in every detail.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4636, 4736],
+                  "start": 1542.24,
+                  "end": 1569.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Adam Kadmon* is *machshava*, the level of *Adam d'Beriah*. *Atik* and *Arich*, the revealed will in a specific thing, are like *dibur*, the *Adam d'Yetzirah*; *Zeir Anpin* is *maaseh*, the *Adam d'Asiyah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4737, 4821],
+                  "start": 1569.68,
+                  "end": 1598.38
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "*Adam Kadmon* creates associations, the initial language out of content. What is chosen to express, the *dibur*, is the revealed will and *taanug* of *Atik* and *Arich*; what is done is the effect, the *middos* of *Zeir Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4822, 4902],
+                  "start": 1598.54,
+                  "end": 1622.9
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This explains how the Torah and its laws are created, and specific providence in running the world, in many aspects of the *seder hishtalshelus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4903, 4955],
+                  "start": 1623.88,
+                  "end": 1636.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "erqqbnxe"
+          ],
+          "phrases": [
+            {
+              "he": "ובדרך פרט",
+              "en": "you could also zoom in and view this paradigm in a specific way",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4958, 4970],
+                "start": 1637.42,
+                "end": 1641.22
+              }
+            },
+            {
+              "he": "גם בזעיר אנפין כלול מג' מדרגות בי\"ע מחשבה דבור ומעשה",
+              "en": "within *Zeir Anpin* it has all these three levels, which correspond to *Beriah*, *Yetzirah*, and *Asiyah*, or *machshava*, *dibur*, and *maaseh* just of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [4992, 5014],
+                "start": 1647.24,
+                "end": 1654.14
+              }
+            },
+            {
+              "he": "כו')"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Zoomed in, *Zeir Anpin* has the same three levels: *Beriah*, *Yetzirah* and *Asiyah*, or *machshava*, *dibur* and *maaseh*. The same pattern runs from the biggest scale to the smallest.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [4956, 5029],
+                  "start": 1636.5,
+                  "end": 1658.6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "o62uxmjt"
+          ],
+          "phrases": [
+            {
+              "he": "ונמצא מובן",
+              "en": "and it comes out that it's understood",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5032, 5038],
+                "start": 1660.16,
+                "end": 1661.72
+              }
+            },
+            {
+              "he": "למשכיל",
+              "en": "to somebody that understands these things",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5040, 5045],
+                "start": 1662.46,
+                "end": 1665.88
+              }
+            },
+            {
+              "he": "בכללות",
+              "en": "based on what we've explained",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5046, 5052],
+                "start": 1665.88,
+                "end": 1668.68
+              }
+            },
+            {
+              "he": "מכמה ריבוי פרטים מבחינת מעשה דמחשבה העצמית בעצמות אור אין סוף עד בחינת עשיה שבמחשבה דזעיר אנפין דאצילות",
+              "en": "you can understand many, many details of the *seder hishtalshelus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5083, 5092],
+                "start": 1683.36,
+                "end": 1686.62
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Understood in general and particulars, from the infinite light to the *asiya* of thought of *Zeir Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5030, 5070],
+                  "start": 1658.94,
+                  "end": 1678.06
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This relationship lets you understand many details of the *seder hishtalshelus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5071, 5092],
+                  "start": 1678.52,
+                  "end": 1686.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "A text such as *Etz Chaim* can be understood with this, from before the *tzimtzum* down to the thought of *Zeir Anpin*, and into the actual worlds.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5093, 5146],
+                  "start": 1687.2,
+                  "end": 1700.44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "kr4cn7ge"
+          ],
+          "phrases": [
+            {
+              "he": "וזה שנאמר כל אשר חפץ יהו״ה,",
+              "en": "and this is what it says",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5149, 5154],
+                "start": 1702.62,
+                "end": 1703.46
+              }
+            },
+            {
+              "he": "במחשבה העצמית, עשה מאין דאצילות לבריאה כו׳)",
+              "en": "that the relationship of a *machshava* is that G-d is taking something that's abstract, like a *sechel* and a *ratzon*, and you're creating symbols to represent that",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5166, 5194],
+                "start": 1709.64,
+                "end": 1719.74
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "G-d takes what is abstract, like *sechel* and *ratzon*, and creates symbols to represent it: the idea of words and of creating associations.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5147, 5214],
+                  "start": 1701.46,
+                  "end": 1724.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From Hashem's essential *ratzon* down to *Atzilus* going into *Beriah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5215, 5239],
+                  "start": 1724.34,
+                  "end": 1737.8
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "At every layer, the essential g-dly thing creates a *levush*, a symbol that connects and reveals it. It is not necessary; it is G-d's choice to make those connections.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5240, 5314],
+                  "start": 1737.98,
+                  "end": 1758.74
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Although it all fits together and we think this is simply how things work, at every layer the connections are created, and they are not essential.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5315, 5366],
+                  "start": 1759.48,
+                  "end": 1773.86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The large dalet of Echad: Zeir Anpin's unity of the ten sefiros",
+      "summary": "Echad is Zeir Anpin, whose letters and ten sefiros express the unity of Atzilus, and the dalet is the source of Malchus, speech still joined to its source in thought.",
+      "passages": [
+        {
+          "lines": [
+            "56axz7fb"
+          ],
+          "phrases": [
+            {
+              "he": "והנה על דרך זה יובן",
+              "en": "we can understand this relationship also",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5376, 5381],
+                "start": 1778.66,
+                "end": 1780.52
+              }
+            },
+            {
+              "he": "בענין ד' רבתי דאחד",
+              "en": "this is the idea of the large *dalet* of the word *Echad*, which is the idea of the source of *dibur*, the way it is in the self before it comes out",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5384, 5415],
+                "start": 1781.16,
+                "end": 1792.84
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "We understand this relationship in the large *dalet* of *Echad*: the source of *dibur*, before it comes out.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5367, 5415],
+                  "start": 1773.86,
+                  "end": 1792.84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "gay6mng2"
+          ],
+          "phrases": [
+            {
+              "he": "שהוא בבחינת מלכות דתבונה",
+              "en": "this is the idea of *Malchus of tevuna*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5420, 5426],
+                "start": 1794.98,
+                "end": 1796.76
+              }
+            },
+            {
+              "he": "שמבחינת אחוריים דאימא",
+              "en": "which is the external level of understanding of *bina*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5430, 5438],
+                "start": 1798.4,
+                "end": 1800.96
+              }
+            },
+            {
+              "he": "כו', והוא ענין קשר של תפילין של ראש",
+              "en": "and this is represented also by the knot, the dalet on the back of the knot of the head *tefillin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5476, 5496],
+                "start": 1813.9,
+                "end": 1819
+              }
+            },
+            {
+              "he": "כו' כידוע"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Malchus of tevuna, the external level of bina, the back of Ima: the source of associations, as in chapter 2.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5416, 5456],
+                  "start": 1793.12,
+                  "end": 1807.56
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The source creates the language; the knot of the head *tefillin* represents it, its dalet on the back.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5457, 5497],
+                  "start": 1808.18,
+                  "end": 1819
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "2vivdihc"
+          ],
+          "phrases": [
+            {
+              "he": "הרי יובן דרך פרט בבחינת זעיר אנפין שנקרא אחד בבחינת אחדות דעשר ספירות דאצילות",
+              "en": "so we can understand this relationship in a more specific way, of how this is that *Zeir Anpin* is called *Echad*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5512, 5532],
+                "start": 1825.76,
+                "end": 1832.68
+              }
+            },
+            {
+              "he": "(בבחינת אדם דעשיה בכללות)",
+              "en": "and in the general worlds we'd call this *Adam d'Asiyah*, but in the specific worlds we call this *Atzilus*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5604, 5622],
+                "start": 1856.18,
+                "end": 1860.38
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Zeir Anpin* is called *Echad*, the unity of the ten *sefiros* of *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5498, 5533],
+                  "start": 1819,
+                  "end": 1833.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *aleph* of *Echad* is *chachma*; the *ches*, seven middos, *bina* and seven middos again; the *dalet*, the four corners of *Malchus*: the unity of the ten *sefiros* of *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5534, 5599],
+                  "start": 1833.16,
+                  "end": 1853.88
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Generally, *Adam d'Asiyah*; in specific worlds, *Atzilus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5600, 5622],
+                  "start": 1854.36,
+                  "end": 1860.38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ny3hqjqo"
+          ],
+          "phrases": [
+            {
+              "he": "שזהו בחינת השרש דמחשבה דלאה",
+              "en": "this is the source for the thought that's called *Leah*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5628, 5637],
+                "start": 1863.4,
+                "end": 1865.74
+              }
+            },
+            {
+              "he": "הבא בבחינת אותיות וצירופים",
+              "en": "which is coming in a certain idea of *osios* and certain orders",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5751, 5762],
+                "start": 1901.52,
+                "end": 1905
+              }
+            },
+            {
+              "he": "הנקרא מחשבה שבמחשבה",
+              "en": "and this is called the thought of thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5795, 5802],
+                "start": 1915.04,
+                "end": 1916.56
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The source of the thought called *Leah*, which expresses the middos: the inner logic behind the reasons for the mitzvos, which the Gemara gives as human intellect. That is in *Beriah*; its source is why certain things are G-dly.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5623, 5710],
+                  "start": 1860.94,
+                  "end": 1889.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Similarly, in running the world: the logic of how it works, the laws of nature, or what the Rebbe liked to call laws of creation. Symbols, letters and associations change meaning with the order they come in.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5711, 5791],
+                  "start": 1889.62,
+                  "end": 1913.12
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Thought of thought, from *Malchus of tevuna*: the inner *kavana* that plugs in and creates these systems.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5792, 5825],
+                  "start": 1913.12,
+                  "end": 1926.22
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d's inner plan, the *kavana* of the Torah, the mitzvos and how the world is set up, is the thought of thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5826, 5872],
+                  "start": 1926.62,
+                  "end": 1937.82
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The large dalet is speech still joined to thought; the hidden of all hidden",
+      "summary": "The large dalet is the source of speech in the self, and the thought behind it reaches up to the hidden of all hidden, which no thought can grasp.",
+      "passages": [
+        {
+          "lines": [
+            "ifj4g4xc"
+          ],
+          "phrases": [
+            {
+              "he": "(אך נקרא דלי\"ת רבתי,",
+              "en": "and it's called a large *dalet*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5877, 5882],
+                "start": 1941,
+                "end": 1942.26
+              }
+            },
+            {
+              "he": "שהוא בחינת גדלות הדבור,",
+              "en": "which is the more mature level of speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5887, 5895],
+                "start": 1944.32,
+                "end": 1948.48
+              }
+            },
+            {
+              "he": "להיות מבואר למעלה שיש ב' מדריגות בזה",
+              "en": "like we explained there's two levels within this",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [5903, 5910],
+                "start": 1951.66,
+                "end": 1953.1
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The *dalet rabasi* is the greater maturity of speech; there are two levels within it, as explained above.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5873, 5910],
+                  "start": 1937.82,
+                  "end": 1953.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The large *dalet* is language still connected to its source within the self.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5911, 5942],
+                  "start": 1953.1,
+                  "end": 1964.2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "wuy322aw"
+          ],
+          "phrases": [
+            {
+              "he": "ובאמת גם זה בחינת"
+            },
+            {
+              "he": "דבור שבמחשבה יחשב,",
+              "en": "and really this is also called *dibur* of *machshava*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6009, 6016],
+                "start": 1982.82,
+                "end": 1985.18
+              }
+            },
+            {
+              "he": "מה שחושב המושכל בצירופים,",
+              "en": "because you think the idea in different words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6021, 6028],
+                "start": 1988.18,
+                "end": 1990.58
+              }
+            },
+            {
+              "he": "גם שלא להביא בדבור כלל",
+              "en": "even if you're not planning on speaking it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6034, 6041],
+                "start": 1992.96,
+                "end": 1995.28
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Coming up with words yourself, from your own real thoughts, is a real new idea: the large *dalet*, from *Malchus of tevuna*. Hearing others' words is different.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [5943, 6001],
+                  "start": 1964.2,
+                  "end": 1980.04
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This too is *dibur* of *machshava*: thinking the idea in words, even if you won't speak it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6002, 6041],
+                  "start": 1980.04,
+                  "end": 1995.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "There is an overlap: you first think the idea to yourself; then, once you create words and symbols for it, you can use them to tell someone else.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6042, 6099],
+                  "start": 1995.28,
+                  "end": 2009.66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "xy5fxbkz"
+          ],
+          "phrases": [
+            {
+              "he": "והוא דלי\"ת רבתי דא\"ח",
+              "en": "and this is the large *dalet* of *Echad*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6109, 6117],
+                "start": 2013.76,
+                "end": 2016.5
+              }
+            },
+            {
+              "he": "ט\"ס",
+              "en": "The *aleph* and *ches* are the nine *sefiros*, one plus eight, of *Echad*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6118, 6130],
+                "start": 2016.86,
+                "end": 2021.1
+              }
+            },
+            {
+              "he": "דזעיר אנפין",
+              "en": "and then the *dalet* represents the *Malchus* of *Zeir Anpin*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6150, 6159],
+                "start": 2026.4,
+                "end": 2027.96
+              }
+            },
+            {
+              "he": "כו' שכל מדה וספירה באה באותיות וצירופים דמחשבה דלאה",
+              "en": "that every single *middah* and every single *sefira*, G-d chooses certain ways of expressing it",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6169, 6183],
+                "start": 2032.42,
+                "end": 2037.48
+              }
+            },
+            {
+              "he": "כו' מכח ושרש המחשבה בחינת מלכות דתבונה כו'",
+              "en": "and this comes from the source and the root of thought, which is *Malchus of tevuna*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6247, 6261],
+                "start": 2055.1,
+                "end": 2058.48
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "*Aleph* and *ches* make nine by gematria: the nine *sefiros* of *Zeir Anpin*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6100, 6130],
+                  "start": 2009.66,
+                  "end": 2021.1
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *dalet* is their *Malchus*. Every *middah* and *sefira* comes in letters of *Leah*'s thought, and G-d chooses how each is expressed.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6131, 6183],
+                  "start": 2021.3,
+                  "end": 2037.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Take creation from nothing, the *middah* of *chesed*: G-d chose one of infinite ways, and that choice is the letters of the thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6184, 6243],
+                  "start": 2037.52,
+                  "end": 2052.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "From *Malchus of tevuna*, the source of thought: the ability to create associations and symbols, G-d's choice how to set it up.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6244, 6289],
+                  "start": 2052.82,
+                  "end": 2065.74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "b6thssxm"
+          ],
+          "phrases": [
+            {
+              "he": "ולכך צריך להאריך בדלי\"ת,",
+              "en": "and this is why it says when we say *Shema*, we have to elongate the *dalet* of *Echad* when we're contemplating G-d's unity",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6294, 6311],
+                "start": 2067.92,
+                "end": 2073.02
+              }
+            },
+            {
+              "he": "להיותו שרש בחינת המלכות בד' סטרי עלמא",
+              "en": "because it's the source of *Malchus* across the four corners of the world",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6324, 6336],
+                "start": 2079.04,
+                "end": 2082.32
+              }
+            },
+            {
+              "he": "שביחודא תתאה דברוך שם כבוד מלכותו לעולם ועד כו')"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Elongating the *dalet* of *Echad* in the *Shema* contemplates G-d's unity: the source of *Malchus* across the four corners, the lower unity of *Baruch shem kvod malchuso*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6290, 6344],
+                  "start": 2065.92,
+                  "end": 2084.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The diverse things we see are the way they are because G-d chose to create the system so; so they express His will and wisdom.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6345, 6404],
+                  "start": 2084.76,
+                  "end": 2099.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Time, space and the laws of creation need not be as they are: a purposeful system set up by His choice, so it expresses something of Him.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6405, 6462],
+                  "start": 2099.46,
+                  "end": 2117.02
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "kyivri6z"
+          ],
+          "phrases": [
+            {
+              "he": "וגם הנה מובן דרך כללות, במחשבה הקדומה עד במחשבה הפשוטה דאחדות הפשוטה בעצמותו ממש,",
+              "en": "And similarly, we can also zoom out and look at how this relationship is in the highest, most general levels, going back to the general thought, the *machshava kduma* of the *ratzon kadum*, all the way back before the *tzimtzum* to the simple thought of the simple unity in the essence",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6477, 6528],
+                "start": 2125.98,
+                "end": 2141.76
+              }
+            },
+            {
+              "he": "בבחינת סתימא דכל סתימין",
+              "en": "which is called the hidden of all hidden things",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6533, 6541],
+                "start": 2143.44,
+                "end": 2145.86
+              }
+            },
+            {
+              "he": "דלית מחשבה תפיסא ביה,",
+              "en": "that no thought can grasp Him",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6551, 6556],
+                "start": 2148.62,
+                "end": 2152.24
+              }
+            },
+            {
+              "he": "אפילו מחשבה דאדם קדמון",
+              "en": "even the thought of *Adam Kadmon*, all those *ratzon*, the *ratzon* associations are created",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6691, 6704],
+                "start": 2190.7,
+                "end": 2194.52
+              }
+            },
+            {
+              "he": "כו', דדלי\"ת רבתי הוא כשעלה באותיות מחשבתו ורצונו הפשוט",
+              "en": "then the *dalet* would be the letters of Hashem's thought, expressing His the way it's included in the *ratzon*, His *ratzon* before the *tzimtzum*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6796, 6819],
+                "start": 2222.58,
+                "end": 2231.44
+              }
+            },
+            {
+              "he": "כו', שהוא בא מבחינת מלכות דתבונתו העצמית כו' ודי למבין",
+              "en": "that those that essential *machshava* also comes from *Malchus of tevuna* of the essence, and so there's that similar kind of relationship",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6897, 6917],
+                "start": 2257.66,
+                "end": 2265.98
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Zooming out to the highest levels: from the general thought, the *machshava kduma* of the *ratzon kadum*, back before the *tzimtzum* to the simple unity in His essence.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6463, 6536],
+                  "start": 2118.24,
+                  "end": 2144.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the *stima d'chol stimin*, the hidden of all hidden: no thought can grasp Him. Even the whole concept of the ten *sefiros* is something G-d created, so His essence transcends it.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6537, 6612],
+                  "start": 2144.62,
+                  "end": 2168.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Just as *Malchus* creating the worlds need not be as it is, so the highest things we take for granted are not necessary: they are a language created for Him to express Himself.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6613, 6685],
+                  "start": 2168.84,
+                  "end": 2188.28
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Even the *Adam Kadmon* associations and the logic of the Torah are created. We do it because Hashem wants it, and part of what He wants is that it have this reason and logic.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6686, 6774],
+                  "start": 2188.28,
+                  "end": 2215.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "With the large *dalet* of *Echad*, the *dalet* is the letters of Hashem's simple will, as included in His *ratzon* before the *tzimtzum*: a creative process by G-d behind the systems and symbols we have.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6775, 6850],
+                  "start": 2215.16,
+                  "end": 2244.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This can be seen in *Atzilus* and back to the beginning of the *seder hishtalshelus* on every level. Essential thought also comes from *Malchus of tevuna* of the essence.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6851, 6917],
+                  "start": 2244.44,
+                  "end": 2265.98
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Leah and Rachel: humility as the heel, fear as the head",
+      "summary": "The heel of Leah is humility, which is hidden thought, and the head of Rachel is fear, which is revealed speech. Action is proper only when the inner kavana is present.",
+      "passages": [
+        {
+          "lines": [
+            "m3zv7cn2"
+          ],
+          "phrases": [
+            {
+              "he": "(ומה שכתוב בעץ חיים",
+              "en": "this that it says in *Etz Chaim*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6934, 6940],
+                "start": 2271,
+                "end": 2272.18
+              }
+            },
+            {
+              "he": "דעקבי לאה נכנסין תוך ראש רחל",
+              "en": "the heels of *Leah* enter the head of *Rachel*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [6959, 6967],
+                "start": 2277.38,
+                "end": 2280.74
+              }
+            },
+            {
+              "he": "כו', וכמאר רבותינו זכרונם לברכה מה שעשתה ענוה עקב לסוליתא",
+              "en": "and this is what our sages say, that what humility made a shoe for her foot",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7077, 7102],
+                "start": 2312.64,
+                "end": 2323.16
+              }
+            },
+            {
+              "he": "עשתה יראה עטרה לראשה",
+              "en": "fear made a crown for her head",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7103, 7109],
+                "start": 2323.32,
+                "end": 2325.32
+              }
+            },
+            {
+              "he": "כו', היינו בחינת דבור שבמחשבה שנעשית מחשבה שבדבור",
+              "en": "this is the idea how the words of thought become the thought of the words",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7209, 7224],
+                "start": 2364.76,
+                "end": 2369.18
+              }
+            },
+            {
+              "he": "שזהו עקב ענוה",
+              "en": "and this is the idea that the heel of humility",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7482, 7491],
+                "start": 2452.27,
+                "end": 2455.9
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "To round off, the *Etz Chaim* says the heels of Leah enter the head of Rachel: a relationship of thought to speech.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6918, 6977],
+                  "start": 2265.98,
+                  "end": 2282.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Etz Chaim* describes the main *partzufim* (*Atik*, *Arich*, *Abba*, *Ima*, *Zeir Anpin*, *Nukva*) and more with specific roles. Leah focuses on thought as a garment for the middos; Rachel on speech.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [6978, 7049],
+                  "start": 2282.66,
+                  "end": 2303.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "These two garments are of *Zeir Anpin*: *Yaakov*, *Yisroel*, Rachel and Leah.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7050, 7074],
+                  "start": 2303.76,
+                  "end": 2311.3
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Our sages: humility made a shoe for her foot, and fear made a crown for her head.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7075, 7109],
+                  "start": 2311.42,
+                  "end": 2325.32
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The inner dimension of Torah is the hidden reason behind things; the revealed Torah is the outer part. So the lowest level of Leah becomes the highest of Rachel.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7110, 7167],
+                  "start": 2325.64,
+                  "end": 2350.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "What one understands of the inner *kavana*, its *Malchus*, becomes the inner *keser* of revealed Torah.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7168, 7200],
+                  "start": 2350.3,
+                  "end": 2360.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *dibur* of *machshava* becomes the *machshava* of *dibur*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7201, 7224],
+                  "start": 2362.42,
+                  "end": 2369.18
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On a revealed level, the reasons in the *Shulchan Aruch* or the Gemara come from a deeper understanding, hidden even in Chazal and the midrash.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7225, 7284],
+                  "start": 2369.78,
+                  "end": 2388.52
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "All the secrets of Torah are hidden in *Ein Yaakov*; understand things on different levels.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7285, 7317],
+                  "start": 2388.52,
+                  "end": 2396.64
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "A child's effort",
+              "text": "Like telling a child the point is their effort: they are really growing and learning.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7318, 7347],
+                  "start": 2396.8,
+                  "end": 2414.98
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The deeper, the teacher's, perspective: there is always an inner and an outer, humility and fear.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7348, 7382],
+                  "start": 2415.26,
+                  "end": 2424.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *Sefer HaChinuch* and the *Rambam* explain the reasons for mitzvos. Many are done out of fear because Hashem said so, but many teach humility, kindness and flexibility. He thinks this is related too.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7383, 7473],
+                  "start": 2425.1,
+                  "end": 2447.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Thought is hidden: that is the heel of humility.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7474, 7491],
+                  "start": 2447.76,
+                  "end": 2455.9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "mcftlkfa"
+          ],
+          "phrases": [
+            {
+              "he": "כי המחשבה בהעלם",
+              "en": "because *machshava*, something that's hidden, it's kept to oneself, and I guess that's the idea of humility, that there's certain *bittul* there that's not revealed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7495, 7520],
+                "start": 2456.4,
+                "end": 2463.96
+              }
+            },
+            {
+              "he": "ואין,",
+              "en": "that it's something that's more abstract, and it's transcendent, and can't be expressed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7522, 7534],
+                "start": 2465.74,
+                "end": 2470.54
+              }
+            },
+            {
+              "he": "והדבור בגלוי",
+              "en": "but the speech is what can be revealed and can be expressed",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7548, 7559],
+                "start": 2474.39,
+                "end": 2478.16
+              }
+            },
+            {
+              "he": "ויש",
+              "en": "and so therefore it's something that's a *yesh*, it has a certain *gaavah* or arrogance to it, so to speak, because it's very tangible",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7561, 7586],
+                "start": 2478.5,
+                "end": 2487.44
+              }
+            },
+            {
+              "he": "כו', ונעשית עטרה וכתר לרחל בחינת הדבור",
+              "en": "and that becomes the crown for *Rachel*, the level of *dibur*",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7591, 7599],
+                "start": 2490.08,
+                "end": 2494
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Hidden thought (*ayin*) has a *bittul* that is not revealed; it is abstract, and deeper ideas cannot be explained. He guesses this is humility.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7492, 7545],
+                  "start": 2455.9,
+                  "end": 2473.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Speech is revealed and expressible: *yesh*, with a certain pride or arrogance, so to speak, because it is tangible.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7546, 7586],
+                  "start": 2473.62,
+                  "end": 2487.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Speech becomes Rachel's crown, *keser*.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7587, 7599],
+                  "start": 2487.44,
+                  "end": 2494
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ha4hysvf"
+          ],
+          "phrases": [
+            {
+              "he": "כי בחינת כח ושרש וראש לדבור",
+              "en": "what is the inner source and root and head for speech",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7606, 7616],
+                "start": 2497.1,
+                "end": 2499.84
+              }
+            },
+            {
+              "he": "הן צרופי אותיות שבמחשבה,",
+              "en": "it comes from those letters of thought",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7621, 7627],
+                "start": 2501.48,
+                "end": 2503.16
+              }
+            },
+            {
+              "he": "שאם יופסקו יופסק הדבור כידוע",
+              "en": "a person lose their train of thought, if they don't, if they stop thinking they're not going to be able to speak",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7662, 7683],
+                "start": 2512.04,
+                "end": 2515.44
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Speech's inner strength, root and head are the letter combinations of thought.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7600, 7627],
+                  "start": 2494.24,
+                  "end": 2503.16
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Simply: no language to think in and no thinking, so nothing to say.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7628, 7656],
+                  "start": 2503.24,
+                  "end": 2509.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "If the train of thought stops, speech stops, as is known.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7657, 7684],
+                  "start": 2510.14,
+                  "end": 2515.72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "ntftqfok"
+          ],
+          "phrases": [
+            {
+              "he": "וזה שכתוב עקב ענוה יראת יהו״ה",
+              "en": "following humility comes the fear of G-d",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7706, 7712],
+                "start": 2523.96,
+                "end": 2526.04
+              }
+            },
+            {
+              "he": "כו' וכמו שכתוב במקום אחר",
+              "en": "as it is explained elsewhere",
+              "audio": {
+                "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                "words": [7757, 7761],
+                "start": 2541.46,
+                "end": 2542.64
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Following humility comes the fear of G-d. Without the inner *kavana*, the connection to Hashem, a person will not express it externally through the fear of G-d.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7685, 7752],
+                  "start": 2515.82,
+                  "end": 2539.64
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "As it is explained elsewhere: learning the inner dimension of Torah and being aware of what we do matters, since without that *kavana* a person cannot act properly in the small details.",
+              "audio": [
+                {
+                  "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+                  "words": [7753, 7835],
+                  "start": 2539.64,
+                  "end": 2568.64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What is the end of the deed that comes first, and where is it in G-d's essential thought?",
+      "lines": [
+        "ddg6itfk"
+      ]
+    },
+    {
+      "question": "What are the three levels of thought, and how does thought of thought differ from them?",
+      "lines": [
+        "r3th4bn7",
+        "ny3hqjqo"
+      ]
+    },
+    {
+      "question": "How does the large dalet of Echad express speech in the self?",
+      "lines": [
+        "ifj4g4xc",
+        "xy5fxbkz"
+      ]
+    },
+    {
+      "question": "How do Leah and Rachel relate to thought and speech, and what does Etz Chaim say of them?",
+      "lines": [
+        "m3zv7cn2",
+        "mcftlkfa"
+      ]
+    },
+    {
+      "question": "What does the class say awakened the desire for kindness that created the world?",
+      "lines": [
+        "wdunw4ry"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "Walters 5784 Edited/043 Shaar HaYichud ch 43.mp3",
+      "words": [4562, 4573],
+      "reason": "other",
+      "note": "His closing formula ('enough to understand') and the announcement of the parenthesis of line 24: a remark to the text, not teaching."
+    }
+  ],
+  "notes": [
+    {
+      "text": "No block is flagged. Checked against STYLE.md's categories and the walters-original and walters-2020 precedents: no generalisation about women, no insult, no criticism of a named person or group, no politics, no health or legal advice. The Rebbe, the Baal Shem Tov, the Rambam and Noach are reverent or neutral references.",
+      "lines": [
+        "ikv26oay"
+      ]
+    },
+    {
+      "text": "Hedges kept as he made them: 'I think' on the Flood (the waters of teshuva: 'this is one aspect I think'), 'I think' that the humility point relates to this (end of line 37), and 'I guess' that the hidden thought is humility (line 38).",
+      "lines": [
+        "dpwfkdds",
+        "m3zv7cn2",
+        "mcftlkfa"
+      ]
+    },
+    {
+      "text": "Not in the text: his slip 'thought is hidden, I'm sorry' (end of line 37), and the stutters 'the the', 'our the', 'in in in'. The phrase audio starts and stops on the cleaned English where it could.",
+      "lines": [
+        "m3zv7cn2",
+        "mcftlkfa"
+      ]
+    },
+    {
+      "text": "Phrase English that comes after his Hebrew reading, or a sentence later: line 1 (from the reading of the line onward), line 3 (the 'is the fact that' rendering), line 5 (the 'in other words' rendering comes after the reading), line 6 (the mashal comes first, then the question on the level of dibur), line 9 (the 'whenever it uses the term' sentence follows the reading).",
+      "lines": [
+        "ikv26oay",
+        "ddg6itfk",
+        "a2n6eqzc",
+        "hcpmyn4y",
+        "hhmwe4yh"
+      ]
+    },
+    {
+      "text": "Phrases with Hebrew only (he reads them and gives no English of his): lines 5, 6, 9, 10, 11, 13, 15, 20, 24, 25, 29, 33 and 35. Each is cut where his translated phrases end, so none of his English is stretched over them.",
+      "lines": [
+        "a2n6eqzc",
+        "hcpmyn4y",
+        "hhmwe4yh",
+        "r3th4bn7",
+        "jubfhfxl",
+        "wdunw4ry",
+        "vl6eexit",
+        "4emrdz4d",
+        "jph4hks4",
+        "erqqbnxe",
+        "gay6mng2",
+        "wuy322aw",
+        "b6thssxm"
+      ]
+    },
+    {
+      "text": "Sources as he gives them, not checked against the books: the Rambam (line 4), the Hayom Yom and the Baal Shem Tov's comparison of the Jewish people to the ground (line 15), Etz Chaim (lines 26 and 37), Ein Yaakov (line 37), the Sefer HaChinuch and the Rambam on the reasons for the mitzvos (line 37), the Shulchan Aruch and the Gemara (line 37), and the verses he cites (lines 14, 22, 36).",
+      "lines": [
+        "2ghoadj3",
+        "vl6eexit",
+        "m3zv7cn2",
+        "dpwfkdds",
+        "ntftqfok"
+      ]
+    },
+    {
+      "text": "Terms the table lacks that this file does not define (the list of 12 is full): tzaddik and rasha (line 23), Shema (line 35), Noach (line 22), Yisroel and Yaakov (line 37), reishit hakav (line 17), midda and vayinachem (line 22), Adam d'Asiyah and Adam d'Beriah (lines 24 and 30). They are spelled as he says them.",
+      "lines": [
+        "wv2bz4aa",
+        "b6thssxm",
+        "dpwfkdds",
+        "36nbegwj",
+        "2vivdihc",
+        "jph4hks4"
+      ]
+    },
+    {
+      "text": "Reading differences: he reads line 7 as 'galaf galifo' where the chapter has 'gelif gelifo', and his reading of line 6 has an extra word at the start. The line is the text; his reading is not corrected.",
+      "lines": [
+        "tlyjtirn",
+        "hcpmyn4y"
+      ]
+    },
+    {
+      "text": "Reviewer's first look: the phrase cuts in lines 5, 6 and 15, where his English comes after a mashal or a question; the audio of line 36, where his stutter on the dalet stays inside the range; and the mashal titles, which are the writer's labels.",
+      "lines": [
+        "a2n6eqzc",
+        "hcpmyn4y",
+        "vl6eexit",
+        "kyivri6z"
+      ]
+    },
+    {
+      "text": "The three question blocks (lines 2, 6 and 10) are marked askedBy teacher: he puts each question himself ('What would that be in the nimshal?', 'What is the level of dibur...?', 'What is the thought of the thought...?') and no listener is heard on any of them.",
+      "lines": [
+        "hnevns3d",
+        "hcpmyn4y",
+        "r3th4bn7"
+      ]
+    }
+  ]
+}
