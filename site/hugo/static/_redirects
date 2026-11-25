@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects. Class transcript pages are no longer published:
+# send old links to the class list.
+/classes/transcripts/* /classes/ 301

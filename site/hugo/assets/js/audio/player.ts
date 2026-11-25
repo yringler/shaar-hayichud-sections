@@ -9,9 +9,8 @@
  * slow load can never land on a stale position. classes.js and play.js are
  * separate bundles but never run on the same page. follow.js (loaded by
  * play.js) is a separate bundle with its own copy of this module, so it
- * cannot see play.js's pending seeks: clicking a transcript paragraph (or
- * its play button) sets `currentTime` and calls `play()` directly. A
- * pending playAt() from play.js can then still land afterwards.
+ * cannot see play.js's pending seeks (it only marks and scrolls; it never
+ * seeks).
  */
 
 /** No automatic scrolling of a scroll region for this long after the reader scrolls it. */

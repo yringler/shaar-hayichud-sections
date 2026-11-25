@@ -1,7 +1,7 @@
 {{- /* One lecture from the catalog: audio player (canonical url) + title,
        the chapter text it reads (audio/lesson-text.html, in a short
-       scrolling box), and links to its transcript page and the chapter it is
-       aligned to, when those are published. The chapter link carries
+       scrolling box), and a link to the chapter it is aligned to, when that
+       is published. The chapter link carries
        ?teacher= (the series' teacherKey, see audio/model.ts) so the chapter
        page opens with this class's teacher, without changing the reader's
        saved choice. With classes.js the chapter link opens the in-page
@@ -10,10 +10,11 @@
        docks) and the class's auto-generated topics under its title (each
        plays the class from there). A class that a public study guide cites
        links it ("Study guide", or one link per chapter for a class in two
-       guides: <guide>?class=<transcript slug>, partials/study/index.html). */ -}}
+       guides: <guide>?class=<class slug>, partials/study/index.html). Only
+       the public guides: an advanced one (/advanced/) is linked from
+       nowhere. */ -}}
 {{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
-{{- $transcript := index $audio.transcripts .id -}}
 {{- $aligned := index $audio.aligned .id -}}
 {{- $text := partial "audio/lesson-text.html" .id -}}
 {{- $info := index $lectures .id -}}
@@ -43,14 +44,13 @@
     {{- end }}
   </div>
   {{- end }}
-  {{- if or $transcript $aligned $study }}
+  {{- if or $aligned $study }}
   <p class="track-links">
     {{- with $aligned }}
       {{- if eq (len .all) 1 }}<a class="audio-link" href="{{ .url }}{{ $teacher }}"{{ if $text }} data-lesson-open="{{ .url }}"{{ end }}>Follow in the text</a>
       {{- else }}<span class="track-links-label">Follow in the text:</span>{{ range .all }}<a class="audio-link" href="{{ .url }}{{ $teacher }}"{{ if $text }} data-lesson-open="{{ .url }}"{{ end }}>{{ replaceRE `^chapter_0*` "Chapter " .chapter }}</a>{{ end }}
       {{- end }}
     {{- end -}}
-    {{- with $transcript }}<a class="audio-link" href="{{ .url }}" target="_blank" rel="noopener">Transcript{{ partial "new-tab.html" . }}</a>{{ end -}}
     {{- with $study }}
       {{- if eq (len .) 1 }}<a class="audio-link" href="{{ (index . 0).url }}">Study guide</a>
       {{- else }}<span class="track-links-label">Study guide:</span>{{ range . }}<a class="audio-link" href="{{ .url }}">Chapter {{ .number }}</a>{{ end }}

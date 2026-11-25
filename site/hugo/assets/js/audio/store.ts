@@ -8,9 +8,9 @@
 export const AUTOPLAY_KEY = 'shaarHayichud.audio.autoplayNext';
 
 /**
- * localStorage key of Follow along on/off ("on" / "off"), shared by chapter,
- * transcript and study guide pages (unset: off on chapter and transcript
- * pages, on on study guide pages).
+ * localStorage key of Follow along on/off ("on" / "off"), shared by chapter
+ * and study guide pages (unset: off on chapter pages, on on study guide
+ * pages).
  */
 export const FOLLOW_KEY = 'shaarHayichud.audio.followAlong';
 

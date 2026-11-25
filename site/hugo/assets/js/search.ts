@@ -25,7 +25,7 @@ interface Pagefind {
 const PAGEFIND_URL = '/pagefind/pagefind.js';
 const RESULTS_PAGE = 20;
 const DEBOUNCE_MS = 250;
-const KIND_LABEL: Record<string, string> = { text: 'Text', translation: 'Translation', class: 'Class', topic: 'Topic', study: 'Study guide' };
+const KIND_LABEL: Record<string, string> = { text: 'Text', translation: 'Translation', topic: 'Topic', study: 'Study guide' };
 
 let pagefindLoad: Promise<Pagefind> | null = null;
 function loadPagefind(): Promise<Pagefind> {
@@ -70,7 +70,7 @@ function parseParts(json: string | undefined): Part[] {
  * window of the whole section around it; topics show the topic as the title.
  */
 function renderResult(d: PagefindData, isHit: (w: string) => boolean): HTMLLIElement {
-  const kind = d.meta['kind'] ?? 'class';
+  const kind = d.meta['kind'] ?? 'topic';
   const parts = parseParts(d.meta['parts']);
   const part = parts.find(([, , t]) => t.split(/\s+/).some(isHit)) ?? parts[0];
   const url = part?.[0] ?? d.url;

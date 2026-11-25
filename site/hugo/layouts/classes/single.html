@@ -1,7 +1,4 @@
 {{ define "main" }}
-  {{ with .Params.transcriptOf }}
-    {{ partial "audio/transcript.html" . }}
-  {{ else }}
   {{ $catalog := partial "catalog.html" . }}
   <div class="ltr-content">
     {{ $series := index $catalog.series .Params.seriesIndex }}
@@ -54,5 +51,4 @@
   </div>
   {{- $scripts := partialCached "audio/scripts.html" . "scripts" }}
   <script type="module" src="{{ $scripts.classes.RelPermalink }}" integrity="{{ $scripts.classes.Data.Integrity }}" crossorigin="anonymous"></script>
-  {{ end }}
 {{ end }}

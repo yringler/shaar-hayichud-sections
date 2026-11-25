@@ -19,7 +19,6 @@ export interface Lecture {
   part: string;
   durationSeconds: number | null;
   alignment: string;
-  transcript?: string;
   /** Auto-generated topic outline (outline.schema.json), relative to /data/v1/. */
   outline?: string;
   /** Where the class's part on this chapter starts (absent in older files): see playStart. */
@@ -323,7 +322,7 @@ export function chooseSeries<S extends { id: string }>(
  * The `?teacher=` value of a series in links: its title with everything but
  * ASCII letters and digits dropped ("Rabbi Markel Series (Advanced)" ->
  * "RabbiMarkelSeriesAdvanced"). Hugo templates build the same value
- * (class-track.html, audio/transcript.html).
+ * (class-track.html, study/single.html).
  */
 export function teacherKey(title: string): string {
   return title.replace(/[^A-Za-z0-9]+/g, '');
@@ -349,23 +348,11 @@ export function resolveTeacher<S extends { id: string; title: string }>(
   return prefixed.length === 1 ? prefixed[0] : undefined;
 }
 
-/** data/schema/v1/transcript.schema.json (the fields the site reads). */
-export interface Transcript {
-  schemaVersion: 1;
-  lectureId: string;
-  segments: { startSeconds: number; endSeconds: number; text: string; speaker?: string }[];
-}
-
-/** Timed items of a transcript: one per segment, keyed by its index. */
-export function segmentItems(t: Transcript): TimedItem[] {
-  return t.segments.map((s, i) => ({ key: String(i), start: s.startSeconds, end: s.endSeconds }));
-}
-
 /**
  * scrollTop that brings a child (offset `top`, height `height`, both
  * relative to the scroll region's content) into a region `viewport` tall
  * scrolled to `scrollTop`, or null when it is already fully visible. Puts
- * it a third of the way down, so the next paragraphs show below it.
+ * it a third of the way down, so what follows shows below it.
  */
 export function scrollToShow(scrollTop: number, viewport: number, top: number, height: number): number | null {
   if (top >= scrollTop && top + height <= scrollTop + viewport) return null;

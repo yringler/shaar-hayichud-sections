@@ -3,9 +3,9 @@
  * Browser test of the audio features on the built site (hugo/public/):
  * chapter 10 play-from-here (the saved or default teacher, no menu), the
  * teacher/class selectors and their saved choice, ?teacher= links, Follow along (the
- * is-discussing border, saved on/off), the transcript region in the docked
- * panel, new-tab transcript links, blocked storage, a transcript page, phone
- * width, pages without audio staying untouched, the class lists (contents,
+ * is-discussing border, saved on/off), blocked storage, phone width, pages
+ * without audio staying untouched, transcripts neither published nor
+ * rendered (old transcript URLs redirect), the class lists (contents,
  * lesson text preview, the in-page reader, the topic lists), Autoplay next on
  * both, topic deep links (?t=…#class-…: arrival at desktop and phone width,
  * Play from, the native play's seek, a topic click winning over it, a
@@ -13,15 +13,18 @@
  * HTML, Expand/Collapse all, side nav or "Jump to", a topic link to its
  * class), the site nav (Outlines, Search, no Translation item) and search
  * (/search/ over the Pagefind index: transliterations, prefixes, filters,
- * links to a transcript paragraph and a chapter line) and the study guide
- * pages (/study/: built from the public edition only, no Markel or beta
- * anywhere else, every link into and out of them, every line, passage, phrase
- * and block of every guide with its times, readable without JS at desktop and
- * phone width, the Study nav item; with JS: the docked player, highlights
- * following seeks, follow's scroll, detach and Back to now, a far outOfPlace
- * block, class switch, ⏮15/15⏭, Autoplay next, arrival links that never
- * autoplay, phrase taps, blocked storage, phone width; the chapter player's
- * "Study guide →" pill; study passages in search).
+ * links to a class topic and a chapter line) and the study guide pages
+ * (/study/: the public tier, index.json; /advanced/: the advanced tier,
+ * index-advanced.json, noindex, out of robots.txt, the sitemap, feeds and
+ * search, linked from nowhere; both the public edition, no sensitivity, no
+ * study-beta anywhere; every link into and out of them, every line,
+ * passage, phrase and block of every guide with its times, readable without
+ * JS at desktop and phone width, the Study nav item; with JS: the docked
+ * player, highlights following seeks, follow's scroll, detach and Back to
+ * now, a far outOfPlace block, class switch, ⏮15/15⏭, Autoplay next,
+ * arrival links that never autoplay, phrase taps, blocked storage, phone
+ * width; the chapter player's "Study guide →" pill; study passages in
+ * search).
  *
  *   E2E_ONLY=<regex> runs only the checks whose name matches.
  *
@@ -138,31 +141,9 @@ async function seek(page, t) {
   await page.waitForTimeout(400);
 }
 
-const discussing = (page) => page.$$eval('[data-aligned-text] .is-discussing, [data-transcript] .is-discussing', (els) => els.map((e) => e.id));
+const discussing = (page) => page.$$eval('[data-aligned-text] .is-discussing', (els) => els.map((e) => e.id));
 
-const PANE = '[data-listen-transcript-pane]';
-const transcriptOf = (lecture) => readJson(path.join(DIST, decodePath(chapter10.lectures[lecture].transcript)));
-/** Transcript region: visibility, size, scroll, current paragraph(s) and whether the first is fully in view. */
-const paneState = (page) =>
-  page.evaluate((sel) => {
-    const pane = document.querySelector(sel);
-    const r = pane.getBoundingClientRect();
-    const cur = [...pane.querySelectorAll('.tseg.is-discussing')];
-    const c = cur[0]?.getBoundingClientRect();
-    return {
-      hidden: pane.hidden,
-      height: r.height,
-      scrollTop: pane.scrollTop,
-      paras: pane.querySelectorAll('.tseg').length,
-      current: cur.map((e) => Number(e.dataset.i)),
-      currentVisible: !!c && c.top >= r.top - 1 && c.bottom <= r.bottom + 1,
-      firstText: pane.querySelector('.tseg')?.textContent ?? '',
-      listenH: Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h')) || 0,
-      panel: document.querySelector('[data-listen]').getBoundingClientRect().height,
-      innerHeight: window.innerHeight,
-      scrollY: window.scrollY,
-    };
-  }, PANE);
+
 const followOn = (page) =>
   page.waitForFunction(() => document.documentElement.classList.contains('is-following') && document.querySelector('[data-follow-along]').getAttribute('aria-pressed') === 'true');
 /** No chooser menu of any kind appeared. */
@@ -392,80 +373,10 @@ async function check(name, fn) {
       assert.ok(Math.abs(s.t - t0) < 0.5, `time moved from ${t0} to ${s.t}`);
     });
 
-    await check('transcript links open in a new tab and say so', async () => {
-      const link = page.locator('[data-listen-transcript]');
-      assert.equal(await link.getAttribute('target'), '_blank');
-      assert.equal(await link.getAttribute('rel'), 'noopener');
-      assert.equal(await link.locator('svg[aria-hidden="true"]').count(), 1);
-      assert.equal((await link.locator('.visually-hidden').textContent()).trim(), '(opens in a new tab)');
-      assert.equal(await link.getAttribute('href'), '/classes/transcripts/07-chap-10-1-atmus-ohr-ein-sof-m/');
-      // Visually hidden: takes no room.
-      const box = await link.locator('.visually-hidden').boundingBox();
-      assert.ok(box.width <= 1 && box.height <= 1);
-    });
-
-    await check('transcript region: show, click to seek, follows inside the region only, pauses after a region scroll, swaps with the class, hide', async () => {
-      const t1 = transcriptOf(WALTERS_1);
-      const toggle = page.locator('[data-listen-transcript-toggle]');
-      assert.equal(await toggle.textContent(), 'Show transcript');
-      assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
-      assert.ok(await page.locator(PANE).isHidden());
-      const before = await paneState(page);
-      await toggle.click();
-      await page.waitForSelector(`${PANE} .tseg`);
-      assert.equal(await toggle.textContent(), 'Hide transcript');
-      assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
-      let st = await paneState(page);
-      assert.equal(st.paras, t1.segments.length);
-      assert.equal(st.firstText.trim(), t1.segments[0].text);
-      assert.deepEqual(
-        await page.$$eval(`${PANE} .tseg`, (els) => els.map((e) => Number(e.dataset.start))),
-        t1.segments.map((x) => x.startSeconds),
-      );
-      // About half the screen, and the page padding / --listen-h grew with the panel.
-      assert.ok(st.height > 0.4 * st.innerHeight && st.height <= 0.51 * st.innerHeight, `region ${st.height}px of ${st.innerHeight}`);
-      assert.ok(Math.abs(st.listenH - st.panel) < 2 && st.listenH > before.listenH, `--listen-h ${st.listenH} panel ${st.panel}`);
-      assert.ok(st.panel <= 0.85 * st.innerHeight + 1);
-      // The panel itself does not scroll (only the region does).
-      assert.equal(await page.evaluate(() => { const p = document.querySelector('[data-listen]'); return p.scrollHeight - p.clientHeight; }), 0);
-
-      // Click a paragraph: seeks there and marks it.
-      await page.locator(`${PANE} .tseg[data-i="3"]`).click();
-      await waitTime(page, t1.segments[3].startSeconds);
-      await page.waitForTimeout(400);
-      st = await paneState(page);
-      assert.deepEqual(st.current, [3]);
-      assert.equal(await page.evaluate((sel) => getComputedStyle(document.querySelector(`${sel} .tseg[data-i="3"]`)).borderLeftWidth, PANE), '3px');
-      assert.equal((await audioState(page)).paused, false);
-
-      // Following: a far paragraph scrolls into view inside the region, and the page does not move.
-      await page.mouse.move(640, 150);
-      await page.mouse.wheel(0, 1); // pauses the page's own auto-scroll (follow.ts)
-      await page.waitForTimeout(300);
-      const y0 = (await paneState(page)).scrollY;
-      const far = t1.segments.length - 3;
-      await seek(page, t1.segments[far].startSeconds + 1);
-      await page.waitForTimeout(900);
-      st = await paneState(page);
-      assert.deepEqual(st.current, [far]);
-      assert.ok(st.scrollTop > 0 && st.currentVisible, `scrollTop ${st.scrollTop}, visible ${st.currentVisible}`);
-      assert.equal(st.scrollY, y0, 'the page scrolled');
-      await page.screenshot({ path: path.join(shots, 'chapter10-desktop-transcript-following.png') });
-
-      // The reader scrolls the region: no automatic scrolling for a while.
-      const paneBox = await page.locator(PANE).boundingBox();
-      await page.mouse.move(paneBox.x + paneBox.width / 2, paneBox.y + paneBox.height / 2);
-      await page.mouse.wheel(0, -5000);
-      await page.waitForTimeout(500);
-      const top0 = (await paneState(page)).scrollTop;
-      await seek(page, t1.segments[far - 1].startSeconds + 1);
-      await page.waitForTimeout(700);
-      st = await paneState(page);
-      assert.deepEqual(st.current, [far - 1]);
-      assert.equal(st.scrollTop, top0);
-      assert.equal(st.currentVisible, false);
-
-      // The last chapter lines can still scroll above the taller panel.
+    await check('no transcript in the panel (not published); the last lines still scroll above the docked panel', async () => {
+      assert.equal(await page.locator('[data-listen-transcript], [data-listen-transcript-toggle], [data-listen-transcript-pane], [data-transcript]').count(), 0);
+      assert.ok(chapter10.lectures.every((l) => !('transcript' in l)), 'a chapter index names a transcript');
+      assert.ok(await page.locator('[data-listen]').evaluate((p) => p.classList.contains('is-active')), 'the panel is docked');
       const reach = await page.evaluate(() => {
         window.scrollTo(0, document.documentElement.scrollHeight);
         const lines = document.querySelectorAll('[data-aligned-text] .line');
@@ -474,27 +385,6 @@ async function check(name, fn) {
         return { bottom: last.bottom, limit: window.innerHeight - h };
       });
       assert.ok(reach.bottom <= reach.limit, `last line ends at ${reach.bottom}, panel starts at ${reach.limit}`);
-
-      // Switching class swaps the transcript.
-      const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
-      await page.selectOption('[data-listen-select]', String(part2));
-      await page.waitForFunction(
-        ([sel, n]) => document.querySelectorAll(`${sel} .tseg`).length === n,
-        [PANE, transcriptOf(part2).segments.length],
-      );
-      assert.equal((await paneState(page)).firstText.trim(), transcriptOf(part2).segments[0].text);
-
-      // Hide: the region goes, the panel shrinks back.
-      await toggle.click();
-      await page.waitForFunction(() => {
-        const h = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--listen-h'));
-        return Math.abs(h - document.querySelector('[data-listen]').offsetHeight) < 2;
-      });
-      st = await paneState(page);
-      assert.ok(st.hidden);
-      assert.equal(await toggle.textContent(), 'Show transcript');
-      assert.ok(st.listenH < 0.35 * st.innerHeight, `--listen-h ${st.listenH}`);
-      await page.selectOption('[data-listen-select]', String(WALTERS_1));
     });
 
     await check('the teacher choice and Follow along are saved and apply on reload; ▶ plays the saved teacher', async () => {
@@ -507,9 +397,6 @@ async function check(name, fn) {
       // Follow along comes back on by itself, without starting playback.
       await followOn(page);
       assert.equal((await audioState(page)).paused, true);
-      // The transcript region's shown/hidden is not saved.
-      assert.ok(await page.locator(PANE).isHidden());
-      assert.equal(await page.getAttribute('[data-listen-transcript-toggle]', 'aria-expanded'), 'false');
       const r = refOf('njpqigb7', MARKEL_10);
       await page.click('.line-play[data-line="njpqigb7"]');
       await waitTime(page, r.startSeconds);
@@ -545,7 +432,7 @@ async function check(name, fn) {
     await context.close();
   }
 
-  await check('chapter 10 works with storage blocked (default teacher, Follow along, transcript region)', async () => {
+  await check('chapter 10 works with storage blocked (default teacher, Follow along)', async () => {
     const { context, page, errors } = await newPage(browser, base, { blockStorage: true });
     await page.goto(`${base}/texts/chapter-10/`);
     await page.waitForSelector('.line-play');
@@ -555,12 +442,11 @@ async function check(name, fn) {
     await page.click('.line-play[data-line="njpqigb7"]');
     await waitTime(page, refOf('njpqigb7', WALTERS_1).startSeconds);
     await noMenu(page);
-    await page.click('[data-listen-transcript-toggle]');
-    await page.waitForSelector(`${PANE} .tseg.is-discussing`);
+    await page.waitForSelector('[data-aligned-text] .is-discussing');
     await page.selectOption('[data-listen-series]', '37');
     await page.click('.line-play[data-line="gbyeqivs"]');
     await waitTime(page, refOf('gbyeqivs', MARKEL_10).startSeconds);
-    assert.equal(await page.locator(`${PANE} .tseg`).count(), transcriptOf(MARKEL_10).segments.length);
+    assert.equal((await audioState(page)).src, chapter10.lectures[MARKEL_10].url);
     // Nothing could be saved: a reload starts from the defaults.
     await page.reload();
     await page.waitForSelector('.line-play');
@@ -699,31 +585,6 @@ async function check(name, fn) {
     await context.close();
   });
 
-  await check('the transcript toggle is hidden for a class without a published transcript', async () => {
-    const { context, page, errors } = await newPage(browser, base);
-    const part2 = lectureOf('08 - Chap- 10-2 Atzmus Ohr Ein Sof (M).mp3');
-    await context.route('**/data/v1/alignments/chapters/chapter_10.json', async (route) => {
-      const d = structuredClone(chapter10);
-      delete d.lectures[part2].transcript;
-      await route.fulfill({ contentType: 'application/json', body: JSON.stringify(d) });
-    });
-    await page.goto(`${base}/texts/chapter-10/`);
-    await page.waitForSelector('.line-play');
-    const toggle = page.locator('[data-listen-transcript-toggle]');
-    assert.ok(await toggle.isVisible());
-    await toggle.click();
-    await page.waitForSelector(`${PANE} .tseg`);
-    await page.selectOption('[data-listen-select]', String(part2));
-    assert.ok(await toggle.isHidden());
-    assert.ok(await page.locator(PANE).isHidden());
-    // Back to a class with one: the region comes back with its transcript.
-    await page.selectOption('[data-listen-select]', String(WALTERS_1));
-    await page.waitForSelector(`${PANE} .tseg`);
-    assert.equal(await page.locator(`${PANE} .tseg`).count(), transcriptOf(WALTERS_1).segments.length);
-    assert.deepEqual(errors, []);
-    await context.close();
-  });
-
   await check('Autoplay next (chapter 10): saved; plays the teacher\'s next class from the start, in sync; stops after the last', async () => {
     const { context, page, errors } = await newPage(browser, base);
     try {
@@ -749,11 +610,9 @@ async function check(name, fn) {
       const walters = chapter10.lectures.flatMap((l, i) => (l.seriesId === '0' ? [i] : []));
       const [first, second] = walters;
       const last = walters[walters.length - 1];
-      assert.ok(walters.length > 2 && chapter10.lectures[second].transcript);
+      assert.ok(walters.length > 2);
       await page.click('[data-follow-along]');
       await followOn(page);
-      await page.click('[data-listen-transcript-toggle]');
-      await page.waitForSelector(`${PANE} .tseg`);
       assert.equal((await audioState(page)).src, chapter10.lectures[first].url);
       const audio = await page.$('[data-listen-audio]');
       await playToEnd(audio);
@@ -768,9 +627,7 @@ async function check(name, fn) {
       );
       assert.equal(await page.locator('[data-listen-select]').inputValue(), String(second));
       assert.equal(await page.locator('[data-listen-note]').textContent(), `Playing next: ${chapter10.lectures[second].title}`);
-      // The transcript region, Follow along and the outline move to the new class, as with the selector.
-      await page.waitForFunction(([sel, n]) => document.querySelectorAll(`${sel} .tseg`).length === n, [PANE, transcriptOf(second).segments.length]);
-      assert.equal((await paneState(page)).firstText.trim(), transcriptOf(second).segments[0].text);
+      // Follow along and the outline move to the new class, as with the selector.
       const line = chapter10.lines.find((l) => l.refs.some((r) => r.lecture === second));
       await seek(page, refOf(line.lineId, second).startSeconds + 0.5);
       assert.ok((await discussing(page)).includes(line.lineId));
@@ -812,7 +669,7 @@ async function check(name, fn) {
   });
 
   // ---------------- chapter 10, phone ----------------
-  await check('chapter 10 at phone width: compact bar, no horizontal scroll, tap plays (no menu), border and transcript region', async () => {
+  await check('chapter 10 at phone width: compact bar, no horizontal scroll, tap plays (no menu), border', async () => {
     const { context, page, errors } = await newPage(browser, base, {
       context: { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
     });
@@ -848,80 +705,11 @@ async function check(name, fn) {
       assert.ok(await page.locator('[data-listen-topics]').isHidden());
       assert.ok(await page.locator('[data-listen-now]').isHidden());
     }
-    // Transcript region: about half the screen above the controls; tap a paragraph to seek.
-    await page.tap('[data-listen-transcript-toggle]');
-    await page.waitForSelector(`${PANE} .tseg.is-discussing`);
-    let st = await paneState(page);
-    assert.ok(st.currentVisible);
-    assert.ok(st.height > 0.4 * st.innerHeight && st.height <= 0.51 * st.innerHeight, `region ${st.height}px of ${st.innerHeight}`);
-    assert.ok(st.panel <= 0.85 * st.innerHeight + 1);
-    const t2 = transcriptOf(r.lecture);
-    const i = st.current[0] + 2;
-    await page.locator(`${PANE} .tseg[data-i="${i}"]`).tap();
-    await waitTime(page, t2.segments[i].startSeconds);
-    await page.waitForTimeout(500);
-    st = await paneState(page);
-    assert.deepEqual(st.current, [i]);
-    assert.ok(st.currentVisible);
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     assert.ok(overflow <= 0, `page scrolls sideways by ${overflow}px`);
-    await page.screenshot({ path: path.join(shots, 'chapter10-phone-transcript-following.png') });
     assert.deepEqual(errors, []);
     await context.close();
   });
-
-  // ---------------- transcript page ----------------
-  for (const [name, viewport] of [
-    ['desktop', { width: 1280, height: 900 }],
-    ['phone', { width: 390, height: 844 }],
-  ]) {
-    await check(`transcript page (${name}): click a paragraph seeks, border follows, Follow along survives a reload`, async () => {
-      const { context, page, errors } = await newPage(browser, base, { context: { viewport, hasTouch: name === 'phone' } });
-      await page.goto(`${base}/classes/transcripts/001-intro/`);
-      assert.equal(await page.locator('.line-play').count(), 0);
-      assert.equal(await page.locator('[data-listen-transcript-toggle]').count(), 0);
-      await page.click('[data-follow-along]');
-      await followOn(page);
-      await page.reload();
-      await followOn(page);
-      await page.waitForSelector('.tseg .line-play');
-      const start = Number(await page.getAttribute('#t3', 'data-start'));
-      await page.click('#t3');
-      await waitTime(page, start);
-      await page.waitForTimeout(500);
-      assert.deepEqual(await discussing(page), ['t3']);
-      const t6 = Number(await page.getAttribute('#t6', 'data-start'));
-      await seek(page, t6 + 0.5);
-      assert.deepEqual(await discussing(page), ['t6']);
-      const border = await page.evaluate(() => getComputedStyle(document.getElementById('t6')).borderLeftWidth);
-      assert.equal(border, '3px'); // LTR transcript: inline-start is the left side
-      assert.equal(await page.locator('.tseg .line-play').count(), await page.locator('.tseg').count());
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-      assert.ok(overflow <= 0, `page scrolls sideways by ${overflow}px`);
-      await page.screenshot({ path: path.join(shots, `transcript-${name}.png`) });
-      assert.deepEqual(errors, []);
-      await context.close();
-    });
-  }
-
-  {
-    const outlines = readJson(path.join(DIST, 'outlines', 'index.json')).items;
-    const intro = outlines.find((i) => i.id === '001 Intro.mp3');
-    if (intro) {
-      await check('transcript page shows outline topics as headings between paragraphs', async () => {
-        const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'transcripts', '001-intro', 'index.html'), 'utf8');
-        const topics = readJson(path.join(DIST, decodePath(intro.path))).topics;
-        const headings = [...html.matchAll(/<h2 class="?topic"? data-topic-start="?([\d.]+)"?>([^<]*)</g)];
-        assert.deepEqual(headings.map((m) => m[2].trim()), topics.map((t) => t.title));
-        assert.ok(html.includes('Topic headings are auto-generated'));
-        // Each heading sits just before a paragraph that starts at most 5 s before the topic... or after it.
-        for (const m of headings) {
-          const after = html.slice(m.index).match(/data-start="?([\d.]+)"?/);
-          assert.ok(after && Number(after[1]) >= Number(m[1]) - 5, `heading ${m[2]} placed before ${after?.[1]}`);
-        }
-      });
-    }
-  }
 
   await check('a chapter without alignments is untouched (no player, no script, no data-t)', async () => {
     const aligned = new Set(fs.readdirSync(path.join(DIST, 'alignments', 'chapters')));
@@ -931,48 +719,31 @@ async function check(name, fn) {
     assert.ok(!/data-listen|data-t=|<script/.test(html));
   });
 
-  await check('class list links to transcripts (new tab, with icon and hidden text) and the text', async () => {
-    const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-markel-series-advanced', 'part-1-chapters-10-15', 'index.html'), 'utf8');
-    assert.ok(html.includes('/classes/transcripts/001-intro/'));
-    assert.ok(html.includes('/classes/transcripts/002-tape016-side1-ch10/'));
-    const links = [...html.matchAll(/<a (?:class="?audio-link"? )?href="?\/classes\/transcripts\/[^ >]+ ([^>]*)>Transcript(.*?)<\/a>/g)];
-    assert.ok(links.length >= 2);
-    for (const [, attrs, inner] of links) {
-      assert.match(attrs, /target="?_blank"?/);
-      assert.match(attrs, /rel="?noopener"?/);
-      assert.match(inner, /<svg[^>]*aria-hidden="true"/);
-      assert.match(inner, /class="?visually-hidden"?> \(opens in a new tab\)</);
-    }
-    const texts = fs.readFileSync(path.join(PUBLIC, 'texts', 'index.html'), 'utf8');
-    assert.ok(/Classes without text[\s\S]*\/classes\/transcripts\/001-intro\//.test(texts));
-  });
-
-  await check('/texts groups classes without text by teacher and catalog heading, collapsed', async () => {
-    const { context, page } = await newPage(browser, base, { context: { viewport: { width: 390, height: 844 } } });
-    try {
-      await page.goto(`${base}/texts/`);
-      const teachers = await page.locator('.index-teacher').allTextContents();
-      assert.ok(teachers.length >= 1);
-      const groups = page.locator('details.index-group');
-      assert.ok((await groups.count()) >= 2);
-      // Collapsed by default: no transcript link visible until a group opens.
-      assert.equal(await page.locator('details.index-group a:visible').count(), 0);
-      // Every group's count matches its links, and each link is a transcript page.
-      for (let i = 0; i < (await groups.count()); i++) {
-        const g = groups.nth(i);
-        const n = Number(await g.locator('.index-group-count').textContent());
-        assert.equal(await g.locator('li a').count(), n);
-        for (const href of await g.locator('li a').evaluateAll((as) => as.map((a) => a.getAttribute('href')))) {
-          assert.match(href, /^\/classes\/transcripts\/[^/]+\/$/);
+  await check('transcripts are not published or rendered: no transcript pages, links or data; old URLs redirect; /texts has no "Classes without text"', async () => {
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'classes', 'transcripts')), 'transcript pages are built');
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'data', 'v1', 'transcripts')), 'transcripts are published');
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'data', 'v1', 'schema', 'transcript.schema.json')));
+    assert.ok(!readJson(path.join(PUBLIC, 'data', 'v1', 'index.json')).items.some((i) => i.id === 'transcripts'));
+    assert.match(fs.readFileSync(path.join(PUBLIC, '_redirects'), 'utf8'), /^\/classes\/transcripts\/\* \/classes\/ 301$/m);
+    const leaks = [];
+    const walk = (dir) => {
+      for (const e of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, e.name);
+        if (e.isDirectory()) {
+          if (!['pagefind', 'data', 'fonts', 'img'].includes(rel)) walk(rel);
+        } else if (e.name.endsWith('.html') && /\/classes\/transcripts\/|data-listen-transcript|class="?tseg/.test(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'))) {
+          leaks.push(rel);
         }
       }
-      await groups.first().locator('summary').click();
-      assert.ok((await groups.first().locator('a:visible').count()) > 0);
-      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true);
-      await page.screenshot({ path: path.join(shots, 'texts-groups-phone.png'), fullPage: true });
-    } finally {
-      await context.close();
-    }
+    };
+    walk('');
+    assert.deepEqual(leaks, []);
+    // A class box links its study guide where the transcript link stood.
+    const html = fs.readFileSync(path.join(PUBLIC, 'classes', 'rabbi-benyamin-walters-original-class', 'chapters-10-15', 'index.html'), 'utf8');
+    assert.match(html, />Study guide</);
+    assert.ok(!/>Transcript</.test(html));
+    const texts = fs.readFileSync(path.join(PUBLIC, 'texts', 'index.html'), 'utf8');
+    assert.ok(!texts.includes('Classes without text'));
   });
 
   await check('?teacher=RabbiMarkel opens chapter 10 with Markel without saving it; picking a teacher saves it and drops the parameter', async () => {
@@ -1009,8 +780,6 @@ async function check(name, fn) {
     assert.match(html, /<nav class="?class-toc"?[\s\S]*?href="?#chapter-10"?/);
     assert.match(html, /id="?chapter-10"?/);
     assert.match(html, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
-    const t = fs.readFileSync(path.join(PUBLIC, 'classes', 'transcripts', '002-tape016-side1-ch10', 'index.html'), 'utf8');
-    assert.match(t, /href="?\/texts\/chapter-10\/\?teacher=RabbiMarkelSeriesAdvanced"?/);
   });
 
   for (const [name, ctx] of [
@@ -1288,7 +1057,7 @@ async function check(name, fn) {
         await page.tap('[data-listen] .autoplay-next');
         assert.equal(await page.isChecked('[data-listen] [data-autoplay-next]'), true);
         await page.waitForTimeout(300);
-        const st = await paneState(page);
+        const st = await page.evaluate(() => ({ panel: document.querySelector('[data-listen]').getBoundingClientRect().height, innerHeight: window.innerHeight }));
         // The phone width check's limit (at 360 px the buttons already take a third row).
         if (name === '390') assert.ok(st.panel <= 0.25 * st.innerHeight, `panel is ${st.panel}px of ${st.innerHeight}`);
         const panelToggle = await page.locator('[data-listen] .autoplay-next').boundingBox();
@@ -1708,9 +1477,14 @@ async function check(name, fn) {
 
   // ---------------- study guide pages ----------------
   const studyIndex = readJson(path.join(DIST, 'study', 'index.json'));
-  const studyGuides = studyIndex.series.flatMap((s) =>
-    s.chapters.map((c) => ({ series: s, entry: c, url: `/study/${s.id}/chapter-${Number(c.chapter.slice(8))}/`, guide: readJson(path.join(DIST, c.path)) })),
-  );
+  const guidesOf = (index, root) =>
+    index.series.flatMap((s) =>
+      s.chapters.map((c) => ({ series: s, entry: c, url: `${root}${s.id}/chapter-${Number(c.chapter.slice(8))}/`, guide: readJson(path.join(DIST, c.path)) })),
+    );
+  const studyGuides = guidesOf(studyIndex, '/study/');
+  // The advanced tier: unlisted pages under /advanced/ (noindex, linked from nowhere).
+  const advancedIndex = readJson(path.join(DIST, 'study', 'index-advanced.json'));
+  const advancedGuides = guidesOf(advancedIndex, '/advanced/');
   const decodeEntities = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
   const htmlIds = new Map();
   const idsIn = (file) => {
@@ -1748,46 +1522,99 @@ async function check(name, fn) {
     return ids;
   };
 
-  await check('study pages: /study/, each public series and guide is built; nothing but the public edition (no Markel, no beta, no sensitivity) outside /data/study-beta/', async () => {
+  await check('study pages: /study/ has each public series and guide; index.json lists only public series; no sensitivity and no study-beta anywhere', async () => {
     assert.ok(studyGuides.length >= 20, `${studyGuides.length} public guides`);
     assert.ok(fs.existsSync(path.join(PUBLIC, 'study', 'index.html')));
     for (const s of studyIndex.series) assert.ok(fs.existsSync(path.join(PUBLIC, 'study', s.id, 'index.html')), s.id);
     for (const g of studyGuides) assert.ok(fs.existsSync(path.join(PUBLIC, g.url, 'index.html')), g.url);
     const built = fs.readdirSync(path.join(PUBLIC, 'study'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
     assert.deepEqual(built.sort(), studyIndex.series.map((s) => s.id).sort(), 'study series pages = the public index');
-    // The beta export is published (unlisted), and Markel (series 37) is in it but not public.
-    const beta = readJson(path.join(PUBLIC, 'data', 'study-beta', 'v1', 'study', 'index.json'));
-    assert.ok(beta.series.some((s) => s.id === 'markel-advanced'), 'the beta export lists markel-advanced');
+    // Markel (series 37) is advanced, not public; a series is in one index only.
     assert.ok(!studyIndex.series.some((s) => s.id === 'markel-advanced' || s.catalogSeriesId === '37'), 'markel-advanced is not public');
+    assert.ok(advancedIndex.series.some((s) => s.id === 'markel-advanced'), 'index-advanced.json lists markel-advanced');
+    assert.deepEqual(studyIndex.series.filter((s) => advancedIndex.series.some((a) => a.id === s.id)), []);
+    // The study-beta export is gone.
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'data', 'study-beta')));
     const leaks = [];
     const walk = (dir) => {
       for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
         const rel = path.join(dir, d.name);
         if (d.isDirectory()) {
-          // The JSON Schemas describe both editions, so they name the beta.
-          if (![path.join('data', 'study-beta'), path.join('data', 'v1', 'schema'), 'pagefind'].includes(rel)) walk(rel);
-        } else if (/\.(html|js|css|json|xml|txt)$/.test(d.name)) {
+          if (rel !== 'pagefind') walk(rel);
+        } else if (/\.(html|js|css|json|xml|txt)$/.test(d.name) || d.name.startsWith('_')) {
           const text = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
-          if (/markel-advanced|study-beta/.test(text) && rel !== '_headers') leaks.push(rel);
+          if (/study-beta/.test(text)) leaks.push(`${rel}: study-beta`);
+          // Every published guide, of either tier, is its public edition.
+          if (rel.startsWith(path.join('data', 'v1', 'study')) && text.includes('"sensitivity"')) leaks.push(`${rel}: sensitivity`);
+          // Markel's guides are only where the advanced tier is.
+          const advancedPlace = rel.startsWith(`advanced${path.sep}`) || rel.startsWith(path.join('data', 'v1', 'study', 'markel-advanced')) || rel === path.join('data', 'v1', 'study', 'index-advanced.json');
+          if (/markel-advanced/.test(text) && !advancedPlace) leaks.push(`${rel}: markel-advanced`);
         }
       }
     };
     walk('');
     assert.deepEqual(leaks, []);
-    // The published guides the pages are built from carry no sensitivity flags.
-    for (const g of studyGuides) {
+    for (const g of [...studyGuides, ...advancedGuides]) {
       for (const b of g.guide.sections.flatMap((s) => s.passages.flatMap((p) => p.blocks))) assert.ok(!('sensitivity' in b), `${g.url}: a block with sensitivity`);
     }
   });
 
-  await check('study pages: every link to a study page (chapter pages, class boxes, transcripts, outlines, /texts, nav) and every link on one resolves to an existing page, id and class', async () => {
+  await check('advanced pages: /advanced/<series>/ and each guide built (no /advanced/ page), noindex (meta and header), out of robots, sitemap, RSS and search; nothing links in; no Markel study pill', async () => {
+    assert.ok(advancedGuides.length >= 20, `${advancedGuides.length} advanced guides`);
+    assert.ok(!fs.existsSync(path.join(PUBLIC, 'advanced', 'index.html')), '/advanced/ itself is rendered');
+    const built = fs.readdirSync(path.join(PUBLIC, 'advanced'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+    assert.deepEqual(built.sort(), advancedIndex.series.map((s) => s.id).sort());
+    const pages = allPages.filter((p) => p.startsWith(`advanced${path.sep}`));
+    assert.equal(pages.length, advancedIndex.series.length + advancedGuides.length);
+    for (const g of advancedGuides) assert.ok(pages.includes(path.join(g.url.slice(1), 'index.html')), g.url);
+    for (const rel of pages) {
+      const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
+      assert.match(html, /<meta name="?robots"? content="?noindex"?>/, `${rel}: no robots meta`);
+      // Its breadcrumb never leads into the public /study/ pages.
+      assert.ok(!/class="?breadcrumb"?><a href="?\/study\//.test(html), `${rel}: breadcrumb to /study/`);
+    }
+    // Public pages are not noindex.
+    assert.ok(!/name="?robots"?/.test(fs.readFileSync(path.join(PUBLIC, studyGuides[0].url, 'index.html'), 'utf8')));
+    assert.match(fs.readFileSync(path.join(PUBLIC, '_headers'), 'utf8'), /^\/advanced\/\*\n {2}X-Robots-Tag: noindex$/m);
+    const robots = fs.readFileSync(path.join(PUBLIC, 'robots.txt'), 'utf8');
+    assert.match(robots, /^User-agent: \*$/m);
+    assert.match(robots, /^Disallow: \/advanced\/$/m);
+    assert.match(robots, /^Sitemap: https:\/\/www\.shaarhayichudresources\.com\/sitemap\.xml$/m);
+    // No other page links to them, and no feed or sitemap lists them.
+    const linking = [];
+    for (const rel of allPages.filter((p) => !p.startsWith(`advanced${path.sep}`))) {
+      if (/href="?(?:https:\/\/www\.shaarhayichudresources\.com)?\/advanced\//.test(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'))) linking.push(rel);
+    }
+    assert.deepEqual(linking, []);
+    const xmls = [];
+    const walkXml = (dir) => {
+      for (const d of fs.readdirSync(path.join(PUBLIC, dir), { withFileTypes: true })) {
+        const rel = path.join(dir, d.name);
+        if (d.isDirectory()) walkXml(rel);
+        else if (d.name.endsWith('.xml')) xmls.push(rel);
+      }
+    };
+    walkXml('');
+    assert.ok(xmls.includes('sitemap.xml') && xmls.includes('index.xml'));
+    for (const rel of xmls) assert.ok(!/shaarhayichudresources\.com\/advanced\//.test(fs.readFileSync(path.join(PUBLIC, rel), 'utf8')), `${rel} lists /advanced/`);
+    // No class box or chapter player offers Markel's guide.
+    for (const rel of allPages.filter((p) => p.startsWith(path.join('classes', 'rabbi-markel-series-advanced')))) {
+      assert.ok(!/>Study guide</.test(fs.readFileSync(path.join(PUBLIC, rel), 'utf8')), `${rel}: a Study guide pill`);
+    }
+    for (const rel of allPages.filter((p) => p.startsWith(`texts${path.sep}`) || p.startsWith(`he${path.sep}`))) {
+      const m = /data-study-guides="([^"]*)"/.exec(fs.readFileSync(path.join(PUBLIC, rel), 'utf8'));
+      if (m) assert.ok(!('37' in JSON.parse(decodeEntities(m[1]))), `${rel}: the chapter player offers Markel's guide`);
+    }
+  });
+
+  await check('study pages: every link to a study page (chapter pages, class boxes, outlines, /texts, nav) and every link on one (public or advanced) resolves to an existing page, id and class', async () => {
     const broken = [];
     const into = new Map();
     let links = 0;
     for (const rel of allPages) {
       const pageUrl = new URL(`/${rel.replace(/index\.html$/, '')}`, 'http://x');
       const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');
-      const isStudy = rel.startsWith(`study${path.sep}`);
+      const isStudy = rel.startsWith(`study${path.sep}`) || rel.startsWith(`advanced${path.sep}`);
       const main = isStudy ? html.slice(html.indexOf('<main'), html.lastIndexOf('</main>')) : html;
       for (const m of main.matchAll(/<a\s[^>]*?href=(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)) {
         const u = new URL(decodeEntities(m[1] ?? m[2] ?? m[3]), pageUrl);
@@ -1808,7 +1635,7 @@ async function check(name, fn) {
         if (id && !idsIn(file).has(id)) broken.push(`${rel}: ${u.pathname}#${id} (no such id)`);
         const cls = u.searchParams.get('class');
         if (cls) {
-          const g = studyGuides.find((x) => x.url === u.pathname);
+          const g = [...studyGuides, ...advancedGuides].find((x) => x.url === u.pathname);
           if (!g?.entry.lectures.some((l) => lectureSlug(l.id) === cls)) broken.push(`${rel}: ${u.pathname}?class=${cls} (not a class of the guide)`);
         }
       }
@@ -1833,7 +1660,7 @@ async function check(name, fn) {
   await check('study guide pages: every chapter line once (span.line id), every passage, phrase and block, with times; no writer notes (outOfPlace)', async () => {
     const { context, page, errors } = await newPage(browser, base, { context: { viewport: { width: 1280, height: 900 }, javaScriptEnabled: false } });
     try {
-      for (const g of studyGuides) {
+      for (const g of [...studyGuides, ...advancedGuides]) {
         await page.goto(`${base}${g.url}`);
         const got = await page.evaluate(() => ({
           lineIds: [...document.querySelectorAll('.study-text span.line[id]')].map((e) => e.id),
@@ -1860,7 +1687,8 @@ async function check(name, fn) {
         for (const b of passages.flatMap((p) => p.blocks)) if (b.outOfPlace) assert.ok(!got.text.includes(b.outOfPlace), `${label}: shows a writer's outOfPlace note`);
         assert.equal(got.audio.length, g.entry.lectures.length + 1, `${label}: one <audio> per class, and the docked player's`);
         assert.equal(got.classAudio.length, g.entry.lectures.length, `${label}: one <audio> per class in the class list`);
-        if (g.entry.status === 'draft') assert.match(got.text, new RegExp(`Machine-drafted from ${g.series.teacher}’ class and not yet checked against it\\. The recording is the source\\.`));
+        const possessive = g.series.teacher.endsWith('s') ? `${g.series.teacher}’` : `${g.series.teacher}’s`;
+        if (g.entry.status === 'draft') assert.match(got.text, new RegExp(`Machine-drafted from ${possessive} class and not yet checked against it\\. The recording is the source\\.`));
       }
       assert.deepEqual(errors, []);
     } finally {
@@ -2571,9 +2399,11 @@ async function check(name, fn) {
       }
       assert.equal(new URL(page.url()).searchParams.get('in'), 'text');
 
-      const markel = await searchFor(page, 'ממלא וסובב', 's37');
-      assert.ok(markel.results.length > 0, 'a prefixed glossary term in a multi-word query');
+      const markel = await searchFor(page, 'tzimtzum', 's37');
+      assert.ok(markel.results.length > 0, 'a teacher filter: Markel\'s class topics');
+      // Markel's guides are advanced (unlisted): only his class topics are found.
       for (const r of markel.results) assert.match(r.href, /^\/classes\//);
+      assert.ok((await searchFor(page, 'ממלא וסובב')).results.length > 0, 'a prefixed glossary term in a multi-word query');
 
       // Typing updates the results and the URL.
       await page.fill('#search-q', 'reshimu');
@@ -2586,21 +2416,19 @@ async function check(name, fn) {
     }
   });
 
-  await check('search: a transcript result opens its paragraph (:target) and the player starts there; a text result opens its line', async () => {
+  await check('search: class results are topics (no transcripts) opening their class at the topic; a text result opens its line', async () => {
     const { context, page, errors } = await newPage(browser, base);
     try {
       const { results } = await searchFor(page, 'reshimu', 'classes');
-      const hit = results.find((r) => r.kind === 'class');
-      assert.ok(hit, 'a transcript result');
-      assert.match(hit.href, /^\/classes\/transcripts\/[^/]+\/#t\d+$/);
+      assert.ok(results.length > 0, 'class results');
+      for (const r of results) {
+        assert.equal(r.kind, 'topic');
+        assert.match(r.href, /^\/classes\/[^?#]+\/\?t=\d+#class-/);
+      }
+      const hit = results[0];
       await page.click(`.search-result a[href="${hit.href}"]`);
-      await page.waitForURL(`${base}${hit.href}`);
-      const start = await page.evaluate(() => Number(document.querySelector('.tseg:target')?.dataset.start));
-      assert.ok(Number.isFinite(start), 'the paragraph is the :target');
-      await page.evaluate(() => document.querySelector('[data-listen-audio]').play());
-      await page.waitForFunction(() => document.querySelector('[data-listen-audio]').currentTime > 0);
-      const t = await page.evaluate(() => document.querySelector('[data-listen-audio]').currentTime);
-      assert.ok(Math.abs(t - start) < 3, `plays from the paragraph (${t} vs ${start})`);
+      await page.waitForURL((u) => u.pathname === new URL(hit.href, base).pathname);
+      await page.waitForSelector('.deep-play');
 
       const text = await searchFor(page, 'צמצום', 'text');
       const line = text.results[0];

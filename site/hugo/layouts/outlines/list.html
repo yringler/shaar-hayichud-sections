@@ -5,7 +5,7 @@
   {{ $catalog := partial "catalog.html" . }}
   <div class="ltr-content outlines-index">
     <h1>{{ .Title }}</h1>
-    <p class="outlines-about">Auto-generated topic outlines of the classes that have a transcript, series by series.
+    <p class="outlines-about">Auto-generated topic outlines of the classes, series by series, made from machine transcripts of the recordings.
       Each topic links to its class on the class page, ready to play from that point.
       The outlines are machine-made (Sofer.ai): expect rough titles.</p>
     {{ range sort .RegularPages "Params.seriesIndex" }}

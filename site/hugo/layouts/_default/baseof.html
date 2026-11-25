@@ -6,6 +6,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{- /* Unlisted pages (the advanced study guides, content/advanced/) stay out of search engines. */}}
+  {{ if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
   <title>{{ with .Title }}{{ . }} — {{ end }}{{ site.Title }}</title>
   {{ if eq $lang "he" }}
     {{ with .Params.altUrl }}<link rel="canonical" href="{{ . | absURL }}">{{ end }}

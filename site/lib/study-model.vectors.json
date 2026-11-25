@@ -240,7 +240,7 @@
     { "parts": ["a", "b", "c"], "lecture": "c", "expect": null },
     { "parts": ["a", "b", "c"], "lecture": "x", "expect": null }
   ],
-  "transcriptSlug": [
+  "classSlug": [
     ["07 - Chap- 10-1 Atmus Ohr Ein Sof (M).mp3", "07-chap-10-1-atmus-ohr-ein-sof-m"],
     ["001 Intro.mp3", "001-intro"],
     ["Tape 3.M4A", "tape-3"]

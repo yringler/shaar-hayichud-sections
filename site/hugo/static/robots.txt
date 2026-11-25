@@ -1,0 +1,6 @@
+# The advanced study guides (/advanced/) are unlisted: each page is also
+# noindex (meta and X-Robots-Tag), and nothing on the site links to them.
+User-agent: *
+Disallow: /advanced/
+
+Sitemap: https://www.shaarhayichudresources.com/sitemap.xml

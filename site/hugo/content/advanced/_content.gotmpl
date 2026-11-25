@@ -1,0 +1,26 @@
+{{- /* Content adapter: the advanced study guides (partials/study/tier.html
+       "advanced", which reads data/v1/study/index-advanced.json, the public
+       edition of the series published unlisted). One page per series at
+       /advanced/<study series id>/ and one per guide at
+       /advanced/<study series id>/chapter-N/, rendered by the study layouts
+       (type study, studyTier advanced, noindex, not listed, not in the
+       sitemap: _index.md cascades it all). There is no /advanced/ page. */ -}}
+{{- $study := partialCached "study/tier.html" "advanced" "advanced" -}}
+{{- range $s := $study.series -}}
+  {{- $.AddPage (dict
+    "path" $s.id
+    "title" (printf "Study guides: %s" $s.title)
+    "kind" "section"
+    "outputs" (slice "html")
+    "params" (dict "pageLang" "en" "dir" "ltr" "studySeries" $s.id)
+  ) -}}
+  {{- range $c := $s.chapters -}}
+    {{- $.AddPage (dict
+      "path" (printf "%s/chapter-%s" $s.id $c.number)
+      "title" (printf "Chapter %s study guide: %s" $c.number $s.teacher)
+      "kind" "page"
+      "outputs" (slice "html")
+      "params" (dict "pageLang" "en" "dir" "ltr" "studySeries" $s.id "studyChapter" $c.chapter)
+    ) -}}
+  {{- end -}}
+{{- end -}}

@@ -21,7 +21,6 @@ import {
   parseDeepLink,
   rankRefs,
   scrollToShow,
-  segmentItems,
   spanAt,
   spans,
   teacherKey,
@@ -165,22 +164,6 @@ test("resolveTeacher: by id, by key (any case), by a unique key prefix", () => {
   assert.equal(resolveTeacher(here, "RabbiX"), undefined);
   assert.equal(resolveTeacher(here, ""), undefined);
   assert.equal(resolveTeacher(here, null), undefined);
-});
-
-test("segmentItems keys transcript segments by index", () => {
-  const t = {
-    schemaVersion: 1,
-    lectureId: "x",
-    segments: [
-      { startSeconds: 0, endSeconds: 40, text: "a" },
-      { startSeconds: 40, endSeconds: 90, text: "b" },
-    ],
-  };
-  assert.deepEqual(segmentItems(t), [
-    { key: "0", start: 0, end: 40 },
-    { key: "1", start: 40, end: 90 },
-  ]);
-  assert.deepEqual(spanAt(spans(segmentItems(t)), 45)?.keys, ["1"]);
 });
 
 test("scrollToShow: null when fully visible, else a third of the way down", () => {

@@ -1,0 +1,6 @@
+{{- /* The public study guides (data/v1/study/index.json), pages under
+       /study/: partials/study/tier.html for the "public" tier. Every link
+       into the study pages from the rest of the site goes through this, so
+       none can reach an advanced guide (/advanced/). Call with
+       partialCached "study/index.html" . "study". */ -}}
+{{- return partialCached "study/tier.html" "public" "public" -}}

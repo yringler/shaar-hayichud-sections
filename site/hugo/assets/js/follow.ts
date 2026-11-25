@@ -1,13 +1,13 @@
 /**
- * follow.js: "Follow along". Loaded on demand by play.js when Follow along
- * is turned on (by the button, or on page load when the reader left it on).
- * While the player plays, the line (chapter pages) or paragraph (transcript
- * pages) under discussion gets the `is-discussing` class, which CSS draws as
- * a side border. The current item is scrolled into view unless the reader
- * scrolled the page recently. Scrolling inside the player panel (its topic
- * list or transcript) does not count: play.ts handles that region itself.
+ * follow.js: "Follow along" on chapter pages. Loaded on demand by play.js
+ * when Follow along is turned on (by the button, or on page load when the
+ * reader left it on). While the player plays, the line under discussion
+ * gets the `is-discussing` class, which CSS draws as a side border. The
+ * current line is scrolled into view unless the reader scrolled the page
+ * recently. Scrolling inside the player panel (its topic list) does not
+ * count.
  */
-import { formatTime, spanAt, type Span } from './audio/model.ts';
+import { spanAt, type Span } from './audio/model.ts';
 import { scrollWatcher, smoothScroll } from './audio/player.ts';
 
 export interface FollowOptions {
@@ -20,8 +20,6 @@ export interface FollowOptions {
   spansFor: (src: string) => Span[];
   /** Elements that get `is-discussing` for a span key. */
   elementsFor: (key: string) => Element[];
-  /** Transcript pages: clicking one of these (or its injected play button) seeks to its start. */
-  seekTargets?: { el: HTMLElement; start: number }[];
 }
 
 export interface FollowController {
@@ -85,41 +83,6 @@ export function startFollow(o: FollowOptions): FollowController {
     clear();
   });
 
-  // Transcript paragraphs: click / Enter seeks there.
-  const seek = (start: number) => {
-    audio.currentTime = start;
-    void audio.play().catch(() => undefined);
-  };
-  for (const { el, start } of o.seekTargets ?? []) {
-    el.addEventListener('click', (e) => {
-      if (!enabled) return;
-      const sel = window.getSelection();
-      if ((sel && !sel.isCollapsed) || e.detail > 1 || (e.target as Element).closest('a')) return;
-      seek(start);
-    });
-  }
-
-  // Keyboard / screen reader access: a play button at the start of each
-  // paragraph (no text content, so copying the transcript is unchanged).
-  const buttons: HTMLButtonElement[] = [];
-  const setTargetsFocusable = (on: boolean) => {
-    if (on && buttons.length === 0) {
-      for (const { el, start } of o.seekTargets ?? []) {
-        const b = document.createElement('button');
-        b.type = 'button';
-        b.className = 'line-play';
-        b.setAttribute('aria-label', `Play from ${formatTime(start)}`);
-        b.addEventListener('click', (e) => {
-          e.stopPropagation();
-          seek(start);
-        });
-        el.prepend(b);
-        buttons.push(b);
-      }
-    }
-    for (const b of buttons) b.hidden = !on;
-  };
-
   return {
     get enabled() {
       return enabled;
@@ -127,7 +90,6 @@ export function startFollow(o: FollowOptions): FollowController {
     setEnabled(on: boolean) {
       enabled = on;
       document.documentElement.classList.toggle('is-following', on);
-      setTargetsFocusable(on);
       if (on) update();
       else clear();
     },

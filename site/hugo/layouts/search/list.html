@@ -2,8 +2,10 @@
   {{- /* /search/: the search form and results (search.js, over the Pagefind
          index that scripts/search-index.ts builds after Hugo). This page also
          writes /search/manifest.json, the indexer's list of what to index and
-         where it lives (chapters, translations, published transcripts, public
-         study guides); the indexer deletes it. */ -}}
+         where it lives (chapters, translations, classes with a published
+         outline, public study guides); the indexer deletes it. Transcripts
+         are not published, and the advanced study guides (/advanced/) are
+         never listed here. */ -}}
   {{- $audio := partialCached "audio/index.html" . "audio" -}}
   {{- $lectures := partialCached "audio/lectures.html" . "lectures" -}}
   {{- $catalog := partial "catalog.html" . -}}
@@ -18,20 +20,21 @@
     {{- with $p.Params.chapter_data -}}{{- $translations = $translations | append (dict "key" . "url" $p.RelPermalink "title" $p.Title) -}}{{- end -}}
   {{- end -}}
   {{- $list := slice -}}
-  {{- $withTranscripts := slice -}}
-  {{- range $id, $t := $audio.transcripts -}}
+  {{- $teachers := slice -}}
+  {{- range $id, $path := $audio.outlines -}}
     {{- $info := index $lectures $id -}}
-    {{- if not $info -}}{{- errorf "search: published transcript %q is missing from audio/lectures.html" $id -}}{{- end -}}
+    {{- if not $info -}}{{- errorf "search: published outline %q is missing from audio/lectures.html" $id -}}{{- end -}}
     {{- $list = $list | append (dict
       "id" $id "title" $info.lecture.title "series" $info.series.title "headings" ($info.headings | default slice)
-      "transcriptUrl" $t.url "partUrl" $info.partUrl "anchor" $info.anchor) -}}
-    {{- $withTranscripts = $withTranscripts | append $info.series.id -}}
+      "partUrl" $info.partUrl "anchor" $info.anchor) -}}
+    {{- $teachers = $teachers | append $info.series.id -}}
   {{- end -}}
-  {{- /* The public study guides only (study/index.html reads the public
-         index; the beta export is never readable by a template). */ -}}
+  {{- /* The public study guides only (study/index.html is the public tier;
+         the advanced guides are unlisted and never searched). */ -}}
   {{- $study := slice -}}
   {{- range (partialCached "study/index.html" . "study").series -}}
     {{- $s := . -}}
+    {{- $teachers = $teachers | append $s.catalogSeriesId -}}
     {{- $teacher := $s.title -}}
     {{- with index (where $catalog.series "id" $s.catalogSeriesId) 0 }}{{ $teacher = .title }}{{ end -}}
     {{- range $s.chapters -}}
@@ -56,15 +59,15 @@
         <option value="text">The text</option>
         <option value="classes">All classes</option>
         <option value="study">Study guides</option>
-        {{- range $catalog.series }}{{ if in $withTranscripts .id }}
+        {{- range $catalog.series }}{{ if in $teachers .id }}
         <option value="s{{ .id }}" data-teacher="{{ .title }}">{{ .title }}</option>
         {{- end }}{{ end }}
       </select>
       <button type="submit">Search</button>
     </form>
-    <p class="search-about">Searches the Hebrew text, its translation, the class transcripts and their topics, and the study guides.
+    <p class="search-about">Searches the Hebrew text, its translation, the classes' topics, and the study guides.
       A Hebrew word also finds it with prefix letters (<bdi>חכמה</bdi> finds <bdi>ובחכמה</bdi>), and key terms
-      match across spellings and transliterations (<i>chochmah</i>, <bdi>מידות</bdi>). The transcripts are
+      match across spellings and transliterations (<i>chochmah</i>, <bdi>מידות</bdi>). The class topics are
       machine-made, so a term may be misspelled in them.</p>
     <p class="search-status" data-search-status aria-live="polite"><noscript>Search needs JavaScript.</noscript></p>
     <ol class="search-results" data-search-results></ol>

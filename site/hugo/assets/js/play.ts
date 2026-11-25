@@ -1,14 +1,13 @@
 /**
- * play.js: progressive enhancement for pages with a `[data-listen]` panel
- * (chapter pages with published alignments, and transcript pages).
+ * play.js: progressive enhancement for the `[data-listen]` panel of chapter
+ * pages with published alignments.
  *
- * Chapter pages: shows the teacher and class selectors, adds a small play
- * button to every aligned line (`.line[data-t]`) that plays the teacher's
- * best class from that line (the `?teacher=` one, else the saved one), and a Show transcript toggle that
- * shows the class in the player's transcript in the docked panel.
- * Autoplay next plays the teacher's next class on the chapter when one ends.
- * Transcript pages: only the Follow along button. Follow along loads
- * follow.js on demand; its on/off state is saved for every page.
+ * Shows the teacher and class selectors, adds a small play button to every
+ * aligned line (`.line[data-t]`) that plays the teacher's best class from
+ * that line (the `?teacher=` one, else the saved one), and the "Study guide"
+ * pill of the teacher in the player. Autoplay next plays the teacher's next
+ * class on the chapter when one ends. Follow along loads follow.js on
+ * demand; its on/off state is saved for every page.
  *
  * Without JavaScript the page keeps a plain <audio> player and its text.
  */
@@ -16,15 +15,12 @@ import {
   chapterSeries,
   chooseSeries,
   formatTime,
-  hashId,
   lectureItems,
   lineInClass,
   nextInSeries,
   playableRefs,
   playStart,
   resolveTeacher,
-  scrollToShow,
-  segmentItems,
   spanAt,
   spans,
   topicAt,
@@ -33,9 +29,8 @@ import {
   type Ref,
   type Span,
   type Topic,
-  type Transcript,
 } from './audio/model.ts';
-import { playAt, replaceHash, scrollWatcher, seekOnPlay, smoothScroll } from './audio/player.ts';
+import { playAt, replaceHash } from './audio/player.ts';
 import { autoplayNext, FOLLOW_KEY, markPlaying, readStore, writeStore } from './audio/store.ts';
 import { studyLinkHref } from './audio/study-model.ts';
 import type { FollowController, FollowOptions } from './follow.ts';
@@ -73,8 +68,8 @@ function init(panel: HTMLElement): void {
   if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setHeight).observe(panel);
 
   const chapterUrl = panel.dataset['chapterAlignments'];
-  const chapter = chapterUrl ? initChapter(panel, audio, chapterUrl, activate) : null;
-  if (!chapter) seekToHashParagraph(audio);
+  if (!chapterUrl) return;
+  const chapter = initChapter(panel, audio, chapterUrl, activate);
 
   // Follow along
   const followButton = panel.querySelector<HTMLButtonElement>('[data-follow-along]');
@@ -85,25 +80,23 @@ function init(panel: HTMLElement): void {
       const src = panel.dataset['followSrc'];
       if (!src) return null;
       const mod = (await import(/* @vite-ignore */ src)) as FollowModule;
-      const options: FollowOptions = chapter
-        ? {
-            audio,
-            spansFor: (s) => chapter.spansFor(s),
-            elementsFor: (key) => {
-              const el = document.getElementById(key);
-              return el ? [el] : [];
-            },
-          }
-        : transcriptOptions(audio);
+      const options: FollowOptions = {
+        audio,
+        spansFor: (s) => chapter.spansFor(s),
+        elementsFor: (key) => {
+          const el = document.getElementById(key);
+          return el ? [el] : [];
+        },
+      };
       follow = mod.startFollow(options);
-      if (chapter) chapter.onSourceChange(() => follow?.refresh());
+      chapter.onSourceChange(() => follow?.refresh());
       return follow;
     })();
     return loading;
   };
   const setFollow = async (on: boolean, byReader: boolean) => {
     followButton?.setAttribute('aria-pressed', String(on));
-    chapter?.setFollowing(on);
+    chapter.setFollowing(on);
     if (byReader && on && audio.paused) {
       activate();
       void audio.play().catch(() => undefined);
@@ -121,49 +114,10 @@ function init(panel: HTMLElement): void {
   if (followButton && readStore(FOLLOW_KEY) === 'on') void setFollow(true, false);
 }
 
-/**
- * Transcript pages: a fragment naming a paragraph (`#t42`, as search results
- * link) arms the player to start there on its next play (the browser's own
- * fragment scroll shows the paragraph; CSS marks it with :target). Never
- * autoplays.
- */
-function seekToHashParagraph(audio: HTMLAudioElement): void {
-  const arm = () => {
-    const id = hashId(window.location.hash);
-    const el = id ? document.getElementById(id) : null;
-    const start = Number(el?.dataset['start']);
-    if (el?.closest('[data-transcript]') && Number.isFinite(start)) seekOnPlay(audio, start);
-  };
-  arm();
-  window.addEventListener('hashchange', arm);
-}
-
-/** Transcript pages: paragraphs with data-start / data-end. */
-function transcriptOptions(audio: HTMLAudioElement): FollowOptions {
-  const paras = [...document.querySelectorAll<HTMLElement>('[data-transcript] [data-start]')];
-  const items = paras.map((el, i) => ({
-    key: el.id || `p${i}`,
-    start: Number(el.dataset['start']),
-    end: Number(el.dataset['end'] ?? el.dataset['start']),
-    el,
-  }));
-  const byKey = new Map(items.map((it) => [it.key, it.el]));
-  const all = spans(items);
-  return {
-    audio,
-    spansFor: () => all,
-    elementsFor: (key) => {
-      const el = byKey.get(key);
-      return el ? [el] : [];
-    },
-    seekTargets: items.map((it) => ({ el: it.el, start: it.start })),
-  };
-}
-
 interface ChapterPlayer {
   spansFor(src: string): Span[];
   onSourceChange(fn: () => void): void;
-  /** Follow along on/off: shows the current class's topic outline, and the transcript region follows. */
+  /** Follow along on/off: shows the current class's topic outline. */
   setFollowing(on: boolean): void;
 }
 
@@ -208,7 +162,6 @@ function readGuides(json: string | undefined): Record<string, { url: string; lec
 function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, activate: () => void): ChapterPlayer {
   const seriesSelect = panel.querySelector<HTMLSelectElement>('[data-listen-series]');
   const select = panel.querySelector<HTMLSelectElement>('[data-listen-select]');
-  const transcriptLink = panel.querySelector<HTMLAnchorElement>('[data-listen-transcript]');
   const note = panel.querySelector<HTMLElement>('[data-listen-note]');
   // Every class option, as rendered; the class selector shows one series at a time.
   const allOptions = select ? [...select.querySelectorAll('option')] : [];
@@ -255,12 +208,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     }
     if (select) select.value = String(lecture);
     updateLineStates();
-    if (transcriptLink) {
-      const href = opt.dataset['transcript'];
-      transcriptLink.hidden = !href;
-      if (href) transcriptLink.href = href;
-    }
-    syncTranscript();
     syncStudy();
   };
 
@@ -528,137 +475,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     }, 250);
   });
 
-  // ---- transcript of the class in the player, in the docked panel ----
-  const toggle = panel.querySelector<HTMLButtonElement>('[data-listen-transcript-toggle]');
-  const pane = panel.querySelector<HTMLElement>('[data-listen-transcript-pane]');
-  const transcripts = new Map<string, Promise<Transcript | null>>();
-  /** The reader asked to see the transcript (kept while a class without one plays). */
-  let paneWanted = false;
-  /** Class whose transcript is rendered in the pane, its spans and paragraphs. */
-  let paneLecture: number | null = null;
-  let paneSpans: Span[] = [];
-  let paneParas: HTMLElement[] = [];
-  let paneSpan: Span | null = null;
-  /** The reader has not scrolled the region for a while (see scrollWatcher()). */
-  const paneQuiet = pane ? scrollWatcher(pane) : () => true;
-
-  const loadTranscript = (path: string): Promise<Transcript | null> => {
-    let p = transcripts.get(path);
-    if (!p) {
-      p = fetch(`/data/v1/${path}`)
-        .then((r) => (r.ok ? (r.json() as Promise<Transcript>) : null))
-        .catch(() => null);
-      transcripts.set(path, p);
-    }
-    return p;
-  };
-
-  /** Mark the current paragraph; with Follow along on, keep it in view inside the region (never the page). */
-  const updatePane = (reposition: boolean) => {
-    if (!pane || pane.hidden || paneLecture === null || paneLecture !== currentLecture()) return;
-    const span = spanAt(paneSpans, audio.currentTime);
-    if (span !== paneSpan) {
-      for (const k of paneSpan?.keys ?? []) {
-        paneParas[Number(k)]?.classList.remove('is-discussing');
-        paneParas[Number(k)]?.removeAttribute('aria-current');
-      }
-      for (const k of span?.keys ?? []) {
-        paneParas[Number(k)]?.classList.add('is-discussing');
-        paneParas[Number(k)]?.setAttribute('aria-current', 'true');
-      }
-      paneSpan = span;
-    } else if (!reposition) return;
-    const el = span ? paneParas[Number(span.keys[0])] : undefined;
-    if (!el) return;
-    const auto = following && !audio.paused && paneQuiet();
-    if (!reposition && !auto) return;
-    const top = el.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop;
-    const to = scrollToShow(pane.scrollTop, pane.clientHeight, top, el.offsetHeight);
-    if (to !== null) pane.scrollTo({ top: to, behavior: reposition ? 'auto' : smoothScroll() });
-  };
-
-  const renderPane = async (lecture: number, path: string) => {
-    if (!pane) return;
-    paneLecture = lecture;
-    paneSpans = [];
-    paneParas = [];
-    paneSpan = null;
-    const loading = document.createElement('p');
-    loading.className = 'listen-transcript-status';
-    loading.textContent = 'Loading transcript…';
-    pane.replaceChildren(loading);
-    const t = await loadTranscript(path);
-    if (paneLecture !== lecture) return; // the class changed meanwhile
-    if (!t) {
-      loading.textContent = 'The transcript could not be loaded.';
-      return;
-    }
-    let prev = '';
-    paneParas = t.segments.map((seg, i) => {
-      const p = document.createElement('p');
-      p.className = 'tseg';
-      p.dataset['start'] = String(seg.startSeconds);
-      p.dataset['end'] = String(seg.endSeconds);
-      p.dataset['i'] = String(i);
-      const b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'line-play';
-      b.setAttribute('aria-label', `Play from ${formatTime(seg.startSeconds)}`);
-      p.append(b);
-      const sp = seg.speaker ?? '';
-      if (sp && sp !== prev) {
-        const label = document.createElement('span');
-        label.className = 'tseg-speaker';
-        label.textContent = sp;
-        p.append(label);
-      }
-      prev = sp;
-      p.append(seg.text);
-      return p;
-    });
-    paneSpans = spans(segmentItems(t));
-    pane.replaceChildren(...paneParas);
-    pane.scrollTop = 0;
-    updatePane(true);
-  };
-
-  /** Toggle visibility and text, and the pane's content, for the class in the player. */
-  function syncTranscript(): void {
-    if (!toggle || !pane) return;
-    const lecture = currentLecture();
-    const path = lecture === null ? undefined : data?.lectures[lecture]?.transcript;
-    toggle.hidden = !path;
-    const show = paneWanted && !!path;
-    toggle.setAttribute('aria-expanded', String(show));
-    toggle.textContent = show ? 'Hide transcript' : 'Show transcript';
-    const wasHidden = pane.hidden;
-    pane.hidden = !show;
-    if (!show || lecture === null || !path) return;
-    if (paneLecture !== lecture) void renderPane(lecture, path);
-    else if (wasHidden) updatePane(true);
-  }
-
-  toggle?.addEventListener('click', () => {
-    paneWanted = toggle.getAttribute('aria-expanded') !== 'true';
-    if (paneWanted) activate(); // the transcript lives in the docked panel
-    syncTranscript();
-  });
-
-  // Click a paragraph (or its play button) to play from there; selection-safe.
-  pane?.addEventListener('click', (e) => {
-    const target = e.target as Element;
-    const p = target.closest<HTMLElement>('.tseg');
-    if (!p || paneLecture === null) return;
-    if (!target.closest('.line-play')) {
-      const sel = window.getSelection();
-      if ((sel && !sel.isCollapsed) || e.detail > 1) return;
-    }
-    showNote(null);
-    setLecture(paneLecture, Number(p.dataset['start']));
-  });
-  audio.addEventListener('timeupdate', () => updatePane(false));
-  audio.addEventListener('seeked', () => updatePane(false));
-
   // ---- auto-generated topic outline of the class in the player ----
   // Topics follow the class timeline, not the chapter lines.
   const nowEl = panel.querySelector<HTMLElement>('[data-listen-now]');
@@ -756,7 +572,6 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
     setFollowing(on: boolean) {
       following = on;
       void dataReady.then(() => showOutline());
-      if (on) updatePane(true);
     },
     spansFor,
     onSourceChange(fn: () => void) {

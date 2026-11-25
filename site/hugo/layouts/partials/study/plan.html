@@ -7,9 +7,12 @@
        that is the passage's first in-place item, else before the first
        in-place block of that class in the passage, else (only phrases of it
        there) before the next passage.
+       A `join` block is rendered inside the block before it (single.html),
+       so a class starting at one is marked before that block instead (or,
+       when another class already starts there, before the next passage).
        Returns dict
          "passage": first line id -> slice of lecture ids starting before it
-         "block":   "<first line id>-<n>" (n from 1) -> lecture id starting before it
+         "block":   "<first line id>-<n>" (n from 1, never a join block's) -> lecture id starting before it
        A class with no in-place item (a Q and A tape) gets no divider. */ -}}
 {{- $seen := newScratch -}}
 {{- $out := newScratch -}}
@@ -23,9 +26,11 @@
     {{- range $p.phrases -}}
       {{- with .lecture }}{{ $items = $items | append (dict "k" "p" "i" 0 "l" .) }}{{ end -}}
     {{- end -}}
+    {{- $main := 0 -}}
     {{- range $i, $b := $p.blocks -}}
+      {{- if or (not $b.join) (eq $i 0) }}{{ $main = add $i 1 }}{{ end -}}
       {{- if not $b.outOfPlace -}}
-        {{- $items = $items | append (dict "k" "b" "i" (add $i 1) "l" (index $b.audio 0).lecture) -}}
+        {{- $items = $items | append (dict "k" "b" "i" $main "l" (index $b.audio 0).lecture) -}}
       {{- end -}}
     {{- end -}}
     {{- $before := $pending -}}
@@ -38,8 +43,10 @@
           {{- $before = $before | append $it.l -}}
         {{- else -}}
           {{- $blocks := where (where $items "k" "b") "l" $it.l -}}
-          {{- with $blocks -}}
-            {{- $out.SetInMap "block" (printf "%s-%d" $key (index . 0).i) $it.l -}}
+          {{- $bk := "" -}}
+          {{- with $blocks }}{{ $bk = printf "%s-%d" $key (index . 0).i }}{{ end -}}
+          {{- if and $bk (not (index ($out.Get "block") $bk)) -}}
+            {{- $out.SetInMap "block" $bk $it.l -}}
           {{- else -}}
             {{- $pending = $pending | append $it.l -}}
           {{- end -}}
