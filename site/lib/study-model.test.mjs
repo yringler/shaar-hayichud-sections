@@ -20,7 +20,7 @@ import {
   studyAt,
   studySeekTarget,
   studyTimeline,
-  transcriptSlug,
+  classSlug,
   studyLinkHref,
   itemProgress,
   scrollTopFor,
@@ -76,9 +76,9 @@ test("vectors: nextStudyPart", () => {
   }
 });
 
-test("vectors: transcriptSlug and partForSlug", () => {
-  for (const [id, slug] of vectors.transcriptSlug) {
-    assert.equal(transcriptSlug(id), slug);
+test("vectors: classSlug and partForSlug", () => {
+  for (const [id, slug] of vectors.classSlug) {
+    assert.equal(classSlug(id), slug);
     assert.equal(partForSlug([{ id: "other.mp3" }, { id }], slug.toUpperCase())?.id, id);
   }
   assert.equal(partForSlug([{ id: "a.mp3" }], null), null);

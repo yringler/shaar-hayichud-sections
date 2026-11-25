@@ -1,9 +1,9 @@
 name: shaar_hayichud_data
 description: >-
   Pure Dart models and loader for the Shaar Hayichud published data
-  (/data/v1/ catalog, chapters, alignments and transcripts).
+  (/data/v1/ catalog, chapters, alignments, outlines and study guides).
   Models are generated from data/schema/v1.
-version: 1.7.0
+version: 2.0.0
 repository: https://github.com/yringler/shaar-hayichud-sections/tree/master/packages/dart
 issue_tracker: https://github.com/yringler/shaar-hayichud-sections/issues
 topics:

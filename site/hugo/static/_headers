@@ -13,9 +13,9 @@
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=300, stale-while-revalidate=86400
 
-# Study guides for the lessons2 closed beta: unlisted, kept out of search
-# engines (robots.txt also disallows the path). CORS and caching come from /data/*.
-/data/study-beta/*
+# The advanced study guides (content/advanced/): unlisted, kept out of search
+# engines (also a robots meta on each page, and robots.txt disallows the path).
+/advanced/*
   X-Robots-Tag: noindex
 
 /css/*

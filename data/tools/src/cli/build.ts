@@ -1,5 +1,5 @@
 /**
- * yarn build-data — validate data/ and write data/dist/v1/ (and dist/study-beta/).
+ * yarn build-data — validate data/ and write data/dist/v1/.
  * Options: --out <dir> (default data/dist), --cdn-base <origin>.
  */
 import path from 'node:path';
@@ -38,4 +38,4 @@ const lectures = series.reduce((n, s) => n + s.lectureCount, 0);
 console.log(
   `Wrote ${result.outDir}: ${series.length} series, ${lectures} lectures, ${result.chapters?.length ?? 0} chapters.`,
 );
-console.log(`Wrote ${result.studyBetaDir}: ${result.studyBetaFiles ?? 0} study guide(s) for the beta; ${result.studyPublicFiles ?? 0} public study guide(s) in v1/study/.`);
+console.log(`Study guides in v1/study/: ${result.studyFiles?.public ?? 0} public (index.json), ${result.studyFiles?.advanced ?? 0} advanced (index-advanced.json).`);

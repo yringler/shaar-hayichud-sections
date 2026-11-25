@@ -42,7 +42,11 @@ void main() {
       urls.chapterAlignments('chapter_10').toString(),
       '$base/alignments/chapters/chapter_10.json',
     );
-    expect(urls.transcriptsIndex.toString(), '$base/transcripts/index.json');
+    expect(urls.studyIndex.toString(), '$base/study/index.json');
+    expect(
+      urls.studyAdvancedIndex.toString(),
+      '$base/study/index-advanced.json',
+    );
     expect(urls.outlinesIndex.toString(), '$base/outlines/index.json');
     expect(
       urls.outline('01 - Intro.mp3').toString(),

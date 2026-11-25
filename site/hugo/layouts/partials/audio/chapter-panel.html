@@ -1,17 +1,14 @@
 {{- /* Class player for a chapter page. Context: dict "data" (the chapter
        alignment index, chapter-alignments.schema.json) "path" (its asset path).
        Without JavaScript: a plain player for the first class. With play.js: the
-       teacher (series) and class selectors, Follow along, the Show transcript
-       toggle (the transcript region above the controls, filled by play.js),
-       Autoplay next (under the player), the "From start of class" offer
+       teacher (series) and class selectors, Follow along, Autoplay next (under the player), the "From start of class" offer
        after a tap on a class's first line, per-line play buttons, and a
        "Study guide" pill for the teacher in the player when that series has a
        public guide of the chapter (data-study-guides: catalog series id ->
        {url, lectures}; play.js points it at the class and, once played, the
-       moment: ?class=<transcript slug>&t=<s>). The series choice and Follow
+       moment: ?class=<class slug>&t=<s>; public guides only). The series choice and Follow
        along and Autoplay next on/off are saved (localStorage) across pages. */ -}}
 {{- $d := .data -}}
-{{- $audio := partialCached "audio/index.html" . "audio" -}}
 {{- $scripts := partialCached "audio/scripts.html" . "scripts" -}}
 {{- $first := index $d.lectures 0 -}}
 {{- $guides := newScratch -}}
@@ -26,8 +23,6 @@
   data-chapter-alignments="/{{ .path }}"
   data-follow-src="{{ $scripts.follow.RelPermalink }}"
   {{- with $guides.Get "m" }} data-study-guides="{{ . | jsonify }}"{{ end }}>
-  <div class="listen-transcript-pane" id="listen-transcript-pane" data-listen-transcript-pane hidden
-    role="region" aria-label="Transcript of the class" tabindex="0" lang="en"></div>
   <div class="listen-controls">
     <p class="listen-static" data-no-js>{{ $first.series }}: {{ $first.title }}</p>
     {{- $groups := slice -}}
@@ -48,8 +43,7 @@
           <optgroup label="{{ (index $inGroup 0).series }}">
           {{- range $i, $l := $d.lectures -}}
             {{- if eq $l.seriesId $sid -}}
-              {{- $t := index $audio.transcripts $l.id -}}
-              <option value="{{ $i }}" data-series="{{ $l.seriesId }}" data-url="{{ $l.url }}"{{ with $t }} data-transcript="{{ .url }}"{{ end }}{{ if eq $i 0 }} selected{{ end }}>{{ $l.title }}</option>
+              <option value="{{ $i }}" data-series="{{ $l.seriesId }}" data-url="{{ $l.url }}"{{ if eq $i 0 }} selected{{ end }}>{{ $l.title }}</option>
             {{- end -}}
           {{- end -}}
           </optgroup>
@@ -57,9 +51,6 @@
       </select>
     </label>
     <button type="button" class="follow-along" data-follow-along data-js-only hidden aria-pressed="false">Follow along</button>
-    <button type="button" class="listen-transcript-toggle" data-listen-transcript-toggle hidden aria-expanded="false" aria-controls="listen-transcript-pane">Show transcript</button>
-    {{- $t := index $audio.transcripts $first.id }}
-    <a class="listen-transcript audio-link" data-listen-transcript href="{{ with $t }}{{ .url }}{{ end }}" target="_blank" rel="noopener"{{ if not $t }} hidden{{ end }}>Transcript{{ partial "new-tab.html" . }}</a>
   </div>
   <audio controls preload="none" src="{{ $first.url }}" data-listen-audio></audio>
   <label class="autoplay-next" data-js-only hidden><input type="checkbox" data-autoplay-next autocomplete="off"> Autoplay next</label>

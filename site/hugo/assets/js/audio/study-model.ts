@@ -482,11 +482,13 @@ export function nextStudyPart<P extends Pick<StudyPart, 'id'>>(parts: readonly P
 }
 
 /**
- * A lecture's transcript page slug (/classes/transcripts/<slug>/), as
- * partials/audio/index.html builds it: lowercased, .mp3/.m4a dropped, every
- * run of other characters than a-z and 0-9 -> "-", trimmed of "-".
+ * A lecture's class slug in study links (`?class=<slug>`) and divider ids
+ * (`c-<slug>`), as partials/study/tier.html and study/single.html build it:
+ * lowercased, .mp3/.m4a dropped, every run of other characters than a-z and
+ * 0-9 -> "-", trimmed of "-". (The rule of the former transcript page
+ * slugs, so links made before stay valid.)
  */
-export function transcriptSlug(lectureId: string): string {
+export function classSlug(lectureId: string): string {
   return lectureId
     .toLowerCase()
     .replace(/\.(mp3|m4a)$/, '')
@@ -494,15 +496,15 @@ export function transcriptSlug(lectureId: string): string {
     .replace(/^-+|-+$/g, '');
 }
 
-/** The part whose lecture has transcript slug `slug`, or null. */
+/** The part whose lecture has class slug `slug`, or null. */
 export function partForSlug<P extends Pick<StudyPart, 'id'>>(parts: readonly P[], slug: string | null): P | null {
   if (!slug) return null;
   const q = slug.toLowerCase();
-  return parts.find((p) => transcriptSlug(p.id) === q) ?? null;
+  return parts.find((p) => classSlug(p.id) === q) ?? null;
 }
 
 export interface StudyLink {
-  /** `?class=`: a lecture's transcript slug (partForSlug), or null. */
+  /** `?class=`: a lecture's class slug (partForSlug), or null. */
   classSlug: string | null;
   /** `?t=`: whole seconds (fractions dropped), or null when missing or invalid. */
   t: number | null;
@@ -512,7 +514,7 @@ export interface StudyLink {
   anchor: string | null;
 }
 
-/** A guide page's arrival link: `?class=<transcript slug>&t=<s>` (a moment in a class) and `#<line id>`. */
+/** A guide page's arrival link: `?class=<class slug>&t=<s>` (a moment in a class) and `#<line id>`. */
 export function parseStudyLink(search: string, hash: string): StudyLink {
   const cls = new URLSearchParams(search).get('class')?.trim() ?? '';
   const anchor = hashId(hash);
@@ -526,7 +528,7 @@ export function parseStudyLink(search: string, hash: string): StudyLink {
 
 /**
  * A link into a guide at a moment of a class (the chapter player's "Study
- * guide" pill): `<guide>?class=<transcript slug>` and, when `t` is given,
+ * guide" pill): `<guide>?class=<class slug>` and, when `t` is given,
  * `&t=<whole seconds>`; the guide alone when `lecture` is null. `guide` is
  * a path (/study/<series>/chapter-N/) and keeps its own query, if any.
  */
@@ -534,7 +536,7 @@ export function studyLinkHref(guide: string, lecture: string | null, t: number |
   if (lecture === null) return guide;
   const [path, query = ''] = guide.split('?', 2) as [string, string?];
   const q = new URLSearchParams(query);
-  q.set('class', transcriptSlug(lecture));
+  q.set('class', classSlug(lecture));
   if (t !== null && Number.isFinite(t)) q.set('t', String(Math.max(0, Math.floor(t))));
   else q.delete('t');
   return `${path}?${q.toString()}`;

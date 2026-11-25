@@ -127,47 +127,6 @@ enum StudyGuideBlockAskedBy {
   }
 }
 
-enum StudyGuideSensitivityCategory {
-  women("women"),
-  otherReligions("other-religions"),
-  otherGroups("other-groups"),
-  namedPerson("named-person"),
-  politics("politics"),
-  crude("crude"),
-  healthOrLegal("health-or-legal"),
-  private("private"),
-  other("other");
-
-  const StudyGuideSensitivityCategory(this.json);
-
-  /// The value as it appears in JSON.
-  final String json;
-
-  static StudyGuideSensitivityCategory fromJson(Object? json) {
-    for (final v in values) {
-      if (v.json == json) return v;
-    }
-    throw FormatException('StudyGuideSensitivityCategory: unknown value $json');
-  }
-}
-
-enum StudyGuideSensitivityAction {
-  replace("replace"),
-  omit("omit");
-
-  const StudyGuideSensitivityAction(this.json);
-
-  /// The value as it appears in JSON.
-  final String json;
-
-  static StudyGuideSensitivityAction fromJson(Object? json) {
-    for (final v in values) {
-      if (v.json == json) return v;
-    }
-    throw FormatException('StudyGuideSensitivityAction: unknown value $json');
-  }
-}
-
 enum StudyGuidePassageSkipReason {
   noRecording("no-recording"),
   readOnly("read-only");
@@ -535,7 +494,7 @@ final class Catalog {
   String toString() => 'Catalog(${toJson()})';
 }
 
-/// One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and transcripts can reference it on its own.
+/// One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and study guides can reference it on its own.
 final class TextLine implements TextNodeChild {
   const TextLine({required this.id, required this.text});
 
@@ -570,7 +529,7 @@ final class TextLine implements TextNodeChild {
   String toString() => 'TextLine(${toJson()})';
 }
 
-/// A section. Sections have no persisted id; alignments and transcripts point at lines.
+/// A section. Sections have no persisted id; alignments and study guides point at lines.
 final class TextNode implements TextNodeChild {
   const TextNode({this.label, required this.children, this.translation});
 
@@ -862,148 +821,6 @@ final class Alignment {
   String toString() => 'Alignment(${toJson()})';
 }
 
-final class TranscriptSegment {
-  const TranscriptSegment({
-    required this.startSeconds,
-    required this.endSeconds,
-    required this.text,
-    this.speaker,
-  });
-
-  /// Decodes from parsed JSON. Throws [FormatException] when
-  /// [json] does not match the schema. Unknown keys are ignored.
-  factory TranscriptSegment.fromJson(Object? json) {
-    final m = _map(json, 'TranscriptSegment');
-    return TranscriptSegment(
-      startSeconds: _double(
-        _req(m, "startSeconds", 'TranscriptSegment.startSeconds'),
-        'TranscriptSegment.startSeconds',
-      ),
-      endSeconds: _double(
-        _req(m, "endSeconds", 'TranscriptSegment.endSeconds'),
-        'TranscriptSegment.endSeconds',
-      ),
-      text: _string(
-        _req(m, "text", 'TranscriptSegment.text'),
-        'TranscriptSegment.text',
-      ),
-      speaker: _opt(
-        m["speaker"],
-        (v) => _string(v, 'TranscriptSegment.speaker'),
-      ),
-    );
-  }
-
-  final double startSeconds;
-
-  final double endSeconds;
-
-  final String text;
-
-  final String? speaker;
-
-  Map<String, Object?> toJson() => {
-    "startSeconds": startSeconds,
-    "endSeconds": endSeconds,
-    "text": text,
-    if (speaker != null) "speaker": speaker,
-  };
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      (other is TranscriptSegment &&
-          other.startSeconds == startSeconds &&
-          other.endSeconds == endSeconds &&
-          other.text == text &&
-          other.speaker == speaker);
-
-  @override
-  int get hashCode => Object.hashAll([startSeconds, endSeconds, text, speaker]);
-
-  @override
-  String toString() => 'TranscriptSegment(${toJson()})';
-}
-
-/// Lecture transcript (v1)
-///
-/// One file per lecture (/data/v1/transcripts/`<url-encoded lecture id>`.json, listed in transcripts/index.json): the machine transcript (Sofer.ai) as paragraphs, split at pauses or sentence ends. Only lectures selected in data/audio-publish.json are published. Within v1, fields are only added.
-final class Transcript {
-  const Transcript({
-    required this.lectureId,
-    required this.language,
-    this.chapter,
-    required this.segments,
-  });
-
-  /// Decodes from parsed JSON. Throws [FormatException] when
-  /// [json] does not match the schema. Unknown keys are ignored.
-  factory Transcript.fromJson(Object? json) {
-    final m = _map(json, 'Transcript');
-    if (m['schemaVersion'] != 1) {
-      throw FormatException(
-        'Transcript.schemaVersion: expected 1, got ${m['schemaVersion']}',
-      );
-    }
-    return Transcript(
-      lectureId: _string(
-        _req(m, "lectureId", 'Transcript.lectureId'),
-        'Transcript.lectureId',
-      ),
-      language: _string(
-        _req(m, "language", 'Transcript.language'),
-        'Transcript.language',
-      ),
-      chapter: _opt(m["chapter"], (v) => _string(v, 'Transcript.chapter')),
-      segments: List.unmodifiable(
-        _list(
-          _req(m, "segments", 'Transcript.segments'),
-          'Transcript.segments',
-        ).map((e) => TranscriptSegment.fromJson(e)),
-      ),
-    );
-  }
-
-  /// Always 1.
-  int get schemaVersion => 1;
-
-  /// Catalog lecture id.
-  final String lectureId;
-
-  /// BCP 47 language tag, e.g. 'en'.
-  final String language;
-
-  /// Chapter file key the lecture teaches (e.g. 'chapter_10'), when it teaches one chapter's text. Absent for introductions, Q and A and addenda. Optional: added after the first v1 release.
-  final String? chapter;
-
-  /// Paragraphs in time order.
-  final List<TranscriptSegment> segments;
-
-  Map<String, Object?> toJson() => {
-    "schemaVersion": schemaVersion,
-    "lectureId": lectureId,
-    "language": language,
-    if (chapter != null) "chapter": chapter,
-    "segments": [for (final e in segments) e.toJson()],
-  };
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      (other is Transcript &&
-          other.lectureId == lectureId &&
-          other.language == language &&
-          other.chapter == chapter &&
-          _listEquals(other.segments, segments));
-
-  @override
-  int get hashCode =>
-      Object.hashAll([lectureId, language, chapter, Object.hashAll(segments)]);
-
-  @override
-  String toString() => 'Transcript(${toJson()})';
-}
-
 final class ChapterAlignmentsLecture {
   const ChapterAlignmentsLecture({
     required this.id,
@@ -1014,7 +831,6 @@ final class ChapterAlignmentsLecture {
     required this.part,
     required this.durationSeconds,
     required this.alignment,
-    this.transcript,
     this.outline,
     this.chapterStartSeconds,
   });
@@ -1056,10 +872,6 @@ final class ChapterAlignmentsLecture {
         _req(m, "alignment", 'ChapterAlignmentsLecture.alignment'),
         'ChapterAlignmentsLecture.alignment',
       ),
-      transcript: _opt(
-        m["transcript"],
-        (v) => _string(v, 'ChapterAlignmentsLecture.transcript'),
-      ),
       outline: _opt(
         m["outline"],
         (v) => _string(v, 'ChapterAlignmentsLecture.outline'),
@@ -1094,9 +906,6 @@ final class ChapterAlignmentsLecture {
   /// Path of the lecture's alignment file, relative to /data/v1/.
   final String alignment;
 
-  /// Path of the lecture's transcript file, relative to /data/v1/, when one is published.
-  final String? transcript;
-
   /// Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.
   final String? outline;
 
@@ -1112,7 +921,6 @@ final class ChapterAlignmentsLecture {
     "part": part,
     "durationSeconds": durationSeconds,
     "alignment": alignment,
-    if (transcript != null) "transcript": transcript,
     if (outline != null) "outline": outline,
     if (chapterStartSeconds != null) "chapterStartSeconds": chapterStartSeconds,
   };
@@ -1129,7 +937,6 @@ final class ChapterAlignmentsLecture {
           other.part == part &&
           other.durationSeconds == durationSeconds &&
           other.alignment == alignment &&
-          other.transcript == transcript &&
           other.outline == outline &&
           other.chapterStartSeconds == chapterStartSeconds);
 
@@ -1143,7 +950,6 @@ final class ChapterAlignmentsLecture {
     part,
     durationSeconds,
     alignment,
-    transcript,
     outline,
     chapterStartSeconds,
   ]);
@@ -1636,88 +1442,6 @@ final class StudyGuidePhrase {
   String toString() => 'StudyGuidePhrase(${toJson()})';
 }
 
-/// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
-final class StudyGuideSensitivity {
-  const StudyGuideSensitivity({
-    required this.categories,
-    required this.reason,
-    required this.action,
-    this.publishable,
-    this.publishableTitle,
-  });
-
-  /// Decodes from parsed JSON. Throws [FormatException] when
-  /// [json] does not match the schema. Unknown keys are ignored.
-  factory StudyGuideSensitivity.fromJson(Object? json) {
-    final m = _map(json, 'StudyGuideSensitivity');
-    return StudyGuideSensitivity(
-      categories: List.unmodifiable(
-        _list(
-          _req(m, "categories", 'StudyGuideSensitivity.categories'),
-          'StudyGuideSensitivity.categories',
-        ).map((e) => StudyGuideSensitivityCategory.fromJson(e)),
-      ),
-      reason: _string(
-        _req(m, "reason", 'StudyGuideSensitivity.reason'),
-        'StudyGuideSensitivity.reason',
-      ),
-      action: StudyGuideSensitivityAction.fromJson(
-        _req(m, "action", 'StudyGuideSensitivity.action'),
-      ),
-      publishable: _opt(
-        m["publishable"],
-        (v) => _string(v, 'StudyGuideSensitivity.publishable'),
-      ),
-      publishableTitle: _opt(
-        m["publishableTitle"],
-        (v) => _string(v, 'StudyGuideSensitivity.publishableTitle'),
-      ),
-    );
-  }
-
-  final List<StudyGuideSensitivityCategory> categories;
-
-  /// What a public reader could object to or misread, in a sentence.
-  final String reason;
-
-  final StudyGuideSensitivityAction action;
-
-  /// Alternate text that keeps the point and drops what the reason names; present with action replace.
-  final String? publishable;
-
-  final String? publishableTitle;
-
-  Map<String, Object?> toJson() => {
-    "categories": [for (final e in categories) e.json],
-    "reason": reason,
-    "action": action.json,
-    if (publishable != null) "publishable": publishable,
-    if (publishableTitle != null) "publishableTitle": publishableTitle,
-  };
-
-  @override
-  bool operator ==(Object other) =>
-      identical(this, other) ||
-      (other is StudyGuideSensitivity &&
-          _listEquals(other.categories, categories) &&
-          other.reason == reason &&
-          other.action == action &&
-          other.publishable == publishable &&
-          other.publishableTitle == publishableTitle);
-
-  @override
-  int get hashCode => Object.hashAll([
-    Object.hashAll(categories),
-    reason,
-    action,
-    publishable,
-    publishableTitle,
-  ]);
-
-  @override
-  String toString() => 'StudyGuideSensitivity(${toJson()})';
-}
-
 /// One thought of the class, a paragraph or two.
 final class StudyGuideBlock {
   const StudyGuideBlock({
@@ -1729,7 +1453,6 @@ final class StudyGuideBlock {
     this.join,
     required this.audio,
     this.outOfPlace,
-    this.sensitivity,
   });
 
   /// Decodes from parsed JSON. Throws [FormatException] when
@@ -1761,10 +1484,6 @@ final class StudyGuideBlock {
         m["outOfPlace"],
         (v) => _string(v, 'StudyGuideBlock.outOfPlace'),
       ),
-      sensitivity: _opt(
-        m["sensitivity"],
-        (v) => StudyGuideSensitivity.fromJson(v),
-      ),
     );
   }
 
@@ -1790,9 +1509,6 @@ final class StudyGuideBlock {
   /// Why the main audio is far from where the class reads the passage's lines.
   final String? outOfPlace;
 
-  /// Only in the beta export (/data/study-beta/v1/study/: every series, as written); the public edition (/data/v1/study/) never has it, since it has applied it. Marks a block that should not be published as it stands: a public build replaces its text with `publishable` (action replace) or leaves it out (action omit).
-  final StudyGuideSensitivity? sensitivity;
-
   Map<String, Object?> toJson() => {
     "kind": kind.json,
     if (title != null) "title": title,
@@ -1802,7 +1518,6 @@ final class StudyGuideBlock {
     if (join != null) "join": join,
     "audio": [for (final e in audio) e.toJson()],
     if (outOfPlace != null) "outOfPlace": outOfPlace,
-    if (sensitivity != null) "sensitivity": sensitivity!.toJson(),
   };
 
   @override
@@ -1816,8 +1531,7 @@ final class StudyGuideBlock {
           other.text == text &&
           other.join == join &&
           _listEquals(other.audio, audio) &&
-          other.outOfPlace == outOfPlace &&
-          other.sensitivity == sensitivity);
+          other.outOfPlace == outOfPlace);
 
   @override
   int get hashCode => Object.hashAll([
@@ -1829,7 +1543,6 @@ final class StudyGuideBlock {
     join,
     Object.hashAll(audio),
     outOfPlace,
-    sensitivity,
   ]);
 
   @override
@@ -2013,7 +1726,7 @@ final class StudyGuideSection {
 
 /// Study guide (v1)
 ///
-/// Shape of /data/v1/study/`<series>`/`<chapter>`.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Published for series whose teacher allowed it, in their public edition (blocks marked sensitive in the source are replaced by their publishable text or left out); the unlisted beta export (/data/study-beta/v1/study/) has every series in the same shape, as written, with each block's `sensitivity`.
+/// Shape of /data/v1/study/`<series>`/`<chapter>`.json: one class series' teaching of one chapter, as passages of the chapter's lines, the teacher's own translation of them phrase by phrase, and short blocks of prose, each pointing at the stretch of recording it was written from. Always in its public edition: blocks marked sensitive in the source are replaced by their publishable text or left out. Listed in study/index.json (series whose teacher allowed publication) or study/index-advanced.json (series published unlisted).
 final class StudyGuide {
   const StudyGuide({
     required this.series,
@@ -2250,7 +1963,7 @@ final class StudyIndexChapter {
   /// Chapter key, as in chapters/.
   final String chapter;
 
-  /// Path of the guide, relative to the edition's root (/data/v1/, or /data/study-beta/v1/ for the beta export).
+  /// Path of the guide, relative to /data/v1/ (study/`<series>`/chapter_NN.json).
   final String path;
 
   final StudyIndexChapterStatus status;
@@ -2368,7 +2081,7 @@ final class StudyIndexSeries {
 
 /// Study guide listing (v1)
 ///
-/// Shape of /data/v1/study/index.json: the class series with public study guides, and for each chapter its guide and the classes it is written from. The unlisted beta export (/data/study-beta/v1/study/index.json) lists every series in the same shape.
+/// Shape of /data/v1/study/index.json (the class series whose teacher allowed publication) and of /data/v1/study/index-advanced.json (the series published unlisted): for each series, each chapter's guide and the classes it is written from. A series is in one of the two, never both; every guide listed is in its public edition.
 final class StudyIndex {
   const StudyIndex({required this.series});
 

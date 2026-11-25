@@ -1,6 +1,5 @@
-/// Follow-along logic: which class plays for a line, which line (or
-/// transcript paragraph) is current at a time, autoplay next, and the topic
-/// under way.
+/// Follow-along logic: which class plays for a line, which line is current
+/// at a time, autoplay next, and the topic under way.
 ///
 /// A port of the pure parts of `site/hugo/assets/js/audio/model.ts`, so the
 /// apps behave like the site. Both are checked against the same vectors
@@ -17,8 +16,8 @@ const double holdSeconds = 30;
 /// Original Class), used when no teacher has been chosen.
 const String defaultSeriesId = '0';
 
-/// Something with a time range in one recording: a line of a class's
-/// alignment (key = line id) or a transcript paragraph (key = its index).
+/// Something with a time range in one recording, e.g. a line of a class's
+/// alignment (key = line id).
 final class TimedItem {
   const TimedItem(this.key, this.start, this.end);
 
@@ -363,14 +362,6 @@ extension ChapterAlignmentsIndex on ChapterAlignments {
   /// [chooseSeries] among this chapter's [series].
   ({ChapterSeries? series, bool fellBack}) chooseSeries(String? savedId) =>
       _chooseSeries(series, savedId, (s) => s.id);
-}
-
-/// Timed items of a transcript: one per segment, keyed by its index.
-extension TranscriptTiming on Transcript {
-  List<TimedItem> get items => [
-    for (final (i, s) in segments.indexed)
-      TimedItem('$i', s.startSeconds, s.endSeconds),
-  ];
 }
 
 // Aliases so the extension methods can call the top-level functions they

@@ -4,11 +4,13 @@
  * hugo/public).
  *
  * Hugo's search page writes <public>/search/manifest.json: the chapter and
- * translation pages, and every published transcript with its pages (see
- * layouts/search/list.html). Text comes from the published copies in the
- * same output (texts/<chapter>.json, data/v1/transcripts/, data/v1/outlines/),
- * so only what the site publishes is searchable. The manifest is deleted
- * once read.
+ * translation pages, every class with a published outline and its class
+ * page, and the public study guides (see layouts/search/list.html). Text
+ * comes from the published copies in the same output (texts/<chapter>.json,
+ * data/v1/outlines/, data/v1/study/), so only what the site publishes is
+ * searchable. Transcripts are not published, so not searched; the advanced
+ * study guides (/advanced/) are unlisted, never in the manifest, and the
+ * build fails if a record would link one. The manifest is deleted once read.
  *
  * Records (all Pagefind language "en", one index; filter "in" is Text or
  * Classes). Each record's meta.parts is JSON [[href, time, text], …]: the
@@ -18,10 +20,8 @@
  * files per deployment):
  * - a chapter section's own lines (href <chapter page>#<line id>);
  * - a section's English translation (the translation page);
- * - PARAGRAPHS_PER_RECORD transcript paragraphs (<transcript page>#t<N>,
- *   where play.js arms the player to start there); filter "teacher" is the
- *   series title;
  * - a class's outline topics (each its topic deep link on the class page);
+ *   filter "teacher" is the series title;
  * - a public study guide's passage (filter "in" is Study guides, "teacher"
  *   the catalog series title): the Hebrew of its lines (from the chapter's
  *   published text), the teacher's English of its phrases and each block's
@@ -44,7 +44,6 @@ interface Manifest {
     title: string;
     series: string;
     headings: string[];
-    transcriptUrl: string;
     partUrl: string;
     anchor: string;
   }[];
@@ -96,8 +95,6 @@ interface PagefindApi {
   close(): Promise<unknown>;
 }
 
-const PARAGRAPHS_PER_RECORD = 3;
-
 /** [href, time (or ""), text]: one linkable piece of a record. */
 type Part = [string, string, string];
 
@@ -128,8 +125,10 @@ async function main(): Promise<void> {
   if (!created.index) throw new Error(`pagefind: ${created.errors.join('; ')}`);
   const index = created.index;
 
-  const counts = { text: 0, translation: 0, class: 0, topic: 0, study: 0 };
+  const counts = { text: 0, translation: 0, topic: 0, study: 0 };
   const add = async (kind: keyof typeof counts, meta: Record<string, string>, filters: Record<string, string[]>, parts: Part[]) => {
+    // The advanced study guides are unlisted: no search result may lead there.
+    for (const [href] of parts) if (href.startsWith('/advanced/')) throw new Error(`search: a ${kind} record links ${href}, an unlisted page`);
     const first = parts[0];
     const content = indexContent(parts.map((p) => p[2]).join(' '));
     if (!first || content === '') return;
@@ -182,13 +181,6 @@ async function main(): Promise<void> {
   for (const l of manifest.lectures) {
     const context = [l.series, ...l.headings.filter((h) => h !== l.title)].join(' › ');
     const filters = { in: ['Classes'], teacher: [l.series] };
-    const transcript = readJson<{ segments: { startSeconds: number; text: string }[] }>(
-      join(publicDir, 'data', 'v1', 'transcripts', `${l.id}.json`),
-    );
-    const paras = transcript.segments.map((seg, i): Part => [`${l.transcriptUrl}#t${i}`, formatTime(seg.startSeconds), seg.text]);
-    for (let i = 0; i < paras.length; i += PARAGRAPHS_PER_RECORD) {
-      await add('class', { title: l.title, context }, filters, paras.slice(i, i + PARAGRAPHS_PER_RECORD));
-    }
     const outlinePath = join(publicDir, 'data', 'v1', 'outlines', `${l.id}.json`);
     if (!existsSync(outlinePath)) continue;
     const topics = readJson<{ topics: { title: string; startSeconds: number }[] }>(outlinePath).topics;
@@ -234,7 +226,7 @@ async function main(): Promise<void> {
   rmSync(manifestPath);
   console.log(
     `Search index: ${counts.text} text sections, ${counts.translation} translated sections, ` +
-      `${counts.class} transcript records, ${counts.topic} class outlines, ${counts.study} study passages → ${join(publicDir, 'pagefind')}`,
+      `${counts.topic} class outlines, ${counts.study} study passages → ${join(publicDir, 'pagefind')}`,
   );
 }
 

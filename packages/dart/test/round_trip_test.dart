@@ -12,7 +12,9 @@ import 'repo_data.dart';
 Object? roundTrip(String path, String source) {
   final p = path.replaceAll(r'\', '/');
   if (p == 'catalog.json') return parseCatalog(source).toJson();
-  if (p == 'study/index.json') return parseStudyIndex(source).toJson();
+  if (p == 'study/index.json' || p == 'study/index-advanced.json') {
+    return parseStudyIndex(source).toJson();
+  }
   if (p.startsWith('study/')) return parseStudyGuide(source).toJson();
   if (p.endsWith('index.json')) return parseIndexListing(source).toJson();
   if (p.startsWith('alignments/chapters/')) {
@@ -22,7 +24,6 @@ Object? roundTrip(String path, String source) {
     return chapterToJson(parseChapter(source));
   }
   if (p.startsWith('alignments/')) return parseAlignment(source).toJson();
-  if (p.startsWith('transcripts/')) return parseTranscript(source).toJson();
   if (p.startsWith('outlines/')) return parseOutline(source).toJson();
   throw StateError('No model for published file $p');
 }
@@ -48,10 +49,13 @@ void main() {
           'catalog.json',
           'chapters/index.json',
           'alignments/index.json',
-          'transcripts/index.json',
+          'outlines/index.json',
           'study/index.json',
+          'study/index-advanced.json',
         ]),
       );
+      // Transcripts are no longer published.
+      expect(names.where((n) => n.startsWith('transcripts/')), isEmpty);
       expect(names.where((n) => n.startsWith('chapters/chapter_')).length, 54);
     });
 
@@ -63,11 +67,23 @@ void main() {
       });
     }
 
-    test('every public study guide the study index lists exists', () {
-      final index = parseStudyIndex(
+    test('every study guide either study index lists exists', () {
+      final public = parseStudyIndex(
         File('${dist.path}/study/index.json').readAsStringSync(),
       );
-      for (final series in index.series) {
+      final advanced = parseStudyIndex(
+        File('${dist.path}/study/index-advanced.json').readAsStringSync(),
+      );
+      // A series is in one listing or the other.
+      expect(
+        public.series
+            .map((s) => s.id)
+            .toSet()
+            .intersection(advanced.series.map((s) => s.id).toSet()),
+        isEmpty,
+      );
+      expect(advanced.series.map((s) => s.id), contains('markel-advanced'));
+      for (final series in [...public.series, ...advanced.series]) {
         for (final ch in series.chapters) {
           final guide = parseStudyGuide(
             File('${dist.path}/${ch.path}').readAsStringSync(),
@@ -85,7 +101,8 @@ void main() {
     test('every index entry resolves to a file', () {
       for (final f in files.where(
         (f) =>
-            f.path.endsWith('index.json') && rel(f, dist) != 'study/index.json',
+            f.path.endsWith('index.json') &&
+            !rel(f, dist).startsWith('study/index'),
       )) {
         final listing = parseIndexListing(f.readAsStringSync());
         for (final item in listing.items) {
@@ -102,49 +119,6 @@ void main() {
           }
         }
       }
-    });
-  });
-
-  // The beta export: every series as written, in the same v1 shape, with
-  // blocks' `sensitivity` (lessons2's closed beta reads it with these models).
-  group('dist/study-beta/v1', () {
-    final beta = Directory('${dataDir.path}/dist/study-beta/v1');
-    final files =
-        beta.existsSync()
-              ? beta
-                    .listSync(recursive: true)
-                    .whereType<File>()
-                    .where((f) => f.path.endsWith('.json'))
-                    .toList()
-              : <File>[]
-          ..sort((a, b) => a.path.compareTo(b.path));
-
-    test('has an index', () {
-      expect(File('${beta.path}/study/index.json').existsSync(), isTrue);
-    });
-
-    for (final f in files) {
-      final path = rel(f, beta);
-      test('round-trips $path', () {
-        final source = f.readAsStringSync();
-        expect(roundTrip(path, source), equals(jsonDecode(source)));
-      });
-    }
-
-    test('keeps the sensitivity flags the public edition applies', () {
-      final guides = [
-        for (final f in files)
-          if (rel(f, beta) != 'study/index.json')
-            parseStudyGuide(f.readAsStringSync()),
-      ];
-      final flagged = [
-        for (final g in guides)
-          for (final s in g.sections)
-            for (final p in s.passages)
-              for (final b in p.blocks)
-                if (b.sensitivity != null) b.sensitivity!,
-      ];
-      expect(flagged, isNotEmpty);
     });
   });
 

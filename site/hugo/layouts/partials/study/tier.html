@@ -1,0 +1,100 @@
+{{- /* One tier of the study guides (data/dist/v1/study/, through the assets
+       mount of data/dist/v1) and their pages: the one place that builds
+       study URLs. Context: the tier, "public" or "advanced"; call with
+       partialCached "study/tier.html" $tier $tier (study/index.html is the
+       public tier, which every link to a study page uses).
+         public:   data/v1/study/index.json, pages under /study/
+         advanced: data/v1/study/index-advanced.json, pages under /advanced/
+                   (noindex, linked from nowhere: content/advanced/)
+       Both are the public edition (the data build applies every
+       `sensitivity` flag); the tier is only which index lists a series.
+       Returns dict
+         "tier":     the tier
+         "root":     "/study/" or "/advanced/" (the advanced root is not a page)
+         "series":   slice, index order, of dict "id" (study series id, the
+                     URL slug) "title" "teacher" "catalogSeriesId" "url"
+                     (<root><id>/) "chapters" (slice of chapter entries)
+         "chapters": chapter key -> slice of chapter entries (one per series
+                     with a guide for that chapter, in series order)
+         "lectures": catalog lecture id -> slice of dict "chapter" "number"
+                     "page" (the guide) "url" (the guide with
+                     ?class=<class slug>) "slug" "series" (the series dict
+                     above, without "chapters"), one per guide that cites it
+       A chapter entry is dict "chapter" (key) "number" (string, no leading
+       zero) "url" (<root><id>/chapter-N/) "path" (asset path of the guide,
+       data/v1/…) "status" "stale" (bool) "lectures" (the index's
+       lectures: id, start, end, continuesIn?) "series" (as above, without
+       "chapters") "teacher".
+       A lecture's class slug: the id lowercased, extension dropped, other
+       runs of characters -> "-" (classSlug() in assets/js/audio/study-model.ts;
+       the ?class= of study links and the c-<slug> divider ids).
+       Fails the build when the index is missing, on an unknown tier, a
+       series id that is not a plain slug, two series or two chapters with
+       the same URL, a guide path outside study/<series>/, and (advanced) a
+       series that is in both indexes. */ -}}
+{{- $tier := . -}}
+{{- $file := "" -}}
+{{- $root := "" -}}
+{{- if eq $tier "public" -}}
+  {{- $file = "data/v1/study/index.json" -}}
+  {{- $root = "/study/" -}}
+{{- else if eq $tier "advanced" -}}
+  {{- $file = "data/v1/study/index-advanced.json" -}}
+  {{- $root = "/advanced/" -}}
+{{- else -}}
+  {{- errorf "study: unknown tier %q (public or advanced)" $tier -}}
+{{- end -}}
+{{- $ix := resources.Get $file -}}
+{{- if not $ix -}}
+  {{- errorf "study index missing under data/dist/v1 (%s): run the data build first (yarn build / yarn data in site/)" $file -}}
+{{- end -}}
+{{- $public := dict -}}
+{{- if eq $tier "advanced" -}}
+  {{- /* The public index itself (this partial cannot call itself). */ -}}
+  {{- with resources.Get "data/v1/study/index.json" -}}
+    {{- range (. | transform.Unmarshal).series }}{{ $public = merge $public (dict .id true) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- $s := newScratch -}}
+{{- $s.Set "series" slice -}}
+{{- $s.Set "chapters" dict -}}
+{{- $s.Set "lectures" dict -}}
+{{- $urls := newScratch -}}
+{{- range $series := ($ix | transform.Unmarshal).series -}}
+  {{- if not (findRE `^[a-z0-9]+(-[a-z0-9]+)*$` $series.id 1) -}}
+    {{- errorf "study: series id %q is not a URL slug (lowercase letters, digits and single dashes)" $series.id -}}
+  {{- end -}}
+  {{- if index $public $series.id -}}
+    {{- errorf "study: series %q is in both index.json and index-advanced.json" $series.id -}}
+  {{- end -}}
+  {{- $seriesUrl := printf "%s%s/" $root $series.id -}}
+  {{- with $urls.Get $seriesUrl }}{{ errorf "study: two series have the URL %s" $seriesUrl }}{{ end -}}
+  {{- $urls.Set $seriesUrl true -}}
+  {{- $info := dict "id" $series.id "title" $series.title "teacher" $series.teacher "catalogSeriesId" $series.catalogSeriesId "url" $seriesUrl -}}
+  {{- $chapters := slice -}}
+  {{- range $c := $series.chapters -}}
+    {{- $n := replaceRE `^chapter_0*` "" $c.chapter -}}
+    {{- $url := printf "%schapter-%s/" $seriesUrl $n -}}
+    {{- with $urls.Get $url }}{{ errorf "study: two guides of %q have the URL %s" $series.id $url }}{{ end -}}
+    {{- $urls.Set $url true -}}
+    {{- if not (hasPrefix $c.path (printf "study/%s/" $series.id)) -}}
+      {{- errorf "study: guide path %q is not under study/%s/" $c.path $series.id -}}
+    {{- end -}}
+    {{- $entry := dict "chapter" $c.chapter "number" $n "url" $url "path" (printf "data/v1/%s" $c.path)
+      "status" $c.status "stale" ($c.stale | default false) "lectures" $c.lectures
+      "series" $info "teacher" $series.teacher -}}
+    {{- $chapters = $chapters | append $entry -}}
+    {{- $prev := (index ($s.Get "chapters") $c.chapter) | default slice -}}
+    {{- $s.SetInMap "chapters" $c.chapter ($prev | append $entry) -}}
+    {{- range $l := $c.lectures -}}
+      {{- $slug := $l.id | lower | replaceRE `\.(mp3|m4a)$` "" | replaceRE `[^a-z0-9]+` "-" -}}
+      {{- $slug = strings.Trim $slug "-" -}}
+      {{- $list := (index ($s.Get "lectures") $l.id) | default slice -}}
+      {{- $s.SetInMap "lectures" $l.id ($list | append (dict
+        "chapter" $c.chapter "number" $n "page" $url
+        "url" (printf "%s?class=%s" $url $slug) "slug" $slug "series" $info)) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $s.Add "series" (slice (dict "id" $series.id "title" $series.title "teacher" $series.teacher "catalogSeriesId" $series.catalogSeriesId "url" $seriesUrl "chapters" $chapters)) -}}
+{{- end -}}
+{{- return dict "tier" $tier "root" $root "series" ($s.Get "series") "chapters" ($s.Get "chapters") "lectures" ($s.Get "lectures") -}}

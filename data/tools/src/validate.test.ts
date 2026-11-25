@@ -80,17 +80,13 @@ describe('SchemaSet', () => {
     assert.notDeepEqual(schemas.validate('chapter', [{ text: 't', children: [] }]), []);
   });
 
-  it('keeps the reserved alignment/transcript shapes compilable', () => {
+  it('keeps the alignment shape compilable', () => {
     assert.deepEqual(
       schemas.validate('alignment', {
         schemaVersion: 1,
         lectureId: 'a.mp3',
         segments: [{ startSeconds: 0, endSeconds: 5, chapter: 'chapter_01', lineId: 'abcdefgh' }],
       }),
-      [],
-    );
-    assert.deepEqual(
-      schemas.validate('transcript', { schemaVersion: 1, lectureId: 'a.mp3', language: 'en', segments: [] }),
       [],
     );
   });

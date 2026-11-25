@@ -34,19 +34,6 @@ title = "Shaar Hayichud"
   source = "../../data/dist/v1"
   target = "static/data/v1"
 
-# The study guides of every series for the lessons2 closed beta
-# (data/dist/study-beta/v1/study/, written by the data build in the v1
-# shape): unlisted, served noindex
-# (static/_headers). Not disallowed in a robots.txt: a crawler that may not
-# fetch a URL never sees its noindex.
-# Mounted under static/ ONLY, never as assets or data: no template can read
-# it, so the study pages (/study/, partials/study/index.html, which read the
-# public data/v1/study/ through the assets mount below) can never render a
-# beta guide or a block's `sensitivity`.
-[[module.mounts]]
-  source = "../../data/dist/study-beta"
-  target = "static/data/study-beta"
-
 # Mount the single file (not the directory + a file filter): includeFiles was
 # removed in Hugo 0.153 and its replacement does not exist before then, so a
 # file mount is the only form that builds on every Hugo version.
@@ -55,7 +42,7 @@ title = "Shaar Hayichud"
   target = "data/v1/catalog.json"
 
 # The same generated files as assets, so templates can read the audio
-# alignments and transcripts (resources.Get "data/v1/..." | transform.Unmarshal).
+# alignments, outlines and study guides (resources.Get "data/v1/..." | transform.Unmarshal).
 # Assets are only published when a template asks for their URL.
 [[module.mounts]]
   source = "../../data/dist/v1"

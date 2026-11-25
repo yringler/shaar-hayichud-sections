@@ -1,5 +1,25 @@
 # Changelog
 
+## 2.0.0
+
+Breaking: the site stopped publishing class transcripts and the study-beta
+export.
+
+- Removed `Transcript`, `TranscriptSegment`, `parseTranscript`,
+  `DataUrls.transcriptsIndex`, `DataUrls.transcript` and the
+  `TranscriptTiming` extension (`/data/v1/transcripts/` is no longer
+  published).
+- Removed `ChapterAlignmentsLecture.transcript`.
+- Removed `StudyGuideBlock.sensitivity` and `StudyGuideSensitivity` (with its
+  category and action enums): every published guide is in its public
+  edition, and the beta export (`/data/study-beta/`) is gone.
+- Added `DataUrls.studyAdvancedIndex` (`/data/v1/study/index-advanced.json`):
+  the study guides published unlisted, in the same shape as
+  `DataUrls.studyIndex` (parse it with `parseStudyIndex`); their guides are
+  at `study/<series>/chapter_NN.json` like the public ones.
+- Files published before this release still parse: the dropped fields
+  (a lecture's `transcript`, a block's `sensitivity`) are ignored.
+
 ## 1.7.0
 
 - `StudyGuideBlock.sensitivity` (`StudyGuideSensitivity`: categories,

@@ -351,7 +351,7 @@ section + section {
 
 /* ── Audio: class player, play-from-here, Follow along ──
    Lines and chapters without published alignments are untouched: every rule
-   below targets the player panel, the transcript page, or classes that
+   below targets the player panel, or classes that
    play.js / follow.js add (has-audio, line-play, is-discussing). */
 [hidden] { display: none !important; }
 
@@ -367,14 +367,6 @@ section + section {
   border: 0;
 }
 
-/* Links that open in a new tab (partials/new-tab.html). */
-.new-tab-icon {
-  inline-size: 0.8em;
-  block-size: 0.8em;
-  margin-inline-start: 0.2em;
-  vertical-align: -0.05em;
-}
-
 .listen {
   direction: ltr;
   text-align: start;
@@ -388,12 +380,10 @@ section + section {
   margin-block: 0 1.5rem;
 }
 
-/* Once playback starts (or the transcript is shown) the player docks to the
-   bottom of the screen, like a media bar, and the page gets matching bottom
-   padding (--listen-h, set by play.ts) so the last lines can still scroll
-   above it. It is a column whose only shrinkable part is the transcript
-   region: when the topic list or a note needs room, the transcript gets
-   shorter instead of the whole panel scrolling around it. */
+/* Once playback starts the player docks to the bottom of the screen, like
+   a media bar, and the page gets matching bottom padding (--listen-h, set
+   by play.ts) so the last lines can still scroll above it. A column, at
+   most 85vh, scrolling when the topic list or a note needs more room. */
 .listen.is-active {
   position: fixed;
   inset-inline: 0;
@@ -451,8 +441,7 @@ body:has(.listen.is-active) {
   color: #1a1a2e;
 }
 
-.follow-along,
-.listen-transcript-toggle {
+.follow-along {
   font: inherit;
   padding: 0.35rem 0.85rem;
   border-radius: 999px;
@@ -462,14 +451,13 @@ body:has(.listen.is-active) {
   cursor: pointer;
 }
 
-.follow-along[aria-pressed="true"],
-.listen-transcript-toggle[aria-expanded="true"] {
+.follow-along[aria-pressed="true"] {
   background: #c08a2e;
   color: #fff;
 }
 
-/* Transcript and Follow in the text links (player panel, class lists,
-   transcript pages): pill buttons like Follow along, in the link colour. */
+/* Follow in the text, Study guide and other links (player panel, class
+   lists, study guides): pill buttons like Follow along, in the link colour. */
 a.audio-link {
   display: inline-flex;
   align-items: center;
@@ -497,30 +485,7 @@ a.audio-link:focus-visible {
   outline-offset: 2px;
 }
 
-/* The transcript of the class in the player, at the top of the docked
-   panel (so the controls stay put at the bottom edge): about half the
-   screen, scrolling on its own. */
-.listen-transcript-pane {
-  flex: 0 1 50vh;
-  flex: 0 1 50dvh;
-  min-block-size: 6rem;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  margin: -0.75rem -1rem 0.6rem;
-  padding: 0.75rem 1.25rem 0.25rem;
-  border-block-end: 1px solid #e8e4df;
-  font-family: var(--serif);
-  font-size: 1rem;
-  line-height: 1.6;
-}
 
-.listen.is-active > .listen-transcript-pane { flex-shrink: 1; }
-
-.listen-transcript-pane:focus-visible { outline: 2px solid #3d5a80; outline-offset: -2px; }
-
-.listen-transcript-pane .tseg { cursor: pointer; margin-block: 0 0.8em; }
-
-.listen-transcript-status { color: #7a7a98; margin: 0; }
 
 .listen audio {
   display: block;
@@ -628,11 +593,6 @@ a.audio-link:focus-visible {
   font-variant-numeric: tabular-nums;
 }
 
-.transcript h2.topic {
-  font-size: 1.1rem;
-  margin-block: 1.75rem 0.75rem;
-}
-
 .topic-time { font-size: 0.8rem; margin-inline-start: 0.4rem; }
 
 .listen-hint {
@@ -688,8 +648,7 @@ a.audio-link:focus-visible {
 }
 
 .line-play:focus-visible,
-.follow-along:focus-visible,
-.listen-transcript-toggle:focus-visible {
+.follow-along:focus-visible {
   outline: 2px solid #3d5a80;
   outline-offset: 2px;
 }
@@ -697,55 +656,19 @@ a.audio-link:focus-visible {
 /* While Follow along is on, the aligned lines are clickable too. */
 .is-following .line.has-audio { cursor: pointer; }
 
-.line,
-.tseg {
+.line {
   scroll-margin-block-end: calc(var(--listen-h, 0px) + 1rem);
 }
 
 /* The line under discussion: a side border on its block (the <p> of a
-   multi-line section, or the section's .content), and on transcript
-   paragraphs. The border width is taken out of the padding, so text does
-   not move. */
+   multi-line section, or the section's .content). The border width is
+   taken out of the padding, so text does not move. */
 p:has(> .line.is-discussing),
-.content:has(> .line.is-discussing),
-.tseg.is-discussing {
+.content:has(> .line.is-discussing) {
   border-inline-start: 3px solid #c08a2e;
   padding-inline-start: calc(0.6em - 3px);
   margin-inline-start: -0.6em;
 }
-
-/* ── Transcript pages ── */
-.transcript-page h1 .h1-context {
-  font-size: 0.6em;
-  font-weight: 400;
-  color: #7a7a98;
-}
-
-.transcript-about {
-  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
-  font-size: 0.9rem;
-  color: #5a5a78;
-}
-
-.transcript { max-width: 40rem; }
-
-.tseg { margin-block: 0 1em; }
-
-.tseg-speaker {
-  display: block;
-  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #7a7a98;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Everyone except the transcript's main speaker is indented. */
-.tseg.is-other-speaker { padding-inline-start: 1.5em; color: #4a4a68; }
-.tseg.is-other-speaker.is-discussing { padding-inline-start: calc(2.1em - 3px); }
-
-.is-following .tseg { cursor: pointer; }
 
 .track-links {
   display: flex;
@@ -763,25 +686,10 @@ p:has(> .line.is-discussing),
   line-height: 1.4;
 }
 
-.track-links-label,
-.transcript-follow {
+.track-links-label {
   font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
   font-size: 0.95rem;
   color: #4a4a68;
-}
-
-.transcript-follow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.index-context {
-  display: block;
-  font-size: 0.8rem;
-  color: #7a7a98;
-  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -806,58 +714,7 @@ p:has(> .line.is-discussing),
   .listen-now,
   .listen-topics { margin-block-start: 0.15rem; }
   .follow-along,
-  .listen-transcript-toggle,
   .listen a.audio-link { padding: 0.25rem 0.6rem; font-size: 0.85rem; }
-  .listen-transcript-pane { margin: -0.6rem -0.75rem 0.5rem; padding: 0.6rem 1rem 0.25rem; }
-}
-
-/* ── Classes without text (/texts): teacher, then collapsible catalog groups ── */
-.index-teacher {
-  margin-block: 1.5rem 0.5rem;
-  font-size: 1.05rem;
-  color: #4a4a68;
-}
-
-details.index-group {
-  margin-block: 0.4rem;
-  border: 1px solid #e8e4df;
-  border-radius: 8px;
-  background: #fff;
-}
-
-details.index-group > summary {
-  cursor: pointer;
-  padding: 0.6rem 1rem;
-  font-size: 1.05rem;
-  color: #2d2d4a;
-}
-
-details.index-group[open] > summary {
-  border-block-end: 1px solid #e8e4df;
-}
-
-details.index-group > ul.index-list {
-  margin: 0;
-  padding: 0.5rem;
-}
-
-.index-group-context {
-  color: #7a7a98;
-  font-size: 0.8rem;
-  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
-}
-
-.index-group-count {
-  display: inline-block;
-  min-width: 1.6em;
-  padding: 0 0.4em;
-  margin-inline-start: 0.4rem;
-  border-radius: 999px;
-  background: #f0ece7;
-  color: #4a4a68;
-  font-size: 0.8rem;
-  text-align: center;
-  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
 }
 
 /* ── Class lists: quick contents, lesson text, in-page reader ── */
@@ -1313,9 +1170,8 @@ button.deep-play:focus-visible {
 }
 
 /* ── Search (/search/, search.js) ── */
-/* The line or transcript paragraph a link (a search result) points at. */
-.line:target,
-.tseg:target {
+/* The line a link (a search result) points at. */
+.line:target {
   background: #fdf3d8;
   box-shadow: 0 0 0 0.15em #fdf3d8;
   border-radius: 2px;

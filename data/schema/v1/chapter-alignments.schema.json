@@ -84,10 +84,6 @@
           "description": "Path of the lecture's alignment file, relative to /data/v1/.",
           "type": "string"
         },
-        "transcript": {
-          "description": "Path of the lecture's transcript file, relative to /data/v1/, when one is published.",
-          "type": "string"
-        },
         "outline": {
           "description": "Path of the lecture's topic outline (outline.schema.json), relative to /data/v1/, when one is published.",
           "type": "string"

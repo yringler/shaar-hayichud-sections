@@ -26,7 +26,7 @@
  *   it, bring the item back into view, press any ▶ or toggle Follow.
  * - Taps: a phrase plays from it (selection-safe); a ▶ link plays its block,
  *   class start or overview moment in the bar. Never autoplays.
- * - Arrival: `?class=<transcript slug>&t=<s>`, `#<line id>`, `#s-…`,
+ * - Arrival: `?class=<class slug>&t=<s>`, `#<line id>`, `#s-…`,
  *   `#b-…` select the class, mark the item and put a focused "▶ Play from
  *   m:ss" button next to it (and seekOnPlay); `?class` alone scrolls to the
  *   class's divider. `class` and `t` are then dropped from the URL.
@@ -46,7 +46,7 @@ import {
   studyAt,
   studySeekTarget,
   studyTimeline,
-  transcriptSlug,
+  classSlug,
   type FollowState,
   type StudyAudio,
   type StudyElement,
@@ -654,7 +654,7 @@ function arrive(guide: Guide, parts: readonly Part[], h: ArrivalHooks): void {
         (p.passage !== null ? guide.passEls[p.passage] : undefined);
       if (el) target = { el, lecture: part.id, t: link.t };
     } else {
-      show = document.getElementById(`c-${transcriptSlug(part.id)}`);
+      show = document.getElementById(`c-${classSlug(part.id)}`);
     }
   } else if (link.anchor && document.getElementById(link.anchor)?.matches('.study-divider[data-lecture]')) {
     // "Where it starts" (#c-<slug>): that class, no item.

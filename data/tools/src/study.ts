@@ -124,9 +124,19 @@ export interface StudySeriesFile {
   /** A published translation the phrases' English is taken from verbatim; only then may `en` come without `audio`. */
   publishedTranslation?: { title: string; source: string; license: string };
   chapterLectures?: Record<string, string[]>;
-  /** The teacher allowed publication: the build writes the public edition to dist/v1/study/. */
+  /** The teacher allowed publication: the build writes the public edition to dist/v1/study/, listed in study/index.json. */
   public?: { permission: string; date: string };
+  /**
+   * Published unlisted: the public edition, as for `public`, to dist/v1/study/,
+   * listed only in study/index-advanced.json (the site's /advanced/ pages).
+   * Never with `public`.
+   */
+  advanced?: { note: string; date: string };
 }
+
+/** How a series' guides are published: from series.json, null when they are not. */
+export type StudyTier = 'public' | 'advanced';
+export const studyTier = (series: StudySeriesFile): StudyTier | null => (series.public ? 'public' : series.advanced ? 'advanced' : null);
 
 export interface TranslitFile {
   schemaVersion: 1;
@@ -350,6 +360,17 @@ export function loadStudy(dataDir: string, schemaDir = path.join(dataDir, 'schem
     const seriesRel = `${dir}/series.json`;
     const series = existsSync(path.join(dataDir, seriesRel)) ? load<StudySeriesFile>(seriesRel, validators.series) : null;
     if (!existsSync(path.join(dataDir, seriesRel))) issues.push({ level: 'error', file: seriesRel, message: 'is missing' });
+    if (series === null && existsSync(path.join(dataDir, seriesRel))) {
+      // The schema forbids both; say which rule it is (Ajv only says "must NOT be valid").
+      try {
+        const raw = readJson(path.join(dataDir, seriesRel)) as Record<string, unknown>;
+        if (raw && 'public' in raw && 'advanced' in raw) {
+          issues.push({ level: 'error', file: seriesRel, message: 'has both "public" and "advanced": a series is published one way or the other' });
+        }
+      } catch {
+        // Reported by load().
+      }
+    }
     if (series && series.id !== entry.name) issues.push({ level: 'error', file: seriesRel, message: `"id" must be the directory name, "${entry.name}"` });
     const chapters: LoadedStudy['series'][number]['chapters'] = [];
     for (const file of readdirSync(path.join(studyDir, entry.name)).sort()) {
@@ -613,6 +634,8 @@ export function checkStudyChapter(
       if (s.action === 'keep' && (s.publishable !== undefined || s.publishableTitle !== undefined)) add('error', `${at}/sensitivity has action "keep" (print as said) and a publishable text; drop the publishable text`);
       if (s.action === 'keep' && s.reviewed === undefined) add('error', `${at}/sensitivity has action "keep" without "reviewed": only a person decides a block prints as said`);
       if ((s.recommend === 'judgment') !== (s.judgmentNote !== undefined)) add('error', `${at}/sensitivity: "judgmentNote" goes with recommend "judgment", and only with it`);
+      // An advanced series is published unlisted on the owner's word that its flags were reviewed: say which are not.
+      if (series.advanced && s.reviewed === undefined) add('warning', `${at}/sensitivity is not "reviewed" in an advanced series: it is published with its action ("${s.action}") as it stands`);
     }
     if (block.kind === 'question' && block.question === undefined) add('error', `${at} is a question block without "question"`);
     if (block.kind !== 'question' && (block.question !== undefined || block.askedBy !== undefined)) add('error', `${at} has "question"/"askedBy" but is not a question block`);

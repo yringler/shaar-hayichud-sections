@@ -174,18 +174,6 @@ void main() {
       expect(a.toJson(), equals(json));
     });
 
-    test('transcript', () {
-      final json = {
-        'schemaVersion': 1,
-        'lectureId': 'a.mp3',
-        'language': 'en',
-        'segments': [
-          {'startSeconds': 0, 'endSeconds': 2, 'text': 'Hi', 'speaker': 'R'},
-        ],
-      };
-      expect(parseTranscript(jsonEncode(json)).toJson(), equals(json));
-    });
-
     test('outline', () {
       final json = {
         'schemaVersion': 1,
@@ -232,8 +220,78 @@ void main() {
       };
       final c = parseChapterAlignments(jsonEncode(json));
       expect(c.lines.single.refs.single.confidence, 0.9);
-      expect(c.lectures.single.transcript, isNull);
       expect(c.toJson(), equals(json));
     });
+
+    // Files published before 2.0.0 carry fields 2.0.0 dropped: they still
+    // parse, the extra fields ignored.
+    test(
+      'older files: a lecture\'s transcript path, a block\'s sensitivity',
+      () {
+        final lecture = {
+          'id': 'a.mp3',
+          'url': 'https://media.example/a.mp3',
+          'title': 'Part 1',
+          'seriesId': '0',
+          'series': 'S',
+          'part': 'Chapter 10',
+          'durationSeconds': 12.5,
+          'alignment': 'alignments/a.mp3.json',
+        };
+        final c = parseChapterAlignments(
+          jsonEncode({
+            'schemaVersion': 1,
+            'chapter': 'chapter_10',
+            'lectures': [
+              {...lecture, 'transcript': 'transcripts/a.mp3.json'},
+            ],
+            'lines': <Object>[],
+          }),
+        );
+        expect(c.lectures.single.toJson(), equals(lecture));
+        final block = {
+          'kind': 'explanation',
+          'text': 'Said.',
+          'audio': [
+            {'lecture': 'a.mp3', 'start': 1, 'end': 2},
+          ],
+        };
+        final g = parseStudyGuide(
+          jsonEncode({
+            'schemaVersion': 1,
+            'series': 's',
+            'chapter': 'chapter_10',
+            'title': 'T',
+            'status': 'draft',
+            'overview': 'O.',
+            'sections': [
+              {
+                'title': 'S',
+                'summary': 'S.',
+                'passages': [
+                  {
+                    'lines': ['abcdefgh'],
+                    'blocks': [
+                      {
+                        ...block,
+                        'sensitivity': {
+                          'categories': ['other'],
+                          'reason': 'r',
+                          'action': 'omit',
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          }),
+        );
+        expect(
+          g.sections.single.passages.single.blocks.single.toJson(),
+          equals(block),
+        );
+      },
+    );
   });
 }

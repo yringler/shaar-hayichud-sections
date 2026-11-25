@@ -82,13 +82,6 @@ class DataUrls {
   Uri chapterAlignments(String key) =>
       _at('alignments/chapters/${encodePathSegment(key)}.json');
 
-  /// Listing of the transcript files (only published lectures).
-  Uri get transcriptsIndex => _at('transcripts/index.json');
-
-  /// The transcript for a catalog lecture id (404 when not published).
-  Uri transcript(String lectureId) =>
-      _at('transcripts/${encodePathSegment(lectureId)}.json');
-
   /// Listing of the topic outline files (only published lectures).
   Uri get outlinesIndex => _at('outlines/index.json');
 
@@ -100,7 +93,14 @@ class DataUrls {
   /// The public study guides: which series has a guide for which chapter.
   Uri get studyIndex => _at('study/index.json');
 
-  /// One public study guide, by study series id (`StudyIndexSeries.id`)
+  /// The study guides published unlisted (the site's `/advanced/` pages; in
+  /// the app, behind a hidden unlock): the same shape as [studyIndex]
+  /// (parse it with `parseStudyIndex`), listing only those series. Their
+  /// guides are in the public edition too, at the same kind of path, so
+  /// [studyGuide] and [resolve] reach them.
+  Uri get studyAdvancedIndex => _at('study/index-advanced.json');
+
+  /// One study guide (either listing's), by study series id (`StudyIndexSeries.id`)
   /// and chapter key, e.g. `walters-original`, `chapter_10` (404 when the
   /// series has none for it; prefer `StudyIndexChapter.path` with [resolve]).
   Uri studyGuide(String seriesId, String chapterKey) => _at(

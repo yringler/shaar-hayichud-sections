@@ -23,12 +23,22 @@ describe('build (real data/)', () => {
       'v1/chapters/index.json',
       'v1/chapters/chapter_01.json',
       'v1/alignments/index.json',
-      'v1/transcripts/index.json',
+      'v1/outlines/index.json',
+      'v1/study/index.json',
+      'v1/study/index-advanced.json',
       'v1/schema/catalog.schema.json',
     ]) {
       assert.ok(existsSync(path.join(out, f)), f);
     }
-    for (const f of ['v1/alignments/index.json', 'v1/alignments/chapters/index.json', 'v1/transcripts/index.json', 'v1/outlines/index.json']) {
+    // Transcripts are not published, and the study-beta export is gone.
+    for (const f of ['v1/transcripts', 'study-beta']) assert.ok(!existsSync(path.join(out, f)), f);
+    const top = readJson(path.join(out, 'v1/index.json')) as { items: { id: string; path: string }[] };
+    assert.deepEqual(
+      top.items.map((i) => i.id),
+      ['catalog', 'chapters', 'alignments', 'chapter-alignments', 'outlines', 'study'],
+    );
+    assert.equal(result.studyFiles?.advanced, (readJson(path.join(out, 'v1/study/index-advanced.json')) as { series: { chapters: unknown[] }[] }).series.reduce((n, s) => n + s.chapters.length, 0));
+    for (const f of ['v1/alignments/index.json', 'v1/alignments/chapters/index.json', 'v1/outlines/index.json']) {
       const index = readJson(path.join(out, f)) as { items: { path: string }[] };
       // Paths are URL paths: the file has the decoded name.
       for (const item of index.items) {
