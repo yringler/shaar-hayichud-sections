@@ -6,26 +6,24 @@ import { describe, it } from 'node:test';
 import { buildCatalog } from './catalog.js';
 import type { Chapter } from './chapter.js';
 import { parseClassesTxt } from './parse.js';
-import { build, DATA_DIR, defaultPaths } from './pipeline.js';
+import { build, DATA_DIR, defaultPaths, loadCatalog } from './pipeline.js';
+import { loadChapters, SchemaSet } from './validate.js';
 import {
   alignmentChapters,
   applyChapterStarts,
   CHAPTER_LEAD_SECONDS,
   chapterAlignments,
   chapterStarts,
-  chapterKeyOf,
   lectureInfos,
-  paragraphs,
   parseChapterStarts,
   parsePublishPolicy,
   publishAlignment,
+  publishAudio,
   publishOutline,
   reverentSpelling,
   retimeTopics,
   sourceTopics,
   selectPublished,
-  speakerLabelsOn,
-  type TimedWord,
 } from './publish.js';
 
 const readJson = (file: string): unknown => JSON.parse(readFileSync(file, 'utf8'));
@@ -48,10 +46,6 @@ c.mp3
 `;
 const catalog = buildCatalog(parseClassesTxt(CLASSES).series);
 const infos = lectureInfos(catalog);
-
-/** Words `n` apart, `dur` long, with the given texts. */
-const words = (texts: string[], step = 0.5, dur = 0.4): TimedWord[] =>
-  texts.map((word, i) => ({ word, start: i * step, end: i * step + dur }));
 
 describe('parsePublishPolicy', () => {
   it('accepts the shape and reports unknown keys and bad values', () => {
@@ -79,13 +73,6 @@ describe('selectPublished', () => {
   });
 });
 
-describe('chapterKeyOf', () => {
-  it('only a "Chapter N" parent heading teaches a chapter', () => {
-    assert.equal(chapterKeyOf(infos.get('a.mp3')!), 'chapter_03');
-    assert.equal(chapterKeyOf(infos.get('intro.mp3')!), null);
-  });
-});
-
 describe('reverentSpelling', () => {
   it('writes God and its forms as G-d', () => {
     assert.equal(
@@ -97,90 +84,6 @@ describe('reverentSpelling', () => {
   it('leaves lower-case god, plurals and other words alone', () => {
     const s = 'their god is science, other gods, Gods, Godel, good, Godzilla, ungodly';
     assert.equal(reverentSpelling(s), s);
-  });
-});
-
-describe('paragraphs', () => {
-  it('spells God as G-d in the published text', () => {
-    assert.deepEqual(
-      paragraphs(words(['the', 'God', 'of', 'Godliness.'])).map((x) => x.text),
-      ['the G-d of G-dliness.'],
-    );
-  });
-
-  it('splits at a long pause once the paragraph has enough words', () => {
-    const w = words(['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']);
-    // A 2.5 s pause after the ninth word.
-    w[8]!.end = 4;
-    w[9]!.start = 6.5;
-    w[9]!.end = 7;
-    const p = paragraphs(w);
-    assert.deepEqual(
-      p.map((x) => x.text),
-      ['one two three four five six seven eight nine', 'ten'],
-    );
-    assert.deepEqual([p[0]!.startSeconds, p[0]!.endSeconds, p[1]!.startSeconds, p[1]!.endSeconds], [0, 4, 6.5, 7]);
-  });
-
-  it('does not split a short paragraph at a pause', () => {
-    const w = words(['a', 'b', 'c']);
-    w[2]!.start = 10;
-    w[2]!.end = 10.5;
-    assert.equal(paragraphs(w).length, 1);
-  });
-
-  it('splits at a sentence end once the paragraph reaches the target length', () => {
-    const texts = Array.from({ length: 80 }, (_, i) => (i === 69 ? 'end.' : `w${i}`));
-    const p = paragraphs(words(texts));
-    assert.equal(p.length, 2);
-    assert.equal(p[0]!.text.split(' ').length, 70);
-    assert.ok(p[0]!.text.endsWith('end.'));
-  });
-
-  it('splits at a sentence end followed by a short pause after enough words', () => {
-    const texts = Array.from({ length: 40 }, (_, i) => (i === 29 ? 'done?' : `w${i}`));
-    const w = words(texts);
-    for (const x of w.slice(30)) {
-      x.start += 1;
-      x.end += 1;
-    }
-    assert.deepEqual(paragraphs(w).map((x) => x.text.split(' ').length), [30, 10]);
-  });
-
-  it('splits at every speaker change and labels the paragraphs', () => {
-    const w = words(['Rabbi', 'speaks.', 'A', 'question?', 'Answer']);
-    const who = ['S0', 'S0', 'S1', 'S1', 'S0'];
-    w.forEach((x, i) => (x.speaker = who[i]!));
-    assert.deepEqual(
-      paragraphs(w).map((p) => [p.speaker, p.text]),
-      [
-        ['S0', 'Rabbi speaks.'],
-        ['S1', 'A question?'],
-        ['S0', 'Answer'],
-      ],
-    );
-  });
-
-  it('has no speaker field when the words have none (null)', () => {
-    const w = words(['a', 'b']).map((x) => ({ ...x, speaker: null }));
-    assert.deepEqual(Object.keys(paragraphs(w)[0]!), ['startSeconds', 'endSeconds', 'text']);
-  });
-
-  it('caps paragraph length and skips blank words', () => {
-    const texts = Array.from({ length: 450 }, (_, i) => (i === 3 ? ' ' : `w${i}`));
-    assert.deepEqual(paragraphs(words(texts)).map((x) => x.text.split(' ').length), [200, 200, 49]);
-  });
-});
-
-describe('speakerLabelsOn', () => {
-  it('follows the series speaker setting; unknown series are off', () => {
-    const config = [
-      { seriesId: '1', title: 'A', speakers: { mode: 'auto' as const }, note: '' },
-      { seriesId: '2', title: 'B', speakers: { mode: 'off' as const }, note: '' },
-    ];
-    assert.equal(speakerLabelsOn('1', config), true);
-    assert.equal(speakerLabelsOn('2', config), false);
-    assert.equal(speakerLabelsOn('3', config), false);
   });
 });
 
@@ -237,12 +140,14 @@ describe('chapterAlignments', () => {
       new Set(['a.mp3']),
     );
     assert.deepEqual(
-      r.lectures.map((l) => [l.id, l.seriesId, l.series, l.part, l.transcript ?? null]),
+      r.lectures.map((l) => [l.id, l.seriesId, l.series, l.part, l.outline ?? null]),
       [
-        ['a.mp3', '1', 'Series A', 'Chapters / Chapter 3', 'transcripts/a.mp3.json'],
+        ['a.mp3', '1', 'Series A', 'Chapters / Chapter 3', 'outlines/a.mp3.json'],
         ['c.mp3', '4', 'Series B', 'Chapter 3', null],
       ],
     );
+    // Transcripts are not published, so a lecture never names one.
+    assert.ok(r.lectures.every((l) => !('transcript' in l)));
     assert.equal(r.lectures[0]!.url, 'https://media.shaarhayichudresources.com/folder/a.mp3');
     assert.deepEqual(r.lines, [
       {
@@ -316,7 +221,7 @@ describe('chapter starts', () => {
   });
 
   it('publishes chapterStartSeconds on each lecture of a chapter index', () => {
-    const r = chapterAlignments('chapter_03', chapter, [al([s('chapter_03', 10)])], infos, new Set(), new Set(), new Map([['a.mp3', new Map([['chapter_03', 0]])]]));
+    const r = chapterAlignments('chapter_03', chapter, [al([s('chapter_03', 10)])], infos, new Set(), new Map([['a.mp3', new Map([['chapter_03', 0]])]]));
     assert.equal(r.lectures[0]!.chapterStartSeconds, 0);
     const none = chapterAlignments('chapter_03', chapter, [al([s('chapter_03', 10)])], infos, new Set());
     assert.equal('chapterStartSeconds' in none.lectures[0]!, false);
@@ -383,29 +288,50 @@ describe('build (audio publishing)', () => {
       const a = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { confidence: number }[] };
       assert.ok(a.segments.every((s) => s.confidence >= policy.minConfidence));
     }
-    const transcripts = readJson(path.join(out, 'v1/transcripts/index.json')) as { items: { path: string }[] };
-    for (const item of transcripts.items) {
-      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as Record<string, unknown>;
-      assert.ok(!('result' in t) && !('sofer' in t), 'raw Sofer data is not published');
-      // No in-scope series labels speakers today, so stored labels (Markel 002) are dropped.
-      assert.ok(!(t['segments'] as Record<string, unknown>[]).some((seg) => 'speaker' in seg), 'speaker labels are not published');
-    }
+    // Transcripts are never published: no directory, no index entry, no `transcript` path on a chapter's classes.
+    assert.equal(existsSync(path.join(out, 'v1', 'transcripts')), false);
+    assert.equal(existsSync(path.join(out, 'v1', 'schema', 'transcript.schema.json')), false);
     const top = readJson(path.join(out, 'v1/index.json')) as { items: { id: string }[] };
     assert.ok(top.items.some((i) => i.id === 'chapter-alignments'));
-    // Published paragraphs take their times from data/retimed/ when the lecture has a file there.
-    const retimedDir = path.join(DATA_DIR, 'retimed');
-    let checked = 0;
-    for (const file of existsSync(retimedDir) ? readdirSync(retimedDir).filter((f) => f.endsWith('.json')) : []) {
-      const r = readJson(path.join(retimedDir, file)) as { lectureId: string; words: number[][] };
-      const item = transcripts.items.find((i) => i.path === `transcripts/${file}`);
-      if (!item) continue;
-      const raw = readJson(path.join(DATA_DIR, 'transcripts', file)) as { result: { timestamps: { word: string }[] } };
-      const first = raw.result.timestamps.findIndex((w) => w.word.trim() !== '');
-      const t = readJson(path.join(out, 'v1', decodePath(item.path))) as { segments: { startSeconds: number }[] };
-      assert.equal(t.segments[0]!.startSeconds, Math.round(r.words[first]![0]! * 100) / 100, r.lectureId);
-      checked += 1;
+    assert.ok(!top.items.some((i) => i.id === 'transcripts'));
+    const chapters = readJson(path.join(out, 'v1/alignments/chapters/index.json')) as { items: { path: string }[] };
+    assert.ok(chapters.items.length > 0);
+    for (const item of chapters.items) {
+      const c = readJson(path.join(out, 'v1', item.path)) as { lectures: Record<string, unknown>[] };
+      assert.ok(c.lectures.every((l) => !('transcript' in l)), item.path);
     }
-    assert.ok(checked > 0, 'at least one published lecture is retimed');
+  });
+
+  it('still fails on a stale data/retimed/ file of a published lecture', () => {
+    const retimedDir = path.join(DATA_DIR, 'retimed');
+    const file = existsSync(retimedDir) ? readdirSync(retimedDir).find((f) => f.endsWith('.json')) : undefined;
+    assert.ok(file, 'data/retimed/ has a file');
+    const dir = mkdtempSync(path.join(tmpdir(), 'data-'));
+    for (const d of ['schema', 'chapters', 'transcripts', 'alignments', 'outlines', 'retimed', 'edits']) {
+      if (existsSync(path.join(DATA_DIR, d))) cpSync(path.join(DATA_DIR, d), path.join(dir, d), { recursive: true });
+    }
+    for (const f of ['classes.txt', 'audio-publish.json', 'alignment-chapters.json', 'chapter-starts.json']) {
+      if (existsSync(path.join(DATA_DIR, f))) cpSync(path.join(DATA_DIR, f), path.join(dir, f));
+    }
+    const r = readJson(path.join(dir, 'retimed', file)) as Record<string, unknown>;
+    writeFileSync(path.join(dir, 'retimed', file), JSON.stringify({ ...r, transcriptSha: '0'.repeat(64) }));
+    const paths = defaultPaths(dir);
+    const errors = build(paths).errors;
+    assert.ok(errors.some((e) => e.includes(file) || e.includes(String(r['lectureId']))), errors.join('\n'));
+    assert.equal(existsSync(paths.distDir), false);
+    // publishAudio itself reports it too (not only the source checks before it), when the lecture is published.
+    const schemas = new SchemaSet(paths.schemaDir);
+    const { catalog } = loadCatalog(paths, schemas);
+    const lectureId = String(r['lectureId']);
+    writeFileSync(paths.audioPolicy, JSON.stringify({ minConfidence: 0.45, sections: [], lectures: [lectureId] }));
+    const audio = publishAudio({
+      dataDir: dir,
+      policyFile: paths.audioPolicy,
+      catalog,
+      chapters: loadChapters(paths.chaptersDir, schemas).chapters.map((ch) => ({ key: ch.key, data: ch.data as Chapter })),
+      schemas,
+    });
+    assert.ok(audio.errors.some((e) => e.includes(file)), audio.errors.join('\n'));
   });
 
   it('fails on a policy that names an unknown heading, writing nothing', () => {

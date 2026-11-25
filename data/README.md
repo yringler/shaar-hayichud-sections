@@ -8,15 +8,15 @@ Hayichud comes from this directory :
 | `classes.txt` | Audio class catalog (series → sections → lectures) | hand, plus `yarn set-durations` |
 | `chapters/chapter_NN.json` | Chapter text as `TextNode[]` trees of lines (see below) | section-tool (saves via the GitHub API) |
 | `schema/v1/` | JSON Schemas for everything published under `/data/v1/`. The Dart models in [`packages/dart`](../packages/dart/README.md) are generated from them; regenerate after a schema change | hand |
-| `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
+| `transcripts/<lecture>.json` | Raw word-timestamped Sofer.ai transcripts of classes, the source of alignments, re-timing and study guides; never published (see [Transcripts and alignments](#transcripts-and-alignments)) | `yarn transcribe` |
 | `alignments/<lecture>.json` | Class time ranges for chapter line IDs | `yarn align` |
 | `outlines/<lecture>.json` | Sofer.ai's auto-generated topic outline of a class (see [`yarn outline`](#yarn-outline)) | `yarn outline` |
 | `retimed/<lecture>.json` | Word times re-derived from the audio by forced alignment, replacing Sofer's broken ones (see [Re-timing](#re-timing-dataretime)) | `data/retime` (Python) |
-| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). The public edition of series whose teacher allowed it is published in `dist/v1/study/`; an unlisted beta copy of all of them, as written and in the same shape, is written to `dist/study-beta/v1/study/` | writers (people or agents), `yarn study-fill` |
+| `study/<series>/chapter_NN.json` | Study guides: a class series' teaching of a chapter as passages and blocks of prose anchored to line IDs and to the recording (see [Study guides](#study-guides-datastudy)). A series marked `public` or `advanced` in its `series.json` is published in its public edition in `dist/v1/study/` (see [Publishing tiers](#publishing-tiers-v1study)) | writers (people or agents), `yarn study-fill` |
 | `edits/<lecture>.json` | Listener "Right." edits of a class recording: spans replaced by room tone in the `(edited).mp3` next to the original (see [Back-channel edits](#back-channel-edits-dataretime-backchannel)) | `data/retime` (`backchannel`) |
 | `alignment-chapters.json` | Chapters a class reads when its catalog title or heading does not say (see [`yarn align`](#yarn-align)) | hand |
 | `chapter-starts.json` | Hand-set start of a class's part on a chapter, where the computed one is wrong (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)) | hand |
-| `audio-publish.json` | Which transcripts / alignments / outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
+| `audio-publish.json` | Which lectures' alignments and outlines are published, and the alignment confidence floor (see [Publishing audio](#publishing-audio)) | hand |
 | `schema/sources/` | JSON Schemas for source files that are not published (the stored transcript, retimed words, audio edits) | hand |
 | `schema/study/` | JSON Schemas of the study guides (chapter file, series file, transliteration table); not published | hand |
 | `tools/` | TypeScript build / validation tooling | hand |
@@ -38,16 +38,19 @@ The site publishes `dist/v1/` at `https://www.shaarhayichudresources.com/data/v1
 | `/data/v1/chapters/index.json`, `/data/v1/chapters/chapter_NN.json` | `index.schema.json`, `chapter.schema.json` |
 | `/data/v1/alignments/index.json`, `/data/v1/alignments/<lecture>.json` | `index.schema.json`, `alignment.schema.json` — per class: line ID → time range + confidence |
 | `/data/v1/alignments/chapters/index.json`, `/data/v1/alignments/chapters/chapter_NN.json` | `index.schema.json`, `chapter-alignments.schema.json` — per chapter: the classes that discuss it and, per aligned line, every class's range |
-| `/data/v1/transcripts/index.json`, `/data/v1/transcripts/<lecture>.json` | `index.schema.json`, `transcript.schema.json` — paragraphs with start/end times (and `speaker` when Sofer labelled speakers) |
 | `/data/v1/outlines/index.json`, `/data/v1/outlines/<lecture>.json` | `index.schema.json`, `outline.schema.json` — auto-generated topics on the class timeline |
-| `/data/v1/study/index.json`, `/data/v1/study/<series>/chapter_NN.json` | `study-index.schema.json`, `study.schema.json` — public study guides (see [Public study guides](#public-study-guides-v1study)) |
+| `/data/v1/study/index.json`, `/data/v1/study/index-advanced.json`, `/data/v1/study/<series>/chapter_NN.json` | `study-index.schema.json` (both indexes), `study.schema.json` — study guides in their public edition: `index.json` lists the public series, `index-advanced.json` (unlisted: not in `/data/v1/index.json`) the advanced ones (see [Publishing tiers](#publishing-tiers-v1study)) |
 | `/data/v1/schema/*.schema.json` | the schemas themselves |
 
 `/data/*` is served with `Access-Control-Allow-Origin: *` (see
 `site/hugo/static/_headers`) so other origins, such as the Flutter web app, can
 fetch it. Within `v1`, changes are additive only; a breaking change means a
-new `v2/` alongside it. (Chapter text moving from newline-joined strings to
-line objects was a one-time exception, made before any client read chapters.)
+new `v2/` alongside it. Two exceptions were made deliberately: chapter text
+moving from newline-joined strings to line objects (before any client read
+chapters), and, in November 2026, transcripts no longer being published
+(`transcripts/`, its schema, its entry in `index.json` and the `transcript`
+path on a chapter index's lectures were removed; the Dart package went to
+2.0.0, which still reads the older files).
 
 Per-lecture files are listed by URL path, with the lecture ID percent-encoded
 like a catalog URL segment (`alignments/07%20-%20Chap-…mp3.json`). On disk in
@@ -74,7 +77,7 @@ must never change once published:
   Do not remove an `@` line that is already there.
 
 - **Line IDs** identify one line of chapter text (see below). Alignments
-  and transcripts point at lines by ID alone.
+  and study guides point at lines by ID alone.
 
 The build fails on duplicate or colliding IDs.
 
@@ -208,9 +211,10 @@ Behind an HTTP proxy, prefix commands with `NODE_USE_ENV_PROXY=1`.
 
 Both files are named after the lecture's catalog ID, encoded like a published
 URL segment plus `.json` (e.g. `07%20-%20Chap-%2010-1%20Atmus%20Ohr%20Ein%20Sof%20%28M%29.mp3.json`).
-`yarn build-data` validates both and publishes the ones `audio-publish.json`
-selects (see [Publishing audio](#publishing-audio)). The raw Sofer files are
-never published.
+`yarn build-data` validates both and publishes the alignments (and outlines)
+of the lectures `audio-publish.json` selects (see [Publishing audio](#publishing-audio)).
+Transcripts are never published, nor shown on the site: they are the source
+of the alignments, the re-timing and the study guides.
 
 ### `yarn transcribe`
 
@@ -237,9 +241,8 @@ with short questions. The setting sent is stored in the transcript's
 found one speaker in the introduction and two in `002 Tape016-Side1-Ch10.mp3`,
 but the second speaker got only 16 words, all of them the teacher's own
 sentences, and about 300 words got no speaker. Labeling was therefore turned
-off for Markel. The introduction keeps its stored labels, but the data build
-publishes `speaker` only for series whose labeling is on (`speakerLabelsOn` in
-`tools/src/publish.ts`), so they are not shown. `002` was restored to its
+off for Markel. The introduction keeps its stored labels (transcripts are not
+published, so they are never shown). `002` was restored to its
 first, unlabelled transcription (`b952099f…`), whose word timestamps were
 better (555 zero-length words against 1,266 in the labelled re-run), and
 re-aligned; in Sofer it is back in the Chapter 10 folder and the re-run is
@@ -459,11 +462,13 @@ uv run retime --affected --max-minutes 100   # resumable; skips tapes already cu
 cd ../tools && yarn align --lecture "…"      # re-align each retimed tape
 ```
 
-When a lecture has a `retimed/` file, `yarn align` and the published
-transcripts use its times instead of Sofer's; the alignment records which in
+When a lecture has a `retimed/` file, `yarn align`, `yarn study-fill` and the
+published outlines use its times instead of Sofer's; the alignment records which in
 `method.times` (`"retimed"` or `"sofer"`; absent means Sofer). The data build
 fails on a retimed file that does not match its transcript (stale hash, word
-count, non-monotone times), so it can never be silently ignored, and on an
+count, non-monotone times), so it can never be silently ignored (the source
+checks catch it, and publishing reads every published lecture's word times
+again), and on an
 alignment whose `method.times` differs from what the lecture has now (rerun
 `yarn align` after retiming). Python is only needed to make the files; the
 build and the deploy only read them.
@@ -525,20 +530,11 @@ For each published lecture the build writes, when the source exists:
   segment's `confidence`.
 - `alignments/chapters/chapter_NN.json`: every published class aligned to the
   chapter (`lectures[]`: id, url, title, series, part, and paths of its
-  alignment, transcript and outline) and `lines[]` in document order, each
+  alignment and outline) and `lines[]` in document order, each
   with `refs[]` (`lecture` index, start, end, confidence; best first). Each
   lecture also has `chapterStartSeconds`, where its part on this chapter
   starts (see [Where a class starts on a chapter](#where-a-class-starts-on-a-chapter)).
   The site's chapter player reads this file.
-- `transcripts/<lecture>.json`: the words (with `retimed/` times when the
-  lecture has them) as paragraphs (`segments[]` of
-  `startSeconds`/`endSeconds`/`text`, plus `speaker` when Sofer labelled
-  speakers and the series' speaker labeling is on in
-  `tools/src/transcription-config.ts`). A paragraph ends at every change of speaker, at a pause of 2 s or
-  more (once it has 8 words), or at a sentence end once it has 25 words and a
-  0.8 s pause, or 70 words; never more than 200 words
-  (`DEFAULT_PARAGRAPH_OPTIONS` in `tools/src/publish.ts`). `chapter` is set
-  when the lecture is under a `### Chapter N` heading.
 - `outlines/<lecture>.json`: from `outlines/<lecture>.json` (an object with a
   `topics` array of Sofer topics `{title, start_time_sec?, confidence:
   "HIGH"|"MEDIUM"|"LOW"|"NONE", ...}`), only topics with a start time and HIGH
@@ -584,8 +580,8 @@ nothing earlier (221: its 200 s preview of chapter 46 is too far back). An
 override is checked against the alignment, so re-check it when a tape is
 re-aligned or re-timed and the build complains.
 
-Published transcript text and outline titles spell the Name as G-d, like the
-chapter translations: `reverentSpelling` in `tools/src/publish.ts` turns God,
+Published outline titles (and the transcript text `yarn study-dump` prints)
+spell the Name as G-d, like the chapter translations: `reverentSpelling` in `tools/src/publish.ts` turns God,
 God's, Godly and Godliness (and lower-case godly and godliness) into G-d,
 G-d's, G-dly and G-dliness. A bare lower-case "god" ("their god is science")
 is left alone. The stored Sofer files in `transcripts/` and `outlines/` keep
@@ -600,11 +596,12 @@ a story, a question and its answer, a practical point, an aside), each
 pointing at the stretch of recording it was written from. It began as a
 separate demo (`yringler/shaarhayichudstudydemo`); here it is data, written
 by people or by agents (`.claude/skills/study-chapter/`), checked by the data
-build, and published in two ways: the [public edition](#public-study-guides-v1study)
-of a series whose teacher has allowed it (`"public"` in its `series.json`)
-goes into `dist/v1/study/`, and every series, as written, goes into the
-unlisted [beta export](#the-study-beta-export) for the lessons2 closed beta,
-in the same shape. Neither is in the Dart snapshot package.
+build, and published in its [public edition](#publishing-tiers-v1study) in
+`dist/v1/study/` when its `series.json` says how: `"public"` (the teacher
+allowed it; listed in `study/index.json`, pages under `/study/`) or
+`"advanced"` (published unlisted; listed in `study/index-advanced.json`,
+pages under `/advanced/`). A series with neither is not published. No guide
+is in the Dart snapshot package.
 
 ```
 study/
@@ -679,14 +676,13 @@ What each part is anchored to:
   The writer may add a lean for the reviewer, `recommend: "raw"` (the remark
   is the teaching itself) or `"judgment"` with a `judgmentNote`, by the test
   in `study/STYLE.md`; it changes nothing published.
-  `publicView()` in `tools/src/study.ts` applies it, for the
-  [public edition](#public-study-guides-v1study). `reviewed: "YYYY-MM-DD"`
+  `publicView()` in `tools/src/study.ts` applies it: every published guide,
+  of either [tier](#publishing-tiers-v1study), is its public edition. `reviewed: "YYYY-MM-DD"`
   on the flag records that a person checked it against the class and
   accepted it as it stands; without it a flag is the writer's proposal.
   Only a person sets it, and an edit to the block's text or title or to the
   flag's action, `publishable` or `publishableTitle` deletes it. A flag
-  found unnecessary is removed, not marked. Neither export carries
-  `reviewed`, `recommend` or `judgmentNote`.
+  found unnecessary is removed, not marked. Nothing of a flag is published.
 - **Nothing dropped silently**: a stretch of a chapter's class that no block
   cites is listed in `omitted` with a reason, or the check warns about it.
 
@@ -699,7 +695,7 @@ levels:
 |-------|----------|-------------------|--------------------|
 | error | invalid JSON or schema; unknown lecture, or one outside the series; a word range past the transcript's end; a transcript re-made since; Markdown that is not allowed; "God" spelled out; a term spelled against `translit.json`; `replace` with no `publishable`; a phrase's `en` with no `audio` (or `audio` with no `en`); phrases on a `no-recording` passage | fails | fails |
 | stale | a line ID that is no longer in the chapter; lines not covered once and in order; phrases that are not the lines' text; `start`/`end` that are not the word range's times | warns | fails |
-| warning | a block far (120 s) from where the class reads its passage, without `outOfPlace`; a phrase's `audio` more than 120 s outside its class's part on the chapter; 250 or more uncited words of class; a class of the chapter the file never cites; bold that does not quote the translation; a `mashal`, `story` or `digression` with no title; a block over 260 words; Hebrew script in prose; a term spelled two ways across chapters | counts | prints |
+| warning | a block far (120 s) from where the class reads its passage, without `outOfPlace`; a phrase's `audio` more than 120 s outside its class's part on the chapter; 250 or more uncited words of class; a class of the chapter the file never cites; bold that does not quote the translation; a `mashal`, `story` or `digression` with no title; a block over 260 words; Hebrew script in prose; a term spelled two ways across chapters; a `sensitivity` flag without `reviewed` in an `advanced` series (it is published with its action as it stands) | counts | prints |
 
 Stale references only warn in the build so that editing a chapter in the
 section tool, or re-timing a tape, never blocks a deploy. After such a
@@ -735,78 +731,84 @@ and a study file that passes every check).
 `{ "he": "…", "en": "…", "audio": … }` with the Hebrew copied from the
 chapter, and stamps phrase `audio` seconds as it does blocks'.
 
-### Public study guides (`v1/study/`)
+### Publishing tiers (`v1/study/`)
 
-A series is public when its `series.json` has `public`: who gave permission
-and when (`{ "permission": "…", "date": "YYYY-MM-DD" }`). Set it only on the
-teacher's word. `yarn build-data` then writes its guides, beside the rest of
-`v1` (`exportStudy(…, 'public')` in `tools/src/study-export.ts`):
+A series' `series.json` decides whether and how its guides are published,
+with one of two keys (both is an error; neither leaves the series
+unpublished):
 
-- `study/index.json` (`schema/v1/study-index.schema.json`): `{ schemaVersion,
-  series: [{ id, catalogSeriesId, teacher, title, chapters: [{ chapter, path,
-  status, stale?, lectures: [{ id, start, end, continuesIn? }] }] }] }`, the
-  chapters in order, `path` relative to the edition's root (`/data/v1/`). A
-  lecture's `start`/`end` are its part of the chapter in seconds
-  (`chapterWordRange`, timed with the words the site plays; without an
-  alignment, the span of the guide's own audio). `continuesIn` is the chapter
-  the class reads on into, from its alignment. No timestamp, so an unchanged
-  build is byte-identical.
-- `study/<series>/chapter_NN.json` (`schema/v1/study.schema.json`):
-  `schemaVersion`, `series`, `chapter`, `title`, `status`, `stale?`,
-  `provenance: { method }`, `overview`, `overviewAudio?` (where the class sums
-  the chapter up, `{ lecture, start, end }[]`) and `sections` → `passages`
-  (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains `lines`: the
-  line IDs whose text it overlaps, by character offsets into the passage's
-  lines joined by spaces; `en` is present only where the teacher translates
-  the phrase, and then its `audio` becomes `lecture`, `start` and `end` on
-  the phrase. Block `audio` is `{ lecture, start, end }`; `outOfPlace` and
-  phrase `notes` are kept. Word ranges, `lectures`/`transcriptionId`,
-  provenance details, `terms`, `reviewQuestions`, `omitted` and `notes` are
-  dropped. Fields are copied from a whitelist, so a new writer-side field
-  does not leak.
-- Each guide is in its **public edition** (`publicView()`): a block with
-  `sensitivity` is replaced by its `publishable` text (and
-  `publishableTitle`), or dropped when its action is `omit`, so no
-  `sensitivity` is published.
+- `"public": { "permission": "…", "date": "YYYY-MM-DD" }`: the teacher
+  allowed publication. Set it only on the teacher's word. Listed in
+  `study/index.json`; the site renders the guides at `/study/` and links
+  them from chapter pages, class boxes, outlines, /texts and search.
+- `"advanced": { "note": "…", "date": "YYYY-MM-DD" }`: published unlisted
+  ("semi-public"). Listed only in `study/index-advanced.json`, which is not
+  in `/data/v1/index.json`; the site renders the guides at `/advanced/`,
+  noindex (meta and `X-Robots-Tag`), disallowed in `robots.txt`, out of the
+  sitemap, feeds and search, and linked from nowhere (see
+  [site/CLAUDE.md](../site/CLAUDE.md#advanced-study-guide-pages)); the
+  lessons2 app shows them behind a hidden unlock. Its flags are applied
+  exactly as for a public series; a flag without `reviewed` is a warning.
+
+`yarn build-data` writes both tiers side by side, each guide in its
+**public edition** (`publicView()`: a block with `sensitivity` is replaced
+by its `publishable` text and `publishableTitle`, dropped when its action
+is `omit`, printed as said when `keep`), so no `sensitivity` is ever
+published (`exportStudy(…, tier)` in `tools/src/study-export.ts`). Nothing
+in the published JSON names the tier: the index that lists a series is its
+tier, and the two indexes share one schema.
+
+- `study/index.json` and `study/index-advanced.json`
+  (`schema/v1/study-index.schema.json`): `{ schemaVersion, series: [{ id,
+  catalogSeriesId, teacher, title, chapters: [{ chapter, path, status,
+  stale?, lectures: [{ id, start, end, continuesIn? }] }] }] }`, the
+  chapters in order, `path` relative to `/data/v1/`. A lecture's
+  `start`/`end` are its part of the chapter in seconds (`chapterWordRange`,
+  timed with the words the site plays; without an alignment, the span of the
+  guide's own audio). `continuesIn` is the chapter the class reads on into,
+  from its alignment. No timestamp, so an unchanged build is byte-identical.
+  Both always exist, even empty.
+- `study/<series>/chapter_NN.json` (`schema/v1/study.schema.json`), either
+  tier: `schemaVersion`, `series`, `chapter`, `title`, `status`, `stale?`,
+  `provenance: { method }`, `overview`, `overviewAudio?` (where the class
+  sums the chapter up, `{ lecture, start, end }[]`) and `sections` →
+  `passages` (`lines`, `phrases?`, `blocks`, `skip?`). Each phrase gains
+  `lines`: the line IDs whose text it overlaps, by character offsets into
+  the passage's lines joined by spaces; `en` is present only where the
+  teacher translates the phrase, and then its `audio` becomes `lecture`,
+  `start` and `end` on the phrase. Block `audio` is `{ lecture, start, end
+  }`; `outOfPlace` and phrase `notes` are kept. Word ranges,
+  `lectures`/`transcriptionId`, provenance details, `terms`,
+  `reviewQuestions`, `omitted`, `notes` and every trace of a `sensitivity`
+  flag are dropped. Fields are copied from a whitelist, so a new
+  writer-side field does not leak.
 
 Only files with no error are written; a stale one is marked `"stale": true`.
 The build validates the files against the v1 schemas, and the Dart package
-has models for them (`StudyIndex`, `StudyGuide`), which lessons2 reads both
-editions with. The Dart snapshot package does not bundle them: the app
-fetches them.
+has models for them (`StudyIndex`, `StudyGuide`; `DataUrls.studyIndex` and
+`DataUrls.studyAdvancedIndex`). The Dart snapshot package does not bundle
+them: the app fetches them.
 
-### The study-beta export
-
-`yarn build-data` also writes `dist/study-beta/v1/study/`
-(`exportStudy(…, 'beta')`), which the site publishes at
-`/data/study-beta/v1/study/` with `X-Robots-Tag: noindex`. It is the same
-shape as `v1/study/` (the same schemas, validated by the build), with every
-series, permitted or not, each guide **as written**: blocks keep their
-`sensitivity` (optional in the v1 schema, and only ever present here). It is
-for the lessons2 closed beta only: not part of `v1`, not in
-`dist/v1/index.json` and never in the snapshot package.
-
-It is deliberately not disallowed in a `robots.txt`: a crawler that obeys a
-Disallow never fetches the files, so it never sees their `noindex`, and a
-disallowed URL linked from elsewhere can still be indexed by its URL alone.
+The unlisted study-beta export (`dist/study-beta/`, every series as written
+with its flags, at `/data/study-beta/v1/study/`) was removed in November
+2026; the build deletes a stale copy.
 
 Tests: `tools/src/study-export.test.ts` (phrase→line mapping, the index,
-trimming, both editions, stale and erroring files).
+trimming, both tiers, a series in neither or both, the unreviewed-flag
+warning, stale and erroring files).
 
 ### State (November 2026)
 
-Two series. `markel-advanced` (catalog series 37) has chapters 1–19, each
-written from the classes, reviewed against the transcripts and then
-migrated to class-only phrase translations (each `en` anchored with
-`audio`; phrases he only reads are Hebrew-only), then rewritten as guide
-prose (his spoken lines out of quotation marks) and sensitivity-reviewed by
-a person: its 52 flags are all `reviewed`. `walters-original`
-(catalog series 0) has every chapter the series teaches (1, 2 and 10–32),
-each written from the classes and then reviewed against the transcripts
-by a second agent, then rewritten as guide prose the same way; it is
-public (Rabbi Walters gave permission), so its 72 sensitivity flags (17
-leaning `judgment`, 3 `raw`, none yet `reviewed` since the rewrite) decide
-what `/data/v1/study/` prints. Nobody has yet listened to
-the audio against the blocks, and tapes with only Sofer's word times may
-start a second or two off.
+Four series. `markel-advanced` (catalog series 37, 54 chapters) is
+`advanced`: published unlisted in its public edition; 193 of its 221
+flags are `reviewed`, and the other 28 are published with their current
+action (the build warns about each). The three Walters series are
+`public` (Rabbi Walters gave permission): `walters-original` (catalog
+series 0, 25 chapters), `walters-2020` (10) and `walters-5784` (22), with
+82, 36 and 65 flags, few of them `reviewed`, which decide what
+`/data/v1/study/` prints. The earlier chapters were written from the
+classes, reviewed against the transcripts by a second agent, migrated to
+class-only phrase translations and rewritten as guide prose. Nobody has
+yet listened to the audio against the blocks, and tapes with only Sofer's
+word times may start a second or two off.
 A new series needs a directory with `series.json` and `NOTES.md`.

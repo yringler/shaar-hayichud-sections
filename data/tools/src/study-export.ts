@@ -1,15 +1,17 @@
 /**
- * The study guides' exports, both in the v1 shape (schema/v1/study.schema.json
- * and study-index.schema.json):
+ * The study guides' exports, in the v1 shape (schema/v1/study.schema.json and
+ * study-index.schema.json), each guide in its public edition (publicView:
+ * sensitive blocks replaced by their publishable text or left out, so no
+ * `sensitivity` is ever exported). Two tiers, by series.json, written side by
+ * side to dist/v1/study/ and told apart only by the index that lists them:
  *
- * - public (dist/v1/study/): the series whose series.json has `public` (the
- *   teacher's permission), each guide in its public edition (publicView:
- *   sensitive blocks replaced by their publishable text or left out, so no
- *   `sensitivity` remains). Published at /data/v1/study/.
- * - beta (dist/study-beta/v1/study/): every series, as written (`sensitivity`
- *   kept), for the lessons2 closed beta. Published unlisted (noindex) at
- *   /data/study-beta/v1/study/, outside dist/v1, so it never reaches the Dart
- *   snapshot package.
+ * - public (`public`: the teacher's permission): study/index.json, rendered
+ *   on the site under /study/.
+ * - advanced (`advanced`: published unlisted): study/index-advanced.json, the
+ *   same schema, rendered on the site under /advanced/ (noindex, linked from
+ *   nowhere).
+ *
+ * A series with neither is not exported.
  *
  *   study/index.json               which series has a guide for which chapter,
  *                                  and each class's part of the chapter in seconds
@@ -36,8 +38,9 @@ import {
   type StudyIssue,
   type StudyPassage,
   type StudyPhrase,
-  type StudySensitivity,
+  studyTier,
   type StudySeriesFile,
+  type StudyTier,
 } from './study.js';
 import type { StoredAlignment } from './transcripts.js';
 
@@ -58,7 +61,7 @@ export interface ExportAudio {
   end?: number;
 }
 
-export type ExportBlock = Omit<StudyBlock, 'audio'> & { audio: ExportAudio[] };
+export type ExportBlock = Omit<StudyBlock, 'audio' | 'sensitivity'> & { audio: ExportAudio[] };
 /**
  * A phrase as the app reads it: `en` only where the teacher translates it,
  * and then (from the phrase's `audio`) the lecture and seconds where he does.
@@ -176,17 +179,9 @@ const trimBlock = (b: StudyBlock): ExportBlock => ({
   ...(b.join ? { join: true as const } : {}),
   audio: b.audio.map(trimAudio),
   ...(b.outOfPlace !== undefined ? { outOfPlace: b.outOfPlace } : {}),
-  // A 'keep' flag has nothing for the app to swap (the block prints as said); it stays in data/study/ as a review record.
-  ...(b.sensitivity !== undefined && b.sensitivity.action !== 'keep' ? { sensitivity: trimSensitivity(b.sensitivity) } : {}),
 });
 
-/** The flag as the beta app reads it: the review stamp and the writer's lean are editorial and stay in data/study/. */
-function trimSensitivity(s: StudySensitivity): StudySensitivity {
-  const { reviewed: _reviewed, recommend: _recommend, judgmentNote: _judgmentNote, ...rest } = structuredClone(s);
-  return rest;
-}
-
-/** One guide as the app reads it. `lines` is the chapter's lines in order. */
+/** One guide as the app reads it: `file` already in its public edition (publicView). `lines` is the chapter's lines in order. */
 export function exportChapter(file: StudyChapterFile, lines: readonly Line[], stale: boolean): ExportChapter {
   const byId = new Map(lines.map((l) => [l.id, l]));
   return {
@@ -240,21 +235,24 @@ export interface StudyIndex {
 
 export interface StudyExport {
   index: StudyIndex;
-  /** Path relative to the edition's root (`study/<series>/<chapter>.json`) -> its JSON (schema/v1/study.schema.json). */
+  /** Path relative to dist/v1/ (`study/<series>/<chapter>.json`) -> its JSON (schema/v1/study.schema.json). */
   files: Map<string, ExportChapter>;
-  /** Study files of the edition's series left out because they have errors (relative to data/). */
+  /** Study files of the tier's series left out because they have errors (relative to data/). */
   skipped: string[];
 }
 
-/** public: the series allowed publication, in their public edition. beta: every series, as written. */
-export type StudyEdition = 'public' | 'beta';
+/** Where each tier's index is written, relative to dist/v1/. */
+export const STUDY_INDEX_PATHS: Record<StudyTier, string> = {
+  public: 'study/index.json',
+  advanced: 'study/index-advanced.json',
+};
 
 /**
- * One edition of the study guides from data/study/. `issues` are
- * checkStudy's for the same directory: a file with an error (or whose
- * series.json has one) is left out; a stale one is marked.
+ * One tier of the study guides from data/study/, in the public edition.
+ * `issues` are checkStudy's for the same directory: a file with an error (or
+ * whose series.json has one) is left out; a stale one is marked.
  */
-export function exportStudy(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], edition: StudyEdition, schemaDir?: string): StudyExport {
+export function exportStudy(dataDir: string, ctx: StudyContext, issues: readonly StudyIssue[], tier: StudyTier, schemaDir?: string): StudyExport {
   const index: StudyIndex = { schemaVersion: STUDY_SCHEMA_VERSION, series: [] };
   const files = new Map<string, ExportChapter>();
   const skipped: string[] = [];
@@ -263,7 +261,8 @@ export function exportStudy(dataDir: string, ctx: StudyContext, issues: readonly
   for (const i of issues) levels.set(i.file, (levels.get(i.file) ?? new Set()).add(i.level));
   for (const s of loadStudy(dataDir, schemaDir).series) {
     const series = s.data as StudySeriesFile | null;
-    if (series && edition === 'public' && !series.public) continue;
+    // A series.json the schema rejects has no known tier; its guides are reported once, with the public tier.
+    if (series ? studyTier(series) !== tier : tier !== 'public') continue;
     const seriesOk = series !== null && !levels.get(s.file)?.has('error');
     const chapters: StudyIndex['series'][number]['chapters'] = [];
     for (const ch of [...s.chapters].sort((a, b) => a.key.localeCompare(b.key))) {
@@ -274,7 +273,7 @@ export function exportStudy(dataDir: string, ctx: StudyContext, issues: readonly
       }
       const stale = levels.get(ch.file)?.has('stale') ?? false;
       const rel = `study/${s.id}/${ch.key}.json`;
-      files.set(rel, exportChapter(edition === 'public' ? publicView(ch.data) : ch.data, lines, stale));
+      files.set(rel, exportChapter(publicView(ch.data), lines, stale));
       chapters.push({
         chapter: ch.key,
         path: rel,

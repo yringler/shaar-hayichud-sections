@@ -7,7 +7,7 @@
   "items": { "$ref": "#/$defs/textNode" },
   "$defs": {
     "textNode": {
-      "description": "A section. Sections have no persisted id; alignments and transcripts point at lines.",
+      "description": "A section. Sections have no persisted id; alignments and study guides point at lines.",
       "type": "object",
       "additionalProperties": false,
       "required": ["children"],
@@ -24,7 +24,7 @@
       }
     },
     "line": {
-      "description": "One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and transcripts can reference it on its own.",
+      "description": "One line of Hebrew text with a stable id. The id is unique across every chapter, never reused, and survives edits to the line's text, so alignments and study guides can reference it on its own.",
       "type": "object",
       "additionalProperties": false,
       "required": ["id", "text"],

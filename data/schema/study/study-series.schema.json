@@ -6,6 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": ["schemaVersion", "id", "catalogSeriesId", "teacher", "title", "translation"],
+  "not": { "description": "A series is public or advanced, never both.", "properties": { "public": true, "advanced": true }, "required": ["public", "advanced"] },
   "properties": {
     "schemaVersion": { "const": 1 },
     "id": { "description": "The directory name.", "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
@@ -25,13 +26,23 @@
       }
     },
     "public": {
-      "description": "Present when the teacher has allowed the series' study guides to be published. The data build then writes their public edition (sensitive blocks replaced by their `publishable` text, or left out) to dist/v1/study/. Without it a series reaches only the unlisted beta export.",
+      "description": "Present when the teacher has allowed the series' study guides to be published. The data build then writes their public edition (sensitive blocks replaced by their `publishable` text, or left out) to dist/v1/study/, listed in study/index.json, and the site renders them under /study/. Not with `advanced`. Without either, the series is not published at all.",
       "type": "object",
       "additionalProperties": false,
       "required": ["permission", "date"],
       "properties": {
         "permission": { "description": "Who gave permission, and for what, in a sentence.", "type": "string", "minLength": 1 },
         "date": { "description": "When it was given.", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+      }
+    },
+    "advanced": {
+      "description": "Present when the series' study guides are published unlisted: in their public edition (exactly as for `public`) to dist/v1/study/, listed only in study/index-advanced.json, and rendered on the site under /advanced/, linked from nowhere and kept out of search engines. Not with `public`.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["note", "date"],
+      "properties": {
+        "note": { "description": "Who allowed it, and for what, in a sentence.", "type": "string", "minLength": 1 },
+        "date": { "description": "When it was allowed.", "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
       }
     },
     "chapterLectures": {
