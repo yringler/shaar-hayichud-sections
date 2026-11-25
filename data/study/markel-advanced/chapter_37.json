@@ -450,7 +450,7 @@
             {
               "kind": "mashal",
               "title": "Shlomo Carlebach and Bob Dylan",
-              "text": "Some very famous singers really don't have a good voice, or the training either. Two examples: Shlomo Carlebach, *alav hashalom*, and, *l'havdil*, Bob Dylan. In the Jewish song market Carlebach is probably the biggest superstar, more than Mordechai Ben David or anybody like that, though some of them have a much better voice; his was not all that great, and sometimes a little off-key. But he could really get the feeling into the song, so people loved to hear it. The same with Bob Dylan: no great voice, no real training, but he conveys a real feeling in the song.",
+              "text": "Some very famous singers have neither a good voice nor the training: Shlomo Carlebach, *alav hashalom*, and, *l'havdil*, Bob Dylan. Carlebach is probably the biggest superstar of the Jewish song market, more than Mordechai Ben David, though some have a much better voice; his was not all that great, sometimes a little off-key. But he could really put the feeling into a song, so people loved to hear it. Bob Dylan too: no great voice or training, but he conveys a real feeling.",
               "audio": [
                 {
                   "lecture": "206 Tape40-Side1 Ch37 Part 1.mp3",
@@ -1435,7 +1435,7 @@
             },
             {
               "kind": "avodah",
-              "text": "Sometimes it is good to whistle a happy tune: where it is not a real lion, like walking in the dark, a phobia. Where there is a real lion, even walking at night in a dangerous part of town, listen to your phobia instead and do something about it. That too is a *tikkun* (repair): knowing when to whistle a happy tune and when to listen to the phobia. Most of the time, listen to the phobia first and see if there is a real thing behind it.",
+              "text": "Sometimes it is good to whistle a happy tune: where it is not a real lion, like walking in the dark, a phobia. Where there is a real lion, at night in a dangerous part of town, listen to your phobia and act. That too is *tikkun* (repair): knowing when to whistle and when to listen to the phobia. Mostly, listen first and see if something real is behind it.",
               "audio": [
                 {
                   "lecture": "207 Tape40-Side2- Ch 37.mp3",
@@ -1450,8 +1450,7 @@
                 ],
                 "reason": "Advice on handling fears and phobias (listen to the phobia first) that a reader might act on.",
                 "action": "replace",
-                "publishable": "Sometimes it is good to whistle a happy tune: where it is not a real lion. Where there is a real lion, do something about it. That too is a *tikkun* (repair): knowing when to whistle a happy tune and when to listen to the fear.",
-                "reviewed": "2026-11-23"
+                "publishable": "Sometimes it is good to whistle a happy tune: where it is not a real lion. Where there is a real lion, act. That too is *tikkun* (repair): knowing when to whistle and when to listen to the fear."
               }
             },
             {

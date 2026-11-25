@@ -682,7 +682,7 @@
             {
               "kind": "mashal",
               "title": "The dog and the carpet",
-              "text": "At six you can already explain to him that he shouldn't piss on the carpet. A dog you can't explain it to: he doesn't do it because you'll hit him. That is training; you never explained that the carpet will get ruined. You can teach a dog not to attack certain people because they are our friends, but that is not an explanation: his *middos* themselves are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without understanding why. A six-year-old can already be given certain reasons, but it is not a real *sechel*, only a *sechel* for the *middos* themselves.",
+              "text": "At six you can already explain to him not to piss on the carpet. A dog you can't: he doesn't do it because you'll hit him. That is training, not explaining that the carpet gets ruined. You can teach a dog not to attack certain people, our friends, but that is no explanation: his *middos* are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without knowing why. A six-year-old can be given reasons, but only a *sechel* for the *middos*.",
               "audio": [
                 {
                   "lecture": "201 Tape37-Side1 CH34.mp3",
@@ -697,8 +697,7 @@
                 ],
                 "reason": "Uses a coarse word for a child or a dog relieving himself.",
                 "action": "replace",
-                "publishable": "At six you can already explain to him that he shouldn't wet the carpet. A dog you can't explain it to: he doesn't do it because you'll hit him. That is training; you never explained that the carpet will get ruined. You can teach a dog not to attack certain people because they are our friends, but that is not an explanation: his *middos* themselves are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without understanding why. A six-year-old can already be given certain reasons, but it is not a real *sechel*, only a *sechel* for the *middos* themselves.",
-                "reviewed": "2026-11-23"
+                "publishable": "At six you can already explain to him not to wet the carpet. A dog you can't: he doesn't do it because you'll hit him. That is training, not explaining that the carpet gets ruined. You can teach a dog not to attack certain people, our friends, but that is no explanation: his *middos* are handled with love and fear. He sees you love this man, so he loves him; he knows you'll get mad, so he doesn't do it, without knowing why. A six-year-old can be given reasons, but only a *sechel* for the *middos*."
               }
             },
             {

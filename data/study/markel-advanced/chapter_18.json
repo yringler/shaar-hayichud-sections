@@ -385,7 +385,7 @@
             {
               "kind": "mashal",
               "title": "The wife at the building site",
-              "text": "A man building a house takes his wife there, and she's very happy. The other lady says: \"What are you happy about? I thought you hate dirt. Look, a bunch of dirty guys, lowlifes, trash-type of people, building your house with cigarettes in their mouth. You hate cigarettes. They're cursing, banging with hammers, dust all over the place: *mamash* the opposite of what you want in your house. This is what your husband is giving you, and instead of shouting at him you're so happy?\" She said: \"Yeah, because that's how I'm going to get the final thing.\" So too the *Aibershter* made all kinds of things, *mamash* lowlifes.",
+              "text": "A man takes his wife to the house he is building, and she's very happy. Another lady asks why: \"I thought you hate dirt. Look, a bunch of dirty guys, lowlifes, trash-type people, building your house with cigarettes in their mouth, and you hate cigarettes. They're cursing, banging hammers, dust all over: *mamash* the opposite of what you want. This is what your husband gives you, and instead of shouting at him you're happy?\" \"Yes, because that's how I'll get the final thing.\" So too the *Aibershter* made all kinds of things, *mamash* lowlifes.",
               "audio": [
                 {
                   "lecture": "027 Tape024-Side1-Ch17.mp3",
@@ -400,9 +400,8 @@
                 ],
                 "reason": "Builders on a site are called dirty guys, lowlifes and trash-type people.",
                 "action": "replace",
-                "publishable": "A man building a house takes his wife there, and she's very happy. The other lady says: \"What are you happy about? I thought you hate dirt. Look, rough workmen building your house with cigarettes in their mouth. You hate cigarettes. They're cursing, banging with hammers, dust all over the place: *mamash* the opposite of what you want in your house. This is what your husband is giving you, and instead of shouting at him you're so happy?\" She said: \"Yeah, because that's how I'm going to get the final thing.\" So too the *Aibershter* made all kinds of things, even ones that look rough.",
-                "publishableTitle": "The wife at the building site",
-                "reviewed": "2026-11-23"
+                "publishable": "A man takes his wife to the house he is building, and she's very happy. Another lady asks why: \"I thought you hate dirt. Look, rough workmen building your house with cigarettes in their mouth, and you hate cigarettes. They're cursing, banging hammers, dust all over: *mamash* the opposite of what you want. This is what your husband gives you, and instead of shouting at him you're happy?\" \"Yes, because that's how I'll get the final thing.\" So too the *Aibershter* made all kinds of things, even ones that look rough.",
+                "publishableTitle": "The wife at the building site"
               }
             },
             {

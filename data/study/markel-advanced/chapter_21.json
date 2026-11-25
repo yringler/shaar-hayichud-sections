@@ -1212,7 +1212,7 @@
             {
               "kind": "mashal",
               "title": "The house he really wants",
-              "text": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Even some stupid person, anybody, really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite.",
+              "text": "Before he thinks, what a man wants in a house is infinite luxury. Even some stupid person, anybody, really wants the palace of Versailles or bigger: ballrooms, bowling alleys, a helicopter pad. Only when the *sechel* (intellect) asks how he will get it does it become limited; in the will itself it is infinite.",
               "audio": [
                 {
                   "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
@@ -1227,8 +1227,7 @@
                 ],
                 "reason": "Calls an ordinary person \"stupid\" in passing.",
                 "action": "replace",
-                "publishable": "What a man wants in a house, before he starts thinking about it, is an infinite house, with no end to the luxury. Anybody really wants the palace of Versailles or bigger, with ballrooms, bowling alleys and a helicopter pad. Only when the *sechel* (intellect) asks how he will get such a house does it become limited. In the will itself it is all infinite.",
-                "reviewed": "2026-11-23"
+                "publishable": "Before he thinks, what a man wants in a house is infinite luxury. Anybody really wants the palace of Versailles or bigger: ballrooms, bowling alleys, a helicopter pad. Only when the *sechel* (intellect) asks how he will get it does it become limited; in the will itself it is infinite."
               }
             }
           ]
@@ -1703,7 +1702,7 @@
             },
             {
               "kind": "aside",
-              "text": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform. He is even *chayav misa* (liable to death), \"you're supposed to kill a guy like that\"; only nowadays they are *tinok shenishba* (captive children, who never learned). The tape ends mid-sentence.",
+              "text": "It sounds ridiculous, but it is the *emes* (truth): not just *Chassidus* but basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever denies it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform. He is even *chayav misa* (liable to death), but nowadays they are *tinok shenishba* (captive children).",
               "audio": [
                 {
                   "lecture": "032 Edited Tape026-Side2-Ch21.mp3",
@@ -1718,8 +1717,7 @@
                 ],
                 "reason": "Says a heretic is *chayav misa*, \"supposed to be killed\", but for the status of a *tinok shenishba*.",
                 "action": "replace",
-                "publishable": "It sounds totally ridiculous, but it is the *emes* (truth). Not just *Chassidus*: basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever doesn't believe it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform. The tape ends mid-sentence.",
-                "reviewed": "2026-11-23"
+                "publishable": "It sounds ridiculous, but it is the *emes* (truth): not just *Chassidus* but basic *halacha*, even before it, one of the thirteen *ikkarim* (principles of faith). Whoever denies it is a heretic, not a *frum Yid* (observant Jew); not Orthodox, Reform."
               }
             }
           ]
