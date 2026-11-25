@@ -97,7 +97,7 @@ def said(audio: dict) -> str:
     """The transcript words an audio entry cites (word indexes survive re-timing)."""
     lec = audio["lecture"]
     if lec not in _words:
-        p = DATA / "transcripts" / (urllib.parse.quote(lec) + ".json")
+        p = DATA / "transcripts" / (urllib.parse.quote(lec, safe="") + ".json")
         _words[lec] = [w["word"] for w in json.loads(p.read_text())["result"]["timestamps"]]
     lo, hi = audio["words"]
     return " ".join(_words[lec][lo : hi + 1])
