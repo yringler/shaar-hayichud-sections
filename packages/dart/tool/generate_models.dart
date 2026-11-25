@@ -17,7 +17,6 @@ const schemaRoots = {
   'chapter.schema.json': 'Chapter',
   'index.schema.json': 'IndexListing',
   'alignment.schema.json': 'Alignment',
-  'transcript.schema.json': 'Transcript',
   'chapter-alignments.schema.json': 'ChapterAlignments',
   'outline.schema.json': 'Outline',
   'study.schema.json': 'StudyGuide',

@@ -23,11 +23,8 @@ ChapterAlignments parseChapterAlignments(String source) =>
 /// Parses a topic outline file (`outlines/<lecture>.json`).
 Outline parseOutline(String source) => Outline.fromJson(_decode(source));
 
-/// Parses a transcript file (`transcripts/<lecture>.json`).
-Transcript parseTranscript(String source) =>
-    Transcript.fromJson(_decode(source));
-
-/// Parses the study guide listing (`study/index.json`).
+/// Parses a study guide listing: `study/index.json` (the public series) or
+/// `study/index-advanced.json` (the series published unlisted), one schema.
 StudyIndex parseStudyIndex(String source) =>
     StudyIndex.fromJson(_decode(source));
 

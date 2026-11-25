@@ -297,19 +297,6 @@ void main() {
     });
   });
 
-  test('Transcript items key segments by index', () {
-    final t = Transcript(
-      lectureId: 'x',
-      language: 'he',
-      segments: const [
-        TranscriptSegment(startSeconds: 0, endSeconds: 40, text: 'a'),
-        TranscriptSegment(startSeconds: 40, endSeconds: 90, text: 'b'),
-      ],
-    );
-    expect([for (final i in t.items) i.key], ['0', '1']);
-    expect(spanAt(spans(t.items), 45)?.keys, ['1']);
-  });
-
   test('published chapter alignments give sorted, non-overlapping spans of '
       'real lines', () {
     final dir = Directory('${requireDist().path}/alignments/chapters');

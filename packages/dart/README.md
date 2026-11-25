@@ -2,14 +2,15 @@
 
 Pure Dart models and a small loader for the data this repo publishes at
 `https://www.shaarhayichudresources.com/data/v1/`: the audio class catalog,
-the chapter text (`TextNode` trees), and the class alignments and
-transcripts. No Flutter dependency, so it works in apps, CLIs and servers.
+the chapter text (`TextNode` trees), the class alignments and topic
+outlines, and the study guides. No Flutter dependency, so it works in apps,
+CLIs and servers.
 
 ## Install
 
 ```yaml
 dependencies:
-  shaar_hayichud_data: ^1.5.0
+  shaar_hayichud_data: ^2.0.0
 ```
 
 ## Use
@@ -35,12 +36,21 @@ for (final line in chapter.allLines) {
 `TextNode`) are sealed, so `switch` on them is exhaustive.
 
 Chapter text is made of `TextLine`s, each with a stable `id` that is unique
-across all chapters and survives edits to the line. Alignments and transcripts
-point at lines by that id alone; sections have no id.
+across all chapters and survives edits to the line. Alignments and study
+guides point at lines by that id alone; sections have no id.
 
 Parsing throws `FormatException` when the JSON does not match the v1 schema
 (including a different `schemaVersion`). Unknown keys are ignored, so a client
-keeps working when fields are added within v1.
+keeps working when fields are added within v1, and 2.0.0 still reads files
+published with the fields it dropped.
+
+## Study guides
+
+`urls.studyIndex` (`study/index.json`) lists the series whose teacher allowed
+publication; `urls.studyAdvancedIndex` (`study/index-advanced.json`) lists the
+series published unlisted, in the same shape. Parse either with
+`parseStudyIndex`, and each guide (`urls.resolve(chapter.path)`) with
+`parseStudyGuide`. Every guide is in its public edition.
 
 **IDs are persistent.** Catalog section and lecture `id`s are what apps store
 for favorites, recents and downloads, and line ids are what alignments point
