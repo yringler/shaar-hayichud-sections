@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 02/Shaar HaYichud 008.m4a",
+  "chapter": "chapter_02",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2002%2FShaar%20HaYichud%20008.m4a.json",
+  "transcriptionId": "52e30750-87a3-4083-a80a-f64da964ee8f",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "sofer"
+  },
+  "stats": {
+    "transcriptWords": 3770,
+    "hebrewWords": 146,
+    "matchedWords": 61,
+    "chapterLines": 37,
+    "alignedLines": 3,
+    "firstLineIndex": 0,
+    "lastLineIndex": 2,
+    "meanConfidence": 0.661
+  },
+  "segments": [
+    {"startSeconds":3.2,"endSeconds":147.66,"chapter":"chapter_02","lineId":"dqtw2mat","confidence":1,"matchedWords":30,"lineWords":31,"firstWord":7,"lastWord":440},
+    {"startSeconds":352.84,"endSeconds":384.36,"chapter":"chapter_02","lineId":"fx4uzm2l","confidence":0.609,"matchedWords":17,"lineWords":28,"firstWord":987,"lastWord":1071},
+    {"startSeconds":462.26,"endSeconds":474.04,"chapter":"chapter_02","lineId":"lg4oylvk","confidence":0.375,"matchedWords":9,"lineWords":24,"firstWord":1330,"lastWord":1360}
+  ]
+}

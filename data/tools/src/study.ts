@@ -381,8 +381,12 @@ export const GAP_WORDS = 250;
 /** A block longer than this (words) is no longer one thought to jump to. */
 export const BLOCK_MAX_WORDS = 260;
 /** A block condenses the class: past this share of the words it cites (and on at least BLOCK_SHARE_MIN_CITED of them), it reads as a transcript. */
-export const BLOCK_MAX_SHARE = 0.6;
+export const BLOCK_MAX_SHARE = 0.5;
 export const BLOCK_SHARE_MIN_CITED = 120;
+/** A chapter's blocks together, past this share of the class words they cite, have drifted from "about a third". */
+export const CHAPTER_MAX_SHARE = 0.45;
+/** The chapter-level share is only judged on at least this many cited words. */
+export const CHAPTER_SHARE_MIN_CITED = 1000;
 
 export interface ChapterStats {
   passages: number;
@@ -621,7 +625,7 @@ export function checkStudyChapter(
       const cited = main.words[1] - main.words[0] + 1;
       const prose = wordCount(block.text) + (block.question ? wordCount(block.question) : 0);
       if (cited >= BLOCK_SHARE_MIN_CITED && prose > BLOCK_MAX_SHARE * cited) {
-        add('warning', `${at} is ${prose} words for ${cited} words of class (${Math.round((100 * prose) / cited)}%); condense it to about a third to a half of what he said`);
+        add('warning', `${at} is ${prose} words for ${cited} words of class (${Math.round((100 * prose) / cited)}%); condense it to about a third of what he said (STYLE.md, Size)`);
       }
     }
     const dup = seenText.get(block.text);
@@ -705,6 +709,10 @@ export function checkStudyChapter(
       if (n < (opts.gapWords ?? GAP_WORDS)) continue;
       add('warning', `class "${id}" words [${g[0]}, ${g[1]}] (${clock(t.words[g[0]]!.start)}–${clock(t.words[g[1]]!.end)}, ${n} words) are neither cited by a block nor listed in "omitted"`);
     }
+  }
+  const classCited = stats.coverage.reduce((n, c) => n + c.cited, 0);
+  if (classCited >= CHAPTER_SHARE_MIN_CITED && stats.words > CHAPTER_MAX_SHARE * classCited) {
+    add('warning', `the blocks total ${stats.words} words for ${classCited} words of class cited (${Math.round((100 * stats.words) / classCited)}%); a chapter normally comes to 30-40% (STYLE.md, Size)`);
   }
 
   // --- terms, questions, notes, prose ---------------------------------------

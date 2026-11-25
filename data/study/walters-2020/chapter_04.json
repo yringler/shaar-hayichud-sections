@@ -1,0 +1,3511 @@
+{
+  "schemaVersion": 1,
+  "series": "walters-2020",
+  "chapter": "chapter_04",
+  "title": "Contemplating G-d's unity: the general way, the particular way, and why each needs the other",
+  "status": "draft",
+  "provenance": {
+    "method": "generated",
+    "from": "study-chapter skill, version 6",
+    "date": "2026-11-24"
+  },
+  "lectures": [
+    {
+      "id": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "transcriptionId": "1839eff2-81f6-4631-8524-8997ceb262c1"
+    },
+    {
+      "id": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+      "transcriptionId": "3dcb9c73-1d0f-478d-aff0-f44ea3dde7a6"
+    }
+  ],
+  "overview": "Chapter 4 asks how a person should contemplate the unity of G-d: by the general way, taking the whole at once, or by the particular way, taking one detail at a time. Each has an advantage. The general way reaches the depth of the essence, which transcends everything. The particular way brings that essence close, so that a person can feel it and point to it in his life. Each alone goes wrong. The general way by itself can leave someone sure that he is close to G-d when he is really far off, and the particular way can stop at a detail that is not G-dliness in itself. So the method is to go through the details, level by level, from the lower worlds up to *Atzilus*, and then gather them into one general *yichud*. The upper unity and the lower unity are treated the same way. The last part of the chapter turns to intention: the details serve the general point, and the words of davening, rightly understood, deepen the grasp of it. A newcomer should first deepen in the general way, and a person who prays should keep his intention on G-d Himself, not on His attributes.",
+  "terms": [
+    {
+      "term": "hisbonenus",
+      "he": "התבוננות",
+      "gloss": "contemplation: a close, step-by-step study that makes an idea one's own",
+      "line": "6cakse44"
+    },
+    {
+      "term": "derech prat",
+      "he": "דרך פרט",
+      "gloss": "the particular way: contemplating through one detail or one example",
+      "line": "rbofzdcy"
+    },
+    {
+      "term": "memalei kol almin",
+      "he": "ממלא כל עלמין",
+      "gloss": "(the light) that fills all worlds",
+      "line": "cbwgwjex"
+    },
+    {
+      "term": "tzimtzum",
+      "he": "צמצום",
+      "gloss": "contraction: the essence is contracted, limited and focused to become the *sefiros*",
+      "line": "7bttavsf"
+    },
+    {
+      "term": "Atzmus",
+      "he": "עצמות",
+      "gloss": "G-d's essence",
+      "line": "7bttavsf"
+    },
+    {
+      "term": "yichud prati",
+      "he": "יחוד פרטי",
+      "gloss": "a particular unification: a yichud made on one particular thing",
+      "line": "aryg5wsm"
+    },
+    {
+      "term": "yichud klali",
+      "he": "יחוד כללי",
+      "gloss": "the general unification: the details gathered into one",
+      "line": "7ydzweo3"
+    },
+    {
+      "term": "bittul",
+      "he": "ביטול",
+      "gloss": "self-nullification: the yesh nullified before G-d",
+      "line": "bcsqcn75"
+    },
+    {
+      "term": "gedula",
+      "he": "גדולה",
+      "gloss": "greatness: the attribute of chesed, named in the verse \"To You, Havaya, is the greatness\"",
+      "line": "h7aoass4"
+    },
+    {
+      "term": "yesod",
+      "he": "יסוד",
+      "gloss": "the sefira of foundation, through which the flow passes to Malchus",
+      "line": "dipad6g6"
+    },
+    {
+      "term": "shefa",
+      "he": "שפע",
+      "gloss": "the spiritual flow that comes through the *galgalim* and the constellations, from its root",
+      "line": "dy5e5akm"
+    },
+    {
+      "term": "emuna",
+      "he": "אמונה",
+      "gloss": "faith; here, the true understanding and faith in G-d's essence, which transcends everything",
+      "line": "dn6asu54"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Two ways in: the general and the particular",
+      "summary": "The class asks whether to contemplate by the general way or by particular examples, and sets the two side by side.",
+      "passages": [
+        {
+          "lines": [
+            "6cakse44"
+          ],
+          "phrases": [
+            {
+              "he": "(ד) ומעתה",
+              "en": "now",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [234, 234],
+                "start": 67.38,
+                "end": 67.82
+              }
+            },
+            {
+              "he": "יש לבאר באיכות ענין ההתבוננות,",
+              "en": "we have to explain what is the proper method of doing *hisbonenus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [399, 410],
+                "start": 124.72,
+                "end": 128.16
+              }
+            },
+            {
+              "he": "אם דרך כלל",
+              "en": "should one focus on the general themes",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [411, 417],
+                "start": 128.26,
+                "end": 130.34
+              }
+            },
+            {
+              "he": "או דרך פרט דווקא,",
+              "en": "or should one focus on deep specific examples",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [418, 425],
+                "start": 130.7,
+                "end": 134.1
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "recap",
+              "text": "The class opens with a recap. The last chapters taught how to contemplate: go the length and the width to reach depth in *bina* and then *chachma*, and see how *daas* works in that. They worked an example, *memalei kol almin*, the light that fills all worlds, through Reb Hillel's commentary on chapter 3, and through the tract on the nature of *Chassidus*, which is another example of putting together a *yichud*. He goes back over this because he does not want to keep s*ayin*g how to make a *yichud* without first giving the context of what it is for.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [0, 232],
+                  "start": 0,
+                  "end": 66.78
+                }
+              ],
+              "outOfPlace": "The opening of the class, before line 1 is read: a recap of the earlier chapters and why he recaps."
+            },
+            {
+              "kind": "explanation",
+              "text": "Now the question is the method. Having some sense of how the process works, the question is which way to go: by the general themes, or by deep, specific examples. In the tract on *Chassidus* the Rebbe gives one particular example, a *yichud* on *Modeh Ani*, which is the particular way, and it can be made more detailed still. Reb Hillel's explanation of the nine *meshalim* for *memalei kol almin* is general, though more detailed than before, because it lays out all the levels and how they relate. The nine *meshalim* for *memalei kol almin* began as one general idea. Through *iyun* one sees a lower perspective of *etzem* and *hispashtus*, then finds that idea in oneself as *daas*, and then reaches the depth of the higher perspective, *gilui ha'helem*. So there is a sliding scale, from more general to more specific.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [233, 571],
+                  "start": 66.78,
+                  "end": 181.54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "cbwgwjex",
+            "w5vczvps"
+          ],
+          "phrases": [
+            {
+              "he": "כמו על דרך דוגמא",
+              "en": "for example",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [582, 583],
+                "start": 187.08,
+                "end": 187.68
+              }
+            },
+            {
+              "he": "בהשגה אלקית דבחינת ממלא כל עלמין,",
+              "en": "understanding how G-d fills all the worlds, *memalei kol almin*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [594, 600],
+                "start": 190.5,
+                "end": 192.32
+              }
+            },
+            {
+              "he": "דרך כלל בג' עולמות בי''ע,",
+              "en": "that could be explained in a general sense, how G-d fills all three of the worlds",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [604, 624],
+                "start": 193.66,
+                "end": 201.16
+              }
+            },
+            {
+              "he": "הכל שרש ענין א'",
+              "en": "it's all really rooted in one idea",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [638, 644],
+                "start": 205.9,
+                "end": 207.82
+              }
+            },
+            {
+              "he": "הוא בכל המשלים דזיו והתפשטות או אותיות כו',",
+              "en": "all of these different metaphors of light of the sun, or like all these different types of extensions or expressions, or the idea of letters of speech",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [849, 881],
+                "start": 276.86,
+                "end": 288.18
+              }
+            },
+            {
+              "he": "וכללותו רק ענין הגלוי מן ההעלם",
+              "en": "in general, they're all this idea of *gilui ha'helem*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [889, 897],
+                "start": 292.72,
+                "end": 294.26
+              }
+            },
+            {
+              "he": "או כמו ערך הנבדל לבחינת בעל גבול מחודש",
+              "en": "or in general, just to appreciate the relationship between a created, limited, finite being",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [910, 930],
+                "start": 302.82,
+                "end": 313.38
+              }
+            },
+            {
+              "he": "לגבי בלתי בעל גבול",
+              "en": "to an unlimited creator",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [931, 934],
+                "start": 313.38,
+                "end": 315.56
+              }
+            },
+            {
+              "he": "דרך כלל,",
+              "en": "in this general sense",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [997, 1000],
+                "start": 335.28,
+                "end": 336.34
+              }
+            },
+            {
+              "he": "שיש בזה ריבוי אופנים,",
+              "en": "there's many different ways",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1014, 1017],
+                "start": 340.04,
+                "end": 342.22
+              }
+            },
+            {
+              "he": "והכל בכלל,",
+              "en": "but it's all still in the general idea",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1035, 1042],
+                "start": 346.94,
+                "end": 348.78
+              }
+            },
+            {
+              "he": "גם שנמצא בזה ענינים פרטים הרבה",
+              "en": "even though there really are many many details, many ideas within this general theme",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1155, 1168],
+                "start": 382.14,
+                "end": 388.02
+              }
+            },
+            {
+              "he": "(כמו שיתבאר)",
+              "en": "like we're going to explain",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1216, 1220],
+                "start": 399.04,
+                "end": 399.24
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The root of a plant",
+              "text": "In *Torah*, and especially in the discourses, the words for root, principle and source each carry a different relationship, and he takes the root. A plant's root draws its nutrients from the power of growth in the ground, which is common to all plants. That power is narrowed and filtered until it becomes the power that grows this particular plant. The root is the abstract source, more general than the particulars, and in their root they are all the same.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [679, 837],
+                  "start": 217.2,
+                  "end": 269.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Take *memalei kol almin*, G-d filling all three worlds, *Beriya*, *Yetzira* and *Asiya*. It can be explained in a general way: it is all one root, with no real difference in how G-d is in each of the three worlds.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [572, 678],
+                  "start": 181.54,
+                  "end": 216.74
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "All the different metaphors, of the light of the sun, of extensions and expressions, and of the letters of speech, are in general one idea: the revelation of what was hidden.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [845, 897],
+                  "start": 275.1,
+                  "end": 294.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The general idea here is the relation of a created, limited being to an unlimited Creator. The world is a limited creation, an expression of the infinite Creator. There are many ways of putting this and many *meshalim*, but all of it is still the general idea.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [898, 1042],
+                  "start": 294.26,
+                  "end": 348.78
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Reb Hillel's details are still about the general theme. What the class has not yet done is take particular examples: how an apple would be seen at the level of *Asiya*, of *Yetzira*, of *Beriya* and of *Atzilus*, and back down again. There is a lot of that inside this theme, and most of the book is going to be about it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1043, 1220],
+                  "start": 349.18,
+                  "end": 399.24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "rbofzdcy"
+          ],
+          "phrases": [
+            {
+              "he": "או דרך פרט,",
+              "en": "or perhaps *derech prat* we should focus our *hisbonenus* on the specifics",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1292, 1303],
+                "start": 426.98,
+                "end": 431.8
+              }
+            },
+            {
+              "he": "להתבונן בכל עולם ובכל נברא",
+              "en": "or we could spend time studying each world and each creature",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1322, 1334],
+                "start": 437.96,
+                "end": 447.02
+              }
+            },
+            {
+              "he": "ובכל פרטי מדריגות חלוקים בסדרי ההשתלשלות מעילה לעילה בכל אחד בפני עצמו דוקא כו'",
+              "en": "each particular creation within its specific world, and with all of their different levels through the *seder hishtalshelus*, how that particular creature goes from level to level, each one individually",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1336, 1365],
+                "start": 447.02,
+                "end": 462.4
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The other way is the particular one: to contemplate each world, each creature, and each level in the chain of descent, one at a time, from higher level to higher. So the question is whether to study the abstract framework of the chain, or to see how that framework and its concepts apply to particular instances.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1225, 1365],
+                  "start": 403.04,
+                  "end": 462.4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The upper and lower unities, and the metaphors that point to them",
+      "summary": "The same question is put to the upper unity, the metaphors for hiding and revealing are set out, and the lower unity is reached by study.",
+      "passages": [
+        {
+          "lines": [
+            "m2zpt3ak",
+            "7bttavsf",
+            "zdts5g2i"
+          ],
+          "phrases": [
+            {
+              "he": "וכך הוא השאלה בהתבוננות ביחודא עילאה",
+              "en": "and we have a similar question about the proper way of doing *hisbonenus* in the upper unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1372, 1388],
+                "start": 464.74,
+                "end": 469.04
+              }
+            },
+            {
+              "he": "באורות וכלים דאצילות",
+              "en": "when we're speaking about the lights and vessels of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1392, 1401],
+                "start": 471.58,
+                "end": 473.14
+              }
+            },
+            {
+              "he": "בכל פרטי עשר ספירות",
+              "en": "when we're learning about all the ten *sefiros*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1406, 1414],
+                "start": 474.38,
+                "end": 478.06
+              }
+            },
+            {
+              "he": "עד עצמות אור אין סוף",
+              "en": "all the way up to the *Atzmus* of the infinite light",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1420, 1430],
+                "start": 479.58,
+                "end": 481.16
+              }
+            },
+            {
+              "he": "אם להתבונן בכללות ענין אור האצילות",
+              "en": "should we focus on understanding what is the nature of the light of *Atzilus* in its general form",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1440, 1462],
+                "start": 486.38,
+                "end": 494.28
+              }
+            },
+            {
+              "he": "באיכות צמצומו מן העצמות",
+              "en": "what is the quality, the nature of its *tzimtzum* from the *Atzmus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1471, 1482],
+                "start": 497.14,
+                "end": 500.92
+              }
+            },
+            {
+              "he": "ואיך שנבדל הערך לגבי עצמות המאציל",
+              "en": "and what that relationship is like, and to appreciate how the *sefiros* of *Atzilus* are really incomparable compared to the essence of the emanator",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1501, 1530],
+                "start": 507.98,
+                "end": 517.86
+              }
+            },
+            {
+              "he": "ואיך דאיהו וחיוהי חד כו'",
+              "en": "and also how G-d is one with the lights of *Atzilus*, and so he unites with them and his essence is expressed through them",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1558, 1582],
+                "start": 527.38,
+                "end": 535.92
+              }
+            },
+            {
+              "he": "(גם שיש בו ענינים פרטיים הרבה מאד כמו שיתבאר)",
+              "en": "and really there's a lot of particular details about this general topic, like we're going to explain throughout this book",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1616, 1635],
+                "start": 547.02,
+                "end": 552.16
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same question applies to the upper unity: whether to contemplate the lights and vessels of *Atzilus* through all the ten *sefiros*, up to the *Atzmus* of the infinite light. In its general form, what is the light of *Atzilus*, and what is its *tzimtzum* from the Essence? How incomparable are the *sefiros* of *Atzilus* to the essence of the Emanator, who transcends even the ten *sefiros* and contains infinite ones?",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1366, 1552],
+                  "start": 462.4,
+                  "end": 524.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Also: how G-d is one with the lights of *Atzilus*. He unites with them, and His essence is expressed through them, though they are far lower than He is. There are many particular details to this, and the book will go through them level by level along the chain of descent. The aim, perhaps, is to learn the book again and again, so that the *meshalim* are understood. That is the *haskala* of *Chassidus*, it seems.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1553, 1686],
+                  "start": 524.46,
+                  "end": 567.8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "3rfvlpku",
+            "4ps3yns6"
+          ],
+          "phrases": [
+            {
+              "he": "בכמה מיני משלים",
+              "en": "there's many different metaphors for this",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1690, 1695],
+                "start": 568.92,
+                "end": 571
+              }
+            },
+            {
+              "he": "כמו שלהבת הקשורה כו'",
+              "en": "like a coal that's inside of the flame that's inside of a coal, when you blow on it it's revealed",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1703, 1721],
+                "start": 574.12,
+                "end": 579.36
+              }
+            },
+            {
+              "he": "שנזכר בספר יצירה",
+              "en": "which this metaphor is mentioned in *Sefer Yetzira*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1725, 1732],
+                "start": 580.66,
+                "end": 581.96
+              }
+            },
+            {
+              "he": "או כענין גלוי ההעלם דכחות הנפש",
+              "en": "or the idea of how the different faculties of the soul",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1743, 1754],
+                "start": 587.44,
+                "end": 590.44
+              }
+            },
+            {
+              "he": "מעצמות הנפש",
+              "en": "are revealed from the essence of the soul",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1747, 1762],
+                "start": 588.2,
+                "end": 592.08
+              }
+            },
+            {
+              "he": "דרך כלל"
+            },
+            {
+              "he": "כידוע"
+            },
+            {
+              "he": "עד שאחר העיון יושג בחינת העומק",
+              "en": "you do arrive at a much deeper understanding",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1816, 1823],
+                "start": 610.6,
+                "end": 612.6
+              }
+            },
+            {
+              "he": "מזה כנזכר לעיל בהשגה דממלא כל עלמין"
+            },
+            {
+              "he": "שנקרא יחודא תתאה",
+              "en": "just like with the lower unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1841, 1846],
+                "start": 619.58,
+                "end": 621.76
+              }
+            },
+            {
+              "he": "כידוע."
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "mashal",
+              "title": "The coal in the flame",
+              "text": "There are many metaphors for this. One is a coal inside a flame, inside a coal, which *Sefer Yetzira* mentions: blow on it and it is revealed. Another is how the faculties of the soul are revealed from the soul's essence, in the general way. He says the class has covered many of these with Reb Hillel.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1687, 1783],
+                  "start": 567.8,
+                  "end": 598.48
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Once you have studied the metaphors, and seen how each contributes and how they differ, you arrive at a much deeper understanding of the general idea. That is the lower unity, which in general is *memalei kol almin*. *Hisbonenus* requires *iyun*: you must learn the detailed explanations. Within that, one can focus on the abstract structure of the chain of descent, or on how it applies to particular things, as with the example of *Modeh Ani*, a very particular experience of waking up in the morning.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1784, 1984],
+                  "start": 598.98,
+                  "end": 667.62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Each approach has its advantage",
+      "summary": "The general way gives depth and the particular way gives nearness; each is needed, and the teaching is to join them.",
+      "passages": [
+        {
+          "lines": [
+            "ecmvdyqt",
+            "ymyj432g",
+            "yaj77wry"
+          ],
+          "phrases": [
+            {
+              "he": "והנה באמת",
+              "en": "The truth is",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [1991, 1993],
+                "start": 671.86,
+                "end": 672.78
+              }
+            },
+            {
+              "he": "לא ראי זה כו'",
+              "en": "each one has an advantage that it's not in the other one",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [2028, 2039],
+                "start": 680.48,
+                "end": 683.52
+              }
+            },
+            {
+              "he": "דיש מעלה בהתבוננות"
+            },
+            {
+              "he": "דרך כלל"
+            },
+            {
+              "he": "כדי שיוכל לבא לבחינת העומק בכלל"
+            },
+            {
+              "he": "שהוא בחינת עצמות אור האלקי"
+            },
+            {
+              "he": "בבחינת הכלל,"
+            },
+            {
+              "he": "בין ביחודא עילאה בין ביחודא תתאה,",
+              "en": "whether we're learning upper unity, the lower unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [2586, 2593],
+                "start": 863.26,
+                "end": 865.28
+              }
+            },
+            {
+              "he": "שזהו עיקר התכלית בגלוי אלקות בנפש כו'",
+              "en": "This is the ultimate goal, is to have this revelation of G-dliness in a person's soul",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [2819, 2834],
+                "start": 920.44,
+                "end": 927.14
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "keyPoint",
+              "text": "The Talmud's famous expression for two things, each with an advantage the other lacks, is that one is not like the other. So we really need a little of both.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [1985, 2050],
+                  "start": 667.62,
+                  "end": 686.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The general way has its advantage: it reaches the depth in the general. In any subject one needs to generalize what one learns. One of the core ideas of *Understanding by Design*, a curriculum-design theory he worked with, is that understanding means a student can generalize what he learns and apply it to something new.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2051, 2144],
+                  "start": 686.14,
+                  "end": 719.42
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The Pilgrims",
+              "text": "Take a history lesson on the Pilgrims coming to America. You select the big themes and questions: what it is to move and make a transition in life, why people do it, what the opportunities are, what is hard about it. Then you show how these apply to other areas of life. When a student can apply them, that is the proof of understanding. That is the general way: find the big idea, and see that whatever you study is an example of it. If you get the general point, you have the real depth of it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2145, 2336],
+                  "start": 720.48,
+                  "end": 783.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "So we want this depth in the general: not seeing G-dliness in one aspect of the world, but appreciating G-dliness in general, which is the essence of the G-dly light.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2337, 2406],
+                  "start": 783.58,
+                  "end": 802.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The aim is to appreciate the essential G-dly life, which encompasses everything and transcends any one example or expression, as the tract on *Chassidus* shows. Both steps are needed: first identify and understand the transcendent generality, then see how it permeates the specifics. Doing both is what he is describing for learning *Chassidus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2407, 2570],
+                  "start": 802.68,
+                  "end": 857.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Without that, you stay at one level of how a teaching is read, the plain sense, the hint, the homily or the secret, or within one world. You understand it there but do not see how it connects to G-d's real unity. The aim is to see G-d's unity, not only to learn about a certain angel or a certain *sefira*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2571, 2723],
+                  "start": 858.46,
+                  "end": 894.5
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Mitteler Rebbe, in his introduction to *Amrei Binah*, says that a person who learns about all the levels without seeing how they unite in G-d's simple essence has the opposite of the whole point. The point of learning is to see how everything unites in that one general point, which is all part of the transcendent, essential unity.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2724, 2811],
+                  "start": 894.5,
+                  "end": 918.46
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The ultimate goal is the revelation of G-dliness in the soul: an awareness and appreciation of this essence, which transcends any particular creation and which we can find all around us, in ourselves and in other people. That is the advantage of learning in the general way.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2812, 2927],
+                  "start": 918.46,
+                  "end": 951.42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "4wq4cyji",
+            "eza4x224"
+          ],
+          "phrases": [
+            {
+              "he": "ויש מעלה בהתבוננות דרך פרט דוקא",
+              "en": "On the other hand, there's an advantage",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [2934, 2940],
+                "start": 952.88,
+                "end": 956.3
+              }
+            },
+            {
+              "he": "מצד עוצם הקירוב גלוי אור האלקי בנפשו יותר,",
+              "en": "is that then the revelation of G-dliness is something that becomes very close to you, very relevant to you",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3027, 3045],
+                "start": 986.7,
+                "end": 997.6
+              }
+            },
+            {
+              "he": "כי בהתבוננות דרך כלל יוכל להטעות את עצמו",
+              "en": "because if a person only studies in a general way, a person could fool themselves",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3295, 3321],
+                "start": 1070.38,
+                "end": 1078.88
+              }
+            },
+            {
+              "he": "עד שנדמה לו כי מאד קרוב אליו הדבר",
+              "en": "he can imagine that he has a very close understanding",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3330, 3339],
+                "start": 1081.68,
+                "end": 1088.14
+              }
+            },
+            {
+              "he": "ובאמת מרחוק מאד יהו״ה נראה לו",
+              "en": "and really, he's seeing G-d from very far off",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3843, 3851],
+                "start": 1220.24,
+                "end": 1224.72
+              }
+            },
+            {
+              "he": "בהיותו דרך כלל לבד",
+              "en": "because his understanding is only abstract and theoretical",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3888, 3895],
+                "start": 1237.24,
+                "end": 1240.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "There is an advantage to the particular way as well: it shows how G-dliness permeates a particular example of something around us. The Rebbe did this, explaining in general and in theory the idea of *yechida* and how it is transcendent, and then giving a particular example, *Modeh Ani*, which takes that general idea and applies it to one particular experience in the world around us.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [2928, 3018],
+                  "start": 951.42,
+                  "end": 985.48
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "text": "The advantage is that the revelation of G-dliness becomes very close and relevant to you: something you really experience, can see and can point to in your life, not an abstraction or a theory. That is a grasp of the essence itself, not only knowing that it exists, the way one knows a theory. The com*bina*tion of both is the perfection of *Moshiach*: the general that transcends, and the particular that permeates. Then one sees G-d's essence in the world, as the verse says, all flesh will see G-d as one. The Rebbe stresses that \"see\" does not mean only with the eye: every one of the senses is transformed into experience of G-dliness.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3019, 3286],
+                  "start": 985.48,
+                  "end": 1065.78
+                }
+              ],
+              "question": "What is the advantage of the particular way?",
+              "askedBy": "teacher"
+            },
+            {
+              "kind": "explanation",
+              "text": "Someone who studies only in the general way can fool himself, and think that the matter is very close to him, when it is very far. He can imagine he has a very close understanding and really gets it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3287, 3347],
+                  "start": 1065.78,
+                  "end": 1089.82
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The most extreme case is someone who does no *hisbonenus* at all. He takes only the general *meshalim* of how G-d fills the world, like the light of the sun, a candle, or a soul filling a body, and uses his imagination to picture G-d as a spirit filling everything around him.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3348, 3479],
+                  "start": 1089.82,
+                  "end": 1129.68
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Alter Rebbe's discourse on this describes all kinds of delusions it causes, even hallucinations, and it is not a healthy thing to do. Even a person who really studies in depth, and understands the differences between the *meshalim*, can fool himself if he only learns the framework of the chain of descent and never applies it to particular things, as the Rebbe applied it to *Modeh Ani*. He knows the words and their metaphors, talks very intelligently, and believes he is very close.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3480, 3644],
+                  "start": 1129.72,
+                  "end": 1175
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "health-or-legal"
+                ],
+                "reason": "His verdict that the practice is \"not a healthy thing to do\": a health claim a reader could act on. The Alter Rebbe's account of the delusions it causes is kept as the source's claim.",
+                "action": "replace",
+                "publishable": "The Alter Rebbe's discourse on this describes all kinds of delusions it causes, even hallucinations. Even a person who really studies in depth, and understands the differences between the *meshalim*, can fool himself if he only learns the framework of the chain of descent and never applies it to particular things, as the Rebbe applied it to *Modeh Ani*. He knows the words and their metaphors, talks very intelligently, and believes he is very close.",
+                "recommend": "judgment",
+                "judgmentNote": "Whether the Alter Rebbe's account of the delusions prints as his, or the whole claim drops from the public text; a reader could take \"not a healthy thing to do\" as medical advice."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Ask such a person to show you where *Atzilus* is on the table, and he could not. He knows the words and the metaphors that go with them, and talks about them very intelligently, and thinks he is really connecting to G-dliness. In fact, it is very far from him.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3645, 3722],
+                  "start": 1175.12,
+                  "end": 1192.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It is a theory he knows and is familiar with, the abstract part of it, but he does not see how to apply it at all. At the end of chapter 3 the Mitteler Rebbe complained that many chassidim, because they lacked the power of *tevuna* to apply what they understood, felt that *Chassidus* and *avoda* were two separate things and did not see how to apply them. The same thing happens here: a person can fool himself into thinking that the matter is very near.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3723, 3836],
+                  "start": 1192.3,
+                  "end": 1219.8
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "A criticism of chassidim as a group, with a cause given as a lack; the Mitteler Rebbe's complaint as reported.",
+                "action": "replace",
+                "publishable": "It is a theory he knows and is familiar with, the abstract part of it, but he does not see how to apply it at all. At the end of chapter 3 the Mitteler Rebbe complained that many people felt that *Chassidus* and *avoda* were two separate things and did not see how to apply them. The same thing happens here: a person can fool himself into thinking that the matter is very near.",
+                "recommend": "judgment",
+                "judgmentNote": "Whether the Mitteler Rebbe's complaint prints as his own, or drops its cause and the word chassidim from the public text."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Line 14 says that G-d is seen from very far off by someone who understands only in the general way. The image is borrowed from Avraham on the way to the Akeidah, who saw the spirit of Hashem over the mountain from far. Such a person's understanding is only abstract and theoretical, so he cannot apply it, and it does not change how he sees his day-to-day life.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3837, 3957],
+                  "start": 1219.8,
+                  "end": 1257.24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "gl5dssvh",
+            "mioark6c"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן ההתבוננות דרך פרט,",
+              "en": "On the other hand, when a person does a particular *hisbonenus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [3964, 3974],
+                "start": 1260,
+                "end": 1262.4
+              }
+            },
+            {
+              "he": "שכל פרטי בהשגה"
+            },
+            {
+              "he": "בדבר פרטי,",
+              "en": "this is a particular understanding of a particular topic",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4114, 4122],
+                "start": 1307.8,
+                "end": 1311.66
+              }
+            },
+            {
+              "he": "הרי יוקבע בנפשו",
+              "en": "then this idea becomes very firmly implanted in the person's soul",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4211, 4221],
+                "start": 1339.92,
+                "end": 1344.16
+              }
+            },
+            {
+              "he": "בבחינת הקירוב ביותר",
+              "en": "it literally means close to him, but it means it's very relevant",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4227, 4238],
+                "start": 1345.82,
+                "end": 1348.16
+              }
+            },
+            {
+              "he": "וממנו יבוא להשגת דבר פרטי העליון הימנו",
+              "en": "and from that understanding of that one thing, then you can build on that and understand something a little higher",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4278, 4297],
+                "start": 1364.94,
+                "end": 1370.74
+              }
+            },
+            {
+              "he": "בהדרגה,",
+              "en": "you can go in an orderly process step-by-step",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4299, 4306],
+                "start": 1372.2,
+                "end": 1376.4
+              }
+            },
+            {
+              "he": "עד שיבוא לכלל ההשגה בכלליות,",
+              "en": "until he can come to understand the general big picture",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4312, 4321],
+                "start": 1380.18,
+                "end": 1386.08
+              }
+            },
+            {
+              "he": "שאז מתאמת יותר"
+            },
+            {
+              "he": "בלתי הטעות את עצמו כלל",
+              "en": "without any, he's not deluding himself at all",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4454, 4461],
+                "start": 1427.76,
+                "end": 1429.78
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "On the other hand, the particular way: take a particular topic, a particular experience or aspect of life, as the Rebbe does with *Modeh Ani* or any discourse. It takes some work to mine it, but then the insight is life-changing, something you can relate to, feel and see. It is more limited than the general, but within its scope it is very tangible.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [3958, 4134],
+                  "start": 1257.24,
+                  "end": 1315.94
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "This is the same in any educational theory. You start with the tangible, grounded experience, and from there contemplate and come to appreciate *chachma*, which is the generalization. The idea then becomes firmly implanted in the soul: close in the sense of relevant, and known from direct experience.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4135, 4270],
+                  "start": 1315.94,
+                  "end": 1359.22
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The classroom and the years of experience",
+              "text": "You build step by step, from the particular to a higher particular, until you grasp the general in its full generality. Then you are not fooling yourself at all. Compare someone who learns in a classroom with someone who has years of experience. The second has particular examples where the ideas were in action, and from those he builds up the big ideas. He really knows it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4271, 4469],
+                  "start": 1361.48,
+                  "end": 1431.4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Down through the worlds, one by one",
+      "summary": "The particular way is worked through the chain of descent, from the spheres down to Asiya, then Yetzira, Beriya and *Atzilus*, ending in the name Elokim.",
+      "passages": [
+        {
+          "lines": [
+            "dy5e5akm",
+            "ux6ompgg"
+          ],
+          "phrases": [
+            {
+              "he": "כמו כשתחלה יתבונן דרך פרט בממלא כל עלמין",
+              "en": "for example, if in the beginning a person starts off by studying *memalei kol almin*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4472, 4489],
+                "start": 1434.2,
+                "end": 1440.8
+              }
+            },
+            {
+              "he": "באיכות התהוות שרש שפע ברוחניות דגלגלים ומזלות",
+              "en": "how the spiritual forces are guiding our physical world, that come through the planets, the sun, the moon, and the stars",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4532, 4555],
+                "start": 1454.48,
+                "end": 1463.64
+              }
+            },
+            {
+              "he": "מאין ליש דעשיה, משמרי האופנים",
+              "en": "and how that is coming from, something from nothing, from what's called the dregs of the *ofanim*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4588, 4606],
+                "start": 1474.24,
+                "end": 1481.24
+              }
+            },
+            {
+              "he": "ואחר כך",
+              "en": "And after he understands that,",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4733, 4737],
+                "start": 1520.04,
+                "end": 1521.74
+              }
+            },
+            {
+              "he": "יתבונן בפרטיות באופנים",
+              "en": "then he's going to understand the *ofanim*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4741, 4747],
+                "start": 1523.68,
+                "end": 1526
+              }
+            },
+            {
+              "he": "וחיות כו'",
+              "en": "And then he's going to understand how they come from the *Chayos* of *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4750, 4763],
+                "start": 1526.86,
+                "end": 1529.7
+              }
+            },
+            {
+              "he": "עד בחינת מלכות דעשיה,",
+              "en": "until he understands *Malchus* of *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4781, 4786],
+                "start": 1533.64,
+                "end": 1536.58
+              }
+            },
+            {
+              "he": "כללות האור האלקי שמהוה עולם העשיה",
+              "en": "the general G-dly light that's creating the world of *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4803, 4812],
+                "start": 1542.58,
+                "end": 1545.76
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Take a particular topic: how *memalei kol almin* starts with the spiritual flow (*shefa*) that comes through the *galgalim* and the constellations. How does G-d form the world we know through these forces, bringing something from nothing into the *yesh* of *Asiya*, from what is called the dregs of the *ofanim*? That is one particular topic.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4470, 4606],
+                  "start": 1432.68,
+                  "end": 1481.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "It can take a long time. A lot of this is plain science, about things in the world and how they work. It is not G-dly in itself, which is why some people shy away from it, since the details seem not to be G-dly. But understood in the context of the purpose, it all connects.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4607, 4730],
+                  "start": 1481.86,
+                  "end": 1519.44
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Then he takes the particular *ofanim* of *Asiya*, then the *Chayos* they come from, then the highest angels of *Asiya*, until he reaches *Malchus* of *Asiya*: the general G-dly light that makes up the world of *Asiya*. Because he has already gone through the *galgalim* and the angels, he is able to appreciate that general light.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4731, 4833],
+                  "start": 1519.44,
+                  "end": 1552.74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "dipad6g6",
+            "mv2hugwv",
+            "rde6lkyu"
+          ],
+          "phrases": [
+            {
+              "he": "ועל דרך זה",
+              "en": "In a similar way,",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4837, 4840],
+                "start": 1554.78,
+                "end": 1556.1
+              }
+            },
+            {
+              "he": "בפרטי י׳ ספירות דעשיה",
+              "en": "the ten *sefiros* of *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4848, 4852],
+                "start": 1558.4,
+                "end": 1559.84
+              }
+            },
+            {
+              "he": "עד בחינת מלכות דיצירה",
+              "en": "until he understands how all that's coming from *Malchus* of *Yetzira*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4881, 4891],
+                "start": 1568.06,
+                "end": 1571.88
+              }
+            },
+            {
+              "he": "שנעשה כתר לעשיה",
+              "en": "which becomes the *Keser*, the inner motivating force and driving force of everything in *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4895, 4909],
+                "start": 1572.64,
+                "end": 1577.26
+              }
+            },
+            {
+              "he": "וכן על דרך זה",
+              "en": "And again,",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4915, 4916],
+                "start": 1579.82,
+                "end": 1580.14
+              }
+            },
+            {
+              "he": "בפרטיות דיצירה ובפרטיות דבריאה כו'",
+              "en": "And the same thing, go through all the details of the world of *Yetzira* and all the details of the world of *Beriya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4953, 4975],
+                "start": 1590.92,
+                "end": 1594.7
+              }
+            },
+            {
+              "he": "עד בחינת מלכות דאצילות",
+              "en": "appreciates how all of that is coming from *Malchus* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4986, 4996],
+                "start": 1600.1,
+                "end": 1603.34
+              }
+            },
+            {
+              "he": "כללות הכל כו'",
+              "en": "which is the general theme, the general G-dly light that unites everything in *Beriya*, *Yetzira* and *Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [4997, 5013],
+                "start": 1603.34,
+                "end": 1609.62
+              }
+            },
+            {
+              "he": "שנקרא שם אלהי״ם בכלל כידוע",
+              "en": "which, in general, that's called the name of *Elokim*, how G-d is like the judge or the master of all the forces of the world",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5018, 5042],
+                "start": 1611.72,
+                "end": 1619.12
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "In the same way, the ten *sefiros* of *Asiya*, one by one: up to *Malchus* of *Yetzira*, which becomes the *Keser* of *Asiya*, the inner driving force of everything in *Asiya*. *Malchus* is reached through the *yesod* of *Asiya*, and that through the *middos*, and those through *chachma* and *bina*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4834, 4909],
+                  "start": 1552.74,
+                  "end": 1577.26
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "He is not explaining those details now. He is s*ayin*g what it means to go through them step by step, as he would for the details of *Yetzira* and of *Beriya*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4910, 4975],
+                  "start": 1577.26,
+                  "end": 1594.7
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Until *Malchus* of *Atzilus*, the general G-dly light that unites everything in *Beriya*, *Yetzira* and *Asiya*. In general this is called the name *Elokim*: G-d as the judge, or master, of all the forces of the world.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [4976, 5043],
+                  "start": 1594.7,
+                  "end": 1619.15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The detail makes the general near",
+      "summary": "Once the details are studied, the general point is held firmly; the same is true of the upper unity.",
+      "passages": [
+        {
+          "lines": [
+            "rfkeroz7",
+            "ozsyxvkr"
+          ],
+          "phrases": [
+            {
+              "he": "שאז מתאמת הדבר יותר בקירוב כו',",
+              "en": "then, a person really understands in a much more tangible, relatable way this idea of *memalei kol almin* and what it really means",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5050, 5074],
+                "start": 1619.3,
+                "end": 1631.1
+              }
+            },
+            {
+              "he": "כי אחר העיון היטב בכל הפרטים,",
+              "en": "After studying well and really analyzing well all of these details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5081, 5092],
+                "start": 1631.36,
+                "end": 1639.56
+              }
+            },
+            {
+              "he": "הגם",
+              "en": "even though",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5102, 5103],
+                "start": 1643.92,
+                "end": 1644.96
+              }
+            },
+            {
+              "he": "שכל פרט בפני עצמו אינו ענין אלהות בכללות",
+              "en": "that each detail on its own is not really a G-dly thing",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5112, 5123],
+                "start": 1646.58,
+                "end": 1650.14
+              }
+            },
+            {
+              "he": "ואינו רק בחינת טפל פרטי לבד,",
+              "en": "Each detail is really a secondary, in many ways circumstantial, in many ways insignificant detail",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5216, 5232],
+                "start": 1680.42,
+                "end": 1689.34
+              }
+            },
+            {
+              "he": "אבל כאשר יתחבר כל העיון מכל הפרטים אל הכלל,",
+              "en": "But when you put together all of this study from all of these details, and see how they all connect back to that theme",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5240, 5265],
+                "start": 1694.14,
+                "end": 1702.74
+              }
+            },
+            {
+              "he": "אז יוקבע יותר בנפש בחינת הכלל",
+              "en": "then you really understand the general, that general abstract point that transcends any of those parts, and is really higher than them",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5290, 5313],
+                "start": 1707.34,
+                "end": 1717.86
+              }
+            },
+            {
+              "he": "כאשר בדוק ומנוסה לכל עוסק",
+              "en": "Like it's tried and tested to anyone that works",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5344, 5354],
+                "start": 1729.5,
+                "end": 1735.28
+              }
+            },
+            {
+              "he": "בעמקות בהתבוננות",
+              "en": "toils into the depths of *hisbonenus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5355, 5360],
+                "start": 1735.46,
+                "end": 1739.06
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "After the details are studied well, a person understands *memalei kol almin* in a much more tangible, relatable way. Even though each detail on its own is not really a G-dly thing, G-dliness is not openly apparent in a physical thing, an angel or a *sefira*. It is like the levels of a teaching, where much is not openly apparent: the essence is there. Studied that way, the detail can be detached from seeing G-d's unity, and that is the problem.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5044, 5209],
+                  "start": 1619.15,
+                  "end": 1678.88
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "Each detail is in itself a secondary thing, in many ways circumstantial and insignificant. When you put all this study together, and see how the details connect back to the general theme and express it, you really understand the general point. It transcends all the parts and is in certain ways more important than them. But you can only get that generality truly through learning all the details. That is tried and tested for anyone who works and toils into the depths of *hisbonenus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5210, 5365],
+                  "start": 1678.88,
+                  "end": 1740.12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5vrj527z",
+            "dn6asu54"
+          ],
+          "phrases": [
+            {
+              "he": "וגם ביחודא עילאה",
+              "en": "And the same thing applies to studying the upper unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5407, 5416],
+                "start": 1758.52,
+                "end": 1760.94
+              }
+            },
+            {
+              "he": "בהתבוננות דרך פרט",
+              "en": "A person can study it in a particular, detailed way",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5420, 5429],
+                "start": 1762.94,
+                "end": 1765.18
+              }
+            },
+            {
+              "he": "בכל פרטי העשר ספירות בפרצופים",
+              "en": "To understand all of the particular configurations of the ten *sefiros*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5441, 5451],
+                "start": 1770.12,
+                "end": 1773.6
+              }
+            },
+            {
+              "he": "דזעיר אנפין ונוקבא",
+              "en": "is what's called the different faces of *Zeir Anpin* and *Nukva*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5452, 5462],
+                "start": 1773.68,
+                "end": 1778.42
+              }
+            },
+            {
+              "he": "ואבא ואמא",
+              "en": "and *Abba* and *Ima*, the father and mother",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5463, 5470],
+                "start": 1778.58,
+                "end": 1780.38
+              }
+            },
+            {
+              "he": "ואריך אנפין",
+              "en": "and *Arich Anpin*, the long face,",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5471, 5476],
+                "start": 1780.58,
+                "end": 1781.88
+              }
+            },
+            {
+              "he": "ועתיק יומין",
+              "en": "and *Atik Yomin*, the ancient of days",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5477, 5491],
+                "start": 1781.98,
+                "end": 1786.88
+              }
+            },
+            {
+              "he": "עד ראשית הקו באדם קדמון כו'",
+              "en": "Until the beginning of the finite line of light that begins the whole process of creation in what's called *Adam Kadmon*, original man",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5509, 5531],
+                "start": 1792.42,
+                "end": 1800.74
+              }
+            },
+            {
+              "he": "דרך פרט דוקא,",
+              "en": "in a particular way, specifically",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5548, 5552],
+                "start": 1805.88,
+                "end": 1807.74
+              }
+            },
+            {
+              "he": "הוא המועיל לקבוע בנפש מבחינת כללות עצמות המאציל הכוללם יחד",
+              "en": "that specific, detailed type of study is what is going to allow a person to really imprint within their soul the true understanding and *emuna* in G-d's essence that transcends everything and unites everything",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5572, 5610],
+                "start": 1817.86,
+                "end": 1832.92
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same applies to the upper unity: one can study it in the particular way, through all the details of the ten *sefiros* in the *partzufim*: *Zeir Anpin* and *Nukva*, *Abba* and *Ima*, *Arich Anpin* and *Atik Yomin*, down to the beginning of the line of light in *Adam Kadmon*. He will teach about those faces later.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5404, 5531],
+                  "start": 1757.14,
+                  "end": 1800.74
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The particular way is what helps fix in the soul the Essence of the Emanator, which joins everything together. This specific, detailed study is what lets a person imprint within the soul the true understanding of, and *emuna* in, G-d's essence, which transcends everything and unites everything.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5532, 5610],
+                  "start": 1801.4,
+                  "end": 1832.92
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The general alone can fool",
+      "summary": "The general way alone sees G-d only from far, and a delusion of closeness; the detail, studied step by step, is the cure.",
+      "passages": [
+        {
+          "lines": [
+            "u7ddzurz",
+            "btuptc4q"
+          ],
+          "phrases": [
+            {
+              "he": "מה שאין כן",
+              "en": "on the other hand",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5617, 5620],
+                "start": 1839.36,
+                "end": 1839.74
+              }
+            },
+            {
+              "he": "ההתבוננות דרך כלל לבד",
+              "en": "if a person only does a general *hisbonenus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5621, 5628],
+                "start": 1839.82,
+                "end": 1842.3
+              }
+            },
+            {
+              "he": "כנזכר לעיל",
+              "en": "like we said before",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5629, 5632],
+                "start": 1842.62,
+                "end": 1843.76
+              }
+            },
+            {
+              "he": "שמרחוק יהו״ה נראה לו",
+              "en": "so then a person's only seeing it from far",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                "words": [5637, 5645],
+                "start": 1845.62,
+                "end": 1848.8
+              }
+            },
+            {
+              "he": "(עד שיוכל ליפול בדמיונות כוזבות",
+              "en": "and he can fall into complete basically like either fantasies or hallucinations",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [259, 270],
+                "start": 86.8,
+                "end": 96.58
+              }
+            },
+            {
+              "he": "כשוטים וחסרי הדעת",
+              "en": "like the fools and people that lack understanding",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [272, 279],
+                "start": 97.38,
+                "end": 101.58
+              }
+            },
+            {
+              "he": "מצד צמצום כלי מוחו רק בדבר א'",
+              "en": "because they just focus their mind on just one thing",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [319, 328],
+                "start": 117.88,
+                "end": 120.7
+              }
+            },
+            {
+              "he": "והוא כללי כו')",
+              "en": "which is a general thing",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [329, 333],
+                "start": 120.72,
+                "end": 121.7
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "recap",
+              "text": "The class opens half a line back and recaps the advantage of the particular way, with concrete examples. Then it turns to the contrast with the general way.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [0, 81],
+                  "start": 0,
+                  "end": 34.54
+                }
+              ],
+              "outOfPlace": "The class opens on the bottom of the previous page, before line 26 is read: a recap of the advantage of the particular way."
+            },
+            {
+              "kind": "explanation",
+              "text": "On the other hand, the general way alone: as he said before, a person who only does the general *hisbonenus* sees G-d only from far. He does not truly understand it in a way that is relatable and experiential.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5611, 5662],
+                  "start": 1832.92,
+                  "end": 1855.96
+                }
+              ]
+            },
+            {
+              "kind": "aside",
+              "text": "It is abstract theory, what I call psychobabble: people like to say these words, but what does it mean? It could mean anything. Without concrete understanding it has no grounding in experience.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+                  "words": [5663, 5718],
+                  "start": 1856.04,
+                  "end": 1872.36
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "A dismissive label, \"psychobabble\", for people who talk abstractly.",
+                "action": "replace",
+                "publishable": "It is abstract theory: people like to say these words, but what does it mean? It could mean anything. Without concrete understanding it has no grounding in experience."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Each approach has an advantage and a disadvantage. The advantage of the general is that one gets the main points, and the general *hisbonenus* is the main thing; but that is true only if it comes after detailed, specific study. A person who only does the general thinks he is seeing G-d from close, when in truth he is seeing Him from very far. He thinks he understands, but it is a delusion.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [82, 241],
+                  "start": 34.54,
+                  "end": 78.58
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Such a person can fall into false fantasies, like fools and people who lack understanding. That lack is not a lack of intelligence but of maturity, the sense that comes from experience. His mind's vessel is narrowed to one thing, a general one, and he focuses on it very intensely, until he thinks he sees angels or that G-d is speaking to him.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [242, 369],
+                  "start": 78.58,
+                  "end": 132.14
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Alter Rebbe has a very short discourse, one of two on *hisbonenus* in his book of short discourses, the *Kitzurim*, that describes this: the focus, the excitement and emotion, the spiritual high, and all of it a delusion. Real understanding is a grounded, step-by-step process. Real spiritual experience comes as inspiration only once in a while.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [370, 523],
+                  "start": 132.36,
+                  "end": 184.16
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "Taking the stairs to the roof",
+              "text": "Chassidim would say: with self-sacrifice a person can jump off a roof, but all the self-sacrifice in the world will not help him jump onto one. For that he has to take the stairs.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [524, 586],
+                  "start": 184.34,
+                  "end": 199.94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "uh5vf7sj",
+            "uhtyhr74",
+            "h7aoass4"
+          ],
+          "phrases": [
+            {
+              "he": "אבל צמצום העמקת הדעת",
+              "en": "but when a person focuses their attention, and *ha'amakas hadaas* is focusing the attention",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [654, 667],
+                "start": 228.3,
+                "end": 233.54
+              }
+            },
+            {
+              "he": "בכל פרט",
+              "en": "So when you do that to the details, that is something you really can relate to and can really understand directly",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [684, 704],
+                "start": 240.9,
+                "end": 245.86
+              }
+            },
+            {
+              "he": "הוא ההיפוך מן הטעות",
+              "en": "that's the opposite of fooling oneself",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [853, 858],
+                "start": 283.14,
+                "end": 284.48
+              }
+            },
+            {
+              "he": "והריחוק",
+              "en": "it's the opposite of being very far",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [891, 897],
+                "start": 294.74,
+                "end": 296.76
+              }
+            },
+            {
+              "he": "אדרבא,",
+              "en": "on the contrary",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [899, 901],
+                "start": 297,
+                "end": 297.94
+              }
+            },
+            {
+              "he": "על ידי זה מתקרב הדבר יותר אצלו",
+              "en": "By focusing on these details and spending a lot of time with them and really connecting to them, it becomes very near to a person",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [910, 934],
+                "start": 298.22,
+                "end": 309.04
+              }
+            },
+            {
+              "he": "בהיותו הולך מפרט לפרט העליון הימנו",
+              "en": "because a person is going, in this orderly way, from one detail to the next detail that's higher",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [957, 975],
+                "start": 315.1,
+                "end": 322.82
+              }
+            },
+            {
+              "he": "עד שכוללם יחד, ליחד יחוד כללי",
+              "en": "until you're able to unite all those details into this general *yichud*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1074, 1085],
+                "start": 355.82,
+                "end": 359.84
+              }
+            },
+            {
+              "he": "ולא יחוד פרטי",
+              "en": "and then at that point you're not just making a *yichud prati*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1121, 1132],
+                "start": 370.38,
+                "end": 372.82
+              }
+            },
+            {
+              "he": "כמו",
+              "en": "for example",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1191, 1192],
+                "start": 390.48,
+                "end": 390.96
+              }
+            },
+            {
+              "he": "לך יהו״ה הגדולה",
+              "en": "a person can focus on a specific *yichud* of \"To You, Havaya, is *gedula*\"",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1200, 1213],
+                "start": 393.82,
+                "end": 399.92
+              }
+            },
+            {
+              "he": "כו'"
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Deepening attention in each detail is the opposite of error and distance. *Ha'amakas hadaas* means focusing one's attention and relating it personally, finding it in yourself. When you do that with the details, it is something you can really understand directly.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [643, 704],
+                  "start": 221.36,
+                  "end": 245.86
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "The gratitude journal",
+              "text": "Not \"all is one and one is all,\" repeated until you feel it, which is not real. Take a particular matter, like the attribute of judgment or gratitude. People who keep a gratitude journal and work on it, focusing and internalizing, are doing something very productive, because it is real and grounded in experience. That is the opposite of fooling oneself. In any field of work, you get real experience by going out and doing it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [705, 897],
+                  "start": 246.08,
+                  "end": 296.76
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On the contrary, by this the matter comes nearer to a person. By focusing on the details and really connecting to them, it becomes very near, something the person really understands. He goes from one detail to the next higher detail, in an orderly way,",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [898, 1003],
+                  "start": 296.76,
+                  "end": 330.66
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Going from *Asiya* to *Yetzira* to *Beriya* to *Atzilus*, one builds the structure on that foundation, until all the details are united in one general *yichud klali*; then the whole process is true. Someone who is hyper-focused on one little detail, and never sees how it fits the whole collective, does not have the big picture.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1004, 1189],
+                  "start": 330.88,
+                  "end": 389.24
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "For example, a particular *yichud* on \"To You, *Havaya*, is *gedula*\": the kindness we see in the world is really coming from *Havaya*. Look around, see the greatness and the kindness in the world, trace it up, and see how it comes from *Havaya*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1190, 1279],
+                  "start": 389.98,
+                  "end": 420.1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yichud: the unity, and what its parts are",
+      "summary": "Yichud is the depth of grasp of *bittul*; the particular unities and the general unity each have a place in the chain of descent.",
+      "passages": [
+        {
+          "lines": [
+            "bcsqcn75"
+          ],
+          "phrases": [
+            {
+              "he": "שענין היחוד האלקי הוא",
+              "en": "So this idea of the *yichud* is",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1294, 1301],
+                "start": 427.28,
+                "end": 429.32
+              }
+            },
+            {
+              "he": "בחינת עומק ההשגה",
+              "en": "they will eventually come to have a deep understanding",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1342, 1350],
+                "start": 443.68,
+                "end": 445.76
+              }
+            },
+            {
+              "he": "בביטול",
+              "en": "of the *bittul*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1351, 1353],
+                "start": 445.76,
+                "end": 447.2
+              }
+            },
+            {
+              "he": "היש לאין ביחודא עילאה ויחודא תתאה",
+              "en": "how the *yesh* that we see in the world is really coming from this abstract, g-dly source, both on the lower unity and the upper unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1356, 1382],
+                "start": 448.76,
+                "end": 455.66
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Yichud, the unity of G-dliness, is the depth of grasp in the *bittul* of *yesh* into *ayin*, in both the upper and the lower unity. One arrives at it by detailed *hisbonenus*: understanding each step with all the *meshalim* needed to build the unity, until one sees how the *yesh* we see in the world comes from the abstract, G-dly source.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1280, 1382],
+                  "start": 420.1,
+                  "end": 455.66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "aryg5wsm",
+            "jv7slzlo",
+            "yl7nvrbz",
+            "s2jqfu2i"
+          ],
+          "phrases": [
+            {
+              "he": "ויש יחוד פרטי",
+              "en": "and then you can make a specific *yichud*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1388, 1395],
+                "start": 458.34,
+                "end": 460.68
+              }
+            },
+            {
+              "he": "בדבר פרטי,",
+              "en": "on a particular thing",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1396, 1399],
+                "start": 460.68,
+                "end": 461.74
+              }
+            },
+            {
+              "he": "כמו לך יהו״ה הגדולה",
+              "en": "for example, like we said, \"To You, Havaya, is *gedula*\"",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1404, 1411],
+                "start": 463.9,
+                "end": 465.86
+              }
+            },
+            {
+              "he": "שהוא בחינת חסד שבמלכות דאצילות בבי''ע",
+              "en": "is the kindness of the *chesed* of *Malchus* of *Atzilus*, the way that's coming into *Beriya, Yetzira and Asiya*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1427, 1442],
+                "start": 472.38,
+                "end": 478.08
+              }
+            },
+            {
+              "he": "דרך פרט בכל עולם כו'",
+              "en": "but you can see how that comes down to each detail in each world",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1454, 1467],
+                "start": 481.12,
+                "end": 483.62
+              }
+            },
+            {
+              "he": "וגם כללותו אינו אלא"
+            },
+            {
+              "he": "פרט מדה א'",
+              "en": "that's only one particular example of how G-d relates to the world",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1552, 1563],
+                "start": 510.98,
+                "end": 514.46
+              }
+            },
+            {
+              "he": "ממדה שבמלכות כו'"
+            },
+            {
+              "he": "ולך יהו״ה הגבורה",
+              "en": "and then a person does a separate *yichud* on \"To You, Havaya, is *gevura*\"",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1588, 1599],
+                "start": 522.82,
+                "end": 525.94
+              }
+            },
+            {
+              "he": "בכללותו ופרטיו",
+              "en": "both the general idea of how all *gevura* comes from Havaya, and also seeing all the particular examples",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1610, 1637],
+                "start": 528.78,
+                "end": 537.48
+              }
+            },
+            {
+              "he": "בכל עולם"
+            },
+            {
+              "he": "נקרא יחוד פרטי",
+              "en": "that's another specific *yichud*, seeing how G-d's *gevura* extends to all the worlds",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1894, 1906],
+                "start": 617.56,
+                "end": 623.4
+              }
+            },
+            {
+              "he": "ועל דרך זה בכל יחודים פרטיים שבי׳ ספירות דבי''ע כידוע",
+              "en": "and same thing with all the particular unifications that a person can make of seeing how all the ten *sefiros* are expressed in the different worlds of *Beriya, Yetzira and Asiya*, as you know",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1917, 1947],
+                "start": 627.02,
+                "end": 635.86
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "A particular *yichud* on a particular thing: as in \"To You, *Havaya*, is *gedula*\", which is the *chesed* of *Malchus* of *Atzilus* coming into the lower three worlds. This is still fairly general, but you can see how it comes down into each detail in each world.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1383, 1467],
+                  "start": 456.64,
+                  "end": 483.62
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "When you contemplate it, you do not just think, all the greatness is G-d's. You look at particular examples: how does this show in *Asiya*, in *Yetzira*, in *Beriya*, in *Atzilus*? You trace it up. Even then it is only one example of how G-d relates to the world, the *chesed* of *Malchus* of *Atzilus*, as opposed to the general relationship of *Malchus*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1468, 1584],
+                  "start": 485.22,
+                  "end": 521.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Another particular *yichud*, on \"To You, *Havaya*, is *gevura*\": how all *gevura* comes from *Havaya*, in general and in particulars, and the difference between each as it appears in *Asiya*, *Yetzira* and *Beriya*. Take the example of *Modeh Ani*: the *yichud* of two *middos*, *Malchus* and *Yesod*, which in *Asiya* is gratitude for the waking experience, and in *Yetzira* is recognizing that the world is created new every moment. So each *yichud* looks a little different in each world.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1585, 1776],
+                  "start": 521.46,
+                  "end": 581.64
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "There are many more of this kind. One *yichud* can be about food in general, which includes fruit and bread, and another just about fruit; there is a difference, and places in Torah, *Chassidus* and *Kabbalah* discuss these. The *gevura* extending to all the worlds is another specific one.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1777, 1906],
+                  "start": 581.76,
+                  "end": 623.4
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The same goes for all the particular unifications of the ten *sefiros* of *Beriya*, *Yetzira* and *Asiya*: seeing how the ten *sefiros* are expressed in each of the three worlds.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1907, 1947],
+                  "start": 623.4,
+                  "end": 635.86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "7ydzweo3",
+            "o57vid2s"
+          ],
+          "phrases": [
+            {
+              "he": "אבל יחוד הכללי",
+              "en": "But then the idea of a general *yichud*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [1958, 1965],
+                "start": 641.1,
+                "end": 643.1
+              }
+            },
+            {
+              "he": "הוא כמו מה שכתוב הנה מקום אתי",
+              "en": "It says, \"Behold, the place,\" the entire idea of place is all with Me",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2021, 2037],
+                "start": 659.7,
+                "end": 664.2
+              }
+            },
+            {
+              "he": "או המלך המרומם כו' המתנשא מכל ימות עולם",
+              "en": "or how G-d is a King that transcends the world, and so, even though G-d is like the King of the world, but He really transcends it, that He transcends all the days of the world",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2042, 2081],
+                "start": 666.56,
+                "end": 676.18
+              }
+            },
+            {
+              "he": "דו׳ קצוות"
+            },
+            {
+              "he": "ומוחין חכמה ובינה שבהם",
+              "en": "the both the *middos* and the intellect or the *mochin* that's related to those *middos*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2126, 2140],
+                "start": 691.22,
+                "end": 697
+              }
+            },
+            {
+              "he": "כו'"
+            },
+            {
+              "he": "וגם זה פרט יחשב לגבי עצמות בחינת המלכות",
+              "en": "and even this general *yichud* of seeing how everything is all of time and space is *batel* to Havaya is considered a detail compared to the general essence of the idea of *Malchus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2178, 2211],
+                "start": 709.58,
+                "end": 723.62
+              }
+            },
+            {
+              "he": "שהוא כתר מל'",
+              "en": "which is the *Keser* of *Malchus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2215, 2220],
+                "start": 724.98,
+                "end": 725.96
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The general *yichud* is like the verse \"Behold, the place is with Me.\" After seeing how all the particular *middos* are united, one recognizes that the whole idea of time and space, and of the *middos* and *Malchus* and everything, is *batel* to Hashem. That is the general *yichud*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [1948, 2037],
+                  "start": 635.86,
+                  "end": 664.2
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "G-d is a King who transcends the world. Even though He is like the King of the world, He really transcends it, and He transcends all the days of the world. That means He transcends the *middos* of our world, both time and space, and the hierarchy that relates to the *middos*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2038, 2119],
+                  "start": 664.8,
+                  "end": 687.08
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The *middos*, and the intellect, the *mochin*, which relates to those *middos*: the *chachma* and *bina* in them. He discusses this at length elsewhere, in *Amrei Binah*, in great depth.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2120, 2169],
+                  "start": 687.08,
+                  "end": 704.46
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "Even this general *yichud*, seeing how everything, time and space, is *batel* to Hashem, is a detail compared to the general essence of *Malchus*, the *Keser* of *Malchus*. That is not *Malchus* as it creates a world, but its essence: the way it expresses G-d's will and His essence.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2170, 2257],
+                  "start": 705.38,
+                  "end": 736.28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "vr3kwue2",
+            "2p5ilpn2"
+          ],
+          "phrases": [
+            {
+              "he": "וכה\"ג בע\"ס דאצי' כו'",
+              "en": "and we have a similar thing with all the ten *sefiros* of *Atzilus*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2263, 2275],
+                "start": 737.84,
+                "end": 739.86
+              }
+            },
+            {
+              "he": "עד עצמות בחינת מלכות דאין סוף",
+              "en": "and tracing how they all connect all the way up to *Malchus* of *Ein Sof*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2282, 2296],
+                "start": 743.2,
+                "end": 747.36
+              }
+            },
+            {
+              "he": "בראשית הקו,",
+              "en": "at the beginning of that original line of light that's at the beginning of the process of creation",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2299, 2316],
+                "start": 748.32,
+                "end": 753.06
+              }
+            },
+            {
+              "he": "יש יחודים פרטים הרבה",
+              "en": "there's many, many particular unifications",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2325, 2329],
+                "start": 757.5,
+                "end": 759.96
+              }
+            },
+            {
+              "he": "בכל ספירה ופרצוף כו'"
+            },
+            {
+              "he": "ויחוד הכללי בכללות ביטול כל ההשתלשלות דקו כו'",
+              "en": "and that is the general *yichud* of seeing how the entire *seder hishtalshelus*, the entire process of creation with all of its worlds, are all nullified and to G-d, and they're all just an expression of Him and one with Him",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2396, 2436],
+                "start": 783.02,
+                "end": 792.54
+              }
+            },
+            {
+              "he": "לגבי עצמות אור אין סוף כידוע.",
+              "en": "how they relate to the essence of the infinite light, as is known",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2443, 2456],
+                "start": 795.48,
+                "end": 798.18
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same with the ten *sefiros* of *Atzilus*: trace them up to *Malchus* of *Ein Sof*, at the start of the original line of light. There are many particular *yichudim* in each *sefira* and each detail, each with its own unity and G-dly expression, a real expression of G-d's essence. Each one is done separately to get the whole picture.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2258, 2387],
+                  "start": 736.5,
+                  "end": 778.64
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The general *yichud* is the nullification of the whole chain of creation, the whole process of the line of light, to the essence of the infinite light. All of it is an expression of Him and one with Him.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2388, 2456],
+                  "start": 779.22,
+                  "end": 798.18
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "If one only does the general *yichudim*, one fools oneself and does not understand properly. If one only does the detailed ones, each detail is not necessarily a G-dly thing. So the approach is to focus on the details and the specifics, as a foundation to build up the complete understanding of the big picture, uniting everything into a bigger framework.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2457, 2559],
+                  "start": 798.54,
+                  "end": 826.64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The general needs the details, and the details need the general",
+      "summary": "Starting from the general without the details does not take hold in the soul; the two need each other, as a word needs its context. The class then turns to the old dispute over where the focus lies in davening: on the meaning of the words, or on who one is standing before.",
+      "passages": [
+        {
+          "lines": [
+            "qknviiwj",
+            "zn3lz4x4"
+          ],
+          "phrases": [
+            {
+              "he": "אך הנה מי שלא העמיק דעתו ביחודים פרטים ומתחיל מבחינת הכלל,",
+              "en": "but if a person will not focus first on these particular unifications and they'll just start with the general idea",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2587, 2606],
+                "start": 843.74,
+                "end": 851.38
+              }
+            },
+            {
+              "he": "גם שבא לו ביגיעה רבה",
+              "en": "even though they're going to work very hard",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2608, 2615],
+                "start": 852.16,
+                "end": 853.51
+              }
+            },
+            {
+              "he": "בהשגות רבות באיכות ענין הביטול בכלל,",
+              "en": "and study it, and study all the *meshalim*, and really go over it until they understand it as best as they can",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2616, 2637],
+                "start": 853.51,
+                "end": 859.27
+              }
+            },
+            {
+              "he": "כמו כשלהבת כו' וכהאי גוונא,",
+              "en": "the flame to the coal, and this kind of thing, these kind of ideas",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2659, 2672],
+                "start": 863.61,
+                "end": 866.97
+              }
+            },
+            {
+              "he": "לא יוקבע בנפשו אמיתית ענינו כל כך,",
+              "en": "he's not going to really be able to appreciate the true idea of what we mean by this G-d's unity",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2687, 2712],
+                "start": 873.73,
+                "end": 881.57
+              }
+            },
+            {
+              "he": "כמו אחר עיון היטב בכל פרטיים,",
+              "en": "as he would be able to really appreciate it after, and really understand it clearly, after studying all of the details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2719, 2739],
+                "start": 885.01,
+                "end": 891.69
+              }
+            },
+            {
+              "he": "עד שמהם יבוא לבחינת בכלל.",
+              "en": "And if from those details you come and arrive at that general idea, then it's much more true",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2746, 2763],
+                "start": 894.15,
+                "end": 899.43
+              }
+            },
+            {
+              "he": "והיינו דפרט אצטריך לכלל וכלל אצטריך לפרט,",
+              "en": "And this is the idea that the details need the general reality and the generality needs the details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [2949, 2966],
+                "start": 971.65,
+                "end": 976.67
+              }
+            },
+            {
+              "he": "מפני שאין כלל בלא פרט כו'",
+              "en": "because you can't really have a *klal* without the details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3179, 3188],
+                "start": 1036.23,
+                "end": 1040.51
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Someone who did not first deepen in particular unifications, and starts from the general idea, may work very hard and study all the *meshalim*, even the flame and the coal. Still, the idea is not fixed in his soul as firmly as after studying every detail.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2560, 2679],
+                  "start": 826.64,
+                  "end": 870.23
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "He will not really grasp what we mean by G-d's unity, the way he would after studying all the details. Only if from those details he arrives at the general idea is it much more true.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2680, 2763],
+                  "start": 870.23,
+                  "end": 899.43
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "This is the nature of intellect: any model or theory meant to represent something is never able to capture its full truth. The real reality is in experience, the particular things you have in the physical world, and a mental model has no meaning unless it is grounded in them. There is no substitute for experience. It is a different level of understanding when you experience something firsthand.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2764, 2941],
+                  "start": 899.99,
+                  "end": 969.87
+                }
+              ]
+            },
+            {
+              "kind": "mashal",
+              "title": "A list with the title \"A Kite\"",
+              "text": "Take a list of random sentences that people are asked to memorize. They seem random and are hard to remember. Then the same list is shown with a title on top, \"A Kite\", and suddenly they all make sense and are easy to remember, since you know what they are about. So details without the general lack cohesion. And the reverse: the general alone is ethereal, without substance, because the words have no grounding.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [2942, 3189],
+                  "start": 969.87,
+                  "end": 1041.39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "vcbhnpks"
+          ],
+          "phrases": [
+            {
+              "he": "(ודבר זה כבר נחלקו בו הרבה מגדולי הראשונים",
+              "en": "And this discussion is not just something that relates to *Kabbalah* or whatever. This is actually a *machlokes* in *rishonim*, the halachic authorities of the Middle Ages, debating about the proper way of having *kavana* in davening.",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3198, 3242],
+                "start": 1043.88,
+                "end": 1061.15
+              }
+            },
+            {
+              "he": "כמו הרמב''ם והטור,",
+              "en": "for example, this is a debate between the Rambam and the Tur",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3248, 3259],
+                "start": 1064.95,
+                "end": 1067.05
+              }
+            },
+            {
+              "he": "אם לכוון בפירוש המלות דרך פרט בגדלות יהו״ה,",
+              "en": "should a person focus on the meaning of the words mainly and think about the particular praises of Hashem that we're speaking about there",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3283, 3308],
+                "start": 1075.91,
+                "end": 1083.13
+              }
+            },
+            {
+              "he": "אם לכוון דרך כלל, לפני מי אתה עומד",
+              "en": "or should it mainly be focused on recognizing who I'm standing in front of",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3309, 3324],
+                "start": 1083.35,
+                "end": 1088.03
+              }
+            },
+            {
+              "he": "ומתפלל כו' כמו שכתוב בכתבים)",
+              "en": "as explained in the Chassidic manuscripts",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3332, 3337],
+                "start": 1092.65,
+                "end": 1094.93
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "Which of the two is the proper *kavana* in davening is a real dispute among the early authorities of the Middle Ages. For example, the Rambam and the Tur debate whether, in the meaning of the words, one should focus on the particular praises of Hashem, or, in general, on who one is standing before. This is not only a question for *Kabbalah*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3190, 3282],
+                  "start": 1041.39,
+                  "end": 1075.81
+                }
+              ]
+            },
+            {
+              "kind": "question",
+              "text": "He says this was explained in the Chassidic writings. At that time there was no printed *Chassidus*. It was copied by hand and shared among people, and the Alter Rebbe's longer discourses from later in his life were called the writings.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3283, 3415],
+                  "start": 1075.91,
+                  "end": 1121.35
+                }
+              ],
+              "question": "Which is the main focus when davening: the meaning of the words and the particular praises, or the recognition of who one is standing before?",
+              "askedBy": "teacher"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keep the intention on the essence, and the practice for the new",
+      "summary": "The intention of all study is G-d's essence; the details of *Kabbalah* serve it; a newcomer starts with the general, and the one who prays keeps his intention on Him.",
+      "passages": [
+        {
+          "lines": [
+            "c7f2eggx",
+            "5i6usyit"
+          ],
+          "phrases": [
+            {
+              "he": "והגם שהמחשבה כללית עם המחשבה פרטית לא ישכנו כאחד,",
+              "en": "even though we have this problem that you can't be thinking about both at the same time: either you're thinking about the general idea, or you're thinking about the details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3426, 3455],
+                "start": 1131.03,
+                "end": 1140.07
+              }
+            },
+            {
+              "he": "מכל מקום מי שהוא מעמיק בכל לבו ובכל חפצו לעצמות האלקות דוקא,",
+              "en": "but if a person, if their intention and their real, sincere goal in studying *Chassidus* and all these topics is with all their heart and soul they just want to connect to G-d's essence, that's what they really want",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3475, 3517],
+                "start": 1147.99,
+                "end": 1162.83
+              }
+            },
+            {
+              "he": "הנה גם בעיונו בפרטיות",
+              "en": "even when they're studying the details and the particulars",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3668, 3677],
+                "start": 1201.85,
+                "end": 1205.47
+              }
+            },
+            {
+              "he": "יכוין הכל אל המחשבה הכללית דעצמות דוקא",
+              "en": "they'll be able to direct everything and aim everything towards the general point",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3692, 3704],
+                "start": 1210.59,
+                "end": 1215.21
+              }
+            },
+            {
+              "he": "ולא יפול מכללות הכונה כלל",
+              "en": "and will never become distracted from the general true point of everything",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3750, 3761],
+                "start": 1229.25,
+                "end": 1234.09
+              }
+            },
+            {
+              "he": "מחמת צמצום הכונה הפרטיות,",
+              "en": "by focusing his *kavana* in the details, that is not going to distract him and make him forget about what is the real priority",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3766, 3789],
+                "start": 1236.09,
+                "end": 1242.35
+              }
+            },
+            {
+              "he": "מאחר שכל הפרטים אינם נמשכים והולכים רק אחר הכלל דוקא,",
+              "en": "because the entire purpose of his studying the particulars is all as a result of and as an outcome of trying to understand the general, the big picture",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3800, 3831],
+                "start": 1246.93,
+                "end": 1259.25
+              }
+            },
+            {
+              "he": "כידוע לכל הולך בדרך אמת, ליהו״ה לבדו דוקא,",
+              "en": "as is known to anyone who is truthfully, sincerely walking to come close to Hashem, and that's all they just want to know G-d",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3840, 3864],
+                "start": 1262.67,
+                "end": 1271.93
+              }
+            },
+            {
+              "he": "כמו שכתבו זכרונם לברכה אליו ולא למדותיו",
+              "en": "like our Sages of blessed memory have said, that when you pray it should be to Him and not to His *middos*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [3868, 3898],
+                "start": 1275.83,
+                "end": 1282.63
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "General thought and particular thought cannot be together; one has to pick. What matters is the intention: if a person's whole heart and goal in studying *Chassidus* is to connect to G-d's essence, that is what counts. The Mitteler Rebbe stresses this in his introduction to *Amrei Binah*: if someone only wants to know the levels and the names of angels, as a lot of Kabbalists do, that can be the opposite of the purpose and a distraction.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3416, 3599],
+                  "start": 1121.35,
+                  "end": 1184.73
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "A sweeping remark about Kabbalists who study the levels and the angels for their own sake.",
+                "action": "replace",
+                "publishable": "General thought and particular thought cannot be together; one has to pick. What matters is the intention: if a person's whole heart and goal in studying *Chassidus* is to connect to G-d's essence, that is what counts. The Mitteler Rebbe stresses this in his introduction to *Amrei Binah*: if someone only wants to know the levels and the names of angels, that can be the opposite of the purpose and a distraction."
+              }
+            },
+            {
+              "kind": "aside",
+              "text": "If a person sincerely wants to know G-d's unity, he learns these things to see how they connect to G-d and how G-d is there, not so that he can say, \"Look, I know the secrets,\" and show off that he is a big Kabbalist. That is the opposite of the point.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3600, 3662],
+                  "start": 1185.19,
+                  "end": 1198.41
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other-groups"
+                ],
+                "reason": "A jab at Kabbalists who want to show off what they know.",
+                "action": "replace",
+                "publishable": "If a person sincerely wants to know G-d's unity, he learns these things to see how they connect to G-d and how G-d is there, not so that he can say, \"Look, I know the secrets,\" and show off what he knows. That is the opposite of the point."
+              }
+            },
+            {
+              "kind": "explanation",
+              "text": "Even when he studies the details, a person aims everything at the one general point. The general is in the back of his mind while he works on the particulars, but he never loses track of it, because that is his whole motivation.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3663, 3744],
+                  "start": 1198.41,
+                  "end": 1226.89
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "His intention will not fall from the general point while he focuses on particular details, because the details are studied only as a way of reaching the general.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3745, 3831],
+                  "start": 1226.89,
+                  "end": 1259.25
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "As is known to anyone who truly walks the path, he wants G-d alone. The Sages say that when you pray it should be to Him and not to His *middos*: you pray to Him, not to His attributes.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3832, 3898],
+                  "start": 1259.25,
+                  "end": 1282.63
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The Arizal's *kavanos* do speak of all these levels, and part of what he means is that they can be a distraction, if a person thinks about names and levels and *sefiros* and forgets G-d. That is what we do not want to happen.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3899, 3964],
+                  "start": 1283.03,
+                  "end": 1300.13
+                }
+              ]
+            },
+            {
+              "kind": "avodah",
+              "text": "*Hayom Yom* says to daven with the Arizal's *kavanos* only if one understands them and knows how to put them in context. Just thinking of names and letters is a distraction. When the intention is only to know G-d and see His essence, and one studies within that context, it is all right.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [3965, 4051],
+                  "start": 1301.93,
+                  "end": 1324.25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "xgtmunuk",
+            "zgrqgxhr"
+          ],
+          "phrases": [
+            {
+              "he": "רק כללות ענין ההתבוננות בפרטי מדותיו הוא רק כדי שיבא לעצמותו ומהותו דוקא",
+              "en": "the entire idea of studying these the details of G-d's *middos* is only in order to come to know that His essence and His true nature",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4065, 4091],
+                "start": 1329.47,
+                "end": 1338.51
+              }
+            },
+            {
+              "he": "ולא לכוון העיקר רק בכוונה של הפרט,",
+              "en": "not to make the main purpose or a person's main intention shouldn't just be to think about all these like as if it's like a spell or an incantation",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4100, 4128],
+                "start": 1341.67,
+                "end": 1351.09
+              }
+            },
+            {
+              "he": "כמו בשביל איזה לימוד לעצמו.",
+              "en": "like as if it's just its own separate subject, its own topic, just to learn angelology and learn about whatever",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4198, 4217],
+                "start": 1368.11,
+                "end": 1374.27
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The whole idea of studying the details of G-d's *middos* is to come to know His essence and true nature. The main intention may not be the detail itself, as if it were a spell or an incantation: think this name and then that angel, say this and do that. That is the opposite of the whole purpose, and it is how many people take *Kabbalah*, as if it were magic. Nor should it be its own subject, like learning angelology just to learn about whatever.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4052, 4217],
+                  "start": 1324.25,
+                  "end": 1374.27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "5456xgdn",
+            "zjpzclgm"
+          ],
+          "phrases": [
+            {
+              "he": "גם בעיונו בספר הזוהר ובכתבי האריז''ל",
+              "en": "and even when a person is studying the *Zohar* and the works of the *Arizal*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4225, 4240],
+                "start": 1377.33,
+                "end": 1381.19
+              }
+            },
+            {
+              "he": "צריך להיות על דרך זה דוקא",
+              "en": "a person has to study that with the same approach",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4247, 4256],
+                "start": 1381.19,
+                "end": 1385.23
+              }
+            },
+            {
+              "he": "ודי למבין"
+            },
+            {
+              "he": "(וכאשר מקובל היה אבי אדוני מורי ורבי זכרונו לברכה נשמתו עדן בדבר זה מפי הרב המגיד",
+              "en": "that my father, the *Alter Rebbe*, received from the Maggid of Mezeritch",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4338, 4349],
+                "start": 1419.37,
+                "end": 1423.77
+              }
+            },
+            {
+              "he": "זכרונו לברכה"
+            },
+            {
+              "he": "בפירוש גמור וכך שמעתי מפיו זכרונו לברכה)",
+              "en": "and I heard this from my father, the *Alter Rebbe*, and he explained this very clearly directly to me",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4350, 4368],
+                "start": 1424.01,
+                "end": 1430.39
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "The same goes for the *Zohar* and the writings of the *Arizal*: they must be studied with the same approach, not as *Kabbalah* on its own, separate from G-d's unity. G-d forbid.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4218, 4277],
+                  "start": 1374.27,
+                  "end": 1392.95
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The approach from the Maggid",
+              "text": "The Alter Rebbe received this approach from the Maggid of Mezeritch. The author, speaking in the first person, heard it from his father, the Alter Rebbe, who explained it very clearly and directly to him. The approach is that the details are studied only as part of connecting to the general idea of recognizing G-d's unity.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4278, 4368],
+                  "start": 1392.95,
+                  "end": 1430.39
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "There was a whole debate at that time about whether people should learn *Kabbalah* at all, or should simply have faith. When people overly intellectualize it, with maps and charts, it distracts them from the main point. But done properly, it gives great richness and brings a person's faith in the inner dimension, where he really understands and knows, not just believes. Chabad's approach has always been to put the two together this way.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4369, 4534],
+                  "start": 1430.63,
+                  "end": 1475.65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lines": [
+            "r5obmubs",
+            "mq4fqasn",
+            "lnibmlc5"
+          ],
+          "phrases": [
+            {
+              "he": "ובזה מתורץ שאלת השואלים",
+              "en": "and this is the answer to those that ask",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4553, 4561],
+                "start": 1485.85,
+                "end": 1487.97
+              }
+            },
+            {
+              "he": "על פירוש המלות דרך פרט",
+              "en": "how is it that people that know, if let's say they know these particular",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4562, 4575],
+                "start": 1488.13,
+                "end": 1491.05
+              }
+            },
+            {
+              "he": "ליודעים בהם, איך שאינם מבלבלים את מחשבת הכלל",
+              "en": "how does that not distract them from this general intention that they're davening to G-d? It seems like a distraction",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4588, 4607],
+                "start": 1494.33,
+                "end": 1499.15
+              }
+            },
+            {
+              "he": "אלא אדרבא",
+              "en": "On the contrary",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4633, 4635],
+                "start": 1508.71,
+                "end": 1509.93
+              }
+            },
+            {
+              "he": "כוונות פירוש המלות על פי המלות עפ\"י הקבלה",
+              "en": "if a person knows how to do it properly, then start see having these particular kavanos in davening according to Kabbalah, like according to the *Arizal*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4636, 4660],
+                "start": 1510.07,
+                "end": 1517.13
+              }
+            },
+            {
+              "he": "מסייעים לחזק את עומק השגת הכלל בעצמות אלקות,",
+              "en": "actually strengthens their ability to really understand the general appreciation of G-dliness",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4661, 4672],
+                "start": 1517.57,
+                "end": 1522.13
+              }
+            },
+            {
+              "he": "כידוע לטועמי טעם בהם דרך פרט כו'",
+              "en": "as it's known to anybody that has tasted them of studying it in a detailed way",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4673, 4688],
+                "start": 1522.77,
+                "end": 1526.75
+              }
+            },
+            {
+              "he": "רק החדשים",
+              "en": "but for somebody that's new to this whole study",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4691, 4699],
+                "start": 1527.13,
+                "end": 1530.93
+              }
+            },
+            {
+              "he": "יותר טוב להם להעמיק דרך כלל תחלה,",
+              "en": "a person should first focus on the general and think about these general *kavanos*",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4716, 4729],
+                "start": 1536.97,
+                "end": 1541.05
+              }
+            },
+            {
+              "he": "עד שיורגלו מעט מעט בדרך הפרט דווקא ודי למבין:",
+              "en": "and they should slowly become accustomed to seeing how that general idea is found and expressed in the details",
+              "audio": {
+                "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                "words": [4739, 4757],
+                "start": 1545.93,
+                "end": 1553.29
+              }
+            }
+          ],
+          "blocks": [
+            {
+              "kind": "explanation",
+              "text": "This answers the question of how people who know the particular meanings of the words, according to *Kabbalah* or *Chassidus*, are not distracted from the general intention they have when they daven to G-d. It seems like a distraction.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4535, 4607],
+                  "start": 1475.65,
+                  "end": 1499.15
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "On the contrary: when a person knows how to do it properly, the *kavanos* of the words, according to *Kabbalah* and the Arizal, help strengthen the depth of the grasp of the general, the unity of G-dliness. Anyone who has tasted this in detailed study knows it.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4608, 4688],
+                  "start": 1499.15,
+                  "end": 1526.75
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "For someone new to all this, it is better to deepen in the general way first, and think about these general *kavanos*, until he is slowly accustomed to the particular path. The Rebbe, in the tract on *Chassidus*, first breaks us out of our concept of the details to see a general essence higher than them, and then brings us back down to see that essence expressed in all the details. So first one needs a strong, if somewhat abstract, grasp of the general point. Then, seeing it applied in the details, one gets a rich, deep, personal understanding of that *klal*, connected to it and not a distraction.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4689, 4899],
+                  "start": 1526.75,
+                  "end": 1593.87
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "The approach starts from the top, as the Arizal does too, with G-d's essence that transcends everything, the essence of the infinite light before the *tzimtzum*, which is the general. Then we see how it comes down and permeates all the details. Afterwards, the descending flows are mostly from the bottom up and then back down again.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [4900, 5008],
+                  "start": 1594.61,
+                  "end": 1628.07
+                }
+              ]
+            },
+            {
+              "kind": "keyPoint",
+              "text": "The basic approach: keep the big picture in mind. There is only G-d, and all these levels are Him choosing to express Himself, with nothing separate from Him. With that in mind, learn the details and see how they connect back and express that essence. The objective is not to make lists and maps and memorize names and *meshalim*, which can be very distracting from the point.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [5009, 5159],
+                  "start": 1628.37,
+                  "end": 1669.73
+                }
+              ]
+            },
+            {
+              "kind": "story",
+              "title": "The child's intention",
+              "text": "The Gemara says that someone prays with the intention of a little child, who pictures G-d as an invisible king standing before him, whom he can ask for anything and who will help him. Such a simple picture is so close to the truth that you can call it the truth. He humanizes G-d in his imagery, but he does not limit Him: he knows G-d is infinite and beyond anything.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [5160, 5362],
+                  "start": 1670.85,
+                  "end": 1730.17
+                }
+              ]
+            },
+            {
+              "kind": "explanation",
+              "text": "On the other hand, someone sits davening and thinks about *Adam Kadmon* and the highest level of the chain, and he thinks he has G-d figured out. He limits G-d to this intellectual idea, even though it is a very high, lofty one, and that is so close to *avoda zara* that you can actually call it *avoda zara*.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [5363, 5450],
+                  "start": 1730.25,
+                  "end": 1759.15
+                }
+              ],
+              "sensitivity": {
+                "categories": [
+                  "other"
+                ],
+                "reason": "A sharp Chassidic judgment that an intellectual picture of G-d while davening is avoda zara; \"you can actually call it avoda zara\" is the sharp form of the teaching.",
+                "action": "replace",
+                "publishable": "On the other hand, someone sits davening and thinks about *Adam Kadmon* and the highest level of the chain, and he thinks he has G-d figured out. He limits G-d to this intellectual idea, even though it is a very high, lofty one, and that is so close to *avoda zara*.",
+                "recommend": "raw"
+              }
+            },
+            {
+              "kind": "keyPoint",
+              "text": "What to watch for: we learn about the chain of descent, *Kabbalah* and *Chassidus*, but the whole idea is to keep the essence (*yechida*) in mind and see how everything expresses it, and not let the *yechida* get trapped in any of these garments. Instead we see that those are expressing the *yechida*. That is the idea.",
+              "audio": [
+                {
+                  "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+                  "words": [5451, 5543],
+                  "start": 1759.61,
+                  "end": 1783.49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reviewQuestions": [
+    {
+      "question": "What are the two ways to contemplate G-d's unity, and what does each give that the other does not?",
+      "lines": [
+        "6cakse44",
+        "cbwgwjex",
+        "rbofzdcy"
+      ]
+    },
+    {
+      "question": "Why can the general way alone lead a person to fool himself?",
+      "lines": [
+        "u7ddzurz",
+        "btuptc4q",
+        "eza4x224"
+      ]
+    },
+    {
+      "question": "What does the particular way bring that the general way does not, and how do the two combine?",
+      "lines": [
+        "4wq4cyji",
+        "gl5dssvh",
+        "mioark6c"
+      ]
+    },
+    {
+      "question": "What is a *yichud* prati, and how does it lead to the *yichud* klali?",
+      "lines": [
+        "aryg5wsm",
+        "jv7slzlo",
+        "7ydzweo3"
+      ]
+    },
+    {
+      "question": "Why does the detail need the general, and the general need the detail?",
+      "lines": [
+        "zn3lz4x4",
+        "qknviiwj"
+      ]
+    },
+    {
+      "question": "What should a person keep as his intention when he learns *Kabbalah* and when he prays?",
+      "lines": [
+        "c7f2eggx",
+        "mq4fqasn",
+        "lnibmlc5"
+      ]
+    }
+  ],
+  "omitted": [
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "words": [5366, 5391],
+      "reason": "logistics",
+      "note": "Wrap-up before the last line of the class: where to stop, and that the same applies to the upper unity."
+    },
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "words": [5719, 5726],
+      "reason": "logistics",
+      "note": "End of the tape: where to stop."
+    },
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "words": [838, 844],
+      "reason": "reading",
+      "note": "Hebrew of line 2 read again with no English; the English for it comes at 849."
+    },
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "words": [1221, 1224],
+      "reason": "other",
+      "note": "A signpost: \"So that's one way.\""
+    },
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 044 ch 4 part 1.mp3",
+      "words": [5392, 5403],
+      "reason": "other",
+      "note": "A signpost: he says the same applies to the upper unity."
+    },
+    {
+      "lecture": "Walters 2020 Edited/Shaar HaYichud/Ch 04/Shaar HaYichud 045 ch 4 part 2.mp3",
+      "words": [587, 642],
+      "reason": "repetition",
+      "note": "Restates the inspiration that comes once in a while and the step-by-step understanding of the two blocks before it."
+    }
+  ],
+  "notes": [
+    {
+      "text": "Class 044 at about 9:58 says \"upper unity\" once where the line says the lower one (\"memalei kol almin ... yichuda tata'a\"), then corrects to \"the lower unity, which in general would be memalei kol almin\". The Hebrew says lower; the phrase and block follow the line.",
+      "lines": [
+        "4ps3yns6"
+      ]
+    },
+    {
+      "text": "Line 26 is read twice: in 044 at 30:32 (conf 0.65) and in 045 at 0:34 (conf 0.467). The English of its phrases is taken from 044, where he gives it; the 045 reading only opens with \"he is going to now contrast that\".",
+      "lines": [
+        "u7ddzurz"
+      ]
+    },
+    {
+      "text": "Class 045 opens by going back half a line to the bottom of page 222 and recapping the particular way; that recap is placed under line 26 as a recap with outOfPlace.",
+      "lines": [
+        "u7ddzurz"
+      ]
+    },
+    {
+      "text": "Class 045 at 24:35: \"this is the answer to those that ask\" is not a question a student is heard asking, so the passage is written as explanation, not as a student question. Walters' own question is not inferred.",
+      "lines": [
+        "r5obmubs"
+      ]
+    },
+    {
+      "text": "The little-child passage (045, 28:06) is introduced as \"it says in the Gemara that somebody says I daven with the intention of a little child\". The source is reported as he gives it; not checked against the Gemara.",
+      "lines": [
+        "lnibmlc5"
+      ]
+    },
+    {
+      "text": "The parenthetical on the Maggid (045 about 23:12) is in the Hebrew as the Mitteler Rebbe speaking of his father, the Alter Rebbe; Walters reads it in the first person: \"my father, the Alter Rebbe\", and \"I heard this from my father\". The prose keeps that first person as \"the author\" and does not name the Mitteler Rebbe, who is not named in the audio here.",
+      "lines": [
+        "zjpzclgm"
+      ]
+    },
+    {
+      "text": "Flagged blocks: the psychobabble aside (s6p1b3, replace); the Mitteler Rebbe's complaint about chassidim (s3p2b7, replace, judgment); the health claim about the Alter Rebbe's discourse (s3p2b5, replace, judgment: only his verdict \"not a healthy thing to do\" is cut, the Alter Rebbe's claim about the delusions stays); the sweeping remark on Kabbalists (s9p1b1) and Kabbalists who show off (s9p1b2), both replace; and \"avoda zara\" as a judgment on a way of davening (s9p4b7, replace, recommend raw). Per walters-original NOTES \"Sensitivity\", the health claim and the chassidim complaint need a person's decision.",
+      "lines": [
+        "u7ddzurz",
+        "c7f2eggx",
+        "mq4fqasn"
+      ]
+    },
+    {
+      "text": "Terms not in translit.json, defined in this file: gedula, yesod, shefa (as in chapter 9), emuna. Non-table words used in prose: Torah, Kabbalah, Modeh Ani, Reb Hillel, Maggid of Mezeritch (names), Amrei Binah, Hayom Yom, Kitzurim and Understanding by Design (book titles, italic). Proposed for translit.json by whoever merges: gedula, yesod, emuna, Modeh Ani, Hayom Yom, Amrei Binah, Kitzurim, Kabbalah. The English of 045 (s8p2) also has machlokes and rishonim in italics, his own words; add them to the table if they are kept.",
+      "lines": [
+        "h7aoass4"
+      ]
+    },
+    {
+      "text": "The Talmudic phrase \"lo harei zeh kiharei zeh\" (line 10) is not transliterated: the prose says \"the Talmud's famous expression\", and the English of line 10 is his.",
+      "lines": [
+        "ecmvdyqt"
+      ]
+    }
+  ]
+}

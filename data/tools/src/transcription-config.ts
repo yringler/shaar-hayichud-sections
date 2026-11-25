@@ -45,8 +45,31 @@ export const TRANSCRIPTION_SERIES: readonly SeriesTranscriptionConfig[] = [
     speakers: { mode: 'off' },
     note: 'Students are audible, but Sofer speaker labeling did not separate them on these tape recordings.',
   },
-  // Not yet in scope (need cleanup first): "Rabbi Benyamin Walters New Class
-  // (2020)" (:75) and "Rabbi Benyamin Walters Other Classes" (:73).
+  {
+    seriesId: '90',
+    title: 'Rabbi Benyamin Walters New Class (2020) - Edited',
+    // Off to keep the whole edited set within budget; one teacher plus a few
+    // students on Zoom, like Markel, where auto-detect did not help.
+    speakers: { mode: 'off' },
+    note: 'Edited (chatter removed) copies of the 2020 Zoom classes; the teacher is the main voice.',
+  },
+  {
+    seriesId: '102',
+    title: 'Rabbi Benyamin Walters Other Classes - Edited',
+    speakers: { mode: 'off' },
+    note: 'Edited (chatter removed) copies of the 2020 other classes; the teacher is the main voice.',
+  },
+  {
+    seriesId: '104',
+    title: 'Rabbi Benyamin Walters New Class (5784)',
+    // One-on-one with a single student who is rarely heard; most files are
+    // monologues, so speaker labeling would add cost without benefit.
+    speakers: { mode: 'off' },
+    note: 'One teacher and one student (chapters 33-54); the teacher is almost the only voice.',
+  },
+  // Not in scope: the unedited originals, "Rabbi Benyamin Walters New Class
+  // (2020)" (:75) and "Rabbi Benyamin Walters Other Classes" (:73); their
+  // edited copies (:90, :102) are transcribed instead.
 ];
 
 /** The series config for a lecture (by its top-level heading), or undefined when out of scope. */

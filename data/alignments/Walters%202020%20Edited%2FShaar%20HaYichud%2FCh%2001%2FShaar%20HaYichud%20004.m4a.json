@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 01/Shaar HaYichud 004.m4a",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20004.m4a.json",
+  "transcriptionId": "967d7894-3dd5-4c04-8bdf-769ab8d13304",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20004.m4a.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 4766,
+    "hebrewWords": 428,
+    "matchedWords": 199,
+    "chapterLines": 53,
+    "alignedLines": 7,
+    "firstLineIndex": 22,
+    "lastLineIndex": 28,
+    "meanConfidence": 0.76
+  },
+  "segments": [
+    {"startSeconds":264.04,"endSeconds":274.6,"chapter":"chapter_01","lineId":"cfysav74","confidence":0.485,"matchedWords":10,"lineWords":20,"firstWord":684,"lastWord":702},
+    {"startSeconds":290.4,"endSeconds":344.64,"chapter":"chapter_01","lineId":"ugupmtsr","confidence":0.865,"matchedWords":35,"lineWords":40,"firstWord":743,"lastWord":876},
+    {"startSeconds":346.64,"endSeconds":489.16,"chapter":"chapter_01","lineId":"en4s7zas","confidence":0.908,"matchedWords":43,"lineWords":46,"firstWord":881,"lastWord":1264},
+    {"startSeconds":853.75,"endSeconds":891.48,"chapter":"chapter_01","lineId":"6dfmnw2o","confidence":0.929,"matchedWords":16,"lineWords":18,"firstWord":2292,"lastWord":2407},
+    {"startSeconds":891.64,"endSeconds":1083.3,"chapter":"chapter_01","lineId":"clembo3b","confidence":0.917,"matchedWords":45,"lineWords":49,"firstWord":2408,"lastWord":2949},
+    {"startSeconds":1094.46,"endSeconds":1409.16,"chapter":"chapter_01","lineId":"pimwc3gh","confidence":0.837,"matchedWords":45,"lineWords":56,"firstWord":2979,"lastWord":4079},
+    {"startSeconds":1564.76,"endSeconds":1565.15,"chapter":"chapter_01","lineId":"wctxrksu","confidence":0.38,"matchedWords":2,"lineWords":6,"firstWord":4488,"lastWord":4489}
+  ]
+}

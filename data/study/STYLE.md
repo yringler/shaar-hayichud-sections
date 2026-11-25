@@ -158,14 +158,21 @@ A block is one thought of the class. It has a `kind`, `text`, and `audio`.
 | `mashal` | an analogy or example, with what it stands for | `title` |
 | `keyPoint` | the point to take away, when he stresses one | |
 | `question` | a question a student or the teacher raises, and his answer | `question`, `askedBy` |
-| `story` | a story, an event, a recollection | `title` |
+| `story` | a story or an event that makes a point (not a personal recollection: see "What may be left out") | `title` |
 | `avodah` | what to do with it: in prayer, in contemplation, in conduct | |
 | `aside` | a remark off the line: a joke, a sharp opinion, a comment on the world | |
 | `digression` | a longer excursion away from the text | `title` |
 | `recap` | a later summary of the passage (often the next class's opening) | |
 
-- **Size.** 30 to 150 words, and about a third to a half of the words it
-  cites (the check warns past 60% on a stretch of 120 words or more). A long
+- **Size.** 30 to 150 words, and about **a third** of the words it cites.
+  Go longer, up to half, only when each sentence he says is a separate step
+  of an argument, when a *mashal* or story's details carry the point, when
+  he said it tersely the first time (a short stretch with no restatement),
+  or when most of the stretch is his reading and translation of the line.
+  Restatement, false starts, setup, "you know" and the listener's replies
+  never justify length. Past half is a defect: the check warns past 50% on a
+  stretch of 120 words or more, and when a chapter's blocks pass 45% of the
+  class words they cite. A chapter normally comes to 30-40%. A long
   explanation is several blocks, one per
   step; set `"join": true` on a block that continues the previous block's
   paragraph. If he only translates a line, one short block is enough.
@@ -211,7 +218,8 @@ A block is one thought of the class. It has a `kind`, `text`, and `audio`.
 Only what `omitted` has a reason for: `logistics` (the tape, the phone, who
 is on the call), `reading` (text read or reread with no comment),
 `repetition` (said again with nothing added), `unclear` (garbled, or you
-cannot tell what he meant), `other-chapter`, `other` (with a `note`).
+cannot tell what he meant), `other-chapter`, `personal` (see below),
+`other` (with a `note`).
 A remark to the recording or the room inside a block's stretch ("Still
 there?", "Where do we go?") is simply dropped from the prose; a stretch of
 them is `logistics`. A tape's last seconds that are another recording
@@ -220,6 +228,13 @@ Everything else he says has a block, **including what is off the text**: the
 joke, the story about a relative, the opinion on science or politics, the
 complaint. Those are `aside`, `story` or `digression` blocks. They are part
 of the class, and often the part a student remembers.
+
+**Personal recollections are left out** (`personal`): his own life story,
+how he came to learn or teach, memories of his family, friends or teachers
+told for their own sake. The guide is published; the recording is there for
+anyone who wants them. A story he tells to make a point about the text
+(a *mashal*, a teaching he heard from his rebbe, an event that shows the idea)
+is not a recollection in this sense and keeps its `story` block.
 
 ## Voice
 
@@ -255,8 +270,8 @@ of the class, and often the part a student remembers.
   example, the image, the joke, the turn of phrase, and the one line worth
   quoting. Condensing never adds, softens or reorders the
   argument; it only leaves out what he said twice or said on the way.
-- Name him (as the series' `NOTES.md` says) only for something personal: a
-  recollection, an opinion he marks as his own, a disagreement with a reading.
+- Name him (as the series' `NOTES.md` says) only for something personal:
+  an opinion he marks as his own, a disagreement with a reading.
 - In a `story` or `aside`, tell it as he tells it, in the third person about
   him if he is in it.
 - **"We" and "he".** Keep his "we" when he announces what comes next ("now

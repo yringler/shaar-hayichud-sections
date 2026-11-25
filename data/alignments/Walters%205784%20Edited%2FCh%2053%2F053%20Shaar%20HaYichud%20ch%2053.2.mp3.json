@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 5784 Edited/Ch 53/053 Shaar HaYichud ch 53.2.mp3",
+  "chapter": "chapter_53",
+  "transcript": "transcripts/Walters%205784%20Edited%2FCh%2053%2F053%20Shaar%20HaYichud%20ch%2053.2.mp3.json",
+  "transcriptionId": "2519accd-7692-4da3-a2ce-40a5fe920042",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "sofer"
+  },
+  "stats": {
+    "transcriptWords": 3265,
+    "hebrewWords": 377,
+    "matchedWords": 217,
+    "chapterLines": 27,
+    "alignedLines": 7,
+    "firstLineIndex": 20,
+    "lastLineIndex": 26,
+    "meanConfidence": 0.96
+  },
+  "segments": [
+    {"startSeconds":0.98,"endSeconds":313.14,"chapter":"chapter_53","lineId":"mm763j5z","confidence":1,"matchedWords":63,"lineWords":67,"firstWord":0,"lastWord":852},
+    {"startSeconds":327.42,"endSeconds":365.68,"chapter":"chapter_53","lineId":"chbngxmz","confidence":0.991,"matchedWords":22,"lineWords":25,"firstWord":901,"lastWord":1018},
+    {"startSeconds":381.76,"endSeconds":473.5,"chapter":"chapter_53","lineId":"i3tgbm4i","confidence":0.938,"matchedWords":30,"lineWords":35,"firstWord":1074,"lastWord":1296},
+    {"startSeconds":479.32,"endSeconds":729.22,"chapter":"chapter_53","lineId":"bagdiuaw","confidence":0.894,"matchedWords":39,"lineWords":46,"firstWord":1324,"lastWord":2112},
+    {"startSeconds":736.84,"endSeconds":740.28,"chapter":"chapter_53","lineId":"kaucnukx","confidence":0.987,"matchedWords":8,"lineWords":9,"firstWord":2121,"lastWord":2134},
+    {"startSeconds":751.3,"endSeconds":816.44,"chapter":"chapter_53","lineId":"lroz3lm2","confidence":0.978,"matchedWords":32,"lineWords":34,"firstWord":2168,"lastWord":2367},
+    {"startSeconds":850.523,"endSeconds":935.86,"chapter":"chapter_53","lineId":"iu7ny7yr","confidence":0.933,"matchedWords":23,"lineWords":25,"firstWord":2474,"lastWord":2742}
+  ]
+}

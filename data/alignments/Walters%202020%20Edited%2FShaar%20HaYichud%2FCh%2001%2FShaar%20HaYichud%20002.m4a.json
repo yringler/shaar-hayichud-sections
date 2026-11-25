@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 01/Shaar HaYichud 002.m4a",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20002.m4a.json",
+  "transcriptionId": "625434a9-002e-4da5-8e0e-aaa60222558f",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20002.m4a.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 4777,
+    "hebrewWords": 366,
+    "matchedWords": 215,
+    "chapterLines": 53,
+    "alignedLines": 8,
+    "firstLineIndex": 8,
+    "lastLineIndex": 15,
+    "meanConfidence": 0.922
+  },
+  "segments": [
+    {"startSeconds":148.34,"endSeconds":156.22,"chapter":"chapter_01","lineId":"cy46bzo7","confidence":0.909,"matchedWords":10,"lineWords":12,"firstWord":380,"lastWord":400},
+    {"startSeconds":173.28,"endSeconds":179.42,"chapter":"chapter_01","lineId":"kbu523ut","confidence":0.793,"matchedWords":14,"lineWords":17,"firstWord":462,"lastWord":475},
+    {"startSeconds":223.64,"endSeconds":279,"chapter":"chapter_01","lineId":"67ihjptr","confidence":0.998,"matchedWords":27,"lineWords":28,"firstWord":608,"lastWord":752},
+    {"startSeconds":308.98,"endSeconds":358.26,"chapter":"chapter_01","lineId":"j7dd3yah","confidence":0.969,"matchedWords":22,"lineWords":22,"firstWord":842,"lastWord":997},
+    {"startSeconds":361.48,"endSeconds":387.38,"chapter":"chapter_01","lineId":"vuobhjav","confidence":0.975,"matchedWords":19,"lineWords":20,"firstWord":1009,"lastWord":1068},
+    {"startSeconds":395.35,"endSeconds":541.92,"chapter":"chapter_01","lineId":"ceetsykf","confidence":1,"matchedWords":12,"lineWords":12,"firstWord":1092,"lastWord":1540},
+    {"startSeconds":886.2,"endSeconds":1220.2,"chapter":"chapter_01","lineId":"2ub5ct7q","confidence":0.734,"matchedWords":78,"lineWords":110,"firstWord":2704,"lastWord":3732},
+    {"startSeconds":1224.16,"endSeconds":1232.5,"chapter":"chapter_01","lineId":"hnicuvea","confidence":1,"matchedWords":7,"lineWords":7,"firstWord":3745,"lastWord":3776}
+  ]
+}

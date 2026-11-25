@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "lectureId": "Walters 2020 Edited/Shaar HaYichud/Ch 01/Shaar HaYichud 007.m4a",
+  "chapter": "chapter_01",
+  "transcript": "transcripts/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20007.m4a.json",
+  "transcriptionId": "191c4f51-a000-434d-acfe-ef9f0a258ffd",
+  "method": {
+    "name": "monotonic-dp",
+    "version": 1,
+    "options": {
+      "minSimilarity": 0.6,
+      "skipCost": 0.5,
+      "isolatedWeight": 0.4,
+      "readingRun": 3,
+      "clusterGapSeconds": 150,
+      "minConfidence": 0.35,
+      "startLine": 0
+    },
+    "times": "retimed",
+    "retimed": {
+      "file": "retimed/Walters%202020%20Edited%2FShaar%20HaYichud%2FCh%2001%2FShaar%20HaYichud%20007.m4a.json",
+      "name": "mms-fa-ctc-windowed",
+      "version": 1
+    }
+  },
+  "stats": {
+    "transcriptWords": 6641,
+    "hebrewWords": 553,
+    "matchedWords": 148,
+    "chapterLines": 53,
+    "alignedLines": 6,
+    "firstLineIndex": 47,
+    "lastLineIndex": 52,
+    "meanConfidence": 0.855
+  },
+  "segments": [
+    {"startSeconds":964.22,"endSeconds":1066.6,"chapter":"chapter_01","lineId":"t3kfsj3c","confidence":0.764,"matchedWords":36,"lineWords":47,"firstWord":2967,"lastWord":3284},
+    {"startSeconds":1086.72,"endSeconds":1112.58,"chapter":"chapter_01","lineId":"7jdikglb","confidence":0.897,"matchedWords":24,"lineWords":25,"firstWord":3357,"lastWord":3425},
+    {"startSeconds":1141.52,"endSeconds":1149.6,"chapter":"chapter_01","lineId":"inpfbvtq","confidence":0.941,"matchedWords":20,"lineWords":21,"firstWord":3512,"lastWord":3532},
+    {"startSeconds":1173.1,"endSeconds":1287.68,"chapter":"chapter_01","lineId":"zarq44py","confidence":0.823,"matchedWords":26,"lineWords":32,"firstWord":3604,"lastWord":4011},
+    {"startSeconds":1296.08,"endSeconds":1370.42,"chapter":"chapter_01","lineId":"r3exqicw","confidence":0.822,"matchedWords":16,"lineWords":20,"firstWord":4040,"lastWord":4298},
+    {"startSeconds":1376.6,"endSeconds":1509.3,"chapter":"chapter_01","lineId":"4uo54llm","confidence":0.885,"matchedWords":19,"lineWords":21,"firstWord":4321,"lastWord":4799}
+  ]
+}
