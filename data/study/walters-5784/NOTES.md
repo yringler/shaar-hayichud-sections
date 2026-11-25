@@ -25,10 +25,12 @@ more than in a private file.
 - Files are numbered by chapter, not by class. A chapter recorded in two
   files is `NNN.1` and `NNN.2` (033, 037, 039, 040, 045, 046, 047, 053);
   the second usually continues the same session.
-- 054 ends with a siyum on the book, and a long, personal recollection of
-  how the learning started (from about 79:00). The recollection is the other
-  speaker's; treat it as personal (STYLE.md, private) and do not attribute it
-  to the teacher.
+- 054 ends with a siyum on the book (from about 79:00), then the teacher's
+  own recollection of how his learning of this book started: learning it at
+  fifteen in Pittsburgh with Rabbi Markel, translating it, and the early
+  recordings. It is the teacher speaking (he says "you can hear me clinking
+  the coffee" of the early recordings; the student only confirms). Name no
+  one in it but Rabbi Markel, and no student.
 - The audio is the edited copy (`Walters 5784 Edited/`); only 033.1 (pre-class
   talk about selling CDs) and 054 (a mute stretch and goodbyes) had anything
   cut.
