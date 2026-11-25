@@ -91,7 +91,7 @@
       {{ template "study-nav" $g }}
     </nav>
     <article class="study-body" data-study data-series="{{ $series.id }}" data-chapter="{{ $entry.chapter }}">
-      <p class="breadcrumb">{{ if eq $tier "public" }}<a href="/study/">Study guides</a> → {{ end }}<a href="{{ $series.url }}">{{ $series.teacher }}</a> → Chapter {{ $entry.number }}</p>
+      <p class="breadcrumb"><a href="/{{ cond (eq $tier "public") "study" "advanced" }}/">Study guides</a> → <a href="{{ $series.url }}">{{ $series.teacher }}</a> → Chapter {{ $entry.number }}</p>
       <h1>{{ $g.title }}</h1>
       <p class="study-links">
         <a class="audio-link" href="/texts/chapter-{{ $entry.number }}/?teacher={{ $teacherKey }}">Chapter text</a>

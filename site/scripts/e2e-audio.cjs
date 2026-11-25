@@ -1559,13 +1559,16 @@ async function check(name, fn) {
     }
   });
 
-  await check('advanced pages: /advanced/<series>/ and each guide built (no /advanced/ page), noindex (meta and header), out of robots, sitemap, RSS and search; nothing links in; no Markel study pill', async () => {
+  await check('advanced pages: /advanced/ (the index), /advanced/<series>/ and each guide built, noindex (meta and header), out of robots, sitemap, RSS and search; nothing links in; no Markel study pill', async () => {
     assert.ok(advancedGuides.length >= 20, `${advancedGuides.length} advanced guides`);
-    assert.ok(!fs.existsSync(path.join(PUBLIC, 'advanced', 'index.html')), '/advanced/ itself is rendered');
+    const advIndex = fs.readFileSync(path.join(PUBLIC, 'advanced', 'index.html'), 'utf8');
+    for (const s of advancedIndex.series) assert.ok(new RegExp(`href="?/advanced/${s.id}/[" >]`).test(advIndex), `/advanced/ lists ${s.id}`);
+    assert.ok(/<meta name="?robots"? content="?noindex/.test(advIndex), '/advanced/ is not noindex');
+    assert.ok(!/href="?\/study\//.test(advIndex.replace(/<nav[\s\S]*?<\/nav>/g, '')), '/advanced/ links a public guide');
     const built = fs.readdirSync(path.join(PUBLIC, 'advanced'), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
     assert.deepEqual(built.sort(), advancedIndex.series.map((s) => s.id).sort());
     const pages = allPages.filter((p) => p.startsWith(`advanced${path.sep}`));
-    assert.equal(pages.length, advancedIndex.series.length + advancedGuides.length);
+    assert.equal(pages.length, 1 + advancedIndex.series.length + advancedGuides.length);
     for (const g of advancedGuides) assert.ok(pages.includes(path.join(g.url.slice(1), 'index.html')), g.url);
     for (const rel of pages) {
       const html = fs.readFileSync(path.join(PUBLIC, rel), 'utf8');

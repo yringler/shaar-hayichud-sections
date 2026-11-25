@@ -6,12 +6,12 @@
          Draft or Out of date chip. Everything comes from
          partials/study/tier.html: the public tier, or the advanced one for
          /advanced/<series>/ (content/advanced/, .Params.studyTier
-         "advanced"; there is no /advanced/ page, so its breadcrumb has no
-         root and its about line links nothing in). */ -}}
+         "advanced"; /advanced/ itself is the advanced tier's index, the same
+         cards as /study/). */ -}}
   {{ $tier := .Params.studyTier | default "public" }}
   {{ $study := partialCached "study/tier.html" $tier $tier }}
   {{ $id := .Params.studySeries }}
-  {{ if and (not $id) (eq $tier "public") }}
+  {{ if not $id }}
   <div class="ltr-content study-index">
     <h1>{{ .Title }}</h1>
     <p class="study-about">Each guide follows one teacher's classes on a chapter: the text line by line with his own
@@ -36,7 +36,7 @@
   {{ $catalogSeries := dict }}
   {{ range (partial "catalog.html" .).series }}{{ if eq .id $series.catalogSeriesId }}{{ $catalogSeries = . }}{{ end }}{{ end }}
   <div class="ltr-content study-index">
-    <p class="breadcrumb">{{ if eq $tier "public" }}<a href="/study/">Study guides</a> → {{ else }}Study guides: {{ end }}{{ $series.teacher }}</p>
+    <p class="breadcrumb"><a href="/{{ cond (eq $tier "public") "study" "advanced" }}/">Study guides</a> → {{ $series.teacher }}</p>
     <h1>{{ $series.title }}</h1>
     <p class="study-about">Study guides to {{ $series.teacher }}’s classes, chapter by chapter.
       {{- with $catalogSeries }} The recordings are on <a href="{{ partial "classes-url.html" (dict "series" .) }}">the class pages</a>.{{ end }}</p>
