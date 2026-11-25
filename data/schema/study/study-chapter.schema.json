@@ -96,8 +96,8 @@
           "lecture": { "type": "string", "minLength": 1 },
           "words": { "$ref": "#/$defs/wordRange" },
           "reason": {
-            "description": "logistics: tape, phone, scheduling, who is on the call. reading: the text read or reread with no comment. repetition: said again with nothing added (the block that has it cites the better telling). unclear: garbled, or the writer could not tell what was meant. other-chapter: belongs to another chapter's file. other: say what in the note.",
-            "enum": ["logistics", "reading", "repetition", "unclear", "other-chapter", "other"]
+            "description": "logistics: tape, phone, scheduling, who is on the call. reading: the text read or reread with no comment. repetition: said again with nothing added (the block that has it cites the better telling). unclear: garbled, or the writer could not tell what was meant. other-chapter: belongs to another chapter's file. personal: the teacher's (or anyone's) personal recollection, left out of the guide; the recording has it. other: say what in the note.",
+            "enum": ["logistics", "reading", "repetition", "unclear", "other-chapter", "personal", "other"]
           },
           "note": { "type": "string", "minLength": 1 }
         }

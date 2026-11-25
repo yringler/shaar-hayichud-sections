@@ -30,8 +30,7 @@ more than in a private file.
   fifteen in Pittsburgh with Rabbi Markel, translating it, and the early
   recordings. It is the teacher speaking (he says "you can hear me clinking
   the coffee" of the early recordings; the student only confirms). Leave it out
-  (`omitted`): the owner asked that personal recollections stay out of the
-  public guide.
+  (`omitted`, reason `personal`; STYLE.md, What may be left out).
 - The audio is the edited copy (`Walters 5784 Edited/`); only 033.1 (pre-class
   talk about selling CDs) and 054 (a mute stretch and goodbyes) had anything
   cut.
