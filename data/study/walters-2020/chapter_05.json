@@ -2838,14 +2838,14 @@
             },
             {
               "kind": "explanation",
-              "text": "Others are interested in feeding their ego, or they come to it without proper training. They gain enough knowledge and enough words to sound intelligent and feel like an authority, but they do not have true understanding. So they do not have the proper respect and awe for what they are talking about, because they lack the perspective of what all this really means.",
+              "text": "In any subject, some are out to feed their ego or come to it without proper training. They gain enough words to sound intelligent and feel like an authority, but lack true understanding, and so lack respect and awe for their subject, not seeing what it all really means.",
               "sensitivity": {
                 "categories": [
                   "other-groups"
                 ],
                 "reason": "Attributes to a group of people (\"Others\") a motive, feeding their ego, and calls them intelligent-sounding but without true understanding.",
                 "action": "replace",
-                "publishable": "Some come to it without proper training. They gain enough knowledge and enough words to sound intelligent and feel like an authority, but they do not have true understanding. So they do not have the proper respect and awe for what they are talking about, because they lack the perspective of what all this really means.",
+                "publishable": "In any subject, some come to it without proper training. They gain enough words to sound intelligent and feel like an authority, but lack true understanding, and so lack respect and awe for their subject, not seeing what it all really means.",
                 "recommend": "judgment",
                 "judgmentNote": "The description of learners without understanding is his point and stays. The flagged words are the ego motive attributed to \"Others\". A person decides whether the sneer at their authority prints."
               },

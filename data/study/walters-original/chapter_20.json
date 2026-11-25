@@ -1995,7 +1995,7 @@
             },
             {
               "kind": "aside",
-              "text": "Say something they do not want to hear and they get angry and try to put you down, even insult you, to invalidate your opinion, whether by invalidating you or the thing itself. They already know it is bad, so it does not matter how they take it away from you; they are not weighing what you say. It is not healthy, and not comfortable to be around.",
+              "text": "Say something they do not want to hear and they get angry, put you down, even insult you, to invalidate your opinion by invalidating you or the thing itself. They already know it is bad, so any way will do; they are not weighing what you say. It is not healthy, nor comfortable to be around.",
               "join": true,
               "audio": [
                 {
@@ -2011,7 +2011,7 @@
                 ],
                 "reason": "Continues the generalisation about baalei teshuva who were not properly instructed.",
                 "action": "replace",
-                "publishable": "Say something he does not want to hear and he gets angry and tries to put you down, even insult you, to invalidate your opinion, whether by invalidating you or the thing itself. He already knows it is bad, so it does not matter how he takes it away from you; he is not weighing what you say. It is not healthy, and not comfortable to be around."
+                "publishable": "Say something he does not want to hear and he gets angry, puts you down, even insults you, to invalidate your opinion by invalidating you or the thing itself. He already knows it is bad, so any way will do; he is not weighing what you say. It is not healthy, nor comfortable to be around."
               }
             },
             {
@@ -2179,7 +2179,7 @@
             },
             {
               "kind": "aside",
-              "text": "And this is the root of the *kelipa* of Esav, a *gevura* of *kelipa*. He does not know much about Muslim philosophy, but this is what Christianity says: G-d wants you to do the Torah and the *mitzvos*, but you cannot do them without sinning, without messing up somewhere, so you need not do any of them; just rely on being saved by \"Yoshke\". So out of the *gevura* of *kelipa* came a kind of *chesed*, that you can really do whatever you want. They are so *gevura*-dik by nature that they give up.",
+              "text": "This is the root of the *kelipa* of Esav, a *gevura* of *kelipa*. He knows little of Muslim philosophy, but Christianity says: G-d wants you to do the Torah and the *mitzvos*, but you cannot do them without sinning somewhere, so you need not do any; just rely on being saved by \"Yoshke\". So out of the *gevura* of *kelipa* came a kind of *chesed*, do whatever you want: they are so *gevura*-dik by nature that they give up.",
               "audio": [
                 {
                   "lecture": "76 - Chap- 20-5 Tikun-Tohu (End).mp3",
@@ -2194,7 +2194,7 @@
                 ],
                 "reason": "Describes Christian teaching on the commandments disparagingly and names its founder with a derogatory Yiddish nickname.",
                 "action": "replace",
-                "publishable": "And this is the root of the *kelipa* of Esav, a *gevura* of *kelipa*. One says: G-d wants you to do the Torah and the *mitzvos*, but you cannot do them without sinning, without messing up somewhere, so you need not do any of them. So out of the *gevura* of *kelipa* came a kind of *chesed*, that you can really do whatever you want. Such people are so *gevura*-dik by nature that they give up.",
+                "publishable": "This is the root of the *kelipa* of Esav, a *gevura* of *kelipa*. One says: G-d wants you to do the Torah and the *mitzvos*, but you cannot do them without sinning somewhere, so you need not do any. So out of the *gevura* of *kelipa* came a kind of *chesed*, do whatever you want: such people are so *gevura*-dik by nature that they give up.",
                 "recommend": "judgment",
                 "judgmentNote": "The kelipa of Esav shown in a religion's doctrine on the commandments is the teaching here; weigh keeping \"Christianity says\" (without \"Yoshke\") against dropping the religion, as the publishable text does."
               },
