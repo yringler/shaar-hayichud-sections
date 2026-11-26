@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.0
+
+- Catalog items can be marked extra (`extra` in `classes.txt`): still
+  published and reachable, but not offered by default; apps list them after
+  their siblings, behind "More". Added `CatalogSection.extra` and
+  `CatalogLecture.extra` (`bool?`, present only on the marked node),
+  `CatalogItem.isExtra`, and `Catalog.isEffectivelyExtra(id)` /
+  `Catalog.effectivelyExtraIds()` (the item or an ancestor is marked).
+  Older files without it still parse (null).
+
 ## 2.1.0
 
 - Series can name their teacher (`teacher:` in `classes.txt`): added

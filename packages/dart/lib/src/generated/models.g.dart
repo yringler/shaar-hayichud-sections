@@ -181,6 +181,9 @@ sealed class CatalogItem {
 
   String get title;
 
+  /// Still published and reachable, but not offered by default: apps and the site list it after its siblings, behind a 'More' group. Present (as true) only on the marked section, from an 'extra' line in classes.txt; a section or lecture is effectively extra when it or any ancestor is marked.
+  bool? get extra;
+
   /// 0-based position among its siblings (sections and lectures share one sequence).
   int get displayOrder;
 
@@ -211,6 +214,7 @@ final class CatalogLecture implements CatalogItem {
     required this.id,
     required this.title,
     required this.displayOrder,
+    this.extra,
     required this.durationSeconds,
     required this.folder,
     required this.filename,
@@ -237,6 +241,7 @@ final class CatalogLecture implements CatalogItem {
         _req(m, "displayOrder", 'CatalogLecture.displayOrder'),
         'CatalogLecture.displayOrder',
       ),
+      extra: _opt(m["extra"], (v) => _bool(v, 'CatalogLecture.extra')),
       durationSeconds: _opt(
         _req(m, "durationSeconds", 'CatalogLecture.durationSeconds'),
         (v) => _double(v, 'CatalogLecture.durationSeconds'),
@@ -270,6 +275,10 @@ final class CatalogLecture implements CatalogItem {
   @override
   final int displayOrder;
 
+  /// Still published and reachable, but not offered by default (see the section's 'extra'). Present only when true. classes.txt has no lecture-level 'extra' line yet, so today a lecture is extra only through an ancestor section.
+  @override
+  final bool? extra;
+
   /// Length in seconds, or null when not yet measured.
   final double? durationSeconds;
 
@@ -290,6 +299,7 @@ final class CatalogLecture implements CatalogItem {
     "id": id,
     "title": title,
     "displayOrder": displayOrder,
+    if (extra != null) "extra": extra,
     "durationSeconds": durationSeconds,
     "folder": folder,
     "filename": filename,
@@ -304,6 +314,7 @@ final class CatalogLecture implements CatalogItem {
           other.id == id &&
           other.title == title &&
           other.displayOrder == displayOrder &&
+          other.extra == extra &&
           other.durationSeconds == durationSeconds &&
           other.folder == folder &&
           other.filename == filename &&
@@ -315,6 +326,7 @@ final class CatalogLecture implements CatalogItem {
     id,
     title,
     displayOrder,
+    extra,
     durationSeconds,
     folder,
     filename,
@@ -332,6 +344,7 @@ final class CatalogSection implements CatalogItem {
     required this.level,
     required this.title,
     this.teacher,
+    this.extra,
     required this.displayOrder,
     required this.lectureCount,
     required this.items,
@@ -357,6 +370,7 @@ final class CatalogSection implements CatalogItem {
         'CatalogSection.title',
       ),
       teacher: _opt(m["teacher"], (v) => _string(v, 'CatalogSection.teacher')),
+      extra: _opt(m["extra"], (v) => _bool(v, 'CatalogSection.extra')),
       displayOrder: _int(
         _req(m, "displayOrder", 'CatalogSection.displayOrder'),
         'CatalogSection.displayOrder',
@@ -390,6 +404,10 @@ final class CatalogSection implements CatalogItem {
   /// Top-level series only: who teaches it, from a 'teacher:' line. Several series can share a teacher; apps treat them as the same teacher.
   final String? teacher;
 
+  /// Still published and reachable, but not offered by default: apps and the site list it after its siblings, behind a 'More' group. Present (as true) only on the marked section, from an 'extra' line in classes.txt; a section or lecture is effectively extra when it or any ancestor is marked.
+  @override
+  final bool? extra;
+
   /// 0-based position among its siblings (sections and lectures share one sequence).
   @override
   final int displayOrder;
@@ -407,6 +425,7 @@ final class CatalogSection implements CatalogItem {
     "level": level,
     "title": title,
     if (teacher != null) "teacher": teacher,
+    if (extra != null) "extra": extra,
     "displayOrder": displayOrder,
     "lectureCount": lectureCount,
     "items": [for (final e in items) e.toJson()],
@@ -420,6 +439,7 @@ final class CatalogSection implements CatalogItem {
           other.level == level &&
           other.title == title &&
           other.teacher == teacher &&
+          other.extra == extra &&
           other.displayOrder == displayOrder &&
           other.lectureCount == lectureCount &&
           _listEquals(other.items, items));
@@ -430,6 +450,7 @@ final class CatalogSection implements CatalogItem {
     level,
     title,
     teacher,
+    extra,
     displayOrder,
     lectureCount,
     Object.hashAll(items),
