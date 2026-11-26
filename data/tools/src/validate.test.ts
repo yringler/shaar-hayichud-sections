@@ -45,6 +45,24 @@ describe('validateStructure', () => {
   });
 });
 
+describe('validateStructure: extra', () => {
+  it('accepts extra series and sections beside default ones', () => {
+    assert.deepEqual(structure('# S:1\n> f\na.mp3\n# T:2\nextra\nb.mp3\n## P:3\nc.mp3\n# U:4\n## Q:5\nextra\nd.mp3\n'), []);
+  });
+
+  it('rejects extra under an extra ancestor', () => {
+    assert.deepEqual(structure('# S:1\n> f\na.mp3\n# T:2\nextra\n## P:3\n### Q:4\nextra\nb.mp3\n'), [
+      '7: section 4 is marked extra, but it is already inside extra section 2 (line 4)',
+    ]);
+  });
+
+  it('rejects a catalog where every series is extra', () => {
+    assert.deepEqual(structure('# S:1\nextra\n> f\na.mp3\n# T:2\nextra\nb.mp3\n'), [
+      '1: every series is marked extra; at least one series must be offered by default',
+    ]);
+  });
+});
+
 describe('SchemaSet', () => {
   it('accepts a generated catalog and rejects a broken one', () => {
     const catalog = buildCatalog(parseClassesTxt('# S:1\n> f\n- T\na.mp3:3\n').series);
@@ -52,6 +70,17 @@ describe('SchemaSet', () => {
     const broken = structuredClone(catalog) as unknown as { series: { items: { url?: string }[] }[] };
     delete broken.series[0]!.items[0]!.url;
     assert.ok(schemas.validate('catalog', broken).some((e) => /url/.test(e)));
+  });
+
+  it('accepts a boolean extra on sections and lectures, nothing else', () => {
+    const catalog = buildCatalog(parseClassesTxt('# S:1\n> f\na.mp3\n# T:2\nextra\nb.mp3\n').series);
+    assert.equal(catalog.series[1]!.extra, true);
+    assert.deepEqual(schemas.validate('catalog', catalog), []);
+    const withLecture = structuredClone(catalog) as unknown as { series: { items: { extra?: unknown }[] }[] };
+    withLecture.series[0]!.items[0]!.extra = true;
+    assert.deepEqual(schemas.validate('catalog', withLecture), []);
+    withLecture.series[0]!.items[0]!.extra = 'yes';
+    assert.notDeepEqual(schemas.validate('catalog', withLecture), []);
   });
 
   it('validates chapter TextNode trees', () => {

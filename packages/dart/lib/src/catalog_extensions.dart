@@ -22,6 +22,59 @@ extension CatalogTree on Catalog {
     for (final s in allSections) s.id: s,
     for (final l in allLectures) l.id: l,
   };
+
+  /// The ids of every section and lecture that is effectively extra: marked
+  /// [CatalogItem.extra] itself, or inside a section that is.
+  Set<String> effectivelyExtraIds() {
+    final ids = <String>{};
+    void visit(CatalogItem item, bool inExtra) {
+      final extra = inExtra || item.isExtra;
+      if (extra) ids.add(item.id);
+      if (item is CatalogSection) {
+        for (final child in item.items) {
+          visit(child, extra);
+        }
+      }
+    }
+
+    for (final s in series) {
+      visit(s, false);
+    }
+    return ids;
+  }
+
+  /// Whether the section or lecture [id] is effectively extra: it or one of
+  /// its ancestor sections is marked [CatalogItem.extra]. False for an id
+  /// that is not in the catalog. Walks the tree; for many lookups, use
+  /// [effectivelyExtraIds] once.
+  bool isEffectivelyExtra(String id) {
+    bool? find(CatalogItem item, bool inExtra) {
+      final extra = inExtra || item.isExtra;
+      if (item.id == id) return extra;
+      if (item is CatalogSection) {
+        for (final child in item.items) {
+          final found = find(child, extra);
+          if (found != null) return found;
+        }
+      }
+      return null;
+    }
+
+    for (final s in series) {
+      final found = find(s, false);
+      if (found != null) return found;
+    }
+    return false;
+  }
+}
+
+/// The `extra` flag on any [CatalogItem].
+extension CatalogItemExtra on CatalogItem {
+  /// Whether this item itself is marked extra (`extra` in `classes.txt`):
+  /// still published and reachable, but not offered by default, so lists
+  /// put it after its siblings, behind "More". Only the marked node carries
+  /// the flag; use [CatalogTree.isEffectivelyExtra] to include ancestors.
+  bool get isExtra => extra ?? false;
 }
 
 /// Tree walks over a [CatalogSection].

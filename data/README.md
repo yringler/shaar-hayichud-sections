@@ -52,6 +52,10 @@ chapters), and, in November 2026, transcripts no longer being published
 path on a chapter index's lectures were removed; the Dart package went to
 2.0.0, which still reads the older files).
 
+The catalog's optional `extra` flag (November 2026, Dart package 2.2.0) is
+an ordinary additive change: a client that does not know it ignores the key
+and lists the item among the others, in file order.
+
 Per-lecture files are listed by URL path, with the lecture ID percent-encoded
 like a catalog URL segment (`alignments/07%20-%20Chap-…mp3.json`). On disk in
 `dist/v1/` the file has the decoded name (the lecture ID plus `.json`), so a web
@@ -124,6 +128,7 @@ and lines that start with `//`. Any other line must be one of these:
 | `### Title:N` | Starts a sub-section inside the current `##`, or inside the `#` if no `##` is open. |
 | `###` (bare) | Closes the current `###`. Later items attach to the open `##` or `#`. |
 | `teacher: Name` | Who teaches the series. Optional, at most once, directly after its `#` line. Series with the same teacher are one teacher to listeners: when the series a listener picked has no classes on a chapter, apps and the site quietly switch to another series of the same teacher there. Published as `teacher` on the catalog's series and on the lectures of `alignments/chapters/`. |
+| `extra` | Marks the heading it follows as extra: still published and reachable (its pages, URLs and IDs are unchanged), but not offered by default. Apps and the site list extra items after their siblings, collapsed behind "More". Optional, at most once, directly after any `#`, `##` or `###` heading (after its `teacher:` line, if any). It marks that section only; everything inside it is effectively extra too, so nothing inside may be marked again. Published as `"extra": true` on that section of the catalog (absent otherwise). Today the unedited Walters 2020 series (`:75`, `:73`) are extra, beside their edited copies; they sit at the end of the file so apps that predate the flag list them last. |
 | `> folder/path` | Sets the CDN folder for the file lines that follow. It **persists** across headings until the next `>` line. It may contain `/`. |
 | `- Title` | Title for the **next** file line. Without one, the lecture is titled `Part N`, where N is its position among its parent's lectures. |
 | `@ lecture-id` | Explicit stable ID for the **next** file line. The rest of the line is the ID, spaces included. |
@@ -165,6 +170,9 @@ The build reports these as errors, with line numbers:
 - a file with no `>` folder above it
 - content before the first `#`
 - a `- Title` or `@ id` line with no file line after it
+- an `extra` line that is not directly after a heading (or its `teacher:`
+  line), a second `extra` on one heading, a `teacher:` line after `extra`,
+  an `extra` section inside another extra section, or every series extra
 - an unrecognised line
 
 ## Tools (`data/tools/`)

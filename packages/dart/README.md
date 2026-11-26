@@ -10,7 +10,7 @@ CLIs and servers.
 
 ```yaml
 dependencies:
-  shaar_hayichud_data: ^2.0.0
+  shaar_hayichud_data: ^2.2.0
 ```
 
 ## Use
@@ -34,6 +34,13 @@ for (final line in chapter.allLines) {
 
 `CatalogItem` (section or lecture) and `TextNodeChild` (`TextLine` or
 `TextNode`) are sealed, so `switch` on them is exhaustive.
+
+Some catalog items are **extra**: still published and reachable, but not
+offered by default (today the unedited copies of series that also have an
+edited one). List them after their siblings, for example behind a "More"
+group. `item.isExtra` is the item's own flag, set only on the marked node;
+`catalog.isEffectivelyExtra(id)` (or `catalog.effectivelyExtraIds()` for
+many lookups) also counts a marked ancestor.
 
 Chapter text is made of `TextLine`s, each with a stable `id` that is unique
 across all chapters and survives edits to the line. Alignments and study

@@ -30,6 +30,11 @@ export interface ParsedSection {
   title: string;
   /** The series' teacher, from a 'teacher: Name' line (top-level only). */
   teacher?: string;
+  /**
+   * From a bare 'extra' line directly after the heading: still published, but
+   * not offered by default. Set on the marked section only, not its children.
+   */
+  extra?: true;
   /** 0-based index of the heading line in the source. */
   line: number;
   items: ParsedItem[];
@@ -59,6 +64,7 @@ const FOLDER = /^>\s*(.*)$/;
 const TITLE = /^-\s+(.+)$/;
 const LECTURE_ID = /^@\s+(.+)$/;
 const TEACHER = /^teacher:\s*(.*)$/i;
+const EXTRA = /^extra$/i;
 const FILE = /^(.*\.(?:mp3|m4a))(?::(\d+(?:\.\d+)?))?$/i;
 
 export const MEDIA_FILE = /\.(mp3|m4a)$/i;
@@ -79,6 +85,9 @@ export function parseClassesTxt(text: string): ParseResult {
   let folder: string | null = null;
   let pendingTitle: { text: string; line: number } | null = null;
   let pendingId: { text: string; line: number } | null = null;
+  // The heading whose 'teacher:' / 'extra' lines may still follow: set by a
+  // heading, cleared by any other line.
+  let opened: ParsedSection | null = null;
 
   const error = (index: number, message: string) => errors.push({ line: index + 1, message });
 
@@ -96,6 +105,11 @@ export function parseClassesTxt(text: string): ParseResult {
   lines.forEach((raw, index) => {
     const line = raw.trim();
     if (line === '' || line.startsWith('//')) return;
+
+    const extra = EXTRA.test(line);
+    const teacher = TEACHER.exec(line);
+    const justOpened = opened;
+    if (!extra && !teacher) opened = null;
 
     const heading = HEADING.exec(line);
     if (heading) {
@@ -117,6 +131,7 @@ export function parseClassesTxt(text: string): ParseResult {
         return;
       }
       const section: ParsedSection = { kind: 'section', id: m[2]!, level, title: m[1]!, line: index, items: [] };
+      opened = section;
 
       if (level === 1) {
         series.push(section);
@@ -137,7 +152,6 @@ export function parseClassesTxt(text: string): ParseResult {
       return;
     }
 
-    const teacher = TEACHER.exec(line);
     if (teacher) {
       const name = teacher[1]!.trim();
       if (name === '') return error(index, "'teacher:' line needs a name");
@@ -145,7 +159,17 @@ export function parseClassesTxt(text: string): ParseResult {
         return error(index, "'teacher:' must come directly after a '#' heading");
       }
       if (top.teacher !== undefined) return error(index, `series ${top.id} already has a teacher`);
+      if (top.extra) return error(index, "'teacher:' must come before 'extra'");
       top.teacher = name;
+      return;
+    }
+
+    if (extra) {
+      if (!justOpened) {
+        return error(index, "'extra' must come directly after a heading (after its 'teacher:' line, if any)");
+      }
+      if (justOpened.extra) return error(index, `section ${justOpened.id} is already marked extra`);
+      justOpened.extra = true;
       return;
     }
 

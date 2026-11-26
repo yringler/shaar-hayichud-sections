@@ -20,13 +20,24 @@ export const SCHEMA_FILES = {
 
 export type SchemaName = keyof typeof SCHEMA_FILES;
 
-/** Duplicate / colliding ids and duplicate files inside one section. */
+/**
+ * Duplicate / colliding ids, duplicate files inside one section, and the
+ * 'extra' marks (never under an extra ancestor, never on every series).
+ */
 export function validateStructure(series: ParsedSection[]): Diagnostic[] {
   const errors: Diagnostic[] = [];
   const sectionIds = new Map<string, number>();
   const lectureIds = new Map<string, number>();
 
-  const visit = (section: ParsedSection) => {
+  const visit = (section: ParsedSection, extraAncestor: ParsedSection | null) => {
+    if (section.extra && extraAncestor) {
+      errors.push({
+        line: section.line + 1,
+        message: `section ${section.id} is marked extra, but it is already inside extra section ${extraAncestor.id} (line ${extraAncestor.line + 1})`,
+      });
+    }
+    const extraHere = extraAncestor ?? (section.extra ? section : null);
+
     const seenSection = sectionIds.get(section.id);
     if (seenSection !== undefined) {
       errors.push({
@@ -40,7 +51,7 @@ export function validateStructure(series: ParsedSection[]): Diagnostic[] {
     const filesHere = new Map<string, number>();
     for (const item of section.items) {
       if (item.kind === 'section') {
-        visit(item);
+        visit(item, extraHere);
         continue;
       }
       const seenId = lectureIds.get(item.id);
@@ -67,7 +78,14 @@ export function validateStructure(series: ParsedSection[]): Diagnostic[] {
       }
     }
   };
-  series.forEach(visit);
+  series.forEach((s) => visit(s, null));
+
+  if (series.length > 0 && series.every((s) => s.extra)) {
+    errors.push({
+      line: series[0]!.line + 1,
+      message: "every series is marked extra; at least one series must be offered by default",
+    });
+  }
 
   for (const [id, line] of lectureIds) {
     const sectionLine = sectionIds.get(id);
