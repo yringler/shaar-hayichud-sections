@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.1.0
+
+- Series can name their teacher (`teacher:` in `classes.txt`): added
+  `CatalogSection.teacher`, `ChapterAlignmentsLecture.teacher` and
+  `ChapterSeries.teacher`. Older files without it still parse (null).
+- `chooseSeries` takes the saved series' teacher (`savedTeacher`, with
+  `teacherOf`; `ChapterAlignmentsIndex.chooseSeries(savedId, savedTeacher:)`):
+  where the saved series has no classes on a chapter, the first series there
+  by the same teacher is chosen, without `fellBack`. Without a teacher it
+  behaves as before.
+
 ## 2.0.0
 
 Breaking: the site stopped publishing class transcripts and the study-beta

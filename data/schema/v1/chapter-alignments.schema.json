@@ -70,6 +70,11 @@
           "description": "Series title.",
           "type": "string"
         },
+        "teacher": {
+          "description": "The series' teacher (catalog `teacher`), when it has one. Classes of series with the same teacher are the same teacher to the listener.",
+          "type": "string",
+          "minLength": 1
+        },
         "part": {
           "description": "Titles of the headings between the series and the lecture, joined with ' / '.",
           "type": "string"

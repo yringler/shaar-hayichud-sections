@@ -97,7 +97,12 @@
     { "name": "nothing saved: the default teacher, even listed second", "here": ["37", "0"], "saved": null, "expect": { "series": "0", "fellBack": false } },
     { "name": "saved teacher absent: the default, flagged", "here": ["37", "0"], "saved": "5", "expect": { "series": "0", "fellBack": true } },
     { "name": "neither saved nor default here: the first", "here": ["37", "5"], "saved": null, "expect": { "series": "37", "fellBack": false } },
-    { "name": "no series", "here": [], "saved": null, "expect": { "series": null, "fellBack": false } }
+    { "name": "no series", "here": [], "saved": null, "expect": { "series": null, "fellBack": false } },
+    { "name": "saved series absent: another series of its teacher, quietly", "here": [{ "id": "37", "teacher": "M" }, { "id": "0", "teacher": "W" }, { "id": "104", "teacher": "W" }], "saved": "90", "savedTeacher": "W", "expect": { "series": "0", "fellBack": false } },
+    { "name": "saved series absent: the first of its teacher's here, not the default", "here": [{ "id": "37", "teacher": "M" }, { "id": "104", "teacher": "W" }, { "id": "105", "teacher": "W" }], "saved": "0", "savedTeacher": "W", "expect": { "series": "104", "fellBack": false } },
+    { "name": "saved series present wins over its teacher's others", "here": [{ "id": "0", "teacher": "W" }, { "id": "90", "teacher": "W" }], "saved": "90", "savedTeacher": "W", "expect": { "series": "90", "fellBack": false } },
+    { "name": "saved teacher absent too: the default, flagged", "here": [{ "id": "37", "teacher": "M" }, { "id": "0", "teacher": "W" }], "saved": "5", "savedTeacher": "X", "expect": { "series": "0", "fellBack": true } },
+    { "name": "teacher unknown: as before, flagged", "here": [{ "id": "37", "teacher": "M" }, { "id": "104", "teacher": "W" }], "saved": "0", "savedTeacher": null, "expect": { "series": "37", "fellBack": true } }
   ],
   "topicAt": [
     { "topics": [10, 60], "t": 5, "expect": null },

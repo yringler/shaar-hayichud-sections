@@ -231,36 +231,51 @@ int? nextInSeries(List<String> seriesIds, int lecture) {
   return null;
 }
 
-/// A series (teacher) that discusses a chapter.
+/// A series that discusses a chapter, with its [teacher] when the catalog
+/// names one (several series can share a teacher).
 final class ChapterSeries {
-  const ChapterSeries(this.id, this.title);
+  const ChapterSeries(this.id, this.title, [this.teacher]);
 
   final String id;
   final String title;
+  final String? teacher;
 
   @override
   bool operator ==(Object other) =>
-      other is ChapterSeries && other.id == id && other.title == title;
+      other is ChapterSeries &&
+      other.id == id &&
+      other.title == title &&
+      other.teacher == teacher;
 
   @override
-  int get hashCode => Object.hash(id, title);
+  int get hashCode => Object.hash(id, title, teacher);
 
   @override
-  String toString() => 'ChapterSeries($id, $title)';
+  String toString() => 'ChapterSeries($id, $title, $teacher)';
 }
 
-/// The teacher to play on a chapter: the saved one ([savedId]) when it has
-/// classes here, else the default teacher ([defaultSeriesId]), else the
-/// first series here. `fellBack` is true only when a saved choice could not
-/// be honoured (worth telling the listener).
+/// The teacher to play on a chapter: the saved series ([savedId]) when it
+/// has classes here, else the first series here by the saved series'
+/// teacher ([savedTeacher], via [teacherOf]: to the listener, series of one
+/// teacher are the same teacher), else the default teacher
+/// ([defaultSeriesId]), else the first series here. `fellBack` is true only
+/// when a saved choice could not be honoured by its own teacher (worth
+/// telling the listener).
 ({S? series, bool fellBack}) chooseSeries<S>(
   List<S> here,
   String? savedId,
-  String Function(S) idOf,
-) {
+  String Function(S) idOf, {
+  String? savedTeacher,
+  String? Function(S)? teacherOf,
+}) {
   if (savedId != null) {
     for (final s in here) {
       if (idOf(s) == savedId) return (series: s, fellBack: false);
+    }
+    if (savedTeacher != null && teacherOf != null) {
+      for (final s in here) {
+        if (teacherOf(s) == savedTeacher) return (series: s, fellBack: false);
+      }
     }
   }
   S? series;
@@ -298,7 +313,8 @@ extension ChapterAlignmentsIndex on ChapterAlignments {
     final seen = <String>{};
     return [
       for (final l in lectures)
-        if (seen.add(l.seriesId)) ChapterSeries(l.seriesId, l.series),
+        if (seen.add(l.seriesId))
+          ChapterSeries(l.seriesId, l.series, l.teacher),
     ];
   }
 
@@ -359,9 +375,18 @@ extension ChapterAlignmentsIndex on ChapterAlignments {
   /// [nextInSeries] within this chapter.
   int? nextInSeries(int lecture) => _nextInSeries(seriesIds, lecture);
 
-  /// [chooseSeries] among this chapter's [series].
-  ({ChapterSeries? series, bool fellBack}) chooseSeries(String? savedId) =>
-      _chooseSeries(series, savedId, (s) => s.id);
+  /// [chooseSeries] among this chapter's [series], [savedTeacher] being the
+  /// saved series' teacher, when known.
+  ({ChapterSeries? series, bool fellBack}) chooseSeries(
+    String? savedId, {
+    String? savedTeacher,
+  }) => _chooseSeries(
+    series,
+    savedId,
+    (s) => s.id,
+    savedTeacher: savedTeacher,
+    teacherOf: (s) => s.teacher,
+  );
 }
 
 // Aliases so the extension methods can call the top-level functions they

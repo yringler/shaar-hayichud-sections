@@ -124,6 +124,8 @@ interface ChapterPlayer {
 interface SavedSeries {
   id: string;
   title: string;
+  /** The series' teacher, when known: another series of theirs stands in where this one has no classes. */
+  teacher?: string;
 }
 
 /**
@@ -140,7 +142,8 @@ function readSavedSeries(): SavedSeries | null {
   if (!raw) return null;
   try {
     const v = JSON.parse(raw) as Partial<SavedSeries>;
-    return typeof v.id === 'string' && typeof v.title === 'string' ? { id: v.id, title: v.title } : null;
+    if (typeof v.id !== 'string' || typeof v.title !== 'string') return null;
+    return typeof v.teacher === 'string' ? { id: v.id, title: v.title, teacher: v.teacher } : { id: v.id, title: v.title };
   } catch {
     return null;
   }
@@ -328,7 +331,13 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
       const linked = resolveTeacher(here, teacherParam);
       const { series: chosen, fellBack } = linked
         ? { series: linked, fellBack: false }
-        : chooseSeries(here, preferred?.id ?? null);
+        : chooseSeries(here, preferred?.id ?? null, preferred?.teacher ?? null);
+      // A choice saved before series had teachers learns its teacher here.
+      const own = preferred && here.find((s) => s.id === preferred!.id);
+      if (preferred && preferred.teacher === undefined && own?.teacher !== undefined) {
+        preferred = { ...preferred, teacher: own.teacher };
+        saveSeries(preferred);
+      }
       if (chosen && seriesSelect) {
         wanted = { ...chosen, source: linked ? 'query' : 'selected' };
         seriesSelect.value = chosen.id;
@@ -349,7 +358,8 @@ function initChapter(panel: HTMLElement, audio: HTMLAudioElement, url: string, a
 
   seriesSelect?.addEventListener('change', () => {
     const id = seriesSelect.value;
-    preferred = { id, title: seriesTitle(id) };
+    const teacher = data ? chapterSeries(data).find((s) => s.id === id)?.teacher : undefined;
+    preferred = teacher === undefined ? { id, title: seriesTitle(id) } : { id, title: seriesTitle(id), teacher };
     wanted = { ...preferred, source: 'selected' };
     saveSeries(preferred);
     // The reader's own pick replaces the link's: drop ?teacher= so a reload

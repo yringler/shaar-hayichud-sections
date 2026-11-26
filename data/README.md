@@ -123,6 +123,7 @@ and lines that start with `//`. Any other line must be one of these:
 | `##` (bare) | Closes the current `##` (and `###`). Later items attach to the `#`. |
 | `### Title:N` | Starts a sub-section inside the current `##`, or inside the `#` if no `##` is open. |
 | `###` (bare) | Closes the current `###`. Later items attach to the open `##` or `#`. |
+| `teacher: Name` | Who teaches the series. Optional, at most once, directly after its `#` line. Series with the same teacher are one teacher to listeners: when the series a listener picked has no classes on a chapter, apps and the site quietly switch to another series of the same teacher there. Published as `teacher` on the catalog's series and on the lectures of `alignments/chapters/`. |
 | `> folder/path` | Sets the CDN folder for the file lines that follow. It **persists** across headings until the next `>` line. It may contain `/`. |
 | `- Title` | Title for the **next** file line. Without one, the lecture is titled `Part N`, where N is its position among its parent's lectures. |
 | `@ lecture-id` | Explicit stable ID for the **next** file line. The rest of the line is the ID, spaces included. |
@@ -139,6 +140,7 @@ Example:
 
 ```
 # Rabbi Markel Series (Advanced):37
+teacher: Rabbi Yossi Markel
 ## Part 1: Chapters 10-15:38
 > Markel Advanced Compact Seminar/Advanced  part 1 ch 10-15 compact
 - Introduction

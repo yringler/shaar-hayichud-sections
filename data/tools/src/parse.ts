@@ -28,6 +28,8 @@ export interface ParsedSection {
   id: string;
   level: Level;
   title: string;
+  /** The series' teacher, from a 'teacher: Name' line (top-level only). */
+  teacher?: string;
   /** 0-based index of the heading line in the source. */
   line: number;
   items: ParsedItem[];
@@ -56,6 +58,7 @@ const HEADING_ID = /^(.*?)\s*:\s*(\d+)$/;
 const FOLDER = /^>\s*(.*)$/;
 const TITLE = /^-\s+(.+)$/;
 const LECTURE_ID = /^@\s+(.+)$/;
+const TEACHER = /^teacher:\s*(.*)$/i;
 const FILE = /^(.*\.(?:mp3|m4a))(?::(\d+(?:\.\d+)?))?$/i;
 
 export const MEDIA_FILE = /\.(mp3|m4a)$/i;
@@ -131,6 +134,18 @@ export function parseClassesTxt(text: string): ParseResult {
         parent.items.push(section);
         leaf = section;
       }
+      return;
+    }
+
+    const teacher = TEACHER.exec(line);
+    if (teacher) {
+      const name = teacher[1]!.trim();
+      if (name === '') return error(index, "'teacher:' line needs a name");
+      if (!top || sub || leaf || top.items.length > 0) {
+        return error(index, "'teacher:' must come directly after a '#' heading");
+      }
+      if (top.teacher !== undefined) return error(index, `series ${top.id} already has a teacher`);
+      top.teacher = name;
       return;
     }
 

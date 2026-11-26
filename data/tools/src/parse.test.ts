@@ -101,6 +101,24 @@ describe('parseClassesTxt', () => {
   });
 });
 
+describe('teacher lines', () => {
+  it('sets the teacher of the series it follows', () => {
+    const r = parseClassesTxt('# A:1\nteacher: Rabbi X\n> f\n1.mp3\n# B:2\n> f\n2.mp3\n');
+    assert.deepEqual(r.errors, []);
+    assert.equal(r.series[0]!.teacher, 'Rabbi X');
+    assert.equal(r.series[1]!.teacher, undefined);
+  });
+
+  it('must come directly after a series heading, once', () => {
+    const after = (text: string) => parseClassesTxt(text).errors.map((e) => e.message);
+    assert.match(after('teacher: X\n# A:1\n')[0]!, /directly after a '#' heading/);
+    assert.match(after('# A:1\n> f\n1.mp3\nteacher: X\n')[0]!, /directly after a '#' heading/);
+    assert.match(after('# A:1\n## P:2\nteacher: X\n')[0]!, /directly after a '#' heading/);
+    assert.match(after('# A:1\nteacher: X\nteacher: Y\n')[0]!, /already has a teacher/);
+    assert.match(after('# A:1\nteacher:\n')[0]!, /needs a name/);
+  });
+});
+
 describe('formatFileLine', () => {
   it('round-trips through the parser', () => {
     const line = formatFileLine('x y.mp3', 1477.25);
