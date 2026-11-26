@@ -175,6 +175,8 @@ export interface ChapterAlignments {
     title: string;
     seriesId: string;
     series: string;
+    /** The series' teacher (catalog `teacher`), when it has one. */
+    teacher?: string;
     /** Headings between the series and the lecture, e.g. "Chapters 10-15 / Chapter 10". */
     part: string;
     durationSeconds: number | null;
@@ -214,6 +216,7 @@ export function chapterAlignments(
       title: info.lecture.title,
       seriesId: info.series.id,
       series: info.series.title,
+      ...(info.series.teacher !== undefined ? { teacher: info.series.teacher } : {}),
       part: info.ancestors.slice(1).map((s) => s.title).join(' / '),
       durationSeconds: info.lecture.durationSeconds,
       alignment: `alignments/${file}`,

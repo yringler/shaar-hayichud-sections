@@ -295,7 +295,8 @@ test("vectors: nextInSeries", () => {
 
 for (const c of vectors.chooseSeries) {
   test(`vectors: chooseSeries: ${c.name}`, () => {
-    const r = chooseSeries(c.here.map((id) => ({ id })), c.saved);
+    const here = c.here.map((s) => (typeof s === "string" ? { id: s } : s));
+    const r = chooseSeries(here, c.saved, c.savedTeacher ?? null);
     assert.deepEqual({ series: r.series?.id ?? null, fellBack: r.fellBack }, c.expect);
   });
 }

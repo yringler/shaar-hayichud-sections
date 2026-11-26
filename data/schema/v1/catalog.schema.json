@@ -43,6 +43,11 @@
           "maximum": 3
         },
         "title": { "type": "string", "minLength": 1 },
+        "teacher": {
+          "description": "Top-level series only: who teaches it, from a 'teacher:' line. Several series can share a teacher; apps treat them as the same teacher.",
+          "type": "string",
+          "minLength": 1
+        },
         "displayOrder": {
           "description": "0-based position among its siblings (sections and lectures share one sequence).",
           "type": "integer",

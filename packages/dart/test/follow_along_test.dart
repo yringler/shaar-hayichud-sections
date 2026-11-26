@@ -208,10 +208,26 @@ void main() {
 
     for (final c in cases('chooseSeries')) {
       test('chooseSeries: ${c['name']}', () {
-        final here = (c['here']! as List<Object?>).cast<String>();
-        final r = chooseSeries(here, c['saved'] as String?, (s) => s);
+        final here = [
+          for (final s in c['here']! as List<Object?>)
+            switch (s) {
+              final String id => (id: id, teacher: null),
+              final Map<String, Object?> m => (
+                id: m['id']! as String,
+                teacher: m['teacher'] as String?,
+              ),
+              _ => throw ArgumentError(s),
+            },
+        ];
+        final r = chooseSeries(
+          here,
+          c['saved'] as String?,
+          (s) => s.id,
+          savedTeacher: c['savedTeacher'] as String?,
+          teacherOf: (s) => s.teacher,
+        );
         final e = c['expect']! as Map<String, Object?>;
-        expect(r.series, e['series']);
+        expect(r.series?.id, e['series']);
         expect(r.fellBack, e['fellBack']);
       });
     }

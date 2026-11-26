@@ -331,6 +331,7 @@ final class CatalogSection implements CatalogItem {
     required this.id,
     required this.level,
     required this.title,
+    this.teacher,
     required this.displayOrder,
     required this.lectureCount,
     required this.items,
@@ -355,6 +356,7 @@ final class CatalogSection implements CatalogItem {
         _req(m, "title", 'CatalogSection.title'),
         'CatalogSection.title',
       ),
+      teacher: _opt(m["teacher"], (v) => _string(v, 'CatalogSection.teacher')),
       displayOrder: _int(
         _req(m, "displayOrder", 'CatalogSection.displayOrder'),
         'CatalogSection.displayOrder',
@@ -385,6 +387,9 @@ final class CatalogSection implements CatalogItem {
   @override
   final String title;
 
+  /// Top-level series only: who teaches it, from a 'teacher:' line. Several series can share a teacher; apps treat them as the same teacher.
+  final String? teacher;
+
   /// 0-based position among its siblings (sections and lectures share one sequence).
   @override
   final int displayOrder;
@@ -401,6 +406,7 @@ final class CatalogSection implements CatalogItem {
     "id": id,
     "level": level,
     "title": title,
+    if (teacher != null) "teacher": teacher,
     "displayOrder": displayOrder,
     "lectureCount": lectureCount,
     "items": [for (final e in items) e.toJson()],
@@ -413,6 +419,7 @@ final class CatalogSection implements CatalogItem {
           other.id == id &&
           other.level == level &&
           other.title == title &&
+          other.teacher == teacher &&
           other.displayOrder == displayOrder &&
           other.lectureCount == lectureCount &&
           _listEquals(other.items, items));
@@ -422,6 +429,7 @@ final class CatalogSection implements CatalogItem {
     id,
     level,
     title,
+    teacher,
     displayOrder,
     lectureCount,
     Object.hashAll(items),
@@ -828,6 +836,7 @@ final class ChapterAlignmentsLecture {
     required this.title,
     required this.seriesId,
     required this.series,
+    this.teacher,
     required this.part,
     required this.durationSeconds,
     required this.alignment,
@@ -859,6 +868,10 @@ final class ChapterAlignmentsLecture {
       series: _string(
         _req(m, "series", 'ChapterAlignmentsLecture.series'),
         'ChapterAlignmentsLecture.series',
+      ),
+      teacher: _opt(
+        m["teacher"],
+        (v) => _string(v, 'ChapterAlignmentsLecture.teacher'),
       ),
       part: _string(
         _req(m, "part", 'ChapterAlignmentsLecture.part'),
@@ -898,6 +911,9 @@ final class ChapterAlignmentsLecture {
   /// Series title.
   final String series;
 
+  /// The series' teacher (catalog `teacher`), when it has one. Classes of series with the same teacher are the same teacher to the listener.
+  final String? teacher;
+
   /// Titles of the headings between the series and the lecture, joined with ' / '.
   final String part;
 
@@ -918,6 +934,7 @@ final class ChapterAlignmentsLecture {
     "title": title,
     "seriesId": seriesId,
     "series": series,
+    if (teacher != null) "teacher": teacher,
     "part": part,
     "durationSeconds": durationSeconds,
     "alignment": alignment,
@@ -934,6 +951,7 @@ final class ChapterAlignmentsLecture {
           other.title == title &&
           other.seriesId == seriesId &&
           other.series == series &&
+          other.teacher == teacher &&
           other.part == part &&
           other.durationSeconds == durationSeconds &&
           other.alignment == alignment &&
@@ -947,6 +965,7 @@ final class ChapterAlignmentsLecture {
     title,
     seriesId,
     series,
+    teacher,
     part,
     durationSeconds,
     alignment,

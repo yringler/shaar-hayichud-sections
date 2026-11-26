@@ -23,6 +23,8 @@ export interface CatalogSection {
   id: string;
   level: Level;
   title: string;
+  /** Top-level series only: who teaches it (several series can share one). */
+  teacher?: string;
   displayOrder: number;
   lectureCount: number;
   items: CatalogItem[];
@@ -90,6 +92,7 @@ function convertSection(section: ParsedSection, displayOrder: number, cdnBase: s
     id: section.id,
     level: section.level,
     title: section.title,
+    ...(section.teacher !== undefined ? { teacher: section.teacher } : {}),
     displayOrder,
     lectureCount,
     items,

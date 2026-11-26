@@ -16,6 +16,8 @@ export interface Lecture {
   title: string;
   seriesId: string;
   series: string;
+  /** The series' teacher (absent in older files and for a series without one). */
+  teacher?: string;
   part: string;
   durationSeconds: number | null;
   alignment: string;
@@ -293,10 +295,13 @@ export function nextInSeries(lectures: readonly Pick<Lecture, 'seriesId'>[], lec
   return null;
 }
 
-/** Series that discuss this chapter, in catalog order of their first class. */
-export function chapterSeries(data: ChapterAlignments): { id: string; title: string }[] {
-  const out: { id: string; title: string }[] = [];
-  for (const l of data.lectures) if (!out.some((s) => s.id === l.seriesId)) out.push({ id: l.seriesId, title: l.series });
+/** Series that discuss this chapter, in catalog order of their first class, with their teacher. */
+export function chapterSeries(data: ChapterAlignments): { id: string; title: string; teacher?: string }[] {
+  const out: { id: string; title: string; teacher?: string }[] = [];
+  for (const l of data.lectures) {
+    if (out.some((s) => s.id === l.seriesId)) continue;
+    out.push(l.teacher === undefined ? { id: l.seriesId, title: l.series } : { id: l.seriesId, title: l.series, teacher: l.teacher });
+  }
   return out;
 }
 
@@ -304,16 +309,22 @@ export function chapterSeries(data: ChapterAlignments): { id: string; title: str
 export const DEFAULT_SERIES_ID = '0';
 
 /**
- * The teacher a chapter page plays: the saved one when it has classes on the
- * chapter, else the default teacher, else the first series here. `fellBack`
- * is true only when a saved choice could not be honoured (the page says so).
+ * The teacher a chapter page plays: the saved series when it has classes on
+ * the chapter, else the first series here by the saved series' teacher
+ * (`savedTeacher`: several series can share a teacher, and to the listener
+ * they are the same one), else the default teacher, else the first series
+ * here. `fellBack` is true only when a saved choice could not be honoured
+ * by its own teacher (the page says so).
  */
-export function chooseSeries<S extends { id: string }>(
+export function chooseSeries<S extends { id: string; teacher?: string }>(
   here: readonly S[],
   savedId: string | null,
+  savedTeacher: string | null = null,
 ): { series: S | null; fellBack: boolean } {
   const saved = savedId === null ? undefined : here.find((s) => s.id === savedId);
   if (saved) return { series: saved, fellBack: false };
+  const sameTeacher = savedId === null || savedTeacher === null ? undefined : here.find((s) => s.teacher === savedTeacher);
+  if (sameTeacher) return { series: sameTeacher, fellBack: false };
   const series = here.find((s) => s.id === DEFAULT_SERIES_ID) ?? here[0] ?? null;
   return { series, fellBack: savedId !== null };
 }
