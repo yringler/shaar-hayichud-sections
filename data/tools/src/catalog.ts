@@ -16,6 +16,8 @@ export interface CatalogLecture {
   filename: string;
   mediaType: 'audio/mpeg' | 'audio/mp4';
   url: string;
+  /** Still published, but not offered by default. Only ever emitted as true. */
+  extra?: boolean;
 }
 
 export interface CatalogSection {
@@ -25,6 +27,11 @@ export interface CatalogSection {
   title: string;
   /** Top-level series only: who teaches it (several series can share one). */
   teacher?: string;
+  /**
+   * Still published, but not offered by default. Emitted (as true) on the
+   * marked section only; its descendants are effectively extra too.
+   */
+  extra?: boolean;
   displayOrder: number;
   lectureCount: number;
   items: CatalogItem[];
@@ -93,6 +100,7 @@ function convertSection(section: ParsedSection, displayOrder: number, cdnBase: s
     level: section.level,
     title: section.title,
     ...(section.teacher !== undefined ? { teacher: section.teacher } : {}),
+    ...(section.extra ? { extra: true } : {}),
     displayOrder,
     lectureCount,
     items,

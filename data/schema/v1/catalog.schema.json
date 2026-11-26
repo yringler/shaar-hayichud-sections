@@ -48,6 +48,10 @@
           "type": "string",
           "minLength": 1
         },
+        "extra": {
+          "description": "Still published and reachable, but not offered by default: apps and the site list it after its siblings, behind a 'More' group. Present (as true) only on the marked section, from an 'extra' line in classes.txt; a section or lecture is effectively extra when it or any ancestor is marked.",
+          "type": "boolean"
+        },
         "displayOrder": {
           "description": "0-based position among its siblings (sections and lectures share one sequence).",
           "type": "integer",
@@ -83,6 +87,10 @@
           "minLength": 1
         },
         "displayOrder": { "type": "integer", "minimum": 0 },
+        "extra": {
+          "description": "Still published and reachable, but not offered by default (see the section's 'extra'). Present only when true. classes.txt has no lecture-level 'extra' line yet, so today a lecture is extra only through an ancestor section.",
+          "type": "boolean"
+        },
         "durationSeconds": {
           "description": "Length in seconds, or null when not yet measured.",
           "type": ["number", "null"],

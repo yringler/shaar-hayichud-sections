@@ -50,15 +50,16 @@ describe('build (real data/)', () => {
   it('keeps the ids lessons2 clients persist (lecture id = filename, section id = ":N")', () => {
     const catalog = readJson(path.join(out, 'v1/catalog.json')) as Catalog;
     assert.deepEqual(
-      catalog.series.map((s) => [s.id, s.title]),
+      catalog.series.map((s) => [s.id, s.title, s.extra === true]),
       [
-        ['0', 'Rabbi Benyamin Walters Original Class'],
-        ['37', 'Rabbi Markel Series (Advanced)'],
-        ['75', 'Rabbi Benyamin Walters New Class (2020)'],
-        ['73', 'Rabbi Benyamin Walters Other Classes'],
-        ['90', 'Rabbi Benyamin Walters New Class (2020) - Edited'],
-        ['102', 'Rabbi Benyamin Walters Other Classes - Edited'],
-        ['104', 'Rabbi Benyamin Walters New Class (5784)'],
+        ['0', 'Rabbi Benyamin Walters Original Class', false],
+        ['37', 'Rabbi Markel Series (Advanced)', false],
+        ['90', 'Rabbi Benyamin Walters New Class (2020) - Edited', false],
+        ['102', 'Rabbi Benyamin Walters Other Classes - Edited', false],
+        ['104', 'Rabbi Benyamin Walters New Class (5784)', false],
+        // Unedited copies of 90 and 102: extra, and last for apps that predate the flag.
+        ['75', 'Rabbi Benyamin Walters New Class (2020)', true],
+        ['73', 'Rabbi Benyamin Walters Other Classes', true],
       ],
     );
     const lectures = [...catalogLectures(catalog.series)];

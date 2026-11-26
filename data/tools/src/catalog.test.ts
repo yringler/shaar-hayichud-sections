@@ -43,6 +43,21 @@ describe('buildCatalog', () => {
     ]);
   });
 
+  it('emits extra only when true, on the marked section only', () => {
+    const marked = buildCatalog(
+      parseClassesTxt(['# S:1', '> F', 'a.mp3', '# T:2', 'extra', 'b.mp3', '## P:3', 'c.mp3'].join('\n')).series,
+    );
+    const [s, t] = marked.series;
+    assert.equal('extra' in s!, false);
+    assert.equal(t!.extra, true);
+    assert.equal('extra' in t!.items[0]!, false);
+    assert.equal('extra' in t!.items[1]!, false);
+    assert.equal(t!.displayOrder, 1);
+    assert.equal(t!.lectureCount, 2);
+    // Key order: right after teacher (none here) and title.
+    assert.deepEqual(Object.keys(t!).slice(0, 5), ['type', 'id', 'level', 'title', 'extra']);
+  });
+
   it('fills media fields', () => {
     const b = [...catalogLectures(catalog.series)][1]!;
     assert.deepEqual(b, {

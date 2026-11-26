@@ -119,6 +119,40 @@ describe('teacher lines', () => {
   });
 });
 
+describe('extra lines', () => {
+  const errs = (text: string) => parseClassesTxt(text).errors.map((e) => `${e.line}: ${e.message}`);
+
+  it('marks the heading it follows, at any level, and only that section', () => {
+    const r = parseClassesTxt(
+      '# A:1\n> f\n1.mp3\n# B:2\nteacher: X\nextra\n## P:3\n2.mp3\n### Q:4\n  EXTRA  \n3.mp3\n',
+    );
+    assert.deepEqual(r.errors, []);
+    const [a, b] = r.series;
+    assert.equal(a!.extra, undefined);
+    assert.equal(b!.extra, true);
+    assert.equal(b!.teacher, 'X');
+    const p = b!.items[0] as ParsedSection;
+    assert.equal(p.extra, undefined);
+    assert.equal((p.items[1] as ParsedSection).extra, true);
+  });
+
+  it('may be separated from its heading by comments and blank lines only', () => {
+    assert.deepEqual(errs('# A:1\n\n// note\nextra\n'), []);
+    assert.deepEqual(errs('# A:1\n> f\nextra\n'), [
+      "3: 'extra' must come directly after a heading (after its 'teacher:' line, if any)",
+    ]);
+  });
+
+  it('must come directly after a heading, once, after the teacher', () => {
+    assert.match(errs('extra\n# A:1\n')[0]!, /^1: 'extra' must come directly after a heading/);
+    assert.match(errs('# A:1\n> f\n1.mp3\nextra\n')[0]!, /^4: 'extra' must come directly after a heading/);
+    assert.match(errs('# A:1\n## P:2\n##\nextra\n')[0]!, /^4: 'extra' must come directly after a heading/);
+    assert.match(errs('# A:1\n- T\nextra\n> f\n1.mp3\n')[0]!, /^3: 'extra' must come directly after a heading/);
+    assert.deepEqual(errs('# A:1\nextra\nextra\n'), ['3: section 1 is already marked extra']);
+    assert.deepEqual(errs('# A:1\nextra\nteacher: X\n'), ["3: 'teacher:' must come before 'extra'"]);
+  });
+});
+
 describe('formatFileLine', () => {
   it('round-trips through the parser', () => {
     const line = formatFileLine('x y.mp3', 1477.25);
