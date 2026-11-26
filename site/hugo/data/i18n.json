@@ -16,7 +16,8 @@
     },
     "home": {
       "chapterCount": "{n} chapters",
-      "allChapters": "All {n} chapters"
+      "allChapters": "All {n} chapters",
+      "more": "More"
     },
     "study": {
       "guide": "Study guide",
@@ -40,7 +41,8 @@
     },
     "home": {
       "chapterCount": "{n} פרקים",
-      "allChapters": "כל {n} הפרקים"
+      "allChapters": "כל {n} הפרקים",
+      "more": "עוד"
     },
     "study": {
       "guide": "מדריך לימוד",

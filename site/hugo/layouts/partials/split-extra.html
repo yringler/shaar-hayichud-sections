@@ -1,0 +1,16 @@
+{{- /* Splits a list of catalog items (series, or a section's items) into the
+       ones offered by default (`main`) and the ones marked `extra` in
+       classes.txt (`extra`), each in catalog order. Lists show `extra` after
+       `main`, collapsed behind "More" (`details.more-list`).
+       Only the item's own flag counts: on an extra series' page its parts
+       are listed normally. */ -}}
+{{- $main := slice -}}
+{{- $extra := slice -}}
+{{- range . -}}
+  {{- if .extra -}}
+    {{- $extra = $extra | append . -}}
+  {{- else -}}
+    {{- $main = $main | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "main" $main "extra" $extra) -}}

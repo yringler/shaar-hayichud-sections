@@ -219,6 +219,23 @@ ul.index-list li.index-more a:focus-visible {
   transform: none;
 }
 
+/* Extra series and parts (catalog `extra`), after the main list behind
+   "More" (partials/split-extra.html). */
+details.more-list { margin-block: 0.75rem; }
+details.more-list > summary {
+  cursor: pointer;
+  inline-size: fit-content;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #c8c0b4;
+  border-radius: 999px;
+  color: #3d5a80;
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+details.more-list > summary:hover,
+details.more-list > summary:focus-visible { background: #f0ece7; }
+details.more-list[open] > summary { margin-block-end: 0.5rem; }
+
 [dir="rtl"] .arrow {
   display: inline-block;
   transform: scaleX(-1);

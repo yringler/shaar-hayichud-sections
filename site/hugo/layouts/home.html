@@ -61,10 +61,21 @@
 
   <section>
     <h2>{{ $strings.nav.classes }}</h2>
+    {{ $split := partial "split-extra.html" (partial "catalog.html" .).series }}
     <ul class="index-list">
-      {{ range (partial "catalog.html" .).series }}
+      {{ range $split.main }}
       <li><a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a></li>
       {{ end }}
     </ul>
+    {{ with $split.extra }}
+    <details class="more-list">
+      <summary>{{ $strings.home.more }}</summary>
+      <ul class="index-list">
+        {{ range . }}
+        <li><a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </details>
+    {{ end }}
   </section>
 {{ end }}

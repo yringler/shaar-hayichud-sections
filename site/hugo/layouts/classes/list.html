@@ -6,8 +6,8 @@
       {{ $series := index $catalog.series .Params.seriesIndex }}
       <p class="breadcrumb"><a href="/classes/">Classes</a> → {{ $series.title }}</p>
       <h1>{{ $series.title }}</h1>
-      {{ $parts := where $series.items "type" "section" }}
-      {{ with $parts }}
+      {{ $parts := partial "split-extra.html" (where $series.items "type" "section") }}
+      {{ with $parts.main }}
       <ul class="part-list">
         {{ range . }}
         <li>
@@ -17,6 +17,19 @@
         {{ end }}
       </ul>
       {{ end }}
+      {{ with $parts.extra }}
+      <details class="more-list">
+        <summary>More</summary>
+        <ul class="part-list">
+          {{ range . }}
+          <li>
+            <a href="{{ partial "classes-url.html" (dict "series" $series "part" .) }}">{{ .title }}</a>
+            <span class="track-count">{{ .lectureCount }} tracks</span>
+          </li>
+          {{ end }}
+        </ul>
+      </details>
+      {{ end }}
       {{ range where $series.items "type" "lecture" }}
         {{ partial "class-track.html" . }}
       {{ end }}
@@ -25,14 +38,28 @@
     {{ else }}
       {{- /* Top-level classes listing */ -}}
       <h1>Classes</h1>
+      {{ $split := partial "split-extra.html" $catalog.series }}
       <ul class="part-list">
-        {{ range $catalog.series }}
+        {{ range $split.main }}
         <li>
           <a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a>
           <span class="track-count">{{ .lectureCount }} tracks</span>
         </li>
         {{ end }}
       </ul>
+      {{ with $split.extra }}
+      <details class="more-list">
+        <summary>More</summary>
+        <ul class="part-list">
+          {{ range . }}
+          <li>
+            <a href="{{ partial "classes-url.html" (dict "series" .) }}">{{ .title }}</a>
+            <span class="track-count">{{ .lectureCount }} tracks</span>
+          </li>
+          {{ end }}
+        </ul>
+      </details>
+      {{ end }}
     {{ end }}
   </div>
 {{ end }}
