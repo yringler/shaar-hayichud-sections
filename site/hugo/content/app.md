@@ -21,8 +21,8 @@ description: "The Shaar Hayichud Classes app for Android and iOS: the text, with
     <figcaption>Following a class in the text</figcaption>
   </figure>
   <figure>
-    <img src="https://media.shaarhayichudresources.com/app/screenshots/class-picker.webp" alt="The class picker: Rabbi Benyamin Walters' classes on chapter 1, each with its length and a download button." width="390" height="844">
-    <figcaption>The teacher's classes on the chapter</figcaption>
+    <img src="https://media.shaarhayichudresources.com/app/screenshots/study-guide.webp" alt="Chapter 10 with Rabbi Benyamin Walters' study guide under the text: its title, the chapter overview and contents, and the first section's summary." width="390" height="844">
+    <figcaption>The study guide under the text</figcaption>
   </figure>
   <figure>
     <img src="https://media.shaarhayichudresources.com/app/screenshots/class-library.webp" alt="The Classes tab: chapter 1 of Rabbi Walters' original class, ten parts with their lengths." width="390" height="844" loading="lazy">
