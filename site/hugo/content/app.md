@@ -21,7 +21,7 @@ description: "The Shaar Hayichud Classes app for Android and iOS: the text, with
     <figcaption>Following a class in the text</figcaption>
   </figure>
   <figure>
-    <img src="https://media.shaarhayichudresources.com/app/screenshots/study-guide.webp" alt="Chapter 10 with Rabbi Benyamin Walters' study guide under the text: its title, the chapter overview and contents, and the first section's summary." width="390" height="844">
+    <img src="https://media.shaarhayichudresources.com/app/screenshots/study-guide-ben-yachid.webp" alt="Chapter 10 with Rabbi Benyamin Walters' study guide under the text: the passage's translation phrase by phrase, each with a play button, then his explanation: a ben yachid is an only son; a ben echad is just one son, implying there are others." width="390" height="844">
     <figcaption>The study guide under the text</figcaption>
   </figure>
   <figure>
